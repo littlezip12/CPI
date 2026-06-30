@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>California Polo Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <span class="cpi-mark">CPI</span>
+      <span>California Polo Index<span class="brand-sub">Ranked. Respected. Earned.</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="14u-boys.html">14U Boys</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="clubs.html">Clubs</a>
+      <a href="methodology.html">Methodology</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <p class="kicker">14U Boys · Post Futures Super Finals</p>
+    <h1>14U Boys <span class="gold">CPI Rankings</span></h1>
+    <p>Rankings reflect CPI movement after Futures Super Finals. Public records show latest tracked major tournament only.</p>
+  </div>
+  <aside class="hero-visual" style="--club-primary:#092E61;--club-secondary:#F9C74F;">
+    <div class="profile-hero-lockup">
+      <img class="logo-xl" src="assets/logos/la-jolla-united.svg" alt="La Jolla United badge">
+      <div class="visual-tag">
+        <span>Top-ranked team</span>
+        <span class="blue">La Jolla United A</span>
+        <span class="gold">#1 · CPI 2161.0</span>
+      </div>
+    </div>
+    <a class="btn" href="team.html?team=la-jolla-united-a">View team page →</a>
+  </aside>
+</section>
+<main>
+  <div class="section-head">
+    <div><h2>Top 10</h2><p class="subtle">Current 14U Boys leaders.</p></div>
+    <a class="btn" href="rankings.html">See Full Table</a>
+  </div>
+  <section class="grid" id="boysTopCards"></section>
+  <div class="section-head">
+    <div><h2>Movement Board</h2></div>
+  </div>
+  <section class="story-grid">
+    <article class="story-card"><h3>Biggest Risers</h3><div id="risers"></div></article>
+    <article class="story-card"><h3>Biggest Fallers</h3><div id="fallers"></div></article>
+    <article class="story-card"><h3>Strongest CPI Gains</h3><div id="gainers"></div></article>
+  </section>
+</main>
+<footer class="footer">
+  California Polo Index is independent and unofficial. Generated club badges are placeholders until official logos are verified. Records shown are from the latest tracked major tournament, not complete season records.
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
