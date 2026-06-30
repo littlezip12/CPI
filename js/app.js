@@ -129,10 +129,24 @@ function renderClubPage(){
     </section>
   </main>`;
 }
-renderGroupOptions();
-document.querySelector("#search")?.addEventListener("input", renderRankings);
-document.querySelector("#groupFilter")?.addEventListener("change", renderRankings);
-renderCards();
-renderRankings();
-renderTeamPage();
-renderClubPage();
+
+function initCPI(){
+  try {
+    console.log("CPI app.js loaded — Sprint B.1 render reset");
+    renderGroupOptions();
+    document.querySelector("#search")?.addEventListener("input", renderRankings);
+    document.querySelector("#groupFilter")?.addEventListener("change", renderRankings);
+    renderCards();
+    renderRankings();
+    renderTeamPage();
+    renderClubPage();
+  } catch (err) {
+    console.error("CPI render failed", err);
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initCPI);
+} else {
+  initCPI();
+}
