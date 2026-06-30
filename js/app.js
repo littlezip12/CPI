@@ -130,3 +130,9 @@ function renderClubPage(){
   </main>`;
 }
 renderGroupOptions();
+document.querySelector("#search")?.addEventListener("input", renderRankings);
+document.querySelector("#groupFilter")?.addEventListener("change", renderRankings);
+renderCards();
+renderRankings();
+renderTeamPage();
+renderClubPage();
