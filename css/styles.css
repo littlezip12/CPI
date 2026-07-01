@@ -1916,3 +1916,321 @@ body.team-experience-body .site-header {
     grid-column: 4;
   }
 }
+
+
+/* Sprint B.5.1 — UI Freeze polish */
+
+/* Keep desktop clean while preventing logo column drift */
+.team-pro-hero-grid {
+  grid-template-columns: 270px minmax(0, 1fr) 620px !important;
+  gap: 30px !important;
+  align-items: center !important;
+}
+
+.team-pro-logo {
+  width: 250px !important;
+  height: 250px !important;
+  max-width: 250px !important;
+  max-height: 250px !important;
+  transform: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  justify-self: center !important;
+}
+
+.team-pro-mini-logo {
+  width: 44px !important;
+  height: 44px !important;
+  max-width: 44px !important;
+  max-height: 44px !important;
+  transform: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.team-pro-result-row {
+  grid-template-columns: 32px 58px 1fr 90px 120px !important;
+}
+
+.team-pro-rank-row {
+  grid-template-columns: 46px 56px 1fr 90px 60px !important;
+}
+
+/* Tournament card breathing room */
+.team-pro-event {
+  grid-template-columns: 112px minmax(0, 1fr) auto !important;
+  gap: 20px !important;
+  align-items: center !important;
+}
+
+.team-pro-event-logo {
+  width: 96px !important;
+  height: 96px !important;
+  border-radius: 18px !important;
+  font-size: 14px !important;
+  letter-spacing: .02em;
+}
+
+.team-pro-event-title {
+  font-size: clamp(24px, 2vw, 30px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.035em !important;
+}
+
+.team-pro-event-meta {
+  line-height: 1.35 !important;
+}
+
+/* External link affordance */
+.team-pro-meta-value a[target="_blank"]::after,
+.team-pro-card a[target="_blank"]::after,
+.club-feature-item a[target="_blank"]::after,
+.club-meta-chip[target="_blank"]::after {
+  content: " ↗";
+  font-size: .9em;
+}
+
+/* Movement colors */
+.team-pro-move.down,
+.team-pro-down,
+.team-pro-result-score.loss {
+  color: #e03131 !important;
+}
+
+.team-pro-move.up,
+.team-pro-up {
+  color: #178b45 !important;
+}
+
+/* Final mobile app-like polish */
+@media(max-width: 768px) {
+  body.team-experience-body .site-header,
+  body.team-experience-body header.site-header {
+    background: linear-gradient(180deg, #062550, #061832) !important;
+  }
+
+  body.team-experience-body .site-header *,
+  body.team-experience-body header.site-header *,
+  body.team-experience-body .nav-links a,
+  body.team-experience-body .brand,
+  body.team-experience-body .brand span {
+    color: #fff !important;
+  }
+
+  body.team-experience-body .brand-sub {
+    color: var(--gold, #ffc72c) !important;
+  }
+
+  body.team-experience-body .cpi-mark {
+    color: #063a79 !important;
+  }
+
+  .team-pro-hero {
+    background: #fff !important;
+    overflow: hidden !important;
+  }
+
+  .team-pro-hero::before {
+    display: none !important;
+  }
+
+  .team-pro-hero::after {
+    content: "";
+    position: absolute;
+    inset: auto -20% 0 -20%;
+    height: 42%;
+    background:
+      linear-gradient(145deg, transparent 0 61%, color-mix(in srgb, var(--club-secondary, #ffc72c) 82%, transparent) 61.5% 64%, transparent 64.5%),
+      linear-gradient(180deg, transparent 0%, rgba(7,27,55,.08) 15%, var(--club-primary, #072b57) 100%);
+    opacity: .95 !important;
+    z-index: 0;
+    pointer-events: none;
+    transform: none !important;
+  }
+
+  .team-pro-inner {
+    padding: 18px 18px 24px !important;
+    position: relative;
+    z-index: 2;
+  }
+
+  .team-pro-crumbs {
+    color: #526277 !important;
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .team-pro-crumbs a {
+    color: #061832 !important;
+  }
+
+  .team-pro-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .team-pro-logo {
+    width: 148px !important;
+    height: 148px !important;
+    max-width: 148px !important;
+    max-height: 148px !important;
+    justify-self: start !important;
+    filter: drop-shadow(0 12px 22px rgba(6,24,51,.18));
+  }
+
+  .team-pro-title {
+    font-size: clamp(50px, 15vw, 70px) !important;
+    line-height: .92 !important;
+    letter-spacing: -.065em !important;
+    color: #061832 !important;
+  }
+
+  .team-pro-age {
+    font-size: 34px !important;
+    line-height: 1 !important;
+    margin-top: 8px !important;
+  }
+
+  .team-pro-meta {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    margin-top: 20px !important;
+  }
+
+  .team-pro-meta-item {
+    display: grid !important;
+    grid-template-columns: 38px 1fr !important;
+    gap: 10px !important;
+  }
+
+  .team-pro-icon {
+    width: 36px !important;
+    height: 36px !important;
+    background: rgba(255,255,255,.72) !important;
+  }
+
+  .team-pro-update {
+    margin-top: 18px !important;
+    color: #263b56 !important;
+    font-size: 14px !important;
+    line-height: 1.35 !important;
+  }
+
+  .team-pro-update a {
+    display: none !important;
+  }
+
+  .team-pro-metrics {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    margin-top: 18px !important;
+    position: relative !important;
+    z-index: 3 !important;
+  }
+
+  .team-pro-metric {
+    min-height: auto !important;
+    border-radius: 22px !important;
+    padding: 23px !important;
+    color: #fff !important;
+    background:
+      radial-gradient(circle at 100% 0%, rgba(255,255,255,.13), transparent 34%),
+      linear-gradient(135deg, var(--club-primary, #072b57), #061832) !important;
+    border: 1px solid rgba(255,255,255,.16) !important;
+    box-shadow: 0 18px 36px rgba(6,24,51,.24) !important;
+  }
+
+  .team-pro-metric-main {
+    color: #fff !important;
+    font-size: clamp(56px, 17vw, 86px) !important;
+  }
+
+  .team-pro-metric-label {
+    color: #fff !important;
+    font-size: 17px !important;
+    line-height: 1.25 !important;
+  }
+
+  .team-pro-metric-sub {
+    color: rgba(255,255,255,.84) !important;
+    font-size: 14px !important;
+  }
+
+  .team-pro-event {
+    grid-template-columns: 88px 1fr !important;
+    gap: 15px !important;
+  }
+
+  .team-pro-event-logo {
+    width: 78px !important;
+    height: 78px !important;
+    font-size: 12px !important;
+  }
+
+  .team-pro-event-title {
+    font-size: 24px !important;
+    line-height: 1.04 !important;
+  }
+
+  .team-pro-status {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .team-pro-event-stats,
+  .team-pro-snapshot-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .team-pro-result-row {
+    grid-template-columns: 34px 46px 1fr !important;
+    gap: 10px !important;
+  }
+
+  .team-pro-result-score,
+  .team-pro-result-date {
+    grid-column: 3 !important;
+    text-align: left !important;
+  }
+
+  .team-pro-rank-row {
+    grid-template-columns: 38px 46px 1fr 72px !important;
+  }
+
+  .team-pro-rank-move {
+    grid-column: 4 !important;
+  }
+
+  .team-pro-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+  }
+
+  .team-pro-tabs-inner {
+    padding: 0 18px !important;
+    gap: 24px !important;
+  }
+
+  .team-pro-main {
+    padding: 18px 18px 54px !important;
+  }
+
+  .team-pro-grid,
+  .team-pro-lower {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .team-pro-card {
+    border-radius: 16px !important;
+  }
+}
+
+@media(max-width:1250px) and (min-width:769px) {
+  .team-pro-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
