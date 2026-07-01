@@ -17,6 +17,7 @@ function renderTeamPage(){
   document.body.classList.add("team-experience-body");
 
   const isLamoA = r.slug === "lamorinda-a";
+  const tournamentSourceUrl = r.tournamentSourceUrl || "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=326721462#gid=326721462";
   const record = isLamoA ? "2-4" : (r.latestTournamentRecord || "—");
   const eventRecordDisplay = isLamoA ? "2-4" : record;
   const finalFinish = isLamoA ? "11th" : "—";
@@ -89,7 +90,7 @@ function renderTeamPage(){
 
             <div class="team-pro-update">
               <span>✓ All rankings updated after Futures Super Finals</span>
-              <a href="methodology.html">Why CPI?</a>
+              
             </div>
           </div>
 
@@ -98,7 +99,7 @@ function renderTeamPage(){
               <span class="team-pro-metric-main">#${r.postRank}</span>
               <span class="team-pro-metric-label">California Rank</span>
               <span class="team-pro-metric-sub">In ${r.group}</span>
-              <div class="team-pro-move">${r.movement>0?"▲":r.movement<0?"▼":"—"} ${Math.abs(r.movement || 0)}</div>
+              <div class="team-pro-move ${r.movement>0?'up':r.movement<0?'down':'flat'}">${r.movement>0?"▲":r.movement<0?"▼":"—"} ${Math.abs(r.movement || 0)}</div>
               <span class="team-pro-metric-sub">Since Last Update</span>
             </div>
 
@@ -168,7 +169,7 @@ function renderTeamPage(){
               <div class="team-pro-event-stat"><strong>${bestWin}</strong><span>Best Win<br>${bestWinScore}</span></div>
               <div class="team-pro-event-stat"><strong>${highestOpponentRank} ${highestOpponent}</strong><span>Highest Opponent<br>CPI ${opponentCpi}</span></div>
             </div>
-            <a class="team-pro-button" href="#">View Tournament Details</a>
+            <a class="team-pro-button" href="${tournamentSourceUrl}">View Tournament Details</a>
           </div>
         </article>
 
@@ -203,7 +204,7 @@ function renderTeamPage(){
 
       <div class="team-pro-footer-note">
         <span>✓ All rankings updated after Futures Super Finals</span>
-        <a href="methodology.html">Why CPI?</a>
+        
       </div>
     </main>
   </div>`;

@@ -1433,3 +1433,76 @@ body.team-experience-body .site-header {
     text-align: left;
   }
 }
+
+
+/* Sprint B.4.1 — Team Page Fixes */
+.team-pro-logo {
+  width: 280px;
+  height: 280px;
+  transform: scale(1.28);
+  transform-origin: center;
+}
+.team-pro-hero-grid {
+  grid-template-columns: 300px 1fr 620px;
+}
+.team-pro-mini-logo {
+  width: 42px;
+  height: 42px;
+  transform: scale(1.35);
+  transform-origin: center;
+  object-fit: contain;
+}
+.team-pro-result-row {
+  grid-template-columns: 32px 62px 1fr 90px 120px;
+}
+.team-pro-rank-row {
+  grid-template-columns: 46px 58px 1fr 90px 60px;
+}
+.team-pro-move.down,
+.team-pro-down {
+  color: #e03131 !important;
+}
+.team-pro-move.up,
+.team-pro-up {
+  color: #178b45 !important;
+}
+.team-pro-move.flat {
+  color: rgba(255,255,255,.82) !important;
+}
+@media(max-width:1250px){
+  .team-pro-hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width:750px){
+  .team-pro-logo {
+    width: 230px;
+    height: 230px;
+    transform: scale(1.22);
+  }
+  .team-pro-mini-logo {
+    width: 36px;
+    height: 36px;
+    transform: scale(1.25);
+  }
+}
+
+
+/* Sprint B.4.2 — Logo normalization display support */
+.team-pro-logo,
+.team-x-logo {
+  object-fit: contain;
+  object-position: center;
+}
+.team-pro-mini-logo,
+.logo-sm,
+.logo-md,
+.logo-xl {
+  object-fit: contain;
+  object-position: center;
+}
+.team-pro-result-row .team-pro-mini-logo,
+.team-pro-rank-row .team-pro-mini-logo {
+  max-width: 54px;
+  max-height: 54px;
+}
