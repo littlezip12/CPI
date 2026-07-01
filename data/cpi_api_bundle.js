@@ -1,8 +1,8 @@
 window.CPI_API = {
   "manifest": {
     "platform": "California Polo Index",
-    "api_version": "parser_pipeline_debugger_v0.1.6",
-    "generated_at": "2026-07-01T19:14:05.911563+00:00",
+    "api_version": "parser_pipeline_registry_match_v0.1.7",
+    "generated_at": "2026-07-01T19:29:40.304229+00:00",
     "scope": {
       "season": "2026",
       "region": "California",
@@ -11,12 +11,12 @@ window.CPI_API = {
     },
     "counts": {
       "unique_raw_strings": 778,
-      "changed_by_pipeline": 630,
+      "changed_by_pipeline": 640,
       "ignored_placeholders": 2,
-      "still_suspicious": 727,
-      "debug_rows": 500
+      "registry_matches_prepped": 21,
+      "still_suspicious": 728
     },
-    "goal": "Verify raw team-string normalization before registry creation."
+    "goal": "Verify parser output and prepare registry matching before candidate generation."
   },
   "parserDebugRows": [
     {
@@ -26,11 +26,13 @@ window.CPI_API = {
       "stage_3_bracket": "LA Premier",
       "stage_4_seed": "LA Premier",
       "stage_5_parenthetical": "LA Premier",
+      "stage_6_case": "LA Premier",
       "final": "LA Premier",
-      "suggested_club": "LA Premier",
+      "registry_match": "LA Premier",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1st in B - PV Black (A)",
@@ -39,11 +41,13 @@ window.CPI_API = {
       "stage_3_bracket": "PV Black (A)",
       "stage_4_seed": "PV Black (A)",
       "stage_5_parenthetical": "PV Black",
+      "stage_6_case": "PV Black",
       "final": "PV Black",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1st in C - CIU Gold(A)",
@@ -51,12 +55,14 @@ window.CPI_API = {
       "stage_2_placement": "CIU Gold(A)",
       "stage_3_bracket": "CIU Gold(A)",
       "stage_4_seed": "CIU Gold(A)",
-      "stage_5_parenthetical": "CIU Gold(A)",
-      "final": "CIU Gold(A)",
-      "suggested_club": "CIU Gold(A)",
+      "stage_5_parenthetical": "CIU Gold",
+      "stage_6_case": "CIU Gold",
+      "final": "CIU Gold",
+      "registry_match": "Channel Islands United Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1st in D - 908 Yellow (A)",
@@ -65,11 +71,13 @@ window.CPI_API = {
       "stage_3_bracket": "908 Yellow (A)",
       "stage_4_seed": "908 Yellow (A)",
       "stage_5_parenthetical": "908 Yellow",
+      "stage_6_case": "908 Yellow",
       "final": "908 Yellow",
-      "suggested_club": "908",
+      "registry_match": "908 Yellow",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1st in E - Commerce",
@@ -78,11 +86,13 @@ window.CPI_API = {
       "stage_3_bracket": "Commerce",
       "stage_4_seed": "Commerce",
       "stage_5_parenthetical": "Commerce",
+      "stage_6_case": "Commerce",
       "final": "Commerce",
-      "suggested_club": "Commerce",
+      "registry_match": "Commerce",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1st in F - SBWPC A",
@@ -91,11 +101,13 @@ window.CPI_API = {
       "stage_3_bracket": "SBWPC A",
       "stage_4_seed": "SBWPC A",
       "stage_5_parenthetical": "SBWPC A",
+      "stage_6_case": "SBWPC A",
       "final": "SBWPC A",
-      "suggested_club": "Santa Barbara",
+      "registry_match": "Santa Barbara A",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1st in G - Gate 14U",
@@ -104,11 +116,13 @@ window.CPI_API = {
       "stage_3_bracket": "Gate 14U",
       "stage_4_seed": "Gate 14U",
       "stage_5_parenthetical": "Gate 14U",
+      "stage_6_case": "Gate 14U",
       "final": "Gate 14U",
-      "suggested_club": "Gate 14U",
+      "registry_match": "Gate 14U",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1st in H - South Coast Red (A)",
@@ -117,11 +131,13 @@ window.CPI_API = {
       "stage_3_bracket": "South Coast Red (A)",
       "stage_4_seed": "South Coast Red (A)",
       "stage_5_parenthetical": "South Coast Red",
+      "stage_6_case": "South Coast Red",
       "final": "South Coast Red",
-      "suggested_club": "South Coast",
+      "registry_match": "South Coast Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stA-BREA OLINDA GOLD",
@@ -130,11 +146,13 @@ window.CPI_API = {
       "stage_3_bracket": "BREA OLINDA GOLD",
       "stage_4_seed": "BREA OLINDA GOLD",
       "stage_5_parenthetical": "BREA OLINDA GOLD",
+      "stage_6_case": "Brea Olinda Gold",
       "final": "Brea Olinda Gold",
-      "suggested_club": "Brea Olinda",
+      "registry_match": "Brea Olinda Gold",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stA-MISSION A",
@@ -143,11 +161,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION A",
       "stage_4_seed": "MISSION A",
       "stage_5_parenthetical": "MISSION A",
+      "stage_6_case": "Mission A",
       "final": "Mission A",
-      "suggested_club": "Mission",
+      "registry_match": "Mission A",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stA-NORTH IRVINE RED",
@@ -156,11 +176,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORTH IRVINE RED",
       "stage_4_seed": "NORTH IRVINE RED",
       "stage_5_parenthetical": "NORTH IRVINE RED",
+      "stage_6_case": "North Irvine Red",
       "final": "North Irvine Red",
-      "suggested_club": "North Irvine",
+      "registry_match": "North Irvine Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stB-NEWPORT BEACH BLUE",
@@ -169,11 +191,13 @@ window.CPI_API = {
       "stage_3_bracket": "NEWPORT BEACH BLUE",
       "stage_4_seed": "NEWPORT BEACH BLUE",
       "stage_5_parenthetical": "NEWPORT BEACH BLUE",
+      "stage_6_case": "Newport Beach Blue",
       "final": "Newport Beach Blue",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport Beach Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stB-ORANGE COUNTY WPC B",
@@ -182,11 +206,13 @@ window.CPI_API = {
       "stage_3_bracket": "ORANGE COUNTY WPC B",
       "stage_4_seed": "ORANGE COUNTY WPC B",
       "stage_5_parenthetical": "ORANGE COUNTY WPC B",
+      "stage_6_case": "Orange County WPC B",
       "final": "Orange County WPC B",
-      "suggested_club": "Orange County WPC",
+      "registry_match": "Orange County WPC B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stB-RANCHO TSUNAMI 12 BLUE",
@@ -195,11 +221,13 @@ window.CPI_API = {
       "stage_3_bracket": "RANCHO TSUNAMI 12 BLUE",
       "stage_4_seed": "RANCHO TSUNAMI 12 BLUE",
       "stage_5_parenthetical": "RANCHO TSUNAMI 12 BLUE",
+      "stage_6_case": "Rancho Tsunami 12 Blue",
       "final": "Rancho Tsunami 12 Blue",
-      "suggested_club": "Rancho Tsunami 12",
+      "registry_match": "Rancho Tsunami 12 Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stC-PALOS VERDES B",
@@ -208,11 +236,13 @@ window.CPI_API = {
       "stage_3_bracket": "PALOS VERDES B",
       "stage_4_seed": "PALOS VERDES B",
       "stage_5_parenthetical": "PALOS VERDES B",
+      "stage_6_case": "Palos Verdes B",
       "final": "Palos Verdes B",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stC-VANGUARD BLUE",
@@ -221,11 +251,13 @@ window.CPI_API = {
       "stage_3_bracket": "VANGUARD BLUE",
       "stage_4_seed": "VANGUARD BLUE",
       "stage_5_parenthetical": "VANGUARD BLUE",
+      "stage_6_case": "Vanguard Blue",
       "final": "Vanguard Blue",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stC-VANGUARD SILVER",
@@ -234,11 +266,13 @@ window.CPI_API = {
       "stage_3_bracket": "VANGUARD SILVER",
       "stage_4_seed": "VANGUARD SILVER",
       "stage_5_parenthetical": "VANGUARD SILVER",
+      "stage_6_case": "Vanguard Silver",
       "final": "Vanguard Silver",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Silver",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stD-ALAMEDA",
@@ -247,11 +281,13 @@ window.CPI_API = {
       "stage_3_bracket": "ALAMEDA",
       "stage_4_seed": "ALAMEDA",
       "stage_5_parenthetical": "ALAMEDA",
+      "stage_6_case": "Alameda",
       "final": "Alameda",
-      "suggested_club": "Alameda",
+      "registry_match": "Alameda",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stD-NEWPORT BEACH SILVER",
@@ -260,11 +296,13 @@ window.CPI_API = {
       "stage_3_bracket": "NEWPORT BEACH SILVER",
       "stage_4_seed": "NEWPORT BEACH SILVER",
       "stage_5_parenthetical": "NEWPORT BEACH SILVER",
+      "stage_6_case": "Newport Beach Silver",
       "final": "Newport Beach Silver",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport Beach Silver",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stG-MISSION WPC A",
@@ -273,11 +311,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION WPC A",
       "stage_4_seed": "MISSION WPC A",
       "stage_5_parenthetical": "MISSION WPC A",
+      "stage_6_case": "Mission WPC A",
       "final": "Mission WPC A",
-      "suggested_club": "Mission WPC",
+      "registry_match": "Mission WPC A",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stG-POWAY VALLEY BLACK",
@@ -286,11 +326,13 @@ window.CPI_API = {
       "stage_3_bracket": "POWAY VALLEY BLACK",
       "stage_4_seed": "POWAY VALLEY BLACK",
       "stage_5_parenthetical": "POWAY VALLEY BLACK",
+      "stage_6_case": "Poway Valley Black",
       "final": "Poway Valley Black",
-      "suggested_club": "Poway Valley",
+      "registry_match": "Poway Valley Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stH-GOLD COAST",
@@ -299,11 +341,13 @@ window.CPI_API = {
       "stage_3_bracket": "GOLD COAST",
       "stage_4_seed": "GOLD COAST",
       "stage_5_parenthetical": "GOLD COAST",
+      "stage_6_case": "Gold Coast",
       "final": "Gold Coast",
-      "suggested_club": "Gold Coast",
+      "registry_match": "Gold Coast",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stJ-LA JOLLA UNITED NAVY",
@@ -312,11 +356,13 @@ window.CPI_API = {
       "stage_3_bracket": "LA JOLLA UNITED NAVY",
       "stage_4_seed": "LA JOLLA UNITED NAVY",
       "stage_5_parenthetical": "LA JOLLA UNITED NAVY",
+      "stage_6_case": "LA Jolla United Navy",
       "final": "LA Jolla United Navy",
-      "suggested_club": "LA Jolla United",
+      "registry_match": "LA Jolla United Navy",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stR-CC UNITED WHITE",
@@ -325,11 +371,13 @@ window.CPI_API = {
       "stage_3_bracket": "CC UNITED WHITE",
       "stage_4_seed": "CC UNITED WHITE",
       "stage_5_parenthetical": "CC UNITED WHITE",
+      "stage_6_case": "CC United White",
       "final": "CC United White",
-      "suggested_club": "CC United",
+      "registry_match": "CC United White",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "1stS-STANFORD WHITE",
@@ -338,11 +386,13 @@ window.CPI_API = {
       "stage_3_bracket": "STANFORD WHITE",
       "stage_4_seed": "STANFORD WHITE",
       "stage_5_parenthetical": "STANFORD WHITE",
+      "stage_6_case": "Stanford White",
       "final": "Stanford White",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford White",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2nd in A - Foothill Red (A)",
@@ -351,11 +401,13 @@ window.CPI_API = {
       "stage_3_bracket": "Foothill Red (A)",
       "stage_4_seed": "Foothill Red (A)",
       "stage_5_parenthetical": "Foothill Red",
+      "stage_6_case": "Foothill Red",
       "final": "Foothill Red",
-      "suggested_club": "Foothill",
+      "registry_match": "Foothill Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2nd in B - Rose Bowl Red (A)",
@@ -364,11 +416,13 @@ window.CPI_API = {
       "stage_3_bracket": "Rose Bowl Red (A)",
       "stage_4_seed": "Rose Bowl Red (A)",
       "stage_5_parenthetical": "Rose Bowl Red",
+      "stage_6_case": "Rose Bowl Red",
       "final": "Rose Bowl Red",
-      "suggested_club": "Rose Bowl",
+      "registry_match": "Rose Bowl Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2nd in C - Trojan Cardinal (A)",
@@ -377,11 +431,13 @@ window.CPI_API = {
       "stage_3_bracket": "Trojan Cardinal (A)",
       "stage_4_seed": "Trojan Cardinal (A)",
       "stage_5_parenthetical": "Trojan Cardinal",
+      "stage_6_case": "Trojan Cardinal",
       "final": "Trojan Cardinal",
-      "suggested_club": "Trojan Cardinal",
+      "registry_match": "Trojan Cardinal",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2nd in D - Route 66 14U Boys",
@@ -390,11 +446,13 @@ window.CPI_API = {
       "stage_3_bracket": "Route 66 14U Boys",
       "stage_4_seed": "Route 66 14U Boys",
       "stage_5_parenthetical": "Route 66 14U Boys",
+      "stage_6_case": "Route 66 14U Boys",
       "final": "Route 66 14U Boys",
-      "suggested_club": "Route 66 14U Boys",
+      "registry_match": "Route 66 14U Boys",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2nd in E - Temple City",
@@ -403,11 +461,13 @@ window.CPI_API = {
       "stage_3_bracket": "Temple City",
       "stage_4_seed": "Temple City",
       "stage_5_parenthetical": "Temple City",
+      "stage_6_case": "Temple City",
       "final": "Temple City",
-      "suggested_club": "Temple City",
+      "registry_match": "Temple City",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2nd in F - Shore Red",
@@ -416,11 +476,13 @@ window.CPI_API = {
       "stage_3_bracket": "Shore Red",
       "stage_4_seed": "Shore Red",
       "stage_5_parenthetical": "Shore Red",
+      "stage_6_case": "Shore Red",
       "final": "Shore Red",
-      "suggested_club": "Shore",
+      "registry_match": "Shore Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2nd in G - ORWP 14U Black (A)",
@@ -429,11 +491,13 @@ window.CPI_API = {
       "stage_3_bracket": "ORWP 14U Black (A)",
       "stage_4_seed": "ORWP 14U Black (A)",
       "stage_5_parenthetical": "ORWP 14U Black",
+      "stage_6_case": "ORWP 14U Black",
       "final": "ORWP 14U Black",
-      "suggested_club": "ORWP 14U",
+      "registry_match": "ORWP 14U Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2nd in H - Pride Black",
@@ -442,11 +506,13 @@ window.CPI_API = {
       "stage_3_bracket": "Pride Black",
       "stage_4_seed": "Pride Black",
       "stage_5_parenthetical": "Pride Black",
+      "stage_6_case": "Pride Black",
       "final": "Pride Black",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndA-ORWP A",
@@ -455,11 +521,13 @@ window.CPI_API = {
       "stage_3_bracket": "ORWP A",
       "stage_4_seed": "ORWP A",
       "stage_5_parenthetical": "ORWP A",
+      "stage_6_case": "Orwp A",
       "final": "Orwp A",
-      "suggested_club": "Orwp",
+      "registry_match": "Orwp A",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndA-SAN DIEGO DONS 12 BLACK",
@@ -468,11 +536,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN DIEGO DONS 12 BLACK",
       "stage_4_seed": "SAN DIEGO DONS 12 BLACK",
       "stage_5_parenthetical": "SAN DIEGO DONS 12 BLACK",
+      "stage_6_case": "San Diego Dons 12 Black",
       "final": "San Diego Dons 12 Black",
-      "suggested_club": "San Diego Dons 12",
+      "registry_match": "San Diego Dons 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndA-SAN DIEGO DONS 14 BLACK",
@@ -481,11 +551,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN DIEGO DONS 14 BLACK",
       "stage_4_seed": "SAN DIEGO DONS 14 BLACK",
       "stage_5_parenthetical": "SAN DIEGO DONS 14 BLACK",
+      "stage_6_case": "San Diego Dons 14 Black",
       "final": "San Diego Dons 14 Black",
-      "suggested_club": "San Diego Dons 14",
+      "registry_match": "San Diego Dons 14 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndB-PASADENA AC ORANGE",
@@ -494,11 +566,13 @@ window.CPI_API = {
       "stage_3_bracket": "PASADENA AC ORANGE",
       "stage_4_seed": "PASADENA AC ORANGE",
       "stage_5_parenthetical": "PASADENA AC ORANGE",
+      "stage_6_case": "Pasadena Ac Orange",
       "final": "Pasadena Ac Orange",
-      "suggested_club": "Pasadena Ac",
+      "registry_match": "Pasadena Ac Orange",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndB-PATRIOT RED",
@@ -507,11 +581,13 @@ window.CPI_API = {
       "stage_3_bracket": "PATRIOT RED",
       "stage_4_seed": "PATRIOT RED",
       "stage_5_parenthetical": "PATRIOT RED",
+      "stage_6_case": "Patriot Red",
       "final": "Patriot Red",
-      "suggested_club": "Patriot",
+      "registry_match": "Patriot Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndB-SD ECA",
@@ -520,11 +596,13 @@ window.CPI_API = {
       "stage_3_bracket": "SD ECA",
       "stage_4_seed": "SD ECA",
       "stage_5_parenthetical": "SD ECA",
+      "stage_6_case": "SD Eca",
       "final": "SD Eca",
-      "suggested_club": "SD Eca",
+      "registry_match": "SD Eca",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndC-HIELAND",
@@ -533,11 +611,13 @@ window.CPI_API = {
       "stage_3_bracket": "HIELAND",
       "stage_4_seed": "HIELAND",
       "stage_5_parenthetical": "HIELAND",
+      "stage_6_case": "Hieland",
       "final": "Hieland",
-      "suggested_club": "Hieland",
+      "registry_match": "Hieland",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndC-NORTH IRVINE 12 BLACK",
@@ -546,11 +626,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORTH IRVINE 12 BLACK",
       "stage_4_seed": "NORTH IRVINE 12 BLACK",
       "stage_5_parenthetical": "NORTH IRVINE 12 BLACK",
+      "stage_6_case": "North Irvine 12 Black",
       "final": "North Irvine 12 Black",
-      "suggested_club": "North Irvine 12",
+      "registry_match": "North Irvine 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndC-SAN DIEGO DONS",
@@ -559,11 +641,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN DIEGO DONS",
       "stage_4_seed": "SAN DIEGO DONS",
       "stage_5_parenthetical": "SAN DIEGO DONS",
+      "stage_6_case": "San Diego Dons",
       "final": "San Diego Dons",
-      "suggested_club": "San Diego Dons",
+      "registry_match": "San Diego Dons",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndD-MISSION 12A",
@@ -572,11 +656,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION 12A",
       "stage_4_seed": "MISSION 12A",
       "stage_5_parenthetical": "MISSION 12A",
+      "stage_6_case": "Mission 12a",
       "final": "Mission 12a",
-      "suggested_club": "Mission 12a",
+      "registry_match": "Mission 12a",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndD-ORWP B",
@@ -585,11 +671,13 @@ window.CPI_API = {
       "stage_3_bracket": "ORWP B",
       "stage_4_seed": "ORWP B",
       "stage_5_parenthetical": "ORWP B",
+      "stage_6_case": "Orwp B",
       "final": "Orwp B",
-      "suggested_club": "Orwp",
+      "registry_match": "Orwp B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndG-PASADENA AC",
@@ -598,11 +686,13 @@ window.CPI_API = {
       "stage_3_bracket": "PASADENA AC",
       "stage_4_seed": "PASADENA AC",
       "stage_5_parenthetical": "PASADENA AC",
+      "stage_6_case": "Pasadena Ac",
       "final": "Pasadena Ac",
-      "suggested_club": "Pasadena Ac",
+      "registry_match": "Pasadena Ac",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndG-VANGUARD BLUE",
@@ -611,11 +701,13 @@ window.CPI_API = {
       "stage_3_bracket": "VANGUARD BLUE",
       "stage_4_seed": "VANGUARD BLUE",
       "stage_5_parenthetical": "VANGUARD BLUE",
+      "stage_6_case": "Vanguard Blue",
       "final": "Vanguard Blue",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndH-SAND CANYON",
@@ -624,11 +716,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAND CANYON",
       "stage_4_seed": "SAND CANYON",
       "stage_5_parenthetical": "SAND CANYON",
+      "stage_6_case": "Sand Canyon",
       "final": "Sand Canyon",
-      "suggested_club": "Sand Canyon",
+      "registry_match": "Sand Canyon",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndJ-PATRIOT NAVY",
@@ -637,11 +731,13 @@ window.CPI_API = {
       "stage_3_bracket": "PATRIOT NAVY",
       "stage_4_seed": "PATRIOT NAVY",
       "stage_5_parenthetical": "PATRIOT NAVY",
+      "stage_6_case": "Patriot Navy",
       "final": "Patriot Navy",
-      "suggested_club": "Patriot",
+      "registry_match": "Patriot Navy",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndR-BURLINGAME",
@@ -650,11 +746,13 @@ window.CPI_API = {
       "stage_3_bracket": "BURLINGAME",
       "stage_4_seed": "BURLINGAME",
       "stage_5_parenthetical": "BURLINGAME",
+      "stage_6_case": "Burlingame",
       "final": "Burlingame",
-      "suggested_club": "Burlingame",
+      "registry_match": "Burlingame",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "2ndS-MIDPEN",
@@ -663,11 +761,13 @@ window.CPI_API = {
       "stage_3_bracket": "MIDPEN",
       "stage_4_seed": "MIDPEN",
       "stage_5_parenthetical": "MIDPEN",
+      "stage_6_case": "Midpen",
       "final": "Midpen",
-      "suggested_club": "Midpen",
+      "registry_match": "Midpen",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rd in A - PV Blue (B)",
@@ -676,11 +776,13 @@ window.CPI_API = {
       "stage_3_bracket": "PV Blue (B)",
       "stage_4_seed": "PV Blue (B)",
       "stage_5_parenthetical": "PV Blue",
+      "stage_6_case": "PV Blue",
       "final": "PV Blue",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rd in B - 908 Blue (B)",
@@ -689,11 +791,13 @@ window.CPI_API = {
       "stage_3_bracket": "908 Blue (B)",
       "stage_4_seed": "908 Blue (B)",
       "stage_5_parenthetical": "908 Blue",
+      "stage_6_case": "908 Blue",
       "final": "908 Blue",
-      "suggested_club": "908",
+      "registry_match": "908 Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rd in C - Titans Gold",
@@ -702,11 +806,13 @@ window.CPI_API = {
       "stage_3_bracket": "Titans Gold",
       "stage_4_seed": "Titans Gold",
       "stage_5_parenthetical": "Titans Gold",
+      "stage_6_case": "Titans Gold",
       "final": "Titans Gold",
-      "suggested_club": "Titans",
+      "registry_match": "Titans Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rd in D - South Coast White(B)",
@@ -714,12 +820,14 @@ window.CPI_API = {
       "stage_2_placement": "South Coast White(B)",
       "stage_3_bracket": "South Coast White(B)",
       "stage_4_seed": "South Coast White(B)",
-      "stage_5_parenthetical": "South Coast White(B)",
-      "final": "South Coast White(B)",
-      "suggested_club": "South Coast White(B)",
+      "stage_5_parenthetical": "South Coast White",
+      "stage_6_case": "South Coast White",
+      "final": "South Coast White",
+      "registry_match": "South Coast White",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rd in E - CIU Coast",
@@ -728,11 +836,13 @@ window.CPI_API = {
       "stage_3_bracket": "CIU Coast",
       "stage_4_seed": "CIU Coast",
       "stage_5_parenthetical": "CIU Coast",
+      "stage_6_case": "CIU Coast",
       "final": "CIU Coast",
-      "suggested_club": "CIU Coast",
+      "registry_match": "CIU Coast",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "yes"
     },
     {
       "raw": "3rd in F - Supreme",
@@ -741,11 +851,13 @@ window.CPI_API = {
       "stage_3_bracket": "Supreme",
       "stage_4_seed": "Supreme",
       "stage_5_parenthetical": "Supreme",
+      "stage_6_case": "Supreme",
       "final": "Supreme",
-      "suggested_club": "Supreme",
+      "registry_match": "Supreme",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rd in G - PAC",
@@ -754,11 +866,13 @@ window.CPI_API = {
       "stage_3_bracket": "PAC",
       "stage_4_seed": "PAC",
       "stage_5_parenthetical": "PAC",
+      "stage_6_case": "Pac",
       "final": "Pac",
-      "suggested_club": "Pac",
+      "registry_match": "Pac",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rd in H - Valley United",
@@ -767,11 +881,13 @@ window.CPI_API = {
       "stage_3_bracket": "Valley United",
       "stage_4_seed": "Valley United",
       "stage_5_parenthetical": "Valley United",
+      "stage_6_case": "Valley United",
       "final": "Valley United",
-      "suggested_club": "Valley United",
+      "registry_match": "Valley United",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdA-ROUTE 66",
@@ -780,11 +896,13 @@ window.CPI_API = {
       "stage_3_bracket": "ROUTE 66",
       "stage_4_seed": "ROUTE 66",
       "stage_5_parenthetical": "ROUTE 66",
+      "stage_6_case": "Route 66",
       "final": "Route 66",
-      "suggested_club": "Route 66",
+      "registry_match": "Route 66",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdA-SAND CANYON",
@@ -793,11 +911,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAND CANYON",
       "stage_4_seed": "SAND CANYON",
       "stage_5_parenthetical": "SAND CANYON",
+      "stage_6_case": "Sand Canyon",
       "final": "Sand Canyon",
-      "suggested_club": "Sand Canyon",
+      "registry_match": "Sand Canyon",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdA-TRILOGY BLACK",
@@ -806,11 +926,13 @@ window.CPI_API = {
       "stage_3_bracket": "TRILOGY BLACK",
       "stage_4_seed": "TRILOGY BLACK",
       "stage_5_parenthetical": "TRILOGY BLACK",
+      "stage_6_case": "Trilogy Black",
       "final": "Trilogy Black",
-      "suggested_club": "Trilogy",
+      "registry_match": "Trilogy Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdB-SAN CLEMENTE BLACK",
@@ -819,11 +941,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN CLEMENTE BLACK",
       "stage_4_seed": "SAN CLEMENTE BLACK",
       "stage_5_parenthetical": "SAN CLEMENTE BLACK",
+      "stage_6_case": "San Clemente Black",
       "final": "San Clemente Black",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdB-SOCAL 12 BLACK",
@@ -832,11 +956,13 @@ window.CPI_API = {
       "stage_3_bracket": "SOCAL 12 BLACK",
       "stage_4_seed": "SOCAL 12 BLACK",
       "stage_5_parenthetical": "SOCAL 12 BLACK",
+      "stage_6_case": "SoCal 12 Black",
       "final": "SoCal 12 Black",
-      "suggested_club": "SoCal 12",
+      "registry_match": "SoCal 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdB-TROJAN CARDINAL",
@@ -845,11 +971,13 @@ window.CPI_API = {
       "stage_3_bracket": "TROJAN CARDINAL",
       "stage_4_seed": "TROJAN CARDINAL",
       "stage_5_parenthetical": "TROJAN CARDINAL",
+      "stage_6_case": "Trojan Cardinal",
       "final": "Trojan Cardinal",
-      "suggested_club": "Trojan Cardinal",
+      "registry_match": "Trojan Cardinal",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdC-GOLD COAST",
@@ -858,11 +986,13 @@ window.CPI_API = {
       "stage_3_bracket": "GOLD COAST",
       "stage_4_seed": "GOLD COAST",
       "stage_5_parenthetical": "GOLD COAST",
+      "stage_6_case": "Gold Coast",
       "final": "Gold Coast",
-      "suggested_club": "Gold Coast",
+      "registry_match": "Gold Coast",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdC-NEWPORT BEACH WHITE",
@@ -871,11 +1001,13 @@ window.CPI_API = {
       "stage_3_bracket": "NEWPORT BEACH WHITE",
       "stage_4_seed": "NEWPORT BEACH WHITE",
       "stage_5_parenthetical": "NEWPORT BEACH WHITE",
+      "stage_6_case": "Newport Beach White",
       "final": "Newport Beach White",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport Beach White",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdC-RANCHO TSUNAMI BLUE",
@@ -884,11 +1016,13 @@ window.CPI_API = {
       "stage_3_bracket": "RANCHO TSUNAMI BLUE",
       "stage_4_seed": "RANCHO TSUNAMI BLUE",
       "stage_5_parenthetical": "RANCHO TSUNAMI BLUE",
+      "stage_6_case": "Rancho Tsunami Blue",
       "final": "Rancho Tsunami Blue",
-      "suggested_club": "Rancho Tsunami",
+      "registry_match": "Rancho Tsunami Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdD-PRIDE RED",
@@ -897,11 +1031,13 @@ window.CPI_API = {
       "stage_3_bracket": "PRIDE RED",
       "stage_4_seed": "PRIDE RED",
       "stage_5_parenthetical": "PRIDE RED",
+      "stage_6_case": "Pride Red",
       "final": "Pride Red",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdD-TITANS",
@@ -910,11 +1046,13 @@ window.CPI_API = {
       "stage_3_bracket": "TITANS",
       "stage_4_seed": "TITANS",
       "stage_5_parenthetical": "TITANS",
+      "stage_6_case": "Titans",
       "final": "Titans",
-      "suggested_club": "Titans",
+      "registry_match": "Titans",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdG-PALOS VERDES A",
@@ -923,11 +1061,13 @@ window.CPI_API = {
       "stage_3_bracket": "PALOS VERDES A",
       "stage_4_seed": "PALOS VERDES A",
       "stage_5_parenthetical": "PALOS VERDES A",
+      "stage_6_case": "Palos Verdes A",
       "final": "Palos Verdes A",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes A",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdJ-CHANNEL ISLANDS UNITED GOLD",
@@ -936,11 +1076,13 @@ window.CPI_API = {
       "stage_3_bracket": "CHANNEL ISLANDS UNITED GOLD",
       "stage_4_seed": "CHANNEL ISLANDS UNITED GOLD",
       "stage_5_parenthetical": "CHANNEL ISLANDS UNITED GOLD",
+      "stage_6_case": "Channel Islands United Gold",
       "final": "Channel Islands United Gold",
-      "suggested_club": "Channel Islands United",
+      "registry_match": "Channel Islands United Gold",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdR-LAMORINDA C",
@@ -949,11 +1091,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAMORINDA C",
       "stage_4_seed": "LAMORINDA C",
       "stage_5_parenthetical": "LAMORINDA C",
+      "stage_6_case": "Lamorinda C",
       "final": "Lamorinda C",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda C",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "3rdS-TRI-VALLEY TRITONS",
@@ -962,11 +1106,13 @@ window.CPI_API = {
       "stage_3_bracket": "TRI-VALLEY TRITONS",
       "stage_4_seed": "TRI-VALLEY TRITONS",
       "stage_5_parenthetical": "TRI-VALLEY TRITONS",
+      "stage_6_case": "Tri-valley Tritons",
       "final": "Tri-valley Tritons",
-      "suggested_club": "Tri-valley Tritons",
+      "registry_match": "Tri-valley Tritons",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4th in A - Rose Bowl Black (B)",
@@ -975,11 +1121,13 @@ window.CPI_API = {
       "stage_3_bracket": "Rose Bowl Black (B)",
       "stage_4_seed": "Rose Bowl Black (B)",
       "stage_5_parenthetical": "Rose Bowl Black",
+      "stage_6_case": "Rose Bowl Black",
       "final": "Rose Bowl Black",
-      "suggested_club": "Rose Bowl",
+      "registry_match": "Rose Bowl Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4th in B - Trojan Gold (B)",
@@ -988,11 +1136,13 @@ window.CPI_API = {
       "stage_3_bracket": "Trojan Gold (B)",
       "stage_4_seed": "Trojan Gold (B)",
       "stage_5_parenthetical": "Trojan Gold",
+      "stage_6_case": "Trojan Gold",
       "final": "Trojan Gold",
-      "suggested_club": "Trojan",
+      "registry_match": "Trojan Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4th in C - Foothill Black(B)",
@@ -1000,12 +1150,14 @@ window.CPI_API = {
       "stage_2_placement": "Foothill Black(B)",
       "stage_3_bracket": "Foothill Black(B)",
       "stage_4_seed": "Foothill Black(B)",
-      "stage_5_parenthetical": "Foothill Black(B)",
-      "final": "Foothill Black(B)",
-      "suggested_club": "Foothill Black(B)",
+      "stage_5_parenthetical": "Foothill Black",
+      "stage_6_case": "Foothill Black",
+      "final": "Foothill Black",
+      "registry_match": "Foothill Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4th in D - ORWP Red (B)",
@@ -1014,11 +1166,13 @@ window.CPI_API = {
       "stage_3_bracket": "ORWP Red (B)",
       "stage_4_seed": "ORWP Red (B)",
       "stage_5_parenthetical": "ORWP Red",
+      "stage_6_case": "ORWP Red",
       "final": "ORWP Red",
-      "suggested_club": "ORWP",
+      "registry_match": "ORWP Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4th in E - Loyola",
@@ -1027,11 +1181,13 @@ window.CPI_API = {
       "stage_3_bracket": "Loyola",
       "stage_4_seed": "Loyola",
       "stage_5_parenthetical": "Loyola",
+      "stage_6_case": "Loyola",
       "final": "Loyola",
-      "suggested_club": "Loyola",
+      "registry_match": "Loyola",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4th in F - NGEN",
@@ -1040,11 +1196,13 @@ window.CPI_API = {
       "stage_3_bracket": "NGEN",
       "stage_4_seed": "NGEN",
       "stage_5_parenthetical": "NGEN",
+      "stage_6_case": "NGEN",
       "final": "NGEN",
-      "suggested_club": "NGEN",
+      "registry_match": "NGEN",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4th in G - LA City United",
@@ -1053,11 +1211,13 @@ window.CPI_API = {
       "stage_3_bracket": "LA City United",
       "stage_4_seed": "LA City United",
       "stage_5_parenthetical": "LA City United",
+      "stage_6_case": "LA City United",
       "final": "LA City United",
-      "suggested_club": "LA City United",
+      "registry_match": "LA City United",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4th in H - TSM",
@@ -1066,11 +1226,13 @@ window.CPI_API = {
       "stage_3_bracket": "TSM",
       "stage_4_seed": "TSM",
       "stage_5_parenthetical": "TSM",
+      "stage_6_case": "Tsm",
       "final": "Tsm",
-      "suggested_club": "Tsm",
+      "registry_match": "Tsm",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thA-LAWPC",
@@ -1079,11 +1241,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAWPC",
       "stage_4_seed": "LAWPC",
       "stage_5_parenthetical": "LAWPC",
+      "stage_6_case": "LAWPC",
       "final": "LAWPC",
-      "suggested_club": "Los Angeles WPC",
+      "registry_match": "Los Angeles WPC",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thA-TROJAN GOLD",
@@ -1092,11 +1256,13 @@ window.CPI_API = {
       "stage_3_bracket": "TROJAN GOLD",
       "stage_4_seed": "TROJAN GOLD",
       "stage_5_parenthetical": "TROJAN GOLD",
+      "stage_6_case": "Trojan Gold",
       "final": "Trojan Gold",
-      "suggested_club": "Trojan",
+      "registry_match": "Trojan Gold",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thB-MISSION 14B",
@@ -1105,11 +1271,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION 14B",
       "stage_4_seed": "MISSION 14B",
       "stage_5_parenthetical": "MISSION 14B",
+      "stage_6_case": "Mission 14b",
       "final": "Mission 14b",
-      "suggested_club": "Mission 14b",
+      "registry_match": "Mission 14b",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thB-RIVERSIDE",
@@ -1118,11 +1286,13 @@ window.CPI_API = {
       "stage_3_bracket": "RIVERSIDE",
       "stage_4_seed": "RIVERSIDE",
       "stage_5_parenthetical": "RIVERSIDE",
+      "stage_6_case": "Riverside",
       "final": "Riverside",
-      "suggested_club": "Riverside",
+      "registry_match": "Riverside",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thC-DEVILS GATE",
@@ -1131,11 +1301,13 @@ window.CPI_API = {
       "stage_3_bracket": "DEVILS GATE",
       "stage_4_seed": "DEVILS GATE",
       "stage_5_parenthetical": "DEVILS GATE",
+      "stage_6_case": "Devils Gate",
       "final": "Devils Gate",
-      "suggested_club": "Devils Gate",
+      "registry_match": "Devils Gate",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thC-SAN DIEGO DONS 12 RED",
@@ -1144,11 +1316,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN DIEGO DONS 12 RED",
       "stage_4_seed": "SAN DIEGO DONS 12 RED",
       "stage_5_parenthetical": "SAN DIEGO DONS 12 RED",
+      "stage_6_case": "San Diego Dons 12 Red",
       "final": "San Diego Dons 12 Red",
-      "suggested_club": "San Diego Dons 12",
+      "registry_match": "San Diego Dons 12 Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thC-TSM",
@@ -1157,11 +1331,13 @@ window.CPI_API = {
       "stage_3_bracket": "TSM",
       "stage_4_seed": "TSM",
       "stage_5_parenthetical": "TSM",
+      "stage_6_case": "Tsm",
       "final": "Tsm",
-      "suggested_club": "Tsm",
+      "registry_match": "Tsm",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thD-CDM B",
@@ -1170,11 +1346,13 @@ window.CPI_API = {
       "stage_3_bracket": "CDM B",
       "stage_4_seed": "CDM B",
       "stage_5_parenthetical": "CDM B",
+      "stage_6_case": "Cdm B",
       "final": "Cdm B",
-      "suggested_club": "Cdm",
+      "registry_match": "Cdm B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "4thD-SET",
@@ -1183,11 +1361,13 @@ window.CPI_API = {
       "stage_3_bracket": "SET",
       "stage_4_seed": "SET",
       "stage_5_parenthetical": "SET",
+      "stage_6_case": "SET",
       "final": "SET",
-      "suggested_club": "SET",
+      "registry_match": "SET",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1 - LA Premier",
@@ -1196,11 +1376,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1 - LA Premier",
       "stage_4_seed": "LA Premier",
       "stage_5_parenthetical": "LA Premier",
+      "stage_6_case": "LA Premier",
       "final": "LA Premier",
-      "suggested_club": "LA Premier",
+      "registry_match": "LA Premier",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1 - La Jolla United A",
@@ -1209,11 +1391,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1 - La Jolla United A",
       "stage_4_seed": "La Jolla United A",
       "stage_5_parenthetical": "La Jolla United A",
+      "stage_6_case": "La Jolla United A",
       "final": "La Jolla United A",
-      "suggested_club": "La Jolla United",
+      "registry_match": "La Jolla United A",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1 - Loyola",
@@ -1222,11 +1406,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1 - Loyola",
       "stage_4_seed": "Loyola",
       "stage_5_parenthetical": "Loyola",
+      "stage_6_case": "Loyola",
       "final": "Loyola",
-      "suggested_club": "Loyola",
+      "registry_match": "Loyola",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1 - San Clem Red",
@@ -1235,11 +1421,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1 - San Clem Red",
       "stage_4_seed": "San Clem Red",
       "stage_5_parenthetical": "San Clem Red",
+      "stage_6_case": "San Clem Red",
       "final": "San Clem Red",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Red",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1(1)-HONOLULU BLUE",
@@ -1248,11 +1436,13 @@ window.CPI_API = {
       "stage_3_bracket": "HONOLULU BLUE",
       "stage_4_seed": "HONOLULU BLUE",
       "stage_5_parenthetical": "HONOLULU BLUE",
+      "stage_6_case": "Honolulu Blue",
       "final": "Honolulu Blue",
-      "suggested_club": "Honolulu",
+      "registry_match": "Honolulu Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1-LAWPC",
@@ -1261,11 +1451,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1-LAWPC",
       "stage_4_seed": "LAWPC",
       "stage_5_parenthetical": "LAWPC",
+      "stage_6_case": "LAWPC",
       "final": "LAWPC",
-      "suggested_club": "Los Angeles WPC",
+      "registry_match": "Los Angeles WPC",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1-MISSION A",
@@ -1274,11 +1466,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1-MISSION A",
       "stage_4_seed": "MISSION A",
       "stage_5_parenthetical": "MISSION A",
+      "stage_6_case": "Mission A",
       "final": "Mission A",
-      "suggested_club": "Mission",
+      "registry_match": "Mission A",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1-MISSION WPC A",
@@ -1287,11 +1481,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1-MISSION WPC A",
       "stage_4_seed": "MISSION WPC A",
       "stage_5_parenthetical": "MISSION WPC A",
+      "stage_6_case": "Mission WPC A",
       "final": "Mission WPC A",
-      "suggested_club": "Mission WPC",
+      "registry_match": "Mission WPC A",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1-NORCAL BLACK",
@@ -1300,11 +1496,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1-NORCAL BLACK",
       "stage_4_seed": "NORCAL BLACK",
       "stage_5_parenthetical": "NORCAL BLACK",
+      "stage_6_case": "NorCal Black",
       "final": "NorCal Black",
-      "suggested_club": "NorCal",
+      "registry_match": "NorCal Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1-POWAY VALLEY BLACK",
@@ -1313,11 +1511,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1-POWAY VALLEY BLACK",
       "stage_4_seed": "POWAY VALLEY BLACK",
       "stage_5_parenthetical": "POWAY VALLEY BLACK",
+      "stage_6_case": "Poway Valley Black",
       "final": "Poway Valley Black",
-      "suggested_club": "Poway Valley",
+      "registry_match": "Poway Valley Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A1-SAND CANYON",
@@ -1326,11 +1526,13 @@ window.CPI_API = {
       "stage_3_bracket": "A1-SAND CANYON",
       "stage_4_seed": "SAND CANYON",
       "stage_5_parenthetical": "SAND CANYON",
+      "stage_6_case": "Sand Canyon",
       "final": "Sand Canyon",
-      "suggested_club": "Sand Canyon",
+      "registry_match": "Sand Canyon",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2 - NGen",
@@ -1339,11 +1541,13 @@ window.CPI_API = {
       "stage_3_bracket": "A2 - NGen",
       "stage_4_seed": "NGen",
       "stage_5_parenthetical": "NGen",
+      "stage_6_case": "NGen",
       "final": "NGen",
-      "suggested_club": "NGen",
+      "registry_match": "NGen",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2 - PV Blue(B)",
@@ -1351,12 +1555,14 @@ window.CPI_API = {
       "stage_2_placement": "A2 - PV Blue(B)",
       "stage_3_bracket": "A2 - PV Blue(B)",
       "stage_4_seed": "PV Blue(B)",
-      "stage_5_parenthetical": "PV Blue(B)",
-      "final": "PV Blue(B)",
-      "suggested_club": "PV Blue(B)",
+      "stage_5_parenthetical": "PV Blue",
+      "stage_6_case": "PV Blue",
+      "final": "PV Blue",
+      "registry_match": "Palos Verdes Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2 - Rain City",
@@ -1365,11 +1571,13 @@ window.CPI_API = {
       "stage_3_bracket": "A2 - Rain City",
       "stage_4_seed": "Rain City",
       "stage_5_parenthetical": "Rain City",
+      "stage_6_case": "Rain City",
       "final": "Rain City",
-      "suggested_club": "Rain City",
+      "registry_match": "Rain City",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2(16)-SHORE AQUATICS",
@@ -1378,11 +1586,13 @@ window.CPI_API = {
       "stage_3_bracket": "SHORE AQUATICS",
       "stage_4_seed": "SHORE AQUATICS",
       "stage_5_parenthetical": "SHORE AQUATICS",
+      "stage_6_case": "Shore Aquatics",
       "final": "Shore Aquatics",
-      "suggested_club": "Shore Aquatics",
+      "registry_match": "Shore Aquatics",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2-680 RED",
@@ -1391,11 +1601,13 @@ window.CPI_API = {
       "stage_3_bracket": "A2-680 RED",
       "stage_4_seed": "680 RED",
       "stage_5_parenthetical": "680 RED",
+      "stage_6_case": "680 Red",
       "final": "680 Red",
-      "suggested_club": "680",
+      "registry_match": "680 Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2-BREA OLINDA GOLD",
@@ -1404,11 +1616,13 @@ window.CPI_API = {
       "stage_3_bracket": "A2-BREA OLINDA GOLD",
       "stage_4_seed": "BREA OLINDA GOLD",
       "stage_5_parenthetical": "BREA OLINDA GOLD",
+      "stage_6_case": "Brea Olinda Gold",
       "final": "Brea Olinda Gold",
-      "suggested_club": "Brea Olinda",
+      "registry_match": "Brea Olinda Gold",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2-DIABLO ALLIANCE B",
@@ -1417,11 +1631,13 @@ window.CPI_API = {
       "stage_3_bracket": "A2-DIABLO ALLIANCE B",
       "stage_4_seed": "DIABLO ALLIANCE B",
       "stage_5_parenthetical": "DIABLO ALLIANCE B",
+      "stage_6_case": "Diablo Alliance B",
       "final": "Diablo Alliance B",
-      "suggested_club": "Diablo Alliance",
+      "registry_match": "Diablo Alliance B",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2-LOYOLA WPC",
@@ -1430,11 +1646,13 @@ window.CPI_API = {
       "stage_3_bracket": "A2-LOYOLA WPC",
       "stage_4_seed": "LOYOLA WPC",
       "stage_5_parenthetical": "LOYOLA WPC",
+      "stage_6_case": "Loyola WPC",
       "final": "Loyola WPC",
-      "suggested_club": "Loyola WPC",
+      "registry_match": "Loyola WPC",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2-ORWP A",
@@ -1443,11 +1661,13 @@ window.CPI_API = {
       "stage_3_bracket": "A2-ORWP A",
       "stage_4_seed": "ORWP A",
       "stage_5_parenthetical": "ORWP A",
+      "stage_6_case": "Orwp A",
       "final": "Orwp A",
-      "suggested_club": "Orwp",
+      "registry_match": "Orwp A",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A2-TRILOGY BLACK",
@@ -1456,11 +1676,13 @@ window.CPI_API = {
       "stage_3_bracket": "A2-TRILOGY BLACK",
       "stage_4_seed": "TRILOGY BLACK",
       "stage_5_parenthetical": "TRILOGY BLACK",
+      "stage_6_case": "Trilogy Black",
       "final": "Trilogy Black",
-      "suggested_club": "Trilogy",
+      "registry_match": "Trilogy Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3 - 908 Green",
@@ -1469,11 +1691,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3 - 908 Green",
       "stage_4_seed": "908 Green",
       "stage_5_parenthetical": "908 Green",
+      "stage_6_case": "908 Green",
       "final": "908 Green",
-      "suggested_club": "908",
+      "registry_match": "908 Green",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3 - Foothill Red(A)",
@@ -1481,12 +1705,14 @@ window.CPI_API = {
       "stage_2_placement": "A3 - Foothill Red(A)",
       "stage_3_bracket": "A3 - Foothill Red(A)",
       "stage_4_seed": "Foothill Red(A)",
-      "stage_5_parenthetical": "Foothill Red(A)",
-      "final": "Foothill Red(A)",
-      "suggested_club": "Foothill Red(A)",
+      "stage_5_parenthetical": "Foothill Red",
+      "stage_6_case": "Foothill Red",
+      "final": "Foothill Red",
+      "registry_match": "Foothill Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3 - SJA",
@@ -1495,11 +1721,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3 - SJA",
       "stage_4_seed": "SJA",
       "stage_5_parenthetical": "SJA",
+      "stage_6_case": "Sja",
       "final": "Sja",
-      "suggested_club": "Sja",
+      "registry_match": "Sja",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3 - San Clemente Black",
@@ -1508,11 +1736,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3 - San Clemente Black",
       "stage_4_seed": "San Clemente Black",
       "stage_5_parenthetical": "San Clemente Black",
+      "stage_6_case": "San Clemente Black",
       "final": "San Clemente Black",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Black",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3(17)-NORTH IRVINE RED",
@@ -1521,11 +1751,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORTH IRVINE RED",
       "stage_4_seed": "NORTH IRVINE RED",
       "stage_5_parenthetical": "NORTH IRVINE RED",
+      "stage_6_case": "North Irvine Red",
       "final": "North Irvine Red",
-      "suggested_club": "North Irvine",
+      "registry_match": "North Irvine Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3-LAMORINDA C",
@@ -1534,11 +1766,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3-LAMORINDA C",
       "stage_4_seed": "LAMORINDA C",
       "stage_5_parenthetical": "LAMORINDA C",
+      "stage_6_case": "Lamorinda C",
       "final": "Lamorinda C",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda C",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3-ROUTE 66",
@@ -1547,11 +1781,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3-ROUTE 66",
       "stage_4_seed": "ROUTE 66",
       "stage_5_parenthetical": "ROUTE 66",
+      "stage_6_case": "Route 66",
       "final": "Route 66",
-      "suggested_club": "Route 66",
+      "registry_match": "Route 66",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3-SAN CLEMENTE BLACK",
@@ -1560,11 +1796,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3-SAN CLEMENTE BLACK",
       "stage_4_seed": "SAN CLEMENTE BLACK",
       "stage_5_parenthetical": "SAN CLEMENTE BLACK",
+      "stage_6_case": "San Clemente Black",
       "final": "San Clemente Black",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3-SAN DIEGO DONS 14 BLACK",
@@ -1573,11 +1811,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3-SAN DIEGO DONS 14 BLACK",
       "stage_4_seed": "SAN DIEGO DONS 14 BLACK",
       "stage_5_parenthetical": "SAN DIEGO DONS 14 BLACK",
+      "stage_6_case": "San Diego Dons 14 Black",
       "final": "San Diego Dons 14 Black",
-      "suggested_club": "San Diego Dons 14",
+      "registry_match": "San Diego Dons 14 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3-TROJAN CARDINAL",
@@ -1586,11 +1826,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3-TROJAN CARDINAL",
       "stage_4_seed": "TROJAN CARDINAL",
       "stage_5_parenthetical": "TROJAN CARDINAL",
+      "stage_6_case": "Trojan Cardinal",
       "final": "Trojan Cardinal",
-      "suggested_club": "Trojan Cardinal",
+      "registry_match": "Trojan Cardinal",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A3-TROJAN GOLD",
@@ -1599,11 +1841,13 @@ window.CPI_API = {
       "stage_3_bracket": "A3-TROJAN GOLD",
       "stage_4_seed": "TROJAN GOLD",
       "stage_5_parenthetical": "TROJAN GOLD",
+      "stage_6_case": "Trojan Gold",
       "final": "Trojan Gold",
-      "suggested_club": "Trojan",
+      "registry_match": "Trojan Gold",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A4 - Rose Bowl Black (B)",
@@ -1612,11 +1856,13 @@ window.CPI_API = {
       "stage_3_bracket": "A4 - Rose Bowl Black (B)",
       "stage_4_seed": "Rose Bowl Black (B)",
       "stage_5_parenthetical": "Rose Bowl Black",
+      "stage_6_case": "Rose Bowl Black",
       "final": "Rose Bowl Black",
-      "suggested_club": "Rose Bowl",
+      "registry_match": "Rose Bowl Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A4 - Valley United",
@@ -1625,11 +1871,13 @@ window.CPI_API = {
       "stage_3_bracket": "A4 - Valley United",
       "stage_4_seed": "Valley United",
       "stage_5_parenthetical": "Valley United",
+      "stage_6_case": "Valley United",
       "final": "Valley United",
-      "suggested_club": "Valley United",
+      "registry_match": "Valley United",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A4-NORTH IRVINE RED",
@@ -1638,11 +1886,13 @@ window.CPI_API = {
       "stage_3_bracket": "A4-NORTH IRVINE RED",
       "stage_4_seed": "NORTH IRVINE RED",
       "stage_5_parenthetical": "NORTH IRVINE RED",
+      "stage_6_case": "North Irvine Red",
       "final": "North Irvine Red",
-      "suggested_club": "North Irvine",
+      "registry_match": "North Irvine Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "A4-SAN DIEGO DONS 12 BLACK",
@@ -1651,11 +1901,13 @@ window.CPI_API = {
       "stage_3_bracket": "A4-SAN DIEGO DONS 12 BLACK",
       "stage_4_seed": "SAN DIEGO DONS 12 BLACK",
       "stage_5_parenthetical": "SAN DIEGO DONS 12 BLACK",
+      "stage_6_case": "San Diego Dons 12 Black",
       "final": "San Diego Dons 12 Black",
-      "suggested_club": "San Diego Dons 12",
+      "registry_match": "San Diego Dons 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "AMERICAN RIVER BLUE",
@@ -1664,11 +1916,13 @@ window.CPI_API = {
       "stage_3_bracket": "AMERICAN RIVER BLUE",
       "stage_4_seed": "AMERICAN RIVER BLUE",
       "stage_5_parenthetical": "AMERICAN RIVER BLUE",
+      "stage_6_case": "American River Blue",
       "final": "American River Blue",
-      "suggested_club": "American River",
+      "registry_match": "American River Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1 - NSD Stars",
@@ -1677,11 +1931,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1 - NSD Stars",
       "stage_4_seed": "NSD Stars",
       "stage_5_parenthetical": "NSD Stars",
+      "stage_6_case": "NSD Stars",
       "final": "NSD Stars",
-      "suggested_club": "NSD Stars",
+      "registry_match": "NSD Stars",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1 - Newport",
@@ -1690,11 +1946,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1 - Newport",
       "stage_4_seed": "Newport",
       "stage_5_parenthetical": "Newport",
+      "stage_6_case": "Newport",
       "final": "Newport",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1 - PV Black(A)",
@@ -1702,12 +1960,14 @@ window.CPI_API = {
       "stage_2_placement": "B1 - PV Black(A)",
       "stage_3_bracket": "B1 - PV Black(A)",
       "stage_4_seed": "PV Black(A)",
-      "stage_5_parenthetical": "PV Black(A)",
-      "final": "PV Black(A)",
-      "suggested_club": "PV Black(A)",
+      "stage_5_parenthetical": "PV Black",
+      "stage_6_case": "PV Black",
+      "final": "PV Black",
+      "registry_match": "Palos Verdes Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1 - Santa Cruz",
@@ -1716,11 +1976,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1 - Santa Cruz",
       "stage_4_seed": "Santa Cruz",
       "stage_5_parenthetical": "Santa Cruz",
+      "stage_6_case": "Santa Cruz",
       "final": "Santa Cruz",
-      "suggested_club": "Santa Cruz",
+      "registry_match": "Santa Cruz",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1(4)-DAVIS",
@@ -1729,11 +1991,13 @@ window.CPI_API = {
       "stage_3_bracket": "DAVIS",
       "stage_4_seed": "DAVIS",
       "stage_5_parenthetical": "DAVIS",
+      "stage_6_case": "Davis",
       "final": "Davis",
-      "suggested_club": "Davis",
+      "registry_match": "Davis",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1-DIABLO ALLIANCE A",
@@ -1742,11 +2006,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1-DIABLO ALLIANCE A",
       "stage_4_seed": "DIABLO ALLIANCE A",
       "stage_5_parenthetical": "DIABLO ALLIANCE A",
+      "stage_6_case": "Diablo Alliance A",
       "final": "Diablo Alliance A",
-      "suggested_club": "Diablo Alliance",
+      "registry_match": "Diablo Alliance A",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1-NEWPORT BEACH BLUE",
@@ -1755,11 +2021,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1-NEWPORT BEACH BLUE",
       "stage_4_seed": "NEWPORT BEACH BLUE",
       "stage_5_parenthetical": "NEWPORT BEACH BLUE",
+      "stage_6_case": "Newport Beach Blue",
       "final": "Newport Beach Blue",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport Beach Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1-NORCAL",
@@ -1768,11 +2036,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1-NORCAL",
       "stage_4_seed": "NORCAL",
       "stage_5_parenthetical": "NORCAL",
+      "stage_6_case": "NorCal",
       "final": "NorCal",
-      "suggested_club": "NorCal",
+      "registry_match": "NorCal",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1-RIVERSIDE",
@@ -1781,11 +2051,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1-RIVERSIDE",
       "stage_4_seed": "RIVERSIDE",
       "stage_5_parenthetical": "RIVERSIDE",
+      "stage_6_case": "Riverside",
       "final": "Riverside",
-      "suggested_club": "Riverside",
+      "registry_match": "Riverside",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1-SAN FRANCISCO",
@@ -1794,11 +2066,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1-SAN FRANCISCO",
       "stage_4_seed": "SAN FRANCISCO",
       "stage_5_parenthetical": "SAN FRANCISCO",
+      "stage_6_case": "San Francisco",
       "final": "San Francisco",
-      "suggested_club": "San Francisco",
+      "registry_match": "San Francisco",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B1-SD ECA",
@@ -1807,11 +2081,13 @@ window.CPI_API = {
       "stage_3_bracket": "B1-SD ECA",
       "stage_4_seed": "SD ECA",
       "stage_5_parenthetical": "SD ECA",
+      "stage_6_case": "SD Eca",
       "final": "SD Eca",
-      "suggested_club": "SD Eca",
+      "registry_match": "SD Eca",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2 - 908 Blue(B)",
@@ -1819,12 +2095,14 @@ window.CPI_API = {
       "stage_2_placement": "B2 - 908 Blue(B)",
       "stage_3_bracket": "B2 - 908 Blue(B)",
       "stage_4_seed": "908 Blue(B)",
-      "stage_5_parenthetical": "908 Blue(B)",
-      "final": "908 Blue(B)",
-      "suggested_club": "908 Blue(B)",
+      "stage_5_parenthetical": "908 Blue",
+      "stage_6_case": "908 Blue",
+      "final": "908 Blue",
+      "registry_match": "908 Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2 - Crown City",
@@ -1833,11 +2111,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2 - Crown City",
       "stage_4_seed": "Crown City",
       "stage_5_parenthetical": "Crown City",
+      "stage_6_case": "Crown City",
       "final": "Crown City",
-      "suggested_club": "Crown City",
+      "registry_match": "Crown City",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2 - ECA A",
@@ -1846,11 +2126,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2 - ECA A",
       "stage_4_seed": "ECA A",
       "stage_5_parenthetical": "ECA A",
+      "stage_6_case": "Eca A",
       "final": "Eca A",
-      "suggested_club": "Eca",
+      "registry_match": "Eca A",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2 - South Coast",
@@ -1859,11 +2141,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2 - South Coast",
       "stage_4_seed": "South Coast",
       "stage_5_parenthetical": "South Coast",
+      "stage_6_case": "South Coast",
       "final": "South Coast",
-      "suggested_club": "South Coast",
+      "registry_match": "South Coast",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2(13)-BACK BAY",
@@ -1872,11 +2156,13 @@ window.CPI_API = {
       "stage_3_bracket": "BACK BAY",
       "stage_4_seed": "BACK BAY",
       "stage_5_parenthetical": "BACK BAY",
+      "stage_6_case": "Back Bay",
       "final": "Back Bay",
-      "suggested_club": "Back Bay",
+      "registry_match": "Back Bay",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2-ALAMEDA",
@@ -1885,11 +2171,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2-ALAMEDA",
       "stage_4_seed": "ALAMEDA",
       "stage_5_parenthetical": "ALAMEDA",
+      "stage_6_case": "Alameda",
       "final": "Alameda",
-      "suggested_club": "Alameda",
+      "registry_match": "Alameda",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2-MISSION 14B",
@@ -1898,11 +2186,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2-MISSION 14B",
       "stage_4_seed": "MISSION 14B",
       "stage_5_parenthetical": "MISSION 14B",
+      "stage_6_case": "Mission 14b",
       "final": "Mission 14b",
-      "suggested_club": "Mission 14b",
+      "registry_match": "Mission 14b",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2-PALOS VERDES A",
@@ -1911,11 +2201,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2-PALOS VERDES A",
       "stage_4_seed": "PALOS VERDES A",
       "stage_5_parenthetical": "PALOS VERDES A",
+      "stage_6_case": "Palos Verdes A",
       "final": "Palos Verdes A",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes A",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2-PASADENA AC ORANGE",
@@ -1924,11 +2216,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2-PASADENA AC ORANGE",
       "stage_4_seed": "PASADENA AC ORANGE",
       "stage_5_parenthetical": "PASADENA AC ORANGE",
+      "stage_6_case": "Pasadena Ac Orange",
       "final": "Pasadena Ac Orange",
-      "suggested_club": "Pasadena Ac",
+      "registry_match": "Pasadena Ac Orange",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2-TROJAN CARDINAL",
@@ -1937,11 +2231,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2-TROJAN CARDINAL",
       "stage_4_seed": "TROJAN CARDINAL",
       "stage_5_parenthetical": "TROJAN CARDINAL",
+      "stage_6_case": "Trojan Cardinal",
       "final": "Trojan Cardinal",
-      "suggested_club": "Trojan Cardinal",
+      "registry_match": "Trojan Cardinal",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B2-TROJAN GOLD",
@@ -1950,11 +2246,13 @@ window.CPI_API = {
       "stage_3_bracket": "B2-TROJAN GOLD",
       "stage_4_seed": "TROJAN GOLD",
       "stage_5_parenthetical": "TROJAN GOLD",
+      "stage_6_case": "Trojan Gold",
       "final": "Trojan Gold",
-      "suggested_club": "Trojan",
+      "registry_match": "Trojan Gold",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3 - Northwest",
@@ -1963,11 +2261,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3 - Northwest",
       "stage_4_seed": "Northwest",
       "stage_5_parenthetical": "Northwest",
+      "stage_6_case": "Northwest",
       "final": "Northwest",
-      "suggested_club": "Northwest",
+      "registry_match": "Northwest",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3 - Rose Bowl Red(A)",
@@ -1975,12 +2275,14 @@ window.CPI_API = {
       "stage_2_placement": "B3 - Rose Bowl Red(A)",
       "stage_3_bracket": "B3 - Rose Bowl Red(A)",
       "stage_4_seed": "Rose Bowl Red(A)",
-      "stage_5_parenthetical": "Rose Bowl Red(A)",
-      "final": "Rose Bowl Red(A)",
-      "suggested_club": "Rose Bowl Red(A)",
+      "stage_5_parenthetical": "Rose Bowl Red",
+      "stage_6_case": "Rose Bowl Red",
+      "final": "Rose Bowl Red",
+      "registry_match": "Rose Bowl Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3 - Shore Aquatics",
@@ -1989,11 +2291,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3 - Shore Aquatics",
       "stage_4_seed": "Shore Aquatics",
       "stage_5_parenthetical": "Shore Aquatics",
+      "stage_6_case": "Shore Aquatics",
       "final": "Shore Aquatics",
-      "suggested_club": "Shore Aquatics",
+      "registry_match": "Shore Aquatics",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3 - Stanford White",
@@ -2002,11 +2306,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3 - Stanford White",
       "stage_4_seed": "Stanford White",
       "stage_5_parenthetical": "Stanford White",
+      "stage_6_case": "Stanford White",
       "final": "Stanford White",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford White",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3(20)-LA JOLLA UNITED GOLD",
@@ -2015,11 +2321,13 @@ window.CPI_API = {
       "stage_3_bracket": "LA JOLLA UNITED GOLD",
       "stage_4_seed": "LA JOLLA UNITED GOLD",
       "stage_5_parenthetical": "LA JOLLA UNITED GOLD",
+      "stage_6_case": "LA Jolla United Gold",
       "final": "LA Jolla United Gold",
-      "suggested_club": "LA Jolla United",
+      "registry_match": "LA Jolla United Gold",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3-NORCAL TEAL",
@@ -2028,11 +2336,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3-NORCAL TEAL",
       "stage_4_seed": "NORCAL TEAL",
       "stage_5_parenthetical": "NORCAL TEAL",
+      "stage_6_case": "NorCal Teal",
       "final": "NorCal Teal",
-      "suggested_club": "NorCal Teal",
+      "registry_match": "NorCal Teal",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3-NORTH IRVINE BLACK",
@@ -2041,11 +2351,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3-NORTH IRVINE BLACK",
       "stage_4_seed": "NORTH IRVINE BLACK",
       "stage_5_parenthetical": "NORTH IRVINE BLACK",
+      "stage_6_case": "North Irvine Black",
       "final": "North Irvine Black",
-      "suggested_club": "North Irvine",
+      "registry_match": "North Irvine Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3-ORANGE COUNTY WPC B",
@@ -2054,11 +2366,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3-ORANGE COUNTY WPC B",
       "stage_4_seed": "ORANGE COUNTY WPC B",
       "stage_5_parenthetical": "ORANGE COUNTY WPC B",
+      "stage_6_case": "Orange County WPC B",
       "final": "Orange County WPC B",
-      "suggested_club": "Orange County WPC",
+      "registry_match": "Orange County WPC B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3-PATRIOT RED",
@@ -2067,11 +2381,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3-PATRIOT RED",
       "stage_4_seed": "PATRIOT RED",
       "stage_5_parenthetical": "PATRIOT RED",
+      "stage_6_case": "Patriot Red",
       "final": "Patriot Red",
-      "suggested_club": "Patriot",
+      "registry_match": "Patriot Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3-SAN CLEMENTE BLACK",
@@ -2080,11 +2396,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3-SAN CLEMENTE BLACK",
       "stage_4_seed": "SAN CLEMENTE BLACK",
       "stage_5_parenthetical": "SAN CLEMENTE BLACK",
+      "stage_6_case": "San Clemente Black",
       "final": "San Clemente Black",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B3-SOUTH COAST BLUE (C)",
@@ -2093,11 +2411,13 @@ window.CPI_API = {
       "stage_3_bracket": "B3-SOUTH COAST BLUE (C)",
       "stage_4_seed": "SOUTH COAST BLUE (C)",
       "stage_5_parenthetical": "SOUTH COAST BLUE",
+      "stage_6_case": "South Coast Blue",
       "final": "South Coast Blue",
-      "suggested_club": "South Coast",
+      "registry_match": "South Coast Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B4 - Rose Bowl Black",
@@ -2106,11 +2426,13 @@ window.CPI_API = {
       "stage_3_bracket": "B4 - Rose Bowl Black",
       "stage_4_seed": "Rose Bowl Black",
       "stage_5_parenthetical": "Rose Bowl Black",
+      "stage_6_case": "Rose Bowl Black",
       "final": "Rose Bowl Black",
-      "suggested_club": "Rose Bowl",
+      "registry_match": "Rose Bowl Black",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B4 - Trojan Gold (B)",
@@ -2119,11 +2441,13 @@ window.CPI_API = {
       "stage_3_bracket": "B4 - Trojan Gold (B)",
       "stage_4_seed": "Trojan Gold (B)",
       "stage_5_parenthetical": "Trojan Gold",
+      "stage_6_case": "Trojan Gold",
       "final": "Trojan Gold",
-      "suggested_club": "Trojan",
+      "registry_match": "Trojan Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B4-RANCHO TSUNAMI 12 BLUE",
@@ -2132,11 +2456,13 @@ window.CPI_API = {
       "stage_3_bracket": "B4-RANCHO TSUNAMI 12 BLUE",
       "stage_4_seed": "RANCHO TSUNAMI 12 BLUE",
       "stage_5_parenthetical": "RANCHO TSUNAMI 12 BLUE",
+      "stage_6_case": "Rancho Tsunami 12 Blue",
       "final": "Rancho Tsunami 12 Blue",
-      "suggested_club": "Rancho Tsunami 12",
+      "registry_match": "Rancho Tsunami 12 Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "B4-SOCAL 12 BLACK",
@@ -2145,11 +2471,13 @@ window.CPI_API = {
       "stage_3_bracket": "B4-SOCAL 12 BLACK",
       "stage_4_seed": "SOCAL 12 BLACK",
       "stage_5_parenthetical": "SOCAL 12 BLACK",
+      "stage_6_case": "SoCal 12 Black",
       "final": "SoCal 12 Black",
-      "suggested_club": "SoCal 12",
+      "registry_match": "SoCal 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1 - Back Bay",
@@ -2158,11 +2486,13 @@ window.CPI_API = {
       "stage_3_bracket": "C1 - Back Bay",
       "stage_4_seed": "Back Bay",
       "stage_5_parenthetical": "Back Bay",
+      "stage_6_case": "Back Bay",
       "final": "Back Bay",
-      "suggested_club": "Back Bay",
+      "registry_match": "Back Bay",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1 - CIU Gold(A)",
@@ -2170,12 +2500,14 @@ window.CPI_API = {
       "stage_2_placement": "C1 - CIU Gold(A)",
       "stage_3_bracket": "C1 - CIU Gold(A)",
       "stage_4_seed": "CIU Gold(A)",
-      "stage_5_parenthetical": "CIU Gold(A)",
-      "final": "CIU Gold(A)",
-      "suggested_club": "CIU Gold(A)",
+      "stage_5_parenthetical": "CIU Gold",
+      "stage_6_case": "CIU Gold",
+      "final": "CIU Gold",
+      "registry_match": "Channel Islands United Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1 - SET",
@@ -2184,11 +2516,13 @@ window.CPI_API = {
       "stage_3_bracket": "C1 - SET",
       "stage_4_seed": "SET",
       "stage_5_parenthetical": "SET",
+      "stage_6_case": "SET",
       "final": "SET",
-      "suggested_club": "SET",
+      "registry_match": "SET",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1(5)-LAWPC",
@@ -2197,11 +2531,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAWPC",
       "stage_4_seed": "LAWPC",
       "stage_5_parenthetical": "LAWPC",
+      "stage_6_case": "LAWPC",
       "final": "LAWPC",
-      "suggested_club": "Los Angeles WPC",
+      "registry_match": "Los Angeles WPC",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1-HIELAND",
@@ -2210,11 +2546,13 @@ window.CPI_API = {
       "stage_3_bracket": "C1-HIELAND",
       "stage_4_seed": "HIELAND",
       "stage_5_parenthetical": "HIELAND",
+      "stage_6_case": "Hieland",
       "final": "Hieland",
-      "suggested_club": "Hieland",
+      "registry_match": "Hieland",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1-LAMORINDA A",
@@ -2223,11 +2561,13 @@ window.CPI_API = {
       "stage_3_bracket": "C1-LAMORINDA A",
       "stage_4_seed": "LAMORINDA A",
       "stage_5_parenthetical": "LAMORINDA A",
+      "stage_6_case": "Lamorinda A",
       "final": "Lamorinda A",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda A",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1-PASADENA AC",
@@ -2236,11 +2576,13 @@ window.CPI_API = {
       "stage_3_bracket": "C1-PASADENA AC",
       "stage_4_seed": "PASADENA AC",
       "stage_5_parenthetical": "PASADENA AC",
+      "stage_6_case": "Pasadena Ac",
       "final": "Pasadena Ac",
-      "suggested_club": "Pasadena Ac",
+      "registry_match": "Pasadena Ac",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1-SAN DIEGO DONS",
@@ -2249,11 +2591,13 @@ window.CPI_API = {
       "stage_3_bracket": "C1-SAN DIEGO DONS",
       "stage_4_seed": "SAN DIEGO DONS",
       "stage_5_parenthetical": "SAN DIEGO DONS",
+      "stage_6_case": "San Diego Dons",
       "final": "San Diego Dons",
-      "suggested_club": "San Diego Dons",
+      "registry_match": "San Diego Dons",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1-TSM",
@@ -2262,11 +2606,13 @@ window.CPI_API = {
       "stage_3_bracket": "C1-TSM",
       "stage_4_seed": "TSM",
       "stage_5_parenthetical": "TSM",
+      "stage_6_case": "Tsm",
       "final": "Tsm",
-      "suggested_club": "Tsm",
+      "registry_match": "Tsm",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C1-VANGUARD BLUE",
@@ -2275,11 +2621,13 @@ window.CPI_API = {
       "stage_3_bracket": "C1-VANGUARD BLUE",
       "stage_4_seed": "VANGUARD BLUE",
       "stage_5_parenthetical": "VANGUARD BLUE",
+      "stage_6_case": "Vanguard Blue",
       "final": "Vanguard Blue",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2 - CDM White",
@@ -2288,11 +2636,13 @@ window.CPI_API = {
       "stage_3_bracket": "C2 - CDM White",
       "stage_4_seed": "CDM White",
       "stage_5_parenthetical": "CDM White",
+      "stage_6_case": "CDM White",
       "final": "CDM White",
-      "suggested_club": "CDM",
+      "registry_match": "CDM White",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2 - South Coast White",
@@ -2301,11 +2651,13 @@ window.CPI_API = {
       "stage_3_bracket": "C2 - South Coast White",
       "stage_4_seed": "South Coast White",
       "stage_5_parenthetical": "South Coast White",
+      "stage_6_case": "South Coast White",
       "final": "South Coast White",
-      "suggested_club": "South Coast",
+      "registry_match": "South Coast White",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2 - Trojan Cardinal(A)",
@@ -2313,12 +2665,14 @@ window.CPI_API = {
       "stage_2_placement": "C2 - Trojan Cardinal(A)",
       "stage_3_bracket": "C2 - Trojan Cardinal(A)",
       "stage_4_seed": "Trojan Cardinal(A)",
-      "stage_5_parenthetical": "Trojan Cardinal(A)",
-      "final": "Trojan Cardinal(A)",
-      "suggested_club": "Trojan Cardinal(A)",
+      "stage_5_parenthetical": "Trojan Cardinal",
+      "stage_6_case": "Trojan Cardinal",
+      "final": "Trojan Cardinal",
+      "registry_match": "Trojan Cardinal",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2(12)-NORTHWEST",
@@ -2327,11 +2681,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORTHWEST",
       "stage_4_seed": "NORTHWEST",
       "stage_5_parenthetical": "NORTHWEST",
+      "stage_6_case": "Northwest",
       "final": "Northwest",
-      "suggested_club": "Northwest",
+      "registry_match": "Northwest",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2-GOLD COAST",
@@ -2340,11 +2696,13 @@ window.CPI_API = {
       "stage_3_bracket": "C2-GOLD COAST",
       "stage_4_seed": "GOLD COAST",
       "stage_5_parenthetical": "GOLD COAST",
+      "stage_6_case": "Gold Coast",
       "final": "Gold Coast",
-      "suggested_club": "Gold Coast",
+      "registry_match": "Gold Coast",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2-SAN JOSE FOUNDATION BLACK",
@@ -2353,11 +2711,13 @@ window.CPI_API = {
       "stage_3_bracket": "C2-SAN JOSE FOUNDATION BLACK",
       "stage_4_seed": "SAN JOSE FOUNDATION BLACK",
       "stage_5_parenthetical": "SAN JOSE FOUNDATION BLACK",
+      "stage_6_case": "San Jose Foundation Black",
       "final": "San Jose Foundation Black",
-      "suggested_club": "San Jose Foundation",
+      "registry_match": "San Jose Foundation Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2-TRITON GOLD",
@@ -2366,11 +2726,13 @@ window.CPI_API = {
       "stage_3_bracket": "C2-TRITON GOLD",
       "stage_4_seed": "TRITON GOLD",
       "stage_5_parenthetical": "TRITON GOLD",
+      "stage_6_case": "Triton Gold",
       "final": "Triton Gold",
-      "suggested_club": "Triton",
+      "registry_match": "Triton Gold",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2-VANGUARD BLUE",
@@ -2379,11 +2741,13 @@ window.CPI_API = {
       "stage_3_bracket": "C2-VANGUARD BLUE",
       "stage_4_seed": "VANGUARD BLUE",
       "stage_5_parenthetical": "VANGUARD BLUE",
+      "stage_6_case": "Vanguard Blue",
       "final": "Vanguard Blue",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 3
+      "appearance_count": 3,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C2-VANGUARD SILVER",
@@ -2392,11 +2756,13 @@ window.CPI_API = {
       "stage_3_bracket": "C2-VANGUARD SILVER",
       "stage_4_seed": "VANGUARD SILVER",
       "stage_5_parenthetical": "VANGUARD SILVER",
+      "stage_6_case": "Vanguard Silver",
       "final": "Vanguard Silver",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Silver",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3 - ECA B",
@@ -2405,11 +2771,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3 - ECA B",
       "stage_4_seed": "ECA B",
       "stage_5_parenthetical": "ECA B",
+      "stage_6_case": "Eca B",
       "final": "Eca B",
-      "suggested_club": "Eca",
+      "registry_match": "Eca B",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3 - SD Dons Gold",
@@ -2418,11 +2786,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3 - SD Dons Gold",
       "stage_4_seed": "SD Dons Gold",
       "stage_5_parenthetical": "SD Dons Gold",
+      "stage_6_case": "SD Dons Gold",
       "final": "SD Dons Gold",
-      "suggested_club": "SD Dons",
+      "registry_match": "SD Dons Gold",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3 - Titans Gold",
@@ -2431,11 +2801,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3 - Titans Gold",
       "stage_4_seed": "Titans Gold",
       "stage_5_parenthetical": "Titans Gold",
+      "stage_6_case": "Titans Gold",
       "final": "Titans Gold",
-      "suggested_club": "Titans",
+      "registry_match": "Titans Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3(21)-STANFORD 13",
@@ -2444,11 +2816,13 @@ window.CPI_API = {
       "stage_3_bracket": "STANFORD 13",
       "stage_4_seed": "STANFORD 13",
       "stage_5_parenthetical": "STANFORD 13",
+      "stage_6_case": "Stanford 13",
       "final": "Stanford 13",
-      "suggested_club": "Stanford 13",
+      "registry_match": "Stanford 13",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3-NEWPORT BEACH WHITE",
@@ -2457,11 +2831,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3-NEWPORT BEACH WHITE",
       "stage_4_seed": "NEWPORT BEACH WHITE",
       "stage_5_parenthetical": "NEWPORT BEACH WHITE",
+      "stage_6_case": "Newport Beach White",
       "final": "Newport Beach White",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport Beach White",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3-ORANGE COUNTY WPC RED",
@@ -2470,11 +2846,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3-ORANGE COUNTY WPC RED",
       "stage_4_seed": "ORANGE COUNTY WPC RED",
       "stage_5_parenthetical": "ORANGE COUNTY WPC RED",
+      "stage_6_case": "Orange County WPC Red",
       "final": "Orange County WPC Red",
-      "suggested_club": "Orange County WPC",
+      "registry_match": "Orange County WPC Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3-PALOS VERDES B",
@@ -2483,11 +2861,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3-PALOS VERDES B",
       "stage_4_seed": "PALOS VERDES B",
       "stage_5_parenthetical": "PALOS VERDES B",
+      "stage_6_case": "Palos Verdes B",
       "final": "Palos Verdes B",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3-RANCHO TSUNAMI BLUE",
@@ -2496,11 +2876,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3-RANCHO TSUNAMI BLUE",
       "stage_4_seed": "RANCHO TSUNAMI BLUE",
       "stage_5_parenthetical": "RANCHO TSUNAMI BLUE",
+      "stage_6_case": "Rancho Tsunami Blue",
       "final": "Rancho Tsunami Blue",
-      "suggested_club": "Rancho Tsunami",
+      "registry_match": "Rancho Tsunami Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 3
+      "appearance_count": 3,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3-SANTA CRUZ",
@@ -2509,11 +2891,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3-SANTA CRUZ",
       "stage_4_seed": "SANTA CRUZ",
       "stage_5_parenthetical": "SANTA CRUZ",
+      "stage_6_case": "Santa Cruz",
       "final": "Santa Cruz",
-      "suggested_club": "Santa Cruz",
+      "registry_match": "Santa Cruz",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C3-SOUTH COAST RED (A)",
@@ -2522,11 +2906,13 @@ window.CPI_API = {
       "stage_3_bracket": "C3-SOUTH COAST RED (A)",
       "stage_4_seed": "SOUTH COAST RED (A)",
       "stage_5_parenthetical": "SOUTH COAST RED",
+      "stage_6_case": "South Coast Red",
       "final": "South Coast Red",
-      "suggested_club": "South Coast",
+      "registry_match": "South Coast Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C4 - Foothill Black(B)",
@@ -2534,12 +2920,14 @@ window.CPI_API = {
       "stage_2_placement": "C4 - Foothill Black(B)",
       "stage_3_bracket": "C4 - Foothill Black(B)",
       "stage_4_seed": "Foothill Black(B)",
-      "stage_5_parenthetical": "Foothill Black(B)",
-      "final": "Foothill Black(B)",
-      "suggested_club": "Foothill Black(B)",
+      "stage_5_parenthetical": "Foothill Black",
+      "stage_6_case": "Foothill Black",
+      "final": "Foothill Black",
+      "registry_match": "Foothill Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C4 - Sharks",
@@ -2548,11 +2936,13 @@ window.CPI_API = {
       "stage_3_bracket": "C4 - Sharks",
       "stage_4_seed": "Sharks",
       "stage_5_parenthetical": "Sharks",
+      "stage_6_case": "Sharks",
       "final": "Sharks",
-      "suggested_club": "Sharks",
+      "registry_match": "Sharks",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C4-DEVILS GATE",
@@ -2561,11 +2951,13 @@ window.CPI_API = {
       "stage_3_bracket": "C4-DEVILS GATE",
       "stage_4_seed": "DEVILS GATE",
       "stage_5_parenthetical": "DEVILS GATE",
+      "stage_6_case": "Devils Gate",
       "final": "Devils Gate",
-      "suggested_club": "Devils Gate",
+      "registry_match": "Devils Gate",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C4-NORTH IRVINE 12 BLACK",
@@ -2574,11 +2966,13 @@ window.CPI_API = {
       "stage_3_bracket": "C4-NORTH IRVINE 12 BLACK",
       "stage_4_seed": "NORTH IRVINE 12 BLACK",
       "stage_5_parenthetical": "NORTH IRVINE 12 BLACK",
+      "stage_6_case": "North Irvine 12 Black",
       "final": "North Irvine 12 Black",
-      "suggested_club": "North Irvine 12",
+      "registry_match": "North Irvine 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "C4-SAN DIEGO DONS 12 RED",
@@ -2587,11 +2981,13 @@ window.CPI_API = {
       "stage_3_bracket": "C4-SAN DIEGO DONS 12 RED",
       "stage_4_seed": "SAN DIEGO DONS 12 RED",
       "stage_5_parenthetical": "SAN DIEGO DONS 12 RED",
+      "stage_6_case": "San Diego Dons 12 Red",
       "final": "San Diego Dons 12 Red",
-      "suggested_club": "San Diego Dons 12",
+      "registry_match": "San Diego Dons 12 Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "CC UNITED BLACK",
@@ -2600,11 +2996,13 @@ window.CPI_API = {
       "stage_3_bracket": "CC UNITED BLACK",
       "stage_4_seed": "CC UNITED BLACK",
       "stage_5_parenthetical": "CC UNITED BLACK",
+      "stage_6_case": "CC United Black",
       "final": "CC United Black",
-      "suggested_club": "CC United",
+      "registry_match": "CC United Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "CC1 - 908",
@@ -2613,11 +3011,13 @@ window.CPI_API = {
       "stage_3_bracket": "CC1 - 908",
       "stage_4_seed": "CC1 - 908",
       "stage_5_parenthetical": "CC1 - 908",
+      "stage_6_case": "Cc1 - 908",
       "final": "Cc1 - 908",
-      "suggested_club": "Cc1 - 908",
+      "registry_match": "Cc1 - 908",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "CHANNEL ISLANDS UNITED GOLD",
@@ -2626,11 +3026,13 @@ window.CPI_API = {
       "stage_3_bracket": "CHANNEL ISLANDS UNITED GOLD",
       "stage_4_seed": "CHANNEL ISLANDS UNITED GOLD",
       "stage_5_parenthetical": "CHANNEL ISLANDS UNITED GOLD",
+      "stage_6_case": "Channel Islands United Gold",
       "final": "Channel Islands United Gold",
-      "suggested_club": "Channel Islands United",
+      "registry_match": "Channel Islands United Gold",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D1 - 908 Yellow(A)",
@@ -2638,12 +3040,14 @@ window.CPI_API = {
       "stage_2_placement": "D1 - 908 Yellow(A)",
       "stage_3_bracket": "D1 - 908 Yellow(A)",
       "stage_4_seed": "908 Yellow(A)",
-      "stage_5_parenthetical": "908 Yellow(A)",
-      "final": "908 Yellow(A)",
-      "suggested_club": "908 Yellow(A)",
+      "stage_5_parenthetical": "908 Yellow",
+      "stage_6_case": "908 Yellow",
+      "final": "908 Yellow",
+      "registry_match": "908 Yellow",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D1 - Newport White",
@@ -2652,11 +3056,13 @@ window.CPI_API = {
       "stage_3_bracket": "D1 - Newport White",
       "stage_4_seed": "Newport White",
       "stage_5_parenthetical": "Newport White",
+      "stage_6_case": "Newport White",
       "final": "Newport White",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport White",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D1 - Norcal Aquatics B",
@@ -2665,11 +3071,13 @@ window.CPI_API = {
       "stage_3_bracket": "D1 - Norcal Aquatics B",
       "stage_4_seed": "Norcal Aquatics B",
       "stage_5_parenthetical": "Norcal Aquatics B",
+      "stage_6_case": "Norcal Aquatics B",
       "final": "Norcal Aquatics B",
-      "suggested_club": "Norcal Aquatics",
+      "registry_match": "Norcal Aquatics B",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D1-CC UNITED BLACK",
@@ -2678,11 +3086,13 @@ window.CPI_API = {
       "stage_3_bracket": "D1-CC UNITED BLACK",
       "stage_4_seed": "CC UNITED BLACK",
       "stage_5_parenthetical": "CC UNITED BLACK",
+      "stage_6_case": "CC United Black",
       "final": "CC United Black",
-      "suggested_club": "CC United",
+      "registry_match": "CC United Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D1-LA JOLLA UNITED NAVY",
@@ -2691,11 +3101,13 @@ window.CPI_API = {
       "stage_3_bracket": "D1-LA JOLLA UNITED NAVY",
       "stage_4_seed": "LA JOLLA UNITED NAVY",
       "stage_5_parenthetical": "LA JOLLA UNITED NAVY",
+      "stage_6_case": "LA Jolla United Navy",
       "final": "LA Jolla United Navy",
-      "suggested_club": "LA Jolla United",
+      "registry_match": "LA Jolla United Navy",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D1-PRIDE RED",
@@ -2704,11 +3116,13 @@ window.CPI_API = {
       "stage_3_bracket": "D1-PRIDE RED",
       "stage_4_seed": "PRIDE RED",
       "stage_5_parenthetical": "PRIDE RED",
+      "stage_6_case": "Pride Red",
       "final": "Pride Red",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D1-SAND CANYON",
@@ -2717,11 +3131,13 @@ window.CPI_API = {
       "stage_3_bracket": "D1-SAND CANYON",
       "stage_4_seed": "SAND CANYON",
       "stage_5_parenthetical": "SAND CANYON",
+      "stage_6_case": "Sand Canyon",
       "final": "Sand Canyon",
-      "suggested_club": "Sand Canyon",
+      "registry_match": "Sand Canyon",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D1-TITANS",
@@ -2730,11 +3146,13 @@ window.CPI_API = {
       "stage_3_bracket": "D1-TITANS",
       "stage_4_seed": "TITANS",
       "stage_5_parenthetical": "TITANS",
+      "stage_6_case": "Titans",
       "final": "Titans",
-      "suggested_club": "Titans",
+      "registry_match": "Titans",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D2 - LACUWP",
@@ -2743,11 +3161,13 @@ window.CPI_API = {
       "stage_3_bracket": "D2 - LACUWP",
       "stage_4_seed": "LACUWP",
       "stage_5_parenthetical": "LACUWP",
+      "stage_6_case": "Lacuwp",
       "final": "Lacuwp",
-      "suggested_club": "Lacuwp",
+      "registry_match": "Lacuwp",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D2 - Puget Sound",
@@ -2756,11 +3176,13 @@ window.CPI_API = {
       "stage_3_bracket": "D2 - Puget Sound",
       "stage_4_seed": "Puget Sound",
       "stage_5_parenthetical": "Puget Sound",
+      "stage_6_case": "Puget Sound",
       "final": "Puget Sound",
-      "suggested_club": "Puget Sound",
+      "registry_match": "Puget Sound",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D2 - Route 66 14U Boys",
@@ -2769,11 +3191,13 @@ window.CPI_API = {
       "stage_3_bracket": "D2 - Route 66 14U Boys",
       "stage_4_seed": "Route 66 14U Boys",
       "stage_5_parenthetical": "Route 66 14U Boys",
+      "stage_6_case": "Route 66 14U Boys",
       "final": "Route 66 14U Boys",
-      "suggested_club": "Route 66 14U Boys",
+      "registry_match": "Route 66 14U Boys",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D2-ALAMEDA",
@@ -2782,11 +3206,13 @@ window.CPI_API = {
       "stage_3_bracket": "D2-ALAMEDA",
       "stage_4_seed": "ALAMEDA",
       "stage_5_parenthetical": "ALAMEDA",
+      "stage_6_case": "Alameda",
       "final": "Alameda",
-      "suggested_club": "Alameda",
+      "registry_match": "Alameda",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D2-AMERICAN RIVER GOLD",
@@ -2795,11 +3221,13 @@ window.CPI_API = {
       "stage_3_bracket": "D2-AMERICAN RIVER GOLD",
       "stage_4_seed": "AMERICAN RIVER GOLD",
       "stage_5_parenthetical": "AMERICAN RIVER GOLD",
+      "stage_6_case": "American River Gold",
       "final": "American River Gold",
-      "suggested_club": "American River",
+      "registry_match": "American River Gold",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D2-LAMORINDA B",
@@ -2808,11 +3236,13 @@ window.CPI_API = {
       "stage_3_bracket": "D2-LAMORINDA B",
       "stage_4_seed": "LAMORINDA B",
       "stage_5_parenthetical": "LAMORINDA B",
+      "stage_6_case": "Lamorinda B",
       "final": "Lamorinda B",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda B",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D2-PRIDE BLACK",
@@ -2821,11 +3251,13 @@ window.CPI_API = {
       "stage_3_bracket": "D2-PRIDE BLACK",
       "stage_4_seed": "PRIDE BLACK",
       "stage_5_parenthetical": "PRIDE BLACK",
+      "stage_6_case": "Pride Black",
       "final": "Pride Black",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D2-SET",
@@ -2834,11 +3266,13 @@ window.CPI_API = {
       "stage_3_bracket": "D2-SET",
       "stage_4_seed": "SET",
       "stage_5_parenthetical": "SET",
+      "stage_6_case": "SET",
       "final": "SET",
-      "suggested_club": "SET",
+      "registry_match": "SET",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D3 - Santa Barbara",
@@ -2847,11 +3281,13 @@ window.CPI_API = {
       "stage_3_bracket": "D3 - Santa Barbara",
       "stage_4_seed": "Santa Barbara",
       "stage_5_parenthetical": "Santa Barbara",
+      "stage_6_case": "Santa Barbara",
       "final": "Santa Barbara",
-      "suggested_club": "Santa Barbara",
+      "registry_match": "Santa Barbara",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D3 - South Coast White(B)",
@@ -2859,12 +3295,14 @@ window.CPI_API = {
       "stage_2_placement": "D3 - South Coast White(B)",
       "stage_3_bracket": "D3 - South Coast White(B)",
       "stage_4_seed": "South Coast White(B)",
-      "stage_5_parenthetical": "South Coast White(B)",
-      "final": "South Coast White(B)",
-      "suggested_club": "South Coast White(B)",
+      "stage_5_parenthetical": "South Coast White",
+      "stage_6_case": "South Coast White",
+      "final": "South Coast White",
+      "registry_match": "South Coast White",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D3 - Titans",
@@ -2873,11 +3311,13 @@ window.CPI_API = {
       "stage_3_bracket": "D3 - Titans",
       "stage_4_seed": "Titans",
       "stage_5_parenthetical": "Titans",
+      "stage_6_case": "Titans",
       "final": "Titans",
-      "suggested_club": "Titans",
+      "registry_match": "Titans",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D3-CDM B",
@@ -2886,11 +3326,13 @@ window.CPI_API = {
       "stage_3_bracket": "D3-CDM B",
       "stage_4_seed": "CDM B",
       "stage_5_parenthetical": "CDM B",
+      "stage_6_case": "Cdm B",
       "final": "Cdm B",
-      "suggested_club": "Cdm",
+      "registry_match": "Cdm B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D3-MIDPEN",
@@ -2899,11 +3341,13 @@ window.CPI_API = {
       "stage_3_bracket": "D3-MIDPEN",
       "stage_4_seed": "MIDPEN",
       "stage_5_parenthetical": "MIDPEN",
+      "stage_6_case": "Midpen",
       "final": "Midpen",
-      "suggested_club": "Midpen",
+      "registry_match": "Midpen",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D3-ORWP B",
@@ -2912,11 +3356,13 @@ window.CPI_API = {
       "stage_3_bracket": "D3-ORWP B",
       "stage_4_seed": "ORWP B",
       "stage_5_parenthetical": "ORWP B",
+      "stage_6_case": "Orwp B",
       "final": "Orwp B",
-      "suggested_club": "Orwp",
+      "registry_match": "Orwp B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D3-PALOS VERDES B",
@@ -2925,11 +3371,13 @@ window.CPI_API = {
       "stage_3_bracket": "D3-PALOS VERDES B",
       "stage_4_seed": "PALOS VERDES B",
       "stage_5_parenthetical": "PALOS VERDES B",
+      "stage_6_case": "Palos Verdes B",
       "final": "Palos Verdes B",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes B",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D3-STANFORD RED",
@@ -2938,11 +3386,13 @@ window.CPI_API = {
       "stage_3_bracket": "D3-STANFORD RED",
       "stage_4_seed": "STANFORD RED",
       "stage_5_parenthetical": "STANFORD RED",
+      "stage_6_case": "Stanford Red",
       "final": "Stanford Red",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D4 - ORWP Red (B)",
@@ -2951,11 +3401,13 @@ window.CPI_API = {
       "stage_3_bracket": "D4 - ORWP Red (B)",
       "stage_4_seed": "ORWP Red (B)",
       "stage_5_parenthetical": "ORWP Red",
+      "stage_6_case": "ORWP Red",
       "final": "ORWP Red",
-      "suggested_club": "ORWP",
+      "registry_match": "ORWP Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D4 - Trilogy",
@@ -2964,11 +3416,13 @@ window.CPI_API = {
       "stage_3_bracket": "D4 - Trilogy",
       "stage_4_seed": "Trilogy",
       "stage_5_parenthetical": "Trilogy",
+      "stage_6_case": "Trilogy",
       "final": "Trilogy",
-      "suggested_club": "Trilogy",
+      "registry_match": "Trilogy",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D4-MISSION 12A",
@@ -2977,11 +3431,13 @@ window.CPI_API = {
       "stage_3_bracket": "D4-MISSION 12A",
       "stage_4_seed": "MISSION 12A",
       "stage_5_parenthetical": "MISSION 12A",
+      "stage_6_case": "Mission 12a",
       "final": "Mission 12a",
-      "suggested_club": "Mission 12a",
+      "registry_match": "Mission 12a",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "D4-NEWPORT BEACH SILVER",
@@ -2990,11 +3446,13 @@ window.CPI_API = {
       "stage_3_bracket": "D4-NEWPORT BEACH SILVER",
       "stage_4_seed": "NEWPORT BEACH SILVER",
       "stage_5_parenthetical": "NEWPORT BEACH SILVER",
+      "stage_6_case": "Newport Beach Silver",
       "final": "Newport Beach Silver",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport Beach Silver",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "DEVIL'S GATE",
@@ -3003,11 +3461,13 @@ window.CPI_API = {
       "stage_3_bracket": "DEVIL'S GATE",
       "stage_4_seed": "DEVIL'S GATE",
       "stage_5_parenthetical": "DEVIL'S GATE",
+      "stage_6_case": "Devil's Gate",
       "final": "Devil's Gate",
-      "suggested_club": "Devil's Gate",
+      "registry_match": "Devil's Gate",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E1 - Commerce",
@@ -3016,11 +3476,13 @@ window.CPI_API = {
       "stage_3_bracket": "E1 - Commerce",
       "stage_4_seed": "Commerce",
       "stage_5_parenthetical": "Commerce",
+      "stage_6_case": "Commerce",
       "final": "Commerce",
-      "suggested_club": "Commerce",
+      "registry_match": "Commerce",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E1 - Greenwich",
@@ -3029,11 +3491,13 @@ window.CPI_API = {
       "stage_3_bracket": "E1 - Greenwich",
       "stage_4_seed": "Greenwich",
       "stage_5_parenthetical": "Greenwich",
+      "stage_6_case": "Greenwich",
       "final": "Greenwich",
-      "suggested_club": "Greenwich",
+      "registry_match": "Greenwich",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E1 - Mission B",
@@ -3042,11 +3506,13 @@ window.CPI_API = {
       "stage_3_bracket": "E1 - Mission B",
       "stage_4_seed": "Mission B",
       "stage_5_parenthetical": "Mission B",
+      "stage_6_case": "Mission B",
       "final": "Mission B",
-      "suggested_club": "Mission",
+      "registry_match": "Mission B",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E1(2)-FOOTHILL RED",
@@ -3055,11 +3521,13 @@ window.CPI_API = {
       "stage_3_bracket": "FOOTHILL RED",
       "stage_4_seed": "FOOTHILL RED",
       "stage_5_parenthetical": "FOOTHILL RED",
+      "stage_6_case": "Foothill Red",
       "final": "Foothill Red",
-      "suggested_club": "Foothill",
+      "registry_match": "Foothill Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E1-GOLD COAST",
@@ -3068,11 +3536,13 @@ window.CPI_API = {
       "stage_3_bracket": "E1-GOLD COAST",
       "stage_4_seed": "GOLD COAST",
       "stage_5_parenthetical": "GOLD COAST",
+      "stage_6_case": "Gold Coast",
       "final": "Gold Coast",
-      "suggested_club": "Gold Coast",
+      "registry_match": "Gold Coast",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E1-STANFORD RED",
@@ -3081,11 +3551,13 @@ window.CPI_API = {
       "stage_3_bracket": "E1-STANFORD RED",
       "stage_4_seed": "STANFORD RED",
       "stage_5_parenthetical": "STANFORD RED",
+      "stage_6_case": "Stanford Red",
       "final": "Stanford Red",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E2 - CCWP",
@@ -3094,11 +3566,13 @@ window.CPI_API = {
       "stage_3_bracket": "E2 - CCWP",
       "stage_4_seed": "CCWP",
       "stage_5_parenthetical": "CCWP",
+      "stage_6_case": "Ccwp",
       "final": "Ccwp",
-      "suggested_club": "Ccwp",
+      "registry_match": "Ccwp",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E2 - ORWP",
@@ -3107,11 +3581,13 @@ window.CPI_API = {
       "stage_3_bracket": "E2 - ORWP",
       "stage_4_seed": "ORWP",
       "stage_5_parenthetical": "ORWP",
+      "stage_6_case": "Orwp",
       "final": "Orwp",
-      "suggested_club": "Orwp",
+      "registry_match": "Orwp",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E2 - Temple City",
@@ -3120,11 +3596,13 @@ window.CPI_API = {
       "stage_3_bracket": "E2 - Temple City",
       "stage_4_seed": "Temple City",
       "stage_5_parenthetical": "Temple City",
+      "stage_6_case": "Temple City",
       "final": "Temple City",
-      "suggested_club": "Temple City",
+      "registry_match": "Temple City",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E2(15)-MISSION WPC B",
@@ -3133,11 +3611,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION WPC B",
       "stage_4_seed": "MISSION WPC B",
       "stage_5_parenthetical": "MISSION WPC B",
+      "stage_6_case": "Mission WPC B",
       "final": "Mission WPC B",
-      "suggested_club": "Mission WPC",
+      "registry_match": "Mission WPC B",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E2-HONOLULU GREEN",
@@ -3146,11 +3626,13 @@ window.CPI_API = {
       "stage_3_bracket": "E2-HONOLULU GREEN",
       "stage_4_seed": "HONOLULU GREEN",
       "stage_5_parenthetical": "HONOLULU GREEN",
+      "stage_6_case": "Honolulu Green",
       "final": "Honolulu Green",
-      "suggested_club": "Honolulu",
+      "registry_match": "Honolulu Green",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E2-SHARKS",
@@ -3159,11 +3641,13 @@ window.CPI_API = {
       "stage_3_bracket": "E2-SHARKS",
       "stage_4_seed": "SHARKS",
       "stage_5_parenthetical": "SHARKS",
+      "stage_6_case": "Sharks",
       "final": "Sharks",
-      "suggested_club": "Sharks",
+      "registry_match": "Sharks",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E3 - CIU Coast",
@@ -3172,11 +3656,13 @@ window.CPI_API = {
       "stage_3_bracket": "E3 - CIU Coast",
       "stage_4_seed": "CIU Coast",
       "stage_5_parenthetical": "CIU Coast",
+      "stage_6_case": "CIU Coast",
       "final": "CIU Coast",
-      "suggested_club": "CIU Coast",
+      "registry_match": "CIU Coast",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "yes"
     },
     {
       "raw": "E3 - Foothill",
@@ -3185,11 +3671,13 @@ window.CPI_API = {
       "stage_3_bracket": "E3 - Foothill",
       "stage_4_seed": "Foothill",
       "stage_5_parenthetical": "Foothill",
+      "stage_6_case": "Foothill",
       "final": "Foothill",
-      "suggested_club": "Foothill",
+      "registry_match": "Foothill",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E3 - Sharks",
@@ -3198,11 +3686,13 @@ window.CPI_API = {
       "stage_3_bracket": "E3 - Sharks",
       "stage_4_seed": "Sharks",
       "stage_5_parenthetical": "Sharks",
+      "stage_6_case": "Sharks",
       "final": "Sharks",
-      "suggested_club": "Sharks",
+      "registry_match": "Sharks",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E3(18)-CC UNITED BLUE",
@@ -3211,11 +3701,13 @@ window.CPI_API = {
       "stage_3_bracket": "CC UNITED BLUE",
       "stage_4_seed": "CC UNITED BLUE",
       "stage_5_parenthetical": "CC UNITED BLUE",
+      "stage_6_case": "CC United Blue",
       "final": "CC United Blue",
-      "suggested_club": "CC United",
+      "registry_match": "CC United Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E3-CC UNITED WHITE",
@@ -3224,11 +3716,13 @@ window.CPI_API = {
       "stage_3_bracket": "E3-CC UNITED WHITE",
       "stage_4_seed": "CC UNITED WHITE",
       "stage_5_parenthetical": "CC UNITED WHITE",
+      "stage_6_case": "CC United White",
       "final": "CC United White",
-      "suggested_club": "CC United",
+      "registry_match": "CC United White",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E3-SAN JOSE FOUNDATION BLUE",
@@ -3237,11 +3731,13 @@ window.CPI_API = {
       "stage_3_bracket": "E3-SAN JOSE FOUNDATION BLUE",
       "stage_4_seed": "SAN JOSE FOUNDATION BLUE",
       "stage_5_parenthetical": "SAN JOSE FOUNDATION BLUE",
+      "stage_6_case": "San Jose Foundation Blue",
       "final": "San Jose Foundation Blue",
-      "suggested_club": "San Jose Foundation",
+      "registry_match": "San Jose Foundation Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "E4- Loyola",
@@ -3250,11 +3746,13 @@ window.CPI_API = {
       "stage_3_bracket": "E4- Loyola",
       "stage_4_seed": "Loyola",
       "stage_5_parenthetical": "Loyola",
+      "stage_6_case": "Loyola",
       "final": "Loyola",
-      "suggested_club": "Loyola",
+      "registry_match": "Loyola",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "ECA B",
@@ -3263,11 +3761,13 @@ window.CPI_API = {
       "stage_3_bracket": "ECA B",
       "stage_4_seed": "ECA B",
       "stage_5_parenthetical": "ECA B",
+      "stage_6_case": "Eca B",
       "final": "Eca B",
-      "suggested_club": "Eca",
+      "registry_match": "Eca B",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F1 - Shore Red",
@@ -3276,11 +3776,13 @@ window.CPI_API = {
       "stage_3_bracket": "F1 - Shore Red",
       "stage_4_seed": "Shore Red",
       "stage_5_parenthetical": "Shore Red",
+      "stage_6_case": "Shore Red",
       "final": "Shore Red",
-      "suggested_club": "Shore",
+      "registry_match": "Shore Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F1(3)-CT PREMIER",
@@ -3289,11 +3791,13 @@ window.CPI_API = {
       "stage_3_bracket": "CT PREMIER",
       "stage_4_seed": "CT PREMIER",
       "stage_5_parenthetical": "CT PREMIER",
+      "stage_6_case": "Ct Premier",
       "final": "Ct Premier",
-      "suggested_club": "Ct Premier",
+      "registry_match": "Ct Premier",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F1-SET",
@@ -3302,11 +3806,13 @@ window.CPI_API = {
       "stage_3_bracket": "F1-SET",
       "stage_4_seed": "SET",
       "stage_5_parenthetical": "SET",
+      "stage_6_case": "SET",
       "final": "SET",
-      "suggested_club": "SET",
+      "registry_match": "SET",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F1-SHAQ",
@@ -3315,11 +3821,13 @@ window.CPI_API = {
       "stage_3_bracket": "F1-SHAQ",
       "stage_4_seed": "SHAQ",
       "stage_5_parenthetical": "SHAQ",
+      "stage_6_case": "Shaq",
       "final": "Shaq",
-      "suggested_club": "Shaq",
+      "registry_match": "Shaq",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F2 - SBWPC A",
@@ -3328,11 +3836,13 @@ window.CPI_API = {
       "stage_3_bracket": "F2 - SBWPC A",
       "stage_4_seed": "SBWPC A",
       "stage_5_parenthetical": "SBWPC A",
+      "stage_6_case": "SBWPC A",
       "final": "SBWPC A",
-      "suggested_club": "Santa Barbara",
+      "registry_match": "Santa Barbara A",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F2(14)-BOA",
@@ -3341,11 +3851,13 @@ window.CPI_API = {
       "stage_3_bracket": "BOA",
       "stage_4_seed": "BOA",
       "stage_5_parenthetical": "BOA",
+      "stage_6_case": "BOA",
       "final": "BOA",
-      "suggested_club": "BOA",
+      "registry_match": "BOA",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F2-680 BLUE",
@@ -3354,11 +3866,13 @@ window.CPI_API = {
       "stage_3_bracket": "F2-680 BLUE",
       "stage_4_seed": "680 BLUE",
       "stage_5_parenthetical": "680 BLUE",
+      "stage_6_case": "680 Blue",
       "final": "680 Blue",
-      "suggested_club": "680",
+      "registry_match": "680 Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F2-NADO",
@@ -3367,11 +3881,13 @@ window.CPI_API = {
       "stage_3_bracket": "F2-NADO",
       "stage_4_seed": "NADO",
       "stage_5_parenthetical": "NADO",
+      "stage_6_case": "Nado",
       "final": "Nado",
-      "suggested_club": "Nado",
+      "registry_match": "Nado",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F3 - Supreme",
@@ -3380,11 +3896,13 @@ window.CPI_API = {
       "stage_3_bracket": "F3 - Supreme",
       "stage_4_seed": "Supreme",
       "stage_5_parenthetical": "Supreme",
+      "stage_6_case": "Supreme",
       "final": "Supreme",
-      "suggested_club": "Supreme",
+      "registry_match": "Supreme",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F3(19)-680 BLUE",
@@ -3393,11 +3911,13 @@ window.CPI_API = {
       "stage_3_bracket": "680 BLUE",
       "stage_4_seed": "680 BLUE",
       "stage_5_parenthetical": "680 BLUE",
+      "stage_6_case": "680 Blue",
       "final": "680 Blue",
-      "suggested_club": "680",
+      "registry_match": "680 Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F3-680 WHITE",
@@ -3406,11 +3926,13 @@ window.CPI_API = {
       "stage_3_bracket": "F3-680 WHITE",
       "stage_4_seed": "680 WHITE",
       "stage_5_parenthetical": "680 WHITE",
+      "stage_6_case": "680 White",
       "final": "680 White",
-      "suggested_club": "680",
+      "registry_match": "680 White",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F3-BURLINGAME",
@@ -3419,11 +3941,13 @@ window.CPI_API = {
       "stage_3_bracket": "F3-BURLINGAME",
       "stage_4_seed": "BURLINGAME",
       "stage_5_parenthetical": "BURLINGAME",
+      "stage_6_case": "Burlingame",
       "final": "Burlingame",
-      "suggested_club": "Burlingame",
+      "registry_match": "Burlingame",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "F4 - NGEN",
@@ -3432,11 +3956,13 @@ window.CPI_API = {
       "stage_3_bracket": "F4 - NGEN",
       "stage_4_seed": "NGEN",
       "stage_5_parenthetical": "NGEN",
+      "stage_6_case": "NGEN",
       "final": "NGEN",
-      "suggested_club": "NGEN",
+      "registry_match": "NGEN",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G1 - Norcal",
@@ -3445,11 +3971,13 @@ window.CPI_API = {
       "stage_3_bracket": "G1 - Norcal",
       "stage_4_seed": "Norcal",
       "stage_5_parenthetical": "Norcal",
+      "stage_6_case": "Norcal",
       "final": "Norcal",
-      "suggested_club": "NorCal",
+      "registry_match": "Norcal",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G1 - ORWP 14U Black (A)",
@@ -3458,11 +3986,13 @@ window.CPI_API = {
       "stage_3_bracket": "G1 - ORWP 14U Black (A)",
       "stage_4_seed": "ORWP 14U Black (A)",
       "stage_5_parenthetical": "ORWP 14U Black",
+      "stage_6_case": "ORWP 14U Black",
       "final": "ORWP 14U Black",
-      "suggested_club": "ORWP 14U",
+      "registry_match": "ORWP 14U Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G1(1stA)-MISSION WPC A",
@@ -3471,11 +4001,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION WPC A",
       "stage_4_seed": "MISSION WPC A",
       "stage_5_parenthetical": "MISSION WPC A",
+      "stage_6_case": "Mission WPC A",
       "final": "Mission WPC A",
-      "suggested_club": "Mission WPC",
+      "registry_match": "Mission WPC A",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G1(1stA)-POWAY VALLEY BLACK",
@@ -3484,11 +4016,13 @@ window.CPI_API = {
       "stage_3_bracket": "POWAY VALLEY BLACK",
       "stage_4_seed": "POWAY VALLEY BLACK",
       "stage_5_parenthetical": "POWAY VALLEY BLACK",
+      "stage_6_case": "Poway Valley Black",
       "final": "Poway Valley Black",
-      "suggested_club": "Poway Valley",
+      "registry_match": "Poway Valley Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G1(6)-SD ECA",
@@ -3497,11 +4031,13 @@ window.CPI_API = {
       "stage_3_bracket": "SD ECA",
       "stage_4_seed": "SD ECA",
       "stage_5_parenthetical": "SD ECA",
+      "stage_6_case": "SD Eca",
       "final": "SD Eca",
-      "suggested_club": "SD Eca",
+      "registry_match": "SD Eca",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G1-680 RED",
@@ -3510,11 +4046,13 @@ window.CPI_API = {
       "stage_3_bracket": "G1-680 RED",
       "stage_4_seed": "680 RED",
       "stage_5_parenthetical": "680 RED",
+      "stage_6_case": "680 Red",
       "final": "680 Red",
-      "suggested_club": "680",
+      "registry_match": "680 Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G2 - Gate 14U",
@@ -3523,11 +4061,13 @@ window.CPI_API = {
       "stage_3_bracket": "G2 - Gate 14U",
       "stage_4_seed": "Gate 14U",
       "stage_5_parenthetical": "Gate 14U",
+      "stage_6_case": "Gate 14U",
       "final": "Gate 14U",
-      "suggested_club": "Gate 14U",
+      "registry_match": "Gate 14U",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G2 - SOCAL",
@@ -3536,11 +4076,13 @@ window.CPI_API = {
       "stage_3_bracket": "G2 - SOCAL",
       "stage_4_seed": "SOCAL",
       "stage_5_parenthetical": "SOCAL",
+      "stage_6_case": "SoCal",
       "final": "SoCal",
-      "suggested_club": "SoCal",
+      "registry_match": "SoCal",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G2(11)-LAMORINDA B",
@@ -3549,11 +4091,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAMORINDA B",
       "stage_4_seed": "LAMORINDA B",
       "stage_5_parenthetical": "LAMORINDA B",
+      "stage_6_case": "Lamorinda B",
       "final": "Lamorinda B",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda B",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G2(1stB)-PALOS VERDES A",
@@ -3562,11 +4106,13 @@ window.CPI_API = {
       "stage_3_bracket": "PALOS VERDES A",
       "stage_4_seed": "PALOS VERDES A",
       "stage_5_parenthetical": "PALOS VERDES A",
+      "stage_6_case": "Palos Verdes A",
       "final": "Palos Verdes A",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes A",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G2(1stB)-SAN FRANCISCO",
@@ -3575,11 +4121,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN FRANCISCO",
       "stage_4_seed": "SAN FRANCISCO",
       "stage_5_parenthetical": "SAN FRANCISCO",
+      "stage_6_case": "San Francisco",
       "final": "San Francisco",
-      "suggested_club": "San Francisco",
+      "registry_match": "San Francisco",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G2-SAN JOSE EXPRESS BLUE",
@@ -3588,11 +4136,13 @@ window.CPI_API = {
       "stage_3_bracket": "G2-SAN JOSE EXPRESS BLUE",
       "stage_4_seed": "SAN JOSE EXPRESS BLUE",
       "stage_5_parenthetical": "SAN JOSE EXPRESS BLUE",
+      "stage_6_case": "San Jose Express Blue",
       "final": "San Jose Express Blue",
-      "suggested_club": "San Jose Express",
+      "registry_match": "San Jose Express Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G3 - LA City United",
@@ -3601,11 +4151,13 @@ window.CPI_API = {
       "stage_3_bracket": "G3 - LA City United",
       "stage_4_seed": "LA City United",
       "stage_5_parenthetical": "LA City United",
+      "stage_6_case": "LA City United",
       "final": "LA City United",
-      "suggested_club": "LA City United",
+      "registry_match": "LA City United",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G3 - Los Al Opal",
@@ -3614,11 +4166,13 @@ window.CPI_API = {
       "stage_3_bracket": "G3 - Los Al Opal",
       "stage_4_seed": "Los Al Opal",
       "stage_5_parenthetical": "Los Al Opal",
+      "stage_6_case": "Los Al Opal",
       "final": "Los Al Opal",
-      "suggested_club": "Los Al Opal",
+      "registry_match": "Los Al Opal",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G3(1stC)-PASADENA AC",
@@ -3627,11 +4181,13 @@ window.CPI_API = {
       "stage_3_bracket": "PASADENA AC",
       "stage_4_seed": "PASADENA AC",
       "stage_5_parenthetical": "PASADENA AC",
+      "stage_6_case": "Pasadena Ac",
       "final": "Pasadena Ac",
-      "suggested_club": "Pasadena Ac",
+      "registry_match": "Pasadena Ac",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G3(1stC)-VANGUARD BLUE",
@@ -3640,11 +4196,13 @@ window.CPI_API = {
       "stage_3_bracket": "VANGUARD BLUE",
       "stage_4_seed": "VANGUARD BLUE",
       "stage_5_parenthetical": "VANGUARD BLUE",
+      "stage_6_case": "Vanguard Blue",
       "final": "Vanguard Blue",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G3(22)-VANGUARD SILVER",
@@ -3653,11 +4211,13 @@ window.CPI_API = {
       "stage_3_bracket": "VANGUARD SILVER",
       "stage_4_seed": "VANGUARD SILVER",
       "stage_5_parenthetical": "VANGUARD SILVER",
+      "stage_6_case": "Vanguard Silver",
       "final": "Vanguard Silver",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Silver",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G3-STANFORD WHITE",
@@ -3666,11 +4226,13 @@ window.CPI_API = {
       "stage_3_bracket": "G3-STANFORD WHITE",
       "stage_4_seed": "STANFORD WHITE",
       "stage_5_parenthetical": "STANFORD WHITE",
+      "stage_6_case": "Stanford White",
       "final": "Stanford White",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford White",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G4 - PAC",
@@ -3679,11 +4241,13 @@ window.CPI_API = {
       "stage_3_bracket": "G4 - PAC",
       "stage_4_seed": "PAC",
       "stage_5_parenthetical": "PAC",
+      "stage_6_case": "Pac",
       "final": "Pac",
-      "suggested_club": "Pac",
+      "registry_match": "Pac",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "G4-CC UNITED WHITE",
@@ -3692,11 +4256,13 @@ window.CPI_API = {
       "stage_3_bracket": "G4-CC UNITED WHITE",
       "stage_4_seed": "CC UNITED WHITE",
       "stage_5_parenthetical": "CC UNITED WHITE",
+      "stage_6_case": "CC United White",
       "final": "CC United White",
-      "suggested_club": "CC United",
+      "registry_match": "CC United White",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H1 - Greenwich",
@@ -3705,11 +4271,13 @@ window.CPI_API = {
       "stage_3_bracket": "H1 - Greenwich",
       "stage_4_seed": "Greenwich",
       "stage_5_parenthetical": "Greenwich",
+      "stage_6_case": "Greenwich",
       "final": "Greenwich",
-      "suggested_club": "Greenwich",
+      "registry_match": "Greenwich",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H1 - South Coast Red(A)",
@@ -3717,12 +4285,14 @@ window.CPI_API = {
       "stage_2_placement": "H1 - South Coast Red(A)",
       "stage_3_bracket": "H1 - South Coast Red(A)",
       "stage_4_seed": "South Coast Red(A)",
-      "stage_5_parenthetical": "South Coast Red(A)",
-      "final": "South Coast Red(A)",
-      "suggested_club": "South Coast Red(A)",
+      "stage_5_parenthetical": "South Coast Red",
+      "stage_6_case": "South Coast Red",
+      "final": "South Coast Red",
+      "registry_match": "South Coast Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H1(1stD)-SAND CANYON",
@@ -3731,11 +4301,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAND CANYON",
       "stage_4_seed": "SAND CANYON",
       "stage_5_parenthetical": "SAND CANYON",
+      "stage_6_case": "Sand Canyon",
       "final": "Sand Canyon",
-      "suggested_club": "Sand Canyon",
+      "registry_match": "Sand Canyon",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H1(2ndA)-TROJAN CARDINAL",
@@ -3744,11 +4316,13 @@ window.CPI_API = {
       "stage_3_bracket": "TROJAN CARDINAL",
       "stage_4_seed": "TROJAN CARDINAL",
       "stage_5_parenthetical": "TROJAN CARDINAL",
+      "stage_6_case": "Trojan Cardinal",
       "final": "Trojan Cardinal",
-      "suggested_club": "Trojan Cardinal",
+      "registry_match": "Trojan Cardinal",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H1-CC UNITED BLUE",
@@ -3757,11 +4331,13 @@ window.CPI_API = {
       "stage_3_bracket": "H1-CC UNITED BLUE",
       "stage_4_seed": "CC UNITED BLUE",
       "stage_5_parenthetical": "CC UNITED BLUE",
+      "stage_6_case": "CC United Blue",
       "final": "CC United Blue",
-      "suggested_club": "CC United",
+      "registry_match": "CC United Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H2 - Pride Black",
@@ -3770,11 +4346,13 @@ window.CPI_API = {
       "stage_3_bracket": "H2 - Pride Black",
       "stage_4_seed": "Pride Black",
       "stage_5_parenthetical": "Pride Black",
+      "stage_6_case": "Pride Black",
       "final": "Pride Black",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H2 - SJ Express",
@@ -3783,11 +4361,13 @@ window.CPI_API = {
       "stage_3_bracket": "H2 - SJ Express",
       "stage_4_seed": "SJ Express",
       "stage_5_parenthetical": "SJ Express",
+      "stage_6_case": "SJ Express",
       "final": "SJ Express",
-      "suggested_club": "SJ Express",
+      "registry_match": "SJ Express",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H2(1stE)-GOLD COAST",
@@ -3796,11 +4376,13 @@ window.CPI_API = {
       "stage_3_bracket": "GOLD COAST",
       "stage_4_seed": "GOLD COAST",
       "stage_5_parenthetical": "GOLD COAST",
+      "stage_6_case": "Gold Coast",
       "final": "Gold Coast",
-      "suggested_club": "Gold Coast",
+      "registry_match": "Gold Coast",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H2(2ndB)-NORCAL",
@@ -3809,11 +4391,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORCAL",
       "stage_4_seed": "NORCAL",
       "stage_5_parenthetical": "NORCAL",
+      "stage_6_case": "NorCal",
       "final": "NorCal",
-      "suggested_club": "NorCal",
+      "registry_match": "NorCal",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H2-STANFORD BLACK",
@@ -3822,11 +4406,13 @@ window.CPI_API = {
       "stage_3_bracket": "H2-STANFORD BLACK",
       "stage_4_seed": "STANFORD BLACK",
       "stage_5_parenthetical": "STANFORD BLACK",
+      "stage_6_case": "Stanford Black",
       "final": "Stanford Black",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H3 - TSM",
@@ -3835,11 +4421,13 @@ window.CPI_API = {
       "stage_3_bracket": "H3 - TSM",
       "stage_4_seed": "TSM",
       "stage_5_parenthetical": "TSM",
+      "stage_6_case": "Tsm",
       "final": "Tsm",
-      "suggested_club": "Tsm",
+      "registry_match": "Tsm",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H3(1stF)-680 WHITE",
@@ -3848,11 +4436,13 @@ window.CPI_API = {
       "stage_3_bracket": "680 WHITE",
       "stage_4_seed": "680 WHITE",
       "stage_5_parenthetical": "680 WHITE",
+      "stage_6_case": "680 White",
       "final": "680 White",
-      "suggested_club": "680",
+      "registry_match": "680 White",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H3(2ndC)-SOUTH COAST RED (A)",
@@ -3861,11 +4451,13 @@ window.CPI_API = {
       "stage_3_bracket": "SOUTH COAST RED (A)",
       "stage_4_seed": "SOUTH COAST RED (A)",
       "stage_5_parenthetical": "SOUTH COAST RED",
+      "stage_6_case": "South Coast Red",
       "final": "South Coast Red",
-      "suggested_club": "South Coast",
+      "registry_match": "South Coast Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H3-680 WHITE",
@@ -3874,11 +4466,13 @@ window.CPI_API = {
       "stage_3_bracket": "H3-680 WHITE",
       "stage_4_seed": "680 WHITE",
       "stage_5_parenthetical": "680 WHITE",
+      "stage_6_case": "680 White",
       "final": "680 White",
-      "suggested_club": "680",
+      "registry_match": "680 White",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H4 - Valley United",
@@ -3887,11 +4481,13 @@ window.CPI_API = {
       "stage_3_bracket": "H4 - Valley United",
       "stage_4_seed": "Valley United",
       "stage_5_parenthetical": "Valley United",
+      "stage_6_case": "Valley United",
       "final": "Valley United",
-      "suggested_club": "Valley United",
+      "registry_match": "Valley United",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "H4-TRI-VALLEY TRITONS",
@@ -3900,11 +4496,13 @@ window.CPI_API = {
       "stage_3_bracket": "H4-TRI-VALLEY TRITONS",
       "stage_4_seed": "TRI-VALLEY TRITONS",
       "stage_5_parenthetical": "TRI-VALLEY TRITONS",
+      "stage_6_case": "Tri-valley Tritons",
       "final": "Tri-valley Tritons",
-      "suggested_club": "Tri-valley Tritons",
+      "registry_match": "Tri-valley Tritons",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I1 - 908",
@@ -3913,11 +4511,13 @@ window.CPI_API = {
       "stage_3_bracket": "I1 - 908",
       "stage_4_seed": "908",
       "stage_5_parenthetical": "908",
+      "stage_6_case": "908",
       "final": "908",
-      "suggested_club": "908",
+      "registry_match": "908",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I1 - Valley United",
@@ -3926,11 +4526,13 @@ window.CPI_API = {
       "stage_3_bracket": "I1 - Valley United",
       "stage_4_seed": "Valley United",
       "stage_5_parenthetical": "Valley United",
+      "stage_6_case": "Valley United",
       "final": "Valley United",
-      "suggested_club": "Valley United",
+      "registry_match": "Valley United",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I1(3rdA)-680 RED",
@@ -3939,11 +4541,13 @@ window.CPI_API = {
       "stage_3_bracket": "680 RED",
       "stage_4_seed": "680 RED",
       "stage_5_parenthetical": "680 RED",
+      "stage_6_case": "680 Red",
       "final": "680 Red",
-      "suggested_club": "680",
+      "registry_match": "680 Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I2 - 908 Blue",
@@ -3952,11 +4556,13 @@ window.CPI_API = {
       "stage_3_bracket": "I2 - 908 Blue",
       "stage_4_seed": "908 Blue",
       "stage_5_parenthetical": "908 Blue",
+      "stage_6_case": "908 Blue",
       "final": "908 Blue",
-      "suggested_club": "908",
+      "registry_match": "908 Blue",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I2 - SET",
@@ -3965,11 +4571,13 @@ window.CPI_API = {
       "stage_3_bracket": "I2 - SET",
       "stage_4_seed": "SET",
       "stage_5_parenthetical": "SET",
+      "stage_6_case": "SET",
       "final": "SET",
-      "suggested_club": "SET",
+      "registry_match": "SET",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I2(3rdB)-NORTH IRVINE BLACK",
@@ -3978,11 +4586,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORTH IRVINE BLACK",
       "stage_4_seed": "NORTH IRVINE BLACK",
       "stage_5_parenthetical": "NORTH IRVINE BLACK",
+      "stage_6_case": "North Irvine Black",
       "final": "North Irvine Black",
-      "suggested_club": "North Irvine",
+      "registry_match": "North Irvine Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I3 - Big Valley",
@@ -3991,11 +4601,13 @@ window.CPI_API = {
       "stage_3_bracket": "I3 - Big Valley",
       "stage_4_seed": "Big Valley",
       "stage_5_parenthetical": "Big Valley",
+      "stage_6_case": "Big Valley",
       "final": "Big Valley",
-      "suggested_club": "Big Valley",
+      "registry_match": "Big Valley",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I3 - CC United Blue",
@@ -4004,11 +4616,13 @@ window.CPI_API = {
       "stage_3_bracket": "I3 - CC United Blue",
       "stage_4_seed": "CC United Blue",
       "stage_5_parenthetical": "CC United Blue",
+      "stage_6_case": "CC United Blue",
       "final": "CC United Blue",
-      "suggested_club": "CC United",
+      "registry_match": "CC United Blue",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I3(3rdF)-SHAQ BLUE",
@@ -4017,11 +4631,13 @@ window.CPI_API = {
       "stage_3_bracket": "SHAQ BLUE",
       "stage_4_seed": "SHAQ BLUE",
       "stage_5_parenthetical": "SHAQ BLUE",
+      "stage_6_case": "Shaq Blue",
       "final": "Shaq Blue",
-      "suggested_club": "Shaq",
+      "registry_match": "Shaq Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "I4(4thE)-CC UNITED BLACK",
@@ -4030,11 +4646,13 @@ window.CPI_API = {
       "stage_3_bracket": "CC UNITED BLACK",
       "stage_4_seed": "CC UNITED BLACK",
       "stage_5_parenthetical": "CC UNITED BLACK",
+      "stage_6_case": "CC United Black",
       "final": "CC United Black",
-      "suggested_club": "CC United",
+      "registry_match": "CC United Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J1 - Rose Bowl Black",
@@ -4043,11 +4661,13 @@ window.CPI_API = {
       "stage_3_bracket": "J1 - Rose Bowl Black",
       "stage_4_seed": "Rose Bowl Black",
       "stage_5_parenthetical": "Rose Bowl Black",
+      "stage_6_case": "Rose Bowl Black",
       "final": "Rose Bowl Black",
-      "suggested_club": "Rose Bowl",
+      "registry_match": "Rose Bowl Black",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J1(1stA)-SHORE AQUATICS",
@@ -4056,11 +4676,13 @@ window.CPI_API = {
       "stage_3_bracket": "SHORE AQUATICS",
       "stage_4_seed": "SHORE AQUATICS",
       "stage_5_parenthetical": "SHORE AQUATICS",
+      "stage_6_case": "Shore Aquatics",
       "final": "Shore Aquatics",
-      "suggested_club": "Shore Aquatics",
+      "registry_match": "Shore Aquatics",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J1(1stD)-LA JOLLA UNITED NAVY",
@@ -4069,11 +4691,13 @@ window.CPI_API = {
       "stage_3_bracket": "LA JOLLA UNITED NAVY",
       "stage_4_seed": "LA JOLLA UNITED NAVY",
       "stage_5_parenthetical": "LA JOLLA UNITED NAVY",
+      "stage_6_case": "LA Jolla United Navy",
       "final": "LA Jolla United Navy",
-      "suggested_club": "LA Jolla United",
+      "registry_match": "LA Jolla United Navy",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J1(2ndE)(12)-SHARKS",
@@ -4082,11 +4706,13 @@ window.CPI_API = {
       "stage_3_bracket": "J1(2ndE)(12)-SHARKS",
       "stage_4_seed": "J1(2ndE)(12)-SHARKS",
       "stage_5_parenthetical": "J1(2ndE)(12)-SHARKS",
+      "stage_6_case": "J1(2ndE)(12)-SHARKS",
       "final": "J1(2ndE)(12)-SHARKS",
-      "suggested_club": "J1(2ndE)(12)-SHARKS",
+      "registry_match": "J1(2ndE)(12)-SHARKS",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J1(2ndF)-NADO",
@@ -4095,11 +4721,13 @@ window.CPI_API = {
       "stage_3_bracket": "NADO",
       "stage_4_seed": "NADO",
       "stage_5_parenthetical": "NADO",
+      "stage_6_case": "Nado",
       "final": "Nado",
-      "suggested_club": "Nado",
+      "registry_match": "Nado",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J2 - Trilogy",
@@ -4108,11 +4736,13 @@ window.CPI_API = {
       "stage_3_bracket": "J2 - Trilogy",
       "stage_4_seed": "Trilogy",
       "stage_5_parenthetical": "Trilogy",
+      "stage_6_case": "Trilogy",
       "final": "Trilogy",
-      "suggested_club": "Trilogy",
+      "registry_match": "Trilogy",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J2(1stB)-BACK BAY",
@@ -4121,11 +4751,13 @@ window.CPI_API = {
       "stage_3_bracket": "BACK BAY",
       "stage_4_seed": "BACK BAY",
       "stage_5_parenthetical": "BACK BAY",
+      "stage_6_case": "Back Bay",
       "final": "Back Bay",
-      "suggested_club": "Back Bay",
+      "registry_match": "Back Bay",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J2(1stE)-CHANNEL ISLANDS UNITED GOLD",
@@ -4134,11 +4766,13 @@ window.CPI_API = {
       "stage_3_bracket": "CHANNEL ISLANDS UNITED GOLD",
       "stage_4_seed": "CHANNEL ISLANDS UNITED GOLD",
       "stage_5_parenthetical": "CHANNEL ISLANDS UNITED GOLD",
+      "stage_6_case": "Channel Islands United Gold",
       "final": "Channel Islands United Gold",
-      "suggested_club": "Channel Islands United",
+      "registry_match": "Channel Islands United Gold",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J2(2ndE)-HONOLULU GREEN",
@@ -4147,11 +4781,13 @@ window.CPI_API = {
       "stage_3_bracket": "HONOLULU GREEN",
       "stage_4_seed": "HONOLULU GREEN",
       "stage_5_parenthetical": "HONOLULU GREEN",
+      "stage_6_case": "Honolulu Green",
       "final": "Honolulu Green",
-      "suggested_club": "Honolulu",
+      "registry_match": "Honolulu Green",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J2(3rdE)(21)-SAN JOSE FOUNDATION BLUE",
@@ -4160,11 +4796,13 @@ window.CPI_API = {
       "stage_3_bracket": "J2(3rdE)(21)-SAN JOSE FOUNDATION BLUE",
       "stage_4_seed": "J2(3rdE)(21)-SAN JOSE FOUNDATION BLUE",
       "stage_5_parenthetical": "J2(3rdE)(21)-SAN JOSE FOUNDATION BLUE",
+      "stage_6_case": "J2(3rdE)(21)-SAN JOSE FOUNDATION BLUE",
       "final": "J2(3rdE)(21)-SAN JOSE FOUNDATION BLUE",
-      "suggested_club": "J2(3rdE)(21)-SAN JOSE FOUNDATION",
+      "registry_match": "J2(3rdE)(21)-SAN JOSE FOUNDATION BLUE",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J3(1stC)-NORTHWEST",
@@ -4173,11 +4811,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORTHWEST",
       "stage_4_seed": "NORTHWEST",
       "stage_5_parenthetical": "NORTHWEST",
+      "stage_6_case": "Northwest",
       "final": "Northwest",
-      "suggested_club": "Northwest",
+      "registry_match": "Northwest",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J3(1stF)-PATRIOT NAVY",
@@ -4186,11 +4826,13 @@ window.CPI_API = {
       "stage_3_bracket": "PATRIOT NAVY",
       "stage_4_seed": "PATRIOT NAVY",
       "stage_5_parenthetical": "PATRIOT NAVY",
+      "stage_6_case": "Patriot Navy",
       "final": "Patriot Navy",
-      "suggested_club": "Patriot",
+      "registry_match": "Patriot Navy",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J3(2ndC)(14)-SAN JOSE FOUNDATION BLACK",
@@ -4199,11 +4841,13 @@ window.CPI_API = {
       "stage_3_bracket": "J3(2ndC)(14)-SAN JOSE FOUNDATION BLACK",
       "stage_4_seed": "J3(2ndC)(14)-SAN JOSE FOUNDATION BLACK",
       "stage_5_parenthetical": "J3(2ndC)(14)-SAN JOSE FOUNDATION BLACK",
+      "stage_6_case": "J3(2ndC)(14)-SAN JOSE FOUNDATION BLACK",
       "final": "J3(2ndC)(14)-SAN JOSE FOUNDATION BLACK",
-      "suggested_club": "J3(2ndC)(14)-SAN JOSE FOUNDATION",
+      "registry_match": "J3(2ndC)(14)-SAN JOSE FOUNDATION BLACK",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J3(2ndD)-PALOS VERDES B",
@@ -4212,11 +4856,13 @@ window.CPI_API = {
       "stage_3_bracket": "PALOS VERDES B",
       "stage_4_seed": "PALOS VERDES B",
       "stage_5_parenthetical": "PALOS VERDES B",
+      "stage_6_case": "Palos Verdes B",
       "final": "Palos Verdes B",
-      "suggested_club": "Palos Verdes",
+      "registry_match": "Palos Verdes B",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J4(1stD)-SAN CLEMENTE RED",
@@ -4225,11 +4871,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN CLEMENTE RED",
       "stage_4_seed": "SAN CLEMENTE RED",
       "stage_5_parenthetical": "SAN CLEMENTE RED",
+      "stage_6_case": "San Clemente Red",
       "final": "San Clemente Red",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J4(3rdC)(19)-SANTA CRUZ",
@@ -4238,11 +4886,13 @@ window.CPI_API = {
       "stage_3_bracket": "J4(3rdC)(19)-SANTA CRUZ",
       "stage_4_seed": "J4(3rdC)(19)-SANTA CRUZ",
       "stage_5_parenthetical": "J4(3rdC)(19)-SANTA CRUZ",
+      "stage_6_case": "J4(3rdC)(19)-SANTA CRUZ",
       "final": "J4(3rdC)(19)-SANTA CRUZ",
-      "suggested_club": "J4(3rdC)(19)-SANTA CRUZ",
+      "registry_match": "J4(3rdC)(19)-SANTA CRUZ",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J5(2ndA)(16)-DIABLO ALLIANCE B",
@@ -4251,11 +4901,13 @@ window.CPI_API = {
       "stage_3_bracket": "J5(2ndA)(16)-DIABLO ALLIANCE B",
       "stage_4_seed": "J5(2ndA)(16)-DIABLO ALLIANCE B",
       "stage_5_parenthetical": "J5(2ndA)(16)-DIABLO ALLIANCE B",
+      "stage_6_case": "J5(2ndA)(16)-DIABLO ALLIANCE B",
       "final": "J5(2ndA)(16)-DIABLO ALLIANCE B",
-      "suggested_club": "J5(2ndA)(16)-DIABLO ALLIANCE",
+      "registry_match": "J5(2ndA)(16)-DIABLO ALLIANCE B",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J6(3rdA)(17)-LAMORINDA C",
@@ -4264,11 +4916,13 @@ window.CPI_API = {
       "stage_3_bracket": "J6(3rdA)(17)-LAMORINDA C",
       "stage_4_seed": "J6(3rdA)(17)-LAMORINDA C",
       "stage_5_parenthetical": "J6(3rdA)(17)-LAMORINDA C",
+      "stage_6_case": "J6(3rdA)(17)-LAMORINDA C",
       "final": "J6(3rdA)(17)-LAMORINDA C",
-      "suggested_club": "J6(3rdA)(17)-LAMORINDA",
+      "registry_match": "J6(3rdA)(17)-LAMORINDA C",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J7(2ndG)(10)-SAN JOSE EXPRESS BLUE",
@@ -4277,11 +4931,13 @@ window.CPI_API = {
       "stage_3_bracket": "J7(2ndG)(10)-SAN JOSE EXPRESS BLUE",
       "stage_4_seed": "J7(2ndG)(10)-SAN JOSE EXPRESS BLUE",
       "stage_5_parenthetical": "J7(2ndG)(10)-SAN JOSE EXPRESS BLUE",
+      "stage_6_case": "J7(2ndG)(10)-SAN JOSE EXPRESS BLUE",
       "final": "J7(2ndG)(10)-SAN JOSE EXPRESS BLUE",
-      "suggested_club": "J7(2ndG)(10)-SAN JOSE EXPRESS",
+      "registry_match": "J7(2ndG)(10)-SAN JOSE EXPRESS BLUE",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "J8(3rdG)(23)-CC UNITED WHITE",
@@ -4290,11 +4946,13 @@ window.CPI_API = {
       "stage_3_bracket": "J8(3rdG)(23)-CC UNITED WHITE",
       "stage_4_seed": "J8(3rdG)(23)-CC UNITED WHITE",
       "stage_5_parenthetical": "J8(3rdG)(23)-CC UNITED WHITE",
+      "stage_6_case": "J8(3rdG)(23)-CC UNITED WHITE",
       "final": "J8(3rdG)(23)-CC UNITED WHITE",
-      "suggested_club": "J8(3rdG)(23)-CC UNITED",
+      "registry_match": "J8(3rdG)(23)-CC UNITED WHITE",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K1 - ECA B",
@@ -4303,11 +4961,13 @@ window.CPI_API = {
       "stage_3_bracket": "K1 - ECA B",
       "stage_4_seed": "ECA B",
       "stage_5_parenthetical": "ECA B",
+      "stage_6_case": "Eca B",
       "final": "Eca B",
-      "suggested_club": "Eca",
+      "registry_match": "Eca B",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K1 - Lamorinda",
@@ -4316,11 +4976,13 @@ window.CPI_API = {
       "stage_3_bracket": "K1 - Lamorinda",
       "stage_4_seed": "Lamorinda",
       "stage_5_parenthetical": "Lamorinda",
+      "stage_6_case": "Lamorinda",
       "final": "Lamorinda",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K1(1stE)-MISSION WPC B",
@@ -4329,11 +4991,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION WPC B",
       "stage_4_seed": "MISSION WPC B",
       "stage_5_parenthetical": "MISSION WPC B",
+      "stage_6_case": "Mission WPC B",
       "final": "Mission WPC B",
-      "suggested_club": "Mission WPC",
+      "registry_match": "Mission WPC B",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K1(2ndC)-ORANGE COUNTY WPC RED",
@@ -4342,11 +5006,13 @@ window.CPI_API = {
       "stage_3_bracket": "ORANGE COUNTY WPC RED",
       "stage_4_seed": "ORANGE COUNTY WPC RED",
       "stage_5_parenthetical": "ORANGE COUNTY WPC RED",
+      "stage_6_case": "Orange County WPC Red",
       "final": "Orange County WPC Red",
-      "suggested_club": "Orange County WPC",
+      "registry_match": "Orange County WPC Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K1(2ndD)-PRIDE BLACK",
@@ -4355,11 +5021,13 @@ window.CPI_API = {
       "stage_3_bracket": "PRIDE BLACK",
       "stage_4_seed": "PRIDE BLACK",
       "stage_5_parenthetical": "PRIDE BLACK",
+      "stage_6_case": "Pride Black",
       "final": "Pride Black",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K1(3rdF)(22)-BURLINGAME",
@@ -4368,11 +5036,13 @@ window.CPI_API = {
       "stage_3_bracket": "K1(3rdF)(22)-BURLINGAME",
       "stage_4_seed": "K1(3rdF)(22)-BURLINGAME",
       "stage_5_parenthetical": "K1(3rdF)(22)-BURLINGAME",
+      "stage_6_case": "K1(3rdF)(22)-BURLINGAME",
       "final": "K1(3rdF)(22)-BURLINGAME",
-      "suggested_club": "K1(3rdF)(22)-BURLINGAME",
+      "registry_match": "K1(3rdF)(22)-BURLINGAME",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K2 - NGen",
@@ -4381,11 +5051,13 @@ window.CPI_API = {
       "stage_3_bracket": "K2 - NGen",
       "stage_4_seed": "NGen",
       "stage_5_parenthetical": "NGen",
+      "stage_6_case": "NGen",
       "final": "NGen",
-      "suggested_club": "NGen",
+      "registry_match": "NGen",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K2 - North Irvine",
@@ -4394,11 +5066,13 @@ window.CPI_API = {
       "stage_3_bracket": "K2 - North Irvine",
       "stage_4_seed": "North Irvine",
       "stage_5_parenthetical": "North Irvine",
+      "stage_6_case": "North Irvine",
       "final": "North Irvine",
-      "suggested_club": "North Irvine",
+      "registry_match": "North Irvine",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K2(1stF)-680 BLUE",
@@ -4407,11 +5081,13 @@ window.CPI_API = {
       "stage_3_bracket": "680 BLUE",
       "stage_4_seed": "680 BLUE",
       "stage_5_parenthetical": "680 BLUE",
+      "stage_6_case": "680 Blue",
       "final": "680 Blue",
-      "suggested_club": "680",
+      "registry_match": "680 Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K2(2ndB)-SOUTH COAST BLUE (C)",
@@ -4420,11 +5096,13 @@ window.CPI_API = {
       "stage_3_bracket": "SOUTH COAST BLUE (C)",
       "stage_4_seed": "SOUTH COAST BLUE (C)",
       "stage_5_parenthetical": "SOUTH COAST BLUE",
+      "stage_6_case": "South Coast Blue",
       "final": "South Coast Blue",
-      "suggested_club": "South Coast",
+      "registry_match": "South Coast Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K2(2ndE)-ORANGE COUNTY WPC BLUE",
@@ -4433,11 +5111,13 @@ window.CPI_API = {
       "stage_3_bracket": "ORANGE COUNTY WPC BLUE",
       "stage_4_seed": "ORANGE COUNTY WPC BLUE",
       "stage_5_parenthetical": "ORANGE COUNTY WPC BLUE",
+      "stage_6_case": "Orange County WPC Blue",
       "final": "Orange County WPC Blue",
-      "suggested_club": "Orange County WPC",
+      "registry_match": "Orange County WPC Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K2(2ndF)(11)-680 BLUE",
@@ -4446,11 +5126,13 @@ window.CPI_API = {
       "stage_3_bracket": "K2(2ndF)(11)-680 BLUE",
       "stage_4_seed": "K2(2ndF)(11)-680 BLUE",
       "stage_5_parenthetical": "K2(2ndF)(11)-680 BLUE",
+      "stage_6_case": "K2(2ndF)(11)-680 BLUE",
       "final": "K2(2ndF)(11)-680 BLUE",
-      "suggested_club": "K2(2ndF)(11)-680",
+      "registry_match": "K2(2ndF)(11)-680 BLUE",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K3 - SD Dons Red",
@@ -4459,11 +5141,13 @@ window.CPI_API = {
       "stage_3_bracket": "K3 - SD Dons Red",
       "stage_4_seed": "SD Dons Red",
       "stage_5_parenthetical": "SD Dons Red",
+      "stage_6_case": "SD Dons Red",
       "final": "SD Dons Red",
-      "suggested_club": "SD Dons",
+      "registry_match": "SD Dons Red",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K3(1stG)-VANGUARD SILVER",
@@ -4472,11 +5156,13 @@ window.CPI_API = {
       "stage_3_bracket": "VANGUARD SILVER",
       "stage_4_seed": "VANGUARD SILVER",
       "stage_5_parenthetical": "VANGUARD SILVER",
+      "stage_6_case": "Vanguard Silver",
       "final": "Vanguard Silver",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Silver",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K3(2ndA)-LOYOLA WPC",
@@ -4485,11 +5171,13 @@ window.CPI_API = {
       "stage_3_bracket": "LOYOLA WPC",
       "stage_4_seed": "LOYOLA WPC",
       "stage_5_parenthetical": "LOYOLA WPC",
+      "stage_6_case": "Loyola WPC",
       "final": "Loyola WPC",
-      "suggested_club": "Loyola WPC",
+      "registry_match": "Loyola WPC",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K3(2ndF)-LA PREMIER",
@@ -4498,11 +5186,13 @@ window.CPI_API = {
       "stage_3_bracket": "LA PREMIER",
       "stage_4_seed": "LA PREMIER",
       "stage_5_parenthetical": "LA PREMIER",
+      "stage_6_case": "LA Premier",
       "final": "LA Premier",
-      "suggested_club": "LA Premier",
+      "registry_match": "LA Premier",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K3(3rdD)(20)-MIDPEN",
@@ -4511,11 +5201,13 @@ window.CPI_API = {
       "stage_3_bracket": "K3(3rdD)(20)-MIDPEN",
       "stage_4_seed": "K3(3rdD)(20)-MIDPEN",
       "stage_5_parenthetical": "K3(3rdD)(20)-MIDPEN",
+      "stage_6_case": "K3(3rdD)(20)-MIDPEN",
       "final": "K3(3rdD)(20)-MIDPEN",
-      "suggested_club": "K3(3rdD)(20)-MIDPEN",
+      "registry_match": "K3(3rdD)(20)-MIDPEN",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K4(1stH)-HIELAND",
@@ -4524,11 +5216,13 @@ window.CPI_API = {
       "stage_3_bracket": "HIELAND",
       "stage_4_seed": "HIELAND",
       "stage_5_parenthetical": "HIELAND",
+      "stage_6_case": "Hieland",
       "final": "Hieland",
-      "suggested_club": "Hieland",
+      "registry_match": "Hieland",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K4(2ndD)(13)-LAMORINDA B",
@@ -4537,11 +5231,13 @@ window.CPI_API = {
       "stage_3_bracket": "K4(2ndD)(13)-LAMORINDA B",
       "stage_4_seed": "K4(2ndD)(13)-LAMORINDA B",
       "stage_5_parenthetical": "K4(2ndD)(13)-LAMORINDA B",
+      "stage_6_case": "K4(2ndD)(13)-LAMORINDA B",
       "final": "K4(2ndD)(13)-LAMORINDA B",
-      "suggested_club": "K4(2ndD)(13)-LAMORINDA",
+      "registry_match": "K4(2ndD)(13)-LAMORINDA B",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K5(3rdB)(18)-NORCAL TEAL",
@@ -4550,11 +5246,13 @@ window.CPI_API = {
       "stage_3_bracket": "K5(3rdB)(18)-NORCAL TEAL",
       "stage_4_seed": "K5(3rdB)(18)-NORCAL TEAL",
       "stage_5_parenthetical": "K5(3rdB)(18)-NORCAL TEAL",
+      "stage_6_case": "K5(3rdB)(18)-NORCAL TEAL",
       "final": "K5(3rdB)(18)-NORCAL TEAL",
-      "suggested_club": "K5(3rdB)(18)-NORCAL TEAL",
+      "registry_match": "K5(3rdB)(18)-NORCAL TEAL",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K6(2ndB)(15)-ALAMEDA",
@@ -4563,11 +5261,13 @@ window.CPI_API = {
       "stage_3_bracket": "K6(2ndB)(15)-ALAMEDA",
       "stage_4_seed": "K6(2ndB)(15)-ALAMEDA",
       "stage_5_parenthetical": "K6(2ndB)(15)-ALAMEDA",
+      "stage_6_case": "K6(2ndB)(15)-ALAMEDA",
       "final": "K6(2ndB)(15)-ALAMEDA",
-      "suggested_club": "K6(2ndB)(15)-ALAMEDA",
+      "registry_match": "K6(2ndB)(15)-ALAMEDA",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K7(3rdH)(24)-680 WHITE",
@@ -4576,11 +5276,13 @@ window.CPI_API = {
       "stage_3_bracket": "K7(3rdH)(24)-680 WHITE",
       "stage_4_seed": "K7(3rdH)(24)-680 WHITE",
       "stage_5_parenthetical": "K7(3rdH)(24)-680 WHITE",
+      "stage_6_case": "K7(3rdH)(24)-680 WHITE",
       "final": "K7(3rdH)(24)-680 WHITE",
-      "suggested_club": "K7(3rdH)(24)-680",
+      "registry_match": "K7(3rdH)(24)-680 WHITE",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "K8(2ndH)(9)-STANFORD BLACK",
@@ -4589,11 +5291,13 @@ window.CPI_API = {
       "stage_3_bracket": "K8(2ndH)(9)-STANFORD BLACK",
       "stage_4_seed": "K8(2ndH)(9)-STANFORD BLACK",
       "stage_5_parenthetical": "K8(2ndH)(9)-STANFORD BLACK",
+      "stage_6_case": "K8(2ndH)(9)-STANFORD BLACK",
       "final": "K8(2ndH)(9)-STANFORD BLACK",
-      "suggested_club": "K8(2ndH)(9)-STANFORD",
+      "registry_match": "K8(2ndH)(9)-STANFORD BLACK",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#1-DEVIL'S GATE",
@@ -4602,11 +5306,13 @@ window.CPI_API = {
       "stage_3_bracket": "DEVIL'S GATE",
       "stage_4_seed": "DEVIL'S GATE",
       "stage_5_parenthetical": "DEVIL'S GATE",
+      "stage_6_case": "Devil's Gate",
       "final": "Devil's Gate",
-      "suggested_club": "Devil's Gate",
+      "registry_match": "Devil's Gate",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#1-TRILOGY BLACK",
@@ -4615,11 +5321,13 @@ window.CPI_API = {
       "stage_3_bracket": "TRILOGY BLACK",
       "stage_4_seed": "TRILOGY BLACK",
       "stage_5_parenthetical": "TRILOGY BLACK",
+      "stage_6_case": "Trilogy Black",
       "final": "Trilogy Black",
-      "suggested_club": "Trilogy",
+      "registry_match": "Trilogy Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#1-TROJAN GOLD",
@@ -4628,11 +5336,13 @@ window.CPI_API = {
       "stage_3_bracket": "TROJAN GOLD",
       "stage_4_seed": "TROJAN GOLD",
       "stage_5_parenthetical": "TROJAN GOLD",
+      "stage_6_case": "Trojan Gold",
       "final": "Trojan Gold",
-      "suggested_club": "Trojan",
+      "registry_match": "Trojan Gold",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#10-SET",
@@ -4641,11 +5351,13 @@ window.CPI_API = {
       "stage_3_bracket": "SET",
       "stage_4_seed": "SET",
       "stage_5_parenthetical": "SET",
+      "stage_6_case": "SET",
       "final": "SET",
-      "suggested_club": "SET",
+      "registry_match": "SET",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#11-SAN CLEMENTE BLACK",
@@ -4654,11 +5366,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN CLEMENTE BLACK",
       "stage_4_seed": "SAN CLEMENTE BLACK",
       "stage_5_parenthetical": "SAN CLEMENTE BLACK",
+      "stage_6_case": "San Clemente Black",
       "final": "San Clemente Black",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#12-RIVERSIDE",
@@ -4667,11 +5381,13 @@ window.CPI_API = {
       "stage_3_bracket": "RIVERSIDE",
       "stage_4_seed": "RIVERSIDE",
       "stage_5_parenthetical": "RIVERSIDE",
+      "stage_6_case": "Riverside",
       "final": "Riverside",
-      "suggested_club": "Riverside",
+      "registry_match": "Riverside",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#13-TROJAN CARDINAL",
@@ -4680,11 +5396,13 @@ window.CPI_API = {
       "stage_3_bracket": "TROJAN CARDINAL",
       "stage_4_seed": "TROJAN CARDINAL",
       "stage_5_parenthetical": "TROJAN CARDINAL",
+      "stage_6_case": "Trojan Cardinal",
       "final": "Trojan Cardinal",
-      "suggested_club": "Trojan Cardinal",
+      "registry_match": "Trojan Cardinal",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#14-ROUTE 66",
@@ -4693,11 +5411,13 @@ window.CPI_API = {
       "stage_3_bracket": "ROUTE 66",
       "stage_4_seed": "ROUTE 66",
       "stage_5_parenthetical": "ROUTE 66",
+      "stage_6_case": "Route 66",
       "final": "Route 66",
-      "suggested_club": "Route 66",
+      "registry_match": "Route 66",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#15-MISSION A",
@@ -4706,11 +5426,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION A",
       "stage_4_seed": "MISSION A",
       "stage_5_parenthetical": "MISSION A",
+      "stage_6_case": "Mission A",
       "final": "Mission A",
-      "suggested_club": "Mission",
+      "registry_match": "Mission A",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#15-SOUTH COAST WHITE (B)",
@@ -4719,11 +5441,13 @@ window.CPI_API = {
       "stage_3_bracket": "SOUTH COAST WHITE (B)",
       "stage_4_seed": "SOUTH COAST WHITE (B)",
       "stage_5_parenthetical": "SOUTH COAST WHITE",
+      "stage_6_case": "South Coast White",
       "final": "South Coast White",
-      "suggested_club": "South Coast",
+      "registry_match": "South Coast White",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#16-PATRIOT RED",
@@ -4732,11 +5456,13 @@ window.CPI_API = {
       "stage_3_bracket": "PATRIOT RED",
       "stage_4_seed": "PATRIOT RED",
       "stage_5_parenthetical": "PATRIOT RED",
+      "stage_6_case": "Patriot Red",
       "final": "Patriot Red",
-      "suggested_club": "Patriot",
+      "registry_match": "Patriot Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#16-VANGUARD BLUE",
@@ -4745,11 +5471,13 @@ window.CPI_API = {
       "stage_3_bracket": "VANGUARD BLUE",
       "stage_4_seed": "VANGUARD BLUE",
       "stage_5_parenthetical": "VANGUARD BLUE",
+      "stage_6_case": "Vanguard Blue",
       "final": "Vanguard Blue",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#19-ALAMEDA",
@@ -4758,11 +5486,13 @@ window.CPI_API = {
       "stage_3_bracket": "ALAMEDA",
       "stage_4_seed": "ALAMEDA",
       "stage_5_parenthetical": "ALAMEDA",
+      "stage_6_case": "Alameda",
       "final": "Alameda",
-      "suggested_club": "Alameda",
+      "registry_match": "Alameda",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#19-NEWPORT BEACH SILVER",
@@ -4771,11 +5501,13 @@ window.CPI_API = {
       "stage_3_bracket": "NEWPORT BEACH SILVER",
       "stage_4_seed": "NEWPORT BEACH SILVER",
       "stage_5_parenthetical": "NEWPORT BEACH SILVER",
+      "stage_6_case": "Newport Beach Silver",
       "final": "Newport Beach Silver",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport Beach Silver",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#2-AMERICAN RIVER BLUE",
@@ -4784,11 +5516,13 @@ window.CPI_API = {
       "stage_3_bracket": "AMERICAN RIVER BLUE",
       "stage_4_seed": "AMERICAN RIVER BLUE",
       "stage_5_parenthetical": "AMERICAN RIVER BLUE",
+      "stage_6_case": "American River Blue",
       "final": "American River Blue",
-      "suggested_club": "American River",
+      "registry_match": "American River Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#2-CC UNITED BLACK",
@@ -4797,11 +5531,13 @@ window.CPI_API = {
       "stage_3_bracket": "CC UNITED BLACK",
       "stage_4_seed": "CC UNITED BLACK",
       "stage_5_parenthetical": "CC UNITED BLACK",
+      "stage_6_case": "CC United Black",
       "final": "CC United Black",
-      "suggested_club": "CC United",
+      "registry_match": "CC United Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#2-LAWPC",
@@ -4810,11 +5546,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAWPC",
       "stage_4_seed": "LAWPC",
       "stage_5_parenthetical": "LAWPC",
+      "stage_6_case": "LAWPC",
       "final": "LAWPC",
-      "suggested_club": "Los Angeles WPC",
+      "registry_match": "Los Angeles WPC",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#2-SAND CANYON",
@@ -4823,11 +5561,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAND CANYON",
       "stage_4_seed": "SAND CANYON",
       "stage_5_parenthetical": "SAND CANYON",
+      "stage_6_case": "Sand Canyon",
       "final": "Sand Canyon",
-      "suggested_club": "Sand Canyon",
+      "registry_match": "Sand Canyon",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#20-RANCHO TSUNAMI 12 BLUE",
@@ -4836,11 +5576,13 @@ window.CPI_API = {
       "stage_3_bracket": "RANCHO TSUNAMI 12 BLUE",
       "stage_4_seed": "RANCHO TSUNAMI 12 BLUE",
       "stage_5_parenthetical": "RANCHO TSUNAMI 12 BLUE",
+      "stage_6_case": "Rancho Tsunami 12 Blue",
       "final": "Rancho Tsunami 12 Blue",
-      "suggested_club": "Rancho Tsunami 12",
+      "registry_match": "Rancho Tsunami 12 Blue",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#20-VANGUARD SILVER",
@@ -4849,11 +5591,13 @@ window.CPI_API = {
       "stage_3_bracket": "VANGUARD SILVER",
       "stage_4_seed": "VANGUARD SILVER",
       "stage_5_parenthetical": "VANGUARD SILVER",
+      "stage_6_case": "Vanguard Silver",
       "final": "Vanguard Silver",
-      "suggested_club": "Vanguard",
+      "registry_match": "Vanguard Silver",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#21-MISSION 12A",
@@ -4862,11 +5606,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION 12A",
       "stage_4_seed": "MISSION 12A",
       "stage_5_parenthetical": "MISSION 12A",
+      "stage_6_case": "Mission 12a",
       "final": "Mission 12a",
-      "suggested_club": "Mission 12a",
+      "registry_match": "Mission 12a",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#21-SAN DIEGO DONS 12 BLACK",
@@ -4875,11 +5621,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN DIEGO DONS 12 BLACK",
       "stage_4_seed": "SAN DIEGO DONS 12 BLACK",
       "stage_5_parenthetical": "SAN DIEGO DONS 12 BLACK",
+      "stage_6_case": "San Diego Dons 12 Black",
       "final": "San Diego Dons 12 Black",
-      "suggested_club": "San Diego Dons 12",
+      "registry_match": "San Diego Dons 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#22-HIELAND",
@@ -4888,11 +5636,13 @@ window.CPI_API = {
       "stage_3_bracket": "HIELAND",
       "stage_4_seed": "HIELAND",
       "stage_5_parenthetical": "HIELAND",
+      "stage_6_case": "Hieland",
       "final": "Hieland",
-      "suggested_club": "Hieland",
+      "registry_match": "Hieland",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#22-NORTH IRVINE 12 BLACK",
@@ -4901,11 +5651,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORTH IRVINE 12 BLACK",
       "stage_4_seed": "NORTH IRVINE 12 BLACK",
       "stage_5_parenthetical": "NORTH IRVINE 12 BLACK",
+      "stage_6_case": "North Irvine 12 Black",
       "final": "North Irvine 12 Black",
-      "suggested_club": "North Irvine 12",
+      "registry_match": "North Irvine 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#27-SAN CLEMENTE RED",
@@ -4914,11 +5666,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN CLEMENTE RED",
       "stage_4_seed": "SAN CLEMENTE RED",
       "stage_5_parenthetical": "SAN CLEMENTE RED",
+      "stage_6_case": "San Clemente Red",
       "final": "San Clemente Red",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#27-TITANS",
@@ -4927,11 +5681,13 @@ window.CPI_API = {
       "stage_3_bracket": "TITANS",
       "stage_4_seed": "TITANS",
       "stage_5_parenthetical": "TITANS",
+      "stage_6_case": "Titans",
       "final": "Titans",
-      "suggested_club": "Titans",
+      "registry_match": "Titans",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#27-TRILOGY BLACK",
@@ -4940,11 +5696,13 @@ window.CPI_API = {
       "stage_3_bracket": "TRILOGY BLACK",
       "stage_4_seed": "TRILOGY BLACK",
       "stage_5_parenthetical": "TRILOGY BLACK",
+      "stage_6_case": "Trilogy Black",
       "final": "Trilogy Black",
-      "suggested_club": "Trilogy",
+      "registry_match": "Trilogy Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#28-BACK BAY",
@@ -4953,11 +5711,13 @@ window.CPI_API = {
       "stage_3_bracket": "BACK BAY",
       "stage_4_seed": "BACK BAY",
       "stage_5_parenthetical": "BACK BAY",
+      "stage_6_case": "Back Bay",
       "final": "Back Bay",
-      "suggested_club": "Back Bay",
+      "registry_match": "Back Bay",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#28-SAN CLEMENTE BLACK",
@@ -4966,11 +5726,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN CLEMENTE BLACK",
       "stage_4_seed": "SAN CLEMENTE BLACK",
       "stage_5_parenthetical": "SAN CLEMENTE BLACK",
+      "stage_6_case": "San Clemente Black",
       "final": "San Clemente Black",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#28-SOCAL 12 BLACK",
@@ -4979,11 +5741,13 @@ window.CPI_API = {
       "stage_3_bracket": "SOCAL 12 BLACK",
       "stage_4_seed": "SOCAL 12 BLACK",
       "stage_5_parenthetical": "SOCAL 12 BLACK",
+      "stage_6_case": "SoCal 12 Black",
       "final": "SoCal 12 Black",
-      "suggested_club": "SoCal 12",
+      "registry_match": "SoCal 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#29-CDM B",
@@ -4992,11 +5756,13 @@ window.CPI_API = {
       "stage_3_bracket": "CDM B",
       "stage_4_seed": "CDM B",
       "stage_5_parenthetical": "CDM B",
+      "stage_6_case": "Cdm B",
       "final": "Cdm B",
-      "suggested_club": "Cdm",
+      "registry_match": "Cdm B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#29-HIELAND",
@@ -5005,11 +5771,13 @@ window.CPI_API = {
       "stage_3_bracket": "HIELAND",
       "stage_4_seed": "HIELAND",
       "stage_5_parenthetical": "HIELAND",
+      "stage_6_case": "Hieland",
       "final": "Hieland",
-      "suggested_club": "Hieland",
+      "registry_match": "Hieland",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#29-SET",
@@ -5018,11 +5786,13 @@ window.CPI_API = {
       "stage_3_bracket": "SET",
       "stage_4_seed": "SET",
       "stage_5_parenthetical": "SET",
+      "stage_6_case": "SET",
       "final": "SET",
-      "suggested_club": "SET",
+      "registry_match": "SET",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#3-GOLD COAST",
@@ -5031,11 +5801,13 @@ window.CPI_API = {
       "stage_3_bracket": "GOLD COAST",
       "stage_4_seed": "GOLD COAST",
       "stage_5_parenthetical": "GOLD COAST",
+      "stage_6_case": "Gold Coast",
       "final": "Gold Coast",
-      "suggested_club": "Gold Coast",
+      "registry_match": "Gold Coast",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#3-NEWPORT BEACH WHITE",
@@ -5044,11 +5816,13 @@ window.CPI_API = {
       "stage_3_bracket": "NEWPORT BEACH WHITE",
       "stage_4_seed": "NEWPORT BEACH WHITE",
       "stage_5_parenthetical": "NEWPORT BEACH WHITE",
+      "stage_6_case": "Newport Beach White",
       "final": "Newport Beach White",
-      "suggested_club": "Newport Beach",
+      "registry_match": "Newport Beach White",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#3-STANFORD BLACK",
@@ -5057,11 +5831,13 @@ window.CPI_API = {
       "stage_3_bracket": "STANFORD BLACK",
       "stage_4_seed": "STANFORD BLACK",
       "stage_5_parenthetical": "STANFORD BLACK",
+      "stage_6_case": "Stanford Black",
       "final": "Stanford Black",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#30-680 BLUE",
@@ -5070,11 +5846,13 @@ window.CPI_API = {
       "stage_3_bracket": "680 BLUE",
       "stage_4_seed": "680 BLUE",
       "stage_5_parenthetical": "680 BLUE",
+      "stage_6_case": "680 Blue",
       "final": "680 Blue",
-      "suggested_club": "680",
+      "registry_match": "680 Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#30-SAN DIEGO DONS 12 RED",
@@ -5083,11 +5861,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN DIEGO DONS 12 RED",
       "stage_4_seed": "SAN DIEGO DONS 12 RED",
       "stage_5_parenthetical": "SAN DIEGO DONS 12 RED",
+      "stage_6_case": "San Diego Dons 12 Red",
       "final": "San Diego Dons 12 Red",
-      "suggested_club": "San Diego Dons 12",
+      "registry_match": "San Diego Dons 12 Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#30-TSM",
@@ -5096,11 +5876,13 @@ window.CPI_API = {
       "stage_3_bracket": "TSM",
       "stage_4_seed": "TSM",
       "stage_5_parenthetical": "TSM",
+      "stage_6_case": "Tsm",
       "final": "Tsm",
-      "suggested_club": "Tsm",
+      "registry_match": "Tsm",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#31-PRIDE RED",
@@ -5109,11 +5891,13 @@ window.CPI_API = {
       "stage_3_bracket": "PRIDE RED",
       "stage_4_seed": "PRIDE RED",
       "stage_5_parenthetical": "PRIDE RED",
+      "stage_6_case": "Pride Red",
       "final": "Pride Red",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#32-DAVIS",
@@ -5122,11 +5906,13 @@ window.CPI_API = {
       "stage_3_bracket": "DAVIS",
       "stage_4_seed": "DAVIS",
       "stage_5_parenthetical": "DAVIS",
+      "stage_6_case": "Davis",
       "final": "Davis",
-      "suggested_club": "Davis",
+      "registry_match": "Davis",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#33-ROUTE 66 AQUATICS",
@@ -5135,11 +5921,13 @@ window.CPI_API = {
       "stage_3_bracket": "ROUTE 66 AQUATICS",
       "stage_4_seed": "ROUTE 66 AQUATICS",
       "stage_5_parenthetical": "ROUTE 66 AQUATICS",
+      "stage_6_case": "Route 66 Aquatics",
       "final": "Route 66 Aquatics",
-      "suggested_club": "Route 66 Aquatics",
+      "registry_match": "Route 66 Aquatics",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#35-LAMORINDA A",
@@ -5148,11 +5936,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAMORINDA A",
       "stage_4_seed": "LAMORINDA A",
       "stage_5_parenthetical": "LAMORINDA A",
+      "stage_6_case": "Lamorinda A",
       "final": "Lamorinda A",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda A",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#36-CC UNITED BLACK",
@@ -5161,11 +5951,13 @@ window.CPI_API = {
       "stage_3_bracket": "CC UNITED BLACK",
       "stage_4_seed": "CC UNITED BLACK",
       "stage_5_parenthetical": "CC UNITED BLACK",
+      "stage_6_case": "CC United Black",
       "final": "CC United Black",
-      "suggested_club": "CC United",
+      "registry_match": "CC United Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#37-SHAQ BLUE",
@@ -5174,11 +5966,13 @@ window.CPI_API = {
       "stage_3_bracket": "SHAQ BLUE",
       "stage_4_seed": "SHAQ BLUE",
       "stage_5_parenthetical": "SHAQ BLUE",
+      "stage_6_case": "Shaq Blue",
       "final": "Shaq Blue",
-      "suggested_club": "Shaq",
+      "registry_match": "Shaq Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#4-SAN DIEGO DONS 12 RED",
@@ -5187,11 +5981,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN DIEGO DONS 12 RED",
       "stage_4_seed": "SAN DIEGO DONS 12 RED",
       "stage_5_parenthetical": "SAN DIEGO DONS 12 RED",
+      "stage_6_case": "San Diego Dons 12 Red",
       "final": "San Diego Dons 12 Red",
-      "suggested_club": "San Diego Dons 12",
+      "registry_match": "San Diego Dons 12 Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#4-TSM",
@@ -5200,11 +5996,13 @@ window.CPI_API = {
       "stage_3_bracket": "TSM",
       "stage_4_seed": "TSM",
       "stage_5_parenthetical": "TSM",
+      "stage_6_case": "Tsm",
       "final": "Tsm",
-      "suggested_club": "Tsm",
+      "registry_match": "Tsm",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#43-BOA",
@@ -5213,11 +6011,13 @@ window.CPI_API = {
       "stage_3_bracket": "BOA",
       "stage_4_seed": "BOA",
       "stage_5_parenthetical": "BOA",
+      "stage_6_case": "BOA",
       "final": "BOA",
-      "suggested_club": "BOA",
+      "registry_match": "BOA",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#44-STANFORD BLACK",
@@ -5226,11 +6026,13 @@ window.CPI_API = {
       "stage_3_bracket": "STANFORD BLACK",
       "stage_4_seed": "STANFORD BLACK",
       "stage_5_parenthetical": "STANFORD BLACK",
+      "stage_6_case": "Stanford Black",
       "final": "Stanford Black",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford Black",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#5-PRIDE RED",
@@ -5239,11 +6041,13 @@ window.CPI_API = {
       "stage_3_bracket": "PRIDE RED",
       "stage_4_seed": "PRIDE RED",
       "stage_5_parenthetical": "PRIDE RED",
+      "stage_6_case": "Pride Red",
       "final": "Pride Red",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Red",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#59-DIABLO ALLIANCE B",
@@ -5252,11 +6056,13 @@ window.CPI_API = {
       "stage_3_bracket": "DIABLO ALLIANCE B",
       "stage_4_seed": "DIABLO ALLIANCE B",
       "stage_5_parenthetical": "DIABLO ALLIANCE B",
+      "stage_6_case": "Diablo Alliance B",
       "final": "Diablo Alliance B",
-      "suggested_club": "Diablo Alliance",
+      "registry_match": "Diablo Alliance B",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#6-CDM B",
@@ -5265,11 +6071,13 @@ window.CPI_API = {
       "stage_3_bracket": "CDM B",
       "stage_4_seed": "CDM B",
       "stage_5_parenthetical": "CDM B",
+      "stage_6_case": "Cdm B",
       "final": "Cdm B",
-      "suggested_club": "Cdm",
+      "registry_match": "Cdm B",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#62-SAN JOSE FOUNDATION BLACK",
@@ -5278,11 +6086,13 @@ window.CPI_API = {
       "stage_3_bracket": "SAN JOSE FOUNDATION BLACK",
       "stage_4_seed": "SAN JOSE FOUNDATION BLACK",
       "stage_5_parenthetical": "SAN JOSE FOUNDATION BLACK",
+      "stage_6_case": "San Jose Foundation Black",
       "final": "San Jose Foundation Black",
-      "suggested_club": "San Jose Foundation",
+      "registry_match": "San Jose Foundation Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#63-STANFORD RED",
@@ -5291,11 +6101,13 @@ window.CPI_API = {
       "stage_3_bracket": "STANFORD RED",
       "stage_4_seed": "STANFORD RED",
       "stage_5_parenthetical": "STANFORD RED",
+      "stage_6_case": "Stanford Red",
       "final": "Stanford Red",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#65-SHARKS",
@@ -5304,11 +6116,13 @@ window.CPI_API = {
       "stage_3_bracket": "SHARKS",
       "stage_4_seed": "SHARKS",
       "stage_5_parenthetical": "SHARKS",
+      "stage_6_case": "Sharks",
       "final": "Sharks",
-      "suggested_club": "Sharks",
+      "registry_match": "Sharks",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#66-LAMORINDA A",
@@ -5317,11 +6131,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAMORINDA A",
       "stage_4_seed": "LAMORINDA A",
       "stage_5_parenthetical": "LAMORINDA A",
+      "stage_6_case": "Lamorinda A",
       "final": "Lamorinda A",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda A",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#68-680 BLUE",
@@ -5330,11 +6146,13 @@ window.CPI_API = {
       "stage_3_bracket": "680 BLUE",
       "stage_4_seed": "680 BLUE",
       "stage_5_parenthetical": "680 BLUE",
+      "stage_6_case": "680 Blue",
       "final": "680 Blue",
-      "suggested_club": "680",
+      "registry_match": "680 Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#7-MISSION 14B",
@@ -5343,11 +6161,13 @@ window.CPI_API = {
       "stage_3_bracket": "MISSION 14B",
       "stage_4_seed": "MISSION 14B",
       "stage_5_parenthetical": "MISSION 14B",
+      "stage_6_case": "Mission 14b",
       "final": "Mission 14b",
-      "suggested_club": "Mission 14b",
+      "registry_match": "Mission 14b",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#7-ROUTE 66 AQUATICS",
@@ -5356,11 +6176,13 @@ window.CPI_API = {
       "stage_3_bracket": "ROUTE 66 AQUATICS",
       "stage_4_seed": "ROUTE 66 AQUATICS",
       "stage_5_parenthetical": "ROUTE 66 AQUATICS",
+      "stage_6_case": "Route 66 Aquatics",
       "final": "Route 66 Aquatics",
-      "suggested_club": "Route 66 Aquatics",
+      "registry_match": "Route 66 Aquatics",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#8-SHAQ BLUE",
@@ -5369,11 +6191,13 @@ window.CPI_API = {
       "stage_3_bracket": "SHAQ BLUE",
       "stage_4_seed": "SHAQ BLUE",
       "stage_5_parenthetical": "SHAQ BLUE",
+      "stage_6_case": "Shaq Blue",
       "final": "Shaq Blue",
-      "suggested_club": "Shaq",
+      "registry_match": "Shaq Blue",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#8-SOCAL 12 BLACK",
@@ -5382,11 +6206,13 @@ window.CPI_API = {
       "stage_3_bracket": "SOCAL 12 BLACK",
       "stage_4_seed": "SOCAL 12 BLACK",
       "stage_5_parenthetical": "SOCAL 12 BLACK",
+      "stage_6_case": "SoCal 12 Black",
       "final": "SoCal 12 Black",
-      "suggested_club": "SoCal 12",
+      "registry_match": "SoCal 12 Black",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#9-TITANS",
@@ -5395,11 +6221,13 @@ window.CPI_API = {
       "stage_3_bracket": "TITANS",
       "stage_4_seed": "TITANS",
       "stage_5_parenthetical": "TITANS",
+      "stage_6_case": "Titans",
       "final": "Titans",
-      "suggested_club": "Titans",
+      "registry_match": "Titans",
       "status": "changed",
       "event": "Turbo Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#G1/G4-CC UNITED WHITE",
@@ -5408,11 +6236,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#G1/G4-CC UNITED WHITE",
       "stage_4_seed": "L#G1/G4-CC UNITED WHITE",
       "stage_5_parenthetical": "L#G1/G4-CC UNITED WHITE",
+      "stage_6_case": "L#g1/g4-cc United White",
       "final": "L#g1/g4-cc United White",
-      "suggested_club": "L#g1/g4-cc United",
+      "registry_match": "L#g1/g4-cc United White",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#G2/G3-STANFORD WHITE",
@@ -5421,11 +6251,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#G2/G3-STANFORD WHITE",
       "stage_4_seed": "L#G2/G3-STANFORD WHITE",
       "stage_5_parenthetical": "L#G2/G3-STANFORD WHITE",
+      "stage_6_case": "L#g2/g3-stanford White",
       "final": "L#g2/g3-stanford White",
-      "suggested_club": "L#g2/g3-stanford",
+      "registry_match": "L#g2/g3-stanford White",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#H1/H4-TRI-VALLEY TRITONS",
@@ -5434,11 +6266,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#H1/H4-TRI-VALLEY TRITONS",
       "stage_4_seed": "L#H1/H4-TRI-VALLEY TRITONS",
       "stage_5_parenthetical": "L#H1/H4-TRI-VALLEY TRITONS",
+      "stage_6_case": "L#h1/h4-tri-valley Tritons",
       "final": "L#h1/h4-tri-valley Tritons",
-      "suggested_club": "L#h1/h4-tri-valley Tritons",
+      "registry_match": "L#h1/h4-tri-valley Tritons",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#H2/H3-680 WHITE",
@@ -5447,11 +6281,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#H2/H3-680 WHITE",
       "stage_4_seed": "L#H2/H3-680 WHITE",
       "stage_5_parenthetical": "L#H2/H3-680 WHITE",
+      "stage_6_case": "L#h2/h3-680 White",
       "final": "L#h2/h3-680 White",
-      "suggested_club": "L#h2/h3-680",
+      "registry_match": "L#h2/h3-680 White",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#M1/M8-CC UNITED BLUE",
@@ -5460,11 +6296,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#M1/M8-CC UNITED BLUE",
       "stage_4_seed": "L#M1/M8-CC UNITED BLUE",
       "stage_5_parenthetical": "L#M1/M8-CC UNITED BLUE",
+      "stage_6_case": "L#m1/m8-cc United Blue",
       "final": "L#m1/m8-cc United Blue",
-      "suggested_club": "L#m1/m8-cc United",
+      "registry_match": "L#m1/m8-cc United Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#M2/M7-680 RED",
@@ -5473,11 +6311,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#M2/M7-680 RED",
       "stage_4_seed": "L#M2/M7-680 RED",
       "stage_5_parenthetical": "L#M2/M7-680 RED",
+      "stage_6_case": "L#m2/m7-680 Red",
       "final": "L#m2/m7-680 Red",
-      "suggested_club": "L#m2/m7-680",
+      "registry_match": "L#m2/m7-680 Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#M3/M6-SHAQ",
@@ -5486,11 +6326,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#M3/M6-SHAQ",
       "stage_4_seed": "L#M3/M6-SHAQ",
       "stage_5_parenthetical": "L#M3/M6-SHAQ",
+      "stage_6_case": "L#m3/m6-shaq",
       "final": "L#m3/m6-shaq",
-      "suggested_club": "L#m3/m6-shaq",
+      "registry_match": "L#m3/m6-shaq",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#M4/M5-CC UNITED BLACK",
@@ -5499,11 +6341,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#M4/M5-CC UNITED BLACK",
       "stage_4_seed": "L#M4/M5-CC UNITED BLACK",
       "stage_5_parenthetical": "L#M4/M5-CC UNITED BLACK",
+      "stage_6_case": "L#m4/m5-cc United Black",
       "final": "L#m4/m5-cc United Black",
-      "suggested_club": "L#m4/m5-cc United",
+      "registry_match": "L#m4/m5-cc United Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#N1/N8-DIABLO ALLIANCE B",
@@ -5512,11 +6356,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#N1/N8-DIABLO ALLIANCE B",
       "stage_4_seed": "L#N1/N8-DIABLO ALLIANCE B",
       "stage_5_parenthetical": "L#N1/N8-DIABLO ALLIANCE B",
+      "stage_6_case": "L#n1/n8-diablo Alliance B",
       "final": "L#n1/n8-diablo Alliance B",
-      "suggested_club": "L#n1/n8-diablo Alliance",
+      "registry_match": "L#n1/n8-diablo Alliance B",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#N2/N7-SAN JOSE EXPRESS BLUE",
@@ -5525,11 +6371,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#N2/N7-SAN JOSE EXPRESS BLUE",
       "stage_4_seed": "L#N2/N7-SAN JOSE EXPRESS BLUE",
       "stage_5_parenthetical": "L#N2/N7-SAN JOSE EXPRESS BLUE",
+      "stage_6_case": "L#n2/n7-san Jose Express Blue",
       "final": "L#n2/n7-san Jose Express Blue",
-      "suggested_club": "L#n2/n7-san Jose Express",
+      "registry_match": "L#n2/n7-san Jose Express Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#N3/N6-SAN JOSE FOUNDATION BLACK",
@@ -5538,11 +6386,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#N3/N6-SAN JOSE FOUNDATION BLACK",
       "stage_4_seed": "L#N3/N6-SAN JOSE FOUNDATION BLACK",
       "stage_5_parenthetical": "L#N3/N6-SAN JOSE FOUNDATION BLACK",
+      "stage_6_case": "L#n3/n6-san Jose Foundation Black",
       "final": "L#n3/n6-san Jose Foundation Black",
-      "suggested_club": "L#n3/n6-san Jose Foundation",
+      "registry_match": "L#n3/n6-san Jose Foundation Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L#N4/N5-LAMORINDA B",
@@ -5551,11 +6401,13 @@ window.CPI_API = {
       "stage_3_bracket": "L#N4/N5-LAMORINDA B",
       "stage_4_seed": "L#N4/N5-LAMORINDA B",
       "stage_5_parenthetical": "L#N4/N5-LAMORINDA B",
+      "stage_6_case": "L#n4/n5-lamorinda B",
       "final": "L#n4/n5-lamorinda B",
-      "suggested_club": "L#n4/n5-lamorinda",
+      "registry_match": "L#n4/n5-lamorinda B",
       "status": "changed",
       "event": "JO Qualifier \u2014 NorCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L1 - Santa Barbara",
@@ -5564,11 +6416,13 @@ window.CPI_API = {
       "stage_3_bracket": "Santa Barbara",
       "stage_4_seed": "Santa Barbara",
       "stage_5_parenthetical": "Santa Barbara",
+      "stage_6_case": "Santa Barbara",
       "final": "Santa Barbara",
-      "suggested_club": "Santa Barbara",
+      "registry_match": "Santa Barbara",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L1(2ndA)-NORTH IRVINE RED",
@@ -5577,11 +6431,13 @@ window.CPI_API = {
       "stage_3_bracket": "NORTH IRVINE RED",
       "stage_4_seed": "NORTH IRVINE RED",
       "stage_5_parenthetical": "NORTH IRVINE RED",
+      "stage_6_case": "North Irvine Red",
       "final": "North Irvine Red",
-      "suggested_club": "North Irvine",
+      "registry_match": "North Irvine Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L1(3rdD)-STANFORD RED",
@@ -5590,11 +6446,13 @@ window.CPI_API = {
       "stage_3_bracket": "STANFORD RED",
       "stage_4_seed": "STANFORD RED",
       "stage_5_parenthetical": "STANFORD RED",
+      "stage_6_case": "Stanford Red",
       "final": "Stanford Red",
-      "suggested_club": "Stanford",
+      "registry_match": "Stanford Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L2 - Crown City",
@@ -5603,11 +6461,13 @@ window.CPI_API = {
       "stage_3_bracket": "Crown City",
       "stage_4_seed": "Crown City",
       "stage_5_parenthetical": "Crown City",
+      "stage_6_case": "Crown City",
       "final": "Crown City",
-      "suggested_club": "Crown City",
+      "registry_match": "Crown City",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L2(2ndB)-DAVIS",
@@ -5616,11 +6476,13 @@ window.CPI_API = {
       "stage_3_bracket": "DAVIS",
       "stage_4_seed": "DAVIS",
       "stage_5_parenthetical": "DAVIS",
+      "stage_6_case": "Davis",
       "final": "Davis",
-      "suggested_club": "Davis",
+      "registry_match": "Davis",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L2(3rdE)-DEVIL'S GATE",
@@ -5629,11 +6491,13 @@ window.CPI_API = {
       "stage_3_bracket": "DEVIL'S GATE",
       "stage_4_seed": "DEVIL'S GATE",
       "stage_5_parenthetical": "DEVIL'S GATE",
+      "stage_6_case": "Devil's Gate",
       "final": "Devil's Gate",
-      "suggested_club": "Devil's Gate",
+      "registry_match": "Devil's Gate",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L3(2ndC)-LAWPC",
@@ -5642,11 +6506,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAWPC",
       "stage_4_seed": "LAWPC",
       "stage_5_parenthetical": "LAWPC",
+      "stage_6_case": "LAWPC",
       "final": "LAWPC",
-      "suggested_club": "Los Angeles WPC",
+      "registry_match": "Los Angeles WPC",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L3(3rdC)-LAMORINDA A",
@@ -5655,11 +6521,13 @@ window.CPI_API = {
       "stage_3_bracket": "LAMORINDA A",
       "stage_4_seed": "LAMORINDA A",
       "stage_5_parenthetical": "LAMORINDA A",
+      "stage_6_case": "Lamorinda A",
       "final": "Lamorinda A",
-      "suggested_club": "Lamorinda",
+      "registry_match": "Lamorinda A",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L4(2ndD)-PRIDE RED",
@@ -5668,11 +6536,13 @@ window.CPI_API = {
       "stage_3_bracket": "PRIDE RED",
       "stage_4_seed": "PRIDE RED",
       "stage_5_parenthetical": "PRIDE RED",
+      "stage_6_case": "Pride Red",
       "final": "Pride Red",
-      "suggested_club": "Pride",
+      "registry_match": "Pride Red",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "L4(4thF)-ROUTE 66 AQUATICS",
@@ -5681,11 +6551,13 @@ window.CPI_API = {
       "stage_3_bracket": "ROUTE 66 AQUATICS",
       "stage_4_seed": "ROUTE 66 AQUATICS",
       "stage_5_parenthetical": "ROUTE 66 AQUATICS",
+      "stage_6_case": "Route 66 Aquatics",
       "final": "Route 66 Aquatics",
-      "suggested_club": "Route 66 Aquatics",
+      "registry_match": "Route 66 Aquatics",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "LA PREMIER",
@@ -5694,11 +6566,13 @@ window.CPI_API = {
       "stage_3_bracket": "LA PREMIER",
       "stage_4_seed": "LA PREMIER",
       "stage_5_parenthetical": "LA PREMIER",
+      "stage_6_case": "LA Premier",
       "final": "LA Premier",
-      "suggested_club": "LA Premier",
+      "registry_match": "LA Premier",
       "status": "changed",
       "event": "KAP7 International",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "LACUWP",
@@ -5707,11 +6581,13 @@ window.CPI_API = {
       "stage_3_bracket": "LACUWP",
       "stage_4_seed": "LACUWP",
       "stage_5_parenthetical": "LACUWP",
+      "stage_6_case": "Lacuwp",
       "final": "Lacuwp",
-      "suggested_club": "Lacuwp",
+      "registry_match": "Lacuwp",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #1 - Rose Bowl Black (B)",
@@ -5720,11 +6596,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #1 - Rose Bowl Black (B)",
       "stage_4_seed": "Lose #1 - Rose Bowl Black (B)",
       "stage_5_parenthetical": "Lose #1 - Rose Bowl Black",
+      "stage_6_case": "Lose #1 - Rose Bowl Black",
       "final": "Lose #1 - Rose Bowl Black",
-      "suggested_club": "Lose #1 - Rose Bowl",
+      "registry_match": "Lose #1 - Rose Bowl Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #10 - Titans Gold",
@@ -5733,11 +6611,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #10 - Titans Gold",
       "stage_4_seed": "Lose #10 - Titans Gold",
       "stage_5_parenthetical": "Lose #10 - Titans Gold",
+      "stage_6_case": "Lose #10 - Titans Gold",
       "final": "Lose #10 - Titans Gold",
-      "suggested_club": "Lose #10 - Titans",
+      "registry_match": "Lose #10 - Titans Gold",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #11 - ORWP Red (B)",
@@ -5746,11 +6626,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #11 - ORWP Red (B)",
       "stage_4_seed": "Lose #11 - ORWP Red (B)",
       "stage_5_parenthetical": "Lose #11 - ORWP Red",
+      "stage_6_case": "Lose #11 - ORWP Red",
       "final": "Lose #11 - ORWP Red",
-      "suggested_club": "Lose #11 - ORWP",
+      "registry_match": "Lose #11 - ORWP Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #12 - South Coast White(B)",
@@ -5758,12 +6640,14 @@ window.CPI_API = {
       "stage_2_placement": "Lose #12 - South Coast White(B)",
       "stage_3_bracket": "Lose #12 - South Coast White(B)",
       "stage_4_seed": "Lose #12 - South Coast White(B)",
-      "stage_5_parenthetical": "Lose #12 - South Coast White(B)",
-      "final": "Lose #12 - South Coast White(B)",
-      "suggested_club": "Lose #12 - South Coast White(B)",
-      "status": "unchanged",
+      "stage_5_parenthetical": "Lose #12 - South Coast White",
+      "stage_6_case": "Lose #12 - South Coast White",
+      "final": "Lose #12 - South Coast White",
+      "registry_match": "Lose #12 - South Coast White",
+      "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #17 - Loyola",
@@ -5772,11 +6656,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #17 - Loyola",
       "stage_4_seed": "Lose #17 - Loyola",
       "stage_5_parenthetical": "Lose #17 - Loyola",
+      "stage_6_case": "Lose #17 - Loyola",
       "final": "Lose #17 - Loyola",
-      "suggested_club": "Lose #17 - Loyola",
+      "registry_match": "Lose #17 - Loyola",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #18 - CIU Coast",
@@ -5785,11 +6671,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #18 - CIU Coast",
       "stage_4_seed": "Lose #18 - CIU Coast",
       "stage_5_parenthetical": "Lose #18 - CIU Coast",
+      "stage_6_case": "Lose #18 - CIU Coast",
       "final": "Lose #18 - CIU Coast",
-      "suggested_club": "Lose #18 - CIU Coast",
+      "registry_match": "Lose #18 - CIU Coast",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #19 - Supreme",
@@ -5798,11 +6686,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #19 - Supreme",
       "stage_4_seed": "Lose #19 - Supreme",
       "stage_5_parenthetical": "Lose #19 - Supreme",
+      "stage_6_case": "Lose #19 - Supreme",
       "final": "Lose #19 - Supreme",
-      "suggested_club": "Lose #19 - Supreme",
+      "registry_match": "Lose #19 - Supreme",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #2 - PV Blue (B)",
@@ -5811,11 +6701,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #2 - PV Blue (B)",
       "stage_4_seed": "Lose #2 - PV Blue (B)",
       "stage_5_parenthetical": "Lose #2 - PV Blue",
+      "stage_6_case": "Lose #2 - PV Blue",
       "final": "Lose #2 - PV Blue",
-      "suggested_club": "Lose #2 - PV",
+      "registry_match": "Lose #2 - PV Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #20 - NGEN",
@@ -5824,11 +6716,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #20 - NGEN",
       "stage_4_seed": "Lose #20 - NGEN",
       "stage_5_parenthetical": "Lose #20 - NGEN",
+      "stage_6_case": "Lose #20 - NGEN",
       "final": "Lose #20 - NGEN",
-      "suggested_club": "Lose #20 - NGEN",
+      "registry_match": "Lose #20 - NGEN",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #25 - PAC",
@@ -5837,11 +6731,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #25 - PAC",
       "stage_4_seed": "Lose #25 - PAC",
       "stage_5_parenthetical": "Lose #25 - PAC",
+      "stage_6_case": "Lose #25 - PAC",
       "final": "Lose #25 - PAC",
-      "suggested_club": "Lose #25 - PAC",
+      "registry_match": "Lose #25 - PAC",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #26 - LA City United",
@@ -5850,11 +6746,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #26 - LA City United",
       "stage_4_seed": "Lose #26 - LA City United",
       "stage_5_parenthetical": "Lose #26 - LA City United",
+      "stage_6_case": "Lose #26 - LA City United",
       "final": "Lose #26 - LA City United",
-      "suggested_club": "Lose #26 - LA City United",
+      "registry_match": "Lose #26 - LA City United",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #27 - Valley United",
@@ -5863,11 +6761,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #27 - Valley United",
       "stage_4_seed": "Lose #27 - Valley United",
       "stage_5_parenthetical": "Lose #27 - Valley United",
+      "stage_6_case": "Lose #27 - Valley United",
       "final": "Lose #27 - Valley United",
-      "suggested_club": "Lose #27 - Valley United",
+      "registry_match": "Lose #27 - Valley United",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #28 - TSM",
@@ -5876,11 +6776,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #28 - TSM",
       "stage_4_seed": "Lose #28 - TSM",
       "stage_5_parenthetical": "Lose #28 - TSM",
+      "stage_6_case": "Lose #28 - TSM",
       "final": "Lose #28 - TSM",
-      "suggested_club": "Lose #28 - TSM",
+      "registry_match": "Lose #28 - TSM",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #3 - Trojan Gold (B)",
@@ -5889,11 +6791,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #3 - Trojan Gold (B)",
       "stage_4_seed": "Lose #3 - Trojan Gold (B)",
       "stage_5_parenthetical": "Lose #3 - Trojan Gold",
+      "stage_6_case": "Lose #3 - Trojan Gold",
       "final": "Lose #3 - Trojan Gold",
-      "suggested_club": "Lose #3 - Trojan",
+      "registry_match": "Lose #3 - Trojan Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #33 - Rose Bowl Red (A)",
@@ -5902,11 +6806,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #33 - Rose Bowl Red (A)",
       "stage_4_seed": "Lose #33 - Rose Bowl Red (A)",
       "stage_5_parenthetical": "Lose #33 - Rose Bowl Red",
+      "stage_6_case": "Lose #33 - Rose Bowl Red",
       "final": "Lose #33 - Rose Bowl Red",
-      "suggested_club": "Lose #33 - Rose Bowl",
+      "registry_match": "Lose #33 - Rose Bowl Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #34 - ORWP 14U Black (A)",
@@ -5915,11 +6821,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #34 - ORWP 14U Black (A)",
       "stage_4_seed": "Lose #34 - ORWP 14U Black (A)",
       "stage_5_parenthetical": "Lose #34 - ORWP 14U Black",
+      "stage_6_case": "Lose #34 - ORWP 14U Black",
       "final": "Lose #34 - ORWP 14U Black",
-      "suggested_club": "Lose #34 - ORWP 14U",
+      "registry_match": "Lose #34 - ORWP 14U Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #35 - Foothill Red (A)",
@@ -5928,11 +6836,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #35 - Foothill Red (A)",
       "stage_4_seed": "Lose #35 - Foothill Red (A)",
       "stage_5_parenthetical": "Lose #35 - Foothill Red",
+      "stage_6_case": "Lose #35 - Foothill Red",
       "final": "Lose #35 - Foothill Red",
-      "suggested_club": "Lose #35 - Foothill",
+      "registry_match": "Lose #35 - Foothill Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #36 - Pride Black",
@@ -5941,11 +6851,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #36 - Pride Black",
       "stage_4_seed": "Lose #36 - Pride Black",
       "stage_5_parenthetical": "Lose #36 - Pride Black",
+      "stage_6_case": "Lose #36 - Pride Black",
       "final": "Lose #36 - Pride Black",
-      "suggested_club": "Lose #36 - Pride",
+      "registry_match": "Lose #36 - Pride Black",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #38 - Rose Bowl Red (A)",
@@ -5954,11 +6866,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #38 - Rose Bowl Red (A)",
       "stage_4_seed": "Lose #38 - Rose Bowl Red (A)",
       "stage_5_parenthetical": "Lose #38 - Rose Bowl Red",
+      "stage_6_case": "Lose #38 - Rose Bowl Red",
       "final": "Lose #38 - Rose Bowl Red",
-      "suggested_club": "Lose #38 - Rose Bowl",
+      "registry_match": "Lose #38 - Rose Bowl Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #4 - 908 Blue (B)",
@@ -5967,11 +6881,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #4 - 908 Blue (B)",
       "stage_4_seed": "Lose #4 - 908 Blue (B)",
       "stage_5_parenthetical": "Lose #4 - 908 Blue",
+      "stage_6_case": "Lose #4 - 908 Blue",
       "final": "Lose #4 - 908 Blue",
-      "suggested_club": "Lose #4 - 908",
+      "registry_match": "Lose #4 - 908 Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #40 - Foothill Red (A)",
@@ -5980,11 +6896,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #40 - Foothill Red (A)",
       "stage_4_seed": "Lose #40 - Foothill Red (A)",
       "stage_5_parenthetical": "Lose #40 - Foothill Red",
+      "stage_6_case": "Lose #40 - Foothill Red",
       "final": "Lose #40 - Foothill Red",
-      "suggested_club": "Lose #40 - Foothill",
+      "registry_match": "Lose #40 - Foothill Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #41 - Route 66 14U Boys",
@@ -5993,11 +6911,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #41 - Route 66 14U Boys",
       "stage_4_seed": "Lose #41 - Route 66 14U Boys",
       "stage_5_parenthetical": "Lose #41 - Route 66 14U Boys",
+      "stage_6_case": "Lose #41 - Route 66 14U Boys",
       "final": "Lose #41 - Route 66 14U Boys",
-      "suggested_club": "Lose #41 - Route 66 14U Boys",
+      "registry_match": "Lose #41 - Route 66 14U Boys",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #42 - Temple City",
@@ -6006,11 +6926,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #42 - Temple City",
       "stage_4_seed": "Lose #42 - Temple City",
       "stage_5_parenthetical": "Lose #42 - Temple City",
+      "stage_6_case": "Lose #42 - Temple City",
       "final": "Lose #42 - Temple City",
-      "suggested_club": "Lose #42 - Temple City",
+      "registry_match": "Lose #42 - Temple City",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #43 - Trojan Cardinal (A)",
@@ -6019,11 +6941,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #43 - Trojan Cardinal (A)",
       "stage_4_seed": "Lose #43 - Trojan Cardinal (A)",
       "stage_5_parenthetical": "Lose #43 - Trojan Cardinal",
+      "stage_6_case": "Lose #43 - Trojan Cardinal",
       "final": "Lose #43 - Trojan Cardinal",
-      "suggested_club": "Lose #43 - Trojan Cardinal",
+      "registry_match": "Lose #43 - Trojan Cardinal",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #44 - Shore Red",
@@ -6032,11 +6956,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #44 - Shore Red",
       "stage_4_seed": "Lose #44 - Shore Red",
       "stage_5_parenthetical": "Lose #44 - Shore Red",
+      "stage_6_case": "Lose #44 - Shore Red",
       "final": "Lose #44 - Shore Red",
-      "suggested_club": "Lose #44 - Shore",
+      "registry_match": "Lose #44 - Shore Red",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #46 - Temple City",
@@ -6045,11 +6971,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #46 - Temple City",
       "stage_4_seed": "Lose #46 - Temple City",
       "stage_5_parenthetical": "Lose #46 - Temple City",
+      "stage_6_case": "Lose #46 - Temple City",
       "final": "Lose #46 - Temple City",
-      "suggested_club": "Lose #46 - Temple City",
+      "registry_match": "Lose #46 - Temple City",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #48 - Trojan Cardinal (A)",
@@ -6058,11 +6986,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #48 - Trojan Cardinal (A)",
       "stage_4_seed": "Lose #48 - Trojan Cardinal (A)",
       "stage_5_parenthetical": "Lose #48 - Trojan Cardinal",
+      "stage_6_case": "Lose #48 - Trojan Cardinal",
       "final": "Lose #48 - Trojan Cardinal",
-      "suggested_club": "Lose #48 - Trojan Cardinal",
+      "registry_match": "Lose #48 - Trojan Cardinal",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #49 - Trojan Gold (B)",
@@ -6071,11 +7001,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #49 - Trojan Gold (B)",
       "stage_4_seed": "Lose #49 - Trojan Gold (B)",
       "stage_5_parenthetical": "Lose #49 - Trojan Gold",
+      "stage_6_case": "Lose #49 - Trojan Gold",
       "final": "Lose #49 - Trojan Gold",
-      "suggested_club": "Lose #49 - Trojan",
+      "registry_match": "Lose #49 - Trojan Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #50 - Valley United",
@@ -6084,11 +7016,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #50 - Valley United",
       "stage_4_seed": "Lose #50 - Valley United",
       "stage_5_parenthetical": "Lose #50 - Valley United",
+      "stage_6_case": "Lose #50 - Valley United",
       "final": "Lose #50 - Valley United",
-      "suggested_club": "Lose #50 - Valley United",
+      "registry_match": "Lose #50 - Valley United",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #51 - Rose Bowl Black (B)",
@@ -6097,11 +7031,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #51 - Rose Bowl Black (B)",
       "stage_4_seed": "Lose #51 - Rose Bowl Black (B)",
       "stage_5_parenthetical": "Lose #51 - Rose Bowl Black",
+      "stage_6_case": "Lose #51 - Rose Bowl Black",
       "final": "Lose #51 - Rose Bowl Black",
-      "suggested_club": "Lose #51 - Rose Bowl",
+      "registry_match": "Lose #51 - Rose Bowl Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #52 - TSM",
@@ -6110,11 +7046,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #52 - TSM",
       "stage_4_seed": "Lose #52 - TSM",
       "stage_5_parenthetical": "Lose #52 - TSM",
+      "stage_6_case": "Lose #52 - TSM",
       "final": "Lose #52 - TSM",
-      "suggested_club": "Lose #52 - TSM",
+      "registry_match": "Lose #52 - TSM",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #53 - LA City United",
@@ -6123,11 +7061,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #53 - LA City United",
       "stage_4_seed": "Lose #53 - LA City United",
       "stage_5_parenthetical": "Lose #53 - LA City United",
+      "stage_6_case": "Lose #53 - LA City United",
       "final": "Lose #53 - LA City United",
-      "suggested_club": "Lose #53 - LA City United",
+      "registry_match": "Lose #53 - LA City United",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #54 - Trojan Gold (B)",
@@ -6136,11 +7076,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #54 - Trojan Gold (B)",
       "stage_4_seed": "Lose #54 - Trojan Gold (B)",
       "stage_5_parenthetical": "Lose #54 - Trojan Gold",
+      "stage_6_case": "Lose #54 - Trojan Gold",
       "final": "Lose #54 - Trojan Gold",
-      "suggested_club": "Lose #54 - Trojan",
+      "registry_match": "Lose #54 - Trojan Gold",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #55 - PAC",
@@ -6149,11 +7091,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #55 - PAC",
       "stage_4_seed": "Lose #55 - PAC",
       "stage_5_parenthetical": "Lose #55 - PAC",
+      "stage_6_case": "Lose #55 - PAC",
       "final": "Lose #55 - PAC",
-      "suggested_club": "Lose #55 - PAC",
+      "registry_match": "Lose #55 - PAC",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #56 - TSM",
@@ -6162,11 +7106,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #56 - TSM",
       "stage_4_seed": "Lose #56 - TSM",
       "stage_5_parenthetical": "Lose #56 - TSM",
+      "stage_6_case": "Lose #56 - TSM",
       "final": "Lose #56 - TSM",
-      "suggested_club": "Lose #56 - TSM",
+      "registry_match": "Lose #56 - TSM",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #57 - ORWP Red (B)",
@@ -6175,11 +7121,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #57 - ORWP Red (B)",
       "stage_4_seed": "Lose #57 - ORWP Red (B)",
       "stage_5_parenthetical": "Lose #57 - ORWP Red",
+      "stage_6_case": "Lose #57 - ORWP Red",
       "final": "Lose #57 - ORWP Red",
-      "suggested_club": "Lose #57 - ORWP",
+      "registry_match": "Lose #57 - ORWP Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #58 - Supreme",
@@ -6188,11 +7136,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #58 - Supreme",
       "stage_4_seed": "Lose #58 - Supreme",
       "stage_5_parenthetical": "Lose #58 - Supreme",
+      "stage_6_case": "Lose #58 - Supreme",
       "final": "Lose #58 - Supreme",
-      "suggested_club": "Lose #58 - Supreme",
+      "registry_match": "Lose #58 - Supreme",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #59 - Foothill Black(B)",
@@ -6200,12 +7150,14 @@ window.CPI_API = {
       "stage_2_placement": "Lose #59 - Foothill Black(B)",
       "stage_3_bracket": "Lose #59 - Foothill Black(B)",
       "stage_4_seed": "Lose #59 - Foothill Black(B)",
-      "stage_5_parenthetical": "Lose #59 - Foothill Black(B)",
-      "final": "Lose #59 - Foothill Black(B)",
-      "suggested_club": "Lose #59 - Foothill Black(B)",
-      "status": "unchanged",
+      "stage_5_parenthetical": "Lose #59 - Foothill Black",
+      "stage_6_case": "Lose #59 - Foothill Black",
+      "final": "Lose #59 - Foothill Black",
+      "registry_match": "Lose #59 - Foothill Black",
+      "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #60 - NGEN",
@@ -6214,11 +7166,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #60 - NGEN",
       "stage_4_seed": "Lose #60 - NGEN",
       "stage_5_parenthetical": "Lose #60 - NGEN",
+      "stage_6_case": "Lose #60 - NGEN",
       "final": "Lose #60 - NGEN",
-      "suggested_club": "Lose #60 - NGEN",
+      "registry_match": "Lose #60 - NGEN",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #61 - Loyola",
@@ -6227,11 +7181,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #61 - Loyola",
       "stage_4_seed": "Lose #61 - Loyola",
       "stage_5_parenthetical": "Lose #61 - Loyola",
+      "stage_6_case": "Lose #61 - Loyola",
       "final": "Lose #61 - Loyola",
-      "suggested_club": "Lose #61 - Loyola",
+      "registry_match": "Lose #61 - Loyola",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #62 - Supreme",
@@ -6240,11 +7196,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #62 - Supreme",
       "stage_4_seed": "Lose #62 - Supreme",
       "stage_5_parenthetical": "Lose #62 - Supreme",
+      "stage_6_case": "Lose #62 - Supreme",
       "final": "Lose #62 - Supreme",
-      "suggested_club": "Lose #62 - Supreme",
+      "registry_match": "Lose #62 - Supreme",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #63 - CIU Coast",
@@ -6253,11 +7211,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #63 - CIU Coast",
       "stage_4_seed": "Lose #63 - CIU Coast",
       "stage_5_parenthetical": "Lose #63 - CIU Coast",
+      "stage_6_case": "Lose #63 - CIU Coast",
       "final": "Lose #63 - CIU Coast",
-      "suggested_club": "Lose #63 - CIU Coast",
+      "registry_match": "Lose #63 - CIU Coast",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #64 - NGEN",
@@ -6266,11 +7226,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #64 - NGEN",
       "stage_4_seed": "Lose #64 - NGEN",
       "stage_5_parenthetical": "Lose #64 - NGEN",
+      "stage_6_case": "Lose #64 - NGEN",
       "final": "Lose #64 - NGEN",
-      "suggested_club": "Lose #64 - NGEN",
+      "registry_match": "Lose #64 - NGEN",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #65 - PV Blue (B)",
@@ -6279,11 +7241,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #65 - PV Blue (B)",
       "stage_4_seed": "Lose #65 - PV Blue (B)",
       "stage_5_parenthetical": "Lose #65 - PV Blue",
+      "stage_6_case": "Lose #65 - PV Blue",
       "final": "Lose #65 - PV Blue",
-      "suggested_club": "Lose #65 - PV",
+      "registry_match": "Lose #65 - PV Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #66 - Foothill Red (A)",
@@ -6292,11 +7256,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #66 - Foothill Red (A)",
       "stage_4_seed": "Lose #66 - Foothill Red (A)",
       "stage_5_parenthetical": "Lose #66 - Foothill Red",
+      "stage_6_case": "Lose #66 - Foothill Red",
       "final": "Lose #66 - Foothill Red",
-      "suggested_club": "Lose #66 - Foothill",
+      "registry_match": "Lose #66 - Foothill Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #67 - LA Premier",
@@ -6305,11 +7271,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #67 - LA Premier",
       "stage_4_seed": "Lose #67 - LA Premier",
       "stage_5_parenthetical": "Lose #67 - LA Premier",
+      "stage_6_case": "Lose #67 - LA Premier",
       "final": "Lose #67 - LA Premier",
-      "suggested_club": "Lose #67 - LA Premier",
+      "registry_match": "Lose #67 - LA Premier",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #68 - Commerce",
@@ -6318,11 +7286,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #68 - Commerce",
       "stage_4_seed": "Lose #68 - Commerce",
       "stage_5_parenthetical": "Lose #68 - Commerce",
+      "stage_6_case": "Lose #68 - Commerce",
       "final": "Lose #68 - Commerce",
-      "suggested_club": "Lose #68 - Commerce",
+      "registry_match": "Lose #68 - Commerce",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #69 - Pride Black",
@@ -6331,11 +7301,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #69 - Pride Black",
       "stage_4_seed": "Lose #69 - Pride Black",
       "stage_5_parenthetical": "Lose #69 - Pride Black",
+      "stage_6_case": "Lose #69 - Pride Black",
       "final": "Lose #69 - Pride Black",
-      "suggested_club": "Lose #69 - Pride",
+      "registry_match": "Lose #69 - Pride Black",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #75 - 908 Blue (B)",
@@ -6344,11 +7316,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #75 - 908 Blue (B)",
       "stage_4_seed": "Lose #75 - 908 Blue (B)",
       "stage_5_parenthetical": "Lose #75 - 908 Blue",
+      "stage_6_case": "Lose #75 - 908 Blue",
       "final": "Lose #75 - 908 Blue",
-      "suggested_club": "Lose #75 - 908",
+      "registry_match": "Lose #75 - 908 Blue",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #76 - Rose Bowl Red (A)",
@@ -6357,11 +7331,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #76 - Rose Bowl Red (A)",
       "stage_4_seed": "Lose #76 - Rose Bowl Red (A)",
       "stage_5_parenthetical": "Lose #76 - Rose Bowl Red",
+      "stage_6_case": "Lose #76 - Rose Bowl Red",
       "final": "Lose #76 - Rose Bowl Red",
-      "suggested_club": "Lose #76 - Rose Bowl",
+      "registry_match": "Lose #76 - Rose Bowl Red",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #77 - PV Black (A)",
@@ -6370,11 +7346,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #77 - PV Black (A)",
       "stage_4_seed": "Lose #77 - PV Black (A)",
       "stage_5_parenthetical": "Lose #77 - PV Black",
+      "stage_6_case": "Lose #77 - PV Black",
       "final": "Lose #77 - PV Black",
-      "suggested_club": "Lose #77 - PV",
+      "registry_match": "Lose #77 - PV Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #78 - Gate 14U",
@@ -6383,11 +7361,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #78 - Gate 14U",
       "stage_4_seed": "Lose #78 - Gate 14U",
       "stage_5_parenthetical": "Lose #78 - Gate 14U",
+      "stage_6_case": "Lose #78 - Gate 14U",
       "final": "Lose #78 - Gate 14U",
-      "suggested_club": "Lose #78 - Gate 14U",
+      "registry_match": "Lose #78 - Gate 14U",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #79 - ORWP 14U Black (A)",
@@ -6396,11 +7376,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #79 - ORWP 14U Black (A)",
       "stage_4_seed": "Lose #79 - ORWP 14U Black (A)",
       "stage_5_parenthetical": "Lose #79 - ORWP 14U Black",
+      "stage_6_case": "Lose #79 - ORWP 14U Black",
       "final": "Lose #79 - ORWP 14U Black",
-      "suggested_club": "Lose #79 - ORWP 14U",
+      "registry_match": "Lose #79 - ORWP 14U Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #85 - TSM",
@@ -6409,11 +7391,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #85 - TSM",
       "stage_4_seed": "Lose #85 - TSM",
       "stage_5_parenthetical": "Lose #85 - TSM",
+      "stage_6_case": "Lose #85 - TSM",
       "final": "Lose #85 - TSM",
-      "suggested_club": "Lose #85 - TSM",
+      "registry_match": "Lose #85 - TSM",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #86 - NGEN",
@@ -6422,11 +7406,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #86 - NGEN",
       "stage_4_seed": "Lose #86 - NGEN",
       "stage_5_parenthetical": "Lose #86 - NGEN",
+      "stage_6_case": "Lose #86 - NGEN",
       "final": "Lose #86 - NGEN",
-      "suggested_club": "Lose #86 - NGEN",
+      "registry_match": "Lose #86 - NGEN",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #87 - Rose Bowl Black (B)",
@@ -6435,11 +7421,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #87 - Rose Bowl Black (B)",
       "stage_4_seed": "Lose #87 - Rose Bowl Black (B)",
       "stage_5_parenthetical": "Lose #87 - Rose Bowl Black",
+      "stage_6_case": "Lose #87 - Rose Bowl Black",
       "final": "Lose #87 - Rose Bowl Black",
-      "suggested_club": "Lose #87 - Rose Bowl",
+      "registry_match": "Lose #87 - Rose Bowl Black",
       "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #88 - Foothill Black(B)",
@@ -6447,12 +7435,14 @@ window.CPI_API = {
       "stage_2_placement": "Lose #88 - Foothill Black(B)",
       "stage_3_bracket": "Lose #88 - Foothill Black(B)",
       "stage_4_seed": "Lose #88 - Foothill Black(B)",
-      "stage_5_parenthetical": "Lose #88 - Foothill Black(B)",
-      "final": "Lose #88 - Foothill Black(B)",
-      "suggested_club": "Lose #88 - Foothill Black(B)",
-      "status": "unchanged",
+      "stage_5_parenthetical": "Lose #88 - Foothill Black",
+      "stage_6_case": "Lose #88 - Foothill Black",
+      "final": "Lose #88 - Foothill Black",
+      "registry_match": "Lose #88 - Foothill Black",
+      "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #89 - CIU Coast",
@@ -6461,11 +7451,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #89 - CIU Coast",
       "stage_4_seed": "Lose #89 - CIU Coast",
       "stage_5_parenthetical": "Lose #89 - CIU Coast",
+      "stage_6_case": "Lose #89 - CIU Coast",
       "final": "Lose #89 - CIU Coast",
-      "suggested_club": "Lose #89 - CIU Coast",
+      "registry_match": "Lose #89 - CIU Coast",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #9 - Foothill Black(B)",
@@ -6473,12 +7465,14 @@ window.CPI_API = {
       "stage_2_placement": "Lose #9 - Foothill Black(B)",
       "stage_3_bracket": "Lose #9 - Foothill Black(B)",
       "stage_4_seed": "Lose #9 - Foothill Black(B)",
-      "stage_5_parenthetical": "Lose #9 - Foothill Black(B)",
-      "final": "Lose #9 - Foothill Black(B)",
-      "suggested_club": "Lose #9 - Foothill Black(B)",
-      "status": "unchanged",
+      "stage_5_parenthetical": "Lose #9 - Foothill Black",
+      "stage_6_case": "Lose #9 - Foothill Black",
+      "final": "Lose #9 - Foothill Black",
+      "registry_match": "Lose #9 - Foothill Black",
+      "status": "changed",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "Lose #90 - Loyola",
@@ -6487,11 +7481,13 @@ window.CPI_API = {
       "stage_3_bracket": "Lose #90 - Loyola",
       "stage_4_seed": "Lose #90 - Loyola",
       "stage_5_parenthetical": "Lose #90 - Loyola",
+      "stage_6_case": "Lose #90 - Loyola",
       "final": "Lose #90 - Loyola",
-      "suggested_club": "Lose #90 - Loyola",
+      "registry_match": "Lose #90 - Loyola",
       "status": "unchanged",
       "event": "JO Qualifier \u2014 SoCal",
-      "appearance_count": 1
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     },
     {
       "raw": "M1 - La Jolla United A",
@@ -6500,11 +7496,13 @@ window.CPI_API = {
       "stage_3_bracket": "M1 - La Jolla United A",
       "stage_4_seed": "La Jolla United A",
       "stage_5_parenthetical": "La Jolla United A",
+      "stage_6_case": "La Jolla United A",
       "final": "La Jolla United A",
-      "suggested_club": "La Jolla United",
+      "registry_match": "La Jolla United A",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
     },
     {
       "raw": "M1 - San Clem Red",
@@ -6513,11 +7511,763 @@ window.CPI_API = {
       "stage_3_bracket": "M1 - San Clem Red",
       "stage_4_seed": "San Clem Red",
       "stage_5_parenthetical": "San Clem Red",
+      "stage_6_case": "San Clem Red",
       "final": "San Clem Red",
-      "suggested_club": "San Clemente",
+      "registry_match": "San Clemente Red",
       "status": "changed",
       "event": "San Diego County Cup",
-      "appearance_count": 2
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M1(1stA)(1)-NORCAL BLACK",
+      "stage_1_game_dependency": "M1(1stA)(1)-NORCAL BLACK",
+      "stage_2_placement": "M1(1stA)(1)-NORCAL BLACK",
+      "stage_3_bracket": "M1(1stA)(1)-NORCAL BLACK",
+      "stage_4_seed": "M1(1stA)(1)-NORCAL BLACK",
+      "stage_5_parenthetical": "M1(1stA)(1)-NORCAL BLACK",
+      "stage_6_case": "M1(1stA)(1)-NORCAL BLACK",
+      "final": "M1(1stA)(1)-NORCAL BLACK",
+      "registry_match": "M1(1stA)(1)-NORCAL BLACK",
+      "status": "unchanged",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M1(2ndE)-CC UNITED BLUE",
+      "stage_1_game_dependency": "M1(2ndE)-CC UNITED BLUE",
+      "stage_2_placement": "M1(2ndE)-CC UNITED BLUE",
+      "stage_3_bracket": "CC UNITED BLUE",
+      "stage_4_seed": "CC UNITED BLUE",
+      "stage_5_parenthetical": "CC UNITED BLUE",
+      "stage_6_case": "CC United Blue",
+      "final": "CC United Blue",
+      "registry_match": "CC United Blue",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M1(3rdA)-SAN CLEMENTE BLACK",
+      "stage_1_game_dependency": "M1(3rdA)-SAN CLEMENTE BLACK",
+      "stage_2_placement": "M1(3rdA)-SAN CLEMENTE BLACK",
+      "stage_3_bracket": "SAN CLEMENTE BLACK",
+      "stage_4_seed": "SAN CLEMENTE BLACK",
+      "stage_5_parenthetical": "SAN CLEMENTE BLACK",
+      "stage_6_case": "San Clemente Black",
+      "final": "San Clemente Black",
+      "registry_match": "San Clemente Black",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M2 - Greenwich",
+      "stage_1_game_dependency": "M2 - Greenwich",
+      "stage_2_placement": "M2 - Greenwich",
+      "stage_3_bracket": "M2 - Greenwich",
+      "stage_4_seed": "Greenwich",
+      "stage_5_parenthetical": "Greenwich",
+      "stage_6_case": "Greenwich",
+      "final": "Greenwich",
+      "registry_match": "Greenwich",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M2 - Patriot Navy",
+      "stage_1_game_dependency": "M2 - Patriot Navy",
+      "stage_2_placement": "M2 - Patriot Navy",
+      "stage_3_bracket": "M2 - Patriot Navy",
+      "stage_4_seed": "Patriot Navy",
+      "stage_5_parenthetical": "Patriot Navy",
+      "stage_6_case": "Patriot Navy",
+      "final": "Patriot Navy",
+      "registry_match": "Patriot Navy",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "stage_1_game_dependency": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "stage_2_placement": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "stage_3_bracket": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "stage_4_seed": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "stage_5_parenthetical": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "stage_6_case": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "final": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "registry_match": "M2(1stB)(2)-DIABLO ALLIANCE A",
+      "status": "unchanged",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M2(2ndF)-CT PREMIER",
+      "stage_1_game_dependency": "M2(2ndF)-CT PREMIER",
+      "stage_2_placement": "M2(2ndF)-CT PREMIER",
+      "stage_3_bracket": "CT PREMIER",
+      "stage_4_seed": "CT PREMIER",
+      "stage_5_parenthetical": "CT PREMIER",
+      "stage_6_case": "Ct Premier",
+      "final": "Ct Premier",
+      "registry_match": "Ct Premier",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M2(3rdB)-TROJAN GOLD",
+      "stage_1_game_dependency": "M2(3rdB)-TROJAN GOLD",
+      "stage_2_placement": "M2(3rdB)-TROJAN GOLD",
+      "stage_3_bracket": "TROJAN GOLD",
+      "stage_4_seed": "TROJAN GOLD",
+      "stage_5_parenthetical": "TROJAN GOLD",
+      "stage_6_case": "Trojan Gold",
+      "final": "Trojan Gold",
+      "registry_match": "Trojan Gold",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M3 - 908",
+      "stage_1_game_dependency": "M3 - 908",
+      "stage_2_placement": "M3 - 908",
+      "stage_3_bracket": "M3 - 908",
+      "stage_4_seed": "908",
+      "stage_5_parenthetical": "908",
+      "stage_6_case": "908",
+      "final": "908",
+      "registry_match": "908",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M3 - Santa Barbara",
+      "stage_1_game_dependency": "M3 - Santa Barbara",
+      "stage_2_placement": "M3 - Santa Barbara",
+      "stage_3_bracket": "M3 - Santa Barbara",
+      "stage_4_seed": "Santa Barbara",
+      "stage_5_parenthetical": "Santa Barbara",
+      "stage_6_case": "Santa Barbara",
+      "final": "Santa Barbara",
+      "registry_match": "Santa Barbara",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M3(1stC)(3)-LAMORINDA A",
+      "stage_1_game_dependency": "M3(1stC)(3)-LAMORINDA A",
+      "stage_2_placement": "M3(1stC)(3)-LAMORINDA A",
+      "stage_3_bracket": "M3(1stC)(3)-LAMORINDA A",
+      "stage_4_seed": "M3(1stC)(3)-LAMORINDA A",
+      "stage_5_parenthetical": "M3(1stC)(3)-LAMORINDA A",
+      "stage_6_case": "M3(1stC)(3)-LAMORINDA A",
+      "final": "M3(1stC)(3)-LAMORINDA A",
+      "registry_match": "M3(1stC)(3)-LAMORINDA A",
+      "status": "unchanged",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M3(2ndG)-LAMORINDA B",
+      "stage_1_game_dependency": "M3(2ndG)-LAMORINDA B",
+      "stage_2_placement": "M3(2ndG)-LAMORINDA B",
+      "stage_3_bracket": "LAMORINDA B",
+      "stage_4_seed": "LAMORINDA B",
+      "stage_5_parenthetical": "LAMORINDA B",
+      "stage_6_case": "Lamorinda B",
+      "final": "Lamorinda B",
+      "registry_match": "Lamorinda B",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M3(3rdC)-TRITON GOLD",
+      "stage_1_game_dependency": "M3(3rdC)-TRITON GOLD",
+      "stage_2_placement": "M3(3rdC)-TRITON GOLD",
+      "stage_3_bracket": "TRITON GOLD",
+      "stage_4_seed": "TRITON GOLD",
+      "stage_5_parenthetical": "TRITON GOLD",
+      "stage_6_case": "Triton Gold",
+      "final": "Triton Gold",
+      "registry_match": "Triton Gold",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M4(1stD)(4)-CC UNITED BLACK",
+      "stage_1_game_dependency": "M4(1stD)(4)-CC UNITED BLACK",
+      "stage_2_placement": "M4(1stD)(4)-CC UNITED BLACK",
+      "stage_3_bracket": "M4(1stD)(4)-CC UNITED BLACK",
+      "stage_4_seed": "M4(1stD)(4)-CC UNITED BLACK",
+      "stage_5_parenthetical": "M4(1stD)(4)-CC UNITED BLACK",
+      "stage_6_case": "M4(1stD)(4)-CC UNITED BLACK",
+      "final": "M4(1stD)(4)-CC UNITED BLACK",
+      "registry_match": "M4(1stD)(4)-CC UNITED BLACK",
+      "status": "unchanged",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M4(2ndH)-SHAQ WHITE",
+      "stage_1_game_dependency": "M4(2ndH)-SHAQ WHITE",
+      "stage_2_placement": "M4(2ndH)-SHAQ WHITE",
+      "stage_3_bracket": "SHAQ WHITE",
+      "stage_4_seed": "SHAQ WHITE",
+      "stage_5_parenthetical": "SHAQ WHITE",
+      "stage_6_case": "Shaq White",
+      "final": "Shaq White",
+      "registry_match": "Shaq White",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M5(1stE)(5)-STANFORD RED",
+      "stage_1_game_dependency": "M5(1stE)(5)-STANFORD RED",
+      "stage_2_placement": "M5(1stE)(5)-STANFORD RED",
+      "stage_3_bracket": "M5(1stE)(5)-STANFORD RED",
+      "stage_4_seed": "M5(1stE)(5)-STANFORD RED",
+      "stage_5_parenthetical": "M5(1stE)(5)-STANFORD RED",
+      "stage_6_case": "M5(1stE)(5)-STANFORD RED",
+      "final": "M5(1stE)(5)-STANFORD RED",
+      "registry_match": "M5(1stE)(5)-STANFORD RED",
+      "status": "unchanged",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M6(1stF)(6)-SHAQ",
+      "stage_1_game_dependency": "M6(1stF)(6)-SHAQ",
+      "stage_2_placement": "M6(1stF)(6)-SHAQ",
+      "stage_3_bracket": "M6(1stF)(6)-SHAQ",
+      "stage_4_seed": "M6(1stF)(6)-SHAQ",
+      "stage_5_parenthetical": "M6(1stF)(6)-SHAQ",
+      "stage_6_case": "M6(1stF)(6)-SHAQ",
+      "final": "M6(1stF)(6)-SHAQ",
+      "registry_match": "M6(1stF)(6)-SHAQ",
+      "status": "unchanged",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M7(1stG)(7)-680 RED",
+      "stage_1_game_dependency": "M7(1stG)(7)-680 RED",
+      "stage_2_placement": "M7(1stG)(7)-680 RED",
+      "stage_3_bracket": "M7(1stG)(7)-680 RED",
+      "stage_4_seed": "M7(1stG)(7)-680 RED",
+      "stage_5_parenthetical": "M7(1stG)(7)-680 RED",
+      "stage_6_case": "M7(1stG)(7)-680 RED",
+      "final": "M7(1stG)(7)-680 RED",
+      "registry_match": "M7(1stG)(7)-680 RED",
+      "status": "unchanged",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "M8(1stH)(8)-CC UNITED BLUE",
+      "stage_1_game_dependency": "M8(1stH)(8)-CC UNITED BLUE",
+      "stage_2_placement": "M8(1stH)(8)-CC UNITED BLUE",
+      "stage_3_bracket": "M8(1stH)(8)-CC UNITED BLUE",
+      "stage_4_seed": "M8(1stH)(8)-CC UNITED BLUE",
+      "stage_5_parenthetical": "M8(1stH)(8)-CC UNITED BLUE",
+      "stage_6_case": "M8(1stH)(8)-CC UNITED BLUE",
+      "final": "M8(1stH)(8)-CC UNITED BLUE",
+      "registry_match": "M8(1stH)(8)-CC UNITED BLUE",
+      "status": "unchanged",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N1 - Mission",
+      "stage_1_game_dependency": "N1 - Mission",
+      "stage_2_placement": "N1 - Mission",
+      "stage_3_bracket": "N1 - Mission",
+      "stage_4_seed": "Mission",
+      "stage_5_parenthetical": "Mission",
+      "stage_6_case": "Mission",
+      "final": "Mission",
+      "registry_match": "Mission",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N1(3rdA)-HONOLULU BLUE",
+      "stage_1_game_dependency": "N1(3rdA)-HONOLULU BLUE",
+      "stage_2_placement": "N1(3rdA)-HONOLULU BLUE",
+      "stage_3_bracket": "HONOLULU BLUE",
+      "stage_4_seed": "HONOLULU BLUE",
+      "stage_5_parenthetical": "HONOLULU BLUE",
+      "stage_6_case": "Honolulu Blue",
+      "final": "Honolulu Blue",
+      "registry_match": "Honolulu Blue",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N1(3rdD)-AMERICAN RIVER GOLD",
+      "stage_1_game_dependency": "N1(3rdD)-AMERICAN RIVER GOLD",
+      "stage_2_placement": "N1(3rdD)-AMERICAN RIVER GOLD",
+      "stage_3_bracket": "AMERICAN RIVER GOLD",
+      "stage_4_seed": "AMERICAN RIVER GOLD",
+      "stage_5_parenthetical": "AMERICAN RIVER GOLD",
+      "stage_6_case": "American River Gold",
+      "final": "American River Gold",
+      "registry_match": "American River Gold",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N1(W#J5/K5)(16)-DIABLO ALLIANCE B",
+      "stage_1_game_dependency": "N1(W#J5/K5)(16)-DIABLO ALLIANCE B",
+      "stage_2_placement": "N1(W#J5/K5)(16)-DIABLO ALLIANCE B",
+      "stage_3_bracket": "N1(W#J5/K5)(16)-DIABLO ALLIANCE B",
+      "stage_4_seed": "N1(W#J5/K5)(16)-DIABLO ALLIANCE B",
+      "stage_5_parenthetical": "N1(W#J5/K5)(16)-DIABLO ALLIANCE B",
+      "stage_6_case": "N1(w#j5/k5)(16)-diablo Alliance B",
+      "final": "N1(w#j5/k5)(16)-diablo Alliance B",
+      "registry_match": "N1(w#j5/k5)(16)-diablo Alliance B",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N2 - Greenwich",
+      "stage_1_game_dependency": "N2 - Greenwich",
+      "stage_2_placement": "N2 - Greenwich",
+      "stage_3_bracket": "N2 - Greenwich",
+      "stage_4_seed": "Greenwich",
+      "stage_5_parenthetical": "Greenwich",
+      "stage_6_case": "Greenwich",
+      "final": "Greenwich",
+      "registry_match": "Greenwich",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N2(3rdE)-CC UNITED WHITE",
+      "stage_1_game_dependency": "N2(3rdE)-CC UNITED WHITE",
+      "stage_2_placement": "N2(3rdE)-CC UNITED WHITE",
+      "stage_3_bracket": "CC UNITED WHITE",
+      "stage_4_seed": "CC UNITED WHITE",
+      "stage_5_parenthetical": "CC UNITED WHITE",
+      "stage_6_case": "CC United White",
+      "final": "CC United White",
+      "registry_match": "CC United White",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N2(3rdG)-SD ECA",
+      "stage_1_game_dependency": "N2(3rdG)-SD ECA",
+      "stage_2_placement": "N2(3rdG)-SD ECA",
+      "stage_3_bracket": "SD ECA",
+      "stage_4_seed": "SD ECA",
+      "stage_5_parenthetical": "SD ECA",
+      "stage_6_case": "SD Eca",
+      "final": "SD Eca",
+      "registry_match": "SD Eca",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N2(W#J6/K6)(15)-ALAMEDA",
+      "stage_1_game_dependency": "N2(W#J6/K6)(15)-ALAMEDA",
+      "stage_2_placement": "N2(W#J6/K6)(15)-ALAMEDA",
+      "stage_3_bracket": "N2(W#J6/K6)(15)-ALAMEDA",
+      "stage_4_seed": "N2(W#J6/K6)(15)-ALAMEDA",
+      "stage_5_parenthetical": "N2(W#J6/K6)(15)-ALAMEDA",
+      "stage_6_case": "N2(w#j6/k6)(15)-alameda",
+      "final": "N2(w#j6/k6)(15)-alameda",
+      "registry_match": "N2(w#j6/k6)(15)-alameda",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N3 - Commerce",
+      "stage_1_game_dependency": "N3 - Commerce",
+      "stage_2_placement": "N3 - Commerce",
+      "stage_3_bracket": "N3 - Commerce",
+      "stage_4_seed": "Commerce",
+      "stage_5_parenthetical": "Commerce",
+      "stage_6_case": "Commerce",
+      "final": "Commerce",
+      "registry_match": "Commerce",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N3(3rdF)-SET",
+      "stage_1_game_dependency": "N3(3rdF)-SET",
+      "stage_2_placement": "N3(3rdF)-SET",
+      "stage_3_bracket": "SET",
+      "stage_4_seed": "SET",
+      "stage_5_parenthetical": "SET",
+      "stage_6_case": "SET",
+      "final": "SET",
+      "registry_match": "SET",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N3(3rdH)-PATRIOT RED",
+      "stage_1_game_dependency": "N3(3rdH)-PATRIOT RED",
+      "stage_2_placement": "N3(3rdH)-PATRIOT RED",
+      "stage_3_bracket": "PATRIOT RED",
+      "stage_4_seed": "PATRIOT RED",
+      "stage_5_parenthetical": "PATRIOT RED",
+      "stage_6_case": "Patriot Red",
+      "final": "Patriot Red",
+      "registry_match": "Patriot Red",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N3(W#J3/K3)(14)-SAN JOSE FOUNDATION BLACK",
+      "stage_1_game_dependency": "N3(W#J3/K3)(14)-SAN JOSE FOUNDATION BLACK",
+      "stage_2_placement": "N3(W#J3/K3)(14)-SAN JOSE FOUNDATION BLACK",
+      "stage_3_bracket": "N3(W#J3/K3)(14)-SAN JOSE FOUNDATION BLACK",
+      "stage_4_seed": "N3(W#J3/K3)(14)-SAN JOSE FOUNDATION BLACK",
+      "stage_5_parenthetical": "N3(W#J3/K3)(14)-SAN JOSE FOUNDATION BLACK",
+      "stage_6_case": "N3(w#j3/k3)(14)-san Jose Foundation Black",
+      "final": "N3(w#j3/k3)(14)-san Jose Foundation Black",
+      "registry_match": "N3(w#j3/k3)(14)-san Jose Foundation Black",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N4(W#J4/K4)(13)-LAMORINDA B",
+      "stage_1_game_dependency": "N4(W#J4/K4)(13)-LAMORINDA B",
+      "stage_2_placement": "N4(W#J4/K4)(13)-LAMORINDA B",
+      "stage_3_bracket": "N4(W#J4/K4)(13)-LAMORINDA B",
+      "stage_4_seed": "N4(W#J4/K4)(13)-LAMORINDA B",
+      "stage_5_parenthetical": "N4(W#J4/K4)(13)-LAMORINDA B",
+      "stage_6_case": "N4(w#j4/k4)(13)-lamorinda B",
+      "final": "N4(w#j4/k4)(13)-lamorinda B",
+      "registry_match": "N4(w#j4/k4)(13)-lamorinda B",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N5(W#J1/K1)(12)-SHARKS",
+      "stage_1_game_dependency": "N5(W#J1/K1)(12)-SHARKS",
+      "stage_2_placement": "N5(W#J1/K1)(12)-SHARKS",
+      "stage_3_bracket": "N5(W#J1/K1)(12)-SHARKS",
+      "stage_4_seed": "N5(W#J1/K1)(12)-SHARKS",
+      "stage_5_parenthetical": "N5(W#J1/K1)(12)-SHARKS",
+      "stage_6_case": "N5(w#j1/k1)(12)-sharks",
+      "final": "N5(w#j1/k1)(12)-sharks",
+      "registry_match": "N5(w#j1/k1)(12)-sharks",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N6(W#J2/K2)(11)-680 BLUE",
+      "stage_1_game_dependency": "N6(W#J2/K2)(11)-680 BLUE",
+      "stage_2_placement": "N6(W#J2/K2)(11)-680 BLUE",
+      "stage_3_bracket": "N6(W#J2/K2)(11)-680 BLUE",
+      "stage_4_seed": "N6(W#J2/K2)(11)-680 BLUE",
+      "stage_5_parenthetical": "N6(W#J2/K2)(11)-680 BLUE",
+      "stage_6_case": "N6(w#j2/k2)(11)-680 Blue",
+      "final": "N6(w#j2/k2)(11)-680 Blue",
+      "registry_match": "N6(w#j2/k2)(11)-680 Blue",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N7(W#J7/K7)(10)-SAN JOSE EXPRESS BLUE",
+      "stage_1_game_dependency": "N7(W#J7/K7)(10)-SAN JOSE EXPRESS BLUE",
+      "stage_2_placement": "N7(W#J7/K7)(10)-SAN JOSE EXPRESS BLUE",
+      "stage_3_bracket": "N7(W#J7/K7)(10)-SAN JOSE EXPRESS BLUE",
+      "stage_4_seed": "N7(W#J7/K7)(10)-SAN JOSE EXPRESS BLUE",
+      "stage_5_parenthetical": "N7(W#J7/K7)(10)-SAN JOSE EXPRESS BLUE",
+      "stage_6_case": "N7(w#j7/k7)(10)-san Jose Express Blue",
+      "final": "N7(w#j7/k7)(10)-san Jose Express Blue",
+      "registry_match": "N7(w#j7/k7)(10)-san Jose Express Blue",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "N8(W#J8/K8)(9)-STANFORD BLACK",
+      "stage_1_game_dependency": "N8(W#J8/K8)(9)-STANFORD BLACK",
+      "stage_2_placement": "N8(W#J8/K8)(9)-STANFORD BLACK",
+      "stage_3_bracket": "N8(W#J8/K8)(9)-STANFORD BLACK",
+      "stage_4_seed": "N8(W#J8/K8)(9)-STANFORD BLACK",
+      "stage_5_parenthetical": "N8(W#J8/K8)(9)-STANFORD BLACK",
+      "stage_6_case": "N8(w#j8/k8)(9)-stanford Black",
+      "final": "N8(w#j8/k8)(9)-stanford Black",
+      "registry_match": "N8(w#j8/k8)(9)-stanford Black",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "NN1 - CHAWP",
+      "stage_1_game_dependency": "NN1 - CHAWP",
+      "stage_2_placement": "NN1 - CHAWP",
+      "stage_3_bracket": "NN1 - CHAWP",
+      "stage_4_seed": "NN1 - CHAWP",
+      "stage_5_parenthetical": "NN1 - CHAWP",
+      "stage_6_case": "Nn1 - Chawp",
+      "final": "Nn1 - Chawp",
+      "registry_match": "Nn1 - Chawp",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "O1 - Newport",
+      "stage_1_game_dependency": "O1 - Newport",
+      "stage_2_placement": "O1 - Newport",
+      "stage_3_bracket": "O1 - Newport",
+      "stage_4_seed": "Newport",
+      "stage_5_parenthetical": "Newport",
+      "stage_6_case": "Newport",
+      "final": "Newport",
+      "registry_match": "Newport",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "O1(3rdE)-FOOTHILL RED",
+      "stage_1_game_dependency": "O1(3rdE)-FOOTHILL RED",
+      "stage_2_placement": "O1(3rdE)-FOOTHILL RED",
+      "stage_3_bracket": "FOOTHILL RED",
+      "stage_4_seed": "FOOTHILL RED",
+      "stage_5_parenthetical": "FOOTHILL RED",
+      "stage_6_case": "Foothill Red",
+      "final": "Foothill Red",
+      "registry_match": "Foothill Red",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "O2 - Norcal",
+      "stage_1_game_dependency": "O2 - Norcal",
+      "stage_2_placement": "O2 - Norcal",
+      "stage_3_bracket": "O2 - Norcal",
+      "stage_4_seed": "Norcal",
+      "stage_5_parenthetical": "Norcal",
+      "stage_6_case": "Norcal",
+      "final": "Norcal",
+      "registry_match": "Norcal",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "O2(3rdC)-STANFORD 13",
+      "stage_1_game_dependency": "O2(3rdC)-STANFORD 13",
+      "stage_2_placement": "O2(3rdC)-STANFORD 13",
+      "stage_3_bracket": "STANFORD 13",
+      "stage_4_seed": "STANFORD 13",
+      "stage_5_parenthetical": "STANFORD 13",
+      "stage_6_case": "Stanford 13",
+      "final": "Stanford 13",
+      "registry_match": "Stanford 13",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "O3 - SD Shores Black",
+      "stage_1_game_dependency": "O3 - SD Shores Black",
+      "stage_2_placement": "O3 - SD Shores Black",
+      "stage_3_bracket": "O3 - SD Shores Black",
+      "stage_4_seed": "SD Shores Black",
+      "stage_5_parenthetical": "SD Shores Black",
+      "stage_6_case": "SD Shores Black",
+      "final": "SD Shores Black",
+      "registry_match": "San Diego Shores Black",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "O3(3rdD)-AMERICAN RIVER BLUE",
+      "stage_1_game_dependency": "O3(3rdD)-AMERICAN RIVER BLUE",
+      "stage_2_placement": "O3(3rdD)-AMERICAN RIVER BLUE",
+      "stage_3_bracket": "AMERICAN RIVER BLUE",
+      "stage_4_seed": "AMERICAN RIVER BLUE",
+      "stage_5_parenthetical": "AMERICAN RIVER BLUE",
+      "stage_6_case": "American River Blue",
+      "final": "American River Blue",
+      "registry_match": "American River Blue",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "ORANGE COUNTY WPC BLUE",
+      "stage_1_game_dependency": "ORANGE COUNTY WPC BLUE",
+      "stage_2_placement": "ORANGE COUNTY WPC BLUE",
+      "stage_3_bracket": "ORANGE COUNTY WPC BLUE",
+      "stage_4_seed": "ORANGE COUNTY WPC BLUE",
+      "stage_5_parenthetical": "ORANGE COUNTY WPC BLUE",
+      "stage_6_case": "Orange County WPC Blue",
+      "final": "Orange County WPC Blue",
+      "registry_match": "Orange County WPC Blue",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "P1 - SD Dons Black",
+      "stage_1_game_dependency": "P1 - SD Dons Black",
+      "stage_2_placement": "P1 - SD Dons Black",
+      "stage_3_bracket": "P1 - SD Dons Black",
+      "stage_4_seed": "SD Dons Black",
+      "stage_5_parenthetical": "SD Dons Black",
+      "stage_6_case": "SD Dons Black",
+      "final": "SD Dons Black",
+      "registry_match": "SD Dons Black",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "P1(3rdF)-BOA",
+      "stage_1_game_dependency": "P1(3rdF)-BOA",
+      "stage_2_placement": "P1(3rdF)-BOA",
+      "stage_3_bracket": "BOA",
+      "stage_4_seed": "BOA",
+      "stage_5_parenthetical": "BOA",
+      "stage_6_case": "BOA",
+      "final": "BOA",
+      "registry_match": "BOA",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "P1(L#J6/K6)(17)-LAMORINDA C",
+      "stage_1_game_dependency": "P1(L#J6/K6)(17)-LAMORINDA C",
+      "stage_2_placement": "P1(L#J6/K6)(17)-LAMORINDA C",
+      "stage_3_bracket": "P1(L#J6/K6)(17)-LAMORINDA C",
+      "stage_4_seed": "P1(L#J6/K6)(17)-LAMORINDA C",
+      "stage_5_parenthetical": "P1(L#J6/K6)(17)-LAMORINDA C",
+      "stage_6_case": "P1(l#j6/k6)(17)-lamorinda C",
+      "final": "P1(l#j6/k6)(17)-lamorinda C",
+      "registry_match": "P1(l#j6/k6)(17)-lamorinda C",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "P2 - LA Premier",
+      "stage_1_game_dependency": "P2 - LA Premier",
+      "stage_2_placement": "P2 - LA Premier",
+      "stage_3_bracket": "P2 - LA Premier",
+      "stage_4_seed": "LA Premier",
+      "stage_5_parenthetical": "LA Premier",
+      "stage_6_case": "LA Premier",
+      "final": "LA Premier",
+      "registry_match": "LA Premier",
+      "status": "changed",
+      "event": "San Diego County Cup",
+      "appearance_count": 2,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "P2(3rdB)-LA JOLLA UNITED GOLD",
+      "stage_1_game_dependency": "P2(3rdB)-LA JOLLA UNITED GOLD",
+      "stage_2_placement": "P2(3rdB)-LA JOLLA UNITED GOLD",
+      "stage_3_bracket": "LA JOLLA UNITED GOLD",
+      "stage_4_seed": "LA JOLLA UNITED GOLD",
+      "stage_5_parenthetical": "LA JOLLA UNITED GOLD",
+      "stage_6_case": "LA Jolla United Gold",
+      "final": "LA Jolla United Gold",
+      "registry_match": "LA Jolla United Gold",
+      "status": "changed",
+      "event": "KAP7 International",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
+    },
+    {
+      "raw": "P2(L#J5/K5)(18)-NORCAL TEAL",
+      "stage_1_game_dependency": "P2(L#J5/K5)(18)-NORCAL TEAL",
+      "stage_2_placement": "P2(L#J5/K5)(18)-NORCAL TEAL",
+      "stage_3_bracket": "P2(L#J5/K5)(18)-NORCAL TEAL",
+      "stage_4_seed": "P2(L#J5/K5)(18)-NORCAL TEAL",
+      "stage_5_parenthetical": "P2(L#J5/K5)(18)-NORCAL TEAL",
+      "stage_6_case": "P2(l#j5/k5)(18)-norcal Teal",
+      "final": "P2(l#j5/k5)(18)-norcal Teal",
+      "registry_match": "P2(l#j5/k5)(18)-norcal Teal",
+      "status": "changed",
+      "event": "JO Qualifier \u2014 NorCal",
+      "appearance_count": 1,
+      "needs_registry_review": "no"
     }
   ],
   "rankingsCurrent": []
