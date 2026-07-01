@@ -1572,3 +1572,94 @@ body.team-experience-body .site-header {
     height: 220px !important;
   }
 }
+
+
+/* Mobile hero readability fix — preserves desktop layout */
+@media(max-width: 750px) {
+  .team-pro-hero {
+    background: #fff !important;
+  }
+
+  .team-pro-hero::before {
+    inset: auto 0 0 0 !important;
+    height: 48%;
+    background:
+      linear-gradient(180deg, transparent 0%, rgba(7, 27, 55, .08) 20%, var(--club-primary, #072b57) 100%) !important;
+    opacity: 1 !important;
+  }
+
+  .team-pro-hero::after {
+    opacity: .55 !important;
+    transform: translateX(18%) translateY(8%);
+    z-index: 0;
+  }
+
+  .team-pro-inner,
+  .team-pro-hero-grid,
+  .team-pro-metrics,
+  .team-pro-metric {
+    position: relative;
+    z-index: 2;
+  }
+
+  .team-pro-hero-grid {
+    gap: 22px !important;
+  }
+
+  .team-pro-title {
+    font-size: clamp(48px, 15vw, 72px) !important;
+    line-height: .92 !important;
+    max-width: 100%;
+  }
+
+  .team-pro-age {
+    font-size: 34px;
+  }
+
+  .team-pro-meta {
+    gap: 18px;
+  }
+
+  .team-pro-update {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .team-pro-metrics {
+    gap: 14px;
+    margin-top: 18px;
+  }
+
+  .team-pro-metric {
+    min-height: auto !important;
+    background:
+      radial-gradient(circle at 95% 10%, rgba(255,255,255,.12), transparent 36%),
+      linear-gradient(135deg, var(--club-primary, #072b57), #061832) !important;
+    border: 1px solid rgba(255,255,255,.18) !important;
+    box-shadow: 0 16px 34px rgba(6,24,51,.22);
+    color: #fff !important;
+  }
+
+  .team-pro-metric-main,
+  .team-pro-metric-label,
+  .team-pro-metric-sub {
+    color: #fff !important;
+  }
+
+  .team-pro-move.down {
+    color: #ff4d4d !important;
+  }
+
+  .team-pro-move.up {
+    color: #70d96e !important;
+  }
+
+  .team-pro-rating-bar {
+    background: rgba(255,255,255,.22);
+  }
+
+  .team-pro-tabs-inner {
+    gap: 24px;
+  }
+}
