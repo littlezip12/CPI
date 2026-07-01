@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPI Engine Test</title>
+  <link rel="stylesheet" href="css/engine-test.css" />
+</head>
+<body>
+  <header class="engine-header">
+    <div>
+      <div class="eyebrow">California Polo Index</div>
+      <h1>Engine Console</h1>
+      <p>Integration test page powered by the CPI Engine API bundle.</p>
+    </div>
+    <a class="home-link" href="index.html">Back to CPI</a>
+  </header>
+
+  <main class="engine-shell">
+    <section class="status-card" id="connectionStatus">
+      <div class="status-dot pending"></div>
+      <div>
+        <h2>Checking engine connection…</h2>
+        <p>Loading <code>data/cpi_api_bundle.js</code></p>
+      </div>
+    </section>
+
+    <section class="metric-grid" id="metricGrid"></section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>Current Ranking Snapshot</h2>
+        <span id="snapshotLabel">—</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>Record</th>
+              <th>CPI</th>
+              <th>Power</th>
+            </tr>
+          </thead>
+          <tbody id="rankingTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="two-column">
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Events</h2>
+          <span id="eventCount">—</span>
+        </div>
+        <div id="eventsList" class="list"></div>
+      </article>
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Search Index Preview</h2>
+          <span id="searchCount">—</span>
+        </div>
+        <div id="searchList" class="list"></div>
+      </article>
+    </section>
+
+    <section class="panel debug-panel">
+      <div class="panel-header">
+        <h2>Debug</h2>
+        <span>API health</span>
+      </div>
+      <pre id="debugOutput">Waiting for data…</pre>
+    </section>
+  </main>
+
+  <script src="data/cpi_api_bundle.js"></script>
+  <script src="js/engine-test.js"></script>
+</body>
+</html>
