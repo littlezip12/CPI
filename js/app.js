@@ -169,7 +169,7 @@ function renderTeamPage(){
               <div class="team-pro-event-stat"><strong>${bestWin}</strong><span>Best Win<br>${bestWinScore}</span></div>
               <div class="team-pro-event-stat"><strong>${highestOpponentRank} ${highestOpponent}</strong><span>Highest Opponent<br>CPI ${opponentCpi}</span></div>
             </div>
-            <a class="team-pro-button" href="${tournamentSourceUrl}">View Tournament Details</a>
+            <a class="team-pro-button" href="${tournamentSourceUrl}" target="_blank" rel="noopener noreferrer">View Tournament Details</a>
           </div>
         </article>
 

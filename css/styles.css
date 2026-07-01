@@ -1506,3 +1506,34 @@ body.team-experience-body .site-header {
   max-width: 54px;
   max-height: 54px;
 }
+
+
+/* Sprint B.4.3 — Stable hero logo sizing */
+.team-pro-hero-grid {
+  grid-template-columns: 240px minmax(0, 1fr) 620px !important;
+  gap: 28px !important;
+}
+.team-pro-logo {
+  width: 235px !important;
+  height: 235px !important;
+  transform: none !important;
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+  object-position: center;
+}
+.team-pro-title {
+  max-width: 100%;
+  overflow-wrap: normal;
+}
+@media(max-width:1250px){
+  .team-pro-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media(max-width:750px){
+  .team-pro-logo {
+    width: 210px !important;
+    height: 210px !important;
+  }
+}
