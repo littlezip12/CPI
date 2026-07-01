@@ -16,191 +16,195 @@ function renderTeamPage(){
   const c = clubs.find(x=>x.slug===r.clubSlug);
   document.body.classList.add("team-experience-body");
 
-  const lamoResults = [
-    {res:"L", opponent:"La Jolla United A", score:"22–6", phase:"Group Play", note:"Opening game"},
-    {res:"L", opponent:"Newport Beach A", score:"12–11", phase:"Group Play", note:"One-goal loss"},
-    {res:"W", opponent:"North Irvine A", score:"15–8", phase:"Crossover", note:"Best win"},
-    {res:"L", opponent:"Patriot A", score:"13–12", phase:"Play-in", note:"One-goal loss"},
-    {res:"L", opponent:"OVAC A", score:"16–12", phase:"9th–12th Semifinal", note:"Placement round"},
-    {res:"W", opponent:"CC United A", score:"13–11", phase:"11th Place Game", note:"Closed tournament with a win"}
-  ];
-
-  const genericResults = [
-    {res:"W", opponent:r.bestWinClean !== "—" ? r.bestWinClean.replace(/\s*\(.+\)/,"") : "Top Opponent", score:r.bestWinClean.match(/\((.+)\)/)?.[1] || "—", phase:"Latest Event", note:"Best win"},
-    {res:r.movement < 0 ? "L" : "W", opponent:"Tournament Opponent", score:"—", phase:"Latest Event", note:"Tracked result"}
-  ];
-
   const isLamoA = r.slug === "lamorinda-a";
-  const realResults = isLamoA ? lamoResults : genericResults;
-  const wins = realResults.filter(g=>g.res==="W").length;
-  const losses = realResults.filter(g=>g.res==="L").length;
-  const record = isLamoA ? `${wins}-${losses}` : (r.latestTournamentRecord || `${wins}-${losses}`);
-  const games = wins + losses || Number(r.gamesLatest || 0);
-  const winPct = games ? Math.round((wins/games)*100) : 0;
-  const finalPlacement = isLamoA ? "11th" : "—";
-  const bestWin = isLamoA ? "North Irvine A (15–8)" : r.bestWinClean;
-  const closeLosses = isLamoA ? 2 : "—";
-  const latestGame = realResults[realResults.length - 1];
+  const record = isLamoA ? "2-4" : (r.latestTournamentRecord || "—");
+  const eventRecordDisplay = isLamoA ? "2-4" : record;
+  const finalFinish = isLamoA ? "11th" : "—";
+  const division = isLamoA ? "Gold Division" : "";
+  const bestWin = isLamoA ? "North Irvine A" : (r.bestWinClean || "—");
+  const bestWinScore = isLamoA ? "15-8" : (r.bestWinClean?.match(/\((.+)\)/)?.[1] || "");
+  const highestOpponent = isLamoA ? "La Jolla United A" : "—";
+  const highestOpponentRank = isLamoA ? "#1" : "—";
+  const opponentCpi = isLamoA ? "2161.0" : "—";
+  const avgOpponentCpi = isLamoA ? "1848.0" : "—";
+  const cpiTrend = isLamoA ? "-2" : r.movement;
+
+  const lamoResults = [
+    {res:"L", opponent:"La Jolla United A", score:"6 - 22", date:"May 16, 2025", event:"Super Finals", logo:"assets/logos/la-jolla-united.png"},
+    {res:"L", opponent:"Newport Beach A", score:"11 - 12", date:"May 16, 2025", event:"Super Finals", logo:"assets/logos/newport-beach.png"},
+    {res:"W", opponent:"North Irvine A", score:"15 - 8", date:"May 17, 2025", event:"Super Finals", logo:"assets/logos/north-irvine.png"},
+    {res:"L", opponent:"Patriot A", score:"12 - 13", date:"May 17, 2025", event:"Super Finals", logo:"assets/logos/patriot.png"},
+    {res:"L", opponent:"OVAC A", score:"12 - 16", date:"May 18, 2025", event:"Super Finals", logo:"assets/logos/ovac.png"},
+    {res:"W", opponent:"CC United A", score:"13 - 11", date:"May 18, 2025", event:"Super Finals", logo:"assets/logos/cc-united.png"}
+  ];
+  const fallbackResults = [
+    {res:"W", opponent:bestWin, score:bestWinScore || "—", date:"Latest", event:r.latestTournament, logo:r.logo}
+  ];
+  const results = isLamoA ? lamoResults : fallbackResults;
 
   const nearby = rankings
     .filter(x => Math.abs(x.postRank - r.postRank) <= 3)
     .sort((a,b)=>a.postRank-b.postRank)
-    .slice(0,7);
+    .slice(0,6);
 
   const clubTeams = rankings
     .filter(x => x.clubSlug === r.clubSlug)
-    .sort((a,b)=>a.postRank-b.postRank)
-    .slice(0,6);
+    .sort((a,b)=>a.postRank-b.postRank);
 
-  const chartVals = [r.postCPI-180, r.postCPI-70, r.postCPI+12, r.postCPI-25, r.postCPI].map(v=>Math.max(28, Math.min(175, (v-1350)/4.8)));
-  const chartLabels = ["Pre","G1","G3","G5","Post"];
-
-  const nearbyRows = nearby.map(x=>`<div class="team-x-list-row">
-    <span class="team-x-score">#${x.postRank}</span>
-    <span>${x.team}${x.slug===r.slug?" · YOU":""}</span>
-    <span class="team-x-score">${Number(x.postCPI).toFixed(0)}</span>
-  </div>`).join("");
-
-  const clubTeamRows = clubTeams.map(x=>`<div class="team-x-list-row">
-    <span class="team-x-score">#${x.postRank}</span>
-    <a href="${x.teamPage}">${x.team}</a>
-    <span class="team-x-score">${Number(x.postCPI).toFixed(0)}</span>
-  </div>`).join("");
-
-  const resultRows = realResults.map(g=>`<div class="team-x-result-card">
+  const resultRows = results.map(g=>`<div class="team-pro-result-row">
     <span class="result-pill ${g.res==="W"?"win":"loss"}">${g.res}</span>
-    <span>
-      <span class="team-x-result-opponent">vs. ${g.opponent}</span>
-      <span class="team-x-result-meta">${g.phase} · ${g.note}</span>
-    </span>
-    <span class="team-x-result-score">${g.score}</span>
+    <img class="team-pro-mini-logo" src="${g.logo}" alt="">
+    <span class="team-pro-result-team">vs. ${g.opponent}</span>
+    <span class="team-pro-result-score ${g.res==="L"?"loss":""}">${g.score}</span>
+    <span class="team-pro-result-date">${g.date}<br>${g.event}</span>
   </div>`).join("");
 
-  root.innerHTML = `<div class="team-x-shell" ${heroStyle(r)}>
-    <div class="team-x-crumbs">
-      <a href="index.html">Home</a> › <a href="clubs.html">Clubs</a> › <a href="${r.clubPage}">${c?.displayName || r.club}</a> › ${r.group} › ${r.team}
-    </div>
+  const rankingRows = nearby.map(x=>`<div class="team-pro-rank-row ${x.slug===r.slug?"current":""}">
+    <span class="team-pro-rank-num">${x.postRank}</span>
+    <img class="team-pro-mini-logo" src="${x.logo}" alt="">
+    <span class="team-pro-rank-team">${x.team}</span>
+    <span class="team-pro-rank-cpi">${Number(x.postCPI).toFixed(1)}</span>
+    <span class="team-pro-rank-move">${x.movement>0?`<span class="team-pro-up">▲ ${x.movement}</span>`:x.movement<0?`<span class="team-pro-down">▼ ${Math.abs(x.movement)}</span>`:"—"}</span>
+  </div>`).join("");
 
-    <section class="team-x-hero" ${heroStyle(r)}>
-      <div class="team-x-hero-inner">
-        <div class="team-x-left">
-          <img class="team-x-logo" src="${r.logo}" alt="${r.team} logo">
+  root.innerHTML = `<div class="team-pro-shell" ${heroStyle(r)}>
+    <section class="team-pro-hero" ${heroStyle(r)}>
+      <div class="team-pro-inner">
+        <div class="team-pro-crumbs">
+          <a href="index.html">Home</a> › <a href="clubs.html">Clubs</a> › <a href="${r.clubPage}">${c?.displayName || r.club}</a> › ${r.group} › ${r.team}
+        </div>
+
+        <div class="team-pro-hero-grid">
+          <img class="team-pro-logo" src="${r.logo}" alt="${r.team} logo">
+
           <div>
-            <span class="team-x-kicker">${r.group}</span>
-            <h1 class="team-x-title">${r.team}</h1>
-            <div class="team-x-subtitle">${c?.displayName || r.club}</div>
-            <div class="team-x-meta">
-              <div class="team-x-meta-item"><span class="team-x-meta-label">Club</span><span class="team-x-meta-value">${c?.displayName || r.club}</span></div>
-              <div class="team-x-meta-item"><span class="team-x-meta-label">Region</span><span class="team-x-meta-value">${r.region || c?.region || "California"}</span></div>
-              <div class="team-x-meta-item"><span class="team-x-meta-label">Latest Event</span><span class="team-x-meta-value">${r.latestTournament}</span></div>
-              <div class="team-x-meta-item"><span class="team-x-meta-label">Club Website</span><span class="team-x-meta-value">${r.website ? `<a href="${r.website}">Club Website ↗</a>` : "—"}</span></div>
+            <h1 class="team-pro-title">${r.team}</h1>
+            <div class="team-pro-age">${r.group}</div>
+
+            <div class="team-pro-meta">
+              <div class="team-pro-meta-item"><span class="team-pro-icon">C</span><span><span class="team-pro-meta-label">Club</span><span class="team-pro-meta-value">${c?.displayName || r.club}</span></span></div>
+              <div class="team-pro-meta-item"><span class="team-pro-icon">📍</span><span><span class="team-pro-meta-label">Region</span><span class="team-pro-meta-value">${r.region || c?.region || "California"}</span></span></div>
+              <div class="team-pro-meta-item"><span class="team-pro-icon">↗</span><span><span class="team-pro-meta-label">Club Website</span><span class="team-pro-meta-value">${r.website ? `<a href="${r.website}">Club Website</a>` : "—"}</span></span></div>
+            </div>
+
+            <div class="team-pro-update">
+              <span>✓ All rankings updated after Futures Super Finals</span>
+              <a href="methodology.html">Why CPI?</a>
             </div>
           </div>
-        </div>
-        <div class="team-x-right">
-          <div class="team-x-rank-block"><span class="team-x-rank-label">CPI Rank</span><span class="team-x-rank-value">#${r.postRank}</span><span class="team-x-rank-sub">In California</span></div>
-          <div class="team-x-rank-block"><span class="team-x-rank-label">CPI Score</span><span class="team-x-rank-value">${Number(r.postCPI).toFixed(1)}</span><span class="team-x-rank-sub">Current rating</span></div>
-          <div class="team-x-rank-block"><span class="team-x-rank-label">Movement</span><span class="team-x-rank-value">${moveLabel(r.movement)}</span><span class="team-x-rank-sub">Post Super Finals</span></div>
+
+          <div class="team-pro-metrics">
+            <div class="team-pro-metric">
+              <span class="team-pro-metric-main">#${r.postRank}</span>
+              <span class="team-pro-metric-label">California Rank</span>
+              <span class="team-pro-metric-sub">In ${r.group}</span>
+              <div class="team-pro-move">${r.movement>0?"▲":r.movement<0?"▼":"—"} ${Math.abs(r.movement || 0)}</div>
+              <span class="team-pro-metric-sub">Since Last Update</span>
+            </div>
+
+            <div class="team-pro-metric">
+              <span class="team-pro-metric-main">${Number(r.postCPI).toFixed(1)}</span>
+              <span class="team-pro-metric-label">CPI Rating</span>
+              <span class="team-pro-metric-sub">Top tier in California</span>
+              <div class="team-pro-rating-bar"><div class="team-pro-rating-fill"></div><div class="team-pro-rating-dot"></div></div>
+              <div class="team-pro-scale"><span>1200</span><span>1600</span><span>2000+</span></div>
+            </div>
+
+            <div class="team-pro-metric">
+              <span class="team-pro-metric-main">${eventRecordDisplay}</span>
+              <span class="team-pro-metric-label">Super Finals Record</span>
+              <span class="team-pro-metric-sub">(${results.length} Games)</span>
+              <span class="team-pro-metric-main" style="font-size:40px;margin-top:20px;">${finalFinish}</span>
+              <span class="team-pro-metric-label">Super Finals Finish</span>
+              <span class="team-pro-metric-sub">${division}</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <nav class="team-x-tabs">
-      <div class="team-x-tabs-inner">
+    <nav class="team-pro-tabs">
+      <div class="team-pro-tabs-inner">
         <a class="active" href="#overview">Overview</a>
-        <a href="#tournament">Tournament</a>
+        <a href="#schedule">Schedule</a>
         <a href="#results">Results</a>
-        <a href="#trend">Trend</a>
-        <a href="#club">Club</a>
-        <a href="#nearby">Ranking Context</a>
+        <a href="#statistics">Statistics</a>
+        <a href="#roster">Roster</a>
+        <a href="#rankings">Rankings</a>
       </div>
     </nav>
 
-    <main class="team-x-main">
-      <section class="team-x-grid">
-        <article id="overview" class="team-x-card">
-          <div class="team-x-card-head">Team Snapshot <span class="team-x-card-tag">Current Season</span></div>
-          <div class="team-x-card-body">
-            <div class="team-x-stats-grid">
-              <div class="team-x-stat"><strong>#${r.postRank}</strong><span>State Rank</span></div>
-              <div class="team-x-stat"><strong>${Number(r.postCPI).toFixed(1)}</strong><span>CPI Score</span></div>
-              <div class="team-x-stat"><strong>${moveLabel(r.movement)}</strong><span>Movement</span></div>
-              <div class="team-x-stat"><strong>${record}</strong><span>Latest Event</span></div>
-              <div class="team-x-stat"><strong>${winPct}%</strong><span>Win Rate</span></div>
-              <div class="team-x-stat"><strong>${games}</strong><span>Games Tracked</span></div>
+    <main class="team-pro-main">
+      <section class="team-pro-grid">
+        <article id="overview" class="team-pro-card">
+          <div class="team-pro-card-head">Team Snapshot</div>
+          <div class="team-pro-card-body">
+            <div class="team-pro-snapshot-grid">
+              <div class="team-pro-stat"><strong>#${r.postRank}</strong><span>California Rank<br>In ${r.group}</span></div>
+              <div class="team-pro-stat"><strong>${Number(r.postCPI).toFixed(1)}</strong><span>CPI Rating</span></div>
+              <div class="team-pro-stat"><strong>${eventRecordDisplay}</strong><span>Super Finals Record<br>(${results.length} Games)</span></div>
+              <div class="team-pro-stat"><strong>${finalFinish}</strong><span>Super Finals Finish<br>${division}</span></div>
+              <div class="team-pro-stat"><strong>${avgOpponentCpi}</strong><span>Avg Opponent CPI</span></div>
+              <div class="team-pro-stat"><strong>${cpiTrend}</strong><span>CPI Trend<br>Last Update</span></div>
             </div>
           </div>
         </article>
 
-        <article id="tournament" class="team-x-card team-x-section-wide">
-          <div class="team-x-card-head">Latest Verified Event <span class="team-x-card-tag">Real Results</span></div>
-          <div class="team-x-card-body">
-            <div class="team-x-tourney-line">
-              <div class="team-x-placement"><div><strong>${finalPlacement}</strong><span>Finish</span></div></div>
+        <article class="team-pro-card">
+          <div class="team-pro-card-head">Latest Tournament</div>
+          <div class="team-pro-card-body">
+            <div class="team-pro-event">
+              <div class="team-pro-event-logo">SUPER<br>FINALS</div>
               <div>
-                <div class="team-x-tourney-title">${r.latestTournament}</div>
-                <div class="team-x-tourney-sub">${r.team} went ${record}, beat ${isLamoA ? "North Irvine A and CC United A" : "its best tracked opponent"}, and closed the event ${latestGame.res === "W" ? "with a win" : "with a loss"}.</div>
+                <div class="team-pro-event-title">Futures Super Finals</div>
+                <div class="team-pro-event-meta">May 16 - 18, 2025 · Irvine, CA</div>
               </div>
+              <span class="team-pro-status">Completed</span>
             </div>
-            <div class="team-x-context-grid">
-              <div class="team-x-context-card"><strong>${record}</strong><span>Event Record</span></div>
-              <div class="team-x-context-card"><strong>${bestWin}</strong><span>Best Win</span></div>
-              <div class="team-x-context-card"><strong>${closeLosses}</strong><span>One-Goal Losses</span></div>
+
+            <div class="team-pro-event-stats">
+              <div class="team-pro-event-stat"><strong>${eventRecordDisplay}</strong><span>Record</span></div>
+              <div class="team-pro-event-stat"><strong>${finalFinish}</strong><span>Finish<br>${division}</span></div>
+              <div class="team-pro-event-stat"><strong>${bestWin}</strong><span>Best Win<br>${bestWinScore}</span></div>
+              <div class="team-pro-event-stat"><strong>${highestOpponentRank} ${highestOpponent}</strong><span>Highest Opponent<br>CPI ${opponentCpi}</span></div>
             </div>
-            <p class="team-x-note">CPI note: this module is now using real game-level tournament results for Lamorinda A. This is the template we can extend across all teams as game data is normalized.</p>
+            <a class="team-pro-button" href="#">View Tournament Details</a>
+          </div>
+        </article>
+
+        <article class="team-pro-card">
+          <div class="team-pro-card-head">Club Context</div>
+          <div class="team-pro-card-body">
+            <div class="team-pro-context-list">
+              <div class="team-pro-context-row"><span class="team-pro-context-label">Teams Ranked (2025)</span><span class="team-pro-context-value">${c?.teamCount || clubTeams.length} Teams</span><span class="team-pro-context-arrow">›</span></div>
+              <div class="team-pro-context-row"><span class="team-pro-context-label">Highest Ranked Team (2025)</span><span class="team-pro-context-value">${c?.teams?.[0]?.team || r.team} – #${c?.bestRank || r.postRank}</span><span class="team-pro-context-arrow">›</span></div>
+              <div class="team-pro-context-row"><span class="team-pro-context-label">Club Website</span><span class="team-pro-context-value">${r.website ? `<a href="${r.website}">Club Website ↗</a>` : "—"}</span><span class="team-pro-context-arrow">↗</span></div>
+            </div>
+            <a class="team-pro-outline-button" href="${r.clubPage}">View Club Profile</a>
           </div>
         </article>
       </section>
 
-      <section class="team-x-lower">
-        <article id="results" class="team-x-card team-x-section-wide">
-          <div class="team-x-card-head">Game-by-Game Results <span class="team-x-card-tag">${r.latestTournament}</span></div>
-          <div class="team-x-card-body">
-            <div class="team-x-list">${resultRows}</div>
+      <section class="team-pro-lower">
+        <article id="results" class="team-pro-card">
+          <div class="team-pro-card-head">Recent Results <a href="#">View All Results</a></div>
+          <div class="team-pro-card-body">
+            <div class="team-pro-result-list">${resultRows}</div>
           </div>
         </article>
 
-        <article id="trend" class="team-x-card">
-          <div class="team-x-card-head">CPI Trend <span class="team-x-card-tag">Event Path</span></div>
-          <div class="team-x-card-body">
-            <div class="team-x-chart">
-              ${chartVals.map((h,i)=>`<div class="team-x-chart-point" data-label="${chartLabels[i]}" style="height:${h}px"></div>`).join("")}
-            </div>
-            <p class="team-x-note">Trend visualization is currently directional; future releases will use actual CPI after each verified game.</p>
+        <article id="rankings" class="team-pro-card">
+          <div class="team-pro-card-head">Ranking Context (${r.group}) <a href="rankings.html">View Full Rankings</a></div>
+          <div class="team-pro-card-body">
+            <div class="team-pro-rank-list">${rankingRows}</div>
           </div>
         </article>
       </section>
 
-      <section class="team-x-lower">
-        <article id="nearby" class="team-x-card">
-          <div class="team-x-card-head">Ranking Context</div>
-          <div class="team-x-card-body">
-            <div class="team-x-list">${nearbyRows}</div>
-            <a class="team-x-link-button" href="rankings.html">View Rankings</a>
-          </div>
-        </article>
-
-        <article id="club" class="team-x-card">
-          <div class="team-x-card-head">Club Connection</div>
-          <div class="team-x-card-body">
-            <div class="team-x-context-grid">
-              <div class="team-x-context-card"><strong>${c?.teamCount || clubTeams.length}</strong><span>Teams Ranked</span></div>
-              <div class="team-x-context-card"><strong>#${c?.bestRank || r.postRank}</strong><span>Highest Rank This Season</span></div>
-              <div class="team-x-context-card"><strong>${c?.region || r.region || "California"}</strong><span>Region</span></div>
-            </div>
-            <div class="team-x-list" style="margin-top:16px;">${clubTeamRows}</div>
-            <a class="team-x-link-button gold" href="${r.clubPage}">View Club Profile</a>
-          </div>
-        </article>
-
-        <article class="team-x-card">
-          <div class="team-x-card-head">What This Page Shows</div>
-          <div class="team-x-card-body">
-            <p class="team-x-about">This page is the first finished CPI team profile prototype: current ranking, tournament path, verified game results, best win, ranking context, and club connections in one place.</p>
-            <a class="team-x-link-button" href="methodology.html">View Methodology</a>
-          </div>
-        </article>
-      </section>
+      <div class="team-pro-footer-note">
+        <span>✓ All rankings updated after Futures Super Finals</span>
+        <a href="methodology.html">Why CPI?</a>
+      </div>
     </main>
   </div>`;
 }
