@@ -1537,3 +1537,38 @@ body.team-experience-body .site-header {
     height: 210px !important;
   }
 }
+
+
+/* Final Lamorinda polish */
+.team-pro-hero-grid {
+  grid-template-columns: 285px minmax(0, 1fr) 620px !important;
+  gap: 26px !important;
+}
+.team-pro-logo {
+  width: 270px !important;
+  height: 270px !important;
+  transform: none !important;
+  object-fit: contain;
+  object-position: center;
+  justify-self: center;
+  align-self: center;
+}
+.team-pro-title {
+  font-size: clamp(54px, 5.2vw, 92px);
+  line-height: .86;
+}
+.team-pro-meta-value a[target="_blank"]::after {
+  content: " ↗";
+  font-size: .9em;
+}
+@media(max-width:1250px){
+  .team-pro-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media(max-width:750px){
+  .team-pro-logo {
+    width: 220px !important;
+    height: 220px !important;
+  }
+}

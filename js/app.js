@@ -14,6 +14,7 @@ function renderTeamPage(){
   const r = rankings.find(x=>x.slug===getParam("team"));
   if(!r){root.innerHTML="<main><section class='panel'><h2>Team not found</h2></section></main>";return;}
   const c = clubs.find(x=>x.slug===r.clubSlug);
+  const teamDisplayLogo = r.clubSlug === "lamorinda" ? "assets/logos/lamorinda.png" : r.logo;
   document.body.classList.add("team-experience-body");
 
   const isLamoA = r.slug === "lamorinda-a";
@@ -76,7 +77,7 @@ function renderTeamPage(){
         </div>
 
         <div class="team-pro-hero-grid">
-          <img class="team-pro-logo" src="${r.logo}" alt="${r.team} logo">
+          <img class="team-pro-logo" src="${teamDisplayLogo}" alt="${r.team} logo">
 
           <div>
             <h1 class="team-pro-title">${r.team}</h1>
@@ -85,7 +86,7 @@ function renderTeamPage(){
             <div class="team-pro-meta">
               <div class="team-pro-meta-item"><span class="team-pro-icon">C</span><span><span class="team-pro-meta-label">Club</span><span class="team-pro-meta-value">${c?.displayName || r.club}</span></span></div>
               <div class="team-pro-meta-item"><span class="team-pro-icon">📍</span><span><span class="team-pro-meta-label">Region</span><span class="team-pro-meta-value">${r.region || c?.region || "California"}</span></span></div>
-              <div class="team-pro-meta-item"><span class="team-pro-icon">↗</span><span><span class="team-pro-meta-label">Club Website</span><span class="team-pro-meta-value">${r.website ? `<a href="${r.website}">Club Website</a>` : "—"}</span></span></div>
+              <div class="team-pro-meta-item"><span class="team-pro-icon">↗</span><span><span class="team-pro-meta-label">Club Website</span><span class="team-pro-meta-value">${r.website ? `<a href="${r.website}" target="_blank" rel="noopener noreferrer">Club Website</a>` : "—"}</span></span></div>
             </div>
 
             <div class="team-pro-update">
@@ -179,7 +180,7 @@ function renderTeamPage(){
             <div class="team-pro-context-list">
               <div class="team-pro-context-row"><span class="team-pro-context-label">Teams Ranked (2025)</span><span class="team-pro-context-value">${c?.teamCount || clubTeams.length} Teams</span><span class="team-pro-context-arrow">›</span></div>
               <div class="team-pro-context-row"><span class="team-pro-context-label">Highest Ranked Team (2025)</span><span class="team-pro-context-value">${c?.teams?.[0]?.team || r.team} – #${c?.bestRank || r.postRank}</span><span class="team-pro-context-arrow">›</span></div>
-              <div class="team-pro-context-row"><span class="team-pro-context-label">Club Website</span><span class="team-pro-context-value">${r.website ? `<a href="${r.website}">Club Website ↗</a>` : "—"}</span><span class="team-pro-context-arrow">↗</span></div>
+              <div class="team-pro-context-row"><span class="team-pro-context-label">Club Website</span><span class="team-pro-context-value">${r.website ? `<a href="${r.website}" target="_blank" rel="noopener noreferrer">Club Website</a>` : "—"}</span><span class="team-pro-context-arrow">↗</span></div>
             </div>
             <a class="team-pro-outline-button" href="${r.clubPage}">View Club Profile</a>
           </div>
