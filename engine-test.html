@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CPI Engine Test</title>
+  <title>CPI Engine Quality Console</title>
   <link rel="stylesheet" href="css/engine-test.css" />
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div>
       <div class="eyebrow">California Polo Index</div>
       <h1>Engine Console</h1>
-      <p>Integration test page powered by the CPI Engine API bundle.</p>
+      <p>Data-quality baseline powered by the CPI Engine API bundle.</p>
     </div>
     <a class="home-link" href="index.html">Back to CPI</a>
   </header>
@@ -25,12 +25,25 @@
       </div>
     </section>
 
+    <section class="warning-card">
+      <strong>Ranking QA Notice</strong>
+      <span>Rankings shown here are not official CPI rankings yet. This console is for engine/data-quality validation.</span>
+    </section>
+
     <section class="metric-grid" id="metricGrid"></section>
 
     <section class="panel">
       <div class="panel-header">
-        <h2>Current Ranking Snapshot</h2>
-        <span id="snapshotLabel">—</span>
+        <h2>Data Quality</h2>
+        <span id="qualityStatus">Target: 99%+</span>
+      </div>
+      <div class="quality-grid" id="qualityGrid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>QA Ranking Snapshot</h2>
+        <span id="snapshotLabel">Not official CPI</span>
       </div>
       <div class="table-wrap">
         <table>
@@ -38,9 +51,10 @@
             <tr>
               <th>Rank</th>
               <th>Team</th>
+              <th>Club</th>
               <th>Record</th>
-              <th>CPI</th>
-              <th>Power</th>
+              <th>CPI QA</th>
+              <th>Status</th>
             </tr>
           </thead>
           <tbody id="rankingTable"></tbody>
@@ -59,10 +73,10 @@
 
       <article class="panel">
         <div class="panel-header">
-          <h2>Search Index Preview</h2>
-          <span id="searchCount">—</span>
+          <h2>Organizations Preview</h2>
+          <span id="orgCount">—</span>
         </div>
-        <div id="searchList" class="list"></div>
+        <div id="orgList" class="list"></div>
       </article>
     </section>
 
