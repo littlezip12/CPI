@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CPI Team Profile</title>
+  <link rel="stylesheet" href="css/team-profile.css"/>
+</head>
+<body>
+  <header class="profile-header">
+    <div class="eyebrow">California Polo Index</div>
+    <h1 id="profileTitle">Team Profile</h1>
+    <p id="profileSubtitle">14U Boys · California</p>
+  </header>
+
+  <main class="profile-shell">
+    <div class="toolbar">
+      <div class="status-note" id="dataStatus">Loading team profile data...</div>
+      <select id="teamSelect" aria-label="Select team"></select>
+    </div>
+
+    <section class="metric-grid">
+      <article class="metric-card"><strong id="profileRecord">—</strong><span>Record</span></article>
+      <article class="metric-card"><strong id="profileGames">—</strong><span>Games</span></article>
+      <article class="metric-card"><strong id="profileEvents">—</strong><span>Events</span></article>
+      <article class="metric-card"><strong id="profileGoals">—</strong><span>GF / GA</span></article>
+      <article class="metric-card"><strong id="profileDiff">—</strong><span>Goal Diff</span></article>
+    </section>
+
+    <section class="two-column">
+      <article class="panel">
+        <div class="panel-header"><h2>Recent Results</h2><span>Last 5</span></div>
+        <div class="panel-body" id="recentResults"></div>
+      </article>
+      <article class="panel">
+        <div class="panel-header"><h2>Tournament Breakdown</h2><span>Events</span></div>
+        <div class="panel-body" id="eventBreakdown"></div>
+      </article>
+    </section>
+
+    <section class="two-column">
+      <article class="panel">
+        <div class="panel-header"><h2>Full Game Log</h2><span>Newest first</span></div>
+        <div class="panel-body" id="fullGameLog"></div>
+      </article>
+      <article class="panel">
+        <div class="panel-header"><h2>Aliases / Raw Strings</h2><span>QA</span></div>
+        <div class="panel-body" id="aliasList"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="data/cpi_team_pages_2026_14u_boys.js"></script>
+  <script src="js/team-profile.js"></script>
+</body>
+</html>
