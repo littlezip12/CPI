@@ -8,20 +8,41 @@
     return decodeURIComponent(params.get("team") || params.get("id") || params.get("slug") || "lamorinda-b").trim();
   }
 
+  function getViewFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return (params.get("view") || "overview").toLowerCase();
+  }
+
   function normalizeKey(value) {
     return String(value || "").trim().toLowerCase();
   }
 
+  function legacySlugCandidates(value) {
+    const raw = String(value || "").trim();
+    const lower = normalizeKey(raw);
+    const candidates = new Set([raw, lower]);
+    candidates.add(lower.replace(/^ca-2026-14ub-/, ""));
+    const words = lower.replace(/^ca-2026-14ub-/, "").split("-").filter(Boolean);
+    if (words.length) {
+      candidates.add(words.join(" "));
+      candidates.add(words.map(w => w.toUpperCase() === "wpc" ? "WPC" : w.charAt(0).toUpperCase() + w.slice(1)).join(" "));
+    }
+    return Array.from(candidates);
+  }
+
   function findTeam(key) {
     if (!key) return null;
-    const direct = data.teamIndex[key] || data.teamIndex[normalizeKey(key)];
-    if (direct) return direct;
 
-    const slugKey = normalizeKey(key).replace(/^ca-2026-14ub-/, "");
-    if (data.teamIndex[slugKey]) return data.teamIndex[slugKey];
+    for (const candidate of legacySlugCandidates(key)) {
+      const direct = data.teamIndex[candidate] || data.teamIndex[normalizeKey(candidate)];
+      if (direct) return direct;
 
-    const byName = data.teams.find(t => normalizeKey(t.team) === normalizeKey(key));
-    if (byName) return data.teamIndex[byName.slug];
+      const slugKey = normalizeKey(candidate).replace(/^ca-2026-14ub-/, "");
+      if (data.teamIndex[slugKey]) return data.teamIndex[slugKey];
+
+      const byName = data.teams.find(t => normalizeKey(t.team) === normalizeKey(candidate));
+      if (byName) return data.teamIndex[byName.slug];
+    }
 
     return data.teamIndex["lamorinda-b"] || data.teamIndex[data.teams[0]?.slug];
   }
@@ -32,14 +53,19 @@
     return "tie";
   }
 
+  function resultVerb(result) {
+    if (result === "W") return "def.";
+    if (result === "L") return "lost to";
+    return "tied";
+  }
+
   function renderResultLine(game) {
     const sf = game.source_scope === "superfinals" ? " superfinals" : "";
-    const verb = game.result === "W" ? "def." : game.result === "L" ? "lost to" : "tied";
     return `
       <article class="result-row${sf}">
         <div class="result-pill ${resultClass(game.result)}">${game.result}</div>
         <div class="result-main">
-          <strong>${verb} ${game.opponent}</strong>
+          <strong>${resultVerb(game.result)} ${game.opponent}</strong>
           <span>${game.event}${game.round ? " · " + game.round : ""}</span>
         </div>
         <div class="result-score">${game.score}</div>
@@ -56,21 +82,26 @@
     `).join("");
   }
 
-  function renderAliasList(team) {
-    return team.aliases.slice(0, 12).map(a => `
-      <div class="alias-row">
-        <span>${a.alias}</span>
-        <strong>${a.count}</strong>
-      </div>
-    `).join("");
-  }
-
   function renderTeamOptions(current) {
     return data.teams
       .slice()
       .sort((a, b) => a.team.localeCompare(b.team))
       .map(t => `<option value="${t.slug}" ${t.slug === current.slug ? "selected" : ""}>${t.team}</option>`)
       .join("");
+  }
+
+  function renderGameLog(team, limit) {
+    const games = limit ? team.games_list.slice(0, limit) : team.games_list;
+    return games.length ? games.map(renderResultLine).join("") : `<div class="empty">No results available.</div>`;
+  }
+
+  function setActiveView(view) {
+    document.querySelectorAll("[data-view-panel]").forEach(panel => {
+      panel.hidden = panel.dataset.viewPanel !== view;
+    });
+    document.querySelectorAll("[data-view-link]").forEach(link => {
+      link.classList.toggle("active", link.dataset.viewLink === view);
+    });
   }
 
   function render(team) {
@@ -87,28 +118,42 @@
     $("profileGoals").textContent = `${team.goals_for} / ${team.goals_against}`;
     $("profileDiff").textContent = team.goal_diff;
 
-    $("recentResults").innerHTML = team.last_5.length
-      ? team.last_5.map(renderResultLine).join("")
-      : `<div class="empty">No recent results available.</div>`;
-
-    $("fullGameLog").innerHTML = team.games_list.length
-      ? team.games_list.map(renderResultLine).join("")
-      : `<div class="empty">No game log available.</div>`;
-
+    $("recentResults").innerHTML = renderGameLog(team, 5);
+    $("fullGameLog").innerHTML = renderGameLog(team);
     $("eventBreakdown").innerHTML = renderEventBreakdown(team);
-    $("aliasList").innerHTML = renderAliasList(team);
-    $("dataStatus").textContent = team.data_status || "team profile data loaded";
+
+    const allResultsLinks = document.querySelectorAll("[data-results-link]");
+    allResultsLinks.forEach(link => {
+      link.href = `team.html?team=${team.slug}&view=results`;
+    });
+
+    $("dataStatus").textContent = "Super Finals integrated · rankings paused";
   }
 
   function init() {
     const team = findTeam(getTeamFromUrl());
     render(team);
+
+    const view = getViewFromUrl();
+    setActiveView(view === "results" ? "results" : "overview");
+
     $("teamSelect").addEventListener("change", (e) => {
       const selected = findTeam(e.target.value);
       render(selected);
       const url = new URL(window.location.href);
       url.searchParams.set("team", selected.slug);
       window.history.replaceState({}, "", url);
+    });
+
+    document.querySelectorAll("[data-view-link]").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const view = link.dataset.viewLink;
+        setActiveView(view);
+        const url = new URL(window.location.href);
+        url.searchParams.set("view", view);
+        window.history.replaceState({}, "", url);
+      });
     });
   }
 
