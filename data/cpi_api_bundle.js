@@ -1,8 +1,8 @@
 window.CPI_API = {
   "manifest": {
     "platform": "California Polo Index",
-    "api_version": "team_profile_module_v0.3",
-    "generated_at": "2026-07-02T22:32:45.345659+00:00",
+    "api_version": "team_profile_latest_tournament_v0.3.3",
+    "generated_at": "2026-07-02T23:35:22.097858+00:00",
     "scope": {
       "season": "2026",
       "region": "California",
@@ -14,6 +14,6 @@ window.CPI_API = {
       "games": 646,
       "team_profiles": 642
     },
-    "data_status": "Team Profile Module powered by Super Finals integrated data; rankings paused."
+    "data_status": "Latest tournament results view; overall record hidden from public profile."
   }
 };

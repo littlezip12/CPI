@@ -14,7 +14,7 @@ select { border: 1px solid var(--line); border-radius: 999px; padding: 11px 16px
 .profile-tabs { display:flex; gap:26px; border-bottom:1px solid var(--line); margin-bottom:18px; overflow-x:auto; }
 .profile-tabs a { color:var(--text); text-decoration:none; font-weight:1000; padding:14px 0; border-bottom:4px solid transparent; white-space:nowrap; }
 .profile-tabs a.active { border-bottom-color: var(--gold); }
-.metric-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 18px; }
+.metric-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 18px; }\n.metric-card.wide strong { font-size: clamp(24px, 3vw, 38px); }
 .metric-card, .panel { background: var(--card); border: 1px solid var(--line); box-shadow: 0 12px 26px rgba(6,24,51,.08); }
 .metric-card { border-radius: 16px; padding: 18px; }
 .metric-card strong { display: block; font-size: 38px; line-height: 1; letter-spacing: -.05em; }

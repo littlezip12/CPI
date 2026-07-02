@@ -27,31 +27,36 @@
       <a href="#" data-view-link="rankings">Rankings</a>
     </nav>
 
-    <section class="metric-grid">
-      <article class="metric-card"><strong id="profileRecord">—</strong><span>Record</span></article>
-      <article class="metric-card"><strong id="profileGames">—</strong><span>Games</span></article>
-      <article class="metric-card"><strong id="profileEvents">—</strong><span>Events</span></article>
-      <article class="metric-card"><strong id="profileGoals">—</strong><span>GF / GA</span></article>
-      <article class="metric-card"><strong id="profileDiff">—</strong><span>Goal Diff</span></article>
+    <section class="metric-grid latest-grid">
+      <article class="metric-card wide"><strong id="profileLatestEvent">—</strong><span>Latest Tournament</span></article>
+      <article class="metric-card"><strong id="profileLatestRecord">—</strong><span>Tournament Record</span></article>
+      <article class="metric-card"><strong id="profileLatestGames">—</strong><span>Tournament Games</span></article>
+      <article class="metric-card"><strong id="profileEvents">—</strong><span>Events Played</span></article>
+      <article class="metric-card"><strong id="profileGoals">—</strong><span>GF / GA In Stored Games</span></article>
     </section>
 
     <section data-view-panel="overview">
       <section class="two-column">
         <article class="panel">
-          <div class="panel-header"><h2>Recent Results</h2><a href="#" data-results-link>View All Results</a></div>
-          <div class="panel-body" id="recentResults"></div>
+          <div class="panel-header"><h2 id="latestTournamentName">Latest Tournament</h2><span><span id="latestTournamentRecord">—</span> · <span id="latestTournamentGames">0</span> games</span></div>
+          <div class="panel-body" id="latestTournamentResults"></div>
         </article>
 
         <article class="panel">
-          <div class="panel-header"><h2>Tournament Breakdown</h2><span>Events</span></div>
-          <div class="panel-body" id="eventBreakdown"></div>
+          <div class="panel-header"><h2>Recent Results</h2><a href="#" data-results-link>View All Results</a></div>
+          <div class="panel-body" id="recentResults"></div>
         </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header"><h2>Tournament Breakdown</h2><span>Stored events</span></div>
+        <div class="panel-body" id="eventBreakdown"></div>
       </section>
     </section>
 
     <section data-view-panel="results" hidden>
       <article class="panel">
-        <div class="panel-header"><h2>All Results</h2><span>Newest first</span></div>
+        <div class="panel-header"><h2>All Stored Results</h2><span>Newest first</span></div>
         <div class="panel-body" id="fullGameLog"></div>
       </article>
     </section>

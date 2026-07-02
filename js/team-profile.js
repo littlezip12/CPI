@@ -95,6 +95,17 @@
     return games.length ? games.map(renderResultLine).join("") : `<div class="empty">No results available.</div>`;
   }
 
+  function renderLatestTournament(team) {
+    const latest = team.latest_tournament || {};
+    const games = latest.games || [];
+    $("latestTournamentName").textContent = latest.event || "Latest Tournament";
+    $("latestTournamentRecord").textContent = latest.record || "—";
+    $("latestTournamentGames").textContent = latest.games_count || 0;
+    $("latestTournamentResults").innerHTML = games.length
+      ? games.map(renderResultLine).join("")
+      : `<div class="empty">No latest tournament results available.</div>`;
+  }
+
   function setActiveView(view) {
     document.querySelectorAll("[data-view-panel]").forEach(panel => {
       panel.hidden = panel.dataset.viewPanel !== view;
@@ -112,11 +123,14 @@
     $("teamSelect").innerHTML = renderTeamOptions(team);
     $("profileTitle").textContent = team.team;
     $("profileSubtitle").textContent = `${team.age_group} ${team.gender} · ${team.club}`;
-    $("profileRecord").textContent = team.record;
-    $("profileGames").textContent = team.games_count;
+
+    $("profileLatestEvent").textContent = team.latest_tournament?.event || "—";
+    $("profileLatestRecord").textContent = team.latest_tournament?.record || "—";
+    $("profileLatestGames").textContent = team.latest_tournament?.games_count || 0;
     $("profileEvents").textContent = team.event_count;
     $("profileGoals").textContent = `${team.goals_for} / ${team.goals_against}`;
-    $("profileDiff").textContent = team.goal_diff;
+
+    renderLatestTournament(team);
 
     $("recentResults").innerHTML = renderGameLog(team, 5);
     $("fullGameLog").innerHTML = renderGameLog(team);
@@ -127,7 +141,7 @@
       link.href = `team.html?team=${team.slug}&view=results`;
     });
 
-    $("dataStatus").textContent = "Super Finals integrated · rankings paused";
+    $("dataStatus").textContent = "Showing latest tournament results · full historical game log available";
   }
 
   function init() {
