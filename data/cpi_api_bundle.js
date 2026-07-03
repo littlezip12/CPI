@@ -1,8 +1,8 @@
 window.CPI_API = {
   "manifest": {
     "platform": "California Polo Index",
-    "api_version": "qa_rankings_v0.4.0",
-    "generated_at": "2026-07-03T20:21:25.667448+00:00",
+    "api_version": "cpi_ranking_engine_v1_starter",
+    "generated_at": "2026-07-03T20:52:46.989591+00:00",
     "scope": {
       "season": "2026",
       "region": "California",
@@ -14,8 +14,10 @@ window.CPI_API = {
       "games": 633,
       "team_profiles": 642,
       "qa_teams_ranked": 189,
-      "qa_games_processed": 633
+      "qa_games_processed": 633,
+      "cpi_v1_qa_teams_ranked": 186,
+      "cpi_v1_qa_games_processed": 630
     },
-    "data_status": "QA rankings generated; not official."
+    "data_status": "CPI v1 QA rankings generated; not official."
   }
 };
