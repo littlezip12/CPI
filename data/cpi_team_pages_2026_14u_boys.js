@@ -5,1701 +5,1890 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "team_id": "ca-2026-14ub-680-a",
       "team": "680 A",
       "club": "680",
-      "record": "9-6",
       "games_count": 15,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 21,
+      "qa_cpi": 1567.9
     },
     {
       "slug": "680-b",
       "team_id": "ca-2026-14ub-680-b",
       "team": "680 B",
       "club": "680",
-      "record": "7-6",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 47,
+      "qa_cpi": 1543.0
     },
     {
       "slug": "680-c",
       "team_id": "ca-2026-14ub-680-c",
       "team": "680 C",
       "club": "680",
-      "record": "7-8",
       "games_count": 15,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 149,
+      "qa_cpi": 1455.8
     },
     {
       "slug": "908-a",
       "team_id": "ca-2026-14ub-908-a",
       "team": "908 A",
       "club": "908",
-      "record": "5-4",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 58,
+      "qa_cpi": 1532.7
     },
     {
       "slug": "908-blue",
       "team_id": "ca-2026-14ub-908-blue",
       "team": "908 Blue",
       "club": "908",
-      "record": "6-3",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 55,
+      "qa_cpi": 1534.0
     },
     {
       "slug": "908-green",
       "team_id": "ca-2026-14ub-908-green",
       "team": "908 Green",
       "club": "908 Green",
-      "record": "1-3",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 144,
+      "qa_cpi": 1460.1
     },
     {
       "slug": "908-yellow",
       "team_id": "ca-2026-14ub-908-yellow",
       "team": "908 Yellow",
       "club": "908 Yellow",
-      "record": "5-1",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 22,
+      "qa_cpi": 1567.3
     },
     {
       "slug": "aa1-patriot-navy",
       "team_id": "ca-2026-14ub-aa1-patriot-navy",
       "team": "AA1 - Patriot Navy",
       "club": "AA1 - Patriot",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 106,
+      "qa_cpi": 1488.0
     },
     {
       "slug": "aa2-commerce-a",
       "team_id": "ca-2026-14ub-aa2-commerce-a",
       "team": "AA2 - Commerce A",
       "club": "AA2 - Commerce",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 81,
+      "qa_cpi": 1512.0
     },
     {
       "slug": "alameda",
       "team_id": "ca-2026-14ub-alameda",
       "team": "Alameda",
       "club": "Alameda",
-      "record": "9-6",
       "games_count": 15,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 48,
+      "qa_cpi": 1541.1
     },
     {
       "slug": "american-river-a",
       "team_id": "ca-2026-14ub-american-river-a",
       "team": "American River A",
       "club": "American River",
-      "record": "3-6",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 161,
+      "qa_cpi": 1433.5
     },
     {
       "slug": "american-river-b",
       "team_id": "ca-2026-14ub-american-river-b",
       "team": "American River B",
       "club": "American River",
-      "record": "2-6",
       "games_count": 8,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 172,
+      "qa_cpi": 1405.2
     },
     {
       "slug": "bb1-newport-a",
       "team_id": "ca-2026-14ub-bb1-newport-a",
       "team": "BB1 - Newport A",
       "club": "BB1 - Newport",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 107,
+      "qa_cpi": 1488.0
     },
     {
       "slug": "bb2-sd-dons-black",
       "team_id": "ca-2026-14ub-bb2-sd-dons-black",
       "team": "BB2 - SD Dons Black",
       "club": "BB2 - SD Dons",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 82,
+      "qa_cpi": 1512.0
     },
     {
       "slug": "boa-a",
       "team_id": "ca-2026-14ub-boa-a",
       "team": "BOA A",
       "club": "BOA",
-      "record": "0-4",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 169,
+      "qa_cpi": 1423.5
     },
     {
       "slug": "back-bay",
       "team_id": "ca-2026-14ub-back-bay",
       "team": "Back Bay",
       "club": "Back Bay",
-      "record": "7-6",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 52,
+      "qa_cpi": 1536.3
     },
     {
       "slug": "big-valley-a",
       "team_id": "ca-2026-14ub-big-valley-a",
       "team": "Big Valley A",
       "club": "Big Valley",
-      "record": "0-3",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 159,
+      "qa_cpi": 1439.2
     },
     {
       "slug": "brea-olinda-gold",
       "team_id": "ca-2026-14ub-brea-olinda-gold",
       "team": "Brea Olinda Gold",
       "club": "Brea Olinda",
-      "record": "2-1",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 74,
+      "qa_cpi": 1518.9
     },
     {
       "slug": "burlingame-a",
       "team_id": "ca-2026-14ub-burlingame-a",
       "team": "Burlingame A",
       "club": "Burlingame",
-      "record": "3-4",
       "games_count": 7,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 141,
+      "qa_cpi": 1462.9
     },
     {
       "slug": "cc-united-a",
       "team_id": "ca-2026-14ub-cc-united-a",
       "team": "CC United A",
       "club": "CC United",
-      "record": "9-7",
       "games_count": 16,
-      "event_count": 4
+      "event_count": 4,
+      "qa_rank": 37,
+      "qa_cpi": 1548.8
     },
     {
       "slug": "cc-united-b",
       "team_id": "ca-2026-14ub-cc-united-b",
       "team": "CC United B",
       "club": "CC United",
-      "record": "6-7",
       "games_count": 13,
-      "event_count": 4
+      "event_count": 4,
+      "qa_rank": 103,
+      "qa_cpi": 1490.7
     },
     {
       "slug": "cc-united-c",
       "team_id": "ca-2026-14ub-cc-united-c",
       "team": "CC United C",
       "club": "CC United",
-      "record": "3-8",
       "games_count": 11,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 176,
+      "qa_cpi": 1396.9
     },
     {
       "slug": "cc1-greenwich-a",
       "team_id": "ca-2026-14ub-cc1-greenwich-a",
       "team": "CC1 - Greenwich A",
       "club": "CC1 - Greenwich",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 111,
+      "qa_cpi": 1484.5
     },
     {
       "slug": "cc2-greenwich-a",
       "team_id": "ca-2026-14ub-cc2-greenwich-a",
       "team": "CC2 - Greenwich A",
       "club": "CC2 - Greenwich",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 77,
+      "qa_cpi": 1515.5
     },
     {
       "slug": "cc2-newport-white",
       "team_id": "ca-2026-14ub-cc2-newport-white",
       "team": "CC2 - Newport White",
       "club": "CC2 - Newport",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 78,
+      "qa_cpi": 1515.5
     },
     {
       "slug": "cdm-a",
       "team_id": "ca-2026-14ub-cdm-a",
       "team": "CDM A",
       "club": "CDM",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 93,
+      "qa_cpi": 1501.4
     },
     {
       "slug": "cdm-b",
       "team_id": "ca-2026-14ub-cdm-b",
       "team": "CDM B",
       "club": "CDM",
-      "record": "0-3",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 160,
+      "qa_cpi": 1436.3
     },
     {
       "slug": "cdm-white",
       "team_id": "ca-2026-14ub-cdm-white",
       "team": "CDM White",
       "club": "CDM",
-      "record": "2-1",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 64,
+      "qa_cpi": 1527.3
     },
     {
       "slug": "ciu-coast-a",
       "team_id": "ca-2026-14ub-ciu-coast-a",
       "team": "CIU Coast A",
       "club": "CIU Coast",
-      "record": "3-2",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 84,
+      "qa_cpi": 1509.0
     },
     {
       "slug": "cc1-908-a",
       "team_id": "ca-2026-14ub-cc1-908-a",
       "team": "Cc1 - 908 A",
       "club": "Cc1 - 908",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 112,
+      "qa_cpi": 1484.5
     },
     {
       "slug": "ccwp-a",
       "team_id": "ca-2026-14ub-ccwp-a",
       "team": "Ccwp A",
       "club": "Ccwp",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 66,
+      "qa_cpi": 1523.8
     },
     {
       "slug": "channel-islands-united-a",
       "team_id": "ca-2026-14ub-channel-islands-united-a",
       "team": "Channel Islands United A",
       "club": "Channel Islands United",
-      "record": "3-2",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 35,
+      "qa_cpi": 1550.2
     },
     {
       "slug": "channel-islands-united-gold",
       "team_id": "ca-2026-14ub-channel-islands-united-gold",
       "team": "Channel Islands United Gold",
       "club": "Channel Islands United",
-      "record": "8-2",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 3,
+      "qa_cpi": 1650.0
     },
     {
       "slug": "clovis-red",
       "team_id": "ca-2026-14ub-clovis-red",
       "team": "Clovis Red",
       "club": "Clovis",
-      "record": "1-4",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 167,
+      "qa_cpi": 1425.9
     },
     {
       "slug": "commerce-a",
       "team_id": "ca-2026-14ub-commerce-a",
       "team": "Commerce A",
       "club": "Commerce",
-      "record": "8-5",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 23,
+      "qa_cpi": 1566.5
     },
     {
       "slug": "crown-city-a",
       "team_id": "ca-2026-14ub-crown-city-a",
       "team": "Crown City A",
       "club": "Crown City",
-      "record": "0-5",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 178,
+      "qa_cpi": 1392.8
     },
     {
       "slug": "ct-premier-a",
       "team_id": "ca-2026-14ub-ct-premier-a",
       "team": "Ct Premier A",
       "club": "Ct Premier",
-      "record": "1-2",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 102,
+      "qa_cpi": 1491.3
     },
     {
       "slug": "cvu-a",
       "team_id": "ca-2026-14ub-cvu-a",
       "team": "Cvu A",
       "club": "Cvu",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 115,
+      "qa_cpi": 1482.6
     },
     {
       "slug": "dd1-sd-shores-black",
       "team_id": "ca-2026-14ub-dd1-sd-shores-black",
       "team": "DD1 - SD Shores Black",
       "club": "DD1 - SD Shores",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 67,
+      "qa_cpi": 1523.5
     },
     {
       "slug": "dd1-sd-shores-gold",
       "team_id": "ca-2026-14ub-dd1-sd-shores-gold",
       "team": "DD1 - SD Shores Gold",
       "club": "DD1 - SD Shores",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 120,
+      "qa_cpi": 1479.0
     },
     {
       "slug": "dd2-north-irvine-a",
       "team_id": "ca-2026-14ub-dd2-north-irvine-a",
       "team": "DD2 - North Irvine A",
       "club": "DD2 - North Irvine",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 125,
+      "qa_cpi": 1476.5
     },
     {
       "slug": "dd2-rose-bowl-red",
       "team_id": "ca-2026-14ub-dd2-rose-bowl-red",
       "team": "DD2 - Rose Bowl Red",
       "club": "DD2 - Rose Bowl",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 71,
+      "qa_cpi": 1521.0
     },
     {
       "slug": "davis",
       "team_id": "ca-2026-14ub-davis",
       "team": "Davis",
       "club": "Davis",
-      "record": "3-6",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 163,
+      "qa_cpi": 1432.8
     },
     {
       "slug": "devils-gate-a",
       "team_id": "ca-2026-14ub-devils-gate-a",
       "team": "Devils Gate A",
       "club": "Devils Gate",
-      "record": "7-5",
       "games_count": 12,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 27,
+      "qa_cpi": 1560.5
     },
     {
       "slug": "diablo-alliance-a",
       "team_id": "ca-2026-14ub-diablo-alliance-a",
       "team": "Diablo Alliance A",
       "club": "Diablo Alliance",
-      "record": "6-4",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 46,
+      "qa_cpi": 1544.9
     },
     {
       "slug": "diablo-alliance-b",
       "team_id": "ca-2026-14ub-diablo-alliance-b",
       "team": "Diablo Alliance B",
       "club": "Diablo Alliance",
-      "record": "5-6",
       "games_count": 11,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 143,
+      "qa_cpi": 1461.9
     },
     {
       "slug": "eca-a",
       "team_id": "ca-2026-14ub-eca-a",
       "team": "Eca A",
       "club": "Eca",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 60,
+      "qa_cpi": 1528.8
     },
     {
       "slug": "eca-b",
       "team_id": "ca-2026-14ub-eca-b",
       "team": "Eca B",
       "club": "Eca",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 145,
+      "qa_cpi": 1459.8
     },
     {
       "slug": "foothill-a",
       "team_id": "ca-2026-14ub-foothill-a",
       "team": "Foothill A",
       "club": "Foothill",
-      "record": "3-10",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 186,
+      "qa_cpi": 1373.9
     },
     {
       "slug": "foothill-b",
       "team_id": "ca-2026-14ub-foothill-b",
       "team": "Foothill B",
       "club": "Foothill",
-      "record": "4-5",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 131,
+      "qa_cpi": 1469.3
     },
     {
       "slug": "gate-14u-a",
       "team_id": "ca-2026-14ub-gate-14u-a",
       "team": "Gate 14U A",
       "club": "Gate 14U",
-      "record": "2-2",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 94,
+      "qa_cpi": 1500.2
     },
     {
       "slug": "gold-coast-a",
       "team_id": "ca-2026-14ub-gold-coast-a",
       "team": "Gold Coast A",
       "club": "Gold Coast",
-      "record": "7-2",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 14,
+      "qa_cpi": 1593.6
     },
     {
       "slug": "greenwich-a",
       "team_id": "ca-2026-14ub-greenwich-a",
       "team": "Greenwich A",
       "club": "Greenwich",
-      "record": "4-5",
       "games_count": 9,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 109,
+      "qa_cpi": 1486.2
     },
     {
       "slug": "hieland-a",
       "team_id": "ca-2026-14ub-hieland-a",
       "team": "Hieland A",
       "club": "Hieland",
-      "record": "1-5",
       "games_count": 6,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 164,
+      "qa_cpi": 1431.0
     },
     {
       "slug": "honolulu-blue",
       "team_id": "ca-2026-14ub-honolulu-blue",
       "team": "Honolulu Blue",
       "club": "Honolulu",
-      "record": "0-3",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 158,
+      "qa_cpi": 1439.8
     },
     {
       "slug": "honolulu-green",
       "team_id": "ca-2026-14ub-honolulu-green",
       "team": "Honolulu Green",
       "club": "Honolulu Green",
-      "record": "1-3",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 147,
+      "qa_cpi": 1458.9
     },
     {
       "slug": "kingsburg-a",
       "team_id": "ca-2026-14ub-kingsburg-a",
       "team": "Kingsburg A",
       "club": "Kingsburg",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 110,
+      "qa_cpi": 1486.2
     },
     {
       "slug": "la-city-united-a",
       "team_id": "ca-2026-14ub-la-city-united-a",
       "team": "LA City United A",
       "club": "LA City United",
-      "record": "3-3",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 92,
+      "qa_cpi": 1502.1
     },
     {
       "slug": "la-jolla-united-b",
       "team_id": "ca-2026-14ub-la-jolla-united-b",
       "team": "LA Jolla United B",
       "club": "LA Jolla United",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 135,
+      "qa_cpi": 1468.6
     },
     {
       "slug": "la-jolla-united-gold",
       "team_id": "ca-2026-14ub-la-jolla-united-gold",
       "team": "LA Jolla United Gold",
       "club": "LA Jolla United",
-      "record": "1-2",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 121,
+      "qa_cpi": 1478.4
     },
     {
       "slug": "la-jolla-united-navy",
       "team_id": "ca-2026-14ub-la-jolla-united-navy",
       "team": "LA Jolla United Navy",
       "club": "LA Jolla United",
-      "record": "5-0",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 12,
+      "qa_cpi": 1599.2
     },
     {
       "slug": "la-premier-a",
       "team_id": "ca-2026-14ub-la-premier-a",
       "team": "LA Premier A",
       "club": "LA Premier",
-      "record": "13-6",
       "games_count": 19,
-      "event_count": 4
+      "event_count": 4,
+      "qa_rank": 7,
+      "qa_cpi": 1637.8
     },
     {
       "slug": "la-jolla-united-a",
       "team_id": "ca-2026-14ub-la-jolla-united-a",
       "team": "La Jolla United A",
       "club": "La Jolla United",
-      "record": "10-0",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 1,
+      "qa_cpi": 1706.1
     },
     {
       "slug": "lacuwp-a",
       "team_id": "ca-2026-14ub-lacuwp-a",
       "team": "Lacuwp A",
       "club": "Lacuwp",
-      "record": "2-1",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 69,
+      "qa_cpi": 1522.7
     },
     {
       "slug": "lamorinda-a",
       "team_id": "ca-2026-14ub-lamorinda-a",
       "team": "Lamorinda A",
       "club": "Lamorinda",
-      "record": "8-7",
       "games_count": 15,
-      "event_count": 4
+      "event_count": 4,
+      "qa_rank": 45,
+      "qa_cpi": 1545.8
     },
     {
       "slug": "lamorinda-b",
       "team_id": "ca-2026-14ub-lamorinda-b",
       "team": "Lamorinda B",
       "club": "Lamorinda",
-      "record": "9-6",
       "games_count": 15,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 39,
+      "qa_cpi": 1547.8
     },
     {
       "slug": "lamorinda-c",
       "team_id": "ca-2026-14ub-lamorinda-c",
       "team": "Lamorinda C",
       "club": "Lamorinda",
-      "record": "1-7",
       "games_count": 8,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 182,
+      "qa_cpi": 1381.9
     },
     {
       "slug": "los-al-opal-a",
       "team_id": "ca-2026-14ub-los-al-opal-a",
       "team": "Los Al Opal A",
       "club": "Los Al Opal",
-      "record": "0-2",
       "games_count": 2,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 132,
+      "qa_cpi": 1469.1
     },
     {
       "slug": "los-alamitos-a",
       "team_id": "ca-2026-14ub-los-alamitos-a",
       "team": "Los Alamitos A",
       "club": "Los Alamitos",
-      "record": "3-2",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 62,
+      "qa_cpi": 1528.5
     },
     {
       "slug": "los-angeles-wpc-a",
       "team_id": "ca-2026-14ub-los-angeles-wpc-a",
       "team": "Los Angeles WPC A",
       "club": "Los Angeles WPC",
-      "record": "8-5",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 15,
+      "qa_cpi": 1590.8
     },
     {
       "slug": "lowpo-a",
       "team_id": "ca-2026-14ub-lowpo-a",
       "team": "Lowpo A",
       "club": "Lowpo",
-      "record": "0-2",
       "games_count": 2,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 142,
+      "qa_cpi": 1462.1
     },
     {
       "slug": "loyola-a",
       "team_id": "ca-2026-14ub-loyola-a",
       "team": "Loyola A",
       "club": "Loyola",
-      "record": "1-8",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 181,
+      "qa_cpi": 1384.6
     },
     {
       "slug": "loyola-wpc-a",
       "team_id": "ca-2026-14ub-loyola-wpc-a",
       "team": "Loyola WPC A",
       "club": "Loyola WPC",
-      "record": "3-1",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 54,
+      "qa_cpi": 1535.9
     },
     {
       "slug": "mm1-cc-united-blue",
       "team_id": "ca-2026-14ub-mm1-cc-united-blue",
       "team": "MM1 - CC United Blue",
       "club": "MM1 - CC United",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 75,
+      "qa_cpi": 1518.9
     },
     {
       "slug": "mm2-sharks-a",
       "team_id": "ca-2026-14ub-mm2-sharks-a",
       "team": "MM2 - Sharks A",
       "club": "MM2 - Sharks",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 116,
+      "qa_cpi": 1481.1
     },
     {
       "slug": "midpen-a",
       "team_id": "ca-2026-14ub-midpen-a",
       "team": "Midpen A",
       "club": "Midpen",
-      "record": "1-7",
       "games_count": 8,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 183,
+      "qa_cpi": 1381.2
     },
     {
       "slug": "mission-12a-a",
       "team_id": "ca-2026-14ub-mission-12a-a",
       "team": "Mission 12a A",
       "club": "Mission 12a",
-      "record": "2-2",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 91,
+      "qa_cpi": 1502.5
     },
     {
       "slug": "mission-14b-a",
       "team_id": "ca-2026-14ub-mission-14b-a",
       "team": "Mission 14b A",
       "club": "Mission 14b",
-      "record": "1-2",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 117,
+      "qa_cpi": 1479.7
     },
     {
       "slug": "mission-wpc-a",
       "team_id": "ca-2026-14ub-mission-wpc-a",
       "team": "Mission WPC A",
       "club": "Mission WPC",
-      "record": "13-4",
       "games_count": 17,
-      "event_count": 4
+      "event_count": 4,
+      "qa_rank": 6,
+      "qa_cpi": 1638.4
     },
     {
       "slug": "mission-wpc-b",
       "team_id": "ca-2026-14ub-mission-wpc-b",
       "team": "Mission WPC B",
       "club": "Mission WPC",
-      "record": "10-2",
       "games_count": 12,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 2,
+      "qa_cpi": 1657.9
     },
     {
       "slug": "ngen-a",
       "team_id": "ca-2026-14ub-ngen-a",
       "team": "NGen A",
       "club": "NGen",
-      "record": "3-7",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 179,
+      "qa_cpi": 1392.3
     },
     {
       "slug": "nn2-kingsburg-kings-a",
       "team_id": "ca-2026-14ub-nn2-kingsburg-kings-a",
       "team": "NN2 - Kingsburg Kings A",
       "club": "NN2 - Kingsburg Kings",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 70,
+      "qa_cpi": 1521.7
     },
     {
       "slug": "nsd-stars-a",
       "team_id": "ca-2026-14ub-nsd-stars-a",
       "team": "NSD Stars A",
       "club": "NSD Stars",
-      "record": "3-0",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 29,
+      "qa_cpi": 1557.7
     },
     {
       "slug": "nado-a",
       "team_id": "ca-2026-14ub-nado-a",
       "team": "Nado A",
       "club": "Nado",
-      "record": "3-0",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 34,
+      "qa_cpi": 1550.7
     },
     {
       "slug": "newport-beach-a",
       "team_id": "ca-2026-14ub-newport-beach-a",
       "team": "Newport Beach A",
       "club": "Newport Beach",
-      "record": "11-3-1",
       "games_count": 15,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 9,
+      "qa_cpi": 1619.9
     },
     {
       "slug": "newport-beach-b",
       "team_id": "ca-2026-14ub-newport-beach-b",
       "team": "Newport Beach B",
       "club": "Newport Beach",
-      "record": "5-3",
       "games_count": 8,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 53,
+      "qa_cpi": 1536.0
     },
     {
       "slug": "newport-beach-c",
       "team_id": "ca-2026-14ub-newport-beach-c",
       "team": "Newport Beach C",
       "club": "Newport Beach",
-      "record": "2-1",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 76,
+      "qa_cpi": 1516.1
     },
     {
       "slug": "newport-white",
       "team_id": "ca-2026-14ub-newport-white",
       "team": "Newport White",
       "club": "Newport",
-      "record": "2-0",
       "games_count": 2,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 51,
+      "qa_cpi": 1536.5
     },
     {
       "slug": "nn1-chawp-a",
       "team_id": "ca-2026-14ub-nn1-chawp-a",
       "team": "Nn1 - Chawp A",
       "club": "Nn1 - Chawp",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 122,
+      "qa_cpi": 1478.3
     },
     {
       "slug": "norcal-a",
       "team_id": "ca-2026-14ub-norcal-a",
       "team": "NorCal A",
       "club": "NorCal",
-      "record": "10-1-1",
       "games_count": 12,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 4,
+      "qa_cpi": 1649.7
     },
     {
       "slug": "norcal-aquatics-b",
       "team_id": "ca-2026-14ub-norcal-aquatics-b",
       "team": "NorCal Aquatics B",
       "club": "NorCal Aquatics",
-      "record": "6-3",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 31,
+      "qa_cpi": 1555.7
     },
     {
       "slug": "norcal-black",
       "team_id": "ca-2026-14ub-norcal-black",
       "team": "NorCal Black",
       "club": "NorCal",
-      "record": "5-0",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 8,
+      "qa_cpi": 1624.9
     },
     {
       "slug": "norcal-teal-a",
       "team_id": "ca-2026-14ub-norcal-teal-a",
       "team": "NorCal Teal A",
       "club": "NorCal Teal",
-      "record": "3-4",
       "games_count": 7,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 104,
+      "qa_cpi": 1488.1
     },
     {
       "slug": "north-irvine-12-black",
       "team_id": "ca-2026-14ub-north-irvine-12-black",
       "team": "North Irvine 12 Black",
       "club": "North Irvine 12",
-      "record": "1-2",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 105,
+      "qa_cpi": 1488.0
     },
     {
       "slug": "north-irvine-a",
       "team_id": "ca-2026-14ub-north-irvine-a",
       "team": "North Irvine A",
       "club": "North Irvine",
-      "record": "9-7",
       "games_count": 16,
-      "event_count": 4
+      "event_count": 4,
+      "qa_rank": 114,
+      "qa_cpi": 1482.9
     },
     {
       "slug": "north-irvine-b",
       "team_id": "ca-2026-14ub-north-irvine-b",
       "team": "North Irvine B",
       "club": "North Irvine",
-      "record": "4-8",
       "games_count": 12,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 171,
+      "qa_cpi": 1408.1
     },
     {
       "slug": "northwest-a",
       "team_id": "ca-2026-14ub-northwest-a",
       "team": "Northwest A",
       "club": "Northwest",
-      "record": "5-7",
       "games_count": 12,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 153,
+      "qa_cpi": 1451.4
     },
     {
       "slug": "orwp-14u-black",
       "team_id": "ca-2026-14ub-orwp-14u-black",
       "team": "ORWP 14U Black",
       "club": "ORWP 14U",
-      "record": "2-2-1",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 88,
+      "qa_cpi": 1505.7
     },
     {
       "slug": "orwp-red",
       "team_id": "ca-2026-14ub-orwp-red",
       "team": "ORWP Red",
       "club": "ORWP",
-      "record": "2-4",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 156,
+      "qa_cpi": 1450.1
     },
     {
       "slug": "orange-county-wpc-b",
       "team_id": "ca-2026-14ub-orange-county-wpc-b",
       "team": "Orange County WPC B",
       "club": "Orange County WPC",
-      "record": "3-1",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 44,
+      "qa_cpi": 1546.3
     },
     {
       "slug": "orange-county-wpc-blue",
       "team_id": "ca-2026-14ub-orange-county-wpc-blue",
       "team": "Orange County WPC Blue",
       "club": "Orange County WPC",
-      "record": "2-2",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 96,
+      "qa_cpi": 1497.0
     },
     {
       "slug": "orange-county-wpc-red",
       "team_id": "ca-2026-14ub-orange-county-wpc-red",
       "team": "Orange County WPC Red",
       "club": "Orange County WPC",
-      "record": "2-2",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 87,
+      "qa_cpi": 1506.7
     },
     {
       "slug": "orwp-a",
       "team_id": "ca-2026-14ub-orwp-a",
       "team": "Orwp A",
       "club": "Orwp",
-      "record": "2-2",
       "games_count": 4,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 95,
+      "qa_cpi": 1497.4
     },
     {
       "slug": "orwp-b",
       "team_id": "ca-2026-14ub-orwp-b",
       "team": "Orwp B",
       "club": "Orwp",
-      "record": "1-2",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 108,
+      "qa_cpi": 1486.7
     },
     {
       "slug": "ovac-a",
       "team_id": "ca-2026-14ub-ovac-a",
       "team": "Ovac A",
       "club": "Ovac",
-      "record": "3-3",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 59,
+      "qa_cpi": 1529.5
     },
     {
       "slug": "pac-a",
       "team_id": "ca-2026-14ub-pac-a",
       "team": "Pac A",
       "club": "Pac",
-      "record": "3-3",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 100,
+      "qa_cpi": 1492.7
     },
     {
       "slug": "palos-verdes-a",
       "team_id": "ca-2026-14ub-palos-verdes-a",
       "team": "Palos Verdes A",
       "club": "Palos Verdes",
-      "record": "6-3",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 17,
+      "qa_cpi": 1579.7
     },
     {
       "slug": "palos-verdes-b",
       "team_id": "ca-2026-14ub-palos-verdes-b",
       "team": "Palos Verdes B",
       "club": "Palos Verdes",
-      "record": "9-4",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 16,
+      "qa_cpi": 1586.8
     },
     {
       "slug": "pasadena-ac-a",
       "team_id": "ca-2026-14ub-pasadena-ac-a",
       "team": "Pasadena Ac A",
       "club": "Pasadena Ac",
-      "record": "4-1",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 32,
+      "qa_cpi": 1555.3
     },
     {
       "slug": "pasadena-ac-orange",
       "team_id": "ca-2026-14ub-pasadena-ac-orange",
       "team": "Pasadena Ac Orange",
       "club": "Pasadena Ac Orange",
-      "record": "3-0",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 26,
+      "qa_cpi": 1560.8
     },
     {
       "slug": "patriot-a",
       "team_id": "ca-2026-14ub-patriot-a",
       "team": "Patriot A",
       "club": "Patriot",
-      "record": "6-7",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 124,
+      "qa_cpi": 1476.9
     },
     {
       "slug": "patriot-b",
       "team_id": "ca-2026-14ub-patriot-b",
       "team": "Patriot B",
       "club": "Patriot",
-      "record": "10-4",
       "games_count": 14,
-      "event_count": 4
+      "event_count": 4,
+      "qa_rank": 25,
+      "qa_cpi": 1560.8
     },
     {
       "slug": "pegasus",
       "team_id": "ca-2026-14ub-pegasus",
       "team": "Pegasus",
       "club": "Pegasus",
-      "record": "0-5",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 174,
+      "qa_cpi": 1403.8
     },
     {
       "slug": "poway-valley-black",
       "team_id": "ca-2026-14ub-poway-valley-black",
       "team": "Poway Valley Black",
       "club": "Poway Valley",
-      "record": "5-0",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 13,
+      "qa_cpi": 1595.8
     },
     {
       "slug": "pride-a",
       "team_id": "ca-2026-14ub-pride-a",
       "team": "Pride A",
       "club": "Pride",
-      "record": "3-2",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 61,
+      "qa_cpi": 1528.7
     },
     {
       "slug": "pride-black",
       "team_id": "ca-2026-14ub-pride-black",
       "team": "Pride Black",
       "club": "Pride",
-      "record": "4-5-1",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 140,
+      "qa_cpi": 1463.8
     },
     {
       "slug": "pride-red",
       "team_id": "ca-2026-14ub-pride-red",
       "team": "Pride Red",
       "club": "Pride",
-      "record": "3-5",
       "games_count": 8,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 129,
+      "qa_cpi": 1473.5
     },
     {
       "slug": "puget-sound-a",
       "team_id": "ca-2026-14ub-puget-sound-a",
       "team": "Puget Sound A",
       "club": "Puget Sound",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 73,
+      "qa_cpi": 1520.0
     },
     {
       "slug": "rain-city-a",
       "team_id": "ca-2026-14ub-rain-city-a",
       "team": "Rain City A",
       "club": "Rain City",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 118,
+      "qa_cpi": 1479.5
     },
     {
       "slug": "rancho-tsunami-a",
       "team_id": "ca-2026-14ub-rancho-tsunami-a",
       "team": "Rancho Tsunami A",
       "club": "Rancho Tsunami",
-      "record": "5-0",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 10,
+      "qa_cpi": 1607.4
     },
     {
       "slug": "rancho-tsunami-blue",
       "team_id": "ca-2026-14ub-rancho-tsunami-blue",
       "team": "Rancho Tsunami Blue",
       "club": "Rancho Tsunami",
-      "record": "2-2",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 99,
+      "qa_cpi": 1494.7
     },
     {
       "slug": "riverside-a",
       "team_id": "ca-2026-14ub-riverside-a",
       "team": "Riverside A",
       "club": "Riverside",
-      "record": "2-1",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 83,
+      "qa_cpi": 1510.3
     },
     {
       "slug": "rose-bowl",
       "team_id": "ca-2026-14ub-rose-bowl",
       "team": "Rose Bowl",
       "club": "Rose Bowl",
-      "record": "1-4",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 157,
+      "qa_cpi": 1445.8
     },
     {
       "slug": "rose-bowl-black",
       "team_id": "ca-2026-14ub-rose-bowl-black",
       "team": "Rose Bowl Black",
       "club": "Rose Bowl",
-      "record": "5-6",
       "games_count": 11,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 148,
+      "qa_cpi": 1456.4
     },
     {
       "slug": "rose-bowl-red",
       "team_id": "ca-2026-14ub-rose-bowl-red",
       "team": "Rose Bowl Red",
       "club": "Rose Bowl",
-      "record": "1-6",
       "games_count": 7,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 173,
+      "qa_cpi": 1404.8
     },
     {
       "slug": "route-66-14u-boys-a",
       "team_id": "ca-2026-14ub-route-66-14u-boys-a",
       "team": "Route 66 14U Boys A",
       "club": "Route 66 14U Boys",
-      "record": "3-3",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 89,
+      "qa_cpi": 1505.5
     },
     {
       "slug": "route-66-a",
       "team_id": "ca-2026-14ub-route-66-a",
       "team": "Route 66 A",
       "club": "Route 66",
-      "record": "0-3",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 154,
+      "qa_cpi": 1451.4
     },
     {
       "slug": "route-66-aquatics-a",
       "team_id": "ca-2026-14ub-route-66-aquatics-a",
       "team": "Route 66 Aquatics A",
       "club": "Route 66 Aquatics",
-      "record": "0-4",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 168,
+      "qa_cpi": 1424.2
     },
     {
       "slug": "sd-dons-black",
       "team_id": "ca-2026-14ub-sd-dons-black",
       "team": "SD Dons Black",
       "club": "SD Dons",
-      "record": "2-1",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 68,
+      "qa_cpi": 1523.4
     },
     {
       "slug": "sd-dons-d",
       "team_id": "ca-2026-14ub-sd-dons-d",
       "team": "SD Dons D",
       "club": "SD Dons",
-      "record": "1-0",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 63,
+      "qa_cpi": 1527.5
     },
     {
       "slug": "sd-dons-gold",
       "team_id": "ca-2026-14ub-sd-dons-gold",
       "team": "SD Dons Gold",
       "club": "SD Dons",
-      "record": "2-1",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 65,
+      "qa_cpi": 1526.2
     },
     {
       "slug": "sd-dons-red",
       "team_id": "ca-2026-14ub-sd-dons-red",
       "team": "SD Dons Red",
       "club": "SD Dons",
-      "record": "0-2",
       "games_count": 2,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 136,
+      "qa_cpi": 1467.9
     },
     {
       "slug": "sd-eca-a",
       "team_id": "ca-2026-14ub-sd-eca-a",
       "team": "SD Eca A",
       "club": "SD Eca",
-      "record": "3-5",
       "games_count": 8,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 130,
+      "qa_cpi": 1473.5
     },
     {
       "slug": "sd-shores-gold",
       "team_id": "ca-2026-14ub-sd-shores-gold",
       "team": "SD Shores Gold",
       "club": "SD Shores",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 123,
+      "qa_cpi": 1477.1
     },
     {
       "slug": "set-a",
       "team_id": "ca-2026-14ub-set-a",
       "team": "SET A",
       "club": "SET",
-      "record": "2-9",
       "games_count": 11,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 177,
+      "qa_cpi": 1395.1
     },
     {
       "slug": "sj-foundation-a",
       "team_id": "ca-2026-14ub-sj-foundation-a",
       "team": "SJ Foundation A",
       "club": "SJ Foundation",
-      "record": "3-2",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 79,
+      "qa_cpi": 1513.9
     },
     {
       "slug": "san-clemente-a",
       "team_id": "ca-2026-14ub-san-clemente-a",
       "team": "San Clemente A",
       "club": "San Clemente",
-      "record": "3-2",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 90,
+      "qa_cpi": 1503.1
     },
     {
       "slug": "san-clemente-black",
       "team_id": "ca-2026-14ub-san-clemente-black",
       "team": "San Clemente Black",
       "club": "San Clemente",
-      "record": "6-4",
       "games_count": 10,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 41,
+      "qa_cpi": 1547.6
     },
     {
       "slug": "san-clemente-red",
       "team_id": "ca-2026-14ub-san-clemente-red",
       "team": "San Clemente Red",
       "club": "San Clemente",
-      "record": "9-1",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 5,
+      "qa_cpi": 1647.0
     },
     {
       "slug": "san-diego-dons-14-black",
       "team_id": "ca-2026-14ub-san-diego-dons-14-black",
       "team": "San Diego Dons 14 Black",
       "club": "San Diego Dons 14",
-      "record": "3-1",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 50,
+      "qa_cpi": 1540.2
     },
     {
       "slug": "san-diego-dons-a",
       "team_id": "ca-2026-14ub-san-diego-dons-a",
       "team": "San Diego Dons A",
       "club": "San Diego Dons",
-      "record": "5-5",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 72,
+      "qa_cpi": 1520.0
     },
     {
       "slug": "san-diego-shores-a",
       "team_id": "ca-2026-14ub-san-diego-shores-a",
       "team": "San Diego Shores A",
       "club": "San Diego Shores",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 97,
+      "qa_cpi": 1496.4
     },
     {
       "slug": "san-diego-shores-black",
       "team_id": "ca-2026-14ub-san-diego-shores-black",
       "team": "San Diego Shores Black",
       "club": "San Diego Shores",
-      "record": "1-2",
       "games_count": 3,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 101,
+      "qa_cpi": 1492.3
     },
     {
       "slug": "san-francisco-a",
       "team_id": "ca-2026-14ub-san-francisco-a",
       "team": "San Francisco A",
       "club": "San Francisco",
-      "record": "2-7",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 184,
+      "qa_cpi": 1380.6
     },
     {
       "slug": "san-jose-express-a",
       "team_id": "ca-2026-14ub-san-jose-express-a",
       "team": "San Jose Express A",
       "club": "San Jose Express",
-      "record": "2-6",
       "games_count": 8,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 162,
+      "qa_cpi": 1433.2
     },
     {
       "slug": "san-jose-express-blue",
       "team_id": "ca-2026-14ub-san-jose-express-blue",
       "team": "San Jose Express Blue",
       "club": "San Jose Express",
-      "record": "3-3",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 86,
+      "qa_cpi": 1508.3
     },
     {
       "slug": "san-jose-foundation-black",
       "team_id": "ca-2026-14ub-san-jose-foundation-black",
       "team": "San Jose Foundation Black",
       "club": "San Jose Foundation",
-      "record": "2-4",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 139,
+      "qa_cpi": 1464.8
     },
     {
       "slug": "san-jose-foundation-blue",
       "team_id": "ca-2026-14ub-san-jose-foundation-blue",
       "team": "San Jose Foundation Blue",
       "club": "San Jose Foundation",
-      "record": "1-6",
       "games_count": 7,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 185,
+      "qa_cpi": 1379.0
     },
     {
       "slug": "sand-canyon-a",
       "team_id": "ca-2026-14ub-sand-canyon-a",
       "team": "Sand Canyon A",
       "club": "Sand Canyon",
-      "record": "5-3",
       "games_count": 8,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 43,
+      "qa_cpi": 1546.9
     },
     {
       "slug": "santa-barbara-a",
       "team_id": "ca-2026-14ub-santa-barbara-a",
       "team": "Santa Barbara A",
       "club": "Santa Barbara",
-      "record": "10-6",
       "games_count": 16,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 30,
+      "qa_cpi": 1556.5
     },
     {
       "slug": "santa-cruz-a",
       "team_id": "ca-2026-14ub-santa-cruz-a",
       "team": "Santa Cruz A",
       "club": "Santa Cruz",
-      "record": "3-5",
       "games_count": 8,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 152,
+      "qa_cpi": 1452.4
     },
     {
       "slug": "shaq-a",
       "team_id": "ca-2026-14ub-shaq-a",
       "team": "Shaq A",
       "club": "Shaq",
-      "record": "2-2",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 80,
+      "qa_cpi": 1512.1
     },
     {
       "slug": "shaq-blue",
       "team_id": "ca-2026-14ub-shaq-blue",
       "team": "Shaq Blue",
       "club": "Shaq",
-      "record": "1-3",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 150,
+      "qa_cpi": 1455.1
     },
     {
       "slug": "shaq-white",
       "team_id": "ca-2026-14ub-shaq-white",
       "team": "Shaq White",
       "club": "Shaq",
-      "record": "0-2",
       "games_count": 2,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 146,
+      "qa_cpi": 1459.0
     },
     {
       "slug": "sharks-a",
       "team_id": "ca-2026-14ub-sharks-a",
       "team": "Sharks A",
       "club": "Sharks",
-      "record": "4-5",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 85,
+      "qa_cpi": 1508.4
     },
     {
       "slug": "shore-aquatics-a",
       "team_id": "ca-2026-14ub-shore-aquatics-a",
       "team": "Shore Aquatics A",
       "club": "Shore Aquatics",
-      "record": "9-5",
       "games_count": 14,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 24,
+      "qa_cpi": 1564.3
     },
     {
       "slug": "shore-red",
       "team_id": "ca-2026-14ub-shore-red",
       "team": "Shore Red",
       "club": "Shore",
-      "record": "4-2",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 33,
+      "qa_cpi": 1552.3
     },
     {
       "slug": "sja-a",
       "team_id": "ca-2026-14ub-sja-a",
       "team": "Sja A",
       "club": "Sja",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 126,
+      "qa_cpi": 1475.2
     },
     {
       "slug": "skip",
       "team_id": "ca-2026-14ub-skip",
       "team": "Skip",
       "club": "Skip",
-      "record": "5-0",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 11,
+      "qa_cpi": 1602.4
     },
     {
       "slug": "socal-12-black",
       "team_id": "ca-2026-14ub-socal-12-black",
       "team": "SoCal 12 Black",
       "club": "SoCal 12",
-      "record": "2-2",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 98,
+      "qa_cpi": 1494.9
     },
     {
       "slug": "socal-a",
       "team_id": "ca-2026-14ub-socal-a",
       "team": "SoCal A",
       "club": "SoCal",
-      "record": "2-6",
       "games_count": 8,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 166,
+      "qa_cpi": 1429.7
     },
     {
       "slug": "south-coast-a",
       "team_id": "ca-2026-14ub-south-coast-a",
       "team": "South Coast A",
       "club": "South Coast",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 113,
+      "qa_cpi": 1484.4
     },
     {
       "slug": "south-coast-blue",
       "team_id": "ca-2026-14ub-south-coast-blue",
       "team": "South Coast Blue",
       "club": "South Coast",
-      "record": "1-3",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 151,
+      "qa_cpi": 1452.9
     },
     {
       "slug": "south-coast-red",
       "team_id": "ca-2026-14ub-south-coast-red",
       "team": "South Coast Red",
       "club": "South Coast",
-      "record": "7-5",
       "games_count": 12,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 42,
+      "qa_cpi": 1547.0
     },
     {
       "slug": "south-coast-white",
       "team_id": "ca-2026-14ub-south-coast-white",
       "team": "South Coast White",
       "club": "South Coast",
-      "record": "8-7",
       "games_count": 15,
-      "event_count": 4
+      "event_count": 4,
+      "qa_rank": 49,
+      "qa_cpi": 1541.0
     },
     {
       "slug": "stanford-13-a",
       "team_id": "ca-2026-14ub-stanford-13-a",
       "team": "Stanford 13 A",
       "club": "Stanford 13",
-      "record": "0-4",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 165,
+      "qa_cpi": 1429.8
     },
     {
       "slug": "stanford-a",
       "team_id": "ca-2026-14ub-stanford-a",
       "team": "Stanford A",
       "club": "Stanford",
-      "record": "4-1",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 28,
+      "qa_cpi": 1559.3
     },
     {
       "slug": "stanford-b",
       "team_id": "ca-2026-14ub-stanford-b",
       "team": "Stanford B",
       "club": "Stanford",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 127,
+      "qa_cpi": 1475.0
     },
     {
       "slug": "stanford-black",
       "team_id": "ca-2026-14ub-stanford-black",
       "team": "Stanford Black",
       "club": "Stanford",
-      "record": "6-4",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 57,
+      "qa_cpi": 1532.8
     },
     {
       "slug": "stanford-c",
       "team_id": "ca-2026-14ub-stanford-c",
       "team": "Stanford C",
       "club": "Stanford",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 137,
+      "qa_cpi": 1466.7
     },
     {
       "slug": "stanford-red",
       "team_id": "ca-2026-14ub-stanford-red",
       "team": "Stanford Red",
       "club": "Stanford",
-      "record": "5-4",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 56,
+      "qa_cpi": 1533.6
     },
     {
       "slug": "stanford-white",
       "team_id": "ca-2026-14ub-stanford-white",
       "team": "Stanford White",
       "club": "Stanford",
-      "record": "6-3",
       "games_count": 9,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 36,
+      "qa_cpi": 1549.4
     },
     {
       "slug": "supreme",
       "team_id": "ca-2026-14ub-supreme",
       "team": "Supreme",
       "club": "Supreme",
-      "record": "5-6",
       "games_count": 11,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 155,
+      "qa_cpi": 1450.2
     },
     {
       "slug": "temple-city-a",
       "team_id": "ca-2026-14ub-temple-city-a",
       "team": "Temple City A",
       "club": "Temple City",
-      "record": "7-4",
       "games_count": 11,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 38,
+      "qa_cpi": 1548.1
     },
     {
       "slug": "titans",
       "team_id": "ca-2026-14ub-titans",
       "team": "Titans",
       "club": "Titans",
-      "record": "3-9",
       "games_count": 12,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 175,
+      "qa_cpi": 1397.8
     },
     {
       "slug": "titans-gold",
       "team_id": "ca-2026-14ub-titans-gold",
       "team": "Titans Gold",
       "club": "Titans",
-      "record": "5-1",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 19,
+      "qa_cpi": 1579.2
     },
     {
       "slug": "tri-valley-tritons-a",
       "team_id": "ca-2026-14ub-tri-valley-tritons-a",
       "team": "Tri-valley Tritons A",
       "club": "Tri-valley Tritons",
-      "record": "1-5",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 187,
+      "qa_cpi": 1366.6
     },
     {
       "slug": "trilogy-a",
       "team_id": "ca-2026-14ub-trilogy-a",
       "team": "Trilogy A",
       "club": "Trilogy",
-      "record": "2-4",
       "games_count": 6,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 134,
+      "qa_cpi": 1468.6
     },
     {
       "slug": "trilogy-black",
       "team_id": "ca-2026-14ub-trilogy-black",
       "team": "Trilogy Black",
       "club": "Trilogy",
-      "record": "1-3",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 138,
+      "qa_cpi": 1465.7
     },
     {
       "slug": "triton-gold",
       "team_id": "ca-2026-14ub-triton-gold",
       "team": "Triton Gold",
       "club": "Triton",
-      "record": "0-4",
       "games_count": 4,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 170,
+      "qa_cpi": 1421.6
     },
     {
       "slug": "trojan-a",
       "team_id": "ca-2026-14ub-trojan-a",
       "team": "Trojan A",
       "club": "Trojan",
-      "record": "2-3",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 128,
+      "qa_cpi": 1475.0
     },
     {
       "slug": "trojan-cardinal-a",
       "team_id": "ca-2026-14ub-trojan-cardinal-a",
       "team": "Trojan Cardinal A",
       "club": "Trojan Cardinal",
-      "record": "2-11",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 180,
+      "qa_cpi": 1391.1
     },
     {
       "slug": "trojan-gold",
       "team_id": "ca-2026-14ub-trojan-gold",
       "team": "Trojan Gold",
       "club": "Trojan",
-      "record": "3-11",
       "games_count": 14,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 188,
+      "qa_cpi": 1356.4
     },
     {
       "slug": "tsm-a",
       "team_id": "ca-2026-14ub-tsm-a",
       "team": "Tsm A",
       "club": "Tsm",
-      "record": "0-10",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 189,
+      "qa_cpi": 1309.6
     },
     {
       "slug": "tsunami-black",
       "team_id": "ca-2026-14ub-tsunami-black",
       "team": "Tsunami Black",
       "club": "Tsunami",
-      "record": "0-1",
       "games_count": 1,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 119,
+      "qa_cpi": 1479.5
     },
     {
       "slug": "valley-united-a",
       "team_id": "ca-2026-14ub-valley-united-a",
       "team": "Valley United A",
       "club": "Valley United",
-      "record": "7-3",
       "games_count": 10,
-      "event_count": 2
+      "event_count": 2,
+      "qa_rank": 40,
+      "qa_cpi": 1547.8
     },
     {
       "slug": "vanguard-a",
       "team_id": "ca-2026-14ub-vanguard-a",
       "team": "Vanguard A",
       "club": "Vanguard",
-      "record": "5-8",
       "games_count": 13,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 133,
+      "qa_cpi": 1468.7
     },
     {
       "slug": "vanguard-b",
       "team_id": "ca-2026-14ub-vanguard-b",
       "team": "Vanguard B",
       "club": "Vanguard",
-      "record": "10-4",
       "games_count": 14,
-      "event_count": 3
+      "event_count": 3,
+      "qa_rank": 20,
+      "qa_cpi": 1576.4
     },
     {
       "slug": "vegas-renegades-a",
       "team_id": "ca-2026-14ub-vegas-renegades-a",
       "team": "Vegas Renegades A",
       "club": "Vegas Renegades",
-      "record": "4-1",
       "games_count": 5,
-      "event_count": 1
+      "event_count": 1,
+      "qa_rank": 18,
+      "qa_cpi": 1579.7
     }
   ],
   "teamIndex": {
@@ -2155,7 +2344,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 21,
+      "qa_cpi": 1567.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-680-a": {
       "slug": "680-a",
@@ -2609,7 +2801,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 21,
+      "qa_cpi": 1567.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "680 a": {
       "slug": "680-a",
@@ -3063,7 +3258,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 21,
+      "qa_cpi": 1567.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "680-blue": {
       "slug": "680-a",
@@ -3517,7 +3715,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 21,
+      "qa_cpi": 1567.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "680 blue": {
       "slug": "680-a",
@@ -3971,7 +4172,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 21,
+      "qa_cpi": 1567.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "680-b": {
       "slug": "680-b",
@@ -4393,7 +4597,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 47,
+      "qa_cpi": 1543.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-680-b": {
       "slug": "680-b",
@@ -4815,7 +5022,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 47,
+      "qa_cpi": 1543.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "680 b": {
       "slug": "680-b",
@@ -5237,7 +5447,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 47,
+      "qa_cpi": 1543.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "680-red": {
       "slug": "680-b",
@@ -5659,7 +5872,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 47,
+      "qa_cpi": 1543.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "680 red": {
       "slug": "680-b",
@@ -6081,7 +6297,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 47,
+      "qa_cpi": 1543.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "680-c": {
       "slug": "680-c",
@@ -6535,7 +6754,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 149,
+      "qa_cpi": 1455.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-680-c": {
       "slug": "680-c",
@@ -6989,7 +7211,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 149,
+      "qa_cpi": 1455.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "680 c": {
       "slug": "680-c",
@@ -7443,7 +7668,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 149,
+      "qa_cpi": 1455.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "680-white": {
       "slug": "680-c",
@@ -7897,7 +8125,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 149,
+      "qa_cpi": 1455.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "680 white": {
       "slug": "680-c",
@@ -8351,7 +8582,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 149,
+      "qa_cpi": 1455.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "908-a": {
       "slug": "908-a",
@@ -8717,7 +8951,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 58,
+      "qa_cpi": 1532.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-908-a": {
       "slug": "908-a",
@@ -9083,7 +9320,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 58,
+      "qa_cpi": 1532.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "908 a": {
       "slug": "908-a",
@@ -9449,7 +9689,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 58,
+      "qa_cpi": 1532.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "908-blue": {
       "slug": "908-blue",
@@ -9815,7 +10058,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 55,
+      "qa_cpi": 1534.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-908-blue": {
       "slug": "908-blue",
@@ -10181,7 +10427,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 55,
+      "qa_cpi": 1534.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "908 blue": {
       "slug": "908-blue",
@@ -10547,7 +10796,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 55,
+      "qa_cpi": 1534.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "908-green": {
       "slug": "908-green",
@@ -10781,7 +11033,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 144,
+      "qa_cpi": 1460.1,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-908-green": {
       "slug": "908-green",
@@ -11015,7 +11270,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 144,
+      "qa_cpi": 1460.1,
+      "qa_ranking_status": "limited_sample"
     },
     "908 green": {
       "slug": "908-green",
@@ -11249,7 +11507,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 144,
+      "qa_cpi": 1460.1,
+      "qa_ranking_status": "limited_sample"
     },
     "908-yellow": {
       "slug": "908-yellow",
@@ -11563,7 +11824,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 22,
+      "qa_cpi": 1567.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-908-yellow": {
       "slug": "908-yellow",
@@ -11877,7 +12141,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 22,
+      "qa_cpi": 1567.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "908 yellow": {
       "slug": "908-yellow",
@@ -12191,7 +12458,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 22,
+      "qa_cpi": 1567.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "aa1-patriot-navy": {
       "slug": "aa1-patriot-navy",
@@ -12281,7 +12551,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 106,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-aa1-patriot-navy": {
       "slug": "aa1-patriot-navy",
@@ -12371,7 +12644,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 106,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "aa1 - patriot navy": {
       "slug": "aa1-patriot-navy",
@@ -12461,7 +12737,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 106,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "aa2-commerce-a": {
       "slug": "aa2-commerce-a",
@@ -12551,7 +12830,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 81,
+      "qa_cpi": 1512.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-aa2-commerce-a": {
       "slug": "aa2-commerce-a",
@@ -12641,7 +12923,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 81,
+      "qa_cpi": 1512.0,
+      "qa_ranking_status": "limited_sample"
     },
     "aa2 - commerce a": {
       "slug": "aa2-commerce-a",
@@ -12731,7 +13016,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 81,
+      "qa_cpi": 1512.0,
+      "qa_ranking_status": "limited_sample"
     },
     "alameda": {
       "slug": "alameda",
@@ -13181,7 +13469,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 48,
+      "qa_cpi": 1541.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-alameda": {
       "slug": "alameda",
@@ -13631,7 +13922,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 48,
+      "qa_cpi": 1541.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "american-river-a": {
       "slug": "american-river-a",
@@ -13985,7 +14279,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 161,
+      "qa_cpi": 1433.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-american-river-a": {
       "slug": "american-river-a",
@@ -14339,7 +14636,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 161,
+      "qa_cpi": 1433.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "american river a": {
       "slug": "american-river-a",
@@ -14693,7 +14993,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 161,
+      "qa_cpi": 1433.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "american-river-blue": {
       "slug": "american-river-a",
@@ -15047,7 +15350,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 161,
+      "qa_cpi": 1433.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "american river blue": {
       "slug": "american-river-a",
@@ -15401,7 +15707,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 161,
+      "qa_cpi": 1433.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "american-river-b": {
       "slug": "american-river-b",
@@ -15739,7 +16048,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 172,
+      "qa_cpi": 1405.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-american-river-b": {
       "slug": "american-river-b",
@@ -16077,7 +16389,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 172,
+      "qa_cpi": 1405.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "american river b": {
       "slug": "american-river-b",
@@ -16415,7 +16730,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 172,
+      "qa_cpi": 1405.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "american-river-gold": {
       "slug": "american-river-b",
@@ -16753,7 +17071,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 172,
+      "qa_cpi": 1405.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "american river gold": {
       "slug": "american-river-b",
@@ -17091,7 +17412,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 172,
+      "qa_cpi": 1405.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "bb1-newport-a": {
       "slug": "bb1-newport-a",
@@ -17181,7 +17505,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 107,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-bb1-newport-a": {
       "slug": "bb1-newport-a",
@@ -17271,7 +17598,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 107,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "bb1 - newport a": {
       "slug": "bb1-newport-a",
@@ -17361,7 +17691,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 107,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "bb2-sd-dons-black": {
       "slug": "bb2-sd-dons-black",
@@ -17451,7 +17784,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 82,
+      "qa_cpi": 1512.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-bb2-sd-dons-black": {
       "slug": "bb2-sd-dons-black",
@@ -17541,7 +17877,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 82,
+      "qa_cpi": 1512.0,
+      "qa_ranking_status": "limited_sample"
     },
     "bb2 - sd dons black": {
       "slug": "bb2-sd-dons-black",
@@ -17631,7 +17970,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 82,
+      "qa_cpi": 1512.0,
+      "qa_ranking_status": "limited_sample"
     },
     "boa-a": {
       "slug": "boa-a",
@@ -17865,7 +18207,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 169,
+      "qa_cpi": 1423.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-boa-a": {
       "slug": "boa-a",
@@ -18099,7 +18444,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 169,
+      "qa_cpi": 1423.5,
+      "qa_ranking_status": "limited_sample"
     },
     "boa a": {
       "slug": "boa-a",
@@ -18333,7 +18681,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 169,
+      "qa_cpi": 1423.5,
+      "qa_ranking_status": "limited_sample"
     },
     "back-bay": {
       "slug": "back-bay",
@@ -18751,7 +19102,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 52,
+      "qa_cpi": 1536.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-back-bay": {
       "slug": "back-bay",
@@ -19169,7 +19523,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 52,
+      "qa_cpi": 1536.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "back bay": {
       "slug": "back-bay",
@@ -19587,7 +19944,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 52,
+      "qa_cpi": 1536.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "big-valley-a": {
       "slug": "big-valley-a",
@@ -19773,7 +20133,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 159,
+      "qa_cpi": 1439.2,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-big-valley-a": {
       "slug": "big-valley-a",
@@ -19959,7 +20322,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 159,
+      "qa_cpi": 1439.2,
+      "qa_ranking_status": "limited_sample"
     },
     "big valley a": {
       "slug": "big-valley-a",
@@ -20145,7 +20511,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 159,
+      "qa_cpi": 1439.2,
+      "qa_ranking_status": "limited_sample"
     },
     "brea-olinda-gold": {
       "slug": "brea-olinda-gold",
@@ -20331,7 +20700,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 74,
+      "qa_cpi": 1518.9,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-brea-olinda-gold": {
       "slug": "brea-olinda-gold",
@@ -20517,7 +20889,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 74,
+      "qa_cpi": 1518.9,
+      "qa_ranking_status": "limited_sample"
     },
     "brea olinda gold": {
       "slug": "brea-olinda-gold",
@@ -20703,7 +21078,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 74,
+      "qa_cpi": 1518.9,
+      "qa_ranking_status": "limited_sample"
     },
     "burlingame-a": {
       "slug": "burlingame-a",
@@ -21049,7 +21427,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 141,
+      "qa_cpi": 1462.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-burlingame-a": {
       "slug": "burlingame-a",
@@ -21395,7 +21776,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 141,
+      "qa_cpi": 1462.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "burlingame a": {
       "slug": "burlingame-a",
@@ -21741,7 +22125,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 141,
+      "qa_cpi": 1462.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc-united-a": {
       "slug": "cc-united-a",
@@ -22231,7 +22618,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 37,
+      "qa_cpi": 1548.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-cc-united-a": {
       "slug": "cc-united-a",
@@ -22721,7 +23111,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 37,
+      "qa_cpi": 1548.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc united a": {
       "slug": "cc-united-a",
@@ -23211,7 +23604,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 37,
+      "qa_cpi": 1548.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc-united-black": {
       "slug": "cc-united-a",
@@ -23701,7 +24097,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 37,
+      "qa_cpi": 1548.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc united black": {
       "slug": "cc-united-a",
@@ -24191,7 +24590,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 37,
+      "qa_cpi": 1548.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc-united-b": {
       "slug": "cc-united-b",
@@ -24617,7 +25019,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 103,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-cc-united-b": {
       "slug": "cc-united-b",
@@ -25043,7 +25448,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 103,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc united b": {
       "slug": "cc-united-b",
@@ -25469,7 +25877,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 103,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc-united-blue": {
       "slug": "cc-united-b",
@@ -25895,7 +26306,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 103,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc united blue": {
       "slug": "cc-united-b",
@@ -26321,7 +26735,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 103,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc-united-c": {
       "slug": "cc-united-c",
@@ -26739,7 +27156,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 176,
+      "qa_cpi": 1396.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-cc-united-c": {
       "slug": "cc-united-c",
@@ -27157,7 +27577,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 176,
+      "qa_cpi": 1396.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc united c": {
       "slug": "cc-united-c",
@@ -27575,7 +27998,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 176,
+      "qa_cpi": 1396.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc-united-white": {
       "slug": "cc-united-c",
@@ -27993,7 +28419,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 176,
+      "qa_cpi": 1396.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc united white": {
       "slug": "cc-united-c",
@@ -28411,7 +28840,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 176,
+      "qa_cpi": 1396.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc1-greenwich-a": {
       "slug": "cc1-greenwich-a",
@@ -28501,7 +28933,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 111,
+      "qa_cpi": 1484.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-cc1-greenwich-a": {
       "slug": "cc1-greenwich-a",
@@ -28591,7 +29026,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 111,
+      "qa_cpi": 1484.5,
+      "qa_ranking_status": "limited_sample"
     },
     "cc1 - greenwich a": {
       "slug": "cc1-greenwich-a",
@@ -28681,7 +29119,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 111,
+      "qa_cpi": 1484.5,
+      "qa_ranking_status": "limited_sample"
     },
     "cc2-greenwich-a": {
       "slug": "cc2-greenwich-a",
@@ -28771,7 +29212,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 77,
+      "qa_cpi": 1515.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-cc2-greenwich-a": {
       "slug": "cc2-greenwich-a",
@@ -28861,7 +29305,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 77,
+      "qa_cpi": 1515.5,
+      "qa_ranking_status": "limited_sample"
     },
     "cc2 - greenwich a": {
       "slug": "cc2-greenwich-a",
@@ -28951,7 +29398,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 77,
+      "qa_cpi": 1515.5,
+      "qa_ranking_status": "limited_sample"
     },
     "cc2-newport-white": {
       "slug": "cc2-newport-white",
@@ -29041,7 +29491,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 78,
+      "qa_cpi": 1515.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-cc2-newport-white": {
       "slug": "cc2-newport-white",
@@ -29131,7 +29584,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 78,
+      "qa_cpi": 1515.5,
+      "qa_ranking_status": "limited_sample"
     },
     "cc2 - newport white": {
       "slug": "cc2-newport-white",
@@ -29221,7 +29677,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 78,
+      "qa_cpi": 1515.5,
+      "qa_ranking_status": "limited_sample"
     },
     "cdm-a": {
       "slug": "cdm-a",
@@ -29503,7 +29962,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 93,
+      "qa_cpi": 1501.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-cdm-a": {
       "slug": "cdm-a",
@@ -29785,7 +30247,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 93,
+      "qa_cpi": 1501.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "cdm a": {
       "slug": "cdm-a",
@@ -30067,7 +30532,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 93,
+      "qa_cpi": 1501.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "cdm-b": {
       "slug": "cdm-b",
@@ -30253,7 +30721,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 160,
+      "qa_cpi": 1436.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-cdm-b": {
       "slug": "cdm-b",
@@ -30439,7 +30910,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 160,
+      "qa_cpi": 1436.3,
+      "qa_ranking_status": "limited_sample"
     },
     "cdm b": {
       "slug": "cdm-b",
@@ -30625,7 +31099,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 160,
+      "qa_cpi": 1436.3,
+      "qa_ranking_status": "limited_sample"
     },
     "cdm-white": {
       "slug": "cdm-white",
@@ -30811,7 +31288,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 64,
+      "qa_cpi": 1527.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-cdm-white": {
       "slug": "cdm-white",
@@ -30997,7 +31477,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 64,
+      "qa_cpi": 1527.3,
+      "qa_ranking_status": "limited_sample"
     },
     "cdm white": {
       "slug": "cdm-white",
@@ -31183,7 +31666,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 64,
+      "qa_cpi": 1527.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ciu-coast-a": {
       "slug": "ciu-coast-a",
@@ -31465,7 +31951,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 84,
+      "qa_cpi": 1509.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-ciu-coast-a": {
       "slug": "ciu-coast-a",
@@ -31747,7 +32236,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 84,
+      "qa_cpi": 1509.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ciu coast a": {
       "slug": "ciu-coast-a",
@@ -32029,7 +32521,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 84,
+      "qa_cpi": 1509.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "cc1-908-a": {
       "slug": "cc1-908-a",
@@ -32119,7 +32614,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 112,
+      "qa_cpi": 1484.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-cc1-908-a": {
       "slug": "cc1-908-a",
@@ -32209,7 +32707,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 112,
+      "qa_cpi": 1484.5,
+      "qa_ranking_status": "limited_sample"
     },
     "cc1 - 908 a": {
       "slug": "cc1-908-a",
@@ -32299,7 +32800,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 112,
+      "qa_cpi": 1484.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ccwp-a": {
       "slug": "ccwp-a",
@@ -32389,7 +32893,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 66,
+      "qa_cpi": 1523.8,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-ccwp-a": {
       "slug": "ccwp-a",
@@ -32479,7 +32986,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 66,
+      "qa_cpi": 1523.8,
+      "qa_ranking_status": "limited_sample"
     },
     "ccwp a": {
       "slug": "ccwp-a",
@@ -32569,7 +33079,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 66,
+      "qa_cpi": 1523.8,
+      "qa_ranking_status": "limited_sample"
     },
     "channel-islands-united-a": {
       "slug": "channel-islands-united-a",
@@ -32851,7 +33364,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 35,
+      "qa_cpi": 1550.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-channel-islands-united-a": {
       "slug": "channel-islands-united-a",
@@ -33133,7 +33649,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 35,
+      "qa_cpi": 1550.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "channel islands united a": {
       "slug": "channel-islands-united-a",
@@ -33415,7 +33934,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 35,
+      "qa_cpi": 1550.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "channel-islands-united-gold": {
       "slug": "channel-islands-united-gold",
@@ -33797,7 +34319,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 3,
+      "qa_cpi": 1650.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-channel-islands-united-gold": {
       "slug": "channel-islands-united-gold",
@@ -34179,7 +34704,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 3,
+      "qa_cpi": 1650.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "channel islands united gold": {
       "slug": "channel-islands-united-gold",
@@ -34561,7 +35089,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 3,
+      "qa_cpi": 1650.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "clovis-red": {
       "slug": "clovis-red",
@@ -34843,7 +35374,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 167,
+      "qa_cpi": 1425.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-clovis-red": {
       "slug": "clovis-red",
@@ -35125,7 +35659,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 167,
+      "qa_cpi": 1425.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "clovis red": {
       "slug": "clovis-red",
@@ -35407,7 +35944,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 167,
+      "qa_cpi": 1425.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "commerce-a": {
       "slug": "commerce-a",
@@ -35825,7 +36365,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 23,
+      "qa_cpi": 1566.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-commerce-a": {
       "slug": "commerce-a",
@@ -36243,7 +36786,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 23,
+      "qa_cpi": 1566.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "commerce a": {
       "slug": "commerce-a",
@@ -36661,7 +37207,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 23,
+      "qa_cpi": 1566.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "crown-city-a": {
       "slug": "crown-city-a",
@@ -36943,7 +37492,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 178,
+      "qa_cpi": 1392.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-crown-city-a": {
       "slug": "crown-city-a",
@@ -37225,7 +37777,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 178,
+      "qa_cpi": 1392.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "crown city a": {
       "slug": "crown-city-a",
@@ -37507,7 +38062,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 178,
+      "qa_cpi": 1392.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ct-premier-a": {
       "slug": "ct-premier-a",
@@ -37693,7 +38251,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 102,
+      "qa_cpi": 1491.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-ct-premier-a": {
       "slug": "ct-premier-a",
@@ -37879,7 +38440,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 102,
+      "qa_cpi": 1491.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ct premier a": {
       "slug": "ct-premier-a",
@@ -38065,7 +38629,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 102,
+      "qa_cpi": 1491.3,
+      "qa_ranking_status": "limited_sample"
     },
     "cvu-a": {
       "slug": "cvu-a",
@@ -38347,7 +38914,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 115,
+      "qa_cpi": 1482.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-cvu-a": {
       "slug": "cvu-a",
@@ -38629,7 +39199,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 115,
+      "qa_cpi": 1482.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "cvu a": {
       "slug": "cvu-a",
@@ -38911,7 +39484,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 115,
+      "qa_cpi": 1482.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "dd1-sd-shores-black": {
       "slug": "dd1-sd-shores-black",
@@ -39001,7 +39577,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 67,
+      "qa_cpi": 1523.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-dd1-sd-shores-black": {
       "slug": "dd1-sd-shores-black",
@@ -39091,7 +39670,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 67,
+      "qa_cpi": 1523.5,
+      "qa_ranking_status": "limited_sample"
     },
     "dd1 - sd shores black": {
       "slug": "dd1-sd-shores-black",
@@ -39181,7 +39763,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 67,
+      "qa_cpi": 1523.5,
+      "qa_ranking_status": "limited_sample"
     },
     "dd1-sd-shores-gold": {
       "slug": "dd1-sd-shores-gold",
@@ -39271,7 +39856,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 120,
+      "qa_cpi": 1479.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-dd1-sd-shores-gold": {
       "slug": "dd1-sd-shores-gold",
@@ -39361,7 +39949,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 120,
+      "qa_cpi": 1479.0,
+      "qa_ranking_status": "limited_sample"
     },
     "dd1 - sd shores gold": {
       "slug": "dd1-sd-shores-gold",
@@ -39451,7 +40042,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 120,
+      "qa_cpi": 1479.0,
+      "qa_ranking_status": "limited_sample"
     },
     "dd2-north-irvine-a": {
       "slug": "dd2-north-irvine-a",
@@ -39541,7 +40135,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 125,
+      "qa_cpi": 1476.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-dd2-north-irvine-a": {
       "slug": "dd2-north-irvine-a",
@@ -39631,7 +40228,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 125,
+      "qa_cpi": 1476.5,
+      "qa_ranking_status": "limited_sample"
     },
     "dd2 - north irvine a": {
       "slug": "dd2-north-irvine-a",
@@ -39721,7 +40321,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 125,
+      "qa_cpi": 1476.5,
+      "qa_ranking_status": "limited_sample"
     },
     "dd2-rose-bowl-red": {
       "slug": "dd2-rose-bowl-red",
@@ -39811,7 +40414,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 71,
+      "qa_cpi": 1521.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-dd2-rose-bowl-red": {
       "slug": "dd2-rose-bowl-red",
@@ -39901,7 +40507,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 71,
+      "qa_cpi": 1521.0,
+      "qa_ranking_status": "limited_sample"
     },
     "dd2 - rose bowl red": {
       "slug": "dd2-rose-bowl-red",
@@ -39991,7 +40600,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 71,
+      "qa_cpi": 1521.0,
+      "qa_ranking_status": "limited_sample"
     },
     "davis": {
       "slug": "davis",
@@ -40341,7 +40953,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 163,
+      "qa_cpi": 1432.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-davis": {
       "slug": "davis",
@@ -40691,7 +41306,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 163,
+      "qa_cpi": 1432.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "devils-gate-a": {
       "slug": "devils-gate-a",
@@ -41097,7 +41715,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 27,
+      "qa_cpi": 1560.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-devils-gate-a": {
       "slug": "devils-gate-a",
@@ -41503,7 +42124,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 27,
+      "qa_cpi": 1560.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "devils gate a": {
       "slug": "devils-gate-a",
@@ -41909,7 +42533,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 27,
+      "qa_cpi": 1560.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "devil-s-gate-a": {
       "slug": "devils-gate-a",
@@ -42315,7 +42942,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 27,
+      "qa_cpi": 1560.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "devil's gate a": {
       "slug": "devils-gate-a",
@@ -42721,7 +43351,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 27,
+      "qa_cpi": 1560.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "diablo-alliance-a": {
       "slug": "diablo-alliance-a",
@@ -43087,7 +43720,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 46,
+      "qa_cpi": 1544.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-diablo-alliance-a": {
       "slug": "diablo-alliance-a",
@@ -43453,7 +44089,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 46,
+      "qa_cpi": 1544.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "diablo alliance a": {
       "slug": "diablo-alliance-a",
@@ -43819,7 +44458,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 46,
+      "qa_cpi": 1544.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "diablo-alliance-b": {
       "slug": "diablo-alliance-b",
@@ -44201,7 +44843,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 143,
+      "qa_cpi": 1461.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-diablo-alliance-b": {
       "slug": "diablo-alliance-b",
@@ -44583,7 +45228,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 143,
+      "qa_cpi": 1461.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "diablo alliance b": {
       "slug": "diablo-alliance-b",
@@ -44965,7 +45613,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 143,
+      "qa_cpi": 1461.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "eca-a": {
       "slug": "eca-a",
@@ -45055,7 +45706,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 60,
+      "qa_cpi": 1528.8,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-eca-a": {
       "slug": "eca-a",
@@ -45145,7 +45799,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 60,
+      "qa_cpi": 1528.8,
+      "qa_ranking_status": "limited_sample"
     },
     "eca a": {
       "slug": "eca-a",
@@ -45235,7 +45892,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 60,
+      "qa_cpi": 1528.8,
+      "qa_ranking_status": "limited_sample"
     },
     "eca-b": {
       "slug": "eca-b",
@@ -45517,7 +46177,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 145,
+      "qa_cpi": 1459.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-eca-b": {
       "slug": "eca-b",
@@ -45799,7 +46462,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 145,
+      "qa_cpi": 1459.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "eca b": {
       "slug": "eca-b",
@@ -46081,7 +46747,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 145,
+      "qa_cpi": 1459.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill-a": {
       "slug": "foothill-a",
@@ -46507,7 +47176,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 186,
+      "qa_cpi": 1373.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-foothill-a": {
       "slug": "foothill-a",
@@ -46933,7 +47605,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 186,
+      "qa_cpi": 1373.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill a": {
       "slug": "foothill-a",
@@ -47359,7 +48034,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 186,
+      "qa_cpi": 1373.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill-black": {
       "slug": "foothill-a",
@@ -47785,7 +48463,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 186,
+      "qa_cpi": 1373.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill black": {
       "slug": "foothill-a",
@@ -48211,7 +48892,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 186,
+      "qa_cpi": 1373.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill-club-a": {
       "slug": "foothill-a",
@@ -48637,7 +49321,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 186,
+      "qa_cpi": 1373.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill club a": {
       "slug": "foothill-a",
@@ -49063,7 +49750,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 186,
+      "qa_cpi": 1373.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill-b": {
       "slug": "foothill-b",
@@ -49433,7 +50123,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 131,
+      "qa_cpi": 1469.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-foothill-b": {
       "slug": "foothill-b",
@@ -49803,7 +50496,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 131,
+      "qa_cpi": 1469.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill b": {
       "slug": "foothill-b",
@@ -50173,7 +50869,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 131,
+      "qa_cpi": 1469.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill-red": {
       "slug": "foothill-b",
@@ -50543,7 +51242,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 131,
+      "qa_cpi": 1469.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "foothill red": {
       "slug": "foothill-b",
@@ -50913,7 +51615,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 131,
+      "qa_cpi": 1469.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "gate-14u-a": {
       "slug": "gate-14u-a",
@@ -51147,7 +51852,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 94,
+      "qa_cpi": 1500.2,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-gate-14u-a": {
       "slug": "gate-14u-a",
@@ -51381,7 +52089,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 94,
+      "qa_cpi": 1500.2,
+      "qa_ranking_status": "limited_sample"
     },
     "gate 14u a": {
       "slug": "gate-14u-a",
@@ -51615,7 +52326,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 94,
+      "qa_cpi": 1500.2,
+      "qa_ranking_status": "limited_sample"
     },
     "gold-coast-a": {
       "slug": "gold-coast-a",
@@ -51949,7 +52663,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 14,
+      "qa_cpi": 1593.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-gold-coast-a": {
       "slug": "gold-coast-a",
@@ -52283,7 +53000,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 14,
+      "qa_cpi": 1593.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "gold coast a": {
       "slug": "gold-coast-a",
@@ -52617,7 +53337,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 14,
+      "qa_cpi": 1593.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "greenwich-a": {
       "slug": "greenwich-a",
@@ -53027,7 +53750,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 109,
+      "qa_cpi": 1486.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-greenwich-a": {
       "slug": "greenwich-a",
@@ -53437,7 +54163,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 109,
+      "qa_cpi": 1486.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "greenwich a": {
       "slug": "greenwich-a",
@@ -53847,7 +54576,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 109,
+      "qa_cpi": 1486.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "hieland-a": {
       "slug": "hieland-a",
@@ -54117,7 +54849,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 164,
+      "qa_cpi": 1431.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-hieland-a": {
       "slug": "hieland-a",
@@ -54387,7 +55122,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 164,
+      "qa_cpi": 1431.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "hieland a": {
       "slug": "hieland-a",
@@ -54657,7 +55395,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 164,
+      "qa_cpi": 1431.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "honolulu-blue": {
       "slug": "honolulu-blue",
@@ -54843,7 +55584,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 158,
+      "qa_cpi": 1439.8,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-honolulu-blue": {
       "slug": "honolulu-blue",
@@ -55029,7 +55773,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 158,
+      "qa_cpi": 1439.8,
+      "qa_ranking_status": "limited_sample"
     },
     "honolulu blue": {
       "slug": "honolulu-blue",
@@ -55215,7 +55962,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 158,
+      "qa_cpi": 1439.8,
+      "qa_ranking_status": "limited_sample"
     },
     "honolulu-green": {
       "slug": "honolulu-green",
@@ -55449,7 +56199,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 147,
+      "qa_cpi": 1458.9,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-honolulu-green": {
       "slug": "honolulu-green",
@@ -55683,7 +56436,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 147,
+      "qa_cpi": 1458.9,
+      "qa_ranking_status": "limited_sample"
     },
     "honolulu green": {
       "slug": "honolulu-green",
@@ -55917,7 +56673,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 147,
+      "qa_cpi": 1458.9,
+      "qa_ranking_status": "limited_sample"
     },
     "kingsburg-a": {
       "slug": "kingsburg-a",
@@ -56199,7 +56958,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 110,
+      "qa_cpi": 1486.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-kingsburg-a": {
       "slug": "kingsburg-a",
@@ -56481,7 +57243,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 110,
+      "qa_cpi": 1486.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "kingsburg a": {
       "slug": "kingsburg-a",
@@ -56763,7 +57528,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 110,
+      "qa_cpi": 1486.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "la-city-united-a": {
       "slug": "la-city-united-a",
@@ -57077,7 +57845,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 92,
+      "qa_cpi": 1502.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-la-city-united-a": {
       "slug": "la-city-united-a",
@@ -57391,7 +58162,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 92,
+      "qa_cpi": 1502.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "la city united a": {
       "slug": "la-city-united-a",
@@ -57705,7 +58479,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 92,
+      "qa_cpi": 1502.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "la-jolla-united-b": {
       "slug": "la-jolla-united-b",
@@ -57987,7 +58764,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 135,
+      "qa_cpi": 1468.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-la-jolla-united-b": {
       "slug": "la-jolla-united-b",
@@ -58269,7 +59049,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 135,
+      "qa_cpi": 1468.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "la jolla united b": {
       "slug": "la-jolla-united-b",
@@ -58551,7 +59334,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 135,
+      "qa_cpi": 1468.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "la-jolla-united-gold": {
       "slug": "la-jolla-united-gold",
@@ -58737,7 +59523,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 121,
+      "qa_cpi": 1478.4,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-la-jolla-united-gold": {
       "slug": "la-jolla-united-gold",
@@ -58923,7 +59712,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 121,
+      "qa_cpi": 1478.4,
+      "qa_ranking_status": "limited_sample"
     },
     "la jolla united gold": {
       "slug": "la-jolla-united-gold",
@@ -59109,7 +59901,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 121,
+      "qa_cpi": 1478.4,
+      "qa_ranking_status": "limited_sample"
     },
     "la-jolla-united-navy": {
       "slug": "la-jolla-united-navy",
@@ -59391,7 +60186,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 12,
+      "qa_cpi": 1599.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-la-jolla-united-navy": {
       "slug": "la-jolla-united-navy",
@@ -59673,7 +60471,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 12,
+      "qa_cpi": 1599.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "la jolla united navy": {
       "slug": "la-jolla-united-navy",
@@ -59955,7 +60756,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 12,
+      "qa_cpi": 1599.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "la-premier-a": {
       "slug": "la-premier-a",
@@ -60489,7 +61293,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 7,
+      "qa_cpi": 1637.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-la-premier-a": {
       "slug": "la-premier-a",
@@ -61023,7 +61830,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 7,
+      "qa_cpi": 1637.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "la premier a": {
       "slug": "la-premier-a",
@@ -61557,7 +62367,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 7,
+      "qa_cpi": 1637.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "la-jolla-united-a": {
       "slug": "la-jolla-united-a",
@@ -61923,7 +62736,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 1,
+      "qa_cpi": 1706.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-la-jolla-united-a": {
       "slug": "la-jolla-united-a",
@@ -62289,7 +63105,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 1,
+      "qa_cpi": 1706.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "la jolla united a": {
       "slug": "la-jolla-united-a",
@@ -62655,7 +63474,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 1,
+      "qa_cpi": 1706.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "lacuwp-a": {
       "slug": "lacuwp-a",
@@ -62841,7 +63663,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 69,
+      "qa_cpi": 1522.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-lacuwp-a": {
       "slug": "lacuwp-a",
@@ -63027,7 +63852,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 69,
+      "qa_cpi": 1522.7,
+      "qa_ranking_status": "limited_sample"
     },
     "lacuwp a": {
       "slug": "lacuwp-a",
@@ -63213,7 +64041,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 69,
+      "qa_cpi": 1522.7,
+      "qa_ranking_status": "limited_sample"
     },
     "lamorinda-a": {
       "slug": "lamorinda-a",
@@ -63683,7 +64514,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 45,
+      "qa_cpi": 1545.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-lamorinda-a": {
       "slug": "lamorinda-a",
@@ -64153,7 +64987,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 45,
+      "qa_cpi": 1545.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "lamorinda a": {
       "slug": "lamorinda-a",
@@ -64623,7 +65460,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 45,
+      "qa_cpi": 1545.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "lamorinda-b": {
       "slug": "lamorinda-b",
@@ -65073,7 +65913,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 39,
+      "qa_cpi": 1547.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-lamorinda-b": {
       "slug": "lamorinda-b",
@@ -65523,7 +66366,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 39,
+      "qa_cpi": 1547.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "lamorinda b": {
       "slug": "lamorinda-b",
@@ -65973,7 +66819,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 39,
+      "qa_cpi": 1547.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "lamorinda-c": {
       "slug": "lamorinda-c",
@@ -66351,7 +67200,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 182,
+      "qa_cpi": 1381.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-lamorinda-c": {
       "slug": "lamorinda-c",
@@ -66729,7 +67581,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 182,
+      "qa_cpi": 1381.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "lamorinda c": {
       "slug": "lamorinda-c",
@@ -67107,7 +67962,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 182,
+      "qa_cpi": 1381.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "los-al-opal-a": {
       "slug": "los-al-opal-a",
@@ -67245,7 +68103,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 132,
+      "qa_cpi": 1469.1,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-los-al-opal-a": {
       "slug": "los-al-opal-a",
@@ -67383,7 +68244,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 132,
+      "qa_cpi": 1469.1,
+      "qa_ranking_status": "limited_sample"
     },
     "los al opal a": {
       "slug": "los-al-opal-a",
@@ -67521,7 +68385,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 132,
+      "qa_cpi": 1469.1,
+      "qa_ranking_status": "limited_sample"
     },
     "los-alamitos-a": {
       "slug": "los-alamitos-a",
@@ -67803,7 +68670,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 62,
+      "qa_cpi": 1528.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-los-alamitos-a": {
       "slug": "los-alamitos-a",
@@ -68085,7 +68955,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 62,
+      "qa_cpi": 1528.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "los alamitos a": {
       "slug": "los-alamitos-a",
@@ -68367,7 +69240,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 62,
+      "qa_cpi": 1528.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "los-angeles-wpc-a": {
       "slug": "los-angeles-wpc-a",
@@ -68785,7 +69661,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 15,
+      "qa_cpi": 1590.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-los-angeles-wpc-a": {
       "slug": "los-angeles-wpc-a",
@@ -69203,7 +70082,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 15,
+      "qa_cpi": 1590.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "los angeles wpc a": {
       "slug": "los-angeles-wpc-a",
@@ -69621,7 +70503,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 15,
+      "qa_cpi": 1590.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "lowpo-a": {
       "slug": "lowpo-a",
@@ -69759,7 +70644,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 142,
+      "qa_cpi": 1462.1,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-lowpo-a": {
       "slug": "lowpo-a",
@@ -69897,7 +70785,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 142,
+      "qa_cpi": 1462.1,
+      "qa_ranking_status": "limited_sample"
     },
     "lowpo a": {
       "slug": "lowpo-a",
@@ -70035,7 +70926,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 142,
+      "qa_cpi": 1462.1,
+      "qa_ranking_status": "limited_sample"
     },
     "loyola-a": {
       "slug": "loyola-a",
@@ -70401,7 +71295,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 181,
+      "qa_cpi": 1384.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-loyola-a": {
       "slug": "loyola-a",
@@ -70767,7 +71664,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 181,
+      "qa_cpi": 1384.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "loyola a": {
       "slug": "loyola-a",
@@ -71133,7 +72033,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 181,
+      "qa_cpi": 1384.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "loyola-wpc-a": {
       "slug": "loyola-wpc-a",
@@ -71367,7 +72270,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 54,
+      "qa_cpi": 1535.9,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-loyola-wpc-a": {
       "slug": "loyola-wpc-a",
@@ -71601,7 +72507,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 54,
+      "qa_cpi": 1535.9,
+      "qa_ranking_status": "limited_sample"
     },
     "loyola wpc a": {
       "slug": "loyola-wpc-a",
@@ -71835,7 +72744,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 54,
+      "qa_cpi": 1535.9,
+      "qa_ranking_status": "limited_sample"
     },
     "mm1-cc-united-blue": {
       "slug": "mm1-cc-united-blue",
@@ -71925,7 +72837,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 75,
+      "qa_cpi": 1518.9,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-mm1-cc-united-blue": {
       "slug": "mm1-cc-united-blue",
@@ -72015,7 +72930,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 75,
+      "qa_cpi": 1518.9,
+      "qa_ranking_status": "limited_sample"
     },
     "mm1 - cc united blue": {
       "slug": "mm1-cc-united-blue",
@@ -72105,7 +73023,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 75,
+      "qa_cpi": 1518.9,
+      "qa_ranking_status": "limited_sample"
     },
     "mm2-sharks-a": {
       "slug": "mm2-sharks-a",
@@ -72195,7 +73116,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 116,
+      "qa_cpi": 1481.1,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-mm2-sharks-a": {
       "slug": "mm2-sharks-a",
@@ -72285,7 +73209,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 116,
+      "qa_cpi": 1481.1,
+      "qa_ranking_status": "limited_sample"
     },
     "mm2 - sharks a": {
       "slug": "mm2-sharks-a",
@@ -72375,7 +73302,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 116,
+      "qa_cpi": 1481.1,
+      "qa_ranking_status": "limited_sample"
     },
     "midpen-a": {
       "slug": "midpen-a",
@@ -72753,7 +73683,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 183,
+      "qa_cpi": 1381.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-midpen-a": {
       "slug": "midpen-a",
@@ -73131,7 +74064,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 183,
+      "qa_cpi": 1381.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "midpen a": {
       "slug": "midpen-a",
@@ -73509,7 +74445,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 183,
+      "qa_cpi": 1381.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "mission-12a-a": {
       "slug": "mission-12a-a",
@@ -73743,7 +74682,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 91,
+      "qa_cpi": 1502.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-mission-12a-a": {
       "slug": "mission-12a-a",
@@ -73977,7 +74919,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 91,
+      "qa_cpi": 1502.5,
+      "qa_ranking_status": "limited_sample"
     },
     "mission 12a a": {
       "slug": "mission-12a-a",
@@ -74211,7 +75156,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 91,
+      "qa_cpi": 1502.5,
+      "qa_ranking_status": "limited_sample"
     },
     "mission-14b-a": {
       "slug": "mission-14b-a",
@@ -74397,7 +75345,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 117,
+      "qa_cpi": 1479.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-mission-14b-a": {
       "slug": "mission-14b-a",
@@ -74583,7 +75534,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 117,
+      "qa_cpi": 1479.7,
+      "qa_ranking_status": "limited_sample"
     },
     "mission 14b a": {
       "slug": "mission-14b-a",
@@ -74769,7 +75723,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 117,
+      "qa_cpi": 1479.7,
+      "qa_ranking_status": "limited_sample"
     },
     "mission-wpc-a": {
       "slug": "mission-wpc-a",
@@ -75255,7 +76212,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 6,
+      "qa_cpi": 1638.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-mission-wpc-a": {
       "slug": "mission-wpc-a",
@@ -75741,7 +76701,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 6,
+      "qa_cpi": 1638.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "mission wpc a": {
       "slug": "mission-wpc-a",
@@ -76227,7 +77190,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 6,
+      "qa_cpi": 1638.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "mission-wpc-b": {
       "slug": "mission-wpc-b",
@@ -76629,7 +77595,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 2,
+      "qa_cpi": 1657.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-mission-wpc-b": {
       "slug": "mission-wpc-b",
@@ -77031,7 +78000,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 2,
+      "qa_cpi": 1657.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "mission wpc b": {
       "slug": "mission-wpc-b",
@@ -77433,7 +78405,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 2,
+      "qa_cpi": 1657.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ngen-a": {
       "slug": "ngen-a",
@@ -77815,7 +78790,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 179,
+      "qa_cpi": 1392.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-ngen-a": {
       "slug": "ngen-a",
@@ -78197,7 +79175,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 179,
+      "qa_cpi": 1392.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ngen a": {
       "slug": "ngen-a",
@@ -78579,7 +79560,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 179,
+      "qa_cpi": 1392.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "nn2-kingsburg-kings-a": {
       "slug": "nn2-kingsburg-kings-a",
@@ -78669,7 +79653,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 70,
+      "qa_cpi": 1521.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-nn2-kingsburg-kings-a": {
       "slug": "nn2-kingsburg-kings-a",
@@ -78759,7 +79746,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 70,
+      "qa_cpi": 1521.7,
+      "qa_ranking_status": "limited_sample"
     },
     "nn2 - kingsburg kings a": {
       "slug": "nn2-kingsburg-kings-a",
@@ -78849,7 +79839,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 70,
+      "qa_cpi": 1521.7,
+      "qa_ranking_status": "limited_sample"
     },
     "nsd-stars-a": {
       "slug": "nsd-stars-a",
@@ -79035,7 +80028,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 29,
+      "qa_cpi": 1557.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-nsd-stars-a": {
       "slug": "nsd-stars-a",
@@ -79221,7 +80217,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 29,
+      "qa_cpi": 1557.7,
+      "qa_ranking_status": "limited_sample"
     },
     "nsd stars a": {
       "slug": "nsd-stars-a",
@@ -79407,7 +80406,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 29,
+      "qa_cpi": 1557.7,
+      "qa_ranking_status": "limited_sample"
     },
     "nado-a": {
       "slug": "nado-a",
@@ -79593,7 +80595,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 34,
+      "qa_cpi": 1550.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-nado-a": {
       "slug": "nado-a",
@@ -79779,7 +80784,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 34,
+      "qa_cpi": 1550.7,
+      "qa_ranking_status": "limited_sample"
     },
     "nado a": {
       "slug": "nado-a",
@@ -79965,7 +80973,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 34,
+      "qa_cpi": 1550.7,
+      "qa_ranking_status": "limited_sample"
     },
     "newport-beach-a": {
       "slug": "newport-beach-a",
@@ -80435,7 +81446,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 9,
+      "qa_cpi": 1619.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-newport-beach-a": {
       "slug": "newport-beach-a",
@@ -80905,7 +81919,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 9,
+      "qa_cpi": 1619.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "newport beach a": {
       "slug": "newport-beach-a",
@@ -81375,7 +82392,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 9,
+      "qa_cpi": 1619.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "newport-beach-blue": {
       "slug": "newport-beach-a",
@@ -81845,7 +82865,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 9,
+      "qa_cpi": 1619.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "newport beach blue": {
       "slug": "newport-beach-a",
@@ -82315,7 +83338,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 9,
+      "qa_cpi": 1619.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "newport-beach-b": {
       "slug": "newport-beach-b",
@@ -82653,7 +83679,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 53,
+      "qa_cpi": 1536.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-newport-beach-b": {
       "slug": "newport-beach-b",
@@ -82991,7 +84020,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 53,
+      "qa_cpi": 1536.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "newport beach b": {
       "slug": "newport-beach-b",
@@ -83329,7 +84361,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 53,
+      "qa_cpi": 1536.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "newport-beach-silver": {
       "slug": "newport-beach-b",
@@ -83667,7 +84702,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 53,
+      "qa_cpi": 1536.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "newport beach silver": {
       "slug": "newport-beach-b",
@@ -84005,7 +85043,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 53,
+      "qa_cpi": 1536.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "newport-beach-c": {
       "slug": "newport-beach-c",
@@ -84195,7 +85236,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 76,
+      "qa_cpi": 1516.1,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-newport-beach-c": {
       "slug": "newport-beach-c",
@@ -84385,7 +85429,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 76,
+      "qa_cpi": 1516.1,
+      "qa_ranking_status": "limited_sample"
     },
     "newport beach c": {
       "slug": "newport-beach-c",
@@ -84575,7 +85622,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 76,
+      "qa_cpi": 1516.1,
+      "qa_ranking_status": "limited_sample"
     },
     "newport-beach-white": {
       "slug": "newport-beach-c",
@@ -84765,7 +85815,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 76,
+      "qa_cpi": 1516.1,
+      "qa_ranking_status": "limited_sample"
     },
     "newport beach white": {
       "slug": "newport-beach-c",
@@ -84955,7 +86008,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 76,
+      "qa_cpi": 1516.1,
+      "qa_ranking_status": "limited_sample"
     },
     "newport-white": {
       "slug": "newport-white",
@@ -85093,7 +86149,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 51,
+      "qa_cpi": 1536.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-newport-white": {
       "slug": "newport-white",
@@ -85231,7 +86290,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 51,
+      "qa_cpi": 1536.5,
+      "qa_ranking_status": "limited_sample"
     },
     "newport white": {
       "slug": "newport-white",
@@ -85369,7 +86431,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 51,
+      "qa_cpi": 1536.5,
+      "qa_ranking_status": "limited_sample"
     },
     "nn1-chawp-a": {
       "slug": "nn1-chawp-a",
@@ -85459,7 +86524,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 122,
+      "qa_cpi": 1478.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-nn1-chawp-a": {
       "slug": "nn1-chawp-a",
@@ -85549,7 +86617,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 122,
+      "qa_cpi": 1478.3,
+      "qa_ranking_status": "limited_sample"
     },
     "nn1 - chawp a": {
       "slug": "nn1-chawp-a",
@@ -85639,7 +86710,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 122,
+      "qa_cpi": 1478.3,
+      "qa_ranking_status": "limited_sample"
     },
     "norcal-a": {
       "slug": "norcal-a",
@@ -86041,7 +87115,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 4,
+      "qa_cpi": 1649.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-norcal-a": {
       "slug": "norcal-a",
@@ -86443,7 +87520,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 4,
+      "qa_cpi": 1649.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal a": {
       "slug": "norcal-a",
@@ -86845,7 +87925,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 4,
+      "qa_cpi": 1649.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal-aquatics-b": {
       "slug": "norcal-aquatics-b",
@@ -87203,7 +88286,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 31,
+      "qa_cpi": 1555.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-norcal-aquatics-b": {
       "slug": "norcal-aquatics-b",
@@ -87561,7 +88647,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 31,
+      "qa_cpi": 1555.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal aquatics b": {
       "slug": "norcal-aquatics-b",
@@ -87919,7 +89008,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 31,
+      "qa_cpi": 1555.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal-b": {
       "slug": "norcal-aquatics-b",
@@ -88277,7 +89369,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 31,
+      "qa_cpi": 1555.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal b": {
       "slug": "norcal-aquatics-b",
@@ -88635,7 +89730,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 31,
+      "qa_cpi": 1555.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal-black": {
       "slug": "norcal-black",
@@ -88917,7 +90015,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 8,
+      "qa_cpi": 1624.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-norcal-black": {
       "slug": "norcal-black",
@@ -89199,7 +90300,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 8,
+      "qa_cpi": 1624.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal black": {
       "slug": "norcal-black",
@@ -89481,7 +90585,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 8,
+      "qa_cpi": 1624.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal-teal-a": {
       "slug": "norcal-teal-a",
@@ -89827,7 +90934,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 104,
+      "qa_cpi": 1488.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-norcal-teal-a": {
       "slug": "norcal-teal-a",
@@ -90173,7 +91283,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 104,
+      "qa_cpi": 1488.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "norcal teal a": {
       "slug": "norcal-teal-a",
@@ -90519,7 +91632,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 104,
+      "qa_cpi": 1488.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "north-irvine-12-black": {
       "slug": "north-irvine-12-black",
@@ -90705,7 +91821,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 105,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-north-irvine-12-black": {
       "slug": "north-irvine-12-black",
@@ -90891,7 +92010,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 105,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "north irvine 12 black": {
       "slug": "north-irvine-12-black",
@@ -91077,7 +92199,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 105,
+      "qa_cpi": 1488.0,
+      "qa_ranking_status": "limited_sample"
     },
     "north-irvine-a": {
       "slug": "north-irvine-a",
@@ -91551,7 +92676,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 114,
+      "qa_cpi": 1482.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-north-irvine-a": {
       "slug": "north-irvine-a",
@@ -92025,7 +93153,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 114,
+      "qa_cpi": 1482.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "north irvine a": {
       "slug": "north-irvine-a",
@@ -92499,7 +93630,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 114,
+      "qa_cpi": 1482.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "north-irvine-red": {
       "slug": "north-irvine-a",
@@ -92973,7 +94107,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 114,
+      "qa_cpi": 1482.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "north irvine red": {
       "slug": "north-irvine-a",
@@ -93447,7 +94584,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 114,
+      "qa_cpi": 1482.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "north-irvine-b": {
       "slug": "north-irvine-b",
@@ -93853,7 +94993,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 171,
+      "qa_cpi": 1408.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-north-irvine-b": {
       "slug": "north-irvine-b",
@@ -94259,7 +95402,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 171,
+      "qa_cpi": 1408.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "north irvine b": {
       "slug": "north-irvine-b",
@@ -94665,7 +95811,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 171,
+      "qa_cpi": 1408.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "north-irvine-black": {
       "slug": "north-irvine-b",
@@ -95071,7 +96220,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 171,
+      "qa_cpi": 1408.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "north irvine black": {
       "slug": "north-irvine-b",
@@ -95477,7 +96629,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 171,
+      "qa_cpi": 1408.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "northwest-a": {
       "slug": "northwest-a",
@@ -95879,7 +97034,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 153,
+      "qa_cpi": 1451.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-northwest-a": {
       "slug": "northwest-a",
@@ -96281,7 +97439,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 153,
+      "qa_cpi": 1451.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "northwest a": {
       "slug": "northwest-a",
@@ -96683,7 +97844,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 153,
+      "qa_cpi": 1451.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "orwp-14u-black": {
       "slug": "orwp-14u-black",
@@ -96965,7 +98129,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 88,
+      "qa_cpi": 1505.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-orwp-14u-black": {
       "slug": "orwp-14u-black",
@@ -97247,7 +98414,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 88,
+      "qa_cpi": 1505.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "orwp 14u black": {
       "slug": "orwp-14u-black",
@@ -97529,7 +98699,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 88,
+      "qa_cpi": 1505.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "orwp-red": {
       "slug": "orwp-red",
@@ -97843,7 +99016,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 156,
+      "qa_cpi": 1450.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-orwp-red": {
       "slug": "orwp-red",
@@ -98157,7 +99333,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 156,
+      "qa_cpi": 1450.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "orwp red": {
       "slug": "orwp-red",
@@ -98471,7 +99650,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 156,
+      "qa_cpi": 1450.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "orange-county-wpc-b": {
       "slug": "orange-county-wpc-b",
@@ -98705,7 +99887,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 44,
+      "qa_cpi": 1546.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-orange-county-wpc-b": {
       "slug": "orange-county-wpc-b",
@@ -98939,7 +100124,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 44,
+      "qa_cpi": 1546.3,
+      "qa_ranking_status": "limited_sample"
     },
     "orange county wpc b": {
       "slug": "orange-county-wpc-b",
@@ -99173,7 +100361,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 44,
+      "qa_cpi": 1546.3,
+      "qa_ranking_status": "limited_sample"
     },
     "orange-county-wpc-blue": {
       "slug": "orange-county-wpc-blue",
@@ -99407,7 +100598,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 96,
+      "qa_cpi": 1497.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-orange-county-wpc-blue": {
       "slug": "orange-county-wpc-blue",
@@ -99641,7 +100835,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 96,
+      "qa_cpi": 1497.0,
+      "qa_ranking_status": "limited_sample"
     },
     "orange county wpc blue": {
       "slug": "orange-county-wpc-blue",
@@ -99875,7 +101072,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 96,
+      "qa_cpi": 1497.0,
+      "qa_ranking_status": "limited_sample"
     },
     "orange-county-wpc-red": {
       "slug": "orange-county-wpc-red",
@@ -100109,7 +101309,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 87,
+      "qa_cpi": 1506.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-orange-county-wpc-red": {
       "slug": "orange-county-wpc-red",
@@ -100343,7 +101546,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 87,
+      "qa_cpi": 1506.7,
+      "qa_ranking_status": "limited_sample"
     },
     "orange county wpc red": {
       "slug": "orange-county-wpc-red",
@@ -100577,7 +101783,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 87,
+      "qa_cpi": 1506.7,
+      "qa_ranking_status": "limited_sample"
     },
     "orwp-a": {
       "slug": "orwp-a",
@@ -100767,7 +101976,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 95,
+      "qa_cpi": 1497.4,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-orwp-a": {
       "slug": "orwp-a",
@@ -100957,7 +102169,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 95,
+      "qa_cpi": 1497.4,
+      "qa_ranking_status": "limited_sample"
     },
     "orwp a": {
       "slug": "orwp-a",
@@ -101147,7 +102362,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 95,
+      "qa_cpi": 1497.4,
+      "qa_ranking_status": "limited_sample"
     },
     "orwp-b": {
       "slug": "orwp-b",
@@ -101333,7 +102551,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 108,
+      "qa_cpi": 1486.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-orwp-b": {
       "slug": "orwp-b",
@@ -101519,7 +102740,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 108,
+      "qa_cpi": 1486.7,
+      "qa_ranking_status": "limited_sample"
     },
     "orwp b": {
       "slug": "orwp-b",
@@ -101705,7 +102929,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 108,
+      "qa_cpi": 1486.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ovac-a": {
       "slug": "ovac-a",
@@ -102019,7 +103246,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 59,
+      "qa_cpi": 1529.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-ovac-a": {
       "slug": "ovac-a",
@@ -102333,7 +103563,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 59,
+      "qa_cpi": 1529.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ovac a": {
       "slug": "ovac-a",
@@ -102647,7 +103880,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 59,
+      "qa_cpi": 1529.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "pac-a": {
       "slug": "pac-a",
@@ -102961,7 +104197,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 100,
+      "qa_cpi": 1492.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-pac-a": {
       "slug": "pac-a",
@@ -103275,7 +104514,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 100,
+      "qa_cpi": 1492.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "pac a": {
       "slug": "pac-a",
@@ -103589,7 +104831,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 100,
+      "qa_cpi": 1492.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "palos-verdes-a": {
       "slug": "palos-verdes-a",
@@ -103959,7 +105204,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 17,
+      "qa_cpi": 1579.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-palos-verdes-a": {
       "slug": "palos-verdes-a",
@@ -104329,7 +105577,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 17,
+      "qa_cpi": 1579.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "palos verdes a": {
       "slug": "palos-verdes-a",
@@ -104699,7 +105950,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 17,
+      "qa_cpi": 1579.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "palos-verdes-black": {
       "slug": "palos-verdes-a",
@@ -105069,7 +106323,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 17,
+      "qa_cpi": 1579.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "palos verdes black": {
       "slug": "palos-verdes-a",
@@ -105439,7 +106696,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 17,
+      "qa_cpi": 1579.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "palos-verdes-b": {
       "slug": "palos-verdes-b",
@@ -105877,7 +107137,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 16,
+      "qa_cpi": 1586.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-palos-verdes-b": {
       "slug": "palos-verdes-b",
@@ -106315,7 +107578,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 16,
+      "qa_cpi": 1586.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "palos verdes b": {
       "slug": "palos-verdes-b",
@@ -106753,7 +108019,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 16,
+      "qa_cpi": 1586.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "palos-verdes-blue": {
       "slug": "palos-verdes-b",
@@ -107191,7 +108460,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 16,
+      "qa_cpi": 1586.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "palos verdes blue": {
       "slug": "palos-verdes-b",
@@ -107629,7 +108901,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 16,
+      "qa_cpi": 1586.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "pasadena-ac-a": {
       "slug": "pasadena-ac-a",
@@ -107911,7 +109186,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 32,
+      "qa_cpi": 1555.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-pasadena-ac-a": {
       "slug": "pasadena-ac-a",
@@ -108193,7 +109471,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 32,
+      "qa_cpi": 1555.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "pasadena ac a": {
       "slug": "pasadena-ac-a",
@@ -108475,7 +109756,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 32,
+      "qa_cpi": 1555.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "pasadena-ac-orange": {
       "slug": "pasadena-ac-orange",
@@ -108661,7 +109945,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 26,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-pasadena-ac-orange": {
       "slug": "pasadena-ac-orange",
@@ -108847,7 +110134,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 26,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "limited_sample"
     },
     "pasadena ac orange": {
       "slug": "pasadena-ac-orange",
@@ -109033,7 +110323,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 26,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "limited_sample"
     },
     "patriot-a": {
       "slug": "patriot-a",
@@ -109471,7 +110764,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 124,
+      "qa_cpi": 1476.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-patriot-a": {
       "slug": "patriot-a",
@@ -109909,7 +111205,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 124,
+      "qa_cpi": 1476.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriot a": {
       "slug": "patriot-a",
@@ -110347,7 +111646,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 124,
+      "qa_cpi": 1476.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriot-navy": {
       "slug": "patriot-a",
@@ -110785,7 +112087,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 124,
+      "qa_cpi": 1476.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriot navy": {
       "slug": "patriot-a",
@@ -111223,7 +112528,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 124,
+      "qa_cpi": 1476.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriot-b": {
       "slug": "patriot-b",
@@ -111669,7 +112977,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 25,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-patriot-b": {
       "slug": "patriot-b",
@@ -112115,7 +113426,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 25,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriot b": {
       "slug": "patriot-b",
@@ -112561,7 +113875,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 25,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriot-red": {
       "slug": "patriot-b",
@@ -113007,7 +114324,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 25,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriot red": {
       "slug": "patriot-b",
@@ -113453,7 +114773,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 25,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriots-red": {
       "slug": "patriot-b",
@@ -113899,7 +115222,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 25,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "patriots red": {
       "slug": "patriot-b",
@@ -114345,7 +115671,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 25,
+      "qa_cpi": 1560.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "pegasus": {
       "slug": "pegasus",
@@ -114627,7 +115956,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 174,
+      "qa_cpi": 1403.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-pegasus": {
       "slug": "pegasus",
@@ -114909,7 +116241,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 174,
+      "qa_cpi": 1403.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "poway-valley-black": {
       "slug": "poway-valley-black",
@@ -115191,7 +116526,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 13,
+      "qa_cpi": 1595.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-poway-valley-black": {
       "slug": "poway-valley-black",
@@ -115473,7 +116811,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 13,
+      "qa_cpi": 1595.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "poway valley black": {
       "slug": "poway-valley-black",
@@ -115755,7 +117096,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 13,
+      "qa_cpi": 1595.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "pride-a": {
       "slug": "pride-a",
@@ -116037,7 +117381,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 61,
+      "qa_cpi": 1528.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-pride-a": {
       "slug": "pride-a",
@@ -116319,7 +117666,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 61,
+      "qa_cpi": 1528.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "pride a": {
       "slug": "pride-a",
@@ -116601,7 +117951,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 61,
+      "qa_cpi": 1528.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "pride-black": {
       "slug": "pride-black",
@@ -116983,7 +118336,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 140,
+      "qa_cpi": 1463.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-pride-black": {
       "slug": "pride-black",
@@ -117365,7 +118721,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 140,
+      "qa_cpi": 1463.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "pride black": {
       "slug": "pride-black",
@@ -117747,7 +119106,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 140,
+      "qa_cpi": 1463.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "pride-red": {
       "slug": "pride-red",
@@ -118065,7 +119427,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 129,
+      "qa_cpi": 1473.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-pride-red": {
       "slug": "pride-red",
@@ -118383,7 +119748,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 129,
+      "qa_cpi": 1473.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "pride red": {
       "slug": "pride-red",
@@ -118701,7 +120069,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 129,
+      "qa_cpi": 1473.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "puget-sound-a": {
       "slug": "puget-sound-a",
@@ -118791,7 +120162,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 73,
+      "qa_cpi": 1520.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-puget-sound-a": {
       "slug": "puget-sound-a",
@@ -118881,7 +120255,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 73,
+      "qa_cpi": 1520.0,
+      "qa_ranking_status": "limited_sample"
     },
     "puget sound a": {
       "slug": "puget-sound-a",
@@ -118971,7 +120348,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 73,
+      "qa_cpi": 1520.0,
+      "qa_ranking_status": "limited_sample"
     },
     "rain-city-a": {
       "slug": "rain-city-a",
@@ -119253,7 +120633,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 118,
+      "qa_cpi": 1479.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-rain-city-a": {
       "slug": "rain-city-a",
@@ -119535,7 +120918,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 118,
+      "qa_cpi": 1479.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "rain city a": {
       "slug": "rain-city-a",
@@ -119817,7 +121203,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 118,
+      "qa_cpi": 1479.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "rancho-tsunami-a": {
       "slug": "rancho-tsunami-a",
@@ -120099,7 +121488,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 10,
+      "qa_cpi": 1607.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-rancho-tsunami-a": {
       "slug": "rancho-tsunami-a",
@@ -120381,7 +121773,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 10,
+      "qa_cpi": 1607.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "rancho tsunami a": {
       "slug": "rancho-tsunami-a",
@@ -120663,7 +122058,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 10,
+      "qa_cpi": 1607.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "rancho-tsunami-blue": {
       "slug": "rancho-tsunami-blue",
@@ -120897,7 +122295,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 99,
+      "qa_cpi": 1494.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-rancho-tsunami-blue": {
       "slug": "rancho-tsunami-blue",
@@ -121131,7 +122532,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 99,
+      "qa_cpi": 1494.7,
+      "qa_ranking_status": "limited_sample"
     },
     "rancho tsunami blue": {
       "slug": "rancho-tsunami-blue",
@@ -121365,7 +122769,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 99,
+      "qa_cpi": 1494.7,
+      "qa_ranking_status": "limited_sample"
     },
     "riverside-a": {
       "slug": "riverside-a",
@@ -121551,7 +122958,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 83,
+      "qa_cpi": 1510.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-riverside-a": {
       "slug": "riverside-a",
@@ -121737,7 +123147,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 83,
+      "qa_cpi": 1510.3,
+      "qa_ranking_status": "limited_sample"
     },
     "riverside a": {
       "slug": "riverside-a",
@@ -121923,7 +123336,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 83,
+      "qa_cpi": 1510.3,
+      "qa_ranking_status": "limited_sample"
     },
     "rose-bowl": {
       "slug": "rose-bowl",
@@ -122205,7 +123621,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 157,
+      "qa_cpi": 1445.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-rose-bowl": {
       "slug": "rose-bowl",
@@ -122487,7 +123906,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 157,
+      "qa_cpi": 1445.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "rose bowl": {
       "slug": "rose-bowl",
@@ -122769,7 +124191,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 157,
+      "qa_cpi": 1445.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "rose-bowl-black": {
       "slug": "rose-bowl-black",
@@ -123167,7 +124592,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 148,
+      "qa_cpi": 1456.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-rose-bowl-black": {
       "slug": "rose-bowl-black",
@@ -123565,7 +124993,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 148,
+      "qa_cpi": 1456.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "rose bowl black": {
       "slug": "rose-bowl-black",
@@ -123963,7 +125394,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 148,
+      "qa_cpi": 1456.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "rose-bowl-red": {
       "slug": "rose-bowl-red",
@@ -124297,7 +125731,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 173,
+      "qa_cpi": 1404.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-rose-bowl-red": {
       "slug": "rose-bowl-red",
@@ -124631,7 +126068,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 173,
+      "qa_cpi": 1404.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "rose bowl red": {
       "slug": "rose-bowl-red",
@@ -124965,7 +126405,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 173,
+      "qa_cpi": 1404.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "route-66-14u-boys-a": {
       "slug": "route-66-14u-boys-a",
@@ -125279,7 +126722,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 89,
+      "qa_cpi": 1505.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-route-66-14u-boys-a": {
       "slug": "route-66-14u-boys-a",
@@ -125593,7 +127039,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 89,
+      "qa_cpi": 1505.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "route 66 14u boys a": {
       "slug": "route-66-14u-boys-a",
@@ -125907,7 +127356,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 89,
+      "qa_cpi": 1505.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "route-66-a": {
       "slug": "route-66-a",
@@ -126093,7 +127545,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 154,
+      "qa_cpi": 1451.4,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-route-66-a": {
       "slug": "route-66-a",
@@ -126279,7 +127734,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 154,
+      "qa_cpi": 1451.4,
+      "qa_ranking_status": "limited_sample"
     },
     "route 66 a": {
       "slug": "route-66-a",
@@ -126465,7 +127923,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 154,
+      "qa_cpi": 1451.4,
+      "qa_ranking_status": "limited_sample"
     },
     "route-66-aquatics-a": {
       "slug": "route-66-aquatics-a",
@@ -126699,7 +128160,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 168,
+      "qa_cpi": 1424.2,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-route-66-aquatics-a": {
       "slug": "route-66-aquatics-a",
@@ -126933,7 +128397,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 168,
+      "qa_cpi": 1424.2,
+      "qa_ranking_status": "limited_sample"
     },
     "route 66 aquatics a": {
       "slug": "route-66-aquatics-a",
@@ -127167,7 +128634,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 168,
+      "qa_cpi": 1424.2,
+      "qa_ranking_status": "limited_sample"
     },
     "sd-dons-black": {
       "slug": "sd-dons-black",
@@ -127353,7 +128823,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 68,
+      "qa_cpi": 1523.4,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-sd-dons-black": {
       "slug": "sd-dons-black",
@@ -127539,7 +129012,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 68,
+      "qa_cpi": 1523.4,
+      "qa_ranking_status": "limited_sample"
     },
     "sd dons black": {
       "slug": "sd-dons-black",
@@ -127725,7 +129201,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 68,
+      "qa_cpi": 1523.4,
+      "qa_ranking_status": "limited_sample"
     },
     "sd-dons-d": {
       "slug": "sd-dons-d",
@@ -127815,7 +129294,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 63,
+      "qa_cpi": 1527.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-sd-dons-d": {
       "slug": "sd-dons-d",
@@ -127905,7 +129387,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 63,
+      "qa_cpi": 1527.5,
+      "qa_ranking_status": "limited_sample"
     },
     "sd dons d": {
       "slug": "sd-dons-d",
@@ -127995,7 +129480,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 63,
+      "qa_cpi": 1527.5,
+      "qa_ranking_status": "limited_sample"
     },
     "sd-dons-gold": {
       "slug": "sd-dons-gold",
@@ -128181,7 +129669,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 65,
+      "qa_cpi": 1526.2,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-sd-dons-gold": {
       "slug": "sd-dons-gold",
@@ -128367,7 +129858,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 65,
+      "qa_cpi": 1526.2,
+      "qa_ranking_status": "limited_sample"
     },
     "sd dons gold": {
       "slug": "sd-dons-gold",
@@ -128553,7 +130047,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 65,
+      "qa_cpi": 1526.2,
+      "qa_ranking_status": "limited_sample"
     },
     "sd-dons-red": {
       "slug": "sd-dons-red",
@@ -128691,7 +130188,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 136,
+      "qa_cpi": 1467.9,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-sd-dons-red": {
       "slug": "sd-dons-red",
@@ -128829,7 +130329,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 136,
+      "qa_cpi": 1467.9,
+      "qa_ranking_status": "limited_sample"
     },
     "sd dons red": {
       "slug": "sd-dons-red",
@@ -128967,7 +130470,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 136,
+      "qa_cpi": 1467.9,
+      "qa_ranking_status": "limited_sample"
     },
     "sd-eca-a": {
       "slug": "sd-eca-a",
@@ -129285,7 +130791,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 130,
+      "qa_cpi": 1473.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-sd-eca-a": {
       "slug": "sd-eca-a",
@@ -129603,7 +131112,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 130,
+      "qa_cpi": 1473.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "sd eca a": {
       "slug": "sd-eca-a",
@@ -129921,7 +131433,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 130,
+      "qa_cpi": 1473.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "sd-shores-gold": {
       "slug": "sd-shores-gold",
@@ -130011,7 +131526,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 123,
+      "qa_cpi": 1477.1,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-sd-shores-gold": {
       "slug": "sd-shores-gold",
@@ -130101,7 +131619,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 123,
+      "qa_cpi": 1477.1,
+      "qa_ranking_status": "limited_sample"
     },
     "sd shores gold": {
       "slug": "sd-shores-gold",
@@ -130191,7 +131712,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 123,
+      "qa_cpi": 1477.1,
+      "qa_ranking_status": "limited_sample"
     },
     "set-a": {
       "slug": "set-a",
@@ -130561,7 +132085,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 177,
+      "qa_cpi": 1395.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-set-a": {
       "slug": "set-a",
@@ -130931,7 +132458,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 177,
+      "qa_cpi": 1395.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "set a": {
       "slug": "set-a",
@@ -131301,7 +132831,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 177,
+      "qa_cpi": 1395.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "sj-foundation-a": {
       "slug": "sj-foundation-a",
@@ -131583,7 +133116,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 79,
+      "qa_cpi": 1513.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-sj-foundation-a": {
       "slug": "sj-foundation-a",
@@ -131865,7 +133401,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 79,
+      "qa_cpi": 1513.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "sj foundation a": {
       "slug": "sj-foundation-a",
@@ -132147,7 +133686,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 79,
+      "qa_cpi": 1513.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-clemente-a": {
       "slug": "san-clemente-a",
@@ -132429,7 +133971,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 90,
+      "qa_cpi": 1503.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-clemente-a": {
       "slug": "san-clemente-a",
@@ -132711,7 +134256,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 90,
+      "qa_cpi": 1503.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "san clemente a": {
       "slug": "san-clemente-a",
@@ -132993,7 +134541,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 90,
+      "qa_cpi": 1503.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-clemente-black": {
       "slug": "san-clemente-black",
@@ -133315,7 +134866,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 41,
+      "qa_cpi": 1547.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-clemente-black": {
       "slug": "san-clemente-black",
@@ -133637,7 +135191,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 41,
+      "qa_cpi": 1547.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "san clemente black": {
       "slug": "san-clemente-black",
@@ -133959,7 +135516,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 41,
+      "qa_cpi": 1547.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-clemente-red": {
       "slug": "san-clemente-red",
@@ -134341,7 +135901,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 5,
+      "qa_cpi": 1647.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-clemente-red": {
       "slug": "san-clemente-red",
@@ -134723,7 +136286,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 5,
+      "qa_cpi": 1647.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "san clemente red": {
       "slug": "san-clemente-red",
@@ -135105,7 +136671,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 5,
+      "qa_cpi": 1647.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-diego-dons-14-black": {
       "slug": "san-diego-dons-14-black",
@@ -135339,7 +136908,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 50,
+      "qa_cpi": 1540.2,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-san-diego-dons-14-black": {
       "slug": "san-diego-dons-14-black",
@@ -135573,7 +137145,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 50,
+      "qa_cpi": 1540.2,
+      "qa_ranking_status": "limited_sample"
     },
     "san diego dons 14 black": {
       "slug": "san-diego-dons-14-black",
@@ -135807,7 +137382,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 50,
+      "qa_cpi": 1540.2,
+      "qa_ranking_status": "limited_sample"
     },
     "san-diego-dons-a": {
       "slug": "san-diego-dons-a",
@@ -136189,7 +137767,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 72,
+      "qa_cpi": 1520.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-diego-dons-a": {
       "slug": "san-diego-dons-a",
@@ -136571,7 +138152,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 72,
+      "qa_cpi": 1520.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "san diego dons a": {
       "slug": "san-diego-dons-a",
@@ -136953,7 +138537,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 72,
+      "qa_cpi": 1520.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-diego-shores-a": {
       "slug": "san-diego-shores-a",
@@ -137235,7 +138822,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 97,
+      "qa_cpi": 1496.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-diego-shores-a": {
       "slug": "san-diego-shores-a",
@@ -137517,7 +139107,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 97,
+      "qa_cpi": 1496.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "san diego shores a": {
       "slug": "san-diego-shores-a",
@@ -137799,7 +139392,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 97,
+      "qa_cpi": 1496.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-diego-shores-black": {
       "slug": "san-diego-shores-black",
@@ -137985,7 +139581,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 101,
+      "qa_cpi": 1492.3,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-san-diego-shores-black": {
       "slug": "san-diego-shores-black",
@@ -138171,7 +139770,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 101,
+      "qa_cpi": 1492.3,
+      "qa_ranking_status": "limited_sample"
     },
     "san diego shores black": {
       "slug": "san-diego-shores-black",
@@ -138357,7 +139959,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 101,
+      "qa_cpi": 1492.3,
+      "qa_ranking_status": "limited_sample"
     },
     "san-francisco-a": {
       "slug": "san-francisco-a",
@@ -138707,7 +140312,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 184,
+      "qa_cpi": 1380.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-francisco-a": {
       "slug": "san-francisco-a",
@@ -139057,7 +140665,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 184,
+      "qa_cpi": 1380.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "san francisco a": {
       "slug": "san-francisco-a",
@@ -139407,7 +141018,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 184,
+      "qa_cpi": 1380.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-jose-express-a": {
       "slug": "san-jose-express-a",
@@ -139741,7 +141355,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 162,
+      "qa_cpi": 1433.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-jose-express-a": {
       "slug": "san-jose-express-a",
@@ -140075,7 +141692,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 162,
+      "qa_cpi": 1433.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "san jose express a": {
       "slug": "san-jose-express-a",
@@ -140409,7 +142029,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 162,
+      "qa_cpi": 1433.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-jose-express-blue": {
       "slug": "san-jose-express-blue",
@@ -140723,7 +142346,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 86,
+      "qa_cpi": 1508.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-jose-express-blue": {
       "slug": "san-jose-express-blue",
@@ -141037,7 +142663,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 86,
+      "qa_cpi": 1508.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "san jose express blue": {
       "slug": "san-jose-express-blue",
@@ -141351,7 +142980,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 86,
+      "qa_cpi": 1508.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-jose-foundation-black": {
       "slug": "san-jose-foundation-black",
@@ -141665,7 +143297,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 139,
+      "qa_cpi": 1464.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-jose-foundation-black": {
       "slug": "san-jose-foundation-black",
@@ -141979,7 +143614,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 139,
+      "qa_cpi": 1464.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "san jose foundation black": {
       "slug": "san-jose-foundation-black",
@@ -142293,7 +143931,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 139,
+      "qa_cpi": 1464.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "san-jose-foundation-blue": {
       "slug": "san-jose-foundation-blue",
@@ -142639,7 +144280,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 185,
+      "qa_cpi": 1379.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-san-jose-foundation-blue": {
       "slug": "san-jose-foundation-blue",
@@ -142985,7 +144629,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 185,
+      "qa_cpi": 1379.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "san jose foundation blue": {
       "slug": "san-jose-foundation-blue",
@@ -143331,7 +144978,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 185,
+      "qa_cpi": 1379.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "sand-canyon-a": {
       "slug": "sand-canyon-a",
@@ -143633,7 +145283,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 43,
+      "qa_cpi": 1546.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-sand-canyon-a": {
       "slug": "sand-canyon-a",
@@ -143935,7 +145588,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 43,
+      "qa_cpi": 1546.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "sand canyon a": {
       "slug": "sand-canyon-a",
@@ -144237,7 +145893,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 43,
+      "qa_cpi": 1546.9,
+      "qa_ranking_status": "qa_ranked"
     },
     "santa-barbara-a": {
       "slug": "santa-barbara-a",
@@ -144703,7 +146362,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 30,
+      "qa_cpi": 1556.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-santa-barbara-a": {
       "slug": "santa-barbara-a",
@@ -145169,7 +146831,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 30,
+      "qa_cpi": 1556.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "santa barbara a": {
       "slug": "santa-barbara-a",
@@ -145635,7 +147300,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 30,
+      "qa_cpi": 1556.5,
+      "qa_ranking_status": "qa_ranked"
     },
     "santa-cruz-a": {
       "slug": "santa-cruz-a",
@@ -146001,7 +147669,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 152,
+      "qa_cpi": 1452.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-santa-cruz-a": {
       "slug": "santa-cruz-a",
@@ -146367,7 +148038,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 152,
+      "qa_cpi": 1452.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "santa cruz a": {
       "slug": "santa-cruz-a",
@@ -146733,7 +148407,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 152,
+      "qa_cpi": 1452.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "shaq-a": {
       "slug": "shaq-a",
@@ -146967,7 +148644,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 80,
+      "qa_cpi": 1512.1,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-shaq-a": {
       "slug": "shaq-a",
@@ -147201,7 +148881,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 80,
+      "qa_cpi": 1512.1,
+      "qa_ranking_status": "limited_sample"
     },
     "shaq a": {
       "slug": "shaq-a",
@@ -147435,7 +149118,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 80,
+      "qa_cpi": 1512.1,
+      "qa_ranking_status": "limited_sample"
     },
     "shaq-blue": {
       "slug": "shaq-blue",
@@ -147669,7 +149355,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 150,
+      "qa_cpi": 1455.1,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-shaq-blue": {
       "slug": "shaq-blue",
@@ -147903,7 +149592,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 150,
+      "qa_cpi": 1455.1,
+      "qa_ranking_status": "limited_sample"
     },
     "shaq blue": {
       "slug": "shaq-blue",
@@ -148137,7 +149829,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 150,
+      "qa_cpi": 1455.1,
+      "qa_ranking_status": "limited_sample"
     },
     "shaq-white": {
       "slug": "shaq-white",
@@ -148275,7 +149970,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 146,
+      "qa_cpi": 1459.0,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-shaq-white": {
       "slug": "shaq-white",
@@ -148413,7 +150111,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 146,
+      "qa_cpi": 1459.0,
+      "qa_ranking_status": "limited_sample"
     },
     "shaq white": {
       "slug": "shaq-white",
@@ -148551,7 +150252,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 146,
+      "qa_cpi": 1459.0,
+      "qa_ranking_status": "limited_sample"
     },
     "sharks-a": {
       "slug": "sharks-a",
@@ -148917,7 +150621,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 85,
+      "qa_cpi": 1508.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-sharks-a": {
       "slug": "sharks-a",
@@ -149283,7 +150990,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 85,
+      "qa_cpi": 1508.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "sharks a": {
       "slug": "sharks-a",
@@ -149649,7 +151359,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 85,
+      "qa_cpi": 1508.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "shore-aquatics-a": {
       "slug": "shore-aquatics-a",
@@ -150083,7 +151796,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 24,
+      "qa_cpi": 1564.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-shore-aquatics-a": {
       "slug": "shore-aquatics-a",
@@ -150517,7 +152233,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 24,
+      "qa_cpi": 1564.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "shore aquatics a": {
       "slug": "shore-aquatics-a",
@@ -150951,7 +152670,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 24,
+      "qa_cpi": 1564.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "shore-red": {
       "slug": "shore-red",
@@ -151265,7 +152987,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 33,
+      "qa_cpi": 1552.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-shore-red": {
       "slug": "shore-red",
@@ -151579,7 +153304,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 33,
+      "qa_cpi": 1552.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "shore red": {
       "slug": "shore-red",
@@ -151893,7 +153621,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 33,
+      "qa_cpi": 1552.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "sja-a": {
       "slug": "sja-a",
@@ -151983,7 +153714,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 126,
+      "qa_cpi": 1475.2,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-sja-a": {
       "slug": "sja-a",
@@ -152073,7 +153807,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 126,
+      "qa_cpi": 1475.2,
+      "qa_ranking_status": "limited_sample"
     },
     "sja a": {
       "slug": "sja-a",
@@ -152163,7 +153900,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 126,
+      "qa_cpi": 1475.2,
+      "qa_ranking_status": "limited_sample"
     },
     "skip": {
       "slug": "skip",
@@ -152445,7 +154185,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 11,
+      "qa_cpi": 1602.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-skip": {
       "slug": "skip",
@@ -152727,7 +154470,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 11,
+      "qa_cpi": 1602.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "socal-12-black": {
       "slug": "socal-12-black",
@@ -152961,7 +154707,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 98,
+      "qa_cpi": 1494.9,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-socal-12-black": {
       "slug": "socal-12-black",
@@ -153195,7 +154944,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 98,
+      "qa_cpi": 1494.9,
+      "qa_ranking_status": "limited_sample"
     },
     "socal 12 black": {
       "slug": "socal-12-black",
@@ -153429,7 +155181,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 98,
+      "qa_cpi": 1494.9,
+      "qa_ranking_status": "limited_sample"
     },
     "socal-a": {
       "slug": "socal-a",
@@ -153763,7 +155518,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 166,
+      "qa_cpi": 1429.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-socal-a": {
       "slug": "socal-a",
@@ -154097,7 +155855,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 166,
+      "qa_cpi": 1429.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "socal a": {
       "slug": "socal-a",
@@ -154431,7 +156192,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 166,
+      "qa_cpi": 1429.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "south-coast-a": {
       "slug": "south-coast-a",
@@ -154521,7 +156285,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 113,
+      "qa_cpi": 1484.4,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-south-coast-a": {
       "slug": "south-coast-a",
@@ -154611,7 +156378,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 113,
+      "qa_cpi": 1484.4,
+      "qa_ranking_status": "limited_sample"
     },
     "south coast a": {
       "slug": "south-coast-a",
@@ -154701,7 +156471,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 113,
+      "qa_cpi": 1484.4,
+      "qa_ranking_status": "limited_sample"
     },
     "south-coast-blue": {
       "slug": "south-coast-blue",
@@ -154935,7 +156708,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 151,
+      "qa_cpi": 1452.9,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-south-coast-blue": {
       "slug": "south-coast-blue",
@@ -155169,7 +156945,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 151,
+      "qa_cpi": 1452.9,
+      "qa_ranking_status": "limited_sample"
     },
     "south coast blue": {
       "slug": "south-coast-blue",
@@ -155403,7 +157182,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 151,
+      "qa_cpi": 1452.9,
+      "qa_ranking_status": "limited_sample"
     },
     "south-coast-red": {
       "slug": "south-coast-red",
@@ -155805,7 +157587,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 42,
+      "qa_cpi": 1547.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-south-coast-red": {
       "slug": "south-coast-red",
@@ -156207,7 +157992,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 42,
+      "qa_cpi": 1547.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "south coast red": {
       "slug": "south-coast-red",
@@ -156609,7 +158397,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 42,
+      "qa_cpi": 1547.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "south-coast-white": {
       "slug": "south-coast-white",
@@ -157063,7 +158854,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 49,
+      "qa_cpi": 1541.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-south-coast-white": {
       "slug": "south-coast-white",
@@ -157517,7 +159311,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 49,
+      "qa_cpi": 1541.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "south coast white": {
       "slug": "south-coast-white",
@@ -157971,7 +159768,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 49,
+      "qa_cpi": 1541.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford-13-a": {
       "slug": "stanford-13-a",
@@ -158205,7 +160005,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 165,
+      "qa_cpi": 1429.8,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-stanford-13-a": {
       "slug": "stanford-13-a",
@@ -158439,7 +160242,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 165,
+      "qa_cpi": 1429.8,
+      "qa_ranking_status": "limited_sample"
     },
     "stanford 13 a": {
       "slug": "stanford-13-a",
@@ -158673,7 +160479,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 165,
+      "qa_cpi": 1429.8,
+      "qa_ranking_status": "limited_sample"
     },
     "stanford-a": {
       "slug": "stanford-a",
@@ -158955,7 +160764,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 28,
+      "qa_cpi": 1559.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-stanford-a": {
       "slug": "stanford-a",
@@ -159237,7 +161049,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 28,
+      "qa_cpi": 1559.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford a": {
       "slug": "stanford-a",
@@ -159519,7 +161334,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 28,
+      "qa_cpi": 1559.3,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford-b": {
       "slug": "stanford-b",
@@ -159801,7 +161619,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 127,
+      "qa_cpi": 1475.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-stanford-b": {
       "slug": "stanford-b",
@@ -160083,7 +161904,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 127,
+      "qa_cpi": 1475.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford b": {
       "slug": "stanford-b",
@@ -160365,7 +162189,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 127,
+      "qa_cpi": 1475.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford-black": {
       "slug": "stanford-black",
@@ -160747,7 +162574,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 57,
+      "qa_cpi": 1532.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-stanford-black": {
       "slug": "stanford-black",
@@ -161129,7 +162959,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 57,
+      "qa_cpi": 1532.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford black": {
       "slug": "stanford-black",
@@ -161511,7 +163344,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 57,
+      "qa_cpi": 1532.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford-c": {
       "slug": "stanford-c",
@@ -161793,7 +163629,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 137,
+      "qa_cpi": 1466.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-stanford-c": {
       "slug": "stanford-c",
@@ -162075,7 +163914,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 137,
+      "qa_cpi": 1466.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford c": {
       "slug": "stanford-c",
@@ -162357,7 +164199,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 137,
+      "qa_cpi": 1466.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford-red": {
       "slug": "stanford-red",
@@ -162707,7 +164552,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 56,
+      "qa_cpi": 1533.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-stanford-red": {
       "slug": "stanford-red",
@@ -163057,7 +164905,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 56,
+      "qa_cpi": 1533.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford red": {
       "slug": "stanford-red",
@@ -163407,7 +165258,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 56,
+      "qa_cpi": 1533.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford-white": {
       "slug": "stanford-white",
@@ -163773,7 +165627,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 36,
+      "qa_cpi": 1549.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-stanford-white": {
       "slug": "stanford-white",
@@ -164139,7 +165996,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 36,
+      "qa_cpi": 1549.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "stanford white": {
       "slug": "stanford-white",
@@ -164505,7 +166365,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 36,
+      "qa_cpi": 1549.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "supreme": {
       "slug": "supreme",
@@ -164887,7 +166750,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 155,
+      "qa_cpi": 1450.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-supreme": {
       "slug": "supreme",
@@ -165269,7 +167135,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 155,
+      "qa_cpi": 1450.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "temple-city-a": {
       "slug": "temple-city-a",
@@ -165651,7 +167520,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 38,
+      "qa_cpi": 1548.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-temple-city-a": {
       "slug": "temple-city-a",
@@ -166033,7 +167905,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 38,
+      "qa_cpi": 1548.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "temple city a": {
       "slug": "temple-city-a",
@@ -166415,7 +168290,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 38,
+      "qa_cpi": 1548.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "titans": {
       "slug": "titans",
@@ -166817,7 +168695,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 175,
+      "qa_cpi": 1397.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-titans": {
       "slug": "titans",
@@ -167219,7 +169100,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 175,
+      "qa_cpi": 1397.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "titans-gold": {
       "slug": "titans-gold",
@@ -167533,7 +169417,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 19,
+      "qa_cpi": 1579.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-titans-gold": {
       "slug": "titans-gold",
@@ -167847,7 +169734,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 19,
+      "qa_cpi": 1579.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "titans gold": {
       "slug": "titans-gold",
@@ -168161,7 +170051,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 19,
+      "qa_cpi": 1579.2,
+      "qa_ranking_status": "qa_ranked"
     },
     "tri-valley-tritons-a": {
       "slug": "tri-valley-tritons-a",
@@ -168475,7 +170368,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 187,
+      "qa_cpi": 1366.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-tri-valley-tritons-a": {
       "slug": "tri-valley-tritons-a",
@@ -168789,7 +170685,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 187,
+      "qa_cpi": 1366.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "tri-valley tritons a": {
       "slug": "tri-valley-tritons-a",
@@ -169103,7 +171002,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 187,
+      "qa_cpi": 1366.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "trilogy-a": {
       "slug": "trilogy-a",
@@ -169417,7 +171319,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 134,
+      "qa_cpi": 1468.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-trilogy-a": {
       "slug": "trilogy-a",
@@ -169731,7 +171636,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 134,
+      "qa_cpi": 1468.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "trilogy a": {
       "slug": "trilogy-a",
@@ -170045,7 +171953,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 134,
+      "qa_cpi": 1468.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "trilogy-black": {
       "slug": "trilogy-black",
@@ -170279,7 +172190,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 138,
+      "qa_cpi": 1465.7,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-trilogy-black": {
       "slug": "trilogy-black",
@@ -170513,7 +172427,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 138,
+      "qa_cpi": 1465.7,
+      "qa_ranking_status": "limited_sample"
     },
     "trilogy black": {
       "slug": "trilogy-black",
@@ -170747,7 +172664,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 138,
+      "qa_cpi": 1465.7,
+      "qa_ranking_status": "limited_sample"
     },
     "triton-gold": {
       "slug": "triton-gold",
@@ -170981,7 +172901,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 170,
+      "qa_cpi": 1421.6,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-triton-gold": {
       "slug": "triton-gold",
@@ -171215,7 +173138,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 170,
+      "qa_cpi": 1421.6,
+      "qa_ranking_status": "limited_sample"
     },
     "triton gold": {
       "slug": "triton-gold",
@@ -171449,7 +173375,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 170,
+      "qa_cpi": 1421.6,
+      "qa_ranking_status": "limited_sample"
     },
     "trojan-a": {
       "slug": "trojan-a",
@@ -171731,7 +173660,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 128,
+      "qa_cpi": 1475.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-trojan-a": {
       "slug": "trojan-a",
@@ -172013,7 +173945,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 128,
+      "qa_cpi": 1475.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "trojan a": {
       "slug": "trojan-a",
@@ -172295,7 +174230,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 128,
+      "qa_cpi": 1475.0,
+      "qa_ranking_status": "qa_ranked"
     },
     "trojan-cardinal-a": {
       "slug": "trojan-cardinal-a",
@@ -172729,7 +174667,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 180,
+      "qa_cpi": 1391.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-trojan-cardinal-a": {
       "slug": "trojan-cardinal-a",
@@ -173163,7 +175104,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 180,
+      "qa_cpi": 1391.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "trojan cardinal a": {
       "slug": "trojan-cardinal-a",
@@ -173597,7 +175541,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 180,
+      "qa_cpi": 1391.1,
+      "qa_ranking_status": "qa_ranked"
     },
     "trojan-gold": {
       "slug": "trojan-gold",
@@ -174047,7 +175994,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 188,
+      "qa_cpi": 1356.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-trojan-gold": {
       "slug": "trojan-gold",
@@ -174497,7 +176447,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 188,
+      "qa_cpi": 1356.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "trojan gold": {
       "slug": "trojan-gold",
@@ -174947,7 +176900,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 188,
+      "qa_cpi": 1356.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "tsm-a": {
       "slug": "tsm-a",
@@ -175329,7 +177285,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 189,
+      "qa_cpi": 1309.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-tsm-a": {
       "slug": "tsm-a",
@@ -175711,7 +177670,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 189,
+      "qa_cpi": 1309.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "tsm a": {
       "slug": "tsm-a",
@@ -176093,7 +178055,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 189,
+      "qa_cpi": 1309.6,
+      "qa_ranking_status": "qa_ranked"
     },
     "tsunami-black": {
       "slug": "tsunami-black",
@@ -176183,7 +178148,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 119,
+      "qa_cpi": 1479.5,
+      "qa_ranking_status": "limited_sample"
     },
     "ca-2026-14ub-tsunami-black": {
       "slug": "tsunami-black",
@@ -176273,7 +178241,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 119,
+      "qa_cpi": 1479.5,
+      "qa_ranking_status": "limited_sample"
     },
     "tsunami black": {
       "slug": "tsunami-black",
@@ -176363,7 +178334,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 119,
+      "qa_cpi": 1479.5,
+      "qa_ranking_status": "limited_sample"
     },
     "valley-united-a": {
       "slug": "valley-united-a",
@@ -176745,7 +178719,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 40,
+      "qa_cpi": 1547.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-valley-united-a": {
       "slug": "valley-united-a",
@@ -177127,7 +179104,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 40,
+      "qa_cpi": 1547.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "valley united a": {
       "slug": "valley-united-a",
@@ -177509,7 +179489,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 40,
+      "qa_cpi": 1547.8,
+      "qa_ranking_status": "qa_ranked"
     },
     "vanguard-a": {
       "slug": "vanguard-a",
@@ -177931,7 +179914,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 133,
+      "qa_cpi": 1468.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-vanguard-a": {
       "slug": "vanguard-a",
@@ -178353,7 +180339,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 133,
+      "qa_cpi": 1468.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "vanguard a": {
       "slug": "vanguard-a",
@@ -178775,7 +180764,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 133,
+      "qa_cpi": 1468.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "vanguard-blue": {
       "slug": "vanguard-a",
@@ -179197,7 +181189,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 133,
+      "qa_cpi": 1468.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "vanguard blue": {
       "slug": "vanguard-a",
@@ -179619,7 +181614,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 133,
+      "qa_cpi": 1468.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "vanguard-b": {
       "slug": "vanguard-b",
@@ -180057,7 +182055,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 20,
+      "qa_cpi": 1576.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-vanguard-b": {
       "slug": "vanguard-b",
@@ -180495,7 +182496,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 20,
+      "qa_cpi": 1576.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "vanguard b": {
       "slug": "vanguard-b",
@@ -180933,7 +182937,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 20,
+      "qa_cpi": 1576.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "vanguard-silver": {
       "slug": "vanguard-b",
@@ -181371,7 +183378,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 20,
+      "qa_cpi": 1576.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "vanguard silver": {
       "slug": "vanguard-b",
@@ -181809,7 +183819,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 20,
+      "qa_cpi": 1576.4,
+      "qa_ranking_status": "qa_ranked"
     },
     "vegas-renegades-a": {
       "slug": "vegas-renegades-a",
@@ -182091,7 +184104,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 18,
+      "qa_cpi": 1579.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "ca-2026-14ub-vegas-renegades-a": {
       "slug": "vegas-renegades-a",
@@ -182373,7 +184389,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 18,
+      "qa_cpi": 1579.7,
+      "qa_ranking_status": "qa_ranked"
     },
     "vegas renegades a": {
       "slug": "vegas-renegades-a",
@@ -182655,7 +184674,10 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
           }
         ]
       },
-      "data_status": "public_abc_names_identity_overrides_applied_not_ranked"
+      "data_status": "public_abc_names_identity_overrides_applied_not_ranked",
+      "qa_rank": 18,
+      "qa_cpi": 1579.7,
+      "qa_ranking_status": "qa_ranked"
     }
   }
 };
