@@ -1,8 +1,8 @@
 window.CPI_API = {
   "manifest": {
     "platform": "California Polo Index",
-    "api_version": "team_profile_latest_tournament_v0.3.3",
-    "generated_at": "2026-07-02T23:35:22.097858+00:00",
+    "api_version": "public_abc_team_names_v0.3.5",
+    "generated_at": "2026-07-03T04:41:50.807718+00:00",
     "scope": {
       "season": "2026",
       "region": "California",
@@ -10,10 +10,10 @@ window.CPI_API = {
       "gender": "Boys"
     },
     "counts": {
-      "teams": 216,
-      "games": 646,
+      "teams": 189,
+      "games": 633,
       "team_profiles": 642
     },
-    "data_status": "Latest tournament results view; overall record hidden from public profile."
+    "data_status": "Public team names use A/B/C; color names retained as aliases; rankings paused."
   }
 };
