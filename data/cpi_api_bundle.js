@@ -1,8 +1,8 @@
 window.CPI_API = {
   "manifest": {
     "platform": "California Polo Index",
-    "api_version": "public_abc_team_names_v0.3.5",
-    "generated_at": "2026-07-03T04:41:50.807718+00:00",
+    "api_version": "rankings_qa_reset_v0.4.2",
+    "generated_at": "2026-07-03T21:07:06.381432+00:00",
     "scope": {
       "season": "2026",
       "region": "California",
@@ -12,8 +12,10 @@ window.CPI_API = {
     "counts": {
       "teams": 189,
       "games": 633,
-      "team_profiles": 642
+      "team_profiles": 642,
+      "qa_teams_ranked": 170,
+      "qa_games_processed": 630
     },
-    "data_status": "Public team names use A/B/C; color names retained as aliases; rankings paused."
+    "data_status": "Rankings QA reset generated; not official."
   }
 };
