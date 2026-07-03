@@ -8,7 +8,8 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "games_count": 15,
       "event_count": 3,
       "qa_rank": 32,
-      "qa_cpi": 1515
+      "qa_cpi": 1510,
+      "confidence": 90.0
     },
     {
       "slug": "680-b",
@@ -17,8 +18,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "680",
       "games_count": 13,
       "event_count": 3,
-      "qa_rank": 80,
-      "qa_cpi": 1488.4
+      "qa_rank": 57,
+      "qa_cpi": 1504.3,
+      "confidence": 94.2
     },
     {
       "slug": "680-c",
@@ -27,8 +29,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "680",
       "games_count": 15,
       "event_count": 3,
-      "qa_rank": 128,
-      "qa_cpi": 1450.0
+      "qa_rank": 114,
+      "qa_cpi": 1465.7,
+      "confidence": 91.4
     },
     {
       "slug": "908-a",
@@ -37,8 +40,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "908",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 10,
-      "qa_cpi": 1571.7
+      "qa_rank": 16,
+      "qa_cpi": 1549.9,
+      "confidence": 89.2
     },
     {
       "slug": "908-blue",
@@ -47,8 +51,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "908",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 46,
-      "qa_cpi": 1507.6
+      "qa_rank": 43,
+      "qa_cpi": 1510,
+      "confidence": 73.8
     },
     {
       "slug": "908-green",
@@ -57,8 +62,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "908 Green",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 126,
-      "qa_cpi": 1450.9
+      "qa_rank": 127,
+      "qa_cpi": 1453.1,
+      "confidence": 46.7
     },
     {
       "slug": "908-yellow",
@@ -67,8 +73,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "908 Yellow",
       "games_count": 6,
       "event_count": 1,
-      "qa_rank": 37,
-      "qa_cpi": 1514.7
+      "qa_rank": 46,
+      "qa_cpi": 1510,
+      "confidence": 57.5
     },
     {
       "slug": "alameda",
@@ -77,8 +84,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Alameda",
       "games_count": 14,
       "event_count": 3,
-      "qa_rank": 38,
-      "qa_cpi": 1514.5
+      "qa_rank": 34,
+      "qa_cpi": 1510,
+      "confidence": 90.0
     },
     {
       "slug": "american-river-a",
@@ -87,8 +95,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "American River",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 53,
-      "qa_cpi": 1502.9
+      "qa_rank": 94,
+      "qa_cpi": 1482.7,
+      "confidence": 75.2
     },
     {
       "slug": "american-river-b",
@@ -97,8 +106,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "American River",
       "games_count": 8,
       "event_count": 2,
-      "qa_rank": 132,
-      "qa_cpi": 1446.6
+      "qa_rank": 130,
+      "qa_cpi": 1448.1,
+      "confidence": 68.3
     },
     {
       "slug": "boa-a",
@@ -107,8 +117,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "BOA",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 151,
-      "qa_cpi": 1429.3
+      "qa_rank": 141,
+      "qa_cpi": 1431.6,
+      "confidence": 46.7
     },
     {
       "slug": "back-bay",
@@ -117,8 +128,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Back Bay",
       "games_count": 13,
       "event_count": 3,
-      "qa_rank": 33,
-      "qa_cpi": 1515
+      "qa_rank": 36,
+      "qa_cpi": 1510,
+      "confidence": 90.0
     },
     {
       "slug": "big-valley-a",
@@ -127,8 +139,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Big Valley",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 138,
-      "qa_cpi": 1439.6
+      "qa_rank": 140,
+      "qa_cpi": 1433.2,
+      "confidence": 41.2
     },
     {
       "slug": "brea-olinda-gold",
@@ -137,8 +150,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Brea Olinda",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 96,
-      "qa_cpi": 1472.9
+      "qa_rank": 83,
+      "qa_cpi": 1489.6,
+      "confidence": 41.2
     },
     {
       "slug": "burlingame-a",
@@ -147,8 +161,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Burlingame",
       "games_count": 7,
       "event_count": 1,
-      "qa_rank": 87,
-      "qa_cpi": 1483.4
+      "qa_rank": 104,
+      "qa_cpi": 1471.2,
+      "confidence": 62.9
     },
     {
       "slug": "cc-united-a",
@@ -157,8 +172,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "CC United",
       "games_count": 16,
       "event_count": 4,
-      "qa_rank": 8,
-      "qa_cpi": 1574.1
+      "qa_rank": 14,
+      "qa_cpi": 1550.8,
+      "confidence": 100.0
     },
     {
       "slug": "cc-united-b",
@@ -167,8 +183,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "CC United",
       "games_count": 14,
       "event_count": 4,
-      "qa_rank": 41,
-      "qa_cpi": 1512.9
+      "qa_rank": 51,
+      "qa_cpi": 1509.7,
+      "confidence": 92.8
     },
     {
       "slug": "cc-united-c",
@@ -177,8 +194,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "CC United",
       "games_count": 11,
       "event_count": 2,
-      "qa_rank": 155,
-      "qa_cpi": 1419.0
+      "qa_rank": 158,
+      "qa_cpi": 1397.4,
+      "confidence": 84.6
     },
     {
       "slug": "ccwp-a",
@@ -187,8 +205,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "CCWP",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 122,
-      "qa_cpi": 1454.6
+      "qa_rank": 107,
+      "qa_cpi": 1470.6,
+      "confidence": 30.4
     },
     {
       "slug": "cdm-a",
@@ -197,8 +216,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "CDM",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 18,
-      "qa_cpi": 1556.3
+      "qa_rank": 22,
+      "qa_cpi": 1536.1,
+      "confidence": 59.1
     },
     {
       "slug": "cdm-b",
@@ -207,8 +227,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "CDM",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 156,
-      "qa_cpi": 1418.2
+      "qa_rank": 154,
+      "qa_cpi": 1422.5,
+      "confidence": 41.2
     },
     {
       "slug": "cdm-white",
@@ -217,8 +238,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "CDM",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 112,
-      "qa_cpi": 1459.6
+      "qa_rank": 99,
+      "qa_cpi": 1478.5,
+      "confidence": 41.2
     },
     {
       "slug": "ciu-coast-a",
@@ -227,8 +249,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "CIU Coast",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 62,
-      "qa_cpi": 1496.6
+      "qa_rank": 60,
+      "qa_cpi": 1499.2,
+      "confidence": 52.1
     },
     {
       "slug": "channel-islands-united-a",
@@ -237,8 +260,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Channel Islands United",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 6,
-      "qa_cpi": 1584.8
+      "qa_rank": 8,
+      "qa_cpi": 1570.7,
+      "confidence": 59.1
     },
     {
       "slug": "channel-islands-united-gold",
@@ -247,8 +271,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Channel Islands United",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 22,
-      "qa_cpi": 1542.5
+      "qa_rank": 9,
+      "qa_cpi": 1567.0,
+      "confidence": 83.4
     },
     {
       "slug": "chawp-a",
@@ -257,8 +282,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Chawp",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 114,
-      "qa_cpi": 1458.8
+      "qa_rank": 110,
+      "qa_cpi": 1468.9,
+      "confidence": 31.8
     },
     {
       "slug": "clovis-red",
@@ -267,8 +293,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Clovis",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 56,
-      "qa_cpi": 1499.8
+      "qa_rank": 87,
+      "qa_cpi": 1487.7,
+      "confidence": 52.1
     },
     {
       "slug": "commerce-a",
@@ -277,8 +304,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Commerce",
       "games_count": 14,
       "event_count": 3,
-      "qa_rank": 12,
-      "qa_cpi": 1565.7
+      "qa_rank": 10,
+      "qa_cpi": 1564.8,
+      "confidence": 100.0
     },
     {
       "slug": "crown-city-a",
@@ -287,8 +315,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Crown City",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 143,
-      "qa_cpi": 1436.1
+      "qa_rank": 156,
+      "qa_cpi": 1417.4,
+      "confidence": 52.1
     },
     {
       "slug": "ct-premier-a",
@@ -297,8 +326,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Ct Premier",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 109,
-      "qa_cpi": 1464.6
+      "qa_rank": 106,
+      "qa_cpi": 1470.7,
+      "confidence": 41.2
     },
     {
       "slug": "cvu-a",
@@ -307,8 +337,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Cvu",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 92,
-      "qa_cpi": 1477.6
+      "qa_rank": 82,
+      "qa_cpi": 1489.8,
+      "confidence": 52.1
     },
     {
       "slug": "davis",
@@ -317,8 +348,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Davis",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 91,
-      "qa_cpi": 1479.5
+      "qa_rank": 117,
+      "qa_cpi": 1463.5,
+      "confidence": 80.8
     },
     {
       "slug": "devils-gate-a",
@@ -327,8 +359,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Devils Gate",
       "games_count": 12,
       "event_count": 3,
-      "qa_rank": 20,
-      "qa_cpi": 1551.9
+      "qa_rank": 21,
+      "qa_cpi": 1538.1,
+      "confidence": 98.4
     },
     {
       "slug": "diablo-alliance-a",
@@ -337,8 +370,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Diablo Alliance",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 13,
-      "qa_cpi": 1564.1
+      "qa_rank": 12,
+      "qa_cpi": 1558.8,
+      "confidence": 86.2
     },
     {
       "slug": "diablo-alliance-b",
@@ -347,8 +381,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Diablo Alliance",
       "games_count": 11,
       "event_count": 2,
-      "qa_rank": 90,
-      "qa_cpi": 1479.6
+      "qa_rank": 91,
+      "qa_cpi": 1485.5,
+      "confidence": 86.0
     },
     {
       "slug": "eca-a",
@@ -357,8 +392,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Eca",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 107,
-      "qa_cpi": 1466.6
+      "qa_rank": 89,
+      "qa_cpi": 1487.4,
+      "confidence": 30.4
     },
     {
       "slug": "eca-b",
@@ -367,8 +403,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Eca",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 134,
-      "qa_cpi": 1442.6
+      "qa_rank": 145,
+      "qa_cpi": 1428.8,
+      "confidence": 52.1
     },
     {
       "slug": "foothill-a",
@@ -377,8 +414,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Foothill",
       "games_count": 13,
       "event_count": 3,
-      "qa_rank": 59,
-      "qa_cpi": 1498.8
+      "qa_rank": 105,
+      "qa_cpi": 1471.0,
+      "confidence": 90.0
     },
     {
       "slug": "foothill-b",
@@ -387,8 +425,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Foothill",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 111,
-      "qa_cpi": 1462.3
+      "qa_rank": 118,
+      "qa_cpi": 1463.2,
+      "confidence": 73.8
     },
     {
       "slug": "gate-14u-a",
@@ -397,8 +436,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Gate 14U",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 106,
-      "qa_cpi": 1466.9
+      "qa_rank": 86,
+      "qa_cpi": 1488.1,
+      "confidence": 46.7
     },
     {
       "slug": "gold-coast-a",
@@ -407,8 +447,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Gold Coast",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 35,
-      "qa_cpi": 1515
+      "qa_rank": 44,
+      "qa_cpi": 1510,
+      "confidence": 73.8
     },
     {
       "slug": "greenwich-a",
@@ -417,8 +458,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Greenwich",
       "games_count": 11,
       "event_count": 1,
-      "qa_rank": 52,
-      "qa_cpi": 1503.1
+      "qa_rank": 62,
+      "qa_cpi": 1498.3,
+      "confidence": 93.0
     },
     {
       "slug": "hieland-a",
@@ -427,8 +469,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Hieland",
       "games_count": 5,
       "event_count": 2,
-      "qa_rank": 93,
-      "qa_cpi": 1473.8
+      "qa_rank": 123,
+      "qa_cpi": 1457.3,
+      "confidence": 52.1
     },
     {
       "slug": "honolulu-blue",
@@ -437,8 +480,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Honolulu",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 136,
-      "qa_cpi": 1441.8
+      "qa_rank": 134,
+      "qa_cpi": 1440.2,
+      "confidence": 41.2
     },
     {
       "slug": "honolulu-green",
@@ -447,8 +491,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Honolulu Green",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 146,
-      "qa_cpi": 1434.6
+      "qa_rank": 132,
+      "qa_cpi": 1445.7,
+      "confidence": 46.7
     },
     {
       "slug": "kingsburg-a",
@@ -457,8 +502,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Kingsburg",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 39,
-      "qa_cpi": 1514.1
+      "qa_rank": 54,
+      "qa_cpi": 1508.0,
+      "confidence": 52.1
     },
     {
       "slug": "kingsburg-kings-a",
@@ -467,8 +513,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Kingsburg Kings",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 78,
-      "qa_cpi": 1489.3
+      "qa_rank": 59,
+      "qa_cpi": 1502.9,
+      "confidence": 31.8
     },
     {
       "slug": "la-city-united-a",
@@ -477,8 +524,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "LA City United",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 70,
-      "qa_cpi": 1492.5
+      "qa_rank": 63,
+      "qa_cpi": 1498.3,
+      "confidence": 73.8
     },
     {
       "slug": "la-jolla-united-b",
@@ -487,8 +535,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "LA Jolla United",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 67,
-      "qa_cpi": 1493
+      "qa_rank": 75,
+      "qa_cpi": 1494.8,
+      "confidence": 52.1
     },
     {
       "slug": "la-jolla-united-gold",
@@ -497,8 +546,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "LA Jolla United",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 120,
-      "qa_cpi": 1455.6
+      "qa_rank": 122,
+      "qa_cpi": 1457.5,
+      "confidence": 41.2
     },
     {
       "slug": "la-jolla-united-navy",
@@ -507,8 +557,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "LA Jolla United",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 11,
-      "qa_cpi": 1569.7
+      "qa_rank": 6,
+      "qa_cpi": 1581.7,
+      "confidence": 59.1
     },
     {
       "slug": "la-premier-a",
@@ -517,8 +568,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "LA Premier",
       "games_count": 19,
       "event_count": 4,
-      "qa_rank": 15,
-      "qa_cpi": 1562.9
+      "qa_rank": 5,
+      "qa_cpi": 1586.0,
+      "confidence": 100.0
     },
     {
       "slug": "la-jolla-united-a",
@@ -528,7 +580,8 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "games_count": 10,
       "event_count": 2,
       "qa_rank": 1,
-      "qa_cpi": 1642.9
+      "qa_cpi": 1669.0,
+      "confidence": 89.2
     },
     {
       "slug": "lamorinda-a",
@@ -537,8 +590,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Lamorinda",
       "games_count": 15,
       "event_count": 4,
-      "qa_rank": 9,
-      "qa_cpi": 1572.0
+      "qa_rank": 20,
+      "qa_cpi": 1543.8,
+      "confidence": 100.0
     },
     {
       "slug": "lamorinda-b",
@@ -547,8 +601,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Lamorinda",
       "games_count": 15,
       "event_count": 3,
-      "qa_rank": 71,
-      "qa_cpi": 1492.0
+      "qa_rank": 33,
+      "qa_cpi": 1510,
+      "confidence": 90.0
     },
     {
       "slug": "lamorinda-c",
@@ -557,8 +612,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Lamorinda",
       "games_count": 8,
       "event_count": 1,
-      "qa_rank": 161,
-      "qa_cpi": 1395.3
+      "qa_rank": 159,
+      "qa_cpi": 1393.4,
+      "confidence": 68.3
     },
     {
       "slug": "los-al-opal-a",
@@ -567,8 +623,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Los Al Opal",
       "games_count": 2,
       "event_count": 1,
-      "qa_rank": 119,
-      "qa_cpi": 1455.7
+      "qa_rank": 125,
+      "qa_cpi": 1455.9,
+      "confidence": 38.6
     },
     {
       "slug": "los-alamitos-a",
@@ -577,8 +634,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Los Alamitos",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 57,
-      "qa_cpi": 1499.5
+      "qa_rank": 49,
+      "qa_cpi": 1510,
+      "confidence": 52.1
     },
     {
       "slug": "los-angeles-wpc-a",
@@ -587,8 +645,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Los Angeles WPC",
       "games_count": 15,
       "event_count": 4,
-      "qa_rank": 28,
-      "qa_cpi": 1517.6
+      "qa_rank": 52,
+      "qa_cpi": 1509.4,
+      "confidence": 92.8
     },
     {
       "slug": "loyola-a",
@@ -597,8 +656,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Loyola",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 129,
-      "qa_cpi": 1448.4
+      "qa_rank": 149,
+      "qa_cpi": 1426.1,
+      "confidence": 73.8
     },
     {
       "slug": "loyola-wpc-a",
@@ -607,8 +667,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Loyola WPC",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 124,
-      "qa_cpi": 1452.8
+      "qa_rank": 101,
+      "qa_cpi": 1474.0,
+      "confidence": 46.7
     },
     {
       "slug": "midpen-a",
@@ -617,8 +678,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Midpen",
       "games_count": 8,
       "event_count": 1,
-      "qa_rank": 135,
-      "qa_cpi": 1441.8
+      "qa_rank": 147,
+      "qa_cpi": 1427.6,
+      "confidence": 68.3
     },
     {
       "slug": "mission-14b-a",
@@ -628,7 +690,8 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "games_count": 3,
       "event_count": 1,
       "qa_rank": 115,
-      "qa_cpi": 1458.4
+      "qa_cpi": 1465.6,
+      "confidence": 41.2
     },
     {
       "slug": "mission-wpc-a",
@@ -638,7 +701,8 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "games_count": 17,
       "event_count": 4,
       "qa_rank": 2,
-      "qa_cpi": 1619.3
+      "qa_cpi": 1639.1,
+      "confidence": 100.0
     },
     {
       "slug": "mission-wpc-b",
@@ -647,8 +711,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Mission WPC",
       "games_count": 12,
       "event_count": 3,
-      "qa_rank": 66,
-      "qa_cpi": 1493
+      "qa_rank": 37,
+      "qa_cpi": 1510,
+      "confidence": 90.0
     },
     {
       "slug": "ngen-a",
@@ -657,8 +722,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "NGen",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 140,
-      "qa_cpi": 1437.2
+      "qa_rank": 148,
+      "qa_cpi": 1427.0,
+      "confidence": 79.2
     },
     {
       "slug": "nsd-stars-a",
@@ -667,8 +733,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "NSD Stars",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 97,
-      "qa_cpi": 1472.6
+      "qa_rank": 70,
+      "qa_cpi": 1498.0,
+      "confidence": 41.2
     },
     {
       "slug": "nado-a",
@@ -677,8 +744,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Nado",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 117,
-      "qa_cpi": 1457.2
+      "qa_rank": 98,
+      "qa_cpi": 1480.1,
+      "confidence": 41.2
     },
     {
       "slug": "newport-beach-a",
@@ -687,8 +755,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Newport Beach",
       "games_count": 16,
       "event_count": 3,
-      "qa_rank": 4,
-      "qa_cpi": 1606.1
+      "qa_rank": 3,
+      "qa_cpi": 1608.5,
+      "confidence": 100.0
     },
     {
       "slug": "newport-beach-b",
@@ -697,8 +766,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Newport Beach",
       "games_count": 8,
       "event_count": 2,
-      "qa_rank": 51,
-      "qa_cpi": 1503.2
+      "qa_rank": 28,
+      "qa_cpi": 1514.1,
+      "confidence": 69.7
     },
     {
       "slug": "newport-beach-c",
@@ -707,8 +777,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Newport Beach",
       "games_count": 6,
       "event_count": 2,
-      "qa_rank": 99,
-      "qa_cpi": 1471.8
+      "qa_rank": 79,
+      "qa_cpi": 1491.4,
+      "confidence": 57.5
     },
     {
       "slug": "norcal-a",
@@ -717,8 +788,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "NorCal",
       "games_count": 19,
       "event_count": 4,
-      "qa_rank": 3,
-      "qa_cpi": 1609.7
+      "qa_rank": 4,
+      "qa_cpi": 1601.9,
+      "confidence": 100.0
     },
     {
       "slug": "norcal-b",
@@ -727,8 +799,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "NorCal",
       "games_count": 14,
       "event_count": 3,
-      "qa_rank": 95,
-      "qa_cpi": 1473
+      "qa_rank": 64,
+      "qa_cpi": 1498,
+      "confidence": 90.0
     },
     {
       "slug": "north-irvine-a",
@@ -737,8 +810,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "North Irvine",
       "games_count": 17,
       "event_count": 4,
-      "qa_rank": 23,
-      "qa_cpi": 1539.1
+      "qa_rank": 27,
+      "qa_cpi": 1519.5,
+      "confidence": 100.0
     },
     {
       "slug": "north-irvine-b",
@@ -747,8 +821,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "North Irvine",
       "games_count": 12,
       "event_count": 3,
-      "qa_rank": 125,
-      "qa_cpi": 1451.7
+      "qa_rank": 131,
+      "qa_cpi": 1447.5,
+      "confidence": 95.6
     },
     {
       "slug": "northwest-a",
@@ -757,8 +832,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Northwest",
       "games_count": 12,
       "event_count": 3,
-      "qa_rank": 100,
-      "qa_cpi": 1471.1
+      "qa_rank": 112,
+      "qa_cpi": 1467.0,
+      "confidence": 91.4
     },
     {
       "slug": "orwp-a",
@@ -767,8 +843,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "ORWP",
       "games_count": 10,
       "event_count": 3,
-      "qa_rank": 84,
-      "qa_cpi": 1486.3
+      "qa_rank": 81,
+      "qa_cpi": 1490.7,
+      "confidence": 84.8
     },
     {
       "slug": "orwp-b",
@@ -777,8 +854,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "ORWP",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 157,
-      "qa_cpi": 1415.3
+      "qa_rank": 138,
+      "qa_cpi": 1435.3,
+      "confidence": 41.2
     },
     {
       "slug": "orwp-black",
@@ -787,8 +865,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "ORWP",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 69,
-      "qa_cpi": 1492.9
+      "qa_rank": 61,
+      "qa_cpi": 1498.5,
+      "confidence": 52.1
     },
     {
       "slug": "orange-county-wpc-b",
@@ -797,8 +876,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Orange County WPC",
       "games_count": 8,
       "event_count": 2,
-      "qa_rank": 58,
-      "qa_cpi": 1499.1
+      "qa_rank": 56,
+      "qa_cpi": 1505.0,
+      "confidence": 73.9
     },
     {
       "slug": "orange-county-wpc-c",
@@ -807,8 +887,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Orange County WPC",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 159,
-      "qa_cpi": 1409.4
+      "qa_rank": 143,
+      "qa_cpi": 1429.8,
+      "confidence": 46.7
     },
     {
       "slug": "ovac-a",
@@ -817,8 +898,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Ovac",
       "games_count": 6,
       "event_count": 1,
-      "qa_rank": 26,
-      "qa_cpi": 1528.7
+      "qa_rank": 17,
+      "qa_cpi": 1545.7,
+      "confidence": 65.9
     },
     {
       "slug": "pac-a",
@@ -827,8 +909,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Pac",
       "games_count": 6,
       "event_count": 1,
-      "qa_rank": 75,
-      "qa_cpi": 1491.3
+      "qa_rank": 92,
+      "qa_cpi": 1483.9,
+      "confidence": 57.5
     },
     {
       "slug": "palos-verdes-a",
@@ -837,8 +920,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Palos Verdes",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 25,
-      "qa_cpi": 1530.5
+      "qa_rank": 13,
+      "qa_cpi": 1557.4,
+      "confidence": 78.0
     },
     {
       "slug": "palos-verdes-b",
@@ -847,8 +931,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Palos Verdes",
       "games_count": 12,
       "event_count": 3,
-      "qa_rank": 77,
-      "qa_cpi": 1490.4
+      "qa_rank": 38,
+      "qa_cpi": 1510,
+      "confidence": 90.0
     },
     {
       "slug": "pasadena-ac-a",
@@ -857,8 +942,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Pasadena Ac",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 81,
-      "qa_cpi": 1488.1
+      "qa_rank": 73,
+      "qa_cpi": 1495.4,
+      "confidence": 52.1
     },
     {
       "slug": "pasadena-ac-orange",
@@ -867,8 +953,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Pasadena Ac Orange",
       "games_count": 2,
       "event_count": 1,
-      "qa_rank": 121,
-      "qa_cpi": 1454.8
+      "qa_rank": 97,
+      "qa_cpi": 1481.3,
+      "confidence": 35.8
     },
     {
       "slug": "patriot-a",
@@ -877,8 +964,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Patriot",
       "games_count": 14,
       "event_count": 3,
-      "qa_rank": 17,
-      "qa_cpi": 1562.0
+      "qa_rank": 23,
+      "qa_cpi": 1532.5,
+      "confidence": 100.0
     },
     {
       "slug": "patriot-b",
@@ -887,8 +975,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Patriot",
       "games_count": 14,
       "event_count": 4,
-      "qa_rank": 30,
-      "qa_cpi": 1516.7
+      "qa_rank": 25,
+      "qa_cpi": 1527.3,
+      "confidence": 95.6
     },
     {
       "slug": "pegasus",
@@ -897,8 +986,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Pegasus",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 31,
-      "qa_cpi": 1515.7
+      "qa_rank": 76,
+      "qa_cpi": 1494.5,
+      "confidence": 59.1
     },
     {
       "slug": "poway-valley-black",
@@ -907,8 +997,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Poway Valley",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 64,
-      "qa_cpi": 1495
+      "qa_rank": 67,
+      "qa_cpi": 1498,
+      "confidence": 52.1
     },
     {
       "slug": "pride-a",
@@ -917,8 +1008,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Pride",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 29,
-      "qa_cpi": 1517.1
+      "qa_rank": 24,
+      "qa_cpi": 1529.1,
+      "confidence": 54.9
     },
     {
       "slug": "pride-black",
@@ -927,8 +1019,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Pride",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 86,
-      "qa_cpi": 1484.6
+      "qa_rank": 80,
+      "qa_cpi": 1490.8,
+      "confidence": 84.8
     },
     {
       "slug": "pride-red",
@@ -937,8 +1030,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Pride",
       "games_count": 7,
       "event_count": 2,
-      "qa_rank": 85,
-      "qa_cpi": 1485.8
+      "qa_rank": 108,
+      "qa_cpi": 1470.1,
+      "confidence": 62.9
     },
     {
       "slug": "puget-sound-a",
@@ -947,8 +1041,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Puget Sound",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 118,
-      "qa_cpi": 1456.5
+      "qa_rank": 102,
+      "qa_cpi": 1473.9,
+      "confidence": 30.4
     },
     {
       "slug": "rain-city-a",
@@ -957,8 +1052,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Rain City",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 89,
-      "qa_cpi": 1481.3
+      "qa_rank": 113,
+      "qa_cpi": 1466.5,
+      "confidence": 52.1
     },
     {
       "slug": "rancho-tsunami-a",
@@ -967,8 +1063,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Rancho Tsunami",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 36,
-      "qa_cpi": 1515
+      "qa_rank": 50,
+      "qa_cpi": 1510,
+      "confidence": 52.1
     },
     {
       "slug": "rancho-tsunami-blue",
@@ -977,8 +1074,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Rancho Tsunami",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 73,
-      "qa_cpi": 1491.6
+      "qa_rank": 78,
+      "qa_cpi": 1492.3,
+      "confidence": 52.3
     },
     {
       "slug": "riverside-a",
@@ -987,8 +1085,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Riverside",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 127,
-      "qa_cpi": 1450.4
+      "qa_rank": 109,
+      "qa_cpi": 1469.3,
+      "confidence": 41.2
     },
     {
       "slug": "rose-bowl",
@@ -997,8 +1096,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Rose Bowl",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 55,
-      "qa_cpi": 1501.3
+      "qa_rank": 88,
+      "qa_cpi": 1487.7,
+      "confidence": 52.1
     },
     {
       "slug": "rose-bowl-black",
@@ -1007,8 +1107,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Rose Bowl",
       "games_count": 11,
       "event_count": 2,
-      "qa_rank": 94,
-      "qa_cpi": 1473.1
+      "qa_rank": 111,
+      "qa_cpi": 1467.9,
+      "confidence": 84.6
     },
     {
       "slug": "rose-bowl-red",
@@ -1017,8 +1118,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Rose Bowl",
       "games_count": 8,
       "event_count": 2,
-      "qa_rank": 116,
-      "qa_cpi": 1457.7
+      "qa_rank": 133,
+      "qa_cpi": 1445.1,
+      "confidence": 68.3
     },
     {
       "slug": "route-66-a",
@@ -1027,8 +1129,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Route 66",
       "games_count": 13,
       "event_count": 3,
-      "qa_rank": 133,
-      "qa_cpi": 1445.4
+      "qa_rank": 135,
+      "qa_cpi": 1439.8,
+      "confidence": 99.8
     },
     {
       "slug": "sd-dons-a",
@@ -1037,8 +1140,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SD Dons",
       "games_count": 17,
       "event_count": 3,
-      "qa_rank": 5,
-      "qa_cpi": 1588.0
+      "qa_rank": 7,
+      "qa_cpi": 1580.7,
+      "confidence": 100.0
     },
     {
       "slug": "sd-dons-b",
@@ -1047,8 +1151,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SD Dons",
       "games_count": 2,
       "event_count": 1,
-      "qa_rank": 147,
-      "qa_cpi": 1433.5
+      "qa_rank": 137,
+      "qa_cpi": 1436.5,
+      "confidence": 38.6
     },
     {
       "slug": "sd-dons-c",
@@ -1057,8 +1162,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SD Dons",
       "games_count": 3,
       "event_count": 1,
-      "qa_rank": 141,
-      "qa_cpi": 1437.0
+      "qa_rank": 121,
+      "qa_cpi": 1460.6,
+      "confidence": 41.2
     },
     {
       "slug": "sd-dons-d",
@@ -1067,8 +1173,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SD Dons",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 160,
-      "qa_cpi": 1408.3
+      "qa_rank": 136,
+      "qa_cpi": 1438.4,
+      "confidence": 30.4
     },
     {
       "slug": "sd-eca-a",
@@ -1077,8 +1184,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SD Eca",
       "games_count": 8,
       "event_count": 2,
-      "qa_rank": 88,
-      "qa_cpi": 1481.4
+      "qa_rank": 95,
+      "qa_cpi": 1481.5,
+      "confidence": 68.3
     },
     {
       "slug": "sd-shores-a",
@@ -1087,8 +1195,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SD Shores",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 14,
-      "qa_cpi": 1563.0
+      "qa_rank": 18,
+      "qa_cpi": 1544.8,
+      "confidence": 59.1
     },
     {
       "slug": "sd-shores-black",
@@ -1097,8 +1206,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SD Shores",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 54,
-      "qa_cpi": 1502.6
+      "qa_rank": 30,
+      "qa_cpi": 1510.3,
+      "confidence": 52.3
     },
     {
       "slug": "sd-shores-gold",
@@ -1107,8 +1217,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SD Shores",
       "games_count": 2,
       "event_count": 1,
-      "qa_rank": 154,
-      "qa_cpi": 1423.1
+      "qa_rank": 150,
+      "qa_cpi": 1424.5,
+      "confidence": 35.8
     },
     {
       "slug": "set-a",
@@ -1117,8 +1228,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SET",
       "games_count": 11,
       "event_count": 3,
-      "qa_rank": 150,
-      "qa_cpi": 1431.0
+      "qa_rank": 160,
+      "qa_cpi": 1390.5,
+      "confidence": 84.6
     },
     {
       "slug": "sj-foundation-a",
@@ -1127,8 +1239,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SJ Foundation",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 98,
-      "qa_cpi": 1472.3
+      "qa_rank": 84,
+      "qa_cpi": 1489.0,
+      "confidence": 52.1
     },
     {
       "slug": "san-clemente-a",
@@ -1138,7 +1251,8 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "games_count": 5,
       "event_count": 1,
       "qa_rank": 19,
-      "qa_cpi": 1553.1
+      "qa_cpi": 1544.2,
+      "confidence": 59.1
     },
     {
       "slug": "san-clemente-black",
@@ -1147,8 +1261,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "San Clemente",
       "games_count": 10,
       "event_count": 3,
-      "qa_rank": 74,
-      "qa_cpi": 1491.4
+      "qa_rank": 65,
+      "qa_cpi": 1498,
+      "confidence": 79.2
     },
     {
       "slug": "san-clemente-red",
@@ -1157,8 +1272,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "San Clemente",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 34,
-      "qa_cpi": 1515
+      "qa_rank": 40,
+      "qa_cpi": 1510,
+      "confidence": 79.2
     },
     {
       "slug": "san-francisco-a",
@@ -1167,8 +1283,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "San Francisco",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 152,
-      "qa_cpi": 1429.1
+      "qa_rank": 146,
+      "qa_cpi": 1428.1,
+      "confidence": 73.8
     },
     {
       "slug": "san-jose-express-a",
@@ -1177,8 +1294,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "San Jose Express",
       "games_count": 14,
       "event_count": 3,
-      "qa_rank": 102,
-      "qa_cpi": 1470.6
+      "qa_rank": 124,
+      "qa_cpi": 1456.4,
+      "confidence": 90.0
     },
     {
       "slug": "san-jose-foundation-black",
@@ -1187,8 +1305,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "San Jose Foundation",
       "games_count": 6,
       "event_count": 1,
-      "qa_rank": 47,
-      "qa_cpi": 1507.4
+      "qa_rank": 74,
+      "qa_cpi": 1495.0,
+      "confidence": 57.5
     },
     {
       "slug": "san-jose-foundation-blue",
@@ -1197,8 +1316,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "San Jose Foundation",
       "games_count": 7,
       "event_count": 1,
-      "qa_rank": 130,
-      "qa_cpi": 1448.3
+      "qa_rank": 139,
+      "qa_cpi": 1434.7,
+      "confidence": 62.9
     },
     {
       "slug": "sand-canyon-a",
@@ -1207,8 +1327,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Sand Canyon",
       "games_count": 8,
       "event_count": 2,
-      "qa_rank": 72,
-      "qa_cpi": 1491.7
+      "qa_rank": 66,
+      "qa_cpi": 1498,
+      "confidence": 68.3
     },
     {
       "slug": "santa-barbara-a",
@@ -1217,8 +1338,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Santa Barbara",
       "games_count": 16,
       "event_count": 3,
-      "qa_rank": 43,
-      "qa_cpi": 1511.0
+      "qa_rank": 31,
+      "qa_cpi": 1510,
+      "confidence": 90.0
     },
     {
       "slug": "santa-cruz-a",
@@ -1227,8 +1349,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Santa Cruz",
       "games_count": 8,
       "event_count": 2,
-      "qa_rank": 79,
-      "qa_cpi": 1489.0
+      "qa_rank": 100,
+      "qa_cpi": 1477.9,
+      "confidence": 68.3
     },
     {
       "slug": "shaq-a",
@@ -1237,8 +1360,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Shaq",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 82,
-      "qa_cpi": 1487.2
+      "qa_rank": 71,
+      "qa_cpi": 1497.6,
+      "confidence": 46.7
     },
     {
       "slug": "shaq-blue",
@@ -1247,8 +1371,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Shaq",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 113,
-      "qa_cpi": 1459.1
+      "qa_rank": 116,
+      "qa_cpi": 1463.8,
+      "confidence": 52.3
     },
     {
       "slug": "shaq-white",
@@ -1257,8 +1382,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Shaq",
       "games_count": 2,
       "event_count": 1,
-      "qa_rank": 153,
-      "qa_cpi": 1425.4
+      "qa_rank": 151,
+      "qa_cpi": 1424.4,
+      "confidence": 35.8
     },
     {
       "slug": "sharks-a",
@@ -1267,8 +1393,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Sharks",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 63,
-      "qa_cpi": 1496.4
+      "qa_rank": 90,
+      "qa_cpi": 1485.6,
+      "confidence": 82.0
     },
     {
       "slug": "shore-aquatics-a",
@@ -1277,8 +1404,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Shore Aquatics",
       "games_count": 14,
       "event_count": 3,
-      "qa_rank": 42,
-      "qa_cpi": 1512.6
+      "qa_rank": 35,
+      "qa_cpi": 1510,
+      "confidence": 90.0
     },
     {
       "slug": "shore-red",
@@ -1287,8 +1415,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Shore",
       "games_count": 6,
       "event_count": 1,
-      "qa_rank": 49,
-      "qa_cpi": 1506.8
+      "qa_rank": 47,
+      "qa_cpi": 1510,
+      "confidence": 57.5
     },
     {
       "slug": "sja-a",
@@ -1297,8 +1426,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Sja",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 101,
-      "qa_cpi": 1470.9
+      "qa_rank": 85,
+      "qa_cpi": 1488.9,
+      "confidence": 31.8
     },
     {
       "slug": "skip",
@@ -1307,8 +1437,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Skip",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 65,
-      "qa_cpi": 1495
+      "qa_rank": 68,
+      "qa_cpi": 1498,
+      "confidence": 52.1
     },
     {
       "slug": "socal-12-black",
@@ -1317,8 +1448,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SoCal 12",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 110,
-      "qa_cpi": 1464.0
+      "qa_rank": 103,
+      "qa_cpi": 1472.9,
+      "confidence": 46.7
     },
     {
       "slug": "socal-a",
@@ -1327,8 +1459,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "SoCal",
       "games_count": 8,
       "event_count": 2,
-      "qa_rank": 24,
-      "qa_cpi": 1532.4
+      "qa_rank": 72,
+      "qa_cpi": 1496.7,
+      "confidence": 78.3
     },
     {
       "slug": "south-coast-a",
@@ -1337,8 +1470,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "South Coast",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 104,
-      "qa_cpi": 1470.0
+      "qa_rank": 93,
+      "qa_cpi": 1482.9,
+      "confidence": 31.8
     },
     {
       "slug": "south-coast-blue",
@@ -1347,8 +1481,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "South Coast",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 149,
-      "qa_cpi": 1431.6
+      "qa_rank": 142,
+      "qa_cpi": 1430.0,
+      "confidence": 46.7
     },
     {
       "slug": "south-coast-red",
@@ -1357,8 +1492,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "South Coast",
       "games_count": 12,
       "event_count": 3,
-      "qa_rank": 16,
-      "qa_cpi": 1562.1
+      "qa_rank": 15,
+      "qa_cpi": 1550.5,
+      "confidence": 100.0
     },
     {
       "slug": "south-coast-white",
@@ -1367,8 +1503,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "South Coast",
       "games_count": 15,
       "event_count": 4,
-      "qa_rank": 60,
-      "qa_cpi": 1497.9
+      "qa_rank": 55,
+      "qa_cpi": 1507.9,
+      "confidence": 90.0
     },
     {
       "slug": "stanford-13-a",
@@ -1377,8 +1514,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Stanford 13",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 142,
-      "qa_cpi": 1436.4
+      "qa_rank": 155,
+      "qa_cpi": 1418.4,
+      "confidence": 46.7
     },
     {
       "slug": "stanford-a",
@@ -1387,8 +1525,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Stanford",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 7,
-      "qa_cpi": 1577.2
+      "qa_rank": 11,
+      "qa_cpi": 1564.6,
+      "confidence": 59.1
     },
     {
       "slug": "stanford-b",
@@ -1397,8 +1536,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Stanford",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 68,
-      "qa_cpi": 1493.0
+      "qa_rank": 77,
+      "qa_cpi": 1493.8,
+      "confidence": 52.1
     },
     {
       "slug": "stanford-black",
@@ -1407,8 +1547,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Stanford",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 40,
-      "qa_cpi": 1513.5
+      "qa_rank": 41,
+      "qa_cpi": 1510,
+      "confidence": 79.2
     },
     {
       "slug": "stanford-c",
@@ -1417,8 +1558,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Stanford",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 145,
-      "qa_cpi": 1435.1
+      "qa_rank": 119,
+      "qa_cpi": 1462.9,
+      "confidence": 52.1
     },
     {
       "slug": "stanford-red",
@@ -1427,8 +1569,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Stanford",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 27,
-      "qa_cpi": 1524.6
+      "qa_rank": 26,
+      "qa_cpi": 1526.1,
+      "confidence": 79.3
     },
     {
       "slug": "stanford-white",
@@ -1437,8 +1580,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Stanford",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 48,
-      "qa_cpi": 1507.1
+      "qa_rank": 45,
+      "qa_cpi": 1510,
+      "confidence": 73.8
     },
     {
       "slug": "supreme",
@@ -1447,8 +1591,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Supreme",
       "games_count": 11,
       "event_count": 2,
-      "qa_rank": 105,
-      "qa_cpi": 1469.1
+      "qa_rank": 96,
+      "qa_cpi": 1481.4,
+      "confidence": 84.6
     },
     {
       "slug": "temple-city-a",
@@ -1457,8 +1602,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Temple City",
       "games_count": 11,
       "event_count": 2,
-      "qa_rank": 61,
-      "qa_cpi": 1496.8
+      "qa_rank": 39,
+      "qa_cpi": 1510,
+      "confidence": 84.6
     },
     {
       "slug": "titans",
@@ -1467,8 +1613,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Titans",
       "games_count": 12,
       "event_count": 3,
-      "qa_rank": 108,
-      "qa_cpi": 1465.9
+      "qa_rank": 129,
+      "qa_cpi": 1449.2,
+      "confidence": 90.0
     },
     {
       "slug": "titans-gold",
@@ -1477,8 +1624,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Titans",
       "games_count": 6,
       "event_count": 1,
-      "qa_rank": 44,
-      "qa_cpi": 1509.9
+      "qa_rank": 48,
+      "qa_cpi": 1510,
+      "confidence": 57.5
     },
     {
       "slug": "tri-valley-tritons-a",
@@ -1487,8 +1635,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Tri-valley Tritons",
       "games_count": 6,
       "event_count": 1,
-      "qa_rank": 131,
-      "qa_cpi": 1447.8
+      "qa_rank": 144,
+      "qa_cpi": 1429.5,
+      "confidence": 57.5
     },
     {
       "slug": "trilogy-a",
@@ -1497,8 +1646,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Trilogy",
       "games_count": 6,
       "event_count": 1,
-      "qa_rank": 103,
-      "qa_cpi": 1470.4
+      "qa_rank": 120,
+      "qa_cpi": 1462.3,
+      "confidence": 57.5
     },
     {
       "slug": "trilogy-black",
@@ -1507,8 +1657,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Trilogy",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 123,
-      "qa_cpi": 1453.8
+      "qa_rank": 128,
+      "qa_cpi": 1450.4,
+      "confidence": 46.7
     },
     {
       "slug": "triton-gold",
@@ -1517,8 +1668,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Triton",
       "games_count": 4,
       "event_count": 1,
-      "qa_rank": 148,
-      "qa_cpi": 1433.3
+      "qa_rank": 153,
+      "qa_cpi": 1422.5,
+      "confidence": 46.7
     },
     {
       "slug": "trojan-a",
@@ -1527,8 +1679,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Trojan",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 45,
-      "qa_cpi": 1508.1
+      "qa_rank": 58,
+      "qa_cpi": 1504.3,
+      "confidence": 52.1
     },
     {
       "slug": "trojan-cardinal-a",
@@ -1537,8 +1690,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Trojan Cardinal",
       "games_count": 13,
       "event_count": 3,
-      "qa_rank": 137,
-      "qa_cpi": 1441.1
+      "qa_rank": 152,
+      "qa_cpi": 1423.9,
+      "confidence": 99.8
     },
     {
       "slug": "trojan-gold",
@@ -1547,8 +1701,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Trojan",
       "games_count": 14,
       "event_count": 3,
-      "qa_rank": 139,
-      "qa_cpi": 1438.8
+      "qa_rank": 157,
+      "qa_cpi": 1405.5,
+      "confidence": 90.0
     },
     {
       "slug": "tsm-a",
@@ -1557,8 +1712,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Tsm",
       "games_count": 9,
       "event_count": 2,
-      "qa_rank": 158,
-      "qa_cpi": 1414.5
+      "qa_rank": 161,
+      "qa_cpi": 1379.5,
+      "confidence": 73.8
     },
     {
       "slug": "tsunami-black",
@@ -1567,8 +1723,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Tsunami",
       "games_count": 1,
       "event_count": 1,
-      "qa_rank": 144,
-      "qa_cpi": 1435.8
+      "qa_rank": 126,
+      "qa_cpi": 1453.5,
+      "confidence": 30.4
     },
     {
       "slug": "valley-united-a",
@@ -1577,8 +1734,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Valley United",
       "games_count": 10,
       "event_count": 2,
-      "qa_rank": 50,
-      "qa_cpi": 1506.3
+      "qa_rank": 42,
+      "qa_cpi": 1510,
+      "confidence": 79.2
     },
     {
       "slug": "vanguard-a",
@@ -1587,8 +1745,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Vanguard",
       "games_count": 13,
       "event_count": 3,
-      "qa_rank": 21,
-      "qa_cpi": 1547.6
+      "qa_rank": 29,
+      "qa_cpi": 1513.3,
+      "confidence": 100.0
     },
     {
       "slug": "vanguard-b",
@@ -1597,8 +1756,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Vanguard",
       "games_count": 14,
       "event_count": 3,
-      "qa_rank": 76,
-      "qa_cpi": 1490.4
+      "qa_rank": 53,
+      "qa_cpi": 1509.3,
+      "confidence": 90.0
     },
     {
       "slug": "vegas-renegades-a",
@@ -1607,8 +1767,9 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       "club": "Vegas Renegades",
       "games_count": 5,
       "event_count": 1,
-      "qa_rank": 83,
-      "qa_cpi": 1487.1
+      "qa_rank": 69,
+      "qa_cpi": 1498,
+      "confidence": 52.1
     }
   ],
   "teamIndex": {
@@ -2062,8 +2223,60 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 32,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "14-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "11-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "16-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "13-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "9-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "4-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-680-a": {
       "slug": "680-a",
@@ -2515,8 +2728,60 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 32,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "14-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "11-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "16-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "13-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "9-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "4-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "680 a": {
       "slug": "680-a",
@@ -2968,8 +3233,60 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 32,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "14-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "11-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "16-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "13-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "9-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "4-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "680-b": {
       "slug": "680-b",
@@ -3388,9 +3705,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 80,
-      "qa_cpi": 1488.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 57,
+      "qa_cpi": 1504.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "10-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "14-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "7-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "8-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 94.2
+      }
     },
     "ca-2026-14ub-680-b": {
       "slug": "680-b",
@@ -3809,9 +4178,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 80,
-      "qa_cpi": 1488.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 57,
+      "qa_cpi": 1504.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "10-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "14-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "7-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "8-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 94.2
+      }
     },
     "680 b": {
       "slug": "680-b",
@@ -4230,9 +4651,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 80,
-      "qa_cpi": 1488.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 57,
+      "qa_cpi": 1504.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "10-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "14-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "7-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "8-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 94.2
+      }
     },
     "680-c": {
       "slug": "680-c",
@@ -4683,9 +5156,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 128,
-      "qa_cpi": 1450.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 114,
+      "qa_cpi": 1465.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "21-20",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "9-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "1-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "6-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 91.4
+      }
     },
     "ca-2026-14ub-680-c": {
       "slug": "680-c",
@@ -5136,9 +5661,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 128,
-      "qa_cpi": 1450.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 114,
+      "qa_cpi": 1465.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "21-20",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "9-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "1-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "6-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 91.4
+      }
     },
     "680 c": {
       "slug": "680-c",
@@ -5589,9 +6166,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 128,
-      "qa_cpi": 1450.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 114,
+      "qa_cpi": 1465.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "21-20",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "9-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "1-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "6-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 91.4
+      }
     },
     "908-a": {
       "slug": "908-a",
@@ -5974,9 +6603,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 10,
-      "qa_cpi": 1571.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 16,
+      "qa_cpi": 1549.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "15-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9.3-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "16-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "6-7",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "6-8",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "4-6",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 89.2
+      }
     },
     "ca-2026-14ub-908-a": {
       "slug": "908-a",
@@ -6359,9 +7040,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 10,
-      "qa_cpi": 1571.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 16,
+      "qa_cpi": 1549.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "15-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9.3-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "16-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "6-7",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "6-8",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "4-6",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 89.2
+      }
     },
     "908 a": {
       "slug": "908-a",
@@ -6744,9 +7477,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 10,
-      "qa_cpi": 1571.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 16,
+      "qa_cpi": 1549.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "15-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9.3-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "16-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "6-7",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "6-8",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "4-6",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 89.2
+      }
     },
     "908-blue": {
       "slug": "908-blue",
@@ -7113,9 +7898,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 46,
-      "qa_cpi": 1507.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 43,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "14-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "20-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "10-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "8-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Titans Gold",
+            "opp_rank": 18,
+            "score": "4-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "10-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "ca-2026-14ub-908-blue": {
       "slug": "908-blue",
@@ -7482,9 +8319,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 46,
-      "qa_cpi": 1507.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 43,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "14-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "20-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "10-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "8-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Titans Gold",
+            "opp_rank": 18,
+            "score": "4-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "10-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "908 blue": {
       "slug": "908-blue",
@@ -7851,9 +8740,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 46,
-      "qa_cpi": 1507.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 43,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "14-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "20-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "10-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "8-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Titans Gold",
+            "opp_rank": 18,
+            "score": "4-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "10-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "908-green": {
       "slug": "908-green",
@@ -8088,9 +9029,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 126,
-      "qa_cpi": 1450.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 127,
+      "qa_cpi": 1453.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "12-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "2-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "7-10",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-908-green": {
       "slug": "908-green",
@@ -8325,9 +9304,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 126,
-      "qa_cpi": 1450.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 127,
+      "qa_cpi": 1453.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "12-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "2-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "7-10",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "908 green": {
       "slug": "908-green",
@@ -8562,9 +9579,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 126,
-      "qa_cpi": 1450.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 127,
+      "qa_cpi": 1453.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "12-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "2-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "7-10",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "908-yellow": {
       "slug": "908-yellow",
@@ -8879,9 +9934,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 37,
-      "qa_cpi": 1514.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 46,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "2-1",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "6-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "10-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "23-1",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "5-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "ca-2026-14ub-908-yellow": {
       "slug": "908-yellow",
@@ -9196,9 +10289,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 37,
-      "qa_cpi": 1514.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 46,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "2-1",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "6-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "10-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "23-1",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "5-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "908 yellow": {
       "slug": "908-yellow",
@@ -9513,9 +10644,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 37,
-      "qa_cpi": 1514.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 46,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "2-1",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "6-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "10-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "23-1",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "5-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "alameda": {
       "slug": "alameda",
@@ -9950,9 +11119,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 38,
-      "qa_cpi": 1514.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 34,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-2",
+        "vs_top50": "3-5",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "9-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "10-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "4-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "7-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "10-16",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-alameda": {
       "slug": "alameda",
@@ -10387,9 +11608,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 38,
-      "qa_cpi": 1514.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 34,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-2",
+        "vs_top50": "3-5",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "9-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "10-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "4-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "7-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "10-16",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "american-river-a": {
       "slug": "american-river-a",
@@ -10740,9 +12013,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 53,
-      "qa_cpi": 1502.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 94,
+      "qa_cpi": 1482.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "10-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford 13 A",
+            "opp_rank": 137,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "11-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "4-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "5-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "5-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 75.2
+      }
     },
     "ca-2026-14ub-american-river-a": {
       "slug": "american-river-a",
@@ -11093,9 +12418,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 53,
-      "qa_cpi": 1502.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 94,
+      "qa_cpi": 1482.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "10-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford 13 A",
+            "opp_rank": 137,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "11-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "4-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "5-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "5-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 75.2
+      }
     },
     "american river a": {
       "slug": "american-river-a",
@@ -11446,9 +12823,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 53,
-      "qa_cpi": 1502.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 94,
+      "qa_cpi": 1482.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "10-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford 13 A",
+            "opp_rank": 137,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "11-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "4-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "5-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "5-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 75.2
+      }
     },
     "american-river-b": {
       "slug": "american-river-b",
@@ -11783,9 +13212,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 132,
-      "qa_cpi": 1446.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 130,
+      "qa_cpi": 1448.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "8-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "4-2",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "4-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "4-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "6-17",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "ca-2026-14ub-american-river-b": {
       "slug": "american-river-b",
@@ -12120,9 +13594,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 132,
-      "qa_cpi": 1446.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 130,
+      "qa_cpi": 1448.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "8-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "4-2",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "4-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "4-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "6-17",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "american river b": {
       "slug": "american-river-b",
@@ -12457,9 +13976,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 132,
-      "qa_cpi": 1446.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 130,
+      "qa_cpi": 1448.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "8-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "4-2",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "4-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "4-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "6-17",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "boa-a": {
       "slug": "boa-a",
@@ -12694,9 +14258,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 151,
-      "qa_cpi": 1429.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 141,
+      "qa_cpi": 1431.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "8-19",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "6-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "6-17",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-boa-a": {
       "slug": "boa-a",
@@ -12931,9 +14525,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 151,
-      "qa_cpi": 1429.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 141,
+      "qa_cpi": 1431.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "8-19",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "6-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "6-17",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "boa a": {
       "slug": "boa-a",
@@ -13168,9 +14792,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 151,
-      "qa_cpi": 1429.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 141,
+      "qa_cpi": 1431.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "8-19",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "6-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "6-17",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "back-bay": {
       "slug": "back-bay",
@@ -13589,9 +15243,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 33,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 36,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "10-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United Gold",
+            "opp_rank": 92,
+            "score": "18-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "8-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons C",
+            "opp_rank": 61,
+            "score": "5-8",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "13-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-back-bay": {
       "slug": "back-bay",
@@ -14010,9 +15716,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 33,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 36,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "10-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United Gold",
+            "opp_rank": 92,
+            "score": "18-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "8-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons C",
+            "opp_rank": 61,
+            "score": "5-8",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "13-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "back bay": {
       "slug": "back-bay",
@@ -14431,9 +16189,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 33,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 36,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "10-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United Gold",
+            "opp_rank": 92,
+            "score": "18-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "8-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons C",
+            "opp_rank": 61,
+            "score": "5-8",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "13-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "big-valley-a": {
       "slug": "big-valley-a",
@@ -14620,9 +16430,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 138,
-      "qa_cpi": 1439.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 140,
+      "qa_cpi": 1433.2,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "5-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "7-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "7-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-big-valley-a": {
       "slug": "big-valley-a",
@@ -14809,9 +16649,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 138,
-      "qa_cpi": 1439.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 140,
+      "qa_cpi": 1433.2,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "5-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "7-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "7-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "big valley a": {
       "slug": "big-valley-a",
@@ -14998,9 +16868,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 138,
-      "qa_cpi": 1439.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 140,
+      "qa_cpi": 1433.2,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "5-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "7-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "7-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "brea-olinda-gold": {
       "slug": "brea-olinda-gold",
@@ -15187,9 +17087,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 96,
-      "qa_cpi": 1472.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 83,
+      "qa_cpi": 1489.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "9-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "18-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "3-12",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-brea-olinda-gold": {
       "slug": "brea-olinda-gold",
@@ -15376,9 +17307,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 96,
-      "qa_cpi": 1472.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 83,
+      "qa_cpi": 1489.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "9-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "18-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "3-12",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "brea olinda gold": {
       "slug": "brea-olinda-gold",
@@ -15565,9 +17527,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 96,
-      "qa_cpi": 1472.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 83,
+      "qa_cpi": 1489.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "9-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "18-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "3-12",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "burlingame-a": {
       "slug": "burlingame-a",
@@ -15914,9 +17907,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 87,
-      "qa_cpi": 1483.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 104,
+      "qa_cpi": 1471.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "22-21",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "12-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "9-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "0-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "7-21",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "ca-2026-14ub-burlingame-a": {
       "slug": "burlingame-a",
@@ -16263,9 +18308,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 87,
-      "qa_cpi": 1483.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 104,
+      "qa_cpi": 1471.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "22-21",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "12-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "9-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "0-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "7-21",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "burlingame a": {
       "slug": "burlingame-a",
@@ -16612,9 +18709,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 87,
-      "qa_cpi": 1483.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 104,
+      "qa_cpi": 1471.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "22-21",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "12-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "9-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "0-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "7-21",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "cc-united-a": {
       "slug": "cc-united-a",
@@ -17101,9 +19250,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 8,
-      "qa_cpi": 1574.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 14,
+      "qa_cpi": 1550.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "14-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "13-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "10-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "7-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "9-9.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "6-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-cc-united-a": {
       "slug": "cc-united-a",
@@ -17590,9 +19791,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 8,
-      "qa_cpi": 1574.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 14,
+      "qa_cpi": 1550.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "14-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "13-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "10-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "7-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "9-9.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "6-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "cc united a": {
       "slug": "cc-united-a",
@@ -18079,9 +20332,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 8,
-      "qa_cpi": 1574.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 14,
+      "qa_cpi": 1550.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "14-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "13-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "10-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "7-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "9-9.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "6-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "cc-united-b": {
       "slug": "cc-united-b",
@@ -18520,9 +20825,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 41,
-      "qa_cpi": 1512.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 51,
+      "qa_cpi": 1509.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "2-6",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "12-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "15.3-15.2",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "10-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "1-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "7-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 92.8
+      }
     },
     "ca-2026-14ub-cc-united-b": {
       "slug": "cc-united-b",
@@ -18961,9 +21318,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 41,
-      "qa_cpi": 1512.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 51,
+      "qa_cpi": 1509.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "2-6",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "12-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "15.3-15.2",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "10-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "1-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "7-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 92.8
+      }
     },
     "cc united b": {
       "slug": "cc-united-b",
@@ -19402,9 +21811,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 41,
-      "qa_cpi": 1512.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 51,
+      "qa_cpi": 1509.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "2-6",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "12-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "15.3-15.2",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "10-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "1-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "7-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 92.8
+      }
     },
     "cc-united-c": {
       "slug": "cc-united-c",
@@ -19819,9 +22280,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 155,
-      "qa_cpi": 1419.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 158,
+      "qa_cpi": 1397.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "9-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "7-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "8-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "23-25",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "2-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Honolulu Green",
+            "opp_rank": 111,
+            "score": "6-10",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "ca-2026-14ub-cc-united-c": {
       "slug": "cc-united-c",
@@ -20236,9 +22749,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 155,
-      "qa_cpi": 1419.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 158,
+      "qa_cpi": 1397.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "9-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "7-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "8-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "23-25",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "2-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Honolulu Green",
+            "opp_rank": 111,
+            "score": "6-10",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "cc united c": {
       "slug": "cc-united-c",
@@ -20653,9 +23218,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 155,
-      "qa_cpi": 1419.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 158,
+      "qa_cpi": 1397.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "9-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "7-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "8-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "23-25",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "2-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Honolulu Green",
+            "opp_rank": 111,
+            "score": "6-10",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "ccwp-a": {
       "slug": "ccwp-a",
@@ -20746,9 +23363,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 122,
-      "qa_cpi": 1454.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 107,
+      "qa_cpi": 1470.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "15-1",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "ca-2026-14ub-ccwp-a": {
       "slug": "ccwp-a",
@@ -20839,9 +23472,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 122,
-      "qa_cpi": 1454.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 107,
+      "qa_cpi": 1470.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "15-1",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "ccwp a": {
       "slug": "ccwp-a",
@@ -20932,9 +23581,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 122,
-      "qa_cpi": 1454.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 107,
+      "qa_cpi": 1470.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "15-1",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "cdm-a": {
       "slug": "cdm-a",
@@ -21217,9 +23882,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 18,
-      "qa_cpi": 1556.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 22,
+      "qa_cpi": 1536.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "12-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "9-5",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "4.6-4.7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "ca-2026-14ub-cdm-a": {
       "slug": "cdm-a",
@@ -21502,9 +24212,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 18,
-      "qa_cpi": 1556.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 22,
+      "qa_cpi": 1536.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "12-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "9-5",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "4.6-4.7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "cdm a": {
       "slug": "cdm-a",
@@ -21787,9 +24542,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 18,
-      "qa_cpi": 1556.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 22,
+      "qa_cpi": 1536.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "12-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "9-5",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "4.6-4.7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "cdm-b": {
       "slug": "cdm-b",
@@ -21976,9 +24776,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 156,
-      "qa_cpi": 1418.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 154,
+      "qa_cpi": 1422.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "4-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "1-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "3-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-cdm-b": {
       "slug": "cdm-b",
@@ -22165,9 +24995,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 156,
-      "qa_cpi": 1418.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 154,
+      "qa_cpi": 1422.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "4-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "1-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "3-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "cdm b": {
       "slug": "cdm-b",
@@ -22354,9 +25214,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 156,
-      "qa_cpi": 1418.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 154,
+      "qa_cpi": 1422.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "4-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "1-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "3-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "cdm-white": {
       "slug": "cdm-white",
@@ -22543,9 +25433,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 112,
-      "qa_cpi": 1459.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 99,
+      "qa_cpi": 1478.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "10-3",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "8-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "7-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-cdm-white": {
       "slug": "cdm-white",
@@ -22732,9 +25653,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 112,
-      "qa_cpi": 1459.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 99,
+      "qa_cpi": 1478.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "10-3",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "8-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "7-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "cdm white": {
       "slug": "cdm-white",
@@ -22921,9 +25873,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 112,
-      "qa_cpi": 1459.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 99,
+      "qa_cpi": 1478.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "10-3",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "8-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "7-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ciu-coast-a": {
       "slug": "ciu-coast-a",
@@ -23206,9 +26189,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 62,
-      "qa_cpi": 1496.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 60,
+      "qa_cpi": 1499.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "NGEN A",
+            "opp_rank": 144,
+            "score": "28-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "10-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "9-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "4-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-ciu-coast-a": {
       "slug": "ciu-coast-a",
@@ -23491,9 +26519,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 62,
-      "qa_cpi": 1496.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 60,
+      "qa_cpi": 1499.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "NGEN A",
+            "opp_rank": 144,
+            "score": "28-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "10-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "9-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "4-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ciu coast a": {
       "slug": "ciu-coast-a",
@@ -23776,9 +26849,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 62,
-      "qa_cpi": 1496.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 60,
+      "qa_cpi": 1499.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "NGEN A",
+            "opp_rank": 144,
+            "score": "28-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "10-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "9-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "4-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "channel-islands-united-a": {
       "slug": "channel-islands-united-a",
@@ -24061,9 +27179,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 6,
-      "qa_cpi": 1584.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 8,
+      "qa_cpi": 1570.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "10-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "15-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "19-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "12-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "7-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "ca-2026-14ub-channel-islands-united-a": {
       "slug": "channel-islands-united-a",
@@ -24346,9 +27509,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 6,
-      "qa_cpi": 1584.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 8,
+      "qa_cpi": 1570.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "10-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "15-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "19-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "12-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "7-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "channel islands united a": {
       "slug": "channel-islands-united-a",
@@ -24631,9 +27839,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 6,
-      "qa_cpi": 1584.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 8,
+      "qa_cpi": 1570.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "10-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "15-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "19-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "12-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "7-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "channel-islands-united-gold": {
       "slug": "channel-islands-united-gold",
@@ -25016,9 +28269,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 22,
-      "qa_cpi": 1542.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 9,
+      "qa_cpi": 1567.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "2-2",
+        "vs_top50": "5-2",
+        "best_wins": [
+          {
+            "opponent": "908 Yellow",
+            "opp_rank": 20,
+            "score": "16-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "20-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 83.4
+      }
     },
     "ca-2026-14ub-channel-islands-united-gold": {
       "slug": "channel-islands-united-gold",
@@ -25401,9 +28699,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 22,
-      "qa_cpi": 1542.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 9,
+      "qa_cpi": 1567.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "2-2",
+        "vs_top50": "5-2",
+        "best_wins": [
+          {
+            "opponent": "908 Yellow",
+            "opp_rank": 20,
+            "score": "16-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "20-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 83.4
+      }
     },
     "channel islands united gold": {
       "slug": "channel-islands-united-gold",
@@ -25786,9 +29129,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 22,
-      "qa_cpi": 1542.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 9,
+      "qa_cpi": 1567.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "2-2",
+        "vs_top50": "5-2",
+        "best_wins": [
+          {
+            "opponent": "908 Yellow",
+            "opp_rank": 20,
+            "score": "16-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "20-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 83.4
+      }
     },
     "chawp-a": {
       "slug": "chawp-a",
@@ -25879,9 +29267,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 114,
-      "qa_cpi": 1458.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 110,
+      "qa_cpi": 1468.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Kingsburg Kings A",
+            "opp_rank": 52,
+            "score": "5-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "ca-2026-14ub-chawp-a": {
       "slug": "chawp-a",
@@ -25972,9 +29376,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 114,
-      "qa_cpi": 1458.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 110,
+      "qa_cpi": 1468.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Kingsburg Kings A",
+            "opp_rank": 52,
+            "score": "5-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "chawp a": {
       "slug": "chawp-a",
@@ -26065,9 +29485,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 114,
-      "qa_cpi": 1458.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 110,
+      "qa_cpi": 1468.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Kingsburg Kings A",
+            "opp_rank": 52,
+            "score": "5-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "clovis-red": {
       "slug": "clovis-red",
@@ -26350,9 +29786,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 56,
-      "qa_cpi": 1499.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 87,
+      "qa_cpi": 1487.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "10-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "5-12",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "13-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "9-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-clovis-red": {
       "slug": "clovis-red",
@@ -26635,9 +30109,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 56,
-      "qa_cpi": 1499.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 87,
+      "qa_cpi": 1487.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "10-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "5-12",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "13-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "9-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "clovis red": {
       "slug": "clovis-red",
@@ -26920,9 +30432,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 56,
-      "qa_cpi": 1499.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 87,
+      "qa_cpi": 1487.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "10-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "5-12",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "13-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "9-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "commerce-a": {
       "slug": "commerce-a",
@@ -27357,9 +30907,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 12,
-      "qa_cpi": 1565.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 10,
+      "qa_cpi": 1564.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "4-3",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "17-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "15-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Shores A",
+            "opp_rank": 90,
+            "score": "11-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "6-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-commerce-a": {
       "slug": "commerce-a",
@@ -27794,9 +31396,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 12,
-      "qa_cpi": 1565.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 10,
+      "qa_cpi": 1564.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "4-3",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "17-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "15-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Shores A",
+            "opp_rank": 90,
+            "score": "11-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "6-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "commerce a": {
       "slug": "commerce-a",
@@ -28231,9 +31885,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 12,
-      "qa_cpi": 1565.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 10,
+      "qa_cpi": 1564.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "4-3",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "17-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "15-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Shores A",
+            "opp_rank": 90,
+            "score": "11-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "6-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "crown-city-a": {
       "slug": "crown-city-a",
@@ -28516,9 +32222,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 143,
-      "qa_cpi": 1436.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 156,
+      "qa_cpi": 1417.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "5-11",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "6-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-crown-city-a": {
       "slug": "crown-city-a",
@@ -28801,9 +32537,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 143,
-      "qa_cpi": 1436.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 156,
+      "qa_cpi": 1417.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "5-11",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "6-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "crown city a": {
       "slug": "crown-city-a",
@@ -29086,9 +32852,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 143,
-      "qa_cpi": 1436.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 156,
+      "qa_cpi": 1417.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "5-11",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "6-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ct-premier-a": {
       "slug": "ct-premier-a",
@@ -29275,9 +33071,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 109,
-      "qa_cpi": 1464.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 106,
+      "qa_cpi": 1470.7,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "BOA A",
+            "opp_rank": 140,
+            "score": "19-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "12-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-ct-premier-a": {
       "slug": "ct-premier-a",
@@ -29464,9 +33291,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 109,
-      "qa_cpi": 1464.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 106,
+      "qa_cpi": 1470.7,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "BOA A",
+            "opp_rank": 140,
+            "score": "19-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "12-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ct premier a": {
       "slug": "ct-premier-a",
@@ -29653,9 +33511,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 109,
-      "qa_cpi": 1464.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 106,
+      "qa_cpi": 1470.7,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "BOA A",
+            "opp_rank": 140,
+            "score": "19-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "12-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "cvu-a": {
       "slug": "cvu-a",
@@ -29938,9 +33827,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 92,
-      "qa_cpi": 1477.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 82,
+      "qa_cpi": 1489.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "14-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "15-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "9-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "11-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-cvu-a": {
       "slug": "cvu-a",
@@ -30223,9 +34157,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 92,
-      "qa_cpi": 1477.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 82,
+      "qa_cpi": 1489.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "14-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "15-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "9-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "11-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "cvu a": {
       "slug": "cvu-a",
@@ -30508,9 +34487,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 92,
-      "qa_cpi": 1477.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 82,
+      "qa_cpi": 1489.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "14-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "15-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "9-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "11-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "davis": {
       "slug": "davis",
@@ -30861,9 +34885,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 91,
-      "qa_cpi": 1479.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 117,
+      "qa_cpi": 1463.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "13-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United Gold",
+            "opp_rank": 92,
+            "score": "18-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "8-6",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "7-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM A",
+            "opp_rank": 91,
+            "score": "7-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "4-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 80.8
+      }
     },
     "ca-2026-14ub-davis": {
       "slug": "davis",
@@ -31214,9 +35290,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 91,
-      "qa_cpi": 1479.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 117,
+      "qa_cpi": 1463.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "13-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United Gold",
+            "opp_rank": 92,
+            "score": "18-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "8-6",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "7-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM A",
+            "opp_rank": 91,
+            "score": "7-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "4-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 80.8
+      }
     },
     "devils-gate-a": {
       "slug": "devils-gate-a",
@@ -31619,9 +35747,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 20,
-      "qa_cpi": 1551.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 21,
+      "qa_cpi": 1538.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "4-3",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "6-14",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rancho Tsunami Blue",
+            "opp_rank": 82,
+            "score": "8-9",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "7-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 98.4
+      }
     },
     "ca-2026-14ub-devils-gate-a": {
       "slug": "devils-gate-a",
@@ -32024,9 +36204,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 20,
-      "qa_cpi": 1551.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 21,
+      "qa_cpi": 1538.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "4-3",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "6-14",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rancho Tsunami Blue",
+            "opp_rank": 82,
+            "score": "8-9",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "7-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 98.4
+      }
     },
     "devils gate a": {
       "slug": "devils-gate-a",
@@ -32429,9 +36661,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 20,
-      "qa_cpi": 1551.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 21,
+      "qa_cpi": 1538.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "4-3",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "6-14",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rancho Tsunami Blue",
+            "opp_rank": 82,
+            "score": "8-9",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "7-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 98.4
+      }
     },
     "diablo-alliance-a": {
       "slug": "diablo-alliance-a",
@@ -32798,9 +37082,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 13,
-      "qa_cpi": 1564.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 12,
+      "qa_cpi": 1558.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "3-3",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "16-2",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "15-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "16-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "10-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "12-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 86.2
+      }
     },
     "ca-2026-14ub-diablo-alliance-a": {
       "slug": "diablo-alliance-a",
@@ -33167,9 +37503,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 13,
-      "qa_cpi": 1564.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 12,
+      "qa_cpi": 1558.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "3-3",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "16-2",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "15-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "16-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "10-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "12-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 86.2
+      }
     },
     "diablo alliance a": {
       "slug": "diablo-alliance-a",
@@ -33536,9 +37924,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 13,
-      "qa_cpi": 1564.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 12,
+      "qa_cpi": 1558.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "3-3",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "16-2",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "15-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "16-13",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "10-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "10-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "12-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 86.2
+      }
     },
     "diablo-alliance-b": {
       "slug": "diablo-alliance-b",
@@ -33921,9 +38361,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 90,
-      "qa_cpi": 1479.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 91,
+      "qa_cpi": 1485.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "11-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "15-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "9-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Cvu A",
+            "opp_rank": 85,
+            "score": "11-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "4-20",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "3-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 86.0
+      }
     },
     "ca-2026-14ub-diablo-alliance-b": {
       "slug": "diablo-alliance-b",
@@ -34306,9 +38798,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 90,
-      "qa_cpi": 1479.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 91,
+      "qa_cpi": 1485.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "11-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "15-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "9-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Cvu A",
+            "opp_rank": 85,
+            "score": "11-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "4-20",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "3-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 86.0
+      }
     },
     "diablo alliance b": {
       "slug": "diablo-alliance-b",
@@ -34691,9 +39235,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 90,
-      "qa_cpi": 1479.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 91,
+      "qa_cpi": 1485.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "11-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "15-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "9-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Cvu A",
+            "opp_rank": 85,
+            "score": "11-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "4-20",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "3-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 86.0
+      }
     },
     "eca-a": {
       "slug": "eca-a",
@@ -34784,9 +39380,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 107,
-      "qa_cpi": 1466.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 89,
+      "qa_cpi": 1487.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "13-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "ca-2026-14ub-eca-a": {
       "slug": "eca-a",
@@ -34877,9 +39489,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 107,
-      "qa_cpi": 1466.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 89,
+      "qa_cpi": 1487.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "13-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "eca a": {
       "slug": "eca-a",
@@ -34970,9 +39598,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 107,
-      "qa_cpi": 1466.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 89,
+      "qa_cpi": 1487.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "13-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "eca-b": {
       "slug": "eca-b",
@@ -35255,9 +39899,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 134,
-      "qa_cpi": 1442.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 145,
+      "qa_cpi": 1428.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "4-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "3-12",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "3-10",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-eca-b": {
       "slug": "eca-b",
@@ -35540,9 +40229,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 134,
-      "qa_cpi": 1442.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 145,
+      "qa_cpi": 1428.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "4-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "3-12",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "3-10",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "eca b": {
       "slug": "eca-b",
@@ -35825,9 +40559,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 134,
-      "qa_cpi": 1442.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 145,
+      "qa_cpi": 1428.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "4-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "3-12",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "3-10",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "foothill-a": {
       "slug": "foothill-a",
@@ -36246,9 +41025,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 59,
-      "qa_cpi": 1498.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 105,
+      "qa_cpi": 1471.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-5",
+        "vs_top50": "0-7",
+        "best_wins": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "6.3-6.2",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "12-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGEN A",
+            "opp_rank": 144,
+            "score": "17-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "5-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CCWP A",
+            "opp_rank": 63,
+            "score": "1-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "0-21",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-foothill-a": {
       "slug": "foothill-a",
@@ -36667,9 +41498,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 59,
-      "qa_cpi": 1498.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 105,
+      "qa_cpi": 1471.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-5",
+        "vs_top50": "0-7",
+        "best_wins": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "6.3-6.2",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "12-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGEN A",
+            "opp_rank": 144,
+            "score": "17-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "5-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CCWP A",
+            "opp_rank": 63,
+            "score": "1-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "0-21",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "foothill a": {
       "slug": "foothill-a",
@@ -37088,9 +41971,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 59,
-      "qa_cpi": 1498.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 105,
+      "qa_cpi": 1471.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-5",
+        "vs_top50": "0-7",
+        "best_wins": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "6.3-6.2",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "12-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGEN A",
+            "opp_rank": 144,
+            "score": "17-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "5-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CCWP A",
+            "opp_rank": 63,
+            "score": "1-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "0-21",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "foothill-b": {
       "slug": "foothill-b",
@@ -37457,9 +42392,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 111,
-      "qa_cpi": 1462.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 118,
+      "qa_cpi": 1463.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "16-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford 13 A",
+            "opp_rank": 137,
+            "score": "10-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "8-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "8-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "3-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "8-19",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "ca-2026-14ub-foothill-b": {
       "slug": "foothill-b",
@@ -37826,9 +42813,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 111,
-      "qa_cpi": 1462.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 118,
+      "qa_cpi": 1463.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "16-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford 13 A",
+            "opp_rank": 137,
+            "score": "10-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "8-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "8-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "3-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "8-19",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "foothill b": {
       "slug": "foothill-b",
@@ -38195,9 +43234,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 111,
-      "qa_cpi": 1462.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 118,
+      "qa_cpi": 1463.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "16-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford 13 A",
+            "opp_rank": 137,
+            "score": "10-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "8-4",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "8-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "3-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "8-19",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "gate-14u-a": {
       "slug": "gate-14u-a",
@@ -38432,9 +43523,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 106,
-      "qa_cpi": 1466.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 86,
+      "qa_cpi": 1488.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "13-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "3-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "10-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-gate-14u-a": {
       "slug": "gate-14u-a",
@@ -38669,9 +43798,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 106,
-      "qa_cpi": 1466.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 86,
+      "qa_cpi": 1488.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "13-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "3-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "10-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "gate 14u a": {
       "slug": "gate-14u-a",
@@ -38906,9 +44073,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 106,
-      "qa_cpi": 1466.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 86,
+      "qa_cpi": 1488.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "13-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "3-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "10-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "gold-coast-a": {
       "slug": "gold-coast-a",
@@ -39243,9 +44448,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 35,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 44,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "17-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "14-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "6-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "4-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "ca-2026-14ub-gold-coast-a": {
       "slug": "gold-coast-a",
@@ -39580,9 +44830,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 35,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 44,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "17-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "14-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "6-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "4-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "gold coast a": {
       "slug": "gold-coast-a",
@@ -39917,9 +45212,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 35,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 44,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "17-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "14-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "6-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "4-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "greenwich-a": {
       "slug": "greenwich-a",
@@ -40394,9 +45734,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 52,
-      "qa_cpi": 1503.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 62,
+      "qa_cpi": 1498.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "0-5",
+        "best_wins": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "8-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "10-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores Gold",
+            "opp_rank": 118,
+            "score": "11-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Shores Black",
+            "opp_rank": 74,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 93.0
+      }
     },
     "ca-2026-14ub-greenwich-a": {
       "slug": "greenwich-a",
@@ -40871,9 +46263,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 52,
-      "qa_cpi": 1503.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 62,
+      "qa_cpi": 1498.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "0-5",
+        "best_wins": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "8-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "10-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores Gold",
+            "opp_rank": 118,
+            "score": "11-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Shores Black",
+            "opp_rank": 74,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 93.0
+      }
     },
     "greenwich a": {
       "slug": "greenwich-a",
@@ -41348,9 +46792,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 52,
-      "qa_cpi": 1503.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 62,
+      "qa_cpi": 1498.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "0-5",
+        "best_wins": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "8-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "10-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores Gold",
+            "opp_rank": 118,
+            "score": "11-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Shores Black",
+            "opp_rank": 74,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 93.0
+      }
     },
     "hieland-a": {
       "slug": "hieland-a",
@@ -41589,9 +47085,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 93,
-      "qa_cpi": 1473.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 123,
+      "qa_cpi": 1457.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Shaq White",
+            "opp_rank": 116,
+            "score": "16-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "8-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "4-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "4-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-hieland-a": {
       "slug": "hieland-a",
@@ -41830,9 +47364,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 93,
-      "qa_cpi": 1473.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 123,
+      "qa_cpi": 1457.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Shaq White",
+            "opp_rank": 116,
+            "score": "16-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "8-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "4-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "4-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "hieland a": {
       "slug": "hieland-a",
@@ -42071,9 +47643,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 93,
-      "qa_cpi": 1473.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 123,
+      "qa_cpi": 1457.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Shaq White",
+            "opp_rank": 116,
+            "score": "16-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "8-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "4-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "4-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "honolulu-blue": {
       "slug": "honolulu-blue",
@@ -42260,9 +47870,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 136,
-      "qa_cpi": 1441.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 134,
+      "qa_cpi": 1440.2,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "2-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "7-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-honolulu-blue": {
       "slug": "honolulu-blue",
@@ -42449,9 +48089,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 136,
-      "qa_cpi": 1441.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 134,
+      "qa_cpi": 1440.2,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "2-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "7-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "honolulu blue": {
       "slug": "honolulu-blue",
@@ -42638,9 +48308,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 136,
-      "qa_cpi": 1441.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 134,
+      "qa_cpi": 1440.2,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "2-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "7-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "honolulu-green": {
       "slug": "honolulu-green",
@@ -42875,9 +48575,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 146,
-      "qa_cpi": 1434.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 132,
+      "qa_cpi": 1445.7,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "10-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Nado A",
+            "opp_rank": 49,
+            "score": "11-16",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "2-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-honolulu-green": {
       "slug": "honolulu-green",
@@ -43112,9 +48850,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 146,
-      "qa_cpi": 1434.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 132,
+      "qa_cpi": 1445.7,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "10-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Nado A",
+            "opp_rank": 49,
+            "score": "11-16",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "2-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "honolulu green": {
       "slug": "honolulu-green",
@@ -43349,9 +49125,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 146,
-      "qa_cpi": 1434.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 132,
+      "qa_cpi": 1445.7,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "10-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Nado A",
+            "opp_rank": 49,
+            "score": "11-16",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "2-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "kingsburg-a": {
       "slug": "kingsburg-a",
@@ -43634,9 +49448,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 39,
-      "qa_cpi": 1514.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 54,
+      "qa_cpi": 1508.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "16-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "8-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "14-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-kingsburg-a": {
       "slug": "kingsburg-a",
@@ -43919,9 +49778,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 39,
-      "qa_cpi": 1514.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 54,
+      "qa_cpi": 1508.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "16-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "8-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "14-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "kingsburg a": {
       "slug": "kingsburg-a",
@@ -44204,9 +50108,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 39,
-      "qa_cpi": 1514.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 54,
+      "qa_cpi": 1508.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "16-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "8-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "14-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "kingsburg-kings-a": {
       "slug": "kingsburg-kings-a",
@@ -44297,9 +50246,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 78,
-      "qa_cpi": 1489.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 59,
+      "qa_cpi": 1502.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Chawp A",
+            "opp_rank": 108,
+            "score": "12-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 31.8
+      }
     },
     "ca-2026-14ub-kingsburg-kings-a": {
       "slug": "kingsburg-kings-a",
@@ -44390,9 +50355,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 78,
-      "qa_cpi": 1489.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 59,
+      "qa_cpi": 1502.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Chawp A",
+            "opp_rank": 108,
+            "score": "12-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 31.8
+      }
     },
     "kingsburg kings a": {
       "slug": "kingsburg-kings-a",
@@ -44483,9 +50464,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 78,
-      "qa_cpi": 1489.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 59,
+      "qa_cpi": 1502.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Chawp A",
+            "opp_rank": 108,
+            "score": "12-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 31.8
+      }
     },
     "la-city-united-a": {
       "slug": "la-city-united-a",
@@ -44856,9 +50853,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 70,
-      "qa_cpi": 1492.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 63,
+      "qa_cpi": 1498.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "3-2",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "5-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "12-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "4-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "7-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "8-10",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "ca-2026-14ub-la-city-united-a": {
       "slug": "la-city-united-a",
@@ -45229,9 +51278,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 70,
-      "qa_cpi": 1492.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 63,
+      "qa_cpi": 1498.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "3-2",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "5-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "12-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "4-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "7-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "8-10",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "la city united a": {
       "slug": "la-city-united-a",
@@ -45602,9 +51703,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 70,
-      "qa_cpi": 1492.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 63,
+      "qa_cpi": 1498.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "3-2",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "5-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "12-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "4-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "7-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "8-10",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "lacuwp-a": {
       "slug": "la-city-united-a",
@@ -45975,9 +52128,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 70,
-      "qa_cpi": 1492.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 63,
+      "qa_cpi": 1498.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "3-2",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "5-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "12-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "4-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "7-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "8-10",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "lacuwp a": {
       "slug": "la-city-united-a",
@@ -46348,9 +52553,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 70,
-      "qa_cpi": 1492.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 63,
+      "qa_cpi": 1498.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "3-2",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "5-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "12-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "4-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "7-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "8-10",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "la-jolla-united-b": {
       "slug": "la-jolla-united-b",
@@ -46633,9 +52890,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 67,
-      "qa_cpi": 1493,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 75,
+      "qa_cpi": 1494.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "10-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "16-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "7-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "15-23",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-la-jolla-united-b": {
       "slug": "la-jolla-united-b",
@@ -46918,9 +53220,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 67,
-      "qa_cpi": 1493,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 75,
+      "qa_cpi": 1494.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "10-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "16-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "7-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "15-23",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "la jolla united b": {
       "slug": "la-jolla-united-b",
@@ -47203,9 +53550,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 67,
-      "qa_cpi": 1493,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 75,
+      "qa_cpi": 1494.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "10-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "16-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "7-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "15-23",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "la-jolla-united-gold": {
       "slug": "la-jolla-united-gold",
@@ -47392,9 +53784,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 120,
-      "qa_cpi": 1455.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 122,
+      "qa_cpi": 1457.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "14-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "7-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "8-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-la-jolla-united-gold": {
       "slug": "la-jolla-united-gold",
@@ -47581,9 +54004,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 120,
-      "qa_cpi": 1455.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 122,
+      "qa_cpi": 1457.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "14-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "7-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "8-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "la jolla united gold": {
       "slug": "la-jolla-united-gold",
@@ -47770,9 +54224,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 120,
-      "qa_cpi": 1455.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 122,
+      "qa_cpi": 1457.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "14-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "7-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "8-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "la-jolla-united-navy": {
       "slug": "la-jolla-united-navy",
@@ -48055,9 +54540,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 11,
-      "qa_cpi": 1569.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 6,
+      "qa_cpi": 1581.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-0",
+        "vs_top25": "2-0",
+        "vs_top50": "3-0",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "12-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "16-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 59.1
+      }
     },
     "ca-2026-14ub-la-jolla-united-navy": {
       "slug": "la-jolla-united-navy",
@@ -48340,9 +54855,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 11,
-      "qa_cpi": 1569.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 6,
+      "qa_cpi": 1581.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-0",
+        "vs_top25": "2-0",
+        "vs_top50": "3-0",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "12-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "16-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 59.1
+      }
     },
     "la jolla united navy": {
       "slug": "la-jolla-united-navy",
@@ -48625,9 +55170,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 11,
-      "qa_cpi": 1569.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 6,
+      "qa_cpi": 1581.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-0",
+        "vs_top25": "2-0",
+        "vs_top50": "3-0",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "12-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "16-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 59.1
+      }
     },
     "la-premier-a": {
       "slug": "la-premier-a",
@@ -49162,9 +55737,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 15,
-      "qa_cpi": 1562.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 5,
+      "qa_cpi": 1586.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "2-4",
+        "vs_top50": "5-4",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "12-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "9-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "8-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "9-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 Yellow",
+            "opp_rank": 20,
+            "score": "5-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-la-premier-a": {
       "slug": "la-premier-a",
@@ -49699,9 +56326,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 15,
-      "qa_cpi": 1562.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 5,
+      "qa_cpi": 1586.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "2-4",
+        "vs_top50": "5-4",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "12-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "9-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "8-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "9-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 Yellow",
+            "opp_rank": 20,
+            "score": "5-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "la premier a": {
       "slug": "la-premier-a",
@@ -50236,9 +56915,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 15,
-      "qa_cpi": 1562.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 5,
+      "qa_cpi": 1586.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "2-4",
+        "vs_top50": "5-4",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes A",
+            "opp_rank": 21,
+            "score": "12-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "9-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "8-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "9-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 Yellow",
+            "opp_rank": 20,
+            "score": "5-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "la-jolla-united-a": {
       "slug": "la-jolla-united-a",
@@ -50606,8 +57337,38 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 1,
-      "qa_cpi": 1642.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1669.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "6-0",
+        "vs_top25": "6-0",
+        "vs_top50": "7-0",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "12-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "16-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 89.2
+      }
     },
     "ca-2026-14ub-la-jolla-united-a": {
       "slug": "la-jolla-united-a",
@@ -50975,8 +57736,38 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 1,
-      "qa_cpi": 1642.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1669.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "6-0",
+        "vs_top25": "6-0",
+        "vs_top50": "7-0",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "12-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "16-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 89.2
+      }
     },
     "la jolla united a": {
       "slug": "la-jolla-united-a",
@@ -51344,8 +58135,38 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 1,
-      "qa_cpi": 1642.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1669.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "6-0",
+        "vs_top25": "6-0",
+        "vs_top50": "7-0",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "12-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "16-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 89.2
+      }
     },
     "lamorinda-a": {
       "slug": "lamorinda-a",
@@ -51816,9 +58637,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 9,
-      "qa_cpi": 1572.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 20,
+      "qa_cpi": 1543.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "2-4",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "10-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "18-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "12-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "9-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "12-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-lamorinda-a": {
       "slug": "lamorinda-a",
@@ -52289,9 +59162,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 9,
-      "qa_cpi": 1572.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 20,
+      "qa_cpi": 1543.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "2-4",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "10-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "18-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "12-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "9-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "12-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "lamorinda a": {
       "slug": "lamorinda-a",
@@ -52762,9 +59687,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 9,
-      "qa_cpi": 1572.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 20,
+      "qa_cpi": 1543.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "2-4",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "10-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Shaq A",
+            "opp_rank": 78,
+            "score": "18-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "12-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "9-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Ovac A",
+            "opp_rank": 65,
+            "score": "12-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "lamorinda-b": {
       "slug": "lamorinda-b",
@@ -53215,9 +60192,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 71,
-      "qa_cpi": 1492.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 33,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "13-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "14-13",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "14-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "8-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "11-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-lamorinda-b": {
       "slug": "lamorinda-b",
@@ -53668,9 +60697,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 71,
-      "qa_cpi": 1492.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 33,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "13-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "14-13",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "14-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "8-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "11-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "lamorinda b": {
       "slug": "lamorinda-b",
@@ -54121,9 +61202,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 71,
-      "qa_cpi": 1492.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 33,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "13-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "14-13",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Ct Premier A",
+            "opp_rank": 88,
+            "score": "14-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "8-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "11-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "lamorinda-c": {
       "slug": "lamorinda-c",
@@ -54502,9 +61635,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 161,
-      "qa_cpi": 1395.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 159,
+      "qa_cpi": 1393.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "18-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "3-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "1-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "ca-2026-14ub-lamorinda-c": {
       "slug": "lamorinda-c",
@@ -54883,9 +62054,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 161,
-      "qa_cpi": 1395.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 159,
+      "qa_cpi": 1393.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "18-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "3-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "1-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "lamorinda c": {
       "slug": "lamorinda-c",
@@ -55264,9 +62473,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 161,
-      "qa_cpi": 1395.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 159,
+      "qa_cpi": 1393.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "18-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "3-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "1-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "los-al-opal-a": {
       "slug": "los-al-opal-a",
@@ -55405,9 +62652,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 119,
-      "qa_cpi": 1455.7,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 125,
+      "qa_cpi": 1455.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "5-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "2-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 38.6
+      }
     },
     "ca-2026-14ub-los-al-opal-a": {
       "slug": "los-al-opal-a",
@@ -55546,9 +62816,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 119,
-      "qa_cpi": 1455.7,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 125,
+      "qa_cpi": 1455.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "5-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "2-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 38.6
+      }
     },
     "los al opal a": {
       "slug": "los-al-opal-a",
@@ -55687,9 +62980,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 119,
-      "qa_cpi": 1455.7,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 125,
+      "qa_cpi": 1455.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "5-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "2-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 38.6
+      }
     },
     "los-alamitos-a": {
       "slug": "los-alamitos-a",
@@ -55972,9 +63288,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 57,
-      "qa_cpi": 1499.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 49,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "11-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "9-3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "6-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "8-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-los-alamitos-a": {
       "slug": "los-alamitos-a",
@@ -56257,9 +63618,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 57,
-      "qa_cpi": 1499.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 49,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "11-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "9-3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "6-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "8-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "los alamitos a": {
       "slug": "los-alamitos-a",
@@ -56542,9 +63948,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 57,
-      "qa_cpi": 1499.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 49,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "11-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "9-3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "6-7",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "8-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "los-angeles-wpc-a": {
       "slug": "los-angeles-wpc-a",
@@ -57003,9 +64454,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 28,
-      "qa_cpi": 1517.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 52,
+      "qa_cpi": 1509.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "13-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "17-5",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "10-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "0-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 92.8
+      }
     },
     "ca-2026-14ub-los-angeles-wpc-a": {
       "slug": "los-angeles-wpc-a",
@@ -57464,9 +64967,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 28,
-      "qa_cpi": 1517.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 52,
+      "qa_cpi": 1509.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "13-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "17-5",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "10-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "0-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 92.8
+      }
     },
     "los angeles wpc a": {
       "slug": "los-angeles-wpc-a",
@@ -57925,9 +65480,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 28,
-      "qa_cpi": 1517.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 52,
+      "qa_cpi": 1509.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "13-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "17-5",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "10-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "0-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 92.8
+      }
     },
     "lowpo-a": {
       "slug": "los-angeles-wpc-a",
@@ -58386,9 +65993,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 28,
-      "qa_cpi": 1517.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 52,
+      "qa_cpi": 1509.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "13-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "17-5",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "10-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "0-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 92.8
+      }
     },
     "lowpo a": {
       "slug": "los-angeles-wpc-a",
@@ -58847,9 +66506,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 28,
-      "qa_cpi": 1517.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 52,
+      "qa_cpi": 1509.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "13-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "17-5",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "10-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "0-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 92.8
+      }
     },
     "loyola-a": {
       "slug": "loyola-a",
@@ -59216,9 +66927,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 129,
-      "qa_cpi": 1448.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 149,
+      "qa_cpi": 1426.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "14-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "6-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "6-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "ca-2026-14ub-loyola-a": {
       "slug": "loyola-a",
@@ -59585,9 +67334,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 129,
-      "qa_cpi": 1448.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 149,
+      "qa_cpi": 1426.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "14-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "6-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "6-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "loyola a": {
       "slug": "loyola-a",
@@ -59954,9 +67741,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 129,
-      "qa_cpi": 1448.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 149,
+      "qa_cpi": 1426.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "14-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "6-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "6-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "loyola-wpc-a": {
       "slug": "loyola-wpc-a",
@@ -60191,9 +68016,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 124,
-      "qa_cpi": 1452.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 101,
+      "qa_cpi": 1474.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-4",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "7-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "8-2",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "4-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-loyola-wpc-a": {
       "slug": "loyola-wpc-a",
@@ -60428,9 +68291,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 124,
-      "qa_cpi": 1452.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 101,
+      "qa_cpi": 1474.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-4",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "7-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "8-2",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "4-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "loyola wpc a": {
       "slug": "loyola-wpc-a",
@@ -60665,9 +68566,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 124,
-      "qa_cpi": 1452.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 101,
+      "qa_cpi": 1474.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-4",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "7-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "8-2",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "4-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "midpen-a": {
       "slug": "midpen-a",
@@ -61046,9 +68985,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 135,
-      "qa_cpi": 1441.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 147,
+      "qa_cpi": 1427.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "16-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Foundation Blue",
+            "opp_rank": 153,
+            "score": "5-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "3-20",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "ca-2026-14ub-midpen-a": {
       "slug": "midpen-a",
@@ -61427,9 +69404,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 135,
-      "qa_cpi": 1441.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 147,
+      "qa_cpi": 1427.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "16-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Foundation Blue",
+            "opp_rank": 153,
+            "score": "5-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "3-20",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "midpen a": {
       "slug": "midpen-a",
@@ -61808,9 +69823,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 135,
-      "qa_cpi": 1441.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 147,
+      "qa_cpi": 1427.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "16-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Foundation Blue",
+            "opp_rank": 153,
+            "score": "5-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "3-20",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "mission-14b-a": {
       "slug": "mission-14b-a",
@@ -61998,8 +70051,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 115,
-      "qa_cpi": 1458.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_cpi": 1465.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "12-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "8-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "5-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-mission-14b-a": {
       "slug": "mission-14b-a",
@@ -62187,8 +70271,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 115,
-      "qa_cpi": 1458.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_cpi": 1465.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "12-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "8-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "5-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "mission 14b a": {
       "slug": "mission-14b-a",
@@ -62376,8 +70491,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 115,
-      "qa_cpi": 1458.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_cpi": 1465.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "12-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "8-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "5-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "mission-wpc-a": {
       "slug": "mission-wpc-a",
@@ -62865,8 +71011,60 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 2,
-      "qa_cpi": 1619.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1639.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-3",
+        "vs_top25": "5-4",
+        "vs_top50": "5-4",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "8-3",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "6-10",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "8-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "La Jolla United A",
+            "opp_rank": 1,
+            "score": "9-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-mission-wpc-a": {
       "slug": "mission-wpc-a",
@@ -63354,8 +71552,60 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 2,
-      "qa_cpi": 1619.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1639.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-3",
+        "vs_top25": "5-4",
+        "vs_top50": "5-4",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "8-3",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "6-10",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "8-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "La Jolla United A",
+            "opp_rank": 1,
+            "score": "9-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "mission wpc a": {
       "slug": "mission-wpc-a",
@@ -63843,8 +72093,60 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 2,
-      "qa_cpi": 1619.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1639.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-3",
+        "vs_top25": "5-4",
+        "vs_top50": "5-4",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "9-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "8-3",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "6-10",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "8-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "La Jolla United A",
+            "opp_rank": 1,
+            "score": "9-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "mission-wpc-b": {
       "slug": "mission-wpc-b",
@@ -64247,9 +72549,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 66,
-      "qa_cpi": 1493,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 37,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "2-1",
+        "vs_top50": "3-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "10-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "7-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "12-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "7-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "6-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-mission-wpc-b": {
       "slug": "mission-wpc-b",
@@ -64652,9 +72999,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 66,
-      "qa_cpi": 1493,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 37,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "2-1",
+        "vs_top50": "3-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "10-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "7-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "12-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "7-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "6-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "mission wpc b": {
       "slug": "mission-wpc-b",
@@ -65057,9 +73449,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 66,
-      "qa_cpi": 1493,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 37,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "2-1",
+        "vs_top50": "3-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "10-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "7-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "12-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "7-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "6-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ngen-a": {
       "slug": "ngen-a",
@@ -65442,9 +73879,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 140,
-      "qa_cpi": 1437.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 148,
+      "qa_cpi": 1427.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "9-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "11-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "15-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "9-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "16-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "9-21",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "ca-2026-14ub-ngen-a": {
       "slug": "ngen-a",
@@ -65827,9 +74316,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 140,
-      "qa_cpi": 1437.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 148,
+      "qa_cpi": 1427.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "9-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "11-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "15-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "9-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "16-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "9-21",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "ngen a": {
       "slug": "ngen-a",
@@ -66212,9 +74753,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 140,
-      "qa_cpi": 1437.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 148,
+      "qa_cpi": 1427.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "9-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "11-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "15-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "9-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "16-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "9-21",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "nsd-stars-a": {
       "slug": "nsd-stars-a",
@@ -66401,9 +74994,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 97,
-      "qa_cpi": 1472.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 70,
+      "qa_cpi": 1498.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "9-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "10-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "17-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-nsd-stars-a": {
       "slug": "nsd-stars-a",
@@ -66590,9 +75213,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 97,
-      "qa_cpi": 1472.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 70,
+      "qa_cpi": 1498.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "9-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "10-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "17-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 41.2
+      }
     },
     "nsd stars a": {
       "slug": "nsd-stars-a",
@@ -66779,9 +75432,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 97,
-      "qa_cpi": 1472.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 70,
+      "qa_cpi": 1498.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "9-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "10-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "17-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 41.2
+      }
     },
     "nado-a": {
       "slug": "nado-a",
@@ -66968,9 +75651,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 117,
-      "qa_cpi": 1457.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 98,
+      "qa_cpi": 1480.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Honolulu Green",
+            "opp_rank": 111,
+            "score": "16-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "14-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-nado-a": {
       "slug": "nado-a",
@@ -67157,9 +75870,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 117,
-      "qa_cpi": 1457.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 98,
+      "qa_cpi": 1480.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Honolulu Green",
+            "opp_rank": 111,
+            "score": "16-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "14-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 41.2
+      }
     },
     "nado a": {
       "slug": "nado-a",
@@ -67346,9 +76089,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 117,
-      "qa_cpi": 1457.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 98,
+      "qa_cpi": 1480.1,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Honolulu Green",
+            "opp_rank": 111,
+            "score": "16-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "14-6",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 41.2
+      }
     },
     "newport-beach-a": {
       "slug": "newport-beach-a",
@@ -67831,9 +76604,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 4,
-      "qa_cpi": 1606.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 3,
+      "qa_cpi": 1608.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2-1",
+        "vs_top25": "2-3-1",
+        "vs_top50": "4-4-1",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "13-3",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "15-13",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "14-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "7-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-newport-beach-a": {
       "slug": "newport-beach-a",
@@ -68316,9 +77141,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 4,
-      "qa_cpi": 1606.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 3,
+      "qa_cpi": 1608.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2-1",
+        "vs_top25": "2-3-1",
+        "vs_top50": "4-4-1",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "13-3",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "15-13",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "14-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "7-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "newport beach a": {
       "slug": "newport-beach-a",
@@ -68801,9 +77678,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 4,
-      "qa_cpi": 1606.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 3,
+      "qa_cpi": 1608.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2-1",
+        "vs_top25": "2-3-1",
+        "vs_top50": "4-4-1",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "13-3",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "15-13",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "14-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "7-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "newport-beach-b": {
       "slug": "newport-beach-b",
@@ -69138,9 +78067,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 51,
-      "qa_cpi": 1503.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 28,
+      "qa_cpi": 1514.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "13-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP B",
+            "opp_rank": 84,
+            "score": "8-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Brea Olinda Gold",
+            "opp_rank": 64,
+            "score": "3-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "8-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 69.7
+      }
     },
     "ca-2026-14ub-newport-beach-b": {
       "slug": "newport-beach-b",
@@ -69475,9 +78456,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 51,
-      "qa_cpi": 1503.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 28,
+      "qa_cpi": 1514.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "13-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP B",
+            "opp_rank": 84,
+            "score": "8-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Brea Olinda Gold",
+            "opp_rank": 64,
+            "score": "3-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "8-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 69.7
+      }
     },
     "newport beach b": {
       "slug": "newport-beach-b",
@@ -69812,9 +78845,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 51,
-      "qa_cpi": 1503.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 28,
+      "qa_cpi": 1514.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "13-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP B",
+            "opp_rank": 84,
+            "score": "8-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Brea Olinda Gold",
+            "opp_rank": 64,
+            "score": "3-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "8-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 69.7
+      }
     },
     "newport-beach-c": {
       "slug": "newport-beach-c",
@@ -70085,9 +79170,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 99,
-      "qa_cpi": 1471.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 79,
+      "qa_cpi": 1491.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "11-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "11-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "6-10",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "ca-2026-14ub-newport-beach-c": {
       "slug": "newport-beach-c",
@@ -70358,9 +79481,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 99,
-      "qa_cpi": 1471.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 79,
+      "qa_cpi": 1491.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "11-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "11-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "6-10",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "newport beach c": {
       "slug": "newport-beach-c",
@@ -70631,9 +79792,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 99,
-      "qa_cpi": 1471.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 79,
+      "qa_cpi": 1491.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "11-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "11-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "6-10",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "norcal-a": {
       "slug": "norcal-a",
@@ -71152,9 +80351,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 3,
-      "qa_cpi": 1609.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 4,
+      "qa_cpi": 1601.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1-1",
+        "vs_top25": "2-1-1",
+        "vs_top50": "3-3-1",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "10-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "13-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "5-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-norcal-a": {
       "slug": "norcal-a",
@@ -71673,9 +80924,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 3,
-      "qa_cpi": 1609.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 4,
+      "qa_cpi": 1601.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1-1",
+        "vs_top25": "2-1-1",
+        "vs_top50": "3-3-1",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "10-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "13-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "5-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "norcal a": {
       "slug": "norcal-a",
@@ -72194,9 +81497,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 3,
-      "qa_cpi": 1609.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 4,
+      "qa_cpi": 1601.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1-1",
+        "vs_top25": "2-1-1",
+        "vs_top50": "3-3-1",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "10-7",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "13-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "5-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "7-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "norcal-b": {
       "slug": "norcal-b",
@@ -72631,9 +81986,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 95,
-      "qa_cpi": 1473,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 64,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "16-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "13-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "17-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Cvu A",
+            "opp_rank": 85,
+            "score": "7-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "3-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "7-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-norcal-b": {
       "slug": "norcal-b",
@@ -73068,9 +82475,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 95,
-      "qa_cpi": 1473,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 64,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "16-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "13-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "17-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Cvu A",
+            "opp_rank": 85,
+            "score": "7-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "3-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "7-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "norcal b": {
       "slug": "norcal-b",
@@ -73505,9 +82964,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 95,
-      "qa_cpi": 1473,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 64,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "16-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "13-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "17-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Cvu A",
+            "opp_rank": 85,
+            "score": "7-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "3-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "7-15",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "north-irvine-a": {
       "slug": "north-irvine-a",
@@ -73994,9 +83505,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 23,
-      "qa_cpi": 1539.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 27,
+      "qa_cpi": 1519.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-4",
+        "vs_top50": "5-6",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "8-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "7-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "7-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "5-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores Black",
+            "opp_rank": 74,
+            "score": "1-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "8-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-north-irvine-a": {
       "slug": "north-irvine-a",
@@ -74483,9 +84046,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 23,
-      "qa_cpi": 1539.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 27,
+      "qa_cpi": 1519.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-4",
+        "vs_top50": "5-6",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "8-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "7-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "7-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "5-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores Black",
+            "opp_rank": 74,
+            "score": "1-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "8-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "north irvine a": {
       "slug": "north-irvine-a",
@@ -74972,9 +84587,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 23,
-      "qa_cpi": 1539.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 27,
+      "qa_cpi": 1519.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-4",
+        "vs_top50": "5-6",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "8-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "7-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "7-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "5-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores Black",
+            "opp_rank": 74,
+            "score": "1-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "8-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "north-irvine-b": {
       "slug": "north-irvine-b",
@@ -75377,9 +85044,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 125,
-      "qa_cpi": 1451.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 131,
+      "qa_cpi": 1447.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "10-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "16-9",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shaq Blue",
+            "opp_rank": 125,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "6-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "4-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "11-12",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 95.6
+      }
     },
     "ca-2026-14ub-north-irvine-b": {
       "slug": "north-irvine-b",
@@ -75782,9 +85501,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 125,
-      "qa_cpi": 1451.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 131,
+      "qa_cpi": 1447.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "10-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "16-9",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shaq Blue",
+            "opp_rank": 125,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "6-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "4-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "11-12",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 95.6
+      }
     },
     "north irvine b": {
       "slug": "north-irvine-b",
@@ -76187,9 +85958,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 125,
-      "qa_cpi": 1451.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 131,
+      "qa_cpi": 1447.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "10-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "16-9",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shaq Blue",
+            "opp_rank": 125,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "6-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "4-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "11-12",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 95.6
+      }
     },
     "northwest-a": {
       "slug": "northwest-a",
@@ -76592,9 +86415,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 100,
-      "qa_cpi": 1471.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 112,
+      "qa_cpi": 1467.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-5",
+        "vs_top50": "2-5",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "14-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "10-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "6.2-6.3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "9-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 91.4
+      }
     },
     "ca-2026-14ub-northwest-a": {
       "slug": "northwest-a",
@@ -76997,9 +86872,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 100,
-      "qa_cpi": 1471.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 112,
+      "qa_cpi": 1467.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-5",
+        "vs_top50": "2-5",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "14-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "10-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "6.2-6.3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "9-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 91.4
+      }
     },
     "northwest a": {
       "slug": "northwest-a",
@@ -77402,9 +87329,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 100,
-      "qa_cpi": 1471.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 112,
+      "qa_cpi": 1467.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-5",
+        "vs_top50": "2-5",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "14-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "10-8",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill A",
+            "opp_rank": 154,
+            "score": "6.2-6.3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "9-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 91.4
+      }
     },
     "orwp-a": {
       "slug": "orwp-a",
@@ -77795,9 +87774,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 84,
-      "qa_cpi": 1486.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 81,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "9-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "17-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "4-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.8
+      }
     },
     "ca-2026-14ub-orwp-a": {
       "slug": "orwp-a",
@@ -78188,9 +88219,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 84,
-      "qa_cpi": 1486.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 81,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "9-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "17-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "4-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.8
+      }
     },
     "orwp a": {
       "slug": "orwp-a",
@@ -78581,9 +88664,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 84,
-      "qa_cpi": 1486.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 81,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "9-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "17-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "4-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.8
+      }
     },
     "orwp-red": {
       "slug": "orwp-a",
@@ -78974,9 +89109,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 84,
-      "qa_cpi": 1486.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 81,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "9-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "17-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "4-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.8
+      }
     },
     "orwp red": {
       "slug": "orwp-a",
@@ -79367,9 +89554,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 84,
-      "qa_cpi": 1486.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 81,
+      "qa_cpi": 1490.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-3",
+        "vs_top50": "1-4",
+        "best_wins": [
+          {
+            "opponent": "Patriot B",
+            "opp_rank": 15,
+            "score": "9-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "17-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-12",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "7-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "4-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.8
+      }
     },
     "orwp-b": {
       "slug": "orwp-b",
@@ -79556,9 +89795,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 157,
-      "qa_cpi": 1415.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 138,
+      "qa_cpi": 1435.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "19-5",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac Orange",
+            "opp_rank": 47,
+            "score": "7-20",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-orwp-b": {
       "slug": "orwp-b",
@@ -79745,9 +90015,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 157,
-      "qa_cpi": 1415.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 138,
+      "qa_cpi": 1435.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "19-5",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac Orange",
+            "opp_rank": 47,
+            "score": "7-20",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "orwp b": {
       "slug": "orwp-b",
@@ -79934,9 +90235,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 157,
-      "qa_cpi": 1415.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 138,
+      "qa_cpi": 1435.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "19-5",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac Orange",
+            "opp_rank": 47,
+            "score": "7-20",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "orwp-black": {
       "slug": "orwp-black",
@@ -80219,9 +90551,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 69,
-      "qa_cpi": 1492.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 61,
+      "qa_cpi": 1498.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "17-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "16-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "10-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "8-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-orwp-black": {
       "slug": "orwp-black",
@@ -80504,9 +90874,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 69,
-      "qa_cpi": 1492.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 61,
+      "qa_cpi": 1498.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "17-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "16-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "10-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "8-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "orwp black": {
       "slug": "orwp-black",
@@ -80789,9 +91197,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 69,
-      "qa_cpi": 1492.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 61,
+      "qa_cpi": 1498.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "17-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "16-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "10-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "8-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "orwp-14u-black": {
       "slug": "orwp-black",
@@ -81074,9 +91520,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 69,
-      "qa_cpi": 1492.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 61,
+      "qa_cpi": 1498.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "17-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "16-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "10-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "8-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "orwp 14u black": {
       "slug": "orwp-black",
@@ -81359,9 +91843,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 69,
-      "qa_cpi": 1492.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 61,
+      "qa_cpi": 1498.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Pac A",
+            "opp_rank": 81,
+            "score": "17-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "16-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "10-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "8-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "orange-county-wpc-b": {
       "slug": "orange-county-wpc-b",
@@ -81684,9 +92206,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 58,
-      "qa_cpi": 1499.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 56,
+      "qa_cpi": 1505.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "6-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission 14b A",
+            "opp_rank": 95,
+            "score": "11-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "6-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 73.9
+      }
     },
     "ca-2026-14ub-orange-county-wpc-b": {
       "slug": "orange-county-wpc-b",
@@ -82009,9 +92583,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 58,
-      "qa_cpi": 1499.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 56,
+      "qa_cpi": 1505.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "6-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission 14b A",
+            "opp_rank": 95,
+            "score": "11-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "6-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 73.9
+      }
     },
     "orange county wpc b": {
       "slug": "orange-county-wpc-b",
@@ -82334,9 +92960,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 58,
-      "qa_cpi": 1499.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 56,
+      "qa_cpi": 1505.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "6-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission 14b A",
+            "opp_rank": 95,
+            "score": "11-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "6-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 73.9
+      }
     },
     "orange-county-wpc-blue": {
       "slug": "orange-county-wpc-b",
@@ -82659,9 +93337,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 58,
-      "qa_cpi": 1499.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 56,
+      "qa_cpi": 1505.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "6-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission 14b A",
+            "opp_rank": 95,
+            "score": "11-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "6-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 73.9
+      }
     },
     "orange county wpc blue": {
       "slug": "orange-county-wpc-b",
@@ -82984,9 +93714,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 58,
-      "qa_cpi": 1499.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 56,
+      "qa_cpi": 1505.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "6-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission 14b A",
+            "opp_rank": 95,
+            "score": "11-5",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "6-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "6-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-12",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 73.9
+      }
     },
     "orange-county-wpc-c": {
       "slug": "orange-county-wpc-c",
@@ -83221,9 +94003,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 159,
-      "qa_cpi": 1409.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 143,
+      "qa_cpi": 1429.8,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "9-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "9-1",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "3-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "5-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-orange-county-wpc-c": {
       "slug": "orange-county-wpc-c",
@@ -83458,9 +94278,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 159,
-      "qa_cpi": 1409.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 143,
+      "qa_cpi": 1429.8,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "9-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "9-1",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "3-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "5-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "orange county wpc c": {
       "slug": "orange-county-wpc-c",
@@ -83695,9 +94553,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 159,
-      "qa_cpi": 1409.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 143,
+      "qa_cpi": 1429.8,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "9-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "9-1",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "3-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "5-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ovac-a": {
       "slug": "ovac-a",
@@ -84012,9 +94908,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 26,
-      "qa_cpi": 1528.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 17,
+      "qa_cpi": 1545.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-3",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "11-6",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "16-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "6-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "7-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "7-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 65.9
+      }
     },
     "ca-2026-14ub-ovac-a": {
       "slug": "ovac-a",
@@ -84329,9 +95277,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 26,
-      "qa_cpi": 1528.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 17,
+      "qa_cpi": 1545.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-3",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "11-6",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "16-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "6-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "7-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "7-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 65.9
+      }
     },
     "ovac a": {
       "slug": "ovac-a",
@@ -84646,9 +95646,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 26,
-      "qa_cpi": 1528.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 17,
+      "qa_cpi": 1545.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-3",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "11-6",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "16-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "6-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "7-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "7-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 65.9
+      }
     },
     "pac-a": {
       "slug": "pac-a",
@@ -84963,9 +96015,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 75,
-      "qa_cpi": 1491.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 92,
+      "qa_cpi": 1483.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "7-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "7-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "28-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "5-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "8-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "13-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "ca-2026-14ub-pac-a": {
       "slug": "pac-a",
@@ -85280,9 +96384,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 75,
-      "qa_cpi": 1491.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 92,
+      "qa_cpi": 1483.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "7-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "7-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "28-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "5-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "8-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "13-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "pac a": {
       "slug": "pac-a",
@@ -85597,9 +96753,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 75,
-      "qa_cpi": 1491.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 92,
+      "qa_cpi": 1483.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "7-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "7-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "28-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "5-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "8-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "13-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "palos-verdes-a": {
       "slug": "palos-verdes-a",
@@ -85966,9 +97174,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 25,
-      "qa_cpi": 1530.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 13,
+      "qa_cpi": 1557.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-3",
+        "vs_top25": "1-3",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "13-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "19-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "11-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 78.0
+      }
     },
     "ca-2026-14ub-palos-verdes-a": {
       "slug": "palos-verdes-a",
@@ -86335,9 +97595,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 25,
-      "qa_cpi": 1530.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 13,
+      "qa_cpi": 1557.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-3",
+        "vs_top25": "1-3",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "13-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "19-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "11-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 78.0
+      }
     },
     "palos verdes a": {
       "slug": "palos-verdes-a",
@@ -86704,9 +98016,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 25,
-      "qa_cpi": 1530.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 13,
+      "qa_cpi": 1557.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-3",
+        "vs_top25": "1-3",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "13-3",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "19-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United Gold",
+            "opp_rank": 9,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "11-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "7-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 78.0
+      }
     },
     "palos-verdes-b": {
       "slug": "palos-verdes-b",
@@ -87125,9 +98489,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 77,
-      "qa_cpi": 1490.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 38,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "7-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "15-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Brea Olinda Gold",
+            "opp_rank": 64,
+            "score": "12-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "3-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "3-12",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "6-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-palos-verdes-b": {
       "slug": "palos-verdes-b",
@@ -87546,9 +98962,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 77,
-      "qa_cpi": 1490.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 38,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "7-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "15-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Brea Olinda Gold",
+            "opp_rank": 64,
+            "score": "12-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "3-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "3-12",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "6-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "palos verdes b": {
       "slug": "palos-verdes-b",
@@ -87967,9 +99435,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 77,
-      "qa_cpi": 1490.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 38,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "7-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "15-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Brea Olinda Gold",
+            "opp_rank": 64,
+            "score": "12-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "3-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "3-12",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "6-11",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "pasadena-ac-a": {
       "slug": "pasadena-ac-a",
@@ -88252,9 +99772,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 81,
-      "qa_cpi": 1488.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 73,
+      "qa_cpi": 1495.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "15-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "8-5",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "16-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "5-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-pasadena-ac-a": {
       "slug": "pasadena-ac-a",
@@ -88537,9 +100095,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 81,
-      "qa_cpi": 1488.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 73,
+      "qa_cpi": 1495.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "15-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "8-5",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "16-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "5-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "pasadena ac a": {
       "slug": "pasadena-ac-a",
@@ -88822,9 +100418,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 81,
-      "qa_cpi": 1488.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 73,
+      "qa_cpi": 1495.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Sand Canyon A",
+            "opp_rank": 54,
+            "score": "15-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "8-5",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "16-3",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "5-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "pasadena-ac-orange": {
       "slug": "pasadena-ac-orange",
@@ -88963,9 +100597,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 121,
-      "qa_cpi": 1454.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 97,
+      "qa_cpi": 1481.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "15-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP B",
+            "opp_rank": 84,
+            "score": "20-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 35.8
+      }
     },
     "ca-2026-14ub-pasadena-ac-orange": {
       "slug": "pasadena-ac-orange",
@@ -89104,9 +100761,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 121,
-      "qa_cpi": 1454.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 97,
+      "qa_cpi": 1481.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "15-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP B",
+            "opp_rank": 84,
+            "score": "20-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 35.8
+      }
     },
     "pasadena ac orange": {
       "slug": "pasadena-ac-orange",
@@ -89245,9 +100925,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 121,
-      "qa_cpi": 1454.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 97,
+      "qa_cpi": 1481.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "15-9",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP B",
+            "opp_rank": 84,
+            "score": "20-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 35.8
+      }
     },
     "patriot-a": {
       "slug": "patriot-a",
@@ -89698,9 +101401,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 17,
-      "qa_cpi": 1562.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 23,
+      "qa_cpi": 1532.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-6",
+        "vs_top25": "1-7",
+        "vs_top50": "2-8",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "13-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "8-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "9-10",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "9-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-patriot-a": {
       "slug": "patriot-a",
@@ -90151,9 +101906,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 17,
-      "qa_cpi": 1562.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 23,
+      "qa_cpi": 1532.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-6",
+        "vs_top25": "1-7",
+        "vs_top50": "2-8",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "13-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "8-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "9-10",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "9-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "patriot a": {
       "slug": "patriot-a",
@@ -90604,9 +102411,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 17,
-      "qa_cpi": 1562.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 23,
+      "qa_cpi": 1532.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-6",
+        "vs_top25": "1-7",
+        "vs_top50": "2-8",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "13-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Channel Islands United A",
+            "opp_rank": 37,
+            "score": "8-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "9-10",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "9-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "patriot-b": {
       "slug": "patriot-b",
@@ -91045,9 +102904,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 30,
-      "qa_cpi": 1516.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 25,
+      "qa_cpi": 1527.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "12-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "7-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "9-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "8-9",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "10-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 95.6
+      }
     },
     "ca-2026-14ub-patriot-b": {
       "slug": "patriot-b",
@@ -91486,9 +103397,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 30,
-      "qa_cpi": 1516.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 25,
+      "qa_cpi": 1527.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "12-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "7-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "9-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "8-9",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "10-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 95.6
+      }
     },
     "patriot b": {
       "slug": "patriot-b",
@@ -91927,9 +103890,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 30,
-      "qa_cpi": 1516.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 25,
+      "qa_cpi": 1527.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "12-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "7-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "9-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "8-9",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "10-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 95.6
+      }
     },
     "pegasus": {
       "slug": "pegasus",
@@ -92212,9 +104227,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 31,
-      "qa_cpi": 1515.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 76,
+      "qa_cpi": 1494.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM A",
+            "opp_rank": 91,
+            "score": "5-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "12-18",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "ca-2026-14ub-pegasus": {
       "slug": "pegasus",
@@ -92497,9 +104542,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 31,
-      "qa_cpi": 1515.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 76,
+      "qa_cpi": 1494.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM A",
+            "opp_rank": 91,
+            "score": "5-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "12-18",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "poway-valley-black": {
       "slug": "poway-valley-black",
@@ -92782,9 +104857,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 64,
-      "qa_cpi": 1495,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 67,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-0",
+        "best_wins": [
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "11-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "8-5",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-poway-valley-black": {
       "slug": "poway-valley-black",
@@ -93067,9 +105172,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 64,
-      "qa_cpi": 1495,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 67,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-0",
+        "best_wins": [
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "11-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "8-5",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 52.1
+      }
     },
     "poway valley black": {
       "slug": "poway-valley-black",
@@ -93352,9 +105487,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 64,
-      "qa_cpi": 1495,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 67,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-0",
+        "best_wins": [
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "11-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "8-5",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "11-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 52.1
+      }
     },
     "pride-a": {
       "slug": "pride-a",
@@ -93637,9 +105802,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 29,
-      "qa_cpi": 1517.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 24,
+      "qa_cpi": 1529.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "15-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "16-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 54.9
+      }
     },
     "ca-2026-14ub-pride-a": {
       "slug": "pride-a",
@@ -93922,9 +106132,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 29,
-      "qa_cpi": 1517.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 24,
+      "qa_cpi": 1529.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "15-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "16-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 54.9
+      }
     },
     "pride a": {
       "slug": "pride-a",
@@ -94207,9 +106462,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 29,
-      "qa_cpi": 1517.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 24,
+      "qa_cpi": 1529.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "15-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "16-4",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 54.9
+      }
     },
     "pride-black": {
       "slug": "pride-black",
@@ -94592,9 +106892,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 86,
-      "qa_cpi": 1484.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 80,
+      "qa_cpi": 1490.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-1",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "9-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "11-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 84.8
+      }
     },
     "ca-2026-14ub-pride-black": {
       "slug": "pride-black",
@@ -94977,9 +107329,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 86,
-      "qa_cpi": 1484.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 80,
+      "qa_cpi": 1490.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-1",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "9-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "11-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 84.8
+      }
     },
     "pride black": {
       "slug": "pride-black",
@@ -95362,9 +107766,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 86,
-      "qa_cpi": 1484.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 80,
+      "qa_cpi": 1490.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-1",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "9-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "11-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gate 14U A",
+            "opp_rank": 77,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 84.8
+      }
     },
     "pride-red": {
       "slug": "pride-red",
@@ -95651,9 +108107,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 85,
-      "qa_cpi": 1485.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 108,
+      "qa_cpi": 1470.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "12-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "6-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CDM B",
+            "opp_rank": 132,
+            "score": "9-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "8-13",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "9-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "ca-2026-14ub-pride-red": {
       "slug": "pride-red",
@@ -95940,9 +108448,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 85,
-      "qa_cpi": 1485.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 108,
+      "qa_cpi": 1470.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "12-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "6-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CDM B",
+            "opp_rank": 132,
+            "score": "9-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "8-13",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "9-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "pride red": {
       "slug": "pride-red",
@@ -96229,9 +108789,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 85,
-      "qa_cpi": 1485.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 108,
+      "qa_cpi": 1470.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Stanford Black",
+            "opp_rank": 25,
+            "score": "12-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "6-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CDM B",
+            "opp_rank": 132,
+            "score": "9-4",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "8-13",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "9-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "puget-sound-a": {
       "slug": "puget-sound-a",
@@ -96322,9 +108934,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 118,
-      "qa_cpi": 1456.5,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 102,
+      "qa_cpi": 1473.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "19-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "ca-2026-14ub-puget-sound-a": {
       "slug": "puget-sound-a",
@@ -96415,9 +109043,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 118,
-      "qa_cpi": 1456.5,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 102,
+      "qa_cpi": 1473.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "19-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "puget sound a": {
       "slug": "puget-sound-a",
@@ -96508,9 +109152,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 118,
-      "qa_cpi": 1456.5,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 102,
+      "qa_cpi": 1473.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "19-3",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "rain-city-a": {
       "slug": "rain-city-a",
@@ -96793,9 +109453,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 89,
-      "qa_cpi": 1481.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 113,
+      "qa_cpi": 1466.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Big Valley A",
+            "opp_rank": 130,
+            "score": "11-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "13-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "9-16",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "7-12",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-rain-city-a": {
       "slug": "rain-city-a",
@@ -97078,9 +109783,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 89,
-      "qa_cpi": 1481.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 113,
+      "qa_cpi": 1466.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Big Valley A",
+            "opp_rank": 130,
+            "score": "11-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "13-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "9-16",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "7-12",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "rain city a": {
       "slug": "rain-city-a",
@@ -97363,9 +110113,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 89,
-      "qa_cpi": 1481.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 113,
+      "qa_cpi": 1466.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Big Valley A",
+            "opp_rank": 130,
+            "score": "11-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "13-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "9-16",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "7-12",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "rancho-tsunami-a": {
       "slug": "rancho-tsunami-a",
@@ -97648,9 +110443,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 36,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 50,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "6-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "20-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-rancho-tsunami-a": {
       "slug": "rancho-tsunami-a",
@@ -97933,9 +110758,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 36,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 50,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "6-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "20-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 52.1
+      }
     },
     "rancho tsunami a": {
       "slug": "rancho-tsunami-a",
@@ -98218,9 +111073,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 36,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 50,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "6-5",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "20-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 52.1
+      }
     },
     "rancho-tsunami-blue": {
       "slug": "rancho-tsunami-blue",
@@ -98455,9 +111340,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 73,
-      "qa_cpi": 1491.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 78,
+      "qa_cpi": 1492.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "9-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "13-5",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "6-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "ca-2026-14ub-rancho-tsunami-blue": {
       "slug": "rancho-tsunami-blue",
@@ -98692,9 +111615,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 73,
-      "qa_cpi": 1491.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 78,
+      "qa_cpi": 1492.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "9-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "13-5",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "6-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "rancho tsunami blue": {
       "slug": "rancho-tsunami-blue",
@@ -98929,9 +111890,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 73,
-      "qa_cpi": 1491.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 78,
+      "qa_cpi": 1492.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "9-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "13-5",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "6-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "riverside-a": {
       "slug": "riverside-a",
@@ -99118,9 +112117,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 127,
-      "qa_cpi": 1450.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 109,
+      "qa_cpi": 1469.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "13-12",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "14-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "12-16",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-riverside-a": {
       "slug": "riverside-a",
@@ -99307,9 +112337,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 127,
-      "qa_cpi": 1450.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 109,
+      "qa_cpi": 1469.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "13-12",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "14-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "12-16",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "riverside a": {
       "slug": "riverside-a",
@@ -99496,9 +112557,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 127,
-      "qa_cpi": 1450.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 109,
+      "qa_cpi": 1469.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "13-12",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "14-7",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "12-16",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "rose-bowl": {
       "slug": "rose-bowl",
@@ -99781,9 +112873,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 55,
-      "qa_cpi": 1501.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 88,
+      "qa_cpi": 1487.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "11-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "9-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "15-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "12-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-rose-bowl": {
       "slug": "rose-bowl",
@@ -100066,9 +113196,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 55,
-      "qa_cpi": 1501.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 88,
+      "qa_cpi": 1487.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "11-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "9-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "15-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "12-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "rose bowl": {
       "slug": "rose-bowl",
@@ -100351,9 +113519,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 55,
-      "qa_cpi": 1501.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 88,
+      "qa_cpi": 1487.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "11-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Stanford B",
+            "opp_rank": 101,
+            "score": "9-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "15-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "12-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "rose-bowl-black": {
       "slug": "rose-bowl-black",
@@ -100752,9 +113958,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 94,
-      "qa_cpi": 1473.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 111,
+      "qa_cpi": 1467.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "12-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "13-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "8-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "ca-2026-14ub-rose-bowl-black": {
       "slug": "rose-bowl-black",
@@ -101153,9 +114411,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 94,
-      "qa_cpi": 1473.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 111,
+      "qa_cpi": 1467.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "12-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "13-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "8-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "rose bowl black": {
       "slug": "rose-bowl-black",
@@ -101554,9 +114864,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 94,
-      "qa_cpi": 1473.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 111,
+      "qa_cpi": 1467.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Eca B",
+            "opp_rank": 94,
+            "score": "12-3",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "13-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "8-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "7-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "4-17",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "rose-bowl-red": {
       "slug": "rose-bowl-red",
@@ -101907,9 +115269,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 116,
-      "qa_cpi": 1457.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 133,
+      "qa_cpi": 1445.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "11-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Shores Gold",
+            "opp_rank": 118,
+            "score": "14-8",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "5-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "13-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "13-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "ca-2026-14ub-rose-bowl-red": {
       "slug": "rose-bowl-red",
@@ -102260,9 +115667,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 116,
-      "qa_cpi": 1457.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 133,
+      "qa_cpi": 1445.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "11-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Shores Gold",
+            "opp_rank": 118,
+            "score": "14-8",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "5-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "13-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "13-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "rose bowl red": {
       "slug": "rose-bowl-red",
@@ -102613,9 +116065,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 116,
-      "qa_cpi": 1457.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 133,
+      "qa_cpi": 1445.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-3",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "11-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Shores Gold",
+            "opp_rank": 118,
+            "score": "14-8",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "5-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "13-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "13-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "route-66-a": {
       "slug": "route-66-a",
@@ -103054,9 +116551,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 133,
-      "qa_cpi": 1445.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 135,
+      "qa_cpi": 1439.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "1-8",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "8-17",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Shaq Blue",
+            "opp_rank": 125,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "6-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 99.8
+      }
     },
     "ca-2026-14ub-route-66-a": {
       "slug": "route-66-a",
@@ -103495,9 +117044,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 133,
-      "qa_cpi": 1445.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 135,
+      "qa_cpi": 1439.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "1-8",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "8-17",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Shaq Blue",
+            "opp_rank": 125,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "6-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 99.8
+      }
     },
     "route 66 a": {
       "slug": "route-66-a",
@@ -103936,9 +117537,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 133,
-      "qa_cpi": 1445.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 135,
+      "qa_cpi": 1439.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "1-8",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "8-17",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Shaq Blue",
+            "opp_rank": 125,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "6-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 99.8
+      }
     },
     "route-66-aquatics-a": {
       "slug": "route-66-a",
@@ -104377,9 +118030,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 133,
-      "qa_cpi": 1445.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 135,
+      "qa_cpi": 1439.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "1-8",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "8-17",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Shaq Blue",
+            "opp_rank": 125,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "6-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 99.8
+      }
     },
     "route 66 aquatics a": {
       "slug": "route-66-a",
@@ -104818,9 +118523,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 133,
-      "qa_cpi": 1445.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 135,
+      "qa_cpi": 1439.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "1-8",
+        "best_wins": [
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "12-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "12-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "8-17",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Shaq Blue",
+            "opp_rank": 125,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford Red",
+            "opp_rank": 50,
+            "score": "6-10",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 99.8
+      }
     },
     "sd-dons-a": {
       "slug": "sd-dons-a",
@@ -105327,9 +119084,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 5,
-      "qa_cpi": 1588.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 7,
+      "qa_cpi": 1580.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-5",
+        "vs_top25": "3-5",
+        "vs_top50": "4-5",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "13-15",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-sd-dons-a": {
       "slug": "sd-dons-a",
@@ -105836,9 +119645,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 5,
-      "qa_cpi": 1588.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 7,
+      "qa_cpi": 1580.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-5",
+        "vs_top25": "3-5",
+        "vs_top50": "4-5",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "13-15",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "sd dons a": {
       "slug": "sd-dons-a",
@@ -106345,9 +120206,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 5,
-      "qa_cpi": 1588.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 7,
+      "qa_cpi": 1580.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-5",
+        "vs_top25": "3-5",
+        "vs_top50": "4-5",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "13-15",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "san-diego-dons-a": {
       "slug": "sd-dons-a",
@@ -106854,9 +120767,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 5,
-      "qa_cpi": 1588.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 7,
+      "qa_cpi": 1580.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-5",
+        "vs_top25": "3-5",
+        "vs_top50": "4-5",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "13-15",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "san diego dons a": {
       "slug": "sd-dons-a",
@@ -107363,9 +121328,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 5,
-      "qa_cpi": 1588.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 7,
+      "qa_cpi": 1580.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-5",
+        "vs_top25": "3-5",
+        "vs_top50": "4-5",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "13-15",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "san-diego-dons-14-black": {
       "slug": "sd-dons-a",
@@ -107872,9 +121889,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 5,
-      "qa_cpi": 1588.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 7,
+      "qa_cpi": 1580.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-5",
+        "vs_top25": "3-5",
+        "vs_top50": "4-5",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "13-15",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "san diego dons 14 black": {
       "slug": "sd-dons-a",
@@ -108381,9 +122450,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 5,
-      "qa_cpi": 1588.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 7,
+      "qa_cpi": 1580.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "2-5",
+        "vs_top25": "3-5",
+        "vs_top50": "4-5",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-8",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "5-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "13-15",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "sd-dons-b": {
       "slug": "sd-dons-b",
@@ -108522,9 +122643,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 147,
-      "qa_cpi": 1433.5,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 137,
+      "qa_cpi": 1436.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "2-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "3-7",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 38.6
+      }
     },
     "ca-2026-14ub-sd-dons-b": {
       "slug": "sd-dons-b",
@@ -108663,9 +122807,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 147,
-      "qa_cpi": 1433.5,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 137,
+      "qa_cpi": 1436.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "2-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "3-7",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 38.6
+      }
     },
     "sd dons b": {
       "slug": "sd-dons-b",
@@ -108804,9 +122971,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 147,
-      "qa_cpi": 1433.5,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 137,
+      "qa_cpi": 1436.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "2-4",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "3-7",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 38.6
+      }
     },
     "sd-dons-c": {
       "slug": "sd-dons-c",
@@ -108993,9 +123183,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 141,
-      "qa_cpi": 1437.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 121,
+      "qa_cpi": 1460.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "14-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "8-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "11-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "ca-2026-14ub-sd-dons-c": {
       "slug": "sd-dons-c",
@@ -109182,9 +123403,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 141,
-      "qa_cpi": 1437.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 121,
+      "qa_cpi": 1460.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "14-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "8-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "11-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "sd dons c": {
       "slug": "sd-dons-c",
@@ -109371,9 +123623,40 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 141,
-      "qa_cpi": 1437.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 121,
+      "qa_cpi": 1460.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "14-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "8-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "11-15",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 41.2
+      }
     },
     "sd-dons-d": {
       "slug": "sd-dons-d",
@@ -109464,9 +123747,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 160,
-      "qa_cpi": 1408.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 136,
+      "qa_cpi": 1438.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "17-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "ca-2026-14ub-sd-dons-d": {
       "slug": "sd-dons-d",
@@ -109557,9 +123856,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 160,
-      "qa_cpi": 1408.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 136,
+      "qa_cpi": 1438.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "17-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "sd dons d": {
       "slug": "sd-dons-d",
@@ -109650,9 +123965,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 160,
-      "qa_cpi": 1408.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 136,
+      "qa_cpi": 1438.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "17-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 30.4
+      }
     },
     "sd-eca-a": {
       "slug": "sd-eca-a",
@@ -109971,9 +124302,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 88,
-      "qa_cpi": 1481.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 95,
+      "qa_cpi": 1481.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-3",
+        "vs_top50": "0-5",
+        "best_wins": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "16-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Honolulu Blue",
+            "opp_rank": 126,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Hieland A",
+            "opp_rank": 128,
+            "score": "10-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "8-14",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "ca-2026-14ub-sd-eca-a": {
       "slug": "sd-eca-a",
@@ -110292,9 +124675,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 88,
-      "qa_cpi": 1481.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 95,
+      "qa_cpi": 1481.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-3",
+        "vs_top50": "0-5",
+        "best_wins": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "16-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Honolulu Blue",
+            "opp_rank": 126,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Hieland A",
+            "opp_rank": 128,
+            "score": "10-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "8-14",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "sd eca a": {
       "slug": "sd-eca-a",
@@ -110613,9 +125048,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 88,
-      "qa_cpi": 1481.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 95,
+      "qa_cpi": 1481.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-3",
+        "vs_top50": "0-5",
+        "best_wins": [
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "16-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Honolulu Blue",
+            "opp_rank": 126,
+            "score": "9-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Hieland A",
+            "opp_rank": 128,
+            "score": "10-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "8-14",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "5-10",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "sd-shores-a": {
       "slug": "sd-shores-a",
@@ -110898,9 +125385,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 14,
-      "qa_cpi": 1563.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 18,
+      "qa_cpi": 1544.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "12-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "10.1-10.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "2-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "ca-2026-14ub-sd-shores-a": {
       "slug": "sd-shores-a",
@@ -111183,9 +125715,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 14,
-      "qa_cpi": 1563.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 18,
+      "qa_cpi": 1544.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "12-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "10.1-10.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "2-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "sd shores a": {
       "slug": "sd-shores-a",
@@ -111468,9 +126045,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 14,
-      "qa_cpi": 1563.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 18,
+      "qa_cpi": 1544.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "12-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "10.1-10.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "2-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "san-diego-shores-a": {
       "slug": "sd-shores-a",
@@ -111753,9 +126375,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 14,
-      "qa_cpi": 1563.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 18,
+      "qa_cpi": 1544.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "12-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "10.1-10.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "2-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "san diego shores a": {
       "slug": "sd-shores-a",
@@ -112038,9 +126705,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 14,
-      "qa_cpi": 1563.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 18,
+      "qa_cpi": 1544.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "1-2",
+        "vs_top50": "1-2",
+        "best_wins": [
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "12-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "10.1-10.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "2-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Mission WPC A",
+            "opp_rank": 2,
+            "score": "10-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "sd-shores-black": {
       "slug": "sd-shores-black",
@@ -112279,9 +126991,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 54,
-      "qa_cpi": 1502.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 30,
+      "qa_cpi": 1510.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "11-1",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "1-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "ca-2026-14ub-sd-shores-black": {
       "slug": "sd-shores-black",
@@ -112520,9 +127270,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 54,
-      "qa_cpi": 1502.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 30,
+      "qa_cpi": 1510.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "11-1",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "1-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "sd shores black": {
       "slug": "sd-shores-black",
@@ -112761,9 +127549,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 54,
-      "qa_cpi": 1502.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 30,
+      "qa_cpi": 1510.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "11-1",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "1-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "san-diego-shores-black": {
       "slug": "sd-shores-black",
@@ -113002,9 +127828,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 54,
-      "qa_cpi": 1502.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 30,
+      "qa_cpi": 1510.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "11-1",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "1-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "san diego shores black": {
       "slug": "sd-shores-black",
@@ -113243,9 +128107,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 54,
-      "qa_cpi": 1502.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 30,
+      "qa_cpi": 1510.3,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "9-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "11-1",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "5-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "NorCal A",
+            "opp_rank": 3,
+            "score": "1-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "sd-shores-gold": {
       "slug": "sd-shores-gold",
@@ -113384,9 +128286,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 154,
-      "qa_cpi": 1423.1,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 150,
+      "qa_cpi": 1424.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "8-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "4-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 35.8
+      }
     },
     "ca-2026-14ub-sd-shores-gold": {
       "slug": "sd-shores-gold",
@@ -113525,9 +128450,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 154,
-      "qa_cpi": 1423.1,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 150,
+      "qa_cpi": 1424.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "8-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "4-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 35.8
+      }
     },
     "sd shores gold": {
       "slug": "sd-shores-gold",
@@ -113666,9 +128614,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 154,
-      "qa_cpi": 1423.1,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 150,
+      "qa_cpi": 1424.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "8-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "4-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 35.8
+      }
     },
     "set-a": {
       "slug": "set-a",
@@ -114039,9 +129010,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 150,
-      "qa_cpi": 1431.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 160,
+      "qa_cpi": 1390.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "11-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "5-3",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "3-15",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "10-11",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "ca-2026-14ub-set-a": {
       "slug": "set-a",
@@ -114412,9 +129428,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 150,
-      "qa_cpi": 1431.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 160,
+      "qa_cpi": 1390.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "11-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "5-3",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "3-15",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "10-11",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "set a": {
       "slug": "set-a",
@@ -114785,9 +129846,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 150,
-      "qa_cpi": 1431.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 160,
+      "qa_cpi": 1390.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "11-5",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Tsm A",
+            "opp_rank": 160,
+            "score": "5-3",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "3-15",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "10-11",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "sj-foundation-a": {
       "slug": "sj-foundation-a",
@@ -115070,9 +130176,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 98,
-      "qa_cpi": 1472.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 84,
+      "qa_cpi": 1489.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-1",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "9.3-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "14-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "5-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Skip",
+            "opp_rank": 22,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-sj-foundation-a": {
       "slug": "sj-foundation-a",
@@ -115355,9 +130506,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 98,
-      "qa_cpi": 1472.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 84,
+      "qa_cpi": 1489.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-1",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "9.3-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "14-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "5-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Skip",
+            "opp_rank": 22,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "sj foundation a": {
       "slug": "sj-foundation-a",
@@ -115640,9 +130836,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 98,
-      "qa_cpi": 1472.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 84,
+      "qa_cpi": 1489.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-1",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "9.3-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "9-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Stanford C",
+            "opp_rank": 86,
+            "score": "14-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vegas Renegades A",
+            "opp_rank": 36,
+            "score": "5-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Skip",
+            "opp_rank": 22,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "san-clemente-a": {
       "slug": "san-clemente-a",
@@ -115926,8 +131167,53 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 19,
-      "qa_cpi": 1553.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1544.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "11-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "14-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "18-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "7-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "9-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "ca-2026-14ub-san-clemente-a": {
       "slug": "san-clemente-a",
@@ -116211,8 +131497,53 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 19,
-      "qa_cpi": 1553.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1544.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "11-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "14-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "18-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "7-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "9-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "san clemente a": {
       "slug": "san-clemente-a",
@@ -116496,8 +131827,53 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
       "qa_rank": 19,
-      "qa_cpi": 1553.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_cpi": 1544.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "11-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SoCal A",
+            "opp_rank": 148,
+            "score": "14-13",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "18-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "7-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "9-16",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "san-clemente-black": {
       "slug": "san-clemente-black",
@@ -116820,9 +132196,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 74,
-      "qa_cpi": 1491.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 65,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Riverside A",
+            "opp_rank": 69,
+            "score": "16-12",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "8-7",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "14-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "4-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac Orange",
+            "opp_rank": 47,
+            "score": "9-15",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "ca-2026-14ub-san-clemente-black": {
       "slug": "san-clemente-black",
@@ -117145,9 +132573,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 74,
-      "qa_cpi": 1491.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 65,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Riverside A",
+            "opp_rank": 69,
+            "score": "16-12",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "8-7",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "14-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "4-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac Orange",
+            "opp_rank": 47,
+            "score": "9-15",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "san clemente black": {
       "slug": "san-clemente-black",
@@ -117470,9 +132950,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 74,
-      "qa_cpi": 1491.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 65,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Riverside A",
+            "opp_rank": 69,
+            "score": "16-12",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "8-7",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "14-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "4-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Pasadena Ac Orange",
+            "opp_rank": 47,
+            "score": "9-15",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Poway Valley Black",
+            "opp_rank": 27,
+            "score": "8-11",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "san-clemente-red": {
       "slug": "san-clemente-red",
@@ -117855,9 +133387,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 34,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 40,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "10-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "13-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "9-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "ca-2026-14ub-san-clemente-red": {
       "slug": "san-clemente-red",
@@ -118240,9 +133810,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 34,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 40,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "10-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "13-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "9-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "san clemente red": {
       "slug": "san-clemente-red",
@@ -118625,9 +134233,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 34,
-      "qa_cpi": 1515,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 40,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-1",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "7-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "10-7",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "13-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "9-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "san-francisco-a": {
       "slug": "san-francisco-a",
@@ -118978,9 +134624,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 152,
-      "qa_cpi": 1429.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 146,
+      "qa_cpi": 1428.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "14-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "18-5",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "5-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "5-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "ca-2026-14ub-san-francisco-a": {
       "slug": "san-francisco-a",
@@ -119331,9 +135022,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 152,
-      "qa_cpi": 1429.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 146,
+      "qa_cpi": 1428.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "14-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "18-5",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "5-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "5-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "san francisco a": {
       "slug": "san-francisco-a",
@@ -119684,9 +135420,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 152,
-      "qa_cpi": 1429.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 146,
+      "qa_cpi": 1428.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "14-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "18-5",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "5-18",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "5-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trojan A",
+            "opp_rank": 97,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "san-jose-express-a": {
       "slug": "san-jose-express-a",
@@ -120121,9 +135902,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 102,
-      "qa_cpi": 1470.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 124,
+      "qa_cpi": 1456.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "12-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "14-1",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "7-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "6-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "8-17",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-san-jose-express-a": {
       "slug": "san-jose-express-a",
@@ -120558,9 +136391,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 102,
-      "qa_cpi": 1470.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 124,
+      "qa_cpi": 1456.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "12-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "14-1",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "7-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "6-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "8-17",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "san jose express a": {
       "slug": "san-jose-express-a",
@@ -120995,9 +136880,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 102,
-      "qa_cpi": 1470.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 124,
+      "qa_cpi": 1456.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "1-5",
+        "best_wins": [
+          {
+            "opponent": "Stanford White",
+            "opp_rank": 30,
+            "score": "12-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "14-1",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "908 Green",
+            "opp_rank": 117,
+            "score": "7-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "6-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "4-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "8-17",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "san-jose-foundation-black": {
       "slug": "san-jose-foundation-black",
@@ -121312,9 +137249,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 47,
-      "qa_cpi": 1507.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 74,
+      "qa_cpi": 1495.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "10-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "20-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "5-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "6-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "1-19",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "ca-2026-14ub-san-jose-foundation-black": {
       "slug": "san-jose-foundation-black",
@@ -121629,9 +137611,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 47,
-      "qa_cpi": 1507.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 74,
+      "qa_cpi": 1495.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "10-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "20-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "5-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "6-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "1-19",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "san jose foundation black": {
       "slug": "san-jose-foundation-black",
@@ -121946,9 +137973,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 47,
-      "qa_cpi": 1507.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 74,
+      "qa_cpi": 1495.0,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "10-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "20-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "5-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "6-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "1-19",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "san-jose-foundation-blue": {
       "slug": "san-jose-foundation-blue",
@@ -122295,9 +138367,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 130,
-      "qa_cpi": 1448.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 139,
+      "qa_cpi": 1434.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "8-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "2-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "4-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "ca-2026-14ub-san-jose-foundation-blue": {
       "slug": "san-jose-foundation-blue",
@@ -122644,9 +138754,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 130,
-      "qa_cpi": 1448.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 139,
+      "qa_cpi": 1434.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "8-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "2-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "4-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "san jose foundation blue": {
       "slug": "san-jose-foundation-blue",
@@ -122993,9 +139141,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 130,
-      "qa_cpi": 1448.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 139,
+      "qa_cpi": 1434.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "8-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "2-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "4-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 62.9
+      }
     },
     "sand-canyon-a": {
       "slug": "sand-canyon-a",
@@ -123298,9 +139484,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 72,
-      "qa_cpi": 1491.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 66,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-2",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "12-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "12-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "17-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "14-15",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "9-17",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "11-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "ca-2026-14ub-sand-canyon-a": {
       "slug": "sand-canyon-a",
@@ -123603,9 +139841,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 72,
-      "qa_cpi": 1491.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 66,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-2",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "12-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "12-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "17-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "14-15",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "9-17",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "11-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "sand canyon a": {
       "slug": "sand-canyon-a",
@@ -123908,9 +140198,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 72,
-      "qa_cpi": 1491.7,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 66,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "1-2",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "12-3",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "12-7",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "17-6",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pasadena Ac A",
+            "opp_rank": 45,
+            "score": "14-15",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "9-17",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Gold Coast A",
+            "opp_rank": 14,
+            "score": "11-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "santa-barbara-a": {
       "slug": "santa-barbara-a",
@@ -124377,9 +140719,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 43,
-      "qa_cpi": 1511.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 31,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "0-3",
+        "vs_top50": "3-3",
+        "best_wins": [
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "13-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "15-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "15.2-15.3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "4-12",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-santa-barbara-a": {
       "slug": "santa-barbara-a",
@@ -124846,9 +141240,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 43,
-      "qa_cpi": 1511.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 31,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "0-3",
+        "vs_top50": "3-3",
+        "best_wins": [
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "13-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "15-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "15.2-15.3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "4-12",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "santa barbara a": {
       "slug": "santa-barbara-a",
@@ -125315,9 +141761,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 43,
-      "qa_cpi": 1511.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 31,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "0-3",
+        "vs_top50": "3-3",
+        "best_wins": [
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "13-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Temple City A",
+            "opp_rank": 33,
+            "score": "14-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "15-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "15.2-15.3",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "4-12",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "10-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "santa-cruz-a": {
       "slug": "santa-cruz-a",
@@ -125684,9 +142182,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 79,
-      "qa_cpi": 1489.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 100,
+      "qa_cpi": 1477.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-1",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "11-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "10-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Foundation Blue",
+            "opp_rank": 153,
+            "score": "16-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "3-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "8-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "4-15",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "ca-2026-14ub-santa-cruz-a": {
       "slug": "santa-cruz-a",
@@ -126053,9 +142603,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 79,
-      "qa_cpi": 1489.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 100,
+      "qa_cpi": 1477.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-1",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "11-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "10-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Foundation Blue",
+            "opp_rank": 153,
+            "score": "16-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "3-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "8-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "4-15",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "santa cruz a": {
       "slug": "santa-cruz-a",
@@ -126422,9 +143024,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 79,
-      "qa_cpi": 1489.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 100,
+      "qa_cpi": 1477.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-1",
+        "vs_top50": "1-3",
+        "best_wins": [
+          {
+            "opponent": "Shore Aquatics A",
+            "opp_rank": 24,
+            "score": "11-5",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "10-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Foundation Blue",
+            "opp_rank": 153,
+            "score": "16-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Jose Foundation Black",
+            "opp_rank": 127,
+            "score": "3-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "8-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "4-15",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 68.3
+      }
     },
     "shaq-a": {
       "slug": "shaq-a",
@@ -126659,9 +143313,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 82,
-      "qa_cpi": 1487.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 71,
+      "qa_cpi": 1497.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "12-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "21-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "12-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "9-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-shaq-a": {
       "slug": "shaq-a",
@@ -126896,9 +143588,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 82,
-      "qa_cpi": 1487.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 71,
+      "qa_cpi": 1497.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "12-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "21-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "12-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "9-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "shaq a": {
       "slug": "shaq-a",
@@ -127133,9 +143863,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 82,
-      "qa_cpi": 1487.2,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 71,
+      "qa_cpi": 1497.6,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "12-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "21-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "12-14",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "9-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "shaq-blue": {
       "slug": "shaq-blue",
@@ -127370,9 +144138,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 113,
-      "qa_cpi": 1459.1,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 116,
+      "qa_cpi": 1463.8,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "11-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "7-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "ca-2026-14ub-shaq-blue": {
       "slug": "shaq-blue",
@@ -127607,9 +144413,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 113,
-      "qa_cpi": 1459.1,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 116,
+      "qa_cpi": 1463.8,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "11-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "7-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "shaq blue": {
       "slug": "shaq-blue",
@@ -127844,9 +144688,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 113,
-      "qa_cpi": 1459.1,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 116,
+      "qa_cpi": 1463.8,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "11-8",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "6-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "9-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "LA Premier A",
+            "opp_rank": 5,
+            "score": "7-14",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 52.3
+      }
     },
     "shaq-white": {
       "slug": "shaq-white",
@@ -127985,9 +144867,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 153,
-      "qa_cpi": 1425.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 151,
+      "qa_cpi": 1424.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Hieland A",
+            "opp_rank": 128,
+            "score": "10-16",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "4-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 35.8
+      }
     },
     "ca-2026-14ub-shaq-white": {
       "slug": "shaq-white",
@@ -128126,9 +145031,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 153,
-      "qa_cpi": 1425.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 151,
+      "qa_cpi": 1424.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Hieland A",
+            "opp_rank": 128,
+            "score": "10-16",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "4-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 35.8
+      }
     },
     "shaq white": {
       "slug": "shaq-white",
@@ -128267,9 +145195,32 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 153,
-      "qa_cpi": 1425.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 151,
+      "qa_cpi": 1424.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Hieland A",
+            "opp_rank": 128,
+            "score": "10-16",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "4-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 35.8
+      }
     },
     "sharks-a": {
       "slug": "sharks-a",
@@ -128652,9 +145603,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 63,
-      "qa_cpi": 1496.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 90,
+      "qa_cpi": 1485.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "12-0",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "5-10",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "7-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "4-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 82.0
+      }
     },
     "ca-2026-14ub-sharks-a": {
       "slug": "sharks-a",
@@ -129037,9 +146040,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 63,
-      "qa_cpi": 1496.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 90,
+      "qa_cpi": 1485.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "12-0",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "5-10",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "7-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "4-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 82.0
+      }
     },
     "sharks a": {
       "slug": "sharks-a",
@@ -129422,9 +146477,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 63,
-      "qa_cpi": 1496.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 90,
+      "qa_cpi": 1485.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-8",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "9-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Burlingame A",
+            "opp_rank": 112,
+            "score": "12-0",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Greenwich A",
+            "opp_rank": 87,
+            "score": "5-10",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "7-11",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM White",
+            "opp_rank": 70,
+            "score": "4-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 82.0
+      }
     },
     "shore-aquatics-a": {
       "slug": "shore-aquatics-a",
@@ -129859,9 +146966,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 42,
-      "qa_cpi": 1512.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 35,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "18-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "5-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons D",
+            "opp_rank": 62,
+            "score": "2-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Eca A",
+            "opp_rank": 59,
+            "score": "3-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-shore-aquatics-a": {
       "slug": "shore-aquatics-a",
@@ -130296,9 +147455,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 42,
-      "qa_cpi": 1512.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 35,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "18-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "5-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons D",
+            "opp_rank": 62,
+            "score": "2-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Eca A",
+            "opp_rank": 59,
+            "score": "3-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "shore aquatics a": {
       "slug": "shore-aquatics-a",
@@ -130733,9 +147944,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 42,
-      "qa_cpi": 1512.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 35,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-1",
+        "vs_top25": "1-2",
+        "vs_top50": "2-2",
+        "best_wins": [
+          {
+            "opponent": "San Clemente Red",
+            "opp_rank": 8,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Back Bay",
+            "opp_rank": 55,
+            "score": "18-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Cruz A",
+            "opp_rank": 131,
+            "score": "5-11",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons D",
+            "opp_rank": 62,
+            "score": "2-17",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Eca A",
+            "opp_rank": 59,
+            "score": "3-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "shore-red": {
       "slug": "shore-red",
@@ -131050,9 +148313,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 49,
-      "qa_cpi": 1506.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 47,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "16-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "34-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "9-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "14-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "ca-2026-14ub-shore-red": {
       "slug": "shore-red",
@@ -131367,9 +148675,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 49,
-      "qa_cpi": 1506.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 47,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "16-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "34-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "9-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "14-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "shore red": {
       "slug": "shore-red",
@@ -131684,9 +149037,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 49,
-      "qa_cpi": 1506.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 47,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "16-10",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "34-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "9-7",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "14-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "sja-a": {
       "slug": "sja-a",
@@ -131777,9 +149175,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 101,
-      "qa_cpi": 1470.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 85,
+      "qa_cpi": 1488.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "La Jolla United A",
+            "opp_rank": 1,
+            "score": "3-16",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "ca-2026-14ub-sja-a": {
       "slug": "sja-a",
@@ -131870,9 +149284,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 101,
-      "qa_cpi": 1470.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 85,
+      "qa_cpi": 1488.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "La Jolla United A",
+            "opp_rank": 1,
+            "score": "3-16",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "sja a": {
       "slug": "sja-a",
@@ -131963,9 +149393,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 101,
-      "qa_cpi": 1470.9,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 85,
+      "qa_cpi": 1488.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "La Jolla United A",
+            "opp_rank": 1,
+            "score": "3-16",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "skip": {
       "slug": "skip",
@@ -132248,9 +149694,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 65,
-      "qa_cpi": 1495,
-      "qa_ranking_status": "cpi_2_0_qa_known_band"
+      "qa_rank": 68,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa_known_band",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "2-0",
+        "best_wins": [
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "12-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "5-4",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-skip": {
       "slug": "skip",
@@ -132533,9 +150009,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 65,
-      "qa_cpi": 1495,
-      "qa_ranking_status": "cpi_2_0_qa_known_band"
+      "qa_rank": 68,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa_known_band",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "2-0",
+        "best_wins": [
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "12-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "5-4",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "13-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [],
+        "confidence": 52.1
+      }
     },
     "socal-12-black": {
       "slug": "socal-12-black",
@@ -132770,9 +150276,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 110,
-      "qa_cpi": 1464.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 103,
+      "qa_cpi": 1472.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Mission 14b A",
+            "opp_rank": 95,
+            "score": "11-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "7-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "8-16",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "8-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-socal-12-black": {
       "slug": "socal-12-black",
@@ -133007,9 +150551,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 110,
-      "qa_cpi": 1464.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 103,
+      "qa_cpi": 1472.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Mission 14b A",
+            "opp_rank": 95,
+            "score": "11-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "7-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "8-16",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "8-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "socal 12 black": {
       "slug": "socal-12-black",
@@ -133244,9 +150826,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 110,
-      "qa_cpi": 1464.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 103,
+      "qa_cpi": 1472.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Mission 14b A",
+            "opp_rank": 95,
+            "score": "11-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Trilogy Black",
+            "opp_rank": 119,
+            "score": "7-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SD Eca A",
+            "opp_rank": 115,
+            "score": "8-16",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "8-11",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "socal-a": {
       "slug": "socal-a",
@@ -133581,9 +151201,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 24,
-      "qa_cpi": 1532.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 72,
+      "qa_cpi": 1496.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Los Al Opal A",
+            "opp_rank": 122,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "6-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "7-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "13-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 78.3
+      }
     },
     "ca-2026-14ub-socal-a": {
       "slug": "socal-a",
@@ -133918,9 +151583,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 24,
-      "qa_cpi": 1532.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 72,
+      "qa_cpi": 1496.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Los Al Opal A",
+            "opp_rank": 122,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "6-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "7-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "13-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 78.3
+      }
     },
     "socal a": {
       "slug": "socal-a",
@@ -134255,9 +151965,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 24,
-      "qa_cpi": 1532.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 72,
+      "qa_cpi": 1496.7,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Los Al Opal A",
+            "opp_rank": 122,
+            "score": "6-5",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Pegasus",
+            "opp_rank": 155,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Davis",
+            "opp_rank": 147,
+            "score": "6-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "North Irvine A",
+            "opp_rank": 99,
+            "score": "7-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "13-14",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 78.3
+      }
     },
     "south-coast-a": {
       "slug": "south-coast-a",
@@ -134348,9 +152103,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 104,
-      "qa_cpi": 1470.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 93,
+      "qa_cpi": 1482.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "4-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "ca-2026-14ub-south-coast-a": {
       "slug": "south-coast-a",
@@ -134441,9 +152212,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 104,
-      "qa_cpi": 1470.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 93,
+      "qa_cpi": 1482.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "4-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "south coast a": {
       "slug": "south-coast-a",
@@ -134534,9 +152321,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 104,
-      "qa_cpi": 1470.0,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 93,
+      "qa_cpi": 1482.9,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Newport Beach A",
+            "opp_rank": 6,
+            "score": "4-9",
+            "event": "San Diego County Cup",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 31.8
+      }
     },
     "south-coast-blue": {
       "slug": "south-coast-blue",
@@ -134771,9 +152574,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 149,
-      "qa_cpi": 1431.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 142,
+      "qa_cpi": 1430.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "7-5",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "3-9",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "2-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-south-coast-blue": {
       "slug": "south-coast-blue",
@@ -135008,9 +152849,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 149,
-      "qa_cpi": 1431.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 142,
+      "qa_cpi": 1430.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "7-5",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "3-9",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "2-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "south coast blue": {
       "slug": "south-coast-blue",
@@ -135245,9 +153124,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 149,
-      "qa_cpi": 1431.6,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 142,
+      "qa_cpi": 1430.0,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "7-5",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "3-9",
+            "event": "KAP7 International",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Loyola WPC A",
+            "opp_rank": 57,
+            "score": "2-8",
+            "event": "KAP7 International",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "south-coast-red": {
       "slug": "south-coast-red",
@@ -135650,9 +153567,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 16,
-      "qa_cpi": 1562.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 15,
+      "qa_cpi": 1550.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "2-4",
+        "best_wins": [
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "17-2",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "14-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "9-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-south-coast-red": {
       "slug": "south-coast-red",
@@ -136055,9 +154024,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 16,
-      "qa_cpi": 1562.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 15,
+      "qa_cpi": 1550.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "2-4",
+        "best_wins": [
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "17-2",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "14-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "9-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "south coast red": {
       "slug": "south-coast-red",
@@ -136460,9 +154481,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 16,
-      "qa_cpi": 1562.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 15,
+      "qa_cpi": 1550.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-4",
+        "vs_top50": "2-4",
+        "best_wins": [
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "17-2",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Diablo Alliance A",
+            "opp_rank": 35,
+            "score": "14-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "ORWP Black",
+            "opp_rank": 76,
+            "score": "9-8",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Vanguard A",
+            "opp_rank": 135,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Stanford A",
+            "opp_rank": 17,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Commerce A",
+            "opp_rank": 12,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "south-coast-white": {
       "slug": "south-coast-white",
@@ -136917,9 +154990,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 60,
-      "qa_cpi": 1497.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 55,
+      "qa_cpi": 1507.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "2-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "7-5",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "11-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsunami Black",
+            "opp_rank": 100,
+            "score": "6-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SD Dons C",
+            "opp_rank": 61,
+            "score": "5-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-south-coast-white": {
       "slug": "south-coast-white",
@@ -137374,9 +155499,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 60,
-      "qa_cpi": 1497.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 55,
+      "qa_cpi": 1507.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "2-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "7-5",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "11-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsunami Black",
+            "opp_rank": 100,
+            "score": "6-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SD Dons C",
+            "opp_rank": 61,
+            "score": "5-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "south coast white": {
       "slug": "south-coast-white",
@@ -137831,9 +156008,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 60,
-      "qa_cpi": 1497.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 55,
+      "qa_cpi": 1507.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "2-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "7-5",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Palos Verdes B",
+            "opp_rank": 16,
+            "score": "11-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Tsunami Black",
+            "opp_rank": 100,
+            "score": "6-2",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 B",
+            "opp_rank": 71,
+            "score": "6-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SD Dons C",
+            "opp_rank": 61,
+            "score": "5-14",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "stanford-13-a": {
       "slug": "stanford-13-a",
@@ -138068,9 +156297,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 142,
-      "qa_cpi": 1436.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 155,
+      "qa_cpi": 1418.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "3-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-stanford-13-a": {
       "slug": "stanford-13-a",
@@ -138305,9 +156564,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 142,
-      "qa_cpi": 1436.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 155,
+      "qa_cpi": 1418.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "3-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "stanford 13 a": {
       "slug": "stanford-13-a",
@@ -138542,9 +156831,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 142,
-      "qa_cpi": 1436.4,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 155,
+      "qa_cpi": 1418.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Northwest A",
+            "opp_rank": 120,
+            "score": "7-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Foothill B",
+            "opp_rank": 113,
+            "score": "3-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "stanford-a": {
       "slug": "stanford-a",
@@ -138827,9 +157146,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 7,
-      "qa_cpi": 1577.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 11,
+      "qa_cpi": 1564.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "16-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM A",
+            "opp_rank": 91,
+            "score": "11-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "10-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "ca-2026-14ub-stanford-a": {
       "slug": "stanford-a",
@@ -139112,9 +157469,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 7,
-      "qa_cpi": 1577.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 11,
+      "qa_cpi": 1564.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "16-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM A",
+            "opp_rank": 91,
+            "score": "11-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "10-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "stanford a": {
       "slug": "stanford-a",
@@ -139397,9 +157792,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 7,
-      "qa_cpi": 1577.2,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 11,
+      "qa_cpi": 1564.6,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "San Clemente A",
+            "opp_rank": 60,
+            "score": "16-9",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "CDM A",
+            "opp_rank": 91,
+            "score": "11-10",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "908 A",
+            "opp_rank": 68,
+            "score": "10-15",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 59.1
+      }
     },
     "stanford-b": {
       "slug": "stanford-b",
@@ -139682,9 +158115,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 68,
-      "qa_cpi": 1493.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 77,
+      "qa_cpi": 1493.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "11-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "15-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "15-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rancho Tsunami A",
+            "opp_rank": 11,
+            "score": "6-20",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-stanford-b": {
       "slug": "stanford-b",
@@ -139967,9 +158445,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 68,
-      "qa_cpi": 1493.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 77,
+      "qa_cpi": 1493.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "11-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "15-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "15-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rancho Tsunami A",
+            "opp_rank": 11,
+            "score": "6-20",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "stanford b": {
       "slug": "stanford-b",
@@ -140252,9 +158775,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 68,
-      "qa_cpi": 1493.0,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 77,
+      "qa_cpi": 1493.8,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "11-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Clovis Red",
+            "opp_rank": 138,
+            "score": "15-13",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA Jolla United B",
+            "opp_rank": 107,
+            "score": "15-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Newport Beach B",
+            "opp_rank": 58,
+            "score": "8-11",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rancho Tsunami A",
+            "opp_rank": 11,
+            "score": "6-20",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "stanford-black": {
       "slug": "stanford-black",
@@ -140637,9 +159205,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 40,
-      "qa_cpi": 1513.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 41,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "11-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "14-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "4-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United Gold",
+            "opp_rank": 92,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "6-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "ca-2026-14ub-stanford-black": {
       "slug": "stanford-black",
@@ -141022,9 +159642,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 40,
-      "qa_cpi": 1513.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 41,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "11-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "14-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "4-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United Gold",
+            "opp_rank": 92,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "6-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "stanford black": {
       "slug": "stanford-black",
@@ -141407,9 +160079,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 40,
-      "qa_cpi": 1513.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 41,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "11-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "14-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "11-7",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "American River A",
+            "opp_rank": 139,
+            "score": "4-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "LA Jolla United Gold",
+            "opp_rank": 92,
+            "score": "3-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "6-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "stanford-c": {
       "slug": "stanford-c",
@@ -141692,9 +160416,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 145,
-      "qa_cpi": 1435.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 119,
+      "qa_cpi": 1462.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "12-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "8-4",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "6-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "4-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-stanford-c": {
       "slug": "stanford-c",
@@ -141977,9 +160746,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 145,
-      "qa_cpi": 1435.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 119,
+      "qa_cpi": 1462.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "12-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "8-4",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "6-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "4-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "stanford c": {
       "slug": "stanford-c",
@@ -142262,9 +161076,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 145,
-      "qa_cpi": 1435.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 119,
+      "qa_cpi": 1462.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-2",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "12-11",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "8-4",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "6-14",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Vanguard B",
+            "opp_rank": 13,
+            "score": "4-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "4-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "stanford-red": {
       "slug": "stanford-red",
@@ -142615,9 +161474,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 27,
-      "qa_cpi": 1524.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 26,
+      "qa_cpi": 1526.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "10-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "12-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "8-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "7-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "7-16",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 79.3
+      }
     },
     "ca-2026-14ub-stanford-red": {
       "slug": "stanford-red",
@@ -142968,9 +161879,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 27,
-      "qa_cpi": 1524.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 26,
+      "qa_cpi": 1526.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "10-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "12-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "8-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "7-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "7-16",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 79.3
+      }
     },
     "stanford red": {
       "slug": "stanford-red",
@@ -143321,9 +162284,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 27,
-      "qa_cpi": 1524.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 26,
+      "qa_cpi": 1526.1,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-2",
+        "vs_top25": "0-2",
+        "vs_top50": "2-3",
+        "best_wins": [
+          {
+            "opponent": "CC United A",
+            "opp_rank": 31,
+            "score": "10-6",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "12-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Sharks A",
+            "opp_rank": 102,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "8-9",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Lamorinda A",
+            "opp_rank": 48,
+            "score": "7-10",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "LA Jolla United Navy",
+            "opp_rank": 10,
+            "score": "7-16",
+            "event": "KAP7 International",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 79.3
+      }
     },
     "stanford-white": {
       "slug": "stanford-white",
@@ -143690,9 +162705,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 48,
-      "qa_cpi": 1507.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 45,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "22-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "14-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "24-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "4-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "6-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "ca-2026-14ub-stanford-white": {
       "slug": "stanford-white",
@@ -144059,9 +163126,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 48,
-      "qa_cpi": 1507.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 45,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "22-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "14-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "24-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "4-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "6-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "stanford white": {
       "slug": "stanford-white",
@@ -144428,9 +163547,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 48,
-      "qa_cpi": 1507.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 45,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "Crown City A",
+            "opp_rank": 141,
+            "score": "22-4",
+            "event": "San Diego County Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "14-3",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Tri-valley Tritons A",
+            "opp_rank": 151,
+            "score": "24-4",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "6-9",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "San Jose Express A",
+            "opp_rank": 142,
+            "score": "4-12",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "NSD Stars A",
+            "opp_rank": 41,
+            "score": "6-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "supreme": {
       "slug": "supreme",
@@ -144813,9 +163984,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 105,
-      "qa_cpi": 1469.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 96,
+      "qa_cpi": 1481.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "11-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "7-4",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "21-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "10-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "8-20",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "15-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "ca-2026-14ub-supreme": {
       "slug": "supreme",
@@ -145198,9 +164421,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 105,
-      "qa_cpi": 1469.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 96,
+      "qa_cpi": 1481.4,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "11-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "American River B",
+            "opp_rank": 133,
+            "score": "7-4",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "21-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Loyola A",
+            "opp_rank": 152,
+            "score": "10-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Titans",
+            "opp_rank": 146,
+            "score": "8-20",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "15-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "temple-city-a": {
       "slug": "temple-city-a",
@@ -145583,9 +164858,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 61,
-      "qa_cpi": 1496.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 39,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "7-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "14-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "8-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "ca-2026-14ub-temple-city-a": {
       "slug": "temple-city-a",
@@ -145968,9 +165295,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 61,
-      "qa_cpi": 1496.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 39,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "7-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "14-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "8-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "temple city a": {
       "slug": "temple-city-a",
@@ -146353,9 +165732,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 61,
-      "qa_cpi": 1496.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 39,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Los Alamitos A",
+            "opp_rank": 56,
+            "score": "7-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CIU Coast A",
+            "opp_rank": 67,
+            "score": "14-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "CC United B",
+            "opp_rank": 79,
+            "score": "11-8",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Route 66 A",
+            "opp_rank": 156,
+            "score": "8-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride A",
+            "opp_rank": 46,
+            "score": "10-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-14",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 84.6
+      }
     },
     "titans": {
       "slug": "titans",
@@ -146758,9 +166189,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 108,
-      "qa_cpi": 1465.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 129,
+      "qa_cpi": 1449.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Cvu A",
+            "opp_rank": 85,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "20-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "11-10",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "9-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "4-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Puget Sound A",
+            "opp_rank": 66,
+            "score": "3-19",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-titans": {
       "slug": "titans",
@@ -147163,9 +166646,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 108,
-      "qa_cpi": 1465.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 129,
+      "qa_cpi": 1449.2,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Cvu A",
+            "opp_rank": 85,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "20-8",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "11-10",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Diablo Alliance B",
+            "opp_rank": 106,
+            "score": "9-13",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Rain City A",
+            "opp_rank": 93,
+            "score": "4-13",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Puget Sound A",
+            "opp_rank": 66,
+            "score": "3-19",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "titans-gold": {
       "slug": "titans-gold",
@@ -147480,9 +167015,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 44,
-      "qa_cpi": 1509.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 48,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "13-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "22-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "0-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "ca-2026-14ub-titans-gold": {
       "slug": "titans-gold",
@@ -147797,9 +167370,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 44,
-      "qa_cpi": 1509.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 48,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "13-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "22-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "0-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "titans gold": {
       "slug": "titans-gold",
@@ -148114,9 +167725,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 44,
-      "qa_cpi": 1509.9,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 48,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "1-0",
+        "best_wins": [
+          {
+            "opponent": "908 Blue",
+            "opp_rank": 34,
+            "score": "13-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "8-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "22-6",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Cardinal A",
+            "opp_rank": 161,
+            "score": "0-16",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "tri-valley-tritons-a": {
       "slug": "tri-valley-tritons-a",
@@ -148431,9 +168080,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 131,
-      "qa_cpi": 1447.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 144,
+      "qa_cpi": 1429.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "25-23",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "4-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "4-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "3-19",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "ca-2026-14ub-tri-valley-tritons-a": {
       "slug": "tri-valley-tritons-a",
@@ -148748,9 +168435,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 131,
-      "qa_cpi": 1447.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 144,
+      "qa_cpi": 1429.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "25-23",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "4-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "4-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "3-19",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "tri-valley tritons a": {
       "slug": "tri-valley-tritons-a",
@@ -149065,9 +168790,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 131,
-      "qa_cpi": 1447.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 144,
+      "qa_cpi": 1429.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [
+          {
+            "opponent": "CC United C",
+            "opp_rank": 150,
+            "score": "25-23",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Lamorinda C",
+            "opp_rank": 158,
+            "score": "4-18",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "Midpen A",
+            "opp_rank": 157,
+            "score": "4-16",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          },
+          {
+            "opponent": "680 C",
+            "opp_rank": 83,
+            "score": "3-19",
+            "event": "JO Qualifier \u2014 NorCal",
+            "tier": "Qualifier"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "trilogy-a": {
       "slug": "trilogy-a",
@@ -149382,9 +169145,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 103,
-      "qa_cpi": 1470.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 120,
+      "qa_cpi": 1462.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "14-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "8-11",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-15",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "9-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "ca-2026-14ub-trilogy-a": {
       "slug": "trilogy-a",
@@ -149699,9 +169507,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 103,
-      "qa_cpi": 1470.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 120,
+      "qa_cpi": 1462.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "14-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "8-11",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-15",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "9-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "trilogy a": {
       "slug": "trilogy-a",
@@ -150016,9 +169869,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 103,
-      "qa_cpi": 1470.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 120,
+      "qa_cpi": 1462.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-3",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl Black",
+            "opp_rank": 110,
+            "score": "6-4",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "North Irvine B",
+            "opp_rank": 123,
+            "score": "14-4",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "8-11",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "7-15",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "Valley United A",
+            "opp_rank": 28,
+            "score": "9-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 57.5
+      }
     },
     "trilogy-black": {
       "slug": "trilogy-black",
@@ -150253,9 +170151,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 123,
-      "qa_cpi": 1453.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 128,
+      "qa_cpi": 1450.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "5-0",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "4-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "3-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "2-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-trilogy-black": {
       "slug": "trilogy-black",
@@ -150490,9 +170426,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 123,
-      "qa_cpi": 1453.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 128,
+      "qa_cpi": 1450.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "5-0",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "4-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "3-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "2-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "trilogy black": {
       "slug": "trilogy-black",
@@ -150727,9 +170701,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 123,
-      "qa_cpi": 1453.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 128,
+      "qa_cpi": 1450.4,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "1-1",
+        "best_wins": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "5-0",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Pride Red",
+            "opp_rank": 89,
+            "score": "4-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SoCal 12 Black",
+            "opp_rank": 80,
+            "score": "3-7",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "2-8",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "triton-gold": {
       "slug": "triton-gold",
@@ -150964,9 +170976,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 148,
-      "qa_cpi": 1433.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 153,
+      "qa_cpi": 1422.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "10-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "1-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "6-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "ca-2026-14ub-triton-gold": {
       "slug": "triton-gold",
@@ -151201,9 +171243,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 148,
-      "qa_cpi": 1433.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 153,
+      "qa_cpi": 1422.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "10-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "1-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "6-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "triton gold": {
       "slug": "triton-gold",
@@ -151438,9 +171510,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 148,
-      "qa_cpi": 1433.3,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 153,
+      "qa_cpi": 1422.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-1",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "Trojan Gold",
+            "opp_rank": 159,
+            "score": "10-11",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Orange County WPC C",
+            "opp_rank": 75,
+            "score": "1-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Clemente Black",
+            "opp_rank": 51,
+            "score": "6-14",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 46.7
+      }
     },
     "trojan-a": {
       "slug": "trojan-a",
@@ -151723,9 +171825,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 45,
-      "qa_cpi": 1508.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 58,
+      "qa_cpi": 1504.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "16-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "4-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "5-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-trojan-a": {
       "slug": "trojan-a",
@@ -152008,9 +172155,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 45,
-      "qa_cpi": 1508.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 58,
+      "qa_cpi": 1504.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "16-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "4-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "5-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "trojan a": {
       "slug": "trojan-a",
@@ -152293,9 +172485,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 45,
-      "qa_cpi": 1508.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 58,
+      "qa_cpi": 1504.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Rose Bowl",
+            "opp_rank": 134,
+            "score": "16-15",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "10-6",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Kingsburg A",
+            "opp_rank": 96,
+            "score": "8-9",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "4-16",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Mission WPC B",
+            "opp_rank": 7,
+            "score": "5-14",
+            "event": "Futures Super Finals",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "trojan-cardinal-a": {
       "slug": "trojan-cardinal-a",
@@ -152730,9 +172967,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 137,
-      "qa_cpi": 1441.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 152,
+      "qa_cpi": 1423.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-4",
+        "vs_top25": "1-6",
+        "vs_top50": "1-9",
+        "best_wins": [
+          {
+            "opponent": "Titans Gold",
+            "opp_rank": 18,
+            "score": "16-0",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "7-12",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rancho Tsunami Blue",
+            "opp_rank": 82,
+            "score": "5-13",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "6-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 99.8
+      }
     },
     "ca-2026-14ub-trojan-cardinal-a": {
       "slug": "trojan-cardinal-a",
@@ -153167,9 +173449,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 137,
-      "qa_cpi": 1441.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 152,
+      "qa_cpi": 1423.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-4",
+        "vs_top25": "1-6",
+        "vs_top50": "1-9",
+        "best_wins": [
+          {
+            "opponent": "Titans Gold",
+            "opp_rank": 18,
+            "score": "16-0",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "7-12",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rancho Tsunami Blue",
+            "opp_rank": 82,
+            "score": "5-13",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "6-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 99.8
+      }
     },
     "trojan cardinal a": {
       "slug": "trojan-cardinal-a",
@@ -153604,9 +173931,54 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 137,
-      "qa_cpi": 1441.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 152,
+      "qa_cpi": 1423.9,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-4",
+        "vs_top25": "1-6",
+        "vs_top50": "1-9",
+        "best_wins": [
+          {
+            "opponent": "Titans Gold",
+            "opp_rank": 18,
+            "score": "16-0",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Rose Bowl Red",
+            "opp_rank": 143,
+            "score": "14-5",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "7-12",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Rancho Tsunami Blue",
+            "opp_rank": 82,
+            "score": "5-13",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Shore Red",
+            "opp_rank": 44,
+            "score": "6-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 99.8
+      }
     },
     "trojan-gold": {
       "slug": "trojan-gold",
@@ -154057,9 +174429,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 139,
-      "qa_cpi": 1438.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 157,
+      "qa_cpi": 1405.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "10-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "15-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "5-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "9-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "5-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-trojan-gold": {
       "slug": "trojan-gold",
@@ -154510,9 +174934,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 139,
-      "qa_cpi": 1438.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 157,
+      "qa_cpi": 1405.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "10-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "15-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "5-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "9-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "5-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "trojan gold": {
       "slug": "trojan-gold",
@@ -154963,9 +175439,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 139,
-      "qa_cpi": 1438.8,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 157,
+      "qa_cpi": 1405.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-2",
+        "vs_top50": "0-4",
+        "best_wins": [
+          {
+            "opponent": "Triton Gold",
+            "opp_rank": 136,
+            "score": "11-10",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "10-9",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "15-3",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "San Francisco A",
+            "opp_rank": 149,
+            "score": "5-18",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Supreme",
+            "opp_rank": 103,
+            "score": "9-13",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Blue",
+            "opp_rank": 98,
+            "score": "5-7",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "tsm-a": {
       "slug": "tsm-a",
@@ -155332,9 +175860,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 158,
-      "qa_cpi": 1414.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 161,
+      "qa_cpi": 1379.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "3-5",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "14-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "1-22",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "ca-2026-14ub-tsm-a": {
       "slug": "tsm-a",
@@ -155701,9 +176259,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 158,
-      "qa_cpi": 1414.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 161,
+      "qa_cpi": 1379.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "3-5",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "14-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "1-22",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "tsm a": {
       "slug": "tsm-a",
@@ -156070,9 +176658,39 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 158,
-      "qa_cpi": 1414.5,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 161,
+      "qa_cpi": 1379.5,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-1",
+        "vs_top50": "0-2",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "SET A",
+            "opp_rank": 145,
+            "score": "3-5",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "14-15",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Pride Black",
+            "opp_rank": 114,
+            "score": "1-22",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 73.8
+      }
     },
     "tsunami-black": {
       "slug": "tsunami-black",
@@ -156163,9 +176781,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 144,
-      "qa_cpi": 1435.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 126,
+      "qa_cpi": 1453.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "2-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 30.4
+      }
     },
     "ca-2026-14ub-tsunami-black": {
       "slug": "tsunami-black",
@@ -156256,9 +176890,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 144,
-      "qa_cpi": 1435.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 126,
+      "qa_cpi": 1453.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "2-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 30.4
+      }
     },
     "tsunami black": {
       "slug": "tsunami-black",
@@ -156349,9 +176999,25 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 144,
-      "qa_cpi": 1435.8,
-      "qa_ranking_status": "limited_sample"
+      "qa_rank": 126,
+      "qa_cpi": 1453.5,
+      "qa_ranking_status": "limited_sample",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-0",
+        "best_wins": [],
+        "worst_losses": [
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "2-6",
+            "event": "San Diego County Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 30.4
+      }
     },
     "valley-united-a": {
       "slug": "valley-united-a",
@@ -156734,9 +177400,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 50,
-      "qa_cpi": 1506.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 42,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "13-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "8-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "18-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "8-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "2-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "9-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "ca-2026-14ub-valley-united-a": {
       "slug": "valley-united-a",
@@ -157119,9 +177837,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 50,
-      "qa_cpi": 1506.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 42,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "13-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "8-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "18-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "8-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "2-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "9-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "valley united a": {
       "slug": "valley-united-a",
@@ -157504,9 +178274,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 50,
-      "qa_cpi": 1506.3,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 42,
+      "qa_cpi": 1510,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-0",
+        "vs_top25": "0-0",
+        "vs_top50": "0-2",
+        "best_wins": [
+          {
+            "opponent": "Trilogy A",
+            "opp_rank": 105,
+            "score": "13-9",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          },
+          {
+            "opponent": "ORWP A",
+            "opp_rank": 121,
+            "score": "8-4",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "NGen A",
+            "opp_rank": 144,
+            "score": "18-8",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "LA City United A",
+            "opp_rank": 72,
+            "score": "8-12",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "2-17",
+            "event": "JO Qualifier \u2014 SoCal",
+            "tier": "D2"
+          },
+          {
+            "opponent": "Santa Barbara A",
+            "opp_rank": 29,
+            "score": "9-13",
+            "event": "San Diego County Cup",
+            "tier": "Unclassified"
+          }
+        ],
+        "confidence": 79.2
+      }
     },
     "vanguard-a": {
       "slug": "vanguard-a",
@@ -157925,9 +178747,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 21,
-      "qa_cpi": 1547.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 29,
+      "qa_cpi": 1513.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "1-3",
+        "vs_top50": "3-5",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "8-7",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "14-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "10.2-10.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "8-13",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores A",
+            "opp_rank": 90,
+            "score": "11-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "ca-2026-14ub-vanguard-a": {
       "slug": "vanguard-a",
@@ -158346,9 +179220,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 21,
-      "qa_cpi": 1547.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 29,
+      "qa_cpi": 1513.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "1-3",
+        "vs_top50": "3-5",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "8-7",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "14-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "10.2-10.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "8-13",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores A",
+            "opp_rank": 90,
+            "score": "11-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "vanguard a": {
       "slug": "vanguard-a",
@@ -158767,9 +179693,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 21,
-      "qa_cpi": 1547.6,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 29,
+      "qa_cpi": 1513.3,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "0-3",
+        "vs_top25": "1-3",
+        "vs_top50": "3-5",
+        "best_wins": [
+          {
+            "opponent": "SD Dons A",
+            "opp_rank": 23,
+            "score": "8-7",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          },
+          {
+            "opponent": "South Coast Red",
+            "opp_rank": 38,
+            "score": "9-7",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Devils Gate A",
+            "opp_rank": 40,
+            "score": "14-6",
+            "event": "Turbo Cup",
+            "tier": "D1"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "10.2-10.3",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          },
+          {
+            "opponent": "Patriot A",
+            "opp_rank": 129,
+            "score": "8-13",
+            "event": "KAP7 International",
+            "tier": "D1"
+          },
+          {
+            "opponent": "SD Shores A",
+            "opp_rank": 90,
+            "score": "11-12",
+            "event": "Futures Super Finals",
+            "tier": "D1"
+          }
+        ],
+        "confidence": 100.0
+      }
     },
     "vanguard-b": {
       "slug": "vanguard-b",
@@ -159204,9 +180182,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 76,
-      "qa_cpi": 1490.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 53,
+      "qa_cpi": 1509.3,
+      "qa_ranking_status": "cpi_3_0_qa_club_guardrail",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-1",
+        "vs_top50": "4-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "15-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "9-9.3",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "5-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "3-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "ca-2026-14ub-vanguard-b": {
       "slug": "vanguard-b",
@@ -159641,9 +180671,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 76,
-      "qa_cpi": 1490.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 53,
+      "qa_cpi": 1509.3,
+      "qa_ranking_status": "cpi_3_0_qa_club_guardrail",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-1",
+        "vs_top50": "4-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "15-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "9-9.3",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "5-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "3-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "vanguard b": {
       "slug": "vanguard-b",
@@ -160078,9 +181160,61 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 76,
-      "qa_cpi": 1490.4,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 53,
+      "qa_cpi": 1509.3,
+      "qa_ranking_status": "cpi_3_0_qa_club_guardrail",
+      "quality_record": {
+        "vs_top10": "0-1",
+        "vs_top25": "1-1",
+        "vs_top50": "4-2",
+        "best_wins": [
+          {
+            "opponent": "Newport Beach C",
+            "opp_rank": 19,
+            "score": "10-6",
+            "event": "Turbo Cup",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Lamorinda B",
+            "opp_rank": 26,
+            "score": "10-9",
+            "event": "KAP7 International",
+            "tier": "D2"
+          },
+          {
+            "opponent": "680 A",
+            "opp_rank": 32,
+            "score": "15-12",
+            "event": "KAP7 International",
+            "tier": "D2"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "9-9.3",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "South Coast White",
+            "opp_rank": 53,
+            "score": "5-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Orange County WPC B",
+            "opp_rank": 42,
+            "score": "3-6",
+            "event": "Turbo Cup",
+            "tier": "D2"
+          }
+        ],
+        "confidence": 90.0
+      }
     },
     "vegas-renegades-a": {
       "slug": "vegas-renegades-a",
@@ -160363,9 +181497,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 83,
-      "qa_cpi": 1487.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 69,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "15-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "16-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "8-5",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "7-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "ca-2026-14ub-vegas-renegades-a": {
       "slug": "vegas-renegades-a",
@@ -160648,9 +181820,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 83,
-      "qa_cpi": 1487.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 69,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "15-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "16-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "8-5",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "7-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     },
     "vegas renegades a": {
       "slug": "vegas-renegades-a",
@@ -160933,9 +182143,47 @@ window.CPI_TEAM_PAGES_2026_14U_BOYS = {
         ]
       },
       "data_status": "team_cleanup_ranking_calibration_not_official",
-      "qa_rank": 83,
-      "qa_cpi": 1487.1,
-      "qa_ranking_status": "cpi_2_0_qa"
+      "qa_rank": 69,
+      "qa_cpi": 1498,
+      "qa_ranking_status": "cpi_3_0_qa",
+      "quality_record": {
+        "vs_top10": "1-0",
+        "vs_top25": "1-0",
+        "vs_top50": "2-1",
+        "best_wins": [
+          {
+            "opponent": "NorCal B",
+            "opp_rank": 4,
+            "score": "15-7",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "Alameda",
+            "opp_rank": 39,
+            "score": "16-10",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          },
+          {
+            "opponent": "SJ Foundation A",
+            "opp_rank": 73,
+            "score": "8-5",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "worst_losses": [
+          {
+            "opponent": "Los Angeles WPC A",
+            "opp_rank": 43,
+            "score": "7-9",
+            "event": "Futures Super Finals",
+            "tier": "D3"
+          }
+        ],
+        "confidence": 52.1
+      }
     }
   }
 };
