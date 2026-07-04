@@ -1,32 +1,21 @@
 window.CPI_API = {
   "manifest": {
     "platform": "California Polo Index",
-    "api_version": "cpi_v1_parser_fix_qa",
-    "generated_at": "2026-07-04T03:14:34.112143+00:00",
+    "api_version": "baseline_merge_cleanup_v0.8.0",
+    "generated_at": "2026-07-04T03:50:58.079653+00:00",
     "scope": {
       "season": "2026",
       "region": "California",
       "age_group": "14U",
       "gender": "Boys"
     },
-    "data_status": "Parser fix QA from uploaded master tournaments only. QA only, not official.",
-    "tournaments": [
-      "Kap7 International",
-      "Turbo OC Cup",
-      "San Diego County Cup",
-      "CCA JO Qualifier",
-      "SOPAC JO Qualifier",
-      "NorCal JO Qualifier",
-      "Futures Super Finals"
-    ],
-    "qualification": "Minimum 5 games in tracked tournaments.",
-    "max_ranked_teams": 100,
+    "data_status": "Preserves closest main CPI ranking baseline; applies canonical team cleanup and shared profile/team data. QA only.",
+    "source": "cpi_season1_post_superfinals baseline plus Super Finals verified game log",
     "counts": {
-      "teams_ranked": 75,
-      "teams_total": 242,
-      "games_processed": 422,
-      "warnings": 2,
-      "parse_warnings": 1
+      "teams_ranked": 100,
+      "teams_total": 100,
+      "games_processed": 169,
+      "warnings": 1
     }
   }
 };

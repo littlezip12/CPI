@@ -1,4 +1,4 @@
-window.CPI_QA_RANKINGS_2026_14U_BOYS = {
+window.CPI_RANKINGS_2026_14U_BOYS = {
   "manifest": {
     "platform": "California Polo Index",
     "api_version": "baseline_merge_cleanup_v0.8.0",
@@ -2028,3 +2028,4 @@ window.CPI_QA_RANKINGS_2026_14U_BOYS = {
     }
   ]
 };
+window.CPI_RANKINGS = window.CPI_RANKINGS_2026_14U_BOYS.rankings;
