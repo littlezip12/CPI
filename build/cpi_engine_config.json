@@ -1,0 +1,30 @@
+{
+  "version": "2.0-foundation",
+  "season": "2026",
+  "age_group": "14U",
+  "gender": "Boys",
+  "input_dir": "raw_tournaments",
+  "output_dir": "data",
+  "qa_dir": "qa",
+  "publish_to_live": false,
+  "ranking": {
+    "min_games_ranked": 4,
+    "min_games_manual_review": 4,
+    "base_rating": 1500,
+    "max_ranked_teams": 100,
+    "confidence": {
+      "high_games": 12,
+      "medium_games": 6
+    }
+  },
+  "build_steps": [
+    "validate_registries",
+    "parse_tournaments",
+    "normalize_import_names",
+    "resolve_identity",
+    "apply_dictionary",
+    "validate_games",
+    "build_rankings",
+    "build_qa_dashboard"
+  ]
+}
