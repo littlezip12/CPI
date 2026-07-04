@@ -1,1 +1,58 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CPI Team</title><link rel="stylesheet" href="css/rankings-qa.css"></head><body><header class="qa-header"><div class="eyebrow">California Polo Index</div><h1 id="teamName">Team</h1><p id="teamMeta"></p></header><main class="qa-shell"><section class="panel"><div class="panel-header"><h2>Team Summary</h2><span id="rankMeta"></span></div><div class="table-wrap"><table><tbody id="summary"></tbody></table></div></section><section class="panel"><div class="panel-header"><h2>Verified Results</h2><span>Super Finals game log</span></div><div class="table-wrap"><table><thead><tr><th>Event</th><th>Opponent</th><th>Result</th><th>Score</th><th>Overall Context</th></tr></thead><tbody id="games"></tbody></table></div></section><section class="panel"><div class="panel-header"><h2>Aliases Merged</h2><span>internal cleanup</span></div><div id="aliases" class="pad"></div></section></main><script src="data/cpi_team_pages_2026_14u_boys.js"></script><script src="js/team.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CPI Team Page</title>
+  <link rel="stylesheet" href="css/team-v11.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-mark">CPI</span><span><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span></a>
+    <nav><a href="./">Home</a><a href="rankings-qa.html">Rankings</a></nav>
+  </header>
+
+  <main class="team-page">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="logo-wrap" id="teamLogo"></div>
+        <div class="hero-copy">
+          <div class="eyebrow">California Polo Index</div>
+          <h1 id="teamName">Team</h1>
+          <p id="teamSubhead">14U Boys</p>
+          <div class="hero-actions">
+            <label class="team-picker"><span>Jump to team</span><select id="teamSelect"></select></label>
+          </div>
+        </div>
+        <div class="rank-stack">
+          <article><span>Rank</span><strong id="rankValue">—</strong></article>
+          <article><span>CPI</span><strong id="cpiValue">—</strong></article>
+          <article><span>Record</span><strong id="recordValue">—</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="rank-nav" id="rankNav"></section>
+
+    <section class="dashboard">
+      <article class="card stat-card"><h2>Team Summary</h2><dl id="summaryGrid"></dl></article>
+      <article class="card stat-card"><h2>Best Win</h2><div id="bestWinCard" class="big-callout">—</div></article>
+      <article class="card stat-card"><h2>Season Snapshot</h2><dl id="seasonSnapshot"></dl></article>
+    </section>
+
+    <section class="card timeline-card">
+      <div class="card-header"><h2>Tournament Timeline</h2><span>Expandable game log</span></div>
+      <div id="timeline"></div>
+    </section>
+
+    <section class="card results-card">
+      <div class="card-header"><h2>Verified Results</h2><span>Newest first</span></div>
+      <div class="table-wrap"><table><thead><tr><th>Event</th><th>Opponent</th><th>Result</th><th>Score</th><th>Overall Context</th></tr></thead><tbody id="resultsTable"></tbody></table></div>
+    </section>
+  </main>
+
+  <script src="data/cpi_team_pages_2026_14u_boys.js"></script>
+  <script src="data/cpi_team_page_ui.js"></script>
+  <script src="js/team-v11.js"></script>
+</body>
+</html>
