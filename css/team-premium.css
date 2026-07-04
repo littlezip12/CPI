@@ -739,3 +739,46 @@ td strong{font-weight:1000}
     min-width: 62px !important;
   }
 }
+
+
+/* Sprint 1.4 links + logo polish */
+.logo-card{
+  background:rgba(255,255,255,.96);
+  padding:24px;
+}
+.logo-card img{
+  width:100%;
+  height:100%;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+.logo-fallback{
+  margin:-24px;
+}
+.meta-chip a,
+.context-row a,
+.timeline-title a,
+.latest-body a,
+.game-row a,
+.full-results-panel a{
+  color:inherit;
+  text-decoration:none;
+}
+.meta-chip a:hover,
+.context-row a:hover,
+.timeline-title a:hover,
+.latest-body a:hover,
+.game-row a:hover,
+.full-results-panel a:hover{
+  text-decoration:underline;
+}
+.latest-body h3 a{
+  color:var(--text);
+}
+.timeline-title strong a{
+  color:var(--text);
+}
+.context-row strong a{
+  color:var(--text);
+}

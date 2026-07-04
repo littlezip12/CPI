@@ -2,6 +2,7 @@
   const TEAM_DATA = window.CPI_TEAM_PAGES_2026_14U_BOYS || {};
   const RANK_DATA = window.CPI_QA_RANKINGS_2026_14U_BOYS || {};
   const BRANDING = window.CPI_CLUB_BRANDING || {};
+  const LINKS = window.CPI_EXTERNAL_LINKS || {clubs:{}, tournaments:{}};
   const $ = (id) => document.getElementById(id);
 
   const slugify = (v) => String(v || "").toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"") || "unknown";
@@ -76,6 +77,40 @@
     if(raw.includes("680") || teamRaw.startsWith("680")) return "680";
     return slugify(raw) || "default";
   }
+
+  function eventKey(eventName){
+    const raw = String(eventName || "").toLowerCase();
+    if(raw.includes("futures") || raw.includes("super finals")) return "futures-super-finals";
+    if(raw.includes("kap7")) return "kap7-international";
+    if(raw.includes("turbo")) return "turbo-oc-cup";
+    if(raw.includes("county")) return "san-diego-county-cup";
+    if(raw.includes("cca")) return "cca-jo-qualifier";
+    if(raw.includes("sopac")) return "sopac-jo-qualifier";
+    if(raw.includes("norcal")) return "norcal-jo-qualifier";
+    return slugify(eventName);
+  }
+
+  function clubWebsite(team){
+    const key = clubKey(team.team, team.club);
+    const link = LINKS.clubs && LINKS.clubs[key] && LINKS.clubs[key].website;
+    if(link) return link;
+    const brand = BRANDING[key] || {};
+    return brand.websiteUrl || brand.url || "";
+  }
+
+  function tournamentLink(eventName){
+    const key = eventKey(eventName);
+    const info = LINKS.tournaments && LINKS.tournaments[key];
+    return info && info.url ? info.url : "";
+  }
+
+  function maybeLink(label, url, className){
+    if(url){
+      return `<a class="${className || ""}" href="${url}" target="_blank" rel="noopener">${label} ↗</a>`;
+    }
+    return label;
+  }
+
 
   function brandingFor(team){
     const key = clubKey(team.team, team.club);
@@ -168,30 +203,30 @@
       team.logo_url,
       team.logoPath,
       team.logo_path,
-      `assets/logos/${teamSlug}.png`,
-      `assets/logos/${teamSlug}.jpg`,
-      `assets/logos/${teamSlug}.jpeg`,
-      `assets/logos/${teamSlug}.webp`,
-      `assets/logos/${teamSlug}.svg`,
-      `assets/logos/${clubSlug}.png`,
-      `assets/logos/${clubSlug}.jpg`,
-      `assets/logos/${clubSlug}.jpeg`,
-      `assets/logos/${clubSlug}.webp`,
-      `assets/logos/${clubSlug}.svg`,
-      `logos/${teamSlug}.png`,
-      `logos/${teamSlug}.jpg`,
-      `logos/${teamSlug}.jpeg`,
-      `logos/${teamSlug}.webp`,
-      `logos/${teamSlug}.svg`,
       `logos/${clubSlug}.png`,
       `logos/${clubSlug}.jpg`,
       `logos/${clubSlug}.jpeg`,
       `logos/${clubSlug}.webp`,
       `logos/${clubSlug}.svg`,
-      `images/logos/${teamSlug}.png`,
+      `logos/${teamSlug}.png`,
+      `logos/${teamSlug}.jpg`,
+      `logos/${teamSlug}.jpeg`,
+      `logos/${teamSlug}.webp`,
+      `logos/${teamSlug}.svg`,
+      `assets/logos/${clubSlug}.png`,
+      `assets/logos/${clubSlug}.jpg`,
+      `assets/logos/${clubSlug}.jpeg`,
+      `assets/logos/${clubSlug}.webp`,
+      `assets/logos/${clubSlug}.svg`,
+      `assets/logos/${teamSlug}.png`,
+      `assets/logos/${teamSlug}.jpg`,
+      `assets/logos/${teamSlug}.jpeg`,
+      `assets/logos/${teamSlug}.webp`,
+      `assets/logos/${teamSlug}.svg`,
       `images/logos/${clubSlug}.png`,
-      `img/logos/${teamSlug}.png`,
-      `img/logos/${clubSlug}.png`
+      `images/logos/${teamSlug}.png`,
+      `img/logos/${clubSlug}.png`,
+      `img/logos/${teamSlug}.png`
     ].filter(Boolean);
   }
 
@@ -249,7 +284,7 @@
 
   function fillLatest(team, events){
     const latest = latestEvent(events);
-    $("latestTitle").textContent = latest ? latest.event : "No verified tournament";
+    $("latestTitle").innerHTML = latest ? maybeLink(latest.event, tournamentLink(latest.event), "event-link") : "No verified tournament";
     $("latestMeta").textContent = "California";
     $("latestStats").innerHTML = [
       ["Record", latest ? latest.record : "—"],
@@ -262,10 +297,11 @@
     const club = team.club || clubFromTeam(team.team);
     const sameClub = allTeams().filter(t => clubKey(t.team, t.club) === clubKey(team.team, team.club));
     const highest = sameClub.filter(t=>t.rank).sort((a,b)=>a.rank-b.rank)[0];
+    const websiteUrl = clubWebsite(team);
     $("clubContextRows").innerHTML = `
       <div class="context-row"><span>Teams Ranked</span><strong>${sameClub.filter(t=>t.rank).length || sameClub.length} Teams ›</strong></div>
-      <div class="context-row"><span>Highest Ranked Team</span><strong>${highest ? highest.team + " — #" + highest.rank : "—"} ›</strong></div>
-      <div class="context-row"><span>Club Website</span><strong>${brand.website || "Club Website"} ↗</strong></div>
+      <div class="context-row"><span>Highest Ranked Team</span><strong>${highest ? `<a href="team.html?team=${highest.slug}">${highest.team} — #${highest.rank} ›</a>` : "—"}</strong></div>
+      ${websiteUrl ? `<div class="context-row"><span>Club Website</span><strong><a href="${websiteUrl}" target="_blank" rel="noopener">Visit Club Website ↗</a></strong></div>` : ""}
     `;
   }
 
@@ -299,7 +335,7 @@
       <div class="timeline-block ${idx === 0 ? "open" : ""}">
         <button class="timeline-head" type="button">
           <div class="date-badge">${idx === 0 ? "Latest" : "Event"}</div>
-          <div class="timeline-title"><strong>${ev.event}</strong><span>California</span></div>
+          <div class="timeline-title"><strong>${maybeLink(ev.event, tournamentLink(ev.event), "event-link")}</strong><span>California</span></div>
           <div class="timeline-record"><strong>${ev.record}</strong><span>Record</span></div>
           <div class="timeline-finish"><strong>—</strong><span>Finish</span></div>
           <div class="chev">›</div>
@@ -359,7 +395,8 @@
     $("clubName").textContent = team.club || brand.name || clubFromTeam(team.team);
     $("chipClub").textContent = team.club || brand.name || clubFromTeam(team.team);
     $("chipRegion").textContent = brand.region || "California";
-    $("chipWebsite").textContent = brand.website || "Club Website";
+    const websiteUrl = clubWebsite(team);
+    $("chipWebsite").innerHTML = websiteUrl ? `<a href="${websiteUrl}" target="_blank" rel="noopener">Club Website ↗</a>` : "Club Website";
 
     $("heroRank").textContent = ranking.rank ? "#" + ranking.rank : "—";
     $("rankGroup").textContent = `In ${team.age_group || "14U"} ${team.gender || "Boys"}`;
