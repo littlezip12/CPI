@@ -1,0 +1,1571 @@
+{
+  "summary": {
+    "input_teams": 199,
+    "auto_merges": 0,
+    "review_candidates": 47,
+    "output_teams": 199,
+    "eligible_teams_5plus": 112,
+    "input_games": 725,
+    "output_games": 725,
+    "same_team_games_removed": 0
+  },
+  "auto_merge_map": {},
+  "review_candidates": [
+    {
+      "team_a": "eca-a",
+      "team_b": "eca-b",
+      "score": 103.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 1,
+      "games_b": 5,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-b",
+      "team_b": "sd-dons-c",
+      "score": 103.0,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 2,
+      "games_b": 3,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-b",
+      "team_b": "sd-dons-d",
+      "score": 103.0,
+      "same_club": true,
+      "levels": "B/D",
+      "games_a": 2,
+      "games_b": 1,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-c",
+      "team_b": "sd-dons-d",
+      "score": 103.0,
+      "same_club": true,
+      "levels": "C/D",
+      "games_a": 3,
+      "games_b": 1,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "nbwp-a",
+      "team_b": "nbwp-b",
+      "score": 95.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 5,
+      "games_b": 4,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "pv-a",
+      "team_b": "pv-b",
+      "score": 95.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 5,
+      "games_b": 4,
+      "shared_tournaments": [
+        "cca-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-a",
+      "team_b": "sd-dons-b",
+      "score": 83.8,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 19,
+      "games_b": 2,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.07,
+      "division_similarity": 0.25,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-a",
+      "team_b": "sd-dons-d",
+      "score": 82.2,
+      "same_club": true,
+      "levels": "A/D",
+      "games_a": 19,
+      "games_b": 1,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.25,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "ocwpc-a",
+      "team_b": "ocwpc-c",
+      "score": 75.0,
+      "same_club": true,
+      "levels": "A/C",
+      "games_a": 8,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 0.5,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "orwp-a",
+      "team_b": "orwp-b",
+      "score": 75.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 4,
+      "games_b": 8,
+      "shared_tournaments": [
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.33,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "palos-verdes-a",
+      "team_b": "palos-verdes-b",
+      "score": 75.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 4,
+      "games_b": 6,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 0.5,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "tsm-a",
+      "team_b": "tsm-b",
+      "score": 75.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 7,
+      "games_b": 4,
+      "shared_tournaments": [
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 0.5,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "la-jolla-united-a",
+      "team_b": "la-jolla-united-b",
+      "score": 74.6,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 19,
+      "games_b": 4,
+      "shared_tournaments": [
+        "futures-super-finals"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.12,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "san-clemente-b",
+      "team_b": "san-clemente-c",
+      "score": 74.4,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 6,
+      "games_b": 5,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.38,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "sd-dons-a",
+      "team_b": "sd-dons-c",
+      "score": 74.2,
+      "same_club": true,
+      "levels": "A/C",
+      "games_a": 19,
+      "games_b": 3,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.25,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "south-coast-a",
+      "team_b": "south-coast-c",
+      "score": 71.3,
+      "same_club": true,
+      "levels": "A/C",
+      "games_a": 17,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 0.25,
+      "opponent_similarity": 0.05,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "south-coast-b",
+      "team_b": "south-coast-c",
+      "score": 70.0,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 17,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 0.25,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "cdm-a",
+      "team_b": "cdm-b",
+      "score": 65.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 14,
+      "games_b": 3,
+      "shared_tournaments": [],
+      "tournament_similarity": 0.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "ocwpc-b",
+      "team_b": "ocwpc-c",
+      "score": 65.0,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 9,
+      "games_b": 4,
+      "shared_tournaments": [],
+      "tournament_similarity": 0.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "mission-wpc-a",
+      "team_b": "mission-wpc-b",
+      "score": 63.1,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 24,
+      "games_b": 19,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "san-diego-county-cup",
+        "sopac-jo-qualifier",
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.12,
+      "division_similarity": 0.5,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3-channel-islands-united-a",
+      "team_b": "channel-islands-united-a",
+      "score": 63.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 3,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdj-channel-islands-united-a",
+      "team_b": "channel-islands-united-a",
+      "score": 63.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 3,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rds-tri-valley-tritons-a",
+      "team_b": "tri-valley-tritons-a",
+      "score": 63.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "680-b",
+      "team_b": "680-c",
+      "score": 63.0,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 14,
+      "games_b": 16,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.12,
+      "division_similarity": 0.5,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "diablo-alliance-a",
+      "team_b": "diablo-alliance-b",
+      "score": 62.5,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 10,
+      "games_b": 11,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.17,
+      "division_similarity": 0.33,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "patriot-a",
+      "team_b": "patriot-b",
+      "score": 61.5,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 22,
+      "games_b": 19,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "san-diego-county-cup",
+        "sopac-jo-qualifier",
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.06,
+      "division_similarity": 0.5,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "1sta-brea-olinda-a",
+      "team_b": "brea-olinda-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 2,
+      "shared_tournaments": [
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "1stg-poway-valley-a",
+      "team_b": "poway-valley-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "2ndg-pasadena-ac-a",
+      "team_b": "pasadena-ac-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdg-palos-verdes-a",
+      "team_b": "palos-verdes-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdq-tmec-wp-a",
+      "team_b": "tmec-wp-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 2,
+      "games_b": 4,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3-channel-islands-united-a",
+      "team_b": "3rdj-channel-islands-united-a",
+      "score": 60.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 1,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "south-coast-a",
+      "team_b": "south-coast-b",
+      "score": 59.8,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 17,
+      "games_b": 17,
+      "shared_tournaments": [
+        "cca-jo-qualifier",
+        "futures-super-finals",
+        "kap7",
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.03,
+      "division_similarity": 0.4,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "vanguard-a",
+      "team_b": "vanguard-b",
+      "score": 59.6,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 21,
+      "games_b": 23,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "sopac-jo-qualifier",
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.05,
+      "division_similarity": 0.33,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "680-a",
+      "team_b": "680-b",
+      "score": 59.1,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 15,
+      "games_b": 14,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.08,
+      "division_similarity": 0.2,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "1stp-chawp-a",
+      "team_b": "chawp-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 2,
+      "games_b": 4,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "2ndh-nbwp-a",
+      "team_b": "nbwp-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 5,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "2ndr-burlingame-a",
+      "team_b": "burlingame-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 6,
+      "shared_tournaments": [
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "2nds-midpen-a",
+      "team_b": "midpen-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 6,
+      "shared_tournaments": [
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdj-nbwp-b",
+      "team_b": "nbwp-b",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "B/B",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdm-cmac-a",
+      "team_b": "cmac-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 5,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "4th-in-g-la-city-united-a",
+      "team_b": "la-city-united-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 5,
+      "shared_tournaments": [
+        "cca-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "680-a",
+      "team_b": "680-c",
+      "score": 57.9,
+      "same_club": true,
+      "levels": "A/C",
+      "games_a": 15,
+      "games_b": 16,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.03,
+      "division_similarity": 0.2,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "norcal-a",
+      "team_b": "norcal-b",
+      "score": 56.8,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 19,
+      "games_b": 12,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "norcal-jo-qualifier",
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 0.75,
+      "opponent_similarity": 0.11,
+      "division_similarity": 0.4,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "stanford-a",
+      "team_b": "stanford-b",
+      "score": 55.2,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 20,
+      "games_b": 21,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 0.75,
+      "opponent_similarity": 0.14,
+      "division_similarity": 0.17,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "american-river-a",
+      "team_b": "american-river-b",
+      "score": 55.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 9,
+      "games_b": 9,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "north-irvine-a",
+      "team_b": "north-irvine-b",
+      "score": 55.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 26,
+      "games_b": 17,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "san-diego-county-cup",
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 0.8,
+      "opponent_similarity": 0.03,
+      "division_similarity": 0.33,
+      "recommendation": "review"
+    }
+  ],
+  "all_candidates": [
+    {
+      "team_a": "eca-a",
+      "team_b": "eca-b",
+      "score": 103.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 1,
+      "games_b": 5,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-b",
+      "team_b": "sd-dons-c",
+      "score": 103.0,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 2,
+      "games_b": 3,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-b",
+      "team_b": "sd-dons-d",
+      "score": 103.0,
+      "same_club": true,
+      "levels": "B/D",
+      "games_a": 2,
+      "games_b": 1,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-c",
+      "team_b": "sd-dons-d",
+      "score": 103.0,
+      "same_club": true,
+      "levels": "C/D",
+      "games_a": 3,
+      "games_b": 1,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "nbwp-a",
+      "team_b": "nbwp-b",
+      "score": 95.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 5,
+      "games_b": 4,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "pv-a",
+      "team_b": "pv-b",
+      "score": 95.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 5,
+      "games_b": 4,
+      "shared_tournaments": [
+        "cca-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-a",
+      "team_b": "sd-dons-b",
+      "score": 83.8,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 19,
+      "games_b": 2,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.07,
+      "division_similarity": 0.25,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "sd-dons-a",
+      "team_b": "sd-dons-d",
+      "score": 82.2,
+      "same_club": true,
+      "levels": "A/D",
+      "games_a": 19,
+      "games_b": 1,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.25,
+      "recommendation": "merge"
+    },
+    {
+      "team_a": "ocwpc-a",
+      "team_b": "ocwpc-c",
+      "score": 75.0,
+      "same_club": true,
+      "levels": "A/C",
+      "games_a": 8,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 0.5,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "orwp-a",
+      "team_b": "orwp-b",
+      "score": 75.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 4,
+      "games_b": 8,
+      "shared_tournaments": [
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.33,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "palos-verdes-a",
+      "team_b": "palos-verdes-b",
+      "score": 75.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 4,
+      "games_b": 6,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 0.5,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "tsm-a",
+      "team_b": "tsm-b",
+      "score": 75.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 7,
+      "games_b": 4,
+      "shared_tournaments": [
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 0.5,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "la-jolla-united-a",
+      "team_b": "la-jolla-united-b",
+      "score": 74.6,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 19,
+      "games_b": 4,
+      "shared_tournaments": [
+        "futures-super-finals"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.12,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "san-clemente-b",
+      "team_b": "san-clemente-c",
+      "score": 74.4,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 6,
+      "games_b": 5,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.38,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "sd-dons-a",
+      "team_b": "sd-dons-c",
+      "score": 74.2,
+      "same_club": true,
+      "levels": "A/C",
+      "games_a": 19,
+      "games_b": 3,
+      "shared_tournaments": [
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 0.33,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.25,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "south-coast-a",
+      "team_b": "south-coast-c",
+      "score": 71.3,
+      "same_club": true,
+      "levels": "A/C",
+      "games_a": 17,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 0.25,
+      "opponent_similarity": 0.05,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "south-coast-b",
+      "team_b": "south-coast-c",
+      "score": 70.0,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 17,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 0.25,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "cdm-a",
+      "team_b": "cdm-b",
+      "score": 65.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 14,
+      "games_b": 3,
+      "shared_tournaments": [],
+      "tournament_similarity": 0.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "ocwpc-b",
+      "team_b": "ocwpc-c",
+      "score": 65.0,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 9,
+      "games_b": 4,
+      "shared_tournaments": [],
+      "tournament_similarity": 0.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "mission-wpc-a",
+      "team_b": "mission-wpc-b",
+      "score": 63.1,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 24,
+      "games_b": 19,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "san-diego-county-cup",
+        "sopac-jo-qualifier",
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.12,
+      "division_similarity": 0.5,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3-channel-islands-united-a",
+      "team_b": "channel-islands-united-a",
+      "score": 63.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 3,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdj-channel-islands-united-a",
+      "team_b": "channel-islands-united-a",
+      "score": 63.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 3,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rds-tri-valley-tritons-a",
+      "team_b": "tri-valley-tritons-a",
+      "score": 63.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "680-b",
+      "team_b": "680-c",
+      "score": 63.0,
+      "same_club": true,
+      "levels": "B/C",
+      "games_a": 14,
+      "games_b": 16,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.12,
+      "division_similarity": 0.5,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "diablo-alliance-a",
+      "team_b": "diablo-alliance-b",
+      "score": 62.5,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 10,
+      "games_b": 11,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.17,
+      "division_similarity": 0.33,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "patriot-a",
+      "team_b": "patriot-b",
+      "score": 61.5,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 22,
+      "games_b": 19,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "san-diego-county-cup",
+        "sopac-jo-qualifier",
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.06,
+      "division_similarity": 0.5,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "1sta-brea-olinda-a",
+      "team_b": "brea-olinda-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 2,
+      "shared_tournaments": [
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "1stg-poway-valley-a",
+      "team_b": "poway-valley-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "2ndg-pasadena-ac-a",
+      "team_b": "pasadena-ac-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdg-palos-verdes-a",
+      "team_b": "palos-verdes-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdq-tmec-wp-a",
+      "team_b": "tmec-wp-a",
+      "score": 61.3,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 2,
+      "games_b": 4,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3-channel-islands-united-a",
+      "team_b": "3rdj-channel-islands-united-a",
+      "score": 60.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 1,
+      "shared_tournaments": [
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "south-coast-a",
+      "team_b": "south-coast-b",
+      "score": 59.8,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 17,
+      "games_b": 17,
+      "shared_tournaments": [
+        "cca-jo-qualifier",
+        "futures-super-finals",
+        "kap7",
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.03,
+      "division_similarity": 0.4,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "vanguard-a",
+      "team_b": "vanguard-b",
+      "score": 59.6,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 21,
+      "games_b": 23,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "sopac-jo-qualifier",
+        "turbo-oc-cup"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.05,
+      "division_similarity": 0.33,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "680-a",
+      "team_b": "680-b",
+      "score": 59.1,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 15,
+      "games_b": 14,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.08,
+      "division_similarity": 0.2,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "1stp-chawp-a",
+      "team_b": "chawp-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 2,
+      "games_b": 4,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "2ndh-nbwp-a",
+      "team_b": "nbwp-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 5,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "2ndr-burlingame-a",
+      "team_b": "burlingame-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 6,
+      "shared_tournaments": [
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "2nds-midpen-a",
+      "team_b": "midpen-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 6,
+      "shared_tournaments": [
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdj-nbwp-b",
+      "team_b": "nbwp-b",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "B/B",
+      "games_a": 1,
+      "games_b": 4,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "3rdm-cmac-a",
+      "team_b": "cmac-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 5,
+      "shared_tournaments": [
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "4th-in-g-la-city-united-a",
+      "team_b": "la-city-united-a",
+      "score": 58.0,
+      "same_club": false,
+      "levels": "A/A",
+      "games_a": 1,
+      "games_b": 5,
+      "shared_tournaments": [
+        "cca-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 1.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "680-a",
+      "team_b": "680-c",
+      "score": 57.9,
+      "same_club": true,
+      "levels": "A/C",
+      "games_a": 15,
+      "games_b": 16,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.03,
+      "division_similarity": 0.2,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "norcal-a",
+      "team_b": "norcal-b",
+      "score": 56.8,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 19,
+      "games_b": 12,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "norcal-jo-qualifier",
+        "san-diego-county-cup"
+      ],
+      "tournament_similarity": 0.75,
+      "opponent_similarity": 0.11,
+      "division_similarity": 0.4,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "stanford-a",
+      "team_b": "stanford-b",
+      "score": 55.2,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 20,
+      "games_b": 21,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "norcal-jo-qualifier"
+      ],
+      "tournament_similarity": 0.75,
+      "opponent_similarity": 0.14,
+      "division_similarity": 0.17,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "american-river-a",
+      "team_b": "american-river-b",
+      "score": 55.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 9,
+      "games_b": 9,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7"
+      ],
+      "tournament_similarity": 1.0,
+      "opponent_similarity": 0.0,
+      "division_similarity": 0.0,
+      "recommendation": "review"
+    },
+    {
+      "team_a": "north-irvine-a",
+      "team_b": "north-irvine-b",
+      "score": 55.0,
+      "same_club": true,
+      "levels": "A/B",
+      "games_a": 26,
+      "games_b": 17,
+      "shared_tournaments": [
+        "futures-super-finals",
+        "kap7",
+        "san-diego-county-cup",
+        "sopac-jo-qualifier"
+      ],
+      "tournament_similarity": 0.8,
+      "opponent_similarity": 0.03,
+      "division_similarity": 0.33,
+      "recommendation": "review"
+    }
+  ]
+}
