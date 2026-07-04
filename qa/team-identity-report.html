@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><title>CPI Team Identity Report</title>
+<style>
+body{font-family:system-ui;margin:30px;background:#f6f8fb;color:#071832}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{background:#08264f;color:white;border-radius:12px;padding:16px}
+.metric strong{display:block;font-size:34px}.metric span{font-size:11px;text-transform:uppercase;color:#dbe7f5;font-weight:900}
+.card{background:white;border:1px solid #dce6f2;border-radius:14px;padding:18px;margin:18px 0;box-shadow:0 10px 30px #0001}
+table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #dce6f2;padding:10px;text-align:left}th{font-size:12px;text-transform:uppercase;color:#607086}code{white-space:normal}
+</style></head><body>
+<h1>CPI Team Identity Engine v1</h1>
+<div class="grid">
+<div class="metric"><strong>726</strong><span>Resolved Games</span></div>
+<div class="metric"><strong>341</strong><span>Teams</span></div>
+<div class="metric"><strong>112</strong><span>Eligible Teams</span></div>
+<div class="metric"><strong>10</strong><span>QA Items</span></div>
+</div>
+<div class="card"><h2>Resolution Reasons</h2><table><thead><tr><th>Reason</th><th>Count</th></tr></thead><tbody><tr><td>alias_lookup</td><td>1350</td></tr>
+<tr><td>canonical_shape_known_club</td><td>68</td></tr>
+<tr><td>club_pattern_level_rule</td><td>44</td></tr>
+<tr><td>unresolved</td><td>10</td></tr></tbody></table></div>
+<div class="card"><h2>QA Preview</h2><table><thead><tr><th>Level</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-red-a-pv-blue-b-3-16-bracket", "raw_team_1": "A2 - PV Blue(B)", "resolved_1": "pv-blue-b", "reason_1": "canonical_shape_known_club", "raw_team_2": "A3 - Foothill Red(A)", "resolved_2": null, "reason_2": "u</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-red-a-la-premier-a-17-8-1-2-a", "raw_team_1": "Win #1 - LA Premier", "resolved_1": "la-premier-a", "reason_1": "alias_lookup", "raw_team_2": "Win #2 - Foothill Red (A)", "resolved_2": null, "reason_2": "un</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-ciu-gold-a-foothill-black-b-20-0-bracket", "raw_team_1": "C1 - CIU Gold(A)", "resolved_1": "ciu-gold-a", "reason_1": "alias_lookup", "raw_team_2": "C4 - Foothill Black(B)", "resolved_2": null, "reason_2": "unresolv</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-black-b-titans-gold-a-23-3-3-4-c", "raw_team_1": "Lose #10 - Titans Gold", "resolved_1": "titans-gold-a", "reason_1": "alias_lookup", "raw_team_2": "Lose #9 - Foothill Black(B)", "resolved_2": null, "reaso</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-red-a-pride-black-a-11-8-9-16-cross", "raw_team_1": "Lose #36 - Pride Black", "resolved_1": "pride-black-a", "reason_1": "alias_lookup", "raw_team_2": "Lose #35 - Foothill Red (A)", "resolved_2": null, "re</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-black-b-ngen-a-16-17-25-32-cross", "raw_team_1": "Lose #60 - NGEN", "resolved_1": "ngen-a", "reason_1": "alias_lookup", "raw_team_2": "Lose #59 - Foothill Black(B)", "resolved_2": null, "reason_2": "unreso</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-red-a-temple-city-a-8-3-semi-13-16", "raw_team_1": "Lose #46 - Temple City", "resolved_1": "temple-city-a", "reason_1": "alias_lookup", "raw_team_2": "Lose #40 - Foothill Red (A)", "resolved_2": null, "rea</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-red-a-rose-bowl-red-a-13-14-15th-place", "raw_team_1": "Lose #76 - Rose Bowl Red (A)", "resolved_1": "rose-bowl-red-a", "reason_1": "alias_lookup", "raw_team_2": "Lose #66 - Foothill Red (A)", "resolved_2"</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-black-b-valley-united-a-21-7-semi-25-28", "raw_team_1": "Win #54 - Valley United", "resolved_1": "valley-united-a", "reason_1": "alias_lookup", "raw_team_2": "Win #64 - Foothill Black(B)", "resolved_2": nu</code></td></tr>
+<tr><td>review</td><td>unresolved_game_team</td><td><code>{"level": "review", "type": "unresolved_game_team", "game_id": "game-cca-jo-qualifier-foothill-black-b-rose-bowl-black-b-5-12-27th-place", "raw_team_1": "Lose #88 - Foothill Black(B)", "resolved_1": null, "reason_1": "unresolved", "raw_team_2": "Lose #87 -  Rose Bowl Black (B)", "resolved_2": "rose-</code></td></tr></tbody></table></div>
+</body></html>

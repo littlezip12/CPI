@@ -1,0 +1,4641 @@
+{
+  "summary": {
+    "input_games": 736,
+    "resolved_games": 726,
+    "teams": 341,
+    "ranking_eligible_teams_5plus": 112,
+    "qa_items": 10
+  },
+  "resolution_reasons": {
+    "alias_lookup": 1350,
+    "canonical_shape_known_club": 68,
+    "club_pattern_level_rule": 44,
+    "unresolved": 10
+  },
+  "qa_preview": [
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-red-a-pv-blue-b-3-16-bracket",
+      "raw_team_1": "A2 - PV Blue(B)",
+      "resolved_1": "pv-blue-b",
+      "reason_1": "canonical_shape_known_club",
+      "raw_team_2": "A3 - Foothill Red(A)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-red-a-la-premier-a-17-8-1-2-a",
+      "raw_team_1": "Win #1 - LA Premier",
+      "resolved_1": "la-premier-a",
+      "reason_1": "alias_lookup",
+      "raw_team_2": "Win #2 - Foothill Red (A)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-ciu-gold-a-foothill-black-b-20-0-bracket",
+      "raw_team_1": "C1 - CIU Gold(A)",
+      "resolved_1": "ciu-gold-a",
+      "reason_1": "alias_lookup",
+      "raw_team_2": "C4 - Foothill Black(B)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-black-b-titans-gold-a-23-3-3-4-c",
+      "raw_team_1": "Lose #10 - Titans Gold",
+      "resolved_1": "titans-gold-a",
+      "reason_1": "alias_lookup",
+      "raw_team_2": "Lose #9 - Foothill Black(B)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-red-a-pride-black-a-11-8-9-16-cross",
+      "raw_team_1": "Lose #36 - Pride Black",
+      "resolved_1": "pride-black-a",
+      "reason_1": "alias_lookup",
+      "raw_team_2": "Lose #35 - Foothill Red (A)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-black-b-ngen-a-16-17-25-32-cross",
+      "raw_team_1": "Lose #60 - NGEN",
+      "resolved_1": "ngen-a",
+      "reason_1": "alias_lookup",
+      "raw_team_2": "Lose #59 - Foothill Black(B)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-red-a-temple-city-a-8-3-semi-13-16",
+      "raw_team_1": "Lose #46 - Temple City",
+      "resolved_1": "temple-city-a",
+      "reason_1": "alias_lookup",
+      "raw_team_2": "Lose #40 - Foothill Red (A)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-red-a-rose-bowl-red-a-13-14-15th-place",
+      "raw_team_1": "Lose #76 - Rose Bowl Red (A)",
+      "resolved_1": "rose-bowl-red-a",
+      "reason_1": "alias_lookup",
+      "raw_team_2": "Lose #66 - Foothill Red (A)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-black-b-valley-united-a-21-7-semi-25-28",
+      "raw_team_1": "Win #54 - Valley United",
+      "resolved_1": "valley-united-a",
+      "reason_1": "alias_lookup",
+      "raw_team_2": "Win #64 - Foothill Black(B)",
+      "resolved_2": null,
+      "reason_2": "unresolved"
+    },
+    {
+      "level": "review",
+      "type": "unresolved_game_team",
+      "game_id": "game-cca-jo-qualifier-foothill-black-b-rose-bowl-black-b-5-12-27th-place",
+      "raw_team_1": "Lose #88 - Foothill Black(B)",
+      "resolved_1": null,
+      "reason_1": "unresolved",
+      "raw_team_2": "Lose #87 -  Rose Bowl Black (B)",
+      "resolved_2": "rose-bowl-black-b",
+      "reason_2": "canonical_shape_known_club"
+    }
+  ],
+  "raw_mapping": {
+    "B2 - Crown City": {
+      "canonical": "crown-city-a",
+      "reason": "alias_lookup"
+    },
+    "B3 - Stanford White": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "B1 - NSD Stars": {
+      "canonical": "nsd-stars-a",
+      "reason": "alias_lookup"
+    },
+    "B4 - Rose Bowl Black": {
+      "canonical": "rose-bowl-black-a",
+      "reason": "alias_lookup"
+    },
+    "C2 - CDM White": {
+      "canonical": "cdm-white-a",
+      "reason": "alias_lookup"
+    },
+    "C3 - ECA B": {
+      "canonical": "eca-b",
+      "reason": "alias_lookup"
+    },
+    "D2 - LACUWP": {
+      "canonical": "lacuwp-a",
+      "reason": "alias_lookup"
+    },
+    "D3 - Santa Barbara": {
+      "canonical": "santa-barbara-a",
+      "reason": "alias_lookup"
+    },
+    "C1 - SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "C4 - Sharks": {
+      "canonical": "sharks-a",
+      "reason": "alias_lookup"
+    },
+    "A1 - Loyola": {
+      "canonical": "loyola-a",
+      "reason": "alias_lookup"
+    },
+    "A3 - San Clemente Black": {
+      "canonical": "san-clemente-black-a",
+      "reason": "alias_lookup"
+    },
+    "D1 - Norcal Aquatics B": {
+      "canonical": "norcal-b",
+      "reason": "alias_lookup"
+    },
+    "A4 - Valley United": {
+      "canonical": "valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "A2 - NGen": {
+      "canonical": "ngen-a",
+      "reason": "alias_lookup"
+    },
+    "D4 - Trilogy": {
+      "canonical": "trilogy-a",
+      "reason": "alias_lookup"
+    },
+    "I1 - Valley United": {
+      "canonical": "valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "I2 - SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "K1 - ECA B": {
+      "canonical": "eca-b",
+      "reason": "alias_lookup"
+    },
+    "K2 - NGen": {
+      "canonical": "ngen-a",
+      "reason": "alias_lookup"
+    },
+    "J1 - Rose Bowl Black": {
+      "canonical": "rose-bowl-black-a",
+      "reason": "alias_lookup"
+    },
+    "J2 - Trilogy": {
+      "canonical": "trilogy-a",
+      "reason": "alias_lookup"
+    },
+    "L1 - Santa Barbara": {
+      "canonical": "santa-barbara-a",
+      "reason": "alias_lookup"
+    },
+    "L2 - Crown City": {
+      "canonical": "crown-city-a",
+      "reason": "alias_lookup"
+    },
+    "Rose Bowl Black": {
+      "canonical": "rose-bowl-black-a",
+      "reason": "alias_lookup"
+    },
+    "ECA B": {
+      "canonical": "eca-b",
+      "reason": "alias_lookup"
+    },
+    "Trilogy": {
+      "canonical": "trilogy-a",
+      "reason": "alias_lookup"
+    },
+    "NGen": {
+      "canonical": "ngen-a",
+      "reason": "alias_lookup"
+    },
+    "SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "Crown City": {
+      "canonical": "crown-city-a",
+      "reason": "alias_lookup"
+    },
+    "Valley United": {
+      "canonical": "valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "Santa Barbara": {
+      "canonical": "santa-barbara-a",
+      "reason": "alias_lookup"
+    },
+    "Stanford White": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "Loyola": {
+      "canonical": "loyola-a",
+      "reason": "alias_lookup"
+    },
+    "Sharks": {
+      "canonical": "sharks-a",
+      "reason": "alias_lookup"
+    },
+    "Norcal Aquatics B": {
+      "canonical": "norcal-b",
+      "reason": "alias_lookup"
+    },
+    "San Clemente Black": {
+      "canonical": "san-clemente-black-a",
+      "reason": "alias_lookup"
+    },
+    "CDM White": {
+      "canonical": "cdm-white-a",
+      "reason": "alias_lookup"
+    },
+    "LACUWP": {
+      "canonical": "lacuwp-a",
+      "reason": "alias_lookup"
+    },
+    "NSD Stars": {
+      "canonical": "nsd-stars-a",
+      "reason": "alias_lookup"
+    },
+    "A2 - Rain City": {
+      "canonical": "rain-city-a",
+      "reason": "alias_lookup"
+    },
+    "A3 - 908 Green": {
+      "canonical": "908-green-a",
+      "reason": "alias_lookup"
+    },
+    "B2 - ECA A": {
+      "canonical": "eca-a",
+      "reason": "alias_lookup"
+    },
+    "B3 - Shore Aquatics": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "C1 - Back Bay": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "C2 - South Coast White": {
+      "canonical": "south-coast-b",
+      "reason": "alias_lookup"
+    },
+    "D1 - Newport White": {
+      "canonical": "newport-beach-c",
+      "reason": "alias_lookup"
+    },
+    "D3 - Titans": {
+      "canonical": "titans-a",
+      "reason": "alias_lookup"
+    },
+    "A1 - San Clem Red": {
+      "canonical": "san-clem-red-a",
+      "reason": "alias_lookup"
+    },
+    "B1 - Santa Cruz": {
+      "canonical": "santa-cruz-a",
+      "reason": "alias_lookup"
+    },
+    "C3 - SD Dons Gold": {
+      "canonical": "sd-dons-c",
+      "reason": "alias_lookup"
+    },
+    "E1 - Mission B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "E3 - Foothill": {
+      "canonical": "foothill-a",
+      "reason": "alias_lookup"
+    },
+    "E2 - CCWP": {
+      "canonical": "ccwp-a",
+      "reason": "alias_lookup"
+    },
+    "I2 - 908 Blue": {
+      "canonical": "908-blue-a",
+      "reason": "alias_lookup"
+    },
+    "I3 - Big Valley": {
+      "canonical": "big-valley-a",
+      "reason": "alias_lookup"
+    },
+    "H1 - Greenwich": {
+      "canonical": "greenwich-a",
+      "reason": "alias_lookup"
+    },
+    "H2 - SJ Express": {
+      "canonical": "sj-express-a",
+      "reason": "alias_lookup"
+    },
+    "U1 - Rain City": {
+      "canonical": "rain-city-a",
+      "reason": "alias_lookup"
+    },
+    "U3 - Big Valley": {
+      "canonical": "big-valley-a",
+      "reason": "alias_lookup"
+    },
+    "Q1 - 908 Green": {
+      "canonical": "908-green-a",
+      "reason": "alias_lookup"
+    },
+    "Q3 - 908 Blue": {
+      "canonical": "908-blue-a",
+      "reason": "alias_lookup"
+    },
+    "M1 - San Clem Red": {
+      "canonical": "san-clem-red-a",
+      "reason": "alias_lookup"
+    },
+    "M3 - Santa Barbara": {
+      "canonical": "santa-barbara-a",
+      "reason": "alias_lookup"
+    },
+    "T1 - Back Bay": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "T2 - LOWPO": {
+      "canonical": "lowpo-a",
+      "reason": "alias_lookup"
+    },
+    "U2 - North Irvine B": {
+      "canonical": "north-irvine-b",
+      "reason": "alias_lookup"
+    },
+    "Q2 - SJ Express": {
+      "canonical": "sj-express-a",
+      "reason": "alias_lookup"
+    },
+    "M2 - Greenwich": {
+      "canonical": "greenwich-a",
+      "reason": "alias_lookup"
+    },
+    "T3 - Patriots Red": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "CC1 - Greenwich": {
+      "canonical": "greenwich-a",
+      "reason": "alias_lookup"
+    },
+    "CC2 - Newport White": {
+      "canonical": "newport-beach-c",
+      "reason": "alias_lookup"
+    },
+    "DD1 - SD Shores Gold": {
+      "canonical": "sd-shores-gold-a",
+      "reason": "alias_lookup"
+    },
+    "DD2 - Rose Bowl Red": {
+      "canonical": "rose-bowl-red-a",
+      "reason": "alias_lookup"
+    },
+    "Rain City": {
+      "canonical": "rain-city-a",
+      "reason": "alias_lookup"
+    },
+    "Titans": {
+      "canonical": "titans-a",
+      "reason": "alias_lookup"
+    },
+    "Tsunami Black": {
+      "canonical": "tsunami-black-a",
+      "reason": "alias_lookup"
+    },
+    "South Coast White": {
+      "canonical": "south-coast-b",
+      "reason": "alias_lookup"
+    },
+    "North Irvine B": {
+      "canonical": "north-irvine-b",
+      "reason": "alias_lookup"
+    },
+    "Shore Aquatics": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "SD Dons D": {
+      "canonical": "sd-dons-d",
+      "reason": "alias_lookup"
+    },
+    "Newport White": {
+      "canonical": "newport-beach-c",
+      "reason": "alias_lookup"
+    },
+    "Rose Bowl Red": {
+      "canonical": "rose-bowl-red-a",
+      "reason": "alias_lookup"
+    },
+    "Greenwich": {
+      "canonical": "greenwich-a",
+      "reason": "alias_lookup"
+    },
+    "SD Shores Gold": {
+      "canonical": "sd-shores-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Y1 - San Clem Red": {
+      "canonical": "san-clem-red-a",
+      "reason": "alias_lookup"
+    },
+    "Y2 - Mission B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "San Clem Red": {
+      "canonical": "san-clem-red-a",
+      "reason": "alias_lookup"
+    },
+    "SD Dons Gold": {
+      "canonical": "sd-dons-c",
+      "reason": "alias_lookup"
+    },
+    "B1 - Newport": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "B2 - South Coast": {
+      "canonical": "south-coast-a",
+      "reason": "alias_lookup"
+    },
+    "K2 - North Irvine": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "K3 - SD Dons Red": {
+      "canonical": "sd-dons-b",
+      "reason": "alias_lookup"
+    },
+    "E1 - Greenwich": {
+      "canonical": "greenwich-a",
+      "reason": "alias_lookup"
+    },
+    "E2 - ORWP": {
+      "canonical": "orwp-a",
+      "reason": "alias_lookup"
+    },
+    "B3 - Northwest": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "K1 - Lamorinda": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "E3 - Sharks": {
+      "canonical": "sharks-a",
+      "reason": "alias_lookup"
+    },
+    "G1 - Norcal": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "G2 - SOCAL": {
+      "canonical": "socal-a",
+      "reason": "alias_lookup"
+    },
+    "A1 - La Jolla United A": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "A3 - SJA": {
+      "canonical": "sja-a",
+      "reason": "alias_lookup"
+    },
+    "I1 - 908": {
+      "canonical": "908-a",
+      "reason": "alias_lookup"
+    },
+    "I3 - CC United Blue": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "O1 - Newport": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "O2 - Norcal": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "P2 - LA Premier": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "P3 - North Irvine": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "N2 - Greenwich": {
+      "canonical": "greenwich-a",
+      "reason": "alias_lookup"
+    },
+    "N3 - Commerce": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "M1 - La Jolla United A": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "M2 - Patriot Navy": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "O3 - SD Shores Black": {
+      "canonical": "sd-shores-black-a",
+      "reason": "alias_lookup"
+    },
+    "P1 - SD Dons Black": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "N1 - Mission": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "M3 - 908": {
+      "canonical": "908-a",
+      "reason": "alias_lookup"
+    },
+    "AA1 - Patriot Navy": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "AA2 - Commerce": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "BB1 - Newport": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "BB2 - SD Dons Black": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "Commerce": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "SD Dons Black": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "Patriot Navy": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "Newport": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "CC1 - 908": {
+      "canonical": "908-a",
+      "reason": "alias_lookup"
+    },
+    "CC2 - Greenwich": {
+      "canonical": "greenwich-a",
+      "reason": "alias_lookup"
+    },
+    "DD1 - SD Shores Black": {
+      "canonical": "sd-shores-black-a",
+      "reason": "alias_lookup"
+    },
+    "DD2 - North Irvine": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "SD Shores Black": {
+      "canonical": "sd-shores-black-a",
+      "reason": "alias_lookup"
+    },
+    "908": {
+      "canonical": "908-a",
+      "reason": "alias_lookup"
+    },
+    "North Irvine": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "Y1 - La Jolla United A": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "Y2 - Mission": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "La Jolla United A": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "LA Premier": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "A4-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "A5-SAN CLEMENTE WHITE (C)": {
+      "canonical": "san-clemente-white-c",
+      "reason": "canonical_shape_known_club"
+    },
+    "B4-SAN CLEMENTE BLACK (B)": {
+      "canonical": "san-clemente-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "B5-NORTH IRVINE RED (B)": {
+      "canonical": "north-irvine-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "C4-VANGUARD SILVER (B)": {
+      "canonical": "vanguard-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "C5-OCWPC RED (B)": {
+      "canonical": "ocwpc-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "A2-NORTH IRVINE BLACK (A)": {
+      "canonical": "north-irvine-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "A3-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "C2-SOCAL GOLD (B)": {
+      "canonical": "socal-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "C3-NBWP WHITE (B)": {
+      "canonical": "nbwp-white-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "F1-VANGUARD BLUE (A)": {
+      "canonical": "vanguard-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "F4-RENEGADES": {
+      "canonical": "renegades-a",
+      "reason": "alias_lookup"
+    },
+    "E1-OCWPC BLUE (A)": {
+      "canonical": "ocwpc-blue-a",
+      "reason": "alias_lookup"
+    },
+    "E4-TMEC WP": {
+      "canonical": "tmec-wp-a",
+      "reason": "alias_lookup"
+    },
+    "D1-SOCAL BLACK (A)": {
+      "canonical": "socal-black-a",
+      "reason": "alias_lookup"
+    },
+    "D4-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "F2-CDM": {
+      "canonical": "cdm-a",
+      "reason": "alias_lookup"
+    },
+    "F3-CHAWP": {
+      "canonical": "chawp-a",
+      "reason": "alias_lookup"
+    },
+    "E2-TSUNAMI BLUE": {
+      "canonical": "tsunami-blue-a",
+      "reason": "alias_lookup"
+    },
+    "E3-CMAC": {
+      "canonical": "cmac-a",
+      "reason": "alias_lookup"
+    },
+    "D2-SAN CLEMENTE RED (A)": {
+      "canonical": "san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "D3-PATRIOT RED (B)": {
+      "canonical": "patriot-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "A1-PATRIOT NAVY (A)": {
+      "canonical": "patriot-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "W#1-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "B1-NBWP BLUE (A)": {
+      "canonical": "nbwp-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#2-SAN CLEMENTE BLACK (B)": {
+      "canonical": "san-clemente-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "C1-MISSION WPC (A)": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "W#3-VANGUARD SILVER (B)": {
+      "canonical": "vanguard-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "L#4-NORTH IRVINE BLACK (A)": {
+      "canonical": "north-irvine-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "L#13-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "L#8-TMEC WP": {
+      "canonical": "tmec-wp-a",
+      "reason": "alias_lookup"
+    },
+    "L#11-CMAC": {
+      "canonical": "cmac-a",
+      "reason": "alias_lookup"
+    },
+    "L#6-NBWP WHITE (B)": {
+      "canonical": "nbwp-white-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "L#15-VANGUARD SILVER (B)": {
+      "canonical": "vanguard-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "L#7-RENEGADES": {
+      "canonical": "renegades-a",
+      "reason": "alias_lookup"
+    },
+    "L#10-CHAWP": {
+      "canonical": "chawp-a",
+      "reason": "alias_lookup"
+    },
+    "L#9-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "L#12-PATRIOT RED (B)": {
+      "canonical": "patriot-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "W#4-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "W#13-PATRIOT NAVY (A)": {
+      "canonical": "patriot-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "W#7-VANGUARD BLUE (A)": {
+      "canonical": "vanguard-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "W#10-CDM": {
+      "canonical": "cdm-a",
+      "reason": "alias_lookup"
+    },
+    "W#6-SOCAL GOLD (B)": {
+      "canonical": "socal-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "W#15-MISSION WPC (A)": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "W#5-MISSION WPC (B)": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "W#14-NBWP BLUE (A)": {
+      "canonical": "nbwp-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#8-OCWPC BLUE (A)": {
+      "canonical": "ocwpc-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#11-TSUNAMI BLUE": {
+      "canonical": "tsunami-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#9-SOCAL BLACK (A)": {
+      "canonical": "socal-black-a",
+      "reason": "alias_lookup"
+    },
+    "W#12-SAN CLEMENTE RED (A)": {
+      "canonical": "san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "P2(4thA)(L#16)-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "P3(5thB)(L#2)-NORTH IRVINE RED (B)": {
+      "canonical": "north-irvine-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "Q1(4thE)(L#17)-TMEC WP": {
+      "canonical": "tmec-wp-a",
+      "reason": "alias_lookup"
+    },
+    "Q3(5thC)(L#3)-OCWPC RED (B)": {
+      "canonical": "ocwpc-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "R2(4thC)(L#18)-VANGUARD SILVER (B)": {
+      "canonical": "vanguard-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "R3(5thA)(L#1)-SAN CLEMENTE WHITE (C)": {
+      "canonical": "san-clemente-white-c",
+      "reason": "canonical_shape_known_club"
+    },
+    "J1(2ndF)(L#23)-CDM": {
+      "canonical": "cdm-a",
+      "reason": "alias_lookup"
+    },
+    "J3(3rdC)(W#18)-NBWP WHITE (B)": {
+      "canonical": "nbwp-white-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "N1(2ndC)(L#24)-SOCAL GOLD (B)": {
+      "canonical": "socal-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "N3(3rdF)(W#20)-RENEGADES": {
+      "canonical": "renegades-a",
+      "reason": "alias_lookup"
+    },
+    "H1(1stB)(W#25)-NBWP BLUE (A)": {
+      "canonical": "nbwp-blue-a",
+      "reason": "alias_lookup"
+    },
+    "H3(1stF)(W#23)-VANGUARD BLUE (A)": {
+      "canonical": "vanguard-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "M1(2ndD)(L#27)-SAN CLEMENTE RED (A)": {
+      "canonical": "san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "M3(3rdE)(W#17)-CMAC": {
+      "canonical": "cmac-a",
+      "reason": "alias_lookup"
+    },
+    "K1(2ndE)(L#26)-TSUNAMI BLUE": {
+      "canonical": "tsunami-blue-a",
+      "reason": "alias_lookup"
+    },
+    "K3(3rdD)(W#21)-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "G1(1stA)(W#22)-PATRIOT NAVY (A)": {
+      "canonical": "patriot-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "G3(1stE)(W#26)-OCWPC BLUE (A)": {
+      "canonical": "ocwpc-blue-a",
+      "reason": "alias_lookup"
+    },
+    "Q2(4thB)(L#19)-SAN CLEMENTE BLACK (B)": {
+      "canonical": "san-clemente-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "R1(4thD)(L#21)-PATRIOT RED (B)": {
+      "canonical": "patriot-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "P1(4thF)(L#20)-CHAWP": {
+      "canonical": "chawp-a",
+      "reason": "alias_lookup"
+    },
+    "N2(2ndB)(L#25)-MISSION WPC (B)": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "M2(2ndA)(L#22)-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "K2(3rdA)(W#16)-NORTH IRVINE BLACK (A)": {
+      "canonical": "north-irvine-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "H2(1stC)(W#24)-MISSION WPC (A)": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "G2(1stD)(W#27)-SOCAL BLACK (A)": {
+      "canonical": "socal-black-a",
+      "reason": "alias_lookup"
+    },
+    "1stP-CHAWP": {
+      "canonical": "1stp-chawp-a",
+      "reason": "alias_lookup"
+    },
+    "1stR-PATRIOT RED (B)": {
+      "canonical": "1str-patriot-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "2ndP-SET": {
+      "canonical": "2ndp-set-a",
+      "reason": "alias_lookup"
+    },
+    "2ndR-VANGUARD SILVER (B)": {
+      "canonical": "2ndr-vanguard-silver-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rdP-NORTH IRVINE RED (B)": {
+      "canonical": "3rdp-north-irvine-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rdR-SAN CLEMENTE WHITE (C)": {
+      "canonical": "3rdr-san-clemente-white-c",
+      "reason": "canonical_shape_known_club"
+    },
+    "1stJ-CDM": {
+      "canonical": "1stj-cdm-a",
+      "reason": "alias_lookup"
+    },
+    "2ndM-SAN CLEMENTE RED (A)": {
+      "canonical": "2ndm-san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "1stK-TSUNAMI BLUE": {
+      "canonical": "1stk-tsunami-blue-a",
+      "reason": "alias_lookup"
+    },
+    "2ndN-SOCAL GOLD (B)": {
+      "canonical": "2ndn-socal-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rdJ-NBWP WHITE (B)": {
+      "canonical": "3rdj-nbwp-white-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rdN-RENEGADES": {
+      "canonical": "3rdn-renegades-a",
+      "reason": "alias_lookup"
+    },
+    "1stN-MISSION WPC (B)": {
+      "canonical": "1stn-mission-wpc-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "2ndK-NORTH IRVINE BLACK (A)": {
+      "canonical": "2ndk-north-irvine-black-a",
+      "reason": "alias_lookup"
+    },
+    "1stM-BACK BAY": {
+      "canonical": "1stm-back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "2ndJ-LOS ALAMITOS BLUE\t": {
+      "canonical": "2ndj-los-alamitos-blue-a",
+      "reason": "alias_lookup"
+    },
+    "3rdK-HIELAND": {
+      "canonical": "3rdk-hieland-a",
+      "reason": "alias_lookup"
+    },
+    "3rdM-CMAC": {
+      "canonical": "3rdm-cmac-a",
+      "reason": "alias_lookup"
+    },
+    "1stQ-OCWPC RED (B)": {
+      "canonical": "1stq-ocwpc-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "2ndQ-SAN CLEMENTE BLACK (B)": {
+      "canonical": "2ndq-san-clemente-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rdQ-TMEC WP": {
+      "canonical": "3rdq-tmec-wp-a",
+      "reason": "alias_lookup"
+    },
+    "1stG-PATRIOT NAVY (A)": {
+      "canonical": "1stg-patriot-navy-a",
+      "reason": "alias_lookup"
+    },
+    "2ndH-NBWP BLUE (A)": {
+      "canonical": "2ndh-nbwp-blue-a",
+      "reason": "alias_lookup"
+    },
+    "3rdG-OCWPC BLUE (A)": {
+      "canonical": "3rdg-ocwpc-blue-a",
+      "reason": "alias_lookup"
+    },
+    "3rdH-VANGUARD BLUE (A)": {
+      "canonical": "3rdh-vanguard-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#58-CDM": {
+      "canonical": "cdm-a",
+      "reason": "alias_lookup"
+    },
+    "W#61-NORTH IRVINE BLACK (A)": {
+      "canonical": "north-irvine-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "1stH-MISSION WPC (A)": {
+      "canonical": "1sth-mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "2ndG-SOCAL BLACK (A)": {
+      "canonical": "2ndg-socal-black-a",
+      "reason": "alias_lookup"
+    },
+    "W#59-TSUNAMI BLUE": {
+      "canonical": "tsunami-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#62-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "W#60-NBWP WHITE (B)": {
+      "canonical": "nbwp-white-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "W#63-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "L#60-RENEGADES": {
+      "canonical": "renegades-a",
+      "reason": "alias_lookup"
+    },
+    "L#63-CMAC": {
+      "canonical": "cmac-a",
+      "reason": "alias_lookup"
+    },
+    "L#58-SAN CLEMENTE RED (A)": {
+      "canonical": "san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "L#61-MISSION WPC (B)": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "L#64-NBWP BLUE (A)": {
+      "canonical": "nbwp-blue-a",
+      "reason": "alias_lookup"
+    },
+    "L#65-SOCAL BLACK (A)": {
+      "canonical": "socal-black-a",
+      "reason": "alias_lookup"
+    },
+    "L#70-NORTH IRVINE BLACK (A)": {
+      "canonical": "north-irvine-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "L#71-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "W#64-PATRIOT NAVY (A)": {
+      "canonical": "patriot-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "W#65-MISSION WPC (A)": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "W#70-CDM": {
+      "canonical": "cdm-a",
+      "reason": "alias_lookup"
+    },
+    "W#71-TSUNAMI BLUE": {
+      "canonical": "tsunami-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#73-MISSION WPC (B)": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "W#74-SOCAL GOLD (B)": {
+      "canonical": "socal-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "A1-PATRIOT A": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "A3-CIU": {
+      "canonical": "ciu-a",
+      "reason": "alias_lookup"
+    },
+    "E1-908": {
+      "canonical": "908-a",
+      "reason": "alias_lookup"
+    },
+    "E3-SAN CLEMENTE": {
+      "canonical": "san-clemente-a",
+      "reason": "alias_lookup"
+    },
+    "D1-LA PREMIER": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "D3-SAN DIEGO SHORES": {
+      "canonical": "san-diego-shores-a",
+      "reason": "alias_lookup"
+    },
+    "H1-CDM": {
+      "canonical": "cdm-a",
+      "reason": "alias_lookup"
+    },
+    "H3-PEGASUS": {
+      "canonical": "pegasus-a",
+      "reason": "alias_lookup"
+    },
+    "B1-LA JOLLA UNITED A": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "B3-LAMORINDA": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "F1-COMMERCE": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "F3-DIABLO ALLIANCE A": {
+      "canonical": "diablo-alliance-a",
+      "reason": "alias_lookup"
+    },
+    "C1-SD DONS": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "C3-NORCAL A": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "G1-NORTH IRVINE A": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "G3-DAVIS": {
+      "canonical": "davis-a",
+      "reason": "alias_lookup"
+    },
+    "A2-VANGUARD A": {
+      "canonical": "vanguard-a",
+      "reason": "alias_lookup"
+    },
+    "E2-STANFORD A": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "D2-MISSION A": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "H2-CCU A": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "B2-NEWPORT BEACH A": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "F2-SOUTH COAST RED": {
+      "canonical": "south-coast-a",
+      "reason": "alias_lookup"
+    },
+    "C2-OVAC": {
+      "canonical": "ovac-a",
+      "reason": "alias_lookup"
+    },
+    "G2-SOCAL": {
+      "canonical": "socal-a",
+      "reason": "alias_lookup"
+    },
+    "3rdA-VANGUARD A": {
+      "canonical": "3rda-vanguard-a",
+      "reason": "alias_lookup"
+    },
+    "1stH-CCU A": {
+      "canonical": "1sth-ccu-a",
+      "reason": "alias_lookup"
+    },
+    "K1(2ndE)-STANFORD A": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "K4(2ndH)-CDM": {
+      "canonical": "cdm-a",
+      "reason": "alias_lookup"
+    },
+    "3rdD-SAN DIEGO SHORES": {
+      "canonical": "3rdd-san-diego-shores-a",
+      "reason": "alias_lookup"
+    },
+    "1stE-908": {
+      "canonical": "1ste-908-a",
+      "reason": "alias_lookup"
+    },
+    "K2(2ndF)-SOUTH COAST RED": {
+      "canonical": "south-coast-a",
+      "reason": "alias_lookup"
+    },
+    "K3(2ndG)-DAVIS": {
+      "canonical": "davis-a",
+      "reason": "alias_lookup"
+    },
+    "3rdB-LAMORINDA": {
+      "canonical": "3rdb-lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "1stG-NORTH IRVINE A": {
+      "canonical": "1stg-north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "M1(3rdE)-SAN CLEMENTE": {
+      "canonical": "san-clemente-a",
+      "reason": "alias_lookup"
+    },
+    "M4(3rdH)-PEGASUS": {
+      "canonical": "pegasus-a",
+      "reason": "alias_lookup"
+    },
+    "3rdC-OVAC": {
+      "canonical": "3rdc-ovac-a",
+      "reason": "alias_lookup"
+    },
+    "1stF-COMMERCE": {
+      "canonical": "1stf-commerce-a",
+      "reason": "alias_lookup"
+    },
+    "M2(3rdF)-DIABLO ALLIANCE A": {
+      "canonical": "diablo-alliance-a",
+      "reason": "alias_lookup"
+    },
+    "M3(3rdG)-SOCAL": {
+      "canonical": "socal-a",
+      "reason": "alias_lookup"
+    },
+    "2ndB-NEWPORT BEACH A": {
+      "canonical": "2ndb-newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "W#Cross1-CCU A": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "2ndC-SD DONS": {
+      "canonical": "2ndc-sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "W#Cross4-908": {
+      "canonical": "908-a",
+      "reason": "alias_lookup"
+    },
+    "2ndA-PATRIOT A": {
+      "canonical": "2nda-patriot-a",
+      "reason": "alias_lookup"
+    },
+    "W#Cross2-LAMORINDA": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "2ndD-LA PREMIER": {
+      "canonical": "2ndd-la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "W#Cross3-OVAC": {
+      "canonical": "ovac-a",
+      "reason": "alias_lookup"
+    },
+    "1stD-MISSION A": {
+      "canonical": "1std-mission-a",
+      "reason": "alias_lookup"
+    },
+    "W#Playin13-NEWPORT BEACH A": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "J1(L#Cross1)-VANGUARD A": {
+      "canonical": "vanguard-a",
+      "reason": "alias_lookup"
+    },
+    "J4(L#Cross4)-SAN DIEGO SHORES": {
+      "canonical": "san-diego-shores-a",
+      "reason": "alias_lookup"
+    },
+    "1stA-CIU": {
+      "canonical": "1sta-ciu-a",
+      "reason": "alias_lookup"
+    },
+    "W#Playin2-SD DONS": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "J2(L#Cross2)-NORTH IRVINE A": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "J3(L#Cross3)-COMMERCE": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "1stC-NORCAL A": {
+      "canonical": "1stc-norcal-a",
+      "reason": "alias_lookup"
+    },
+    "W#Playin4-PATRIOT A": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "1stB-LA JOLLA UNITED A": {
+      "canonical": "1stb-la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "W#Playin1-LA PREMIER": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "W#Qtr2-SD DONS": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "W#Qtr1-MISSION A": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "N1(L#Playin3)-CCU A": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "N4(L#Playin2)-908": {
+      "canonical": "908-a",
+      "reason": "alias_lookup"
+    },
+    "W#Qtr4-LA JOLLA UNITED A": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "W#Qtr3-NORCAL A": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "W#J1/J4-SAN DIEGO SHORES": {
+      "canonical": "san-diego-shores-a",
+      "reason": "alias_lookup"
+    },
+    "W#J2/J3-COMMERCE": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "N2(L#Playin4)-LAMORINDA": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "N3(L#Playin1)-OVAC": {
+      "canonical": "ovac-a",
+      "reason": "alias_lookup"
+    },
+    "L#J1/J4-VANGUARD A": {
+      "canonical": "vanguard-a",
+      "reason": "alias_lookup"
+    },
+    "L#J2/J3-NORTH IRVINE A": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "P1(L#Qtr4)-LA PREMIER": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "P4(L#Qtr3)-PATRIOT A": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "P2(L#Qtr2)-CIU": {
+      "canonical": "ciu-a",
+      "reason": "alias_lookup"
+    },
+    "P3(L#Qtr1)-NEWPORT BEACH A": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "L#Semi1-SD DONS": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "L#Semi2-NORCAL A": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "W#Semi1-MISSION A": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "W#Semi2-LA JOLLA UNITED A": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "W#N1/N4-908": {
+      "canonical": "908-a",
+      "reason": "alias_lookup"
+    },
+    "W#N2/N3-OVAC": {
+      "canonical": "ovac-a",
+      "reason": "alias_lookup"
+    },
+    "L#N1/N4-CCU A": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "L#N2/N3-LAMORINDA": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "W#P1/P4-LA PREMIER": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "W#P2/P3-CIU": {
+      "canonical": "ciu-a",
+      "reason": "alias_lookup"
+    },
+    "L#P1/P4-PATRIOT A": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "L#P2/P3-NEWPORT BEACH A": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "A1-MISSION B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "A3-DEVILS GATE": {
+      "canonical": "devils-gate-a",
+      "reason": "alias_lookup"
+    },
+    "B1-RANCHO TSUNAMI": {
+      "canonical": "rancho-tsunami-a",
+      "reason": "alias_lookup"
+    },
+    "B3-STANFORD B": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "D1-PRIDE": {
+      "canonical": "pride-a",
+      "reason": "alias_lookup"
+    },
+    "D3-AMERICAN RIVER A": {
+      "canonical": "american-river-a",
+      "reason": "alias_lookup"
+    },
+    "C1-SHORE AQUATICS": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "C3-SAN JOSE EXPRESS": {
+      "canonical": "sj-express-a",
+      "reason": "alias_lookup"
+    },
+    "E1-TEMPLE CITY": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "E3-SAN FRANCISCO": {
+      "canonical": "san-francisco-a",
+      "reason": "alias_lookup"
+    },
+    "F1-PATRIOT B": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "F3-CLOVIS RED": {
+      "canonical": "clovis-red",
+      "reason": "alias_lookup"
+    },
+    "H1-SANTA BARBARA": {
+      "canonical": "santa-barbara-a",
+      "reason": "alias_lookup"
+    },
+    "H3-KINGSBURG": {
+      "canonical": "kingsburg-a",
+      "reason": "alias_lookup"
+    },
+    "G1-LA JOLLA UNITED B": {
+      "canonical": "la-jolla-united-b",
+      "reason": "alias_lookup"
+    },
+    "G3-NORTHWEST": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "A2-TROJAN": {
+      "canonical": "trojan-a",
+      "reason": "alias_lookup"
+    },
+    "B2-ROSE BOWL": {
+      "canonical": "rose-bowl-a",
+      "reason": "alias_lookup"
+    },
+    "D2-NEWPORT BEACH B": {
+      "canonical": "newport-beach-b",
+      "reason": "alias_lookup"
+    },
+    "C2-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "F2-FOOTHILL CLUB": {
+      "canonical": "foothill-a",
+      "reason": "alias_lookup"
+    },
+    "H2-CCU B": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "G2-680 A": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "J4(1stD)-PRIDE": {
+      "canonical": "pride-a",
+      "reason": "alias_lookup"
+    },
+    "J5(1stE)-TEMPLE CITY": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "J1(1stA)-DEVILS GATE": {
+      "canonical": "devils-gate-a",
+      "reason": "alias_lookup"
+    },
+    "J8(1stH)-CCU B": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "K8(2ndH)-SANTA BARBARA": {
+      "canonical": "santa-barbara-a",
+      "reason": "alias_lookup"
+    },
+    "K1(2ndA)-MISSION B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "J2(1stB)-RANCHO TSUNAMI": {
+      "canonical": "rancho-tsunami-a",
+      "reason": "alias_lookup"
+    },
+    "J7(1stG)-NORTHWEST": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "K6(2ndF)-CLOVIS RED": {
+      "canonical": "clovis-red",
+      "reason": "alias_lookup"
+    },
+    "K3(2ndC)-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "J3(1stC)-SHORE AQUATICS": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "J6(1stF)-FOOTHILL CLUB": {
+      "canonical": "foothill-a",
+      "reason": "alias_lookup"
+    },
+    "K7(2ndG)-LA JOLLA UNITED B": {
+      "canonical": "la-jolla-united-b",
+      "reason": "alias_lookup"
+    },
+    "K2(2ndB)-STANFORD B": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "M1(3rdA)-TROJAN": {
+      "canonical": "trojan-a",
+      "reason": "alias_lookup"
+    },
+    "M8(3rdH)-KINGSBURG": {
+      "canonical": "kingsburg-a",
+      "reason": "alias_lookup"
+    },
+    "M3(3rdC)-SAN JOSE EXPRESS": {
+      "canonical": "sj-express-a",
+      "reason": "alias_lookup"
+    },
+    "M6(3rdF)-PATRIOT B": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "M4(3rdD)-AMERICAN RIVER A": {
+      "canonical": "american-river-a",
+      "reason": "alias_lookup"
+    },
+    "M5(3rdE)-SAN FRANCISCO": {
+      "canonical": "san-francisco-a",
+      "reason": "alias_lookup"
+    },
+    "M2(3rdB)-ROSE BOWL": {
+      "canonical": "rose-bowl-a",
+      "reason": "alias_lookup"
+    },
+    "M7(3rdG)-680 A": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "L#J4/J5-TEMPLE CITY": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "L#J1/J8-CCU B": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "L#K5/K4-NEWPORT BEACH B": {
+      "canonical": "newport-beach-b",
+      "reason": "alias_lookup"
+    },
+    "L#K8/K1-SANTA BARBARA": {
+      "canonical": "santa-barbara-a",
+      "reason": "alias_lookup"
+    },
+    "W#J1/J8-DEVILS GATE": {
+      "canonical": "devils-gate-a",
+      "reason": "alias_lookup"
+    },
+    "W#J4/J5-PRIDE": {
+      "canonical": "pride-a",
+      "reason": "alias_lookup"
+    },
+    "L#J3/J6-FOOTHILL CLUB": {
+      "canonical": "foothill-a",
+      "reason": "alias_lookup"
+    },
+    "L#J2/J7-NORTHWEST": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "L#K6/K3-CLOVIS RED": {
+      "canonical": "clovis-red",
+      "reason": "alias_lookup"
+    },
+    "L#K7/K2-STANFORD B": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "W#J2/J7-RANCHO TSUNAMI": {
+      "canonical": "rancho-tsunami-a",
+      "reason": "alias_lookup"
+    },
+    "W#J3/J6-SHORE AQUATICS": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "W#K7/K2-LA JOLLA UNITED B": {
+      "canonical": "la-jolla-united-b",
+      "reason": "alias_lookup"
+    },
+    "W#K6/K3-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "L#M4/M5-SAN FRANCISCO": {
+      "canonical": "san-francisco-a",
+      "reason": "alias_lookup"
+    },
+    "L#M1/M8-TROJAN": {
+      "canonical": "trojan-a",
+      "reason": "alias_lookup"
+    },
+    "L#M3/M6-SAN JOSE EXPRESS": {
+      "canonical": "sj-express-a",
+      "reason": "alias_lookup"
+    },
+    "L#M2/M7-ROSE BOWL": {
+      "canonical": "rose-bowl-a",
+      "reason": "alias_lookup"
+    },
+    "W#M1/M8-KINGSBURG": {
+      "canonical": "kingsburg-a",
+      "reason": "alias_lookup"
+    },
+    "W#M4/M5-AMERICAN RIVER A": {
+      "canonical": "american-river-a",
+      "reason": "alias_lookup"
+    },
+    "W#M2/M7-680 A": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "W#M3/M6-PATRIOT B": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "L#46-SAN JOSE EXPRESS": {
+      "canonical": "sj-express-a",
+      "reason": "alias_lookup"
+    },
+    "L#45-SAN FRANCISCO": {
+      "canonical": "san-francisco-a",
+      "reason": "alias_lookup"
+    },
+    "W#40-MISSION B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "W#44-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "W#45-TROJAN": {
+      "canonical": "trojan-a",
+      "reason": "alias_lookup"
+    },
+    "W#46-ROSE BOWL": {
+      "canonical": "rose-bowl-a",
+      "reason": "alias_lookup"
+    },
+    "L#41-NORTHWEST": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "L#37-CCU B": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "L#48-PATRIOT B": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "L#47-AMERICAN RIVER A": {
+      "canonical": "american-river-a",
+      "reason": "alias_lookup"
+    },
+    "L#43-SHORE AQUATICS": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "L#39-PRIDE": {
+      "canonical": "pride-a",
+      "reason": "alias_lookup"
+    },
+    "W#37-TEMPLE CITY": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "W#41-FOOTHILL CLUB": {
+      "canonical": "foothill-a",
+      "reason": "alias_lookup"
+    },
+    "W#47-KINGSBURG": {
+      "canonical": "kingsburg-a",
+      "reason": "alias_lookup"
+    },
+    "W#48-680 A": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "W#39-DEVILS GATE": {
+      "canonical": "devils-gate-a",
+      "reason": "alias_lookup"
+    },
+    "W#43-RANCHO TSUNAMI": {
+      "canonical": "rancho-tsunami-a",
+      "reason": "alias_lookup"
+    },
+    "L#42-CLOVIS RED": {
+      "canonical": "clovis-red",
+      "reason": "alias_lookup"
+    },
+    "L#38-SANTA BARBARA": {
+      "canonical": "santa-barbara-a",
+      "reason": "alias_lookup"
+    },
+    "W#38-NEWPORT BEACH B": {
+      "canonical": "newport-beach-b",
+      "reason": "alias_lookup"
+    },
+    "W#42-STANFORD B": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "A1-VEGAS RENEGADES": {
+      "canonical": "renegades-a",
+      "reason": "alias_lookup"
+    },
+    "A3-NORCAL B": {
+      "canonical": "norcal-b",
+      "reason": "alias_lookup"
+    },
+    "B1-680 B": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "B3-NORTH IRVINE B": {
+      "canonical": "north-irvine-b",
+      "reason": "alias_lookup"
+    },
+    "D1-LAWPC": {
+      "canonical": "lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "D3-680 C": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "C1-VANGUARD B": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "C3-STANFORD C": {
+      "canonical": "stanford-c",
+      "reason": "alias_lookup"
+    },
+    "E1-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "E3-SUPREME": {
+      "canonical": "supreme-a",
+      "reason": "alias_lookup"
+    },
+    "F1-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "F3-AMERICAN RIVER B": {
+      "canonical": "american-river-b",
+      "reason": "alias_lookup"
+    },
+    "A2-CVU": {
+      "canonical": "cvu-a",
+      "reason": "alias_lookup"
+    },
+    "B2-SKIP": {
+      "canonical": "skip-a",
+      "reason": "alias_lookup"
+    },
+    "D2-DIABLO ALLIANCE B": {
+      "canonical": "diablo-alliance-b",
+      "reason": "alias_lookup"
+    },
+    "C2-SJ FOUNDATION": {
+      "canonical": "sj-foundation-a",
+      "reason": "alias_lookup"
+    },
+    "E2-TITANS": {
+      "canonical": "titans-a",
+      "reason": "alias_lookup"
+    },
+    "F2-SOUTH COAST WHITE": {
+      "canonical": "south-coast-b",
+      "reason": "alias_lookup"
+    },
+    "G1(1stA)-VEGAS RENEGADES": {
+      "canonical": "renegades-a",
+      "reason": "alias_lookup"
+    },
+    "G3(1stE)-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "J1(2ndA)-CVU": {
+      "canonical": "cvu-a",
+      "reason": "alias_lookup"
+    },
+    "J3(2ndE)-TITANS": {
+      "canonical": "titans-a",
+      "reason": "alias_lookup"
+    },
+    "H1(1stB)-SKIP": {
+      "canonical": "skip-a",
+      "reason": "alias_lookup"
+    },
+    "H3(1stF)-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "K1(2ndB)-680 B": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "K3(2ndF)-SOUTH COAST WHITE": {
+      "canonical": "south-coast-b",
+      "reason": "alias_lookup"
+    },
+    "L1(3rdA)-NORCAL B": {
+      "canonical": "norcal-b",
+      "reason": "alias_lookup"
+    },
+    "L3(3rdE)-SUPREME": {
+      "canonical": "supreme-a",
+      "reason": "alias_lookup"
+    },
+    "M1(3rdB)-NORTH IRVINE B": {
+      "canonical": "north-irvine-b",
+      "reason": "alias_lookup"
+    },
+    "M3(3rdF)-AMERICAN RIVER B": {
+      "canonical": "american-river-b",
+      "reason": "alias_lookup"
+    },
+    "G2(1stD)-LAWPC": {
+      "canonical": "lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "J2(2ndD)-DIABLO ALLIANCE B": {
+      "canonical": "diablo-alliance-b",
+      "reason": "alias_lookup"
+    },
+    "H2(1stC)-SJ FOUNDATION": {
+      "canonical": "sj-foundation-a",
+      "reason": "alias_lookup"
+    },
+    "K2(2ndC)-VANGUARD B": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "L2(3rdD)-680 C": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "M2(3rdC)-STANFORD C": {
+      "canonical": "stanford-c",
+      "reason": "alias_lookup"
+    },
+    "1stJ-DIABLO ALLIANCE B": {
+      "canonical": "1stj-diablo-alliance-b",
+      "reason": "alias_lookup"
+    },
+    "1stK-680 B": {
+      "canonical": "1stk-680-b",
+      "reason": "alias_lookup"
+    },
+    "3rdG-ALAMEDA": {
+      "canonical": "3rdg-alameda-a",
+      "reason": "alias_lookup"
+    },
+    "3rdH-LAMORINDA B": {
+      "canonical": "3rdh-lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "2ndJ-TITANS": {
+      "canonical": "2ndj-titans-a",
+      "reason": "alias_lookup"
+    },
+    "2ndK-SOUTH COAST WHITE": {
+      "canonical": "2ndk-south-coast-white-a",
+      "reason": "alias_lookup"
+    },
+    "3rdJ-CVU": {
+      "canonical": "3rdj-cvu-a",
+      "reason": "alias_lookup"
+    },
+    "3rdK-VANGUARD B": {
+      "canonical": "3rdk-vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "2ndG-VEGAS RENEGADES": {
+      "canonical": "2ndg-vegas-renegades-a",
+      "reason": "alias_lookup"
+    },
+    "2ndH-SJ FOUNDATION": {
+      "canonical": "2ndh-sj-foundation-a",
+      "reason": "alias_lookup"
+    },
+    "1stL-NORCAL B": {
+      "canonical": "1stl-norcal-b",
+      "reason": "alias_lookup"
+    },
+    "1stM-STANFORD C": {
+      "canonical": "1stm-stanford-c",
+      "reason": "alias_lookup"
+    },
+    "1stG-LAWPC": {
+      "canonical": "1stg-lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "1stH-SKIP": {
+      "canonical": "1sth-skip-a",
+      "reason": "alias_lookup"
+    },
+    "2ndL-SUPREME": {
+      "canonical": "2ndl-supreme-a",
+      "reason": "alias_lookup"
+    },
+    "2ndM-AMERICAN RIVER B": {
+      "canonical": "2ndm-american-river-b",
+      "reason": "alias_lookup"
+    },
+    "3rdL-680 C": {
+      "canonical": "3rdl-680-c",
+      "reason": "alias_lookup"
+    },
+    "3rdM-NORTH IRVINE B": {
+      "canonical": "3rdm-north-irvine-b",
+      "reason": "alias_lookup"
+    },
+    "A2-BREA OLINDA GOLD": {
+      "canonical": "brea-olinda-gold-a",
+      "reason": "alias_lookup"
+    },
+    "A3-TROJAN GOLD": {
+      "canonical": "trojan-gold-a",
+      "reason": "alias_lookup"
+    },
+    "C2-GOLD COAST": {
+      "canonical": "gold-coast-a",
+      "reason": "alias_lookup"
+    },
+    "C3-PALOS VERDES B": {
+      "canonical": "palos-verdes-b",
+      "reason": "alias_lookup"
+    },
+    "D1-TITANS": {
+      "canonical": "titans-a",
+      "reason": "alias_lookup"
+    },
+    "D4-NEWPORT BEACH SILVER": {
+      "canonical": "newport-beach-b",
+      "reason": "alias_lookup"
+    },
+    "D2-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "D3-ORWP B": {
+      "canonical": "orwp-b",
+      "reason": "alias_lookup"
+    },
+    "L#1-TROJAN GOLD": {
+      "canonical": "trojan-gold-a",
+      "reason": "alias_lookup"
+    },
+    "L#2-SAND CANYON": {
+      "canonical": "sand-canyon-a",
+      "reason": "alias_lookup"
+    },
+    "B2-PASADENA AC ORANGE": {
+      "canonical": "pasadena-ac-orange-a",
+      "reason": "alias_lookup"
+    },
+    "B3-SAN CLEMENTE BLACK": {
+      "canonical": "san-clemente-black-a",
+      "reason": "alias_lookup"
+    },
+    "L#9-TITANS": {
+      "canonical": "titans-a",
+      "reason": "alias_lookup"
+    },
+    "L#10-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "L#3-GOLD COAST": {
+      "canonical": "gold-coast-a",
+      "reason": "alias_lookup"
+    },
+    "L#4-TSM": {
+      "canonical": "tsm-a",
+      "reason": "alias_lookup"
+    },
+    "W#9-NEWPORT BEACH SILVER": {
+      "canonical": "newport-beach-b",
+      "reason": "alias_lookup"
+    },
+    "W#10-ORWP B": {
+      "canonical": "orwp-b",
+      "reason": "alias_lookup"
+    },
+    "L#11-SAN CLEMENTE BLACK": {
+      "canonical": "san-clemente-black-a",
+      "reason": "alias_lookup"
+    },
+    "L#12-RIVERSIDE": {
+      "canonical": "riverside-a",
+      "reason": "alias_lookup"
+    },
+    "3rdA-SAND CANYON": {
+      "canonical": "3rda-sand-canyon-a",
+      "reason": "alias_lookup"
+    },
+    "3rdD-TITANS": {
+      "canonical": "3rdd-titans-a",
+      "reason": "alias_lookup"
+    },
+    "3rdB-SAN CLEMENTE BLACK": {
+      "canonical": "3rdb-san-clemente-black-a",
+      "reason": "alias_lookup"
+    },
+    "3rdC-GOLD COAST": {
+      "canonical": "3rdc-gold-coast-a",
+      "reason": "alias_lookup"
+    },
+    "4thD-SET": {
+      "canonical": "4thd-set-a",
+      "reason": "alias_lookup"
+    },
+    "4thA-TROJAN GOLD": {
+      "canonical": "4tha-trojan-gold-a",
+      "reason": "alias_lookup"
+    },
+    "4thC-TSM": {
+      "canonical": "4thc-tsm-a",
+      "reason": "alias_lookup"
+    },
+    "4thB-RIVERSIDE": {
+      "canonical": "4thb-riverside-a",
+      "reason": "alias_lookup"
+    },
+    "1stA-BREA OLINDA GOLD": {
+      "canonical": "1sta-brea-olinda-gold-a",
+      "reason": "alias_lookup"
+    },
+    "1stD-NEWPORT BEACH SILVER": {
+      "canonical": "1std-newport-beach-silver-a",
+      "reason": "alias_lookup"
+    },
+    "W#21-ORWP B": {
+      "canonical": "orwp-b",
+      "reason": "alias_lookup"
+    },
+    "W#22-PASADENA AC ORANGE": {
+      "canonical": "pasadena-ac-orange-a",
+      "reason": "alias_lookup"
+    },
+    "W#27-SAND CANYON": {
+      "canonical": "sand-canyon-a",
+      "reason": "alias_lookup"
+    },
+    "W#28-GOLD COAST": {
+      "canonical": "gold-coast-a",
+      "reason": "alias_lookup"
+    },
+    "L#27-TITANS": {
+      "canonical": "titans-a",
+      "reason": "alias_lookup"
+    },
+    "L#28-SAN CLEMENTE BLACK": {
+      "canonical": "san-clemente-black-a",
+      "reason": "alias_lookup"
+    },
+    "W#29-TROJAN GOLD": {
+      "canonical": "trojan-gold-a",
+      "reason": "alias_lookup"
+    },
+    "W#30-RIVERSIDE": {
+      "canonical": "riverside-a",
+      "reason": "alias_lookup"
+    },
+    "L#29-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "L#30-TSM": {
+      "canonical": "tsm-a",
+      "reason": "alias_lookup"
+    },
+    "W#19-BREA OLINDA GOLD": {
+      "canonical": "brea-olinda-gold-a",
+      "reason": "alias_lookup"
+    },
+    "W#20-PALOS VERDES B": {
+      "canonical": "palos-verdes-b",
+      "reason": "alias_lookup"
+    },
+    "A2-TRILOGY BLACK": {
+      "canonical": "trilogy-black-a",
+      "reason": "alias_lookup"
+    },
+    "A3-SAN DIEGO DONS 14 BLACK": {
+      "canonical": "san-diego-dons-14-black-a",
+      "reason": "alias_lookup"
+    },
+    "A1-LAWPC": {
+      "canonical": "lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "A4-NORTH IRVINE RED": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "C2-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "C3-NEWPORT BEACH WHITE": {
+      "canonical": "newport-beach-c",
+      "reason": "alias_lookup"
+    },
+    "B2-MISSION 14B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "B3-ORANGE COUNTY WPC B": {
+      "canonical": "orange-county-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "D2-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "D3-CDM B": {
+      "canonical": "cdm-b",
+      "reason": "alias_lookup"
+    },
+    "L#1-TRILOGY BLACK": {
+      "canonical": "trilogy-black-a",
+      "reason": "alias_lookup"
+    },
+    "L#2-LAWPC": {
+      "canonical": "lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "W#1-SAN DIEGO DONS 14 BLACK": {
+      "canonical": "san-diego-dons-14-black-a",
+      "reason": "alias_lookup"
+    },
+    "W#2-NORTH IRVINE RED": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "W#3-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "W#4-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "L#5-PRIDE RED": {
+      "canonical": "pride-red-a",
+      "reason": "alias_lookup"
+    },
+    "L#6-CDM B": {
+      "canonical": "cdm-b",
+      "reason": "alias_lookup"
+    },
+    "W#7-ORANGE COUNTY WPC B": {
+      "canonical": "orange-county-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "W#8-SD ECA": {
+      "canonical": "sd-eca-a",
+      "reason": "alias_lookup"
+    },
+    "4thD-CDM B": {
+      "canonical": "4thd-cdm-b",
+      "reason": "alias_lookup"
+    },
+    "4thA-LAWPC": {
+      "canonical": "4tha-lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "3rdA-TRILOGY BLACK": {
+      "canonical": "3rda-trilogy-black-a",
+      "reason": "alias_lookup"
+    },
+    "3rdD-PRIDE RED": {
+      "canonical": "3rdd-pride-red-a",
+      "reason": "alias_lookup"
+    },
+    "2ndD-MISSION 12A": {
+      "canonical": "2ndd-mission-12a-a",
+      "reason": "alias_lookup"
+    },
+    "2ndA-SAN DIEGO DONS 14 BLACK": {
+      "canonical": "2nda-san-diego-dons-14-black-a",
+      "reason": "alias_lookup"
+    },
+    "2ndC-HIELAND": {
+      "canonical": "2ndc-hieland-a",
+      "reason": "alias_lookup"
+    },
+    "2ndB-SD ECA": {
+      "canonical": "2ndb-sd-eca-a",
+      "reason": "alias_lookup"
+    },
+    "1stA-NORTH IRVINE RED": {
+      "canonical": "1sta-north-irvine-red-a",
+      "reason": "alias_lookup"
+    },
+    "1stD-ALAMEDA": {
+      "canonical": "1std-alameda-a",
+      "reason": "alias_lookup"
+    },
+    "W#29-LAWPC": {
+      "canonical": "lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "W#30-MISSION 14B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "1stB-ORANGE COUNTY WPC B": {
+      "canonical": "1stb-orange-county-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "1stC-VANGUARD SILVER": {
+      "canonical": "1stc-vanguard-silver-a",
+      "reason": "alias_lookup"
+    },
+    "W#21-SAN DIEGO DONS 14 BLACK": {
+      "canonical": "san-diego-dons-14-black-a",
+      "reason": "alias_lookup"
+    },
+    "W#22-SD ECA": {
+      "canonical": "sd-eca-a",
+      "reason": "alias_lookup"
+    },
+    "W#27-PRIDE RED": {
+      "canonical": "pride-red-a",
+      "reason": "alias_lookup"
+    },
+    "W#28-NEWPORT BEACH WHITE": {
+      "canonical": "newport-beach-c",
+      "reason": "alias_lookup"
+    },
+    "L#19-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "L#20-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "W#19-NORTH IRVINE RED": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "W#20-ORANGE COUNTY WPC B": {
+      "canonical": "orange-county-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "C1-SAN DIEGO DONS": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "C4-DEVILS GATE": {
+      "canonical": "devils-gate-a",
+      "reason": "alias_lookup"
+    },
+    "A1-MISSION A": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "A3-ROUTE 66": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "B1-NEWPORT BEACH BLUE": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "B3-PATRIOT RED": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "C2-VANGUARD BLUE": {
+      "canonical": "vanguard-a",
+      "reason": "alias_lookup"
+    },
+    "A2-ORWP A": {
+      "canonical": "orwp-a",
+      "reason": "alias_lookup"
+    },
+    "B2-TROJAN CARDINAL": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "C3-RANCHO TSUNAMI BLUE": {
+      "canonical": "rancho-tsunami-blue-a",
+      "reason": "alias_lookup"
+    },
+    "2ndA-ORWP A": {
+      "canonical": "2nda-orwp-a",
+      "reason": "alias_lookup"
+    },
+    "3rdB-TROJAN CARDINAL": {
+      "canonical": "3rdb-trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "3rdA-ROUTE 66": {
+      "canonical": "3rda-route-66-a",
+      "reason": "alias_lookup"
+    },
+    "2ndB-PATRIOT RED": {
+      "canonical": "2ndb-patriot-red-a",
+      "reason": "alias_lookup"
+    },
+    "1stA-MISSION A": {
+      "canonical": "1sta-mission-a",
+      "reason": "alias_lookup"
+    },
+    "2ndC-SAN DIEGO DONS": {
+      "canonical": "2ndc-san-diego-dons-a",
+      "reason": "alias_lookup"
+    },
+    "1stB-NEWPORT BEACH BLUE": {
+      "canonical": "1stb-newport-beach-blue-a",
+      "reason": "alias_lookup"
+    },
+    "1stC-VANGUARD BLUE": {
+      "canonical": "1stc-vanguard-blue-a",
+      "reason": "alias_lookup"
+    },
+    "L#13-TROJAN CARDINAL": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "3rdC-RANCHO TSUNAMI BLUE": {
+      "canonical": "3rdc-rancho-tsunami-blue-a",
+      "reason": "alias_lookup"
+    },
+    "L#15-MISSION A": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "L#16-VANGUARD BLUE": {
+      "canonical": "vanguard-a",
+      "reason": "alias_lookup"
+    },
+    "W#15-SAN DIEGO DONS": {
+      "canonical": "sd-dons-a",
+      "reason": "alias_lookup"
+    },
+    "W#16-NEWPORT BEACH BLUE": {
+      "canonical": "newport-beach-a",
+      "reason": "alias_lookup"
+    },
+    "W#13-ORWP A": {
+      "canonical": "orwp-a",
+      "reason": "alias_lookup"
+    },
+    "W#14-PATRIOT RED": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "L#14-ROUTE 66": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "4thC-DEVILS GATE": {
+      "canonical": "4thc-devils-gate-a",
+      "reason": "alias_lookup"
+    },
+    "A2-SOUTH COUNTY AQUATICS": {
+      "canonical": "south-county-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "A5-OHANA": {
+      "canonical": "ohana-a",
+      "reason": "alias_lookup"
+    },
+    "A1-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "A3-PASADENA AC ORANGE": {
+      "canonical": "pasadena-ac-orange-a",
+      "reason": "alias_lookup"
+    },
+    "A4-SFV": {
+      "canonical": "sfv-a",
+      "reason": "alias_lookup"
+    },
+    "C2-PEAK POLO BOLTZ pt": {
+      "canonical": "peak-polo-boltz-pt-a",
+      "reason": "alias_lookup"
+    },
+    "C3-SOUTH VALLEY": {
+      "canonical": "south-valley-a",
+      "reason": "alias_lookup"
+    },
+    "A1-SAND CANYON BLACK pt": {
+      "canonical": "sand-canyon-black-pt-a",
+      "reason": "alias_lookup"
+    },
+    "A3-TSM B": {
+      "canonical": "tsm-b",
+      "reason": "alias_lookup"
+    },
+    "B1-PEAK POLO LIGHTNING pt": {
+      "canonical": "peak-polo-lightning-pt-a",
+      "reason": "alias_lookup"
+    },
+    "B4-SAND CANYON RED": {
+      "canonical": "sand-canyon-red-a",
+      "reason": "alias_lookup"
+    },
+    "B2-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "B3-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "A2-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "L#C1/C4-ROUTE 66": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "L#C2/C3-SOUTH VALLEY": {
+      "canonical": "south-valley-a",
+      "reason": "alias_lookup"
+    },
+    "L#B1/B4-SAND CANYON RED": {
+      "canonical": "sand-canyon-red-a",
+      "reason": "alias_lookup"
+    },
+    "L#B2/B3-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "W#B1/B4-PEAK POLO LIGHTNING pt": {
+      "canonical": "peak-polo-lightning-pt-a",
+      "reason": "alias_lookup"
+    },
+    "W#B2/B3-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "F1(3rdA)-TSM B": {
+      "canonical": "tsm-b",
+      "reason": "alias_lookup"
+    },
+    "F2(3rdB)-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "F3(3rdC)-SOUTH VALLEY": {
+      "canonical": "south-valley-a",
+      "reason": "alias_lookup"
+    },
+    "F5(4thB)-SAND CANYON RED": {
+      "canonical": "sand-canyon-red-a",
+      "reason": "alias_lookup"
+    },
+    "D1(1stA)-SAND CANYON BLACK pt": {
+      "canonical": "sand-canyon-black-pt-a",
+      "reason": "alias_lookup"
+    },
+    "D3(1stC)-PEAK POLO BOLTZ pt": {
+      "canonical": "peak-polo-boltz-pt-a",
+      "reason": "alias_lookup"
+    },
+    "F4(4thC)-ROUTE 66": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "D2(1stB)-PEAK POLO LIGHTNING pt": {
+      "canonical": "peak-polo-lightning-pt-a",
+      "reason": "alias_lookup"
+    },
+    "E1(2ndA)-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "E2(2ndB)-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "A1 - LA Premier": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "A4 - Rose Bowl Black (B)": {
+      "canonical": "rose-bowl-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "A2 - PV Blue(B)": {
+      "canonical": "pv-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "A3 - Foothill Red(A)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "B1 - PV Black(A)": {
+      "canonical": "pv-black-a",
+      "reason": "alias_lookup"
+    },
+    "B4 - Trojan Gold (B)": {
+      "canonical": "trojan-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "B2 - 908 Blue(B)": {
+      "canonical": "908-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "B3 - Rose Bowl Red(A)": {
+      "canonical": "rose-bowl-red-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #2 - PV Blue (B)": {
+      "canonical": "pv-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Lose #1 - Rose Bowl Black (B)": {
+      "canonical": "rose-bowl-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #1 - LA Premier": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "Win #2 - Foothill Red (A)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "Lose #4 - 908 Blue (B)": {
+      "canonical": "908-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Lose #3 - Trojan Gold (B)": {
+      "canonical": "trojan-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #3 - PV Black (A)": {
+      "canonical": "pv-black-a",
+      "reason": "alias_lookup"
+    },
+    "Win #4 - Rose Bowl Red (A)": {
+      "canonical": "rose-bowl-red-a",
+      "reason": "alias_lookup"
+    },
+    "C1 - CIU Gold(A)": {
+      "canonical": "ciu-gold-a",
+      "reason": "alias_lookup"
+    },
+    "C4 - Foothill Black(B)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "C2 - Trojan Cardinal(A)": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "C3 - Titans Gold": {
+      "canonical": "titans-gold-a",
+      "reason": "alias_lookup"
+    },
+    "D1 - 908 Yellow(A)": {
+      "canonical": "908-yellow-a",
+      "reason": "alias_lookup"
+    },
+    "D4 - ORWP Red (B)": {
+      "canonical": "orwp-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "D2 - Route 66 14U Boys": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "D3 - South Coast White(B)": {
+      "canonical": "south-coast-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "Lose #10 - Titans Gold": {
+      "canonical": "titans-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #9 - Foothill Black(B)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "Win #9 - CIU Gold(A)": {
+      "canonical": "ciu-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Win #10 - Trojan Cardinal (A)": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #12 - South Coast White(B)": {
+      "canonical": "south-coast-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "Lose #11 - ORWP Red (B)": {
+      "canonical": "orwp-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #11 - 908 Yellow (A)": {
+      "canonical": "908-yellow-a",
+      "reason": "alias_lookup"
+    },
+    "Win #12 - Route 66 14U Boys": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "E1 - Commerce": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "E4-  Loyola": {
+      "canonical": "loyola-a",
+      "reason": "alias_lookup"
+    },
+    "E2 - Temple City ": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "E3 - CIU Coast ": {
+      "canonical": "ciu-coast-a",
+      "reason": "alias_lookup"
+    },
+    "F2 - SBWPC A": {
+      "canonical": "sbwpc-a",
+      "reason": "alias_lookup"
+    },
+    "F3 - Supreme": {
+      "canonical": "supreme-a",
+      "reason": "alias_lookup"
+    },
+    "F1 - Shore Red": {
+      "canonical": "shore-red-a",
+      "reason": "alias_lookup"
+    },
+    "F4 -  NGEN": {
+      "canonical": "ngen-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #18 - CIU Coast": {
+      "canonical": "ciu-coast-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #17 - Loyola": {
+      "canonical": "loyola-a",
+      "reason": "alias_lookup"
+    },
+    "Win #17 - Commerce": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "Win #18 - Temple City": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #20 - NGEN": {
+      "canonical": "ngen-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #19 - Supreme": {
+      "canonical": "supreme-a",
+      "reason": "alias_lookup"
+    },
+    "Win #19 - SBWPC A": {
+      "canonical": "sbwpc-a",
+      "reason": "alias_lookup"
+    },
+    "Win #20 - Shore Red": {
+      "canonical": "shore-red-a",
+      "reason": "alias_lookup"
+    },
+    "G1 - ORWP 14U Black (A)": {
+      "canonical": "orwp-14u-black-a",
+      "reason": "alias_lookup"
+    },
+    "G4 - PAC": {
+      "canonical": "pac-a",
+      "reason": "alias_lookup"
+    },
+    "G2 - Gate 14U": {
+      "canonical": "gate-14u-a",
+      "reason": "alias_lookup"
+    },
+    "G3 - LA City United ": {
+      "canonical": "la-city-united-a",
+      "reason": "alias_lookup"
+    },
+    "H1 - South Coast Red(A)": {
+      "canonical": "south-coast-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "H4 - Valley United": {
+      "canonical": "valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "H2 -  Pride Black": {
+      "canonical": "pride-black-a",
+      "reason": "alias_lookup"
+    },
+    "H3 - TSM ": {
+      "canonical": "tsm-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #26 - LA City United": {
+      "canonical": "la-city-united-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #25 - PAC": {
+      "canonical": "pac-a",
+      "reason": "alias_lookup"
+    },
+    "Win #25 - ORWP 14U Black (A)": {
+      "canonical": "orwp-14u-black-a",
+      "reason": "alias_lookup"
+    },
+    "Win #26 - Gate 14U": {
+      "canonical": "gate-14u-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #28 - TSM": {
+      "canonical": "tsm-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #27 - Valley United": {
+      "canonical": "valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "Win #27 - South Coast Red (A)": {
+      "canonical": "south-coast-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "Win #28 - Pride Black": {
+      "canonical": "pride-black-a",
+      "reason": "alias_lookup"
+    },
+    "1st in A - LA Premier": {
+      "canonical": "1st-in-a-la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "2nd in B - Rose Bowl Red (A)": {
+      "canonical": "2nd-in-b-rose-bowl-red-a",
+      "reason": "alias_lookup"
+    },
+    "1st in H - South Coast Red (A)": {
+      "canonical": "1st-in-h-south-coast-red-a",
+      "reason": "alias_lookup"
+    },
+    "2nd in G - ORWP 14U Black (A)": {
+      "canonical": "2nd-in-g-orwp-14u-black-a",
+      "reason": "alias_lookup"
+    },
+    "1st in B - PV Black (A)": {
+      "canonical": "1st-in-b-pv-black-a",
+      "reason": "alias_lookup"
+    },
+    "2nd in A - Foothill Red (A)": {
+      "canonical": "2nd-in-a-foothill-red-a",
+      "reason": "alias_lookup"
+    },
+    "1st in G - Gate 14U": {
+      "canonical": "1st-in-g-gate-14u-a",
+      "reason": "alias_lookup"
+    },
+    "2nd in H - Pride Black": {
+      "canonical": "2nd-in-h-pride-black-a",
+      "reason": "alias_lookup"
+    },
+    "Win #33 - LA Premier": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "Win #34 - South Coast Red": {
+      "canonical": "south-coast-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #34 - ORWP 14U Black (A)": {
+      "canonical": "orwp-14u-black-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #33 - Rose Bowl Red (A)": {
+      "canonical": "rose-bowl-red-a",
+      "reason": "alias_lookup"
+    },
+    "Win #35 - PV Black (A)": {
+      "canonical": "pv-black-a",
+      "reason": "alias_lookup"
+    },
+    "Win #36 - Gate 14U": {
+      "canonical": "gate-14u-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #36 - Pride Black": {
+      "canonical": "pride-black-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #35 - Foothill Red (A)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "1st in C - CIU Gold(A)": {
+      "canonical": "1st-in-c-ciu-gold-a",
+      "reason": "alias_lookup"
+    },
+    "2nd in D - Route 66 14U Boys": {
+      "canonical": "2nd-in-d-route-66-a",
+      "reason": "alias_lookup"
+    },
+    "1st in F - SBWPC A": {
+      "canonical": "1st-in-f-sbwpc-a",
+      "reason": "alias_lookup"
+    },
+    "2nd in E - Temple City": {
+      "canonical": "2nd-in-e-temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "1st in D - 908 Yellow (A)": {
+      "canonical": "1st-in-d-908-yellow-a",
+      "reason": "alias_lookup"
+    },
+    "2nd in C - Trojan Cardinal (A)": {
+      "canonical": "2nd-in-c-trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "1st in E  - Commerce": {
+      "canonical": "1st-in-e-commerce-a",
+      "reason": "alias_lookup"
+    },
+    "2nd in F - Shore Red": {
+      "canonical": "2nd-in-f-shore-red-a",
+      "reason": "alias_lookup"
+    },
+    "Win #41 - CIU Gold(A)": {
+      "canonical": "ciu-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Win #42 - SBWPC A": {
+      "canonical": "sbwpc-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #42 - Temple City": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #41 - Route 66 14U Boys": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "Win #43 - 908 Yellow (A)": {
+      "canonical": "908-yellow-a",
+      "reason": "alias_lookup"
+    },
+    "Win #44 - Commerce": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #44 - Shore Red": {
+      "canonical": "shore-red-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #43 - Trojan Cardinal (A)": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "3rd in A - PV Blue (B)": {
+      "canonical": "3rd-in-a-pv-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "4th in B - Trojan Gold (B)": {
+      "canonical": "4th-in-b-trojan-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rd in H - Valley United": {
+      "canonical": "3rd-in-h-valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "4th in G - LA City United": {
+      "canonical": "4th-in-g-la-city-united-a",
+      "reason": "alias_lookup"
+    },
+    "3rd in B - 908 Blue (B)": {
+      "canonical": "3rd-in-b-908-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "4th in A - Rose Bowl Black (B)": {
+      "canonical": "4th-in-a-rose-bowl-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rd in G - PAC": {
+      "canonical": "3rd-in-g-pac-a",
+      "reason": "alias_lookup"
+    },
+    "4th in H - TSM": {
+      "canonical": "4th-in-h-tsm-a",
+      "reason": "alias_lookup"
+    },
+    "Win #49 -  PV Blue (B)": {
+      "canonical": "pv-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #50 - LA City United": {
+      "canonical": "la-city-united-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #50 - Valley United": {
+      "canonical": "valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #49 - Trojan Gold (B)": {
+      "canonical": "trojan-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #51 - 908 Blue (B)": {
+      "canonical": "908-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #52 - PAC": {
+      "canonical": "pac-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #52 - TSM": {
+      "canonical": "tsm-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #51 - Rose Bowl Black (B)": {
+      "canonical": "rose-bowl-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rd in C - Titans Gold": {
+      "canonical": "3rd-in-c-titans-gold-a",
+      "reason": "alias_lookup"
+    },
+    "4th in D - ORWP Red (B)": {
+      "canonical": "4th-in-d-orwp-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rd in F - Supreme": {
+      "canonical": "3rd-in-f-supreme-a",
+      "reason": "alias_lookup"
+    },
+    "4th in E  - Loyola": {
+      "canonical": "4th-in-e-loyola-a",
+      "reason": "alias_lookup"
+    },
+    "3rd in D - South Coast White(B)": {
+      "canonical": "3rd-in-d-south-coast-white-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "4th in C - Foothill Black(B)": {
+      "canonical": "4th-in-c-foothill-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "3rd in E - CIU Coast": {
+      "canonical": "3rd-in-e-ciu-coast-a",
+      "reason": "alias_lookup"
+    },
+    "4th in F - NGEN": {
+      "canonical": "4th-in-f-ngen-a",
+      "reason": "alias_lookup"
+    },
+    "Win #57 - Titans Gold": {
+      "canonical": "titans-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Win #58 - Loyola": {
+      "canonical": "loyola-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #58 - Supreme": {
+      "canonical": "supreme-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #57 - ORWP Red (B)": {
+      "canonical": "orwp-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #59 - South Coast White(B)": {
+      "canonical": "south-coast-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "Win #60 - CIU Coast": {
+      "canonical": "ciu-coast-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #60 - NGEN": {
+      "canonical": "ngen-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #59 - Foothill Black(B)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "Win #53 - PV Blue (B)": {
+      "canonical": "pv-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #63 - South Coast White(B)": {
+      "canonical": "south-coast-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "Lose #46 - Temple City": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #40 - Foothill Red (A)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "Win #37 - LA Premier": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "Win #47 - 908 Yellow (A)": {
+      "canonical": "908-yellow-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #47 - Commerce": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #37 - South Coast Red": {
+      "canonical": "south-coast-a",
+      "reason": "alias_lookup"
+    },
+    "Win #40 - Pride Black": {
+      "canonical": "pride-black-a",
+      "reason": "alias_lookup"
+    },
+    "Win #46 - Route 66 14U Boys": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "Win #65 - South Coast White (B)": {
+      "canonical": "south-coast-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "Win #75 - Titans Gold": {
+      "canonical": "titans-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Win #66 - Temple City": {
+      "canonical": "temple-city-a",
+      "reason": "alias_lookup"
+    },
+    "Win #76 - Trojan Cardinal (A)": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "Win #67 - 908 Yellow (A)": {
+      "canonical": "908-yellow-a",
+      "reason": "alias_lookup"
+    },
+    "Win #77 - CIU Gold(A)": {
+      "canonical": "ciu-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Win #68 - South Coast Red": {
+      "canonical": "south-coast-a",
+      "reason": "alias_lookup"
+    },
+    "Win #78 - SBWPC A": {
+      "canonical": "sbwpc-a",
+      "reason": "alias_lookup"
+    },
+    "Win #69 - Route 66 14U Boys": {
+      "canonical": "route-66-a",
+      "reason": "alias_lookup"
+    },
+    "Win #79 - Shore Red": {
+      "canonical": "shore-red-a",
+      "reason": "alias_lookup"
+    },
+    "Win #55 - 908 Blue (B)": {
+      "canonical": "908-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #61 - Titans Gold": {
+      "canonical": "titans-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #48 - Trojan Cardinal (A)": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #38 - Rose Bowl Red (A)": {
+      "canonical": "rose-bowl-red-a",
+      "reason": "alias_lookup"
+    },
+    "Win #39 - PV Black (A)": {
+      "canonical": "pv-black-a",
+      "reason": "alias_lookup"
+    },
+    "Win #45 - CIU Gold(A)": {
+      "canonical": "ciu-gold-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #45 - SBWPC A": {
+      "canonical": "sbwpc-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #39 - Gate 14U": {
+      "canonical": "gate-14u-a",
+      "reason": "alias_lookup"
+    },
+    "Win #38 - ORWP 14U Black (A)": {
+      "canonical": "orwp-14u-black-a",
+      "reason": "alias_lookup"
+    },
+    "Win #48 -  Shore Red": {
+      "canonical": "shore-red-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #75 - 908 Blue (B)": {
+      "canonical": "908-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Lose #65 - PV Blue (B)": {
+      "canonical": "pv-blue-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Lose #76 - Rose Bowl Red (A)": {
+      "canonical": "rose-bowl-red-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #66 - Foothill Red (A)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "Lose #77 - PV Black (A)": {
+      "canonical": "pv-black-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #67 -  LA Premier": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #78 - Gate 14U": {
+      "canonical": "gate-14u-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #68 - Commerce": {
+      "canonical": "commerce-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #79 - ORWP 14U Black (A)": {
+      "canonical": "orwp-14u-black-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #69 - Pride Black": {
+      "canonical": "pride-black-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #62 -  Supreme": {
+      "canonical": "supreme-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #56 - TSM": {
+      "canonical": "tsm-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #64 - NGEN": {
+      "canonical": "ngen-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #54 - Trojan Gold (B)": {
+      "canonical": "trojan-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #56 - Rose Bowl Black (B)": {
+      "canonical": "rose-bowl-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #62 - ORWP Red (B)": {
+      "canonical": "orwp-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #54 - Valley United": {
+      "canonical": "valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "Win #64 - Foothill Black(B)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "Lose #63 - CIU Coast": {
+      "canonical": "ciu-coast-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #53 - LA City United": {
+      "canonical": "la-city-united-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #61 - Loyola": {
+      "canonical": "loyola-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #55 - PAC": {
+      "canonical": "pac-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #86 - NGEN": {
+      "canonical": "ngen-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #85 - TSM": {
+      "canonical": "tsm-a",
+      "reason": "alias_lookup"
+    },
+    "Win #85 - Supreme": {
+      "canonical": "supreme-a",
+      "reason": "alias_lookup"
+    },
+    "Win #86 - Trojan Gold (B)": {
+      "canonical": "trojan-gold-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Lose #88 - Foothill Black(B)": {
+      "canonical": null,
+      "reason": "unresolved"
+    },
+    "Lose #87 -  Rose Bowl Black (B)": {
+      "canonical": "rose-bowl-black-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #87 - ORWP Red (B)": {
+      "canonical": "orwp-red-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "Win #88 - Valley United": {
+      "canonical": "valley-united-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #90 - Loyola": {
+      "canonical": "loyola-a",
+      "reason": "alias_lookup"
+    },
+    "Lose #89 - CIU Coast": {
+      "canonical": "ciu-coast-a",
+      "reason": "alias_lookup"
+    },
+    "Win #89 - LA City United": {
+      "canonical": "la-city-united-a",
+      "reason": "alias_lookup"
+    },
+    "Win #90- PAC": {
+      "canonical": "pac-a",
+      "reason": "alias_lookup"
+    },
+    "A1-NORCAL BLACK": {
+      "canonical": "norcal-b",
+      "reason": "alias_lookup"
+    },
+    "A3-LAMORINDA C": {
+      "canonical": "lamorinda-c",
+      "reason": "alias_lookup"
+    },
+    "B1-DIABLO ALLIANCE A": {
+      "canonical": "diablo-alliance-a",
+      "reason": "alias_lookup"
+    },
+    "B3-NORCAL TEAL": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "C1-LAMORINDA A": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "C3-SANTA CRUZ": {
+      "canonical": "santa-cruz-a",
+      "reason": "alias_lookup"
+    },
+    "A2-DIABLO ALLIANCE B": {
+      "canonical": "diablo-alliance-b",
+      "reason": "alias_lookup"
+    },
+    "C2-SAN JOSE FOUNDATION BLACK": {
+      "canonical": "san-jose-foundation-black-a",
+      "reason": "alias_lookup"
+    },
+    "D1-CC UNITED BLACK": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "D3-MIDPEN": {
+      "canonical": "midpen-a",
+      "reason": "alias_lookup"
+    },
+    "E1-STANFORD RED": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "E3-SAN JOSE FOUNDATION BLUE": {
+      "canonical": "san-jose-foundation-blue-a",
+      "reason": "alias_lookup"
+    },
+    "F1-SHAQ": {
+      "canonical": "shaq-a",
+      "reason": "alias_lookup"
+    },
+    "F3-BURLINGAME": {
+      "canonical": "burlingame-a",
+      "reason": "alias_lookup"
+    },
+    "D2-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "E2-SHARKS": {
+      "canonical": "sharks-a",
+      "reason": "alias_lookup"
+    },
+    "F2-680 BLUE": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "G1-680 RED": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "G4-CC UNITED WHITE": {
+      "canonical": "cc-united-c",
+      "reason": "alias_lookup"
+    },
+    "G2-SAN JOSE EXPRESS BLUE": {
+      "canonical": "san-jose-express-blue-a",
+      "reason": "alias_lookup"
+    },
+    "G3-STANFORD WHITE": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "H1-CC UNITED BLUE": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "H4-TRI-VALLEY TRITONS": {
+      "canonical": "tri-valley-tritons-a",
+      "reason": "alias_lookup"
+    },
+    "H2-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "H3-680 WHITE": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "L#G1/G4-CC UNITED WHITE": {
+      "canonical": "cc-united-c",
+      "reason": "alias_lookup"
+    },
+    "L#G2/G3-STANFORD WHITE": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "W#G1/G4-680 RED": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "W#G2/G3-SAN JOSE EXPRESS BLUE": {
+      "canonical": "san-jose-express-blue-a",
+      "reason": "alias_lookup"
+    },
+    "J2(3rdE)(21)-SAN JOSE FOUNDATION BLUE": {
+      "canonical": "san-jose-foundation-blue-a",
+      "reason": "alias_lookup"
+    },
+    "K2(2ndF)(11)-680 BLUE": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "J1(2ndE)(12)-SHARKS": {
+      "canonical": "sharks-a",
+      "reason": "alias_lookup"
+    },
+    "K1(3rdF)(22)-BURLINGAME": {
+      "canonical": "burlingame-a",
+      "reason": "alias_lookup"
+    },
+    "J6(3rdA)(17)-LAMORINDA C": {
+      "canonical": "lamorinda-c",
+      "reason": "alias_lookup"
+    },
+    "K6(2ndB)(15)-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "N4(W#J4/K4)(13)-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "N5(W#J1/K1)(12)-SHARKS": {
+      "canonical": "sharks-a",
+      "reason": "alias_lookup"
+    },
+    "P3(L#J4/K4)(19)-SANTA CRUZ": {
+      "canonical": "santa-cruz-a",
+      "reason": "alias_lookup"
+    },
+    "P6(L#J1/K1)(22)-BURLINGAME": {
+      "canonical": "burlingame-a",
+      "reason": "alias_lookup"
+    },
+    "T1(W#P1/P8)-680 WHITE": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "T4(W#P4/P5)-SAN JOSE FOUNDATION BLUE": {
+      "canonical": "san-jose-foundation-blue-a",
+      "reason": "alias_lookup"
+    },
+    "J7(2ndG)(10)-SAN JOSE EXPRESS BLUE": {
+      "canonical": "san-jose-express-blue-a",
+      "reason": "alias_lookup"
+    },
+    "K7(3rdH)(24)-680 WHITE": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "J8(3rdG)(23)-CC UNITED WHITE": {
+      "canonical": "cc-united-c",
+      "reason": "alias_lookup"
+    },
+    "K8(2ndH)(9)-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "J5(2ndA)(16)-DIABLO ALLIANCE B": {
+      "canonical": "diablo-alliance-b",
+      "reason": "alias_lookup"
+    },
+    "K5(3rdB)(18)-NORCAL TEAL": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "M1(1stA)(1)-NORCAL BLACK": {
+      "canonical": "norcal-b",
+      "reason": "alias_lookup"
+    },
+    "M8(1stH)(8)-CC UNITED BLUE": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "M2(1stB)(2)-DIABLO ALLIANCE A": {
+      "canonical": "diablo-alliance-a",
+      "reason": "alias_lookup"
+    },
+    "M7(1stG)(7)-680 RED": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "P1(L#J6/K6)(17)-LAMORINDA C": {
+      "canonical": "lamorinda-c",
+      "reason": "alias_lookup"
+    },
+    "P8(L#J7/K7)(24)-680 WHITE": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "P2(L#J5/K5)(18)-NORCAL TEAL": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "P7(L#J8/K8)(23)-CC UNITED WHITE": {
+      "canonical": "cc-united-c",
+      "reason": "alias_lookup"
+    },
+    "N2(W#J6/K6)(15)-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "N7(W#J7/K7)(10)-SAN JOSE EXPRESS BLUE": {
+      "canonical": "san-jose-express-blue-a",
+      "reason": "alias_lookup"
+    },
+    "N1(W#J5/K5)(16)-DIABLO ALLIANCE B": {
+      "canonical": "diablo-alliance-b",
+      "reason": "alias_lookup"
+    },
+    "N8(W#J8/K8)(9)-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "T2(W#P2/P7)-NORCAL TEAL": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "T3(W#P3/P6)-SANTA CRUZ": {
+      "canonical": "santa-cruz-a",
+      "reason": "alias_lookup"
+    },
+    "L#H1/H4-TRI-VALLEY TRITONS": {
+      "canonical": "tri-valley-tritons-a",
+      "reason": "alias_lookup"
+    },
+    "L#H2/H3-680 WHITE": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "W#H1/H4-CC UNITED BLUE": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "W#H2/H3-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "J3(2ndC)(14)-SAN JOSE FOUNDATION BLACK": {
+      "canonical": "san-jose-foundation-black-a",
+      "reason": "alias_lookup"
+    },
+    "K3(3rdD)(20)-MIDPEN": {
+      "canonical": "midpen-a",
+      "reason": "alias_lookup"
+    },
+    "J4(3rdC)(19)-SANTA CRUZ": {
+      "canonical": "santa-cruz-a",
+      "reason": "alias_lookup"
+    },
+    "K4(2ndD)(13)-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "M3(1stC)(3)-LAMORINDA A": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "M6(1stF)(6)-SHAQ": {
+      "canonical": "shaq-a",
+      "reason": "alias_lookup"
+    },
+    "P4(L#J3/K3)(20)-MIDPEN": {
+      "canonical": "midpen-a",
+      "reason": "alias_lookup"
+    },
+    "P5(L#J2/K2)(21)-SAN JOSE FOUNDATION BLUE": {
+      "canonical": "san-jose-foundation-blue-a",
+      "reason": "alias_lookup"
+    },
+    "M4(1stD)(4)-CC UNITED BLACK": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "M5(1stE)(5)-STANFORD RED": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "N3(W#J3/K3)(14)-SAN JOSE FOUNDATION BLACK": {
+      "canonical": "san-jose-foundation-black-a",
+      "reason": "alias_lookup"
+    },
+    "N6(W#J2/K2)(11)-680 BLUE": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "S1(4thG)-STANFORD WHITE": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "S3(L#P4/P5)-MIDPEN": {
+      "canonical": "midpen-a",
+      "reason": "alias_lookup"
+    },
+    "R1(L#P1/P8)-LAMORINDA C": {
+      "canonical": "lamorinda-c",
+      "reason": "alias_lookup"
+    },
+    "R3(L#P3/P6)-BURLINGAME": {
+      "canonical": "burlingame-a",
+      "reason": "alias_lookup"
+    },
+    "S2(4thH)-TRI-VALLEY TRITONS": {
+      "canonical": "tri-valley-tritons-a",
+      "reason": "alias_lookup"
+    },
+    "L#M1/M8-CC UNITED BLUE": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "L#M4/M5-CC UNITED BLACK": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "L#M2/M7-680 RED": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "L#M3/M6-SHAQ": {
+      "canonical": "shaq-a",
+      "reason": "alias_lookup"
+    },
+    "W#M1/M8-NORCAL BLACK": {
+      "canonical": "norcal-b",
+      "reason": "alias_lookup"
+    },
+    "W#M4/M5-STANFORD RED": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "W#M2/M7-DIABLO ALLIANCE A": {
+      "canonical": "diablo-alliance-a",
+      "reason": "alias_lookup"
+    },
+    "W#M3/M6-LAMORINDA A": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "L#60-SHAQ": {
+      "canonical": "shaq-a",
+      "reason": "alias_lookup"
+    },
+    "L#57-CC UNITED BLUE": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "W#57-CC UNITED BLACK": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "W#60-680 RED": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "L#66-LAMORINDA A": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "L#63-STANFORD RED": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "W#63-NORCAL BLACK": {
+      "canonical": "norcal-b",
+      "reason": "alias_lookup"
+    },
+    "W#66-DIABLO ALLIANCE A": {
+      "canonical": "diablo-alliance-a",
+      "reason": "alias_lookup"
+    },
+    "R2(L#P2/P7)-CC UNITED WHITE": {
+      "canonical": "cc-united-c",
+      "reason": "alias_lookup"
+    },
+    "1stR-CC UNITED WHITE": {
+      "canonical": "1str-cc-united-white-a",
+      "reason": "alias_lookup"
+    },
+    "1stS-STANFORD WHITE": {
+      "canonical": "1sts-stanford-white-a",
+      "reason": "alias_lookup"
+    },
+    "2ndR-BURLINGAME": {
+      "canonical": "2ndr-burlingame-a",
+      "reason": "alias_lookup"
+    },
+    "2ndS-MIDPEN": {
+      "canonical": "2nds-midpen-a",
+      "reason": "alias_lookup"
+    },
+    "3rdR-LAMORINDA C": {
+      "canonical": "3rdr-lamorinda-c",
+      "reason": "alias_lookup"
+    },
+    "3rdS-TRI-VALLEY TRITONS": {
+      "canonical": "3rds-tri-valley-tritons-a",
+      "reason": "alias_lookup"
+    },
+    "L#N4/N5-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "L#N1/N8-DIABLO ALLIANCE B": {
+      "canonical": "diablo-alliance-b",
+      "reason": "alias_lookup"
+    },
+    "L#N3/N6-SAN JOSE FOUNDATION BLACK": {
+      "canonical": "san-jose-foundation-black-a",
+      "reason": "alias_lookup"
+    },
+    "L#N2/N7-SAN JOSE EXPRESS BLUE": {
+      "canonical": "san-jose-express-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#N1/N8-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "W#N4/N5-SHARKS": {
+      "canonical": "sharks-a",
+      "reason": "alias_lookup"
+    },
+    "W#N2/N7-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "W#N3/N6-680 BLUE": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "W#59-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "W#62-SAN JOSE EXPRESS BLUE": {
+      "canonical": "san-jose-express-blue-a",
+      "reason": "alias_lookup"
+    },
+    "L#62-SAN JOSE FOUNDATION BLACK": {
+      "canonical": "san-jose-foundation-black-a",
+      "reason": "alias_lookup"
+    },
+    "L#59-DIABLO ALLIANCE B": {
+      "canonical": "diablo-alliance-b",
+      "reason": "alias_lookup"
+    },
+    "W#65-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "W#68-ALAMEDA": {
+      "canonical": "alameda-a",
+      "reason": "alias_lookup"
+    },
+    "L#68-680 BLUE": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "L#65-SHARKS": {
+      "canonical": "sharks-a",
+      "reason": "alias_lookup"
+    },
+    "A1-POWAY VALLEY BLACK": {
+      "canonical": "poway-valley-black-a",
+      "reason": "alias_lookup"
+    },
+    "A3-SAN CLEMENTE BLACK": {
+      "canonical": "san-clemente-black-a",
+      "reason": "alias_lookup"
+    },
+    "B1-SAN FRANCISCO": {
+      "canonical": "san-francisco-a",
+      "reason": "alias_lookup"
+    },
+    "B3-SOUTH COAST BLUE (C)": {
+      "canonical": "south-coast-blue-c",
+      "reason": "canonical_shape_known_club"
+    },
+    "C1-PASADENA AC": {
+      "canonical": "pasadena-ac-a",
+      "reason": "alias_lookup"
+    },
+    "C3-ORANGE COUNTY WPC RED": {
+      "canonical": "ocwpc-c",
+      "reason": "alias_lookup"
+    },
+    "A2-LOYOLA WPC": {
+      "canonical": "loyola-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "B2-TROJAN GOLD": {
+      "canonical": "trojan-gold-a",
+      "reason": "alias_lookup"
+    },
+    "C2-TRITON GOLD": {
+      "canonical": "triton-gold-a",
+      "reason": "alias_lookup"
+    },
+    "D1-SAND CANYON": {
+      "canonical": "sand-canyon-a",
+      "reason": "alias_lookup"
+    },
+    "D3-PALOS VERDES B": {
+      "canonical": "palos-verdes-b",
+      "reason": "alias_lookup"
+    },
+    "E1-GOLD COAST": {
+      "canonical": "gold-coast-a",
+      "reason": "alias_lookup"
+    },
+    "E3-CC UNITED WHITE": {
+      "canonical": "cc-united-c",
+      "reason": "alias_lookup"
+    },
+    "F1-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "F3-680 WHITE": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "D2-AMERICAN RIVER GOLD": {
+      "canonical": "american-river-b",
+      "reason": "alias_lookup"
+    },
+    "E2-HONOLULU GREEN": {
+      "canonical": "honolulu-green-a",
+      "reason": "alias_lookup"
+    },
+    "F2-NADO": {
+      "canonical": "nado-a",
+      "reason": "alias_lookup"
+    },
+    "G1(1stA)-POWAY VALLEY BLACK": {
+      "canonical": "poway-valley-black-a",
+      "reason": "alias_lookup"
+    },
+    "G2(1stB)-SAN FRANCISCO": {
+      "canonical": "san-francisco-a",
+      "reason": "alias_lookup"
+    },
+    "H1(1stD)-SAND CANYON": {
+      "canonical": "sand-canyon-a",
+      "reason": "alias_lookup"
+    },
+    "H2(1stE)-GOLD COAST": {
+      "canonical": "gold-coast-a",
+      "reason": "alias_lookup"
+    },
+    "J1(2ndF)-NADO": {
+      "canonical": "nado-a",
+      "reason": "alias_lookup"
+    },
+    "J2(2ndE)-HONOLULU GREEN": {
+      "canonical": "honolulu-green-a",
+      "reason": "alias_lookup"
+    },
+    "G3(1stC)-PASADENA AC": {
+      "canonical": "pasadena-ac-a",
+      "reason": "alias_lookup"
+    },
+    "H3(1stF)-680 WHITE": {
+      "canonical": "680-c",
+      "reason": "alias_lookup"
+    },
+    "J3(2ndD)-PALOS VERDES B": {
+      "canonical": "palos-verdes-b",
+      "reason": "alias_lookup"
+    },
+    "2ndG-PASADENA AC": {
+      "canonical": "2ndg-pasadena-ac-a",
+      "reason": "alias_lookup"
+    },
+    "2ndH-SAND CANYON": {
+      "canonical": "2ndh-sand-canyon-a",
+      "reason": "alias_lookup"
+    },
+    "1stG-POWAY VALLEY BLACK": {
+      "canonical": "1stg-poway-valley-black-a",
+      "reason": "alias_lookup"
+    },
+    "1stH-GOLD COAST": {
+      "canonical": "1sth-gold-coast-a",
+      "reason": "alias_lookup"
+    },
+    "K1(2ndC)-ORANGE COUNTY WPC RED": {
+      "canonical": "ocwpc-c",
+      "reason": "alias_lookup"
+    },
+    "K3(2ndA)-LOYOLA WPC": {
+      "canonical": "loyola-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "M1(3rdA)-SAN CLEMENTE BLACK": {
+      "canonical": "san-clemente-black-a",
+      "reason": "alias_lookup"
+    },
+    "M3(3rdC)-TRITON GOLD": {
+      "canonical": "triton-gold-a",
+      "reason": "alias_lookup"
+    },
+    "N1(3rdD)-AMERICAN RIVER GOLD": {
+      "canonical": "american-river-b",
+      "reason": "alias_lookup"
+    },
+    "N3(3rdF)-SET": {
+      "canonical": "set-a",
+      "reason": "alias_lookup"
+    },
+    "K2(2ndB)-SOUTH COAST BLUE (C)": {
+      "canonical": "south-coast-blue-c",
+      "reason": "canonical_shape_known_club"
+    },
+    "M2(3rdB)-TROJAN GOLD": {
+      "canonical": "trojan-gold-a",
+      "reason": "alias_lookup"
+    },
+    "N2(3rdE)-CC UNITED WHITE": {
+      "canonical": "cc-united-c",
+      "reason": "alias_lookup"
+    },
+    "2": {
+      "canonical": "2-a",
+      "reason": "alias_lookup"
+    },
+    "6": {
+      "canonical": "6-a",
+      "reason": "alias_lookup"
+    },
+    "15": {
+      "canonical": "15-a",
+      "reason": "alias_lookup"
+    },
+    "11": {
+      "canonical": "11-a",
+      "reason": "alias_lookup"
+    },
+    "A1(1)-HONOLULU BLUE": {
+      "canonical": "honolulu-blue-a",
+      "reason": "alias_lookup"
+    },
+    "A2(16)-SHORE AQUATICS": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "B1(4)-DAVIS": {
+      "canonical": "davis-a",
+      "reason": "alias_lookup"
+    },
+    "B3(20)-LA JOLLA UNITED GOLD": {
+      "canonical": "la-jolla-united-gold-a",
+      "reason": "alias_lookup"
+    },
+    "C1(5)-LAWPC": {
+      "canonical": "lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "C3(21)-STANFORD 13": {
+      "canonical": "stanford-13-a",
+      "reason": "alias_lookup"
+    },
+    "8-SAN CLEMENTE RED": {
+      "canonical": "8-san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "25-AMERICAN RIVER BLUE": {
+      "canonical": "25-american-river-blue-a",
+      "reason": "alias_lookup"
+    },
+    "9-STANFORD BLACK": {
+      "canonical": "9-stanford-black-a",
+      "reason": "alias_lookup"
+    },
+    "24-PRIDE RED": {
+      "canonical": "24-pride-red-a",
+      "reason": "alias_lookup"
+    },
+    "A3(17)-NORTH IRVINE RED": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "B2(13)-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "C2(12)-NORTHWEST": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "L#2-AMERICAN RIVER BLUE": {
+      "canonical": "american-river-a",
+      "reason": "alias_lookup"
+    },
+    "L#3-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "W#2-SAN CLEMENTE RED": {
+      "canonical": "san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "W#3-PRIDE RED": {
+      "canonical": "pride-red-a",
+      "reason": "alias_lookup"
+    },
+    "7-HIELAND": {
+      "canonical": "7-hieland-a",
+      "reason": "alias_lookup"
+    },
+    "26-SOUTH COAST WHITE (B)": {
+      "canonical": "26-south-coast-white-b",
+      "reason": "canonical_shape_known_club"
+    },
+    "G1(6)-SD ECA": {
+      "canonical": "sd-eca-a",
+      "reason": "alias_lookup"
+    },
+    "G3(22)-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "E1(2)-FOOTHILL RED": {
+      "canonical": "foothill-b",
+      "reason": "alias_lookup"
+    },
+    "E3(18)-CC UNITED BLUE": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "F2(14)-BOA": {
+      "canonical": "boa-a",
+      "reason": "alias_lookup"
+    },
+    "F3(19)-680 BLUE": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "L#15-SOUTH COAST WHITE (B)": {
+      "canonical": "south-coast-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "L#16-PATRIOT RED": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "W#15-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "W#16-SHAQ WHITE": {
+      "canonical": "shaq-white-a",
+      "reason": "alias_lookup"
+    },
+    "G2(11)-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "E2(15)-MISSION WPC B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "F1(3)-CT PREMIER": {
+      "canonical": "ct-premier-a",
+      "reason": "alias_lookup"
+    },
+    "J1(1stA)-SHORE AQUATICS": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "J4(1stD)-SAN CLEMENTE RED": {
+      "canonical": "san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "J2(1stB)-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "J3(1stC)-NORTHWEST": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "K1(1stE)-MISSION WPC B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "K4(1stH)-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "K2(1stF)-680 BLUE": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "K3(1stG)-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "W#27-SHORE AQUATICS": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "W#28-NORTHWEST": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "W#29-MISSION WPC B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "W#30-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "L#27-SAN CLEMENTE RED": {
+      "canonical": "san-clemente-red-a",
+      "reason": "alias_lookup"
+    },
+    "L#28-BACK BAY": {
+      "canonical": "back-bay-a",
+      "reason": "alias_lookup"
+    },
+    "L#29-HIELAND": {
+      "canonical": "hieland-a",
+      "reason": "alias_lookup"
+    },
+    "L#30-680 BLUE": {
+      "canonical": "680-a",
+      "reason": "alias_lookup"
+    },
+    "Q1(2ndJ)-NORTHWEST": {
+      "canonical": "northwest-a",
+      "reason": "alias_lookup"
+    },
+    "Q2(2ndK)-VANGUARD SILVER": {
+      "canonical": "vanguard-b",
+      "reason": "alias_lookup"
+    },
+    "R1(1stJ)-SHORE AQUATICS": {
+      "canonical": "shore-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "R2(1stK)-MISSION WPC B": {
+      "canonical": "mission-wpc-b",
+      "reason": "alias_lookup"
+    },
+    "N1(3rdA)-HONOLULU BLUE": {
+      "canonical": "honolulu-blue-a",
+      "reason": "alias_lookup"
+    },
+    "N3(3rdH)-PATRIOT RED": {
+      "canonical": "patriot-b",
+      "reason": "alias_lookup"
+    },
+    "O1(3rdE)-FOOTHILL RED": {
+      "canonical": "foothill-b",
+      "reason": "alias_lookup"
+    },
+    "O3(3rdD)-AMERICAN RIVER BLUE": {
+      "canonical": "american-river-a",
+      "reason": "alias_lookup"
+    },
+    "P1(3rdF)-BOA": {
+      "canonical": "boa-a",
+      "reason": "alias_lookup"
+    },
+    "P4(4thH)-SOUTH COAST WHITE (B)": {
+      "canonical": "south-coast-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "P2(3rdB)-LA JOLLA UNITED GOLD": {
+      "canonical": "la-jolla-united-gold-a",
+      "reason": "alias_lookup"
+    },
+    "P3(4thD)-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "N2(3rdG)-SD ECA": {
+      "canonical": "sd-eca-a",
+      "reason": "alias_lookup"
+    },
+    "O2(3rdC)-STANFORD 13": {
+      "canonical": "stanford-13-a",
+      "reason": "alias_lookup"
+    },
+    "W#43-SOUTH COAST WHITE (B)": {
+      "canonical": "south-coast-b",
+      "reason": "club_pattern_level_rule"
+    },
+    "W#44-LA JOLLA UNITED GOLD": {
+      "canonical": "la-jolla-united-gold-a",
+      "reason": "alias_lookup"
+    },
+    "L#43-BOA": {
+      "canonical": "boa-a",
+      "reason": "alias_lookup"
+    },
+    "L#44-STANFORD BLACK": {
+      "canonical": "stanford-a",
+      "reason": "alias_lookup"
+    },
+    "L1(2ndA)-NORTH IRVINE RED": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "L4(2ndD)-PRIDE RED": {
+      "canonical": "pride-red-a",
+      "reason": "alias_lookup"
+    },
+    "L2(2ndB)-DAVIS": {
+      "canonical": "davis-a",
+      "reason": "alias_lookup"
+    },
+    "L3(2ndC)-LAWPC": {
+      "canonical": "lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "M1(2ndE)-CC UNITED BLUE": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "M4(2ndH)-SHAQ WHITE": {
+      "canonical": "shaq-white-a",
+      "reason": "alias_lookup"
+    },
+    "M2(2ndF)-CT PREMIER": {
+      "canonical": "ct-premier-a",
+      "reason": "alias_lookup"
+    },
+    "M3(2ndG)-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "W#31-NORTH IRVINE RED": {
+      "canonical": "north-irvine-a",
+      "reason": "alias_lookup"
+    },
+    "W#32-LAWPC": {
+      "canonical": "lawpc-a",
+      "reason": "alias_lookup"
+    },
+    "L#31-PRIDE RED": {
+      "canonical": "pride-red-a",
+      "reason": "alias_lookup"
+    },
+    "L#32-DAVIS": {
+      "canonical": "davis-a",
+      "reason": "alias_lookup"
+    },
+    "W#33-CC UNITED BLUE": {
+      "canonical": "cc-united-b",
+      "reason": "alias_lookup"
+    },
+    "W#34-LAMORINDA B": {
+      "canonical": "lamorinda-b",
+      "reason": "alias_lookup"
+    },
+    "L#33-SHAQ WHITE": {
+      "canonical": "shaq-white-a",
+      "reason": "alias_lookup"
+    },
+    "L#34-CT PREMIER": {
+      "canonical": "ct-premier-a",
+      "reason": "alias_lookup"
+    },
+    "D1-LA JOLLA UNITED NAVY": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "D3-STANFORD RED": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "B1-NORCAL": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "B3-NORTH IRVINE BLACK": {
+      "canonical": "north-irvine-b",
+      "reason": "alias_lookup"
+    },
+    "A2-680 RED": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "A3-TROJAN CARDINAL": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "6-PATRIOT NAVY": {
+      "canonical": "6-patriot-navy-a",
+      "reason": "alias_lookup"
+    },
+    "19-ROUTE 66 AQUATICS": {
+      "canonical": "19-route-66-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "A1-MISSION WPC A": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "3-CHANNEL ISLANDS UNITED GOLD": {
+      "canonical": "3-channel-islands-united-gold-a",
+      "reason": "alias_lookup"
+    },
+    "20-DEVIL'S GATE": {
+      "canonical": "20-devil-s-gate-a",
+      "reason": "alias_lookup"
+    },
+    "W#7-PATRIOT NAVY": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "W#8-LA PREMIER": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "L#7-ROUTE 66 AQUATICS": {
+      "canonical": "route-66-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "L#8-SHAQ BLUE": {
+      "canonical": "shaq-blue-a",
+      "reason": "alias_lookup"
+    },
+    "L#1-DEVIL'S GATE": {
+      "canonical": "devil-s-gate-a",
+      "reason": "alias_lookup"
+    },
+    "L#2-CC UNITED BLACK": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "J1(1stD)-LA JOLLA UNITED NAVY": {
+      "canonical": "la-jolla-united-a",
+      "reason": "alias_lookup"
+    },
+    "J3(1stF)-PATRIOT NAVY": {
+      "canonical": "patriot-a",
+      "reason": "alias_lookup"
+    },
+    "K1(2ndD)-PRIDE BLACK": {
+      "canonical": "pride-black-a",
+      "reason": "alias_lookup"
+    },
+    "K3(2ndF)-LA PREMIER": {
+      "canonical": "la-premier-a",
+      "reason": "alias_lookup"
+    },
+    "C1-VANGUARD BLUE": {
+      "canonical": "vanguard-a",
+      "reason": "alias_lookup"
+    },
+    "C3-SOUTH COAST RED (A)": {
+      "canonical": "south-coast-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "D2-PRIDE BLACK": {
+      "canonical": "pride-black-a",
+      "reason": "alias_lookup"
+    },
+    "B2-PALOS VERDES A": {
+      "canonical": "palos-verdes-a",
+      "reason": "alias_lookup"
+    },
+    "C2-LAMORINDA A": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "W#1-CHANNEL ISLANDS UNITED GOLD": {
+      "canonical": "channel-islands-united-gold-a",
+      "reason": "alias_lookup"
+    },
+    "W#2-ORANGE COUNTY WPC BLUE": {
+      "canonical": "orange-county-wpc-blue-a",
+      "reason": "alias_lookup"
+    },
+    "H2(2ndB)-NORCAL": {
+      "canonical": "norcal-a",
+      "reason": "alias_lookup"
+    },
+    "H3(2ndC)-SOUTH COAST RED (A)": {
+      "canonical": "south-coast-a",
+      "reason": "club_pattern_level_rule"
+    },
+    "G2(1stB)-PALOS VERDES A": {
+      "canonical": "palos-verdes-a",
+      "reason": "alias_lookup"
+    },
+    "G3(1stC)-VANGUARD BLUE": {
+      "canonical": "vanguard-a",
+      "reason": "alias_lookup"
+    },
+    "H1(2ndA)-TROJAN CARDINAL": {
+      "canonical": "trojan-cardinal-a",
+      "reason": "alias_lookup"
+    },
+    "G1(1stA)-MISSION WPC A": {
+      "canonical": "mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "J2(1stE)-CHANNEL ISLANDS UNITED GOLD": {
+      "canonical": "channel-islands-united-gold-a",
+      "reason": "alias_lookup"
+    },
+    "K2(2ndE)-ORANGE COUNTY WPC BLUE": {
+      "canonical": "orange-county-wpc-blue-a",
+      "reason": "alias_lookup"
+    },
+    "3rdG-PALOS VERDES A": {
+      "canonical": "3rdg-palos-verdes-a",
+      "reason": "alias_lookup"
+    },
+    "3rdJ-CHANNEL ISLANDS UNITED GOLD": {
+      "canonical": "3rdj-channel-islands-united-gold-a",
+      "reason": "alias_lookup"
+    },
+    "2ndG-VANGUARD BLUE": {
+      "canonical": "2ndg-vanguard-blue-a",
+      "reason": "alias_lookup"
+    },
+    "2ndJ-PATRIOT NAVY": {
+      "canonical": "2ndj-patriot-navy-a",
+      "reason": "alias_lookup"
+    },
+    "1stG-MISSION WPC A": {
+      "canonical": "1stg-mission-wpc-a",
+      "reason": "alias_lookup"
+    },
+    "1stJ-LA JOLLA UNITED NAVY": {
+      "canonical": "1stj-la-jolla-united-navy-a",
+      "reason": "alias_lookup"
+    },
+    "L1(3rdD)-STANFORD RED": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "L4(4thF)-ROUTE 66 AQUATICS": {
+      "canonical": "route-66-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "L2(3rdE)-DEVIL'S GATE": {
+      "canonical": "devil-s-gate-a",
+      "reason": "alias_lookup"
+    },
+    "L3(3rdC)-LAMORINDA A": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "I1(3rdA)-680 RED": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "I4(4thE)-CC UNITED BLACK": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "I2(3rdB)-NORTH IRVINE BLACK": {
+      "canonical": "north-irvine-b",
+      "reason": "alias_lookup"
+    },
+    "I3(3rdF)-SHAQ BLUE": {
+      "canonical": "shaq-blue-a",
+      "reason": "alias_lookup"
+    },
+    "W#33-STANFORD RED": {
+      "canonical": "stanford-b",
+      "reason": "alias_lookup"
+    },
+    "W#35-DEVIL'S GATE": {
+      "canonical": "devil-s-gate-a",
+      "reason": "alias_lookup"
+    },
+    "W#36-680 RED": {
+      "canonical": "680-b",
+      "reason": "alias_lookup"
+    },
+    "W#37-NORTH IRVINE BLACK": {
+      "canonical": "north-irvine-b",
+      "reason": "alias_lookup"
+    },
+    "L#33-ROUTE 66 AQUATICS": {
+      "canonical": "route-66-aquatics-a",
+      "reason": "alias_lookup"
+    },
+    "L#35-LAMORINDA A": {
+      "canonical": "lamorinda-a",
+      "reason": "alias_lookup"
+    },
+    "L#36-CC UNITED BLACK": {
+      "canonical": "cc-united-a",
+      "reason": "alias_lookup"
+    },
+    "L#37-SHAQ BLUE": {
+      "canonical": "shaq-blue-a",
+      "reason": "alias_lookup"
+    }
+  }
+}
