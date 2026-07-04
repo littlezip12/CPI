@@ -4,55 +4,163 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CPI Team Page</title>
-  <link rel="stylesheet" href="css/team-v11.css"/>
+  <link rel="stylesheet" href="css/team-premium.css"/>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="./"><span class="brand-mark">CPI</span><span><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span></a>
-    <nav><a href="./">Home</a><a href="rankings-qa.html">Rankings</a></nav>
+    <a class="brand" href="./">
+      <span class="brand-mark">CPI</span>
+      <span>
+        <strong>California Polo Index</strong>
+        <em>Ranked. Respected. Earned.</em>
+      </span>
+    </a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="rankings-qa.html">Rankings</a>
+      <a href="#">Clubs</a>
+      <a href="#">Tournaments</a>
+      <a href="#">Methodology</a>
+    </nav>
   </header>
 
-  <main class="team-page">
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="logo-wrap" id="teamLogo"></div>
-        <div class="hero-copy">
+  <main id="teamPage" class="team-page">
+    <section class="team-hero">
+      <div class="hero-shell">
+        <div class="logo-card" id="teamLogo"></div>
+
+        <div class="identity">
           <div class="eyebrow">California Polo Index</div>
           <h1 id="teamName">Team</h1>
-          <p id="teamSubhead">14U Boys</p>
-          <div class="hero-actions">
-            <label class="team-picker"><span>Jump to team</span><select id="teamSelect"></select></label>
+          <h2 id="ageGroup">14U Boys</h2>
+          <p id="clubName">Club</p>
+
+          <div class="meta-row">
+            <div class="meta-chip">
+              <span class="chip-icon">C</span>
+              <span><small>Club</small><strong id="chipClub">Club</strong></span>
+            </div>
+            <div class="meta-chip">
+              <span class="chip-icon">●</span>
+              <span><small>Region</small><strong id="chipRegion">California</strong></span>
+            </div>
+            <div class="meta-chip">
+              <span class="chip-icon">↗</span>
+              <span><small>Website</small><strong id="chipWebsite">Club Website</strong></span>
+            </div>
           </div>
+
+          <div class="verified-line">✓ All rankings updated after Futures Super Finals</div>
+
+          <label class="team-picker">
+            <span>Jump to Team</span>
+            <select id="teamSelect"></select>
+          </label>
         </div>
-        <div class="rank-stack">
-          <article><span>Rank</span><strong id="rankValue">—</strong></article>
-          <article><span>CPI</span><strong id="cpiValue">—</strong></article>
-          <article><span>Record</span><strong id="recordValue">—</strong></article>
-        </div>
+
+        <aside class="hero-metrics">
+          <article>
+            <strong id="heroRank">#—</strong>
+            <span>California Rank</span>
+            <small id="rankGroup">In 14U Boys</small>
+            <em id="movement">—</em>
+            <b>Since Last Update</b>
+          </article>
+
+          <article>
+            <strong id="heroCpi">—</strong>
+            <span>CPI Rating</span>
+            <small id="ratingLabel">California rating</small>
+            <div class="meter"><i id="meterFill"></i><u id="meterKnob"></u></div>
+            <div class="meter-labels"><small>1200</small><small>1600</small><small>2000+</small></div>
+          </article>
+
+          <article>
+            <strong id="heroRecord">—</strong>
+            <span id="latestRecordLabel">Latest Record</span>
+            <small id="latestGames">Verified games</small>
+            <div class="short-rule"></div>
+            <b id="latestFinishLabel">Latest Finish</b>
+            <small id="latestFinish">—</small>
+          </article>
+        </aside>
       </div>
+    </section>
+
+    <section class="tabs">
+      <a class="active" href="#overview">Overview</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#results">Results</a>
+      <a href="#statistics">Statistics</a>
+      <a href="#roster">Roster</a>
+      <a href="#rankings">Rankings</a>
     </section>
 
     <section class="rank-nav" id="rankNav"></section>
 
-    <section class="dashboard">
-      <article class="card stat-card"><h2>Team Summary</h2><dl id="summaryGrid"></dl></article>
-      <article class="card stat-card"><h2>Best Win</h2><div id="bestWinCard" class="big-callout">—</div></article>
-      <article class="card stat-card"><h2>Season Snapshot</h2><dl id="seasonSnapshot"></dl></article>
+    <section class="overview-grid" id="overview">
+      <article class="panel team-snapshot">
+        <header>Team Snapshot</header>
+        <div class="snapshot-grid" id="snapshotGrid"></div>
+      </article>
+
+      <article class="panel latest-tournament">
+        <header>Latest Tournament</header>
+        <div class="latest-body">
+          <div class="tournament-icon" id="latestIcon">SUPER<br/>FINALS</div>
+          <div>
+            <h3 id="latestTitle">Latest Tournament</h3>
+            <p id="latestMeta">California</p>
+          </div>
+          <span class="status-pill">Completed</span>
+        </div>
+        <div class="latest-stats" id="latestStats"></div>
+      </article>
+
+      <article class="panel club-context">
+        <header>Club Context</header>
+        <div id="clubContextRows"></div>
+      </article>
     </section>
 
-    <section class="card timeline-card">
-      <div class="card-header"><h2>Tournament Timeline</h2><span>Expandable game log</span></div>
-      <div id="timeline"></div>
+    <section class="lower-grid">
+      <article class="panel timeline-panel">
+        <header>
+          <span>Tournament Timeline</span>
+          <button id="expandAll" type="button">Expand All ›</button>
+        </header>
+        <div id="timeline"></div>
+      </article>
+
+      <article class="panel season-panel">
+        <header>Season Snapshot</header>
+        <div id="seasonRows"></div>
+        <a class="full-results" href="#fullResults">View Full Results ›</a>
+      </article>
     </section>
 
-    <section class="card results-card">
-      <div class="card-header"><h2>Verified Results</h2><span>Newest first</span></div>
-      <div class="table-wrap"><table><thead><tr><th>Event</th><th>Opponent</th><th>Result</th><th>Score</th><th>Overall Context</th></tr></thead><tbody id="resultsTable"></tbody></table></div>
+    <section class="panel full-results-panel" id="fullResults">
+      <header>Full Verified Results</header>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Opponent</th>
+              <th>Result</th>
+              <th>Score</th>
+              <th>Overall Context</th>
+            </tr>
+          </thead>
+          <tbody id="fullResultsTable"></tbody>
+        </table>
+      </div>
     </section>
   </main>
 
   <script src="data/cpi_team_pages_2026_14u_boys.js"></script>
-  <script src="data/cpi_team_page_ui.js"></script>
-  <script src="js/team-v11.js"></script>
+  <script src="data/cpi_qa_rankings_2026_14u_boys.js"></script>
+  <script src="data/cpi_club_branding.js"></script>
+  <script src="js/team-premium.js"></script>
 </body>
 </html>

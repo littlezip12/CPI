@@ -4,14 +4,11 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CPI Team Profile</title>
-  <link rel="stylesheet" href="css/team-v11.css"/>
-</head>
-<body>
   <script>
     const q = new URLSearchParams(location.search);
     const team = q.get("team");
     location.replace("team.html" + (team ? "?team=" + encodeURIComponent(team) : ""));
   </script>
-  <p>Redirecting to team profile...</p>
-</body>
+</head>
+<body>Redirecting to team page...</body>
 </html>
