@@ -1,0 +1,38 @@
+{
+  "qualification": {
+    "min_games": 5,
+    "description": "Teams must have at least five verified games to qualify for rankings."
+  },
+  "division_guardrails": [
+    {
+      "rule": "tier_3_top_10",
+      "level": "fail",
+      "description": "Tier 3 teams should never appear in the Top 10."
+    },
+    {
+      "rule": "tier_3_top_15",
+      "level": "fail",
+      "description": "Tier 3 teams should not appear in the Top 15."
+    },
+    {
+      "rule": "tier_2_top_10",
+      "level": "fail",
+      "description": "Tier 2 teams should not appear in the Top 10."
+    },
+    {
+      "rule": "tier_2_top_15",
+      "level": "warn",
+      "description": "Tier 2 teams in the Top 15 require strong evidence."
+    }
+  ],
+  "club_hierarchy": {
+    "description": "A team should usually be ranked above B, and B above C, unless the lower team has substantial quality-win evidence.",
+    "max_unexplained_gap": 20
+  },
+  "duplicate_checks": [
+    "duplicate_team_names_after_aliasing",
+    "unknown_teams_in_games",
+    "unknown_tournaments_in_games",
+    "duplicate_games"
+  ]
+}
