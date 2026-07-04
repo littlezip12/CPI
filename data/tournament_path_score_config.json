@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "description": "Tournament Path Score values bracket-path evidence without letting final finish dominate CPI.",
+  "principles": [
+    "Final placement is a supporting signal, not the ranking outcome.",
+    "Opponent quality and path difficulty matter more than raw finish.",
+    "Advancing into a stronger path can still be positive even if a team loses later placement games.",
+    "Tournament type and recency affect weight."
+  ],
+  "weights": {
+    "opponent_quality": 0.4,
+    "path_advancement": 0.25,
+    "finish_context": 0.15,
+    "division_tier": 0.15,
+    "recency": 0.05
+  },
+  "tournament_type_weight": {
+    "championship": 1.2,
+    "jo_qualifier": 1.05,
+    "invitational": 0.85,
+    "league": 0.75,
+    "unknown": 0.7
+  },
+  "round_stage_weight": {
+    "final": 1.0,
+    "championship": 1.0,
+    "semifinal": 0.88,
+    "quarterfinal": 0.78,
+    "crossover": 0.7,
+    "placement": 0.62,
+    "consolation": 0.52,
+    "pool": 0.45,
+    "unknown": 0.5
+  },
+  "division_tier_multiplier": {
+    "1": 1.0,
+    "2": 0.72,
+    "3": 0.48,
+    "4": 0.35
+  },
+  "finish_score": {
+    "enabled": true,
+    "max_points": 12,
+    "description": "Small supporting signal using overall finish estimate when available. If unavailable, use path advancement proxy."
+  },
+  "cap": {
+    "max_path_bonus": 35,
+    "min_path_penalty": -18
+  }
+}
