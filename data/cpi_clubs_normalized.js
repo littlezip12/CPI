@@ -1,4 +1,4 @@
-{
+window.CPI_CLUBS_NORMALIZED = {
   "lamorinda": {
     "id": "lamorinda",
     "name": "Lamorinda Water Polo",
@@ -1161,4 +1161,4 @@
       "BOA"
     ]
   }
-}
+};

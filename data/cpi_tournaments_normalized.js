@@ -1,4 +1,4 @@
-{
+window.CPI_TOURNAMENTS_NORMALIZED = {
   "futures-super-finals": {
     "id": "futures-super-finals",
     "name": "Futures Super Finals",
@@ -13,4 +13,4 @@
       "Futures Super Finals"
     ]
   }
-}
+};
