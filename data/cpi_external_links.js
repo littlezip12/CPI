@@ -130,7 +130,7 @@ window.CPI_EXTERNAL_LINKS = {
   "tournaments": {
     "futures-super-finals": {
       "label": "Futures Super Finals Sheet",
-      "url": ""
+      "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=326721462#gid=326721462"
     }
   }
 };

@@ -815,3 +815,44 @@ td strong{font-weight:1000}
     grid-template-columns:1fr;
   }
 }
+
+
+/* Sprint polish: prevent desktop CPI / record values from bleeding across cards */
+@media(min-width:821px){
+  .hero-metrics{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
+  .hero-metrics article{
+    min-width:0;
+    overflow:hidden;
+  }
+
+  .hero-metrics strong{
+    max-width:100%;
+    overflow:hidden;
+    text-overflow:clip;
+    white-space:nowrap;
+  }
+
+  #heroCpi{
+    font-size:clamp(42px,4.2vw,56px);
+    letter-spacing:-.075em;
+  }
+
+  #heroRecord{
+    font-size:clamp(42px,4.5vw,56px);
+    letter-spacing:-.07em;
+  }
+}
+
+@media(min-width:821px) and (max-width:1450px){
+  #heroCpi,
+  #heroRecord{
+    font-size:44px;
+  }
+
+  .hero-metrics article{
+    padding:20px;
+  }
+}
