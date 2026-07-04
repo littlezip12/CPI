@@ -396,7 +396,13 @@
     $("chipClub").textContent = team.club || brand.name || clubFromTeam(team.team);
     $("chipRegion").textContent = brand.region || "California";
     const websiteUrl = clubWebsite(team);
-    $("chipWebsite").innerHTML = websiteUrl ? `<a href="${websiteUrl}" target="_blank" rel="noopener">Club Website ↗</a>` : "Club Website";
+    const websiteChip = $("chipWebsite").closest(".meta-chip");
+    if(websiteUrl){
+      websiteChip.style.display = "";
+      $("chipWebsite").innerHTML = `<a href="${websiteUrl}" target="_blank" rel="noopener">Club Website ↗</a>`;
+    }else{
+      websiteChip.style.display = "none";
+    }
 
     $("heroRank").textContent = ranking.rank ? "#" + ranking.rank : "—";
     $("rankGroup").textContent = `In ${team.age_group || "14U"} ${team.gender || "Boys"}`;

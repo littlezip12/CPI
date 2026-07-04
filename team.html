@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CPI Team Page</title>
-  <link rel="stylesheet" href="css/team-premium.css?v=links-logos-1"/>
+  <link rel="stylesheet" href="css/team-premium.css?v=tabs-websites-1"/>
 </head>
 <body>
   <header class="site-header">
@@ -89,14 +89,13 @@
 
     <section class="tabs">
       <a class="active" href="#overview">Overview</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#results">Results</a>
-      <a href="#statistics">Statistics</a>
-      <a href="#roster">Roster</a>
-      <a href="#rankings">Rankings</a>
+      <a href="#timelineSection">Timeline</a>
+      <a href="#fullResults">Results</a>
+      <a href="#statisticsSection">Statistics</a>
+      <a href="#rankingsSection">Rankings</a>
     </section>
 
-    <section class="rank-nav" id="rankNav"></section>
+    <section class="rank-nav" id="rankingsSection"><div id="rankNav"></div></section>
 
     <section class="overview-grid" id="overview">
       <article class="panel team-snapshot">
@@ -124,7 +123,7 @@
     </section>
 
     <section class="lower-grid">
-      <article class="panel timeline-panel">
+      <article class="panel timeline-panel" id="timelineSection">
         <header>
           <span>Tournament Timeline</span>
           <button id="expandAll" type="button">Expand All ›</button>
@@ -132,7 +131,7 @@
         <div id="timeline"></div>
       </article>
 
-      <article class="panel season-panel">
+      <article class="panel season-panel" id="statisticsSection">
         <header>Season Snapshot</header>
         <div id="seasonRows"></div>
         <a class="full-results" href="#fullResults">View Full Results ›</a>
@@ -162,6 +161,6 @@
   <script src="data/cpi_qa_rankings_2026_14u_boys.js"></script>
   <script src="data/cpi_club_branding.js"></script>
   <script src="data/cpi_external_links.js"></script>
-  <script src="js/team-premium.js?v=links-logos-1"></script>
+  <script src="js/team-premium.js?v=tabs-websites-1"></script>
 </body>
 </html>
