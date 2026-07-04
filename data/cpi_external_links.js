@@ -3,100 +3,133 @@ window.CPI_EXTERNAL_LINKS = {
     "lamorinda": {
       "website": "https://www.lamorindawaterpolo.org/"
     },
-    "alameda": {
-      "website": ""
+    "patriot": {
+      "website": "https://patriotaquatics.org/"
     },
     "la-jolla-united": {
-      "website": ""
-    },
-    "mission-wpc": {
-      "website": ""
-    },
-    "norcal": {
-      "website": ""
+      "website": "https://lajollaunited.com/"
     },
     "sd-dons": {
-      "website": ""
+      "website": "https://sddonspolo.com/"
     },
-    "la-premier": {
-      "website": ""
+    "norcal": {
+      "website": "https://www.norcal-aquatics.com/"
+    },
+    "mission-wpc": {
+      "website": "https://missionwpc.com/home"
     },
     "newport-beach": {
-      "website": ""
-    },
-    "patriot": {
-      "website": ""
+      "website": "https://www.newportbeachwaterpolo.com/"
     },
     "vanguard": {
-      "website": ""
-    },
-    "commerce": {
-      "website": ""
+      "website": "https://vanguardaquatics.com/"
     },
     "stanford": {
-      "website": ""
-    },
-    "908": {
-      "website": ""
-    },
-    "ovac": {
-      "website": ""
-    },
-    "channel-islands-united": {
-      "website": ""
-    },
-    "cc-united": {
-      "website": ""
-    },
-    "sd-shores": {
-      "website": ""
-    },
-    "north-irvine": {
-      "website": ""
-    },
-    "south-coast": {
-      "website": ""
-    },
-    "diablo-alliance": {
-      "website": ""
-    },
-    "cdm": {
-      "website": ""
-    },
-    "san-clemente": {
-      "website": ""
+      "website": "https://www.stanfordwaterpoloclub.com/"
     },
     "680": {
-      "website": ""
+      "website": "https://www.680waterpolo.com/"
+    },
+    "diablo-alliance": {
+      "website": "https://www.diablowaterpolo.com/"
+    },
+    "south-coast": {
+      "website": "https://www.southcoastaquatics.com/"
+    },
+    "cc-united": {
+      "website": "https://www.gomotionapp.com/team/wpccup/page/home"
+    },
+    "commerce": {
+      "website": "https://www.gomotionapp.com/team/comm/page/home"
+    },
+    "north-irvine": {
+      "website": "https://www.gomotionapp.com/team/niwpc/page/home"
+    },
+    "socal": {
+      "website": "https://www.socalwaterpolo.org/"
+    },
+    "set": {
+      "website": "https://www.setwaterpolo.com/"
+    },
+    "foothill": {
+      "website": "https://foothillclubwaterpolo.org/"
+    },
+    "santa-barbara": {
+      "website": "https://sbwaterpolo.com/"
+    },
+    "lawpc": {
+      "website": "https://www.losangeleswaterpolo.com/"
+    },
+    "ocwpc": {
+      "website": "https://ocwpc.com/"
+    },
+    "pride": {
+      "website": "https://www.pridewaterpolo.com/page/home"
+    },
+    "pacific": {
+      "website": "https://www.pacificpolo.net/"
+    },
+    "clovis": {
+      "website": "https://www.cloviswpc.com/"
+    },
+    "praetorian": {
+      "website": "https://www.praetorianwaterpolo.com/"
+    },
+    "alameda": {
+      "website": "https://alamedawaterpolo.org/?avia_forced_reroute=1"
+    },
+    "american-river": {
+      "website": "https://www.arwpc.com/"
+    },
+    "davis": {
+      "website": "https://www.daviswaterpolo.org/"
+    },
+    "seaside": {
+      "website": "https://www.seasidepolo.club/"
+    },
+    "santa-clara": {
+      "website": "https://www.members.santaclaraswimclub.org/page/water-polo"
+    },
+    "irvine-kahuna": {
+      "website": "https://www.irvinewaterpolo.org/"
+    },
+    "rancho-tsunami": {
+      "website": "https://www.ranchotsunami.com/"
+    },
+    "trojan": {
+      "website": "https://www.gomotionapp.com/team/catwp/page/home"
+    },
+    "titans": {
+      "website": "https://titanswaterpoloclub.com/"
+    },
+    "renegades": {
+      "website": "https://www.renegadeswaterpolo.org/"
+    },
+    "empire": {
+      "website": "https://empireaquatics.org/"
+    },
+    "elite": {
+      "website": "https://www.elitewaterpolo.com/"
+    },
+    "la-premier": {
+      "website": "https://www.premierwaterpolo.com/"
+    },
+    "west-valley": {
+      "website": "https://www.westvalleywaterpolo.com/"
+    },
+    "riverside": {
+      "website": "https://www.riversidewaterpolo.com/page/home"
+    },
+    "big-valley": {
+      "website": "https://bigvalleywpa.com/"
+    },
+    "skip": {
+      "website": "https://www.gomotionapp.com/team/ccmsst/page/skip-water-polo"
     }
   },
   "tournaments": {
     "futures-super-finals": {
       "label": "Futures Super Finals Sheet",
-      "url": ""
-    },
-    "kap7-international": {
-      "label": "Kap7 Results",
-      "url": ""
-    },
-    "turbo-oc-cup": {
-      "label": "Turbo OC Cup Results",
-      "url": ""
-    },
-    "san-diego-county-cup": {
-      "label": "SD County Cup Results",
-      "url": ""
-    },
-    "cca-jo-qualifier": {
-      "label": "CCA JO Qualifier Results",
-      "url": ""
-    },
-    "sopac-jo-qualifier": {
-      "label": "SOPAC JO Qualifier Results",
-      "url": ""
-    },
-    "norcal-jo-qualifier": {
-      "label": "NorCal JO Qualifier Results",
       "url": ""
     }
   }

@@ -3,6 +3,7 @@
   const RANK_DATA = window.CPI_QA_RANKINGS_2026_14U_BOYS || {};
   const BRANDING = window.CPI_CLUB_BRANDING || {};
   const LINKS = window.CPI_EXTERNAL_LINKS || {clubs:{}, tournaments:{}};
+  const CLUBS = window.CPI_CLUBS || {};
   const $ = (id) => document.getElementById(id);
 
   const slugify = (v) => String(v || "").toLowerCase().trim().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"") || "unknown";
@@ -52,6 +53,7 @@
   function clubKey(team, club){
     const raw = String(club || clubFromTeam(team) || "").toLowerCase();
     const teamRaw = String(team || "").toLowerCase();
+    for(const [cid,c] of Object.entries(CLUBS)){ const vals=[c.name,c.shortName,...(c.aliases||[])].map(x=>String(x||"").toLowerCase()); if(vals.some(v=>raw===v || teamRaw===v || raw.includes(v) || teamRaw.includes(v))) return cid; }
     if(raw.includes("lamorinda")) return "lamorinda";
     if(raw.includes("alameda")) return "alameda";
     if(raw.includes("la jolla")) return "la-jolla-united";
@@ -92,6 +94,8 @@
 
   function clubWebsite(team){
     const key = clubKey(team.team, team.club);
+    const club = CLUBS[key] || {};
+    if(club.website) return club.website;
     const link = LINKS.clubs && LINKS.clubs[key] && LINKS.clubs[key].website;
     if(link) return link;
     const brand = BRANDING[key] || {};
@@ -114,7 +118,9 @@
 
   function brandingFor(team){
     const key = clubKey(team.team, team.club);
-    return BRANDING[key] || BRANDING.default || {primary:"#08264f", secondary:"#ffc72c", accent:"#ffffff", region:"California", website:"Club Website"};
+    const club = CLUBS[key] || {};
+    const oldBrand = BRANDING[key] || BRANDING.default || {};
+    return {...oldBrand, ...club, primary:club.primary||oldBrand.primary||"#08264f", secondary:club.secondary||oldBrand.secondary||"#ffc72c", accent:club.accent||oldBrand.accent||"#ffffff", region:club.region||oldBrand.region||"California"};
   }
 
   function rankingFor(team){
@@ -198,7 +204,9 @@
   function logoCandidates(team, brand){
     const teamSlug = team.slug || slugify(team.team);
     const clubSlug = clubKey(team.team, team.club);
+    const club = CLUBS[clubSlug] || {};
     return [
+      club.logo ? `logos/${club.logo}` : null,
       team.logo,
       team.logo_url,
       team.logoPath,
