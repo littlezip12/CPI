@@ -1,0 +1,169 @@
+<!doctype html><html><head><meta charset="utf-8"><title>CPI Tournament Import Normalizer</title>
+<style>
+body{font-family:system-ui;margin:30px;background:#f6f8fb;color:#071832}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{background:#08264f;color:white;border-radius:12px;padding:16px}
+.metric strong{display:block;font-size:34px}.metric span{font-size:11px;text-transform:uppercase;color:#dbe7f5;font-weight:900}
+.card{background:white;border:1px solid #dce6f2;border-radius:14px;padding:18px;margin:18px 0;box-shadow:0 10px 30px #0001}
+table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #dce6f2;padding:10px;text-align:left}th{font-size:12px;text-transform:uppercase;color:#607086}
+</style></head><body>
+<h1>CPI Tournament Import Normalizer v1</h1>
+<div class="grid">
+<div class="metric"><strong>726</strong><span>Games Scanned</span></div>
+<div class="metric"><strong>1108</strong><span>Unique Raw Names</span></div>
+<div class="metric"><strong>32</strong><span>Prefix Removals</span></div>
+<div class="metric"><strong>17</strong><span>Alias Patch Adds</span></div>
+</div>
+<div class="card"><h2>Top Names Still Unresolved After Normalization</h2>
+<table><thead><tr><th>Normalized Name</th><th>Occurrences</th></tr></thead><tbody><tr><td>A2-south County Aquatics</td><td>4</td></tr>
+<tr><td>A5-ohana</td><td>4</td></tr>
+<tr><td>A1-set</td><td>4</td></tr>
+<tr><td>A3-pasadena Ac Orange</td><td>4</td></tr>
+<tr><td>A4-sfv</td><td>4</td></tr>
+<tr><td>Trilogy</td><td>3</td></tr>
+<tr><td>NGEN</td><td>3</td></tr>
+<tr><td>K1(2nde)-stanford A</td><td>3</td></tr>
+<tr><td>K4(2ndh)-cdm</td><td>3</td></tr>
+<tr><td>K2(2ndf)-south Coast Red</td><td>3</td></tr>
+<tr><td>K3(2ndg)-davis</td><td>3</td></tr>
+<tr><td>M1(3rde)-san Clemente</td><td>3</td></tr>
+<tr><td>M4(3rdh)-pegasus</td><td>3</td></tr>
+<tr><td>M2(3rdf)-diablo Alliance A</td><td>3</td></tr>
+<tr><td>M3(3rdg)-socal</td><td>3</td></tr>
+<tr><td>C1-san Diego Dons</td><td>3</td></tr>
+<tr><td>C4-devils Gate</td><td>3</td></tr>
+<tr><td>C2-vanguard Blue</td><td>3</td></tr>
+<tr><td>C3-rancho Tsunami Blue</td><td>3</td></tr>
+<tr><td>B2-alameda</td><td>3</td></tr>
+<tr><td>T1(w#p1/p8)-680 White</td><td>3</td></tr>
+<tr><td>T4(w#p4/p5)-san Jose Foundation Blue</td><td>3</td></tr>
+<tr><td>T2(w#p2/p7)-norcal Teal</td><td>3</td></tr>
+<tr><td>T3(w#p3/p6)-santa Cruz</td><td>3</td></tr>
+<tr><td>B2 - Crown City</td><td>2</td></tr>
+<tr><td>B3 - Stanford White</td><td>2</td></tr>
+<tr><td>B1 - NSD Stars</td><td>2</td></tr>
+<tr><td>B4 - Rose Bowl Black</td><td>2</td></tr>
+<tr><td>C2 - CDM White</td><td>2</td></tr>
+<tr><td>C3 - ECA B</td><td>2</td></tr>
+<tr><td>D2 - LACUWP</td><td>2</td></tr>
+<tr><td>D3 - Santa Barbara</td><td>2</td></tr>
+<tr><td>C1 - Set</td><td>2</td></tr>
+<tr><td>C4 - Sharks</td><td>2</td></tr>
+<tr><td>Rose Bowl Black</td><td>2</td></tr>
+<tr><td>SD ECA  B</td><td>2</td></tr>
+<tr><td>Set</td><td>2</td></tr>
+<tr><td>Crown City</td><td>2</td></tr>
+<tr><td>Valley United</td><td>2</td></tr>
+<tr><td>Santa Barbara</td><td>2</td></tr>
+<tr><td>A2 - Rain City</td><td>2</td></tr>
+<tr><td>A3 - 908 Green</td><td>2</td></tr>
+<tr><td>B3 - Shore Aquatics</td><td>2</td></tr>
+<tr><td>C1 - Back Bay</td><td>2</td></tr>
+<tr><td>C2 - South Coast White</td><td>2</td></tr>
+<tr><td>A1 - San Clem Red</td><td>2</td></tr>
+<tr><td>C3 - SD Dons Gold</td><td>2</td></tr>
+<tr><td>E3 - Foothill</td><td>2</td></tr>
+<tr><td>U1 - Rain City</td><td>2</td></tr>
+<tr><td>U3 - Big Valley</td><td>2</td></tr>
+<tr><td>Q1 - 908 Green</td><td>2</td></tr>
+<tr><td>Q3 - 908 Blue</td><td>2</td></tr>
+<tr><td>M1 - San Clem Red</td><td>2</td></tr>
+<tr><td>M3 - Santa Barbara</td><td>2</td></tr>
+<tr><td>T1 - Back Bay</td><td>2</td></tr>
+<tr><td>T2 - LOWPO</td><td>2</td></tr>
+<tr><td>U2 - North Irvine B</td><td>2</td></tr>
+<tr><td>Q2 - SJ Express</td><td>2</td></tr>
+<tr><td>M2 - Greenwich</td><td>2</td></tr>
+<tr><td>T3 - Patriots Red</td><td>2</td></tr>
+<tr><td>Greenwich</td><td>2</td></tr>
+<tr><td>B1 - Newport</td><td>2</td></tr>
+<tr><td>K2 - North Irvine</td><td>2</td></tr>
+<tr><td>K3 - SD Dons Red</td><td>2</td></tr>
+<tr><td>E1 - Greenwich</td><td>2</td></tr>
+<tr><td>K1 - Lamorinda</td><td>2</td></tr>
+<tr><td>O1 - Newport</td><td>2</td></tr>
+<tr><td>O2 - Norcal</td><td>2</td></tr>
+<tr><td>P2 - LA Premier</td><td>2</td></tr>
+<tr><td>P3 - North Irvine</td><td>2</td></tr>
+<tr><td>N2 - Greenwich</td><td>2</td></tr>
+<tr><td>N3 - Commerce</td><td>2</td></tr>
+<tr><td>M1 - LA Jolla United A</td><td>2</td></tr>
+<tr><td>M2 - Patriot Navy</td><td>2</td></tr>
+<tr><td>O3 - SD Shores Black</td><td>2</td></tr>
+<tr><td>P1 - SD Dons Black</td><td>2</td></tr>
+<tr><td>N1 - Mission</td><td>2</td></tr>
+<tr><td>M3 - 908</td><td>2</td></tr>
+<tr><td>P2(4tha)(l#16)-set</td><td>2</td></tr>
+<tr><td>P3(5thb)(l#2)-north Irvine Red (b)</td><td>2</td></tr>
+<tr><td>Q1(4the)(l#17)-tmec WP</td><td>2</td></tr>
+<tr><td>Q3(5thc)(l#3)-ocwpc Red (b)</td><td>2</td></tr>
+<tr><td>R2(4thc)(l#18)-vanguard Silver (b)</td><td>2</td></tr>
+<tr><td>R3(5tha)(l#1)-san Clemente White (c)</td><td>2</td></tr>
+<tr><td>N1(2ndc)(l#24)-socal Gold (b)</td><td>2</td></tr>
+<tr><td>N3(3rdf)(w#20)-renegades</td><td>2</td></tr>
+<tr><td>H1(1stb)(w#25)-nbwp Blue (a)</td><td>2</td></tr>
+<tr><td>H3(1stf)(w#23)-vanguard Blue (a)</td><td>2</td></tr>
+<tr><td>M1(2ndd)(l#27)-san Clemente Red (a)</td><td>2</td></tr>
+<tr><td>M3(3rde)(w#17)-cmac</td><td>2</td></tr>
+<tr><td>K1(2nde)(l#26)-tsunami Blue</td><td>2</td></tr>
+<tr><td>K3(3rdd)(w#21)-hieland</td><td>2</td></tr>
+<tr><td>G1(1sta)(w#22)-patriot Navy (a)</td><td>2</td></tr>
+<tr><td>G3(1ste)(w#26)-ocwpc Blue (a)</td><td>2</td></tr>
+<tr><td>Q2(4thb)(l#19)-san Clemente Black (b)</td><td>2</td></tr>
+<tr><td>R1(4thd)(l#21)-patriot Red (b)</td><td>2</td></tr>
+<tr><td>P1(4thf)(l#20)-chawp</td><td>2</td></tr>
+<tr><td>N2(2ndb)(l#25)-mission WPC (b)</td><td>2</td></tr>
+<tr><td>M2(2nda)(l#22)-back Bay</td><td>2</td></tr>
+<tr><td>K2(3rda)(w#16)-north Irvine Black (a)</td><td>2</td></tr>
+<tr><td>H2(1stc)(w#24)-mission WPC (a)</td><td>2</td></tr>
+<tr><td>G2(1std)(w#27)-socal Black (a)</td><td>2</td></tr>
+<tr><td>1stp-chawp</td><td>2</td></tr>
+<tr><td>1str-patriot Red (b)</td><td>2</td></tr>
+<tr><td>2ndp-set</td><td>2</td></tr>
+<tr><td>2ndr-vanguard Silver (b)</td><td>2</td></tr>
+<tr><td>3rdp-north Irvine Red (b)</td><td>2</td></tr>
+<tr><td>3rdr-san Clemente White (c)</td><td>2</td></tr>
+<tr><td>1stq-ocwpc Red (b)</td><td>2</td></tr>
+<tr><td>2ndq-san Clemente Black (b)</td><td>2</td></tr>
+<tr><td>3rdq-tmec WP</td><td>2</td></tr>
+<tr><td>A1-patriot A</td><td>2</td></tr>
+<tr><td>A3-ciu</td><td>2</td></tr>
+<tr><td>E1-908</td><td>2</td></tr>
+<tr><td>E3-san Clemente</td><td>2</td></tr>
+<tr><td>D1-la Premier</td><td>2</td></tr>
+<tr><td>D3-san Diego Shores</td><td>2</td></tr>
+<tr><td>H1-cdm</td><td>2</td></tr>
+<tr><td>H3-pegasus</td><td>2</td></tr>
+<tr><td>B1-la Jolla United A</td><td>2</td></tr>
+<tr><td>B3-lamorinda</td><td>2</td></tr>
+<tr><td>F1-commerce</td><td>2</td></tr>
+<tr><td>F3-diablo Alliance A</td><td>2</td></tr>
+<tr><td>C1-sd Dons</td><td>2</td></tr>
+<tr><td>C3-norcal A</td><td>2</td></tr>
+<tr><td>G1-north Irvine A</td><td>2</td></tr>
+<tr><td>G3-davis</td><td>2</td></tr>
+<tr><td>A2-vanguard A</td><td>2</td></tr>
+<tr><td>E2-stanford A</td><td>2</td></tr>
+<tr><td>D2-mission A</td><td>2</td></tr>
+<tr><td>H2-ccu A</td><td>2</td></tr>
+<tr><td>B2-newport Beach A</td><td>2</td></tr>
+<tr><td>F2-south Coast Red</td><td>2</td></tr>
+<tr><td>C2-ovac</td><td>2</td></tr>
+<tr><td>G2-socal</td><td>2</td></tr>
+<tr><td>A1-mission B</td><td>2</td></tr>
+<tr><td>A3-devils Gate</td><td>2</td></tr>
+<tr><td>B1-rancho Tsunami</td><td>2</td></tr>
+<tr><td>B3-stanford B</td><td>2</td></tr>
+<tr><td>D1-pride</td><td>2</td></tr>
+<tr><td>D3-american River A</td><td>2</td></tr>
+<tr><td>C1-shore Aquatics</td><td>2</td></tr>
+<tr><td>C3-san Jose Express</td><td>2</td></tr>
+<tr><td>F1-patriot B</td><td>2</td></tr>
+<tr><td>F3-clovis Red</td><td>2</td></tr>
+<tr><td>H1-santa Barbara</td><td>2</td></tr>
+<tr><td>H3-kingsburg</td><td>2</td></tr>
+<tr><td>G1-la Jolla United B</td><td>2</td></tr>
+<tr><td>G3-northwest</td><td>2</td></tr>
+<tr><td>A2-trojan</td><td>2</td></tr></tbody></table>
+</div>
+</body></html>
