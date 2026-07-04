@@ -166,12 +166,32 @@
     return [
       team.logo,
       team.logo_url,
+      team.logoPath,
+      team.logo_path,
       `assets/logos/${teamSlug}.png`,
+      `assets/logos/${teamSlug}.jpg`,
+      `assets/logos/${teamSlug}.jpeg`,
+      `assets/logos/${teamSlug}.webp`,
+      `assets/logos/${teamSlug}.svg`,
       `assets/logos/${clubSlug}.png`,
+      `assets/logos/${clubSlug}.jpg`,
+      `assets/logos/${clubSlug}.jpeg`,
+      `assets/logos/${clubSlug}.webp`,
+      `assets/logos/${clubSlug}.svg`,
       `logos/${teamSlug}.png`,
+      `logos/${teamSlug}.jpg`,
+      `logos/${teamSlug}.jpeg`,
+      `logos/${teamSlug}.webp`,
+      `logos/${teamSlug}.svg`,
       `logos/${clubSlug}.png`,
+      `logos/${clubSlug}.jpg`,
+      `logos/${clubSlug}.jpeg`,
+      `logos/${clubSlug}.webp`,
+      `logos/${clubSlug}.svg`,
       `images/logos/${teamSlug}.png`,
-      `images/logos/${clubSlug}.png`
+      `images/logos/${clubSlug}.png`,
+      `img/logos/${teamSlug}.png`,
+      `img/logos/${clubSlug}.png`
     ].filter(Boolean);
   }
 
