@@ -1,0 +1,3682 @@
+{
+  "summary": {
+    "raw_files": 7,
+    "games_before_dedupe": 736,
+    "games_after_dedupe": 736,
+    "duplicates_removed": 0,
+    "teams": 351,
+    "ranking_eligible_teams_5plus": 123,
+    "tournaments": 7,
+    "qa_items": 1104
+  },
+  "games_by_tournament": {
+    "san-diego-county-cup": 96,
+    "sopac-jo-qualifier": 78,
+    "futures-super-finals": 164,
+    "turbo-oc-cup": 91,
+    "cca-jo-qualifier": 96,
+    "norcal-jo-qualifier": 77,
+    "kap7": 134
+  },
+  "games_by_source": {
+    "14U SD County Cup All Divisions - Sheet1.csv": 96,
+    "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv": 78,
+    "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv": 164,
+    "2026 TURBO OC CUP(MASTER BY DIVISION) (1).csv": 91,
+    "CCA 14uBoys NJO quals 2026 - 14U Boys V1.csv": 96,
+    "JO Quals 14u boys NorCal - Sheet1.csv": 77,
+    "Kap7 International 14u Boys all divisions - Sheet1 (1).csv": 134
+  },
+  "qa_preview": [
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 2,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 3,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 4,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 13,
+      "raw_team_1": "BREAK",
+      "raw_team_2": "BREAK",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 18,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 19,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 20,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 9,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 10,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 11,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 12,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 13,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 2,
+      "raw_team_1": "12U Girls A",
+      "raw_team_2": "12U Girls A",
+      "reason_team_1": "non_14u",
+      "reason_team_2": "non_14u"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 3,
+      "raw_team_1": "12U Girls A",
+      "raw_team_2": "12U Girls A",
+      "reason_team_1": "non_14u",
+      "reason_team_2": "non_14u"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 5,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 6,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 7,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 17,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 18,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 19,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 9,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 10,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 3,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 4,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 5,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 6,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 7,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 3,
+      "raw_team_1": "G2 - SOCAL",
+      "raw_team_2": "G3 - Los Al Opal",
+      "reason_team_1": "registry",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 7,
+      "raw_team_1": "G1 - Norcal",
+      "raw_team_2": "G3 - Los Al Opal",
+      "reason_team_1": "registry",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 9,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 10,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 11,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 12,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 17,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 18,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 19,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 5,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 5,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "14U SD County Cup All Divisions - Sheet1.csv",
+      "row": 6,
+      "raw_team_1": "",
+      "raw_team_2": "",
+      "reason_team_1": "empty",
+      "reason_team_2": "empty"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 1,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 2,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 3,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 4,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 5,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 6,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 7,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 8,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 9,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 10,
+      "division": "10U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 11,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 12,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 13,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 14,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 15,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 16,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 17,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 18,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 19,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 20,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 21,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 22,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 23,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 24,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 25,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 26,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 27,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 28,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 29,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 30,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 31,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 32,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 33,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 34,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 35,
+      "division": "10U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 36,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 37,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 38,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 39,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 40,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 41,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 42,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 43,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 44,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 45,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 46,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 47,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 48,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 49,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 50,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 51,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 52,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 53,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 54,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 55,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 56,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 57,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 58,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 59,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 60,
+      "division": "10U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 61,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 62,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 63,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 64,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 65,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 66,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 67,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 68,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 69,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 70,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 71,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 72,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 73,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 74,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 75,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 76,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 77,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 78,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 79,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 80,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 81,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 82,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 83,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 84,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 85,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 86,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 87,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 88,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 89,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 90,
+      "division": "12U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 91,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 92,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 93,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 94,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 95,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 96,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 97,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 98,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 99,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 100,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 101,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 102,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 103,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 104,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 105,
+      "division": "12U_COED"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 106,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 107,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 108,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 109,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 110,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 111,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 112,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 113,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 114,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 115,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 116,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 117,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 118,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 119,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 120,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 121,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 122,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 123,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 124,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 125,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 126,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 127,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 128,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 129,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 130,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 131,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 132,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 133,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 134,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 135,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 136,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 137,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 138,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 139,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 140,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 141,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 142,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 143,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 144,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 145,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 146,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 147,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 148,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 149,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 150,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 151,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 152,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 153,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 154,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 155,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 156,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 157,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 158,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 159,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 160,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 161,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 162,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 163,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 164,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 165,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 166,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 167,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 168,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 169,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 170,
+      "division": "12U_BOYS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 171,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 172,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 173,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 174,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 175,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 176,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 177,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 178,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 179,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 180,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 181,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 182,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 183,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 184,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 185,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 186,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 187,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 188,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 189,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 190,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 191,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 192,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 193,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 194,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 195,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 196,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 197,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 198,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 199,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 200,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 201,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 202,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 203,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 204,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 205,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 206,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 207,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 208,
+      "division": "14U_GIRLS"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 213,
+      "raw_team_1": "B2-MISSION WPC (B)",
+      "raw_team_2": "B3-LOS ALAMITOS BLUE",
+      "reason_team_1": "registry",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 227,
+      "raw_team_1": "L#5-LOS ALAMITOS BLUE",
+      "raw_team_2": "L#14-SAN CLEMENTE BLACK (B)",
+      "reason_team_1": "placeholder",
+      "reason_team_2": "canonical_shape"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 248,
+      "raw_team_1": "J2(3rdB)(W#19)-LOS ALAMITOS BLUE",
+      "raw_team_2": "J3(3rdC)(W#18)-NBWP WHITE (B)",
+      "reason_team_1": "placeholder",
+      "reason_team_2": "canonical_shape"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 256,
+      "raw_team_1": "J1(2ndF)(L#23)-CDM",
+      "raw_team_2": "J2(3rdB)(W#19)-LOS ALAMITOS BLUE",
+      "reason_team_1": "registry",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 283,
+      "raw_team_1": "L#59-SOCAL GOLD (B)",
+      "raw_team_2": "L#62-LOS ALAMITOS BLUE\t",
+      "reason_team_1": "canonical_shape",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2025 SOPAC YOUNGER QUALS 2(MASTER BY DIVISION).csv",
+      "row": 289,
+      "raw_team_1": "L#73-SAN CLEMENTE RED (A)",
+      "raw_team_2": "L#74-LOS ALAMITOS BLUE\t",
+      "reason_team_1": "registry",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 1,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 2,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 3,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 4,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 5,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 6,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 7,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 8,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 9,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 10,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 11,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 12,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 13,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 14,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 15,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 16,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 17,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 18,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 19,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 20,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 21,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 22,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 23,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 24,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 25,
+      "division": "10U_OPEN_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 26,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 27,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 28,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 29,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 30,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 31,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 32,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 33,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 34,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 35,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 36,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 37,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 38,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 39,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 40,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 41,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 42,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 43,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 44,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 45,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 46,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 47,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 48,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 49,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 50,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 51,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 52,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 53,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 54,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 55,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 56,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 57,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 58,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 59,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 60,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 61,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 62,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 63,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 64,
+      "division": "10U_OPEN_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 65,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 66,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 67,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 68,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 69,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 70,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 71,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 72,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 73,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 74,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 75,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 76,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 77,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 78,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 79,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 80,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 81,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 82,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 83,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 84,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 85,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 86,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 87,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 88,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 89,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 90,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 91,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 92,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 93,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 94,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 95,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 96,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 97,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 98,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 99,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 100,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 101,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 102,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 103,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 104,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 105,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 106,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 107,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 108,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 109,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 110,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 111,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 112,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 113,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 114,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 115,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 116,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 117,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 118,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 119,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 120,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 121,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 122,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 123,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 124,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 125,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 126,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 127,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 128,
+      "division": "12U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 129,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 130,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 131,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 132,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 133,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 134,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 135,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 136,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 137,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 138,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 139,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 140,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 141,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 142,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 143,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 144,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 145,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 146,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 147,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 148,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 149,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 150,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 151,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 152,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 153,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 154,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 155,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 156,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 157,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 158,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 159,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 160,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 161,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 162,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 163,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 164,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 165,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 166,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 167,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 168,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 169,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 170,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 171,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 172,
+      "division": "12U_BOYS_D2"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 173,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 174,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 175,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 176,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 177,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 178,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 179,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 180,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 181,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 182,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 183,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 184,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 185,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 186,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 187,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 188,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 189,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 190,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 191,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 192,
+      "division": "12U_BOYS_D3"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 269,
+      "raw_team_1": "E2-LOS ALAMITOS",
+      "raw_team_2": "E3-SAN FRANCISCO",
+      "reason_team_1": "placeholder",
+      "reason_team_2": "registry"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 277,
+      "raw_team_1": "E1-TEMPLE CITY",
+      "raw_team_2": "E2-LOS ALAMITOS",
+      "reason_team_1": "registry",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 282,
+      "raw_team_1": "K5(2ndE)-LOS ALAMITOS",
+      "raw_team_2": "K4(2ndD)-NEWPORT BEACH B",
+      "reason_team_1": "placeholder",
+      "reason_team_2": "registry"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 296,
+      "raw_team_1": "W#K8/K1-MISSION B",
+      "raw_team_2": "W#K5/K4-LOS ALAMITOS",
+      "reason_team_1": "registry",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "review",
+      "type": "skipped_unknown_or_invalid_team",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 305,
+      "raw_team_1": "L#44-LA JOLLA UNITED B",
+      "raw_team_2": "L#40-LOS ALAMITOS",
+      "reason_team_1": "registry",
+      "reason_team_2": "placeholder"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 362,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 363,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 364,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 365,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 366,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 367,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 368,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 369,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 370,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 371,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 372,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 373,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 374,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 375,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 376,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 377,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 378,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 379,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 380,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 381,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 382,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 383,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 384,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 385,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 386,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 387,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 388,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 389,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 390,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 391,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 392,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 393,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 394,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 395,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 396,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 397,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 398,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 399,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 400,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 401,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 402,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 403,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 404,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 405,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 406,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 407,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 408,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 409,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 410,
+      "division": "16U_BOYS_D1"
+    },
+    {
+      "level": "info",
+      "type": "skipped_non_14u_division",
+      "file": "2026 BOYS FUTURES SUPERFINALS - MASTER BY DIVISION (2).csv",
+      "row": 411,
+      "division": "16U_BOYS_D1"
+    }
+  ]
+}
