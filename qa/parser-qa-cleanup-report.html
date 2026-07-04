@@ -1,0 +1,222 @@
+<!doctype html><html><head><meta charset="utf-8"><title>CPI Parser QA Cleanup</title>
+<style>
+body{font-family:system-ui;margin:30px;background:#f6f8fb;color:#071832}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{background:#08264f;color:white;border-radius:12px;padding:16px}
+.metric strong{display:block;font-size:34px}.metric span{font-size:11px;text-transform:uppercase;color:#dbe7f5;font-weight:900}
+.card{background:white;border:1px solid #dce6f2;border-radius:14px;padding:18px;margin:18px 0;box-shadow:0 10px 30px #0001}
+table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid #dce6f2;padding:10px;text-align:left}th{font-size:12px;text-transform:uppercase;color:#607086}
+</style></head><body>
+<h1>CPI Parser QA Cleanup — Pass 1</h1>
+<div class="grid">
+<div class="metric"><strong>500</strong><span>QA Items Analyzed</span></div>
+<div class="metric"><strong>0</strong><span>Unknown Raw Names</span></div>
+<div class="metric"><strong>0</strong><span>Suggested Aliases</span></div>
+<div class="metric"><strong>228</strong><span>Suspicious Teams</span></div>
+</div>
+<div class="card"><h2>QA Buckets</h2><table><thead><tr><th>Bucket</th><th>Count</th></tr></thead><tbody><tr><td>non_14u_or_other_division</td><td>450</td></tr>
+<tr><td>unknown_or_invalid_team</td><td>35</td></tr>
+<tr><td>bracket_placeholder</td><td>13</td></tr>
+<tr><td>non_14u_team</td><td>2</td></tr></tbody></table></div>
+<div class="card"><h2>Unknown Aliases Needing Review</h2><table><thead><tr><th>Raw Name</th><th>Slug</th><th>Count</th><th>Suggested Mapping</th></tr></thead><tbody></tbody></table></div>
+<div class="card"><h2>Suspicious Teams</h2><table><thead><tr><th>Team ID</th><th>Games</th><th>Reasons</th></tr></thead><tbody><tr><td>908-green-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>boa-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>chawp-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>ciu-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>ct-premier-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>cvu-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>foothill-b</td><td>4</td><td>low_games</td></tr>
+<tr><td>honolulu-blue-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>honolulu-green-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>la-jolla-united-b</td><td>4</td><td>low_games</td></tr>
+<tr><td>la-jolla-united-gold-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>loyola-wpc-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>nado-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>nbwp-white-b</td><td>4</td><td>low_games</td></tr>
+<tr><td>ocwpc-blue-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>ocwpc-c</td><td>4</td><td>low_games</td></tr>
+<tr><td>ohana-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>orwp-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>palos-verdes-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>pasadena-ac-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>patriot-red-b</td><td>4</td><td>low_games</td></tr>
+<tr><td>peak-polo-lightning-pt-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>poway-valley-black-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>san-clemente-black-b</td><td>4</td><td>low_games</td></tr>
+<tr><td>san-diego-shores-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>sand-canyon-black-pt-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>sand-canyon-red-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>sd-shores-black-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>sfv-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>sj-foundation-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>skip-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>south-coast-blue-c</td><td>4</td><td>low_games</td></tr>
+<tr><td>south-county-aquatics-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>south-valley-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>stanford-13-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>stanford-c</td><td>4</td><td>low_games</td></tr>
+<tr><td>tmec-wp-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>tri-valley-tritons-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>triton-gold-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>tsm-b</td><td>4</td><td>low_games</td></tr>
+<tr><td>vanguard-blue-a</td><td>4</td><td>low_games</td></tr>
+<tr><td>908-blue-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>big-valley-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>cdm-white-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>channel-islands-united-gold-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>devil-s-gate-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>lacuwp-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>north-irvine-red-b</td><td>3</td><td>low_games</td></tr>
+<tr><td>nsd-stars-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>ocwpc-red-b</td><td>3</td><td>low_games</td></tr>
+<tr><td>orange-county-wpc-b</td><td>3</td><td>low_games</td></tr>
+<tr><td>orange-county-wpc-blue-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>orwp-b</td><td>3</td><td>low_games</td></tr>
+<tr><td>peak-polo-boltz-pt-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>rancho-tsunami-blue-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>route-66-aquatics-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>san-clemente-white-c</td><td>3</td><td>low_games</td></tr>
+<tr><td>san-diego-dons-14-black-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>sd-dons-c</td><td>3</td><td>low_games</td></tr>
+<tr><td>shaq-blue-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>shaq-white-a</td><td>3</td><td>low_games</td></tr>
+<tr><td>1stp-chawp-a</td><td>2</td><td>low_games</td></tr>
+<tr><td>1stq-ocwpc-red-b</td><td>2</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>1str-patriot-red-b</td><td>2</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>2ndp-set-a</td><td>2</td><td>low_games</td></tr>
+<tr><td>2ndq-san-clemente-black-b</td><td>2</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>2ndr-vanguard-silver-b</td><td>2</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>3rdp-north-irvine-red-b</td><td>2</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>3rdq-tmec-wp-a</td><td>2</td><td>low_games</td></tr>
+<tr><td>3rdr-san-clemente-white-c</td><td>2</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>brea-olinda-gold-a</td><td>2</td><td>low_games</td></tr>
+<tr><td>cdm-b</td><td>2</td><td>low_games</td></tr>
+<tr><td>lowpo-a</td><td>2</td><td>low_games</td></tr>
+<tr><td>riverside-a</td><td>2</td><td>low_games</td></tr>
+<tr><td>sd-dons-b</td><td>2</td><td>low_games</td></tr>
+<tr><td>sd-shores-gold-a</td><td>2</td><td>low_games</td></tr>
+<tr><td>trilogy-black-a</td><td>2</td><td>low_games</td></tr>
+<tr><td>11-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>15-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>19-route-66-aquatics-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1st-in-a-la-premier-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1st-in-b-pv-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1st-in-c-ciu-gold-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1st-in-d-908-yellow-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1st-in-e-commerce-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1st-in-f-sbwpc-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1st-in-g-gate-14u-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1st-in-h-south-coast-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sta-brea-olinda-gold-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sta-ciu-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sta-mission-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sta-north-irvine-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stb-la-jolla-united-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stb-newport-beach-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stb-orange-county-wpc-b</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stc-norcal-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stc-vanguard-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stc-vanguard-silver-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1std-alameda-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1std-mission-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1std-newport-beach-silver-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1ste-908-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stf-commerce-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stg-lawpc-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stg-mission-wpc-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stg-north-irvine-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stg-patriot-navy-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stg-poway-valley-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sth-ccu-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sth-gold-coast-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sth-mission-wpc-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sth-skip-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stj-cdm-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stj-diablo-alliance-b</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stj-la-jolla-united-navy-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stk-680-b</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stk-tsunami-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stl-norcal-b</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stm-back-bay-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stm-stanford-c</td><td>1</td><td>low_games</td></tr>
+<tr><td>1stn-mission-wpc-b</td><td>1</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>1str-cc-united-white-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>1sts-stanford-white-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>20-devil-s-gate-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>24-pride-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>25-american-river-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>26-south-coast-white-b</td><td>1</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>2nd-in-a-foothill-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nd-in-b-rose-bowl-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nd-in-c-trojan-cardinal-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nd-in-d-route-66-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nd-in-e-temple-city-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nd-in-f-shore-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nd-in-g-orwp-14u-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nd-in-h-pride-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nda-orwp-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nda-patriot-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nda-san-diego-dons-14-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndb-newport-beach-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndb-patriot-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndb-sd-eca-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndc-hieland-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndc-san-diego-dons-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndc-sd-dons-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndd-la-premier-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndd-mission-12a-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndg-pasadena-ac-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndg-socal-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndg-vanguard-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndg-vegas-renegades-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndh-nbwp-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndh-sand-canyon-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndh-sj-foundation-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndj-los-alamitos-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndj-patriot-navy-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndj-titans-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndk-north-irvine-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndk-south-coast-white-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndl-supreme-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndm-american-river-b</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndm-san-clemente-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2ndn-socal-gold-b</td><td>1</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>2ndr-burlingame-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>2nds-midpen-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3-channel-islands-united-gold-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rd-in-a-pv-blue-b</td><td>1</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>3rd-in-b-908-blue-b</td><td>1</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>3rd-in-c-titans-gold-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rd-in-d-south-coast-white-b</td><td>1</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>3rd-in-e-ciu-coast-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rd-in-f-supreme-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rd-in-g-pac-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rd-in-h-valley-united-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rda-route-66-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rda-sand-canyon-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rda-trilogy-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rda-vanguard-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdb-lamorinda-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdb-san-clemente-black-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdb-trojan-cardinal-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdc-gold-coast-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdc-ovac-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdc-rancho-tsunami-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdd-pride-red-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdd-san-diego-shores-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdd-titans-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdg-alameda-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdg-ocwpc-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdg-palos-verdes-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdh-lamorinda-b</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdh-vanguard-blue-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdj-channel-islands-united-gold-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdj-cvu-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdj-nbwp-white-b</td><td>1</td><td>low_games, not_in_registry_low_games</td></tr>
+<tr><td>3rdk-hieland-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdk-vanguard-b</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdl-680-c</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdm-cmac-a</td><td>1</td><td>low_games</td></tr>
+<tr><td>3rdm-north-irvine-b</td><td>1</td><td>low_games</td></tr></tbody></table></div>
+</body></html>
