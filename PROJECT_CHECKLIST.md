@@ -1,24 +1,23 @@
-# CPI v1.0 Project Checklist
+# CPI v1.0 Checklist
 
 ## Epic 1: Architecture
 - [x] Clean folder structure
-- [x] Universal data model starter
 - [x] Central Club Registry
-- [x] Fixed asset paths
-- [x] Reusable dynamic pages
-- [ ] Update workflow documentation
+- [x] Dynamic rankings page
+- [x] Dynamic team pages
+- [x] Dynamic club pages
+- [x] Tournament model placeholder
 
 ## Epic 2: Branding
-- [x] Import top priority clubs
-- [x] Add websites, colors, and regions where provided
-- [x] Centralize branding by club
+- [x] Import top 15 priority clubs
+- [x] Add club colors, URLs, and regions
+- [x] Apply club branding to team/club pages
 - [ ] Add Tier 2 club logos
-- [ ] Replace remaining placeholders
 
-## Epic 3: Rankings Engine
-- [x] Universal rankings table
-- [x] Search
-- [x] Group filter
-- [x] Movement display
-- [ ] Multi-age/multi-gender data import
-- [ ] Tournament weighting engine
+## Epic 3: Data
+- [x] 14U Boys
+- [ ] 14U Girls
+- [ ] 16U Boys
+- [ ] 16U Girls
+- [ ] 18U Boys/Girls
+- [ ] 12U Boys/Girls
