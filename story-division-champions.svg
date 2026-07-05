@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020914"/>
+      <stop offset="48%" stop-color="#08213D"/>
+      <stop offset="100%" stop-color="#0B4AA2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="28%" r="48%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".78"/>
+      <stop offset="55%" stop-color="#7C3AED" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gold" cx="26%" cy="64%" r="42%">
+      <stop offset="0%" stop-color="#F7B500" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#F7B500" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="1800" height="1000" fill="url(#bg)"/>
+  <rect width="1800" height="1000" fill="url(#glow)"/>
+  <rect width="1800" height="1000" fill="url(#gold)"/>
+  <g opacity=".35" fill="none" stroke="#ffffff" stroke-width="5">
+    <path d="M-80 740 C220 620 350 900 640 750 C920 610 990 800 1260 660 C1480 545 1630 610 1880 510"/>
+    <path d="M-80 800 C260 690 380 930 670 800 C930 680 1050 860 1300 730 C1500 625 1640 675 1880 590"/>
+  </g>
+  <g transform="translate(1030 145) rotate(-16)" opacity=".92">
+    <circle cx="180" cy="180" r="158" fill="#F7B500"/>
+    <circle cx="180" cy="180" r="158" fill="none" stroke="#071428" stroke-width="16"/>
+    <path d="M40 186 C106 126 170 116 322 130" fill="none" stroke="#071428" stroke-width="14" stroke-linecap="round"/>
+    <path d="M74 270 C146 214 222 198 330 204" fill="none" stroke="#071428" stroke-width="14" stroke-linecap="round"/>
+    <path d="M180 28 C134 100 126 214 178 334" fill="none" stroke="#071428" stroke-width="14" stroke-linecap="round"/>
+    <path d="M255 48 C224 116 226 238 286 306" fill="none" stroke="#071428" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g opacity=".18" transform="translate(1180 430)" fill="#fff" filter="url(#blur)">
+    <circle cx="0" cy="0" r="90"/>
+    <circle cx="122" cy="38" r="42"/>
+    <circle cx="-140" cy="32" r="52"/>
+    <circle cx="-245" cy="-18" r="28"/>
+    <circle cx="210" cy="-22" r="28"/>
+  </g>
+  <g transform="translate(90 675)">
+    <text x="0" y="0" font-family="Arial Black, Arial, sans-serif" font-size="92" font-weight="900" fill="#fff" letter-spacing="-4">DIVISION CHAMPIONS</text>
+    <text x="4" y="72" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#d9e7f8">More than the top bracket.</text>
+  </g>
+</svg>
