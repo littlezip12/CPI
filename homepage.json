@@ -1,95 +1,84 @@
 {
+  "version": "2.3",
   "hero": {
     "label": "This Week in California Water Polo",
-    "title": "Super Finals changed more than the top of the rankings",
-    "summary": "From championship brackets to breakthrough division runs, CPI tracks the stories that moved California youth water polo forward.",
+    "title": "Super Finals changed the rankings \u2014 and gave every division a story",
+    "summary": "CPI is becoming the front page for California water polo: champions, breakthrough teams, club momentum, and the ranking shifts that matter.",
+    "image": "assets/media/frontpage-superfinals.svg",
+    "imageCredit": "CPI generated artwork",
     "primaryCta": "View Rankings",
     "primaryUrl": "rankings.html",
-    "secondaryCta": "Explore Clubs",
-    "secondaryUrl": "clubs.html",
-    "image": "assets/media/hero-superfinals.svg",
-    "imageAlt": "CPI generated water polo tournament hero graphic",
-    "imageCredit": "CPI generated artwork"
+    "secondaryCta": "Tournament Center",
+    "secondaryUrl": "tournaments.html"
   },
-  "headlines": [
+  "championStrip": [
     {
-      "tag": "Rankings",
-      "title": "14U Boys post-Super Finals rankings are live",
-      "url": "rankings.html"
+      "division": "14U Boys D1",
+      "team": "La Jolla United A",
+      "url": "team.html?team=la-jolla-united-a"
     },
     {
-      "tag": "Storyline",
-      "title": "Skip Water Polo\u2019s D3 title run deserves a spotlight",
+      "division": "14U Boys D3",
+      "team": "Skip Water Polo",
       "url": "tournaments.html"
     },
     {
-      "tag": "Clubs",
-      "title": "Club Registry now powers team and club profiles",
-      "url": "clubs.html"
-    },
-    {
-      "tag": "Next",
-      "title": "Girls divisions and additional age groups are next data targets",
+      "division": "Girls Recap",
+      "team": "Coming Soon",
       "url": "rankings.html"
     },
     {
-      "tag": "Method",
-      "title": "CPI focuses on verified tournament results only",
-      "url": "methodology.html"
+      "division": "Next Event",
+      "team": "Junior Olympics",
+      "url": "tournaments.html"
     }
   ],
-  "recaps": [
+  "headlines": [
     {
-      "title": "Boys Weekend Recap",
-      "event": "Futures Super Finals",
-      "champion": "La Jolla United A",
-      "runnerUp": "To be updated",
-      "story": "Top teams held form, but movement across divisions created some of the best stories of the weekend."
+      "tag": "Feature",
+      "time": "This week",
+      "title": "Super Finals shifted the 14U Boys landscape",
+      "url": "rankings.html"
     },
     {
-      "title": "Girls Weekend Recap",
-      "event": "Latest Girls Tournament",
-      "champion": "Coming soon",
-      "runnerUp": "Coming soon",
-      "story": "Girls rankings and recap modules are ready once the next dataset is loaded."
-    }
-  ],
-  "celebrations": [
-    {
-      "award": "Division Champion Spotlight",
-      "team": "Skip Water Polo",
-      "detail": "14U Boys D3 champion spotlight placeholder."
+      "tag": "Division Champion",
+      "time": "Spotlight",
+      "title": "Skip Water Polo\u2019s D3 title run is exactly why every bracket matters",
+      "url": "tournaments.html"
     },
     {
-      "award": "Biggest Mover",
-      "team": "Auto-generated from CPI movement",
-      "detail": "Uses rankings data once all groups are loaded."
+      "tag": "Rankings",
+      "time": "Updated",
+      "title": "Post-Super Finals CPI rankings are live",
+      "url": "rankings.html"
     },
     {
-      "award": "Cinderella Story",
-      "team": "To be selected after each tournament",
-      "detail": "Highlights breakthrough teams across all divisions."
+      "tag": "Girls Coverage",
+      "time": "Next",
+      "title": "Girls tournament recap module is ready for the next dataset",
+      "url": "rankings.html"
     },
     {
-      "award": "Club Performance",
-      "team": "Trending clubs module",
-      "detail": "Celebrates depth across age groups and divisions."
+      "tag": "Product",
+      "time": "New",
+      "title": "CPI homepage now supports visual story packages",
+      "url": "clubs.html"
     }
   ],
   "mediaCards": [
     {
       "title": "Division Champions",
       "eyebrow": "Every bracket matters",
-      "summary": "Champions from D1 through D3 deserve recognition, not just the top-ranked teams.",
-      "image": "assets/media/story-division-champions.svg",
+      "summary": "CPI will highlight champions from D1 through D3 \u2014 not just the top-ranked teams.",
+      "image": "assets/media/frontpage-champions.svg",
       "imageCredit": "CPI generated artwork",
       "url": "tournaments.html"
     },
     {
-      "title": "Girls Weekend Recap",
-      "eyebrow": "Coverage expansion",
-      "summary": "The homepage is ready for girls tournament recaps as soon as the next dataset is loaded.",
-      "image": "assets/media/story-girls-recap.svg",
+      "title": "Biggest Movers",
+      "eyebrow": "Ranking impact",
+      "summary": "The story is not only who finished first. It is who climbed, broke through, and changed expectations.",
+      "image": "assets/media/frontpage-movers.svg",
       "imageCredit": "CPI generated artwork",
       "url": "rankings.html"
     },
@@ -97,9 +86,247 @@
       "title": "Tournament Center",
       "eyebrow": "Coming next",
       "summary": "CPI will turn major tournaments into destinations with champions, upsets, movers, and recaps.",
-      "image": "assets/media/story-tournament-center.svg",
+      "image": "assets/media/frontpage-tournament.svg",
       "imageCredit": "CPI generated artwork",
       "url": "tournaments.html"
+    }
+  ],
+  "tournamentSpotlight": {
+    "name": "Futures Super Finals",
+    "label": "Tournament Spotlight",
+    "summary": "The next evolution of CPI turns every major event into a full story hub.",
+    "champion": "La Jolla United A",
+    "divisionStory": "Skip Water Polo wins 14U Boys D3",
+    "biggestMover": "Skip A",
+    "url": "tournaments.html"
+  },
+  "featuredGroup": {
+    "name": "14U Boys",
+    "summary": "The current live group in CPI, built to expand across girls divisions and additional age groups.",
+    "teamsTracked": 106,
+    "clubsTracked": 79,
+    "topTeams": [
+      {
+        "season": "2026",
+        "group": "14U Boys",
+        "gender": "Boys",
+        "ageGroup": "14U",
+        "postRank": 1,
+        "preRank": 1,
+        "movement": 0,
+        "team": "La Jolla United A",
+        "slug": "la-jolla-united-a",
+        "club": "La Jolla United",
+        "clubSlug": "la-jolla-united",
+        "initials": "LJ",
+        "clubInitials": "LJ",
+        "postCPI": 2161.0,
+        "cpiChange": 81.9,
+        "latestTournament": "Futures Super Finals",
+        "latestTournamentRecord": "5-0",
+        "bestWinClean": "Mission A (12\u20139)",
+        "gamesLatest": 5,
+        "primaryColor": "#092E61",
+        "secondaryColor": "#D4AF37",
+        "teamPage": "team.html?team=la-jolla-united-a",
+        "clubPage": "club.html?club=la-jolla-united",
+        "logo": "assets/logos/la-jolla-united.png",
+        "website": "https://lajollaunited.com/",
+        "region": "San Diego",
+        "displayClubName": "La Jolla United"
+      },
+      {
+        "season": "2026",
+        "group": "14U Boys",
+        "gender": "Boys",
+        "ageGroup": "14U",
+        "postRank": 2,
+        "preRank": 5,
+        "movement": 3,
+        "team": "NorCal A",
+        "slug": "norcal-a",
+        "club": "NorCal",
+        "clubSlug": "norcal",
+        "initials": "N",
+        "clubInitials": "N",
+        "postCPI": 2076.3,
+        "cpiChange": 62.9,
+        "latestTournament": "Futures Super Finals",
+        "latestTournamentRecord": "4-1",
+        "bestWinClean": "Patriot A (12\u20136)",
+        "gamesLatest": 5,
+        "primaryColor": "#111111",
+        "secondaryColor": "#12B7C8",
+        "teamPage": "team.html?team=norcal-a",
+        "clubPage": "club.html?club=norcal",
+        "logo": "assets/logos/norcal.png",
+        "website": "https://www.norcal-aquatics.com/",
+        "region": "Bay Area",
+        "displayClubName": "NorCal Aquatics"
+      },
+      {
+        "season": "2026",
+        "group": "14U Boys",
+        "gender": "Boys",
+        "ageGroup": "14U",
+        "postRank": 3,
+        "preRank": 4,
+        "movement": 1,
+        "team": "Mission A",
+        "slug": "mission-a",
+        "club": "Mission",
+        "clubSlug": "mission",
+        "initials": "M",
+        "clubInitials": "M",
+        "postCPI": 2068.0,
+        "cpiChange": 54.0,
+        "latestTournament": "Futures Super Finals",
+        "latestTournamentRecord": "4-1",
+        "bestWinClean": "SD Dons A (10\u20135)",
+        "gamesLatest": 5,
+        "primaryColor": "#111111",
+        "secondaryColor": "#FFFFFF",
+        "teamPage": "team.html?team=mission-a",
+        "clubPage": "club.html?club=mission",
+        "logo": "assets/logos/mission.png",
+        "website": "https://missionwpc.com/home",
+        "region": "Southern California",
+        "displayClubName": "Mission WPC"
+      },
+      {
+        "season": "2026",
+        "group": "14U Boys",
+        "gender": "Boys",
+        "ageGroup": "14U",
+        "postRank": 4,
+        "preRank": 8,
+        "movement": 4,
+        "team": "LA Premier A",
+        "slug": "la-premier-a",
+        "club": "LA Premier",
+        "clubSlug": "la-premier",
+        "initials": "LP",
+        "clubInitials": "LP",
+        "postCPI": 2037.7,
+        "cpiChange": 43.0,
+        "latestTournament": "Futures Super Finals",
+        "latestTournamentRecord": "4-2",
+        "bestWinClean": "Patriot A (6.5\u20136.4)",
+        "gamesLatest": 6,
+        "primaryColor": "#073763",
+        "secondaryColor": "#F7B500",
+        "teamPage": "team.html?team=la-premier-a",
+        "clubPage": "club.html?club=la-premier",
+        "logo": "assets/logos/la-premier.svg",
+        "website": "",
+        "region": "",
+        "displayClubName": "LA Premier"
+      },
+      {
+        "season": "2026",
+        "group": "14U Boys",
+        "gender": "Boys",
+        "ageGroup": "14U",
+        "postRank": 5,
+        "preRank": 3,
+        "movement": -2,
+        "team": "SD Dons A",
+        "slug": "sd-dons-a",
+        "club": "SD Dons",
+        "clubSlug": "sd-dons",
+        "initials": "SD",
+        "clubInitials": "SD",
+        "postCPI": 2011.0,
+        "cpiChange": -6.3,
+        "latestTournament": "Futures Super Finals",
+        "latestTournamentRecord": "3-3",
+        "bestWinClean": "OVAC A (11\u20137)",
+        "gamesLatest": 6,
+        "primaryColor": "#C8102E",
+        "secondaryColor": "#F7B500",
+        "teamPage": "team.html?team=sd-dons-a",
+        "clubPage": "club.html?club=sd-dons",
+        "logo": "assets/logos/sd-dons.png",
+        "website": "https://sddonspolo.com/",
+        "region": "San Diego",
+        "displayClubName": "San Diego Dons"
+      }
+    ]
+  },
+  "trendingClubs": [
+    {
+      "club": "La Jolla United",
+      "region": "San Diego",
+      "logo": "assets/logos/la-jolla-united.png",
+      "url": "club.html?club=la-jolla-united",
+      "detail": "Best ranked team #1"
+    },
+    {
+      "club": "NorCal Aquatics",
+      "region": "Bay Area",
+      "logo": "assets/logos/norcal.png",
+      "url": "club.html?club=norcal",
+      "detail": "Best ranked team #2"
+    },
+    {
+      "club": "Mission WPC",
+      "region": "Southern California",
+      "logo": "assets/logos/mission.png",
+      "url": "club.html?club=mission",
+      "detail": "Best ranked team #3"
+    },
+    {
+      "club": "San Diego Dons",
+      "region": "San Diego",
+      "logo": "assets/logos/sd-dons.png",
+      "url": "club.html?club=sd-dons",
+      "detail": "Best ranked team #5"
+    },
+    {
+      "club": "Newport Beach Water Polo",
+      "region": "Orange County",
+      "logo": "assets/logos/newport-beach.png",
+      "url": "club.html?club=newport-beach",
+      "detail": "Best ranked team #7"
+    },
+    {
+      "club": "Channel Islands United",
+      "region": "Ventura / Channel Islands",
+      "logo": "assets/logos/ciu.png",
+      "url": "club.html?club=ciu",
+      "detail": "Best ranked team #8"
+    }
+  ],
+  "biggestMovers": [
+    {
+      "team": "Skip A",
+      "movement": 17,
+      "url": "team.html?team=skip-a",
+      "club": "Skip"
+    },
+    {
+      "team": "Rancho Tsunami A",
+      "movement": 11,
+      "url": "team.html?team=rancho-tsunami-a",
+      "club": "Rancho Tsunami"
+    },
+    {
+      "team": "Devils Gate A",
+      "movement": 11,
+      "url": "team.html?team=devils-gate-a",
+      "club": "Devils Gate"
+    },
+    {
+      "team": "Vegas Renegades A",
+      "movement": 11,
+      "url": "team.html?team=vegas-renegades-a",
+      "club": "Vegas Renegades"
+    },
+    {
+      "team": "Stanford A",
+      "movement": 8,
+      "url": "team.html?team=stanford-a",
+      "club": "Stanford"
     }
   ]
 }

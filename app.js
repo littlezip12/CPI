@@ -166,42 +166,26 @@ renderClubPage();
 
 
 
+
 function renderHomepage2(){
-  const shell=document.querySelector("#homepage2");
-  if(!shell) return;
-  const hp=window.CPI_HOMEPAGE||{};
-  const hero=hp.hero||{};
-  const headlines=hp.headlines||[];
-  const recaps=hp.recaps||[];
-  const celebrations=hp.celebrations||[];
-  const mediaCards=hp.mediaCards||[];
-  const topFive=rankings.slice(0,5);
-  const trending=clubs.filter(c=>c.logoStatus==="verified_by_user").sort((a,b)=>a.bestRank-b.bestRank).slice(0,5);
+  const shell=document.querySelector("#homepage2"); if(!shell) return;
+  const hp=window.CPI_HOMEPAGE||{}, hero=hp.hero||{}, headlines=hp.headlines||[], mediaCards=hp.mediaCards||[], championStrip=hp.championStrip||[], tournament=hp.tournamentSpotlight||{}, fg=hp.featuredGroup||{}, topTeams=fg.topTeams||rankings.slice(0,5), trending=hp.trendingClubs||[], movers=hp.biggestMovers||[];
   shell.innerHTML=`
-    <section class="home-hero-2">
-      <article class="hero-lead-card media-hero" style="--hero-image:url('${hero.image||"assets/media/hero-superfinals.svg"}')">
-        <div>
-          <span class="hero-category">${hero.label||"This Week in California Water Polo"}</span>
-          <h1>${hero.title||"California youth water polo has a new home"}</h1>
-          <p>${hero.summary||"Rankings, tournament coverage, club profiles, and the stories that deserve to be remembered."}</p>
-          <div class="hero-actions"><a class="btn" href="${hero.primaryUrl||"rankings.html"}">${hero.primaryCta||"View Rankings"}</a><a class="btn secondary" href="${hero.secondaryUrl||"clubs.html"}">${hero.secondaryCta||"Explore Clubs"}</a></div>
-        </div>
-        <div><div class="club-pill">Every team has a chance to be the story.</div><div class="image-credit">${hero.imageCredit||"CPI generated artwork"}</div></div>
+    <section class="champion-strip"><div class="champion-strip-inner"><div class="champion-label">Latest Champions</div>${championStrip.map(c=>`<a class="champion-item" href="${c.url||"#"}"><span>${c.division}</span><strong>${c.team}</strong></a>`).join("")}</div></section>
+    <section class="home-hero-2 editorial">
+      <article class="hero-lead-card media-hero editorial-hero" style="--hero-image:url('${hero.image||"assets/media/frontpage-superfinals.svg"}')">
+        <div><span class="hero-category">${hero.label||"This Week in California Water Polo"}</span><h1>${hero.title||"California youth water polo has a new home"}</h1><p>${hero.summary||"Rankings, tournament coverage, club profiles, and stories."}</p><div class="editorial-meta"><span>Every Match Matters</span><span>Every Team Has a Story</span><span>Post-Super Finals</span></div><div class="hero-actions"><a class="btn" href="${hero.primaryUrl||"rankings.html"}">${hero.primaryCta||"View Rankings"}</a><a class="btn secondary" href="${hero.secondaryUrl||"tournaments.html"}">${hero.secondaryCta||"Tournament Center"}</a></div></div>
+        <div><div class="club-pill">The front page of California youth water polo.</div><div class="image-credit">${hero.imageCredit||"CPI generated artwork"}</div></div>
       </article>
-      <aside class="headlines-panel"><h2>Latest Headlines</h2><div class="headline-list">${headlines.map(h=>`<a class="headline-item" href="${h.url||"#"}"><span class="headline-tag">${h.tag||"CPI"}</span><span class="headline-title">${h.title}</span></a>`).join("")}</div></aside>
+      <aside class="headlines-panel editorial-feed"><h2>Latest Headlines</h2><div class="headline-list">${headlines.map(h=>`<a class="headline-item" href="${h.url||"#"}"><span class="headline-tag">${h.tag||"CPI"}</span><span class="headline-title">${h.title}<em class="headline-time">${h.time||""}</em></span></a>`).join("")}</div></aside>
     </section>
     <main class="home-shell">
       <section class="media-grid">${mediaCards.map(m=>`<a class="media-card" href="${m.url||"#"}"><div class="media-card-image" style="background-image:url('${m.image}')"></div><div class="media-card-body"><span class="media-eyebrow">${m.eyebrow||"CPI Story"}</span><h3>${m.title}</h3><p>${m.summary}</p><div class="image-credit">${m.imageCredit||"CPI generated artwork"}</div></div></a>`).join("")}</section>
-      <section class="home-grid-2">
-        <article class="module-card"><h2>Weekend Recap</h2><p class="subtle">One boys recap and one girls recap, built to expand as new data is loaded.</p><div class="recap-grid">${recaps.map(r=>`<div class="recap-card"><strong>${r.title}</strong><p class="subtle">${r.event}</p><div class="recap-line"><span>Champion</span><b>${r.champion}</b></div><div class="recap-line"><span>Runner-up</span><b>${r.runnerUp}</b></div><p class="small">${r.story}</p></div>`).join("")}</div></article>
-        <article class="module-card"><h2>Stories Worth Celebrating</h2><p class="subtle">Not just the top division. CPI highlights meaningful performances across every bracket.</p><div class="story-stack">${celebrations.map(s=>`<div class="story-mini"><span>${s.award}</span><strong>${s.team}</strong><p class="small">${s.detail}</p></div>`).join("")}</div></article>
-      </section>
-      <section class="module-card featured-group-panel"><div class="section-head" style="margin:0 0 10px;"><div><h2>Featured Group</h2><p class="subtle">14U Boys is live now. This can rotate by age/gender as data expands.</p></div><a class="btn" href="rankings.html">Full Rankings</a></div><div class="rank-strip">${topFive.map(r=>`<a class="rank-tile" href="${r.teamPage}"><span class="rank">#${r.postRank}</span><strong>${r.team}</strong><p class="small">CPI ${Number(r.postCPI).toFixed(1)}</p></a>`).join("")}</div></section>
-      <section class="home-grid-2">
-        <article class="module-card"><h2>Trending Clubs</h2><div class="trending-club-list">${trending.map(c=>`<a class="trending-club" href="${c.clubPage}"><img src="${c.logo}" alt="${c.displayName||c.club} logo"><div><strong>${c.displayName||c.club}</strong><span>${c.region||"Region TBD"} · Best rank #${c.bestRank}</span></div></a>`).join("")}</div></article>
-        <article class="module-card"><h2>Upcoming Tournaments</h2><div class="story-stack">${(tournaments||[]).map(t=>`<div class="story-mini"><span>${t.weightTier||"Tournament"}</span><strong>${t.name}</strong><p class="small">${t.notes||t.status}</p></div>`).join("")}</div></article>
-      </section>
+      <section class="tournament-spotlight"><div class="tournament-visual"></div><article class="module-card"><span class="hero-category">${tournament.label||"Tournament Spotlight"}</span><h2>${tournament.name||"Tournament Center"}</h2><p class="subtle">${tournament.summary||"Champions, upsets, movers, and recap modules are coming next."}</p><div class="tournament-stats"><div class="tournament-stat"><span>Champion</span><strong>${tournament.champion||"Coming soon"}</strong></div><div class="tournament-stat"><span>Division Story</span><strong>${tournament.divisionStory||"Every bracket matters"}</strong></div><div class="tournament-stat"><span>Biggest Mover</span><strong>${tournament.biggestMover||"Coming soon"}</strong></div><div class="tournament-stat"><span>Next Step</span><strong>Tournament Hub</strong></div></div><div class="hero-actions"><a class="btn" href="${tournament.url||"tournaments.html"}">Read Tournament →</a></div></article></section>
+      <section class="module-card featured-group-panel"><div class="section-head" style="margin:0 0 10px;"><div><h2>Featured Group: ${fg.name||"14U Boys"}</h2><p class="subtle">${fg.summary||"Live rankings group."}</p></div><a class="btn" href="rankings.html">Full Rankings</a></div><div class="stat-strip"><div class="stat"><strong>${fg.teamsTracked||rankings.length}</strong><span>Teams tracked</span></div><div class="stat"><strong>${fg.clubsTracked||""}</strong><span>Clubs represented</span></div><div class="stat"><strong>${topTeams[0]?.team||"—"}</strong><span>Current #1</span></div><div class="stat"><strong>Post SF</strong><span>Latest update</span></div></div><div class="rank-strip">${topTeams.slice(0,5).map(r=>`<a class="rank-tile" href="${r.teamPage||"#"}"><span class="rank">#${r.postRank}</span><strong>${r.team}</strong><p class="small">CPI ${Number(r.postCPI||0).toFixed(1)}</p></a>`).join("")}</div></section>
+      <section class="home-grid-2"><article class="module-card"><h2>Trending Clubs</h2><div class="trending-club-list">${trending.map(c=>`<a class="trending-club" href="${c.url||"#"}"><img src="${c.logo}" alt="${c.club} logo"><div><strong>${c.club}</strong><span>${c.region||"Region TBD"} · ${c.detail||""}</span></div></a>`).join("")}</div></article><article class="module-card"><h2>Biggest Movers</h2><p class="subtle">Movement tells the story of who is breaking through.</p><div class="mover-list">${movers.map(m=>`<a class="mover-item" href="${m.url||"#"}"><strong>${m.team}<small class="small"> · ${m.club||""}</small></strong><span>▲ +${m.movement}</span></a>`).join("")}</div></article></section>
     </main>`;
 }
 renderHomepage2();
+
 
