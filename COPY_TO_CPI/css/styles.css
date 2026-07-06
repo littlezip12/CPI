@@ -1081,3 +1081,12 @@ img[src*="cpi-logo-fallback"],
   max-height:100%;
   object-fit:contain;
 }
+
+/* Release 4.2A.1 — Aggressive logo fallback */
+.cpi4-club-row img,
+.trend-row img,
+.club-insight img,
+img[alt*="logo"] {
+  object-fit: contain !important;
+  background: #fff !important;
+}
