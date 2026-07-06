@@ -1053,3 +1053,31 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Release 4.2 Phase A — Logo Stability */
+img[src*="cpi-logo-fallback"],
+.cpi4-club-row img,
+.trend-row img,
+.trending-club img,
+.club-insight img {
+  object-fit: contain;
+}
+.cpi4-club-row img,
+.trend-row img,
+.trending-club img,
+.club-insight img {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(5,18,37,.10);
+}
+.logo-frame {
+  background:#fff;
+  border-radius:16px;
+  padding:8px;
+  display:grid;
+  place-items:center;
+}
+.logo-frame img {
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}

@@ -208,7 +208,7 @@ function renderHomepage2(){
         </article>
         <article class="photo-module">
           <div class="photo-module-title"><h2>Trending Clubs</h2><a href="clubs.html">View all clubs</a></div>
-          <div class="trend-list">${clubs.map(c=>`<a class="trend-row" href="${c.url||"#"}"><img src="${c.logo||"assets/media/frontpage-champions.svg"}" alt="${c.displayName||c.club}"><div><strong>${c.displayName||c.club}</strong><span>${c.rankedTeams||0} ranked teams · Highest: #${c.bestRank||"—"}</span></div><b>${c.positiveMovement? "▲ "+c.positiveMovement : "—"}</b></a>`).join("")}</div>
+          <div class="trend-list">${clubs.map(c=>`<a class="trend-row" href="${c.url||"#"}"><img src="${cpiSafeLogo(c.logo)}" alt="${c.displayName||c.club}"><div><strong>${c.displayName||c.club}</strong><span>${c.rankedTeams||0} ranked teams · Highest: #${c.bestRank||"—"}</span></div><b>${c.positiveMovement? "▲ "+c.positiveMovement : "—"}</b></a>`).join("")}</div>
         </article>
         <article class="photo-module">
           <div class="photo-module-title"><h2>Upcoming Tournaments</h2><a href="tournaments.html">View all tournaments</a></div>
@@ -286,13 +286,13 @@ function renderHomepage4(){
       <section class="cpi4-three">
         <article class="cpi4-panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><h2>Rankings Snapshot</h2><a class="cpi4-link" href="${snapshot.url||"rankings.html"}">Full rankings</a></div><p class="cpi4-subtle">${snapshot.group||"14U Boys"} · ${snapshot.lastUpdated||"Latest update"}</p><div class="cpi4-rank-list">${(snapshot.topTeams||[]).slice(0,5).map(r=>`<a class="cpi4-rank-row" href="${r.teamPage||"rankings.html"}"><b class="cpi4-rank">#${r.postRank}</b><div><strong>${r.team}</strong><span>${r.club||""}</span></div><span>CPI ${Number(r.postCPI||0).toFixed(1)}</span></a>`).join("")}</div></article>
         <article class="cpi4-panel"><h2>Biggest Movers</h2><p class="cpi4-subtle">Movement creates the week’s best storylines.</p><div class="cpi4-mover-list">${movers.map(m=>`<a class="cpi4-mover-row" href="${m.url||"#"}"><b class="cpi4-move">▲${m.movement}</b><div><strong>${m.team}</strong><span>${m.club||""} · now #${m.rank}</span></div><span>View</span></a>`).join("")}</div></article>
-        <article class="cpi4-panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><h2>Trending Clubs</h2><a class="cpi4-link" href="clubs.html">View all</a></div><div class="cpi4-club-list">${clubs.map(c=>`<a class="cpi4-club-row" href="${c.url||"#"}"><img src="${c.logo||"assets/media/frontpage-champions.svg"}" alt="${c.displayName||c.club}"><div><strong>${c.displayName||c.club}</strong><span>${c.rankedTeams||0} ranked team(s) · highest #${c.bestRank||"—"}</span></div><b class="cpi4-move">▲${c.positiveMovement||0}</b></a>`).join("")}</div></article>
+        <article class="cpi4-panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><h2>Trending Clubs</h2><a class="cpi4-link" href="clubs.html">View all</a></div><div class="cpi4-club-list">${clubs.map(c=>`<a class="cpi4-club-row" href="${c.url||"#"}"><img src="${cpiSafeLogo(c.logo)}" alt="${c.displayName||c.club}"><div><strong>${c.displayName||c.club}</strong><span>${c.rankedTeams||0} ranked team(s) · highest #${c.bestRank||"—"}</span></div><b class="cpi4-move">▲${c.positiveMovement||0}</b></a>`).join("")}</div></article>
       </section>
 
       <section class="cpi4-feature">
         <div class="cpi4-feature-img" style="--feature-image:url('${featured.image}')"></div>
         <article class="cpi4-panel cpi4-feature-card">
-          ${featured.logo?`<img src="${featured.logo}" alt="${featured.displayName||featured.club} logo">`:""}
+          ${featured.logo?`<img src="${cpiSafeLogo(featured.logo)}" alt="${featured.displayName||featured.club} logo">`:""}
           <span class="cpi4-label">Featured Club</span>
           <h2>${featured.headline||featured.displayName||"Featured Club"}</h2>
           <p class="cpi4-subtle">${featured.summary||""}</p>
@@ -316,3 +316,24 @@ function renderHomepage4(){
     </main>`;
 }
 renderHomepage4();
+
+
+function cpiLogoFallback(){
+  return window.CPI_LOGO_FALLBACK || "assets/cpi-logo-fallback.svg";
+}
+function cpiSafeLogo(src){
+  if(!src || src === "undefined" || src === "null") return cpiLogoFallback();
+  return src;
+}
+function cpiInstallImageFallbacks(){
+  document.querySelectorAll("img").forEach(img=>{
+    if(!img.dataset.cpiFallbackInstalled){
+      img.dataset.cpiFallbackInstalled="true";
+      img.onerror=function(){ this.onerror=null; this.src=cpiLogoFallback(); };
+      if(!img.getAttribute("src")) img.src=cpiLogoFallback();
+    }
+  });
+}
+document.addEventListener("DOMContentLoaded", cpiInstallImageFallbacks);
+
+setTimeout(cpiInstallImageFallbacks, 50);
