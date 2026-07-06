@@ -236,3 +236,83 @@ function renderGroupHub(){
   root.innerHTML=`<section class="group-hub-hero"><article class="group-hub-hero-card"><div><span class="hero-category">${hub.heroLabel}</span><h1>${hub.heroTitle}</h1><p>${hub.heroSummary}</p><div class="hero-actions"><a class="btn" href="rankings.html">View Rankings</a><a class="btn secondary" href="clubs.html">Explore Clubs</a></div></div><div class="club-pill">Group-specific coverage for the teams you care about most.</div></article><aside class="module-card"><h2>Group Snapshot</h2><div class="profile-kpi-grid">${modules}</div></aside></section><section class="group-nav-grid">${allLinks}</section><main class="hub-shell"><section class="hub-grid"><article class="hub-story-card"><span class="hero-category">${hub.topStory?.eyebrow||"Top Story"}</span><h2>${hub.topStory?.title||hub.group}</h2><p class="subtle">${hub.topStory?.summary||""}</p><div class="hero-actions"><a class="btn" href="${hub.topStory?.url||"rankings.html"}">Read More →</a></div></article><article class="module-card"><h2>Biggest Movers</h2><div class="hub-list">${movers||"<p class='subtle'>Movers will populate when rankings data is available.</p>"}</div></article></section><section class="module-card featured-group-panel"><div class="section-head" style="margin:0 0 10px;"><div><h2>${hub.group} Top 10</h2><p class="subtle">A group-specific view keeps families, players, and coaches focused on the division they care about.</p></div><a class="btn" href="rankings.html">All Rankings</a></div><div class="hub-list">${top||"<p class='subtle'>Rankings will populate when this group is loaded.</p>"}</div></section></main>`;
 }
 renderGroupHub();
+
+
+function renderHomepage4(){
+  const root=document.querySelector("#homepage4");
+  if(!root) return;
+  const hp=window.CPI_HOMEPAGE||{};
+  const hero=hp.heroStory||{};
+  const ticker=hp.ticker||[];
+  const headlines=hp.headlines||[];
+  const tournament=hp.latestTournament||{};
+  const storyCards=hp.storyCards||[];
+  const snapshot=hp.rankingsSnapshot||{};
+  const movers=hp.biggestMovers||[];
+  const clubs=hp.trendingClubs||[];
+  const featured=hp.featuredClub||{};
+  const next=hp.comingNext||{};
+  const tickerItems=[...ticker,...ticker].map(t=>`<a href="${t.url||"#"}">${t.label}</a>`).join("");
+  const statCards=(tournament.cards||[]).map(c=>`<div class="cpi4-mini-stat"><span>${c.label}</span><strong>${c.value}</strong></div>`).join("");
+  root.innerHTML=`
+    <main class="cpi4">
+      <section class="cpi4-ticker"><span class="cpi4-ticker-label">Live CPI</span><div class="cpi4-ticker-track">${tickerItems}</div></section>
+
+      <section class="cpi4-top">
+        <article class="cpi4-hero" style="--hero-image:url('${hero.image}')">
+          <span class="cpi4-kicker">${hero.kicker||hero.eyebrow||"This Week"}</span>
+          <h1>${hero.title||"This Week in California Polo"}</h1>
+          <p>${hero.summary||""}</p>
+          <div class="cpi4-meta">${(hero.meta||[]).map(m=>`<span>${m}</span>`).join("")}</div>
+          <div class="cpi4-actions"><a class="cpi4-btn" href="${hero.primaryUrl||"tournaments.html"}">${hero.primaryCta||"Read Story"} →</a><a class="cpi4-btn secondary" href="${hero.secondaryUrl||"rankings.html"}">${hero.secondaryCta||"View Rankings"}</a></div>
+        </article>
+        <aside class="cpi4-panel">
+          <h2>Latest Headlines</h2>
+          <div class="cpi4-headline-list">${headlines.map(h=>`<a class="cpi4-headline" href="${h.url||"#"}"><span class="cpi4-headline-icon">${h.icon||"•"}</span><span class="cpi4-label">${h.label||"CPI"}</span><strong>${h.title}</strong><span class="cpi4-arrow">›</span></a>`).join("")}</div>
+        </aside>
+      </section>
+
+      <section class="cpi4-grid-main">
+        <article class="cpi4-panel cpi4-tournament">
+          <div class="cpi4-tournament-img" style="--tournament-image:url('${tournament.image}')"></div>
+          <div><span class="cpi4-label">Latest Tournament Recap</span><h2>${tournament.name||"Latest Tournament"}</h2><p class="cpi4-subtle">${tournament.summary||""}</p><div class="cpi4-recap-stats">${statCards}</div><div class="cpi4-actions"><a class="cpi4-btn" href="${tournament.url||"tournaments.html"}">Open Recap →</a></div></div>
+        </article>
+        <article class="cpi4-panel">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px;"><h2>Story Cards</h2><a class="cpi4-link" href="tournaments.html">View all stories</a></div>
+          <div class="cpi4-story-grid">${storyCards.map(s=>`<a class="cpi4-story-card" href="${s.url||"#"}"><img src="${s.image}" alt="${s.title}"><div class="cpi4-story-body"><span class="cpi4-label">${s.eyebrow||"Story"}</span><h3>${s.title}</h3><p>${s.summary}</p><b class="cpi4-link">Read Story →</b></div></a>`).join("")}</div>
+        </article>
+      </section>
+
+      <section class="cpi4-three">
+        <article class="cpi4-panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><h2>Rankings Snapshot</h2><a class="cpi4-link" href="${snapshot.url||"rankings.html"}">Full rankings</a></div><p class="cpi4-subtle">${snapshot.group||"14U Boys"} · ${snapshot.lastUpdated||"Latest update"}</p><div class="cpi4-rank-list">${(snapshot.topTeams||[]).slice(0,5).map(r=>`<a class="cpi4-rank-row" href="${r.teamPage||"rankings.html"}"><b class="cpi4-rank">#${r.postRank}</b><div><strong>${r.team}</strong><span>${r.club||""}</span></div><span>CPI ${Number(r.postCPI||0).toFixed(1)}</span></a>`).join("")}</div></article>
+        <article class="cpi4-panel"><h2>Biggest Movers</h2><p class="cpi4-subtle">Movement creates the week’s best storylines.</p><div class="cpi4-mover-list">${movers.map(m=>`<a class="cpi4-mover-row" href="${m.url||"#"}"><b class="cpi4-move">▲${m.movement}</b><div><strong>${m.team}</strong><span>${m.club||""} · now #${m.rank}</span></div><span>View</span></a>`).join("")}</div></article>
+        <article class="cpi4-panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><h2>Trending Clubs</h2><a class="cpi4-link" href="clubs.html">View all</a></div><div class="cpi4-club-list">${clubs.map(c=>`<a class="cpi4-club-row" href="${c.url||"#"}"><img src="${c.logo||"assets/media/frontpage-champions.svg"}" alt="${c.displayName||c.club}"><div><strong>${c.displayName||c.club}</strong><span>${c.rankedTeams||0} ranked team(s) · highest #${c.bestRank||"—"}</span></div><b class="cpi4-move">▲${c.positiveMovement||0}</b></a>`).join("")}</div></article>
+      </section>
+
+      <section class="cpi4-feature">
+        <div class="cpi4-feature-img" style="--feature-image:url('${featured.image}')"></div>
+        <article class="cpi4-panel cpi4-feature-card">
+          ${featured.logo?`<img src="${featured.logo}" alt="${featured.displayName||featured.club} logo">`:""}
+          <span class="cpi4-label">Featured Club</span>
+          <h2>${featured.headline||featured.displayName||"Featured Club"}</h2>
+          <p class="cpi4-subtle">${featured.summary||""}</p>
+          <div class="cpi4-recap-stats"><div class="cpi4-mini-stat"><span>Ranked Teams</span><strong>${featured.rankedTeams||0}</strong></div><div class="cpi4-mini-stat"><span>Best Rank</span><strong>#${featured.bestRank||"—"}</strong></div><div class="cpi4-mini-stat"><span>Momentum</span><strong>▲${featured.positiveMovement||0}</strong></div><div class="cpi4-mini-stat"><span>Top 25</span><strong>${featured.top25Teams||0}</strong></div></div>
+          <div class="cpi4-actions"><a class="cpi4-btn" href="${featured.url||"clubs.html"}">Open Club →</a></div>
+        </article>
+      </section>
+
+      <section class="cpi4-coming">
+        <div class="cpi4-coming-img" style="--coming-image:url('${next.image}')"></div>
+        <article class="cpi4-panel">
+          <span class="cpi4-label">${next.title||"Coming Next"}</span>
+          <h2>${next.headline||"What CPI is watching next"}</h2>
+          <p class="cpi4-subtle">${next.summary||""}</p>
+          <div class="cpi4-next-list">${(next.items||[]).map(i=>`<span>${i}</span>`).join("")}</div>
+          <div class="cpi4-actions"><a class="cpi4-btn secondary" href="${next.url||"tournaments.html"}">Preview →</a></div>
+        </article>
+      </section>
+
+      <footer class="cpi4-footer"><div><strong>California Polo Index</strong><br>Independent and unofficial. Rankings include verified tournament results only.</div><div class="cpi4-footer-links"><a href="methodology.html">Methodology</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a></div></footer>
+    </main>`;
+}
+renderHomepage4();
