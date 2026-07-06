@@ -165,39 +165,30 @@ renderTeamPage();
 renderClubPage();
 
 
+
+
+
+
 function renderHomepage2(){
-  const shell=document.querySelector("#homepage2");
-  if(!shell) return;
-  const hp=window.CPI_HOMEPAGE||{};
-  const hero=hp.hero||{};
-  const headlines=hp.headlines||[];
-  const recaps=hp.recaps||[];
-  const celebrations=hp.celebrations||[];
-  const topFive=rankings.slice(0,5);
-  const trending=clubs.filter(c=>c.logoStatus==="verified_by_user").sort((a,b)=>a.bestRank-b.bestRank).slice(0,5);
-  shell.innerHTML=`
-    <section class="home-hero-2">
-      <article class="hero-lead-card">
-        <div>
-          <span class="hero-category">${hero.label||"This Week in California Water Polo"}</span>
-          <h1>${hero.title||"California youth water polo has a new home"}</h1>
-          <p>${hero.summary||"Rankings, tournament coverage, club profiles, and the stories that deserve to be remembered."}</p>
-          <div class="hero-actions"><a class="btn" href="${hero.primaryUrl||"rankings.html"}">${hero.primaryCta||"View Rankings"}</a><a class="btn secondary" href="${hero.secondaryUrl||"clubs.html"}">${hero.secondaryCta||"Explore Clubs"}</a></div>
-        </div>
-        <div class="club-pill">Every team has a chance to be the story.</div>
-      </article>
-      <aside class="headlines-panel"><h2>Latest Headlines</h2><div class="headline-list">${headlines.map(h=>`<a class="headline-item" href="${h.url||"#"}"><span class="headline-tag">${h.tag||"CPI"}</span><span class="headline-title">${h.title}</span></a>`).join("")}</div></aside>
-    </section>
-    <main class="home-shell">
-      <section class="home-grid-2">
-        <article class="module-card"><h2>Weekend Recap</h2><p class="subtle">One boys recap and one girls recap, built to expand as new data is loaded.</p><div class="recap-grid">${recaps.map(r=>`<div class="recap-card"><strong>${r.title}</strong><p class="subtle">${r.event}</p><div class="recap-line"><span>Champion</span><b>${r.champion}</b></div><div class="recap-line"><span>Runner-up</span><b>${r.runnerUp}</b></div><p class="small">${r.story}</p></div>`).join("")}</div></article>
-        <article class="module-card"><h2>Stories Worth Celebrating</h2><p class="subtle">Not just the top division. CPI highlights meaningful performances across every bracket.</p><div class="story-stack">${celebrations.map(s=>`<div class="story-mini"><span>${s.award}</span><strong>${s.team}</strong><p class="small">${s.detail}</p></div>`).join("")}</div></article>
-      </section>
-      <section class="module-card featured-group-panel"><div class="section-head" style="margin:0 0 10px;"><div><h2>Featured Group</h2><p class="subtle">14U Boys is live now. This can rotate by age/gender as data expands.</p></div><a class="btn" href="rankings.html">Full Rankings</a></div><div class="rank-strip">${topFive.map(r=>`<a class="rank-tile" href="${r.teamPage}"><span class="rank">#${r.postRank}</span><strong>${r.team}</strong><p class="small">CPI ${Number(r.postCPI).toFixed(1)}</p></a>`).join("")}</div></section>
-      <section class="home-grid-2">
-        <article class="module-card"><h2>Trending Clubs</h2><div class="trending-club-list">${trending.map(c=>`<a class="trending-club" href="${c.clubPage}"><img src="${c.logo}" alt="${c.displayName||c.club} logo"><div><strong>${c.displayName||c.club}</strong><span>${c.region||"Region TBD"} · Best rank #${c.bestRank}</span></div></a>`).join("")}</div></article>
-        <article class="module-card"><h2>Upcoming Tournaments</h2><div class="story-stack">${(tournaments||[]).map(t=>`<div class="story-mini"><span>${t.weightTier||"Tournament"}</span><strong>${t.name}</strong><p class="small">${t.notes||t.status}</p></div>`).join("")}</div></article>
-      </section>
-    </main>`;
+  const shell=document.querySelector("#homepage2"); if(!shell) return;
+  const hp=window.CPI_HOMEPAGE||{}, hero=hp.hero||{}, headlines=hp.headlines||[], recap=hp.weekendRecap||{}, stories=hp.storyCards||[], fg=hp.featuredGroup||{}, clubs=hp.trendingClubs||[], events=hp.upcomingTournaments||[];
+  shell.innerHTML=`<section class="home-hero-2 photo-edition"><article class="photo-hero" style="--hero-image:url('${hero.image}')"><span class="hero-category solid">${hero.label}</span><h1>${hero.title}</h1><p>${hero.summary}</p><div class="hero-actions"><a class="btn" href="${hero.primaryUrl}">${hero.primaryCta} →</a><a class="btn secondary" href="${hero.secondaryUrl}">${hero.secondaryCta}</a></div></article><aside class="photo-headlines"><h2>Latest Headlines</h2>${headlines.map(h=>`<a class="photo-headline" href="${h.url||"#"}"><span class="headline-icon">${h.icon||"•"}</span><span class="headline-tag">${h.tag||"CPI"}</span><strong>${h.title}</strong><span class="arrow">›</span></a>`).join("")}<a class="read-link" href="rankings.html">View all headlines →</a></aside></section><main class="home-shell"><section class="photo-section-grid"><article class="photo-module"><div class="photo-module-title"><div><h2>Weekend Recap</h2><p class="subtle">${recap.event||""}</p></div><a href="tournaments.html">View full recap →</a></div><div class="recap-card-grid">${(recap.cards||[]).map(c=>`<a class="recap-photo-card" href="${c.url||"#"}"><span>${c.division}</span><img src="${c.image}" alt="${c.division}"><div><small>Champion</small><strong>${c.champion}</strong><small>Runner-up</small><em>${c.runnerUp}</em></div></a>`).join("")}</div></article><article class="photo-module"><div class="photo-module-title"><h2>Stories Worth Celebrating</h2><a href="tournaments.html">View all stories</a></div><div class="story-photo-grid">${stories.map(s=>`<a class="story-photo-card" href="${s.url||"#"}"><img src="${s.image}" alt="${s.title}"><div class="story-photo-body"><span>${s.eyebrow}</span><h3>${s.title}</h3><p>${s.summary}</p><b class="read-link">Read Story →</b></div></a>`).join("")}</div></article></section><section class="bottom-dashboard"><article class="photo-module"><div class="photo-module-title"><h2>Featured Group</h2><a href="${fg.url||"14u-boys.html"}">View Hub</a></div><div class="featured-photo-card"><img src="${fg.image}" alt="${fg.name}"><div><h2>${fg.name}</h2><p class="subtle">${fg.summary}</p></div></div><div class="feature-actions"><a href="${fg.url}">🏆<br>Top 5 Teams</a><a href="rankings.html">☷<br>Rankings</a><a href="tournaments.html">▣<br>Tournaments</a><a href="rankings.html">↗<br>Biggest Movers</a></div></article><article class="photo-module"><div class="photo-module-title"><h2>Trending Clubs</h2><a href="clubs.html">View all clubs</a></div><div class="trend-list">${clubs.map(c=>`<a class="trend-row" href="${c.url||"#"}"><img src="${c.logo||"assets/media/frontpage-champions.svg"}" alt="${c.displayName||c.club}"><div><strong>${c.displayName||c.club}</strong><span>${c.rankedTeams||0} ranked teams · Highest: #${c.bestRank||"—"}</span></div><b>${c.positiveMovement? "▲ "+c.positiveMovement : "—"}</b></a>`).join("")}</div></article><article class="photo-module"><div class="photo-module-title"><h2>Upcoming Tournaments</h2><a href="tournaments.html">View all tournaments</a></div><div class="event-list">${events.map(e=>`<a class="event-row" href="${e.url||"#"}"><img src="${e.image}" alt="${e.name}"><div><strong>${e.name}</strong><span>${e.date}</span><span>${e.location}</span></div><div><span class="tier">${e.tier}</span><span>${e.teams}</span></div><span class="preview">Preview →</span></a>`).join("")}</div></article></section></main>`;
 }
 renderHomepage2();
+
+
+
+
+
+
+function renderGroupHub(){
+  const root=document.querySelector("#groupHub"); if(!root) return;
+  const group=root.dataset.group, hubs=window.CPI_GROUP_HUBS||[], hub=hubs.find(h=>h.group===group)||hubs[0];
+  if(!hub){root.innerHTML="<main><section class='panel'><h2>Group hub unavailable</h2></section></main>";return;}
+  const allLinks=hubs.map(h=>`<a class="group-nav-card" href="${h.file}"><strong>${h.group}</strong><span>${h.status}</span></a>`).join("");
+  const modules=(hub.modules||[]).map(m=>`<div class="profile-kpi"><strong>${m.value}</strong><span>${m.label}</span></div>`).join("");
+  const top=(hub.topTeams||[]).slice(0,10).map(t=>`<a class="hub-list-item" href="${t.teamPage||"rankings.html"}"><div><strong>${t.team}</strong><span>${t.club||""} · CPI ${Number(t.postCPI||0).toFixed(1)}</span></div><b class="hub-rank">#${t.postRank}</b></a>`).join("");
+  const movers=(hub.biggestMovers||[]).slice(0,6).map(t=>`<a class="hub-list-item" href="${t.teamPage||"rankings.html"}"><div><strong>${t.team}</strong><span>${t.club||""}</span></div><b class="movement up">▲ +${t.movement||0}</b></a>`).join("");
+  root.innerHTML=`<section class="group-hub-hero"><article class="group-hub-hero-card"><div><span class="hero-category">${hub.heroLabel}</span><h1>${hub.heroTitle}</h1><p>${hub.heroSummary}</p><div class="hero-actions"><a class="btn" href="rankings.html">View Rankings</a><a class="btn secondary" href="clubs.html">Explore Clubs</a></div></div><div class="club-pill">Group-specific coverage for the teams you care about most.</div></article><aside class="module-card"><h2>Group Snapshot</h2><div class="profile-kpi-grid">${modules}</div></aside></section><section class="group-nav-grid">${allLinks}</section><main class="hub-shell"><section class="hub-grid"><article class="hub-story-card"><span class="hero-category">${hub.topStory?.eyebrow||"Top Story"}</span><h2>${hub.topStory?.title||hub.group}</h2><p class="subtle">${hub.topStory?.summary||""}</p><div class="hero-actions"><a class="btn" href="${hub.topStory?.url||"rankings.html"}">Read More →</a></div></article><article class="module-card"><h2>Biggest Movers</h2><div class="hub-list">${movers||"<p class='subtle'>Movers will populate when rankings data is available.</p>"}</div></article></section><section class="module-card featured-group-panel"><div class="section-head" style="margin:0 0 10px;"><div><h2>${hub.group} Top 10</h2><p class="subtle">A group-specific view keeps families, players, and coaches focused on the division they care about.</p></div><a class="btn" href="rankings.html">All Rankings</a></div><div class="hub-list">${top||"<p class='subtle'>Rankings will populate when this group is loaded.</p>"}</div></section></main>`;
+}
+renderGroupHub();
