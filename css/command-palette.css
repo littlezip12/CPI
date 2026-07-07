@@ -1,0 +1,150 @@
+/* CPI 5.3C — Command Palette Search */
+body.cpi-command-open { overflow: hidden; }
+
+.cpi-command-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 90px 18px 24px;
+  background: rgba(7,20,38,.58);
+  backdrop-filter: blur(10px);
+}
+
+.cpi-command-overlay.is-open { display: flex; }
+
+.cpi-command {
+  width: min(760px, 100%);
+  max-height: min(720px, calc(100vh - 120px));
+  overflow: hidden;
+  border-radius: 28px;
+  background: #fff;
+  border: 1px solid rgba(255,255,255,.34);
+  box-shadow: 0 30px 90px rgba(7,20,38,.34);
+}
+
+.cpi-command-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(7,20,38,.10);
+}
+
+.cpi-command-icon {
+  background: #071426;
+  color: #f6b700;
+  border-radius: 12px;
+  padding: 9px 10px;
+  font-weight: 1000;
+  font-size: 13px;
+}
+
+.cpi-command-input {
+  border: none;
+  outline: none;
+  font-size: 21px;
+  color: #071426;
+  font-weight: 850;
+  min-width: 0;
+}
+
+.cpi-command-input::placeholder { color: #8a98a8; }
+
+.cpi-command-close {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(7,20,38,.12);
+  background: #f8fafc;
+  color: #071426;
+  border-radius: 999px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cpi-command-results {
+  max-height: 520px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.cpi-command-result {
+  display: grid;
+  grid-template-columns: 96px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 14px;
+  border-radius: 18px;
+  color: #071426;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.cpi-command-result:hover,
+.cpi-command-result.is-active {
+  background: #f4f7fb;
+  border-color: rgba(18,109,255,.18);
+}
+
+.cpi-command-type {
+  color: #126dff;
+  font-size: 11px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.cpi-command-main strong {
+  display: block;
+  font-size: 17px;
+  color: #071426;
+}
+
+.cpi-command-main em {
+  display: block;
+  font-size: 13px;
+  font-style: normal;
+  color: #5c6b7c;
+  margin-top: 2px;
+}
+
+.cpi-command-arrow {
+  color: #8a98a8;
+  font-weight: 1000;
+}
+
+.cpi-command-empty {
+  padding: 30px;
+  text-align: center;
+  color: #5c6b7c;
+  font-weight: 850;
+}
+
+.cpi-command-help {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 12px 16px 16px;
+  border-top: 1px solid rgba(7,20,38,.10);
+  color: #5c6b7c;
+}
+
+.cpi-command-help span {
+  background: #f8fafc;
+  border: 1px solid rgba(7,20,38,.10);
+  border-radius: 999px;
+  padding: 6px 9px;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+@media (max-width: 620px) {
+  .cpi-command-overlay { padding: 70px 10px 16px; }
+  .cpi-command { border-radius: 22px; }
+  .cpi-command-result { grid-template-columns: 72px 1fr; }
+  .cpi-command-arrow { display: none; }
+  .cpi-command-input { font-size: 17px; }
+}
