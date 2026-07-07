@@ -1,0 +1,20 @@
+#!/bin/bash
+set -e
+echo "CPI Build"
+echo "========="
+if [ -f scripts/build-logos.py ]; then
+  python3 scripts/build-logos.py
+fi
+if [ -f scripts/build-club-registry.py ]; then
+  python3 scripts/build-club-registry.py
+fi
+python3 scripts/build-club-pages.py
+if [ -f scripts/validate-assets.py ]; then
+  python3 scripts/validate-assets.py
+fi
+if [ -f scripts/validate-club-registry.py ]; then
+  python3 scripts/validate-club-registry.py
+fi
+python3 scripts/validate-club-pages.py
+echo ""
+echo "CPI build completed."
