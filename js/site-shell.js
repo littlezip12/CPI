@@ -1,0 +1,110 @@
+/*
+  CPI 5.3A — Universal Site Shell
+*/
+(function () {
+  const navItems = [
+    { label: "Home", href: "index.html", match: ["index.html", ""] },
+    { label: "Rankings", href: "rankings.html", match: ["rankings.html"] },
+    { label: "Clubs", href: "clubs.html", match: ["clubs.html", "club.html", "/club/"] },
+    { label: "Tournaments", href: "tournaments.html", match: ["tournaments.html"] },
+    { label: "Stories", href: "tournaments.html#stories", match: ["stories.html"] },
+    { label: "Methodology", href: "methodology.html", match: ["methodology.html"] }
+  ];
+
+  const quickLinks = [
+    { label: "Top 25", href: "rankings.html" },
+    { label: "Biggest Movers", href: "rankings.html#biggest-movers" },
+    { label: "12U", href: "12u-boys.html" },
+    { label: "14U Boys", href: "14u-boys.html" },
+    { label: "14U Girls", href: "14u-girls.html" },
+    { label: "16U Boys", href: "16u-boys.html" },
+    { label: "16U Girls", href: "16u-girls.html" },
+    { label: "18U Boys", href: "18u-boys.html" },
+    { label: "18U Girls", href: "18u-girls.html" },
+    { label: "Latest Recap", href: "tournaments.html" }
+  ];
+
+  function depthPrefix() {
+    return window.location.pathname.includes("/club/") ? "../" : "";
+  }
+
+  function currentFile() {
+    const parts = window.location.pathname.split("/");
+    return parts[parts.length - 1] || "index.html";
+  }
+
+  function makeHref(href) {
+    if (/^https?:/.test(href) || href.startsWith("#")) return href;
+    return depthPrefix() + href;
+  }
+
+  function isActive(item) {
+    const current = currentFile();
+    const path = window.location.pathname;
+    return item.match.some(token => {
+      if (token === "") return current === "index.html";
+      if (token.startsWith("/")) return path.includes(token);
+      return current === token;
+    });
+  }
+
+  function headerHtml() {
+    const nav = navItems.map(item =>
+      `<a class="cpi-shell-nav-link ${isActive(item) ? "is-active" : ""}" href="${makeHref(item.href)}">${item.label}</a>`
+    ).join("");
+
+    const quick = quickLinks.map(item =>
+      `<a href="${makeHref(item.href)}">${item.label}</a>`
+    ).join("");
+
+    return `<header class="cpi-shell-header" data-cpi-shell="header">
+      <div class="cpi-shell-nav">
+        <a class="cpi-shell-brand" href="${makeHref("index.html")}">
+          <span class="cpi-shell-mark">CPI</span>
+          <span class="cpi-shell-brand-text">
+            <strong>California Polo Index</strong>
+            <em>Ranked. Respected. Earned.</em>
+          </span>
+        </a>
+        <nav class="cpi-shell-links">${nav}</nav>
+        <button class="cpi-shell-search" type="button" aria-label="Search coming soon"><span>Search CPI</span></button>
+      </div>
+      <div class="cpi-shell-quick">${quick}</div>
+    </header>`;
+  }
+
+  function footerHtml() {
+    const year = new Date().getFullYear();
+    return `<footer class="cpi-shell-footer" data-cpi-shell="footer">
+      <div>
+        <strong>California Polo Index</strong>
+        <p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p>
+      </div>
+      <nav>
+        <a href="${makeHref("rankings.html")}">Rankings</a>
+        <a href="${makeHref("clubs.html")}">Clubs</a>
+        <a href="${makeHref("tournaments.html")}">Tournaments</a>
+        <a href="${makeHref("methodology.html")}">Methodology</a>
+      </nav>
+      <small>© ${year} CPI</small>
+    </footer>`;
+  }
+
+  function installShell() {
+    if (document.querySelector("[data-cpi-shell='header']")) return;
+    document.body.classList.add("cpi-shell-enabled");
+    document.querySelectorAll(".site-header").forEach(h => h.classList.add("cpi-legacy-header-hidden"));
+    document.body.insertAdjacentHTML("afterbegin", headerHtml());
+    document.body.insertAdjacentHTML("beforeend", footerHtml());
+
+    const header = document.querySelector(".cpi-shell-header");
+    if (header) {
+      const update = () => header.classList.toggle("is-scrolled", window.scrollY > 10);
+      update();
+      window.addEventListener("scroll", update, { passive: true });
+    }
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", installShell);
+  else installShell();
+})();
