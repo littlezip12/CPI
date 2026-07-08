@@ -1,0 +1,218 @@
+/* CPI Release 6.1.1 — Editorial Hero Component */
+
+.cpi-hero-v2 {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  color: #fff;
+  isolation: isolate;
+  background: #071426;
+  box-shadow: 0 24px 70px rgba(7,20,38,.20);
+}
+
+.cpi-hero-v2-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+}
+
+.cpi-hero-v2-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 82% 82%, rgba(18,109,255,.18), transparent 22%),
+    linear-gradient(90deg, rgba(7,20,38,.82) 0%, rgba(7,20,38,.62) 34%, rgba(7,20,38,.22) 66%, rgba(7,20,38,.08) 100%),
+    linear-gradient(180deg, rgba(7,20,38,.05) 0%, rgba(7,20,38,.18) 100%);
+}
+
+.cpi-hero-v2::after {
+  content: "";
+  position: absolute;
+  right: -88px;
+  bottom: -142px;
+  width: 360px;
+  height: 360px;
+  border-radius: 999px;
+  border: 20px solid rgba(255,255,255,.16);
+  box-shadow:
+    inset 0 0 0 2px rgba(255,255,255,.10),
+    0 0 80px rgba(18,109,255,.20);
+  opacity: .9;
+  pointer-events: none;
+}
+
+.cpi-hero-v2-inner {
+  width: min(1680px, 100%);
+  min-height: 520px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  padding: 64px 84px;
+  position: relative;
+  z-index: 2;
+}
+
+.cpi-hero-v2-copy { max-width: 690px; }
+
+.cpi-hero-v2-tag {
+  display: inline-flex;
+  color: #f6b700;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.cpi-hero-v2 h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(44px, 6vw, 76px);
+  line-height: .92;
+  letter-spacing: -.065em;
+  max-width: 740px;
+}
+
+.cpi-hero-v2 p {
+  margin: 22px 0 28px;
+  max-width: 540px;
+  color: rgba(255,255,255,.88);
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.cpi-hero-v2-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cpi-hero-v2-primary,
+.cpi-hero-v2-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border-radius: 10px;
+  padding: 0 18px;
+  text-decoration: none;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: -.01em;
+  font-size: 13px;
+}
+
+.cpi-hero-v2-primary {
+  background: #f6b700;
+  color: #071426;
+  box-shadow: 0 14px 34px rgba(246,183,0,.26);
+}
+
+.cpi-hero-v2-secondary {
+  border: 1px solid rgba(255,255,255,.34);
+  color: #fff;
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+}
+
+.cpi-hero-v2-arrow {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: rgba(255,255,255,.88);
+  font-size: 58px;
+  line-height: 1;
+  cursor: pointer;
+  width: 48px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  transition: transform .18s ease, color .18s ease;
+}
+
+.cpi-hero-v2-arrow:hover {
+  color: #fff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.cpi-hero-v2-prev { left: 28px; }
+.cpi-hero-v2-next { right: 28px; }
+
+.cpi-hero-v2-dots {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.cpi-hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,255,255,.90);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.cpi-hero-dot.is-active {
+  background: #f6b700;
+  border-color: #f6b700;
+}
+
+@media (max-width: 900px) {
+  .cpi-hero-v2,
+  .cpi-hero-v2-inner {
+    min-height: 590px;
+  }
+
+  .cpi-hero-v2-inner {
+    padding: 58px 30px 76px;
+    align-items: end;
+  }
+
+  .cpi-hero-v2 h1 {
+    font-size: clamp(42px, 11vw, 62px);
+  }
+
+  .cpi-hero-v2 p {
+    font-size: 16px;
+  }
+
+  .cpi-hero-v2-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .cpi-hero-v2,
+  .cpi-hero-v2-inner {
+    min-height: 620px;
+  }
+
+  .cpi-hero-v2-inner {
+    padding: 44px 20px 78px;
+  }
+
+  .cpi-hero-v2-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .cpi-hero-v2-primary,
+  .cpi-hero-v2-secondary {
+    width: 100%;
+  }
+}
