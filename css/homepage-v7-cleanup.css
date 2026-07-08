@@ -1,0 +1,38 @@
+/* CPI Release 7.0.1 — Homepage Cleanup */
+
+body.cpi-homepage-v7 .latest-headlines,
+body.cpi-homepage-v7 .featured-group,
+body.cpi-homepage-v7 .weekend-recap,
+body.cpi-homepage-v7 .stories-worth-celebrating,
+body.cpi-homepage-v7 .upcoming-tournaments,
+body.cpi-homepage-v7 .home-modules,
+body.cpi-homepage-v7 .home-grid,
+body.cpi-homepage-v7 .homepage-grid,
+body.cpi-homepage-v7 .bottom-dashboard,
+body.cpi-homepage-v7 .photo-section-grid,
+body.cpi-homepage-v7 .premium-home,
+body.cpi-homepage-v7 .premium-stories,
+body.cpi-homepage-v7 .premium-glance,
+body.cpi-homepage-v7 .premium-subscribe {
+  display: none !important;
+}
+
+/* Keep the final v7 sequence tight and intentional. */
+body.cpi-homepage-v7 #cpi-editorial-feed {
+  padding-top: 56px;
+}
+
+body.cpi-homepage-v7 #cpi-at-a-glance {
+  margin-top: 0;
+}
+
+body.cpi-homepage-v7 #cpi-newsletter-footer {
+  margin-top: 0;
+}
+
+/* Remove accidental large gaps left by legacy wrappers. */
+body.cpi-homepage-v7 main:empty,
+body.cpi-homepage-v7 section:empty,
+body.cpi-homepage-v7 div:empty:not(.cpi-hero-v2-bg):not(.cpi-hero-v2-overlay):not(.cpi-hero-v2-dots):not(.cpi-command-results) {
+  display: none !important;
+}
