@@ -1,0 +1,331 @@
+/* CPI Release 6.5 — Homepage Visual System
+   Unifies the homepage into one premium sports-publication experience.
+*/
+
+:root {
+  --cpi-v6-navy: #071426;
+  --cpi-v6-navy-soft: #0b2f55;
+  --cpi-v6-blue: #126dff;
+  --cpi-v6-pool: #dff3ff;
+  --cpi-v6-pool-2: #eef9ff;
+  --cpi-v6-gold: #f6b700;
+  --cpi-v6-ink: #071426;
+  --cpi-v6-muted: #38506a;
+  --cpi-v6-border: rgba(7,20,38,.12);
+  --cpi-v6-card: rgba(255,255,255,.86);
+  --cpi-v6-shadow: 0 20px 54px rgba(7,20,38,.11);
+  --cpi-v6-shadow-hover: 0 30px 72px rgba(7,20,38,.16);
+  --cpi-v6-radius: 24px;
+}
+
+body.cpi-shell-enabled {
+  background:
+    radial-gradient(circle at 84% 14%, rgba(18,109,255,.14), transparent 22%),
+    radial-gradient(circle at 14% 48%, rgba(246,183,0,.08), transparent 20%),
+    linear-gradient(180deg, #f7fcff 0%, #e8f7ff 34%, #f5fbff 72%, #ffffff 100%) !important;
+  color: var(--cpi-v6-ink);
+}
+
+/* Homepage atmosphere */
+body.cpi-shell-enabled::before {
+  content: "";
+  position: fixed;
+  inset: 112px 0 0;
+  z-index: -20;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.18) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,.14) 1px, transparent 1px),
+    radial-gradient(circle at 78% 30%, rgba(18,109,255,.10), transparent 22%),
+    radial-gradient(circle at 20% 74%, rgba(7,20,38,.05), transparent 24%);
+  background-size: 118px 118px, 118px 118px, auto, auto;
+  opacity: .78;
+}
+
+body.cpi-shell-enabled::after {
+  content: "";
+  position: fixed;
+  right: -130px;
+  top: 520px;
+  z-index: -19;
+  width: 430px;
+  height: 430px;
+  border-radius: 999px;
+  border: 24px solid rgba(18,109,255,.075);
+  box-shadow: inset 0 0 0 2px rgba(18,109,255,.06);
+  pointer-events: none;
+}
+
+/* Header integration */
+.cpi-shell-header {
+  background: rgba(7,20,38,.94);
+}
+
+.cpi-shell-quick {
+  background: rgba(255,255,255,.02);
+}
+
+/* Hero calibration */
+.cpi-hero-v2 {
+  min-height: 560px;
+  box-shadow: 0 26px 80px rgba(7,20,38,.22);
+}
+
+.cpi-hero-v2-overlay {
+  background:
+    radial-gradient(circle at 82% 82%, rgba(18,109,255,.20), transparent 24%),
+    linear-gradient(90deg, rgba(7,20,38,.80) 0%, rgba(7,20,38,.58) 34%, rgba(7,20,38,.20) 68%, rgba(7,20,38,.05) 100%),
+    linear-gradient(180deg, rgba(7,20,38,.04) 0%, rgba(7,20,38,.18) 100%);
+}
+
+.cpi-hero-v2-inner {
+  min-height: 560px;
+}
+
+.cpi-hero-v2 h1 {
+  letter-spacing: -.07em;
+}
+
+.cpi-hero-v2-primary,
+.cpi-feed-recap-copy a,
+.cpi-newsletter-form button {
+  transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+}
+
+.cpi-hero-v2-primary:hover,
+.cpi-feed-recap-copy a:hover,
+.cpi-newsletter-form button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+}
+
+/* Global section rhythm */
+.cpi-editorial-feed,
+.cpi-at-a-glance {
+  width: min(1680px, calc(100% - 96px));
+}
+
+.cpi-editorial-feed {
+  padding-top: 64px;
+}
+
+.cpi-feed-recap,
+.cpi-feed-stories,
+.cpi-at-a-glance,
+.cpi-newsletter-v2 {
+  margin-bottom: 64px;
+}
+
+/* Editorial recap refinement */
+.cpi-feed-recap {
+  gap: 32px;
+}
+
+.cpi-feed-recap-copy,
+.cpi-feed-recap-image,
+.cpi-feed-story-card,
+.cpi-glance-card,
+.cpi-newsletter-v2 {
+  border-radius: var(--cpi-v6-radius);
+}
+
+.cpi-feed-recap-copy {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(246,183,0,.16), transparent 26%),
+    radial-gradient(circle at 90% 92%, rgba(18,109,255,.18), transparent 24%),
+    linear-gradient(135deg, rgba(7,20,38,.98), rgba(12,58,102,.95));
+  box-shadow: var(--cpi-v6-shadow);
+}
+
+.cpi-feed-recap-image,
+.cpi-feed-story-card,
+.cpi-glance-card,
+.cpi-newsletter-v2 {
+  box-shadow: var(--cpi-v6-shadow);
+}
+
+.cpi-feed-recap-image img,
+.cpi-feed-story-card img {
+  transition: transform .35s ease;
+}
+
+.cpi-feed-recap-image:hover img,
+.cpi-feed-story-card:hover img {
+  transform: scale(1.035);
+}
+
+/* Section heading system */
+.cpi-feed-section-title h2,
+.cpi-glance-title h2,
+.cpi-newsletter-copy h2 {
+  letter-spacing: -.065em;
+}
+
+.cpi-feed-section-title h2::after,
+.cpi-glance-title h2::after {
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--cpi-v6-gold), rgba(246,183,0,.35));
+}
+
+/* Glass card system */
+.cpi-feed-story-card,
+.cpi-glance-card,
+.cpi-newsletter-v2 {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.78));
+  border: 1px solid rgba(7,20,38,.105);
+  backdrop-filter: blur(16px);
+}
+
+.cpi-feed-story-card:hover,
+.cpi-glance-card:hover,
+.cpi-newsletter-v2:hover {
+  box-shadow: var(--cpi-v6-shadow-hover);
+}
+
+.cpi-feed-story-card {
+  position: relative;
+}
+
+.cpi-feed-story-card::after {
+  content: "";
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 0;
+  height: 3px;
+  background: var(--cpi-v6-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .22s ease;
+}
+
+.cpi-feed-story-card:hover::after {
+  transform: scaleX(1);
+}
+
+.cpi-feed-story-card span {
+  background: linear-gradient(135deg, #0b3a75, #126dff);
+}
+
+.cpi-feed-story-card h3,
+.cpi-glance-card-head h3,
+.cpi-footer-logo strong {
+  letter-spacing: -.035em;
+}
+
+/* At-a-glance refinement */
+.cpi-at-a-glance {
+  margin-top: 0;
+}
+
+.cpi-glance-card {
+  padding: 22px;
+}
+
+.cpi-glance-card-head {
+  border-bottom: 1px solid rgba(7,20,38,.09);
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+}
+
+.cpi-glance-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(246,183,0,.16);
+}
+
+.cpi-glance-row,
+.cpi-glance-event-row {
+  border: 1px solid transparent;
+}
+
+.cpi-glance-row:hover,
+.cpi-glance-event-row:hover {
+  background: rgba(18,109,255,.065);
+  border-color: rgba(18,109,255,.12);
+}
+
+.cpi-glance-card-cta,
+.cpi-newsletter-form button {
+  letter-spacing: -.01em;
+}
+
+/* Newsletter refinement */
+.cpi-newsletter-v2 {
+  width: min(1180px, calc(100% - 96px));
+  margin-top: 12px;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(246,183,0,.10), transparent 22%),
+    linear-gradient(180deg, rgba(255,255,255,.90), rgba(255,255,255,.76));
+}
+
+.cpi-newsletter-icon {
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255,255,255,.46), transparent 36%),
+    linear-gradient(135deg, #0a315a, #5bb8ef);
+}
+
+/* Footer refinement */
+.cpi-footer-v2 {
+  margin-top: 24px;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(18,109,255,.22), transparent 25%),
+    radial-gradient(circle at 12% 90%, rgba(246,183,0,.10), transparent 22%),
+    linear-gradient(135deg, #071426, #092b50 58%, #04101f);
+}
+
+.cpi-footer-logo > span {
+  background: rgba(246,183,0,.08);
+}
+
+/* Reduce duplicate visual noise from older homepage CSS if present */
+.home-shell:empty,
+.bottom-dashboard:empty,
+.photo-section-grid:empty {
+  display: none !important;
+}
+
+/* Mobile polish */
+@media (max-width: 900px) {
+  .cpi-editorial-feed,
+  .cpi-at-a-glance,
+  .cpi-newsletter-v2 {
+    width: calc(100% - 32px);
+  }
+
+  .cpi-editorial-feed {
+    padding-top: 36px;
+  }
+
+  .cpi-feed-recap,
+  .cpi-feed-stories,
+  .cpi-at-a-glance,
+  .cpi-newsletter-v2 {
+    margin-bottom: 42px;
+  }
+
+  .cpi-hero-v2 {
+    min-height: 610px;
+  }
+
+  .cpi-hero-v2-inner {
+    min-height: 610px;
+  }
+}
+
+@media (max-width: 560px) {
+  body.cpi-shell-enabled::before {
+    background-size: 92px 92px, 92px 92px, auto, auto;
+  }
+
+  .cpi-editorial-feed,
+  .cpi-at-a-glance,
+  .cpi-newsletter-v2 {
+    width: calc(100% - 24px);
+  }
+}
