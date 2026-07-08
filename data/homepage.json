@@ -33,7 +33,6 @@
     "intervalMs": 6500
   },
   "editorialFeed": {
-    "excludeHeroStories": true,
     "sections": [
       {
         "type": "weekendRecap",
@@ -78,5 +77,37 @@
         ]
       }
     ]
+  },
+  "atAGlance": {
+    "title": "At a Glance",
+    "cards": {
+      "topRanked": {
+        "title": "Top Ranked Clubs",
+        "icon": "🏆",
+        "cta": { "label": "Full Club Rankings", "url": "rankings.html" }
+      },
+      "biggestMovers": {
+        "title": "Biggest Movers",
+        "icon": "📈",
+        "cta": { "label": "Full Movers List", "url": "rankings.html" }
+      },
+      "trendingClubs": {
+        "title": "Trending Clubs",
+        "icon": "🔥",
+        "cta": { "label": "Explore Clubs", "url": "clubs.html" }
+      },
+      "upcomingTournaments": {
+        "title": "Upcoming Tournaments",
+        "icon": "📅",
+        "cta": { "label": "Tournament Calendar", "url": "tournaments.html" },
+        "items": [
+          { "date": "Jun 13–15", "title": "Junior Olympics", "url": "tournaments.html" },
+          { "date": "Jun 20–22", "title": "KAP7 SoCal Invite", "url": "tournaments.html" },
+          { "date": "Jun 27–29", "title": "Rose Bowl Classic", "url": "tournaments.html" },
+          { "date": "Jul 11–13", "title": "Far Westerns", "url": "tournaments.html" },
+          { "date": "Jul 25–27", "title": "Super Finals", "url": "tournaments.html" }
+        ]
+      }
+    }
   }
 }
