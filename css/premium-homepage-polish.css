@@ -1,0 +1,256 @@
+/* CPI Release 7.1 — Premium Homepage Polish
+   Final polish pass for the v7 homepage experience.
+*/
+
+:root {
+  --cpi-polish-ink: #061225;
+  --cpi-polish-navy: #071426;
+  --cpi-polish-blue: #126dff;
+  --cpi-polish-gold: #f6b700;
+  --cpi-polish-muted: #38506a;
+  --cpi-polish-card: rgba(255,255,255,.88);
+  --cpi-polish-border: rgba(7,20,38,.12);
+  --cpi-polish-shadow: 0 22px 60px rgba(7,20,38,.12);
+  --cpi-polish-shadow-hover: 0 34px 84px rgba(7,20,38,.18);
+}
+
+/* Page atmosphere */
+body.cpi-homepage-v7 {
+  background:
+    radial-gradient(circle at 86% 16%, rgba(18,109,255,.13), transparent 24%),
+    radial-gradient(circle at 16% 42%, rgba(246,183,0,.065), transparent 22%),
+    linear-gradient(180deg, #f7fcff 0%, #e8f7ff 35%, #f7fcff 72%, #ffffff 100%) !important;
+}
+
+body.cpi-homepage-v7::before {
+  opacity: .55;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.16) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255,255,255,.13) 1px, transparent 1px),
+    radial-gradient(circle at 78% 34%, rgba(18,109,255,.10), transparent 24%);
+  background-size: 132px 132px, 132px 132px, auto;
+}
+
+body.cpi-homepage-v7::after {
+  opacity: .62;
+}
+
+/* Hero cinematic polish */
+.cpi-hero-v2 {
+  min-height: 620px;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.cpi-hero-v2-bg {
+  filter: saturate(1.12) contrast(1.05) brightness(.98);
+}
+
+.cpi-hero-v2-overlay {
+  background:
+    radial-gradient(circle at 84% 76%, rgba(18,109,255,.20), transparent 28%),
+    linear-gradient(90deg, rgba(6,18,37,.92) 0%, rgba(6,18,37,.74) 34%, rgba(6,18,37,.31) 68%, rgba(6,18,37,.10) 100%),
+    linear-gradient(180deg, rgba(6,18,37,.05) 0%, rgba(6,18,37,.32) 100%);
+}
+
+.cpi-hero-v2-inner {
+  min-height: 620px;
+  padding-left: clamp(56px, 5vw, 96px);
+}
+
+.cpi-hero-v2-copy {
+  max-width: 800px;
+}
+
+.cpi-hero-v2-tag {
+  margin-bottom: 18px;
+}
+
+.cpi-hero-v2 h1 {
+  max-width: 860px;
+  font-size: clamp(54px, 6.8vw, 104px);
+  line-height: .88;
+  letter-spacing: -.078em;
+}
+
+.cpi-hero-v2 p {
+  max-width: 660px;
+  margin-top: 26px;
+  margin-bottom: 32px;
+  font-size: clamp(18px, 1.4vw, 23px);
+}
+
+.cpi-hero-v2-actions {
+  gap: 14px;
+}
+
+.cpi-hero-v2-primary,
+.cpi-hero-v2-secondary {
+  min-height: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 14px;
+}
+
+/* Stories */
+.cpi-feed-section-title {
+  margin-bottom: 28px;
+}
+
+.cpi-feed-story-grid {
+  gap: 34px;
+}
+
+.cpi-feed-story-card {
+  border-radius: 24px;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.cpi-feed-story-card img {
+  height: 260px;
+}
+
+.cpi-feed-story-card div {
+  padding: 28px;
+}
+
+.cpi-feed-story-card h3 {
+  font-size: clamp(30px, 2.75vw, 46px);
+}
+
+.cpi-feed-story-card p {
+  font-size: 18px;
+}
+
+.cpi-feed-story-card small {
+  letter-spacing: .03em;
+}
+
+/* At-a-Glance */
+.cpi-glance-grid {
+  gap: 26px;
+}
+
+.cpi-glance-card {
+  min-height: 430px;
+  border-radius: 26px;
+}
+
+.cpi-glance-card-head {
+  min-height: 54px;
+}
+
+.cpi-glance-row,
+.cpi-glance-event-row {
+  min-height: 58px;
+}
+
+.cpi-glance-row strong,
+.cpi-glance-event-row strong {
+  font-size: 17px;
+}
+
+.cpi-glance-row em {
+  font-size: 14px;
+}
+
+.cpi-glance-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.cpi-glance-rank {
+  font-size: 22px;
+}
+
+.cpi-glance-card-cta {
+  min-height: 52px;
+}
+
+/* Newsletter */
+.cpi-newsletter-v2 {
+  margin-top: 18px;
+  margin-bottom: 72px;
+  padding: 32px 38px;
+  border-radius: 28px;
+}
+
+.cpi-newsletter-copy h2 {
+  font-size: clamp(34px, 3.4vw, 54px);
+}
+
+.cpi-newsletter-copy p {
+  font-size: 19px;
+}
+
+/* Motion utilities */
+.cpi-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+
+.cpi-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Click affordance */
+.cpi-feed-story-card,
+.cpi-glance-card,
+.cpi-newsletter-v2 {
+  will-change: transform;
+}
+
+.cpi-glance-card:hover .cpi-glance-card-cta,
+.cpi-newsletter-form button:hover {
+  box-shadow: 0 14px 32px rgba(246,183,0,.24);
+}
+
+/* Desktop composition */
+@media (min-width: 1200px) {
+  .cpi-editorial-feed,
+  .cpi-at-a-glance {
+    width: min(1720px, calc(100% - 110px));
+  }
+}
+
+/* Tablet/mobile */
+@media (max-width: 900px) {
+  .cpi-hero-v2,
+  .cpi-hero-v2-inner {
+    min-height: 690px;
+  }
+
+  .cpi-hero-v2-inner {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .cpi-hero-v2 h1 {
+    font-size: clamp(48px, 12vw, 70px);
+  }
+
+  .cpi-feed-story-card img {
+    height: 240px;
+  }
+
+  .cpi-glance-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .cpi-hero-v2,
+  .cpi-hero-v2-inner {
+    min-height: 720px;
+  }
+
+  .cpi-hero-v2 h1 {
+    font-size: clamp(43px, 13vw, 58px);
+  }
+
+  .cpi-feed-story-card div {
+    padding: 22px;
+  }
+}
