@@ -1,13 +1,117 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>California Polo Index</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css">  <link rel="stylesheet" href="css/site-shell.css">
-  <link rel="stylesheet" href="css/smart-club-cards.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club Intelligence | California Polo Index</title>
+  <meta name="description" content="Explore California youth water polo clubs by ranked teams, CPI strength, region, top teams, and competitive footprint.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/command-palette.css">
-</head><body><header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="cpi-mark">CPI</span><span>California Polo Index<span class="brand-sub">Ranked. Respected. Earned.</span></span></a><div class="nav-links"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></div></nav></header>
-<section class="hero">
-  <div><p class="kicker">Club registry</p><h1>Club <span class="gold">Pages</span></h1><p>Each club page is powered by the central CPI Club Registry.</p></div>
-  <aside class="hero-visual"><div class="visual-tag"><span>79 Clubs</span><span class="blue">Tracked</span><span class="gold">15 branded</span></div></aside>
-</section>
-<main><section class="club-grid" id="allClubCards"></section></main>
-<footer class="footer">California Polo Index is independent and unofficial. Rankings include verified tournament results only; local scrimmages and friendlies are excluded.</footer><script src="data.js"></script><script src="js/app.js"></script>  <script src="js/site-shell.js"></script>
-  <script src="js/smart-club-cards.js"></script>
+  <link rel="stylesheet" href="css/homepage-v8.css">
+  <link rel="stylesheet" href="css/club-intelligence-v7-4.css">
+</head>
+<body class="cpi-v8-home club-intelligence-page">
+  <header class="cpi-v8-header">
+    <div class="cpi-v8-header-inner">
+      <a class="cpi-v8-brand" href="index.html" aria-label="California Polo Index Home">
+        <span class="cpi-v8-brand-mark">CPI</span>
+        <span class="cpi-v8-brand-text">
+          <strong>California Polo Index</strong>
+          <em>Ranked. Respected. Earned.</em>
+        </span>
+      </a>
+      <nav class="cpi-v8-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="clubs.html" aria-current="page">Clubs</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="methodology.html">Methodology</a>
+      </nav>
+      <button class="cpi-shell-search cpi-v8-search" type="button">Search CPI</button>
+    </div>
+  </header>
+
+  <main class="club-intel-shell" id="clubIntelApp">
+    <section class="club-intel-hero" aria-labelledby="clubIntelTitle">
+      <div class="club-intel-hero-copy">
+        <p class="club-intel-eyebrow">Release 7.4</p>
+        <h1 id="clubIntelTitle">Club intelligence for California youth water polo.</h1>
+        <p>Compare clubs by ranked teams, competitive footprint, CPI strength, top-end performance, and regional presence. CPI club profiles are built from the current rankings data and will become richer as more age groups come online.</p>
+        <div class="club-intel-actions">
+          <a class="club-intel-btn" href="#club-directory">Explore clubs</a>
+          <a class="club-intel-btn secondary" href="rankings.html">View rankings</a>
+        </div>
+      </div>
+      <aside class="club-intel-hero-card" aria-label="Club intelligence summary">
+        <span>Clubs tracked</span>
+        <strong id="clubTotalCount">—</strong>
+        <div class="club-intel-metric-row">
+          <div><small>Ranked teams</small><b id="clubTeamCount">—</b></div>
+          <div><small>Regions</small><b id="clubRegionCount">—</b></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="club-intel-dashboard" aria-label="Club intelligence dashboard">
+      <article class="club-intel-panel">
+        <div class="club-intel-panel-title">
+          <div>
+            <p class="club-intel-eyebrow">Signal</p>
+            <h2>Top club profiles</h2>
+          </div>
+          <span>Best current CPI footprint</span>
+        </div>
+        <div class="club-intel-list" id="topClubSignals"></div>
+      </article>
+      <article class="club-intel-panel">
+        <div class="club-intel-panel-title">
+          <div>
+            <p class="club-intel-eyebrow">Momentum</p>
+            <h2>Rising clubs</h2>
+          </div>
+          <span>Movement across ranked teams</span>
+        </div>
+        <div class="club-intel-list" id="risingClubSignals"></div>
+      </article>
+    </section>
+
+    <section class="club-directory" id="club-directory">
+      <div class="club-directory-toolbar">
+        <div>
+          <p class="club-intel-eyebrow">Directory</p>
+          <h2>All clubs</h2>
+        </div>
+        <div class="club-directory-controls">
+          <label class="sr-only" for="clubSearch">Search clubs</label>
+          <input id="clubSearch" class="club-search" type="search" placeholder="Search club or region…" autocomplete="off">
+          <label class="sr-only" for="regionFilter">Filter by region</label>
+          <select id="regionFilter" class="club-select"></select>
+          <label class="club-check"><input id="rankedOnly" type="checkbox"> Ranked only</label>
+        </div>
+        <div class="club-count" id="clubResultCount">Loading…</div>
+      </div>
+      <div class="club-card-grid" id="clubCardGrid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="cpi-v8-footer">
+    <div class="inner">
+      <div class="brand">
+        <a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a>
+        <p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p>
+      </div>
+      <nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav>
+      <nav><h3>Age Groups</h3><a href="12u-boys.html">12U</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a></nav>
+      <div><h3>About CPI</h3><p>The California Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div>
+    </div>
+    <div class="bottom">© 2026 California Polo Index. All rights reserved.</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="js/club-intelligence-v7-4.js"></script>
   <script src="js/command-palette.js"></script>
-</body></html>
+</body>
+</html>
