@@ -1,16 +1,96 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>California Polo Index</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css">  <link rel="stylesheet" href="css/site-shell.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rankings | California Polo Index</title>
+  <meta name="description" content="California Polo Index rankings built from verified tournament results, strength of schedule, movement, and team context.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/command-palette.css">
-</head><body><header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="cpi-mark">CPI</span><span>California Polo Index<span class="brand-sub">Ranked. Respected. Earned.</span></span></a><div class="nav-links"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></div></nav></header>
-<section class="hero">
-  <div><p class="kicker">Universal rankings engine</p><h1>Rankings <span class="gold">Table</span></h1><p>Search by team or club. Records shown are from the latest tracked major tournament only.</p></div>
-  <aside class="hero-visual"><div class="visual-tag"><span>Data Sources</span><span class="blue">Tournaments</span><span class="gold">Quals + JOs</span></div></aside>
-</section>
-<main>
-  <section class="panel">
-    <div class="table-tools"><input id="search" class="search" placeholder="Search team or club…"><select id="groupFilter" class="select"></select><span id="count" class="badge">Loading…</span></div>
-    <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Team</th><th>Club</th><th>Group</th><th>CPI</th><th>Move</th><th>Latest Tournament</th><th>Best Win</th></tr></thead><tbody id="rankingsBody"></tbody></table></div>
-  </section>
-</main>
-<footer class="footer">California Polo Index is independent and unofficial. Rankings include verified tournament results only; local scrimmages and friendlies are excluded.</footer><script src="data.js"></script><script src="js/app.js"></script>  <script src="js/site-shell.js"></script>
+  <link rel="stylesheet" href="css/homepage-v8.css">
+  <link rel="stylesheet" href="css/rankings-v7-3.css">
+</head>
+<body class="cpi-v8-home rankings-page">
+  <header class="cpi-v8-header">
+    <div class="cpi-v8-header-inner">
+      <a class="cpi-v8-brand" href="index.html" aria-label="California Polo Index Home">
+        <span class="cpi-v8-brand-mark">CPI</span>
+        <span class="cpi-v8-brand-text">
+          <strong>California Polo Index</strong>
+          <em>Ranked. Respected. Earned.</em>
+        </span>
+      </a>
+      <nav class="cpi-v8-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="rankings.html" aria-current="page">Rankings</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="methodology.html">Methodology</a>
+      </nav>
+      <button class="cpi-shell-search cpi-v8-search" type="button">Search CPI</button>
+    </div>
+  </header>
+
+  <main class="rankings-shell">
+    <section class="rankings-hero" aria-labelledby="rankingsTitle">
+      <div class="rankings-hero-copy">
+        <p class="rankings-eyebrow">Release 7.3 preview</p>
+        <h1 id="rankingsTitle">Rankings that reward the path, not just the finish.</h1>
+        <p class="rankings-lede">CPI estimates team strength from verified tournament results, opponent quality, bracket context, movement, and connected results. Division winners still need to be viewed in context: a lower-division champion may sit behind teams from stronger brackets.</p>
+        <div class="rankings-hero-actions">
+          <a class="rankings-btn" href="#rankings-list">View rankings</a>
+          <a class="rankings-btn secondary" href="methodology.html">Methodology</a>
+        </div>
+      </div>
+      <aside class="rankings-hero-card" aria-label="Rankings summary">
+        <span>Current group</span>
+        <strong id="heroGroup">Loading…</strong>
+        <div class="rankings-metric-row">
+          <div><small>Ranked teams</small><b id="heroTeams">—</b></div>
+          <div><small>Minimum sample</small><b>5 games</b></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="rankings-board" id="rankings-list">
+      <div class="rankings-toolbar" aria-label="Rankings filters">
+        <div>
+          <p class="rankings-eyebrow">California Polo Index</p>
+          <h2>Team Rankings</h2>
+        </div>
+        <div class="rankings-controls">
+          <label class="sr-only" for="search">Search team or club</label>
+          <input id="search" class="rankings-search" type="search" placeholder="Search team or club…" autocomplete="off">
+          <label class="sr-only" for="groupFilter">Filter by group</label>
+          <select id="groupFilter" class="rankings-select"></select>
+        </div>
+        <div class="rankings-count" id="count">Loading…</div>
+      </div>
+
+      <div class="rankings-feature-grid" id="rankingsFeatureGrid" aria-label="Featured ranking cards"></div>
+      <div class="rankings-list" id="rankingsBody" aria-live="polite"></div>
+    </section>
+  </main>
+
+
+  <footer class="cpi-v8-footer">
+    <div class="inner">
+      <div class="brand">
+        <a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a>
+        <p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p>
+      </div>
+      <nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav>
+      <nav><h3>Age Groups</h3><a href="12u-boys.html">12U</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a></nav>
+      <div><h3>About CPI</h3><p>The California Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div>
+    </div>
+    <div class="bottom">© 2026 California Polo Index. All rights reserved.</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="js/rankings-v7-3.js"></script>
   <script src="js/command-palette.js"></script>
-</body></html>
+</body>
+</html>
