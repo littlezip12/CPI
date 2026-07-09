@@ -2,82 +2,106 @@
   "hero": {
     "slides": [
       {
-        "id": "skip-d3-title",
         "tag": "Featured Story",
         "title": "Skip Water Polo Captures D3 Title in Dominant Run",
-        "summary": "Behind a balanced attack and lockdown defense, Skip secures the D3 championship and cements its place among California’s elite.",
+        "summary": "Behind a balanced attack and lockdown defense, Skip secures the D3 championship and cements its place among California\u2019s elite.",
         "image": "assets/photos/editorial/polo-shooter-close.jpg",
-        "primaryCta": { "label": "Read Full Story", "url": "tournaments.html" },
-        "secondaryCta": { "label": "View Rankings", "url": "rankings.html" }
+        "primaryCta": {
+          "label": "Read Full Story",
+          "url": "tournaments.html"
+        },
+        "secondaryCta": {
+          "label": "View Rankings",
+          "url": "rankings.html"
+        }
       },
       {
-        "id": "la-jolla-top-rank",
         "tag": "Rankings",
         "title": "La Jolla United A Holds the #1 Spot in 14U Boys",
         "summary": "The latest CPI update keeps La Jolla United A on top after another strong weekend performance.",
         "image": "assets/photos/editorial/polo-attacker-poolwide.jpg",
-        "primaryCta": { "label": "View Rankings", "url": "14u-boys.html" },
-        "secondaryCta": { "label": "Explore Clubs", "url": "clubs.html" }
+        "primaryCta": {
+          "label": "View Rankings",
+          "url": "14u-boys.html"
+        },
+        "secondaryCta": {
+          "label": "Explore Clubs",
+          "url": "clubs.html"
+        }
       },
       {
-        "id": "club-momentum",
         "tag": "Club Intelligence",
         "title": "Trending Clubs Are Turning Movement Into Stories",
         "summary": "Momentum, depth, and tournament performance are beginning to define the CPI club landscape.",
         "image": "assets/photos/editorial/polo-team-huddle.jpg",
-        "primaryCta": { "label": "Explore Clubs", "url": "clubs.html" },
-        "secondaryCta": { "label": "View Movers", "url": "rankings.html" }
+        "primaryCta": {
+          "label": "Explore Clubs",
+          "url": "clubs.html"
+        },
+        "secondaryCta": {
+          "label": "View Movers",
+          "url": "rankings.html"
+        }
       }
-    ],
-    "autoplay": true,
-    "intervalMs": 6500
+    ]
   },
+  "stories": [
+    {
+      "category": "Rankings",
+      "title": "La Jolla United A stays on top in 14U Boys",
+      "summary": "The current #1 remains the standard after the latest CPI update.",
+      "image": "assets/photos/editorial/polo-attacker-poolwide.jpg",
+      "url": "14u-boys.html",
+      "meta": "2 min read"
+    },
+    {
+      "category": "Tournament Recap",
+      "title": "Super Finals creates another rankings shakeup",
+      "summary": "Key results are starting to separate contenders from the rest of the field.",
+      "image": "assets/photos/editorial/polo-medal-team.jpg",
+      "url": "tournaments.html",
+      "meta": "3 min read"
+    },
+    {
+      "category": "Group Hubs",
+      "title": "Every age group gets its own front page",
+      "summary": "Families can follow the divisions they actually care about.",
+      "image": "assets/photos/editorial/polo-team-huddle.jpg",
+      "url": "rankings.html",
+      "meta": "4 min read"
+    }
+  ],
+  "tournaments": [
+    {
+      "date": "Jun 13\u201315",
+      "title": "Junior Olympics",
+      "url": "tournaments.html"
+    },
+    {
+      "date": "Jun 20\u201322",
+      "title": "KAP7 SoCal Invite",
+      "url": "tournaments.html"
+    },
+    {
+      "date": "Jun 27\u201329",
+      "title": "Rose Bowl Classic",
+      "url": "tournaments.html"
+    },
+    {
+      "date": "Jul 11\u201313",
+      "title": "Far Westerns",
+      "url": "tournaments.html"
+    },
+    {
+      "date": "Jul 25\u201327",
+      "title": "Super Finals",
+      "url": "tournaments.html"
+    }
+  ],
   "newsletter": {
     "title": "Stay in the Game",
-    "summary": "Get CPI rankings, recaps, and stories delivered 1–2 times per month.",
+    "summary": "Get CPI rankings, recaps, and stories delivered 1\u20132 times per month.",
     "placeholder": "Enter your email",
-    "button": "Subscribe",
-    "note": "No spam. Unsubscribe anytime."
-  },
-  "footer": {
-    "brand": "California Polo Index",
-    "tagline": "Ranked. Respected. Earned.",
-    "summary": "Independent and unofficial rankings, stories, and club intelligence for California youth water polo.",
-    "columns": [
-      {
-        "title": "Explore",
-        "links": [
-          { "label": "Rankings", "url": "rankings.html" },
-          { "label": "Clubs", "url": "clubs.html" },
-          { "label": "Tournaments", "url": "tournaments.html" },
-          { "label": "Stories", "url": "tournaments.html" },
-          { "label": "Methodology", "url": "methodology.html" }
-        ]
-      },
-      {
-        "title": "Age Groups",
-        "links": [
-          { "label": "12U", "url": "12u-boys.html" },
-          { "label": "14U Boys", "url": "14u-boys.html" },
-          { "label": "14U Girls", "url": "14u-girls.html" },
-          { "label": "16U Boys", "url": "16u-boys.html" },
-          { "label": "16U Girls", "url": "16u-girls.html" },
-          { "label": "18U Boys", "url": "18u-boys.html" },
-          { "label": "18U Girls", "url": "18u-girls.html" }
-        ]
-      },
-      {
-        "title": "Resources",
-        "links": [
-          { "label": "About CPI", "url": "methodology.html" },
-          { "label": "How Rankings Work", "url": "methodology.html" },
-          { "label": "FAQs", "url": "methodology.html" },
-          { "label": "Contact Us", "url": "methodology.html" }
-        ]
-      }
-    ],
-    "aboutTitle": "About CPI",
-    "aboutText": "The California Polo Index is building a comprehensive water polo ranking system for California youth clubs.",
-    "aboutLink": { "label": "Learn More", "url": "methodology.html" }
+    "button": "Subscribe"
   }
 }

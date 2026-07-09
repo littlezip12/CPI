@@ -1,26 +1,208 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>California Polo Index</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css">  <link rel="stylesheet" href="css/site-shell.css">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>California Polo Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/command-palette.css">
-  <link rel="stylesheet" href="css/premium-homepage.css">
-  <link rel="stylesheet" href="css/hero-v2.css">
-  <link rel="stylesheet" href="css/editorial-feed.css">
-  <link rel="stylesheet" href="css/at-a-glance.css">
-  <link rel="stylesheet" href="css/newsletter-footer.css">
-  <link rel="stylesheet" href="css/homepage-visual-system.css">
-  <link rel="stylesheet" href="css/homepage-v7-cleanup.css">
-  <link rel="stylesheet" href="css/hero-polish.css">
-  <link rel="stylesheet" href="css/header-order-fix.css">
-  <link rel="stylesheet" href="css/premium-homepage-polish.css">
-</head><body><header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="cpi-mark">CPI</span><span>California Polo Index<span class="brand-sub">Ranked. Respected. Earned.</span></span></a><div class="nav-links"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></div></nav></header><div id="homepage2"></div><footer class="footer">California Polo Index is independent and unofficial. Rankings include verified tournament results only; local scrimmages and friendlies are excluded.</footer><script src="data.js"></script><script src="js/app.js"></script>  <script src="js/site-shell.js"></script>
+  <link rel="stylesheet" href="css/homepage-v8.css">
+</head>
+<body class="cpi-v8-home">
+  <header class="cpi-v8-header">
+    <div class="cpi-v8-header-inner">
+      <a class="cpi-v8-brand" href="index.html" aria-label="California Polo Index Home">
+        <span class="cpi-v8-brand-mark">CPI</span>
+        <span class="cpi-v8-brand-text">
+          <strong>California Polo Index</strong>
+          <em>Ranked. Respected. Earned.</em>
+        </span>
+      </a>
+      <nav class="cpi-v8-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="methodology.html">Methodology</a>
+      </nav>
+      <button class="cpi-shell-search cpi-v8-search" type="button">Search CPI</button>
+    </div>
+  </header>
+
+  <main id="cpi-home-root" class="cpi-v8-main">
+    <section class="cpi-v8-hero" data-cpi-hero>
+      <article class="cpi-v8-hero-slide is-active" data-slide="0" style="--hero-image:url('../assets/photos/editorial/polo-shooter-close.jpg')">
+        <div class="cpi-v8-hero-bg"></div>
+        <div class="cpi-v8-hero-overlay"></div>
+        <div class="cpi-v8-hero-inner">
+          <span class="cpi-v8-eyebrow">Featured Story</span>
+          <h1>Skip Water Polo Captures D3 Title in Dominant Run</h1>
+          <p>Behind a balanced attack and lockdown defense, Skip secures the D3 championship and cements its place among California’s elite.</p>
+          <div class="cpi-v8-actions">
+            <a class="primary" href="tournaments.html">Read Full Story →</a>
+            <a class="secondary" href="rankings.html">View Rankings</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cpi-v8-hero-slide" data-slide="1" style="--hero-image:url('../assets/photos/editorial/polo-attacker-poolwide.jpg')">
+        <div class="cpi-v8-hero-bg"></div>
+        <div class="cpi-v8-hero-overlay"></div>
+        <div class="cpi-v8-hero-inner">
+          <span class="cpi-v8-eyebrow">Rankings</span>
+          <h1>La Jolla United A Holds the #1 Spot in 14U Boys</h1>
+          <p>The latest CPI update keeps La Jolla United A on top after another strong weekend performance.</p>
+          <div class="cpi-v8-actions">
+            <a class="primary" href="14u-boys.html">View Rankings →</a>
+            <a class="secondary" href="clubs.html">Explore Clubs</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="cpi-v8-hero-slide" data-slide="2" style="--hero-image:url('../assets/photos/editorial/polo-team-huddle.jpg')">
+        <div class="cpi-v8-hero-bg"></div>
+        <div class="cpi-v8-hero-overlay"></div>
+        <div class="cpi-v8-hero-inner">
+          <span class="cpi-v8-eyebrow">Club Intelligence</span>
+          <h1>Trending Clubs Are Turning Movement Into Stories</h1>
+          <p>Momentum, depth, and tournament performance are beginning to define the CPI club landscape.</p>
+          <div class="cpi-v8-actions">
+            <a class="primary" href="clubs.html">Explore Clubs →</a>
+            <a class="secondary" href="rankings.html">View Movers</a>
+          </div>
+        </div>
+      </article>
+
+      <button class="cpi-v8-hero-arrow cpi-v8-hero-prev" type="button" aria-label="Previous story">‹</button>
+      <button class="cpi-v8-hero-arrow cpi-v8-hero-next" type="button" aria-label="Next story">›</button>
+      <div class="cpi-v8-hero-dots" aria-label="Hero slides">
+        <button class="is-active" type="button" data-go-slide="0" aria-label="Go to slide 1"></button>
+        <button type="button" data-go-slide="1" aria-label="Go to slide 2"></button>
+        <button type="button" data-go-slide="2" aria-label="Go to slide 3"></button>
+      </div>
+    </section>
+
+    <section class="cpi-v8-section cpi-v8-stories">
+      <div class="cpi-v8-section-title">
+        <h2>Top Stories</h2>
+        <a href="tournaments.html">View All Stories →</a>
+      </div>
+      <div class="cpi-v8-story-grid">
+        <a class="cpi-v8-story-card" href="14u-boys.html">
+          <img src="assets/photos/editorial/polo-attacker-poolwide.jpg" alt="Water polo attacker">
+          <div>
+            <span>Rankings</span>
+            <h3>La Jolla United A stays on top in 14U Boys</h3>
+            <p>The current #1 remains the standard after the latest CPI update.</p>
+            <small>2 min read</small>
+          </div>
+        </a>
+        <a class="cpi-v8-story-card" href="tournaments.html">
+          <img src="assets/photos/editorial/polo-medal-team.jpg" alt="Water polo medal team">
+          <div>
+            <span>Tournament Recap</span>
+            <h3>Super Finals creates another rankings shakeup</h3>
+            <p>Key results are starting to separate contenders from the rest of the field.</p>
+            <small>3 min read</small>
+          </div>
+        </a>
+        <a class="cpi-v8-story-card" href="rankings.html">
+          <img src="assets/photos/editorial/polo-team-huddle.jpg" alt="Water polo team huddle">
+          <div>
+            <span>Group Hubs</span>
+            <h3>Every age group gets its own front page</h3>
+            <p>Families can follow the divisions they actually care about.</p>
+            <small>4 min read</small>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="cpi-v8-section cpi-v8-glance">
+      <div class="cpi-v8-section-title"><h2>At a Glance</h2></div>
+      <div class="cpi-v8-glance-grid">
+        <article class="cpi-v8-glance-card">
+          <div class="head"><span>🏆</span><h3>Top Ranked Clubs</h3><a href="rankings.html">View All →</a></div>
+          <div class="body">
+            <a class="cpi-v8-row" href="14u-boys.html"><b>1</b><strong>La Jolla United A</strong><em>#1 14U Boys</em></a>
+            <a class="cpi-v8-row" href="rankings.html"><b>2</b><strong>NorCal A</strong><em>#2 14U Boys</em></a>
+            <a class="cpi-v8-row" href="rankings.html"><b>3</b><strong>Mission A</strong><em>#3 14U Boys</em></a>
+            <a class="cpi-v8-row" href="rankings.html"><b>4</b><strong>LA Premier A</strong><em>#4 14U Boys</em></a>
+            <a class="cpi-v8-row" href="rankings.html"><b>5</b><strong>SD Dons A</strong><em>#5 14U Boys</em></a>
+          </div>
+          <a class="cta" href="rankings.html">Full Club Rankings</a>
+        </article>
+
+        <article class="cpi-v8-glance-card">
+          <div class="head"><span>📈</span><h3>Biggest Movers</h3><a href="rankings.html">View All →</a></div>
+          <div class="body">
+            <a class="cpi-v8-row" href="rankings.html"><b class="move">▲ 17</b><strong>Skip A</strong><em>14U Boys</em></a>
+            <a class="cpi-v8-row" href="rankings.html"><b class="move">▲ 11</b><strong>Rancho Tsunami A</strong><em>16U Boys</em></a>
+            <a class="cpi-v8-row" href="rankings.html"><b class="move">▲ 10</b><strong>Devils Gate A</strong><em>14U Girls</em></a>
+            <a class="cpi-v8-row" href="rankings.html"><b class="move">▲ 8</b><strong>Vanguard A</strong><em>12U Boys</em></a>
+            <a class="cpi-v8-row" href="rankings.html"><b class="move">▲ 7</b><strong>South Coast A</strong><em>16U Girls</em></a>
+          </div>
+          <a class="cta" href="rankings.html">Full Movers List</a>
+        </article>
+
+        <article class="cpi-v8-glance-card">
+          <div class="head"><span>🔥</span><h3>Trending Clubs</h3><a href="clubs.html">View All →</a></div>
+          <div class="body">
+            <a class="cpi-v8-row" href="club/skip.html"><b>🔥</b><strong>Skip</strong><em>▲ 17</em></a>
+            <a class="cpi-v8-row" href="club/rancho-tsunami.html"><b>🔥</b><strong>Rancho Tsunami</strong><em>▲ 11</em></a>
+            <a class="cpi-v8-row" href="club/devils-gate.html"><b>🔥</b><strong>Devils Gate</strong><em>▲ 10</em></a>
+            <a class="cpi-v8-row" href="club/norcal.html"><b>🔥</b><strong>NorCal Aquatics</strong><em>▲ 10</em></a>
+            <a class="cpi-v8-row" href="club/vegas-renegades.html"><b>🔥</b><strong>Vegas Renegades</strong><em>▲ 9</em></a>
+          </div>
+          <a class="cta" href="clubs.html">Explore Clubs</a>
+        </article>
+
+        <article class="cpi-v8-glance-card">
+          <div class="head"><span>📅</span><h3>Upcoming Tournaments</h3><a href="tournaments.html">View All →</a></div>
+          <div class="body events">
+            <a class="cpi-v8-event" href="tournaments.html"><b>Jun 13–15</b><strong>Junior Olympics</strong></a>
+            <a class="cpi-v8-event" href="tournaments.html"><b>Jun 20–22</b><strong>KAP7 SoCal Invite</strong></a>
+            <a class="cpi-v8-event" href="tournaments.html"><b>Jun 27–29</b><strong>Rose Bowl Classic</strong></a>
+            <a class="cpi-v8-event" href="tournaments.html"><b>Jul 11–13</b><strong>Far Westerns</strong></a>
+            <a class="cpi-v8-event" href="tournaments.html"><b>Jul 25–27</b><strong>Super Finals</strong></a>
+          </div>
+          <a class="cta" href="tournaments.html">Tournament Calendar</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="cpi-v8-newsletter">
+      <div class="icon">✉</div>
+      <div>
+        <h2>Stay in the Game</h2>
+        <p>Get CPI rankings, recaps, and stories delivered 1–2 times per month.</p>
+      </div>
+      <form>
+        <input type="email" placeholder="Enter your email" aria-label="Email address">
+        <button type="button">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="cpi-v8-footer">
+    <div class="inner">
+      <div class="brand">
+        <a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a>
+        <p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p>
+      </div>
+      <nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav>
+      <nav><h3>Age Groups</h3><a href="12u-boys.html">12U</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a></nav>
+      <div><h3>About CPI</h3><p>The California Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div>
+    </div>
+    <div class="bottom">© 2026 California Polo Index. All rights reserved.</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="js/app.js"></script>
   <script src="js/command-palette.js"></script>
-  <script src="js/premium-homepage.js"></script>
-  <script src="js/homepage-loader.js"></script>
-  <script src="js/hero-v2.js"></script>
-  <script src="js/editorial-feed.js"></script>
-  <script src="js/at-a-glance.js"></script>
-  <script src="js/newsletter-footer.js"></script>
-  <script src="js/homepage-visual-system.js"></script>
-  <script src="js/homepage-v7-cleanup.js"></script>
-  <script src="js/hero-polish.js"></script>
-  <script src="js/header-order-fix.js"></script>
-  <script src="js/premium-homepage-polish.js"></script>
-</body></html>
+  <script src="js/homepage-v8.js"></script>
+</body>
+</html>
