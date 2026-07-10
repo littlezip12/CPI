@@ -1,28 +1,7 @@
-# CPI Version Roadmap
+# CPI Version
 
-## v0.9 — Engine v2 Pipeline Foundation
+Current release: 7.10 v8
 
-- One-command build pipeline
-- Registry-first parsing
-- Tournament import normalization
-- Canonical game output
-- QA dashboard output
-- Rankings v2 draft output
-- No live UI changes by default
+## Release 7.10 v8
 
-## v1.0 Target
-
-- Stable registry-driven imports
-- Credible CPI rankings
-- Team pages backed by canonical games
-- Tournament pages
-- Club pages
-- QA dashboard
-- One-command rebuild and publish workflow
-
-## Release 7.9 — Rankings Data Readiness
-
-- Added tournament coverage audit for uploaded source files
-- Updated group hub empty states with ranking-intake readiness signals
-- Documented ranking intake workflow and group readiness status
-- Preserved existing public rankings, CPI scores, and page structure
+Pre-JO 12U Boys rankings pilot cleanup with explicit D1/D2/D3 division-tier guardrails. This release keeps the 12U Boys rankings pilot active while lowering Gold/D2 profiles that were ranking too high without enough D1 validation.

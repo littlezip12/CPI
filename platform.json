@@ -3,8 +3,9 @@
   "shortName": "CPI",
   "tagline": "Ranked. Respected. Earned.",
   "currentSeason": "2026",
-  "currentUpdate": "Release 7.7 Data & Identity Cleanup",
+  "currentUpdate": "Release 7.10 Pre-JO 12U Boys Rankings Pilot v8",
   "activeGroups": [
+    "12U Boys",
     "14U Boys"
   ],
   "plannedGroups": [
@@ -13,11 +14,10 @@
     "16U Girls",
     "18U Boys",
     "18U Girls",
-    "12U Boys",
     "12U Girls"
   ],
   "dataPolicy": "Verified tournament results only; local scrimmages and friendlies are excluded.",
-  "release": "4.0 Front Page Redesign",
+  "release": "7.10 v8",
   "brandingStatus": {
     "verifiedLogoCount": 30,
     "clubCount": 79
@@ -27,5 +27,30 @@
   "identityCleanup": {
     "regionsNormalized": 69,
     "clubsNeedingReview": 49
+  },
+  "rankingDataReadiness": {
+    "sourceFilesAudited": 39,
+    "groupsReadyForReview": [
+      "12U Boys",
+      "12U Girls",
+      "14U Boys",
+      "14U Girls",
+      "16U Boys",
+      "16U Girls",
+      "18U Boys"
+    ],
+    "groupsNeedingManualReview": [
+      "18U Girls"
+    ],
+    "juniorOlympics": "Not yet included; post-JO validation planned",
+    "preJORankingsPilot": "12U Boys v8",
+    "teamDepthGuardrails": "Applied to 12U Boys v3 pilot",
+    "sameTeamAliasMerges": "Expanded same-team alias layer applied to 12U Boys v7 pilot",
+    "singleGroupRankings": "Rankings page renders one age/gender group at a time"
+  },
+  "rankingModelGuardrails": {
+    "platinumD1": "D1/Platinum teams anchor the top ranking bands. D1 teams generally stay above Gold teams unless they are consistently at the bottom and the Gold team has strong validation.",
+    "goldD2": "Top Gold/D2 teams can pass the bottom D1 teams only with strong head-to-head/key-win evidence and recent form.",
+    "silverD3": "Top Silver/D3 teams can pass lower Gold teams only with clear supporting evidence; Silver success alone does not create a D1 ranking."
   }
 }
