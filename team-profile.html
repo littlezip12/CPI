@@ -1,18 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CPI Team Profile</title>
   <script>
     const q = new URLSearchParams(location.search);
     const team = q.get("team");
     location.replace("team.html" + (team ? "?team=" + encodeURIComponent(team) : ""));
   </script>
-  <link rel="stylesheet" href="css/site-shell.css">
-  <link rel="stylesheet" href="css/command-palette.css">
 </head>
-<body>Redirecting to team page...  <script src="js/site-shell.js"></script>
-  <script src="js/command-palette.js"></script>
-</body>
+<body>Redirecting to team page...</body>
 </html>
