@@ -19,3 +19,10 @@
 - Club pages
 - QA dashboard
 - One-command rebuild and publish workflow
+
+## Release 7.9 — Rankings Data Readiness
+
+- Added tournament coverage audit for uploaded source files
+- Updated group hub empty states with ranking-intake readiness signals
+- Documented ranking intake workflow and group readiness status
+- Preserved existing public rankings, CPI scores, and page structure
