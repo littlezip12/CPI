@@ -1,0 +1,76 @@
+# CPI Data Identity Audit
+
+## Region distribution
+
+- Bay Area: 1
+- Central Coast: 2
+- Central Valley: 3
+- East Bay: 6
+- Inland Empire: 2
+- Los Angeles: 9
+- Los Angeles / Long Beach: 1
+- Los Angeles / South Bay: 1
+- Orange County: 16
+- Out of State / Hawaii: 2
+- Out of State / Needs Review: 3
+- Out of State / Nevada: 1
+- Peninsula: 4
+- Region TBD: 10
+- Sacramento: 2
+- San Diego: 6
+- San Francisco: 1
+- South Bay: 2
+- Southern California: 4
+- Ventura / Channel Islands: 3
+
+## Clubs needing manual review
+
+- 908 — region: Out of State / Needs Review, logo status: placeholder, colors: #073763 / #F7B500
+- BOA — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- Back Bay — region: Orange County, logo status: placeholder, colors: #073763 / #F7B500
+- Brea Olinda Gold — region: Orange County, logo status: placeholder, colors: #073763 / #F7B500
+- Burlingame — region: Peninsula, logo status: placeholder, colors: #073763 / #F7B500
+- CDM — region: Orange County, logo status: placeholder, colors: #073763 / #F7B500
+- CT Premier — region: Out of State / Needs Review, logo status: placeholder, colors: #073763 / #F7B500
+- CVU — region: Central Valley, logo status: placeholder, colors: #073763 / #F7B500
+- Devils Gate — region: Los Angeles, logo status: placeholder, colors: #073763 / #F7B500
+- Gold Coast — region: Ventura / Channel Islands, logo status: placeholder, colors: #073763 / #F7B500
+- Hieland — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- Honolulu Blue — region: Out of State / Hawaii, logo status: placeholder, colors: #073763 / #F7B500
+- Honolulu Green — region: Out of State / Hawaii, logo status: placeholder, colors: #073763 / #F7B500
+- Kingsburg — region: Central Valley, logo status: placeholder, colors: #073763 / #F7B500
+- LA Premier — region: Los Angeles, logo status: placeholder, colors: #073763 / #F7B500
+- Los Alamitos — region: Orange County, logo status: placeholder, colors: #073763 / #F7B500
+- Loyola WPC — region: Los Angeles, logo status: placeholder, colors: #073763 / #F7B500
+- Midpen — region: Peninsula, logo status: placeholder, colors: #073763 / #F7B500
+- Nado — region: San Diego, logo status: placeholder, colors: #073763 / #F7B500
+- Northwest — region: Out of State / Needs Review, logo status: placeholder, colors: #073763 / #F7B500
+- ORWP — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- OVAC — region: Ventura / Channel Islands, logo status: placeholder, colors: #073763 / #F7B500
+- PV WPC — region: Los Angeles / South Bay, logo status: placeholder, colors: #073763 / #F7B500
+- Pasadena AC — region: Los Angeles, logo status: placeholder, colors: #073763 / #F7B500
+- Pegasus — region: Peninsula, logo status: placeholder, colors: #073763 / #F7B500
+- Poway Valley Black — region: San Diego, logo status: placeholder, colors: #073763 / #F7B500
+- Riverside — region: Inland Empire, logo status: placeholder, colors: #073763 / #F7B500
+- Route 66 Aquatics — region: Inland Empire, logo status: placeholder, colors: #073763 / #F7B500
+- SD ECA — region: San Diego, logo status: placeholder, colors: #073763 / #F7B500
+- SHAQ — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- SJ Express — region: South Bay, logo status: placeholder, colors: #073763 / #F7B500
+- SJ Foundation — region: South Bay, logo status: placeholder, colors: #073763 / #F7B500
+- San Clemente — region: Orange County, logo status: placeholder, colors: #073763 / #F7B500
+- San Clemente Red — region: Orange County, logo status: placeholder, colors: #073763 / #F7B500
+- San Diego Shores — region: San Diego, logo status: placeholder, colors: #073763 / #F7B500
+- San Francisco — region: San Francisco, logo status: placeholder, colors: #073763 / #F7B500
+- Sand Canyon — region: Orange County, logo status: placeholder, colors: #073763 / #F7B500
+- Santa Cruz — region: Central Coast, logo status: placeholder, colors: #073763 / #F7B500
+- Sharks — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- Shore Aquatics — region: Los Angeles / Long Beach, logo status: placeholder, colors: #073763 / #F7B500
+- Skip — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- Supreme — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- Temple City — region: Los Angeles, logo status: placeholder, colors: #073763 / #F7B500
+- Titans — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- Tri-Valley Tritons — region: East Bay, logo status: placeholder, colors: #073763 / #F7B500
+- Trilogy — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- Triton Gold — region: Region TBD, logo status: placeholder, colors: #073763 / #F7B500
+- Trojan — region: Los Angeles, logo status: placeholder, colors: #073763 / #F7B500
+- Vegas Renegades — region: Out of State / Nevada, logo status: placeholder, colors: #073763 / #F7B500
