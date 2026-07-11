@@ -1,0 +1,370 @@
+
+/* Release 7.17: premium team profile visual system */
+.team-profile-page {
+  --profile-bg: #07111f;
+  --profile-surface: rgba(255,255,255,.94);
+  --profile-surface-strong: #ffffff;
+  --profile-border: rgba(15,23,42,.10);
+  --profile-ink: #0f172a;
+  --profile-muted: #64748b;
+  --profile-shadow-strong: 0 32px 90px rgba(8,25,48,.18);
+  --profile-shadow-soft: 0 18px 50px rgba(8,25,48,.08);
+  background:
+    radial-gradient(circle at 8% 4%, color-mix(in srgb, var(--team-primary) 28%, transparent), transparent 34rem),
+    radial-gradient(circle at 92% 0%, color-mix(in srgb, var(--team-secondary) 26%, transparent), transparent 30rem),
+    linear-gradient(180deg, #081527 0%, #f4f8fd 31%, #ffffff 100%);
+}
+
+.team-profile-shell {
+  width: min(1540px, calc(100% - 34px));
+  padding: 28px 0 84px;
+}
+
+.team-profile-layout {
+  display: grid;
+  grid-template-columns: minmax(292px, 342px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.team-club-rail {
+  position: sticky;
+  top: 92px;
+  max-height: calc(100vh - 112px);
+  overflow: auto;
+  border-radius: 30px;
+  padding: 20px;
+  background:
+    radial-gradient(circle at 18% 0%, color-mix(in srgb, var(--team-secondary) 20%, transparent), transparent 16rem),
+    linear-gradient(180deg, color-mix(in srgb, var(--team-primary) 88%, #051326), color-mix(in srgb, var(--team-primary) 60%, #020617 40%));
+  color: #fff;
+  box-shadow: 0 26px 72px rgba(2,6,23,.28);
+}
+
+.team-club-rail::before {
+  height: 4px;
+  margin: 0 0 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--team-secondary), rgba(255,255,255,.42), var(--team-secondary));
+}
+
+.team-club-rail-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 0 0 18px;
+  border-bottom: 1px solid rgba(255,255,255,.13);
+}
+
+.team-club-rail-head .team-logo.lg,
+.team-logo.lg {
+  width: 74px;
+  height: 74px;
+  border-radius: 20px;
+}
+
+.team-club-rail-head span {
+  color: rgba(255,255,255,.64);
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.team-club-rail-head strong {
+  margin-top: 3px;
+  color: #fff;
+  font-size: 1.05rem;
+  line-height: 1.15;
+}
+
+.team-rail-club-link {
+  margin: 16px 0;
+  min-height: 46px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 16px;
+  background: rgba(255,255,255,.10);
+  color: #fff;
+}
+
+.team-rail-group {
+  margin-top: 10px;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 18px;
+  background: rgba(255,255,255,.055);
+}
+
+.team-rail-group h2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 12px 8px;
+  color: rgba(255,255,255,.72);
+  font-size: .74rem;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
+.team-rail-group h2 span {
+  display: inline-grid;
+  min-width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  color: #fff;
+}
+
+.team-rail-group.is-open {
+  border-color: color-mix(in srgb, var(--team-secondary) 42%, rgba(255,255,255,.14));
+  background: color-mix(in srgb, var(--team-secondary) 11%, rgba(255,255,255,.06));
+}
+
+.team-rail-team {
+  grid-template-columns: 42px minmax(0,1fr) 58px;
+  gap: 10px;
+  min-height: 48px;
+  margin: 7px;
+  padding: 9px 10px;
+  border-radius: 14px;
+  color: rgba(255,255,255,.82);
+}
+
+.team-rail-team span {
+  color: var(--team-secondary);
+  font-weight: 950;
+}
+
+.team-rail-team strong {
+  font-size: .90rem;
+}
+
+.team-rail-team em {
+  color: rgba(255,255,255,.58);
+  font-size: .76rem;
+}
+
+.team-rail-team:hover,
+.team-rail-team:focus-visible,
+.team-rail-team.is-current {
+  background: rgba(255,255,255,.14);
+  color: #fff;
+  outline: none;
+}
+
+.team-profile-main {
+  min-width: 0;
+}
+
+.team-hero {
+  min-height: 438px;
+  grid-template-columns: minmax(0, 1fr) minmax(284px, 384px);
+  border-radius: 36px;
+  padding: clamp(30px, 5vw, 64px);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 84% 12%, color-mix(in srgb, var(--team-secondary) 33%, transparent), transparent 22rem),
+    linear-gradient(132deg, color-mix(in srgb, var(--team-primary) 94%, #061324), color-mix(in srgb, var(--team-primary) 62%, #020617 38%));
+  box-shadow: var(--profile-shadow-strong);
+}
+
+.team-hero::before {
+  inset: auto -72px -132px auto;
+  width: 560px;
+  height: 560px;
+  opacity: .10;
+  filter: grayscale(1) contrast(.85);
+}
+
+.team-hero::after {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.10), transparent 38%),
+    linear-gradient(180deg, rgba(255,255,255,.06), transparent 54%);
+}
+
+.team-hero h1 {
+  max-width: 860px;
+  font-size: clamp(3.15rem, 6.2vw, 6.35rem);
+  line-height: .88;
+  letter-spacing: -.085em;
+}
+
+.team-summary {
+  max-width: 720px;
+  color: rgba(255,255,255,.76);
+}
+
+.team-meta a,
+.team-meta span {
+  border-color: rgba(255,255,255,.20);
+  background: rgba(255,255,255,.11);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.14);
+}
+
+.team-hero-card {
+  align-content: center;
+  border-radius: 30px;
+  background: rgba(255,255,255,.12);
+  border-color: rgba(255,255,255,.18);
+  backdrop-filter: blur(14px);
+}
+
+.team-logo.xl {
+  width: 172px;
+  height: 172px;
+  border-radius: 28px;
+}
+
+.team-hero-card strong {
+  margin-top: 20px;
+  font-size: clamp(4.4rem, 9vw, 7.7rem);
+}
+
+.profile-tabs {
+  position: sticky;
+  top: 80px;
+  z-index: 4;
+  margin: 18px 0 18px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.84);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 18px 45px rgba(8,25,48,.08);
+}
+
+.profile-tabs a:hover,
+.profile-tabs a:focus-visible {
+  background: var(--team-primary);
+  color: #fff;
+}
+
+.team-snapshot {
+  gap: 14px;
+}
+
+.team-snapshot article {
+  min-height: 150px;
+  border-radius: 24px;
+  border: 1px solid var(--profile-border);
+  background: linear-gradient(180deg, #fff, rgba(248,251,255,.90));
+  box-shadow: var(--profile-shadow-soft);
+}
+
+.team-snapshot article::before {
+  height: 5px;
+  background: linear-gradient(90deg, var(--team-primary), var(--team-secondary));
+}
+
+.team-snapshot span {
+  color: var(--profile-muted);
+  font-size: .73rem;
+}
+
+.team-snapshot strong {
+  color: var(--profile-ink);
+  font-size: clamp(2.25rem, 4vw, 3.35rem);
+}
+
+.team-content-grid,
+.team-content-grid.lower {
+  gap: 16px;
+}
+
+.team-panel,
+.team-future-panel {
+  border: 1px solid var(--profile-border);
+  border-radius: 28px;
+  background: var(--profile-surface);
+  box-shadow: var(--profile-shadow-soft);
+}
+
+.highlight-panel {
+  background:
+    radial-gradient(circle at 96% 0%, var(--team-primary-soft), transparent 22rem),
+    linear-gradient(180deg, #fff, rgba(248,251,255,.90));
+}
+
+.section-heading h2 {
+  letter-spacing: -.035em;
+}
+
+.intelligence-grid div {
+  border-radius: 22px;
+  background: #fff;
+}
+
+.brand-card,
+.same-group-card,
+.peer-row {
+  border-radius: 20px;
+  background: #fff;
+}
+
+.same-group-card {
+  grid-template-columns: auto minmax(0,1fr) auto;
+}
+
+.same-group-card.is-current {
+  border-color: color-mix(in srgb, var(--team-primary) 44%, rgba(16,32,51,.10));
+  box-shadow: 0 16px 40px rgba(8,25,48,.10);
+}
+
+.team-future-panel.compact {
+  color: #fff;
+  background:
+    radial-gradient(circle at 88% 10%, color-mix(in srgb, var(--team-secondary) 30%, transparent), transparent 22rem),
+    linear-gradient(135deg, color-mix(in srgb, var(--team-primary) 92%, #081426), color-mix(in srgb, var(--team-primary) 70%, #020617 30%));
+}
+
+.team-future-panel.compact h2,
+.team-future-panel.compact .kicker {
+  color: #fff;
+}
+
+.team-future-panel.compact p {
+  color: rgba(255,255,255,.72);
+}
+
+.team-logo {
+  background: rgba(255,255,255,.92);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(2,6,23,.12);
+}
+
+.team-logo img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+@media (max-width: 1180px) {
+  .team-profile-layout {
+    grid-template-columns: 1fr;
+  }
+  .team-club-rail,
+  .profile-tabs {
+    position: static;
+  }
+  .team-club-rail {
+    max-height: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .team-profile-shell {
+    width: min(100% - 20px, 1540px);
+  }
+  .team-hero {
+    grid-template-columns: 1fr;
+    border-radius: 28px;
+  }
+  .team-hero-card {
+    min-height: 260px;
+  }
+  .team-logo.xl {
+    width: 136px;
+    height: 136px;
+  }
+  .team-rail-team {
+    grid-template-columns: 38px minmax(0,1fr) 52px;
+  }
+}

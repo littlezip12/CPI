@@ -1,10 +1,10 @@
-# California Polo Index — Version 7.16
+# California Polo Index Version
 
-## Release 7.16 — Logo Asset Normalization
+Current Release: 7.17
 
-- Converted verified bitmap club logos into canonical WebP files under `assets/logos/canonical/`.
-- Updated ranking, club, team, and registry data to use predictable club-slug logo paths.
-- Retained generated SVG placeholders for clubs that still need source artwork.
-- Added logo audit and path-validation artifacts.
-- Softened logo containers across rankings, club pages, and team pages so logos are not forced into harsh circular treatments.
-- Preserved all rankings, CPI scores, routing, and page structure.
+## Release 7.17 — Team and Club Profile UI Redesign
+
+- Refines the team profile visual system using the premium club/team profile rendering as the north star.
+- Refines the club profile visual system with stronger branded hero sections, KPI cards, tabs, and profile cards.
+- Uses the canonical logo foundation from Release 7.16 without changing ranking data.
+- Preserves all Pre-JO rankings, CPI scores, routing, homepage structure, and ranking group behavior.
