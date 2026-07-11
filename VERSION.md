@@ -1,6 +1,10 @@
-# CPI Version
+# California Polo Index Version
 
-Release: 7.13
-Name: Pre-JO Older Age Rankings Expansion
+## Release 7.14
 
-Adds 16U Boys, 16U Girls, 18U Boys, and 18U Girls Pre-JO rankings using the ranking model guardrails refined in 7.10–7.12.
+Pre-JO 14U Boys metadata refresh and full rankings QA review.
+
+- 14U Boys now carries the same metadata/guardrail layer used by newer ranking groups.
+- Added full ranking QA review across live age/gender groups.
+- Added depth-team review ledger for groups with 40+ ranked teams.
+- No homepage, rankings UI, club pages, or team pages were redesigned.

@@ -3,7 +3,7 @@
   "shortName": "CPI",
   "tagline": "Ranked. Respected. Earned.",
   "currentSeason": "2026",
-  "currentUpdate": "Release 7.13 Pre-JO Older Age Rankings Expansion",
+  "currentUpdate": "Release 7.14 14U Boys metadata refresh and full ranking QA",
   "activeGroups": [
     "12U Boys",
     "12U Girls",
@@ -16,7 +16,7 @@
   ],
   "plannedGroups": [],
   "dataPolicy": "Verified tournament results only; local scrimmages and friendlies are excluded.",
-  "release": "7.13",
+  "release": "7.14",
   "brandingStatus": {
     "verifiedLogoCount": 30,
     "clubCount": 79
@@ -42,7 +42,7 @@
       "18U Girls"
     ],
     "juniorOlympics": "Not yet included; post-JO validation planned",
-    "preJORankingsPilot": "12U Boys v8; 12U Girls v3; 14U Girls v3; 16U/18U Boys/Girls v1",
+    "preJORankingsPilot": "12U Boys v8; 12U Girls v3; 14U Girls v3; 14U Boys v2 metadata refresh; 16U/18U Boys/Girls v1",
     "teamDepthGuardrails": "Applied to 12U Boys v3 pilot",
     "sameTeamAliasMerges": "Expanded same-team alias layer applied to 12U Boys v7 and 14U Girls v3 pilots",
     "singleGroupRankings": "Rankings page renders one age/gender group at a time"
@@ -56,6 +56,8 @@
     "girlsMajorEvents": "Futures Super Finals and US Club Championships are weighted as peer major events for girls ranking groups.",
     "girlsCommonOpponentCrossover": "12U Girls v3 uses common-opponent crossover across Futures, US Club, JO Quals, and SD County Cup; SBWPC A was moved below the top 10 after D2/D1 validation review.",
     "d2MajorEventCeiling": "Lower-division major-event wins can move teams upward, but they require D1 validation to enter the top 10.",
-    "olderAgeExpansion": "16U and 18U groups use recent major-event weighting, JO Qualifier validation, division-tier guardrails, team-depth guardrails, and manual alias normalization."
+    "olderAgeExpansion": "16U and 18U groups use recent major-event weighting, JO Qualifier validation, division-tier guardrails, team-depth guardrails, and manual alias normalization.",
+    "boys14URefresh": "14U Boys now carries the same Pre-JO metadata layer used by newer groups: team depth, division tier, game counts, major-event context, and review flags. Ranking order is preserved for this refresh.",
+    "depthTeamReview": "Depth-team review flags are generated for groups with 40+ teams, with special attention to B/C teams in upper bands and same-club ladder inversions."
   }
 }
