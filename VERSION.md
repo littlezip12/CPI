@@ -1,12 +1,13 @@
 # CPI Version
 
-Current release: 7.11 v3
+Current release: 7.12
 
-Release name: Pre-JO 14U Girls Rankings Pilot — Alias Audit
+Release name: Pre-JO 12U Girls Rankings Pilot v3
 
 Notes:
-- Corrects Lamorinda 14U Girls team structure: A remains A; B/Gold consolidate; C remains separate.
-- Applies broader 14U Girls same-team alias audit.
-- Preserves Futures / US Club equal weighting model.
-- Holds sub-5-game profiles from the public 14U Girls ranking.
-- Preserves 12U Boys, 14U Boys, homepage, clubs, and team pages.
+- Adds preliminary Pre-JO 12U Girls rankings.
+- Weights Futures Super Finals and US Club Championships as peer major events.
+- Applies common-opponent, team-depth, alias, and division-tier guardrails.
+- Moves SBWPC A out of the top 10 after D2/D1 validation review.
+- Adds/maintains 12U Girls as a live rankings group.
+- Preserves existing public rankings and page structure.
