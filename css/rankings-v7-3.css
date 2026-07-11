@@ -530,3 +530,11 @@ body.rankings-page {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Release 7.16 logo normalization: cleaner ranking-row logo presentation. */
+.ranking-logo {
+  background: rgba(255,255,255,0.88);
+  border-radius: 14px;
+  padding: 4px;
+  object-fit: contain;
+}

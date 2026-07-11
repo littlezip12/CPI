@@ -1129,3 +1129,23 @@ html {
     height: 132px;
   }
 }
+
+/* Release 7.16 logo normalization: use canonical transparent art without forcing harsh circles. */
+.team-logo {
+  background: rgba(255,255,255,0.86);
+  border-radius: 14px;
+  border-color: rgba(16,32,51,0.08);
+  box-shadow: 0 10px 26px rgba(10,31,59,0.10);
+}
+.team-logo img {
+  width: 92%;
+  height: 92%;
+  max-width: 92%;
+  max-height: 92%;
+  object-fit: contain;
+}
+.team-logo.xl {
+  border-radius: 26px;
+  background: rgba(255,255,255,0.90);
+}
+.team-logo.lg { border-radius: 18px; }

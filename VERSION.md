@@ -1,13 +1,10 @@
-# California Polo Index Version
+# California Polo Index — Version 7.16
 
-## Release 7.15
+## Release 7.16 — Logo Asset Normalization
 
-Site QA, flow, and navigation cleanup.
-
-- Repaired malformed homepage markup while preserving the finalized homepage order.
-- Restored the Top Stories and At a Glance sections as separate homepage sections.
-- Expanded homepage ranking selector and footer age-group links to all live Pre-JO groups.
-- Updated group hub CTAs so each age/gender page opens its own ranking view instead of the default rankings page.
-- Updated the universal site-shell quick links to all live age/gender rankings.
-- Fixed case-sensitive logo paths on three generated club pages.
-- No ranking order, CPI score, model logic, team profile design, or club profile design changes.
+- Converted verified bitmap club logos into canonical WebP files under `assets/logos/canonical/`.
+- Updated ranking, club, team, and registry data to use predictable club-slug logo paths.
+- Retained generated SVG placeholders for clubs that still need source artwork.
+- Added logo audit and path-validation artifacts.
+- Softened logo containers across rankings, club pages, and team pages so logos are not forced into harsh circular treatments.
+- Preserved all rankings, CPI scores, routing, and page structure.

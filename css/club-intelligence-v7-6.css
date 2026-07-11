@@ -860,3 +860,22 @@
     grid-column: 2;
   }
 }
+
+/* Release 7.16 logo normalization: canonical transparent logos, softer containers. */
+.club-logo-box,
+.club-card-logo,
+.club-profile-logo {
+  background: rgba(255,255,255,0.88);
+  border-radius: 14px;
+  border-color: rgba(15,23,42,.08);
+}
+.club-logo-box img,
+.club-card-logo img,
+.club-profile-logo img {
+  width: 92%;
+  height: 92%;
+  max-width: 92%;
+  max-height: 92%;
+  object-fit: contain;
+}
+.club-profile-logo { border-radius: 24px; }
