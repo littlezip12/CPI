@@ -12,16 +12,16 @@
   ];
 
   const quickLinks = [
-    { label: "Top 25", href: "rankings.html" },
-    { label: "Biggest Movers", href: "rankings.html#biggest-movers" },
-    { label: "12U", href: "12u-boys.html" },
-    { label: "14U Boys", href: "14u-boys.html" },
-    { label: "14U Girls", href: "14u-girls.html" },
-    { label: "16U Boys", href: "16u-boys.html" },
-    { label: "16U Girls", href: "16u-girls.html" },
-    { label: "18U Boys", href: "18u-boys.html" },
-    { label: "18U Girls", href: "18u-girls.html" },
-    { label: "Latest Recap", href: "tournaments.html" }
+    { label: "12U Boys", href: "rankings.html?group=12u-boys" },
+    { label: "12U Girls", href: "rankings.html?group=12u-girls" },
+    { label: "14U Boys", href: "rankings.html?group=14u-boys" },
+    { label: "14U Girls", href: "rankings.html?group=14u-girls" },
+    { label: "16U Boys", href: "rankings.html?group=16u-boys" },
+    { label: "16U Girls", href: "rankings.html?group=16u-girls" },
+    { label: "18U Boys", href: "rankings.html?group=18u-boys" },
+    { label: "18U Girls", href: "rankings.html?group=18u-girls" },
+    { label: "Clubs", href: "clubs.html" },
+    { label: "Methodology", href: "methodology.html" }
   ];
 
   function depthPrefix() {

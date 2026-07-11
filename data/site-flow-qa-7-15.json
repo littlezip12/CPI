@@ -1,0 +1,68 @@
+{
+  "release": "7.15",
+  "type": "site-flow-qa",
+  "summary": {
+    "targetedFiles": [
+      "VERSION.md",
+      "app.js",
+      "club.html",
+      "club/lawpc.html",
+      "club/ocwpc.html",
+      "club/pride.html",
+      "clubs.html",
+      "docs/RELEASE_7_15_SITE_QA_FLOW_CLEANUP.md",
+      "index.html",
+      "js/app.js",
+      "js/site-shell.js",
+      "rankings.html",
+      "team.html"
+    ],
+    "missingLocalReferencesAfterCleanup": [
+      {
+        "page": "rankings-qa.html",
+        "attribute": "src",
+        "target": "data/cpi_qa_rankings_2026_14u_boys.js",
+        "resolved": "data/cpi_qa_rankings_2026_14u_boys.js"
+      },
+      {
+        "page": "rankings-qa.html",
+        "attribute": "src",
+        "target": "js/rankings-qa.js",
+        "resolved": "js/rankings-qa.js"
+      },
+      {
+        "page": "rankings-qa.html",
+        "attribute": "href",
+        "target": "css/rankings-qa.css",
+        "resolved": "css/rankings-qa.css"
+      }
+    ],
+    "knownDeferredItems": [
+      "Logo visual normalization is deferred to Release 7.16.",
+      "Team/club profile visual redesign is deferred to Release 7.17.",
+      "rankings-qa.html still references legacy QA-only files and was not changed in this public flow cleanup."
+    ]
+  },
+  "checks": [
+    {
+      "area": "homepage",
+      "status": "fixed",
+      "detail": "Restored valid hero, Top Stories, At a Glance, Newsletter, Footer sequence."
+    },
+    {
+      "area": "rankings-navigation",
+      "status": "fixed",
+      "detail": "Homepage selector and footer links cover all live Pre-JO groups."
+    },
+    {
+      "area": "group-hubs",
+      "status": "fixed",
+      "detail": "Group hub CTAs now open the selected age/gender rankings view."
+    },
+    {
+      "area": "static-club-logo-paths",
+      "status": "fixed",
+      "detail": "Corrected case-sensitive file paths for LAWPC, OCWPC, and Pride generated club pages."
+    }
+  ]
+}

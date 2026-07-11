@@ -1,10 +1,13 @@
 # California Polo Index Version
 
-## Release 7.14
+## Release 7.15
 
-Pre-JO 14U Boys metadata refresh and full rankings QA review.
+Site QA, flow, and navigation cleanup.
 
-- 14U Boys now carries the same metadata/guardrail layer used by newer ranking groups.
-- Added full ranking QA review across live age/gender groups.
-- Added depth-team review ledger for groups with 40+ ranked teams.
-- No homepage, rankings UI, club pages, or team pages were redesigned.
+- Repaired malformed homepage markup while preserving the finalized homepage order.
+- Restored the Top Stories and At a Glance sections as separate homepage sections.
+- Expanded homepage ranking selector and footer age-group links to all live Pre-JO groups.
+- Updated group hub CTAs so each age/gender page opens its own ranking view instead of the default rankings page.
+- Updated the universal site-shell quick links to all live age/gender rankings.
+- Fixed case-sensitive logo paths on three generated club pages.
+- No ranking order, CPI score, model logic, team profile design, or club profile design changes.
