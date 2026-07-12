@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Post-JO Comparison",
+  "type": "object",
+  "required": [
+    "groupKey",
+    "preJoSnapshotId",
+    "postJoSourceBatchId",
+    "rows"
+  ],
+  "properties": {
+    "templateName": {
+      "const": "post-jo-comparison"
+    },
+    "release": {
+      "type": "string"
+    },
+    "groupKey": {
+      "type": "string"
+    },
+    "preJoSnapshotId": {
+      "type": "string"
+    },
+    "postJoSourceBatchId": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "array"
+    },
+    "summary": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

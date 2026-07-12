@@ -1,9 +1,9 @@
 # California Polo Index Version
 
-Current release: **7.18 — Ranking Pipeline Architecture**
+Current release: **7.19 — Post-JO Intake Readiness**
 
-Release 7.18 is a non-ranking architecture release. It adds the documentation, schema templates, and model configuration scaffolding needed to support post-JO recalibration and next-season tournament-by-tournament ranking updates.
+Release 7.19 is a non-ranking intake readiness release. It adds the practical post-Junior Olympics intake, review, comparison, source-tracking, alias-correction, and team-depth validation templates needed before CPI publishes post-JO ranking recalibrations.
 
-This release preserves all current rankings, CPI scores, UI, routing, team pages, club pages, and homepage behavior.
+This release preserves all current rankings, CPI scores, UI, routing, team pages, club pages, homepage behavior, and ranking page behavior.
 
-Previous release: **7.17.1 — Profile UI Polish / Bug Cleanup**
+Previous release: **7.18 — Ranking Pipeline Architecture**

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Post-JO Results Intake",
+  "type": "object",
+  "required": [
+    "groupKey",
+    "sourceBatchId",
+    "capturedAt",
+    "sourceStatus",
+    "divisionResults"
+  ],
+  "properties": {
+    "templateName": {
+      "const": "post-jo-results-intake"
+    },
+    "release": {
+      "type": "string"
+    },
+    "groupKey": {
+      "type": "string"
+    },
+    "sourceBatchId": {
+      "type": "string"
+    },
+    "capturedAt": {
+      "type": "string"
+    },
+    "sourceStatus": {
+      "enum": [
+        "pending",
+        "partial",
+        "complete",
+        "verified"
+      ]
+    },
+    "divisionResults": {
+      "type": "array"
+    },
+    "gameResults": {
+      "type": "array"
+    },
+    "intakeNotes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

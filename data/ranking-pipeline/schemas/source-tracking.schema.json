@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Source Tracking",
+  "type": "object",
+  "required": [
+    "sources"
+  ],
+  "properties": {
+    "templateName": {
+      "const": "source-tracking"
+    },
+    "release": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sourceId",
+          "sourceName",
+          "sourceType",
+          "capturedAt",
+          "groupKey",
+          "status"
+        ],
+        "properties": {
+          "sourceId": {
+            "type": "string"
+          },
+          "sourceName": {
+            "type": "string"
+          },
+          "sourceType": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "capturedAt": {
+            "type": "string"
+          },
+          "groupKey": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

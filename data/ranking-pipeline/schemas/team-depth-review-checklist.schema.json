@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Team Depth Review Checklist",
+  "type": "object",
+  "required": [
+    "groupKey",
+    "clubDepthReviewItems"
+  ],
+  "properties": {
+    "templateName": {
+      "const": "team-depth-review-checklist"
+    },
+    "release": {
+      "type": "string"
+    },
+    "groupKey": {
+      "type": "string"
+    },
+    "clubDepthReviewItems": {
+      "type": "array"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

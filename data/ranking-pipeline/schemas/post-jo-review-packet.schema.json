@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Post-JO Review Packet",
+  "type": "object",
+  "required": [
+    "groupKey",
+    "packetStatus",
+    "sourceStatus",
+    "groupSummary",
+    "recommendedRankingChanges",
+    "finalQa"
+  ],
+  "properties": {
+    "templateName": {
+      "const": "post-jo-review-packet"
+    },
+    "release": {
+      "type": "string"
+    },
+    "groupKey": {
+      "type": "string"
+    },
+    "packetStatus": {
+      "enum": [
+        "draft",
+        "in-review",
+        "approved",
+        "published"
+      ]
+    },
+    "sourceStatus": {
+      "type": "string"
+    },
+    "groupSummary": {
+      "type": "object"
+    },
+    "preJoTop25": {
+      "type": "array"
+    },
+    "joFinishSummary": {
+      "type": "array"
+    },
+    "overperformers": {
+      "type": "array"
+    },
+    "underperformers": {
+      "type": "array"
+    },
+    "aliasReview": {
+      "type": "array"
+    },
+    "teamDepthReview": {
+      "type": "array"
+    },
+    "recommendedRankingChanges": {
+      "type": "array"
+    },
+    "finalQa": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,67 @@
+{
+  "templateName": "post-jo-results-intake",
+  "release": "7.19",
+  "groupKey": "12u-boys",
+  "sourceBatchId": "jo-2026-12u-boys-example",
+  "capturedAt": "YYYY-MM-DD",
+  "sourceStatus": "pending|partial|complete|verified",
+  "divisionResults": [
+    {
+      "divisionName": "Championship|Classic|Invitational|Gold|Silver|Other",
+      "divisionTier": "D1|D2|D3|Unknown",
+      "sourceUrl": "https://example.com/source",
+      "teams": [
+        {
+          "rawTeamName": "Raw source team name",
+          "displayTeamName": "Normalized display team name",
+          "clubKey": "club-slug-or-null",
+          "teamDesignation": "A|B|C|Red|Blue|Navy|Black|Unknown",
+          "finalPlacement": null,
+          "record": {
+            "wins": null,
+            "losses": null,
+            "ties": 0
+          },
+          "gamesPlayed": null,
+          "bestWin": {
+            "opponent": "",
+            "score": "",
+            "gameId": ""
+          },
+          "worstLoss": {
+            "opponent": "",
+            "score": "",
+            "gameId": ""
+          },
+          "closeLosses": [],
+          "placementGame": {
+            "gameId": "",
+            "opponent": "",
+            "score": "",
+            "result": "W|L|T|Unknown"
+          },
+          "bracketPathNote": "",
+          "sourceConfidence": "high|medium|low",
+          "reviewFlags": []
+        }
+      ]
+    }
+  ],
+  "gameResults": [
+    {
+      "gameId": "",
+      "date": "YYYY-MM-DD",
+      "divisionName": "",
+      "bracketRound": "pool|crossover|quarterfinal|semifinal|final|placement|unknown",
+      "teamA": "",
+      "teamB": "",
+      "scoreA": null,
+      "scoreB": null,
+      "winner": "",
+      "venue": "",
+      "sourceUrl": "",
+      "notes": ""
+    }
+  ],
+  "intakeNotes": []
+}
