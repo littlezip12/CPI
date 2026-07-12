@@ -5,15 +5,29 @@ This folder is the intended workspace for Junior Olympics intake and recalibrati
 Do not publish post-JO rankings directly from raw results. Use this sequence:
 
 1. Store source tracking records.
-2. Normalize JO results into the intake template.
-3. Join JO results to pre-JO ranking snapshots.
-4. Generate pre-JO vs JO comparison records.
-5. Create review packets by age/gender group.
-6. Resolve alias and team-depth flags.
-7. Draft post-JO rankings.
-8. Archive final post-JO ranking snapshots.
+2. Normalize JO results into the intake CSV.
+3. Validate the intake CSV.
+4. Join JO results to pre-JO ranking snapshots.
+5. Generate pre-JO vs JO comparison records.
+6. Create review packets by age/gender group.
+7. Resolve alias and team-depth flags.
+8. Draft post-JO rankings.
+9. Archive final post-JO ranking snapshots.
 
-## CPI ranking groups
+## Workspace folders
+
+```text
+post-jo/
+  input/
+    pre-jo-rankings.template.csv
+    post-jo-results-intake.template.csv
+    source-tracking.template.csv
+  output/
+  review-packets/
+  validation/
+```
+
+## Active CPI groups
 
 The active ranking groups are stored in:
 
