@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Ranking Review Packet",
+  "type": "object",
+  "required": ["reviewId", "release", "groups"],
+  "properties": {
+    "reviewId": { "type": "string" },
+    "release": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["group", "top25", "flags"],
+        "properties": {
+          "group": { "type": "string" },
+          "top25": { "type": "array", "items": { "type": "object" } },
+          "flags": { "type": "array", "items": { "type": "object" } },
+          "clubLadders": { "type": "array", "items": { "type": "object" } },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

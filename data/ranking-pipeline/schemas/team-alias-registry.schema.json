@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Team Alias Rule",
+  "type": "object",
+  "required": ["canonicalTeam", "aliases", "group", "confidence"],
+  "properties": {
+    "canonicalTeam": { "type": "string" },
+    "canonicalSlug": { "type": "string" },
+    "club": { "type": "string" },
+    "group": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "teamDepth": { "type": "string", "enum": ["primary", "secondary", "tertiary", "unknown"] },
+    "confidence": { "type": "string", "enum": ["confirmed", "probable", "manual-review"] },
+    "notes": { "type": "string" }
+  }
+}

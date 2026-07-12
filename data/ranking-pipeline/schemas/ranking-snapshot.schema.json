@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Ranking Snapshot",
+  "type": "object",
+  "required": ["snapshotId", "release", "date", "groups"],
+  "properties": {
+    "snapshotId": { "type": "string" },
+    "release": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "label": { "type": "string" },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["group", "rankings"],
+        "properties": {
+          "group": { "type": "string" },
+          "rankings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["rank", "team", "slug", "cpi"],
+              "properties": {
+                "rank": { "type": "integer" },
+                "team": { "type": "string" },
+                "slug": { "type": "string" },
+                "cpi": { "type": "number" },
+                "movement": { "type": "integer" },
+                "gamesTracked": { "type": "integer" },
+                "flags": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

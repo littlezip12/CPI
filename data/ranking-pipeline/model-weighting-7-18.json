@@ -1,0 +1,77 @@
+{
+  "version": "7.18",
+  "purpose": "Ranking model configuration scaffold for post-JO recalibration and next-season tournament updates.",
+  "eventWeights": {
+    "juniorOlympics": {
+      "weight": 1.35,
+      "notes": "Strongest late-season signal. Should heavily influence post-JO rankings but not erase full-season evidence."
+    },
+    "futuresSuperFinals": {
+      "weight": 1.15,
+      "notes": "Major pre-JO event. Primary anchor for boys and peer major event for girls."
+    },
+    "usClubChampionships": {
+      "weight": 1.15,
+      "notes": "Peer major event to Futures for girls groups. Use common-opponent crossover when fields differ."
+    },
+    "joQualifiers": {
+      "weight": 1.0,
+      "notes": "Recent validation and zone-strength signal."
+    },
+    "majorInvitational": {
+      "weight": 0.9,
+      "notes": "KAP7, Turbo, Holiday Cup, SD County Cup, Newport Spring Invite, Year of the Horse, and similar events."
+    },
+    "earlySeason": {
+      "weight": 0.75,
+      "notes": "Useful baseline but should decay as newer evidence becomes available."
+    }
+  },
+  "divisionTierRules": {
+    "D1": {
+      "labels": ["Platinum", "Championship", "D1"],
+      "baselinePriority": 1,
+      "notes": "D1 teams anchor upper ranking bands unless consistently bottom-tier."
+    },
+    "D2": {
+      "labels": ["Gold", "Classic", "D2"],
+      "baselinePriority": 2,
+      "notes": "Top D2 teams may pass bottom D1 teams only with strong supporting evidence."
+    },
+    "D3": {
+      "labels": ["Silver", "Invitational", "D3"],
+      "baselinePriority": 3,
+      "notes": "Top D3 teams may pass lower D2 teams only with strong evidence."
+    }
+  },
+  "teamDepthRules": {
+    "primary": {
+      "labels": ["A", "Black", "Blue", "Navy", "Red"],
+      "guardrail": "Rank normally once club-specific aliases are reviewed."
+    },
+    "secondary": {
+      "labels": ["B", "Gold", "White"],
+      "guardrail": "Can pass weaker A teams with evidence. Flag if top 25."
+    },
+    "tertiary": {
+      "labels": ["C", "Silver"],
+      "guardrail": "Can pass weaker B teams with evidence. Flag if top 50."
+    }
+  },
+  "minimumEvidence": {
+    "publicRankingGames": 5,
+    "top25LowGameFlag": 8,
+    "top10LowGameFlag": 10
+  },
+  "manualReviewFlags": [
+    "B team in top 25",
+    "C team in top 50",
+    "D2 team in top 20",
+    "D3 team in top 40",
+    "low-game team in top 25",
+    "duplicate or uncertain alias",
+    "same-club hierarchy inversion",
+    "strong pre-JO team with poor JO finish",
+    "weak pre-JO team with strong JO finish"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CPI Game Evidence Record",
+  "type": "object",
+  "required": ["gameId", "tournamentId", "group", "teamA", "teamB", "scoreA", "scoreB"],
+  "properties": {
+    "gameId": { "type": "string" },
+    "sourceGameId": { "type": "string" },
+    "tournamentId": { "type": "string" },
+    "date": { "type": "string" },
+    "group": { "type": "string" },
+    "age": { "type": "string" },
+    "gender": { "type": "string" },
+    "division": { "type": "string" },
+    "divisionTier": { "type": "string", "enum": ["D1", "D2", "D3", "Unknown"] },
+    "round": { "type": "string" },
+    "placementContext": { "type": "string" },
+    "teamA": { "type": "string" },
+    "teamB": { "type": "string" },
+    "teamASlug": { "type": "string" },
+    "teamBSlug": { "type": "string" },
+    "scoreA": { "type": "number" },
+    "scoreB": { "type": "number" },
+    "winnerSlug": { "type": "string" },
+    "margin": { "type": "number" },
+    "rawSource": { "type": "string" },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "sourceFile": { "type": "string" },
+    "notes": { "type": "string" }
+  }
+}
