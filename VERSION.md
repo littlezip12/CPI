@@ -1,10 +1,7 @@
 # California Polo Index Version
 
-Current Release: 7.17
+Current release: **7.17.1 — Profile UI Polish / Bug Cleanup**
 
-## Release 7.17 — Team and Club Profile UI Redesign
+Release 7.17.1 is a targeted team and club profile cleanup release. It preserves CPI rankings, scores, ranking model, homepage, and rankings page behavior while tightening profile layouts, responsive behavior, logo rendering, URL resolution, and not-found states.
 
-- Refines the team profile visual system using the premium club/team profile rendering as the north star.
-- Refines the club profile visual system with stronger branded hero sections, KPI cards, tabs, and profile cards.
-- Uses the canonical logo foundation from Release 7.16 without changing ranking data.
-- Preserves all Pre-JO rankings, CPI scores, routing, homepage structure, and ranking group behavior.
+Previous release: **7.17 — Team and Club Profile UI Redesign**
