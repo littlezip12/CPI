@@ -62,7 +62,7 @@
     const cards = sorted.map(club => {
       const topTeam = club.topTeam || {};
       const mover = club.biggestMover || {};
-      const href = `club/${club.slug}.html`;
+      const href = `club.html?club=${club.slug}`;
       const move = moveClass(club.totalMovement);
 
       return `<a class="smart-club-card" href="${href}">
@@ -91,7 +91,7 @@
     }).join("");
 
     const topRows = top.map(club => {
-      return `<a href="club/${club.slug}.html" class="smart-club-row">
+      return `<a href="club.html?club=${club.slug}" class="smart-club-row">
         <img src="${safeLogo(club.logo)}" alt="${club.displayName} logo">
         <div>
           <strong>${club.displayName}</strong>
@@ -103,7 +103,7 @@
 
     const risingRows = rising.map(club => {
       const move = moveClass(club.totalMovement);
-      return `<a href="club/${club.slug}.html" class="smart-club-row">
+      return `<a href="club.html?club=${club.slug}" class="smart-club-row">
         <img src="${safeLogo(club.logo)}" alt="${club.displayName} logo">
         <div>
           <strong>${club.displayName}</strong>

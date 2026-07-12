@@ -1,7 +1,6 @@
-# CPI Version
+# California Polo Index — Version 7.22 v2
 
-Current release: 7.21 — Logo Completion + Quality Pass
+Release: 7.22 v2 — Page Polish + Logo Frame Removal
+Date: 2026-07-11
 
-Release type: asset/data quality
-
-This release completes the canonical logo layer across all active CPI clubs and ranked teams. It updates ranking and club data to use canonical WebP logo paths, converts additional repo-provided source logos, replaces low-quality placeholder SVG display with polished CPI club badges where official source logos are still missing, and adds a logo-quality audit for future cleanup.
+This release keeps the 7.22 page polish work and removes the heavy logo card/frame treatment across the site. Logo assets are normalized so clubs display as standalone marks instead of logos trapped inside rounded boxes.
