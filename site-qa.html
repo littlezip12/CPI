@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPI Site QA | Release 7.34</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.34">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.34">
+  <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.34">
+  <style>
+    body{background:#f5f7fb;color:#0b1728;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0}
+    .qa-shell{max-width:1180px;margin:0 auto;padding:36px 20px 64px}
+    .qa-hero{background:linear-gradient(135deg,#071426,#0d3157);color:#fff;border-radius:28px;padding:34px;box-shadow:0 22px 50px rgba(7,20,38,.18)}
+    .qa-hero p{max-width:780px;color:rgba(255,255,255,.78);font-size:1.05rem;line-height:1.65}
+    .qa-kicker{text-transform:uppercase;letter-spacing:.12em;font-weight:900;font-size:.78rem;color:#8cd4ff}
+    .qa-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:22px 0}
+    .qa-card{background:#fff;border:1px solid rgba(7,20,38,.09);border-radius:20px;padding:18px;box-shadow:0 14px 32px rgba(7,20,38,.06)}
+    .qa-card b{display:block;font-size:2rem;color:#071426}
+    .qa-card span{color:#64748b;font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}
+    .qa-section{background:#fff;border:1px solid rgba(7,20,38,.09);border-radius:24px;padding:24px;margin-top:18px;box-shadow:0 14px 32px rgba(7,20,38,.06)}
+    .qa-table{width:100%;border-collapse:collapse;font-size:.94rem}
+    .qa-table th,.qa-table td{padding:12px 10px;border-bottom:1px solid #e6edf5;text-align:left;vertical-align:top}
+    .qa-table th{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#64748b}
+    .qa-pill{display:inline-flex;padding:6px 10px;border-radius:999px;background:#fff7ed;color:#9a3412;font-weight:900;font-size:.78rem}
+    .qa-links{display:flex;gap:10px;flex-wrap:wrap}
+    .qa-links a{display:inline-flex;padding:10px 12px;border-radius:999px;background:#071426;color:white;text-decoration:none;font-weight:800}
+    @media(max-width:800px){.qa-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.qa-hero{padding:24px}.qa-table{font-size:.84rem}}
+  </style>
+</head>
+<body>
+  <header class="cpi-v8-header">
+    <div class="cpi-v8-header-inner">
+      <a class="cpi-v8-brand" href="index.html" aria-label="California Polo Index Home">
+        <span class="cpi-v8-brand-mark">CPI</span>
+        <span class="cpi-v8-brand-text"><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span>
+      </a>
+      <nav class="cpi-v8-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="stories.html">Stories</a>
+        <a href="rankings-qa.html">Data QA</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="qa-shell">
+    <section class="qa-hero">
+      <div class="qa-kicker">Release 7.34</div>
+      <h1>Site Link + QA Asset Restore</h1>
+      <p>This internal page summarizes the sitewide link/action audit and confirms that story and QA assets referenced by the public pages have been restored. It is intended as a bridge into the next release, where public CTAs and raw-data links will be connected to cleaner destination pages.</p>
+    </section>
+
+    <section class="qa-grid">
+      <article class="qa-card"><span>Checked</span><b>978</b></article>
+      <article class="qa-card"><span>OK</span><b>977</b></article>
+      <article class="qa-card"><span>Needs Fix</span><b>1</b></article>
+      <article class="qa-card"><span>Review</span><b>0</b></article>
+    </section>
+
+    <section class="qa-section">
+      <h2>Open Issue</h2>
+      <table class="qa-table">
+        <thead><tr><th>Status</th><th>Page</th><th>Item</th><th>Recommended Fix</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="qa-pill">Needs Fix</span></td>
+            <td>index.html</td>
+            <td>Newsletter Subscribe button</td>
+            <td>Create a real subscribe destination/action in 7.35. Recommended: add a simple subscribe page or mailto fallback, then wire the homepage form/button.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="qa-section">
+      <h2>Audit Files</h2>
+      <div class="qa-links">
+        <a href="data/qa/site-link-audit-7-34.csv">Site Link Audit CSV</a>
+        <a href="data/qa/site-link-fixes-template-7-34.csv">Fix Template CSV</a>
+        <a href="rankings-qa.html">Data QA Dashboard</a>
+        <a href="stories/quicksilver-cup-2026.html">Quiksilver Story</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
