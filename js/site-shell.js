@@ -7,7 +7,7 @@
     { label: "Rankings", href: "rankings.html", match: ["rankings.html"] },
     { label: "Clubs", href: "clubs.html", match: ["clubs.html", "club.html", "/club/"] },
     { label: "Tournaments", href: "tournaments.html", match: ["tournaments.html"] },
-    { label: "Stories", href: "tournaments.html#stories", match: ["stories.html"] },
+    { label: "Stories", href: "stories.html", match: ["stories.html", "/stories/"] },
     { label: "Methodology", href: "methodology.html", match: ["methodology.html"] }
   ];
 
@@ -67,7 +67,7 @@
           </span>
         </a>
         <nav class="cpi-shell-links">${nav}</nav>
-        <button class="cpi-shell-search" type="button" aria-label="Search coming soon"><span>Search CPI</span></button>
+        <button class="cpi-shell-search" type="button" aria-label="Search CPI"><span>Search CPI</span></button>
       </div>
       <div class="cpi-shell-quick">${quick}</div>
     </header>`;

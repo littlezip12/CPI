@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/homepage-v8.css?v=7.30.2">
   <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.30.2">
   <link rel="stylesheet" href="css/page-simplification-v7-24.css?v=7.30.2">
+  <link rel="stylesheet" href="css/link-actions-v7-35.css?v=7.35">
 </head>
 <body class="cpi-v8-home cpi-v724-home">
   <header class="cpi-v8-header">
@@ -103,13 +104,13 @@
             <small>Read the notes →</small>
           </div>
         </a>
-        <a class="cpi-v8-story-card" href="data/qa/quiksilver-cup-2026-alias-resolution.csv">
+        <a class="cpi-v8-story-card" href="stories/quiksilver-alias-review.html">
           <div class="cpi-v8-story-logo"><img src="assets/logos/canonical/mission.webp" alt="Mission WPC logo" loading="lazy"></div>
           <div>
             <span>Ranking Review</span>
             <h3>Alias cleanup comes before rank movement.</h3>
             <p>Quiksilver names such as LB Viking, SD Shores, CIU, and La Jolla need clean CPI identity mapping before ranks move.</p>
-            <small>Open review CSV →</small>
+            <small>Read the review →</small>
           </div>
         </a>
         <a class="cpi-v8-story-card" href="tournaments.html">
@@ -131,9 +132,9 @@
           <div class="head"><span>🏆</span><h3>Find Rankings</h3><a href="rankings.html?group=12u-boys">Choose →</a></div>
           <div class="body rankings-finder-body">
             <p>Select an age/gender group and jump directly into one ranking. CPI now shows one group at a time.</p>
-            <form class="cpi-v8-rankings-picker" data-ranking-picker>
+            <form class="cpi-v8-rankings-picker" data-ranking-picker action="rankings.html" method="get">
               <label class="sr-only" for="homeRankingGroup">Choose ranking group</label>
-              <select id="homeRankingGroup" data-ranking-select aria-label="Choose ranking group"></select>
+              <select id="homeRankingGroup" name="group" data-ranking-select aria-label="Choose ranking group"></select>
               <button type="submit">View Rankings</button>
             </form>
             <a class="cpi-v8-row" href="rankings.html?group=12u-boys"><b>12U</b><strong>12U Boys</strong><em>Pre-JO live</em></a>
@@ -193,9 +194,9 @@
         <h2>Stay in the Game</h2>
         <p>Get CPI rankings, recaps, and stories delivered 1–2 times per month.</p>
       </div>
-      <form>
-        <input type="email" placeholder="Enter your email" aria-label="Email address">
-        <button type="button">Subscribe</button>
+      <form class="cpi-subscribe-form" data-cpi-subscribe-form action="subscribe.html" method="get">
+        <input type="email" name="email" placeholder="Enter your email" aria-label="Email address" autocomplete="email">
+        <button type="submit">Subscribe</button>
       </form>
     </section>
   </main>
@@ -206,7 +207,7 @@
         <a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a>
         <p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p>
       </div>
-      <nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav>
+      <nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="stories.html">Stories</a><a href="methodology.html">Methodology</a><a href="subscribe.html">Subscribe</a></nav>
       <nav><h3>Age Groups</h3><a href="12u-boys.html">12U Boys</a><a href="12u-girls.html">12U Girls</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a><a href="18u-boys.html">18U Boys</a><a href="18u-girls.html">18U Girls</a></nav>
       <div><h3>About CPI</h3><p>The California Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div>
     </div>
@@ -219,5 +220,6 @@
   <script src="js/homepage-v8.js?v=7.30.2"></script>
   <script src="js/page-polish-v7-22.js?v=7.30.2"></script>
   <script src="js/logo-display-v7-23-6.js?v=7.30.2"></script>
+  <script src="js/public-actions-v7-35.js?v=7.35"></script>
 </body>
 </html>

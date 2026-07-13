@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CPI Site QA | California Polo Index</title>
+  <title>Subscribe | California Polo Index</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.35">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/stories-v7-28.css?v=7.35">
   <link rel="stylesheet" href="css/link-actions-v7-35.css?v=7.35">
 </head>
-<body class="cpi-v8-home">
+<body class="cpi-v8-home cpi-subscribe-page">
   <header class="cpi-v8-header">
     <div class="cpi-v8-header-inner">
       <a class="cpi-v8-brand" href="index.html"><span class="cpi-v8-brand-mark">CPI</span><span class="cpi-v8-brand-text"><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span></a>
@@ -31,31 +31,32 @@
   </header>
   <main class="cpi-link-main">
     <section class="cpi-link-hero">
-      <span class="eyebrow">Internal QA</span>
-      <h1>Site link and CTA audit.</h1>
-      <p>Release 7.35 checks public links, story destinations, homepage forms, and recognized JavaScript controls.</p>
+      <span class="eyebrow">CPI Updates</span>
+      <h1>Subscribe to CPI rankings and stories.</h1>
+      <p>Use this page as the public newsletter destination while CPI prepares a permanent email provider. The homepage Subscribe button now routes here instead of doing nothing.</p>
     </section>
     <section class="cpi-action-panel">
       <div>
-        <h2>7.35 audit result</h2>
+        <h2>What subscribers will get</h2>
         <ul>
-          <li>1133 links, forms, and actions checked</li>
-          <li>1133 OK</li>
-          <li>0 missing targets</li>
-          <li>0 review items</li>
+          <li>ranking updates after tournament evidence is processed</li>
+          <li>new CPI Stories and tournament notes</li>
+          <li>alias/data cleanup notes when rankings are revised</li>
+          <li>post-JO recalibration summaries once results are complete</li>
         </ul>
       </div>
-      <div class="cpi-subscribe-capture">
-        <h2>Public fixes included</h2>
-        <p class="cpi-form-note">Subscribe now routes to a real page, raw CSV story cards now route to article pages, and the root Quiksilver URL redirects to the story article.</p>
-        <a class="story-link-v728" href="data/qa/site-link-audit-7-35.csv">Open 7.35 link audit CSV</a>
-        <a class="story-link-v728" href="data/qa/site-link-fixes-template-7-35.csv">Open future link-fix template</a>
-      </div>
+      <form class="cpi-subscribe-capture" data-cpi-subscribe-page-form action="subscribe.html" method="get">
+        <label for="cpi-subscribe-email">Email address</label>
+        <input id="cpi-subscribe-email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+        <button type="submit">Preview signup</button>
+        <p class="cpi-form-note">Static GitHub Pages cannot store email addresses without a newsletter provider. This page is wired as the real destination now; connect Mailchimp, Buttondown, Beehiiv, Formspree, or another endpoint later to collect signups.</p>
+        <p class="cpi-form-result" data-cpi-subscribe-result hidden></p>
+      </form>
     </section>
     <section class="cpi-link-grid">
-      <a href="subscribe.html"><span>CTA</span><strong>Subscribe page</strong><em>Homepage signup destination.</em></a>
-      <a href="stories.html"><span>Stories</span><strong>Story archive</strong><em>All public story cards route here or into story articles.</em></a>
-      <a href="rankings-qa.html"><span>Data QA</span><strong>Rankings QA dashboard</strong><em>Internal data review workspace.</em></a>
+      <a href="stories.html"><span>Stories</span><strong>Read CPI notes</strong><em>See current story and tournament context.</em></a>
+      <a href="rankings.html"><span>Rankings</span><strong>View current rankings</strong><em>Top 25 by default with expanded views available.</em></a>
+      <a href="methodology.html"><span>Methodology</span><strong>How CPI works</strong><em>Understand weighting, evidence, and ranking guardrails.</em></a>
     </section>
   </main>
   <footer class="cpi-v8-footer">
