@@ -1,5 +1,7 @@
-# CPI Release 7.32 — Team Profile Polish + Evidence Clarity
+# CPI Release 7.33 — Data QA Dashboard + Audit Workflow
 
 Status: targeted release
 
-Polishes the team profile experience after the page and ranking cleanups. This release improves logo presentation, profile hierarchy, latest-evidence language, club context, and data-note clarity without changing rankings, CPI scores, team order, aliases, regions, or model logic.
+Adds an internal rankings/data QA dashboard for reviewing team aliases, same-club age-group depth, Quiksilver evidence rows, review flags, missing logo paths, and region gaps.
+
+This release does not change rankings, CPI scores, team order, aliases, regions, logos, layouts, routing, or model logic.

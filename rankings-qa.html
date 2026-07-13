@@ -1,2 +1,133 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CPI Baseline Merge QA</title><link rel="stylesheet" href="css/rankings-qa.css?v=7.23.6"></head><body><header class="qa-header"><div class="eyebrow">California Polo Index</div><h1>Baseline Merge QA</h1><p>14U Boys · closest ranking baseline + canonical team cleanup</p></header><main class="qa-shell"><section class="notice"><strong>QA only:</strong> This preserves the main CPI ranking baseline that looked closest, then applies team-name cleanup and shared team-profile data.</section><section class="metric-grid" id="metricGrid"></section><section class="panel"><div class="panel-header"><h2>Cleaned Rankings</h2><span>Baseline preserved</span></div><div class="table-wrap"><table><thead><tr><th>Rank</th><th>Team</th><th>Club</th><th>CPI</th><th>Move</th><th>Record</th><th>Latest</th><th>Best Win</th><th>Merged Aliases</th></tr></thead><tbody id="rankingTable"></tbody></table></div></section><section class="panel"><div class="panel-header"><h2>QA Warnings</h2><span id="warningCount">—</span></div><div class="table-wrap"><table><thead><tr><th>Type</th><th>Team</th><th>Message</th></tr></thead><tbody id="warningTable"></tbody></table></div></section></main><script src="data/cpi_qa_rankings_2026_14u_boys.js?v=7.23.6"></script><script src="js/rankings-qa.js?v=7.23.6"></script>  <script src="js/logo-display-v7-23-6.js?v=7.23.6"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPI Data QA Dashboard</title>
+  <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.33" />
+  <link rel="stylesheet" href="css/data-qa-dashboard-v7-33.css?v=7.33" />
+</head>
+<body>
+  <header class="qa-topbar">
+    <a class="brand-mark" href="index.html" aria-label="California Polo Index home">
+      <span class="brand-dot">CPI</span>
+      <span>
+        <strong>California Polo Index</strong>
+        <small>Data QA</small>
+      </span>
+    </a>
+    <nav class="qa-nav" aria-label="QA navigation">
+      <a href="index.html">Home</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="clubs.html">Clubs</a>
+      <a href="stories.html">Stories</a>
+    </nav>
+  </header>
+
+  <main class="qa-page">
+    <section class="qa-hero">
+      <div>
+        <p class="eyebrow">Release 7.33</p>
+        <h1>Team Alias + Age Group Data QA Dashboard</h1>
+        <p class="lede">A review workspace for duplicate-team cleanup, same-club A/B/C validation, Quiksilver evidence checks, missing logos, and club identity issues. This page is for audit only — it does not change rankings.</p>
+      </div>
+      <div class="qa-hero-card">
+        <span>Recommended workflow</span>
+        <strong>Review → decide → apply fixes</strong>
+        <p>Use this dashboard to find issues. Use the CSV templates in <code>data/qa/</code> to record approved changes before applying them to rankings.</p>
+      </div>
+    </section>
+
+    <section class="qa-status-strip" id="statusStrip" aria-label="Data status">
+      <div class="status-pill">Loading ranking data…</div>
+    </section>
+
+    <section class="metric-grid" id="metricGrid" aria-label="QA metrics"></section>
+
+    <section class="qa-tools">
+      <div class="tool-group">
+        <label for="groupFilter">Age group</label>
+        <select id="groupFilter">
+          <option value="all">All age groups</option>
+        </select>
+      </div>
+      <div class="tool-group">
+        <label for="issueFilter">Issue type</label>
+        <select id="issueFilter">
+          <option value="all">All issue types</option>
+          <option value="same_club_age_group">Same club / same age group</option>
+          <option value="possible_alias">Possible alias / duplicate</option>
+          <option value="quiksilver_evidence">Quiksilver evidence</option>
+          <option value="review_flag">Review flag</option>
+          <option value="missing_logo">Missing logo path</option>
+          <option value="missing_region">Missing region</option>
+        </select>
+      </div>
+      <div class="tool-group search-group">
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Team, club, region, flag…" />
+      </div>
+      <button id="resetFilters" class="qa-button secondary">Reset</button>
+    </section>
+
+    <section class="qa-layout">
+      <article class="qa-panel large">
+        <div class="panel-title-row">
+          <div>
+            <p class="eyebrow">Review queue</p>
+            <h2>Flagged teams</h2>
+          </div>
+          <span id="issueCount" class="count-pill">—</span>
+        </div>
+        <div class="table-wrap">
+          <table class="qa-table">
+            <thead>
+              <tr>
+                <th>Issue</th>
+                <th>Group</th>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>Club</th>
+                <th>Region</th>
+                <th>Why flagged</th>
+              </tr>
+            </thead>
+            <tbody id="issueTable"></tbody>
+          </table>
+        </div>
+      </article>
+
+      <aside class="qa-sidebar">
+        <article class="qa-panel">
+          <p class="eyebrow">Open files</p>
+          <h2>Audit CSVs</h2>
+          <div class="link-list">
+            <a href="data/qa/team-alias-fixes-template-7-31.csv">Alias fixes template</a>
+            <a href="data/qa/team-alias-age-group-audit-7-31.csv">Team alias audit</a>
+            <a href="data/qa/team-depth-review-7-31.csv">Team-depth review</a>
+            <a href="data/qa/quiksilver-evidence-review-7-31.csv">Quiksilver evidence review</a>
+            <a href="data/qa/missing-official-logo-review-7-31.csv">Missing official-logo review</a>
+            <a href="data/qa/club-identity-consistency-review-7-31.csv">Club identity review</a>
+            <a href="data/qa/data-qa-dashboard-summary-7-33.json">7.33 dashboard summary</a>
+          </div>
+        </article>
+
+        <article class="qa-panel">
+          <p class="eyebrow">Age groups</p>
+          <h2>Team counts</h2>
+          <div id="groupCounts" class="mini-list"></div>
+        </article>
+
+        <article class="qa-panel">
+          <p class="eyebrow">Notes</p>
+          <h2>How to read this</h2>
+          <p class="fine-print">Flags are intentionally conservative. A row showing up here does not mean it is wrong. It means it should be reviewed before the next ranking cleanup release.</p>
+        </article>
+      </aside>
+    </section>
+  </main>
+
+  <script src="js/data-qa-dashboard-v7-33.js?v=7.33"></script>
+  <script src="js/logo-display-v7-23-6.js?v=7.33"></script>
+</body>
+</html>
