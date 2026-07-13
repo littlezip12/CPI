@@ -1,4 +1,4 @@
-CPI Release 7.26
-Club Page Cleanup + Club Directory Polish
+CPI Release 7.27
+Rankings Page Polish + Top 25 UX
 Status: Complete
-Built from CPI 7.25 after user-reviewed region cleanup.
+Built from CPI 7.26 after club page/directory polish.
