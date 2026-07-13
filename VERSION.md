@@ -1,4 +1,4 @@
-CPI Release 7.25
-Region + Club Identity Cleanup
+CPI Release 7.26
+Club Page Cleanup + Club Directory Polish
 Status: Complete
-Built from user-reviewed club region audit CSV.
+Built from CPI 7.25 after user-reviewed region cleanup.
