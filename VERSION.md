@@ -1,5 +1,5 @@
-# CPI Release 7.29 — Quiksilver Ranking Review + Alias Cleanup
+# CPI Release 7.30 v2 — Quiksilver Lightweight Ranking Adjustments
 
 Status: targeted release
 
-Adds a Quiksilver Cup alias-resolution layer, separates true aliases from new-team candidates, fixes the Quiksilver story path, and preserves ranking order/CPI scores pending ranking adjustment review.
+Applies a revised, capped Quiksilver Cup ranking overlay. Quiksilver is included as secondary pre-JO evidence, with movement limited by age-group field size and review flags preserved for post-JO recalibration.

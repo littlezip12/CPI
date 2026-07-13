@@ -3,10 +3,10 @@
   "slug": "quiksilver-cup-2026",
   "displayName": "2026 Quiksilver International Water Polo Cup",
   "dateRange": "2026-07-09 to 2026-07-12",
-  "status": "alias_reviewed_pending_ranking_adjustment",
+  "status": "ranking_adjusted_lightweight",
   "sourceSpreadsheet": "2026 QUIKSILVER International Water Polo Cup Public Schedule.xlsx",
-  "sourceNotes": "Public Google Sheet results were captured for seven CPI age/gender groups. 7.29 resolves source labels into CPI identities where possible and holds new/uncertain teams for ranking review. 18U Boys championship and 3rd-place scores remain pending final source confirmation.",
-  "rankingUse": "Evidence and alias-review layer only in this release. Ranking order and CPI scores are not changed until 7.30 ranking adjustment review.",
+  "sourceNotes": "Public Google Sheet results were captured for seven CPI age/gender groups. 7.29 resolves source labels into CPI identities where possible and holds new/uncertain teams for ranking review. 18U Boys championship and 3rd-place scores remain pending final source confirmation. Release 7.30 v2 applies a lighter ranking overlay after reducing the initial 7.30 draft movement.",
+  "rankingUse": "Release 7.30 v2 applies a lightweight Quiksilver ranking overlay. Quiksilver is treated as secondary evidence because field sizes were 5\u201318 teams by age group.",
   "groups": [
     {
       "group": "12U Boys",
@@ -1286,5 +1286,11 @@
     "summaryFile": "data/qa/quiksilver-cup-2026-alias-summary-7-29.json",
     "rankingOrderChanged": false,
     "cpiScoresChanged": false
-  }
+  },
+  "rankingWeight": "0.22\u20130.40 by age-group field size; below JO, Futures Super Finals, US Club Championships, JO Qualifiers, and large-field invitationals.",
+  "rankingAdjustmentRelease": "7.30 v2",
+  "rankingAdjustmentFiles": [
+    "data/qa/quiksilver-cup-2026-ranking-adjustments-7-30-v2.csv",
+    "data/qa/quiksilver-cup-2026-ranking-adjustments-7-30-v2.json"
+  ]
 }
