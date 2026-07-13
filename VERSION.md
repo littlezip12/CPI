@@ -1,5 +1,5 @@
-# CPI Release 7.28 — Quiksilver Cup Intake + Stories
+# CPI Release 7.29 — Quiksilver Ranking Review + Alias Cleanup
 
 Status: targeted release
 
-Adds the 2026 Quiksilver International Water Polo Cup as a CPI evidence-intake event and creates a story layer for the results. Ranking order is preserved pending alias review and incomplete 18U Boys final-score validation.
+Adds a Quiksilver Cup alias-resolution layer, separates true aliases from new-team candidates, fixes the Quiksilver story path, and preserves ranking order/CPI scores pending ranking adjustment review.
