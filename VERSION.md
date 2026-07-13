@@ -1,5 +1,5 @@
-# CPI Release 7.30 v2 — Quiksilver Lightweight Ranking Adjustments
+# CPI Release 7.32 — Team Profile Polish + Evidence Clarity
 
 Status: targeted release
 
-Applies a revised, capped Quiksilver Cup ranking overlay. Quiksilver is included as secondary pre-JO evidence, with movement limited by age-group field size and review flags preserved for post-JO recalibration.
+Polishes the team profile experience after the page and ranking cleanups. This release improves logo presentation, profile hierarchy, latest-evidence language, club context, and data-note clarity without changing rankings, CPI scores, team order, aliases, regions, or model logic.
