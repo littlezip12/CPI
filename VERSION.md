@@ -1,11 +1,11 @@
-# CPI Release 7.37.3 — Tournaments Page Access Cleanup
+# CPI Release 7.37.4 — JO Tournament Access + Integrated Header/Footer
 
-- Removes the oversized tournament hero/banner treatment from `tournaments.html`.
-- Makes the JO Girls Tournament Journey the primary action on the page.
-- Adds smaller supporting links for Quiksilver recap, Quiksilver ranking audit, and methodology.
-- Keeps the JO Girls tool at `tournaments/jo-girls/` and the short redirect at `jo-girls.html`.
+- Reworks `tournaments.html` into a clearer Weekend 1 Junior Olympics access page.
+- Adds a readable JO Girls/Coed banner with direct links into the Tournament Journey tool.
+- Adds CPI site header and footer to the embedded JO Girls Tournament Journey page.
+- Keeps the JO tool at `tournaments/jo-girls/` and the short redirect at `jo-girls.html`.
 - Preserves CPI homepage, rankings, scores, clubs, stories, regions, logos, and model logic.
 
 # Previous checkpoint
 
-CPI Release 7.37.2 — CPI Home + JO Team View Hotfix
+CPI Release 7.37.3 — Tournaments Page Access Cleanup

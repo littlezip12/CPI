@@ -8,12 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=7.37.3">
-  <link rel="stylesheet" href="css/command-palette.css?v=7.37.3">
-  <link rel="stylesheet" href="css/homepage-v8.css?v=7.37.3">
-  <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.37.3">
-  <link rel="stylesheet" href="css/jo-integration-v7-37.css?v=7.37.3">
-  <link rel="stylesheet" href="css/tournaments-v7-37-3.css?v=7.37.3">
+  <link rel="stylesheet" href="css/styles.css?v=7.37.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.37.4">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.37.4">
+  <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.37.4">
+  <link rel="stylesheet" href="css/jo-integration-v7-37.css?v=7.37.4">
+  <link rel="stylesheet" href="css/tournaments-v7-37-4.css?v=7.37.4">
 </head>
 <body class="cpi-v8-home tournaments-page tournaments-compact-page">
   <header class="cpi-v8-header">
@@ -35,48 +35,43 @@
   </header>
 
   <main class="cpi-tournaments-main">
-    <section class="cpi-tournament-intro" aria-labelledby="tournamentTitle">
-      <p class="cpi-polish-eyebrow">Tournament tools</p>
-      <h1 id="tournamentTitle">Find the event. Open the tool.</h1>
-      <p>Quick access to CPI tournament pages, live schedule tools, recaps, and ranking evidence. No extra banner layer — just the tournament links people need.</p>
+    <section class="cpi-jo-weekend-hero" aria-labelledby="joWeekendTitle">
+      <div class="cpi-jo-weekend-copy">
+        <p class="cpi-polish-eyebrow">Live tournament tool</p>
+        <h1 id="joWeekendTitle">Weekend 1 JOs — Girls & Coed</h1>
+        <p class="cpi-jo-weekend-subtitle">Pick an age, division, and team to see the next game, win/loss path, possible opponents, completed scores, and full division schedule.</p>
+        <div class="cpi-jo-weekend-actions">
+          <a class="cpi-polish-btn" href="tournaments/jo-girls/">Open schedule tool</a>
+          <a class="cpi-polish-btn secondary" href="jo-girls.html">Use short link</a>
+        </div>
+      </div>
+      <div class="cpi-jo-weekend-panel" aria-label="Weekend 1 JO tool details">
+        <div class="cpi-jo-ball" aria-hidden="true">●</div>
+        <div class="cpi-jo-meta-grid">
+          <div><small>Coverage</small><strong>10U–18U</strong></div>
+          <div><small>Divisions</small><strong>Girls + Coed</strong></div>
+          <div><small>Mode</small><strong>Live Sheet</strong></div>
+          <div><small>View</small><strong>Team Journey</strong></div>
+        </div>
+      </div>
     </section>
 
     <section class="cpi-tournament-tools" aria-labelledby="activeToolsTitle">
       <div class="cpi-tournament-section-header">
         <div>
-          <p class="cpi-polish-eyebrow">Live / active</p>
-          <h2 id="activeToolsTitle">Active tournament tools</h2>
+          <p class="cpi-polish-eyebrow">Active now</p>
+          <h2 id="activeToolsTitle">Tournament tools</h2>
         </div>
-        <a class="cpi-inline-link" href="jo-girls.html">Open short link →</a>
+        <a class="cpi-inline-link" href="tournaments/jo-girls/">Open JO tool →</a>
       </div>
 
-      <article class="cpi-tournament-primary-card">
-        <div class="cpi-tournament-primary-copy">
-          <span class="cpi-status-pill live">Live sheet tool</span>
-          <h3>Junior Olympics Girls Tournament Journey</h3>
-          <p>Select age, division, and team to see next game, win/loss path, possible opponents, completed scores, and relevant bracket games.</p>
-          <div class="cpi-tournament-actions">
-            <a class="cpi-polish-btn" href="tournaments/jo-girls/">Open JO Girls tool</a>
-            <a class="cpi-polish-btn secondary" href="jo-girls.html">Share short link</a>
-          </div>
-        </div>
-        <div class="cpi-tournament-primary-meta" aria-label="JO Girls tool details">
-          <div><small>Weekend</small><strong>JO Girls</strong></div>
-          <div><small>Mode</small><strong>Live Sheet</strong></div>
-          <div><small>Fallback</small><strong>14U Girls D1</strong></div>
-        </div>
-      </article>
-    </section>
-
-    <section class="cpi-tournament-grid-section" aria-labelledby="tournamentLinksTitle">
-      <div class="cpi-tournament-section-header">
-        <div>
-          <p class="cpi-polish-eyebrow">Other tournament pages</p>
-          <h2 id="tournamentLinksTitle">Recaps and evidence</h2>
-        </div>
-      </div>
-
-      <div class="cpi-tournament-card-grid">
+      <div class="cpi-tournament-card-grid cpi-tournament-card-grid--four">
+        <article class="cpi-tournament-link-card cpi-tournament-link-card--primary">
+          <span class="cpi-status-pill live">Live</span>
+          <h3>JO Girls Tournament Journey</h3>
+          <p>Follow a team through Weekend 1 with live scores, game paths, possible opponents, and full division schedules.</p>
+          <a href="tournaments/jo-girls/">Open tool →</a>
+        </article>
         <article class="cpi-tournament-link-card">
           <span class="cpi-status-pill">Story</span>
           <h3>Quiksilver Cup recap</h3>
@@ -86,12 +81,12 @@
         <article class="cpi-tournament-link-card">
           <span class="cpi-status-pill">QA</span>
           <h3>Quiksilver ranking audit</h3>
-          <p>Review the movement caps, field-size weighting, and ranking adjustment notes.</p>
+          <p>Review movement caps, field-size weighting, and ranking adjustment notes.</p>
           <a href="stories/quiksilver-ranking-audit.html">Open audit →</a>
         </article>
         <article class="cpi-tournament-link-card">
           <span class="cpi-status-pill">Method</span>
-          <h3>How tournament results feed CPI</h3>
+          <h3>How results feed CPI</h3>
           <p>See how CPI weighs JO, Futures, qualifiers, invitationals, and smaller events.</p>
           <a href="methodology.html">View methodology →</a>
         </article>
@@ -109,10 +104,10 @@
     <div class="bottom">© 2026 California Polo Index. All rights reserved.</div>
   </footer>
 
-  <script src="data.js?v=7.37.3"></script>
-  <script src="js/app.js?v=7.37.3"></script>
-  <script src="js/command-palette.js?v=7.37.3"></script>
-  <script src="js/page-polish-v7-22.js?v=7.37.3"></script>
-  <script src="js/logo-display-v7-23-6.js?v=7.37.3"></script>
+  <script src="data.js?v=7.37.4"></script>
+  <script src="js/app.js?v=7.37.4"></script>
+  <script src="js/command-palette.js?v=7.37.4"></script>
+  <script src="js/page-polish-v7-22.js?v=7.37.4"></script>
+  <script src="js/logo-display-v7-23-6.js?v=7.37.4"></script>
 </body>
 </html>

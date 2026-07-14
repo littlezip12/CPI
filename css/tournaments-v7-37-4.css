@@ -1,0 +1,107 @@
+.tournaments-compact-page{
+  background:
+    radial-gradient(circle at 20% 0%,rgba(97,216,255,.18),transparent 34%),
+    linear-gradient(180deg,#eef6ff 0%,#f8fbff 44%,#fff 100%);
+}
+.cpi-tournaments-main{width:min(1320px,calc(100% - 40px));margin:0 auto;padding:38px 0 76px}
+.cpi-jo-weekend-hero{
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);
+  gap:22px;
+  align-items:stretch;
+  border-radius:34px;
+  padding:30px;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 76% 22%,rgba(255,190,23,.35),transparent 16%),
+    radial-gradient(circle at 88% 86%,rgba(99,217,255,.26),transparent 34%),
+    linear-gradient(135deg,#07182c 0%,#123b64 58%,#07182c 100%);
+  box-shadow:0 28px 90px rgba(8,28,48,.20);
+  border:1px solid rgba(255,255,255,.16);
+}
+.cpi-jo-weekend-hero:before{
+  content:"";
+  position:absolute;
+  right:-140px;
+  top:-150px;
+  width:440px;
+  height:440px;
+  border-radius:50%;
+  background:
+    repeating-linear-gradient(32deg,rgba(255,190,23,.25) 0 10px,rgba(255,190,23,0) 10px 24px);
+  opacity:.35;
+  pointer-events:none;
+}
+.cpi-jo-weekend-copy,.cpi-jo-weekend-panel{position:relative;z-index:1}
+.cpi-jo-weekend-copy h1{
+  font-size:clamp(2.7rem,7vw,6.2rem);
+  line-height:.88;
+  letter-spacing:-.075em;
+  color:#fff;
+  margin:10px 0 16px;
+  max-width:950px;
+}
+.cpi-jo-weekend-subtitle{
+  font-size:clamp(1rem,1.7vw,1.28rem);
+  line-height:1.56;
+  color:rgba(235,247,255,.78);
+  max-width:840px;
+  margin:0 0 22px;
+}
+.cpi-jo-weekend-actions{display:flex;gap:12px;flex-wrap:wrap}
+.cpi-jo-weekend-panel{
+  min-height:320px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:24px;
+  border-radius:28px;
+  background:rgba(4,17,31,.45);
+  border:1px solid rgba(255,255,255,.13);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+.cpi-jo-ball{
+  width:104px;height:104px;border-radius:50%;
+  display:grid;place-items:center;
+  margin-left:auto;
+  color:transparent;
+  background:
+    linear-gradient(90deg,transparent 46%,rgba(6,20,39,.25) 47% 53%,transparent 54%),
+    linear-gradient(0deg,transparent 46%,rgba(6,20,39,.25) 47% 53%,transparent 54%),
+    radial-gradient(circle at 35% 30%,#ffe185,#f6b316 60%,#d98200);
+  box-shadow:0 22px 48px rgba(0,0,0,.22), inset 0 0 0 2px rgba(255,255,255,.25);
+}
+.cpi-jo-meta-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cpi-jo-meta-grid div{
+  min-height:92px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:20px;
+  padding:16px;
+  background:rgba(255,255,255,.08);
+}
+.cpi-jo-meta-grid small{display:block;text-transform:uppercase;letter-spacing:.14em;font-weight:900;color:rgba(236,246,255,.6);font-size:.72rem;margin-bottom:8px}
+.cpi-jo-meta-grid strong{display:block;color:#fff;font-size:1.25rem;line-height:1.08}
+.cpi-tournament-tools,.cpi-tournament-grid-section{margin-top:24px}
+.cpi-tournament-section-header{display:flex;justify-content:space-between;gap:18px;align-items:end;margin:0 0 14px}
+.cpi-tournament-section-header h2{font-size:clamp(1.8rem,3.6vw,3rem);line-height:.95;letter-spacing:-.055em;color:#061427;margin:4px 0 0}
+.cpi-inline-link{font-weight:900;color:#0069d9;text-decoration:none;white-space:nowrap}
+.cpi-inline-link:hover{text-decoration:underline}
+.cpi-tournament-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cpi-tournament-card-grid--four{grid-template-columns:1.15fr repeat(3,minmax(0,1fr))}
+.cpi-tournament-link-card{background:#fff;border:1px solid rgba(10,27,47,.10);border-radius:24px;padding:22px;box-shadow:0 18px 60px rgba(8,28,48,.08)}
+.cpi-tournament-link-card--primary{background:linear-gradient(180deg,#fff,#f3f9ff);border-color:rgba(0,105,217,.16)}
+.cpi-tournament-link-card h3{font-size:1.25rem;line-height:1.12;margin:14px 0 8px;color:#061427}
+.cpi-tournament-link-card p{font-size:.96rem;line-height:1.52;color:#5a6980;margin:0 0 18px}
+.cpi-tournament-link-card a{font-weight:900;color:#0069d9;text-decoration:none}
+.cpi-tournament-link-card a:hover{text-decoration:underline}
+.cpi-status-pill{display:inline-flex;align-items:center;width:max-content;border:1px solid rgba(0,105,217,.14);background:#eef6ff;color:#0069d9;border-radius:999px;padding:8px 12px;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;font-weight:900}
+.cpi-status-pill.live{border-color:rgba(0,105,217,.18);background:#061427;color:#67e8f9}
+@media(max-width:1100px){.cpi-tournament-card-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:920px){
+  .cpi-tournaments-main{width:min(100% - 26px,1320px);padding-top:24px}
+  .cpi-jo-weekend-hero{grid-template-columns:1fr;padding:24px;border-radius:28px}
+  .cpi-jo-weekend-panel{min-height:auto}
+  .cpi-tournament-card-grid,.cpi-tournament-card-grid--four{grid-template-columns:1fr}
+  .cpi-tournament-section-header{align-items:start;flex-direction:column}
+}

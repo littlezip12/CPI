@@ -13,9 +13,56 @@
 .tabs{display:flex;gap:10px;margin-bottom:12px}.tab{width:auto;padding:0 18px}.tab.active{background:linear-gradient(135deg,var(--cyan),var(--violet));color:#06101d;font-weight:900}.journey{display:flex;flex-direction:column;gap:16px}.day h3{color:var(--muted);font-size:.9rem;text-transform:uppercase;letter-spacing:.13em;margin:7px 0 10px}.journey-card{display:grid;grid-template-columns:105px 1fr auto;gap:16px;align-items:center;border-radius:20px;padding:16px 18px;position:relative;margin-bottom:10px}.journey-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:20px 0 0 20px}.journey-card.win:before{background:var(--green)}.journey-card.loss:before{background:var(--red)}.journey-card.upcoming:before{background:var(--gold)}.journey-time{color:var(--muted);font-size:.87rem}.journey-score{font-size:1.14rem;font-weight:900}.pill{border-radius:999px;padding:7px 11px;font-size:.77rem;font-weight:900;border:1px solid var(--line)}.pill.win{color:var(--green);background:rgba(85,230,165,.08)}.pill.loss{color:var(--red);background:rgba(255,128,158,.08)}.pill.upcoming{color:var(--gold);background:rgba(255,214,107,.08)}
 .toolbar{display:grid;grid-template-columns:2fr 1fr;gap:10px;margin-bottom:12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.game{border-radius:18px;padding:16px}.game.completed{border-color:rgba(85,230,165,.32)}.top{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.82rem}.match{font-size:1.02rem;font-weight:850;margin:10px 0}.score{color:var(--green);font-weight:900}.potential{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.potential button{text-align:left;padding:14px;min-height:74px;background:rgba(255,255,255,.03)}.potential button:hover{border-color:rgba(98,216,255,.35)}.hidden{display:none!important}.empty{padding:24px;border-radius:18px;text-align:center;color:var(--muted)}.note{color:var(--muted);font-size:.8rem;margin-top:10px}.welcome-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:24px}.welcome-card{border-radius:24px;padding:22px}.welcome-card h2{margin:0 0 8px;font-size:1.4rem}.welcome-card p{color:var(--muted);line-height:1.55;margin:0 0 14px}.mini-list{display:grid;gap:10px;margin-top:14px}.mini-row{display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:15px}.mini-dot{width:9px;height:9px;border-radius:50%;background:var(--cyan);margin-top:6px;flex:0 0 auto}.full-schedule{margin-top:28px}.full-actions{display:flex;justify-content:space-between;gap:12px;align-items:end;flex-wrap:wrap}.full-actions .toolbar{min-width:min(100%,620px);margin:0}.count-pill{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:.84rem;background:rgba(255,255,255,.035)}
 @media(max-width:800px){.selector,.team-summary,.welcome-grid{grid-template-columns:1fr;position:relative;top:auto}.stats{grid-template-columns:1fr 1fr}.journey-card{grid-template-columns:1fr}.grid,.potential,.paths{grid-template-columns:1fr}.toolbar{grid-template-columns:1fr}.statusbar{align-items:flex-start;flex-direction:column}.status-actions{width:100%}.status-actions .sheet-link,.status-actions .refresh{flex:1}}
+
+/* CPI integration shell */
+.cpi-embed-header{position:sticky;top:0;z-index:50;background:rgba(7,18,32,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.12)}
+.cpi-embed-header-inner{width:min(1320px,calc(100% - 32px));margin:0 auto;min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.cpi-embed-brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;min-width:250px}
+.cpi-embed-brand-mark{width:54px;height:54px;border:2px solid #ffbe17;border-radius:12px;display:grid;place-items:center;color:#ffbe17;font-weight:950;font-size:1.35rem;letter-spacing:-.08em}
+.cpi-embed-brand-text strong{display:block;text-transform:uppercase;letter-spacing:.08em;font-weight:900;line-height:1;color:#fff}
+.cpi-embed-brand-text em{display:block;color:#ffbe17;font-style:normal;text-transform:uppercase;font-size:.68rem;font-weight:900;margin-top:5px}
+.cpi-embed-nav{display:flex;gap:8px;align-items:center;justify-content:center;flex:1;flex-wrap:wrap}
+.cpi-embed-nav a{color:rgba(255,255,255,.78);text-decoration:none;font-weight:850;padding:12px 14px;border-radius:999px}
+.cpi-embed-nav a:hover,.cpi-embed-nav a[aria-current="page"]{background:#fff;color:#071220}
+.cpi-embed-search{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:12px 18px;font-weight:850;background:rgba(255,255,255,.08);white-space:nowrap}
+.cpi-embed-footer{background:#071220;border-top:1px solid rgba(255,255,255,.12);padding:38px 0 20px;color:rgba(255,255,255,.72)}
+.cpi-embed-footer-inner{width:min(1320px,calc(100% - 32px));margin:0 auto;display:grid;grid-template-columns:1.3fr .7fr .7fr 1fr;gap:26px}
+.cpi-embed-footer a{color:rgba(255,255,255,.78);text-decoration:none;display:block;margin:8px 0}
+.cpi-embed-footer a:hover{color:#67e8f9}
+.cpi-embed-footer h3{color:#fff;text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;margin:0 0 12px}
+.cpi-embed-footer .brand-row{display:flex;gap:12px;align-items:center;color:#fff;text-decoration:none}
+.cpi-embed-footer .brand-row span{width:54px;height:54px;border:2px solid #ffbe17;border-radius:12px;display:grid;place-items:center;color:#ffbe17;font-weight:950;font-size:1.35rem}
+.cpi-embed-footer .brand-row strong{display:block;text-transform:uppercase;letter-spacing:.08em;line-height:1}
+.cpi-embed-footer .brand-row em{display:block;color:#ffbe17;font-style:normal;text-transform:uppercase;font-size:.68rem;font-weight:900;margin-top:5px}
+.cpi-embed-footer p{line-height:1.55;margin:14px 0 0}
+.cpi-embed-footer-bottom{width:min(1320px,calc(100% - 32px));margin:26px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.10);font-size:.85rem;color:rgba(255,255,255,.5)}
+@media(max-width:900px){
+  .cpi-embed-header-inner{align-items:flex-start;flex-direction:column;padding:14px 0}
+  .cpi-embed-nav{justify-content:flex-start}
+  .cpi-embed-footer-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){.cpi-embed-footer-inner{grid-template-columns:1fr}.cpi-embed-search{display:none}}
+
 </style>
 </head>
-<body><div class="shell">
+<body><header class="cpi-embed-header">
+  <div class="cpi-embed-header-inner">
+    <a class="cpi-embed-brand" href="../../index.html" aria-label="California Polo Index Home">
+      <span class="cpi-embed-brand-mark">CPI</span>
+      <span class="cpi-embed-brand-text"><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span>
+    </a>
+    <nav class="cpi-embed-nav" aria-label="Primary navigation">
+      <a href="../../index.html">Home</a>
+      <a href="../../rankings.html">Rankings</a>
+      <a href="../../clubs.html">Clubs</a>
+      <a href="../../tournaments.html" aria-current="page">Tournaments</a>
+      <a href="../../stories.html">Stories</a>
+      <a href="../../methodology.html">Methodology</a>
+    </nav>
+    <a class="cpi-embed-search" href="../../site-qa.html">Search CPI</a>
+  </div>
+</header>
+<div class="shell">
 <section class="hero"><div class="eyebrow">2026 Junior Olympics · <a href="../../index.html" style="color:inherit;text-decoration:none">California Polo Index</a></div><h1>Your team.<br>Your tournament.</h1><p>Follow every result, see the next game immediately, and explore the teams connected to your path.</p></section>
 <div class="statusbar glass"><div><span id="liveDot" class="live-dot"></span><span id="statusText">Loading live schedule…</span></div><div class="status-actions"><a id="sheetLink" class="sheet-link" href="#" target="_blank" rel="noopener noreferrer">View full division sheet ↗</a><button id="share" class="refresh">Share division link</button><button id="refresh" class="refresh">Refresh scores</button></div></div>
 <section class="selector glass"><div><label>Age</label><select id="age"></select></div><div><label>Division</label><select id="division"></select></div><div><label>Team</label><select id="team"><option value="">Choose your team</option></select></div></section>
@@ -31,4 +78,33 @@
 </div>
 <section class="section full-schedule"><div class="section-title full-actions"><div><h2>Full division schedule</h2><div class="kicker">Search every game for the selected age and division.</div></div><div class="toolbar"><input id="fullSearch" placeholder="Search team, venue, or game number"><select id="fullDay"><option value="">All days</option></select></div><span id="fullCount" class="count-pill">0 games shown</span></div><div id="fullSchedule" class="grid"></div></section>
 </div>
-<script src="app.js?v=5.3.2"></script></body></html>
+<footer class="cpi-embed-footer">
+  <div class="cpi-embed-footer-inner">
+    <div>
+      <a class="brand-row" href="../../index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a>
+      <p>Independent and unofficial rankings, stories, tournament tools, and club intelligence for California youth water polo.</p>
+    </div>
+    <nav>
+      <h3>Explore</h3>
+      <a href="../../rankings.html">Rankings</a>
+      <a href="../../clubs.html">Clubs</a>
+      <a href="../../tournaments.html">Tournaments</a>
+      <a href="../../stories.html">Stories</a>
+    </nav>
+    <nav>
+      <h3>Age Groups</h3>
+      <a href="../../12u-girls.html">12U Girls</a>
+      <a href="../../14u-girls.html">14U Girls</a>
+      <a href="../../16u-girls.html">16U Girls</a>
+      <a href="../../18u-girls.html">18U Girls</a>
+    </nav>
+    <div>
+      <h3>JO Weekend 1</h3>
+      <p>Use the Tournament Journey tool to follow a team, see score updates, and trace the bracket path as results come in.</p>
+      <a href="../../tournaments.html">Back to tournaments →</a>
+    </div>
+  </div>
+  <div class="cpi-embed-footer-bottom">© 2026 California Polo Index. Tournament data is unofficial and based on available public schedule information.</div>
+</footer>
+
+<script src="app.js?v=5.3.3"></script></body></html>
