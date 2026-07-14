@@ -1,3 +1,10 @@
+# CPI Release 7.37 — JO Girls Tournament Journey Integration
+
+- Integrates JO Girls Tournament Journey into CPI at `tournaments/jo-girls/`.
+- Adds root redirect `jo-girls.html`.
+- Adds tournament-page CTA into the CPI site.
+- Preserves rankings, CPI scores, logos, regions, stories, and model logic.
+
 # CPI Release 7.35 — Public Link + CTA Completion
 
 Status: targeted cleanup complete
