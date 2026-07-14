@@ -1,5 +1,7 @@
-# CPI Release 7.37.9
+# CPI Release 7.37.10
 
-Tournament results team-name cleanup hardening.
+Boys Futures Super Finals Source Expansion
 
-This release updates the shared tournament results renderer so advancement labels such as `W#31 - Norcal`, `L#30 - Rancho Tsunami`, and `M1(1stf) - SBWPC` display and filter as real team names only.
+- Expanded Boys Futures Super Finals tournament results source configuration to user-provided tabs across 10U, 12U, 14U, 16U, and 18U divisions.
+- 12U Boys D3 remains pending a source tab/gid.
+- Preserved CPI rankings, scores, clubs, stories, regions, logos, JO routing, and model logic.

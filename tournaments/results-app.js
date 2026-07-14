@@ -20,11 +20,23 @@
     "boys-superfinals": {
       title: "Boys Futures Super Finals",
       eyebrow: "Tournament results",
-      subtitle: "Search Boys Futures Super Finals game results by team, age/division, score, venue, or game number. Currently connected to the public sheet tab you provided; send additional age/division tab gids if the workbook has more tabs.",
-      logo: "../../assets/cpi-logo-fallback.svg",
+      subtitle: "Search Boys Futures Super Finals results by team, age, division, score, venue, or game number across the connected public tabs. 12U Division 3 is still pending a source link.",
+      logo: "../../assets/logos/usa-water-polo.webp",
       statusLabel: "Live/cached results",
       tabs: [
-        {label:"Boys Super Finals", age:"Boys", gender:"Boys", division:"Provided Tab", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"326721462"}
+        {label:"10U Boys D1", age:"10U", gender:"Boys", division:"D1", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"1811978308"},
+        {label:"10U Boys D2", age:"10U", gender:"Boys", division:"D2", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"943015900"},
+        {label:"12U Boys D1", age:"12U", gender:"Boys", division:"D1", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"1288471894"},
+        {label:"12U Boys D2", age:"12U", gender:"Boys", division:"D2", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"2011967978"},
+        {label:"14U Boys D1", age:"14U", gender:"Boys", division:"D1", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"562223653"},
+        {label:"14U Boys D2", age:"14U", gender:"Boys", division:"D2", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"1173204438"},
+        {label:"14U Boys D3", age:"14U", gender:"Boys", division:"D3", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"817940462"},
+        {label:"16U Boys D1", age:"16U", gender:"Boys", division:"D1", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"1005552565"},
+        {label:"16U Boys D2", age:"16U", gender:"Boys", division:"D2", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"56289074"},
+        {label:"16U Boys D3", age:"16U", gender:"Boys", division:"D3", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"768537505"},
+        {label:"18U Boys D1", age:"18U", gender:"Boys", division:"D1", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"602297558"},
+        {label:"18U Boys D2", age:"18U", gender:"Boys", division:"D2", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"1963545115"},
+        {label:"18U Boys D3", age:"18U", gender:"Boys", division:"D3", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"581021594"}
       ]
     },
     "girls-club-championships": {
