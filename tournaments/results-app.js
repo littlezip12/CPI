@@ -67,11 +67,19 @@
   function stripTeamPrefix(raw){
     let s = norm(raw).replace(/[–—]/g,"-").trim();
 
-    // Remove surrounding placement prefixes such as "(1st J) - Newport".
-    s = s.replace(/^\(\s*(?:\d+(?:st|nd|rd|th)\s*[A-Z]?|[A-Z]{1,3}\d{1,2})\s*\)\s*[-:]\s*/i, "");
-
-    // Remove placement/pool/seed prefixes such as "1st A-", "1sta -", "B1-", "C2 -", "3-".
+    // Many tournament sheets store resolved advancement rows as labels plus the actual team,
+    // e.g. "W#31 - Norcal", "L#2a/1b - Route 66", "M1(1stf) - SBWPC".
+    // For team filters and result cards, keep the actual team and drop the bracket label.
     const prefixPatterns = [
+      // Parenthesized placement / seed labels, e.g. "(1st J) - Newport" or "(W#31) - Norcal".
+      /^\(\s*(?:[WL]\s*#?\s*[A-Z0-9\/]+|\d+(?:st|nd|rd|th)\s*[A-Z]?|[A-Z]{1,3}\d{1,2})\s*\)\s*[-:]\s*/i,
+      // Winner/loser references with # and optional pool pair, e.g. "W#1a/2b - Norcal", "L#30 - Rancho Tsunami".
+      /^[WL]\s*#\s*[A-Z0-9]+(?:\/[A-Z0-9]+)?\s*[-:]\s*/i,
+      // Winner/loser references without #, e.g. "W31 - Norcal", "L4c/3d - SD Dons".
+      /^[WL]\s*[A-Z0-9]+(?:\/[A-Z0-9]+)?\s*[-:]\s*/i,
+      // Pool/placement slot labels, e.g. "M1(1stf) - SBWPC", "N2(2ndf) - Thunder".
+      /^[A-Z]{1,3}\d{1,2}\s*\([^)]*\)\s*[-:]\s*/i,
+      // Placement/pool/seed prefixes, e.g. "1st A-", "1sta -", "B1-", "C2 -", "3-".
       /^\d+(?:st|nd|rd|th)\s*[A-Z]?\s*[-:]\s*/i,
       /^\d+(?:st|nd|rd|th)[A-Z]\s*[-:]\s*/i,
       /^[A-Z]{1,3}\d{1,2}\s*[-:]\s*/i,
@@ -142,6 +150,10 @@
     const cleaned = cleanTeam(s);
     if(isPlaceholderTeam(cleaned)) return "";
     return cleaned;
+  }
+
+  function displayTeamValue(s){
+    return canonicalTeamValue(s) || cleanTeam(s) || norm(s);
   }
 
   function parseCsv(text){
@@ -450,7 +462,7 @@
     const groups=[...new Set(games.map(g=>g.group).filter(Boolean))].join(", ");
     const rows=games.map(g=>{
       const result=resultForTeam(g,team);
-      const opp=sortTeamName(g.white)===sortTeamName(team)?g.dark:g.white;
+      const opp=sortTeamName(g.white)===sortTeamName(team)?displayTeamValue(g.dark):displayTeamValue(g.white);
       const cls=result==="Win"?"win":result==="Loss"?"loss":"pending";
       return `<article class="tr-journey-game ${cls}"><div><strong>${esc(result)}</strong><span>${esc(g.gameNo||g.gmid||"Game")} · ${esc(g.date||"")} ${esc(g.time||"")} · ${esc(g.venue||"")}</span></div><div><b>${esc(team)}</b> vs ${esc(opp||"TBD")}</div><div class="tr-journey-score">${esc(score(g))}</div></article>`;
     }).join("");
@@ -462,7 +474,12 @@
     $("count").textContent=`${games.length} games / ${placements.length} placements shown`;
     renderTeamJourney();
 
-    $("games").innerHTML=games.length?games.map(g=>`<article class="tr-card"><div class="tr-game-head"><div><div class="tr-game-title">${esc(g.white||g.team||g.winner||"Team")} ${g.dark?`vs ${esc(g.dark)}`:""}</div><div class="tr-game-meta">${esc(g.group||"")} · ${esc(g.date||"")} ${esc(g.time||"")} · ${esc(g.venue||"")}</div></div><span class="tr-result-pill ${(g.status||"").toLowerCase()==="final"?"win":"pending"}">${esc(g.status||"Result")}</span></div><div class="tr-score-row"><div class="tr-team-name">${esc(g.white||g.team||g.winner||"")}</div><div class="tr-score">${esc(score(g))}</div><div class="tr-team-name">${esc(g.dark||g.loser||"")}</div></div><div class="tr-game-meta">${esc(g.gameNo||g.gmid||"")} ${g.source?` · ${esc(g.source)}`:""}</div></article>`).join(""):`<div class="tr-empty">No game rows match the current filters yet.</div>`;
+    $("games").innerHTML=games.length?games.map(g=>{
+      const left = displayTeamValue(g.white||g.team||g.winner||"");
+      const right = displayTeamValue(g.dark||g.loser||"");
+      const title = `${left || "Team"}${right ? ` vs ${right}` : ""}`;
+      return `<article class="tr-card"><div class="tr-game-head"><div><div class="tr-game-title">${esc(title)}</div><div class="tr-game-meta">${esc(g.group||"")} · ${esc(g.date||"")} ${esc(g.time||"")} · ${esc(g.venue||"")}</div></div><span class="tr-result-pill ${(g.status||"").toLowerCase()==="final"?"win":"pending"}">${esc(g.status||"Result")}</span></div><div class="tr-score-row"><div class="tr-team-name">${esc(left)}</div><div class="tr-score">${esc(score(g))}</div><div class="tr-team-name">${esc(right)}</div></div><div class="tr-game-meta">${esc(g.gameNo||g.gmid||"")} ${g.source?` · ${esc(g.source)}`:""}</div></article>`;
+    }).join(""):`<div class="tr-empty">No game rows match the current filters yet.</div>`;
 
     $("placements").innerHTML=placements.length?`<table class="tr-table"><thead><tr><th>Group</th><th>Place</th><th>Team</th><th>Note</th></tr></thead><tbody>${placements.map(p=>`<tr><td>${esc(p.group||"")}</td><td>${esc(p.place||"")}</td><td><strong>${esc(cleanTeam(p.team)||"")}</strong></td><td>${esc(p.note||p.rankingReviewAction||"")}</td></tr>`).join("")}</tbody></table>`:`<div class="tr-empty">No placement rows match the current filters.</div>`;
   }

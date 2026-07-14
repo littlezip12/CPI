@@ -1,11 +1,5 @@
-# CPI Version
+# CPI Release 7.37.9
 
-Current release: 7.37.8 — Tournament Results Team Filter Cleanup
+Tournament results team-name cleanup hardening.
 
-# CPI Release 7.37.8 — Tournament Results Team Filter Cleanup
-
-- Cleans placement, seed, and pool prefixes from tournament team dropdowns.
-- Filters team options by the selected age/division instead of showing teams from every loaded tab.
-- Removes numeric and placement-only pseudo-teams from team selectors.
-- Refreshes tournament result page cache-busting to v7.37.8.
-- Preserves CPI rankings, scores, clubs, stories, regions, JO routing, and model logic.
+This release updates the shared tournament results renderer so advancement labels such as `W#31 - Norcal`, `L#30 - Rancho Tsunami`, and `M1(1stf) - SBWPC` display and filter as real team names only.
