@@ -1,0 +1,16 @@
+{
+  "release": "7.37.11",
+  "purpose": "Tournament results team-name and selected-team scoping hotfix",
+  "fixes": [
+    "Do not show single-letter placeholders such as L/W as teams",
+    "Do not show unresolved winner/loser path labels as teams",
+    "Clean winner/loser labels when they are followed by real team names",
+    "Scope team result panel by selected age/division"
+  ],
+  "manual_checks": [
+    "Boys Super Finals > 14U Boys D3 > Alameda shows only 14U Boys D3 games",
+    "Boys Super Finals dropdown does not show L",
+    "Quiksilver dropdown does not show W# or L# entries",
+    "Girls Club Championships dropdown does not show M1(1stf) style entries"
+  ]
+}

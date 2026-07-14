@@ -1,7 +1,9 @@
-# CPI Release 7.37.10
+# CPI Release 7.37.11
 
-Boys Futures Super Finals Source Expansion
+Tournament Results Data Accuracy Hotfix
 
-- Expanded Boys Futures Super Finals tournament results source configuration to user-provided tabs across 10U, 12U, 14U, 16U, and 18U divisions.
-- 12U Boys D3 remains pending a source tab/gid.
-- Preserved CPI rankings, scores, clubs, stories, regions, logos, JO routing, and model logic.
+- Tightened tournament-results team parsing so winner/loser/path labels are not treated as teams.
+- Excluded single-letter placeholders such as `L` and unresolved pool/path slot labels from team dropdowns.
+- Scoped selected-team result panels to the active age/division instead of combining same-name teams across divisions.
+- Refreshed tournament results script cache-busting to 7.37.11.
+- Preserved CPI rankings, scores, clubs, stories, regions, JO routing, and model logic.
