@@ -1,12 +1,8 @@
-# CPI Release 7.37.5 — JO Tournament Banner Copy + USAWP Logo
+# CPI Release 7.37.6 — Tournament Results Hub + USAWP Logo
 
-- Renames the tournament hero to `Junior Olympics Girls & Coed`.
-- Removes the redundant `Use short link` button from the tournament hero.
-- Replaces the decorative orange/yellow ball with a local USA Water Polo shield-style logo asset.
-- Tightens the tournament hero typography so the banner is easier to read and less likely to crop on narrower screens.
-- Preserves the JO Tournament Journey tool at `tournaments/jo-girls/` and the short redirect at `jo-girls.html`.
+- Replaces the tournament hero graphic with the user-provided USA Water Polo logo asset.
+- Adds Quiksilver Cup results tool linked from the tournaments hub.
+- Adds staged result pages for Boys Futures Super Finals and Girls US Club Championships pending source sheets.
+- Adds shared tournament results CSS and app shell for score/team search pages.
+- Restores JO Girls app.js and fallback CSV under tournaments/jo-girls.
 - Preserves CPI rankings, scores, clubs, stories, regions, logos, and model logic.
-
-# Previous checkpoint
-
-CPI Release 7.37.4 — JO Tournament Access + Integrated Header/Footer
