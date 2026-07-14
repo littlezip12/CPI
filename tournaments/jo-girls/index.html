@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>JO Girls Tournament Journey</title>
+<title>JO Girls Tournament Journey | CPI</title>
 <style>
 :root{--bg:#06101c;--panel:#0d1c30;--text:#f6f8fc;--muted:#9db0c8;--line:rgba(255,255,255,.11);--cyan:#63d9ff;--violet:#9c79ff;--green:#55e6a5;--red:#ff809e;--gold:#ffd66b;--shadow:0 24px 70px rgba(0,0,0,.30)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at top right,#17375c 0,#07111f 38%,#050b14 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(120deg,rgba(98,216,255,.04),transparent 35%,rgba(158,124,255,.05))}.shell{max-width:1180px;margin:auto;padding:28px 20px 64px}.hero{padding:30px 0 18px}.eyebrow{font-size:.74rem;letter-spacing:.17em;text-transform:uppercase;color:var(--cyan);font-weight:900}h1{font-size:clamp(2.5rem,7vw,5rem);line-height:.94;letter-spacing:-.055em;margin:10px 0 13px}.hero p{max-width:760px;color:var(--muted);font-size:1.05rem;line-height:1.6}.glass{background:linear-gradient(180deg,rgba(17,36,59,.94),rgba(9,23,39,.94));border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
@@ -16,18 +16,19 @@
 </style>
 </head>
 <body><div class="shell">
-<section class="hero"><div class="eyebrow">2026 Junior Olympics</div><h1>Your team.<br>Your tournament.</h1><p>Follow every result, see the next game immediately, and explore the teams connected to your path.</p></section>
+<section class="hero"><div class="eyebrow">2026 Junior Olympics · <a href="../../index.html" style="color:inherit;text-decoration:none">California Polo Index</a></div><h1>Your team.<br>Your tournament.</h1><p>Follow every result, see the next game immediately, and explore the teams connected to your path.</p></section>
 <div class="statusbar glass"><div><span id="liveDot" class="live-dot"></span><span id="statusText">Loading live schedule…</span></div><div class="status-actions"><a id="sheetLink" class="sheet-link" href="#" target="_blank" rel="noopener noreferrer">View full division sheet ↗</a><button id="share" class="refresh">Share division link</button><button id="refresh" class="refresh">Refresh scores</button></div></div>
 <section class="selector glass"><div><label>Age</label><select id="age"></select></div><div><label>Division</label><select id="division"></select></div><div><label>Team</label><select id="team"><option value="">Choose your team</option></select></div></section>
 <section id="emptyState" class="welcome-grid">
   <article class="welcome-card glass"><div class="eyebrow">Start here</div><h2>Choose an age, division, and team.</h2><p>The site will show the team’s first known game, current tournament journey, win/loss path, and possible future opponents as the bracket updates.</p><div class="mini-list"><div class="mini-row"><span class="mini-dot"></span><div><strong>Live first.</strong><div class="journey-meta">The schedule tries Google Sheets first, then uses cache or embedded fallback data if needed.</div></div></div><div class="mini-row"><span class="mini-dot"></span><div><strong>Team links.</strong><div class="journey-meta">After selecting a team, use Share team link to send someone directly to that path.</div></div></div></div></article>
   <article class="welcome-card glass"><div class="eyebrow">Tournament Journey</div><h2>Built for parents on deck.</h2><p>Answer the important questions quickly: when do we play, where, who could we play next, and how did we get here?</p><div class="note">Tip: use the full division schedule below when you want to search another team, venue, or game number.</div></article>
 </section>
-<section class="section full-schedule"><div class="section-title full-actions"><div><h2>Full division schedule</h2><div class="kicker">Search every game for the selected age and division.</div></div><div class="toolbar"><input id="fullSearch" placeholder="Search team, venue, or game number"><select id="fullDay"><option value="">All days</option></select></div><span id="fullCount" class="count-pill">0 games shown</span></div><div id="fullSchedule" class="grid"></div></section>
 <div id="teamView" class="hidden">
 <section class="team-summary"><div id="summary" class="summary-main glass"></div><div id="next" class="summary-next"></div></section>
 <section id="pathSection" class="section hidden"><div class="section-title"><div><h2>After the next game</h2><div class="kicker">Where the team goes after a win or loss</div></div></div><div id="paths" class="paths"></div></section>
 <section class="section"><div class="section-title"><div><h2>Tournament journey</h2><div class="kicker">Every completed and currently scheduled game for the selected team</div></div></div><div class="tabs"><button id="journeyTab" class="tab active">My team journey</button><button id="relevantTab" class="tab">Relevant bracket games</button></div><div id="journey"></div><div id="relevant" class="hidden"><div class="toolbar"><input id="search" placeholder="Search team, venue, or game number"><select id="day"><option value="">All days</option></select></div><div id="schedule" class="grid"></div></div></section>
 <section class="section"><div class="section-title"><div><h2>Possible future opponents</h2><div class="kicker">Teams currently connected to the selected team’s path</div></div></div><div id="potential" class="potential"></div></section>
-</div></div>
-<script src="app.js?v=5.3.0"></script></body></html>
+</div>
+<section class="section full-schedule"><div class="section-title full-actions"><div><h2>Full division schedule</h2><div class="kicker">Search every game for the selected age and division.</div></div><div class="toolbar"><input id="fullSearch" placeholder="Search team, venue, or game number"><select id="fullDay"><option value="">All days</option></select></div><span id="fullCount" class="count-pill">0 games shown</span></div><div id="fullSchedule" class="grid"></div></section>
+</div>
+<script src="app.js?v=5.3.2"></script></body></html>

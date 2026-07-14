@@ -1,20 +1,12 @@
-# CPI Release 7.37 — JO Girls Tournament Journey Integration
+# CPI Release 7.37.2 — CPI Home + JO Team View Hotfix
 
-- Integrates JO Girls Tournament Journey into CPI at `tournaments/jo-girls/`.
-- Adds root redirect `jo-girls.html`.
-- Adds tournament-page CTA into the CPI site.
-- Preserves rankings, CPI scores, logos, regions, stories, and model logic.
+- Restores the CPI homepage after the JO Girls tool was accidentally copied over `index.html`.
+- Restores root CPI `app.js` and `README.md` after JO tool files were copied to the repo root.
+- Keeps the JO Girls Tournament Journey inside `tournaments/jo-girls/`.
+- Moves the selected-team journey above the full division schedule so team selection shows the team view immediately.
+- Updates JO share-button text between division and team links.
+- Preserves CPI rankings, scores, clubs, stories, regions, logos, and model logic.
 
-# CPI Release 7.35 — Public Link + CTA Completion
+# Previous checkpoint
 
-Status: targeted cleanup complete
-
-Connects visible public CTAs and story cards to real pages/actions:
-- Homepage Subscribe now routes to `subscribe.html`
-- Homepage rankings selector has a no-JS fallback
-- Story cards link to article pages instead of raw CSV files
-- Root Quiksilver URL redirects to `stories/quicksilver-cup-2026.html`
-- Universal shell Stories nav points to `stories.html`
-- 7.35 link/action audit added
-
-No rankings, CPI scores, team order, aliases, regions, logos, layouts, or model logic changed.
+CPI Release 7.37 — JO Girls Tournament Journey Integration
