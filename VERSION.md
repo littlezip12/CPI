@@ -1,11 +1,12 @@
-# CPI Release 7.37.4 — JO Tournament Access + Integrated Header/Footer
+# CPI Release 7.37.5 — JO Tournament Banner Copy + USAWP Logo
 
-- Reworks `tournaments.html` into a clearer Weekend 1 Junior Olympics access page.
-- Adds a readable JO Girls/Coed banner with direct links into the Tournament Journey tool.
-- Adds CPI site header and footer to the embedded JO Girls Tournament Journey page.
-- Keeps the JO tool at `tournaments/jo-girls/` and the short redirect at `jo-girls.html`.
-- Preserves CPI homepage, rankings, scores, clubs, stories, regions, logos, and model logic.
+- Renames the tournament hero to `Junior Olympics Girls & Coed`.
+- Removes the redundant `Use short link` button from the tournament hero.
+- Replaces the decorative orange/yellow ball with a local USA Water Polo shield-style logo asset.
+- Tightens the tournament hero typography so the banner is easier to read and less likely to crop on narrower screens.
+- Preserves the JO Tournament Journey tool at `tournaments/jo-girls/` and the short redirect at `jo-girls.html`.
+- Preserves CPI rankings, scores, clubs, stories, regions, logos, and model logic.
 
 # Previous checkpoint
 
-CPI Release 7.37.3 — Tournaments Page Access Cleanup
+CPI Release 7.37.4 — JO Tournament Access + Integrated Header/Footer
