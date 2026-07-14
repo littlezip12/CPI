@@ -1,3 +1,7 @@
+# CPI Version
+
+Current release: 7.37.7 — Tournament Results Team Cleanup + Source Connections
+
 # CPI Release 7.37.6 — Tournament Results Hub + USAWP Logo
 
 - Replaces the tournament hero graphic with the user-provided USA Water Polo logo asset.
