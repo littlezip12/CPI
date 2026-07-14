@@ -54,37 +54,70 @@
     s = norm(s);
     if(!s) return "";
     const upperKeep = new Set(["CC","CDM","CIU","LB","LA","NSD","ORWP","OVAC","PAC","PV","SBWPC","SD","SJ","SHAQ","SET","TSM","USA","WPC"]);
+    const titleForce = new Set(["SAN","SANTA"]);
     return s.split(/\s+/).map(part=>{
       const clean = part.replace(/[^A-Za-z0-9]/g,"").toUpperCase();
+      if(titleForce.has(clean)) return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
       if(upperKeep.has(clean)) return part.toUpperCase();
       if(part.length <= 3 && /^[A-Z0-9]+$/.test(part)) return part;
       return part.charAt(0).toUpperCase() + part.slice(1).toLowerCase();
     }).join(" ");
   }
 
+  function stripTeamPrefix(raw){
+    let s = norm(raw).replace(/[–—]/g,"-").trim();
+
+    // Remove surrounding placement prefixes such as "(1st J) - Newport".
+    s = s.replace(/^\(\s*(?:\d+(?:st|nd|rd|th)\s*[A-Z]?|[A-Z]{1,3}\d{1,2})\s*\)\s*[-:]\s*/i, "");
+
+    // Remove placement/pool/seed prefixes such as "1st A-", "1sta -", "B1-", "C2 -", "3-".
+    const prefixPatterns = [
+      /^\d+(?:st|nd|rd|th)\s*[A-Z]?\s*[-:]\s*/i,
+      /^\d+(?:st|nd|rd|th)[A-Z]\s*[-:]\s*/i,
+      /^[A-Z]{1,3}\d{1,2}\s*[-:]\s*/i,
+      /^\d+\s*[-:]\s*/i,
+      /^pt[_\s-]*[A-Z]?\d+\s*[-:]\s*/i,
+      /^(?:seed|pool|group)\s*[A-Z]?\d*\s*[-:]\s*/i
+    ];
+
+    let changed = true;
+    while(changed){
+      changed = false;
+      for(const pat of prefixPatterns){
+        const next = s.replace(pat, "").trim();
+        if(next !== s){ s = next; changed = true; }
+      }
+    }
+    return s;
+  }
+
   function cleanTeam(raw){
-    let s = norm(raw);
+    let s = stripTeamPrefix(raw);
     if(!s) return "";
-    s = s.replace(/[–—]/g,"-");
-    // Remove tournament seed/pool labels such as B1-STANFORD, C2- LA JOLLA, 3-908.
-    s = s.replace(/^\d+\s*-\s*/,"");
-    s = s.replace(/^[A-Z]{1,3}\d{1,2}\s*-\s*/i,"");
-    s = s.replace(/^pt[_\s-]*[A-Z]\d+\s*-\s*/i,"");
-    s = s.replace(/^(?:seed|pool)\s*[A-Z]?\d+\s*[-:]\s*/i,"");
+
+    // Remove non-team helper notes but preserve real team names.
     s = s.replace(/\s*\([^)]*\)\s*$/,"").trim();
+    s = s.replace(/\s+/g," ");
+
     // Normalize a few common sheet aliases for display only.
     const aliases = {
       "SD SHORES": "San Diego Shores",
+      "SD SHORES BLACK": "San Diego Shores Black",
+      "SD SHORES GOLD": "San Diego Shores Gold",
       "SJ EXPRESS": "SJ Express",
       "LB SHORE": "Long Beach Shore",
       "LB VIKING": "LB Viking",
       "PV WPC": "PV WPC",
       "CC UNITED": "CC United",
       "LA JOLLA": "La Jolla",
+      "LA JOLLA GOLD": "La Jolla Gold",
       "LA PREMIER": "LA Premier",
-      "MID VALLEY": "Mid Valley"
+      "MID VALLEY": "Mid Valley",
+      "SAN CLEMENTE": "San Clemente",
+      "SANTA CRUZ": "Santa Cruz",
+      "SANTA BARBARA": "Santa Barbara"
     };
-    const key = s.toUpperCase();
+    const key = s.toUpperCase().replace(/\s+/g," ");
     return aliases[key] || smartName(s);
   }
 
@@ -93,9 +126,13 @@
   function isPlaceholderTeam(s){
     const t = norm(s);
     if(!t) return true;
-    return /^(W|L)\d+[A-Z]?$/i.test(t)
+    return /^\d+$/.test(t)
+      || /^[A-Z]?\d+$/.test(t)
+      || /^\(?\s*\d+(?:st|nd|rd|th)\s*[A-Z]?\s*\)?$/i.test(t)
+      || /^(W|L)\d+[A-Z]?$/i.test(t)
       || /^(Winner|Loser)\b/i.test(t)
       || /^(?:\d+(?:st|nd|rd|th)\s+)?(?:pt|platinum|gold|silver|bronze|classic|championship|pool|group)[_\s-]?[A-Z]?\d*$/i.test(t)
+      || /^(?:date|time|score|white|dark|location|venue|site|game|gm|gmid)$/i.test(t)
       || /^TBD$/i.test(t)
       || /^bye$/i.test(t);
   }
@@ -319,30 +356,43 @@
     $("status").textContent=state.event.statusLabel;
   }
 
-  function allTeams(){
+  function belongsToGroup(obj, group){
+    if(!group) return true;
+    return (obj.group||obj.age||"") === group;
+  }
+
+  function allTeams(group){
     const map = new Map();
-    state.games.forEach(g=>{
+    state.games.filter(g=>belongsToGroup(g, group)).forEach(g=>{
       [g.white,g.dark,g.team,g.winner,g.loser].forEach(t=>{
         const c=canonicalTeamValue(t);
         if(c) map.set(sortTeamName(c), c);
       });
     });
-    state.placements.forEach(p=>{
+    state.placements.filter(p=>belongsToGroup(p, group)).forEach(p=>{
       const c=canonicalTeamValue(p.team);
       if(c) map.set(sortTeamName(c), c);
     });
     return [...map.values()].sort((a,b)=>a.localeCompare(b));
   }
 
-  function populateFilters(){
-    const groupSel=$("groupFilter"), teamSel=$("teamFilter");
-    const groups=[...new Set([...state.games.map(g=>g.group||g.age||""),...state.placements.map(p=>p.group||"")].filter(Boolean))].sort();
-    const prevGroup=groupSel.value, prevTeam=teamSel.value;
-    groupSel.innerHTML=`<option value="">All age/divisions</option>`+groups.map(g=>`<option>${esc(g)}</option>`).join("");
-    const teams=allTeams();
+  function populateTeamOptions(){
+    const teamSel=$("teamFilter");
+    const group=$("groupFilter").value;
+    const prevTeam=teamSel.value;
+    const teams=allTeams(group);
     teamSel.innerHTML=`<option value="">All teams</option>`+teams.map(t=>`<option>${esc(t)}</option>`).join("");
-    if(groups.includes(prevGroup)) groupSel.value=prevGroup;
     if(teams.includes(prevTeam)) teamSel.value=prevTeam;
+    else teamSel.value="";
+  }
+
+  function populateFilters(){
+    const groupSel=$("groupFilter");
+    const groups=[...new Set([...state.games.map(g=>g.group||g.age||""),...state.placements.map(p=>p.group||"")].filter(Boolean))].sort();
+    const prevGroup=groupSel.value;
+    groupSel.innerHTML=`<option value="">All age/divisions</option>`+groups.map(g=>`<option>${esc(g)}</option>`).join("");
+    if(groups.includes(prevGroup)) groupSel.value=prevGroup;
+    populateTeamOptions();
   }
 
   function filtered(){
@@ -368,7 +418,7 @@
   }
 
   function renderSummary(){
-    const teams=allTeams();
+    const teams=allTeams("");
     const finals=state.games.filter(g=>g.status==="Final" || (g.whiteScore!==null&&g.darkScore!==null));
     $("summary").innerHTML=`<div class="tr-mini-stat-grid"><div class="tr-mini-stat"><span>Games loaded</span><strong>${state.games.length}</strong></div><div class="tr-mini-stat"><span>Teams found</span><strong>${teams.length}</strong></div><div class="tr-mini-stat"><span>Final scores</span><strong>${finals.length}</strong></div><div class="tr-mini-stat"><span>Placements</span><strong>${state.placements.length}</strong></div></div>`;
   }
@@ -448,7 +498,9 @@
   async function init(){
     setup();
     $("refresh").addEventListener("click",load);
-    ["search","groupFilter","teamFilter"].forEach(id=>$(id).addEventListener("input",renderGames));
+    $("groupFilter").addEventListener("input",()=>{ populateTeamOptions(); renderGames(); });
+    $("teamFilter").addEventListener("input",renderGames);
+    $("search").addEventListener("input",renderGames);
     await load();
   }
 
