@@ -1,9 +1,10 @@
-# CPI Release 7.37.11
+# CPI Release 7.38.0
 
-Tournament Results Data Accuracy Hotfix
+Junior Olympics Weekend 2 Schedule Foundation
 
-- Tightened tournament-results team parsing so winner/loser/path labels are not treated as teams.
-- Excluded single-letter placeholders such as `L` and unresolved pool/path slot labels from team dropdowns.
-- Scoped selected-team result panels to the active age/division instead of combining same-name teams across divisions.
-- Refreshed tournament results script cache-busting to 7.37.11.
-- Preserved CPI rankings, scores, clubs, stories, regions, JO routing, and model logic.
+- Added the 2026 JO Weekend 2 schedule and team-pathway tool for 10U Championship and all Boys 12U–18U divisions.
+- Added one authoritative source registry for the Boys workbook and division GIDs.
+- Restored the missing Girls & Coed JO public entry page with the shared tournament shell.
+- Added Boys JO access to the homepage and tournament hub.
+- Preserved rankings, club/team pages, existing result tools, and source-sheet links.
+- Next roadmap step: store raw source snapshots and generate normalized tournament JSON during the build.
