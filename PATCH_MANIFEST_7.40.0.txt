@@ -1,0 +1,48 @@
+CPI 7.40.0 — Canonical Club and Team Identity Foundation
+
+PURPOSE
+Create one stable identity layer shared by rankings, club records, JO schedule markup, and the ranking-engine migration.
+
+KEY RESULTS
+- 138 canonical clubs produced from 143 legacy club records.
+- 506 stable season/age/gender team identities.
+- 1,078 scope-safe team aliases and 598 globally unique fallback aliases.
+- Five duplicate legacy club families converge on shared canonical IDs.
+- Ranking order, team names, club names, and legacy public URLs remain unchanged.
+- Boys and Girls JO matchup markup now carries canonical team/club IDs when a ranked identity resolves.
+- Identity validation is included in ./release-check.
+
+FILES
+INSTALL_7.40.0.md
+VERSION.md
+club-registry.csv
+club-registry.json
+clubs.json
+config/identity-manual-overrides.json
+config/site-release.json
+data/identity/README.md
+data/identity/aliases.json
+data/identity/clubs.json
+data/identity/index.json
+data/identity/manifest.json
+data/identity/runtime.js
+data/identity/teams.json
+data/team_alias_lookup.json
+data/team_alias_lookup_with_tournament_normalizer.json
+data/team_registry.json
+data.js
+docs/ROADMAP_7.40_CANONICAL_IDENTITY.md
+js/cpi-identity.js
+qa/identity-ambiguous-aliases-7.40.0.csv
+qa/identity-audit-7.40.0.json
+qa/release-audit-latest.json
+rankings.json
+release-check
+scripts/build-identity-registry.py
+scripts/release-audit.py
+scripts/validate-identity-registry.py
+tournaments/jo-boys/app.js
+tournaments/jo-boys/index.html
+tournaments/jo-girls/app.js
+tournaments/jo-girls/index.html
+PATCH_MANIFEST_7.40.0.txt

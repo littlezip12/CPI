@@ -7,6 +7,7 @@ echo "CPI Release Check"
 echo "================="
 python3 scripts/release-audit.py --write-report qa/release-audit-latest.json
 python3 scripts/validate-jo-release.py
+python3 scripts/validate-identity-registry.py
 
 echo
 echo "CPI release check passed."

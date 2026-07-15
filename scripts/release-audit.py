@@ -32,7 +32,8 @@ EXPECTED_GROUPS = {
     "16U Boys", "16U Girls", "18U Boys", "18U Girls",
 }
 RANKING_REQUIRED_FIELDS = {
-    "season", "group", "gender", "ageGroup", "postRank", "team", "slug", "club", "clubSlug"
+    "season", "group", "gender", "ageGroup", "postRank", "team", "slug", "club", "clubSlug",
+    "canonicalTeamId", "canonicalClubId"
 }
 
 
