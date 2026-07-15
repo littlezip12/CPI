@@ -1,9 +1,11 @@
-# CPI 7.39.0
+# CPI 7.40.0
 
-Release Integrity Foundation.
+Canonical Club and Team Identity Foundation.
 
-- Adds a repository-wide release audit and one-command release gate.
-- Captures legacy technical debt without allowing new regressions.
-- Validates local links, JSON, JavaScript, ranking structure, and JO applications.
-- Establishes canonical site-release metadata separate from ranking-data and JO-app versions.
-- Leaves the public 7.38.2 JO schedule experience unchanged.
+- Establishes 138 canonical club identities from 143 legacy club records.
+- Establishes 506 stable season/age/gender team identities.
+- Keeps JO seeds separate from team names and resolves aliases within age/gender scope.
+- Adds canonical team and club IDs to ranking and club exports without changing legacy URLs.
+- Connects Boys and Girls JO schedule markup to the shared identity resolver.
+- Generates compatibility registries for the ranking-engine migration.
+- Adds identity validation to the one-command release gate.
