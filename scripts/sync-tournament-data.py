@@ -52,29 +52,54 @@ def source_urls(division: dict) -> list[str]:
     return list(dict.fromkeys(urls))
 
 
-def fetch_csv(division: dict, timeout: int = 25) -> tuple[str, str]:
-    last_error: Exception | None = None
+def fetch_url_text(url: str, timeout: int = 25) -> str:
+    """Fetch one CSV candidate and reject transport-level false positives."""
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.42; +https://littlezip12.github.io/CPI/)",
+        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.42.1; +https://littlezip12.github.io/CPI/)",
         "Accept": "text/csv,text/plain,*/*",
         "Cache-Control": "no-cache",
     }
-    for url in source_urls(division):
-        request = urllib.request.Request(url, headers=headers)
-        for attempt in range(2):
-            try:
-                with urllib.request.urlopen(request, timeout=timeout) as response:
-                    text = response.read().decode("utf-8-sig", errors="replace")
-                    if len(text.strip()) < 20:
-                        raise RuntimeError("Google Sheets response was empty")
-                    if text.lstrip().startswith("<!DOCTYPE html") or "accounts.google.com" in text[:1000]:
-                        raise RuntimeError("Google Sheets returned an HTML/login page instead of CSV")
-                    return text, url
-            except Exception as exc:  # noqa: BLE001 - retain source error context
-                last_error = exc
-                if attempt == 0:
-                    time.sleep(1.0)
-    raise RuntimeError(f"Unable to fetch {division['id']}: {last_error}")
+    request = urllib.request.Request(url, headers=headers)
+    last_error: Exception | None = None
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                text = response.read().decode("utf-8-sig", errors="replace")
+            if len(text.strip()) < 20:
+                raise RuntimeError("Google Sheets response was empty")
+            if text.lstrip().startswith("<!DOCTYPE html") or "accounts.google.com" in text[:1000]:
+                raise RuntimeError("Google Sheets returned an HTML/login page instead of CSV")
+            return text
+        except Exception as exc:  # noqa: BLE001 - retain source error context
+            last_error = exc
+            if attempt == 0:
+                time.sleep(1.0)
+    raise RuntimeError(str(last_error) if last_error else "Unknown fetch failure")
+
+
+def candidate_rejection_reason(
+    normalized: dict,
+    previous_counts: dict | None = None,
+) -> str | None:
+    """Return a reason when a fetched candidate is unsafe to publish.
+
+    Google Sheets can return a syntactically valid CSV for the wrong/blank tab.
+    A candidate must contain games, contain no blockers, and must not collapse a
+    previously banked schedule by more than 50 percent.
+    """
+    counts = normalized.get("counts", {})
+    games = int(counts.get("games") or 0)
+    blockers = int(counts.get("blockers") or 0)
+    if games <= 0:
+        return "normalized to zero games"
+    if blockers > 0:
+        return f"contains {blockers} blocking data issue(s)"
+    prior_games = int((previous_counts or {}).get("games") or 0)
+    if prior_games > 0:
+        minimum = max(1, (prior_games + 1) // 2)
+        if games < minimum:
+            return f"game count collapsed from {prior_games} to {games} (minimum safe count {minimum})"
+    return None
 
 
 def paths_for(event_id: str, division_id: str) -> tuple[Path, Path, Path]:
@@ -95,57 +120,109 @@ def sync_one(
 ) -> dict:
     raw_path, normalized_path, qa_path = paths_for(event["id"], division["id"])
     fetched_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    raw_path.parent.mkdir(parents=True, exist_ok=True)
+
+    existing_text = raw_path.read_text(encoding="utf-8-sig") if raw_path.exists() else None
+    normalized_existing = load_json(normalized_path) if normalized_path.exists() else {}
+    qa_existing = load_json(qa_path) if qa_path.exists() else {}
+    previous_counts = normalized_existing.get("counts", {})
+    current_release = normalized_existing.get("release") == "7.42.0" and qa_existing.get("release") == "7.42.0"
+
+    text: str | None = None
+    normalized: dict | None = None
+    qa: dict | None = None
     source_mode = "live_fetch"
-    fetched_url = None
+    fetched_url: str | None = None
+    candidate_errors: list[str] = []
+
+    def normalize_candidate(candidate_text: str, mode: str) -> tuple[dict, dict]:
+        return normalize_csv(
+            candidate_text,
+            event=event,
+            division=division,
+            resolver=resolver,
+            fetched_at=fetched_at,
+            source_mode=mode,
+        )
 
     if source_file:
         text = source_file.read_text(encoding="utf-8-sig")
         source_mode = "local_source_file"
+        normalized, qa = normalize_candidate(text, source_mode)
+        reason = candidate_rejection_reason(normalized, previous_counts)
+        if reason:
+            raise RuntimeError(f"Rejected local source file: {reason}")
     elif no_fetch:
-        if not raw_path.exists():
+        if existing_text is None:
             raise RuntimeError(f"No cached raw source exists for {event['id']} / {division['id']}")
-        text = raw_path.read_text(encoding="utf-8-sig")
+        text = existing_text
         source_mode = "cached_raw"
+        normalized, qa = normalize_candidate(text, source_mode)
+        reason = candidate_rejection_reason(normalized, previous_counts)
+        if reason:
+            raise RuntimeError(f"Rejected cached raw source: {reason}")
     else:
-        try:
-            text, fetched_url = fetch_csv(division)
-        except Exception:
-            if not raw_path.exists():
-                raise
-            text = raw_path.read_text(encoding="utf-8-sig")
-            source_mode = "cached_raw_after_fetch_failure"
+        # Google Sheets occasionally returns a valid-looking CSV for a blank or
+        # obsolete tab. Parse each configured URL before accepting it, including
+        # GID aliases and the sheet-name fallback.
+        for url in source_urls(division):
+            try:
+                candidate_text = fetch_url_text(url)
+                candidate_normalized, candidate_qa = normalize_candidate(candidate_text, "live_fetch")
+                reason = candidate_rejection_reason(candidate_normalized, previous_counts)
+                if reason:
+                    candidate_errors.append(f"{url}: {reason}")
+                    continue
+                text = candidate_text
+                normalized = candidate_normalized
+                qa = candidate_qa
+                fetched_url = url
+                break
+            except Exception as exc:  # noqa: BLE001 - preserve candidate diagnostics
+                candidate_errors.append(f"{url}: {exc}")
 
-    raw_path.parent.mkdir(parents=True, exist_ok=True)
-    existing = raw_path.read_text(encoding="utf-8-sig") if raw_path.exists() else None
-    normalized_existing = load_json(normalized_path) if normalized_path.exists() else {}
-    qa_existing = load_json(qa_path) if qa_path.exists() else {}
-    current_release = normalized_existing.get("release") == "7.42.0" and qa_existing.get("release") == "7.42.0"
-    unchanged = existing == text and normalized_path.exists() and qa_path.exists() and current_release
+        if text is None or normalized is None or qa is None:
+            # Preserve the last known-good bank rather than replacing it with a
+            # zero-game or truncated response. This is a stale-but-safe outcome,
+            # not a successful live refresh.
+            if existing_text is not None and normalized_existing and qa_existing and current_release:
+                reason = "; ".join(candidate_errors[-4:]) or "No usable live CSV candidate"
+                return {
+                    "eventId": event["id"],
+                    "divisionId": division["id"],
+                    "normalizedPath": normalized_path.relative_to(ROOT).as_posix(),
+                    "qaPath": qa_path.relative_to(ROOT).as_posix(),
+                    "rawPath": raw_path.relative_to(ROOT).as_posix(),
+                    "sourceSha256": normalized_existing.get("source", {}).get("contentSha256"),
+                    "fetchedAt": normalized_existing.get("source", {}).get("fetchedAt"),
+                    "sourceMode": normalized_existing.get("source", {}).get("mode"),
+                    "unchanged": True,
+                    "staleFallback": True,
+                    "warning": reason,
+                    "counts": normalized_existing.get("counts", {}),
+                }
+            raise RuntimeError("No usable live CSV candidate: " + ("; ".join(candidate_errors[-4:]) or "unknown error"))
+
+    assert text is not None and normalized is not None and qa is not None
+    unchanged = existing_text == text and normalized_path.exists() and qa_path.exists() and current_release
     if unchanged:
-        normalized = normalized_existing
         return {
             "eventId": event["id"],
             "divisionId": division["id"],
             "normalizedPath": normalized_path.relative_to(ROOT).as_posix(),
             "qaPath": qa_path.relative_to(ROOT).as_posix(),
             "rawPath": raw_path.relative_to(ROOT).as_posix(),
-            "sourceSha256": normalized.get("source", {}).get("contentSha256"),
-            "fetchedAt": normalized.get("source", {}).get("fetchedAt"),
-            "sourceMode": normalized.get("source", {}).get("mode"),
+            "sourceSha256": normalized_existing.get("source", {}).get("contentSha256"),
+            "fetchedAt": normalized_existing.get("source", {}).get("fetchedAt"),
+            "sourceMode": normalized_existing.get("source", {}).get("mode"),
             "unchanged": True,
-            "counts": normalized.get("counts", {}),
+            "counts": normalized_existing.get("counts", {}),
         }
-    if existing != text:
-        raw_path.write_text(text, encoding="utf-8")
 
-    normalized, qa = normalize_csv(
-        text,
-        event=event,
-        division=division,
-        resolver=resolver,
-        fetched_at=fetched_at,
-        source_mode=source_mode,
-    )
+    # Commit raw and normalized artifacts only after the candidate passes all
+    # structural checks. A bad live response can never destroy a good snapshot.
+    if existing_text != text:
+        raw_path.write_text(text, encoding="utf-8")
     if fetched_url:
         normalized["source"]["fetchedUrl"] = fetched_url
     write_json(normalized_path, normalized)
@@ -233,13 +310,22 @@ def main() -> int:
         selected = list(all_registry_divisions(registry, sync_enabled_only=args.sync_enabled))
 
     failures = []
+    warnings = []
     completed = []
     for event, division in selected:
         try:
             result = sync_one(event, division, resolver, no_fetch=args.no_fetch, source_file=args.source_file)
             completed.append(result)
             counts = result["counts"]
-            print(f"OK {event['id']} / {division['id']}: {counts['games']} games, {counts['blockers']} blockers, {counts['reviewItems']} review")
+            if result.get("staleFallback"):
+                warnings.append({
+                    "eventId": event["id"],
+                    "divisionId": division["id"],
+                    "warning": result.get("warning"),
+                })
+                print(f"STALE {event['id']} / {division['id']}: preserved {counts['games']} previously banked games")
+            else:
+                print(f"OK {event['id']} / {division['id']}: {counts['games']} games, {counts['blockers']} blockers, {counts['reviewItems']} review")
         except Exception as exc:  # noqa: BLE001
             failures.append({"eventId": event["id"], "divisionId": division["id"], "error": str(exc)})
             print(f"FAILED {event['id']} / {division['id']}: {exc}", file=sys.stderr)
@@ -252,13 +338,17 @@ def main() -> int:
     if evidence_result.returncode:
         print("Tournament evidence build failed", file=sys.stderr)
         return evidence_result.returncode
-    if failures:
+    if failures or warnings:
         report = {
             "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
             "completed": completed,
+            "warnings": warnings,
             "failures": failures,
         }
         write_json(QA_ROOT / "sync-latest.json", report)
+    if warnings:
+        print(f"Preserved last known-good data for {len(warnings)} source(s) with invalid live responses", file=sys.stderr)
+    if failures:
         print(f"Partial sync completed with {len(failures)} failures", file=sys.stderr)
         return 0 if args.allow_partial else 1
     return 0

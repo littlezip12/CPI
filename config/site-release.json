@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.42.0",
-  "name": "Full JO Data Banking & Tournament Evidence",
+  "version": "7.42.1",
+  "name": "Tournament Sync Safety Hotfix",
   "date": "2026-07-14",
   "rankingDataRelease": "7.30 v2",
   "joApplicationRelease": "7.38.2",
   "deploymentMode": "migration",
-  "notes": "Banks enabled JO sources, creates stable tournament-only participant identities, connects normalized evidence to team profiles, and generates a manual ranking-review queue without changing published rankings.",
+  "notes": "Prevents blank, wrong-tab, blocking, or severely truncated Google Sheet responses from overwriting the last known-good tournament bank; retries configured GID aliases and records stale-source warnings.",
   "identityRelease": "7.40.0",
   "tournamentDataRelease": "7.42.0",
   "tournamentEvidenceRelease": "7.42.0"
