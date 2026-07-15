@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/styles.css?v=7.38.0">
-  <link rel="stylesheet" href="../../css/homepage-v8.css?v=7.38.0">
-  <link rel="stylesheet" href="../jo-schedule.css?v=7.38.0">
+  <link rel="stylesheet" href="../../css/styles.css?v=7.38.1">
+  <link rel="stylesheet" href="../../css/homepage-v8.css?v=7.38.1">
+  <link rel="stylesheet" href="../jo-schedule.css?v=7.38.1">
 </head>
 <body class="jo-page jo-girls-page">
   <header class="cpi-v8-header">
@@ -79,6 +79,16 @@
   </main>
 
   <footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="../../index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a><p>Independent and unofficial rankings, stories, and tournament tools for California youth water polo.</p></div><nav><h3>Explore</h3><a href="../../rankings.html">Rankings</a><a href="../../clubs.html">Clubs</a><a href="../../tournaments.html">Tournaments</a><a href="../../stories.html">Stories</a></nav><nav><h3>Junior Olympics</h3><a href="../jo-boys/">Boys Weekend 2</a><a href="../jo-girls/">Girls & Coed Weekend 1</a></nav><div><h3>Source standard</h3><p>CPI reads available public schedule sheets and preserves direct links to the official division source.</p></div></div><div class="bottom">© 2026 California Polo Index.</div></footer>
-  <script src="app.js?v=5.3.0"></script>
+  <script>
+    window.setTimeout(function(){
+      if(!window.CPI_JO_APP_READY){
+        var status=document.getElementById('statusText');
+        var dot=document.getElementById('liveDot');
+        if(status) status.textContent='Schedule application did not start. Hard refresh the page; if this remains, the app.js file is missing from the deployment.';
+        if(dot) dot.classList.add('fallback');
+      }
+    },5000);
+  </script>
+  <script src="app.js?v=7.38.1" onerror="var s=document.getElementById('statusText'); if(s) s.textContent='Schedule application file could not be loaded. Confirm app.js was committed and hard refresh.';"></script>
 </body>
 </html>

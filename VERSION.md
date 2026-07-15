@@ -1,10 +1,10 @@
-# CPI Release 7.38.0
+# CPI 7.38.1
 
-Junior Olympics Weekend 2 Schedule Foundation
+Junior Olympics schedule reliability update.
 
-- Added the 2026 JO Weekend 2 schedule and team-pathway tool for 10U Championship and all Boys 12U–18U divisions.
-- Added one authoritative source registry for the Boys workbook and division GIDs.
-- Restored the missing Girls & Coed JO public entry page with the shared tournament shell.
-- Added Boys JO access to the homepage and tournament hub.
-- Preserved rankings, club/team pages, existing result tools, and source-sheet links.
-- Next roadmap step: store raw source snapshots and generate normalized tournament JSON during the build.
+- Restores the Girls & Coed application JavaScript in the deployment patch.
+- Adds explicit app-load diagnostics instead of leaving the page on “Loading schedule…”.
+- Keeps Boys and Girls connected directly to their public Google Sheets.
+- Polls the active division every 120 seconds while the page is open.
+- Refreshes when the browser tab regains focus, becomes visible, or reconnects to the internet.
+- Adds a Girls & Coed source registry covering all 11 configured divisions.

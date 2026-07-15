@@ -1,13 +1,14 @@
 /* CPI Boys Junior Olympics schedule tool — Release 7.38.0 */
 const SHEET_ID='1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4';
-const APP_VERSION='7.38.0';
+const APP_VERSION='7.38.1';
 const DATASETS=[{"id":"10u-championship","age":"10U","division":"Championship (D1)","gid":"1659399499","gidAliases":["1659399499"]},{"id":"12u-boys-championship","age":"12U","division":"Boys Championship (D1)","gid":"1775879786","gidAliases":["1775879786"]},{"id":"12u-boys-classic","age":"12U","division":"Boys Classic (D2)","gid":"1808416221","gidAliases":["1808416221"]},{"id":"14u-boys-championship","age":"14U","division":"Boys Championship (D1)","gid":"345265555","gidAliases":["345265555"]},{"id":"14u-boys-classic","age":"14U","division":"Boys Classic (D2)","gid":"1855118263","gidAliases":["1855118263"]},{"id":"14u-boys-invitational","age":"14U","division":"Boys Invitational (D3)","gid":"1975322406","gidAliases":["1975322406"]},{"id":"16u-boys-championship","age":"16U","division":"Boys Championship (D1)","gid":"2012475287","gidAliases":["2012475287"]},{"id":"16u-boys-classic","age":"16U","division":"Boys Classic (D2)","gid":"1142418841","gidAliases":["1142418841"]},{"id":"16u-boys-invitational","age":"16U","division":"Boys Invitational (D3)","gid":"1686454973","gidAliases":["1686454973"]},{"id":"18u-boys-championship","age":"18U","division":"Boys Championship (D1)","gid":"38488572","gidAliases":["38488572"]},{"id":"18u-boys-classic","age":"18U","division":"Boys Classic (D2)","gid":"333261986","gidAliases":["333261986"]},{"id":"18u-boys-invitational","age":"18U","division":"Boys Invitational (D3)","gid":"289749610","gidAliases":["289749610"]}];
 const EMBEDDED_FALLBACKS={};
 const REFRESH_MS=120000;
+const ACTIVE_REFRESH_MIN_MS=30000;
 const CACHE_PREFIX='joBoysScheduleV1:';
 const ACRONYMS=new Set(['SD','CDM','LB','CC','WPC','CHAWP','LOWPO','SHAQ','OCWPC','ECA','ASA','CMAC','TPC','WCAC','SET','LA','OC','USA','CIU']);
 const age=$('age'),division=$('division'),team=$('team'),summary=$('summary'),next=$('next'),journey=$('journey'),paths=$('paths'),potential=$('potential'),schedule=$('schedule'),search=$('search'),day=$('day'),share=$('share');
-let DATA={teams:[],games:[]},RESOLVED={games:[],map:new Map(),slots:new Map(),placements:new Map()},loadVersion=0,refreshTimer=null;
+let DATA={teams:[],games:[]},RESOLVED={games:[],map:new Map(),slots:new Map(),placements:new Map()},loadVersion=0,refreshTimer=null,lastLoadAttemptAt=0;
 
 function $(id){return document.getElementById(id)}
 function esc(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
@@ -257,11 +258,23 @@ function renderPotential(name,upcoming){const candidates=new Set(gameCandidates(
 function rebuild(){RESOLVED=resolveTournament();populateTeamAndDay();renderFullSchedule();if(team.value)renderTeam();else{$('teamView').classList.add('hidden');setEmptyState();updateShareUrl();}}
 function readCache(config){try{const raw=localStorage.getItem(`${CACHE_PREFIX}${config.id}`);if(!raw)return null;const cached=JSON.parse(raw);return cached&&Array.isArray(cached.games)?cached:null}catch{return null}}
 function writeCache(config,data){try{localStorage.setItem(`${CACHE_PREFIX}${config.id}`,JSON.stringify({...data,cachedAt:new Date().toISOString()}))}catch{}}
-async function loadCurrent(manual=false){const config=currentConfig();if(!config)return;const version=++loadVersion,status=$('statusText'),dot=$('liveDot'),button=$('refresh');button.disabled=true;team.disabled=true;status.textContent=manual?`Refreshing ${config.division}…`:`Loading ${config.age} ${config.division}…`;try{const loaded=await fetchDataset(config);if(version!==loadVersion)return;DATA={age:config.age,division:config.division,teams:loaded.teams,games:loaded.games};writeCache(config,DATA);dot.classList.remove('fallback');status.textContent=`Live from Google Sheets · ${config.age} ${config.division} · ${loaded.games.length} games · ${loaded.method||'live'} · updated ${new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`}catch(error){if(version!==loadVersion)return;const cached=readCache(config),embedded=EMBEDDED_FALLBACKS[config.id];if(cached){DATA={age:config.age,division:config.division,teams:cached.teams||teamsFromGames(cached.games),games:cached.games};dot.classList.add('fallback');status.textContent=`Using last successful ${config.age} ${config.division} update · live sheet unavailable (${error.message})`}else if(embedded){DATA=structuredClone(embedded);dot.classList.add('fallback');status.textContent=`Using embedded ${config.age} ${config.division} schedule · live sheet unavailable (${error.message})`}else{DATA={age:config.age,division:config.division,teams:[],games:[]};dot.classList.add('fallback');status.textContent=`Could not load ${config.age} ${config.division} (${error.message})`}}finally{if(version===loadVersion){rebuild();button.disabled=false;team.disabled=false}}}
+async function loadCurrent(manual=false){const config=currentConfig();if(!config)return;lastLoadAttemptAt=Date.now();const version=++loadVersion,status=$('statusText'),dot=$('liveDot'),button=$('refresh');button.disabled=true;team.disabled=true;status.textContent=manual?`Refreshing ${config.division}…`:`Loading ${config.age} ${config.division}…`;try{const loaded=await fetchDataset(config);if(version!==loadVersion)return;DATA={age:config.age,division:config.division,teams:loaded.teams,games:loaded.games};writeCache(config,DATA);dot.classList.remove('fallback');status.textContent=`Live from Google Sheets · ${config.age} ${config.division} · ${loaded.games.length} games · ${loaded.method||'live'} · refreshed ${new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`}catch(error){if(version!==loadVersion)return;const cached=readCache(config),embedded=EMBEDDED_FALLBACKS[config.id];if(cached){DATA={age:config.age,division:config.division,teams:cached.teams||teamsFromGames(cached.games),games:cached.games};dot.classList.add('fallback');status.textContent=`Using last successful ${config.age} ${config.division} update · live sheet unavailable (${error.message})`}else if(embedded){DATA=structuredClone(embedded);dot.classList.add('fallback');status.textContent=`Using embedded ${config.age} ${config.division} schedule · live sheet unavailable (${error.message})`}else{DATA={age:config.age,division:config.division,teams:[],games:[]};dot.classList.add('fallback');status.textContent=`Could not load ${config.age} ${config.division} (${error.message})`}}finally{if(version===loadVersion){rebuild();button.disabled=false;team.disabled=false}}}
 function selectDataset(){const config=currentConfig();if(!config)return;updateSheetLink();localStorage.setItem('joBoysAgeV1',config.age);localStorage.setItem(`joBoysDivisionV1:${config.age}`,config.id);search.value='';day.value='';loadCurrent(false)}
 age.addEventListener('change',()=>{localStorage.setItem('joBoysAgeV1',age.value);populateDivisions();selectDataset()});division.addEventListener('change',selectDataset);team.addEventListener('change',renderTeam);search.addEventListener('input',renderRelevant);day.addEventListener('change',renderRelevant);$('journeyTab').addEventListener('click',()=>{$('journeyTab').classList.add('active');$('relevantTab').classList.remove('active');journey.classList.remove('hidden');$('relevant').classList.add('hidden')});$('relevantTab').addEventListener('click',()=>{$('relevantTab').classList.add('active');$('journeyTab').classList.remove('active');journey.classList.add('hidden');$('relevant').classList.remove('hidden')});$('refresh').addEventListener('click',()=>loadCurrent(true));
 $('share')?.addEventListener('click',copyShareLink);
 $('fullSearch')?.addEventListener('input',renderFullSchedule);
 $('fullDay')?.addEventListener('change',renderFullSchedule);
-populateAges();selectDataset();refreshTimer=setInterval(()=>loadCurrent(false),REFRESH_MS);
+function refreshWhenActive(){
+  if(document.hidden)return;
+  if(Date.now()-lastLoadAttemptAt<ACTIVE_REFRESH_MIN_MS)return;
+  loadCurrent(false);
+}
+window.CPI_JO_APP_READY=true;
+window.CPI_JO_REFRESH_INTERVAL_MS=REFRESH_MS;
+populateAges();
+selectDataset();
+refreshTimer=setInterval(()=>loadCurrent(false),REFRESH_MS);
+window.addEventListener('focus',refreshWhenActive);
+window.addEventListener('online',refreshWhenActive);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshWhenActive()});
 
