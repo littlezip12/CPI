@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT"
+
+echo "CPI Release Check"
+echo "================="
+python3 scripts/release-audit.py --write-report qa/release-audit-latest.json
+python3 scripts/validate-jo-release.py
+
+echo
+echo "CPI release check passed."

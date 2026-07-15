@@ -1,9 +1,9 @@
-# CPI 7.38.2
+# CPI 7.39.0
 
-Junior Olympics division seed display update.
+Release Integrity Foundation.
 
-- Displays official JO division seeds separately from canonical team names.
-- Adds seed badges to schedules, selected-team summaries, next games, journeys, and possible opponents.
-- Keeps dropdown values, share links, searches, and future ranking ingestion tied to clean team names only.
-- Applies the same implementation to Boys Weekend 2 and Girls & Coed Weekend 1.
-- Continues live Google Sheet refresh on page load, every two minutes, and when the tab becomes active.
+- Adds a repository-wide release audit and one-command release gate.
+- Captures legacy technical debt without allowing new regressions.
+- Validates local links, JSON, JavaScript, ranking structure, and JO applications.
+- Establishes canonical site-release metadata separate from ranking-data and JO-app versions.
+- Leaves the public 7.38.2 JO schedule experience unchanged.

@@ -1,20 +1,22 @@
-#!/bin/bash
-set -e
-echo "CPI Build"
-echo "========="
-if [ -f scripts/build-logos.py ]; then
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT"
+
+echo "CPI Static Build"
+echo "================"
+
+# Do not overwrite the logo registry from an empty source directory.
+if find assets-original/logos -maxdepth 1 -type f 2>/dev/null | grep -q .; then
   python3 scripts/build-logos.py
+else
+  echo "Skipped logo rebuild: assets-original/logos contains no source files."
+  echo "Existing logo registry and deployed logo paths were preserved."
 fi
-if [ -f scripts/build-club-registry.py ]; then
-  python3 scripts/build-club-registry.py
-fi
+
 python3 scripts/build-club-pages.py
-if [ -f scripts/validate-assets.py ]; then
-  python3 scripts/validate-assets.py
-fi
-if [ -f scripts/validate-club-registry.py ]; then
-  python3 scripts/validate-club-registry.py
-fi
 python3 scripts/validate-club-pages.py
-echo ""
-echo "CPI build completed."
+./release-check
+
+echo
+echo "CPI static build completed."

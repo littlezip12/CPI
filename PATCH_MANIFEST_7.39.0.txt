@@ -1,0 +1,27 @@
+CPI 7.39.0 — Release Integrity Foundation
+
+Added:
+- config/site-release.json
+- config/release-audit-baseline.json
+- docs/ROADMAP_7.39_RELEASE_INTEGRITY.md
+- scripts/release-audit.py
+- scripts/check-engine-inputs.py
+- release-check
+- qa/release-audit-latest.json
+- assets/logos/cpi-logo-fallback.svg
+- INSTALL_7.39.0.md
+- PATCH_MANIFEST_7.39.0.txt
+
+Updated:
+- VERSION.md
+- build-cpi
+- build.sh
+- styles.css
+- css/styles.css
+
+Behavior:
+- Prevents new release regressions while exposing known legacy debt.
+- Validates all JSON and JavaScript, internal HTML/CSS references, ranking integrity, and both JO applications.
+- Preserves logo metadata when original logo source files are absent.
+- Stops the experimental ranking engine before it can generate empty outputs.
+- Fixes the missing fallback-logo path and removes a broken decorative background asset reference.

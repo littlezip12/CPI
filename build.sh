@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-python build/build.py
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT"
+python3 scripts/check-engine-inputs.py
+python3 build/build.py
