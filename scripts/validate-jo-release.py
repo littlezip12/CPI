@@ -56,47 +56,49 @@ def check_html(rel: str) -> None:
         if not target.exists():
             fail(f'{rel}: unresolved local reference {attr}')
 
-registry_path = ROOT / 'tournaments/jo-boys/source-registry.json'
-girls_registry_path = ROOT / 'tournaments/jo-girls/source-registry.json'
+registry_path = ROOT / 'data/tournaments/registry.json'
 if not registry_path.exists():
-    fail('Missing Boys JO source registry')
+    fail('Missing central tournament source registry')
+    boys_rows = []
+    girls_rows = []
 else:
     registry = json.loads(registry_path.read_text(encoding='utf-8'))
-    rows = registry.get('datasets', [])
-    actual = {(x.get('age'), x.get('division'), str(x.get('gid'))) for x in rows}
-    if actual != EXPECTED_BOYS:
-        fail(f'Boys registry mismatch. Expected {len(EXPECTED_BOYS)} exact datasets, found {len(actual)}')
-    gids = [str(x.get('gid')) for x in rows]
-    ids = [x.get('id') for x in rows]
-    if len(gids) != len(set(gids)):
-        fail('Boys registry contains duplicate GIDs')
-    if len(ids) != len(set(ids)):
-        fail('Boys registry contains duplicate dataset IDs')
-    sheet_id = registry.get('sheetId')
-    for row in rows:
-        expected_url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/edit?gid={row["gid"]}#gid={row["gid"]}'
-        if row.get('sourceUrl') != expected_url:
-            fail(f'Bad source URL for {row.get("id")}')
-
-
-if not girls_registry_path.exists():
-    fail('Missing Girls JO source registry')
-else:
-    girls_registry = json.loads(girls_registry_path.read_text(encoding='utf-8'))
-    rows = girls_registry.get('datasets', [])
-    if len(rows) != 11:
-        fail(f'Girls registry should contain 11 datasets, found {len(rows)}')
-    gids = [str(x.get('gid')) for x in rows]
-    ids = [x.get('id') for x in rows]
-    if len(gids) != len(set(gids)):
-        fail('Girls registry contains duplicate primary GIDs')
-    if len(ids) != len(set(ids)):
-        fail('Girls registry contains duplicate dataset IDs')
-    sheet_id = girls_registry.get('sheetId')
-    for row in rows:
-        expected_url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/edit?gid={row["gid"]}#gid={row["gid"]}'
-        if row.get('sourceUrl') != expected_url:
-            fail(f'Bad Girls source URL for {row.get("id")}')
+    events = {event.get('id'): event for event in registry.get('events', [])}
+    boys_event = events.get('2026-jo-weekend-2') or {}
+    girls_event = events.get('2026-jo-weekend-1') or {}
+    boys_rows = boys_event.get('divisions', [])
+    girls_rows = girls_event.get('divisions', [])
+    actual = {(x.get('ageGroup'), x.get('id'), str(x.get('gid'))) for x in boys_rows}
+    expected = {
+        ('10U','10u-championship','1659399499'),
+        ('12U','12u-boys-championship','1775879786'),
+        ('12U','12u-boys-classic','1808416221'),
+        ('14U','14u-boys-championship','345265555'),
+        ('14U','14u-boys-classic','1855118263'),
+        ('14U','14u-boys-invitational','1975322406'),
+        ('16U','16u-boys-championship','2012475287'),
+        ('16U','16u-boys-classic','1142418841'),
+        ('16U','16u-boys-invitational','1686454973'),
+        ('18U','18u-boys-championship','38488572'),
+        ('18U','18u-boys-classic','333261986'),
+        ('18U','18u-boys-invitational','289749610'),
+    }
+    if actual != expected:
+        fail(f'Central Boys JO registry mismatch. Expected {len(expected)} exact datasets, found {len(actual)}')
+    if len(girls_rows) != 11:
+        fail(f'Central Girls JO registry should contain 11 datasets, found {len(girls_rows)}')
+    for label, rows in [('Boys', boys_rows), ('Girls', girls_rows)]:
+        gids = [str(x.get('gid')) for x in rows]
+        ids = [x.get('id') for x in rows]
+        if len(gids) != len(set(gids)):
+            fail(f'{label} JO registry contains duplicate primary GIDs')
+        if len(ids) != len(set(ids)):
+            fail(f'{label} JO registry contains duplicate dataset IDs')
+        for row in rows:
+            sheet_id = row.get('spreadsheetId')
+            expected_url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/edit?gid={row["gid"]}#gid={row["gid"]}'
+            if row.get('sourceUrl') != expected_url:
+                fail(f'Bad {label} JO source URL for {row.get("id")}')
 
 for rel in ('tournaments/jo-boys/index.html','tournaments/jo-girls/index.html'):
     check_html(rel)
@@ -109,11 +111,9 @@ else:
     for forbidden in ('joGirlsSchedule','joAgeV5','joDivisionV5','joSelectedTeam'):
         if forbidden in app_text:
             fail(f'Boys app contains Girls/shared storage key: {forbidden}')
-    if registry_path.exists():
-        registry = json.loads(registry_path.read_text(encoding='utf-8'))
-        for row in registry['datasets']:
-            if str(row['gid']) not in app_text or row['id'] not in app_text:
-                fail(f'Boys app is out of sync with registry: {row["id"]}')
+    for row in boys_rows:
+        if str(row['gid']) not in app_text or row['id'] not in app_text:
+            fail(f'Boys app is out of sync with central registry: {row["id"]}')
 
 for rel in ('tournaments/jo-boys/app.js','tournaments/jo-girls/app.js'):
     path = ROOT / rel
@@ -143,7 +143,7 @@ if errors:
 print('JO RELEASE VALIDATION PASSED')
 print(f' - {len(EXPECTED_BOYS)} Boys divisions registered')
 print(' - Boys and Girls entry pages contain all required application mounts')
-print(' - Girls app and 11-source registry are included')
+print(' - Girls app and all 23 JO sources are represented in the central tournament registry')
 print(' - JO division seeds are metadata and display separately from clean team names')
 print(' - Both apps poll live Google Sheets every two minutes and refresh when the tab becomes active')
 print(' - Local JO page assets resolve')

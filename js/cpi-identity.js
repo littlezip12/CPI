@@ -1,4 +1,4 @@
-/* CPI canonical identity resolver — Release 7.40.0 */
+/* CPI canonical identity resolver — data 7.40.0, scope-safety patch 7.41.0 */
 (function(global){
   'use strict';
   const runtime=global.CPI_IDENTITY_RUNTIME||{clubs:{},teams:{},clubAliasIndex:{},teamScopedAliasIndex:{},teamUnscopedAliasIndex:{}};
@@ -23,11 +23,23 @@
     const normalized=normalize(raw);
     if(!normalized)return null;
     const scopedId=runtime.teamScopedAliasIndex?.[scopedKey(context,raw)];
-    const unscopedId=runtime.teamUnscopedAliasIndex?.[normalized];
-    const id=scopedId||unscopedId;
+    let id=scopedId||null;
+    let matchType=scopedId?'scoped_alias':'';
+    if(!id){
+      const candidateId=runtime.teamUnscopedAliasIndex?.[normalized];
+      const candidate=candidateId&&runtime.teams?.[candidateId];
+      const season=String(context?.season||'2026');
+      const age=String(context?.ageGroup||context?.age||'').toLowerCase();
+      const gender=String(context?.gender||'').toLowerCase();
+      const scopeMatches=candidate
+        && (!season||String(candidate.season||'')===season)
+        && (!age||String(candidate.ageGroup||'').toLowerCase()===age)
+        && (!gender||String(candidate.gender||'').toLowerCase()===gender);
+      if(scopeMatches){id=candidateId;matchType='unique_unscoped_alias';}
+    }
     const team=id&&runtime.teams?.[id];
     if(!team)return null;
-    return {...team,club:runtime.clubs?.[team.clubId]||null,matchType:scopedId?'scoped_alias':'unique_unscoped_alias'};
+    return {...team,club:runtime.clubs?.[team.clubId]||null,matchType};
   }
   function cleanSourceName(raw){
     return String(raw||'').replace(/^\s*#?\d+\s*[-–—:]\s+(?=[a-z])/i,'').trim();

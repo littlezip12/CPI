@@ -1,0 +1,240 @@
+#!/usr/bin/env python3
+"""Validate CPI tournament source registry, raw snapshots, normalized games, and QA outputs."""
+from __future__ import annotations
+
+import hashlib
+import json
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
+MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
+EXPECTED_RELEASE = "7.41.0"
+ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
+ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
+errors: list[str] = []
+
+
+def fail(message: str) -> None:
+    errors.append(message)
+
+
+def load(path: Path):
+    if not path.exists():
+        fail(f"Missing required tournament file: {path.relative_to(ROOT)}")
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        fail(f"Invalid JSON in {path.relative_to(ROOT)}: {exc}")
+        return None
+
+
+registry = load(REGISTRY_PATH) or {}
+manifest = load(MANIFEST_PATH) or {}
+if registry.get("release") != EXPECTED_RELEASE:
+    fail(f"Tournament registry release must be {EXPECTED_RELEASE}")
+if registry.get("schemaVersion") != 1:
+    fail("Tournament registry schemaVersion must be 1")
+
+all_events = registry.get("events", [])
+all_divisions = [(event, division) for event in all_events for division in event.get("divisions", [])]
+if len(all_events) != 5:
+    fail(f"Tournament registry should contain 5 events, found {len(all_events)}")
+if len(all_divisions) != 48:
+    fail(f"Tournament registry should contain 48 divisions, found {len(all_divisions)}")
+if sum(bool(event.get("syncEnabled")) for event in all_events) != 2:
+    fail("Exactly two active JO events should be enabled for automatic synchronization")
+if sum(len(event.get("divisions", [])) for event in all_events if event.get("syncEnabled")) != 23:
+    fail("Automatic synchronization should cover 23 JO divisions")
+
+seen_event_ids: set[str] = set()
+seen_source_pairs: set[tuple[str, str, str]] = set()
+registry_lookup: dict[tuple[str, str], dict] = {}
+for event in all_events:
+    event_id = event.get("id")
+    if not re.fullmatch(r"[a-z0-9-]+", str(event_id or "")):
+        fail(f"Invalid event ID: {event_id!r}")
+    if event_id in seen_event_ids:
+        fail(f"Duplicate event ID: {event_id}")
+    seen_event_ids.add(event_id)
+    seen_division_ids: set[str] = set()
+    public_path = ROOT / str(event.get("publicPath", ""))
+    if not public_path.exists():
+        fail(f"Event {event_id} points to missing public page {event.get('publicPath')}")
+    for division in event.get("divisions", []):
+        division_id = division.get("id")
+        if not re.fullmatch(r"[a-z0-9-]+", str(division_id or "")):
+            fail(f"Invalid division ID for {event_id}: {division_id!r}")
+        if division_id in seen_division_ids:
+            fail(f"Duplicate division ID within {event_id}: {division_id}")
+        seen_division_ids.add(division_id)
+        registry_lookup[(event_id, division_id)] = division
+        if division.get("parser") not in ALLOWED_PARSERS:
+            fail(f"Unsupported parser for {event_id}/{division_id}: {division.get('parser')}")
+        if not division.get("spreadsheetId") or division.get("gid") is None:
+            fail(f"Missing Google Sheet source for {event_id}/{division_id}")
+        expected_url = f"https://docs.google.com/spreadsheets/d/{division.get('spreadsheetId')}/edit?gid={division.get('gid')}#gid={division.get('gid')}"
+        if division.get("sourceUrl") != expected_url:
+            fail(f"Source URL mismatch for {event_id}/{division_id}")
+        pair = (event_id, str(division.get("spreadsheetId")), str(division.get("gid")))
+        if pair in seen_source_pairs:
+            fail(f"Duplicate source tab within {event_id}: {pair[1]} / {pair[2]}")
+        seen_source_pairs.add(pair)
+        if division.get("ageGroup") not in {"10U", "12U", "14U", "16U", "18U"}:
+            fail(f"Invalid age group for {event_id}/{division_id}: {division.get('ageGroup')}")
+        if division.get("gender") not in {"Boys", "Girls", "Coed"}:
+            fail(f"Invalid gender for {event_id}/{division_id}: {division.get('gender')}")
+
+
+overrides_path = ROOT / "config" / "tournament-identity-overrides.json"
+overrides = load(overrides_path) or {}
+identity_index = load(ROOT / "data" / "identity" / "index.json") or {}
+if overrides.get("release") != EXPECTED_RELEASE:
+    fail(f"Tournament identity overrides release must be {EXPECTED_RELEASE}")
+seen_override_keys: set[tuple[str, str, str]] = set()
+for item in overrides.get("teamOverrides", []):
+    key = (str(item.get("eventId")), str(item.get("divisionId")), str(item.get("alias", "")).strip().lower())
+    if key in seen_override_keys:
+        fail(f"Duplicate tournament identity override: {key}")
+    seen_override_keys.add(key)
+    if (key[0], key[1]) not in registry_lookup:
+        fail(f"Tournament identity override references unknown division: {key[:2]}")
+    team = identity_index.get("teams", {}).get(item.get("canonicalTeamId"))
+    if not team:
+        fail(f"Tournament identity override references unknown team: {item.get('canonicalTeamId')}")
+    elif team.get("ageGroup") != registry_lookup[(key[0], key[1])].get("ageGroup") or team.get("gender") != registry_lookup[(key[0], key[1])].get("gender"):
+        fail(f"Tournament identity override crosses age/gender scope: {key}")
+
+# Verify the source registry covers every public source currently hard-coded in the tournament apps.
+registry_pairs = {(str(d.get("spreadsheetId")), str(d.get("gid"))) for _, d in all_divisions}
+for rel in ["tournaments/jo-boys/app.js", "tournaments/jo-girls/app.js", "tournaments/results-app.js"]:
+    text = (ROOT / rel).read_text(encoding="utf-8")
+    sheet_ids = set(re.findall(r"(?:SHEET_ID=|spreadsheetId:)['\"]([^'\"]+)['\"]", text))
+    gids = re.findall(r"[\"\']?gid[\"\']?\s*:\s*[\"\'](\d+)[\"\']", text)
+    if rel.endswith("app.js") and "jo-" in rel:
+        sheet_match = re.search(r"const SHEET_ID=['\"]([^'\"]+)['\"]", text)
+        if sheet_match:
+            for gid in gids:
+                if (sheet_match.group(1), gid) not in registry_pairs:
+                    fail(f"Source registry is missing {rel} tab {sheet_match.group(1)} / {gid}")
+    else:
+        for sheet_id, gid in re.findall(r"[\"\']?spreadsheetId[\"\']?\s*:\s*[\"\']([^\"\']+)[\"\']\s*,\s*[\"\']?gid[\"\']?\s*:\s*[\"\'](\d+)[\"\']", text):
+            if (sheet_id, gid) not in registry_pairs:
+                fail(f"Source registry is missing {rel} tab {sheet_id} / {gid}")
+
+if manifest.get("release") != EXPECTED_RELEASE:
+    fail(f"Normalized manifest release must be {EXPECTED_RELEASE}")
+datasets = manifest.get("datasets", [])
+if not datasets:
+    fail("Normalized tournament manifest must contain at least one banked dataset")
+if manifest.get("counts", {}).get("games", 0) < 192:
+    fail("Normalized tournament manifest should contain the 192-game JO bootstrap snapshot")
+
+manifest_keys: set[tuple[str, str]] = set()
+for item in datasets:
+    key = (item.get("eventId"), item.get("divisionId"))
+    if key in manifest_keys:
+        fail(f"Duplicate normalized manifest entry: {key}")
+    manifest_keys.add(key)
+    if key not in registry_lookup:
+        fail(f"Normalized manifest references unregistered dataset: {key}")
+    normalized_path = ROOT / str(item.get("path", ""))
+    data = load(normalized_path)
+    if not data:
+        continue
+    division = registry_lookup[key]
+    if data.get("release") != EXPECTED_RELEASE or data.get("schemaVersion") != 1:
+        fail(f"Normalized release/schema mismatch in {normalized_path.relative_to(ROOT)}")
+    if data.get("division", {}).get("id") != key[1] or data.get("event", {}).get("id") != key[0]:
+        fail(f"Normalized event/division mismatch in {normalized_path.relative_to(ROOT)}")
+    if data.get("identityRelease") != "7.40.0":
+        fail(f"Normalized data must reference identity release 7.40.0: {key}")
+    raw_path = ROOT / "data" / "tournaments" / "raw" / key[0] / f"{key[1]}.csv"
+    qa_path = ROOT / "data" / "tournaments" / "qa" / key[0] / f"{key[1]}.json"
+    if not raw_path.exists():
+        fail(f"Missing raw source snapshot for {key}")
+        continue
+    raw_text = raw_path.read_text(encoding="utf-8-sig")
+    digest = hashlib.sha256(raw_text.encode("utf-8")).hexdigest()
+    if data.get("source", {}).get("contentSha256") != digest:
+        fail(f"Raw source hash mismatch for {key}")
+    qa = load(qa_path) or {}
+    if qa.get("sourceSha256") != digest:
+        fail(f"QA source hash mismatch for {key}")
+    games = data.get("games", [])
+    if len(games) != data.get("counts", {}).get("games"):
+        fail(f"Game count mismatch for {key}")
+    if data.get("counts", {}).get("blockers") != 0:
+        fail(f"Normalized dataset has blocking QA issues: {key}")
+    game_ids: set[str] = set()
+    for game in games:
+        game_id = game.get("id")
+        if not re.fullmatch(r"game-[a-z0-9-]+", str(game_id or "")):
+            fail(f"Invalid normalized game ID in {key}: {game_id}")
+        if game_id in game_ids:
+            fail(f"Duplicate normalized game ID in {key}: {game_id}")
+        game_ids.add(game_id)
+        if not isinstance(game.get("sourceRow"), int) or game["sourceRow"] < 1:
+            fail(f"Game lacks source-row traceability in {key}: {game_id}")
+        if game.get("status") not in {"scheduled", "final"}:
+            fail(f"Invalid game status in {key}: {game_id}")
+        for side in ("white", "dark"):
+            participant = game.get("participants", {}).get(side, {})
+            kind = participant.get("kind")
+            if kind not in ALLOWED_PARTICIPANT_KINDS:
+                fail(f"Invalid participant kind in {key}/{game_id}/{side}: {kind}")
+            name = str(participant.get("displayName") or "")
+            if kind == "team" and re.match(r"^\s*#?\d+\s*[-–—:]", name):
+                fail(f"Tournament seed leaked into normalized team name in {key}/{game_id}/{side}: {name}")
+            if kind == "team" and re.fullmatch(r"[WL]\s*(?:#\s*)?\d[A-Z0-9]*(?:/[A-Z0-9]+)?", name, re.I):
+                fail(f"Bracket reference was classified as a team in {key}/{game_id}/{side}: {name}")
+            if kind == "team" and participant.get("teamId") and not participant.get("clubId"):
+                fail(f"Resolved team lacks canonical club ID in {key}/{game_id}/{side}")
+
+bootstrap = ("2026-jo-weekend-1", "14u-girls-championship")
+if bootstrap not in manifest_keys:
+    fail("7.41 must include the 14U Girls Championship bootstrap snapshot")
+else:
+    path = ROOT / "data" / "tournaments" / "normalized" / bootstrap[0] / f"{bootstrap[1]}.json"
+    data = load(path) or {}
+    counts = data.get("counts", {})
+    if counts.get("games") != 192:
+        fail(f"14U Girls bootstrap should contain 192 games, found {counts.get('games')}")
+    if counts.get("bracketReferences", 0) < 150:
+        fail("14U Girls bootstrap should preserve bracket references as structured metadata")
+
+for script in [
+    ROOT / "scripts" / "tournament_pipeline.py",
+    ROOT / "scripts" / "sync-tournament-data.py",
+    ROOT / "scripts" / "test-tournament-pipeline.py",
+]:
+    result = subprocess.run([sys.executable, "-m", "py_compile", str(script)], capture_output=True, text=True)
+    if result.returncode:
+        fail(f"Python syntax error in {script.relative_to(ROOT)}: {result.stderr.strip()}")
+
+workflow = ROOT / ".github" / "workflows" / "sync-tournament-data.yml"
+if not workflow.exists():
+    fail("Missing automated tournament snapshot workflow")
+else:
+    workflow_text = workflow.read_text(encoding="utf-8")
+    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "validate-tournament-data.py", "contents: write"]:
+        if token not in workflow_text:
+            fail(f"Tournament sync workflow is missing required token: {token}")
+
+if errors:
+    print("TOURNAMENT DATA VALIDATION FAILED")
+    for message in errors:
+        print(f" - {message}")
+    raise SystemExit(1)
+
+print("TOURNAMENT DATA VALIDATION PASSED")
+print(f" - {len(all_events)} tournament events and {len(all_divisions)} source divisions are registered")
+print(" - 23 Junior Olympics divisions are enabled for automated raw/normalized snapshots")
+print(f" - {len(datasets)} banked dataset(s) currently contain {manifest.get('counts', {}).get('games', 0)} normalized games")
+print(" - Raw source hashes, source rows, game IDs, seeds, bracket references, and canonical identities are traceable")
+print(" - Existing tournament-app source tabs are represented in the central registry")
+print(" - Blocking data defects fail release-check; unresolved identities remain explicit review items")

@@ -1,0 +1,42 @@
+CPI 7.41.0 — Normalized Tournament Data Foundation
+
+Modified files
+- VERSION.md
+- config/site-release.json
+- js/cpi-identity.js
+- release-check
+- scripts/validate-identity-registry.py
+- scripts/validate-jo-release.py
+- tournaments/jo-boys/index.html
+- tournaments/jo-girls/index.html
+
+New release and repository files
+- .gitignore
+- INSTALL_7.41.0.md
+- PATCH_MANIFEST_7.41.0.txt
+- .github/workflows/sync-tournament-data.yml
+- config/tournament-identity-overrides.json
+- docs/ROADMAP_7.41_NORMALIZED_TOURNAMENT_DATA.md
+
+New tournament data layer
+- data/tournaments/README.md
+- data/tournaments/registry.json
+- data/tournaments/schema/normalized-game.schema.json
+- data/tournaments/raw/2026-jo-weekend-1/14u-girls-championship.csv
+- data/tournaments/normalized/manifest.json
+- data/tournaments/normalized/2026-jo-weekend-1/14u-girls-championship.json
+- data/tournaments/qa/2026-jo-weekend-1/14u-girls-championship.json
+
+New pipeline and validation scripts
+- scripts/tournament_pipeline.py
+- scripts/sync-tournament-data.py
+- scripts/test-tournament-pipeline.py
+- scripts/validate-tournament-data.py
+- tests/fixtures/tournaments/jo-bracket-v1.csv
+
+Important behavior
+- Public JO pages continue polling Google Sheets every two minutes.
+- The new GitHub workflow banks all 23 JO source divisions every six hours.
+- Raw and normalized files change only when source CSV content changes.
+- Tournament seeds, team names, bracket references, and canonical IDs remain separate fields.
+- Unresolved identities are review items; placeholders and cross-scope aliases cannot silently become teams.

@@ -1,11 +1,14 @@
-# CPI 7.40.0
+# CPI 7.41.0
 
-Canonical Club and Team Identity Foundation.
+Normalized Tournament Data Foundation.
 
-- Establishes 138 canonical club identities from 143 legacy club records.
-- Establishes 506 stable season/age/gender team identities.
-- Keeps JO seeds separate from team names and resolves aliases within age/gender scope.
-- Adds canonical team and club IDs to ranking and club exports without changing legacy URLs.
-- Connects Boys and Girls JO schedule markup to the shared identity resolver.
-- Generates compatibility registries for the ranking-engine migration.
-- Adds identity validation to the one-command release gate.
+- Registers five tournament products and 48 source divisions in one authoritative source registry.
+- Enables automated raw and normalized snapshots for all 23 Junior Olympics Weekend 1 and Weekend 2 divisions.
+- Stores tournament seeds separately from clean team identities.
+- Distinguishes real teams, bracket references, resolved advancement labels, and placeholders.
+- Produces stable game IDs, source-row traceability, scores, outcomes, advancement destinations, and canonical team/club IDs.
+- Adds blocking and review-level tournament QA to `./release-check`.
+- Includes a banked 192-game 14U Girls Championship bootstrap snapshot.
+- Adds a six-hour GitHub Actions sync that commits only when source-sheet content changes.
+
+The public JO tools remain on their working live-sheet polling implementation while the normalized evidence bank is established underneath them.
