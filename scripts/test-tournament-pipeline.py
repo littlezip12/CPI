@@ -64,6 +64,22 @@ def main() -> int:
     require(slot["kind"] == "bracket_reference", "Pool/placement slots must not become teams")
     require(all(issue["code"] != "duplicate_game_id" for issue in qa["issues"]), "Fixture should not create duplicate IDs")
 
+    pre_fixture = (ROOT / "tests" / "fixtures" / "tournaments" / "jo-pre-tournament-scores.csv").read_text(encoding="utf-8")
+    pre_normalized, _ = normalize_csv(
+        pre_fixture,
+        event=event,
+        division=division,
+        resolver=resolver,
+        fetched_at="2026-07-14T00:00:00Z",
+        source_mode="test_fixture",
+    )
+    require(pre_normalized["counts"]["games"] == 3, "Pre-tournament fixture should normalize three games")
+    require(pre_normalized["games"][0]["scoreState"] == "zero_zero_placeholder", "0-0 should be recorded as a placeholder score state")
+    require(pre_normalized["games"][0]["status"] == "scheduled", "0-0 placeholders must not become final games")
+    require(pre_normalized["games"][1]["scoreState"] == "partial", "One-sided score entries should remain partial")
+    require(pre_normalized["games"][1]["status"] == "scheduled", "Partial scores must not become final games")
+    require(pre_normalized["games"][2]["status"] == "final", "A complete non-placeholder score should become final")
+
     print("TOURNAMENT PIPELINE TESTS PASSED")
     print(" - JO seeds are metadata, not team-name text")
     print(" - Pure and resolved winner/loser references are distinguished")
@@ -71,6 +87,7 @@ def main() -> int:
     print(" - Canonical team and club IDs are attached when identities resolve")
     print(" - Tournament-only teams receive stable non-ranking participant IDs")
     print(" - Final outcomes and advancement destinations normalize consistently")
+    print(" - Blank 0-0 and partial score cells remain scheduled until a real result exists")
     return 0
 
 

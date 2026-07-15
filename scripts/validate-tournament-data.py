@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
-EXPECTED_RELEASE = "7.42.0"
+EXPECTED_RELEASE = "7.43.0"
 ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
 ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
 errors: list[str] = []
@@ -182,6 +182,13 @@ for item in datasets:
             fail(f"Game lacks source-row traceability in {key}: {game_id}")
         if game.get("status") not in {"scheduled", "final"}:
             fail(f"Invalid game status in {key}: {game_id}")
+        score_state = game.get("scoreState")
+        if score_state not in {"empty", "partial", "zero_zero_placeholder", "complete"}:
+            fail(f"Invalid score state in {key}: {game_id} -> {score_state}")
+        if score_state == "zero_zero_placeholder" and game.get("status") != "scheduled":
+            fail(f"0-0 placeholder was treated as final in {key}: {game_id}")
+        if game.get("status") == "final" and score_state != "complete":
+            fail(f"Final game lacks complete score state in {key}: {game_id}")
         for side in ("white", "dark"):
             participant = game.get("participants", {}).get(side, {})
             kind = participant.get("kind")
@@ -199,9 +206,17 @@ for item in datasets:
             if kind == "team" and participant.get("teamId") and not participant.get("clubId"):
                 fail(f"Resolved team lacks canonical club ID in {key}/{game_id}/{side}")
 
+    dated_games = [g for g in games if g.get("dateIso")]
+    first_date = min((g.get("dateIso") for g in dated_games), default=None)
+    fetched_at = data.get("source", {}).get("fetchedAt")
+    if first_date and fetched_at:
+        fetched_date = str(fetched_at)[:10]
+        if fetched_date < first_date and any(g.get("status") == "final" for g in games):
+            fail(f"Dataset contains final games before its scheduled first date: {key}")
+
 bootstrap = ("2026-jo-weekend-1", "14u-girls-championship")
 if bootstrap not in manifest_keys:
-    fail("7.42 must retain the 14U Girls Championship bootstrap snapshot")
+    fail("7.43 must retain the 14U Girls Championship bootstrap snapshot")
 else:
     path = ROOT / "data" / "tournaments" / "normalized" / bootstrap[0] / f"{bootstrap[1]}.json"
     data = load(path) or {}
@@ -226,7 +241,7 @@ if not workflow.exists():
     fail("Missing automated tournament snapshot workflow")
 else:
     workflow_text = workflow.read_text(encoding="utf-8")
-    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "build-tournament-evidence.py", "validate-tournament-data.py", "contents: write", "data/tournaments/evidence"]:
+    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "build-tournament-evidence.py", "build-tournament-health.py", "validate-tournament-data.py", "validate-tournament-health.py", "contents: write", "data/tournaments/evidence", "data/tournaments/health"]:
         if token not in workflow_text:
             fail(f"Tournament sync workflow is missing required token: {token}")
 
@@ -240,7 +255,7 @@ print("TOURNAMENT DATA VALIDATION PASSED")
 print(f" - {len(all_events)} tournament events and {len(all_divisions)} source divisions are registered")
 print(" - 23 Junior Olympics divisions are enabled for automated raw/normalized snapshots")
 print(f" - {len(datasets)} banked dataset(s) currently contain {manifest.get('counts', {}).get('games', 0)} normalized games")
-print(" - Raw source hashes, source rows, game IDs, seeds, bracket references, and canonical identities are traceable")
+print(" - Raw source hashes, source rows, game IDs, score states, seeds, bracket references, and canonical identities are traceable")
 print(" - Existing tournament-app source tabs are represented in the central registry")
 print(" - Every real team has a stable participant ID; tournament-only identities remain outside published rankings")
 print(" - Blocking data defects fail release-check; canonical identity review remains explicit")

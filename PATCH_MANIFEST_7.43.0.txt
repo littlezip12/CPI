@@ -1,0 +1,44 @@
+CPI 7.43.0 — Full JO Schedule Banking & Source Reliability
+
+Primary outcomes
+- Monitors all 23 registered Junior Olympics divisions.
+- Adds tournament-source-health.html with source freshness and banking status.
+- Separates scheduled games from completed results.
+- Treats blank 0-0 and partial score entries as scheduled.
+- Shows source, last successful update, scheduled count, and completed count in both JO viewers.
+- Writes sync-latest.json after every automated source attempt.
+- Preserves last-known-good schedules when live sources fail.
+
+New files
+- tournament-source-health.html
+- css/tournament-source-health.css
+- js/tournament-source-health.js
+- data/tournaments/health/index.json
+- data/tournaments/health/runtime.js
+- scripts/build-tournament-health.py
+- scripts/validate-tournament-health.py
+- scripts/test-tournament-source-health-ui.js
+- tests/fixtures/tournaments/jo-pre-tournament-scores.csv
+- docs/ROADMAP_7.43_JO_SOURCE_RELIABILITY.md
+- INSTALL_7.43.0.md
+- PATCH_MANIFEST_7.43.0.txt
+
+Key modified systems
+- Shared tournament normalizer and normalized schema
+- JO Boys and Girls public applications
+- Tournament sync workflow
+- Tournament evidence generation and validation
+- Release-check and source registries
+- Tournament hub, evidence page, team profile asset versions, and QA links
+
+Checked-in baseline
+- 23 JO divisions registered for automated sync
+- 1 verified banked division
+- 192 scheduled games
+- 0 completed games
+- 0 blocking data defects
+- 39 canonical CPI teams with schedule evidence
+- 9 tournament-only identities
+
+Deployment
+Use INSTALL_7.43.0.md and Terminal/ditto so the hidden .github workflow is merged.

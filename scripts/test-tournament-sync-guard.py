@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression tests for the 7.42.1 tournament sync safety guard."""
+"""Regression tests for the 7.43 tournament sync safety guard."""
 from __future__ import annotations
 
 import importlib.util

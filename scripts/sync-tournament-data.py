@@ -55,7 +55,7 @@ def source_urls(division: dict) -> list[str]:
 def fetch_url_text(url: str, timeout: int = 25) -> str:
     """Fetch one CSV candidate and reject transport-level false positives."""
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.42.1; +https://littlezip12.github.io/CPI/)",
+        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.43.0; +https://littlezip12.github.io/CPI/)",
         "Accept": "text/csv,text/plain,*/*",
         "Cache-Control": "no-cache",
     }
@@ -126,7 +126,7 @@ def sync_one(
     normalized_existing = load_json(normalized_path) if normalized_path.exists() else {}
     qa_existing = load_json(qa_path) if qa_path.exists() else {}
     previous_counts = normalized_existing.get("counts", {})
-    current_release = normalized_existing.get("release") == "7.42.0" and qa_existing.get("release") == "7.42.0"
+    current_release = normalized_existing.get("release") == "7.43.0" and qa_existing.get("release") == "7.43.0"
 
     text: str | None = None
     normalized: dict | None = None
@@ -268,6 +268,8 @@ def build_manifest(registry: dict) -> dict:
             "games": sum(x.get("counts", {}).get("games", 0) for x in datasets),
             "finalGames": sum(x.get("counts", {}).get("finalGames", 0) for x in datasets),
             "scheduledGames": sum(x.get("counts", {}).get("scheduledGames", 0) for x in datasets),
+            "zeroZeroPlaceholders": sum(x.get("counts", {}).get("zeroZeroPlaceholders", 0) for x in datasets),
+            "partialScores": sum(x.get("counts", {}).get("partialScores", 0) for x in datasets),
             "blockers": sum(x.get("counts", {}).get("blockers", 0) for x in datasets),
             "reviewItems": sum(x.get("counts", {}).get("reviewItems", 0) for x in datasets),
         },
@@ -338,14 +340,27 @@ def main() -> int:
     if evidence_result.returncode:
         print("Tournament evidence build failed", file=sys.stderr)
         return evidence_result.returncode
-    if failures or warnings:
-        report = {
-            "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
-            "completed": completed,
-            "warnings": warnings,
-            "failures": failures,
-        }
-        write_json(QA_ROOT / "sync-latest.json", report)
+    report = {
+        "schemaVersion": 1,
+        "release": registry.get("release"),
+        "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "selection": {
+            "syncEnabledOnly": bool(args.sync_enabled),
+            "eventId": args.event,
+            "division": list(args.division) if args.division else None,
+            "allowPartial": bool(args.allow_partial),
+        },
+        "counts": {
+            "attempted": len(selected),
+            "completed": len(completed),
+            "warnings": len(warnings),
+            "failures": len(failures),
+        },
+        "completed": completed,
+        "warnings": warnings,
+        "failures": failures,
+    }
+    write_json(QA_ROOT / "sync-latest.json", report)
     if warnings:
         print(f"Preserved last known-good data for {len(warnings)} source(s) with invalid live responses", file=sys.stderr)
     if failures:

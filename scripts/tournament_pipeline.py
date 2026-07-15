@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared CPI tournament ingestion and normalization helpers (release 7.42.0)."""
+"""Shared CPI tournament ingestion and normalization helpers (release 7.43.0)."""
 from __future__ import annotations
 
 import csv
@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = "7.42.0"
+RELEASE = "7.43.0"
 SCHEMA_VERSION = 1
 TIMEZONE = "America/Los_Angeles"
 
@@ -327,7 +327,19 @@ def normalize_csv(
         white = parse_participant(raw_white, scope, resolver)
         dark = parse_participant(raw_dark, scope, resolver)
         white_score, dark_score = parse_score(get("white_score")), parse_score(get("dark_score"))
-        status = "final" if white_score is not None and dark_score is not None else "scheduled"
+        complete_scores = white_score is not None and dark_score is not None
+        zero_zero_placeholder = complete_scores and white_score == 0 and dark_score == 0
+        if white_score is None and dark_score is None:
+            score_state = "empty"
+        elif white_score is None or dark_score is None:
+            score_state = "partial"
+        elif zero_zero_placeholder:
+            score_state = "zero_zero_placeholder"
+        else:
+            score_state = "complete"
+        status = "final" if score_state == "complete" else "scheduled"
+        if score_state == "partial":
+            issues.append({"severity": "review", "code": "partial_score", "sourceRow": row_number, "whiteScore": get("white_score"), "darkScore": get("dark_score")})
         if status == "final" and (white["kind"] != "team" or dark["kind"] != "team"):
             issues.append({"severity": "blocker", "code": "final_game_without_two_teams", "sourceRow": row_number, "white": raw_white, "dark": raw_dark})
         outcome: dict[str, Any] = {"kind": "pending", "winnerTeamId": None, "loserTeamId": None}
@@ -380,6 +392,7 @@ def normalize_csv(
             "stage": get("stage") or None,
             "venue": get("venue") or None,
             "status": status,
+            "scoreState": score_state,
             "participants": {"white": white, "dark": dark},
             "scores": {"white": white_score, "dark": dark_score, "whiteRaw": get("white_score") or None, "darkRaw": get("dark_score") or None},
             "outcome": outcome,
@@ -414,6 +427,8 @@ def normalize_csv(
             "games": len(games),
             "finalGames": sum(g["status"] == "final" for g in games),
             "scheduledGames": sum(g["status"] == "scheduled" for g in games),
+            "zeroZeroPlaceholders": sum(g.get("scoreState") == "zero_zero_placeholder" for g in games),
+            "partialScores": sum(g.get("scoreState") == "partial" for g in games),
             "teamParticipants": len(team_participants),
             "resolvedTeamParticipants": len(resolved),
             "unresolvedTeamParticipants": len(team_participants) - len(resolved),

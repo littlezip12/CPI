@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_RELEASE = "7.42.0"
+EXPECTED_RELEASE = "7.43.0"
 errors: list[str] = []
 
 
@@ -32,7 +32,7 @@ def load(rel: str):
 participants = load("data/tournaments/identity/participants.json")
 evidence = load("data/tournaments/evidence/index.json")
 review = load("data/tournaments/evidence/ranking-review.json")
-summary = load("qa/tournament-evidence-summary-7.42.0.json")
+summary = load("qa/tournament-evidence-summary-7.43.0.json")
 identity_index = load("data/identity/index.json")
 rankings = load("rankings.json")
 
@@ -128,7 +128,7 @@ for path, prefix in ((runtime, "window.CPI_TOURNAMENT_EVIDENCE = "), (review_run
         fail(f"Invalid browser evidence runtime prefix: {path.relative_to(ROOT)}")
 
 team_html = (ROOT / "team.html").read_text(encoding="utf-8")
-if "data/tournaments/evidence/runtime.js?v=7.42.0" not in team_html:
+if "data/tournaments/evidence/runtime.js?v=7.43.0" not in team_html:
     fail("Team profile does not load normalized tournament evidence runtime")
 if team_html.find("evidence/runtime.js") > team_html.find("team-profile-v7-42.js"):
     fail("Team profile evidence runtime must load before the profile renderer")
