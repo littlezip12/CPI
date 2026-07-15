@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/styles.css?v=7.38.1">
-  <link rel="stylesheet" href="../../css/homepage-v8.css?v=7.38.1">
-  <link rel="stylesheet" href="../jo-schedule.css?v=7.38.1">
+  <link rel="stylesheet" href="../../css/styles.css?v=7.38.2">
+  <link rel="stylesheet" href="../../css/homepage-v8.css?v=7.38.2">
+  <link rel="stylesheet" href="../jo-schedule.css?v=7.38.2">
 </head>
 <body class="jo-page jo-girls-page">
   <header class="cpi-v8-header">
@@ -45,6 +45,11 @@
       <div class="jo-control"><label for="division">Division</label><select id="division"></select></div>
       <div class="jo-control jo-control-team"><label for="team">Team journey</label><select id="team"><option value="">Choose your team</option></select></div>
     </section>
+
+    <div class="jo-seed-legend" role="note">
+      <span class="jo-seed-badge">#18</span>
+      <span><strong>JO division seed</strong> — displayed separately and never stored as part of the team name.</span>
+    </div>
 
     <section id="emptyState" class="jo-empty-state glass">
       <div><p class="jo-eyebrow">Start here</p><h2>Choose a team to map its tournament path.</h2><p>The full division schedule remains available below. Once a team is selected, CPI shows its first game, next known opponent, win/loss destinations, possible opponents, and relevant bracket games.</p></div>
@@ -89,6 +94,6 @@
       }
     },5000);
   </script>
-  <script src="app.js?v=7.38.1" onerror="var s=document.getElementById('statusText'); if(s) s.textContent='Schedule application file could not be loaded. Confirm app.js was committed and hard refresh.';"></script>
+  <script src="app.js?v=7.38.2" onerror="var s=document.getElementById('statusText'); if(s) s.textContent='Schedule application file could not be loaded. Confirm app.js was committed and hard refresh.';"></script>
 </body>
 </html>

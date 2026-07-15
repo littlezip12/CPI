@@ -118,6 +118,12 @@ else:
 for rel in ('tournaments/jo-boys/app.js','tournaments/jo-girls/app.js'):
     path = ROOT / rel
     if path.exists():
+        app_text = path.read_text(encoding='utf-8')
+        for token in ('seedLookup','seedForTeam','teamOptionLabel','jo-seed-badge','JO seed'):
+            if token not in app_text:
+                fail(f'{rel}: missing JO seed metadata/display support: {token}')
+        if "const APP_VERSION='7.38.2';" not in app_text:
+            fail(f'{rel}: expected APP_VERSION 7.38.2')
         result = subprocess.run(['node','--check',str(path)],capture_output=True,text=True)
         if result.returncode:
             fail(f'{rel}: JavaScript syntax error: {result.stderr.strip()}')
@@ -138,6 +144,7 @@ print('JO RELEASE VALIDATION PASSED')
 print(f' - {len(EXPECTED_BOYS)} Boys divisions registered')
 print(' - Boys and Girls entry pages contain all required application mounts')
 print(' - Girls app and 11-source registry are included')
+print(' - JO division seeds are metadata and display separately from clean team names')
 print(' - Both apps poll live Google Sheets every two minutes and refresh when the tab becomes active')
 print(' - Local JO page assets resolve')
 print(' - JavaScript syntax checks passed')
