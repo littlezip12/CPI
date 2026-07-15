@@ -1,0 +1,61 @@
+CPI 7.42.0 — Full JO Data Banking & Tournament Evidence
+========================================================
+
+Release purpose
+---------------
+- Give every real tournament team a stable participant identity.
+- Preserve tournament-only and out-of-state teams without adding them to rankings automatically.
+- Build team-centric tournament evidence and a manual ranking-review queue.
+- Surface banked JO schedules/results on CPI team profiles.
+- Rebuild evidence after every automated JO source sync.
+
+Current checked-in bootstrap
+----------------------------
+- 1 banked JO dataset
+- 192 normalized games
+- 48 stable participant identities
+- 39 canonical CPI team matches
+- 9 tournament-only identities
+- 0 blocking data errors
+
+The GitHub workflow attempts all 23 enabled JO divisions. Run it once manually after deployment to populate every currently reachable source tab.
+
+Files added or changed
+----------------------
+.github/workflows/sync-tournament-data.yml
+INSTALL_7.42.0.md
+PATCH_MANIFEST_7.42.0.txt
+VERSION.md
+config/site-release.json
+config/tournament-identity-overrides.json
+css/team-profile-v7-42.css
+css/tournament-evidence-v7-42.css
+data/tournaments/README.md
+data/tournaments/evidence/index.json
+data/tournaments/evidence/ranking-review.json
+data/tournaments/evidence/review-runtime.js
+data/tournaments/evidence/runtime.js
+data/tournaments/identity/participants.json
+data/tournaments/normalized/2026-jo-weekend-1/14u-girls-championship.json
+data/tournaments/normalized/manifest.json
+data/tournaments/qa/2026-jo-weekend-1/14u-girls-championship.json
+data/tournaments/registry.json
+data/tournaments/schema/normalized-game.schema.json
+docs/ROADMAP_7.42_FULL_JO_BANKING_AND_EVIDENCE.md
+js/team-profile-v7-42.js
+js/tournament-evidence-v7-42.js
+qa/release-audit-latest.json
+qa/tournament-evidence-summary-7.42.0.json
+qa/tournament-identity-review-7.42.0.csv
+rankings-qa.html
+release-check
+scripts/build-tournament-evidence.py
+scripts/sync-tournament-data.py
+scripts/test-tournament-evidence-ui.js
+scripts/test-tournament-pipeline.py
+scripts/tournament_pipeline.py
+scripts/validate-tournament-data.py
+scripts/validate-tournament-evidence.py
+site-qa.html
+team.html
+tournament-evidence.html

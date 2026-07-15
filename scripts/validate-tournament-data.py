@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
-EXPECTED_RELEASE = "7.41.0"
+EXPECTED_RELEASE = "7.42.0"
 ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
 ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
 errors: list[str] = []
@@ -192,12 +192,16 @@ for item in datasets:
                 fail(f"Tournament seed leaked into normalized team name in {key}/{game_id}/{side}: {name}")
             if kind == "team" and re.fullmatch(r"[WL]\s*(?:#\s*)?\d[A-Z0-9]*(?:/[A-Z0-9]+)?", name, re.I):
                 fail(f"Bracket reference was classified as a team in {key}/{game_id}/{side}: {name}")
+            if kind == "team" and not participant.get("participantId"):
+                fail(f"Team participant lacks a stable participant ID in {key}/{game_id}/{side}")
+            if kind == "team" and participant.get("teamId") and participant.get("participantId") != participant.get("teamId"):
+                fail(f"Canonical team participant ID mismatch in {key}/{game_id}/{side}")
             if kind == "team" and participant.get("teamId") and not participant.get("clubId"):
                 fail(f"Resolved team lacks canonical club ID in {key}/{game_id}/{side}")
 
 bootstrap = ("2026-jo-weekend-1", "14u-girls-championship")
 if bootstrap not in manifest_keys:
-    fail("7.41 must include the 14U Girls Championship bootstrap snapshot")
+    fail("7.42 must retain the 14U Girls Championship bootstrap snapshot")
 else:
     path = ROOT / "data" / "tournaments" / "normalized" / bootstrap[0] / f"{bootstrap[1]}.json"
     data = load(path) or {}
@@ -211,6 +215,7 @@ for script in [
     ROOT / "scripts" / "tournament_pipeline.py",
     ROOT / "scripts" / "sync-tournament-data.py",
     ROOT / "scripts" / "test-tournament-pipeline.py",
+    ROOT / "scripts" / "build-tournament-evidence.py",
 ]:
     result = subprocess.run([sys.executable, "-m", "py_compile", str(script)], capture_output=True, text=True)
     if result.returncode:
@@ -221,7 +226,7 @@ if not workflow.exists():
     fail("Missing automated tournament snapshot workflow")
 else:
     workflow_text = workflow.read_text(encoding="utf-8")
-    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "validate-tournament-data.py", "contents: write"]:
+    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "build-tournament-evidence.py", "validate-tournament-data.py", "contents: write", "data/tournaments/evidence"]:
         if token not in workflow_text:
             fail(f"Tournament sync workflow is missing required token: {token}")
 
@@ -237,4 +242,5 @@ print(" - 23 Junior Olympics divisions are enabled for automated raw/normalized 
 print(f" - {len(datasets)} banked dataset(s) currently contain {manifest.get('counts', {}).get('games', 0)} normalized games")
 print(" - Raw source hashes, source rows, game IDs, seeds, bracket references, and canonical identities are traceable")
 print(" - Existing tournament-app source tabs are represented in the central registry")
-print(" - Blocking data defects fail release-check; unresolved identities remain explicit review items")
+print(" - Every real team has a stable participant ID; tournament-only identities remain outside published rankings")
+print(" - Blocking data defects fail release-check; canonical identity review remains explicit")

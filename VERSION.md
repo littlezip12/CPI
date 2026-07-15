@@ -1,14 +1,12 @@
-# CPI 7.41.0
+# CPI 7.42.0
 
-Normalized Tournament Data Foundation.
+Full JO Data Banking & Tournament Evidence Integration.
 
-- Registers five tournament products and 48 source divisions in one authoritative source registry.
-- Enables automated raw and normalized snapshots for all 23 Junior Olympics Weekend 1 and Weekend 2 divisions.
-- Stores tournament seeds separately from clean team identities.
-- Distinguishes real teams, bracket references, resolved advancement labels, and placeholders.
-- Produces stable game IDs, source-row traceability, scores, outcomes, advancement destinations, and canonical team/club IDs.
-- Adds blocking and review-level tournament QA to `./release-check`.
-- Includes a banked 192-game 14U Girls Championship bootstrap snapshot.
-- Adds a six-hour GitHub Actions sync that commits only when source-sheet content changes.
+- Reprocesses normalized games with stable participant IDs for every real team, including tournament-only and out-of-state teams.
+- Generates a tournament participant registry without automatically adding non-ranked teams to CPI rankings.
+- Builds profile-ready tournament evidence, recent game summaries, event appearances, JO seeds, and source links.
+- Adds a manual ranking-review queue; no published rank changes occur automatically.
+- Updates the JO snapshot workflow to rebuild evidence after each source refresh and bank every reachable Weekend 1 and Weekend 2 division.
+- Connects banked tournament evidence to CPI team profiles and adds a tournament evidence QA dashboard.
 
-The public JO tools remain on their working live-sheet polling implementation while the normalized evidence bank is established underneath them.
+The public JO viewers continue their direct two-minute Google Sheet refresh. The evidence bank is the durable, auditable history used for profiles and future ranking review.

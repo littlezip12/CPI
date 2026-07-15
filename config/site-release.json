@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "version": "7.41.0",
-  "name": "Normalized Tournament Data Foundation",
+  "version": "7.42.0",
+  "name": "Full JO Data Banking & Tournament Evidence",
   "date": "2026-07-14",
   "rankingDataRelease": "7.30 v2",
   "joApplicationRelease": "7.38.2",
   "deploymentMode": "migration",
-  "notes": "Adds a central tournament source registry, traceable raw snapshots, standardized game records, tournament QA, and automated JO data banking without changing the working public schedule interface.",
+  "notes": "Banks enabled JO sources, creates stable tournament-only participant identities, connects normalized evidence to team profiles, and generates a manual ranking-review queue without changing published rankings.",
   "identityRelease": "7.40.0",
-  "tournamentDataRelease": "7.41.0"
+  "tournamentDataRelease": "7.42.0",
+  "tournamentEvidenceRelease": "7.42.0"
 }

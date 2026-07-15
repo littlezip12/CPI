@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression tests for the CPI 7.41 tournament normalizer."""
+"""Regression tests for the CPI 7.42 tournament normalizer."""
 from __future__ import annotations
 
 import sys
@@ -37,6 +37,7 @@ def main() -> int:
     require(first["participants"]["white"]["displayName"] == "Lamorinda A", "Seeded Lamorinda should resolve to canonical team")
     require(first["participants"]["white"]["seed"] == 18, "JO seed must be separate metadata")
     require(first["participants"]["white"]["teamId"], "Lamorinda should have a canonical team ID")
+    require(first["participants"]["white"]["participantId"] == first["participants"]["white"]["teamId"], "Canonical teams should use the canonical team ID as participant ID")
     require(not first["participants"]["white"]["displayName"].startswith("18"), "Seed must not remain in canonical name")
     require(first["status"] == "final", "Scored game should be final")
     require(first["outcome"]["winnerName"] == "Lamorinda A", "Winner should be determined")
@@ -55,6 +56,8 @@ def main() -> int:
     raw = parse_participant("#18 - Lamorinda", {"season": "2026", "ageGroup": "14U", "gender": "Boys"}, resolver)
     require(raw["seed"] == 18 and raw["displayName"] == "Lamorinda", "Hash-prefixed seeds should cleanly separate the source name")
     require(raw["clubId"] and not raw["teamId"], "Ambiguous bare club names should remain club-resolved review items rather than guessing a team")
+    require(raw["participantId"].startswith("tournament-team-"), "Unranked tournament teams must receive a stable tournament participant ID")
+    require(not raw["rankingEligible"], "Tournament-only participants must not enter rankings automatically")
     cross_scope = parse_participant("Norco", {"season": "2026", "ageGroup": "14U", "gender": "Girls"}, resolver)
     require(not cross_scope["teamId"], "A globally unique alias from another age group must not resolve across scope")
     slot = parse_participant("pt_M1", {"season": "2026", "ageGroup": "14U", "gender": "Girls"}, resolver)
@@ -66,6 +69,7 @@ def main() -> int:
     print(" - Pure and resolved winner/loser references are distinguished")
     print(" - Bare W/L placeholders cannot become teams")
     print(" - Canonical team and club IDs are attached when identities resolve")
+    print(" - Tournament-only teams receive stable non-ranking participant IDs")
     print(" - Final outcomes and advancement destinations normalize consistently")
     return 0
 

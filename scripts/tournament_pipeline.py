@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared CPI tournament ingestion and normalization helpers (release 7.41.0)."""
+"""Shared CPI tournament ingestion and normalization helpers (release 7.42.0)."""
 from __future__ import annotations
 
 import csv
@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = "7.41.0"
+RELEASE = "7.42.0"
 SCHEMA_VERSION = 1
 TIMEZONE = "America/Los_Angeles"
 
@@ -189,8 +189,10 @@ def parse_participant(raw: Any, scope: dict[str, str], resolver: IdentityResolve
         "seed": None,
         "sourceReference": None,
         "displayName": None,
+        "participantId": None,
         "teamId": None,
         "clubId": None,
+        "rankingEligible": False,
         "identityStatus": "not_applicable" if not original else "unresolved",
         "identityMatchType": None,
     }
@@ -232,15 +234,18 @@ def parse_participant(raw: Any, scope: dict[str, str], resolver: IdentityResolve
         division_id=scope.get("divisionId", ""),
     )
     club = resolver.resolve_club(team_text)
+    participant_id = identity.get("id") if identity else f"tournament-team-{slugify(scope['season'])}-{slugify(scope['ageGroup'])}-{slugify(scope['gender'])}-{slugify(team_text)}"
     result.update({
         "kind": "team",
         "seed": seed,
         "sourceReference": source_reference,
         "displayName": identity.get("name") if identity else team_text,
+        "participantId": participant_id,
         "teamId": identity.get("id") if identity else None,
         "clubId": identity.get("clubId") if identity else (club.get("id") if club else None),
+        "rankingEligible": bool(identity),
         "identityStatus": "resolved_team" if identity else ("resolved_club_only" if club else "unresolved"),
-        "identityMatchType": identity.get("_matchType") if identity else ("club_alias" if club else None),
+        "identityMatchType": identity.get("_matchType") if identity else ("club_alias" if club else "tournament_only"),
     })
     return result
 
@@ -335,8 +340,10 @@ def normalize_csv(
                 loser = dark if white_won else white
                 outcome = {
                     "kind": "decided",
+                    "winnerParticipantId": winner.get("participantId"),
                     "winnerTeamId": winner.get("teamId"),
                     "winnerName": winner.get("displayName"),
+                    "loserParticipantId": loser.get("participantId"),
                     "loserTeamId": loser.get("teamId"),
                     "loserName": loser.get("displayName"),
                 }

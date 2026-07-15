@@ -1,0 +1,380 @@
+/* Release 7.32: team profile polish and evidence clarity */
+.team-profile-page {
+  --profile-card-radius: 24px;
+}
+
+.team-profile-page .team-profile-shell {
+  padding-top: 22px;
+}
+
+.team-profile-page .team-hero {
+  min-height: 0;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 330px);
+  padding: clamp(28px, 4.4vw, 54px);
+  border-radius: 32px;
+}
+
+.team-profile-page .team-hero h1 {
+  max-width: 920px;
+  font-size: clamp(2.85rem, 5.3vw, 5.85rem);
+  letter-spacing: -.075em;
+}
+
+.team-profile-page .team-summary {
+  max-width: 760px;
+  font-size: clamp(1rem, 1.3vw, 1.14rem);
+}
+
+.team-profile-page .team-hero-card {
+  min-height: 310px;
+  justify-items: center;
+  text-align: center;
+}
+
+.team-profile-page .team-hero-card strong {
+  margin-top: 14px;
+  font-size: clamp(3.8rem, 7.4vw, 6.5rem);
+  letter-spacing: -.07em;
+}
+
+.team-profile-page .team-logo,
+.team-profile-page .team-logo.lg,
+.team-profile-page .team-logo.xl,
+.team-profile-page .same-group-card .team-logo,
+.team-profile-page .brand-card .team-logo,
+.team-profile-page .team-club-rail-head .team-logo.lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible;
+}
+
+.team-profile-page .team-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(2, 6, 23, .20));
+}
+
+.team-profile-page .team-logo.xl {
+  width: clamp(150px, 16vw, 210px);
+  height: clamp(150px, 16vw, 210px);
+}
+
+.team-profile-page .team-logo.lg {
+  width: 76px;
+  height: 76px;
+}
+
+.team-profile-page .team-logo:not(.lg):not(.xl) {
+  width: 52px;
+  height: 52px;
+}
+
+.team-profile-page .team-logo-fallback {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px !important;
+  background: color-mix(in srgb, var(--team-primary) 88%, #0f172a) !important;
+  color: #fff;
+  font-weight: 900;
+}
+
+.team-profile-page .team-logo.xl.team-logo-fallback {
+  width: clamp(150px, 16vw, 210px);
+  height: clamp(150px, 16vw, 210px);
+  border-radius: 34px !important;
+  font-size: 2.1rem;
+}
+
+.team-profile-page .team-logo.lg.team-logo-fallback {
+  width: 76px;
+  height: 76px;
+  border-radius: 22px !important;
+}
+
+.team-profile-page .profile-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+}
+
+.team-profile-page .profile-tabs a {
+  border-radius: 14px;
+}
+
+.team-profile-page .team-snapshot article {
+  min-height: 136px;
+  padding: 22px;
+}
+
+.team-profile-page .team-snapshot .snapshot-text {
+  max-width: 100%;
+  font-size: clamp(1.18rem, 2vw, 1.72rem);
+  line-height: 1.04;
+  letter-spacing: -.045em;
+}
+
+.team-profile-page .team-content-grid {
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+}
+
+.team-profile-page .team-panel,
+.team-profile-page .team-future-panel {
+  border-radius: var(--profile-card-radius);
+}
+
+.team-profile-page .intelligence-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.team-profile-page .intelligence-grid div {
+  min-height: 150px;
+  padding: 20px;
+}
+
+.team-profile-page .intelligence-grid strong {
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.team-profile-page .brand-card {
+  align-items: center;
+  gap: 18px;
+}
+
+.team-profile-page .brand-card div {
+  display: grid;
+  gap: 6px;
+}
+
+.team-profile-page .brand-card a {
+  color: color-mix(in srgb, var(--team-primary) 78%, #0f172a);
+  font-weight: 800;
+}
+
+.team-profile-page .same-group-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.team-profile-page .same-group-card {
+  min-height: 80px;
+}
+
+.team-profile-page .peer-list {
+  display: grid;
+  gap: 10px;
+}
+
+.team-profile-page .peer-row {
+  min-height: 54px;
+}
+
+.profile-notes-panel {
+  background:
+    radial-gradient(circle at 92% 4%, var(--team-secondary-soft), transparent 18rem),
+    linear-gradient(180deg, #fff, rgba(248, 251, 255, .92));
+}
+
+.profile-note-list {
+  display: grid;
+  gap: 12px;
+  margin: 18px 0 20px;
+  padding-left: 20px;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.profile-note-list li::marker {
+  color: var(--team-primary);
+}
+
+.profile-note-link {
+  display: inline-flex;
+  width: fit-content;
+}
+
+@media (max-width: 1180px) {
+  .team-profile-page .team-content-grid,
+  .team-profile-page .team-content-grid.lower {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .team-profile-page .team-hero {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .team-profile-page .team-hero-card {
+    min-height: 230px;
+  }
+
+  .team-profile-page .team-logo.xl {
+    width: 132px;
+    height: 132px;
+  }
+
+  .team-profile-page .intelligence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-profile-page .brand-card {
+    grid-template-columns: 74px minmax(0, 1fr);
+  }
+
+  .team-profile-page .team-actions {
+    align-items: stretch;
+  }
+
+  .team-profile-page .team-actions .team-btn {
+    justify-content: center;
+  }
+}
+
+/* Release 7.42: normalized tournament evidence */
+.tournament-evidence-panel {
+  display: grid;
+  gap: 20px;
+  background:
+    radial-gradient(circle at 100% 0, var(--team-secondary-soft), transparent 24rem),
+    linear-gradient(180deg, #fff, #f8fbff);
+}
+
+.evidence-policy-note {
+  margin: -6px 0 0;
+  max-width: 900px;
+  color: #526174;
+  line-height: 1.55;
+}
+
+.tournament-appearance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.tournament-appearance-card {
+  display: grid;
+  gap: 14px;
+  min-height: 170px;
+  padding: 20px;
+  border: 1px solid rgba(15, 23, 42, .09);
+  border-radius: 20px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, .06);
+}
+
+.tournament-appearance-card > div:first-child,
+.appearance-meta {
+  display: grid;
+  gap: 5px;
+}
+
+.tournament-appearance-card span,
+.tournament-appearance-card em,
+.tournament-game-row span,
+.tournament-game-row em {
+  color: #64748b;
+  font-size: .82rem;
+  font-style: normal;
+}
+
+.tournament-appearance-card strong {
+  font-size: 1.1rem;
+  line-height: 1.18;
+}
+
+.appearance-meta b {
+  color: var(--team-primary);
+  font-size: .9rem;
+}
+
+.appearance-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: auto;
+}
+
+.appearance-links a {
+  color: color-mix(in srgb, var(--team-primary) 82%, #0f172a);
+  font-size: .82rem;
+  font-weight: 850;
+}
+
+.tournament-game-list {
+  display: grid;
+  gap: 8px;
+}
+
+.tournament-game-row {
+  display: grid;
+  grid-template-columns: minmax(100px, .7fr) minmax(240px, 2fr) minmax(120px, .8fr);
+  align-items: center;
+  gap: 16px;
+  padding: 15px 17px;
+  border: 1px solid rgba(15, 23, 42, .08);
+  border-radius: 16px;
+  background: rgba(255,255,255,.9);
+}
+
+.tournament-game-row.is-final {
+  border-left: 4px solid var(--team-primary);
+}
+
+.game-when,
+.game-opponent,
+.game-result {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.game-opponent strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.game-result {
+  justify-items: end;
+  text-align: right;
+}
+
+.game-result strong {
+  color: var(--team-primary);
+}
+
+.tournament-evidence-panel.is-empty {
+  min-height: 180px;
+}
+
+@media (max-width: 760px) {
+  .tournament-game-row {
+    grid-template-columns: 1fr auto;
+    gap: 10px 14px;
+  }
+
+  .game-opponent {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .game-opponent strong {
+    white-space: normal;
+  }
+
+  .game-result {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}

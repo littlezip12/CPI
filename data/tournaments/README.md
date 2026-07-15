@@ -1,46 +1,32 @@
-# CPI normalized tournament data
+# CPI Tournament Data
 
-Release 7.41.0 separates tournament evidence into three durable layers:
+Release 7.42 separates tournament information into durable layers:
 
-1. `registry.json` — one authoritative list of events, divisions, source tabs, parser types, and public pages.
-2. `raw/<event>/<division>.csv` — untouched source snapshots used for audit and reprocessing.
-3. `normalized/<event>/<division>.json` — standardized game records with stable IDs, source rows, seeds, bracket references, scores, advancement destinations, and canonical identities.
+- `registry.json`: authoritative event and division source registry.
+- `raw/`: exact source CSV snapshots.
+- `normalized/`: standardized, source-traceable game records.
+- `qa/`: parser and identity issues by dataset.
+- `identity/participants.json`: stable identities for every real tournament team, including tournament-only teams.
+- `evidence/index.json`: team-centric event, record, and recent-game evidence.
+- `evidence/ranking-review.json`: manual ranking and identity review queues.
+- `evidence/runtime.js`: profile-ready browser data.
 
-QA reports are written to `qa/<event>/<division>.json`. Review items remain visible; structural blockers fail `./release-check`.
+Tournament-only identities never become published CPI ranking teams automatically. They preserve schedules and results without forcing uncertain or out-of-state teams into the California ranking model.
 
-## Synchronize live sheets
+Run one cached dataset:
+
+```bash
+python3 scripts/sync-tournament-data.py --division 2026-jo-weekend-1 14u-girls-championship --no-fetch
+```
+
+Run all enabled JO sources:
 
 ```bash
 python3 scripts/sync-tournament-data.py --sync-enabled --allow-partial
 ```
 
-The command fetches the 23 active Junior Olympics divisions. It writes new files only when source CSV content changes. Existing public JO pages continue to poll Google Sheets directly every two minutes; the normalized layer is the durable evidence bank for profiles, rankings, and historical results.
-
-Other commands:
+Rebuild evidence from existing normalized data:
 
 ```bash
-# One division
-python3 scripts/sync-tournament-data.py \
-  --division 2026-jo-weekend-2 14u-boys-classic
-
-# Rebuild from an already banked raw snapshot without internet
-python3 scripts/sync-tournament-data.py \
-  --division 2026-jo-weekend-1 14u-girls-championship \
-  --no-fetch
-
-# Validate parser behavior and all banked outputs
-python3 scripts/test-tournament-pipeline.py
-python3 scripts/validate-tournament-data.py
+python3 scripts/build-tournament-evidence.py
 ```
-
-## Identity behavior
-
-- Tournament seeds are integers stored separately from team names.
-- `W31`, `L30`, and similar bracket references are not teams.
-- `W#31 - NorCal` preserves `W#31` as source-reference metadata and treats `NorCal` as the participant.
-- Canonical team and club IDs come from the 7.40 identity registry.
-- An ambiguous source name is never guessed. Verified source-specific mappings live in `config/tournament-identity-overrides.json`; everything else remains an explicit review item.
-
-## Automatic snapshots
-
-`.github/workflows/sync-tournament-data.yml` runs every six hours and can also be launched manually from GitHub Actions. It commits only when a source sheet actually changes.

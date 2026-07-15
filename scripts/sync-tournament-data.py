@@ -7,6 +7,7 @@ import hashlib
 import json
 import sys
 import time
+import subprocess
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -54,7 +55,7 @@ def source_urls(division: dict) -> list[str]:
 def fetch_csv(division: dict, timeout: int = 25) -> tuple[str, str]:
     last_error: Exception | None = None
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.41; +https://littlezip12.github.io/CPI/)",
+        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.42; +https://littlezip12.github.io/CPI/)",
         "Accept": "text/csv,text/plain,*/*",
         "Cache-Control": "no-cache",
     }
@@ -116,9 +117,12 @@ def sync_one(
 
     raw_path.parent.mkdir(parents=True, exist_ok=True)
     existing = raw_path.read_text(encoding="utf-8-sig") if raw_path.exists() else None
-    unchanged = existing == text and normalized_path.exists() and qa_path.exists()
+    normalized_existing = load_json(normalized_path) if normalized_path.exists() else {}
+    qa_existing = load_json(qa_path) if qa_path.exists() else {}
+    current_release = normalized_existing.get("release") == "7.42.0" and qa_existing.get("release") == "7.42.0"
+    unchanged = existing == text and normalized_path.exists() and qa_path.exists() and current_release
     if unchanged:
-        normalized = load_json(normalized_path)
+        normalized = normalized_existing
         return {
             "eventId": event["id"],
             "divisionId": division["id"],
@@ -244,6 +248,10 @@ def main() -> int:
 
     manifest = build_manifest(registry)
     print(f"Manifest: {manifest['counts']['datasets']} datasets, {manifest['counts']['games']} games")
+    evidence_result = subprocess.run([sys.executable, str(ROOT / "scripts" / "build-tournament-evidence.py")])
+    if evidence_result.returncode:
+        print("Tournament evidence build failed", file=sys.stderr)
+        return evidence_result.returncode
     if failures:
         report = {
             "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),

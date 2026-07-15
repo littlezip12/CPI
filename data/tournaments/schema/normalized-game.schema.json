@@ -71,8 +71,10 @@
         "seed",
         "sourceReference",
         "displayName",
+        "participantId",
         "teamId",
         "clubId",
+        "rankingEligible",
         "identityStatus",
         "identityMatchType"
       ],
@@ -108,6 +110,15 @@
             "string",
             "null"
           ]
+        },
+        "participantId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rankingEligible": {
+          "type": "boolean"
         }
       }
     },

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tournament Evidence Review | California Polo Index</title>
+  <meta name="description" content="CPI normalized tournament evidence and manual ranking review dashboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.42.0">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.42.0">
+  <link rel="stylesheet" href="css/tournament-evidence-v7-42.css?v=7.42.0">
+</head>
+<body class="cpi-v8-home evidence-review-page">
+  <header class="cpi-v8-header">
+    <div class="cpi-v8-header-inner">
+      <a class="cpi-v8-brand" href="index.html" aria-label="California Polo Index Home">
+        <span class="cpi-v8-brand-mark">CPI</span>
+        <span class="cpi-v8-brand-text"><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span>
+      </a>
+      <nav class="cpi-v8-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="evidence-review-shell">
+    <section class="evidence-review-hero">
+      <p class="kicker">CPI Data Review · 7.42</p>
+      <h1>Normalized tournament evidence</h1>
+      <p>Source-traceable JO games, stable participant identities, and a manual ranking-review queue. This page does not alter the published rankings.</p>
+      <div id="evidenceStats" class="evidence-stat-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="evidence-controls" aria-label="Evidence filters">
+      <label>Group<select id="evidenceGroup"><option value="all">All groups</option></select></label>
+      <label>Status<select id="evidenceStatus"><option value="all">All statuses</option><option value="ready_for_ranking_review">Ready for ranking review</option><option value="schedule_only">Schedule only</option></select></label>
+      <label class="evidence-search">Search<input id="evidenceSearch" type="search" placeholder="Team or division"></label>
+    </section>
+
+    <section class="evidence-review-grid">
+      <article class="evidence-review-panel">
+        <div class="evidence-panel-heading"><div><p class="kicker">Ranking review</p><h2>Canonical CPI teams</h2></div><span id="rankingCount"></span></div>
+        <div id="rankingReviewList" class="evidence-card-list"></div>
+      </article>
+      <aside class="evidence-review-panel identity-panel">
+        <div class="evidence-panel-heading"><div><p class="kicker">Identity review</p><h2>Tournament-only teams</h2></div><span id="identityCount"></span></div>
+        <p class="evidence-policy">These teams receive stable evidence IDs but are not added to CPI rankings automatically.</p>
+        <div id="identityReviewList" class="identity-review-list"></div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="data/tournaments/evidence/review-runtime.js?v=7.42.0"></script>
+  <script src="js/tournament-evidence-v7-42.js?v=7.42.0"></script>
+</body>
+</html>

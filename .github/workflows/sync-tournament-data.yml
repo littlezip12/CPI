@@ -2,7 +2,7 @@ name: Sync tournament data
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 */2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -27,21 +27,37 @@ jobs:
       - name: Fetch and normalize enabled tournament sources
         run: python3 scripts/sync-tournament-data.py --sync-enabled --allow-partial
 
+      - name: Rebuild tournament evidence and review queues
+        run: python3 scripts/build-tournament-evidence.py
+
       - name: Run tournament regression tests
         run: python3 scripts/test-tournament-pipeline.py
 
       - name: Validate normalized tournament data
         run: python3 scripts/validate-tournament-data.py
 
-      - name: Commit changed source snapshots
+      - name: Validate tournament evidence integration
+        run: python3 scripts/validate-tournament-evidence.py
+
+      - name: Test tournament evidence interfaces
+        run: node scripts/test-tournament-evidence-ui.js
+
+      - name: Commit changed tournament evidence
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/tournaments/raw data/tournaments/normalized data/tournaments/qa/2026-*
+          git add -A \
+            data/tournaments/raw \
+            data/tournaments/normalized \
+            data/tournaments/qa \
+            data/tournaments/evidence \
+            data/tournaments/identity \
+            qa/tournament-evidence-summary-7.42.0.json \
+            qa/tournament-identity-review-7.42.0.csv
           if git diff --cached --quiet; then
-            echo "No tournament source changes detected."
+            echo "No tournament source or evidence changes detected."
           else
-            git commit -m "Update normalized tournament data [skip ci]"
+            git commit -m "Update tournament evidence bank [skip ci]"
             git push
           fi
