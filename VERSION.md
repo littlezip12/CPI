@@ -1,14 +1,11 @@
-# CPI 7.43.0
+# CPI 7.44.0
 
-Full JO Schedule Banking & Source Reliability.
+Ranking Evidence & Review Engine.
 
-- Monitors all 23 registered Junior Olympics divisions through one authoritative Google Sheets source per division.
-- Adds a tournament source-health dashboard with freshness, banking, schedule, and completed-game status.
-- Preserves scheduled games separately from completed results.
-- Treats blank `0-0` cells and partial score entries as scheduled, not final.
-- Prevents pre-tournament schedules from creating records or ranking evidence before real scores exist.
-- Shows official source, last successful refresh, scheduled games, and completed games in both JO viewers.
-- Writes a complete sync report after every automated attempt, including current, stale, unbanked, and failed divisions.
-- Keeps last-known-good snapshots when a live source is blank, invalid, or unexpectedly truncated.
-
-The checked-in bootstrap remains the verified 192-game 14U Girls Championship schedule with zero completed games. GitHub Actions attempts all 23 JO divisions every two hours.
+- Converts only verified final tournament games into ranking-review evidence.
+- Produces conservative upward, downward, or hold review ranges.
+- Surfaces head-to-head results, common opponents, notable wins/losses, and same-club hierarchy warnings.
+- Keeps tournament seeds, schedules, and incomplete scores out of ranking recommendations.
+- Never modifies `rankings.json` or publishes movement automatically.
+- Pre-tournament state correctly shows zero final games and zero recommendations.
+- Rebuilds automatically after each successful tournament-data sync.

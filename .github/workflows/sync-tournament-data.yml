@@ -33,6 +33,9 @@ jobs:
       - name: Rebuild tournament source health
         run: python3 scripts/build-tournament-health.py
 
+      - name: Rebuild ranking review engine
+        run: python3 scripts/build-ranking-review.py
+
       - name: Run tournament regression tests
         run: python3 scripts/test-tournament-pipeline.py
 
@@ -44,6 +47,11 @@ jobs:
 
       - name: Validate tournament source health
         run: python3 scripts/validate-tournament-health.py
+
+      - name: Test and validate ranking review engine
+        run: |
+          python3 scripts/test-ranking-review-engine.py
+          python3 scripts/validate-ranking-review-engine.py
 
       - name: Test tournament evidence interfaces
         run: node scripts/test-tournament-evidence-ui.js
@@ -63,8 +71,10 @@ jobs:
             data/tournaments/evidence \
             data/tournaments/health \
             data/tournaments/identity \
+            data/tournaments/ranking-review-engine \
             qa/tournament-evidence-summary-7.43.0.json \
-            qa/tournament-identity-review-7.43.0.csv
+            qa/tournament-identity-review-7.43.0.csv \
+            qa/ranking-review-engine-7.44.0.json
           if git diff --cached --quiet; then
             echo "No tournament source or evidence changes detected."
           else
