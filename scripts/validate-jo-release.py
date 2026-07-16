@@ -21,7 +21,7 @@ EXPECTED_BOYS = {
     ('12U','Boys Championship (D1)','1775879786'),
     ('12U','Boys Classic (D2)','1808416221'),
     ('14U','Boys Championship (D1)','345265555'),
-    ('14U','Boys Classic (D2)','1855118263'),
+    ('14U','Boys Classic (D2)','732732301'),
     ('14U','Boys Invitational (D3)','1975322406'),
     ('16U','Boys Championship (D1)','2012475287'),
     ('16U','Boys Classic (D2)','1142418841'),
@@ -74,7 +74,7 @@ else:
         ('12U','12u-boys-championship','1775879786'),
         ('12U','12u-boys-classic','1808416221'),
         ('14U','14u-boys-championship','345265555'),
-        ('14U','14u-boys-classic','1855118263'),
+        ('14U','14u-boys-classic','732732301'),
         ('14U','14u-boys-invitational','1975322406'),
         ('16U','16u-boys-championship','2012475287'),
         ('16U','16u-boys-classic','1142418841'),
@@ -122,8 +122,9 @@ for rel in ('tournaments/jo-boys/app.js','tournaments/jo-girls/app.js'):
         for token in ('seedLookup','seedForTeam','teamOptionLabel','jo-seed-badge','JO seed','renderSourceMeta','scheduled · ${completed} completed',"completed.length?`${wins}-${losses}`:'—'"):
             if token not in app_text:
                 fail(f'{rel}: missing JO seed metadata/display support: {token}')
-        if "const APP_VERSION='7.43.0';" not in app_text:
-            fail(f'{rel}: expected APP_VERSION 7.43.0')
+        expected_app_version = "7.44.1" if rel == "tournaments/jo-boys/app.js" else "7.43.0"
+        if f"const APP_VERSION='{expected_app_version}';" not in app_text:
+            fail(f"{rel}: expected APP_VERSION {expected_app_version}")
         result = subprocess.run(['node','--check',str(path)],capture_output=True,text=True)
         if result.returncode:
             fail(f'{rel}: JavaScript syntax error: {result.stderr.strip()}')
