@@ -1,0 +1,6008 @@
+{
+  "schemaVersion": 1,
+  "release": "7.43.0",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-jo-weekend-1",
+    "name": "2026 Junior Olympics Weekend 1",
+    "kind": "junior_olympics"
+  },
+  "division": {
+    "id": "10u-girls-classic",
+    "label": "10U Girls Classic",
+    "season": "2026",
+    "ageGroup": "10U",
+    "gender": "Girls",
+    "division": "Classic",
+    "divisionTier": "D2",
+    "parser": "jo_bracket_v1"
+  },
+  "source": {
+    "type": "google_sheets_csv",
+    "spreadsheetId": "1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw",
+    "gid": "1824277279",
+    "sheetName": "10U_Coed_Classic 22 from 23",
+    "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1824277279#gid=1824277279",
+    "fetchedAt": "2026-07-15T08:36:50Z",
+    "mode": "live_fetch",
+    "contentSha256": "d74d056f1d8f119e536275b0bf261e31aac9645037210c9c74b763ed98eabe1c",
+    "rowCount": 134,
+    "fetchedUrl": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/gviz/tq?tqx=out:csv&sheet=10U_Coed_Classic%2022%20from%2023"
+  },
+  "counts": {
+    "games": 87,
+    "finalGames": 0,
+    "scheduledGames": 87,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 142,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 142,
+    "bracketReferences": 32,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 142
+  },
+  "games": [
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-001",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-001",
+      "sourceGameNumber": null,
+      "sourceRow": 12,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C1(3)-YOLO B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1(3)",
+          "displayName": "YOLO B",
+          "participantId": "tournament-team-2026-10u-girls-yolo-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C4(22)-TITANS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4(22)",
+          "displayName": "TITANS",
+          "participantId": "tournament-team-2026-10u-girls-titans",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 13,
+          "raw": "13"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 15,
+          "raw": "15"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-003",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-003",
+      "sourceGameNumber": null,
+      "sourceRow": 13,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C2(10)-NGEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2(10)",
+          "displayName": "NGEN",
+          "participantId": "tournament-team-2026-10u-girls-ngen",
+          "teamId": null,
+          "clubId": "club-ngen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C3(15)-FOOTHILL BLACK B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3(15)",
+          "displayName": "FOOTHILL BLACK B",
+          "participantId": "tournament-team-2026-10u-girls-foothill-black-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 13,
+          "raw": "13"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 15,
+          "raw": "15"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-005",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-005",
+      "sourceGameNumber": null,
+      "sourceRow": 14,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D1(4)-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1(4)",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-10u-girls-680-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D4(21)-SANTA BARBARA WPC 8U",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D4(21)",
+          "displayName": "SANTA BARBARA WPC 8U",
+          "participantId": "tournament-team-2026-10u-girls-santa-barbara-wpc-8u",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 17,
+          "raw": "17"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 19,
+          "raw": "19"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-007",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-007",
+      "sourceGameNumber": null,
+      "sourceRow": 15,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D2(9)-VALLEY UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2(9)",
+          "displayName": "VALLEY UNITED",
+          "participantId": "tournament-team-2026-10u-girls-valley-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D3(16)-TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3(16)",
+          "displayName": "TSUNAMI",
+          "participantId": "tournament-team-2026-10u-girls-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 17,
+          "raw": "17"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 19,
+          "raw": "19"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-009",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-009",
+      "sourceGameNumber": null,
+      "sourceRow": 16,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E1(5)-TROJAN SOUTH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1(5)",
+          "displayName": "TROJAN SOUTH",
+          "participantId": "tournament-team-2026-10u-girls-trojan-south",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "E4(20)-MAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E4(20)",
+          "displayName": "MAC",
+          "participantId": "tournament-team-2026-10u-girls-mac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 21,
+          "raw": "21"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 23,
+          "raw": "23"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-011",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-011",
+      "sourceGameNumber": null,
+      "sourceRow": 17,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E2(8)-OCWPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2(8)",
+          "displayName": "OCWPC RED",
+          "participantId": "tournament-team-2026-10u-girls-ocwpc-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "E3(17)- SANTA BARBARA WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3(17)",
+          "displayName": "SANTA BARBARA WPC B",
+          "participantId": "tournament-team-2026-10u-girls-santa-barbara-wpc-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 21,
+          "raw": "21"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 23,
+          "raw": "23"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-013",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-013",
+      "sourceGameNumber": null,
+      "sourceRow": 18,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W1-",
+          "participantId": "tournament-team-2026-10u-girls-w1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "W3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W3-",
+          "participantId": "tournament-team-2026-10u-girls-w3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_C1",
+          "raw": "ag_C1"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 24,
+          "raw": "24"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-015",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-015",
+      "sourceGameNumber": null,
+      "sourceRow": 19,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L1-",
+          "participantId": "tournament-team-2026-10u-girls-l1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L3-",
+          "participantId": "tournament-team-2026-10u-girls-l3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 99,
+          "raw": "99"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_A5",
+          "raw": "bz_A5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-017",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-017",
+      "sourceGameNumber": null,
+      "sourceRow": 20,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W5-",
+          "participantId": "tournament-team-2026-10u-girls-w5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "W7-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W7-",
+          "participantId": "tournament-team-2026-10u-girls-w7",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_D1",
+          "raw": "ag_D1"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 99,
+          "raw": "99"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-019",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-019",
+      "sourceGameNumber": null,
+      "sourceRow": 21,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L5-",
+          "participantId": "tournament-team-2026-10u-girls-l5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L7-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L7-",
+          "participantId": "tournament-team-2026-10u-girls-l7",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 24,
+          "raw": "24"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_B5",
+          "raw": "bz_B5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-021",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-021",
+      "sourceGameNumber": null,
+      "sourceRow": 22,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W9-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W9-",
+          "participantId": "tournament-team-2026-10u-girls-w9",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "W11-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W11-",
+          "participantId": "tournament-team-2026-10u-girls-w11",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_D2",
+          "raw": "ag_D2"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 25,
+          "raw": "25"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-023",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-023",
+      "sourceGameNumber": null,
+      "sourceRow": 23,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L9-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L9-",
+          "participantId": "tournament-team-2026-10u-girls-l9",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L11-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L11-",
+          "participantId": "tournament-team-2026-10u-girls-l11",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 27,
+          "raw": "27"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_A4",
+          "raw": "bz_A4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-099",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-099",
+      "sourceGameNumber": null,
+      "sourceRow": 24,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L17-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L17-",
+          "participantId": "tournament-team-2026-10u-girls-l17",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "W15-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W15-",
+          "participantId": "tournament-team-2026-10u-girls-w15",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_A3",
+          "raw": "ag_A3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_B2",
+          "raw": "bz_B2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-024",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-024",
+      "sourceGameNumber": null,
+      "sourceRow": 25,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L13-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L13-",
+          "participantId": "tournament-team-2026-10u-girls-l13",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "W19-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W19-",
+          "participantId": "tournament-team-2026-10u-girls-w19",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_B3",
+          "raw": "ag_B3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_A2",
+          "raw": "bz_A2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-025",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-025",
+      "sourceGameNumber": null,
+      "sourceRow": 26,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L21-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L21-",
+          "participantId": "tournament-team-2026-10u-girls-l21",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "W14-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W14-",
+          "participantId": "tournament-team-2026-10u-girls-w14",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_A2",
+          "raw": "ag_A2"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_A3",
+          "raw": "bz_A3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-027",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-027",
+      "sourceGameNumber": null,
+      "sourceRow": 27,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W23-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W23-",
+          "participantId": "tournament-team-2026-10u-girls-w23",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L16-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L16-",
+          "participantId": "tournament-team-2026-10u-girls-l16",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_B2",
+          "raw": "ag_B2"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_B3",
+          "raw": "bz_B3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-002",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-002",
+      "sourceGameNumber": null,
+      "sourceRow": 30,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-SD SHORES B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1(1)",
+          "displayName": "SD SHORES B",
+          "participantId": "tournament-team-2026-10u-girls-sd-shores-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3(13)-NEWPORT BEACH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3(13)",
+          "displayName": "NEWPORT BEACH",
+          "participantId": "tournament-team-2026-10u-girls-newport-beach",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-008",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-008",
+      "sourceGameNumber": null,
+      "sourceRow": 31,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B1(2)-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1(2)",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-10u-girls-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3(14)-TROJAN NORTH B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3(14)",
+          "displayName": "TROJAN NORTH B",
+          "participantId": "tournament-team-2026-10u-girls-trojan-north-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-004",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-004",
+      "sourceGameNumber": null,
+      "sourceRow": 32,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F1(6)-LB VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1(6)",
+          "displayName": "LB VIKING",
+          "participantId": "tournament-team-2026-10u-girls-lb-viking",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F4(19)-LAGUNA MAROON",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F4(19)",
+          "displayName": "LAGUNA MAROON",
+          "participantId": "tournament-team-2026-10u-girls-laguna-maroon",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 16,
+          "raw": "16"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 14,
+          "raw": "14"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-006",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-006",
+      "sourceGameNumber": null,
+      "sourceRow": 33,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F2(7)-DIABLO ALLIANCE B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2(7)",
+          "displayName": "DIABLO ALLIANCE B",
+          "participantId": "tournament-team-2026-10u-girls-diablo-alliance-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F3(18)-ROSE BOWL BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3(18)",
+          "displayName": "ROSE BOWL BLACK",
+          "participantId": "tournament-team-2026-10u-girls-rose-bowl-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 16,
+          "raw": "16"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 14,
+          "raw": "14"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-012",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-012",
+      "sourceGameNumber": null,
+      "sourceRow": 34,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(12)-BURLINGAME",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2(12)",
+          "displayName": "BURLINGAME",
+          "participantId": "tournament-team-2026-10u-girls-burlingame",
+          "teamId": null,
+          "clubId": "club-burlingame",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3(13)-NEWPORT BEACH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3(13)",
+          "displayName": "NEWPORT BEACH",
+          "participantId": "tournament-team-2026-10u-girls-newport-beach",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-010",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-010",
+      "sourceGameNumber": null,
+      "sourceRow": 35,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B2(11)-LOYOLA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2(11)",
+          "displayName": "LOYOLA",
+          "participantId": "tournament-team-2026-10u-girls-loyola",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3(14)-TROJAN NORTH B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3(14)",
+          "displayName": "TROJAN NORTH B",
+          "participantId": "tournament-team-2026-10u-girls-trojan-north-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-014",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-014",
+      "sourceGameNumber": null,
+      "sourceRow": 36,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L4-",
+          "participantId": "tournament-team-2026-10u-girls-l4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L6-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L6-",
+          "participantId": "tournament-team-2026-10u-girls-l6",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 25,
+          "raw": "25"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_B4",
+          "raw": "bz_B4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-016",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-016",
+      "sourceGameNumber": null,
+      "sourceRow": 37,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W4-",
+          "participantId": "tournament-team-2026-10u-girls-w4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "W6-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W6-",
+          "participantId": "tournament-team-2026-10u-girls-w6",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_C2",
+          "raw": "ag_C2"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 27,
+          "raw": "27"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-020",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-020",
+      "sourceGameNumber": null,
+      "sourceRow": 38,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-SD SHORES B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1(1)",
+          "displayName": "SD SHORES B",
+          "participantId": "tournament-team-2026-10u-girls-sd-shores-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2(12)-BURLINGAME",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2(12)",
+          "displayName": "BURLINGAME",
+          "participantId": "tournament-team-2026-10u-girls-burlingame",
+          "teamId": null,
+          "clubId": "club-burlingame",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-018",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-018",
+      "sourceGameNumber": null,
+      "sourceRow": 39,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B1(2)-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1(2)",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-10u-girls-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2(11)-LOYOLA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2(11)",
+          "displayName": "LOYOLA",
+          "participantId": "tournament-team-2026-10u-girls-loyola",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-026",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-026",
+      "sourceGameNumber": null,
+      "sourceRow": 40,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2ndB-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2ndB-",
+          "participantId": "tournament-team-2026-10u-girls-2ndb",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd A-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd A-",
+          "participantId": "tournament-team-2026-10u-girls-3rd-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_C3",
+          "raw": "ag_C3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_B1",
+          "raw": "bz_B1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-028",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-028",
+      "sourceGameNumber": null,
+      "sourceRow": 41,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd A-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd A-",
+          "participantId": "tournament-team-2026-10u-girls-2nd-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rdB-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rdB-",
+          "participantId": "tournament-team-2026-10u-girls-3rdb",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ag_D3",
+          "raw": "ag_D3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "bz_A1",
+          "raw": "bz_A1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-029",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-029",
+      "sourceGameNumber": null,
+      "sourceRow": 56,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_A1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_A1-",
+          "participantId": "tournament-team-2026-10u-girls-ag-a1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_A2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_A2-",
+          "participantId": "tournament-team-2026-10u-girls-ag-a2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-031",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-031",
+      "sourceGameNumber": null,
+      "sourceRow": 57,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_D1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_D1-",
+          "participantId": "tournament-team-2026-10u-girls-ag-d1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_D2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_D2-",
+          "participantId": "tournament-team-2026-10u-girls-ag-d2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-033",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-033",
+      "sourceGameNumber": null,
+      "sourceRow": 58,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_B1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_B1-",
+          "participantId": "tournament-team-2026-10u-girls-ag-b1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_B2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_B2-",
+          "participantId": "tournament-team-2026-10u-girls-ag-b2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-035",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-035",
+      "sourceGameNumber": null,
+      "sourceRow": 59,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_C1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_C1-",
+          "participantId": "tournament-team-2026-10u-girls-ag-c1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_C2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_C2-",
+          "participantId": "tournament-team-2026-10u-girls-ag-c2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-037",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-037",
+      "sourceGameNumber": null,
+      "sourceRow": 60,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_A1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_A1-",
+          "participantId": "tournament-team-2026-10u-girls-ag-a1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_A3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_A3-",
+          "participantId": "tournament-team-2026-10u-girls-ag-a3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-039",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-039",
+      "sourceGameNumber": null,
+      "sourceRow": 61,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_D1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_D1-",
+          "participantId": "tournament-team-2026-10u-girls-ag-d1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_D3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_D3-",
+          "participantId": "tournament-team-2026-10u-girls-ag-d3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-041",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-041",
+      "sourceGameNumber": null,
+      "sourceRow": 62,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_B1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_B1-",
+          "participantId": "tournament-team-2026-10u-girls-ag-b1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_B3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_B3-",
+          "participantId": "tournament-team-2026-10u-girls-ag-b3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-043",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-043",
+      "sourceGameNumber": null,
+      "sourceRow": 63,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_C1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_C1-",
+          "participantId": "tournament-team-2026-10u-girls-ag-c1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_C3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_C3-",
+          "participantId": "tournament-team-2026-10u-girls-ag-c3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-045",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-045",
+      "sourceGameNumber": null,
+      "sourceRow": 64,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_A2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_A2-",
+          "participantId": "tournament-team-2026-10u-girls-ag-a2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_A3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_A3-",
+          "participantId": "tournament-team-2026-10u-girls-ag-a3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-047",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-047",
+      "sourceGameNumber": null,
+      "sourceRow": 65,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_D2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_D2-",
+          "participantId": "tournament-team-2026-10u-girls-ag-d2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_D3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_D3-",
+          "participantId": "tournament-team-2026-10u-girls-ag-d3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-049",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-049",
+      "sourceGameNumber": null,
+      "sourceRow": 66,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_B2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_B2-",
+          "participantId": "tournament-team-2026-10u-girls-ag-b2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_B3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_B3-",
+          "participantId": "tournament-team-2026-10u-girls-ag-b3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-051",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-051",
+      "sourceGameNumber": null,
+      "sourceRow": 67,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "ag_C2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_C2-",
+          "participantId": "tournament-team-2026-10u-girls-ag-c2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "ag_C3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ag_C3-",
+          "participantId": "tournament-team-2026-10u-girls-ag-c3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-030",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-030",
+      "sourceGameNumber": null,
+      "sourceRow": 70,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A2-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A4-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-032",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-032",
+      "sourceGameNumber": null,
+      "sourceRow": 71,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A3-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A5-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-034",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-034",
+      "sourceGameNumber": null,
+      "sourceRow": 72,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B1-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B3-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-036",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-036",
+      "sourceGameNumber": null,
+      "sourceRow": 73,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B2-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B5-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-040",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-040",
+      "sourceGameNumber": null,
+      "sourceRow": 75,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A4-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A1-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-042",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-042",
+      "sourceGameNumber": null,
+      "sourceRow": 76,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A5-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A2-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-044",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-044",
+      "sourceGameNumber": null,
+      "sourceRow": 77,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B3-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B5-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-046",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-046",
+      "sourceGameNumber": null,
+      "sourceRow": 78,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B1-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B4-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-050",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-050",
+      "sourceGameNumber": null,
+      "sourceRow": 79,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A1-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A3-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-053",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-053",
+      "sourceGameNumber": null,
+      "sourceRow": 84,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd ag_D",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd ag_D",
+          "participantId": "tournament-team-2026-10u-girls-2nd-ag-d",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd ag_C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd ag_C",
+          "participantId": "tournament-team-2026-10u-girls-3rd-ag-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 63,
+          "raw": "63"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 69,
+          "raw": "69"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-055",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-055",
+      "sourceGameNumber": null,
+      "sourceRow": 85,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd ag_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd ag_A",
+          "participantId": "tournament-team-2026-10u-girls-2nd-ag-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd ag_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd ag_B",
+          "participantId": "tournament-team-2026-10u-girls-3rd-ag-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 63,
+          "raw": "63"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 69,
+          "raw": "69"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-057",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-057",
+      "sourceGameNumber": null,
+      "sourceRow": 86,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd ag_C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd ag_C",
+          "participantId": "tournament-team-2026-10u-girls-2nd-ag-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd ag_D",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd ag_D",
+          "participantId": "tournament-team-2026-10u-girls-3rd-ag-d",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 67,
+          "raw": "67"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 71,
+          "raw": "71"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-059",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-059",
+      "sourceGameNumber": null,
+      "sourceRow": 87,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd ag_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd ag_B",
+          "participantId": "tournament-team-2026-10u-girls-2nd-ag-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd ag_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd ag_A",
+          "participantId": "tournament-team-2026-10u-girls-3rd-ag-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 67,
+          "raw": "67"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 71,
+          "raw": "71"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-061",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-061",
+      "sourceGameNumber": null,
+      "sourceRow": 88,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "1-2 v 3-4",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st ag_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "1st ag_B",
+          "participantId": "tournament-team-2026-10u-girls-1st-ag-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "1st ag_C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "1st ag_C",
+          "participantId": "tournament-team-2026-10u-girls-1st-ag-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 80,
+          "raw": "80"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 73,
+          "raw": "73"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-063",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-063",
+      "sourceGameNumber": null,
+      "sourceRow": 89,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-6 v 7-8",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W53",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W53",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W55",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W55",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 73,
+          "raw": "73"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 85,
+          "raw": "85"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-065",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-065",
+      "sourceGameNumber": null,
+      "sourceRow": 90,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "1-2 v 3-4",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st ag_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "1st ag_A",
+          "participantId": "tournament-team-2026-10u-girls-1st-ag-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "1st ag_D",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "1st ag_D",
+          "participantId": "tournament-team-2026-10u-girls-1st-ag-d",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 79,
+          "raw": "79"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 75,
+          "raw": "75"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-067",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-067",
+      "sourceGameNumber": null,
+      "sourceRow": 91,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-6 v 7-8",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W57",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W57",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W59",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W59",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 75,
+          "raw": "75"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 85,
+          "raw": "85"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-069",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-069",
+      "sourceGameNumber": null,
+      "sourceRow": 92,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L55",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L55",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L53",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L53",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 82,
+          "raw": "82"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 81,
+          "raw": "81"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-071",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-071",
+      "sourceGameNumber": null,
+      "sourceRow": 93,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L59",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L59",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L57",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L57",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 82,
+          "raw": "82"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 81,
+          "raw": "81"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-073",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-073",
+      "sourceGameNumber": null,
+      "sourceRow": 94,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "qtr final",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L61",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L61",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W63",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W63",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 79,
+          "raw": "79"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 86,
+          "raw": "86"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-075",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-075",
+      "sourceGameNumber": null,
+      "sourceRow": 95,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "qtr final",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L65",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L65",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W67",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W67",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 80,
+          "raw": "80"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 86,
+          "raw": "86"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-054",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-054",
+      "sourceGameNumber": null,
+      "sourceRow": 98,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B5-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B1-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-056",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-056",
+      "sourceGameNumber": null,
+      "sourceRow": 99,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B4-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B2-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-060",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-060",
+      "sourceGameNumber": null,
+      "sourceRow": 101,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A4-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A5-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-062",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-062",
+      "sourceGameNumber": null,
+      "sourceRow": 102,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A2-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A3-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-064",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-064",
+      "sourceGameNumber": null,
+      "sourceRow": 103,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B1-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B2-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-066",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-066",
+      "sourceGameNumber": null,
+      "sourceRow": 104,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B3-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B4-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-070",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-070",
+      "sourceGameNumber": null,
+      "sourceRow": 106,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A5-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A1-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-072",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-072",
+      "sourceGameNumber": null,
+      "sourceRow": 107,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A3-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A4-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-074",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-074",
+      "sourceGameNumber": null,
+      "sourceRow": 108,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B3-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B3-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b3",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B2-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-076",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-076",
+      "sourceGameNumber": null,
+      "sourceRow": 109,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_B5-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B5-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b5",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_B4-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_B4-",
+          "participantId": "tournament-team-2026-10u-girls-bz-b4",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-098",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-098",
+      "sourceGameNumber": null,
+      "sourceRow": 110,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "bz_A1-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A1-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a1",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "bz_A2-",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "bz_A2-",
+          "participantId": "tournament-team-2026-10u-girls-bz-a2",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-085",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-085",
+      "sourceGameNumber": null,
+      "sourceRow": 114,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L63",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L63",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L67",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L67",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "7th",
+          "raw": "7th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "8th",
+          "raw": "8th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-086",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-086",
+      "sourceGameNumber": null,
+      "sourceRow": 115,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L73",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L73",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L75",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L75",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "5th",
+          "raw": "5th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "6th",
+          "raw": "6th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-088",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-088",
+      "sourceGameNumber": null,
+      "sourceRow": 116,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "4th bz_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "4th bz_A",
+          "participantId": "tournament-team-2026-10u-girls-4th-bz-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "4th bz_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "4th bz_B",
+          "participantId": "tournament-team-2026-10u-girls-4th-bz-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "7th",
+          "raw": "7th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "8th",
+          "raw": "8th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-081",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-081",
+      "sourceGameNumber": null,
+      "sourceRow": 117,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L69",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L69",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L71",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L71",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "11th",
+          "raw": "11th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "12th",
+          "raw": "12th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-082",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-082",
+      "sourceGameNumber": null,
+      "sourceRow": 118,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W69",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W69",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W71",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W71",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "9th",
+          "raw": "9th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "10th",
+          "raw": "10th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-083",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-083",
+      "sourceGameNumber": null,
+      "sourceRow": 119,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd bz_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd bz_A",
+          "participantId": "tournament-team-2026-10u-girls-3rd-bz-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd bz_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd bz_B",
+          "participantId": "tournament-team-2026-10u-girls-3rd-bz-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "5th",
+          "raw": "5th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "6th",
+          "raw": "6th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-084",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-084",
+      "sourceGameNumber": null,
+      "sourceRow": 120,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "OCEAN VIEW HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "5th bz_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "5th bz_A",
+          "participantId": "tournament-team-2026-10u-girls-5th-bz-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "5th bz_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "5th bz_B",
+          "participantId": "tournament-team-2026-10u-girls-5th-bz-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "9th",
+          "raw": "9th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "10th",
+          "raw": "10th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-077",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-077",
+      "sourceGameNumber": null,
+      "sourceRow": 123,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Semi",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st bz_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "1st bz_A",
+          "participantId": "tournament-team-2026-10u-girls-1st-bz-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "2nd bz_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd bz_B",
+          "participantId": "tournament-team-2026-10u-girls-2nd-bz-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 90,
+          "raw": "90"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 89,
+          "raw": "89"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-078",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-078",
+      "sourceGameNumber": null,
+      "sourceRow": 124,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Semi",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st bz_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "1st bz_B",
+          "participantId": "tournament-team-2026-10u-girls-1st-bz-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "2nd bz_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd bz_A",
+          "participantId": "tournament-team-2026-10u-girls-2nd-bz-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 90,
+          "raw": "90"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 89,
+          "raw": "89"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-089",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-089",
+      "sourceGameNumber": null,
+      "sourceRow": 125,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L77",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L77",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L78",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L78",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "3rd",
+          "raw": "3rd"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "4th",
+          "raw": "4th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-090",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-090",
+      "sourceGameNumber": null,
+      "sourceRow": 126,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W77",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W77",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W78",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W78",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "1st",
+          "raw": "1st"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "2nd",
+          "raw": "2nd"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-079",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-079",
+      "sourceGameNumber": null,
+      "sourceRow": 129,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Semi",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W65",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W65",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W73",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W73",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 92,
+          "raw": "92"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 91,
+          "raw": "91"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-091",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-091",
+      "sourceGameNumber": null,
+      "sourceRow": 130,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L79",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L79",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L80",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L80",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "3rd",
+          "raw": "3rd"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "4th",
+          "raw": "4th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-092",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-092",
+      "sourceGameNumber": null,
+      "sourceRow": 131,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Place",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W79",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W79",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W80",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W80",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "1st",
+          "raw": "1st"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "2nd",
+          "raw": "2nd"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-classic-10cx-080",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-classic",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Classic",
+      "divisionTier": "D2",
+      "sourceGameId": "10CX-080",
+      "sourceGameNumber": null,
+      "sourceRow": 134,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Semi",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W61",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W61",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W75",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W75",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 92,
+          "raw": "92"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 91,
+          "raw": "91"
+        }
+      }
+    }
+  ]
+}

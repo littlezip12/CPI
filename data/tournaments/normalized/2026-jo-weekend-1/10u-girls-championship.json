@@ -1,0 +1,5320 @@
+{
+  "schemaVersion": 1,
+  "release": "7.43.0",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-jo-weekend-1",
+    "name": "2026 Junior Olympics Weekend 1",
+    "kind": "junior_olympics"
+  },
+  "division": {
+    "id": "10u-girls-championship",
+    "label": "10U Girls Championship",
+    "season": "2026",
+    "ageGroup": "10U",
+    "gender": "Girls",
+    "division": "Championship",
+    "divisionTier": "D1",
+    "parser": "jo_bracket_v1"
+  },
+  "source": {
+    "type": "google_sheets_csv",
+    "spreadsheetId": "1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw",
+    "gid": "1690842489",
+    "sheetName": "10U_F_Champ-18 teams",
+    "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1690842489#gid=1690842489",
+    "fetchedAt": "2026-07-15T08:36:38Z",
+    "mode": "live_fetch",
+    "contentSha256": "93984dec4cdf2ddb6f002016474f95527f3e8ac4c5046f99b58af29638651bbd",
+    "rowCount": 125,
+    "fetchedUrl": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/gviz/tq?tqx=out:csv&sheet=10U_F_Champ-18%20teams"
+  },
+  "counts": {
+    "games": 76,
+    "finalGames": 0,
+    "scheduledGames": 76,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 49,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 49,
+    "bracketReferences": 102,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 49
+  },
+  "games": [
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-001",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-001",
+      "sourceGameNumber": null,
+      "sourceRow": 11,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-NEWPORT BEACH BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1(1)",
+          "displayName": "NEWPORT BEACH BLUE",
+          "participantId": "tournament-team-2026-10u-girls-newport-beach-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3(13)-GREENWICH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3(13)",
+          "displayName": "GREENWICH",
+          "participantId": "tournament-team-2026-10u-girls-greenwich",
+          "teamId": null,
+          "clubId": "club-greenwich",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-003",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-003",
+      "sourceGameNumber": null,
+      "sourceRow": 12,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B1(2)-SOCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1(2)",
+          "displayName": "SOCAL",
+          "participantId": "tournament-team-2026-10u-girls-socal",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3(14)-YOLO FLAMINGOS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3(14)",
+          "displayName": "YOLO FLAMINGOS",
+          "participantId": "tournament-team-2026-10u-girls-yolo-flamingos",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-005",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-005",
+      "sourceGameNumber": null,
+      "sourceRow": 13,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C1(3)-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1(3)",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-10u-girls-680-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C3(15)-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3(15)",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2026-10u-girls-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-007",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-007",
+      "sourceGameNumber": null,
+      "sourceRow": 14,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(12)-STANFORD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2(12)",
+          "displayName": "STANFORD",
+          "participantId": "tournament-team-2026-10u-girls-stanford",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3(13)-GREENWICH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3(13)",
+          "displayName": "GREENWICH",
+          "participantId": "tournament-team-2026-10u-girls-greenwich",
+          "teamId": null,
+          "clubId": "club-greenwich",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-009",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-009",
+      "sourceGameNumber": null,
+      "sourceRow": 15,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B2(11)-NEWPORT WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2(11)",
+          "displayName": "NEWPORT WHITE",
+          "participantId": "tournament-team-2026-10u-girls-newport-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3(14)-YOLO FLAMINGOS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3(14)",
+          "displayName": "YOLO FLAMINGOS",
+          "participantId": "tournament-team-2026-10u-girls-yolo-flamingos",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-011",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-011",
+      "sourceGameNumber": null,
+      "sourceRow": 16,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C2(10)-DEL MAR A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2(10)",
+          "displayName": "DEL MAR A",
+          "participantId": "tournament-team-2026-10u-girls-del-mar-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C3(15)-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3(15)",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2026-10u-girls-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-013",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-013",
+      "sourceGameNumber": null,
+      "sourceRow": 17,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-NEWPORT BEACH BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1(1)",
+          "displayName": "NEWPORT BEACH BLUE",
+          "participantId": "tournament-team-2026-10u-girls-newport-beach-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2(12)-STANFORD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2(12)",
+          "displayName": "STANFORD",
+          "participantId": "tournament-team-2026-10u-girls-stanford",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-015",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-015",
+      "sourceGameNumber": null,
+      "sourceRow": 18,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B1(2)-SOCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1(2)",
+          "displayName": "SOCAL",
+          "participantId": "tournament-team-2026-10u-girls-socal",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2(11)-NEWPORT WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2(11)",
+          "displayName": "NEWPORT WHITE",
+          "participantId": "tournament-team-2026-10u-girls-newport-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-017",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-017",
+      "sourceGameNumber": null,
+      "sourceRow": 19,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C1(3)-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1(3)",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-10u-girls-680-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C2(10)-DEL MAR A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2(10)",
+          "displayName": "DEL MAR A",
+          "participantId": "tournament-team-2026-10u-girls-del-mar-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-019",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-019",
+      "sourceGameNumber": null,
+      "sourceRow": 20,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd_A",
+          "participantId": "tournament-team-2026-10u-girls-2nd-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd_B",
+          "participantId": "tournament-team-2026-10u-girls-3rd-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_P3",
+          "raw": "pt_P3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_R1",
+          "raw": "pt_R1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-021",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-021",
+      "sourceGameNumber": null,
+      "sourceRow": 21,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd_B",
+          "participantId": "tournament-team-2026-10u-girls-2nd-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd_A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd_A",
+          "participantId": "tournament-team-2026-10u-girls-3rd-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_O3",
+          "raw": "pt_O3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_S1",
+          "raw": "pt_S1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-023",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-023",
+      "sourceGameNumber": null,
+      "sourceRow": 22,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd_C",
+          "participantId": "tournament-team-2026-10u-girls-2nd-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd_D",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd_D",
+          "participantId": "tournament-team-2026-10u-girls-3rd-d",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_N3",
+          "raw": "pt_N3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_S2",
+          "raw": "pt_S2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-002",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-002",
+      "sourceGameNumber": null,
+      "sourceRow": 25,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F1(6)-908 PINK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1(6)",
+          "displayName": "908 PINK",
+          "participantId": "tournament-team-2026-10u-girls-908-pink",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F3(18)-DEL MAR B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3(18)",
+          "displayName": "DEL MAR B",
+          "participantId": "tournament-team-2026-10u-girls-del-mar-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-004",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-004",
+      "sourceGameNumber": null,
+      "sourceRow": 26,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E1(5)-PATRIOT",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1(5)",
+          "displayName": "PATRIOT",
+          "participantId": "tournament-team-2026-10u-girls-patriot",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3(17)-LAMORINDA GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3(17)",
+          "displayName": "LAMORINDA GOLD",
+          "participantId": "tournament-team-2026-10u-girls-lamorinda-gold",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-006",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-006",
+      "sourceGameNumber": null,
+      "sourceRow": 27,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D1(4)-TEMPLE CITY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1(4)",
+          "displayName": "TEMPLE CITY",
+          "participantId": "tournament-team-2026-10u-girls-temple-city",
+          "teamId": null,
+          "clubId": "club-temple-city",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3(16)-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3(16)",
+          "displayName": "DAVIS",
+          "participantId": "tournament-team-2026-10u-girls-davis",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-008",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-008",
+      "sourceGameNumber": null,
+      "sourceRow": 28,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F2(7)-LAMORINDA BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2(7)",
+          "displayName": "LAMORINDA BLUE",
+          "participantId": "tournament-team-2026-10u-girls-lamorinda-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F3(18)-DEL MAR B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3(18)",
+          "displayName": "DEL MAR B",
+          "participantId": "tournament-team-2026-10u-girls-del-mar-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-010",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-010",
+      "sourceGameNumber": null,
+      "sourceRow": 29,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E2(8)-SAN CLEMENTE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2(8)",
+          "displayName": "SAN CLEMENTE",
+          "participantId": "tournament-team-2026-10u-girls-san-clemente",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3(17)-LAMORINDA GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3(17)",
+          "displayName": "LAMORINDA GOLD",
+          "participantId": "tournament-team-2026-10u-girls-lamorinda-gold",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-012",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-012",
+      "sourceGameNumber": null,
+      "sourceRow": 30,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D2(9)-COMMERCE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2(9)",
+          "displayName": "COMMERCE",
+          "participantId": "tournament-team-2026-10u-girls-commerce",
+          "teamId": null,
+          "clubId": "club-commerce",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3(16)-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3(16)",
+          "displayName": "DAVIS",
+          "participantId": "tournament-team-2026-10u-girls-davis",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-014",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-014",
+      "sourceGameNumber": null,
+      "sourceRow": 31,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F1(6)-908 PINK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1(6)",
+          "displayName": "908 PINK",
+          "participantId": "tournament-team-2026-10u-girls-908-pink",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F2(7)-LAMORINDA BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2(7)",
+          "displayName": "LAMORINDA BLUE",
+          "participantId": "tournament-team-2026-10u-girls-lamorinda-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-016",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-016",
+      "sourceGameNumber": null,
+      "sourceRow": 32,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E1(5)-PATRIOT",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1(5)",
+          "displayName": "PATRIOT",
+          "participantId": "tournament-team-2026-10u-girls-patriot",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E2(8)-SAN CLEMENTE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2(8)",
+          "displayName": "SAN CLEMENTE",
+          "participantId": "tournament-team-2026-10u-girls-san-clemente",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-018",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-018",
+      "sourceGameNumber": null,
+      "sourceRow": 33,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "RR",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D1(4)-TEMPLE CITY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1(4)",
+          "displayName": "TEMPLE CITY",
+          "participantId": "tournament-team-2026-10u-girls-temple-city",
+          "teamId": null,
+          "clubId": "club-temple-city",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D2(9)-COMMERCE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2(9)",
+          "displayName": "COMMERCE",
+          "participantId": "tournament-team-2026-10u-girls-commerce",
+          "teamId": null,
+          "clubId": "club-commerce",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-020",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-020",
+      "sourceGameNumber": null,
+      "sourceRow": 34,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_F",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd_F",
+          "participantId": "tournament-team-2026-10u-girls-2nd-f",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd_E",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd_E",
+          "participantId": "tournament-team-2026-10u-girls-3rd-e",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_N2",
+          "raw": "pt_N2"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_S3",
+          "raw": "pt_S3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-022",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-022",
+      "sourceGameNumber": null,
+      "sourceRow": 35,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_E",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd_E",
+          "participantId": "tournament-team-2026-10u-girls-2nd-e",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd_F",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd_F",
+          "participantId": "tournament-team-2026-10u-girls-3rd-f",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_M2",
+          "raw": "pt_M2"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_R3",
+          "raw": "pt_R3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-024",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-024",
+      "sourceGameNumber": null,
+      "sourceRow": 36,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross",
+      "venue": "CAPISTRANO VALLEY HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_D",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "2nd_D",
+          "participantId": "tournament-team-2026-10u-girls-2nd-d",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rd_C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "3rd_C",
+          "participantId": "tournament-team-2026-10u-girls-3rd-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_M3",
+          "raw": "pt_M3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_R2",
+          "raw": "pt_R2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-pt",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "pt",
+      "sourceGameNumber": null,
+      "sourceRow": 46,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "MSR",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "MSR",
+          "participantId": "tournament-team-2026-10u-girls-msr",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "",
+          "kind": "empty",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-065",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-065",
+      "sourceGameNumber": null,
+      "sourceRow": 48,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_R1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_R2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-069",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-069",
+      "sourceGameNumber": null,
+      "sourceRow": 49,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_M1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_M3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-073",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-073",
+      "sourceGameNumber": null,
+      "sourceRow": 50,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_N1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_N3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-077",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-077",
+      "sourceGameNumber": null,
+      "sourceRow": 51,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_R1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_R3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-079",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-079",
+      "sourceGameNumber": null,
+      "sourceRow": 52,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_M2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_M3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-081",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-081",
+      "sourceGameNumber": null,
+      "sourceRow": 53,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_N2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_N3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-083",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-083",
+      "sourceGameNumber": null,
+      "sourceRow": 54,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_R2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_R3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-085",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-085",
+      "sourceGameNumber": null,
+      "sourceRow": 55,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_M1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_M2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-089",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-089",
+      "sourceGameNumber": null,
+      "sourceRow": 56,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_N1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_N2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-109",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-109",
+      "sourceGameNumber": null,
+      "sourceRow": 57,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Play-in",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd pt_M",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdpt_M",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "2nd pt_R",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_R",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 133,
+          "raw": "133"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_W2",
+          "raw": "au_W2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-113",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-113",
+      "sourceGameNumber": null,
+      "sourceRow": 58,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Play-in",
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd pt_N",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdpt_N",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st pt_R",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_R",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 125,
+          "raw": "125"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_V3",
+          "raw": "au_V3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-066",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-066",
+      "sourceGameNumber": null,
+      "sourceRow": 61,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_S1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_S2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-070",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-070",
+      "sourceGameNumber": null,
+      "sourceRow": 62,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_O1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_O3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-074",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-074",
+      "sourceGameNumber": null,
+      "sourceRow": 63,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_P1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_P3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-078",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-078",
+      "sourceGameNumber": null,
+      "sourceRow": 64,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_S1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_S3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-080",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-080",
+      "sourceGameNumber": null,
+      "sourceRow": 65,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_O2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_O3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-082",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-082",
+      "sourceGameNumber": null,
+      "sourceRow": 66,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_P2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_P3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-084",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-084",
+      "sourceGameNumber": null,
+      "sourceRow": 67,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_S2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_S3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-086",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-086",
+      "sourceGameNumber": null,
+      "sourceRow": 68,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_O1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_O2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-090",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-090",
+      "sourceGameNumber": null,
+      "sourceRow": 69,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_P1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_P2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-110",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-110",
+      "sourceGameNumber": null,
+      "sourceRow": 70,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Play-in",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd pt_O",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdpt_O",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st pt_S",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_S",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 121,
+          "raw": "121"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_W3",
+          "raw": "au_W3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-114",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-114",
+      "sourceGameNumber": null,
+      "sourceRow": 71,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Play-in",
+      "venue": "EL TORO HS 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd pt_P",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdpt_P",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "2nd pt_S",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_S",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 129,
+          "raw": "129"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_V2",
+          "raw": "au_V2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-121",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-121",
+      "sourceGameNumber": null,
+      "sourceRow": 79,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd pt_P",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_P",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W110",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W110",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 145,
+          "raw": "145"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 153,
+          "raw": "153"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-125",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-125",
+      "sourceGameNumber": null,
+      "sourceRow": 80,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd pt_M",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_M",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W113",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W113",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 145,
+          "raw": "145"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 153,
+          "raw": "153"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-129",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-129",
+      "sourceGameNumber": null,
+      "sourceRow": 81,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd pt_O",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_O",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W114",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W114",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 149,
+          "raw": "149"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 157,
+          "raw": "157"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-133",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-133",
+      "sourceGameNumber": null,
+      "sourceRow": 82,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd pt_N",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_N",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W109",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W109",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 149,
+          "raw": "149"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 157,
+          "raw": "157"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-137",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-137",
+      "sourceGameNumber": null,
+      "sourceRow": 83,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "1-2 v 3-4",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st pt_N",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_N",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st pt_O",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_O",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 174,
+          "raw": "174"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 161,
+          "raw": "161"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-141",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-141",
+      "sourceGameNumber": null,
+      "sourceRow": 84,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "1-2 v 3-4",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st pt_M",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_M",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st pt_P",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_P",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 173,
+          "raw": "173"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 165,
+          "raw": "165"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-145",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-145",
+      "sourceGameNumber": null,
+      "sourceRow": 85,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-6 v 7-8",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W121",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W121",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W125",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W125",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 161,
+          "raw": "161"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 178,
+          "raw": "178"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-149",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-149",
+      "sourceGameNumber": null,
+      "sourceRow": 86,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5-6 v 7-8",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W129",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W129",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W133",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W133",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 165,
+          "raw": "165"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 178,
+          "raw": "178"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-153",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-153",
+      "sourceGameNumber": null,
+      "sourceRow": 87,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L125",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L125",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L121",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L121",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 177,
+          "raw": "177"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 181,
+          "raw": "181"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-157",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-157",
+      "sourceGameNumber": null,
+      "sourceRow": 88,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L133",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L133",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L129",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L129",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 177,
+          "raw": "177"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 181,
+          "raw": "181"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-161",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-161",
+      "sourceGameNumber": null,
+      "sourceRow": 89,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "play to semi",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L137",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L137",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W145",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W145",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 173,
+          "raw": "173"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 193,
+          "raw": "193"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-165",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-165",
+      "sourceGameNumber": null,
+      "sourceRow": 90,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "play to semi",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L141",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L141",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W149",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W149",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 174,
+          "raw": "174"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 193,
+          "raw": "193"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-122",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-122",
+      "sourceGameNumber": null,
+      "sourceRow": 93,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_V1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_V3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-126",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-126",
+      "sourceGameNumber": null,
+      "sourceRow": 94,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_W1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_W3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-130",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-130",
+      "sourceGameNumber": null,
+      "sourceRow": 95,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_V2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_V3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-134",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-134",
+      "sourceGameNumber": null,
+      "sourceRow": 96,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_W2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_W3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-138",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-138",
+      "sourceGameNumber": null,
+      "sourceRow": 97,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_V1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_V2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-142",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-142",
+      "sourceGameNumber": null,
+      "sourceRow": 98,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_W1",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W1",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_W2",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W2",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-192",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-192",
+      "sourceGameNumber": null,
+      "sourceRow": 102,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd au_V",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdau_V",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rd au_W",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdau_W",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "5th",
+          "raw": "5th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "6th",
+          "raw": "6th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-191",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-191",
+      "sourceGameNumber": null,
+      "sourceRow": 103,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd au_V",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndau_V",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "2nd au_W",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndau_W",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "3rd",
+          "raw": "3rd"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "4th",
+          "raw": "4th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-182",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-182",
+      "sourceGameNumber": null,
+      "sourceRow": 104,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st au_V",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stau_V",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st au_W",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stau_W",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "1st",
+          "raw": "1st"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "2nd",
+          "raw": "2nd"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-181",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-181",
+      "sourceGameNumber": null,
+      "sourceRow": 105,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "11th",
+      "venue": "TUSTIN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L153",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L153",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L157",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L157",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "11th",
+          "raw": "11th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "12th",
+          "raw": "12th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-178",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-178",
+      "sourceGameNumber": null,
+      "sourceRow": 108,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L145",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L145",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L149",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L149",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "7th",
+          "raw": "7th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "8th",
+          "raw": "8th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-177",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-177",
+      "sourceGameNumber": null,
+      "sourceRow": 109,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "9th",
+      "venue": "BECKMAN HS 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W153",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W153",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W157",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W157",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "9th",
+          "raw": "9th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "10th",
+          "raw": "10th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-173",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-173",
+      "sourceGameNumber": null,
+      "sourceRow": 112,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "semi",
+      "venue": "WOOLLETT LEFT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W141",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W141",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W161",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W161",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 186,
+          "raw": "186"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 185,
+          "raw": "185"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-193",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-193",
+      "sourceGameNumber": null,
+      "sourceRow": 113,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "venue": "WOOLLETT LEFT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L161",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L161",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L165",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L165",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "5th",
+          "raw": "5th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "6th",
+          "raw": "6th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-185",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-185",
+      "sourceGameNumber": null,
+      "sourceRow": 114,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "venue": "WOOLLETT LEFT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L173",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L173",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L174",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L174",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "3rd",
+          "raw": "3rd"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "4th",
+          "raw": "4th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-174",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-174",
+      "sourceGameNumber": null,
+      "sourceRow": 117,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "semi",
+      "venue": "WOOLLETT RIGHT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W137",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W137",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W165",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W165",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 186,
+          "raw": "186"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 185,
+          "raw": "185"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-weekend-1-10u-girls-championship-10g-186",
+      "eventId": "2026-jo-weekend-1",
+      "divisionId": "10u-girls-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10G-186",
+      "sourceGameNumber": null,
+      "sourceRow": 118,
+      "dateLabel": null,
+      "dateIso": null,
+      "timeLabel": null,
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "venue": "WOOLLETT RIGHT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W173",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W173",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W174",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W174",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null
+      },
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "1st",
+          "raw": "1st"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "2nd",
+          "raw": "2nd"
+        }
+      }
+    }
+  ]
+}
