@@ -35,6 +35,9 @@ def main() -> int:
     registry = load_json(ROOT / "data" / "tournaments" / "registry.json")
     event = next(x for x in registry["events"] if x["id"] == "2026-jo-weekend-2")
     division = next(x for x in event["divisions"] if x["id"] == "14u-boys-classic")
+    urls = module.source_urls(division)
+    require(urls and "sheet=" in urls[0], "Stable sheet-name endpoints must be attempted before GIDs")
+    require(any("gid=" in url for url in urls), "Legacy GID endpoints must remain available as fallbacks")
     resolver = IdentityResolver()
     fixture = (ROOT / "tests" / "fixtures" / "tournaments" / "jo-bracket-v1.csv").read_text(encoding="utf-8")
     existing_normalized, existing_qa = normalize_csv(
@@ -93,7 +96,7 @@ def main() -> int:
 
     print("TOURNAMENT SYNC SAFETY TESTS PASSED")
     print(" - Zero-game and blocking candidates are rejected before any files are written")
-    print(" - Alternate GIDs and sheet-name fallbacks are tried automatically")
+    print(" - Stable sheet names are tried before alternate GIDs")
     print(" - Large schedule regressions cannot replace a banked dataset")
     print(" - Last known-good snapshots survive invalid live Google Sheet responses")
     return 0

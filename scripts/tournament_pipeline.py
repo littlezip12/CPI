@@ -103,6 +103,9 @@ RESOLVED_PREFIXES = [
 ]
 SEED_RE = re.compile(r"^\s*#?(?P<seed>\d+)\s*[-–—:]\s*(?P<team>.+)$")
 PLACEHOLDER_RE = re.compile(r"^(?:TBD|TBA|BYE|W|L|-|N/?A)$", re.I)
+
+JO_GAME_NUMBER_RE = re.compile(r"^\d+[A-Z]?$", re.I)
+JO_GAME_ID_RE = re.compile(r"^[A-Z0-9_-]+-\d+[A-Z]?$", re.I)
 HEADER_ALIASES = {
     "date": ["date"],
     "time": ["time"],
@@ -174,8 +177,9 @@ def parse_destination(raw: Any) -> dict[str, Any] | None:
     text = normalize_space(raw)
     if not text:
         return None
-    if re.fullmatch(r"\d+", text):
-        return {"kind": "game", "gameNumber": int(text), "raw": text}
+    if JO_GAME_NUMBER_RE.fullmatch(text):
+        number: int | str = int(text) if text.isdigit() else text.upper()
+        return {"kind": "game", "gameNumber": number, "raw": text}
     if re.fullmatch(r"\d+(?:st|nd|rd|th)", text, re.I):
         return {"kind": "placement", "placement": text.lower(), "raw": text}
     return {"kind": "slot", "slot": text, "raw": text}
@@ -323,6 +327,17 @@ def normalize_csv(
         game_number_raw, source_game_id = get("game_number"), get("game_id")
         if not (date_label or time_label or game_number_raw or source_game_id):
             continue
+        if division.get("parser") == "jo_bracket_v1":
+            # JO workbooks contain seed/crossover tables beneath repeated schedule
+            # headers. Only rows with a real date, time, game number, and GMID
+            # are authoritative schedule records. Lettered games such as 5A
+            # and 140A are valid and must remain distinct.
+            if not date_label or not time_label:
+                continue
+            if not JO_GAME_NUMBER_RE.fullmatch(game_number_raw):
+                continue
+            if not JO_GAME_ID_RE.fullmatch(source_game_id):
+                continue
 
         white = parse_participant(raw_white, scope, resolver)
         dark = parse_participant(raw_dark, scope, resolver)
@@ -372,7 +387,7 @@ def normalize_csv(
             if issue:
                 issues.append(issue)
 
-        game_number = int(game_number_raw) if re.fullmatch(r"\d+", game_number_raw) else None
+        game_number = int(game_number_raw) if game_number_raw.isdigit() else (game_number_raw.upper() if JO_GAME_NUMBER_RE.fullmatch(game_number_raw) else None)
         games.append({
             "id": game_id,
             "eventId": event["id"],

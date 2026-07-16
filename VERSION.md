@@ -1,11 +1,10 @@
-# CPI 7.44.0
+# CPI 7.44.2
 
-Ranking Evidence & Review Engine.
+Boys JO source stabilization.
 
-- Converts only verified final tournament games into ranking-review evidence.
-- Produces conservative upward, downward, or hold review ranges.
-- Surfaces head-to-head results, common opponents, notable wins/losses, and same-club hierarchy warnings.
-- Keeps tournament seeds, schedules, and incomplete scores out of ranking recommendations.
-- Never modifies `rankings.json` or publishes movement automatically.
-- Pre-tournament state correctly shows zero final games and zero recommendations.
-- Rebuilds automatically after each successful tournament-data sync.
+- Repairs all 12 Boys Weekend 2 divisions together.
+- Uses verified worksheet names before mutable Google Sheet GIDs.
+- Preserves current and historical GIDs as secondary fallbacks.
+- Provides a verified same-origin schedule snapshot for every Boys division.
+- Keeps two-minute live Google Sheet refresh while preventing blank tabs from making a division unusable.
+- Confirms 2,133 scheduled games, zero completed games, and zero blocking schedule defects across the official workbook snapshot.

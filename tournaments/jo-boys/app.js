@@ -1,11 +1,11 @@
-/* CPI Boys Junior Olympics schedule tool — Release 7.44.1 */
+/* CPI Boys Junior Olympics schedule tool — Release 7.44.2 */
 const SHEET_ID='1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4';
-const APP_VERSION='7.44.1';
-const DATASETS=[{"id":"10u-championship","age":"10U","division":"Championship (D1)","gid":"1659399499","gidAliases":["1659399499"]},{"id":"12u-boys-championship","age":"12U","division":"Boys Championship (D1)","gid":"1775879786","gidAliases":["1775879786"]},{"id":"12u-boys-classic","age":"12U","division":"Boys Classic (D2)","gid":"1808416221","gidAliases":["1808416221"]},{"id":"14u-boys-championship","age":"14U","division":"Boys Championship (D1)","gid":"345265555","gidAliases":["345265555"]},{"id":"14u-boys-classic","age":"14U","division":"Boys Classic (D2)","gid":"732732301","gidAliases":["732732301","1855118263"],"sheetName":"14U_M_Classic"},{"id":"14u-boys-invitational","age":"14U","division":"Boys Invitational (D3)","gid":"1975322406","gidAliases":["1975322406"]},{"id":"16u-boys-championship","age":"16U","division":"Boys Championship (D1)","gid":"2012475287","gidAliases":["2012475287"]},{"id":"16u-boys-classic","age":"16U","division":"Boys Classic (D2)","gid":"1142418841","gidAliases":["1142418841"]},{"id":"16u-boys-invitational","age":"16U","division":"Boys Invitational (D3)","gid":"1686454973","gidAliases":["1686454973"]},{"id":"18u-boys-championship","age":"18U","division":"Boys Championship (D1)","gid":"38488572","gidAliases":["38488572"]},{"id":"18u-boys-classic","age":"18U","division":"Boys Classic (D2)","gid":"333261986","gidAliases":["333261986"]},{"id":"18u-boys-invitational","age":"18U","division":"Boys Invitational (D3)","gid":"289749610","gidAliases":["289749610"]}];
+const APP_VERSION='7.44.2';
+const DATASETS=[{"id":"10u-championship","age":"10U","division":"Championship (D1)","gid":"1659399499","gidAliases":["1659399499"],"sheetName":"10U_M_Champ_35","sheetNameAliases":["10U_M_Champ_35"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/10u-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":141,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"12u-boys-championship","age":"12U","division":"Boys Championship (D1)","gid":"1775879786","gidAliases":["1775879786"],"sheetName":"12U_M_Champ","sheetNameAliases":["12U_M_Champ"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/12u-boys-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"12u-boys-classic","age":"12U","division":"Boys Classic (D2)","gid":"1808416221","gidAliases":["1808416221"],"sheetName":"12U_M_Classic_53","sheetNameAliases":["12U_M_Classic_53"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/12u-boys-classic.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":218,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"14u-boys-championship","age":"14U","division":"Boys Championship (D1)","gid":"345265555","gidAliases":["345265555"],"sheetName":"14U_M_Champ","sheetNameAliases":["14U_M_Champ"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/14u-boys-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"14u-boys-classic","age":"14U","division":"Boys Classic (D2)","gid":"732732301","gidAliases":["732732301","1855118263"],"sheetName":"14U_M_Classic","sheetNameAliases":["14U_M_Classic"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/14u-boys-classic.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"14u-boys-invitational","age":"14U","division":"Boys Invitational (D3)","gid":"1975322406","gidAliases":["1975322406"],"sheetName":"14U_M_Invite_36","sheetNameAliases":["14U_M_Invite_36"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/14u-boys-invitational.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":146,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"16u-boys-championship","age":"16U","division":"Boys Championship (D1)","gid":"2012475287","gidAliases":["2012475287"],"sheetName":"16U_M_Champ","sheetNameAliases":["16U_M_Champ"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/16u-boys-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"16u-boys-classic","age":"16U","division":"Boys Classic (D2)","gid":"1142418841","gidAliases":["1142418841"],"sheetName":"16U_M_Classic","sheetNameAliases":["16U_M_Classic"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/16u-boys-classic.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"16u-boys-invitational","age":"16U","division":"Boys Invitational (D3)","gid":"1686454973","gidAliases":["1686454973"],"sheetName":"16U_M_Invite","sheetNameAliases":["16U_M_Invite"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/16u-boys-invitational.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"18u-boys-championship","age":"18U","division":"Boys Championship (D1)","gid":"38488572","gidAliases":["38488572"],"sheetName":"18U_M_Champ","sheetNameAliases":["18U_M_Champ"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/18u-boys-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"18u-boys-classic","age":"18U","division":"Boys Classic (D2)","gid":"333261986","gidAliases":["333261986"],"sheetName":"18U_M_Classic","sheetNameAliases":["18U_M_Classic"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/18u-boys-classic.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"18u-boys-invitational","age":"18U","division":"Boys Invitational (D3)","gid":"289749610","gidAliases":["289749610"],"sheetName":"18U_M_Invite 24","sheetNameAliases":["18U_M_Invite 24"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/18u-boys-invitational.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":92,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"}];
 const EMBEDDED_FALLBACKS={};
 const REFRESH_MS=120000;
 const ACTIVE_REFRESH_MIN_MS=30000;
-const CACHE_PREFIX='joBoysScheduleV2:';
+const CACHE_PREFIX='joBoysScheduleV3:';
 const ACRONYMS=new Set(['SD','CDM','LB','CC','WPC','CHAWP','LOWPO','SHAQ','OCWPC','ECA','ASA','CMAC','TPC','WCAC','SET','LA','OC','USA','CIU']);
 const age=$('age'),division=$('division'),team=$('team'),summary=$('summary'),next=$('next'),journey=$('journey'),paths=$('paths'),potential=$('potential'),schedule=$('schedule'),search=$('search'),day=$('day'),share=$('share');
 let DATA={teams:[],games:[]},RESOLVED={games:[],map:new Map(),slots:new Map(),placements:new Map(),seedLookup:new Map()},loadVersion=0,refreshTimer=null,lastLoadAttemptAt=0;
@@ -19,41 +19,40 @@ function identityAttributes(name){const identity=canonicalIdentity(name);return 
 function updateSheetLink(){
   const config=currentConfig(),link=$('sheetLink');
   if(!link)return;
-  if(!config){
-    link.href='#';
-    link.setAttribute('aria-disabled','true');
-    return;
-  }
-  link.href=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit?gid=${config.gid}#gid=${config.gid}`;
-  link.setAttribute('aria-label',`View ${config.age} ${config.division} full division schedule in Google Sheets`);
+  if(!config){link.href='#';link.setAttribute('aria-disabled','true');return;}
+  link.href=config.officialUrl||`https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`;
+  link.setAttribute('aria-label',`View the official ${config.age} ${config.division} workbook in Google Sheets`);
   link.removeAttribute('aria-disabled');
 }
 
 function unique(values){return [...new Set(values.filter(Boolean).map(String))]}
+function configuredSheetNames(config){return unique([config.sheetName,...(config.sheetNameAliases||[])])}
 function datasetUrls(config){
-  const root=`https://docs.google.com/spreadsheets/d/${SHEET_ID}`;
+  const root=`https://docs.google.com/spreadsheets/d/${SHEET_ID}`,urls=[];
+  for(const name of configuredSheetNames(config)){
+    const sheet=encodeURIComponent(name);
+    urls.push(`${root}/gviz/tq?tqx=out:csv&sheet=${sheet}`);
+    urls.push(`${root}/gviz/tq?sheet=${sheet}&tqx=out:csv`);
+  }
   const gids=unique([config.gid,...(config.gidAliases||[])]);
-  const urls=[];
   for(const gid of gids){
     urls.push(`${root}/gviz/tq?tqx=out:csv&gid=${encodeURIComponent(gid)}`);
     urls.push(`${root}/gviz/tq?gid=${encodeURIComponent(gid)}&tqx=out:csv`);
     urls.push(`${root}/export?format=csv&gid=${encodeURIComponent(gid)}`);
   }
-  if(config.sheetName){
-    const sheet=encodeURIComponent(config.sheetName);
-    urls.push(`${root}/gviz/tq?tqx=out:csv&sheet=${sheet}`);
-  }
   return unique(urls);
 }
 function jsonpUrls(config,callbackName){
-  const root=`https://docs.google.com/spreadsheets/d/${SHEET_ID}`;
+  const root=`https://docs.google.com/spreadsheets/d/${SHEET_ID}`,urls=[];
+  for(const name of configuredSheetNames(config)){
+    urls.push(`${root}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&sheet=${encodeURIComponent(name)}`);
+  }
   const gids=unique([config.gid,...(config.gidAliases||[])]);
-  const urls=[];
   for(const gid of gids){urls.push(`${root}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&gid=${encodeURIComponent(gid)}`)}
-  if(config.sheetName){urls.push(`${root}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&sheet=${encodeURIComponent(config.sheetName)}`)}
   return unique(urls);
 }
-function exportUrl(config){return `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit?gid=${config.gid}#gid=${config.gid}`}
+function exportUrl(config){return config.officialUrl||`https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`}
+function snapshotUrl(config){return config.snapshotPath||`../../data/tournaments/raw/2026-jo-weekend-2/${encodeURIComponent(config.id)}.csv`}
 
 function normalizeHeader(value){return String(value||'').replace(/^\uFEFF/,'').trim().toLowerCase().replace(/\s+/g,' ')}
 function parseCSV(text){let rows=[],row=[],cell='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i],n=text[i+1];if(quoted){if(c==='"'&&n==='"'){cell+='"';i++}else if(c==='"')quoted=false;else cell+=c}else if(c==='"')quoted=true;else if(c===','){row.push(cell);cell=''}else if(c==='\n'){row.push(cell.replace(/\r$/,''));rows.push(row);row=[];cell=''}else cell+=c}if(cell||row.length){row.push(cell);rows.push(row)}return rows}
@@ -68,11 +67,14 @@ function headerMap(row){
   const darkScore=normalized.findIndex((v,i)=>i>dark&&(winnerTo<0||i<winnerTo)&&(v==='s'||v==='score'));
   return{date,time,type,location,game,white,whiteScore,dark,darkScore,winnerTo,loserTo,gmid};
 }
+function normalizeGameNumber(value){const raw=String(value||'').trim().toUpperCase();return /^\d+$/.test(raw)?Number(raw):raw}
+function validGameNumber(value){return /^\d+[A-Z]?$/.test(String(value||'').trim())}
+function validGameId(value){return /^[A-Z0-9_-]+-\d+[A-Z]?$/.test(String(value||'').trim())}
 function mappedGame(row,map){
   const get=i=>i>=0?String(row[i]||'').trim():'';
   const gameRaw=get(map.game),gmid=get(map.gmid),date=get(map.date),time=get(map.time);
-  if(!/^\d+$/.test(gameRaw)||!/[A-Za-z0-9_-]+-\d{2,4}$/.test(gmid)||!date||!time)return null;
-  return{date,time,type:get(map.type),location:get(map.location),game:Number(gameRaw),whiteRaw:get(map.white),whiteScore:get(map.whiteScore),darkRaw:get(map.dark),darkScore:get(map.darkScore),winnerTo:normalizeDestination(get(map.winnerTo)),loserTo:normalizeDestination(get(map.loserTo)),gmid};
+  if(!validGameNumber(gameRaw)||!validGameId(gmid)||!date||!time)return null;
+  return{date,time,type:get(map.type),location:get(map.location),game:normalizeGameNumber(gameRaw),whiteRaw:get(map.white),whiteScore:get(map.whiteScore),darkRaw:get(map.dark),darkScore:get(map.darkScore),winnerTo:normalizeDestination(get(map.winnerTo)),loserTo:normalizeDestination(get(map.loserTo)),gmid};
 }
 function inferredGame(row){
   const cells=row.map(v=>String(v??'').trim());
@@ -82,7 +84,7 @@ function inferredGame(row){
   if(dateIndex<0)return null;
   const timeIndex=cells.findIndex((v,i)=>i>dateIndex&&i<gmidIndex&&/^\d{1,2}:\d{2}\s*(AM|PM)$/i.test(v));
   if(timeIndex<0)return null;
-  const gameIndex=cells.findIndex((v,i)=>i>timeIndex&&i<gmidIndex&&/^\d+$/.test(v));
+  const gameIndex=cells.findIndex((v,i)=>i>timeIndex&&i<gmidIndex&&validGameNumber(v));
   if(gameIndex<0)return null;
   const destinationStart=gmidIndex-2;
   if(destinationStart<=gameIndex+1)return null;
@@ -99,7 +101,7 @@ function inferredGame(row){
   const scoreBetween=cells.slice(white+1,dark).find(v=>/^\d+$/.test(v))||'';
   const scoreAfter=cells.slice(dark+1,destinationStart).find(v=>/^\d+$/.test(v))||'';
   return{
-    date:cells[dateIndex],time:cells[timeIndex],type:cells[timeIndex+1]||'',location:cells[gameIndex-1]||'',game:Number(cells[gameIndex]),
+    date:cells[dateIndex],time:cells[timeIndex],type:cells[timeIndex+1]||'',location:cells[gameIndex-1]||'',game:normalizeGameNumber(cells[gameIndex]),
     whiteRaw:cells[white],whiteScore:scoreBetween,darkRaw:cells[dark],darkScore:scoreAfter,
     winnerTo:normalizeDestination(cells[gmidIndex-2]),loserTo:normalizeDestination(cells[gmidIndex-1]),gmid:cells[gmidIndex]
   };
@@ -142,6 +144,17 @@ function validateGames(games){
   if(games.length<5||teams.length<2)throw new Error(`Only ${games.length} games and ${teams.length} teams returned`);
   return{games,teams};
 }
+async function fetchVerifiedSnapshot(config){
+  const url=snapshotUrl(config);
+  const response=await fetch(`${url}${url.includes('?')?'&':'?'}_=${Date.now()}`,{cache:'no-store'});
+  if(!response.ok)throw new Error(`Snapshot HTTP ${response.status}`);
+  const text=await response.text();
+  if(looksLikeHtml(text))throw new Error('Snapshot returned HTML instead of CSV');
+  const result=validateGames(parseLive(text));
+  result.url=url;result.method='verified snapshot';result.isFallback=true;
+  result.updatedAt=response.headers?.get?.('last-modified')||config.snapshotUpdatedAt||null;
+  return result;
+}
 async function fetchDataset(config){
   const errors=[];
   for(const url of datasetUrls(config)){
@@ -151,7 +164,7 @@ async function fetchDataset(config){
       const text=await response.text();
       if(looksLikeHtml(text))throw new Error('Google returned HTML instead of CSV');
       const result=validateGames(parseLive(text));
-      result.url=url;result.method='csv';return result;
+      result.url=url;result.method=url.includes('sheet=')?'sheet-name CSV':'GID CSV';return result;
     }catch(error){errors.push(`CSV ${error?.message||String(error)}`)}
   }
   for(const urlTemplate of jsonpUrls(config,'__CALLBACK__')){
@@ -160,12 +173,17 @@ async function fetchDataset(config){
       if(payload&&payload.status==='error')throw new Error(payload.errors?.map(e=>e.detailed_message||e.message).join('; ')||'Google returned query error');
       const rows=rowsFromGviz(payload);
       const result=validateGames(parseRows(rows));
-      result.url=urlTemplate;result.method='jsonp';return result;
+      result.url=urlTemplate;result.method=urlTemplate.includes('sheet=')?'sheet-name JSONP':'GID JSONP';return result;
     }catch(error){errors.push(`JSONP ${error?.message||String(error)}`)}
   }
-  throw new Error(errors.slice(-5).join(' | '));
+  try{
+    const snapshot=await fetchVerifiedSnapshot(config);
+    snapshot.liveErrors=errors.slice(-5);
+    return snapshot;
+  }catch(error){errors.push(`Snapshot ${error?.message||String(error)}`)}
+  throw new Error(errors.slice(-6).join(' | '));
 }
-function normalizeDestination(value){let v=String(value||'').trim();let m=v.match(/^[WL]-?(\d+)$/i);if(m)return m[1];m=v.match(/^[WL]-?([a-z]{2}_[A-Z]\d)$/i);if(m)return m[1];return v.replace(/-$/,'')}
+function normalizeDestination(value){let v=String(value||'').trim();let m=v.match(/^[WL]-?(\d+[A-Z]?)$/i);if(m)return m[1].toUpperCase();m=v.match(/^[WL]-?([a-z]{2}_[A-Z]\d)$/i);if(m)return m[1];return v.replace(/-$/,'')}
 function titleTeam(name){return String(name||'').trim().replace(/\(Seed-Team Name\)$/i,'').trim().split(/\s+/).map(word=>{const upper=word.toUpperCase();if(ACRONYMS.has(upper))return upper;if(/^\d+$/.test(word))return word;return word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()}).join(' ')}
 function seedInfo(raw){
   const value=String(raw||'').trim(),dash=value.indexOf('-');if(dash<1)return null;
@@ -175,7 +193,7 @@ function seedInfo(raw){
   const seedMatch=prefix.match(/\((\d+)\)$/)||prefix.match(/^(\d+)$/);return{team:titleTeam(name),group,seed:seedMatch?Number(seedMatch[1]):999};
 }
 function smartTeam(raw){return seedInfo(raw)?.team||null}
-function parseWL(raw){const m=String(raw||'').trim().match(/^([WL])(\d+)$/i);return m?{kind:m[1].toUpperCase(),game:Number(m[2])}:null}
+function parseWL(raw){const m=String(raw||'').trim().match(/^([WL])#?(\d+[A-Z]?)$/i);return m?{kind:m[1].toUpperCase(),game:normalizeGameNumber(m[2])}:null}
 function parsePoolSlot(raw){const m=String(raw||'').trim().match(/^([A-Za-z]{2})_([A-Z])(\d)$/);return m?{track:m[1].toLowerCase(),pool:m[2],seed:Number(m[3]),key:`${m[1].toLowerCase()}_${m[2]}${m[3]}`} : null}
 function parsePoolPlacement(raw){const m=String(raw||'').trim().replace(/-$/,'').match(/^(1st|2nd|3rd)\s+([A-Za-z]{2})_([A-Z])$/i);return m?{rank:Number(m[1][0]),track:m[2].toLowerCase(),pool:m[3].toUpperCase(),key:`${m[2].toLowerCase()}_${m[3].toUpperCase()}`} : null}
 function parseGroupPlacement(raw){const v=String(raw||'').trim().replace(/-$/,'').replace(/_/g,' ');const m=v.match(/^(1st|2nd|3rd)\s+([A-Z])$/i);return m?{rank:Number(m[1][0]),group:m[2].toUpperCase(),key:m[2].toUpperCase()}:null}
@@ -216,14 +234,14 @@ function teamOptionLabel(name){const seed=seedForTeam(name);return seed?`${name}
 function friendlyDate(raw){const labels={'18-Jul':'Saturday, July 18','19-Jul':'Sunday, July 19','20-Jul':'Monday, July 20','21-Jul':'Tuesday, July 21'};return labels[raw]||raw}
 function timeValue(value){const m=String(value||'').match(/^(\d+):(\d+)\s*(AM|PM)$/i);if(!m)return 9999;let h=Number(m[1])%12;if(m[3].toUpperCase()==='PM')h+=12;return h*60+Number(m[2])}
 function dateValue(raw){const m=String(raw||'').match(/^(\d{1,2})-([A-Za-z]{3})$/);if(!m)return 999;const months={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};return(months[m[2]]||99)*100+Number(m[1])}
-function gameSort(a,b){return dateValue(a.date)-dateValue(b.date)||timeValue(a.time)-timeValue(b.time)||a.game-b.game}
+function gameSort(a,b){return dateValue(a.date)-dateValue(b.date)||timeValue(a.time)-timeValue(b.time)||String(a.game).localeCompare(String(b.game),undefined,{numeric:true,sensitivity:'base'})}
 function gamesForTeam(name){return RESOLVED.games.filter(g=>g.whiteTeam===name||g.darkTeam===name).sort(gameSort)}
 function resultFor(g,name){const o=outcome(g);return o?(o.winner===name?'win':'loss'):null}
 function otherTeam(g,name){return g.whiteTeam===name?g.darkTeam:g.darkTeam===name?g.whiteTeam:null}
-function targetGame(destination){return /^\d+$/.test(String(destination||''))?RESOLVED.map.get(Number(destination)):null}
+function targetGame(destination){return validGameNumber(destination)?RESOLVED.map.get(normalizeGameNumber(destination)):null}
 function sourceCandidates(raw){const ref=parseWL(raw);if(!ref)return[];const source=RESOLVED.map.get(ref.game);return source?[source.whiteTeam,source.darkTeam].filter(Boolean):[]}
 function gameCandidates(g,name){if(!g)return[];const candidates=[];for(const side of ['white','dark']){const known=g[`${side}Team`],raw=g[`${side}Raw`];if(known){if(known!==name)candidates.push(known);continue}const ref=parseWL(raw),source=ref&&RESOLVED.map.get(ref.game);if(source&&(source.whiteTeam===name||source.darkTeam===name))continue;candidates.push(...sourceCandidates(raw).filter(x=>x!==name))}return[...new Set(candidates)]}
-function destinationDescription(value){if(/^\d+$/.test(String(value||''))){const g=targetGame(value);return g?{title:`Game ${g.game}`,detail:`${friendlyDate(g.date)} · ${g.time} · ${g.location}`}:{title:`Game ${value}`,detail:'Schedule details unavailable'}}const slot=parsePoolSlot(value);if(slot)return{title:slotLabel(value),detail:'Pool games will appear automatically after this result is posted.'};return value&&!['RR','bracket'].includes(String(value).toLowerCase())?{title:slotLabel(value),detail:'The next scheduled game will appear when the bracket resolves.'}:null}
+function destinationDescription(value){if(validGameNumber(value)){const g=targetGame(value);return g?{title:`Game ${g.game}`,detail:`${friendlyDate(g.date)} · ${g.time} · ${g.location}`}:{title:`Game ${value}`,detail:'Schedule details unavailable'}}const slot=parsePoolSlot(value);if(slot)return{title:slotLabel(value),detail:'Pool games will appear automatically after this result is posted.'};return value&&!['RR','bracket'].includes(String(value).toLowerCase())?{title:slotLabel(value),detail:'The next scheduled game will appear when the bracket resolves.'}:null}
 
 const initialParams=new URLSearchParams(window.location.search);
 let pendingTeam=initialParams.get('team')||'';
@@ -277,7 +295,7 @@ function readCache(config){try{const raw=localStorage.getItem(`${CACHE_PREFIX}${
 function writeCache(config,data){try{localStorage.setItem(`${CACHE_PREFIX}${config.id}`,JSON.stringify({...data,cachedAt:new Date().toISOString()}))}catch{}}
 function sourceTimestamp(value){if(!value)return'Not yet verified';const d=new Date(value);return Number.isNaN(d.getTime())?String(value):d.toLocaleString([],{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}
 function renderSourceMeta(config,mode,games,updatedAt,detail=''){const root=$('sourceMeta');if(!root)return;const completed=(games||[]).filter(isFinal).length,scheduled=Math.max(0,(games||[]).length-completed);root.innerHTML=`<div><span>Source</span><strong>Official Google Sheet</strong></div><div><span>Last successful update</span><strong>${esc(sourceTimestamp(updatedAt))}</strong></div><div><span>Schedule</span><strong>${scheduled} scheduled · ${completed} completed</strong></div><div><span>Mode</span><strong>${esc(mode)}</strong></div>${detail?`<p>${esc(detail)}</p>`:''}`;}
-async function loadCurrent(manual=false){const config=currentConfig();if(!config)return;lastLoadAttemptAt=Date.now();const version=++loadVersion,status=$('statusText'),dot=$('liveDot'),button=$('refresh');button.disabled=true;team.disabled=true;status.textContent=manual?`Refreshing ${config.division}…`:`Loading ${config.age} ${config.division}…`;renderSourceMeta(config,'Checking live source',[],null);try{const loaded=await fetchDataset(config);if(version!==loadVersion)return;const refreshedAt=new Date().toISOString();DATA={age:config.age,division:config.division,teams:loaded.teams,games:loaded.games};writeCache(config,DATA);dot.classList.remove('fallback');status.textContent=`Live from Google Sheets · ${config.age} ${config.division} · ${loaded.games.length} games · ${loaded.method||'live'} · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;renderSourceMeta(config,'Live browser refresh',loaded.games,refreshedAt,'The public viewer checks the official sheet every two minutes.')}catch(error){if(version!==loadVersion)return;const cached=readCache(config),embedded=EMBEDDED_FALLBACKS[config.id];if(cached){DATA={age:config.age,division:config.division,teams:cached.teams||teamsFromGames(cached.games),games:cached.games};dot.classList.add('fallback');status.textContent=`Using last successful ${config.age} ${config.division} update · live sheet unavailable (${error.message})`;renderSourceMeta(config,'Last verified browser cache',DATA.games,cached.cachedAt,'The live sheet could not be read, so CPI preserved the last successful schedule.')}else if(embedded){DATA=structuredClone(embedded);dot.classList.add('fallback');status.textContent=`Using embedded ${config.age} ${config.division} schedule · live sheet unavailable (${error.message})`;renderSourceMeta(config,'Embedded fallback',DATA.games,null,'Confirm changes with the official division sheet.')}else{DATA={age:config.age,division:config.division,teams:[],games:[]};dot.classList.add('fallback');status.textContent=`Could not load ${config.age} ${config.division} (${error.message})`;renderSourceMeta(config,'Unavailable',[],null,'No verified schedule is currently available in this browser.')}}finally{if(version===loadVersion){rebuild();button.disabled=false;team.disabled=false}}}
+async function loadCurrent(manual=false){const config=currentConfig();if(!config)return;lastLoadAttemptAt=Date.now();const version=++loadVersion,status=$('statusText'),dot=$('liveDot'),button=$('refresh');button.disabled=true;team.disabled=true;status.textContent=manual?`Refreshing ${config.division}…`:`Loading ${config.age} ${config.division}…`;renderSourceMeta(config,'Checking live source',[],null);try{const loaded=await fetchDataset(config);if(version!==loadVersion)return;const refreshedAt=loaded.updatedAt||new Date().toISOString();DATA={age:config.age,division:config.division,teams:loaded.teams,games:loaded.games};writeCache(config,DATA);if(loaded.isFallback){dot.classList.add('fallback');status.textContent=`Using last verified ${config.age} ${config.division} schedule · ${loaded.games.length} games · live Google tab unavailable`;renderSourceMeta(config,'Verified CPI snapshot',loaded.games,refreshedAt,'CPI tried the official sheet by stable tab name and prior GIDs. The last verified snapshot is displayed until the live tab is readable again.')}else{dot.classList.remove('fallback');status.textContent=`Live from Google Sheets · ${config.age} ${config.division} · ${loaded.games.length} games · ${loaded.method||'live'} · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;renderSourceMeta(config,'Live browser refresh',loaded.games,refreshedAt,'The public viewer checks the official sheet by stable tab name every two minutes.')}}catch(error){if(version!==loadVersion)return;const cached=readCache(config),embedded=EMBEDDED_FALLBACKS[config.id];if(cached){DATA={age:config.age,division:config.division,teams:cached.teams||teamsFromGames(cached.games),games:cached.games};dot.classList.add('fallback');status.textContent=`Using last successful ${config.age} ${config.division} update · live sheet unavailable (${error.message})`;renderSourceMeta(config,'Last verified browser cache',DATA.games,cached.cachedAt,'The official sheet and verified repository snapshot could not be read, so CPI preserved the last successful browser schedule.')}else if(embedded){DATA=structuredClone(embedded);dot.classList.add('fallback');status.textContent=`Using embedded ${config.age} ${config.division} schedule · live sheet unavailable (${error.message})`;renderSourceMeta(config,'Embedded fallback',DATA.games,null,'Confirm changes with the official division sheet.')}else{DATA={age:config.age,division:config.division,teams:[],games:[]};dot.classList.add('fallback');status.textContent=`Could not load ${config.age} ${config.division} (${error.message})`;renderSourceMeta(config,'Unavailable',[],null,'No verified schedule is currently available in this browser.')}}finally{if(version===loadVersion){rebuild();button.disabled=false;team.disabled=false}}}
 function selectDataset(){const config=currentConfig();if(!config)return;updateSheetLink();localStorage.setItem('joBoysAgeV1',config.age);localStorage.setItem(`joBoysDivisionV1:${config.age}`,config.id);search.value='';day.value='';loadCurrent(false)}
 age.addEventListener('change',()=>{localStorage.setItem('joBoysAgeV1',age.value);populateDivisions();selectDataset()});division.addEventListener('change',selectDataset);team.addEventListener('change',renderTeam);search.addEventListener('input',renderRelevant);day.addEventListener('change',renderRelevant);$('journeyTab').addEventListener('click',()=>{$('journeyTab').classList.add('active');$('relevantTab').classList.remove('active');journey.classList.remove('hidden');$('relevant').classList.add('hidden')});$('relevantTab').addEventListener('click',()=>{$('relevantTab').classList.add('active');$('journeyTab').classList.remove('active');journey.classList.add('hidden');$('relevant').classList.remove('hidden')});$('refresh').addEventListener('click',()=>loadCurrent(true));
 $('share')?.addEventListener('click',copyShareLink);

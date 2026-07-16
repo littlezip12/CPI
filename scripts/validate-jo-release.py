@@ -31,6 +31,21 @@ EXPECTED_BOYS = {
     ('18U','Boys Invitational (D3)','289749610'),
 }
 
+EXPECTED_BOYS_SHEETS = {
+    '10u-championship': ('10U_M_Champ_35', 141),
+    '12u-boys-championship': ('12U_M_Champ', 192),
+    '12u-boys-classic': ('12U_M_Classic_53', 218),
+    '14u-boys-championship': ('14U_M_Champ', 192),
+    '14u-boys-classic': ('14U_M_Classic', 192),
+    '14u-boys-invitational': ('14U_M_Invite_36', 146),
+    '16u-boys-championship': ('16U_M_Champ', 192),
+    '16u-boys-classic': ('16U_M_Classic', 192),
+    '16u-boys-invitational': ('16U_M_Invite', 192),
+    '18u-boys-championship': ('18U_M_Champ', 192),
+    '18u-boys-classic': ('18U_M_Classic', 192),
+    '18u-boys-invitational': ('18U_M_Invite 24', 92),
+}
+
 errors: list[str] = []
 
 def fail(message: str) -> None:
@@ -87,6 +102,17 @@ else:
         fail(f'Central Boys JO registry mismatch. Expected {len(expected)} exact datasets, found {len(actual)}')
     if len(girls_rows) != 11:
         fail(f'Central Girls JO registry should contain 11 datasets, found {len(girls_rows)}')
+    for row in boys_rows:
+        expected_sheet, expected_games = EXPECTED_BOYS_SHEETS.get(row.get('id'), (None, None))
+        if row.get('sheetName') != expected_sheet:
+            fail(f'Boys JO stable sheet-name mismatch for {row.get("id")}: {row.get("sheetName")!r}')
+        if row.get('sourceStrategy') != 'sheet_name_primary':
+            fail(f'Boys JO source strategy must be sheet_name_primary for {row.get("id")}')
+        if row.get('expectedScheduleGames') != expected_games:
+            fail(f'Boys JO expected game count mismatch for {row.get("id")}')
+        snapshot = ROOT / str(row.get('snapshotPath') or '')
+        if not snapshot.exists():
+            fail(f'Missing Boys JO verified snapshot for {row.get("id")}: {row.get("snapshotPath")}')
     for label, rows in [('Boys', boys_rows), ('Girls', girls_rows)]:
         gids = [str(x.get('gid')) for x in rows]
         ids = [x.get('id') for x in rows]
@@ -122,7 +148,7 @@ for rel in ('tournaments/jo-boys/app.js','tournaments/jo-girls/app.js'):
         for token in ('seedLookup','seedForTeam','teamOptionLabel','jo-seed-badge','JO seed','renderSourceMeta','scheduled · ${completed} completed',"completed.length?`${wins}-${losses}`:'—'"):
             if token not in app_text:
                 fail(f'{rel}: missing JO seed metadata/display support: {token}')
-        expected_app_version = "7.44.1" if rel == "tournaments/jo-boys/app.js" else "7.43.0"
+        expected_app_version = "7.44.2" if rel == "tournaments/jo-boys/app.js" else "7.43.0"
         if f"const APP_VERSION='{expected_app_version}';" not in app_text:
             fail(f"{rel}: expected APP_VERSION {expected_app_version}")
         result = subprocess.run(['node','--check',str(path)],capture_output=True,text=True)
@@ -147,6 +173,7 @@ print(' - Boys and Girls entry pages contain all required application mounts')
 print(' - Girls app and all 23 JO sources are represented in the central tournament registry')
 print(' - JO division seeds are metadata and display separately from clean team names')
 print(' - Both apps poll live Google Sheets every two minutes and expose source freshness plus scheduled/completed counts')
+print(' - Boys sources use stable sheet names first, legacy GIDs second, and verified repository snapshots last')
 print(' - Local JO page assets resolve')
 print(' - JavaScript syntax checks passed')
 print(' - Homepage and tournament hub link to Boys JO')

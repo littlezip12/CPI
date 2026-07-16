@@ -33,12 +33,23 @@ MANIFEST_PATH = NORMALIZED_ROOT / "manifest.json"
 
 def source_urls(division: dict) -> list[str]:
     sheet_id = division["spreadsheetId"]
-    gids = []
+    root = f"https://docs.google.com/spreadsheets/d/{sheet_id}"
+    urls: list[str] = []
+    sheet_names: list[str] = []
+    for name in [division.get("sheetName"), *(division.get("sheetNameAliases") or [])]:
+        if name and str(name) not in sheet_names:
+            sheet_names.append(str(name))
+    # Stable worksheet titles are tried before mutable numeric GIDs.
+    for name in sheet_names:
+        sheet = urllib.parse.quote(name)
+        urls.extend([
+            f"{root}/gviz/tq?tqx=out:csv&sheet={sheet}",
+            f"{root}/gviz/tq?sheet={sheet}&tqx=out:csv",
+        ])
+    gids: list[str] = []
     for gid in [division.get("gid"), *(division.get("gidAliases") or [])]:
         if gid and str(gid) not in gids:
             gids.append(str(gid))
-    root = f"https://docs.google.com/spreadsheets/d/{sheet_id}"
-    urls: list[str] = []
     for gid in gids:
         encoded = urllib.parse.quote(gid)
         urls.extend([
@@ -46,16 +57,13 @@ def source_urls(division: dict) -> list[str]:
             f"{root}/gviz/tq?gid={encoded}&tqx=out:csv",
             f"{root}/export?format=csv&gid={encoded}",
         ])
-    if division.get("sheetName"):
-        sheet = urllib.parse.quote(str(division["sheetName"]))
-        urls.append(f"{root}/gviz/tq?tqx=out:csv&sheet={sheet}")
     return list(dict.fromkeys(urls))
 
 
 def fetch_url_text(url: str, timeout: int = 25) -> str:
     """Fetch one CSV candidate and reject transport-level false positives."""
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.43.0; +https://littlezip12.github.io/CPI/)",
+        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.44.2; +https://littlezip12.github.io/CPI/)",
         "Accept": "text/csv,text/plain,*/*",
         "Cache-Control": "no-cache",
     }
