@@ -163,8 +163,8 @@ HEADER_ALIASES = {
     "stage": ["type", "stage", "round"],
     "venue": ["location", "venue", "site", "pool"],
     "game_number": ["gm #", "gm#", "game #", "game", "gm"],
-    "white": ["white", "team 1", "home", "visitor"],
-    "dark": ["dark", "team 2", "away", "opponent"],
+    "white": ["white", "white team", "team 1", "team a", "home", "home team", "visitor", "visitor team"],
+    "dark": ["dark", "dark team", "team 2", "team b", "away", "away team", "opponent", "opponent team"],
     "winner_to": ["w to #", "w to", "winner to", "win to"],
     "loser_to": ["l to #", "l to", "loser to", "loss to"],
     "game_id": ["gmid", "gm id", "game id", "gameid"],
@@ -189,8 +189,6 @@ def detect_header(row: list[str]) -> dict[str, int] | None:
     mapping = {name: _first_header_index(headers, aliases) for name, aliases in HEADER_ALIASES.items()}
     if mapping["white"] < 0 or mapping["dark"] < 0:
         return None
-    if mapping["date"] < 0 and mapping["time"] < 0 and mapping["game_number"] < 0 and mapping["game_id"] < 0:
-        return None
     white, dark = mapping["white"], mapping["dark"]
     # Some official JO sheets intentionally leave Date, Time, Gm #, W To, and
     # L To header cells blank while retaining a stable positional layout around
@@ -202,14 +200,21 @@ def detect_header(row: list[str]) -> dict[str, int] | None:
         mapping["time"] = stage - 1
     if mapping["game_number"] < 0 and venue >= 0 and white - venue >= 2:
         mapping["game_number"] = white - 1
-    if game_id >= 2:
+    if game_id >= 2 and stage >= 0:
         if mapping["winner_to"] < 0:
             mapping["winner_to"] = game_id - 2
         if mapping["loser_to"] < 0:
             mapping["loser_to"] = game_id - 1
     winner_to = mapping["winner_to"]
-    mapping["white_score"] = next((i for i, value in enumerate(headers) if white < i < dark and value in {"s", "score"}), -1)
-    mapping["dark_score"] = next((i for i, value in enumerate(headers) if i > dark and (winner_to < 0 or i < winner_to) and value in {"s", "score"}), -1)
+    mapping["white_score"] = next((i for i, value in enumerate(headers) if value in {"white score", "home score", "team 1 score", "team a score", "w score", "score 1"}), -1)
+    if mapping["white_score"] < 0:
+        mapping["white_score"] = next((i for i, value in enumerate(headers) if white < i < dark and value in {"s", "score", "result"}), -1)
+    mapping["dark_score"] = next((i for i, value in enumerate(headers) if value in {"dark score", "away score", "team 2 score", "team b score", "d score", "score 2"}), -1)
+    if mapping["dark_score"] < 0:
+        mapping["dark_score"] = next((i for i, value in enumerate(headers) if i > dark and (winner_to < 0 or i < winner_to) and value in {"s", "score", "result"}), -1)
+    mapping["combined_score"] = next((i for i, value in enumerate(headers) if value in {"final score", "score/result", "result score"}), -1)
+    if all(mapping[name] < 0 for name in ("date", "time", "game_number", "game_id", "stage", "venue", "white_score", "dark_score", "combined_score")):
+        return None
     return mapping
 
 
@@ -224,6 +229,16 @@ def parse_score(raw: Any) -> int | float | None:
     if re.fullmatch(r"\d+\.\d+", text):
         return float(text)
     return None
+
+
+def parse_combined_score(raw: Any) -> tuple[int | float | None, int | float | None]:
+    text = normalize_space(raw)
+    match = re.fullmatch(r"(\d+(?:\.\d+)?)\s*[-–—:]\s*(\d+(?:\.\d+)?)", text)
+    if not match:
+        return None, None
+    left = float(match.group(1)) if "." in match.group(1) else int(match.group(1))
+    right = float(match.group(2)) if "." in match.group(2) else int(match.group(2))
+    return left, right
 
 
 def parse_date_iso(raw: str, season: str) -> str | None:
@@ -432,6 +447,12 @@ def normalize_csv(
         white = parse_participant(raw_white, scope, resolver)
         dark = parse_participant(raw_dark, scope, resolver)
         white_score, dark_score = parse_score(get("white_score")), parse_score(get("dark_score"))
+        if white_score is None or dark_score is None:
+            combined_white, combined_dark = parse_combined_score(get("combined_score"))
+            if white_score is None:
+                white_score = combined_white
+            if dark_score is None:
+                dark_score = combined_dark
         complete_scores = white_score is not None and dark_score is not None
         zero_zero_placeholder = complete_scores and white_score == 0 and dark_score == 0
         if white_score is None and dark_score is None:
@@ -566,9 +587,16 @@ def registry_lookup(registry: dict[str, Any], event_id: str, division_id: str) -
     return event, division
 
 
-def all_registry_divisions(registry: dict[str, Any], *, sync_enabled_only: bool = False):
+def all_registry_divisions(
+    registry: dict[str, Any],
+    *,
+    sync_enabled_only: bool = False,
+    archive_enabled_only: bool = False,
+):
     for event in registry.get("events", []):
         if sync_enabled_only and not event.get("syncEnabled"):
+            continue
+        if archive_enabled_only and not event.get("archiveSyncEnabled"):
             continue
         for division in event.get("divisions", []):
             yield event, division

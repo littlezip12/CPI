@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "release": "7.43.0",
+  "release": "7.45.1",
   "season": "2026",
-  "generatedDate": "2026-07-14",
-  "description": "Authoritative tournament ingestion registry with one source per division, automated JO snapshots, source-health reporting, and profile-ready evidence generation.",
+  "generatedDate": "2026-07-16",
+  "description": "Universal tournament registry with live JO operations plus controlled archival onboarding for completed tournaments. Historical datasets remain quarantined from ranking evidence until explicitly approved.",
   "events": [
     {
       "id": "2026-jo-weekend-1",
@@ -29,7 +29,8 @@
           "sheetName": "10U_F_Champ-18 teams",
           "gidAliases": [
             "1690842489"
-          ]
+          ],
+          "expectedScheduleGames": 75
         },
         {
           "id": "10u-coed-championship",
@@ -48,7 +49,8 @@
           "gidAliases": [
             "995024268",
             "2041957360"
-          ]
+          ],
+          "expectedScheduleGames": 146
         },
         {
           "id": "10u-girls-classic",
@@ -67,7 +69,8 @@
           "gidAliases": [
             "1824277279",
             "597397535"
-          ]
+          ],
+          "expectedScheduleGames": 87
         },
         {
           "id": "12u-coed-championship",
@@ -86,7 +89,8 @@
           "gidAliases": [
             "1233368070",
             "2012252190"
-          ]
+          ],
+          "expectedScheduleGames": 182
         },
         {
           "id": "12u-girls-championship",
@@ -105,7 +109,8 @@
           "gidAliases": [
             "1025107975",
             "1128927098"
-          ]
+          ],
+          "expectedScheduleGames": 208
         },
         {
           "id": "14u-girls-championship",
@@ -124,7 +129,8 @@
           "gidAliases": [
             "490739644",
             "1268677491"
-          ]
+          ],
+          "expectedScheduleGames": 192
         },
         {
           "id": "14u-girls-classic",
@@ -143,7 +149,8 @@
           "gidAliases": [
             "1034305520",
             "252316141"
-          ]
+          ],
+          "expectedScheduleGames": 157
         },
         {
           "id": "16u-girls-championship",
@@ -162,7 +169,8 @@
           "gidAliases": [
             "1614332560",
             "61950596"
-          ]
+          ],
+          "expectedScheduleGames": 192
         },
         {
           "id": "16u-girls-classic",
@@ -181,7 +189,8 @@
           "gidAliases": [
             "1031667515",
             "901188675"
-          ]
+          ],
+          "expectedScheduleGames": 182
         },
         {
           "id": "18u-girls-championship",
@@ -200,7 +209,8 @@
           "gidAliases": [
             "69636405",
             "934738630"
-          ]
+          ],
+          "expectedScheduleGames": 192
         },
         {
           "id": "18u-girls-classic",
@@ -219,9 +229,14 @@
           "gidAliases": [
             "1267400335",
             "265773689"
-          ]
+          ],
+          "expectedScheduleGames": 178
         }
-      ]
+      ],
+      "operationsMode": "live",
+      "rankingEvidenceEnabled": true,
+      "archiveSyncEnabled": false,
+      "eventStatus": "upcoming"
     },
     {
       "id": "2026-jo-weekend-2",
@@ -243,7 +258,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "1659399499",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1659399499#gid=1659399499"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1659399499#gid=1659399499",
+          "sheetName": "10U_M_Champ_35",
+          "sheetNameAliases": [
+            "10U_M_Champ_35"
+          ],
+          "gidAliases": [
+            "1659399499"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/10u-championship.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 141
         },
         {
           "id": "12u-boys-championship",
@@ -257,7 +283,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "1775879786",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1775879786#gid=1775879786"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1775879786#gid=1775879786",
+          "sheetName": "12U_M_Champ",
+          "sheetNameAliases": [
+            "12U_M_Champ"
+          ],
+          "gidAliases": [
+            "1775879786"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/12u-boys-championship.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 192
         },
         {
           "id": "12u-boys-classic",
@@ -271,7 +308,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "1808416221",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1808416221#gid=1808416221"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1808416221#gid=1808416221",
+          "sheetName": "12U_M_Classic_53",
+          "sheetNameAliases": [
+            "12U_M_Classic_53"
+          ],
+          "gidAliases": [
+            "1808416221"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/12u-boys-classic.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 218
         },
         {
           "id": "14u-boys-championship",
@@ -285,7 +333,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "345265555",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=345265555#gid=345265555"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=345265555#gid=345265555",
+          "sheetName": "14U_M_Champ",
+          "sheetNameAliases": [
+            "14U_M_Champ"
+          ],
+          "gidAliases": [
+            "345265555"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/14u-boys-championship.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 192
         },
         {
           "id": "14u-boys-classic",
@@ -304,7 +363,14 @@
             "732732301",
             "1855118263"
           ],
-          "sheetName": "14U_M_Classic"
+          "sheetName": "14U_M_Classic",
+          "sheetNameAliases": [
+            "14U_M_Classic"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/14u-boys-classic.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 192
         },
         {
           "id": "14u-boys-invitational",
@@ -318,7 +384,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "1975322406",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1975322406#gid=1975322406"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1975322406#gid=1975322406",
+          "sheetName": "14U_M_Invite_36",
+          "sheetNameAliases": [
+            "14U_M_Invite_36"
+          ],
+          "gidAliases": [
+            "1975322406"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/14u-boys-invitational.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 146
         },
         {
           "id": "16u-boys-championship",
@@ -332,7 +409,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "2012475287",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=2012475287#gid=2012475287"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=2012475287#gid=2012475287",
+          "sheetName": "16U_M_Champ",
+          "sheetNameAliases": [
+            "16U_M_Champ"
+          ],
+          "gidAliases": [
+            "2012475287"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/16u-boys-championship.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 192
         },
         {
           "id": "16u-boys-classic",
@@ -346,7 +434,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "1142418841",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1142418841#gid=1142418841"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1142418841#gid=1142418841",
+          "sheetName": "16U_M_Classic",
+          "sheetNameAliases": [
+            "16U_M_Classic"
+          ],
+          "gidAliases": [
+            "1142418841"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/16u-boys-classic.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 192
         },
         {
           "id": "16u-boys-invitational",
@@ -360,7 +459,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "1686454973",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1686454973#gid=1686454973"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1686454973#gid=1686454973",
+          "sheetName": "16U_M_Invite",
+          "sheetNameAliases": [
+            "16U_M_Invite"
+          ],
+          "gidAliases": [
+            "1686454973"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/16u-boys-invitational.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 192
         },
         {
           "id": "18u-boys-championship",
@@ -374,7 +484,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "38488572",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=38488572#gid=38488572"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=38488572#gid=38488572",
+          "sheetName": "18U_M_Champ",
+          "sheetNameAliases": [
+            "18U_M_Champ"
+          ],
+          "gidAliases": [
+            "38488572"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/18u-boys-championship.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 192
         },
         {
           "id": "18u-boys-classic",
@@ -388,7 +509,18 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "333261986",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=333261986#gid=333261986"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=333261986#gid=333261986",
+          "sheetName": "18U_M_Classic",
+          "sheetNameAliases": [
+            "18U_M_Classic"
+          ],
+          "gidAliases": [
+            "333261986"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/18u-boys-classic.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 192
         },
         {
           "id": "18u-boys-invitational",
@@ -402,9 +534,24 @@
           "sourceType": "google_sheets_csv",
           "spreadsheetId": "1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4",
           "gid": "289749610",
-          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=289749610#gid=289749610"
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=289749610#gid=289749610",
+          "sheetName": "18U_M_Invite 24",
+          "sheetNameAliases": [
+            "18U_M_Invite 24"
+          ],
+          "gidAliases": [
+            "289749610"
+          ],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-weekend-2/18u-boys-invitational.csv",
+          "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
+          "expectedScheduleGames": 92
         }
-      ]
+      ],
+      "operationsMode": "live",
+      "rankingEvidenceEnabled": true,
+      "archiveSyncEnabled": false,
+      "eventStatus": "upcoming"
     },
     {
       "id": "2026-quiksilver-cup",
@@ -512,7 +659,12 @@
           "gid": "1111531430",
           "sourceUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=1111531430#gid=1111531430"
         }
-      ]
+      ],
+      "operationsMode": "historical_registered",
+      "rankingEvidenceEnabled": false,
+      "archiveSyncEnabled": true,
+      "eventStatus": "complete",
+      "archivePolicy": "bank_and_review"
     },
     {
       "id": "2026-boys-futures-super-finals",
@@ -704,7 +856,12 @@
           "gid": "581021594",
           "sourceUrl": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=581021594#gid=581021594"
         }
-      ]
+      ],
+      "operationsMode": "historical_registered",
+      "rankingEvidenceEnabled": false,
+      "archiveSyncEnabled": true,
+      "eventStatus": "complete",
+      "archivePolicy": "bank_and_review"
     },
     {
       "id": "2026-girls-us-club-championships",
@@ -784,19 +941,27 @@
           "gid": "0",
           "sourceUrl": "https://docs.google.com/spreadsheets/d/1ok3A1J89hZqvufIFlzCkmmq5d46Yd5pog36JsDta_cI/edit?gid=0#gid=0"
         }
-      ]
+      ],
+      "operationsMode": "historical_registered",
+      "rankingEvidenceEnabled": false,
+      "archiveSyncEnabled": true,
+      "eventStatus": "complete",
+      "archivePolicy": "bank_and_review"
     }
   ],
   "counts": {
     "events": 5,
     "divisions": 48,
-    "autoSyncDivisions": 23
+    "autoSyncDivisions": 23,
+    "archiveSyncDivisions": 25,
+    "rankingEvidenceEnabledDivisions": 23
   },
   "sourcePolicy": {
     "onePublisherPerDivision": true,
     "automaticCrossSourceMerge": false,
     "automaticFailover": false,
     "invalidCandidateBehavior": "preserve_last_known_good",
-    "staleAfterHours": 6
+    "staleAfterHours": 6,
+    "historicalArchive": "Completed-event sources sync separately from live operations and do not feed ranking evidence until approved."
   }
 }

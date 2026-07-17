@@ -44,6 +44,9 @@ jobs:
       - name: Build universal tournament operations
         run: python3 scripts/build-tournament-operations.py
 
+      - name: Rebuild completed-tournament archive index
+        run: python3 scripts/build-tournament-archive.py
+
       - name: Publish tournament operations summary
         shell: bash
         run: cat data/tournaments/operations/issue-body.md >> "$GITHUB_STEP_SUMMARY"
@@ -163,6 +166,8 @@ jobs:
             data/tournaments/jo-performance \
             data/tournaments/post-jo-review \
             data/tournaments/operations \
+            data/tournaments/archive \
+            data/tournaments/quiksilver-cup-2026.json \
             qa/tournament-evidence-summary-7.45.1.json \
             qa/tournament-identity-review-7.45.1.csv \
             qa/ranking-review-engine-7.44.0.json \

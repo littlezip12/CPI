@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tournament Archive | California Polo Index</title>
+  <meta name="description" content="Search CPI's normalized archive for completed youth water polo tournaments and review source, division, score, and identity status.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.48.0">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.48.0">
+  <link rel="stylesheet" href="css/tournament-archive-v7-48.css?v=7.48.0">
+</head>
+<body class="cpi-v8-home archive-page">
+<header class="cpi-v8-header"><div class="cpi-v8-header-inner"><a class="cpi-v8-brand" href="index.html" aria-label="California Polo Index Home"><span class="cpi-v8-brand-mark">CPI</span><span class="cpi-v8-brand-text"><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span></a><nav class="cpi-v8-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html" aria-current="page">Tournaments</a><a href="methodology.html">Methodology</a></nav></div></header>
+<main class="archive-shell">
+  <section class="archive-hero">
+    <div><p class="archive-kicker">CPI Tournament Archive · 7.48</p><h1>Completed tournaments, one data model.</h1><p>Quiksilver Cup, Boys Futures Super Finals, and Girls US Club Championships are now registered for normalized archival banking. Historical results stay separate from live JO operations and cannot affect rankings until explicitly approved.</p><div class="archive-links"><a href="tournaments.html">Tournament hub</a><a href="tournament-operations.html">Operations</a><a href="ranking-review.html">Ranking review</a></div></div>
+    <aside><span>Generated</span><strong id="archiveGenerated">Loading…</strong><div id="archiveState">Checking archive…</div></aside>
+  </section>
+  <section id="archiveStats" class="archive-stats"></section>
+  <section id="archiveEvents" class="archive-events"></section>
+  <section class="archive-controls">
+    <label>Tournament<select id="archiveEvent"><option value="all">All tournaments</option></select></label>
+    <label>Division<select id="archiveDivision"><option value="all">All divisions</option></select></label>
+    <label>Status<select id="archiveStatus"><option value="all">All games</option><option value="final">Final</option><option value="scheduled">Scheduled</option></select></label>
+    <label class="archive-search">Search<input id="archiveSearch" type="search" placeholder="Team, venue, game, age, or division"></label>
+  </section>
+  <section class="archive-results">
+    <div class="archive-results-head"><div><p class="archive-kicker">Normalized game bank</p><h2>Archived results</h2></div><span id="archiveCount"></span></div>
+    <div id="archiveGames" class="archive-game-list"></div>
+  </section>
+  <section class="archive-policy"><article><h2>Controlled onboarding</h2><p>Completed events are banked and audited separately. A successful archive sync does not automatically make an event ranking evidence.</p></article><article><h2>One source per division</h2><p>CPI stores the source row and source URL for each normalized game and never blends competing feeds.</p></article><article><h2>Manual ranking approval</h2><p>Historical evidence remains quarantined until identity quality, score integrity, and event coverage are explicitly reviewed.</p></article></section>
+</main>
+<footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a><p>Independent and unofficial rankings, stories, and tournament tools for California youth water polo.</p></div><nav><h3>Tournaments</h3><a href="tournaments.html">Tournament hub</a><a href="tournament-archive.html">Archive</a><a href="tournament-operations.html">Operations</a><a href="tournament-source-health.html">Source health</a></nav><div><h3>Archive policy</h3><p>Historical tournament results are searchable but remain isolated from ranking publication until reviewed.</p></div></div><div class="bottom">© 2026 California Polo Index.</div></footer>
+<script src="data/tournaments/archive/runtime.js?v=7.48.0"></script>
+<script src="js/tournament-archive-v7-48.js?v=7.48.0"></script>
+</body>
+</html>

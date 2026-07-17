@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=7.47.0">
-  <link rel="stylesheet" href="css/homepage-v8.css?v=7.47.0">
-  <link rel="stylesheet" href="css/tournament-operations-v7-47.css?v=7.47.0">
+  <link rel="stylesheet" href="css/styles.css?v=7.48.0">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.48.0">
+  <link rel="stylesheet" href="css/tournament-operations-v7-47.css?v=7.48.0">
 </head>
 <body class="cpi-v8-home tournament-ops-page">
   <header class="cpi-v8-header">
@@ -23,10 +23,10 @@
   <main class="ops-shell">
     <section class="ops-hero">
       <div>
-        <p class="ops-kicker">CPI Live Operations · 7.47</p>
-        <h1>Tournament control room</h1>
-        <p>One operational view for every registered tournament. Both Junior Olympics weekends are live-monitored now; historical events remain clearly identified until their data is onboarded into the same framework.</p>
-        <div class="ops-hero-links"><a href="tournaments/jo-girls/">Open Girls &amp; Coed JO</a><a href="tournaments/jo-boys/">Open Boys JO</a><a href="tournament-source-health.html">Source details</a></div>
+        <p class="ops-kicker">CPI Tournament Operations · 7.48</p>
+        <h1>Tournament operations & archive</h1>
+        <p>One operational view for every registered tournament. Both Junior Olympics weekends remain live-monitored, while completed events move through a separate archive workflow before they are eligible for ranking evidence.</p>
+        <div class="ops-hero-links"><a href="tournaments/jo-girls/">Open Girls &amp; Coed JO</a><a href="tournaments/jo-boys/">Open Boys JO</a><a href="tournament-source-health.html">Source details</a><a href="tournament-archive.html">Tournament archive</a></div>
       </div>
       <aside>
         <span>Generated</span><strong id="opsGenerated">Loading…</strong>
@@ -40,8 +40,8 @@
 
     <section class="ops-controls" aria-label="Tournament operations filters">
       <label>Tournament<select id="opsEvent"><option value="all">All tournaments</option></select></label>
-      <label>Coverage<select id="opsMode"><option value="all">All coverage</option><option value="live">Live monitoring</option><option value="historical_registered">Historical / registered</option></select></label>
-      <label>Status<select id="opsStatus"><option value="all">All statuses</option><option value="ready">Ready</option><option value="attention">Attention</option><option value="blocking">Blocking</option><option value="historical">Historical</option></select></label>
+      <label>Coverage<select id="opsMode"><option value="all">All coverage</option><option value="live">Live monitoring</option><option value="archive">Completed-event archive</option><option value="historical_registered">Historical / registered</option></select></label>
+      <label>Status<select id="opsStatus"><option value="all">All statuses</option><option value="ready">Ready</option><option value="attention">Attention</option><option value="blocking">Blocking</option><option value="archive_pending">Archive pending</option><option value="archived">Archived</option><option value="archive_attention">Archive review</option><option value="historical">Historical</option></select></label>
       <label>Age<select id="opsAge"><option value="all">All ages</option></select></label>
       <label class="ops-search">Search<input id="opsSearch" type="search" placeholder="Division, event, source, or issue"></label>
     </section>
@@ -66,7 +66,7 @@
 
   <footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a><p>Independent and unofficial rankings, stories, and tournament tools for California youth water polo.</p></div><nav><h3>Operations</h3><a href="tournament-operations.html">Control room</a><a href="tournament-source-health.html">Source health</a><a href="jo-performance.html">JO performance</a><a href="ranking-review.html">Ranking review</a></nav><div><h3>Release standard</h3><p>Live sources, public pages, schedule counts, score states, and fallbacks are validated before tournament data reaches ranking review.</p></div></div><div class="bottom">© 2026 California Polo Index.</div></footer>
 
-  <script src="data/tournaments/operations/runtime.js?v=7.47.0"></script>
-  <script src="js/tournament-operations-v7-47.js?v=7.47.0"></script>
+  <script src="data/tournaments/operations/runtime.js?v=7.48.0"></script>
+  <script src="js/tournament-operations-v7-47.js?v=7.48.0"></script>
 </body>
 </html>

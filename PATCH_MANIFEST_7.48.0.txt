@@ -1,0 +1,30 @@
+CPI 7.48.0 — Historical Tournament Archive & Controlled Onboarding
+
+Core additions
+- tournament-archive.html
+- css/tournament-archive-v7-48.css
+- js/tournament-archive-v7-48.js
+- data/tournaments/archive/
+- scripts/build-tournament-archive.py
+- scripts/test-historical-tournament-parser.py
+- scripts/validate-tournament-archive.py
+- scripts/test-tournament-archive-ui.js
+- .github/workflows/sync-tournament-archive.yml
+
+Core changes
+- data/tournaments/registry.json
+- config/tournament-operations.json
+- config/site-release.json
+- scripts/tournament_pipeline.py
+- scripts/sync-tournament-data.py
+- scripts/build-tournament-evidence.py
+- scripts/build-tournament-operations.py
+- tournament-operations.html
+- tournaments/results-app.js
+- tournaments.html
+- release-check
+
+Policy
+- Historical archive events are banked separately.
+- rankingEvidenceEnabled remains false for all three completed events.
+- No automatic ranking changes or source blending.

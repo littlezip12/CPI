@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Unit tests for CPI 7.47 tournament operations decision rules."""
+"""Unit tests for CPI 7.48 tournament operations decision rules."""
 from __future__ import annotations
 
 import importlib.util
@@ -29,6 +29,9 @@ require(ops.severity_for(attention, "live") == "attention", "Partial scores must
 blocking = ready + [ops.check("count", "blocking", False, "count matches", "Expected 192, found 0")]
 require(ops.severity_for(blocking, "live") == "blocking", "Schedule regressions must block a live division")
 require(ops.severity_for(blocking, "historical_registered") == "historical", "Historical registrations must not masquerade as live blockers")
+require(ops.severity_for([], "archive", 0) == "archive_pending", "Unbanked completed divisions must be archive pending")
+require(ops.severity_for(ready, "archive", 12) == "archived", "Healthy banked completed divisions must be archived")
+require(ops.severity_for(attention, "archive", 12) == "archive_attention", "Archive data warnings must remain review-only")
 
 sample = {
     "generatedAt": "2026-07-16T12:00:00Z",
@@ -40,6 +43,6 @@ require("Action required" in body and "14U Boys Classic" in body, "Incident mark
 require("does not blend sources" in body, "Incident markdown must preserve the source policy")
 
 print("TOURNAMENT OPERATIONS ENGINE TESTS PASSED")
-print(" - Healthy, attention, blocking, and historical states remain distinct")
+print(" - Healthy, attention, blocking, archive, and historical states remain distinct")
 print(" - Schedule regressions and partial scores receive the correct severity")
 print(" - Operational incident summaries identify affected divisions without blending sources")

@@ -302,6 +302,7 @@ def parse_args() -> argparse.Namespace:
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--all", action="store_true", help="Process all registered divisions")
     group.add_argument("--sync-enabled", action="store_true", help="Process only events with syncEnabled=true")
+    group.add_argument("--archive-enabled", action="store_true", help="Process only completed events with archiveSyncEnabled=true")
     group.add_argument("--event", help="Process every division for one event")
     group.add_argument("--division", nargs=2, metavar=("EVENT_ID", "DIVISION_ID"), help="Process one registered division")
     parser.add_argument("--no-fetch", action="store_true", help="Normalize existing raw CSV snapshots without network access")
@@ -327,7 +328,7 @@ def main() -> int:
             return 2
         selected = [(event, d) for d in event["divisions"]]
     else:
-        selected = list(all_registry_divisions(registry, sync_enabled_only=args.sync_enabled))
+        selected = list(all_registry_divisions(registry, sync_enabled_only=args.sync_enabled, archive_enabled_only=args.archive_enabled))
 
     failures = []
     warnings = []
@@ -364,6 +365,7 @@ def main() -> int:
         "generatedAt": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "selection": {
             "syncEnabledOnly": bool(args.sync_enabled),
+            "archiveEnabledOnly": bool(args.archive_enabled),
             "eventId": args.event,
             "division": list(args.division) if args.division else None,
             "allowPartial": bool(args.allow_partial),
@@ -378,7 +380,8 @@ def main() -> int:
         "warnings": warnings,
         "failures": failures,
     }
-    write_json(QA_ROOT / "sync-latest.json", report)
+    report_name = "sync-archive-latest.json" if args.archive_enabled else "sync-latest.json"
+    write_json(QA_ROOT / report_name, report)
     if warnings:
         print(f"Preserved last known-good data for {len(warnings)} source(s) with invalid live responses", file=sys.stderr)
     if failures:

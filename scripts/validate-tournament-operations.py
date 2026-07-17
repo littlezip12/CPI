@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CPI 7.47 universal tournament operations outputs and workflow wiring."""
+"""Validate CPI 7.48 universal tournament operations outputs and workflow wiring."""
 from __future__ import annotations
 
 import json
@@ -7,7 +7,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_RELEASE = "7.47.0"
+EXPECTED_RELEASE = "7.48.0"
 errors: list[str] = []
 
 
@@ -34,7 +34,7 @@ config = load("config/tournament-operations.json")
 manifest = load("data/tournaments/normalized/manifest.json")
 
 if ops.get("schemaVersion") != 1 or ops.get("release") != EXPECTED_RELEASE:
-    fail("Tournament operations output must use schemaVersion 1 and release 7.47.0")
+    fail("Tournament operations output must use schemaVersion 1 and release 7.48.0")
 if config.get("release") != EXPECTED_RELEASE:
     fail("Tournament operations configuration release mismatch")
 
@@ -47,23 +47,29 @@ if len(registry.get("events", [])) != 5 or len(rows) != 48:
     fail(f"Expected 5 events and 48 divisions, found {len(registry.get('events', []))} and {len(rows)}")
 
 live = [row for row in rows if row.get("monitoringMode") == "live"]
+archive = [row for row in rows if row.get("monitoringMode") == "archive"]
 historical = [row for row in rows if row.get("monitoringMode") == "historical_registered"]
 if len(live) != 23:
     fail(f"Expected both JO weekends to provide 23 live divisions, found {len(live)}")
-if len(historical) != 25:
-    fail(f"Expected 25 historical divisions registered for onboarding, found {len(historical)}")
+if len(archive) != 25:
+    fail(f"Expected 25 completed-event archive divisions, found {len(archive)}")
+if historical:
+    fail(f"All currently registered historical divisions should be in controlled archive mode, found {len(historical)} legacy registrations")
 if any(row.get("operationalStatus") not in {"ready", "attention"} for row in live):
     fail("Live JO divisions may be ready or attention, but blocking states fail validation")
-if any(row.get("operationalStatus") != "historical" for row in historical):
-    fail("Non-JO tournaments must remain clearly marked as historical registrations")
+if any(row.get("operationalStatus") not in {"archive_pending", "archived", "archive_attention"} for row in archive):
+    fail("Completed tournaments must remain clearly marked as pending, archived, or archive review")
 if any(not row.get("schedule", {}).get("expectedGames") for row in live):
     fail("Every live JO division must have a verified expected schedule count")
 if any(row.get("schedule", {}).get("games") != row.get("schedule", {}).get("expectedGames") for row in live):
     fail("Every live JO schedule count must match its verified baseline")
 if any(row.get("schedule", {}).get("games") != row.get("schedule", {}).get("scheduledGames") + row.get("schedule", {}).get("completedGames") for row in live):
     fail("Live tournament scheduled/completed counts do not reconcile")
-if sum(row.get("schedule", {}).get("games", 0) for row in live) != manifest.get("counts", {}).get("games"):
-    fail("Operations live game count must match the normalized manifest")
+manifest_live_games = sum(item.get("counts", {}).get("games", 0) for item in manifest.get("datasets", []) if item.get("eventId") in set(config.get("liveEventIds", [])))
+if sum(row.get("schedule", {}).get("games", 0) for row in live) != manifest_live_games:
+    fail("Operations live game count must match live-event normalized datasets")
+if ops.get("counts", {}).get("archiveDivisions") != 25:
+    fail("Operations output must expose all 25 archive divisions")
 if alerts.get("counts", {}).get("total") != len(ops.get("alerts", [])):
     fail("Operations alert files do not reconcile")
 if ops.get("counts", {}).get("blocking") != 0:
@@ -102,7 +108,7 @@ for rel in [
         fail(f"Missing tournament operations asset: {rel}")
 
 html = (ROOT / "tournament-operations.html").read_text(encoding="utf-8") if (ROOT / "tournament-operations.html").exists() else ""
-for token in ["data/tournaments/operations/runtime.js?v=7.47.0", "js/tournament-operations-v7-47.js?v=7.47.0", "opsRows", "opsAlertBanner"]:
+for token in ["data/tournaments/operations/runtime.js?v=7.48.0", "js/tournament-operations-v7-47.js?v=7.48.0", "opsRows", "opsAlertBanner", "tournament-archive.html"]:
     if token not in html:
         fail(f"Tournament operations page is missing required token: {token}")
 
@@ -126,6 +132,7 @@ for token in [
     "pages: write",
     "pages/builds",
     "data/tournaments/operations",
+    "build-tournament-archive.py",
 ]:
     if token not in workflow:
         fail(f"Tournament sync workflow is missing operations token: {token}")
@@ -148,6 +155,6 @@ if errors:
 print("TOURNAMENT OPERATIONS VALIDATION PASSED")
 print(" - 5 registered tournaments and 48 divisions share one operations framework")
 print(f" - Both JO weekends provide 23 live-monitored divisions: {ops.get('counts', {}).get('ready', 0)} ready and {ops.get('counts', {}).get('attention', 0)} attention")
-print(" - 25 historical divisions remain explicitly registered for future onboarding")
+print(" - 25 completed-event divisions remain isolated in controlled archive mode")
 print(" - Source, score-state, public-page, fallback, and ranking-publication safeguards are enforced")
 print(" - Poolside JavaScript budgets and mobile application mounts pass")

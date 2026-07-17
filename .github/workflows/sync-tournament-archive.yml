@@ -1,0 +1,87 @@
+name: Sync historical tournament archive
+
+on:
+  schedule:
+    - cron: "37 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: cpi-tournament-archive-sync
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out CPI
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch and normalize completed tournament sources
+        run: python3 scripts/sync-tournament-data.py --archive-enabled --allow-partial
+
+      - name: Build searchable tournament archive
+        run: python3 scripts/build-tournament-archive.py
+
+      - name: Rebuild source health and operations
+        run: |
+          python3 scripts/build-tournament-health.py
+          python3 scripts/check-public-tournament-pages.py --network --allow-network-failure
+          python3 scripts/build-tournament-operations.py
+
+      - name: Rebuild ranking evidence with historical quarantine enforced
+        run: |
+          python3 scripts/build-tournament-evidence.py
+          python3 scripts/build-ranking-review.py
+          python3 scripts/build-post-jo-review.py
+
+      - name: Validate archive and tournament data
+        run: |
+          python3 scripts/test-historical-tournament-parser.py
+          python3 scripts/validate-tournament-data.py
+          python3 scripts/validate-tournament-archive.py
+          python3 scripts/validate-tournament-operations.py
+          node scripts/test-tournament-archive-ui.js
+
+      - name: Commit archive updates
+        id: commit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A \
+            data/tournaments/raw \
+            data/tournaments/normalized \
+            data/tournaments/qa \
+            data/tournaments/archive \
+            data/tournaments/quiksilver-cup-2026.json \
+            data/tournaments/health \
+            data/tournaments/operations \
+            data/tournaments/evidence \
+            data/tournaments/identity \
+            data/tournaments/ranking-review-engine \
+            data/tournaments/post-jo-review
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No historical tournament changes detected."
+          else
+            git commit -m "Update historical tournament archive [skip ci]"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Request GitHub Pages rebuild
+        if: steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"

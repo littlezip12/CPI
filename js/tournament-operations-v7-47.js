@@ -16,8 +16,8 @@
     if (Number.isNaN(date.getTime())) return String(value);
     return date.toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
   }
-  const statusLabel = (value) => ({ ready: "Ready", attention: "Attention", blocking: "Blocking", historical: "Historical / registered" })[value] || value;
-  const phaseLabel = (value) => ({ pre_tournament: "Pre-tournament", awaiting_results: "Awaiting results", in_progress: "In progress", complete: "Complete", schedule_banked: "Schedule banked", past_due_no_results: "Past date · no results", historical: "Historical", unbanked: "Unbanked" })[value] || value || "Unknown";
+  const statusLabel = (value) => ({ ready: "Ready", attention: "Attention", blocking: "Blocking", historical: "Historical / registered", archive_pending: "Archive pending", archived: "Archived", archive_attention: "Archive review" })[value] || value;
+  const phaseLabel = (value) => ({ pre_tournament: "Pre-tournament", awaiting_results: "Awaiting results", in_progress: "In progress", complete: "Complete", schedule_banked: "Schedule banked", past_due_no_results: "Past date · no results", historical: "Historical", archive_pending: "Archive pending", archive_complete: "Archive banked", unbanked: "Unbanked" })[value] || value || "Unknown";
 
   function renderSummary() {
     const c = data.counts || {};
@@ -26,8 +26,8 @@
     $("#opsStats").innerHTML = [
       ["Live divisions", c.liveDivisions || 0],
       ["Ready", c.ready || 0],
-      ["Attention", c.attention || 0],
-      ["Blocking", c.blocking || 0],
+      ["Archive banked", c.archiveBankedDivisions || 0],
+      ["Archive pending", c.archivePendingDivisions || 0],
       ["Scheduled", c.scheduledGames || 0],
       ["Completed", c.completedGames || 0],
     ].map(([label, value]) => `<article><span>${esc(label)}</span><strong>${esc(value)}</strong></article>`).join("");
@@ -39,8 +39,10 @@
   function renderEvents() {
     $("#opsEvents").innerHTML = (data.events || []).map((event) => {
       const live = event.monitoringMode === "live";
-      const summary = live ? `${event.ready} ready · ${event.attention} attention · ${event.blocking} blocking` : `${event.divisionCount} divisions registered for future onboarding`;
-      return `<article class="ops-event-card"><header><h3>${esc(event.eventName)}</h3><span class="ops-event-badge ${live ? "" : "historical"}">${live ? "Live" : "Historical"}</span></header><p>${esc(summary)}</p><p>${esc(event.scheduledGames || 0)} scheduled · ${esc(event.completedGames || 0)} completed</p>${event.publicPath ? `<a href="${esc(event.publicPath)}">Open tournament →</a>` : ""}</article>`;
+      const archive = event.monitoringMode === "archive";
+      const summary = live ? `${event.ready} ready · ${event.attention} attention · ${event.blocking} blocking` : archive ? `${event.archived || 0} archived · ${event.archivePending || 0} pending · ${event.archiveAttention || 0} review` : `${event.divisionCount} divisions registered for future onboarding`;
+      const badge = live ? "Live" : archive ? "Archive" : "Historical";
+      return `<article class="ops-event-card"><header><h3>${esc(event.eventName)}</h3><span class="ops-event-badge ${archive ? "archive" : live ? "" : "historical"}">${badge}</span></header><p>${esc(summary)}</p><p>${esc(event.scheduledGames || 0)} scheduled · ${esc(event.completedGames || 0)} completed</p>${event.publicPath ? `<a href="${esc(event.publicPath)}">Open tournament →</a>` : ""}</article>`;
     }).join("");
   }
 
@@ -70,11 +72,11 @@
       const source = item.source || {};
       const page = item.publicPage || {};
       const failures = (item.checks || []).filter((entry) => !entry.passed && ["blocking", "warning"].includes(entry.severity));
-      const modeText = item.monitoringMode === "live" ? phaseLabel(item.phase) : "Registered · not live-monitored yet";
+      const modeText = item.monitoringMode === "live" ? phaseLabel(item.phase) : item.monitoringMode === "archive" ? phaseLabel(item.phase) : "Registered · not monitored yet";
       return `<article class="ops-row is-${esc(item.operationalStatus)}" role="row">
         <div role="cell"><span>${esc(item.eventName)}</span><strong>${esc(item.divisionLabel)}</strong><em>${esc(modeText)}</em></div>
         <div role="cell"><strong>${esc(schedule.games || 0)} games${schedule.expectedGames ? ` / ${esc(schedule.expectedGames)} expected` : ""}</strong><span>${esc(schedule.scheduledGames || 0)} scheduled · ${esc(schedule.completedGames || 0)} completed</span>${schedule.partialScores ? `<em>${esc(schedule.partialScores)} partial score${schedule.partialScores === 1 ? "" : "s"}</em>` : ""}</div>
-        <div role="cell"><strong>${esc(source.provider || "Registered source")}</strong><span>${esc(source.sheetName || source.mode || "Not yet onboarded")}</span><em>${item.monitoringMode === "live" ? `Verified ${esc(formatDate(source.lastSuccessfulAt))}` : "Historical source registration"}</em>${source.url ? `<a href="${esc(source.url)}" target="_blank" rel="noopener">Open source</a>` : ""}</div>
+        <div role="cell"><strong>${esc(source.provider || "Registered source")}</strong><span>${esc(source.sheetName || source.mode || "Not yet onboarded")}</span><em>${item.monitoringMode === "live" ? `Verified ${esc(formatDate(source.lastSuccessfulAt))}` : item.monitoringMode === "archive" ? (source.lastSuccessfulAt ? `Archived ${esc(formatDate(source.lastSuccessfulAt))}` : "Awaiting first archive sync") : "Historical source registration"}</em>${source.url ? `<a href="${esc(source.url)}" target="_blank" rel="noopener">Open source</a>` : ""}</div>
         <div role="cell"><strong>${page.localStatus === "ready" ? "Page ready" : "Page issue"}</strong><span>${page.networkChecked ? (page.networkStatus === "ready" ? "Published page reachable" : "Published page check failed") : "Local wiring verified"}</span>${item.eventPublicPath ? `<a href="${esc(item.eventPublicPath)}">Open page</a>` : ""}</div>
         <div role="cell"><b class="ops-status-pill">${esc(statusLabel(item.operationalStatus))}</b>${failures.length ? `<div class="ops-issue-list">${failures.slice(0, 3).map((entry) => `<small>${esc(entry.detail || entry.message)}</small>`).join("")}</div>` : `<small>${esc(schedule.reviewItems || 0)} identity review item${Number(schedule.reviewItems || 0) === 1 ? "" : "s"}</small>`}</div>
       </article>`;

@@ -3,7 +3,7 @@
   "release": "7.45.1",
   "season": "2026",
   "generatedDate": "2026-07-16",
-  "description": "Universal tournament operations registry with live JO monitoring, historical tournament onboarding status, source-health reporting, verified fallbacks, and controlled ranking evidence.",
+  "description": "Universal tournament registry with live JO operations plus controlled archival onboarding for completed tournaments. Historical datasets remain quarantined from ranking evidence until explicitly approved.",
   "events": [
     {
       "id": "2026-jo-weekend-1",
@@ -233,7 +233,10 @@
           "expectedScheduleGames": 178
         }
       ],
-      "operationsMode": "live"
+      "operationsMode": "live",
+      "rankingEvidenceEnabled": true,
+      "archiveSyncEnabled": false,
+      "eventStatus": "upcoming"
     },
     {
       "id": "2026-jo-weekend-2",
@@ -545,7 +548,10 @@
           "expectedScheduleGames": 92
         }
       ],
-      "operationsMode": "live"
+      "operationsMode": "live",
+      "rankingEvidenceEnabled": true,
+      "archiveSyncEnabled": false,
+      "eventStatus": "upcoming"
     },
     {
       "id": "2026-quiksilver-cup",
@@ -654,7 +660,11 @@
           "sourceUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=1111531430#gid=1111531430"
         }
       ],
-      "operationsMode": "historical_registered"
+      "operationsMode": "historical_registered",
+      "rankingEvidenceEnabled": false,
+      "archiveSyncEnabled": true,
+      "eventStatus": "complete",
+      "archivePolicy": "bank_and_review"
     },
     {
       "id": "2026-boys-futures-super-finals",
@@ -847,7 +857,11 @@
           "sourceUrl": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=581021594#gid=581021594"
         }
       ],
-      "operationsMode": "historical_registered"
+      "operationsMode": "historical_registered",
+      "rankingEvidenceEnabled": false,
+      "archiveSyncEnabled": true,
+      "eventStatus": "complete",
+      "archivePolicy": "bank_and_review"
     },
     {
       "id": "2026-girls-us-club-championships",
@@ -928,19 +942,26 @@
           "sourceUrl": "https://docs.google.com/spreadsheets/d/1ok3A1J89hZqvufIFlzCkmmq5d46Yd5pog36JsDta_cI/edit?gid=0#gid=0"
         }
       ],
-      "operationsMode": "historical_registered"
+      "operationsMode": "historical_registered",
+      "rankingEvidenceEnabled": false,
+      "archiveSyncEnabled": true,
+      "eventStatus": "complete",
+      "archivePolicy": "bank_and_review"
     }
   ],
   "counts": {
     "events": 5,
     "divisions": 48,
-    "autoSyncDivisions": 23
+    "autoSyncDivisions": 23,
+    "archiveSyncDivisions": 25,
+    "rankingEvidenceEnabledDivisions": 23
   },
   "sourcePolicy": {
     "onePublisherPerDivision": true,
     "automaticCrossSourceMerge": false,
     "automaticFailover": false,
     "invalidCandidateBehavior": "preserve_last_known_good",
-    "staleAfterHours": 6
+    "staleAfterHours": 6,
+    "historicalArchive": "Completed-event sources sync separately from live operations and do not feed ranking evidence until approved."
   }
 }

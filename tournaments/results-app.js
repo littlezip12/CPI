@@ -23,6 +23,7 @@
       subtitle: "Search Boys Futures Super Finals results by team, age, division, score, venue, or game number across the connected public tabs. 12U Division 3 is still pending a source link.",
       logo: "../../assets/logos/usa-water-polo.webp",
       statusLabel: "Live/cached results",
+      fallbackJson: "../../data/tournaments/archive/2026-boys-futures-super-finals.json",
       tabs: [
         {label:"10U Boys D1", age:"10U", gender:"Boys", division:"D1", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"1811978308"},
         {label:"10U Boys D2", age:"10U", gender:"Boys", division:"D2", spreadsheetId:"1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4", gid:"943015900"},
@@ -45,6 +46,7 @@
       subtitle: "Search Girls US Club Championship results by team, age/division, score, venue, or game number across the public sheets provided.",
       logo: "../../assets/cpi-logo-fallback.svg",
       statusLabel: "Live/cached results",
+      fallbackJson: "../../data/tournaments/archive/2026-girls-us-club-championships.json",
       tabs: [
         {label:"10U Coed", age:"10U", gender:"Coed", division:"Championship", spreadsheetId:"1TInyhZ3SQQ1bzSx5pxTzgzuTTtfrGrCjehzBJfmESXY", gid:"0"},
         {label:"12U Girls", age:"12U", gender:"Girls", division:"Championship", spreadsheetId:"179y3JxNFgyWh3g66g2n1kyM6g-fIAO-WpMWuVIhVHgY", gid:"0"},

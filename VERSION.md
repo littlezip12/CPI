@@ -1,11 +1,9 @@
-# CPI 7.47.0
+# CPI 7.48.0
 
-Tournament launch readiness and universal live operations.
+Historical tournament archive and controlled onboarding.
 
-- Adds one operational control room for all five registered tournaments and 48 divisions.
-- Live-monitors all 23 Junior Olympics divisions across Weekend 1 and Weekend 2.
-- Keeps 25 historical divisions visible as registered onboarding targets rather than misrepresenting them as live.
-- Validates source freshness, expected schedule counts, score states, public pages, and last-known-good fallbacks.
-- Creates or closes a GitHub operations incident when live divisions require attention.
-- Requests a GitHub Pages rebuild after automated evidence commits.
-- Preserves manual-only ranking publication.
+- Adds a normalized archive pipeline for Quiksilver Cup, Boys Futures Super Finals, and Girls US Club Championships.
+- Registers 25 completed-event divisions for daily/manual archival sync without mixing them into live JO operations.
+- Keeps historical results excluded from ranking evidence until each event is explicitly approved.
+- Adds a searchable tournament archive and normalized fallback files for the existing result pages.
+- Preserves live JO monitoring, manual ranking publication, and last-known-good source protection.

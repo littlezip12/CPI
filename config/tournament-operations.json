@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "7.47.0",
+  "release": "7.48.0",
   "timezone": "America/Los_Angeles",
   "publicBaseUrl": "https://littlezip12.github.io/CPI/",
   "liveEventIds": [
@@ -18,7 +18,9 @@
     "retainLastKnownGood": true,
     "partialScoresAreFinal": false,
     "blankZeroZeroIsFinal": false,
-    "rankingPublicationAutomatic": false
+    "rankingPublicationAutomatic": false,
+    "historicalEvidenceRequiresApproval": true,
+    "historicalArchiveSyncSeparateFromLive": true
   },
   "publicPages": {
     "2026-jo-weekend-1": {
@@ -57,5 +59,10 @@
         "results-app.js"
       ]
     }
-  }
+  },
+  "archiveEventIds": [
+    "2026-quiksilver-cup",
+    "2026-boys-futures-super-finals",
+    "2026-girls-us-club-championships"
+  ]
 }

@@ -131,6 +131,10 @@ def main() -> int:
         event_id = data.get("event", {}).get("id")
         division_id = data.get("division", {}).get("id")
         event, division = registry_lookup.get((event_id, division_id), (data.get("event", {}), data.get("division", {})))
+        if event.get("rankingEvidenceEnabled") is False:
+            # Completed historical events are banked for archive/search first.
+            # They cannot enter profiles or ranking review until explicitly approved.
+            continue
         source_url = division.get("sourceUrl") or data.get("source", {}).get("url")
         public_path = event.get("publicPath")
         dataset_summaries.append({

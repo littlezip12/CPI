@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = "7.47.0"
+RELEASE = "7.48.0"
 REGISTRY = ROOT / "data/tournaments/registry.json"
 MANIFEST = ROOT / "data/tournaments/normalized/manifest.json"
 HEALTH = ROOT / "data/tournaments/health/index.json"
@@ -36,9 +36,16 @@ def check(code: str, severity: str, passed: bool, message: str, detail: str = ""
     return {"code": code, "severity": severity, "passed": bool(passed), "message": message, "detail": detail}
 
 
-def severity_for(checks: list[dict[str, Any]], mode: str) -> str:
+def severity_for(checks: list[dict[str, Any]], mode: str, games: int = 0) -> str:
     if mode == "historical_registered":
         return "historical"
+    if mode == "archive":
+        if games <= 0:
+            return "archive_pending"
+        failed = [item for item in checks if not item["passed"]]
+        if any(item["severity"] in {"blocking", "warning"} for item in failed):
+            return "archive_attention"
+        return "archived"
     failed = [item for item in checks if not item["passed"]]
     if any(item["severity"] == "blocking" for item in failed):
         return "blocking"
@@ -90,6 +97,7 @@ def main() -> int:
     health_rows = {(item.get("eventId"), item.get("divisionId")): item for item in health.get("sources", [])}
     public_rows = {item.get("eventId"): item for item in public_checks.get("events", [])}
     live_ids = set(config.get("liveEventIds", []))
+    archive_ids = set(config.get("archiveEventIds", []))
 
     divisions: list[dict[str, Any]] = []
     alerts: list[dict[str, Any]] = []
@@ -97,7 +105,12 @@ def main() -> int:
 
     for event in registry.get("events", []):
         event_id = event.get("id")
-        mode = "live" if event_id in live_ids or event.get("syncEnabled") else "historical_registered"
+        if event_id in live_ids or event.get("syncEnabled"):
+            mode = "live"
+        elif event_id in archive_ids or event.get("archiveSyncEnabled"):
+            mode = "archive"
+        else:
+            mode = "historical_registered"
         event_divisions: list[dict[str, Any]] = []
         page = public_rows.get(event_id, {})
         page_ready = page.get("localStatus") == "ready"
@@ -114,8 +127,8 @@ def main() -> int:
             blockers = int(schedule.get("blockers") or 0)
             expected = int(division.get("expectedScheduleGames") or 0)
             source = dict(health_row.get("source") or {})
-            health_status = health_row.get("healthStatus") or ("unbanked" if mode == "live" else "registered")
-            phase = health_row.get("phase") or ("historical" if mode == "historical_registered" else "unbanked")
+            health_status = health_row.get("healthStatus") or ("unbanked" if mode in {"live", "archive"} else "registered")
+            phase = health_row.get("phase") or ("archive_complete" if mode == "archive" and games else ("archive_pending" if mode == "archive" else ("historical" if mode == "historical_registered" else "unbanked")))
 
             checks: list[dict[str, Any]] = []
             if mode == "live":
@@ -130,11 +143,20 @@ def main() -> int:
                 if page.get("networkChecked"):
                     checks.append(check("public_network", "warning", page.get("networkStatus") == "ready", "Published page is reachable", page.get("networkMessage") or "Published page could not be verified."))
                 checks.append(check("count_reconciles", "blocking", games == scheduled + completed, "Scheduled and completed counts reconcile", f"{games} total != {scheduled} scheduled + {completed} completed."))
+            elif mode == "archive":
+                checks.append(check("archive_registered", "info", True, "Completed division is registered for archival banking"))
+                checks.append(check("public_page", "warning", page_ready, "Historical results page is wired", page.get("message") or "Historical results page is missing or incomplete."))
+                if games > 0:
+                    checks.append(check("archive_dataset", "blocking", True, "Normalized historical dataset is banked"))
+                    checks.append(check("archive_blockers", "warning", blockers == 0, "No blocking archive defects", f"{blockers} blocking data defect(s) require review."))
+                    checks.append(check("archive_count_reconciles", "warning", games == scheduled + completed, "Archive counts reconcile", f"{games} total != {scheduled} scheduled + {completed} completed."))
+                else:
+                    checks.append(check("archive_dataset", "info", False, "Awaiting first archive sync", "Run the historical archive workflow to bank this division."))
             else:
                 checks.append(check("registered", "info", True, "Tournament is registered for future onboarding"))
                 checks.append(check("public_page", "blocking", page_ready, "Historical results page is wired", page.get("message") or "Historical results page is missing or incomplete."))
 
-            status = severity_for(checks, mode)
+            status = severity_for(checks, mode, games)
             row = {
                 "eventId": event_id,
                 "eventName": event.get("name"),
@@ -176,7 +198,7 @@ def main() -> int:
             event_divisions.append(row)
             divisions.append(row)
             for item in checks:
-                if item["passed"] or item["severity"] not in {"blocking", "warning"}:
+                if mode != "live" or item["passed"] or item["severity"] not in {"blocking", "warning"}:
                     continue
                 alerts.append({
                     "eventId": event_id,
@@ -200,11 +222,15 @@ def main() -> int:
             "attention": statuses.count("attention"),
             "blocking": statuses.count("blocking"),
             "historical": statuses.count("historical"),
+            "archivePending": statuses.count("archive_pending"),
+            "archived": statuses.count("archived"),
+            "archiveAttention": statuses.count("archive_attention"),
             "scheduledGames": sum(row["schedule"]["scheduledGames"] for row in event_divisions),
             "completedGames": sum(row["schedule"]["completedGames"] for row in event_divisions),
         })
 
     live = [row for row in divisions if row["monitoringMode"] == "live"]
+    archive = [row for row in divisions if row["monitoringMode"] == "archive"]
     payload = {
         "schemaVersion": 1,
         "release": RELEASE,
@@ -216,6 +242,11 @@ def main() -> int:
             "divisions": len(divisions),
             "liveEvents": sum(item["monitoringMode"] == "live" for item in event_summaries),
             "liveDivisions": len(live),
+            "archiveEvents": sum(item["monitoringMode"] == "archive" for item in event_summaries),
+            "archiveDivisions": len(archive),
+            "archiveBankedDivisions": sum(row["operationalStatus"] in {"archived", "archive_attention"} for row in archive),
+            "archivePendingDivisions": sum(row["operationalStatus"] == "archive_pending" for row in archive),
+            "archiveGames": sum(row["schedule"]["games"] for row in archive),
             "historicalEvents": sum(item["monitoringMode"] == "historical_registered" for item in event_summaries),
             "historicalDivisions": sum(row["monitoringMode"] == "historical_registered" for row in divisions),
             "ready": sum(row["operationalStatus"] == "ready" for row in live),
@@ -248,7 +279,8 @@ def main() -> int:
     print("TOURNAMENT OPERATIONS BUILD COMPLETE")
     print(f" - {payload['counts']['events']} events and {payload['counts']['divisions']} registered divisions")
     print(f" - {payload['counts']['liveDivisions']} live JO divisions: {payload['counts']['ready']} ready, {payload['counts']['attention']} attention, {payload['counts']['blocking']} blocking")
-    print(f" - {payload['counts']['historicalDivisions']} historical divisions registered for future onboarding")
+    print(f" - {payload['counts']['archiveDivisions']} completed-event divisions: {payload['counts']['archiveBankedDivisions']} banked, {payload['counts']['archivePendingDivisions']} pending")
+    print(f" - {payload['counts']['historicalDivisions']} additional historical divisions registered for future onboarding")
     print(f" - {len(alerts)} operational alert(s)")
     return 0
 
