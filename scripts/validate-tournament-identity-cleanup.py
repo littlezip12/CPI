@@ -71,16 +71,18 @@ for row in rows:
     if name.endswith("-") or re.match(r"^\d+(?:st|nd|rd|th)[_\s-]", name, re.I):
         fail(f"Placement-slot identity leaked into participant registry: {name}")
 
-manifest_games = int(manifest.get("counts", {}).get("games") or 0)
+jo_datasets = [item for item in manifest.get("datasets", []) if str(item.get("eventId") or "").startswith("2026-jo-weekend-")]
+manifest_games = sum(int(item.get("counts", {}).get("games") or 0) for item in jo_datasets)
+manifest_finals = sum(int(item.get("counts", {}).get("finalGames") or 0) for item in jo_datasets)
 if manifest_games != 3924:
     fail(f"Cleaned JO bank should contain 3,924 actual schedule records, found {manifest_games}")
-if int(manifest.get("counts", {}).get("finalGames") or 0) != 0:
-    fail("Pre-tournament cleanup must retain zero completed games")
+if manifest_finals != 0:
+    fail("Pre-tournament JO cleanup must retain zero completed games")
 
 # Inspect every normalized participant rather than trusting only the generated registry.
 resolved_prefix_count = 0
 bracket_reference_count = 0
-for item in manifest.get("datasets", []):
+for item in jo_datasets:
     data = load(str(item.get("path") or ""))
     for game in data.get("games", []):
         for participant in game.get("participants", {}).values():

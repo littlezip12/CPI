@@ -1,8 +1,9 @@
-# CPI 7.48.2
+# CPI 7.48.3
 
-Historical archive validator compatibility hotfix.
+Historical archive scope validation hotfix.
 
-- Keeps the archive module release pinned to 7.48.0.
-- Allows site-level patch releases such as 7.48.1 and 7.48.2 to pass archive validation.
-- Preserves archive output, evidence quarantine, and ranking protections.
-- Does not change tournament data, scores, identities, or rankings.
+- Keeps JO identity cleanup checks scoped to the 23 Junior Olympics datasets.
+- Compares JO source health only with live sync-enabled datasets.
+- Compares JO performance only with Junior Olympics final games.
+- Allows historical archive games and completed scores to coexist in the shared normalized manifest.
+- Does not change schedules, scores, identities, rankings, or archive evidence policy.

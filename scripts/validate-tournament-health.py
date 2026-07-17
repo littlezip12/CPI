@@ -84,13 +84,16 @@ if counts.get("games") != sum(int(row.get("schedule", {}).get("games") or 0) for
     fail("Tournament health aggregate game count mismatch")
 if counts.get("completedGames") != sum(int(row.get("schedule", {}).get("completedGames") or 0) for row in rows):
     fail("Tournament health aggregate completed-game count mismatch")
-if counts.get("games") != manifest.get("counts", {}).get("games"):
-    fail("Tournament health game count must match normalized manifest")
-if counts.get("completedGames") != manifest.get("counts", {}).get("finalGames"):
-    fail("Tournament health completed-game count must match normalized manifest")
-
 sync_event_ids = {event.get("id") for event in registry.get("events", []) if event.get("syncEnabled")}
-manifest_keys = {(item.get("eventId"), item.get("divisionId")) for item in manifest.get("datasets", []) if item.get("eventId") in sync_event_ids}
+sync_manifest_items = [item for item in manifest.get("datasets", []) if item.get("eventId") in sync_event_ids]
+sync_manifest_games = sum(int(item.get("counts", {}).get("games") or 0) for item in sync_manifest_items)
+sync_manifest_finals = sum(int(item.get("counts", {}).get("finalGames") or 0) for item in sync_manifest_items)
+if counts.get("games") != sync_manifest_games:
+    fail("Tournament health game count must match live-source normalized datasets")
+if counts.get("completedGames") != sync_manifest_finals:
+    fail("Tournament health completed-game count must match live-source normalized datasets")
+
+manifest_keys = {(item.get("eventId"), item.get("divisionId")) for item in sync_manifest_items}
 health_banked_keys = {(row.get("eventId"), row.get("divisionId")) for row in rows if int(row.get("schedule", {}).get("games") or 0) > 0}
 if manifest_keys != health_banked_keys:
     fail("Tournament health banked rows must match the normalized manifest")

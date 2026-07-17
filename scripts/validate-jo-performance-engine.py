@@ -28,9 +28,9 @@ if performance.get("release") != "7.45.0": fail("JO performance release must be 
 if "never changed automatically" not in performance.get("policy", "").lower(): fail("Manual-only ranking policy missing")
 counts = performance.get("counts", {})
 if counts.get("divisions") != 23: fail(f"Expected 23 JO divisions, found {counts.get('divisions')}")
-manifest_finals = int(manifest.get("counts", {}).get("finalGames") or 0)
+manifest_finals = sum(int(item.get("counts", {}).get("finalGames") or 0) for item in manifest.get("datasets", []) if str(item.get("eventId") or "").startswith("2026-jo-weekend-"))
 evidence_finals = int(evidence.get("counts", {}).get("finalGames") or 0)
-if counts.get("uniqueFinalGames") != manifest_finals: fail("JO performance final-game count does not match normalized manifest")
+if counts.get("uniqueFinalGames") != manifest_finals: fail("JO performance final-game count does not match normalized JO datasets")
 if counts.get("uniqueFinalGames") != evidence_finals: fail("JO performance final-game count does not match evidence bank")
 if counts.get("confirmedPlacements", 0) > counts.get("teamsWithFinals", 0): fail("Confirmed placements exceed teams with finals")
 for team in performance.get("teams", []):
