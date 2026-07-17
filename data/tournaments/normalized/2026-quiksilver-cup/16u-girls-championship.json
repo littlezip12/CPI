@@ -1,0 +1,932 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-quiksilver-cup",
+    "name": "2026 Quiksilver Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "16u-girls-championship",
+    "label": "16U Girls",
+    "season": "2026",
+    "ageGroup": "16U",
+    "gender": "Girls",
+    "division": "Championship",
+    "divisionTier": "D1",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "google_sheets_csv",
+    "spreadsheetId": "18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ",
+    "gid": "471397786",
+    "sheetName": null,
+    "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=471397786#gid=471397786",
+    "fetchedAt": "2026-07-17T18:30:59Z",
+    "mode": "live_fetch",
+    "contentSha256": "2b0c7e95218e64efba254101a272c3366d8ad04adadba73752b07db33a0f0bb1",
+    "rowCount": 34,
+    "fetchedUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/export?format=csv&gid=471397786"
+  },
+  "counts": {
+    "games": 13,
+    "finalGames": 13,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 26,
+    "resolvedTeamParticipants": 5,
+    "unresolvedTeamParticipants": 21,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 21
+  },
+  "games": [
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g01",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G01",
+      "sourceGameNumber": null,
+      "sourceRow": 10,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-OVAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A2-OVAC",
+          "participantId": "tournament-team-2026-16u-girls-a2-ovac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3- COMMERCE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A3- COMMERCE",
+          "participantId": "tournament-team-2026-16u-girls-a3-commerce",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 7,
+        "whiteRaw": "18",
+        "darkRaw": "7"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-a2-ovac",
+        "winnerTeamId": null,
+        "winnerName": "A2-OVAC",
+        "loserParticipantId": "tournament-team-2026-16u-girls-a3-commerce",
+        "loserTeamId": null,
+        "loserName": "A3- COMMERCE"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g02",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G02",
+      "sourceGameNumber": null,
+      "sourceRow": 11,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1- LEGACY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "B1- LEGACY",
+          "participantId": "tournament-team-2026-16u-girls-b1-legacy",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B2-LB VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "B2-LB VIKING",
+          "participantId": "tournament-team-2026-16u-girls-b2-lb-viking",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 13,
+        "whiteRaw": "7",
+        "darkRaw": "13"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-b2-lb-viking",
+        "winnerTeamId": null,
+        "winnerName": "B2-LB VIKING",
+        "loserParticipantId": "tournament-team-2026-16u-girls-b1-legacy",
+        "loserTeamId": null,
+        "loserName": "B1- LEGACY"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g03",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G03",
+      "sourceGameNumber": null,
+      "sourceRow": 14,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1- RANCHO TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A1- RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-a1-rancho-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3- COMMERCE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A3- COMMERCE",
+          "participantId": "tournament-team-2026-16u-girls-a3-commerce",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 4,
+        "whiteRaw": "14",
+        "darkRaw": "4"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-a1-rancho-tsunami",
+        "winnerTeamId": null,
+        "winnerName": "A1- RANCHO TSUNAMI",
+        "loserParticipantId": "tournament-team-2026-16u-girls-a3-commerce",
+        "loserTeamId": null,
+        "loserName": "A3- COMMERCE"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g04",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G04",
+      "sourceGameNumber": null,
+      "sourceRow": 15,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1- LEGACY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "B1- LEGACY",
+          "participantId": "tournament-team-2026-16u-girls-b1-legacy",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3- MID VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "B3- MID VALLEY",
+          "participantId": "tournament-team-2026-16u-girls-b3-mid-valley",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-b1-legacy",
+        "winnerTeamId": null,
+        "winnerName": "B1- LEGACY",
+        "loserParticipantId": "tournament-team-2026-16u-girls-b3-mid-valley",
+        "loserTeamId": null,
+        "loserName": "B3- MID VALLEY"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g05",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G05",
+      "sourceGameNumber": null,
+      "sourceRow": 18,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1- RANCHO TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A1- RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-a1-rancho-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2-OVAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A2-OVAC",
+          "participantId": "tournament-team-2026-16u-girls-a2-ovac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 6.4,
+        "dark": 6.5,
+        "whiteRaw": "6.4",
+        "darkRaw": "6.5"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-a2-ovac",
+        "winnerTeamId": null,
+        "winnerName": "A2-OVAC",
+        "loserParticipantId": "tournament-team-2026-16u-girls-a1-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "A1- RANCHO TSUNAMI"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g06",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G06",
+      "sourceGameNumber": null,
+      "sourceRow": 19,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-LB VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "B2-LB VIKING",
+          "participantId": "tournament-team-2026-16u-girls-b2-lb-viking",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3- MID VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "B3- MID VALLEY",
+          "participantId": "tournament-team-2026-16u-girls-b3-mid-valley",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-b2-lb-viking",
+        "winnerTeamId": null,
+        "winnerName": "B2-LB VIKING",
+        "loserParticipantId": "tournament-team-2026-16u-girls-b3-mid-valley",
+        "loserTeamId": null,
+        "loserName": "B3- MID VALLEY"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g07",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G07",
+      "sourceGameNumber": null,
+      "sourceRow": 23,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2nd A- RANCHO TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2nd A",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-rancho-tsunami",
+          "teamId": null,
+          "clubId": "club-rancho-tsunami",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "3rd B- MID VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rd B",
+          "displayName": "Mid Valley",
+          "participantId": "team-2026-16u-girls-mid-valley-16u-girls",
+          "teamId": "team-2026-16u-girls-mid-valley-16u-girls",
+          "clubId": "club-mid-valley",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 9,
+        "whiteRaw": "11",
+        "darkRaw": "9"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-rancho-tsunami",
+        "winnerTeamId": null,
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "team-2026-16u-girls-mid-valley-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-mid-valley-16u-girls",
+        "loserName": "Mid Valley"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g08",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G08",
+      "sourceGameNumber": null,
+      "sourceRow": 24,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2nd B- LEGACY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2nd B",
+          "displayName": "Legacy",
+          "participantId": "team-2026-16u-girls-legacy-16u-girls",
+          "teamId": "team-2026-16u-girls-legacy-16u-girls",
+          "clubId": "club-legacy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "3rd A- COMMERCE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rd A",
+          "displayName": "Commerce",
+          "participantId": "team-2026-16u-girls-commerce-16u-girls",
+          "teamId": "team-2026-16u-girls-commerce-16u-girls",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 5,
+        "whiteRaw": "16",
+        "darkRaw": "5"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-girls-legacy-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-legacy-16u-girls",
+        "winnerName": "Legacy",
+        "loserParticipantId": "team-2026-16u-girls-commerce-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-commerce-16u-girls",
+        "loserName": "Commerce"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g09",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G09",
+      "sourceGameNumber": null,
+      "sourceRow": 26,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1st B - LB VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1st B",
+          "displayName": "LB Viking",
+          "participantId": "team-2026-16u-girls-lb-viking-16u-girls",
+          "teamId": "team-2026-16u-girls-lb-viking-16u-girls",
+          "clubId": "club-viking",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W G#07- RANCHO TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W G#07- RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-w-g-07-rancho-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "winnerName": "LB Viking",
+        "loserParticipantId": "tournament-team-2026-16u-girls-w-g-07-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "W G#07- RANCHO TSUNAMI"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g10",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G10",
+      "sourceGameNumber": null,
+      "sourceRow": 27,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1st A- OVAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1st A",
+          "displayName": "OVAC",
+          "participantId": "team-2026-16u-girls-ovac-16u-girls",
+          "teamId": "team-2026-16u-girls-ovac-16u-girls",
+          "clubId": "club-ovac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W G#08- LEGACY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W G#08- LEGACY",
+          "participantId": "tournament-team-2026-16u-girls-w-g-08-legacy",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 6,
+        "whiteRaw": "13",
+        "darkRaw": "6"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-girls-ovac-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-ovac-16u-girls",
+        "winnerName": "OVAC",
+        "loserParticipantId": "tournament-team-2026-16u-girls-w-g-08-legacy",
+        "loserTeamId": null,
+        "loserName": "W G#08- LEGACY"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g11",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G11",
+      "sourceGameNumber": null,
+      "sourceRow": 28,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L G#07- MID VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L G#07- MID VALLEY",
+          "participantId": "tournament-team-2026-16u-girls-l-g-07-mid-valley",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L G#08- COMMERCE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L G#08- COMMERCE",
+          "participantId": "tournament-team-2026-16u-girls-l-g-08-commerce",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-l-g-07-mid-valley",
+        "winnerTeamId": null,
+        "winnerName": "L G#07- MID VALLEY",
+        "loserParticipantId": "tournament-team-2026-16u-girls-l-g-08-commerce",
+        "loserTeamId": null,
+        "loserName": "L G#08- COMMERCE"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g12",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G12",
+      "sourceGameNumber": null,
+      "sourceRow": 29,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L G#09- RANCHO TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L G#09- RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-l-g-09-rancho-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L G#10- LEGACY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "L G#10- LEGACY",
+          "participantId": "tournament-team-2026-16u-girls-l-g-10-legacy",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 4,
+        "whiteRaw": "14",
+        "darkRaw": "4"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-l-g-09-rancho-tsunami",
+        "winnerTeamId": null,
+        "winnerName": "L G#09- RANCHO TSUNAMI",
+        "loserParticipantId": "tournament-team-2026-16u-girls-l-g-10-legacy",
+        "loserTeamId": null,
+        "loserName": "L G#10- LEGACY"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-16u-girls-championship-16g13",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "16u-girls-championship",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "16G13",
+      "sourceGameNumber": null,
+      "sourceRow": 30,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W G#10- OVAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W G#10- OVAC",
+          "participantId": "tournament-team-2026-16u-girls-w-g-10-ovac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "W G#09 - LB VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "W G#09 - LB VIKING",
+          "participantId": "tournament-team-2026-16u-girls-w-g-09-lb-viking",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 5,
+        "whiteRaw": "3",
+        "darkRaw": "5"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-w-g-09-lb-viking",
+        "winnerTeamId": null,
+        "winnerName": "W G#09 - LB VIKING",
+        "loserParticipantId": "tournament-team-2026-16u-girls-w-g-10-ovac",
+        "loserTeamId": null,
+        "loserName": "W G#10- OVAC"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    }
+  ]
+}
