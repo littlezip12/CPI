@@ -2,6 +2,7 @@
 (function () {
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
+  const historicalProfiles = window.CPI_HISTORICAL_PROFILES || { clubs: {}, counts: {} };
   const params = new URLSearchParams(window.location.search);
   const directoryState = { visibleCount: 25 };
   const REGION_ORDER = [
@@ -391,6 +392,39 @@
     target.style.setProperty("--profile-secondary-soft", `${club.secondaryColor || "#f5b700"}28`);
   }
 
+  function historicalForClub(club) {
+    const clubId = club?.canonicalClubId;
+    return clubId ? historicalProfiles.clubs?.[clubId] || null : null;
+  }
+
+  function historicalClubRecord(summary = {}) {
+    const finals = Number(summary.finalGames || 0);
+    if (!finals) return `${Number(summary.scheduledGames || 0)} archived schedule${Number(summary.scheduledGames || 0) === 1 ? "" : "s"}`;
+    return `${Number(summary.wins || 0)}-${Number(summary.losses || 0)}${Number(summary.ties || 0) ? `-${Number(summary.ties || 0)}` : ""} · ${finals} finals`;
+  }
+
+  function renderHistoricalClubProfile(history) {
+    if (!history) return `<section id="club-tournament-history" class="club-profile-table-card historical-club-panel is-empty"><div class="club-profile-section-title"><div><p class="club-intel-eyebrow">Historical archive</p><h2>No linked historical results yet</h2></div><span>Profile-only</span></div><p class="club-profile-note">Historical entries appear only when archived participants resolve safely to this canonical club identity.</p></section>`;
+    const summary = history.summary || {};
+    const appearances = history.appearances || [];
+    const placements = history.placements || [];
+    const recent = history.recentGames || [];
+    return `<section id="club-tournament-history" class="club-profile-table-card historical-club-panel">
+      <div class="club-profile-section-title"><div><p class="club-intel-eyebrow">Historical tournament archive</p><h2>Program results and entries</h2></div><span>${escapeHtml(historicalClubRecord(summary))}</span></div>
+      <p class="club-profile-note historical-policy-note">Historical results are profile context only. They remain separate from live JO evidence and cannot change published CPI rankings automatically.</p>
+      <div class="historical-summary-grid club-history-summary">
+        <div><span>Events</span><strong>${escapeHtml(summary.events || 0)}</strong></div>
+        <div><span>Teams identified</span><strong>${escapeHtml((history.teamNames || []).length)}</strong></div>
+        <div><span>Final games</span><strong>${escapeHtml(summary.finalGames || 0)}</strong></div>
+        <div><span>Best verified finish</span><strong>${summary.bestFinish ? `#${escapeHtml(summary.bestFinish)}` : "—"}</strong></div>
+      </div>
+      <div class="historical-appearance-grid club-history-appearances">${appearances.map((appearance) => `<article class="historical-appearance-card"><span>${escapeHtml(appearance.eventName || "Tournament")}</span><strong>${escapeHtml(appearance.divisionLabel || "Division")}</strong><em>${escapeHtml(historicalClubRecord(appearance))} · ${(appearance.teamNames || []).length} team${(appearance.teamNames || []).length === 1 ? "" : "s"}</em><div>${appearance.eventPublicPath ? `<a href="${escapeHtml(appearance.eventPublicPath)}">Tournament page</a>` : ""}${appearance.sourceUrl ? `<a href="${escapeHtml(appearance.sourceUrl)}" target="_blank" rel="noopener">Source</a>` : ""}</div></article>`).join("")}</div>
+      ${placements.length ? `<div class="historical-placement-row">${placements.slice(0, 12).map((item) => `<span><b>#${escapeHtml(item.place)}</b>${escapeHtml(item.name)} · ${escapeHtml(item.eventName)}</span>`).join("")}</div>` : ""}
+      <div class="historical-game-list club-history-games">${recent.slice(0, 10).map((game) => `<article class="historical-game-row ${game.status === "final" ? "is-final" : "is-scheduled"}"><div><span>${escapeHtml(game.eventName || "Tournament")} · ${escapeHtml(game.divisionLabel || "Division")}</span><strong>${game.teamPage ? `<a href="${escapeHtml(game.teamPage)}">${escapeHtml(game.teamName || "Club team")}</a>` : escapeHtml(game.teamName || "Club team")} vs ${game.opponentTeamPage ? `<a href="${escapeHtml(game.opponentTeamPage)}">${escapeHtml(game.opponentName || "Opponent")}</a>` : escapeHtml(game.opponentName || "Opponent")}</strong></div><div><strong>${escapeHtml(game.status === "final" ? `${game.result ? `${game.result} ` : ""}${game.scoreDisplay || "Final"}` : "Scheduled")}</strong><span>${escapeHtml(game.stage || game.dateLabel || game.gameNumber || "Archived game")}</span></div></article>`).join("")}</div>
+      <a class="historical-archive-link" href="tournament-archive.html?club=${encodeURIComponent(history.canonicalClubId || "")}">Search full tournament archive →</a>
+    </section>`;
+  }
+
   function renderClubProfile() {
     const root = $("#clubProfileApp");
     if (!root) return;
@@ -409,6 +443,7 @@
     applyClubProfileVars(club);
     document.title = `${safeName(club)} | California Polo Index`;
     const top = club.topTeam || {};
+    const historicalProfile = historicalForClub(club);
     const teams = [...club.teams].sort((a, b) => number(a.postRank, 999) - number(b.postRank, 999));
     const groups = groupsForClub(club);
     const genders = gendersForClub(club);
@@ -460,6 +495,7 @@
 
     <nav class="club-profile-tabs club-profile-tabs-v726" aria-label="Club profile sections">
       <a href="#club-age-groups">Teams by age group</a>
+      <a href="#club-tournament-history">Tournament history</a>
       <a href="#club-team-portfolio">Ranked portfolio</a>
     </nav>
 
@@ -471,6 +507,8 @@
       <div class="club-age-group-grid">${renderClubAgeGroups(teams)}</div>
       <p class="club-profile-note">This is the club-level view. Team-specific results, movement, and best wins live on individual team pages.</p>
     </section>
+
+    ${renderHistoricalClubProfile(historicalProfile)}
 
     <section class="club-profile-grid club-profile-grid-v726">
       <article id="club-team-portfolio" class="club-profile-table-card">

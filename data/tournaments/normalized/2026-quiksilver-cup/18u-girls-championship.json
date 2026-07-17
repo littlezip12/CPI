@@ -24,25 +24,80 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=387537840#gid=387537840",
     "fetchedAt": "2026-07-17T18:30:59Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "04f9130ceb87847ca373158f4fb1812b251e92462010492c8446be773b03a31b",
-    "rowCount": 39,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/gviz/tq?tqx=out:csv&gid=387537840"
+    "rowCount": 39
   },
   "counts": {
     "games": 18,
-    "finalGames": 0,
-    "scheduledGames": 18,
+    "finalGames": 18,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 36,
-    "resolvedTeamParticipants": 17,
-    "unresolvedTeamParticipants": 19,
+    "resolvedTeamParticipants": 27,
+    "unresolvedTeamParticipants": 9,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 19
+    "reviewItems": 9
   },
+  "placements": [
+    {
+      "place": 1,
+      "label": "1st",
+      "participant": {
+        "raw": "LB VIKING",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "LB VIKING",
+        "participantId": "tournament-team-2026-18u-girls-lb-viking",
+        "teamId": null,
+        "clubId": null,
+        "rankingEligible": false,
+        "identityStatus": "unresolved",
+        "identityMatchType": "tournament_only"
+      },
+      "sourceRow": 37
+    },
+    {
+      "place": 2,
+      "label": "2nd",
+      "participant": {
+        "raw": "680",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "680",
+        "participantId": "team-2026-18u-girls-680-18u-girls",
+        "teamId": "team-2026-18u-girls-680-18u-girls",
+        "clubId": "club-680",
+        "rankingEligible": true,
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "sourceRow": 38
+    },
+    {
+      "place": 3,
+      "label": "3rd",
+      "participant": {
+        "raw": "SD SHORES",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "SD SHORES",
+        "participantId": "tournament-team-2026-18u-girls-sd-shores",
+        "teamId": null,
+        "clubId": "club-san-diego-shores",
+        "rankingEligible": false,
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "sourceRow": 39
+    }
+  ],
   "games": [
     {
       "id": "game-2026-quiksilver-cup-18u-girls-championship-18ug13",
@@ -62,8 +117,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1(1stA)- MID VALLEY",
@@ -93,15 +148,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 16,
+        "whiteRaw": "7",
+        "darkRaw": "16"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-mission-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-mission-18u-girls",
+        "winnerName": "Mission",
+        "loserParticipantId": "team-2026-18u-girls-mid-valley-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-mid-valley-18u-girls",
+        "loserName": "Mid Valley"
       },
       "advancement": {
         "winnerTo": null,
@@ -126,8 +185,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F2(2ndA)- LEGACY",
@@ -157,15 +216,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 9,
+        "whiteRaw": "4",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-680-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-680-18u-girls",
+        "winnerName": "680",
+        "loserParticipantId": "team-2026-18u-girls-legacy-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-legacy-18u-girls",
+        "loserName": "Legacy"
       },
       "advancement": {
         "winnerTo": null,
@@ -190,8 +253,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1(1stB)- SD SHORES",
@@ -221,15 +284,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 7,
+        "whiteRaw": "17",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "team-2026-18u-girls-seaside-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-seaside-18u-girls",
+        "loserName": "Seaside"
       },
       "advancement": {
         "winnerTo": null,
@@ -254,8 +321,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E2(2ndB)- RANCHO TSUNAMI",
@@ -285,15 +352,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 14,
+        "whiteRaw": "6",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-lb-viking",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LB VIKING",
+        "loserParticipantId": "tournament-team-2026-18u-girls-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -318,46 +389,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W G#13 - MISSION",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#13 - MISSION",
-          "participantId": "tournament-team-2026-18u-girls-w-g-13-mission",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "W G#13",
+          "displayName": "Mission",
+          "participantId": "team-2026-18u-girls-mission-18u-girls",
+          "teamId": "team-2026-18u-girls-mission-18u-girls",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "W G#14 - 680",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#14 - 680",
-          "participantId": "tournament-team-2026-18u-girls-w-g-14-680",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "W G#14",
+          "displayName": "680",
+          "participantId": "team-2026-18u-girls-680-18u-girls",
+          "teamId": "team-2026-18u-girls-680-18u-girls",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 13,
+        "whiteRaw": "12",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-680-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-680-18u-girls",
+        "winnerName": "680",
+        "loserParticipantId": "team-2026-18u-girls-mission-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-mission-18u-girls",
+        "loserName": "Mission"
       },
       "advancement": {
         "winnerTo": null,
@@ -382,29 +457,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W G#15- SD SHORES",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#15- SD SHORES",
-          "participantId": "tournament-team-2026-18u-girls-w-g-15-sd-shores",
+          "sourceReference": "W G#15",
+          "displayName": "SD SHORES",
+          "participantId": "tournament-team-2026-18u-girls-sd-shores",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-diego-shores",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "W G#16- LB VIKING",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#16- LB VIKING",
-          "participantId": "tournament-team-2026-18u-girls-w-g-16-lb-viking",
+          "sourceReference": "W G#16",
+          "displayName": "LB VIKING",
+          "participantId": "tournament-team-2026-18u-girls-lb-viking",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -413,15 +488,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 13,
+        "whiteRaw": "8",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-lb-viking",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LB VIKING",
+        "loserParticipantId": "tournament-team-2026-18u-girls-sd-shores",
+        "loserTeamId": null,
+        "loserName": "SD SHORES"
       },
       "advancement": {
         "winnerTo": null,
@@ -446,8 +525,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SUNNY HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G2(3rdB)- BULLDOG",
@@ -477,15 +556,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-bulldog-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-bulldog-18u-girls",
+        "winnerName": "Bulldog",
+        "loserParticipantId": "team-2026-18u-girls-patriot-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-patriot-18u-girls",
+        "loserName": "Patriot"
       },
       "advancement": {
         "winnerTo": null,
@@ -510,8 +593,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SUNNY HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1(3rdA)- FOOTHILL",
@@ -541,15 +624,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 19,
+        "dark": 9,
+        "whiteRaw": "19",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-foothill-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-foothill-18u-girls",
+        "winnerName": "Foothill",
+        "loserParticipantId": "team-2026-18u-girls-north-irvine-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-north-irvine-18u-girls",
+        "loserName": "North Irvine"
       },
       "advancement": {
         "winnerTo": null,
@@ -574,8 +661,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SUNNY HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1(3rdA)- FOOTHILL",
@@ -605,15 +692,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-foothill-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-foothill-18u-girls",
+        "winnerName": "Foothill",
+        "loserParticipantId": "team-2026-18u-girls-bulldog-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-bulldog-18u-girls",
+        "loserName": "Bulldog"
       },
       "advancement": {
         "winnerTo": null,
@@ -638,8 +729,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SUNNY HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G3(3rdC)- PATRIOT",
@@ -669,15 +760,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 6,
+        "whiteRaw": "17",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-patriot-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-patriot-18u-girls",
+        "winnerName": "Patriot",
+        "loserParticipantId": "team-2026-18u-girls-north-irvine-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-north-irvine-18u-girls",
+        "loserName": "North Irvine"
       },
       "advancement": {
         "winnerTo": null,
@@ -702,46 +797,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SUNNY HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L G#13 - MID VALLEY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#13 - MID VALLEY",
-          "participantId": "tournament-team-2026-18u-girls-l-g-13-mid-valley",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#13",
+          "displayName": "Mid Valley",
+          "participantId": "team-2026-18u-girls-mid-valley-18u-girls",
+          "teamId": "team-2026-18u-girls-mid-valley-18u-girls",
+          "clubId": "club-mid-valley",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "L G#14 - LEGACY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#14 - LEGACY",
-          "participantId": "tournament-team-2026-18u-girls-l-g-14-legacy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#14",
+          "displayName": "Legacy",
+          "participantId": "team-2026-18u-girls-legacy-18u-girls",
+          "teamId": "team-2026-18u-girls-legacy-18u-girls",
+          "clubId": "club-legacy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8.4,
+        "dark": 8.3,
+        "whiteRaw": "8.4",
+        "darkRaw": "8.3"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-mid-valley-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-mid-valley-18u-girls",
+        "winnerName": "Mid Valley",
+        "loserParticipantId": "team-2026-18u-girls-legacy-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-legacy-18u-girls",
+        "loserName": "Legacy"
       },
       "advancement": {
         "winnerTo": null,
@@ -766,46 +865,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SUNNY HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L G#15- SEASIDE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#15- SEASIDE",
-          "participantId": "tournament-team-2026-18u-girls-l-g-15-seaside",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#15",
+          "displayName": "Seaside",
+          "participantId": "team-2026-18u-girls-seaside-18u-girls",
+          "teamId": "team-2026-18u-girls-seaside-18u-girls",
+          "clubId": "club-seaside",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "L G#16 - RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#16 - RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-18u-girls-l-g-16-rancho-tsunami",
+          "sourceReference": "L G#16",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-18u-girls-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 9,
+        "whiteRaw": "5",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "team-2026-18u-girls-seaside-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-seaside-18u-girls",
+        "loserName": "Seaside"
       },
       "advancement": {
         "winnerTo": null,
@@ -830,8 +933,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G2(3rdB)- BULLDOG",
@@ -861,15 +964,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 18,
+        "dark": 6,
+        "whiteRaw": "18",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-bulldog-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-bulldog-18u-girls",
+        "winnerName": "Bulldog",
+        "loserParticipantId": "team-2026-18u-girls-north-irvine-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-north-irvine-18u-girls",
+        "loserName": "North Irvine"
       },
       "advancement": {
         "winnerTo": null,
@@ -894,8 +1001,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1(3rdA)- FOOTHILL",
@@ -925,15 +1032,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 5,
+        "whiteRaw": "13",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-foothill-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-foothill-18u-girls",
+        "winnerName": "Foothill",
+        "loserParticipantId": "team-2026-18u-girls-patriot-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-patriot-18u-girls",
+        "loserName": "Patriot"
       },
       "advancement": {
         "winnerTo": null,
@@ -958,46 +1069,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L G#19 - LEGACY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#19 - LEGACY",
-          "participantId": "tournament-team-2026-18u-girls-l-g-19-legacy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#19",
+          "displayName": "Legacy",
+          "participantId": "team-2026-18u-girls-legacy-18u-girls",
+          "teamId": "team-2026-18u-girls-legacy-18u-girls",
+          "clubId": "club-legacy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "L G#20 - SEASIDE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#20 - SEASIDE",
-          "participantId": "tournament-team-2026-18u-girls-l-g-20-seaside",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#20",
+          "displayName": "Seaside",
+          "participantId": "team-2026-18u-girls-seaside-18u-girls",
+          "teamId": "team-2026-18u-girls-seaside-18u-girls",
+          "clubId": "club-seaside",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 20,
+        "dark": 5,
+        "whiteRaw": "20",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-legacy-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-legacy-18u-girls",
+        "winnerName": "Legacy",
+        "loserParticipantId": "team-2026-18u-girls-seaside-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-seaside-18u-girls",
+        "loserName": "Seaside"
       },
       "advancement": {
         "winnerTo": null,
@@ -1022,46 +1137,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W G#19 - MID VALLEY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#19 - MID VALLEY",
-          "participantId": "tournament-team-2026-18u-girls-w-g-19-mid-valley",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "W G#19",
+          "displayName": "Mid Valley",
+          "participantId": "team-2026-18u-girls-mid-valley-18u-girls",
+          "teamId": "team-2026-18u-girls-mid-valley-18u-girls",
+          "clubId": "club-mid-valley",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "W G#20 - RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#20 - RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-18u-girls-w-g-20-rancho-tsunami",
+          "sourceReference": "W G#20",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-18u-girls-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 7,
+        "whiteRaw": "13",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-girls-mid-valley-18u-girls",
+        "winnerTeamId": "team-2026-18u-girls-mid-valley-18u-girls",
+        "winnerName": "Mid Valley",
+        "loserParticipantId": "tournament-team-2026-18u-girls-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -1086,29 +1205,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W G#27 - 680",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#27 - 680",
-          "participantId": "tournament-team-2026-18u-girls-w-g-27-680",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "W G#27",
+          "displayName": "680",
+          "participantId": "team-2026-18u-girls-680-18u-girls",
+          "teamId": "team-2026-18u-girls-680-18u-girls",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "W G#28 - LB VIKING",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#28 - LB VIKING",
-          "participantId": "tournament-team-2026-18u-girls-w-g-28-lb-viking",
+          "sourceReference": "W G#28",
+          "displayName": "LB VIKING",
+          "participantId": "tournament-team-2026-18u-girls-lb-viking",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1117,15 +1236,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12.1,
+        "dark": 12.4,
+        "whiteRaw": "12.1",
+        "darkRaw": "12.4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-lb-viking",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LB VIKING",
+        "loserParticipantId": "team-2026-18u-girls-680-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-680-18u-girls",
+        "loserName": "680"
       },
       "advancement": {
         "winnerTo": null,
@@ -1150,46 +1273,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDENWEST",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L G#27 - MISSION",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#27 - MISSION",
-          "participantId": "tournament-team-2026-18u-girls-l-g-27-mission",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#27",
+          "displayName": "Mission",
+          "participantId": "team-2026-18u-girls-mission-18u-girls",
+          "teamId": "team-2026-18u-girls-mission-18u-girls",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "L G#28 - SD SHORES",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#28 - SD SHORES",
-          "participantId": "tournament-team-2026-18u-girls-l-g-28-sd-shores",
+          "sourceReference": "L G#28",
+          "displayName": "SD SHORES",
+          "participantId": "tournament-team-2026-18u-girls-sd-shores",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-diego-shores",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 7,
+        "whiteRaw": "4",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "team-2026-18u-girls-mission-18u-girls",
+        "loserTeamId": "team-2026-18u-girls-mission-18u-girls",
+        "loserName": "Mission"
       },
       "advancement": {
         "winnerTo": null,

@@ -39,6 +39,17 @@ require(combined["games"][1]["scores"]["white"] == 11 and combined["games"][1]["
 require(all(not game["participants"]["white"].get("rankingEligible") or game["participants"]["white"].get("teamId") for game in combined["games"]), "Ranking eligibility requires a canonical team ID")
 
 
+unlabeled, _ = parse("results-table-unlabeled-scores.csv")
+require(unlabeled["counts"]["games"] == 2, "Unlabeled score columns should still produce two games")
+require(unlabeled["counts"]["finalGames"] == 2, "Positional score columns must normalize as finals")
+require(unlabeled["games"][0]["scores"]["white"] == 8 and unlabeled["games"][0]["scores"]["dark"] == 15, "Blank score headers must be inferred beside team columns")
+require(unlabeled["games"][0]["participants"]["white"]["displayName"] == "Patriot A", "Simple A1- pool prefixes must be removed from team identity")
+require(unlabeled["games"][0]["participants"]["white"]["sourceReference"] == "A1", "Simple pool prefix must remain source metadata")
+require(unlabeled["games"][1]["participants"]["white"]["displayName"] == "Lamorinda A", "Ordinal pool prefix must resolve to the clean team")
+require(unlabeled["games"][1]["participants"]["dark"]["displayName"].lower() == "newport beach", "Winner-game prefix must resolve to the clean team")
+require(len(unlabeled.get("placements", [])) == 2, "Explicit source footer placements should be preserved")
+require(unlabeled["placements"][0]["place"] == 1, "First-place footer row should normalize")
+
 
 # Google may emit CRLF for individual tabs. Hashes must be stable regardless
 # of transport line endings so raw, normalized, and QA artifacts agree.
@@ -55,5 +66,6 @@ require(crlf_qa["sourceSha256"] == expected_hash, "QA CRLF source hash must use 
 print("HISTORICAL TOURNAMENT PARSER TESTS PASSED")
 print(" - Separate and combined score layouts normalize consistently")
 print(" - Blank 0-0 rows remain scheduled; real scores become finals")
-print(" - Pool/seed prefixes stay metadata rather than team-name text")
+print(" - Pool/seed and advancement prefixes stay metadata rather than team-name text")
+print(" - Unlabeled score columns and explicit placement footer rows normalize correctly")
 print(" - LF and CRLF Google CSV responses produce identical source hashes")

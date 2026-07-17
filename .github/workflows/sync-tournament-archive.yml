@@ -28,8 +28,10 @@ jobs:
       - name: Fetch and normalize completed tournament sources
         run: python3 scripts/sync-tournament-data.py --archive-enabled --allow-partial
 
-      - name: Build searchable tournament archive
-        run: python3 scripts/build-tournament-archive.py
+      - name: Build searchable tournament archive and profile history
+        run: |
+          python3 scripts/build-tournament-archive.py
+          python3 scripts/build-historical-profiles.py
 
       - name: Rebuild source health and operations
         run: |
@@ -48,8 +50,11 @@ jobs:
           python3 scripts/test-historical-tournament-parser.py
           python3 scripts/validate-tournament-data.py
           python3 scripts/validate-tournament-archive.py
+          python3 scripts/test-historical-profile-engine.py
+          python3 scripts/validate-historical-profiles.py
           python3 scripts/validate-tournament-operations.py
           node scripts/test-tournament-archive-ui.js
+          node scripts/test-historical-profile-ui.js
 
       - name: Commit archive updates
         id: commit
@@ -62,13 +67,15 @@ jobs:
             data/tournaments/normalized \
             data/tournaments/qa \
             data/tournaments/archive \
+            data/tournaments/history \
             data/tournaments/quiksilver-cup-2026.json \
             data/tournaments/health \
             data/tournaments/operations \
             data/tournaments/evidence \
             data/tournaments/identity \
             data/tournaments/ranking-review-engine \
-            data/tournaments/post-jo-review
+            data/tournaments/post-jo-review \
+            qa/historical-profile-summary-7.49.0.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No historical tournament changes detected."

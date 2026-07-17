@@ -24,25 +24,25 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=1288471894#gid=1288471894",
     "fetchedAt": "2026-07-17T18:31:01Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "9da04d12ec1e52952f3ee3c70a3c70e9b189f267cd7f2d145d47dd4b73e414c0",
-    "rowCount": 96,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/gviz/tq?tqx=out:csv&gid=1288471894"
+    "rowCount": 96
   },
   "counts": {
     "games": 64,
-    "finalGames": 0,
-    "scheduledGames": 64,
+    "finalGames": 64,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 128,
-    "resolvedTeamParticipants": 53,
-    "unresolvedTeamParticipants": 75,
+    "resolvedTeamParticipants": 87,
+    "unresolvedTeamParticipants": 41,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 75
+    "reviewItems": 41
   },
+  "placements": [],
   "games": [
     {
       "id": "game-2026-boys-futures-super-finals-12u-boys-d1-12bd101",
@@ -62,46 +62,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-MISSION A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-MISSION A",
-          "participantId": "tournament-team-2026-12u-boys-a1-mission-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "Mission A",
+          "participantId": "team-2026-12u-boys-mission-a-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-a-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3-908",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-908",
-          "participantId": "tournament-team-2026-12u-boys-a3-908",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A3",
+          "displayName": "908",
+          "participantId": "team-2026-12u-boys-908-12u-boys",
+          "teamId": "team-2026-12u-boys-908-12u-boys",
+          "clubId": "club-908",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 6,
+        "whiteRaw": "9",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerName": "Mission A",
+        "loserParticipantId": "team-2026-12u-boys-908-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-908-12u-boys",
+        "loserName": "908"
       },
       "advancement": {
         "winnerTo": null,
@@ -126,16 +130,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1-STANFORD A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1-STANFORD A",
-          "participantId": "tournament-team-2026-12u-boys-d1-stanford-a",
+          "sourceReference": "D1",
+          "displayName": "STANFORD A",
+          "participantId": "tournament-team-2026-12u-boys-stanford-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -146,26 +150,30 @@
           "raw": "D3-NEWPORT BEACH A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3-NEWPORT BEACH A",
-          "participantId": "tournament-team-2026-12u-boys-d3-newport-beach-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D3",
+          "displayName": "Newport Beach A",
+          "participantId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+          "teamId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+          "clubId": "club-newport-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-stanford-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "STANFORD A",
+        "loserParticipantId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "loserName": "Newport Beach A"
       },
       "advancement": {
         "winnerTo": null,
@@ -190,46 +198,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-VANGUARD",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-VANGUARD",
-          "participantId": "tournament-team-2026-12u-boys-b1-vanguard",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B1",
+          "displayName": "Vanguard",
+          "participantId": "team-2026-12u-boys-vanguard",
+          "teamId": "team-2026-12u-boys-vanguard",
+          "clubId": "club-vanguard",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3-RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-12u-boys-b3-rancho-tsunami",
+          "sourceReference": "B3",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-12u-boys-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-vanguard",
+        "winnerTeamId": "team-2026-12u-boys-vanguard",
+        "winnerName": "Vanguard",
+        "loserParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -254,29 +266,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1-SD DONS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1-SD DONS A",
-          "participantId": "tournament-team-2026-12u-boys-c1-sd-dons-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C1",
+          "displayName": "SD Dons A",
+          "participantId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+          "teamId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+          "clubId": "club-sd-dons",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C3-PATRIOT A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3-PATRIOT A",
-          "participantId": "tournament-team-2026-12u-boys-c3-patriot-a",
+          "sourceReference": "C3",
+          "displayName": "PATRIOT A",
+          "participantId": "tournament-team-2026-12u-boys-patriot-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -285,15 +297,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 5,
+        "whiteRaw": "17",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerName": "SD Dons A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-patriot-a",
+        "loserTeamId": null,
+        "loserName": "PATRIOT A"
       },
       "advancement": {
         "winnerTo": null,
@@ -318,46 +334,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2-SAN JOSE EXPRESS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-SAN JOSE EXPRESS",
-          "participantId": "tournament-team-2026-12u-boys-a2-san-jose-express",
+          "sourceReference": "A2",
+          "displayName": "SAN JOSE EXPRESS",
+          "participantId": "tournament-team-2026-12u-boys-san-jose-express",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-jose-express",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A3-908",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-908",
-          "participantId": "tournament-team-2026-12u-boys-a3-908",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A3",
+          "displayName": "908",
+          "participantId": "team-2026-12u-boys-908-12u-boys",
+          "teamId": "team-2026-12u-boys-908-12u-boys",
+          "clubId": "club-908",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 8,
+        "whiteRaw": "16",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-jose-express",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN JOSE EXPRESS",
+        "loserParticipantId": "team-2026-12u-boys-908-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-908-12u-boys",
+        "loserName": "908"
       },
       "advancement": {
         "winnerTo": null,
@@ -382,46 +402,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D2-SOCAL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2-SOCAL",
-          "participantId": "tournament-team-2026-12u-boys-d2-socal",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D2",
+          "displayName": "SoCal",
+          "participantId": "team-2026-12u-boys-socal-12u-boys",
+          "teamId": "team-2026-12u-boys-socal-12u-boys",
+          "clubId": "club-socal",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "D3-NEWPORT BEACH A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3-NEWPORT BEACH A",
-          "participantId": "tournament-team-2026-12u-boys-d3-newport-beach-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D3",
+          "displayName": "Newport Beach A",
+          "participantId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+          "teamId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+          "clubId": "club-newport-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 3,
+        "dark": 7,
+        "whiteRaw": "3",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "winnerName": "Newport Beach A",
+        "loserParticipantId": "team-2026-12u-boys-socal-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-socal-12u-boys",
+        "loserName": "SoCal"
       },
       "advancement": {
         "winnerTo": null,
@@ -446,16 +470,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2-CCU A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-CCU A",
-          "participantId": "tournament-team-2026-12u-boys-b2-ccu-a",
+          "sourceReference": "B2",
+          "displayName": "CCU A",
+          "participantId": "tournament-team-2026-12u-boys-ccu-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -466,26 +490,30 @@
           "raw": "B3-RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-12u-boys-b3-rancho-tsunami",
+          "sourceReference": "B3",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-12u-boys-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 13,
+        "whiteRaw": "5",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "tournament-team-2026-12u-boys-ccu-a",
+        "loserTeamId": null,
+        "loserName": "CCU A"
       },
       "advancement": {
         "winnerTo": null,
@@ -510,29 +538,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C2-NORTH IRVINE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2-NORTH IRVINE",
-          "participantId": "tournament-team-2026-12u-boys-c2-north-irvine",
+          "sourceReference": "C2",
+          "displayName": "NORTH IRVINE",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-north-irvine",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C3-PATRIOT A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3-PATRIOT A",
-          "participantId": "tournament-team-2026-12u-boys-c3-patriot-a",
+          "sourceReference": "C3",
+          "displayName": "PATRIOT A",
+          "participantId": "tournament-team-2026-12u-boys-patriot-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -541,15 +569,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 8,
+        "whiteRaw": "16",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-north-irvine",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTH IRVINE",
+        "loserParticipantId": "tournament-team-2026-12u-boys-patriot-a",
+        "loserTeamId": null,
+        "loserName": "PATRIOT A"
       },
       "advancement": {
         "winnerTo": null,
@@ -574,46 +606,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-MISSION A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-MISSION A",
-          "participantId": "tournament-team-2026-12u-boys-a1-mission-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "Mission A",
+          "participantId": "team-2026-12u-boys-mission-a-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-a-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A2-SAN JOSE EXPRESS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-SAN JOSE EXPRESS",
-          "participantId": "tournament-team-2026-12u-boys-a2-san-jose-express",
+          "sourceReference": "A2",
+          "displayName": "SAN JOSE EXPRESS",
+          "participantId": "tournament-team-2026-12u-boys-san-jose-express",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-jose-express",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerName": "Mission A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-jose-express",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS"
       },
       "advancement": {
         "winnerTo": null,
@@ -638,16 +674,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1-STANFORD A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1-STANFORD A",
-          "participantId": "tournament-team-2026-12u-boys-d1-stanford-a",
+          "sourceReference": "D1",
+          "displayName": "STANFORD A",
+          "participantId": "tournament-team-2026-12u-boys-stanford-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -658,26 +694,30 @@
           "raw": "D2-SOCAL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2-SOCAL",
-          "participantId": "tournament-team-2026-12u-boys-d2-socal",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D2",
+          "displayName": "SoCal",
+          "participantId": "team-2026-12u-boys-socal-12u-boys",
+          "teamId": "team-2026-12u-boys-socal-12u-boys",
+          "clubId": "club-socal",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-stanford-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "STANFORD A",
+        "loserParticipantId": "team-2026-12u-boys-socal-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-socal-12u-boys",
+        "loserName": "SoCal"
       },
       "advancement": {
         "winnerTo": null,
@@ -702,29 +742,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-VANGUARD",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-VANGUARD",
-          "participantId": "tournament-team-2026-12u-boys-b1-vanguard",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B1",
+          "displayName": "Vanguard",
+          "participantId": "team-2026-12u-boys-vanguard",
+          "teamId": "team-2026-12u-boys-vanguard",
+          "clubId": "club-vanguard",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B2-CCU A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-CCU A",
-          "participantId": "tournament-team-2026-12u-boys-b2-ccu-a",
+          "sourceReference": "B2",
+          "displayName": "CCU A",
+          "participantId": "tournament-team-2026-12u-boys-ccu-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -733,15 +773,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 4,
+        "whiteRaw": "10",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-vanguard",
+        "winnerTeamId": "team-2026-12u-boys-vanguard",
+        "winnerName": "Vanguard",
+        "loserParticipantId": "tournament-team-2026-12u-boys-ccu-a",
+        "loserTeamId": null,
+        "loserName": "CCU A"
       },
       "advancement": {
         "winnerTo": null,
@@ -766,46 +810,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1-SD DONS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1-SD DONS A",
-          "participantId": "tournament-team-2026-12u-boys-c1-sd-dons-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C1",
+          "displayName": "SD Dons A",
+          "participantId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+          "teamId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+          "clubId": "club-sd-dons",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C2-NORTH IRVINE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2-NORTH IRVINE",
-          "participantId": "tournament-team-2026-12u-boys-c2-north-irvine",
+          "sourceReference": "C2",
+          "displayName": "NORTH IRVINE",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-north-irvine",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11.4,
+        "dark": 11.2,
+        "whiteRaw": "11.4",
+        "darkRaw": "11.2"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerName": "SD Dons A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE"
       },
       "advancement": {
         "winnerTo": null,
@@ -830,46 +878,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1-SAN DIEGO SHORES",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E1-SAN DIEGO SHORES",
-          "participantId": "tournament-team-2026-12u-boys-e1-san-diego-shores",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "E1",
+          "displayName": "San Diego Shores",
+          "participantId": "team-2026-12u-boys-san-diego-shores",
+          "teamId": "team-2026-12u-boys-san-diego-shores",
+          "clubId": "club-san-diego-shores",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "E3-DAVIS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E3-DAVIS",
-          "participantId": "tournament-team-2026-12u-boys-e3-davis",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "E3",
+          "displayName": "Davis",
+          "participantId": "team-2026-12u-boys-davis",
+          "teamId": "team-2026-12u-boys-davis",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 8,
+        "whiteRaw": "10",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-san-diego-shores",
+        "winnerTeamId": "team-2026-12u-boys-san-diego-shores",
+        "winnerName": "San Diego Shores",
+        "loserParticipantId": "team-2026-12u-boys-davis",
+        "loserTeamId": "team-2026-12u-boys-davis",
+        "loserName": "Davis"
       },
       "advancement": {
         "winnerTo": null,
@@ -894,46 +946,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H1-680 A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H1-680 A",
-          "participantId": "tournament-team-2026-12u-boys-h1-680-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "H1",
+          "displayName": "680 A",
+          "participantId": "team-2026-12u-boys-680-a-12u-boys",
+          "teamId": "team-2026-12u-boys-680-a-12u-boys",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "H3-ROSE BOWL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H3-ROSE BOWL",
-          "participantId": "tournament-team-2026-12u-boys-h3-rose-bowl",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "H3",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-12u-boys-rose-bowl-12u-boys",
+          "teamId": "team-2026-12u-boys-rose-bowl-12u-boys",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6.1,
+        "dark": 6.3,
+        "whiteRaw": "6.1",
+        "darkRaw": "6.3"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "team-2026-12u-boys-680-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-680-a-12u-boys",
+        "loserName": "680 A"
       },
       "advancement": {
         "winnerTo": null,
@@ -958,16 +1014,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1-SAN CLEMENTE A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F1-SAN CLEMENTE A",
-          "participantId": "tournament-team-2026-12u-boys-f1-san-clemente-a",
+          "sourceReference": "F1",
+          "displayName": "SAN CLEMENTE A",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -978,26 +1034,30 @@
           "raw": "F3-SANTA BARBARA",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F3-SANTA BARBARA",
-          "participantId": "tournament-team-2026-12u-boys-f3-santa-barbara",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F3",
+          "displayName": "Santa Barbara",
+          "participantId": "team-2026-12u-boys-santa-barbara",
+          "teamId": "team-2026-12u-boys-santa-barbara",
+          "clubId": "club-santa-barbara",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN CLEMENTE A",
+        "loserParticipantId": "team-2026-12u-boys-santa-barbara",
+        "loserTeamId": "team-2026-12u-boys-santa-barbara",
+        "loserName": "Santa Barbara"
       },
       "advancement": {
         "winnerTo": null,
@@ -1022,46 +1082,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1-LAMORINDA A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G1-LAMORINDA A",
-          "participantId": "tournament-team-2026-12u-boys-g1-lamorinda-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G1",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G3-LA PREMIER",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G3-LA PREMIER",
-          "participantId": "tournament-team-2026-12u-boys-g3-la-premier",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G3",
+          "displayName": "LA Premier",
+          "participantId": "team-2026-12u-boys-la-premier",
+          "teamId": "team-2026-12u-boys-la-premier",
+          "clubId": "club-la-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 10,
+        "whiteRaw": "12",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "winnerName": "Lamorinda A",
+        "loserParticipantId": "team-2026-12u-boys-la-premier",
+        "loserTeamId": "team-2026-12u-boys-la-premier",
+        "loserName": "LA Premier"
       },
       "advancement": {
         "winnerTo": null,
@@ -1086,46 +1150,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E2-LA JOLLA UNITED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E2-LA JOLLA UNITED",
-          "participantId": "tournament-team-2026-12u-boys-e2-la-jolla-united",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "E2",
+          "displayName": "La Jolla United",
+          "participantId": "team-2026-12u-boys-la-jolla-united",
+          "teamId": "team-2026-12u-boys-la-jolla-united",
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "E3-DAVIS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E3-DAVIS",
-          "participantId": "tournament-team-2026-12u-boys-e3-davis",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "E3",
+          "displayName": "Davis",
+          "participantId": "team-2026-12u-boys-davis",
+          "teamId": "team-2026-12u-boys-davis",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-la-jolla-united",
+        "winnerTeamId": "team-2026-12u-boys-la-jolla-united",
+        "winnerName": "La Jolla United",
+        "loserParticipantId": "team-2026-12u-boys-davis",
+        "loserTeamId": "team-2026-12u-boys-davis",
+        "loserName": "Davis"
       },
       "advancement": {
         "winnerTo": null,
@@ -1150,46 +1218,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H2-TEMPLE CITY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H2-TEMPLE CITY",
-          "participantId": "tournament-team-2026-12u-boys-h2-temple-city",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "H2",
+          "displayName": "Temple City",
+          "participantId": "team-2026-12u-boys-temple-city",
+          "teamId": "team-2026-12u-boys-temple-city",
+          "clubId": "club-temple-city",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "H3-ROSE BOWL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H3-ROSE BOWL",
-          "participantId": "tournament-team-2026-12u-boys-h3-rose-bowl",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "H3",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-12u-boys-rose-bowl-12u-boys",
+          "teamId": "team-2026-12u-boys-rose-bowl-12u-boys",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 10,
+        "whiteRaw": "5",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "team-2026-12u-boys-temple-city",
+        "loserTeamId": "team-2026-12u-boys-temple-city",
+        "loserName": "Temple City"
       },
       "advancement": {
         "winnerTo": null,
@@ -1214,46 +1286,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F2-SD DONS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F2-SD DONS B",
-          "participantId": "tournament-team-2026-12u-boys-f2-sd-dons-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F2",
+          "displayName": "SD Dons B",
+          "participantId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+          "teamId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+          "clubId": "club-sd-dons",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F3-SANTA BARBARA",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F3-SANTA BARBARA",
-          "participantId": "tournament-team-2026-12u-boys-f3-santa-barbara",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F3",
+          "displayName": "Santa Barbara",
+          "participantId": "team-2026-12u-boys-santa-barbara",
+          "teamId": "team-2026-12u-boys-santa-barbara",
+          "clubId": "club-santa-barbara",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "winnerName": "SD Dons B",
+        "loserParticipantId": "team-2026-12u-boys-santa-barbara",
+        "loserTeamId": "team-2026-12u-boys-santa-barbara",
+        "loserName": "Santa Barbara"
       },
       "advancement": {
         "winnerTo": null,
@@ -1278,46 +1354,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G2-CDM",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G2-CDM",
-          "participantId": "tournament-team-2026-12u-boys-g2-cdm",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G2",
+          "displayName": "CDM",
+          "participantId": "team-2026-12u-boys-cdm",
+          "teamId": "team-2026-12u-boys-cdm",
+          "clubId": "club-cdm",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G3-LA PREMIER",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G3-LA PREMIER",
-          "participantId": "tournament-team-2026-12u-boys-g3-la-premier",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G3",
+          "displayName": "LA Premier",
+          "participantId": "team-2026-12u-boys-la-premier",
+          "teamId": "team-2026-12u-boys-la-premier",
+          "clubId": "club-la-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 8,
+        "whiteRaw": "13",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-cdm",
+        "winnerTeamId": "team-2026-12u-boys-cdm",
+        "winnerName": "CDM",
+        "loserParticipantId": "team-2026-12u-boys-la-premier",
+        "loserTeamId": "team-2026-12u-boys-la-premier",
+        "loserName": "LA Premier"
       },
       "advancement": {
         "winnerTo": null,
@@ -1342,46 +1422,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1-SAN DIEGO SHORES",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E1-SAN DIEGO SHORES",
-          "participantId": "tournament-team-2026-12u-boys-e1-san-diego-shores",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "E1",
+          "displayName": "San Diego Shores",
+          "participantId": "team-2026-12u-boys-san-diego-shores",
+          "teamId": "team-2026-12u-boys-san-diego-shores",
+          "clubId": "club-san-diego-shores",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "E2-LA JOLLA UNITED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E2-LA JOLLA UNITED",
-          "participantId": "tournament-team-2026-12u-boys-e2-la-jolla-united",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "E2",
+          "displayName": "La Jolla United",
+          "participantId": "team-2026-12u-boys-la-jolla-united",
+          "teamId": "team-2026-12u-boys-la-jolla-united",
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-san-diego-shores",
+        "winnerTeamId": "team-2026-12u-boys-san-diego-shores",
+        "winnerName": "San Diego Shores",
+        "loserParticipantId": "team-2026-12u-boys-la-jolla-united",
+        "loserTeamId": "team-2026-12u-boys-la-jolla-united",
+        "loserName": "La Jolla United"
       },
       "advancement": {
         "winnerTo": null,
@@ -1406,46 +1490,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H1-680 A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H1-680 A",
-          "participantId": "tournament-team-2026-12u-boys-h1-680-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "H1",
+          "displayName": "680 A",
+          "participantId": "team-2026-12u-boys-680-a-12u-boys",
+          "teamId": "team-2026-12u-boys-680-a-12u-boys",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "H2-TEMPLE CITY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H2-TEMPLE CITY",
-          "participantId": "tournament-team-2026-12u-boys-h2-temple-city",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "H2",
+          "displayName": "Temple City",
+          "participantId": "team-2026-12u-boys-temple-city",
+          "teamId": "team-2026-12u-boys-temple-city",
+          "clubId": "club-temple-city",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 6,
+        "whiteRaw": "11",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-680-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-680-a-12u-boys",
+        "winnerName": "680 A",
+        "loserParticipantId": "team-2026-12u-boys-temple-city",
+        "loserTeamId": "team-2026-12u-boys-temple-city",
+        "loserName": "Temple City"
       },
       "advancement": {
         "winnerTo": null,
@@ -1470,16 +1558,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1-SAN CLEMENTE A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F1-SAN CLEMENTE A",
-          "participantId": "tournament-team-2026-12u-boys-f1-san-clemente-a",
+          "sourceReference": "F1",
+          "displayName": "SAN CLEMENTE A",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1490,26 +1578,30 @@
           "raw": "F2-SD DONS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F2-SD DONS B",
-          "participantId": "tournament-team-2026-12u-boys-f2-sd-dons-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F2",
+          "displayName": "SD Dons B",
+          "participantId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+          "teamId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+          "clubId": "club-sd-dons",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 4,
+        "whiteRaw": "11",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN CLEMENTE A",
+        "loserParticipantId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "loserName": "SD Dons B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1534,46 +1626,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1-LAMORINDA A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G1-LAMORINDA A",
-          "participantId": "tournament-team-2026-12u-boys-g1-lamorinda-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G1",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G2-CDM",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G2-CDM",
-          "participantId": "tournament-team-2026-12u-boys-g2-cdm",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G2",
+          "displayName": "CDM",
+          "participantId": "team-2026-12u-boys-cdm",
+          "teamId": "team-2026-12u-boys-cdm",
+          "clubId": "club-cdm",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 13,
+        "whiteRaw": "7",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-cdm",
+        "winnerTeamId": "team-2026-12u-boys-cdm",
+        "winnerName": "CDM",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserName": "Lamorinda A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1598,8 +1694,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdA-908",
@@ -1629,15 +1725,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 7,
+        "whiteRaw": "5",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "team-2026-12u-boys-908-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-908-12u-boys",
+        "loserName": "908"
       },
       "advancement": {
         "winnerTo": null,
@@ -1662,8 +1762,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdD-SOCAL",
@@ -1693,15 +1793,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 7,
+        "whiteRaw": "10",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-socal-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-socal-12u-boys",
+        "winnerName": "SoCal",
+        "loserParticipantId": "team-2026-12u-boys-san-diego-shores",
+        "loserTeamId": "team-2026-12u-boys-san-diego-shores",
+        "loserName": "San Diego Shores"
       },
       "advancement": {
         "winnerTo": null,
@@ -1726,8 +1830,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdB-CCU A",
@@ -1757,15 +1861,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 4,
+        "whiteRaw": "11",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-ccu-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CCU A",
+        "loserParticipantId": "team-2026-12u-boys-cdm",
+        "loserTeamId": "team-2026-12u-boys-cdm",
+        "loserName": "CDM"
       },
       "advancement": {
         "winnerTo": null,
@@ -1790,8 +1898,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdC-PATRIOT A",
@@ -1821,15 +1929,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 1,
+        "dark": 8,
+        "whiteRaw": "1",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN CLEMENTE A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-patriot-a",
+        "loserTeamId": null,
+        "loserName": "PATRIOT A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1854,8 +1966,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndB-RANCHO TSUNAMI",
@@ -1885,15 +1997,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 4,
+        "whiteRaw": "8",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "loserName": "Rose Bowl"
       },
       "advancement": {
         "winnerTo": null,
@@ -1918,8 +2034,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndC-NORTH IRVINE",
@@ -1949,15 +2065,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-north-irvine",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTH IRVINE",
+        "loserParticipantId": "team-2026-12u-boys-socal-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-socal-12u-boys",
+        "loserName": "SoCal"
       },
       "advancement": {
         "winnerTo": null,
@@ -1982,8 +2102,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndA-SAN JOSE EXPRESS",
@@ -2013,15 +2133,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 13,
+        "whiteRaw": "14",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-jose-express",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN JOSE EXPRESS",
+        "loserParticipantId": "tournament-team-2026-12u-boys-ccu-a",
+        "loserTeamId": null,
+        "loserName": "CCU A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2046,8 +2170,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndD-NEWPORT BEACH A",
@@ -2077,15 +2201,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7.5,
+        "dark": 7.6,
+        "whiteRaw": "7.5",
+        "darkRaw": "7.6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN CLEMENTE A",
+        "loserParticipantId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "loserName": "Newport Beach A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2110,8 +2238,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stD-STANFORD A",
@@ -2141,15 +2269,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 2,
+        "whiteRaw": "9",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-stanford-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "STANFORD A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -2174,8 +2306,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stA-MISSION A",
@@ -2205,15 +2337,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6.8,
+        "dark": 6.7,
+        "whiteRaw": "6.8",
+        "darkRaw": "6.7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerName": "Mission A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE"
       },
       "advancement": {
         "winnerTo": null,
@@ -2238,8 +2374,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stC-SD DONS A",
@@ -2269,15 +2405,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 5,
+        "whiteRaw": "15",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerName": "SD Dons A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-jose-express",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS"
       },
       "advancement": {
         "winnerTo": null,
@@ -2302,8 +2442,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stB-VANGUARD",
@@ -2333,15 +2473,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 4,
+        "whiteRaw": "16",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-vanguard",
+        "winnerTeamId": "team-2026-12u-boys-vanguard",
+        "winnerName": "Vanguard",
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-clemente-a",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2366,8 +2510,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K1(2ndE)-LA JOLLA UNITED",
@@ -2397,15 +2541,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-680-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-680-a-12u-boys",
+        "winnerName": "680 A",
+        "loserParticipantId": "team-2026-12u-boys-la-jolla-united",
+        "loserTeamId": "team-2026-12u-boys-la-jolla-united",
+        "loserName": "La Jolla United"
       },
       "advancement": {
         "winnerTo": null,
@@ -2430,8 +2578,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K2(2ndF)-SD DONS B",
@@ -2461,15 +2609,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 6,
+        "whiteRaw": "12",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "winnerName": "SD Dons B",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserName": "Lamorinda A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2494,8 +2646,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M1(3rdE)-DAVIS",
@@ -2525,15 +2677,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 7,
+        "whiteRaw": "5",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-temple-city",
+        "winnerTeamId": "team-2026-12u-boys-temple-city",
+        "winnerName": "Temple City",
+        "loserParticipantId": "team-2026-12u-boys-davis",
+        "loserTeamId": "team-2026-12u-boys-davis",
+        "loserName": "Davis"
       },
       "advancement": {
         "winnerTo": null,
@@ -2558,8 +2714,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M2(3rdF)-SANTA BARBARA",
@@ -2589,15 +2745,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-la-premier",
+        "winnerTeamId": "team-2026-12u-boys-la-premier",
+        "winnerName": "LA Premier",
+        "loserParticipantId": "team-2026-12u-boys-santa-barbara",
+        "loserTeamId": "team-2026-12u-boys-santa-barbara",
+        "loserName": "Santa Barbara"
       },
       "advancement": {
         "winnerTo": null,
@@ -2622,8 +2782,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K1(2ndE)-LA JOLLA UNITED",
@@ -2653,15 +2813,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 9,
+        "whiteRaw": "12",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-la-jolla-united",
+        "winnerTeamId": "team-2026-12u-boys-la-jolla-united",
+        "winnerName": "La Jolla United",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserName": "Lamorinda A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2686,8 +2850,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K2(2ndF)-SD DONS B",
@@ -2717,15 +2881,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 2.5,
+        "dark": 2.4,
+        "whiteRaw": "2.5",
+        "darkRaw": "2.4"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "winnerName": "SD Dons B",
+        "loserParticipantId": "team-2026-12u-boys-680-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-680-a-12u-boys",
+        "loserName": "680 A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2750,8 +2918,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M1(3rdE)-DAVIS",
@@ -2781,15 +2949,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15.3,
+        "dark": 15.1,
+        "whiteRaw": "15.3",
+        "darkRaw": "15.1"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-davis",
+        "winnerTeamId": "team-2026-12u-boys-davis",
+        "winnerName": "Davis",
+        "loserParticipantId": "team-2026-12u-boys-la-premier",
+        "loserTeamId": "team-2026-12u-boys-la-premier",
+        "loserName": "LA Premier"
       },
       "advancement": {
         "winnerTo": null,
@@ -2814,8 +2986,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M2(3rdF)-SANTA BARBARA",
@@ -2845,15 +3017,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 10,
+        "whiteRaw": "9",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-temple-city",
+        "winnerTeamId": "team-2026-12u-boys-temple-city",
+        "winnerName": "Temple City",
+        "loserParticipantId": "team-2026-12u-boys-santa-barbara",
+        "loserTeamId": "team-2026-12u-boys-santa-barbara",
+        "loserName": "Santa Barbara"
       },
       "advancement": {
         "winnerTo": null,
@@ -2878,8 +3054,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J1(L#Cross1)-908",
@@ -2909,15 +3085,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 14,
+        "whiteRaw": "13",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-san-diego-shores",
+        "winnerTeamId": "team-2026-12u-boys-san-diego-shores",
+        "winnerName": "San Diego Shores",
+        "loserParticipantId": "team-2026-12u-boys-908-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-908-12u-boys",
+        "loserName": "908"
       },
       "advancement": {
         "winnerTo": null,
@@ -2942,8 +3122,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J2(L#Cross2)-CDM",
@@ -2973,15 +3153,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 11,
+        "whiteRaw": "13",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-cdm",
+        "winnerTeamId": "team-2026-12u-boys-cdm",
+        "winnerName": "CDM",
+        "loserParticipantId": "tournament-team-2026-12u-boys-patriot-a",
+        "loserTeamId": null,
+        "loserName": "PATRIOT A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3006,8 +3190,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#Qtr2-MISSION A",
@@ -3037,15 +3221,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 11,
+        "whiteRaw": "10",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-stanford-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "STANFORD A",
+        "loserParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "loserName": "Mission A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3070,8 +3258,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#Qtr4-VANGUARD",
@@ -3101,15 +3289,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12.4,
+        "dark": 12.5,
+        "whiteRaw": "12.4",
+        "darkRaw": "12.5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerName": "SD Dons A",
+        "loserParticipantId": "team-2026-12u-boys-vanguard",
+        "loserTeamId": "team-2026-12u-boys-vanguard",
+        "loserName": "Vanguard"
       },
       "advancement": {
         "winnerTo": null,
@@ -3134,8 +3326,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT FAR RIGHT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#Semi1-MISSION A",
@@ -3165,15 +3357,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerName": "Mission A",
+        "loserParticipantId": "team-2026-12u-boys-vanguard",
+        "loserTeamId": "team-2026-12u-boys-vanguard",
+        "loserName": "Vanguard"
       },
       "advancement": {
         "winnerTo": null,
@@ -3198,8 +3394,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "WOOLLETT LEFT",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#Semi1-STANFORD A",
@@ -3229,15 +3425,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 12,
+        "whiteRaw": "8",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-a-12u-boys",
+        "winnerName": "SD Dons A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-stanford-a",
+        "loserTeamId": null,
+        "loserName": "STANFORD A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3262,8 +3462,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN CLEMENTE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#J1/J4-SAN DIEGO SHORES",
@@ -3293,15 +3493,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 12,
+        "whiteRaw": "4",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-cdm",
+        "winnerTeamId": "team-2026-12u-boys-cdm",
+        "winnerName": "CDM",
+        "loserParticipantId": "team-2026-12u-boys-san-diego-shores",
+        "loserTeamId": "team-2026-12u-boys-san-diego-shores",
+        "loserName": "San Diego Shores"
       },
       "advancement": {
         "winnerTo": null,
@@ -3326,8 +3530,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN CLEMENTE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#J1/J4-908",
@@ -3357,15 +3561,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 5,
+        "whiteRaw": "7",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-908-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-908-12u-boys",
+        "winnerName": "908",
+        "loserParticipantId": "tournament-team-2026-12u-boys-patriot-a",
+        "loserTeamId": null,
+        "loserName": "PATRIOT A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3390,8 +3598,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN CLEMENTE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K1(2ndE)-LA JOLLA UNITED",
@@ -3421,15 +3629,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 3,
+        "dark": 7,
+        "whiteRaw": "3",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-sd-dons-b-12u-boys",
+        "winnerName": "SD Dons B",
+        "loserParticipantId": "team-2026-12u-boys-la-jolla-united",
+        "loserTeamId": "team-2026-12u-boys-la-jolla-united",
+        "loserName": "La Jolla United"
       },
       "advancement": {
         "winnerTo": null,
@@ -3454,8 +3666,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN CLEMENTE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K3(2ndG)-LAMORINDA A",
@@ -3485,15 +3697,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 7,
+        "whiteRaw": "5",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-680-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-680-a-12u-boys",
+        "winnerName": "680 A",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserName": "Lamorinda A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3518,8 +3734,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN CLEMENTE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M1(3rdE)-DAVIS",
@@ -3549,15 +3765,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 6,
+        "whiteRaw": "12",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-davis",
+        "winnerTeamId": "team-2026-12u-boys-davis",
+        "winnerName": "Davis",
+        "loserParticipantId": "team-2026-12u-boys-santa-barbara",
+        "loserTeamId": "team-2026-12u-boys-santa-barbara",
+        "loserName": "Santa Barbara"
       },
       "advancement": {
         "winnerTo": null,
@@ -3582,8 +3802,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN CLEMENTE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M3(3rdG)-LA PREMIER",
@@ -3613,15 +3833,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 8,
+        "whiteRaw": "13",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-la-premier",
+        "winnerTeamId": "team-2026-12u-boys-la-premier",
+        "winnerName": "LA Premier",
+        "loserParticipantId": "team-2026-12u-boys-temple-city",
+        "loserTeamId": "team-2026-12u-boys-temple-city",
+        "loserName": "Temple City"
       },
       "advancement": {
         "winnerTo": null,
@@ -3646,8 +3870,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "N1(L#Playin3)-ROSE BOWL",
@@ -3677,15 +3901,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4.2,
+        "dark": 4.4,
+        "whiteRaw": "4.2",
+        "darkRaw": "4.4"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-socal-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-socal-12u-boys",
+        "winnerName": "SoCal",
+        "loserParticipantId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "loserName": "Rose Bowl"
       },
       "advancement": {
         "winnerTo": null,
@@ -3710,8 +3938,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "N2(L#Playin4)-CCU A",
@@ -3741,15 +3969,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 4,
+        "whiteRaw": "6",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-ccu-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CCU A",
+        "loserParticipantId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "loserName": "Newport Beach A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3774,8 +4006,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "P1(L#Qtr4)-SAN CLEMENTE A",
@@ -3805,15 +4037,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 12,
+        "whiteRaw": "7",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-jose-express",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN JOSE EXPRESS",
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-clemente-a",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3838,8 +4074,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "P2(L#Qtr2)-NORTH IRVINE",
@@ -3869,15 +4105,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-north-irvine",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTH IRVINE",
+        "loserParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -3902,8 +4142,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#N1/N4-SOCAL",
@@ -3933,15 +4173,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 8,
+        "whiteRaw": "7",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-ccu-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CCU A",
+        "loserParticipantId": "team-2026-12u-boys-socal-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-socal-12u-boys",
+        "loserName": "SoCal"
       },
       "advancement": {
         "winnerTo": null,
@@ -3966,8 +4210,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#N1/N4-ROSE BOWL",
@@ -3997,15 +4241,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6.3,
+        "dark": 6.0,
+        "whiteRaw": "6.3",
+        "darkRaw": "6.0"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-rose-bowl-12u-boys",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-newport-beach-a-12u-boys",
+        "loserName": "Newport Beach A"
       },
       "advancement": {
         "winnerTo": null,
@@ -4030,8 +4278,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#P1/P4-SAN JOSE EXPRESS",
@@ -4061,15 +4309,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-jose-express",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN JOSE EXPRESS",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE"
       },
       "advancement": {
         "winnerTo": null,
@@ -4094,8 +4346,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "ALISO NIGUEL HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#P1/P4-SAN CLEMENTE A",
@@ -4125,15 +4377,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN CLEMENTE A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,

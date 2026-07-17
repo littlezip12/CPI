@@ -24,25 +24,25 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=1111531430#gid=1111531430",
     "fetchedAt": "2026-07-17T18:31:00Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "71d16e3ab9d61f3bbcf1e38c39c85d1dce965508a7571c2acf31350494db4ded",
-    "rowCount": 61,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/gviz/tq?tqx=out:csv&gid=1111531430"
+    "rowCount": 61
   },
   "counts": {
     "games": 44,
-    "finalGames": 0,
-    "scheduledGames": 44,
+    "finalGames": 44,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 88,
-    "resolvedTeamParticipants": 34,
-    "unresolvedTeamParticipants": 54,
+    "resolvedTeamParticipants": 64,
+    "unresolvedTeamParticipants": 24,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 54
+    "reviewItems": 24
   },
+  "placements": [],
   "games": [
     {
       "id": "game-2026-quiksilver-cup-18u-boys-championship-18b02",
@@ -62,46 +62,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1- MISSION",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1- MISSION",
-          "participantId": "tournament-team-2026-18u-boys-c1-mission",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C1",
+          "displayName": "Mission",
+          "participantId": "team-2026-18u-boys-mission-18u-boys",
+          "teamId": "team-2026-18u-boys-mission-18u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C4- SUPREME",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C4- SUPREME",
-          "participantId": "tournament-team-2026-18u-boys-c4-supreme",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C4",
+          "displayName": "Supreme",
+          "participantId": "team-2026-18u-boys-supreme-18u-boys",
+          "teamId": "team-2026-18u-boys-supreme-18u-boys",
+          "clubId": "club-supreme",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 18,
+        "dark": 8,
+        "whiteRaw": "18",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerName": "Mission",
+        "loserParticipantId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserName": "Supreme"
       },
       "advancement": {
         "winnerTo": null,
@@ -126,16 +130,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C2- LA JOLLA",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2- LA JOLLA",
-          "participantId": "tournament-team-2026-18u-boys-c2-la-jolla",
+          "sourceReference": "C2",
+          "displayName": "LA JOLLA",
+          "participantId": "tournament-team-2026-18u-boys-la-jolla",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -146,26 +150,30 @@
           "raw": "C3- SAND CANYON",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3- SAND CANYON",
-          "participantId": "tournament-team-2026-18u-boys-c3-sand-canyon",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C3",
+          "displayName": "Sand Canyon",
+          "participantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+          "teamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+          "clubId": "club-sand-canyon",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-la-jolla",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LA JOLLA",
+        "loserParticipantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "loserName": "Sand Canyon"
       },
       "advancement": {
         "winnerTo": null,
@@ -190,46 +198,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1- CC UNITED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1- CC UNITED",
-          "participantId": "tournament-team-2026-18u-boys-b1-cc-united",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B1",
+          "displayName": "CC United",
+          "participantId": "team-2026-18u-boys-cc-united-18u-boys",
+          "teamId": "team-2026-18u-boys-cc-united-18u-boys",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B4- COMMERCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B4- COMMERCE",
-          "participantId": "tournament-team-2026-18u-boys-b4-commerce",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B4",
+          "displayName": "Commerce",
+          "participantId": "team-2026-18u-boys-commerce-18u-boys",
+          "teamId": "team-2026-18u-boys-commerce-18u-boys",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 6,
+        "whiteRaw": "17",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerName": "CC United",
+        "loserParticipantId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -254,29 +266,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2- IMPERIAL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2- IMPERIAL",
-          "participantId": "tournament-team-2026-18u-boys-b2-imperial",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B2",
+          "displayName": "Imperial",
+          "participantId": "team-2026-18u-boys-imperial-18u-boys",
+          "teamId": "team-2026-18u-boys-imperial-18u-boys",
+          "clubId": "club-imperial",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3- LB SHORE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3- LB SHORE",
-          "participantId": "tournament-team-2026-18u-boys-b3-lb-shore",
+          "sourceReference": "B3",
+          "displayName": "LB SHORE",
+          "participantId": "tournament-team-2026-18u-boys-lb-shore",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -285,15 +297,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12.1,
+        "dark": 12.4,
+        "whiteRaw": "12.1",
+        "darkRaw": "12.4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-lb-shore",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LB SHORE",
+        "loserParticipantId": "team-2026-18u-boys-imperial-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-imperial-18u-boys",
+        "loserName": "Imperial"
       },
       "advancement": {
         "winnerTo": null,
@@ -318,29 +334,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1- CC UNITED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1- CC UNITED",
-          "participantId": "tournament-team-2026-18u-boys-b1-cc-united",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B1",
+          "displayName": "CC United",
+          "participantId": "team-2026-18u-boys-cc-united-18u-boys",
+          "teamId": "team-2026-18u-boys-cc-united-18u-boys",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3- LB SHORE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3- LB SHORE",
-          "participantId": "tournament-team-2026-18u-boys-b3-lb-shore",
+          "sourceReference": "B3",
+          "displayName": "LB SHORE",
+          "participantId": "tournament-team-2026-18u-boys-lb-shore",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -349,15 +365,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 7,
+        "whiteRaw": "17",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerName": "CC United",
+        "loserParticipantId": "tournament-team-2026-18u-boys-lb-shore",
+        "loserTeamId": null,
+        "loserName": "LB SHORE"
       },
       "advancement": {
         "winnerTo": null,
@@ -382,46 +402,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2- IMPERIAL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2- IMPERIAL",
-          "participantId": "tournament-team-2026-18u-boys-b2-imperial",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B2",
+          "displayName": "Imperial",
+          "participantId": "team-2026-18u-boys-imperial-18u-boys",
+          "teamId": "team-2026-18u-boys-imperial-18u-boys",
+          "clubId": "club-imperial",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B4- COMMERCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B4- COMMERCE",
-          "participantId": "tournament-team-2026-18u-boys-b4-commerce",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B4",
+          "displayName": "Commerce",
+          "participantId": "team-2026-18u-boys-commerce-18u-boys",
+          "teamId": "team-2026-18u-boys-commerce-18u-boys",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 8,
+        "whiteRaw": "13",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-imperial-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-imperial-18u-boys",
+        "winnerName": "Imperial",
+        "loserParticipantId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -446,46 +470,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1- MISSION",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1- MISSION",
-          "participantId": "tournament-team-2026-18u-boys-c1-mission",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C1",
+          "displayName": "Mission",
+          "participantId": "team-2026-18u-boys-mission-18u-boys",
+          "teamId": "team-2026-18u-boys-mission-18u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C3- SAND CANYON",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3- SAND CANYON",
-          "participantId": "tournament-team-2026-18u-boys-c3-sand-canyon",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C3",
+          "displayName": "Sand Canyon",
+          "participantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+          "teamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+          "clubId": "club-sand-canyon",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerName": "Mission",
+        "loserParticipantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "loserName": "Sand Canyon"
       },
       "advancement": {
         "winnerTo": null,
@@ -510,16 +538,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C2- LA JOLLA",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2- LA JOLLA",
-          "participantId": "tournament-team-2026-18u-boys-c2-la-jolla",
+          "sourceReference": "C2",
+          "displayName": "LA JOLLA",
+          "participantId": "tournament-team-2026-18u-boys-la-jolla",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -530,26 +558,30 @@
           "raw": "C4- SUPREME",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C4- SUPREME",
-          "participantId": "tournament-team-2026-18u-boys-c4-supreme",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C4",
+          "displayName": "Supreme",
+          "participantId": "team-2026-18u-boys-supreme-18u-boys",
+          "teamId": "team-2026-18u-boys-supreme-18u-boys",
+          "clubId": "club-supreme",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 18,
+        "dark": 4,
+        "whiteRaw": "18",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-la-jolla",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LA JOLLA",
+        "loserParticipantId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserName": "Supreme"
       },
       "advancement": {
         "winnerTo": null,
@@ -574,46 +606,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1- CC UNITED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1- CC UNITED",
-          "participantId": "tournament-team-2026-18u-boys-b1-cc-united",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B1",
+          "displayName": "CC United",
+          "participantId": "team-2026-18u-boys-cc-united-18u-boys",
+          "teamId": "team-2026-18u-boys-cc-united-18u-boys",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B2- IMPERIAL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2- IMPERIAL",
-          "participantId": "tournament-team-2026-18u-boys-b2-imperial",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B2",
+          "displayName": "Imperial",
+          "participantId": "team-2026-18u-boys-imperial-18u-boys",
+          "teamId": "team-2026-18u-boys-imperial-18u-boys",
+          "clubId": "club-imperial",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 13,
+        "whiteRaw": "10",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-imperial-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-imperial-18u-boys",
+        "winnerName": "Imperial",
+        "loserParticipantId": "team-2026-18u-boys-cc-united-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-cc-united-18u-boys",
+        "loserName": "CC United"
       },
       "advancement": {
         "winnerTo": null,
@@ -638,16 +674,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B3- LB SHORE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3- LB SHORE",
-          "participantId": "tournament-team-2026-18u-boys-b3-lb-shore",
+          "sourceReference": "B3",
+          "displayName": "LB SHORE",
+          "participantId": "tournament-team-2026-18u-boys-lb-shore",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -658,26 +694,30 @@
           "raw": "B4- COMMERCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B4- COMMERCE",
-          "participantId": "tournament-team-2026-18u-boys-b4-commerce",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B4",
+          "displayName": "Commerce",
+          "participantId": "team-2026-18u-boys-commerce-18u-boys",
+          "teamId": "team-2026-18u-boys-commerce-18u-boys",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 10,
+        "whiteRaw": "16",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-lb-shore",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LB SHORE",
+        "loserParticipantId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -702,29 +742,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1- MISSION",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1- MISSION",
-          "participantId": "tournament-team-2026-18u-boys-c1-mission",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C1",
+          "displayName": "Mission",
+          "participantId": "team-2026-18u-boys-mission-18u-boys",
+          "teamId": "team-2026-18u-boys-mission-18u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C2- LA JOLLA",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2- LA JOLLA",
-          "participantId": "tournament-team-2026-18u-boys-c2-la-jolla",
+          "sourceReference": "C2",
+          "displayName": "LA JOLLA",
+          "participantId": "tournament-team-2026-18u-boys-la-jolla",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -733,15 +773,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10.8,
+        "dark": 10.7,
+        "whiteRaw": "10.8",
+        "darkRaw": "10.7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerName": "Mission",
+        "loserParticipantId": "tournament-team-2026-18u-boys-la-jolla",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA"
       },
       "advancement": {
         "winnerTo": null,
@@ -766,46 +810,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C3- SAND CANYON",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3- SAND CANYON",
-          "participantId": "tournament-team-2026-18u-boys-c3-sand-canyon",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C3",
+          "displayName": "Sand Canyon",
+          "participantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+          "teamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+          "clubId": "club-sand-canyon",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C4- SUPREME",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C4- SUPREME",
-          "participantId": "tournament-team-2026-18u-boys-c4-supreme",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C4",
+          "displayName": "Supreme",
+          "participantId": "team-2026-18u-boys-supreme-18u-boys",
+          "teamId": "team-2026-18u-boys-supreme-18u-boys",
+          "clubId": "club-supreme",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 8,
+        "whiteRaw": "16",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "winnerName": "Sand Canyon",
+        "loserParticipantId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserName": "Supreme"
       },
       "advancement": {
         "winnerTo": null,
@@ -830,46 +878,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-CIU",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-CIU",
-          "participantId": "tournament-team-2026-18u-boys-a1-ciu",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "CIU",
+          "participantId": "team-2026-18u-boys-ciu-18u-boys",
+          "teamId": "team-2026-18u-boys-ciu-18u-boys",
+          "clubId": "club-ciu",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3- DIABLO ALLIANCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3- DIABLO ALLIANCE",
-          "participantId": "tournament-team-2026-18u-boys-a3-diablo-alliance",
+          "sourceReference": "A3",
+          "displayName": "DIABLO ALLIANCE",
+          "participantId": "tournament-team-2026-18u-boys-diablo-alliance",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-diablo-alliance",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 10,
+        "whiteRaw": "13",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-ciu-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-ciu-18u-boys",
+        "winnerName": "CIU",
+        "loserParticipantId": "tournament-team-2026-18u-boys-diablo-alliance",
+        "loserTeamId": null,
+        "loserName": "DIABLO ALLIANCE"
       },
       "advancement": {
         "winnerTo": null,
@@ -894,46 +946,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2-NORTH IRVINE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-NORTH IRVINE",
-          "participantId": "tournament-team-2026-18u-boys-a2-north-irvine",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-18u-boys-north-irvine-18u-boys",
+          "teamId": "team-2026-18u-boys-north-irvine-18u-boys",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A4- ALAMEDA WPC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4- ALAMEDA WPC",
-          "participantId": "tournament-team-2026-18u-boys-a4-alameda-wpc",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A4",
+          "displayName": "Alameda WPC",
+          "participantId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+          "teamId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+          "clubId": "club-alameda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 19,
+        "dark": 9,
+        "whiteRaw": "19",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "winnerName": "North Irvine",
+        "loserParticipantId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+        "loserName": "Alameda WPC"
       },
       "advancement": {
         "winnerTo": null,
@@ -958,46 +1014,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1- SD SHORES",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1- SD SHORES",
-          "participantId": "tournament-team-2026-18u-boys-d1-sd-shores",
+          "sourceReference": "D1",
+          "displayName": "SD SHORES",
+          "participantId": "tournament-team-2026-18u-boys-sd-shores",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-diego-shores",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D3- OLYMPUS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3- OLYMPUS",
-          "participantId": "tournament-team-2026-18u-boys-d3-olympus",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D3",
+          "displayName": "Olympus",
+          "participantId": "team-2026-18u-boys-olympus-18u-boys",
+          "teamId": "team-2026-18u-boys-olympus-18u-boys",
+          "clubId": "club-olympus",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 11,
+        "whiteRaw": "16",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "team-2026-18u-boys-olympus-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-olympus-18u-boys",
+        "loserName": "Olympus"
       },
       "advancement": {
         "winnerTo": null,
@@ -1022,46 +1082,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D2- GREENWICH",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2- GREENWICH",
-          "participantId": "tournament-team-2026-18u-boys-d2-greenwich",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D2",
+          "displayName": "Greenwich",
+          "participantId": "team-2026-18u-boys-greenwich-18u-boys",
+          "teamId": "team-2026-18u-boys-greenwich-18u-boys",
+          "clubId": "club-greenwich",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "D4- FOOTHILL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D4- FOOTHILL",
-          "participantId": "tournament-team-2026-18u-boys-d4-foothill",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D4",
+          "displayName": "Foothill",
+          "participantId": "team-2026-18u-boys-foothill-18u-boys",
+          "teamId": "team-2026-18u-boys-foothill-18u-boys",
+          "clubId": "club-foothill",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 7,
+        "whiteRaw": "14",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-greenwich-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-greenwich-18u-boys",
+        "winnerName": "Greenwich",
+        "loserParticipantId": "team-2026-18u-boys-foothill-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-foothill-18u-boys",
+        "loserName": "Foothill"
       },
       "advancement": {
         "winnerTo": null,
@@ -1086,46 +1150,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-CIU",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-CIU",
-          "participantId": "tournament-team-2026-18u-boys-a1-ciu",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "CIU",
+          "participantId": "team-2026-18u-boys-ciu-18u-boys",
+          "teamId": "team-2026-18u-boys-ciu-18u-boys",
+          "clubId": "club-ciu",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A2-NORTH IRVINE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-NORTH IRVINE",
-          "participantId": "tournament-team-2026-18u-boys-a2-north-irvine",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-18u-boys-north-irvine-18u-boys",
+          "teamId": "team-2026-18u-boys-north-irvine-18u-boys",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 9,
+        "whiteRaw": "11",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-ciu-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-ciu-18u-boys",
+        "winnerName": "CIU",
+        "loserParticipantId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "loserName": "North Irvine"
       },
       "advancement": {
         "winnerTo": null,
@@ -1150,46 +1218,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A3- DIABLO ALLIANCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3- DIABLO ALLIANCE",
-          "participantId": "tournament-team-2026-18u-boys-a3-diablo-alliance",
+          "sourceReference": "A3",
+          "displayName": "DIABLO ALLIANCE",
+          "participantId": "tournament-team-2026-18u-boys-diablo-alliance",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-diablo-alliance",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A4- ALAMEDA WPC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4- ALAMEDA WPC",
-          "participantId": "tournament-team-2026-18u-boys-a4-alameda-wpc",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A4",
+          "displayName": "Alameda WPC",
+          "participantId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+          "teamId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+          "clubId": "club-alameda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 8,
+        "whiteRaw": "17",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-diablo-alliance",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DIABLO ALLIANCE",
+        "loserParticipantId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+        "loserName": "Alameda WPC"
       },
       "advancement": {
         "winnerTo": null,
@@ -1214,46 +1286,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1- SD SHORES",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1- SD SHORES",
-          "participantId": "tournament-team-2026-18u-boys-d1-sd-shores",
+          "sourceReference": "D1",
+          "displayName": "SD SHORES",
+          "participantId": "tournament-team-2026-18u-boys-sd-shores",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-diego-shores",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D2- GREENWICH",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2- GREENWICH",
-          "participantId": "tournament-team-2026-18u-boys-d2-greenwich",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D2",
+          "displayName": "Greenwich",
+          "participantId": "team-2026-18u-boys-greenwich-18u-boys",
+          "teamId": "team-2026-18u-boys-greenwich-18u-boys",
+          "clubId": "club-greenwich",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 12,
+        "whiteRaw": "15",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "team-2026-18u-boys-greenwich-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-greenwich-18u-boys",
+        "loserName": "Greenwich"
       },
       "advancement": {
         "winnerTo": null,
@@ -1278,46 +1354,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D3- OLYMPUS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3- OLYMPUS",
-          "participantId": "tournament-team-2026-18u-boys-d3-olympus",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D3",
+          "displayName": "Olympus",
+          "participantId": "team-2026-18u-boys-olympus-18u-boys",
+          "teamId": "team-2026-18u-boys-olympus-18u-boys",
+          "clubId": "club-olympus",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "D4- FOOTHILL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D4- FOOTHILL",
-          "participantId": "tournament-team-2026-18u-boys-d4-foothill",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D4",
+          "displayName": "Foothill",
+          "participantId": "team-2026-18u-boys-foothill-18u-boys",
+          "teamId": "team-2026-18u-boys-foothill-18u-boys",
+          "clubId": "club-foothill",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 10,
+        "whiteRaw": "12",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-olympus-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-olympus-18u-boys",
+        "winnerName": "Olympus",
+        "loserParticipantId": "team-2026-18u-boys-foothill-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-foothill-18u-boys",
+        "loserName": "Foothill"
       },
       "advancement": {
         "winnerTo": null,
@@ -1342,8 +1422,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdC - SAND CANYON",
@@ -1373,15 +1453,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 7,
+        "whiteRaw": "13",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "winnerName": "Sand Canyon",
+        "loserParticipantId": "team-2026-18u-boys-foothill-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-foothill-18u-boys",
+        "loserName": "Foothill"
       },
       "advancement": {
         "winnerTo": null,
@@ -1406,8 +1490,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "4thA - ALAMEDA WPC",
@@ -1437,15 +1521,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 13,
+        "whiteRaw": "10",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-lb-shore",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LB SHORE",
+        "loserParticipantId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-alameda-wpc-18u-boys",
+        "loserName": "Alameda WPC"
       },
       "advancement": {
         "winnerTo": null,
@@ -1470,8 +1558,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdA - DIABLO ALLIANCE",
@@ -1501,15 +1589,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 7,
+        "whiteRaw": "15",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-diablo-alliance",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DIABLO ALLIANCE",
+        "loserParticipantId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -1534,8 +1626,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "4thC - SUPREME",
@@ -1565,15 +1657,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 13,
+        "whiteRaw": "11",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-olympus-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-olympus-18u-boys",
+        "winnerName": "Olympus",
+        "loserParticipantId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserName": "Supreme"
       },
       "advancement": {
         "winnerTo": null,
@@ -1598,8 +1694,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#3C/4D - FOOTHILL",
@@ -1629,15 +1725,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 18,
+        "dark": 10,
+        "whiteRaw": "18",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-foothill-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-foothill-18u-boys",
+        "winnerName": "Foothill",
+        "loserParticipantId": "tournament-team-2026-18u-boys-alameda",
+        "loserTeamId": null,
+        "loserName": "ALAMEDA"
       },
       "advancement": {
         "winnerTo": null,
@@ -1662,8 +1762,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#4A/3B - LB SHORE",
@@ -1693,15 +1793,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 10,
+        "whiteRaw": "12",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-lb-shore",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LB SHORE",
+        "loserParticipantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "loserName": "Sand Canyon"
       },
       "advancement": {
         "winnerTo": null,
@@ -1726,8 +1830,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#4C/3D - SUPREME",
@@ -1757,15 +1861,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 14,
+        "whiteRaw": "9",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-commerce-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-commerce-18u-boys",
+        "winnerName": "Commerce",
+        "loserParticipantId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserName": "Supreme"
       },
       "advancement": {
         "winnerTo": null,
@@ -1790,8 +1898,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#3A/4B - DIABLO ALLIANCE",
@@ -1821,15 +1929,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 13,
+        "whiteRaw": "14",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-diablo-alliance",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DIABLO ALLIANCE",
+        "loserParticipantId": "team-2026-18u-boys-olympus-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-olympus-18u-boys",
+        "loserName": "Olympus"
       },
       "advancement": {
         "winnerTo": null,
@@ -1854,8 +1966,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stC - MISSION",
@@ -1885,15 +1997,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 10,
+        "whiteRaw": "11",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerName": "Mission",
+        "loserParticipantId": "team-2026-18u-boys-greenwich-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-greenwich-18u-boys",
+        "loserName": "Greenwich"
       },
       "advancement": {
         "winnerTo": null,
@@ -1918,8 +2034,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndA - NORTH IRVINE",
@@ -1949,15 +2065,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 14,
+        "whiteRaw": "16",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "winnerName": "North Irvine",
+        "loserParticipantId": "team-2026-18u-boys-imperial-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-imperial-18u-boys",
+        "loserName": "Imperial"
       },
       "advancement": {
         "winnerTo": null,
@@ -1982,8 +2102,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stA - CIU",
@@ -2013,15 +2133,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 16,
+        "whiteRaw": "12",
+        "darkRaw": "16"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerName": "CC United",
+        "loserParticipantId": "team-2026-18u-boys-ciu-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-ciu-18u-boys",
+        "loserName": "CIU"
       },
       "advancement": {
         "winnerTo": null,
@@ -2046,8 +2170,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndC - LA JOLLA",
@@ -2077,15 +2201,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 10,
+        "whiteRaw": "11",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-la-jolla",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LA JOLLA",
+        "loserParticipantId": "tournament-team-2026-18u-boys-sd-shores",
+        "loserTeamId": null,
+        "loserName": "SD SHORES"
       },
       "advancement": {
         "winnerTo": null,
@@ -2110,8 +2238,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#1C/2D - GREENWICH",
@@ -2141,15 +2269,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 13,
+        "whiteRaw": "16",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-greenwich-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-greenwich-18u-boys",
+        "winnerName": "Greenwich",
+        "loserParticipantId": "team-2026-18u-boys-imperial-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-imperial-18u-boys",
+        "loserName": "Imperial"
       },
       "advancement": {
         "winnerTo": null,
@@ -2174,8 +2306,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#2A/1B - NORTH IRVINE",
@@ -2205,15 +2337,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 12,
+        "whiteRaw": "8",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-mission-18u-boys",
+        "winnerName": "Mission",
+        "loserParticipantId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "loserName": "North Irvine"
       },
       "advancement": {
         "winnerTo": null,
@@ -2238,8 +2374,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#2C/1D - SD SHORES",
@@ -2269,15 +2405,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 12,
+        "whiteRaw": "16",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "team-2026-18u-boys-ciu-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-ciu-18u-boys",
+        "loserName": "CIU"
       },
       "advancement": {
         "winnerTo": null,
@@ -2302,8 +2442,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#1A/2B - CC UNITED",
@@ -2333,15 +2473,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 14,
+        "whiteRaw": "16",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerName": "CC United",
+        "loserParticipantId": "tournament-team-2026-18u-boys-la-jolla",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA"
       },
       "advancement": {
         "winnerTo": null,
@@ -2366,8 +2510,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#39 - DIABLO ALLIANCE",
@@ -2397,15 +2541,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14.2,
+        "dark": 14.4,
+        "whiteRaw": "14.2",
+        "darkRaw": "14.4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-lb-shore",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LB SHORE",
+        "loserParticipantId": "tournament-team-2026-18u-boys-diablo-alliance",
+        "loserTeamId": null,
+        "loserName": "DIABLO ALLIANCE"
       },
       "advancement": {
         "winnerTo": null,
@@ -2430,8 +2578,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#35 - SAND CANYON",
@@ -2461,15 +2609,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 8,
+        "whiteRaw": "4",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-olympus-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-olympus-18u-boys",
+        "winnerName": "Olympus",
+        "loserParticipantId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-sand-canyon-18u-boys",
+        "loserName": "Sand Canyon"
       },
       "advancement": {
         "winnerTo": null,
@@ -2494,8 +2646,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#33 - FOOTHILL",
@@ -2525,15 +2677,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-foothill-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-foothill-18u-boys",
+        "winnerName": "Foothill",
+        "loserParticipantId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-commerce-18u-boys",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -2558,8 +2714,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#37 - SUPREME",
@@ -2589,15 +2745,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 20,
+        "whiteRaw": "11",
+        "darkRaw": "20"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-alameda",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "ALAMEDA",
+        "loserParticipantId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-supreme-18u-boys",
+        "loserName": "Supreme"
       },
       "advancement": {
         "winnerTo": null,
@@ -2622,8 +2782,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#38 - CIU",
@@ -2653,15 +2813,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-imperial-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-imperial-18u-boys",
+        "winnerName": "Imperial",
+        "loserParticipantId": "team-2026-18u-boys-ciu-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-ciu-18u-boys",
+        "loserName": "CIU"
       },
       "advancement": {
         "winnerTo": null,
@@ -2686,8 +2850,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#34 - GREENWICH",
@@ -2717,15 +2881,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 10,
+        "whiteRaw": "12",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-greenwich-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-greenwich-18u-boys",
+        "winnerName": "Greenwich",
+        "loserParticipantId": "tournament-team-2026-18u-boys-sd-shores",
+        "loserTeamId": null,
+        "loserName": "SD SHORES"
       },
       "advancement": {
         "winnerTo": null,
@@ -2750,8 +2918,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#36 - NORTH IRVINE",
@@ -2781,15 +2949,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 13,
+        "whiteRaw": "8",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-la-jolla",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LA JOLLA",
+        "loserParticipantId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-north-irvine-18u-boys",
+        "loserName": "North Irvine"
       },
       "advancement": {
         "winnerTo": null,
@@ -2814,8 +2986,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#40 - CC UNITED",
@@ -2845,15 +3017,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 12,
+        "whiteRaw": "17",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-cc-united-18u-boys",
+        "winnerName": "CC United",
+        "loserParticipantId": "team-2026-18u-boys-mission-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-mission-18u-boys",
+        "loserName": "Mission"
       },
       "advancement": {
         "winnerTo": null,

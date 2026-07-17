@@ -1,0 +1,76 @@
+CPI 7.49.0 — Historical Results Completion & Profile Integration
+=================================================================
+
+Release purpose
+---------------
+Complete normalization of currently banked historical tournament result tables and surface verified, profile-only history on team, club, and public archive pages without enabling ranking evidence.
+
+Verified release state
+----------------------
+- 3 completed tournaments / 25 registered historical divisions
+- 18 historical divisions banked; 7 remain explicitly pending source access
+- 787 archived games, including 769 verified finals
+- 116 ranked team profiles linked to historical results
+- 82 club profiles linked to historical results
+- 9 verified placements with source provenance
+- Historical ranking evidence remains disabled
+- Published rankings remain unchanged
+
+Primary files
+-------------
+- VERSION.md
+- config/site-release.json
+- release-check
+- INSTALL_7.49.0.md
+- docs/ROADMAP_7.49_HISTORICAL_RESULTS_PROFILE_INTEGRATION.md
+- .github/workflows/sync-tournament-archive.yml
+
+Parser and archive pipeline
+---------------------------
+- scripts/tournament_pipeline.py
+- scripts/sync-tournament-data.py
+- scripts/build-tournament-archive.py
+- scripts/build-historical-profiles.py
+- scripts/test-historical-tournament-parser.py
+- scripts/test-historical-profile-engine.py
+- scripts/validate-tournament-archive.py
+- scripts/validate-historical-profiles.py
+- scripts/test-tournament-archive-ui.js
+- scripts/test-historical-profile-ui.js
+- tests/fixtures/tournaments/archive/results-table-unlabeled-scores.csv
+
+Public presentation
+-------------------
+- tournament-archive.html
+- css/tournament-archive-v7-49.css
+- js/tournament-archive-v7-49.js
+- team.html
+- club.html
+- css/historical-profiles-v7-49.css
+- js/team-profile-v7-42.js
+- js/club-intelligence-v7-26.js
+
+Generated data
+--------------
+- data/tournaments/archive/*
+- data/tournaments/history/*
+- Updated normalized and QA records for 18 banked historical divisions
+- data/tournaments/normalized/manifest.json
+- data/tournaments/operations/*
+- qa/historical-profile-summary-7.49.0.json
+- qa/release-audit-latest.json
+
+Pending historical sources
+--------------------------
+- Boys Futures Super Finals: 16U Boys D1, 18U Boys D1
+- Girls US Club Championships: all five registered divisions
+
+Safety policy
+-------------
+Historical records are display-only. They cannot enter ranking evidence, create automatic recommendations, alter rankings.json, or publish ranking changes.
+
+Repository cleanup
+------------------
+Remove tracked Python cache files before committing:
+  find . -type d -name '__pycache__' -prune -exec rm -rf {} +
+  find . -name '*.pyc' -delete

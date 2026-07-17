@@ -24,10 +24,9 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=701942663#gid=701942663",
     "fetchedAt": "2026-07-17T18:30:58Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "3892f7cd98f66e242aa79f3d1906ec04e4b95ab2f1ccf785e00a42040190cdd9",
-    "rowCount": 33,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/export?format=csv&gid=701942663"
+    "rowCount": 33
   },
   "counts": {
     "games": 10,
@@ -36,13 +35,69 @@
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 20,
-    "resolvedTeamParticipants": 0,
-    "unresolvedTeamParticipants": 20,
+    "resolvedTeamParticipants": 4,
+    "unresolvedTeamParticipants": 16,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 20
+    "reviewItems": 16
   },
+  "placements": [
+    {
+      "place": 1,
+      "label": "1st",
+      "participant": {
+        "raw": "ARROYO GRANDE",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "Arroyo Grande",
+        "participantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "teamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "clubId": "club-arroyo-grande",
+        "rankingEligible": true,
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "sourceRow": 31
+    },
+    {
+      "place": 2,
+      "label": "2nd",
+      "participant": {
+        "raw": "LB SHORE",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "LB SHORE",
+        "participantId": "tournament-team-2026-14u-girls-lb-shore",
+        "teamId": null,
+        "clubId": null,
+        "rankingEligible": false,
+        "identityStatus": "unresolved",
+        "identityMatchType": "tournament_only"
+      },
+      "sourceRow": 32
+    },
+    {
+      "place": 3,
+      "label": "3rd",
+      "participant": {
+        "raw": "FOOTHILL",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "FOOTHILL",
+        "participantId": "tournament-team-2026-14u-girls-foothill",
+        "teamId": null,
+        "clubId": "club-foothill",
+        "rankingEligible": false,
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "sourceRow": 33
+    }
+  ],
   "games": [
     {
       "id": "game-2026-quiksilver-cup-14u-girls-championship-14g01",
@@ -69,27 +124,27 @@
           "raw": "A2-ARROYO GRANDE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-ARROYO GRANDE",
-          "participantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "Arroyo Grande",
+          "participantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+          "teamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+          "clubId": "club-arroyo-grande",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A5-FOOTHILL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A5-FOOTHILL",
-          "participantId": "tournament-team-2026-14u-girls-a5-foothill",
+          "sourceReference": "A5",
+          "displayName": "FOOTHILL",
+          "participantId": "tournament-team-2026-14u-girls-foothill",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -100,12 +155,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
-        "winnerTeamId": null,
-        "winnerName": "A2-ARROYO GRANDE",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a5-foothill",
+        "winnerParticipantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "winnerName": "Arroyo Grande",
+        "loserParticipantId": "tournament-team-2026-14u-girls-foothill",
         "loserTeamId": null,
-        "loserName": "A5-FOOTHILL"
+        "loserName": "FOOTHILL"
       },
       "advancement": {
         "winnerTo": null,
@@ -137,9 +192,9 @@
           "raw": "A1-908 WPC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-908 WPC",
-          "participantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+          "sourceReference": "A1",
+          "displayName": "908 WPC",
+          "participantId": "tournament-team-2026-14u-girls-908-wpc",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -150,9 +205,9 @@
           "raw": "A3-LB SHORE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-LB SHORE",
-          "participantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+          "sourceReference": "A3",
+          "displayName": "LB SHORE",
+          "participantId": "tournament-team-2026-14u-girls-lb-shore",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -168,12 +223,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-lb-shore",
         "winnerTeamId": null,
-        "winnerName": "A3-LB SHORE",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+        "winnerName": "LB SHORE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-908-wpc",
         "loserTeamId": null,
-        "loserName": "A1-908 WPC"
+        "loserName": "908 WPC"
       },
       "advancement": {
         "winnerTo": null,
@@ -205,22 +260,22 @@
           "raw": "A2-ARROYO GRANDE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-ARROYO GRANDE",
-          "participantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "Arroyo Grande",
+          "participantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+          "teamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+          "clubId": "club-arroyo-grande",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A4-SC ELITE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4-SC ELITE",
-          "participantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+          "sourceReference": "A4",
+          "displayName": "SC ELITE",
+          "participantId": "tournament-team-2026-14u-girls-sc-elite",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -236,12 +291,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
-        "winnerTeamId": null,
-        "winnerName": "A2-ARROYO GRANDE",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+        "winnerParticipantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "winnerName": "Arroyo Grande",
+        "loserParticipantId": "tournament-team-2026-14u-girls-sc-elite",
         "loserTeamId": null,
-        "loserName": "A4-SC ELITE"
+        "loserName": "SC ELITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -273,9 +328,9 @@
           "raw": "A3-LB SHORE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-LB SHORE",
-          "participantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+          "sourceReference": "A3",
+          "displayName": "LB SHORE",
+          "participantId": "tournament-team-2026-14u-girls-lb-shore",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -286,14 +341,14 @@
           "raw": "A5-FOOTHILL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A5-FOOTHILL",
-          "participantId": "tournament-team-2026-14u-girls-a5-foothill",
+          "sourceReference": "A5",
+          "displayName": "FOOTHILL",
+          "participantId": "tournament-team-2026-14u-girls-foothill",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -304,12 +359,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-lb-shore",
         "winnerTeamId": null,
-        "winnerName": "A3-LB SHORE",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a5-foothill",
+        "winnerName": "LB SHORE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-foothill",
         "loserTeamId": null,
-        "loserName": "A5-FOOTHILL"
+        "loserName": "FOOTHILL"
       },
       "advancement": {
         "winnerTo": null,
@@ -341,9 +396,9 @@
           "raw": "A1-908 WPC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-908 WPC",
-          "participantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+          "sourceReference": "A1",
+          "displayName": "908 WPC",
+          "participantId": "tournament-team-2026-14u-girls-908-wpc",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -354,9 +409,9 @@
           "raw": "A4-SC ELITE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4-SC ELITE",
-          "participantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+          "sourceReference": "A4",
+          "displayName": "SC ELITE",
+          "participantId": "tournament-team-2026-14u-girls-sc-elite",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -372,12 +427,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-908-wpc",
         "winnerTeamId": null,
-        "winnerName": "A1-908 WPC",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+        "winnerName": "908 WPC",
+        "loserParticipantId": "tournament-team-2026-14u-girls-sc-elite",
         "loserTeamId": null,
-        "loserName": "A4-SC ELITE"
+        "loserName": "SC ELITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -409,22 +464,22 @@
           "raw": "A2-ARROYO GRANDE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-ARROYO GRANDE",
-          "participantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "Arroyo Grande",
+          "participantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+          "teamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+          "clubId": "club-arroyo-grande",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3-LB SHORE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-LB SHORE",
-          "participantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+          "sourceReference": "A3",
+          "displayName": "LB SHORE",
+          "participantId": "tournament-team-2026-14u-girls-lb-shore",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -440,12 +495,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
-        "winnerTeamId": null,
-        "winnerName": "A2-ARROYO GRANDE",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+        "winnerParticipantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "winnerName": "Arroyo Grande",
+        "loserParticipantId": "tournament-team-2026-14u-girls-lb-shore",
         "loserTeamId": null,
-        "loserName": "A3-LB SHORE"
+        "loserName": "LB SHORE"
       },
       "advancement": {
         "winnerTo": null,
@@ -477,9 +532,9 @@
           "raw": "A4-SC ELITE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4-SC ELITE",
-          "participantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+          "sourceReference": "A4",
+          "displayName": "SC ELITE",
+          "participantId": "tournament-team-2026-14u-girls-sc-elite",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -490,14 +545,14 @@
           "raw": "A5-FOOTHILL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A5-FOOTHILL",
-          "participantId": "tournament-team-2026-14u-girls-a5-foothill",
+          "sourceReference": "A5",
+          "displayName": "FOOTHILL",
+          "participantId": "tournament-team-2026-14u-girls-foothill",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -508,12 +563,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a5-foothill",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-foothill",
         "winnerTeamId": null,
-        "winnerName": "A5-FOOTHILL",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+        "winnerName": "FOOTHILL",
+        "loserParticipantId": "tournament-team-2026-14u-girls-sc-elite",
         "loserTeamId": null,
-        "loserName": "A4-SC ELITE"
+        "loserName": "SC ELITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -545,9 +600,9 @@
           "raw": "A1-908 WPC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-908 WPC",
-          "participantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+          "sourceReference": "A1",
+          "displayName": "908 WPC",
+          "participantId": "tournament-team-2026-14u-girls-908-wpc",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -558,14 +613,14 @@
           "raw": "A2-ARROYO GRANDE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-ARROYO GRANDE",
-          "participantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "Arroyo Grande",
+          "participantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+          "teamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+          "clubId": "club-arroyo-grande",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -576,12 +631,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
-        "winnerTeamId": null,
-        "winnerName": "A2-ARROYO GRANDE",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+        "winnerParticipantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
+        "winnerName": "Arroyo Grande",
+        "loserParticipantId": "tournament-team-2026-14u-girls-908-wpc",
         "loserTeamId": null,
-        "loserName": "A1-908 WPC"
+        "loserName": "908 WPC"
       },
       "advancement": {
         "winnerTo": null,
@@ -613,9 +668,9 @@
           "raw": "A3-LB SHORE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-LB SHORE",
-          "participantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+          "sourceReference": "A3",
+          "displayName": "LB SHORE",
+          "participantId": "tournament-team-2026-14u-girls-lb-shore",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -626,9 +681,9 @@
           "raw": "A4-SC ELITE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4-SC ELITE",
-          "participantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+          "sourceReference": "A4",
+          "displayName": "SC ELITE",
+          "participantId": "tournament-team-2026-14u-girls-sc-elite",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -644,12 +699,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-lb-shore",
         "winnerTeamId": null,
-        "winnerName": "A3-LB SHORE",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+        "winnerName": "LB SHORE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-sc-elite",
         "loserTeamId": null,
-        "loserName": "A4-SC ELITE"
+        "loserName": "SC ELITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -681,9 +736,9 @@
           "raw": "A1-908 WPC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-908 WPC",
-          "participantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+          "sourceReference": "A1",
+          "displayName": "908 WPC",
+          "participantId": "tournament-team-2026-14u-girls-908-wpc",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -694,14 +749,14 @@
           "raw": "A5-FOOTHILL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A5-FOOTHILL",
-          "participantId": "tournament-team-2026-14u-girls-a5-foothill",
+          "sourceReference": "A5",
+          "displayName": "FOOTHILL",
+          "participantId": "tournament-team-2026-14u-girls-foothill",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -712,12 +767,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-a5-foothill",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-foothill",
         "winnerTeamId": null,
-        "winnerName": "A5-FOOTHILL",
-        "loserParticipantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+        "winnerName": "FOOTHILL",
+        "loserParticipantId": "tournament-team-2026-14u-girls-908-wpc",
         "loserTeamId": null,
-        "loserName": "A1-908 WPC"
+        "loserName": "908 WPC"
       },
       "advancement": {
         "winnerTo": null,

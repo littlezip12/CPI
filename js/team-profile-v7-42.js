@@ -2,6 +2,7 @@
   const rankings = window.CPI_RANKINGS || [];
   const clubs = window.CPI_CLUBS || [];
   const tournamentEvidence = window.CPI_TOURNAMENT_EVIDENCE || { teams: {}, counts: {} };
+  const historicalProfiles = window.CPI_HISTORICAL_PROFILES || { teams: {}, counts: {} };
   const root = document.querySelector("#teamProfile");
 
   if (!root) return;
@@ -95,6 +96,11 @@
     return teamId ? tournamentEvidence.teams?.[teamId] || null : null;
   }
 
+  function historicalForTeam(team) {
+    const teamId = team.canonicalTeamId || team.teamId;
+    return teamId ? historicalProfiles.teams?.[teamId] || null : null;
+  }
+
   function recordLabel(summary = {}) {
     const finalGames = Number(summary.finalGames || 0);
     if (!finalGames) return `${Number(summary.scheduledGames || 0)} scheduled`;
@@ -161,6 +167,59 @@
           <div class="game-result"><strong>${escapeHtml(scoreLabel(game))}</strong>${game.opponentSeed != null ? `<span>Opponent seed #${escapeHtml(game.opponentSeed)}</span>` : ""}</div>
         </article>`).join("") : `<p class="empty-state">The team is registered for this tournament, but game rows have not been banked yet.</p>`}
       </div>
+    </section>`;
+  }
+
+  function historicalRecord(summary = {}) {
+    const finals = Number(summary.finalGames || 0);
+    if (!finals) return `${Number(summary.scheduledGames || 0)} archived schedule${Number(summary.scheduledGames || 0) === 1 ? "" : "s"}`;
+    return `${Number(summary.wins || 0)}-${Number(summary.losses || 0)}${Number(summary.ties || 0) ? `-${Number(summary.ties || 0)}` : ""} · ${finals} final${finals === 1 ? "" : "s"}`;
+  }
+
+  function historicalScore(game = {}) {
+    if (game.status !== "final") return game.timeLabel || "Scheduled";
+    return `${game.result ? `${game.result} ` : ""}${game.scoreDisplay || `${game.scoreFor ?? "—"}–${game.scoreAgainst ?? "—"}`}`;
+  }
+
+  function renderHistoricalProfile(history) {
+    if (!history) {
+      return `<section id="historical-tournaments" class="team-panel historical-profile-panel is-empty">
+        <div class="section-heading with-note"><div><p class="kicker">Historical archive</p><h2>No linked historical results yet</h2></div><span>Profile-only archive</span></div>
+        <p class="empty-state">Historical games appear here only when the archived participant resolves safely to this canonical CPI team.</p>
+      </section>`;
+    }
+    const appearances = history.appearances || [];
+    const games = history.recentGames || [];
+    const placements = history.placements || [];
+    const summary = history.summary || {};
+    return `<section id="historical-tournaments" class="team-panel historical-profile-panel">
+      <div class="section-heading with-note">
+        <div><p class="kicker">Historical tournament archive</p><h2>Completed-event history</h2></div>
+        <span>${escapeHtml(historicalRecord(summary))}</span>
+      </div>
+      <p class="evidence-policy-note historical-policy-note">Archived results are displayed for context and remain quarantined from the current CPI ranking model unless a tournament is explicitly approved as ranking evidence.</p>
+      <div class="historical-summary-grid">
+        <div><span>Events</span><strong>${escapeHtml(summary.events || 0)}</strong></div>
+        <div><span>Final games</span><strong>${escapeHtml(summary.finalGames || 0)}</strong></div>
+        <div><span>Goal difference</span><strong>${Number(summary.goalDifference || 0) > 0 ? "+" : ""}${escapeHtml(summary.goalDifference || 0)}</strong></div>
+        <div><span>Best verified finish</span><strong>${summary.bestFinish ? `#${escapeHtml(summary.bestFinish)}` : "—"}</strong></div>
+      </div>
+      <div class="historical-appearance-grid">
+        ${appearances.map((appearance) => `<article class="historical-appearance-card">
+          <span>${escapeHtml(appearance.eventName || "Tournament")}</span>
+          <strong>${escapeHtml(appearance.divisionLabel || "Division")}</strong>
+          <em>${escapeHtml(historicalRecord(appearance))}</em>
+          <div>${appearance.eventPublicPath ? `<a href="${escapeHtml(appearance.eventPublicPath)}">Tournament page</a>` : ""}${appearance.sourceUrl ? `<a href="${escapeHtml(appearance.sourceUrl)}" target="_blank" rel="noopener">Source</a>` : ""}</div>
+        </article>`).join("")}
+      </div>
+      ${placements.length ? `<div class="historical-placement-row">${placements.map((item) => `<span><b>#${escapeHtml(item.place)}</b>${escapeHtml(item.eventName)} · ${escapeHtml(item.divisionLabel)}</span>`).join("")}</div>` : ""}
+      <div class="historical-game-list">
+        ${games.slice(0, 12).map((game) => `<article class="historical-game-row ${game.status === "final" ? "is-final" : "is-scheduled"}">
+          <div><span>${escapeHtml(game.eventName || "Tournament")} · ${escapeHtml(game.divisionLabel || "Division")}</span><strong>vs ${game.opponentTeamPage ? `<a href="${escapeHtml(game.opponentTeamPage)}">${escapeHtml(game.opponentName || "Opponent")}</a>` : escapeHtml(game.opponentName || "Opponent")}</strong></div>
+          <div><strong>${escapeHtml(historicalScore(game))}</strong><span>${escapeHtml(game.stage || game.dateLabel || game.gameNumber || "Archived game")}</span></div>
+        </article>`).join("")}
+      </div>
+      <a class="historical-archive-link" href="tournament-archive.html?team=${encodeURIComponent(history.canonicalTeamId || "")}">Search full tournament archive →</a>
     </section>`;
   }
 
@@ -360,6 +419,7 @@
     const clubName = team.displayClubName || club.displayName || team.club;
     const clubPage = team.clubPage || club.clubPage || `club.html?club=${team.clubSlug}`;
     const normalizedEvidence = evidenceForTeam(team);
+    const historicalProfile = historicalForTeam(team);
     const normalizedSummary = normalizedEvidence?.summary || {};
     const gamesTracked = Number(team.gamesLatest || 0);
     const latestRecord = team.latestTournamentRecord || "Record TBD";
@@ -403,7 +463,8 @@
 
         <nav class="profile-tabs" aria-label="Team profile sections">
           <a href="#team-intelligence">Overview</a>
-          <a href="#tournament-evidence">Tournament evidence</a>
+          <a href="#tournament-evidence">JO evidence</a>
+          <a href="#historical-tournaments">History</a>
           <a href="#club-age-group">Club lineup</a>
           <a href="#statewide-context">Statewide context</a>
           <a href="#profile-notes">Data notes</a>
@@ -483,6 +544,7 @@
         </section>
 
         ${renderTournamentEvidence(normalizedEvidence)}
+        ${renderHistoricalProfile(historicalProfile)}
 
         <section id="club-age-group" class="team-panel same-group-panel">
           <div class="section-heading with-note">

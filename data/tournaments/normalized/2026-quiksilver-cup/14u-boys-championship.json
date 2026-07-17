@@ -24,15 +24,14 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=1501136177#gid=1501136177",
     "fetchedAt": "2026-07-17T18:30:58Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "497663d106751c3c0fbe59d4eaf984907a6194ba35fba8390f97b792b2bc256e",
-    "rowCount": 51,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/gviz/tq?tqx=out:csv&gid=1501136177"
+    "rowCount": 51
   },
   "counts": {
     "games": 32,
-    "finalGames": 0,
-    "scheduledGames": 32,
+    "finalGames": 32,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 64,
@@ -43,6 +42,7 @@
     "blockers": 0,
     "reviewItems": 61
   },
+  "placements": [],
   "games": [
     {
       "id": "game-2026-quiksilver-cup-14u-boys-championship-14b02",
@@ -62,46 +62,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1- NORCAL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1- NORCAL",
-          "participantId": "tournament-team-2026-14u-boys-b1-norcal",
+          "sourceReference": "B1",
+          "displayName": "NORCAL",
+          "participantId": "tournament-team-2026-14u-boys-norcal",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-norcal",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "B4- CDM",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B4- CDM",
-          "participantId": "tournament-team-2026-14u-boys-b4-cdm",
+          "sourceReference": "B4",
+          "displayName": "CDM",
+          "participantId": "tournament-team-2026-14u-boys-cdm",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-cdm",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORCAL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cdm",
+        "loserTeamId": null,
+        "loserName": "CDM"
       },
       "advancement": {
         "winnerTo": null,
@@ -126,46 +130,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2- NEWPORT",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2- NEWPORT",
-          "participantId": "tournament-team-2026-14u-boys-b2-newport",
+          "sourceReference": "B2",
+          "displayName": "NEWPORT",
+          "participantId": "tournament-team-2026-14u-boys-newport",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-newport-beach",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "B3- CC UNITED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3- CC UNITED",
-          "participantId": "tournament-team-2026-14u-boys-b3-cc-united",
+          "sourceReference": "B3",
+          "displayName": "CC UNITED",
+          "participantId": "tournament-team-2026-14u-boys-cc-united",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-cc-united",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 11,
+        "whiteRaw": "15",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-newport",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cc-united",
+        "loserTeamId": null,
+        "loserName": "CC UNITED"
       },
       "advancement": {
         "winnerTo": null,
@@ -190,46 +198,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1- MISSION",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1- MISSION",
-          "participantId": "tournament-team-2026-14u-boys-c1-mission",
+          "sourceReference": "C1",
+          "displayName": "MISSION",
+          "participantId": "tournament-team-2026-14u-boys-mission",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-mission",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C4- RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C4- RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-14u-boys-c4-rancho-tsunami",
+          "sourceReference": "C4",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-14u-boys-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 6,
+        "whiteRaw": "10",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-mission",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "MISSION",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -254,46 +266,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C2- CIU",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2- CIU",
-          "participantId": "tournament-team-2026-14u-boys-c2-ciu",
+          "sourceReference": "C2",
+          "displayName": "CIU",
+          "participantId": "tournament-team-2026-14u-boys-ciu",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-ciu",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C3- SD SHORES",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3- SD SHORES",
-          "participantId": "tournament-team-2026-14u-boys-c3-sd-shores",
+          "sourceReference": "C3",
+          "displayName": "SD SHORES",
+          "participantId": "tournament-team-2026-14u-boys-sd-shores",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-diego-shores",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 7,
+        "whiteRaw": "10",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-ciu",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CIU",
+        "loserParticipantId": "tournament-team-2026-14u-boys-sd-shores",
+        "loserTeamId": null,
+        "loserName": "SD SHORES"
       },
       "advancement": {
         "winnerTo": null,
@@ -318,8 +334,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#2 - CDM",
@@ -349,15 +365,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cc-united",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CC UNITED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cdm",
+        "loserTeamId": null,
+        "loserName": "CDM"
       },
       "advancement": {
         "winnerTo": null,
@@ -382,8 +402,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#2 - NORCAL",
@@ -413,15 +433,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 13,
+        "whiteRaw": "6",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-newport",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT",
+        "loserParticipantId": "tournament-team-2026-14u-boys-norcal",
+        "loserTeamId": null,
+        "loserName": "NORCAL"
       },
       "advancement": {
         "winnerTo": null,
@@ -446,8 +470,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#6 - RANCHO TSUNAMI",
@@ -477,15 +501,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 3,
+        "dark": 10,
+        "whiteRaw": "3",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -510,8 +538,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#6 - MISSION",
@@ -541,15 +569,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-mission",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "MISSION",
+        "loserParticipantId": "tournament-team-2026-14u-boys-ciu",
+        "loserTeamId": null,
+        "loserName": "CIU"
       },
       "advancement": {
         "winnerTo": null,
@@ -574,8 +606,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stC - MISSION",
@@ -605,15 +637,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 2,
+        "whiteRaw": "15",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-mission",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "MISSION",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE"
       },
       "advancement": {
         "winnerTo": null,
@@ -638,8 +674,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndA - ROUTE 66",
@@ -669,15 +705,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 18,
+        "whiteRaw": "4",
+        "darkRaw": "18"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-newport",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT",
+        "loserParticipantId": "tournament-team-2026-14u-boys-route-66",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66"
       },
       "advancement": {
         "winnerTo": null,
@@ -702,8 +742,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stA - 908",
@@ -733,15 +773,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 9,
+        "whiteRaw": "4",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORCAL",
+        "loserParticipantId": "team-2026-14u-boys-908",
+        "loserTeamId": "team-2026-14u-boys-908",
+        "loserName": "908"
       },
       "advancement": {
         "winnerTo": null,
@@ -766,8 +810,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndC - CIU",
@@ -797,15 +841,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 13,
+        "whiteRaw": "12",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-la-premier",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LA PREMIER",
+        "loserParticipantId": "tournament-team-2026-14u-boys-ciu",
+        "loserTeamId": null,
+        "loserName": "CIU"
       },
       "advancement": {
         "winnerTo": null,
@@ -830,8 +878,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#1C/2D - NORTH IRVINE",
@@ -861,15 +909,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 10,
+        "whiteRaw": "12",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-north-irvine",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTH IRVINE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-route-66",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66"
       },
       "advancement": {
         "winnerTo": null,
@@ -894,8 +946,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#2A/1B - NEWPORT",
@@ -925,15 +977,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-newport",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT",
+        "loserParticipantId": "tournament-team-2026-14u-boys-mission",
+        "loserTeamId": null,
+        "loserName": "MISSION"
       },
       "advancement": {
         "winnerTo": null,
@@ -958,8 +1014,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#2C/1D - CIU",
@@ -989,15 +1045,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-ciu",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CIU",
+        "loserParticipantId": "team-2026-14u-boys-908",
+        "loserTeamId": "team-2026-14u-boys-908",
+        "loserName": "908"
       },
       "advancement": {
         "winnerTo": null,
@@ -1022,8 +1082,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#1A/2B - NORCAL",
@@ -1053,15 +1113,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 11,
+        "whiteRaw": "13",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORCAL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-la-premier",
+        "loserTeamId": null,
+        "loserName": "LA PREMIER"
       },
       "advancement": {
         "winnerTo": null,
@@ -1086,8 +1150,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdC - SD SHORES",
@@ -1117,15 +1181,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "tournament-team-2026-14u-boys-sd-dons",
+        "loserTeamId": null,
+        "loserName": "SD DONS"
       },
       "advancement": {
         "winnerTo": null,
@@ -1150,8 +1218,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "4thA - LA JOLLA UNITED",
@@ -1181,15 +1249,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 13,
+        "whiteRaw": "12",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cc-united",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CC UNITED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-la-jolla-united",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED"
       },
       "advancement": {
         "winnerTo": null,
@@ -1214,8 +1286,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdA - LAMORINDA",
@@ -1245,15 +1317,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lamorinda",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LAMORINDA",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cdm",
+        "loserTeamId": null,
+        "loserName": "CDM"
       },
       "advancement": {
         "winnerTo": null,
@@ -1278,8 +1354,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "4thC - RANCHO TSUNAMI",
@@ -1309,15 +1385,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-commerce",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "COMMERCE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -1342,8 +1422,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#3C/4D - SD DONS",
@@ -1373,15 +1453,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 10,
+        "whiteRaw": "14",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-sd-dons",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD DONS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-la-jolla-united",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED"
       },
       "advancement": {
         "winnerTo": null,
@@ -1406,8 +1490,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#4A/3B - CC UNITED",
@@ -1437,15 +1521,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 22,
+        "whiteRaw": "5",
+        "darkRaw": "22"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cc-united",
+        "loserTeamId": null,
+        "loserName": "CC UNITED"
       },
       "advancement": {
         "winnerTo": null,
@@ -1470,8 +1558,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#4C/3D - RANCHO TSUNAMI",
@@ -1501,15 +1589,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cdm",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CDM",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -1534,8 +1626,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#3A/4B - LAMORINDA",
@@ -1565,15 +1657,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 15,
+        "whiteRaw": "12",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-commerce",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "COMMERCE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-lamorinda",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA"
       },
       "advancement": {
         "winnerTo": null,
@@ -1598,8 +1694,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#28 - CC UNITED",
@@ -1629,15 +1725,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7.5,
+        "dark": 7.4,
+        "whiteRaw": "7.5",
+        "darkRaw": "7.4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cc-united",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CC UNITED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-lamorinda",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA"
       },
       "advancement": {
         "winnerTo": null,
@@ -1662,8 +1762,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#32 - COMMERCE",
@@ -1693,15 +1793,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 10,
+        "whiteRaw": "6",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-sd-shores",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD SHORES",
+        "loserParticipantId": "tournament-team-2026-14u-boys-commerce",
+        "loserTeamId": null,
+        "loserName": "COMMERCE"
       },
       "advancement": {
         "winnerTo": null,
@@ -1726,8 +1830,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#26 - SD DONS",
@@ -1757,15 +1861,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9.4,
+        "dark": 9.5,
+        "whiteRaw": "9.4",
+        "darkRaw": "9.5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cdm",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CDM",
+        "loserParticipantId": "tournament-team-2026-14u-boys-sd-dons",
+        "loserTeamId": null,
+        "loserName": "SD DONS"
       },
       "advancement": {
         "winnerTo": null,
@@ -1790,8 +1898,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#30 - RANCHO TSUNAMI",
@@ -1821,15 +1929,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7.5,
+        "dark": 7.6,
+        "whiteRaw": "7.5",
+        "darkRaw": "7.6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-la-jolla-united",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LA JOLLA UNITED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -1854,8 +1966,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#29 - 908",
@@ -1885,15 +1997,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-908",
+        "winnerTeamId": "team-2026-14u-boys-908",
+        "winnerName": "908",
+        "loserParticipantId": "tournament-team-2026-14u-boys-route-66",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66"
       },
       "advancement": {
         "winnerTo": null,
@@ -1918,8 +2034,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#25 - NORTH IRVINE",
@@ -1949,15 +2065,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 10,
+        "whiteRaw": "6",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-ciu",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CIU",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE"
       },
       "advancement": {
         "winnerTo": null,
@@ -1982,8 +2102,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDENWEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#27 - MISSION",
@@ -2013,15 +2133,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-mission",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "MISSION",
+        "loserParticipantId": "tournament-team-2026-14u-boys-la-premier",
+        "loserTeamId": null,
+        "loserName": "LA PREMIER"
       },
       "advancement": {
         "winnerTo": null,
@@ -2046,8 +2170,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SERVITE HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#31 - NORCAL",
@@ -2077,15 +2201,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORCAL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-newport",
+        "loserTeamId": null,
+        "loserName": "NEWPORT"
       },
       "advancement": {
         "winnerTo": null,

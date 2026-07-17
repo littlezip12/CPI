@@ -24,25 +24,25 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=768537505#gid=768537505",
     "fetchedAt": "2026-07-17T18:31:05Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "bf3d859cc4fe4fb399407629e506efbeb6d9383c6aa4ce55f5f35b9ad445a5e5",
-    "rowCount": 133,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/gviz/tq?tqx=out:csv&gid=768537505"
+    "rowCount": 133
   },
   "counts": {
     "games": 75,
-    "finalGames": 0,
-    "scheduledGames": 75,
+    "finalGames": 75,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 150,
-    "resolvedTeamParticipants": 25,
-    "unresolvedTeamParticipants": 125,
+    "resolvedTeamParticipants": 39,
+    "unresolvedTeamParticipants": 111,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 125
+    "reviewItems": 111
   },
+  "placements": [],
   "games": [
     {
       "id": "game-2026-boys-futures-super-finals-16u-boys-d3-16bd301",
@@ -62,16 +62,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1-CARMEL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1-CARMEL",
-          "participantId": "tournament-team-2026-16u-boys-d1-carmel",
+          "sourceReference": "D1",
+          "displayName": "CARMEL",
+          "participantId": "tournament-team-2026-16u-boys-carmel",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -82,9 +82,9 @@
           "raw": "D4-THUNDER B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D4-THUNDER B",
-          "participantId": "tournament-team-2026-16u-boys-d4-thunder-b",
+          "sourceReference": "D4",
+          "displayName": "THUNDER B",
+          "participantId": "tournament-team-2026-16u-boys-thunder-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -93,15 +93,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-thunder-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "THUNDER B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-carmel",
+        "loserTeamId": null,
+        "loserName": "CARMEL"
       },
       "advancement": {
         "winnerTo": null,
@@ -126,29 +130,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D2-SUPREME",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2-SUPREME",
-          "participantId": "tournament-team-2026-16u-boys-d2-supreme",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D2",
+          "displayName": "Supreme",
+          "participantId": "team-2026-16u-boys-supreme-16u-boys",
+          "teamId": "team-2026-16u-boys-supreme-16u-boys",
+          "clubId": "club-supreme",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "D3-680 B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3-680 B",
-          "participantId": "tournament-team-2026-16u-boys-d3-680-b",
+          "sourceReference": "D3",
+          "displayName": "680 B",
+          "participantId": "tournament-team-2026-16u-boys-680-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -157,15 +161,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 6,
+        "whiteRaw": "13",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-supreme-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-supreme-16u-boys",
+        "winnerName": "Supreme",
+        "loserParticipantId": "tournament-team-2026-16u-boys-680-b",
+        "loserTeamId": null,
+        "loserName": "680 B"
       },
       "advancement": {
         "winnerTo": null,
@@ -190,46 +198,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2-MID PEN",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-MID PEN",
-          "participantId": "tournament-team-2026-16u-boys-a2-mid-pen",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "Mid Pen",
+          "participantId": "team-2026-16u-boys-mid-pen-16u-boys",
+          "teamId": "team-2026-16u-boys-mid-pen-16u-boys",
+          "clubId": "club-mid-pen",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3-SAN JOSE EXPRESS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-SAN JOSE EXPRESS B",
-          "participantId": "tournament-team-2026-16u-boys-a3-san-jose-express-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A3",
+          "displayName": "San Jose Express B",
+          "participantId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+          "teamId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+          "clubId": "club-san-jose-express",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-mid-pen-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-mid-pen-16u-boys",
+        "winnerName": "Mid Pen",
+        "loserParticipantId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+        "loserName": "San Jose Express B"
       },
       "advancement": {
         "winnerTo": null,
@@ -254,29 +266,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1-BACK BAY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E1-BACK BAY",
-          "participantId": "tournament-team-2026-16u-boys-e1-back-bay",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "E1",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-16u-boys-back-bay-16u-boys",
+          "teamId": "team-2026-16u-boys-back-bay-16u-boys",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "E4-DAVIS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E4-DAVIS B",
-          "participantId": "tournament-team-2026-16u-boys-e4-davis-b",
+          "sourceReference": "E4",
+          "displayName": "DAVIS B",
+          "participantId": "tournament-team-2026-16u-boys-davis-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -285,15 +297,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-back-bay-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-back-bay-16u-boys",
+        "winnerName": "Back Bay",
+        "loserParticipantId": "tournament-team-2026-16u-boys-davis-b",
+        "loserTeamId": null,
+        "loserName": "DAVIS B"
       },
       "advancement": {
         "winnerTo": null,
@@ -318,16 +334,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E2-SOVA",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E2-SOVA",
-          "participantId": "tournament-team-2026-16u-boys-e2-sova",
+          "sourceReference": "E2",
+          "displayName": "SOVA",
+          "participantId": "tournament-team-2026-16u-boys-sova",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -338,26 +354,30 @@
           "raw": "E3-ROUTE 66",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E3-ROUTE 66",
-          "participantId": "tournament-team-2026-16u-boys-e3-route-66",
+          "sourceReference": "E3",
+          "displayName": "ROUTE 66",
+          "participantId": "tournament-team-2026-16u-boys-route-66",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-route-66",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 3,
+        "dark": 14,
+        "whiteRaw": "3",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-route-66",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "ROUTE 66",
+        "loserParticipantId": "tournament-team-2026-16u-boys-sova",
+        "loserTeamId": null,
+        "loserName": "SOVA"
       },
       "advancement": {
         "winnerTo": null,
@@ -382,46 +402,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-ASPHALT GREEN",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-ASPHALT GREEN",
-          "participantId": "tournament-team-2026-16u-boys-a1-asphalt-green",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "Asphalt Green",
+          "participantId": "team-2026-16u-boys-asphalt-green-16u-boys",
+          "teamId": "team-2026-16u-boys-asphalt-green-16u-boys",
+          "clubId": "club-asphalt-green",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3-SAN JOSE EXPRESS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-SAN JOSE EXPRESS B",
-          "participantId": "tournament-team-2026-16u-boys-a3-san-jose-express-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A3",
+          "displayName": "San Jose Express B",
+          "participantId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+          "teamId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+          "clubId": "club-san-jose-express",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 3,
+        "whiteRaw": "17",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-asphalt-green-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-asphalt-green-16u-boys",
+        "winnerName": "Asphalt Green",
+        "loserParticipantId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+        "loserName": "San Jose Express B"
       },
       "advancement": {
         "winnerTo": null,
@@ -446,8 +470,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#D1/D4-THUNDER B",
@@ -477,15 +501,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-supreme-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-supreme-16u-boys",
+        "winnerName": "Supreme",
+        "loserParticipantId": "tournament-team-2026-16u-boys-thunder-b",
+        "loserTeamId": null,
+        "loserName": "THUNDER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -510,8 +538,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#E1/E4-DAVIS B",
@@ -541,15 +569,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 5,
+        "whiteRaw": "13",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DAVIS B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-sova",
+        "loserTeamId": null,
+        "loserName": "SOVA"
       },
       "advancement": {
         "winnerTo": null,
@@ -574,46 +606,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-ASPHALT GREEN",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-ASPHALT GREEN",
-          "participantId": "tournament-team-2026-16u-boys-a1-asphalt-green",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "Asphalt Green",
+          "participantId": "team-2026-16u-boys-asphalt-green-16u-boys",
+          "teamId": "team-2026-16u-boys-asphalt-green-16u-boys",
+          "clubId": "club-asphalt-green",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A2-MID PEN",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-MID PEN",
-          "participantId": "tournament-team-2026-16u-boys-a2-mid-pen",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "Mid Pen",
+          "participantId": "team-2026-16u-boys-mid-pen-16u-boys",
+          "teamId": "team-2026-16u-boys-mid-pen-16u-boys",
+          "clubId": "club-mid-pen",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 18,
+        "dark": 5,
+        "whiteRaw": "18",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-asphalt-green-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-asphalt-green-16u-boys",
+        "winnerName": "Asphalt Green",
+        "loserParticipantId": "team-2026-16u-boys-mid-pen-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-mid-pen-16u-boys",
+        "loserName": "Mid Pen"
       },
       "advancement": {
         "winnerTo": null,
@@ -638,8 +674,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#E1/E4-BACK BAY",
@@ -669,15 +705,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 11,
+        "whiteRaw": "13",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-back-bay-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-back-bay-16u-boys",
+        "winnerName": "Back Bay",
+        "loserParticipantId": "tournament-team-2026-16u-boys-route-66",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66"
       },
       "advancement": {
         "winnerTo": null,
@@ -702,16 +742,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1-VANGUARD B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1-VANGUARD B",
-          "participantId": "tournament-team-2026-16u-boys-c1-vanguard-b",
+          "sourceReference": "C1",
+          "displayName": "VANGUARD B",
+          "participantId": "tournament-team-2026-16u-boys-vanguard-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -722,26 +762,30 @@
           "raw": "C4-PATRIOT RED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C4-PATRIOT RED",
-          "participantId": "tournament-team-2026-16u-boys-c4-patriot-red",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C4",
+          "displayName": "Patriot Red",
+          "participantId": "team-2026-16u-boys-patriot-red-16u-boys",
+          "teamId": "team-2026-16u-boys-patriot-red-16u-boys",
+          "clubId": "club-patriot",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 10,
+        "whiteRaw": "16",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-vanguard-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VANGUARD B",
+        "loserParticipantId": "team-2026-16u-boys-patriot-red-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-patriot-red-16u-boys",
+        "loserName": "Patriot Red"
       },
       "advancement": {
         "winnerTo": null,
@@ -766,46 +810,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C2-DEVILS GATE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2-DEVILS GATE",
-          "participantId": "tournament-team-2026-16u-boys-c2-devils-gate",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C2",
+          "displayName": "Devils Gate",
+          "participantId": "team-2026-16u-boys-devils-gate-16u-boys",
+          "teamId": "team-2026-16u-boys-devils-gate-16u-boys",
+          "clubId": "club-devils-gate",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C3-OLYMPUS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3-OLYMPUS",
-          "participantId": "tournament-team-2026-16u-boys-c3-olympus",
+          "sourceReference": "C3",
+          "displayName": "OLYMPUS",
+          "participantId": "tournament-team-2026-16u-boys-olympus",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-olympus",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 18,
+        "whiteRaw": "5",
+        "darkRaw": "18"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-olympus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "OLYMPUS",
+        "loserParticipantId": "team-2026-16u-boys-devils-gate-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-devils-gate-16u-boys",
+        "loserName": "Devils Gate"
       },
       "advancement": {
         "winnerTo": null,
@@ -830,16 +878,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-SAN DIEGO SHORES B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-SAN DIEGO SHORES B",
-          "participantId": "tournament-team-2026-16u-boys-b1-san-diego-shores-b",
+          "sourceReference": "B1",
+          "displayName": "SAN DIEGO SHORES B",
+          "participantId": "tournament-team-2026-16u-boys-san-diego-shores-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -850,9 +898,9 @@
           "raw": "B3-RAIN CITY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-RAIN CITY",
-          "participantId": "tournament-team-2026-16u-boys-b3-rain-city",
+          "sourceReference": "B3",
+          "displayName": "RAIN CITY",
+          "participantId": "tournament-team-2026-16u-boys-rain-city",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -861,15 +909,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 7,
+        "whiteRaw": "16",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-diego-shores-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN DIEGO SHORES B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-rain-city",
+        "loserTeamId": null,
+        "loserName": "RAIN CITY"
       },
       "advancement": {
         "winnerTo": null,
@@ -894,16 +946,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1-SOUTH COAST WHITE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F1-SOUTH COAST WHITE",
-          "participantId": "tournament-team-2026-16u-boys-f1-south-coast-white",
+          "sourceReference": "F1",
+          "displayName": "SOUTH COAST WHITE",
+          "participantId": "tournament-team-2026-16u-boys-south-coast-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -914,26 +966,30 @@
           "raw": "F4-BIG VALLEY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F4-BIG VALLEY",
-          "participantId": "tournament-team-2026-16u-boys-f4-big-valley",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F4",
+          "displayName": "Big Valley",
+          "participantId": "team-2026-16u-boys-big-valley-16u-boys",
+          "teamId": "team-2026-16u-boys-big-valley-16u-boys",
+          "clubId": "club-big-valley",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 2,
+        "whiteRaw": "12",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-white",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SOUTH COAST WHITE",
+        "loserParticipantId": "team-2026-16u-boys-big-valley-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-big-valley-16u-boys",
+        "loserName": "Big Valley"
       },
       "advancement": {
         "winnerTo": null,
@@ -958,46 +1014,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F2-SAN FRANCISCO",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F2-SAN FRANCISCO",
-          "participantId": "tournament-team-2026-16u-boys-f2-san-francisco",
+          "sourceReference": "F2",
+          "displayName": "SAN FRANCISCO",
+          "participantId": "tournament-team-2026-16u-boys-san-francisco",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-francisco",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "F3-TRILOGY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F3-TRILOGY",
-          "participantId": "tournament-team-2026-16u-boys-f3-trilogy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F3",
+          "displayName": "Trilogy",
+          "participantId": "team-2026-16u-boys-trilogy-16u-boys",
+          "teamId": "team-2026-16u-boys-trilogy-16u-boys",
+          "clubId": "club-trilogy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 21,
+        "whiteRaw": "4",
+        "darkRaw": "21"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-trilogy-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-trilogy-16u-boys",
+        "winnerName": "Trilogy",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-francisco",
+        "loserTeamId": null,
+        "loserName": "SAN FRANCISCO"
       },
       "advancement": {
         "winnerTo": null,
@@ -1022,29 +1082,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2-CMAC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-CMAC",
-          "participantId": "tournament-team-2026-16u-boys-b2-cmac",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B2",
+          "displayName": "CMAC",
+          "participantId": "team-2026-16u-boys-cmac-16u-boys",
+          "teamId": "team-2026-16u-boys-cmac-16u-boys",
+          "clubId": "club-cmac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3-RAIN CITY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-RAIN CITY",
-          "participantId": "tournament-team-2026-16u-boys-b3-rain-city",
+          "sourceReference": "B3",
+          "displayName": "RAIN CITY",
+          "participantId": "tournament-team-2026-16u-boys-rain-city",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1053,15 +1113,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 11,
+        "whiteRaw": "6",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-rain-city",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RAIN CITY",
+        "loserParticipantId": "team-2026-16u-boys-cmac-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-cmac-16u-boys",
+        "loserName": "CMAC"
       },
       "advancement": {
         "winnerTo": null,
@@ -1086,8 +1150,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#C1/C4-VANGUARD B",
@@ -1117,15 +1181,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 3,
+        "whiteRaw": "5",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-vanguard-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VANGUARD B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-olympus",
+        "loserTeamId": null,
+        "loserName": "OLYMPUS"
       },
       "advancement": {
         "winnerTo": null,
@@ -1150,8 +1218,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#F1/F4-BIG VALLEY",
@@ -1181,15 +1249,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 11,
+        "whiteRaw": "15",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-big-valley-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-big-valley-16u-boys",
+        "winnerName": "Big Valley",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-francisco",
+        "loserTeamId": null,
+        "loserName": "SAN FRANCISCO"
       },
       "advancement": {
         "winnerTo": null,
@@ -1214,16 +1286,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-SAN DIEGO SHORES B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-SAN DIEGO SHORES B",
-          "participantId": "tournament-team-2026-16u-boys-b1-san-diego-shores-b",
+          "sourceReference": "B1",
+          "displayName": "SAN DIEGO SHORES B",
+          "participantId": "tournament-team-2026-16u-boys-san-diego-shores-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1234,26 +1306,30 @@
           "raw": "B2-CMAC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-CMAC",
-          "participantId": "tournament-team-2026-16u-boys-b2-cmac",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B2",
+          "displayName": "CMAC",
+          "participantId": "team-2026-16u-boys-cmac-16u-boys",
+          "teamId": "team-2026-16u-boys-cmac-16u-boys",
+          "clubId": "club-cmac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-diego-shores-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN DIEGO SHORES B",
+        "loserParticipantId": "team-2026-16u-boys-cmac-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-cmac-16u-boys",
+        "loserName": "CMAC"
       },
       "advancement": {
         "winnerTo": null,
@@ -1278,8 +1354,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#F1/F4-SOUTH COAST WHITE",
@@ -1309,15 +1385,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 10,
+        "whiteRaw": "11",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-white",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SOUTH COAST WHITE",
+        "loserParticipantId": "team-2026-16u-boys-trilogy-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-trilogy-16u-boys",
+        "loserName": "Trilogy"
       },
       "advancement": {
         "winnerTo": null,
@@ -1342,16 +1422,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1-AMERICAN RIVER B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G1-AMERICAN RIVER B",
-          "participantId": "tournament-team-2026-16u-boys-g1-american-river-b",
+          "sourceReference": "G1",
+          "displayName": "AMERICAN RIVER B",
+          "participantId": "tournament-team-2026-16u-boys-american-river-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1362,9 +1442,9 @@
           "raw": "G4-OVAC B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G4-OVAC B",
-          "participantId": "tournament-team-2026-16u-boys-g4-ovac-b",
+          "sourceReference": "G4",
+          "displayName": "OVAC B",
+          "participantId": "tournament-team-2026-16u-boys-ovac-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1373,15 +1453,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 4,
+        "whiteRaw": "6",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-american-river-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "AMERICAN RIVER B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-ovac-b",
+        "loserTeamId": null,
+        "loserName": "OVAC B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1406,16 +1490,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G2-TEMPLE CITY A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G2-TEMPLE CITY A",
-          "participantId": "tournament-team-2026-16u-boys-g2-temple-city-a",
+          "sourceReference": "G2",
+          "displayName": "TEMPLE CITY A",
+          "participantId": "tournament-team-2026-16u-boys-temple-city-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1426,26 +1510,30 @@
           "raw": "G3-RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G3-RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-16u-boys-g3-rancho-tsunami",
+          "sourceReference": "G3",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-boys-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 9,
+        "whiteRaw": "15",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-temple-city-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TEMPLE CITY A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -1470,16 +1558,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H1-SACRAMENTO",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H1-SACRAMENTO",
-          "participantId": "tournament-team-2026-16u-boys-h1-sacramento",
+          "sourceReference": "H1",
+          "displayName": "SACRAMENTO",
+          "participantId": "tournament-team-2026-16u-boys-sacramento",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1490,9 +1578,9 @@
           "raw": "H4-TEMPLE CITY B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H4-TEMPLE CITY B",
-          "participantId": "tournament-team-2026-16u-boys-h4-temple-city-b",
+          "sourceReference": "H4",
+          "displayName": "TEMPLE CITY B",
+          "participantId": "tournament-team-2026-16u-boys-temple-city-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1501,15 +1589,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 19,
+        "dark": 4,
+        "whiteRaw": "19",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-sacramento",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SACRAMENTO",
+        "loserParticipantId": "tournament-team-2026-16u-boys-temple-city-b",
+        "loserTeamId": null,
+        "loserName": "TEMPLE CITY B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1534,16 +1626,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H2-VIPER PIGEON",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H2-VIPER PIGEON",
-          "participantId": "tournament-team-2026-16u-boys-h2-viper-pigeon",
+          "sourceReference": "H2",
+          "displayName": "VIPER PIGEON",
+          "participantId": "tournament-team-2026-16u-boys-viper-pigeon",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1554,9 +1646,9 @@
           "raw": "H3-FOOTHILL CLUB B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H3-FOOTHILL CLUB B",
-          "participantId": "tournament-team-2026-16u-boys-h3-foothill-club-b",
+          "sourceReference": "H3",
+          "displayName": "FOOTHILL CLUB B",
+          "participantId": "tournament-team-2026-16u-boys-foothill-club-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1565,15 +1657,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 1,
+        "whiteRaw": "16",
+        "darkRaw": "1"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-viper-pigeon",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEON",
+        "loserParticipantId": "tournament-team-2026-16u-boys-foothill-club-b",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1598,8 +1694,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#G1/G4-OVAC B",
@@ -1629,15 +1725,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 12,
+        "whiteRaw": "8",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "tournament-team-2026-16u-boys-ovac-b",
+        "loserTeamId": null,
+        "loserName": "OVAC B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1662,8 +1762,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#G1/G4-AMERICAN RIVER B",
@@ -1693,15 +1793,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 18,
+        "whiteRaw": "9",
+        "darkRaw": "18"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-temple-city-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TEMPLE CITY A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-american-river-b",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1726,8 +1830,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#H1/H4-TEMPLE CITY B",
@@ -1757,15 +1861,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 10,
+        "whiteRaw": "13",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-temple-city-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TEMPLE CITY B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-foothill-club-b",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1790,8 +1898,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#H1/H4-SACRAMENTO",
@@ -1821,15 +1929,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 16,
+        "whiteRaw": "6",
+        "darkRaw": "16"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-viper-pigeon",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEON",
+        "loserParticipantId": "tournament-team-2026-16u-boys-sacramento",
+        "loserTeamId": null,
+        "loserName": "SACRAMENTO"
       },
       "advancement": {
         "winnerTo": null,
@@ -1854,8 +1966,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#D1/D4-CARMEL",
@@ -1885,15 +1997,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-carmel",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CARMEL",
+        "loserParticipantId": "tournament-team-2026-16u-boys-680-b",
+        "loserTeamId": null,
+        "loserName": "680 B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1918,8 +2034,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#C1/C4-PATRIOT RED",
@@ -1949,15 +2065,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 17,
+        "whiteRaw": "13",
+        "darkRaw": "17"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-devils-gate-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-devils-gate-16u-boys",
+        "winnerName": "Devils Gate",
+        "loserParticipantId": "team-2026-16u-boys-patriot-red-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-patriot-red-16u-boys",
+        "loserName": "Patriot Red"
       },
       "advancement": {
         "winnerTo": null,
@@ -1982,8 +2102,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J4(1stD)(4)-SUPREME",
@@ -2013,15 +2133,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 9,
+        "whiteRaw": "12",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-j4-1std-4-supreme",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "J4(1stD)(4)-SUPREME",
+        "loserParticipantId": "tournament-team-2026-16u-boys-j5-1ste-5-back-bay",
+        "loserTeamId": null,
+        "loserName": "J5(1stE)(5)-BACK BAY"
       },
       "advancement": {
         "winnerTo": null,
@@ -2046,8 +2170,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J1(1stA)(1)-ASPHALT GREEN",
@@ -2077,15 +2201,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 8,
+        "whiteRaw": "12",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-j1-1sta-1-asphalt-green",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "J1(1stA)(1)-ASPHALT GREEN",
+        "loserParticipantId": "tournament-team-2026-16u-boys-j8-1sth-8-viper-pigeon",
+        "loserTeamId": null,
+        "loserName": "J8(1stH)(8)-VIPER PIGEON"
       },
       "advancement": {
         "winnerTo": null,
@@ -2110,8 +2238,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J2(1stB)(2)-SAN DIEGO SHORES B",
@@ -2141,15 +2269,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-j7-1stg-7-temple-city-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "J7(1stG)(7)-TEMPLE CITY A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-j2-1stb-2-san-diego-shores-b",
+        "loserTeamId": null,
+        "loserName": "J2(1stB)(2)-SAN DIEGO SHORES B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2174,8 +2306,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J3(1stC)(3)-VANGUARD B",
@@ -2205,15 +2337,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 6,
+        "whiteRaw": "11",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-j3-1stc-3-vanguard-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "J3(1stC)(3)-VANGUARD B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-j6-1stf-6-south-coast-white",
+        "loserTeamId": null,
+        "loserName": "J6(1stF)(6)-SOUTH COAST WHITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -2238,8 +2374,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "N2(4thE)(28)-SOVA",
@@ -2269,15 +2405,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 15,
+        "whiteRaw": "5",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-n3-4thd-29-680-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "N3(4thD)(29)-680 B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-n2-4the-28-sova",
+        "loserTeamId": null,
+        "loserName": "N2(4thE)(28)-SOVA"
       },
       "advancement": {
         "winnerTo": null,
@@ -2302,8 +2442,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "P2(4thF)(27)-SAN FRANCISCO",
@@ -2333,15 +2473,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 12,
+        "whiteRaw": "9",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-p3-4thc-30-patriot-red",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "P3(4thC)(30)-PATRIOT RED",
+        "loserParticipantId": "tournament-team-2026-16u-boys-p2-4thf-27-san-francisco",
+        "loserTeamId": null,
+        "loserName": "P2(4thF)(27)-SAN FRANCISCO"
       },
       "advancement": {
         "winnerTo": null,
@@ -2366,8 +2510,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#J4/J5-BACK BAY",
@@ -2397,15 +2541,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 13,
+        "whiteRaw": "9",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-viper-pigeon",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEON",
+        "loserParticipantId": "team-2026-16u-boys-back-bay-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-back-bay-16u-boys",
+        "loserName": "Back Bay"
       },
       "advancement": {
         "winnerTo": null,
@@ -2430,8 +2578,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#J1/J8-ASPHALT GREEN",
@@ -2461,15 +2609,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-supreme-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-supreme-16u-boys",
+        "winnerName": "Supreme",
+        "loserParticipantId": "team-2026-16u-boys-asphalt-green-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-asphalt-green-16u-boys",
+        "loserName": "Asphalt Green"
       },
       "advancement": {
         "winnerTo": null,
@@ -2494,8 +2646,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#J3/J6-SOUTH COAST WHITE",
@@ -2525,15 +2677,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 10,
+        "whiteRaw": "5",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-diego-shores-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN DIEGO SHORES B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-south-coast-white",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST WHITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -2558,8 +2714,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#J2/J7-TEMPLE CITY A",
@@ -2589,15 +2745,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 8,
+        "whiteRaw": "6",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-vanguard-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VANGUARD B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-temple-city-a",
+        "loserTeamId": null,
+        "loserName": "TEMPLE CITY A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2622,8 +2782,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "N1(4thH)(25)-FOOTHILL CLUB B",
@@ -2653,15 +2813,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 14,
+        "whiteRaw": "9",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-n3-4thd-29-680-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "N3(4thD)(29)-680 B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-n1-4thh-25-foothill-club-b",
+        "loserTeamId": null,
+        "loserName": "N1(4thH)(25)-FOOTHILL CLUB B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2686,8 +2850,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "P1(4thG)(26)-OVAC B",
@@ -2717,15 +2881,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 7,
+        "whiteRaw": "6",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-p3-4thc-30-patriot-red",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "P3(4thC)(30)-PATRIOT RED",
+        "loserParticipantId": "tournament-team-2026-16u-boys-p1-4thg-26-ovac-b",
+        "loserTeamId": null,
+        "loserName": "P1(4thG)(26)-OVAC B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2750,8 +2918,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M4(3rdD)(20)-CARMEL",
@@ -2781,15 +2949,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-m4-3rdd-20-carmel",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "M4(3rdD)(20)-CARMEL",
+        "loserParticipantId": "tournament-team-2026-16u-boys-m5-3rde-21-davis-b",
+        "loserTeamId": null,
+        "loserName": "M5(3rdE)(21)-DAVIS B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2814,8 +2986,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M1(3rdA)(17)-SAN JOSE EXPRESS B",
@@ -2845,15 +3017,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 2,
+        "whiteRaw": "10",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-m1-3rda-17-san-jose-express-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "M1(3rdA)(17)-SAN JOSE EXPRESS B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-m8-3rdh-24-temple-city-b",
+        "loserTeamId": null,
+        "loserName": "M8(3rdH)(24)-TEMPLE CITY B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2878,8 +3054,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M2(3rdB)(18)-CMAC",
@@ -2909,15 +3085,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-m2-3rdb-18-cmac",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "M2(3rdB)(18)-CMAC",
+        "loserParticipantId": "tournament-team-2026-16u-boys-m7-3rdg-23-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "M7(3rdG)(23)-RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -2942,8 +3122,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M3(3rdC)(19)-DEVILS GATE",
@@ -2973,15 +3153,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-m3-3rdc-19-devils-gate",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "M3(3rdC)(19)-DEVILS GATE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-m6-3rdf-22-big-valley",
+        "loserTeamId": null,
+        "loserName": "M6(3rdF)(22)-BIG VALLEY"
       },
       "advancement": {
         "winnerTo": null,
@@ -3006,8 +3190,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#M4/M5-DAVIS B",
@@ -3037,15 +3221,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 19,
+        "dark": 3,
+        "whiteRaw": "19",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DAVIS B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-temple-city-b",
+        "loserTeamId": null,
+        "loserName": "TEMPLE CITY B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3070,8 +3258,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#M1/M8-SAN JOSE EXPRESS B",
@@ -3101,15 +3289,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 14,
+        "whiteRaw": "8",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-carmel",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CARMEL",
+        "loserParticipantId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+        "loserName": "San Jose Express B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3134,8 +3326,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#M3/M6-BIG VALLEY",
@@ -3165,15 +3357,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 12,
+        "whiteRaw": "6",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "team-2026-16u-boys-big-valley-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-big-valley-16u-boys",
+        "loserName": "Big Valley"
       },
       "advancement": {
         "winnerTo": null,
@@ -3198,8 +3394,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#M2/M7-CMAC",
@@ -3229,15 +3425,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 12,
+        "whiteRaw": "8",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-devils-gate-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-devils-gate-16u-boys",
+        "winnerName": "Devils Gate",
+        "loserParticipantId": "team-2026-16u-boys-cmac-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-cmac-16u-boys",
+        "loserName": "CMAC"
       },
       "advancement": {
         "winnerTo": null,
@@ -3262,8 +3462,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K4(2ndE)(12)-ROUTE 66",
@@ -3293,15 +3493,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-k5-2ndd-13-thunder-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "K5(2ndD)(13)-THUNDER B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-k4-2nde-12-route-66",
+        "loserTeamId": null,
+        "loserName": "K4(2ndE)(12)-ROUTE 66"
       },
       "advancement": {
         "winnerTo": null,
@@ -3326,8 +3530,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K1(2ndH)(9)-SACRAMENTO",
@@ -3357,15 +3561,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 20,
+        "dark": 8,
+        "whiteRaw": "20",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-k1-2ndh-9-sacramento",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "K1(2ndH)(9)-SACRAMENTO",
+        "loserParticipantId": "tournament-team-2026-16u-boys-k8-2nda-16-mid-pen",
+        "loserTeamId": null,
+        "loserName": "K8(2ndA)(16)]-MID PEN"
       },
       "advancement": {
         "winnerTo": null,
@@ -3390,8 +3598,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K2(2ndG)(10)-AMERICAN RIVER B",
@@ -3421,15 +3629,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 17,
+        "whiteRaw": "9",
+        "darkRaw": "17"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-k7-2ndb-15-rain-city",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "K7(2ndB)(15)-RAIN CITY",
+        "loserParticipantId": "tournament-team-2026-16u-boys-k2-2ndg-10-american-river-b",
+        "loserTeamId": null,
+        "loserName": "K2(2ndG)(10)-AMERICAN RIVER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3454,8 +3666,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K3(2ndF)(11)-TRILOGY",
@@ -3485,15 +3697,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 14,
+        "whiteRaw": "15",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-k3-2ndf-11-trilogy",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "K3(2ndF)(11)-TRILOGY",
+        "loserParticipantId": "tournament-team-2026-16u-boys-k6-2ndc-14-olympus",
+        "loserTeamId": null,
+        "loserName": "K6(2ndC)(14)-OLYMPUS"
       },
       "advancement": {
         "winnerTo": null,
@@ -3518,8 +3734,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#K4/K5-ROUTE 66",
@@ -3549,15 +3765,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-route-66",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "ROUTE 66",
+        "loserParticipantId": "team-2026-16u-boys-mid-pen-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-mid-pen-16u-boys",
+        "loserName": "Mid Pen"
       },
       "advancement": {
         "winnerTo": null,
@@ -3582,8 +3802,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#K1/K8-SACRAMENTO",
@@ -3613,15 +3833,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-thunder-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "THUNDER B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-sacramento",
+        "loserTeamId": null,
+        "loserName": "SACRAMENTO"
       },
       "advancement": {
         "winnerTo": null,
@@ -3646,8 +3870,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#K3/K6-OLYMPUS",
@@ -3677,15 +3901,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-olympus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "OLYMPUS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-american-river-b",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3710,8 +3938,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#K2/K7-RAIN CITY",
@@ -3741,15 +3969,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 11,
+        "whiteRaw": "12",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-rain-city",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RAIN CITY",
+        "loserParticipantId": "team-2026-16u-boys-trilogy-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-trilogy-16u-boys",
+        "loserName": "Trilogy"
       },
       "advancement": {
         "winnerTo": null,
@@ -3774,8 +4006,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "N1(4thH)(25)-FOOTHILL CLUB B",
@@ -3805,15 +4037,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 8,
+        "whiteRaw": "10",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-n1-4thh-25-foothill-club-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "N1(4thH)(25)-FOOTHILL CLUB B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-n2-4the-28-sova",
+        "loserTeamId": null,
+        "loserName": "N2(4thE)(28)-SOVA"
       },
       "advancement": {
         "winnerTo": null,
@@ -3838,8 +4074,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "YORBA LINDA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "P1(4thG)(26)-OVAC B",
@@ -3869,15 +4105,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11.2,
+        "dark": 11.4,
+        "whiteRaw": "11.2",
+        "darkRaw": "11.4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-p2-4thf-27-san-francisco",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "P2(4thF)(27)-SAN FRANCISCO",
+        "loserParticipantId": "tournament-team-2026-16u-boys-p1-4thg-26-ovac-b",
+        "loserTeamId": null,
+        "loserName": "P1(4thG)(26)-OVAC B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3902,8 +4142,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CORONA DEL MAR HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#58-TEMPLE CITY A",
@@ -3933,15 +4173,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 8,
+        "whiteRaw": "12",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-temple-city-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TEMPLE CITY A",
+        "loserParticipantId": "team-2026-16u-boys-asphalt-green-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-asphalt-green-16u-boys",
+        "loserName": "Asphalt Green"
       },
       "advancement": {
         "winnerTo": null,
@@ -3966,8 +4210,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CORONA DEL MAR HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#52-SUPREME",
@@ -3997,15 +4241,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 4,
+        "whiteRaw": "8",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-supreme-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-supreme-16u-boys",
+        "winnerName": "Supreme",
+        "loserParticipantId": "tournament-team-2026-16u-boys-vanguard-b",
+        "loserTeamId": null,
+        "loserName": "VANGUARD B"
       },
       "advancement": {
         "winnerTo": null,
@@ -4030,8 +4278,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#45-ROUTE 66",
@@ -4061,15 +4309,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 10,
+        "whiteRaw": "5",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-olympus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "OLYMPUS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-route-66",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66"
       },
       "advancement": {
         "winnerTo": null,
@@ -4094,8 +4346,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#54-TRILOGY",
@@ -4125,15 +4377,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 13,
+        "whiteRaw": "12",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-sacramento",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SACRAMENTO",
+        "loserParticipantId": "team-2026-16u-boys-trilogy-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-trilogy-16u-boys",
+        "loserName": "Trilogy"
       },
       "advancement": {
         "winnerTo": null,
@@ -4158,8 +4414,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#48-THUNDER B",
@@ -4189,15 +4445,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 10,
+        "whiteRaw": "6",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-rain-city",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RAIN CITY",
+        "loserParticipantId": "tournament-team-2026-16u-boys-thunder-b",
+        "loserTeamId": null,
+        "loserName": "THUNDER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -4222,8 +4482,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#55-SOUTH COAST WHITE",
@@ -4253,15 +4513,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-back-bay-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-back-bay-16u-boys",
+        "winnerName": "Back Bay",
+        "loserParticipantId": "tournament-team-2026-16u-boys-south-coast-white",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST WHITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -4286,8 +4550,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "GOLDEN WEST COLLEGE",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#49-VIPER PIGEON",
@@ -4317,15 +4581,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 9,
+        "whiteRaw": "13",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-viper-pigeon",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEON",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-diego-shores-b",
+        "loserTeamId": null,
+        "loserName": "SAN DIEGO SHORES B"
       },
       "advancement": {
         "winnerTo": null,
@@ -4350,8 +4618,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "3rdN-SOVA",
@@ -4381,15 +4649,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-ovac-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "OVAC B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-sova",
+        "loserTeamId": null,
+        "loserName": "SOVA"
       },
       "advancement": {
         "winnerTo": null,
@@ -4414,8 +4686,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndP-SAN FRANCISCO",
@@ -4445,15 +4717,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 9,
+        "whiteRaw": "11",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-francisco",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN FRANCISCO",
+        "loserParticipantId": "tournament-team-2026-16u-boys-foothill-club-b",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB B"
       },
       "advancement": {
         "winnerTo": null,
@@ -4478,8 +4754,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stN-680 B",
@@ -4509,15 +4785,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 6,
+        "whiteRaw": "9",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-680-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "680 B",
+        "loserParticipantId": "team-2026-16u-boys-patriot-red-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-patriot-red-16u-boys",
+        "loserName": "Patriot Red"
       },
       "advancement": {
         "winnerTo": null,
@@ -4542,8 +4822,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#56-BIG VALLEY",
@@ -4573,15 +4853,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-big-valley-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-big-valley-16u-boys",
+        "winnerName": "Big Valley",
+        "loserParticipantId": "tournament-team-2026-16u-boys-temple-city-b",
+        "loserTeamId": null,
+        "loserName": "TEMPLE CITY B"
       },
       "advancement": {
         "winnerTo": null,
@@ -4606,8 +4890,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#50-DAVIS B",
@@ -4637,15 +4921,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DAVIS B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-rancho-tsunami",
+        "loserTeamId": null,
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -4670,8 +4958,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#59-CMAC",
@@ -4701,15 +4989,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 5,
+        "whiteRaw": "14",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-cmac-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-cmac-16u-boys",
+        "winnerName": "CMAC",
+        "loserParticipantId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-san-jose-express-b-16u-boys",
+        "loserName": "San Jose Express B"
       },
       "advancement": {
         "winnerTo": null,
@@ -4734,8 +5026,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#53-CARMEL",
@@ -4765,15 +5057,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 9,
+        "whiteRaw": "17",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-carmel",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CARMEL",
+        "loserParticipantId": "team-2026-16u-boys-devils-gate-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-devils-gate-16u-boys",
+        "loserName": "Devils Gate"
       },
       "advancement": {
         "winnerTo": null,
@@ -4798,8 +5094,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "BUENA PARK HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#51-AMERICAN RIVER B",
@@ -4829,15 +5125,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 5,
+        "whiteRaw": "13",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-american-river-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "AMERICAN RIVER B",
+        "loserParticipantId": "team-2026-16u-boys-mid-pen-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-mid-pen-16u-boys",
+        "loserName": "Mid Pen"
       },
       "advancement": {
         "winnerTo": null,

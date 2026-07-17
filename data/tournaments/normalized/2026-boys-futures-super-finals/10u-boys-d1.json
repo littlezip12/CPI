@@ -24,15 +24,14 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=1811978308#gid=1811978308",
     "fetchedAt": "2026-07-17T18:31:00Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "3c5bd002daa62b3b349dd1009707ac3aa986a94c3d17496c1fc56fcad89f09a3",
-    "rowCount": 46,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/gviz/tq?tqx=out:csv&gid=1811978308"
+    "rowCount": 46
   },
   "counts": {
     "games": 25,
-    "finalGames": 0,
-    "scheduledGames": 25,
+    "finalGames": 25,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 50,
@@ -43,6 +42,7 @@
     "blockers": 0,
     "reviewItems": 50
   },
+  "placements": [],
   "games": [
     {
       "id": "game-2026-boys-futures-super-finals-10u-boys-d1-10ud101",
@@ -62,16 +62,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-SD DONS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-SD DONS A",
-          "participantId": "tournament-team-2026-10u-boys-a1-sd-dons-a",
+          "sourceReference": "A1",
+          "displayName": "SD DONS A",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -82,9 +82,9 @@
           "raw": "A4-NEWPORT BEACH BOYS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4-NEWPORT BEACH BOYS B",
-          "participantId": "tournament-team-2026-10u-boys-a4-newport-beach-boys-b",
+          "sourceReference": "A4",
+          "displayName": "NEWPORT BEACH BOYS B",
+          "participantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -93,15 +93,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 5,
+        "whiteRaw": "12",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD DONS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
+        "loserTeamId": null,
+        "loserName": "NEWPORT BEACH BOYS B"
       },
       "advancement": {
         "winnerTo": null,
@@ -126,29 +130,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2-908",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-908",
-          "participantId": "tournament-team-2026-10u-boys-a2-908",
+          "sourceReference": "A2",
+          "displayName": "908",
+          "participantId": "tournament-team-2026-10u-boys-908",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-908",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A3-COMMERCE BOYS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-COMMERCE BOYS",
-          "participantId": "tournament-team-2026-10u-boys-a3-commerce-boys",
+          "sourceReference": "A3",
+          "displayName": "COMMERCE BOYS",
+          "participantId": "tournament-team-2026-10u-boys-commerce-boys",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -157,15 +161,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 9,
+        "whiteRaw": "15",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "908",
+        "loserParticipantId": "tournament-team-2026-10u-boys-commerce-boys",
+        "loserTeamId": null,
+        "loserName": "COMMERCE BOYS"
       },
       "advancement": {
         "winnerTo": null,
@@ -190,16 +198,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-PATRIOT NAVY A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-PATRIOT NAVY A",
-          "participantId": "tournament-team-2026-10u-boys-b1-patriot-navy-a",
+          "sourceReference": "B1",
+          "displayName": "PATRIOT NAVY A",
+          "participantId": "tournament-team-2026-10u-boys-patriot-navy-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -210,9 +218,9 @@
           "raw": "B4-CDM BOYS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B4-CDM BOYS A",
-          "participantId": "tournament-team-2026-10u-boys-b4-cdm-boys-a",
+          "sourceReference": "B4",
+          "displayName": "CDM BOYS A",
+          "participantId": "tournament-team-2026-10u-boys-cdm-boys-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -221,15 +229,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-patriot-navy-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PATRIOT NAVY A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cdm-boys-a",
+        "loserTeamId": null,
+        "loserName": "CDM BOYS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -254,16 +266,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2-NEWPORT BEACH BOYS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-NEWPORT BEACH BOYS A",
-          "participantId": "tournament-team-2026-10u-boys-b2-newport-beach-boys-a",
+          "sourceReference": "B2",
+          "displayName": "NEWPORT BEACH BOYS A",
+          "participantId": "tournament-team-2026-10u-boys-newport-beach-boys-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -274,26 +286,30 @@
           "raw": "B3-LOS ALAMITOS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-LOS ALAMITOS",
-          "participantId": "tournament-team-2026-10u-boys-b3-los-alamitos",
+          "sourceReference": "B3",
+          "displayName": "LOS ALAMITOS",
+          "participantId": "tournament-team-2026-10u-boys-los-alamitos",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-los-alamitos",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 20,
+        "dark": 2,
+        "whiteRaw": "20",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH BOYS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-los-alamitos",
+        "loserTeamId": null,
+        "loserName": "LOS ALAMITOS"
       },
       "advancement": {
         "winnerTo": null,
@@ -318,16 +334,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-SD DONS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-SD DONS A",
-          "participantId": "tournament-team-2026-10u-boys-a1-sd-dons-a",
+          "sourceReference": "A1",
+          "displayName": "SD DONS A",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -338,26 +354,30 @@
           "raw": "A5-FOOTHILL CLUB",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A5-FOOTHILL CLUB",
-          "participantId": "tournament-team-2026-10u-boys-a5-foothill-club",
+          "sourceReference": "A5",
+          "displayName": "FOOTHILL CLUB",
+          "participantId": "tournament-team-2026-10u-boys-foothill-club",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill-club",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 2,
+        "whiteRaw": "13",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD DONS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-foothill-club",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB"
       },
       "advancement": {
         "winnerTo": null,
@@ -382,29 +402,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2-908",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-908",
-          "participantId": "tournament-team-2026-10u-boys-a2-908",
+          "sourceReference": "A2",
+          "displayName": "908",
+          "participantId": "tournament-team-2026-10u-boys-908",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-908",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A4-NEWPORT BEACH BOYS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4-NEWPORT BEACH BOYS B",
-          "participantId": "tournament-team-2026-10u-boys-a4-newport-beach-boys-b",
+          "sourceReference": "A4",
+          "displayName": "NEWPORT BEACH BOYS B",
+          "participantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -413,15 +433,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 8,
+        "whiteRaw": "12",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "908",
+        "loserParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
+        "loserTeamId": null,
+        "loserName": "NEWPORT BEACH BOYS B"
       },
       "advancement": {
         "winnerTo": null,
@@ -446,16 +470,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-PATRIOT NAVY A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-PATRIOT NAVY A",
-          "participantId": "tournament-team-2026-10u-boys-b1-patriot-navy-a",
+          "sourceReference": "B1",
+          "displayName": "PATRIOT NAVY A",
+          "participantId": "tournament-team-2026-10u-boys-patriot-navy-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -466,26 +490,30 @@
           "raw": "B3-LOS ALAMITOS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-LOS ALAMITOS",
-          "participantId": "tournament-team-2026-10u-boys-b3-los-alamitos",
+          "sourceReference": "B3",
+          "displayName": "LOS ALAMITOS",
+          "participantId": "tournament-team-2026-10u-boys-los-alamitos",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-los-alamitos",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 2,
+        "whiteRaw": "15",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-patriot-navy-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PATRIOT NAVY A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-los-alamitos",
+        "loserTeamId": null,
+        "loserName": "LOS ALAMITOS"
       },
       "advancement": {
         "winnerTo": null,
@@ -510,16 +538,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2-NEWPORT BEACH BOYS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-NEWPORT BEACH BOYS A",
-          "participantId": "tournament-team-2026-10u-boys-b2-newport-beach-boys-a",
+          "sourceReference": "B2",
+          "displayName": "NEWPORT BEACH BOYS A",
+          "participantId": "tournament-team-2026-10u-boys-newport-beach-boys-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -530,9 +558,9 @@
           "raw": "B4-CDM BOYS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B4-CDM BOYS A",
-          "participantId": "tournament-team-2026-10u-boys-b4-cdm-boys-a",
+          "sourceReference": "B4",
+          "displayName": "CDM BOYS A",
+          "participantId": "tournament-team-2026-10u-boys-cdm-boys-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -541,15 +569,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 23,
+        "dark": 5,
+        "whiteRaw": "23",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH BOYS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cdm-boys-a",
+        "loserTeamId": null,
+        "loserName": "CDM BOYS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -574,16 +606,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-SD DONS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-SD DONS A",
-          "participantId": "tournament-team-2026-10u-boys-a1-sd-dons-a",
+          "sourceReference": "A1",
+          "displayName": "SD DONS A",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -594,9 +626,9 @@
           "raw": "A3-COMMERCE BOYS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-COMMERCE BOYS",
-          "participantId": "tournament-team-2026-10u-boys-a3-commerce-boys",
+          "sourceReference": "A3",
+          "displayName": "COMMERCE BOYS",
+          "participantId": "tournament-team-2026-10u-boys-commerce-boys",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -605,15 +637,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 14,
+        "whiteRaw": "9",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-commerce-boys",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "COMMERCE BOYS",
+        "loserParticipantId": "tournament-team-2026-10u-boys-sd-dons-a",
+        "loserTeamId": null,
+        "loserName": "SD DONS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -638,46 +674,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2-908",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-908",
-          "participantId": "tournament-team-2026-10u-boys-a2-908",
+          "sourceReference": "A2",
+          "displayName": "908",
+          "participantId": "tournament-team-2026-10u-boys-908",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-908",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A5-FOOTHILL CLUB",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A5-FOOTHILL CLUB",
-          "participantId": "tournament-team-2026-10u-boys-a5-foothill-club",
+          "sourceReference": "A5",
+          "displayName": "FOOTHILL CLUB",
+          "participantId": "tournament-team-2026-10u-boys-foothill-club",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill-club",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 8,
+        "whiteRaw": "14",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "908",
+        "loserParticipantId": "tournament-team-2026-10u-boys-foothill-club",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB"
       },
       "advancement": {
         "winnerTo": null,
@@ -702,16 +742,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A4-NEWPORT BEACH BOYS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4-NEWPORT BEACH BOYS B",
-          "participantId": "tournament-team-2026-10u-boys-a4-newport-beach-boys-b",
+          "sourceReference": "A4",
+          "displayName": "NEWPORT BEACH BOYS B",
+          "participantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -722,26 +762,30 @@
           "raw": "A5-FOOTHILL CLUB",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A5-FOOTHILL CLUB",
-          "participantId": "tournament-team-2026-10u-boys-a5-foothill-club",
+          "sourceReference": "A5",
+          "displayName": "FOOTHILL CLUB",
+          "participantId": "tournament-team-2026-10u-boys-foothill-club",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill-club",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 1,
+        "whiteRaw": "16",
+        "darkRaw": "1"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH BOYS B",
+        "loserParticipantId": "tournament-team-2026-10u-boys-foothill-club",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB"
       },
       "advancement": {
         "winnerTo": null,
@@ -766,16 +810,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-SD DONS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-SD DONS A",
-          "participantId": "tournament-team-2026-10u-boys-a1-sd-dons-a",
+          "sourceReference": "A1",
+          "displayName": "SD DONS A",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -786,26 +830,30 @@
           "raw": "A2-908",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-908",
-          "participantId": "tournament-team-2026-10u-boys-a2-908",
+          "sourceReference": "A2",
+          "displayName": "908",
+          "participantId": "tournament-team-2026-10u-boys-908",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-908",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD DONS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-908",
+        "loserTeamId": null,
+        "loserName": "908"
       },
       "advancement": {
         "winnerTo": null,
@@ -830,16 +878,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-PATRIOT NAVY A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-PATRIOT NAVY A",
-          "participantId": "tournament-team-2026-10u-boys-b1-patriot-navy-a",
+          "sourceReference": "B1",
+          "displayName": "PATRIOT NAVY A",
+          "participantId": "tournament-team-2026-10u-boys-patriot-navy-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -850,9 +898,9 @@
           "raw": "B2-NEWPORT BEACH BOYS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-NEWPORT BEACH BOYS A",
-          "participantId": "tournament-team-2026-10u-boys-b2-newport-beach-boys-a",
+          "sourceReference": "B2",
+          "displayName": "NEWPORT BEACH BOYS A",
+          "participantId": "tournament-team-2026-10u-boys-newport-beach-boys-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -861,15 +909,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 1,
+        "dark": 9,
+        "whiteRaw": "1",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH BOYS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-patriot-navy-a",
+        "loserTeamId": null,
+        "loserName": "PATRIOT NAVY A"
       },
       "advancement": {
         "winnerTo": null,
@@ -894,29 +946,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B3-LOS ALAMITOS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-LOS ALAMITOS",
-          "participantId": "tournament-team-2026-10u-boys-b3-los-alamitos",
+          "sourceReference": "B3",
+          "displayName": "LOS ALAMITOS",
+          "participantId": "tournament-team-2026-10u-boys-los-alamitos",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-los-alamitos",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "B4-CDM BOYS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B4-CDM BOYS A",
-          "participantId": "tournament-team-2026-10u-boys-b4-cdm-boys-a",
+          "sourceReference": "B4",
+          "displayName": "CDM BOYS A",
+          "participantId": "tournament-team-2026-10u-boys-cdm-boys-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -925,15 +977,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 9,
+        "whiteRaw": "8",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cdm-boys-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CDM BOYS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-los-alamitos",
+        "loserTeamId": null,
+        "loserName": "LOS ALAMITOS"
       },
       "advancement": {
         "winnerTo": null,
@@ -958,16 +1014,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A3-COMMERCE BOYS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-COMMERCE BOYS",
-          "participantId": "tournament-team-2026-10u-boys-a3-commerce-boys",
+          "sourceReference": "A3",
+          "displayName": "COMMERCE BOYS",
+          "participantId": "tournament-team-2026-10u-boys-commerce-boys",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -978,9 +1034,9 @@
           "raw": "A4-NEWPORT BEACH BOYS B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A4-NEWPORT BEACH BOYS B",
-          "participantId": "tournament-team-2026-10u-boys-a4-newport-beach-boys-b",
+          "sourceReference": "A4",
+          "displayName": "NEWPORT BEACH BOYS B",
+          "participantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -989,15 +1045,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 4,
+        "whiteRaw": "11",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-commerce-boys",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "COMMERCE BOYS",
+        "loserParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
+        "loserTeamId": null,
+        "loserName": "NEWPORT BEACH BOYS B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1022,16 +1082,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A3-COMMERCE BOYS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-COMMERCE BOYS",
-          "participantId": "tournament-team-2026-10u-boys-a3-commerce-boys",
+          "sourceReference": "A3",
+          "displayName": "COMMERCE BOYS",
+          "participantId": "tournament-team-2026-10u-boys-commerce-boys",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1042,26 +1102,30 @@
           "raw": "A5-FOOTHILL CLUB",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A5-FOOTHILL CLUB",
-          "participantId": "tournament-team-2026-10u-boys-a5-foothill-club",
+          "sourceReference": "A5",
+          "displayName": "FOOTHILL CLUB",
+          "participantId": "tournament-team-2026-10u-boys-foothill-club",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill-club",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-commerce-boys",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "COMMERCE BOYS",
+        "loserParticipantId": "tournament-team-2026-10u-boys-foothill-club",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB"
       },
       "advancement": {
         "winnerTo": null,
@@ -1086,8 +1150,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndB-PATRIOT NAVY A",
@@ -1117,15 +1181,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 2,
+        "dark": 14,
+        "whiteRaw": "2",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD DONS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-patriot-navy-a",
+        "loserTeamId": null,
+        "loserName": "PATRIOT NAVY A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1150,8 +1218,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "2ndA-COMMERCE BOYS",
@@ -1181,15 +1249,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 20,
+        "dark": 8,
+        "whiteRaw": "20",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-commerce-boys",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "COMMERCE BOYS",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cdm-boys-a",
+        "loserTeamId": null,
+        "loserName": "CDM BOYS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1214,8 +1286,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "5thA-FOOTHILL CLUB",
@@ -1245,15 +1317,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-los-alamitos",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LOS ALAMITOS",
+        "loserParticipantId": "tournament-team-2026-10u-boys-foothill-club",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB"
       },
       "advancement": {
         "winnerTo": null,
@@ -1278,8 +1354,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stA-908",
@@ -1309,15 +1385,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 14,
+        "whiteRaw": "5",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SD DONS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-908",
+        "loserTeamId": null,
+        "loserName": "908"
       },
       "advancement": {
         "winnerTo": null,
@@ -1342,8 +1422,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "1stB-NEWPORT BEACH BOYS A",
@@ -1373,15 +1453,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH BOYS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-commerce-boys",
+        "loserTeamId": null,
+        "loserName": "COMMERCE BOYS"
       },
       "advancement": {
         "winnerTo": null,
@@ -1406,8 +1490,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "4thA-NEWPORT BEACH BOYS B",
@@ -1437,15 +1521,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH BOYS B",
+        "loserParticipantId": "tournament-team-2026-10u-boys-los-alamitos",
+        "loserTeamId": null,
+        "loserName": "LOS ALAMITOS"
       },
       "advancement": {
         "winnerTo": null,
@@ -1470,8 +1558,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#2B/3A-PATRIOT NAVY A",
@@ -1501,15 +1589,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 8,
+        "whiteRaw": "14",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-patriot-navy-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PATRIOT NAVY A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cdm-boys-a",
+        "loserTeamId": null,
+        "loserName": "CDM BOYS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1534,8 +1626,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#20-908",
@@ -1565,15 +1657,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 4,
+        "whiteRaw": "9",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "908",
+        "loserParticipantId": "tournament-team-2026-10u-boys-commerce-boys",
+        "loserTeamId": null,
+        "loserName": "COMMERCE BOYS"
       },
       "advancement": {
         "winnerTo": null,
@@ -1598,8 +1694,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "EL TORO HS 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#20-SD DONS A",
@@ -1629,15 +1725,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 11,
+        "whiteRaw": "4",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport-beach-boys-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH BOYS A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-sd-dons-a",
+        "loserTeamId": null,
+        "loserName": "SD DONS A"
       },
       "advancement": {
         "winnerTo": null,

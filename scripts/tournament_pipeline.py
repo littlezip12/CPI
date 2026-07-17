@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared CPI tournament ingestion and normalization helpers (release 7.45.1)."""
+"""Shared CPI tournament ingestion and normalization helpers (release 7.49.0)."""
 from __future__ import annotations
 
 import csv
@@ -118,6 +118,17 @@ PLACEHOLDER_RE = re.compile(r"^(?:TBD|TBA|BYE|W|L|-|N/?A)$", re.I)
 # real team name. The reference is preserved as metadata while only the team
 # portion is sent through canonical identity resolution.
 RESOLVED_PREFIXES = [
+    # Historical result tables commonly prefix a resolved team with its pool
+    # slot (A1-, H3-) or an advancement reference (W#Cross1-, L G#07-).
+    # Preserve that source reference while resolving only the team text.
+    re.compile(
+        r"^(?P<ref>[A-Z]{1,4}\d{1,3})\s*[-:]\s*(?P<team>.+)$",
+        re.I,
+    ),
+    re.compile(
+        r"^(?P<ref>[WL]\s*(?:G\s*)?#?\s*[A-Z0-9/]+(?:\([^)]*\))?)\s*[-:]\s*(?P<team>.+)$",
+        re.I,
+    ),
     re.compile(
         r"^\(\s*(?P<ref>[WL]\s*#?\s*[A-Z0-9/]+(?:\([^)]*\))?|\d+(?:st|nd|rd|th)\s*[A-Z0-9_]*|[A-Z]{1,4}\d*\s*\([^)]*\))\s*\)\s*[-:]\s*(?P<team>.+)$",
         re.I,
@@ -223,6 +234,13 @@ def detect_header(row: list[str]) -> dict[str, int] | None:
     if mapping["dark_score"] < 0:
         mapping["dark_score"] = next((i for i, value in enumerate(headers) if i > dark and (winner_to < 0 or i < winner_to) and value in {"s", "score", "result"}), -1)
     mapping["combined_score"] = next((i for i, value in enumerate(headers) if value in {"final score", "score/result", "result score"}), -1)
+    # Completed-event result tables often leave the score headers blank while
+    # retaining a stable WHITE, score, DARK, score positional layout. Infer
+    # those columns only when they sit directly beside the team columns.
+    if mapping["white_score"] < 0 and white + 1 < dark:
+        mapping["white_score"] = white + 1
+    if mapping["dark_score"] < 0 and dark + 1 < len(headers):
+        mapping["dark_score"] = dark + 1
     if all(mapping[name] < 0 for name in ("date", "time", "game_number", "game_id", "stage", "venue", "white_score", "dark_score", "combined_score")):
         return None
     return mapping
@@ -387,6 +405,30 @@ def participant_issue(participant: dict[str, Any], side: str, row_number: int) -
     return None
 
 
+PLACEMENT_RE = re.compile(r"^(?P<number>\d+)(?:st|nd|rd|th)$", re.I)
+
+
+def parse_placement_row(row: list[str], scope: dict[str, str], resolver: IdentityResolver, row_number: int) -> dict[str, Any] | None:
+    """Extract explicit footer placements such as `1st, ARROYO GRANDE`."""
+    for index, cell in enumerate(row):
+        match = PLACEMENT_RE.fullmatch(normalize_space(cell))
+        if not match:
+            continue
+        team_raw = next((normalize_space(value) for value in row[index + 1:] if normalize_space(value)), "")
+        if not team_raw:
+            return None
+        participant = parse_participant(team_raw, scope, resolver)
+        if participant.get("kind") != "team":
+            return None
+        return {
+            "place": int(match.group("number")),
+            "label": normalize_space(cell).lower(),
+            "participant": participant,
+            "sourceRow": row_number,
+        }
+    return None
+
+
 def stable_game_id(event_id: str, division_id: str, source_game_id: str, game_number: Any, row: dict[str, Any]) -> str:
     preferred = normalize_space(source_game_id) or normalize_space(game_number)
     if preferred:
@@ -410,6 +452,7 @@ def normalize_csv(
     rows = parse_csv_text(text)
     mapping: dict[str, int] | None = None
     games: list[dict[str, Any]] = []
+    placements: list[dict[str, Any]] = []
     issues: list[dict[str, Any]] = []
     seen_ids: set[str] = set()
     scope = {
@@ -433,6 +476,11 @@ def normalize_csv(
             return normalize_space(row[idx]) if idx is not None and idx >= 0 and idx < len(row) else ""
 
         raw_white, raw_dark = get("white"), get("dark")
+        if division.get("parser") == "results_table_v1" and not raw_white and not raw_dark:
+            placement = parse_placement_row(row, scope, resolver, row_number)
+            if placement and not any(item.get("place") == placement.get("place") for item in placements):
+                placements.append(placement)
+            continue
         if not raw_white and not raw_dark:
             continue
         date_label, time_label = get("date"), get("time")
@@ -574,6 +622,7 @@ def normalize_csv(
             "blockers": len(blockers),
             "reviewItems": len(reviews),
         },
+        "placements": placements,
         "games": games,
     }
     qa = {

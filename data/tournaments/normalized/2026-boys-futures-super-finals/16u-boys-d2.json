@@ -24,25 +24,25 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=56289074#gid=56289074",
     "fetchedAt": "2026-07-17T18:31:04Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "873265ac469146d66bdd291a06ca7e2814cad905fed34e20eb2134f0f0639a2f",
-    "rowCount": 104,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/gviz/tq?tqx=out:csv&gid=56289074"
+    "rowCount": 104
   },
   "counts": {
     "games": 60,
-    "finalGames": 0,
-    "scheduledGames": 60,
+    "finalGames": 60,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 120,
-    "resolvedTeamParticipants": 24,
-    "unresolvedTeamParticipants": 96,
+    "resolvedTeamParticipants": 40,
+    "unresolvedTeamParticipants": 80,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 96
+    "reviewItems": 80
   },
+  "placements": [],
   "games": [
     {
       "id": "game-2026-boys-futures-super-finals-16u-boys-d2-16bd201",
@@ -62,46 +62,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-CT PREMIER",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-CT PREMIER",
-          "participantId": "tournament-team-2026-16u-boys-a1-ct-premier",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "teamId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3-SAN CLEMENTE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-SAN CLEMENTE",
-          "participantId": "tournament-team-2026-16u-boys-a3-san-clemente",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A3",
+          "displayName": "San Clemente",
+          "participantId": "team-2026-16u-boys-san-clemente-16u-boys",
+          "teamId": "team-2026-16u-boys-san-clemente-16u-boys",
+          "clubId": "club-san-clemente",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 15,
+        "whiteRaw": "9",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "winnerName": "San Clemente",
+        "loserParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "loserName": "CT Premier"
       },
       "advancement": {
         "winnerTo": null,
@@ -126,46 +130,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1-PEGASUS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1-PEGASUS",
-          "participantId": "tournament-team-2026-16u-boys-d1-pegasus",
+          "sourceReference": "D1",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-16u-boys-pegasus",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-pegasus",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D3-CVU",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3-CVU",
-          "participantId": "tournament-team-2026-16u-boys-d3-cvu",
+          "sourceReference": "D3",
+          "displayName": "CVU",
+          "participantId": "tournament-team-2026-16u-boys-cvu",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-cvu",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-pegasus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PEGASUS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cvu",
+        "loserTeamId": null,
+        "loserName": "CVU"
       },
       "advancement": {
         "winnerTo": null,
@@ -190,16 +198,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1-CCU B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E1-CCU B",
-          "participantId": "tournament-team-2026-16u-boys-e1-ccu-b",
+          "sourceReference": "E1",
+          "displayName": "CCU B",
+          "participantId": "tournament-team-2026-16u-boys-ccu-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -210,26 +218,30 @@
           "raw": "E3-CENTRAL COAST",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E3-CENTRAL COAST",
-          "participantId": "tournament-team-2026-16u-boys-e3-central-coast",
+          "sourceReference": "E3",
+          "displayName": "CENTRAL COAST",
+          "participantId": "tournament-team-2026-16u-boys-central-coast",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-central-coast",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 7,
+        "whiteRaw": "6",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-central-coast",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CENTRAL COAST",
+        "loserParticipantId": "tournament-team-2026-16u-boys-ccu-b",
+        "loserTeamId": null,
+        "loserName": "CCU B"
       },
       "advancement": {
         "winnerTo": null,
@@ -254,16 +266,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H1-OVAC A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H1-OVAC A",
-          "participantId": "tournament-team-2026-16u-boys-h1-ovac-a",
+          "sourceReference": "H1",
+          "displayName": "OVAC A",
+          "participantId": "tournament-team-2026-16u-boys-ovac-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -274,26 +286,30 @@
           "raw": "H3-SAN MATEO",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H3-SAN MATEO",
-          "participantId": "tournament-team-2026-16u-boys-h3-san-mateo",
+          "sourceReference": "H3",
+          "displayName": "SAN MATEO",
+          "participantId": "tournament-team-2026-16u-boys-san-mateo",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-mateo",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 2,
+        "whiteRaw": "17",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-ovac-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "OVAC A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-mateo",
+        "loserTeamId": null,
+        "loserName": "SAN MATEO"
       },
       "advancement": {
         "winnerTo": null,
@@ -318,16 +334,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2-DAVIS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-DAVIS A",
-          "participantId": "tournament-team-2026-16u-boys-a2-davis-a",
+          "sourceReference": "A2",
+          "displayName": "DAVIS A",
+          "participantId": "tournament-team-2026-16u-boys-davis-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -338,26 +354,30 @@
           "raw": "A3-SAN CLEMENTE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-SAN CLEMENTE",
-          "participantId": "tournament-team-2026-16u-boys-a3-san-clemente",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A3",
+          "displayName": "San Clemente",
+          "participantId": "team-2026-16u-boys-san-clemente-16u-boys",
+          "teamId": "team-2026-16u-boys-san-clemente-16u-boys",
+          "clubId": "club-san-clemente",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 16,
+        "whiteRaw": "9",
+        "darkRaw": "16"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "winnerName": "San Clemente",
+        "loserParticipantId": "tournament-team-2026-16u-boys-davis-a",
+        "loserTeamId": null,
+        "loserName": "DAVIS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -382,16 +402,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D2-DIABLO ALLIANCE A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2-DIABLO ALLIANCE A",
-          "participantId": "tournament-team-2026-16u-boys-d2-diablo-alliance-a",
+          "sourceReference": "D2",
+          "displayName": "DIABLO ALLIANCE A",
+          "participantId": "tournament-team-2026-16u-boys-diablo-alliance-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -402,26 +422,30 @@
           "raw": "D3-CVU",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3-CVU",
-          "participantId": "tournament-team-2026-16u-boys-d3-cvu",
+          "sourceReference": "D3",
+          "displayName": "CVU",
+          "participantId": "tournament-team-2026-16u-boys-cvu",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-cvu",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 10,
+        "whiteRaw": "17",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-diablo-alliance-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DIABLO ALLIANCE A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cvu",
+        "loserTeamId": null,
+        "loserName": "CVU"
       },
       "advancement": {
         "winnerTo": null,
@@ -446,16 +470,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E2-SOUTH COAST RED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E2-SOUTH COAST RED",
-          "participantId": "tournament-team-2026-16u-boys-e2-south-coast-red",
+          "sourceReference": "E2",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2026-16u-boys-south-coast-red",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -466,26 +490,30 @@
           "raw": "E3-CENTRAL COAST",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E3-CENTRAL COAST",
-          "participantId": "tournament-team-2026-16u-boys-e3-central-coast",
+          "sourceReference": "E3",
+          "displayName": "CENTRAL COAST",
+          "participantId": "tournament-team-2026-16u-boys-central-coast",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-central-coast",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-central-coast",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CENTRAL COAST",
+        "loserParticipantId": "tournament-team-2026-16u-boys-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
       },
       "advancement": {
         "winnerTo": null,
@@ -510,16 +538,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H2-SAN JOSE EXPRESS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H2-SAN JOSE EXPRESS A",
-          "participantId": "tournament-team-2026-16u-boys-h2-san-jose-express-a",
+          "sourceReference": "H2",
+          "displayName": "SAN JOSE EXPRESS A",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -530,26 +558,30 @@
           "raw": "H3-SAN MATEO",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H3-SAN MATEO",
-          "participantId": "tournament-team-2026-16u-boys-h3-san-mateo",
+          "sourceReference": "H3",
+          "displayName": "SAN MATEO",
+          "participantId": "tournament-team-2026-16u-boys-san-mateo",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-mateo",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-mateo",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN MATEO",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-jose-express-a",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -574,29 +606,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-CT PREMIER",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-CT PREMIER",
-          "participantId": "tournament-team-2026-16u-boys-a1-ct-premier",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "teamId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A2-DAVIS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-DAVIS A",
-          "participantId": "tournament-team-2026-16u-boys-a2-davis-a",
+          "sourceReference": "A2",
+          "displayName": "DAVIS A",
+          "participantId": "tournament-team-2026-16u-boys-davis-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -605,15 +637,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 19,
+        "dark": 17,
+        "whiteRaw": "19",
+        "darkRaw": "17"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerName": "CT Premier",
+        "loserParticipantId": "tournament-team-2026-16u-boys-davis-a",
+        "loserTeamId": null,
+        "loserName": "DAVIS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -638,29 +674,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1-PEGASUS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1-PEGASUS",
-          "participantId": "tournament-team-2026-16u-boys-d1-pegasus",
+          "sourceReference": "D1",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-16u-boys-pegasus",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-pegasus",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D2-DIABLO ALLIANCE A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2-DIABLO ALLIANCE A",
-          "participantId": "tournament-team-2026-16u-boys-d2-diablo-alliance-a",
+          "sourceReference": "D2",
+          "displayName": "DIABLO ALLIANCE A",
+          "participantId": "tournament-team-2026-16u-boys-diablo-alliance-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -669,15 +705,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 8,
+        "whiteRaw": "4",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-diablo-alliance-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DIABLO ALLIANCE A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-pegasus",
+        "loserTeamId": null,
+        "loserName": "PEGASUS"
       },
       "advancement": {
         "winnerTo": null,
@@ -702,16 +742,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1-CCU B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E1-CCU B",
-          "participantId": "tournament-team-2026-16u-boys-e1-ccu-b",
+          "sourceReference": "E1",
+          "displayName": "CCU B",
+          "participantId": "tournament-team-2026-16u-boys-ccu-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -722,9 +762,9 @@
           "raw": "E2-SOUTH COAST RED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E2-SOUTH COAST RED",
-          "participantId": "tournament-team-2026-16u-boys-e2-south-coast-red",
+          "sourceReference": "E2",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2026-16u-boys-south-coast-red",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -733,15 +773,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 15,
+        "whiteRaw": "5",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-red",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SOUTH COAST RED",
+        "loserParticipantId": "tournament-team-2026-16u-boys-ccu-b",
+        "loserTeamId": null,
+        "loserName": "CCU B"
       },
       "advancement": {
         "winnerTo": null,
@@ -766,16 +810,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H1-OVAC A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H1-OVAC A",
-          "participantId": "tournament-team-2026-16u-boys-h1-ovac-a",
+          "sourceReference": "H1",
+          "displayName": "OVAC A",
+          "participantId": "tournament-team-2026-16u-boys-ovac-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -786,9 +830,9 @@
           "raw": "H2-SAN JOSE EXPRESS A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H2-SAN JOSE EXPRESS A",
-          "participantId": "tournament-team-2026-16u-boys-h2-san-jose-express-a",
+          "sourceReference": "H2",
+          "displayName": "SAN JOSE EXPRESS A",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -797,15 +841,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 9,
+        "whiteRaw": "14",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-ovac-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "OVAC A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-jose-express-a",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -830,46 +878,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-NORTHWEST",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-NORTHWEST",
-          "participantId": "tournament-team-2026-16u-boys-b1-northwest",
+          "sourceReference": "B1",
+          "displayName": "NORTHWEST",
+          "participantId": "tournament-team-2026-16u-boys-northwest",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-northwest",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "B3-CAL REPUBLIC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-CAL REPUBLIC",
-          "participantId": "tournament-team-2026-16u-boys-b3-cal-republic",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B3",
+          "displayName": "Cal Republic",
+          "participantId": "team-2026-16u-boys-cal-republic-16u-boys",
+          "teamId": "team-2026-16u-boys-cal-republic-16u-boys",
+          "clubId": "club-cal-rep",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 4,
+        "whiteRaw": "9",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-northwest",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "loserName": "Cal Republic"
       },
       "advancement": {
         "winnerTo": null,
@@ -894,46 +946,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1-AETOS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1-AETOS",
-          "participantId": "tournament-team-2026-16u-boys-c1-aetos",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C1",
+          "displayName": "Aetos",
+          "participantId": "team-2026-16u-boys-aetos-16u-boys",
+          "teamId": "team-2026-16u-boys-aetos-16u-boys",
+          "clubId": "club-aetos",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C3-CLOVIS RED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3-CLOVIS RED",
-          "participantId": "tournament-team-2026-16u-boys-c3-clovis-red",
+          "sourceReference": "C3",
+          "displayName": "CLOVIS RED",
+          "participantId": "tournament-team-2026-16u-boys-clovis-red",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-clovis-red",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-aetos-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-aetos-16u-boys",
+        "winnerName": "Aetos",
+        "loserParticipantId": "tournament-team-2026-16u-boys-clovis-red",
+        "loserTeamId": null,
+        "loserName": "CLOVIS RED"
       },
       "advancement": {
         "winnerTo": null,
@@ -958,29 +1014,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1-SHAQ",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F1-SHAQ",
-          "participantId": "tournament-team-2026-16u-boys-f1-shaq",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F1",
+          "displayName": "SHAQ",
+          "participantId": "team-2026-16u-boys-shaq-16u-boys",
+          "teamId": "team-2026-16u-boys-shaq-16u-boys",
+          "clubId": "club-shaq",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F3-TROJAN GOLD",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F3-TROJAN GOLD",
-          "participantId": "tournament-team-2026-16u-boys-f3-trojan-gold",
+          "sourceReference": "F3",
+          "displayName": "TROJAN GOLD",
+          "participantId": "tournament-team-2026-16u-boys-trojan-gold",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -989,15 +1045,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 5,
+        "whiteRaw": "14",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-shaq-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-shaq-16u-boys",
+        "winnerName": "SHAQ",
+        "loserParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
+        "loserTeamId": null,
+        "loserName": "TROJAN GOLD"
       },
       "advancement": {
         "winnerTo": null,
@@ -1022,29 +1082,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1-NORCAL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G1-NORCAL",
-          "participantId": "tournament-team-2026-16u-boys-g1-norcal",
+          "sourceReference": "G1",
+          "displayName": "NORCAL",
+          "participantId": "tournament-team-2026-16u-boys-norcal",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-norcal",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "G3-FOOTHILL CLUB A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G3-FOOTHILL CLUB A",
-          "participantId": "tournament-team-2026-16u-boys-g3-foothill-club-a",
+          "sourceReference": "G3",
+          "displayName": "FOOTHILL CLUB A",
+          "participantId": "tournament-team-2026-16u-boys-foothill-club-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1053,15 +1113,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 10,
+        "whiteRaw": "14",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-norcal",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORCAL",
+        "loserParticipantId": "tournament-team-2026-16u-boys-foothill-club-a",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1086,16 +1150,16 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2-NEWPORT BEACH B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-NEWPORT BEACH B",
-          "participantId": "tournament-team-2026-16u-boys-b2-newport-beach-b",
+          "sourceReference": "B2",
+          "displayName": "NEWPORT BEACH B",
+          "participantId": "tournament-team-2026-16u-boys-newport-beach-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1106,26 +1170,30 @@
           "raw": "B3-CAL REPUBLIC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-CAL REPUBLIC",
-          "participantId": "tournament-team-2026-16u-boys-b3-cal-republic",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B3",
+          "displayName": "Cal Republic",
+          "participantId": "team-2026-16u-boys-cal-republic-16u-boys",
+          "teamId": "team-2026-16u-boys-cal-republic-16u-boys",
+          "clubId": "club-cal-rep",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 5,
+        "whiteRaw": "8",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-newport-beach-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH B",
+        "loserParticipantId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "loserName": "Cal Republic"
       },
       "advancement": {
         "winnerTo": null,
@@ -1150,46 +1218,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C2-STANFORD B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2-STANFORD B",
-          "participantId": "tournament-team-2026-16u-boys-c2-stanford-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C2",
+          "displayName": "Stanford B",
+          "participantId": "team-2026-16u-boys-stanford-b-16u-boys",
+          "teamId": "team-2026-16u-boys-stanford-b-16u-boys",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C3-CLOVIS RED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3-CLOVIS RED",
-          "participantId": "tournament-team-2026-16u-boys-c3-clovis-red",
+          "sourceReference": "C3",
+          "displayName": "CLOVIS RED",
+          "participantId": "tournament-team-2026-16u-boys-clovis-red",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-clovis-red",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 7,
+        "whiteRaw": "13",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "winnerName": "Stanford B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-clovis-red",
+        "loserTeamId": null,
+        "loserName": "CLOVIS RED"
       },
       "advancement": {
         "winnerTo": null,
@@ -1214,29 +1286,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F2-ROSE BOWL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F2-ROSE BOWL",
-          "participantId": "tournament-team-2026-16u-boys-f2-rose-bowl",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F2",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-16u-boys-rose-bowl-16u-boys",
+          "teamId": "team-2026-16u-boys-rose-bowl-16u-boys",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F3-TROJAN GOLD",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F3-TROJAN GOLD",
-          "participantId": "tournament-team-2026-16u-boys-f3-trojan-gold",
+          "sourceReference": "F3",
+          "displayName": "TROJAN GOLD",
+          "participantId": "tournament-team-2026-16u-boys-trojan-gold",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1245,15 +1317,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 5,
+        "whiteRaw": "14",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
+        "loserTeamId": null,
+        "loserName": "TROJAN GOLD"
       },
       "advancement": {
         "winnerTo": null,
@@ -1278,29 +1354,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G2-COMMERCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G2-COMMERCE",
-          "participantId": "tournament-team-2026-16u-boys-g2-commerce",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G2",
+          "displayName": "Commerce",
+          "participantId": "team-2026-16u-boys-commerce-16u-boys",
+          "teamId": "team-2026-16u-boys-commerce-16u-boys",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G3-FOOTHILL CLUB A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G3-FOOTHILL CLUB A",
-          "participantId": "tournament-team-2026-16u-boys-g3-foothill-club-a",
+          "sourceReference": "G3",
+          "displayName": "FOOTHILL CLUB A",
+          "participantId": "tournament-team-2026-16u-boys-foothill-club-a",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1309,15 +1385,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 6,
+        "whiteRaw": "11",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-commerce-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-commerce-16u-boys",
+        "winnerName": "Commerce",
+        "loserParticipantId": "tournament-team-2026-16u-boys-foothill-club-a",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1342,29 +1422,29 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-NORTHWEST",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-NORTHWEST",
-          "participantId": "tournament-team-2026-16u-boys-b1-northwest",
+          "sourceReference": "B1",
+          "displayName": "NORTHWEST",
+          "participantId": "tournament-team-2026-16u-boys-northwest",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-northwest",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "B2-NEWPORT BEACH B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-NEWPORT BEACH B",
-          "participantId": "tournament-team-2026-16u-boys-b2-newport-beach-b",
+          "sourceReference": "B2",
+          "displayName": "NEWPORT BEACH B",
+          "participantId": "tournament-team-2026-16u-boys-newport-beach-b",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1373,15 +1453,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 4,
+        "whiteRaw": "13",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-northwest",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "tournament-team-2026-16u-boys-newport-beach-b",
+        "loserTeamId": null,
+        "loserName": "NEWPORT BEACH B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1406,46 +1490,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1-AETOS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1-AETOS",
-          "participantId": "tournament-team-2026-16u-boys-c1-aetos",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C1",
+          "displayName": "Aetos",
+          "participantId": "team-2026-16u-boys-aetos-16u-boys",
+          "teamId": "team-2026-16u-boys-aetos-16u-boys",
+          "clubId": "club-aetos",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C2-STANFORD B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2-STANFORD B",
-          "participantId": "tournament-team-2026-16u-boys-c2-stanford-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "C2",
+          "displayName": "Stanford B",
+          "participantId": "team-2026-16u-boys-stanford-b-16u-boys",
+          "teamId": "team-2026-16u-boys-stanford-b-16u-boys",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 10,
+        "whiteRaw": "12",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-aetos-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-aetos-16u-boys",
+        "winnerName": "Aetos",
+        "loserParticipantId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "loserName": "Stanford B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1470,46 +1558,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1-SHAQ",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F1-SHAQ",
-          "participantId": "tournament-team-2026-16u-boys-f1-shaq",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F1",
+          "displayName": "SHAQ",
+          "participantId": "team-2026-16u-boys-shaq-16u-boys",
+          "teamId": "team-2026-16u-boys-shaq-16u-boys",
+          "clubId": "club-shaq",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F2-ROSE BOWL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F2-ROSE BOWL",
-          "participantId": "tournament-team-2026-16u-boys-f2-rose-bowl",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F2",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-16u-boys-rose-bowl-16u-boys",
+          "teamId": "team-2026-16u-boys-rose-bowl-16u-boys",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "team-2026-16u-boys-shaq-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-shaq-16u-boys",
+        "loserName": "SHAQ"
       },
       "advancement": {
         "winnerTo": null,
@@ -1534,46 +1626,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1-NORCAL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G1-NORCAL",
-          "participantId": "tournament-team-2026-16u-boys-g1-norcal",
+          "sourceReference": "G1",
+          "displayName": "NORCAL",
+          "participantId": "tournament-team-2026-16u-boys-norcal",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-norcal",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "G2-COMMERCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G2-COMMERCE",
-          "participantId": "tournament-team-2026-16u-boys-g2-commerce",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G2",
+          "displayName": "Commerce",
+          "participantId": "team-2026-16u-boys-commerce-16u-boys",
+          "teamId": "team-2026-16u-boys-commerce-16u-boys",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 11,
+        "whiteRaw": "14",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-norcal",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORCAL",
+        "loserParticipantId": "team-2026-16u-boys-commerce-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-commerce-16u-boys",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -1598,8 +1694,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J4(1stD)-DIABLO ALLIANCE A",
@@ -1629,15 +1725,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 9,
+        "whiteRaw": "11",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-diablo-alliance-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DIABLO ALLIANCE A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-central-coast",
+        "loserTeamId": null,
+        "loserName": "CENTRAL COAST"
       },
       "advancement": {
         "winnerTo": null,
@@ -1662,8 +1762,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J1(1stA)-SAN CLEMENTE",
@@ -1693,15 +1793,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 14,
+        "whiteRaw": "11",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-ovac-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "OVAC A",
+        "loserParticipantId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "loserName": "San Clemente"
       },
       "advancement": {
         "winnerTo": null,
@@ -1726,8 +1830,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J2(1stB)-NORTHWEST",
@@ -1757,15 +1861,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 10,
+        "whiteRaw": "11",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-northwest",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "tournament-team-2026-16u-boys-norcal",
+        "loserTeamId": null,
+        "loserName": "NORCAL"
       },
       "advancement": {
         "winnerTo": null,
@@ -1790,8 +1898,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J3(1stC)-AETOS",
@@ -1821,15 +1929,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 19,
+        "whiteRaw": "11",
+        "darkRaw": "19"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "team-2026-16u-boys-aetos-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-aetos-16u-boys",
+        "loserName": "Aetos"
       },
       "advancement": {
         "winnerTo": null,
@@ -1854,8 +1966,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M1(3rdA)-DAVIS",
@@ -1885,15 +1997,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 6,
+        "whiteRaw": "17",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DAVIS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-jose-express-a",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1918,8 +2034,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M4(3rdD)-CVU",
@@ -1949,15 +2065,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 21,
+        "whiteRaw": "12",
+        "darkRaw": "21"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-ccu-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CCU B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cvu",
+        "loserTeamId": null,
+        "loserName": "CVU"
       },
       "advancement": {
         "winnerTo": null,
@@ -1982,8 +2102,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#J4/J5-CENTRAL COAST",
@@ -2013,15 +2133,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9.4,
+        "dark": 9.5,
+        "whiteRaw": "9.4",
+        "darkRaw": "9.5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "winnerName": "San Clemente",
+        "loserParticipantId": "tournament-team-2026-16u-boys-central-coast",
+        "loserTeamId": null,
+        "loserName": "CENTRAL COAST"
       },
       "advancement": {
         "winnerTo": null,
@@ -2046,8 +2170,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#J1/J8-OVAC A",
@@ -2077,15 +2201,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9.3,
+        "dark": 9.1,
+        "whiteRaw": "9.3",
+        "darkRaw": "9.1"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-ovac-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "OVAC A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-diablo-alliance-a",
+        "loserTeamId": null,
+        "loserName": "DIABLO ALLIANCE A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2110,8 +2238,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#J3/J6-AETOS",
@@ -2141,15 +2269,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 13,
+        "whiteRaw": "9",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-norcal",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORCAL",
+        "loserParticipantId": "team-2026-16u-boys-aetos-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-aetos-16u-boys",
+        "loserName": "Aetos"
       },
       "advancement": {
         "winnerTo": null,
@@ -2174,8 +2306,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#J2/J7-NORTHWEST",
@@ -2205,15 +2337,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 4,
+        "whiteRaw": "6",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-northwest",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "loserName": "Rose Bowl"
       },
       "advancement": {
         "winnerTo": null,
@@ -2238,8 +2374,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#M4/M5-CVU",
@@ -2269,15 +2405,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cvu",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CVU",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-jose-express-a",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2302,8 +2442,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CHAPMAN UNIVERSITY",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#M1/M8-DAVIS",
@@ -2333,15 +2473,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 19,
+        "whiteRaw": "4",
+        "darkRaw": "19"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-ccu-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CCU B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-davis",
+        "loserTeamId": null,
+        "loserName": "DAVIS"
       },
       "advancement": {
         "winnerTo": null,
@@ -2366,8 +2510,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K5(2ndE)-SOUTH COAST RED",
@@ -2397,15 +2541,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 6,
+        "whiteRaw": "5",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-pegasus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PEGASUS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
       },
       "advancement": {
         "winnerTo": null,
@@ -2430,8 +2578,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K8(2ndH)-SAN MATEO",
@@ -2461,15 +2609,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 14,
+        "whiteRaw": "8",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerName": "CT Premier",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-mateo",
+        "loserTeamId": null,
+        "loserName": "SAN MATEO"
       },
       "advancement": {
         "winnerTo": null,
@@ -2494,8 +2646,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K6(2ndF)-SHAQ",
@@ -2525,15 +2677,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8.2,
+        "dark": 8.3,
+        "whiteRaw": "8.2",
+        "darkRaw": "8.3"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "winnerName": "Stanford B",
+        "loserParticipantId": "team-2026-16u-boys-shaq-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-shaq-16u-boys",
+        "loserName": "SHAQ"
       },
       "advancement": {
         "winnerTo": null,
@@ -2558,8 +2714,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K7(2ndG)-COMMERCE",
@@ -2589,15 +2745,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 12,
+        "whiteRaw": "13",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-commerce-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-commerce-16u-boys",
+        "winnerName": "Commerce",
+        "loserParticipantId": "tournament-team-2026-16u-boys-newport-beach-b",
+        "loserTeamId": null,
+        "loserName": "NEWPORT BEACH B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2622,8 +2782,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M3(3rdC)-CLOVIS RED",
@@ -2653,15 +2813,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 12,
+        "whiteRaw": "5",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TROJAN GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-clovis-red",
+        "loserTeamId": null,
+        "loserName": "CLOVIS RED"
       },
       "advancement": {
         "winnerTo": null,
@@ -2686,8 +2850,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M2(3rdB)-CAL REPUBLIC",
@@ -2717,15 +2881,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7.4,
+        "dark": 7.3,
+        "whiteRaw": "7.4",
+        "darkRaw": "7.3"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "winnerName": "Cal Republic",
+        "loserParticipantId": "tournament-team-2026-16u-boys-foothill-club-a",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2750,8 +2918,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#K5/K4-SOUTH COAST RED",
@@ -2781,15 +2949,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 2,
+        "whiteRaw": "16",
+        "darkRaw": "2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-red",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SOUTH COAST RED",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-mateo",
+        "loserTeamId": null,
+        "loserName": "SAN MATEO"
       },
       "advancement": {
         "winnerTo": null,
@@ -2814,8 +2986,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#K8/K1-CT PREMIER",
@@ -2845,15 +3017,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerName": "CT Premier",
+        "loserParticipantId": "tournament-team-2026-16u-boys-pegasus",
+        "loserTeamId": null,
+        "loserName": "PEGASUS"
       },
       "advancement": {
         "winnerTo": null,
@@ -2878,8 +3054,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#K6/K3-SHAQ",
@@ -2909,15 +3085,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 12,
+        "whiteRaw": "9",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-newport-beach-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEWPORT BEACH B",
+        "loserParticipantId": "team-2026-16u-boys-shaq-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-shaq-16u-boys",
+        "loserName": "SHAQ"
       },
       "advancement": {
         "winnerTo": null,
@@ -2942,8 +3122,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#K7/K2-COMMERCE",
@@ -2973,15 +3153,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 10,
+        "whiteRaw": "11",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-commerce-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-commerce-16u-boys",
+        "winnerName": "Commerce",
+        "loserParticipantId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "loserName": "Stanford B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3006,8 +3190,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#M3/M6-CLOVIS RED",
@@ -3037,15 +3221,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 15,
+        "whiteRaw": "10",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-foothill-club-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "FOOTHILL CLUB A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-clovis-red",
+        "loserTeamId": null,
+        "loserName": "CLOVIS RED"
       },
       "advancement": {
         "winnerTo": null,
@@ -3070,8 +3258,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#M2/M7-CAL REPUBLIC",
@@ -3101,15 +3289,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11.3,
+        "dark": 11.1,
+        "whiteRaw": "11.3",
+        "darkRaw": "11.1"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "winnerName": "Cal Republic",
+        "loserParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
+        "loserTeamId": null,
+        "loserName": "TROJAN GOLD"
       },
       "advancement": {
         "winnerTo": null,
@@ -3134,8 +3326,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CORONA DEL MAR HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#43-ROSE BOWL",
@@ -3165,15 +3357,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-diablo-alliance-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DIABLO ALLIANCE A",
+        "loserParticipantId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-rose-bowl-16u-boys",
+        "loserName": "Rose Bowl"
       },
       "advancement": {
         "winnerTo": null,
@@ -3198,8 +3394,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CORONA DEL MAR HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#39-OVAC A",
@@ -3229,15 +3425,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 7,
+        "whiteRaw": "6",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-northwest",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "tournament-team-2026-16u-boys-ovac-a",
+        "loserTeamId": null,
+        "loserName": "OVAC A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3262,8 +3462,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#44-STANFORD B",
@@ -3293,15 +3493,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 10,
+        "whiteRaw": "11",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-stanford-b-16u-boys",
+        "winnerName": "Stanford B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-pegasus",
+        "loserTeamId": null,
+        "loserName": "PEGASUS"
       },
       "advancement": {
         "winnerTo": null,
@@ -3326,8 +3530,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#40-CT PREMIER",
@@ -3357,15 +3561,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 16,
+        "whiteRaw": "14",
+        "darkRaw": "16"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-commerce-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-commerce-16u-boys",
+        "winnerName": "Commerce",
+        "loserParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "loserName": "CT Premier"
       },
       "advancement": {
         "winnerTo": null,
@@ -3390,8 +3598,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#41-AETOS",
@@ -3421,15 +3629,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 11,
+        "whiteRaw": "12",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-aetos-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-aetos-16u-boys",
+        "winnerName": "Aetos",
+        "loserParticipantId": "tournament-team-2026-16u-boys-central-coast",
+        "loserTeamId": null,
+        "loserName": "CENTRAL COAST"
       },
       "advancement": {
         "winnerTo": null,
@@ -3454,8 +3666,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "CAPISTRANO VALLEY HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#37-SAN CLEMENTE",
@@ -3485,15 +3697,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 10,
+        "whiteRaw": "12",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-san-clemente-16u-boys",
+        "winnerName": "San Clemente",
+        "loserParticipantId": "tournament-team-2026-16u-boys-norcal",
+        "loserTeamId": null,
+        "loserName": "NORCAL"
       },
       "advancement": {
         "winnerTo": null,
@@ -3518,8 +3734,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN JUAN HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#46-CLOVIS RED",
@@ -3549,15 +3765,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 5,
+        "whiteRaw": "7",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-clovis-red",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CLOVIS RED",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-jose-express-a",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3582,8 +3802,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN JUAN HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#45-CVU",
@@ -3613,15 +3833,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 13,
+        "whiteRaw": "6",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-foothill-club-a",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "FOOTHILL CLUB A",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cvu",
+        "loserTeamId": null,
+        "loserName": "CVU"
       },
       "advancement": {
         "winnerTo": null,
@@ -3646,8 +3870,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN JUAN HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#48-TROJAN GOLD",
@@ -3677,15 +3901,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 14,
+        "whiteRaw": "10",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DAVIS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
+        "loserTeamId": null,
+        "loserName": "TROJAN GOLD"
       },
       "advancement": {
         "winnerTo": null,
@@ -3710,8 +3938,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN JUAN HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#47-CCU B",
@@ -3741,15 +3969,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 5,
+        "whiteRaw": "8",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-ccu-b",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "CCU B",
+        "loserParticipantId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-cal-republic-16u-boys",
+        "loserName": "Cal Republic"
       },
       "advancement": {
         "winnerTo": null,
@@ -3774,8 +4006,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN JUAN HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#42-SHAQ",
@@ -3805,15 +4037,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-shaq-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-shaq-16u-boys",
+        "winnerName": "SHAQ",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-mateo",
+        "loserTeamId": null,
+        "loserName": "SAN MATEO"
       },
       "advancement": {
         "winnerTo": null,
@@ -3838,8 +4074,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SAN JUAN HILLS HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#38-SOUTH COAST RED",
@@ -3869,15 +4105,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-red",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SOUTH COAST RED",
+        "loserParticipantId": "tournament-team-2026-16u-boys-newport-beach-b",
+        "loserTeamId": null,
+        "loserName": "NEWPORT BEACH B"
       },
       "advancement": {
         "winnerTo": null,

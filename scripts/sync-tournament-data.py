@@ -16,6 +16,7 @@ from pathlib import Path
 
 from tournament_pipeline import (
     ROOT,
+    RELEASE as PIPELINE_RELEASE,
     IdentityResolver,
     all_registry_divisions,
     canonicalize_source_text,
@@ -64,7 +65,7 @@ def source_urls(division: dict) -> list[str]:
 def fetch_url_text(url: str, timeout: int = 25) -> str:
     """Fetch one CSV candidate and reject transport-level false positives."""
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.44.3; +https://littlezip12.github.io/CPI/)",
+        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.49.0; +https://littlezip12.github.io/CPI/)",
         "Accept": "text/csv,text/plain,*/*",
         "Cache-Control": "no-cache",
     }
@@ -135,7 +136,7 @@ def sync_one(
     normalized_existing = load_json(normalized_path) if normalized_path.exists() else {}
     qa_existing = load_json(qa_path) if qa_path.exists() else {}
     previous_counts = normalized_existing.get("counts", {})
-    current_release = normalized_existing.get("release") == "7.45.1" and qa_existing.get("release") == "7.45.1"
+    current_release = normalized_existing.get("release") == PIPELINE_RELEASE and qa_existing.get("release") == PIPELINE_RELEASE
 
     text: str | None = None
     normalized: dict | None = None

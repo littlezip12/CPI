@@ -24,10 +24,9 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=471397786#gid=471397786",
     "fetchedAt": "2026-07-17T18:30:59Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "2b0c7e95218e64efba254101a272c3366d8ad04adadba73752b07db33a0f0bb1",
-    "rowCount": 34,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/export?format=csv&gid=471397786"
+    "rowCount": 34
   },
   "counts": {
     "games": 13,
@@ -36,13 +35,69 @@
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 26,
-    "resolvedTeamParticipants": 5,
-    "unresolvedTeamParticipants": 21,
+    "resolvedTeamParticipants": 21,
+    "unresolvedTeamParticipants": 5,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 21
+    "reviewItems": 5
   },
+  "placements": [
+    {
+      "place": 1,
+      "label": "1st",
+      "participant": {
+        "raw": "LB VIKING",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "LB Viking",
+        "participantId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "teamId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "clubId": "club-viking",
+        "rankingEligible": true,
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "sourceRow": 32
+    },
+    {
+      "place": 2,
+      "label": "2nd",
+      "participant": {
+        "raw": "OVAC",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "OVAC",
+        "participantId": "team-2026-16u-girls-ovac-16u-girls",
+        "teamId": "team-2026-16u-girls-ovac-16u-girls",
+        "clubId": "club-ovac",
+        "rankingEligible": true,
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "sourceRow": 33
+    },
+    {
+      "place": 3,
+      "label": "3rd",
+      "participant": {
+        "raw": "RANCHO TSUNAMI",
+        "kind": "team",
+        "seed": null,
+        "sourceReference": null,
+        "displayName": "RANCHO TSUNAMI",
+        "participantId": "tournament-team-2026-16u-girls-rancho-tsunami",
+        "teamId": null,
+        "clubId": "club-rancho-tsunami",
+        "rankingEligible": false,
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "sourceRow": 34
+    }
+  ],
   "games": [
     {
       "id": "game-2026-quiksilver-cup-16u-girls-championship-16g01",
@@ -69,27 +124,27 @@
           "raw": "A2-OVAC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-OVAC",
-          "participantId": "tournament-team-2026-16u-girls-a2-ovac",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "OVAC",
+          "participantId": "team-2026-16u-girls-ovac-16u-girls",
+          "teamId": "team-2026-16u-girls-ovac-16u-girls",
+          "clubId": "club-ovac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3- COMMERCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3- COMMERCE",
-          "participantId": "tournament-team-2026-16u-girls-a3-commerce",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A3",
+          "displayName": "Commerce",
+          "participantId": "team-2026-16u-girls-commerce-16u-girls",
+          "teamId": "team-2026-16u-girls-commerce-16u-girls",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -100,12 +155,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-a2-ovac",
-        "winnerTeamId": null,
-        "winnerName": "A2-OVAC",
-        "loserParticipantId": "tournament-team-2026-16u-girls-a3-commerce",
-        "loserTeamId": null,
-        "loserName": "A3- COMMERCE"
+        "winnerParticipantId": "team-2026-16u-girls-ovac-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-ovac-16u-girls",
+        "winnerName": "OVAC",
+        "loserParticipantId": "team-2026-16u-girls-commerce-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-commerce-16u-girls",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -137,27 +192,27 @@
           "raw": "B1- LEGACY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1- LEGACY",
-          "participantId": "tournament-team-2026-16u-girls-b1-legacy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B1",
+          "displayName": "Legacy",
+          "participantId": "team-2026-16u-girls-legacy-16u-girls",
+          "teamId": "team-2026-16u-girls-legacy-16u-girls",
+          "clubId": "club-legacy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B2-LB VIKING",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-LB VIKING",
-          "participantId": "tournament-team-2026-16u-girls-b2-lb-viking",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B2",
+          "displayName": "LB Viking",
+          "participantId": "team-2026-16u-girls-lb-viking-16u-girls",
+          "teamId": "team-2026-16u-girls-lb-viking-16u-girls",
+          "clubId": "club-viking",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -168,12 +223,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-b2-lb-viking",
-        "winnerTeamId": null,
-        "winnerName": "B2-LB VIKING",
-        "loserParticipantId": "tournament-team-2026-16u-girls-b1-legacy",
-        "loserTeamId": null,
-        "loserName": "B1- LEGACY"
+        "winnerParticipantId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "winnerName": "LB Viking",
+        "loserParticipantId": "team-2026-16u-girls-legacy-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-legacy-16u-girls",
+        "loserName": "Legacy"
       },
       "advancement": {
         "winnerTo": null,
@@ -205,27 +260,27 @@
           "raw": "A1- RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1- RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-16u-girls-a1-rancho-tsunami",
+          "sourceReference": "A1",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A3- COMMERCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3- COMMERCE",
-          "participantId": "tournament-team-2026-16u-girls-a3-commerce",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A3",
+          "displayName": "Commerce",
+          "participantId": "team-2026-16u-girls-commerce-16u-girls",
+          "teamId": "team-2026-16u-girls-commerce-16u-girls",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -236,12 +291,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-a1-rancho-tsunami",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-rancho-tsunami",
         "winnerTeamId": null,
-        "winnerName": "A1- RANCHO TSUNAMI",
-        "loserParticipantId": "tournament-team-2026-16u-girls-a3-commerce",
-        "loserTeamId": null,
-        "loserName": "A3- COMMERCE"
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "team-2026-16u-girls-commerce-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-commerce-16u-girls",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -273,27 +328,27 @@
           "raw": "B1- LEGACY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1- LEGACY",
-          "participantId": "tournament-team-2026-16u-girls-b1-legacy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B1",
+          "displayName": "Legacy",
+          "participantId": "team-2026-16u-girls-legacy-16u-girls",
+          "teamId": "team-2026-16u-girls-legacy-16u-girls",
+          "clubId": "club-legacy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3- MID VALLEY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3- MID VALLEY",
-          "participantId": "tournament-team-2026-16u-girls-b3-mid-valley",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B3",
+          "displayName": "Mid Valley",
+          "participantId": "team-2026-16u-girls-mid-valley-16u-girls",
+          "teamId": "team-2026-16u-girls-mid-valley-16u-girls",
+          "clubId": "club-mid-valley",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -304,12 +359,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-b1-legacy",
-        "winnerTeamId": null,
-        "winnerName": "B1- LEGACY",
-        "loserParticipantId": "tournament-team-2026-16u-girls-b3-mid-valley",
-        "loserTeamId": null,
-        "loserName": "B3- MID VALLEY"
+        "winnerParticipantId": "team-2026-16u-girls-legacy-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-legacy-16u-girls",
+        "winnerName": "Legacy",
+        "loserParticipantId": "team-2026-16u-girls-mid-valley-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-mid-valley-16u-girls",
+        "loserName": "Mid Valley"
       },
       "advancement": {
         "winnerTo": null,
@@ -341,27 +396,27 @@
           "raw": "A1- RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1- RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-16u-girls-a1-rancho-tsunami",
+          "sourceReference": "A1",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A2-OVAC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-OVAC",
-          "participantId": "tournament-team-2026-16u-girls-a2-ovac",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A2",
+          "displayName": "OVAC",
+          "participantId": "team-2026-16u-girls-ovac-16u-girls",
+          "teamId": "team-2026-16u-girls-ovac-16u-girls",
+          "clubId": "club-ovac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -372,12 +427,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-a2-ovac",
-        "winnerTeamId": null,
-        "winnerName": "A2-OVAC",
-        "loserParticipantId": "tournament-team-2026-16u-girls-a1-rancho-tsunami",
+        "winnerParticipantId": "team-2026-16u-girls-ovac-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-ovac-16u-girls",
+        "winnerName": "OVAC",
+        "loserParticipantId": "tournament-team-2026-16u-girls-rancho-tsunami",
         "loserTeamId": null,
-        "loserName": "A1- RANCHO TSUNAMI"
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -409,27 +464,27 @@
           "raw": "B2-LB VIKING",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-LB VIKING",
-          "participantId": "tournament-team-2026-16u-girls-b2-lb-viking",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B2",
+          "displayName": "LB Viking",
+          "participantId": "team-2026-16u-girls-lb-viking-16u-girls",
+          "teamId": "team-2026-16u-girls-lb-viking-16u-girls",
+          "clubId": "club-viking",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3- MID VALLEY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3- MID VALLEY",
-          "participantId": "tournament-team-2026-16u-girls-b3-mid-valley",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B3",
+          "displayName": "Mid Valley",
+          "participantId": "team-2026-16u-girls-mid-valley-16u-girls",
+          "teamId": "team-2026-16u-girls-mid-valley-16u-girls",
+          "clubId": "club-mid-valley",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -440,12 +495,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-b2-lb-viking",
-        "winnerTeamId": null,
-        "winnerName": "B2-LB VIKING",
-        "loserParticipantId": "tournament-team-2026-16u-girls-b3-mid-valley",
-        "loserTeamId": null,
-        "loserName": "B3- MID VALLEY"
+        "winnerParticipantId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "winnerName": "LB Viking",
+        "loserParticipantId": "team-2026-16u-girls-mid-valley-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-mid-valley-16u-girls",
+        "loserName": "Mid Valley"
       },
       "advancement": {
         "winnerTo": null,
@@ -626,14 +681,14 @@
           "raw": "W G#07- RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#07- RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-16u-girls-w-g-07-rancho-tsunami",
+          "sourceReference": "W G#07",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -647,9 +702,9 @@
         "winnerParticipantId": "team-2026-16u-girls-lb-viking-16u-girls",
         "winnerTeamId": "team-2026-16u-girls-lb-viking-16u-girls",
         "winnerName": "LB Viking",
-        "loserParticipantId": "tournament-team-2026-16u-girls-w-g-07-rancho-tsunami",
+        "loserParticipantId": "tournament-team-2026-16u-girls-rancho-tsunami",
         "loserTeamId": null,
-        "loserName": "W G#07- RANCHO TSUNAMI"
+        "loserName": "RANCHO TSUNAMI"
       },
       "advancement": {
         "winnerTo": null,
@@ -694,14 +749,14 @@
           "raw": "W G#08- LEGACY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#08- LEGACY",
-          "participantId": "tournament-team-2026-16u-girls-w-g-08-legacy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "W G#08",
+          "displayName": "Legacy",
+          "participantId": "team-2026-16u-girls-legacy-16u-girls",
+          "teamId": "team-2026-16u-girls-legacy-16u-girls",
+          "clubId": "club-legacy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -715,9 +770,9 @@
         "winnerParticipantId": "team-2026-16u-girls-ovac-16u-girls",
         "winnerTeamId": "team-2026-16u-girls-ovac-16u-girls",
         "winnerName": "OVAC",
-        "loserParticipantId": "tournament-team-2026-16u-girls-w-g-08-legacy",
-        "loserTeamId": null,
-        "loserName": "W G#08- LEGACY"
+        "loserParticipantId": "team-2026-16u-girls-legacy-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-legacy-16u-girls",
+        "loserName": "Legacy"
       },
       "advancement": {
         "winnerTo": null,
@@ -749,27 +804,27 @@
           "raw": "L G#07- MID VALLEY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#07- MID VALLEY",
-          "participantId": "tournament-team-2026-16u-girls-l-g-07-mid-valley",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#07",
+          "displayName": "Mid Valley",
+          "participantId": "team-2026-16u-girls-mid-valley-16u-girls",
+          "teamId": "team-2026-16u-girls-mid-valley-16u-girls",
+          "clubId": "club-mid-valley",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "L G#08- COMMERCE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#08- COMMERCE",
-          "participantId": "tournament-team-2026-16u-girls-l-g-08-commerce",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#08",
+          "displayName": "Commerce",
+          "participantId": "team-2026-16u-girls-commerce-16u-girls",
+          "teamId": "team-2026-16u-girls-commerce-16u-girls",
+          "clubId": "club-commerce",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -780,12 +835,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-l-g-07-mid-valley",
-        "winnerTeamId": null,
-        "winnerName": "L G#07- MID VALLEY",
-        "loserParticipantId": "tournament-team-2026-16u-girls-l-g-08-commerce",
-        "loserTeamId": null,
-        "loserName": "L G#08- COMMERCE"
+        "winnerParticipantId": "team-2026-16u-girls-mid-valley-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-mid-valley-16u-girls",
+        "winnerName": "Mid Valley",
+        "loserParticipantId": "team-2026-16u-girls-commerce-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-commerce-16u-girls",
+        "loserName": "Commerce"
       },
       "advancement": {
         "winnerTo": null,
@@ -817,27 +872,27 @@
           "raw": "L G#09- RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#09- RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-16u-girls-l-g-09-rancho-tsunami",
+          "sourceReference": "L G#09",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-16u-girls-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "L G#10- LEGACY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "L G#10- LEGACY",
-          "participantId": "tournament-team-2026-16u-girls-l-g-10-legacy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "L G#10",
+          "displayName": "Legacy",
+          "participantId": "team-2026-16u-girls-legacy-16u-girls",
+          "teamId": "team-2026-16u-girls-legacy-16u-girls",
+          "clubId": "club-legacy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -848,12 +903,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-l-g-09-rancho-tsunami",
+        "winnerParticipantId": "tournament-team-2026-16u-girls-rancho-tsunami",
         "winnerTeamId": null,
-        "winnerName": "L G#09- RANCHO TSUNAMI",
-        "loserParticipantId": "tournament-team-2026-16u-girls-l-g-10-legacy",
-        "loserTeamId": null,
-        "loserName": "L G#10- LEGACY"
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "team-2026-16u-girls-legacy-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-legacy-16u-girls",
+        "loserName": "Legacy"
       },
       "advancement": {
         "winnerTo": null,
@@ -885,27 +940,27 @@
           "raw": "W G#10- OVAC",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#10- OVAC",
-          "participantId": "tournament-team-2026-16u-girls-w-g-10-ovac",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "W G#10",
+          "displayName": "OVAC",
+          "participantId": "team-2026-16u-girls-ovac-16u-girls",
+          "teamId": "team-2026-16u-girls-ovac-16u-girls",
+          "clubId": "club-ovac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "W G#09 - LB VIKING",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "W G#09 - LB VIKING",
-          "participantId": "tournament-team-2026-16u-girls-w-g-09-lb-viking",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "W G#09",
+          "displayName": "LB Viking",
+          "participantId": "team-2026-16u-girls-lb-viking-16u-girls",
+          "teamId": "team-2026-16u-girls-lb-viking-16u-girls",
+          "clubId": "club-viking",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -916,12 +971,12 @@
       },
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-16u-girls-w-g-09-lb-viking",
-        "winnerTeamId": null,
-        "winnerName": "W G#09 - LB VIKING",
-        "loserParticipantId": "tournament-team-2026-16u-girls-w-g-10-ovac",
-        "loserTeamId": null,
-        "loserName": "W G#10- OVAC"
+        "winnerParticipantId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "winnerTeamId": "team-2026-16u-girls-lb-viking-16u-girls",
+        "winnerName": "LB Viking",
+        "loserParticipantId": "team-2026-16u-girls-ovac-16u-girls",
+        "loserTeamId": "team-2026-16u-girls-ovac-16u-girls",
+        "loserName": "OVAC"
       },
       "advancement": {
         "winnerTo": null,

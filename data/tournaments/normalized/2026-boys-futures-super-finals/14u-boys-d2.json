@@ -24,25 +24,25 @@
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=1173204438#gid=1173204438",
     "fetchedAt": "2026-07-17T18:31:02Z",
-    "mode": "live_fetch",
+    "mode": "cached_raw",
     "contentSha256": "6acd5fa3b525ff7f8dac9df3da7fd75ee85323dbe0abf8dc376b6f95beadaade",
-    "rowCount": 104,
-    "fetchedUrl": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/gviz/tq?tqx=out:csv&gid=1173204438"
+    "rowCount": 104
   },
   "counts": {
     "games": 60,
-    "finalGames": 0,
-    "scheduledGames": 60,
+    "finalGames": 60,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 120,
-    "resolvedTeamParticipants": 27,
-    "unresolvedTeamParticipants": 93,
+    "resolvedTeamParticipants": 45,
+    "unresolvedTeamParticipants": 75,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 93
+    "reviewItems": 75
   },
+  "placements": [],
   "games": [
     {
       "id": "game-2026-boys-futures-super-finals-14u-boys-d2-14bd201",
@@ -62,46 +62,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-MISSION B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-MISSION B",
-          "participantId": "tournament-team-2026-14u-boys-a1-mission-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "Mission B",
+          "participantId": "team-2026-14u-boys-mission-b",
+          "teamId": "team-2026-14u-boys-mission-b",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3-DEVILS GATE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-DEVILS GATE",
-          "participantId": "tournament-team-2026-14u-boys-a3-devils-gate",
+          "sourceReference": "A3",
+          "displayName": "DEVILS GATE",
+          "participantId": "tournament-team-2026-14u-boys-devils-gate",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-devils-gate",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-devils-gate",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DEVILS GATE",
+        "loserParticipantId": "team-2026-14u-boys-mission-b",
+        "loserTeamId": "team-2026-14u-boys-mission-b",
+        "loserName": "Mission B"
       },
       "advancement": {
         "winnerTo": null,
@@ -126,46 +130,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1-PRIDE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1-PRIDE",
-          "participantId": "tournament-team-2026-14u-boys-d1-pride",
+          "sourceReference": "D1",
+          "displayName": "PRIDE",
+          "participantId": "tournament-team-2026-14u-boys-pride",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-pride",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D3-AMERICAN RIVER A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3-AMERICAN RIVER A",
-          "participantId": "tournament-team-2026-14u-boys-d3-american-river-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D3",
+          "displayName": "American River A",
+          "participantId": "team-2026-14u-boys-american-river-a",
+          "teamId": "team-2026-14u-boys-american-river-a",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 4,
+        "whiteRaw": "16",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-pride",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PRIDE",
+        "loserParticipantId": "team-2026-14u-boys-american-river-a",
+        "loserTeamId": "team-2026-14u-boys-american-river-a",
+        "loserName": "American River A"
       },
       "advancement": {
         "winnerTo": null,
@@ -190,46 +198,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1-TEMPLE CITY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E1-TEMPLE CITY",
-          "participantId": "tournament-team-2026-14u-boys-e1-temple-city",
+          "sourceReference": "E1",
+          "displayName": "TEMPLE CITY",
+          "participantId": "tournament-team-2026-14u-boys-temple-city",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-temple-city",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "E3-SAN FRANCISCO",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E3-SAN FRANCISCO",
-          "participantId": "tournament-team-2026-14u-boys-e3-san-francisco",
+          "sourceReference": "E3",
+          "displayName": "SAN FRANCISCO",
+          "participantId": "tournament-team-2026-14u-boys-san-francisco",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-francisco",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 3,
+        "whiteRaw": "16",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-temple-city",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TEMPLE CITY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-francisco",
+        "loserTeamId": null,
+        "loserName": "SAN FRANCISCO"
       },
       "advancement": {
         "winnerTo": null,
@@ -254,46 +266,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H1-SANTA BARBARA",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H1-SANTA BARBARA",
-          "participantId": "tournament-team-2026-14u-boys-h1-santa-barbara",
+          "sourceReference": "H1",
+          "displayName": "SANTA BARBARA",
+          "participantId": "tournament-team-2026-14u-boys-santa-barbara",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-santa-barbara",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "H3-KINGSBURG",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H3-KINGSBURG",
-          "participantId": "tournament-team-2026-14u-boys-h3-kingsburg",
+          "sourceReference": "H3",
+          "displayName": "KINGSBURG",
+          "participantId": "tournament-team-2026-14u-boys-kingsburg",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-kingsburg",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 14,
+        "whiteRaw": "16",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-santa-barbara",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SANTA BARBARA",
+        "loserParticipantId": "tournament-team-2026-14u-boys-kingsburg",
+        "loserTeamId": null,
+        "loserName": "KINGSBURG"
       },
       "advancement": {
         "winnerTo": null,
@@ -318,46 +334,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2-TROJAN",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-TROJAN",
-          "participantId": "tournament-team-2026-14u-boys-a2-trojan",
+          "sourceReference": "A2",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-14u-boys-trojan",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-trojan",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A3-DEVILS GATE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A3-DEVILS GATE",
-          "participantId": "tournament-team-2026-14u-boys-a3-devils-gate",
+          "sourceReference": "A3",
+          "displayName": "DEVILS GATE",
+          "participantId": "tournament-team-2026-14u-boys-devils-gate",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-devils-gate",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 4,
+        "dark": 16,
+        "whiteRaw": "4",
+        "darkRaw": "16"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-devils-gate",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DEVILS GATE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trojan",
+        "loserTeamId": null,
+        "loserName": "TROJAN"
       },
       "advancement": {
         "winnerTo": null,
@@ -382,46 +402,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D2-NEWPORT BEACH B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2-NEWPORT BEACH B",
-          "participantId": "tournament-team-2026-14u-boys-d2-newport-beach-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D2",
+          "displayName": "Newport Beach B",
+          "participantId": "team-2026-14u-boys-newport-beach-b",
+          "teamId": "team-2026-14u-boys-newport-beach-b",
+          "clubId": "club-newport-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "D3-AMERICAN RIVER A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D3-AMERICAN RIVER A",
-          "participantId": "tournament-team-2026-14u-boys-d3-american-river-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D3",
+          "displayName": "American River A",
+          "participantId": "team-2026-14u-boys-american-river-a",
+          "teamId": "team-2026-14u-boys-american-river-a",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-newport-beach-b",
+        "winnerTeamId": "team-2026-14u-boys-newport-beach-b",
+        "winnerName": "Newport Beach B",
+        "loserParticipantId": "team-2026-14u-boys-american-river-a",
+        "loserTeamId": "team-2026-14u-boys-american-river-a",
+        "loserName": "American River A"
       },
       "advancement": {
         "winnerTo": null,
@@ -446,46 +470,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E2-LOS ALAMITOS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E2-LOS ALAMITOS",
-          "participantId": "tournament-team-2026-14u-boys-e2-los-alamitos",
+          "sourceReference": "E2",
+          "displayName": "LOS ALAMITOS",
+          "participantId": "tournament-team-2026-14u-boys-los-alamitos",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-los-alamitos",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "E3-SAN FRANCISCO",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E3-SAN FRANCISCO",
-          "participantId": "tournament-team-2026-14u-boys-e3-san-francisco",
+          "sourceReference": "E3",
+          "displayName": "SAN FRANCISCO",
+          "participantId": "tournament-team-2026-14u-boys-san-francisco",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-francisco",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 3,
+        "whiteRaw": "9",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-los-alamitos",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LOS ALAMITOS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-francisco",
+        "loserTeamId": null,
+        "loserName": "SAN FRANCISCO"
       },
       "advancement": {
         "winnerTo": null,
@@ -510,46 +538,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H2-CCU B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H2-CCU B",
-          "participantId": "tournament-team-2026-14u-boys-h2-ccu-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "H2",
+          "displayName": "CC United B",
+          "participantId": "team-2026-14u-boys-cc-united-b",
+          "teamId": "team-2026-14u-boys-cc-united-b",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "H3-KINGSBURG",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H3-KINGSBURG",
-          "participantId": "tournament-team-2026-14u-boys-h3-kingsburg",
+          "sourceReference": "H3",
+          "displayName": "KINGSBURG",
+          "participantId": "tournament-team-2026-14u-boys-kingsburg",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-kingsburg",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 8,
+        "whiteRaw": "10",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-cc-united-b",
+        "winnerTeamId": "team-2026-14u-boys-cc-united-b",
+        "winnerName": "CC United B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-kingsburg",
+        "loserTeamId": null,
+        "loserName": "KINGSBURG"
       },
       "advancement": {
         "winnerTo": null,
@@ -574,46 +606,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1-MISSION B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A1-MISSION B",
-          "participantId": "tournament-team-2026-14u-boys-a1-mission-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "A1",
+          "displayName": "Mission B",
+          "participantId": "team-2026-14u-boys-mission-b",
+          "teamId": "team-2026-14u-boys-mission-b",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A2-TROJAN",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "A2-TROJAN",
-          "participantId": "tournament-team-2026-14u-boys-a2-trojan",
+          "sourceReference": "A2",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-14u-boys-trojan",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-trojan",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 5,
+        "whiteRaw": "14",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trojan",
+        "loserTeamId": null,
+        "loserName": "TROJAN"
       },
       "advancement": {
         "winnerTo": null,
@@ -638,46 +674,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1-PRIDE",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D1-PRIDE",
-          "participantId": "tournament-team-2026-14u-boys-d1-pride",
+          "sourceReference": "D1",
+          "displayName": "PRIDE",
+          "participantId": "tournament-team-2026-14u-boys-pride",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-pride",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D2-NEWPORT BEACH B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "D2-NEWPORT BEACH B",
-          "participantId": "tournament-team-2026-14u-boys-d2-newport-beach-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "D2",
+          "displayName": "Newport Beach B",
+          "participantId": "team-2026-14u-boys-newport-beach-b",
+          "teamId": "team-2026-14u-boys-newport-beach-b",
+          "clubId": "club-newport-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 4,
+        "whiteRaw": "10",
+        "darkRaw": "4"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-pride",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PRIDE",
+        "loserParticipantId": "team-2026-14u-boys-newport-beach-b",
+        "loserTeamId": "team-2026-14u-boys-newport-beach-b",
+        "loserName": "Newport Beach B"
       },
       "advancement": {
         "winnerTo": null,
@@ -702,46 +742,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1-TEMPLE CITY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E1-TEMPLE CITY",
-          "participantId": "tournament-team-2026-14u-boys-e1-temple-city",
+          "sourceReference": "E1",
+          "displayName": "TEMPLE CITY",
+          "participantId": "tournament-team-2026-14u-boys-temple-city",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-temple-city",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "E2-LOS ALAMITOS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "E2-LOS ALAMITOS",
-          "participantId": "tournament-team-2026-14u-boys-e2-los-alamitos",
+          "sourceReference": "E2",
+          "displayName": "LOS ALAMITOS",
+          "participantId": "tournament-team-2026-14u-boys-los-alamitos",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-los-alamitos",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-temple-city",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TEMPLE CITY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-los-alamitos",
+        "loserTeamId": null,
+        "loserName": "LOS ALAMITOS"
       },
       "advancement": {
         "winnerTo": null,
@@ -766,46 +810,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "H1-SANTA BARBARA",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H1-SANTA BARBARA",
-          "participantId": "tournament-team-2026-14u-boys-h1-santa-barbara",
+          "sourceReference": "H1",
+          "displayName": "SANTA BARBARA",
+          "participantId": "tournament-team-2026-14u-boys-santa-barbara",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-santa-barbara",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "H2-CCU B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "H2-CCU B",
-          "participantId": "tournament-team-2026-14u-boys-h2-ccu-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "H2",
+          "displayName": "CC United B",
+          "participantId": "team-2026-14u-boys-cc-united-b",
+          "teamId": "team-2026-14u-boys-cc-united-b",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15.2,
+        "dark": 15.3,
+        "whiteRaw": "15.2",
+        "darkRaw": "15.3"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-cc-united-b",
+        "winnerTeamId": "team-2026-14u-boys-cc-united-b",
+        "winnerName": "CC United B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-santa-barbara",
+        "loserTeamId": null,
+        "loserName": "SANTA BARBARA"
       },
       "advancement": {
         "winnerTo": null,
@@ -830,46 +878,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-14u-boys-b1-rancho-tsunami",
+          "sourceReference": "B1",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-14u-boys-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "B3-STANFORD B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-STANFORD B",
-          "participantId": "tournament-team-2026-14u-boys-b3-stanford-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B3",
+          "displayName": "Stanford B",
+          "participantId": "team-2026-14u-boys-stanford-b",
+          "teamId": "team-2026-14u-boys-stanford-b",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 20,
+        "dark": 6,
+        "whiteRaw": "20",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "team-2026-14u-boys-stanford-b",
+        "loserTeamId": "team-2026-14u-boys-stanford-b",
+        "loserName": "Stanford B"
       },
       "advancement": {
         "winnerTo": null,
@@ -894,46 +946,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1-SHORE AQUATICS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1-SHORE AQUATICS",
-          "participantId": "tournament-team-2026-14u-boys-c1-shore-aquatics",
+          "sourceReference": "C1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-shore-aquatics",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-shore-aquatics",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C3-SAN JOSE EXPRESS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3-SAN JOSE EXPRESS",
-          "participantId": "tournament-team-2026-14u-boys-c3-san-jose-express",
+          "sourceReference": "C3",
+          "displayName": "SAN JOSE EXPRESS",
+          "participantId": "tournament-team-2026-14u-boys-san-jose-express",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-jose-express",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 6,
+        "whiteRaw": "13",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-jose-express",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS"
       },
       "advancement": {
         "winnerTo": null,
@@ -958,46 +1014,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1-PATRIOT B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F1-PATRIOT B",
-          "participantId": "tournament-team-2026-14u-boys-f1-patriot-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F1",
+          "displayName": "Patriot B",
+          "participantId": "team-2026-14u-boys-patriot-b",
+          "teamId": "team-2026-14u-boys-patriot-b",
+          "clubId": "club-patriot",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F3-CLOVIS RED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F3-CLOVIS RED",
-          "participantId": "tournament-team-2026-14u-boys-f3-clovis-red",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F3",
+          "displayName": "Clovis Red",
+          "participantId": "team-2026-14u-boys-clovis-red",
+          "teamId": "team-2026-14u-boys-clovis-red",
+          "clubId": "club-clovis-red",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 10,
+        "whiteRaw": "9",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-clovis-red",
+        "winnerTeamId": "team-2026-14u-boys-clovis-red",
+        "winnerName": "Clovis Red",
+        "loserParticipantId": "team-2026-14u-boys-patriot-b",
+        "loserTeamId": "team-2026-14u-boys-patriot-b",
+        "loserName": "Patriot B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1022,46 +1082,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1-LA JOLLA UNITED B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G1-LA JOLLA UNITED B",
-          "participantId": "tournament-team-2026-14u-boys-g1-la-jolla-united-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G1",
+          "displayName": "La Jolla United B",
+          "participantId": "team-2026-14u-boys-la-jolla-united-b",
+          "teamId": "team-2026-14u-boys-la-jolla-united-b",
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G3-NORTHWEST",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G3-NORTHWEST",
-          "participantId": "tournament-team-2026-14u-boys-g3-northwest",
+          "sourceReference": "G3",
+          "displayName": "NORTHWEST",
+          "participantId": "tournament-team-2026-14u-boys-northwest",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-northwest",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 9,
+        "whiteRaw": "8",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-northwest",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "team-2026-14u-boys-la-jolla-united-b",
+        "loserTeamId": "team-2026-14u-boys-la-jolla-united-b",
+        "loserName": "La Jolla United B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1086,46 +1150,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2-ROSE BOWL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-ROSE BOWL",
-          "participantId": "tournament-team-2026-14u-boys-b2-rose-bowl",
+          "sourceReference": "B2",
+          "displayName": "ROSE BOWL",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rose-bowl",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "B3-STANFORD B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B3-STANFORD B",
-          "participantId": "tournament-team-2026-14u-boys-b3-stanford-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "B3",
+          "displayName": "Stanford B",
+          "participantId": "team-2026-14u-boys-stanford-b",
+          "teamId": "team-2026-14u-boys-stanford-b",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-stanford-b",
+        "winnerTeamId": "team-2026-14u-boys-stanford-b",
+        "winnerName": "Stanford B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rose-bowl",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL"
       },
       "advancement": {
         "winnerTo": null,
@@ -1150,46 +1218,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C2-BACK BAY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2-BACK BAY",
-          "participantId": "tournament-team-2026-14u-boys-c2-back-bay",
+          "sourceReference": "C2",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2026-14u-boys-back-bay",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-back-bay",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C3-SAN JOSE EXPRESS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C3-SAN JOSE EXPRESS",
-          "participantId": "tournament-team-2026-14u-boys-c3-san-jose-express",
+          "sourceReference": "C3",
+          "displayName": "SAN JOSE EXPRESS",
+          "participantId": "tournament-team-2026-14u-boys-san-jose-express",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-san-jose-express",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 17,
+        "dark": 8,
+        "whiteRaw": "17",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-back-bay",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "BACK BAY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-jose-express",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS"
       },
       "advancement": {
         "winnerTo": null,
@@ -1214,46 +1286,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F2-FOOTHILL CLUB",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F2-FOOTHILL CLUB",
-          "participantId": "tournament-team-2026-14u-boys-f2-foothill-club",
+          "sourceReference": "F2",
+          "displayName": "FOOTHILL CLUB",
+          "participantId": "tournament-team-2026-14u-boys-foothill-club",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill-club",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "F3-CLOVIS RED",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F3-CLOVIS RED",
-          "participantId": "tournament-team-2026-14u-boys-f3-clovis-red",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F3",
+          "displayName": "Clovis Red",
+          "participantId": "team-2026-14u-boys-clovis-red",
+          "teamId": "team-2026-14u-boys-clovis-red",
+          "clubId": "club-clovis-red",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 5,
+        "whiteRaw": "12",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-foothill-club",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "FOOTHILL CLUB",
+        "loserParticipantId": "team-2026-14u-boys-clovis-red",
+        "loserTeamId": "team-2026-14u-boys-clovis-red",
+        "loserName": "Clovis Red"
       },
       "advancement": {
         "winnerTo": null,
@@ -1278,46 +1354,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G2-680 A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G2-680 A",
-          "participantId": "tournament-team-2026-14u-boys-g2-680-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G2",
+          "displayName": "680 A",
+          "participantId": "team-2026-14u-boys-680-a",
+          "teamId": "team-2026-14u-boys-680-a",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G3-NORTHWEST",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G3-NORTHWEST",
-          "participantId": "tournament-team-2026-14u-boys-g3-northwest",
+          "sourceReference": "G3",
+          "displayName": "NORTHWEST",
+          "participantId": "tournament-team-2026-14u-boys-northwest",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-northwest",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 14,
+        "whiteRaw": "13",
+        "darkRaw": "14"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-northwest",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "team-2026-14u-boys-680-a",
+        "loserTeamId": "team-2026-14u-boys-680-a",
+        "loserName": "680 A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1342,46 +1422,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1-RANCHO TSUNAMI",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B1-RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-14u-boys-b1-rancho-tsunami",
+          "sourceReference": "B1",
+          "displayName": "RANCHO TSUNAMI",
+          "participantId": "tournament-team-2026-14u-boys-rancho-tsunami",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rancho-tsunami",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "B2-ROSE BOWL",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "B2-ROSE BOWL",
-          "participantId": "tournament-team-2026-14u-boys-b2-rose-bowl",
+          "sourceReference": "B2",
+          "displayName": "ROSE BOWL",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-rose-bowl",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 5,
+        "whiteRaw": "13",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rose-bowl",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL"
       },
       "advancement": {
         "winnerTo": null,
@@ -1406,46 +1490,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1-SHORE AQUATICS",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C1-SHORE AQUATICS",
-          "participantId": "tournament-team-2026-14u-boys-c1-shore-aquatics",
+          "sourceReference": "C1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-shore-aquatics",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-shore-aquatics",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C2-BACK BAY",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "C2-BACK BAY",
-          "participantId": "tournament-team-2026-14u-boys-c2-back-bay",
+          "sourceReference": "C2",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2026-14u-boys-back-bay",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-back-bay",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 18,
+        "dark": 13,
+        "whiteRaw": "18",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-back-bay",
+        "loserTeamId": null,
+        "loserName": "BACK BAY"
       },
       "advancement": {
         "winnerTo": null,
@@ -1470,46 +1558,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1-PATRIOT B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F1-PATRIOT B",
-          "participantId": "tournament-team-2026-14u-boys-f1-patriot-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "F1",
+          "displayName": "Patriot B",
+          "participantId": "team-2026-14u-boys-patriot-b",
+          "teamId": "team-2026-14u-boys-patriot-b",
+          "clubId": "club-patriot",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F2-FOOTHILL CLUB",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "F2-FOOTHILL CLUB",
-          "participantId": "tournament-team-2026-14u-boys-f2-foothill-club",
+          "sourceReference": "F2",
+          "displayName": "FOOTHILL CLUB",
+          "participantId": "tournament-team-2026-14u-boys-foothill-club",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-foothill-club",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 9,
+        "whiteRaw": "12",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-patriot-b",
+        "winnerTeamId": "team-2026-14u-boys-patriot-b",
+        "winnerName": "Patriot B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-foothill-club",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB"
       },
       "advancement": {
         "winnerTo": null,
@@ -1534,46 +1626,50 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "G1-LA JOLLA UNITED B",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G1-LA JOLLA UNITED B",
-          "participantId": "tournament-team-2026-14u-boys-g1-la-jolla-united-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G1",
+          "displayName": "La Jolla United B",
+          "participantId": "team-2026-14u-boys-la-jolla-united-b",
+          "teamId": "team-2026-14u-boys-la-jolla-united-b",
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G2-680 A",
           "kind": "team",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "G2-680 A",
-          "participantId": "tournament-team-2026-14u-boys-g2-680-a",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "sourceReference": "G2",
+          "displayName": "680 A",
+          "participantId": "team-2026-14u-boys-680-a",
+          "teamId": "team-2026-14u-boys-680-a",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-la-jolla-united-b",
+        "winnerTeamId": "team-2026-14u-boys-la-jolla-united-b",
+        "winnerName": "La Jolla United B",
+        "loserParticipantId": "team-2026-14u-boys-680-a",
+        "loserTeamId": "team-2026-14u-boys-680-a",
+        "loserName": "680 A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1598,8 +1694,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J4(1stD)-PRIDE",
@@ -1629,15 +1725,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 10,
+        "whiteRaw": "15",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-pride",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PRIDE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-temple-city",
+        "loserTeamId": null,
+        "loserName": "TEMPLE CITY"
       },
       "advancement": {
         "winnerTo": null,
@@ -1662,8 +1762,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J1(1stA)-DEVILS GATE",
@@ -1693,15 +1793,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 7,
+        "whiteRaw": "13",
+        "darkRaw": "7"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-devils-gate",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DEVILS GATE",
+        "loserParticipantId": "team-2026-14u-boys-cc-united-b",
+        "loserTeamId": "team-2026-14u-boys-cc-united-b",
+        "loserName": "CC United B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1726,8 +1830,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J2(1stB)-RANCHO TSUNAMI",
@@ -1757,15 +1861,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 19,
+        "dark": 9,
+        "whiteRaw": "19",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "tournament-team-2026-14u-boys-northwest",
+        "loserTeamId": null,
+        "loserName": "NORTHWEST"
       },
       "advancement": {
         "winnerTo": null,
@@ -1790,8 +1898,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "J3(1stC)-SHORE AQUATICS",
@@ -1821,15 +1929,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 3,
+        "whiteRaw": "11",
+        "darkRaw": "3"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-foothill-club",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB"
       },
       "advancement": {
         "winnerTo": null,
@@ -1854,8 +1966,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M1(3rdA)-TROJAN",
@@ -1885,15 +1997,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 9,
+        "whiteRaw": "8",
+        "darkRaw": "9"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-kingsburg",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "KINGSBURG",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trojan",
+        "loserTeamId": null,
+        "loserName": "TROJAN"
       },
       "advancement": {
         "winnerTo": null,
@@ -1918,8 +2034,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M4(3rdD)-AMERICAN RIVER A",
@@ -1949,15 +2065,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-american-river-a",
+        "winnerTeamId": "team-2026-14u-boys-american-river-a",
+        "winnerName": "American River A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-francisco",
+        "loserTeamId": null,
+        "loserName": "SAN FRANCISCO"
       },
       "advancement": {
         "winnerTo": null,
@@ -1982,8 +2102,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#J4/J5-TEMPLE CITY",
@@ -2013,15 +2133,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-temple-city",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TEMPLE CITY",
+        "loserParticipantId": "team-2026-14u-boys-cc-united-b",
+        "loserTeamId": "team-2026-14u-boys-cc-united-b",
+        "loserName": "CC United B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2046,8 +2170,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#J1/J8-DEVILS GATE",
@@ -2077,15 +2201,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 6,
+        "whiteRaw": "10",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-devils-gate",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "DEVILS GATE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-pride",
+        "loserTeamId": null,
+        "loserName": "PRIDE"
       },
       "advancement": {
         "winnerTo": null,
@@ -2110,8 +2238,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#J3/J6-FOOTHILL CLUB",
@@ -2141,15 +2269,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6.3,
+        "dark": 6.2,
+        "whiteRaw": "6.3",
+        "darkRaw": "6.2"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-foothill-club",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "FOOTHILL CLUB",
+        "loserParticipantId": "tournament-team-2026-14u-boys-northwest",
+        "loserTeamId": null,
+        "loserName": "NORTHWEST"
       },
       "advancement": {
         "winnerTo": null,
@@ -2174,8 +2306,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#J2/J7-RANCHO TSUNAMI",
@@ -2205,15 +2337,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
       },
       "advancement": {
         "winnerTo": null,
@@ -2238,8 +2374,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#M4/M5-SAN FRANCISCO",
@@ -2269,15 +2405,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 10,
+        "whiteRaw": "6",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-trojan",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TROJAN",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-francisco",
+        "loserTeamId": null,
+        "loserName": "SAN FRANCISCO"
       },
       "advancement": {
         "winnerTo": null,
@@ -2302,8 +2442,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#M1/M8-KINGSBURG",
@@ -2333,15 +2473,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 5,
+        "whiteRaw": "16",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-kingsburg",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "KINGSBURG",
+        "loserParticipantId": "team-2026-14u-boys-american-river-a",
+        "loserTeamId": "team-2026-14u-boys-american-river-a",
+        "loserName": "American River A"
       },
       "advancement": {
         "winnerTo": null,
@@ -2366,8 +2510,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K5(2ndE)-LOS ALAMITOS",
@@ -2397,15 +2541,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 8,
+        "whiteRaw": "10",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-los-alamitos",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LOS ALAMITOS",
+        "loserParticipantId": "team-2026-14u-boys-newport-beach-b",
+        "loserTeamId": "team-2026-14u-boys-newport-beach-b",
+        "loserName": "Newport Beach B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2430,8 +2578,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K8(2ndH)-SANTA BARBARA",
@@ -2461,15 +2609,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 12,
+        "whiteRaw": "5",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-santa-barbara",
+        "loserTeamId": null,
+        "loserName": "SANTA BARBARA"
       },
       "advancement": {
         "winnerTo": null,
@@ -2494,8 +2646,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K6(2ndF)-CLOVIS RED",
@@ -2525,15 +2677,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 15,
+        "whiteRaw": "9",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-back-bay",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "BACK BAY",
+        "loserParticipantId": "team-2026-14u-boys-clovis-red",
+        "loserTeamId": "team-2026-14u-boys-clovis-red",
+        "loserName": "Clovis Red"
       },
       "advancement": {
         "winnerTo": null,
@@ -2558,8 +2714,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "K7(2ndG)-LA JOLLA UNITED B",
@@ -2589,15 +2745,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 15,
+        "whiteRaw": "16",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-la-jolla-united-b",
+        "winnerTeamId": "team-2026-14u-boys-la-jolla-united-b",
+        "winnerName": "La Jolla United B",
+        "loserParticipantId": "team-2026-14u-boys-stanford-b",
+        "loserTeamId": "team-2026-14u-boys-stanford-b",
+        "loserName": "Stanford B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2622,8 +2782,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M3(3rdC)-SAN JOSE EXPRESS",
@@ -2653,15 +2813,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 8,
+        "dark": 12,
+        "whiteRaw": "8",
+        "darkRaw": "12"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-patriot-b",
+        "winnerTeamId": "team-2026-14u-boys-patriot-b",
+        "winnerName": "Patriot B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-jose-express",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS"
       },
       "advancement": {
         "winnerTo": null,
@@ -2686,8 +2850,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "M2(3rdB)-ROSE BOWL",
@@ -2717,15 +2881,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 12,
+        "dark": 18,
+        "whiteRaw": "12",
+        "darkRaw": "18"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-680-a",
+        "winnerTeamId": "team-2026-14u-boys-680-a",
+        "winnerName": "680 A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rose-bowl",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL"
       },
       "advancement": {
         "winnerTo": null,
@@ -2750,8 +2918,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#K5/K4-NEWPORT BEACH B",
@@ -2781,15 +2949,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 10,
+        "whiteRaw": "13",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-newport-beach-b",
+        "winnerTeamId": "team-2026-14u-boys-newport-beach-b",
+        "winnerName": "Newport Beach B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-santa-barbara",
+        "loserTeamId": null,
+        "loserName": "SANTA BARBARA"
       },
       "advancement": {
         "winnerTo": null,
@@ -2814,8 +2986,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#K8/K1-MISSION B",
@@ -2845,15 +3017,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 8,
+        "whiteRaw": "16",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-los-alamitos",
+        "loserTeamId": null,
+        "loserName": "LOS ALAMITOS"
       },
       "advancement": {
         "winnerTo": null,
@@ -2878,8 +3054,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#K6/K3-CLOVIS RED",
@@ -2909,15 +3085,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 13,
+        "dark": 15,
+        "whiteRaw": "13",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-stanford-b",
+        "winnerTeamId": "team-2026-14u-boys-stanford-b",
+        "winnerName": "Stanford B",
+        "loserParticipantId": "team-2026-14u-boys-clovis-red",
+        "loserTeamId": "team-2026-14u-boys-clovis-red",
+        "loserName": "Clovis Red"
       },
       "advancement": {
         "winnerTo": null,
@@ -2942,8 +3122,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#K7/K2-LA JOLLA UNITED B",
@@ -2973,15 +3153,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 15,
+        "dark": 23,
+        "whiteRaw": "15",
+        "darkRaw": "23"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-back-bay",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "BACK BAY",
+        "loserParticipantId": "team-2026-14u-boys-la-jolla-united-b",
+        "loserTeamId": "team-2026-14u-boys-la-jolla-united-b",
+        "loserName": "La Jolla United B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3006,8 +3190,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#M3/M6-SAN JOSE EXPRESS",
@@ -3037,15 +3221,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 6,
+        "dark": 11,
+        "whiteRaw": "6",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rose-bowl",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "ROSE BOWL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-jose-express",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS"
       },
       "advancement": {
         "winnerTo": null,
@@ -3070,8 +3258,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#M2/M7-680 A",
@@ -3101,15 +3289,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 10,
+        "whiteRaw": "14",
+        "darkRaw": "10"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-680-a",
+        "winnerTeamId": "team-2026-14u-boys-680-a",
+        "winnerName": "680 A",
+        "loserParticipantId": "team-2026-14u-boys-patriot-b",
+        "loserTeamId": "team-2026-14u-boys-patriot-b",
+        "loserName": "Patriot B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3134,8 +3326,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#44-LA JOLLA UNITED B",
@@ -3165,15 +3357,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-los-alamitos",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LOS ALAMITOS",
+        "loserParticipantId": "team-2026-14u-boys-la-jolla-united-b",
+        "loserTeamId": "team-2026-14u-boys-la-jolla-united-b",
+        "loserName": "La Jolla United B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3198,8 +3394,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#40-MISSION B",
@@ -3229,15 +3425,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 20,
+        "dark": 15,
+        "whiteRaw": "20",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-back-bay",
+        "loserTeamId": null,
+        "loserName": "BACK BAY"
       },
       "advancement": {
         "winnerTo": null,
@@ -3262,8 +3462,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#41-NORTHWEST",
@@ -3293,15 +3493,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-cc-united-b",
+        "winnerTeamId": "team-2026-14u-boys-cc-united-b",
+        "winnerName": "CC United B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-northwest",
+        "loserTeamId": null,
+        "loserName": "NORTHWEST"
       },
       "advancement": {
         "winnerTo": null,
@@ -3326,8 +3530,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "LA SERNA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#37-TEMPLE CITY",
@@ -3357,15 +3561,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-temple-city",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TEMPLE CITY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-foothill-club",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL CLUB"
       },
       "advancement": {
         "winnerTo": null,
@@ -3390,8 +3598,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#46-SAN JOSE EXPRESS",
@@ -3421,15 +3629,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 18,
+        "dark": 5,
+        "whiteRaw": "18",
+        "darkRaw": "5"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-jose-express",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SAN JOSE EXPRESS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-francisco",
+        "loserTeamId": null,
+        "loserName": "SAN FRANCISCO"
       },
       "advancement": {
         "winnerTo": null,
@@ -3454,8 +3666,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#45-TROJAN",
@@ -3485,15 +3697,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 16,
+        "dark": 15,
+        "whiteRaw": "16",
+        "darkRaw": "15"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-trojan",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "TROJAN",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rose-bowl",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL"
       },
       "advancement": {
         "winnerTo": null,
@@ -3518,8 +3734,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#48-PATRIOT B",
@@ -3549,15 +3765,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 14,
+        "dark": 13,
+        "whiteRaw": "14",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-patriot-b",
+        "winnerTeamId": "team-2026-14u-boys-patriot-b",
+        "winnerName": "Patriot B",
+        "loserParticipantId": "team-2026-14u-boys-american-river-a",
+        "loserTeamId": "team-2026-14u-boys-american-river-a",
+        "loserName": "American River A"
       },
       "advancement": {
         "winnerTo": null,
@@ -3582,8 +3802,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#47-KINGSBURG",
@@ -3613,15 +3833,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 16,
+        "whiteRaw": "9",
+        "darkRaw": "16"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-680-a",
+        "winnerTeamId": "team-2026-14u-boys-680-a",
+        "winnerName": "680 A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-kingsburg",
+        "loserTeamId": null,
+        "loserName": "KINGSBURG"
       },
       "advancement": {
         "winnerTo": null,
@@ -3646,8 +3870,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#42-CLOVIS RED",
@@ -3677,15 +3901,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 9,
+        "dark": 13,
+        "whiteRaw": "9",
+        "darkRaw": "13"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-santa-barbara",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SANTA BARBARA",
+        "loserParticipantId": "team-2026-14u-boys-clovis-red",
+        "loserTeamId": "team-2026-14u-boys-clovis-red",
+        "loserName": "Clovis Red"
       },
       "advancement": {
         "winnerTo": null,
@@ -3710,8 +3938,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "SONORA HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#38-NEWPORT BEACH B",
@@ -3741,15 +3969,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8"
       },
       "outcome": {
-        "kind": "pending",
-        "winnerTeamId": null,
-        "loserTeamId": null
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-newport-beach-b",
+        "winnerTeamId": "team-2026-14u-boys-newport-beach-b",
+        "winnerName": "Newport Beach B",
+        "loserParticipantId": "team-2026-14u-boys-stanford-b",
+        "loserTeamId": "team-2026-14u-boys-stanford-b",
+        "loserName": "Stanford B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3774,8 +4006,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "L#43-SHORE AQUATICS",
@@ -3805,15 +4037,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 10,
+        "dark": 6,
+        "whiteRaw": "10",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-pride",
+        "loserTeamId": null,
+        "loserName": "PRIDE"
       },
       "advancement": {
         "winnerTo": null,
@@ -3838,8 +4074,8 @@
       "timezone": "America/Los_Angeles",
       "stage": null,
       "venue": "FULLERTON HS",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "W#39-DEVILS GATE",
@@ -3869,15 +4105,19 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null
+        "white": 5,
+        "dark": 6,
+        "whiteRaw": "5",
+        "darkRaw": "6"
       },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rancho-tsunami",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "RANCHO TSUNAMI",
+        "loserParticipantId": "tournament-team-2026-14u-boys-devils-gate",
+        "loserTeamId": null,
+        "loserName": "DEVILS GATE"
       },
       "advancement": {
         "winnerTo": null,
