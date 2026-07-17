@@ -1,10 +1,10 @@
-# CPI 7.45.2
+# CPI 7.46.0
 
-Boys JO browser parser alignment hotfix.
+Post-JO review packet and controlled ranking-decision workflow.
 
-- Selects the authoritative rightmost tournament GMID rather than stage labels such as `RR9-11`.
-- Supports lettered GMIDs such as `10B-140A`.
-- Derives a missing visible game number from the GMID.
-- Requires browser-parsed game IDs to match the normalized pipeline across all 12 Boys divisions.
-- Adds explicit regression coverage for 10U Games 91, 94, 97, and 140A.
-- Leaves published rankings and normalized tournament results unchanged.
+- Preserves an immutable, hash-verified pre-JO ranking snapshot.
+- Combines official JO seed, verified finish, completed-game evidence, and advisory movement ranges.
+- Stores reviewer decisions locally in the browser until explicit export.
+- Exports validated, snapshot-linked approved change sets.
+- Does not write or publish ranking changes automatically.
+- Removes remaining tracked macOS metadata files.

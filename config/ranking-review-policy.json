@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "release": "7.46.0",
+  "mode": "manual_review_only",
+  "snapshotId": "2026-pre-jo-7.45.2",
+  "allowedStatuses": ["pending", "reviewed", "approved", "deferred"],
+  "allowedActions": ["hold", "move_up", "move_down"],
+  "rules": {
+    "automaticPublication": false,
+    "approvedMoveRequiresProposedRank": true,
+    "approvedDecisionRequiresRationale": true,
+    "tournamentOnlyTeamsCanEnterPublishedRankings": false,
+    "officialJOSeedIsDivisionLocal": true
+  }
+}

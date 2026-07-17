@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cpi-ranking-change-set-1",
+  "title": "CPI Ranking Change Set",
+  "type": "object",
+  "required": ["schemaVersion", "snapshotId", "exportedAt", "decisions"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "snapshotId": {"type": "string"},
+    "exportedAt": {"type": "string"},
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["packetId", "canonicalTeamId", "group", "team", "currentRank", "status", "action", "rationale"],
+        "properties": {
+          "packetId": {"type": "string"},
+          "canonicalTeamId": {"type": "string"},
+          "group": {"type": "string"},
+          "team": {"type": "string"},
+          "currentRank": {"type": "integer", "minimum": 1},
+          "proposedRank": {"type": ["integer", "null"], "minimum": 1},
+          "status": {"enum": ["approved"]},
+          "action": {"enum": ["hold", "move_up", "move_down"]},
+          "rationale": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

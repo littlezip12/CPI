@@ -26,6 +26,11 @@ python3 scripts/test-ranking-review-engine.py
 python3 scripts/validate-ranking-review-engine.py
 node scripts/test-tournament-evidence-ui.js
 node scripts/test-tournament-source-health-ui.js
+python3 scripts/build-post-jo-review.py
+python3 scripts/test-post-jo-review-engine.py
+python3 scripts/validate-post-jo-review.py
+python3 scripts/validate-ranking-change-set.py tests/fixtures/ranking-review/valid-change-set.json
+node scripts/test-post-jo-review-ui.js
 
 echo
 echo "CPI release check passed."

@@ -39,6 +39,9 @@ jobs:
       - name: Rebuild ranking review engine
         run: python3 scripts/build-ranking-review.py
 
+      - name: Rebuild controlled post-JO review packets
+        run: python3 scripts/build-post-jo-review.py
+
       - name: Run tournament regression tests
         run: python3 scripts/test-tournament-pipeline.py
 
@@ -65,6 +68,13 @@ jobs:
           python3 scripts/test-ranking-review-engine.py
           python3 scripts/validate-ranking-review-engine.py
 
+      - name: Test and validate controlled post-JO review
+        run: |
+          python3 scripts/test-post-jo-review-engine.py
+          python3 scripts/validate-post-jo-review.py
+          python3 scripts/validate-ranking-change-set.py tests/fixtures/ranking-review/valid-change-set.json
+          node scripts/test-post-jo-review-ui.js
+
       - name: Test tournament evidence interfaces
         run: node scripts/test-tournament-evidence-ui.js
 
@@ -85,10 +95,12 @@ jobs:
             data/tournaments/identity \
             data/tournaments/ranking-review-engine \
             data/tournaments/jo-performance \
+            data/tournaments/post-jo-review \
             qa/tournament-evidence-summary-7.45.1.json \
             qa/tournament-identity-review-7.45.1.csv \
             qa/ranking-review-engine-7.44.0.json \
-            qa/jo-performance-engine-7.45.0.json
+            qa/jo-performance-engine-7.45.0.json \
+            qa/post-jo-review-7.46.0.json
           if git diff --cached --quiet; then
             echo "No tournament source or evidence changes detected."
           else

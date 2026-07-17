@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Post-JO Ranking Decisions | CPI</title>
+  <meta name="description" content="Controlled, manual CPI post-Junior Olympics ranking decision workflow.">
+  <link rel="stylesheet" href="css/styles.css?v=7.46.0">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.46.0">
+  <link rel="stylesheet" href="css/post-jo-review-v7-46.css?v=7.46.0">
+</head>
+<body class="cpi-v8-home post-jo-page">
+<header class="cpi-v8-header"><div class="cpi-v8-header-inner"><a class="cpi-v8-brand" href="index.html"><span class="cpi-v8-brand-mark">CPI</span><span class="cpi-v8-brand-text"><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span></a><nav class="cpi-v8-nav"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav></div></header>
+<main class="decision-shell">
+  <section class="decision-hero">
+    <div><p class="decision-kicker">CPI Controlled Review · 7.46</p><h1>Post-JO ranking decisions</h1><p>Compare the immutable pre-JO snapshot with official JO seed, verified finish, completed-game evidence, and the advisory review engine. Decisions stay in this browser until you explicitly export them.</p></div>
+    <div id="decisionStats" class="decision-stats"></div>
+  </section>
+
+  <section class="decision-safety" aria-label="Review safeguards">
+    <strong>Manual publication only.</strong>
+    <span>This page cannot edit <code>rankings.json</code>, publish rankings, or add tournament-only teams. Official JO seed is an expectation within its division—not a statewide CPI rank.</span>
+  </section>
+
+  <section class="decision-toolbar">
+    <div class="decision-links"><a href="jo-performance.html">JO performance</a><a href="ranking-review.html">Evidence engine</a><a href="tournament-source-health.html">Source health</a></div>
+    <div class="decision-actions">
+      <button type="button" id="exportAll">Export review backup</button>
+      <button type="button" id="exportApproved" class="primary-action">Export approved change set</button>
+      <button type="button" id="importDecisions">Import review file</button>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+      <button type="button" id="clearDecisions" class="danger-action">Clear local decisions</button>
+    </div>
+  </section>
+
+  <section class="decision-controls">
+    <label>Group<select id="decisionGroup"><option value="all">All ranked groups</option></select></label>
+    <label>Review state<select id="decisionState"><option value="all">All states</option><option value="ready">Ready for review</option><option value="in_progress">Tournament in progress</option><option value="awaiting_results">Awaiting results</option></select></label>
+    <label>Priority<select id="decisionPriority"><option value="all">All priorities</option><option value="high">High</option><option value="medium">Medium</option><option value="standard">Standard</option><option value="waiting">Waiting</option></select></label>
+    <label>Decision<select id="decisionFilter"><option value="all">All decisions</option><option value="pending">Pending</option><option value="reviewed">Reviewed</option><option value="approved">Approved</option><option value="deferred">Deferred</option></select></label>
+    <label class="decision-search">Search<input id="decisionSearch" type="search" placeholder="Team, club, or division"></label>
+  </section>
+
+  <section class="decision-summary" id="decisionSummary"></section>
+  <section class="decision-list" id="decisionList"></section>
+</main>
+<footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a><p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p></div><nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav><div><h3>Review tools</h3><a href="jo-performance.html">JO performance</a><a href="ranking-review.html">Evidence review</a><a href="post-jo-review.html">Post-JO decisions</a></div></div><div class="bottom">© 2026 California Polo Index. All rights reserved.</div></footer>
+<script src="data/tournaments/post-jo-review/runtime.js?v=7.46.0"></script>
+<script src="js/post-jo-review-v7-46.js?v=7.46.0"></script>
+</body>
+</html>
