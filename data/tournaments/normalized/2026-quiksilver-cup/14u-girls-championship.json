@@ -1,0 +1,728 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-quiksilver-cup",
+    "name": "2026 Quiksilver Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "14u-girls-championship",
+    "label": "14U Girls",
+    "season": "2026",
+    "ageGroup": "14U",
+    "gender": "Girls",
+    "division": "Championship",
+    "divisionTier": "D1",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "google_sheets_csv",
+    "spreadsheetId": "18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ",
+    "gid": "701942663",
+    "sheetName": null,
+    "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=701942663#gid=701942663",
+    "fetchedAt": "2026-07-17T18:30:58Z",
+    "mode": "live_fetch",
+    "contentSha256": "3892f7cd98f66e242aa79f3d1906ec04e4b95ab2f1ccf785e00a42040190cdd9",
+    "rowCount": 33,
+    "fetchedUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/export?format=csv&gid=701942663"
+  },
+  "counts": {
+    "games": 10,
+    "finalGames": 10,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 20,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 20,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 20
+  },
+  "games": [
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g01",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G01",
+      "sourceGameNumber": null,
+      "sourceRow": 10,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-ARROYO GRANDE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A2-ARROYO GRANDE",
+          "participantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A5-FOOTHILL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A5-FOOTHILL",
+          "participantId": "tournament-team-2026-14u-girls-a5-foothill",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
+        "winnerTeamId": null,
+        "winnerName": "A2-ARROYO GRANDE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a5-foothill",
+        "loserTeamId": null,
+        "loserName": "A5-FOOTHILL"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g02",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G02",
+      "sourceGameNumber": null,
+      "sourceRow": 11,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-908 WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A1-908 WPC",
+          "participantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3-LB SHORE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A3-LB SHORE",
+          "participantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 11,
+        "whiteRaw": "5",
+        "darkRaw": "11"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+        "winnerTeamId": null,
+        "winnerName": "A3-LB SHORE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+        "loserTeamId": null,
+        "loserName": "A1-908 WPC"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g03",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G03",
+      "sourceGameNumber": null,
+      "sourceRow": 14,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-ARROYO GRANDE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A2-ARROYO GRANDE",
+          "participantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A4-SC ELITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A4-SC ELITE",
+          "participantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 6,
+        "whiteRaw": "13",
+        "darkRaw": "6"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
+        "winnerTeamId": null,
+        "winnerName": "A2-ARROYO GRANDE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+        "loserTeamId": null,
+        "loserName": "A4-SC ELITE"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g04",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G04",
+      "sourceGameNumber": null,
+      "sourceRow": 15,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A3-LB SHORE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A3-LB SHORE",
+          "participantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A5-FOOTHILL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A5-FOOTHILL",
+          "participantId": "tournament-team-2026-14u-girls-a5-foothill",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 2,
+        "whiteRaw": "8",
+        "darkRaw": "2"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+        "winnerTeamId": null,
+        "winnerName": "A3-LB SHORE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a5-foothill",
+        "loserTeamId": null,
+        "loserName": "A5-FOOTHILL"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g05",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G05",
+      "sourceGameNumber": null,
+      "sourceRow": 18,
+      "dateLabel": "11-Jul",
+      "dateIso": "2026-07-11",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "LA SERNA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-908 WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A1-908 WPC",
+          "participantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A4-SC ELITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A4-SC ELITE",
+          "participantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+        "winnerTeamId": null,
+        "winnerName": "A1-908 WPC",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+        "loserTeamId": null,
+        "loserName": "A4-SC ELITE"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g06",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G06",
+      "sourceGameNumber": null,
+      "sourceRow": 22,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "FULLERTON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-ARROYO GRANDE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A2-ARROYO GRANDE",
+          "participantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3-LB SHORE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A3-LB SHORE",
+          "participantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 12,
+        "whiteRaw": "13",
+        "darkRaw": "12"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
+        "winnerTeamId": null,
+        "winnerName": "A2-ARROYO GRANDE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+        "loserTeamId": null,
+        "loserName": "A3-LB SHORE"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g07",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G07",
+      "sourceGameNumber": null,
+      "sourceRow": 23,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "FULLERTON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A4-SC ELITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A4-SC ELITE",
+          "participantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A5-FOOTHILL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A5-FOOTHILL",
+          "participantId": "tournament-team-2026-14u-girls-a5-foothill",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a5-foothill",
+        "winnerTeamId": null,
+        "winnerName": "A5-FOOTHILL",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+        "loserTeamId": null,
+        "loserName": "A4-SC ELITE"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g08",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G08",
+      "sourceGameNumber": null,
+      "sourceRow": 25,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "FULLERTON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-908 WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A1-908 WPC",
+          "participantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2-ARROYO GRANDE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A2-ARROYO GRANDE",
+          "participantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 13,
+        "whiteRaw": "8",
+        "darkRaw": "13"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a2-arroyo-grande",
+        "winnerTeamId": null,
+        "winnerName": "A2-ARROYO GRANDE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+        "loserTeamId": null,
+        "loserName": "A1-908 WPC"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g09",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G09",
+      "sourceGameNumber": null,
+      "sourceRow": 26,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "FULLERTON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A3-LB SHORE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A3-LB SHORE",
+          "participantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A4-SC ELITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A4-SC ELITE",
+          "participantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 8,
+        "whiteRaw": "15",
+        "darkRaw": "8"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a3-lb-shore",
+        "winnerTeamId": null,
+        "winnerName": "A3-LB SHORE",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a4-sc-elite",
+        "loserTeamId": null,
+        "loserName": "A4-SC ELITE"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-quiksilver-cup-14u-girls-championship-14g10",
+      "eventId": "2026-quiksilver-cup",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G10",
+      "sourceGameNumber": null,
+      "sourceRow": 28,
+      "dateLabel": "12-Jul",
+      "dateIso": "2026-07-12",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": null,
+      "venue": "FULLERTON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-908 WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A1-908 WPC",
+          "participantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A5-FOOTHILL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "A5-FOOTHILL",
+          "participantId": "tournament-team-2026-14u-girls-a5-foothill",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 11,
+        "whiteRaw": "6",
+        "darkRaw": "11"
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-a5-foothill",
+        "winnerTeamId": null,
+        "winnerName": "A5-FOOTHILL",
+        "loserParticipantId": "tournament-team-2026-14u-girls-a1-908-wpc",
+        "loserTeamId": null,
+        "loserName": "A1-908 WPC"
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    }
+  ]
+}
