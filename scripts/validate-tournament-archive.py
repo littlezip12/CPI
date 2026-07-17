@@ -24,7 +24,7 @@ archive=load('data/tournaments/archive/index.json')
 site=load('config/site-release.json')
 archive_events=[event for event in registry.get('events',[]) if event.get('archiveSyncEnabled')]
 archive_divisions=[division for event in archive_events for division in event.get('divisions',[])]
-if site.get('version')!=EXPECTED or site.get('tournamentArchiveRelease')!=EXPECTED: fail('Site release must register tournament archive 7.48.0')
+if site.get('tournamentArchiveRelease')!=EXPECTED: fail('Site release must register tournament archive 7.48.0')
 if len(archive_events)!=3 or len(archive_divisions)!=25: fail(f'Expected 3 completed events and 25 archive divisions, found {len(archive_events)} and {len(archive_divisions)}')
 if any(event.get('rankingEvidenceEnabled') is not False for event in archive_events): fail('Every historical archive event must remain quarantined from ranking evidence')
 if archive.get('release')!=EXPECTED or archive.get('schemaVersion')!=1: fail('Archive output must use schemaVersion 1 and release 7.48.0')

@@ -1,9 +1,8 @@
-# CPI 7.48.1
+# CPI 7.48.2
 
-Historical archive source-hash consistency hotfix.
+Historical archive validator compatibility hotfix.
 
-- Canonicalizes Google CSV line endings before parsing, hashing, comparing, and storing source snapshots.
-- Prevents CRLF responses from producing raw/normalized/QA hash mismatches.
-- Repairs stale stored hash metadata when the canonical source content is otherwise unchanged.
-- Adds regression coverage proving LF and CRLF versions of the same tournament source produce identical hashes.
-- Does not change tournament results, rankings, identity logic, or archive evidence policy.
+- Keeps the archive module release pinned to 7.48.0.
+- Allows site-level patch releases such as 7.48.1 and 7.48.2 to pass archive validation.
+- Preserves archive output, evidence quarantine, and ranking protections.
+- Does not change tournament data, scores, identities, or rankings.
