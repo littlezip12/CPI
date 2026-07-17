@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "version": "7.45.0",
-  "name": "JO Live Results & Performance Readiness",
+  "version": "7.45.1",
+  "name": "Tournament Identity Cleanup",
   "date": "2026-07-16",
   "rankingDataRelease": "7.30 v2",
   "joApplicationRelease": "7.44.3",
   "deploymentMode": "migration",
-  "notes": "Builds verified JO performance summaries from final games, derives confirmed division placements from placement games, and keeps ranking review operational once live scores begin.",
+  "notes": "Removes bracket and pool placeholders from tournament identities, strips seed/pool prefixes before canonical matching, fixes Girls JO positional-header ingestion, and separates live source verification time from content timestamps.",
   "identityRelease": "7.40.0",
-  "tournamentDataRelease": "7.43.0",
-  "tournamentEvidenceRelease": "7.43.0",
-  "tournamentHealthRelease": "7.43.0",
+  "tournamentDataRelease": "7.45.1",
+  "tournamentEvidenceRelease": "7.45.1",
+  "tournamentHealthRelease": "7.45.1",
   "rankingReviewRelease": "7.44.0",
   "joPerformanceRelease": "7.45.0"
 }

@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "release": "7.43.0",
-  "generatedAt": "2026-07-16T06:16:18Z",
+  "release": "7.45.1",
+  "generatedAt": "2026-07-17T02:21:12Z",
   "timezone": "America/Los_Angeles",
   "staleAfterHours": 6,
-  "policy": "One registered source publishes each division. Invalid or stale responses never replace the last known-good tournament snapshot.",
+  "policy": "One registered source publishes each division. Successful live checks refresh verification time even when content is unchanged; invalid responses preserve the last known-good snapshot.",
   "counts": {
     "sources": 23,
     "joSources": 23,
@@ -14,8 +14,8 @@
     "error": 0,
     "blocked": 0,
     "bankedDatasets": 23,
-    "games": 3927,
-    "scheduledGames": 3927,
+    "games": 3924,
+    "scheduledGames": 3924,
     "completedGames": 0
   },
   "sources": [
@@ -34,15 +34,15 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
-        "games": 76,
-        "scheduledGames": 76,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
+        "games": 75,
+        "scheduledGames": 75,
         "completedGames": 0,
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 49
+        "reviewItems": 36
       },
       "source": {
         "provider": "Google Sheets",
@@ -56,7 +56,9 @@
         "ageHours": 21.7,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:36:38Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -74,15 +76,15 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 146,
         "scheduledGames": 146,
         "completedGames": 0,
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 120
+        "reviewItems": 72
       },
       "source": {
         "provider": "Google Sheets",
@@ -96,7 +98,9 @@
         "ageHours": 21.7,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:36:42Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -114,15 +118,15 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 87,
         "scheduledGames": 87,
         "completedGames": 0,
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 142
+        "reviewItems": 28
       },
       "source": {
         "provider": "Google Sheets",
@@ -136,7 +140,9 @@
         "ageHours": 21.7,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:36:50Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -154,15 +160,15 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 182,
         "scheduledGames": 182,
         "completedGames": 0,
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 119
+        "reviewItems": 54
       },
       "source": {
         "provider": "Google Sheets",
@@ -176,7 +182,9 @@
         "ageHours": 21.7,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:36:57Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -194,15 +202,15 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 208,
         "scheduledGames": 208,
         "completedGames": 0,
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 142
+        "reviewItems": 52
       },
       "source": {
         "provider": "Google Sheets",
@@ -216,7 +224,9 @@
         "ageHours": 10.6,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T19:37:49Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -234,8 +244,8 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 192,
         "scheduledGames": 192,
         "completedGames": 0,
@@ -256,7 +266,9 @@
         "ageHours": 21.7,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:37:11Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -274,15 +286,15 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 157,
         "scheduledGames": 157,
         "completedGames": 0,
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 156
+        "reviewItems": 27
       },
       "source": {
         "provider": "Google Sheets",
@@ -296,7 +308,9 @@
         "ageHours": 21.6,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:37:18Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -314,8 +328,8 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 192,
         "scheduledGames": 192,
         "completedGames": 0,
@@ -336,7 +350,9 @@
         "ageHours": 21.6,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:37:25Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -354,15 +370,15 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 182,
         "scheduledGames": 182,
         "completedGames": 0,
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 220
+        "reviewItems": 47
       },
       "source": {
         "provider": "Google Sheets",
@@ -376,7 +392,9 @@
         "ageHours": 12.6,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T17:40:42Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -394,8 +412,8 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
         "games": 192,
         "scheduledGames": 192,
         "completedGames": 0,
@@ -416,7 +434,9 @@
         "ageHours": 21.6,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:37:39Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -434,15 +454,15 @@
       "phase": "schedule_banked",
       "healthStatus": "stale",
       "schedule": {
-        "firstDate": null,
-        "lastDate": null,
-        "games": 180,
-        "scheduledGames": 180,
+        "firstDate": "2026-07-18",
+        "lastDate": "2026-07-21",
+        "games": 178,
+        "scheduledGames": 178,
         "completedGames": 0,
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 191
+        "reviewItems": 43
       },
       "source": {
         "provider": "Google Sheets",
@@ -456,7 +476,9 @@
         "ageHours": 21.6,
         "mode": "live_fetch",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-15T08:37:45Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -482,7 +504,7 @@
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 116
+        "reviewItems": 68
       },
       "source": {
         "provider": "Google Sheets",
@@ -496,7 +518,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -536,7 +560,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -562,7 +588,7 @@
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 262
+        "reviewItems": 68
       },
       "source": {
         "provider": "Google Sheets",
@@ -576,7 +602,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -616,7 +644,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -642,7 +672,7 @@
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 202
+        "reviewItems": 42
       },
       "source": {
         "provider": "Google Sheets",
@@ -656,7 +686,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -682,7 +714,7 @@
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 212
+        "reviewItems": 70
       },
       "source": {
         "provider": "Google Sheets",
@@ -696,7 +728,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -736,7 +770,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -762,7 +798,7 @@
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 200
+        "reviewItems": 40
       },
       "source": {
         "provider": "Google Sheets",
@@ -776,7 +812,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -802,7 +840,7 @@
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 198
+        "reviewItems": 38
       },
       "source": {
         "provider": "Google Sheets",
@@ -816,7 +854,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -856,7 +896,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -882,7 +924,7 @@
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 200
+        "reviewItems": 40
       },
       "source": {
         "provider": "Google Sheets",
@@ -896,7 +938,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     },
     {
@@ -922,7 +966,7 @@
         "zeroZeroPlaceholders": 0,
         "partialScores": 0,
         "blockers": 0,
-        "reviewItems": 120
+        "reviewItems": 40
       },
       "source": {
         "provider": "Google Sheets",
@@ -936,7 +980,9 @@
         "ageHours": 0.0,
         "mode": "cached_raw",
         "warning": null,
-        "error": null
+        "error": null,
+        "contentFetchedAt": "2026-07-16T06:16:00Z",
+        "lastVerifiedAt": null
       }
     }
   ]

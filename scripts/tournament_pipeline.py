@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared CPI tournament ingestion and normalization helpers (release 7.43.0)."""
+"""Shared CPI tournament ingestion and normalization helpers (release 7.45.1)."""
 from __future__ import annotations
 
 import csv
@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = "7.43.0"
+RELEASE = "7.45.1"
 SCHEMA_VERSION = 1
 TIMEZONE = "America/Los_Angeles"
 
@@ -91,18 +91,69 @@ class IdentityResolver:
         return {**team, "_matchType": "unique_unscoped_alias"}
 
 
-PURE_BRACKET_RE = re.compile(r"^[WL]\s*(?:#\s*)?\d[A-Z0-9]*(?:/[A-Z0-9]+)?$", re.I)
-PURE_SLOT_RE = re.compile(r"^(?:(?:pt|au)[_\s-]*[A-Z]\d+|[A-Z]{1,3}\d+\s*\([^)]*\))$", re.I)
-PLACEMENT_SLOT_RE = re.compile(r"^\d+(?:st|nd|rd|th)\s+(?:(?:pt|au)[_\s-]*[A-Z]-?|[A-Z]{1,3}\d*)$", re.I)
-RESOLVED_PREFIXES = [
-    re.compile(r"^\(\s*(?P<ref>[WL]\s*#?\s*[A-Z0-9/]+|\d+(?:st|nd|rd|th)\s*[A-Z]?|[A-Z]{1,3}\d{1,2})\s*\)\s*[-:]\s*(?P<team>.+)$", re.I),
-    re.compile(r"^(?P<ref>[WL]\s*#?\s*[A-Z0-9]+(?:/[A-Z0-9]+)?)\s*[-:]\s*(?P<team>.+)$", re.I),
-    re.compile(r"^(?P<ref>[A-Z]{1,3}\d{1,2}\s*\([^)]*\))\s*[-:]\s*(?P<team>.+)$", re.I),
-    re.compile(r"^(?P<ref>\d+(?:st|nd|rd|th)\s*[A-Z]?)\s*[-:]\s*(?P<team>.+)$", re.I),
-    re.compile(r"^(?P<ref>pt[_\s-]*[A-Z]?\d+)\s*[-:]\s*(?P<team>.+)$", re.I),
-]
+PURE_BRACKET_RE = re.compile(r"^[WL]\s*(?:#\s*[A-Z0-9]+(?:/[A-Z0-9]+)?|\d[A-Z0-9]*(?:/[A-Z0-9]+)?)(?:\([^)]*\))?$", re.I)
+PURE_SLOT_RE = re.compile(r"^(?:(?:ag|au|bz|cu|ni|pt)[_\s-]*[A-Z]{1,2}\d+(?:\([^)]*\))*|[A-Z]{1,4}\d*\s*\([^)]*\))$", re.I)
+ORDINAL_SLOT_RE = re.compile(
+    r"^\d+(?:st|nd|rd|th)[_\s-]*(?:(?:ag|au|bz|cu|ni|pt)[_\s-]*)?[A-Z](?:\d+)?(?:\s*\([WL]\d+[A-Z]?\))?$",
+    re.I,
+)
+WL_SLOT_DESTINATION_RE = re.compile(
+    r"^(?P<ref>[WL]\s*(?:#\s*[A-Z0-9]+(?:/[A-Z0-9]+)?|\d[A-Z0-9]*(?:/[A-Z0-9]+)?)(?:\([^)]*\))?)\s*[-:]\s*(?P<slot>.+)$",
+    re.I,
+)
 SEED_RE = re.compile(r"^\s*#?(?P<seed>\d+)\s*[-–—:]\s*(?P<team>.+)$")
 PLACEHOLDER_RE = re.compile(r"^(?:TBD|TBA|BYE|W|L|-|N/?A)$", re.I)
+
+# A resolved tournament label often carries a bracket/pool reference before the
+# real team name. The reference is preserved as metadata while only the team
+# portion is sent through canonical identity resolution.
+RESOLVED_PREFIXES = [
+    re.compile(
+        r"^\(\s*(?P<ref>[WL]\s*#?\s*[A-Z0-9/]+(?:\([^)]*\))?|\d+(?:st|nd|rd|th)\s*[A-Z0-9_]*|[A-Z]{1,4}\d*\s*\([^)]*\))\s*\)\s*[-:]\s*(?P<team>.+)$",
+        re.I,
+    ),
+    re.compile(
+        r"^(?P<ref>[WL]\s*#?\s*[A-Z0-9/]+(?:\([^)]*\))?)\s*[-:]\s*(?P<team>.+)$",
+        re.I,
+    ),
+    re.compile(
+        r"^(?P<ref>[A-Z]{1,4}\d*\s*\((?P<meta>[^)]*)\))\s*[-:]\s*(?P<team>.+)$",
+        re.I,
+    ),
+    re.compile(
+        r"^(?P<ref>\d+(?:st|nd|rd|th)\s*(?:(?:ag|au|bz|cu|ni|pt)[_\s-]*)?[A-Z](?:\d+)?)\s*[-:]\s*(?P<team>.+)$",
+        re.I,
+    ),
+    re.compile(r"^(?P<ref>(?:pt|au)[_\s-]*[A-Z]\d+)\s*[-:]\s*(?P<team>.+)$", re.I),
+]
+
+
+def bracket_slot_token(value: Any) -> bool:
+    """Return True when a value is a bracket/pool slot rather than a team."""
+    text = normalize_space(value).replace("–", "-").replace("—", "-").strip()
+    if not text:
+        return False
+    text = text.rstrip("-: ").strip()
+    if not text:
+        return True
+    if PLACEHOLDER_RE.fullmatch(text):
+        return True
+    if PURE_BRACKET_RE.fullmatch(text) or PURE_SLOT_RE.fullmatch(text) or ORDINAL_SLOT_RE.fullmatch(text):
+        return True
+    # Winner/loser destinations such as W29-3rdC and L25-2ndD are still
+    # unresolved bracket slots. A suffix that is itself a slot cannot be a team.
+    match = WL_SLOT_DESTINATION_RE.fullmatch(text)
+    if match and bracket_slot_token(match.group("slot")):
+        return True
+    return False
+
+
+def reference_seed(reference: str | None) -> int | None:
+    """Extract a numeric tournament seed carried inside a source reference."""
+    if not reference:
+        return None
+    match = re.search(r"\(\s*(\d+)\s*\)\s*$", reference)
+    return int(match.group(1)) if match else None
 
 JO_GAME_NUMBER_RE = re.compile(r"^\d+[A-Z]?$", re.I)
 JO_GAME_ID_RE = re.compile(r"^[A-Z0-9_-]+-\d+[A-Z]?$", re.I)
@@ -141,6 +192,21 @@ def detect_header(row: list[str]) -> dict[str, int] | None:
     if mapping["date"] < 0 and mapping["time"] < 0 and mapping["game_number"] < 0 and mapping["game_id"] < 0:
         return None
     white, dark = mapping["white"], mapping["dark"]
+    # Some official JO sheets intentionally leave Date, Time, Gm #, W To, and
+    # L To header cells blank while retaining a stable positional layout around
+    # Type/Location/White/Dark/GMID. Infer only those missing indices.
+    stage, venue, game_id = mapping["stage"], mapping["venue"], mapping["game_id"]
+    if mapping["date"] < 0 and stage >= 2:
+        mapping["date"] = stage - 2
+    if mapping["time"] < 0 and stage >= 1:
+        mapping["time"] = stage - 1
+    if mapping["game_number"] < 0 and venue >= 0 and white - venue >= 2:
+        mapping["game_number"] = white - 1
+    if game_id >= 2:
+        if mapping["winner_to"] < 0:
+            mapping["winner_to"] = game_id - 2
+        if mapping["loser_to"] < 0:
+            mapping["loser_to"] = game_id - 1
     winner_to = mapping["winner_to"]
     mapping["white_score"] = next((i for i, value in enumerate(headers) if white < i < dark and value in {"s", "score"}), -1)
     mapping["dark_score"] = next((i for i, value in enumerate(headers) if i > dark and (winner_to < 0 or i < winner_to) and value in {"s", "score"}), -1)
@@ -205,28 +271,48 @@ def parse_participant(raw: Any, scope: dict[str, str], resolver: IdentityResolve
     if PLACEHOLDER_RE.fullmatch(original):
         result["kind"] = "placeholder"
         return result
-    if PURE_BRACKET_RE.fullmatch(original) or PURE_SLOT_RE.fullmatch(original) or PLACEMENT_SLOT_RE.fullmatch(original):
-        result.update({"kind": "bracket_reference", "sourceReference": re.sub(r"\s+", "", original), "identityStatus": "not_applicable"})
+    if bracket_slot_token(original):
+        result.update({
+            "kind": "bracket_reference",
+            "sourceReference": re.sub(r"\s+", "", original.rstrip("-: ")),
+            "identityStatus": "not_applicable",
+        })
         return result
 
     source_reference = None
+    source_seed = None
     team_text = original
     for pattern in RESOLVED_PREFIXES:
         match = pattern.match(team_text)
-        if match:
-            source_reference = normalize_space(match.group("ref"))
-            team_text = normalize_space(match.group("team"))
-            break
+        if not match:
+            continue
+        candidate_team = normalize_space(match.group("team"))
+        # Examples such as W29-3rdC are destinations, not resolved teams.
+        if bracket_slot_token(candidate_team):
+            result.update({
+                "kind": "bracket_reference",
+                "sourceReference": re.sub(r"\s+", "", original.rstrip("-: ")),
+                "identityStatus": "not_applicable",
+            })
+            return result
+        source_reference = normalize_space(match.group("ref"))
+        source_seed = reference_seed(source_reference)
+        team_text = candidate_team
+        break
 
     seed_match = SEED_RE.match(team_text)
-    seed = None
+    seed = source_seed
     if seed_match:
         seed = int(seed_match.group("seed"))
         team_text = normalize_space(seed_match.group("team"))
 
-    team_text = re.sub(r"\s*\([^)]*\)\s*$", "", team_text).strip()
-    if not team_text or PLACEHOLDER_RE.fullmatch(team_text) or PURE_BRACKET_RE.fullmatch(team_text):
-        result.update({"kind": "placeholder", "sourceReference": source_reference})
+    team_text = re.sub(r"\s*\(Seed-Team Name\)\s*$", "", team_text, flags=re.I).strip()
+    if not team_text or PLACEHOLDER_RE.fullmatch(team_text) or bracket_slot_token(team_text):
+        result.update({
+            "kind": "bracket_reference" if source_reference or bracket_slot_token(team_text) else "placeholder",
+            "sourceReference": source_reference or re.sub(r"\s+", "", original.rstrip("-: ")),
+            "identityStatus": "not_applicable",
+        })
         return result
 
     identity = resolver.resolve_team(
@@ -325,6 +411,10 @@ def normalize_csv(
             continue
         date_label, time_label = get("date"), get("time")
         game_number_raw, source_game_id = get("game_number"), get("game_id")
+        if not game_number_raw and JO_GAME_ID_RE.fullmatch(source_game_id):
+            inferred_number = source_game_id.rsplit("-", 1)[-1]
+            if JO_GAME_NUMBER_RE.fullmatch(inferred_number):
+                game_number_raw = inferred_number
         if not (date_label or time_label or game_number_raw or source_game_id):
             continue
         if division.get("parser") == "jo_bracket_v1":

@@ -11,7 +11,7 @@ from typing import Any
 
 from tournament_pipeline import ROOT, identity_normalize, load_json, slugify, write_json
 
-RELEASE = "7.43.0"
+RELEASE = "7.45.1"
 IDENTITY_RELEASE = "7.40.0"
 NORMALIZED_ROOT = ROOT / "data" / "tournaments" / "normalized"
 EVIDENCE_ROOT = ROOT / "data" / "tournaments" / "evidence"
@@ -19,8 +19,8 @@ TOURNAMENT_IDENTITY_ROOT = ROOT / "data" / "tournaments" / "identity"
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 RANKINGS_PATH = ROOT / "rankings.json"
 IDENTITY_INDEX_PATH = ROOT / "data" / "identity" / "index.json"
-QA_JSON_PATH = ROOT / "qa" / "tournament-evidence-summary-7.43.0.json"
-QA_CSV_PATH = ROOT / "qa" / "tournament-identity-review-7.43.0.csv"
+QA_JSON_PATH = ROOT / "qa" / "tournament-evidence-summary-7.45.1.json"
+QA_CSV_PATH = ROOT / "qa" / "tournament-identity-review-7.45.1.csv"
 
 
 def now_iso() -> str:

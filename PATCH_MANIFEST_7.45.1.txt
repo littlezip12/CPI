@@ -1,0 +1,28 @@
+CPI 7.45.1 — Tournament Identity Cleanup
+
+PURPOSE
+- Prevent bracket slots, pool placements, and winner/loser destinations from becoming fake team identities.
+- Strip tournament pool/seed prefixes before canonical identity resolution.
+- Fix Girls JO positional-header ingestion and preserve lettered games.
+- Correct source freshness so unchanged successful live checks remain current.
+- Remove tracked macOS metadata artifacts.
+
+VERIFIED CLEANUP RESULTS
+- 3,924 actual JO schedule records
+- 0 completed games
+- 973 real participant identities
+- 248 canonical CPI team matches
+- 725 tournament-only real teams
+- 6,520 bracket/pool references stored as structured metadata
+- 713 source-prefixed real team labels cleaned before identity matching
+- 0 new release blockers
+
+IMPORTANT INSTALL STEP
+Delete these tracked artifacts before running release-check:
+- .DS_Store
+- data/.DS_Store
+- data/site-flow-qa-7-15.textClipping
+- data/tournaments/normalized/2026-jo-weekend-2/manifest.json (obsolete duplicate)
+- data/tournaments/qa/2026-jo-weekend-2/sync-latest.json (obsolete misplaced report)
+
+Use INSTALL_7.45.1.md for the exact commands.

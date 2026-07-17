@@ -45,6 +45,9 @@ jobs:
       - name: Validate normalized tournament data
         run: python3 scripts/validate-tournament-data.py
 
+      - name: Validate tournament identity cleanup
+        run: python3 scripts/validate-tournament-identity-cleanup.py
+
       - name: Validate tournament evidence integration
         run: python3 scripts/validate-tournament-evidence.py
 
@@ -82,8 +85,8 @@ jobs:
             data/tournaments/identity \
             data/tournaments/ranking-review-engine \
             data/tournaments/jo-performance \
-            qa/tournament-evidence-summary-7.43.0.json \
-            qa/tournament-identity-review-7.43.0.csv \
+            qa/tournament-evidence-summary-7.45.1.json \
+            qa/tournament-identity-review-7.45.1.csv \
             qa/ranking-review-engine-7.44.0.json \
             qa/jo-performance-engine-7.45.0.json
           if git diff --cached --quiet; then

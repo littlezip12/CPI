@@ -9,10 +9,12 @@ import subprocess
 import sys
 from pathlib import Path
 
+from tournament_pipeline import bracket_slot_token
+
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
-EXPECTED_RELEASE = "7.43.0"
+EXPECTED_RELEASE = "7.45.1"
 ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
 ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
 errors: list[str] = []
@@ -180,6 +182,9 @@ for item in datasets:
         game_ids.add(game_id)
         if not isinstance(game.get("sourceRow"), int) or game["sourceRow"] < 1:
             fail(f"Game lacks source-row traceability in {key}: {game_id}")
+        if data.get("division", {}).get("parser") == "jo_bracket_v1":
+            if not game.get("dateLabel") or not game.get("timeLabel") or game.get("sourceGameNumber") is None:
+                fail(f"JO schedule record lacks date/time/game number in {key}: {game_id}")
         if game.get("status") not in {"scheduled", "final"}:
             fail(f"Invalid game status in {key}: {game_id}")
         score_state = game.get("scoreState")
@@ -197,8 +202,9 @@ for item in datasets:
             name = str(participant.get("displayName") or "")
             if kind == "team" and re.match(r"^\s*#?\d+\s*[-–—:]", name):
                 fail(f"Tournament seed leaked into normalized team name in {key}/{game_id}/{side}: {name}")
-            if kind == "team" and re.fullmatch(r"[WL]\s*(?:#\s*)?\d[A-Z0-9]*(?:/[A-Z0-9]+)?", name, re.I):
-                fail(f"Bracket reference was classified as a team in {key}/{game_id}/{side}: {name}")
+            raw_name = str(participant.get("raw") or "")
+            if kind == "team" and (bracket_slot_token(name) or bracket_slot_token(raw_name)):
+                fail(f"Bracket/pool slot was classified as a team in {key}/{game_id}/{side}: raw={raw_name!r}, name={name!r}")
             if kind == "team" and not participant.get("participantId"):
                 fail(f"Team participant lacks a stable participant ID in {key}/{game_id}/{side}")
             if kind == "team" and participant.get("teamId") and participant.get("participantId") != participant.get("teamId"):
@@ -216,7 +222,7 @@ for item in datasets:
 
 bootstrap = ("2026-jo-weekend-1", "14u-girls-championship")
 if bootstrap not in manifest_keys:
-    fail("7.43 must retain the 14U Girls Championship bootstrap snapshot")
+    fail("7.45.1 must retain the 14U Girls Championship bootstrap snapshot")
 else:
     path = ROOT / "data" / "tournaments" / "normalized" / bootstrap[0] / f"{bootstrap[1]}.json"
     data = load(path) or {}
@@ -241,7 +247,7 @@ if not workflow.exists():
     fail("Missing automated tournament snapshot workflow")
 else:
     workflow_text = workflow.read_text(encoding="utf-8")
-    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "build-tournament-evidence.py", "build-tournament-health.py", "validate-tournament-data.py", "validate-tournament-health.py", "contents: write", "data/tournaments/evidence", "data/tournaments/health", "build-jo-performance.py", "data/tournaments/jo-performance"]:
+    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "build-tournament-evidence.py", "build-tournament-health.py", "validate-tournament-data.py", "validate-tournament-identity-cleanup.py", "validate-tournament-health.py", "contents: write", "data/tournaments/evidence", "data/tournaments/health", "build-jo-performance.py", "data/tournaments/jo-performance"]:
         if token not in workflow_text:
             fail(f"Tournament sync workflow is missing required token: {token}")
 

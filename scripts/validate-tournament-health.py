@@ -7,7 +7,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-EXPECTED_RELEASE = "7.43.0"
+EXPECTED_RELEASE = "7.45.1"
 errors: list[str] = []
 
 
@@ -84,6 +84,10 @@ if counts.get("games") != sum(int(row.get("schedule", {}).get("games") or 0) for
     fail("Tournament health aggregate game count mismatch")
 if counts.get("completedGames") != sum(int(row.get("schedule", {}).get("completedGames") or 0) for row in rows):
     fail("Tournament health aggregate completed-game count mismatch")
+if counts.get("games") != manifest.get("counts", {}).get("games"):
+    fail("Tournament health game count must match normalized manifest")
+if counts.get("completedGames") != manifest.get("counts", {}).get("finalGames"):
+    fail("Tournament health completed-game count must match normalized manifest")
 
 sync_event_ids = {event.get("id") for event in registry.get("events", []) if event.get("syncEnabled")}
 manifest_keys = {(item.get("eventId"), item.get("divisionId")) for item in manifest.get("datasets", []) if item.get("eventId") in sync_event_ids}
@@ -106,7 +110,7 @@ for rel in [
         fail(f"Missing tournament source-health interface file: {rel}")
 
 html = (ROOT / "tournament-source-health.html").read_text(encoding="utf-8") if (ROOT / "tournament-source-health.html").exists() else ""
-for token in ["data/tournaments/health/runtime.js?v=7.43.0", "js/tournament-source-health.js?v=7.43.0", "sourceHealthRows"]:
+for token in ["data/tournaments/health/runtime.js?v=7.45.1", "js/tournament-source-health.js?v=7.45.1", "sourceHealthRows"]:
     if token not in html:
         fail(f"Tournament source-health page is missing required token: {token}")
 

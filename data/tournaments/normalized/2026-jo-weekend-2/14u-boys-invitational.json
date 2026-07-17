@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "7.43.0",
+  "release": "7.45.1",
   "identityRelease": "7.40.0",
   "event": {
     "id": "2026-jo-weekend-2",
@@ -34,13 +34,13 @@
     "scheduledGames": 146,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
-    "teamParticipants": 212,
-    "resolvedTeamParticipants": 0,
-    "unresolvedTeamParticipants": 212,
-    "bracketReferences": 80,
+    "teamParticipants": 72,
+    "resolvedTeamParticipants": 2,
+    "unresolvedTeamParticipants": 70,
+    "bracketReferences": 220,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 212
+    "reviewItems": 70
   },
   "games": [
     {
@@ -67,23 +67,23 @@
         "white": {
           "raw": "A(1)-NSD STARS",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "A(1)-NSD STARS",
-          "participantId": "tournament-team-2026-14u-boys-a-1-nsd-stars",
+          "seed": 1,
+          "sourceReference": "A(1)",
+          "displayName": "NSD STARS",
+          "participantId": "tournament-team-2026-14u-boys-nsd-stars",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-nsd-stars",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A(25)-LA JOLLA C",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "A(25)-LA JOLLA C",
-          "participantId": "tournament-team-2026-14u-boys-a-25-la-jolla-c",
+          "seed": 25,
+          "sourceReference": "A(25)",
+          "displayName": "LA JOLLA C",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-c",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -131,10 +131,10 @@
         "white": {
           "raw": "B(2)-SOUTH COAST WHITE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "B(2)-SOUTH COAST WHITE",
-          "participantId": "tournament-team-2026-14u-boys-b-2-south-coast-white",
+          "seed": 2,
+          "sourceReference": "B(2)",
+          "displayName": "SOUTH COAST WHITE",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -144,15 +144,15 @@
         "dark": {
           "raw": "B(26)-BREA OLINDA",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "B(26)-BREA OLINDA",
-          "participantId": "tournament-team-2026-14u-boys-b-26-brea-olinda",
+          "seed": 26,
+          "sourceReference": "B(26)",
+          "displayName": "BREA OLINDA",
+          "participantId": "tournament-team-2026-14u-boys-brea-olinda",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-brea-olinda",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -195,28 +195,28 @@
         "white": {
           "raw": "C(3)-SOCAL",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "C(3)-SOCAL",
-          "participantId": "tournament-team-2026-14u-boys-c-3-socal",
+          "seed": 3,
+          "sourceReference": "C(3)",
+          "displayName": "SOCAL",
+          "participantId": "tournament-team-2026-14u-boys-socal",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-socal",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C(27)-AMERICAN RIVER B",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "C(27)-AMERICAN RIVER B",
-          "participantId": "tournament-team-2026-14u-boys-c-27-american-river-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "seed": 27,
+          "sourceReference": "C(27)",
+          "displayName": "American River B",
+          "participantId": "team-2026-14u-boys-american-river-b",
+          "teamId": "team-2026-14u-boys-american-river-b",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -259,23 +259,23 @@
         "white": {
           "raw": "D(4)-BACK BAY",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "D(4)-BACK BAY",
-          "participantId": "tournament-team-2026-14u-boys-d-4-back-bay",
+          "seed": 4,
+          "sourceReference": "D(4)",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2026-14u-boys-back-bay",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-back-bay",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D(28)-OCWPC RED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "D(28)-OCWPC RED",
-          "participantId": "tournament-team-2026-14u-boys-d-28-ocwpc-red",
+          "seed": 28,
+          "sourceReference": "D(28)",
+          "displayName": "OCWPC RED",
+          "participantId": "tournament-team-2026-14u-boys-ocwpc-red",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -323,10 +323,10 @@
         "white": {
           "raw": "A(24)-SOVA",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "A(24)-SOVA",
-          "participantId": "tournament-team-2026-14u-boys-a-24-sova",
+          "seed": 24,
+          "sourceReference": "A(24)",
+          "displayName": "SOVA",
+          "participantId": "tournament-team-2026-14u-boys-sova",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -336,10 +336,10 @@
         "dark": {
           "raw": "A(25)-LA JOLLA C",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "A(25)-LA JOLLA C",
-          "participantId": "tournament-team-2026-14u-boys-a-25-la-jolla-c",
+          "seed": 25,
+          "sourceReference": "A(25)",
+          "displayName": "LA JOLLA C",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-c",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -387,10 +387,10 @@
         "white": {
           "raw": "B(23)-PAC",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "B(23)-PAC",
-          "participantId": "tournament-team-2026-14u-boys-b-23-pac",
+          "seed": 23,
+          "sourceReference": "B(23)",
+          "displayName": "PAC",
+          "participantId": "tournament-team-2026-14u-boys-pac",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -400,15 +400,15 @@
         "dark": {
           "raw": "B(26)-BREA OLINDA",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "B(26)-BREA OLINDA",
-          "participantId": "tournament-team-2026-14u-boys-b-26-brea-olinda",
+          "seed": 26,
+          "sourceReference": "B(26)",
+          "displayName": "BREA OLINDA",
+          "participantId": "tournament-team-2026-14u-boys-brea-olinda",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-brea-olinda",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -451,28 +451,28 @@
         "white": {
           "raw": "C(22)-MID PEN",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "C(22)-MID PEN",
-          "participantId": "tournament-team-2026-14u-boys-c-22-mid-pen",
+          "seed": 22,
+          "sourceReference": "C(22)",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-14u-boys-mid-pen",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-mid-pen",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C(27)-AMERICAN RIVER B",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "C(27)-AMERICAN RIVER B",
-          "participantId": "tournament-team-2026-14u-boys-c-27-american-river-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "seed": 27,
+          "sourceReference": "C(27)",
+          "displayName": "American River B",
+          "participantId": "team-2026-14u-boys-american-river-b",
+          "teamId": "team-2026-14u-boys-american-river-b",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -515,23 +515,23 @@
         "white": {
           "raw": "D(21)-BURLINGAME",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "D(21)-BURLINGAME",
-          "participantId": "tournament-team-2026-14u-boys-d-21-burlingame",
+          "seed": 21,
+          "sourceReference": "D(21)",
+          "displayName": "BURLINGAME",
+          "participantId": "tournament-team-2026-14u-boys-burlingame",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-burlingame",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D(28)-OCWPC RED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "D(28)-OCWPC RED",
-          "participantId": "tournament-team-2026-14u-boys-d-28-ocwpc-red",
+          "seed": 28,
+          "sourceReference": "D(28)",
+          "displayName": "OCWPC RED",
+          "participantId": "tournament-team-2026-14u-boys-ocwpc-red",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -579,23 +579,23 @@
         "white": {
           "raw": "A(1)-NSD STARS",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "A(1)-NSD STARS",
-          "participantId": "tournament-team-2026-14u-boys-a-1-nsd-stars",
+          "seed": 1,
+          "sourceReference": "A(1)",
+          "displayName": "NSD STARS",
+          "participantId": "tournament-team-2026-14u-boys-nsd-stars",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-nsd-stars",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "A(24)-SOVA",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "A(24)-SOVA",
-          "participantId": "tournament-team-2026-14u-boys-a-24-sova",
+          "seed": 24,
+          "sourceReference": "A(24)",
+          "displayName": "SOVA",
+          "participantId": "tournament-team-2026-14u-boys-sova",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -643,10 +643,10 @@
         "white": {
           "raw": "B(2)-SOUTH COAST WHITE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "B(2)-SOUTH COAST WHITE",
-          "participantId": "tournament-team-2026-14u-boys-b-2-south-coast-white",
+          "seed": 2,
+          "sourceReference": "B(2)",
+          "displayName": "SOUTH COAST WHITE",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -656,10 +656,10 @@
         "dark": {
           "raw": "B(23)-PAC",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "B(23)-PAC",
-          "participantId": "tournament-team-2026-14u-boys-b-23-pac",
+          "seed": 23,
+          "sourceReference": "B(23)",
+          "displayName": "PAC",
+          "participantId": "tournament-team-2026-14u-boys-pac",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -707,28 +707,28 @@
         "white": {
           "raw": "C(3)-SOCAL",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "C(3)-SOCAL",
-          "participantId": "tournament-team-2026-14u-boys-c-3-socal",
+          "seed": 3,
+          "sourceReference": "C(3)",
+          "displayName": "SOCAL",
+          "participantId": "tournament-team-2026-14u-boys-socal",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-socal",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C(22)-MID PEN",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "C(22)-MID PEN",
-          "participantId": "tournament-team-2026-14u-boys-c-22-mid-pen",
+          "seed": 22,
+          "sourceReference": "C(22)",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-14u-boys-mid-pen",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-mid-pen",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -771,28 +771,28 @@
         "white": {
           "raw": "D(4)-BACK BAY",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "D(4)-BACK BAY",
-          "participantId": "tournament-team-2026-14u-boys-d-4-back-bay",
+          "seed": 4,
+          "sourceReference": "D(4)",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2026-14u-boys-back-bay",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-back-bay",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D(21)-BURLINGAME",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "D(21)-BURLINGAME",
-          "participantId": "tournament-team-2026-14u-boys-d-21-burlingame",
+          "seed": 21,
+          "sourceReference": "D(21)",
+          "displayName": "BURLINGAME",
+          "participantId": "tournament-team-2026-14u-boys-burlingame",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-burlingame",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -834,29 +834,29 @@
       "participants": {
         "white": {
           "raw": "2nd A-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd A-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-a",
+          "sourceReference": "2ndA",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd B-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd B-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-b",
+          "sourceReference": "3rdB",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -906,29 +906,29 @@
       "participants": {
         "white": {
           "raw": "2nd B-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd B-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-b",
+          "sourceReference": "2ndB",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd A-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd A-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-a",
+          "sourceReference": "3rdA",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -978,29 +978,29 @@
       "participants": {
         "white": {
           "raw": "2nd C-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd C-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-c",
+          "sourceReference": "2ndC",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd D-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd D-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-d",
+          "sourceReference": "3rdD",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -1050,29 +1050,29 @@
       "participants": {
         "white": {
           "raw": "2nd D-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd D-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-d",
+          "sourceReference": "2ndD",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd C-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd C-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-c",
+          "sourceReference": "3rdC",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -1123,10 +1123,10 @@
         "white": {
           "raw": "H(8)-NORCAL TEAL",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "H(8)-NORCAL TEAL",
-          "participantId": "tournament-team-2026-14u-boys-h-8-norcal-teal",
+          "seed": 8,
+          "sourceReference": "H(8)",
+          "displayName": "NORCAL TEAL",
+          "participantId": "tournament-team-2026-14u-boys-norcal-teal",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1136,10 +1136,10 @@
         "dark": {
           "raw": "H(32)-VALLEY UNITED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "H(32)-VALLEY UNITED",
-          "participantId": "tournament-team-2026-14u-boys-h-32-valley-united",
+          "seed": 32,
+          "sourceReference": "H(32)",
+          "displayName": "VALLEY UNITED",
+          "participantId": "tournament-team-2026-14u-boys-valley-united",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1187,23 +1187,23 @@
         "white": {
           "raw": "G(7)-CHAWP",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "G(7)-CHAWP",
-          "participantId": "tournament-team-2026-14u-boys-g-7-chawp",
+          "seed": 7,
+          "sourceReference": "G(7)",
+          "displayName": "CHAWP",
+          "participantId": "tournament-team-2026-14u-boys-chawp",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-chawp",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "G(31)-CIU COAST",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "G(31)-CIU COAST",
-          "participantId": "tournament-team-2026-14u-boys-g-31-ciu-coast",
+          "seed": 31,
+          "sourceReference": "G(31)",
+          "displayName": "CIU COAST",
+          "participantId": "tournament-team-2026-14u-boys-ciu-coast",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1251,10 +1251,10 @@
         "white": {
           "raw": "F(6)-PALOS VERDES BLUE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "F(6)-PALOS VERDES BLUE",
-          "participantId": "tournament-team-2026-14u-boys-f-6-palos-verdes-blue",
+          "seed": 6,
+          "sourceReference": "F(6)",
+          "displayName": "PALOS VERDES BLUE",
+          "participantId": "tournament-team-2026-14u-boys-palos-verdes-blue",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1264,15 +1264,15 @@
         "dark": {
           "raw": "F(30)-TRI VALLEY TRITONS",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "F(30)-TRI VALLEY TRITONS",
-          "participantId": "tournament-team-2026-14u-boys-f-30-tri-valley-tritons",
+          "seed": 30,
+          "sourceReference": "F(30)",
+          "displayName": "TRI VALLEY TRITONS",
+          "participantId": "tournament-team-2026-14u-boys-tri-valley-tritons",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-tri-valley-tritons",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -1315,10 +1315,10 @@
         "white": {
           "raw": "E(5)-VNITED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "E(5)-VNITED",
-          "participantId": "tournament-team-2026-14u-boys-e-5-vnited",
+          "seed": 5,
+          "sourceReference": "E(5)",
+          "displayName": "VNITED",
+          "participantId": "tournament-team-2026-14u-boys-vnited",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1328,10 +1328,10 @@
         "dark": {
           "raw": "E(29)-SAN CLEMENTE BLACK",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "E(29)-SAN CLEMENTE BLACK",
-          "participantId": "tournament-team-2026-14u-boys-e-29-san-clemente-black",
+          "seed": 29,
+          "sourceReference": "E(29)",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-black",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1379,23 +1379,23 @@
         "white": {
           "raw": "H(17)-LA CITY UNITED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "H(17)-LA CITY UNITED",
-          "participantId": "tournament-team-2026-14u-boys-h-17-la-city-united",
+          "seed": 17,
+          "sourceReference": "H(17)",
+          "displayName": "LA CITY UNITED",
+          "participantId": "tournament-team-2026-14u-boys-la-city-united",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-la-city-united",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "H(32)-VALLEY UNITED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "H(32)-VALLEY UNITED",
-          "participantId": "tournament-team-2026-14u-boys-h-32-valley-united",
+          "seed": 32,
+          "sourceReference": "H(32)",
+          "displayName": "VALLEY UNITED",
+          "participantId": "tournament-team-2026-14u-boys-valley-united",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1443,10 +1443,10 @@
         "white": {
           "raw": "G(18)-CORONADO",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "G(18)-CORONADO",
-          "participantId": "tournament-team-2026-14u-boys-g-18-coronado",
+          "seed": 18,
+          "sourceReference": "G(18)",
+          "displayName": "CORONADO",
+          "participantId": "tournament-team-2026-14u-boys-coronado",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1456,10 +1456,10 @@
         "dark": {
           "raw": "G(31)-CIU COAST",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "G(31)-CIU COAST",
-          "participantId": "tournament-team-2026-14u-boys-g-31-ciu-coast",
+          "seed": 31,
+          "sourceReference": "G(31)",
+          "displayName": "CIU COAST",
+          "participantId": "tournament-team-2026-14u-boys-ciu-coast",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1507,10 +1507,10 @@
         "white": {
           "raw": "F(19)-CDM WHITE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "F(19)-CDM WHITE",
-          "participantId": "tournament-team-2026-14u-boys-f-19-cdm-white",
+          "seed": 19,
+          "sourceReference": "F(19)",
+          "displayName": "CDM WHITE",
+          "participantId": "tournament-team-2026-14u-boys-cdm-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1520,15 +1520,15 @@
         "dark": {
           "raw": "F(30)-TRI VALLEY TRITONS",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "F(30)-TRI VALLEY TRITONS",
-          "participantId": "tournament-team-2026-14u-boys-f-30-tri-valley-tritons",
+          "seed": 30,
+          "sourceReference": "F(30)",
+          "displayName": "TRI VALLEY TRITONS",
+          "participantId": "tournament-team-2026-14u-boys-tri-valley-tritons",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-tri-valley-tritons",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -1571,10 +1571,10 @@
         "white": {
           "raw": "E(20)-CAL REPUBLIC",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "E(20)-CAL REPUBLIC",
-          "participantId": "tournament-team-2026-14u-boys-e-20-cal-republic",
+          "seed": 20,
+          "sourceReference": "E(20)",
+          "displayName": "CAL REPUBLIC",
+          "participantId": "tournament-team-2026-14u-boys-cal-republic",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1584,10 +1584,10 @@
         "dark": {
           "raw": "E(29)-SAN CLEMENTE BLACK",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "E(29)-SAN CLEMENTE BLACK",
-          "participantId": "tournament-team-2026-14u-boys-e-29-san-clemente-black",
+          "seed": 29,
+          "sourceReference": "E(29)",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-black",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1635,10 +1635,10 @@
         "white": {
           "raw": "H(8)-NORCAL TEAL",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "H(8)-NORCAL TEAL",
-          "participantId": "tournament-team-2026-14u-boys-h-8-norcal-teal",
+          "seed": 8,
+          "sourceReference": "H(8)",
+          "displayName": "NORCAL TEAL",
+          "participantId": "tournament-team-2026-14u-boys-norcal-teal",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1648,15 +1648,15 @@
         "dark": {
           "raw": "H(17)-LA CITY UNITED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "H(17)-LA CITY UNITED",
-          "participantId": "tournament-team-2026-14u-boys-h-17-la-city-united",
+          "seed": 17,
+          "sourceReference": "H(17)",
+          "displayName": "LA CITY UNITED",
+          "participantId": "tournament-team-2026-14u-boys-la-city-united",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-la-city-united",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -1699,23 +1699,23 @@
         "white": {
           "raw": "G(7)-CHAWP",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "G(7)-CHAWP",
-          "participantId": "tournament-team-2026-14u-boys-g-7-chawp",
+          "seed": 7,
+          "sourceReference": "G(7)",
+          "displayName": "CHAWP",
+          "participantId": "tournament-team-2026-14u-boys-chawp",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-chawp",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "G(18)-CORONADO",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "G(18)-CORONADO",
-          "participantId": "tournament-team-2026-14u-boys-g-18-coronado",
+          "seed": 18,
+          "sourceReference": "G(18)",
+          "displayName": "CORONADO",
+          "participantId": "tournament-team-2026-14u-boys-coronado",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1763,10 +1763,10 @@
         "white": {
           "raw": "F(6)-PALOS VERDES BLUE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "F(6)-PALOS VERDES BLUE",
-          "participantId": "tournament-team-2026-14u-boys-f-6-palos-verdes-blue",
+          "seed": 6,
+          "sourceReference": "F(6)",
+          "displayName": "PALOS VERDES BLUE",
+          "participantId": "tournament-team-2026-14u-boys-palos-verdes-blue",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1776,10 +1776,10 @@
         "dark": {
           "raw": "F(19)-CDM WHITE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "F(19)-CDM WHITE",
-          "participantId": "tournament-team-2026-14u-boys-f-19-cdm-white",
+          "seed": 19,
+          "sourceReference": "F(19)",
+          "displayName": "CDM WHITE",
+          "participantId": "tournament-team-2026-14u-boys-cdm-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1827,10 +1827,10 @@
         "white": {
           "raw": "E(5)-VNITED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "E(5)-VNITED",
-          "participantId": "tournament-team-2026-14u-boys-e-5-vnited",
+          "seed": 5,
+          "sourceReference": "E(5)",
+          "displayName": "VNITED",
+          "participantId": "tournament-team-2026-14u-boys-vnited",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1840,10 +1840,10 @@
         "dark": {
           "raw": "E(20)-CAL REPUBLIC",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "E(20)-CAL REPUBLIC",
-          "participantId": "tournament-team-2026-14u-boys-e-20-cal-republic",
+          "seed": 20,
+          "sourceReference": "E(20)",
+          "displayName": "CAL REPUBLIC",
+          "participantId": "tournament-team-2026-14u-boys-cal-republic",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -1890,29 +1890,29 @@
       "participants": {
         "white": {
           "raw": "2nd H-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd H-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-h",
+          "sourceReference": "2ndH",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd G-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd G-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-g",
+          "sourceReference": "3rdG",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -1962,29 +1962,29 @@
       "participants": {
         "white": {
           "raw": "2nd G-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd G-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-g",
+          "sourceReference": "2ndG",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd H-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd H-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-h",
+          "sourceReference": "3rdH",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -2034,29 +2034,29 @@
       "participants": {
         "white": {
           "raw": "2nd F-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd F-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-f",
+          "sourceReference": "2ndF",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd E-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd E-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-e",
+          "sourceReference": "3rdE",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -2106,29 +2106,29 @@
       "participants": {
         "white": {
           "raw": "2nd E-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd E-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-e",
+          "sourceReference": "2ndE",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd F-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd F-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-f",
+          "sourceReference": "3rdF",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -2179,23 +2179,23 @@
         "white": {
           "raw": "I(9)-SAND CANYON",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "I(9)-SAND CANYON",
-          "participantId": "tournament-team-2026-14u-boys-i-9-sand-canyon",
+          "seed": 9,
+          "sourceReference": "I(9)",
+          "displayName": "SAND CANYON",
+          "participantId": "tournament-team-2026-14u-boys-sand-canyon",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-sand-canyon",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "I(33)-LOYOLA",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "I(33)-LOYOLA",
-          "participantId": "tournament-team-2026-14u-boys-i-33-loyola",
+          "seed": 33,
+          "sourceReference": "I(33)",
+          "displayName": "LOYOLA",
+          "participantId": "tournament-team-2026-14u-boys-loyola",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2243,10 +2243,10 @@
         "white": {
           "raw": "J(10)-908 BLUE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "J(10)-908 BLUE",
-          "participantId": "tournament-team-2026-14u-boys-j-10-908-blue",
+          "seed": 10,
+          "sourceReference": "J(10)",
+          "displayName": "908 BLUE",
+          "participantId": "tournament-team-2026-14u-boys-908-blue",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2256,10 +2256,10 @@
         "dark": {
           "raw": "J(34)-NAVY",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "J(34)-NAVY",
-          "participantId": "tournament-team-2026-14u-boys-j-34-navy",
+          "seed": 34,
+          "sourceReference": "J(34)",
+          "displayName": "NAVY",
+          "participantId": "tournament-team-2026-14u-boys-navy",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2307,23 +2307,23 @@
         "white": {
           "raw": "K(11)-SANTA CRUZ",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "K(11)-SANTA CRUZ",
-          "participantId": "tournament-team-2026-14u-boys-k-11-santa-cruz",
+          "seed": 11,
+          "sourceReference": "K(11)",
+          "displayName": "SANTA CRUZ",
+          "participantId": "tournament-team-2026-14u-boys-santa-cruz",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-santa-cruz",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "K(35)-ORWP RED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "K(35)-ORWP RED",
-          "participantId": "tournament-team-2026-14u-boys-k-35-orwp-red",
+          "seed": 35,
+          "sourceReference": "K(35)",
+          "displayName": "ORWP RED",
+          "participantId": "tournament-team-2026-14u-boys-orwp-red",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2371,10 +2371,10 @@
         "white": {
           "raw": "L(12)-STANFORD WHITE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "L(12)-STANFORD WHITE",
-          "participantId": "tournament-team-2026-14u-boys-l-12-stanford-white",
+          "seed": 12,
+          "sourceReference": "L(12)",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-14u-boys-stanford-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2384,10 +2384,10 @@
         "dark": {
           "raw": "L(36)-ROSE BOWL BLACK",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "L(36)-ROSE BOWL BLACK",
-          "participantId": "tournament-team-2026-14u-boys-l-36-rose-bowl-black",
+          "seed": 36,
+          "sourceReference": "L(36)",
+          "displayName": "ROSE BOWL BLACK",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl-black",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2435,10 +2435,10 @@
         "white": {
           "raw": "I(16)-CCU WHITE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "I(16)-CCU WHITE",
-          "participantId": "tournament-team-2026-14u-boys-i-16-ccu-white",
+          "seed": 16,
+          "sourceReference": "I(16)",
+          "displayName": "CCU WHITE",
+          "participantId": "tournament-team-2026-14u-boys-ccu-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2448,10 +2448,10 @@
         "dark": {
           "raw": "I(33)-LOYOLA",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "I(33)-LOYOLA",
-          "participantId": "tournament-team-2026-14u-boys-i-33-loyola",
+          "seed": 33,
+          "sourceReference": "I(33)",
+          "displayName": "LOYOLA",
+          "participantId": "tournament-team-2026-14u-boys-loyola",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2499,10 +2499,10 @@
         "white": {
           "raw": "J(15)-NORTH IRVINE RED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "J(15)-NORTH IRVINE RED",
-          "participantId": "tournament-team-2026-14u-boys-j-15-north-irvine-red",
+          "seed": 15,
+          "sourceReference": "J(15)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-red",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2512,10 +2512,10 @@
         "dark": {
           "raw": "J(34)-NAVY",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "J(34)-NAVY",
-          "participantId": "tournament-team-2026-14u-boys-j-34-navy",
+          "seed": 34,
+          "sourceReference": "J(34)",
+          "displayName": "NAVY",
+          "participantId": "tournament-team-2026-14u-boys-navy",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2563,23 +2563,23 @@
         "white": {
           "raw": "K(14)-TRILOGY",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "K(14)-TRILOGY",
-          "participantId": "tournament-team-2026-14u-boys-k-14-trilogy",
+          "seed": 14,
+          "sourceReference": "K(14)",
+          "displayName": "TRILOGY",
+          "participantId": "tournament-team-2026-14u-boys-trilogy",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-trilogy",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "K(35)-ORWP RED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "K(35)-ORWP RED",
-          "participantId": "tournament-team-2026-14u-boys-k-35-orwp-red",
+          "seed": 35,
+          "sourceReference": "K(35)",
+          "displayName": "ORWP RED",
+          "participantId": "tournament-team-2026-14u-boys-orwp-red",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2627,23 +2627,23 @@
         "white": {
           "raw": "L(13)-LOS ALAMITOS",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "L(13)-LOS ALAMITOS",
-          "participantId": "tournament-team-2026-14u-boys-l-13-los-alamitos",
+          "seed": 13,
+          "sourceReference": "L(13)",
+          "displayName": "LOS ALAMITOS",
+          "participantId": "tournament-team-2026-14u-boys-los-alamitos",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-los-alamitos",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "L(36)-ROSE BOWL BLACK",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "L(36)-ROSE BOWL BLACK",
-          "participantId": "tournament-team-2026-14u-boys-l-36-rose-bowl-black",
+          "seed": 36,
+          "sourceReference": "L(36)",
+          "displayName": "ROSE BOWL BLACK",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl-black",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2691,23 +2691,23 @@
         "white": {
           "raw": "I(9)-SAND CANYON",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "I(9)-SAND CANYON",
-          "participantId": "tournament-team-2026-14u-boys-i-9-sand-canyon",
+          "seed": 9,
+          "sourceReference": "I(9)",
+          "displayName": "SAND CANYON",
+          "participantId": "tournament-team-2026-14u-boys-sand-canyon",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-sand-canyon",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "I(16)-CCU WHITE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "I(16)-CCU WHITE",
-          "participantId": "tournament-team-2026-14u-boys-i-16-ccu-white",
+          "seed": 16,
+          "sourceReference": "I(16)",
+          "displayName": "CCU WHITE",
+          "participantId": "tournament-team-2026-14u-boys-ccu-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2755,10 +2755,10 @@
         "white": {
           "raw": "J(10)-908 BLUE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "J(10)-908 BLUE",
-          "participantId": "tournament-team-2026-14u-boys-j-10-908-blue",
+          "seed": 10,
+          "sourceReference": "J(10)",
+          "displayName": "908 BLUE",
+          "participantId": "tournament-team-2026-14u-boys-908-blue",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2768,10 +2768,10 @@
         "dark": {
           "raw": "J(15)-NORTH IRVINE RED",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "J(15)-NORTH IRVINE RED",
-          "participantId": "tournament-team-2026-14u-boys-j-15-north-irvine-red",
+          "seed": 15,
+          "sourceReference": "J(15)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-red",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2819,28 +2819,28 @@
         "white": {
           "raw": "K(11)-SANTA CRUZ",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "K(11)-SANTA CRUZ",
-          "participantId": "tournament-team-2026-14u-boys-k-11-santa-cruz",
+          "seed": 11,
+          "sourceReference": "K(11)",
+          "displayName": "SANTA CRUZ",
+          "participantId": "tournament-team-2026-14u-boys-santa-cruz",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-santa-cruz",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "K(14)-TRILOGY",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "K(14)-TRILOGY",
-          "participantId": "tournament-team-2026-14u-boys-k-14-trilogy",
+          "seed": 14,
+          "sourceReference": "K(14)",
+          "displayName": "TRILOGY",
+          "participantId": "tournament-team-2026-14u-boys-trilogy",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-trilogy",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -2883,10 +2883,10 @@
         "white": {
           "raw": "L(12)-STANFORD WHITE",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "L(12)-STANFORD WHITE",
-          "participantId": "tournament-team-2026-14u-boys-l-12-stanford-white",
+          "seed": 12,
+          "sourceReference": "L(12)",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-14u-boys-stanford-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
@@ -2896,15 +2896,15 @@
         "dark": {
           "raw": "L(13)-LOS ALAMITOS",
           "kind": "team",
-          "seed": null,
-          "sourceReference": null,
-          "displayName": "L(13)-LOS ALAMITOS",
-          "participantId": "tournament-team-2026-14u-boys-l-13-los-alamitos",
+          "seed": 13,
+          "sourceReference": "L(13)",
+          "displayName": "LOS ALAMITOS",
+          "participantId": "tournament-team-2026-14u-boys-los-alamitos",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-los-alamitos",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -2946,29 +2946,29 @@
       "participants": {
         "white": {
           "raw": "2nd I-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd I-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-i",
+          "sourceReference": "2ndI",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd J-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd J-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-j",
+          "sourceReference": "3rdJ",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3018,29 +3018,29 @@
       "participants": {
         "white": {
           "raw": "2nd J-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd J-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-j",
+          "sourceReference": "2ndJ",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd I-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd I-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-i",
+          "sourceReference": "3rdI",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3090,29 +3090,29 @@
       "participants": {
         "white": {
           "raw": "2nd K-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd K-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-k",
+          "sourceReference": "2ndK",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd L-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd L-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-l",
+          "sourceReference": "3rdL",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3162,29 +3162,29 @@
       "participants": {
         "white": {
           "raw": "2nd L-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd L-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-l",
+          "sourceReference": "2ndL",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd K-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd K-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-k",
+          "sourceReference": "3rdK",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3234,29 +3234,29 @@
       "participants": {
         "white": {
           "raw": "ni_O2-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_O2-",
-          "participantId": "tournament-team-2026-14u-boys-ni-o2",
+          "sourceReference": "ni_O2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_O3-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_O3-",
-          "participantId": "tournament-team-2026-14u-boys-ni-o3",
+          "sourceReference": "ni_O3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3298,29 +3298,29 @@
       "participants": {
         "white": {
           "raw": "ni_U1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_U1",
-          "participantId": "tournament-team-2026-14u-boys-ni-u1",
+          "sourceReference": "ni_U1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_U2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_U2",
-          "participantId": "tournament-team-2026-14u-boys-ni-u2",
+          "sourceReference": "ni_U2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3362,29 +3362,29 @@
       "participants": {
         "white": {
           "raw": "ni_M2-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_M2-",
-          "participantId": "tournament-team-2026-14u-boys-ni-m2",
+          "sourceReference": "ni_M2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_M3-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_M3-",
-          "participantId": "tournament-team-2026-14u-boys-ni-m3",
+          "sourceReference": "ni_M3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3426,29 +3426,29 @@
       "participants": {
         "white": {
           "raw": "ni_S1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_S1",
-          "participantId": "tournament-team-2026-14u-boys-ni-s1",
+          "sourceReference": "ni_S1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_S2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_S2",
-          "participantId": "tournament-team-2026-14u-boys-ni-s2",
+          "sourceReference": "ni_S2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3490,29 +3490,29 @@
       "participants": {
         "white": {
           "raw": "ni_O1-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_O1-",
-          "participantId": "tournament-team-2026-14u-boys-ni-o1",
+          "sourceReference": "ni_O1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_O3-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_O3-",
-          "participantId": "tournament-team-2026-14u-boys-ni-o3",
+          "sourceReference": "ni_O3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3554,29 +3554,29 @@
       "participants": {
         "white": {
           "raw": "ni_U1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_U1",
-          "participantId": "tournament-team-2026-14u-boys-ni-u1",
+          "sourceReference": "ni_U1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_U3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_U3",
-          "participantId": "tournament-team-2026-14u-boys-ni-u3",
+          "sourceReference": "ni_U3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3618,29 +3618,29 @@
       "participants": {
         "white": {
           "raw": "ni_M1-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_M1-",
-          "participantId": "tournament-team-2026-14u-boys-ni-m1",
+          "sourceReference": "ni_M1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_M3-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_M3-",
-          "participantId": "tournament-team-2026-14u-boys-ni-m3",
+          "sourceReference": "ni_M3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3682,29 +3682,29 @@
       "participants": {
         "white": {
           "raw": "ni_S1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_S1",
-          "participantId": "tournament-team-2026-14u-boys-ni-s1",
+          "sourceReference": "ni_S1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_S3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_S3",
-          "participantId": "tournament-team-2026-14u-boys-ni-s3",
+          "sourceReference": "ni_S3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3746,29 +3746,29 @@
       "participants": {
         "white": {
           "raw": "ni_O1-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_O1-",
-          "participantId": "tournament-team-2026-14u-boys-ni-o1",
+          "sourceReference": "ni_O1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_O2-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_O2-",
-          "participantId": "tournament-team-2026-14u-boys-ni-o2",
+          "sourceReference": "ni_O2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3810,29 +3810,29 @@
       "participants": {
         "white": {
           "raw": "ni_U2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_U2",
-          "participantId": "tournament-team-2026-14u-boys-ni-u2",
+          "sourceReference": "ni_U2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_U3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_U3",
-          "participantId": "tournament-team-2026-14u-boys-ni-u3",
+          "sourceReference": "ni_U3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3874,29 +3874,29 @@
       "participants": {
         "white": {
           "raw": "ni_M1-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_M1-",
-          "participantId": "tournament-team-2026-14u-boys-ni-m1",
+          "sourceReference": "ni_M1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_M2-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_M2-",
-          "participantId": "tournament-team-2026-14u-boys-ni-m2",
+          "sourceReference": "ni_M2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -3938,29 +3938,29 @@
       "participants": {
         "white": {
           "raw": "ni_S2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_S2",
-          "participantId": "tournament-team-2026-14u-boys-ni-s2",
+          "sourceReference": "ni_S2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_S3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_S3",
-          "participantId": "tournament-team-2026-14u-boys-ni-s3",
+          "sourceReference": "ni_S3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4002,29 +4002,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_O-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_O-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-o",
+          "sourceReference": "3rdni_O",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "1st ni_U-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st ni_U-",
-          "participantId": "tournament-team-2026-14u-boys-1st-ni-u",
+          "sourceReference": "1stni_U",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4074,29 +4074,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_M-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_M-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-m",
+          "sourceReference": "3rdni_M",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "1st ni_S-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st ni_S-",
-          "participantId": "tournament-team-2026-14u-boys-1st-ni-s",
+          "sourceReference": "1stni_S",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4146,29 +4146,29 @@
       "participants": {
         "white": {
           "raw": "ni_P2-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_P2-",
-          "participantId": "tournament-team-2026-14u-boys-ni-p2",
+          "sourceReference": "ni_P2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_P3-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_P3-",
-          "participantId": "tournament-team-2026-14u-boys-ni-p3",
+          "sourceReference": "ni_P3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4210,29 +4210,29 @@
       "participants": {
         "white": {
           "raw": "ni_T1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_T1",
-          "participantId": "tournament-team-2026-14u-boys-ni-t1",
+          "sourceReference": "ni_T1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_T2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_T2",
-          "participantId": "tournament-team-2026-14u-boys-ni-t2",
+          "sourceReference": "ni_T2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4274,29 +4274,29 @@
       "participants": {
         "white": {
           "raw": "ni_N2-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_N2-",
-          "participantId": "tournament-team-2026-14u-boys-ni-n2",
+          "sourceReference": "ni_N2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_N3-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_N3-",
-          "participantId": "tournament-team-2026-14u-boys-ni-n3",
+          "sourceReference": "ni_N3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4338,29 +4338,29 @@
       "participants": {
         "white": {
           "raw": "ni_R1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_R1",
-          "participantId": "tournament-team-2026-14u-boys-ni-r1",
+          "sourceReference": "ni_R1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_R2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_R2",
-          "participantId": "tournament-team-2026-14u-boys-ni-r2",
+          "sourceReference": "ni_R2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4402,29 +4402,29 @@
       "participants": {
         "white": {
           "raw": "ni_P1-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_P1-",
-          "participantId": "tournament-team-2026-14u-boys-ni-p1",
+          "sourceReference": "ni_P1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_P3-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_P3-",
-          "participantId": "tournament-team-2026-14u-boys-ni-p3",
+          "sourceReference": "ni_P3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4466,29 +4466,29 @@
       "participants": {
         "white": {
           "raw": "ni_T1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_T1",
-          "participantId": "tournament-team-2026-14u-boys-ni-t1",
+          "sourceReference": "ni_T1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_T3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_T3",
-          "participantId": "tournament-team-2026-14u-boys-ni-t3",
+          "sourceReference": "ni_T3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4530,29 +4530,29 @@
       "participants": {
         "white": {
           "raw": "ni_N1-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_N1-",
-          "participantId": "tournament-team-2026-14u-boys-ni-n1",
+          "sourceReference": "ni_N1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_N3-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_N3-",
-          "participantId": "tournament-team-2026-14u-boys-ni-n3",
+          "sourceReference": "ni_N3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4594,29 +4594,29 @@
       "participants": {
         "white": {
           "raw": "ni_R1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_R1",
-          "participantId": "tournament-team-2026-14u-boys-ni-r1",
+          "sourceReference": "ni_R1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_R3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_R3",
-          "participantId": "tournament-team-2026-14u-boys-ni-r3",
+          "sourceReference": "ni_R3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4658,29 +4658,29 @@
       "participants": {
         "white": {
           "raw": "ni_P1-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_P1-",
-          "participantId": "tournament-team-2026-14u-boys-ni-p1",
+          "sourceReference": "ni_P1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_P2-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_P2-",
-          "participantId": "tournament-team-2026-14u-boys-ni-p2",
+          "sourceReference": "ni_P2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4722,29 +4722,29 @@
       "participants": {
         "white": {
           "raw": "ni_T2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_T2",
-          "participantId": "tournament-team-2026-14u-boys-ni-t2",
+          "sourceReference": "ni_T2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_T3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_T3",
-          "participantId": "tournament-team-2026-14u-boys-ni-t3",
+          "sourceReference": "ni_T3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4786,29 +4786,29 @@
       "participants": {
         "white": {
           "raw": "ni_N1-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_N1-",
-          "participantId": "tournament-team-2026-14u-boys-ni-n1",
+          "sourceReference": "ni_N1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_N2-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_N2-",
-          "participantId": "tournament-team-2026-14u-boys-ni-n2",
+          "sourceReference": "ni_N2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4850,29 +4850,29 @@
       "participants": {
         "white": {
           "raw": "ni_R2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_R2",
-          "participantId": "tournament-team-2026-14u-boys-ni-r2",
+          "sourceReference": "ni_R2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "ni_R3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "ni_R3",
-          "participantId": "tournament-team-2026-14u-boys-ni-r3",
+          "sourceReference": "ni_R3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4914,29 +4914,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_P-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_P-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-p",
+          "sourceReference": "3rdni_P",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "1st ni_T-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st ni_T-",
-          "participantId": "tournament-team-2026-14u-boys-1st-ni-t",
+          "sourceReference": "1stni_T",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -4986,29 +4986,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_N-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_N-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-n",
+          "sourceReference": "3rdni_N",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "1st ni_R-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st ni_R-",
-          "participantId": "tournament-team-2026-14u-boys-1st-ni-r",
+          "sourceReference": "1stni_R",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5058,29 +5058,29 @@
       "participants": {
         "white": {
           "raw": "cu_M2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_M2",
-          "participantId": "tournament-team-2026-14u-boys-cu-m2",
+          "sourceReference": "cu_M2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_M3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_M3",
-          "participantId": "tournament-team-2026-14u-boys-cu-m3",
+          "sourceReference": "cu_M3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5122,29 +5122,29 @@
       "participants": {
         "white": {
           "raw": "cu_N2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_N2",
-          "participantId": "tournament-team-2026-14u-boys-cu-n2",
+          "sourceReference": "cu_N2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_N3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_N3",
-          "participantId": "tournament-team-2026-14u-boys-cu-n3",
+          "sourceReference": "cu_N3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5186,29 +5186,29 @@
       "participants": {
         "white": {
           "raw": "cu_O2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_O2",
-          "participantId": "tournament-team-2026-14u-boys-cu-o2",
+          "sourceReference": "cu_O2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_O3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_O3",
-          "participantId": "tournament-team-2026-14u-boys-cu-o3",
+          "sourceReference": "cu_O3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5250,29 +5250,29 @@
       "participants": {
         "white": {
           "raw": "cu_P2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_P2",
-          "participantId": "tournament-team-2026-14u-boys-cu-p2",
+          "sourceReference": "cu_P2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_P3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_P3",
-          "participantId": "tournament-team-2026-14u-boys-cu-p3",
+          "sourceReference": "cu_P3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5314,29 +5314,29 @@
       "participants": {
         "white": {
           "raw": "cu_M1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_M1",
-          "participantId": "tournament-team-2026-14u-boys-cu-m1",
+          "sourceReference": "cu_M1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_M3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_M3",
-          "participantId": "tournament-team-2026-14u-boys-cu-m3",
+          "sourceReference": "cu_M3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5378,29 +5378,29 @@
       "participants": {
         "white": {
           "raw": "cu_N1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_N1",
-          "participantId": "tournament-team-2026-14u-boys-cu-n1",
+          "sourceReference": "cu_N1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_N3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_N3",
-          "participantId": "tournament-team-2026-14u-boys-cu-n3",
+          "sourceReference": "cu_N3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5442,29 +5442,29 @@
       "participants": {
         "white": {
           "raw": "cu_O1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_O1",
-          "participantId": "tournament-team-2026-14u-boys-cu-o1",
+          "sourceReference": "cu_O1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_O3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_O3",
-          "participantId": "tournament-team-2026-14u-boys-cu-o3",
+          "sourceReference": "cu_O3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5506,29 +5506,29 @@
       "participants": {
         "white": {
           "raw": "cu_P1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_P1",
-          "participantId": "tournament-team-2026-14u-boys-cu-p1",
+          "sourceReference": "cu_P1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_P3",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_P3",
-          "participantId": "tournament-team-2026-14u-boys-cu-p3",
+          "sourceReference": "cu_P3",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5570,29 +5570,29 @@
       "participants": {
         "white": {
           "raw": "cu_M1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_M1",
-          "participantId": "tournament-team-2026-14u-boys-cu-m1",
+          "sourceReference": "cu_M1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_M2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_M2",
-          "participantId": "tournament-team-2026-14u-boys-cu-m2",
+          "sourceReference": "cu_M2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5634,29 +5634,29 @@
       "participants": {
         "white": {
           "raw": "cu_N1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_N1",
-          "participantId": "tournament-team-2026-14u-boys-cu-n1",
+          "sourceReference": "cu_N1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_N2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_N2",
-          "participantId": "tournament-team-2026-14u-boys-cu-n2",
+          "sourceReference": "cu_N2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5698,29 +5698,29 @@
       "participants": {
         "white": {
           "raw": "cu_O1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_O1",
-          "participantId": "tournament-team-2026-14u-boys-cu-o1",
+          "sourceReference": "cu_O1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_O2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_O2",
-          "participantId": "tournament-team-2026-14u-boys-cu-o2",
+          "sourceReference": "cu_O2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5762,29 +5762,29 @@
       "participants": {
         "white": {
           "raw": "cu_P1",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_P1",
-          "participantId": "tournament-team-2026-14u-boys-cu-p1",
+          "sourceReference": "cu_P1",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "cu_P2",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "cu_P2",
-          "participantId": "tournament-team-2026-14u-boys-cu-p2",
+          "sourceReference": "cu_P2",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -5826,16 +5826,16 @@
       "participants": {
         "white": {
           "raw": "2nd ni_P-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd ni_P-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-ni-p",
+          "sourceReference": "2ndni_P",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "W85",
@@ -5898,16 +5898,16 @@
       "participants": {
         "white": {
           "raw": "2nd ni_M-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd ni_M-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-ni-m",
+          "sourceReference": "2ndni_M",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "W88",
@@ -5970,16 +5970,16 @@
       "participants": {
         "white": {
           "raw": "2nd ni_O-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd ni_O-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-ni-o",
+          "sourceReference": "2ndni_O",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "W86",
@@ -6042,16 +6042,16 @@
       "participants": {
         "white": {
           "raw": "2nd ni_N-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd ni_N-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-ni-n",
+          "sourceReference": "2ndni_N",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "W87",
@@ -6114,29 +6114,29 @@
       "participants": {
         "white": {
           "raw": "1st ni_N-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st ni_N-",
-          "participantId": "tournament-team-2026-14u-boys-1st-ni-n",
+          "sourceReference": "1stni_N",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "1st ni_O-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st ni_O-",
-          "participantId": "tournament-team-2026-14u-boys-1st-ni-o",
+          "sourceReference": "1stni_O",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -6186,29 +6186,29 @@
       "participants": {
         "white": {
           "raw": "1st ni_M-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st ni_M-",
-          "participantId": "tournament-team-2026-14u-boys-1st-ni-m",
+          "sourceReference": "1stni_M",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "1st ni_P-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st ni_P-",
-          "participantId": "tournament-team-2026-14u-boys-1st-ni-p",
+          "sourceReference": "1stni_P",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -6690,29 +6690,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_T-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_T-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-t",
+          "sourceReference": "3rdni_T",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd ni_S-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_S-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-s",
+          "sourceReference": "3rdni_S",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -6754,29 +6754,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_U-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_U-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-u",
+          "sourceReference": "3rdni_U",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd ni_R-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_R-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-r",
+          "sourceReference": "3rdni_R",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -6831,16 +6831,16 @@
         },
         "dark": {
           "raw": "2nd ni_U-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd ni_U-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-ni-u",
+          "sourceReference": "2ndni_U",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -6903,16 +6903,16 @@
         },
         "dark": {
           "raw": "2nd ni_S-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd ni_S-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-ni-s",
+          "sourceReference": "2ndni_S",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -6975,16 +6975,16 @@
         },
         "dark": {
           "raw": "2nd ni_T-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd ni_T-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-ni-t",
+          "sourceReference": "2ndni_T",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7047,16 +7047,16 @@
         },
         "dark": {
           "raw": "2nd ni_R-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd ni_R-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-ni-r",
+          "sourceReference": "2ndni_R",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7106,29 +7106,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_U-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_U-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-u",
+          "sourceReference": "3rdni_U",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd ni_S-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_S-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-s",
+          "sourceReference": "3rdni_S",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7170,29 +7170,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_T-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_T-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-t",
+          "sourceReference": "3rdni_T",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd ni_R-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_R-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-r",
+          "sourceReference": "3rdni_R",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7522,29 +7522,29 @@
       "participants": {
         "white": {
           "raw": "2nd cu_P-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd cu_P-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-cu-p",
+          "sourceReference": "2ndcu_P",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd cu_O-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd cu_O-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-cu-o",
+          "sourceReference": "3rdcu_O",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7594,29 +7594,29 @@
       "participants": {
         "white": {
           "raw": "2nd cu_O-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd cu_O-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-cu-o",
+          "sourceReference": "2ndcu_O",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd cu_P-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd cu_P-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-cu-p",
+          "sourceReference": "3rdcu_P",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7666,29 +7666,29 @@
       "participants": {
         "white": {
           "raw": "2nd cu_M-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd cu_M-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-cu-m",
+          "sourceReference": "2ndcu_M",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd cu_N-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd cu_N-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-cu-n",
+          "sourceReference": "3rdcu_N",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7738,29 +7738,29 @@
       "participants": {
         "white": {
           "raw": "2nd cu_N-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "2nd cu_N-",
-          "participantId": "tournament-team-2026-14u-boys-2nd-cu-n",
+          "sourceReference": "2ndcu_N",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd cu_M-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd cu_M-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-cu-m",
+          "sourceReference": "3rdcu_M",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7810,29 +7810,29 @@
       "participants": {
         "white": {
           "raw": "1st cu_N-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st cu_N-",
-          "participantId": "tournament-team-2026-14u-boys-1st-cu-n",
+          "sourceReference": "1stcu_N",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "1st cu_O-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st cu_O-",
-          "participantId": "tournament-team-2026-14u-boys-1st-cu-o",
+          "sourceReference": "1stcu_O",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -7882,29 +7882,29 @@
       "participants": {
         "white": {
           "raw": "1st cu_M-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st cu_M-",
-          "participantId": "tournament-team-2026-14u-boys-1st-cu-m",
+          "sourceReference": "1stcu_M",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "1st cu_P-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "1st cu_P-",
-          "participantId": "tournament-team-2026-14u-boys-1st-cu-p",
+          "sourceReference": "1stcu_P",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -8818,29 +8818,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_T-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_T-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-t",
+          "sourceReference": "3rdni_T",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd ni_U-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_U-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-u",
+          "sourceReference": "3rdni_U",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {
@@ -9602,29 +9602,29 @@
       "participants": {
         "white": {
           "raw": "3rd ni_R-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_R-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-r",
+          "sourceReference": "3rdni_R",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         },
         "dark": {
           "raw": "3rd ni_S-",
-          "kind": "team",
+          "kind": "bracket_reference",
           "seed": null,
-          "sourceReference": null,
-          "displayName": "3rd ni_S-",
-          "participantId": "tournament-team-2026-14u-boys-3rd-ni-s",
+          "sourceReference": "3rdni_S",
+          "displayName": null,
+          "participantId": null,
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
         }
       },
       "scores": {

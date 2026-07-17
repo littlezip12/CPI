@@ -10,7 +10,7 @@ from typing import Any
 
 from tournament_pipeline import ROOT, load_json, write_json
 
-RELEASE = "7.43.0"
+RELEASE = "7.45.1"
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
 SYNC_REPORT_PATH = ROOT / "data" / "tournaments" / "qa" / "sync-latest.json"
@@ -106,8 +106,11 @@ def main() -> int:
             scheduled_games = int(counts.get("scheduledGames") or max(0, games - final_games))
             blockers = int(counts.get("blockers") or 0)
             review_items = int(counts.get("reviewItems") or 0)
-            last_successful_at = (dataset or {}).get("fetchedAt")
-            last_attempt_at = sync_report.get("generatedAt") if key in completed_lookup or key in warning_lookup or key in failure_lookup else None
+            completed = completed_lookup.get(key, {})
+            content_fetched_at = (dataset or {}).get("fetchedAt")
+            last_verified_at = completed.get("verifiedAt")
+            last_successful_at = last_verified_at or content_fetched_at
+            last_attempt_at = completed.get("checkedAt") or (sync_report.get("generatedAt") if key in completed_lookup or key in warning_lookup or key in failure_lookup else None)
             warning = warning_lookup.get(key, {}).get("warning")
             error = failure_lookup.get(key, {}).get("error")
             age_hours = None
@@ -168,6 +171,8 @@ def main() -> int:
                     "gid": division.get("gid"),
                     "sheetName": division.get("sheetName"),
                     "lastSuccessfulAt": last_successful_at,
+                    "lastVerifiedAt": last_verified_at,
+                    "contentFetchedAt": content_fetched_at,
                     "lastAttemptAt": last_attempt_at,
                     "ageHours": age_hours,
                     "mode": (dataset or {}).get("sourceMode"),

@@ -134,7 +134,7 @@ def sync_one(
     normalized_existing = load_json(normalized_path) if normalized_path.exists() else {}
     qa_existing = load_json(qa_path) if qa_path.exists() else {}
     previous_counts = normalized_existing.get("counts", {})
-    current_release = normalized_existing.get("release") == "7.43.0" and qa_existing.get("release") == "7.43.0"
+    current_release = normalized_existing.get("release") == "7.45.1" and qa_existing.get("release") == "7.45.1"
 
     text: str | None = None
     normalized: dict | None = None
@@ -144,12 +144,17 @@ def sync_one(
     candidate_errors: list[str] = []
 
     def normalize_candidate(candidate_text: str, mode: str) -> tuple[dict, dict]:
+        # Rebuilding from a repository snapshot must not make old source content
+        # appear freshly fetched. Preserve the original content timestamp.
+        content_fetched_at = fetched_at
+        if mode == "cached_raw" and normalized_existing.get("source", {}).get("fetchedAt"):
+            content_fetched_at = normalized_existing["source"]["fetchedAt"]
         return normalize_csv(
             candidate_text,
             event=event,
             division=division,
             resolver=resolver,
-            fetched_at=fetched_at,
+            fetched_at=content_fetched_at,
             source_mode=mode,
         )
 
@@ -203,6 +208,7 @@ def sync_one(
                     "rawPath": raw_path.relative_to(ROOT).as_posix(),
                     "sourceSha256": normalized_existing.get("source", {}).get("contentSha256"),
                     "fetchedAt": normalized_existing.get("source", {}).get("fetchedAt"),
+                    "checkedAt": fetched_at,
                     "sourceMode": normalized_existing.get("source", {}).get("mode"),
                     "unchanged": True,
                     "staleFallback": True,
@@ -222,6 +228,8 @@ def sync_one(
             "rawPath": raw_path.relative_to(ROOT).as_posix(),
             "sourceSha256": normalized_existing.get("source", {}).get("contentSha256"),
             "fetchedAt": normalized_existing.get("source", {}).get("fetchedAt"),
+            "verifiedAt": fetched_at if source_mode == "live_fetch" else normalized_existing.get("source", {}).get("fetchedAt"),
+            "checkedAt": fetched_at,
             "sourceMode": normalized_existing.get("source", {}).get("mode"),
             "unchanged": True,
             "counts": normalized_existing.get("counts", {}),
@@ -243,6 +251,8 @@ def sync_one(
         "rawPath": raw_path.relative_to(ROOT).as_posix(),
         "sourceSha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
         "fetchedAt": fetched_at,
+        "verifiedAt": fetched_at if source_mode in {"live_fetch", "local_source_file"} else None,
+        "checkedAt": fetched_at,
         "sourceMode": source_mode,
         "counts": normalized["counts"],
     }

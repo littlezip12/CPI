@@ -79,6 +79,7 @@ def main() -> int:
             result = module.sync_one(event, division, resolver, no_fetch=False)
             require(len(calls) == 2, "Sync should try the next configured source after a zero-game candidate")
             require(result["counts"]["games"] == 4, "Valid alternate source should retain all games")
+            require(result.get("verifiedAt"), "A successful live check must record a fresh verification timestamp")
             require(raw_path.read_text(encoding="utf-8-sig").startswith("Date,Time"), "Rejected candidate must never overwrite raw data")
 
             module.source_urls = lambda _division: ["https://example.invalid/blank-only"]
@@ -86,6 +87,7 @@ def main() -> int:
             before = raw_path.read_text(encoding="utf-8-sig")
             stale = module.sync_one(event, division, resolver, no_fetch=False)
             require(stale.get("staleFallback") is True, "All-invalid live candidates should preserve the last known-good snapshot")
+            require(not stale.get("verifiedAt"), "A stale fallback must never masquerade as a successful live verification")
             require(stale["counts"]["games"] == 4, "Stale fallback should retain the prior game count")
             require(raw_path.read_text(encoding="utf-8-sig") == before, "Stale fallback must not modify raw data")
     finally:
@@ -98,6 +100,7 @@ def main() -> int:
     print(" - Zero-game and blocking candidates are rejected before any files are written")
     print(" - Stable sheet names are tried before alternate GIDs")
     print(" - Large schedule regressions cannot replace a banked dataset")
+    print(" - Unchanged live sources still receive a fresh verification timestamp")
     print(" - Last known-good snapshots survive invalid live Google Sheet responses")
     return 0
 
