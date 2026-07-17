@@ -241,7 +241,7 @@ if not workflow.exists():
     fail("Missing automated tournament snapshot workflow")
 else:
     workflow_text = workflow.read_text(encoding="utf-8")
-    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "build-tournament-evidence.py", "build-tournament-health.py", "validate-tournament-data.py", "validate-tournament-health.py", "contents: write", "data/tournaments/evidence", "data/tournaments/health"]:
+    for token in ["workflow_dispatch", "schedule:", "--sync-enabled", "build-tournament-evidence.py", "build-tournament-health.py", "validate-tournament-data.py", "validate-tournament-health.py", "contents: write", "data/tournaments/evidence", "data/tournaments/health", "build-jo-performance.py", "data/tournaments/jo-performance"]:
         if token not in workflow_text:
             fail(f"Tournament sync workflow is missing required token: {token}")
 

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JO Performance Tracker | CPI</title>
+  <meta name="description" content="CPI Junior Olympics division finishes, records, seed performance, and ranking-review evidence.">
+  <link rel="stylesheet" href="css/styles.css?v=7.45.0">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.45.0">
+  <link rel="stylesheet" href="css/jo-performance-v7-45.css?v=7.45.0">
+</head>
+<body class="cpi-v8-home jo-performance-page">
+<header class="cpi-v8-header"><div class="cpi-v8-header-inner"><a class="cpi-v8-brand" href="index.html"><span class="cpi-v8-brand-mark">CPI</span><span class="cpi-v8-brand-text"><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></span></a><nav class="cpi-v8-nav"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html" aria-current="page">Tournaments</a><a href="methodology.html">Methodology</a></nav></div></header>
+<main class="performance-shell">
+  <section class="performance-hero">
+    <div><p class="performance-kicker">CPI Data Review · 7.45</p><h1>Junior Olympics performance tracker</h1><p>Follow verified records, confirmed division finishes, seed performance, best wins, and unexpected losses. This evidence informs manual CPI review; it never changes a published ranking automatically.</p></div>
+    <div id="performanceStats" class="performance-stats"></div>
+  </section>
+
+  <section class="performance-links" aria-label="Related tools">
+    <a href="tournaments/jo-girls/">Weekend 1 schedule</a>
+    <a href="tournaments/jo-boys/">Weekend 2 schedule</a>
+    <a href="tournament-source-health.html">Source health</a>
+    <a href="ranking-review.html">Ranking review queue</a>
+  </section>
+
+  <section class="performance-controls">
+    <label>Weekend<select id="performanceEvent"><option value="all">Both weekends</option></select></label>
+    <label>Age / gender<select id="performanceGroup"><option value="all">All groups</option></select></label>
+    <label>Division<select id="performanceDivision"><option value="all">All divisions</option></select></label>
+    <label>View<select id="performanceView"><option value="results">Teams with final results</option><option value="placements">Confirmed placements</option></select></label>
+    <label class="performance-search">Search<input id="performanceSearch" type="search" placeholder="Team name"></label>
+  </section>
+
+  <section class="performance-grid">
+    <article class="performance-panel performance-panel--teams">
+      <div class="performance-panel-head"><div><p class="performance-kicker">Performance evidence</p><h2>Team results</h2></div><span id="performanceCount"></span></div>
+      <div id="performanceTeams" class="performance-team-list"></div>
+    </article>
+    <aside class="performance-panel">
+      <div class="performance-panel-head"><div><p class="performance-kicker">Division progress</p><h2>JO status</h2></div></div>
+      <div id="performanceDivisions" class="performance-division-list"></div>
+    </aside>
+  </section>
+</main>
+<footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a><p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p></div><nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav><div><h3>Review tools</h3><a href="tournament-source-health.html">Source health</a><a href="tournament-evidence.html">Tournament evidence</a><a href="ranking-review.html">Ranking review</a></div></div><div class="bottom">© 2026 California Polo Index. All rights reserved.</div></footer>
+<script src="data/tournaments/jo-performance/runtime.js?v=7.45.0"></script>
+<script src="js/jo-performance-v7-45.js?v=7.45.0"></script>
+</body>
+</html>

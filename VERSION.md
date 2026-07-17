@@ -1,9 +1,9 @@
-# CPI 7.44.3
+# CPI 7.45.0
 
-Boys JO guaranteed schedule loading.
+JO live-results and performance readiness.
 
-- Builds all 12 verified Weekend 2 schedules directly into the public application.
-- Renders the selected division immediately before Google network checks finish.
-- Continues checking the official Google Sheet every two minutes for newer data.
-- Prevents CORS failures, stale GIDs, slow JSONP, or missing external snapshots from leaving a division blank.
-- Confirms 2,133 scheduled games, zero completed games, and zero blocking schedule defects.
+- Adds a Junior Olympics performance engine for verified final scores, records, confirmed division placements, seed-versus-finish performance, best wins, and worst losses.
+- Adds a public/internal review page at `jo-performance.html`.
+- Makes ranking-review validation dynamic so the automated workflow continues to pass after JO games begin.
+- Rebuilds performance summaries every two hours with the tournament sync workflow.
+- Keeps published CPI rankings manual and unchanged.
