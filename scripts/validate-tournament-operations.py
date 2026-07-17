@@ -1,0 +1,153 @@
+#!/usr/bin/env python3
+"""Validate CPI 7.47 universal tournament operations outputs and workflow wiring."""
+from __future__ import annotations
+
+import json
+import subprocess
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+EXPECTED_RELEASE = "7.47.0"
+errors: list[str] = []
+
+
+def fail(message: str) -> None:
+    errors.append(message)
+
+
+def load(rel: str):
+    path = ROOT / rel
+    if not path.exists():
+        fail(f"Missing tournament operations file: {rel}")
+        return {}
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        fail(f"Invalid JSON in {rel}: {exc}")
+        return {}
+
+
+ops = load("data/tournaments/operations/index.json")
+alerts = load("data/tournaments/operations/alerts.json")
+registry = load("data/tournaments/registry.json")
+config = load("config/tournament-operations.json")
+manifest = load("data/tournaments/normalized/manifest.json")
+
+if ops.get("schemaVersion") != 1 or ops.get("release") != EXPECTED_RELEASE:
+    fail("Tournament operations output must use schemaVersion 1 and release 7.47.0")
+if config.get("release") != EXPECTED_RELEASE:
+    fail("Tournament operations configuration release mismatch")
+
+registry_keys = {(event.get("id"), division.get("id")) for event in registry.get("events", []) for division in event.get("divisions", [])}
+rows = ops.get("divisions", [])
+row_keys = {(row.get("eventId"), row.get("divisionId")) for row in rows}
+if registry_keys != row_keys:
+    fail("Operations dashboard must represent every registered tournament division")
+if len(registry.get("events", [])) != 5 or len(rows) != 48:
+    fail(f"Expected 5 events and 48 divisions, found {len(registry.get('events', []))} and {len(rows)}")
+
+live = [row for row in rows if row.get("monitoringMode") == "live"]
+historical = [row for row in rows if row.get("monitoringMode") == "historical_registered"]
+if len(live) != 23:
+    fail(f"Expected both JO weekends to provide 23 live divisions, found {len(live)}")
+if len(historical) != 25:
+    fail(f"Expected 25 historical divisions registered for onboarding, found {len(historical)}")
+if any(row.get("operationalStatus") not in {"ready", "attention"} for row in live):
+    fail("Live JO divisions may be ready or attention, but blocking states fail validation")
+if any(row.get("operationalStatus") != "historical" for row in historical):
+    fail("Non-JO tournaments must remain clearly marked as historical registrations")
+if any(not row.get("schedule", {}).get("expectedGames") for row in live):
+    fail("Every live JO division must have a verified expected schedule count")
+if any(row.get("schedule", {}).get("games") != row.get("schedule", {}).get("expectedGames") for row in live):
+    fail("Every live JO schedule count must match its verified baseline")
+if any(row.get("schedule", {}).get("games") != row.get("schedule", {}).get("scheduledGames") + row.get("schedule", {}).get("completedGames") for row in live):
+    fail("Live tournament scheduled/completed counts do not reconcile")
+if sum(row.get("schedule", {}).get("games", 0) for row in live) != manifest.get("counts", {}).get("games"):
+    fail("Operations live game count must match the normalized manifest")
+if alerts.get("counts", {}).get("total") != len(ops.get("alerts", [])):
+    fail("Operations alert files do not reconcile")
+if ops.get("counts", {}).get("blocking") != 0:
+    fail("Blocking live tournament operations defects fail validation")
+
+policy = config.get("policy", {})
+for key in ["authoritativeSourceOnly", "retainLastKnownGood"]:
+    if policy.get(key) is not True:
+        fail(f"Operations policy must enable {key}")
+for key in ["automaticSourceBlending", "partialScoresAreFinal", "blankZeroZeroIsFinal", "rankingPublicationAutomatic"]:
+    if policy.get(key) is not False:
+        fail(f"Operations policy must disable {key}")
+
+runtime = ROOT / "data/tournaments/operations/runtime.js"
+if not runtime.exists() or not runtime.read_text(encoding="utf-8").startswith("window.CPI_TOURNAMENT_OPERATIONS = "):
+    fail("Missing or invalid tournament operations browser runtime")
+issue_body = ROOT / "data/tournaments/operations/issue-body.md"
+if not issue_body.exists():
+    fail("Missing generated operations issue summary")
+else:
+    issue_text = issue_body.read_text(encoding="utf-8")
+    expected_phrase = "Action required" if alerts.get("counts", {}).get("total") else "No live tournament divisions require action"
+    if expected_phrase not in issue_text:
+        fail("Operations issue summary does not match the current alert state")
+
+for rel in [
+    "tournament-operations.html",
+    "css/tournament-operations-v7-47.css",
+    "js/tournament-operations-v7-47.js",
+    "scripts/build-tournament-operations.py",
+    "scripts/check-public-tournament-pages.py",
+    "scripts/test-tournament-operations-engine.py",
+    "scripts/validate-tournament-operations.py",
+]:
+    if not (ROOT / rel).exists():
+        fail(f"Missing tournament operations asset: {rel}")
+
+html = (ROOT / "tournament-operations.html").read_text(encoding="utf-8") if (ROOT / "tournament-operations.html").exists() else ""
+for token in ["data/tournaments/operations/runtime.js?v=7.47.0", "js/tournament-operations-v7-47.js?v=7.47.0", "opsRows", "opsAlertBanner"]:
+    if token not in html:
+        fail(f"Tournament operations page is missing required token: {token}")
+
+# Poolside readiness budgets and mounts.
+for rel, budget in [("tournaments/jo-boys/app.js", 400_000), ("tournaments/jo-girls/app.js", 200_000)]:
+    path = ROOT / rel
+    if path.exists() and path.stat().st_size > budget:
+        fail(f"{rel} exceeds the launch-readiness JavaScript budget of {budget} bytes")
+for rel in ["tournaments/jo-boys/index.html", "tournaments/jo-girls/index.html"]:
+    text = (ROOT / rel).read_text(encoding="utf-8")
+    for token in ['name="viewport"', 'id="sourceMeta"', 'id="statusText"', 'id="refresh"']:
+        if token not in text:
+            fail(f"{rel} is missing launch-readiness token: {token}")
+
+workflow = (ROOT / ".github/workflows/sync-tournament-data.yml").read_text(encoding="utf-8")
+for token in [
+    "build-tournament-operations.py",
+    "check-public-tournament-pages.py --network --allow-network-failure",
+    "validate-tournament-operations.py",
+    "actions/github-script@v9",
+    "pages: write",
+    "pages/builds",
+    "data/tournaments/operations",
+]:
+    if token not in workflow:
+        fail(f"Tournament sync workflow is missing operations token: {token}")
+
+for rel in ["scripts/build-tournament-operations.py", "scripts/check-public-tournament-pages.py", "scripts/test-tournament-operations-engine.py", "scripts/validate-tournament-operations.py"]:
+    result = subprocess.run(["python3", "-m", "py_compile", str(ROOT / rel)], capture_output=True, text=True)
+    if result.returncode:
+        fail(f"Python syntax error in {rel}: {result.stderr.strip()}")
+for rel in ["js/tournament-operations-v7-47.js"]:
+    result = subprocess.run(["node", "--check", str(ROOT / rel)], capture_output=True, text=True)
+    if result.returncode:
+        fail(f"JavaScript syntax error in {rel}: {result.stderr.strip()}")
+
+if errors:
+    print("TOURNAMENT OPERATIONS VALIDATION FAILED")
+    for message in errors:
+        print(f" - {message}")
+    raise SystemExit(1)
+
+print("TOURNAMENT OPERATIONS VALIDATION PASSED")
+print(" - 5 registered tournaments and 48 divisions share one operations framework")
+print(f" - Both JO weekends provide 23 live-monitored divisions: {ops.get('counts', {}).get('ready', 0)} ready and {ops.get('counts', {}).get('attention', 0)} attention")
+print(" - 25 historical divisions remain explicitly registered for future onboarding")
+print(" - Source, score-state, public-page, fallback, and ranking-publication safeguards are enforced")
+print(" - Poolside JavaScript budgets and mobile application mounts pass")

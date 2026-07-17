@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "release": "7.47.0",
+  "timezone": "America/Los_Angeles",
+  "publicBaseUrl": "https://littlezip12.github.io/CPI/",
+  "liveEventIds": [
+    "2026-jo-weekend-1",
+    "2026-jo-weekend-2"
+  ],
+  "staleWarningHours": 3,
+  "staleBlockingHours": 6,
+  "scheduleDropTolerance": 0,
+  "incidentIssueTitle": "[CPI Ops] Tournament data requires attention",
+  "policy": {
+    "authoritativeSourceOnly": true,
+    "automaticSourceBlending": false,
+    "automaticFallbackSwitching": false,
+    "retainLastKnownGood": true,
+    "partialScoresAreFinal": false,
+    "blankZeroZeroIsFinal": false,
+    "rankingPublicationAutomatic": false
+  },
+  "publicPages": {
+    "2026-jo-weekend-1": {
+      "path": "tournaments/jo-girls/index.html",
+      "requiredTokens": [
+        "sourceMeta",
+        "statusText",
+        "id=\"refresh\"",
+        "app.js?v="
+      ]
+    },
+    "2026-jo-weekend-2": {
+      "path": "tournaments/jo-boys/index.html",
+      "requiredTokens": [
+        "sourceMeta",
+        "statusText",
+        "id=\"refresh\"",
+        "app.js?v="
+      ]
+    },
+    "2026-quiksilver-cup": {
+      "path": "tournaments/quicksilver-cup/index.html",
+      "requiredTokens": [
+        "results-app.js"
+      ]
+    },
+    "2026-boys-futures-super-finals": {
+      "path": "tournaments/boys-superfinals/index.html",
+      "requiredTokens": [
+        "results-app.js"
+      ]
+    },
+    "2026-girls-us-club-championships": {
+      "path": "tournaments/girls-club-championships/index.html",
+      "requiredTokens": [
+        "results-app.js"
+      ]
+    }
+  }
+}

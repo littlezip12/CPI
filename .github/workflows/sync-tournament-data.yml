@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  issues: write
+  pages: write
 
 concurrency:
   group: cpi-tournament-data-sync
@@ -35,6 +37,63 @@ jobs:
 
       - name: Rebuild JO performance summaries
         run: python3 scripts/build-jo-performance.py
+
+      - name: Check published tournament entry pages
+        run: python3 scripts/check-public-tournament-pages.py --network --allow-network-failure
+
+      - name: Build universal tournament operations
+        run: python3 scripts/build-tournament-operations.py
+
+      - name: Publish tournament operations summary
+        shell: bash
+        run: cat data/tournaments/operations/issue-body.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Update tournament operations incident
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const fs = require('fs');
+            const packet = JSON.parse(fs.readFileSync('data/tournaments/operations/alerts.json', 'utf8'));
+            const body = fs.readFileSync('data/tournaments/operations/issue-body.md', 'utf8');
+            const title = packet.issueTitle;
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'all',
+              per_page: 100
+            });
+            const existing = issues.find((issue) => !issue.pull_request && issue.title === title);
+            if (packet.counts.total > 0) {
+              if (existing) {
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: existing.number,
+                  state: 'open',
+                  body
+                });
+              } else {
+                await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title,
+                  body
+                });
+              }
+            } else if (existing && existing.state === 'open') {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: '✅ The latest tournament operations run reports no live alerts. Closing this incident automatically.'
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                state: 'closed'
+              });
+            }
 
       - name: Rebuild ranking review engine
         run: python3 scripts/build-ranking-review.py
@@ -81,7 +140,14 @@ jobs:
       - name: Test tournament source-health interface
         run: node scripts/test-tournament-source-health-ui.js
 
+      - name: Test and validate tournament operations
+        run: |
+          python3 scripts/test-tournament-operations-engine.py
+          python3 scripts/validate-tournament-operations.py
+          node scripts/test-tournament-operations-ui.js
+
       - name: Commit changed tournament evidence
+        id: commit
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -96,14 +162,25 @@ jobs:
             data/tournaments/ranking-review-engine \
             data/tournaments/jo-performance \
             data/tournaments/post-jo-review \
+            data/tournaments/operations \
             qa/tournament-evidence-summary-7.45.1.json \
             qa/tournament-identity-review-7.45.1.csv \
             qa/ranking-review-engine-7.44.0.json \
             qa/jo-performance-engine-7.45.0.json \
             qa/post-jo-review-7.46.0.json
           if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No tournament source or evidence changes detected."
           else
             git commit -m "Update tournament evidence bank [skip ci]"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Request GitHub Pages rebuild
+        if: steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"

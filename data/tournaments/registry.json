@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "release": "7.45.1",
   "season": "2026",
-  "generatedDate": "2026-07-14",
-  "description": "Authoritative tournament ingestion registry with one source per division, automated JO snapshots, source-health reporting, and profile-ready evidence generation.",
+  "generatedDate": "2026-07-16",
+  "description": "Universal tournament operations registry with live JO monitoring, historical tournament onboarding status, source-health reporting, verified fallbacks, and controlled ranking evidence.",
   "events": [
     {
       "id": "2026-jo-weekend-1",
@@ -29,7 +29,8 @@
           "sheetName": "10U_F_Champ-18 teams",
           "gidAliases": [
             "1690842489"
-          ]
+          ],
+          "expectedScheduleGames": 75
         },
         {
           "id": "10u-coed-championship",
@@ -48,7 +49,8 @@
           "gidAliases": [
             "995024268",
             "2041957360"
-          ]
+          ],
+          "expectedScheduleGames": 146
         },
         {
           "id": "10u-girls-classic",
@@ -67,7 +69,8 @@
           "gidAliases": [
             "1824277279",
             "597397535"
-          ]
+          ],
+          "expectedScheduleGames": 87
         },
         {
           "id": "12u-coed-championship",
@@ -86,7 +89,8 @@
           "gidAliases": [
             "1233368070",
             "2012252190"
-          ]
+          ],
+          "expectedScheduleGames": 182
         },
         {
           "id": "12u-girls-championship",
@@ -105,7 +109,8 @@
           "gidAliases": [
             "1025107975",
             "1128927098"
-          ]
+          ],
+          "expectedScheduleGames": 208
         },
         {
           "id": "14u-girls-championship",
@@ -124,7 +129,8 @@
           "gidAliases": [
             "490739644",
             "1268677491"
-          ]
+          ],
+          "expectedScheduleGames": 192
         },
         {
           "id": "14u-girls-classic",
@@ -143,7 +149,8 @@
           "gidAliases": [
             "1034305520",
             "252316141"
-          ]
+          ],
+          "expectedScheduleGames": 157
         },
         {
           "id": "16u-girls-championship",
@@ -162,7 +169,8 @@
           "gidAliases": [
             "1614332560",
             "61950596"
-          ]
+          ],
+          "expectedScheduleGames": 192
         },
         {
           "id": "16u-girls-classic",
@@ -181,7 +189,8 @@
           "gidAliases": [
             "1031667515",
             "901188675"
-          ]
+          ],
+          "expectedScheduleGames": 182
         },
         {
           "id": "18u-girls-championship",
@@ -200,7 +209,8 @@
           "gidAliases": [
             "69636405",
             "934738630"
-          ]
+          ],
+          "expectedScheduleGames": 192
         },
         {
           "id": "18u-girls-classic",
@@ -219,9 +229,11 @@
           "gidAliases": [
             "1267400335",
             "265773689"
-          ]
+          ],
+          "expectedScheduleGames": 178
         }
-      ]
+      ],
+      "operationsMode": "live"
     },
     {
       "id": "2026-jo-weekend-2",
@@ -532,7 +544,8 @@
           "verifiedSnapshotAt": "2026-07-16T06:01:54Z",
           "expectedScheduleGames": 92
         }
-      ]
+      ],
+      "operationsMode": "live"
     },
     {
       "id": "2026-quiksilver-cup",
@@ -640,7 +653,8 @@
           "gid": "1111531430",
           "sourceUrl": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=1111531430#gid=1111531430"
         }
-      ]
+      ],
+      "operationsMode": "historical_registered"
     },
     {
       "id": "2026-boys-futures-super-finals",
@@ -832,7 +846,8 @@
           "gid": "581021594",
           "sourceUrl": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=581021594#gid=581021594"
         }
-      ]
+      ],
+      "operationsMode": "historical_registered"
     },
     {
       "id": "2026-girls-us-club-championships",
@@ -912,7 +927,8 @@
           "gid": "0",
           "sourceUrl": "https://docs.google.com/spreadsheets/d/1ok3A1J89hZqvufIFlzCkmmq5d46Yd5pog36JsDta_cI/edit?gid=0#gid=0"
         }
-      ]
+      ],
+      "operationsMode": "historical_registered"
     }
   ],
   "counts": {

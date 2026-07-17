@@ -1,0 +1,37 @@
+CPI 7.47.0 — Tournament Launch Readiness & Live Operations
+
+Modified
+- .github/workflows/sync-tournament-data.yml
+- VERSION.md
+- config/site-release.json
+- data/tournaments/registry.json
+- release-check
+- tests/fixtures/tournaments/registry.json
+- tournament-source-health.html
+- tournaments.html
+- tournaments/jo-boys/index.html
+- tournaments/jo-girls/index.html
+
+Added
+- INSTALL_7.47.0.md
+- config/tournament-operations.json
+- css/tournament-operations-v7-47.css
+- data/tournaments/operations/alerts.json
+- data/tournaments/operations/index.json
+- data/tournaments/operations/issue-body.md
+- data/tournaments/operations/public-checks.json
+- data/tournaments/operations/runtime.js
+- docs/ROADMAP_7.47_TOURNAMENT_OPERATIONS.md
+- js/tournament-operations-v7-47.js
+- scripts/build-tournament-operations.py
+- scripts/check-public-tournament-pages.py
+- scripts/test-tournament-operations-engine.py
+- scripts/test-tournament-operations-ui.js
+- scripts/validate-tournament-operations.py
+- tournament-operations.html
+
+Operational scope
+- All five registered tournaments and 48 divisions share one framework.
+- Both JO weekends (23 divisions) are live-monitored.
+- Quiksilver Cup, Boys Futures Super Finals, and Girls US Club Championships remain visible as historical onboarding targets.
+- Workflow alerts open/update one GitHub issue and request a Pages rebuild after automated commits.
