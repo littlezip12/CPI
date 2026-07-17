@@ -177,7 +177,7 @@ for rel in ["tournaments/jo-boys/index.html", "tournaments/jo-girls/index.html"]
     text = (ROOT / rel).read_text(encoding="utf-8")
     runtime_pos = text.find("../../data/identity/runtime.js?v=7.40.0")
     resolver_pos = text.find("../../js/cpi-identity.js?v=7.41.0")
-    app_version = "7.44.3" if rel == "tournaments/jo-boys/index.html" else "7.43.0"
+    app_version = "7.45.2" if rel == "tournaments/jo-boys/index.html" else "7.43.0"
     app_pos = text.find(f'src="app.js?v={app_version}"')
     if min(runtime_pos, resolver_pos, app_pos) < 0:
         fail(f"{rel} does not load the identity runtime, resolver, and JO app")
