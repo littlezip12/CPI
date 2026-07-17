@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Regression tests for completed-event results_table_v1 normalization."""
+import hashlib
 from pathlib import Path
 
-from tournament_pipeline import IdentityResolver, ROOT, normalize_csv
+from tournament_pipeline import IdentityResolver, ROOT, canonicalize_source_text, normalize_csv
 
 EVENT = {"id": "fixture-completed-event", "name": "Fixture Completed Event", "kind": "invite", "rankingEvidenceEnabled": False}
 DIVISION = {
@@ -37,7 +38,22 @@ require(combined["games"][0]["scores"]["white"] == 8 and combined["games"][0]["s
 require(combined["games"][1]["scores"]["white"] == 11 and combined["games"][1]["scores"]["dark"] == 9, "Colon-delimited score should parse")
 require(all(not game["participants"]["white"].get("rankingEligible") or game["participants"]["white"].get("teamId") for game in combined["games"]), "Ranking eligibility requires a canonical team ID")
 
+
+
+# Google may emit CRLF for individual tabs. Hashes must be stable regardless
+# of transport line endings so raw, normalized, and QA artifacts agree.
+fixture_lf = (ROOT / "tests" / "fixtures" / "tournaments" / "archive" / "results-table-separate-scores.csv").read_text(encoding="utf-8")
+fixture_crlf = fixture_lf.replace("\n", "\r\n")
+canonical_lf = canonicalize_source_text(fixture_lf)
+canonical_crlf = canonicalize_source_text(fixture_crlf)
+require(canonical_lf == canonical_crlf, "LF and CRLF source text must canonicalize identically")
+expected_hash = hashlib.sha256(canonical_lf.encode("utf-8")).hexdigest()
+crlf_normalized, crlf_qa = normalize_csv(fixture_crlf, event=EVENT, division=DIVISION, resolver=IdentityResolver(), fetched_at="2026-07-16T12:00:00Z", source_mode="fixture")
+require(crlf_normalized["source"]["contentSha256"] == expected_hash, "Normalized CRLF source hash must use canonical line endings")
+require(crlf_qa["sourceSha256"] == expected_hash, "QA CRLF source hash must use canonical line endings")
+
 print("HISTORICAL TOURNAMENT PARSER TESTS PASSED")
 print(" - Separate and combined score layouts normalize consistently")
 print(" - Blank 0-0 rows remain scheduled; real scores become finals")
 print(" - Pool/seed prefixes stay metadata rather than team-name text")
+print(" - LF and CRLF Google CSV responses produce identical source hashes")

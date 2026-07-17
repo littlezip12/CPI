@@ -31,6 +31,16 @@ def normalize_space(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "").replace("\u00a0", " ")).strip()
 
 
+def canonicalize_source_text(value: str) -> str:
+    """Return deterministic UTF-8 text for hashing, parsing, and storage.
+
+    Google CSV endpoints may emit LF or CRLF line endings on different tabs.
+    Canonicalizing before hashing prevents validator mismatches after Python
+    reads a stored file with universal-newline translation.
+    """
+    return str(value or "").lstrip("\ufeff").replace("\r\n", "\n").replace("\r", "\n")
+
+
 def identity_normalize(value: Any) -> str:
     text = unicodedata.normalize("NFKD", str(value or ""))
     text = "".join(ch for ch in text if not unicodedata.combining(ch)).lower().replace("&", " and ")
@@ -396,6 +406,7 @@ def normalize_csv(
     fetched_at: str,
     source_mode: str,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
+    text = canonicalize_source_text(text)
     rows = parse_csv_text(text)
     mapping: dict[str, int] | None = None
     games: list[dict[str, Any]] = []

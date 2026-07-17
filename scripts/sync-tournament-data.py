@@ -18,6 +18,7 @@ from tournament_pipeline import (
     ROOT,
     IdentityResolver,
     all_registry_divisions,
+    canonicalize_source_text,
     load_json,
     normalize_csv,
     registry_lookup,
@@ -77,7 +78,7 @@ def fetch_url_text(url: str, timeout: int = 25) -> str:
                 raise RuntimeError("Google Sheets response was empty")
             if text.lstrip().startswith("<!DOCTYPE html") or "accounts.google.com" in text[:1000]:
                 raise RuntimeError("Google Sheets returned an HTML/login page instead of CSV")
-            return text
+            return canonicalize_source_text(text)
         except Exception as exc:  # noqa: BLE001 - retain source error context
             last_error = exc
             if attempt == 0:
@@ -130,7 +131,7 @@ def sync_one(
     fetched_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     raw_path.parent.mkdir(parents=True, exist_ok=True)
 
-    existing_text = raw_path.read_text(encoding="utf-8-sig") if raw_path.exists() else None
+    existing_text = canonicalize_source_text(raw_path.read_text(encoding="utf-8-sig")) if raw_path.exists() else None
     normalized_existing = load_json(normalized_path) if normalized_path.exists() else {}
     qa_existing = load_json(qa_path) if qa_path.exists() else {}
     previous_counts = normalized_existing.get("counts", {})
@@ -159,7 +160,7 @@ def sync_one(
         )
 
     if source_file:
-        text = source_file.read_text(encoding="utf-8-sig")
+        text = canonicalize_source_text(source_file.read_text(encoding="utf-8-sig"))
         source_mode = "local_source_file"
         normalized, qa = normalize_candidate(text, source_mode)
         reason = candidate_rejection_reason(normalized, previous_counts)
@@ -168,7 +169,7 @@ def sync_one(
     elif no_fetch:
         if existing_text is None:
             raise RuntimeError(f"No cached raw source exists for {event['id']} / {division['id']}")
-        text = existing_text
+        text = canonicalize_source_text(existing_text)
         source_mode = "cached_raw"
         normalized, qa = normalize_candidate(text, source_mode)
         reason = candidate_rejection_reason(normalized, previous_counts)
@@ -218,7 +219,18 @@ def sync_one(
             raise RuntimeError("No usable live CSV candidate: " + ("; ".join(candidate_errors[-4:]) or "unknown error"))
 
     assert text is not None and normalized is not None and qa is not None
-    unchanged = existing_text == text and normalized_path.exists() and qa_path.exists() and current_release
+    canonical_hash = hashlib.sha256(text.encode("utf-8")).hexdigest()
+    stored_hashes_match = (
+        normalized_existing.get("source", {}).get("contentSha256") == canonical_hash
+        and qa_existing.get("sourceSha256") == canonical_hash
+    )
+    unchanged = (
+        existing_text == text
+        and normalized_path.exists()
+        and qa_path.exists()
+        and current_release
+        and stored_hashes_match
+    )
     if unchanged:
         return {
             "eventId": event["id"],
@@ -249,7 +261,7 @@ def sync_one(
         "normalizedPath": normalized_path.relative_to(ROOT).as_posix(),
         "qaPath": qa_path.relative_to(ROOT).as_posix(),
         "rawPath": raw_path.relative_to(ROOT).as_posix(),
-        "sourceSha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
+        "sourceSha256": canonical_hash,
         "fetchedAt": fetched_at,
         "verifiedAt": fetched_at if source_mode in {"live_fetch", "local_source_file"} else None,
         "checkedAt": fetched_at,

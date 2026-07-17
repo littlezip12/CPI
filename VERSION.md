@@ -1,9 +1,9 @@
-# CPI 7.48.0
+# CPI 7.48.1
 
-Historical tournament archive and controlled onboarding.
+Historical archive source-hash consistency hotfix.
 
-- Adds a normalized archive pipeline for Quiksilver Cup, Boys Futures Super Finals, and Girls US Club Championships.
-- Registers 25 completed-event divisions for daily/manual archival sync without mixing them into live JO operations.
-- Keeps historical results excluded from ranking evidence until each event is explicitly approved.
-- Adds a searchable tournament archive and normalized fallback files for the existing result pages.
-- Preserves live JO monitoring, manual ranking publication, and last-known-good source protection.
+- Canonicalizes Google CSV line endings before parsing, hashing, comparing, and storing source snapshots.
+- Prevents CRLF responses from producing raw/normalized/QA hash mismatches.
+- Repairs stale stored hash metadata when the canonical source content is otherwise unchanged.
+- Adds regression coverage proving LF and CRLF versions of the same tournament source produce identical hashes.
+- Does not change tournament results, rankings, identity logic, or archive evidence policy.
