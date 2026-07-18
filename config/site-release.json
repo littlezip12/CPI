@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.50.1",
-  "name": "Logo Restoration & Asset Integrity (First Pass)",
+  "version": "7.50.2",
+  "name": "Canonical Logo Delivery Hotfix",
   "date": "2026-07-17",
   "rankingDataRelease": "7.30 v2",
   "joApplicationRelease": "7.50.0",
   "deploymentMode": "migration",
-  "notes": "Restores the first pass of missing club logos using user-supplied artwork, normalizes them to canonical WebP assets, and leaves all JO live-tournament systems untouched.",
+  "notes": "Forces fresh canonical logo requests on rankings, team, and club surfaces and replaces blank failed-image states with a visible fallback. No tournament or JO data changes.",
   "identityRelease": "7.40.0",
   "tournamentDataRelease": "7.49.1",
   "tournamentEvidenceRelease": "7.45.1",
@@ -18,5 +18,6 @@
   "tournamentArchiveRelease": "7.49.1",
   "historicalProfilesRelease": "7.49.1",
   "tournamentUIRelease": "7.50.0",
-  "logoLibraryRelease": "7.50.1"
+  "logoLibraryRelease": "7.50.1",
+  "logoDeliveryRelease": "7.50.2"
 }

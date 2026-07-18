@@ -1,6 +1,14 @@
 /* CPI Release 7.27 — rankings page polish and top-25 browsing UX */
 (function () {
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
+  const LOGO_CACHE_VERSION = "7.50.2";
+  const LOGO_FALLBACK = `assets/logos/cpi-logo-fallback.svg?v=${LOGO_CACHE_VERSION}`;
+  function versionLogo(src) {
+    const value = String(src || "assets/logos/cpi-logo-fallback.svg");
+    if (!value.includes("assets/logos/")) return value;
+    if (/([?&])v=/.test(value)) return value.replace(/([?&])v=[^&]*/, `$1v=${LOGO_CACHE_VERSION}`);
+    return `${value}${value.includes("?") ? "&" : "?"}v=${LOGO_CACHE_VERSION}`;
+  }
   const state = { visibleCount: 25 };
 
   const els = {
@@ -136,11 +144,11 @@
   }
 
   function topTeamCard(team, index) {
-    const logo = team.logo || "assets/logos/cpi-logo-fallback.svg";
+    const logo = versionLogo(team.logo);
     return `
       <a class="podium-card-v727 podium-${index + 1}" href="${escapeHtml(teamUrl(team))}" style="--team-primary:${escapeHtml(team.primaryColor || "#126dff")}">
         <span class="podium-rank-v727">#${escapeHtml(team.postRank || index + 1)}</span>
-        <img src="${escapeHtml(logo)}" alt="${escapeHtml(clubLabel(team))} logo" loading="lazy" onerror="this.src='assets/logos/cpi-logo-fallback.svg'">
+        <img src="${escapeHtml(logo)}" alt="${escapeHtml(clubLabel(team))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.50.2'">
         <strong>${escapeHtml(team.team || "Team")}</strong>
         <em>${escapeHtml(clubLabel(team))}${team.region ? ` · ${escapeHtml(team.region)}` : ""}</em>
         <b>${safeNumber(team.postCPI).toFixed(1)} CPI</b>
@@ -171,13 +179,13 @@
   function rankingRow(team) {
     const move = movementClass(team.movement);
     const cpi = safeNumber(team.postCPI).toFixed(1);
-    const logo = team.logo || "assets/logos/cpi-logo-fallback.svg";
+    const logo = versionLogo(team.logo);
     const record = team.latestTournamentRecord || `${team.gamesLatest || "—"} games`;
     return `
       <article class="ranking-row ranking-row-v727" style="--team-primary:${escapeHtml(team.primaryColor || "#126dff")}">
         <div class="ranking-rank ranking-rank-v727">#${escapeHtml(team.postRank || "—")}</div>
         <div class="ranking-team ranking-team-v727">
-          <img class="ranking-logo ranking-logo-v727" src="${escapeHtml(logo)}" alt="${escapeHtml(clubLabel(team))} logo" loading="lazy" onerror="this.src='assets/logos/cpi-logo-fallback.svg'">
+          <img class="ranking-logo ranking-logo-v727" src="${escapeHtml(logo)}" alt="${escapeHtml(clubLabel(team))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.50.2'">
           <div>
             <a href="${escapeHtml(teamUrl(team))}"><strong>${escapeHtml(team.team)}</strong></a>
             <span><a href="${escapeHtml(clubUrl(team))}">${escapeHtml(clubLabel(team))}</a>${team.region ? ` · ${escapeHtml(team.region)}` : ""}</span>

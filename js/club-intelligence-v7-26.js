@@ -1,6 +1,14 @@
 /* CPI Release 7.26 — club directory and club profile polish */
 (function () {
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
+  const LOGO_CACHE_VERSION = "7.50.2";
+  const LOGO_FALLBACK = `assets/logos/cpi-logo-fallback.svg?v=${LOGO_CACHE_VERSION}`;
+  function versionLogo(src) {
+    const value = String(src || "assets/logos/cpi-logo-fallback.svg");
+    if (!value.includes("assets/logos/")) return value;
+    if (/([?&])v=/.test(value)) return value.replace(/([?&])v=[^&]*/, `$1v=${LOGO_CACHE_VERSION}`);
+    return `${value}${value.includes("?") ? "&" : "?"}v=${LOGO_CACHE_VERSION}`;
+  }
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const historicalProfiles = window.CPI_HISTORICAL_PROFILES || { clubs: {}, counts: {} };
   const params = new URLSearchParams(window.location.search);
@@ -50,7 +58,7 @@
   }
 
   function safeLogo(club) {
-    return club?.logo || "assets/logos/cpi-logo-fallback.svg";
+    return versionLogo(club?.logo);
   }
 
   function safeName(club) {
@@ -143,7 +151,7 @@
   }
 
   function logoMarkup(club, className = "club-logo-box") {
-    return `<span class="${className}"><img src="${escapeHtml(safeLogo(club))}" alt="${escapeHtml(safeName(club))} logo" loading="lazy" onerror="this.src='assets/logos/cpi-logo-fallback.svg'"></span>`;
+    return `<span class="${className}"><img src="${escapeHtml(safeLogo(club))}" alt="${escapeHtml(safeName(club))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.50.2'"></span>`;
   }
 
   function bestTeamSummary(club) {

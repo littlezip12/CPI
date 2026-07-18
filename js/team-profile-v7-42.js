@@ -1,6 +1,14 @@
 (function () {
   const rankings = window.CPI_RANKINGS || [];
   const clubs = window.CPI_CLUBS || [];
+  const LOGO_CACHE_VERSION = "7.50.2";
+  const LOGO_FALLBACK = `assets/logos/cpi-logo-fallback.svg?v=${LOGO_CACHE_VERSION}`;
+  function versionLogo(src) {
+    const value = String(src || "assets/logos/cpi-logo-fallback.svg");
+    if (!value.includes("assets/logos/")) return value;
+    if (/([?&])v=/.test(value)) return value.replace(/([?&])v=[^&]*/, `$1v=${LOGO_CACHE_VERSION}`);
+    return `${value}${value.includes("?") ? "&" : "?"}v=${LOGO_CACHE_VERSION}`;
+  }
   const tournamentEvidence = window.CPI_TOURNAMENT_EVIDENCE || { teams: {}, counts: {} };
   const historicalProfiles = window.CPI_HISTORICAL_PROFILES || { teams: {}, counts: {} };
   const root = document.querySelector("#teamProfile");
@@ -229,10 +237,9 @@
   }
 
   function logoMarkup(item, className = "team-logo") {
-    const src = escapeHtml(item.logo || "");
+    const src = escapeHtml(versionLogo(item.logo || ""));
     const label = escapeHtml(item.team || item.displayName || item.club || "CPI");
-    if (!src) return `<span class="${className} team-logo-fallback">${escapeHtml((label || "CPI").slice(0, 2).toUpperCase())}</span>`;
-    return `<span class="${className}"><img src="${src}" alt="${label} logo" onerror="this.closest('.${className.split(" ")[0]}').classList.add('team-logo-fallback'); this.remove();"></span>`;
+    return `<span class="${className}"><img src="${src || LOGO_FALLBACK}" alt="${label} logo" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.50.2';"></span>`;
   }
 
   function normalizeSlug(value) {
@@ -434,7 +441,7 @@
     root.innerHTML = `<section class="team-profile-layout">
       ${renderClubRail(club, portfolio, team)}
       <div class="team-profile-main">
-        <section class="team-hero" style="--team-watermark:url('${escapeHtml(team.logo || club.logo || "")}')">
+        <section class="team-hero" style="--team-watermark:url('${escapeHtml(versionLogo(team.logo || club.logo || ""))}')">
           <div class="team-hero-copy">
             <p class="kicker">Team Profile · ${escapeHtml(team.group || "")}</p>
             <h1>${escapeHtml(team.team)}</h1>
