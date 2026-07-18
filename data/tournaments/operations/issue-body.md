@@ -1,10 +1,10 @@
 # CPI tournament operations
 
-Generated: **2026-07-17T23:53:47Z**
+Generated: **2026-07-18T00:01:01Z**
 
 - Live divisions: **23**
-- Ready: **0**
-- Attention: **23**
+- Ready: **2**
+- Attention: **21**
 - Blocking: **0**
 - Completed games: **0**
 
@@ -12,11 +12,9 @@ Generated: **2026-07-17T23:53:47Z**
 
 - ⚠️ **2026 Junior Olympics Weekend 1 · 10U Girls Championship** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 1 · 10U Coed Championship** — Last verified source is stale.
-- ⚠️ **2026 Junior Olympics Weekend 1 · 10U Girls Classic** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 1 · 12U Coed Championship** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 1 · 12U Girls Championship** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 1 · 14U Girls Championship** — Last verified source is stale.
-- ⚠️ **2026 Junior Olympics Weekend 1 · 14U Girls Classic** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 1 · 16U Girls Championship** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 1 · 16U Girls Classic** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 1 · 18U Girls Championship** — Last verified source is stale.
