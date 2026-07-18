@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.50.6",
-  "name": "JO Verified Route Metadata Preservation",
+  "version": "7.50.7",
+  "name": "JO Assigned Route Label Resolution",
   "date": "2026-07-18",
   "rankingDataRelease": "7.30 v2",
-  "joApplicationRelease": "7.50.6",
+  "joApplicationRelease": "7.50.7",
   "deploymentMode": "migration",
-  "notes": "Merges live scores and teams with verified schedule routing metadata when Google leaves winner or loser destination cells blank, preserving future bracket and pool games across both JO weekends.",
+  "notes": "Recognizes live Google Sheet participant cells that append the assigned team name to bracket, pool-slot, or placement route tokens, allowing selected-team journeys to show the same future games already visible through schedule search.",
   "identityRelease": "7.40.0",
   "tournamentDataRelease": "7.49.1",
   "tournamentEvidenceRelease": "7.45.1",
@@ -20,5 +20,5 @@
   "tournamentUIRelease": "7.50.0",
   "logoLibraryRelease": "7.50.1",
   "logoDeliveryRelease": "7.50.2",
-  "joJourneyRelease": "7.50.6"
+  "joJourneyRelease": "7.50.7"
 }
