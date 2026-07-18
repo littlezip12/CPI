@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "release": "7.48.0",
-  "generatedAt": "2026-07-18T01:05:44Z",
+  "generatedAt": "2026-07-18T01:09:04Z",
   "timezone": "America/Los_Angeles",
   "policy": {
     "authoritativeSourceOnly": true,
@@ -21,17 +21,17 @@
     "liveDivisions": 23,
     "archiveEvents": 3,
     "archiveDivisions": 25,
-    "archiveBankedDivisions": 18,
-    "archivePendingDivisions": 7,
-    "archiveGames": 807,
+    "archiveBankedDivisions": 25,
+    "archivePendingDivisions": 0,
+    "archiveGames": 981,
     "historicalEvents": 0,
     "historicalDivisions": 0,
-    "ready": 2,
-    "attention": 21,
+    "ready": 23,
+    "attention": 0,
     "blocking": 0,
     "scheduledGames": 3924,
     "completedGames": 0,
-    "alerts": 21
+    "alerts": 0
   },
   "events": [
     {
@@ -41,8 +41,8 @@
       "monitoringMode": "live",
       "publicPath": "tournaments/jo-girls/index.html",
       "divisionCount": 11,
-      "ready": 2,
-      "attention": 9,
+      "ready": 11,
+      "attention": 0,
       "blocking": 0,
       "historical": 0,
       "archivePending": 0,
@@ -58,8 +58,8 @@
       "monitoringMode": "live",
       "publicPath": "tournaments/jo-boys/index.html",
       "divisionCount": 12,
-      "ready": 0,
-      "attention": 12,
+      "ready": 12,
+      "attention": 0,
       "blocking": 0,
       "historical": 0,
       "archivePending": 0,
@@ -96,11 +96,11 @@
       "attention": 0,
       "blocking": 0,
       "historical": 0,
-      "archivePending": 2,
-      "archived": 11,
+      "archivePending": 0,
+      "archived": 13,
       "archiveAttention": 0,
       "scheduledGames": 0,
-      "completedGames": 581
+      "completedGames": 709
     },
     {
       "eventId": "2026-girls-us-club-championships",
@@ -113,11 +113,11 @@
       "attention": 0,
       "blocking": 0,
       "historical": 0,
-      "archivePending": 5,
-      "archived": 0,
+      "archivePending": 0,
+      "archived": 5,
       "archiveAttention": 0,
       "scheduledGames": 0,
-      "completedGames": 0
+      "completedGames": 46
     }
   ],
   "divisions": [
@@ -133,7 +133,7 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 75,
@@ -149,10 +149,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1690842489#gid=1690842489",
         "sheetName": "10U_F_Champ-18 teams",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:28Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:23Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -161,10 +161,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -186,12 +186,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -222,6 +222,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -244,7 +251,7 @@
       "gender": "Coed",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 146,
@@ -260,10 +267,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=995024268#gid=995024268",
         "sheetName": "10U_Coed_Champ_36",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:29Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:23Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -272,10 +279,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -297,12 +304,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -333,6 +340,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -371,8 +385,8 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1824277279#gid=1824277279",
         "sheetName": "10U_Coed_Classic 22 from 23",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T23:09:41Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:23Z",
         "lastAttemptAt": null,
         "healthStatus": "current",
         "warning": null,
@@ -383,10 +397,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -446,6 +460,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -466,7 +487,7 @@
       "gender": "Coed",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 182,
@@ -482,10 +503,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1233368070#gid=1233368070",
         "sheetName": "12U_Coed_Champ-45",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:30Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:23Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -494,10 +515,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -519,12 +540,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -555,6 +576,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -577,7 +605,7 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 208,
@@ -593,10 +621,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1025107975#gid=1025107975",
         "sheetName": "12U_F_Champ-52",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-15T19:37:49Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:23Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -605,10 +633,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -630,12 +658,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -666,6 +694,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -688,7 +723,7 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -704,10 +739,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=490739644#gid=490739644",
         "sheetName": "14U_F_Champ",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:31Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -716,10 +751,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -741,12 +776,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -777,6 +812,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -815,8 +857,8 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1034305520#gid=1034305520",
         "sheetName": "14U_F_Classic-39 from 40",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T21:08:27Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
         "lastAttemptAt": null,
         "healthStatus": "current",
         "warning": null,
@@ -827,10 +869,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -890,6 +932,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -910,7 +959,7 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -926,10 +975,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1614332560#gid=1614332560",
         "sheetName": "16U_F_Champ",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:32Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -938,10 +987,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -963,12 +1012,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -999,6 +1048,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1021,7 +1077,7 @@
       "gender": "Girls",
       "division": "Classic",
       "divisionTier": "D2",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 182,
@@ -1037,10 +1093,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1031667515#gid=1031667515",
         "sheetName": "16U_F_Classic-45",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:32Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1049,10 +1105,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1074,12 +1130,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1110,6 +1166,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1132,7 +1195,7 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -1148,10 +1211,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=69636405#gid=69636405",
         "sheetName": "18U_F_Champ",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:33Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1160,10 +1223,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1185,12 +1248,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1221,6 +1284,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1243,7 +1313,7 @@
       "gender": "Girls",
       "division": "Classic",
       "divisionTier": "D2",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 178,
@@ -1259,10 +1329,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1267400335#gid=1267400335",
         "sheetName": "18U_F_Classic-44",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:33Z",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
         "lastAttemptAt": null,
-        "healthStatus": "stale",
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1271,10 +1341,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1296,12 +1366,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1332,6 +1402,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1354,7 +1431,7 @@
       "gender": "Boys",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 141,
@@ -1370,10 +1447,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1659399499#gid=1659399499",
         "sheetName": "10U_M_Champ_35",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:34Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1382,10 +1459,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1407,12 +1484,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1443,6 +1520,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1465,7 +1549,7 @@
       "gender": "Boys",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -1481,10 +1565,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1775879786#gid=1775879786",
         "sheetName": "12U_M_Champ",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:35Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1493,10 +1577,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1518,12 +1602,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1554,6 +1638,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1576,7 +1667,7 @@
       "gender": "Boys",
       "division": "Classic",
       "divisionTier": "D2",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 218,
@@ -1592,10 +1683,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1808416221#gid=1808416221",
         "sheetName": "12U_M_Classic_53",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:35Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1604,10 +1695,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1629,12 +1720,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1665,6 +1756,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1687,7 +1785,7 @@
       "gender": "Boys",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -1703,10 +1801,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=345265555#gid=345265555",
         "sheetName": "14U_M_Champ",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:36Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1715,10 +1813,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1740,12 +1838,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1776,6 +1874,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1798,7 +1903,7 @@
       "gender": "Boys",
       "division": "Classic",
       "divisionTier": "D2",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -1814,10 +1919,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=732732301#gid=732732301",
         "sheetName": "14U_M_Classic",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:37Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1826,10 +1931,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1851,12 +1956,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1887,6 +1992,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1909,7 +2021,7 @@
       "gender": "Boys",
       "division": "Invitational",
       "divisionTier": "D3",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 146,
@@ -1925,10 +2037,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1975322406#gid=1975322406",
         "sheetName": "14U_M_Invite_36",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:38Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -1937,10 +2049,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -1962,12 +2074,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -1998,6 +2110,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2020,7 +2139,7 @@
       "gender": "Boys",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -2036,10 +2155,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=2012475287#gid=2012475287",
         "sheetName": "16U_M_Champ",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:38Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -2048,10 +2167,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2073,12 +2192,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -2109,6 +2228,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2131,7 +2257,7 @@
       "gender": "Boys",
       "division": "Classic",
       "divisionTier": "D2",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -2147,10 +2273,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1142418841#gid=1142418841",
         "sheetName": "16U_M_Classic",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:39Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:24Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -2159,10 +2285,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2184,12 +2310,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -2220,6 +2346,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2242,7 +2375,7 @@
       "gender": "Boys",
       "division": "Invitational",
       "divisionTier": "D3",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -2258,10 +2391,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=1686454973#gid=1686454973",
         "sheetName": "16U_M_Invite",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:39Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:25Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -2270,10 +2403,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2295,12 +2428,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -2331,6 +2464,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2353,7 +2493,7 @@
       "gender": "Boys",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -2369,10 +2509,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=38488572#gid=38488572",
         "sheetName": "18U_M_Champ",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:40Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:25Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -2381,10 +2521,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2406,12 +2546,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -2442,6 +2582,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2464,7 +2611,7 @@
       "gender": "Boys",
       "division": "Classic",
       "divisionTier": "D2",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 192,
@@ -2480,10 +2627,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=333261986#gid=333261986",
         "sheetName": "18U_M_Classic",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:40Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:25Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -2492,10 +2639,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2517,12 +2664,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -2553,6 +2700,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2575,7 +2729,7 @@
       "gender": "Boys",
       "division": "Invitational",
       "divisionTier": "D3",
-      "operationalStatus": "attention",
+      "operationalStatus": "ready",
       "phase": "pre_tournament",
       "schedule": {
         "expectedGames": 92,
@@ -2591,10 +2745,10 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit?gid=289749610#gid=289749610",
         "sheetName": "18U_M_Invite 24",
-        "mode": "live_fetch",
-        "lastSuccessfulAt": "2026-07-17T06:28:41Z",
-        "lastAttemptAt": "2026-07-16T06:16:02Z",
-        "healthStatus": "stale",
+        "mode": "cached_raw",
+        "lastSuccessfulAt": "2026-07-18T00:46:25Z",
+        "lastAttemptAt": null,
+        "healthStatus": "current",
         "warning": null,
         "error": null
       },
@@ -2603,10 +2757,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2628,12 +2782,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is stale."
+          "detail": "Source health is current."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": false,
+          "passed": true,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -2664,6 +2818,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2714,10 +2875,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2785,8 +2946,8 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=701942663#gid=701942663",
         "sheetName": null,
-        "mode": "cached_raw",
-        "lastSuccessfulAt": "2026-07-18T00:46:27Z",
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:08:53Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -2797,10 +2958,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2868,8 +3029,8 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=1501136177#gid=1501136177",
         "sheetName": null,
-        "mode": "cached_raw",
-        "lastSuccessfulAt": "2026-07-18T00:46:27Z",
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:08:53Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -2880,10 +3041,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -2951,8 +3112,8 @@
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=471397786#gid=471397786",
         "sheetName": null,
-        "mode": "cached_raw",
-        "lastSuccessfulAt": "2026-07-18T00:46:27Z",
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:08:54Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -2963,10 +3124,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3046,10 +3207,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3129,10 +3290,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3212,10 +3373,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3295,10 +3456,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3378,10 +3539,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3461,10 +3622,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3544,10 +3705,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3627,10 +3788,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3710,10 +3871,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3793,10 +3954,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3848,24 +4009,24 @@
       "gender": "Boys",
       "division": "D1",
       "divisionTier": "D1",
-      "operationalStatus": "archive_pending",
-      "phase": "archive_pending",
+      "operationalStatus": "archived",
+      "phase": "archive_complete",
       "schedule": {
         "expectedGames": null,
-        "games": 0,
+        "games": 64,
         "scheduledGames": 0,
-        "completedGames": 0,
+        "completedGames": 64,
         "partialScores": 0,
         "zeroZeroPlaceholders": 0,
         "blockers": 0,
-        "reviewItems": 0
+        "reviewItems": 60
       },
       "source": {
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=1005552565#gid=1005552565",
         "sheetName": null,
-        "mode": null,
-        "lastSuccessfulAt": null,
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:08:58Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -3876,10 +4037,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -3898,10 +4059,24 @@
         },
         {
           "code": "archive_dataset",
-          "severity": "info",
-          "passed": false,
-          "message": "Awaiting first archive sync",
-          "detail": "Run the historical archive workflow to bank this division."
+          "severity": "blocking",
+          "passed": true,
+          "message": "Normalized historical dataset is banked",
+          "detail": ""
+        },
+        {
+          "code": "archive_blockers",
+          "severity": "warning",
+          "passed": true,
+          "message": "No blocking archive defects",
+          "detail": "0 blocking data defect(s) require review."
+        },
+        {
+          "code": "archive_count_reconciles",
+          "severity": "warning",
+          "passed": true,
+          "message": "Archive counts reconcile",
+          "detail": "64 total != 0 scheduled + 64 completed."
         }
       ]
     },
@@ -3945,10 +4120,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4028,10 +4203,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4083,24 +4258,24 @@
       "gender": "Boys",
       "division": "D1",
       "divisionTier": "D1",
-      "operationalStatus": "archive_pending",
-      "phase": "archive_pending",
+      "operationalStatus": "archived",
+      "phase": "archive_complete",
       "schedule": {
         "expectedGames": null,
-        "games": 0,
+        "games": 64,
         "scheduledGames": 0,
-        "completedGames": 0,
+        "completedGames": 64,
         "partialScores": 0,
         "zeroZeroPlaceholders": 0,
         "blockers": 0,
-        "reviewItems": 0
+        "reviewItems": 53
       },
       "source": {
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=602297558#gid=602297558",
         "sheetName": null,
-        "mode": null,
-        "lastSuccessfulAt": null,
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:08:59Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -4111,10 +4286,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4133,10 +4308,24 @@
         },
         {
           "code": "archive_dataset",
-          "severity": "info",
-          "passed": false,
-          "message": "Awaiting first archive sync",
-          "detail": "Run the historical archive workflow to bank this division."
+          "severity": "blocking",
+          "passed": true,
+          "message": "Normalized historical dataset is banked",
+          "detail": ""
+        },
+        {
+          "code": "archive_blockers",
+          "severity": "warning",
+          "passed": true,
+          "message": "No blocking archive defects",
+          "detail": "0 blocking data defect(s) require review."
+        },
+        {
+          "code": "archive_count_reconciles",
+          "severity": "warning",
+          "passed": true,
+          "message": "Archive counts reconcile",
+          "detail": "64 total != 0 scheduled + 64 completed."
         }
       ]
     },
@@ -4180,10 +4369,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4263,10 +4452,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4318,24 +4507,24 @@
       "gender": "Coed",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "archive_pending",
-      "phase": "archive_pending",
+      "operationalStatus": "archived",
+      "phase": "archive_complete",
       "schedule": {
         "expectedGames": null,
-        "games": 0,
+        "games": 11,
         "scheduledGames": 0,
-        "completedGames": 0,
+        "completedGames": 11,
         "partialScores": 0,
         "zeroZeroPlaceholders": 0,
         "blockers": 0,
-        "reviewItems": 0
+        "reviewItems": 22
       },
       "source": {
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1TInyhZ3SQQ1bzSx5pxTzgzuTTtfrGrCjehzBJfmESXY/edit?gid=0#gid=0",
         "sheetName": null,
-        "mode": null,
-        "lastSuccessfulAt": null,
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:09:01Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -4346,10 +4535,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4368,10 +4557,24 @@
         },
         {
           "code": "archive_dataset",
-          "severity": "info",
-          "passed": false,
-          "message": "Awaiting first archive sync",
-          "detail": "Run the historical archive workflow to bank this division."
+          "severity": "blocking",
+          "passed": true,
+          "message": "Normalized historical dataset is banked",
+          "detail": ""
+        },
+        {
+          "code": "archive_blockers",
+          "severity": "warning",
+          "passed": true,
+          "message": "No blocking archive defects",
+          "detail": "0 blocking data defect(s) require review."
+        },
+        {
+          "code": "archive_count_reconciles",
+          "severity": "warning",
+          "passed": true,
+          "message": "Archive counts reconcile",
+          "detail": "11 total != 0 scheduled + 11 completed."
         }
       ]
     },
@@ -4387,24 +4590,24 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "archive_pending",
-      "phase": "archive_pending",
+      "operationalStatus": "archived",
+      "phase": "archive_complete",
       "schedule": {
         "expectedGames": null,
-        "games": 0,
+        "games": 10,
         "scheduledGames": 0,
-        "completedGames": 0,
+        "completedGames": 10,
         "partialScores": 0,
         "zeroZeroPlaceholders": 0,
         "blockers": 0,
-        "reviewItems": 0
+        "reviewItems": 15
       },
       "source": {
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/179y3JxNFgyWh3g66g2n1kyM6g-fIAO-WpMWuVIhVHgY/edit?gid=0#gid=0",
         "sheetName": null,
-        "mode": null,
-        "lastSuccessfulAt": null,
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:09:01Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -4415,10 +4618,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4437,10 +4640,24 @@
         },
         {
           "code": "archive_dataset",
-          "severity": "info",
-          "passed": false,
-          "message": "Awaiting first archive sync",
-          "detail": "Run the historical archive workflow to bank this division."
+          "severity": "blocking",
+          "passed": true,
+          "message": "Normalized historical dataset is banked",
+          "detail": ""
+        },
+        {
+          "code": "archive_blockers",
+          "severity": "warning",
+          "passed": true,
+          "message": "No blocking archive defects",
+          "detail": "0 blocking data defect(s) require review."
+        },
+        {
+          "code": "archive_count_reconciles",
+          "severity": "warning",
+          "passed": true,
+          "message": "Archive counts reconcile",
+          "detail": "10 total != 0 scheduled + 10 completed."
         }
       ]
     },
@@ -4456,24 +4673,24 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "archive_pending",
-      "phase": "archive_pending",
+      "operationalStatus": "archived",
+      "phase": "archive_complete",
       "schedule": {
         "expectedGames": null,
-        "games": 0,
+        "games": 12,
         "scheduledGames": 0,
-        "completedGames": 0,
+        "completedGames": 12,
         "partialScores": 0,
         "zeroZeroPlaceholders": 0,
         "blockers": 0,
-        "reviewItems": 0
+        "reviewItems": 14
       },
       "source": {
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1G8qhNPbWSreO5MB4_DuX5J878rR_NYnpOfL6BYjGqpQ/edit?gid=0#gid=0",
         "sheetName": null,
-        "mode": null,
-        "lastSuccessfulAt": null,
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:09:01Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -4484,10 +4701,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4506,10 +4723,24 @@
         },
         {
           "code": "archive_dataset",
-          "severity": "info",
-          "passed": false,
-          "message": "Awaiting first archive sync",
-          "detail": "Run the historical archive workflow to bank this division."
+          "severity": "blocking",
+          "passed": true,
+          "message": "Normalized historical dataset is banked",
+          "detail": ""
+        },
+        {
+          "code": "archive_blockers",
+          "severity": "warning",
+          "passed": true,
+          "message": "No blocking archive defects",
+          "detail": "0 blocking data defect(s) require review."
+        },
+        {
+          "code": "archive_count_reconciles",
+          "severity": "warning",
+          "passed": true,
+          "message": "Archive counts reconcile",
+          "detail": "12 total != 0 scheduled + 12 completed."
         }
       ]
     },
@@ -4525,24 +4756,24 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "archive_pending",
-      "phase": "archive_pending",
+      "operationalStatus": "archived",
+      "phase": "archive_complete",
       "schedule": {
         "expectedGames": null,
-        "games": 0,
+        "games": 6,
         "scheduledGames": 0,
-        "completedGames": 0,
+        "completedGames": 6,
         "partialScores": 0,
         "zeroZeroPlaceholders": 0,
         "blockers": 0,
-        "reviewItems": 0
+        "reviewItems": 10
       },
       "source": {
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1VDtD_ofCmPwJenYQGDIHMXkfdO55EU7kcj8XsImh1XY/edit?gid=0#gid=0",
         "sheetName": null,
-        "mode": null,
-        "lastSuccessfulAt": null,
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:09:01Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -4553,10 +4784,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4575,10 +4806,24 @@
         },
         {
           "code": "archive_dataset",
-          "severity": "info",
-          "passed": false,
-          "message": "Awaiting first archive sync",
-          "detail": "Run the historical archive workflow to bank this division."
+          "severity": "blocking",
+          "passed": true,
+          "message": "Normalized historical dataset is banked",
+          "detail": ""
+        },
+        {
+          "code": "archive_blockers",
+          "severity": "warning",
+          "passed": true,
+          "message": "No blocking archive defects",
+          "detail": "0 blocking data defect(s) require review."
+        },
+        {
+          "code": "archive_count_reconciles",
+          "severity": "warning",
+          "passed": true,
+          "message": "Archive counts reconcile",
+          "detail": "6 total != 0 scheduled + 6 completed."
         }
       ]
     },
@@ -4594,24 +4839,24 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "archive_pending",
-      "phase": "archive_pending",
+      "operationalStatus": "archived",
+      "phase": "archive_complete",
       "schedule": {
         "expectedGames": null,
-        "games": 0,
+        "games": 7,
         "scheduledGames": 0,
-        "completedGames": 0,
+        "completedGames": 7,
         "partialScores": 0,
         "zeroZeroPlaceholders": 0,
         "blockers": 0,
-        "reviewItems": 0
+        "reviewItems": 10
       },
       "source": {
         "provider": "Google Sheets",
         "url": "https://docs.google.com/spreadsheets/d/1ok3A1J89hZqvufIFlzCkmmq5d46Yd5pog36JsDta_cI/edit?gid=0#gid=0",
         "sheetName": null,
-        "mode": null,
-        "lastSuccessfulAt": null,
+        "mode": "live_fetch",
+        "lastSuccessfulAt": "2026-07-18T01:09:02Z",
         "lastAttemptAt": null,
         "healthStatus": "unbanked",
         "warning": null,
@@ -4622,10 +4867,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-18T01:05:44Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-18T01:09:03Z"
       },
       "checks": [
         {
@@ -4644,203 +4889,27 @@
         },
         {
           "code": "archive_dataset",
-          "severity": "info",
-          "passed": false,
-          "message": "Awaiting first archive sync",
-          "detail": "Run the historical archive workflow to bank this division."
+          "severity": "blocking",
+          "passed": true,
+          "message": "Normalized historical dataset is banked",
+          "detail": ""
+        },
+        {
+          "code": "archive_blockers",
+          "severity": "warning",
+          "passed": true,
+          "message": "No blocking archive defects",
+          "detail": "0 blocking data defect(s) require review."
+        },
+        {
+          "code": "archive_count_reconciles",
+          "severity": "warning",
+          "passed": true,
+          "message": "Archive counts reconcile",
+          "detail": "7 total != 0 scheduled + 7 completed."
         }
       ]
     }
   ],
-  "alerts": [
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "10u-girls-championship",
-      "divisionLabel": "10U Girls Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "10u-coed-championship",
-      "divisionLabel": "10U Coed Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "12u-coed-championship",
-      "divisionLabel": "12U Coed Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "12u-girls-championship",
-      "divisionLabel": "12U Girls Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "14u-girls-championship",
-      "divisionLabel": "14U Girls Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "16u-girls-championship",
-      "divisionLabel": "16U Girls Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "16u-girls-classic",
-      "divisionLabel": "16U Girls Classic",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "18u-girls-championship",
-      "divisionLabel": "18U Girls Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-1",
-      "eventName": "2026 Junior Olympics Weekend 1",
-      "divisionId": "18u-girls-classic",
-      "divisionLabel": "18U Girls Classic",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "10u-championship",
-      "divisionLabel": "10U Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "12u-boys-championship",
-      "divisionLabel": "12U Boys Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "12u-boys-classic",
-      "divisionLabel": "12U Boys Classic",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "14u-boys-championship",
-      "divisionLabel": "14U Boys Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "14u-boys-classic",
-      "divisionLabel": "14U Boys Classic",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "14u-boys-invitational",
-      "divisionLabel": "14U Boys Invitational",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "16u-boys-championship",
-      "divisionLabel": "16U Boys Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "16u-boys-classic",
-      "divisionLabel": "16U Boys Classic",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "16u-boys-invitational",
-      "divisionLabel": "16U Boys Invitational",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "18u-boys-championship",
-      "divisionLabel": "18U Boys Championship",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "18u-boys-classic",
-      "divisionLabel": "18U Boys Classic",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    },
-    {
-      "eventId": "2026-jo-weekend-2",
-      "eventName": "2026 Junior Olympics Weekend 2",
-      "divisionId": "18u-boys-invitational",
-      "divisionLabel": "18U Boys Invitational",
-      "severity": "warning",
-      "code": "source_freshness",
-      "message": "Last verified source is stale."
-    }
-  ]
+  "alerts": []
 }
