@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.50.5",
-  "name": "JO Full-Round Journey Continuity",
+  "version": "7.50.6",
+  "name": "JO Verified Route Metadata Preservation",
   "date": "2026-07-18",
   "rankingDataRelease": "7.30 v2",
-  "joApplicationRelease": "7.50.5",
+  "joApplicationRelease": "7.50.6",
   "deploymentMode": "migration",
-  "notes": "Keeps selected-team journeys connected through winner, loser, and pool-slot transitions so upcoming game times and venues remain visible while opponents are still TBD.",
+  "notes": "Merges live scores and teams with verified schedule routing metadata when Google leaves winner or loser destination cells blank, preserving future bracket and pool games across both JO weekends.",
   "identityRelease": "7.40.0",
   "tournamentDataRelease": "7.49.1",
   "tournamentEvidenceRelease": "7.45.1",
@@ -20,5 +20,5 @@
   "tournamentUIRelease": "7.50.0",
   "logoLibraryRelease": "7.50.1",
   "logoDeliveryRelease": "7.50.2",
-  "joJourneyRelease": "7.50.5"
+  "joJourneyRelease": "7.50.6"
 }
