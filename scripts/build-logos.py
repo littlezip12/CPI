@@ -7,7 +7,7 @@ import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGINALS = ROOT / "assets-original" / "logos"
-OUTPUT = ROOT / "assets" / "logos"
+OUTPUT = ROOT / "assets" / "logos" / "canonical"
 DATA_DIR = ROOT / "data"
 REGISTRY = DATA_DIR / "logo-registry.json"
 DATA_JS = ROOT / "data.js"
@@ -111,7 +111,7 @@ def build_registry():
             out = OUTPUT / f"{slug}.webp"
             try:
                 normalize_raster(src, out)
-                registry["logos"][slug] = f"assets/logos/{slug}.webp"
+                registry["logos"][slug] = f"assets/logos/canonical/{slug}.webp"
                 print(f"Built {out.relative_to(ROOT)}")
             except Exception as e:
                 print(f"ERROR processing {src.name}: {e}")
@@ -119,8 +119,8 @@ def build_registry():
         elif ext == ".svg":
             out = OUTPUT / f"{slug}.svg"
             shutil.copy2(src, out)
-            registry["logos"][slug] = f"assets/logos/{slug}.svg"
-            registry["svgCopies"][slug] = f"assets/logos/{slug}.svg"
+            registry["logos"][slug] = f"assets/logos/canonical/{slug}.svg"
+            registry["svgCopies"][slug] = f"assets/logos/canonical/{slug}.svg"
             print(f"Copied SVG {out.relative_to(ROOT)}")
 
     REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")

@@ -1,9 +1,10 @@
-# CPI 7.50.0
+# CPI 7.50.1
 
-Unified light tournament experience.
+Logo restoration and asset normalization first pass.
 
-- Redesigns the tournament hub around live events, completed archives, and tournament intelligence.
-- Gives both Junior Olympics weekends one responsive light interface.
-- Adds live status, selected-division metrics, faster team controls, and clearer schedule navigation.
-- Preserves all existing live Google Sheet checks, verified fallbacks, team pathways, shootout scoring, stage labels, and ranking safeguards.
-- Makes no changes to published rankings or tournament data models.
+- Restores the first pass of missing club logos across rankings, club pages, team pages, and club directory views.
+- Converts supplied club artwork into canonical WebP files under `assets/logos/canonical/`.
+- Preserves transparent backgrounds, trims excess whitespace, and normalizes each logo onto a consistent square canvas.
+- Shares confirmed artwork across related club identities: Foothill/FCWP, Clovis/Clovis Red, and Route 66/Route 66 Aquatics.
+- Uses the confirmed Newport Harbor artwork for Newport Beach.
+- Leaves Junior Olympics applications, tournament data, live refreshes, and sync workflows untouched.

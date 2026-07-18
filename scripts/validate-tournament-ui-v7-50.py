@@ -4,7 +4,8 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version')!='7.50.0': errors.append('Site release must be 7.50.0')
+if not str(site.get('version','')).startswith('7.50.'):
+    errors.append('Site release must remain within the 7.50.x line')
 if site.get('tournamentUIRelease')!='7.50.0': errors.append('Tournament UI release must be registered as 7.50.0')
 for rel in ['tournaments/jo-unified-v7-50.css','css/tournaments-unified-v7-50.css','tournaments/jo-boys/index.html','tournaments/jo-girls/index.html','tournaments.html']:
     if not (ROOT/rel).exists(): errors.append(f'Missing {rel}')
