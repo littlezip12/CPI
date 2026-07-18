@@ -1,10 +1,9 @@
-# CPI 7.49.1
+# CPI 7.50.0
 
-Tournament shootouts, placements, and stage labels.
+Unified light tournament experience.
 
-- Fixes Quiksilver team journeys so age/division filters cannot mix same-named teams.
-- Parses the first schedule block in result sheets with embedded descriptive headers.
-- Preserves decimal shootout notation as regulation and penalty-shootout components.
-- Derives verified final placements from completed placement games.
-- Displays tournament rounds and JO Classic Silver/Bronze bracket context.
-- Keeps historical results quarantined from ranking evidence and publication.
+- Redesigns the tournament hub around live events, completed archives, and tournament intelligence.
+- Gives both Junior Olympics weekends one responsive light interface.
+- Adds live status, selected-division metrics, faster team controls, and clearer schedule navigation.
+- Preserves all existing live Google Sheet checks, verified fallbacks, team pathways, shootout scoring, stage labels, and ranking safeguards.
+- Makes no changes to published rankings or tournament data models.
