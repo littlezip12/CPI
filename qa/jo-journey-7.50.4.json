@@ -1,0 +1,32 @@
+{
+  "release": "7.50.4",
+  "name": "JO Journey Resolution & Performance",
+  "scope": [
+    "Boys JO viewer",
+    "Girls and Coed JO viewer"
+  ],
+  "fixes": [
+    "Render verified or cached schedules before the live Google refresh completes.",
+    "Lazy-load the selected Boys JO embedded division instead of parsing all divisions at startup.",
+    "Parse labeled progression references such as W10-LAMORINDA A and L13-LAMORINDA B.",
+    "Resolve a completed result into the correct next scheduled game.",
+    "Project possible opponents through winner, loser, bracket, and pool destinations.",
+    "Index games by team for faster selected-team rendering."
+  ],
+  "regressions": {
+    "lamorindaA": [
+      "Game 10 final",
+      "Game 34 next",
+      "SD Shores Gold opponent"
+    ],
+    "conditionalPaths": [
+      "Game 58 via loss of Game 34",
+      "Platinum Pool P games via win of Game 34"
+    ]
+  },
+  "guardrails": [
+    "No ranking mutation",
+    "No automated publication",
+    "No generated live tournament data included in patch"
+  ]
+}

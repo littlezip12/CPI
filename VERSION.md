@@ -1,9 +1,11 @@
-# CPI 7.50.2
+# CPI 7.50.4
 
-Canonical logo delivery hotfix.
+JO Journey Resolution & Performance.
 
-- Forces fresh `v=7.50.2` requests for canonical logo assets.
-- Prevents cached pre-restoration 404 responses from continuing to display the CPI fallback.
-- Adds direct versioned logo URLs to rankings, team profiles, and club intelligence.
-- Replaces the blank team-profile logo state with the CPI fallback if an asset genuinely fails.
-- Leaves JO applications, tournament data, rankings data, and sync workflows unchanged.
+- Makes verified or cached schedules available before the live Google refresh finishes.
+- Lazily parses Boys JO embedded schedules so only the selected division is initialized.
+- Resolves live bracket labels such as `W10-LAMORINDA A` and `L13-LAMORINDA B`.
+- Correctly displays the next scheduled game after a completed result.
+- Projects possible opponents and conditional winner/loser paths through later bracket and pool games.
+- Adds a team-to-games index to reduce repeated full-schedule scans.
+- Leaves rankings and automatic publication rules unchanged.

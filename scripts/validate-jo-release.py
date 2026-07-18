@@ -148,7 +148,7 @@ for rel in ('tournaments/jo-boys/app.js','tournaments/jo-girls/app.js'):
         for token in ('seedLookup','seedForTeam','teamOptionLabel','jo-seed-badge','JO seed','renderSourceMeta','scheduled · ${completed} completed',"completed.length?`${wins}-${losses}`:'—'"):
             if token not in app_text:
                 fail(f'{rel}: missing JO seed metadata/display support: {token}')
-        expected_app_version = "7.50.0"
+        expected_app_version = "7.50.4"
         if f"const APP_VERSION='{expected_app_version}';" not in app_text:
             fail(f"{rel}: expected APP_VERSION {expected_app_version}")
         result = subprocess.run(['node','--check',str(path)],capture_output=True,text=True)
