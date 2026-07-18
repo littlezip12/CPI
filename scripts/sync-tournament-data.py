@@ -65,7 +65,7 @@ def source_urls(division: dict) -> list[str]:
 def fetch_url_text(url: str, timeout: int = 25) -> str:
     """Fetch one CSV candidate and reject transport-level false positives."""
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.49.0; +https://littlezip12.github.io/CPI/)",
+        "User-Agent": "Mozilla/5.0 (compatible; CPI-Tournament-Sync/7.49.1; +https://littlezip12.github.io/CPI/)",
         "Accept": "text/csv,text/plain,*/*",
         "Cache-Control": "no-cache",
     }

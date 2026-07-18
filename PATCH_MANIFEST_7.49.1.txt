@@ -1,0 +1,25 @@
+CPI 7.49.1 — Tournament Shootouts, Placements & Stage Labels
+
+Primary corrections
+- Quiksilver first schedule blocks now parse instead of being skipped.
+- Team journeys remain scoped to the selected age/division.
+- Decimal official scores such as 7.5-7.4 are preserved as 7-7 regulation, 5-4 shootout.
+- Completed placement games produce verified tournament finishes.
+- Historical date/time columns remain correct across repeated partial headers.
+- Promotional/header rows cannot become scheduled games or fake teams.
+- JO Classic AG and BZ paths display as Silver and Bronze.
+- JO round labels expose semifinal, quarterfinal, play-in, group, final, and placement context.
+- Boys and Girls JO browser parsers support decimal shootout results.
+
+Verified Quiksilver 14U examples
+- Lamorinda: 5 games, 2-3, 12th place.
+- CC United 7.5 vs Lamorinda 7.4: 7-7 regulation, 5-4 shootout.
+- NorCal 1st; Newport 2nd.
+- La Jolla United 15th; Rancho Tsunami 16th.
+
+Data state
+- 41 banked datasets.
+- 4,731 normalized games.
+- 3,924 JO scheduled games and 0 completed JO games before play begins.
+- 807 verified historical finals.
+- Historical results remain ranking-quarantined.

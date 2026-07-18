@@ -3,7 +3,7 @@
 from __future__ import annotations
 import json,subprocess
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]; EXPECTED='7.49.0'; errors=[]
+ROOT=Path(__file__).resolve().parents[1]; EXPECTED='7.49.1'; errors=[]
 def fail(m): errors.append(m)
 def load(rel):
  p=ROOT/rel
@@ -12,10 +12,10 @@ def load(rel):
  except Exception as exc: fail(f'Invalid JSON in {rel}: {exc}'); return {}
 registry=load('data/tournaments/registry.json'); archive=load('data/tournaments/archive/index.json'); site=load('config/site-release.json')
 archive_events=[e for e in registry.get('events',[]) if e.get('archiveSyncEnabled')]; archive_divisions=[d for e in archive_events for d in e.get('divisions',[])]
-if site.get('tournamentArchiveRelease')!=EXPECTED: fail('Site release must register tournament archive 7.49.0')
+if site.get('tournamentArchiveRelease')!=EXPECTED: fail('Site release must register tournament archive 7.49.1')
 if len(archive_events)!=3 or len(archive_divisions)!=25: fail(f'Expected 3 completed events and 25 archive divisions, found {len(archive_events)} and {len(archive_divisions)}')
 if any(e.get('rankingEvidenceEnabled') is not False for e in archive_events): fail('Every historical archive event must remain quarantined from ranking evidence')
-if archive.get('release')!=EXPECTED or archive.get('schemaVersion')!=2: fail('Archive output must use schemaVersion 2 and release 7.49.0')
+if archive.get('release')!=EXPECTED or archive.get('schemaVersion')!=2: fail('Archive output must use schemaVersion 2 and release 7.49.1')
 counts=archive.get('counts',{})
 if counts.get('events')!=3 or counts.get('divisions')!=25: fail('Archive output must represent all three events and 25 divisions')
 if counts.get('bankedDivisions',0)+counts.get('pendingDivisions',0)!=25: fail('Banked and pending archive division counts must reconcile')
@@ -34,7 +34,7 @@ for rel in ['data/tournaments/quiksilver-cup-2026.json','data/tournaments/archiv
 for rel in ['tournament-archive.html','css/tournament-archive-v7-49.css','js/tournament-archive-v7-49.js','data/tournaments/archive/runtime.js','scripts/build-tournament-archive.py','.github/workflows/sync-tournament-archive.yml']:
  if not (ROOT/rel).exists(): fail(f'Missing archive asset: {rel}')
 html=(ROOT/'tournament-archive.html').read_text(encoding='utf-8')
-for token in ['data/tournaments/archive/runtime.js?v=7.49.0','js/tournament-archive-v7-49.js?v=7.49.0','archiveGames','archiveAge','archiveGender','archiveScope']:
+for token in ['data/tournaments/archive/runtime.js?v=7.49.1','js/tournament-archive-v7-49.js?v=7.49.1','archiveGames','archiveAge','archiveGender','archiveScope']:
  if token not in html: fail(f'Archive page missing token: {token}')
 results=(ROOT/'tournaments/results-app.js').read_text(encoding='utf-8')
 for token in ['quiksilver-cup-2026.json','2026-boys-futures-super-finals.json','2026-girls-us-club-championships.json']:

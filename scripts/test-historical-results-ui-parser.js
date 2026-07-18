@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+"use strict";
+const fs=require("fs"),path=require("path"),vm=require("vm");
+const ROOT=path.resolve(__dirname,"..");
+const source=fs.readFileSync(path.join(ROOT,"tournaments/results-app.js"),"utf8");
+const start=source.indexOf("  function esc");
+const end=source.indexOf("  async function init");
+if(start<0||end<=start)throw new Error("Could not isolate historical results parser");
+const context={console,state:{event:{title:"Quiksilver Cup Results"}}};
+vm.createContext(context);vm.runInContext(source.slice(start,end),context,{filename:"results-app-parser"});
+function req(v,m){if(!v)throw new Error(m)}
+const csv=fs.readFileSync(path.join(ROOT,"data/tournaments/raw/2026-quiksilver-cup/14u-boys-championship.csv"),"utf8");
+const tab={label:"14U Boys",age:"14U",gender:"Boys",division:"Championship"};
+const games=context.parseRows(context.parseCsv(csv),tab);
+req(games.length===40,`Quiksilver 14U should contain 40 games, found ${games.length}`);
+const key=x=>context.sortTeamName(x);
+const teamGames=name=>games.filter(g=>key(g.white)===key(name)||key(g.dark)===key(name));
+const result=(g,name)=>context.resultForTeam(g,name);
+const lamo=teamGames("Lamorinda");
+req(lamo.length===5,`Lamorinda should have 5 games, found ${lamo.length}`);
+req(lamo.filter(g=>result(g,"Lamorinda")==="Win").length===2,"Lamorinda should have 2 wins");
+req(lamo.filter(g=>result(g,"Lamorinda")==="Loss").length===3,"Lamorinda should have 3 losses");
+const ccu=lamo.find(g=>key(g.white)===key("CC United"));
+req(ccu&&ccu.whiteScore===7.5&&ccu.darkScore===7.4,"CC United-Lamorinda shootout should parse as 7.5-7.4");
+req(context.finishForTeam(ccu,"Lamorinda")===12,"Lamorinda should finish 12th");
+const lajolla=teamGames("La Jolla United");
+req(lajolla.length===5,`La Jolla United should have 5 games, found ${lajolla.length}`);
+const tsunami=lajolla.find(g=>key(g.white)===key("Rancho Tsunami"));
+req(tsunami&&result(tsunami,"La Jolla United")==="Win","La Jolla should win the shootout against Rancho Tsunami");
+req(context.finishForTeam(tsunami,"La Jolla United")===15,"La Jolla should finish 15th");
+console.log("HISTORICAL RESULTS UI PARSER TESTS PASSED");
+console.log(" - Quiksilver 14U loads all 40 games, including the first schedule block");
+console.log(" - Lamorinda is scoped to 5 games with a 2-3 record and 12th-place finish");
+console.log(" - Decimal shootouts and La Jolla's 15th-place result resolve correctly");

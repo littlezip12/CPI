@@ -1,11 +1,10 @@
-# CPI 7.49.0
+# CPI 7.49.1
 
-Historical results completion and profile integration.
+Tournament shootouts, placements, and stage labels.
 
-- Recognizes unlabeled score columns in completed-event result tables.
-- Separates pool and advancement references from canonical team names.
-- Rebuilds 18 banked historical divisions into 787 games, including 769 verified finals.
-- Links historical context to 116 ranked team profiles and 82 club profiles.
-- Adds verified placements, source traceability, profile links, and expanded archive filters.
-- Keeps all historical results quarantined from ranking evidence and automatic publication.
-- Leaves seven inaccessible historical divisions explicitly pending rather than inventing data.
+- Fixes Quiksilver team journeys so age/division filters cannot mix same-named teams.
+- Parses the first schedule block in result sheets with embedded descriptive headers.
+- Preserves decimal shootout notation as regulation and penalty-shootout components.
+- Derives verified final placements from completed placement games.
+- Displays tournament rounds and JO Classic Silver/Bronze bracket context.
+- Keeps historical results quarantined from ranking evidence and publication.

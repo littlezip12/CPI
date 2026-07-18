@@ -38,7 +38,7 @@ for division_id,expected in EXPECTED.items():
         fail(f'{division_id} lost structured bracket references')
     total+=int(counts.get('games') or 0)
 app=(ROOT/'tournaments/jo-boys/app.js').read_text(encoding='utf-8')
-if "const APP_VERSION='7.45.2';" not in app: fail('Boys app version is not 7.45.2')
+if "const APP_VERSION='7.49.1';" not in app: fail('Boys app version is not 7.49.1')
 if 'function configuredSheetNames' not in app or 'function fetchVerifiedSnapshot' not in app: fail('Boys app lacks stable-name or snapshot fallback support')
 if app.find('for(const name of configuredSheetNames(config))')>app.find('for(const gid of gids)'):
     fail('Boys browser app does not try sheet names before GIDs')

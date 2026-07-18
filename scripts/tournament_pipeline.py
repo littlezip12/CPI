@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared CPI tournament ingestion and normalization helpers (release 7.49.0)."""
+"""Shared CPI tournament ingestion and normalization helpers (release 7.49.1)."""
 from __future__ import annotations
 
 import csv
@@ -181,7 +181,8 @@ JO_GAME_ID_RE = re.compile(r"^[A-Z0-9_-]+-\d+[A-Z]?$", re.I)
 HEADER_ALIASES = {
     "date": ["date"],
     "time": ["time"],
-    "stage": ["type", "stage", "round"],
+    "stage": ["type", "stage", "round", "comments", "comment"],
+    "stage_detail": ["stage detail", "bracket stage", "bracket detail"],
     "venue": ["location", "venue", "site", "pool"],
     "game_number": ["gm #", "gm#", "game #", "game", "gm"],
     "white": ["white", "white team", "team 1", "team a", "home", "home team", "visitor", "visitor team"],
@@ -197,11 +198,19 @@ def header_normalize(value: Any) -> str:
 
 
 def _first_header_index(headers: list[str], candidates: Iterable[str]) -> int:
+    # Prefer exact header cells, but support official result sheets whose first
+    # row combines tournament metadata and the actual header label in one cell,
+    # e.g. "14U BOYS ... DATE" or "FOLLOW AND TAG! COMMENTS".
     for candidate in candidates:
         try:
             return headers.index(candidate)
         except ValueError:
             continue
+    for candidate in candidates:
+        pattern = re.compile(rf"(?:^|\s){re.escape(candidate)}\s*$", re.I)
+        for index, value in enumerate(headers):
+            if pattern.search(value):
+                return index
     return -1
 
 
@@ -215,6 +224,11 @@ def detect_header(row: list[str]) -> dict[str, int] | None:
     # L To header cells blank while retaining a stable positional layout around
     # Type/Location/White/Dark/GMID. Infer only those missing indices.
     stage, venue, game_id = mapping["stage"], mapping["venue"], mapping["game_id"]
+    # JO workbooks carry an unlabeled machine-readable stage token three cells
+    # after GMID (for example ag_9-12 semi or bz_15th). Preserve it separately
+    # from the human Type column so Classic Silver/Bronze paths can be labeled.
+    if mapping.get("stage_detail", -1) < 0 and game_id >= 0 and game_id + 2 < len(headers):
+        mapping["stage_detail"] = game_id + 2
     if mapping["date"] < 0 and stage >= 2:
         mapping["date"] = stage - 2
     if mapping["time"] < 0 and stage >= 1:
@@ -257,6 +271,92 @@ def parse_score(raw: Any) -> int | float | None:
     if re.fullmatch(r"\d+\.\d+", text):
         return float(text)
     return None
+
+
+def parse_score_components(raw: Any) -> dict[str, Any]:
+    """Parse official scores, including decimal shootout notation.
+
+    A value such as 7.5 means the game was tied 7-7 before penalties and the
+    team scored five penalty shots. The decimal is an outcome notation, not a
+    fractional goal, so regulation and shootout totals are stored separately.
+    """
+    text = normalize_space(raw)
+    if re.fullmatch(r"\d+", text):
+        value = int(text)
+        return {"encoded": value, "regulation": value, "shootout": None, "raw": text}
+    match = re.fullmatch(r"(?P<regulation>\d+)\.(?P<shootout>\d+)", text)
+    if match:
+        return {
+            "encoded": float(text),
+            "regulation": int(match.group("regulation")),
+            "shootout": int(match.group("shootout")),
+            "raw": text,
+        }
+    return {"encoded": None, "regulation": None, "shootout": None, "raw": text or None}
+
+
+def classify_stage(stage: Any, stage_detail: Any, division: dict[str, Any]) -> dict[str, Any]:
+    raw = normalize_space(stage)
+    detail = normalize_space(stage_detail)
+    source = detail or raw
+    bracket_code = None
+    bracket_label = None
+    round_text = raw or detail
+    match = re.match(r"^(?P<code>[A-Za-z]{2,3})[_-](?P<round>.+)$", detail)
+    if match:
+        bracket_code = match.group("code").lower()
+        round_text = normalize_space(match.group("round").replace("_", " "))
+    # USAWP Classic brackets use AG for Silver and BZ for Bronze. Keep unknown
+    # codes raw rather than guessing at a medal/tier name.
+    if str(division.get("divisionTier", "")).upper() == "D2" or str(division.get("division", "")).lower() == "classic":
+        bracket_label = {"ag": "Silver", "bz": "Bronze"}.get(bracket_code)
+    text = normalize_space(round_text)
+    lowered = text.lower()
+    if re.search(r"\bsemi(?:finals?)?\b", lowered):
+        round_label = re.sub(r"\bsemi(?:finals?)?\b", "Semifinal", text, flags=re.I)
+        round_type = "semifinal"
+    elif re.search(r"\bqtr\b|\bquarter(?:finals?)?\b", lowered):
+        round_label = re.sub(r"\bqtr\b|\bquarter(?:finals?)?\b", "Quarterfinal", text, flags=re.I)
+        round_type = "quarterfinal"
+    elif re.fullmatch(r"\d+(?:st|nd|rd|th)", lowered):
+        round_label = f"{text} place game"
+        round_type = "placement"
+    elif re.search(r"\bplay[- ]?in\b", lowered):
+        round_label = "Play-in"
+        round_type = "play_in"
+    elif re.search(r"\bgroup\b|\bpool\b", lowered):
+        round_label = "Group play"
+        round_type = "group"
+    elif re.search(r"\brr\b|round robin", lowered):
+        round_label = re.sub(r"\bRR\b", "round robin", text, flags=re.I)
+        round_type = "round_robin"
+    elif re.search(r"\b1st\b|championship|final", lowered):
+        round_label = "Championship game" if re.fullmatch(r"1st", lowered) else text
+        round_type = "final"
+    else:
+        round_label = text
+        round_type = "other" if text else None
+    placement = None
+    ordinal = re.fullmatch(r"(?P<n>\d+)(?:st|nd|rd|th)", lowered)
+    if ordinal:
+        winner_place = int(ordinal.group("n"))
+        placement = {"winnerPlace": winner_place, "loserPlace": winner_place + 1}
+    range_match = re.search(r"(?P<start>\d+)\s*[-–—]\s*(?P<end>\d+)", text)
+    placement_range = None
+    if range_match:
+        placement_range = {"start": int(range_match.group("start")), "end": int(range_match.group("end"))}
+    display = " · ".join(part for part in ((f"{bracket_label} bracket" if bracket_label else None), round_label) if part)
+    return {
+        "raw": raw or None,
+        "detailRaw": detail or None,
+        "bracketCode": bracket_code,
+        "bracketLabel": bracket_label,
+        "roundType": round_type,
+        "roundLabel": round_label or None,
+        "placementRange": placement_range,
+        "placement": placement,
+        "displayLabel": display or raw or detail or None,
+    }
 
 
 def parse_combined_score(raw: Any) -> tuple[int | float | None, int | float | None]:
@@ -466,6 +566,18 @@ def normalize_csv(
     for row_number, row in enumerate(rows, start=1):
         candidate = detect_header(row)
         if candidate:
+            if division.get("parser") == "results_table_v1":
+                # Completed-event sheets commonly omit DATE and TIME labels in
+                # repeated (and sometimes initial) headers while keeping the
+                # stable DATE, TIME, LOCATION layout. Derive those columns from
+                # LOCATION, not COMMENTS; otherwise DARK and its score can be
+                # misread as date/time.
+                header_cells = [header_normalize(x) for x in row]
+                venue_index = candidate.get("venue", -1)
+                if _first_header_index(header_cells, HEADER_ALIASES["date"]) < 0 and venue_index >= 2:
+                    candidate["date"] = venue_index - 2
+                if _first_header_index(header_cells, HEADER_ALIASES["time"]) < 0 and venue_index >= 1:
+                    candidate["time"] = venue_index - 1
             mapping = candidate
             continue
         if not mapping:
@@ -491,6 +603,13 @@ def normalize_csv(
                 game_number_raw = inferred_number
         if not (date_label or time_label or game_number_raw or source_game_id):
             continue
+        if division.get("parser") == "results_table_v1":
+            if not (date_label and time_label and game_number_raw):
+                continue
+            if parse_date_iso(date_label, division["season"]) is None:
+                continue
+            if not re.fullmatch(r"\d{1,2}:\d{2}\s*(?:AM|PM)?", time_label, re.I):
+                continue
         if division.get("parser") == "jo_bracket_v1":
             # JO workbooks contain seed/crossover tables beneath repeated schedule
             # headers. Only rows with a real date, time, game number, and GMID
@@ -505,13 +624,17 @@ def normalize_csv(
 
         white = parse_participant(raw_white, scope, resolver)
         dark = parse_participant(raw_dark, scope, resolver)
-        white_score, dark_score = parse_score(get("white_score")), parse_score(get("dark_score"))
+        white_detail = parse_score_components(get("white_score"))
+        dark_detail = parse_score_components(get("dark_score"))
+        white_score, dark_score = white_detail["encoded"], dark_detail["encoded"]
         if white_score is None or dark_score is None:
             combined_white, combined_dark = parse_combined_score(get("combined_score"))
-            if white_score is None:
+            if white_score is None and combined_white is not None:
                 white_score = combined_white
-            if dark_score is None:
+                white_detail = parse_score_components(str(combined_white))
+            if dark_score is None and combined_dark is not None:
                 dark_score = combined_dark
+                dark_detail = parse_score_components(str(combined_dark))
         complete_scores = white_score is not None and dark_score is not None
         zero_zero_placeholder = complete_scores and white_score == 0 and dark_score == 0
         if white_score is None and dark_score is None:
@@ -527,9 +650,32 @@ def normalize_csv(
             issues.append({"severity": "review", "code": "partial_score", "sourceRow": row_number, "whiteScore": get("white_score"), "darkScore": get("dark_score")})
         if status == "final" and (white["kind"] != "team" or dark["kind"] != "team"):
             issues.append({"severity": "blocker", "code": "final_game_without_two_teams", "sourceRow": row_number, "white": raw_white, "dark": raw_dark})
+        shootout = None
+        if white_detail.get("shootout") is not None or dark_detail.get("shootout") is not None:
+            shootout = {
+                "occurred": True,
+                "whiteRegulation": white_detail.get("regulation"),
+                "darkRegulation": dark_detail.get("regulation"),
+                "whiteShootout": white_detail.get("shootout"),
+                "darkShootout": dark_detail.get("shootout"),
+            }
         outcome: dict[str, Any] = {"kind": "pending", "winnerTeamId": None, "loserTeamId": None}
         if status == "final":
-            if white_score == dark_score:
+            if shootout and shootout.get("whiteShootout") is not None and shootout.get("darkShootout") is not None:
+                white_won = shootout["whiteShootout"] > shootout["darkShootout"]
+                winner = white if white_won else dark
+                loser = dark if white_won else white
+                outcome = {
+                    "kind": "decided",
+                    "decidedBy": "shootout",
+                    "winnerParticipantId": winner.get("participantId"),
+                    "winnerTeamId": winner.get("teamId"),
+                    "winnerName": winner.get("displayName"),
+                    "loserParticipantId": loser.get("participantId"),
+                    "loserTeamId": loser.get("teamId"),
+                    "loserName": loser.get("displayName"),
+                }
+            elif white_score == dark_score:
                 outcome["kind"] = "tie"
             else:
                 white_won = white_score > dark_score
@@ -548,8 +694,16 @@ def normalize_csv(
         row_info = {"date": date_label, "time": time_label, "venue": get("venue"), "white": raw_white, "dark": raw_dark}
         game_id = stable_game_id(event["id"], division["id"], source_game_id, game_number_raw, row_info)
         if game_id in seen_ids:
-            issues.append({"severity": "blocker", "code": "duplicate_game_id", "sourceRow": row_number, "gameId": game_id})
-            continue
+            if division.get("parser") == "results_table_v1":
+                # Some completed-event sheets reuse a visible GMID at different
+                # venues. Preserve both real games and retain the duplicated
+                # source ID as traceable metadata rather than dropping a row.
+                disambiguator = hashlib.sha1("|".join(normalize_space(row_info.get(k)) for k in ("date", "time", "venue", "white", "dark")).encode("utf-8")).hexdigest()[:8]
+                game_id = f"{game_id}-{disambiguator}"
+                issues.append({"severity": "review", "code": "duplicate_source_game_id_disambiguated", "sourceRow": row_number, "sourceGameId": source_game_id or game_number_raw, "gameId": game_id})
+            else:
+                issues.append({"severity": "blocker", "code": "duplicate_game_id", "sourceRow": row_number, "gameId": game_id})
+                continue
         seen_ids.add(game_id)
 
         for side, participant in (("white", white), ("dark", dark)):
@@ -557,7 +711,8 @@ def normalize_csv(
             if issue:
                 issues.append(issue)
 
-        game_number = int(game_number_raw) if game_number_raw.isdigit() else (game_number_raw.upper() if JO_GAME_NUMBER_RE.fullmatch(game_number_raw) else None)
+        game_number = int(game_number_raw) if game_number_raw.isdigit() else (game_number_raw.upper() if game_number_raw else None)
+        stage_meta = classify_stage(get("stage"), get("stage_detail"), division)
         games.append({
             "id": game_id,
             "eventId": event["id"],
@@ -575,11 +730,23 @@ def normalize_csv(
             "timeLabel": time_label or None,
             "timezone": TIMEZONE,
             "stage": get("stage") or None,
+            "stageDisplay": stage_meta.get("displayLabel"),
+            "stageMeta": stage_meta,
             "venue": get("venue") or None,
             "status": status,
             "scoreState": score_state,
             "participants": {"white": white, "dark": dark},
-            "scores": {"white": white_score, "dark": dark_score, "whiteRaw": get("white_score") or None, "darkRaw": get("dark_score") or None},
+            "scores": {
+                "white": white_score,
+                "dark": dark_score,
+                "whiteRaw": get("white_score") or None,
+                "darkRaw": get("dark_score") or None,
+                "whiteRegulation": white_detail.get("regulation"),
+                "darkRegulation": dark_detail.get("regulation"),
+                "whiteShootout": white_detail.get("shootout"),
+                "darkShootout": dark_detail.get("shootout"),
+            },
+            "shootout": shootout,
             "outcome": outcome,
             "advancement": {"winnerTo": parse_destination(get("winner_to")), "loserTo": parse_destination(get("loser_to"))},
         })

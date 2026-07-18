@@ -12,7 +12,7 @@ rankings=load('rankings.json')
 def require(value,message):
     if not value: raise AssertionError(message)
 
-require(profiles.get('release')=='7.49.0','Historical profiles must use release 7.49.0')
+require(profiles.get('release')=='7.49.1','Historical profiles must use release 7.49.1')
 require(profiles.get('policy',{}).get('rankingEvidenceEnabled') is False,'Historical profiles must remain ranking-quarantined')
 require(profiles.get('counts',{}).get('finalGames')==archive.get('counts',{}).get('finalGames'),'Historical profile final count must match archive')
 require(profiles.get('counts',{}).get('teams',0)>=100,'Expected at least 100 canonical teams with linked history')

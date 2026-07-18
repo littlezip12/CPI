@@ -11,7 +11,7 @@ from typing import Any
 
 from tournament_pipeline import ROOT, load_json, write_json
 
-RELEASE = "7.49.0"
+RELEASE = "7.49.1"
 EMPTY_GENERATED_AT = "2026-07-17T00:00:00Z"
 REGISTRY = ROOT / "data" / "tournaments" / "registry.json"
 NORMALIZED = ROOT / "data" / "tournaments" / "normalized"
@@ -116,6 +116,8 @@ def compact_game(game: dict[str, Any], event: dict[str, Any], division: dict[str
         "timeLabel": game.get("timeLabel"),
         "venue": game.get("venue"),
         "stage": game.get("stage"),
+        "stageDisplay": game.get("stageDisplay") or game.get("stage"),
+        "stageMeta": game.get("stageMeta"),
         "gameNumber": game.get("sourceGameNumber"),
         "sourceGameId": game.get("sourceGameId"),
         "sourceRow": game.get("sourceRow"),
@@ -144,7 +146,8 @@ def compact_game(game: dict[str, Any], event: dict[str, Any], division: dict[str
         "whiteScore": scores.get("white"),
         "darkScore": scores.get("dark"),
         "scoreDisplay": display,
-        "shootout": shootout,
+        "shootout": game.get("shootout") or shootout,
+        "officialScoreDisplay": (f"{scores.get('whiteRaw')}–{scores.get('darkRaw')}" if scores.get("whiteRaw") and scores.get("darkRaw") else display),
         "whiteResult": outcome_for_side(game, "white"),
         "darkResult": outcome_for_side(game, "dark"),
         "sourceUrl": division.get("sourceUrl"),
@@ -181,9 +184,12 @@ def derive_placements(data: dict[str, Any], teams: dict[str, Any], clubs: dict[s
         if game.get("status") != "final":
             continue
         stage = str(game.get("stage") or "").strip()
+        stage_meta = game.get("stageMeta") or {}
         match_pair = PLACEMENT_PAIR_RE.fullmatch(stage)
         match_single = PLACEMENT_SINGLE_RE.fullmatch(stage)
-        if not match_pair and not match_single:
+        stage_meta = game.get("stageMeta") or {}
+        placement_meta = stage_meta.get("placement") if isinstance(stage_meta, dict) else None
+        if not match_pair and not match_single and not placement_meta:
             continue
         participants = game.get("participants", {})
         scores = game.get("scores", {})
@@ -194,9 +200,14 @@ def derive_placements(data: dict[str, Any], teams: dict[str, Any], clubs: dict[s
         loser = participants.get("dark", {}) if white_score > dark_score else participants.get("white", {})
         if match_pair:
             winner_place, loser_place = int(match_pair.group("a")), int(match_pair.group("b"))
-        else:
+        elif match_single:
             winner_place = int(match_single.group("a"))
             loser_place = winner_place + 1
+        elif placement_meta:
+            winner_place = int(placement_meta.get("winnerPlace"))
+            loser_place = int(placement_meta.get("loserPlace"))
+        else:
+            continue
         if winner.get("kind") == "team" and winner_place not in by_place:
             by_place[winner_place] = placement_record(winner_place, winner, "placement_game", game.get("id"), teams, clubs)
         if loser.get("kind") == "team" and loser_place not in by_place:
@@ -309,6 +320,7 @@ def main() -> int:
                     "date": game.get("dateLabel") or game.get("dateIso") or "",
                     "time": game.get("timeLabel") or "",
                     "venue": game.get("venue") or "",
+                    "stage": game.get("stageDisplay") or game.get("stage") or "",
                     "gameNo": game.get("gameNumber") or "",
                     "gmid": game.get("sourceGameId") or "",
                     "white": game.get("white"),

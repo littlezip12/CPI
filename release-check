@@ -10,6 +10,7 @@ python3 scripts/validate-jo-release.py
 python3 scripts/validate-jo-boys-source-stability.py
 node scripts/test-jo-boys-browser-parser.js
 node scripts/test-jo-boys-embedded-fallback.js
+node scripts/test-jo-shootout-stage.js
 python3 scripts/validate-identity-registry.py
 python3 scripts/test-tournament-pipeline.py
 python3 scripts/test-tournament-sync-guard.py
@@ -18,9 +19,11 @@ python3 scripts/validate-tournament-identity-cleanup.py
 python3 scripts/validate-tournament-evidence.py
 python3 scripts/validate-tournament-health.py
 python3 scripts/test-historical-tournament-parser.py
+node scripts/test-historical-results-ui-parser.js
 python3 scripts/build-tournament-archive.py
 python3 scripts/build-historical-profiles.py
 python3 scripts/validate-tournament-archive.py
+python3 scripts/validate-tournament-results-and-stages.py
 python3 scripts/test-historical-profile-engine.py
 python3 scripts/validate-historical-profiles.py
 node scripts/test-tournament-archive-ui.js

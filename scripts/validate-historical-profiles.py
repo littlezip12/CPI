@@ -4,16 +4,16 @@ from __future__ import annotations
 import json,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-EXPECTED='7.49.0'; errors=[]
+EXPECTED='7.49.1'; errors=[]
 def fail(msg): errors.append(msg)
 def load(rel):
  p=ROOT/rel
  if not p.exists(): fail(f'Missing historical profile file: {rel}'); return {}
  try:return json.loads(p.read_text(encoding='utf-8'))
  except Exception as exc: fail(f'Invalid JSON in {rel}: {exc}'); return {}
-site=load('config/site-release.json'); profiles=load('data/tournaments/history/index.json'); archive=load('data/tournaments/archive/index.json'); qa=load('qa/historical-profile-summary-7.49.0.json')
-if site.get('historicalProfilesRelease')!=EXPECTED: fail('Site release must register historical profiles 7.49.0')
-if profiles.get('release')!=EXPECTED or profiles.get('schemaVersion')!=1: fail('Historical profiles must use schemaVersion 1 and release 7.49.0')
+site=load('config/site-release.json'); profiles=load('data/tournaments/history/index.json'); archive=load('data/tournaments/archive/index.json'); qa=load('qa/historical-profile-summary-7.49.1.json')
+if site.get('historicalProfilesRelease')!=EXPECTED: fail('Site release must register historical profiles 7.49.1')
+if profiles.get('release')!=EXPECTED or profiles.get('schemaVersion')!=1: fail('Historical profiles must use schemaVersion 1 and release 7.49.1')
 if profiles.get('policy',{}).get('rankingEvidenceEnabled') is not False: fail('Historical profiles must remain excluded from ranking evidence')
 if profiles.get('policy',{}).get('automaticRankingPublication') is not False: fail('Historical profiles must block automatic ranking publication')
 if profiles.get('counts',{}).get('finalGames')!=archive.get('counts',{}).get('finalGames'): fail('Historical profile final-game count must match archive')
@@ -22,7 +22,7 @@ if qa.get('summary')!=profiles.get('counts'): fail('Historical profile QA summar
 for rel in ['data/tournaments/history/runtime.js','css/historical-profiles-v7-49.css','scripts/build-historical-profiles.py','scripts/test-historical-profile-engine.py','scripts/validate-historical-profiles.py']:
  if not (ROOT/rel).exists(): fail(f'Missing historical profile asset: {rel}')
 team_html=(ROOT/'team.html').read_text(encoding='utf-8'); club_html=(ROOT/'club.html').read_text(encoding='utf-8')
-for token in ['data/tournaments/history/runtime.js?v=7.49.0','css/historical-profiles-v7-49.css?v=7.49.0']:
+for token in ['data/tournaments/history/runtime.js?v=7.49.1','css/historical-profiles-v7-49.css?v=7.49.1']:
  if token not in team_html: fail(f'Team profile missing historical asset: {token}')
  if token not in club_html: fail(f'Club profile missing historical asset: {token}')
 team_js=(ROOT/'js/team-profile-v7-42.js').read_text(encoding='utf-8'); club_js=(ROOT/'js/club-intelligence-v7-26.js').read_text(encoding='utf-8')

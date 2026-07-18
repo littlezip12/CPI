@@ -9,14 +9,14 @@ from typing import Any
 
 from tournament_pipeline import ROOT, load_json, write_json
 
-RELEASE = "7.49.0"
+RELEASE = "7.49.1"
 ARCHIVE = ROOT / "data" / "tournaments" / "archive" / "index.json"
 IDENTITY = ROOT / "data" / "identity" / "index.json"
 RANKINGS = ROOT / "rankings.json"
 OUTPUT_ROOT = ROOT / "data" / "tournaments" / "history"
 OUTPUT = OUTPUT_ROOT / "index.json"
 RUNTIME = OUTPUT_ROOT / "runtime.js"
-QA = ROOT / "qa" / "historical-profile-summary-7.49.0.json"
+QA = ROOT / "qa" / "historical-profile-summary-7.49.1.json"
 
 
 def empty_summary() -> dict[str, int]:
@@ -116,12 +116,16 @@ def game_for_side(game: dict[str, Any], side: str) -> dict[str, Any]:
         "timeLabel": game.get("timeLabel"),
         "venue": game.get("venue"),
         "stage": game.get("stage"),
+        "stageDisplay": game.get("stageDisplay") or game.get("stage"),
+        "stageMeta": game.get("stageMeta"),
         "gameNumber": game.get("gameNumber") or game.get("sourceGameId"),
         "status": game.get("status"),
         "result": game.get(f"{side}Result"),
         "scoreFor": game.get(f"{side}Score"),
         "scoreAgainst": game.get(f"{other}Score"),
         "scoreDisplay": game.get("scoreDisplay"),
+        "officialScoreDisplay": game.get("officialScoreDisplay"),
+        "shootout": game.get("shootout"),
         "opponentName": game.get(other),
         "opponentTeamId": game.get(f"{other}TeamId"),
         "opponentClubId": game.get(f"{other}ClubId"),
