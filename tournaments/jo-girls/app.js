@@ -1,9 +1,13 @@
 
 const SHEET_ID='1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw';
-const APP_VERSION='7.50.9';
+const APP_VERSION='7.51.0';
 const DATASETS=[{"id":"10u-girls-championship","age":"10U","division":"Girls Championship (D1)","gid":"1690842489","sheetName":"10U_F_Champ-18 teams","gidAliases":["1690842489"]},{"id":"10u-coed-championship","age":"10U","division":"Coed Championship (D1)","gid":"995024268","sheetName":"10U_Coed_Champ_36","gidAliases":["995024268","2041957360"]},{"id":"10u-girls-classic","age":"10U","division":"Girls Classic (D2)","gid":"1824277279","sheetName":"10U_Coed_Classic 22 from 23","gidAliases":["1824277279","597397535"]},{"id":"12u-coed-championship","age":"12U","division":"Coed Championship (D1)","gid":"1233368070","sheetName":"12U_Coed_Champ-45","gidAliases":["1233368070","2012252190"]},{"id":"12u-girls-championship","age":"12U","division":"Girls Championship (D1)","gid":"1025107975","sheetName":"12U_F_Champ-52","gidAliases":["1025107975","1128927098"]},{"id":"14u-girls-championship","age":"14U","division":"Girls Championship (D1)","gid":"490739644","sheetName":"14U_F_Champ","gidAliases":["490739644","1268677491"]},{"id":"14u-girls-classic","age":"14U","division":"Girls Classic (D2)","gid":"1034305520","sheetName":"14U_F_Classic-39 from 40","gidAliases":["1034305520","252316141"]},{"id":"16u-girls-championship","age":"16U","division":"Girls Championship (D1)","gid":"1614332560","sheetName":"16U_F_Champ","gidAliases":["1614332560","61950596"]},{"id":"16u-girls-classic","age":"16U","division":"Girls Classic (D2)","gid":"1031667515","sheetName":"16U_F_Classic-45","gidAliases":["1031667515","901188675"]},{"id":"18u-girls-championship","age":"18U","division":"Girls Championship (D1)","gid":"69636405","sheetName":"18U_F_Champ","gidAliases":["69636405","934738630"]},{"id":"18u-girls-classic","age":"18U","division":"Girls Classic (D2)","gid":"1267400335","sheetName":"18U_F_Classic-44","gidAliases":["1267400335","265773689"]}];
 const EMBEDDED_SNAPSHOT_CSV={};
 const EMBEDDED_FALLBACKS={};
+const RELAY_EVENT_ID='2026-jo-weekend-1';
+const RELAY_BASE_URL='https://raw.githubusercontent.com/littlezip12/CPI/cpi-live-relay/data/tournaments/live-relay';
+const RELAY_FETCH_TIMEOUT_MS=4500;
+const RELAY_FRESH_MAX_AGE_MS=20*60*1000;
 const REFRESH_MS=120000;
 const ACTIVE_REFRESH_MIN_MS=30000;
 const LIVE_FETCH_TIMEOUT_MS=5500;
@@ -165,6 +169,44 @@ async function fetchVerifiedSnapshot(config){
     const result=validateGames(parseLive(text));result.url=url;result.method='verified snapshot';result.isFallback=true;result.updatedAt=response.headers?.get?.('last-modified')||config.snapshotUpdatedAt||null;return result;
   }catch(error){if(error?.name==='AbortError')throw new Error('Verified snapshot timeout');throw error}
   finally{clearTimeout(timer)}
+}
+
+function relayFileUrl(config,kind){
+  const suffix=kind==='status'?`status/${RELAY_EVENT_ID}/${encodeURIComponent(config.id)}.json`:`${RELAY_EVENT_ID}/${encodeURIComponent(config.id)}.csv`;
+  return `${RELAY_BASE_URL}/${suffix}`;
+}
+function relayStatusFresh(status){
+  const checked=Date.parse(status?.checkedAt||status?.lastSuccessAt||'');
+  return status?.state==='live'&&Number.isFinite(checked)&&(Date.now()-checked)<=RELAY_FRESH_MAX_AGE_MS;
+}
+async function fetchRelayDataset(config){
+  const controller=typeof AbortController==='function'?new AbortController():null;
+  const timer=setTimeout(()=>controller?.abort(),RELAY_FETCH_TIMEOUT_MS),nonce=Date.now();
+  try{
+    const options={cache:'no-store',signal:controller?.signal,headers:{Accept:'application/json,text/csv,text/plain,*/*'}};
+    const [statusResponse,csvResponse]=await Promise.all([
+      fetch(`${relayFileUrl(config,'status')}?_=${nonce}`,options),
+      fetch(`${relayFileUrl(config,'csv')}?_=${nonce}`,options)
+    ]);
+    if(!statusResponse.ok)throw new Error(`Relay status HTTP ${statusResponse.status}`);
+    if(!csvResponse.ok)throw new Error(`Relay CSV HTTP ${csvResponse.status}`);
+    const [status,text]=await Promise.all([statusResponse.json(),csvResponse.text()]);
+    if(status?.eventId!==RELAY_EVENT_ID||status?.divisionId!==config.id)throw new Error('Relay metadata does not match the selected division');
+    if(looksLikeHtml(text))throw new Error('Relay returned HTML instead of CSV');
+    const result=validateGames(parseLive(text));
+    result.url=relayFileUrl(config,'csv');
+    result.method='CPI live relay';
+    result.sourceLabel='CPI live relay';
+    result.updatedAt=status.lastSuccessAt||status.contentUpdatedAt||status.checkedAt||null;
+    result.checkedAt=status.checkedAt||null;
+    result.isRelay=true;
+    result.isFallback=!relayStatusFresh(status);
+    result.relayStatus=status;
+    return result;
+  }catch(error){
+    if(error?.name==='AbortError')throw new Error('CPI live relay timeout');
+    throw error;
+  }finally{clearTimeout(timer)}
 }
 function endpointMethod(kind,url){const route=url.includes('sheet=')?'sheet-name':url.includes('/export?')?'export':'GID';return`${route} ${kind.toUpperCase()}`}
 function preferredEndpointKey(config){return`${PREFERRED_SOURCE_PREFIX}${config.id}`}
@@ -457,7 +499,7 @@ function updateOverviewMetrics(config,games,updatedAt,mode=''){
   setText('metricUpdatedAt',sourceTimestamp(updatedAt));setText('liveScheduledCount',scheduled);setText('liveCompletedCount',completed);setText('liveUpdatedAt',sourceTimestamp(updatedAt));
   if(config){setText('activeDivisionTitle',`${config.age} ${config.division}`);setText('activeDivisionMeta',`${teams||0} teams · ${list.length} published games${mode?` · ${mode}`:''}`);}
 }
-function renderSourceMeta(config,mode,games,updatedAt,detail=''){const root=$('sourceMeta');const completed=(games||[]).filter(isFinal).length,scheduled=Math.max(0,(games||[]).length-completed);updateOverviewMetrics(config,games,updatedAt,mode);if(!root)return;root.innerHTML=`<div><span>Source</span><strong>Official Google Sheet</strong></div><div><span>Last successful update</span><strong>${esc(sourceTimestamp(updatedAt))}</strong></div><div><span>Schedule</span><strong>${scheduled} scheduled · ${completed} completed</strong></div><div><span>Mode</span><strong>${esc(mode)}</strong></div>${detail?`<p>${esc(detail)}</p>`:''}`;}
+function renderSourceMeta(config,mode,games,updatedAt,detail='',sourceLabel='Official Google Sheet'){const root=$('sourceMeta');const completed=(games||[]).filter(isFinal).length,scheduled=Math.max(0,(games||[]).length-completed);updateOverviewMetrics(config,games,updatedAt,mode);if(!root)return;root.innerHTML=`<div><span>Source</span><strong>${esc(sourceLabel)}</strong></div><div><span>Last successful update</span><strong>${esc(sourceTimestamp(updatedAt))}</strong></div><div><span>Schedule</span><strong>${scheduled} scheduled · ${completed} completed</strong></div><div><span>Mode</span><strong>${esc(mode)}</strong></div>${detail?`<p>${esc(detail)}</p>`:''}`;}
 function clearLiveRetry(){if(retryTimer){clearTimeout(retryTimer);retryTimer=null}}
 function markLiveSuccess(config){liveFailureCounts.set(config.id,0);clearLiveRetry()}
 function markLiveFailure(config){
@@ -482,27 +524,52 @@ async function loadCurrentInternal(config,manual=false){
   if(immediate){
     DATA=immediate;
     dot.classList.add('fallback');
-    status.textContent=`${cached?'Last verified':'Verified'} ${config.age} ${config.division} schedule loaded · checking CPI snapshot and live Google Sheet…`;
-    renderSourceMeta(config,cached?'Schedule ready · checking live updates':'Schedule ready · checking live updates',immediate.games,cached?.cachedAt||null,'A verified schedule is available immediately while CPI checks its repository snapshot and the live Google Sheet.');
+    status.textContent=`${cached?'Last verified':'Verified'} ${config.age} ${config.division} schedule loaded · checking CPI live relay…`;
+    renderSourceMeta(config,'Schedule ready · checking live relay',immediate.games,cached?.cachedAt||null,'A verified schedule is available immediately while CPI checks its server-side relay and the official Google Sheet.');
     rebuild();team.disabled=false;
   }else{
     team.disabled=true;
     status.textContent=manual?`Refreshing ${config.division}…`:`Loading verified ${config.age} ${config.division} schedule…`;
     renderSourceMeta(config,'Loading verified CPI snapshot',[],null);
   }
+  const relayPromise=fetchRelayDataset(config).then(loaded=>({loaded}),error=>({error}));
   const livePromise=fetchDataset(config).then(loaded=>({loaded}),error=>({error}));
   try{
     const snapshot=await fetchVerifiedSnapshot(config);if(version!==loadVersion)return;
     verified=datasetWithVerifiedRoutes(config,snapshot.games,snapshot.teams,embedded);
     DATA=cached?datasetWithVerifiedRoutes(config,cached.games,cached.teams,verified):verified;
     dot.classList.add('fallback');
-    status.textContent=`Verified ${config.age} ${config.division} schedule loaded · checking live Google Sheet…`;
-    renderSourceMeta(config,cached?'Schedule ready · checking live updates':'Verified CPI snapshot',DATA.games,cached?.cachedAt||snapshot.updatedAt,'CPI loaded the repository schedule first so every division retains bracket-routing metadata while the live sheet refreshes.');
+    status.textContent=`Verified ${config.age} ${config.division} schedule loaded · checking CPI live relay…`;
+    renderSourceMeta(config,cached?'Schedule ready · checking live relay':'Verified CPI snapshot',DATA.games,cached?.cachedAt||snapshot.updatedAt,'CPI loaded the repository schedule first so every division retains bracket-routing metadata while the relay refreshes.');
     rebuild();team.disabled=false;
   }catch(snapshotError){
     if(version!==loadVersion)return;
-    if(!immediate)status.textContent=`Checking live ${config.age} ${config.division} schedule…`;
+    if(!immediate)status.textContent=`Checking CPI relay for ${config.age} ${config.division}…`;
   }
+
+  let relayApplied=false,relayFresh=false;
+  try{
+    const relayResult=await relayPromise;if(relayResult.error)throw relayResult.error;
+    const loaded=relayResult.loaded;if(version!==loadVersion)return;
+    relayApplied=true;relayFresh=!loaded.isFallback;
+    if(relayFresh)markLiveSuccess(config);
+    DATA=datasetWithVerifiedRoutes(config,loaded.games,loaded.teams,verified||embedded);
+    writeCache(config,DATA);
+    const refreshedAt=loaded.updatedAt||loaded.checkedAt||new Date().toISOString();
+    if(relayFresh){
+      dot.classList.remove('fallback');
+      status.textContent=`Live through CPI relay · ${config.age} ${config.division} · ${DATA.games.length} games · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;
+      renderSourceMeta(config,'CPI live relay',DATA.games,refreshedAt,'CPI fetched and validated the official Google Sheet from its server-side relay, so this browser does not depend on a direct Google connection.','CPI live relay');
+    }else{
+      dot.classList.add('fallback');
+      status.textContent=`Using CPI relay bank · ${config.age} ${config.division} · Google refresh pending`;
+      renderSourceMeta(config,'Last-known-good CPI relay',DATA.games,refreshedAt,'The relay preserved its last validated schedule because its latest Google check was unsuccessful.','CPI live relay');
+    }
+    rebuild();team.disabled=false;
+  }catch(relayError){
+    if(version!==loadVersion)return;
+  }
+
   try{
     const liveResult=await livePromise;if(liveResult.error)throw liveResult.error;
     const loaded=liveResult.loaded;if(version!==loadVersion)return;
@@ -510,37 +577,47 @@ async function loadCurrentInternal(config,manual=false){
     const refreshedAt=loaded.updatedAt||new Date().toISOString();
     DATA=datasetWithVerifiedRoutes(config,loaded.games,loaded.teams,verified||embedded);
     writeCache(config,DATA);
-    if(loaded.isFallback){dot.classList.add('fallback');status.textContent=`Using verified ${config.age} ${config.division} schedule · ${DATA.games.length} games · live Google tab unavailable`;renderSourceMeta(config,'Verified CPI snapshot',DATA.games,refreshedAt,'CPI displayed the verified schedule and retained it because the official live tab was not readable.')}else{dot.classList.remove('fallback');status.textContent=`Live from Google Sheets · ${config.age} ${config.division} · ${DATA.games.length} games · ${loaded.method||'live'} · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;renderSourceMeta(config,'Live browser refresh',DATA.games,refreshedAt,'Live results are merged with verified bracket-routing metadata so downstream games remain visible.')}
+    dot.classList.remove('fallback');
+    status.textContent=`Live from Google Sheets · ${config.age} ${config.division} · ${DATA.games.length} games · ${loaded.method||'live'} · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;
+    renderSourceMeta(config,'Live browser refresh',DATA.games,refreshedAt,'The browser reached Google directly. Live results remain merged with verified bracket-routing metadata.');
   }catch(error){
     if(version!==loadVersion)return;
+    if(relayApplied&&relayFresh)return;
     const retryDelay=markLiveFailure(config);
     const retryNote=` CPI will retry live updates in about ${Math.round(retryDelay/1000)} seconds.`;
-    const fallbackCache=readCache(config);
-    if(fallbackCache){
-      DATA=datasetWithVerifiedRoutes(config,fallbackCache.games,fallbackCache.teams,verified||embedded);
+    if(relayApplied){
       dot.classList.add('fallback');
-      status.textContent=`Using last successful ${config.age} ${config.division} update · live sheet unavailable (${error.message})`;
-      renderSourceMeta(config,'Last verified browser cache',DATA.games,fallbackCache.cachedAt,'The live sheet could not be read, so CPI preserved the last successful schedule and merged its verified bracket routes.'+retryNote);
-    }else if(verified){
-      DATA=verified;
-      dot.classList.add('fallback');
-      status.textContent=`Using verified ${config.age} ${config.division} schedule · live sheet unavailable`;
-      renderSourceMeta(config,'Verified CPI snapshot',DATA.games,null,'The repository schedule remains available even when Google blocks browser requests.'+retryNote);
-    }else if(embedded){
-      DATA=embedded;
-      dot.classList.add('fallback');
-      status.textContent=`Using verified ${config.age} ${config.division} schedule · live sheet unavailable`;
-      renderSourceMeta(config,'Embedded verified schedule',DATA.games,null,'The schedule is built directly into this release, so it remains available even when Google blocks browser requests.'+retryNote);
+      status.textContent=`Using last-known-good CPI relay · direct Google connection unavailable`;
+      renderSourceMeta(config,'Last-known-good CPI relay',DATA.games,null,'CPI preserved the relay schedule while both the relay and this browser wait for Google to recover.'+retryNote,'CPI live relay');
     }else{
-      DATA={age:config.age,division:config.division,teams:[],games:[]};
-      dot.classList.add('fallback');
-      status.textContent=`Could not load ${config.age} ${config.division} (${error.message})`;
-      renderSourceMeta(config,'Unavailable',[],null,'No verified schedule is currently available in this browser.'+retryNote);
+      const fallbackCache=readCache(config);
+      if(fallbackCache){
+        DATA=datasetWithVerifiedRoutes(config,fallbackCache.games,fallbackCache.teams,verified||embedded);
+        dot.classList.add('fallback');
+        status.textContent=`Using last successful ${config.age} ${config.division} update · live sources unavailable`;
+        renderSourceMeta(config,'Last verified browser cache',DATA.games,fallbackCache.cachedAt,'The relay and live sheet could not be read, so CPI preserved the last successful browser schedule.'+retryNote);
+      }else if(verified){
+        DATA=verified;
+        dot.classList.add('fallback');
+        status.textContent=`Using verified ${config.age} ${config.division} schedule · live sources unavailable`;
+        renderSourceMeta(config,'Verified CPI snapshot',DATA.games,null,'The repository schedule remains available even when the relay and Google are temporarily unavailable.'+retryNote);
+      }else if(embedded){
+        DATA=embedded;
+        dot.classList.add('fallback');
+        status.textContent=`Using verified ${config.age} ${config.division} schedule · live sources unavailable`;
+        renderSourceMeta(config,'Embedded verified schedule',DATA.games,null,'The schedule is built directly into this release, so it remains available during an upstream outage.'+retryNote);
+      }else{
+        DATA={age:config.age,division:config.division,teams:[],games:[]};
+        dot.classList.add('fallback');
+        status.textContent=`Could not load ${config.age} ${config.division} (${error.message})`;
+        renderSourceMeta(config,'Unavailable',[],null,'No verified schedule is currently available in this browser.'+retryNote);
+      }
     }
   }finally{
     if(version===loadVersion){rebuild();button.disabled=false;team.disabled=false}
   }
 }
+
 function selectDataset(){const config=currentConfig();if(!config)return;clearLiveRetry();activeLoads.clear();updateSheetLink();localStorage.setItem('joAgeV5',config.age);localStorage.setItem(`joDivisionV5:${config.age}`,config.id);search.value='';day.value='';loadCurrent(false)}
 age.addEventListener('change',()=>{localStorage.setItem('joAgeV5',age.value);populateDivisions();selectDataset()});division.addEventListener('change',selectDataset);team.addEventListener('change',renderTeam);search.addEventListener('input',renderRelevant);day.addEventListener('change',renderRelevant);$('journeyTab').addEventListener('click',()=>{$('journeyTab').classList.add('active');$('relevantTab').classList.remove('active');journey.classList.remove('hidden');$('relevant').classList.add('hidden')});$('relevantTab').addEventListener('click',()=>{$('relevantTab').classList.add('active');$('journeyTab').classList.remove('active');journey.classList.add('hidden');$('relevant').classList.remove('hidden')});$('refresh').addEventListener('click',()=>loadCurrent(true));
 $('share')?.addEventListener('click',copyShareLink);

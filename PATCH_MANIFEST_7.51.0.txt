@@ -1,0 +1,31 @@
+CPI 7.51.0 — JO Live Data Relay & Cache
+
+Hand-authored release files:
+- .github/workflows/sync-jo-live-relay.yml
+- INSTALL_7.51.0.md
+- PATCH_MANIFEST_7.51.0.txt
+- VERSION.md
+- config/site-release.json
+- release-check
+- scripts/sync-jo-live-relay.py
+- scripts/test-jo-boys-embedded-fallback.js
+- scripts/test-jo-journey-v7-50-8.js
+- scripts/test-jo-live-performance-v7-50-9.js
+- scripts/test-jo-live-relay-v7-51-0.js
+- scripts/test-tournament-ui-v7-50.js
+- scripts/validate-jo-boys-source-stability.py
+- scripts/validate-jo-release.py
+- scripts/validate-tournament-ui-v7-50.py
+- tournaments/jo-boys/app.js
+- tournaments/jo-boys/index.html
+- tournaments/jo-boys/source-registry.json
+- tournaments/jo-girls/app.js
+- tournaments/jo-girls/index.html
+- tournaments/jo-girls/source-registry.json
+
+Intentionally excluded:
+- rankings.json and all ranking publication files
+- normalized tournament datasets and evidence outputs
+- generated operations, performance, post-JO, and QA timestamps
+- logo assets
+- generated relay CSV/status files, which are published only to the isolated cpi-live-relay branch

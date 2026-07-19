@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.50.9",
-  "name": "JO Live-Connection Performance & Resilience",
-  "date": "2026-07-18",
+  "version": "7.51.0",
+  "name": "JO Live Data Relay & Cache",
+  "date": "2026-07-19",
   "rankingDataRelease": "7.30 v2",
-  "joApplicationRelease": "7.50.9",
+  "joApplicationRelease": "7.51.0",
   "deploymentMode": "migration",
-  "notes": "Optimizes live Google Sheet checks across every Girls, Coed, and Boys JO division with hedged endpoint racing, bounded request times, per-division preferred-source memory, progressive retries, and duplicate-refresh suppression while preserving immediate verified schedules and all 7.50.8 route continuity.",
+  "notes": "Adds a GitHub Actions-backed CPI live-data relay for all 23 Girls, Coed, and Boys JO divisions. Browsers load CPI\u2019s validated last-known-good relay before attempting Google directly, while an isolated cpi-live-relay branch refreshes approximately every five minutes without polluting main or requiring a Pages rebuild.",
   "identityRelease": "7.40.0",
   "tournamentDataRelease": "7.49.1",
   "tournamentEvidenceRelease": "7.45.1",
@@ -21,5 +21,6 @@
   "logoLibraryRelease": "7.50.1",
   "logoDeliveryRelease": "7.50.2",
   "joJourneyRelease": "7.50.8",
-  "joConnectionRelease": "7.50.9"
+  "joConnectionRelease": "7.51.0",
+  "joRelayRelease": "7.51.0"
 }

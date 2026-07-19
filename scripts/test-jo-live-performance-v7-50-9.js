@@ -7,7 +7,7 @@ const apps={};
 for(const side of ['jo-girls','jo-boys']){
   const app=fs.readFileSync(path.join(ROOT,'tournaments',side,'app.js'),'utf8');
   apps[side]=app;
-  requireCondition(app.includes("APP_VERSION='7.50.9'"),`${side} does not advertise APP_VERSION 7.50.9`);
+  requireCondition(app.includes("APP_VERSION='7.51.0'"),`${side} does not advertise APP_VERSION 7.51.0`);
   for(const token of [
     'LIVE_FETCH_TIMEOUT_MS=5500',
     'LIVE_JSONP_TIMEOUT_MS=6500',
@@ -24,7 +24,7 @@ for(const side of ['jo-girls','jo-boys']){
   requireCondition(!app.includes('for(const url of datasetUrls(config))'),`${side} still checks CSV endpoints sequentially`);
   requireCondition(!app.includes("for(const urlTemplate of jsonpUrls(config,'__CALLBACK__'))"),`${side} still checks JSONP endpoints sequentially`);
   const registry=JSON.parse(fs.readFileSync(path.join(ROOT,'tournaments',side,'source-registry.json'),'utf8'));
-  requireCondition(registry.version==='7.50.9',`${side} source registry is not 7.50.9`);
+  requireCondition(registry.version==='7.51.0',`${side} source registry is not 7.51.0`);
   const policy=registry.liveConnectionPolicy||{};
   requireCondition(policy.requestTimeoutMs===6500&&policy.hedgeDelayMs===650,`${side} source registry lacks timeout/hedge policy`);
   requireCondition(JSON.stringify(policy.retryDelaysMs)==='[15000,30000,60000]',`${side} source registry lacks progressive retry policy`);

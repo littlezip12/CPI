@@ -148,7 +148,7 @@ for rel in ('tournaments/jo-boys/app.js','tournaments/jo-girls/app.js'):
         for token in ('seedLookup','seedForTeam','teamOptionLabel','jo-seed-badge','JO seed','renderSourceMeta','scheduled · ${completed} completed',"completed.length?`${wins}-${losses}`:'—'"):
             if token not in app_text:
                 fail(f'{rel}: missing JO seed metadata/display support: {token}')
-        expected_app_version = "7.50.9"
+        expected_app_version = "7.51.0"
         if f"const APP_VERSION='{expected_app_version}';" not in app_text:
             fail(f"{rel}: expected APP_VERSION {expected_app_version}")
         result = subprocess.run(['node','--check',str(path)],capture_output=True,text=True)
@@ -172,7 +172,7 @@ print(f' - {len(EXPECTED_BOYS)} Boys divisions registered')
 print(' - Boys and Girls entry pages contain all required application mounts')
 print(' - Girls app and all 23 JO sources are represented in the central tournament registry')
 print(' - JO division seeds are metadata and display separately from clean team names')
-print(' - Both apps poll live Google Sheets every two minutes and expose source freshness plus scheduled/completed counts')
+print(' - Both apps read CPI’s server-side relay first, retain direct Google fallback, and expose source freshness plus scheduled/completed counts')
 print(' - Boys sources use stable sheet names first, legacy GIDs second, and verified repository snapshots last')
 print(' - Local JO page assets resolve')
 print(' - JavaScript syntax checks passed')

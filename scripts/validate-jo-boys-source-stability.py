@@ -38,7 +38,7 @@ for division_id,expected in EXPECTED.items():
         fail(f'{division_id} lost structured bracket references')
     total+=int(counts.get('games') or 0)
 app=(ROOT/'tournaments/jo-boys/app.js').read_text(encoding='utf-8')
-if "const APP_VERSION='7.50.9';" not in app: fail('Boys app version is not 7.50.9')
+if "const APP_VERSION='7.51.0';" not in app: fail('Boys app version is not 7.51.0')
 if 'function configuredSheetNames' not in app or 'function fetchVerifiedSnapshot' not in app: fail('Boys app lacks stable-name or snapshot fallback support')
 sheet_loop=app.find('for(const name of configuredSheetNames(config))')
 gid_loop=app.find('for(const gid of unique([config.gid,...(config.gidAliases||[])]))')
@@ -61,5 +61,5 @@ print(' - The browser can fall back to the repository snapshot when Google live 
 app_text = (ROOT / 'tournaments' / 'jo-boys' / 'app.js').read_text(encoding='utf-8')
 if 'const EMBEDDED_SNAPSHOT_CSV=' not in app_text:
     fail('Boys app does not contain built-in verified schedule snapshots')
-if 'schedule loaded · checking live Google Sheet' not in app_text:
+if 'schedule loaded · checking CPI live relay' not in app_text:
     fail('Boys app does not render verified schedules before live-source attempts')

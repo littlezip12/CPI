@@ -1,15 +1,14 @@
-# CPI 7.50.9
+# CPI 7.51.0
 
-JO live-connection performance and resilience.
+JO live-data relay and last-known-good cache.
 
-- Applies the performance release to every Girls, Coed, and Boys JO age and division.
-- Loads the verified schedule immediately and treats the live Google request as a background freshness check.
-- Starts the Girls live request while the same-origin verified snapshot loads, without allowing live data to replace the verified schedule before route metadata is available.
-- Races the strongest worksheet-name, GID, CSV, export, and JSONP endpoints instead of waiting for each endpoint sequentially.
-- Launches fallback endpoints after a 650 ms hedge delay so a slow preferred source cannot hold up the page.
-- Caps live CSV requests at 5.5 seconds and JSONP requests at 6.5 seconds.
-- Remembers the fastest successful endpoint separately for each division and tries it first on future refreshes.
-- Retries unsuccessful live checks after 15 seconds, then 30 seconds, then 60 seconds while keeping the verified schedule usable.
-- Prevents duplicate refreshes for the same selected division.
-- Continues the normal two-minute live polling cadence after a successful connection.
-- Leaves rankings, tournament datasets, logos, route resolution, workflows, and generated operational outputs unchanged.
+- Adds a GitHub Actions-backed CPI relay for all 23 Girls, Coed, and Boys JO divisions.
+- Refreshes the relay approximately every five minutes from Google’s public spreadsheet endpoints.
+- Validates every candidate with CPI’s existing tournament parser and rejects zero-game, blocking, or severely truncated responses.
+- Preserves the most recent valid CSV when Google is unavailable.
+- Publishes generated relay data to the isolated `cpi-live-relay` branch rather than committing it to `main`.
+- Lets tournament browsers load the CPI relay before attempting Google directly.
+- Keeps direct browser-to-Google access as a secondary path for the newest possible update.
+- Distinguishes a fresh CPI relay from a last-known-good relay bank in the source-status panel.
+- Preserves verified embedded/repository schedules and browser cache as additional fallbacks.
+- Leaves rankings, ranking evidence, logos, historical results, and manual ranking controls unchanged.
