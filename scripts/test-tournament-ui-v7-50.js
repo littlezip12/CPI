@@ -10,7 +10,7 @@ for(const side of ['jo-boys','jo-girls']){
   for(const token of ['jo-unified-v7-50.css','jo50-livebar','jo50-metrics','metricTeamCount','activeDivisionTitle','sourceMeta','fullSchedule']){
     if(!html.includes(token))errors.push(`${side} page missing ${token}`);
   }
-  if(!app.includes("APP_VERSION='7.50.7'"))errors.push(`${side} app version is not 7.50.7`);
+  if(!app.includes("APP_VERSION='7.50.8'"))errors.push(`${side} app version is not 7.50.8`);
   if(!app.includes('function updateOverviewMetrics'))errors.push(`${side} app does not populate the new overview metrics`);
   if(app.includes("namedMatchupHtml(name,opp,candidates,'dark')"))errors.push(`${side} next-game card still forces dark-theme seed badges`);
 }

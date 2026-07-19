@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.50.7",
-  "name": "JO Assigned Route Label Resolution",
+  "version": "7.50.8",
+  "name": "JO All-Division Route Continuity",
   "date": "2026-07-18",
   "rankingDataRelease": "7.30 v2",
-  "joApplicationRelease": "7.50.7",
+  "joApplicationRelease": "7.50.8",
   "deploymentMode": "migration",
-  "notes": "Recognizes live Google Sheet participant cells that append the assigned team name to bracket, pool-slot, or placement route tokens, allowing selected-team journeys to show the same future games already visible through schedule search.",
+  "notes": "Applies comprehensive route resolution to every Girls, Coed, and Boys JO division; loads verified repository schedules before Google for all Girls divisions; supports lettered games, fourth/fifth-place placements, annotated multi-letter pools, and pool-matchup paths so future games remain visible even when source advancement metadata is blank.",
   "identityRelease": "7.40.0",
   "tournamentDataRelease": "7.49.1",
   "tournamentEvidenceRelease": "7.45.1",
@@ -20,5 +20,5 @@
   "tournamentUIRelease": "7.50.0",
   "logoLibraryRelease": "7.50.1",
   "logoDeliveryRelease": "7.50.2",
-  "joJourneyRelease": "7.50.7"
+  "joJourneyRelease": "7.50.8"
 }
