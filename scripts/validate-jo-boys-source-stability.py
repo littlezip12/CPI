@@ -38,9 +38,11 @@ for division_id,expected in EXPECTED.items():
         fail(f'{division_id} lost structured bracket references')
     total+=int(counts.get('games') or 0)
 app=(ROOT/'tournaments/jo-boys/app.js').read_text(encoding='utf-8')
-if "const APP_VERSION='7.50.8';" not in app: fail('Boys app version is not 7.50.8')
+if "const APP_VERSION='7.50.9';" not in app: fail('Boys app version is not 7.50.9')
 if 'function configuredSheetNames' not in app or 'function fetchVerifiedSnapshot' not in app: fail('Boys app lacks stable-name or snapshot fallback support')
-if app.find('for(const name of configuredSheetNames(config))')>app.find('for(const gid of gids)'):
+sheet_loop=app.find('for(const name of configuredSheetNames(config))')
+gid_loop=app.find('for(const gid of unique([config.gid,...(config.gidAliases||[])]))')
+if sheet_loop<0 or gid_loop<0 or sheet_loop>gid_loop:
     fail('Boys browser app does not try sheet names before GIDs')
 for division_id,expected in EXPECTED.items():
     if expected['sheetName'] not in app or f'{division_id}.csv' not in app:

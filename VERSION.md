@@ -1,13 +1,15 @@
-# CPI 7.50.8
+# CPI 7.50.9
 
-JO all-division route continuity and verified schedule coverage.
+JO live-connection performance and resilience.
 
-- Resolves explicit live route assignments such as `pt_P1-LAMORINDA A`, `W26-LAMORINDA A`, `1st pt_P-LAMORINDA A`, and `1stB-LAMORINDA A` directly to the clean team identity.
-- Uses those explicit assignments even when the completed source game has a blank winner or loser destination.
-- Propagates one confirmed route-slot assignment to every future game using the same slot.
-- Applies the route resolver to every Girls, Coed, and Boys JO age and division.
-- Supports fourth/fifth-place routes, multi-letter pools, annotated pool slots, group seeds without parentheses, and `W#U1/U4`-style pool-matchup paths used elsewhere in the official brackets.
-- Loads all 11 Girls/Coed verified repository schedules before waiting on Google, while retaining the existing 12-division Boys embedded fallback coverage.
-- Preserves 12U Girls lettered games such as `135A`, `147A`, and `152A`.
-- Keeps live scores, browser cache, verified repository snapshots, and all ranking-publication safeguards intact.
-- Leaves rankings, normalized tournament datasets, logos, workflows, and generated operational outputs unchanged.
+- Applies the performance release to every Girls, Coed, and Boys JO age and division.
+- Loads the verified schedule immediately and treats the live Google request as a background freshness check.
+- Starts the Girls live request while the same-origin verified snapshot loads, without allowing live data to replace the verified schedule before route metadata is available.
+- Races the strongest worksheet-name, GID, CSV, export, and JSONP endpoints instead of waiting for each endpoint sequentially.
+- Launches fallback endpoints after a 650 ms hedge delay so a slow preferred source cannot hold up the page.
+- Caps live CSV requests at 5.5 seconds and JSONP requests at 6.5 seconds.
+- Remembers the fastest successful endpoint separately for each division and tries it first on future refreshes.
+- Retries unsuccessful live checks after 15 seconds, then 30 seconds, then 60 seconds while keeping the verified schedule usable.
+- Prevents duplicate refreshes for the same selected division.
+- Continues the normal two-minute live polling cadence after a successful connection.
+- Leaves rankings, tournament datasets, logos, route resolution, workflows, and generated operational outputs unchanged.

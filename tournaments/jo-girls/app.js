@@ -1,15 +1,22 @@
 
 const SHEET_ID='1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw';
-const APP_VERSION='7.50.8';
+const APP_VERSION='7.50.9';
 const DATASETS=[{"id":"10u-girls-championship","age":"10U","division":"Girls Championship (D1)","gid":"1690842489","sheetName":"10U_F_Champ-18 teams","gidAliases":["1690842489"]},{"id":"10u-coed-championship","age":"10U","division":"Coed Championship (D1)","gid":"995024268","sheetName":"10U_Coed_Champ_36","gidAliases":["995024268","2041957360"]},{"id":"10u-girls-classic","age":"10U","division":"Girls Classic (D2)","gid":"1824277279","sheetName":"10U_Coed_Classic 22 from 23","gidAliases":["1824277279","597397535"]},{"id":"12u-coed-championship","age":"12U","division":"Coed Championship (D1)","gid":"1233368070","sheetName":"12U_Coed_Champ-45","gidAliases":["1233368070","2012252190"]},{"id":"12u-girls-championship","age":"12U","division":"Girls Championship (D1)","gid":"1025107975","sheetName":"12U_F_Champ-52","gidAliases":["1025107975","1128927098"]},{"id":"14u-girls-championship","age":"14U","division":"Girls Championship (D1)","gid":"490739644","sheetName":"14U_F_Champ","gidAliases":["490739644","1268677491"]},{"id":"14u-girls-classic","age":"14U","division":"Girls Classic (D2)","gid":"1034305520","sheetName":"14U_F_Classic-39 from 40","gidAliases":["1034305520","252316141"]},{"id":"16u-girls-championship","age":"16U","division":"Girls Championship (D1)","gid":"1614332560","sheetName":"16U_F_Champ","gidAliases":["1614332560","61950596"]},{"id":"16u-girls-classic","age":"16U","division":"Girls Classic (D2)","gid":"1031667515","sheetName":"16U_F_Classic-45","gidAliases":["1031667515","901188675"]},{"id":"18u-girls-championship","age":"18U","division":"Girls Championship (D1)","gid":"69636405","sheetName":"18U_F_Champ","gidAliases":["69636405","934738630"]},{"id":"18u-girls-classic","age":"18U","division":"Girls Classic (D2)","gid":"1267400335","sheetName":"18U_F_Classic-44","gidAliases":["1267400335","265773689"]}];
 const EMBEDDED_SNAPSHOT_CSV={};
 const EMBEDDED_FALLBACKS={};
 const REFRESH_MS=120000;
 const ACTIVE_REFRESH_MIN_MS=30000;
+const LIVE_FETCH_TIMEOUT_MS=5500;
+const LIVE_JSONP_TIMEOUT_MS=6500;
+const LIVE_HEDGE_DELAY_MS=650;
+const LIVE_INITIAL_CANDIDATES=3;
+const LIVE_RETRY_DELAYS_MS=[15000,30000,60000];
+const PREFERRED_SOURCE_PREFIX='joGirlsPreferredLiveV1:';
 const CACHE_PREFIX='joGirlsScheduleV5:';
 const ACRONYMS=new Set(['SD','CDM','LB','CC','WPC','CHAWP','LOWPO','SHAQ','OCWPC','ECA','ASA','CMAC','TPC','WCAC','SET','LA','OC','USA','CIU']);
 const age=$('age'),division=$('division'),team=$('team'),summary=$('summary'),next=$('next'),journey=$('journey'),paths=$('paths'),potential=$('potential'),schedule=$('schedule'),search=$('search'),day=$('day'),share=$('share');
-let DATA={teams:[],games:[]},RESOLVED={games:[],map:new Map(),slots:new Map(),placements:new Map(),seedLookup:new Map()},loadVersion=0,refreshTimer=null,lastLoadAttemptAt=0;
+let DATA={teams:[],games:[]},RESOLVED={games:[],map:new Map(),slots:new Map(),placements:new Map(),seedLookup:new Map()},loadVersion=0,refreshTimer=null,retryTimer=null,lastLoadAttemptAt=0;
+const activeLoads=new Map(),liveFailureCounts=new Map();
 
 function $(id){return document.getElementById(id)}
 function esc(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
@@ -31,27 +38,20 @@ function updateSheetLink(){
 }
 
 function unique(values){return [...new Set(values.filter(Boolean).map(String))]}
+function configuredSheetNames(config){return unique([config.sheetName,...(config.sheetNameAliases||[])])}
 function datasetUrls(config){
-  const root=`https://docs.google.com/spreadsheets/d/${SHEET_ID}`;
-  const gids=unique([config.gid,...(config.gidAliases||[])]);
-  const urls=[];
-  for(const gid of gids){
+  const root=`https://docs.google.com/spreadsheets/d/${SHEET_ID}`,urls=[];
+  for(const name of configuredSheetNames(config))urls.push(`${root}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(name)}`);
+  for(const gid of unique([config.gid,...(config.gidAliases||[])])){
     urls.push(`${root}/gviz/tq?tqx=out:csv&gid=${encodeURIComponent(gid)}`);
-    urls.push(`${root}/gviz/tq?gid=${encodeURIComponent(gid)}&tqx=out:csv`);
     urls.push(`${root}/export?format=csv&gid=${encodeURIComponent(gid)}`);
-  }
-  if(config.sheetName){
-    const sheet=encodeURIComponent(config.sheetName);
-    urls.push(`${root}/gviz/tq?tqx=out:csv&sheet=${sheet}`);
   }
   return unique(urls);
 }
 function jsonpUrls(config,callbackName){
-  const root=`https://docs.google.com/spreadsheets/d/${SHEET_ID}`;
-  const gids=unique([config.gid,...(config.gidAliases||[])]);
-  const urls=[];
-  for(const gid of gids){urls.push(`${root}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&gid=${encodeURIComponent(gid)}`)}
-  if(config.sheetName){urls.push(`${root}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&sheet=${encodeURIComponent(config.sheetName)}`)}
+  const root=`https://docs.google.com/spreadsheets/d/${SHEET_ID}`,urls=[];
+  for(const name of configuredSheetNames(config))urls.push(`${root}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&sheet=${encodeURIComponent(name)}`);
+  for(const gid of unique([config.gid,...(config.gidAliases||[])]))urls.push(`${root}/gviz/tq?tqx=out:json;responseHandler:${callbackName}&gid=${encodeURIComponent(gid)}`);
   return unique(urls);
 }
 function exportUrl(config){return `https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit?gid=${config.gid}#gid=${config.gid}`}
@@ -133,15 +133,15 @@ function rowsFromGviz(payload){
   const table=payload&&payload.table;if(!table||!Array.isArray(table.rows))return[];
   return table.rows.map(row=>(row.c||[]).map(cellValue));
 }
-function fetchJsonp(url,timeoutMs=12000){
+function fetchJsonp(url,timeoutMs=LIVE_JSONP_TIMEOUT_MS){
   return new Promise((resolve,reject)=>{
     const callback=`joJsonp_${Date.now()}_${Math.random().toString(36).slice(2)}`;
     const script=document.createElement('script');
-    let timer;
-    window[callback]=(payload)=>{cleanup();resolve(payload)};
+    let timer,settled=false;
     function cleanup(){clearTimeout(timer);delete window[callback];script.remove()}
-    timer=setTimeout(()=>{cleanup();reject(new Error('Google JSONP timeout'))},timeoutMs);
-    script.onerror=()=>{cleanup();reject(new Error('Google JSONP failed'))};
+    window[callback]=(payload)=>{if(settled)return;settled=true;cleanup();resolve(payload)};
+    timer=setTimeout(()=>{if(settled)return;settled=true;cleanup();reject(new Error('Google JSONP timeout'))},timeoutMs);
+    script.onerror=()=>{if(settled)return;settled=true;cleanup();reject(new Error('Google JSONP failed'))};
     script.src=url.replace(/responseHandler:[^&]+/,`responseHandler:${callback}`);
     document.head.appendChild(script);
   });
@@ -156,34 +156,64 @@ function validateGames(games){
   return{games,teams};
 }
 async function fetchVerifiedSnapshot(config){
-  const url=snapshotUrl(config),response=await fetch(`${url}${url.includes('?')?'&':'?'}_=${Date.now()}`,{cache:'no-store'});
-  if(!response.ok)throw new Error(`Snapshot HTTP ${response.status}`);
-  const text=await response.text();if(looksLikeHtml(text))throw new Error('Snapshot returned HTML instead of CSV');
-  const result=validateGames(parseLive(text));result.url=url;result.method='verified snapshot';result.isFallback=true;result.updatedAt=response.headers?.get?.('last-modified')||null;return result;
+  const url=snapshotUrl(config),controller=typeof AbortController==='function'?new AbortController():null;
+  const timer=setTimeout(()=>controller?.abort(),LIVE_FETCH_TIMEOUT_MS);
+  try{
+    const response=await fetch(`${url}${url.includes('?')?'&':'?'}_=${Date.now()}`,{cache:'no-store',signal:controller?.signal});
+    if(!response.ok)throw new Error(`Snapshot HTTP ${response.status}`);
+    const text=await response.text();if(looksLikeHtml(text))throw new Error('Snapshot returned HTML instead of CSV');
+    const result=validateGames(parseLive(text));result.url=url;result.method='verified snapshot';result.isFallback=true;result.updatedAt=response.headers?.get?.('last-modified')||config.snapshotUpdatedAt||null;return result;
+  }catch(error){if(error?.name==='AbortError')throw new Error('Verified snapshot timeout');throw error}
+  finally{clearTimeout(timer)}
+}
+function endpointMethod(kind,url){const route=url.includes('sheet=')?'sheet-name':url.includes('/export?')?'export':'GID';return`${route} ${kind.toUpperCase()}`}
+function preferredEndpointKey(config){return`${PREFERRED_SOURCE_PREFIX}${config.id}`}
+function readPreferredLiveEndpoint(config){try{const value=JSON.parse(localStorage.getItem(preferredEndpointKey(config))||'null');return value&&value.kind&&value.url?value:null}catch{return null}}
+function writePreferredLiveEndpoint(config,candidate){try{localStorage.setItem(preferredEndpointKey(config),JSON.stringify({kind:candidate.kind,url:candidate.url,method:candidate.method,verifiedAt:new Date().toISOString()}))}catch{}}
+function liveEndpointCandidates(config){
+  const csv=datasetUrls(config).map(url=>({kind:'csv',url,method:endpointMethod('csv',url)}));
+  const jsonp=jsonpUrls(config,'__CALLBACK__').map(url=>({kind:'jsonp',url,method:endpointMethod('jsonp',url)}));
+  const all=[...csv.filter(c=>c.url.includes('sheet=')),...jsonp.filter(c=>c.url.includes('sheet=')),...csv.filter(c=>!c.url.includes('sheet=')&&!c.url.includes('/export?')),...jsonp.filter(c=>!c.url.includes('sheet=')),...csv.filter(c=>c.url.includes('/export?'))];
+  const preferred=readPreferredLiveEndpoint(config),ordered=preferred?[preferred,...all]:all,seen=new Set();
+  return ordered.filter(candidate=>{const key=`${candidate.kind}|${candidate.url}`;if(seen.has(key))return false;seen.add(key);return true});
+}
+async function fetchCsvCandidate(candidate){
+  const controller=typeof AbortController==='function'?new AbortController():null;
+  const timer=setTimeout(()=>controller?.abort(),LIVE_FETCH_TIMEOUT_MS);
+  try{
+    const url=`${candidate.url}${candidate.url.includes('?')?'&':'?'}_=${Date.now()}`;
+    const response=await fetch(url,{cache:'no-store',redirect:'follow',signal:controller?.signal});
+    if(!response.ok)throw new Error(`HTTP ${response.status}`);
+    const text=await response.text();if(looksLikeHtml(text))throw new Error('Google returned HTML instead of CSV');
+    return validateGames(parseLive(text));
+  }catch(error){if(error?.name==='AbortError')throw new Error('Google CSV timeout');throw error}
+  finally{clearTimeout(timer)}
+}
+async function loadLiveCandidate(candidate){
+  if(candidate.kind==='csv')return fetchCsvCandidate(candidate);
+  const payload=await fetchJsonp(candidate.url);
+  if(payload&&payload.status==='error')throw new Error(payload.errors?.map(e=>e.detailed_message||e.message).join('; ')||'Google returned query error');
+  return validateGames(parseRows(rowsFromGviz(payload)));
+}
+function hedgedFirstSuccess(candidates,loader,hedgeDelayMs=LIVE_HEDGE_DELAY_MS,initialCount=LIVE_INITIAL_CANDIDATES){
+  return new Promise((resolve,reject)=>{
+    const queue=[...candidates],errors=[];let pending=0,settled=false,waveTwoStarted=false,hedgeTimer=null;
+    const first=queue.splice(0,Math.max(1,initialCount));
+    function finishFailure(){if(settled||pending)return;if(!waveTwoStarted&&queue.length){startWaveTwo();return}settled=true;clearTimeout(hedgeTimer);reject(new Error(errors.slice(-8).join(' | ')||'No live Google endpoint succeeded'))}
+    function start(candidate){pending+=1;Promise.resolve().then(()=>loader(candidate)).then(result=>{if(settled)return;settled=true;clearTimeout(hedgeTimer);resolve({candidate,result})}).catch(error=>{errors.push(`${candidate.method}: ${error?.message||String(error)}`);pending-=1;finishFailure()})}
+    function startWaveTwo(){if(waveTwoStarted||settled)return;waveTwoStarted=true;clearTimeout(hedgeTimer);while(queue.length)start(queue.shift());finishFailure()}
+    first.forEach(start);
+    if(queue.length)hedgeTimer=setTimeout(startWaveTwo,hedgeDelayMs);else waveTwoStarted=true;
+    finishFailure();
+  });
 }
 async function fetchDataset(config){
-  const errors=[];
-  for(const url of datasetUrls(config)){
-    try{
-      const response=await fetch(`${url}${url.includes('?')?'&':'?'}_=${Date.now()}`,{cache:'no-store',redirect:'follow'});
-      if(!response.ok)throw new Error(`HTTP ${response.status}`);
-      const text=await response.text();
-      if(looksLikeHtml(text))throw new Error('Google returned HTML instead of CSV');
-      const result=validateGames(parseLive(text));
-      result.url=url;result.method='csv';return result;
-    }catch(error){errors.push(`CSV ${error?.message||String(error)}`)}
-  }
-  for(const urlTemplate of jsonpUrls(config,'__CALLBACK__')){
-    try{
-      const payload=await fetchJsonp(urlTemplate);
-      if(payload&&payload.status==='error')throw new Error(payload.errors?.map(e=>e.detailed_message||e.message).join('; ')||'Google returned query error');
-      const rows=rowsFromGviz(payload);
-      const result=validateGames(parseRows(rows));
-      result.url=urlTemplate;result.method='jsonp';return result;
-    }catch(error){errors.push(`JSONP ${error?.message||String(error)}`)}
-  }
-  try{const snapshot=await fetchVerifiedSnapshot(config);snapshot.liveErrors=errors.slice(-5);return snapshot}catch(error){errors.push(`Snapshot ${error?.message||String(error)}`)}
-  throw new Error(errors.slice(-6).join(' | '));
+  const started=Date.now(),candidates=liveEndpointCandidates(config);
+  if(!candidates.length)throw new Error('No live Google endpoints are configured');
+  const {candidate,result}=await hedgedFirstSuccess(candidates,loadLiveCandidate);
+  result.url=candidate.url;result.method=candidate.method;result.updatedAt=new Date().toISOString();result.latencyMs=Date.now()-started;
+  writePreferredLiveEndpoint(config,candidate);
+  return result;
 }
 function normalizeDestination(value){let v=String(value||'').trim();let m=v.match(/^[WL]-?(\d+[A-Z]?)$/i);if(m)return m[1].toUpperCase();m=v.match(/^[WL]-?([a-z]{2}_[A-Z]\d)$/i);if(m)return m[1];return v.replace(/-$/,'')}
 function titleTeam(name){return String(name||'').trim().replace(/\(Seed-Team Name\)$/i,'').trim().split(/\s+/).map(word=>{const upper=word.toUpperCase();if(ACRONYMS.has(upper))return upper;if(/^\d+$/.test(word))return word;return word.charAt(0).toUpperCase()+word.slice(1).toLowerCase()}).join(' ')}
@@ -428,8 +458,22 @@ function updateOverviewMetrics(config,games,updatedAt,mode=''){
   if(config){setText('activeDivisionTitle',`${config.age} ${config.division}`);setText('activeDivisionMeta',`${teams||0} teams · ${list.length} published games${mode?` · ${mode}`:''}`);}
 }
 function renderSourceMeta(config,mode,games,updatedAt,detail=''){const root=$('sourceMeta');const completed=(games||[]).filter(isFinal).length,scheduled=Math.max(0,(games||[]).length-completed);updateOverviewMetrics(config,games,updatedAt,mode);if(!root)return;root.innerHTML=`<div><span>Source</span><strong>Official Google Sheet</strong></div><div><span>Last successful update</span><strong>${esc(sourceTimestamp(updatedAt))}</strong></div><div><span>Schedule</span><strong>${scheduled} scheduled · ${completed} completed</strong></div><div><span>Mode</span><strong>${esc(mode)}</strong></div>${detail?`<p>${esc(detail)}</p>`:''}`;}
-async function loadCurrent(manual=false){
-  const config=currentConfig();if(!config)return;
+function clearLiveRetry(){if(retryTimer){clearTimeout(retryTimer);retryTimer=null}}
+function markLiveSuccess(config){liveFailureCounts.set(config.id,0);clearLiveRetry()}
+function markLiveFailure(config){
+  const failures=(liveFailureCounts.get(config.id)||0)+1;liveFailureCounts.set(config.id,failures);
+  const delay=LIVE_RETRY_DELAYS_MS[Math.min(failures-1,LIVE_RETRY_DELAYS_MS.length-1)];
+  clearLiveRetry();
+  if(!document.hidden)retryTimer=setTimeout(()=>{retryTimer=null;if(currentConfig()?.id===config.id)loadCurrent(false)},delay);
+  return delay;
+}
+function loadCurrent(manual=false){
+  const config=currentConfig();if(!config)return Promise.resolve();
+  const existing=activeLoads.get(config.id);if(existing)return existing;
+  const task=loadCurrentInternal(config,manual).finally(()=>{if(activeLoads.get(config.id)===task)activeLoads.delete(config.id)});
+  activeLoads.set(config.id,task);return task;
+}
+async function loadCurrentInternal(config,manual=false){
   lastLoadAttemptAt=Date.now();
   const version=++loadVersion,status=$('statusText'),dot=$('liveDot'),button=$('refresh');
   const cached=readCache(config),embedded=embeddedFallback(config);
@@ -439,60 +483,65 @@ async function loadCurrent(manual=false){
     DATA=immediate;
     dot.classList.add('fallback');
     status.textContent=`${cached?'Last verified':'Verified'} ${config.age} ${config.division} schedule loaded · checking CPI snapshot and live Google Sheet…`;
-    renderSourceMeta(config,cached?'Last verified cache · checking sources':'Verified schedule · checking sources',immediate.games,cached?.cachedAt||null,'A verified schedule is available immediately while CPI checks its repository snapshot and the live Google Sheet.');
+    renderSourceMeta(config,cached?'Schedule ready · checking live updates':'Schedule ready · checking live updates',immediate.games,cached?.cachedAt||null,'A verified schedule is available immediately while CPI checks its repository snapshot and the live Google Sheet.');
     rebuild();team.disabled=false;
   }else{
     team.disabled=true;
     status.textContent=manual?`Refreshing ${config.division}…`:`Loading verified ${config.age} ${config.division} schedule…`;
     renderSourceMeta(config,'Loading verified CPI snapshot',[],null);
   }
+  const livePromise=fetchDataset(config).then(loaded=>({loaded}),error=>({error}));
   try{
     const snapshot=await fetchVerifiedSnapshot(config);if(version!==loadVersion)return;
     verified=datasetWithVerifiedRoutes(config,snapshot.games,snapshot.teams,embedded);
     DATA=cached?datasetWithVerifiedRoutes(config,cached.games,cached.teams,verified):verified;
     dot.classList.add('fallback');
     status.textContent=`Verified ${config.age} ${config.division} schedule loaded · checking live Google Sheet…`;
-    renderSourceMeta(config,cached?'Last verified cache + CPI snapshot':'Verified CPI snapshot',DATA.games,cached?.cachedAt||snapshot.updatedAt,'CPI loaded the repository schedule first so every division retains bracket-routing metadata while the live sheet refreshes.');
+    renderSourceMeta(config,cached?'Schedule ready · checking live updates':'Verified CPI snapshot',DATA.games,cached?.cachedAt||snapshot.updatedAt,'CPI loaded the repository schedule first so every division retains bracket-routing metadata while the live sheet refreshes.');
     rebuild();team.disabled=false;
   }catch(snapshotError){
     if(version!==loadVersion)return;
     if(!immediate)status.textContent=`Checking live ${config.age} ${config.division} schedule…`;
   }
   try{
-    const loaded=await fetchDataset(config);if(version!==loadVersion)return;
+    const liveResult=await livePromise;if(liveResult.error)throw liveResult.error;
+    const loaded=liveResult.loaded;if(version!==loadVersion)return;
+    markLiveSuccess(config);
     const refreshedAt=loaded.updatedAt||new Date().toISOString();
     DATA=datasetWithVerifiedRoutes(config,loaded.games,loaded.teams,verified||embedded);
     writeCache(config,DATA);
     if(loaded.isFallback){dot.classList.add('fallback');status.textContent=`Using verified ${config.age} ${config.division} schedule · ${DATA.games.length} games · live Google tab unavailable`;renderSourceMeta(config,'Verified CPI snapshot',DATA.games,refreshedAt,'CPI displayed the verified schedule and retained it because the official live tab was not readable.')}else{dot.classList.remove('fallback');status.textContent=`Live from Google Sheets · ${config.age} ${config.division} · ${DATA.games.length} games · ${loaded.method||'live'} · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;renderSourceMeta(config,'Live browser refresh',DATA.games,refreshedAt,'Live results are merged with verified bracket-routing metadata so downstream games remain visible.')}
   }catch(error){
     if(version!==loadVersion)return;
+    const retryDelay=markLiveFailure(config);
+    const retryNote=` CPI will retry live updates in about ${Math.round(retryDelay/1000)} seconds.`;
     const fallbackCache=readCache(config);
     if(fallbackCache){
       DATA=datasetWithVerifiedRoutes(config,fallbackCache.games,fallbackCache.teams,verified||embedded);
       dot.classList.add('fallback');
       status.textContent=`Using last successful ${config.age} ${config.division} update · live sheet unavailable (${error.message})`;
-      renderSourceMeta(config,'Last verified browser cache',DATA.games,fallbackCache.cachedAt,'The live sheet could not be read, so CPI preserved the last successful schedule and merged its verified bracket routes.');
+      renderSourceMeta(config,'Last verified browser cache',DATA.games,fallbackCache.cachedAt,'The live sheet could not be read, so CPI preserved the last successful schedule and merged its verified bracket routes.'+retryNote);
     }else if(verified){
       DATA=verified;
       dot.classList.add('fallback');
       status.textContent=`Using verified ${config.age} ${config.division} schedule · live sheet unavailable`;
-      renderSourceMeta(config,'Verified CPI snapshot',DATA.games,null,'The repository schedule remains available even when Google blocks browser requests.');
+      renderSourceMeta(config,'Verified CPI snapshot',DATA.games,null,'The repository schedule remains available even when Google blocks browser requests.'+retryNote);
     }else if(embedded){
       DATA=embedded;
       dot.classList.add('fallback');
       status.textContent=`Using verified ${config.age} ${config.division} schedule · live sheet unavailable`;
-      renderSourceMeta(config,'Embedded verified schedule',DATA.games,null,'The schedule is built directly into this release, so it remains available even when Google blocks browser requests.');
+      renderSourceMeta(config,'Embedded verified schedule',DATA.games,null,'The schedule is built directly into this release, so it remains available even when Google blocks browser requests.'+retryNote);
     }else{
       DATA={age:config.age,division:config.division,teams:[],games:[]};
       dot.classList.add('fallback');
       status.textContent=`Could not load ${config.age} ${config.division} (${error.message})`;
-      renderSourceMeta(config,'Unavailable',[],null,'No verified schedule is currently available in this browser.');
+      renderSourceMeta(config,'Unavailable',[],null,'No verified schedule is currently available in this browser.'+retryNote);
     }
   }finally{
     if(version===loadVersion){rebuild();button.disabled=false;team.disabled=false}
   }
 }
-function selectDataset(){const config=currentConfig();if(!config)return;updateSheetLink();localStorage.setItem('joAgeV5',config.age);localStorage.setItem(`joDivisionV5:${config.age}`,config.id);search.value='';day.value='';loadCurrent(false)}
+function selectDataset(){const config=currentConfig();if(!config)return;clearLiveRetry();activeLoads.clear();updateSheetLink();localStorage.setItem('joAgeV5',config.age);localStorage.setItem(`joDivisionV5:${config.age}`,config.id);search.value='';day.value='';loadCurrent(false)}
 age.addEventListener('change',()=>{localStorage.setItem('joAgeV5',age.value);populateDivisions();selectDataset()});division.addEventListener('change',selectDataset);team.addEventListener('change',renderTeam);search.addEventListener('input',renderRelevant);day.addEventListener('change',renderRelevant);$('journeyTab').addEventListener('click',()=>{$('journeyTab').classList.add('active');$('relevantTab').classList.remove('active');journey.classList.remove('hidden');$('relevant').classList.add('hidden')});$('relevantTab').addEventListener('click',()=>{$('relevantTab').classList.add('active');$('journeyTab').classList.remove('active');journey.classList.add('hidden');$('relevant').classList.remove('hidden')});$('refresh').addEventListener('click',()=>loadCurrent(true));
 $('share')?.addEventListener('click',copyShareLink);
 $('fullSearch')?.addEventListener('input',renderFullSchedule);

@@ -25,9 +25,10 @@ for(const config of datasets){
 }
 const twelveCsv=fs.readFileSync(path.join(ROOT,"data/tournaments/raw/2026-jo-weekend-1/12u-girls-championship.csv"),"utf8"),twelve=ctx.parseLive(twelveCsv);
 for(const game of ["135A","147A","152A"])requireCondition(twelve.some(g=>String(g.game)===game),`12U Girls verified schedule must preserve Game ${game}`);
-const loadStart=app.indexOf("async function loadCurrent"),loadEnd=app.indexOf("function selectDataset",loadStart),loadBlock=app.slice(loadStart,loadEnd);
+const loadStart=app.indexOf("async function loadCurrentInternal"),loadEnd=app.indexOf("function selectDataset",loadStart),loadBlock=app.slice(loadStart,loadEnd);
 requireCondition(loadBlock.indexOf("await fetchVerifiedSnapshot(config)")>=0,"Girls app must load the verified CPI snapshot");
-requireCondition(loadBlock.indexOf("await fetchVerifiedSnapshot(config)")<loadBlock.indexOf("await fetchDataset(config)"),"Girls app must render the verified snapshot before waiting on Google");
+requireCondition(loadBlock.indexOf("const livePromise=fetchDataset(config)")<loadBlock.indexOf("await fetchVerifiedSnapshot(config)"),"Girls live request should begin while the verified snapshot loads");
+requireCondition(loadBlock.indexOf("await fetchVerifiedSnapshot(config)")<loadBlock.indexOf("await livePromise"),"Girls app must render the verified snapshot before applying Google data");
 requireCondition(loadBlock.includes("cached.games,cached.teams,verified"),"Girls cache must be enriched with verified bracket metadata");
 requireCondition(fs.statSync(appPath).size<=200000,`Girls app exceeds the 200KB poolside budget: ${fs.statSync(appPath).size}`);
 console.log("GIRLS JO VERIFIED FALLBACK TESTS PASSED");

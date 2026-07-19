@@ -5,7 +5,7 @@ const ROOT=path.resolve(__dirname,"..");
 function requireCondition(condition,message){if(!condition)throw new Error(message)}
 function loadJourneyContext(side){
   const file=path.join(ROOT,`tournaments/${side}/app.js`),app=fs.readFileSync(file,"utf8");
-  requireCondition(app.includes("APP_VERSION='7.50.8'"),`${side} does not advertise APP_VERSION 7.50.8`);
+  requireCondition(app.includes("APP_VERSION='7.50.9'"),`${side} does not advertise APP_VERSION 7.50.9`);
   const start=app.indexOf("function titleTeam"),end=app.indexOf("const initialParams");
   requireCondition(start>=0&&end>start,`Could not isolate ${side} journey functions`);
   const scoreOutcome=g=>{if(!g)return null;const ws=String(g.whiteScore??""),ds=String(g.darkScore??"");if(ws===""||ds==="")return null;const w=Number(ws),d=Number(ds);if(!Number.isFinite(w)||!Number.isFinite(d)||w===d)return null;return w>d?"white":"dark"};
@@ -99,7 +99,7 @@ const directMerged=girls.mergeVerifiedSchedule(directLive,[]);
 requireCondition(directMerged[0].loserTo==='52','Direct W/L references must infer a missing source destination when no verified reference is available');
 
 
-// 7.50.8: an explicit route assignment must be authoritative even when the
+// 7.50.9: an explicit route assignment must be authoritative even when the
 // completed source game has no winner/loser destination metadata.
 const allDivisionRouteGames=[
  {date:'18-Jul',time:'10:00 AM',type:'Group',location:'CHAPMAN UNIVERSITY',game:16,whiteRaw:'4-LAMORINDA A',whiteScore:'12',darkRaw:'45-OAHU',darkScore:'2',winnerTo:'26',loserTo:'45',gmid:'18G-016'},
@@ -126,7 +126,7 @@ for(const [label,ctx] of [['Girls',girls],['Boys',boys]]){
 requireCondition(girls.parseWL('W135A-LAMORINDA A')?.game==='135A','Girls app must preserve lettered game references used by 12U schedules');
 requireCondition(girls.validGameNumber('147A'),'Girls app must accept lettered 12U game numbers');
 
-// 7.50.8 full-format coverage: current JO sheets also use fourth/fifth-place
+// 7.50.9 full-format coverage: current JO sheets also use fourth/fifth-place
 // routes, multi-letter pools, provenance annotations, and pool-matchup labels.
 for(const [label,ctx] of [['Girls',girls],['Boys',boys]]){
   const known=['Lamorinda A','OCWPC Red','Other Team','Third Team','Fourth Team'];
@@ -155,7 +155,7 @@ for(const side of ['jo-boys','jo-girls']){
   requireCondition(app.includes('A verified schedule is available immediately while CPI checks for newer Google Sheet data.')||app.includes('CPI loaded the repository schedule first so every division retains bracket-routing metadata while the live sheet refreshes.'),`${side} must render verified data before live refresh finishes`);
   requireCondition(app.includes('teamGames=new Map()'),`${side} must build a team-to-games index`);
 }
-console.log('JO JOURNEY 7.50.8 TESTS PASSED');
+console.log('JO JOURNEY 7.50.9 TESTS PASSED');
 console.log(' - Labeled W/L references resolve into selected-team journeys');
 console.log(' - Lamorinda A advances from final Game 10 into scheduled Game 34');
 console.log(' - Conditional winner, loser, and pool paths project beyond the next game');

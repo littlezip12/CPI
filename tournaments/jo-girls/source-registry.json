@@ -1,5 +1,5 @@
 {
-  "version": "7.43.0",
+  "version": "7.50.9",
   "tournamentId": "2026-junior-olympics-weekend-1",
   "label": "2026 Junior Olympics \u00b7 Weekend 1 \u00b7 Girls & Coed",
   "sheetId": "1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw",
@@ -136,5 +136,17 @@
       ],
       "sourceUrl": "https://docs.google.com/spreadsheets/d/1TyGB8m-dH1Q56v8Lpwdvw-S7kjxgP8MWsirsAeCYVNw/edit?gid=1267400335#gid=1267400335"
     }
-  ]
+  ],
+  "liveConnectionPolicy": {
+    "requestTimeoutMs": 6500,
+    "hedgeDelayMs": 650,
+    "initialCandidateCount": 3,
+    "retryDelaysMs": [
+      15000,
+      30000,
+      60000
+    ],
+    "preferredEndpointCache": true,
+    "overlapProtection": true
+  }
 }
