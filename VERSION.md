@@ -1,10 +1,8 @@
-# CPI 7.51.1
+# CPI 7.51.2
 
-Club logo expansion and placeholder replacement.
+Remaining club logo completion.
 
-- Adds and normalizes the remaining supplied club artwork.
-- PV WPC uses CPI's existing OVAC logo.
-- San Jose WPF and SJ Foundation use the supplied San Jose Water Polo Foundation logo.
-- Berkeley WPC uses the supplied Berkeley logo.
-- Triton Gold/Tri-Valley Tritons and Nado/Coronado share their verified artwork.
-- Preserves all existing team names, club URLs, ranking order, CPI scores, tournament data, and JO relay behavior.
+- Adds the remaining uploaded logos that were still missing from rankings and club pages.
+- Covers San Clemente, CDM, Temple City, Los Alamitos, San Diego Shores, ORWP, Carlsbad, Back Bay, Santa Cruz, 908, SHAQ, Laguna Beach, CHAWP, SBWPC, Viking, Legacy, Sand Canyon, Imperial, Aetos, Supreme, Long Beach Shore, Meridian, Norco, Club Daygo, CT Premier, and Del Mar.
+- Adds shared files where legacy or alternate CPI paths still exist, including Long Beach Viking and SBWPC.
+- Preserves current rankings, tournament relay behavior, and JO applications.
