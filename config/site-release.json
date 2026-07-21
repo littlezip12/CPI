@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.51.3",
-  "name": "JO Group and Subdivision Context",
+  "version": "7.51.4",
+  "name": "JO Final Division and Overall Placement",
   "date": "2026-07-21",
   "rankingDataRelease": "7.30 v2",
-  "joApplicationRelease": "7.51.3",
+  "joApplicationRelease": "7.51.4",
   "deploymentMode": "migration",
-  "notes": "Replaces the generic Still alive status with live stage context. Team pages now show opening-group membership, update into later pool groups, and identify Platinum, Gold, Silver, Bronze, Copper, or Nickel subdivisions when those route codes are available.",
+  "notes": "When a team has completed its final determinative game or final placement round robin, the JO viewer now shows its subdivision finish and overall division finish, such as 5th in Gold and 23rd of 44 teams overall. Placement remains hidden until it is supported by final bracket results.",
   "identityRelease": "7.40.0",
   "tournamentDataRelease": "7.49.1",
   "tournamentEvidenceRelease": "7.45.1",
@@ -20,7 +20,8 @@
   "tournamentUIRelease": "7.50.0",
   "logoLibraryRelease": "7.51.2",
   "logoDeliveryRelease": "7.51.2",
-  "joJourneyRelease": "7.51.3",
+  "joJourneyRelease": "7.51.4",
   "joConnectionRelease": "7.51.0",
-  "joRelayRelease": "7.51.0"
+  "joRelayRelease": "7.51.0",
+  "joPlacementRelease": "7.51.4"
 }

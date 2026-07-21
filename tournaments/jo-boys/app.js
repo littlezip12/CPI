@@ -502,6 +502,70 @@ function stageContextHtml(context,name){
   return`<div class="jo-stage-context"><div class="jo-stage-context-heading"><span>${context.kind==='initial'?'Opening group':'Subdivision group'}</span><strong>${esc(context.groupTitle)}</strong></div><div class="jo-stage-members">${context.members.map(member=>`<span class="jo-stage-member${member===name?' selected':''}">${teamLabelHtml(member)}</span>`).join('')}</div></div>`;
 }
 
+const TRACK_ORDER=['pt','au','ag','bz','cu','ni'];
+function placementOrdinal(place){
+  const value=Number(place);if(!Number.isFinite(value))return'';
+  const mod100=value%100,suffix=mod100>=11&&mod100<=13?'th':value%10===1?'st':value%10===2?'nd':value%10===3?'rd':'th';return`${value}${suffix}`;
+}
+function exactPlacementSpec(game){
+  for(const value of [game?.type,String(game?.stageDetail||'').replace(/^[a-z]{2,3}[_-]/i,'')]){
+    const match=String(value||'').trim().match(/^(\d+)(?:st|nd|rd|th)(?:\s*[/&-]\s*(\d+)(?:st|nd|rd|th))?\s*(?:place(?:ment)?\s*(?:game)?)?$/i);
+    if(match){const winnerPlace=Number(match[1]),loserPlace=match[2]?Number(match[2]):winnerPlace+1;return{winnerPlace,loserPlace}}
+  }
+  return null;
+}
+function roundRobinPlacementSpec(game){
+  for(const value of [game?.type,String(game?.stageDetail||'').replace(/^[a-z]{2,3}[_-]/i,'')]){
+    const text=String(value||'').trim(),match=text.match(/^(\d+)\s*[-–—]\s*(\d+)\s*(?:RR|round\s*robin|final\s*pool)$/i);
+    if(match)return{start:Number(match[1]),end:Number(match[2])};
+  }
+  return null;
+}
+function placementTrackForTeam(name,games=[]){
+  const ordered=[...(games||[])].sort(gameSort).reverse();
+  for(const game of ordered){const track=routeTrackForGame(game)||routeGroupInfo(game,name)?.track;if(track)return track}
+  return null;
+}
+function terminalPlacementForTeam(name,games=[]){
+  const ordered=[...(games||[])].filter(isFinal).sort(gameSort).reverse();
+  for(const game of ordered){
+    const spec=exactPlacementSpec(game),result=spec&&resultFor(game,name);if(!spec||!result)continue;
+    return{track:routeTrackForGame(game)||placementTrackForTeam(name,games),subdivisionPlace:result==='win'?spec.winnerPlace:spec.loserPlace,source:'placement-game',game};
+  }
+  const seen=new Set();
+  for(const game of ordered){
+    const spec=roundRobinPlacementSpec(game),track=routeTrackForGame(game)||placementTrackForTeam(name,games);if(!spec||!track)continue;
+    const key=`${track}:${spec.start}-${spec.end}`;if(seen.has(key))continue;seen.add(key);
+    const bucket=(RESOLVED.games||[]).filter(candidate=>{const other=roundRobinPlacementSpec(candidate);return other&&other.start===spec.start&&other.end===spec.end&&routeTrackForGame(candidate)===track});
+    if(!bucket.length||!bucket.every(isFinal))continue;
+    const teams=[...new Set(bucket.flatMap(candidate=>[candidate.whiteTeam,candidate.darkTeam]).filter(Boolean))];if(!teams.includes(name))continue;
+    const ranked=rankTable(teams,bucket,RESOLVED.seedLookup||new Map()),index=ranked.indexOf(name);if(index<0)continue;
+    return{track,subdivisionPlace:spec.start+index,source:'round-robin',game};
+  }
+  return null;
+}
+function subdivisionCapacity(track){
+  let capacity=0;
+  for(const game of RESOLVED.games||[]){if(routeTrackForGame(game)!==track)continue;const exact=exactPlacementSpec(game),roundRobin=roundRobinPlacementSpec(game);if(exact)capacity=Math.max(capacity,exact.winnerPlace,exact.loserPlace);if(roundRobin)capacity=Math.max(capacity,roundRobin.end)}
+  if(capacity)return capacity;
+  const members=new Set();
+  for(const teamName of DATA.teams||[]){const teamGames=(RESOLVED.teamGames?.get(teamName)||[]).filter(game=>routeTrackForGame(game));const finalTrack=placementTrackForTeam(teamName,teamGames);if(finalTrack===track)members.add(teamName)}
+  return members.size;
+}
+function finalPlacementForTeam(name,games=[],upcoming=null){
+  if(!name||upcoming)return null;const placement=terminalPlacementForTeam(name,games);if(!placement)return null;
+  const totalTeams=(DATA.teams||[]).length,track=placement.track,place=placement.subdivisionPlace;if(!Number.isFinite(place)||place<1)return null;
+  let overallPlace=place;
+  if(track){const trackIndex=TRACK_ORDER.indexOf(track);if(trackIndex<0)return{...placement,totalTeams,overallPlace:null,divisionLabel:trackLabel(track)};for(const earlier of TRACK_ORDER.slice(0,trackIndex))overallPlace+=subdivisionCapacity(earlier)}
+  if(totalTeams&&overallPlace>totalTeams)overallPlace=null;
+  return{...placement,totalTeams,overallPlace,divisionLabel:track?trackLabel(track):''};
+}
+function finalPlacementHtml(placement){
+  if(!placement)return'';const subdivision=`${placementOrdinal(placement.subdivisionPlace)}${placement.divisionLabel?` in ${placement.divisionLabel}`:''}`;
+  const overall=placement.overallPlace&&placement.totalTeams?`${placementOrdinal(placement.overallPlace)} of ${placement.totalTeams} teams overall`:placement.totalTeams?`${placement.totalTeams} teams in the division`:'';
+  return`<div class="next-label">Final placement</div><div class="jo-final-placement"><strong>${esc(subdivision)}</strong>${overall?`<span>${esc(overall)}</span>`:''}</div>`;
+}
+
 const initialParams=new URLSearchParams(window.location.search);
 let pendingTeam=initialParams.get('team')||'';
 let pendingDivision=initialParams.get('division')||'';
@@ -546,9 +610,9 @@ function renderTeam(){
   const name=team.value,config=currentConfig();if(!name){$('teamView').classList.add('hidden');setEmptyState();updateShareUrl();return}
   $('teamView').classList.remove('hidden');setEmptyState();updateShareUrl();if(config)localStorage.setItem(`joBoysSelectedTeam:${config.id}`,name);
   const games=gamesForTeam(name),completed=games.filter(isFinal),upcoming=games.find(g=>!isFinal(g));
-  const wins=completed.filter(g=>resultFor(g,name)==='win').length,losses=completed.length-wins,seed=seedForTeam(name),stage=stageContextForTeam(name,games,upcoming);
+  const wins=completed.filter(g=>resultFor(g,name)==='win').length,losses=completed.length-wins,seed=seedForTeam(name),stage=stageContextForTeam(name,games,upcoming),finalPlacement=finalPlacementForTeam(name,games,upcoming);
   summary.innerHTML=`<div class="eyebrow">Selected team</div><div class="jo-summary-title"><h2>${esc(name)}</h2>${seed?`<span class="jo-seed-summary">JO seed #${seed}</span>`:''}</div><div class="stats"><div class="stat"><small>Record</small>${completed.length?`${wins}-${losses}`:'—'}</div><div class="stat"><small>Games played</small>${completed.length}</div><div class="stat stage-stat"><small>Stage</small>${esc(stage.stage)}</div></div>${stageContextHtml(stage,name)}`;
-  if(upcoming){const opp=otherTeam(upcoming,name),candidates=gameCandidates(upcoming,name);next.innerHTML=`<div class="next-label">Next game</div>${namedMatchupHtml(name,opp,candidates,'light')}<div>${esc(friendlyDate(upcoming.date))} · ${esc(upcoming.time)}</div><div class="journey-meta">${esc(upcoming.location)} · Game ${upcoming.game} · ${esc(friendlyStage(upcoming))}</div>`;renderPaths(upcoming)}else{next.innerHTML='<div class="next-label">Tournament status</div><div class="next-match">No upcoming game</div>';renderPaths({winnerTo:'',loserTo:''})}
+  if(upcoming){const opp=otherTeam(upcoming,name),candidates=gameCandidates(upcoming,name);next.innerHTML=`<div class="next-label">Next game</div>${namedMatchupHtml(name,opp,candidates,'light')}<div>${esc(friendlyDate(upcoming.date))} · ${esc(upcoming.time)}</div><div class="journey-meta">${esc(upcoming.location)} · Game ${upcoming.game} · ${esc(friendlyStage(upcoming))}</div>`;renderPaths(upcoming)}else{next.innerHTML=finalPlacement?finalPlacementHtml(finalPlacement):'<div class="next-label">Tournament status</div><div class="next-match">No upcoming game</div>';renderPaths({winnerTo:'',loserTo:''})}
   const grouped={};games.forEach(g=>(grouped[g.date]??=[]).push(g));journey.innerHTML=games.length?'<div class="journey">'+Object.entries(grouped).map(([date,list])=>`<section class="day"><h3>${esc(friendlyDate(date))}</h3>${list.map(g=>{const r=resultFor(g,name)||'upcoming';return`<article class="journey-card glass ${r}"><div class="journey-time">Game ${g.game}<br>${esc(g.time)}</div><div><div class="journey-score">${matchupHtml(g)}</div><div class="journey-meta">${esc(g.location)} · ${esc(friendlyStage(g))}</div></div><span class="pill ${r}">${r==='win'?'Win':r==='loss'?'Loss':'Upcoming'}</span></article>`}).join('')}</section>`).join('')+'</div>':'<div class="empty glass">No resolved games are currently available for this team.</div>';renderRelevant();renderPotential(name,upcoming)
 }
 

@@ -1,10 +1,10 @@
-# CPI 7.51.3
+# CPI 7.51.4
 
-JO group and subdivision context.
+JO final subdivision and overall placement.
 
-- Replaces the generic “Still alive” team status with a live Stage value.
-- Shows the selected team’s opening group and every team in that group.
-- Updates to the next group when the official schedule assigns the team to a later pool.
-- Identifies Platinum, Gold, Silver, Bronze, Copper, and Nickel subdivisions from official bracket route codes.
-- Keeps subdivision context visible during placement and crossover rounds, so similarly numbered games in different brackets are clearly distinguished.
+- Shows a completed team’s final subdivision finish, such as “5th in Gold.”
+- Converts that subdivision result into the team’s overall division finish, such as “23rd of 44 teams overall.”
+- Determines subdivision sizes from the official placement structure rather than using one fixed bracket size.
+- Supports exact placement games and completed final-placement round robins.
+- Keeps placement hidden while a team still has an upcoming game or while its finishing position is not yet determinable.
 - Applies to both Girls/Coed and Boys JO viewers without changing schedules, scores, or routing.
