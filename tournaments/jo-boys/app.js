@@ -306,7 +306,7 @@ function poolMatchupMatchesGame(game,matchup){if(!game||!matchup)return false;co
 function routeTrackForGame(game){const match=String(game?.stageDetail||game?.type||'').trim().match(/^([a-z]{2,3})[_-]/i);return match?match[1].toLowerCase():null}
 function sourceGamesForPoolMatchup(games,matchup,targetGame=null){const matches=(games||[]).filter(game=>poolMatchupMatchesGame(game,matchup));const track=routeTrackForGame(targetGame);return track?[...matches].sort((a,b)=>{const aTrack=parsePoolSlot(a.whiteRaw)?.track===track?0:1,bTrack=parsePoolSlot(b.whiteRaw)?.track===track?0:1;return aTrack-bTrack||gameSort(a,b)}):matches.sort(gameSort)}
 function ordinalLabel(rank){return rank===1?'1st':rank===2?'2nd':rank===3?'3rd':`${rank}th`}
-function trackLabel(track){return track==='pt'?'Platinum':track==='au'?'Gold':track.toUpperCase()}
+function trackLabel(track){return TRACK_LABELS[String(track||'').toLowerCase()]||String(track||'').toUpperCase()}
 function slotLabel(raw){const team=smartTeam(raw)||assignedRouteTeam(raw);if(team)return team;const wl=parseWL(raw);if(wl)return`${wl.kind==='W'?'Winner':'Loser'} of Game ${wl.game}`;const matchup=parsePoolMatchup(raw);if(matchup)return`${matchup.kind==='W'?'Winner':'Loser'} of ${matchup.refs.join(' vs ')} matchup`;const slot=parsePoolSlot(raw);if(slot)return`${trackLabel(slot.track)} Pool ${slot.pool} Seed ${slot.seed}`;const pp=parsePoolPlacement(raw);if(pp)return`${ordinalLabel(pp.rank)} in ${trackLabel(pp.track)} Pool ${pp.pool}`;const gp=parseGroupPlacement(raw);if(gp)return`${ordinalLabel(gp.rank)} in Group ${gp.group}`;return String(raw||'').replace(/_/g,' ')||'TBD'}
 function teamsFromGames(games){return[...new Set(games.flatMap(g=>[smartTeam(g.whiteRaw),smartTeam(g.darkRaw)]).filter(Boolean))].sort((a,b)=>a.localeCompare(b))}
 function embeddedFallback(config){if(!config)return null;if(!EMBEDDED_FALLBACKS[config.id]){const csv=EMBEDDED_SNAPSHOT_CSV[config.id];if(!csv)return null;try{const games=parseLive(csv);EMBEDDED_FALLBACKS[config.id]={age:config.age,division:config.division,teams:teamsFromGames(games),games}}catch(error){console.error(`Could not initialize embedded Boys JO snapshot ${config.id}`,error);return null}}return structuredClone(EMBEDDED_FALLBACKS[config.id])}
@@ -344,23 +344,12 @@ function namedMatchupHtml(name,opponent,candidates=[],context='dark'){const righ
 function teamOptionLabel(name){const seed=seedForTeam(name);return seed?`${name} — JO seed #${seed}`:name}
 
 function friendlyStage(game){
-  const config=currentConfig();
   const detail=String(game?.stageDetail||'').trim();
-  const raw=String(game?.type||'').trim();
   const match=detail.match(/^([a-z]{2,3})[_-](.+)$/i);
   const code=match?match[1].toLowerCase():'';
-  let round=(match?match[2]:raw||detail).replace(/_/g,' ').trim();
-  const classic=/classic|\(d2\)/i.test(String(config?.division||''));
-  const bracket=classic?({ag:'Silver',bz:'Bronze'}[code]||''):'';
-  round=round
-    .replace(/\bsemi(?:finals?)?\b/ig,'Semifinal')
-    .replace(/\bqtr\b|\bquarter(?:finals?)?\b/ig,'Quarterfinal')
-    .replace(/\bplay[- ]?in\b/ig,'Play-in')
-    .replace(/^group$/i,'Group play')
-    .replace(/\bRR\b/g,'round robin');
-  if(/^1st$/i.test(round))round='Championship game';
-  else if(/^(\d+)(st|nd|rd|th)$/i.test(round))round=`${round} place game`;
-  return [bracket?`${bracket} bracket`:'',round].filter(Boolean).join(' · ')||raw||detail;
+  const round=roundOnlyLabel(game);
+  const bracket=code?trackLabel(code):'';
+  return[bracket,round].filter(Boolean).join(' · ')||String(game?.type||'').trim()||detail;
 }
 function friendlyDate(raw){const labels={'18-Jul':'Saturday, July 18','19-Jul':'Sunday, July 19','20-Jul':'Monday, July 20','21-Jul':'Tuesday, July 21'};return labels[raw]||raw}
 function timeValue(value){const m=String(value||'').match(/^(\d+):(\d+)\s*(AM|PM)$/i);if(!m)return 9999;let h=Number(m[1])%12;if(m[3].toUpperCase()==='PM')h+=12;return h*60+Number(m[2])}
@@ -446,6 +435,73 @@ function mergeVerifiedSchedule(primaryGames,referenceGames=[]){
 }
 function datasetWithVerifiedRoutes(config,games,teams,referenceDataset){const merged=mergeVerifiedSchedule(games,referenceDataset?.games||[]);return{age:config.age,division:config.division,teams:Array.isArray(teams)&&teams.length?teams:teamsFromGames(merged),games:merged}}
 
+
+const TRACK_LABELS={pt:'Platinum',au:'Gold',ag:'Silver',bz:'Bronze',cu:'Copper',ni:'Nickel'};
+function alphaGroupLabel(index){let value=Number(index)+1,label='';while(value>0){value-=1;label=String.fromCharCode(65+(value%26))+label;value=Math.floor(value/26)}return label}
+function directSeededTeamInfo(raw){const info=seedInfo(raw);return info&&info.team&&Number.isFinite(info.seed)&&info.seed<999?info:null}
+function initialGroupBuckets(){
+  const explicit=new Map(),routed=new Map();
+  for(const game of RESOLVED.games||[]){
+    if(!/group/i.test(String(game.type||''))||routeTrackForGame(game))continue;
+    const white=directSeededTeamInfo(game.whiteRaw),dark=directSeededTeamInfo(game.darkRaw);
+    for(const info of [white,dark])if(info?.group){if(!explicit.has(info.group))explicit.set(info.group,{label:info.group,members:new Map(),games:[]});explicit.get(info.group).members.set(info.team,info.seed);explicit.get(info.group).games.push(game)}
+    if(!white||!dark||white.group||dark.group)continue;
+    const winner=String(game.winnerTo||'').trim(),loser=String(game.loserTo||'').trim();
+    if(!winner&&!loser)continue;
+    const key=[winner,loser].sort().join('|');
+    if(!routed.has(key))routed.set(key,{label:'',members:new Map(),games:[]});
+    const bucket=routed.get(key);bucket.members.set(white.team,white.seed);bucket.members.set(dark.team,dark.seed);bucket.games.push(game);
+  }
+  const routedGroups=[...routed.values()].filter(bucket=>bucket.members.size>=3).sort((a,b)=>Math.min(...a.members.values())-Math.min(...b.members.values()));
+  routedGroups.forEach((bucket,index)=>bucket.label=alphaGroupLabel(index));
+  return[...explicit.values(),...routedGroups].map(bucket=>({label:bucket.label,members:[...bucket.members.entries()].sort((a,b)=>a[1]-b[1]||a[0].localeCompare(b[0])).map(([team])=>team),games:bucket.games}));
+}
+function initialGroupForTeam(name){return initialGroupBuckets().find(bucket=>bucket.members.includes(name))||null}
+function routeGroupInfo(game,name){
+  if(!game)return null;
+  for(const side of ['white','dark']){
+    const raw=game[`${side}Raw`],known=game[`${side}Team`]||assignedRouteTeam(raw,DATA?.teams||[]);
+    if(known!==name)continue;
+    const slot=parsePoolSlot(raw);if(slot)return{track:slot.track,group:slot.pool,seed:slot.seed};
+    const placement=parsePoolPlacement(raw);if(placement)return{track:placement.track,group:placement.pool,seed:placement.rank};
+  }
+  return null;
+}
+function routeGroupRoster(track,group){
+  const members=new Map();
+  for(const game of RESOLVED.games||[]){
+    for(const side of ['white','dark']){
+      const raw=game[`${side}Raw`],slot=parsePoolSlot(raw);if(!slot||slot.track!==track||slot.pool!==group)continue;
+      const member=game[`${side}Team`]||assignedRouteTeam(raw,DATA?.teams||[])||smartTeam(raw);if(member)members.set(member,Math.min(members.get(member)??999,slot.seed));
+    }
+  }
+  return[...members.entries()].sort((a,b)=>a[1]-b[1]||a[0].localeCompare(b[0])).map(([team])=>team);
+}
+function roundOnlyLabel(game){
+  const detail=String(game?.stageDetail||'').trim(),raw=String(game?.type||'').trim(),match=detail.match(/^([a-z]{2,3})[_-](.+)$/i);
+  let round=(match?match[2]:raw||detail).replace(/_/g,' ').trim();
+  round=round.replace(/\bsemi(?:finals?)?\b/ig,'Semifinal').replace(/\bqtr\b|\bquarter(?:finals?)?\b/ig,'Quarterfinal').replace(/\bplay[- ]?in\b/ig,'Play-in').replace(/^group$/i,'Group play').replace(/\bRR\b/g,'round robin');
+  if(/^1st$/i.test(round))round='Championship game';else if(/^(\d+)(st|nd|rd|th)$/i.test(round))round=`${round} place game`;
+  return round||raw||detail||'Tournament stage';
+}
+function stageContextForTeam(name,games,upcoming){
+  const ordered=[...(games||[])].sort(gameSort),focus=upcoming||ordered[ordered.length-1]||null;
+  let route=routeGroupInfo(focus,name),track=routeTrackForGame(focus)||route?.track||null;
+  if(!route){for(let i=ordered.length-1;i>=0;i--){const candidate=routeGroupInfo(ordered[i],name);if(candidate&&(!track||candidate.track===track)){route=candidate;track=track||candidate.track;break}}}
+  if(track){
+    const division=trackLabel(track),group=route?.group||'',members=group?routeGroupRoster(track,group):[];
+    const groupPhase=/group/i.test(String(focus?.type||''))||/[_-]group/i.test(String(focus?.stageDetail||''));
+    return{stage:groupPhase&&group?`${division} · Group ${group}`:[division,roundOnlyLabel(focus)].filter(Boolean).join(' · '),groupTitle:group?`${division} Group ${group}`:division,members,kind:'subdivision',track,group};
+  }
+  const initial=initialGroupForTeam(name);
+  if(initial)return{stage:`Group ${initial.label}`,groupTitle:`Group ${initial.label}`,members:initial.members,kind:'initial',track:null,group:initial.label};
+  return{stage:statusText(games,upcoming),groupTitle:'',members:[],kind:'status',track:null,group:''};
+}
+function stageContextHtml(context,name){
+  if(!context?.members?.length)return'';
+  return`<div class="jo-stage-context"><div class="jo-stage-context-heading"><span>${context.kind==='initial'?'Opening group':'Subdivision group'}</span><strong>${esc(context.groupTitle)}</strong></div><div class="jo-stage-members">${context.members.map(member=>`<span class="jo-stage-member${member===name?' selected':''}">${teamLabelHtml(member)}</span>`).join('')}</div></div>`;
+}
+
 const initialParams=new URLSearchParams(window.location.search);
 let pendingTeam=initialParams.get('team')||'';
 let pendingDivision=initialParams.get('division')||'';
@@ -486,7 +542,15 @@ function populateTeamAndDay(){const config=currentConfig(),saved=config?localSto
 
 function renderPaths(upcoming){const win=destinationDescription(upcoming.winnerTo),loss=destinationDescription(upcoming.loserTo);$('pathSection').classList.toggle('hidden',!win&&!loss);paths.innerHTML=[['win','If they win',win],['loss','If they lose',loss]].filter(x=>x[2]).map(([cls,label,d])=>`<article class="path-card ${cls} glass"><h3>${label}</h3><div class="path-destination">${esc(d.title)}</div><div class="path-detail">${esc(d.detail)}</div></article>`).join('')}
 function statusText(games,upcoming){if(!games.length)return'No games found';if(!games.some(isFinal))return'Tournament not started';if(upcoming&&/5th/i.test(upcoming.type))return'Playing for 5th/6th';if(upcoming&&/3rd/i.test(upcoming.type))return'Playing for 3rd/4th';if(upcoming&&/1st|champ/i.test(upcoming.type))return'Playing for the championship';if(upcoming)return'Still alive';return'Tournament complete'}
-function renderTeam(){const name=team.value,config=currentConfig();if(!name){$('teamView').classList.add('hidden');setEmptyState();updateShareUrl();return}$('teamView').classList.remove('hidden');setEmptyState();updateShareUrl();if(config)localStorage.setItem(`joBoysSelectedTeam:${config.id}`,name);const games=gamesForTeam(name),completed=games.filter(isFinal),upcoming=games.find(g=>!isFinal(g));const wins=completed.filter(g=>resultFor(g,name)==='win').length,losses=completed.length-wins,seed=seedForTeam(name);summary.innerHTML=`<div class="eyebrow">Selected team</div><div class="jo-summary-title"><h2>${esc(name)}</h2>${seed?`<span class="jo-seed-summary">JO seed #${seed}</span>`:''}</div><div class="stats"><div class="stat"><small>Record</small>${completed.length?`${wins}-${losses}`:'—'}</div><div class="stat"><small>Games played</small>${completed.length}</div><div class="stat"><small>Status</small>${esc(statusText(games,upcoming))}</div></div>`;if(upcoming){const opp=otherTeam(upcoming,name),candidates=gameCandidates(upcoming,name);next.innerHTML=`<div class="next-label">Next game</div>${namedMatchupHtml(name,opp,candidates,'light')}<div>${esc(friendlyDate(upcoming.date))} · ${esc(upcoming.time)}</div><div class="journey-meta">${esc(upcoming.location)} · Game ${upcoming.game} · ${esc(friendlyStage(upcoming))}</div>`;renderPaths(upcoming)}else{next.innerHTML='<div class="next-label">Tournament status</div><div class="next-match">No upcoming game</div>';renderPaths({winnerTo:'',loserTo:''})}const grouped={};games.forEach(g=>(grouped[g.date]??=[]).push(g));journey.innerHTML=games.length?'<div class="journey">'+Object.entries(grouped).map(([date,list])=>`<section class="day"><h3>${esc(friendlyDate(date))}</h3>${list.map(g=>{const r=resultFor(g,name)||'upcoming';return`<article class="journey-card glass ${r}"><div class="journey-time">Game ${g.game}<br>${esc(g.time)}</div><div><div class="journey-score">${matchupHtml(g)}</div><div class="journey-meta">${esc(g.location)} · ${esc(friendlyStage(g))}</div></div><span class="pill ${r}">${r==='win'?'Win':r==='loss'?'Loss':'Upcoming'}</span></article>`}).join('')}</section>`).join('')+'</div>':'<div class="empty glass">No resolved games are currently available for this team.</div>';renderRelevant();renderPotential(name,upcoming)}
+function renderTeam(){
+  const name=team.value,config=currentConfig();if(!name){$('teamView').classList.add('hidden');setEmptyState();updateShareUrl();return}
+  $('teamView').classList.remove('hidden');setEmptyState();updateShareUrl();if(config)localStorage.setItem(`joBoysSelectedTeam:${config.id}`,name);
+  const games=gamesForTeam(name),completed=games.filter(isFinal),upcoming=games.find(g=>!isFinal(g));
+  const wins=completed.filter(g=>resultFor(g,name)==='win').length,losses=completed.length-wins,seed=seedForTeam(name),stage=stageContextForTeam(name,games,upcoming);
+  summary.innerHTML=`<div class="eyebrow">Selected team</div><div class="jo-summary-title"><h2>${esc(name)}</h2>${seed?`<span class="jo-seed-summary">JO seed #${seed}</span>`:''}</div><div class="stats"><div class="stat"><small>Record</small>${completed.length?`${wins}-${losses}`:'—'}</div><div class="stat"><small>Games played</small>${completed.length}</div><div class="stat stage-stat"><small>Stage</small>${esc(stage.stage)}</div></div>${stageContextHtml(stage,name)}`;
+  if(upcoming){const opp=otherTeam(upcoming,name),candidates=gameCandidates(upcoming,name);next.innerHTML=`<div class="next-label">Next game</div>${namedMatchupHtml(name,opp,candidates,'light')}<div>${esc(friendlyDate(upcoming.date))} · ${esc(upcoming.time)}</div><div class="journey-meta">${esc(upcoming.location)} · Game ${upcoming.game} · ${esc(friendlyStage(upcoming))}</div>`;renderPaths(upcoming)}else{next.innerHTML='<div class="next-label">Tournament status</div><div class="next-match">No upcoming game</div>';renderPaths({winnerTo:'',loserTo:''})}
+  const grouped={};games.forEach(g=>(grouped[g.date]??=[]).push(g));journey.innerHTML=games.length?'<div class="journey">'+Object.entries(grouped).map(([date,list])=>`<section class="day"><h3>${esc(friendlyDate(date))}</h3>${list.map(g=>{const r=resultFor(g,name)||'upcoming';return`<article class="journey-card glass ${r}"><div class="journey-time">Game ${g.game}<br>${esc(g.time)}</div><div><div class="journey-score">${matchupHtml(g)}</div><div class="journey-meta">${esc(g.location)} · ${esc(friendlyStage(g))}</div></div><span class="pill ${r}">${r==='win'?'Win':r==='loss'?'Loss':'Upcoming'}</span></article>`}).join('')}</section>`).join('')+'</div>':'<div class="empty glass">No resolved games are currently available for this team.</div>';renderRelevant();renderPotential(name,upcoming)
+}
 
 function relevantIds(name,upcoming){const ids=new Set(gamesForTeam(name).map(g=>g.game));if(!upcoming)return ids;for(const raw of [upcoming.whiteRaw,upcoming.darkRaw]){const ref=parseWL(raw);if(ref)ids.add(ref.game)}for(const dest of [upcoming.winnerTo,upcoming.loserTo]){const target=targetGame(dest);if(!target)continue;ids.add(target.game);for(const raw of [target.whiteRaw,target.darkRaw]){const ref=parseWL(raw);if(ref)ids.add(ref.game)}}return ids}
 function renderRelevant(){const name=team.value,q=String(search.value||'').trim().toLowerCase(),selectedDay=day.value,games=gamesForTeam(name),upcoming=games.find(g=>!isFinal(g)),ids=relevantIds(name,upcoming);let list=RESOLVED.games.filter(g=>g.whiteTeam||g.darkTeam);if(!q)list=list.filter(g=>ids.has(g.game));list=list.filter(g=>(!selectedDay||g.date===selectedDay)&&(!q||[display(g,'white'),display(g,'dark'),g.location,g.type,g.gmid,g.game].join(' ').toLowerCase().includes(q))).sort(gameSort);schedule.innerHTML=list.length?list.map(g=>`<article class="game glass ${isFinal(g)?'completed':''}"><div class="top"><span>Game ${g.game}${isFinal(g)?' · FINAL':''}</span><span>${esc(friendlyDate(g.date))} · ${esc(g.time)}</span></div><div class="match">${matchupHtml(g)}</div><div class="journey-meta">${esc(g.location)} · ${esc(friendlyStage(g))}</div></article>`).join(''):'<div class="empty glass">No games match the current filters.</div>'}

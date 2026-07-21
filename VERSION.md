@@ -1,8 +1,10 @@
-# CPI 7.51.2
+# CPI 7.51.3
 
-Remaining club logo completion.
+JO group and subdivision context.
 
-- Adds the remaining uploaded logos that were still missing from rankings and club pages.
-- Covers San Clemente, CDM, Temple City, Los Alamitos, San Diego Shores, ORWP, Carlsbad, Back Bay, Santa Cruz, 908, SHAQ, Laguna Beach, CHAWP, SBWPC, Viking, Legacy, Sand Canyon, Imperial, Aetos, Supreme, Long Beach Shore, Meridian, Norco, Club Daygo, CT Premier, and Del Mar.
-- Adds shared files where legacy or alternate CPI paths still exist, including Long Beach Viking and SBWPC.
-- Preserves current rankings, tournament relay behavior, and JO applications.
+- Replaces the generic “Still alive” team status with a live Stage value.
+- Shows the selected team’s opening group and every team in that group.
+- Updates to the next group when the official schedule assigns the team to a later pool.
+- Identifies Platinum, Gold, Silver, Bronze, Copper, and Nickel subdivisions from official bracket route codes.
+- Keeps subdivision context visible during placement and crossover rounds, so similarly numbered games in different brackets are clearly distinguished.
+- Applies to both Girls/Coed and Boys JO viewers without changing schedules, scores, or routing.

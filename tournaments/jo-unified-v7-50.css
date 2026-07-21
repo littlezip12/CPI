@@ -222,3 +222,15 @@ body.jo50-page .cpi-v8-search{border-color:#cddae8;background:#fff;color:var(--j
   .jo50-source-card .jo-source-meta{grid-template-columns:1fr}
   .jo50-metrics article{padding:17px 16px}
 }
+
+/* CPI 7.51.3 — live group and subdivision context */
+.stat.stage-stat{font-size:.96rem;line-height:1.28;overflow-wrap:anywhere}
+.jo-stage-context{margin-top:13px;padding:14px;border:1px solid #d8e7f3;border-radius:15px;background:linear-gradient(145deg,#f7fbff,#edf7ff)}
+.jo-stage-context-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.jo-stage-context-heading span{color:#74879a;font-size:.59rem;font-weight:900;text-transform:uppercase;letter-spacing:.09em}
+.jo-stage-context-heading strong{color:#0b6db8;font-size:.82rem}
+.jo-stage-members{display:flex;flex-wrap:wrap;gap:7px}
+.jo-stage-member{display:inline-flex;align-items:center;min-width:0;padding:7px 9px;border:1px solid #d8e3ed;border-radius:999px;background:#fff;color:#36536d;font-size:.74rem;font-weight:800}
+.jo-stage-member.selected{border-color:#53a5e5;background:#e7f5ff;color:#075f9f;box-shadow:0 0 0 2px rgba(83,165,229,.12)}
+.jo-stage-member .jo-seed-badge{height:22px;min-width:31px;padding:0 6px;font-size:.62rem}
+@media(max-width:620px){.jo-stage-context-heading{align-items:flex-start;flex-direction:column}.jo-stage-members{display:grid}.jo-stage-member{border-radius:12px}}
