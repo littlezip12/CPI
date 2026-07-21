@@ -1,10 +1,10 @@
-# CPI 7.51.4
+# CPI 7.51.5
 
-JO final subdivision and overall placement.
+JO selected-team and schedule logos.
 
-- Shows a completed team’s final subdivision finish, such as “5th in Gold.”
-- Converts that subdivision result into the team’s overall division finish, such as “23rd of 44 teams overall.”
-- Determines subdivision sizes from the official placement structure rather than using one fixed bracket size.
-- Supports exact placement games and completed final-placement round robins.
-- Keeps placement hidden while a team still has an upcoming game or while its finishing position is not yet determinable.
-- Applies to both Girls/Coed and Boys JO viewers without changing schedules, scores, or routing.
+- Displays the canonical club logo beside the selected team name.
+- Displays club logos beside both teams in next-game, journey, relevant-bracket, and full-schedule matchups.
+- Keeps age, division, and team dropdowns text-only.
+- Uses canonical team identity first, then a conservative club-name fallback for roster-color labels such as SHAQ Blue or Viking White.
+- Hides unavailable images safely without disrupting schedule rendering.
+- Preserves group context, subdivision labels, final placement, live relay, and ranking data.

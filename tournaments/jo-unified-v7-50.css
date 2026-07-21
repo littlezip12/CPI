@@ -239,3 +239,17 @@ body.jo50-page .cpi-v8-search{border-color:#cddae8;background:#fff;color:var(--j
 .jo-final-placement{display:grid;gap:7px;margin-top:12px;padding:18px;border:1px solid #bdd9ee;border-radius:17px;background:#fff;color:#123553;box-shadow:0 10px 24px rgba(35,87,126,.08)}
 .jo-final-placement strong{font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.02;letter-spacing:-.045em}
 .jo-final-placement span{font-size:.92rem;font-weight:800;opacity:.88}
+
+/* CPI 7.51.5 — club logos in selected-team and schedule matchups */
+.jo-team-logo{display:block;flex:0 0 auto;width:30px;height:30px;padding:2px;border:1px solid #d9e4ed;border-radius:8px;background:#fff;object-fit:contain;box-shadow:0 3px 9px rgba(28,69,103,.10)}
+.jo-team-logo.selected{width:66px;height:66px;padding:5px;border-radius:16px;box-shadow:0 8px 20px rgba(28,69,103,.13)}
+.jo-summary-title .jo-team-logo.selected{margin-right:2px}
+.jo-next-matchup .jo-team-logo{width:36px;height:36px;border-radius:10px}
+.journey-score .jo-team-logo,.game .match .jo-team-logo{width:30px;height:30px}
+@media(max-width:720px){
+  .jo-team-logo{width:28px;height:28px;border-radius:7px}
+  .jo-team-logo.selected{width:54px;height:54px;border-radius:14px}
+  .jo-next-matchup .jo-team-logo{width:32px;height:32px}
+  .jo-match-center{margin-left:70px}
+}
+
