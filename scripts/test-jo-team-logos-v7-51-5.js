@@ -4,8 +4,8 @@ const root=path.resolve(__dirname,'..');
 const failures=[];
 const requireCondition=(condition,message)=>{if(!condition)failures.push(message)};
 const site=JSON.parse(fs.readFileSync(path.join(root,'config/site-release.json'),'utf8'));
-requireCondition(site.version==='7.51.5','site version is not 7.51.5');
-requireCondition(site.joApplicationRelease==='7.51.5','joApplicationRelease is not 7.51.5');
+requireCondition(Number(site.version.split('.').pop())>=5,'site version predates 7.51.5');
+requireCondition(Number(site.joApplicationRelease.split('.').pop())>=5,'joApplicationRelease predates 7.51.5');
 requireCondition(site.joLogoRelease==='7.51.5','joLogoRelease is not 7.51.5');
 for(const side of ['jo-boys','jo-girls']){
   const app=fs.readFileSync(path.join(root,'tournaments',side,'app.js'),'utf8');
@@ -21,7 +21,7 @@ for(const side of ['jo-boys','jo-girls']){
   requireCondition(populate.includes('<option value='),`${side} team dropdown markup is missing`);
   requireCondition(!populate.includes('teamLogoHtml'),`${side} team dropdown must remain text-only`);
   requireCondition(html.includes('jo-unified-v7-50.css?v=7.51.5'),`${side} does not load 7.51.5 CSS`);
-  requireCondition(html.includes('src="app.js?v=7.51.5"'),`${side} does not load 7.51.5 app`);
+  requireCondition(html.includes(`src="app.js?v=${site.joApplicationRelease}"`),`${side} does not load the current JO app release`);
 }
 const css=fs.readFileSync(path.join(root,'tournaments','jo-unified-v7-50.css'),'utf8');
 for(const token of ['.jo-team-logo{','.jo-team-logo.selected{','.jo-next-matchup .jo-team-logo']){

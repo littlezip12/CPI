@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.51.5",
-  "name": "JO Team Logos in Selected Team and Game Schedules",
-  "date": "2026-07-21",
+  "version": "7.51.6",
+  "name": "Boys JO Mobile Live-Update Reliability",
+  "date": "2026-07-23",
   "rankingDataRelease": "7.30 v2",
-  "joApplicationRelease": "7.51.5",
+  "joApplicationRelease": "7.51.6",
   "deploymentMode": "migration",
-  "notes": "Adds canonical club logos beside the selected team name and beside team names in JO next-game, journey, relevant-bracket, and full-schedule matchups. Team dropdowns remain text-only, and unresolved or missing logos fail safely without breaking the schedule.",
+  "notes": "Prioritizes the active Boys JO relay, reduces Google request concurrency, prevents older relay or direct-Google datasets from replacing newer completed results, refreshes when mobile browsers restore a page from memory, and tightens Boys relay freshness to seven minutes.",
   "identityRelease": "7.40.0",
   "tournamentDataRelease": "7.49.1",
   "tournamentEvidenceRelease": "7.45.1",
@@ -21,8 +21,9 @@
   "logoLibraryRelease": "7.51.2",
   "logoDeliveryRelease": "7.51.2",
   "joJourneyRelease": "7.51.5",
-  "joConnectionRelease": "7.51.0",
-  "joRelayRelease": "7.51.0",
+  "joConnectionRelease": "7.51.6",
+  "joRelayRelease": "7.51.6",
   "joPlacementRelease": "7.51.4",
-  "joLogoRelease": "7.51.5"
+  "joLogoRelease": "7.51.5",
+  "joMobileReliabilityRelease": "7.51.6"
 }

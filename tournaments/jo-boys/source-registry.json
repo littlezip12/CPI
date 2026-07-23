@@ -255,10 +255,13 @@
     "baseUrl": "https://raw.githubusercontent.com/littlezip12/CPI/cpi-live-relay/data/tournaments/live-relay",
     "eventId": "2026-jo-weekend-2",
     "refreshTargetMinutes": 5,
-    "freshMaxAgeMinutes": 20,
+    "freshMaxAgeMinutes": 7,
     "requestTimeoutMs": 4500,
     "directGoogleFallback": true,
     "lastKnownGoodPreservation": true,
-    "isolatedBranch": true
+    "isolatedBranch": true,
+    "scheduledEventScope": "2026-jo-weekend-2",
+    "scheduledWorkers": 3,
+    "scheduledMaxCandidates": 2
   }
 }

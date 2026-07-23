@@ -194,7 +194,7 @@ def fetch_division(
     errors: list[str] = []
     urls = source_urls(division)[:max_candidates]
 
-    for url in urls:
+    for candidate_index, url in enumerate(urls):
         try:
             text = fetch_url_text(url, timeout)
             normalized, _qa = validate_candidate(
@@ -233,6 +233,8 @@ def fetch_division(
             return status
         except Exception as exc:  # noqa: BLE001 - preserve endpoint diagnostics
             errors.append(f"{url}: {exc}")
+            if candidate_index + 1 < len(urls):
+                time.sleep(1.25)
 
     # Preserve the newest banked relay. On the first run, seed it from CPI's
     # verified repository snapshot so the branch is immediately useful.

@@ -48,8 +48,8 @@ jobs:
             echo "No prior relay branch exists; verified repository snapshots will seed it."
           fi
 
-      - name: Refresh all Girls, Coed, and Boys JO divisions
-        run: python3 scripts/sync-jo-live-relay.py --workers 8 --timeout 4 --max-candidates 4
+      - name: Refresh active Boys JO divisions
+        run: python3 scripts/sync-jo-live-relay.py --event 2026-jo-weekend-2 --workers 3 --timeout 8 --max-candidates 2
 
       - name: Publish isolated relay branch
         shell: bash

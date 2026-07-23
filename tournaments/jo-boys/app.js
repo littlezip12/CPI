@@ -7,7 +7,7 @@ const EMBEDDED_FALLBACKS={};
 const RELAY_EVENT_ID='2026-jo-weekend-2';
 const RELAY_BASE_URL='https://raw.githubusercontent.com/littlezip12/CPI/cpi-live-relay/data/tournaments/live-relay';
 const RELAY_FETCH_TIMEOUT_MS=4500;
-const RELAY_FRESH_MAX_AGE_MS=20*60*1000;
+const RELAY_FRESH_MAX_AGE_MS=7*60*1000;
 const REFRESH_MS=120000;
 const ACTIVE_REFRESH_MIN_MS=30000;
 const LIVE_FETCH_TIMEOUT_MS=5500;
@@ -180,6 +180,23 @@ function validateGames(games){
   const teams=teamsFromGames(games);
   if(games.length<5||teams.length<2)throw new Error(`Only ${games.length} games and ${teams.length} teams returned`);
   return{games,teams};
+}
+function datasetProgress(games){
+  const list=Array.isArray(games)?games:[];
+  let finalGames=0,scoreCells=0;
+  for(const game of list){
+    if(String(game?.whiteScore||'').trim())scoreCells+=1;
+    if(String(game?.darkScore||'').trim())scoreCells+=1;
+    if(scoreOutcome(game)!==null)finalGames+=1;
+  }
+  return{finalGames,scoreCells,games:list.length};
+}
+function datasetIsOlder(candidateGames,currentGames){
+  const candidate=datasetProgress(candidateGames),current=datasetProgress(currentGames);
+  if(!current.games)return false;
+  if(candidate.finalGames!==current.finalGames)return candidate.finalGames<current.finalGames;
+  if(candidate.scoreCells!==current.scoreCells)return candidate.scoreCells<current.scoreCells;
+  return candidate.games<current.games;
 }
 async function fetchVerifiedSnapshot(config){
   const url=snapshotUrl(config),controller=typeof AbortController==='function'?new AbortController():null;
@@ -688,21 +705,28 @@ async function loadCurrentInternal(config,manual=false){
   try{
     const relayResult=await relayPromise;if(relayResult.error)throw relayResult.error;
     const loaded=relayResult.loaded;if(version!==loadVersion)return;
-    relayApplied=true;relayFresh=!loaded.isFallback;
-    if(relayFresh)markLiveSuccess(config);
-    DATA=datasetWithVerifiedRoutes(config,loaded.games,loaded.teams,embedded);
-    writeCache(config,DATA);
+    const relayData=datasetWithVerifiedRoutes(config,loaded.games,loaded.teams,embedded);
     const refreshedAt=loaded.updatedAt||loaded.checkedAt||new Date().toISOString();
-    if(relayFresh){
-      dot.classList.remove('fallback');
-      status.textContent=`Live through CPI relay · ${config.age} ${config.division} · ${DATA.games.length} games · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;
-      renderSourceMeta(config,'CPI live relay',DATA.games,refreshedAt,'CPI fetched and validated the official Google Sheet from its server-side relay, so this browser does not depend on a direct Google connection.','CPI live relay');
-    }else{
+    if(datasetIsOlder(relayData.games,DATA.games)){
       dot.classList.add('fallback');
-      status.textContent=`Using CPI relay bank · ${config.age} ${config.division} · Google refresh pending`;
-      renderSourceMeta(config,'Last-known-good CPI relay',DATA.games,refreshedAt,'The relay preserved its last validated schedule because its latest Google check was unsuccessful.','CPI live relay');
+      status.textContent=`Kept newer saved update · CPI relay is still catching up`;
+      renderSourceMeta(config,'Newer browser update preserved',DATA.games,cached?.cachedAt||config.snapshotUpdatedAt,'The CPI relay returned fewer completed results, so this browser kept the newer schedule instead of moving backward.');
+    }else{
+      relayApplied=true;relayFresh=!loaded.isFallback;
+      if(relayFresh)markLiveSuccess(config);
+      DATA=relayData;
+      writeCache(config,DATA);
+      if(relayFresh){
+        dot.classList.remove('fallback');
+        status.textContent=`Live through CPI relay · ${config.age} ${config.division} · ${DATA.games.length} games · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;
+        renderSourceMeta(config,'CPI live relay',DATA.games,refreshedAt,'CPI fetched and validated the official Google Sheet from its server-side relay, so this browser does not depend on a direct Google connection.','CPI live relay');
+      }else{
+        dot.classList.add('fallback');
+        status.textContent=`Using CPI relay bank · ${config.age} ${config.division} · Google refresh pending`;
+        renderSourceMeta(config,'Last-known-good CPI relay',DATA.games,refreshedAt,'The relay preserved its last validated schedule because its latest Google check was unsuccessful.','CPI live relay');
+      }
+      rebuild();team.disabled=false;
     }
-    rebuild();team.disabled=false;
   }catch(relayError){
     if(version!==loadVersion)return;
   }
@@ -710,9 +734,18 @@ async function loadCurrentInternal(config,manual=false){
   try{
     const liveResult=await livePromise;if(liveResult.error)throw liveResult.error;
     const loaded=liveResult.loaded;if(version!==loadVersion)return;
-    markLiveSuccess(config);
+    const liveData=datasetWithVerifiedRoutes(config,loaded.games,loaded.teams,embedded);
     const refreshedAt=loaded.updatedAt||new Date().toISOString();
-    DATA=datasetWithVerifiedRoutes(config,loaded.games,loaded.teams,embedded);
+    if(datasetIsOlder(liveData.games,DATA.games)){
+      if(!relayApplied){
+        dot.classList.add('fallback');
+        status.textContent=`Kept newer saved update · Google returned an older result set`;
+        renderSourceMeta(config,'Newer browser update preserved',DATA.games,cached?.cachedAt||config.snapshotUpdatedAt,'The direct Google response contained fewer completed results, so CPI kept the newer schedule already on this device.');
+      }
+      return;
+    }
+    markLiveSuccess(config);
+    DATA=liveData;
     writeCache(config,DATA);
     dot.classList.remove('fallback');
     status.textContent=`Live from Google Sheets · ${config.age} ${config.division} · ${DATA.games.length} games · ${loaded.method||'live'} · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;
@@ -767,5 +800,6 @@ selectDataset();
 refreshTimer=setInterval(()=>loadCurrent(false),REFRESH_MS);
 window.addEventListener('focus',refreshWhenActive);
 window.addEventListener('online',refreshWhenActive);
+window.addEventListener('pageshow',event=>{if(event.persisted){lastLoadAttemptAt=0;refreshWhenActive()}});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshWhenActive()});
 

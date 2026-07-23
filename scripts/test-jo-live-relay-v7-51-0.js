@@ -15,7 +15,7 @@ for(const [side,eventId] of Object.entries(expected)){
     `RELAY_EVENT_ID='${eventId}'`,
     "RELAY_BASE_URL='https://raw.githubusercontent.com/littlezip12/CPI/cpi-live-relay/data/tournaments/live-relay'",
     'RELAY_FETCH_TIMEOUT_MS=4500',
-    'RELAY_FRESH_MAX_AGE_MS=20*60*1000',
+    `RELAY_FRESH_MAX_AGE_MS=${side==='jo-boys'?'7':'20'}*60*1000`,
     'function fetchRelayDataset(config)',
     "result.method='CPI live relay'",
     'result.isFallback=!relayStatusFresh(status)',
@@ -33,7 +33,8 @@ for(const [side,eventId] of Object.entries(expected)){
   const policy=registry.liveRelayPolicy||{};
   requireCondition(policy.enabled===true&&policy.eventId===eventId,`${side} relay policy is not enabled for ${eventId}`);
   requireCondition(policy.branch==='cpi-live-relay'&&policy.isolatedBranch===true,`${side} relay is not isolated from main`);
-  requireCondition(policy.refreshTargetMinutes===5&&policy.freshMaxAgeMinutes===20,`${side} relay cadence/freshness policy is incorrect`);
+  const expectedFreshMinutes=side==='jo-boys'?7:20;
+  requireCondition(policy.refreshTargetMinutes===5&&policy.freshMaxAgeMinutes===expectedFreshMinutes,`${side} relay cadence/freshness policy is incorrect`);
   requireCondition(policy.directGoogleFallback===true&&policy.lastKnownGoodPreservation===true,`${side} relay lacks required fallbacks`);
 }
 
@@ -57,7 +58,11 @@ for(const token of [
   'scripts/sync-jo-live-relay.py',
   'git fetch origin cpi-live-relay',
   'git switch --orphan cpi-live-relay-publish',
-  'git push --force origin HEAD:cpi-live-relay'
+  'git push --force origin HEAD:cpi-live-relay',
+  '--event 2026-jo-weekend-2',
+  '--workers 3',
+  '--timeout 8',
+  '--max-candidates 2'
 ])requireCondition(workflow.includes(token),`Relay workflow is missing: ${token}`);
 
 const relayScript=fs.readFileSync(path.join(ROOT,'scripts','sync-jo-live-relay.py'),'utf8');
@@ -72,7 +77,7 @@ for(const token of [
 ])requireCondition(relayScript.includes(token),`Relay builder is missing: ${token}`);
 
 console.log('JO LIVE RELAY 7.51.0 TESTS PASSED');
-console.log(' - All 23 JO divisions are configured for the isolated CPI relay branch');
+console.log(' - Girls and Boys remain configured for the isolated CPI relay branch; scheduled refreshes prioritize the active Boys event');
 console.log(' - Browsers apply the relay before direct Google and preserve a fresh relay if Google fails');
 console.log(' - Relay checks are bounded, freshness is explicit, and stale banks remain available');
 console.log(' - GitHub Actions refreshes the relay every five minutes without committing generated relay data to main');
