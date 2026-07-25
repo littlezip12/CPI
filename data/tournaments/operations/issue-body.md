@@ -1,6 +1,6 @@
 # CPI tournament operations
 
-Generated: **2026-07-24T11:21:10Z**
+Generated: **2026-07-25T10:54:19Z**
 
 - Live divisions: **23**
 - Ready: **0**
