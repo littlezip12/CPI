@@ -48,6 +48,10 @@
     });
   }
 
+  function brandLogo() {
+    return `${makeHref("assets/branding/wpi-logo.png")}`;
+  }
+
   function headerHtml() {
     const nav = navItems.map(item =>
       `<a class="cpi-shell-nav-link ${isActive(item) ? "is-active" : ""}" href="${makeHref(item.href)}">${item.label}</a>`
@@ -59,15 +63,15 @@
 
     return `<header class="cpi-shell-header" data-cpi-shell="header">
       <div class="cpi-shell-nav">
-        <a class="cpi-shell-brand" href="${makeHref("index.html")}">
-          <span class="cpi-shell-mark">CPI</span>
+        <a class="cpi-shell-brand" href="${makeHref("index.html")}" aria-label="Water Polo Index Home">
+          <span class="cpi-shell-logo-frame"><img class="cpi-shell-logo" src="${brandLogo()}" alt="Water Polo Index"></span>
           <span class="cpi-shell-brand-text">
-            <strong>California Polo Index</strong>
-            <em>Ranked. Respected. Earned.</em>
+            <strong>Water Polo Index</strong>
+            <em>Rankings. Results. Club intelligence.</em>
           </span>
         </a>
         <nav class="cpi-shell-links">${nav}</nav>
-        <button class="cpi-shell-search" type="button" aria-label="Search CPI"><span>Search CPI</span></button>
+        <button class="cpi-shell-search" type="button" aria-label="Search WPI"><span>Search WPI</span></button>
       </div>
       <div class="cpi-shell-quick">${quick}</div>
     </header>`;
@@ -76,9 +80,12 @@
   function footerHtml() {
     const year = new Date().getFullYear();
     return `<footer class="cpi-shell-footer" data-cpi-shell="footer">
-      <div>
-        <strong>California Polo Index</strong>
-        <p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p>
+      <div class="cpi-shell-footer-brand">
+        <span class="cpi-shell-logo-frame cpi-shell-logo-frame--footer"><img class="cpi-shell-logo" src="${brandLogo()}" alt="Water Polo Index"></span>
+        <div>
+          <strong>Water Polo Index</strong>
+          <p>Independent and unofficial rankings, results, and club intelligence for youth water polo.</p>
+        </div>
       </div>
       <nav>
         <a href="${makeHref("rankings.html")}">Rankings</a>
@@ -86,7 +93,7 @@
         <a href="${makeHref("tournaments.html")}">Tournaments</a>
         <a href="${makeHref("methodology.html")}">Methodology</a>
       </nav>
-      <small>© ${year} CPI</small>
+      <small>© ${year} WPI</small>
     </footer>`;
   }
 
