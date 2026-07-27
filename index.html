@@ -3,238 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Water Polo Index</title>
+  <meta name="description" content="Water Polo Index provides youth water polo rankings, tournament results, team profiles, and club intelligence.">
+  <title>Water Polo Index | Rankings, Results & Club Intelligence</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.30.2">
-<link rel="stylesheet" href="css/homepage-v8.css?v=7.30.2">
-  <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.30.2">
-  <link rel="stylesheet" href="css/page-simplification-v7-24.css?v=7.30.2">
-  <link rel="stylesheet" href="css/link-actions-v7-35.css?v=7.35">
-  <link rel="stylesheet" href="css/jo-integration-v7-37.css?v=7.38.0">  <link rel="stylesheet" href="css/command-palette.css?v=7.52.3">
-
+  <link rel="stylesheet" href="css/command-palette.css?v=7.52.3">
   <link rel="stylesheet" href="css/site-shell.css?v=7.52.3">
+  <link rel="stylesheet" href="css/homepage-wpi-v7-52-4.css?v=7.52.4">
 </head>
-<body class="cpi-v8-home cpi-v724-home">
-  <header class="cpi-v8-header">
-    <div class="cpi-v8-header-inner">
-      <a class="cpi-v8-brand" href="index.html" aria-label="Water Polo Index Home">
-        <span class="cpi-v8-logo-frame"><img class="cpi-v8-logo" src="assets/branding/wpi-logo.png" alt="Water Polo Index"></span>
-        <span class="cpi-v8-brand-text">
-          <strong>Water Polo Index</strong>
-          <em>Rankings. Results. Club intelligence.</em>
-        </span>
-      </a>
-      <nav class="cpi-v8-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="rankings.html">Rankings</a>
-        <a href="clubs.html">Clubs</a>
-        <a href="tournaments.html">Tournaments</a>
-        <a href="stories.html">Stories</a>
-        <a href="methodology.html">Methodology</a>
-      </nav>
-      <button class="cpi-shell-search cpi-v8-search" type="button">Search WPI</button>
-    </div>
-  </header>
-
-  <main id="cpi-home-root" class="cpi-v8-main">
-    <section class="cpi-v8-hero" data-cpi-hero>
-      <article class="cpi-v8-hero-slide is-active" data-slide="0" style="--hero-image:linear-gradient(135deg,#071426 0%,#0a315a 52%,#126dff 100%)">
-        <div class="cpi-v8-hero-bg"></div>
-        <div class="cpi-v8-hero-overlay"></div>
-        <div class="cpi-v8-hero-inner">
-          <span class="cpi-v8-eyebrow">Boys & Girls Post-JO Rankings</span>
-          <h1>The 2026 post-JO rankings are live.</h1>
-          <p>Explore the approved Boys top 100s and every all-girls JO entrant from 12U through 18U. The order reflects Junior Olympics division, subdivision, placement, head-to-head results, and the full season.</p>
-          <div class="cpi-v8-actions">
-            <a class="primary" href="rankings.html">View Rankings →</a>
-            <a class="secondary" href="methodology.html">How WPI Works</a>
-          </div>
+<body class="wpi-home">
+  <main class="wpi-home-main">
+    <section class="wpi-hero" aria-labelledby="wpiHeroTitle">
+      <div class="wpi-hero-copy">
+        <p class="wpi-kicker">Water Polo Index</p>
+        <h1 id="wpiHeroTitle">Youth water polo <span>rankings</span>, results, and <em>club intelligence.</em></h1>
+        <p class="wpi-hero-summary">Explore post-Junior Olympics rankings, completed tournament results, team profiles, and the growing club landscape across the country.</p>
+        <div class="wpi-hero-actions">
+          <a class="wpi-button primary" href="rankings.html">View rankings</a>
+          <a class="wpi-button secondary" href="tournaments.html#jo-results">Search tournament results</a>
         </div>
-      </article>
-
-      <article class="cpi-v8-hero-slide" data-slide="1" style="--hero-image:linear-gradient(135deg,#071426 0%,#092b50 58%,#f6b700 160%)">
-        <div class="cpi-v8-hero-bg"></div>
-        <div class="cpi-v8-hero-overlay"></div>
-        <div class="cpi-v8-hero-inner">
-          <span class="cpi-v8-eyebrow">Club Intelligence</span>
-          <h1>Club profiles now focus on footprint, not noise.</h1>
-          <p>Club pages now emphasize ranked teams, best rank, average CPI, and age-group coverage. Team-specific movement and best-win context stays on team pages.</p>
-          <div class="cpi-v8-actions">
-            <a class="primary" href="clubs.html">Explore Clubs →</a>
-            <a class="secondary" href="rankings.html?group=14u-girls">View 14U Girls</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="cpi-v8-hero-slide" data-slide="2" style="--hero-image:linear-gradient(135deg,#071426 0%,#163a5f 55%,#5bb8ef 140%)">
-        <div class="cpi-v8-hero-bg"></div>
-        <div class="cpi-v8-hero-overlay"></div>
-        <div class="cpi-v8-hero-inner">
-          <span class="cpi-v8-eyebrow">WPI Notes</span>
-          <h1>JO finish leads, but the full season still matters.</h1>
-          <p>Division and subdivision create the ranking bands. Head-to-head results and full-season evidence resolve the closest teams without erasing the path each team earned at JOs.</p>
-          <div class="cpi-v8-actions">
-            <a class="primary" href="methodology.html">Read Methodology →</a>
-            <a class="secondary" href="tournaments.html">Tournament Coverage</a>
-          </div>
-        </div>
-      </article>
-
-      <button class="cpi-v8-hero-arrow cpi-v8-hero-prev" type="button" aria-label="Previous story">‹</button>
-      <button class="cpi-v8-hero-arrow cpi-v8-hero-next" type="button" aria-label="Next story">›</button>
-      <div class="cpi-v8-hero-dots" aria-label="Hero slides">
-        <button class="is-active" type="button" data-go-slide="0" aria-label="Go to slide 1"></button>
-        <button type="button" data-go-slide="1" aria-label="Go to slide 2"></button>
-        <button type="button" data-go-slide="2" aria-label="Go to slide 3"></button>
       </div>
-    </section>
-
-    <section class="cpi-v8-section" aria-labelledby="boysJoTitle">
-      <article class="cpi-jo-tool-card">
-        <div class="cpi-jo-tool-copy">
-          <span class="cpi-v8-eyebrow">New · Junior Olympics Weekend 2</span>
-          <h3 id="boysJoTitle">Weekend 2 results and tournament pathways are complete.</h3>
-          <p>Review completed Boys schedules, team journeys, group assignments, subdivision paths, and final placements from 12U Championship through 18U Invitational.</p>
-          <div class="cpi-v8-actions"><a class="primary" href="tournaments/jo-boys/">Open Weekend 2 Schedule →</a><a class="secondary" href="tournaments/jo-girls/">Girls & Coed Weekend 1</a></div>
-        </div>
-        <div class="cpi-jo-tool-meta"><div><small>Coverage</small><strong>10U + Boys 12U–18U</strong></div><div><small>Divisions</small><strong>Championship, Classic & Invitational</strong></div><div><small>Source</small><strong>12 official schedule tabs</strong></div></div>
-      </article>
-    </section>
-
-    <section class="cpi-v8-section cpi-v8-stories">
-      <div class="cpi-v8-section-title">
-        <h2>Top Stories</h2>
-        <a href="stories.html">All Stories →</a>
-      </div>
-      <div class="cpi-v8-story-grid">
-        <a class="cpi-v8-story-card" href="rankings.html?group=12u-boys">
-          <div class="cpi-v8-story-logo"><img src="assets/logos/cpi-logo-fallback.svg" alt="CPI mark" loading="lazy"></div>
-          <div>
-            <span>Post-JO Rankings</span>
-            <h3>Four Boys age groups. Four approved top-100 boards.</h3>
-            <p>12U, 14U, 16U, and 18U Boys rankings now reflect the completed 2026 Junior Olympics and full-season evidence.</p>
-            <small>View the rankings →</small>
-          </div>
-        </a>
-        <a class="cpi-v8-story-card" href="stories/quiksilver-alias-review.html">
-          <div class="cpi-v8-story-logo"><img src="assets/logos/canonical/mission.webp" alt="Mission WPC logo" loading="lazy"></div>
-          <div>
-            <span>Ranking Review</span>
-            <h3>Alias cleanup comes before rank movement.</h3>
-            <p>Quiksilver names such as LB Viking, SD Shores, CIU, and La Jolla need clean CPI identity mapping before ranks move.</p>
-            <small>Read the review →</small>
-          </div>
-        </a>
-        <a class="cpi-v8-story-card" href="tournaments.html">
-          <div class="cpi-v8-story-logo"><img src="assets/logos/canonical/norcal.webp" alt="NorCal logo" loading="lazy"></div>
-          <div>
-            <span>Tournament Coverage</span>
-            <h3>Quiksilver is now part of the CPI event layer.</h3>
-            <p>The tournament is listed as an intake event while ranking movement waits for source and alias validation.</p>
-            <small>View tournaments →</small>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="cpi-v8-section cpi-v8-glance">
-      <div class="cpi-v8-section-title"><h2>At a Glance</h2></div>
-      <div class="cpi-v8-glance-grid">
-        <article class="cpi-v8-glance-card">
-          <div class="head"><span>🏆</span><h3>Find Rankings</h3><a href="rankings.html?group=12u-boys">Choose →</a></div>
-          <div class="body rankings-finder-body">
-            <p>Select an age/gender group and jump directly into one ranking. CPI now shows one group at a time.</p>
-            <form class="cpi-v8-rankings-picker" data-ranking-picker action="rankings.html" method="get">
-              <label class="sr-only" for="homeRankingGroup">Choose ranking group</label>
-              <select id="homeRankingGroup" name="group" data-ranking-select aria-label="Choose ranking group"></select>
-              <button type="submit">View Rankings</button>
-            </form>
-            <a class="cpi-v8-row" href="rankings.html?group=12u-boys"><b>12U</b><strong>12U Boys</strong><em>Post-JO live</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=12u-girls"><b>12U</b><strong>12U Girls</strong><em>Post-JO live</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=14u-boys"><b>14U</b><strong>14U Boys</strong><em>Post-JO live</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=14u-girls"><b>14U</b><strong>14U Girls</strong><em>Post-JO live</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=16u-boys"><b>16U</b><strong>16U Boys</strong><em>Post-JO live</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=16u-girls"><b>16U</b><strong>16U Girls</strong><em>Post-JO live</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=18u-boys"><b>18U</b><strong>18U Boys</strong><em>Post-JO live</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=18u-girls"><b>18U</b><strong>18U Girls</strong><em>Post-JO live</em></a>
-          </div>
-          <a class="cta" href="rankings.html?group=12u-boys">Open Rankings</a>
-        </article>
-
-        <article class="cpi-v8-glance-card">
-          <div class="head"><span>📈</span><h3>Biggest Movers</h3><a href="rankings.html">View All →</a></div>
-          <div class="body">
-            <a class="cpi-v8-row" href="rankings.html?group=14u-boys"><b class="move">▲ 17</b><strong>Skip A</strong><em>14U Boys</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=16u-boys"><b class="move">▲ 11</b><strong>Rancho Tsunami A</strong><em>16U Boys</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=14u-girls"><b class="move">▲ 10</b><strong>Devils Gate A</strong><em>14U Girls</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=12u-boys"><b class="move">▲ 8</b><strong>Vanguard A</strong><em>12U Boys</em></a>
-            <a class="cpi-v8-row" href="rankings.html?group=16u-girls"><b class="move">▲ 7</b><strong>South Coast A</strong><em>16U Girls</em></a>
-          </div>
-          <a class="cta" href="rankings.html?group=12u-boys">Open Ranking Groups</a>
-        </article>
-
-        <article class="cpi-v8-glance-card">
-          <div class="head"><span>🔥</span><h3>Trending Clubs</h3><a href="clubs.html">View All →</a></div>
-          <div class="body">
-            <a class="cpi-v8-row" href="club.html?club=skip"><b>🔥</b><strong>Skip</strong><em>▲ 17</em></a>
-            <a class="cpi-v8-row" href="club.html?club=rancho-tsunami"><b>🔥</b><strong>Rancho Tsunami</strong><em>▲ 11</em></a>
-            <a class="cpi-v8-row" href="club.html?club=devils-gate"><b>🔥</b><strong>Devils Gate</strong><em>▲ 10</em></a>
-            <a class="cpi-v8-row" href="club.html?club=norcal"><b>🔥</b><strong>NorCal Aquatics</strong><em>▲ 10</em></a>
-            <a class="cpi-v8-row" href="club.html?club=vegas-renegades"><b>🔥</b><strong>Vegas Renegades</strong><em>▲ 9</em></a>
-          </div>
-          <a class="cta" href="clubs.html">Explore Clubs</a>
-        </article>
-
-        <article class="cpi-v8-glance-card">
-          <div class="head"><span>✓</span><h3>Data Status</h3><a href="methodology.html">Details →</a></div>
-          <div class="body">
-            <ul class="cpi-status-list">
-              <li>Boys rankings are post-JO and include 100 teams in each age group.</li>
-              <li>Girls rankings are post-JO and now include every all-girls JO entrant in 12U, 14U, 16U, and 18U.</li>
-              <li>Team aliases, club regions, and official logos are still being audited.</li>
-              <li>Upcoming tournament listings will return once they are backed by real source data.</li>
-            </ul>
-          </div>
-          <a class="cta" href="methodology.html">How WPI Works</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="cpi-v8-newsletter">
-      <div class="icon">✉</div>
-      <div>
-        <h2>Stay in the Game</h2>
-        <p>Get CPI rankings, recaps, and stories delivered 1–2 times per month.</p>
-      </div>
-      <form class="cpi-subscribe-form" data-cpi-subscribe-form action="subscribe.html" method="get">
-        <input type="email" name="email" placeholder="Enter your email" aria-label="Email address" autocomplete="email">
-        <button type="submit">Subscribe</button>
+      <figure class="wpi-hero-visual">
+        <img src="assets/photos/editorial/polo-attacker-poolwide.jpg" alt="Youth water polo player preparing to pass the ball" loading="eager">
+        <figcaption>Rankings and results connected to the teams that earned them.</figcaption>
+      </figure>
+      <form class="wpi-search" id="wpiHomeSearch" role="search" autocomplete="off">
+        <label class="sr-only" for="wpiSearchInput">Search teams or clubs</label>
+        <span class="wpi-search-icon" aria-hidden="true">⌕</span>
+        <input id="wpiSearchInput" type="search" placeholder="Search for a team or club…" spellcheck="false">
+        <label class="sr-only" for="wpiSearchType">Search type</label>
+        <select id="wpiSearchType">
+          <option value="all">All</option>
+          <option value="teams">Teams</option>
+          <option value="clubs">Clubs</option>
+        </select>
+        <button type="submit">Search</button>
+        <div class="wpi-search-results" id="wpiSearchResults" hidden></div>
       </form>
+    </section>
+
+    <section class="wpi-stats" aria-label="Water Polo Index platform summary">
+      <a href="rankings.html"><span>Ranked teams</span><strong id="wpiRankedTeams">—</strong><em>Explore all eight groups</em></a>
+      <a href="clubs.html"><span>Clubs</span><strong id="wpiClubCount">—</strong><em>Browse club profiles</em></a>
+      <a href="rankings.html"><span>Ranking groups</span><strong id="wpiGroupCount">—</strong><em>12U through 18U</em></a>
+      <a href="tournaments.html#jo-results"><span>JO finishes</span><strong id="wpiJoFinishCount">—</strong><em>Search final placements</em></a>
+    </section>
+
+    <section class="wpi-section" aria-labelledby="rankingsTitle">
+      <div class="wpi-section-heading">
+        <div><p class="wpi-kicker">Current order</p><h2 id="rankingsTitle">Explore rankings</h2></div>
+        <div class="wpi-toggle" id="wpiGenderToggle" aria-label="Select rankings gender">
+          <button class="is-active" type="button" data-gender="Boys">Boys</button>
+          <button type="button" data-gender="Girls">Girls</button>
+        </div>
+      </div>
+      <div class="wpi-ranking-grid" id="wpiRankingGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="wpi-section wpi-results-section" aria-labelledby="resultsTitle">
+      <div class="wpi-section-heading">
+        <div><p class="wpi-kicker">Completed tournament</p><h2 id="resultsTitle">2026 Junior Olympics results</h2><p>Choose an age group to preview division and subdivision finishes. This module can rotate to the next completed tournament as new results are added.</p></div>
+        <div class="wpi-heading-links"><a class="wpi-text-link" href="tournaments/jo-boys/">Boys schedules</a><a class="wpi-text-link" href="tournaments/jo-girls/">Girls schedules</a><a class="wpi-text-link" href="tournaments.html#jo-results">View all JO results →</a></div>
+      </div>
+      <div class="wpi-result-controls">
+        <div class="wpi-toggle compact" id="wpiResultCategory" aria-label="Select tournament category">
+          <button class="is-active" type="button" data-category="Boys">Boys</button>
+          <button type="button" data-category="Girls">Girls</button>
+          <button type="button" data-category="Coed">Coed</button>
+        </div>
+        <div class="wpi-toggle compact" id="wpiResultAge" aria-label="Select tournament age group"></div>
+      </div>
+      <div class="wpi-results-grid" id="wpiResultsGrid"><div class="wpi-loading">Loading completed results…</div></div>
+    </section>
+
+    <section class="wpi-section" aria-labelledby="clubsTitle">
+      <div class="wpi-section-heading">
+        <div><p class="wpi-kicker">Program directory</p><h2 id="clubsTitle">Explore clubs</h2><p>Open a club profile or choose a region to filter the full club directory.</p></div>
+        <a class="wpi-text-link" href="clubs.html">View all clubs →</a>
+      </div>
+      <div class="wpi-club-layout">
+        <div class="wpi-featured-clubs" id="wpiFeaturedClubs" aria-live="polite"></div>
+        <article class="wpi-region-map" aria-labelledby="regionMapTitle">
+          <div class="wpi-region-map-heading"><div><p class="wpi-kicker">Regional directory</p><h3 id="regionMapTitle">Find clubs by region</h3></div><a href="clubs.html">All regions</a></div>
+          <div class="wpi-california-map" role="img" aria-label="Stylized California club region map with clickable region links">
+            <svg viewBox="0 0 430 570" aria-hidden="true">
+              <path class="wpi-state-shape" d="M115 30 L264 42 L286 102 L322 154 L306 226 L344 282 L329 350 L363 420 L314 516 L251 548 L218 493 L190 452 L176 386 L139 335 L135 265 L104 206 L92 137 Z"></path>
+              <path class="wpi-state-line" d="M109 160 L300 164 M126 245 L320 248 M150 334 L336 338 M179 428 L340 430"></path>
+            </svg>
+            <a class="region-point sacramento" href="clubs.html?region=Sacramento#club-directory"><span>Sacramento</span></a>
+            <a class="region-point east-bay" href="clubs.html?region=East%20Bay#club-directory"><span>East Bay</span></a>
+            <a class="region-point peninsula" href="clubs.html?region=Peninsula%20%2F%20San%20Francisco#club-directory"><span>Peninsula / SF</span></a>
+            <a class="region-point central-valley" href="clubs.html?region=Central%20Valley#club-directory"><span>Central Valley</span></a>
+            <a class="region-point central-coast" href="clubs.html?region=Central%20Coast#club-directory"><span>Central Coast</span></a>
+            <a class="region-point los-angeles" href="clubs.html?region=Los%20Angeles#club-directory"><span>Los Angeles</span></a>
+            <a class="region-point orange-county" href="clubs.html?region=Orange%20County#club-directory"><span>Orange County</span></a>
+            <a class="region-point inland-empire" href="clubs.html?region=Inland%20Empire#club-directory"><span>Inland Empire</span></a>
+            <a class="region-point san-diego" href="clubs.html?region=San%20Diego#club-directory"><span>San Diego</span></a>
+          </div>
+          <a class="wpi-out-of-state" href="clubs.html?region=Out%20of%20State#club-directory">Explore out-of-state clubs →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="wpi-section wpi-bottom-grid">
+      <article class="wpi-method-card">
+        <div class="wpi-section-heading compact-heading"><div><p class="wpi-kicker">Transparent methodology</p><h2>How rankings work</h2></div><a class="wpi-text-link" href="methodology.html">Full methodology →</a></div>
+        <div class="wpi-method-grid">
+          <a href="tournaments.html"><span>01</span><strong>Tournament results</strong><p>Division, subdivision, placement, and verified head-to-head evidence establish the competitive bands.</p></a>
+          <a href="rankings.html"><span>02</span><strong>Full-season context</strong><p>Strength of schedule, common opponents, and prior events resolve the closest teams.</p></a>
+          <a href="methodology.html"><span>03</span><strong>Manual identity review</strong><p>Club aliases and A/B/C/D team depth are reviewed before changes are published.</p></a>
+        </div>
+      </article>
+      <article class="wpi-updates-card">
+        <div class="wpi-section-heading compact-heading"><div><p class="wpi-kicker">Product and data</p><h2>Latest updates</h2></div><a class="wpi-text-link" href="stories.html">All updates →</a></div>
+        <div class="wpi-update-list" id="wpiUpdateList"></div>
+      </article>
     </section>
   </main>
 
-  <footer class="cpi-v8-footer">
-    <div class="inner">
-      <div class="brand">
-        <a href="index.html"><span class="cpi-v8-logo-frame cpi-v8-logo-frame--footer"><img class="cpi-v8-logo" src="assets/branding/wpi-logo.png" alt="Water Polo Index"></span><div><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></div></a>
-        <p>Independent and unofficial rankings, results, and club intelligence for youth water polo.</p>
-      </div>
-      <nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="stories.html">Stories</a><a href="methodology.html">Methodology</a><a href="subscribe.html">Subscribe</a></nav>
-      <nav><h3>Age Groups</h3><a href="12u-boys.html">12U Boys</a><a href="12u-girls.html">12U Girls</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a><a href="18u-boys.html">18U Boys</a><a href="18u-girls.html">18U Girls</a></nav>
-      <div><h3>About WPI</h3><p>Water Polo Index is building a broader youth water polo data platform for rankings, results, and club intelligence.</p><a href="methodology.html">Learn More →</a></div>
-    </div>
-    <div class="bottom">© 2026 Water Polo Index. All rights reserved.</div>
-  </footer>
-
   <script src="data.js?v=7.52.2"></script>
-  <script src="js/app.js?v=7.30.2"></script>
-<script src="js/homepage-v8.js?v=7.30.2"></script>
-  <script src="js/page-polish-v7-22.js?v=7.30.2"></script>
-  <script src="js/logo-display-v7-23-6.js?v=7.30.2"></script>
-  <script src="js/public-actions-v7-35.js?v=7.35"></script>  <script defer src="js/command-palette.js?v=7.52.3"></script>
-
+  <script src="js/homepage-wpi-v7-52-4.js?v=7.52.4"></script>
+  <script defer src="js/command-palette.js?v=7.52.3"></script>
   <script defer src="js/site-shell.js?v=7.52.3"></script>
 </body>
 </html>

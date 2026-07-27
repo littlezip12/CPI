@@ -1,11 +1,11 @@
-# CPI 7.52.3
+# CPI 7.52.4
 
-Water Polo Index universal site shell.
+Water Polo Index homepage redesign.
 
-- Preserves all 724 published post-JO rankings across eight groups.
-- Adds the approved WPI logo mark and full lockup as shared brand assets.
-- Installs one consistent Water Polo Index header and footer across all 263 HTML pages.
-- Uses script-relative URL resolution so the shell works on root pages, club pages, stories, QA pages, and nested tournament applications.
-- Hides legacy page-level headers and footers without changing page content or application controls.
-- Updates page titles and formal California Polo Index brand references to Water Polo Index.
-- Updates the club-page generator so future regenerated club profiles retain the WPI shell.
+- Replaces the legacy rotating homepage with a utility-first WPI experience.
+- Adds a water polo photo hero, team/club search, dynamic platform totals, and linked ranking cards.
+- Adds a Junior Olympics results preview driven by the completed 2026 results dataset.
+- Adds linked featured club profiles and a clickable regional club map.
+- Makes regional homepage links pre-filter the club directory.
+- Adds concise methodology and latest-update sections.
+- Preserves all 724 published rankings, tournament data, and the universal WPI shell.

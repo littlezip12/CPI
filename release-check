@@ -7,6 +7,7 @@ echo "CPI Release Check"
 echo "================="
 python3 scripts/release-audit.py --write-report qa/release-audit-latest.json
 python3 scripts/test-wpi-universal-shell-v7-52-3.py
+python3 scripts/test-wpi-homepage-v7-52-4.py
 python3 scripts/validate-jo-release.py
 python3 scripts/validate-jo-boys-source-stability.py
 node scripts/test-jo-boys-browser-parser.js

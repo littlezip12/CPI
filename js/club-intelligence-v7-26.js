@@ -318,8 +318,16 @@
     if (regionFilter && !regionFilter.dataset.loaded) {
       regionFilter.innerHTML = `<option value="all">All regions</option>${regions.map((region) => `<option value="${escapeHtml(region)}">${escapeHtml(region)}</option>`).join("")}`;
       regionFilter.dataset.loaded = "true";
+      const requestedRegion = params.get("region");
+      if (requestedRegion && regions.includes(requestedRegion)) regionFilter.value = requestedRegion;
+    }
+    const searchInput = $("#clubSearch");
+    if (searchInput && !searchInput.dataset.queryLoaded) {
+      searchInput.value = params.get("search") || "";
+      searchInput.dataset.queryLoaded = "true";
     }
     renderRegionChips(stats);
+    syncRegionChips(regionFilter?.value || "all");
 
     const top = sortedDirectory.slice(0, 6);
     const totalRankedTeams = sortedDirectory.reduce((sum, club) => sum + club.rankedTeamCount, 0);
@@ -355,6 +363,10 @@
       }
     });
     applyClubFilters();
+    if ((params.get("region") || params.get("search")) && !document.documentElement.dataset.clubQueryScrolled) {
+      document.documentElement.dataset.clubQueryScrolled = "true";
+      window.setTimeout(() => document.querySelector("#club-directory")?.scrollIntoView({ behavior: "smooth", block: "start" }), 120);
+    }
   }
 
   function groupedTeams(teams) {
