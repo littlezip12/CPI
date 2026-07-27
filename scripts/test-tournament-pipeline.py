@@ -69,7 +69,7 @@ def main() -> int:
     require(prefixed["kind"] == "team" and prefixed["displayName"] == "Lamorinda A", "Pool prefix must be stripped before identity resolution")
     require(prefixed["seed"] == 18 and prefixed["sourceReference"] == "A1(18)", "Pool seed/reference must remain structured metadata")
     resolved_loser = parse_participant("L1(12)-Santa Barbara WPC", {"season": "2026", "ageGroup": "14U", "gender": "Boys"}, resolver)
-    require(resolved_loser["kind"] == "team" and resolved_loser["displayName"] == "Santa Barbara WPC", "Resolved loser reference must retain only the team name")
+    require(resolved_loser["kind"] == "team" and resolved_loser["displayName"] == "Santa Barbara", "Resolved loser reference must retain the canonical team name")
     require(resolved_loser["seed"] == 12 and resolved_loser["sourceReference"] == "L1(12)", "Resolved loser seed/reference must remain metadata")
     require(all(issue["code"] != "duplicate_game_id" for issue in qa["issues"]), "Fixture should not create duplicate IDs")
 

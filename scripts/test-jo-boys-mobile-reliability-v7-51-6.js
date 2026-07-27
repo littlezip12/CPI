@@ -54,7 +54,8 @@ requireCondition(policy.scheduledEventScope==='2026-jo-weekend-2','Boys event sc
 requireCondition(policy.scheduledWorkers===3&&policy.scheduledMaxCandidates===2,'Boys relay request limits are missing');
 
 const site=JSON.parse(fs.readFileSync(path.join(ROOT,'config','site-release.json'),'utf8'));
-requireCondition(site.version==='7.51.6'&&site.joApplicationRelease==='7.51.6','Site metadata is not 7.51.6');
+const semverAtLeast=(value,target)=>{const a=String(value).split('.').map(Number),b=String(target).split('.').map(Number);for(let i=0;i<3;i++){if((a[i]||0)>(b[i]||0))return true;if((a[i]||0)<(b[i]||0))return false;}return true};
+requireCondition(semverAtLeast(site.version,'7.51.6')&&site.joApplicationRelease==='7.51.6','Site metadata predates the 7.51.6 JO application');
 requireCondition(site.joMobileReliabilityRelease==='7.51.6','Mobile reliability release metadata is missing');
 for(const side of ['jo-boys','jo-girls']){
   const html=fs.readFileSync(path.join(ROOT,'tournaments',side,'index.html'),'utf8');

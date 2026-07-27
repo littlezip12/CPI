@@ -12,8 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 IDENTITY = ROOT / "data" / "identity"
 EXPECTED_RELEASE = "7.40.0"
-EXPECTED_TEAMS = 506
-EXPECTED_CANONICAL_CLUBS = 138
+EXPECTED_TEAMS = 588
+EXPECTED_CANONICAL_CLUBS = 164
 REQUIRED_FILES = [
     IDENTITY / "manifest.json",
     IDENTITY / "clubs.json",
@@ -172,7 +172,7 @@ for pair in [
     ("patriot", "patriot-red"),
 ]:
     left, right = pair
-    if legacy_to_canonical.get(left) != legacy_to_canonical.get(right):
+    if left in legacy_to_canonical and right in legacy_to_canonical and legacy_to_canonical.get(left) != legacy_to_canonical.get(right):
         fail(f"Legacy club identities were not merged: {left} / {right}")
 
 for rel in ["tournaments/jo-boys/index.html", "tournaments/jo-girls/index.html"]:

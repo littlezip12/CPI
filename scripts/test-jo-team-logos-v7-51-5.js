@@ -4,7 +4,8 @@ const root=path.resolve(__dirname,'..');
 const failures=[];
 const requireCondition=(condition,message)=>{if(!condition)failures.push(message)};
 const site=JSON.parse(fs.readFileSync(path.join(root,'config/site-release.json'),'utf8'));
-requireCondition(Number(site.version.split('.').pop())>=5,'site version predates 7.51.5');
+const semverAtLeast=(value,target)=>{const a=String(value).split('.').map(Number),b=String(target).split('.').map(Number);for(let i=0;i<3;i++){if((a[i]||0)>(b[i]||0))return true;if((a[i]||0)<(b[i]||0))return false;}return true};
+requireCondition(semverAtLeast(site.version,'7.51.5'),'site version predates 7.51.5');
 requireCondition(Number(site.joApplicationRelease.split('.').pop())>=5,'joApplicationRelease predates 7.51.5');
 requireCondition(site.joLogoRelease==='7.51.5','joLogoRelease is not 7.51.5');
 for(const side of ['jo-boys','jo-girls']){

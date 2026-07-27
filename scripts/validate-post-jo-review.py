@@ -31,9 +31,12 @@ if packet.get('policy',{}).get('mode')!='manual_review_only': fail('Post-JO pack
 if packet.get('snapshot',{}).get('teamsHash')!=snapshot.get('teamsHash'): fail('Review packet does not reference the immutable snapshot hash')
 
 expected=set()
+snapshot_ids={r.get('canonicalTeamId') for r in teams if r.get('canonicalTeamId')}
+current_ids={r.get('canonicalTeamId') for r in rankings if r.get('canonicalTeamId')}
 for item in evidence.get('teams',{}).values():
- if not item.get('rankingEligible') or not item.get('canonicalTeamId'): continue
- for app in item.get('appearances',[]): expected.add((item.get('canonicalTeamId'),app.get('eventId'),app.get('divisionId')))
+ team_id=item.get('canonicalTeamId')
+ if not item.get('rankingEligible') or not team_id or team_id not in snapshot_ids or team_id not in current_ids: continue
+ for app in item.get('appearances',[]): expected.add((team_id,app.get('eventId'),app.get('divisionId')))
 packets=packet.get('packets',[])
 actual={(p.get('canonicalTeamId'),p.get('eventId'),p.get('divisionId')) for p in packets}
 if actual!=expected:

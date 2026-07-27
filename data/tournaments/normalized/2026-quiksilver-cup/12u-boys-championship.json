@@ -23,7 +23,7 @@
     "gid": "925524067",
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/18yVkTqV4amoIyESXsB1RzZSs1TI0_EKQ/edit?gid=925524067#gid=925524067",
-    "fetchedAt": "2026-07-18T00:46:27Z",
+    "fetchedAt": "2026-07-27T19:43:44Z",
     "mode": "cached_raw",
     "contentSha256": "604504dc0593c675c2c8097beea03e81b595f334d7c91f4145a1b8d4fbfda3a1",
     "rowCount": 50
@@ -35,12 +35,12 @@
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 80,
-    "resolvedTeamParticipants": 40,
-    "unresolvedTeamParticipants": 40,
+    "resolvedTeamParticipants": 35,
+    "unresolvedTeamParticipants": 45,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 40
+    "reviewItems": 45
   },
   "placements": [],
   "games": [
@@ -167,7 +167,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "A2",
-          "displayName": "CDM",
+          "displayName": "CDM A",
           "participantId": "team-2026-12u-boys-cdm",
           "teamId": "team-2026-12u-boys-cdm",
           "clubId": "club-cdm",
@@ -180,7 +180,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "A3",
-          "displayName": "SoCal",
+          "displayName": "SOCAL",
           "participantId": "team-2026-12u-boys-socal-12u-boys",
           "teamId": "team-2026-12u-boys-socal-12u-boys",
           "clubId": "club-socal",
@@ -204,10 +204,10 @@
         "kind": "decided",
         "winnerParticipantId": "team-2026-12u-boys-cdm",
         "winnerTeamId": "team-2026-12u-boys-cdm",
-        "winnerName": "CDM",
+        "winnerName": "CDM A",
         "loserParticipantId": "team-2026-12u-boys-socal-12u-boys",
         "loserTeamId": "team-2026-12u-boys-socal-12u-boys",
-        "loserName": "SoCal"
+        "loserName": "SOCAL"
       },
       "advancement": {
         "winnerTo": null,
@@ -351,12 +351,12 @@
           "seed": null,
           "sourceReference": "D3",
           "displayName": "908",
-          "participantId": "team-2026-12u-boys-908-12u-boys",
-          "teamId": "team-2026-12u-boys-908-12u-boys",
+          "participantId": "tournament-team-2026-12u-boys-908",
+          "teamId": null,
           "clubId": "club-908",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -375,8 +375,8 @@
         "winnerParticipantId": "tournament-team-2026-12u-boys-north-irvine",
         "winnerTeamId": null,
         "winnerName": "NORTH IRVINE",
-        "loserParticipantId": "team-2026-12u-boys-908-12u-boys",
-        "loserTeamId": "team-2026-12u-boys-908-12u-boys",
+        "loserParticipantId": "tournament-team-2026-12u-boys-908",
+        "loserTeamId": null,
         "loserName": "908"
       },
       "advancement": {
@@ -435,7 +435,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "L#3",
-          "displayName": "SoCal",
+          "displayName": "SOCAL",
           "participantId": "team-2026-12u-boys-socal-12u-boys",
           "teamId": "team-2026-12u-boys-socal-12u-boys",
           "clubId": "club-socal",
@@ -459,7 +459,7 @@
         "kind": "decided",
         "winnerParticipantId": "team-2026-12u-boys-socal-12u-boys",
         "winnerTeamId": "team-2026-12u-boys-socal-12u-boys",
-        "winnerName": "SoCal",
+        "winnerName": "SOCAL",
         "loserParticipantId": "team-2026-12u-boys-la-premier",
         "loserTeamId": "team-2026-12u-boys-la-premier",
         "loserName": "LA Premier"
@@ -520,7 +520,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "W#3",
-          "displayName": "CDM",
+          "displayName": "CDM A",
           "participantId": "team-2026-12u-boys-cdm",
           "teamId": "team-2026-12u-boys-cdm",
           "clubId": "club-cdm",
@@ -547,7 +547,7 @@
         "winnerName": "SD DONS",
         "loserParticipantId": "team-2026-12u-boys-cdm",
         "loserTeamId": "team-2026-12u-boys-cdm",
-        "loserName": "CDM"
+        "loserName": "CDM A"
       },
       "advancement": {
         "winnerTo": null,
@@ -606,12 +606,12 @@
           "seed": null,
           "sourceReference": "L#7",
           "displayName": "908",
-          "participantId": "team-2026-12u-boys-908-12u-boys",
-          "teamId": "team-2026-12u-boys-908-12u-boys",
+          "participantId": "tournament-team-2026-12u-boys-908",
+          "teamId": null,
           "clubId": "club-908",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -630,8 +630,8 @@
         "winnerParticipantId": "tournament-team-2026-12u-boys-la-jolla",
         "winnerTeamId": null,
         "winnerName": "LA JOLLA",
-        "loserParticipantId": "team-2026-12u-boys-908-12u-boys",
-        "loserTeamId": "team-2026-12u-boys-908-12u-boys",
+        "loserParticipantId": "tournament-team-2026-12u-boys-908",
+        "loserTeamId": null,
         "loserName": "908"
       },
       "advancement": {
@@ -847,13 +847,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "B2",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-12u-boys-tsunami-12u-boys",
+          "teamId": "team-2026-12u-boys-tsunami-12u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3- SD SHORES",
@@ -882,9 +882,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-        "winnerTeamId": null,
-        "winnerName": "RANCHO TSUNAMI",
+        "winnerParticipantId": "team-2026-12u-boys-tsunami-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-tsunami-12u-boys",
+        "winnerName": "Rancho Tsunami",
         "loserParticipantId": "tournament-team-2026-12u-boys-sd-shores",
         "loserTeamId": null,
         "loserName": "SD SHORES"
@@ -945,7 +945,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "C4",
-          "displayName": "NSD Stars",
+          "displayName": "Nsd Stars",
           "participantId": "team-2026-12u-boys-nsd-stars",
           "teamId": "team-2026-12u-boys-nsd-stars",
           "clubId": "club-nsd-stars",
@@ -972,7 +972,7 @@
         "winnerName": "MISSION",
         "loserParticipantId": "team-2026-12u-boys-nsd-stars",
         "loserTeamId": "team-2026-12u-boys-nsd-stars",
-        "loserName": "NSD Stars"
+        "loserName": "Nsd Stars"
       },
       "advancement": {
         "winnerTo": null,
@@ -1017,13 +1017,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "C2",
-          "displayName": "San Clemente",
-          "participantId": "team-2026-12u-boys-san-clemente-12u-boys",
-          "teamId": "team-2026-12u-boys-san-clemente-12u-boys",
+          "displayName": "SAN CLEMENTE",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente",
+          "teamId": null,
           "clubId": "club-san-clemente",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "C3- ROSE BOWL",
@@ -1052,9 +1052,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "winnerTeamId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "winnerName": "San Clemente",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE",
         "loserParticipantId": "team-2026-12u-boys-rose-bowl-12u-boys",
         "loserTeamId": "team-2026-12u-boys-rose-bowl-12u-boys",
         "loserName": "Rose Bowl"
@@ -1200,13 +1200,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "W#4",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-12u-boys-tsunami-12u-boys",
+          "teamId": "team-2026-12u-boys-tsunami-12u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1225,9 +1225,9 @@
         "winnerParticipantId": "tournament-team-2026-12u-boys-stanford",
         "winnerTeamId": null,
         "winnerName": "STANFORD",
-        "loserParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-        "loserTeamId": null,
-        "loserName": "RANCHO TSUNAMI"
+        "loserParticipantId": "team-2026-12u-boys-tsunami-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-tsunami-12u-boys",
+        "loserName": "Rancho Tsunami"
       },
       "advancement": {
         "winnerTo": null,
@@ -1272,7 +1272,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "L#6",
-          "displayName": "NSD Stars",
+          "displayName": "Nsd Stars",
           "participantId": "team-2026-12u-boys-nsd-stars",
           "teamId": "team-2026-12u-boys-nsd-stars",
           "clubId": "club-nsd-stars",
@@ -1312,7 +1312,7 @@
         "winnerName": "Rose Bowl",
         "loserParticipantId": "team-2026-12u-boys-nsd-stars",
         "loserTeamId": "team-2026-12u-boys-nsd-stars",
-        "loserName": "NSD Stars"
+        "loserName": "Nsd Stars"
       },
       "advancement": {
         "winnerTo": null,
@@ -1370,13 +1370,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "W#8",
-          "displayName": "San Clemente",
-          "participantId": "team-2026-12u-boys-san-clemente-12u-boys",
-          "teamId": "team-2026-12u-boys-san-clemente-12u-boys",
+          "displayName": "SAN CLEMENTE",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente",
+          "teamId": null,
           "clubId": "club-san-clemente",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -1395,9 +1395,9 @@
         "winnerParticipantId": "tournament-team-2026-12u-boys-mission",
         "winnerTeamId": null,
         "winnerName": "MISSION",
-        "loserParticipantId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "loserTeamId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "loserName": "San Clemente"
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-clemente",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE"
       },
       "advancement": {
         "winnerTo": null,
@@ -1533,7 +1533,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndA",
-          "displayName": "CDM",
+          "displayName": "CDM A",
           "participantId": "team-2026-12u-boys-cdm",
           "teamId": "team-2026-12u-boys-cdm",
           "clubId": "club-cdm",
@@ -1570,7 +1570,7 @@
         "kind": "decided",
         "winnerParticipantId": "team-2026-12u-boys-cdm",
         "winnerTeamId": "team-2026-12u-boys-cdm",
-        "winnerName": "CDM",
+        "winnerName": "CDM A",
         "loserParticipantId": "tournament-team-2026-12u-boys-stanford",
         "loserTeamId": null,
         "loserName": "STANFORD"
@@ -1634,13 +1634,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndB",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-12u-boys-tsunami-12u-boys",
+          "teamId": "team-2026-12u-boys-tsunami-12u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1659,9 +1659,9 @@
         "winnerParticipantId": "tournament-team-2026-12u-boys-sd-dons",
         "winnerTeamId": null,
         "winnerName": "SD DONS",
-        "loserParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-        "loserTeamId": null,
-        "loserName": "RANCHO TSUNAMI"
+        "loserParticipantId": "team-2026-12u-boys-tsunami-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-tsunami-12u-boys",
+        "loserName": "Rancho Tsunami"
       },
       "advancement": {
         "winnerTo": null,
@@ -1709,13 +1709,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndC",
-          "displayName": "San Clemente",
-          "participantId": "team-2026-12u-boys-san-clemente-12u-boys",
-          "teamId": "team-2026-12u-boys-san-clemente-12u-boys",
+          "displayName": "SAN CLEMENTE",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente",
+          "teamId": null,
           "clubId": "club-san-clemente",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "1stD - NORTH IRVINE",
@@ -1744,9 +1744,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "winnerTeamId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "winnerName": "San Clemente",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE",
         "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine",
         "loserTeamId": null,
         "loserName": "NORTH IRVINE"
@@ -1892,7 +1892,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "W#2A/1B",
-          "displayName": "CDM",
+          "displayName": "CDM A",
           "participantId": "team-2026-12u-boys-cdm",
           "teamId": "team-2026-12u-boys-cdm",
           "clubId": "club-cdm",
@@ -1932,7 +1932,7 @@
         "winnerName": "MISSION",
         "loserParticipantId": "team-2026-12u-boys-cdm",
         "loserTeamId": "team-2026-12u-boys-cdm",
-        "loserName": "CDM"
+        "loserName": "CDM A"
       },
       "advancement": {
         "winnerTo": null,
@@ -1993,13 +1993,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "L#1A/2B",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-12u-boys-tsunami-12u-boys",
+          "teamId": "team-2026-12u-boys-tsunami-12u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2015,9 +2015,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-        "winnerTeamId": null,
-        "winnerName": "RANCHO TSUNAMI",
+        "winnerParticipantId": "team-2026-12u-boys-tsunami-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-tsunami-12u-boys",
+        "winnerName": "Rancho Tsunami",
         "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine",
         "loserTeamId": null,
         "loserName": "NORTH IRVINE"
@@ -2081,13 +2081,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "W#2C/1D",
-          "displayName": "San Clemente",
-          "participantId": "team-2026-12u-boys-san-clemente-12u-boys",
-          "teamId": "team-2026-12u-boys-san-clemente-12u-boys",
+          "displayName": "SAN CLEMENTE",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente",
+          "teamId": null,
           "clubId": "club-san-clemente",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -2106,9 +2106,9 @@
         "winnerParticipantId": "tournament-team-2026-12u-boys-sd-dons",
         "winnerTeamId": null,
         "winnerName": "SD DONS",
-        "loserParticipantId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "loserTeamId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "loserName": "San Clemente"
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-clemente",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE"
       },
       "advancement": {
         "winnerTo": null,
@@ -2170,12 +2170,12 @@
           "seed": null,
           "sourceReference": "4thD",
           "displayName": "908",
-          "participantId": "team-2026-12u-boys-908-12u-boys",
-          "teamId": "team-2026-12u-boys-908-12u-boys",
+          "participantId": "tournament-team-2026-12u-boys-908",
+          "teamId": null,
           "clubId": "club-908",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -2194,8 +2194,8 @@
         "winnerParticipantId": "team-2026-12u-boys-rose-bowl-12u-boys",
         "winnerTeamId": "team-2026-12u-boys-rose-bowl-12u-boys",
         "winnerName": "Rose Bowl",
-        "loserParticipantId": "team-2026-12u-boys-908-12u-boys",
-        "loserTeamId": "team-2026-12u-boys-908-12u-boys",
+        "loserParticipantId": "tournament-team-2026-12u-boys-908",
+        "loserTeamId": null,
         "loserName": "908"
       },
       "advancement": {
@@ -2332,7 +2332,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "3rdA",
-          "displayName": "SoCal",
+          "displayName": "SOCAL",
           "participantId": "team-2026-12u-boys-socal-12u-boys",
           "teamId": "team-2026-12u-boys-socal-12u-boys",
           "clubId": "club-socal",
@@ -2369,7 +2369,7 @@
         "kind": "decided",
         "winnerParticipantId": "team-2026-12u-boys-socal-12u-boys",
         "winnerTeamId": "team-2026-12u-boys-socal-12u-boys",
-        "winnerName": "SoCal",
+        "winnerName": "SOCAL",
         "loserParticipantId": "tournament-team-2026-12u-boys-lamorinda",
         "loserTeamId": null,
         "loserName": "LAMORINDA"
@@ -2420,7 +2420,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "4thC",
-          "displayName": "NSD Stars",
+          "displayName": "Nsd Stars",
           "participantId": "team-2026-12u-boys-nsd-stars",
           "teamId": "team-2026-12u-boys-nsd-stars",
           "clubId": "club-nsd-stars",
@@ -2467,7 +2467,7 @@
         "winnerName": "LA JOLLA",
         "loserParticipantId": "team-2026-12u-boys-nsd-stars",
         "loserTeamId": "team-2026-12u-boys-nsd-stars",
-        "loserName": "NSD Stars"
+        "loserName": "Nsd Stars"
       },
       "advancement": {
         "winnerTo": null,
@@ -2516,12 +2516,12 @@
           "seed": null,
           "sourceReference": "L#3C/4D",
           "displayName": "908",
-          "participantId": "team-2026-12u-boys-908-12u-boys",
-          "teamId": "team-2026-12u-boys-908-12u-boys",
+          "participantId": "tournament-team-2026-12u-boys-908",
+          "teamId": null,
           "clubId": "club-908",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "L#4A/3B - SD SHORES",
@@ -2550,8 +2550,8 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-908-12u-boys",
-        "winnerTeamId": "team-2026-12u-boys-908-12u-boys",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-908",
+        "winnerTeamId": null,
         "winnerName": "908",
         "loserParticipantId": "tournament-team-2026-12u-boys-sd-shores",
         "loserTeamId": null,
@@ -2691,7 +2691,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "L#4C/3D",
-          "displayName": "NSD Stars",
+          "displayName": "Nsd Stars",
           "participantId": "team-2026-12u-boys-nsd-stars",
           "teamId": "team-2026-12u-boys-nsd-stars",
           "clubId": "club-nsd-stars",
@@ -2731,7 +2731,7 @@
         "winnerName": "LAMORINDA",
         "loserParticipantId": "team-2026-12u-boys-nsd-stars",
         "loserTeamId": "team-2026-12u-boys-nsd-stars",
-        "loserName": "NSD Stars"
+        "loserName": "Nsd Stars"
       },
       "advancement": {
         "winnerTo": null,
@@ -2779,7 +2779,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "W#3A/4B",
-          "displayName": "SoCal",
+          "displayName": "SOCAL",
           "participantId": "team-2026-12u-boys-socal-12u-boys",
           "teamId": "team-2026-12u-boys-socal-12u-boys",
           "clubId": "club-socal",
@@ -2819,7 +2819,7 @@
         "winnerName": "LA JOLLA",
         "loserParticipantId": "team-2026-12u-boys-socal-12u-boys",
         "loserTeamId": "team-2026-12u-boys-socal-12u-boys",
-        "loserName": "SoCal"
+        "loserName": "SOCAL"
       },
       "advancement": {
         "winnerTo": null,
@@ -2880,13 +2880,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "W#29",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-12u-boys-tsunami-12u-boys",
+          "teamId": "team-2026-12u-boys-tsunami-12u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2905,9 +2905,9 @@
         "winnerParticipantId": "tournament-team-2026-12u-boys-stanford",
         "winnerTeamId": null,
         "winnerName": "STANFORD",
-        "loserParticipantId": "tournament-team-2026-12u-boys-rancho-tsunami",
-        "loserTeamId": null,
-        "loserName": "RANCHO TSUNAMI"
+        "loserParticipantId": "team-2026-12u-boys-tsunami-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-tsunami-12u-boys",
+        "loserName": "Rancho Tsunami"
       },
       "advancement": {
         "winnerTo": null,
@@ -3144,7 +3144,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "L#32",
-          "displayName": "SoCal",
+          "displayName": "SOCAL",
           "participantId": "team-2026-12u-boys-socal-12u-boys",
           "teamId": "team-2026-12u-boys-socal-12u-boys",
           "clubId": "club-socal",
@@ -3168,7 +3168,7 @@
         "kind": "decided",
         "winnerParticipantId": "team-2026-12u-boys-socal-12u-boys",
         "winnerTeamId": "team-2026-12u-boys-socal-12u-boys",
-        "winnerName": "SoCal",
+        "winnerName": "SOCAL",
         "loserParticipantId": "team-2026-12u-boys-la-premier",
         "loserTeamId": "team-2026-12u-boys-la-premier",
         "loserName": "LA Premier"
@@ -3220,12 +3220,12 @@
           "seed": null,
           "sourceReference": "W#26",
           "displayName": "908",
-          "participantId": "team-2026-12u-boys-908-12u-boys",
-          "teamId": "team-2026-12u-boys-908-12u-boys",
+          "participantId": "tournament-team-2026-12u-boys-908",
+          "teamId": null,
           "clubId": "club-908",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "W#30 - LAMORINDA",
@@ -3254,8 +3254,8 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-908-12u-boys",
-        "winnerTeamId": "team-2026-12u-boys-908-12u-boys",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-908",
+        "winnerTeamId": null,
         "winnerName": "908",
         "loserParticipantId": "tournament-team-2026-12u-boys-lamorinda",
         "loserTeamId": null,
@@ -3307,7 +3307,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "L#30",
-          "displayName": "NSD Stars",
+          "displayName": "Nsd Stars",
           "participantId": "team-2026-12u-boys-nsd-stars",
           "teamId": "team-2026-12u-boys-nsd-stars",
           "clubId": "club-nsd-stars",
@@ -3353,7 +3353,7 @@
         "winnerName": "SD SHORES",
         "loserParticipantId": "team-2026-12u-boys-nsd-stars",
         "loserTeamId": "team-2026-12u-boys-nsd-stars",
-        "loserName": "NSD Stars"
+        "loserName": "Nsd Stars"
       },
       "advancement": {
         "winnerTo": null,
@@ -3401,7 +3401,7 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "L#27",
-          "displayName": "CDM",
+          "displayName": "CDM A",
           "participantId": "team-2026-12u-boys-cdm",
           "teamId": "team-2026-12u-boys-cdm",
           "clubId": "club-cdm",
@@ -3414,13 +3414,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "L#31",
-          "displayName": "San Clemente",
-          "participantId": "team-2026-12u-boys-san-clemente-12u-boys",
-          "teamId": "team-2026-12u-boys-san-clemente-12u-boys",
+          "displayName": "SAN CLEMENTE",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente",
+          "teamId": null,
           "clubId": "club-san-clemente",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -3438,10 +3438,10 @@
         "kind": "decided",
         "winnerParticipantId": "team-2026-12u-boys-cdm",
         "winnerTeamId": "team-2026-12u-boys-cdm",
-        "winnerName": "CDM",
-        "loserParticipantId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "loserTeamId": "team-2026-12u-boys-san-clemente-12u-boys",
-        "loserName": "San Clemente"
+        "winnerName": "CDM A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-clemente",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE"
       },
       "advancement": {
         "winnerTo": null,

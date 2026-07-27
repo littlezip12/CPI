@@ -2,10 +2,24 @@
   "hero": {
     "slides": [
       {
+        "tag": "Post-JO Rankings",
+        "title": "Boys post-JO rankings are live",
+        "summary": "The approved top 100 for 12U, 14U, 16U and 18U Boys now reflects Junior Olympics and the full 2026 season.",
+        "image": "assets/logos/cpi-logo-fallback.svg",
+        "primaryCta": {
+          "label": "View Boys rankings",
+          "url": "rankings.html?group=12u-boys"
+        },
+        "secondaryCta": {
+          "label": "Tournament results",
+          "url": "tournaments/jo-boys/index.html"
+        }
+      },
+      {
         "tag": "Tournament Notes",
         "title": "Quiksilver adds a lighter pre-JO signal",
         "summary": "CPI now includes Quiksilver Cup movement, capped by age-group field size and treated below JO, Futures, US Club, qualifiers, and larger invitationals.",
-        "image": "assets/cpi-logo-fallback.svg",
+        "image": "assets/logos/cpi-logo-fallback.svg",
         "primaryCta": {
           "label": "Read the notes",
           "url": "stories/quicksilver-cup-2026.html"
@@ -21,54 +35,40 @@
         "summary": "Fields ranged from 5 to 18 teams, so CPI uses Quiksilver as secondary evidence rather than a ranking reset.",
         "image": "assets/logos/canonical/ciu.webp",
         "primaryCta": {
-          "label": "Read ranking audit",
-          "url": "stories/quiksilver-ranking-audit.html"
+          "label": "Open review file",
+          "url": "data/qa/quiksilver-cup-2026-ranking-adjustments-7-30-v2.csv"
         },
         "secondaryCta": {
           "label": "View clubs",
           "url": "clubs.html"
-        }
-      },
-      {
-        "tag": "CPI Notes",
-        "title": "Pre-JO context still matters",
-        "summary": "Quiksilver gives a useful recent signal, but CPI will not treat every placement as automatic rank movement without event path and alias validation.",
-        "image": "assets/cpi-logo-fallback.svg",
-        "primaryCta": {
-          "label": "How CPI works",
-          "url": "methodology.html"
-        },
-        "secondaryCta": {
-          "label": "Tournament coverage",
-          "url": "tournaments.html"
         }
       }
     ]
   },
   "stories": [
     {
+      "category": "Rankings",
+      "title": "Boys post-JO rankings published",
+      "summary": "Four age groups and 400 JO entrants are now represented in the approved ranking release.",
+      "image": "assets/logos/cpi-logo-fallback.svg",
+      "url": "rankings.html?group=12u-boys",
+      "meta": "Release 7.52.0"
+    },
+    {
       "category": "Tournament Notes",
       "title": "Quiksilver Cup added with capped movement",
       "summary": "Release 7.30 v2 applies a lighter Quiksilver overlay because field sizes varied from 5 to 18 teams.",
-      "image": "assets/cpi-logo-fallback.svg",
+      "image": "assets/logos/cpi-logo-fallback.svg",
       "url": "stories/quicksilver-cup-2026.html",
       "meta": "4 min read"
     },
     {
       "category": "Ranking Review",
-      "title": "Quiksilver adjustment audit summary",
+      "title": "Open the Quiksilver adjustment audit",
       "summary": "See old rank, new rank, field size, event weight, and review flags.",
       "image": "assets/logos/canonical/mission.webp",
-      "url": "stories/quiksilver-ranking-audit.html",
-      "meta": "QA summary"
-    },
-    {
-      "category": "Tournament Results",
-      "title": "Quiksilver winners by group",
-      "summary": "Mission, NorCal, LB Viking, CIU, and other programs are now captured in tournament evidence.",
-      "image": "assets/logos/canonical/norcal.webp",
-      "url": "stories/quicksilver-cup-2026.html",
-      "meta": "Tournament notes"
+      "url": "data/qa/quiksilver-cup-2026-ranking-adjustments-7-30-v2.csv",
+      "meta": "QA file"
     }
   ],
   "tournaments": [

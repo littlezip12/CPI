@@ -1,11 +1,14 @@
-# CPI 7.51.6
+# CPI 7.52.0
 
-Boys JO mobile live-update reliability.
+2026 Boys post-JO rankings.
 
-- Limits the scheduled live relay to the active Boys JO event while preserving the completed Girls relay bank.
-- Reduces relay concurrency from eight workers to three and tries no more than two Google endpoints per division.
-- Uses a longer bounded endpoint timeout plus a short retry pause to reduce Google 429 bursts.
-- Prevents a relay or direct-Google response with fewer completed results from replacing a newer browser copy.
-- Refreshes after mobile Safari or another browser restores the tournament page from back-forward cache.
-- Treats a Boys relay older than seven minutes as stale while retaining last-known-good data.
-- Preserves JO schedules, groups, subdivisions, final placements, team logos, rankings, and Girls tournament history.
+- Publishes approved top-100 rankings for 12U, 14U, 16U, and 18U Boys.
+- Uses Junior Olympics division, subdivision, final placement, head-to-head results, and full-season evidence.
+- Keeps Championship above Classic and Classic above Invitational except for explicitly reviewed boundary cases.
+- Preserves subdivision bands and deserving B/C teams based on actual JO performance.
+- Normalizes tournament color labels into A/B/C/D club depth without using color as the team hierarchy.
+- Ranks only teams that entered JOs in the applicable age group.
+- Consolidates Shore Aquatics and Long Beach Shore under one canonical club identity.
+- Normalizes North Irvine without the source-only “Vegas” prefix.
+- Maps Kern Premier to SKIP where it is the only related entry in an age group.
+- Leaves Girls ranking order unchanged while their post-JO review remains separate.

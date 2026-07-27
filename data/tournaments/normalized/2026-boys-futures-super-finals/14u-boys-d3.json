@@ -23,7 +23,7 @@
     "gid": "817940462",
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=817940462#gid=817940462",
-    "fetchedAt": "2026-07-18T00:46:27Z",
+    "fetchedAt": "2026-07-27T19:43:44Z",
     "mode": "cached_raw",
     "contentSha256": "59ea8b0660f37605b63f2e8b2b5d878565a41c1a8956b372faec44e5a1f8a7ba",
     "rowCount": 77
@@ -35,12 +35,12 @@
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 90,
-    "resolvedTeamParticipants": 45,
-    "unresolvedTeamParticipants": 45,
+    "resolvedTeamParticipants": 60,
+    "unresolvedTeamParticipants": 30,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 45
+    "reviewItems": 30
   },
   "placements": [],
   "games": [
@@ -82,13 +82,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "A1",
-          "displayName": "VEGAS RENEGADES",
-          "participantId": "tournament-team-2026-14u-boys-vegas-renegades",
-          "teamId": null,
+          "displayName": "Vegas Renegades",
+          "participantId": "team-2026-14u-boys-vegas-renegades-a",
+          "teamId": "team-2026-14u-boys-vegas-renegades-a",
           "clubId": "club-vegas-renegades",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3-NORCAL B",
@@ -117,9 +117,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-vegas-renegades",
-        "winnerTeamId": null,
-        "winnerName": "VEGAS RENEGADES",
+        "winnerParticipantId": "team-2026-14u-boys-vegas-renegades-a",
+        "winnerTeamId": "team-2026-14u-boys-vegas-renegades-a",
+        "winnerName": "Vegas Renegades",
         "loserParticipantId": "team-2026-14u-boys-norcal-b",
         "loserTeamId": "team-2026-14u-boys-norcal-b",
         "loserName": "NorCal B"
@@ -170,10 +170,10 @@
           "displayName": "LAWPC",
           "participantId": "tournament-team-2026-14u-boys-lawpc",
           "teamId": null,
-          "clubId": "club-lawpc",
+          "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
           "raw": "D3-680 C",
@@ -252,26 +252,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "E1",
-          "displayName": "ALAMEDA",
-          "participantId": "tournament-team-2026-14u-boys-alameda",
-          "teamId": null,
+          "displayName": "Alameda",
+          "participantId": "team-2026-14u-boys-alameda-a",
+          "teamId": "team-2026-14u-boys-alameda-a",
           "clubId": "club-alameda",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "E2-TITANS",
           "kind": "team",
           "seed": null,
           "sourceReference": "E2",
-          "displayName": "TITANS",
-          "participantId": "tournament-team-2026-14u-boys-titans",
-          "teamId": null,
+          "displayName": "Titans",
+          "participantId": "team-2026-14u-boys-titans-a",
+          "teamId": "team-2026-14u-boys-titans-a",
           "clubId": "club-titans",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -287,12 +287,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-alameda",
-        "winnerTeamId": null,
-        "winnerName": "ALAMEDA",
-        "loserParticipantId": "tournament-team-2026-14u-boys-titans",
-        "loserTeamId": null,
-        "loserName": "TITANS"
+        "winnerParticipantId": "team-2026-14u-boys-alameda-a",
+        "winnerTeamId": "team-2026-14u-boys-alameda-a",
+        "winnerName": "Alameda",
+        "loserParticipantId": "team-2026-14u-boys-titans-a",
+        "loserTeamId": "team-2026-14u-boys-titans-a",
+        "loserName": "Titans"
       },
       "advancement": {
         "winnerTo": null,
@@ -338,12 +338,12 @@
           "seed": null,
           "sourceReference": "A2",
           "displayName": "CVU",
-          "participantId": "tournament-team-2026-14u-boys-cvu",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-cvu-a",
+          "teamId": "team-2026-14u-boys-cvu-a",
           "clubId": "club-cvu",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A3-NORCAL B",
@@ -372,8 +372,8 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-cvu",
-        "winnerTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-cvu-a",
+        "winnerTeamId": "team-2026-14u-boys-cvu-a",
         "winnerName": "CVU",
         "loserParticipantId": "team-2026-14u-boys-norcal-b",
         "loserTeamId": "team-2026-14u-boys-norcal-b",
@@ -507,13 +507,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "E2",
-          "displayName": "TITANS",
-          "participantId": "tournament-team-2026-14u-boys-titans",
-          "teamId": null,
+          "displayName": "Titans",
+          "participantId": "team-2026-14u-boys-titans-a",
+          "teamId": "team-2026-14u-boys-titans-a",
           "clubId": "club-titans",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "E3-SUPREME",
@@ -542,9 +542,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-titans",
-        "winnerTeamId": null,
-        "winnerName": "TITANS",
+        "winnerParticipantId": "team-2026-14u-boys-titans-a",
+        "winnerTeamId": "team-2026-14u-boys-titans-a",
+        "winnerName": "Titans",
         "loserParticipantId": "tournament-team-2026-14u-boys-supreme",
         "loserTeamId": null,
         "loserName": "SUPREME"
@@ -592,13 +592,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "A1",
-          "displayName": "VEGAS RENEGADES",
-          "participantId": "tournament-team-2026-14u-boys-vegas-renegades",
-          "teamId": null,
+          "displayName": "Vegas Renegades",
+          "participantId": "team-2026-14u-boys-vegas-renegades-a",
+          "teamId": "team-2026-14u-boys-vegas-renegades-a",
           "clubId": "club-vegas-renegades",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "A2-CVU",
@@ -606,12 +606,12 @@
           "seed": null,
           "sourceReference": "A2",
           "displayName": "CVU",
-          "participantId": "tournament-team-2026-14u-boys-cvu",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-cvu-a",
+          "teamId": "team-2026-14u-boys-cvu-a",
           "clubId": "club-cvu",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -627,11 +627,11 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-vegas-renegades",
-        "winnerTeamId": null,
-        "winnerName": "VEGAS RENEGADES",
-        "loserParticipantId": "tournament-team-2026-14u-boys-cvu",
-        "loserTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-vegas-renegades-a",
+        "winnerTeamId": "team-2026-14u-boys-vegas-renegades-a",
+        "winnerName": "Vegas Renegades",
+        "loserParticipantId": "team-2026-14u-boys-cvu-a",
+        "loserTeamId": "team-2026-14u-boys-cvu-a",
         "loserName": "CVU"
       },
       "advancement": {
@@ -680,10 +680,10 @@
           "displayName": "LAWPC",
           "participantId": "tournament-team-2026-14u-boys-lawpc",
           "teamId": null,
-          "clubId": "club-lawpc",
+          "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
           "raw": "D2-DIABLO ALLIANCE B",
@@ -762,13 +762,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "E1",
-          "displayName": "ALAMEDA",
-          "participantId": "tournament-team-2026-14u-boys-alameda",
-          "teamId": null,
+          "displayName": "Alameda",
+          "participantId": "team-2026-14u-boys-alameda-a",
+          "teamId": "team-2026-14u-boys-alameda-a",
           "clubId": "club-alameda",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "E3-SUPREME",
@@ -797,9 +797,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-alameda",
-        "winnerTeamId": null,
-        "winnerName": "ALAMEDA",
+        "winnerParticipantId": "team-2026-14u-boys-alameda-a",
+        "winnerTeamId": "team-2026-14u-boys-alameda-a",
+        "winnerName": "Alameda",
         "loserParticipantId": "tournament-team-2026-14u-boys-supreme",
         "loserTeamId": null,
         "loserName": "SUPREME"
@@ -860,13 +860,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "B3",
-          "displayName": "North Irvine B",
-          "participantId": "team-2026-14u-boys-north-irvine-b",
-          "teamId": "team-2026-14u-boys-north-irvine-b",
-          "clubId": "club-north-irvine",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "NORTH IRVINE B",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -885,9 +885,9 @@
         "winnerParticipantId": "team-2026-14u-boys-680-b",
         "winnerTeamId": "team-2026-14u-boys-680-b",
         "winnerName": "680 B",
-        "loserParticipantId": "team-2026-14u-boys-north-irvine-b",
-        "loserTeamId": "team-2026-14u-boys-north-irvine-b",
-        "loserName": "North Irvine B"
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-b",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE B"
       },
       "advancement": {
         "winnerTo": null,
@@ -945,13 +945,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "C3",
-          "displayName": "Stanford C",
-          "participantId": "team-2026-14u-boys-stanford-c",
-          "teamId": "team-2026-14u-boys-stanford-c",
-          "clubId": "club-stanford",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "STANFORD C",
+          "participantId": "tournament-team-2026-14u-boys-stanford-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -970,9 +970,9 @@
         "winnerParticipantId": "team-2026-14u-boys-vanguard-b",
         "winnerTeamId": "team-2026-14u-boys-vanguard-b",
         "winnerName": "Vanguard B",
-        "loserParticipantId": "team-2026-14u-boys-stanford-c",
-        "loserTeamId": "team-2026-14u-boys-stanford-c",
-        "loserName": "Stanford C"
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-c",
+        "loserTeamId": null,
+        "loserName": "STANFORD C"
       },
       "advancement": {
         "winnerTo": null,
@@ -1030,13 +1030,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "F3",
-          "displayName": "American River B",
-          "participantId": "team-2026-14u-boys-american-river-b",
-          "teamId": "team-2026-14u-boys-american-river-b",
-          "clubId": "club-american-river",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "AMERICAN RIVER B",
+          "participantId": "tournament-team-2026-14u-boys-american-river-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -1055,9 +1055,9 @@
         "winnerParticipantId": "team-2026-14u-boys-lamorinda-b",
         "winnerTeamId": "team-2026-14u-boys-lamorinda-b",
         "winnerName": "Lamorinda B",
-        "loserParticipantId": "team-2026-14u-boys-american-river-b",
-        "loserTeamId": "team-2026-14u-boys-american-river-b",
-        "loserName": "American River B"
+        "loserParticipantId": "tournament-team-2026-14u-boys-american-river-b",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1103,25 +1103,25 @@
           "seed": null,
           "sourceReference": "B2",
           "displayName": "SKIP",
-          "participantId": "tournament-team-2026-14u-boys-skip",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-skip-a",
+          "teamId": "team-2026-14u-boys-skip-a",
           "clubId": "club-skip",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3-NORTH IRVINE B",
           "kind": "team",
           "seed": null,
           "sourceReference": "B3",
-          "displayName": "North Irvine B",
-          "participantId": "team-2026-14u-boys-north-irvine-b",
-          "teamId": "team-2026-14u-boys-north-irvine-b",
-          "clubId": "club-north-irvine",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "NORTH IRVINE B",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -1137,12 +1137,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-skip",
-        "winnerTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-skip-a",
+        "winnerTeamId": "team-2026-14u-boys-skip-a",
         "winnerName": "SKIP",
-        "loserParticipantId": "team-2026-14u-boys-north-irvine-b",
-        "loserTeamId": "team-2026-14u-boys-north-irvine-b",
-        "loserName": "North Irvine B"
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-b",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1187,26 +1187,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "C2",
-          "displayName": "SJ FOUNDATION",
-          "participantId": "tournament-team-2026-14u-boys-sj-foundation",
-          "teamId": null,
+          "displayName": "SJ Foundation",
+          "participantId": "team-2026-14u-boys-sj-foundation-a",
+          "teamId": "team-2026-14u-boys-sj-foundation-a",
           "clubId": "club-sj-foundation",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C3-STANFORD C",
           "kind": "team",
           "seed": null,
           "sourceReference": "C3",
-          "displayName": "Stanford C",
-          "participantId": "team-2026-14u-boys-stanford-c",
-          "teamId": "team-2026-14u-boys-stanford-c",
-          "clubId": "club-stanford",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "STANFORD C",
+          "participantId": "tournament-team-2026-14u-boys-stanford-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -1222,12 +1222,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-sj-foundation",
-        "winnerTeamId": null,
-        "winnerName": "SJ FOUNDATION",
-        "loserParticipantId": "team-2026-14u-boys-stanford-c",
-        "loserTeamId": "team-2026-14u-boys-stanford-c",
-        "loserName": "Stanford C"
+        "winnerParticipantId": "team-2026-14u-boys-sj-foundation-a",
+        "winnerTeamId": "team-2026-14u-boys-sj-foundation-a",
+        "winnerName": "SJ Foundation",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-c",
+        "loserTeamId": null,
+        "loserName": "STANFORD C"
       },
       "advancement": {
         "winnerTo": null,
@@ -1285,13 +1285,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "F3",
-          "displayName": "American River B",
-          "participantId": "team-2026-14u-boys-american-river-b",
-          "teamId": "team-2026-14u-boys-american-river-b",
-          "clubId": "club-american-river",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "AMERICAN RIVER B",
+          "participantId": "tournament-team-2026-14u-boys-american-river-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -1310,9 +1310,9 @@
         "winnerParticipantId": "tournament-team-2026-14u-boys-south-coast-white",
         "winnerTeamId": null,
         "winnerName": "SOUTH COAST WHITE",
-        "loserParticipantId": "team-2026-14u-boys-american-river-b",
-        "loserTeamId": "team-2026-14u-boys-american-river-b",
-        "loserName": "American River B"
+        "loserParticipantId": "tournament-team-2026-14u-boys-american-river-b",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1371,12 +1371,12 @@
           "seed": null,
           "sourceReference": "B2",
           "displayName": "SKIP",
-          "participantId": "tournament-team-2026-14u-boys-skip",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-skip-a",
+          "teamId": "team-2026-14u-boys-skip-a",
           "clubId": "club-skip",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1392,8 +1392,8 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-skip",
-        "winnerTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-skip-a",
+        "winnerTeamId": "team-2026-14u-boys-skip-a",
         "winnerName": "SKIP",
         "loserParticipantId": "team-2026-14u-boys-680-b",
         "loserTeamId": "team-2026-14u-boys-680-b",
@@ -1455,13 +1455,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "C2",
-          "displayName": "SJ FOUNDATION",
-          "participantId": "tournament-team-2026-14u-boys-sj-foundation",
-          "teamId": null,
+          "displayName": "SJ Foundation",
+          "participantId": "team-2026-14u-boys-sj-foundation-a",
+          "teamId": "team-2026-14u-boys-sj-foundation-a",
           "clubId": "club-sj-foundation",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1484,9 +1484,9 @@
       "outcome": {
         "kind": "decided",
         "decidedBy": "shootout",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-sj-foundation",
-        "winnerTeamId": null,
-        "winnerName": "SJ FOUNDATION",
+        "winnerParticipantId": "team-2026-14u-boys-sj-foundation-a",
+        "winnerTeamId": "team-2026-14u-boys-sj-foundation-a",
+        "winnerName": "SJ Foundation",
         "loserParticipantId": "team-2026-14u-boys-vanguard-b",
         "loserTeamId": "team-2026-14u-boys-vanguard-b",
         "loserName": "Vanguard B"
@@ -1619,26 +1619,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "G1(1stA)",
-          "displayName": "VEGAS RENEGADES",
-          "participantId": "tournament-team-2026-14u-boys-vegas-renegades",
-          "teamId": null,
+          "displayName": "Vegas Renegades",
+          "participantId": "team-2026-14u-boys-vegas-renegades-a",
+          "teamId": "team-2026-14u-boys-vegas-renegades-a",
           "clubId": "club-vegas-renegades",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G3(1stE)-ALAMEDA",
           "kind": "team",
           "seed": null,
           "sourceReference": "G3(1stE)",
-          "displayName": "ALAMEDA",
-          "participantId": "tournament-team-2026-14u-boys-alameda",
-          "teamId": null,
+          "displayName": "Alameda",
+          "participantId": "team-2026-14u-boys-alameda-a",
+          "teamId": "team-2026-14u-boys-alameda-a",
           "clubId": "club-alameda",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1654,12 +1654,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-vegas-renegades",
-        "winnerTeamId": null,
-        "winnerName": "VEGAS RENEGADES",
-        "loserParticipantId": "tournament-team-2026-14u-boys-alameda",
-        "loserTeamId": null,
-        "loserName": "ALAMEDA"
+        "winnerParticipantId": "team-2026-14u-boys-vegas-renegades-a",
+        "winnerTeamId": "team-2026-14u-boys-vegas-renegades-a",
+        "winnerName": "Vegas Renegades",
+        "loserParticipantId": "team-2026-14u-boys-alameda-a",
+        "loserTeamId": "team-2026-14u-boys-alameda-a",
+        "loserName": "Alameda"
       },
       "advancement": {
         "winnerTo": null,
@@ -1705,12 +1705,12 @@
           "seed": null,
           "sourceReference": "H1(1stB)",
           "displayName": "SKIP",
-          "participantId": "tournament-team-2026-14u-boys-skip",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-skip-a",
+          "teamId": "team-2026-14u-boys-skip-a",
           "clubId": "club-skip",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "H3(1stF)-LAMORINDA B",
@@ -1739,8 +1739,8 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-skip",
-        "winnerTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-skip-a",
+        "winnerTeamId": "team-2026-14u-boys-skip-a",
         "winnerName": "SKIP",
         "loserParticipantId": "team-2026-14u-boys-lamorinda-b",
         "loserTeamId": "team-2026-14u-boys-lamorinda-b",
@@ -1877,23 +1877,23 @@
           "displayName": "LAWPC",
           "participantId": "tournament-team-2026-14u-boys-lawpc",
           "teamId": null,
-          "clubId": "club-lawpc",
+          "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
           "raw": "G3(1stE)-ALAMEDA",
           "kind": "team",
           "seed": null,
           "sourceReference": "G3(1stE)",
-          "displayName": "ALAMEDA",
-          "participantId": "tournament-team-2026-14u-boys-alameda",
-          "teamId": null,
+          "displayName": "Alameda",
+          "participantId": "team-2026-14u-boys-alameda-a",
+          "teamId": "team-2026-14u-boys-alameda-a",
           "clubId": "club-alameda",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1912,9 +1912,9 @@
         "winnerParticipantId": "tournament-team-2026-14u-boys-lawpc",
         "winnerTeamId": null,
         "winnerName": "LAWPC",
-        "loserParticipantId": "tournament-team-2026-14u-boys-alameda",
-        "loserTeamId": null,
-        "loserName": "ALAMEDA"
+        "loserParticipantId": "team-2026-14u-boys-alameda-a",
+        "loserTeamId": "team-2026-14u-boys-alameda-a",
+        "loserName": "Alameda"
       },
       "advancement": {
         "winnerTo": null,
@@ -1959,13 +1959,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "H2(1stC)",
-          "displayName": "SJ FOUNDATION",
-          "participantId": "tournament-team-2026-14u-boys-sj-foundation",
-          "teamId": null,
+          "displayName": "SJ Foundation",
+          "participantId": "team-2026-14u-boys-sj-foundation-a",
+          "teamId": "team-2026-14u-boys-sj-foundation-a",
           "clubId": "club-sj-foundation",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "H3(1stF)-LAMORINDA B",
@@ -1994,9 +1994,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-sj-foundation",
-        "winnerTeamId": null,
-        "winnerName": "SJ FOUNDATION",
+        "winnerParticipantId": "team-2026-14u-boys-sj-foundation-a",
+        "winnerTeamId": "team-2026-14u-boys-sj-foundation-a",
+        "winnerName": "SJ Foundation",
         "loserParticipantId": "team-2026-14u-boys-lamorinda-b",
         "loserTeamId": "team-2026-14u-boys-lamorinda-b",
         "loserName": "Lamorinda B"
@@ -2129,13 +2129,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "G1(1stA)",
-          "displayName": "VEGAS RENEGADES",
-          "participantId": "tournament-team-2026-14u-boys-vegas-renegades",
-          "teamId": null,
+          "displayName": "Vegas Renegades",
+          "participantId": "team-2026-14u-boys-vegas-renegades-a",
+          "teamId": "team-2026-14u-boys-vegas-renegades-a",
           "clubId": "club-vegas-renegades",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "G2(1stD)-LAWPC",
@@ -2145,10 +2145,10 @@
           "displayName": "LAWPC",
           "participantId": "tournament-team-2026-14u-boys-lawpc",
           "teamId": null,
-          "clubId": "club-lawpc",
+          "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -2167,9 +2167,9 @@
         "winnerParticipantId": "tournament-team-2026-14u-boys-lawpc",
         "winnerTeamId": null,
         "winnerName": "LAWPC",
-        "loserParticipantId": "tournament-team-2026-14u-boys-vegas-renegades",
-        "loserTeamId": null,
-        "loserName": "VEGAS RENEGADES"
+        "loserParticipantId": "team-2026-14u-boys-vegas-renegades-a",
+        "loserTeamId": "team-2026-14u-boys-vegas-renegades-a",
+        "loserName": "Vegas Renegades"
       },
       "advancement": {
         "winnerTo": null,
@@ -2215,25 +2215,25 @@
           "seed": null,
           "sourceReference": "H1(1stB)",
           "displayName": "SKIP",
-          "participantId": "tournament-team-2026-14u-boys-skip",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-skip-a",
+          "teamId": "team-2026-14u-boys-skip-a",
           "clubId": "club-skip",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "H2(1stC)-SJ FOUNDATION",
           "kind": "team",
           "seed": null,
           "sourceReference": "H2(1stC)",
-          "displayName": "SJ FOUNDATION",
-          "participantId": "tournament-team-2026-14u-boys-sj-foundation",
-          "teamId": null,
+          "displayName": "SJ Foundation",
+          "participantId": "team-2026-14u-boys-sj-foundation-a",
+          "teamId": "team-2026-14u-boys-sj-foundation-a",
           "clubId": "club-sj-foundation",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2249,12 +2249,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-skip",
-        "winnerTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-skip-a",
+        "winnerTeamId": "team-2026-14u-boys-skip-a",
         "winnerName": "SKIP",
-        "loserParticipantId": "tournament-team-2026-14u-boys-sj-foundation",
-        "loserTeamId": null,
-        "loserName": "SJ FOUNDATION"
+        "loserParticipantId": "team-2026-14u-boys-sj-foundation-a",
+        "loserTeamId": "team-2026-14u-boys-sj-foundation-a",
+        "loserName": "SJ Foundation"
       },
       "advancement": {
         "winnerTo": null,
@@ -2385,25 +2385,25 @@
           "seed": null,
           "sourceReference": "J1(2ndA)",
           "displayName": "CVU",
-          "participantId": "tournament-team-2026-14u-boys-cvu",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-cvu-a",
+          "teamId": "team-2026-14u-boys-cvu-a",
           "clubId": "club-cvu",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "J3(2ndE)-TITANS",
           "kind": "team",
           "seed": null,
           "sourceReference": "J3(2ndE)",
-          "displayName": "TITANS",
-          "participantId": "tournament-team-2026-14u-boys-titans",
-          "teamId": null,
+          "displayName": "Titans",
+          "participantId": "team-2026-14u-boys-titans-a",
+          "teamId": "team-2026-14u-boys-titans-a",
           "clubId": "club-titans",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2419,11 +2419,11 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-titans",
-        "winnerTeamId": null,
-        "winnerName": "TITANS",
-        "loserParticipantId": "tournament-team-2026-14u-boys-cvu",
-        "loserTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-titans-a",
+        "winnerTeamId": "team-2026-14u-boys-titans-a",
+        "winnerName": "Titans",
+        "loserParticipantId": "team-2026-14u-boys-cvu-a",
+        "loserTeamId": "team-2026-14u-boys-cvu-a",
         "loserName": "CVU"
       },
       "advancement": {
@@ -2554,26 +2554,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "M1(3rdB)",
-          "displayName": "North Irvine B",
-          "participantId": "team-2026-14u-boys-north-irvine-b",
-          "teamId": "team-2026-14u-boys-north-irvine-b",
-          "clubId": "club-north-irvine",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "NORTH IRVINE B",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
           "raw": "M3(3rdF)-AMERICAN RIVER B",
           "kind": "team",
           "seed": null,
           "sourceReference": "M3(3rdF)",
-          "displayName": "American River B",
-          "participantId": "team-2026-14u-boys-american-river-b",
-          "teamId": "team-2026-14u-boys-american-river-b",
-          "clubId": "club-american-river",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "AMERICAN RIVER B",
+          "participantId": "tournament-team-2026-14u-boys-american-river-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -2589,12 +2589,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-boys-american-river-b",
-        "winnerTeamId": "team-2026-14u-boys-american-river-b",
-        "winnerName": "American River B",
-        "loserParticipantId": "team-2026-14u-boys-north-irvine-b",
-        "loserTeamId": "team-2026-14u-boys-north-irvine-b",
-        "loserName": "North Irvine B"
+        "winnerParticipantId": "tournament-team-2026-14u-boys-american-river-b",
+        "winnerTeamId": null,
+        "winnerName": "AMERICAN RIVER B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-b",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2652,13 +2652,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "J3(2ndE)",
-          "displayName": "TITANS",
-          "participantId": "tournament-team-2026-14u-boys-titans",
-          "teamId": null,
+          "displayName": "Titans",
+          "participantId": "team-2026-14u-boys-titans-a",
+          "teamId": "team-2026-14u-boys-titans-a",
           "clubId": "club-titans",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2677,9 +2677,9 @@
         "winnerParticipantId": "team-2026-14u-boys-diablo-alliance-b",
         "winnerTeamId": "team-2026-14u-boys-diablo-alliance-b",
         "winnerName": "Diablo Alliance B",
-        "loserParticipantId": "tournament-team-2026-14u-boys-titans",
-        "loserTeamId": null,
-        "loserName": "TITANS"
+        "loserParticipantId": "team-2026-14u-boys-titans-a",
+        "loserTeamId": "team-2026-14u-boys-titans-a",
+        "loserName": "Titans"
       },
       "advancement": {
         "winnerTo": null,
@@ -2809,26 +2809,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "M2(3rdC)",
-          "displayName": "Stanford C",
-          "participantId": "team-2026-14u-boys-stanford-c",
-          "teamId": "team-2026-14u-boys-stanford-c",
-          "clubId": "club-stanford",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "STANFORD C",
+          "participantId": "tournament-team-2026-14u-boys-stanford-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
           "raw": "M3(3rdF)-AMERICAN RIVER B",
           "kind": "team",
           "seed": null,
           "sourceReference": "M3(3rdF)",
-          "displayName": "American River B",
-          "participantId": "team-2026-14u-boys-american-river-b",
-          "teamId": "team-2026-14u-boys-american-river-b",
-          "clubId": "club-american-river",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "AMERICAN RIVER B",
+          "participantId": "tournament-team-2026-14u-boys-american-river-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -2844,12 +2844,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-boys-stanford-c",
-        "winnerTeamId": "team-2026-14u-boys-stanford-c",
-        "winnerName": "Stanford C",
-        "loserParticipantId": "team-2026-14u-boys-american-river-b",
-        "loserTeamId": "team-2026-14u-boys-american-river-b",
-        "loserName": "American River B"
+        "winnerParticipantId": "tournament-team-2026-14u-boys-stanford-c",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD C",
+        "loserParticipantId": "tournament-team-2026-14u-boys-american-river-b",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2895,12 +2895,12 @@
           "seed": null,
           "sourceReference": "J1(2ndA)",
           "displayName": "CVU",
-          "participantId": "tournament-team-2026-14u-boys-cvu",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-cvu-a",
+          "teamId": "team-2026-14u-boys-cvu-a",
           "clubId": "club-cvu",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "J2(2ndD)-DIABLO ALLIANCE B",
@@ -2929,8 +2929,8 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-cvu",
-        "winnerTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-cvu-a",
+        "winnerTeamId": "team-2026-14u-boys-cvu-a",
         "winnerName": "CVU",
         "loserParticipantId": "team-2026-14u-boys-diablo-alliance-b",
         "loserTeamId": "team-2026-14u-boys-diablo-alliance-b",
@@ -3071,26 +3071,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "M1(3rdB)",
-          "displayName": "North Irvine B",
-          "participantId": "team-2026-14u-boys-north-irvine-b",
-          "teamId": "team-2026-14u-boys-north-irvine-b",
-          "clubId": "club-north-irvine",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "NORTH IRVINE B",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
           "raw": "M2(3rdC)-STANFORD C",
           "kind": "team",
           "seed": null,
           "sourceReference": "M2(3rdC)",
-          "displayName": "Stanford C",
-          "participantId": "team-2026-14u-boys-stanford-c",
-          "teamId": "team-2026-14u-boys-stanford-c",
-          "clubId": "club-stanford",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "STANFORD C",
+          "participantId": "tournament-team-2026-14u-boys-stanford-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -3106,12 +3106,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-boys-stanford-c",
-        "winnerTeamId": "team-2026-14u-boys-stanford-c",
-        "winnerName": "Stanford C",
-        "loserParticipantId": "team-2026-14u-boys-north-irvine-b",
-        "loserTeamId": "team-2026-14u-boys-north-irvine-b",
-        "loserName": "North Irvine B"
+        "winnerParticipantId": "tournament-team-2026-14u-boys-stanford-c",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD C",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-b",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3247,13 +3247,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "3rdG",
-          "displayName": "ALAMEDA",
-          "participantId": "tournament-team-2026-14u-boys-alameda",
-          "teamId": null,
+          "displayName": "Alameda",
+          "participantId": "team-2026-14u-boys-alameda-a",
+          "teamId": "team-2026-14u-boys-alameda-a",
           "clubId": "club-alameda",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "3rdH-LAMORINDA B",
@@ -3282,9 +3282,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-alameda",
-        "winnerTeamId": null,
-        "winnerName": "ALAMEDA",
+        "winnerParticipantId": "team-2026-14u-boys-alameda-a",
+        "winnerTeamId": "team-2026-14u-boys-alameda-a",
+        "winnerName": "Alameda",
         "loserParticipantId": "team-2026-14u-boys-lamorinda-b",
         "loserTeamId": "team-2026-14u-boys-lamorinda-b",
         "loserName": "Lamorinda B"
@@ -3335,13 +3335,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndJ",
-          "displayName": "TITANS",
-          "participantId": "tournament-team-2026-14u-boys-titans",
-          "teamId": null,
+          "displayName": "Titans",
+          "participantId": "team-2026-14u-boys-titans-a",
+          "teamId": "team-2026-14u-boys-titans-a",
           "clubId": "club-titans",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "2ndK-SOUTH COAST WHITE",
@@ -3373,9 +3373,9 @@
         "winnerParticipantId": "tournament-team-2026-14u-boys-south-coast-white",
         "winnerTeamId": null,
         "winnerName": "SOUTH COAST WHITE",
-        "loserParticipantId": "tournament-team-2026-14u-boys-titans",
-        "loserTeamId": null,
-        "loserName": "TITANS"
+        "loserParticipantId": "team-2026-14u-boys-titans-a",
+        "loserTeamId": "team-2026-14u-boys-titans-a",
+        "loserName": "Titans"
       },
       "advancement": {
         "winnerTo": null,
@@ -3424,12 +3424,12 @@
           "seed": null,
           "sourceReference": "3rdJ",
           "displayName": "CVU",
-          "participantId": "tournament-team-2026-14u-boys-cvu",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-cvu-a",
+          "teamId": "team-2026-14u-boys-cvu-a",
           "clubId": "club-cvu",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "3rdK-VANGUARD B",
@@ -3461,8 +3461,8 @@
         "winnerParticipantId": "team-2026-14u-boys-vanguard-b",
         "winnerTeamId": "team-2026-14u-boys-vanguard-b",
         "winnerName": "Vanguard B",
-        "loserParticipantId": "tournament-team-2026-14u-boys-cvu",
-        "loserTeamId": null,
+        "loserParticipantId": "team-2026-14u-boys-cvu-a",
+        "loserTeamId": "team-2026-14u-boys-cvu-a",
         "loserName": "CVU"
       },
       "advancement": {
@@ -3524,13 +3524,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "1stM",
-          "displayName": "Stanford C",
-          "participantId": "team-2026-14u-boys-stanford-c",
-          "teamId": "team-2026-14u-boys-stanford-c",
-          "clubId": "club-stanford",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "STANFORD C",
+          "participantId": "tournament-team-2026-14u-boys-stanford-c",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -3549,9 +3549,9 @@
         "winnerParticipantId": "team-2026-14u-boys-norcal-b",
         "winnerTeamId": "team-2026-14u-boys-norcal-b",
         "winnerName": "NorCal B",
-        "loserParticipantId": "team-2026-14u-boys-stanford-c",
-        "loserTeamId": "team-2026-14u-boys-stanford-c",
-        "loserName": "Stanford C"
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-c",
+        "loserTeamId": null,
+        "loserName": "STANFORD C"
       },
       "advancement": {
         "winnerTo": null,
@@ -3612,13 +3612,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndM",
-          "displayName": "American River B",
-          "participantId": "team-2026-14u-boys-american-river-b",
-          "teamId": "team-2026-14u-boys-american-river-b",
-          "clubId": "club-american-river",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "AMERICAN RIVER B",
+          "participantId": "tournament-team-2026-14u-boys-american-river-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -3637,9 +3637,9 @@
         "winnerParticipantId": "tournament-team-2026-14u-boys-supreme",
         "winnerTeamId": null,
         "winnerName": "SUPREME",
-        "loserParticipantId": "team-2026-14u-boys-american-river-b",
-        "loserTeamId": "team-2026-14u-boys-american-river-b",
-        "loserName": "American River B"
+        "loserParticipantId": "tournament-team-2026-14u-boys-american-river-b",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3700,13 +3700,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "3rdM",
-          "displayName": "North Irvine B",
-          "participantId": "team-2026-14u-boys-north-irvine-b",
-          "teamId": "team-2026-14u-boys-north-irvine-b",
-          "clubId": "club-north-irvine",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "displayName": "NORTH IRVINE B",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
@@ -3725,9 +3725,9 @@
         "winnerParticipantId": "team-2026-14u-boys-680-c",
         "winnerTeamId": "team-2026-14u-boys-680-c",
         "winnerName": "680 C",
-        "loserParticipantId": "team-2026-14u-boys-north-irvine-b",
-        "loserTeamId": "team-2026-14u-boys-north-irvine-b",
-        "loserName": "North Irvine B"
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-b",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3775,26 +3775,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndG",
-          "displayName": "VEGAS RENEGADES",
-          "participantId": "tournament-team-2026-14u-boys-vegas-renegades",
-          "teamId": null,
+          "displayName": "Vegas Renegades",
+          "participantId": "team-2026-14u-boys-vegas-renegades-a",
+          "teamId": "team-2026-14u-boys-vegas-renegades-a",
           "clubId": "club-vegas-renegades",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "2ndH-SJ FOUNDATION",
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndH",
-          "displayName": "SJ FOUNDATION",
-          "participantId": "tournament-team-2026-14u-boys-sj-foundation",
-          "teamId": null,
+          "displayName": "SJ Foundation",
+          "participantId": "team-2026-14u-boys-sj-foundation-a",
+          "teamId": "team-2026-14u-boys-sj-foundation-a",
           "clubId": "club-sj-foundation",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3810,12 +3810,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-vegas-renegades",
-        "winnerTeamId": null,
-        "winnerName": "VEGAS RENEGADES",
-        "loserParticipantId": "tournament-team-2026-14u-boys-sj-foundation",
-        "loserTeamId": null,
-        "loserName": "SJ FOUNDATION"
+        "winnerParticipantId": "team-2026-14u-boys-vegas-renegades-a",
+        "winnerTeamId": "team-2026-14u-boys-vegas-renegades-a",
+        "winnerName": "Vegas Renegades",
+        "loserParticipantId": "team-2026-14u-boys-sj-foundation-a",
+        "loserTeamId": "team-2026-14u-boys-sj-foundation-a",
+        "loserName": "SJ Foundation"
       },
       "advancement": {
         "winnerTo": null,
@@ -3866,10 +3866,10 @@
           "displayName": "LAWPC",
           "participantId": "tournament-team-2026-14u-boys-lawpc",
           "teamId": null,
-          "clubId": "club-lawpc",
+          "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
           "raw": "1stH-SKIP",
@@ -3877,12 +3877,12 @@
           "seed": null,
           "sourceReference": "1stH",
           "displayName": "SKIP",
-          "participantId": "tournament-team-2026-14u-boys-skip",
-          "teamId": null,
+          "participantId": "team-2026-14u-boys-skip-a",
+          "teamId": "team-2026-14u-boys-skip-a",
           "clubId": "club-skip",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3898,8 +3898,8 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-skip",
-        "winnerTeamId": null,
+        "winnerParticipantId": "team-2026-14u-boys-skip-a",
+        "winnerTeamId": "team-2026-14u-boys-skip-a",
         "winnerName": "SKIP",
         "loserParticipantId": "tournament-team-2026-14u-boys-lawpc",
         "loserTeamId": null,

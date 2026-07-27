@@ -23,7 +23,7 @@
     "gid": "581021594",
     "sheetName": null,
     "url": "https://docs.google.com/spreadsheets/d/1zawp4l5ElRiVjjkZwT2WFRnTXKLm7wVZA_cO0dxLAX4/edit?gid=581021594#gid=581021594",
-    "fetchedAt": "2026-07-18T00:46:28Z",
+    "fetchedAt": "2026-07-27T19:43:44Z",
     "mode": "cached_raw",
     "contentSha256": "9741fa3a97a7de4be42f386b42f451ed97559ea82098ec6d7d7114d2588a8cab",
     "rowCount": 77
@@ -35,12 +35,12 @@
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
     "teamParticipants": 90,
-    "resolvedTeamParticipants": 10,
-    "unresolvedTeamParticipants": 80,
+    "resolvedTeamParticipants": 40,
+    "unresolvedTeamParticipants": 50,
     "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 80
+    "reviewItems": 50
   },
   "placements": [],
   "games": [
@@ -170,23 +170,23 @@
           "displayName": "99 ALLIANCE",
           "participantId": "tournament-team-2026-18u-boys-99-alliance",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-99-alliance",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D3-ROUTE 66",
           "kind": "team",
           "seed": null,
           "sourceReference": "D3",
-          "displayName": "Route 66",
-          "participantId": "team-2026-18u-boys-route-66-18u-boys",
-          "teamId": "team-2026-18u-boys-route-66-18u-boys",
+          "displayName": "ROUTE 66",
+          "participantId": "tournament-team-2026-18u-boys-route-66",
+          "teamId": null,
           "clubId": "club-route-66",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -202,9 +202,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-18u-boys-route-66-18u-boys",
-        "winnerTeamId": "team-2026-18u-boys-route-66-18u-boys",
-        "winnerName": "Route 66",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-route-66",
+        "winnerTeamId": null,
+        "winnerName": "ROUTE 66",
         "loserParticipantId": "tournament-team-2026-18u-boys-99-alliance",
         "loserTeamId": null,
         "loserName": "99 ALLIANCE"
@@ -265,13 +265,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "E3",
-          "displayName": "SACRAMENTO",
-          "participantId": "tournament-team-2026-18u-boys-sacramento",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Sacramento",
+          "participantId": "team-2026-18u-boys-sacramento-18u-boys",
+          "teamId": "team-2026-18u-boys-sacramento-18u-boys",
+          "clubId": "club-sacramento",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -290,9 +290,9 @@
         "winnerParticipantId": "tournament-team-2026-18u-boys-la-verne",
         "winnerTeamId": null,
         "winnerName": "LA VERNE",
-        "loserParticipantId": "tournament-team-2026-18u-boys-sacramento",
-        "loserTeamId": null,
-        "loserName": "SACRAMENTO"
+        "loserParticipantId": "team-2026-18u-boys-sacramento-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-sacramento-18u-boys",
+        "loserName": "Sacramento"
       },
       "advancement": {
         "winnerTo": null,
@@ -435,13 +435,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "D3",
-          "displayName": "Route 66",
-          "participantId": "team-2026-18u-boys-route-66-18u-boys",
-          "teamId": "team-2026-18u-boys-route-66-18u-boys",
+          "displayName": "ROUTE 66",
+          "participantId": "tournament-team-2026-18u-boys-route-66",
+          "teamId": null,
           "clubId": "club-route-66",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -460,9 +460,9 @@
         "winnerParticipantId": "tournament-team-2026-18u-boys-chula-vista",
         "winnerTeamId": null,
         "winnerName": "CHULA VISTA",
-        "loserParticipantId": "team-2026-18u-boys-route-66-18u-boys",
-        "loserTeamId": "team-2026-18u-boys-route-66-18u-boys",
-        "loserName": "Route 66"
+        "loserParticipantId": "tournament-team-2026-18u-boys-route-66",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66"
       },
       "advancement": {
         "winnerTo": null,
@@ -520,13 +520,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "E3",
-          "displayName": "SACRAMENTO",
-          "participantId": "tournament-team-2026-18u-boys-sacramento",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Sacramento",
+          "participantId": "team-2026-18u-boys-sacramento-18u-boys",
+          "teamId": "team-2026-18u-boys-sacramento-18u-boys",
+          "clubId": "club-sacramento",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -542,9 +542,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-sacramento",
-        "winnerTeamId": null,
-        "winnerName": "SACRAMENTO",
+        "winnerParticipantId": "team-2026-18u-boys-sacramento-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-sacramento-18u-boys",
+        "winnerName": "Sacramento",
         "loserParticipantId": "tournament-team-2026-18u-boys-hydra",
         "loserTeamId": null,
         "loserName": "HYDRA"
@@ -680,10 +680,10 @@
           "displayName": "99 ALLIANCE",
           "participantId": "tournament-team-2026-18u-boys-99-alliance",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-99-alliance",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "D2-CHULA VISTA",
@@ -847,26 +847,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "B1",
-          "displayName": "MID PEN",
-          "participantId": "tournament-team-2026-18u-boys-mid-pen",
-          "teamId": null,
+          "displayName": "Mid Pen",
+          "participantId": "team-2026-18u-boys-mid-pen-18u-boys",
+          "teamId": "team-2026-18u-boys-mid-pen-18u-boys",
           "clubId": "club-mid-pen",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B3-NAVY",
           "kind": "team",
           "seed": null,
           "sourceReference": "B3",
-          "displayName": "NAVY",
-          "participantId": "tournament-team-2026-18u-boys-navy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Navy",
+          "participantId": "team-2026-18u-boys-navy-18u-boys",
+          "teamId": "team-2026-18u-boys-navy-18u-boys",
+          "clubId": "club-navy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -882,12 +882,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-mid-pen",
-        "winnerTeamId": null,
-        "winnerName": "MID PEN",
-        "loserParticipantId": "tournament-team-2026-18u-boys-navy",
-        "loserTeamId": null,
-        "loserName": "NAVY"
+        "winnerParticipantId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "winnerName": "Mid Pen",
+        "loserParticipantId": "team-2026-18u-boys-navy-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-navy-18u-boys",
+        "loserName": "Navy"
       },
       "advancement": {
         "winnerTo": null,
@@ -932,26 +932,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "C1",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-18u-boys-tsunami-18u-boys",
+          "teamId": "team-2026-18u-boys-tsunami-18u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C3-ASPHALT GREEN",
           "kind": "team",
           "seed": null,
           "sourceReference": "C3",
-          "displayName": "ASPHALT GREEN",
-          "participantId": "tournament-team-2026-18u-boys-asphalt-green",
-          "teamId": null,
+          "displayName": "Asphalt Green",
+          "participantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+          "teamId": "team-2026-18u-boys-asphalt-green-18u-boys",
           "clubId": "club-asphalt-green",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -967,12 +967,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-        "winnerTeamId": null,
-        "winnerName": "RANCHO TSUNAMI",
-        "loserParticipantId": "tournament-team-2026-18u-boys-asphalt-green",
-        "loserTeamId": null,
-        "loserName": "ASPHALT GREEN"
+        "winnerParticipantId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerName": "Rancho Tsunami",
+        "loserParticipantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "loserName": "Asphalt Green"
       },
       "advancement": {
         "winnerTo": null,
@@ -1017,13 +1017,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "F1",
-          "displayName": "AMERICAN RIVER B",
-          "participantId": "tournament-team-2026-18u-boys-american-river-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "American River B",
+          "participantId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "teamId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F3-RENEGADES",
@@ -1052,9 +1052,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-american-river-b",
-        "winnerTeamId": null,
-        "winnerName": "AMERICAN RIVER B",
+        "winnerParticipantId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "winnerName": "American River B",
         "loserParticipantId": "tournament-team-2026-18u-boys-renegades",
         "loserTeamId": null,
         "loserName": "RENEGADES"
@@ -1115,13 +1115,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "B3",
-          "displayName": "NAVY",
-          "participantId": "tournament-team-2026-18u-boys-navy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Navy",
+          "participantId": "team-2026-18u-boys-navy-18u-boys",
+          "teamId": "team-2026-18u-boys-navy-18u-boys",
+          "clubId": "club-navy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1140,9 +1140,9 @@
         "winnerParticipantId": "team-2026-18u-boys-la-jolla-united-b-18u-boys",
         "winnerTeamId": "team-2026-18u-boys-la-jolla-united-b-18u-boys",
         "winnerName": "La Jolla United B",
-        "loserParticipantId": "tournament-team-2026-18u-boys-navy",
-        "loserTeamId": null,
-        "loserName": "NAVY"
+        "loserParticipantId": "team-2026-18u-boys-navy-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-navy-18u-boys",
+        "loserName": "Navy"
       },
       "advancement": {
         "winnerTo": null,
@@ -1200,13 +1200,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "C3",
-          "displayName": "ASPHALT GREEN",
-          "participantId": "tournament-team-2026-18u-boys-asphalt-green",
-          "teamId": null,
+          "displayName": "Asphalt Green",
+          "participantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+          "teamId": "team-2026-18u-boys-asphalt-green-18u-boys",
           "clubId": "club-asphalt-green",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1232,9 +1232,9 @@
         "winnerParticipantId": "tournament-team-2026-18u-boys-trilogy",
         "winnerTeamId": null,
         "winnerName": "TRILOGY",
-        "loserParticipantId": "tournament-team-2026-18u-boys-asphalt-green",
-        "loserTeamId": null,
-        "loserName": "ASPHALT GREEN"
+        "loserParticipantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "loserName": "Asphalt Green"
       },
       "advancement": {
         "winnerTo": null,
@@ -1279,13 +1279,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "F2",
-          "displayName": "VIPER PIGEON",
-          "participantId": "tournament-team-2026-18u-boys-viper-pigeon",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Viper Pigeon",
+          "participantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "teamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F3-RENEGADES",
@@ -1314,9 +1314,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-viper-pigeon",
-        "winnerTeamId": null,
-        "winnerName": "VIPER PIGEON",
+        "winnerParticipantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "winnerName": "Viper Pigeon",
         "loserParticipantId": "tournament-team-2026-18u-boys-renegades",
         "loserTeamId": null,
         "loserName": "RENEGADES"
@@ -1364,13 +1364,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "B1",
-          "displayName": "MID PEN",
-          "participantId": "tournament-team-2026-18u-boys-mid-pen",
-          "teamId": null,
+          "displayName": "Mid Pen",
+          "participantId": "team-2026-18u-boys-mid-pen-18u-boys",
+          "teamId": "team-2026-18u-boys-mid-pen-18u-boys",
           "clubId": "club-mid-pen",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "B2-LA JOLLA UNITED B",
@@ -1402,9 +1402,9 @@
         "winnerParticipantId": "team-2026-18u-boys-la-jolla-united-b-18u-boys",
         "winnerTeamId": "team-2026-18u-boys-la-jolla-united-b-18u-boys",
         "winnerName": "La Jolla United B",
-        "loserParticipantId": "tournament-team-2026-18u-boys-mid-pen",
-        "loserTeamId": null,
-        "loserName": "MID PEN"
+        "loserParticipantId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "loserName": "Mid Pen"
       },
       "advancement": {
         "winnerTo": null,
@@ -1449,13 +1449,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "C1",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-18u-boys-tsunami-18u-boys",
+          "teamId": "team-2026-18u-boys-tsunami-18u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "C2-TRILOGY",
@@ -1484,9 +1484,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-        "winnerTeamId": null,
-        "winnerName": "RANCHO TSUNAMI",
+        "winnerParticipantId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerName": "Rancho Tsunami",
         "loserParticipantId": "tournament-team-2026-18u-boys-trilogy",
         "loserTeamId": null,
         "loserName": "TRILOGY"
@@ -1534,26 +1534,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "F1",
-          "displayName": "AMERICAN RIVER B",
-          "participantId": "tournament-team-2026-18u-boys-american-river-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "American River B",
+          "participantId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "teamId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "F2-VIPER PIGEON",
           "kind": "team",
           "seed": null,
           "sourceReference": "F2",
-          "displayName": "VIPER PIGEON",
-          "participantId": "tournament-team-2026-18u-boys-viper-pigeon",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Viper Pigeon",
+          "participantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "teamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1569,12 +1569,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-viper-pigeon",
-        "winnerTeamId": null,
-        "winnerName": "VIPER PIGEON",
-        "loserParticipantId": "tournament-team-2026-18u-boys-american-river-b",
-        "loserTeamId": null,
-        "loserName": "AMERICAN RIVER B"
+        "winnerParticipantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "winnerName": "Viper Pigeon",
+        "loserParticipantId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "loserName": "American River B"
       },
       "advancement": {
         "winnerTo": null,
@@ -1717,13 +1717,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "H3(1stF)",
-          "displayName": "VIPER PIGEON",
-          "participantId": "tournament-team-2026-18u-boys-viper-pigeon",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Viper Pigeon",
+          "participantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "teamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -1749,9 +1749,9 @@
         "winnerParticipantId": "team-2026-18u-boys-la-jolla-united-b-18u-boys",
         "winnerTeamId": "team-2026-18u-boys-la-jolla-united-b-18u-boys",
         "winnerName": "La Jolla United B",
-        "loserParticipantId": "tournament-team-2026-18u-boys-viper-pigeon",
-        "loserTeamId": null,
-        "loserName": "VIPER PIGEON"
+        "loserParticipantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "loserName": "Viper Pigeon"
       },
       "advancement": {
         "winnerTo": null,
@@ -1966,26 +1966,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "H2(1stC)",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-18u-boys-tsunami-18u-boys",
+          "teamId": "team-2026-18u-boys-tsunami-18u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "H3(1stF)-VIPER PIGEON",
           "kind": "team",
           "seed": null,
           "sourceReference": "H3(1stF)",
-          "displayName": "VIPER PIGEON",
-          "participantId": "tournament-team-2026-18u-boys-viper-pigeon",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Viper Pigeon",
+          "participantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "teamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2001,12 +2001,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-        "winnerTeamId": null,
-        "winnerName": "RANCHO TSUNAMI",
-        "loserParticipantId": "tournament-team-2026-18u-boys-viper-pigeon",
-        "loserTeamId": null,
-        "loserName": "VIPER PIGEON"
+        "winnerParticipantId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerName": "Rancho Tsunami",
+        "loserParticipantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "loserName": "Viper Pigeon"
       },
       "advancement": {
         "winnerTo": null,
@@ -2054,10 +2054,10 @@
           "displayName": "99 ALLIANCE",
           "participantId": "tournament-team-2026-18u-boys-99-alliance",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-99-alliance",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "L3(3rdE)-HYDRA",
@@ -2234,13 +2234,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "H2(1stC)",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-18u-boys-tsunami-18u-boys",
+          "teamId": "team-2026-18u-boys-tsunami-18u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2256,9 +2256,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-        "winnerTeamId": null,
-        "winnerName": "RANCHO TSUNAMI",
+        "winnerParticipantId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerName": "Rancho Tsunami",
         "loserParticipantId": "team-2026-18u-boys-la-jolla-united-b-18u-boys",
         "loserTeamId": "team-2026-18u-boys-la-jolla-united-b-18u-boys",
         "loserName": "La Jolla United B"
@@ -2322,10 +2322,10 @@
           "displayName": "99 ALLIANCE",
           "participantId": "tournament-team-2026-18u-boys-99-alliance",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-99-alliance",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -2411,13 +2411,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "J3(2ndE)",
-          "displayName": "SACRAMENTO",
-          "participantId": "tournament-team-2026-18u-boys-sacramento",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Sacramento",
+          "participantId": "team-2026-18u-boys-sacramento-18u-boys",
+          "teamId": "team-2026-18u-boys-sacramento-18u-boys",
+          "clubId": "club-sacramento",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2433,9 +2433,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-sacramento",
-        "winnerTeamId": null,
-        "winnerName": "SACRAMENTO",
+        "winnerParticipantId": "team-2026-18u-boys-sacramento-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-sacramento-18u-boys",
+        "winnerName": "Sacramento",
         "loserParticipantId": "tournament-team-2026-18u-boys-foothill-club-b",
         "loserTeamId": null,
         "loserName": "FOOTHILL CLUB B"
@@ -2483,26 +2483,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "K1(2ndB)",
-          "displayName": "MID PEN",
-          "participantId": "tournament-team-2026-18u-boys-mid-pen",
-          "teamId": null,
+          "displayName": "Mid Pen",
+          "participantId": "team-2026-18u-boys-mid-pen-18u-boys",
+          "teamId": "team-2026-18u-boys-mid-pen-18u-boys",
           "clubId": "club-mid-pen",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "K3(2ndF)-AMERICAN RIVER B",
           "kind": "team",
           "seed": null,
           "sourceReference": "K3(2ndF)",
-          "displayName": "AMERICAN RIVER B",
-          "participantId": "tournament-team-2026-18u-boys-american-river-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "American River B",
+          "participantId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "teamId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2518,12 +2518,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-american-river-b",
-        "winnerTeamId": null,
-        "winnerName": "AMERICAN RIVER B",
-        "loserParticipantId": "tournament-team-2026-18u-boys-mid-pen",
-        "loserTeamId": null,
-        "loserName": "MID PEN"
+        "winnerParticipantId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "winnerName": "American River B",
+        "loserParticipantId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "loserName": "Mid Pen"
       },
       "advancement": {
         "winnerTo": null,
@@ -2568,13 +2568,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "M1(3rdB)",
-          "displayName": "NAVY",
-          "participantId": "tournament-team-2026-18u-boys-navy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Navy",
+          "participantId": "team-2026-18u-boys-navy-18u-boys",
+          "teamId": "team-2026-18u-boys-navy-18u-boys",
+          "clubId": "club-navy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "M3(3rdF)-RENEGADES",
@@ -2606,9 +2606,9 @@
         "winnerParticipantId": "tournament-team-2026-18u-boys-renegades",
         "winnerTeamId": null,
         "winnerName": "RENEGADES",
-        "loserParticipantId": "tournament-team-2026-18u-boys-navy",
-        "loserTeamId": null,
-        "loserName": "NAVY"
+        "loserParticipantId": "team-2026-18u-boys-navy-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-navy-18u-boys",
+        "loserName": "Navy"
       },
       "advancement": {
         "winnerTo": null,
@@ -2653,26 +2653,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "J2(2ndD)",
-          "displayName": "Route 66",
-          "participantId": "team-2026-18u-boys-route-66-18u-boys",
-          "teamId": "team-2026-18u-boys-route-66-18u-boys",
+          "displayName": "ROUTE 66",
+          "participantId": "tournament-team-2026-18u-boys-route-66",
+          "teamId": null,
           "clubId": "club-route-66",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "J3(2ndE)-SACRAMENTO",
           "kind": "team",
           "seed": null,
           "sourceReference": "J3(2ndE)",
-          "displayName": "SACRAMENTO",
-          "participantId": "tournament-team-2026-18u-boys-sacramento",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Sacramento",
+          "participantId": "team-2026-18u-boys-sacramento-18u-boys",
+          "teamId": "team-2026-18u-boys-sacramento-18u-boys",
+          "clubId": "club-sacramento",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2688,12 +2688,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-sacramento",
-        "winnerTeamId": null,
-        "winnerName": "SACRAMENTO",
-        "loserParticipantId": "team-2026-18u-boys-route-66-18u-boys",
-        "loserTeamId": "team-2026-18u-boys-route-66-18u-boys",
-        "loserName": "Route 66"
+        "winnerParticipantId": "team-2026-18u-boys-sacramento-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-sacramento-18u-boys",
+        "winnerName": "Sacramento",
+        "loserParticipantId": "tournament-team-2026-18u-boys-route-66",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66"
       },
       "advancement": {
         "winnerTo": null,
@@ -2751,13 +2751,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "K3(2ndF)",
-          "displayName": "AMERICAN RIVER B",
-          "participantId": "tournament-team-2026-18u-boys-american-river-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "American River B",
+          "participantId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "teamId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -2776,9 +2776,9 @@
         "winnerParticipantId": "tournament-team-2026-18u-boys-trilogy",
         "winnerTeamId": null,
         "winnerName": "TRILOGY",
-        "loserParticipantId": "tournament-team-2026-18u-boys-american-river-b",
-        "loserTeamId": null,
-        "loserName": "AMERICAN RIVER B"
+        "loserParticipantId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "loserName": "American River B"
       },
       "advancement": {
         "winnerTo": null,
@@ -2823,13 +2823,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "M2(3rdC)",
-          "displayName": "ASPHALT GREEN",
-          "participantId": "tournament-team-2026-18u-boys-asphalt-green",
-          "teamId": null,
+          "displayName": "Asphalt Green",
+          "participantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+          "teamId": "team-2026-18u-boys-asphalt-green-18u-boys",
           "clubId": "club-asphalt-green",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "M3(3rdF)-RENEGADES",
@@ -2858,9 +2858,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-asphalt-green",
-        "winnerTeamId": null,
-        "winnerName": "ASPHALT GREEN",
+        "winnerParticipantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "winnerName": "Asphalt Green",
         "loserParticipantId": "tournament-team-2026-18u-boys-renegades",
         "loserTeamId": null,
         "loserName": "RENEGADES"
@@ -2921,13 +2921,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "J2(2ndD)",
-          "displayName": "Route 66",
-          "participantId": "team-2026-18u-boys-route-66-18u-boys",
-          "teamId": "team-2026-18u-boys-route-66-18u-boys",
+          "displayName": "ROUTE 66",
+          "participantId": "tournament-team-2026-18u-boys-route-66",
+          "teamId": null,
           "clubId": "club-route-66",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
@@ -2943,9 +2943,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-18u-boys-route-66-18u-boys",
-        "winnerTeamId": "team-2026-18u-boys-route-66-18u-boys",
-        "winnerName": "Route 66",
+        "winnerParticipantId": "tournament-team-2026-18u-boys-route-66",
+        "winnerTeamId": null,
+        "winnerName": "ROUTE 66",
         "loserParticipantId": "tournament-team-2026-18u-boys-foothill-club-b",
         "loserTeamId": null,
         "loserName": "FOOTHILL CLUB B"
@@ -2993,13 +2993,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "K1(2ndB)",
-          "displayName": "MID PEN",
-          "participantId": "tournament-team-2026-18u-boys-mid-pen",
-          "teamId": null,
+          "displayName": "Mid Pen",
+          "participantId": "team-2026-18u-boys-mid-pen-18u-boys",
+          "teamId": "team-2026-18u-boys-mid-pen-18u-boys",
           "clubId": "club-mid-pen",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "K2(2ndC)-TRILOGY",
@@ -3031,9 +3031,9 @@
         "winnerParticipantId": "tournament-team-2026-18u-boys-trilogy",
         "winnerTeamId": null,
         "winnerName": "TRILOGY",
-        "loserParticipantId": "tournament-team-2026-18u-boys-mid-pen",
-        "loserTeamId": null,
-        "loserName": "MID PEN"
+        "loserParticipantId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "loserName": "Mid Pen"
       },
       "advancement": {
         "winnerTo": null,
@@ -3078,26 +3078,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "M1(3rdB)",
-          "displayName": "NAVY",
-          "participantId": "tournament-team-2026-18u-boys-navy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Navy",
+          "participantId": "team-2026-18u-boys-navy-18u-boys",
+          "teamId": "team-2026-18u-boys-navy-18u-boys",
+          "clubId": "club-navy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "M2(3rdC)-ASPHALT GREEN",
           "kind": "team",
           "seed": null,
           "sourceReference": "M2(3rdC)",
-          "displayName": "ASPHALT GREEN",
-          "participantId": "tournament-team-2026-18u-boys-asphalt-green",
-          "teamId": null,
+          "displayName": "Asphalt Green",
+          "participantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+          "teamId": "team-2026-18u-boys-asphalt-green-18u-boys",
           "clubId": "club-asphalt-green",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3113,12 +3113,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-asphalt-green",
-        "winnerTeamId": null,
-        "winnerName": "ASPHALT GREEN",
-        "loserParticipantId": "tournament-team-2026-18u-boys-navy",
-        "loserTeamId": null,
-        "loserName": "NAVY"
+        "winnerParticipantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "winnerName": "Asphalt Green",
+        "loserParticipantId": "team-2026-18u-boys-navy-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-navy-18u-boys",
+        "loserName": "Navy"
       },
       "advancement": {
         "winnerTo": null,
@@ -3179,13 +3179,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "3rdH",
-          "displayName": "VIPER PIGEON",
-          "participantId": "tournament-team-2026-18u-boys-viper-pigeon",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Viper Pigeon",
+          "participantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "teamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3204,9 +3204,9 @@
         "winnerParticipantId": "tournament-team-2026-18u-boys-chula-vista",
         "winnerTeamId": null,
         "winnerName": "CHULA VISTA",
-        "loserParticipantId": "tournament-team-2026-18u-boys-viper-pigeon",
-        "loserTeamId": null,
-        "loserName": "VIPER PIGEON"
+        "loserParticipantId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-viper-pigeon-18u-boys",
+        "loserName": "Viper Pigeon"
       },
       "advancement": {
         "winnerTo": null,
@@ -3254,13 +3254,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "1stJ",
-          "displayName": "SACRAMENTO",
-          "participantId": "tournament-team-2026-18u-boys-sacramento",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Sacramento",
+          "participantId": "team-2026-18u-boys-sacramento-18u-boys",
+          "teamId": "team-2026-18u-boys-sacramento-18u-boys",
+          "clubId": "club-sacramento",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         },
         "dark": {
           "raw": "1stK-TRILOGY",
@@ -3289,9 +3289,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-sacramento",
-        "winnerTeamId": null,
-        "winnerName": "SACRAMENTO",
+        "winnerParticipantId": "team-2026-18u-boys-sacramento-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-sacramento-18u-boys",
+        "winnerName": "Sacramento",
         "loserParticipantId": "tournament-team-2026-18u-boys-trilogy",
         "loserTeamId": null,
         "loserName": "TRILOGY"
@@ -3342,26 +3342,26 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndJ",
-          "displayName": "Route 66",
-          "participantId": "team-2026-18u-boys-route-66-18u-boys",
-          "teamId": "team-2026-18u-boys-route-66-18u-boys",
+          "displayName": "ROUTE 66",
+          "participantId": "tournament-team-2026-18u-boys-route-66",
+          "teamId": null,
           "clubId": "club-route-66",
-          "rankingEligible": true,
-          "identityStatus": "resolved_team",
-          "identityMatchType": "scoped_alias"
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "2ndK-AMERICAN RIVER B",
           "kind": "team",
           "seed": null,
           "sourceReference": "2ndK",
-          "displayName": "AMERICAN RIVER B",
-          "participantId": "tournament-team-2026-18u-boys-american-river-b",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "American River B",
+          "participantId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "teamId": "team-2026-18u-boys-american-river-b-18u-boys",
+          "clubId": "club-american-river",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3377,12 +3377,12 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-18u-boys-route-66-18u-boys",
-        "winnerTeamId": "team-2026-18u-boys-route-66-18u-boys",
-        "winnerName": "Route 66",
-        "loserParticipantId": "tournament-team-2026-18u-boys-american-river-b",
-        "loserTeamId": null,
-        "loserName": "AMERICAN RIVER B"
+        "winnerParticipantId": "tournament-team-2026-18u-boys-route-66",
+        "winnerTeamId": null,
+        "winnerName": "ROUTE 66",
+        "loserParticipantId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-american-river-b-18u-boys",
+        "loserName": "American River B"
       },
       "advancement": {
         "winnerTo": null,
@@ -3443,13 +3443,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "3rdK",
-          "displayName": "MID PEN",
-          "participantId": "tournament-team-2026-18u-boys-mid-pen",
-          "teamId": null,
+          "displayName": "Mid Pen",
+          "participantId": "team-2026-18u-boys-mid-pen-18u-boys",
+          "teamId": "team-2026-18u-boys-mid-pen-18u-boys",
           "clubId": "club-mid-pen",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3468,9 +3468,9 @@
         "winnerParticipantId": "tournament-team-2026-18u-boys-foothill-club-b",
         "winnerTeamId": null,
         "winnerName": "FOOTHILL CLUB B",
-        "loserParticipantId": "tournament-team-2026-18u-boys-mid-pen",
-        "loserTeamId": null,
-        "loserName": "MID PEN"
+        "loserParticipantId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "loserTeamId": "team-2026-18u-boys-mid-pen-18u-boys",
+        "loserName": "Mid Pen"
       },
       "advancement": {
         "winnerTo": null,
@@ -3521,23 +3521,23 @@
           "displayName": "99 ALLIANCE",
           "participantId": "tournament-team-2026-18u-boys-99-alliance",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-99-alliance",
           "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
           "raw": "1stM-ASPHALT GREEN",
           "kind": "team",
           "seed": null,
           "sourceReference": "1stM",
-          "displayName": "ASPHALT GREEN",
-          "participantId": "tournament-team-2026-18u-boys-asphalt-green",
-          "teamId": null,
+          "displayName": "Asphalt Green",
+          "participantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+          "teamId": "team-2026-18u-boys-asphalt-green-18u-boys",
           "clubId": "club-asphalt-green",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3553,9 +3553,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-asphalt-green",
-        "winnerTeamId": null,
-        "winnerName": "ASPHALT GREEN",
+        "winnerParticipantId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-asphalt-green-18u-boys",
+        "winnerName": "Asphalt Green",
         "loserParticipantId": "tournament-team-2026-18u-boys-99-alliance",
         "loserTeamId": null,
         "loserName": "99 ALLIANCE"
@@ -3707,13 +3707,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "3rdM",
-          "displayName": "NAVY",
-          "participantId": "tournament-team-2026-18u-boys-navy",
-          "teamId": null,
-          "clubId": null,
-          "rankingEligible": false,
-          "identityStatus": "unresolved",
-          "identityMatchType": "tournament_only"
+          "displayName": "Navy",
+          "participantId": "team-2026-18u-boys-navy-18u-boys",
+          "teamId": "team-2026-18u-boys-navy-18u-boys",
+          "clubId": "club-navy",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3729,9 +3729,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-navy",
-        "winnerTeamId": null,
-        "winnerName": "NAVY",
+        "winnerParticipantId": "team-2026-18u-boys-navy-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-navy-18u-boys",
+        "winnerName": "Navy",
         "loserParticipantId": "tournament-team-2026-18u-boys-hydra",
         "loserTeamId": null,
         "loserName": "HYDRA"
@@ -3883,13 +3883,13 @@
           "kind": "team",
           "seed": null,
           "sourceReference": "1stH",
-          "displayName": "RANCHO TSUNAMI",
-          "participantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-          "teamId": null,
+          "displayName": "Rancho Tsunami",
+          "participantId": "team-2026-18u-boys-tsunami-18u-boys",
+          "teamId": "team-2026-18u-boys-tsunami-18u-boys",
           "clubId": "club-rancho-tsunami",
-          "rankingEligible": false,
-          "identityStatus": "resolved_club_only",
-          "identityMatchType": "club_alias"
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
         }
       },
       "scores": {
@@ -3905,9 +3905,9 @@
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-18u-boys-rancho-tsunami",
-        "winnerTeamId": null,
-        "winnerName": "RANCHO TSUNAMI",
+        "winnerParticipantId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerTeamId": "team-2026-18u-boys-tsunami-18u-boys",
+        "winnerName": "Rancho Tsunami",
         "loserParticipantId": "tournament-team-2026-18u-boys-trojan-gold",
         "loserTeamId": null,
         "loserName": "TROJAN GOLD"
