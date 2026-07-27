@@ -31,7 +31,7 @@ html = (ROOT / "tournaments.html").read_text(encoding="utf-8")
 js = (ROOT / "js/jo-results-browser-v7-52-1.js").read_text(encoding="utf-8")
 css_path = ROOT / "css/jo-results-browser-v7-52-1.css"
 
-if site.get("version") not in {"7.52.1", "7.52.2"}:
+if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3"}:
     fail("site release must preserve JO results browser compatibility")
 if site.get("joResultsRelease") != "7.52.1":
     fail("joResultsRelease must be 7.52.1")

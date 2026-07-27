@@ -1,6 +1,6 @@
 /*
   CPI 5.3C — Command Palette Search
-  Opens with Cmd+K / Ctrl+K or by clicking Search CPI.
+  Opens with Cmd+K / Ctrl+K or by clicking Search WPI.
 */
 (function () {
   let searchIndex = [];
@@ -16,8 +16,17 @@
     }
   }
 
-  function depthPrefix() {
-    return window.location.pathname.includes("/club/") ? "../" : "";
+  function paletteScriptUrl() {
+    const scripts = Array.from(document.scripts);
+    const script = document.currentScript || scripts.find(item => /\/js\/command-palette\.js(?:\?|$)/.test(item.src));
+    return script ? new URL(script.src, window.location.href) : new URL("js/command-palette.js", window.location.href);
+  }
+
+  const siteRoot = new URL("../", paletteScriptUrl());
+
+  function makeHref(path) {
+    if (/^(?:https?:|mailto:|tel:|#)/.test(path)) return path;
+    return new URL(path, siteRoot).href;
   }
 
   function add(type, title, subtitle, url, keywords) {
@@ -33,23 +42,21 @@
   async function buildIndex() {
     if (searchIndex.length) return;
 
-    const depth = depthPrefix();
-
-    add("Page", "Home", "California Polo Index front page", depth + "index.html", ["cpi"]);
-    add("Page", "Rankings", "Current CPI rankings", depth + "rankings.html", ["top 25 teams"]);
-    add("Page", "Clubs", "Club intelligence and profiles", depth + "clubs.html", ["club profiles"]);
-    add("Page", "Tournaments", "Tournament recaps and events", depth + "tournaments.html", ["recap"]);
-    add("Page", "Methodology", "How CPI rankings work", depth + "methodology.html", ["algorithm"]);
+    add("Page", "Home", "Water Polo Index front page", makeHref("index.html"), ["wpi", "cpi"]);
+    add("Page", "Rankings", "Current WPI rankings", makeHref("rankings.html"), ["top 25 teams"]);
+    add("Page", "Clubs", "Club intelligence and profiles", makeHref("clubs.html"), ["club profiles"]);
+    add("Page", "Tournaments", "Tournament recaps and events", makeHref("tournaments.html"), ["recap"]);
+    add("Page", "Methodology", "How WPI rankings work", makeHref("methodology.html"), ["algorithm"]);
     ["12u-boys","12u-girls","14u-boys","14u-girls","16u-boys","16u-girls","18u-boys","18u-girls"].forEach(slug => {
-      add("Age Group", slug.replaceAll("-", " ").toUpperCase(), "Age group hub", depth + slug + ".html", [slug]);
+      add("Age Group", slug.replaceAll("-", " ").toUpperCase(), "Age group hub", makeHref(slug + ".html"), [slug]);
     });
 
-    const clubIntel = await fetchJson(depth + "data/club-intelligence.json");
+    const clubIntel = await fetchJson(makeHref("data/club-intelligence.json"));
     if (clubIntel && clubIntel.clubs) {
       Object.values(clubIntel.clubs).forEach(club => {
-        add("Club", club.displayName, `${club.rankedTeams || 0} ranked teams · best rank #${club.bestRank || "—"}`, depth + `club/${club.slug}.html`, [club.region, club.slug]);
+        add("Club", club.displayName, `${club.rankedTeams || 0} ranked teams · best rank #${club.bestRank || "—"}`, makeHref(`club/${club.slug}.html`), [club.region, club.slug]);
         (club.teams || []).forEach(team => {
-          add("Team", team.team, `${team.group || team.ageGroup || "Team"} · #${team.rank || "—"} · ${team.cpi || "—"} CPI`, depth + (team.page || "rankings.html"), [club.displayName, team.group, team.latestTournament, team.record]);
+          add("Team", team.team, `${team.group || team.ageGroup || "Team"} · #${team.rank || "—"} · ${team.cpi || "—"} CPI`, makeHref(team.page || "rankings.html"), [club.displayName, team.group, team.latestTournament, team.record]);
         });
       });
     }
@@ -57,12 +64,12 @@
     const rankings = window.CPI_RANKINGS || [];
     rankings.forEach(team => {
       if (!team.team) return;
-      add("Team", team.team, `${team.group || ""} · #${team.postRank || "—"} · ${team.club || ""}`, depth + (team.teamPage || "rankings.html"), [team.club, team.group, team.latestTournament]);
+      add("Team", team.team, `${team.group || ""} · #${team.postRank || "—"} · ${team.club || ""}`, makeHref(team.teamPage || "rankings.html"), [team.club, team.group, team.latestTournament]);
     });
 
     const tournaments = window.CPI_TOURNAMENTS || [];
     tournaments.forEach(t => {
-      add("Tournament", t.name || t.title, t.date || t.location || "Tournament", depth + (t.url || "tournaments.html"), [t.location, t.tier]);
+      add("Tournament", t.name || t.title, t.date || t.location || "Tournament", makeHref(t.url || "tournaments.html"), [t.location, t.tier]);
     });
   }
 
@@ -70,7 +77,7 @@
     if (document.querySelector(".cpi-command-overlay")) return;
 
     document.body.insertAdjacentHTML("beforeend", `
-      <div class="cpi-command-overlay" role="dialog" aria-modal="true" aria-label="Search CPI">
+      <div class="cpi-command-overlay" role="dialog" aria-modal="true" aria-label="Search WPI">
         <div class="cpi-command">
           <div class="cpi-command-top">
             <span class="cpi-command-icon">⌘K</span>

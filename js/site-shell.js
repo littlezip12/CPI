@@ -1,14 +1,12 @@
-/*
-  CPI 5.3A — Universal Site Shell
-*/
+/* WPI universal site shell — CPI release 7.52.3 */
 (function () {
   const navItems = [
-    { label: "Home", href: "index.html", match: ["index.html", ""] },
-    { label: "Rankings", href: "rankings.html", match: ["rankings.html"] },
-    { label: "Clubs", href: "clubs.html", match: ["clubs.html", "club.html", "/club/"] },
-    { label: "Tournaments", href: "tournaments.html", match: ["tournaments.html"] },
-    { label: "Stories", href: "stories.html", match: ["stories.html", "/stories/"] },
-    { label: "Methodology", href: "methodology.html", match: ["methodology.html"] }
+    { label: "Home", href: "index.html", matches: path => !path || path === "index.html" },
+    { label: "Rankings", href: "rankings.html", matches: path => path === "rankings.html" || /^(12|14|16|18)u-(boys|girls)\.html$/.test(path) },
+    { label: "Clubs", href: "clubs.html", matches: path => path === "clubs.html" || path === "club.html" || path.startsWith("club/") },
+    { label: "Tournaments", href: "tournaments.html", matches: path => path === "tournaments.html" || path.startsWith("tournaments/") || ["jo-boys.html", "jo-girls.html", "quicksilver-cup-2026.html", "tournament-archive.html"].includes(path) },
+    { label: "Stories", href: "stories.html", matches: path => path === "stories.html" || path.startsWith("stories/") },
+    { label: "Methodology", href: "methodology.html", matches: path => path === "methodology.html" }
   ];
 
   const quickLinks = [
@@ -20,87 +18,87 @@
     { label: "16U Girls", href: "rankings.html?group=16u-girls" },
     { label: "18U Boys", href: "rankings.html?group=18u-boys" },
     { label: "18U Girls", href: "rankings.html?group=18u-girls" },
-    { label: "Clubs", href: "clubs.html" },
-    { label: "Methodology", href: "methodology.html" }
+    { label: "JO Results", href: "tournaments.html#jo-results" },
+    { label: "Clubs", href: "clubs.html" }
   ];
 
-  function depthPrefix() {
-    return window.location.pathname.includes("/club/") ? "../" : "";
+  function shellScriptUrl() {
+    const scripts = Array.from(document.scripts);
+    const script = document.currentScript || scripts.find(item => /\/js\/site-shell\.js(?:\?|$)/.test(item.src));
+    return script ? new URL(script.src, window.location.href) : new URL("js/site-shell.js", window.location.href);
   }
 
-  function currentFile() {
-    const parts = window.location.pathname.split("/");
-    return parts[parts.length - 1] || "index.html";
-  }
+  const siteRoot = new URL("../", shellScriptUrl());
 
   function makeHref(href) {
-    if (/^https?:/.test(href) || href.startsWith("#")) return href;
-    return depthPrefix() + href;
+    if (/^(?:https?:|mailto:|tel:|#)/.test(href)) return href;
+    return new URL(href, siteRoot).href;
   }
 
-  function isActive(item) {
-    const current = currentFile();
-    const path = window.location.pathname;
-    return item.match.some(token => {
-      if (token === "") return current === "index.html";
-      if (token.startsWith("/")) return path.includes(token);
-      return current === token;
-    });
-  }
-
-  function brandLogo() {
-    return `${makeHref("assets/branding/wpi-logo.png")}`;
+  function currentPath() {
+    const page = new URL(window.location.href);
+    const rootPath = siteRoot.pathname.endsWith("/") ? siteRoot.pathname : `${siteRoot.pathname}/`;
+    let path = page.pathname;
+    if (path.startsWith(rootPath)) path = path.slice(rootPath.length);
+    path = path.replace(/^\/+/, "");
+    if (!path || path.endsWith("/")) path += "index.html";
+    return decodeURIComponent(path);
   }
 
   function headerHtml() {
+    const path = currentPath();
     const nav = navItems.map(item =>
-      `<a class="cpi-shell-nav-link ${isActive(item) ? "is-active" : ""}" href="${makeHref(item.href)}">${item.label}</a>`
+      `<a class="cpi-shell-nav-link ${item.matches(path) ? "is-active" : ""}" href="${makeHref(item.href)}">${item.label}</a>`
     ).join("");
-
-    const quick = quickLinks.map(item =>
-      `<a href="${makeHref(item.href)}">${item.label}</a>`
-    ).join("");
+    const quick = quickLinks.map(item => `<a href="${makeHref(item.href)}">${item.label}</a>`).join("");
 
     return `<header class="cpi-shell-header" data-cpi-shell="header">
       <div class="cpi-shell-nav">
         <a class="cpi-shell-brand" href="${makeHref("index.html")}" aria-label="Water Polo Index Home">
-          <span class="cpi-shell-logo-frame"><img class="cpi-shell-logo" src="${brandLogo()}" alt="Water Polo Index"></span>
+          <span class="cpi-shell-logo-frame"><img class="cpi-shell-logo cpi-shell-logo--mark" src="${makeHref("assets/branding/wpi-logo-mark.png")}" alt="Water Polo Index"></span>
           <span class="cpi-shell-brand-text">
             <strong>Water Polo Index</strong>
             <em>Rankings. Results. Club intelligence.</em>
           </span>
         </a>
-        <nav class="cpi-shell-links">${nav}</nav>
+        <nav class="cpi-shell-links" aria-label="Primary navigation">${nav}</nav>
         <button class="cpi-shell-search" type="button" aria-label="Search WPI"><span>Search WPI</span></button>
       </div>
-      <div class="cpi-shell-quick">${quick}</div>
+      <div class="cpi-shell-quick" aria-label="Quick ranking links">${quick}</div>
     </header>`;
   }
 
   function footerHtml() {
     const year = new Date().getFullYear();
     return `<footer class="cpi-shell-footer" data-cpi-shell="footer">
-      <div class="cpi-shell-footer-brand">
-        <span class="cpi-shell-logo-frame cpi-shell-logo-frame--footer"><img class="cpi-shell-logo" src="${brandLogo()}" alt="Water Polo Index"></span>
-        <div>
-          <strong>Water Polo Index</strong>
+      <div class="cpi-shell-footer-grid">
+        <div class="cpi-shell-footer-brand">
+          <a href="${makeHref("index.html")}" aria-label="Water Polo Index Home">
+            <span class="cpi-shell-logo-frame cpi-shell-logo-frame--footer"><img class="cpi-shell-logo cpi-shell-logo--full" src="${makeHref("assets/branding/wpi-logo-full.png")}" alt="Water Polo Index"></span>
+          </a>
           <p>Independent and unofficial rankings, results, and club intelligence for youth water polo.</p>
         </div>
+        <nav><strong>Explore</strong><a href="${makeHref("rankings.html")}">Rankings</a><a href="${makeHref("clubs.html")}">Clubs</a><a href="${makeHref("tournaments.html")}">Tournaments</a><a href="${makeHref("stories.html")}">Stories</a><a href="${makeHref("methodology.html")}">Methodology</a></nav>
+        <nav><strong>Age Groups</strong><a href="${makeHref("rankings.html?group=12u-boys")}">12U Boys</a><a href="${makeHref("rankings.html?group=12u-girls")}">12U Girls</a><a href="${makeHref("rankings.html?group=14u-boys")}">14U Boys</a><a href="${makeHref("rankings.html?group=14u-girls")}">14U Girls</a><a href="${makeHref("rankings.html?group=16u-boys")}">16U Boys</a><a href="${makeHref("rankings.html?group=16u-girls")}">16U Girls</a><a href="${makeHref("rankings.html?group=18u-boys")}">18U Boys</a><a href="${makeHref("rankings.html?group=18u-girls")}">18U Girls</a></nav>
+        <div class="cpi-shell-footer-about"><strong>About WPI</strong><p>Water Polo Index is building a broader youth water polo data platform for rankings, tournament results, and club intelligence.</p><a href="${makeHref("methodology.html")}">Learn more →</a></div>
       </div>
-      <nav>
-        <a href="${makeHref("rankings.html")}">Rankings</a>
-        <a href="${makeHref("clubs.html")}">Clubs</a>
-        <a href="${makeHref("tournaments.html")}">Tournaments</a>
-        <a href="${makeHref("methodology.html")}">Methodology</a>
-      </nav>
-      <small>© ${year} WPI</small>
+      <div class="cpi-shell-footer-bottom">© ${year} Water Polo Index. All rights reserved.</div>
     </footer>`;
   }
 
+  function hideLegacyShell() {
+    Array.from(document.body.children).forEach(element => {
+      if ((element.tagName === "HEADER" || element.tagName === "FOOTER") && !element.hasAttribute("data-cpi-shell")) {
+        element.classList.add("cpi-legacy-shell-hidden");
+        element.setAttribute("aria-hidden", "true");
+      }
+    });
+  }
+
   function installShell() {
-    if (document.querySelector("[data-cpi-shell='header']")) return;
+    if (!document.body || document.querySelector("[data-cpi-shell='header']")) return;
     document.body.classList.add("cpi-shell-enabled");
-    document.querySelectorAll(".site-header").forEach(h => h.classList.add("cpi-legacy-header-hidden"));
+    hideLegacyShell();
     document.body.insertAdjacentHTML("afterbegin", headerHtml());
     document.body.insertAdjacentHTML("beforeend", footerHtml());
 
@@ -112,6 +110,6 @@
     }
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", installShell);
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", installShell, { once: true });
   else installShell();
 })();

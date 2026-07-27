@@ -1,10 +1,11 @@
-# CPI 7.52.2
+# CPI 7.52.3
 
-2026 Girls post-Junior Olympics rankings with WPI brand integration hotfix.
+Water Polo Index universal site shell.
 
-- Preserves the published 7.52.2 Girls post-JO rankings baseline.
-- Adds the approved WPI logo as a shared site branding asset.
-- Updates the universal site shell header and footer from California Polo Index to Water Polo Index.
-- Updates the homepage header and footer branding to WPI.
-- Refreshes stale homepage Girls ranking status copy now that Girls post-JO rankings are live.
-- Broadens homepage and footer copy from California-only language to youth water polo language.
+- Preserves all 724 published post-JO rankings across eight groups.
+- Adds the approved WPI logo mark and full lockup as shared brand assets.
+- Installs one consistent Water Polo Index header and footer across all 263 HTML pages.
+- Uses script-relative URL resolution so the shell works on root pages, club pages, stories, QA pages, and nested tournament applications.
+- Hides legacy page-level headers and footers without changing page content or application controls.
+- Updates page titles and formal California Polo Index brand references to Water Polo Index.
+- Updates the club-page generator so future regenerated club profiles retain the WPI shell.

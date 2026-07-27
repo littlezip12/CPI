@@ -1,16 +1,32 @@
-CPI 7.52.3 — WPI Brand Integration
+CPI 7.52.3 — Water Polo Index Universal Header & Footer
 
-Added files: 2
-Modified files: 5
+Added files: 3
+Modified files: 275
 Deleted files: 0
 
 ADDED
-INSTALL_7.52.3.md
-assets/branding/wpi-logo.png
+assets/branding/wpi-logo-mark.png
+assets/branding/wpi-logo-full.png
+scripts/test-wpi-universal-shell-v7-52-3.py
 
 MODIFIED
+263 HTML pages across the repository
 VERSION.md
-index.html
-js/site-shell.js
+INSTALL_7.52.3.md
+config/site-release.json
+release-check
 css/site-shell.css
-css/homepage-v8.css
+js/site-shell.js
+js/command-palette.js
+scripts/build-club-pages.py
+scripts/test-boys-post-jo-rankings-v7-52-0.py
+scripts/test-girls-post-jo-rankings-v7-52-2.py
+scripts/test-jo-results-browser-v7-52-1.py
+
+SCOPE
+- Installs one shared WPI header and footer across root pages, rankings, clubs, team profiles, stories, QA pages, and nested tournament applications.
+- Uses script-relative site-root resolution so navigation, logos, and search work at every path depth.
+- Loads the shared WPI command-palette search on every page.
+- Hides old page-specific headers and footers without changing application content or tournament controls.
+- Updates formal page-title branding from California Polo Index to Water Polo Index.
+- Preserves all rankings, tournament data, routes, and live application behavior.

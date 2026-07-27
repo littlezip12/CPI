@@ -170,8 +170,10 @@ def render_page(club):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{esc(club['displayName'])} | California Polo Index</title>
+  <title>{esc(club['displayName'])} | Water Polo Index</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/command-palette.css?v=7.52.3">
+  <link rel="stylesheet" href="../css/site-shell.css?v=7.52.3">
   <style>
     .club-intel-page {{ min-height:100vh; background:#f4f7fb; color:#071426; }}
     .club-intel-hero {{
@@ -206,18 +208,6 @@ def render_page(club):
   </style>
 </head>
 <body class="club-intel-page">
-  <header class="site-header">
-    <nav class="nav">
-      <a class="brand" href="../index.html">CPI</a>
-      <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../rankings.html">Rankings</a>
-        <a href="../clubs.html">Clubs</a>
-        <a href="../tournaments.html">Tournaments</a>
-        <a href="../methodology.html">Methodology</a>
-      </div>
-    </nav>
-  </header>
   <section class="club-intel-hero">
     <div class="club-intel-wrap club-intel-lockup">
       <img class="club-intel-logo" src="{esc(logo)}" alt="{esc(club['displayName'])} logo">
@@ -246,6 +236,8 @@ def render_page(club):
       </table>
     </section>
   </main>
+  <script defer src="../js/command-palette.js?v=7.52.3"></script>
+  <script defer src="../js/site-shell.js?v=7.52.3"></script>
 </body>
 </html>"""
 
