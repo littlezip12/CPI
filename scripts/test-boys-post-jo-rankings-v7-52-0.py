@@ -15,7 +15,7 @@ audit=load('qa/boys-post-jo-2026-ranking-audit.json')
 site=load('config/site-release.json')
 groups=['12U Boys','14U Boys','16U Boys','18U Boys']
 
-if site.get('version')!='7.52.0': fail('site release must be 7.52.0')
+if site.get('version') not in {'7.52.0','7.52.1'}: fail('site release must be 7.52.0 or 7.52.1')
 if site.get('rankingDataRelease')!='7.52.0': fail('rankingDataRelease must be 7.52.0')
 if audit.get('approvedTeams')!=400: fail('audit must report 400 approved Boys teams')
 

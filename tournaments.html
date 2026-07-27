@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/tournaments-v7-37-5.css?v=7.50.0">
   <link rel="stylesheet" href="tournaments/results.css?v=7.50.0">
   <link rel="stylesheet" href="css/tournaments-unified-v7-50.css?v=7.50.0">
+  <link rel="stylesheet" href="css/jo-results-browser-v7-52-1.css?v=7.52.1">
 </head>
 <body class="cpi-v8-home tournaments-page tournaments-compact-page">
   <header class="cpi-v8-header">
@@ -32,14 +33,15 @@
       <h1>Tournaments,<br>all in one place.</h1>
       <p>Follow live Junior Olympics schedules and team pathways, explore completed tournament results, and connect every verified game to CPI team and club history.</p>
       <div class="cpi50-hero-actions">
-        <a class="cpi50-btn" href="tournaments/jo-girls/">Open Girls & Coed JOs</a>
-        <a class="cpi50-btn" href="tournaments/jo-boys/">Open Boys JOs</a>
+        <a class="cpi50-btn" href="#jo-results">View 2026 results</a>
+        <a class="cpi50-btn secondary" href="tournaments/jo-girls/">Open Girls & Coed JOs</a>
+        <a class="cpi50-btn secondary" href="tournaments/jo-boys/">Open Boys JOs</a>
         <a class="cpi50-btn secondary" href="tournament-archive.html">Browse archive</a>
       </div>
     </div>
     <aside class="cpi50-hero-panel" aria-label="Tournament platform status">
       <h2>Tournament platform</h2>
-      <div class="cpi50-status-line"><span>Junior Olympics divisions</span><strong class="live">23 live</strong></div>
+      <div class="cpi50-status-line"><span>Junior Olympics divisions</span><strong>23 completed</strong></div>
       <div class="cpi50-status-line"><span>Historical tournaments</span><strong>3 banked</strong></div>
       <div class="cpi50-status-line"><span>Source monitoring</span><strong>Automated</strong></div>
       <div class="cpi50-status-line"><span>Ranking publication</span><strong>Manual review only</strong></div>
@@ -47,11 +49,24 @@
   </section>
 
   <section class="cpi50-section" aria-labelledby="liveTournamentTitle">
-    <div class="cpi50-section-heading"><div><p class="cpi-polish-eyebrow">Live & upcoming</p><h2 id="liveTournamentTitle">2026 Junior Olympics</h2></div><p>Choose a weekend, division, and team. CPI shows the verified schedule immediately and checks the official source for live updates.</p></div>
+    <div class="cpi50-section-heading"><div><p class="cpi-polish-eyebrow">Completed tournament</p><h2 id="liveTournamentTitle">2026 Junior Olympics</h2></div><p>Review completed schedules, team journeys, subdivision finishes, and final placements from both Junior Olympics weekends.</p></div>
     <div class="cpi50-card-grid">
-      <article class="cpi50-event-card featured"><div class="top"><span class="cpi50-kicker live">Weekend 1</span><span class="cpi50-kicker">Girls & Coed</span></div><h3>Junior Olympics — Girls & Coed</h3><p>Live schedules, team journeys, next games, bracket pathways, shootouts, and final-day placement context across 11 divisions.</p><div class="cpi50-event-meta"><span>11 divisions</span><span>Live Google Sheets</span><span>2-minute checks</span></div><a href="tournaments/jo-girls/">Open Weekend 1 →</a></article>
-      <article class="cpi50-event-card featured"><div class="top"><span class="cpi50-kicker live">Weekend 2</span><span class="cpi50-kicker">Boys</span></div><h3>Junior Olympics — Boys</h3><p>Verified schedules and live source checks for 10U Championship and Boys 12U–18U Championship, Classic, and Invitational divisions.</p><div class="cpi50-event-meta"><span>12 divisions</span><span>Embedded fallback</span><span>Team pathways</span></div><a href="tournaments/jo-boys/">Open Weekend 2 →</a></article>
+      <article class="cpi50-event-card featured"><div class="top"><span class="cpi50-kicker history">Weekend 1 · Complete</span><span class="cpi50-kicker">Girls & Coed</span></div><h3>Junior Olympics — Girls & Coed</h3><p>Completed schedules, team journeys, bracket pathways, shootouts, and final placements across 11 divisions.</p><div class="cpi50-event-meta"><span>11 divisions</span><span>Final results</span><span>Team journeys</span></div><a href="tournaments/jo-girls/">Open Weekend 1 →</a></article>
+      <article class="cpi50-event-card featured"><div class="top"><span class="cpi50-kicker history">Weekend 2 · Complete</span><span class="cpi50-kicker">Boys</span></div><h3>Junior Olympics — Boys</h3><p>Completed schedules and final placements for 10U Championship and Boys 12U–18U Championship, Classic, and Invitational divisions.</p><div class="cpi50-event-meta"><span>12 divisions</span><span>Final results</span><span>Team pathways</span></div><a href="tournaments/jo-boys/">Open Weekend 2 →</a></article>
       <article class="cpi50-event-card"><div class="top"><span class="cpi50-kicker live">Live operations</span></div><h3>Tournament control room</h3><p>Monitor source freshness, public-page readiness, schedule integrity, completed-game states, and operational alerts across every registered tournament.</p><div class="cpi50-event-meta"><span>48 registered divisions</span><span>Source health</span></div><a href="tournament-operations.html">Open control room →</a></article>
+    </div>
+  </section>
+
+  <section class="cpi50-section cpi521-results-section" id="jo-results" aria-labelledby="joResultsTitle">
+    <div class="cpi50-section-heading"><div><p class="cpi-polish-eyebrow">Final placements</p><h2 id="joResultsTitle">2026 Junior Olympics results</h2></div><p>Select an age group to see every final placement organized by Championship, Classic, or Invitational division and by Platinum, Gold, Silver, Bronze, Copper, or Nickel subdivision. Search by typing any team or club name.</p></div>
+    <div class="cpi521-results-shell" id="joResultsBrowser">
+      <div class="cpi521-results-controls">
+        <div class="cpi521-field"><label for="joResultsGroup">Age group</label><select id="joResultsGroup" aria-label="Select an age group"><option>Loading age groups…</option></select></div>
+        <div class="cpi521-field"><label for="joResultsSearch">Search by team</label><input id="joResultsSearch" type="search" placeholder="Start typing a team or club name" autocomplete="off" spellcheck="false"></div>
+      </div>
+      <div class="cpi521-results-summary"><span id="joResultsSummaryText">Loading final results…</span><button class="cpi521-clear" id="joResultsClear" type="button" hidden>Clear search</button></div>
+      <div class="cpi521-results-grid" id="joResultsGrid"><div class="cpi521-loading">Loading 2026 Junior Olympics results…</div></div>
+      <p class="cpi521-note" id="joResultsNote"></p>
     </div>
   </section>
 
@@ -75,6 +90,6 @@
   </section>
 </main>
 <footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a><p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p></div><nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="stories.html">Stories</a><a href="methodology.html">Methodology</a></nav><nav><h3>Age Groups</h3><a href="12u-boys.html">12U Boys</a><a href="12u-girls.html">12U Girls</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a><a href="18u-boys.html">18U Boys</a><a href="18u-girls.html">18U Girls</a></nav><div><h3>About CPI</h3><p>The California Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div></div><div class="bottom">© 2026 California Polo Index. All rights reserved.</div></footer>
-  <script src="data.js?v=7.52.0"></script><script src="js/app.js?v=7.50.0"></script><script src="js/command-palette.js?v=7.50.0"></script><script src="js/page-polish-v7-22.js?v=7.50.0"></script><script src="js/logo-display-v7-23-6.js?v=7.50.0"></script>
+  <script src="data.js?v=7.52.0"></script><script src="js/jo-results-browser-v7-52-1.js?v=7.52.1"></script><script src="js/app.js?v=7.50.0"></script><script src="js/command-palette.js?v=7.50.0"></script><script src="js/page-polish-v7-22.js?v=7.50.0"></script><script src="js/logo-display-v7-23-6.js?v=7.50.0"></script>
 </body>
 </html>

@@ -1,14 +1,11 @@
-# CPI 7.52.0
+# CPI 7.52.1
 
-2026 Boys post-JO rankings.
+2026 Junior Olympics results browser.
 
-- Publishes approved top-100 rankings for 12U, 14U, 16U, and 18U Boys.
-- Uses Junior Olympics division, subdivision, final placement, head-to-head results, and full-season evidence.
-- Keeps Championship above Classic and Classic above Invitational except for explicitly reviewed boundary cases.
-- Preserves subdivision bands and deserving B/C teams based on actual JO performance.
-- Normalizes tournament color labels into A/B/C/D club depth without using color as the team hierarchy.
-- Ranks only teams that entered JOs in the applicable age group.
-- Consolidates Shore Aquatics and Long Beach Shore under one canonical club identity.
-- Normalizes North Irvine without the source-only “Vegas” prefix.
-- Maps Kern Premier to SKIP where it is the only related entry in an age group.
-- Leaves Girls ranking order unchanged while their post-JO review remains separate.
+- Adds a searchable final-results section directly to the tournament homepage.
+- Covers 12 age/gender groups, 23 JO divisions, and 976 team placements from both 2026 weekends.
+- Lets visitors select an age group and type any team or club name instead of navigating a team dropdown.
+- Organizes results by Championship, Classic, and Invitational division, then Platinum, Gold, Silver, Bronze, Copper, and Nickel subdivision.
+- Preserves the full Boys and Girls/Coed schedule viewers for detailed game-by-game journeys.
+- Updates the tournament homepage from live-event language to completed-event and final-results language.
+- Leaves all published CPI rankings unchanged.

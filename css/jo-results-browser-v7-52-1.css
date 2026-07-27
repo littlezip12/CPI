@@ -1,0 +1,40 @@
+/* CPI 7.52.1 — searchable 2026 Junior Olympics final results */
+.cpi521-results-section{position:relative;overflow:hidden}
+.cpi521-results-section::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#f47c20,#ffb16f)}
+.cpi521-results-shell{margin-top:22px;border:1px solid rgba(23,50,77,.14);border-radius:22px;background:#fff;box-shadow:0 18px 50px rgba(16,38,58,.08);overflow:hidden}
+.cpi521-results-controls{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(280px,1.25fr);gap:16px;padding:22px;background:linear-gradient(135deg,#10263a 0%,#17324d 100%)}
+.cpi521-field{display:grid;gap:7px}
+.cpi521-field label{font-size:.75rem;line-height:1;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+.cpi521-field select,.cpi521-field input{width:100%;min-height:48px;border:1px solid rgba(255,255,255,.22);border-radius:12px;background:#fff;color:#17324d;font:inherit;font-weight:700;padding:0 14px;outline:none;box-shadow:0 4px 14px rgba(0,0,0,.1)}
+.cpi521-field input{font-weight:600}
+.cpi521-field select:focus,.cpi521-field input:focus{border-color:#f47c20;box-shadow:0 0 0 3px rgba(244,124,32,.22)}
+.cpi521-results-summary{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 22px;border-bottom:1px solid #e7edf2;background:#f8fafc;color:#526477}
+.cpi521-results-summary strong{color:#17324d}
+.cpi521-results-summary .cpi521-clear{border:0;background:transparent;color:#c45f16;font:inherit;font-weight:800;cursor:pointer;padding:6px 0}
+.cpi521-results-summary .cpi521-clear[hidden]{display:none}
+.cpi521-results-grid{display:grid;gap:22px;padding:22px}
+.cpi521-division{border:1px solid #dfe7ed;border-radius:18px;overflow:hidden;background:#fff}
+.cpi521-division-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 18px;background:#f5f8fa;border-bottom:1px solid #dfe7ed}
+.cpi521-division-head h3{margin:0;color:#10263a;font-size:1.15rem}
+.cpi521-tier{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#8b4b18;background:#fff1e6;border:1px solid #ffd4b3;border-radius:999px;padding:6px 9px}
+.cpi521-division-count{font-size:.82rem;font-weight:800;color:#687b8e;white-space:nowrap}
+.cpi521-subdivision-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:16px}
+.cpi521-subdivision{min-width:0;border:1px solid #e2e9ee;border-radius:15px;background:#fff;overflow:hidden}
+.cpi521-subdivision-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 14px;background:#fbfcfd;border-bottom:1px solid #e7edf2}
+.cpi521-subdivision-head h4{margin:0;font-size:.95rem;color:#17324d}
+.cpi521-subdivision-head span{font-size:.75rem;font-weight:800;color:#748699}
+.cpi521-team-list{list-style:none;margin:0;padding:0}
+.cpi521-team{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:11px;padding:10px 13px;border-bottom:1px solid #edf1f4}
+.cpi521-team:last-child{border-bottom:0}
+.cpi521-team:hover{background:#fff9f4}
+.cpi521-place{display:grid;place-items:center;min-height:34px;border-radius:9px;background:#edf3f7;color:#17324d;font-size:.78rem;font-weight:900;line-height:1;text-align:center;padding:4px}
+.cpi521-team:nth-child(1) .cpi521-place{background:#fff0c7;color:#765200}
+.cpi521-team-name{min-width:0;color:#1f3549;font-weight:800;overflow-wrap:anywhere}
+.cpi521-overall{font-size:.73rem;font-weight:700;color:#76889a;text-align:right;white-space:nowrap}
+.cpi521-record{display:block;margin-top:3px;font-size:.7rem;font-weight:700;color:#8a9aaa}
+.cpi521-empty{padding:38px 22px;text-align:center;color:#647789}
+.cpi521-empty strong{display:block;margin-bottom:6px;color:#17324d;font-size:1.05rem}
+.cpi521-loading{padding:38px 22px;text-align:center;color:#647789;font-weight:700}
+.cpi521-note{margin:0;padding:0 22px 20px;color:#738496;font-size:.78rem}
+@media (max-width:860px){.cpi521-results-controls{grid-template-columns:1fr}.cpi521-subdivision-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.cpi521-results-shell{border-radius:17px}.cpi521-results-controls,.cpi521-results-grid{padding:16px}.cpi521-results-summary{padding:13px 16px}.cpi521-division-head{align-items:flex-start;flex-direction:column}.cpi521-subdivision-grid{padding:10px;gap:10px}.cpi521-team{grid-template-columns:40px minmax(0,1fr);padding:10px}.cpi521-overall{grid-column:2;text-align:left;white-space:normal;margin-top:-6px}.cpi521-note{padding:0 16px 16px}}
