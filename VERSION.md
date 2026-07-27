@@ -1,11 +1,11 @@
-# CPI 7.52.1
+# CPI 7.52.2
 
-2026 Junior Olympics results browser.
+2026 Girls post-Junior Olympics rankings.
 
-- Adds a searchable final-results section directly to the tournament homepage.
-- Covers 12 age/gender groups, 23 JO divisions, and 976 team placements from both 2026 weekends.
-- Lets visitors select an age group and type any team or club name instead of navigating a team dropdown.
-- Organizes results by Championship, Classic, and Invitational division, then Platinum, Gold, Silver, Bronze, Copper, and Nickel subdivision.
-- Preserves the full Boys and Girls/Coed schedule viewers for detailed game-by-game journeys.
-- Updates the tournament homepage from live-event language to completed-event and final-results language.
-- Leaves all published CPI rankings unchanged.
+- Publishes every all-girls JO entrant in 12U, 14U, 16U and 18U: 324 teams total.
+- Excludes 10U and coed divisions from published CPI rankings.
+- Preserves Championship above Classic and keeps JO subdivision bands fixed.
+- Applies the approved adjacent within-band adjustments using JO head-to-head and full-season evidence.
+- Normalizes tournament colors into functional A/B/C/D club depth.
+- Keeps the previously published 400 Boys post-JO rankings unchanged.
+- Updates ranking pages, club profiles, identities, homepage data and browser cache versions.

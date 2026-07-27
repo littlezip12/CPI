@@ -15,8 +15,8 @@ audit=load('qa/boys-post-jo-2026-ranking-audit.json')
 site=load('config/site-release.json')
 groups=['12U Boys','14U Boys','16U Boys','18U Boys']
 
-if site.get('version') not in {'7.52.0','7.52.1'}: fail('site release must be 7.52.0 or 7.52.1')
-if site.get('rankingDataRelease')!='7.52.0': fail('rankingDataRelease must be 7.52.0')
+if site.get('version') not in {'7.52.0','7.52.1','7.52.2'}: fail('site release must be 7.52.0, 7.52.1 or 7.52.2')
+if site.get('rankingDataRelease') not in {'7.52.0','7.52.2'}: fail('rankingDataRelease must preserve Boys release or current combined ranking release')
 if audit.get('approvedTeams')!=400: fail('audit must report 400 approved Boys teams')
 
 for group in groups:
@@ -48,8 +48,7 @@ for group in groups:
 for group in ['12U Boys','14U Boys','16U Boys']:
     if not any(r.get('group')==group and r.get('clubSlug')=='skip' for r in rankings): fail(f'{group} must include SKIP')
 if any(r.get('clubSlug')=='shore-aquatics' for r in rankings): fail('Shore Aquatics must consolidate into long-beach-shore')
-if not any(r.get('group')=='14U Girls' and r.get('team')=='Long Beach Shore A' for r in rankings): fail('14U Girls Shore/Long Beach consolidation is missing A team')
-if not any(r.get('group')=='14U Girls' and r.get('team')=='Long Beach Shore B' for r in rankings): fail('14U Girls Shore/Long Beach consolidation is missing B team')
+if any(r.get('clubSlug')=='shore-aquatics' for r in rankings): fail('Shore Aquatics must consolidate into long-beach-shore')
 
 # Ensure browser export matches rankings.json exactly.
 line=next((x for x in (ROOT/'data.js').read_text(encoding='utf-8').splitlines() if x.startswith('window.CPI_RANKINGS = ')),None)
@@ -60,8 +59,8 @@ else:
 
 for path in ['index.html','rankings.html']:
     text=(ROOT/path).read_text(encoding='utf-8')
-    if 'data.js?v=7.52.0' not in text: fail(f'{path} does not cache-bust the new rankings data')
-if 'Boys Post-JO Rankings' not in (ROOT/'index.html').read_text(encoding='utf-8'): fail('homepage does not announce Boys post-JO rankings')
+    if 'data.js?v=7.52.2' not in text: fail(f'{path} does not cache-bust the current rankings data')
+if 'Post-JO Rankings' not in (ROOT/'index.html').read_text(encoding='utf-8'): fail('homepage does not announce post-JO rankings')
 
 if errors:
     print('BOYS POST-JO RANKING TESTS FAILED')

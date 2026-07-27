@@ -58,7 +58,7 @@ def main() -> int:
     require(raw["clubId"] and not raw["teamId"], "Ambiguous bare club names should remain club-resolved review items rather than guessing a team")
     require(raw["participantId"].startswith("tournament-team-"), "Unranked tournament teams must receive a stable tournament participant ID")
     require(not raw["rankingEligible"], "Tournament-only participants must not enter rankings automatically")
-    cross_scope = parse_participant("Norco", {"season": "2026", "ageGroup": "14U", "gender": "Girls"}, resolver)
+    cross_scope = parse_participant("99 Alliance", {"season": "2026", "ageGroup": "14U", "gender": "Girls"}, resolver)
     require(not cross_scope["teamId"], "A globally unique alias from another age group must not resolve across scope")
     slot = parse_participant("pt_M1", {"season": "2026", "ageGroup": "14U", "gender": "Girls"}, resolver)
     require(slot["kind"] == "bracket_reference", "Pool/placement slots must not become teams")
