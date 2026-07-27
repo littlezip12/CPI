@@ -6,7 +6,7 @@ from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_JS = ROOT / "data.js"
-CLUB_REGISTRY = ROOT / "data" / "club-registry.json"
+CLUB_REGISTRY = ROOT / "club-registry.json"
 OUT_DIR = ROOT / "club"
 OUT_JSON = ROOT / "data" / "club-intelligence.json"
 
@@ -46,10 +46,14 @@ def load_sources():
         raise SystemExit("Missing data.js")
     text = DATA_JS.read_text(encoding="utf-8")
     rankings = extract_window_var(text, "CPI_RANKINGS", [])
-    registry = {"clubs": {}}
+    registry = {}
     if CLUB_REGISTRY.exists():
-        registry = json.loads(CLUB_REGISTRY.read_text(encoding="utf-8"))
-    return rankings, registry.get("clubs", {})
+        raw_registry = json.loads(CLUB_REGISTRY.read_text(encoding="utf-8"))
+        if isinstance(raw_registry, list):
+            registry = {row.get("slug"): row for row in raw_registry if row.get("slug")}
+        elif isinstance(raw_registry, dict):
+            registry = raw_registry.get("clubs", raw_registry)
+    return rankings, registry
 
 def build_intelligence(rankings, registry):
     by_club = defaultdict(list)
@@ -77,6 +81,12 @@ def build_intelligence(rankings, registry):
             "slug": slug,
             "displayName": display_name,
             "region": reg.get("region") or top.get("region") or "Region TBD",
+            "city": reg.get("city") or top.get("city") or "",
+            "state": reg.get("state") or top.get("state") or "",
+            "country": reg.get("country") or top.get("country") or "",
+            "locationLabel": reg.get("locationLabel") or top.get("locationLabel") or "",
+            "metroRegion": reg.get("metroRegion") or top.get("metroRegion") or "",
+            "macroRegion": reg.get("macroRegion") or top.get("macroRegion") or "",
             "website": reg.get("website") or top.get("website") or "",
             "logo": reg.get("logo") or top.get("logo") or "assets/cpi-logo-fallback.svg",
             "colors": reg.get("colors") or {
@@ -126,6 +136,12 @@ def build_intelligence(rankings, registry):
                 "slug": slug,
                 "displayName": reg.get("displayName") or slug.replace("-", " ").title(),
                 "region": reg.get("region") or "Region TBD",
+                "city": reg.get("city") or "",
+                "state": reg.get("state") or "",
+                "country": reg.get("country") or "",
+                "locationLabel": reg.get("locationLabel") or "",
+                "metroRegion": reg.get("metroRegion") or "",
+                "macroRegion": reg.get("macroRegion") or "",
                 "website": reg.get("website") or "",
                 "logo": reg.get("logo") or "assets/cpi-logo-fallback.svg",
                 "colors": reg.get("colors") or {"primary":"#071426","secondary":"#126dff","accent":"#f6b700"},
@@ -213,7 +229,7 @@ def render_page(club):
       <img class="club-intel-logo" src="{esc(logo)}" alt="{esc(club['displayName'])} logo">
       <div>
         <h1>{esc(club['displayName'])}</h1>
-        <p>{esc(club.get('region', 'Region TBD'))} · {esc(club.get('rankedTeams', 0))} ranked teams</p>
+        <p>{esc(club.get('locationLabel') or club.get('region', 'Region TBD'))} · {esc(club.get('rankedTeams', 0))} ranked teams</p>
         <div class="club-intel-actions">
           <a class="club-btn" href="../club.html?club={esc(club['slug'])}">Legacy Club View</a>
           {website_link}

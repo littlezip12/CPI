@@ -47,7 +47,7 @@ for token in ['params.get("region")', 'params.get("search")', 'regionFilter.valu
 for token in ['.wpi-hero-visual', '.wpi-ranking-grid', '.wpi-results-grid', '.wpi-california-map', '.region-point.east-bay']:
     if token not in css: errors.append(f'homepage CSS missing {token}')
 
-if site.get('version') != '7.52.4': errors.append('site release version must be 7.52.4')
+if site.get('version') not in {'7.52.4','7.52.5'}: errors.append('site release must preserve the 7.52.4 homepage or a later 7.52.x data release')
 if site.get('homepageRelease') != '7.52.4': errors.append('homepageRelease must be 7.52.4')
 if site.get('rankingDataRelease') != '7.52.2': errors.append('ranking data must remain 7.52.2')
 if len(rankings) != 724: errors.append(f'expected 724 ranked teams, found {len(rankings)}')

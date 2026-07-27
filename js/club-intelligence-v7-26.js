@@ -112,6 +112,12 @@
       slug: club.slug || normalizeSlug(club.displayName || club.club),
       teams,
       region,
+      city: club.city || top.city || "",
+      state: club.state || top.state || "",
+      country: club.country || top.country || "",
+      locationLabel: club.locationLabel || top.locationLabel || "",
+      metroRegion: club.metroRegion || top.metroRegion || "",
+      macroRegion: club.macroRegion || top.macroRegion || "",
       primaryColor,
       secondaryColor,
       bestRank: number(club.bestRank || top.postRank, 0),
@@ -172,7 +178,7 @@
       ${logoMarkup(club)}
       <div class="club-signal-main-v726">
         <strong>${escapeHtml(safeName(club))}</strong>
-        <span>${escapeHtml(club.region)} · ${club.rankedTeamCount} ranked team${club.rankedTeamCount === 1 ? "" : "s"}</span>
+        <span>${escapeHtml(club.locationLabel || club.region)} · ${club.rankedTeamCount} ranked team${club.rankedTeamCount === 1 ? "" : "s"}</span>
         <em>${escapeHtml(bestTeamSummary(club))}</em>
       </div>
       <div class="club-signal-score"><b>${club.bestRank ? `#${club.bestRank}` : "—"}</b><small>Best rank</small></div>
@@ -234,7 +240,7 @@
     return `<a class="club-card club-card-v726" style="${escapeHtml(theme)}" href="club.html?club=${encodeURIComponent(club.slug)}">
       <div class="club-card-head-v726">
         ${logoMarkup(club, "club-card-logo")}
-        <span class="club-region-pill-v726">${escapeHtml(club.region || "Needs Review")}</span>
+        <span class="club-region-pill-v726">${escapeHtml(club.locationLabel || club.region || "Needs Review")}</span>
       </div>
       <div class="club-card-body-v726">
         <h3>${escapeHtml(safeName(club))}</h3>
