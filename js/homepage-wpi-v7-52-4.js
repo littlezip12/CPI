@@ -39,6 +39,40 @@
       || rankings.find((team) => normalize(team.team) === target);
   }
 
+  function resultDivisionId(divisionId) {
+    if (divisionId === "10u-boys-championship") return "10u-championship";
+    if (divisionId === "10u-coed-classic") return "10u-girls-classic";
+    return divisionId;
+  }
+
+  function resultJourneyLink(group, division, teamName) {
+    const app = group.category === "Boys" ? "jo-boys" : "jo-girls";
+    const params = new URLSearchParams({ division: resultDivisionId(division.id), team: teamName, focus: "journey" });
+    return `tournaments/${app}/?${params.toString()}#team-explorer`;
+  }
+
+  function resultAsset(name, group) {
+    const ranked = findRankedTeam(name, group.id);
+    if (ranked?.logo) return ranked.logo;
+    const context = { season: "2026", ageGroup: group.ageGroup, gender: group.category };
+    const identity = window.CPIIdentity?.resolveTeam?.(name, context);
+    if (identity?.club?.logo) return identity.club.logo;
+    const resolver = window.CPIIdentity?.resolveClub;
+    const clean = window.CPIIdentity?.cleanSourceName?.(name) || String(name || "").trim();
+    const candidates = [clean];
+    let stripped = clean;
+    for (let i = 0; i < 3; i += 1) {
+      const next = stripped.replace(/\s+(?:A|B|C|D|Black|Blue|Red|White|Gold|Silver|Orange|Green|Teal|Yellow|Navy|Gray|Grey|Premier|13A)\s*$/i, "").trim();
+      if (next === stripped) break;
+      candidates.push(next); stripped = next;
+    }
+    for (const candidate of candidates) {
+      const club = resolver?.(candidate);
+      if (club?.logo) return club.logo;
+    }
+    return fallbackLogo;
+  }
+
   function updateStats() {
     $("#wpiRankedTeams").textContent = rankings.length.toLocaleString();
     $("#wpiClubCount").textContent = clubs.length.toLocaleString();
@@ -142,9 +176,9 @@
         <div class="wpi-result-card-head"><h3>${escapeHtml(division.label)}</h3><span>${escapeHtml(division.tier)}</span></div>
         <div class="wpi-result-subdivision">${escapeHtml(subdivision?.label || "Final results")} · top finishers</div>
         <div class="wpi-result-list">${leaders.map((team) => {
-          const ranked = findRankedTeam(team.team, group.id);
-          const url = ranked ? teamLink(ranked) : resultsLink(group.id, team.team);
-          return `<a class="wpi-result-team" href="${escapeHtml(url)}"><b>${escapeHtml(team.place)}</b><strong>${escapeHtml(team.team)}</strong><em>${escapeHtml(team.record || team.overallPlaceLabel || "")}</em></a>`;
+          const url = resultJourneyLink(group, division, team.team);
+          const teamLogo = resultAsset(team.team, group);
+          return `<a class="wpi-result-team" href="${escapeHtml(url)}" aria-label="View ${escapeHtml(team.team)} Junior Olympics games"><b>${escapeHtml(team.place)}</b><img src="${escapeHtml(teamLogo)}" alt="" aria-hidden="true" loading="lazy" onerror="this.onerror=null;this.src='${fallbackLogo}'"><strong>${escapeHtml(team.team)}</strong><em>${escapeHtml(team.record || team.overallPlaceLabel || "")}</em></a>`;
         }).join("")}</div>
         <a href="${escapeHtml(resultsLink(group.id))}">Browse ${escapeHtml(division.label)} results →</a>
       </article>`;

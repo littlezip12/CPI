@@ -16,8 +16,9 @@ jo = json.loads((ROOT / 'data/tournaments/jo-results-2026.json').read_text(encod
 
 required_index = [
     'css/homepage-wpi-v7-52-4.css?v=7.52.4',
-    'js/homepage-wpi-v7-52-4.js?v=7.52.4',
+    'js/homepage-wpi-v7-52-4.js?v=7.52.7',
     'assets/photos/editorial/polo-attacker-poolwide.jpg',
+    'data/identity/runtime.js?v=7.52.7',
     'id="wpiHomeSearch"',
     'id="wpiRankingGrid"',
     'id="wpiResultsGrid"',
@@ -36,7 +37,7 @@ for forbidden in ['data-cpi-hero', 'At a Glance', 'Review in progress']:
 required_js = [
     'window.CPI_RANKINGS', 'window.CPI_CLUBS', 'teamLink', 'clubLink',
     'data/tournaments/jo-results-2026.json?v=7.52.1', 'renderRankings',
-    'renderResults', 'renderFeaturedClubs', 'resultsLink',
+    'renderResults', 'renderFeaturedClubs', 'resultsLink', 'resultJourneyLink', 'resultAsset',
 ]
 for token in required_js:
     if token not in js: errors.append(f'homepage JS missing {token}')
@@ -47,7 +48,7 @@ for token in ['params.get("region")', 'params.get("search")', 'regionFilter.valu
 for token in ['.wpi-hero-visual', '.wpi-ranking-grid', '.wpi-results-grid', '.wpi-california-map', '.region-point.east-bay']:
     if token not in css: errors.append(f'homepage CSS missing {token}')
 
-if site.get('version') not in {'7.52.4','7.52.5','7.52.6'}: errors.append('site release must preserve the 7.52.4 homepage or a later 7.52.x data release')
+if site.get('version') not in {'7.52.4','7.52.5','7.52.6','7.52.7'}: errors.append('site release must preserve the 7.52.4 homepage or a later 7.52.x data release')
 if site.get('homepageRelease') != '7.52.4': errors.append('homepageRelease must be 7.52.4')
 if site.get('rankingDataRelease') != '7.52.2': errors.append('ranking data must remain 7.52.2')
 if len(rankings) != 724: errors.append(f'expected 724 ranked teams, found {len(rankings)}')

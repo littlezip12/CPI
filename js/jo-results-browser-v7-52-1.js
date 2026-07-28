@@ -10,6 +10,9 @@
   const clearButton = document.getElementById("joResultsClear");
   const resultsGrid = document.getElementById("joResultsGrid");
   const note = document.getElementById("joResultsNote");
+  const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
+  const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
+  const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.52.7";
 
   let payload = null;
 
@@ -24,6 +27,7 @@
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/&/g, " and ")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
 
@@ -39,15 +43,99 @@
     window.history.replaceState({}, "", next);
   }
 
-  function teamRow(team, divisionLabel) {
+  function contextFor(group) {
+    return {
+      season: "2026",
+      ageGroup: group?.ageGroup || "",
+      gender: group?.category || ""
+    };
+  }
+
+  function candidateNames(name) {
+    const clean = window.CPIIdentity?.cleanSourceName?.(name) || String(name || "").trim();
+    const values = [clean];
+    const add = (value) => {
+      const candidate = String(value || "").trim();
+      if (candidate && !values.includes(candidate)) values.push(candidate);
+    };
+    add(clean.replace(/\s+\d{1,2}[A-Z]?\s*$/i, ""));
+    let stripped = clean;
+    for (let index = 0; index < 3; index += 1) {
+      const next = stripped.replace(/\s+(?:A|B|C|D|Black|Blue|Red|White|Gold|Silver|Orange|Green|Teal|Yellow|Navy|Gray|Grey|Premier|13A)\s*$/i, "").trim();
+      if (next === stripped) break;
+      add(next);
+      stripped = next;
+    }
+    return values;
+  }
+
+  function rankedTeamFor(name, group) {
+    const target = normalize(name);
+    const groupLabel = normalize(group?.label || "");
+    return rankings.find((team) => normalize(team.team) === target && normalize(team.group) === groupLabel)
+      || rankings.find((team) => normalize(team.team) === target)
+      || null;
+  }
+
+  function clubFor(name, group) {
+    const identity = window.CPIIdentity?.resolveTeam?.(name, contextFor(group));
+    if (identity?.club?.logo) return identity.club;
+    const resolver = window.CPIIdentity?.resolveClub;
+    if (resolver) {
+      for (const candidate of candidateNames(name)) {
+        const club = resolver(candidate);
+        if (club?.logo) return club;
+      }
+    }
+    const targets = candidateNames(name).map(normalize);
+    return clubs.find((club) => targets.includes(normalize(club.displayName || club.club || club.slug)))
+      || clubs.find((club) => targets.some((target) => target && normalize(club.displayName || club.club || club.slug).includes(target)))
+      || null;
+  }
+
+  function assetFor(name, group) {
+    const ranked = rankedTeamFor(name, group);
+    if (ranked?.logo) return { logo: ranked.logo, profile: ranked.teamPage || "" };
+    const club = clubFor(name, group);
+    return {
+      logo: club?.logo || fallbackLogo,
+      profile: club?.clubPage || (club?.slug ? `club.html?club=${encodeURIComponent(club.slug)}` : "")
+    };
+  }
+
+  function appDivisionId(divisionId) {
+    if (divisionId === "10u-boys-championship") return "10u-championship";
+    if (divisionId === "10u-coed-classic") return "10u-girls-classic";
+    return divisionId;
+  }
+
+  function journeyUrl(group, division, teamName) {
+    const app = group?.category === "Boys" ? "jo-boys" : "jo-girls";
+    const params = new URLSearchParams({
+      division: appDivisionId(division.id),
+      team: teamName,
+      focus: "journey"
+    });
+    return `tournaments/${app}/?${params.toString()}#team-explorer`;
+  }
+
+  function teamRow(team, division, group) {
     const record = team.record ? `<span class="cpi521-record">${escapeHtml(team.record)}</span>` : "";
     const overall = team.overallPlaceLabel
-      ? `<span class="cpi521-overall">${escapeHtml(team.overallPlaceLabel)} in ${escapeHtml(divisionLabel)}</span>`
+      ? `<span class="cpi521-overall">${escapeHtml(team.overallPlaceLabel)} in ${escapeHtml(division.label)}</span>`
+      : "";
+    const asset = assetFor(team.team, group);
+    const journey = journeyUrl(group, division, team.team);
+    const profile = asset.profile
+      ? `<a class="cpi521-profile-link" href="${escapeHtml(asset.profile)}" aria-label="Open ${escapeHtml(team.team)} profile">Profile</a>`
       : "";
     return `<li class="cpi521-team">
       <span class="cpi521-place">${escapeHtml(team.placeLabel || "—")}</span>
-      <span class="cpi521-team-name">${escapeHtml(team.team)}${record}</span>
-      ${overall}
+      <a class="cpi521-team-journey" href="${escapeHtml(journey)}" aria-label="View ${escapeHtml(team.team)} Junior Olympics games">
+        <img class="cpi521-team-logo" src="${escapeHtml(asset.logo)}" alt="" aria-hidden="true" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${fallbackLogo}'">
+        <span class="cpi521-team-name"><strong>${escapeHtml(team.team)}</strong>${record}<small>View JO games →</small></span>
+      </a>
+      <span class="cpi521-team-meta">${overall}${profile}</span>
     </li>`;
   }
 
@@ -56,7 +144,6 @@
     if (!group) return;
     const query = normalize(teamSearch.value);
     let matchCount = 0;
-    let visibleDivisions = 0;
 
     const divisionHtml = group.divisions.map((division) => {
       const subdivisionHtml = division.subdivisions.map((subdivision) => {
@@ -67,12 +154,11 @@
         matchCount += teams.length;
         return `<section class="cpi521-subdivision" aria-label="${escapeHtml(subdivision.label)} results">
           <header class="cpi521-subdivision-head"><h4>${escapeHtml(subdivision.label)}</h4><span>${teams.length} ${teams.length === 1 ? "team" : "teams"}</span></header>
-          <ol class="cpi521-team-list">${teams.map((team) => teamRow(team, division.label)).join("")}</ol>
+          <ol class="cpi521-team-list">${teams.map((team) => teamRow(team, division, group)).join("")}</ol>
         </section>`;
       }).filter(Boolean).join("");
 
       if (!subdivisionHtml) return "";
-      visibleDivisions += 1;
       return `<article class="cpi521-division">
         <header class="cpi521-division-head">
           <div><span class="cpi521-tier">${escapeHtml(division.tier)}</span><h3>${escapeHtml(division.label)}</h3></div>
@@ -90,7 +176,7 @@
     }
 
     resultsGrid.innerHTML = divisionHtml || `<div class="cpi521-empty"><strong>No team found</strong>Try a shorter club name or check another age group.</div>`;
-    note.textContent = payload.notes?.join(" ") || "";
+    note.textContent = `${payload.notes?.join(" ") || ""} Select any team to open its complete Junior Olympics game journey.`.trim();
     mount.dataset.ready = "true";
     updateUrl();
   }

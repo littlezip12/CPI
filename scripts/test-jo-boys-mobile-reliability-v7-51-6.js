@@ -55,11 +55,11 @@ requireCondition(policy.scheduledWorkers===3&&policy.scheduledMaxCandidates===2,
 
 const site=JSON.parse(fs.readFileSync(path.join(ROOT,'config','site-release.json'),'utf8'));
 const semverAtLeast=(value,target)=>{const a=String(value).split('.').map(Number),b=String(target).split('.').map(Number);for(let i=0;i<3;i++){if((a[i]||0)>(b[i]||0))return true;if((a[i]||0)<(b[i]||0))return false;}return true};
-requireCondition(semverAtLeast(site.version,'7.51.6')&&site.joApplicationRelease==='7.51.6','Site metadata predates the 7.51.6 JO application');
+requireCondition(semverAtLeast(site.version,'7.51.6')&&['7.51.6','7.52.7'].includes(site.joApplicationRelease),'Site metadata predates the 7.51.6 JO application');
 requireCondition(site.joMobileReliabilityRelease==='7.51.6','Mobile reliability release metadata is missing');
 for(const side of ['jo-boys','jo-girls']){
   const html=fs.readFileSync(path.join(ROOT,'tournaments',side,'index.html'),'utf8');
-  requireCondition(html.includes('src="app.js?v=7.51.6"'),`${side} does not load the 7.51.6 cache-busted app`);
+  requireCondition(html.includes(`src="app.js?v=${site.joApplicationRelease}"`),`${side} does not load the current cache-busted JO app`);
 }
 console.log('JO BOYS MOBILE RELIABILITY 7.51.6 TESTS PASSED');
 console.log(' - Scheduled relay traffic is limited to the active 12 Boys divisions with lower concurrency');

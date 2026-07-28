@@ -3,3 +3,8 @@
 @media(max-width:1120px){.wpi-ranking-grid,.wpi-results-grid{grid-template-columns:repeat(2,1fr)}.wpi-club-layout,.wpi-bottom-grid{grid-template-columns:1fr}.wpi-featured-clubs{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:820px){.wpi-hero{grid-template-columns:1fr;padding:55px 22px 118px}.wpi-hero h1{font-size:clamp(43px,13vw,68px)}.wpi-hero-visual{min-height:300px}.wpi-hero-visual img{min-height:300px}.wpi-search{left:14px;right:14px;grid-template-columns:auto 1fr auto}.wpi-search select{display:none}.wpi-stats{grid-template-columns:repeat(2,1fr);width:calc(100% - 28px)}.wpi-section{width:calc(100% - 28px)}.wpi-section-heading{align-items:flex-start;flex-direction:column}.wpi-result-controls{align-items:flex-start;flex-direction:column}.wpi-featured-clubs{grid-template-columns:1fr 1fr}.wpi-method-grid{grid-template-columns:1fr}.wpi-results-section{padding:20px}}
 @media(max-width:560px){.wpi-ranking-grid,.wpi-results-grid,.wpi-featured-clubs,.wpi-stats{grid-template-columns:1fr}.wpi-search button{padding:0 14px}.wpi-club-layout{display:block}.wpi-region-map{margin-top:18px}.wpi-california-map{height:350px}.region-point span{font-size:9px}.wpi-toggle{max-width:100%;overflow:auto}.wpi-section{margin-bottom:54px}}
+
+/* WPI 7.52.7 — JO result logos and game-journey links */
+.wpi-result-team{grid-template-columns:24px 30px minmax(0,1fr) auto}
+.wpi-result-team img{width:28px;height:28px;object-fit:contain;border:1px solid var(--wpi-border);border-radius:7px;background:#fff;padding:2px}
+.wpi-result-team:hover strong{color:var(--wpi-blue)}

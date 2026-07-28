@@ -7,7 +7,7 @@ const site=JSON.parse(fs.readFileSync(path.join(root,'config/site-release.json')
 const semverAtLeast=(value,target)=>{const a=String(value).split('.').map(Number),b=String(target).split('.').map(Number);for(let i=0;i<3;i++){if((a[i]||0)>(b[i]||0))return true;if((a[i]||0)<(b[i]||0))return false;}return true};
 requireCondition(semverAtLeast(site.version,'7.51.5'),'site version predates 7.51.5');
 requireCondition(Number(site.joApplicationRelease.split('.').pop())>=5,'joApplicationRelease predates 7.51.5');
-requireCondition(site.joLogoRelease==='7.51.5','joLogoRelease is not 7.51.5');
+requireCondition(['7.51.5','7.52.7'].includes(site.joLogoRelease),'joLogoRelease does not preserve JO logo support');
 for(const side of ['jo-boys','jo-girls']){
   const app=fs.readFileSync(path.join(root,'tournaments',side,'app.js'),'utf8');
   const html=fs.readFileSync(path.join(root,'tournaments',side,'index.html'),'utf8');

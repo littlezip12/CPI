@@ -15,22 +15,22 @@ def fail(msg): errors.append(msg)
 def load(path): return json.loads((ROOT/path).read_text(encoding='utf-8'))
 
 site=load('config/site-release.json')
-release=load('data/club-logo-release-7.52.6.json')
+release=load('data/club-logo-release-7.52.7.json')
 clubs=load('club-registry.json')
 public=load('clubs.json')
 rankings=load('rankings.json')
 registry=load('data/logo-registry.json').get('logos',{})
 
-if site.get('version')!='7.52.6': fail('site release must be 7.52.6')
-if site.get('clubLogoCompletionRelease')!='7.52.6': fail('clubLogoCompletionRelease must be 7.52.6')
-if site.get('logoLibraryRelease')!='7.52.6': fail('logoLibraryRelease must be 7.52.6')
+if site.get('version') not in {'7.52.6','7.52.7'}: fail('site release must preserve the club logo expansion')
+if site.get('clubLogoCompletionRelease') not in {'7.52.6','7.52.7'}: fail('clubLogoCompletionRelease must preserve the verified logo expansion')
+if site.get('logoLibraryRelease') not in {'7.52.6','7.52.7'}: fail('logoLibraryRelease must preserve the verified logo expansion')
 if site.get('rankingDataRelease')!='7.52.2': fail('rankingDataRelease must remain 7.52.2')
 if len(clubs)!=183: fail(f'expected 183 clubs, found {len(clubs)}')
 if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')
 
 counts=Counter(c.get('logoStatus') for c in clubs)
-if counts.get('verified_by_user')!=135: fail(f"expected 135 verified logos, found {counts.get('verified_by_user')}")
-if counts.get('placeholder')!=43: fail(f"expected 43 provisional artworks, found {counts.get('placeholder')}")
+if counts.get('verified_by_user')!=136: fail(f"expected 136 verified logos, found {counts.get('verified_by_user')}")
+if counts.get('placeholder')!=42: fail(f"expected 42 provisional artworks, found {counts.get('placeholder')}")
 if counts.get('fallback')!=5: fail(f"expected 5 generic fallbacks, found {counts.get('fallback')}")
 
 expected_generic={'99-alliance','atherton','atwater','hawaiian-islands','ypro'}
@@ -38,9 +38,9 @@ actual_generic={c['slug'] for c in clubs if c.get('logoStatus')=='fallback'}
 if actual_generic!=expected_generic: fail(f'generic fallback set differs: {sorted(actual_generic)}')
 
 verified=set(release.get('directUserSuppliedLogos',[])) | set(release.get('sharedIdentityArtwork',{}))
-if len(release.get('directUserSuppliedLogos',[]))!=60: fail('release must contain 60 direct logos')
+if len(release.get('directUserSuppliedLogos',[]))!=61: fail('release must contain 61 direct logos')
 if len(release.get('sharedIdentityArtwork',{}))!=4: fail('release must contain four shared mappings')
-if len(verified)!=64: fail(f'expected 64 updated club entries, found {len(verified)}')
+if len(verified)!=65: fail(f'expected 65 updated club entries, found {len(verified)}')
 
 by_slug={c['slug']:c for c in clubs}
 public_by_slug={c['slug']:c for c in public}
@@ -81,7 +81,7 @@ for line in (ROOT/'data.js').read_text(encoding='utf-8').splitlines():
 if vars.get('CPI_RANKINGS')!=rankings: fail('data.js rankings differ from rankings.json')
 if vars.get('CPI_CLUBS')!=public: fail('data.js clubs differ from clubs.json')
 platform=vars.get('CPI_PLATFORM',{})
-if platform.get('brandingStatus',{}).get('verifiedLogoCount')!=135: fail('platform verified logo count is not 135')
+if platform.get('brandingStatus',{}).get('verifiedLogoCount')!=136: fail('platform verified logo count is not 136')
 
 canonical=[{'group':r.get('group'),'rank':r.get('postRank'),'team':r.get('team'),'clubSlug':r.get('clubSlug'),'cpi':r.get('postCPI')} for r in rankings]
 rank_hash=hashlib.sha256(json.dumps(canonical,sort_keys=True,separators=(',',':')).encode()).hexdigest()
@@ -92,6 +92,6 @@ if errors:
     for e in errors: print(' -',e)
     sys.exit(1)
 print('CLUB LOGO 7.52.6 TESTS PASSED')
-print(' - 60 user-supplied logos and four shared-artwork mappings are synchronized')
-print(' - 135 clubs now use user-verified artwork; five intentionally remain generic')
+print(' - 61 user-supplied logos and four shared-artwork mappings are synchronized')
+print(' - 136 clubs now use user-verified artwork; five intentionally remain generic')
 print(' - 724 rankings and all team labels remain unchanged')

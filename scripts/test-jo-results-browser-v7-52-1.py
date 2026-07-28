@@ -31,12 +31,12 @@ html = (ROOT / "tournaments.html").read_text(encoding="utf-8")
 js = (ROOT / "js/jo-results-browser-v7-52-1.js").read_text(encoding="utf-8")
 css_path = ROOT / "css/jo-results-browser-v7-52-1.css"
 
-if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6"}:
+if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7"}:
     fail("site release must preserve JO results browser compatibility")
-if site.get("joResultsRelease") != "7.52.1":
-    fail("joResultsRelease must be 7.52.1")
-if site.get("tournamentUIRelease") != "7.52.1":
-    fail("tournamentUIRelease must be 7.52.1")
+if site.get("joResultsRelease") not in {"7.52.1", "7.52.7"}:
+    fail("joResultsRelease must preserve the data browser or the linked-journey UI release")
+if site.get("tournamentUIRelease") not in {"7.52.1", "7.52.7"}:
+    fail("tournamentUIRelease must preserve the results browser or the linked-journey UI release")
 if results.get("release") != "7.52.1":
     fail("results data release must be 7.52.1")
 if results.get("season") != 2026:
@@ -196,8 +196,9 @@ required_html = [
     'id="joResultsGroup"',
     'id="joResultsSearch"',
     'type="search"',
-    'css/jo-results-browser-v7-52-1.css?v=7.52.1',
-    'js/jo-results-browser-v7-52-1.js?v=7.52.1',
+    'css/jo-results-browser-v7-52-1.css?v=7.52.7',
+    'data/identity/runtime.js?v=7.52.7',
+    'js/jo-results-browser-v7-52-1.js?v=7.52.7',
 ]
 for token in required_html:
     if token not in html:
@@ -209,6 +210,9 @@ required_js = [
     'teamSearch.addEventListener("input", render)',
     'groupSelect.addEventListener("change", render)',
     'cache: "no-store"',
+    'cpi521-team-logo',
+    'journeyUrl(group, division, team.team)',
+    'focus: "journey"',
 ]
 for token in required_js:
     if token not in js:

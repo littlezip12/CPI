@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ORIGINALS = ROOT / 'assets-original' / 'logos'
 CANONICAL = ROOT / 'assets' / 'logos' / 'canonical'
 FALLBACK = 'assets/logos/cpi-logo-fallback.svg'
-RELEASE = '7.52.6'
+RELEASE = '7.52.7'
 
 DIRECT_SLUGS = {
     '808','a-team-called-quest','a-town','albuquerque','aquatex','asa','bainbridge',
@@ -22,7 +22,7 @@ DIRECT_SLUGS = {
     'hilo-hammahz','kearns','lokahi','longhorn','lyons-aquatics','mesa',
     'miami-riptides','moose','narrows','navy','nc-select','new-trier','newberg',
     'nipc','north-idaho','nwc','oahu','ohana','pacific-valley-premier','park-city',
-    'placer','princeton','puget-sound','punahou','rain-city','rise','sacramento',
+    'placer','princeton','puget-sound','punahou','rain-city','rise','sacramento','san-diego-shores',
     'san-jose-almaden','slap','south-valley','southside','surf-city','swift',
     't-hills','team-vegas','third-coast','topaz-tsunami','turul','viper-pigeon',
     'visalia-united','west-valley','wildkit','wolverine'
@@ -175,12 +175,12 @@ def update_data_js(target):
         elif name == 'CPI_CLUBS':
             for row in data: update_club(row, target)
         elif name == 'CPI_PLATFORM':
-            data.setdefault('brandingStatus', {})['verifiedLogoCount'] = 135
+            data.setdefault('brandingStatus', {})['verifiedLogoCount'] = 136
             data['brandingStatus']['clubCount'] = 183
             logo_system = data.setdefault('rankingDataReadiness', {}).setdefault('logoSystem', {})
-            logo_system['convertedVerifiedLogos'] = 135
-            logo_system['placeholderLogosNeedingSource'] = 48
-            logo_system['status'] = '135 user-verified club logos normalized; 43 provisional artworks and 5 generic fallbacks remain'
+            logo_system['convertedVerifiedLogos'] = 136
+            logo_system['placeholderLogosNeedingSource'] = 47
+            logo_system['status'] = '136 user-verified club logos normalized; 42 provisional artworks and 5 generic fallbacks remain'
         out.append(f'window.{name} = {json.dumps(data, separators=(",", ":"))};')
     path.write_text('\n'.join(out) + '\n', encoding='utf-8')
 
@@ -241,9 +241,9 @@ def update_site_release():
     site = json.loads(path.read_text(encoding='utf-8'))
     site.update({
         'version': RELEASE,
-        'name': 'Club Logo Expansion',
+        'name': 'JO Results Logos and Journey Links',
         'date': '2026-07-27',
-        'notes': 'Adds 60 user-supplied club logos, applies four approved shared-artwork mappings, leaves five intentionally generic club entries, and preserves all rankings and tournament data.',
+        'notes': 'Adds San Diego Shores artwork, displays club logos in JO results, and links every placement to the team’s completed JO game journey.',
         'logoLibraryRelease': RELEASE,
         'logoDeliveryRelease': RELEASE,
         'clubLogoCompletionRelease': RELEASE,

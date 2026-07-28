@@ -1,10 +1,10 @@
-# CPI 7.52.6
+# CPI 7.52.7
 
-WPI club logo expansion.
+JO results logos and direct team-journey links.
 
-- Adds 60 user-supplied club logos.
-- Applies four approved shared-artwork mappings.
-- Preserves Lamorinda Brentwood as a distinct correctly named club while using Lamorinda artwork.
-- Leaves Atherton, Atwater, 99 Alliance, Hawaiian Islands, and YPro on the generic WPI fallback.
-- Keeps 43 provisional artworks flagged for later verification.
-- Preserves all 724 rankings and all tournament data.
+- Displays club artwork beside every Junior Olympics final-placement row.
+- Links each team directly to its selected JO division journey with completed games, scores, opponents, venues, and bracket context.
+- Adds logos and journey links to homepage JO result previews.
+- Makes JO deep links tolerant of capitalization and punctuation differences in source team names.
+- Adds the user-supplied San Diego Shores logo across rankings, teams, clubs, and JO results.
+- Preserves all 724 rankings and 976 JO placements.
