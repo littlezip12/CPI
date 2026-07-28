@@ -18,7 +18,7 @@ bridge=load('data/tournaments/jo-profile-bridge.json')
 audit=load('data/identity/kern-skip-separation-7.52.13.json')
 participants=load('data/tournaments/identity/participants.json').get('participants',[])
 
-if site.get('version') not in {'7.52.13','7.52.14','7.52.15'}: fail('site version must be 7.52.13')
+if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16'}: fail('site version must be 7.52.13')
 for key in ['rankingDataRelease','identityRelease','joProfileRelease','teamProfileRelease','clubProfileRelease']:
     if site.get(key)!='7.52.13': fail(f'{key} must be 7.52.13')
 if site.get('joResultsRelease')!='7.52.15': fail('joResultsRelease must be 7.52.15')
@@ -88,7 +88,7 @@ for group,old in [('12U Boys','skip-12u-boys'),('14U Boys','skip-a'),('16U Boys'
 line=next((x for x in (ROOT/'data.js').read_text().splitlines() if x.startswith('window.CPI_RANKINGS = ')),None)
 if not line or json.loads(line[len('window.CPI_RANKINGS = '):-1])!=rankings: fail('data.js rankings do not match rankings.json')
 for rel in ['index.html','rankings.html','clubs.html','club.html','team.html','tournaments.html']:
-    if 'data.js?v=7.52.14' not in (ROOT/rel).read_text(): fail(f'{rel} does not load the corrected ranking data cache key')
+    if 'data.js?v=7.52.16' not in (ROOT/rel).read_text(): fail(f'{rel} does not load the corrected ranking data cache key')
 
 if audit.get('rankedClubCounts',{}).get('club-kern-premier')!=4 or audit.get('rankedClubCounts',{}).get('club-skip')!=1: fail('migration audit counts are incorrect')
 

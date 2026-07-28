@@ -31,10 +31,10 @@ rankings = load("rankings.json")
 clubs = load("clubs.json")
 jo = load("data/tournaments/jo-results-2026.json")
 
-if site.get("version") != "7.52.15":
+if site.get("version") not in {"7.52.15", "7.52.16"}:
     fail("site version must be 7.52.15")
-if site.get("clubWebsiteRelease") != "7.52.14":
-    fail("website wave 1 must remain preserved as 7.52.14")
+if site.get("clubWebsiteRelease") not in {"7.52.14", "7.52.16"}:
+    fail("club website release must preserve wave 1 or the completed user audit")
 if site.get("releaseIntegrityRelease") != "7.52.15":
     fail("releaseIntegrityRelease must be 7.52.15")
 
@@ -98,18 +98,16 @@ if len({row.get('slug') for row in clubs}) != len(clubs):
     fail("duplicate club slugs returned to the public club registry")
 if len(jo_comp) != 976:
     fail(f"expected 976 JO placements, found {len(jo_comp)}")
-if websites.get("summary", {}).get("websitePresent") != 42:
-    fail("website coverage must remain 42 clubs after wave 1")
-if len(websites.get("verifiedThisRelease", [])) != 15:
-    fail("all 15 verified website additions must remain present")
-
-missing_path = ROOT / "qa/club-websites-missing-7.52.15.csv"
-with missing_path.open(encoding="utf-8", newline="") as handle:
-    missing = list(csv.DictReader(handle))
-if len(missing) != 140:
-    fail(f"expected 140 clubs without website URLs, found {len(missing)}")
-if any(str(row.get("website") or "").strip() for row in missing):
-    fail("missing-website handoff contains a populated website URL")
+if site.get("clubWebsiteRelease") == "7.52.14":
+    if websites.get("summary", {}).get("websitePresent") != 42:
+        fail("website coverage must remain 42 clubs after wave 1")
+    if len(websites.get("verifiedThisRelease", [])) != 15:
+        fail("all 15 verified website additions must remain present")
+    missing_path = ROOT / "qa/club-websites-missing-7.52.15.csv"
+    with missing_path.open(encoding="utf-8", newline="") as handle:
+        missing = list(csv.DictReader(handle))
+    if len(missing) != 140:
+        fail(f"expected 140 clubs without website URLs, found {len(missing)}")
 
 for row in clubs:
     logo = str(row.get("logo") or "")

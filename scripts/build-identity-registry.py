@@ -182,6 +182,7 @@ def main() -> None:
             "website": profile_override.get("website") or preferred.get("website") or next((x.get("website") for x in members if x.get("website")), ""),
             "websiteStatus": profile_override.get("websiteStatus") or preferred.get("websiteStatus") or "",
             "websiteVerifiedAt": profile_override.get("websiteVerifiedAt") or preferred.get("websiteVerifiedAt") or "",
+            "websiteUpdatedAt": profile_override.get("websiteUpdatedAt") or preferred.get("websiteUpdatedAt") or "",
             "websiteSource": profile_override.get("websiteSource") or preferred.get("websiteSource") or "",
             "websiteReviewNote": profile_override.get("websiteReviewNote") or preferred.get("websiteReviewNote") or "",
             "logo": profile_override.get("logo") or preferred.get("logo") or next((x.get("logo") for x in members if x.get("logo")), "assets/logos/cpi-logo-fallback.svg"),

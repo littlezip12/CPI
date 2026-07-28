@@ -15,7 +15,7 @@ audit=load('qa/boys-post-jo-2026-ranking-audit.json')
 site=load('config/site-release.json')
 groups=['12U Boys','14U Boys','16U Boys','18U Boys']
 
-if site.get('version') not in {'7.52.0','7.52.1','7.52.2','7.52.3','7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}: fail('site release must preserve the 7.52.x post-JO ranking series')
+if site.get('version') not in {'7.52.0','7.52.1','7.52.2','7.52.3','7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16'}: fail('site release must preserve the 7.52.x post-JO ranking series')
 if site.get('rankingDataRelease') != '7.52.13': fail('rankingDataRelease must include the Kern Premier identity correction')
 if audit.get('approvedTeams')!=400: fail('audit must report 400 approved Boys teams')
 
@@ -59,7 +59,7 @@ else:
 
 for path in ['index.html','rankings.html']:
     text=(ROOT/path).read_text(encoding='utf-8')
-    if 'data.js?v=7.52.14' not in text: fail(f'{path} does not cache-bust the current rankings data')
+    if 'data.js?v=7.52.16' not in text: fail(f'{path} does not cache-bust the current rankings data')
 home=(ROOT/'index.html').read_text(encoding='utf-8').lower()
 if 'post-junior olympics rankings' not in home and 'post-jo rankings' not in home: fail('homepage does not announce post-JO rankings')
 

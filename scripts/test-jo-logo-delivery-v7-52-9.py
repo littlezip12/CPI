@@ -23,7 +23,7 @@ def ordered(text: str, tokens: list[str], label: str) -> None:
 
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
-if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}:
+if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16'}:
     fail('site release must preserve JO logo delivery 7.52.10 or later')
 if site.get('identityRelease') != '7.52.13':
     fail('identityRelease must remain 7.52.13')
@@ -46,13 +46,13 @@ girls = (ROOT / 'tournaments/jo-girls/index.html').read_text(encoding='utf-8')
 resolver = (ROOT / 'js/cpi-identity.js').read_text(encoding='utf-8')
 
 ordered(index, [
-    'data.js?v=7.52.14',
+    'data.js?v=7.52.16',
     'data/identity/runtime.js?v=7.52.13',
     'js/cpi-identity.js?v=7.52.13',
     'js/homepage-wpi-v7-52-4.js?v=7.52.9',
 ], 'index.html')
 ordered(tournaments, [
-    'data.js?v=7.52.14',
+    'data.js?v=7.52.16',
     'data/identity/runtime.js?v=7.52.13',
     'js/cpi-identity.js?v=7.52.13',
     'data/tournaments/jo-profile-runtime.js?v=7.52.13',

@@ -17,7 +17,7 @@ bridge=load('data/tournaments/jo-profile-bridge.json')
 rankings=load('rankings.json')
 clubs=load('data/identity/index.json').get('clubs',{})
 
-if site.get('version') not in {'7.52.13','7.52.14','7.52.15'}: fail('site version must be 7.52.13')
+if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16'}: fail('site version must be 7.52.13')
 for key in ('joProfileRelease','teamProfileRelease','clubProfileRelease'):
     if site.get(key)!='7.52.13': fail(f'{key} must be 7.52.13')
 for key in ('joResultsRelease','tournamentUIRelease'):
