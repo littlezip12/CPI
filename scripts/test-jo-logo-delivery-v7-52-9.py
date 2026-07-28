@@ -23,20 +23,21 @@ def ordered(text: str, tokens: list[str], label: str) -> None:
 
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
-if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14'}:
+if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}:
     fail('site release must preserve JO logo delivery 7.52.10 or later')
-for key in ['identityRelease', 'logoDeliveryRelease']:
-    if site.get(key) != '7.52.13':
-        fail(f'{key} must be 7.52.13')
-if site.get('joLogoRelease') not in {'7.52.12','7.52.13','7.52.14'}:
+if site.get('identityRelease') != '7.52.13':
+    fail('identityRelease must remain 7.52.13')
+if site.get('logoDeliveryRelease') != '7.52.15':
+    fail('logoDeliveryRelease must be 7.52.15')
+if site.get('joLogoRelease') not in {'7.52.12','7.52.13','7.52.14','7.52.15'}:
     fail('joLogoRelease must preserve verified JO logo routing')
-if site.get('joResultsRelease') != '7.52.13':
-    fail('joResultsRelease must be 7.52.13')
+if site.get('joResultsRelease') != '7.52.15':
+    fail('joResultsRelease must be 7.52.15')
 for key in ['joApplicationRelease', 'joJourneyRelease']:
     if site.get(key) != '7.52.9':
         fail(f'{key} must remain 7.52.9')
-if site.get('tournamentUIRelease') != '7.52.13':
-    fail('tournamentUIRelease must be 7.52.13')
+if site.get('tournamentUIRelease') != '7.52.15':
+    fail('tournamentUIRelease must be 7.52.15')
 
 index = (ROOT / 'index.html').read_text(encoding='utf-8')
 tournaments = (ROOT / 'tournaments.html').read_text(encoding='utf-8')
@@ -55,7 +56,7 @@ ordered(tournaments, [
     'data/identity/runtime.js?v=7.52.13',
     'js/cpi-identity.js?v=7.52.13',
     'data/tournaments/jo-profile-runtime.js?v=7.52.13',
-    'js/jo-results-browser-v7-52-1.js?v=7.52.13',
+    'js/jo-results-browser-v7-52-1.js?v=7.52.15',
 ], 'tournaments.html')
 for label, text in [('Boys JO page', boys), ('Girls JO page', girls)]:
     ordered(text, [
@@ -89,5 +90,5 @@ if errors:
 
 print('JO LOGO DELIVERY 7.52.9 TESTS PASSED')
 print(' - Homepage, full tournament results, and Boys/Girls journeys load runtime → resolver → consumer in order')
-print(' - Changed identity assets are cache-busted to 7.52.13')
+print(' - The corrected JO results browser is cache-busted to 7.52.15')
 print(' - Known JO source-name variants route to existing club artwork')

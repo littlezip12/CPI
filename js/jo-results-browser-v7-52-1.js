@@ -96,14 +96,20 @@
 
   function assetFor(name, group) {
     const ranked = rankedTeamFor(name, group);
-    if (ranked?.logo) return { logo: ranked.logo, profile: ranked.teamPage || "" };
     const joSlug = joProfiles.lookup?.[`${group?.id || ""}|${normalize(name)}`];
     const joProfile = joSlug ? joProfiles.teams?.[joSlug] : null;
-    if (joProfile) return { logo: joProfile.logo || fallbackLogo, profile: joProfile.teamPage || `team.html?team=${encodeURIComponent(joProfile.profileSlug || "")}` };
     const club = clubFor(name, group);
+    const usableLogo = (value) => Boolean(value) && !String(value).includes("cpi-logo-fallback");
+    const rankedLogo = usableLogo(ranked?.logo) ? ranked.logo : "";
+    const joProfileLogo = usableLogo(joProfile?.logo) ? joProfile.logo : "";
+    const clubLogo = usableLogo(club?.logo) ? club.logo : "";
     return {
-      logo: club?.logo || fallbackLogo,
-      profile: club?.clubPage || (club?.slug ? `club.html?club=${encodeURIComponent(club.slug)}` : "")
+      logo: rankedLogo || joProfileLogo || clubLogo || fallbackLogo,
+      profile: joProfile?.teamPage
+        || ranked?.teamPage
+        || club?.clubPage
+        || (joProfile?.profileSlug ? `team.html?team=${encodeURIComponent(joProfile.profileSlug)}` : "")
+        || (club?.slug ? `club.html?club=${encodeURIComponent(club.slug)}` : "")
     };
   }
 

@@ -18,9 +18,10 @@ bridge=load('data/tournaments/jo-profile-bridge.json')
 audit=load('data/identity/kern-skip-separation-7.52.13.json')
 participants=load('data/tournaments/identity/participants.json').get('participants',[])
 
-if site.get('version') not in {'7.52.13','7.52.14'}: fail('site version must be 7.52.13')
-for key in ['rankingDataRelease','identityRelease','joResultsRelease','joProfileRelease','teamProfileRelease','clubProfileRelease']:
+if site.get('version') not in {'7.52.13','7.52.14','7.52.15'}: fail('site version must be 7.52.13')
+for key in ['rankingDataRelease','identityRelease','joProfileRelease','teamProfileRelease','clubProfileRelease']:
     if site.get(key)!='7.52.13': fail(f'{key} must be 7.52.13')
+if site.get('joResultsRelease')!='7.52.15': fail('joResultsRelease must be 7.52.15')
 if len(rankings)!=724: fail(f'expected 724 ranking rows, found {len(rankings)}')
 if len({c.get('slug') for c in clubs})!=len(clubs): fail('public club slugs are not unique')
 

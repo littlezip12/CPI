@@ -21,7 +21,7 @@ index=load('data/identity/index.json')
 audit=load('data/club-website-audit-7.52.14.json')
 intel=load('data/club-intelligence.json').get('clubs',{})
 
-if site.get('version')!='7.52.14': fail('site version must be 7.52.14')
+if site.get('version') not in {'7.52.14','7.52.15'}: fail('site version must preserve the 7.52.14 website release')
 if site.get('clubWebsiteRelease')!='7.52.14': fail('clubWebsiteRelease must be 7.52.14')
 if len(clubs)!=182 or len(registry)!=182 or len(identity)!=182: fail('canonical club count must remain 182')
 summary=audit.get('summary',{})

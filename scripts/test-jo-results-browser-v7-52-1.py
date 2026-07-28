@@ -31,11 +31,11 @@ html = (ROOT / "tournaments.html").read_text(encoding="utf-8")
 js = (ROOT / "js/jo-results-browser-v7-52-1.js").read_text(encoding="utf-8")
 css_path = ROOT / "css/jo-results-browser-v7-52-1.css"
 
-if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14"}:
+if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15"}:
     fail("site release must preserve JO results browser compatibility")
-if site.get("joResultsRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14"}:
+if site.get("joResultsRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15"}:
     fail("joResultsRelease must preserve the data browser or the linked-journey UI release")
-if site.get("tournamentUIRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14"}:
+if site.get("tournamentUIRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15"}:
     fail("tournamentUIRelease must preserve the results browser or the linked-journey UI release")
 if results.get("release") != "7.52.1":
     fail("results data release must be 7.52.1")
@@ -200,7 +200,7 @@ required_html = [
     'data/identity/runtime.js?v=7.52.13',
     'js/cpi-identity.js?v=7.52.13',
     'data/tournaments/jo-profile-runtime.js?v=7.52.13',
-    'js/jo-results-browser-v7-52-1.js?v=7.52.13',
+    'js/jo-results-browser-v7-52-1.js?v=7.52.15',
 ]
 for token in required_html:
     if token not in html:
@@ -215,6 +215,8 @@ required_js = [
     'cpi521-team-logo',
     'journeyUrl(group, division, team.team)',
     'focus: "journey"',
+    'const usableLogo = (value)',
+    'logo: rankedLogo || joProfileLogo || clubLogo || fallbackLogo',
 ]
 for token in required_js:
     if token not in js:

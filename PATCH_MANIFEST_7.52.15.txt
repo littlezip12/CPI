@@ -1,0 +1,20 @@
+WPI 7.52.15 — JO Results Logo Restoration and Website Integrity Guard
+
+Purpose
+- Restore verified club artwork throughout the Junior Olympics results browser.
+- Preserve JO team-profile links without allowing missing profile artwork to suppress club logos.
+- Preserve all 15 verified website additions from WPI 7.52.14.
+- Export the 140 clubs that still need website URLs.
+
+Protected data
+- 724 ranking rows and CPI values
+- 182 consolidated club identities
+- Existing club logo assignments
+- 976 JO placements, records, and tournament paths
+- Kern Premier / SKIP / Kearns separation
+- Clovis and Visalia family consolidations
+
+New QA
+- 955 of 976 JO placement rows resolve to existing club artwork.
+- Release integrity hashes protect rankings, club identities/logos, and JO placement data.
+- A missing-website handoff CSV lists all 140 clubs without a URL.

@@ -17,9 +17,11 @@ bridge=load('data/tournaments/jo-profile-bridge.json')
 rankings=load('rankings.json')
 clubs=load('data/identity/index.json').get('clubs',{})
 
-if site.get('version') not in {'7.52.13','7.52.14'}: fail('site version must be 7.52.13')
-for key in ('joProfileRelease','teamProfileRelease','clubProfileRelease','joResultsRelease','tournamentUIRelease'):
+if site.get('version') not in {'7.52.13','7.52.14','7.52.15'}: fail('site version must be 7.52.13')
+for key in ('joProfileRelease','teamProfileRelease','clubProfileRelease'):
     if site.get(key)!='7.52.13': fail(f'{key} must be 7.52.13')
+for key in ('joResultsRelease','tournamentUIRelease'):
+    if site.get(key)!='7.52.15': fail(f'{key} must be 7.52.15')
 if site.get('rankingDataRelease')!='7.52.13': fail('rankingDataRelease must be 7.52.13')
 if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')
 if bridge.get('release')!='7.52.13': fail('JO profile bridge release must be 7.52.13')
@@ -58,7 +60,7 @@ if len({kern_identity.get('id'),kearns.get('id'),skip_identity.get('id')})!=3: f
 html_requirements={
  'team.html':['css/jo-profile-bridge-v7-52-11.css?v=7.52.13','data/tournaments/jo-profile-runtime.js?v=7.52.13','js/team-profile-v7-42.js?v=7.52.13'],
  'club.html':['css/jo-profile-bridge-v7-52-11.css?v=7.52.13','data/tournaments/jo-profile-runtime.js?v=7.52.13','js/club-intelligence-v7-26.js?v=7.52.13'],
- 'tournaments.html':['data/tournaments/jo-profile-runtime.js?v=7.52.13','js/jo-results-browser-v7-52-1.js?v=7.52.13'],
+ 'tournaments.html':['data/tournaments/jo-profile-runtime.js?v=7.52.13','js/jo-results-browser-v7-52-1.js?v=7.52.15'],
 }
 for rel,tokens in html_requirements.items():
     text=(ROOT/rel).read_text(encoding='utf-8')
@@ -71,7 +73,7 @@ for rel,tokens in html_requirements.items():
 for rel,tokens in {
  'js/team-profile-v7-42.js':['findJoProfile','renderJoOnlyTeamProfile','View complete JO game journey'],
  'js/club-intelligence-v7-26.js':['connectedTeams','renderJoClubProfile','Teams and final results'],
- 'js/jo-results-browser-v7-52-1.js':['window.WPI_JO_PROFILES','joProfiles.lookup','joProfile.teamPage'],
+ 'js/jo-results-browser-v7-52-1.js':['window.WPI_JO_PROFILES','joProfiles.lookup','joProfile?.teamPage'],
 }.items():
     text=(ROOT/rel).read_text(encoding='utf-8')
     for token in tokens:
