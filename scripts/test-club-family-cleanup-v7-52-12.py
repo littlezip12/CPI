@@ -10,7 +10,7 @@ site=load('config/site-release.json')
 clubs=load('clubs.json'); rankings=load('rankings.json'); identity=load('data/identity/index.json')
 bridge=load('data/tournaments/jo-profile-bridge.json'); audit=load('data/identity/club-family-cleanup-7.52.12.json')
 by_slug={c.get('slug'):c for c in clubs}
-if site.get('version') not in {'7.52.12','7.52.13'}: fail('site version must preserve the 7.52.12 cleanup')
+if site.get('version') not in {'7.52.12','7.52.13','7.52.14'}: fail('site version must preserve the 7.52.12 cleanup')
 if len(clubs)!=182: fail(f'expected 182 unique public clubs, found {len(clubs)}')
 for stale in ['clovis-red','vnited']:
     if stale in by_slug: fail(f'duplicate public club remains: {stale}')

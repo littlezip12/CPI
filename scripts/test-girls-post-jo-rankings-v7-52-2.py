@@ -16,7 +16,7 @@ site=load('config/site-release.json')
 groups=['12U Girls','14U Girls','16U Girls','18U Girls']
 expected={'12U Girls':52,'14U Girls':87,'16U Girls':93,'18U Girls':92}
 
-if site.get('version') not in {'7.52.2','7.52.3','7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13'}: fail('site release must preserve the 7.52.2 Girls ranking release or a later 7.52.x presentation release')
+if site.get('version') not in {'7.52.2','7.52.3','7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14'}: fail('site release must preserve the 7.52.2 Girls ranking release or a later 7.52.x presentation release')
 if site.get('rankingDataRelease')!='7.52.13': fail('rankingDataRelease must include the Kern Premier identity correction')
 if site.get('girlsPostJORankingRelease')!='7.52.13': fail('girlsPostJORankingRelease must include the Kern Premier identity correction')
 if audit.get('approvedTeams')!=324: fail('audit must report 324 approved Girls teams')
@@ -67,7 +67,7 @@ else:
 
 for path in ['index.html','rankings.html','12u-girls.html','14u-girls.html','16u-girls.html','18u-girls.html']:
     text=(ROOT/path).read_text(encoding='utf-8')
-    if 'data.js?v=7.52.13' not in text: fail(f'{path} does not cache-bust the Girls ranking release')
+    if 'data.js?v=7.52.14' not in text: fail(f'{path} does not cache-bust the Girls ranking release')
 home=(ROOT/'index.html').read_text(encoding='utf-8').lower()
 if 'boys/girls' not in home and 'boys and girls' not in home and 'post-junior olympics rankings' not in home: fail('homepage does not announce Boys and Girls post-JO rankings')
 

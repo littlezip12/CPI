@@ -88,6 +88,9 @@ def build_intelligence(rankings, registry):
             "metroRegion": reg.get("metroRegion") or top.get("metroRegion") or "",
             "macroRegion": reg.get("macroRegion") or top.get("macroRegion") or "",
             "website": reg.get("website") or top.get("website") or "",
+            "websiteStatus": reg.get("websiteStatus") or top.get("websiteStatus") or "",
+            "websiteVerifiedAt": reg.get("websiteVerifiedAt") or top.get("websiteVerifiedAt") or "",
+            "websiteSource": reg.get("websiteSource") or "",
             "logo": reg.get("logo") or top.get("logo") or "assets/cpi-logo-fallback.svg",
             "colors": reg.get("colors") or {
                 "primary": top.get("primaryColor") or "#071426",
@@ -143,6 +146,9 @@ def build_intelligence(rankings, registry):
                 "metroRegion": reg.get("metroRegion") or "",
                 "macroRegion": reg.get("macroRegion") or "",
                 "website": reg.get("website") or "",
+                "websiteStatus": reg.get("websiteStatus") or "",
+                "websiteVerifiedAt": reg.get("websiteVerifiedAt") or "",
+                "websiteSource": reg.get("websiteSource") or "",
                 "logo": reg.get("logo") or "assets/cpi-logo-fallback.svg",
                 "colors": reg.get("colors") or {"primary":"#071426","secondary":"#126dff","accent":"#f6b700"},
                 "rankedTeams": 0,
@@ -179,7 +185,7 @@ def render_page(club):
     team_rows = "\n".join(rows) if rows else '<tr><td colspan="7">No ranked teams yet.</td></tr>'
 
     website = club.get("website")
-    website_link = f'<a class="club-btn secondary" href="{esc(website)}">Club Website</a>' if website else ""
+    website_link = f'<a class="club-btn secondary" href="{esc(website)}" target="_blank" rel="noopener">Official Club Website</a>' if website else ""
 
     return f"""<!doctype html>
 <html lang="en">
