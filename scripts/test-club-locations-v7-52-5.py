@@ -12,7 +12,7 @@ rankings=load('rankings.json')
 identity=load('data/identity/clubs.json')
 release=load('data/club-location-release-7.52.5.json')
 required=['city','country','locationLabel','region','metroRegion','macroRegion','locationConfidence','locationSource']
-if site.get('version')!='7.52.5': fail('site release must be 7.52.5')
+if site.get('version') not in {'7.52.5','7.52.6'}: fail('site release must preserve the 7.52.5 location release or a later 7.52.x presentation release')
 if site.get('clubLocationRelease')!='7.52.5': fail('clubLocationRelease must be 7.52.5')
 if len(clubs)!=183: fail(f'expected 183 clubs, found {len(clubs)}')
 if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')

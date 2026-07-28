@@ -1,9 +1,10 @@
-# CPI 7.52.5
+# CPI 7.52.6
 
-WPI club location and region completion.
+WPI club logo expansion.
 
-- Resolves all 72 clubs previously marked `Region TBD`.
-- Adds city, state, country, location label, metro region, macro region, source, and confidence metadata.
-- Preserves the existing public regional filter taxonomy while adding more precise structured geography.
-- Updates club directory cards, dynamic profiles, generated club pages, ranking exports, and identity data.
+- Adds 60 user-supplied club logos.
+- Applies four approved shared-artwork mappings.
+- Preserves Lamorinda Brentwood as a distinct correctly named club while using Lamorinda artwork.
+- Leaves Atherton, Atwater, 99 Alliance, Hawaiian Islands, and YPro on the generic WPI fallback.
+- Keeps 43 provisional artworks flagged for later verification.
 - Preserves all 724 rankings and all tournament data.

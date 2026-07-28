@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import hashlib
+import json
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+from PIL import Image
+
+ROOT = Path(__file__).resolve().parents[1]
+errors=[]
+def fail(msg): errors.append(msg)
+def load(path): return json.loads((ROOT/path).read_text(encoding='utf-8'))
+
+site=load('config/site-release.json')
+release=load('data/club-logo-release-7.52.6.json')
+clubs=load('club-registry.json')
+public=load('clubs.json')
+rankings=load('rankings.json')
+registry=load('data/logo-registry.json').get('logos',{})
+
+if site.get('version')!='7.52.6': fail('site release must be 7.52.6')
+if site.get('clubLogoCompletionRelease')!='7.52.6': fail('clubLogoCompletionRelease must be 7.52.6')
+if site.get('logoLibraryRelease')!='7.52.6': fail('logoLibraryRelease must be 7.52.6')
+if site.get('rankingDataRelease')!='7.52.2': fail('rankingDataRelease must remain 7.52.2')
+if len(clubs)!=183: fail(f'expected 183 clubs, found {len(clubs)}')
+if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')
+
+counts=Counter(c.get('logoStatus') for c in clubs)
+if counts.get('verified_by_user')!=135: fail(f"expected 135 verified logos, found {counts.get('verified_by_user')}")
+if counts.get('placeholder')!=43: fail(f"expected 43 provisional artworks, found {counts.get('placeholder')}")
+if counts.get('fallback')!=5: fail(f"expected 5 generic fallbacks, found {counts.get('fallback')}")
+
+expected_generic={'99-alliance','atherton','atwater','hawaiian-islands','ypro'}
+actual_generic={c['slug'] for c in clubs if c.get('logoStatus')=='fallback'}
+if actual_generic!=expected_generic: fail(f'generic fallback set differs: {sorted(actual_generic)}')
+
+verified=set(release.get('directUserSuppliedLogos',[])) | set(release.get('sharedIdentityArtwork',{}))
+if len(release.get('directUserSuppliedLogos',[]))!=60: fail('release must contain 60 direct logos')
+if len(release.get('sharedIdentityArtwork',{}))!=4: fail('release must contain four shared mappings')
+if len(verified)!=64: fail(f'expected 64 updated club entries, found {len(verified)}')
+
+by_slug={c['slug']:c for c in clubs}
+public_by_slug={c['slug']:c for c in public}
+for slug in sorted(verified):
+    expected=f'assets/logos/canonical/{slug}.webp'
+    asset=ROOT/expected
+    if not asset.exists() or asset.stat().st_size<100: fail(f'missing/empty logo {slug}')
+    else:
+        try:
+            im=Image.open(asset)
+            if im.format!='WEBP': fail(f'{slug} is not WebP')
+            if im.size!=(512,512): fail(f'{slug} must be 512x512, found {im.size}')
+        except Exception as exc: fail(f'invalid image {slug}: {exc}')
+    if registry.get(slug)!=expected: fail(f'logo registry mismatch {slug}')
+    club=by_slug.get(slug)
+    if not club: fail(f'missing club record {slug}'); continue
+    if club.get('logo')!=expected or club.get('logoStatus')!='verified_by_user': fail(f'club registry mismatch {slug}')
+    if public_by_slug.get(slug,{}).get('logo')!=expected: fail(f'clubs.json mismatch {slug}')
+    page=ROOT/'club'/f'{slug}.html'
+    if not page.exists(): fail(f'missing club page {slug}')
+    elif f'../{expected}' not in page.read_text(encoding='utf-8'): fail(f'club page logo mismatch {slug}')
+
+for alias, source in release.get('sharedIdentityArtwork',{}).items():
+    a=ROOT/'assets/logos/canonical'/f'{alias}.webp'
+    b=ROOT/'assets/logos/canonical'/f'{source}.webp'
+    if a.exists() and b.exists() and a.read_bytes()!=b.read_bytes(): fail(f'shared artwork differs {alias}/{source}')
+
+for row in rankings:
+    slug=row.get('clubSlug')
+    if slug in verified and row.get('logo')!=f'assets/logos/canonical/{slug}.webp': fail(f"ranking logo mismatch {row.get('team')}")
+    if slug in expected_generic and row.get('logo')!='assets/logos/cpi-logo-fallback.svg': fail(f"generic club no longer uses fallback: {row.get('team')}")
+
+# Browser exports must match source JSON.
+vars={}
+for line in (ROOT/'data.js').read_text(encoding='utf-8').splitlines():
+    m=re.match(r'window\.(CPI_[A-Z_]+) = (.*);$',line)
+    if m: vars[m.group(1)]=json.loads(m.group(2))
+if vars.get('CPI_RANKINGS')!=rankings: fail('data.js rankings differ from rankings.json')
+if vars.get('CPI_CLUBS')!=public: fail('data.js clubs differ from clubs.json')
+platform=vars.get('CPI_PLATFORM',{})
+if platform.get('brandingStatus',{}).get('verifiedLogoCount')!=135: fail('platform verified logo count is not 135')
+
+canonical=[{'group':r.get('group'),'rank':r.get('postRank'),'team':r.get('team'),'clubSlug':r.get('clubSlug'),'cpi':r.get('postCPI')} for r in rankings]
+rank_hash=hashlib.sha256(json.dumps(canonical,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+if rank_hash!=release.get('rankingIntegrityHash'): fail('ranking integrity hash changed')
+
+if errors:
+    print('CLUB LOGO 7.52.6 TEST FAILED')
+    for e in errors: print(' -',e)
+    sys.exit(1)
+print('CLUB LOGO 7.52.6 TESTS PASSED')
+print(' - 60 user-supplied logos and four shared-artwork mappings are synchronized')
+print(' - 135 clubs now use user-verified artwork; five intentionally remain generic')
+print(' - 724 rankings and all team labels remain unchanged')

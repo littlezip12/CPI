@@ -17,6 +17,13 @@ CANVAS_SIZE = 512
 PADDING = 64
 WEBP_QUALITY = 90
 
+SHARED_ARTWORK = {
+    "lamorinda-brentwood": "lamorinda",
+    "vnited": "visalia-united",
+    "vegas-patriot": "team-vegas",
+    "hilo-grammaz": "hilo-hammahz",
+}
+
 ALIASES = {
     "la-jolla-united-a": "la-jolla-united",
     "la-jolla-united-b": "la-jolla-united",
@@ -122,6 +129,14 @@ def build_registry():
             registry["logos"][slug] = f"assets/logos/canonical/{slug}.svg"
             registry["svgCopies"][slug] = f"assets/logos/canonical/{slug}.svg"
             print(f"Copied SVG {out.relative_to(ROOT)}")
+
+    for alias, canonical in SHARED_ARTWORK.items():
+        src = OUTPUT / f"{canonical}.webp"
+        out = OUTPUT / f"{alias}.webp"
+        if src.exists():
+            shutil.copy2(src, out)
+            registry["logos"][alias] = f"assets/logos/canonical/{alias}.webp"
+            print(f"Built shared artwork {out.relative_to(ROOT)} from {canonical}")
 
     REGISTRY.write_text(json.dumps(registry, indent=2), encoding="utf-8")
     print(f"Wrote {REGISTRY.relative_to(ROOT)}")
