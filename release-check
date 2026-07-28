@@ -2,7 +2,6 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$ROOT"
-
 echo "CPI Release Check"
 echo "================="
 python3 scripts/release-audit.py --write-report qa/release-audit-latest.json
@@ -17,6 +16,7 @@ node scripts/test-jo-boys-embedded-fallback.js
 node scripts/test-jo-girls-verified-fallback.js
 node scripts/test-jo-shootout-stage.js
 python3 scripts/validate-identity-registry.py
+node scripts/test-jo-logo-identity-v7-52-8.js
 python3 scripts/test-boys-post-jo-rankings-v7-52-0.py
 python3 scripts/test-girls-post-jo-rankings-v7-52-2.py
 python3 scripts/test-jo-results-browser-v7-52-1.py
@@ -66,6 +66,5 @@ node scripts/test-jo-live-relay-v7-51-0.js
 node scripts/test-jo-boys-mobile-reliability-v7-51-6.js
 node scripts/test-tournament-ui-v7-50.js
 python3 scripts/validate-tournament-ui-v7-50.py
-
 echo
 echo "CPI release check passed."

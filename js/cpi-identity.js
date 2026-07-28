@@ -1,24 +1,149 @@
-/* CPI canonical identity resolver — data 7.40.0, scope-safety patch 7.41.0 */
+/* WPI canonical identity resolver — registry 7.40.0, JO logo identity patch 7.52.8 */
 (function(global){
   'use strict';
-  const runtime=global.CPI_IDENTITY_RUNTIME||{clubs:{},teams:{},clubAliasIndex:{},teamScopedAliasIndex:{},teamUnscopedAliasIndex:{}};
+
+  const runtime=global.CPI_IDENTITY_RUNTIME||{
+    clubs:{},
+    teams:{},
+    clubAliasIndex:{},
+    teamScopedAliasIndex:{},
+    teamUnscopedAliasIndex:{}
+  };
+
+  const JO_EXACT_CLUB_ALIASES=Object.freeze({
+    'central valley united':'club-cvu',
+    'texas thunder':'club-thunder',
+    'cal republic':'club-cal-rep',
+    'california republic':'club-cal-rep',
+    'san jose foundation':'club-sj-foundation',
+    'san jose wpf':'club-sj-foundation',
+    'sj water polo foundation':'club-sj-foundation',
+    'tualatin hills':'club-t-hills',
+    'eca':'club-sd-eca',
+    'tri valley':'club-tri-valley-tritons',
+    'lb viking':'club-viking',
+    'long beach viking':'club-viking',
+    'palos verdes':'club-pv-wpc',
+    'palos verdes wpc':'club-pv-wpc',
+    'laguna':'club-laguna-beach',
+    'tsunami':'club-rancho-tsunami'
+  });
+
+  const JO_PREFIX_CLUB_ALIASES=Object.freeze([
+    [/^lamorinda brentwood(?: |$)/,'club-lamorinda-brentwood'],
+    [/^vegas north irvine(?: |$)/,'club-north-irvine'],
+    [/^central valley united(?: |$)/,'club-cvu'],
+    [/^texas thunder(?: |$)/,'club-thunder'],
+    [/^san jose foundation(?: |$)/,'club-sj-foundation'],
+    [/^san jose wpf(?: |$)/,'club-sj-foundation'],
+    [/^san jose express(?: |$)/,'club-san-jose-express'],
+    [/^brooklyn hustle(?: |$)/,'club-brooklyn-hustle'],
+    [/^santa barbara(?: wpc)?(?: |$)/,'club-santa-barbara'],
+    [/^north irvine(?: wpc)?(?: |$)/,'club-north-irvine'],
+    [/^sd dons(?: |$)/,'club-sd-dons'],
+    [/^san diego dons(?: |$)/,'club-sd-dons'],
+    [/^ciu(?: |$)/,'club-ciu'],
+    [/^channel islands united(?: |$)/,'club-ciu'],
+    [/^trojan(?: |$)/,'club-trojan'],
+    [/^rancho tsunami(?: |$)/,'club-rancho-tsunami'],
+    [/^680(?: |$)/,'club-680'],
+    [/^908(?: |$)/,'club-908'],
+    [/^(?:lb shore|long beach shore)(?: |$)/,'club-long-beach-shore'],
+    [/^(?:lb viking|long beach viking)(?: |$)/,'club-viking'],
+    [/^(?:cal republic|california republic|cal rep)(?: |$)/,'club-cal-rep'],
+    [/^(?:palos verdes|pv wpc)(?: |$)/,'club-pv-wpc'],
+    [/^(?:laguna beach|laguna)(?: |$)/,'club-laguna-beach'],
+    [/^(?:tualatin hills|t hills)(?: |$)/,'club-t-hills'],
+    [/^(?:tri valley tritons|tri valley)(?: |$)/,'club-tri-valley-tritons']
+  ]);
+
+  const JO_TEAM_SUFFIXES=new Set([
+    'a','b','c','d','13a',
+    'black','blue','red','white','gold','silver','orange','green','teal','yellow','navy','gray','grey',
+    'premier','cardinal','coast','seniors','senior','north','south'
+  ]);
 
   function normalize(value){
-    let text=String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/&/g,' and ');
+    let text=String(value||'')
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g,'')
+      .toLowerCase()
+      .replace(/&/g,' and ');
     text=text.replace(/^\s*#?\d+\s*[-–—:]\s+(?=[a-z])/i,'');
     text=text.replace(/\bwater\s+polo\s+club\b/g,'wpc');
     return text.replace(/[^a-z0-9]+/g,' ').replace(/\s+/g,' ').trim();
   }
+
   function scopedKey(context,raw){
     const season=String(context?.season||'2026');
     const age=String(context?.ageGroup||context?.age||'').toLowerCase();
     const gender=String(context?.gender||'').toLowerCase();
     return [season,age,gender,normalize(raw)].join('|');
   }
-  function resolveClub(raw){
-    const id=runtime.clubAliasIndex?.[normalize(raw)];
-    return id&&runtime.clubs?.[id]?{...runtime.clubs[id],matchType:'club_alias'}:null;
+
+  function clubMatch(id,matchType){
+    return id&&runtime.clubs?.[id]?{...runtime.clubs[id],matchType}:null;
   }
+
+  function addVariant(values,value){
+    const normalized=normalize(value);
+    if(normalized&&!values.includes(normalized))values.push(normalized);
+  }
+
+  function clubVariants(raw){
+    const values=[];
+    addVariant(values,raw);
+
+    const initial=values[0]||'';
+    addVariant(values,initial.replace(/\bbrookyln\b/g,'brooklyn'));
+    addVariant(values,initial.replace(/\bsan joe\b/g,'san jose'));
+    addVariant(values,initial.replace(/\bcentral valley united water polo\b/g,'central valley united'));
+
+    for(let cursor=0;cursor<values.length;cursor+=1){
+      let candidate=values[cursor];
+      candidate=candidate
+        .replace(/\s+(?:10u|12u|14u|16u|18u)(?:\s+(?:boys|girls|coed))?$/,'')
+        .trim();
+      addVariant(values,candidate);
+
+      let stripped=candidate;
+      for(let index=0;index<5;index+=1){
+        const tokens=stripped.split(' ');
+        const last=tokens[tokens.length-1];
+        if(!JO_TEAM_SUFFIXES.has(last))break;
+        tokens.pop();
+        stripped=tokens.join(' ').trim();
+        addVariant(values,stripped);
+      }
+    }
+    return values;
+  }
+
+  function curatedClubId(normalized){
+    const exact=JO_EXACT_CLUB_ALIASES[normalized];
+    if(exact)return exact;
+    for(const [pattern,id] of JO_PREFIX_CLUB_ALIASES){
+      if(pattern.test(normalized))return id;
+    }
+    return null;
+  }
+
+  function resolveClub(raw){
+    const variants=clubVariants(raw);
+
+    for(const candidate of variants){
+      const id=runtime.clubAliasIndex?.[candidate];
+      const match=clubMatch(id,candidate===variants[0]?'club_alias':'normalized_club_alias');
+      if(match)return match;
+    }
+
+    for(const candidate of variants){
+      const match=clubMatch(curatedClubId(candidate),'jo_logo_alias');
+      if(match)return match;
+    }
+    return null;
+  }
+
   function resolveTeam(raw,context={}){
     const normalized=normalize(raw);
     if(!normalized)return null;
@@ -41,12 +166,15 @@
     if(!team)return null;
     return {...team,club:runtime.clubs?.[team.clubId]||null,matchType};
   }
+
   function cleanSourceName(raw){
     return String(raw||'').replace(/^\s*#?\d+\s*[-–—:]\s+(?=[a-z])/i,'').trim();
   }
+
   function canonicalName(raw,context={}){
     return resolveTeam(raw,context)?.name||cleanSourceName(raw);
   }
+
   function attributes(raw,context={}){
     const identity=resolveTeam(raw,context);
     if(!identity)return{};
@@ -54,7 +182,7 @@
   }
 
   global.CPIIdentity=Object.freeze({
-    release:'7.40.0',
+    release:'7.52.8',
     schemaVersion:runtime.schemaVersion||1,
     normalize,
     resolveClub,
