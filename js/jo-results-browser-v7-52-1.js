@@ -12,6 +12,7 @@
   const note = document.getElementById("joResultsNote");
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
+  const joProfiles = window.WPI_JO_PROFILES || { teams: {}, lookup: {} };
   const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.52.7";
 
   let payload = null;
@@ -96,6 +97,9 @@
   function assetFor(name, group) {
     const ranked = rankedTeamFor(name, group);
     if (ranked?.logo) return { logo: ranked.logo, profile: ranked.teamPage || "" };
+    const joSlug = joProfiles.lookup?.[`${group?.id || ""}|${normalize(name)}`];
+    const joProfile = joSlug ? joProfiles.teams?.[joSlug] : null;
+    if (joProfile) return { logo: joProfile.logo || fallbackLogo, profile: joProfile.teamPage || `team.html?team=${encodeURIComponent(joProfile.profileSlug || "")}` };
     const club = clubFor(name, group);
     return {
       logo: club?.logo || fallbackLogo,

@@ -11,6 +11,7 @@
   }
   const tournamentEvidence = window.CPI_TOURNAMENT_EVIDENCE || { teams: {}, counts: {} };
   const historicalProfiles = window.CPI_HISTORICAL_PROFILES || { teams: {}, counts: {} };
+  const joProfiles = window.WPI_JO_PROFILES || { teams: {}, clubs: {}, lookup: {}, counts: {} };
   const root = document.querySelector("#teamProfile");
 
   if (!root) return;
@@ -293,6 +294,114 @@
     }
 
     return null;
+  }
+
+  function findJoProfile(slug) {
+    if (!slug) return null;
+    const normalized = normalizeSlug(decodeURIComponent(slug));
+    return joProfiles.teams?.[normalized]
+      || Object.values(joProfiles.teams || {}).find((team) => normalizeSlug(team.profileSlug) === normalized)
+      || Object.values(joProfiles.teams || {}).find((team) => normalizeSlug(team.participantId) === normalized)
+      || null;
+  }
+
+  function joClubPortfolio(profile) {
+    const club = profile?.canonicalClubId ? joProfiles.clubs?.[profile.canonicalClubId] : null;
+    return club?.teams || [profile].filter(Boolean);
+  }
+
+  function joPlaceLabel(profile) {
+    if (profile?.divisionPlaceLabel) return `${profile.divisionPlaceLabel} in ${profile.division || "division"}`;
+    if (profile?.subdivisionPlaceLabel) return `${profile.subdivisionPlaceLabel} in ${profile.subdivision || "subdivision"}`;
+    return "Placement available on JO results";
+  }
+
+  function renderJoClubRail(profile, club, teams) {
+    const clubName = profile.clubName || club.displayName || club.name || "Club";
+    const grouped = teams.reduce((map, item) => {
+      const group = item.group || "Junior Olympics";
+      if (!map.has(group)) map.set(group, []);
+      map.get(group).push(item);
+      return map;
+    }, new Map());
+    const groups = [...grouped.entries()].sort(([a], [b]) => groupSortValue(a) - groupSortValue(b));
+    return `<aside class="team-club-rail" aria-label="${escapeHtml(clubName)} team navigation">
+      <div class="team-club-rail-head">
+        ${logoMarkup({ ...club, logo: profile.logo || club.logo, displayName: clubName }, "team-logo lg")}
+        <div><span>Club navigation</span><strong>${escapeHtml(clubName)}</strong></div>
+      </div>
+      <a class="team-rail-club-link" href="${escapeHtml(profile.clubPage || `club.html?club=${profile.clubSlug || ""}`)}">View full club profile →</a>
+      <div class="team-rail-groups">
+        ${groups.map(([group, groupTeams]) => `<section class="team-rail-group ${group === profile.group ? "is-open" : ""}">
+          <h2>${escapeHtml(group)} <span>${groupTeams.length}</span></h2>
+          <div>${groupTeams.map((item) => `<a class="team-rail-team ${item.profileSlug === profile.profileSlug ? "is-current" : ""}" href="${escapeHtml(item.teamPage)}">
+            <span>JO</span><strong>${escapeHtml(item.team)}</strong><em>${escapeHtml(item.record || "—")}</em>
+          </a>`).join("")}</div>
+        </section>`).join("")}
+      </div>
+    </aside>`;
+  }
+
+  function renderJoOnlyTeamProfile(profile) {
+    const club = clubs.find((candidate) => candidate.canonicalClubId === profile.canonicalClubId || candidate.slug === profile.clubSlug) || {};
+    const portfolio = joClubPortfolio(profile);
+    const clubName = profile.clubName || club.displayName || club.club || "Club";
+    const clubPage = profile.clubPage || club.clubPage || `club.html?club=${profile.clubSlug || ""}`;
+    const region = profile.locationLabel || profile.region || club.locationLabel || club.region || "Location under review";
+    const record = profile.record || "Record available on JO results";
+    setBrandVars({ primaryColor: profile.primaryColor, secondaryColor: profile.secondaryColor }, club);
+    document.title = `${profile.team} | WPI Team Profile`;
+
+    root.innerHTML = `<section class="team-profile-layout">
+      ${renderJoClubRail(profile, club, portfolio)}
+      <div class="team-profile-main">
+        <section class="team-hero" style="--team-watermark:url('${escapeHtml(versionLogo(profile.logo || club.logo || ""))}')">
+          <div class="team-hero-copy">
+            <p class="kicker">Team Profile · ${escapeHtml(profile.group || "")}</p>
+            <h1>${escapeHtml(profile.team)}</h1>
+            <p class="team-summary">Verified 2026 Junior Olympics placement and record connected to the ${escapeHtml(clubName)} club profile.</p>
+            <div class="team-meta"><a href="${escapeHtml(clubPage)}">${escapeHtml(clubName)}</a><span>${escapeHtml(region)}</span><span>${escapeHtml(profile.event || "2026 Junior Olympics")}</span></div>
+            <div class="team-actions"><a class="team-btn primary" href="${escapeHtml(profile.journeyUrl)}">View JO games</a><a class="team-btn secondary" href="${escapeHtml(clubPage)}">View club profile</a></div>
+          </div>
+          <aside class="team-hero-card">
+            ${logoMarkup({ ...profile, logo: profile.logo || club.logo }, "team-logo xl")}
+            <div><span class="jo-profile-badge">Tournament profile</span><strong>${escapeHtml(profile.divisionPlaceLabel || profile.subdivisionPlaceLabel || "JO")}</strong><em>${escapeHtml(profile.division || "Junior Olympics")}</em></div>
+          </aside>
+        </section>
+
+        <nav class="profile-tabs" aria-label="Team profile sections"><a href="#jo-profile-summary">JO results</a><a href="#club-jo-lineup">Club lineup</a><a href="#jo-profile-notes">Data notes</a></nav>
+
+        <section class="team-snapshot jo-only-snapshot" aria-label="Junior Olympics summary">
+          <article><span>JO Division</span><strong class="snapshot-text">${escapeHtml(profile.division || "—")}</strong><em>${escapeHtml(profile.divisionTier || "")}</em></article>
+          <article><span>Subdivision</span><strong class="snapshot-text">${escapeHtml(profile.subdivision || "—")}</strong><em>${profile.subdivisionPlaceLabel ? `${escapeHtml(profile.subdivisionPlaceLabel)} place` : "Placement shown below"}</em></article>
+          <article><span>Division Finish</span><strong>${escapeHtml(profile.divisionPlaceLabel || "—")}</strong><em>${escapeHtml(profile.division || "")}</em></article>
+          <article><span>JO Record</span><strong>${escapeHtml(record)}</strong><em>${profile.recordSummary?.games != null ? `${escapeHtml(profile.recordSummary.games)} games` : "See complete game journey"}</em></article>
+        </section>
+
+        <section id="jo-profile-summary" class="team-panel jo-profile-panel">
+          <div class="section-heading with-note"><div><p class="kicker">2026 Junior Olympics</p><h2>Verified tournament result</h2></div><span>${escapeHtml(joPlaceLabel(profile))}</span></div>
+          <p class="evidence-policy-note">This profile uses the same final placement and record published in the WPI Junior Olympics results browser. It does not create or change a WPI ranking.</p>
+          <div class="jo-profile-placement-grid">
+            <div><span>Age group</span><strong>${escapeHtml(profile.group || "—")}</strong></div>
+            <div><span>Division</span><strong>${escapeHtml(profile.division || "—")}</strong></div>
+            <div><span>${escapeHtml(profile.subdivision || "Subdivision")} finish</span><strong>${escapeHtml(profile.subdivisionPlaceLabel || "—")}</strong></div>
+            <div><span>${escapeHtml(profile.division || "Division")} finish</span><strong>${escapeHtml(profile.divisionPlaceLabel || "—")}</strong></div>
+          </div>
+          <div class="jo-profile-actions"><a href="${escapeHtml(profile.journeyUrl)}">View complete JO game journey →</a><a class="secondary" href="${escapeHtml(profile.resultsUrl)}">Open final placements</a></div>
+        </section>
+
+        <section id="club-jo-lineup" class="team-panel">
+          <div class="section-heading with-note"><div><p class="kicker">Club at Junior Olympics</p><h2>${escapeHtml(clubName)} JO teams</h2></div><span>${portfolio.length} team${portfolio.length === 1 ? "" : "s"}</span></div>
+          <div class="jo-club-team-grid">${portfolio.map((item) => `<a class="jo-club-team-card" href="${escapeHtml(item.teamPage)}"><div><span>${escapeHtml(item.group)} · ${escapeHtml(item.division)}</span><strong>${escapeHtml(item.team)}</strong><em>${escapeHtml(item.record || "Record unavailable")}</em></div><b>${escapeHtml(item.divisionPlaceLabel || item.subdivisionPlaceLabel || "JO")}</b></a>`).join("")}</div>
+        </section>
+
+        <section id="jo-profile-notes" class="team-panel profile-notes-panel">
+          <div class="section-heading"><p class="kicker">Data notes</p><h2>Profile status</h2></div>
+          <ul class="profile-note-list"><li>This is a tournament-connected team profile, not a published WPI ranking.</li><li>Record and placement come directly from the completed 2026 Junior Olympics results dataset.</li><li>Kern Premier and Kearns remain separate club identities.</li></ul>
+          <a class="team-btn secondary profile-note-link" href="${escapeHtml(profile.resultsUrl)}">Review JO results →</a>
+        </section>
+      </div>
+    </section>`;
   }
 
   function groupSortValue(group) {
@@ -594,7 +703,10 @@
     </section>`;
   }
 
-  const team = findTeam(getParam("team"));
-  if (!team) renderNotFound();
-  else renderTeamProfile(team);
+  const requestedTeam = getParam("team");
+  const team = findTeam(requestedTeam);
+  const joProfile = team ? null : findJoProfile(requestedTeam);
+  if (team) renderTeamProfile(team);
+  else if (joProfile) renderJoOnlyTeamProfile(joProfile);
+  else renderNotFound();
 })();

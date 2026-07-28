@@ -16,7 +16,7 @@ site=load('config/site-release.json')
 groups=['12U Girls','14U Girls','16U Girls','18U Girls']
 expected={'12U Girls':52,'14U Girls':87,'16U Girls':93,'18U Girls':92}
 
-if site.get('version') not in {'7.52.2','7.52.3','7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10'}: fail('site release must preserve the 7.52.2 Girls ranking release or a later 7.52.x presentation release')
+if site.get('version') not in {'7.52.2','7.52.3','7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11'}: fail('site release must preserve the 7.52.2 Girls ranking release or a later 7.52.x presentation release')
 if site.get('rankingDataRelease')!='7.52.2': fail('rankingDataRelease must be 7.52.2')
 if site.get('girlsPostJORankingRelease')!='7.52.2': fail('girlsPostJORankingRelease must be 7.52.2')
 if audit.get('approvedTeams')!=324: fail('audit must report 324 approved Girls teams')

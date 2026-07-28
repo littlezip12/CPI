@@ -1,0 +1,27 @@
+/* WPI 7.52.11 — Junior Olympics profile bridge */
+.jo-profile-badge{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:999px;background:rgba(18,109,255,.10);color:#075bbb;font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+.jo-profile-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:#126dff}
+.jo-only-snapshot article strong.snapshot-text{font-size:clamp(19px,2vw,28px);line-height:1.08}
+.jo-profile-panel{border-color:rgba(18,109,255,.22);background:linear-gradient(145deg,#fff 0%,#f5f9ff 100%)}
+.jo-profile-panel .section-heading.with-note>span{background:#e9f3ff;color:#075bbb}
+.jo-profile-placement-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
+.jo-profile-placement-grid>div{padding:17px;border:1px solid rgba(7,20,38,.10);border-radius:17px;background:#fff}
+.jo-profile-placement-grid span{display:block;color:#6d7f93;font-size:11px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}
+.jo-profile-placement-grid strong{display:block;margin-top:7px;color:#102d49;font-size:22px;line-height:1.08}
+.jo-profile-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.jo-profile-actions a{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:11px 15px;background:#126dff;color:#fff;text-decoration:none;font-weight:900}
+.jo-profile-actions a.secondary{background:#fff;color:#126dff;border:1px solid rgba(18,109,255,.30)}
+.jo-club-team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.jo-club-team-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;padding:18px;border:1px solid rgba(7,20,38,.10);border-radius:18px;background:#fff;text-decoration:none;color:#102d49;box-shadow:0 8px 22px rgba(7,20,38,.05)}
+.jo-club-team-card:hover{border-color:rgba(18,109,255,.35);transform:translateY(-1px)}
+.jo-club-team-card span{display:block;color:#6d7f93;font-size:12px;font-weight:800}
+.jo-club-team-card strong{display:block;margin:4px 0;font-size:19px}
+.jo-club-team-card em{font-style:normal;color:#126dff;font-weight:900}
+.jo-club-team-card b{align-self:center;padding:10px 12px;border-radius:14px;background:#eef6ff;color:#075bbb;text-align:center;font-size:14px}
+.jo-club-profile-panel .club-profile-section-title>span{background:#e9f3ff;color:#075bbb}
+.jo-club-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.jo-club-summary-grid>div{padding:15px;border:1px solid rgba(7,20,38,.10);border-radius:16px;background:#f8fbff}
+.jo-club-summary-grid span{display:block;color:#6d7f93;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.jo-club-summary-grid strong{display:block;margin-top:7px;font-size:24px;color:#102d49}
+@media(max-width:850px){.jo-profile-placement-grid,.jo-club-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.jo-club-team-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.jo-profile-placement-grid,.jo-club-summary-grid{grid-template-columns:1fr}.jo-club-team-card{grid-template-columns:1fr}.jo-club-team-card b{justify-self:start}}

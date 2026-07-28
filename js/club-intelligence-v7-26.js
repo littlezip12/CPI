@@ -11,6 +11,7 @@
   }
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const historicalProfiles = window.CPI_HISTORICAL_PROFILES || { clubs: {}, counts: {} };
+  const joProfiles = window.WPI_JO_PROFILES || { clubs: {}, teams: {}, counts: {} };
   const params = new URLSearchParams(window.location.search);
   const directoryState = { visibleCount: 25 };
   const REGION_ORDER = [
@@ -418,6 +419,30 @@
     target.style.setProperty("--profile-secondary-soft", `${club.secondaryColor || "#f5b700"}28`);
   }
 
+  function joForClub(club) {
+    const clubId = club?.canonicalClubId;
+    return clubId ? joProfiles.clubs?.[clubId] || null : null;
+  }
+
+  function renderJoClubProfile(joClub) {
+    if (!joClub || !Array.isArray(joClub.teams) || !joClub.teams.length) return "";
+    const teams = joClub.teams;
+    return `<section id="club-jo-history" class="club-profile-table-card jo-club-profile-panel">
+      <div class="club-profile-section-title"><div><p class="club-intel-eyebrow">2026 Junior Olympics</p><h2>Teams and final results</h2></div><span>${teams.length} team${teams.length === 1 ? "" : "s"}</span></div>
+      <p class="club-profile-note">These records and placements come from the completed WPI Junior Olympics results browser. Tournament-only profiles are shown even when a team is not currently ranked.</p>
+      <div class="jo-club-summary-grid">
+        <div><span>JO teams</span><strong>${escapeHtml(joClub.teamCount || teams.length)}</strong></div>
+        <div><span>Age groups</span><strong>${escapeHtml(joClub.groupCount || new Set(teams.map((team) => team.group)).size)}</strong></div>
+        <div><span>Best division finish</span><strong>${joClub.bestDivisionFinish ? `#${escapeHtml(joClub.bestDivisionFinish)}` : "—"}</strong></div>
+        <div><span>Tournament</span><strong>2026 JO</strong></div>
+      </div>
+      <div class="jo-club-team-grid">${teams.map((team) => `<a class="jo-club-team-card" href="${escapeHtml(team.teamPage)}">
+        <div><span>${escapeHtml(team.group || "Age group")} · ${escapeHtml(team.division || "Division")} · ${escapeHtml(team.subdivision || "")}</span><strong>${escapeHtml(team.team)}</strong><em>${escapeHtml(team.record || "Record available in JO journey")}</em></div>
+        <b>${escapeHtml(team.divisionPlaceLabel || team.subdivisionPlaceLabel || "JO")}</b>
+      </a>`).join("")}</div>
+    </section>`;
+  }
+
   function historicalForClub(club) {
     const clubId = club?.canonicalClubId;
     return clubId ? historicalProfiles.clubs?.[clubId] || null : null;
@@ -470,6 +495,8 @@
     document.title = `${safeName(club)} | California Polo Index`;
     const top = club.topTeam || {};
     const historicalProfile = historicalForClub(club);
+    const joClubProfile = joForClub(club);
+    const joTeamCount = Number(joClubProfile?.teamCount || joClubProfile?.teams?.length || 0);
     const teams = [...club.teams].sort((a, b) => number(a.postRank, 999) - number(b.postRank, 999));
     const groups = groupsForClub(club);
     const genders = gendersForClub(club);
@@ -491,11 +518,12 @@
             <div class="club-profile-chip-row-v726">
               <span>${escapeHtml(club.region)}</span>
               <span>${club.rankedTeamCount} ranked team${club.rankedTeamCount === 1 ? "" : "s"}</span>
-              <span>${groups.length || 0} age group${groups.length === 1 ? "" : "s"}</span>
+              ${joTeamCount ? `<span>${joTeamCount} JO team${joTeamCount === 1 ? "" : "s"}</span>` : ""}
+              <span>${groups.length || joClubProfile?.groupCount || 0} age group${(groups.length || joClubProfile?.groupCount || 0) === 1 ? "" : "s"}</span>
             </div>
           </div>
         </div>
-        <p class="club-profile-summary-v726">${escapeHtml(safeName(club))} is currently connected to ${club.rankedTeamCount} ranked CPI team${club.rankedTeamCount === 1 ? "" : "s"}${groups.length ? ` across ${escapeHtml(groups.join(", "))}` : ""}. Club profile metrics are club-level summaries; team-specific wins and movement stay on team pages.</p>
+        <p class="club-profile-summary-v726">${escapeHtml(safeName(club))} is currently connected to ${club.rankedTeamCount} ranked WPI team${club.rankedTeamCount === 1 ? "" : "s"}${joTeamCount ? ` and ${joTeamCount} verified 2026 Junior Olympics team profile${joTeamCount === 1 ? "" : "s"}` : ""}${groups.length ? ` across ${escapeHtml(groups.join(", "))}` : ""}. Team-specific tournament records and placements are available below.</p>
         <div class="club-profile-actions">
           ${club.website ? `<a class="club-intel-btn" href="${escapeHtml(club.website)}" target="_blank" rel="noopener">Official website</a>` : ""}
           ${top.group ? `<a class="club-intel-btn secondary" href="${escapeHtml(groupHref(top.group))}">View rankings</a>` : `<a class="club-intel-btn secondary" href="rankings.html">View rankings</a>`}
@@ -520,8 +548,9 @@
     </section>
 
     <nav class="club-profile-tabs club-profile-tabs-v726" aria-label="Club profile sections">
-      <a href="#club-age-groups">Teams by age group</a>
-      <a href="#club-tournament-history">Tournament history</a>
+      <a href="#club-age-groups">Ranked teams</a>
+      ${joTeamCount ? `<a href="#club-jo-history">2026 JO teams</a>` : ""}
+      <a href="#club-tournament-history">Other tournament history</a>
       <a href="#club-team-portfolio">Ranked portfolio</a>
     </nav>
 
@@ -534,6 +563,7 @@
       <p class="club-profile-note">This is the club-level view. Team-specific results, movement, and best wins live on individual team pages.</p>
     </section>
 
+    ${renderJoClubProfile(joClubProfile)}
     ${renderHistoricalClubProfile(historicalProfile)}
 
     <section class="club-profile-grid club-profile-grid-v726">

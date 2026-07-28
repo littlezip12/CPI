@@ -27,15 +27,16 @@ girls = (ROOT / 'tournaments/jo-girls/app.js').read_text(encoding='utf-8')
 boys_html = (ROOT / 'tournaments/jo-boys/index.html').read_text(encoding='utf-8')
 girls_html = (ROOT / 'tournaments/jo-girls/index.html').read_text(encoding='utf-8')
 
-if site.get('version') not in {'7.52.7','7.52.8','7.52.9','7.52.10'}: fail('site release must preserve JO results links 7.52.7 or later')
+if site.get('version') not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11'}: fail('site release must preserve JO results links 7.52.7 or later')
 for key in ['joResultsRelease','tournamentUIRelease','joJourneyRelease','joLogoRelease']:
-    if site.get(key) not in {'7.52.7','7.52.8','7.52.9','7.52.10'}: fail(f'{key} must preserve JO results links 7.52.7 or later')
+    if site.get(key) not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11'}: fail(f'{key} must preserve JO results links 7.52.7 or later')
 if results.get('summary',{}).get('teamPlacements') != 976: fail('JO placement count changed')
 
 required_html = [
     'data/identity/runtime.js?v=7.52.10',
     'js/cpi-identity.js?v=7.52.10',
-    'js/jo-results-browser-v7-52-1.js?v=7.52.9',
+    'data/tournaments/jo-profile-runtime.js?v=7.52.11',
+    'js/jo-results-browser-v7-52-1.js?v=7.52.11',
     'css/jo-results-browser-v7-52-1.css?v=7.52.9',
 ]
 for token in required_html:
@@ -47,6 +48,7 @@ required_js = [
     '10u-boys-championship', '10u-championship',
     '10u-coed-classic', '10u-girls-classic',
     'window.CPIIdentity?.resolveTeam', 'window.CPIIdentity?.resolveClub',
+    'window.WPI_JO_PROFILES', 'joProfiles.lookup',
 ]
 for token in required_js:
     if token not in js: fail(f'results browser missing {token}')
