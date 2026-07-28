@@ -35,8 +35,8 @@ jo = load("data/tournaments/jo-results-2026.json")
 audit = load("data/release-integrity-7.52.15.json")
 website_audit = load("data/club-website-audit-7.52.16.json")
 
-if site.get("version") != "7.53.0":
-    fail("site version must be 7.53.0")
+if site.get("version") not in {"7.53.0", "7.53.1"}:
+    fail("site version must preserve the 7.53.0 club experience")
 if site.get("clubProfileRelease") != "7.53.0" or site.get("clubExperienceRelease") != "7.53.0":
     fail("club profile experience release fields must be 7.53.0")
 if site.get("rankingDataRelease") != "7.52.13":

@@ -25,15 +25,15 @@ team_html=(ROOT/'team.html').read_text(encoding='utf-8'); club_html=(ROOT/'club.
 for token in ['data/tournaments/history/runtime.js?v=7.49.1','css/historical-profiles-v7-49.css?v=7.49.1']:
  if token not in team_html: fail(f'Team profile missing historical asset: {token}')
  if token not in club_html: fail(f'Club profile missing historical asset: {token}')
-team_js=(ROOT/'js/team-profile-v7-42.js').read_text(encoding='utf-8'); club_js=(ROOT/'js/club-intelligence-v7-26.js').read_text(encoding='utf-8')
-for token in ['CPI_HISTORICAL_PROFILES','historical-tournaments','ranking model']:
+team_js=(ROOT/'js/team-tournament-history-v7-53-1.js').read_text(encoding='utf-8'); club_js=(ROOT/'js/club-intelligence-v7-26.js').read_text(encoding='utf-8')
+for token in ['CPI_HISTORICAL_PROFILES','CPI_TOURNAMENT_ARCHIVE','Tournament history','does not independently change the WPI ranking']:
  if token not in team_js: fail(f'Team profile historical rendering missing token: {token}')
 for token in ['CPI_HISTORICAL_PROFILES','club-tournament-history','published CPI rankings']:
  if token not in club_js: fail(f'Club profile historical rendering missing token: {token}')
 for rel in ['scripts/build-historical-profiles.py','scripts/test-historical-profile-engine.py','scripts/validate-historical-profiles.py']:
  r=subprocess.run(['python3','-m','py_compile',str(ROOT/rel)],capture_output=True,text=True)
  if r.returncode: fail(f'Python syntax error in {rel}: {r.stderr.strip()}')
-for rel in ['js/team-profile-v7-42.js','js/club-intelligence-v7-26.js']:
+for rel in ['js/team-tournament-history-v7-53-1.js','js/club-intelligence-v7-26.js']:
  r=subprocess.run(['node','--check',str(ROOT/rel)],capture_output=True,text=True)
  if r.returncode: fail(f'JavaScript syntax error in {rel}: {r.stderr.strip()}')
 if errors:
@@ -43,4 +43,4 @@ if errors:
 print('HISTORICAL PROFILE VALIDATION PASSED')
 print(f" - {profiles.get('counts',{}).get('teams')} ranked teams and {profiles.get('counts',{}).get('clubs')} clubs have linked archive history")
 print(f" - {profiles.get('counts',{}).get('finalGames')} verified historical finals remain profile-only")
-print(' - Team and club pages consume a separate historical runtime with ranking quarantine enforced')
+print(' - Team profiles unify archive history while club pages retain program-level history; ranking quarantine remains enforced')

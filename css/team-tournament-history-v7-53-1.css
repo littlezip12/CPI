@@ -1,0 +1,309 @@
+.wpi-team-history-panel {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.wpi-team-history-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.wpi-team-history-summary > div,
+.wpi-team-event-metrics > div {
+  border: 1px solid rgba(9, 46, 97, .12);
+  border-radius: 14px;
+  background: #f8fafc;
+  padding: .85rem .95rem;
+  min-width: 0;
+}
+
+.wpi-team-history-summary span,
+.wpi-team-event-metrics span {
+  display: block;
+  color: #667085;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.wpi-team-history-summary strong,
+.wpi-team-event-metrics strong {
+  display: block;
+  margin-top: .22rem;
+  color: #0f172a;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.wpi-team-event-list {
+  display: grid;
+  gap: .85rem;
+}
+
+.wpi-team-event-card {
+  overflow: hidden;
+  border: 1px solid rgba(9, 46, 97, .14);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, .05);
+}
+
+.wpi-team-event-card > summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.wpi-team-event-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.wpi-team-event-card > summary::after {
+  content: "+";
+  grid-column: 3;
+  grid-row: 1;
+  color: var(--team-primary, #092e61);
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.wpi-team-event-card[open] > summary::after {
+  content: "−";
+}
+
+.wpi-team-event-card > summary > div:first-child {
+  min-width: 0;
+}
+
+.wpi-team-event-card > summary span,
+.wpi-team-event-card > summary em {
+  display: block;
+  color: #667085;
+  font-size: .82rem;
+  font-style: normal;
+}
+
+.wpi-team-event-card > summary strong {
+  display: block;
+  margin: .15rem 0;
+  color: #0f172a;
+  font-size: 1.05rem;
+}
+
+.wpi-team-event-summary {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.wpi-team-event-summary b {
+  display: block;
+  color: var(--team-primary, #092e61);
+  font-size: .95rem;
+}
+
+.wpi-team-event-summary span {
+  margin-top: .15rem;
+}
+
+.wpi-team-event-body {
+  display: grid;
+  gap: 1rem;
+  border-top: 1px solid rgba(9, 46, 97, .1);
+  padding: 1rem 1.1rem 1.15rem;
+}
+
+.wpi-team-event-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .65rem;
+}
+
+.wpi-team-game-list {
+  display: grid;
+  gap: .55rem;
+}
+
+.wpi-team-game-row {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr) 130px;
+  align-items: center;
+  gap: .8rem;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #94a3b8;
+  border-radius: 13px;
+  padding: .72rem .8rem;
+  background: #fff;
+}
+
+.wpi-team-game-row.is-win {
+  border-left-color: #15803d;
+}
+
+.wpi-team-game-row.is-loss {
+  border-left-color: #b91c1c;
+}
+
+.wpi-team-game-row.is-tie {
+  border-left-color: #a16207;
+}
+
+.wpi-team-game-when strong,
+.wpi-team-game-opponent strong,
+.wpi-team-game-result strong {
+  display: block;
+  color: #111827;
+}
+
+.wpi-team-game-when span,
+.wpi-team-game-opponent span,
+.wpi-team-game-opponent em,
+.wpi-team-game-result span {
+  display: block;
+  color: #667085;
+  font-size: .76rem;
+  font-style: normal;
+}
+
+.wpi-team-game-opponent a {
+  color: var(--team-primary, #092e61);
+  text-decoration: none;
+}
+
+.wpi-team-game-opponent a:hover,
+.wpi-team-team-event-actions a:hover {
+  text-decoration: underline;
+}
+
+.wpi-team-game-result {
+  text-align: right;
+}
+
+.wpi-team-event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+}
+
+.wpi-team-event-actions a,
+.wpi-team-archive-link,
+.wpi-team-history-source-state a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: .56rem .85rem;
+  background: var(--team-primary, #092e61);
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.wpi-team-event-actions a:nth-child(n+2) {
+  border: 1px solid rgba(9, 46, 97, .18);
+  background: #fff;
+  color: var(--team-primary, #092e61);
+}
+
+.wpi-team-archive-link {
+  justify-self: start;
+  background: #eef2f7;
+  color: var(--team-primary, #092e61);
+}
+
+.wpi-team-history-empty,
+.wpi-team-history-loading,
+.wpi-team-history-source-note,
+.wpi-team-history-source-state {
+  margin: 0;
+  border-radius: 13px;
+  background: #f8fafc;
+  padding: .9rem 1rem;
+  color: #475467;
+  font-size: .88rem;
+}
+
+.wpi-team-history-source-state {
+  display: grid;
+  gap: .45rem;
+}
+
+.wpi-team-history-source-state strong {
+  color: #0f172a;
+}
+
+.wpi-team-history-source-state p {
+  margin: 0;
+}
+
+.wpi-team-history-source-state a {
+  justify-self: start;
+  margin-top: .15rem;
+}
+
+.wpi-team-history-source-note {
+  margin-top: .6rem;
+  padding: .55rem .7rem;
+  font-size: .76rem;
+}
+
+@media (max-width: 900px) {
+  .wpi-team-history-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wpi-team-event-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .wpi-team-game-row {
+    grid-template-columns: 105px minmax(0, 1fr) 105px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wpi-team-event-card > summary {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+  }
+
+  .wpi-team-event-card > summary::after {
+    grid-column: 2;
+  }
+
+  .wpi-team-event-summary {
+    grid-column: 1;
+    text-align: left;
+  }
+
+  .wpi-team-history-summary,
+  .wpi-team-event-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wpi-team-game-row {
+    grid-template-columns: 1fr;
+    gap: .45rem;
+  }
+
+  .wpi-team-game-result {
+    text-align: left;
+  }
+
+  .wpi-team-event-actions {
+    display: grid;
+  }
+
+  .wpi-team-event-actions a,
+  .wpi-team-archive-link,
+  .wpi-team-history-source-state a {
+    width: 100%;
+  }
+}

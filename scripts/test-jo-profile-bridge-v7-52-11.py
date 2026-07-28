@@ -17,10 +17,10 @@ bridge=load('data/tournaments/jo-profile-bridge.json')
 rankings=load('rankings.json')
 clubs=load('data/identity/index.json').get('clubs',{})
 
-if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16','7.53.0'}: fail('site version must be 7.52.13')
-for key in ('joProfileRelease','teamProfileRelease'):
-    if site.get(key)!='7.52.13': fail(f'{key} must be 7.52.13')
-if site.get('clubProfileRelease') not in {'7.52.13','7.53.0'}: fail('clubProfileRelease must preserve the JO profile bridge')
+if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1'}: fail('site version must be 7.52.13')
+if site.get('joProfileRelease')!='7.52.13': fail('joProfileRelease must be 7.52.13')
+if site.get('teamProfileRelease') not in {'7.52.13','7.53.1'}: fail('teamProfileRelease must preserve the JO bridge')
+if site.get('clubProfileRelease') not in {'7.52.13','7.53.0','7.53.1'}: fail('clubProfileRelease must preserve the JO profile bridge')
 for key in ('joResultsRelease','tournamentUIRelease'):
     if site.get(key)!='7.52.15': fail(f'{key} must be 7.52.15')
 if site.get('rankingDataRelease')!='7.52.13': fail('rankingDataRelease must be 7.52.13')
@@ -59,7 +59,7 @@ if kearns.get('state')!='UT' or kearns.get('slug')!='kearns': fail('Kearns must 
 if len({kern_identity.get('id'),kearns.get('id'),skip_identity.get('id')})!=3: fail('Kern Premier, Kearns, and SKIP are not distinct')
 
 html_requirements={
- 'team.html':['css/jo-profile-bridge-v7-52-11.css?v=7.52.13','data/tournaments/jo-profile-runtime.js?v=7.52.13','js/team-profile-v7-42.js?v=7.52.13'],
+ 'team.html':['css/jo-profile-bridge-v7-52-11.css?v=7.52.13','data/tournaments/jo-profile-runtime.js?v=7.52.13','js/team-profile-v7-42.js?v=7.52.13','js/team-tournament-history-v7-53-1.js?v=7.53.1'],
  'club.html':['css/jo-profile-bridge-v7-52-11.css?v=7.52.13','data/tournaments/jo-profile-runtime.js?v=7.52.13','js/club-intelligence-v7-26.js?v=7.52.13'],
  'tournaments.html':['data/tournaments/jo-profile-runtime.js?v=7.52.13','js/jo-results-browser-v7-52-1.js?v=7.52.15'],
 }
@@ -73,6 +73,7 @@ for rel,tokens in html_requirements.items():
 
 for rel,tokens in {
  'js/team-profile-v7-42.js':['findJoProfile','renderJoOnlyTeamProfile','View complete JO game journey'],
+ 'js/team-tournament-history-v7-53-1.js':['findJoProfile','Tournament history','Open complete JO journey'],
  'js/club-intelligence-v7-26.js':['connectedTeams','renderJoClubProfile','Teams and final results'],
  'js/jo-results-browser-v7-52-1.js':['window.WPI_JO_PROFILES','joProfiles.lookup','joProfile?.teamPage'],
 }.items():
