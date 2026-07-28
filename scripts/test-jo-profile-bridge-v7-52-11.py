@@ -32,10 +32,10 @@ bridge = load("data/tournaments/jo-profile-bridge.json")
 rankings = load("rankings.json")
 clubs = load("data/identity/index.json").get("clubs", {})
 
-if site.get("version") != "7.52.11":
+if site.get("version") != "7.52.12":
     fail("site version must be 7.52.11")
 for key in ("joProfileRelease", "teamProfileRelease", "clubProfileRelease", "joResultsRelease", "tournamentUIRelease"):
-    if site.get(key) != "7.52.11":
+    if site.get(key) != "7.52.12":
         fail(f"{key} must be 7.52.11")
 if site.get("rankingDataRelease") != "7.52.2":
     fail("rankingDataRelease changed")
@@ -44,7 +44,7 @@ if len(rankings) != 724:
 if any("kern premier" in str(row.get("team") or "").lower() for row in rankings):
     fail("Kern Premier must remain a tournament-only profile, not a synthetic ranking")
 
-if bridge.get("release") != "7.52.11":
+if bridge.get("release") != "7.52.12":
     fail("JO profile bridge release must be 7.52.11")
 if bridge.get("counts", {}).get("profiles", 0) < 880:
     fail("JO profile bridge did not retain expected placement profile coverage")
@@ -101,18 +101,18 @@ if kearns_identity.get("state") != "UT" or kearns_identity.get("slug") != "kearn
 
 html_requirements = {
     "team.html": [
-        "css/jo-profile-bridge-v7-52-11.css?v=7.52.11",
-        "data/tournaments/jo-profile-runtime.js?v=7.52.11",
-        "js/team-profile-v7-42.js?v=7.52.11",
+        "css/jo-profile-bridge-v7-52-11.css?v=7.52.12",
+        "data/tournaments/jo-profile-runtime.js?v=7.52.12",
+        "js/team-profile-v7-42.js?v=7.52.12",
     ],
     "club.html": [
-        "css/jo-profile-bridge-v7-52-11.css?v=7.52.11",
-        "data/tournaments/jo-profile-runtime.js?v=7.52.11",
-        "js/club-intelligence-v7-26.js?v=7.52.11",
+        "css/jo-profile-bridge-v7-52-11.css?v=7.52.12",
+        "data/tournaments/jo-profile-runtime.js?v=7.52.12",
+        "js/club-intelligence-v7-26.js?v=7.52.12",
     ],
     "tournaments.html": [
-        "data/tournaments/jo-profile-runtime.js?v=7.52.11",
-        "js/jo-results-browser-v7-52-1.js?v=7.52.11",
+        "data/tournaments/jo-profile-runtime.js?v=7.52.12",
+        "js/jo-results-browser-v7-52-1.js?v=7.52.12",
     ],
 }
 for rel, tokens in html_requirements.items():
@@ -147,12 +147,12 @@ elif not runtime_path.read_text(encoding="utf-8").startswith("window.WPI_JO_PROF
     fail("JO profile runtime does not expose window.WPI_JO_PROFILES")
 
 if errors:
-    print("JO PROFILE BRIDGE 7.52.11 TEST FAILED")
+    print("JO PROFILE BRIDGE 7.52.12 TEST FAILED")
     for error in errors:
         print(f" - {error}")
     raise SystemExit(1)
 
-print("JO PROFILE BRIDGE 7.52.11 TESTS PASSED")
+print("JO PROFILE BRIDGE 7.52.12 TESTS PASSED")
 print(" - Five Kern Premier JO teams have tournament-only team profile routes")
 print(" - Club profile receives records and placements from the published JO results browser")
 print(" - Tournament results link to team profiles and complete JO game journeys")

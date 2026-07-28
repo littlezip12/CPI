@@ -1,11 +1,11 @@
 {
   "release": "7.40.0",
   "summary": {
-    "clubs": 183,
+    "clubs": 182,
     "teams": 724,
-    "clubAliases": 218,
-    "teamAliases": 1692,
-    "scopedResolvableAliases": 1692,
+    "clubAliases": 219,
+    "teamAliases": 1709,
+    "scopedResolvableAliases": 1709,
     "unscopedResolvableAliases": 786,
     "ambiguousScopedAliases": 0
   },
@@ -435,10 +435,47 @@
       ]
     },
     {
+      "alias": "clovis red a",
+      "teamIds": [
+        "team-2026-14u-boys-clovis-a-14u-boys",
+        "team-2026-14u-girls-clovis-a-14u-girls",
+        "team-2026-16u-boys-clovis-16u-boys",
+        "team-2026-18u-boys-clovis-a-18u-boys"
+      ]
+    },
+    {
+      "alias": "clovis red b",
+      "teamIds": [
+        "team-2026-14u-boys-clovis-b-14u-boys",
+        "team-2026-14u-girls-clovis-b-14u-girls",
+        "team-2026-16u-boys-clovis-b-16u-boys",
+        "team-2026-18u-boys-clovis-b-18u-boys"
+      ]
+    },
+    {
       "alias": "clovis wpc",
       "teamIds": [
+        "team-2026-12u-boys-clovis-12u-boys",
         "team-2026-16u-girls-clovis-16u-girls",
         "team-2026-18u-girls-clovis-18u-girls"
+      ]
+    },
+    {
+      "alias": "clovis wpc a",
+      "teamIds": [
+        "team-2026-14u-boys-clovis-a-14u-boys",
+        "team-2026-14u-girls-clovis-a-14u-girls",
+        "team-2026-16u-boys-clovis-16u-boys",
+        "team-2026-18u-boys-clovis-a-18u-boys"
+      ]
+    },
+    {
+      "alias": "clovis wpc b",
+      "teamIds": [
+        "team-2026-14u-boys-clovis-b-14u-boys",
+        "team-2026-14u-girls-clovis-b-14u-girls",
+        "team-2026-16u-boys-clovis-b-16u-boys",
+        "team-2026-18u-boys-clovis-b-18u-boys"
       ]
     },
     {
@@ -2183,15 +2220,7 @@
       ]
     }
   ],
-  "ambiguousClubAliases": [
-    {
-      "alias": "clovis",
-      "clubIds": [
-        "club-clovis",
-        "club-clovis-red"
-      ]
-    }
-  ],
+  "ambiguousClubAliases": [],
   "notes": [
     "Ambiguous aliases are intentionally excluded from automatic resolution.",
     "Tournament seeds are stripped by the normalizer and are never stored in canonical team names.",

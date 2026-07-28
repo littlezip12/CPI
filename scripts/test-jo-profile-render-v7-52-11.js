@@ -60,13 +60,17 @@ function renderClub() {
   };
   loadRuntime(targetWindow);
   vm.runInThisContext(read('js/club-intelligence-v7-26.js'));
-  for (const token of ['Kern Premier', 'Teams and final results', '12U Boys', '14U Boys', '16U Boys', '18U Boys', '18U Girls', '5 JO teams']) {
+  for (const token of ['Kern Premier', 'Teams and final results', '12U Boys', '14U Boys', '16U Boys', '18U Boys', '18U Girls', '5 JO teams', 'Ranked teams and verified Junior Olympics-only teams are combined here']) {
     requireCondition(root.innerHTML.includes(token), `Kern Premier club render missing ${token}`);
   }
+  const ageGrid = root.innerHTML.indexOf('club-age-group-grid');
+  const coreTeamLink = root.innerHTML.indexOf('team.html?team=kern-premier-12u-boys', ageGrid);
+  const joHistory = root.innerHTML.indexOf('id="club-jo-history"');
+  requireCondition(ageGrid >= 0 && coreTeamLink > ageGrid && coreTeamLink < joHistory, 'Kern Premier JO teams are not integrated into core age-group navigation');
 }
 
 renderTeam();
 renderClub();
-console.log('JO PROFILE RENDER 7.52.11 TESTS PASSED');
+console.log('JO PROFILE RENDER 7.52.12 TESTS PASSED');
 console.log(' - Kern Premier 12U Boys renders as a tournament-only team profile');
 console.log(' - Kern Premier club page renders all five linked JO teams');

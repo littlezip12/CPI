@@ -23,18 +23,18 @@ def ordered(text: str, tokens: list[str], label: str) -> None:
 
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
-if site.get('version') not in {'7.52.10','7.52.11'}:
+if site.get('version') not in {'7.52.10','7.52.11','7.52.12'}:
     fail('site release must preserve JO logo delivery 7.52.10 or later')
 for key in ['identityRelease', 'logoDeliveryRelease', 'joLogoRelease']:
-    if site.get(key) != '7.52.10':
-        fail(f'{key} must remain 7.52.10')
-if site.get('joResultsRelease') != '7.52.11':
-    fail('joResultsRelease must be 7.52.11')
+    if site.get(key) != '7.52.12':
+        fail(f'{key} must be 7.52.12')
+if site.get('joResultsRelease') != '7.52.12':
+    fail('joResultsRelease must be 7.52.12')
 for key in ['joApplicationRelease', 'joJourneyRelease']:
     if site.get(key) != '7.52.9':
         fail(f'{key} must remain 7.52.9')
-if site.get('tournamentUIRelease') != '7.52.11':
-    fail('tournamentUIRelease must be 7.52.11')
+if site.get('tournamentUIRelease') != '7.52.12':
+    fail('tournamentUIRelease must be 7.52.12')
 
 index = (ROOT / 'index.html').read_text(encoding='utf-8')
 tournaments = (ROOT / 'tournaments.html').read_text(encoding='utf-8')
@@ -44,26 +44,26 @@ resolver = (ROOT / 'js/cpi-identity.js').read_text(encoding='utf-8')
 
 ordered(index, [
     'data.js?v=7.52.2',
-    'data/identity/runtime.js?v=7.52.10',
-    'js/cpi-identity.js?v=7.52.10',
+    'data/identity/runtime.js?v=7.52.12',
+    'js/cpi-identity.js?v=7.52.12',
     'js/homepage-wpi-v7-52-4.js?v=7.52.9',
 ], 'index.html')
 ordered(tournaments, [
     'data.js?v=7.52.2',
-    'data/identity/runtime.js?v=7.52.10',
-    'js/cpi-identity.js?v=7.52.10',
-    'data/tournaments/jo-profile-runtime.js?v=7.52.11',
-    'js/jo-results-browser-v7-52-1.js?v=7.52.11',
+    'data/identity/runtime.js?v=7.52.12',
+    'js/cpi-identity.js?v=7.52.12',
+    'data/tournaments/jo-profile-runtime.js?v=7.52.12',
+    'js/jo-results-browser-v7-52-1.js?v=7.52.12',
 ], 'tournaments.html')
 for label, text in [('Boys JO page', boys), ('Girls JO page', girls)]:
     ordered(text, [
-        '../../data/identity/runtime.js?v=7.52.10',
-        '../../js/cpi-identity.js?v=7.52.10',
+        '../../data/identity/runtime.js?v=7.52.12',
+        '../../js/cpi-identity.js?v=7.52.12',
         'app.js?v=7.52.9',
     ], label)
 
 for token in [
-    "release:'7.52.10'",
+    "release:'7.52.12'",
     "'ciu(?: |$)'",
     "'sd dons(?: |$)'",
     "'santa barbara(?: wpc)?(?: |$)'",
@@ -87,5 +87,5 @@ if errors:
 
 print('JO LOGO DELIVERY 7.52.9 TESTS PASSED')
 print(' - Homepage, full tournament results, and Boys/Girls journeys load runtime → resolver → consumer in order')
-print(' - Changed identity assets are cache-busted to 7.52.10')
+print(' - Changed identity assets are cache-busted to 7.52.12')
 print(' - Known JO source-name variants route to existing club artwork')

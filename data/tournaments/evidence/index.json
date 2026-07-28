@@ -7,8 +7,8 @@
   "counts": {
     "datasets": 23,
     "participants": 973,
-    "canonicalTeamsWithEvidence": 346,
-    "tournamentOnlyTeams": 627,
+    "canonicalTeamsWithEvidence": 349,
+    "tournamentOnlyTeams": 624,
     "games": 3924,
     "finalGames": 0
   },
@@ -10127,7 +10127,7 @@
     "tournament-team-2026-12u-coed-vnited": {
       "participantId": "tournament-team-2026-12u-coed-vnited",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-vnited",
+      "canonicalClubId": "club-visalia-united",
       "name": "VNITED",
       "season": "2026",
       "ageGroup": "12U",
@@ -17487,7 +17487,7 @@
     "team-2026-14u-girls-clovis-a-14u-girls": {
       "participantId": "team-2026-14u-girls-clovis-a-14u-girls",
       "canonicalTeamId": "team-2026-14u-girls-clovis-a-14u-girls",
-      "canonicalClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
       "name": "Clovis A",
       "season": "2026",
       "ageGroup": "14U",
@@ -22355,7 +22355,7 @@
     "team-2026-14u-girls-clovis-b-14u-girls": {
       "participantId": "team-2026-14u-girls-clovis-b-14u-girls",
       "canonicalTeamId": "team-2026-14u-girls-clovis-b-14u-girls",
-      "canonicalClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
       "name": "Clovis B",
       "season": "2026",
       "ageGroup": "14U",
@@ -25667,8 +25667,8 @@
           "status": "scheduled",
           "seed": 7,
           "opponentSeed": 42,
-          "opponentParticipantId": "tournament-team-2026-16u-girls-visalia-united",
-          "opponentTeamId": null,
+          "opponentParticipantId": "team-2026-16u-girls-visalia-united-16u-girls",
+          "opponentTeamId": "team-2026-16u-girls-visalia-united-16u-girls",
           "opponentName": "VISALIA UNITED",
           "scoreFor": null,
           "scoreAgainst": null,
@@ -25676,17 +25676,17 @@
         }
       ]
     },
-    "tournament-team-2026-16u-girls-visalia-united": {
-      "participantId": "tournament-team-2026-16u-girls-visalia-united",
-      "canonicalTeamId": null,
-      "canonicalClubId": null,
-      "name": "VISALIA UNITED",
+    "team-2026-16u-girls-visalia-united-16u-girls": {
+      "participantId": "team-2026-16u-girls-visalia-united-16u-girls",
+      "canonicalTeamId": "team-2026-16u-girls-visalia-united-16u-girls",
+      "canonicalClubId": "club-visalia-united",
+      "name": "Visalia United",
       "season": "2026",
       "ageGroup": "16U",
       "gender": "Girls",
       "group": "16U Girls",
-      "rankingEligible": false,
-      "identityStatus": "tournament_only_team",
+      "rankingEligible": true,
+      "identityStatus": "canonical_ranked_team",
       "summary": {
         "events": 1,
         "games": 1,
@@ -25744,7 +25744,13 @@
           "scoreAgainst": null,
           "result": null
         }
-      ]
+      ],
+      "rankingSnapshot": {
+        "rank": 38,
+        "cpi": 1922.5,
+        "group": "16U Girls",
+        "teamPage": "team.html?team=visalia-united-16u-girls"
+      }
     },
     "team-2026-16u-girls-meridian-16u-girls": {
       "participantId": "team-2026-16u-girls-meridian-16u-girls",
@@ -53291,8 +53297,8 @@
           "status": "scheduled",
           "seed": 13,
           "opponentSeed": 36,
-          "opponentParticipantId": "tournament-team-2026-14u-boys-clovis",
-          "opponentTeamId": null,
+          "opponentParticipantId": "team-2026-14u-boys-clovis-a-14u-boys",
+          "opponentTeamId": "team-2026-14u-boys-clovis-a-14u-boys",
           "opponentName": "CLOVIS",
           "scoreFor": null,
           "scoreAgainst": null,
@@ -53300,17 +53306,17 @@
         }
       ]
     },
-    "tournament-team-2026-14u-boys-clovis": {
-      "participantId": "tournament-team-2026-14u-boys-clovis",
-      "canonicalTeamId": null,
-      "canonicalClubId": null,
-      "name": "CLOVIS",
+    "team-2026-14u-boys-clovis-a-14u-boys": {
+      "participantId": "team-2026-14u-boys-clovis-a-14u-boys",
+      "canonicalTeamId": "team-2026-14u-boys-clovis-a-14u-boys",
+      "canonicalClubId": "club-clovis",
+      "name": "Clovis A",
       "season": "2026",
       "ageGroup": "14U",
       "gender": "Boys",
       "group": "14U Boys",
-      "rankingEligible": false,
-      "identityStatus": "tournament_only_team",
+      "rankingEligible": true,
+      "identityStatus": "canonical_ranked_team",
       "summary": {
         "events": 1,
         "games": 1,
@@ -53368,7 +53374,13 @@
           "scoreAgainst": null,
           "result": null
         }
-      ]
+      ],
+      "rankingSnapshot": {
+        "rank": 32,
+        "cpi": 1967.5,
+        "group": "14U Boys",
+        "teamPage": "team.html?team=clovis-a-14u-boys"
+      }
     },
     "team-2026-14u-boys-route-66-14u-boys": {
       "participantId": "team-2026-14u-boys-route-66-14u-boys",
@@ -54039,7 +54051,7 @@
     "tournament-team-2026-14u-boys-clovis-red": {
       "participantId": "tournament-team-2026-14u-boys-clovis-red",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
       "name": "CLOVIS RED",
       "season": "2026",
       "ageGroup": "14U",
@@ -58605,7 +58617,7 @@
     "tournament-team-2026-14u-boys-vnited": {
       "participantId": "tournament-team-2026-14u-boys-vnited",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-vnited",
+      "canonicalClubId": "club-visalia-united",
       "name": "VNITED",
       "season": "2026",
       "ageGroup": "14U",
@@ -61401,8 +61413,8 @@
           "status": "scheduled",
           "seed": 21,
           "opponentSeed": 28,
-          "opponentParticipantId": "tournament-team-2026-16u-boys-vnited-a",
-          "opponentTeamId": null,
+          "opponentParticipantId": "team-2026-16u-boys-vnited-16u-boys",
+          "opponentTeamId": "team-2026-16u-boys-vnited-16u-boys",
           "opponentName": "VNITED A",
           "scoreFor": null,
           "scoreAgainst": null,
@@ -61416,17 +61428,17 @@
         "teamPage": "team.html?team=aetos-16u-boys"
       }
     },
-    "tournament-team-2026-16u-boys-vnited-a": {
-      "participantId": "tournament-team-2026-16u-boys-vnited-a",
-      "canonicalTeamId": null,
-      "canonicalClubId": null,
-      "name": "VNITED A",
+    "team-2026-16u-boys-vnited-16u-boys": {
+      "participantId": "team-2026-16u-boys-vnited-16u-boys",
+      "canonicalTeamId": "team-2026-16u-boys-vnited-16u-boys",
+      "canonicalClubId": "club-visalia-united",
+      "name": "Vnited",
       "season": "2026",
       "ageGroup": "16U",
       "gender": "Boys",
       "group": "16U Boys",
-      "rankingEligible": false,
-      "identityStatus": "tournament_only_team",
+      "rankingEligible": true,
+      "identityStatus": "canonical_ranked_team",
       "summary": {
         "events": 1,
         "games": 1,
@@ -61484,7 +61496,13 @@
           "scoreAgainst": null,
           "result": null
         }
-      ]
+      ],
+      "rankingSnapshot": {
+        "rank": 30,
+        "cpi": 1982.5,
+        "group": "16U Boys",
+        "teamPage": "team.html?team=vnited-16u-boys"
+      }
     },
     "team-2026-16u-boys-sd-dons-16u-boys": {
       "participantId": "team-2026-16u-boys-sd-dons-16u-boys",
@@ -62721,7 +62739,7 @@
     "tournament-team-2026-16u-boys-clovis-red": {
       "participantId": "tournament-team-2026-16u-boys-clovis-red",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
       "name": "CLOVIS RED",
       "season": "2026",
       "ageGroup": "16U",
@@ -68023,14 +68041,14 @@
     "tournament-team-2026-16u-boys-vnited-b": {
       "participantId": "tournament-team-2026-16u-boys-vnited-b",
       "canonicalTeamId": null,
-      "canonicalClubId": null,
+      "canonicalClubId": "club-visalia-united",
       "name": "VNITED B",
       "season": "2026",
       "ageGroup": "16U",
       "gender": "Boys",
       "group": "16U Boys",
       "rankingEligible": false,
-      "identityStatus": "tournament_only_team",
+      "identityStatus": "canonical_club_tournament_team",
       "summary": {
         "events": 1,
         "games": 1,
@@ -73429,7 +73447,7 @@
     "team-2026-18u-boys-vnited-18u-boys": {
       "participantId": "team-2026-18u-boys-vnited-18u-boys",
       "canonicalTeamId": "team-2026-18u-boys-vnited-18u-boys",
-      "canonicalClubId": "club-vnited",
+      "canonicalClubId": "club-visalia-united",
       "name": "Vnited",
       "season": "2026",
       "ageGroup": "18U",
@@ -74387,7 +74405,7 @@
     "tournament-team-2026-18u-boys-clovis-red": {
       "participantId": "tournament-team-2026-18u-boys-clovis-red",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
       "name": "CLOVIS RED",
       "season": "2026",
       "ageGroup": "18U",

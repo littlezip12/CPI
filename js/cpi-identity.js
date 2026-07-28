@@ -1,4 +1,4 @@
-/* WPI canonical identity resolver — registry 7.40.0, JO logo delivery patch 7.52.10 */
+/* WPI canonical identity resolver — registry 7.40.0, club-family cleanup 7.52.12 */
 (function(global){
   'use strict';
 
@@ -42,6 +42,10 @@
     'honolulu':'club-honolulu-water-polo',
     'berkeley':'club-berkeley-wpc',
     'clovis':'club-clovis',
+    'clovis red':'club-clovis',
+    'clovis water polo club':'club-clovis',
+    'vnited':'club-visalia-united',
+    'visalia united':'club-visalia-united',
     'pac orange':'club-pac-orange',
     'texas thunder':'club-thunder',
     'cal republic':'club-cal-rep',
@@ -83,7 +87,8 @@
     [/^yolo flamingos(?: |$)/,'club-yolo'],
     [/^honolulu(?: |$)/,'club-honolulu-water-polo'],
     [/^berkeley(?: |$)/,'club-berkeley-wpc'],
-    [/^clovis(?: |$)/,'club-clovis'],
+    [/^clovis(?: red| water polo club)?(?: |$)/,'club-clovis'],
+    [/^(?:vnited|visalia united)(?: |$)/,'club-visalia-united'],
     [/^la jolla(?: united)?(?: |$)/,'club-la-jolla-united'],
     [/^pac orange(?: |$)/,'club-pac-orange'],
     [/^central valley united(?: |$)/,'club-cvu'],
@@ -238,7 +243,7 @@
   }
 
   global.CPIIdentity=Object.freeze({
-    release:'7.52.10',
+    release:'7.52.12',
     schemaVersion:runtime.schemaVersion||1,
     normalize,
     resolveClub,

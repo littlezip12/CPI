@@ -40,6 +40,17 @@
       "Shore Aquatics",
       "LB Shore",
       "Long Beach Shore"
+    ],
+    "club-clovis": [
+      "Clovis",
+      "Clovis Red",
+      "Clovis WPC",
+      "Clovis Water Polo Club"
+    ],
+    "club-visalia-united": [
+      "V'nited",
+      "Visalia United",
+      "Vnited"
     ]
   },
   "teamAliases": [],
@@ -51,7 +62,9 @@
     "sj-express": "san-jose-express",
     "sbwpc": "santa-barbara",
     "patriot-red": "patriot",
-    "shore-aquatics": "long-beach-shore"
+    "shore-aquatics": "long-beach-shore",
+    "clovis-red": "clovis",
+    "vnited": "visalia-united"
   },
   "clubProfileOverrides": {
     "club-san-jose-express": {
@@ -291,15 +304,21 @@
       "locationSource": "USA Water Polo annual report"
     },
     "club-visalia-united": {
+      "name": "Visalia United",
+      "displayName": "Visalia United",
+      "region": "Central Valley",
       "city": "Visalia",
       "state": "CA",
       "country": "United States",
       "locationLabel": "Visalia, CA",
-      "region": "Central Valley",
       "metroRegion": "Visalia / Tulare County",
       "macroRegion": "California",
       "locationConfidence": "high",
-      "locationSource": "Visalia United Water Polo"
+      "locationSource": "Visalia United Water Polo",
+      "website": "",
+      "logo": "assets/logos/canonical/visalia-united.webp",
+      "primaryColor": "#073763",
+      "secondaryColor": "#F7B500"
     },
     "club-narrows": {
       "city": "Tacoma",
@@ -872,6 +891,23 @@
       "macroRegion": "Midwest",
       "locationConfidence": "high",
       "locationSource": "USA Water Polo annual report"
+    },
+    "club-clovis": {
+      "name": "Clovis",
+      "displayName": "Clovis Water Polo Club",
+      "region": "Central Valley",
+      "city": "Clovis",
+      "state": "CA",
+      "country": "United States",
+      "locationLabel": "Clovis, CA",
+      "metroRegion": "Fresno / Clovis",
+      "macroRegion": "California",
+      "locationConfidence": "high",
+      "locationSource": "Clovis Water Polo Club",
+      "website": "https://www.cloviswpc.com/",
+      "logo": "assets/logos/canonical/clovis.webp",
+      "primaryColor": "#C8102E",
+      "secondaryColor": "#111111"
     }
   }
 }

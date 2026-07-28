@@ -97,6 +97,27 @@
     return [...new Set(clubTeams(club).map((team) => team.gender).filter(Boolean))].sort();
   }
 
+  function connectedTeams(club, joClub) {
+    const ranked = [...clubTeams(club)].map((team) => ({ ...team, profileKind: "ranked" }));
+    const byCanonical = new Map(ranked.filter((team) => team.canonicalTeamId).map((team) => [team.canonicalTeamId, team]));
+    const output = [...ranked];
+    for (const jo of (joClub?.teams || [])) {
+      const matched = jo.canonicalTeamId ? byCanonical.get(jo.canonicalTeamId) : null;
+      if (matched) {
+        matched.joRecord = jo.record;
+        matched.joDivision = jo.division;
+        matched.joSubdivision = jo.subdivision;
+        matched.joDivisionPlaceLabel = jo.divisionPlaceLabel;
+        matched.joTeamPage = jo.teamPage;
+        continue;
+      }
+      output.push({ ...jo, profileKind: "jo", postRank: null, postCPI: null });
+    }
+    return output.sort((a, b) => groupSortValue(a.group) - groupSortValue(b.group)
+      || number(a.postRank, 9999) - number(b.postRank, 9999)
+      || String(a.team || "").localeCompare(String(b.team || "")));
+  }
+
   function clubScore(club) {
     const best = number(club.bestRank, 999);
     return (1000 - best) + (rankedTeams(club) * 35) + (top25Count(club) * 90) + averageCpi(club);
@@ -387,10 +408,11 @@
 
   function renderClubAgeGroups(teams) {
     const groups = [...groupedTeams(teams).entries()].sort(([a], [b]) => groupSortValue(a) - groupSortValue(b));
-    if (!groups.length) return `<div class="club-empty">Age-group navigation will populate as ranked teams are added.</div>`;
+    if (!groups.length) return `<div class="club-empty">Age-group navigation will populate as teams are connected.</div>`;
     return groups.map(([group, groupTeams]) => {
-      const sortedTeams = [...groupTeams].sort((a, b) => number(a.postRank, 999) - number(b.postRank, 999));
-      const leader = sortedTeams[0] || {};
+      const sortedTeams = [...groupTeams].sort((a, b) => number(a.postRank, 9999) - number(b.postRank, 9999) || String(a.team || "").localeCompare(String(b.team || "")));
+      const ranked = sortedTeams.filter((team) => team.profileKind !== "jo");
+      const leader = ranked[0] || {};
       return `<article class="club-age-group-card club-age-group-card-v726">
         <div class="club-age-group-head">
           <div><small>Age group</small><strong>${escapeHtml(group)}</strong></div>
@@ -398,14 +420,17 @@
         </div>
         <div class="club-age-group-meta">
           <div><small>Best rank</small><b>${leader.postRank ? `#${leader.postRank}` : "—"}</b></div>
-          <div><small>Top CPI</small><b>${formatCpi(leader.postCPI)}</b></div>
+          <div><small>JO entries</small><b>${sortedTeams.filter((team) => team.joRecord || team.profileKind === "jo").length}</b></div>
         </div>
         <div class="club-age-team-list">
-          ${sortedTeams.map((team) => `<a href="${escapeHtml(teamHref(team))}">
-            <span>#${escapeHtml(team.postRank || "—")}</span>
-            <strong>${escapeHtml(team.team)}</strong>
-            <em>${formatCpi(team.postCPI)}</em>
-          </a>`).join("")}
+          ${sortedTeams.map((team) => {
+            const isJoOnly = team.profileKind === "jo";
+            const href = isJoOnly ? team.teamPage : teamHref(team);
+            const left = isJoOnly ? "JO" : `#${escapeHtml(team.postRank || "—")}`;
+            const right = isJoOnly ? escapeHtml(team.record || team.divisionPlaceLabel || "JO") : formatCpi(team.postCPI);
+            const detail = isJoOnly ? `${escapeHtml(team.division || "Junior Olympics")}${team.divisionPlaceLabel ? ` · ${escapeHtml(team.divisionPlaceLabel)}` : ""}` : (team.joRecord ? `JO ${escapeHtml(team.joRecord)}` : "Ranked team");
+            return `<a href="${escapeHtml(href)}"><span>${left}</span><strong>${escapeHtml(team.team)}</strong><em>${right}</em><small>${detail}</small></a>`;
+          }).join("")}
         </div>
       </article>`;
     }).join("");
@@ -498,8 +523,9 @@
     const joClubProfile = joForClub(club);
     const joTeamCount = Number(joClubProfile?.teamCount || joClubProfile?.teams?.length || 0);
     const teams = [...club.teams].sort((a, b) => number(a.postRank, 999) - number(b.postRank, 999));
-    const groups = groupsForClub(club);
-    const genders = gendersForClub(club);
+    const allTeams = connectedTeams(club, joClubProfile);
+    const groups = [...new Set(allTeams.map((team) => team.group).filter(Boolean))].sort((a, b) => groupSortValue(a) - groupSortValue(b));
+    const genders = [...new Set(allTeams.map((team) => team.gender).filter(Boolean))].sort();
     const theme = `--profile-theme:${club.primaryColor}25`;
     const teamRows = teams.length ? teams.map((team) => `<a class="club-team-row club-team-row-v726" href="${escapeHtml(teamHref(team))}">
       <div class="club-team-rank">#${escapeHtml(team.postRank || "—")}</div>
@@ -559,8 +585,8 @@
         <div><p class="club-intel-eyebrow">Club navigation</p><h2>Teams by age group</h2></div>
         <span>${groups.length || 0} group${groups.length === 1 ? "" : "s"}</span>
       </div>
-      <div class="club-age-group-grid">${renderClubAgeGroups(teams)}</div>
-      <p class="club-profile-note">This is the club-level view. Team-specific results, movement, and best wins live on individual team pages.</p>
+      <div class="club-age-group-grid">${renderClubAgeGroups(allTeams)}</div>
+      <p class="club-profile-note">Ranked teams and verified Junior Olympics-only teams are combined here. Open a team for its ranking, tournament record, placement, and full JO journey.</p>
     </section>
 
     ${renderJoClubProfile(joClubProfile)}

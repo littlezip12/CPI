@@ -1,8 +1,9 @@
-# WPI 7.52.11
+# WPI 7.52.12
 
-Junior Olympics team and club profile bridge.
-- Connects the final records and placements already published in the 2026 JO results browser to team profiles and club profiles.
-- Creates tournament-only team profile routes for unranked JO entrants, including Kern Premier 12U Boys, 14U Boys, 16U Boys, 18U Boys, and 18U Girls.
-- Adds direct links from tournament results to those team profiles and back to each complete JO game journey.
-- Keeps Kern Premier separate from Kearns and SKIP.
-- Does not change rankings, scores, records, placements, or bracket paths.
+Club family consolidation and complete profile wiring.
+- Consolidates Clovis and Clovis Water Polo Club into one club with 12 ranked teams.
+- Consolidates Vnited and Visalia United into one club with three ranked teams.
+- Keeps Kern Premier, Kearns, and SKIP as distinct identities.
+- Connects Junior Olympics-only teams directly into club age-group navigation and team profiles.
+- Propagates corrected identities through rankings, tournament participants, historical profiles, logos, aliases, search, and redirects.
+- Does not change rank order, CPI values, scores, records, placements, or tournament paths.

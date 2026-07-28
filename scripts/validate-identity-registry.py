@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 IDENTITY = ROOT / "data" / "identity"
 EXPECTED_RELEASE = "7.40.0"
 EXPECTED_TEAMS = 724
-EXPECTED_CANONICAL_CLUBS = 184
+EXPECTED_CANONICAL_CLUBS = 182
 REQUIRED_FILES = [
     IDENTITY / "manifest.json",
     IDENTITY / "clubs.json",

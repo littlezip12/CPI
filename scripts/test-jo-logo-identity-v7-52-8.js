@@ -13,7 +13,7 @@ vm.runInContext(fs.readFileSync(path.join(root,'js/cpi-identity.js'),'utf8'),con
 
 const resolver=context.window.CPIIdentity;
 if(!resolver)throw new Error('CPIIdentity did not initialize.');
-if(!['7.52.8','7.52.9','7.52.10'].includes(resolver.release))throw new Error(`Expected resolver 7.52.8 or later 7.52.x logo release, found ${resolver.release}.`);
+if(!['7.52.8','7.52.9','7.52.10','7.52.12'].includes(resolver.release))throw new Error(`Expected resolver 7.52.8 or later 7.52.x logo release, found ${resolver.release}.`);
 
 const cases=[
   ['Ciu Gold','club-ciu'],

@@ -6,9 +6,9 @@
   "description": "Stable tournament participant identities. Tournament-only teams are evidence entities and never enter published rankings automatically.",
   "counts": {
     "participants": 973,
-    "canonicalTeams": 346,
-    "tournamentOnlyTeams": 627,
-    "rankingEligible": 346
+    "canonicalTeams": 349,
+    "tournamentOnlyTeams": 624,
+    "rankingEligible": 349
   },
   "participants": [
     {
@@ -3244,7 +3244,7 @@
       "ageGroup": "12U",
       "gender": "Boys",
       "group": "12U Boys",
-      "clubName": "Clovis",
+      "clubName": "Clovis Water Polo Club",
       "region": "Central Valley",
       "rankingEligible": true,
       "identityStatus": "canonical_ranked_team",
@@ -5789,15 +5789,15 @@
     {
       "id": "tournament-team-2026-12u-coed-vnited",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-vnited",
-      "tournamentClubId": "club-vnited",
+      "canonicalClubId": "club-visalia-united",
+      "tournamentClubId": "club-visalia-united",
       "name": "VNITED",
       "normalizedName": "vnited",
       "season": "2026",
       "ageGroup": "12U",
       "gender": "Coed",
       "group": "12U Coed",
-      "clubName": "Vnited",
+      "clubName": "Visalia United",
       "region": "Central Valley",
       "rankingEligible": false,
       "identityStatus": "canonical_club_tournament_team",
@@ -7650,33 +7650,10 @@
       ]
     },
     {
-      "id": "tournament-team-2026-14u-boys-clovis",
-      "canonicalTeamId": null,
-      "canonicalClubId": null,
-      "tournamentClubId": "tournament-club-clovis",
-      "name": "CLOVIS",
-      "normalizedName": "clovis",
-      "season": "2026",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "group": "14U Boys",
-      "clubName": "CLOVIS",
-      "region": "Unclassified",
-      "rankingEligible": false,
-      "identityStatus": "tournament_only_team",
-      "aliases": [
-        "36-CLOVIS",
-        "CLOVIS"
-      ],
-      "sources": [
-        "2026-jo-weekend-2|14u-boys-championship"
-      ]
-    },
-    {
       "id": "tournament-team-2026-14u-boys-clovis-red",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-clovis-red",
-      "tournamentClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
+      "tournamentClubId": "club-clovis",
       "name": "CLOVIS RED",
       "normalizedName": "clovis red",
       "season": "2026",
@@ -7805,6 +7782,29 @@
       "aliases": [
         "37-CENTRAL COAST",
         "Central Coast"
+      ],
+      "sources": [
+        "2026-jo-weekend-2|14u-boys-championship"
+      ]
+    },
+    {
+      "id": "team-2026-14u-boys-clovis-a-14u-boys",
+      "canonicalTeamId": "team-2026-14u-boys-clovis-a-14u-boys",
+      "canonicalClubId": "club-clovis",
+      "tournamentClubId": "club-clovis",
+      "name": "Clovis A",
+      "normalizedName": "clovis a",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "group": "14U Boys",
+      "clubName": "Clovis Water Polo Club",
+      "region": "Central Valley",
+      "rankingEligible": true,
+      "identityStatus": "canonical_ranked_team",
+      "aliases": [
+        "36-CLOVIS",
+        "CLOVIS"
       ],
       "sources": [
         "2026-jo-weekend-2|14u-boys-championship"
@@ -10067,15 +10067,15 @@
     {
       "id": "tournament-team-2026-14u-boys-vnited",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-vnited",
-      "tournamentClubId": "club-vnited",
+      "canonicalClubId": "club-visalia-united",
+      "tournamentClubId": "club-visalia-united",
       "name": "VNITED",
       "normalizedName": "vnited",
       "season": "2026",
       "ageGroup": "14U",
       "gender": "Boys",
       "group": "14U Boys",
-      "clubName": "Vnited",
+      "clubName": "Visalia United",
       "region": "Central Valley",
       "rankingEligible": false,
       "identityStatus": "canonical_club_tournament_team",
@@ -10573,8 +10573,8 @@
     {
       "id": "team-2026-14u-girls-clovis-a-14u-girls",
       "canonicalTeamId": "team-2026-14u-girls-clovis-a-14u-girls",
-      "canonicalClubId": "club-clovis-red",
-      "tournamentClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
+      "tournamentClubId": "club-clovis",
       "name": "Clovis A",
       "normalizedName": "clovis a",
       "season": "2026",
@@ -10596,8 +10596,8 @@
     {
       "id": "team-2026-14u-girls-clovis-b-14u-girls",
       "canonicalTeamId": "team-2026-14u-girls-clovis-b-14u-girls",
-      "canonicalClubId": "club-clovis-red",
-      "tournamentClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
+      "tournamentClubId": "club-clovis",
       "name": "Clovis B",
       "normalizedName": "clovis b",
       "season": "2026",
@@ -12781,8 +12781,8 @@
     {
       "id": "tournament-team-2026-16u-boys-clovis-red",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-clovis-red",
-      "tournamentClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
+      "tournamentClubId": "club-clovis",
       "name": "CLOVIS RED",
       "normalizedName": "clovis red",
       "season": "2026",
@@ -12927,7 +12927,7 @@
       "ageGroup": "16U",
       "gender": "Boys",
       "group": "16U Boys",
-      "clubName": "Clovis",
+      "clubName": "Clovis Water Polo Club",
       "region": "Central Valley",
       "rankingEligible": true,
       "identityStatus": "canonical_ranked_team",
@@ -12950,7 +12950,7 @@
       "ageGroup": "16U",
       "gender": "Boys",
       "group": "16U Boys",
-      "clubName": "Clovis",
+      "clubName": "Clovis Water Polo Club",
       "region": "Central Valley",
       "rankingEligible": true,
       "identityStatus": "canonical_ranked_team",
@@ -15286,43 +15286,20 @@
       ]
     },
     {
-      "id": "tournament-team-2026-16u-boys-vnited-a",
-      "canonicalTeamId": null,
-      "canonicalClubId": null,
-      "tournamentClubId": "tournament-club-vnited-a",
-      "name": "VNITED A",
-      "normalizedName": "vnited a",
-      "season": "2026",
-      "ageGroup": "16U",
-      "gender": "Boys",
-      "group": "16U Boys",
-      "clubName": "VNITED A",
-      "region": "Unclassified",
-      "rankingEligible": false,
-      "identityStatus": "tournament_only_team",
-      "aliases": [
-        "28-VNITED A",
-        "VNITED A"
-      ],
-      "sources": [
-        "2026-jo-weekend-2|16u-boys-championship"
-      ]
-    },
-    {
       "id": "tournament-team-2026-16u-boys-vnited-b",
       "canonicalTeamId": null,
-      "canonicalClubId": null,
-      "tournamentClubId": "tournament-club-vnited-b",
+      "canonicalClubId": "club-visalia-united",
+      "tournamentClubId": "club-visalia-united",
       "name": "VNITED B",
       "normalizedName": "vnited b",
       "season": "2026",
       "ageGroup": "16U",
       "gender": "Boys",
       "group": "16U Boys",
-      "clubName": "VNITED B",
-      "region": "Unclassified",
+      "clubName": "Visalia United",
+      "region": "Central Valley",
       "rankingEligible": false,
-      "identityStatus": "tournament_only_team",
+      "identityStatus": "canonical_club_tournament_team",
       "aliases": [
         "23-VNITED B",
         "VNITED B"
@@ -15375,6 +15352,29 @@
       ],
       "sources": [
         "2026-jo-weekend-2|16u-boys-classic"
+      ]
+    },
+    {
+      "id": "team-2026-16u-boys-vnited-16u-boys",
+      "canonicalTeamId": "team-2026-16u-boys-vnited-16u-boys",
+      "canonicalClubId": "club-visalia-united",
+      "tournamentClubId": "club-visalia-united",
+      "name": "Vnited",
+      "normalizedName": "vnited",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "group": "16U Boys",
+      "clubName": "Visalia United",
+      "region": "Central Valley",
+      "rankingEligible": true,
+      "identityStatus": "canonical_ranked_team",
+      "aliases": [
+        "28-VNITED A",
+        "VNITED A"
+      ],
+      "sources": [
+        "2026-jo-weekend-2|16u-boys-championship"
       ]
     },
     {
@@ -15848,7 +15848,7 @@
       "ageGroup": "16U",
       "gender": "Girls",
       "group": "16U Girls",
-      "clubName": "Clovis",
+      "clubName": "Clovis Water Polo Club",
       "region": "Central Valley",
       "rankingEligible": true,
       "identityStatus": "canonical_ranked_team",
@@ -17473,29 +17473,6 @@
       ]
     },
     {
-      "id": "tournament-team-2026-16u-girls-visalia-united",
-      "canonicalTeamId": null,
-      "canonicalClubId": null,
-      "tournamentClubId": "tournament-club-visalia-united",
-      "name": "VISALIA UNITED",
-      "normalizedName": "visalia united",
-      "season": "2026",
-      "ageGroup": "16U",
-      "gender": "Girls",
-      "group": "16U Girls",
-      "clubName": "VISALIA UNITED",
-      "region": "Unclassified",
-      "rankingEligible": false,
-      "identityStatus": "tournament_only_team",
-      "aliases": [
-        "42-VISALIA UNITED",
-        "VISALIA UNITED"
-      ],
-      "sources": [
-        "2026-jo-weekend-1|16u-girls-championship"
-      ]
-    },
-    {
       "id": "team-2026-16u-girls-lb-viking-16u-girls",
       "canonicalTeamId": "team-2026-16u-girls-lb-viking-16u-girls",
       "canonicalClubId": "club-viking",
@@ -17513,6 +17490,29 @@
       "aliases": [
         "15-LB VIKING",
         "LB Viking"
+      ],
+      "sources": [
+        "2026-jo-weekend-1|16u-girls-championship"
+      ]
+    },
+    {
+      "id": "team-2026-16u-girls-visalia-united-16u-girls",
+      "canonicalTeamId": "team-2026-16u-girls-visalia-united-16u-girls",
+      "canonicalClubId": "club-visalia-united",
+      "tournamentClubId": "club-visalia-united",
+      "name": "Visalia United",
+      "normalizedName": "visalia united",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Girls",
+      "group": "16U Girls",
+      "clubName": "Visalia United",
+      "region": "Central Valley",
+      "rankingEligible": true,
+      "identityStatus": "canonical_ranked_team",
+      "aliases": [
+        "42-VISALIA UNITED",
+        "VISALIA UNITED"
       ],
       "sources": [
         "2026-jo-weekend-1|16u-girls-championship"
@@ -18004,8 +18004,8 @@
     {
       "id": "tournament-team-2026-18u-boys-clovis-red",
       "canonicalTeamId": null,
-      "canonicalClubId": "club-clovis-red",
-      "tournamentClubId": "club-clovis-red",
+      "canonicalClubId": "club-clovis",
+      "tournamentClubId": "club-clovis",
       "name": "CLOVIS RED",
       "normalizedName": "clovis red",
       "season": "2026",
@@ -18150,7 +18150,7 @@
       "ageGroup": "18U",
       "gender": "Boys",
       "group": "18U Boys",
-      "clubName": "Clovis",
+      "clubName": "Clovis Water Polo Club",
       "region": "Central Valley",
       "rankingEligible": true,
       "identityStatus": "canonical_ranked_team",
@@ -18173,7 +18173,7 @@
       "ageGroup": "18U",
       "gender": "Boys",
       "group": "18U Boys",
-      "clubName": "Clovis",
+      "clubName": "Clovis Water Polo Club",
       "region": "Central Valley",
       "rankingEligible": true,
       "identityStatus": "canonical_ranked_team",
@@ -20168,15 +20168,15 @@
     {
       "id": "team-2026-18u-boys-vnited-18u-boys",
       "canonicalTeamId": "team-2026-18u-boys-vnited-18u-boys",
-      "canonicalClubId": "club-vnited",
-      "tournamentClubId": "club-vnited",
+      "canonicalClubId": "club-visalia-united",
+      "tournamentClubId": "club-visalia-united",
       "name": "Vnited",
       "normalizedName": "vnited",
       "season": "2026",
       "ageGroup": "18U",
       "gender": "Boys",
       "group": "18U Boys",
-      "clubName": "Vnited",
+      "clubName": "Visalia United",
       "region": "Central Valley",
       "rankingEligible": true,
       "identityStatus": "canonical_ranked_team",
@@ -20751,7 +20751,7 @@
       "ageGroup": "18U",
       "gender": "Girls",
       "group": "18U Girls",
-      "clubName": "Clovis",
+      "clubName": "Clovis Water Polo Club",
       "region": "Central Valley",
       "rankingEligible": true,
       "identityStatus": "canonical_ranked_team",

@@ -18,8 +18,8 @@ required_index = [
     'css/homepage-wpi-v7-52-4.css?v=7.52.4',
     'js/homepage-wpi-v7-52-4.js?v=7.52.9',
     'assets/photos/editorial/polo-attacker-poolwide.jpg',
-    'data/identity/runtime.js?v=7.52.10',
-    'js/cpi-identity.js?v=7.52.10',
+    'data/identity/runtime.js?v=7.52.12',
+    'js/cpi-identity.js?v=7.52.12',
     'id="wpiHomeSearch"',
     'id="wpiRankingGrid"',
     'id="wpiResultsGrid"',
@@ -49,11 +49,11 @@ for token in ['params.get("region")', 'params.get("search")', 'regionFilter.valu
 for token in ['.wpi-hero-visual', '.wpi-ranking-grid', '.wpi-results-grid', '.wpi-california-map', '.region-point.east-bay']:
     if token not in css: errors.append(f'homepage CSS missing {token}')
 
-if site.get('version') not in {'7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11'}: errors.append('site release must preserve the 7.52.4 homepage or a later 7.52.x data release')
+if site.get('version') not in {'7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12'}: errors.append('site release must preserve the 7.52.4 homepage or a later 7.52.x data release')
 if site.get('homepageRelease') != '7.52.4': errors.append('homepageRelease must be 7.52.4')
 if site.get('rankingDataRelease') != '7.52.2': errors.append('ranking data must remain 7.52.2')
 if len(rankings) != 724: errors.append(f'expected 724 ranked teams, found {len(rankings)}')
-if len(clubs) != 184: errors.append(f'expected 184 clubs, found {len(clubs)}')
+if len(clubs) != 182: errors.append(f'expected 182 clubs, found {len(clubs)}')
 if jo.get('summary', {}).get('teamPlacements') != 976: errors.append('expected 976 JO placements')
 
 for asset in [ROOT / 'css/homepage-wpi-v7-52-4.css', ROOT / 'js/homepage-wpi-v7-52-4.js', ROOT / 'assets/photos/editorial/polo-attacker-poolwide.jpg']:
@@ -67,4 +67,4 @@ if errors:
 print('WPI HOMEPAGE 7.52.4 TESTS PASSED')
 print(' - Photo hero, team/club search, ranking cards, JO results, club profiles, and region map are wired')
 print(' - Team, club, ranking, result, region, methodology, and update links route to relevant pages')
-print(' - 724 rankings, 184 clubs, and 976 JO placements remain unchanged')
+print(' - 724 rankings, 182 clubs, and 976 JO placements remain unchanged')

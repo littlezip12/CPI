@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = "7.52.11"
+RELEASE = "7.52.12"
 RESULTS = ROOT / "data" / "tournaments" / "jo-results-2026.json"
 PARTICIPANTS = ROOT / "data" / "tournaments" / "identity" / "participants.json"
 IDENTITY = ROOT / "data" / "identity" / "index.json"
@@ -80,10 +80,23 @@ def main() -> int:
     rankings = load(RANKINGS)
 
     participants = participants_payload.get("participants", [])
-    participant_index = {
-        (str(item.get("group") or ""), normalize(item.get("name"))): item
-        for item in participants
-    }
+    # Index canonical names plus source aliases. Tournament result labels often omit
+    # an A/Red suffix even when the normalized participant resolved correctly.
+    participant_candidates: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    for item in participants:
+        keys = {normalize(item.get("name"))}
+        keys.update(normalize(alias) for alias in item.get("aliases", []) if normalize(alias))
+        for key in keys:
+            participant_candidates[(str(item.get("group") or ""), key)].append(item)
+
+    participant_index: dict[tuple[str, str], dict[str, Any]] = {}
+    for key, candidates in participant_candidates.items():
+        ranked = [item for item in candidates if item.get("canonicalTeamId")]
+        unique_ids = {item.get("id") for item in candidates}
+        if len(unique_ids) == 1:
+            participant_index[key] = candidates[0]
+        elif len(ranked) == 1:
+            participant_index[key] = ranked[0]
     ranking_by_id = {item.get("canonicalTeamId"): item for item in rankings if item.get("canonicalTeamId")}
     clubs = identity.get("clubs", {})
 

@@ -25,3 +25,13 @@
 .jo-club-summary-grid strong{display:block;margin-top:7px;font-size:24px;color:#102d49}
 @media(max-width:850px){.jo-profile-placement-grid,.jo-club-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.jo-club-team-grid{grid-template-columns:1fr}}
 @media(max-width:520px){.jo-profile-placement-grid,.jo-club-summary-grid{grid-template-columns:1fr}.jo-club-team-card{grid-template-columns:1fr}.jo-club-team-card b{justify-self:start}}
+
+/* 7.52.12: surface JO-only teams inside the primary club age-group navigator. */
+.club-profile-page-v726 .club-age-team-list a small {
+  grid-column: 2 / -1;
+  color: #6b7d93;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: -4px;
+}
