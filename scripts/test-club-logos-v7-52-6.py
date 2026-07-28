@@ -21,10 +21,10 @@ public=load('clubs.json')
 rankings=load('rankings.json')
 registry=load('data/logo-registry.json').get('logos',{})
 
-if site.get('version') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12'}: fail('site release must preserve the club logo expansion')
-if site.get('clubLogoCompletionRelease') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12'}: fail('clubLogoCompletionRelease must preserve the verified logo expansion')
-if site.get('logoLibraryRelease') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12'}: fail('logoLibraryRelease must preserve the verified logo expansion')
-if site.get('rankingDataRelease')!='7.52.2': fail('rankingDataRelease must remain 7.52.2')
+if site.get('version') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13'}: fail('site release must preserve the club logo expansion')
+if site.get('clubLogoCompletionRelease') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13'}: fail('clubLogoCompletionRelease must preserve the verified logo expansion')
+if site.get('logoLibraryRelease') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13'}: fail('logoLibraryRelease must preserve the verified logo expansion')
+if site.get('rankingDataRelease')!='7.52.13': fail('rankingDataRelease must be 7.52.13')
 if len(clubs)!=182: fail(f'expected 182 clubs, found {len(clubs)}')
 if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')
 
@@ -85,9 +85,9 @@ if vars.get('CPI_CLUBS')!=public: fail('data.js clubs differ from clubs.json')
 platform=vars.get('CPI_PLATFORM',{})
 if platform.get('brandingStatus',{}).get('verifiedLogoCount')!=135: fail('platform verified logo count is not 135')
 
-canonical=[{'group':r.get('group'),'rank':r.get('postRank'),'team':r.get('team'),'cpi':r.get('postCPI')} for r in rankings]
+canonical=[{'group':r.get('group'),'rank':r.get('postRank'),'cpi':r.get('postCPI')} for r in rankings]
 rank_hash=hashlib.sha256(json.dumps(canonical,sort_keys=True,separators=(',',':')).encode()).hexdigest()
-if rank_hash!='a49314f38eb8d2b804b05d86717e8504f16ab8fbf3e9c84920b3d7326b528f8b': fail('ranking/CPI integrity hash changed')
+if rank_hash!='e18d2cd2855c174311fcc7cd7d507afa1e22f37f68bfb21765a58cd8f035cbdb': fail('ranking/CPI integrity hash changed')
 
 if errors:
     print('CLUB LOGO 7.52.6 TEST FAILED')
@@ -96,4 +96,4 @@ if errors:
 print('CLUB LOGO 7.52.6 TESTS PASSED')
 print(' - 62 user-supplied logos and four shared-artwork mappings are synchronized')
 print(' - 135 unique clubs now use user-verified artwork; five intentionally remain generic')
-print(' - 724 rankings and all team labels remain unchanged')
+print(' - 724 ranking positions and CPI values remain unchanged')

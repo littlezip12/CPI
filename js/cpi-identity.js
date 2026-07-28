@@ -1,4 +1,4 @@
-/* WPI canonical identity resolver — registry 7.40.0, club-family cleanup 7.52.12 */
+/* WPI canonical identity resolver — registry 7.40.0, club-family cleanup 7.52.12, Kern/SKIP separation 7.52.13 */
 (function(global){
   'use strict';
 
@@ -243,7 +243,7 @@
   }
 
   global.CPIIdentity=Object.freeze({
-    release:'7.52.12',
+    release:'7.52.13',
     schemaVersion:runtime.schemaVersion||1,
     normalize,
     resolveClub,

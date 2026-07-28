@@ -15,8 +15,8 @@ audit=load('qa/boys-post-jo-2026-ranking-audit.json')
 site=load('config/site-release.json')
 groups=['12U Boys','14U Boys','16U Boys','18U Boys']
 
-if site.get('version') not in {'7.52.0','7.52.1','7.52.2','7.52.3','7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12'}: fail('site release must preserve the 7.52.x post-JO ranking series')
-if site.get('rankingDataRelease') not in {'7.52.0','7.52.2'}: fail('rankingDataRelease must preserve Boys release or current combined ranking release')
+if site.get('version') not in {'7.52.0','7.52.1','7.52.2','7.52.3','7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13'}: fail('site release must preserve the 7.52.x post-JO ranking series')
+if site.get('rankingDataRelease') != '7.52.13': fail('rankingDataRelease must include the Kern Premier identity correction')
 if audit.get('approvedTeams')!=400: fail('audit must report 400 approved Boys teams')
 
 for group in groups:
@@ -31,7 +31,6 @@ for group in groups:
         if not row.get('joSubdivision'): fail(f"{group} #{row.get('postRank')} missing JO subdivision")
         if abs(int(row.get('postRank'))-int(row.get('joDerivedRank'))) > 1: fail(f"{group} {row.get('team')} is more than one spot from JO-derived rank")
         if 'vegas north irvine' in str(row.get('team','')).lower() or 'vegas north irvine' in str(row.get('club','')).lower(): fail('North Irvine must not publish with Vegas prefix')
-        if 'kern premier' in str(row.get('team','')).lower(): fail('Kern Premier must publish as SKIP when it is the only related entry')
 
     by_club=defaultdict(list)
     for row in rows: by_club[row.get('clubSlug')].append(row)
@@ -46,7 +45,8 @@ for group in groups:
                 if not str(r.get('team','')).endswith(' '+suffix): fail(f"{group} multi-team club label is not functional-level based: {r.get('team')}")
 
 for group in ['12U Boys','14U Boys','16U Boys']:
-    if not any(r.get('group')==group and r.get('clubSlug')=='skip' for r in rankings): fail(f'{group} must include SKIP')
+    if not any(r.get('group')==group and r.get('clubSlug')=='kern-premier' for r in rankings): fail(f'{group} must include Kern Premier')
+    if any(r.get('group')==group and r.get('clubSlug')=='skip' for r in rankings): fail(f'{group} must not attribute Kern Premier to SKIP')
 if any(r.get('clubSlug')=='shore-aquatics' for r in rankings): fail('Shore Aquatics must consolidate into long-beach-shore')
 if any(r.get('clubSlug')=='shore-aquatics' for r in rankings): fail('Shore Aquatics must consolidate into long-beach-shore')
 
@@ -59,7 +59,7 @@ else:
 
 for path in ['index.html','rankings.html']:
     text=(ROOT/path).read_text(encoding='utf-8')
-    if 'data.js?v=7.52.2' not in text: fail(f'{path} does not cache-bust the current rankings data')
+    if 'data.js?v=7.52.13' not in text: fail(f'{path} does not cache-bust the current rankings data')
 home=(ROOT/'index.html').read_text(encoding='utf-8').lower()
 if 'post-junior olympics rankings' not in home and 'post-jo rankings' not in home: fail('homepage does not announce post-JO rankings')
 

@@ -1,76 +1,33 @@
 #!/usr/bin/env node
-const fs = require('fs');
-const vm = require('vm');
-const path = require('path');
-const ROOT = path.resolve(__dirname, '..');
+const fs=require('fs'); const vm=require('vm'); const path=require('path');
+const ROOT=path.resolve(__dirname,'..');
+function requireCondition(c,m){if(!c)throw new Error(m)}
+function read(r){return fs.readFileSync(path.join(ROOT,r),'utf8')}
+function loadJson(r){return JSON.parse(read(r))}
+function loadRuntime(targetWindow){global.window=targetWindow;vm.runInThisContext(read('data/tournaments/jo-profile-runtime.js'))}
 
-function requireCondition(condition, message) {
-  if (!condition) throw new Error(message);
-}
-function read(rel) { return fs.readFileSync(path.join(ROOT, rel), 'utf8'); }
-function loadJson(rel) { return JSON.parse(read(rel)); }
-function loadRuntime(targetWindow) {
-  global.window = targetWindow;
-  vm.runInThisContext(read('data/tournaments/jo-profile-runtime.js'));
-}
-
-function renderTeam() {
-  const root = { innerHTML: '' };
-  const style = { setProperty() {} };
-  const targetWindow = {
-    location: { search: '?team=kern-premier-12u-boys', href: 'http://wpi/team.html?team=kern-premier-12u-boys' },
-    CPI_RANKINGS: [],
-    CPI_CLUBS: loadJson('clubs.json'),
-    CPI_TOURNAMENT_EVIDENCE: { teams: {} },
-    CPI_HISTORICAL_PROFILES: { teams: {} },
+function renderTeam(){
+  const root={innerHTML:''}; const style={setProperty(){}};
+  const targetWindow={
+    location:{search:'?team=kern-premier-12u-boys',href:'http://wpi/team.html?team=kern-premier-12u-boys'},
+    CPI_RANKINGS:loadJson('rankings.json'), CPI_CLUBS:loadJson('clubs.json'),
+    CPI_TOURNAMENT_EVIDENCE:{teams:{}}, CPI_HISTORICAL_PROFILES:{teams:{}},
   };
-  global.document = {
-    querySelector(selector) {
-      if (selector === '#teamProfile') return root;
-      if (selector === '.team-profile-page') return { style };
-      return null;
-    },
-    documentElement: { style },
-  };
-  loadRuntime(targetWindow);
-  vm.runInThisContext(read('js/team-profile-v7-42.js'));
-  for (const token of ['Kern Premier', 'Verified tournament result', '41st', '3-4', 'View complete JO game journey']) {
-    requireCondition(root.innerHTML.includes(token), `Kern Premier team render missing ${token}`);
-  }
-  requireCondition(!root.innerHTML.includes('Team not found'), 'Kern Premier tournament profile rendered as not found');
+  global.document={querySelector(s){if(s==='#teamProfile')return root;if(s==='.team-profile-page')return{style};return null},documentElement:{style}};
+  loadRuntime(targetWindow); vm.runInThisContext(read('js/team-profile-v7-42.js'));
+  for(const token of ['Kern Premier','#41','3-4','Championship','View complete JO game journey']) requireCondition(root.innerHTML.includes(token),`team render missing ${token}`);
+  requireCondition(!root.innerHTML.includes('Team not found'),'ranked Kern Premier rendered as missing');
 }
-
-function renderClub() {
-  const root = { innerHTML: '' };
-  const style = { setProperty() {} };
-  const targetWindow = {
-    location: { search: '?club=kern-premier', href: 'http://wpi/club.html?club=kern-premier' },
-    CPI_RANKINGS: [],
-    CPI_CLUBS: loadJson('clubs.json'),
-    CPI_HISTORICAL_PROFILES: { clubs: {} },
-  };
-  global.document = {
-    querySelector(selector) {
-      if (selector === '#clubProfileApp') return root;
-      if (selector === '.club-profile-page') return { style };
-      return null;
-    },
-    documentElement: { style, dataset: {} },
-    title: '',
-  };
-  loadRuntime(targetWindow);
-  vm.runInThisContext(read('js/club-intelligence-v7-26.js'));
-  for (const token of ['Kern Premier', 'Teams and final results', '12U Boys', '14U Boys', '16U Boys', '18U Boys', '18U Girls', '5 JO teams', 'Ranked teams and verified Junior Olympics-only teams are combined here']) {
-    requireCondition(root.innerHTML.includes(token), `Kern Premier club render missing ${token}`);
-  }
-  const ageGrid = root.innerHTML.indexOf('club-age-group-grid');
-  const coreTeamLink = root.innerHTML.indexOf('team.html?team=kern-premier-12u-boys', ageGrid);
-  const joHistory = root.innerHTML.indexOf('id="club-jo-history"');
-  requireCondition(ageGrid >= 0 && coreTeamLink > ageGrid && coreTeamLink < joHistory, 'Kern Premier JO teams are not integrated into core age-group navigation');
+function renderClub(){
+  const root={innerHTML:''}; const style={setProperty(){}};
+  const targetWindow={location:{search:'?club=kern-premier',href:'http://wpi/club.html?club=kern-premier'},CPI_RANKINGS:loadJson('rankings.json'),CPI_CLUBS:loadJson('clubs.json'),CPI_HISTORICAL_PROFILES:{clubs:{}}};
+  global.document={querySelector(s){if(s==='#clubProfileApp')return root;if(s==='.club-profile-page')return{style};return null},documentElement:{style,dataset:{}},title:''};
+  loadRuntime(targetWindow); vm.runInThisContext(read('js/club-intelligence-v7-26.js'));
+  for(const token of ['Kern Premier','4 ranked teams','5 JO teams','Best ranked team','#36','12U Boys','14U Boys','16U Boys','18U Boys','18U Girls']) requireCondition(root.innerHTML.includes(token),`club render missing ${token}`);
+  const ageGrid=root.innerHTML.indexOf('club-age-group-grid'); const link=root.innerHTML.indexOf('team.html?team=kern-premier-12u-boys',ageGrid); const joHistory=root.innerHTML.indexOf('id="club-jo-history"');
+  requireCondition(ageGrid>=0&&link>ageGrid&&link<joHistory,'Kern ranked/JO teams are not integrated into age groups');
 }
-
-renderTeam();
-renderClub();
-console.log('JO PROFILE RENDER 7.52.12 TESTS PASSED');
-console.log(' - Kern Premier 12U Boys renders as a tournament-only team profile');
-console.log(' - Kern Premier club page renders all five linked JO teams');
+renderTeam(); renderClub();
+console.log('JO PROFILE RENDER 7.52.13 TESTS PASSED');
+console.log(' - Kern Premier 12U Boys renders with rank and JO result');
+console.log(' - Kern Premier club renders four ranked teams plus five JO entries');

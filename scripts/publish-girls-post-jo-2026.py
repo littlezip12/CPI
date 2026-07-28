@@ -40,7 +40,7 @@ DISPLAY_OVERRIDES = {
     "ngen": "NGen", "nipc": "NIPC", "norcal": "NorCal", "ocwpc": "OCWPC",
     "pac": "Pasadena AC", "pv wpc": "PV WPC", "sd dons": "SD Dons",
     "set": "SET", "sfv": "SFV", "shaq": "SHAQ", "skip": "SKIP",
-    "socal": "SoCal", "wcac united": "WCAC United",
+    "socal": "SoCal", "wcac united": "WCAC United", "kern premier": "Kern Premier",
 }
 
 CANONICAL_NAME_OVERRIDES = {
@@ -67,7 +67,7 @@ CANONICAL_NAME_OVERRIDES = {
     "viper pigeon hill country": "Viper Pigeon",
     "viper pigeon htown": "Viper Pigeon",
     "viper pigeon": "Viper Pigeon",
-    "kern premier": "SKIP",
+    "kern premier": "Kern Premier",
     "skip": "SKIP",
     "palos verdes": "PV WPC",
     "pv wpc": "PV WPC",
@@ -93,6 +93,7 @@ SLUG_OVERRIDES = {
     "Tri-Valley Tritons": "tri-valley-tritons",
     "Viper Pigeon": "viper-pigeon",
     "SKIP": "skip",
+    "Kern Premier": "kern-premier",
     "PV WPC": "pv-wpc",
     "Pasadena AC": "pasadena-ac",
     "Nado": "nado",
@@ -447,7 +448,7 @@ def main() -> None:
             "Tournament colors normalize to functional A/B/C/D depth by JO strength within club and age.",
             "Subdivision bands remain fixed; approved adjacent within-band adjustments are retained.",
             "Shore Aquatics and Long Beach Shore share the long-beach-shore canonical club.",
-            "Kern Premier and SKIP remain separate rosters when both appear, under one club hierarchy.",
+            "Kern Premier and SKIP remain separate canonical clubs and rosters in every age group.",
         ],
         "rows": audit_rows,
     })

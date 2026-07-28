@@ -342,6 +342,23 @@
     </aside>`;
   }
 
+
+  function renderRankedJoProfile(profile) {
+    if (!profile) return "";
+    const record = profile.record || "Record available on JO results";
+    return `<section id="tournament-evidence" class="team-panel jo-profile-panel ranked-jo-profile-panel">
+      <div class="section-heading with-note"><div><p class="kicker">2026 Junior Olympics</p><h2>Verified tournament result</h2></div><span>${escapeHtml(joPlaceLabel(profile))}</span></div>
+      <p class="evidence-policy-note">This ranked profile uses the same record and final placement published in the WPI Junior Olympics results browser.</p>
+      <div class="jo-profile-placement-grid">
+        <div><span>JO record</span><strong>${escapeHtml(record)}</strong></div>
+        <div><span>Division</span><strong>${escapeHtml(profile.division || "—")}</strong></div>
+        <div><span>${escapeHtml(profile.subdivision || "Subdivision")} finish</span><strong>${escapeHtml(profile.subdivisionPlaceLabel || "—")}</strong></div>
+        <div><span>${escapeHtml(profile.division || "Division")} finish</span><strong>${escapeHtml(profile.divisionPlaceLabel || "—")}</strong></div>
+      </div>
+      <div class="jo-profile-actions"><a href="${escapeHtml(profile.journeyUrl)}">View complete JO game journey →</a><a class="secondary" href="${escapeHtml(profile.resultsUrl)}">Open final placements</a></div>
+    </section>`;
+  }
+
   function renderJoOnlyTeamProfile(profile) {
     const club = clubs.find((candidate) => candidate.canonicalClubId === profile.canonicalClubId || candidate.slug === profile.clubSlug) || {};
     const portfolio = joClubPortfolio(profile);
@@ -397,7 +414,7 @@
 
         <section id="jo-profile-notes" class="team-panel profile-notes-panel">
           <div class="section-heading"><p class="kicker">Data notes</p><h2>Profile status</h2></div>
-          <ul class="profile-note-list"><li>This is a tournament-connected team profile, not a published WPI ranking.</li><li>Record and placement come directly from the completed 2026 Junior Olympics results dataset.</li><li>Kern Premier and Kearns remain separate club identities.</li></ul>
+          <ul class="profile-note-list"><li>This is a tournament-connected team profile, not a published WPI ranking.</li><li>Record and placement come directly from the completed 2026 Junior Olympics results dataset.</li><li>Kern Premier and SKIP remain separate club identities; Kearns remains the distinct Utah club.</li></ul>
           <a class="team-btn secondary profile-note-link" href="${escapeHtml(profile.resultsUrl)}">Review JO results →</a>
         </section>
       </div>
@@ -523,7 +540,7 @@
     `).join("");
   }
 
-  function renderTeamProfile(team) {
+  function renderTeamProfile(team, joProfile = null) {
     const club = clubs.find((candidate) => candidate.slug === team.clubSlug) || {};
     setBrandVars(team, club);
 
@@ -543,7 +560,9 @@
     const rank = team.postRank ? `#${team.postRank}` : "—";
     const storyLink = storyLinkForTeam(team);
     const latestEvidence = team.latestTournament || "Evidence pending";
-    const bankedEvidenceLabel = normalizedEvidence ? `${normalizedSummary.events || 0} event${Number(normalizedSummary.events || 0) === 1 ? "" : "s"} · ${recordLabel(normalizedSummary)}` : "Awaiting normalized match";
+    const bankedEvidenceLabel = joProfile
+      ? `${joProfile.record || "JO result"} · ${joProfile.divisionPlaceLabel || joProfile.subdivisionPlaceLabel || "Placement verified"}`
+      : normalizedEvidence ? `${normalizedSummary.events || 0} event${Number(normalizedSummary.events || 0) === 1 ? "" : "s"} · ${recordLabel(normalizedSummary)}` : "Awaiting normalized match";
 
     document.title = `${team.team} | CPI Team Profile`;
 
@@ -563,7 +582,7 @@
               <span>${escapeHtml(team.latestTournament || "Tournament context TBD")}</span>
             </div>
             <div class="team-actions">
-              <a class="team-btn primary" href="${escapeHtml(clubPage)}">View club profile</a>
+              ${joProfile ? `<a class="team-btn primary" href="${escapeHtml(joProfile.journeyUrl)}">View JO games</a>` : `<a class="team-btn primary" href="${escapeHtml(clubPage)}">View club profile</a>`}
               <a class="team-btn secondary" href="${escapeHtml(groupHref(team.group))}">Back to rankings</a>
             </div>
           </div>
@@ -608,7 +627,7 @@
           <article>
             <span>Banked JO Evidence</span>
             <strong class="snapshot-text">${escapeHtml(bankedEvidenceLabel)}</strong>
-            <em>${normalizedEvidence ? "Profile evidence only · ranking review pending" : "No normalized JO identity match yet"}</em>
+            <em>${joProfile ? "Verified final JO record and placement" : normalizedEvidence ? "Profile evidence only · ranking review pending" : "No normalized JO identity match yet"}</em>
           </article>
         </section>
 
@@ -636,8 +655,8 @@
               </div>
               <div>
                 <span>Data status</span>
-                <strong>${normalizedEvidence ? "JO evidence banked" : escapeHtml(evidenceStatus(team))}</strong>
-                <em>${normalizedEvidence ? "Manual ranking review pending" : `${escapeHtml(team.ageGroup || "")} ${escapeHtml(team.gender || "")} · Pre-JO profile`}</em>
+                <strong>${joProfile ? "Final JO result connected" : normalizedEvidence ? "JO evidence banked" : escapeHtml(evidenceStatus(team))}</strong>
+                <em>${joProfile ? `${escapeHtml(joProfile.record || "Record verified")} · ${escapeHtml(joProfile.divisionPlaceLabel || "Placement verified")}` : normalizedEvidence ? "Manual ranking review pending" : `${escapeHtml(team.ageGroup || "")} ${escapeHtml(team.gender || "")} · Pre-JO profile`}</em>
               </div>
             </div>
           </article>
@@ -659,7 +678,7 @@
           </aside>
         </section>
 
-        ${renderTournamentEvidence(normalizedEvidence)}
+        ${joProfile ? renderRankedJoProfile(joProfile) : renderTournamentEvidence(normalizedEvidence)}
         ${renderHistoricalProfile(historicalProfile)}
 
         <section id="club-age-group" class="team-panel same-group-panel">
@@ -705,8 +724,8 @@
 
   const requestedTeam = getParam("team");
   const team = findTeam(requestedTeam);
-  const joProfile = team ? null : findJoProfile(requestedTeam);
-  if (team) renderTeamProfile(team);
+  const joProfile = findJoProfile(requestedTeam);
+  if (team) renderTeamProfile(team, joProfile);
   else if (joProfile) renderJoOnlyTeamProfile(joProfile);
   else renderNotFound();
 })();
