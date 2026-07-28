@@ -1,4 +1,4 @@
-/* WPI canonical identity resolver — registry 7.40.0, JO logo delivery patch 7.52.9 */
+/* WPI canonical identity resolver — registry 7.40.0, JO logo delivery patch 7.52.10 */
 (function(global){
   'use strict';
 
@@ -20,6 +20,7 @@
 
   const JO_EXACT_CLUB_ALIASES=Object.freeze({
     'central valley united':'club-cvu',
+    'kern premier':'club-kern-premier',
     'chula vista premier':'club-cv-premier',
     'corona del mar':'club-cdm',
     'coronado':'club-coronado',
@@ -86,6 +87,7 @@
     [/^la jolla(?: united)?(?: |$)/,'club-la-jolla-united'],
     [/^pac orange(?: |$)/,'club-pac-orange'],
     [/^central valley united(?: |$)/,'club-cvu'],
+    [/^kern premier(?: |$)/,'club-kern-premier'],
     [/^texas thunder(?: |$)/,'club-thunder'],
     [/^san jose foundation(?: |$)/,'club-sj-foundation'],
     [/^san jose wpf(?: |$)/,'club-sj-foundation'],
@@ -236,7 +238,7 @@
   }
 
   global.CPIIdentity=Object.freeze({
-    release:'7.52.9',
+    release:'7.52.10',
     schemaVersion:runtime.schemaVersion||1,
     normalize,
     resolveClub,

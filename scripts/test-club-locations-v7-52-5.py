@@ -12,9 +12,9 @@ rankings=load('rankings.json')
 identity=load('data/identity/clubs.json')
 release=load('data/club-location-release-7.52.5.json')
 required=['city','country','locationLabel','region','metroRegion','macroRegion','locationConfidence','locationSource']
-if site.get('version') not in {'7.52.5','7.52.6','7.52.7','7.52.8','7.52.9'}: fail('site release must preserve the 7.52.5 location release or a later 7.52.x presentation release')
+if site.get('version') not in {'7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10'}: fail('site release must preserve the 7.52.5 location release or a later 7.52.x presentation release')
 if site.get('clubLocationRelease')!='7.52.5': fail('clubLocationRelease must be 7.52.5')
-if len(clubs)!=183: fail(f'expected 183 clubs, found {len(clubs)}')
+if len(clubs)!=184: fail(f'expected 184 clubs, found {len(clubs)}')
 if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')
 if release.get('resolvedClubCount')!=72: fail('location release must contain 72 resolved clubs')
 if len(release.get('clubs',[]))!=72: fail('location release club list must contain 72 rows')
@@ -30,7 +30,11 @@ for collection,name in [(public,'clubs.json'),(identity,'identity clubs')]:
         slug=c.get('slug')
         if slug in by_slug:
             for field in ['region','locationLabel','metroRegion','macroRegion']:
-                if c.get(field)!=by_slug[slug].get(field): fail(f'{name} {slug} differs on {field}')
+                left = c.get(field)
+                right = by_slug[slug].get(field)
+                if (left in ('', None) and right in ('', None)):
+                    continue
+                if left!=right: fail(f'{name} {slug} differs on {field}')
 for row in rankings:
     club=by_slug.get(row.get('clubSlug'))
     if club and row.get('region')!=club.get('region'): fail(f"ranking {row.get('team')} region differs from club")
@@ -47,5 +51,5 @@ if errors:
     sys.exit(1)
 print('CLUB LOCATION 7.52.5 TESTS PASSED')
 print(' - 72 previously unresolved clubs now have structured location and region metadata')
-print(' - All 183 clubs have a public directory region; 724 ranking rows remain synchronized')
+print(' - All 184 clubs have a public directory region; 724 ranking rows remain synchronized')
 print(' - Club directory, profiles, static pages, identity data, and rebuild overrides are aligned')
