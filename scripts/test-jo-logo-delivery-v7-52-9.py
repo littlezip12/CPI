@@ -23,7 +23,7 @@ def ordered(text: str, tokens: list[str], label: str) -> None:
 
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
-if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16'}:
+if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0'}:
     fail('site release must preserve JO logo delivery 7.52.10 or later')
 if site.get('identityRelease') != '7.52.13':
     fail('identityRelease must remain 7.52.13')

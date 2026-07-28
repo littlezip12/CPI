@@ -4,90 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cmac | Water Polo Index</title>
+  <meta name="description" content="Open the current Water Polo Index profile for Cmac.">
+  <meta http-equiv="refresh" content="0; url=../club.html?club=cmac">
+  <link rel="canonical" href="../club.html?club=cmac">
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/command-palette.css?v=7.52.3">
   <link rel="stylesheet" href="../css/site-shell.css?v=7.52.3">
   <style>
-    .club-intel-page { min-height:100vh; background:#f4f7fb; color:#071426; }
-    .club-intel-hero {
-      background: radial-gradient(circle at 90% 10%, #f6b70033, transparent 28%), linear-gradient(135deg, #073763, #F7B500);
-      color:#fff; padding:56px 28px;
-    }
-    .club-intel-wrap { max-width:1180px; margin:0 auto; }
-    .club-intel-lockup { display:grid; grid-template-columns:140px 1fr; gap:28px; align-items:center; }
-    .club-intel-logo { width:140px; height:140px; background:#fff; border-radius:34px; padding:18px; object-fit:contain; box-shadow:0 18px 44px rgba(0,0,0,.22); }
-    .club-intel-hero h1 { font-size:clamp(42px,7vw,88px); line-height:.92; margin:0 0 12px; letter-spacing:-.05em; }
-    .club-intel-hero p { font-size:20px; opacity:.82; margin:0; }
-    .club-intel-actions { display:flex; gap:12px; margin-top:24px; flex-wrap:wrap; }
-    .club-btn { display:inline-flex; align-items:center; justify-content:center; border-radius:999px; padding:12px 18px; background:#fff; color:#071426; text-decoration:none; font-weight:900; }
-    .club-btn.secondary { background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); color:#fff; }
-    .club-intel-main { max-width:1180px; margin:-28px auto 56px; padding:0 20px; }
-    .club-stat-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; margin-bottom:18px; }
-    .club-stat-card,.club-table-card { background:#fff; border:1px solid rgba(7,20,38,.10); border-radius:22px; padding:22px; box-shadow:0 12px 30px rgba(7,20,38,.08); }
-    .club-stat-card span { color:#5c6b7c; font-weight:800; text-transform:uppercase; font-size:12px; letter-spacing:.08em; }
-    .club-stat-card strong { display:block; font-size:34px; margin-top:8px; letter-spacing:-.04em; }
-    .club-table-card h2 { margin-top:0; font-size:34px; letter-spacing:-.04em; }
-    .club-table { width:100%; border-collapse:collapse; }
-    .club-table th,.club-table td { border-bottom:1px solid rgba(7,20,38,.10); padding:14px 10px; text-align:left; }
-    .club-table th { color:#5c6b7c; font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
-    .club-table a { color:#126dff; text-decoration:none; font-weight:900; }
-    .move.up { color:#16a34a; font-weight:900; }
-    .move.down { color:#dc2626; font-weight:900; }
-    @media (max-width:820px) {
-      .club-intel-lockup { grid-template-columns:1fr; }
-      .club-stat-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-      .club-table-card { overflow-x:auto; }
-    }
+    body{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(145deg,#071426,#123968);font-family:Inter,Arial,sans-serif;color:#fff}
+    main{width:min(520px,calc(100% - 40px));padding:34px;border:1px solid rgba(255,255,255,.16);border-radius:28px;background:rgba(255,255,255,.08);box-shadow:0 28px 80px rgba(0,0,0,.28);text-align:center}
+    img{width:118px;height:118px;padding:10px;border-radius:25px;background:#fff;object-fit:contain}
+    h1{margin:20px 0 8px;font-size:clamp(2.2rem,8vw,4rem);letter-spacing:-.055em}
+    p{color:rgba(255,255,255,.72)}
+    .actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+    a{display:inline-flex;margin-top:12px;padding:11px 16px;border-radius:999px;background:#fff;color:#071426;text-decoration:none;font-weight:900}
+    a.secondary{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);color:#fff}
   </style>
 </head>
-<body class="club-intel-page">
-  <section class="club-intel-hero">
-    <div class="club-intel-wrap club-intel-lockup">
-      <img class="club-intel-logo" src="../assets/logos/canonical/cmac.webp" alt="Cmac logo">
-      <div>
-        <h1>Cmac</h1>
-        <p>Orange County · 2 ranked teams</p>
-        <div class="club-intel-actions">
-          <a class="club-btn" href="../club.html?club=cmac">Legacy Club View</a>
-          <a class="club-btn secondary" href="https://www.cmacwaterpolo.com/page/home" target="_blank" rel="noopener">Club Website</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <main class="club-intel-main">
-    <section class="club-stat-grid">
-      <article class="club-stat-card"><span>Best Rank</span><strong>#45</strong></article>
-      <article class="club-stat-card"><span>Ranked Teams</span><strong>2</strong></article>
-      <article class="club-stat-card"><span>Average CPI</span><strong>1795.0</strong></article>
-      <article class="club-stat-card"><span>Total Movement</span><strong>-21</strong></article>
-    </section>
-    <section class="club-table-card">
-      <h2>Ranked Teams</h2>
-      <table class="club-table">
-        <thead><tr><th>Rank</th><th>Team</th><th>Group</th><th>CPI</th><th>Move</th><th>Record</th><th>Latest Event</th></tr></thead>
-        <tbody>
-        <tr>
-          <td><strong>#45</strong></td>
-          <td><a href="../team.html?team=cmac-12u-girls">CMAC</a></td>
-          <td>12U Girls</td>
-          <td>1870.0</td>
-          <td class="move down">-9</td>
-          <td>4-5</td>
-          <td>Junior Olympics</td>
-        </tr>
-
-        <tr>
-          <td><strong>#65</strong></td>
-          <td><a href="../team.html?team=cmac">CMAC</a></td>
-          <td>12U Boys</td>
-          <td>1720.0</td>
-          <td class="move down">-12</td>
-          <td>6-2</td>
-          <td>Junior Olympics</td>
-        </tr></tbody>
-      </table>
-    </section>
+<body>
+  <main>
+    <img src="../assets/logos/canonical/cmac.webp" alt="Cmac logo">
+    <h1>Cmac</h1>
+    <p>Opening the current WPI club profile.</p>
+    <div class="actions"><a href="../club.html?club=cmac">Continue to club profile →</a><a class="secondary" href="https://www.cmacwaterpolo.com/page/home" target="_blank" rel="noopener">Club Website</a></div>
   </main>
+  <script>window.location.replace("../club.html?club=cmac");</script>
   <script defer src="../js/command-palette.js?v=7.52.3"></script>
   <script defer src="../js/site-shell.js?v=7.52.3"></script>
 </body>

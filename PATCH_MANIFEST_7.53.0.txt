@@ -1,0 +1,15 @@
+WPI 7.53.0 — Adaptive Sponsor-Ready Club Profiles
+Baseline: WPI 7.52.16 / CPI-main (91).zip
+
+Primary product changes
+- Adds css/club-profile-v7-53-0.css and js/club-profile-v7-53-0.js.
+- Rebuilds club.html around adaptive competitive snapshots, teams by age group, JO results, additional tournament history, official club links, and sponsor-ready inventory.
+- Routes all 182 generated club/<slug>.html pages to the current dynamic club profile so the public product has one profile source of truth.
+- Routes command-palette club search directly to club.html?club=<slug>.
+
+Regression protection
+- Adds club profile source and render tests to release-check.
+- Preserves 724 ranking rows, 182 consolidated clubs, 177 club website links, 976 JO placements, existing logo assignments, team routes, scores, records, and tournament journeys.
+- Updates legacy compatibility tests to recognize the 7.53.0 presentation release without advancing the underlying ranking, JO, website, or identity data releases.
+
+No ranking, score, placement, club-identity, website, or logo data is changed by this patch.

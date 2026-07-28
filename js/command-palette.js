@@ -54,7 +54,7 @@
     const clubIntel = await fetchJson(makeHref("data/club-intelligence.json"));
     if (clubIntel && clubIntel.clubs) {
       Object.values(clubIntel.clubs).forEach(club => {
-        add("Club", club.displayName, `${club.rankedTeams || 0} ranked teams · best rank #${club.bestRank || "—"}`, makeHref(`club/${club.slug}.html`), [club.region, club.slug]);
+        add("Club", club.displayName, `${club.rankedTeams || 0} ranked teams · best rank #${club.bestRank || "—"}`, makeHref(`club.html?club=${encodeURIComponent(club.slug)}`), [club.region, club.slug]);
         (club.teams || []).forEach(team => {
           add("Team", team.team, `${team.group || team.ageGroup || "Team"} · #${team.rank || "—"} · ${team.cpi || "—"} CPI`, makeHref(team.page || "rankings.html"), [club.displayName, team.group, team.latestTournament, team.record]);
         });
