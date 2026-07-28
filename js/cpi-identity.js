@@ -1,4 +1,4 @@
-/* WPI canonical identity resolver — registry 7.40.0, JO logo identity patch 7.52.8 */
+/* WPI canonical identity resolver — registry 7.40.0, JO logo delivery patch 7.52.9 */
 (function(global){
   'use strict';
 
@@ -10,8 +10,38 @@
     teamUnscopedAliasIndex:{}
   };
 
+  const JO_LOGO_ONLY_CLUBS=Object.freeze({
+    'club-coronado':Object.freeze({id:'club-coronado',name:'Coronado',displayName:'Coronado Aquatics Club',logo:'assets/logos/canonical/coronado.webp',identityStatus:'logo_only'}),
+    'club-ngen':Object.freeze({id:'club-ngen',name:'NGen',displayName:'Next Generation Aquatics',logo:'assets/logos/canonical/ngen.webp',identityStatus:'logo_only'}),
+    'club-la-city-united':Object.freeze({id:'club-la-city-united',name:'LA City United',displayName:'LA City United',logo:'assets/logos/canonical/la-city-united.webp',identityStatus:'logo_only'}),
+    'club-riverside':Object.freeze({id:'club-riverside',name:'Riverside',displayName:'Riverside',logo:'assets/logos/canonical/riverside.webp',identityStatus:'logo_only'}),
+    'club-pac-orange':Object.freeze({id:'club-pac-orange',name:'PAC Orange',displayName:'PAC Orange',logo:'assets/logos/canonical/pac-orange.webp',identityStatus:'logo_only'})
+  });
+
   const JO_EXACT_CLUB_ALIASES=Object.freeze({
     'central valley united':'club-cvu',
+    'chula vista premier':'club-cv-premier',
+    'corona del mar':'club-cdm',
+    'coronado':'club-coronado',
+    'ngen':'club-ngen',
+    'n gen':'club-ngen',
+    'la city united':'club-la-city-united',
+    'san francisco warriors':'club-san-francisco',
+    'arroyo grande':'club-arroyo-grande',
+    'innes arden':'club-innis-arden',
+    'la verne legends':'club-lv-legends',
+    'loyola':'club-loyola-wpc',
+    'loyola venice':'club-loyola-wpc',
+    'midvalley':'club-mid-valley',
+    'riverside':'club-riverside',
+    'team santa monica':'club-tsm',
+    'third coast aquatics':'club-third-coast',
+    'tpc sharks':'club-sharks',
+    'yolo flamingos':'club-yolo',
+    'honolulu':'club-honolulu-water-polo',
+    'berkeley':'club-berkeley-wpc',
+    'clovis':'club-clovis',
+    'pac orange':'club-pac-orange',
     'texas thunder':'club-thunder',
     'cal republic':'club-cal-rep',
     'california republic':'club-cal-rep',
@@ -32,6 +62,29 @@
   const JO_PREFIX_CLUB_ALIASES=Object.freeze([
     [/^lamorinda brentwood(?: |$)/,'club-lamorinda-brentwood'],
     [/^vegas north irvine(?: |$)/,'club-north-irvine'],
+    [/^chula vista premier(?: |$)/,'club-cv-premier'],
+    [/^corona del mar(?: |$)/,'club-cdm'],
+    [/^coronado(?: |$)/,'club-coronado'],
+    [/^ngen(?: |$)/,'club-ngen'],
+    [/^n gen(?: |$)/,'club-ngen'],
+    [/^la city united(?: |$)/,'club-la-city-united'],
+    [/^san francisco warriors(?: |$)/,'club-san-francisco'],
+    [/^arroyo grande(?: |$)/,'club-arroyo-grande'],
+    [/^innes arden(?: |$)/,'club-innis-arden'],
+    [/^la verne legends(?: |$)/,'club-lv-legends'],
+    [/^loyola(?: venice| wpc)?(?: |$)/,'club-loyola-wpc'],
+    [/^midvalley(?: |$)/,'club-mid-valley'],
+    [/^riverside(?: |$)/,'club-riverside'],
+    [/^team santa monica(?: |$)/,'club-tsm'],
+    [/^third coast aquatics(?: |$)/,'club-third-coast'],
+    [/^tpc sharks(?: |$)/,'club-sharks'],
+    [/^viper pigeon(?: |$)/,'club-viper-pigeon'],
+    [/^yolo flamingos(?: |$)/,'club-yolo'],
+    [/^honolulu(?: |$)/,'club-honolulu-water-polo'],
+    [/^berkeley(?: |$)/,'club-berkeley-wpc'],
+    [/^clovis(?: |$)/,'club-clovis'],
+    [/^la jolla(?: united)?(?: |$)/,'club-la-jolla-united'],
+    [/^pac orange(?: |$)/,'club-pac-orange'],
     [/^central valley united(?: |$)/,'club-cvu'],
     [/^texas thunder(?: |$)/,'club-thunder'],
     [/^san jose foundation(?: |$)/,'club-sj-foundation'],
@@ -82,7 +135,8 @@
   }
 
   function clubMatch(id,matchType){
-    return id&&runtime.clubs?.[id]?{...runtime.clubs[id],matchType}:null;
+    const club=id&&(runtime.clubs?.[id]||JO_LOGO_ONLY_CLUBS[id]);
+    return club?{...club,matchType}:null;
   }
 
   function addVariant(values,value){
@@ -182,7 +236,7 @@
   }
 
   global.CPIIdentity=Object.freeze({
-    release:'7.52.8',
+    release:'7.52.9',
     schemaVersion:runtime.schemaVersion||1,
     normalize,
     resolveClub,

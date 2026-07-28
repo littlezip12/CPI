@@ -1,8 +1,7 @@
-# CPI 7.52.8
+# CPI 7.52.9
 
-JO logo identity resolution across Junior Olympics results and team journeys.
-- Uses one shared identity resolver for homepage previews, the full results browser, and selected-team journeys.
-- Resolves approved case differences, abbreviations, color suffixes, source variants, and known team-name typos.
-- Adds supplied Texas Thunder and Central Valley United artwork.
-- Preserves Lamorinda Brentwood and Topaz Tsunami as distinct identities.
-- Does not change rankings, scores, records, placements, bracket routing, or tournament source data.
+JO logo delivery wiring and cache refresh.
+- Loads the shared identity resolver before the homepage preview and full tournament-results browser.
+- Refreshes the resolver on Boys and Girls selected-team journey pages.
+- Adds verified aliases for existing club artwork, including Chula Vista Premier, Corona del Mar, Coronado, NGen, LA City United, San Francisco Warriors, Arroyo Grande, Innes Arden, LA Verne Legends, Loyola Venice, Midvalley, Riverside, Team Santa Monica, Third Coast Aquatics, TPC Sharks, Viper Pigeon variants, and Yolo Flamingos.
+- Does not change rankings, scores, records, placements, division routing, or tournament paths.

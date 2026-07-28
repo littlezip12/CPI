@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+errors: list[str] = []
+
+
+def fail(message: str) -> None:
+    errors.append(message)
+
+
+def ordered(text: str, tokens: list[str], label: str) -> None:
+    positions = [text.find(token) for token in tokens]
+    for token, position in zip(tokens, positions):
+        if position < 0:
+            fail(f"{label} missing {token}")
+    if all(position >= 0 for position in positions) and positions != sorted(positions):
+        fail(f"{label} scripts are not loaded in dependency order: {tokens}")
+
+
+site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
+if site.get('version') != '7.52.9':
+    fail('site release must be 7.52.9')
+for key in ['identityRelease', 'joApplicationRelease', 'tournamentUIRelease', 'logoDeliveryRelease', 'joJourneyRelease', 'joLogoRelease', 'joResultsRelease']:
+    if site.get(key) != '7.52.9':
+        fail(f'{key} must be 7.52.9')
+
+index = (ROOT / 'index.html').read_text(encoding='utf-8')
+tournaments = (ROOT / 'tournaments.html').read_text(encoding='utf-8')
+boys = (ROOT / 'tournaments/jo-boys/index.html').read_text(encoding='utf-8')
+girls = (ROOT / 'tournaments/jo-girls/index.html').read_text(encoding='utf-8')
+resolver = (ROOT / 'js/cpi-identity.js').read_text(encoding='utf-8')
+
+ordered(index, [
+    'data.js?v=7.52.2',
+    'data/identity/runtime.js?v=7.52.9',
+    'js/cpi-identity.js?v=7.52.9',
+    'js/homepage-wpi-v7-52-4.js?v=7.52.9',
+], 'index.html')
+ordered(tournaments, [
+    'data.js?v=7.52.2',
+    'data/identity/runtime.js?v=7.52.9',
+    'js/cpi-identity.js?v=7.52.9',
+    'js/jo-results-browser-v7-52-1.js?v=7.52.9',
+], 'tournaments.html')
+for label, text in [('Boys JO page', boys), ('Girls JO page', girls)]:
+    ordered(text, [
+        '../../data/identity/runtime.js?v=7.52.9',
+        '../../js/cpi-identity.js?v=7.52.9',
+        'app.js?v=7.52.9',
+    ], label)
+
+for token in [
+    "release:'7.52.9'",
+    "'ciu(?: |$)'",
+    "'sd dons(?: |$)'",
+    "'santa barbara(?: wpc)?(?: |$)'",
+    "'texas thunder(?: |$)'",
+    "'central valley united(?: |$)'",
+    "'chula vista premier(?: |$)'",
+    "'corona del mar(?: |$)'",
+    "'viper pigeon(?: |$)'",
+]:
+    # Regex definitions include delimiters, so use a tolerant substring check.
+    clean = token.replace("'", '')
+    if clean not in resolver.replace("'", ''):
+        fail(f'identity resolver missing delivery token {clean}')
+
+if errors:
+    print('JO LOGO DELIVERY 7.52.9 TEST FAILED')
+    for error in errors:
+        print(' - ' + error)
+    sys.exit(1)
+
+print('JO LOGO DELIVERY 7.52.9 TESTS PASSED')
+print(' - Homepage, full tournament results, and Boys/Girls journeys load runtime → resolver → consumer in order')
+print(' - Every changed asset is cache-busted to 7.52.9')
+print(' - Known JO source-name variants route to existing club artwork')

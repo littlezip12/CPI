@@ -177,8 +177,8 @@ for pair in [
 
 for rel in ["tournaments/jo-boys/index.html", "tournaments/jo-girls/index.html"]:
     text = (ROOT / rel).read_text(encoding="utf-8")
-    runtime_pos = text.find("../../data/identity/runtime.js?v=7.40.0")
-    resolver_pos = text.find("../../js/cpi-identity.js?v=7.41.0")
+    runtime_pos = text.find(f"../../data/identity/runtime.js?v={site_release.get('identityRelease', '7.40.0')}")
+    resolver_pos = text.find(f"../../js/cpi-identity.js?v={site_release.get('identityRelease', '7.41.0')}")
     app_version = site_release.get("joApplicationRelease", "7.49.1")
     app_pos = text.find(f'src="app.js?v={app_version}"')
     if min(runtime_pos, resolver_pos, app_pos) < 0:

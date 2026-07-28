@@ -13,7 +13,7 @@ vm.runInContext(fs.readFileSync(path.join(root,'js/cpi-identity.js'),'utf8'),con
 
 const resolver=context.window.CPIIdentity;
 if(!resolver)throw new Error('CPIIdentity did not initialize.');
-if(resolver.release!=='7.52.8')throw new Error(`Expected resolver 7.52.8, found ${resolver.release}.`);
+if(!['7.52.8','7.52.9'].includes(resolver.release))throw new Error(`Expected resolver 7.52.8 or later 7.52.x logo release, found ${resolver.release}.`);
 
 const cases=[
   ['Ciu Gold','club-ciu'],
@@ -37,7 +37,30 @@ const cases=[
   ['Palos Verdes Black','club-pv-wpc'],
   ['ECA','club-sd-eca'],
   ['Tualatin Hills','club-t-hills'],
-  ['Tri Valley','club-tri-valley-tritons']
+  ['Tri Valley','club-tri-valley-tritons'],
+  ['Chula Vista Premier','club-cv-premier'],
+  ['Corona Del Mar','club-cdm'],
+  ['Coronado','club-coronado'],
+  ['Ngen','club-ngen'],
+  ['LA City United','club-la-city-united'],
+  ['San Francisco Warriors','club-san-francisco'],
+  ['Arroyo Grande','club-arroyo-grande'],
+  ['Innes Arden','club-innis-arden'],
+  ['LA Verne Legends','club-lv-legends'],
+  ['Loyola Venice','club-loyola-wpc'],
+  ['Midvalley Blue','club-mid-valley'],
+  ['Riverside','club-riverside'],
+  ['Team Santa Monica','club-tsm'],
+  ['Third Coast Aquatics','club-third-coast'],
+  ['TPC Sharks','club-sharks'],
+  ['Viper Pigeon Hill Country','club-viper-pigeon'],
+  ['Viper Pigeon Htown','club-viper-pigeon'],
+  ['Yolo Flamingos','club-yolo'],
+  ['Honolulu A','club-honolulu-water-polo'],
+  ['Berkeley','club-berkeley-wpc'],
+  ['Clovis','club-clovis'],
+  ['La Jolla C','club-la-jolla-united'],
+  ['PAC Orange','club-pac-orange']
 ];
 
 for(const [source,expected] of cases){
