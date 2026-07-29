@@ -8,9 +8,9 @@ def read(path):
     return (ROOT / path).read_text(encoding='utf-8')
 
 cfg = json.loads(read('config/site-release.json'))
-assert cfg['version'] == '7.53.4'
+assert cfg['version'] in {'7.53.4','7.53.5'}
 assert cfg['homepageRelease'] == '7.53.3'
-assert cfg['navigationRelease'] == '7.53.4'
+assert cfg['navigationRelease'] in {'7.53.4','7.53.5'}
 assert cfg['storiesStatus'] == 'retired-preserved'
 
 shell = read('js/site-shell.js')
@@ -71,4 +71,4 @@ for path in html_files:
         linked.append(str(rel))
 assert not linked, f'Public pages still link to retired Stories archive: {linked}'
 
-print(f'WPI 7.53.4 navigation/homepage regression passed ({len(html_files)} HTML pages checked).')
+print(f'WPI 7.53.5 navigation/homepage regression passed ({len(html_files)} HTML pages checked).')

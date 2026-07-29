@@ -1,4 +1,4 @@
-/* WPI 7.53.4 — shared section landing experience */
+/* WPI 7.53.5 — shared section landing experience */
 :root {
   --wpi-section-navy: #071426;
   --wpi-section-blue: #126dff;
@@ -162,7 +162,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, #071426 0%, rgba(7,20,38,.38) 22%, transparent 58%), linear-gradient(0deg, rgba(7,20,38,.58), transparent 56%);
+  background: linear-gradient(90deg, rgba(7,20,38,.52) 0%, rgba(7,20,38,.18) 26%, transparent 70%), linear-gradient(0deg, rgba(7,20,38,.18), transparent 64%);
   pointer-events: none;
 }
 
@@ -175,21 +175,9 @@
 }
 
 .wpi-section-hero-media figcaption {
-  position: absolute;
-  z-index: 1;
-  left: 34px;
-  right: 34px;
-  bottom: 30px;
-  padding: 15px 17px;
-  border: 1px solid rgba(255,255,255,.18);
-  border-radius: 18px;
-  color: #fff;
-  background: rgba(7,20,38,.68);
-  backdrop-filter: blur(12px);
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.45;
+  display: none;
 }
+
 
 .wpi-section-hero--clubs .wpi-section-kicker { color: #a9f0d2; }
 .wpi-section-hero--tournaments .wpi-section-kicker { color: #ffe39a; }
@@ -228,5 +216,5 @@
   .wpi-section-hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .wpi-section-hero-media,
   .wpi-section-hero-media img { min-height: 245px; }
-  .wpi-section-hero-media figcaption { left: 20px; right: 20px; bottom: 18px; }
+  .wpi-section-hero-media figcaption { display: none; }
 }

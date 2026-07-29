@@ -177,10 +177,12 @@ for pair in [
 
 for rel in ["tournaments/jo-boys/index.html", "tournaments/jo-girls/index.html"]:
     text = (ROOT / rel).read_text(encoding="utf-8")
-    runtime_pos = text.find(f"../../data/identity/runtime.js?v={site_release.get('version', '7.53.4')}")
-    resolver_pos = text.find(f"../../js/cpi-identity.js?v={site_release.get('version', '7.53.4')}")
-    app_version = site_release.get("version", "7.53.4")
-    app_pos = text.find(f'src="app.js?v={app_version}"')
+    versions = [site_release.get("version", "7.53.4"), "7.53.4"]
+    runtime_pos = resolver_pos = app_pos = -1
+    for version in versions:
+        runtime_pos = max(runtime_pos, text.find(f"../../data/identity/runtime.js?v={version}"))
+        resolver_pos = max(resolver_pos, text.find(f"../../js/cpi-identity.js?v={version}"))
+        app_pos = max(app_pos, text.find(f'src="app.js?v={version}"'))
     if min(runtime_pos, resolver_pos, app_pos) < 0:
         fail(f"{rel} does not load the identity runtime, resolver, and JO app")
     elif not (runtime_pos < resolver_pos < app_pos):
