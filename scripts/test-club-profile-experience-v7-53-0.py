@@ -35,7 +35,7 @@ jo = load("data/tournaments/jo-results-2026.json")
 audit = load("data/release-integrity-7.52.15.json")
 website_audit = load("data/club-website-audit-7.52.16.json")
 
-if site.get("version") not in {"7.53.0", "7.53.1"}:
+if site.get("version") not in {"7.53.0", "7.53.1", "7.53.2"}:
     fail("site version must preserve the 7.53.0 club experience")
 if site.get("clubProfileRelease") != "7.53.0" or site.get("clubExperienceRelease") != "7.53.0":
     fail("club profile experience release fields must be 7.53.0")
@@ -83,26 +83,26 @@ for key, value in protected.items():
 
 club_html = (ROOT / "club.html").read_text(encoding="utf-8")
 required_html = [
-    "css/club-profile-v7-53-0.css?v=7.53.0",
-    "js/club-profile-v7-53-0.js?v=7.53.0",
+    "css/club-profile-v7-53-0.css?v=7.53.2",
+    "js/club-profile-v7-53-0.js?v=7.53.2",
     "Water Polo Index club profile with rankings, teams, tournament results",
 ]
 for token in required_html:
     if token not in club_html:
         fail(f"club.html missing {token}")
-if club_html.find("js/club-intelligence-v7-26.js?v=7.52.13") > club_html.find("js/club-profile-v7-53-0.js?v=7.53.0"):
+if club_html.find("js/club-intelligence-v7-26.js?v=7.52.13") > club_html.find("js/club-profile-v7-53-0.js?v=7.53.2"):
     fail("new club profile enhancement loads before the existing club data consumer")
 
 js = (ROOT / "js/club-profile-v7-53-0.js").read_text(encoding="utf-8")
 for token in [
     "Competitive snapshot", "Teams by age group", "Results and event history",
-    "Partner with WPI", "never influences WPI rankings", "connectedTeams",
+    "are not influenced by sponsorship", "connectedTeams",
     "renderJoTournament", "renderHistoricalTournament", "profileMetrics",
 ]:
     if token not in js:
         fail(f"club profile JS missing {token}")
 css = (ROOT / "css/club-profile-v7-53-0.css").read_text(encoding="utf-8")
-for token in [".wpi-club-hero", ".wpi-club-metrics", ".wpi-club-group-grid", ".wpi-club-partner-panel", "@media(max-width:520px)"]:
+for token in [".wpi-club-hero", ".wpi-club-metrics", ".wpi-club-group-grid", "@media(max-width:520px)"]:
     if token not in css:
         fail(f"club profile CSS missing {token}")
 
@@ -144,6 +144,6 @@ if errors:
     sys.exit(1)
 
 print("CLUB PROFILE EXPERIENCE 7.53.0 TESTS PASSED")
-print(" - Adaptive rankings, team, tournament, website, and sponsor-ready modules are wired")
+print(" - Adaptive rankings, team, tournament, website, and independence modules are wired")
 print(" - All 182 generated club routes converge on the current dynamic profile")
 print(" - 724 rankings, 182 clubs, 177 club links, and 976 JO placements remain protected")

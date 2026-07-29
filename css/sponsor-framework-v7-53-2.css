@@ -1,0 +1,128 @@
+/* WPI 7.53.2 — sponsor inventory renders only when an active campaign is assigned. */
+.wpi-sponsor {
+  --wpi-sponsor-ink: #071426;
+  --wpi-sponsor-muted: #667085;
+  --wpi-sponsor-line: rgba(7, 20, 38, .12);
+  display: grid;
+  gap: .55rem;
+  width: min(calc(100% - 32px), 1440px);
+  margin: 18px auto;
+  padding: 18px 20px;
+  border: 1px solid var(--wpi-sponsor-line);
+  border-radius: 20px;
+  background: linear-gradient(145deg, #fff, #f7fafc);
+  box-shadow: 0 12px 32px rgba(7, 20, 38, .06);
+  color: var(--wpi-sponsor-ink);
+}
+
+.wpi-sponsor__label {
+  color: #8a5a00;
+  font-size: .66rem;
+  font-weight: 950;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.wpi-sponsor__content {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.wpi-sponsor__logo {
+  display: grid;
+  place-items: center;
+  width: 88px;
+  height: 56px;
+  padding: 7px;
+  border: 1px solid var(--wpi-sponsor-line);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.wpi-sponsor__logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.wpi-sponsor__copy strong {
+  display: block;
+  color: var(--wpi-sponsor-ink);
+  font-size: 1rem;
+}
+
+.wpi-sponsor__copy p {
+  max-width: 760px;
+  margin: 3px 0 0;
+  color: var(--wpi-sponsor-muted);
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
+.wpi-sponsor__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--wpi-sponsor-ink);
+  color: #fff;
+  font-size: .76rem;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.wpi-sponsor__action:hover { transform: translateY(-1px); }
+
+.wpi-sponsor__disclosure {
+  margin: 0;
+  color: var(--wpi-sponsor-muted);
+  font-size: .66rem;
+  line-height: 1.35;
+}
+
+.wpi-sponsor--presenting {
+  padding: 16px 20px;
+  border-color: rgba(9, 46, 97, .18);
+  background: linear-gradient(135deg, rgba(9, 46, 97, .055), #fff 56%);
+}
+
+.wpi-sponsor--regional {
+  border-color: rgba(180, 116, 0, .2);
+  background: linear-gradient(135deg, rgba(246, 183, 0, .09), #fff 58%);
+}
+
+.club-intel-shell > .wpi-sponsor,
+.rankings-shell > .wpi-sponsor,
+.team-profile-shell > .wpi-sponsor,
+.wpi-club-profile-v7530 > .wpi-sponsor,
+.cpi-tournaments-main > .wpi-sponsor {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .wpi-sponsor {
+    width: min(calc(100% - 20px), 1440px);
+    padding: 16px;
+    border-radius: 17px;
+  }
+
+  .wpi-sponsor__content {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .wpi-sponsor__action {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .wpi-sponsor__logo {
+    width: 72px;
+    height: 52px;
+  }
+}

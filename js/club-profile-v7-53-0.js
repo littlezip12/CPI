@@ -273,12 +273,6 @@
     </section>`;
   }
 
-  function renderSponsorModule(club) {
-    return `<section id="club-partners" class="wpi-club-partner-panel">
-      <div><span>WPI partner opportunity</span><h2>Support youth water polo in ${escapeHtml(club.region || "this region")}</h2><p>Club-profile and regional sponsorship placements are available. Sponsorship is clearly labeled and never influences WPI rankings, results or editorial decisions.</p></div>
-      <a href="subscribe.html">Partner with WPI →</a>
-    </section>`;
-  }
 
   const requestedSlug = normalizeSlug(params.get("club"));
   const club = requestedSlug ? clubs.find((item) => normalizeSlug(item.slug) === requestedSlug) : null;
@@ -315,7 +309,7 @@
       <aside class="wpi-club-snapshot"><header><span>Competitive snapshot</span><strong>${metrics.mode === "ranked" ? "Current rankings" : metrics.mode === "tournament" ? "Tournament performance" : "Connected results"}</strong></header><div class="wpi-club-metrics">${renderSnapshot(metrics)}</div>${bestSignal(ranked, joClub, history)}</aside>
     </section>
 
-    <nav class="wpi-club-nav" aria-label="Club profile sections"><a href="#club-overview">Overview</a><a href="#club-teams">Teams</a><a href="#club-tournaments">Tournaments</a><a href="#club-partners">Partners</a></nav>
+    <nav class="wpi-club-nav" aria-label="Club profile sections"><a href="#club-overview">Overview</a><a href="#club-teams">Teams</a><a href="#club-tournaments">Tournaments</a></nav>
 
     ${renderProgramOverview(club, metrics)}
 
@@ -328,7 +322,5 @@
       <div class="wpi-club-section-heading"><div><span>Tournament intelligence</span><h2>Results and event history</h2></div><p>Verified records connected to this club.</p></div>
       <div class="wpi-club-tournament-stack">${renderJoTournament(joClub)}${renderHistoricalTournament(history) || (!joClub ? `<div class="wpi-club-empty"><strong>No connected tournament history yet</strong><p>Results will appear as WPI adds and verifies events.</p></div>` : "")}</div>
     </section>
-
-    ${renderSponsorModule(club)}
   `;
 })();

@@ -1,0 +1,67 @@
+WPI 7.53.2 — Centralized Sponsor Framework
+
+Root-level patch for WPI 7.53.1.
+
+Release behavior:
+- 10 reusable placements across club, team, rankings, tournament, and regional surfaces.
+- One centralized registry and generated browser runtime.
+- Zero active campaigns in this release; empty inventory renders no card and consumes no page space.
+- Sponsor links are labeled, use sponsored link semantics, and add UTM attribution only.
+- No cookies, local storage, personal identifiers, browser-side click collection, or third-party tracking code.
+- The always-visible placeholder sponsor solicitation is removed from club profiles.
+- 724 rankings, 182 clubs, 177 club links, verified logos, and 976 JO placements are preserved.
+
+Root-level patch files:
+12u-boys.html
+12u-girls.html
+14u-boys.html
+14u-girls.html
+16u-boys.html
+16u-girls.html
+18u-boys.html
+18u-girls.html
+INSTALL_7.53.2.md
+VERSION.md
+assets/sponsors/README.md
+club.html
+clubs.html
+config/site-release.json
+css/club-profile-v7-53-0.css
+css/sponsor-framework-v7-53-2.css
+data/sponsors/index.json
+data/sponsors/runtime.js
+docs/SPONSOR_FRAMEWORK.md
+js/club-profile-v7-53-0.js
+js/sponsor-framework-v7-53-2.js
+quicksilver-cup-2026.html
+rankings.html
+release-check
+scripts/build-sponsor-runtime-v7-53-2.py
+scripts/test-boys-post-jo-rankings-v7-52-0.py
+scripts/test-club-family-cleanup-v7-52-12.py
+scripts/test-club-locations-v7-52-5.py
+scripts/test-club-logos-v7-52-6.py
+scripts/test-club-profile-experience-v7-53-0.py
+scripts/test-club-profile-render-v7-53-0.js
+scripts/test-club-websites-v7-52-14.py
+scripts/test-club-websites-v7-52-16.py
+scripts/test-girls-post-jo-rankings-v7-52-2.py
+scripts/test-jo-logo-delivery-v7-52-9.py
+scripts/test-jo-profile-bridge-v7-52-11.py
+scripts/test-jo-results-browser-v7-52-1.py
+scripts/test-jo-results-links-v7-52-7.py
+scripts/test-kern-skip-separation-v7-52-13.py
+scripts/test-release-integrity-v7-52-15.py
+scripts/test-sponsor-framework-v7-53-2.js
+scripts/test-sponsor-framework-v7-53-2.py
+scripts/test-team-profile-experience-v7-53-1.py
+scripts/test-wpi-homepage-v7-52-4.py
+scripts/test-wpi-universal-shell-v7-52-3.py
+team.html
+tournaments.html
+tournaments/boys-superfinals/index.html
+tournaments/girls-club-championships/index.html
+tournaments/jo-boys/index.html
+tournaments/jo-girls/index.html
+tournaments/quicksilver-cup/index.html
+PATCH_MANIFEST_7.53.2.txt

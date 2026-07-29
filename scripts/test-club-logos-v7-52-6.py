@@ -21,7 +21,7 @@ public=load('clubs.json')
 rankings=load('rankings.json')
 registry=load('data/logo-registry.json').get('logos',{})
 
-if site.get('version') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1'}: fail('site release must preserve the club logo expansion')
+if site.get('version') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2'}: fail('site release must preserve the club logo expansion')
 if site.get('clubLogoCompletionRelease') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}: fail('clubLogoCompletionRelease must preserve the verified logo expansion')
 if site.get('logoLibraryRelease') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}: fail('logoLibraryRelease must preserve the verified logo expansion')
 if site.get('rankingDataRelease')!='7.52.13': fail('rankingDataRelease must be 7.52.13')

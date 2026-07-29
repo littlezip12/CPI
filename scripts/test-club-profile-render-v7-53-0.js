@@ -36,17 +36,18 @@ function render(slug) {
 }
 
 const kern = render('kern-premier');
-for (const token of ['Kern Premier', 'Competitive snapshot', '4 ranked teams', '5 JO teams', '#36', 'Teams by age group', '2026 Junior Olympics', 'Partner with WPI']) {
+for (const token of ['Kern Premier', 'Competitive snapshot', '4 ranked teams', '5 JO teams', '#36', 'Teams by age group', '2026 Junior Olympics']) {
   requireCondition(kern.includes(token), `Kern Premier render missing ${token}`);
 }
 for (const group of ['12U Boys', '14U Boys', '16U Boys', '18U Boys', '18U Girls']) {
   requireCondition(kern.includes(group), `Kern Premier render missing ${group}`);
 }
 requireCondition(kern.includes('Visit club website'), 'Kern Premier website action missing');
+requireCondition(!kern.includes('WPI partner opportunity'), 'Legacy sponsor solicitation still renders');
 requireCondition(!kern.includes('No ranked team yet'), 'Kern Premier incorrectly renders as unranked');
 
 const mission = render('mission');
-for (const token of ['Mission WPC', '8 ranked teams', '#1 Mission A', 'Additional tournament history', 'Recent connected results', 'never influences WPI rankings']) {
+for (const token of ['Mission WPC', '8 ranked teams', '#1 Mission A', 'Additional tournament history', 'Recent connected results', 'are not influenced by sponsorship']) {
   requireCondition(mission.includes(token), `Mission render missing ${token}`);
 }
 

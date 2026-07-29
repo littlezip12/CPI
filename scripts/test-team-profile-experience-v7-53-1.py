@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 def fail(msg): errors.append(msg)
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version')!='7.53.1': fail('site version must be 7.53.1')
+if site.get('version') not in {'7.53.1','7.53.2'}: fail('site version must preserve the 7.53.1 team experience')
 if site.get('teamProfileRelease')!='7.53.1' or site.get('teamExperienceRelease')!='7.53.1': fail('team release fields must be 7.53.1')
 if site.get('rankingDataRelease')!='7.52.13': fail('ranking data release changed')
 if site.get('clubProfileRelease')!='7.53.0': fail('club profile release changed')
