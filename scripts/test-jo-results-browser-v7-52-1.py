@@ -31,11 +31,11 @@ html = (ROOT / "tournaments.html").read_text(encoding="utf-8")
 js = (ROOT / "js/jo-results-browser-v7-52-1.js").read_text(encoding="utf-8")
 css_path = ROOT / "css/jo-results-browser-v7-52-1.css"
 
-if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1"}:
+if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1", "7.54.2", "7.54.3"}:
     fail("site release must preserve JO results browser compatibility")
 if site.get("joResultsRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15"}:
     fail("joResultsRelease must preserve the data browser or the linked-journey UI release")
-if site.get("tournamentUIRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.54.0", "7.54.1"}:
+if site.get("tournamentUIRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.54.0", "7.54.1", "7.54.2", "7.54.3"}:
     fail("tournamentUIRelease must preserve the results browser or the linked-journey UI release")
 if results.get("release") != "7.52.1":
     fail("results data release must be 7.52.1")

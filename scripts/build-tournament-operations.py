@@ -105,7 +105,10 @@ def main() -> int:
 
     for event in registry.get("events", []):
         event_id = event.get("id")
-        if event_id in live_ids or event.get("syncEnabled"):
+        explicit_mode = event.get("operationsMode")
+        if explicit_mode == "historical_review":
+            mode = "historical_registered"
+        elif event_id in live_ids or event.get("syncEnabled"):
             mode = "live"
         elif event_id in archive_ids or event.get("archiveSyncEnabled"):
             mode = "archive"

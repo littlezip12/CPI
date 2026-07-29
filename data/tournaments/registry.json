@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.1",
+  "release": "7.54.3",
   "season": "2026",
   "generatedDate": "2026-07-28",
   "description": "Universal tournament source registry with live JO operations, controlled archives, and the reusable WPI tournament platform. Quiksilver Cup is the first migrated event; ranking publication remains manual.",
@@ -954,13 +954,15 @@
           "sourceUrl": "https://docs.google.com/spreadsheets/d/1ok3A1J89hZqvufIFlzCkmmq5d46Yd5pog36JsDta_cI/edit?gid=0#gid=0"
         }
       ],
-      "operationsMode": "historical_registered",
+      "operationsMode": "historical_review",
       "rankingEvidenceEnabled": false,
       "archiveSyncEnabled": true,
-      "eventStatus": "complete",
-      "archivePolicy": "bank_and_review",
+      "eventStatus": "data_review",
+      "archivePolicy": "banked_quarantined",
       "platformEnabled": false,
-      "platformRelease": null
+      "platformRelease": null,
+      "publicDataStatus": "partial_unverified_placements",
+      "publicViewerEnabled": false
     }
   ],
   "counts": {

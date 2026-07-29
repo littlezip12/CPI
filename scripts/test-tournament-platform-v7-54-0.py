@@ -14,10 +14,12 @@ rankings=load('rankings.json')
 clubs=load('clubs.json')
 jo=load('data/tournaments/jo-results-2026.json')
 
-for key in ['tournamentPlatformRelease','tournamentRegistryRelease','tournamentSchemaRelease','quiksilverPlatformRelease']:
-    if site.get(key)!='7.54.0': errors.append(f'{key} must be 7.54.0')
-if site.get('version')!='7.54.0': errors.append('site version must be 7.54.0')
-if registry.get('release')!='7.54.0' or len(registry.get('events',[]))!=5: errors.append('platform registry must contain five registered events at 7.54.0')
+if site.get('tournamentSchemaRelease')!='7.54.0': errors.append('tournamentSchemaRelease must preserve 7.54.0')
+if site.get('quiksilverPlatformRelease') not in {'7.54.0','7.54.1','7.54.2','7.54.3'}: errors.append('quiksilverPlatformRelease must preserve the Quiksilver migration')
+if site.get('tournamentPlatformRelease') not in {'7.54.0','7.54.1','7.54.2','7.54.3'}: errors.append('tournamentPlatformRelease must preserve the shared platform')
+if site.get('tournamentRegistryRelease') not in {'7.54.0','7.54.1','7.54.2','7.54.3'}: errors.append('tournamentRegistryRelease must preserve the shared registry')
+if site.get('version') not in {'7.54.0','7.54.1','7.54.2','7.54.3'}: errors.append('site version must preserve the platform foundation')
+if registry.get('release') not in {'7.54.0','7.54.1','7.54.2','7.54.3'} or len(registry.get('events',[]))!=5: errors.append('platform registry must contain five registered events')
 event=next((e for e in registry.get('events',[]) if e.get('id')=='2026-quiksilver-cup'),None)
 if not event or event.get('migrationStatus')!='platform_live': errors.append('Quiksilver Cup must be the first platform-live event')
 if event and event.get('publicPath')!='tournament.html?event=2026-quiksilver-cup': errors.append('Quiksilver platform public path is incorrect')
@@ -50,14 +52,14 @@ for rel in [
     if not (ROOT/rel).exists() or (ROOT/rel).stat().st_size==0: errors.append(f'missing platform asset: {rel}')
 
 page=(ROOT/'tournament.html').read_text(encoding='utf-8')
-for token in ['id="tpAge"','id="tpGender"','id="tpDivision"','id="tpTeam"','id="tpDate"','id="tpVenue"','id="tpStatus"','id="tpSearch"','id="tpJourney"','tournament-platform-v7-54-0.js?v=7.54.0']:
+for token in ['id="tpAge"','id="tpGender"','id="tpDivision"','id="tpTeam"','id="tpDate"','id="tpVenue"','id="tpStatus"','id="tpSearch"','id="tpJourney"','tournament-platform-v7-54-0.js?v=7.54.1']:
     if token not in page: errors.append(f'tournament.html missing {token}')
 redirect=(ROOT/'tournaments/quicksilver-cup/index.html').read_text(encoding='utf-8')
 if '../../tournament.html?event=2026-quiksilver-cup' not in redirect: errors.append('legacy Quiksilver URL does not converge on the platform')
 hub=(ROOT/'tournaments.html').read_text(encoding='utf-8')
 if 'tournament.html?event=2026-quiksilver-cup' not in hub or 'Unified viewer' not in hub: errors.append('tournament hub does not promote the migrated platform event')
 source_event=next((e for e in source_registry.get('events',[]) if e.get('id')=='2026-quiksilver-cup'),{})
-if source_event.get('platformEnabled') is not True or source_event.get('platformRelease')!='7.54.0': errors.append('source registry does not register Quiksilver platform migration')
+if source_event.get('platformEnabled') is not True or source_event.get('platformRelease') not in {'7.54.0','7.54.1','7.54.2','7.54.3'}: errors.append('source registry does not register Quiksilver platform migration')
 
 if len(rankings)!=724: errors.append(f'expected 724 rankings, found {len(rankings)}')
 if len(clubs)!=182: errors.append(f'expected 182 clubs, found {len(clubs)}')

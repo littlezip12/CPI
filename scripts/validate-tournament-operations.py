@@ -35,7 +35,7 @@ manifest = load("data/tournaments/normalized/manifest.json")
 
 if ops.get("schemaVersion") != 1 or ops.get("release") != EXPECTED_RELEASE:
     fail("Tournament operations output must use schemaVersion 1 and release 7.48.0")
-if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1"}:
+if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1", "7.54.2", "7.54.3"}:
     fail("Tournament operations configuration release mismatch")
 
 registry_keys = {(event.get("id"), division.get("id")) for event in registry.get("events", []) for division in event.get("divisions", [])}
@@ -51,10 +51,12 @@ archive = [row for row in rows if row.get("monitoringMode") == "archive"]
 historical = [row for row in rows if row.get("monitoringMode") == "historical_registered"]
 if len(live) != 23:
     fail(f"Expected both JO weekends to provide 23 live divisions, found {len(live)}")
-if len(archive) != 25:
-    fail(f"Expected 25 completed-event archive divisions, found {len(archive)}")
-if historical:
-    fail(f"All currently registered historical divisions should be in controlled archive mode, found {len(historical)} legacy registrations")
+if len(archive) != 20:
+    fail(f"Expected 20 completed-event archive divisions, found {len(archive)}")
+if len(historical) != 5:
+    fail(f"Expected 5 Girls Club divisions in controlled data review, found {len(historical)}")
+if any(row.get("eventId") != "2026-girls-us-club-championships" for row in historical):
+    fail("Only Girls US Club Championships may remain in historical data review")
 if any(row.get("operationalStatus") not in {"ready", "attention"} for row in live):
     fail("Live JO divisions may be ready or attention, but blocking states fail validation")
 if any(row.get("operationalStatus") not in {"archive_pending", "archived", "archive_attention"} for row in archive):
@@ -68,8 +70,8 @@ if any(row.get("schedule", {}).get("games") != row.get("schedule", {}).get("sche
 manifest_live_games = sum(item.get("counts", {}).get("games", 0) for item in manifest.get("datasets", []) if item.get("eventId") in set(config.get("liveEventIds", [])))
 if sum(row.get("schedule", {}).get("games", 0) for row in live) != manifest_live_games:
     fail("Operations live game count must match live-event normalized datasets")
-if ops.get("counts", {}).get("archiveDivisions") != 25:
-    fail("Operations output must expose all 25 archive divisions")
+if ops.get("counts", {}).get("archiveDivisions") != 20:
+    fail("Operations output must expose all 20 verified archive divisions")
 if alerts.get("counts", {}).get("total") != len(ops.get("alerts", [])):
     fail("Operations alert files do not reconcile")
 if ops.get("counts", {}).get("blocking") != 0:
@@ -155,6 +157,6 @@ if errors:
 print("TOURNAMENT OPERATIONS VALIDATION PASSED")
 print(" - 5 registered tournaments and 48 divisions share one operations framework")
 print(f" - Both JO weekends provide 23 live-monitored divisions: {ops.get('counts', {}).get('ready', 0)} ready and {ops.get('counts', {}).get('attention', 0)} attention")
-print(" - 25 completed-event divisions remain isolated in controlled archive mode")
+print(" - 20 completed-event divisions remain isolated in controlled archive mode; 5 Girls Club divisions remain in data review")
 print(" - Source, score-state, public-page, fallback, and ranking-publication safeguards are enforced")
 print(" - Poolside JavaScript budgets and mobile application mounts pass")

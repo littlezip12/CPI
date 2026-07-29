@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "release": "7.54.2",
+  "eventId": "2026-girls-us-club-championships",
+  "eventName": "2026 Girls US Club Championships",
+  "status": "quarantined_for_cleanup",
+  "publicState": "data_review",
+  "reason": "Current bank contains partial results and bracket-routing labels embedded in team cells. Publishing it as a complete searchable event would misidentify teams and imply placements that have not been verified.",
+  "counts": {
+    "registeredDivisions": 5,
+    "bankedFinalGames": 46,
+    "rawTeamLabels": 46,
+    "routingLabelsDetected": 14,
+    "verifiedPlacements": 0
+  },
+  "routingLabelExamples": [
+    "LOSE #1 - SD SHORES GOLD",
+    "LOSE #2 - MID VALLEY",
+    "LOSE #3 - TRILOGY",
+    "LOSE #4 - FOOTHILL",
+    "LOSE #5 - DIABLO B",
+    "LOSE #6 - COMMERCE",
+    "WIN #1-680",
+    "WIN #2 - CIU",
+    "WIN #3 - PATRIOT",
+    "WIN #4 - MERIDIAN",
+    "WIN #5 - SD SHORES BLACK",
+    "WIN #6 - SBWPC B"
+  ],
+  "cleanedTeamExamples": [
+    "680",
+    "CIU",
+    "E #1 - SD SHORES GOLD",
+    "E #2 - MID VALLEY",
+    "E #3 - TRILOGY",
+    "E #4 - FOOTHILL",
+    "E #5 - DIABLO B",
+    "E #6 - COMMERCE",
+    "GREENICH",
+    "MERIDIAN",
+    "MISSION",
+    "PATRIOT"
+  ],
+  "divisionSources": [
+    {
+      "id": "10u-coed",
+      "label": "10U Coed",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1TInyhZ3SQQ1bzSx5pxTzgzuTTtfrGrCjehzBJfmESXY/edit?gid=0#gid=0"
+    },
+    {
+      "id": "12u-girls",
+      "label": "12U Girls",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/179y3JxNFgyWh3g66g2n1kyM6g-fIAO-WpMWuVIhVHgY/edit?gid=0#gid=0"
+    },
+    {
+      "id": "14u-girls",
+      "label": "14U Girls",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1G8qhNPbWSreO5MB4_DuX5J878rR_NYnpOfL6BYjGqpQ/edit?gid=0#gid=0"
+    },
+    {
+      "id": "16u-girls",
+      "label": "16U Girls",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1VDtD_ofCmPwJenYQGDIHMXkfdO55EU7kcj8XsImh1XY/edit?gid=0#gid=0"
+    },
+    {
+      "id": "18u-girls",
+      "label": "18U Girls",
+      "sourceUrl": "https://docs.google.com/spreadsheets/d/1ok3A1J89hZqvufIFlzCkmmq5d46Yd5pog36JsDta_cI/edit?gid=0#gid=0"
+    }
+  ],
+  "publicationRules": [
+    "Do not display bracket-routing labels as team names.",
+    "Do not label partial coverage as complete results.",
+    "Do not publish a placements view until placements are verified.",
+    "Do not include the event in ranking evidence until a manual review is complete."
+  ]
+}

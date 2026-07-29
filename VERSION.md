@@ -1,9 +1,8 @@
-# WPI 7.54.1
+# WPI 7.54.3
 
-Boys Futures Super Finals platform migration.
+Tournament archive preservation hotfix.
 
-- Migrates the completed 2026 Boys Futures Super Finals into the reusable tournament platform.
-- Publishes 13 divisions, 709 verified finals, 276 clean team journeys, 238 placements, 27 venues, and three tournament dates.
-- Merges bracket-routing labels such as winner/loser and pool-slot references into the underlying teams so records and journeys are not duplicated.
-- Preserves Quiksilver Cup on the shared platform and keeps the proven Junior Olympics viewers unchanged.
-- Preserves 724 rankings, 182 clubs, 177 club website links, 976 JO placements, identity mappings, logos, team profiles, and sponsor data.
+- Keeps Girls US Club Championships withheld from the public reusable tournament viewer.
+- Restores the event to the banked historical archive so the three completed events and 25 archive divisions remain available to team and club history.
+- Preserves the accuracy hold: no unverified placements, routing labels, or partial viewer data are published as complete results.
+- Rankings, ratings, club identities, logos, websites, JO data, and sponsor data remain unchanged.
