@@ -1,11 +1,10 @@
-# WPI 7.53.2
+# WPI 7.53.3
 
-Centralized sponsor framework.
+Navigation and homepage clarity.
 
-- Adds 10 reusable sponsor placements across club profiles, team profiles, rankings, tournament pages, and the regional club directory.
-- Uses one centralized campaign file with optional logos, websites, messages, calls to action, campaign dates, priority, and page/context targeting.
-- Renders no sponsor card and consumes no page space when a placement has no active approved campaign.
-- Labels every active placement and preserves WPI editorial independence: sponsorship never influences rankings, results, placements, or editorial decisions.
-- Adds outbound UTM attribution without cookies, local storage, personal identifiers, browser-side click collection, or third-party tracking code.
-- Removes the always-visible placeholder sponsor solicitation from club profiles.
-- Preserves all 724 rankings, 182 consolidated clubs, 177 club website links, verified logos, 976 JO placements, team histories, and tournament data.
+- Retires Stories from public navigation while preserving the underlying archive and redirecting the former landing page to the current WPI product pathways.
+- Rewrites the homepage hero to explain WPI immediately and foreground rankings, team search, clubs, and tournament results.
+- Adds a first-class Teams navigation state and makes the universal search shortcut open the homepage team-and-club finder.
+- Replaces the story-driven homepage update module with a stable connected-platform guide.
+- Uses the same centralized navigation list across desktop and mobile layouts, with cache-busted shell assets on every HTML page.
+- Preserves all rankings, club identities, websites, logos, JO placements, sponsor framework data, and unified tournament histories.

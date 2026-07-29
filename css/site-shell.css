@@ -1,4 +1,4 @@
-/* WPI universal site shell — CPI release 7.52.3 */
+/* WPI universal site shell — release 7.53.3 */
 :root {
   --cpi-shell-navy: #071426;
   --cpi-shell-blue: #126dff;
@@ -113,6 +113,10 @@ body.cpi-shell-enabled {
   min-width: 138px;
   font-weight: 850;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .cpi-shell-search::before { content: "🔍 "; }
 

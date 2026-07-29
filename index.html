@@ -3,39 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Water Polo Index provides youth water polo rankings, tournament results, team profiles, and club intelligence.">
+  <meta name="description" content="Search youth water polo rankings, team profiles, club information, and completed tournament results in one connected platform.">
   <title>Water Polo Index | Rankings, Results & Club Intelligence</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.30.2">
   <link rel="stylesheet" href="css/command-palette.css?v=7.52.3">
-  <link rel="stylesheet" href="css/site-shell.css?v=7.52.3">
-  <link rel="stylesheet" href="css/homepage-wpi-v7-52-4.css?v=7.52.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.53.3">
+  <link rel="stylesheet" href="css/homepage-wpi-v7-52-4.css?v=7.53.3">
 </head>
 <body class="wpi-home">
   <main class="wpi-home-main">
     <section class="wpi-hero" aria-labelledby="wpiHeroTitle">
       <div class="wpi-hero-copy">
         <p class="wpi-kicker">Water Polo Index</p>
-        <h1 id="wpiHeroTitle">Youth water polo <span>rankings</span>, results, and <em>club intelligence.</em></h1>
-        <p class="wpi-hero-summary">Explore post-Junior Olympics rankings, completed tournament results, team profiles, and the growing club landscape across the country.</p>
-        <div class="wpi-hero-actions">
-          <a class="wpi-button primary" href="rankings.html">View rankings</a>
-          <a class="wpi-button secondary" href="tournaments.html#jo-results">Search tournament results</a>
-        </div>
+        <h1 id="wpiHeroTitle">One place to find the <span>teams</span>, results, and <em>clubs shaping youth water polo.</em></h1>
+        <p class="wpi-hero-summary">Search post-Junior Olympics rankings for boys and girls, open connected team and club profiles, and trace completed tournament results back to the programs that earned them.</p>
+        <nav class="wpi-hero-actions" aria-label="Start exploring Water Polo Index">
+          <a class="wpi-button primary" href="rankings.html"><strong>Rankings</strong><span>Eight age and gender groups</span></a>
+          <a class="wpi-button secondary" href="#find-a-team" data-home-action="team-search"><strong>Find a team</strong><span>Search connected profiles</span></a>
+          <a class="wpi-button secondary" href="clubs.html"><strong>Clubs</strong><span>Programs, teams, and websites</span></a>
+          <a class="wpi-button secondary" href="tournaments.html"><strong>Tournaments</strong><span>Results, schedules, and journeys</span></a>
+        </nav>
       </div>
       <figure class="wpi-hero-visual">
         <img src="assets/photos/editorial/polo-attacker-poolwide.jpg" alt="Youth water polo player preparing to pass the ball" loading="eager">
-        <figcaption>Rankings and results connected to the teams that earned them.</figcaption>
+        <figcaption>Every ranking and result connects back to a team and club profile.</figcaption>
       </figure>
-      <form class="wpi-search" id="wpiHomeSearch" role="search" autocomplete="off">
-        <label class="sr-only" for="wpiSearchInput">Search teams or clubs</label>
+      <span class="wpi-search-anchor" id="find-a-team" aria-hidden="true"></span>
+      <form class="wpi-search" id="wpiHomeSearch" data-search-form="wpi" role="search" autocomplete="off">
+        <label class="sr-only" for="wpiSearchInput">Search Water Polo Index teams or clubs</label>
         <span class="wpi-search-icon" aria-hidden="true">⌕</span>
         <input id="wpiSearchInput" type="search" placeholder="Search for a team or club…" spellcheck="false">
         <label class="sr-only" for="wpiSearchType">Search type</label>
         <select id="wpiSearchType">
-          <option value="all">All</option>
+          <option value="all">Teams &amp; clubs</option>
           <option value="teams">Teams</option>
           <option value="clubs">Clubs</option>
         </select>
@@ -116,9 +119,9 @@
           <a href="methodology.html"><span>03</span><strong>Manual identity review</strong><p>Club aliases and A/B/C/D team depth are reviewed before changes are published.</p></a>
         </div>
       </article>
-      <article class="wpi-updates-card">
-        <div class="wpi-section-heading compact-heading"><div><p class="wpi-kicker">Product and data</p><h2>Latest updates</h2></div><a class="wpi-text-link" href="stories.html">All updates →</a></div>
-        <div class="wpi-update-list" id="wpiUpdateList"></div>
+      <article class="wpi-updates-card" id="explore-wpi">
+        <div class="wpi-section-heading compact-heading"><div><p class="wpi-kicker">Connected platform</p><h2>Choose where to start</h2></div></div>
+        <div class="wpi-update-list" id="wpiExploreList"></div>
       </article>
     </section>
   </main>
@@ -126,8 +129,8 @@
   <script src="data.js?v=7.52.16"></script>
   <script src="data/identity/runtime.js?v=7.52.13"></script>
   <script src="js/cpi-identity.js?v=7.52.13"></script>
-  <script src="js/homepage-wpi-v7-52-4.js?v=7.52.9"></script>
+  <script src="js/homepage-wpi-v7-52-4.js?v=7.53.3"></script>
   <script defer src="js/command-palette.js?v=7.52.3"></script>
-  <script defer src="js/site-shell.js?v=7.52.3"></script>
+  <script defer src="js/site-shell.js?v=7.53.3"></script>
 </body>
 </html>

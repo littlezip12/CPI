@@ -3,7 +3,6 @@
 
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
-  const stories = Array.isArray(window.CPI_STORIES) ? window.CPI_STORIES : [];
   const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.52.4";
   const ages = ["12U", "14U", "16U", "18U"];
   let joPayload = null;
@@ -228,16 +227,35 @@
     target.innerHTML = chosen.map(({ club, metric }) => `<a class="wpi-club-card" href="${escapeHtml(clubLink(club))}"><img src="${escapeHtml(logo(club))}" alt="${escapeHtml(club.displayName || club.club)} logo" onerror="this.onerror=null;this.src='${fallbackLogo}'"><strong>${escapeHtml(club.displayName || club.club)}</strong><span>${escapeHtml(club.region)} · ${metric.teams} ranked team${metric.teams === 1 ? "" : "s"}</span><em>View club profile →</em></a>`).join("");
   }
 
-  function renderUpdates() {
-    const target = $("#wpiUpdateList");
+  function renderExploreGuide() {
+    const target = $("#wpiExploreList");
     if (!target) return;
-    const defaults = [
-      { label: "Rankings", title: "Girls post-JO rankings published", summary: "324 all-girls JO entrants are live.", url: "rankings.html?group=12u-girls" },
-      { label: "Rankings", title: "Boys post-JO rankings published", summary: "Four top-100 ranking groups are live.", url: "rankings.html?group=12u-boys" },
-      { label: "Results", title: "Junior Olympics results browser", summary: "976 final placements are searchable.", url: "tournaments.html#jo-results" }
+    const items = [
+      { title: "Find a team profile", summary: "Search ranked teams and open their connected club and tournament history.", url: "#find-a-team", action: "team-search" },
+      { title: "Browse club intelligence", summary: "Review teams, rankings, tournament finishes, locations, and club websites.", url: "clubs.html" },
+      { title: "Search tournament results", summary: "Open completed events, placements, schedules, and team journeys.", url: "tournaments.html" },
+      { title: "Understand the rankings", summary: "Review the evidence model, identity rules, and ranking methodology.", url: "methodology.html" }
     ];
-    const items = (stories.length ? stories : defaults).slice(0, 3);
-    target.innerHTML = items.map((item) => `<a class="wpi-update-item" href="${escapeHtml(item.url || "stories.html")}"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.label || item.summary || "WPI update")}</span><em>→</em></a>`).join("");
+    target.innerHTML = items.map((item) => `<a class="wpi-update-item" href="${escapeHtml(item.url)}"${item.action ? ` data-home-action="${item.action}"` : ""}><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.summary)}</span><em>→</em></a>`).join("");
+  }
+
+  function focusTeamSearch(event) {
+    if (event) event.preventDefault();
+    const form = $("#wpiHomeSearch");
+    const input = $("#wpiSearchInput");
+    const type = $("#wpiSearchType");
+    if (!form || !input) return;
+    if (type) type.value = "teams";
+    form.scrollIntoView({ behavior: "smooth", block: "center" });
+    window.setTimeout(() => input.focus(), 320);
+  }
+
+  function bindHomepagePathways() {
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest('[data-home-action="team-search"]');
+      if (link) focusTeamSearch(event);
+    });
+    if (window.location.hash === "#find-a-team") focusTeamSearch();
   }
 
   updateStats();
@@ -245,7 +263,8 @@
   renderRankings("Boys");
   bindRankingToggle();
   renderFeaturedClubs();
-  renderUpdates();
+  renderExploreGuide();
+  bindHomepagePathways();
   bindResultsControls();
 
   fetch("data/tournaments/jo-results-2026.json?v=7.52.1", { cache: "no-store" })

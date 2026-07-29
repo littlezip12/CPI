@@ -13,8 +13,8 @@ for path in html_files:
     text = path.read_text(encoding='utf-8', errors='ignore')
     depth = len(rel.parent.parts)
     prefix = '../' * depth
-    css = f'{prefix}css/site-shell.css?v=7.52.3'
-    js = f'{prefix}js/site-shell.js?v=7.52.3'
+    css = f'{prefix}css/site-shell.css?v=7.53.3'
+    js = f'{prefix}js/site-shell.js?v=7.53.3'
     if text.count('site-shell.css') != 1:
         errors.append(f'{rel}: expected exactly one site-shell.css reference')
     if text.count('site-shell.js') != 1:
@@ -64,12 +64,12 @@ if 'depth +' in palette:
     errors.append('js/command-palette.js retains legacy depth-prefix URL construction')
 
 builder = (ROOT / 'scripts/build-club-pages.py').read_text(encoding='utf-8')
-for token in ['Water Polo Index', '../css/site-shell.css?v=7.52.3', '../js/site-shell.js?v=7.52.3', '../css/command-palette.css?v=7.52.3', '../js/command-palette.js?v=7.52.3']:
+for token in ['Water Polo Index', '../css/site-shell.css?v=7.53.3', '../js/site-shell.js?v=7.53.3', '../css/command-palette.css?v=7.52.3', '../js/command-palette.js?v=7.52.3']:
     if token not in builder:
         errors.append(f'scripts/build-club-pages.py missing required shell token: {token}')
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
-if site.get('version') not in {'7.52.3', '7.52.4', '7.52.5', '7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2'}:
+if site.get('version') not in {'7.52.3', '7.52.4', '7.52.5', '7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3'}:
     errors.append('config/site-release.json version must preserve the 7.52.3 WPI shell or a later 7.52.x presentation release')
 if site.get('brandRelease') != '7.52.3':
     errors.append('config/site-release.json brandRelease must be 7.52.3')
