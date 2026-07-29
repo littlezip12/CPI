@@ -1,7 +1,7 @@
-# WPI 7.53.5
+# WPI 7.53.6
 
-Section hero cleanup and editorial image refresh.
+Team directory canonical logo restoration.
 
-- Removes the text overlays from the section landing hero images so the photography stands on its own.
-- Refreshes the Clubs and Teams landing pages with alternate editorial photography from the WPI asset library.
-- Preserves the WPI branding, Teams hub routing, rankings, club identities, logos, websites, JO placements, tournament history, and sponsor framework data.
+- Connects the Teams directory to WPI's canonical identity resolver before rendering tournament-only profiles.
+- Restores verified club artwork for JO-only team cards whose profile records do not carry a direct club slug or logo.
+- Preserves rankings, club identities, websites, tournament results, placements, team profiles, hero imagery, and sponsor framework data.

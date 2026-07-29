@@ -8,9 +8,9 @@ def read(path):
     return (ROOT / path).read_text(encoding='utf-8')
 
 cfg = json.loads(read('config/site-release.json'))
-assert cfg['version'] in {'7.53.4','7.53.5'}
+assert cfg['version'] in {'7.53.4','7.53.5','7.53.6'}
 assert cfg['homepageRelease'] == '7.53.3'
-assert cfg['navigationRelease'] in {'7.53.4','7.53.5'}
+assert cfg['navigationRelease'] in {'7.53.4','7.53.5','7.53.6'}
 assert cfg['storiesStatus'] == 'retired-preserved'
 
 shell = read('js/site-shell.js')

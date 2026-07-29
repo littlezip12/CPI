@@ -1,14 +1,30 @@
-/* WPI 7.53.4 — connected team directory */
+/* WPI 7.53.6 — connected team directory with canonical club logo resolution */
 (() => {
   "use strict";
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
   const joProfiles = window.WPI_JO_PROFILES?.teams || {};
-  const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
+  const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.53.6";
   const clubBySlug = new Map(clubs.map(club => [club.slug, club]));
   const groupOrder = ["10U Boys","10U Girls","10U Coed","12U Boys","12U Girls","12U Coed","14U Boys","14U Girls","16U Boys","16U Girls","18U Boys","18U Girls"];
   const escapeHtml = value => String(value ?? "").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
   const normalize = value => String(value || "").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+
+  function groupContext(group) {
+    const [ageGroup = "", gender = ""] = String(group || "").split(/\s+/, 2);
+    return { season: "2026", ageGroup, gender };
+  }
+
+  function resolveClubIdentity(team) {
+    const resolver = window.CPIIdentity;
+    if (!resolver) return null;
+    const teamName = team.displayTeamName || team.team || team.clubName || "";
+    const resolvedTeam = resolver.resolveTeam?.(teamName, groupContext(team.group));
+    if (resolvedTeam?.club) return resolvedTeam.club;
+    return resolver.resolveClub?.(team.clubName || "")
+      || resolver.resolveClub?.(teamName)
+      || null;
+  }
 
   const rankedBySlug = new Map(rankings.map(team => [team.slug, team]));
   const records = rankings.map(team => ({
@@ -32,13 +48,14 @@
     if (!team?.profileSlug || rankedBySlug.has(team.profileSlug)) return;
     const duplicate = records.some(item => item.group === team.group && normalize(item.name) === normalize(team.displayTeamName || team.team));
     if (duplicate) return;
-    const club = clubBySlug.get(team.clubSlug);
+    const identityClub = resolveClubIdentity(team);
+    const club = clubBySlug.get(team.clubSlug) || clubBySlug.get(identityClub?.slug) || identityClub;
     records.push({
       slug: team.profileSlug,
       name: team.displayTeamName || team.team,
       group: team.group,
       club: club?.displayName || team.clubName || "Tournament team",
-      clubSlug: team.clubSlug || "",
+      clubSlug: team.clubSlug || club?.slug || "",
       logo: team.logo || club?.logo || fallbackLogo,
       rank: null,
       rating: null,

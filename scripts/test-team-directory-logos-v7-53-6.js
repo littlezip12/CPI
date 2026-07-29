@@ -1,0 +1,69 @@
+#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+const vm = require('vm');
+const ROOT = path.resolve(__dirname, '..');
+const read = rel => fs.readFileSync(path.join(ROOT, rel), 'utf8');
+const fail = message => { console.error(`TEAM DIRECTORY LOGO 7.53.6 TEST FAILED\n - ${message}`); process.exit(1); };
+
+const site = JSON.parse(read('config/site-release.json'));
+if (site.version !== '7.53.6') fail('site version must be 7.53.6');
+if (site.teamDirectoryRelease !== '7.53.6') fail('teamDirectoryRelease must be 7.53.6');
+if (site.teamDirectoryLogoRelease !== '7.53.6') fail('teamDirectoryLogoRelease must be 7.53.6');
+
+const html = read('teams.html');
+const required = [
+  'data/identity/runtime.js?v=7.53.6',
+  'js/cpi-identity.js?v=7.53.6',
+  'data/tournaments/jo-profile-runtime.js?v=7.53.4',
+  'js/teams-directory-v7-53-4.js?v=7.53.6'
+];
+for (const token of required) if (!html.includes(token)) fail(`teams.html missing ${token}`);
+const positions = required.map(token => html.indexOf(token));
+if (!(positions[0] < positions[1] && positions[1] < positions[2] && positions[2] < positions[3])) {
+  fail('identity runtime and resolver must load before the JO profile and directory runtimes');
+}
+
+const runtime = read('js/teams-directory-v7-53-4.js');
+for (const token of ['resolveClubIdentity', 'resolver.resolveClub', 'clubBySlug.get(identityClub?.slug)', 'team.logo || club?.logo || fallbackLogo']) {
+  if (!runtime.includes(token)) fail(`directory runtime missing ${token}`);
+}
+
+const sandbox = { window: {} };
+vm.createContext(sandbox);
+vm.runInContext(read('data/identity/runtime.js'), sandbox);
+vm.runInContext(read('js/cpi-identity.js'), sandbox);
+vm.runInContext(read('data/tournaments/jo-profile-runtime.js'), sandbox);
+
+const profiles = Object.values(sandbox.window.WPI_JO_PROFILES?.teams || {});
+let direct = 0;
+let resolved = 0;
+let unresolved = 0;
+for (const team of profiles) {
+  if (team.logo) { direct += 1; continue; }
+  const name = team.displayTeamName || team.team || team.clubName || '';
+  const club = sandbox.window.CPIIdentity.resolveClub(team.clubName || '')
+    || sandbox.window.CPIIdentity.resolveClub(name);
+  if (club?.logo && fs.existsSync(path.join(ROOT, club.logo))) resolved += 1;
+  else unresolved += 1;
+}
+if (direct + resolved < 900) fail(`expected at least 900 JO profiles to resolve verified artwork; found ${direct + resolved}`);
+
+const expected = {
+  '680 Blue': 'assets/logos/canonical/680.webp',
+  '680 Red': 'assets/logos/canonical/680.webp',
+  '680 White': 'assets/logos/canonical/680.webp',
+  '908 Yellow': 'assets/logos/canonical/908.webp',
+  'CDM White': 'assets/logos/canonical/cdm.webp',
+  'Greenwich Blue': 'assets/logos/canonical/greenwich.webp'
+};
+for (const [name, logo] of Object.entries(expected)) {
+  const club = sandbox.window.CPIIdentity.resolveClub(name);
+  if (club?.logo !== logo) fail(`${name} should resolve to ${logo}, found ${club?.logo || 'none'}`);
+}
+
+console.log('TEAM DIRECTORY LOGO 7.53.6 TEST PASSED');
+console.log(` - ${direct} JO profiles carry direct artwork`);
+console.log(` - ${resolved} additional JO profiles resolve through canonical club identity`);
+console.log(` - ${unresolved} profiles remain generic because no verified club artwork is available`);
+console.log(' - 680, 908, CDM, and Greenwich color variants reuse their approved club logos');

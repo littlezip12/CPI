@@ -31,9 +31,9 @@ rankings = load("rankings.json")
 clubs = load("clubs.json")
 jo = load("data/tournaments/jo-results-2026.json")
 
-if site.get("version") not in {"7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5"}:
+if site.get("version") not in {"7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6"}:
     fail("site version must be 7.52.15")
-if site.get("clubWebsiteRelease") not in {"7.52.14", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5"}:
+if site.get("clubWebsiteRelease") not in {"7.52.14", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6"}:
     fail("club website release must preserve wave 1 or the completed user audit")
 if site.get("releaseIntegrityRelease") != "7.52.15":
     fail("releaseIntegrityRelease must be 7.52.15")
