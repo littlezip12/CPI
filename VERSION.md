@@ -1,9 +1,9 @@
-# WPI 7.54.0
+# WPI 7.54.1
 
-Reusable tournament platform foundation.
+Boys Futures Super Finals platform migration.
 
-- Introduces one shared tournament registry, source-adapter contract, event/division/participant/venue schemas, and reusable public tournament viewer.
-- Migrates the completed 2026 Quiksilver Cup as the first controlled event with 7 divisions, 226 verified games, 93 teams, 80 placements, 14 venues, and complete team journeys.
-- Preserves the proven Junior Olympics viewers and other archived-event pages until each event is deliberately migrated.
-- Keeps tournament history quarantined from automatic ranking publication.
+- Migrates the completed 2026 Boys Futures Super Finals into the reusable tournament platform.
+- Publishes 13 divisions, 709 verified finals, 276 clean team journeys, 238 placements, 27 venues, and three tournament dates.
+- Merges bracket-routing labels such as winner/loser and pool-slot references into the underlying teams so records and journeys are not duplicated.
+- Preserves Quiksilver Cup on the shared platform and keeps the proven Junior Olympics viewers unchanged.
 - Preserves 724 rankings, 182 clubs, 177 club website links, 976 JO placements, identity mappings, logos, team profiles, and sponsor data.

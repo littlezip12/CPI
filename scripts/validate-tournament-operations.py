@@ -35,7 +35,7 @@ manifest = load("data/tournaments/normalized/manifest.json")
 
 if ops.get("schemaVersion") != 1 or ops.get("release") != EXPECTED_RELEASE:
     fail("Tournament operations output must use schemaVersion 1 and release 7.48.0")
-if config.get("release") not in {EXPECTED_RELEASE, "7.54.0"}:
+if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1"}:
     fail("Tournament operations configuration release mismatch")
 
 registry_keys = {(event.get("id"), division.get("id")) for event in registry.get("events", []) for division in event.get("divisions", [])}

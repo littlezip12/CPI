@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.0",
+  "release": "7.54.1",
   "season": "2026",
   "generatedDate": "2026-07-28",
   "description": "Universal tournament source registry with live JO operations, controlled archives, and the reusable WPI tournament platform. Quiksilver Cup is the first migrated event; ranking publication remains manual.",
@@ -672,7 +672,7 @@
       "legacyPublicPath": "tournaments/quicksilver-cup/index.html",
       "platformEnabled": true,
       "platformDataPath": "data/tournaments/platform/events/2026-quiksilver-cup.json",
-      "platformRelease": "7.54.0"
+      "platformRelease": "7.54.1"
     },
     {
       "id": "2026-boys-futures-super-finals",
@@ -680,7 +680,7 @@
       "shortName": "Boys Futures Super Finals",
       "kind": "tournament_results",
       "syncEnabled": false,
-      "publicPath": "tournaments/boys-superfinals/index.html",
+      "publicPath": "tournament.html?event=2026-boys-futures-super-finals",
       "divisions": [
         {
           "id": "10u-boys-d1",
@@ -870,8 +870,10 @@
       "archiveSyncEnabled": true,
       "eventStatus": "complete",
       "archivePolicy": "bank_and_review",
-      "platformEnabled": false,
-      "platformRelease": null
+      "platformEnabled": true,
+      "platformRelease": "7.54.1",
+      "legacyPublicPath": "tournaments/boys-superfinals/index.html",
+      "platformDataPath": "data/tournaments/platform/events/2026-boys-futures-super-finals.json"
     },
     {
       "id": "2026-girls-us-club-championships",

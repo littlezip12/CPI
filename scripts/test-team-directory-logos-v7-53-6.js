@@ -7,7 +7,7 @@ const read = rel => fs.readFileSync(path.join(ROOT, rel), 'utf8');
 const fail = message => { console.error(`TEAM DIRECTORY LOGO 7.53.6 TEST FAILED\n - ${message}`); process.exit(1); };
 
 const site = JSON.parse(read('config/site-release.json'));
-if (!['7.53.7','7.54.0'].includes(site.version)) fail('site version must preserve the 7.53.6 logo release');
+if (!['7.53.7','7.54.0','7.54.1'].includes(site.version)) fail('site version must preserve the 7.53.6 logo release');
 if (site.teamDirectoryRelease !== '7.53.6') fail('teamDirectoryRelease must be 7.53.6');
 if (site.teamDirectoryLogoRelease !== '7.53.6') fail('teamDirectoryLogoRelease must be 7.53.6');
 
