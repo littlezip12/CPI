@@ -27,7 +27,7 @@ girls = (ROOT / 'tournaments/jo-girls/app.js').read_text(encoding='utf-8')
 boys_html = (ROOT / 'tournaments/jo-boys/index.html').read_text(encoding='utf-8')
 girls_html = (ROOT / 'tournaments/jo-girls/index.html').read_text(encoding='utf-8')
 
-if site.get('version') not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6'}: fail('site release must preserve JO results links 7.52.7 or later')
+if site.get('version') not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7'}: fail('site release must preserve JO results links 7.52.7 or later')
 for key in ['joResultsRelease','tournamentUIRelease','joJourneyRelease','joLogoRelease']:
     if site.get(key) not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}: fail(f'{key} must preserve JO results links 7.52.7 or later')
 if results.get('summary',{}).get('teamPlacements') != 976: fail('JO placement count changed')

@@ -9,12 +9,12 @@ errors = []
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
 for key, expected in {
-    'version': '7.53.6',
+    'version': '7.53.7',
     'brandRelease': '7.53.4',
     'navigationRelease': '7.53.5',
-    'publicExperienceRelease': '7.53.6',
+    'publicExperienceRelease': '7.53.7',
     'teamDirectoryRelease': '7.53.6',
-    'sectionLandingRelease': '7.53.5',
+    'sectionLandingRelease': '7.53.7',
 }.items():
     if site.get(key) != expected:
         errors.append(f'config/site-release.json {key} must be {expected}')
@@ -103,7 +103,7 @@ stale_cache = []
 for path in ROOT.rglob('*.html'):
     text = path.read_text(encoding='utf-8', errors='ignore')
     for match in re.finditer(r'\?v=(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9.-]+)?)', text):
-        if match.group(1) not in {'7.53.4','7.53.5','7.53.6'}:
+        if match.group(1) not in {'7.53.4','7.53.5','7.53.6','7.53.7'}:
             stale_cache.append(f'{path.relative_to(ROOT)}:{match.group(1)}')
             break
 if stale_cache:
@@ -120,12 +120,12 @@ if jo.get('summary', {}).get('teamPlacements') != 976:
     errors.append('expected 976 JO placements')
 
 if errors:
-    print('WPI 7.53.6 BRAND / TEAMS / SECTION LANDING TEST FAILED')
+    print('WPI 7.53.7 BRAND / TEAMS / SECTION LANDING TEST FAILED')
     for error in errors:
         print(f' - {error}')
     sys.exit(1)
 
-print('WPI 7.53.6 BRAND / TEAMS / SECTION LANDING TEST PASSED')
+print('WPI 7.53.7 BRAND / TEAMS / SECTION LANDING TEST PASSED')
 print(' - Public-facing CPI naming is fully migrated to WPI while repository URLs and internal data identifiers remain stable')
 print(' - Teams has a dedicated searchable section home')
 print(' - Rankings, Teams, Clubs, Tournaments, and Methodology share one responsive landing-page system')

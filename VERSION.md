@@ -1,7 +1,7 @@
-# WPI 7.53.6
+# WPI 7.53.7
 
-Team directory canonical logo restoration.
+Editorial photo integration for section landing pages.
 
-- Connects the Teams directory to WPI's canonical identity resolver before rendering tournament-only profiles.
-- Restores verified club artwork for JO-only team cards whose profile records do not carry a direct club slug or logo.
-- Preserves rankings, club identities, websites, tournament results, placements, team profiles, hero imagery, and sponsor framework data.
+- Applies the user-provided team, club, home, and rankings photos to the public site.
+- Keeps the tournament medals photo in place on the Tournaments page.
+- Preserves rankings, club identities, logos, websites, JO placements, tournament history, and sponsor framework data.

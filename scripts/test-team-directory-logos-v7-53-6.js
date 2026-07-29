@@ -4,10 +4,10 @@ const path = require('path');
 const vm = require('vm');
 const ROOT = path.resolve(__dirname, '..');
 const read = rel => fs.readFileSync(path.join(ROOT, rel), 'utf8');
-const fail = message => { console.error(`TEAM DIRECTORY LOGO 7.53.6 TEST FAILED\n - ${message}`); process.exit(1); };
+const fail = message => { console.error(`TEAM DIRECTORY LOGO 7.53.7 TEST FAILED\n - ${message}`); process.exit(1); };
 
 const site = JSON.parse(read('config/site-release.json'));
-if (site.version !== '7.53.6') fail('site version must be 7.53.6');
+if (site.version !== '7.53.7') fail('site version must be 7.53.6');
 if (site.teamDirectoryRelease !== '7.53.6') fail('teamDirectoryRelease must be 7.53.6');
 if (site.teamDirectoryLogoRelease !== '7.53.6') fail('teamDirectoryLogoRelease must be 7.53.6');
 
@@ -62,7 +62,7 @@ for (const [name, logo] of Object.entries(expected)) {
   if (club?.logo !== logo) fail(`${name} should resolve to ${logo}, found ${club?.logo || 'none'}`);
 }
 
-console.log('TEAM DIRECTORY LOGO 7.53.6 TEST PASSED');
+console.log('TEAM DIRECTORY LOGO 7.53.7 TEST PASSED');
 console.log(` - ${direct} JO profiles carry direct artwork`);
 console.log(` - ${resolved} additional JO profiles resolve through canonical club identity`);
 console.log(` - ${unresolved} profiles remain generic because no verified club artwork is available`);

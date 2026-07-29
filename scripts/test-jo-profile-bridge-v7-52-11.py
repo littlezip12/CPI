@@ -17,10 +17,10 @@ bridge=load('data/tournaments/jo-profile-bridge.json')
 rankings=load('rankings.json')
 clubs=load('data/identity/index.json').get('clubs',{})
 
-if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6'}: fail('site version must be 7.52.13')
+if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7'}: fail('site version must be 7.52.13')
 if site.get('joProfileRelease')!='7.52.13': fail('joProfileRelease must be 7.52.13')
-if site.get('teamProfileRelease') not in {'7.52.13','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6'}: fail('teamProfileRelease must preserve the JO bridge')
-if site.get('clubProfileRelease') not in {'7.52.13','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6'}: fail('clubProfileRelease must preserve the JO profile bridge')
+if site.get('teamProfileRelease') not in {'7.52.13','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7'}: fail('teamProfileRelease must preserve the JO bridge')
+if site.get('clubProfileRelease') not in {'7.52.13','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7'}: fail('clubProfileRelease must preserve the JO profile bridge')
 for key in ('joResultsRelease','tournamentUIRelease'):
     if site.get(key)!='7.52.15': fail(f'{key} must be 7.52.15')
 if site.get('rankingDataRelease')!='7.52.13': fail('rankingDataRelease must be 7.52.13')
