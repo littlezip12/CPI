@@ -1,4 +1,4 @@
-/* CPI V8 Static Homepage interactions only */
+/* WPI V8 Static Homepage interactions only */
 (function(){
   const hero=document.querySelector('[data-cpi-hero]');
   if(!hero) return;

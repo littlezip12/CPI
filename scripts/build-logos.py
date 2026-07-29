@@ -165,7 +165,7 @@ def update_data_js(registry):
         print("No data.js logo path changes needed.")
 
 def main():
-    print("CPI Logo Builder")
+    print("WPI Logo Builder")
     print("================")
     print(f"Original logos: {ORIGINALS.relative_to(ROOT)}")
     print(f"Optimized logos: {OUTPUT.relative_to(ROOT)}")

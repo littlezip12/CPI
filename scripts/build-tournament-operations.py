@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build CPI's universal tournament operations dashboard and alert packet."""
+"""Build WPI's universal tournament operations dashboard and alert packet."""
 from __future__ import annotations
 
 import json
@@ -58,7 +58,7 @@ def issue_markdown(payload: dict[str, Any]) -> str:
     alerts = payload.get("alerts", [])
     counts = payload.get("counts", {})
     lines = [
-        "# CPI tournament operations",
+        "# WPI tournament operations",
         "",
         f"Generated: **{payload.get('generatedAt', 'unknown')}**",
         "",
@@ -78,7 +78,7 @@ def issue_markdown(payload: dict[str, Any]) -> str:
             lines.append(f"- {icon} **{alert.get('eventName')} · {alert.get('divisionLabel')}** — {alert.get('message')}")
         lines.append("")
     lines += [
-        "The CPI operations workflow does not blend sources and does not publish ranking changes automatically.",
+        "The WPI operations workflow does not blend sources and does not publish ranking changes automatically.",
         "",
         "[Open tournament operations](https://littlezip12.github.io/CPI/tournament-operations.html)",
     ]

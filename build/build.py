@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CPI Engine v2 Build Pipeline
+WPI Engine v2 Build Pipeline
 
 Run from repo root:
   python build/build.py
@@ -431,7 +431,7 @@ def build_qa_dashboard(report):
     rows = "\n".join(f"<tr><td>{k}</td><td>{v}</td></tr>" for k,v in report.get("games_by_tournament",{}).items())
     qa_rows = "\n".join(f"<tr><td>{q.get('level','')}</td><td>{q.get('type','')}</td><td><code>{json.dumps(q)[:300]}</code></td></tr>" for q in report.get("qa_items",[])[:250])
     s = report["summary"]
-    html = f"""<!doctype html><html><head><meta charset='utf-8'><title>CPI Engine v2 QA</title>
+    html = f"""<!doctype html><html><head><meta charset='utf-8'><title>WPI Engine v2 QA</title>
 <style>
 body{{font-family:system-ui;margin:30px;background:#f6f8fb;color:#071832}}
 .grid{{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}}
@@ -440,7 +440,7 @@ body{{font-family:system-ui;margin:30px;background:#f6f8fb;color:#071832}}
 .card{{background:white;border:1px solid #dce6f2;border-radius:14px;padding:18px;margin:18px 0;box-shadow:0 10px 30px #0001}}
 table{{width:100%;border-collapse:collapse}}td,th{{border-bottom:1px solid #dce6f2;padding:10px;text-align:left}}th{{font-size:12px;text-transform:uppercase;color:#607086}}code{{white-space:normal}}
 </style></head><body>
-<h1>CPI Engine v2 QA Dashboard</h1>
+<h1>WPI Engine v2 QA Dashboard</h1>
 <p>Build: {report.get('build_timestamp')}</p>
 <div class='grid'>
 <div class='metric'><strong>{s['games']}</strong><span>Games</span></div>

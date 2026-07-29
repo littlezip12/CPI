@@ -1,5 +1,5 @@
 /*
-  CPI 5.3C — Command Palette Search
+  WPI 5.3C — Command Palette Search
   Opens with Cmd+K / Ctrl+K or by clicking Search WPI.
 */
 (function () {
@@ -56,7 +56,7 @@
       Object.values(clubIntel.clubs).forEach(club => {
         add("Club", club.displayName, `${club.rankedTeams || 0} ranked teams · best rank #${club.bestRank || "—"}`, makeHref(`club.html?club=${encodeURIComponent(club.slug)}`), [club.region, club.slug]);
         (club.teams || []).forEach(team => {
-          add("Team", team.team, `${team.group || team.ageGroup || "Team"} · #${team.rank || "—"} · ${team.cpi || "—"} CPI`, makeHref(team.page || "rankings.html"), [club.displayName, team.group, team.latestTournament, team.record]);
+          add("Team", team.team, `${team.group || team.ageGroup || "Team"} · #${team.rank || "—"} · ${team.cpi || "—"} WPI`, makeHref(team.page || "rankings.html"), [club.displayName, team.group, team.latestTournament, team.record]);
         });
       });
     }

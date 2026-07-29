@@ -8,9 +8,9 @@ def read(path):
     return (ROOT / path).read_text(encoding='utf-8')
 
 cfg = json.loads(read('config/site-release.json'))
-assert cfg['version'] == '7.53.3'
+assert cfg['version'] == '7.53.4'
 assert cfg['homepageRelease'] == '7.53.3'
-assert cfg['navigationRelease'] == '7.53.3'
+assert cfg['navigationRelease'] == '7.53.4'
 assert cfg['storiesStatus'] == 'retired-preserved'
 
 shell = read('js/site-shell.js')
@@ -18,7 +18,8 @@ assert 'label: "Stories"' not in shell
 assert 'makeHref("stories.html")' not in shell
 for label in ('Home', 'Rankings', 'Teams', 'Clubs', 'Tournaments', 'Methodology'):
     assert f'label: "{label}"' in shell
-assert 'index.html#find-a-team' in shell
+assert 'href: "teams.html"' in shell
+assert 'teams.html#team-directory' in shell
 assert 'data-shell-search' in shell
 
 home = read('index.html')
@@ -32,8 +33,8 @@ assert 'id="wpiHomeSearch"' in home
 assert 'id="explore-wpi"' in home
 assert 'href="stories.html"' not in home
 assert 'Latest updates' not in home
-assert 'site-shell.js?v=7.53.3' in home
-assert 'homepage-wpi-v7-52-4.js?v=7.53.3' in home
+assert 'site-shell.js?v=7.53.4' in home
+assert 'homepage-wpi-v7-52-4.js?v=7.53.4' in home
 
 homepage_js = read('js/homepage-wpi-v7-52-4.js')
 assert 'CPI_STORIES' not in homepage_js
@@ -54,7 +55,7 @@ for path in html_files:
     text = path.read_text(encoding='utf-8', errors='ignore')
     if 'js/site-shell.js' not in text:
         missing.append(str(path.relative_to(ROOT)))
-    if 'site-shell.js?v=7.52.3' in text or 'site-shell.css?v=7.52.3' in text:
+    if 'site-shell.js?v=7.53.3' in text or 'site-shell.css?v=7.53.3' in text:
         stale.append(str(path.relative_to(ROOT)))
 assert not missing, f'HTML pages missing universal shell: {missing[:10]}'
 assert not stale, f'HTML pages using stale shell cache key: {stale[:10]}'
@@ -70,4 +71,4 @@ for path in html_files:
         linked.append(str(rel))
 assert not linked, f'Public pages still link to retired Stories archive: {linked}'
 
-print(f'WPI 7.53.3 navigation/homepage regression passed ({len(html_files)} HTML pages checked).')
+print(f'WPI 7.53.4 navigation/homepage regression passed ({len(html_files)} HTML pages checked).')

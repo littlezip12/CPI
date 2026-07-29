@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression tests for the CPI 7.42 tournament normalizer."""
+"""Regression tests for the WPI 7.42 tournament normalizer."""
 from __future__ import annotations
 
 import sys

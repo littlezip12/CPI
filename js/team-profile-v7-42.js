@@ -78,7 +78,7 @@
     }
     return {
       href: "stories/pre-jo-rankings-context.html",
-      label: "Read CPI ranking context",
+      label: "Read WPI ranking context",
       title: "Pre-JO ranking context"
     };
   }
@@ -152,7 +152,7 @@
         </div>
         <span>${escapeHtml(recordLabel(summary))}</span>
       </div>
-      <p class="evidence-policy-note">This evidence is source-traceable and profile-ready. It does not change the published CPI rank until the manual ranking review is completed.</p>
+      <p class="evidence-policy-note">This evidence is source-traceable and profile-ready. It does not change the published WPI rank until the manual ranking review is completed.</p>
       <div class="tournament-appearance-grid">
         ${appearances.map((appearance) => `<article class="tournament-appearance-card">
           <div>
@@ -194,7 +194,7 @@
     if (!history) {
       return `<section id="historical-tournaments" class="team-panel historical-profile-panel is-empty">
         <div class="section-heading with-note"><div><p class="kicker">Historical archive</p><h2>No linked historical results yet</h2></div><span>Profile-only archive</span></div>
-        <p class="empty-state">Historical games appear here only when the archived participant resolves safely to this canonical CPI team.</p>
+        <p class="empty-state">Historical games appear here only when the archived participant resolves safely to this canonical WPI team.</p>
       </section>`;
     }
     const appearances = history.appearances || [];
@@ -206,7 +206,7 @@
         <div><p class="kicker">Historical tournament archive</p><h2>Completed-event history</h2></div>
         <span>${escapeHtml(historicalRecord(summary))}</span>
       </div>
-      <p class="evidence-policy-note historical-policy-note">Archived results are displayed for context and remain quarantined from the current CPI ranking model unless a tournament is explicitly approved as ranking evidence.</p>
+      <p class="evidence-policy-note historical-policy-note">Archived results are displayed for context and remain quarantined from the current WPI ranking model unless a tournament is explicitly approved as ranking evidence.</p>
       <div class="historical-summary-grid">
         <div><span>Events</span><strong>${escapeHtml(summary.events || 0)}</strong></div>
         <div><span>Final games</span><strong>${escapeHtml(summary.finalGames || 0)}</strong></div>
@@ -239,8 +239,8 @@
 
   function logoMarkup(item, className = "team-logo") {
     const src = escapeHtml(versionLogo(item.logo || ""));
-    const label = escapeHtml(item.team || item.displayName || item.club || "CPI");
-    return `<span class="${className}"><img src="${src || LOGO_FALLBACK}" alt="${label} logo" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.50.2';"></span>`;
+    const label = escapeHtml(item.team || item.displayName || item.club || "WPI");
+    return `<span class="${className}"><img src="${src || LOGO_FALLBACK}" alt="${label} logo" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.53.4';"></span>`;
   }
 
   function normalizeSlug(value) {
@@ -480,7 +480,7 @@
       <section class="team-profile-not-found">
         <p class="kicker">Team Profile</p>
         <h1>Team not found</h1>
-        <p>The team profile could not be matched to the current CPI rankings data.${requested ? ` Requested profile: <strong>${escapeHtml(requested)}</strong>.` : ""}</p>
+        <p>The team profile could not be matched to the current WPI rankings data.${requested ? ` Requested profile: <strong>${escapeHtml(requested)}</strong>.` : ""}</p>
         <div class="team-actions">
           <a class="team-btn primary" href="rankings.html">Back to rankings</a>
           <a class="team-btn secondary" href="clubs.html">Explore clubs</a>
@@ -523,7 +523,7 @@
       ${logoMarkup(team, "team-logo")}
       <div>
         <strong>${escapeHtml(team.team)}</strong>
-        <span>#${escapeHtml(team.postRank || "—")} · ${formatNumber(team.postCPI)} CPI</span>
+        <span>#${escapeHtml(team.postRank || "—")} · ${formatNumber(team.postCPI)} WPI</span>
       </div>
       <em class="${movementClass(team.movement)}">${movementIcon(team.movement)} ${movementLabel(team.movement)}</em>
     </a>`).join("");
@@ -564,7 +564,7 @@
       ? `${joProfile.record || "JO result"} · ${joProfile.divisionPlaceLabel || joProfile.subdivisionPlaceLabel || "Placement verified"}`
       : normalizedEvidence ? `${normalizedSummary.events || 0} event${Number(normalizedSummary.events || 0) === 1 ? "" : "s"} · ${recordLabel(normalizedSummary)}` : "Awaiting normalized match";
 
-    document.title = `${team.team} | CPI Team Profile`;
+    document.title = `${team.team} | WPI Team Profile`;
 
     root.innerHTML = `<section class="team-profile-layout">
       ${renderClubRail(club, portfolio, team)}
@@ -574,7 +574,7 @@
             <p class="kicker">Team Profile · ${escapeHtml(team.group || "")}</p>
             <h1>${escapeHtml(team.team)}</h1>
             <p class="team-summary">
-              ${escapeHtml(clubName)} profile with current CPI rank, latest evidence, same-age club context, and statewide comparison.
+              ${escapeHtml(clubName)} profile with current WPI rank, latest evidence, same-age club context, and statewide comparison.
             </p>
             <div class="team-meta">
               <a href="${escapeHtml(clubPage)}">${escapeHtml(clubName)}</a>
@@ -591,7 +591,7 @@
             <div>
               <span class="eyebrow">Current Rank</span>
               <strong>${escapeHtml(rank)}</strong>
-              <em>CPI ${formatNumber(team.postCPI)}</em>
+              <em>WPI ${formatNumber(team.postCPI)}</em>
             </div>
           </aside>
         </section>
@@ -612,7 +612,7 @@
             <em>${escapeHtml(team.group || "")}</em>
           </article>
           <article>
-            <span>CPI Rating</span>
+            <span>WPI Rating</span>
             <strong>${formatNumber(team.postCPI)}</strong>
             <em>${Number(team.cpiChange || 0) >= 0 ? "+" : ""}${formatNumber(team.cpiChange)}</em>
           </article>
@@ -622,7 +622,7 @@
               <span class="movement-arrow" aria-hidden="true">${escapeHtml(movementIcon(team.movement))}</span>
               <span>${escapeHtml(movementLabel(team.movement))}</span>
             </strong>
-            <em>${escapeHtml(movementText(team.movement))} since prior CPI update</em>
+            <em>${escapeHtml(movementText(team.movement))} since prior WPI update</em>
           </article>
           <article>
             <span>Banked JO Evidence</span>
@@ -713,7 +713,7 @@
               <li>Current rankings remain pre-JO until normalized JO results pass manual identity and ranking review.</li>
               <li>${normalizedEvidence ? `${escapeHtml(recordLabel(normalizedSummary))} are banked for this team across ${normalizedSummary.events || 0} registered event${Number(normalizedSummary.events || 0) === 1 ? "" : "s"}.` : "No normalized JO evidence currently resolves to this canonical team."}</li>
               <li>${escapeHtml(evidenceStatus(team))}.</li>
-              <li>Team-depth, A/B/C/D naming, and club identity issues are tracked separately in the CPI QA files.</li>
+              <li>Team-depth, A/B/C/D naming, and club identity issues are tracked separately in the WPI QA files.</li>
             </ul>
             <a class="team-btn secondary profile-note-link" href="${escapeHtml(storyLink.href)}">${escapeHtml(storyLink.label)} →</a>
           </article>

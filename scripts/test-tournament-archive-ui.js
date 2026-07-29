@@ -5,7 +5,7 @@ const ROOT=path.resolve(__dirname,"..");const read=rel=>fs.readFileSync(path.joi
 function element(value=""){return{innerHTML:"",textContent:"",value,options:[],className:"",addEventListener(){}}}
 const elements={"#archiveGenerated":element(),"#archiveState":element(),"#archiveStats":element(),"#archiveEvents":element(),"#archiveScope":element(),"#archiveEvent":element("all"),"#archiveDivision":element("all"),"#archiveStatus":element("all"),"#archiveAge":element("all"),"#archiveGender":element("all"),"#archiveSearch":element(""),"#archiveCount":element(),"#archiveGames":element()};
 const document={querySelector:s=>elements[s]||null};
-const location={search:"",pathname:"/CPI/tournament-archive.html"};
+const location={search:"",pathname:"/WPI/tournament-archive.html"};
 const history={replaceState(){}};
 const window={location};
 const context={window,document,console,Date,URLSearchParams,location,history};vm.createContext(context);

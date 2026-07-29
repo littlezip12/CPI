@@ -59,7 +59,7 @@ for(const [label,ctx] of [['Girls',girls],['Boys',boys]]){
 }
 for(const side of ['jo-boys','jo-girls']){
   const app=fs.readFileSync(path.join(ROOT,`tournaments/${side}/app.js`),'utf8');
-  requireCondition(app.includes('A verified schedule is available immediately while CPI checks for newer Google Sheet data.'),`${side} must render verified data before live refresh finishes`);
+  requireCondition(app.includes('A verified schedule is available immediately while WPI checks for newer Google Sheet data.'),`${side} must render verified data before live refresh finishes`);
   requireCondition(app.includes('teamGames=new Map()'),`${side} must build a team-to-games index`);
 }
 console.log('JO JOURNEY 7.50.5 TESTS PASSED');

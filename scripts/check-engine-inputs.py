@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail safely before running the experimental CPI Engine v2 pipeline."""
+"""Fail safely before running the experimental WPI Engine v2 pipeline."""
 from pathlib import Path
 import sys
 
@@ -16,7 +16,7 @@ missing = [p for p in REQUIRED if not p.exists()]
 raw_files = sorted(RAW.glob("*.csv")) if RAW.exists() else []
 
 if missing or not raw_files:
-    print("CPI Engine v2 preflight failed safely.")
+    print("WPI Engine v2 preflight failed safely.")
     if missing:
         print("Missing required registries:")
         for path in missing:
@@ -27,5 +27,5 @@ if missing or not raw_files:
     print("Use ./release-check for the current static-site release validation.")
     sys.exit(1)
 
-print("CPI Engine v2 preflight passed.")
+print("WPI Engine v2 preflight passed.")
 print(f" - {len(raw_files)} raw tournament source file(s)")

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""CPI repository and release integrity audit.
+"""WPI repository and release integrity audit.
 
 The audit has two modes:
 - migration mode (default): known legacy issues in the checked-in baseline are reported,
   but only new blocking regressions fail the command.
 - strict mode: every blocking issue fails, including legacy baseline debt.
 
-This lets CPI stop adding new technical debt immediately while existing debt is removed
+This lets WPI stop adding new technical debt immediately while existing debt is removed
 systematically instead of being hidden or ignored.
 """
 from __future__ import annotations
@@ -294,7 +294,7 @@ def main() -> int:
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
 
-    print("CPI RELEASE INTEGRITY AUDIT")
+    print("WPI RELEASE INTEGRITY AUDIT")
     print("===========================")
     print(f"Ranked teams: {ranking_summary['teams']}")
     print(f"Ranking groups: {len(ranking_summary['groups'])}")

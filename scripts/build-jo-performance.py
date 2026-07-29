@@ -2,7 +2,7 @@
 """Build JO division-finish and performance summaries from normalized final games.
 
 The engine is deliberately read-only: it creates evidence for manual ranking review and
-never edits published CPI rankings.
+never edits published WPI rankings.
 """
 from __future__ import annotations
 
@@ -303,7 +303,7 @@ def build(normalized_files: list[Path] | None = None) -> dict[str, Any]:
         "schemaVersion": 1,
         "release": RELEASE,
         "generatedAt": now_iso(),
-        "policy": "JO finish and performance evidence is advisory. Published CPI rankings are never changed automatically.",
+        "policy": "JO finish and performance evidence is advisory. Published WPI rankings are never changed automatically.",
         "counts": {
             "divisions": len(division_rows),
             "divisionsStarted": sum(row["finalGames"] > 0 for row in division_rows),

@@ -178,8 +178,8 @@ def render_page(club):
   <meta http-equiv="refresh" content="0; url={esc(target)}">
   <link rel="canonical" href="{esc(target)}">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/command-palette.css?v=7.52.3">
-  <link rel="stylesheet" href="../css/site-shell.css?v=7.53.3">
+  <link rel="stylesheet" href="../css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="../css/site-shell.css?v=7.53.4">
   <style>
     body{{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(145deg,#071426,#123968);font-family:Inter,Arial,sans-serif;color:#fff}}
     main{{width:min(520px,calc(100% - 40px));padding:34px;border:1px solid rgba(255,255,255,.16);border-radius:28px;background:rgba(255,255,255,.08);box-shadow:0 28px 80px rgba(0,0,0,.28);text-align:center}}
@@ -199,8 +199,8 @@ def render_page(club):
     <div class="actions"><a href="{esc(target)}">Continue to club profile →</a>{website_link}</div>
   </main>
   <script>window.location.replace({json.dumps(target)});</script>
-  <script defer src="../js/command-palette.js?v=7.52.3"></script>
-  <script defer src="../js/site-shell.js?v=7.53.3"></script>
+  <script defer src="../js/command-palette.js?v=7.53.4"></script>
+  <script defer src="../js/site-shell.js?v=7.53.4"></script>
 </body>
 </html>"""
 

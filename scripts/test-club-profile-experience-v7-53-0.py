@@ -35,7 +35,7 @@ jo = load("data/tournaments/jo-results-2026.json")
 audit = load("data/release-integrity-7.52.15.json")
 website_audit = load("data/club-website-audit-7.52.16.json")
 
-if site.get("version") not in {"7.53.0", "7.53.1", "7.53.2", "7.53.3"}:
+if site.get("version") not in {"7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4"}:
     fail("site version must preserve the 7.53.0 club experience")
 if site.get("clubProfileRelease") != "7.53.0" or site.get("clubExperienceRelease") != "7.53.0":
     fail("club profile experience release fields must be 7.53.0")
@@ -83,14 +83,14 @@ for key, value in protected.items():
 
 club_html = (ROOT / "club.html").read_text(encoding="utf-8")
 required_html = [
-    "css/club-profile-v7-53-0.css?v=7.53.2",
-    "js/club-profile-v7-53-0.js?v=7.53.2",
+    "css/club-profile-v7-53-0.css?v=7.53.4",
+    "js/club-profile-v7-53-0.js?v=7.53.4",
     "Water Polo Index club profile with rankings, teams, tournament results",
 ]
 for token in required_html:
     if token not in club_html:
         fail(f"club.html missing {token}")
-if club_html.find("js/club-intelligence-v7-26.js?v=7.52.13") > club_html.find("js/club-profile-v7-53-0.js?v=7.53.2"):
+if club_html.find("js/club-intelligence-v7-26.js?v=7.53.4") > club_html.find("js/club-profile-v7-53-0.js?v=7.53.4"):
     fail("new club profile enhancement loads before the existing club data consumer")
 
 js = (ROOT / "js/club-profile-v7-53-0.js").read_text(encoding="utf-8")

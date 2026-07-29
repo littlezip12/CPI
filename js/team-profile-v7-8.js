@@ -58,8 +58,8 @@
 
   function logoMarkup(item, className = "team-logo") {
     const src = escapeHtml(item.logo || "");
-    const label = escapeHtml(item.team || item.displayName || item.club || "CPI");
-    if (!src) return `<span class="${className} team-logo-fallback">${escapeHtml((label || "CPI").slice(0, 2).toUpperCase())}</span>`;
+    const label = escapeHtml(item.team || item.displayName || item.club || "WPI");
+    if (!src) return `<span class="${className} team-logo-fallback">${escapeHtml((label || "WPI").slice(0, 2).toUpperCase())}</span>`;
     return `<span class="${className}"><img src="${src}" alt="${label} logo" onerror="this.closest('.${className.split(" ")[0]}').classList.add('team-logo-fallback'); this.remove();"></span>`;
   }
 
@@ -121,7 +121,7 @@
       <section class="team-profile-not-found">
         <p class="kicker">Team Profile</p>
         <h1>Team not found</h1>
-        <p>The team profile could not be matched to the current CPI rankings data.</p>
+        <p>The team profile could not be matched to the current WPI rankings data.</p>
         <div class="team-actions">
           <a class="team-btn primary" href="rankings.html">Back to rankings</a>
           <a class="team-btn secondary" href="clubs.html">Explore clubs</a>
@@ -164,7 +164,7 @@
       ${logoMarkup(team, "team-logo")}
       <div>
         <strong>${escapeHtml(team.team)}</strong>
-        <span>#${escapeHtml(team.postRank || "—")} · ${formatNumber(team.postCPI)} CPI</span>
+        <span>#${escapeHtml(team.postRank || "—")} · ${formatNumber(team.postCPI)} WPI</span>
       </div>
       <em class="${movementClass(team.movement)}">${movementIcon(team.movement)} ${movementLabel(team.movement)}</em>
     </a>`).join("");
@@ -197,7 +197,7 @@
     const bestWin = team.bestWinClean || "Best win TBD";
     const rank = team.postRank ? `#${team.postRank}` : "—";
 
-    document.title = `${team.team} | CPI Team Profile`;
+    document.title = `${team.team} | WPI Team Profile`;
 
     root.innerHTML = `<section class="team-profile-layout">
       ${renderClubRail(club, portfolio, team)}
@@ -207,7 +207,7 @@
             <p class="kicker">Team Profile · ${escapeHtml(team.group || "")}</p>
             <h1>${escapeHtml(team.team)}</h1>
             <p class="team-summary">
-              ${escapeHtml(clubName)} profile with current CPI rank, tournament context, best-win signal, and club portfolio.
+              ${escapeHtml(clubName)} profile with current WPI rank, tournament context, best-win signal, and club portfolio.
             </p>
             <div class="team-meta">
               <a href="${escapeHtml(clubPage)}">${escapeHtml(clubName)}</a>
@@ -224,7 +224,7 @@
             <div>
               <span class="eyebrow">Current Rank</span>
               <strong>${escapeHtml(rank)}</strong>
-              <em>CPI ${formatNumber(team.postCPI)}</em>
+              <em>WPI ${formatNumber(team.postCPI)}</em>
             </div>
           </aside>
         </section>
@@ -243,7 +243,7 @@
             <em>${escapeHtml(team.group || "")}</em>
           </article>
           <article>
-            <span>CPI Rating</span>
+            <span>WPI Rating</span>
             <strong>${formatNumber(team.postCPI)}</strong>
             <em>${Number(team.cpiChange || 0) >= 0 ? "+" : ""}${formatNumber(team.cpiChange)}</em>
           </article>
@@ -253,7 +253,7 @@
               <span class="movement-arrow" aria-hidden="true">${escapeHtml(movementIcon(team.movement))}</span>
               <span>${escapeHtml(movementLabel(team.movement))}</span>
             </strong>
-            <em>${escapeHtml(movementText(team.movement))} since prior CPI update</em>
+            <em>${escapeHtml(movementText(team.movement))} since prior WPI update</em>
           </article>
           <article>
             <span>Games Tracked</span>

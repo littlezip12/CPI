@@ -17,15 +17,15 @@ for(const [side,eventId] of Object.entries(expected)){
     'RELAY_FETCH_TIMEOUT_MS=4500',
     `RELAY_FRESH_MAX_AGE_MS=${side==='jo-boys'?'7':'20'}*60*1000`,
     'function fetchRelayDataset(config)',
-    "result.method='CPI live relay'",
+    "result.method='WPI live relay'",
     'result.isFallback=!relayStatusFresh(status)',
     "const relayPromise=fetchRelayDataset(config)",
     "sourceLabel='Official Google Sheet'",
-    "'CPI live relay'"
+    "'WPI live relay'"
   ])requireCondition(app.includes(token),`${side} is missing relay safeguard: ${token}`);
   const load=app.slice(app.indexOf('async function loadCurrentInternal'),app.indexOf('function selectDataset'));
-  requireCondition(load.indexOf('await relayPromise')>=0,`${side} never waits for the CPI relay`);
-  requireCondition(load.indexOf('await relayPromise')<load.indexOf('await livePromise'),`${side} must apply the CPI relay before a direct Google result`);
+  requireCondition(load.indexOf('await relayPromise')>=0,`${side} never waits for the WPI relay`);
+  requireCondition(load.indexOf('await relayPromise')<load.indexOf('await livePromise'),`${side} must apply the WPI relay before a direct Google result`);
   requireCondition(load.includes('if(relayApplied&&relayFresh)return;'),`${side} should retain a fresh relay when direct Google fails`);
 
   const registry=JSON.parse(fs.readFileSync(path.join(ROOT,'tournaments',side,'source-registry.json'),'utf8'));
@@ -77,7 +77,7 @@ for(const token of [
 ])requireCondition(relayScript.includes(token),`Relay builder is missing: ${token}`);
 
 console.log('JO LIVE RELAY 7.51.0 TESTS PASSED');
-console.log(' - Girls and Boys remain configured for the isolated CPI relay branch; scheduled refreshes prioritize the active Boys event');
+console.log(' - Girls and Boys remain configured for the isolated WPI relay branch; scheduled refreshes prioritize the active Boys event');
 console.log(' - Browsers apply the relay before direct Google and preserve a fresh relay if Google fails');
 console.log(' - Relay checks are bounded, freshness is explicit, and stale banks remain available');
 console.log(' - GitHub Actions refreshes the relay every five minutes without committing generated relay data to main');

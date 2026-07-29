@@ -1,5 +1,5 @@
 /*
-  CPI Release 6.2 — Editorial Homepage Feed
+  WPI Release 6.2 — Editorial Homepage Feed
   Replaces old middle homepage content with a cleaner publication-style feed.
 */
 
@@ -25,7 +25,7 @@
       if (!response.ok) throw new Error("homepage.json not found");
       return await response.json();
     } catch (error) {
-      console.warn("CPI Editorial Feed: using fallback config.", error);
+      console.warn("WPI Editorial Feed: using fallback config.", error);
       return FALLBACK;
     }
   }
@@ -90,7 +90,7 @@
         <div class="cpi-feed-recap-copy">
           <span>${safe(section.eyebrow, "Weekend Recap")}</span>
           <h2>${safe(section.title, "This Week in California Polo")}</h2>
-          <p>${safe(section.summary, "The latest CPI update brings new movement, new storylines, and new clubs to watch.")}</p>
+          <p>${safe(section.summary, "The latest WPI update brings new movement, new storylines, and new clubs to watch.")}</p>
           <a href="${safe(cta.url, "tournaments.html")}">${safe(cta.label, "View Full Recap")} →</a>
         </div>
         <div class="cpi-feed-recap-image">
@@ -105,11 +105,11 @@
     const cta = section.cta || {};
     const cards = items.map(item => `
       <a class="cpi-feed-story-card" href="${safe(item.url, "tournaments.html")}">
-        <img src="${safe(item.image, "assets/photos/editorial/polo-attacker-poolwide.jpg")}" alt="${safe(item.title, "CPI story")}">
+        <img src="${safe(item.image, "assets/photos/editorial/polo-attacker-poolwide.jpg")}" alt="${safe(item.title, "WPI story")}">
         <div>
           <span>${safe(item.category, "Story")}</span>
-          <h3>${safe(item.title, "CPI Story")}</h3>
-          <p>${safe(item.summary, "Follow the latest CPI movement and California water polo storylines.")}</p>
+          <h3>${safe(item.title, "WPI Story")}</h3>
+          <p>${safe(item.summary, "Follow the latest WPI movement and California water polo storylines.")}</p>
           <small>${safe(item.meta, "2 min read")}</small>
         </div>
       </a>
@@ -145,7 +145,7 @@
     const mount = findMount();
     mount.innerHTML = sections.map(renderSection).join("");
 
-    console.info("CPI Editorial Feed loaded", { sections: sections.length });
+    console.info("WPI Editorial Feed loaded", { sections: sections.length });
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

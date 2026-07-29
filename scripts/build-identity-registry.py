@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build CPI's canonical club/team identity layer from the published ranking snapshot.
+"""Build WPI's canonical club/team identity layer from the published ranking snapshot.
 
 The generated registry is deterministic and non-destructive:
 - one stable club ID per club slug;

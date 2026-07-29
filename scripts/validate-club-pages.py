@@ -24,7 +24,7 @@ def main():
             if club.get("rankedTeams", 0) == 0:
                 warnings.append(f"{slug}: no ranked teams yet")
 
-    print("CPI Club Intelligence Validation")
+    print("WPI Club Intelligence Validation")
     print("================================")
     print(f"Errors: {len(errors)}")
     print(f"Warnings: {len(warnings)}")

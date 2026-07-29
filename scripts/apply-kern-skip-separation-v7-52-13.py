@@ -7,7 +7,7 @@ Corrections:
 - SKIP's completed 14U Boys Futures history remains with SKIP and is not attributed to Kern Premier.
 - Kearns remains a separate Utah club and is not changed.
 
-This migration preserves rank positions, CPI values, JO records, placements, scores, and paths.
+This migration preserves rank positions, WPI values, JO records, placements, scores, and paths.
 """
 from __future__ import annotations
 
@@ -64,7 +64,7 @@ def patch_source_files() -> None:
             "assignedClubLevel": "A",
             "initialRank": "NR",
             "initialCPI": None,
-            "seasonEvidence": "No matching published Kern Premier CPI team before JOs",
+            "seasonEvidence": "No matching published Kern Premier WPI team before JOs",
             "bestWin": None,
             "reviewFlags": "Identity corrected: Kern Premier separated from SKIP",
             "rationale": "Official JO placement remains the ranking anchor; SKIP tournament history is excluded from Kern Premier.",
@@ -339,7 +339,7 @@ def main() -> int:
             "kernPremier": "2026 Junior Olympics placements and records",
             "skip": "True SKIP JO 18U Girls plus completed 14U Boys Futures club history",
         },
-        "guardrail": "Rank positions, CPI values, JO records, scores, placements, and tournament paths remain unchanged.",
+        "guardrail": "Rank positions, WPI values, JO records, scores, placements, and tournament paths remain unchanged.",
     }
     write("data/identity/kern-skip-separation-7.52.13.json", audit)
     print(json.dumps(audit, indent=2))

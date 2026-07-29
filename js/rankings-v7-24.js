@@ -1,4 +1,4 @@
-/* CPI Release 7.24 — simplified rankings page with Top 25 / View More */
+/* WPI Release 7.24 — simplified rankings page with Top 25 / View More */
 (function () {
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const state = { visibleCount: 25 };
@@ -137,7 +137,7 @@
           </a>
         </div>
         <div class="ranking-group"><span class="ranking-pill">${escapeHtml(team.group || "—")}</span></div>
-        <div class="ranking-cpi"><span class="ranking-detail-label">CPI</span><strong>${cpi}</strong></div>
+        <div class="ranking-cpi"><span class="ranking-detail-label">WPI</span><strong>${cpi}</strong></div>
         <div class="ranking-movement"><span class="ranking-move ${move}">${escapeHtml(movementLabel(team.movement))}</span></div>
         <div class="ranking-tournament"><span class="ranking-detail-label">Latest</span><strong>${escapeHtml(team.latestTournament || "—")}</strong><span>${escapeHtml(record)}</span></div>
         <div class="ranking-best-win"><span class="ranking-detail-label">Best win</span><strong>${escapeHtml(team.bestWinClean || "—")}</strong><span>${escapeHtml(team.gamesTracked || team.gamesLatest || "—")} tracked games</span></div>

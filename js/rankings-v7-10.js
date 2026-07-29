@@ -112,7 +112,7 @@
         <div>
           <h3>${escapeHtml(team.team)}</h3>
           <p>${escapeHtml(clubLabel(team))} · ${escapeHtml(team.group || "")}</p>
-          <p>CPI ${safeNumber(team.postCPI).toFixed(1)} · ${escapeHtml(movementLabel(team.movement))}</p>
+          <p>WPI ${safeNumber(team.postCPI).toFixed(1)} · ${escapeHtml(movementLabel(team.movement))}</p>
         </div>
       </a>
     `).join("");
@@ -135,7 +135,7 @@
           </a>
         </div>
         <div class="ranking-group"><span class="ranking-pill">${escapeHtml(team.group || "—")}</span></div>
-        <div class="ranking-cpi"><span class="ranking-detail-label">CPI</span><strong>${cpi}</strong></div>
+        <div class="ranking-cpi"><span class="ranking-detail-label">WPI</span><strong>${cpi}</strong></div>
         <div class="ranking-movement"><span class="ranking-move ${move}">${escapeHtml(movementLabel(team.movement))}</span></div>
         <div class="ranking-tournament"><span class="ranking-detail-label">Latest</span><strong>${escapeHtml(team.latestTournament || "—")}</strong><span>${escapeHtml(record)}</span></div>
         <div class="ranking-best-win"><span class="ranking-detail-label">Best win</span><strong>${escapeHtml(team.bestWinClean || "—")}</strong><span>${escapeHtml(team.gamesTracked || team.gamesLatest || "—")} tracked games</span></div>

@@ -1,4 +1,4 @@
-/* CPI Release 7.27 — rankings page polish and top-25 browsing UX */
+/* WPI Release 7.27 — rankings page polish and top-25 browsing UX */
 (function () {
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const LOGO_CACHE_VERSION = "7.50.2";
@@ -66,9 +66,9 @@
 
   function movementTitle(value) {
     const movement = safeNumber(value);
-    if (movement > 0) return `Moved up ${movement} spots since prior CPI snapshot`;
-    if (movement < 0) return `Moved down ${Math.abs(movement)} spots since prior CPI snapshot`;
-    return "No movement since prior CPI snapshot";
+    if (movement > 0) return `Moved up ${movement} spots since prior WPI snapshot`;
+    if (movement < 0) return `Moved down ${Math.abs(movement)} spots since prior WPI snapshot`;
+    return "No movement since prior WPI snapshot";
   }
 
   function teamUrl(team) {
@@ -148,10 +148,10 @@
     return `
       <a class="podium-card-v727 podium-${index + 1}" href="${escapeHtml(teamUrl(team))}" style="--team-primary:${escapeHtml(team.primaryColor || "#126dff")}">
         <span class="podium-rank-v727">#${escapeHtml(team.postRank || index + 1)}</span>
-        <img src="${escapeHtml(logo)}" alt="${escapeHtml(clubLabel(team))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.50.2'">
+        <img src="${escapeHtml(logo)}" alt="${escapeHtml(clubLabel(team))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.53.4'">
         <strong>${escapeHtml(team.team || "Team")}</strong>
         <em>${escapeHtml(clubLabel(team))}${team.region ? ` · ${escapeHtml(team.region)}` : ""}</em>
-        <b>${safeNumber(team.postCPI).toFixed(1)} CPI</b>
+        <b>${safeNumber(team.postCPI).toFixed(1)} WPI</b>
       </a>
     `;
   }
@@ -185,13 +185,13 @@
       <article class="ranking-row ranking-row-v727" style="--team-primary:${escapeHtml(team.primaryColor || "#126dff")}">
         <div class="ranking-rank ranking-rank-v727">#${escapeHtml(team.postRank || "—")}</div>
         <div class="ranking-team ranking-team-v727">
-          <img class="ranking-logo ranking-logo-v727" src="${escapeHtml(logo)}" alt="${escapeHtml(clubLabel(team))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.50.2'">
+          <img class="ranking-logo ranking-logo-v727" src="${escapeHtml(logo)}" alt="${escapeHtml(clubLabel(team))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.53.4'">
           <div>
             <a href="${escapeHtml(teamUrl(team))}"><strong>${escapeHtml(team.team)}</strong></a>
             <span><a href="${escapeHtml(clubUrl(team))}">${escapeHtml(clubLabel(team))}</a>${team.region ? ` · ${escapeHtml(team.region)}` : ""}</span>
           </div>
         </div>
-        <div class="ranking-cpi ranking-cpi-v727"><span class="ranking-detail-label">CPI</span><strong>${cpi}</strong></div>
+        <div class="ranking-cpi ranking-cpi-v727"><span class="ranking-detail-label">WPI</span><strong>${cpi}</strong></div>
         <div class="ranking-movement ranking-movement-v727"><span class="ranking-detail-label">Move</span><span class="ranking-move ${move}" title="${escapeHtml(movementTitle(team.movement))}">${escapeHtml(movementLabel(team.movement))}</span></div>
         <div class="ranking-tournament ranking-tournament-v727"><span class="ranking-detail-label">Latest</span><strong>${escapeHtml(team.latestTournament || "—")}</strong><span>${escapeHtml(record)}</span></div>
         <div class="ranking-best-win ranking-evidence-v727"><span class="ranking-detail-label">Evidence</span><strong>${escapeHtml(team.bestWinClean || "—")}</strong><span>${escapeHtml(evidenceLabel(team))}</span></div>

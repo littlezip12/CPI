@@ -1,8 +1,8 @@
-/* CPI Release 7.50.2 — canonical logo delivery/cache hotfix */
+/* WPI Release 7.53.4 — canonical logo delivery/cache hotfix */
 (function () {
   const FALLBACK = "assets/logos/cpi-logo-fallback.svg";
   const CANONICAL_PREFIX = "assets/logos/canonical/";
-  const CACHE_VERSION = "7.50.2";
+  const CACHE_VERSION = "7.53.4";
 
   function slugify(value) {
     return String(value || "")

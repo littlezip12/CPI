@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static release checks for CPI Junior Olympics schedule tools."""
+"""Static release checks for WPI Junior Olympics schedule tools."""
 from __future__ import annotations
 
 import json
@@ -172,7 +172,7 @@ print(f' - {len(EXPECTED_BOYS)} Boys divisions registered')
 print(' - Boys and Girls entry pages contain all required application mounts')
 print(' - Girls app and all 23 JO sources are represented in the central tournament registry')
 print(' - JO division seeds are metadata and display separately from clean team names')
-print(' - Both apps read CPI’s server-side relay first, retain direct Google fallback, and expose source freshness plus scheduled/completed counts')
+print(' - Both apps read WPI’s server-side relay first, retain direct Google fallback, and expose source freshness plus scheduled/completed counts')
 print(' - Boys sources use stable sheet names first, legacy GIDs second, and verified repository snapshots last')
 print(' - Local JO page assets resolve')
 print(' - JavaScript syntax checks passed')

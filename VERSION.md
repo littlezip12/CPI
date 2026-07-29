@@ -1,10 +1,8 @@
-# WPI 7.53.3
+# WPI 7.53.4
 
-Navigation and homepage clarity.
+Brand, Teams hub, and section landing refresh.
 
-- Retires Stories from public navigation while preserving the underlying archive and redirecting the former landing page to the current WPI product pathways.
-- Rewrites the homepage hero to explain WPI immediately and foreground rankings, team search, clubs, and tournament results.
-- Adds a first-class Teams navigation state and makes the universal search shortcut open the homepage team-and-club finder.
-- Replaces the story-driven homepage update module with a stable connected-platform guide.
-- Uses the same centralized navigation list across desktop and mobile layouts, with cache-busted shell assets on every HTML page.
-- Preserves all rankings, club identities, websites, logos, JO placements, sponsor framework data, and unified tournament histories.
+- Completes the public-facing naming migration from CPI / California Polo Index to WPI / Water Polo Index across HTML, JavaScript-rendered copy, public data, metadata, and fallback artwork.
+- Restores Teams as a dedicated primary-navigation destination with a searchable directory of ranked and tournament-connected profiles.
+- Introduces one responsive section-landing design across Rankings, Teams, Clubs, Tournaments, and Methodology.
+- Preserves all ranking positions and ratings, club identities and websites, logos, JO placements, tournament results, team histories, and sponsor framework data.

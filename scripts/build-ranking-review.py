@@ -130,7 +130,7 @@ def build(evidence: dict[str,Any], rankings: list[dict[str,Any]]) -> dict[str,An
     recommendations.sort(key=lambda x:(x['group'], -abs(x['evidenceScore']), x['currentRank'] or 999))
     return {
         'schemaVersion':1,'release':RELEASE,'generatedAt':evidence.get('generatedAt') or now_iso(),
-        'policy':'Recommendations are advisory review ranges only. CPI rankings never change automatically.',
+        'policy':'Recommendations are advisory review ranges only. WPI rankings never change automatically.',
         'counts':{'finalGames':len(final_games),'teamsWithFinalEvidence':len(recommendations),'moveUp':sum(r['recommendation']['direction']=='up' for r in recommendations),'moveDown':sum(r['recommendation']['direction']=='down' for r in recommendations),'hold':sum(r['recommendation']['direction']=='hold' for r in recommendations),'headToHeadItems':len(h2h),'commonOpponentItems':len(common_opponents),'hierarchyWarnings':len(hierarchy)},
         'recommendations':recommendations,'headToHead':h2h,'commonOpponents':common_opponents,'hierarchyWarnings':hierarchy
     }

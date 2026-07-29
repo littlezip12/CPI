@@ -1,5 +1,5 @@
 /*
-  CPI 5.3B — Smart Club Cards
+  WPI 5.3B — Smart Club Cards
 
   Uses data/club-intelligence.json when available.
   Enhances the Clubs landing page into a richer, ESPN-style club discovery page.
@@ -75,12 +75,12 @@
           <h3>${club.displayName}</h3>
           <div class="smart-club-meta">
             <span>${club.rankedTeams || 0} ranked teams</span>
-            <span>Avg CPI ${club.averageCPI || "—"}</span>
+            <span>Avg WPI ${club.averageCPI || "—"}</span>
           </div>
           <div class="smart-club-highlight">
             <small>Highest Ranked</small>
             <strong>${topTeam.team || "No ranked team yet"}</strong>
-            <em>${topTeam.rank ? `#${topTeam.rank}` : "—"}${topTeam.cpi ? ` · ${topTeam.cpi} CPI` : ""}</em>
+            <em>${topTeam.rank ? `#${topTeam.rank}` : "—"}${topTeam.cpi ? ` · ${topTeam.cpi} WPI` : ""}</em>
           </div>
           <div class="smart-club-footer">
             <span class="smart-club-move ${move}">${moveLabel(club.totalMovement)}</span>
@@ -118,7 +118,7 @@
         <div>
           <span class="smart-eyebrow">Club Intelligence</span>
           <h1>California water polo clubs, ranked and connected.</h1>
-          <p>Explore every CPI club by ranked teams, best current team, movement, region, and overall momentum.</p>
+          <p>Explore every WPI club by ranked teams, best current team, movement, region, and overall momentum.</p>
         </div>
       </section>
 
@@ -134,7 +134,7 @@
         <article class="smart-panel">
           <div class="smart-panel-title">
             <h2>Rising Clubs</h2>
-            <span>Based on CPI movement</span>
+            <span>Based on WPI movement</span>
           </div>
           <div class="smart-club-list">${risingRows}</div>
         </article>

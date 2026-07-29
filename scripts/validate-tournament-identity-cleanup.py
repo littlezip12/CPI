@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CPI 7.45.1 tournament identity cleanup and source verification safeguards."""
+"""Validate WPI 7.45.1 tournament identity cleanup and source verification safeguards."""
 from __future__ import annotations
 
 import json
@@ -151,7 +151,7 @@ if errors:
 
 print("TOURNAMENT IDENTITY CLEANUP VALIDATION PASSED")
 print(f" - {counts.get('participants')} real tournament participant identities remain after placeholder removal")
-print(f" - {counts.get('canonicalTeams')} participants resolve to canonical CPI teams")
+print(f" - {counts.get('canonicalTeams')} participants resolve to canonical WPI teams")
 print(f" - {counts.get('tournamentOnlyTeams')} verified tournament-only teams remain outside rankings")
 print(f" - {bracket_reference_count} bracket/pool slots remain structured references rather than teams")
 print(f" - {resolved_prefix_count} pool/seed-prefixed labels resolve through clean team names")

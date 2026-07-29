@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CPI 7.49 completed-tournament archive, profile links, and evidence quarantine."""
+"""Validate WPI 7.49 completed-tournament archive, profile links, and evidence quarantine."""
 from __future__ import annotations
 import json,subprocess
 from pathlib import Path
@@ -34,7 +34,7 @@ for rel in ['data/tournaments/quiksilver-cup-2026.json','data/tournaments/archiv
 for rel in ['tournament-archive.html','css/tournament-archive-v7-49.css','js/tournament-archive-v7-49.js','data/tournaments/archive/runtime.js','scripts/build-tournament-archive.py','.github/workflows/sync-tournament-archive.yml']:
  if not (ROOT/rel).exists(): fail(f'Missing archive asset: {rel}')
 html=(ROOT/'tournament-archive.html').read_text(encoding='utf-8')
-for token in ['data/tournaments/archive/runtime.js?v=7.49.1','js/tournament-archive-v7-49.js?v=7.49.1','archiveGames','archiveAge','archiveGender','archiveScope']:
+for token in ['data/tournaments/archive/runtime.js?v=7.53.4','js/tournament-archive-v7-49.js?v=7.53.4','archiveGames','archiveAge','archiveGender','archiveScope']:
  if token not in html: fail(f'Archive page missing token: {token}')
 results=(ROOT/'tournaments/results-app.js').read_text(encoding='utf-8')
 for token in ['quiksilver-cup-2026.json','2026-boys-futures-super-finals.json','2026-girls-us-club-championships.json']:

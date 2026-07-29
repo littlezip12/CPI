@@ -137,7 +137,7 @@ def canonical_club_name(value: str) -> str:
 
 def initials(value: str) -> str:
     words = re.findall(r"[A-Za-z0-9]+", str(value or ""))
-    return "".join(w[0].upper() for w in words[:3]) or "CPI"
+    return "".join(w[0].upper() for w in words[:3]) or "WPI"
 
 
 def team_depth_label(depth: int) -> str:

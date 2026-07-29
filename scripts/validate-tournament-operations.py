@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CPI 7.48 universal tournament operations outputs and workflow wiring."""
+"""Validate WPI 7.48 universal tournament operations outputs and workflow wiring."""
 from __future__ import annotations
 
 import json
@@ -108,7 +108,7 @@ for rel in [
         fail(f"Missing tournament operations asset: {rel}")
 
 html = (ROOT / "tournament-operations.html").read_text(encoding="utf-8") if (ROOT / "tournament-operations.html").exists() else ""
-for token in ["data/tournaments/operations/runtime.js?v=7.48.0", "js/tournament-operations-v7-47.js?v=7.48.0", "opsRows", "opsAlertBanner", "tournament-archive.html"]:
+for token in ["data/tournaments/operations/runtime.js?v=7.53.4", "js/tournament-operations-v7-47.js?v=7.53.4", "opsRows", "opsAlertBanner", "tournament-archive.html"]:
     if token not in html:
         fail(f"Tournament operations page is missing required token: {token}")
 

@@ -4,25 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Club Directory | Water Polo Index</title>
-  <meta name="description" content="Explore California youth water polo clubs by region, ranked team count, CPI footprint, and best ranked teams.">
+  <meta name="description" content="Explore California youth water polo clubs by region, ranked team count, WPI footprint, and best ranked teams.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=7.30.2">
-<link rel="stylesheet" href="css/homepage-v8.css?v=7.30.2">
-  <link rel="stylesheet" href="css/club-intelligence-v7-6.css?v=7.30.2">
-  <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.30.2">
-  <link rel="stylesheet" href="css/page-simplification-v7-24.css?v=7.30.2">
-  <link rel="stylesheet" href="css/club-directory-v7-26.css?v=7.30.2">  <link rel="stylesheet" href="css/sponsor-framework-v7-53-2.css?v=7.53.2">
-  <link rel="stylesheet" href="css/command-palette.css?v=7.52.3">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+<link rel="stylesheet" href="css/homepage-v8.css?v=7.53.4">
+  <link rel="stylesheet" href="css/club-intelligence-v7-6.css?v=7.53.4">
+  <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.53.4">
+  <link rel="stylesheet" href="css/page-simplification-v7-24.css?v=7.53.4">
+  <link rel="stylesheet" href="css/club-directory-v7-26.css?v=7.53.4">  <link rel="stylesheet" href="css/sponsor-framework-v7-53-2.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
 
-  <link rel="stylesheet" href="css/site-shell.css?v=7.53.3">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.53.4">
+  <link rel="stylesheet" href="css/section-landing-v7-53-4.css?v=7.53.4">
 </head>
 <body class="cpi-v8-home club-intelligence-page clubs-page-v724 clubs-page-v726">
   <header class="cpi-v8-header">
     <div class="cpi-v8-header-inner">
       <a class="cpi-v8-brand" href="index.html" aria-label="Water Polo Index Home">
-        <span class="cpi-v8-brand-mark">CPI</span>
+        <span class="cpi-v8-brand-mark">WPI</span>
         <span class="cpi-v8-brand-text">
           <strong>Water Polo Index</strong>
           <em>Rankings. Results. Club intelligence.</em>
@@ -41,24 +42,26 @@
   </header>
 
   <main class="club-intel-shell" id="clubIntelApp">
-    <section class="club-intel-hero" aria-labelledby="clubIntelTitle">
-      <div class="club-intel-hero-copy">
-        <p class="club-intel-eyebrow">Club directory</p>
-        <h1 id="clubIntelTitle">Explore the CPI club map.</h1>
-        <p>Browse clubs by region, ranked team count, best rank, and age-group footprint. Start with the top 25 clubs, filter by region, or search for a specific program.</p>
-        <div class="club-intel-actions">
-          <a class="club-intel-btn" href="#club-directory">Explore clubs</a>
-          <a class="club-intel-btn secondary" href="rankings.html">View rankings</a>
+    <section class="wpi-section-hero wpi-section-hero--clubs" aria-labelledby="clubIntelTitle">
+      <div class="wpi-section-hero-copy">
+        <p class="wpi-section-kicker">Club directory</p>
+        <h1 id="clubIntelTitle">Every club, team, and result in one connected view.</h1>
+        <p>Browse programs by region, ranked-team depth, best current rank, and age-group footprint. Each club profile connects its teams, tournament history, logo, location, and website.</p>
+        <div class="wpi-section-hero-actions">
+          <a class="wpi-section-action" href="#club-directory">Explore clubs</a>
+          <a class="wpi-section-action secondary" href="teams.html">Find a team</a>
+        </div>
+        <div class="wpi-section-hero-facts" aria-label="Club directory summary">
+          <span><strong id="clubTotalCount">—</strong>Clubs tracked</span>
+          <span><strong id="clubTeamCount">—</strong>Ranked teams</span>
+          <span><strong id="clubRegionCount">—</strong>Regions</span>
+          <span><strong>Profiles</strong>Teams + results + websites</span>
         </div>
       </div>
-      <aside class="club-intel-hero-card" aria-label="Club intelligence summary">
-        <span>Clubs tracked</span>
-        <strong id="clubTotalCount">—</strong>
-        <div class="club-intel-metric-row">
-          <div><small>Ranked teams</small><b id="clubTeamCount">—</b></div>
-          <div><small>Regions</small><b id="clubRegionCount">—</b></div>
-        </div>
-      </aside>
+      <figure class="wpi-section-hero-media">
+        <img src="assets/photos/editorial/polo-team-photo.jpg" alt="Youth water polo team gathered together" loading="eager">
+        <figcaption>Club profiles bring rankings, teams, tournament results, and program information together.</figcaption>
+      </figure>
     </section>
 
     <section class="club-intel-dashboard" aria-label="Club intelligence dashboard">
@@ -108,7 +111,7 @@
   <footer class="cpi-v8-footer">
     <div class="inner">
       <div class="brand">
-        <a href="index.html"><span>CPI</span><div><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></div></a>
+        <a href="index.html"><span>WPI</span><div><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></div></a>
         <p>Independent and unofficial rankings, results, and club intelligence for California youth water polo.</p>
       </div>
       <nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav>
@@ -118,13 +121,13 @@
     <div class="bottom">© 2026 Water Polo Index. All rights reserved.</div>
   </footer>
 
-  <script src="data.js?v=7.52.16"></script>
-  <script src="js/club-intelligence-v7-26.js?v=7.52.5"></script>
-<script src="js/page-polish-v7-22.js?v=7.30.2"></script>
-  <script src="js/logo-display-v7-23-6.js?v=7.50.2"></script>  <script src="data/sponsors/runtime.js?v=7.53.2"></script>
-  <script src="js/sponsor-framework-v7-53-2.js?v=7.53.2"></script>
-  <script defer src="js/command-palette.js?v=7.52.3"></script>
+  <script src="data.js?v=7.53.4"></script>
+  <script src="js/club-intelligence-v7-26.js?v=7.53.4"></script>
+<script src="js/page-polish-v7-22.js?v=7.53.4"></script>
+  <script src="js/logo-display-v7-23-6.js?v=7.53.4"></script>  <script src="data/sponsors/runtime.js?v=7.53.4"></script>
+  <script src="js/sponsor-framework-v7-53-2.js?v=7.53.4"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
 
-  <script defer src="js/site-shell.js?v=7.53.3"></script>
+  <script defer src="js/site-shell.js?v=7.53.4"></script>
 </body>
 </html>

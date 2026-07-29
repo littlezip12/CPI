@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build CPI historical tournament archive, placements, and profile links."""
+"""Build WPI historical tournament archive, placements, and profile links."""
 from __future__ import annotations
 
 import json
@@ -329,7 +329,7 @@ def main() -> int:
                     "darkScore": game.get("darkScore"),
                     "scoreDisplay": game.get("scoreDisplay"),
                     "status": "Final" if game.get("status") == "final" else "Scheduled",
-                    "source": "CPI normalized archive",
+                    "source": "WPI normalized archive",
                 }
                 for game in event_games
             ],

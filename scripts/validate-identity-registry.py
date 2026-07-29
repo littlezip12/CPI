@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CPI 7.40 canonical club/team identity outputs."""
+"""Validate WPI 7.40 canonical club/team identity outputs."""
 from __future__ import annotations
 
 import json
@@ -177,9 +177,9 @@ for pair in [
 
 for rel in ["tournaments/jo-boys/index.html", "tournaments/jo-girls/index.html"]:
     text = (ROOT / rel).read_text(encoding="utf-8")
-    runtime_pos = text.find(f"../../data/identity/runtime.js?v={site_release.get('identityRelease', '7.40.0')}")
-    resolver_pos = text.find(f"../../js/cpi-identity.js?v={site_release.get('identityRelease', '7.41.0')}")
-    app_version = site_release.get("joApplicationRelease", "7.49.1")
+    runtime_pos = text.find(f"../../data/identity/runtime.js?v={site_release.get('version', '7.53.4')}")
+    resolver_pos = text.find(f"../../js/cpi-identity.js?v={site_release.get('version', '7.53.4')}")
+    app_version = site_release.get("version", "7.53.4")
     app_pos = text.find(f'src="app.js?v={app_version}"')
     if min(runtime_pos, resolver_pos, app_pos) < 0:
         fail(f"{rel} does not load the identity runtime, resolver, and JO app")

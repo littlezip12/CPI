@@ -10,7 +10,7 @@ site=load('config/site-release.json')
 clubs=load('clubs.json'); rankings=load('rankings.json'); identity=load('data/identity/index.json')
 bridge=load('data/tournaments/jo-profile-bridge.json'); audit=load('data/identity/club-family-cleanup-7.52.12.json')
 by_slug={c.get('slug'):c for c in clubs}
-if site.get('version') not in {'7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3'}: fail('site version must preserve the 7.52.12 cleanup')
+if site.get('version') not in {'7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4'}: fail('site version must preserve the 7.52.12 cleanup')
 if len(clubs)!=182: fail(f'expected 182 unique public clubs, found {len(clubs)}')
 for stale in ['clovis-red','vnited']:
     if stale in by_slug: fail(f'duplicate public club remains: {stale}')
@@ -39,10 +39,10 @@ for path in (ROOT/'data/tournaments/normalized').glob('*/*.json'):
             for pattern,expected in rules:
                 if pattern.match(name) and participant.get('clubId')!=expected:
                     fail(f'{path.relative_to(ROOT)}: {name} resolves to {participant.get("clubId")} not {expected}')
-# Rank order/CPI values are untouched.
+# Rank order/WPI values are untouched.
 canonical=[{'group':r.get('group'),'rank':r.get('postRank'),'cpi':r.get('postCPI')} for r in rankings]
 rank_hash=hashlib.sha256(json.dumps(canonical,sort_keys=True,separators=(',',':')).encode()).hexdigest()
-if rank_hash!='e18d2cd2855c174311fcc7cd7d507afa1e22f37f68bfb21765a58cd8f035cbdb': fail('rank/CPI integrity hash changed')
+if rank_hash!='e18d2cd2855c174311fcc7cd7d507afa1e22f37f68bfb21765a58cd8f035cbdb': fail('rank/WPI integrity hash changed')
 for rel in ['club/clovis-red.html','club/vnited.html']:
     text=(ROOT/rel).read_text(encoding='utf-8') if (ROOT/rel).exists() else ''
     if 'location.replace' not in text: fail(f'compatibility redirect missing: {rel}')
@@ -59,4 +59,4 @@ print(' - Clovis and Visalia duplicate club families are consolidated across ran
 print(' - Kern Premier, Kearns, and SKIP remain distinct canonical identities')
 print(' - JO-only teams appear in core club navigation and route to team profiles')
 print(' - All normalized tournament history uses the corrected club identities')
-print(' - Rank order, CPI values, scores, placements, and paths remain unchanged')
+print(' - Rank order, WPI values, scores, placements, and paths remain unchanged')

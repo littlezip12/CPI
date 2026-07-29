@@ -1,0 +1,232 @@
+/* WPI 7.53.4 — shared section landing experience */
+:root {
+  --wpi-section-navy: #071426;
+  --wpi-section-blue: #126dff;
+  --wpi-section-aqua: #2bd7f3;
+  --wpi-section-gold: #f6b700;
+  --wpi-section-white: #ffffff;
+  --wpi-section-muted: #c9d4e3;
+  --wpi-section-border: rgba(255,255,255,.15);
+}
+
+.wpi-section-hero {
+  position: relative;
+  width: min(1640px, calc(100% - 40px));
+  min-height: 380px;
+  margin: 34px auto 38px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(360px, .82fr);
+  overflow: hidden;
+  border-radius: 32px;
+  color: var(--wpi-section-white);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(18,109,255,.34), transparent 34%),
+    radial-gradient(circle at 80% 18%, rgba(246,183,0,.22), transparent 32%),
+    linear-gradient(135deg, #071426 0%, #0b203a 54%, #102f4b 100%);
+  box-shadow: 0 28px 70px rgba(7,20,38,.22);
+  isolation: isolate;
+}
+
+.wpi-section-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to right, #000, transparent 70%);
+  z-index: -1;
+}
+
+.wpi-section-hero-copy {
+  padding: clamp(38px, 5vw, 76px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wpi-section-kicker {
+  margin: 0 0 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #7fdcf3;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.wpi-section-kicker::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--wpi-section-gold);
+  box-shadow: 0 0 0 6px rgba(246,183,0,.12);
+}
+
+.wpi-section-hero h1 {
+  margin: 0;
+  max-width: 900px;
+  color: #fff;
+  font-size: clamp(44px, 5.4vw, 82px);
+  line-height: .96;
+  letter-spacing: -.055em;
+  text-wrap: balance;
+}
+
+.wpi-section-hero-copy > p:not(.wpi-section-kicker) {
+  max-width: 790px;
+  margin: 24px 0 0;
+  color: var(--wpi-section-muted);
+  font-size: clamp(17px, 1.5vw, 22px);
+  line-height: 1.55;
+}
+
+.wpi-section-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.wpi-section-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: 999px;
+  color: var(--wpi-section-navy);
+  background: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 12px 24px rgba(0,0,0,.14);
+  transition: transform .16s ease, background .16s ease, color .16s ease;
+}
+
+.wpi-section-action:hover { transform: translateY(-2px); }
+.wpi-section-action.secondary {
+  color: #fff;
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.22);
+  box-shadow: none;
+}
+.wpi-section-action.secondary:hover { background: rgba(255,255,255,.15); }
+
+.wpi-section-hero-facts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 34px;
+}
+
+.wpi-section-hero-facts > span,
+.wpi-section-hero-facts > div {
+  min-width: 0;
+  padding: 14px 15px;
+  border: 1px solid var(--wpi-section-border);
+  border-radius: 17px;
+  background: rgba(255,255,255,.075);
+  backdrop-filter: blur(10px);
+  color: #dbe5f2;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.wpi-section-hero-facts strong,
+.wpi-section-hero-facts b {
+  display: block;
+  margin-bottom: 3px;
+  color: #fff;
+  font-size: clamp(18px, 2vw, 29px);
+  line-height: 1;
+}
+
+.wpi-section-hero-media {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #0d2945;
+}
+
+.wpi-section-hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #071426 0%, rgba(7,20,38,.38) 22%, transparent 58%), linear-gradient(0deg, rgba(7,20,38,.58), transparent 56%);
+  pointer-events: none;
+}
+
+.wpi-section-hero-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  display: block;
+  object-fit: cover;
+}
+
+.wpi-section-hero-media figcaption {
+  position: absolute;
+  z-index: 1;
+  left: 34px;
+  right: 34px;
+  bottom: 30px;
+  padding: 15px 17px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 18px;
+  color: #fff;
+  background: rgba(7,20,38,.68);
+  backdrop-filter: blur(12px);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.wpi-section-hero--clubs .wpi-section-kicker { color: #a9f0d2; }
+.wpi-section-hero--tournaments .wpi-section-kicker { color: #ffe39a; }
+.wpi-section-hero--methodology .wpi-section-kicker { color: #b8c7ff; }
+.wpi-section-hero--teams .wpi-section-kicker { color: #87e4ff; }
+
+/* Remove the oversized legacy landing treatments when the shared hero is present. */
+.rankings-page .wpi-section-hero,
+.club-intelligence-page .wpi-section-hero,
+.tournaments-page .wpi-section-hero,
+.methodology-page .wpi-section-hero,
+.teams-page .wpi-section-hero { box-sizing: border-box; }
+
+.rankings-page .rankings-shell,
+.club-intelligence-page .club-intel-shell,
+.tournaments-page .cpi-tournaments-main,
+.methodology-page .cpi-polish-main,
+.teams-page .teams-shell { padding-top: 0 !important; }
+
+@media (max-width: 1050px) {
+  .wpi-section-hero { grid-template-columns: 1fr; }
+  .wpi-section-hero-media { min-height: 300px; }
+  .wpi-section-hero-media img { min-height: 300px; }
+  .wpi-section-hero-media::after { background: linear-gradient(0deg, rgba(7,20,38,.72), transparent 65%); }
+}
+
+@media (max-width: 720px) {
+  .wpi-section-hero {
+    width: min(100% - 22px, 1640px);
+    margin: 18px auto 26px;
+    border-radius: 24px;
+  }
+  .wpi-section-hero-copy { padding: 32px 24px 28px; }
+  .wpi-section-hero h1 { font-size: clamp(39px, 13vw, 58px); }
+  .wpi-section-hero-copy > p:not(.wpi-section-kicker) { font-size: 16px; }
+  .wpi-section-hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wpi-section-hero-media,
+  .wpi-section-hero-media img { min-height: 245px; }
+  .wpi-section-hero-media figcaption { left: 20px; right: 20px; bottom: 18px; }
+}

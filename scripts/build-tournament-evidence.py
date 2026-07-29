@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build reusable team evidence and tournament-only identity registries from normalized CPI games."""
+"""Build reusable team evidence and tournament-only identity registries from normalized WPI games."""
 from __future__ import annotations
 
 import csv

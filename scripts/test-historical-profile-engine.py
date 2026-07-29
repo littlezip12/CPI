@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression tests for CPI 7.49 historical profile summaries."""
+"""Regression tests for WPI 7.49 historical profile summaries."""
 from pathlib import Path
 import json
 

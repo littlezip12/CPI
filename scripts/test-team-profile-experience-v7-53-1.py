@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 def fail(msg): errors.append(msg)
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version') not in {'7.53.1','7.53.2','7.53.3'}: fail('site version must preserve the 7.53.1 team experience')
+if site.get('version') not in {'7.53.1','7.53.2','7.53.3','7.53.4'}: fail('site version must preserve the 7.53.1 team experience')
 if site.get('teamProfileRelease')!='7.53.1' or site.get('teamExperienceRelease')!='7.53.1': fail('team release fields must be 7.53.1')
 if site.get('rankingDataRelease')!='7.52.13': fail('ranking data release changed')
 if site.get('clubProfileRelease')!='7.53.0': fail('club profile release changed')
@@ -17,20 +17,20 @@ if len(clubs)!=182: fail(f'club count changed: {len(clubs)}')
 if jo.get('summary',{}).get('teamPlacements')!=976: fail('JO placement count changed')
 html=(ROOT/'team.html').read_text()
 ordered=[
- 'data/tournaments/evidence/runtime.js?v=7.45.1',
- 'data/tournaments/history/runtime.js?v=7.49.1',
- 'data/tournaments/archive/runtime.js?v=7.49.1',
- 'data/tournaments/jo-profile-runtime.js?v=7.52.13',
- 'js/jo-live-team-history-v7-53-1.js?v=7.53.1',
- 'js/team-profile-v7-42.js?v=7.52.13',
- 'js/team-tournament-history-v7-53-1.js?v=7.53.1'
+ 'data/tournaments/evidence/runtime.js?v=7.53.4',
+ 'data/tournaments/history/runtime.js?v=7.53.4',
+ 'data/tournaments/archive/runtime.js?v=7.53.4',
+ 'data/tournaments/jo-profile-runtime.js?v=7.53.4',
+ 'js/jo-live-team-history-v7-53-1.js?v=7.53.4',
+ 'js/team-profile-v7-42.js?v=7.53.4',
+ 'js/team-tournament-history-v7-53-1.js?v=7.53.4'
 ]
 positions=[]
 for token in ordered:
  pos=html.find(token); positions.append(pos)
  if pos<0: fail(f'team.html missing {token}')
 if all(pos>=0 for pos in positions) and positions!=sorted(positions): fail('team profile assets load in the wrong order')
-if 'css/team-tournament-history-v7-53-1.css?v=7.53.1' not in html: fail('team history CSS missing')
+if 'css/team-tournament-history-v7-53-1.css?v=7.53.4' not in html: fail('team history CSS missing')
 for rel,tokens in {
  'js/team-tournament-history-v7-53-1.js':['Tournament history','WPI_JO_LIVE_HISTORY','CPI_TOURNAMENT_ARCHIVE','Open complete JO journey','opponentTeamPage'],
  'js/jo-live-team-history-v7-53-1.js':['cpi-live-relay','docs.google.com','resolveTournament','gameForTeam'],

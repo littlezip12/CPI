@@ -1,8 +1,8 @@
 (function(){
   const slides=[
     {tag:'Featured Story',title:'Skip Water Polo Captures D3 Title in Dominant Run',summary:'Behind a balanced attack and lockdown defense, Skip secures the D3 championship and cements its place among California’s elite.',image:'assets/photos/editorial/polo-shooter-close.jpg',primary:['Read Full Story','tournaments.html'],secondary:['View Rankings','rankings.html']},
-    {tag:'Rankings',title:'La Jolla United A Holds the #1 Spot in 14U Boys',summary:'The latest CPI update keeps La Jolla United A on top after another strong weekend performance.',image:'assets/photos/editorial/polo-attacker-poolwide.jpg',primary:['View Rankings','14u-boys.html'],secondary:['Explore Clubs','clubs.html']},
-    {tag:'Club Intelligence',title:'Trending Clubs Are Turning Movement Into Stories',summary:'Momentum, depth, and tournament performance are beginning to define the CPI club landscape.',image:'assets/photos/editorial/polo-team-huddle.jpg',primary:['Explore Clubs','clubs.html'],secondary:['View Movers','rankings.html']}
+    {tag:'Rankings',title:'La Jolla United A Holds the #1 Spot in 14U Boys',summary:'The latest WPI update keeps La Jolla United A on top after another strong weekend performance.',image:'assets/photos/editorial/polo-attacker-poolwide.jpg',primary:['View Rankings','14u-boys.html'],secondary:['Explore Clubs','clubs.html']},
+    {tag:'Club Intelligence',title:'Trending Clubs Are Turning Movement Into Stories',summary:'Momentum, depth, and tournament performance are beginning to define the WPI club landscape.',image:'assets/photos/editorial/polo-team-huddle.jpg',primary:['Explore Clubs','clubs.html'],secondary:['View Movers','rankings.html']}
   ];
   let idx=0,timer;
   function qs(s){return document.querySelector(s)}

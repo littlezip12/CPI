@@ -1,5 +1,5 @@
 /*
-  CPI Release 7.0.1 — Homepage Cleanup
+  WPI Release 7.0.1 — Homepage Cleanup
 
   Purpose:
   - Retires old homepage sections.
@@ -129,7 +129,7 @@
     removeEmptyContainers();
     orderHomepageSections();
 
-    console.info("CPI Homepage v7 cleanup loaded");
+    console.info("WPI Homepage v7 cleanup loaded");
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

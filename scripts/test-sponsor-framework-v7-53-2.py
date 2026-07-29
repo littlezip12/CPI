@@ -95,18 +95,18 @@ sub_pages = [
 for rel in root_pages:
     text = (ROOT / rel).read_text()
     for ref in (
-        'css/sponsor-framework-v7-53-2.css?v=7.53.2',
-        'data/sponsors/runtime.js?v=7.53.2',
-        'js/sponsor-framework-v7-53-2.js?v=7.53.2',
+        'css/sponsor-framework-v7-53-2.css?v=7.53.4',
+        'data/sponsors/runtime.js?v=7.53.4',
+        'js/sponsor-framework-v7-53-2.js?v=7.53.4',
     ):
         if ref not in text:
             fail(f"{rel} missing {ref}")
 for rel in sub_pages:
     text = (ROOT / rel).read_text()
     for ref in (
-        '../../css/sponsor-framework-v7-53-2.css?v=7.53.2',
-        '../../data/sponsors/runtime.js?v=7.53.2',
-        '../../js/sponsor-framework-v7-53-2.js?v=7.53.2',
+        '../../css/sponsor-framework-v7-53-2.css?v=7.53.4',
+        '../../data/sponsors/runtime.js?v=7.53.4',
+        '../../js/sponsor-framework-v7-53-2.js?v=7.53.4',
     ):
         if ref not in text:
             fail(f"{rel} missing {ref}")

@@ -32,13 +32,13 @@
       <header class="cpi-v3-header">
         <div class="cpi-v3-header-inner">
           <a class="cpi-v3-brand" href="index.html">
-            <span>CPI</span>
-            <div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div>
+            <span>WPI</span>
+            <div><strong>Water Polo Index</strong><em>Ranked. Respected. Earned.</em></div>
           </a>
           <nav class="cpi-v3-nav">
             <a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a>
           </nav>
-          <button class="cpi-shell-search cpi-v3-search" type="button">Search CPI</button>
+          <button class="cpi-shell-search cpi-v3-search" type="button">Search WPI</button>
         </div>
       </header>`;
   }
@@ -46,7 +46,7 @@
   function currentSlide() {
     const slides = config.hero && Array.isArray(config.hero.slides) ? config.hero.slides : [];
     return slides[heroIndex] || {
-      tag: "Featured Story", title: "California Polo Index",
+      tag: "Featured Story", title: "Water Polo Index",
       summary: "Rankings, stories, and club intelligence for California youth water polo.",
       image: "assets/photos/editorial/polo-shooter-close.jpg",
       primaryCta: { label: "View Rankings", url: "rankings.html" },
@@ -66,7 +66,7 @@
         <div class="cpi-v3-hero-inner">
           <div class="cpi-v3-hero-copy">
             <span>${safe(s.tag, "Featured Story")}</span>
-            <h1>${safe(s.title, "California Polo Index")}</h1>
+            <h1>${safe(s.title, "Water Polo Index")}</h1>
             <p>${safe(s.summary, "Rankings, stories, and club intelligence for California youth water polo.")}</p>
             <div class="cpi-v3-actions">
               <a class="primary" href="${safe(s.primaryCta && s.primaryCta.url, "rankings.html")}">${safe(s.primaryCta && s.primaryCta.label, "View Rankings")} →</a>
@@ -87,8 +87,8 @@
         <div class="cpi-v3-story-grid">
           ${items.map(story => `
             <a class="cpi-v3-story-card" href="${safe(story.url, "tournaments.html")}">
-              <img src="${safe(story.image, "assets/photos/editorial/polo-attacker-poolwide.jpg")}" alt="${safe(story.title, "CPI story")}">
-              <div><span>${safe(story.category, "Story")}</span><h3>${safe(story.title, "CPI Story")}</h3><p>${safe(story.summary, "Follow the latest CPI storylines.")}</p><small>${safe(story.meta, "2 min read")}</small></div>
+              <img src="${safe(story.image, "assets/photos/editorial/polo-attacker-poolwide.jpg")}" alt="${safe(story.title, "WPI story")}">
+              <div><span>${safe(story.category, "Story")}</span><h3>${safe(story.title, "WPI Story")}</h3><p>${safe(story.summary, "Follow the latest WPI storylines.")}</p><small>${safe(story.meta, "2 min read")}</small></div>
             </a>`).join("")}
         </div>
       </section>`;
@@ -152,11 +152,11 @@
 
   function newsletter() {
     const n = config.newsletter || {};
-    return `<section class="cpi-v3-newsletter"><div class="icon">✉</div><div><h2>${safe(n.title,"Stay in the Game")}</h2><p>${safe(n.summary,"Get CPI rankings, recaps, and stories delivered 1–2 times per month.")}</p></div><form><input type="email" placeholder="${safe(n.placeholder,"Enter your email")}"><button type="button">${safe(n.button,"Subscribe")}</button></form></section>`;
+    return `<section class="cpi-v3-newsletter"><div class="icon">✉</div><div><h2>${safe(n.title,"Stay in the Game")}</h2><p>${safe(n.summary,"Get WPI rankings, recaps, and stories delivered 1–2 times per month.")}</p></div><form><input type="email" placeholder="${safe(n.placeholder,"Enter your email")}"><button type="button">${safe(n.button,"Subscribe")}</button></form></section>`;
   }
 
   function footer() {
-    return `<footer class="cpi-v3-footer"><div class="inner"><div class="brand"><a href="index.html"><span>CPI</span><div><strong>California Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a><p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p></div><nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav><nav><h3>Age Groups</h3><a href="12u-boys.html">12U</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a></nav><div><h3>About CPI</h3><p>The California Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div></div><div class="bottom">© ${new Date().getFullYear()} California Polo Index. All rights reserved.</div></footer>`;
+    return `<footer class="cpi-v3-footer"><div class="inner"><div class="brand"><a href="index.html"><span>WPI</span><div><strong>Water Polo Index</strong><em>Ranked. Respected. Earned.</em></div></a><p>Independent and unofficial rankings, stories, and club intelligence for California youth water polo.</p></div><nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav><nav><h3>Age Groups</h3><a href="12u-boys.html">12U</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a></nav><div><h3>About WPI</h3><p>The Water Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div></div><div class="bottom">© ${new Date().getFullYear()} Water Polo Index. All rights reserved.</div></footer>`;
   }
 
   function render() {
@@ -180,7 +180,7 @@
     if (!isHome()) return;
     config = await fetchJson("data/homepage.json") || {};
     render();
-    console.info("CPI Homepage V3 rendered");
+    console.info("WPI Homepage V3 rendered");
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

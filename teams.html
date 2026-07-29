@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teams | Water Polo Index</title>
+  <meta name="description" content="Search ranked and tournament-connected youth water polo team profiles by team, club, age group, and gender.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.53.4">
+  <link rel="stylesheet" href="css/section-landing-v7-53-4.css?v=7.53.4">
+  <link rel="stylesheet" href="css/teams-directory-v7-53-4.css?v=7.53.4">
+</head>
+<body class="cpi-v8-home teams-page">
+  <main class="teams-shell">
+    <section class="wpi-section-hero wpi-section-hero--teams" aria-labelledby="teamsTitle">
+      <div class="wpi-section-hero-copy">
+        <p class="wpi-section-kicker">Connected profiles</p>
+        <h1 id="teamsTitle">Find every team connected to WPI.</h1>
+        <p>Search ranked teams and tournament-only profiles in one directory, then open current rankings, club connections, placements, and game-by-game tournament history.</p>
+        <div class="wpi-section-hero-actions">
+          <a class="wpi-section-action" href="#team-directory">Find a team</a>
+          <a class="wpi-section-action secondary" href="rankings.html">Explore rankings</a>
+        </div>
+        <div class="wpi-section-hero-facts" aria-label="Team directory summary">
+          <span><strong id="teamsRankedCount">—</strong>Ranked teams</span>
+          <span><strong id="teamsProfileCount">—</strong>Total profiles</span>
+          <span><strong id="teamsClubCount">—</strong>Connected clubs</span>
+          <span><strong id="teamsGroupCount">—</strong>Age/gender groups</span>
+        </div>
+      </div>
+      <figure class="wpi-section-hero-media">
+        <img src="assets/photos/editorial/polo-team-huddle.jpg" alt="Youth water polo team gathered in a pool huddle" loading="eager">
+        <figcaption>Ranked and tournament-connected teams now share one searchable home.</figcaption>
+      </figure>
+    </section>
+
+    <section class="teams-directory" id="team-directory" aria-labelledby="teamDirectoryTitle">
+      <div class="teams-directory-toolbar" aria-label="Team directory filters">
+        <label class="sr-only" for="teamSearch">Search team or club</label>
+        <input id="teamSearch" type="search" placeholder="Search team or club…" autocomplete="off">
+        <label class="sr-only" for="teamGroupFilter">Filter by age and gender</label>
+        <select id="teamGroupFilter"><option value="all">All age groups</option></select>
+        <label class="sr-only" for="teamTypeFilter">Filter by profile type</label>
+        <select id="teamTypeFilter"><option value="all">All profiles</option><option value="ranked">Ranked teams</option><option value="tournament">Tournament-only teams</option></select>
+      </div>
+      <div class="teams-directory-summary">
+        <div><p>Team directory</p><h2 id="teamDirectoryTitle">Open a team profile</h2></div>
+        <span class="teams-directory-count" id="teamDirectoryCount">Loading teams…</span>
+      </div>
+      <div class="teams-grid" id="teamDirectoryGrid" aria-live="polite"></div>
+      <div class="teams-load-more"><button id="teamLoadMore" type="button" hidden>Show more teams</button></div>
+    </section>
+  </main>
+  <script src="data.js?v=7.53.4"></script>
+  <script src="data/tournaments/jo-profile-runtime.js?v=7.53.4"></script>
+  <script src="js/teams-directory-v7-53-4.js?v=7.53.4"></script>
+  <script src="js/logo-display-v7-23-6.js?v=7.53.4"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.53.4"></script>
+</body>
+</html>

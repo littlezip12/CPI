@@ -1,6 +1,6 @@
-# CPI tournament operations
+# WPI tournament operations
 
-Generated: **2026-07-29T00:50:26Z**
+Generated: **2026-07-29T02:11:35Z**
 
 - Live divisions: **23**
 - Ready: **0**
@@ -34,6 +34,6 @@ Generated: **2026-07-29T00:50:26Z**
 - ⚠️ **2026 Junior Olympics Weekend 2 · 18U Boys Classic** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 2 · 18U Boys Invitational** — Last verified source is stale.
 
-The CPI operations workflow does not blend sources and does not publish ranking changes automatically.
+The WPI operations workflow does not blend sources and does not publish ranking changes automatically.
 
 [Open tournament operations](https://littlezip12.github.io/CPI/tournament-operations.html)

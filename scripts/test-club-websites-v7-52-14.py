@@ -21,7 +21,7 @@ index=load('data/identity/index.json')
 audit=load('data/club-website-audit-7.52.14.json')
 intel=load('data/club-intelligence.json').get('clubs',{})
 
-if site.get('version') not in {'7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3'}: fail('site version must preserve the 7.52.14 website release')
+if site.get('version') not in {'7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4'}: fail('site version must preserve the 7.52.14 website release')
 if site.get('clubWebsiteRelease')!='7.52.14': fail('clubWebsiteRelease must be 7.52.14')
 if len(clubs)!=182 or len(registry)!=182 or len(identity)!=182: fail('canonical club count must remain 182')
 summary=audit.get('summary',{})
@@ -69,7 +69,7 @@ coverage=vars.get('CPI_PLATFORM',{}).get('clubWebsiteCoverage',{})
 if coverage.get('websitePresent')!=42 or coverage.get('missing')!=140: fail('browser platform website coverage is incorrect')
 
 for rel in ['index.html','clubs.html','club.html','team.html','rankings.html','tournaments.html','12u-boys.html','12u-girls.html','14u-boys.html','14u-girls.html','16u-boys.html','16u-girls.html','18u-boys.html','18u-girls.html']:
-    if 'data.js?v=7.52.14' not in (ROOT/rel).read_text(encoding='utf-8'):
+    if 'data.js?v=7.53.4' not in (ROOT/rel).read_text(encoding='utf-8'):
         fail(f'{rel} does not cache-bust the club website data release')
 
 for slug in ['foothill','ciu','cdm','thunder','brooklyn-hustle']:

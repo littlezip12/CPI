@@ -17,7 +17,7 @@ function run(campaigns) {
   }
   const classes = new Set();
   const document = {
-    currentScript: { src: "https://littlezip12.github.io/CPI/js/sponsor-framework-v7-53-2.js?v=7.53.2" },
+    currentScript: { src: "https://littlezip12.github.io/CPI/js/sponsor-framework-v7-53-2.js?v=7.53.4" },
     readyState: "complete",
     body: { classList: { contains() { return false; } } },
     documentElement: { classList: { add(value) { classes.add(value); }, remove(value) { classes.delete(value); } } },
@@ -39,7 +39,7 @@ function run(campaigns) {
   };
   const window = {
     WPI_SPONSOR_CONFIG: config,
-    location: { pathname: "/CPI/rankings.html", search: "", href: "https://littlezip12.github.io/CPI/rankings.html" },
+    location: { pathname: "/WPI/rankings.html", search: "", href: "https://littlezip12.github.io/CPI/rankings.html" },
     setTimeout(fn) { fn(); return 1; },
     clearTimeout() {},
   };

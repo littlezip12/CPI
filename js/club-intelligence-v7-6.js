@@ -126,7 +126,7 @@
         <div class="club-card-meta">${escapeHtml(club.region)}${top.team ? ` · ${escapeHtml(top.team)} leads` : ""}</div>
         <div class="club-card-stats">
           <div><small>Teams</small><b>${club.rankedTeamCount}</b></div>
-          <div><small>Avg CPI</small><b>${formatCpi(club.averageCpi)}</b></div>
+          <div><small>Avg WPI</small><b>${formatCpi(club.averageCpi)}</b></div>
           <div><small>Top 25</small><b>${club.top25}</b></div>
           <div><small>Move</small><b class="${moveClass(club.totalMovement)}">${moveLabel(club.totalMovement)}</b></div>
           <div><small>Best</small><b>${club.bestRank ? `#${club.bestRank}` : "—"}</b></div>
@@ -223,7 +223,7 @@
         </div>
         <div class="club-age-group-meta">
           <div><small>Best rank</small><b>${leader.postRank ? `#${leader.postRank}` : "—"}</b></div>
-          <div><small>Top CPI</small><b>${formatCpi(leader.postCPI)}</b></div>
+          <div><small>Top WPI</small><b>${formatCpi(leader.postCPI)}</b></div>
         </div>
         <div class="club-age-team-list">
           ${sortedTeams.map((team) => `<a href="${escapeHtml(team.teamPage || `team.html?team=${team.slug}`)}">
@@ -256,7 +256,7 @@
     }
 
     applyClubProfileVars(club);
-    document.title = `${club.displayName || club.club} | California Polo Index`;
+    document.title = `${club.displayName || club.club} | Water Polo Index`;
     const top = club.topTeam || {};
     const teams = [...club.teams].sort((a, b) => number(a.postRank, 999) - number(b.postRank, 999));
     const groups = [...new Set(teams.map((team) => team.group).filter(Boolean))];
@@ -266,7 +266,7 @@
     const teamRows = teams.length ? teams.map((team) => `<a class="club-team-row" href="${escapeHtml(team.teamPage || `team.html?team=${team.slug}`)}">
       <div class="club-team-rank">#${escapeHtml(team.postRank || "—")}</div>
       <div><strong>${escapeHtml(team.team)}</strong><span>${escapeHtml(team.group || "Group TBD")} · ${escapeHtml(team.latestTournament || "Tournament TBD")}</span></div>
-      <div class="club-team-stat">${formatCpi(team.postCPI)}<span>CPI</span></div>
+      <div class="club-team-stat">${formatCpi(team.postCPI)}<span>WPI</span></div>
       <div class="club-team-stat ${moveClass(team.movement)}">${moveLabel(team.movement)}<span>Move</span></div>
       <div class="club-team-stat">${escapeHtml(team.latestTournamentRecord || "—")}<span>Record</span></div>
     </a>`).join("") : `<div class="club-empty">No ranked teams are currently connected to this club.</div>`;
@@ -292,7 +292,7 @@
         <div class="club-profile-kpis">
           <div class="club-profile-kpi"><small>Ranked teams</small><b>${club.rankedTeamCount}</b></div>
           <div class="club-profile-kpi"><small>Best rank</small><b>${club.bestRank ? `#${club.bestRank}` : "—"}</b></div>
-          <div class="club-profile-kpi"><small>Average CPI</small><b>${formatCpi(club.averageCpi)}</b></div>
+          <div class="club-profile-kpi"><small>Average WPI</small><b>${formatCpi(club.averageCpi)}</b></div>
           <div class="club-profile-kpi"><small>Movement</small><b class="${moveClass(club.totalMovement)}">${moveLabel(club.totalMovement)}</b></div>
         </div>
         <div class="club-profile-insight"><small>Top team</small><strong>${top.team ? `#${top.postRank} ${escapeHtml(top.team)}` : "No ranked team yet"}</strong></div>
@@ -316,7 +316,7 @@
           <span>${teams.length} team${teams.length === 1 ? "" : "s"}</span>
         </div>
         <div class="club-team-list">${teamRows}</div>
-        <p class="club-profile-note">Club intelligence currently reflects the ranked teams available in CPI data. As more age groups and genders are loaded, this page will become a broader club footprint view.</p>
+        <p class="club-profile-note">Club intelligence currently reflects the ranked teams available in WPI data. As more age groups and genders are loaded, this page will become a broader club footprint view.</p>
       </article>
       <aside class="club-profile-side-card">
         <div class="club-profile-section-title"><div><p class="club-intel-eyebrow">Context</p><h2>Best wins</h2></div></div>

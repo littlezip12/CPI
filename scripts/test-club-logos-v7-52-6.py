@@ -21,7 +21,7 @@ public=load('clubs.json')
 rankings=load('rankings.json')
 registry=load('data/logo-registry.json').get('logos',{})
 
-if site.get('version') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3'}: fail('site release must preserve the club logo expansion')
+if site.get('version') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4'}: fail('site release must preserve the club logo expansion')
 if site.get('clubLogoCompletionRelease') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}: fail('clubLogoCompletionRelease must preserve the verified logo expansion')
 if site.get('logoLibraryRelease') not in {'7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}: fail('logoLibraryRelease must preserve the verified logo expansion')
 if site.get('rankingDataRelease')!='7.52.13': fail('rankingDataRelease must be 7.52.13')
@@ -87,7 +87,7 @@ if platform.get('brandingStatus',{}).get('verifiedLogoCount')!=135: fail('platfo
 
 canonical=[{'group':r.get('group'),'rank':r.get('postRank'),'cpi':r.get('postCPI')} for r in rankings]
 rank_hash=hashlib.sha256(json.dumps(canonical,sort_keys=True,separators=(',',':')).encode()).hexdigest()
-if rank_hash!='e18d2cd2855c174311fcc7cd7d507afa1e22f37f68bfb21765a58cd8f035cbdb': fail('ranking/CPI integrity hash changed')
+if rank_hash!='e18d2cd2855c174311fcc7cd7d507afa1e22f37f68bfb21765a58cd8f035cbdb': fail('ranking/WPI integrity hash changed')
 
 if errors:
     print('CLUB LOGO 7.52.6 TEST FAILED')
@@ -96,4 +96,4 @@ if errors:
 print('CLUB LOGO 7.52.6 TESTS PASSED')
 print(' - 62 user-supplied logos and four shared-artwork mappings are synchronized')
 print(' - 135 unique clubs now use user-verified artwork; five intentionally remain generic')
-print(' - 724 ranking positions and CPI values remain unchanged')
+print(' - 724 ranking positions and WPI values remain unchanged')

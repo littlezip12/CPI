@@ -12,7 +12,7 @@ req(teamJs.includes("Tournament history"),"Unified team history heading missing"
 req(teamJs.includes("does not independently change the WPI ranking"),"Team ranking quarantine copy missing");
 req(clubJs.includes("renderHistoricalClubProfile"),"Club historical renderer missing");
 req(clubJs.includes("Program results and entries"),"Club history heading missing");
-req(clubJs.includes("cannot change published CPI rankings automatically"),"Club ranking quarantine copy missing");
+req(clubJs.includes("cannot change published WPI rankings automatically"),"Club ranking quarantine copy missing");
 new vm.Script(teamJs);new vm.Script(clubJs);
 console.log("HISTORICAL PROFILE UI TESTS PASSED");
 console.log(" - Team profiles merge completed-event history into one tournament timeline")

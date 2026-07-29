@@ -101,12 +101,12 @@ function renderTeamPage(){
     <div>
       <p class="kicker">Team Profile · ${r.group}</p>
       <h1>${r.team}</h1>
-      <p><a href="${r.clubPage}">${c?.displayName||r.club}</a> profile with CPI rank and tournament context.</p>
+      <p><a href="${r.clubPage}">${c?.displayName||r.club}</a> profile with WPI rank and tournament context.</p>
       <span class="club-pill">${c?.region || "Region TBD"}</span>
     </div>
     <aside class="hero-visual" ${heroStyle(r)}>
       <div class="profile-hero-lockup">${logo(r,"logo-xl")}
-        <div><div class="profile-rank">#${r.postRank}</div><div class="visual-tag"><span>CPI ${Number(r.postCPI).toFixed(1)}</span><span>${moveLabel(r.movement)}</span></div></div>
+        <div><div class="profile-rank">#${r.postRank}</div><div class="visual-tag"><span>WPI ${Number(r.postCPI).toFixed(1)}</span><span>${moveLabel(r.movement)}</span></div></div>
       </div>
     </aside>
   </section>
@@ -116,7 +116,7 @@ function renderTeamPage(){
       <div class="profile-kpi-grid">
         <div class="profile-kpi"><strong>${r.latestTournamentRecord}</strong><span>${r.latestTournament} record</span></div>
         <div class="profile-kpi"><strong>${r.bestWinClean}</strong><span>Best win</span></div>
-        <div class="profile-kpi"><strong>${Number(r.postCPI).toFixed(1)}</strong><span>CPI Rating</span></div>
+        <div class="profile-kpi"><strong>${Number(r.postCPI).toFixed(1)}</strong><span>WPI Rating</span></div>
         <div class="profile-kpi"><strong>${moveLabel(r.movement)}</strong><span>Movement</span></div>
       </div>
     </section>
@@ -152,7 +152,7 @@ function renderClubPage(){
   </section>
   <main>
     <section class="panel">
-      <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Team</th><th>Group</th><th>CPI</th><th>Move</th><th>Latest Tournament</th><th>Best Win</th></tr></thead><tbody>${rows}</tbody></table></div>
+      <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Team</th><th>Group</th><th>WPI</th><th>Move</th><th>Latest Tournament</th><th>Best Win</th></tr></thead><tbody>${rows}</tbody></table></div>
     </section>
   </main>`;
 }
@@ -176,7 +176,7 @@ function renderHomepage2(){
   const hp=window.CPI_HOMEPAGE||{}, hero=hp.hero||{}, headlines=hp.headlines||[], ticker=hp.ticker||[], recap=hp.weekendRecap||{}, stories=hp.storyCards||[], fg=hp.featuredGroup||{}, clubs=hp.trendingClubs||[], events=hp.upcomingTournaments||[];
   const tickerItems=[...ticker,...ticker].map(t=>`<a href="${t.url||"#"}">${t.label}</a>`).join("");
   shell.innerHTML=`
-    <section class="live-ticker"><div class="live-ticker-inner"><span class="live-ticker-label">Live CPI</span><div class="live-ticker-track">${tickerItems}</div></div></section>
+    <section class="live-ticker"><div class="live-ticker-inner"><span class="live-ticker-label">Live WPI</span><div class="live-ticker-track">${tickerItems}</div></div></section>
     <section class="home-hero-2 photo-edition">
       <article class="photo-hero" style="--hero-image:url('${hero.image}')">
         <span class="hero-category solid">${hero.label}</span>
@@ -186,7 +186,7 @@ function renderHomepage2(){
       </article>
       <aside class="photo-headlines">
         <h2>Latest Headlines</h2>
-        ${headlines.map(h=>`<a class="photo-headline" href="${h.url||"#"}"><span class="headline-icon">${h.icon||"•"}</span><span class="headline-tag">${h.tag||"CPI"}</span><strong>${h.title}</strong><span class="arrow">›</span></a>`).join("")}
+        ${headlines.map(h=>`<a class="photo-headline" href="${h.url||"#"}"><span class="headline-icon">${h.icon||"•"}</span><span class="headline-tag">${h.tag||"WPI"}</span><strong>${h.title}</strong><span class="arrow">›</span></a>`).join("")}
         <a class="read-link" href="rankings.html">View all headlines →</a>
       </aside>
     </section>
@@ -232,7 +232,7 @@ function renderGroupHub(){
   if(!hub){root.innerHTML="<main><section class='panel'><h2>Group hub unavailable</h2></section></main>";return;}
   const allLinks=hubs.map(h=>`<a class="group-nav-card" href="${h.file}"><strong>${h.group}</strong><span>${h.status}</span></a>`).join("");
   const modules=(hub.modules||[]).map(m=>`<div class="profile-kpi"><strong>${m.value}</strong><span>${m.label}</span></div>`).join("");
-  const top=(hub.topTeams||[]).slice(0,10).map(t=>`<a class="hub-list-item" href="${t.teamPage||"rankings.html"}"><div><strong>${t.team}</strong><span>${t.club||""} · CPI ${Number(t.postCPI||0).toFixed(1)}</span></div><b class="hub-rank">#${t.postRank}</b></a>`).join("");
+  const top=(hub.topTeams||[]).slice(0,10).map(t=>`<a class="hub-list-item" href="${t.teamPage||"rankings.html"}"><div><strong>${t.team}</strong><span>${t.club||""} · WPI ${Number(t.postCPI||0).toFixed(1)}</span></div><b class="hub-rank">#${t.postRank}</b></a>`).join("");
   const movers=(hub.biggestMovers||[]).slice(0,6).map(t=>`<a class="hub-list-item" href="${t.teamPage||"rankings.html"}"><div><strong>${t.team}</strong><span>${t.club||""}</span></div><b class="movement up">▲ +${t.movement||0}</b></a>`).join("");
   const rankingUrl=`rankings.html?group=${cpiSlugify(group)}`;
   root.innerHTML=`<section class="group-hub-hero"><article class="group-hub-hero-card"><div><span class="hero-category">${hub.heroLabel}</span><h1>${hub.heroTitle}</h1><p>${hub.heroSummary}</p><div class="hero-actions"><a class="btn" href="${rankingUrl}">View Rankings</a><a class="btn secondary" href="clubs.html">Explore Clubs</a></div></div><div class="club-pill">Group-specific coverage for the teams you care about most.</div></article><aside class="module-card"><h2>Group Snapshot</h2><div class="profile-kpi-grid">${modules}</div></aside></section><section class="group-nav-grid">${allLinks}</section><main class="hub-shell"><section class="hub-grid"><article class="hub-story-card"><span class="hero-category">${hub.topStory?.eyebrow||"Top Story"}</span><h2>${hub.topStory?.title||hub.group}</h2><p class="subtle">${hub.topStory?.summary||""}</p><div class="hero-actions"><a class="btn" href="${hub.topStory?.url||rankingUrl}">Read More →</a></div></article><article class="module-card"><h2>Biggest Movers</h2><div class="hub-list">${movers||"<p class='subtle'>Movers will populate when rankings data is available.</p>"}</div></article></section><section class="module-card featured-group-panel"><div class="section-head" style="margin:0 0 10px;"><div><h2>${hub.group} Top 10</h2><p class="subtle">A group-specific view keeps families, players, and coaches focused on the division they care about.</p></div><a class="btn" href="${rankingUrl}">Open ${hub.group} Rankings</a></div><div class="hub-list">${top||"<p class='subtle'>Rankings will populate when this group is loaded.</p>"}</div></section></main>`;
@@ -258,7 +258,7 @@ function renderHomepage4(){
   const statCards=(tournament.cards||[]).map(c=>`<div class="cpi4-mini-stat"><span>${c.label}</span><strong>${c.value}</strong></div>`).join("");
   root.innerHTML=`
     <main class="cpi4">
-      <section class="cpi4-ticker"><span class="cpi4-ticker-label">Live CPI</span><div class="cpi4-ticker-track">${tickerItems}</div></section>
+      <section class="cpi4-ticker"><span class="cpi4-ticker-label">Live WPI</span><div class="cpi4-ticker-track">${tickerItems}</div></section>
 
       <section class="cpi4-top">
         <article class="cpi4-hero" style="--hero-image:url('${hero.image}')">
@@ -270,7 +270,7 @@ function renderHomepage4(){
         </article>
         <aside class="cpi4-panel">
           <h2>Latest Headlines</h2>
-          <div class="cpi4-headline-list">${headlines.map(h=>`<a class="cpi4-headline" href="${h.url||"#"}"><span class="cpi4-headline-icon">${h.icon||"•"}</span><span class="cpi4-label">${h.label||"CPI"}</span><strong>${h.title}</strong><span class="cpi4-arrow">›</span></a>`).join("")}</div>
+          <div class="cpi4-headline-list">${headlines.map(h=>`<a class="cpi4-headline" href="${h.url||"#"}"><span class="cpi4-headline-icon">${h.icon||"•"}</span><span class="cpi4-label">${h.label||"WPI"}</span><strong>${h.title}</strong><span class="cpi4-arrow">›</span></a>`).join("")}</div>
         </aside>
       </section>
 
@@ -286,7 +286,7 @@ function renderHomepage4(){
       </section>
 
       <section class="cpi4-three">
-        <article class="cpi4-panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><h2>Rankings Snapshot</h2><a class="cpi4-link" href="${snapshot.url||"rankings.html"}">Full rankings</a></div><p class="cpi4-subtle">${snapshot.group||"14U Boys"} · ${snapshot.lastUpdated||"Latest update"}</p><div class="cpi4-rank-list">${(snapshot.topTeams||[]).slice(0,5).map(r=>`<a class="cpi4-rank-row" href="${r.teamPage||"rankings.html"}"><b class="cpi4-rank">#${r.postRank}</b><div><strong>${r.team}</strong><span>${r.club||""}</span></div><span>CPI ${Number(r.postCPI||0).toFixed(1)}</span></a>`).join("")}</div></article>
+        <article class="cpi4-panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><h2>Rankings Snapshot</h2><a class="cpi4-link" href="${snapshot.url||"rankings.html"}">Full rankings</a></div><p class="cpi4-subtle">${snapshot.group||"14U Boys"} · ${snapshot.lastUpdated||"Latest update"}</p><div class="cpi4-rank-list">${(snapshot.topTeams||[]).slice(0,5).map(r=>`<a class="cpi4-rank-row" href="${r.teamPage||"rankings.html"}"><b class="cpi4-rank">#${r.postRank}</b><div><strong>${r.team}</strong><span>${r.club||""}</span></div><span>WPI ${Number(r.postCPI||0).toFixed(1)}</span></a>`).join("")}</div></article>
         <article class="cpi4-panel"><h2>Biggest Movers</h2><p class="cpi4-subtle">Movement creates the week’s best storylines.</p><div class="cpi4-mover-list">${movers.map(m=>`<a class="cpi4-mover-row" href="${m.url||"#"}"><b class="cpi4-move">▲${m.movement}</b><div><strong>${m.team}</strong><span>${m.club||""} · now #${m.rank}</span></div><span>View</span></a>`).join("")}</div></article>
         <article class="cpi4-panel"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;"><h2>Trending Clubs</h2><a class="cpi4-link" href="clubs.html">View all</a></div><div class="cpi4-club-list">${clubs.map(c=>`<a class="cpi4-club-row" href="${c.url||"#"}"><img src="${c.logo||"assets/media/frontpage-champions.svg"}" alt="${c.displayName||c.club}"><div><strong>${c.displayName||c.club}</strong><span>${c.rankedTeams||0} ranked team(s) · highest #${c.bestRank||"—"}</span></div><b class="cpi4-move">▲${c.positiveMovement||0}</b></a>`).join("")}</div></article>
       </section>
@@ -307,14 +307,14 @@ function renderHomepage4(){
         <div class="cpi4-coming-img" style="--coming-image:url('${next.image}')"></div>
         <article class="cpi4-panel">
           <span class="cpi4-label">${next.title||"Coming Next"}</span>
-          <h2>${next.headline||"What CPI is watching next"}</h2>
+          <h2>${next.headline||"What WPI is watching next"}</h2>
           <p class="cpi4-subtle">${next.summary||""}</p>
           <div class="cpi4-next-list">${(next.items||[]).map(i=>`<span>${i}</span>`).join("")}</div>
           <div class="cpi4-actions"><a class="cpi4-btn secondary" href="${next.url||"tournaments.html"}">Preview →</a></div>
         </article>
       </section>
 
-      <footer class="cpi4-footer"><div><strong>California Polo Index</strong><br>Independent and unofficial. Rankings include verified tournament results only.</div><div class="cpi4-footer-links"><a href="methodology.html">Methodology</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a></div></footer>
+      <footer class="cpi4-footer"><div><strong>Water Polo Index</strong><br>Independent and unofficial. Rankings include verified tournament results only.</div><div class="cpi4-footer-links"><a href="methodology.html">Methodology</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a></div></footer>
     </main>`;
 }
 renderHomepage4();

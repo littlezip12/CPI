@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build CPI's controlled post-JO ranking review packet.
+"""Build WPI's controlled post-JO ranking review packet.
 
 This engine is intentionally read-only. It combines the immutable pre-JO snapshot,
 current rankings, JO participation/performance, and advisory evidence. It never writes
@@ -152,7 +152,7 @@ def build(snapshot: dict[str, Any], current: list[dict[str, Any]], evidence: dic
             "mode": "manual_review_only",
             "browserStorage": "Reviewer decisions are stored only in the reviewer's browser until exported.",
             "publication": "No page or build script changes rankings.json or data.js automatically.",
-            "expectedFinish": "Expected finish is the official JO seed within that division, not a statewide CPI projection.",
+            "expectedFinish": "Expected finish is the official JO seed within that division, not a statewide WPI projection.",
         },
         "counts": {
             "packets": len(packets),

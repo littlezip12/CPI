@@ -18,11 +18,11 @@ bridge=load('data/tournaments/jo-profile-bridge.json')
 audit=load('data/identity/kern-skip-separation-7.52.13.json')
 participants=load('data/tournaments/identity/participants.json').get('participants',[])
 
-if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3'}: fail('site version must be 7.52.13')
+if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4'}: fail('site version must be 7.52.13')
 for key in ['rankingDataRelease','identityRelease','joProfileRelease']:
     if site.get(key)!='7.52.13': fail(f'{key} must be 7.52.13')
-if site.get('teamProfileRelease') not in {'7.52.13','7.53.1','7.53.2','7.53.3'}: fail('teamProfileRelease must preserve Kern/SKIP separation')
-if site.get('clubProfileRelease') not in {'7.52.13','7.53.0','7.53.1','7.53.2','7.53.3'}: fail('clubProfileRelease must preserve Kern/SKIP profile separation')
+if site.get('teamProfileRelease') not in {'7.52.13','7.53.1','7.53.2','7.53.3','7.53.4'}: fail('teamProfileRelease must preserve Kern/SKIP separation')
+if site.get('clubProfileRelease') not in {'7.52.13','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4'}: fail('clubProfileRelease must preserve Kern/SKIP profile separation')
 if site.get('joResultsRelease')!='7.52.15': fail('joResultsRelease must be 7.52.15')
 if len(rankings)!=724: fail(f'expected 724 ranking rows, found {len(rankings)}')
 if len({c.get('slug') for c in clubs})!=len(clubs): fail('public club slugs are not unique')
@@ -52,7 +52,7 @@ if len(skip_rows)!=1 or skip_rows[0].get('group')!='18U Girls' or skip_rows[0].g
 by_slug={c.get('slug'):c for c in clubs}
 kern=by_slug.get('kern-premier',{}); skip=by_slug.get('skip',{}); kearns=by_slug.get('kearns',{})
 if (kern.get('rankedTeams'),kern.get('bestRank'),kern.get('teamCount'))!=(4,36,4): fail('Kern Premier club metrics must show four ranked teams and best rank #36')
-if round(float(kern.get('averageCPI') or 0),1)!=1800.6: fail('Kern Premier average CPI is incorrect')
+if round(float(kern.get('averageCPI') or 0),1)!=1800.6: fail('Kern Premier average WPI is incorrect')
 if (skip.get('rankedTeams'),skip.get('bestRank'),skip.get('teamCount'))!=(1,35,1): fail('SKIP club metrics must show one ranked team and best rank #35')
 if kearns.get('state')!='UT' or len(kearns.get('teams',[]))!=5: fail('Kearns Utah identity or five ranked teams changed')
 
@@ -90,7 +90,7 @@ for group,old in [('12U Boys','skip-12u-boys'),('14U Boys','skip-a'),('16U Boys'
 line=next((x for x in (ROOT/'data.js').read_text().splitlines() if x.startswith('window.CPI_RANKINGS = ')),None)
 if not line or json.loads(line[len('window.CPI_RANKINGS = '):-1])!=rankings: fail('data.js rankings do not match rankings.json')
 for rel in ['index.html','rankings.html','clubs.html','club.html','team.html','tournaments.html']:
-    if 'data.js?v=7.52.16' not in (ROOT/rel).read_text(): fail(f'{rel} does not load the corrected ranking data cache key')
+    if 'data.js?v=7.53.4' not in (ROOT/rel).read_text(): fail(f'{rel} does not load the corrected ranking data cache key')
 
 if audit.get('rankedClubCounts',{}).get('club-kern-premier')!=4 or audit.get('rankedClubCounts',{}).get('club-skip')!=1: fail('migration audit counts are incorrect')
 

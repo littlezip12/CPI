@@ -134,7 +134,7 @@ def main():
     # Cache-bust data only. JO/logo assets remain untouched at 7.52.15.
     for p in ROOT.rglob('*.html'):
         text=p.read_text(encoding='utf-8')
-        text=text.replace('data.js?v=7.52.14','data.js?v=7.52.16').replace('data.js?v=7.52.15','data.js?v=7.52.16')
+        text=text.replace('data.js?v=7.53.4','data.js?v=7.53.4').replace('data.js?v=7.53.4','data.js?v=7.53.4')
         p.write_text(text,encoding='utf-8')
 
     site=load('config/site-release.json'); site.update({'version':RELEASE,'name':'Club Website Completion from User Audit','date':DATE,'notes':'Adds user-supplied website links for 135 clubs, records four clubs with no site found and one remaining missing URL, while preserving rankings, club identities, JO placements, team profiles, and all JO logo-delivery assets.','clubWebsiteRelease':RELEASE})

@@ -1,6 +1,6 @@
 
 /*
-  CPI Release 7.35 — Public Link + CTA Completion
+  WPI Release 7.35 — Public Link + CTA Completion
   Gives public CTAs a destination and makes the static subscribe page honest/useful.
 */
 (function () {

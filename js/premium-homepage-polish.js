@@ -1,5 +1,5 @@
 /*
-  CPI Release 7.1 — Premium Homepage Polish
+  WPI Release 7.1 — Premium Homepage Polish
   Adds reveal motion and small interaction enhancements.
 */
 
@@ -79,7 +79,7 @@
       enhanceNewsletter();
     }, 120);
 
-    console.info("CPI Premium Homepage Polish 7.1 loaded");
+    console.info("WPI Premium Homepage Polish 7.1 loaded");
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

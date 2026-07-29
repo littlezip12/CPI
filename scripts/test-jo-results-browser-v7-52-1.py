@@ -31,7 +31,7 @@ html = (ROOT / "tournaments.html").read_text(encoding="utf-8")
 js = (ROOT / "js/jo-results-browser-v7-52-1.js").read_text(encoding="utf-8")
 css_path = ROOT / "css/jo-results-browser-v7-52-1.css"
 
-if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3"}:
+if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4"}:
     fail("site release must preserve JO results browser compatibility")
 if site.get("joResultsRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15"}:
     fail("joResultsRelease must preserve the data browser or the linked-journey UI release")
@@ -196,11 +196,11 @@ required_html = [
     'id="joResultsGroup"',
     'id="joResultsSearch"',
     'type="search"',
-    'css/jo-results-browser-v7-52-1.css?v=7.52.9',
-    'data/identity/runtime.js?v=7.52.13',
-    'js/cpi-identity.js?v=7.52.13',
-    'data/tournaments/jo-profile-runtime.js?v=7.52.13',
-    'js/jo-results-browser-v7-52-1.js?v=7.52.15',
+    'css/jo-results-browser-v7-52-1.css?v=7.53.4',
+    'data/identity/runtime.js?v=7.53.4',
+    'js/cpi-identity.js?v=7.53.4',
+    'data/tournaments/jo-profile-runtime.js?v=7.53.4',
+    'js/jo-results-browser-v7-52-1.js?v=7.53.4',
 ]
 for token in required_html:
     if token not in html:
@@ -208,7 +208,7 @@ for token in required_html:
 if not css_path.exists() or css_path.stat().st_size == 0:
     fail("results browser stylesheet is missing or empty")
 required_js = [
-    'data/tournaments/jo-results-2026.json?v=7.52.1',
+    'data/tournaments/jo-results-2026.json?v=7.53.4',
     'teamSearch.addEventListener("input", render)',
     'groupSelect.addEventListener("change", render)',
     'cache: "no-store"',

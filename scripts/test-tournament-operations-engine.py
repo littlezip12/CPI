@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Unit tests for CPI 7.48 tournament operations decision rules."""
+"""Unit tests for WPI 7.48 tournament operations decision rules."""
 from __future__ import annotations
 
 import importlib.util

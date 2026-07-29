@@ -1,4 +1,4 @@
-/* CPI Release 7.24 — simplified club directory and club profiles */
+/* WPI Release 7.24 — simplified club directory and club profiles */
 (function () {
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
@@ -158,7 +158,7 @@
         <div class="club-card-meta">${escapeHtml(club.region)}${top.team ? ` · top team: ${escapeHtml(top.team)}` : ""}</div>
         <div class="club-card-stats">
           <div><small>Teams</small><b>${club.rankedTeamCount}</b></div>
-          <div><small>Avg CPI</small><b>${formatCpi(club.averageCpi)}</b></div>
+          <div><small>Avg WPI</small><b>${formatCpi(club.averageCpi)}</b></div>
           <div><small>Top 25</small><b>${club.top25}</b></div>
           <div><small>Groups</small><b>${groupsForClub(club).length || "—"}</b></div>
           <div><small>Best</small><b>${club.bestRank ? `#${club.bestRank}` : "—"}</b></div>
@@ -280,7 +280,7 @@
         </div>
         <div class="club-age-group-meta">
           <div><small>Best rank</small><b>${leader.postRank ? `#${leader.postRank}` : "—"}</b></div>
-          <div><small>Top CPI</small><b>${formatCpi(leader.postCPI)}</b></div>
+          <div><small>Top WPI</small><b>${formatCpi(leader.postCPI)}</b></div>
         </div>
         <div class="club-age-team-list">
           ${sortedTeams.map((team) => `<a href="${escapeHtml(team.teamPage || `team.html?team=${team.slug}`)}">
@@ -310,14 +310,14 @@
       root.innerHTML = `<section class="club-profile-not-found">
         <p class="club-intel-eyebrow">Club profile</p>
         <h1>Club not found</h1>
-        <p>The requested club could not be matched to the current CPI club registry.${requestedSlug ? ` Requested profile: <strong>${escapeHtml(requestedSlug)}</strong>.` : ""}</p>
+        <p>The requested club could not be matched to the current WPI club registry.${requestedSlug ? ` Requested profile: <strong>${escapeHtml(requestedSlug)}</strong>.` : ""}</p>
         <div class="club-profile-actions"><a class="club-intel-btn" href="clubs.html">Explore clubs</a><a class="club-intel-btn secondary" href="rankings.html">View rankings</a></div>
       </section>`;
       return;
     }
 
     applyClubProfileVars(club);
-    document.title = `${safeName(club)} | California Polo Index`;
+    document.title = `${safeName(club)} | Water Polo Index`;
     const top = club.topTeam || {};
     const teams = [...club.teams].sort((a, b) => number(a.postRank, 999) - number(b.postRank, 999));
     const groups = groupsForClub(club);
@@ -325,7 +325,7 @@
     const teamRows = teams.length ? teams.map((team) => `<a class="club-team-row" href="${escapeHtml(team.teamPage || `team.html?team=${team.slug}`)}">
       <div class="club-team-rank">#${escapeHtml(team.postRank || "—")}</div>
       <div><strong>${escapeHtml(team.team)}</strong><span>${escapeHtml(team.group || "Group TBD")} · ${escapeHtml(team.latestTournament || "Tournament TBD")}</span></div>
-      <div class="club-team-stat">${formatCpi(team.postCPI)}<span>CPI</span></div>
+      <div class="club-team-stat">${formatCpi(team.postCPI)}<span>WPI</span></div>
       <div class="club-team-stat">${escapeHtml(team.latestTournamentRecord || "—")}<span>Record</span></div>
     </a>`).join("") : `<div class="club-empty">No ranked teams are currently connected to this club.</div>`;
 
@@ -348,7 +348,7 @@
         <div class="club-profile-kpis">
           <div class="club-profile-kpi"><small>Ranked teams</small><b>${club.rankedTeamCount}</b></div>
           <div class="club-profile-kpi"><small>Best rank</small><b>${club.bestRank ? `#${club.bestRank}` : "—"}</b></div>
-          <div class="club-profile-kpi"><small>Average CPI</small><b>${formatCpi(club.averageCpi)}</b></div>
+          <div class="club-profile-kpi"><small>Average WPI</small><b>${formatCpi(club.averageCpi)}</b></div>
           <div class="club-profile-kpi"><small>Age groups</small><b>${groups.length || "—"}</b></div>
         </div>
         <div class="club-profile-insight"><small>Top team</small><strong>${top.team ? `#${top.postRank} ${escapeHtml(top.team)} · ${escapeHtml(top.group || "")}` : "No ranked team yet"}</strong></div>
@@ -377,7 +377,7 @@
           <span>${teams.length} team${teams.length === 1 ? "" : "s"}</span>
         </div>
         <div class="club-team-list">${teamRows}</div>
-        <p class="club-profile-note">Club metrics are calculated from ranked CPI teams currently connected to this club. Regions, aliases, and logos remain under active audit.</p>
+        <p class="club-profile-note">Club metrics are calculated from ranked WPI teams currently connected to this club. Regions, aliases, and logos remain under active audit.</p>
       </article>
     </section>`;
   }

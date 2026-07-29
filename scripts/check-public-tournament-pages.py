@@ -45,7 +45,7 @@ def main() -> int:
         if args.network:
             url = base + str(rel)
             try:
-                request = Request(url, headers={"User-Agent": "CPI-Tournament-Ops/7.47"})
+                request = Request(url, headers={"User-Agent": "WPI-Tournament-Ops/7.47"})
                 with urlopen(request, timeout=20) as response:
                     body = response.read().decode("utf-8", errors="replace")
                     status = getattr(response, "status", 200)

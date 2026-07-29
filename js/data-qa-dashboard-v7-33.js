@@ -31,7 +31,7 @@
 
   async function init() {
     try {
-      const response = await fetch(`rankings.json?v=7.33-${Date.now()}`);
+      const response = await fetch(`rankings.json?v=7.53.4-${Date.now()}`);
       if (!response.ok) throw new Error(`Could not load rankings.json (${response.status})`);
       state.rankings = await response.json();
       state.issues = buildIssues(state.rankings);
@@ -213,7 +213,7 @@
     const cards = [
       ['Ranked teams', teams, 'Current rows in rankings.json'],
       ['Clubs', clubs, 'Unique club slugs in ranked data'],
-      ['Age groups', groups, 'Active CPI ranking groups'],
+      ['Age groups', groups, 'Active WPI ranking groups'],
       ['Review rows', state.issues.length, 'Total QA prompts'],
       ['Same-club depth', sameClubRows, 'A/B/C team checks'],
       ['Quiksilver evidence', quiksilverRows, 'Rows touched by latest event'],

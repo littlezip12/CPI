@@ -1,4 +1,4 @@
-/* CPI Release 7.22 — small public-readiness helpers */
+/* WPI Release 7.22 — small public-readiness helpers */
 (function () {
   function currentFile() {
     const path = window.location.pathname.split('/').pop() || 'index.html';

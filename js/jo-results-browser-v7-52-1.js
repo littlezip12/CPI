@@ -13,7 +13,7 @@
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
   const joProfiles = window.WPI_JO_PROFILES || { teams: {}, lookup: {} };
-  const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.52.7";
+  const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
 
   let payload = null;
 
@@ -211,7 +211,7 @@
     render();
   });
 
-  fetch("data/tournaments/jo-results-2026.json?v=7.52.1", { cache: "no-store" })
+  fetch("data/tournaments/jo-results-2026.json?v=7.53.4", { cache: "no-store" })
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();

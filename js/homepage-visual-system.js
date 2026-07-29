@@ -1,5 +1,5 @@
 /*
-  CPI Release 6.5 — Homepage Visual System
+  WPI Release 6.5 — Homepage Visual System
   Adds small homepage-only polish classes and removes leftover empty legacy wrappers.
 */
 
@@ -23,7 +23,7 @@
     if (!isHome()) return;
     document.body.classList.add("cpi-homepage-visual-system");
     removeEmptyLegacyContainers();
-    console.info("CPI Homepage Visual System loaded");
+    console.info("WPI Homepage Visual System loaded");
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

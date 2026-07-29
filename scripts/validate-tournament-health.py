@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CPI 7.43 tournament source-health outputs and interface wiring."""
+"""Validate WPI 7.43 tournament source-health outputs and interface wiring."""
 from __future__ import annotations
 
 import json
@@ -113,7 +113,7 @@ for rel in [
         fail(f"Missing tournament source-health interface file: {rel}")
 
 html = (ROOT / "tournament-source-health.html").read_text(encoding="utf-8") if (ROOT / "tournament-source-health.html").exists() else ""
-for token in ["data/tournaments/health/runtime.js?v=7.45.1", "js/tournament-source-health.js?v=7.45.1", "sourceHealthRows"]:
+for token in ["data/tournaments/health/runtime.js?v=7.53.4", "js/tournament-source-health.js?v=7.53.4", "sourceHealthRows"]:
     if token not in html:
         fail(f"Tournament source-health page is missing required token: {token}")
 

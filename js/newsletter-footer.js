@@ -1,5 +1,5 @@
 /*
-  CPI Release 6.4 — Newsletter + Footer Refresh
+  WPI Release 6.4 — Newsletter + Footer Refresh
 */
 
 (function () {
@@ -18,7 +18,7 @@
       if (!res.ok) throw new Error("homepage.json not found");
       return await res.json();
     } catch (err) {
-      console.warn("CPI Newsletter/Footer: using fallback config.", err);
+      console.warn("WPI Newsletter/Footer: using fallback config.", err);
       return {};
     }
   }
@@ -71,7 +71,7 @@
         </div>
         <div class="cpi-newsletter-copy">
           <h2>${safe(newsletter.title, "Stay in the Game")}</h2>
-          <p>${safe(newsletter.summary, "Get CPI rankings, recaps, and stories delivered 1–2 times per month.")}</p>
+          <p>${safe(newsletter.summary, "Get WPI rankings, recaps, and stories delivered 1–2 times per month.")}</p>
         </div>
         <form class="cpi-newsletter-form">
           <div>
@@ -95,9 +95,9 @@
         <div class="cpi-footer-inner">
           <div class="cpi-footer-brand">
             <a class="cpi-footer-logo" href="index.html">
-              <span>CPI</span>
+              <span>WPI</span>
               <div>
-                <strong>${safe(footer.brand, "California Polo Index")}</strong>
+                <strong>${safe(footer.brand, "Water Polo Index")}</strong>
                 <em>${safe(footer.tagline, "Ranked. Respected. Earned.")}</em>
               </div>
             </a>
@@ -117,13 +117,13 @@
           `).join("")}
 
           <div class="cpi-footer-about">
-            <h3>${safe(footer.aboutTitle, "About CPI")}</h3>
-            <p>${safe(footer.aboutText, "The California Polo Index is building a comprehensive water polo ranking system for California youth clubs.")}</p>
+            <h3>${safe(footer.aboutTitle, "About WPI")}</h3>
+            <p>${safe(footer.aboutText, "The Water Polo Index is building a comprehensive water polo ranking system for California youth clubs.")}</p>
             <a href="${safe(footer.aboutLink && footer.aboutLink.url, "methodology.html")}">${safe(footer.aboutLink && footer.aboutLink.label, "Learn More")} →</a>
           </div>
         </div>
         <div class="cpi-footer-bottom">
-          <span>© ${new Date().getFullYear()} California Polo Index. All rights reserved.</span>
+          <span>© ${new Date().getFullYear()} Water Polo Index. All rights reserved.</span>
           <div>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
@@ -145,7 +145,7 @@
     const mount = findMount();
     mount.innerHTML = renderNewsletter(newsletter) + renderFooter(footer);
 
-    console.info("CPI Newsletter/Footer v2 loaded");
+    console.info("WPI Newsletter/Footer v2 loaded");
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

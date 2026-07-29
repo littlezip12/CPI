@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CPI 7.42 tournament participant identities, team evidence, and ranking review outputs."""
+"""Validate WPI 7.42 tournament participant identities, team evidence, and ranking review outputs."""
 from __future__ import annotations
 
 import json
@@ -128,7 +128,7 @@ for path, prefix in ((runtime, "window.CPI_TOURNAMENT_EVIDENCE = "), (review_run
         fail(f"Invalid browser evidence runtime prefix: {path.relative_to(ROOT)}")
 
 team_html = (ROOT / "team.html").read_text(encoding="utf-8")
-if "data/tournaments/evidence/runtime.js?v=7.45.1" not in team_html:
+if "data/tournaments/evidence/runtime.js?v=7.53.4" not in team_html:
     fail("Team profile does not load normalized tournament evidence runtime")
 if team_html.find("evidence/runtime.js") > team_html.find("team-profile-v7-42.js"):
     fail("Team profile evidence runtime must load before the profile renderer")
@@ -153,7 +153,7 @@ if errors:
 
 print("TOURNAMENT EVIDENCE VALIDATION PASSED")
 print(f" - {len(participant_rows)} stable tournament participant identities")
-print(f" - {len(canonical_evidence)} canonical CPI teams have profile-ready evidence")
+print(f" - {len(canonical_evidence)} canonical WPI teams have profile-ready evidence")
 print(f" - {counts.get('tournamentOnlyTeams', 0)} tournament-only teams remain outside published rankings")
 print(f" - {review.get('counts', {}).get('readyForRankingReview', 0)} teams currently have final results ready for manual ranking review")
 print(" - Team profiles and the evidence dashboard consume generated browser runtimes")

@@ -230,7 +230,7 @@ def infer_club(source_team: str) -> str:
 
 def initials(value: str) -> str:
     words = re.findall(r"[A-Za-z0-9]+", str(value or ""))
-    return "".join(w[0].upper() for w in words[:3]) or "CPI"
+    return "".join(w[0].upper() for w in words[:3]) or "WPI"
 
 
 def team_depth_label(depth: int) -> str:
@@ -465,7 +465,7 @@ def main() -> None:
                 row = {}
             used_slugs.add(slug)
 
-            # Rank-calibrated score: preserves descending order while retaining a familiar CPI range.
+            # Rank-calibrated score: preserves descending order while retaining a familiar WPI range.
             post_cpi = round(2200.0 - (rank - 1) * 7.5, 1)
             jo_games = record_games(item.get("joRecord"))
             previous_games = int(existing.get("gamesTracked") or 0) if existing else 0

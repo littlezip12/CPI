@@ -8,7 +8,7 @@ Families covered:
 
 This script updates rankings, club exports, identity overrides, normalized tournament
 participants, logo compatibility aliases, and generated identity/profile artifacts.
-It never changes rank order, CPI values, scores, records, placements, or pathways.
+It never changes rank order, WPI values, scores, records, placements, or pathways.
 """
 from __future__ import annotations
 
@@ -289,7 +289,7 @@ def main() -> int:
             "normalizedFilesUpdated": normalized_files,
             "participantRowsReviewed": participant_updates,
         },
-        "guardrail": "No rank, CPI, score, record, placement, or tournament-path value was changed.",
+        "guardrail": "No rank, WPI, score, record, placement, or tournament-path value was changed.",
     }
     write("data/identity/club-family-cleanup-7.52.12.json", audit)
     print(json.dumps(audit, indent=2))

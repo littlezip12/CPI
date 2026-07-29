@@ -1,5 +1,5 @@
 /*
-  CPI Release 7.0.2 — Hero Polish
+  WPI Release 7.0.2 — Hero Polish
   Adds pause-on-hover, swipe gestures, keyboard hero navigation,
   and lightweight next-image preloading for Hero v2.
 */
@@ -88,7 +88,7 @@
     preloadHeroImages();
     installKeyboardNavigation();
     watchHero();
-    console.info("CPI Hero Polish 7.0.2 loaded");
+    console.info("WPI Hero Polish 7.0.2 loaded");
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

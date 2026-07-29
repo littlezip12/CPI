@@ -61,5 +61,5 @@ print(' - The browser can fall back to the repository snapshot when Google live 
 app_text = (ROOT / 'tournaments' / 'jo-boys' / 'app.js').read_text(encoding='utf-8')
 if 'const EMBEDDED_SNAPSHOT_CSV=' not in app_text:
     fail('Boys app does not contain built-in verified schedule snapshots')
-if 'schedule loaded · checking CPI live relay' not in app_text:
+if 'schedule loaded · checking WPI live relay' not in app_text:
     fail('Boys app does not render verified schedules before live-source attempts')

@@ -37,7 +37,7 @@ for (const token of [
 if (browserSource.includes('if (joProfile) return { logo: joProfile.logo || fallbackLogo')) {
   fail('JO profile routing is still allowed to short-circuit club logo resolution.');
 }
-if (!tournamentsHtml.includes('js/jo-results-browser-v7-52-1.js?v=7.52.15')) {
+if (!tournamentsHtml.includes('js/jo-results-browser-v7-52-1.js?v=7.53.4')) {
   fail('tournaments.html does not cache-bust the corrected JO results browser.');
 }
 

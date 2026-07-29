@@ -233,7 +233,7 @@ def update_site_release() -> None:
         "- Adds 15 verified official club website links.\n"
         "- Records website coverage and verification status for all 182 canonical clubs.\n"
         "- Generates a complete missing-link audit and flags ambiguous club families for review.\n"
-        "- Does not change rankings, CPI values, tournament results, placements, or team identities.\n",
+        "- Does not change rankings, WPI values, tournament results, placements, or team identities.\n",
         encoding="utf-8",
     )
 
@@ -328,8 +328,8 @@ def patch_compatibility_tests() -> None:
 def patch_public_cache_keys() -> None:
     for path in ROOT.rglob("*.html"):
         text = path.read_text(encoding="utf-8")
-        if "data.js?v=7.52.13" in text:
-            path.write_text(text.replace("data.js?v=7.52.13", "data.js?v=7.52.14"), encoding="utf-8")
+        if "data.js?v=7.53.4" in text:
+            path.write_text(text.replace("data.js?v=7.53.4", "data.js?v=7.53.4"), encoding="utf-8")
     for rel in [
         "scripts/test-jo-logo-delivery-v7-52-9.py",
         "scripts/test-boys-post-jo-rankings-v7-52-0.py",
@@ -338,7 +338,7 @@ def patch_public_cache_keys() -> None:
     ]:
         path = ROOT / rel
         value = path.read_text(encoding="utf-8")
-        path.write_text(value.replace("data.js?v=7.52.13", "data.js?v=7.52.14"), encoding="utf-8")
+        path.write_text(value.replace("data.js?v=7.53.4", "data.js?v=7.53.4"), encoding="utf-8")
 
 
 def main() -> None:

@@ -1,4 +1,4 @@
-/* CPI Boys Junior Olympics schedule tool — Release 7.51.0 */
+/* WPI Boys Junior Olympics schedule tool — Release 7.51.0 */
 const SHEET_ID='1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4';
 const APP_VERSION='7.51.0';
 const DATASETS=[{"id":"10u-championship","age":"10U","division":"Championship (D1)","gid":"1659399499","gidAliases":["1659399499"],"sheetName":"10U_M_Champ_35","sheetNameAliases":["10U_M_Champ_35"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/10u-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":141,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"12u-boys-championship","age":"12U","division":"Boys Championship (D1)","gid":"1775879786","gidAliases":["1775879786"],"sheetName":"12U_M_Champ","sheetNameAliases":["12U_M_Champ"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/12u-boys-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"12u-boys-classic","age":"12U","division":"Boys Classic (D2)","gid":"1808416221","gidAliases":["1808416221"],"sheetName":"12U_M_Classic_53","sheetNameAliases":["12U_M_Classic_53"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/12u-boys-classic.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":218,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"14u-boys-championship","age":"14U","division":"Boys Championship (D1)","gid":"345265555","gidAliases":["345265555"],"sheetName":"14U_M_Champ","sheetNameAliases":["14U_M_Champ"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/14u-boys-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"14u-boys-classic","age":"14U","division":"Boys Classic (D2)","gid":"732732301","gidAliases":["732732301","1855118263"],"sheetName":"14U_M_Classic","sheetNameAliases":["14U_M_Classic"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/14u-boys-classic.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"14u-boys-invitational","age":"14U","division":"Boys Invitational (D3)","gid":"1975322406","gidAliases":["1975322406"],"sheetName":"14U_M_Invite_36","sheetNameAliases":["14U_M_Invite_36"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/14u-boys-invitational.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":146,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"16u-boys-championship","age":"16U","division":"Boys Championship (D1)","gid":"2012475287","gidAliases":["2012475287"],"sheetName":"16U_M_Champ","sheetNameAliases":["16U_M_Champ"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/16u-boys-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"16u-boys-classic","age":"16U","division":"Boys Classic (D2)","gid":"1142418841","gidAliases":["1142418841"],"sheetName":"16U_M_Classic","sheetNameAliases":["16U_M_Classic"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/16u-boys-classic.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"16u-boys-invitational","age":"16U","division":"Boys Invitational (D3)","gid":"1686454973","gidAliases":["1686454973"],"sheetName":"16U_M_Invite","sheetNameAliases":["16U_M_Invite"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/16u-boys-invitational.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"18u-boys-championship","age":"18U","division":"Boys Championship (D1)","gid":"38488572","gidAliases":["38488572"],"sheetName":"18U_M_Champ","sheetNameAliases":["18U_M_Champ"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/18u-boys-championship.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"18u-boys-classic","age":"18U","division":"Boys Classic (D2)","gid":"333261986","gidAliases":["333261986"],"sheetName":"18U_M_Classic","sheetNameAliases":["18U_M_Classic"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/18u-boys-classic.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":192,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"},{"id":"18u-boys-invitational","age":"18U","division":"Boys Invitational (D3)","gid":"289749610","gidAliases":["289749610"],"sheetName":"18U_M_Invite 24","sheetNameAliases":["18U_M_Invite 24"],"sourceStrategy":"sheet_name_primary","snapshotPath":"../../data/tournaments/raw/2026-jo-weekend-2/18u-boys-invitational.csv","snapshotUpdatedAt":"2026-07-16T06:01:54Z","expectedScheduleGames":92,"officialUrl":"https://docs.google.com/spreadsheets/d/1ycEOkayVwo_h37vL98PTXbzEnBpRU_-3S9l6NeiwCc4/edit"}];
@@ -234,8 +234,8 @@ async function fetchRelayDataset(config){
     if(looksLikeHtml(text))throw new Error('Relay returned HTML instead of CSV');
     const result=validateGames(parseLive(text));
     result.url=relayFileUrl(config,'csv');
-    result.method='CPI live relay';
-    result.sourceLabel='CPI live relay';
+    result.method='WPI live relay';
+    result.sourceLabel='WPI live relay';
     result.updatedAt=status.lastSuccessAt||status.contentUpdatedAt||status.checkedAt||null;
     result.checkedAt=status.checkedAt||null;
     result.isRelay=true;
@@ -243,7 +243,7 @@ async function fetchRelayDataset(config){
     result.relayStatus=status;
     return result;
   }catch(error){
-    if(error?.name==='AbortError')throw new Error('CPI live relay timeout');
+    if(error?.name==='AbortError')throw new Error('WPI live relay timeout');
     throw error;
   }finally{clearTimeout(timer)}
 }
@@ -693,13 +693,13 @@ async function loadCurrentInternal(config,manual=false){
   if(immediate){
     DATA=immediate;
     dot.classList.add('fallback');
-    status.textContent=`Verified ${config.age} ${config.division} schedule loaded · checking CPI live relay…`;
-    renderSourceMeta(config,cached?'Schedule ready · checking live relay':'Schedule ready · checking live relay',immediate.games,cached?.cachedAt||config.snapshotUpdatedAt,'A verified schedule is available immediately while CPI checks its server-side relay and the official Google Sheet.');
+    status.textContent=`Verified ${config.age} ${config.division} schedule loaded · checking WPI live relay…`;
+    renderSourceMeta(config,cached?'Schedule ready · checking live relay':'Schedule ready · checking live relay',immediate.games,cached?.cachedAt||config.snapshotUpdatedAt,'A verified schedule is available immediately while WPI checks its server-side relay and the official Google Sheet.');
     rebuild();team.disabled=false;
   }else{
     team.disabled=true;
     status.textContent=manual?`Refreshing ${config.division}…`:`Loading ${config.age} ${config.division}…`;
-    renderSourceMeta(config,'Checking CPI live relay',[],null);
+    renderSourceMeta(config,'Checking WPI live relay',[],null);
   }
   const relayPromise=fetchRelayDataset(config).then(loaded=>({loaded}),error=>({error}));
   const livePromise=fetchDataset(config).then(loaded=>({loaded}),error=>({error}));
@@ -711,8 +711,8 @@ async function loadCurrentInternal(config,manual=false){
     const refreshedAt=loaded.updatedAt||loaded.checkedAt||new Date().toISOString();
     if(datasetIsOlder(relayData.games,DATA.games)){
       dot.classList.add('fallback');
-      status.textContent=`Kept newer saved update · CPI relay is still catching up`;
-      renderSourceMeta(config,'Newer browser update preserved',DATA.games,cached?.cachedAt||config.snapshotUpdatedAt,'The CPI relay returned fewer completed results, so this browser kept the newer schedule instead of moving backward.');
+      status.textContent=`Kept newer saved update · WPI relay is still catching up`;
+      renderSourceMeta(config,'Newer browser update preserved',DATA.games,cached?.cachedAt||config.snapshotUpdatedAt,'The WPI relay returned fewer completed results, so this browser kept the newer schedule instead of moving backward.');
     }else{
       relayApplied=true;relayFresh=!loaded.isFallback;
       if(relayFresh)markLiveSuccess(config);
@@ -720,12 +720,12 @@ async function loadCurrentInternal(config,manual=false){
       writeCache(config,DATA);
       if(relayFresh){
         dot.classList.remove('fallback');
-        status.textContent=`Live through CPI relay · ${config.age} ${config.division} · ${DATA.games.length} games · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;
-        renderSourceMeta(config,'CPI live relay',DATA.games,refreshedAt,'CPI fetched and validated the official Google Sheet from its server-side relay, so this browser does not depend on a direct Google connection.','CPI live relay');
+        status.textContent=`Live through WPI relay · ${config.age} ${config.division} · ${DATA.games.length} games · refreshed ${new Date(refreshedAt).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`;
+        renderSourceMeta(config,'WPI live relay',DATA.games,refreshedAt,'WPI fetched and validated the official Google Sheet from its server-side relay, so this browser does not depend on a direct Google connection.','WPI live relay');
       }else{
         dot.classList.add('fallback');
-        status.textContent=`Using CPI relay bank · ${config.age} ${config.division} · Google refresh pending`;
-        renderSourceMeta(config,'Last-known-good CPI relay',DATA.games,refreshedAt,'The relay preserved its last validated schedule because its latest Google check was unsuccessful.','CPI live relay');
+        status.textContent=`Using WPI relay bank · ${config.age} ${config.division} · Google refresh pending`;
+        renderSourceMeta(config,'Last-known-good WPI relay',DATA.games,refreshedAt,'The relay preserved its last validated schedule because its latest Google check was unsuccessful.','WPI live relay');
       }
       rebuild();team.disabled=false;
     }
@@ -742,7 +742,7 @@ async function loadCurrentInternal(config,manual=false){
       if(!relayApplied){
         dot.classList.add('fallback');
         status.textContent=`Kept newer saved update · Google returned an older result set`;
-        renderSourceMeta(config,'Newer browser update preserved',DATA.games,cached?.cachedAt||config.snapshotUpdatedAt,'The direct Google response contained fewer completed results, so CPI kept the newer schedule already on this device.');
+        renderSourceMeta(config,'Newer browser update preserved',DATA.games,cached?.cachedAt||config.snapshotUpdatedAt,'The direct Google response contained fewer completed results, so WPI kept the newer schedule already on this device.');
       }
       return;
     }
@@ -756,18 +756,18 @@ async function loadCurrentInternal(config,manual=false){
     if(version!==loadVersion)return;
     if(relayApplied&&relayFresh)return;
     const retryDelay=markLiveFailure(config);
-    const retryNote=` CPI will retry live updates in about ${Math.round(retryDelay/1000)} seconds.`;
+    const retryNote=` WPI will retry live updates in about ${Math.round(retryDelay/1000)} seconds.`;
     if(relayApplied){
       dot.classList.add('fallback');
-      status.textContent=`Using last-known-good CPI relay · direct Google connection unavailable`;
-      renderSourceMeta(config,'Last-known-good CPI relay',DATA.games,null,'CPI preserved the relay schedule while both the relay and this browser wait for Google to recover.'+retryNote,'CPI live relay');
+      status.textContent=`Using last-known-good WPI relay · direct Google connection unavailable`;
+      renderSourceMeta(config,'Last-known-good WPI relay',DATA.games,null,'WPI preserved the relay schedule while both the relay and this browser wait for Google to recover.'+retryNote,'WPI live relay');
     }else{
       const fallbackCache=readCache(config);
       if(fallbackCache){
         DATA=datasetWithVerifiedRoutes(config,fallbackCache.games,fallbackCache.teams,embedded);
         dot.classList.add('fallback');
         status.textContent=`Using last successful ${config.age} ${config.division} update · live sources unavailable`;
-        renderSourceMeta(config,'Last verified browser cache',DATA.games,fallbackCache.cachedAt,'The relay and live sheet could not be read. CPI preserved the last successful browser schedule.'+retryNote);
+        renderSourceMeta(config,'Last verified browser cache',DATA.games,fallbackCache.cachedAt,'The relay and live sheet could not be read. WPI preserved the last successful browser schedule.'+retryNote);
       }else if(embedded){
         DATA=embedded;
         dot.classList.add('fallback');

@@ -1,12 +1,12 @@
 /*
-  CPI Release 6.1.1 — Editorial Hero Component
+  WPI Release 6.1.1 — Editorial Hero Component
 */
 (function () {
   const DEFAULT_HERO = {
     slides: [{
       id: "fallback",
       tag: "Featured Story",
-      title: "California Polo Index",
+      title: "Water Polo Index",
       summary: "Rankings, stories, and club intelligence for California youth water polo.",
       image: "assets/photos/editorial/polo-shooter-close.jpg",
       primaryCta: { label: "View Rankings", url: "rankings.html" },
@@ -34,7 +34,7 @@
       const config = await response.json();
       return config && config.hero ? config.hero : DEFAULT_HERO;
     } catch (error) {
-      console.warn("CPI Hero: using fallback hero config.", error);
+      console.warn("WPI Hero: using fallback hero config.", error);
       return DEFAULT_HERO;
     }
   }
@@ -43,7 +43,7 @@
     return {
       id: safe(slide.id, `hero-${index}`),
       tag: safe(slide.tag, "Featured Story"),
-      title: safe(slide.title, "California Polo Index"),
+      title: safe(slide.title, "Water Polo Index"),
       summary: safe(slide.summary, "Rankings, stories, and club intelligence for California youth water polo."),
       image: safe(slide.image, "assets/photos/editorial/polo-shooter-close.jpg"),
       primaryCta: {
@@ -167,7 +167,7 @@
     renderHero();
     startAutoplay();
 
-    console.info("CPI Hero v2 loaded", {
+    console.info("WPI Hero v2 loaded", {
       slides: state.slides.length,
       autoplay: state.autoplay,
       intervalMs: state.intervalMs

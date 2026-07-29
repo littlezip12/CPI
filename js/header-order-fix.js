@@ -1,4 +1,4 @@
-/* CPI header order fix */
+/* WPI header order fix */
 (function () {
   function fixHeaderOrder() {
     const header = document.querySelector('.cpi-shell-header');

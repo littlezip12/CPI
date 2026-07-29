@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build CPI's banked Junior Olympics live-data relay.
+"""Build WPI's banked Junior Olympics live-data relay.
 
 The relay runs in GitHub Actions, fetches the public Google Sheet tabs from a
-server-side runner, validates each candidate against CPI's tournament parser,
+server-side runner, validates each candidate against WPI's tournament parser,
 and publishes one last-known-good CSV plus status record per division. Browser
 clients read this branch before attempting Google directly.
 """
@@ -35,7 +35,7 @@ RAW_ROOT = ROOT / "data" / "tournaments" / "raw"
 NORMALIZED_ROOT = ROOT / "data" / "tournaments" / "normalized"
 JO_EVENT_IDS = ("2026-jo-weekend-1", "2026-jo-weekend-2")
 RELEASE = "7.51.0"
-USER_AGENT = "Mozilla/5.0 (compatible; CPI-JO-Live-Relay/7.51.0; +https://littlezip12.github.io/CPI/)"
+USER_AGENT = "Mozilla/5.0 (compatible; WPI-JO-Live-Relay/7.51.0; +https://littlezip12.github.io/CPI/)"
 
 
 def utc_now() -> str:
@@ -236,7 +236,7 @@ def fetch_division(
             if candidate_index + 1 < len(urls):
                 time.sleep(1.25)
 
-    # Preserve the newest banked relay. On the first run, seed it from CPI's
+    # Preserve the newest banked relay. On the first run, seed it from WPI's
     # verified repository snapshot so the branch is immediately useful.
     target = csv_path(event_id, division_id)
     prior_status = read_previous_status(event_id, division_id)

@@ -1,4 +1,4 @@
-/* CPI Release 7.26 — club directory and club profile polish */
+/* WPI Release 7.26 — club directory and club profile polish */
 (function () {
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
   const LOGO_CACHE_VERSION = "7.50.2";
@@ -179,7 +179,7 @@
   }
 
   function logoMarkup(club, className = "club-logo-box") {
-    return `<span class="${className}"><img src="${escapeHtml(safeLogo(club))}" alt="${escapeHtml(safeName(club))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.50.2'"></span>`;
+    return `<span class="${className}"><img src="${escapeHtml(safeLogo(club))}" alt="${escapeHtml(safeName(club))} logo" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/cpi-logo-fallback.svg?v=7.53.4'"></span>`;
   }
 
   function bestTeamSummary(club) {
@@ -275,7 +275,7 @@
       </div>
       <div class="club-card-stats club-card-stats-v726">
         <div><small>Teams</small><b>${club.rankedTeamCount}</b></div>
-        <div><small>Avg CPI</small><b>${formatCpi(club.averageCpi)}</b></div>
+        <div><small>Avg WPI</small><b>${formatCpi(club.averageCpi)}</b></div>
         <div><small>Top 25</small><b>${club.top25}</b></div>
         <div><small>Groups</small><b>${groups.length || "—"}</b></div>
       </div>
@@ -487,7 +487,7 @@
     const recent = history.recentGames || [];
     return `<section id="club-tournament-history" class="club-profile-table-card historical-club-panel">
       <div class="club-profile-section-title"><div><p class="club-intel-eyebrow">Historical tournament archive</p><h2>Program results and entries</h2></div><span>${escapeHtml(historicalClubRecord(summary))}</span></div>
-      <p class="club-profile-note historical-policy-note">Historical results are profile context only. They remain separate from live JO evidence and cannot change published CPI rankings automatically.</p>
+      <p class="club-profile-note historical-policy-note">Historical results are profile context only. They remain separate from live JO evidence and cannot change published WPI rankings automatically.</p>
       <div class="historical-summary-grid club-history-summary">
         <div><span>Events</span><strong>${escapeHtml(summary.events || 0)}</strong></div>
         <div><span>Teams identified</span><strong>${escapeHtml((history.teamNames || []).length)}</strong></div>
@@ -510,14 +510,14 @@
       root.innerHTML = `<section class="club-profile-not-found">
         <p class="club-intel-eyebrow">Club profile</p>
         <h1>Club not found</h1>
-        <p>The requested club could not be matched to the current CPI club registry.${requestedSlug ? ` Requested profile: <strong>${escapeHtml(requestedSlug)}</strong>.` : ""}</p>
+        <p>The requested club could not be matched to the current WPI club registry.${requestedSlug ? ` Requested profile: <strong>${escapeHtml(requestedSlug)}</strong>.` : ""}</p>
         <div class="club-profile-actions"><a class="club-intel-btn" href="clubs.html">Explore clubs</a><a class="club-intel-btn secondary" href="rankings.html">View rankings</a></div>
       </section>`;
       return;
     }
 
     applyClubProfileVars(club);
-    document.title = `${safeName(club)} | California Polo Index`;
+    document.title = `${safeName(club)} | Water Polo Index`;
     const top = club.topTeam || {};
     const historicalProfile = historicalForClub(club);
     const joClubProfile = joForClub(club);
@@ -530,7 +530,7 @@
     const teamRows = teams.length ? teams.map((team) => `<a class="club-team-row club-team-row-v726" href="${escapeHtml(teamHref(team))}">
       <div class="club-team-rank">#${escapeHtml(team.postRank || "—")}</div>
       <div><strong>${escapeHtml(team.team)}</strong><span>${escapeHtml(team.group || "Group TBD")} · ${escapeHtml(team.latestTournamentRecord || "—")}</span></div>
-      <div class="club-team-stat">${formatCpi(team.postCPI)}<span>CPI</span></div>
+      <div class="club-team-stat">${formatCpi(team.postCPI)}<span>WPI</span></div>
       <div class="club-team-stat">${escapeHtml(team.bestDivisionTier || "—")}<span>Tier</span></div>
     </a>`).join("") : `<div class="club-empty">No ranked teams are currently connected to this club.</div>`;
 
@@ -560,13 +560,13 @@
         <div class="club-profile-kpis club-profile-kpis-v726">
           <div class="club-profile-kpi"><small>Ranked teams</small><b>${club.rankedTeamCount}</b></div>
           <div class="club-profile-kpi"><small>Best rank</small><b>${club.bestRank ? `#${club.bestRank}` : "—"}</b></div>
-          <div class="club-profile-kpi"><small>Average CPI</small><b>${formatCpi(club.averageCpi)}</b></div>
+          <div class="club-profile-kpi"><small>Average WPI</small><b>${formatCpi(club.averageCpi)}</b></div>
           <div class="club-profile-kpi"><small>Top 25 teams</small><b>${club.top25}</b></div>
         </div>
         <a class="club-best-team-card-v726" href="${top.team ? escapeHtml(teamHref(top)) : "rankings.html"}">
           <small>Best ranked team</small>
           <strong>${top.team ? `#${top.postRank} ${escapeHtml(top.team)}` : "No ranked team yet"}</strong>
-          ${top.group ? `<span>${escapeHtml(top.group)} · ${formatCpi(top.postCPI)} CPI</span>` : ""}
+          ${top.group ? `<span>${escapeHtml(top.group)} · ${formatCpi(top.postCPI)} WPI</span>` : ""}
         </a>
         <div class="club-profile-insight club-profile-insight-v726"><small>Footprint</small><strong>${groups.length ? escapeHtml(groups.join(", ")) : "Groups will expand as more data is added"}</strong></div>
         <div class="club-profile-insight club-profile-insight-v726"><small>Gender coverage</small><strong>${genders.length ? escapeHtml(genders.join(" + ")) : "—"}</strong></div>
@@ -599,7 +599,7 @@
           <span>${teams.length} team${teams.length === 1 ? "" : "s"}</span>
         </div>
         <div class="club-team-list">${teamRows}</div>
-        <p class="club-profile-note">Club metrics are calculated from ranked CPI teams currently connected to this club. Regions, aliases, and logos remain under active audit.</p>
+        <p class="club-profile-note">Club metrics are calculated from ranked WPI teams currently connected to this club. Regions, aliases, and logos remain under active audit.</p>
       </article>
     </section>`;
   }

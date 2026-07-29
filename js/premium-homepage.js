@@ -1,5 +1,5 @@
 /*
-  CPI 5.4 — Premium Homepage
+  WPI 5.4 — Premium Homepage
 */
 (function () {
   function isHomePage() {
@@ -114,7 +114,7 @@
           <div class="premium-story-grid">
             <article class="premium-story-card">
               <img src="${storyOne}" alt="Water polo action">
-              <div><span>Rankings</span><h3>La Jolla United A Holds #1 Spot in 14U Boys</h3><p>The latest CPI update keeps La Jolla United A on top after a strong weekend performance.</p><small>May 24, 2026 · 2 min read</small></div>
+              <div><span>Rankings</span><h3>La Jolla United A Holds #1 Spot in 14U Boys</h3><p>The latest WPI update keeps La Jolla United A on top after a strong weekend performance.</p><small>May 24, 2026 · 2 min read</small></div>
             </article>
             <article class="premium-story-card">
               <img src="${storyTwo}" alt="Tournament celebration">
@@ -122,7 +122,7 @@
             </article>
             <article class="premium-story-card">
               <img src="${storyThree}" alt="Water polo team huddle">
-              <div><span>Club Spotlight</span><h3>Trending Clubs Are Turning Movement Into Stories</h3><p>Momentum, depth, and tournament results are beginning to define the CPI club landscape.</p><small>May 22, 2026 · 4 min read</small></div>
+              <div><span>Club Spotlight</span><h3>Trending Clubs Are Turning Movement Into Stories</h3><p>Momentum, depth, and tournament results are beginning to define the WPI club landscape.</p><small>May 22, 2026 · 4 min read</small></div>
             </article>
           </div>
         </section>
@@ -161,7 +161,7 @@
 
         <section class="premium-subscribe">
           <div class="premium-mail-icon">✉</div>
-          <div><h2>Stay in the Game</h2><p>Get CPI rankings, recaps, and stories delivered 1–2 times per month.</p></div>
+          <div><h2>Stay in the Game</h2><p>Get WPI rankings, recaps, and stories delivered 1–2 times per month.</p></div>
           <form><input type="email" placeholder="Enter your email" aria-label="Email address"><button type="button">Subscribe</button></form>
         </section>
       </main>

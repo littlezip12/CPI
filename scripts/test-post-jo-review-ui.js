@@ -2,7 +2,7 @@ const fs=require('fs');const path=require('path');const root=path.resolve(__dirn
 const read=rel=>fs.readFileSync(path.join(root,rel),'utf8');
 function need(x,m){if(!x){console.error('POST-JO REVIEW UI TESTS FAILED\n - '+m);process.exit(1)}}
 const html=read('post-jo-review.html'),js=read('js/post-jo-review-v7-46.js');
-need(html.includes('data/tournaments/post-jo-review/runtime.js?v=7.46.0'),'Page does not load post-JO runtime');
+need(html.includes('data/tournaments/post-jo-review/runtime.js?v=7.53.4'),'Page does not load post-JO runtime');
 need(html.includes('id="exportApproved"')&&html.includes('id="importDecisions"')&&html.includes('id="clearDecisions"'),'Decision portability controls are missing');
 need(html.includes('Manual publication only'),'Manual-publication warning is missing');
 need(js.includes('localStorage')&&js.includes('approved_ranking_change_set'),'Local decision storage or approved change-set export is missing');

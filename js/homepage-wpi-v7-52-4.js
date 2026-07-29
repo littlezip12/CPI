@@ -3,7 +3,7 @@
 
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
-  const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.52.4";
+  const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
   const ages = ["12U", "14U", "16U", "18U"];
   let joPayload = null;
   let resultCategory = "Boys";
@@ -267,7 +267,7 @@
   bindHomepagePathways();
   bindResultsControls();
 
-  fetch("data/tournaments/jo-results-2026.json?v=7.52.1", { cache: "no-store" })
+  fetch("data/tournaments/jo-results-2026.json?v=7.53.4", { cache: "no-store" })
     .then((response) => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
     .then((data) => {
       joPayload = data;

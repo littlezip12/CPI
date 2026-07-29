@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build CPI tournament source-health data and browser runtime from registry and banked snapshots."""
+"""Build WPI tournament source-health data and browser runtime from registry and banked snapshots."""
 from __future__ import annotations
 
 import json

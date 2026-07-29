@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared CPI tournament ingestion and normalization helpers (release 7.49.1)."""
+"""Shared WPI tournament ingestion and normalization helpers (release 7.49.1)."""
 from __future__ import annotations
 
 import csv

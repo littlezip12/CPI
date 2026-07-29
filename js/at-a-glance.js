@@ -1,5 +1,5 @@
 /*
-  CPI Release 6.3 — At-a-Glance Dashboard
+  WPI Release 6.3 — At-a-Glance Dashboard
   Replaces the old dashboard cards with reusable, data-aware homepage widgets.
 */
 
@@ -257,7 +257,7 @@
       </div>
     `;
 
-    console.info("CPI At-a-Glance dashboard loaded", {
+    console.info("WPI At-a-Glance dashboard loaded", {
       topRanked: topRanked.length,
       movers: movers.length,
       trending: trending.length,

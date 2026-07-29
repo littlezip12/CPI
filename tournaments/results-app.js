@@ -376,14 +376,14 @@
       const placements=[];
       (j.groups||[]).forEach(g=>{
         const group=g.group||g.label||"";
-        (g.placements||[]).forEach(p=>placements.push({...p,group,event:j.displayName||j.name||state.event.title,source:"CPI fallback"}));
+        (g.placements||[]).forEach(p=>placements.push({...p,group,event:j.displayName||j.name||state.event.title,source:"WPI fallback"}));
       });
       const keyGames=(j.keyGames||[]).map(k=>({
         ...k,
         white: canonicalTeamValue(k.white || k.team || k.winner || ""),
         dark: canonicalTeamValue(k.dark || k.opponent || k.loser || ""),
         event:j.displayName||j.name||state.event.title,
-        source:"CPI fallback"
+        source:"WPI fallback"
       }));
       return {games:keyGames,placements};
     }catch(e){ return {games:[],placements:[]}; }
@@ -392,7 +392,7 @@
   function setup(){
     const key=document.body.dataset.event||"quicksilver";
     state.event=EVENTS[key]||EVENTS.quicksilver;
-    document.title=`${state.event.title} | CPI`;
+    document.title=`${state.event.title} | WPI`;
     $("eyebrow").textContent=state.event.eyebrow;
     $("pageTitle").textContent=state.event.title;
     $("subtitle").textContent=state.event.subtitle;
@@ -559,7 +559,7 @@
       state.games=fallback.games||[];
       state.placements=fallback.placements||[];
       if(state.games.length||state.placements.length){
-        $("status").textContent="Using CPI fallback evidence";
+        $("status").textContent="Using WPI fallback evidence";
         $("status").className="tr-live-pill warn";
       } else {
         $("status").textContent=state.event.tabs&&state.event.tabs.length?"No game data loaded":"Source sheet needed";

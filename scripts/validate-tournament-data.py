@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate CPI tournament source registry, raw snapshots, normalized games, and QA outputs."""
+"""Validate WPI tournament source registry, raw snapshots, normalized games, and QA outputs."""
 from __future__ import annotations
 
 import hashlib

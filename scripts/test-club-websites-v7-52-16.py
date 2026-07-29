@@ -9,7 +9,7 @@ def load(r): return json.loads((ROOT/r).read_text(encoding='utf-8'))
 def digest(v): return hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':'),ensure_ascii=True).encode()).hexdigest()
 site=load('config/site-release.json'); audit=load('data/club-website-audit-7.52.16.json'); subs=load('data/club-website-submissions-7.52.16.json')
 clubs=load('clubs.json'); reg=load('club-registry.json'); rankings=load('rankings.json'); ids=load('data/identity/clubs.json'); idx=load('data/identity/index.json'); intel=load('data/club-intelligence.json')['clubs']; jo=load('data/tournaments/jo-results-2026.json'); baseline=load('data/release-integrity-7.52.15.json')
-if site.get('version') not in {'7.52.16','7.53.0','7.53.1','7.53.2','7.53.3'}: fail('site version must preserve the 7.52.16 website audit')
+if site.get('version') not in {'7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4'}: fail('site version must preserve the 7.52.16 website audit')
 if site.get('clubWebsiteRelease')!='7.52.16': fail('clubWebsiteRelease must be 7.52.16')
 expected={'totalClubs':182,'websitePresent':177,'verifiedOfficial':15,'presentUnverified':27,'userSupplied':135,'noSiteFound':4,'missing':1}
 if audit.get('summary')!=expected: fail(f"audit summary differs: {audit.get('summary')}")
@@ -41,7 +41,7 @@ for line in (ROOT/'data.js').read_text(encoding='utf-8').splitlines():
 if vars.get('CPI_CLUBS')!=clubs or vars.get('CPI_RANKINGS')!=rankings: fail('data.js differs from source JSON')
 if vars.get('CPI_PLATFORM',{}).get('clubWebsiteCoverage',{}).get('websitePresent')!=177: fail('browser coverage is not 177')
 for rel in ['index.html','clubs.html','club.html','team.html','rankings.html','tournaments.html']:
-    if 'data.js?v=7.52.16' not in (ROOT/rel).read_text(encoding='utf-8'): fail(f'{rel} lacks 7.52.16 data cache key')
+    if 'data.js?v=7.53.4' not in (ROOT/rel).read_text(encoding='utf-8'): fail(f'{rel} lacks 7.52.16 data cache key')
 # Competitive, club-logo, JO placement, and JO browser logic stay byte/data identical to 7.52.15.
 rank_comp=[{k:r.get(k) for k in ['group','slug','team','clubSlug','postRank','postCPI','logo','canonicalClubId','canonicalTeamId']} for r in rankings]
 club_comp=[{k:r.get(k) for k in ['slug','displayName','canonicalClubId','logo','logoStatus','region']} for r in clubs]
@@ -53,11 +53,11 @@ for g in jo.get('groups',[]):
 actual={'competitiveRankingAndLogoAssignments':digest(rank_comp),'clubIdentityAndLogoAssignments':digest(club_comp),'joPlacementAndRecordData':digest(jo_comp)}
 for k,v in actual.items():
     if v!=baseline['hashes'][k]: fail(f'7.52.15 integrity hash changed: {k}')
-if hashlib.sha256((ROOT/'js/jo-results-browser-v7-52-1.js').read_bytes()).hexdigest()!='266b91b0c3914c198cc0243c4cfe97a4789d47ba3a8df85a1e9cef8fae16115b': fail('JO results browser JS changed during website update')
-if 'js/jo-results-browser-v7-52-1.js?v=7.52.15' not in (ROOT/'tournaments.html').read_text(encoding='utf-8'): fail('JO results browser cache key changed')
+if hashlib.sha256((ROOT/'js/jo-results-browser-v7-52-1.js').read_bytes()).hexdigest()!='04a747ce9ff3854961e5ff8a1e4ed69eb6a79435ab4a18f457858eeed2ade0d0': fail('JO results browser JS differs from the approved 7.53.4 WPI-branded browser')
+if 'js/jo-results-browser-v7-52-1.js?v=7.53.4' not in (ROOT/'tournaments.html').read_text(encoding='utf-8'): fail('JO results browser cache key changed')
 if errors:
  print('CLUB WEBSITE 7.52.16 TEST FAILED'); [print(' -',e) for e in errors]; sys.exit(1)
 print('CLUB WEBSITE 7.52.16 TESTS PASSED')
 print(' - 177 of 182 clubs have links; four are explicitly no-site and one remains missing')
 print(' - All 135 user-supplied additions are synchronized across public, canonical, profile, and browser data')
-print(' - Rankings, club/logo identities, JO placements, and JO logo-browser code remain unchanged from 7.52.15')
+print(' - Rankings, club/logo identities, JO placements, and JO logo-browser behavior remains protected after the 7.53.4 branding-only copy migration')

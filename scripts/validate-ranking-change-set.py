@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate an exported CPI approved ranking change set. Never applies changes."""
+"""Validate an exported WPI approved ranking change set. Never applies changes."""
 import json
 import sys
 from pathlib import Path

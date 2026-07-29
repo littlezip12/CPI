@@ -50,7 +50,7 @@
         <div class="review-card-head"><div><span>${escapeHtml(item.group)}</span><h3>${escapeHtml(item.name)}</h3></div><b>${item.status === "ready_for_ranking_review" ? "Review results" : "Schedule banked"}</b></div>
         <div class="review-card-summary"><strong>${escapeHtml(record(item.summary))}</strong><span>${Number(item.summary?.games || 0)} banked game${Number(item.summary?.games || 0) === 1 ? "" : "s"}</span></div>
         <div class="review-appearances">${appearances.map((appearance) => `<div><span>${escapeHtml(appearance.divisionLabel || appearance.divisionId)}</span><strong>${appearance.seed != null ? `Seed #${escapeHtml(appearance.seed)}` : "Seed pending"}</strong><em>${escapeHtml(record(appearance))}</em></div>`).join("")}</div>
-        ${item.seedRankGaps?.length ? `<p class="review-flag">Seed/CPI gap: ${item.seedRankGaps.map((gap) => `#${gap.seed} seed vs #${gap.cpiRank} CPI`).join(" · ")}</p>` : ""}
+        ${item.seedRankGaps?.length ? `<p class="review-flag">Seed/WPI gap: ${item.seedRankGaps.map((gap) => `#${gap.seed} seed vs #${gap.cpiRank} WPI`).join(" · ")}</p>` : ""}
         <a href="${escapeHtml(item.teamPage || "rankings.html")}">Open team profile →</a>
       </article>`;
     }).join("") : `<p class="empty-review">No ranking-review items match these filters.</p>`;
