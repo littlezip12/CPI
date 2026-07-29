@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import json
+import sys
+
+ROOT=Path(__file__).resolve().parents[1]
+errors=[]
+load=lambda rel: json.loads((ROOT/rel).read_text(encoding='utf-8'))
+site=load('config/site-release.json')
+registry=load('data/tournaments/platform/registry.json')
+bundle=load('data/tournaments/platform/events/2026-quiksilver-cup.json')
+source_registry=load('data/tournaments/registry.json')
+rankings=load('rankings.json')
+clubs=load('clubs.json')
+jo=load('data/tournaments/jo-results-2026.json')
+
+for key in ['tournamentPlatformRelease','tournamentRegistryRelease','tournamentSchemaRelease','quiksilverPlatformRelease']:
+    if site.get(key)!='7.54.0': errors.append(f'{key} must be 7.54.0')
+if site.get('version')!='7.54.0': errors.append('site version must be 7.54.0')
+if registry.get('release')!='7.54.0' or len(registry.get('events',[]))!=5: errors.append('platform registry must contain five registered events at 7.54.0')
+event=next((e for e in registry.get('events',[]) if e.get('id')=='2026-quiksilver-cup'),None)
+if not event or event.get('migrationStatus')!='platform_live': errors.append('Quiksilver Cup must be the first platform-live event')
+if event and event.get('publicPath')!='tournament.html?event=2026-quiksilver-cup': errors.append('Quiksilver platform public path is incorrect')
+
+summary=bundle.get('summary',{})
+expected={'divisionCount':7,'gameCount':226,'finalGameCount':226,'scheduledGameCount':0,'teamCount':93,'placementCount':80,'venueCount':14,'dateCount':4}
+for key,value in expected.items():
+    if summary.get(key)!=value: errors.append(f'Quiksilver {key} expected {value}, found {summary.get(key)}')
+if bundle.get('event',{}).get('rankingEvidenceEnabled') is not False: errors.append('historical platform event must remain ranking-quarantined')
+if set(bundle.get('capabilities',{}).get('filters',[]))!={'ageGroup','gender','division','team','date','venue','status','search'}: errors.append('reusable filter contract is incomplete')
+if {a.get('type') for a in bundle.get('sourceAdapters',[])}!={'normalized_json','google_sheets_csv'}: errors.append('Quiksilver source adapters are incomplete')
+
+team_ids={t.get('participantId') for t in bundle.get('teams',[])}
+for game in bundle.get('games',[]):
+    for side in ['white','dark']:
+        participant=game.get(side)
+        if participant and participant.get('participantId') not in team_ids:
+            errors.append(f"game {game.get('id')} references an unknown participant")
+            break
+for team in bundle.get('teams',[]):
+    logo=team.get('logo')
+    if logo and not (ROOT/logo).exists(): errors.append(f"team logo does not exist: {logo}")
+
+for rel in [
+    'tournament.html','css/tournament-platform-v7-54-0.css','js/tournament-platform-v7-54-0.js',
+    'tournaments/schema/tournament-event.schema.json','tournaments/schema/tournament-division.schema.json',
+    'tournaments/schema/tournament-participant.schema.json','tournaments/schema/tournament-venue.schema.json',
+    'tournaments/schema/tournament-source-adapter.schema.json','tournaments/schema/tournament-platform-bundle.schema.json'
+]:
+    if not (ROOT/rel).exists() or (ROOT/rel).stat().st_size==0: errors.append(f'missing platform asset: {rel}')
+
+page=(ROOT/'tournament.html').read_text(encoding='utf-8')
+for token in ['id="tpAge"','id="tpGender"','id="tpDivision"','id="tpTeam"','id="tpDate"','id="tpVenue"','id="tpStatus"','id="tpSearch"','id="tpJourney"','tournament-platform-v7-54-0.js?v=7.54.0']:
+    if token not in page: errors.append(f'tournament.html missing {token}')
+redirect=(ROOT/'tournaments/quicksilver-cup/index.html').read_text(encoding='utf-8')
+if '../../tournament.html?event=2026-quiksilver-cup' not in redirect: errors.append('legacy Quiksilver URL does not converge on the platform')
+hub=(ROOT/'tournaments.html').read_text(encoding='utf-8')
+if 'tournament.html?event=2026-quiksilver-cup' not in hub or 'Unified viewer' not in hub: errors.append('tournament hub does not promote the migrated platform event')
+source_event=next((e for e in source_registry.get('events',[]) if e.get('id')=='2026-quiksilver-cup'),{})
+if source_event.get('platformEnabled') is not True or source_event.get('platformRelease')!='7.54.0': errors.append('source registry does not register Quiksilver platform migration')
+
+if len(rankings)!=724: errors.append(f'expected 724 rankings, found {len(rankings)}')
+if len(clubs)!=182: errors.append(f'expected 182 clubs, found {len(clubs)}')
+if jo.get('summary',{}).get('teamPlacements')!=976: errors.append('expected 976 JO placements')
+
+if errors:
+    print('WPI TOURNAMENT PLATFORM 7.54.0 TEST FAILED')
+    for error in errors[:40]: print(' -',error)
+    sys.exit(1)
+print('WPI TOURNAMENT PLATFORM 7.54.0 TEST PASSED')
+print(' - Five events share one platform registry and source-adapter contract')
+print(' - Quiksilver Cup migrated with 7 divisions, 226 finals, 93 teams, 80 placements, and 14 venues')
+print(' - Age, gender, division, team, date, venue, status, and search filters are wired')
+print(' - Legacy Quiksilver URLs converge on the reusable viewer')
+print(' - 724 rankings, 182 clubs, and 976 JO placements remain unchanged')

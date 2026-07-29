@@ -9,7 +9,7 @@ def load(r): return json.loads((ROOT/r).read_text(encoding='utf-8'))
 def digest(v): return hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':'),ensure_ascii=True).encode()).hexdigest()
 site=load('config/site-release.json'); audit=load('data/club-website-audit-7.52.16.json'); subs=load('data/club-website-submissions-7.52.16.json')
 clubs=load('clubs.json'); reg=load('club-registry.json'); rankings=load('rankings.json'); ids=load('data/identity/clubs.json'); idx=load('data/identity/index.json'); intel=load('data/club-intelligence.json')['clubs']; jo=load('data/tournaments/jo-results-2026.json'); baseline=load('data/release-integrity-7.52.15.json')
-if site.get('version') not in {'7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7'}: fail('site version must preserve the 7.52.16 website audit')
+if site.get('version') not in {'7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0'}: fail('site version must preserve the 7.52.16 website audit')
 if site.get('clubWebsiteRelease')!='7.52.16': fail('clubWebsiteRelease must be 7.52.16')
 expected={'totalClubs':182,'websitePresent':177,'verifiedOfficial':15,'presentUnverified':27,'userSupplied':135,'noSiteFound':4,'missing':1}
 if audit.get('summary')!=expected: fail(f"audit summary differs: {audit.get('summary')}")

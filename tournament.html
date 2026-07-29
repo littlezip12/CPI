@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tournament | Water Polo Index</title>
+  <meta name="description" content="Search WPI tournament schedules, results, team journeys, venues, and final placements in one reusable tournament viewer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.53.4">
+  <link rel="stylesheet" href="css/tournament-platform-v7-54-0.css?v=7.54.0">
+  <link rel="stylesheet" href="css/sponsor-framework-v7-53-2.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.53.4">
+</head>
+<body class="cpi-v8-home tournament-platform-page" data-event="2026-quiksilver-cup">
+  <header class="cpi-v8-header">
+    <div class="cpi-v8-header-inner">
+      <a class="cpi-v8-brand" href="index.html" aria-label="Water Polo Index Home"><span class="cpi-v8-brand-mark">WPI</span><span class="cpi-v8-brand-text"><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></span></a>
+      <nav class="cpi-v8-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="teams.html">Teams</a><a href="clubs.html">Clubs</a><a href="tournaments.html" aria-current="page">Tournaments</a><a href="methodology.html">Methodology</a></nav>
+      <button class="cpi-shell-search cpi-v8-search" type="button">Find a team</button>
+    </div>
+  </header>
+
+  <main class="tp-shell" id="tournamentPlatform">
+    <section class="tp-hero" aria-labelledby="tpTitle">
+      <div class="tp-hero-copy">
+        <p class="tp-kicker" id="tpKicker">Tournament platform</p>
+        <h1 id="tpTitle">Loading tournament…</h1>
+        <p class="tp-hero-description" id="tpDescription">Loading schedules, results, teams, and placements.</p>
+        <div class="tp-hero-actions">
+          <a class="tp-button" href="#tpExplorer">Explore results</a>
+          <a class="tp-button secondary" href="tournaments.html">Tournament home</a>
+          <a class="tp-button secondary" id="tpOfficialSource" href="#" target="_blank" rel="noopener">Official source</a>
+        </div>
+        <div class="tp-event-switch">
+          <label for="tpEventSelect">Tournament</label>
+          <select id="tpEventSelect" aria-label="Select a tournament"><option>Loading registered tournaments…</option></select>
+        </div>
+      </div>
+      <aside class="tp-hero-aside">
+        <div class="tp-logo-wrap"><img id="tpEventLogo" src="assets/logos/cpi-logo-fallback.svg" alt="" loading="eager"></div>
+        <span class="tp-event-status" id="tpEventStatus">Loading</span>
+        <div class="tp-date-range" id="tpDates"></div>
+        <p class="tp-policy" id="tpPolicy"></p>
+      </aside>
+    </section>
+
+    <section class="tp-summary-grid" aria-label="Tournament summary">
+      <article class="tp-summary-card"><span>Divisions</span><strong id="tpDivisions">—</strong></article>
+      <article class="tp-summary-card"><span>Games</span><strong id="tpGames">—</strong></article>
+      <article class="tp-summary-card"><span>Teams</span><strong id="tpTeams">—</strong></article>
+      <article class="tp-summary-card"><span>Placements</span><strong id="tpPlacements">—</strong></article>
+      <article class="tp-summary-card"><span>Venues</span><strong id="tpVenues">—</strong></article>
+    </section>
+
+    <section class="tp-panel" id="tpExplorer" aria-label="Tournament explorer">
+      <div class="tp-controls">
+        <div class="tp-field"><label for="tpAge">Age group</label><select id="tpAge"></select></div>
+        <div class="tp-field"><label for="tpGender">Gender</label><select id="tpGender"></select></div>
+        <div class="tp-field"><label for="tpDivision">Division</label><select id="tpDivision"></select></div>
+        <div class="tp-field"><label for="tpTeam">Team</label><select id="tpTeam"></select></div>
+        <div class="tp-field"><label for="tpDate">Date</label><select id="tpDate"></select></div>
+        <div class="tp-field"><label for="tpVenue">Venue</label><select id="tpVenue"></select></div>
+        <div class="tp-field"><label for="tpStatus">Game state</label><select id="tpStatus"></select></div>
+        <div class="tp-field search"><label for="tpSearch">Search</label><input id="tpSearch" type="search" placeholder="Team, club, game, stage, score, or venue" autocomplete="off"></div>
+        <div class="tp-control-actions"><button class="tp-clear" id="tpClear" type="button">Clear filters</button></div>
+      </div>
+
+      <div class="tp-toolbar">
+        <div class="tp-tabs" role="tablist" aria-label="Tournament views">
+          <button class="tp-tab active" type="button" data-view="games">Games</button>
+          <button class="tp-tab" type="button" data-view="teams">Teams</button>
+          <button class="tp-tab" type="button" data-view="placements">Placements</button>
+          <button class="tp-tab" type="button" data-view="journey" disabled>Team journey</button>
+        </div>
+        <span class="tp-result-count" id="tpResultCount">Loading…</span>
+      </div>
+
+      <div class="tp-journey" id="tpJourney" hidden></div>
+      <div class="tp-content" id="tpContent"><div class="tp-empty" id="tpLoading">Loading the tournament platform…</div></div>
+
+      <div class="tp-source-note">
+        <div><strong>Data policy:</strong> WPI displays banked normalized tournament data and preserves links to the official source. Historical results remain separate from automatic ranking publication.</div>
+        <a href="methodology.html">Review WPI methodology →</a>
+      </div>
+      <div data-wpi-sponsor-placement="tournament_inline"></div>
+    </section>
+  </main>
+
+  <footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="index.html"><span>WPI</span><div><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></div></a><p>Independent and unofficial rankings, results, and tournament tools for youth water polo.</p></div><nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="teams.html">Teams</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a></nav><nav><h3>Tournament tools</h3><a href="tournament-archive.html">Archive</a><a href="tournament-source-health.html">Source health</a><a href="methodology.html">Methodology</a></nav><div><h3>Data integrity</h3><p>Sponsorship and advertising never influence rankings, tournament results, or editorial decisions.</p></div></div><div class="bottom">© 2026 Water Polo Index.</div></footer>
+
+  <script src="data/tournaments/platform/runtime.js?v=7.54.0"></script>
+  <script src="js/tournament-platform-v7-54-0.js?v=7.54.0"></script>
+  <script src="data/sponsors/runtime.js?v=7.53.4"></script>
+  <script src="js/sponsor-framework-v7-53-2.js?v=7.53.4"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.53.4"></script>
+</body>
+</html>

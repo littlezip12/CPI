@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
 EXPECTED_RELEASE = "7.45.1"
+ALLOWED_REGISTRY_RELEASES = {"7.45.1", "7.54.0"}
 ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
 ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
 errors: list[str] = []
@@ -37,8 +38,8 @@ def load(path: Path):
 
 registry = load(REGISTRY_PATH) or {}
 manifest = load(MANIFEST_PATH) or {}
-if registry.get("release") != EXPECTED_RELEASE:
-    fail(f"Tournament registry release must be {EXPECTED_RELEASE}")
+if registry.get("release") not in ALLOWED_REGISTRY_RELEASES:
+    fail(f"Tournament registry release must be one of {sorted(ALLOWED_REGISTRY_RELEASES)}")
 if registry.get("schemaVersion") != 1:
     fail("Tournament registry schemaVersion must be 1")
 
@@ -64,7 +65,7 @@ for event in all_events:
         fail(f"Duplicate event ID: {event_id}")
     seen_event_ids.add(event_id)
     seen_division_ids: set[str] = set()
-    public_path = ROOT / str(event.get("publicPath", ""))
+    public_path = ROOT / str(event.get("publicPath", "")).split("?", 1)[0]
     if not public_path.exists():
         fail(f"Event {event_id} points to missing public page {event.get('publicPath')}")
     for division in event.get("divisions", []):

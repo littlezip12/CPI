@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://littlezip12.github.io/CPI/tournaments/schema/tournament-platform-bundle.schema.json",
+  "title": "WPI reusable tournament platform bundle",
+  "type": "object",
+  "required": ["schemaVersion", "release", "event", "summary", "capabilities", "sourceAdapters", "divisions", "teams", "placements", "venues", "dates", "games"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "release": {"type": "string"},
+    "event": {"$ref": "tournament-event.schema.json"},
+    "summary": {"type": "object"},
+    "capabilities": {"type": "object"},
+    "sourceAdapters": {"type": "array", "items": {"$ref": "tournament-source-adapter.schema.json"}},
+    "divisions": {"type": "array", "items": {"$ref": "tournament-division.schema.json"}},
+    "teams": {"type": "array", "items": {"$ref": "tournament-participant.schema.json"}},
+    "placements": {"type": "object"},
+    "venues": {"type": "array", "items": {"$ref": "tournament-venue.schema.json"}},
+    "dates": {"type": "array"},
+    "games": {"type": "array"}
+  }
+}

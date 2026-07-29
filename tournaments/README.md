@@ -32,3 +32,7 @@ Rebuild evidence and source health from existing normalized data:
 python3 scripts/build-tournament-evidence.py
 python3 scripts/build-tournament-health.py
 ```
+
+## WPI 7.54.0 reusable tournament platform
+
+`data/tournaments/platform/registry.json` is the public platform registry. `tournament.html` is the shared viewer, and event bundles live under `data/tournaments/platform/events/`. The first controlled migration is `2026-quiksilver-cup`; other events remain on their proven viewers until explicitly migrated. Source adapters and schema contracts live under `tournaments/schema/`. Historical data never publishes rankings automatically.

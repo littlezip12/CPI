@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://littlezip12.github.io/CPI/tournaments/schema/tournament-venue.schema.json",
+  "title": "WPI tournament venue",
+  "type": "object",
+  "required": ["id", "label", "gameCount"],
+  "properties": {
+    "id": {"type": "string"},
+    "label": {"type": "string"},
+    "address": {"type": ["string", "null"]},
+    "mapUrl": {"type": ["string", "null"], "format": "uri"},
+    "gameCount": {"type": "integer", "minimum": 0}
+  }
+}

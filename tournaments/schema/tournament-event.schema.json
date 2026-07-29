@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://littlezip12.github.io/CPI/tournaments/schema/tournament-event.schema.json",
+  "title": "WPI tournament event",
+  "type": "object",
+  "required": ["id", "name", "season", "status", "publicPath"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "name": {"type": "string", "minLength": 1},
+    "shortName": {"type": ["string", "null"]},
+    "season": {"type": "string"},
+    "kind": {"type": "string"},
+    "status": {"enum": ["upcoming", "live", "complete", "archived"]},
+    "operationsMode": {"type": "string"},
+    "startDate": {"type": ["string", "null"], "format": "date"},
+    "endDate": {"type": ["string", "null"], "format": "date"},
+    "timezone": {"type": ["string", "null"]},
+    "publicPath": {"type": "string"},
+    "legacyPath": {"type": ["string", "null"]},
+    "logo": {"type": ["string", "null"]},
+    "officialSourceUrl": {"type": ["string", "null"], "format": "uri"},
+    "rankingEvidenceEnabled": {"type": "boolean"}
+  }
+}

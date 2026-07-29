@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://littlezip12.github.io/CPI/tournaments/schema/tournament-source-adapter.schema.json",
+  "title": "WPI tournament source adapter",
+  "type": "object",
+  "required": ["id", "type", "role", "readMode"],
+  "properties": {
+    "id": {"type": "string"},
+    "type": {"enum": ["normalized_json", "google_sheets_csv", "repository_csv"]},
+    "role": {"enum": ["primary", "fallback", "provenance"]},
+    "readMode": {"enum": ["repository", "official_source", "live"]},
+    "pathTemplate": {"type": ["string", "null"]},
+    "parser": {"type": ["string", "null"]}
+  }
+}

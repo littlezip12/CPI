@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "7.48.0",
+  "release": "7.54.0",
   "timezone": "America/Los_Angeles",
   "publicBaseUrl": "https://littlezip12.github.io/CPI/",
   "liveEventIds": [
@@ -44,8 +44,10 @@
     "2026-quiksilver-cup": {
       "path": "tournaments/quicksilver-cup/index.html",
       "requiredTokens": [
-        "results-app.js"
-      ]
+        "tournament-platform-v7-54-0.js",
+        "2026-quiksilver-cup"
+      ],
+      "platformPath": "tournament.html?event=2026-quiksilver-cup"
     },
     "2026-boys-futures-super-finals": {
       "path": "tournaments/boys-superfinals/index.html",

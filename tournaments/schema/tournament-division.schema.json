@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://littlezip12.github.io/CPI/tournaments/schema/tournament-division.schema.json",
+  "title": "WPI tournament division",
+  "type": "object",
+  "required": ["id", "label", "season", "ageGroup", "gender", "division", "status", "gameCount", "teamCount"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "label": {"type": "string"},
+    "season": {"type": "string"},
+    "ageGroup": {"type": "string"},
+    "gender": {"type": "string"},
+    "division": {"type": "string"},
+    "divisionTier": {"type": ["string", "null"]},
+    "status": {"enum": ["upcoming", "live", "in_progress", "complete", "archived"]},
+    "gameCount": {"type": "integer", "minimum": 0},
+    "finalGameCount": {"type": "integer", "minimum": 0},
+    "scheduledGameCount": {"type": "integer", "minimum": 0},
+    "teamCount": {"type": "integer", "minimum": 0},
+    "venues": {"type": "array", "items": {"type": "string"}},
+    "dates": {"type": "array", "items": {"type": "string", "format": "date"}}
+  }
+}

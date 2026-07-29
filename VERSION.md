@@ -1,7 +1,9 @@
-# WPI 7.53.7
+# WPI 7.54.0
 
-Editorial photo integration for section landing pages.
+Reusable tournament platform foundation.
 
-- Applies the user-provided team, club, home, and rankings photos to the public site.
-- Keeps the tournament medals photo in place on the Tournaments page.
-- Preserves rankings, club identities, logos, websites, JO placements, tournament history, and sponsor framework data.
+- Introduces one shared tournament registry, source-adapter contract, event/division/participant/venue schemas, and reusable public tournament viewer.
+- Migrates the completed 2026 Quiksilver Cup as the first controlled event with 7 divisions, 226 verified games, 93 teams, 80 placements, 14 venues, and complete team journeys.
+- Preserves the proven Junior Olympics viewers and other archived-event pages until each event is deliberately migrated.
+- Keeps tournament history quarantined from automatic ranking publication.
+- Preserves 724 rankings, 182 clubs, 177 club website links, 976 JO placements, identity mappings, logos, team profiles, and sponsor data.

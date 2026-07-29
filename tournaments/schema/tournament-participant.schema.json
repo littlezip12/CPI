@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://littlezip12.github.io/CPI/tournaments/schema/tournament-participant.schema.json",
+  "title": "WPI tournament participant",
+  "type": "object",
+  "required": ["participantId", "name", "divisionId", "ageGroup", "gender", "record", "gameIds"],
+  "properties": {
+    "participantId": {"type": "string"},
+    "name": {"type": "string"},
+    "teamId": {"type": ["string", "null"]},
+    "clubId": {"type": ["string", "null"]},
+    "teamPage": {"type": ["string", "null"]},
+    "clubPage": {"type": ["string", "null"]},
+    "logo": {"type": ["string", "null"]},
+    "divisionId": {"type": "string"},
+    "ageGroup": {"type": "string"},
+    "gender": {"type": "string"},
+    "finish": {"type": ["integer", "null"], "minimum": 1},
+    "rank": {"type": ["integer", "null"], "minimum": 1},
+    "rating": {"type": ["number", "null"]},
+    "record": {
+      "type": "object",
+      "required": ["wins", "losses", "ties", "display"],
+      "properties": {
+        "wins": {"type": "integer", "minimum": 0},
+        "losses": {"type": "integer", "minimum": 0},
+        "ties": {"type": "integer", "minimum": 0},
+        "display": {"type": "string"}
+      }
+    },
+    "gameIds": {"type": "array", "items": {"type": "string"}}
+  }
+}
