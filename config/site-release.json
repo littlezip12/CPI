@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.54.3",
-  "name": "Tournament Archive Preservation Hotfix",
-  "date": "2026-07-28",
+  "version": "7.54.4",
+  "name": "Public Tournament Hub Cleanup",
+  "date": "2026-07-29",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "migration",
-  "notes": "Keeps Girls US Club Championships withheld from the public reusable viewer while preserving its banked historical archive and profile-linked records. This repairs the 7.54.2 release-check regression without publishing unverified placements or routing labels as teams.",
+  "notes": "Rebuilds the public tournament landing page around a compact hero, one next-tournament module, and a year-based season-ordered results archive. Public operational and ranking-review links are removed while internal data systems, tournament archives, rankings, identities, logos, websites, JO placements, and sponsor data remain unchanged.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.49.1",
   "tournamentEvidenceRelease": "7.45.1",
@@ -17,7 +17,7 @@
   "tournamentOperationsRelease": "7.48.0",
   "tournamentArchiveRelease": "7.49.1",
   "historicalProfilesRelease": "7.49.1",
-  "tournamentUIRelease": "7.54.3",
+  "tournamentUIRelease": "7.54.4",
   "logoLibraryRelease": "7.52.10",
   "logoDeliveryRelease": "7.52.15",
   "joJourneyRelease": "7.52.9",
@@ -43,7 +43,7 @@
   "sponsorFrameworkRelease": "7.53.2",
   "commercialFoundationRelease": "7.53.2",
   "navigationRelease": "7.53.5",
-  "publicExperienceRelease": "7.54.3",
+  "publicExperienceRelease": "7.54.4",
   "storiesStatus": "retired-preserved",
   "teamDirectoryRelease": "7.53.6",
   "sectionLandingRelease": "7.53.7",
@@ -54,5 +54,7 @@
   "quiksilverPlatformRelease": "7.54.1",
   "boysFuturesPlatformRelease": "7.54.1",
   "tournamentDataIntegrityRelease": "7.54.3",
-  "tournamentArchivePreservationRelease": "7.54.3"
+  "tournamentArchivePreservationRelease": "7.54.3",
+  "tournamentPublicHubRelease": "7.54.4",
+  "tournamentArchiveExperienceRelease": "7.54.4"
 }

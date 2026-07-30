@@ -16,15 +16,15 @@ rankings = load("rankings.json")
 clubs = load("clubs.json")
 jo = load("data/tournaments/jo-results-2026.json")
 
-if site.get("tournamentPlatformRelease") not in {"7.54.1", "7.54.2", "7.54.3"}:
+if site.get("tournamentPlatformRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
     errors.append("tournamentPlatformRelease must preserve 7.54.1")
-if site.get("tournamentRegistryRelease") not in {"7.54.1", "7.54.2", "7.54.3"}:
+if site.get("tournamentRegistryRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
     errors.append("tournamentRegistryRelease must preserve 7.54.1")
 if site.get("boysFuturesPlatformRelease") != "7.54.1":
     errors.append("boysFuturesPlatformRelease must remain 7.54.1")
-if site.get("version") not in {"7.54.1", "7.54.2", "7.54.3"}:
+if site.get("version") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
     errors.append("site version must preserve the Boys Futures migration")
-if registry.get("release") not in {"7.54.1", "7.54.2", "7.54.3"} or len(registry.get("events", [])) != 5:
+if registry.get("release") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4"} or len(registry.get("events", [])) != 5:
     errors.append("platform registry must contain five registered events")
 platform_live = [event for event in registry.get("events", []) if event.get("migrationStatus") == "platform_live"]
 if {event.get("id") for event in platform_live} != {"2026-quiksilver-cup", "2026-boys-futures-super-finals"}:
@@ -87,9 +87,9 @@ if source_event.get("legacyPublicPath") != "tournaments/boys-superfinals/index.h
 legacy = (ROOT / "tournaments/boys-superfinals/index.html").read_text(encoding="utf-8")
 if "../../tournament.html?event=2026-boys-futures-super-finals" not in legacy:
     errors.append("legacy Boys Futures route does not converge on the platform")
-hub = (ROOT / "tournaments.html").read_text(encoding="utf-8")
-if "tournament.html?event=2026-boys-futures-super-finals" not in hub or "709 verified finals" not in hub:
-    errors.append("tournament hub does not promote the migrated Boys Futures event")
+public_hub = load("data/tournaments/public-hub.json")
+if not any(e.get("id")=="2026-boys-futures-super-finals" and e.get("publicPath")=="tournament.html?event=2026-boys-futures-super-finals" for e in public_hub.get("events", [])):
+    errors.append("public tournament archive does not register Boys Futures")
 page = (ROOT / "tournament.html").read_text(encoding="utf-8")
 for token in ["data/tournaments/platform/runtime.js?v=7.54.1", "js/tournament-platform-v7-54-0.js?v=7.54.1"]:
     if token not in page:

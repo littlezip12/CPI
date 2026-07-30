@@ -9,7 +9,7 @@ def load(r): return json.loads((ROOT/r).read_text(encoding='utf-8'))
 def digest(v): return hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':'),ensure_ascii=True).encode()).hexdigest()
 site=load('config/site-release.json'); audit=load('data/club-website-audit-7.52.16.json'); subs=load('data/club-website-submissions-7.52.16.json')
 clubs=load('clubs.json'); reg=load('club-registry.json'); rankings=load('rankings.json'); ids=load('data/identity/clubs.json'); idx=load('data/identity/index.json'); intel=load('data/club-intelligence.json')['clubs']; jo=load('data/tournaments/jo-results-2026.json'); baseline=load('data/release-integrity-7.52.15.json')
-if site.get('version') not in {'7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3'}: fail('site version must preserve the 7.52.16 website audit')
+if site.get('version') not in {'7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4'}: fail('site version must preserve the 7.52.16 website audit')
 if site.get('clubWebsiteRelease')!='7.52.16': fail('clubWebsiteRelease must be 7.52.16')
 expected={'totalClubs':182,'websitePresent':177,'verifiedOfficial':15,'presentUnverified':27,'userSupplied':135,'noSiteFound':4,'missing':1}
 if audit.get('summary')!=expected: fail(f"audit summary differs: {audit.get('summary')}")
@@ -54,7 +54,7 @@ actual={'competitiveRankingAndLogoAssignments':digest(rank_comp),'clubIdentityAn
 for k,v in actual.items():
     if v!=baseline['hashes'][k]: fail(f'7.52.15 integrity hash changed: {k}')
 if hashlib.sha256((ROOT/'js/jo-results-browser-v7-52-1.js').read_bytes()).hexdigest()!='04a747ce9ff3854961e5ff8a1e4ed69eb6a79435ab4a18f457858eeed2ade0d0': fail('JO results browser JS differs from the approved 7.53.4 WPI-branded browser')
-if 'js/jo-results-browser-v7-52-1.js?v=7.53.4' not in (ROOT/'tournaments.html').read_text(encoding='utf-8'): fail('JO results browser cache key changed')
+if 'js/tournament-hub-v7-54-4.js?v=7.54.4' not in (ROOT/'tournaments.html').read_text(encoding='utf-8'): fail('public tournament archive consumer missing')
 if errors:
  print('CLUB WEBSITE 7.52.16 TEST FAILED'); [print(' -',e) for e in errors]; sys.exit(1)
 print('CLUB WEBSITE 7.52.16 TESTS PASSED')

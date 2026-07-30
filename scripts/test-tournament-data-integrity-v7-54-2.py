@@ -4,7 +4,7 @@ import json,re,sys
 ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version')!='7.54.3': errors.append('site version must be 7.54.3')
+if site.get('version') not in {'7.54.3','7.54.4'}: errors.append('site version must preserve 7.54.3 integrity controls')
 if site.get('tournamentDataIntegrityRelease')!='7.54.3': errors.append('tournamentDataIntegrityRelease must be 7.54.3')
 page=(ROOT/'tournaments/girls-club-championships/index.html').read_text()
 for token in ['Data review in progress','Withheld for accuracy','0 verified placements','WIN #4 - MERIDIAN','official sheet']:
@@ -12,8 +12,8 @@ for token in ['Data review in progress','Withheld for accuracy','0 verified plac
 for forbidden in ['results-app.js','id="teamFilter"','Live results loaded','Team results']:
     if forbidden in page: errors.append(f'legacy misleading viewer token remains: {forbidden}')
 hub=(ROOT/'tournaments.html').read_text()
-for token in ['Data review','Accuracy hold','Open data-review status']:
-    if token not in hub: errors.append(f'tournament hub missing {token}')
+for token in ['Data review','Accuracy hold','Open data-review status','WIN #4 - MERIDIAN']:
+    if token in hub: errors.append(f'tournament hub publicly exposes internal review token: {token}')
 reg=json.loads((ROOT/'data/tournaments/registry.json').read_text())
 event=next(e for e in reg['events'] if e['id']=='2026-girls-us-club-championships')
 if event.get('eventStatus')!='data_review': errors.append('Girls Club event must be data_review')
@@ -33,10 +33,10 @@ for rel in ['data/tournaments/platform/events/2026-quiksilver-cup.json','data/to
     if data.get('event',{}).get('status')=='complete' and data.get('summary',{}).get('placementCount',0)<=0:
         errors.append(f'{rel} is complete but has no verified placements')
 if errors:
-    print('TOURNAMENT DATA INTEGRITY 7.54.3 TEST FAILED')
+    print('TOURNAMENT DATA INTEGRITY 7.54.4 TEST FAILED')
     for e in errors: print(' -',e)
     sys.exit(1)
-print('TOURNAMENT DATA INTEGRITY 7.54.3 TEST PASSED')
+print('TOURNAMENT DATA INTEGRITY 7.54.4 TEST PASSED')
 print(' - Girls US Club Championships is withheld publicly while its banked historical archive remains preserved')
 print(' - Boys Futures and Quiksilver contain no winner/loser routing labels as team identities')
 print(' - Complete platform events must retain verified placements')

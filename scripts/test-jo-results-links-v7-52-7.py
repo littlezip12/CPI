@@ -19,42 +19,43 @@ site = load('config/site-release.json')
 results = load('data/tournaments/jo-results-2026.json')
 clubs = load('club-registry.json')
 html = (ROOT / 'tournaments.html').read_text(encoding='utf-8')
-js = (ROOT / 'js/jo-results-browser-v7-52-1.js').read_text(encoding='utf-8')
-css = (ROOT / 'css/jo-results-browser-v7-52-1.css').read_text(encoding='utf-8')
+js = (ROOT / 'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
+css = (ROOT / 'css/tournament-hub-v7-54-4.css').read_text(encoding='utf-8')
 home = (ROOT / 'js/homepage-wpi-v7-52-4.js').read_text(encoding='utf-8')
 boys = (ROOT / 'tournaments/jo-boys/app.js').read_text(encoding='utf-8')
 girls = (ROOT / 'tournaments/jo-girls/app.js').read_text(encoding='utf-8')
 boys_html = (ROOT / 'tournaments/jo-boys/index.html').read_text(encoding='utf-8')
 girls_html = (ROOT / 'tournaments/jo-girls/index.html').read_text(encoding='utf-8')
 
-if site.get('version') not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3'}: fail('site release must preserve JO results links 7.52.7 or later')
+if site.get('version') not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4'}: fail('site release must preserve JO results links 7.52.7 or later')
 for key in ['joResultsRelease','joJourneyRelease','joLogoRelease']:
     if site.get(key) not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}: fail(f'{key} must preserve JO results links 7.52.7 or later')
-if site.get('tournamentUIRelease') not in {'7.52.15','7.54.0','7.54.1','7.54.2','7.54.3'}: fail('tournamentUIRelease must preserve JO results links while allowing the reusable tournament platform')
+if site.get('tournamentUIRelease') not in {'7.52.15','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4'}: fail('tournamentUIRelease must preserve JO results links while allowing the reusable tournament platform')
 if results.get('summary',{}).get('teamPlacements') != 976: fail('JO placement count changed')
 
 required_html = [
     'data/identity/runtime.js?v=7.53.4',
     'js/cpi-identity.js?v=7.53.4',
     'data/tournaments/jo-profile-runtime.js?v=7.53.4',
-    'js/jo-results-browser-v7-52-1.js?v=7.53.4',
-    'css/jo-results-browser-v7-52-1.css?v=7.53.4',
+    'js/tournament-hub-v7-54-4.js?v=7.54.4',
+    'css/tournament-hub-v7-54-4.css?v=7.54.4',
+    'id="archiveGroupSelect"',
 ]
 for token in required_html:
     if token not in html: fail(f'tournaments.html missing {token}')
 
 required_js = [
-    'cpi521-team-logo', 'cpi521-team-journey', 'View JO games',
-    'tournaments/${app}/?', 'focus: "journey"',
+    'archive-team-logo', 'archive-team-link', 'View games',
+    'tournaments/${app}/?', 'focus:"journey"',
     '10u-boys-championship', '10u-championship',
     '10u-coed-classic', '10u-girls-classic',
     'window.CPIIdentity?.resolveTeam', 'window.CPIIdentity?.resolveClub',
     'window.WPI_JO_PROFILES', 'joProfiles.lookup',
 ]
 for token in required_js:
-    if token not in js: fail(f'results browser missing {token}')
-for token in ['.cpi521-team-logo','.cpi521-team-journey','.cpi521-team-meta']:
-    if token not in css: fail(f'results CSS missing {token}')
+    if token not in js: fail(f'public archive missing {token}')
+for token in ['.archive-team-logo','.archive-team-link','.archive-team-name']:
+    if token not in css: fail(f'public archive CSS missing {token}')
 for token in ['resultJourneyLink','resultAsset','focus: "journey"']:
     if token not in home: fail(f'homepage result preview missing {token}')
 
@@ -98,6 +99,6 @@ if errors:
     sys.exit(1)
 print('JO RESULTS LINKS 7.52.7 TESTS PASSED')
 print(' - 976 final placements route to valid Boys or Girls/Coed JO division viewers')
-print(' - Club logos render in the full results browser and homepage result previews')
+print(' - Club logos render in the public archive and homepage result previews')
 print(' - Team links select and focus the completed JO journey with tolerant name matching')
 print(' - San Diego Shores artwork is verified and synchronized')

@@ -4,101 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tournaments | Water Polo Index</title>
-  <meta name="description" content="Open WPI tournament tools, Junior Olympics schedules, tournament results, and ranking evidence pages.">
+  <meta name="description" content="Find upcoming youth water polo tournaments, follow team pathways, and explore verified WPI tournament results by year, event, age, and gender.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
-<link rel="stylesheet" href="css/homepage-v8.css?v=7.53.4">
-  <link rel="stylesheet" href="css/page-polish-v7-22.css?v=7.53.4">
-  <link rel="stylesheet" href="css/jo-integration-v7-37.css?v=7.53.4">
-  <link rel="stylesheet" href="css/tournaments-v7-37-5.css?v=7.53.4">
-  <link rel="stylesheet" href="tournaments/results.css?v=7.53.4">
-  <link rel="stylesheet" href="css/tournaments-unified-v7-50.css?v=7.53.4">
-  <link rel="stylesheet" href="css/jo-results-browser-v7-52-1.css?v=7.53.4">  <link rel="stylesheet" href="css/sponsor-framework-v7-53-2.css?v=7.53.4">
+  <link rel="stylesheet" href="css/homepage-v8.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-
   <link rel="stylesheet" href="css/site-shell.css?v=7.53.4">
   <link rel="stylesheet" href="css/section-landing-v7-53-4.css?v=7.53.5">
+  <link rel="stylesheet" href="css/tournament-hub-v7-54-4.css?v=7.54.4">
+  <link rel="stylesheet" href="css/sponsor-framework-v7-53-2.css?v=7.53.4">
 </head>
-<body class="cpi-v8-home tournaments-page tournaments-compact-page">
+<body class="cpi-v8-home tournaments-page">
   <header class="cpi-v8-header">
     <div class="cpi-v8-header-inner">
       <a class="cpi-v8-brand" href="index.html" aria-label="Water Polo Index Home"><span class="cpi-v8-brand-mark">WPI</span><span class="cpi-v8-brand-text"><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></span></a>
-      <nav class="cpi-v8-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html" aria-current="page">Tournaments</a><a href="methodology.html">Methodology</a></nav>
+      <nav class="cpi-v8-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="rankings.html">Rankings</a><a href="teams.html">Teams</a><a href="clubs.html">Clubs</a><a href="tournaments.html" aria-current="page">Tournaments</a><a href="methodology.html">Methodology</a></nav>
       <button class="cpi-shell-search cpi-v8-search" type="button">Search WPI</button>
     </div>
   </header>
-  <main class="cpi-tournaments-main">
-  <section class="wpi-section-hero wpi-section-hero--tournaments" aria-labelledby="tournamentsTitle">
-    <div class="wpi-section-hero-copy">
-      <p class="wpi-section-kicker">Schedules, results, and pathways</p>
-      <h1 id="tournamentsTitle">Follow the tournament from first game to final place.</h1>
-      <p>Open live schedules, trace possible next games, search completed results, and connect every verified finish back to the team and club that earned it.</p>
-      <div class="wpi-section-hero-actions">
-        <a class="wpi-section-action" href="#jo-results">View 2026 JO results</a>
-        <a class="wpi-section-action secondary" href="tournament-archive.html">Browse the archive</a>
+
+  <main class="wpi-tournament-hub" id="tournamentHub">
+    <section class="tournament-hub-hero wpi-section-hero--tournaments" aria-labelledby="tournamentsTitle">
+      <div class="tournament-hub-hero-copy">
+        <p class="tournament-hub-kicker">WPI tournaments</p>
+        <h1 id="tournamentsTitle">Your team. Your tournament.</h1>
+        <p>Find upcoming schedules, follow your team’s pathway, and explore complete results from tournaments across WPI.</p>
+        <a class="tournament-hub-primary" id="latestTournamentResults" href="tournaments/jo-boys/">View latest tournament results</a>
       </div>
-      <div class="wpi-section-hero-facts" aria-label="Tournament platform summary">
-        <span><strong>23</strong>JO divisions completed</span>
-        <span><strong>976</strong>Final JO placements</span>
-        <span><strong>3</strong>Historical events banked</span>
-        <span><strong>Manual</strong>Ranking publication</span>
-      </div>
-    </div>
-    <figure class="wpi-section-hero-media">
-      <img src="assets/photos/editorial/polo-medal-team.jpg" alt="Youth water polo athletes celebrating after a tournament" loading="eager">
-      <figcaption>Schedules, team journeys, game results, and final placements stay connected across WPI.</figcaption>
-    </figure>
-  </section>
+      <figure class="tournament-hub-hero-media">
+        <img src="assets/photos/editorial/polo-medal-team.jpg" alt="Youth water polo athletes celebrating after a tournament" loading="eager">
+      </figure>
+    </section>
 
-  <section class="cpi50-section" aria-labelledby="liveTournamentTitle">
-    <div class="cpi50-section-heading"><div><p class="cpi-polish-eyebrow">Completed tournament</p><h2 id="liveTournamentTitle">2026 Junior Olympics</h2></div><p>Review completed schedules, team journeys, subdivision finishes, and final placements from both Junior Olympics weekends.</p></div>
-    <div class="cpi50-card-grid">
-      <article class="cpi50-event-card featured"><div class="top"><span class="cpi50-kicker history">Weekend 1 · Complete</span><span class="cpi50-kicker">Girls & Coed</span></div><h3>Junior Olympics — Girls & Coed</h3><p>Completed schedules, team journeys, bracket pathways, shootouts, and final placements across 11 divisions.</p><div class="cpi50-event-meta"><span>11 divisions</span><span>Final results</span><span>Team journeys</span></div><a href="tournaments/jo-girls/">Open Weekend 1 →</a></article>
-      <article class="cpi50-event-card featured"><div class="top"><span class="cpi50-kicker history">Weekend 2 · Complete</span><span class="cpi50-kicker">Boys</span></div><h3>Junior Olympics — Boys</h3><p>Completed schedules and final placements for 10U Championship and Boys 12U–18U Championship, Classic, and Invitational divisions.</p><div class="cpi50-event-meta"><span>12 divisions</span><span>Final results</span><span>Team pathways</span></div><a href="tournaments/jo-boys/">Open Weekend 2 →</a></article>
-      <article class="cpi50-event-card"><div class="top"><span class="cpi50-kicker live">Live operations</span></div><h3>Tournament control room</h3><p>Monitor source freshness, public-page readiness, schedule integrity, completed-game states, and operational alerts across every registered tournament.</p><div class="cpi50-event-meta"><span>48 registered divisions</span><span>Source health</span></div><a href="tournament-operations.html">Open control room →</a></article>
-    </div>
-  </section>
+    <section class="tournament-hub-section" aria-labelledby="nextTournamentHeading">
+      <div class="tournament-hub-heading"><div><p>Coming up</p><h2 id="nextTournamentHeading">Next tournament</h2></div><span>The next event becomes a full WPI tournament experience as soon as a verified schedule is available.</span></div>
+      <article class="next-tournament-card">
+        <div>
+          <span class="next-tournament-status" id="nextTournamentStatus">Next tournament</span>
+          <h3 id="nextTournamentName">Tournament announcement coming soon</h3>
+          <p id="nextTournamentDescription">Schedule details will be published when verified.</p>
+          <div class="next-tournament-meta"><span id="nextTournamentDate">Date coming soon</span><span id="nextTournamentLocation">Location coming soon</span></div>
+        </div>
+        <span class="next-tournament-action" id="nextTournamentAction">Schedule coming soon</span>
+      </article>
+    </section>
+    <div data-wpi-sponsor-placement="tournament_inline" hidden></div>
 
-  <section class="cpi50-section cpi521-results-section" id="jo-results" aria-labelledby="joResultsTitle">
-    <div class="cpi50-section-heading"><div><p class="cpi-polish-eyebrow">Final placements</p><h2 id="joResultsTitle">2026 Junior Olympics results</h2></div><p>Select an age group to see every final placement organized by Championship, Classic, or Invitational division and by Platinum, Gold, Silver, Bronze, Copper, or Nickel subdivision. Search by typing any team or club name.</p></div>
-    <div class="cpi521-results-shell" id="joResultsBrowser">
-      <div class="cpi521-results-controls">
-        <div class="cpi521-field"><label for="joResultsGroup">Age group</label><select id="joResultsGroup" aria-label="Select an age group"><option>Loading age groups…</option></select></div>
-        <div class="cpi521-field"><label for="joResultsSearch">Search by team</label><input id="joResultsSearch" type="search" placeholder="Start typing a team or club name" autocomplete="off" spellcheck="false"></div>
-      </div>
-      <div class="cpi521-results-summary"><span id="joResultsSummaryText">Loading final results…</span><button class="cpi521-clear" id="joResultsClear" type="button" hidden>Clear search</button></div>
-      <div class="cpi521-results-grid" id="joResultsGrid"><div class="cpi521-loading">Loading 2026 Junior Olympics results…</div></div>
-      <p class="cpi521-note" id="joResultsNote"></p>
-    </div>
-  </section>
+    <span id="jo-results" aria-hidden="true"></span>
+    <span id="jo-results-browser" aria-hidden="true"></span>
+    <section class="tournament-hub-section" id="tournament-archive" aria-labelledby="archiveHeading">
+      <div class="tournament-hub-heading"><div><p>Completed events</p><h2 id="archiveHeading">Tournament archive</h2></div><span>Choose a year, tournament, and age group. Junior Olympics is always placed last in each water polo season.</span></div>
+      <div class="tournament-year-tabs" id="tournamentYearTabs" aria-label="Tournament archive years"></div>
+      <div class="tournament-event-list" id="tournamentEventList" aria-live="polite"></div>
 
-  <section class="cpi50-section" aria-labelledby="archiveTitle">
-    <div class="cpi50-section-heading"><div><p class="cpi-polish-eyebrow">Completed events</p><h2 id="archiveTitle">Tournament archive</h2></div><p>Search verified historical games, shootout results, final placements, and connected team and club profiles.</p></div>
-    <div class="cpi50-card-grid">
-      <article class="cpi50-event-card"><div class="top"><span class="cpi50-kicker history">Archive</span></div><h3>Quiksilver Cup</h3><p>The first event on WPI’s reusable tournament platform: 226 verified games, 93 team journeys, searchable venues, and 80 final placements.</p><div class="cpi50-event-meta"><span>Unified viewer</span><span>Team journeys</span><span>Placements</span></div><a href="tournament.html?event=2026-quiksilver-cup">Open Quiksilver platform →</a></article>
-      <article class="cpi50-event-card"><div class="top"><span class="cpi50-kicker history">Archive · Unified platform</span></div><h3>Boys Futures Super Finals</h3><p>Explore 709 verified finals across 13 divisions with 276 clean team journeys, 238 placements, and searchable dates and venues.</p><div class="cpi50-event-meta"><span>10U–18U Boys</span><span>Team journeys</span><span>Placements</span></div><a href="tournament.html?event=2026-boys-futures-super-finals">Open Super Finals platform →</a></article>
-      <article class="cpi50-event-card"><div class="top"><span class="cpi50-kicker history">Data review</span></div><h3>Girls US Club Championships</h3><p>Public sheets are being cleaned before WPI republishes this event. The current bank is partial and does not yet contain verified placements.</p><div class="cpi50-event-meta"><span>5 source divisions</span><span>46 banked finals</span><span>Accuracy hold</span></div><a href="tournaments/girls-club-championships/">Open data-review status →</a></article>
-    </div>
-  </section>
+      <section class="archive-browser" id="archiveBrowser" hidden aria-labelledby="archiveEventName">
+        <div class="archive-browser-head">
+          <div><p>Selected tournament</p><h3 id="archiveEventName">Tournament results</h3><span id="archiveEventMeta"></span></div>
+          <a class="archive-full-link" id="archiveFullLink" href="#">Open full tournament →</a>
+        </div>
+        <div class="archive-controls">
+          <div class="archive-control"><label for="archiveGroupSelect">Age / gender</label><select id="archiveGroupSelect"><option value="">Choose an age / gender</option></select></div>
+          <div class="archive-control-note">Select a team in the results to open its complete tournament journey and game-by-game results.</div>
+        </div>
+        <div id="archiveResults" aria-live="polite"><div class="archive-results-prompt">Select an age and gender to open the final results.</div></div>
+      </section>
+    </section>
+  </main>
 
-  <section class="cpi50-section" aria-labelledby="toolsTitle">
-    <div class="cpi50-section-heading"><div><p class="cpi-polish-eyebrow">Data & review</p><h2 id="toolsTitle">Tournament intelligence</h2></div></div>
-    <div class="cpi50-tool-grid">
-      <article class="cpi50-tool"><h3>Complete archive</h3><p>Search all normalized historical tournament games and placements.</p><a href="tournament-archive.html">Open archive →</a></article>
-      <article class="cpi50-tool"><h3>JO performance</h3><p>Records, seed performance, finishes, and verified results as games arrive.</p><a href="jo-performance.html">Open performance →</a></article>
-      <article class="cpi50-tool"><h3>Source health</h3><p>See which divisions are live, cached, stale, or awaiting data.</p><a href="tournament-source-health.html">Open source health →</a></article>
-      <article class="cpi50-tool"><h3>Post-JO review</h3><p>Controlled, manual ranking decisions after results are verified.</p><a href="post-jo-review.html">Open review →</a></article>
-    </div>
-  </section>
-</main>
-<footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="index.html"><span>WPI</span><div><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></div></a><p>Independent and unofficial rankings, results, and club intelligence for California youth water polo.</p></div><nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav><nav><h3>Age Groups</h3><a href="12u-boys.html">12U Boys</a><a href="12u-girls.html">12U Girls</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a><a href="18u-boys.html">18U Boys</a><a href="18u-girls.html">18U Girls</a></nav><div><h3>About WPI</h3><p>The Water Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div></div><div class="bottom">© 2026 Water Polo Index. All rights reserved.</div></footer>
-  <script src="data.js?v=7.53.4"></script><script src="data/identity/runtime.js?v=7.53.4"></script><script src="js/cpi-identity.js?v=7.53.4"></script><script src="data/tournaments/jo-profile-runtime.js?v=7.53.4"></script><script src="js/jo-results-browser-v7-52-1.js?v=7.53.4"></script><script src="js/app.js?v=7.53.4"></script>
-<script src="js/page-polish-v7-22.js?v=7.53.4"></script><script src="js/logo-display-v7-23-6.js?v=7.53.4"></script>  <script src="data/sponsors/runtime.js?v=7.53.4"></script>
+  <footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="index.html"><span>WPI</span><div><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></div></a><p>Independent and unofficial rankings, results, and club intelligence for California youth water polo.</p></div><nav><h3>Explore</h3><a href="rankings.html">Rankings</a><a href="teams.html">Teams</a><a href="clubs.html">Clubs</a><a href="tournaments.html">Tournaments</a><a href="methodology.html">Methodology</a></nav><nav><h3>Age Groups</h3><a href="12u-boys.html">12U Boys</a><a href="12u-girls.html">12U Girls</a><a href="14u-boys.html">14U Boys</a><a href="14u-girls.html">14U Girls</a><a href="16u-boys.html">16U Boys</a><a href="16u-girls.html">16U Girls</a><a href="18u-boys.html">18U Boys</a><a href="18u-girls.html">18U Girls</a></nav><div><h3>About WPI</h3><p>The Water Polo Index is building a comprehensive water polo ranking system for California youth clubs.</p><a href="methodology.html">Learn More →</a></div></div><div class="bottom">© 2026 Water Polo Index. All rights reserved.</div></footer>
+
+  <script src="data.js?v=7.53.4"></script>
+  <script src="data/identity/runtime.js?v=7.53.4"></script>
+  <script src="js/cpi-identity.js?v=7.53.4"></script>
+  <script src="data/tournaments/jo-profile-runtime.js?v=7.53.4"></script>
+  <script src="js/tournament-hub-v7-54-4.js?v=7.54.4"></script>
+  <script src="data/sponsors/runtime.js?v=7.53.4"></script>
   <script src="js/sponsor-framework-v7-53-2.js?v=7.53.4"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
-
   <script defer src="js/site-shell.js?v=7.53.4"></script>
 </body>
 </html>

@@ -17,10 +17,10 @@ for(const side of ['jo-boys','jo-girls']){
 const css=read('tournaments/jo-unified-v7-50.css');
 for(const token of ['--jo50-bg','.jo50-event-card','.jo50-metrics','@media(max-width:720px)'])if(!css.includes(token))errors.push(`Unified JO stylesheet missing ${token}`);
 const hub=read('tournaments.html');
-for(const token of ['tournaments-unified-v7-50.css','Completed events','Tournament intelligence'])if(!hub.includes(token))errors.push(`Tournament hub missing ${token}`);
-if(!hub.includes('Live & upcoming')&&!hub.includes('Completed tournament'))errors.push('Tournament hub missing active/completed JO section label');
+for(const token of ['tournament-hub-v7-54-4.css','Your team. Your tournament.','Next tournament','Tournament archive','archiveGroupSelect'])if(!hub.includes(token))errors.push(`Tournament hub missing ${token}`);
+for(const forbidden of ['Tournament intelligence','Open control room','Source health','Post-JO review'])if(hub.includes(forbidden))errors.push(`Tournament hub still exposes internal tool: ${forbidden}`);
 if(errors.length){console.error('TOURNAMENT UI 7.50 TESTS FAILED');errors.forEach(e=>console.error(` - ${e}`));process.exit(1)}
 console.log('TOURNAMENT UI 7.50 TESTS PASSED');
 console.log(' - Boys and Girls JO pages share the approved light responsive layout');
 console.log(' - Live source status, selected-division metrics, team journeys, and schedules remain wired');
-console.log(' - Tournament hub separates live events, completed archives, and internal intelligence tools');
+console.log(' - Tournament hub presents a compact public next-event and archive experience');

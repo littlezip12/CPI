@@ -28,14 +28,14 @@ def ordinal(number: int) -> str:
 site = load_json("config/site-release.json")
 results = load_json("data/tournaments/jo-results-2026.json")
 html = (ROOT / "tournaments.html").read_text(encoding="utf-8")
-js = (ROOT / "js/jo-results-browser-v7-52-1.js").read_text(encoding="utf-8")
-css_path = ROOT / "css/jo-results-browser-v7-52-1.css"
+js = (ROOT / "js/tournament-hub-v7-54-4.js").read_text(encoding="utf-8")
+css_path = ROOT / "css/tournament-hub-v7-54-4.css"
 
-if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1", "7.54.2", "7.54.3"}:
+if site.get("version") not in {"7.52.1", "7.52.2", "7.52.3", "7.52.4", "7.52.5", "7.52.6", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
     fail("site release must preserve JO results browser compatibility")
 if site.get("joResultsRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15"}:
     fail("joResultsRelease must preserve the data browser or the linked-journey UI release")
-if site.get("tournamentUIRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.54.0", "7.54.1", "7.54.2", "7.54.3"}:
+if site.get("tournamentUIRelease") not in {"7.52.1", "7.52.7", "7.52.8", "7.52.9", "7.52.10", "7.52.11", "7.52.12", "7.52.13", "7.52.14", "7.52.15", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
     fail("tournamentUIRelease must preserve the results browser or the linked-journey UI release")
 if results.get("release") != "7.52.1":
     fail("results data release must be 7.52.1")
@@ -192,43 +192,43 @@ for key, expected in anchors.items():
 
 required_html = [
     'id="jo-results"',
-    'id="joResultsBrowser"',
-    'id="joResultsGroup"',
-    'id="joResultsSearch"',
-    'type="search"',
-    'css/jo-results-browser-v7-52-1.css?v=7.53.4',
+    'id="tournament-archive"',
+    'id="archiveGroupSelect"',
+    'id="archiveResults"',
+    'css/tournament-hub-v7-54-4.css?v=7.54.4',
     'data/identity/runtime.js?v=7.53.4',
     'js/cpi-identity.js?v=7.53.4',
     'data/tournaments/jo-profile-runtime.js?v=7.53.4',
-    'js/jo-results-browser-v7-52-1.js?v=7.53.4',
+    'js/tournament-hub-v7-54-4.js?v=7.54.4',
 ]
 for token in required_html:
     if token not in html:
         fail(f"tournaments.html is missing {token}")
 if not css_path.exists() or css_path.stat().st_size == 0:
-    fail("results browser stylesheet is missing or empty")
+    fail("public archive stylesheet is missing or empty")
 required_js = [
-    'data/tournaments/jo-results-2026.json?v=7.53.4',
-    'teamSearch.addEventListener("input", render)',
-    'groupSelect.addEventListener("change", render)',
-    'cache: "no-store"',
-    'cpi521-team-logo',
-    'journeyUrl(group, division, team.team)',
-    'focus: "journey"',
-    'const usableLogo = (value)',
-    'logo: rankedLogo || joProfileLogo || clubLogo || fallbackLogo',
+    'data/tournaments/public-hub.json',
+    'select.onchange = () => renderSelectedResults',
+    'renderJoResults',
+    'joAsset',
+    'joJourney',
+    'focus:"journey"',
+    'window.CPIIdentity?.resolveTeam',
+    'window.CPIIdentity?.resolveClub',
+    'window.WPI_JO_PROFILES',
+    'cache:"no-store"',
 ]
 for token in required_js:
     if token not in js:
-        fail(f"results browser JavaScript is missing {token}")
+        fail(f"public archive JavaScript is missing {token}")
 
 if ERRORS:
-    print("JO RESULTS BROWSER 7.52.1 TESTS FAILED")
+    print("JO RESULTS ARCHIVE 7.54.4 TESTS FAILED")
     for error in ERRORS:
         print(" - " + error)
     raise SystemExit(1)
 
-print("JO RESULTS BROWSER 7.52.1 TESTS PASSED")
+print("JO RESULTS ARCHIVE 7.54.4 TESTS PASSED")
 print(f" - {len(expected_counts)} age/gender groups and {expected_divisions} JO divisions validated")
-print(f" - {expected_placements} final team placements are grouped by division and subdivision")
-print(" - Division-wide placement labels, search controls, assets, and cache busting are synchronized")
+print(f" - {expected_placements} final team placements remain grouped by division and subdivision behind age/gender selection")
+print(" - Division-wide placement labels, age-group selection, assets, and journey links are synchronized")

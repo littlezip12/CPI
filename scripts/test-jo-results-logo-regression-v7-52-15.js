@@ -37,8 +37,12 @@ for (const token of [
 if (browserSource.includes('if (joProfile) return { logo: joProfile.logo || fallbackLogo')) {
   fail('JO profile routing is still allowed to short-circuit club logo resolution.');
 }
-if (!tournamentsHtml.includes('js/jo-results-browser-v7-52-1.js?v=7.53.4')) {
-  fail('tournaments.html does not cache-bust the corrected JO results browser.');
+if (!tournamentsHtml.includes('js/tournament-hub-v7-54-4.js?v=7.54.4')) {
+  fail('tournaments.html does not load the canonical-logo public archive.');
+}
+const hubSource = fs.readFileSync(path.join(root, 'js/tournament-hub-v7-54-4.js'), 'utf8');
+for (const token of ['joAsset', 'window.CPIIdentity?.resolveTeam', 'window.CPIIdentity?.resolveClub', 'window.WPI_JO_PROFILES']) {
+  if (!hubSource.includes(token)) fail(`public archive missing ${token}`);
 }
 
 const normalize = (value) => String(value ?? '')

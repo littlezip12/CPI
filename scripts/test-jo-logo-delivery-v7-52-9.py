@@ -23,7 +23,7 @@ def ordered(text: str, tokens: list[str], label: str) -> None:
 
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
-if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3'}:
+if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4'}:
     fail('site release must preserve JO logo delivery 7.52.10 or later')
 if site.get('identityRelease') != '7.52.13':
     fail('identityRelease must remain 7.52.13')
@@ -37,7 +37,7 @@ if site.get('joApplicationRelease') != '7.53.4':
     fail('joApplicationRelease must be 7.53.4 after the WPI public-copy cache refresh')
 if site.get('joJourneyRelease') != '7.52.9':
     fail('joJourneyRelease must remain 7.52.9')
-if site.get('tournamentUIRelease') not in {'7.52.15','7.54.0','7.54.1','7.54.2','7.54.3'}:
+if site.get('tournamentUIRelease') not in {'7.52.15','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4'}:
     fail('tournamentUIRelease must preserve the JO logo browser and may include the 7.54.0 tournament platform')
 
 index = (ROOT / 'index.html').read_text(encoding='utf-8')
@@ -57,7 +57,7 @@ ordered(tournaments, [
     'data/identity/runtime.js?v=7.53.4',
     'js/cpi-identity.js?v=7.53.4',
     'data/tournaments/jo-profile-runtime.js?v=7.53.4',
-    'js/jo-results-browser-v7-52-1.js?v=7.53.4',
+    'js/tournament-hub-v7-54-4.js?v=7.54.4',
 ], 'tournaments.html')
 for label, text in [('Boys JO page', boys), ('Girls JO page', girls)]:
     ordered(text, [
@@ -90,6 +90,6 @@ if errors:
     sys.exit(1)
 
 print('JO LOGO DELIVERY 7.52.9 TESTS PASSED')
-print(' - Homepage, full tournament results, and Boys/Girls journeys load runtime → resolver → consumer in order')
-print(' - The corrected JO results browser is cache-busted to 7.52.15')
+print(' - Homepage, public tournament archive, and Boys/Girls journeys load runtime → resolver → consumer in order')
+print(' - The public archive reuses the verified JO identity and logo resolver')
 print(' - Known JO source-name variants route to existing club artwork')
