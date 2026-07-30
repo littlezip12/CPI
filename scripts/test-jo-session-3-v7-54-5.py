@@ -19,9 +19,9 @@ EXPECTED={
  '18u-girls-championship':('18U','Girls','18U_F_CHAMP-18 teams',75),
 }
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version')!='7.54.5': fail('site version must be 7.54.5')
-if site.get('joSession3Release')!='7.54.5': fail('joSession3Release must be 7.54.5')
-if site.get('joSession3ApplicationRelease')!='7.54.5': fail('joSession3ApplicationRelease must be 7.54.5')
+if site.get('version')!='7.54.6': fail('site version must be 7.54.6')
+if site.get('joSession3Release')!='7.54.6': fail('joSession3Release must be 7.54.6')
+if site.get('joSession3ApplicationRelease')!='7.54.6': fail('joSession3ApplicationRelease must be 7.54.6')
 
 registry=json.loads((ROOT/'data/tournaments/registry.json').read_text())
 events={e['id']:e for e in registry.get('events',[])}
@@ -64,10 +64,10 @@ else:
     app=app_path.read_text()
     html=html_path.read_text()
     for token in [
-      f"const SHEET_ID='{SHEET_ID}'", "const APP_VERSION='7.54.5'", 'const SHOW_TEAM_LOGOS=false',
+      f"const SHEET_ID='{SHEET_ID}'", "const APP_VERSION='7.54.6'", 'const SHOW_TEAM_LOGOS=false',
       "const RELAY_EVENT_ID='2026-jo-session-3'", 'function fetchRelayDataset(config)',
       'const relayPromise=fetchRelayDataset(config)', 'function resolveTournament()',
-      'function renderPaths(upcoming)', "['win','If they win'", "['loss','If they lose'",
+      'function renderPaths(upcoming)', 'function teamJumpHtml(name', 'data-team-jump', 'function venueLinksHtml(location)', 'www.google.com/maps/dir/?api=1', 'maps.apple.com/?daddr=', 'waze.com/ul?q=', "['win','If they win'", "['loss','If they lose'",
       "if(!SHOW_TEAM_LOGOS)return'';", '../../data/tournaments/raw/2026-jo-session-3/'
     ]:
         if token not in app: fail(f'Session 3 app is missing: {token}')
@@ -76,7 +76,7 @@ else:
         fail('Session 3 app does not protect after-round-robin route labels from becoming teams')
     for division_id in EXPECTED:
         if division_id not in app: fail(f'Session 3 app is missing embedded dataset {division_id}')
-    for token in ['Junior Olympics Session 3','North Texas','<strong>8</strong>','app.js?v=7.54.5','Open official schedule']:
+    for token in ['Junior Olympics Session 3','North Texas','<strong>8</strong>','app.js?v=7.54.6','Open official schedule','session3-enhancements-v7-54-6.css?v=7.54.6']:
         if token not in html: fail(f'Session 3 page is missing: {token}')
     if 'tournament-operations.html' in html: fail('Session 3 public page exposes internal tournament operations')
     result=subprocess.run(['node','--check',str(app_path)],capture_output=True,text=True)
@@ -98,10 +98,10 @@ if '"2026-jo-session-3"' not in relay or 'RELEASE = "7.54.5"' not in relay: fail
 
 if sum(v[3] for v in EXPECTED.values())!=545: fail('internal expected-game total is not 545')
 if errors:
-    print('JO SESSION 3 7.54.5 TEST FAILED')
+    print('JO SESSION 3 7.54.6 TEST FAILED')
     for error in errors: print(' -',error)
     sys.exit(1)
-print('JO SESSION 3 7.54.5 TEST PASSED')
+print('JO SESSION 3 7.54.6 TEST PASSED')
 print(' - Eight Championship divisions load 545 verified scheduled games with no fabricated finals')
 print(' - Team journeys preserve next-game and win/loss pathway logic')
 print(' - Club logos are intentionally disabled only in the Session 3 viewer')

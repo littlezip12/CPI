@@ -27,18 +27,18 @@ girls = (ROOT / 'tournaments/jo-girls/app.js').read_text(encoding='utf-8')
 boys_html = (ROOT / 'tournaments/jo-boys/index.html').read_text(encoding='utf-8')
 girls_html = (ROOT / 'tournaments/jo-girls/index.html').read_text(encoding='utf-8')
 
-if site.get('version') not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5'}: fail('site release must preserve JO results links 7.52.7 or later')
+if site.get('version') not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6'}: fail('site release must preserve JO results links 7.52.7 or later')
 for key in ['joResultsRelease','joJourneyRelease','joLogoRelease']:
     if site.get(key) not in {'7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15'}: fail(f'{key} must preserve JO results links 7.52.7 or later')
-if site.get('tournamentUIRelease') not in {'7.52.15','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5'}: fail('tournamentUIRelease must preserve JO results links while allowing the reusable tournament platform')
+if site.get('tournamentUIRelease') not in {'7.52.15','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6'}: fail('tournamentUIRelease must preserve JO results links while allowing the reusable tournament platform')
 if results.get('summary',{}).get('teamPlacements') != 976: fail('JO placement count changed')
 
 required_html = [
     'data/identity/runtime.js?v=7.53.4',
     'js/cpi-identity.js?v=7.53.4',
     'data/tournaments/jo-profile-runtime.js?v=7.53.4',
-    'js/tournament-hub-v7-54-4.js?v=7.54.5',
-    'css/tournament-hub-v7-54-4.css?v=7.54.4',
+    'js/tournament-hub-v7-54-4.js?v=7.54.6',
+    'css/tournament-hub-v7-54-4.css?v=7.54.6',
     'id="archiveGroupSelect"',
 ]
 for token in required_html:

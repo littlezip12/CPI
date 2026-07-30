@@ -11,7 +11,7 @@ const expected={
 };
 for(const [side,eventId] of Object.entries(expected)){
   const app=fs.readFileSync(path.join(ROOT,'tournaments',side,'app.js'),'utf8');
-  const expectedVersion=side==='jo-texas'?'7.54.5':'7.51.0';
+  const expectedVersion=side==='jo-texas'?'7.54.6':'7.51.0';
   requireCondition(app.includes(`APP_VERSION='${expectedVersion}'`),`${side} does not advertise APP_VERSION ${expectedVersion}`);
   for(const token of [
     `RELAY_EVENT_ID='${eventId}'`,

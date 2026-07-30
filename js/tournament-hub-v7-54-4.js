@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RELEASE = "7.54.5";
+  const RELEASE = "7.54.6";
   const FALLBACK = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
   const state = { config:null, year:2026, event:null, bundleCache:new Map(), requestedGroup:"", requestedTeam:"" };
   const $ = id => document.getElementById(id);
@@ -44,8 +44,13 @@
     $("nextTournamentLocation").textContent = next.locationLabel || "Location coming soon";
     const action = $("nextTournamentAction");
     action.textContent = next.ctaLabel || "Schedule coming soon";
-    if(next.publicPath){ action.href = next.publicPath; }
-    else action.removeAttribute("href");
+    if(next.publicPath){
+      action.href = next.publicPath;
+      action.removeAttribute("aria-disabled");
+    }else{
+      action.removeAttribute("href");
+      action.setAttribute("aria-disabled","true");
+    }
   }
 
   function renderYears(){

@@ -1,0 +1,16 @@
+/* WPI 7.54.6 — Session 3 team navigation and venue directions */
+.jo-team-jump{display:inline-flex;align-items:center;gap:7px;min-width:0;padding:0;border:0;background:transparent;color:inherit;font:inherit;font-weight:inherit;line-height:inherit;text-align:inherit;cursor:pointer}
+.jo-team-jump .jo-team-name{transition:color .15s ease,text-decoration-color .15s ease}
+.jo-team-jump:hover .jo-team-name,.jo-team-jump:focus-visible .jo-team-name{color:#126dff;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.jo-next .jo-team-jump:hover .jo-team-name,.jo-next .jo-team-jump:focus-visible .jo-team-name{color:#0b67b7}
+.jo-team-jump:focus-visible{outline:3px solid rgba(18,109,255,.28);outline-offset:4px;border-radius:8px}
+.jo-venue-row{display:inline-flex;align-items:center;flex-wrap:wrap;gap:5px 8px;max-width:100%}
+.jo-venue-link{color:inherit;font-weight:850;text-decoration:underline;text-decoration-color:rgba(18,109,255,.35);text-underline-offset:3px}
+.jo-venue-link:hover,.jo-venue-link:focus-visible{color:#126dff;text-decoration-color:currentColor}
+.jo-map-links{display:inline-flex;align-items:center;flex-wrap:wrap;gap:5px}
+.jo-map-links::before{content:"Directions:";color:#70849a;font-size:.72rem;font-weight:800}
+.jo-map-link{display:inline-flex;align-items:center;min-height:28px;padding:4px 8px;border:1px solid #cfe0ef;border-radius:999px;background:#fff;color:#0b67b7;text-decoration:none;font-size:.7rem;font-weight:900;line-height:1}
+.jo-map-link:hover,.jo-map-link:focus-visible{border-color:#7db8eb;background:#eef7ff}
+.jo-next .jo-map-links::before{color:#668099}
+.jo-next .jo-map-link{background:rgba(255,255,255,.86)}
+@media(max-width:620px){.jo-map-links{width:100%;margin-top:2px}.jo-venue-row{display:flex}}
