@@ -1,0 +1,2298 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-jo-session-3",
+    "name": "2026 Junior Olympics Session 3",
+    "kind": "junior_olympics"
+  },
+  "division": {
+    "id": "14u-girls-championship",
+    "label": "14U Girls Championship",
+    "season": "2026",
+    "ageGroup": "14U",
+    "gender": "Girls",
+    "division": "Championship",
+    "divisionTier": "D1",
+    "parser": "jo_bracket_v1"
+  },
+  "source": {
+    "type": "google_sheets_csv",
+    "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+    "gid": "",
+    "sheetName": "14U_F_CHAMP_7",
+    "url": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+    "fetchedAt": "2026-07-30T02:12:57Z",
+    "mode": "cached_raw",
+    "contentSha256": "d04571585a4866d145fa4bc16e98d679e700ee7006289c0ec9fa9a675ffff211",
+    "rowCount": 84
+  },
+  "counts": {
+    "games": 27,
+    "finalGames": 0,
+    "scheduledGames": 27,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 42,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 42,
+    "bracketReferences": 12,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 42
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-001",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-001",
+      "sourceGameNumber": 1,
+      "sourceRow": 24,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "9:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A1,A7",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A1,A7",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "SMU 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-VIPER PIGEON",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "VIPER PIGEON",
+          "participantId": "tournament-team-2026-14u-girls-viper-pigeon",
+          "teamId": null,
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A7(7)-KRAKEN SATX",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "A7(7)",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-14u-girls-kraken-satx",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-002",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-002",
+      "sourceGameNumber": 2,
+      "sourceRow": 25,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A2,A6",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A2,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "SMU 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-RISE",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "RISE",
+          "participantId": "tournament-team-2026-14u-girls-rise",
+          "teamId": null,
+          "clubId": "club-rise",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A6(6)-HOUSTON HYDRA",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-14u-girls-houston-hydra",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-003",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-003",
+      "sourceGameNumber": 3,
+      "sourceRow": 26,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "10:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A3,A5",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A3,A5",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "SMU 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A3(3)-ST LOUIS LIONS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-14u-girls-st-louis-lions",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A5(5)-PEGASUS",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-14u-girls-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-004",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-004",
+      "sourceGameNumber": 4,
+      "sourceRow": 27,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "11:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A1,A4",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A1,A4",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "SMU 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-VIPER PIGEON",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "VIPER PIGEON",
+          "participantId": "tournament-team-2026-14u-girls-viper-pigeon",
+          "teamId": null,
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A4(4)-ORLANDO THUNDER",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ORLANDO THUNDER",
+          "participantId": "tournament-team-2026-14u-girls-orlando-thunder",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-005",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-005",
+      "sourceGameNumber": 5,
+      "sourceRow": 28,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A2,A7",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A2,A7",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "SMU 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-RISE",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "RISE",
+          "participantId": "tournament-team-2026-14u-girls-rise",
+          "teamId": null,
+          "clubId": "club-rise",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A7(7)-KRAKEN SATX",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "A7(7)",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-14u-girls-kraken-satx",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-006",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-006",
+      "sourceGameNumber": 6,
+      "sourceRow": 29,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "1:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A3,A6",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A3,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "SMU 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A3(3)-ST LOUIS LIONS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-14u-girls-st-louis-lions",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A6(6)-HOUSTON HYDRA",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-14u-girls-houston-hydra",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-007",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-007",
+      "sourceGameNumber": 7,
+      "sourceRow": 30,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "2:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A4,A5",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A4,A5",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "SMU 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A4(4)-ORLANDO THUNDER",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ORLANDO THUNDER",
+          "participantId": "tournament-team-2026-14u-girls-orlando-thunder",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A5(5)-PEGASUS",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-14u-girls-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-008",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-008",
+      "sourceGameNumber": 8,
+      "sourceRow": 37,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A1,A2",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A1,A2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-VIPER PIGEON",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "VIPER PIGEON",
+          "participantId": "tournament-team-2026-14u-girls-viper-pigeon",
+          "teamId": null,
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A2(2)-RISE",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "RISE",
+          "participantId": "tournament-team-2026-14u-girls-rise",
+          "teamId": null,
+          "clubId": "club-rise",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-009",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-009",
+      "sourceGameNumber": 9,
+      "sourceRow": 38,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "9:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A3,A7",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A3,A7",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A3(3)-ST LOUIS LIONS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-14u-girls-st-louis-lions",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A7(7)-KRAKEN SATX",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "A7(7)",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-14u-girls-kraken-satx",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-010",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-010",
+      "sourceGameNumber": 10,
+      "sourceRow": 39,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "10:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A4,A6",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A4,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A4(4)-ORLANDO THUNDER",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ORLANDO THUNDER",
+          "participantId": "tournament-team-2026-14u-girls-orlando-thunder",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A6(6)-HOUSTON HYDRA",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-14u-girls-houston-hydra",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-011",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-011",
+      "sourceGameNumber": 11,
+      "sourceRow": 40,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "11:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A1,A5",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A1,A5",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-VIPER PIGEON",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "VIPER PIGEON",
+          "participantId": "tournament-team-2026-14u-girls-viper-pigeon",
+          "teamId": null,
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A5(5)-PEGASUS",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-14u-girls-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-012",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-012",
+      "sourceGameNumber": 12,
+      "sourceRow": 41,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "12:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A2,A3",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A2,A3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-RISE",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "RISE",
+          "participantId": "tournament-team-2026-14u-girls-rise",
+          "teamId": null,
+          "clubId": "club-rise",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3(3)-ST LOUIS LIONS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-14u-girls-st-louis-lions",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-013",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-013",
+      "sourceGameNumber": 13,
+      "sourceRow": 42,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "1:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A4,A7",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A4,A7",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A4(4)-ORLANDO THUNDER",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ORLANDO THUNDER",
+          "participantId": "tournament-team-2026-14u-girls-orlando-thunder",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A7(7)-KRAKEN SATX",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "A7(7)",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-14u-girls-kraken-satx",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-014",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-014",
+      "sourceGameNumber": 14,
+      "sourceRow": 43,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A5,A6",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A5,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A5(5)-PEGASUS",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-14u-girls-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A6(6)-HOUSTON HYDRA",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-14u-girls-houston-hydra",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-015",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-015",
+      "sourceGameNumber": 15,
+      "sourceRow": 49,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A1,A3",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A1,A3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-VIPER PIGEON",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "VIPER PIGEON",
+          "participantId": "tournament-team-2026-14u-girls-viper-pigeon",
+          "teamId": null,
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3(3)-ST LOUIS LIONS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-14u-girls-st-louis-lions",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-016",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-016",
+      "sourceGameNumber": 16,
+      "sourceRow": 50,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A5,A7",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A5,A7",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A5(5)-PEGASUS",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-14u-girls-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A7(7)-KRAKEN SATX",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "A7(7)",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-14u-girls-kraken-satx",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-017",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-017",
+      "sourceGameNumber": 17,
+      "sourceRow": 51,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A2,A4",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A2,A4",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-RISE",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "RISE",
+          "participantId": "tournament-team-2026-14u-girls-rise",
+          "teamId": null,
+          "clubId": "club-rise",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A4(4)-ORLANDO THUNDER",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ORLANDO THUNDER",
+          "participantId": "tournament-team-2026-14u-girls-orlando-thunder",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-018",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-018",
+      "sourceGameNumber": 18,
+      "sourceRow": 52,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A1,A6",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A1,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-VIPER PIGEON",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "VIPER PIGEON",
+          "participantId": "tournament-team-2026-14u-girls-viper-pigeon",
+          "teamId": null,
+          "clubId": "club-viper-pigeon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A6(6)-HOUSTON HYDRA",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-14u-girls-houston-hydra",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-019",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-019",
+      "sourceGameNumber": 19,
+      "sourceRow": 53,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A2,A5",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A2,A5",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-RISE",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "RISE",
+          "participantId": "tournament-team-2026-14u-girls-rise",
+          "teamId": null,
+          "clubId": "club-rise",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A5(5)-PEGASUS",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-14u-girls-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-020",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-020",
+      "sourceGameNumber": 20,
+      "sourceRow": 54,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A3,A4",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A3,A4",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A3(3)-ST LOUIS LIONS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-14u-girls-st-louis-lions",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A4(4)-ORLANDO THUNDER",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ORLANDO THUNDER",
+          "participantId": "tournament-team-2026-14u-girls-orlando-thunder",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-021",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-021",
+      "sourceGameNumber": 21,
+      "sourceRow": 55,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group A6,A7",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group A6,A7",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "TWU",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A6(6)-HOUSTON HYDRA",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-14u-girls-houston-hydra",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A7(7)-KRAKEN SATX",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "A7(7)",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-14u-girls-kraken-satx",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-022",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-022",
+      "sourceGameNumber": 22,
+      "sourceRow": 61,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th, play to 5th",
+      "stageDisplay": "7th, play to 5th",
+      "stageMeta": {
+        "raw": "7th, play to 5th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th, play to 5th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th, play to 5th"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "6thA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "6thA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "7thA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "7thA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 25,
+          "raw": "25"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "7th",
+          "raw": "7th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-025",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-025",
+      "sourceGameNumber": 25,
+      "sourceRow": 63,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "5thA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "5thA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W22",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W22",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "5th",
+          "raw": "5th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "6th",
+          "raw": "6th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-023",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-023",
+      "sourceGameNumber": 23,
+      "sourceRow": 66,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "7:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi",
+      "stageDisplay": "1-4 Semifinal",
+      "stageMeta": {
+        "raw": "1-4 semi",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal"
+      },
+      "venue": "LEWISVILLE ISD EASTSIDE 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1stA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "4thA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "4thA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 27,
+          "raw": "27"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 26,
+          "raw": "26"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-024",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-024",
+      "sourceGameNumber": 24,
+      "sourceRow": 69,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "7:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi",
+      "stageDisplay": "1-4 Semifinal",
+      "stageMeta": {
+        "raw": "1-4 semi",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal"
+      },
+      "venue": "LEWISVILLE ISD EASTSIDE 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2ndA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rdA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 27,
+          "raw": "27"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 26,
+          "raw": "26"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-026",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-026",
+      "sourceGameNumber": 26,
+      "sourceRow": 72,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "11:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "GARLAND ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L24",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L24",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L23",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L23",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "3rd",
+          "raw": "3rd"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "4th",
+          "raw": "4th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-14u-girls-championship-14g-027",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "14u-girls-championship",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "14G-027",
+      "sourceGameNumber": 27,
+      "sourceRow": 75,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "11:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "GARLAND ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W23",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W23",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W24",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W24",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "1st",
+          "raw": "1st"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "2nd",
+          "raw": "2nd"
+        }
+      }
+    }
+  ]
+}

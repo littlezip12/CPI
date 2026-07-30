@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RELEASE = "7.54.4";
+  const RELEASE = "7.54.5";
   const FALLBACK = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
   const state = { config:null, year:2026, event:null, bundleCache:new Map(), requestedGroup:"", requestedTeam:"" };
   const $ = id => document.getElementById(id);
@@ -17,9 +17,16 @@
   }
 
   function renderHero(){
-    const featured = state.config.events.find(event => event.id === state.config.featuredEventId);
     const link = $("latestTournamentResults");
-    if(!featured || !link) return;
+    if(!link) return;
+    const next = state.config.nextTournament || {};
+    if(next.publicPath && ["schedule_available","live"].includes(next.status)){
+      link.textContent = next.status === "live" ? `Follow ${next.name} live` : `Open ${next.name}`;
+      link.href = next.publicPath;
+      return;
+    }
+    const featured = state.config.events.find(event => event.id === state.config.featuredEventId);
+    if(!featured) return;
     link.textContent = featured.featuredLabel || `View ${featured.name} results`;
     link.href = "#tournament-archive";
     link.addEventListener("click", event => {

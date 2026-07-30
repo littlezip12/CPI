@@ -1,9 +1,9 @@
 # WPI tournament operations
 
-Generated: **2026-07-30T01:42:58Z**
+Generated: **2026-07-30T02:45:38Z**
 
-- Live divisions: **23**
-- Ready: **0**
+- Live divisions: **31**
+- Ready: **8**
 - Attention: **23**
 - Blocking: **0**
 - Completed games: **0**

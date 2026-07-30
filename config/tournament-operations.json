@@ -1,11 +1,12 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.3",
+  "release": "7.54.5",
   "timezone": "America/Los_Angeles",
   "publicBaseUrl": "https://littlezip12.github.io/CPI/",
   "liveEventIds": [
     "2026-jo-weekend-1",
-    "2026-jo-weekend-2"
+    "2026-jo-weekend-2",
+    "2026-jo-session-3"
   ],
   "staleWarningHours": 3,
   "staleBlockingHours": 6,
@@ -61,6 +62,15 @@
         "Data review in progress",
         "Withheld for accuracy",
         "official sheet"
+      ]
+    },
+    "2026-jo-session-3": {
+      "path": "tournaments/jo-texas/index.html",
+      "requiredTokens": [
+        "sourceMeta",
+        "statusText",
+        "id=\"refresh\"",
+        "app.js?v=7.54.5"
       ]
     }
   },

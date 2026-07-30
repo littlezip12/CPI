@@ -1,0 +1,1901 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-jo-session-3",
+    "name": "2026 Junior Olympics Session 3",
+    "kind": "junior_olympics"
+  },
+  "division": {
+    "id": "10u-coed-championship",
+    "label": "10U Coed Championship",
+    "season": "2026",
+    "ageGroup": "10U",
+    "gender": "Coed",
+    "division": "Championship",
+    "divisionTier": "D1",
+    "parser": "jo_bracket_v1"
+  },
+  "source": {
+    "type": "google_sheets_csv",
+    "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+    "gid": "",
+    "sheetName": "10U_COED_CHAMP_6",
+    "url": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+    "fetchedAt": "2026-07-30T02:12:56Z",
+    "mode": "cached_raw",
+    "contentSha256": "a5b33ae36641cb5e2138543eb3fd1fb199980a03b5023f077f231c39b937477f",
+    "rowCount": 73
+  },
+  "counts": {
+    "games": 22,
+    "finalGames": 0,
+    "scheduledGames": 22,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 30,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 30,
+    "bracketReferences": 14,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 30
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-001",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-001",
+      "sourceGameNumber": 1,
+      "sourceRow": 24,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A1,A6",
+      "stageDisplay": "Bracket A1,A6",
+      "stageMeta": {
+        "raw": "Bracket A1,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A1,A6",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A1,A6"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-PEGASUS",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-10u-coed-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A6(6)- PEGASUS RED",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "PEGASUS RED",
+          "participantId": "tournament-team-2026-10u-coed-pegasus-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-002",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-002",
+      "sourceGameNumber": 2,
+      "sourceRow": 25,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "10:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A2,A5",
+      "stageDisplay": "Bracket A2,A5",
+      "stageMeta": {
+        "raw": "Bracket A2,A5",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A2,A5",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A2,A5"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-ALAMO",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-10u-coed-alamo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A5(5)-PAC",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PAC",
+          "participantId": "tournament-team-2026-10u-coed-pac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-003",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-003",
+      "sourceGameNumber": 3,
+      "sourceRow": 26,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "11:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A3,A4",
+      "stageDisplay": "Bracket A3,A4",
+      "stageMeta": {
+        "raw": "Bracket A3,A4",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A3,A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A3,A4"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A3(3)-MAVERICKS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "MAVERICKS",
+          "participantId": "tournament-team-2026-10u-coed-mavericks",
+          "teamId": null,
+          "clubId": "club-mavericks",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A4(4)-ZILLA",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ZILLA",
+          "participantId": "tournament-team-2026-10u-coed-zilla",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-004",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-004",
+      "sourceGameNumber": 4,
+      "sourceRow": 28,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "1:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A1,A2",
+      "stageDisplay": "Bracket A1,A2",
+      "stageMeta": {
+        "raw": "Bracket A1,A2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A1,A2"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-PEGASUS",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-10u-coed-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A2(2)-ALAMO",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-10u-coed-alamo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-005",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-005",
+      "sourceGameNumber": 5,
+      "sourceRow": 29,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "2:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A3,A6",
+      "stageDisplay": "Bracket A3,A6",
+      "stageMeta": {
+        "raw": "Bracket A3,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A3,A6",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A3,A6"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A3(3)-MAVERICKS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "MAVERICKS",
+          "participantId": "tournament-team-2026-10u-coed-mavericks",
+          "teamId": null,
+          "clubId": "club-mavericks",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A6(6)- PEGASUS RED",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "PEGASUS RED",
+          "participantId": "tournament-team-2026-10u-coed-pegasus-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-006",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-006",
+      "sourceGameNumber": 6,
+      "sourceRow": 30,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A4,A5",
+      "stageDisplay": "Bracket A4,A5",
+      "stageMeta": {
+        "raw": "Bracket A4,A5",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A4,A5",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A4,A5"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A4(4)-ZILLA",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ZILLA",
+          "participantId": "tournament-team-2026-10u-coed-zilla",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A5(5)-PAC",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PAC",
+          "participantId": "tournament-team-2026-10u-coed-pac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-007",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-007",
+      "sourceGameNumber": 7,
+      "sourceRow": 37,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A1,A5",
+      "stageDisplay": "Bracket A1,A5",
+      "stageMeta": {
+        "raw": "Bracket A1,A5",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A1,A5",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A1,A5"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-PEGASUS",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-10u-coed-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A5(5)-PAC",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PAC",
+          "participantId": "tournament-team-2026-10u-coed-pac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-008",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-008",
+      "sourceGameNumber": 8,
+      "sourceRow": 38,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "10:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A2,A3",
+      "stageDisplay": "Bracket A2,A3",
+      "stageMeta": {
+        "raw": "Bracket A2,A3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A2,A3"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-ALAMO",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-10u-coed-alamo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3(3)-MAVERICKS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "MAVERICKS",
+          "participantId": "tournament-team-2026-10u-coed-mavericks",
+          "teamId": null,
+          "clubId": "club-mavericks",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-009",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-009",
+      "sourceGameNumber": 9,
+      "sourceRow": 39,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "11:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A4,A6",
+      "stageDisplay": "Bracket A4,A6",
+      "stageMeta": {
+        "raw": "Bracket A4,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A4,A6",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A4,A6"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A4(4)-ZILLA",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ZILLA",
+          "participantId": "tournament-team-2026-10u-coed-zilla",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A6(6)- PEGASUS RED",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "PEGASUS RED",
+          "participantId": "tournament-team-2026-10u-coed-pegasus-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-010",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-010",
+      "sourceGameNumber": 10,
+      "sourceRow": 41,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "1:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A1,A3",
+      "stageDisplay": "Bracket A1,A3",
+      "stageMeta": {
+        "raw": "Bracket A1,A3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A1,A3"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-PEGASUS",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-10u-coed-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3(3)-MAVERICKS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "MAVERICKS",
+          "participantId": "tournament-team-2026-10u-coed-mavericks",
+          "teamId": null,
+          "clubId": "club-mavericks",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-011",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-011",
+      "sourceGameNumber": 11,
+      "sourceRow": 42,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "2:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A2,A4",
+      "stageDisplay": "Bracket A2,A4",
+      "stageMeta": {
+        "raw": "Bracket A2,A4",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A2,A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A2,A4"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-ALAMO",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-10u-coed-alamo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A4(4)-ZILLA",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ZILLA",
+          "participantId": "tournament-team-2026-10u-coed-zilla",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-012",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-012",
+      "sourceGameNumber": 12,
+      "sourceRow": 43,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A5,A6",
+      "stageDisplay": "Bracket A5,A6",
+      "stageMeta": {
+        "raw": "Bracket A5,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A5,A6",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A5,A6"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A5(5)-PAC",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PAC",
+          "participantId": "tournament-team-2026-10u-coed-pac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A6(6)- PEGASUS RED",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "PEGASUS RED",
+          "participantId": "tournament-team-2026-10u-coed-pegasus-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-013",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-013",
+      "sourceGameNumber": 13,
+      "sourceRow": 49,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A1,A4",
+      "stageDisplay": "Bracket A1,A4",
+      "stageMeta": {
+        "raw": "Bracket A1,A4",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A1,A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A1,A4"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-PEGASUS",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-10u-coed-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A4(4)-ZILLA",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "A4(4)",
+          "displayName": "ZILLA",
+          "participantId": "tournament-team-2026-10u-coed-zilla",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-014",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-014",
+      "sourceGameNumber": 14,
+      "sourceRow": 50,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "10:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A2,A6",
+      "stageDisplay": "Bracket A2,A6",
+      "stageMeta": {
+        "raw": "Bracket A2,A6",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A2,A6",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A2,A6"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(2)-ALAMO",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "A2(2)",
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-10u-coed-alamo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A6(6)- PEGASUS RED",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "A6(6)",
+          "displayName": "PEGASUS RED",
+          "participantId": "tournament-team-2026-10u-coed-pegasus-red",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-015",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-015",
+      "sourceGameNumber": 15,
+      "sourceRow": 51,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "11:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Bracket A3,A5",
+      "stageDisplay": "Bracket A3,A5",
+      "stageMeta": {
+        "raw": "Bracket A3,A5",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Bracket A3,A5",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Bracket A3,A5"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A3(3)-MAVERICKS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "A3(3)",
+          "displayName": "MAVERICKS",
+          "participantId": "tournament-team-2026-10u-coed-mavericks",
+          "teamId": null,
+          "clubId": "club-mavericks",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A5(5)-PAC",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "A5(5)",
+          "displayName": "PAC",
+          "participantId": "tournament-team-2026-10u-coed-pac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-016",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-016",
+      "sourceGameNumber": 16,
+      "sourceRow": 53,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "1:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "play to semi",
+      "stageDisplay": "play to Semifinal",
+      "stageMeta": {
+        "raw": "play to semi",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "play to Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "play to Semifinal"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rdA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "6thA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "6thA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 19,
+          "raw": "19"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 20,
+          "raw": "20"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-017",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-017",
+      "sourceGameNumber": 17,
+      "sourceRow": 54,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "2:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "play to semi",
+      "stageDisplay": "play to Semifinal",
+      "stageMeta": {
+        "raw": "play to semi",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "play to Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "play to Semifinal"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "4thA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "4thA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "5thA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "5thA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 18,
+          "raw": "18"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 20,
+          "raw": "20"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-018",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-018",
+      "sourceGameNumber": 18,
+      "sourceRow": 60,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "7:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi",
+      "stageDisplay": "1-4 Semifinal",
+      "stageMeta": {
+        "raw": "1-4 semi",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1stA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W#17",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W#17",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 22,
+          "raw": "22"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 21,
+          "raw": "21"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-019",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-019",
+      "sourceGameNumber": 19,
+      "sourceRow": 61,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "8:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi",
+      "stageDisplay": "1-4 Semifinal",
+      "stageMeta": {
+        "raw": "1-4 semi",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2ndA-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W#16",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W#16",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 22,
+          "raw": "22"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 21,
+          "raw": "21"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-020",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-020",
+      "sourceGameNumber": 20,
+      "sourceRow": 62,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L#17",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L#17",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L#16",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L#16",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "5th",
+          "raw": "5th"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "6th",
+          "raw": "6th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-021",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-021",
+      "sourceGameNumber": 21,
+      "sourceRow": 64,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "11:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L#18",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L#18",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L#19",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L#19",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "3rd",
+          "raw": "3rd"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "4th",
+          "raw": "4th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-10u-coed-championship-10c-022",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "10u-coed-championship",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "10C-022",
+      "sourceGameNumber": 22,
+      "sourceRow": 65,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "GARLAND ISD 3",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W#18",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W#18",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W#19",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W#19",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "placement",
+          "placement": "1st",
+          "raw": "1st"
+        },
+        "loserTo": {
+          "kind": "placement",
+          "placement": "2nd",
+          "raw": "2nd"
+        }
+      }
+    }
+  ]
+}

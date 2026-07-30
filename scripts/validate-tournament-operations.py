@@ -35,7 +35,7 @@ manifest = load("data/tournaments/normalized/manifest.json")
 
 if ops.get("schemaVersion") != 1 or ops.get("release") != EXPECTED_RELEASE:
     fail("Tournament operations output must use schemaVersion 1 and release 7.48.0")
-if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
+if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5"}:
     fail("Tournament operations configuration release mismatch")
 
 registry_keys = {(event.get("id"), division.get("id")) for event in registry.get("events", []) for division in event.get("divisions", [])}
@@ -43,14 +43,14 @@ rows = ops.get("divisions", [])
 row_keys = {(row.get("eventId"), row.get("divisionId")) for row in rows}
 if registry_keys != row_keys:
     fail("Operations dashboard must represent every registered tournament division")
-if len(registry.get("events", [])) != 5 or len(rows) != 48:
-    fail(f"Expected 5 events and 48 divisions, found {len(registry.get('events', []))} and {len(rows)}")
+if len(registry.get("events", [])) != 6 or len(rows) != 56:
+    fail(f"Expected 6 events and 56 divisions, found {len(registry.get('events', []))} and {len(rows)}")
 
 live = [row for row in rows if row.get("monitoringMode") == "live"]
 archive = [row for row in rows if row.get("monitoringMode") == "archive"]
 historical = [row for row in rows if row.get("monitoringMode") == "historical_registered"]
-if len(live) != 23:
-    fail(f"Expected both JO weekends to provide 23 live divisions, found {len(live)}")
+if len(live) != 31:
+    fail(f"Expected all three JO sessions to provide 31 live divisions, found {len(live)}")
 if len(archive) != 20:
     fail(f"Expected 20 completed-event archive divisions, found {len(archive)}")
 if len(historical) != 5:
@@ -115,11 +115,11 @@ for token in ["data/tournaments/operations/runtime.js?v=7.53.4", "js/tournament-
         fail(f"Tournament operations page is missing required token: {token}")
 
 # Poolside readiness budgets and mounts.
-for rel, budget in [("tournaments/jo-boys/app.js", 400_000), ("tournaments/jo-girls/app.js", 200_000)]:
+for rel, budget in [("tournaments/jo-boys/app.js", 400_000), ("tournaments/jo-girls/app.js", 200_000), ("tournaments/jo-texas/app.js", 220_000)]:
     path = ROOT / rel
     if path.exists() and path.stat().st_size > budget:
         fail(f"{rel} exceeds the launch-readiness JavaScript budget of {budget} bytes")
-for rel in ["tournaments/jo-boys/index.html", "tournaments/jo-girls/index.html"]:
+for rel in ["tournaments/jo-boys/index.html", "tournaments/jo-girls/index.html", "tournaments/jo-texas/index.html"]:
     text = (ROOT / rel).read_text(encoding="utf-8")
     for token in ['name="viewport"', 'id="sourceMeta"', 'id="statusText"', 'id="refresh"']:
         if token not in text:
@@ -155,8 +155,8 @@ if errors:
     raise SystemExit(1)
 
 print("TOURNAMENT OPERATIONS VALIDATION PASSED")
-print(" - 5 registered tournaments and 48 divisions share one operations framework")
-print(f" - Both JO weekends provide 23 live-monitored divisions: {ops.get('counts', {}).get('ready', 0)} ready and {ops.get('counts', {}).get('attention', 0)} attention")
+print(" - 6 registered tournaments and 56 divisions share one operations framework")
+print(f" - Three JO sessions provide 31 live-monitored divisions: {ops.get('counts', {}).get('ready', 0)} ready and {ops.get('counts', {}).get('attention', 0)} attention")
 print(" - 20 completed-event divisions remain isolated in controlled archive mode; 5 Girls Club divisions remain in data review")
 print(" - Source, score-state, public-page, fallback, and ranking-publication safeguards are enforced")
 print(" - Poolside JavaScript budgets and mobile application mounts pass")

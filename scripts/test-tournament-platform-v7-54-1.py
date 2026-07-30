@@ -16,16 +16,16 @@ rankings = load("rankings.json")
 clubs = load("clubs.json")
 jo = load("data/tournaments/jo-results-2026.json")
 
-if site.get("tournamentPlatformRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
+if site.get("tournamentPlatformRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5"}:
     errors.append("tournamentPlatformRelease must preserve 7.54.1")
-if site.get("tournamentRegistryRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
+if site.get("tournamentRegistryRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5"}:
     errors.append("tournamentRegistryRelease must preserve 7.54.1")
 if site.get("boysFuturesPlatformRelease") != "7.54.1":
     errors.append("boysFuturesPlatformRelease must remain 7.54.1")
-if site.get("version") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4"}:
+if site.get("version") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5"}:
     errors.append("site version must preserve the Boys Futures migration")
-if registry.get("release") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4"} or len(registry.get("events", [])) != 5:
-    errors.append("platform registry must contain five registered events")
+if registry.get("release") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5"} or len(registry.get("events", [])) != 6:
+    errors.append("platform registry must contain six registered events")
 platform_live = [event for event in registry.get("events", []) if event.get("migrationStatus") == "platform_live"]
 if {event.get("id") for event in platform_live} != {"2026-quiksilver-cup", "2026-boys-futures-super-finals"}:
     errors.append("Quiksilver and Boys Futures must be the two platform-live events")

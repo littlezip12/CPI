@@ -6,16 +6,18 @@ function requireCondition(condition,message){if(!condition)throw new Error(messa
 
 const expected={
   'jo-girls':'2026-jo-weekend-1',
-  'jo-boys':'2026-jo-weekend-2'
+  'jo-boys':'2026-jo-weekend-2',
+  'jo-texas':'2026-jo-session-3'
 };
 for(const [side,eventId] of Object.entries(expected)){
   const app=fs.readFileSync(path.join(ROOT,'tournaments',side,'app.js'),'utf8');
-  requireCondition(app.includes("APP_VERSION='7.51.0'"),`${side} does not advertise APP_VERSION 7.51.0`);
+  const expectedVersion=side==='jo-texas'?'7.54.5':'7.51.0';
+  requireCondition(app.includes(`APP_VERSION='${expectedVersion}'`),`${side} does not advertise APP_VERSION ${expectedVersion}`);
   for(const token of [
     `RELAY_EVENT_ID='${eventId}'`,
     "RELAY_BASE_URL='https://raw.githubusercontent.com/littlezip12/CPI/cpi-live-relay/data/tournaments/live-relay'",
     'RELAY_FETCH_TIMEOUT_MS=4500',
-    `RELAY_FRESH_MAX_AGE_MS=${side==='jo-boys'?'7':'20'}*60*1000`,
+    `RELAY_FRESH_MAX_AGE_MS=${side==='jo-girls'?'20':'7'}*60*1000`,
     'function fetchRelayDataset(config)',
     "result.method='WPI live relay'",
     'result.isFallback=!relayStatusFresh(status)',
@@ -29,11 +31,11 @@ for(const [side,eventId] of Object.entries(expected)){
   requireCondition(load.includes('if(relayApplied&&relayFresh)return;'),`${side} should retain a fresh relay when direct Google fails`);
 
   const registry=JSON.parse(fs.readFileSync(path.join(ROOT,'tournaments',side,'source-registry.json'),'utf8'));
-  requireCondition(registry.version==='7.51.0',`${side} source registry is not 7.51.0`);
+  requireCondition(registry.version===expectedVersion,`${side} source registry is not ${expectedVersion}`);
   const policy=registry.liveRelayPolicy||{};
   requireCondition(policy.enabled===true&&policy.eventId===eventId,`${side} relay policy is not enabled for ${eventId}`);
   requireCondition(policy.branch==='cpi-live-relay'&&policy.isolatedBranch===true,`${side} relay is not isolated from main`);
-  const expectedFreshMinutes=side==='jo-boys'?7:20;
+  const expectedFreshMinutes=side==='jo-girls'?20:7;
   requireCondition(policy.refreshTargetMinutes===5&&policy.freshMaxAgeMinutes===expectedFreshMinutes,`${side} relay cadence/freshness policy is incorrect`);
   requireCondition(policy.directGoogleFallback===true&&policy.lastKnownGoodPreservation===true,`${side} relay lacks required fallbacks`);
 }
@@ -59,7 +61,7 @@ for(const token of [
   'git fetch origin cpi-live-relay',
   'git switch --orphan cpi-live-relay-publish',
   'git push --force origin HEAD:cpi-live-relay',
-  '--event 2026-jo-weekend-2',
+  '--event 2026-jo-session-3',
   '--workers 3',
   '--timeout 8',
   '--max-candidates 2'
@@ -67,7 +69,7 @@ for(const token of [
 
 const relayScript=fs.readFileSync(path.join(ROOT,'scripts','sync-jo-live-relay.py'),'utf8');
 for(const token of [
-  'JO_EVENT_IDS = ("2026-jo-weekend-1", "2026-jo-weekend-2")',
+  'JO_EVENT_IDS = ("2026-jo-weekend-1", "2026-jo-weekend-2", "2026-jo-session-3")',
   'candidate_rejection_reason',
   'state": "live"',
   'state": "stale"',
@@ -77,7 +79,7 @@ for(const token of [
 ])requireCondition(relayScript.includes(token),`Relay builder is missing: ${token}`);
 
 console.log('JO LIVE RELAY 7.51.0 TESTS PASSED');
-console.log(' - Girls and Boys remain configured for the isolated WPI relay branch; scheduled refreshes prioritize the active Boys event');
+console.log(' - All three JO sessions remain configured for the isolated WPI relay branch; scheduled refreshes prioritize Session 3');
 console.log(' - Browsers apply the relay before direct Google and preserve a fresh relay if Google fails');
 console.log(' - Relay checks are bounded, freshness is explicit, and stale banks remain available');
 console.log(' - GitHub Actions refreshes the relay every five minutes without committing generated relay data to main');

@@ -38,8 +38,8 @@ participants = load("data/tournaments/identity/participants.json")
 evidence = load("data/tournaments/evidence/index.json")
 review = load("data/tournaments/evidence/ranking-review.json")
 
-if manifest.get("release") != EXPECTED_RELEASE:
-    fail(f"Normalized manifest release must be {EXPECTED_RELEASE}")
+if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5"}:
+    fail(f"Normalized manifest release must be {EXPECTED_RELEASE} or 7.54.5")
 if participants.get("release") != EXPECTED_RELEASE:
     fail(f"Participant registry release must be {EXPECTED_RELEASE}")
 if evidence.get("release") != EXPECTED_RELEASE:
@@ -51,10 +51,10 @@ rows = participants.get("participants", [])
 counts = participants.get("counts", {})
 if counts.get("participants") != len(rows):
     fail("Participant registry count does not match rows")
-if counts.get("participants", 99999) > 1100:
-    fail(f"Participant cleanup regression: expected <=1100 real identities, found {counts.get('participants')}")
-if counts.get("tournamentOnlyTeams", 99999) > 800:
-    fail(f"Tournament-only cleanup regression: expected <=800 real identities, found {counts.get('tournamentOnlyTeams')}")
+if counts.get("participants", 99999) > 1300:
+    fail(f"Participant cleanup regression: expected <=1300 real identities after Session 3, found {counts.get('participants')}")
+if counts.get("tournamentOnlyTeams", 99999) > 950:
+    fail(f"Tournament-only cleanup regression: expected <=950 real identities after Session 3, found {counts.get('tournamentOnlyTeams')}")
 if counts.get("canonicalTeams", 0) < 248:
     fail(f"Canonical tournament matches regressed below 248: {counts.get('canonicalTeams')}")
 
@@ -71,11 +71,11 @@ for row in rows:
     if name.endswith("-") or re.match(r"^\d+(?:st|nd|rd|th)[_\s-]", name, re.I):
         fail(f"Placement-slot identity leaked into participant registry: {name}")
 
-jo_datasets = [item for item in manifest.get("datasets", []) if str(item.get("eventId") or "").startswith("2026-jo-weekend-")]
+jo_datasets = [item for item in manifest.get("datasets", []) if item.get("eventId") in {"2026-jo-weekend-1", "2026-jo-weekend-2", "2026-jo-session-3"}]
 manifest_games = sum(int(item.get("counts", {}).get("games") or 0) for item in jo_datasets)
 manifest_finals = sum(int(item.get("counts", {}).get("finalGames") or 0) for item in jo_datasets)
-if manifest_games != 3924:
-    fail(f"Cleaned JO bank should contain 3,924 actual schedule records, found {manifest_games}")
+if manifest_games != 4469:
+    fail(f"Cleaned JO bank should contain 4,469 actual schedule records, found {manifest_games}")
 if manifest_finals != 0:
     fail("Pre-tournament JO cleanup must retain zero completed games")
 

@@ -159,6 +159,8 @@ def bracket_slot_token(value: Any) -> bool:
         return True
     if PLACEHOLDER_RE.fullmatch(text):
         return True
+    if re.fullmatch(r"\d+(?:st|nd|rd|th)\s*\(\s*after\s*rr\s*\)", text, re.I):
+        return True
     if PURE_BRACKET_RE.fullmatch(text) or PURE_SLOT_RE.fullmatch(text) or ORDINAL_SLOT_RE.fullmatch(text):
         return True
     # Winner/loser destinations such as W29-3rdC and L25-2ndD are still

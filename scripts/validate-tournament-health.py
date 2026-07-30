@@ -46,10 +46,10 @@ jo_registry = [
     for division in event.get("divisions", [])
 ]
 jo_rows = [row for row in rows if row.get("eventKind") == "junior_olympics"]
-if len(jo_registry) != 23:
-    fail(f"Expected 23 JO registry divisions, found {len(jo_registry)}")
+if len(jo_registry) != 31:
+    fail(f"Expected 31 JO registry divisions, found {len(jo_registry)}")
 if len(jo_rows) != len(jo_registry):
-    fail(f"Tournament health should cover all 23 JO divisions, found {len(jo_rows)}")
+    fail(f"Tournament health should cover all 31 JO divisions, found {len(jo_rows)}")
 
 seen: set[tuple[str, str]] = set()
 allowed_health = {"current", "stale", "unbanked", "error", "blocked"}

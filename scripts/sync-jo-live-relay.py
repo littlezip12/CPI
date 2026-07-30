@@ -33,9 +33,9 @@ REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 RELAY_ROOT = ROOT / "data" / "tournaments" / "live-relay"
 RAW_ROOT = ROOT / "data" / "tournaments" / "raw"
 NORMALIZED_ROOT = ROOT / "data" / "tournaments" / "normalized"
-JO_EVENT_IDS = ("2026-jo-weekend-1", "2026-jo-weekend-2")
-RELEASE = "7.51.0"
-USER_AGENT = "Mozilla/5.0 (compatible; WPI-JO-Live-Relay/7.51.0; +https://littlezip12.github.io/CPI/)"
+JO_EVENT_IDS = ("2026-jo-weekend-1", "2026-jo-weekend-2", "2026-jo-session-3")
+RELEASE = "7.54.5"
+USER_AGENT = "Mozilla/5.0 (compatible; WPI-JO-Live-Relay/7.54.5; +https://littlezip12.github.io/CPI/)"
 
 
 def utc_now() -> str:

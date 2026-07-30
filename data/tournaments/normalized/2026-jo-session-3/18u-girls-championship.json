@@ -1,0 +1,6588 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-jo-session-3",
+    "name": "2026 Junior Olympics Session 3",
+    "kind": "junior_olympics"
+  },
+  "division": {
+    "id": "18u-girls-championship",
+    "label": "18U Girls Championship",
+    "season": "2026",
+    "ageGroup": "18U",
+    "gender": "Girls",
+    "division": "Championship",
+    "divisionTier": "D1",
+    "parser": "jo_bracket_v1"
+  },
+  "source": {
+    "type": "google_sheets_csv",
+    "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+    "gid": "",
+    "sheetName": "18U_F_CHAMP-18 teams",
+    "url": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+    "fetchedAt": "2026-07-30T02:12:57Z",
+    "mode": "cached_raw",
+    "contentSha256": "f0cfc7d060c90b2435f1dcd18d3c22d3c5e8dcb67bcb65b1138459cd0b5ab7f3",
+    "rowCount": 152
+  },
+  "counts": {
+    "games": 75,
+    "finalGames": 0,
+    "scheduledGames": 75,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 36,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 36,
+    "bracketReferences": 114,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 36
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-001",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-001",
+      "sourceGameNumber": 1,
+      "sourceRow": 12,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-SEA MONSTERS PREMIER",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "SEA MONSTERS PREMIER",
+          "participantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3(13)-KRAKEN SATX",
+          "kind": "team",
+          "seed": 13,
+          "sourceReference": "A3(13)",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-kraken-satx",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-002",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-002",
+      "sourceGameNumber": 2,
+      "sourceRow": 13,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F1,F3",
+      "stageDisplay": "F bracket F1,F3",
+      "stageMeta": {
+        "raw": "F bracket F1,F3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F1,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F1,F3"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F1(6)-KRAKEN",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "F1(6)",
+          "displayName": "KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-kraken",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F3(18)-ZENITH ALL STARS",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": "F3(18)",
+          "displayName": "ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-zenith-all-stars",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-005",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-005",
+      "sourceGameNumber": 5,
+      "sourceRow": 14,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C3",
+      "stageDisplay": "C bracket C1,C3",
+      "stageMeta": {
+        "raw": "C bracket C1,C3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C3"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C1(3)-NEW HAVEN HYDRAS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "C1(3)",
+          "displayName": "NEW HAVEN HYDRAS",
+          "participantId": "tournament-team-2026-18u-girls-new-haven-hydras",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C3(15)-FLEET",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": "C3(15)",
+          "displayName": "FLEET",
+          "participantId": "tournament-team-2026-18u-girls-fleet",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-007",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-007",
+      "sourceGameNumber": 7,
+      "sourceRow": 15,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2(12)-ALAMO",
+          "kind": "team",
+          "seed": 12,
+          "sourceReference": "A2(12)",
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-alamo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3(13)-KRAKEN SATX",
+          "kind": "team",
+          "seed": 13,
+          "sourceReference": "A3(13)",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-kraken-satx",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-008",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-008",
+      "sourceGameNumber": 8,
+      "sourceRow": 16,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F2,F3",
+      "stageDisplay": "F bracket F2,F3",
+      "stageMeta": {
+        "raw": "F bracket F2,F3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F2,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F2,F3"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F2(7)-PEGASUS",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "F2(7)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-18u-girls-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "F3(18)-ZENITH ALL STARS",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": "F3(18)",
+          "displayName": "ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-zenith-all-stars",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-011",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-011",
+      "sourceGameNumber": 11,
+      "sourceRow": 17,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C2,C3",
+      "stageDisplay": "C bracket C2,C3",
+      "stageMeta": {
+        "raw": "C bracket C2,C3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C2,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C2,C3"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C2(10)-SOUTHLAKE",
+          "kind": "team",
+          "seed": 10,
+          "sourceReference": "C2(10)",
+          "displayName": "SOUTHLAKE",
+          "participantId": "tournament-team-2026-18u-girls-southlake",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C3(15)-FLEET",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": "C3(15)",
+          "displayName": "FLEET",
+          "participantId": "tournament-team-2026-18u-girls-fleet",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-013",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-013",
+      "sourceGameNumber": 13,
+      "sourceRow": 18,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-SEA MONSTERS PREMIER",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "SEA MONSTERS PREMIER",
+          "participantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2(12)-ALAMO",
+          "kind": "team",
+          "seed": 12,
+          "sourceReference": "A2(12)",
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-alamo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-014",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-014",
+      "sourceGameNumber": 14,
+      "sourceRow": 19,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F1,F2",
+      "stageDisplay": "F bracket F1,F2",
+      "stageMeta": {
+        "raw": "F bracket F1,F2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F1,F2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F1,F2"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F1(6)-KRAKEN",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "F1(6)",
+          "displayName": "KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-kraken",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F2(7)-PEGASUS",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "F2(7)",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-18u-girls-pegasus",
+          "teamId": null,
+          "clubId": "club-pegasus",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-017",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-017",
+      "sourceGameNumber": 17,
+      "sourceRow": 20,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C2",
+      "stageDisplay": "C bracket C1,C2",
+      "stageMeta": {
+        "raw": "C bracket C1,C2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C2"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C1(3)-NEW HAVEN HYDRAS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "C1(3)",
+          "displayName": "NEW HAVEN HYDRAS",
+          "participantId": "tournament-team-2026-18u-girls-new-haven-hydras",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C2(10)-SOUTHLAKE",
+          "kind": "team",
+          "seed": 10,
+          "sourceReference": "C2(10)",
+          "displayName": "SOUTHLAKE",
+          "participantId": "tournament-team-2026-18u-girls-southlake",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-019",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-019",
+      "sourceGameNumber": 19,
+      "sourceRow": 21,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross 2A/3B",
+      "stageDisplay": "Cross 2A/3B",
+      "stageMeta": {
+        "raw": "Cross 2A/3B",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Cross 2A/3B",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Cross 2A/3B"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_A",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2nd_A",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rd_B",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rd_B",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_P3",
+          "raw": "pt_P3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_R1",
+          "raw": "pt_R1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-020",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-020",
+      "sourceGameNumber": 20,
+      "sourceRow": 22,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross 2F/3E",
+      "stageDisplay": "Cross 2F/3E",
+      "stageMeta": {
+        "raw": "Cross 2F/3E",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Cross 2F/3E",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Cross 2F/3E"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_F",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2nd_F",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rd_E",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rd_E",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_N2",
+          "raw": "pt_N2"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_S3",
+          "raw": "pt_S3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-023",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-023",
+      "sourceGameNumber": 23,
+      "sourceRow": 23,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "5:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross 2C/3D",
+      "stageDisplay": "Cross 2C/3D",
+      "stageMeta": {
+        "raw": "Cross 2C/3D",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Cross 2C/3D",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Cross 2C/3D"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_C",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2nd_C",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rd_D",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rd_D",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_N3",
+          "raw": "pt_N3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_S2",
+          "raw": "pt_S2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-003",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-003",
+      "sourceGameNumber": 3,
+      "sourceRow": 27,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B1(2)-HOUSTON HYDRA",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "B1(2)",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-18u-girls-houston-hydra",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3(14)-BCWP",
+          "kind": "team",
+          "seed": 14,
+          "sourceReference": "B3(14)",
+          "displayName": "BCWP",
+          "participantId": "tournament-team-2026-18u-girls-bcwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-004",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-004",
+      "sourceGameNumber": 4,
+      "sourceRow": 28,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E1,E3",
+      "stageDisplay": "E bracket E1,E3",
+      "stageMeta": {
+        "raw": "E bracket E1,E3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E1,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E1,E3"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E1(5)-SLAP",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "E1(5)",
+          "displayName": "SLAP",
+          "participantId": "tournament-team-2026-18u-girls-slap",
+          "teamId": null,
+          "clubId": "club-slap",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3(17)-LONGHORN WHITE",
+          "kind": "team",
+          "seed": 17,
+          "sourceReference": "E3(17)",
+          "displayName": "LONGHORN WHITE",
+          "participantId": "tournament-team-2026-18u-girls-longhorn-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-006",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-006",
+      "sourceGameNumber": 6,
+      "sourceRow": 29,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D2,D3",
+      "stageDisplay": "D bracket D2,D3",
+      "stageMeta": {
+        "raw": "D bracket D2,D3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D2,D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D2,D3"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D1(4)-VIPER PIGEONS",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "D1(4)",
+          "displayName": "VIPER PIGEONS",
+          "participantId": "tournament-team-2026-18u-girls-viper-pigeons",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D3(16)-STORM CYCLONES",
+          "kind": "team",
+          "seed": 16,
+          "sourceReference": "D3(16)",
+          "displayName": "STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-storm-cyclones",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-009",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-009",
+      "sourceGameNumber": 9,
+      "sourceRow": 30,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B2(11)-ZOO",
+          "kind": "team",
+          "seed": 11,
+          "sourceReference": "B2(11)",
+          "displayName": "ZOO",
+          "participantId": "tournament-team-2026-18u-girls-zoo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3(14)-BCWP",
+          "kind": "team",
+          "seed": 14,
+          "sourceReference": "B3(14)",
+          "displayName": "BCWP",
+          "participantId": "tournament-team-2026-18u-girls-bcwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-010",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-010",
+      "sourceGameNumber": 10,
+      "sourceRow": 31,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E2,E3",
+      "stageDisplay": "E bracket E2,E3",
+      "stageMeta": {
+        "raw": "E bracket E2,E3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E2,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E2,E3"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E2(8)-STORM TSUNAMIS",
+          "kind": "team",
+          "seed": 8,
+          "sourceReference": "E2(8)",
+          "displayName": "STORM TSUNAMIS",
+          "participantId": "tournament-team-2026-18u-girls-storm-tsunamis",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "E3(17)-LONGHORN WHITE",
+          "kind": "team",
+          "seed": 17,
+          "sourceReference": "E3(17)",
+          "displayName": "LONGHORN WHITE",
+          "participantId": "tournament-team-2026-18u-girls-longhorn-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-012",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-012",
+      "sourceGameNumber": 12,
+      "sourceRow": 32,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D1,D2",
+      "stageDisplay": "D bracket D1,D2",
+      "stageMeta": {
+        "raw": "D bracket D1,D2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D1,D2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D1,D2"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D2(9)-ST LOUIS LIONS",
+          "kind": "team",
+          "seed": 9,
+          "sourceReference": "D2(9)",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-st-louis-lions",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D3(16)-STORM CYCLONES",
+          "kind": "team",
+          "seed": 16,
+          "sourceReference": "D3(16)",
+          "displayName": "STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-storm-cyclones",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-015",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-015",
+      "sourceGameNumber": 15,
+      "sourceRow": 33,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B1(2)-HOUSTON HYDRA",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "B1(2)",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-18u-girls-houston-hydra",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B2(11)-ZOO",
+          "kind": "team",
+          "seed": 11,
+          "sourceReference": "B2(11)",
+          "displayName": "ZOO",
+          "participantId": "tournament-team-2026-18u-girls-zoo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-016",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-016",
+      "sourceGameNumber": 16,
+      "sourceRow": 34,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E1,E2",
+      "stageDisplay": "E bracket E1,E2",
+      "stageMeta": {
+        "raw": "E bracket E1,E2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E1,E2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E1,E2"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E1(5)-SLAP",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "E1(5)",
+          "displayName": "SLAP",
+          "participantId": "tournament-team-2026-18u-girls-slap",
+          "teamId": null,
+          "clubId": "club-slap",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E2(8)-STORM TSUNAMIS",
+          "kind": "team",
+          "seed": 8,
+          "sourceReference": "E2(8)",
+          "displayName": "STORM TSUNAMIS",
+          "participantId": "tournament-team-2026-18u-girls-storm-tsunamis",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-018",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-018",
+      "sourceGameNumber": 18,
+      "sourceRow": 35,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D1,D2",
+      "stageDisplay": "D bracket D1,D2",
+      "stageMeta": {
+        "raw": "D bracket D1,D2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D1,D2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D1,D2"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D1(4)-VIPER PIGEONS",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "D1(4)",
+          "displayName": "VIPER PIGEONS",
+          "participantId": "tournament-team-2026-18u-girls-viper-pigeons",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D2(9)-ST LOUIS LIONS",
+          "kind": "team",
+          "seed": 9,
+          "sourceReference": "D2(9)",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-st-louis-lions",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "RR",
+          "raw": "RR"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-021",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-021",
+      "sourceGameNumber": 21,
+      "sourceRow": 36,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross 2B/3A",
+      "stageDisplay": "Cross 2B/3A",
+      "stageMeta": {
+        "raw": "Cross 2B/3A",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Cross 2B/3A",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Cross 2B/3A"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_B",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2nd_B",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rd_A",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rd_A",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_O3",
+          "raw": "pt_O3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_S1",
+          "raw": "pt_S1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-022",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-022",
+      "sourceGameNumber": 22,
+      "sourceRow": 37,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross 2E/3F",
+      "stageDisplay": "Cross 2E/3F",
+      "stageMeta": {
+        "raw": "Cross 2E/3F",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Cross 2E/3F",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Cross 2E/3F"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_E",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2nd_E",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rd_F",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rd_F",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_M2",
+          "raw": "pt_M2"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_R3",
+          "raw": "pt_R3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-024",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-024",
+      "sourceGameNumber": 24,
+      "sourceRow": 38,
+      "dateLabel": "30-Jul",
+      "dateIso": "2026-07-30",
+      "timeLabel": "5:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Cross 2D/3C",
+      "stageDisplay": "Cross 2D/3C",
+      "stageMeta": {
+        "raw": "Cross 2D/3C",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Cross 2D/3C",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Cross 2D/3C"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd_D",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2nd_D",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rd_C",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rd_C",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_M3",
+          "raw": "pt_M3"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_R2",
+          "raw": "pt_R2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-065",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-065",
+      "sourceGameNumber": 65,
+      "sourceRow": 54,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_R1(L19)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R1(L19)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_R2(L24)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R2(L24)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-069",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-069",
+      "sourceGameNumber": 69,
+      "sourceRow": 55,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_M1(1st_A)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M1(1st_A)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_M3(W24)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M3(W24)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-073",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-073",
+      "sourceGameNumber": 73,
+      "sourceRow": 56,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_N1(1st_B)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N1(1st_B)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_N3(W23)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N3(W23)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-077",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-077",
+      "sourceGameNumber": 77,
+      "sourceRow": 57,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_R1(L19)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R1(L19)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_R3(L22)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R3(L22)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-079",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-079",
+      "sourceGameNumber": 79,
+      "sourceRow": 58,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_M2(W22)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M2(W22)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_M3(W24)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M3(W24)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-081",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-081",
+      "sourceGameNumber": 81,
+      "sourceRow": 59,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_N2(W20)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N2(W20)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_N3(W23)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N3(W23)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-083",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-083",
+      "sourceGameNumber": 83,
+      "sourceRow": 60,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_R2(L24)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R2(L24)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_R3(L22)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_R3(L22)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-085",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-085",
+      "sourceGameNumber": 85,
+      "sourceRow": 61,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_M1(1st_A)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M1(1st_A)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_M2(W22)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_M2(W22)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-089",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-089",
+      "sourceGameNumber": 89,
+      "sourceRow": 62,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_N1(1st_B)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N1(1st_B)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_N3(W23)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_N3(W23)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-109",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-109",
+      "sourceGameNumber": 109,
+      "sourceRow": 64,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Play-in",
+      "stageDisplay": "Play-in",
+      "stageMeta": {
+        "raw": "Play-in",
+        "detailRaw": "pt_Play-in",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "play_in",
+        "roundLabel": "Play-in",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Play-in"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd pt_M",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdpt_M",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "2nd pt_R",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_R",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 133,
+          "raw": "133"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_W2",
+          "raw": "au_W2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-113",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-113",
+      "sourceGameNumber": 113,
+      "sourceRow": 65,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "5:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Play-in",
+      "stageDisplay": "Play-in",
+      "stageMeta": {
+        "raw": "Play-in",
+        "detailRaw": "pt_Play-in",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "play_in",
+        "roundLabel": "Play-in",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Play-in"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd pt_N",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdpt_N",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st pt_R",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_R",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 125,
+          "raw": "125"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_V3",
+          "raw": "au_V3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-066",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-066",
+      "sourceGameNumber": 66,
+      "sourceRow": 69,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_S1(L21)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S1(L21)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_S2(L23)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S2(L23)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-070",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-070",
+      "sourceGameNumber": 70,
+      "sourceRow": 70,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_O1(1st_C)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O1(1st_C)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_O3(W21)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O3(W21)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-074",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-074",
+      "sourceGameNumber": 74,
+      "sourceRow": 71,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_P1(1st_D)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P1(1st_D)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_P3(W19)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P3(W19)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-078",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-078",
+      "sourceGameNumber": 78,
+      "sourceRow": 72,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_S1(L21)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S1(L21)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_S3(L20)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S3(L20)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-080",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-080",
+      "sourceGameNumber": 80,
+      "sourceRow": 73,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_O2(1st_F)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O2(1st_F)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_O3(W21)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O3(W21)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-082",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-082",
+      "sourceGameNumber": 82,
+      "sourceRow": 74,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_P2(1st_E)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P2(1st_E)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_P3(W19)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P3(W19)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-084",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-084",
+      "sourceGameNumber": 84,
+      "sourceRow": 75,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_S2(L23)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S2(L23)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_S3(L20)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_S3(L20)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-086",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-086",
+      "sourceGameNumber": 86,
+      "sourceRow": 76,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_O1(1st_C)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O1(1st_C)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_O2(1st_F)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_O2(1st_F)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-090",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-090",
+      "sourceGameNumber": 90,
+      "sourceRow": 77,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "pt_Group",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "pt_P1(1st_D)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P1(1st_D)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "pt_P2(1st_E)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "pt_P2(1st_E)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-110",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-110",
+      "sourceGameNumber": 110,
+      "sourceRow": 79,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Play-in",
+      "stageDisplay": "Play-in",
+      "stageMeta": {
+        "raw": "Play-in",
+        "detailRaw": "pt_Play-in",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "play_in",
+        "roundLabel": "Play-in",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Play-in"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd pt_O",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdpt_O",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st pt_S",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_S",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 121,
+          "raw": "121"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_W3",
+          "raw": "au_W3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-114",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-114",
+      "sourceGameNumber": 114,
+      "sourceRow": 80,
+      "dateLabel": "31-Jul",
+      "dateIso": "2026-07-31",
+      "timeLabel": "5:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Play-in",
+      "stageDisplay": "Play-in",
+      "stageMeta": {
+        "raw": "Play-in",
+        "detailRaw": "pt_Play-in",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "play_in",
+        "roundLabel": "Play-in",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Play-in"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd pt_P",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdpt_P",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "2nd pt_S",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_S",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 129,
+          "raw": "129"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_V2",
+          "raw": "au_V2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-121",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-121",
+      "sourceGameNumber": 121,
+      "sourceRow": 92,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "stageDisplay": "5-8 v 9-12",
+      "stageMeta": {
+        "raw": "5-8 v 9-12",
+        "detailRaw": "pt_5-8 v 9-12",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5-8 v 9-12",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 v 9-12"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd pt_P",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_P",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W110",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W110",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 145,
+          "raw": "145"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 153,
+          "raw": "153"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-125",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-125",
+      "sourceGameNumber": 125,
+      "sourceRow": 93,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "stageDisplay": "5-8 v 9-12",
+      "stageMeta": {
+        "raw": "5-8 v 9-12",
+        "detailRaw": "pt_5-8 v 9-12",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5-8 v 9-12",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 v 9-12"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd pt_M",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_M",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W113",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W113",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 145,
+          "raw": "145"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 153,
+          "raw": "153"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-129",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-129",
+      "sourceGameNumber": 129,
+      "sourceRow": 94,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "stageDisplay": "5-8 v 9-12",
+      "stageMeta": {
+        "raw": "5-8 v 9-12",
+        "detailRaw": "pt_5-8 v 9-12",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5-8 v 9-12",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 v 9-12"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd pt_O",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_O",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W114",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W114",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 149,
+          "raw": "149"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 157,
+          "raw": "157"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-137",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-137",
+      "sourceGameNumber": 137,
+      "sourceRow": 95,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-2 v 3-4",
+      "stageDisplay": "1-2 v 3-4",
+      "stageMeta": {
+        "raw": "1-2 v 3-4",
+        "detailRaw": "pt_1-2 v 3-4",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "1-2 v 3-4",
+        "placementRange": {
+          "start": 1,
+          "end": 2
+        },
+        "placement": null,
+        "displayLabel": "1-2 v 3-4"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st pt_N",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_N",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st pt_O",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_O",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 174,
+          "raw": "174"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 161,
+          "raw": "161"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-141",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-141",
+      "sourceGameNumber": 141,
+      "sourceRow": 96,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-2 v 3-4",
+      "stageDisplay": "1-2 v 3-4",
+      "stageMeta": {
+        "raw": "1-2 v 3-4",
+        "detailRaw": "pt_1-2 v 3-4",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "1-2 v 3-4",
+        "placementRange": {
+          "start": 1,
+          "end": 2
+        },
+        "placement": null,
+        "displayLabel": "1-2 v 3-4"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st pt_M",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_M",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st pt_P",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stpt_P",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 173,
+          "raw": "173"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 165,
+          "raw": "165"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-145",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-145",
+      "sourceGameNumber": 145,
+      "sourceRow": 97,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-6 v 7-8",
+      "stageDisplay": "5-6 v 7-8",
+      "stageMeta": {
+        "raw": "5-6 v 7-8",
+        "detailRaw": "pt_5-6 v 7-8",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5-6 v 7-8",
+        "placementRange": {
+          "start": 5,
+          "end": 6
+        },
+        "placement": null,
+        "displayLabel": "5-6 v 7-8"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W121",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W121",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W125",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W125",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 161,
+          "raw": "161"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 178,
+          "raw": "178"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-153",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-153",
+      "sourceGameNumber": 153,
+      "sourceRow": 98,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi",
+      "stageDisplay": "9-12 Semifinal",
+      "stageMeta": {
+        "raw": "9-12 semi",
+        "detailRaw": "pt_9-12 semi",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "9-12 Semifinal",
+        "placementRange": {
+          "start": 9,
+          "end": 12
+        },
+        "placement": null,
+        "displayLabel": "9-12 Semifinal"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L125",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L125",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L121",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L121",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 177,
+          "raw": "177"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 181,
+          "raw": "181"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-157",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-157",
+      "sourceGameNumber": 157,
+      "sourceRow": 99,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi",
+      "stageDisplay": "9-12 Semifinal",
+      "stageMeta": {
+        "raw": "9-12 semi",
+        "detailRaw": "pt_9-12 semi",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "9-12 Semifinal",
+        "placementRange": {
+          "start": 9,
+          "end": 12
+        },
+        "placement": null,
+        "displayLabel": "9-12 Semifinal"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L133",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L133",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L129",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L129",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 177,
+          "raw": "177"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 181,
+          "raw": "181"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-161",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-161",
+      "sourceGameNumber": 161,
+      "sourceRow": 100,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "play to semi",
+      "stageDisplay": "play to Semifinal",
+      "stageMeta": {
+        "raw": "play to semi",
+        "detailRaw": "pt_play to semi",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "play to Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "play to Semifinal"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L137",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L137",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W145",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W145",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 173,
+          "raw": "173"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 193,
+          "raw": "193"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-122",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-122",
+      "sourceGameNumber": 122,
+      "sourceRow": 104,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "au_Group",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_V1(3rd pt_R)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V1(3rdpt_R)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_V3(L113)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V3(L113)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-126",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-126",
+      "sourceGameNumber": 126,
+      "sourceRow": 105,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "au_Group",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_W1(3rd pt_S)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W1(3rdpt_S)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_W3(L110)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W3(L110)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-133",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-133",
+      "sourceGameNumber": 133,
+      "sourceRow": 106,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 v 9-12",
+      "stageDisplay": "5-8 v 9-12",
+      "stageMeta": {
+        "raw": "5-8 v 9-12",
+        "detailRaw": "pt_5-8 v 9-12",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5-8 v 9-12",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 v 9-12"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd pt_N",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndpt_N",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W109",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W109",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 149,
+          "raw": "149"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 157,
+          "raw": "157"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-130",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-130",
+      "sourceGameNumber": 130,
+      "sourceRow": 107,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "au_Group",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_V2(L114)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V2(L114)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_V3(L113)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V3(L113)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-134",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-134",
+      "sourceGameNumber": 134,
+      "sourceRow": 108,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "au_Group",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_W2(L109)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W2(L109)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_W3(L110)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W3(L110)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-149",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-149",
+      "sourceGameNumber": 149,
+      "sourceRow": 109,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-6 v 7-8",
+      "stageDisplay": "5-6 v 7-8",
+      "stageMeta": {
+        "raw": "5-6 v 7-8",
+        "detailRaw": "pt_5-6 v 7-8",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5-6 v 7-8",
+        "placementRange": {
+          "start": 5,
+          "end": 6
+        },
+        "placement": null,
+        "displayLabel": "5-6 v 7-8"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W129",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W129",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W133",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W133",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 165,
+          "raw": "165"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 178,
+          "raw": "178"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-138",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-138",
+      "sourceGameNumber": 138,
+      "sourceRow": 110,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "au_Group",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_V1(3rd pt_R)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V1(3rdpt_R)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_V2(L114)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_V2(L114)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-142",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-142",
+      "sourceGameNumber": 142,
+      "sourceRow": 111,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Group",
+      "stageDisplay": "Group play",
+      "stageMeta": {
+        "raw": "Group",
+        "detailRaw": "au_Group",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "group",
+        "roundLabel": "Group play",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Group play"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "au_W1(3rd pt_S)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W1(3rdpt_S)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "au_W2(L109)",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "au_W2(L109)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-165",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-165",
+      "sourceGameNumber": 165,
+      "sourceRow": 112,
+      "dateLabel": "1-Aug",
+      "dateIso": "2026-08-01",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "play to semi",
+      "stageDisplay": "play to Semifinal",
+      "stageMeta": {
+        "raw": "play to semi",
+        "detailRaw": "pt_play to semi",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "play to Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "play to Semifinal"
+      },
+      "venue": "CARROL ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L141",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L141",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W149",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W149",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 174,
+          "raw": "174"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 193,
+          "raw": "193"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-193",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-193",
+      "sourceGameNumber": 193,
+      "sourceRow": 118,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "pt_5th",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L161",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L161",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L165",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L165",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_5th",
+          "raw": "pt_5th"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_6th",
+          "raw": "pt_6th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-178",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-178",
+      "sourceGameNumber": 178,
+      "sourceRow": 119,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "stageDisplay": "7th place game",
+      "stageMeta": {
+        "raw": "7th",
+        "detailRaw": "pt_7th",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "7th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 7,
+          "loserPlace": 8
+        },
+        "displayLabel": "7th place game"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L145",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L145",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L149",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L149",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_7th",
+          "raw": "pt_7th"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_8th",
+          "raw": "pt_8th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-191",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-191",
+      "sourceGameNumber": 191,
+      "sourceRow": 120,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "au_3rd",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "2nd au_V",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndau_V",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "2nd au_W",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "2ndau_W",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "au_3rd",
+          "raw": "au_3rd"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_4th",
+          "raw": "au_4th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-182",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-182",
+      "sourceGameNumber": 182,
+      "sourceRow": 121,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "au_1st",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "1st au_V",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stau_V",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "1st au_W",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "1stau_W",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "au_1st",
+          "raw": "au_1st"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_2nd",
+          "raw": "au_2nd"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-177",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-177",
+      "sourceGameNumber": 177,
+      "sourceRow": 122,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th",
+      "stageDisplay": "9th place game",
+      "stageMeta": {
+        "raw": "9th",
+        "detailRaw": "pt_9th",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "9th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 9,
+          "loserPlace": 10
+        },
+        "displayLabel": "9th place game"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W153",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W153",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W157",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W157",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_9th",
+          "raw": "pt_9th"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_10th",
+          "raw": "pt_10th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-192",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-192",
+      "sourceGameNumber": 192,
+      "sourceRow": 123,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "au_5th",
+        "bracketCode": "au",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "3rd au_V",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdau_V",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "3rd au_W",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "3rdau_W",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "au_5th",
+          "raw": "au_5th"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "au_6th",
+          "raw": "au_6th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-181",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-181",
+      "sourceGameNumber": 181,
+      "sourceRow": 124,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "11th",
+      "stageDisplay": "11th place game",
+      "stageMeta": {
+        "raw": "11th",
+        "detailRaw": "pt_11th",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "11th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 11,
+          "loserPlace": 12
+        },
+        "displayLabel": "11th place game"
+      },
+      "venue": "CARROL ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L153",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L153",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L157",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L157",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_11th",
+          "raw": "pt_11th"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_12th",
+          "raw": "pt_12th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-174",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-174",
+      "sourceGameNumber": 174,
+      "sourceRow": 129,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "8:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "semi",
+      "stageDisplay": "Semifinal",
+      "stageMeta": {
+        "raw": "semi",
+        "detailRaw": "pt_semi",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Semifinal"
+      },
+      "venue": "GARLAND ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W137",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W137",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W165",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W165",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 186,
+          "raw": "186"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 185,
+          "raw": "185"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-185",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-185",
+      "sourceGameNumber": 185,
+      "sourceRow": 131,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "pt_3rd",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "GARLAND ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L173",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L173",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L174",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L174",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_3rd",
+          "raw": "pt_3rd"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_4th",
+          "raw": "pt_4th"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-173",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-173",
+      "sourceGameNumber": 173,
+      "sourceRow": 135,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "8:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "semi",
+      "stageDisplay": "Semifinal",
+      "stageMeta": {
+        "raw": "semi",
+        "detailRaw": "pt_semi",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Semifinal"
+      },
+      "venue": "GARLAND ISD 2",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W141",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W141",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W161",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W161",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 186,
+          "raw": "186"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 185,
+          "raw": "185"
+        }
+      }
+    },
+    {
+      "id": "game-2026-jo-session-3-18u-girls-championship-18g-186",
+      "eventId": "2026-jo-session-3",
+      "divisionId": "18u-girls-championship",
+      "season": "2026",
+      "ageGroup": "18U",
+      "gender": "Girls",
+      "division": "Championship",
+      "divisionTier": "D1",
+      "sourceGameId": "18G-186",
+      "sourceGameNumber": 186,
+      "sourceRow": 137,
+      "dateLabel": "2-Aug",
+      "dateIso": "2026-08-02",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "pt_1st",
+        "bracketCode": "pt",
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "GARLAND ISD 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W173",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W173",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W174",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W174",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "pt_1st",
+          "raw": "pt_1st"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "pt_2nd",
+          "raw": "pt_2nd"
+        }
+      }
+    }
+  ]
+}

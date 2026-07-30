@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junior Olympics Session 3 Schedule & Team Pathways | Water Polo Index</title>
+  <meta name="description" content="Explore the 2026 Junior Olympics Session 3 schedule for Boys and Girls 14U through 18U plus 10U and 12U Coed Championship divisions in North Texas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="../../css/homepage-v8.css?v=7.53.4">
+  <link rel="stylesheet" href="../jo-schedule.css?v=7.53.4">
+  <link rel="stylesheet" href="../jo-unified-v7-50.css?v=7.53.4">  <link rel="stylesheet" href="../../css/sponsor-framework-v7-53-2.css?v=7.53.4">
+  <link rel="stylesheet" href="../../css/command-palette.css?v=7.53.4">
+
+  <link rel="stylesheet" href="../../css/site-shell.css?v=7.53.4">
+</head>
+<body class="jo-page jo50-page jo-session-three-page">
+  <header class="cpi-v8-header jo50-header">
+    <div class="cpi-v8-header-inner">
+      <a class="cpi-v8-brand" href="../../index.html" aria-label="Water Polo Index Home"><span class="cpi-v8-brand-mark">WPI</span><span class="cpi-v8-brand-text"><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></span></a>
+      <nav class="cpi-v8-nav" aria-label="Primary navigation"><a href="../../index.html">Home</a><a href="../../rankings.html">Rankings</a><a href="../../clubs.html">Clubs</a><a href="../../tournaments.html" aria-current="page">Tournaments</a><a href="../../methodology.html">Methodology</a></nav>
+      <a class="cpi-shell-search cpi-v8-search" href="../../tournaments.html">Tournament hub</a>
+    </div>
+  </header>
+
+  <section class="jo50-livebar" aria-label="Live tournament status">
+    <div class="jo50-livebar-inner">
+      <div class="jo50-live-state"><span id="liveDot" class="jo-live-dot"></span><strong id="statusText">Loading verified schedule…</strong></div>
+      <div class="jo50-live-stat"><span>Divisions</span><strong>8</strong></div>
+      <div class="jo50-live-stat"><span>Selected schedule</span><strong id="liveScheduledCount">—</strong></div>
+      <div class="jo50-live-stat"><span>Completed</span><strong id="liveCompletedCount">—</strong></div>
+      <div class="jo50-live-stat"><span>Updated</span><strong id="liveUpdatedAt">Checking…</strong></div>
+    </div>
+  </section>
+
+  <main class="jo50-shell">
+    <section class="jo50-event-card" aria-labelledby="joEventTitle">
+      <div class="jo50-event-heading">
+        <a class="jo50-back" href="../../tournaments.html">← Back to tournaments</a>
+        <div class="jo50-event-title-row">
+          <img src="../../assets/logos/usa-water-polo.webp" alt="USA Water Polo">
+          <div><p class="jo-eyebrow">2026 Junior Olympics · Session 3 · North Texas</p><h1 id="joEventTitle">Junior Olympics Session 3</h1><p>Boys, Girls &amp; Coed 10U–18U · Live schedule and team pathways</p></div>
+        </div>
+        <p class="jo50-event-description">Choose one of eight Championship divisions, then select a team to see its complete schedule, next game, possible opponents, and win/loss pathway. Club logos are intentionally omitted for this national field.</p>
+      </div>
+      <div class="jo50-event-actions">
+        <button id="refresh" class="jo-button" type="button">Refresh schedule</button>
+        <button id="share" class="jo-button secondary" type="button">Share division link</button>
+        <a id="sheetLink" class="jo-button secondary" href="#" target="_blank" rel="noopener">Official sheet</a>
+      </div>
+    </section>
+
+    <nav class="jo50-subnav" aria-label="Tournament page sections">
+      <a class="active" href="#overview">Overview</a>
+      <a href="#team-explorer">Team journey</a>
+      <a href="#schedule-results">Schedule & results</a>
+      <a href="#source-status">Source status</a>
+    </nav>
+
+    <section id="overview" class="jo50-metrics" aria-label="Selected division summary">
+      <article><span>Divisions</span><strong id="metricDivisionCount">8</strong><small>This weekend</small></article>
+      <article><span>Teams</span><strong id="metricTeamCount">—</strong><small>Selected division</small></article>
+      <article><span>Scheduled</span><strong id="metricScheduledCount">—</strong><small>Published games</small></article>
+      <article><span>Completed</span><strong id="metricCompletedCount">—</strong><small>Verified finals</small></article>
+      <article><span>Last update</span><strong id="metricUpdatedAt">Checking…</strong><small>Official source</small></article>
+    </section>
+
+    <section class="jo50-selector-card" aria-label="Tournament schedule selectors">
+      <div class="jo50-selector-heading"><div><p class="jo-eyebrow">Explore a division</p><h2 id="activeDivisionTitle">Loading division…</h2><p id="activeDivisionMeta">Choose an age, division, and team.</p></div><a class="jo50-switch-weekend" href="../jo-girls/">Girls & Coed Weekend 1 →</a></div>
+      <div class="jo-control-panel">
+        <div class="jo-control"><label for="age">Age</label><select id="age"></select></div>
+        <div class="jo-control"><label for="division">Division</label><select id="division"></select></div>
+        <div class="jo-control jo-control-team"><label for="team">Team journey</label><select id="team"><option value="">Choose your team</option></select></div>
+      </div>
+      <div class="jo-seed-legend" role="note"><span class="jo-seed-badge">#18</span><span><strong>JO division seed</strong> is displayed separately and never stored as part of the team name.</span></div>
+    </section>
+
+    <section id="source-status" class="jo50-source-card" aria-labelledby="sourceStatusTitle">
+      <div><span id="sourceStatusIcon" class="jo50-source-icon">●</span><div><h2 id="sourceStatusTitle">Official schedule source</h2><p>WPI loads a verified schedule immediately, then checks the official Google Sheet for newer data.</p></div></div>
+      <div id="sourceMeta" class="jo-source-meta" aria-live="polite"><div><span>Source</span><strong>Official Google Sheet</strong></div><div><span>Status</span><strong>Checking…</strong></div></div>
+      <a class="jo50-source-link" id="officialSourceLink" href="https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing" target="_blank" rel="noopener">Open official schedule →</a>
+    </section>
+
+    <section id="emptyState" class="jo-empty-state jo50-empty-card glass">
+      <div><p class="jo-eyebrow">Start here</p><h2>Choose a team to map its tournament path.</h2><p>The full division schedule is available below. Select a team to see its next game, record, possible opponents, win/loss destinations, and relevant bracket games.</p></div>
+    </section>
+
+    <section id="teamView" class="hidden">
+      <div id="team-explorer" class="jo-team-grid jo50-team-grid">
+        <article id="summary" class="jo-summary glass"></article>
+        <article id="next" class="jo-next glass"></article>
+      </div>
+
+      <section id="pathSection" class="jo-section hidden"><div class="jo-section-heading"><div><p class="jo-eyebrow">Bracket pathway</p><h2>What happens next</h2></div></div><div id="paths" class="jo-paths"></div></section>
+
+      <section class="jo-section jo50-section-card">
+        <div class="jo-section-heading"><div><p class="jo-eyebrow">Selected team</p><h2>Journey and relevant games</h2></div></div>
+        <div class="jo-tabs" role="tablist"><button id="journeyTab" class="active" type="button">Team journey</button><button id="relevantTab" type="button">Relevant bracket games</button></div>
+        <div id="journey"></div>
+        <div id="relevant" class="hidden">
+          <div class="jo-inline-filters"><label>Search<input id="search" type="search" placeholder="Team, venue, game, or round"></label><label>Day<select id="day"><option value="">All days</option></select></label></div>
+          <div id="schedule" class="jo-game-list"></div>
+        </div>
+      </section>
+
+      <section class="jo-section jo50-section-card"><div class="jo-section-heading"><div><p class="jo-eyebrow">Possible opponents</p><h2>Other team journeys to explore</h2></div></div><div id="potential" class="jo-potential"></div></section>
+    </section>
+
+    <section id="schedule-results" class="jo-section jo-full-schedule jo50-section-card">
+      <div class="jo-section-heading"><div><p class="jo-eyebrow">Full division schedule</p><h2>Schedule & results</h2></div><span id="fullCount" class="jo-count">0 games shown</span></div>
+      <div class="jo-inline-filters"><label>Search<input id="fullSearch" type="search" placeholder="Search team, venue, game number, or round"></label><label>Day<select id="fullDay"><option value="">All days</option></select></label></div>
+      <div id="fullSchedule" class="jo-game-list"></div>
+    </section>
+  </main>
+
+  <footer class="cpi-v8-footer"><div class="inner"><div class="brand"><a href="../../index.html"><span>WPI</span><div><strong>Water Polo Index</strong><em>Rankings. Results. Club intelligence.</em></div></a><p>Independent and unofficial rankings, results, and tournament tools for California youth water polo.</p></div><nav><h3>Explore</h3><a href="../../rankings.html">Rankings</a><a href="../../clubs.html">Clubs</a><a href="../../tournaments.html">Tournaments</a></nav><nav><h3>Junior Olympics</h3><a href="../jo-boys/">Boys Weekend 2</a><a href="../jo-girls/">Girls & Coed Weekend 1</a></nav><div><h3>Source standard</h3><p>WPI reads public schedule sheets and preserves direct links to the official division source.</p></div></div><div class="bottom">© 2026 Water Polo Index.</div></footer>
+  <script>
+    window.setTimeout(function(){
+      if(!window.CPI_JO_APP_READY){
+        var status=document.getElementById('statusText');
+        var dot=document.getElementById('liveDot');
+        if(status) status.textContent='Schedule application did not start. Hard refresh the page; if this remains, the app.js file is missing from the deployment.';
+        if(dot) dot.classList.add('fallback');
+      }
+    },5000);
+  </script>
+  <script src="../../data/identity/runtime.js?v=7.53.4"></script>
+  <script src="../../js/cpi-identity.js?v=7.53.4"></script>
+  <script src="app.js?v=7.54.5" onerror="var s=document.getElementById('statusText'); if(s) s.textContent='Schedule application file could not be loaded. Confirm app.js was committed and hard refresh.';"></script>  <script src="../../data/sponsors/runtime.js?v=7.53.4"></script>
+  <script src="../../js/sponsor-framework-v7-53-2.js?v=7.53.4"></script>
+  <script defer src="../../js/command-palette.js?v=7.53.4"></script>
+
+  <script defer src="../../js/site-shell.js?v=7.53.4"></script>
+</body>
+</html>

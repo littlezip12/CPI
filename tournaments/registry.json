@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.0",
+  "release": "7.54.5",
   "season": "2026",
-  "generatedDate": "2026-07-28",
+  "generatedDate": "2026-07-29",
   "description": "Universal tournament source registry with live JO operations, controlled archives, and the reusable WPI tournament platform. Quiksilver Cup is the first migrated event; ranking publication remains manual.",
   "events": [
     {
@@ -558,6 +558,210 @@
       "platformRelease": null
     },
     {
+      "id": "2026-jo-session-3",
+      "name": "2026 Junior Olympics Session 3",
+      "shortName": "JO Session 3",
+      "kind": "junior_olympics",
+      "syncEnabled": true,
+      "publicPath": "tournaments/jo-texas/index.html",
+      "dates": {
+        "start": "2026-07-30",
+        "end": "2026-08-02"
+      },
+      "location": "North Texas",
+      "divisions": [
+        {
+          "id": "10u-coed-championship",
+          "label": "10U Coed Championship",
+          "season": "2026",
+          "ageGroup": "10U",
+          "gender": "Coed",
+          "division": "Championship",
+          "divisionTier": "D1",
+          "parser": "jo_bracket_v1",
+          "sourceType": "google_sheets_csv",
+          "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+          "gid": "",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+          "sheetName": "10U_COED_CHAMP_6",
+          "sheetNameAliases": [
+            "10U_COED_CHAMP_6"
+          ],
+          "gidAliases": [],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-session-3/10u-coed-championship.csv",
+          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "expectedScheduleGames": 22
+        },
+        {
+          "id": "12u-coed-championship",
+          "label": "12U Coed Championship",
+          "season": "2026",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "division": "Championship",
+          "divisionTier": "D1",
+          "parser": "jo_bracket_v1",
+          "sourceType": "google_sheets_csv",
+          "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+          "gid": "",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+          "sheetName": "12U_COED_CHAMP 21 12+9 ",
+          "sheetNameAliases": [
+            "12U_COED_CHAMP 21 12+9 ",
+            "12U_COED_CHAMP 21 12+9"
+          ],
+          "gidAliases": [],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-session-3/12u-coed-championship.csv",
+          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "expectedScheduleGames": 81
+        },
+        {
+          "id": "14u-boys-championship",
+          "label": "14U Boys Championship",
+          "season": "2026",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "division": "Championship",
+          "divisionTier": "D1",
+          "parser": "jo_bracket_v1",
+          "sourceType": "google_sheets_csv",
+          "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+          "gid": "",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+          "sheetName": "14U_M_CHAMP-26 teams DE auRR",
+          "sheetNameAliases": [
+            "14U_M_CHAMP-26 teams DE auRR"
+          ],
+          "gidAliases": [],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-session-3/14u-boys-championship.csv",
+          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "expectedScheduleGames": 101
+        },
+        {
+          "id": "14u-girls-championship",
+          "label": "14U Girls Championship",
+          "season": "2026",
+          "ageGroup": "14U",
+          "gender": "Girls",
+          "division": "Championship",
+          "divisionTier": "D1",
+          "parser": "jo_bracket_v1",
+          "sourceType": "google_sheets_csv",
+          "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+          "gid": "",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+          "sheetName": "14U_F_CHAMP_7",
+          "sheetNameAliases": [
+            "14U_F_CHAMP_7"
+          ],
+          "gidAliases": [],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-session-3/14u-girls-championship.csv",
+          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "expectedScheduleGames": 27
+        },
+        {
+          "id": "16u-boys-championship",
+          "label": "16U Boys Championship",
+          "season": "2026",
+          "ageGroup": "16U",
+          "gender": "Boys",
+          "division": "Championship",
+          "divisionTier": "D1",
+          "parser": "jo_bracket_v1",
+          "sourceType": "google_sheets_csv",
+          "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+          "gid": "",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+          "sheetName": "16U_M_Champ 25",
+          "sheetNameAliases": [
+            "16U_M_Champ 25"
+          ],
+          "gidAliases": [],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-session-3/16u-boys-championship.csv",
+          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "expectedScheduleGames": 97
+        },
+        {
+          "id": "16u-girls-championship",
+          "label": "16U Girls Championship",
+          "season": "2026",
+          "ageGroup": "16U",
+          "gender": "Girls",
+          "division": "Championship",
+          "divisionTier": "D1",
+          "parser": "jo_bracket_v1",
+          "sourceType": "google_sheets_csv",
+          "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+          "gid": "",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+          "sheetName": "16U_F_Champ-12 teams",
+          "sheetNameAliases": [
+            "16U_F_Champ-12 teams"
+          ],
+          "gidAliases": [],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-session-3/16u-girls-championship.csv",
+          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "expectedScheduleGames": 48
+        },
+        {
+          "id": "18u-boys-championship",
+          "label": "18U Boys Championship",
+          "season": "2026",
+          "ageGroup": "18U",
+          "gender": "Boys",
+          "division": "Championship",
+          "divisionTier": "D1",
+          "parser": "jo_bracket_v1",
+          "sourceType": "google_sheets_csv",
+          "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+          "gid": "",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+          "sheetName": "18U_M_CHAMP_NEW_23",
+          "sheetNameAliases": [
+            "18U_M_CHAMP_NEW_23"
+          ],
+          "gidAliases": [],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-session-3/18u-boys-championship.csv",
+          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "expectedScheduleGames": 94
+        },
+        {
+          "id": "18u-girls-championship",
+          "label": "18U Girls Championship",
+          "season": "2026",
+          "ageGroup": "18U",
+          "gender": "Girls",
+          "division": "Championship",
+          "divisionTier": "D1",
+          "parser": "jo_bracket_v1",
+          "sourceType": "google_sheets_csv",
+          "spreadsheetId": "1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg",
+          "gid": "",
+          "sourceUrl": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
+          "sheetName": "18U_F_CHAMP-18 teams",
+          "sheetNameAliases": [
+            "18U_F_CHAMP-18 teams"
+          ],
+          "gidAliases": [],
+          "sourceStrategy": "sheet_name_primary",
+          "snapshotPath": "data/tournaments/raw/2026-jo-session-3/18u-girls-championship.csv",
+          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "expectedScheduleGames": 75
+        }
+      ],
+      "archiveSyncEnabled": false,
+      "rankingEvidenceEnabled": false,
+      "dataStatus": "schedule_available",
+      "operationalMode": "live"
+    },
+    {
       "id": "2026-quiksilver-cup",
       "name": "2026 Quiksilver Cup",
       "shortName": "Quiksilver Cup",
@@ -962,9 +1166,9 @@
     }
   ],
   "counts": {
-    "events": 5,
-    "divisions": 48,
-    "autoSyncDivisions": 23,
+    "events": 6,
+    "divisions": 56,
+    "autoSyncDivisions": 31,
     "archiveSyncDivisions": 25,
     "rankingEvidenceEnabledDivisions": 23
   },

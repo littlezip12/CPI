@@ -14,6 +14,7 @@ on:
       - "data/tournaments/registry.json"
       - "tournaments/jo-girls/app.js"
       - "tournaments/jo-boys/app.js"
+      - "tournaments/jo-texas/app.js"
 
 permissions:
   contents: write
@@ -48,8 +49,8 @@ jobs:
             echo "No prior relay branch exists; verified repository snapshots will seed it."
           fi
 
-      - name: Refresh active Boys JO divisions
-        run: python3 scripts/sync-jo-live-relay.py --event 2026-jo-weekend-2 --workers 3 --timeout 8 --max-candidates 2
+      - name: Refresh active JO Session 3 divisions
+        run: python3 scripts/sync-jo-live-relay.py --event 2026-jo-session-3 --workers 3 --timeout 8 --max-candidates 2
 
       - name: Publish isolated relay branch
         shell: bash
@@ -65,12 +66,12 @@ jobs:
           mkdir -p data/tournaments
           cp -R /tmp/cpi-live-relay/data/tournaments/live-relay data/tournaments/live-relay
           cat > README.md <<'EOF'
-          # CPI JO Live Relay
+          # WPI JO Live Relay
 
-          This branch is generated automatically. It contains only CPI's validated,
+          This branch is generated automatically. It contains only WPI's validated,
           last-known-good Junior Olympics relay bank and per-division freshness metadata.
           Do not edit it manually.
           EOF
           git add README.md data/tournaments/live-relay
-          git commit -m "Refresh CPI JO live relay"
+          git commit -m "Refresh WPI JO live relay"
           git push --force origin HEAD:cpi-live-relay

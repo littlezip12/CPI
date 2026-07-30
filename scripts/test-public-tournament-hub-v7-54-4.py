@@ -9,10 +9,10 @@ hub=load('data/tournaments/public-hub.json')
 html=(ROOT/'tournaments.html').read_text(encoding='utf-8')
 js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 css=(ROOT/'css/tournament-hub-v7-54-4.css').read_text(encoding='utf-8')
-if site.get('version')!='7.54.4': errors.append('site version must be 7.54.4')
-if site.get('tournamentPublicHubRelease')!='7.54.4': errors.append('tournamentPublicHubRelease must be 7.54.4')
-if site.get('tournamentArchiveExperienceRelease')!='7.54.4': errors.append('tournamentArchiveExperienceRelease must be 7.54.4')
-for token in ['Your team. Your tournament.','id="nextTournamentHeading"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.4']:
+if site.get('version')!='7.54.5': errors.append('site version must be 7.54.5')
+if site.get('tournamentPublicHubRelease')!='7.54.5': errors.append('tournamentPublicHubRelease must be 7.54.5')
+if site.get('tournamentArchiveExperienceRelease')!='7.54.4': errors.append('tournamentArchiveExperienceRelease must preserve 7.54.4')
+for token in ['Your team. Your tournament.','id="nextTournamentHeading"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.5']:
     if token not in html: errors.append(f'tournaments.html missing {token}')
 for forbidden in ['Tournament control room','Tournament intelligence','Open control room','Open source health','Open performance','Open review','Data review','Accuracy hold']:
     if forbidden in html: errors.append(f'public hub still exposes internal content: {forbidden}')
@@ -20,6 +20,12 @@ for token in ['renderNext','renderYears','renderEvents','renderJoResults','rende
     if token not in js: errors.append(f'public hub runtime missing {token}')
 for token in ['.tournament-hub-hero','.next-tournament-card','.tournament-year-tabs','.archive-browser','.archive-team-link']:
     if token not in css: errors.append(f'public hub stylesheet missing {token}')
+
+next_event=hub.get('nextTournament',{})
+if next_event.get('name')!='Junior Olympics Session 3': errors.append('next tournament must be Junior Olympics Session 3')
+if next_event.get('publicPath')!='tournaments/jo-texas/': errors.append('next tournament must link to the Session 3 viewer')
+if next_event.get('status')!='schedule_available': errors.append('Session 3 schedule must be marked available')
+if 'next.publicPath' not in js: errors.append('hero button does not prioritize an active next tournament')
 if hub.get('years')!=[2026,2025,2024]: errors.append('archive years must be 2026, 2025, 2024')
 events=hub.get('events',[])
 ids=[e.get('id') for e in events]

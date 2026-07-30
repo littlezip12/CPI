@@ -1,11 +1,9 @@
-# WPI 7.54.4
+# WPI 7.54.5
 
-Public tournament hub cleanup.
+Junior Olympics Session 3 live tournament experience.
 
-- Replaces the oversized tournament landing page with a compact “Your team. Your tournament.” hero.
-- Adds a data-driven Next Tournament section ready for dates, schedules, live pathways, and results.
-- Introduces a year-based public archive ordered by water polo season, with Junior Olympics last.
-- Requires visitors to select a tournament and age/gender before results are displayed.
-- Links every listed team to its complete tournament journey.
-- Removes public links to tournament control-room, source-health, and ranking-review tooling and marks those internal surfaces as noindex.
-- Preserves rankings, ratings, club identities, logos, websites, JO placements, tournament results, archive data, and sponsor data.
+- Adds eight North Texas Junior Olympics Championship schedules for July 30–August 2, 2026.
+- Preserves verified schedules in the repository, checks the WPI live relay first, and falls back to the official Google workbook for live updates.
+- Reuses the proven Junior Olympics team-journey and win/loss pathway engine.
+- Intentionally omits club logos for the national Session 3 field.
+- Preserves all published rankings, club identities, logos elsewhere on the site, completed tournament archives, and sponsor data.
