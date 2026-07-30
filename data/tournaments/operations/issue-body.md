@@ -1,10 +1,10 @@
 # WPI tournament operations
 
-Generated: **2026-07-30T04:42:55Z**
+Generated: **2026-07-30T11:32:40Z**
 
 - Live divisions: **31**
-- Ready: **8**
-- Attention: **23**
+- Ready: **0**
+- Attention: **31**
 - Blocking: **0**
 - Completed games: **0**
 
@@ -33,6 +33,14 @@ Generated: **2026-07-30T04:42:55Z**
 - ⚠️ **2026 Junior Olympics Weekend 2 · 18U Boys Championship** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 2 · 18U Boys Classic** — Last verified source is stale.
 - ⚠️ **2026 Junior Olympics Weekend 2 · 18U Boys Invitational** — Last verified source is stale.
+- ⚠️ **2026 Junior Olympics Session 3 · 10U Coed Championship** — Last verified source is stale.
+- ⚠️ **2026 Junior Olympics Session 3 · 12U Coed Championship** — Last verified source is stale.
+- ⚠️ **2026 Junior Olympics Session 3 · 14U Boys Championship** — Last verified source is stale.
+- ⚠️ **2026 Junior Olympics Session 3 · 14U Girls Championship** — Last verified source is stale.
+- ⚠️ **2026 Junior Olympics Session 3 · 16U Boys Championship** — Last verified source is stale.
+- ⚠️ **2026 Junior Olympics Session 3 · 16U Girls Championship** — Last verified source is stale.
+- ⚠️ **2026 Junior Olympics Session 3 · 18U Boys Championship** — Last verified source is stale.
+- ⚠️ **2026 Junior Olympics Session 3 · 18U Girls Championship** — Last verified source is stale.
 
 The WPI operations workflow does not blend sources and does not publish ranking changes automatically.
 

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "release": "7.48.0",
-  "generatedAt": "2026-07-30T04:42:55Z",
+  "generatedAt": "2026-07-30T11:32:40Z",
   "timezone": "America/Los_Angeles",
   "policy": {
     "authoritativeSourceOnly": true,
@@ -26,12 +26,12 @@
     "archiveGames": 1283,
     "historicalEvents": 1,
     "historicalDivisions": 5,
-    "ready": 8,
-    "attention": 23,
+    "ready": 0,
+    "attention": 31,
     "blocking": 0,
     "scheduledGames": 4469,
     "completedGames": 0,
-    "alerts": 23
+    "alerts": 31
   },
   "events": [
     {
@@ -75,8 +75,8 @@
       "monitoringMode": "live",
       "publicPath": "tournaments/jo-texas/index.html",
       "divisionCount": 8,
-      "ready": 8,
-      "attention": 0,
+      "ready": 0,
+      "attention": 8,
       "blocking": 0,
       "historical": 0,
       "archivePending": 0,
@@ -195,10 +195,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -258,6 +258,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -306,10 +313,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -369,6 +376,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -417,10 +431,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -480,6 +494,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -528,10 +549,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -591,6 +612,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -639,10 +667,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -702,6 +730,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -750,10 +785,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -813,6 +848,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -861,10 +903,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -924,6 +966,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -972,10 +1021,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1035,6 +1084,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -1083,10 +1139,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1146,6 +1202,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -1194,10 +1257,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1257,6 +1320,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -1305,10 +1375,10 @@
         "path": "tournaments/jo-girls/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1368,6 +1438,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -1416,10 +1493,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1479,6 +1556,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -1527,10 +1611,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1590,6 +1674,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -1638,10 +1729,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1701,6 +1792,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -1749,10 +1847,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1810,6 +1908,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -1860,10 +1965,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -1923,6 +2028,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -1971,10 +2083,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -2034,6 +2146,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -2082,10 +2201,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -2143,6 +2262,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2193,10 +2319,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -2254,6 +2380,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2304,10 +2437,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -2365,6 +2498,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2415,10 +2555,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -2476,6 +2616,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2526,10 +2673,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -2589,6 +2736,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -2637,10 +2791,10 @@
         "path": "tournaments/jo-boys/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -2700,6 +2854,13 @@
           "detail": "Local page and required application mounts are present."
         },
         {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
+        },
+        {
           "code": "count_reconciles",
           "severity": "blocking",
           "passed": true,
@@ -2720,8 +2881,8 @@
       "gender": "Coed",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "ready",
-      "phase": "pre_tournament",
+      "operationalStatus": "attention",
+      "phase": "awaiting_results",
       "schedule": {
         "expectedGames": 22,
         "games": 22,
@@ -2738,8 +2899,8 @@
         "sheetName": "10U_COED_CHAMP_6",
         "mode": "cached_raw",
         "lastSuccessfulAt": "2026-07-30T02:12:56Z",
-        "lastAttemptAt": "2026-07-30T02:12:56Z",
-        "healthStatus": "current",
+        "lastAttemptAt": null,
+        "healthStatus": "stale",
         "warning": null,
         "error": null
       },
@@ -2748,10 +2909,10 @@
         "path": "tournaments/jo-texas/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -2773,12 +2934,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is current."
+          "detail": "Source health is stale."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": true,
+          "passed": false,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -2809,6 +2970,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2831,8 +2999,8 @@
       "gender": "Coed",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "ready",
-      "phase": "pre_tournament",
+      "operationalStatus": "attention",
+      "phase": "awaiting_results",
       "schedule": {
         "expectedGames": 81,
         "games": 81,
@@ -2849,8 +3017,8 @@
         "sheetName": "12U_COED_CHAMP 21 12+9 ",
         "mode": "cached_raw",
         "lastSuccessfulAt": "2026-07-30T02:12:56Z",
-        "lastAttemptAt": "2026-07-30T02:12:56Z",
-        "healthStatus": "current",
+        "lastAttemptAt": null,
+        "healthStatus": "stale",
         "warning": null,
         "error": null
       },
@@ -2859,10 +3027,10 @@
         "path": "tournaments/jo-texas/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -2884,12 +3052,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is current."
+          "detail": "Source health is stale."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": true,
+          "passed": false,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -2920,6 +3088,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -2942,8 +3117,8 @@
       "gender": "Boys",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "ready",
-      "phase": "pre_tournament",
+      "operationalStatus": "attention",
+      "phase": "awaiting_results",
       "schedule": {
         "expectedGames": 101,
         "games": 101,
@@ -2960,8 +3135,8 @@
         "sheetName": "14U_M_CHAMP-26 teams DE auRR",
         "mode": "cached_raw",
         "lastSuccessfulAt": "2026-07-30T02:12:56Z",
-        "lastAttemptAt": "2026-07-30T02:12:56Z",
-        "healthStatus": "current",
+        "lastAttemptAt": null,
+        "healthStatus": "stale",
         "warning": null,
         "error": null
       },
@@ -2970,10 +3145,10 @@
         "path": "tournaments/jo-texas/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -2995,12 +3170,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is current."
+          "detail": "Source health is stale."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": true,
+          "passed": false,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -3031,6 +3206,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -3053,8 +3235,8 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "ready",
-      "phase": "pre_tournament",
+      "operationalStatus": "attention",
+      "phase": "awaiting_results",
       "schedule": {
         "expectedGames": 27,
         "games": 27,
@@ -3071,8 +3253,8 @@
         "sheetName": "14U_F_CHAMP_7",
         "mode": "cached_raw",
         "lastSuccessfulAt": "2026-07-30T02:12:57Z",
-        "lastAttemptAt": "2026-07-30T02:12:57Z",
-        "healthStatus": "current",
+        "lastAttemptAt": null,
+        "healthStatus": "stale",
         "warning": null,
         "error": null
       },
@@ -3081,10 +3263,10 @@
         "path": "tournaments/jo-texas/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -3106,12 +3288,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is current."
+          "detail": "Source health is stale."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": true,
+          "passed": false,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -3142,6 +3324,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -3164,8 +3353,8 @@
       "gender": "Boys",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "ready",
-      "phase": "pre_tournament",
+      "operationalStatus": "attention",
+      "phase": "awaiting_results",
       "schedule": {
         "expectedGames": 97,
         "games": 97,
@@ -3182,8 +3371,8 @@
         "sheetName": "16U_M_Champ 25",
         "mode": "cached_raw",
         "lastSuccessfulAt": "2026-07-30T02:12:57Z",
-        "lastAttemptAt": "2026-07-30T02:12:57Z",
-        "healthStatus": "current",
+        "lastAttemptAt": null,
+        "healthStatus": "stale",
         "warning": null,
         "error": null
       },
@@ -3192,10 +3381,10 @@
         "path": "tournaments/jo-texas/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -3217,12 +3406,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is current."
+          "detail": "Source health is stale."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": true,
+          "passed": false,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -3253,6 +3442,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -3275,8 +3471,8 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "ready",
-      "phase": "pre_tournament",
+      "operationalStatus": "attention",
+      "phase": "awaiting_results",
       "schedule": {
         "expectedGames": 48,
         "games": 48,
@@ -3293,8 +3489,8 @@
         "sheetName": "16U_F_Champ-12 teams",
         "mode": "cached_raw",
         "lastSuccessfulAt": "2026-07-30T02:12:57Z",
-        "lastAttemptAt": "2026-07-30T02:12:57Z",
-        "healthStatus": "current",
+        "lastAttemptAt": null,
+        "healthStatus": "stale",
         "warning": null,
         "error": null
       },
@@ -3303,10 +3499,10 @@
         "path": "tournaments/jo-texas/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -3328,12 +3524,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is current."
+          "detail": "Source health is stale."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": true,
+          "passed": false,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -3364,6 +3560,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -3386,8 +3589,8 @@
       "gender": "Boys",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "ready",
-      "phase": "pre_tournament",
+      "operationalStatus": "attention",
+      "phase": "awaiting_results",
       "schedule": {
         "expectedGames": 94,
         "games": 94,
@@ -3404,8 +3607,8 @@
         "sheetName": "18U_M_CHAMP_NEW_23",
         "mode": "cached_raw",
         "lastSuccessfulAt": "2026-07-30T02:12:57Z",
-        "lastAttemptAt": "2026-07-30T02:12:57Z",
-        "healthStatus": "current",
+        "lastAttemptAt": null,
+        "healthStatus": "stale",
         "warning": null,
         "error": null
       },
@@ -3414,10 +3617,10 @@
         "path": "tournaments/jo-texas/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -3439,12 +3642,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is current."
+          "detail": "Source health is stale."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": true,
+          "passed": false,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -3475,6 +3678,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -3497,8 +3707,8 @@
       "gender": "Girls",
       "division": "Championship",
       "divisionTier": "D1",
-      "operationalStatus": "ready",
-      "phase": "pre_tournament",
+      "operationalStatus": "attention",
+      "phase": "awaiting_results",
       "schedule": {
         "expectedGames": 75,
         "games": 75,
@@ -3515,8 +3725,8 @@
         "sheetName": "18U_F_CHAMP-18 teams",
         "mode": "cached_raw",
         "lastSuccessfulAt": "2026-07-30T02:12:57Z",
-        "lastAttemptAt": "2026-07-30T02:12:57Z",
-        "healthStatus": "current",
+        "lastAttemptAt": null,
+        "healthStatus": "stale",
         "warning": null,
         "error": null
       },
@@ -3525,10 +3735,10 @@
         "path": "tournaments/jo-texas/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -3550,12 +3760,12 @@
           "severity": "blocking",
           "passed": true,
           "message": "Official source is readable or safely cached",
-          "detail": "Source health is current."
+          "detail": "Source health is stale."
         },
         {
           "code": "source_freshness",
           "severity": "warning",
-          "passed": true,
+          "passed": false,
           "message": "Source verification is current",
           "detail": "Last verified source is stale."
         },
@@ -3586,6 +3796,13 @@
           "passed": true,
           "message": "Public schedule page is wired",
           "detail": "Local page and required application mounts are present."
+        },
+        {
+          "code": "public_network",
+          "severity": "warning",
+          "passed": true,
+          "message": "Published page is reachable",
+          "detail": "Published page returned HTTP 200 with required application mounts."
         },
         {
           "code": "count_reconciles",
@@ -3636,10 +3853,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -3719,10 +3936,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -3802,10 +4019,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -3885,10 +4102,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -3968,10 +4185,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -4051,10 +4268,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -4134,10 +4351,10 @@
         "path": "tournaments/quicksilver-cup/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:39Z"
       },
       "checks": [
         {
@@ -4217,10 +4434,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4300,10 +4517,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4383,10 +4600,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4466,10 +4683,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4549,10 +4766,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4632,10 +4849,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4715,10 +4932,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4798,10 +5015,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4881,10 +5098,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -4964,10 +5181,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -5047,10 +5264,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -5130,10 +5347,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -5213,10 +5430,10 @@
         "path": "tournaments/boys-superfinals/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -5296,10 +5513,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -5358,10 +5575,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -5420,10 +5637,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -5482,10 +5699,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -5544,10 +5761,10 @@
         "path": "tournaments/girls-club-championships/index.html",
         "localStatus": "ready",
         "message": "Local page and required application mounts are present.",
-        "networkChecked": false,
-        "networkStatus": "not_checked",
-        "networkMessage": "Published page was not checked during this local validation.",
-        "checkedAt": "2026-07-30T04:42:55Z"
+        "networkChecked": true,
+        "networkStatus": "ready",
+        "networkMessage": "Published page returned HTTP 200 with required application mounts.",
+        "checkedAt": "2026-07-30T11:32:40Z"
       },
       "checks": [
         {
@@ -6881,6 +7098,78 @@
       "eventName": "2026 Junior Olympics Weekend 2",
       "divisionId": "18u-boys-invitational",
       "divisionLabel": "18U Boys Invitational",
+      "severity": "warning",
+      "code": "source_freshness",
+      "message": "Last verified source is stale."
+    },
+    {
+      "eventId": "2026-jo-session-3",
+      "eventName": "2026 Junior Olympics Session 3",
+      "divisionId": "10u-coed-championship",
+      "divisionLabel": "10U Coed Championship",
+      "severity": "warning",
+      "code": "source_freshness",
+      "message": "Last verified source is stale."
+    },
+    {
+      "eventId": "2026-jo-session-3",
+      "eventName": "2026 Junior Olympics Session 3",
+      "divisionId": "12u-coed-championship",
+      "divisionLabel": "12U Coed Championship",
+      "severity": "warning",
+      "code": "source_freshness",
+      "message": "Last verified source is stale."
+    },
+    {
+      "eventId": "2026-jo-session-3",
+      "eventName": "2026 Junior Olympics Session 3",
+      "divisionId": "14u-boys-championship",
+      "divisionLabel": "14U Boys Championship",
+      "severity": "warning",
+      "code": "source_freshness",
+      "message": "Last verified source is stale."
+    },
+    {
+      "eventId": "2026-jo-session-3",
+      "eventName": "2026 Junior Olympics Session 3",
+      "divisionId": "14u-girls-championship",
+      "divisionLabel": "14U Girls Championship",
+      "severity": "warning",
+      "code": "source_freshness",
+      "message": "Last verified source is stale."
+    },
+    {
+      "eventId": "2026-jo-session-3",
+      "eventName": "2026 Junior Olympics Session 3",
+      "divisionId": "16u-boys-championship",
+      "divisionLabel": "16U Boys Championship",
+      "severity": "warning",
+      "code": "source_freshness",
+      "message": "Last verified source is stale."
+    },
+    {
+      "eventId": "2026-jo-session-3",
+      "eventName": "2026 Junior Olympics Session 3",
+      "divisionId": "16u-girls-championship",
+      "divisionLabel": "16U Girls Championship",
+      "severity": "warning",
+      "code": "source_freshness",
+      "message": "Last verified source is stale."
+    },
+    {
+      "eventId": "2026-jo-session-3",
+      "eventName": "2026 Junior Olympics Session 3",
+      "divisionId": "18u-boys-championship",
+      "divisionLabel": "18U Boys Championship",
+      "severity": "warning",
+      "code": "source_freshness",
+      "message": "Last verified source is stale."
+    },
+    {
+      "eventId": "2026-jo-session-3",
+      "eventName": "2026 Junior Olympics Session 3",
+      "divisionId": "18u-girls-championship",
+      "divisionLabel": "18U Girls Championship",
       "severity": "warning",
       "code": "source_freshness",
       "message": "Last verified source is stale."
