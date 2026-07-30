@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RELEASE = "7.54.1";
+  const RELEASE = "7.54.7";
   const FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg";
   const $ = id => document.getElementById(id);
   const state = { registry: null, bundle: null, view: "games", filters: { age: "", gender: "", division: "", team: "", date: "", venue: "", status: "", search: "" } };
@@ -132,7 +132,7 @@
 
   function renderTeams(games){
     const teams=teamsForGames(games); if(!teams.length)return `<div class="tp-empty">No teams match the current filters.</div>`;
-    return `<div class="tp-teams">${teams.map(team=>`<article class="tp-team-card" style="--team-primary:${esc(team.primaryColor)};--team-secondary:${esc(team.secondaryColor)}"><div class="tp-team-card-head">${safeLogo(logoFor(team),team.name)}<div><h3>${esc(team.name)}</h3><p>${esc(team.divisionLabel)}${team.clubName?` · ${esc(team.clubName)}`:""}</p></div></div><div class="tp-team-stats"><div class="tp-team-stat"><span>Record</span><strong>${esc(team.record.display)}</strong></div><div class="tp-team-stat"><span>Finish</span><strong>${ordinal(team.finish)}</strong></div><div class="tp-team-stat"><span>WPI rank</span><strong>${team.rank?`#${esc(team.rank)}`:"—"}</strong></div></div><div class="tp-team-actions"><button type="button" data-team="${esc(team.participantId)}">View journey →</button>${profileFor(team)?`<a href="${esc(profileFor(team))}">Profile →</a>`:""}</div></article>`).join("")}</div>`;
+    return `<div class="tp-teams">${teams.map(team=>`<article class="tp-team-card" style="--team-primary:${esc(team.primaryColor)};--team-secondary:${esc(team.secondaryColor)}"><div class="tp-team-card-head">${safeLogo(logoFor(team),team.name)}<div><h3>${esc(team.name)}</h3><p>${esc(team.divisionLabel)}${team.clubName?` · ${esc(team.clubName)}`:""}</p></div></div><div class="tp-team-stats"><div class="tp-team-stat"><span>Record</span><strong>${esc(team.record.display)}</strong></div><div class="tp-team-stat"><span>Finish</span><strong>${esc(team.finishLabel||"Record only")}</strong></div><div class="tp-team-stat"><span>WPI rank</span><strong>${team.rank?`#${esc(team.rank)}`:"—"}</strong></div></div><div class="tp-team-actions"><button type="button" data-team="${esc(team.participantId)}">View journey →</button>${profileFor(team)?`<a href="${esc(profileFor(team))}">Profile →</a>`:""}</div></article>`).join("")}</div>`;
   }
 
   function renderPlacements(){
@@ -142,7 +142,7 @@
       let rows=(state.bundle.placements[division.id]||[]).filter(row=>!state.filters.team||row.participantId===state.filters.team);
       if(query)rows=rows.filter(row=>[row.name,row.clubName,division.label].join(" ").toLowerCase().includes(query));
       if(!rows.length)return "";
-      return `<section class="tp-placement-group"><h3>${esc(division.label)}</h3>${rows.map(row=>{const team=map.get(row.participantId)||row;const link=profileFor(team);return `<div class="tp-placement-row"><span class="tp-place">${ordinal(row.place)}</span>${safeLogo(logoFor(team),row.name)}<span class="tp-placement-name">${esc(row.name)}</span>${link?`<a href="${esc(link)}">Profile →</a>`:""}</div>`;}).join("")}</section>`;
+      return `<section class="tp-placement-group"><h3>${esc(division.label)}</h3>${rows.map(row=>{const team=map.get(row.participantId)||row;const link=profileFor(team);return `<div class="tp-placement-row"><span class="tp-place">${esc(row.placeLabel||ordinal(row.place))}</span>${safeLogo(logoFor(team),row.name)}<span class="tp-placement-name">${esc(row.name)}</span>${link?`<a href="${esc(link)}">Profile →</a>`:""}</div>`;}).join("")}</section>`;
     }).filter(Boolean);
     return groups.length?`<div class="tp-placement-groups">${groups.join("")}</div>`:`<div class="tp-empty">No placements match the current filters.</div>`;
   }
@@ -154,7 +154,7 @@
     const games=state.bundle.games.filter(game=>game.white?.participantId===id||game.dark?.participantId===id).sort((a,b)=>(a.dateIso||"").localeCompare(b.dateIso||"")||(a.timeLabel||"").localeCompare(b.timeLabel||""));
     const links=[team.teamPage?`<a href="${esc(team.teamPage)}">Team profile →</a>`:"",team.clubPage?`<a href="${esc(team.clubPage)}">Club profile →</a>`:""].filter(Boolean).join("");
     mount.hidden=false;
-    mount.innerHTML=`<div class="tp-journey-head"><div class="tp-journey-id">${safeLogo(logoFor(team),team.name).replace('<img ','<img class="tp-journey-logo" ')}<div><p class="tp-kicker">Team journey</p><h2>${esc(team.name)}</h2><p class="tp-journey-meta">${esc(team.divisionLabel)}${team.finish?` · ${ordinal(team.finish)} place`:""}${team.clubName?` · ${esc(team.clubName)}`:""}</p></div></div><div class="tp-record"><span>Tournament record</span><strong>${esc(team.record.display)}</strong></div></div><div class="tp-journey-links">${links}</div><div class="tp-timeline">${games.map(game=>{const result=resultFor(game,id);const opponent=game.white?.participantId===id?teamFor(game.dark):teamFor(game.white);return `<div class="tp-timeline-game ${result}"><div><span class="result">${result}</span><small>${esc(prettyDate(game.dateIso))} · ${esc(game.timeLabel||"Time TBD")}</small></div><div><strong>vs. ${esc(opponent?.name||"Opponent TBD")}</strong><small>${esc(game.stage||"Tournament game")} · ${esc(game.venue||"Venue TBD")}</small></div><span class="score">${esc(scoreLabel(game))}</span></div>`;}).join("")}</div>`;
+    mount.innerHTML=`<div class="tp-journey-head"><div class="tp-journey-id">${safeLogo(logoFor(team),team.name).replace('<img ','<img class="tp-journey-logo" ')}<div><p class="tp-kicker">Team journey</p><h2>${esc(team.name)}</h2><p class="tp-journey-meta">${esc(team.divisionLabel)}${team.finishLabel?` · ${esc(team.finishLabel)}`:""}${team.clubName?` · ${esc(team.clubName)}`:""}</p></div></div><div class="tp-record"><span>Tournament record</span><strong>${esc(team.record.display)}</strong></div></div><div class="tp-journey-links">${links}</div><div class="tp-timeline">${games.map(game=>{const result=resultFor(game,id);const opponent=game.white?.participantId===id?teamFor(game.dark):teamFor(game.white);return `<div class="tp-timeline-game ${result}"><div><span class="result">${result}</span><small>${esc(prettyDate(game.dateIso))} · ${esc(game.timeLabel||"Time TBD")}</small></div><div><strong>vs. ${esc(opponent?.name||"Opponent TBD")}</strong><small>${esc(game.stage||"Tournament game")} · ${esc(game.venue||"Venue TBD")}</small></div><span class="score">${esc(scoreLabel(game))}</span></div>`;}).join("")}</div>`;
   }
 
   function bindDynamic(){

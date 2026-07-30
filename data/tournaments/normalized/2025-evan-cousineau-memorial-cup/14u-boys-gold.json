@@ -1,0 +1,4612 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2025-evan-cousineau-memorial-cup",
+    "name": "2025 Evan Cousineau Memorial Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "14u-boys-gold",
+    "label": "14U Boys Gold",
+    "season": "2025",
+    "ageGroup": "14U",
+    "gender": "Boys",
+    "division": "Gold",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2025-ec-cup",
+    "gid": "14u-boys-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2025-evan-cousineau-memorial-cup/14u-boys-gold.csv",
+    "fetchedAt": "2026-07-29T21:10:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "af0f77232ee26145628db67fe70d39fdf2e2d18a6ea83a1d77c36e83d4668d33",
+    "rowCount": 50
+  },
+  "counts": {
+    "games": 49,
+    "finalGames": 49,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 98,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 98,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 98
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau02",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau02",
+      "sourceGameNumber": "14BAU02",
+      "sourceRow": 2,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L D1/D4",
+      "stageDisplay": "W/L D1/D4",
+      "stageMeta": {
+        "raw": "W/L D1/D4",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L D1/D4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L D1/D4"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2-ELITE",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": null,
+          "displayName": "ELITE",
+          "participantId": "tournament-team-2025-14u-boys-elite",
+          "teamId": null,
+          "clubId": "club-elite",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "23-PRIDE 13",
+          "kind": "team",
+          "seed": 23,
+          "sourceReference": null,
+          "displayName": "PRIDE 13",
+          "participantId": "tournament-team-2025-14u-boys-pride-13",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-elite",
+        "winnerTeamId": null,
+        "winnerName": "ELITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-pride-13",
+        "loserTeamId": null,
+        "loserName": "PRIDE 13"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau04",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau04",
+      "sourceGameNumber": "14BAU04",
+      "sourceRow": 3,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L D2/D3",
+      "stageDisplay": "W/L D2/D3",
+      "stageMeta": {
+        "raw": "W/L D2/D3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L D2/D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L D2/D3"
+      },
+      "venue": "EL TORO HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "11-680 WHITE",
+          "kind": "team",
+          "seed": 11,
+          "sourceReference": null,
+          "displayName": "680 WHITE",
+          "participantId": "tournament-team-2025-14u-boys-680-white",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "14-SD SHORES GOLD",
+          "kind": "team",
+          "seed": 14,
+          "sourceReference": null,
+          "displayName": "SD SHORES GOLD",
+          "participantId": "tournament-team-2025-14u-boys-sd-shores-gold",
+          "teamId": null,
+          "clubId": "club-san-diego-shores",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 15,
+        "whiteRaw": "9",
+        "darkRaw": "15",
+        "whiteRegulation": 9,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-sd-shores-gold",
+        "winnerTeamId": null,
+        "winnerName": "SD SHORES GOLD",
+        "loserParticipantId": "tournament-team-2025-14u-boys-680-white",
+        "loserTeamId": null,
+        "loserName": "680 WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS",
+          "raw": "EL TORO HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau11",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau11",
+      "sourceGameNumber": "14BAU11",
+      "sourceRow": 4,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-LAWPC",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2025-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3(13)-STANFORD BLACK",
+          "kind": "team",
+          "seed": 13,
+          "sourceReference": "A3(13)",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2025-14u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 8,
+        "whiteRaw": "19",
+        "darkRaw": "8",
+        "whiteRegulation": 19,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-lawpc",
+        "winnerTeamId": null,
+        "winnerName": "LAWPC",
+        "loserParticipantId": "tournament-team-2025-14u-boys-stanford-black",
+        "loserTeamId": null,
+        "loserName": "STANFORD BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau01",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau01",
+      "sourceGameNumber": "14BAU01",
+      "sourceRow": 5,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L C1/C4",
+      "stageDisplay": "W/L C1/C4",
+      "stageMeta": {
+        "raw": "W/L C1/C4",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L C1/C4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L C1/C4"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "5-TITANS",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": null,
+          "displayName": "TITANS",
+          "participantId": "tournament-team-2025-14u-boys-titans",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "20-DIABLO ALLIANCE BLACK",
+          "kind": "team",
+          "seed": 20,
+          "sourceReference": null,
+          "displayName": "DIABLO ALLIANCE BLACK",
+          "participantId": "tournament-team-2025-14u-boys-diablo-alliance-black",
+          "teamId": null,
+          "clubId": "club-diablo-alliance",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 2,
+        "whiteRaw": "15",
+        "darkRaw": "2",
+        "whiteRegulation": 15,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-titans",
+        "winnerTeamId": null,
+        "winnerName": "TITANS",
+        "loserParticipantId": "tournament-team-2025-14u-boys-diablo-alliance-black",
+        "loserTeamId": null,
+        "loserName": "DIABLO ALLIANCE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:50 AM",
+          "raw": "8:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau06",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau06",
+      "sourceGameNumber": "14BAU06",
+      "sourceRow": 6,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L E1/E4",
+      "stageDisplay": "W/L E1/E4",
+      "stageMeta": {
+        "raw": "W/L E1/E4",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L E1/E4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L E1/E4"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3-SHORE AQUATICS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": null,
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "22-TSUNAMI BLUE",
+          "kind": "team",
+          "seed": 22,
+          "sourceReference": null,
+          "displayName": "TSUNAMI BLUE",
+          "participantId": "tournament-team-2025-14u-boys-tsunami-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 5,
+        "whiteRaw": "13",
+        "darkRaw": "5",
+        "whiteRegulation": 13,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2025-14u-boys-tsunami-blue",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:50 AM",
+          "raw": "8:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau03",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau03",
+      "sourceGameNumber": "14BAU03",
+      "sourceRow": 7,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L C2/C3",
+      "stageDisplay": "W/L C2/C3",
+      "stageMeta": {
+        "raw": "W/L C2/C3",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L C2/C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L C2/C3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "8-PALOS VERDES BLACK",
+          "kind": "team",
+          "seed": 8,
+          "sourceReference": null,
+          "displayName": "PALOS VERDES BLACK",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "17-CCU BLUE",
+          "kind": "team",
+          "seed": 17,
+          "sourceReference": null,
+          "displayName": "CCU BLUE",
+          "participantId": "tournament-team-2025-14u-boys-ccu-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES BLACK",
+        "loserParticipantId": "tournament-team-2025-14u-boys-ccu-blue",
+        "loserTeamId": null,
+        "loserName": "CCU BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:40 AM",
+          "raw": "9:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau08",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau08",
+      "sourceGameNumber": "14BAU08",
+      "sourceRow": 8,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L E2/E3",
+      "stageDisplay": "W/L E2/E3",
+      "stageMeta": {
+        "raw": "W/L E2/E3",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L E2/E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L E2/E3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "10-ROSE BOWL RED",
+          "kind": "team",
+          "seed": 10,
+          "sourceReference": null,
+          "displayName": "ROSE BOWL RED",
+          "participantId": "tournament-team-2025-14u-boys-rose-bowl-red",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "15-MISSION WPC B",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": null,
+          "displayName": "MISSION WPC B",
+          "participantId": "tournament-team-2025-14u-boys-mission-wpc-b",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 9,
+        "whiteRaw": "3",
+        "darkRaw": "9",
+        "whiteRegulation": 3,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-mission-wpc-b",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-rose-bowl-red",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:40 AM",
+          "raw": "9:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau05",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau05",
+      "sourceGameNumber": "14BAU05",
+      "sourceRow": 9,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-LAWPC",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2025-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2(12)-680 BLUE",
+          "kind": "team",
+          "seed": 12,
+          "sourceReference": "A2(12)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2025-14u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7",
+        "whiteRegulation": 12,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-lawpc",
+        "winnerTeamId": null,
+        "winnerName": "LAWPC",
+        "loserParticipantId": "tournament-team-2025-14u-boys-680-blue",
+        "loserTeamId": null,
+        "loserName": "680 BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:30 AM",
+          "raw": "10:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau10",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau10",
+      "sourceGameNumber": "14BAU10",
+      "sourceRow": 10,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L F1/F4",
+      "stageDisplay": "W/L F1/F4",
+      "stageMeta": {
+        "raw": "W/L F1/F4",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L F1/F4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L F1/F4"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "6-BACK BAY",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": null,
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2025-14u-boys-back-bay",
+          "teamId": null,
+          "clubId": "club-back-bay",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "19-SOUTH COAST WHITE",
+          "kind": "team",
+          "seed": 19,
+          "sourceReference": null,
+          "displayName": "SOUTH COAST WHITE",
+          "participantId": "tournament-team-2025-14u-boys-south-coast-white",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 6,
+        "whiteRaw": "15",
+        "darkRaw": "6",
+        "whiteRegulation": 15,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-back-bay",
+        "winnerTeamId": null,
+        "winnerName": "BACK BAY",
+        "loserParticipantId": "tournament-team-2025-14u-boys-south-coast-white",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:30 AM",
+          "raw": "10:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau07",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau07",
+      "sourceGameNumber": "14BAU07",
+      "sourceRow": 11,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L B1/B4",
+      "stageDisplay": "W/L B1/B4",
+      "stageMeta": {
+        "raw": "W/L B1/B4",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L B1/B4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L B1/B4"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "4-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": null,
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "21-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": 21,
+          "sourceReference": null,
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2025-14u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8",
+        "whiteRegulation": 11,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:20 AM",
+          "raw": "11:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau12",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau12",
+      "sourceGameNumber": "14BAU12",
+      "sourceRow": 12,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L F2/F3",
+      "stageDisplay": "W/L F2/F3",
+      "stageMeta": {
+        "raw": "W/L F2/F3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L F2/F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L F2/F3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "7-FOOTHILL RED",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": null,
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2025-14u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "18-VANGUARD SILVER",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": null,
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 8,
+        "whiteRaw": "5",
+        "darkRaw": "8",
+        "whiteRegulation": 5,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "tournament-team-2025-14u-boys-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:20 AM",
+          "raw": "11:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau09",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau09",
+      "sourceGameNumber": "14BAU09",
+      "sourceRow": 13,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L B2/B3",
+      "stageDisplay": "W/L B2/B3",
+      "stageMeta": {
+        "raw": "W/L B2/B3",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L B2/B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L B2/B3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "9-PAC ORANGE",
+          "kind": "team",
+          "seed": 9,
+          "sourceReference": null,
+          "displayName": "PAC ORANGE",
+          "participantId": "tournament-team-2025-14u-boys-pac-orange",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "16-NBWP WHITE",
+          "kind": "team",
+          "seed": 16,
+          "sourceReference": null,
+          "displayName": "NBWP WHITE",
+          "participantId": "tournament-team-2025-14u-boys-nbwp-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 21,
+        "whiteRaw": "7",
+        "darkRaw": "21",
+        "whiteRegulation": 7,
+        "darkRegulation": 21,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-nbwp-white",
+        "winnerTeamId": null,
+        "winnerName": "NBWP WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-pac-orange",
+        "loserTeamId": null,
+        "loserName": "PAC ORANGE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:10 PM",
+          "raw": "12:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau14",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau14",
+      "sourceGameNumber": "14BAU14",
+      "sourceRow": 14,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thD",
+      "stageDisplay": "3rd/4thD",
+      "stageMeta": {
+        "raw": "3rd/4thD",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thD",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thD"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#2-PRIDE 13",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#2",
+          "displayName": "PRIDE 13",
+          "participantId": "tournament-team-2025-14u-boys-pride-13",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#4-680 WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#4",
+          "displayName": "680 WHITE",
+          "participantId": "tournament-team-2025-14u-boys-680-white",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-pride-13",
+        "winnerTeamId": null,
+        "winnerName": "PRIDE 13",
+        "loserParticipantId": "tournament-team-2025-14u-boys-680-white",
+        "loserTeamId": null,
+        "loserName": "680 WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:10 PM",
+          "raw": "12:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau16",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau16",
+      "sourceGameNumber": "14BAU16",
+      "sourceRow": 15,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndD",
+      "stageDisplay": "1st/2ndD",
+      "stageMeta": {
+        "raw": "1st/2ndD",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndD",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndD"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#2-ELITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#2",
+          "displayName": "ELITE",
+          "participantId": "tournament-team-2025-14u-boys-elite",
+          "teamId": null,
+          "clubId": "club-elite",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#4-SD SHORES GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#4",
+          "displayName": "SD SHORES GOLD",
+          "participantId": "tournament-team-2025-14u-boys-sd-shores-gold",
+          "teamId": null,
+          "clubId": "club-san-diego-shores",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 5,
+        "whiteRaw": "13",
+        "darkRaw": "5",
+        "whiteRegulation": 13,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-elite",
+        "winnerTeamId": null,
+        "winnerName": "ELITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-sd-shores-gold",
+        "loserTeamId": null,
+        "loserName": "SD SHORES GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau17",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau17",
+      "sourceGameNumber": "14BAU17",
+      "sourceRow": 16,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2(12)-680 BLUE",
+          "kind": "team",
+          "seed": 12,
+          "sourceReference": "A2(12)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2025-14u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3(13)-STANFORD BLACK",
+          "kind": "team",
+          "seed": 13,
+          "sourceReference": "A3(13)",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2025-14u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-680-blue",
+        "winnerTeamId": null,
+        "winnerName": "680 BLUE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-stanford-black",
+        "loserTeamId": null,
+        "loserName": "STANFORD BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau13",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau13",
+      "sourceGameNumber": "14BAU13",
+      "sourceRow": 17,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thC",
+      "stageDisplay": "3rd/4thC",
+      "stageMeta": {
+        "raw": "3rd/4thC",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thC",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thC"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#1-DIABLO ALLIANCE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#1",
+          "displayName": "DIABLO ALLIANCE BLACK",
+          "participantId": "tournament-team-2025-14u-boys-diablo-alliance-black",
+          "teamId": null,
+          "clubId": "club-diablo-alliance",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#3-CCU BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#3",
+          "displayName": "CCU BLUE",
+          "participantId": "tournament-team-2025-14u-boys-ccu-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 15,
+        "whiteRaw": "7",
+        "darkRaw": "15",
+        "whiteRegulation": 7,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-ccu-blue",
+        "winnerTeamId": null,
+        "winnerName": "CCU BLUE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-diablo-alliance-black",
+        "loserTeamId": null,
+        "loserName": "DIABLO ALLIANCE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:50 PM",
+          "raw": "1:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau18",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau18",
+      "sourceGameNumber": "14BAU18",
+      "sourceRow": 18,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4th E",
+      "stageDisplay": "3rd/4th E",
+      "stageMeta": {
+        "raw": "3rd/4th E",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4th E",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4th E"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#6-TSUNAMI BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#6",
+          "displayName": "TSUNAMI BLUE",
+          "participantId": "tournament-team-2025-14u-boys-tsunami-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L#8-ROSE BOWL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#8",
+          "displayName": "ROSE BOWL RED",
+          "participantId": "tournament-team-2025-14u-boys-rose-bowl-red",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 2,
+        "whiteRaw": "10",
+        "darkRaw": "2",
+        "whiteRegulation": 10,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-tsunami-blue",
+        "winnerTeamId": null,
+        "winnerName": "TSUNAMI BLUE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-rose-bowl-red",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:50 PM",
+          "raw": "1:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau15",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau15",
+      "sourceGameNumber": "14BAU15",
+      "sourceRow": 19,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndC",
+      "stageDisplay": "1st/2ndC",
+      "stageMeta": {
+        "raw": "1st/2ndC",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndC",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndC"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#1-TITANS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#1",
+          "displayName": "TITANS",
+          "participantId": "tournament-team-2025-14u-boys-titans",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#3-PALOS VERDES BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#3",
+          "displayName": "PALOS VERDES BLACK",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 12,
+        "whiteRaw": "5",
+        "darkRaw": "12",
+        "whiteRegulation": 5,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES BLACK",
+        "loserParticipantId": "tournament-team-2025-14u-boys-titans",
+        "loserTeamId": null,
+        "loserName": "TITANS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:40 PM",
+          "raw": "2:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau20",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau20",
+      "sourceGameNumber": "14BAU20",
+      "sourceRow": 20,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2nd E",
+      "stageDisplay": "1st/2nd E",
+      "stageMeta": {
+        "raw": "1st/2nd E",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2nd E",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2nd E"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#6-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#6",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#8-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#8",
+          "displayName": "MISSION WPC B",
+          "participantId": "tournament-team-2025-14u-boys-mission-wpc-b",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6",
+        "whiteRegulation": 14,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2025-14u-boys-mission-wpc-b",
+        "loserTeamId": null,
+        "loserName": "MISSION WPC B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:40 PM",
+          "raw": "2:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau19",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau19",
+      "sourceGameNumber": "14BAU19",
+      "sourceRow": 21,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thB",
+      "stageDisplay": "3rd/4thB",
+      "stageMeta": {
+        "raw": "3rd/4thB",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thB",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thB"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#7-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#7",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2025-14u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#9-PAC ORANGE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#9",
+          "displayName": "PAC ORANGE",
+          "participantId": "tournament-team-2025-14u-boys-pac-orange",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 7,
+        "whiteRaw": "14",
+        "darkRaw": "7",
+        "whiteRegulation": 14,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2025-14u-boys-pac-orange",
+        "loserTeamId": null,
+        "loserName": "PAC ORANGE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau22",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau22",
+      "sourceGameNumber": "14BAU22",
+      "sourceRow": 22,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4th F",
+      "stageDisplay": "3rd/4th F",
+      "stageMeta": {
+        "raw": "3rd/4th F",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4th F",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4th F"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#10-SOUTH COAST WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#10",
+          "displayName": "SOUTH COAST WHITE",
+          "participantId": "tournament-team-2025-14u-boys-south-coast-white",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#12-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#12",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2025-14u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 10,
+        "whiteRaw": "4",
+        "darkRaw": "10",
+        "whiteRegulation": 4,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-foothill-red",
+        "winnerTeamId": null,
+        "winnerName": "FOOTHILL RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-south-coast-white",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau21",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau21",
+      "sourceGameNumber": "14BAU21",
+      "sourceRow": 23,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndB",
+      "stageDisplay": "1st/2ndB",
+      "stageMeta": {
+        "raw": "1st/2ndB",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndB",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndB"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#7-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#7",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#9-NBWP WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#9",
+          "displayName": "NBWP WHITE",
+          "participantId": "tournament-team-2025-14u-boys-nbwp-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 10,
+        "whiteRaw": "15",
+        "darkRaw": "10",
+        "whiteRegulation": 15,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-nbwp-white",
+        "loserTeamId": null,
+        "loserName": "NBWP WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:20 PM",
+          "raw": "4:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau24",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau24",
+      "sourceGameNumber": "14BAU24",
+      "sourceRow": 24,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2nd F",
+      "stageDisplay": "1st/2nd F",
+      "stageMeta": {
+        "raw": "1st/2nd F",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2nd F",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2nd F"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#10-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#10",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2025-14u-boys-back-bay",
+          "teamId": null,
+          "clubId": "club-back-bay",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#12-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#12",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 15,
+        "whiteRaw": "9",
+        "darkRaw": "15",
+        "whiteRegulation": 9,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "tournament-team-2025-14u-boys-back-bay",
+        "loserTeamId": null,
+        "loserName": "BACK BAY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:20 PM",
+          "raw": "4:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau23",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau23",
+      "sourceGameNumber": "14BAU23",
+      "sourceRow": 25,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "5:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket 1A,1C",
+      "stageDisplay": "G bracket 1A,1C",
+      "stageMeta": {
+        "raw": "G bracket 1A,1C",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket 1A,1C",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket 1A,1C"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-LAWPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2025-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "G2(1stC)-PALOS VERDES BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stC)",
+          "displayName": "PALOS VERDES BLACK",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 13,
+        "whiteRaw": "6",
+        "darkRaw": "13",
+        "whiteRegulation": 6,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES BLACK",
+        "loserParticipantId": "tournament-team-2025-14u-boys-lawpc",
+        "loserTeamId": null,
+        "loserName": "LAWPC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:10 PM",
+          "raw": "5:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau25",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau25",
+      "sourceGameNumber": "14BAU25",
+      "sourceRow": 26,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "5:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket 1D/1E",
+      "stageDisplay": "H bracket 1D/1E",
+      "stageMeta": {
+        "raw": "H bracket 1D/1E",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket 1D/1E",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket 1D/1E"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(1stD)-ELITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(1stD)",
+          "displayName": "ELITE",
+          "participantId": "tournament-team-2025-14u-boys-elite",
+          "teamId": null,
+          "clubId": "club-elite",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "H2(1stE)-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(1stE)",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 19,
+        "whiteRaw": "2",
+        "darkRaw": "19",
+        "whiteRegulation": 2,
+        "darkRegulation": 19,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2025-14u-boys-elite",
+        "loserTeamId": null,
+        "loserName": "ELITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:10 PM",
+          "raw": "5:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau32",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau32",
+      "sourceGameNumber": "14BAU32",
+      "sourceRow": 27,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "19th-23rd",
+      "stageDisplay": "19th-23rd",
+      "stageMeta": {
+        "raw": "19th-23rd",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "19th-23rd",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "19th-23rd"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M1(4thF)-SOUTH COAST WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M1(4thF)",
+          "displayName": "SOUTH COAST WHITE",
+          "participantId": "tournament-team-2025-14u-boys-south-coast-white",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "M5(4thD)-680 WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M5(4thD)",
+          "displayName": "680 WHITE",
+          "participantId": "tournament-team-2025-14u-boys-680-white",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 10,
+        "whiteRaw": "9",
+        "darkRaw": "10",
+        "whiteRegulation": 9,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-680-white",
+        "winnerTeamId": null,
+        "winnerName": "680 WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-south-coast-white",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau35",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau35",
+      "sourceGameNumber": "14BAU35",
+      "sourceRow": 28,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "19th-23rd",
+      "stageDisplay": "19th-23rd",
+      "stageMeta": {
+        "raw": "19th-23rd",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "19th-23rd",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "19th-23rd"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M2(4thC)-DIABLO ALLIANCE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M2(4thC)",
+          "displayName": "DIABLO ALLIANCE BLACK",
+          "participantId": "tournament-team-2025-14u-boys-diablo-alliance-black",
+          "teamId": null,
+          "clubId": "club-diablo-alliance",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "M4(4thE)-ROSE BOWL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M4(4thE)",
+          "displayName": "ROSE BOWL RED",
+          "participantId": "tournament-team-2025-14u-boys-rose-bowl-red",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10",
+        "whiteRegulation": 7,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-rose-bowl-red",
+        "winnerTeamId": null,
+        "winnerName": "ROSE BOWL RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-diablo-alliance-black",
+        "loserTeamId": null,
+        "loserName": "DIABLO ALLIANCE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau26",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau26",
+      "sourceGameNumber": "14BAU26",
+      "sourceRow": 29,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket I1,I3",
+      "stageDisplay": "I bracket I1,I3",
+      "stageMeta": {
+        "raw": "I bracket I1,I3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket I1,I3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket I1,I3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1(2ndA)-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1(2ndA)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2025-14u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I3(2ndC)-TITANS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3(2ndC)",
+          "displayName": "TITANS",
+          "participantId": "tournament-team-2025-14u-boys-titans",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 14,
+        "whiteRaw": "9",
+        "darkRaw": "14",
+        "whiteRegulation": 9,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-titans",
+        "winnerTeamId": null,
+        "winnerName": "TITANS",
+        "loserParticipantId": "tournament-team-2025-14u-boys-680-blue",
+        "loserTeamId": null,
+        "loserName": "680 BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:50 AM",
+          "raw": "8:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau27",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau27",
+      "sourceGameNumber": "14BAU27",
+      "sourceRow": 30,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket L1,L3",
+      "stageDisplay": "L bracket L1,L3",
+      "stageMeta": {
+        "raw": "L bracket L1,L3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket L1,L3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket L1,L3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1(3rdD)-PRIDE 13",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1(3rdD)",
+          "displayName": "PRIDE 13",
+          "participantId": "tournament-team-2025-14u-boys-pride-13",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L3(3rdF)-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3(3rdF)",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2025-14u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-pride-13",
+        "winnerTeamId": null,
+        "winnerName": "PRIDE 13",
+        "loserParticipantId": "tournament-team-2025-14u-boys-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:50 AM",
+          "raw": "8:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau28",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau28",
+      "sourceGameNumber": "14BAU28",
+      "sourceRow": 31,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G1,G3",
+      "stageDisplay": "G bracket G1,G3",
+      "stageMeta": {
+        "raw": "G bracket G1,G3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G1,G3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G1,G3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-LAWPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2025-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "G2(1stB)-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11",
+        "whiteRegulation": 9,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-lawpc",
+        "loserTeamId": null,
+        "loserName": "LAWPC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:40 AM",
+          "raw": "9:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau29",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau29",
+      "sourceGameNumber": "14BAU29",
+      "sourceRow": 32,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket J1,J3",
+      "stageDisplay": "J bracket J1,J3",
+      "stageMeta": {
+        "raw": "J bracket J1,J3",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket J1,J3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket J1,J3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(2ndD)-SHORES GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(2ndD)",
+          "displayName": "SHORES GOLD",
+          "participantId": "tournament-team-2025-14u-boys-shores-gold",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "J3(2ndF)-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(2ndF)",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2025-14u-boys-back-bay",
+          "teamId": null,
+          "clubId": "club-back-bay",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 16,
+        "whiteRaw": "4",
+        "darkRaw": "16",
+        "whiteRegulation": 4,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-back-bay",
+        "winnerTeamId": null,
+        "winnerName": "BACK BAY",
+        "loserParticipantId": "tournament-team-2025-14u-boys-shores-gold",
+        "loserTeamId": null,
+        "loserName": "SHORES GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:40 AM",
+          "raw": "9:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau42",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau42",
+      "sourceGameNumber": "14BAU42",
+      "sourceRow": 33,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "19th-23rd",
+      "stageDisplay": "19th-23rd",
+      "stageMeta": {
+        "raw": "19th-23rd",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "19th-23rd",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "19th-23rd"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M1(4thF)-SOUTH COAST WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M1(4thF)",
+          "displayName": "SOUTH COAST WHITE",
+          "participantId": "tournament-team-2025-14u-boys-south-coast-white",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "M3(4thB)-PAC ORANGE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M3(4thB)",
+          "displayName": "PAC ORANGE",
+          "participantId": "tournament-team-2025-14u-boys-pac-orange",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 1,
+        "whiteRaw": "5",
+        "darkRaw": "1",
+        "whiteRegulation": 5,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-south-coast-white",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-pac-orange",
+        "loserTeamId": null,
+        "loserName": "PAC ORANGE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau30",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau30",
+      "sourceGameNumber": "14BAU30",
+      "sourceRow": 34,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket H1,H3",
+      "stageDisplay": "H bracket H1,H3",
+      "stageMeta": {
+        "raw": "H bracket H1,H3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket H1,H3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket H1,H3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(1stD)-ELITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(1stD)",
+          "displayName": "ELITE",
+          "participantId": "tournament-team-2025-14u-boys-elite",
+          "teamId": null,
+          "clubId": "club-elite",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "H3(1stF)-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(1stF)",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8",
+        "whiteRegulation": 9,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-elite",
+        "winnerTeamId": null,
+        "winnerName": "ELITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-vanguard-silver",
+        "loserTeamId": null,
+        "loserName": "VANGUARD SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:30 AM",
+          "raw": "10:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau31",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau31",
+      "sourceGameNumber": "14BAU31",
+      "sourceRow": 35,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket K1,K3",
+      "stageDisplay": "K bracket K1,K3",
+      "stageMeta": {
+        "raw": "K bracket K1,K3",
+        "detailRaw": "7.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket K1,K3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket K1,K3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(3rdA)-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(3rdA)",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2025-14u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3(3rdC)-CCU BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(3rdC)",
+          "displayName": "CCU BLUE",
+          "participantId": "tournament-team-2025-14u-boys-ccu-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7.3,
+        "dark": 7.4,
+        "whiteRaw": "7.3",
+        "darkRaw": "7.4",
+        "whiteRegulation": 7,
+        "darkRegulation": 7,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 7,
+        "darkRegulation": 7,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-ccu-blue",
+        "winnerTeamId": null,
+        "winnerName": "CCU BLUE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-stanford-black",
+        "loserTeamId": null,
+        "loserName": "STANFORD BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:30 AM",
+          "raw": "10:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau45",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau45",
+      "sourceGameNumber": "14BAU45",
+      "sourceRow": 36,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "19th-23rd",
+      "stageDisplay": "19th-23rd",
+      "stageMeta": {
+        "raw": "19th-23rd",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "19th-23rd",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "19th-23rd"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M2(4thC)-DIABLO ALLIANCE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M2(4thC)",
+          "displayName": "DIABLO ALLIANCE BLACK",
+          "participantId": "tournament-team-2025-14u-boys-diablo-alliance-black",
+          "teamId": null,
+          "clubId": "club-diablo-alliance",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "M5(4thD)-680 WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M5(4thD)",
+          "displayName": "680 WHITE",
+          "participantId": "tournament-team-2025-14u-boys-680-white",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 11,
+        "whiteRaw": "10",
+        "darkRaw": "11",
+        "whiteRegulation": 10,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-680-white",
+        "winnerTeamId": null,
+        "winnerName": "680 WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-diablo-alliance-black",
+        "loserTeamId": null,
+        "loserName": "DIABLO ALLIANCE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau33",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau33",
+      "sourceGameNumber": "14BAU33",
+      "sourceRow": 37,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket I2,I3",
+      "stageDisplay": "I bracket I2,I3",
+      "stageMeta": {
+        "raw": "I bracket I2,I3",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket I2,I3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket I2,I3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I2(2ndB)-NBWP WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2(2ndB)",
+          "displayName": "NBWP WHITE",
+          "participantId": "tournament-team-2025-14u-boys-nbwp-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "I3(2ndC)-TITANS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3(2ndC)",
+          "displayName": "TITANS",
+          "participantId": "tournament-team-2025-14u-boys-titans",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7",
+        "whiteRegulation": 11,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-nbwp-white",
+        "winnerTeamId": null,
+        "winnerName": "NBWP WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-titans",
+        "loserTeamId": null,
+        "loserName": "TITANS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:20 AM",
+          "raw": "11:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau34",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau34",
+      "sourceGameNumber": "14BAU34",
+      "sourceRow": 38,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket L2,L3",
+      "stageDisplay": "L bracket L2,L3",
+      "stageMeta": {
+        "raw": "L bracket L2,L3",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket L2,L3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket L2,L3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L2(3rdE)-TSUNAMI BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2(3rdE)",
+          "displayName": "TSUNAMI BLUE",
+          "participantId": "tournament-team-2025-14u-boys-tsunami-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L3(3rdF)-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3(3rdF)",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2025-14u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 4,
+        "whiteRaw": "7",
+        "darkRaw": "4",
+        "whiteRegulation": 7,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-tsunami-blue",
+        "winnerTeamId": null,
+        "winnerName": "TSUNAMI BLUE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:20 AM",
+          "raw": "11:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau36",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau36",
+      "sourceGameNumber": "14BAU36",
+      "sourceRow": 39,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G2,G3",
+      "stageDisplay": "G bracket G2,G3",
+      "stageMeta": {
+        "raw": "G bracket G2,G3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G2,G3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G2,G3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2(1stB)-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G2(1stC)-PALOS VERDES BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stC)",
+          "displayName": "PALOS VERDES BLACK",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 17,
+        "whiteRaw": "8",
+        "darkRaw": "17",
+        "whiteRegulation": 8,
+        "darkRegulation": 17,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES BLACK",
+        "loserParticipantId": "tournament-team-2025-14u-boys-san-clemente-red",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:10 PM",
+          "raw": "12:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau37",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau37",
+      "sourceGameNumber": "14BAU37",
+      "sourceRow": 40,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket J2,J3",
+      "stageDisplay": "J bracket J2,J3",
+      "stageMeta": {
+        "raw": "J bracket J2,J3",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket J2,J3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket J2,J3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J2(2ndE)-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(2ndE)",
+          "displayName": "MISSION WPC B",
+          "participantId": "tournament-team-2025-14u-boys-mission-wpc-b",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J3(2ndF)-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(2ndF)",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2025-14u-boys-back-bay",
+          "teamId": null,
+          "clubId": "club-back-bay",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 10,
+        "whiteRaw": "13",
+        "darkRaw": "10",
+        "whiteRegulation": 13,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-mission-wpc-b",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-back-bay",
+        "loserTeamId": null,
+        "loserName": "BACK BAY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:10 PM",
+          "raw": "12:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau38",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau38",
+      "sourceGameNumber": "14BAU38",
+      "sourceRow": 41,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket H2,H3",
+      "stageDisplay": "H bracket H2,H3",
+      "stageMeta": {
+        "raw": "H bracket H2,H3",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket H2,H3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket H2,H3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H2(1stE)-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(1stE)",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "H3(1stF)-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(1stF)",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 1,
+        "whiteRaw": "13",
+        "darkRaw": "1",
+        "whiteRegulation": 13,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2025-14u-boys-vanguard-silver",
+        "loserTeamId": null,
+        "loserName": "VANGUARD SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau39",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau39",
+      "sourceGameNumber": "14BAU39",
+      "sourceRow": 42,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket K2,K3",
+      "stageDisplay": "K bracket K2,K3",
+      "stageMeta": {
+        "raw": "K bracket K2,K3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket K2,K3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket K2,K3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K2(3rdB)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(3rdB)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2025-14u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3(3rdC)-CCU BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(3rdC)",
+          "displayName": "CCU BLUE",
+          "participantId": "tournament-team-2025-14u-boys-ccu-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 4,
+        "whiteRaw": "5",
+        "darkRaw": "4",
+        "whiteRegulation": 5,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2025-14u-boys-ccu-blue",
+        "loserTeamId": null,
+        "loserName": "CCU BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau40",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau40",
+      "sourceGameNumber": "14BAU40",
+      "sourceRow": 43,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket I1,2",
+      "stageDisplay": "I bracket I1,2",
+      "stageMeta": {
+        "raw": "I bracket I1,2",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket I1,2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket I1,2"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1(2ndA)-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1(2ndA)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2025-14u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I2(2ndB)-NBWP WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2(2ndB)",
+          "displayName": "NBWP WHITE",
+          "participantId": "tournament-team-2025-14u-boys-nbwp-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 14,
+        "whiteRaw": "4",
+        "darkRaw": "14",
+        "whiteRegulation": 4,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-nbwp-white",
+        "winnerTeamId": null,
+        "winnerName": "NBWP WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-680-blue",
+        "loserTeamId": null,
+        "loserName": "680 BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:50 PM",
+          "raw": "1:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau41",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau41",
+      "sourceGameNumber": "14BAU41",
+      "sourceRow": 44,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket L1,L2",
+      "stageDisplay": "L bracket L1,L2",
+      "stageMeta": {
+        "raw": "L bracket L1,L2",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket L1,L2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket L1,L2"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1(3rdD)-PRIDE 13",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1(3rdD)",
+          "displayName": "PRIDE 13",
+          "participantId": "tournament-team-2025-14u-boys-pride-13",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L2(3rdE)-TSUNAMI BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2(3rdE)",
+          "displayName": "TSUNAMI BLUE",
+          "participantId": "tournament-team-2025-14u-boys-tsunami-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 11,
+        "whiteRaw": "2",
+        "darkRaw": "11",
+        "whiteRegulation": 2,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-tsunami-blue",
+        "winnerTeamId": null,
+        "winnerName": "TSUNAMI BLUE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-pride-13",
+        "loserTeamId": null,
+        "loserName": "PRIDE 13"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:50 PM",
+          "raw": "1:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau43",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau43",
+      "sourceGameNumber": "14BAU43",
+      "sourceRow": 45,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th 3G/3H",
+      "stageDisplay": "5th 3G/3H",
+      "stageMeta": {
+        "raw": "5th 3G/3H",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5th 3G/3H",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "5th 3G/3H"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "P1(3rdG)-LAWPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "P1(3rdG)",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2025-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "P2(3rdH)-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "P2(3rdH)",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-lawpc",
+        "winnerTeamId": null,
+        "winnerName": "LAWPC",
+        "loserParticipantId": "tournament-team-2025-14u-boys-vanguard-silver",
+        "loserTeamId": null,
+        "loserName": "VANGUARD SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:40 PM",
+          "raw": "2:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau44",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau44",
+      "sourceGameNumber": "14BAU44",
+      "sourceRow": 46,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket J1,J2",
+      "stageDisplay": "J bracket J1,J2",
+      "stageMeta": {
+        "raw": "J bracket J1,J2",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket J1,J2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket J1,J2"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(2ndD)-SHORES GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(2ndD)",
+          "displayName": "SHORES GOLD",
+          "participantId": "tournament-team-2025-14u-boys-shores-gold",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "J2(2ndE)-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(2ndE)",
+          "displayName": "MISSION WPC B",
+          "participantId": "tournament-team-2025-14u-boys-mission-wpc-b",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 12,
+        "whiteRaw": "6",
+        "darkRaw": "12",
+        "whiteRegulation": 6,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-mission-wpc-b",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-shores-gold",
+        "loserTeamId": null,
+        "loserName": "SHORES GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:40 PM",
+          "raw": "2:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau48",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau48",
+      "sourceGameNumber": "14BAU48",
+      "sourceRow": 47,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "19th-23rd",
+      "stageDisplay": "19th-23rd",
+      "stageMeta": {
+        "raw": "19th-23rd",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "19th-23rd",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "19th-23rd"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M3(4thB)-PAC ORANGE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M3(4thB)",
+          "displayName": "PAC ORANGE",
+          "participantId": "tournament-team-2025-14u-boys-pac-orange",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "M4(4thE)-ROSE BOWL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M4(4thE)",
+          "displayName": "ROSE BOWL RED",
+          "participantId": "tournament-team-2025-14u-boys-rose-bowl-red",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11",
+        "whiteRegulation": 7,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-rose-bowl-red",
+        "winnerTeamId": null,
+        "winnerName": "ROSE BOWL RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-pac-orange",
+        "loserTeamId": null,
+        "loserName": "PAC ORANGE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau46",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau46",
+      "sourceGameNumber": "14BAU46",
+      "sourceRow": 48,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd 2G/2H",
+      "stageDisplay": "3rd 2G/2H",
+      "stageMeta": {
+        "raw": "3rd 2G/2H",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd 2G/2H",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd 2G/2H"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N1(2ndG)-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N1(2ndG)",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "N2(2ndH)-ELITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N2(2ndH)",
+          "displayName": "ELITE",
+          "participantId": "tournament-team-2025-14u-boys-elite",
+          "teamId": null,
+          "clubId": "club-elite",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 10,
+        "whiteRaw": "11",
+        "darkRaw": "10",
+        "whiteRegulation": 11,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-elite",
+        "loserTeamId": null,
+        "loserName": "ELITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau47",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau47",
+      "sourceGameNumber": "14BAU47",
+      "sourceRow": 49,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket K1,K2",
+      "stageDisplay": "K bracket K1,K2",
+      "stageMeta": {
+        "raw": "K bracket K1,K2",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket K1,K2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket K1,K2"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(3rdA)-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(3rdA)",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2025-14u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K2(3rdB)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(3rdB)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2025-14u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 8,
+        "whiteRaw": "3",
+        "darkRaw": "8",
+        "whiteRegulation": 3,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2025-14u-boys-stanford-black",
+        "loserTeamId": null,
+        "loserName": "STANFORD BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-gold-14bau49",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-gold",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau49",
+      "sourceGameNumber": "14BAU49",
+      "sourceRow": 50,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st 1G/1H",
+      "stageDisplay": "1st 1G/1H",
+      "stageMeta": {
+        "raw": "1st 1G/1H",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st 1G/1H",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st 1G/1H"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "O1(1stG)-PALOS VERDES BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O1(1stG)",
+          "displayName": "PALOS VERDES BLACK",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "O2(1stH)-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O2(1stH)",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-palos-verdes-black",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES BLACK",
+        "loserParticipantId": "tournament-team-2025-14u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:20 PM",
+          "raw": "4:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    }
+  ]
+}

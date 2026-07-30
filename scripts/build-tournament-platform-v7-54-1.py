@@ -15,13 +15,14 @@ ARCHIVE_DIR = ROOT / "data/tournaments/archive"
 CLUBS_PATH = ROOT / "clubs.json"
 RANKINGS_PATH = ROOT / "rankings.json"
 ALIASES_PATH = ROOT / "data/identity/aliases.json"
-RELEASE = "7.54.1"
-BUILD_TIMESTAMP = "2026-07-28T22:39:00-07:00"
+RELEASE = "7.54.7"
+BUILD_TIMESTAMP = "2026-07-29T21:10:00-07:00"
 FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg"
-MIGRATED_EVENT_IDS = ["2026-quiksilver-cup", "2026-boys-futures-super-finals"]
+MIGRATED_EVENT_IDS = ["2026-quiksilver-cup", "2026-boys-futures-super-finals", "2025-evan-cousineau-memorial-cup"]
 PLACEMENT_PATHS = {
     "2026-quiksilver-cup": ROOT / "data/tournaments/quiksilver-cup-2026.json",
     "2026-boys-futures-super-finals": ARCHIVE_DIR / "2026-boys-futures-super-finals.json",
+    "2025-evan-cousineau-memorial-cup": ARCHIVE_DIR / "2025-evan-cousineau-memorial-cup.json",
 }
 
 
@@ -86,6 +87,8 @@ def placement_rows(event_id: str) -> tuple[dict[tuple[str, str], dict], dict[str
             name = clean_route_name(placement.get("name"))
             row = {
                 "place": placement.get("place"),
+                "placeLabel": placement.get("placeLabel"),
+                "subdivision": placement.get("subdivision"),
                 "name": name,
                 "participantId": placement.get("participantId"),
                 "teamId": placement.get("teamId"),
@@ -354,7 +357,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
                     "clubId": canonical.get("clubId") or row.get("clubId"),
                 }
             placements_by_division[division_id].append(row)
-        placements_by_division[division_id].sort(key=lambda item: (item.get("place") or 999, item.get("name") or ""))
+        placements_by_division[division_id].sort(key=lambda item: ({"Platinum": 0, "Gold": 1}.get(item.get("subdivision"), 2), item.get("place") or 999, item.get("name") or ""))
 
     placement_by_participant = {
         row.get("participantId"): row
@@ -381,7 +384,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
                 "rank": ranked.get("postRank"),
                 "rating": ranked.get("postCPI"),
                 "finish": placement.get("place"),
-                "finishLabel": str(placement.get("place")) if placement.get("place") else None,
+                "finishLabel": placement.get("placeLabel") or (str(placement.get("place")) if placement.get("place") else None),
                 "record": {
                     "wins": state["wins"],
                     "losses": state["losses"],
@@ -394,8 +397,10 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
 
     start_date, end_date = iso_range(all_games)
     all_games.sort(key=lambda game: (game.get("dateIso") or "", game.get("timeLabel") or "", game.get("divisionLabel") or "", game.get("gameNumber") or ""))
-    official_source = event.get("divisions", [{}])[0].get("sourceUrl")
-    adapter_prefix = "quiksilver" if event_id == "2026-quiksilver-cup" else "boys-futures-super-finals"
+    official_source = event.get("officialSourceUrl") or event.get("divisions", [{}])[0].get("sourceUrl")
+    if official_source and not str(official_source).startswith("http"):
+        official_source = None
+    adapter_prefix = slug(event_id)
     return {
         "schemaVersion": 1,
         "release": RELEASE,
@@ -404,7 +409,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
             "id": event_id,
             "name": event.get("name"),
             "shortName": event.get("shortName"),
-            "season": "2026",
+            "season": (event.get("divisions") or [{}])[0].get("season"),
             "kind": event.get("kind"),
             "status": "complete",
             "operationsMode": "archive",
@@ -416,7 +421,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
             "logo": "assets/logos/usa-water-polo.webp",
             "officialSourceUrl": official_source,
             "rankingEvidenceEnabled": False,
-            "sourcePolicy": "Banked normalized results; official source remains linked for verification.",
+            "sourcePolicy": event.get("sourcePolicy") or "Banked normalized results; official source remains linked for verification.",
         },
         "summary": {
             "divisionCount": len(division_rows),
@@ -433,7 +438,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
             "filters": ["ageGroup", "gender", "division", "team", "date", "venue", "status", "search"],
             "teamProfiles": True,
             "clubProfiles": True,
-            "officialSourceLinks": True,
+            "officialSourceLinks": bool(official_source and str(official_source).startswith("http")),
             "liveRefresh": False,
         },
         "sourceAdapters": [
@@ -445,10 +450,10 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
                 "readMode": "repository",
             },
             {
-                "id": f"{adapter_prefix}-official-sheets",
-                "type": "google_sheets_csv",
+                "id": f"{adapter_prefix}-source",
+                "type": "uploaded_csv" if (event.get("divisions", [{}])[0].get("sourceType") == "uploaded_csv") else "google_sheets_csv",
                 "role": "provenance",
-                "readMode": "official_source",
+                "readMode": "repository" if (event.get("divisions", [{}])[0].get("sourceType") == "uploaded_csv") else "official_source",
                 "parser": "results_table_v1",
             },
         ],
@@ -471,7 +476,7 @@ def build_registry(source: dict, bundles: dict[str, dict]) -> dict:
                 "id": event.get("id"),
                 "name": event.get("name"),
                 "shortName": event.get("shortName"),
-                "season": "2026",
+                "season": (event.get("divisions") or [{}])[0].get("season"),
                 "kind": event.get("kind"),
                 "status": event.get("eventStatus"),
                 "operationsMode": event.get("operationsMode"),
@@ -489,7 +494,7 @@ def build_registry(source: dict, bundles: dict[str, dict]) -> dict:
         "schemaVersion": 1,
         "release": RELEASE,
         "generatedAt": BUILD_TIMESTAMP,
-        "description": "Shared WPI tournament platform registry. Quiksilver Cup and Boys Futures Super Finals are migrated; other events remain on their proven viewers until deliberately migrated.",
+        "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, and the 2025 Evan Cousineau Memorial Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
         "platformPath": "tournament.html",
         "schemaPaths": {
             "event": "tournaments/schema/tournament-event.schema.json",
@@ -504,6 +509,7 @@ def build_registry(source: dict, bundles: dict[str, dict]) -> dict:
             "normalized_json": {"mode": "repository", "purpose": "Primary banked WPI datasets"},
             "google_sheets_csv": {"mode": "official_source", "purpose": "Live or provenance source adapter"},
             "repository_csv": {"mode": "repository", "purpose": "Static CSV import and historical fallback"},
+            "uploaded_csv": {"mode": "repository", "purpose": "User-provided verified tournament results"},
         },
         "events": events,
     }

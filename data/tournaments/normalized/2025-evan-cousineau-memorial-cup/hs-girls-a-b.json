@@ -1,0 +1,1536 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2025-evan-cousineau-memorial-cup",
+    "name": "2025 Evan Cousineau Memorial Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "hs-girls-a-b",
+    "label": "HS Girls A & B",
+    "season": "2025",
+    "ageGroup": "HS",
+    "gender": "Girls",
+    "division": "A & B",
+    "divisionTier": "HS",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2025-ec-cup",
+    "gid": "hs-girls-a-b",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2025-evan-cousineau-memorial-cup/hs-girls-a-b.csv",
+    "fetchedAt": "2026-07-29T21:10:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "539d496fe9f57a63e05a18ddb101afe79b37a2651475fe2f9ca1364f42eebe2a",
+    "rowCount": 17
+  },
+  "counts": {
+    "games": 16,
+    "finalGames": 16,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 32,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 32,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 32
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab01",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab01",
+      "sourceGameNumber": "HSGAB01",
+      "sourceRow": 2,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A2/A4 HSGA 1st-4th",
+      "stageDisplay": "bracket, A2/A4 HSGA 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, A2/A4 HSGA 1st-4th",
+        "detailRaw": "22",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, A2/A4 HSGA 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A2/A4 HSGA 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SET",
+          "participantId": "tournament-team-2025-hs-girls-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A4-CHARGERS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "CHARGERS",
+          "participantId": "tournament-team-2025-hs-girls-chargers",
+          "teamId": null,
+          "clubId": "club-chargers",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 22,
+        "dark": 2,
+        "whiteRaw": "22",
+        "darkRaw": "2",
+        "whiteRegulation": 22,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-set",
+        "winnerTeamId": null,
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2025-hs-girls-chargers",
+        "loserTeamId": null,
+        "loserName": "CHARGERS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab03",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab03",
+      "sourceGameNumber": "HSGAB03",
+      "sourceRow": 3,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B2/B4 HSG B 1st-4th",
+      "stageDisplay": "bracket, B2/B4 HSG B 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, B2/B4 HSG B 1st-4th",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, B2/B4 HSG B 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B2/B4 HSG B 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-MISSION JV",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "MISSION JV",
+          "participantId": "tournament-team-2025-hs-girls-mission-jv",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B4-SFV 16",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "SFV 16",
+          "participantId": "tournament-team-2025-hs-girls-sfv-16",
+          "teamId": null,
+          "clubId": "club-sfv",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-mission-jv",
+        "winnerTeamId": null,
+        "winnerName": "MISSION JV",
+        "loserParticipantId": "tournament-team-2025-hs-girls-sfv-16",
+        "loserTeamId": null,
+        "loserName": "SFV 16"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab02",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab02",
+      "sourceGameNumber": "HSGAB02",
+      "sourceRow": 4,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A2/A3 HSGA 1st-4th",
+      "stageDisplay": "bracket, A2/A3 HSGA 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, A2/A3 HSGA 1st-4th",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, A2/A3 HSGA 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A2/A3 HSGA 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SET",
+          "participantId": "tournament-team-2025-hs-girls-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-SOUTH COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "SOUTH COAST",
+          "participantId": "tournament-team-2025-hs-girls-south-coast",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 9,
+        "whiteRaw": "11",
+        "darkRaw": "9",
+        "whiteRegulation": 11,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-set",
+        "winnerTeamId": null,
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2025-hs-girls-south-coast",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab04",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab04",
+      "sourceGameNumber": "HSGAB04",
+      "sourceRow": 5,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A1/A4 HSGA 1st-4th",
+      "stageDisplay": "bracket, A1/A4 HSGA 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, A1/A4 HSGA 1st-4th",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, A1/A4 HSGA 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A1/A4 HSGA 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2025-hs-girls-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A4-CHARGERS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "CHARGERS",
+          "participantId": "tournament-team-2025-hs-girls-chargers",
+          "teamId": null,
+          "clubId": "club-chargers",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 0,
+        "whiteRaw": "13",
+        "darkRaw": "0",
+        "whiteRegulation": 13,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-channel-islands-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED GOLD",
+        "loserParticipantId": "tournament-team-2025-hs-girls-chargers",
+        "loserTeamId": null,
+        "loserName": "CHARGERS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab05",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab05",
+      "sourceGameNumber": "HSGAB05",
+      "sourceRow": 6,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B1/B4 HSG B 1st-4th",
+      "stageDisplay": "bracket, B1/B4 HSG B 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, B1/B4 HSG B 1st-4th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, B1/B4 HSG B 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B1/B4 HSG B 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-LA JOLLA UNITED 16 GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "LA JOLLA UNITED 16 GOLD",
+          "participantId": "tournament-team-2025-hs-girls-la-jolla-united-16-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B4-SFV 16",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "SFV 16",
+          "participantId": "tournament-team-2025-hs-girls-sfv-16",
+          "teamId": null,
+          "clubId": "club-sfv",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-la-jolla-united-16-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED 16 GOLD",
+        "loserParticipantId": "tournament-team-2025-hs-girls-sfv-16",
+        "loserTeamId": null,
+        "loserName": "SFV 16"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab07",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab07",
+      "sourceGameNumber": "HSGAB07",
+      "sourceRow": 7,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B2/B3 HSG B 1st-4th",
+      "stageDisplay": "bracket, B2/B3 HSG B 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, B2/B3 HSG B 1st-4th",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, B2/B3 HSG B 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B2/B3 HSG B 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-MISSION JV",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "MISSION JV",
+          "participantId": "tournament-team-2025-hs-girls-mission-jv",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-TSUNAMI 16",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "TSUNAMI 16",
+          "participantId": "tournament-team-2025-hs-girls-tsunami-16",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 12,
+        "whiteRaw": "7",
+        "darkRaw": "12",
+        "whiteRegulation": 7,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-tsunami-16",
+        "winnerTeamId": null,
+        "winnerName": "TSUNAMI 16",
+        "loserParticipantId": "tournament-team-2025-hs-girls-mission-jv",
+        "loserTeamId": null,
+        "loserName": "MISSION JV"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab06",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab06",
+      "sourceGameNumber": "HSGAB06",
+      "sourceRow": 8,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A1/A3 HSGA 1st-4th",
+      "stageDisplay": "bracket, A1/A3 HSGA 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, A1/A3 HSGA 1st-4th",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, A1/A3 HSGA 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A1/A3 HSGA 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2025-hs-girls-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-SOUTH COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "SOUTH COAST",
+          "participantId": "tournament-team-2025-hs-girls-south-coast",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-channel-islands-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED GOLD",
+        "loserParticipantId": "tournament-team-2025-hs-girls-south-coast",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab08",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab08",
+      "sourceGameNumber": "HSGAB08",
+      "sourceRow": 9,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B1/B3 HSG B 1st-4th",
+      "stageDisplay": "bracket, B1/B3 HSG B 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, B1/B3 HSG B 1st-4th",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, B1/B3 HSG B 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B1/B3 HSG B 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-LA JOLLA UNITED 16 GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "LA JOLLA UNITED 16 GOLD",
+          "participantId": "tournament-team-2025-hs-girls-la-jolla-united-16-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-TSUNAMI 16",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "TSUNAMI 16",
+          "participantId": "tournament-team-2025-hs-girls-tsunami-16",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 14,
+        "whiteRaw": "4",
+        "darkRaw": "14",
+        "whiteRegulation": 4,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-tsunami-16",
+        "winnerTeamId": null,
+        "winnerName": "TSUNAMI 16",
+        "loserParticipantId": "tournament-team-2025-hs-girls-la-jolla-united-16-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED 16 GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab09",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab09",
+      "sourceGameNumber": "HSGAB09",
+      "sourceRow": 10,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A3/A4 HSGA 1st-4th",
+      "stageDisplay": "bracket, A3/A4 HSGA 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, A3/A4 HSGA 1st-4th",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, A3/A4 HSGA 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A3/A4 HSGA 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A3-SOUTH COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "SOUTH COAST",
+          "participantId": "tournament-team-2025-hs-girls-south-coast",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A4-CHARGERS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "CHARGERS",
+          "participantId": "tournament-team-2025-hs-girls-chargers",
+          "teamId": null,
+          "clubId": "club-chargers",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 1,
+        "whiteRaw": "17",
+        "darkRaw": "1",
+        "whiteRegulation": 17,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-south-coast",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST",
+        "loserParticipantId": "tournament-team-2025-hs-girls-chargers",
+        "loserTeamId": null,
+        "loserName": "CHARGERS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab10",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab10",
+      "sourceGameNumber": "HSGAB10",
+      "sourceRow": 11,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B3/B4 HSG B 1st-4th",
+      "stageDisplay": "bracket, B3/B4 HSG B 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, B3/B4 HSG B 1st-4th",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, B3/B4 HSG B 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B3/B4 HSG B 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B3-TSUNAMI 16",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "TSUNAMI 16",
+          "participantId": "tournament-team-2025-hs-girls-tsunami-16",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B4-SFV 16",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "SFV 16",
+          "participantId": "tournament-team-2025-hs-girls-sfv-16",
+          "teamId": null,
+          "clubId": "club-sfv",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5",
+        "whiteRegulation": 10,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-tsunami-16",
+        "winnerTeamId": null,
+        "winnerName": "TSUNAMI 16",
+        "loserParticipantId": "tournament-team-2025-hs-girls-sfv-16",
+        "loserTeamId": null,
+        "loserName": "SFV 16"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab11",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab11",
+      "sourceGameNumber": "HSGAB11",
+      "sourceRow": 12,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B1/B2 HSG B 1st-4th",
+      "stageDisplay": "bracket, B1/B2 HSG B 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, B1/B2 HSG B 1st-4th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, B1/B2 HSG B 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B1/B2 HSG B 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-LA JOLLA UNITED 16 GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "LA JOLLA UNITED 16 GOLD",
+          "participantId": "tournament-team-2025-hs-girls-la-jolla-united-16-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B2-MISSION JV",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "MISSION JV",
+          "participantId": "tournament-team-2025-hs-girls-mission-jv",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 18,
+        "whiteRaw": "8",
+        "darkRaw": "18",
+        "whiteRegulation": 8,
+        "darkRegulation": 18,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-mission-jv",
+        "winnerTeamId": null,
+        "winnerName": "MISSION JV",
+        "loserParticipantId": "tournament-team-2025-hs-girls-la-jolla-united-16-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED 16 GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab12",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab12",
+      "sourceGameNumber": "HSGAB12",
+      "sourceRow": 13,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A1/A2 HSGA 1st-4th",
+      "stageDisplay": "bracket, A1/A2 HSGA 1st-4th",
+      "stageMeta": {
+        "raw": "bracket, A1/A2 HSGA 1st-4th",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "bracket, A1/A2 HSGA 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A1/A2 HSGA 1st-4th"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2025-hs-girls-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A2-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SET",
+          "participantId": "tournament-team-2025-hs-girls-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 9,
+        "whiteRaw": "13",
+        "darkRaw": "9",
+        "whiteRegulation": 13,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-channel-islands-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED GOLD",
+        "loserParticipantId": "tournament-team-2025-hs-girls-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab13",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab13",
+      "sourceGameNumber": "HSGAB13",
+      "sourceRow": 14,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "cross",
+      "stageDisplay": "cross",
+      "stageMeta": {
+        "raw": "cross",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "cross",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "cross"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "4thA-CHARGERS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thA",
+          "displayName": "CHARGERS",
+          "participantId": "tournament-team-2025-hs-girls-chargers",
+          "teamId": null,
+          "clubId": "club-chargers",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "4thB-SFV 16",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thB",
+          "displayName": "SFV 16",
+          "participantId": "tournament-team-2025-hs-girls-sfv-16",
+          "teamId": null,
+          "clubId": "club-sfv",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 7,
+        "whiteRaw": "4",
+        "darkRaw": "7",
+        "whiteRegulation": 4,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-sfv-16",
+        "winnerTeamId": null,
+        "winnerName": "SFV 16",
+        "loserParticipantId": "tournament-team-2025-hs-girls-chargers",
+        "loserTeamId": null,
+        "loserName": "CHARGERS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab14",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab14",
+      "sourceGameNumber": "HSGAB14",
+      "sourceRow": 15,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "cross",
+      "stageDisplay": "cross",
+      "stageMeta": {
+        "raw": "cross",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "cross",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "cross"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-SOUTH COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "SOUTH COAST",
+          "participantId": "tournament-team-2025-hs-girls-south-coast",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "3rdB-LA JOLLA UNITED 16 GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "LA JOLLA UNITED 16 GOLD",
+          "participantId": "tournament-team-2025-hs-girls-la-jolla-united-16-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 2,
+        "whiteRaw": "10",
+        "darkRaw": "2",
+        "whiteRegulation": 10,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-south-coast",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST",
+        "loserParticipantId": "tournament-team-2025-hs-girls-la-jolla-united-16-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED 16 GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab15",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab15",
+      "sourceGameNumber": "HSGAB15",
+      "sourceRow": 16,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "cross",
+      "stageDisplay": "cross",
+      "stageMeta": {
+        "raw": "cross",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "cross",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "cross"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndA-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "SET",
+          "participantId": "tournament-team-2025-hs-girls-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "2ndB-MISSION JV",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndB",
+          "displayName": "MISSION JV",
+          "participantId": "tournament-team-2025-hs-girls-mission-jv",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-set",
+        "winnerTeamId": null,
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2025-hs-girls-mission-jv",
+        "loserTeamId": null,
+        "loserName": "MISSION JV"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-hs-girls-a-b-hsgab16",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls-a-b",
+      "season": "2025",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "A & B",
+      "divisionTier": "HS",
+      "sourceGameId": "HSGab16",
+      "sourceGameNumber": "HSGAB16",
+      "sourceRow": 17,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "cross",
+      "stageDisplay": "cross",
+      "stageMeta": {
+        "raw": "cross",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "cross",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "cross"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2025-hs-girls-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stB-TSUNAMI 16",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stB",
+          "displayName": "TSUNAMI 16",
+          "participantId": "tournament-team-2025-hs-girls-tsunami-16",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 5,
+        "whiteRaw": "14",
+        "darkRaw": "5",
+        "whiteRegulation": 14,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-hs-girls-channel-islands-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED GOLD",
+        "loserParticipantId": "tournament-team-2025-hs-girls-tsunami-16",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI 16"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    }
+  ]
+}

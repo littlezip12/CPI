@@ -9,10 +9,10 @@ hub=load('data/tournaments/public-hub.json')
 html=(ROOT/'tournaments.html').read_text(encoding='utf-8')
 js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 css=(ROOT/'css/tournament-hub-v7-54-4.css').read_text(encoding='utf-8')
-if site.get('version')!='7.54.6': errors.append('site version must be 7.54.6')
-if site.get('tournamentPublicHubRelease')!='7.54.6': errors.append('tournamentPublicHubRelease must be 7.54.6')
+if site.get('version')!='7.54.7': errors.append('site version must be 7.54.7')
+if site.get('tournamentPublicHubRelease')!='7.54.7': errors.append('tournamentPublicHubRelease must be 7.54.7')
 if site.get('tournamentArchiveExperienceRelease')!='7.54.4': errors.append('tournamentArchiveExperienceRelease must preserve 7.54.4')
-for token in ['Your team. Your tournament.','class="next-tournament-action" id="nextTournamentAction" href="tournaments/jo-texas/"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.6']:
+for token in ['Your team. Your tournament.','class="next-tournament-action" id="nextTournamentAction" href="tournaments/jo-texas/"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.7']:
     if token not in html: errors.append(f'tournaments.html missing {token}')
 if 'id="nextTournamentHeading"' in html: errors.append('redundant Next Tournament heading remains above the card')
 for forbidden in ['Tournament control room','Tournament intelligence','Open control room','Open source health','Open performance','Open review','Data review','Accuracy hold']:
@@ -30,10 +30,11 @@ if 'next.publicPath' not in js: errors.append('hero button does not prioritize a
 if hub.get('years')!=[2026,2025,2024]: errors.append('archive years must be 2026, 2025, 2024')
 events=hub.get('events',[])
 ids=[e.get('id') for e in events]
-if ids!=['2026-boys-futures-super-finals','2026-quiksilver-cup','2026-junior-olympics']:
-    errors.append(f'2026 public season order is incorrect: {ids}')
-orders=[e.get('seasonOrder') for e in events]
-if orders!=sorted(orders) or events[-1].get('id')!='2026-junior-olympics': errors.append('Junior Olympics must be last in water polo season order')
+if ids!=['2026-boys-futures-super-finals','2026-quiksilver-cup','2026-junior-olympics','2025-evan-cousineau-memorial-cup']:
+    errors.append(f'public archive event order is incorrect: {ids}')
+events_2026=[e for e in events if e.get('year')==2026]; orders=[e.get('seasonOrder') for e in events_2026]
+if orders!=sorted(orders) or events_2026[-1].get('id')!='2026-junior-olympics': errors.append('Junior Olympics must be last in the 2026 water polo season order')
+if not any(e.get('id')=='2025-evan-cousineau-memorial-cup' and e.get('seasonOrder')==10 for e in events): errors.append('Evan Cousineau must be first in the 2025 archive')
 if hub.get('featuredEventId')!='2026-junior-olympics': errors.append('latest results button must feature the most recent completed tournament')
 if any(e.get('id')=='2026-girls-us-club-championships' for e in events): errors.append('accuracy-hold event must not appear in public archive')
 for rel in ['tournament-operations.html','tournament-source-health.html','jo-performance.html','ranking-review.html','post-jo-review.html','tournament-evidence.html']:

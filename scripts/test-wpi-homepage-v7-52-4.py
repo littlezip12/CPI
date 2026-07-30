@@ -49,8 +49,8 @@ for token in ['params.get("region")', 'params.get("search")', 'regionFilter.valu
 for token in ['.wpi-hero-visual', '.wpi-ranking-grid', '.wpi-results-grid', '.wpi-california-map', '.region-point.east-bay']:
     if token not in css: errors.append(f'homepage CSS missing {token}')
 
-if site.get('version') not in {'7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6'}: errors.append('site release must preserve the 7.52.4 homepage or a later 7.52.x data release')
-if site.get('homepageRelease') not in {'7.52.4','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6'}: errors.append('homepageRelease must preserve the original homepage data experience or the 7.53.3 clarity release')
+if site.get('version') not in {'7.52.4','7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7'}: errors.append('site release must preserve the 7.52.4 homepage or a later 7.52.x data release')
+if site.get('homepageRelease') not in {'7.52.4','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7'}: errors.append('homepageRelease must preserve the original homepage data experience or the 7.53.3 clarity release')
 if site.get('rankingDataRelease') != '7.52.13': errors.append('ranking data must include the 7.52.13 identity correction')
 if len(rankings) != 724: errors.append(f'expected 724 ranked teams, found {len(rankings)}')
 if len(clubs) != 182: errors.append(f'expected 182 clubs, found {len(clubs)}')

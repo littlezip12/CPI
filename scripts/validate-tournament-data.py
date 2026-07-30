@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
 EXPECTED_RELEASE = "7.45.1"
-ALLOWED_REGISTRY_RELEASES = {"7.45.1", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6"}
+ALLOWED_REGISTRY_RELEASES = {"7.45.1", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7"}
 ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
 ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
 errors: list[str] = []
@@ -45,10 +45,10 @@ if registry.get("schemaVersion") != 1:
 
 all_events = registry.get("events", [])
 all_divisions = [(event, division) for event in all_events for division in event.get("divisions", [])]
-if len(all_events) != 6:
-    fail(f"Tournament registry should contain 6 events, found {len(all_events)}")
-if len(all_divisions) != 56:
-    fail(f"Tournament registry should contain 56 divisions, found {len(all_divisions)}")
+if len(all_events) != 7:
+    fail(f"Tournament registry should contain 7 events, found {len(all_events)}")
+if len(all_divisions) != 71:
+    fail(f"Tournament registry should contain 71 divisions, found {len(all_divisions)}")
 if sum(bool(event.get("syncEnabled")) for event in all_events) != 3:
     fail("Exactly three active JO sessions should be enabled for automatic synchronization")
 if sum(len(event.get("divisions", [])) for event in all_events if event.get("syncEnabled")) != 31:
@@ -79,8 +79,13 @@ for event in all_events:
         if division.get("parser") not in ALLOWED_PARSERS:
             fail(f"Unsupported parser for {event_id}/{division_id}: {division.get('parser')}")
         if not division.get("spreadsheetId") or division.get("gid") is None:
-            fail(f"Missing Google Sheet source for {event_id}/{division_id}")
-        if division.get("sourceStrategy") == "sheet_name_primary" and division.get("sheetName"):
+            fail(f"Missing tournament source identifier for {event_id}/{division_id}")
+        if division.get("sourceType") == "uploaded_csv":
+            source_path = ROOT / str(division.get("sourceUrl") or "")
+            if not source_path.exists():
+                fail(f"Uploaded CSV source is missing for {event_id}/{division_id}")
+            source_key = str(division.get("gid"))
+        elif division.get("sourceStrategy") == "sheet_name_primary" and division.get("sheetName"):
             expected_prefix = f"https://docs.google.com/spreadsheets/d/{division.get('spreadsheetId')}/"
             if not str(division.get("sourceUrl") or "").startswith(expected_prefix):
                 fail(f"Source URL mismatch for {event_id}/{division_id}")
@@ -94,7 +99,7 @@ for event in all_events:
         if pair in seen_source_pairs:
             fail(f"Duplicate source tab within {event_id}: {pair[1]} / {pair[2]}")
         seen_source_pairs.add(pair)
-        if division.get("ageGroup") not in {"10U", "12U", "14U", "16U", "18U"}:
+        if division.get("ageGroup") not in {"10U", "12U", "14U", "16U", "18U", "HS"}:
             fail(f"Invalid age group for {event_id}/{division_id}: {division.get('ageGroup')}")
         if division.get("gender") not in {"Boys", "Girls", "Coed"}:
             fail(f"Invalid gender for {event_id}/{division_id}: {division.get('gender')}")
@@ -136,7 +141,7 @@ for rel in ["tournaments/jo-boys/app.js", "tournaments/jo-girls/app.js", "tourna
             if (sheet_id, gid) not in registry_pairs:
                 fail(f"Source registry is missing {rel} tab {sheet_id} / {gid}")
 
-if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6"}:
+if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7"}:
     fail(f"Normalized manifest release must be {EXPECTED_RELEASE} or 7.54.5")
 datasets = manifest.get("datasets", [])
 if not datasets:

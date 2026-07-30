@@ -1,0 +1,1729 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2025-evan-cousineau-memorial-cup",
+    "name": "2025 Evan Cousineau Memorial Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "10u-coed-platinum-gold",
+    "label": "10U Coed Platinum & Gold",
+    "season": "2025",
+    "ageGroup": "10U",
+    "gender": "Coed",
+    "division": "Platinum & Gold",
+    "divisionTier": "Mixed",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2025-ec-cup",
+    "gid": "10u-coed-platinum-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2025-evan-cousineau-memorial-cup/10u-coed-platinum-gold.csv",
+    "fetchedAt": "2026-07-29T21:10:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "0b6f106ab78b63068ec8e797a999cdb1689931af973fcc1f3de3f3c0fa863720",
+    "rowCount": 19
+  },
+  "counts": {
+    "games": 18,
+    "finalGames": 18,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 36,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 36,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 36
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau01",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau01",
+      "sourceGameNumber": "10CPTAU01",
+      "sourceRow": 2,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "TSUNAMI",
+          "participantId": "tournament-team-2025-10u-coed-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C3-ORANGE COUNTY WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "ORANGE COUNTY WPC",
+          "participantId": "tournament-team-2025-10u-coed-orange-county-wpc",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 14,
+        "whiteRaw": "3",
+        "darkRaw": "14",
+        "whiteRegulation": 3,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-orange-county-wpc",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC",
+        "loserParticipantId": "tournament-team-2025-10u-coed-tsunami",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau02",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau02",
+      "sourceGameNumber": "10CPTAU02",
+      "sourceRow": 3,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-NORTH IRVINE BLACK COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "NORTH IRVINE BLACK COED",
+          "participantId": "tournament-team-2025-10u-coed-north-irvine-black-coed",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-LAMORINDA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "LAMORINDA",
+          "participantId": "tournament-team-2025-10u-coed-lamorinda",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 11,
+        "whiteRaw": "17",
+        "darkRaw": "11",
+        "whiteRegulation": 17,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-north-irvine-black-coed",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE BLACK COED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-lamorinda",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau03",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau03",
+      "sourceGameNumber": "10CPTAU03",
+      "sourceRow": 4,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2025-10u-coed-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-LONG BEACH VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "LONG BEACH VIKING",
+          "participantId": "tournament-team-2025-10u-coed-long-beach-viking",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 14,
+        "whiteRaw": "8",
+        "darkRaw": "14",
+        "whiteRegulation": 8,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-long-beach-viking",
+        "winnerTeamId": null,
+        "winnerName": "LONG BEACH VIKING",
+        "loserParticipantId": "tournament-team-2025-10u-coed-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau04",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau04",
+      "sourceGameNumber": "10CPTAU04",
+      "sourceRow": 5,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2025-10u-coed-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C3-ORANGE COUNTY WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "ORANGE COUNTY WPC",
+          "participantId": "tournament-team-2025-10u-coed-orange-county-wpc",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 18,
+        "whiteRaw": "9",
+        "darkRaw": "18",
+        "whiteRegulation": 9,
+        "darkRegulation": 18,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-orange-county-wpc",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC",
+        "loserParticipantId": "tournament-team-2025-10u-coed-la-jolla-united",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau05",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau05",
+      "sourceGameNumber": "10CPTAU05",
+      "sourceRow": 6,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-NORTH IRVINE BLACK COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "NORTH IRVINE BLACK COED",
+          "participantId": "tournament-team-2025-10u-coed-north-irvine-black-coed",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B2-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2025-10u-coed-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 2,
+        "whiteRaw": "17",
+        "darkRaw": "2",
+        "whiteRegulation": 17,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-north-irvine-black-coed",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE BLACK COED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-680-red",
+        "loserTeamId": null,
+        "loserName": "680 RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau06",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau06",
+      "sourceGameNumber": "10CPTAU06",
+      "sourceRow": 7,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-NBWP BLUE COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "NBWP BLUE COED",
+          "participantId": "tournament-team-2025-10u-coed-nbwp-blue-coed",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3-LONG BEACH VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "LONG BEACH VIKING",
+          "participantId": "tournament-team-2025-10u-coed-long-beach-viking",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 2,
+        "whiteRaw": "13",
+        "darkRaw": "2",
+        "whiteRegulation": 13,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-nbwp-blue-coed",
+        "winnerTeamId": null,
+        "winnerName": "NBWP BLUE COED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-long-beach-viking",
+        "loserTeamId": null,
+        "loserName": "LONG BEACH VIKING"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau07",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau07",
+      "sourceGameNumber": "10CPTAU07",
+      "sourceRow": 8,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2025-10u-coed-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C2-TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "TSUNAMI",
+          "participantId": "tournament-team-2025-10u-coed-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 2,
+        "whiteRaw": "14",
+        "darkRaw": "2",
+        "whiteRegulation": 14,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-la-jolla-united",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-tsunami",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau08",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau08",
+      "sourceGameNumber": "10CPTAU08",
+      "sourceRow": 9,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "13.1",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2025-10u-coed-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-LAMORINDA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "LAMORINDA",
+          "participantId": "tournament-team-2025-10u-coed-lamorinda",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 13.1,
+        "dark": 13.3,
+        "whiteRaw": "13.1",
+        "darkRaw": "13.3",
+        "whiteRegulation": 13,
+        "darkRegulation": 13,
+        "whiteShootout": 1,
+        "darkShootout": 3
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 13,
+        "darkRegulation": 13,
+        "whiteShootout": 1,
+        "darkShootout": 3
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-lamorinda",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA",
+        "loserParticipantId": "tournament-team-2025-10u-coed-680-red",
+        "loserTeamId": null,
+        "loserName": "680 RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau09",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau09",
+      "sourceGameNumber": "10CPTAU09",
+      "sourceRow": 10,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-NBWP BLUE COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "NBWP BLUE COED",
+          "participantId": "tournament-team-2025-10u-coed-nbwp-blue-coed",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2025-10u-coed-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 2,
+        "whiteRaw": "13",
+        "darkRaw": "2",
+        "whiteRegulation": 13,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-nbwp-blue-coed",
+        "winnerTeamId": null,
+        "winnerName": "NBWP BLUE COED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau10",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau10",
+      "sourceGameNumber": "10CPTAU10",
+      "sourceRow": 11,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket (7th-9th)",
+      "stageDisplay": "D bracket (7th-9th)",
+      "stageMeta": {
+        "raw": "D bracket (7th-9th)",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket (7th-9th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket (7th-9th)"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1(3rdA)-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1(3rdA)",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2025-10u-coed-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3(3rdC)-TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3(3rdC)",
+          "displayName": "TSUNAMI",
+          "participantId": "tournament-team-2025-10u-coed-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 9,
+        "whiteRaw": "16",
+        "darkRaw": "9",
+        "whiteRegulation": 16,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-south-coast-red",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST RED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-tsunami",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau11",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau11",
+      "sourceGameNumber": "10CPTAU11",
+      "sourceRow": 12,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th)",
+      "stageDisplay": "E bracket (4th-6th)",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th)",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th)"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1(2ndA)-LONG BEACH VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1(2ndA)",
+          "displayName": "LONG BEACH VIKING",
+          "participantId": "tournament-team-2025-10u-coed-long-beach-viking",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "E3(2ndC)-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3(2ndC)",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2025-10u-coed-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7",
+        "whiteRegulation": 12,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-long-beach-viking",
+        "winnerTeamId": null,
+        "winnerName": "LONG BEACH VIKING",
+        "loserParticipantId": "tournament-team-2025-10u-coed-la-jolla-united",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau12",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau12",
+      "sourceGameNumber": "10CPTAU12",
+      "sourceRow": 13,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd)",
+      "stageDisplay": "F bracket (1st-3rd)",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd)",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd)"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1(1stA)-NBWP BLUE COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1(1stA)",
+          "displayName": "NBWP BLUE COED",
+          "participantId": "tournament-team-2025-10u-coed-nbwp-blue-coed",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F3(1stC)-ORANGE COUNTY WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3(1stC)",
+          "displayName": "ORANGE COUNTY WPC",
+          "participantId": "tournament-team-2025-10u-coed-orange-county-wpc",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-nbwp-blue-coed",
+        "winnerTeamId": null,
+        "winnerName": "NBWP BLUE COED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-orange-county-wpc",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau13",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau13",
+      "sourceGameNumber": "10CPTAU13",
+      "sourceRow": 14,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th)",
+      "stageDisplay": "E bracket (4th-6th)",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th)",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E2(2ndB)-LAMORINDA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2(2ndB)",
+          "displayName": "LAMORINDA",
+          "participantId": "tournament-team-2025-10u-coed-lamorinda",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3(2ndC)-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3(2ndC)",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2025-10u-coed-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 3,
+        "whiteRaw": "9",
+        "darkRaw": "3",
+        "whiteRegulation": 9,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-lamorinda",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA",
+        "loserParticipantId": "tournament-team-2025-10u-coed-la-jolla-united",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau15",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau15",
+      "sourceGameNumber": "10CPTAU15",
+      "sourceRow": 15,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd)",
+      "stageDisplay": "F bracket (1st-3rd)",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd)",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd)"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F2(1stB)-NORTH IRVINE BLACK COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2(1stB)",
+          "displayName": "NORTH IRVINE BLACK COED",
+          "participantId": "tournament-team-2025-10u-coed-north-irvine-black-coed",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "F3(1stC)-ORANGE COUNTY WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3(1stC)",
+          "displayName": "ORANGE COUNTY WPC",
+          "participantId": "tournament-team-2025-10u-coed-orange-county-wpc",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10",
+        "whiteRegulation": 8,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-orange-county-wpc",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC",
+        "loserParticipantId": "tournament-team-2025-10u-coed-north-irvine-black-coed",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE BLACK COED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau14",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau14",
+      "sourceGameNumber": "10CPTAU14",
+      "sourceRow": 16,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket (7th-9th)",
+      "stageDisplay": "D bracket (7th-9th)",
+      "stageMeta": {
+        "raw": "D bracket (7th-9th)",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket (7th-9th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket (7th-9th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2(3rdB)-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2(3rdB)",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2025-10u-coed-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3(3rdC)-TSUNAMI",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3(3rdC)",
+          "displayName": "TSUNAMI",
+          "participantId": "tournament-team-2025-10u-coed-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 1,
+        "whiteRaw": "17",
+        "darkRaw": "1",
+        "whiteRegulation": 17,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-680-red",
+        "winnerTeamId": null,
+        "winnerName": "680 RED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-tsunami",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau17",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau17",
+      "sourceGameNumber": "10CPTAU17",
+      "sourceRow": 17,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th)",
+      "stageDisplay": "E bracket (4th-6th)",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th)",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th)"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1(2ndA)-LONG BEACH VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1(2ndA)",
+          "displayName": "LONG BEACH VIKING",
+          "participantId": "tournament-team-2025-10u-coed-long-beach-viking",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "E2(2ndB)-LAMORINDA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2(2ndB)",
+          "displayName": "LAMORINDA",
+          "participantId": "tournament-team-2025-10u-coed-lamorinda",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 13,
+        "whiteRaw": "10",
+        "darkRaw": "13",
+        "whiteRegulation": 10,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-lamorinda",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA",
+        "loserParticipantId": "tournament-team-2025-10u-coed-long-beach-viking",
+        "loserTeamId": null,
+        "loserName": "LONG BEACH VIKING"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau16",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau16",
+      "sourceGameNumber": "10CPTAU16",
+      "sourceRow": 18,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket (7th-9th)",
+      "stageDisplay": "D bracket (7th-9th)",
+      "stageMeta": {
+        "raw": "D bracket (7th-9th)",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket (7th-9th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket (7th-9th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1(3rdA)-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1(3rdA)",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2025-10u-coed-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D2(3rdB)-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2(3rdB)",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2025-10u-coed-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 16,
+        "whiteRaw": "5",
+        "darkRaw": "16",
+        "whiteRegulation": 5,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-680-red",
+        "winnerTeamId": null,
+        "winnerName": "680 RED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-coed-platinum-gold-10cptau18",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-coed-platinum-gold",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum & Gold",
+      "divisionTier": "Mixed",
+      "sourceGameId": "10Cptau18",
+      "sourceGameNumber": "10CPTAU18",
+      "sourceRow": 19,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd)",
+      "stageDisplay": "F bracket (1st-3rd)",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd)",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd)"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1(1stA)-NBWP BLUE COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1(1stA)",
+          "displayName": "NBWP BLUE COED",
+          "participantId": "tournament-team-2025-10u-coed-nbwp-blue-coed",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F2(1stB)-NORTH IRVINE BLACK COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2(1stB)",
+          "displayName": "NORTH IRVINE BLACK COED",
+          "participantId": "tournament-team-2025-10u-coed-north-irvine-black-coed",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 2,
+        "whiteRaw": "15",
+        "darkRaw": "2",
+        "whiteRegulation": 15,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-coed-nbwp-blue-coed",
+        "winnerTeamId": null,
+        "winnerName": "NBWP BLUE COED",
+        "loserParticipantId": "tournament-team-2025-10u-coed-north-irvine-black-coed",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE BLACK COED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    }
+  ]
+}

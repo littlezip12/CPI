@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.1",
-  "generatedAt": "2026-07-28T22:39:00-07:00",
+  "release": "7.54.7",
+  "generatedAt": "2026-07-29T21:10:00-07:00",
   "event": {
     "id": "2026-quiksilver-cup",
     "name": "2026 Quiksilver Cup",
@@ -54,14 +54,14 @@
   },
   "sourceAdapters": [
     {
-      "id": "quiksilver-normalized-bank",
+      "id": "2026-quiksilver-cup-normalized-bank",
       "type": "normalized_json",
       "role": "primary",
       "pathTemplate": "data/tournaments/normalized/2026-quiksilver-cup/{divisionId}.json",
       "readMode": "repository"
     },
     {
-      "id": "quiksilver-official-sheets",
+      "id": "2026-quiksilver-cup-source",
       "type": "google_sheets_csv",
       "role": "provenance",
       "readMode": "official_source",
@@ -4106,6 +4106,8 @@
     "12u-boys-championship": [
       {
         "place": 1,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "MISSION",
         "participantId": "tournament-team-2026-12u-boys-mission",
         "teamId": null,
@@ -4121,6 +4123,8 @@
       },
       {
         "place": 2,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SD DONS",
         "participantId": "tournament-team-2026-12u-boys-sd-dons",
         "teamId": null,
@@ -4136,6 +4140,8 @@
       },
       {
         "place": 3,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "CDM A",
         "participantId": "team-2026-12u-boys-cdm",
         "teamId": "team-2026-12u-boys-cdm",
@@ -4151,6 +4157,8 @@
       },
       {
         "place": 4,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SAN CLEMENTE",
         "participantId": "tournament-team-2026-12u-boys-san-clemente",
         "teamId": null,
@@ -4166,6 +4174,8 @@
       },
       {
         "place": 5,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "STANFORD",
         "participantId": "tournament-team-2026-12u-boys-stanford",
         "teamId": null,
@@ -4181,6 +4191,8 @@
       },
       {
         "place": 6,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Rancho Tsunami",
         "participantId": "team-2026-12u-boys-tsunami-12u-boys",
         "teamId": "team-2026-12u-boys-tsunami-12u-boys",
@@ -4196,6 +4208,8 @@
       },
       {
         "place": 7,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "NORTH IRVINE",
         "participantId": "tournament-team-2026-12u-boys-north-irvine",
         "teamId": null,
@@ -4211,6 +4225,8 @@
       },
       {
         "place": 8,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Vanguard",
         "participantId": "team-2026-12u-boys-vanguard",
         "teamId": "team-2026-12u-boys-vanguard",
@@ -4226,6 +4242,8 @@
       },
       {
         "place": 9,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LA JOLLA",
         "participantId": "tournament-team-2026-12u-boys-la-jolla",
         "teamId": null,
@@ -4241,6 +4259,8 @@
       },
       {
         "place": 10,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Rose Bowl",
         "participantId": "team-2026-12u-boys-rose-bowl-12u-boys",
         "teamId": "team-2026-12u-boys-rose-bowl-12u-boys",
@@ -4256,6 +4276,8 @@
       },
       {
         "place": 11,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SOCAL",
         "participantId": "team-2026-12u-boys-socal-12u-boys",
         "teamId": "team-2026-12u-boys-socal-12u-boys",
@@ -4271,6 +4293,8 @@
       },
       {
         "place": 12,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LA Premier",
         "participantId": "team-2026-12u-boys-la-premier",
         "teamId": "team-2026-12u-boys-la-premier",
@@ -4286,6 +4310,8 @@
       },
       {
         "place": 13,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "908",
         "participantId": "tournament-team-2026-12u-boys-908",
         "teamId": null,
@@ -4301,6 +4327,8 @@
       },
       {
         "place": 14,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LAMORINDA",
         "participantId": "tournament-team-2026-12u-boys-lamorinda",
         "teamId": null,
@@ -4316,6 +4344,8 @@
       },
       {
         "place": 15,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SD SHORES",
         "participantId": "tournament-team-2026-12u-boys-sd-shores",
         "teamId": null,
@@ -4331,6 +4361,8 @@
       },
       {
         "place": 16,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Nsd Stars",
         "participantId": "team-2026-12u-boys-nsd-stars",
         "teamId": "team-2026-12u-boys-nsd-stars",
@@ -4348,6 +4380,8 @@
     "14u-boys-championship": [
       {
         "place": 1,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "NORCAL",
         "participantId": "tournament-team-2026-14u-boys-norcal",
         "teamId": null,
@@ -4363,6 +4397,8 @@
       },
       {
         "place": 2,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "NEWPORT",
         "participantId": "tournament-team-2026-14u-boys-newport",
         "teamId": null,
@@ -4378,6 +4414,8 @@
       },
       {
         "place": 3,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "MISSION",
         "participantId": "tournament-team-2026-14u-boys-mission",
         "teamId": null,
@@ -4393,6 +4431,8 @@
       },
       {
         "place": 4,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LA Premier",
         "participantId": "team-2026-14u-boys-la-premier-a",
         "teamId": "team-2026-14u-boys-la-premier-a",
@@ -4408,6 +4448,8 @@
       },
       {
         "place": 5,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "CIU",
         "participantId": "team-2026-14u-boys-ciu-a",
         "teamId": "team-2026-14u-boys-ciu-a",
@@ -4423,6 +4465,8 @@
       },
       {
         "place": 6,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "North Irvine",
         "participantId": "team-2026-14u-boys-north-irvine-a",
         "teamId": "team-2026-14u-boys-north-irvine-a",
@@ -4438,6 +4482,8 @@
       },
       {
         "place": 7,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "908",
         "participantId": "team-2026-14u-boys-908",
         "teamId": "team-2026-14u-boys-908",
@@ -4453,6 +4499,8 @@
       },
       {
         "place": 8,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Route 66",
         "participantId": "team-2026-14u-boys-route-66-14u-boys",
         "teamId": "team-2026-14u-boys-route-66-14u-boys",
@@ -4468,6 +4516,8 @@
       },
       {
         "place": 9,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SD SHORES",
         "participantId": "tournament-team-2026-14u-boys-sd-shores",
         "teamId": null,
@@ -4483,6 +4533,8 @@
       },
       {
         "place": 10,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Commerce",
         "participantId": "team-2026-14u-boys-commerce-a",
         "teamId": "team-2026-14u-boys-commerce-a",
@@ -4498,6 +4550,8 @@
       },
       {
         "place": 11,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "CC UNITED",
         "participantId": "tournament-team-2026-14u-boys-cc-united",
         "teamId": null,
@@ -4513,6 +4567,8 @@
       },
       {
         "place": 12,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LAMORINDA",
         "participantId": "tournament-team-2026-14u-boys-lamorinda",
         "teamId": null,
@@ -4528,6 +4584,8 @@
       },
       {
         "place": 13,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "CDM",
         "participantId": "team-2026-14u-boys-cdm-a",
         "teamId": "team-2026-14u-boys-cdm-a",
@@ -4543,6 +4601,8 @@
       },
       {
         "place": 14,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SD DONS",
         "participantId": "tournament-team-2026-14u-boys-sd-dons",
         "teamId": null,
@@ -4558,6 +4618,8 @@
       },
       {
         "place": 15,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LA JOLLA UNITED",
         "participantId": "tournament-team-2026-14u-boys-la-jolla-united",
         "teamId": null,
@@ -4573,6 +4635,8 @@
       },
       {
         "place": 16,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Rancho Tsunami",
         "participantId": "team-2026-14u-boys-rancho-tsunami-a",
         "teamId": "team-2026-14u-boys-rancho-tsunami-a",
@@ -4590,6 +4654,8 @@
     "14u-girls-championship": [
       {
         "place": 1,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Arroyo Grande",
         "participantId": "team-2026-14u-girls-arroyo-grande-14u-girls",
         "teamId": "team-2026-14u-girls-arroyo-grande-14u-girls",
@@ -4605,6 +4671,8 @@
       },
       {
         "place": 2,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LB SHORE",
         "participantId": "tournament-team-2026-14u-girls-lb-shore",
         "teamId": null,
@@ -4620,6 +4688,8 @@
       },
       {
         "place": 3,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "FOOTHILL",
         "participantId": "tournament-team-2026-14u-girls-foothill",
         "teamId": null,
@@ -4637,6 +4707,8 @@
     "16u-boys-championship": [
       {
         "place": 1,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "CIU",
         "participantId": "tournament-team-2026-16u-boys-ciu",
         "teamId": null,
@@ -4652,6 +4724,8 @@
       },
       {
         "place": 2,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SD SHORES",
         "participantId": "tournament-team-2026-16u-boys-sd-shores",
         "teamId": null,
@@ -4667,6 +4741,8 @@
       },
       {
         "place": 3,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "VANGUARD",
         "participantId": "tournament-team-2026-16u-boys-vanguard",
         "teamId": null,
@@ -4682,6 +4758,8 @@
       },
       {
         "place": 4,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LA JOLLA UNITED",
         "participantId": "tournament-team-2026-16u-boys-la-jolla-united",
         "teamId": null,
@@ -4697,6 +4775,8 @@
       },
       {
         "place": 5,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Berkeley WPC",
         "participantId": "team-2026-16u-boys-berkeley-wpc-16u-boys",
         "teamId": "team-2026-16u-boys-berkeley-wpc-16u-boys",
@@ -4712,6 +4792,8 @@
       },
       {
         "place": 6,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Mission",
         "participantId": "team-2026-16u-boys-mission-16u-boys",
         "teamId": "team-2026-16u-boys-mission-16u-boys",
@@ -4727,6 +4809,8 @@
       },
       {
         "place": 7,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LA JOLLA GOLD",
         "participantId": "tournament-team-2026-16u-boys-la-jolla-gold",
         "teamId": null,
@@ -4742,6 +4826,8 @@
       },
       {
         "place": 8,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Imperial",
         "participantId": "team-2026-16u-boys-imperial-16u-boys",
         "teamId": "team-2026-16u-boys-imperial-16u-boys",
@@ -4757,6 +4843,8 @@
       },
       {
         "place": 9,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Rose Bowl",
         "participantId": "team-2026-16u-boys-rose-bowl-16u-boys",
         "teamId": "team-2026-16u-boys-rose-bowl-16u-boys",
@@ -4772,6 +4860,8 @@
       },
       {
         "place": 10,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Sand Canyon",
         "participantId": "team-2026-16u-boys-sand-canyon-a-16u-boys",
         "teamId": "team-2026-16u-boys-sand-canyon-a-16u-boys",
@@ -4787,6 +4877,8 @@
       },
       {
         "place": 11,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "TROJAN",
         "participantId": "tournament-team-2026-16u-boys-trojan",
         "teamId": null,
@@ -4802,6 +4894,8 @@
       },
       {
         "place": 12,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "680",
         "participantId": "team-2026-16u-boys-680-a-16u-boys",
         "teamId": "team-2026-16u-boys-680-a-16u-boys",
@@ -4817,6 +4911,8 @@
       },
       {
         "place": 13,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "CC UNITED",
         "participantId": "tournament-team-2026-16u-boys-cc-united",
         "teamId": null,
@@ -4832,6 +4928,8 @@
       },
       {
         "place": 14,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SD SHORES GOLD",
         "participantId": "tournament-team-2026-16u-boys-sd-shores-gold",
         "teamId": null,
@@ -4847,6 +4945,8 @@
       },
       {
         "place": 15,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LA Premier",
         "participantId": "team-2026-16u-boys-la-premier-16u-boys",
         "teamId": "team-2026-16u-boys-la-premier-16u-boys",
@@ -4862,6 +4962,8 @@
       },
       {
         "place": 16,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LB SHORE",
         "participantId": "tournament-team-2026-16u-boys-lb-shore",
         "teamId": null,
@@ -4877,6 +4979,8 @@
       },
       {
         "place": 17,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Commerce",
         "participantId": "team-2026-16u-boys-commerce-16u-boys",
         "teamId": "team-2026-16u-boys-commerce-16u-boys",
@@ -4892,6 +4996,8 @@
       },
       {
         "place": 18,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "NSD STARS",
         "participantId": "tournament-team-2026-16u-boys-nsd-stars",
         "teamId": null,
@@ -4909,6 +5015,8 @@
     "16u-girls-championship": [
       {
         "place": 1,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LB Viking",
         "participantId": "team-2026-16u-girls-lb-viking-16u-girls",
         "teamId": "team-2026-16u-girls-lb-viking-16u-girls",
@@ -4924,6 +5032,8 @@
       },
       {
         "place": 2,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "OVAC",
         "participantId": "team-2026-16u-girls-ovac-16u-girls",
         "teamId": "team-2026-16u-girls-ovac-16u-girls",
@@ -4939,6 +5049,8 @@
       },
       {
         "place": 3,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "RANCHO TSUNAMI",
         "participantId": "tournament-team-2026-16u-girls-rancho-tsunami",
         "teamId": null,
@@ -4956,6 +5068,8 @@
     "18u-boys-championship": [
       {
         "place": 1,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "CC UNITED",
         "participantId": "tournament-team-2026-18u-boys-cc-united",
         "teamId": null,
@@ -4971,6 +5085,8 @@
       },
       {
         "place": 2,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Mission",
         "participantId": "team-2026-18u-boys-mission-18u-boys",
         "teamId": "team-2026-18u-boys-mission-18u-boys",
@@ -4986,6 +5102,8 @@
       },
       {
         "place": 3,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LA JOLLA",
         "participantId": "tournament-team-2026-18u-boys-la-jolla",
         "teamId": null,
@@ -5001,6 +5119,8 @@
       },
       {
         "place": 4,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "NORTH IRVINE",
         "participantId": "tournament-team-2026-18u-boys-north-irvine",
         "teamId": null,
@@ -5016,6 +5136,8 @@
       },
       {
         "place": 5,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Greenwich",
         "participantId": "team-2026-18u-boys-greenwich-18u-boys",
         "teamId": "team-2026-18u-boys-greenwich-18u-boys",
@@ -5031,6 +5153,8 @@
       },
       {
         "place": 6,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SD SHORES",
         "participantId": "tournament-team-2026-18u-boys-sd-shores",
         "teamId": null,
@@ -5046,6 +5170,8 @@
       },
       {
         "place": 7,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Imperial",
         "participantId": "team-2026-18u-boys-imperial-18u-boys",
         "teamId": "team-2026-18u-boys-imperial-18u-boys",
@@ -5061,6 +5187,8 @@
       },
       {
         "place": 8,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "CIU",
         "participantId": "tournament-team-2026-18u-boys-ciu",
         "teamId": null,
@@ -5076,6 +5204,8 @@
       },
       {
         "place": 9,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LB SHORE",
         "participantId": "tournament-team-2026-18u-boys-lb-shore",
         "teamId": null,
@@ -5091,6 +5221,8 @@
       },
       {
         "place": 10,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Diablo Alliance",
         "participantId": "team-2026-18u-boys-diablo-alliance-a-18u-boys",
         "teamId": "team-2026-18u-boys-diablo-alliance-a-18u-boys",
@@ -5106,6 +5238,8 @@
       },
       {
         "place": 11,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "OLYMPUS",
         "participantId": "tournament-team-2026-18u-boys-olympus",
         "teamId": null,
@@ -5121,6 +5255,8 @@
       },
       {
         "place": 12,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SAND CANYON",
         "participantId": "tournament-team-2026-18u-boys-sand-canyon",
         "teamId": null,
@@ -5136,6 +5272,8 @@
       },
       {
         "place": 13,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Foothill",
         "participantId": "team-2026-18u-boys-foothill-18u-boys",
         "teamId": "team-2026-18u-boys-foothill-18u-boys",
@@ -5151,6 +5289,8 @@
       },
       {
         "place": 14,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Commerce",
         "participantId": "team-2026-18u-boys-commerce-18u-boys",
         "teamId": "team-2026-18u-boys-commerce-18u-boys",
@@ -5166,6 +5306,8 @@
       },
       {
         "place": 15,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Alameda",
         "participantId": "team-2026-18u-boys-alameda-wpc-18u-boys",
         "teamId": "team-2026-18u-boys-alameda-wpc-18u-boys",
@@ -5181,6 +5323,8 @@
       },
       {
         "place": 16,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Supreme",
         "participantId": "team-2026-18u-boys-supreme-18u-boys",
         "teamId": "team-2026-18u-boys-supreme-18u-boys",
@@ -5198,6 +5342,8 @@
     "18u-girls-championship": [
       {
         "place": 1,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "LB VIKING",
         "participantId": "tournament-team-2026-18u-girls-lb-viking",
         "teamId": null,
@@ -5213,6 +5359,8 @@
       },
       {
         "place": 2,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "680",
         "participantId": "team-2026-18u-girls-680-18u-girls",
         "teamId": "team-2026-18u-girls-680-18u-girls",
@@ -5228,6 +5376,8 @@
       },
       {
         "place": 3,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "SD SHORES",
         "participantId": "tournament-team-2026-18u-girls-sd-shores",
         "teamId": null,
@@ -5243,6 +5393,8 @@
       },
       {
         "place": 4,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Mission",
         "participantId": "team-2026-18u-girls-mission-18u-girls",
         "teamId": "team-2026-18u-girls-mission-18u-girls",
@@ -5258,6 +5410,8 @@
       },
       {
         "place": 5,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Mid Valley",
         "participantId": "team-2026-18u-girls-mid-valley-18u-girls",
         "teamId": "team-2026-18u-girls-mid-valley-18u-girls",
@@ -5273,6 +5427,8 @@
       },
       {
         "place": 6,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "RANCHO TSUNAMI",
         "participantId": "tournament-team-2026-18u-girls-rancho-tsunami",
         "teamId": null,
@@ -5288,6 +5444,8 @@
       },
       {
         "place": 7,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Legacy",
         "participantId": "team-2026-18u-girls-legacy-18u-girls",
         "teamId": "team-2026-18u-girls-legacy-18u-girls",
@@ -5303,6 +5461,8 @@
       },
       {
         "place": 8,
+        "placeLabel": null,
+        "subdivision": null,
         "name": "Seaside",
         "participantId": "team-2026-18u-girls-seaside-18u-girls",
         "teamId": "team-2026-18u-girls-seaside-18u-girls",

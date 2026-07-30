@@ -1,0 +1,2323 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2025-evan-cousineau-memorial-cup",
+    "name": "2025 Evan Cousineau Memorial Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "12u-boys-silver",
+    "label": "12U Boys Silver",
+    "season": "2025",
+    "ageGroup": "12U",
+    "gender": "Boys",
+    "division": "Silver",
+    "divisionTier": "D3",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2025-ec-cup",
+    "gid": "12u-boys-silver",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2025-evan-cousineau-memorial-cup/12u-boys-silver.csv",
+    "fetchedAt": "2026-07-29T21:10:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "3386a7e2f95feaf3d5333530a63f0506ab18dadbf5bf61fa055631e66ae20e82",
+    "rowCount": 25
+  },
+  "counts": {
+    "games": 24,
+    "finalGames": 24,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 48,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 48,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 48
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag01",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag01",
+      "sourceGameNumber": "12BAG01",
+      "sourceRow": 2,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-MVPOLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "MVPOLO",
+          "participantId": "tournament-team-2025-12u-boys-mvpolo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B2-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "MISSION WPC B",
+          "participantId": "tournament-team-2025-12u-boys-mission-wpc-b",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 14,
+        "whiteRaw": "2",
+        "darkRaw": "14",
+        "whiteRegulation": 2,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-mission-wpc-b",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC B",
+        "loserParticipantId": "tournament-team-2025-12u-boys-mvpolo",
+        "loserTeamId": null,
+        "loserName": "MVPOLO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag02",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag02",
+      "sourceGameNumber": "12BAG02",
+      "sourceRow": 3,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-LAGUNA BEACH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "LAGUNA BEACH",
+          "participantId": "tournament-team-2025-12u-boys-laguna-beach",
+          "teamId": null,
+          "clubId": "club-laguna-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2025-12u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5",
+        "whiteRegulation": 11,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-laguna-beach",
+        "winnerTeamId": null,
+        "winnerName": "LAGUNA BEACH",
+        "loserParticipantId": "tournament-team-2025-12u-boys-cc-united-white",
+        "loserTeamId": null,
+        "loserName": "CC UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:50 AM",
+          "raw": "8:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag03",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag03",
+      "sourceGameNumber": "12BAG03",
+      "sourceRow": 4,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-12u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A2-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-12u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 8,
+        "whiteRaw": "18",
+        "darkRaw": "8",
+        "whiteRegulation": 18,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2025-12u-boys-lamorinda-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:40 AM",
+          "raw": "9:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag04",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag04",
+      "sourceGameNumber": "12BAG04",
+      "sourceRow": 5,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "10:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "22",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-DIABLO ALLIANCE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "DIABLO ALLIANCE RED",
+          "participantId": "tournament-team-2025-12u-boys-diablo-alliance-red",
+          "teamId": null,
+          "clubId": "club-diablo-alliance",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-ORANGE COUNTY WPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "ORANGE COUNTY WPC RED",
+          "participantId": "tournament-team-2025-12u-boys-orange-county-wpc-red",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 22,
+        "dark": 4,
+        "whiteRaw": "22",
+        "darkRaw": "4",
+        "whiteRegulation": 22,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-diablo-alliance-red",
+        "winnerTeamId": null,
+        "winnerName": "DIABLO ALLIANCE RED",
+        "loserParticipantId": "tournament-team-2025-12u-boys-orange-county-wpc-red",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:30 AM",
+          "raw": "10:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag05",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag05",
+      "sourceGameNumber": "12BAG05",
+      "sourceRow": 6,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "11:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "MISSION WPC B",
+          "participantId": "tournament-team-2025-12u-boys-mission-wpc-b",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2025-12u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 3,
+        "whiteRaw": "14",
+        "darkRaw": "3",
+        "whiteRegulation": 14,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-mission-wpc-b",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC B",
+        "loserParticipantId": "tournament-team-2025-12u-boys-680-blue",
+        "loserTeamId": null,
+        "loserName": "680 BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:20 AM",
+          "raw": "11:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag06",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag06",
+      "sourceGameNumber": "12BAG06",
+      "sourceRow": 7,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2-TITANS WP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "TITANS WP",
+          "participantId": "tournament-team-2025-12u-boys-titans-wp",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2025-12u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 12,
+        "whiteRaw": "13",
+        "darkRaw": "12",
+        "whiteRegulation": 13,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-titans-wp",
+        "winnerTeamId": null,
+        "winnerName": "TITANS WP",
+        "loserParticipantId": "tournament-team-2025-12u-boys-cc-united-white",
+        "loserTeamId": null,
+        "loserName": "CC UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:10 PM",
+          "raw": "12:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag07",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag07",
+      "sourceGameNumber": "12BAG07",
+      "sourceRow": 8,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-12u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2025-12u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 17,
+        "whiteRaw": "7",
+        "darkRaw": "17",
+        "whiteRegulation": 7,
+        "darkRegulation": 17,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-north-irvine-red",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE RED",
+        "loserParticipantId": "tournament-team-2025-12u-boys-lamorinda-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag08",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag08",
+      "sourceGameNumber": "12BAG08",
+      "sourceRow": 9,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "11.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-SOCAL GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "SOCAL GOLD",
+          "participantId": "tournament-team-2025-12u-boys-socal-gold",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-ORANGE COUNTY WPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "ORANGE COUNTY WPC RED",
+          "participantId": "tournament-team-2025-12u-boys-orange-county-wpc-red",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11.3,
+        "dark": 11.2,
+        "whiteRaw": "11.3",
+        "darkRaw": "11.2",
+        "whiteRegulation": 11,
+        "darkRegulation": 11,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 11,
+        "darkRegulation": 11,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-socal-gold",
+        "winnerTeamId": null,
+        "winnerName": "SOCAL GOLD",
+        "loserParticipantId": "tournament-team-2025-12u-boys-orange-county-wpc-red",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:50 PM",
+          "raw": "1:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag09",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag09",
+      "sourceGameNumber": "12BAG09",
+      "sourceRow": 10,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "2:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-MVPOLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "MVPOLO",
+          "participantId": "tournament-team-2025-12u-boys-mvpolo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2025-12u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 17,
+        "whiteRaw": "6",
+        "darkRaw": "17",
+        "whiteRegulation": 6,
+        "darkRegulation": 17,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-680-blue",
+        "winnerTeamId": null,
+        "winnerName": "680 BLUE",
+        "loserParticipantId": "tournament-team-2025-12u-boys-mvpolo",
+        "loserTeamId": null,
+        "loserName": "MVPOLO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:40 PM",
+          "raw": "2:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag11",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag11",
+      "sourceGameNumber": "12BAG11",
+      "sourceRow": 11,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-LAGUNA BEACH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "LAGUNA BEACH",
+          "participantId": "tournament-team-2025-12u-boys-laguna-beach",
+          "teamId": null,
+          "clubId": "club-laguna-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D2-TITANS WP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "TITANS WP",
+          "participantId": "tournament-team-2025-12u-boys-titans-wp",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 7,
+        "whiteRaw": "13",
+        "darkRaw": "7",
+        "whiteRegulation": 13,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-laguna-beach",
+        "winnerTeamId": null,
+        "winnerName": "LAGUNA BEACH",
+        "loserParticipantId": "tournament-team-2025-12u-boys-titans-wp",
+        "loserTeamId": null,
+        "loserName": "TITANS WP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag10",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag10",
+      "sourceGameNumber": "12BAG10",
+      "sourceRow": 12,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-12u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2025-12u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 11,
+        "whiteRaw": "6",
+        "darkRaw": "11",
+        "whiteRegulation": 6,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-north-irvine-red",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE RED",
+        "loserParticipantId": "tournament-team-2025-12u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:20 PM",
+          "raw": "4:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag12",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag12",
+      "sourceGameNumber": "12BAG12",
+      "sourceRow": 13,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "5:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "21",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-DIABLO ALLIANCE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "DIABLO ALLIANCE RED",
+          "participantId": "tournament-team-2025-12u-boys-diablo-alliance-red",
+          "teamId": null,
+          "clubId": "club-diablo-alliance",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C2-SOCAL GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "SOCAL GOLD",
+          "participantId": "tournament-team-2025-12u-boys-socal-gold",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 21,
+        "dark": 4,
+        "whiteRaw": "21",
+        "darkRaw": "4",
+        "whiteRegulation": 21,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-diablo-alliance-red",
+        "winnerTeamId": null,
+        "winnerName": "DIABLO ALLIANCE RED",
+        "loserParticipantId": "tournament-team-2025-12u-boys-socal-gold",
+        "loserTeamId": null,
+        "loserName": "SOCAL GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:10 PM",
+          "raw": "5:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag13",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag13",
+      "sourceGameNumber": "12BAG13",
+      "sourceRow": 14,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi",
+      "stageDisplay": "1-4 Semifinal",
+      "stageMeta": {
+        "raw": "1-4 semi",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2025-12u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stD-LAGUNA BEACH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stD",
+          "displayName": "LAGUNA BEACH",
+          "participantId": "tournament-team-2025-12u-boys-laguna-beach",
+          "teamId": null,
+          "clubId": "club-laguna-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 12,
+        "whiteRaw": "5",
+        "darkRaw": "12",
+        "whiteRegulation": 5,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-laguna-beach",
+        "winnerTeamId": null,
+        "winnerName": "LAGUNA BEACH",
+        "loserParticipantId": "tournament-team-2025-12u-boys-north-irvine-red",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag14",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag14",
+      "sourceGameNumber": "12BAG14",
+      "sourceRow": 15,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi",
+      "stageDisplay": "1-4 Semifinal",
+      "stageMeta": {
+        "raw": "1-4 semi",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stB-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stB",
+          "displayName": "MISSION WPC B",
+          "participantId": "tournament-team-2025-12u-boys-mission-wpc-b",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stC-DIABLO ALLIANCE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stC",
+          "displayName": "DIABLO ALLIANCE RED",
+          "participantId": "tournament-team-2025-12u-boys-diablo-alliance-red",
+          "teamId": null,
+          "clubId": "club-diablo-alliance",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 5,
+        "whiteRaw": "6",
+        "darkRaw": "5",
+        "whiteRegulation": 6,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-mission-wpc-b",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC B",
+        "loserParticipantId": "tournament-team-2025-12u-boys-diablo-alliance-red",
+        "loserTeamId": null,
+        "loserName": "DIABLO ALLIANCE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag15",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag15",
+      "sourceGameNumber": "12BAG15",
+      "sourceRow": 16,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 semi",
+      "stageDisplay": "5-8 Semifinal",
+      "stageMeta": {
+        "raw": "5-8 semi",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "5-8 Semifinal",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 Semifinal"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndA-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-12u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "2ndD-TITANS WP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndD",
+          "displayName": "TITANS WP",
+          "participantId": "tournament-team-2025-12u-boys-titans-wp",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 16,
+        "whiteRaw": "14",
+        "darkRaw": "16",
+        "whiteRegulation": 14,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-titans-wp",
+        "winnerTeamId": null,
+        "winnerName": "TITANS WP",
+        "loserParticipantId": "tournament-team-2025-12u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag21",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag21",
+      "sourceGameNumber": "12BAG21",
+      "sourceRow": 17,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi",
+      "stageDisplay": "9-12 Semifinal",
+      "stageMeta": {
+        "raw": "9-12 semi",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "9-12 Semifinal",
+        "placementRange": {
+          "start": 9,
+          "end": 12
+        },
+        "placement": null,
+        "displayLabel": "9-12 Semifinal"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-12u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdD-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdD",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2025-12u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 15,
+        "whiteRaw": "4",
+        "darkRaw": "15",
+        "whiteRegulation": 4,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-cc-united-white",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED WHITE",
+        "loserParticipantId": "tournament-team-2025-12u-boys-lamorinda-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag16",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag16",
+      "sourceGameNumber": "12BAG16",
+      "sourceRow": 18,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 semi",
+      "stageDisplay": "5-8 Semifinal",
+      "stageMeta": {
+        "raw": "5-8 semi",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "5-8 Semifinal",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 Semifinal"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndB-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndB",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2025-12u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "2ndC-SOCAL GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndC",
+          "displayName": "SOCAL GOLD",
+          "participantId": "tournament-team-2025-12u-boys-socal-gold",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-680-blue",
+        "winnerTeamId": null,
+        "winnerName": "680 BLUE",
+        "loserParticipantId": "tournament-team-2025-12u-boys-socal-gold",
+        "loserTeamId": null,
+        "loserName": "SOCAL GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag22",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag22",
+      "sourceGameNumber": "12BAG22",
+      "sourceRow": 19,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi",
+      "stageDisplay": "9-12 Semifinal",
+      "stageMeta": {
+        "raw": "9-12 semi",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "9-12 Semifinal",
+        "placementRange": {
+          "start": 9,
+          "end": 12
+        },
+        "placement": null,
+        "displayLabel": "9-12 Semifinal"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdB-MVPOLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "MVPOLO",
+          "participantId": "tournament-team-2025-12u-boys-mvpolo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rdC-ORANGE COUNTY WPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdC",
+          "displayName": "ORANGE COUNTY WPC RED",
+          "participantId": "tournament-team-2025-12u-boys-orange-county-wpc-red",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 11,
+        "whiteRaw": "17",
+        "darkRaw": "11",
+        "whiteRegulation": 17,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-mvpolo",
+        "winnerTeamId": null,
+        "winnerName": "MVPOLO",
+        "loserParticipantId": "tournament-team-2025-12u-boys-orange-county-wpc-red",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag17",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag17",
+      "sourceGameNumber": "12BAG17",
+      "sourceRow": 20,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#13-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#13",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2025-12u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#14-DIABLO ALLIANCE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#14",
+          "displayName": "DIABLO ALLIANCE RED",
+          "participantId": "tournament-team-2025-12u-boys-diablo-alliance-red",
+          "teamId": null,
+          "clubId": "club-diablo-alliance",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 21,
+        "whiteRaw": "3",
+        "darkRaw": "21",
+        "whiteRegulation": 3,
+        "darkRegulation": 21,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-diablo-alliance-red",
+        "winnerTeamId": null,
+        "winnerName": "DIABLO ALLIANCE RED",
+        "loserParticipantId": "tournament-team-2025-12u-boys-north-irvine-red",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag18",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag18",
+      "sourceGameNumber": "12BAG18",
+      "sourceRow": 21,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#13-LAGUNA BEACH",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#13",
+          "displayName": "LAGUNA BEACH",
+          "participantId": "tournament-team-2025-12u-boys-laguna-beach",
+          "teamId": null,
+          "clubId": "club-laguna-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#14-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#14",
+          "displayName": "MISSION WPC B",
+          "participantId": "tournament-team-2025-12u-boys-mission-wpc-b",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 3,
+        "whiteRaw": "8",
+        "darkRaw": "3",
+        "whiteRegulation": 8,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-laguna-beach",
+        "winnerTeamId": null,
+        "winnerName": "LAGUNA BEACH",
+        "loserParticipantId": "tournament-team-2025-12u-boys-mission-wpc-b",
+        "loserTeamId": null,
+        "loserName": "MISSION WPC B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag19",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag19",
+      "sourceGameNumber": "12BAG19",
+      "sourceRow": 22,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#15-TITANS WP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#15",
+          "displayName": "TITANS WP",
+          "participantId": "tournament-team-2025-12u-boys-titans-wp",
+          "teamId": null,
+          "clubId": "club-titans",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#16-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#16",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2025-12u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8",
+        "whiteRegulation": 11,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-titans-wp",
+        "winnerTeamId": null,
+        "winnerName": "TITANS WP",
+        "loserParticipantId": "tournament-team-2025-12u-boys-680-blue",
+        "loserTeamId": null,
+        "loserName": "680 BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag20",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag20",
+      "sourceGameNumber": "12BAG20",
+      "sourceRow": 23,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "stageDisplay": "7th place game",
+      "stageMeta": {
+        "raw": "7th",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "7th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 7,
+          "loserPlace": 8
+        },
+        "displayLabel": "7th place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#15-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#15",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2025-12u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#16-SOCAL GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#16",
+          "displayName": "SOCAL GOLD",
+          "participantId": "tournament-team-2025-12u-boys-socal-gold",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 8,
+        "whiteRaw": "16",
+        "darkRaw": "8",
+        "whiteRegulation": 16,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2025-12u-boys-socal-gold",
+        "loserTeamId": null,
+        "loserName": "SOCAL GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag23",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag23",
+      "sourceGameNumber": "12BAG23",
+      "sourceRow": 24,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th",
+      "stageDisplay": "9th place game",
+      "stageMeta": {
+        "raw": "9th",
+        "detailRaw": "21",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "9th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 9,
+          "loserPlace": 10
+        },
+        "displayLabel": "9th place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#21-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#21",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2025-12u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#22-MVPOLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#22",
+          "displayName": "MVPOLO",
+          "participantId": "tournament-team-2025-12u-boys-mvpolo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 21,
+        "dark": 6,
+        "whiteRaw": "21",
+        "darkRaw": "6",
+        "whiteRegulation": 21,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-cc-united-white",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED WHITE",
+        "loserParticipantId": "tournament-team-2025-12u-boys-mvpolo",
+        "loserTeamId": null,
+        "loserName": "MVPOLO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-boys-silver-12bag24",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-boys-silver",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "12Bag24",
+      "sourceGameNumber": "12BAG24",
+      "sourceRow": 25,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "11th",
+      "stageDisplay": "11th place game",
+      "stageMeta": {
+        "raw": "11th",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "11th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 11,
+          "loserPlace": 12
+        },
+        "displayLabel": "11th place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#21-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#21",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-12u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#22-ORANGE COUNTY WPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#22",
+          "displayName": "ORANGE COUNTY WPC RED",
+          "participantId": "tournament-team-2025-12u-boys-orange-county-wpc-red",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 7,
+        "whiteRaw": "10",
+        "darkRaw": "7",
+        "whiteRegulation": 10,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2025-12u-boys-orange-county-wpc-red",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    }
+  ]
+}

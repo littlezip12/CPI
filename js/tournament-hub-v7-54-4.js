@@ -173,11 +173,13 @@
 
   function renderPlatformResults(event,data,divisionId,mount){
     const division=data.divisions.find(item=>item.id===divisionId); const teams=new Map(data.teams.map(team=>[team.participantId,team])); const rows=data.placements?.[divisionId]||[];
-    if(!division||!rows.length){ mount.innerHTML=`<div class="archive-results-prompt">Verified placements are not available for this division.</div>`; return; }
-    mount.innerHTML=`<details class="archive-result-group" open><summary><strong>${esc(division.label)}</strong><span>${rows.length} placements</span></summary><section class="archive-subdivision"><ol class="archive-team-list">${rows.map(row=>{
-      const team=teams.get(row.participantId)||row; const logo=team.logo||FALLBACK; const record=team.record?.display||"Record unavailable"; const href=`tournament.html?event=${encodeURIComponent(event.id)}&team=${encodeURIComponent(row.participantId)}#tpJourney`;
-      return `<li><a class="archive-team-link" href="${esc(href)}"><span class="archive-place">${esc(row.place ? `${row.place}` : "—")}</span><img class="archive-team-logo" src="${esc(logo)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK}'"><span class="archive-team-name"><strong>${esc(row.name)}</strong><small>${esc(record)} · ${esc(division.label)}</small></span><span class="archive-journey-label">View games →</span></a></li>`;
-    }).join("")}</ol></section></details>`;
+    if(!division){ mount.innerHTML=`<div class="archive-results-prompt">This division could not be loaded.</div>`; return; }
+    const placedIds=new Set(rows.map(row=>row.participantId));
+    const unplaced=data.teams.filter(team=>team.divisionId===divisionId&&!placedIds.has(team.participantId)).sort((a,b)=>a.name.localeCompare(b.name));
+    const linkRow=(team,label)=>{const logo=team.logo||FALLBACK; const record=team.record?.display||"Record unavailable"; const href=`tournament.html?event=${encodeURIComponent(event.id)}&team=${encodeURIComponent(team.participantId)}#tpJourney`; return `<li><a class="archive-team-link" href="${esc(href)}"><span class="archive-place">${esc(label)}</span><img class="archive-team-logo" src="${esc(logo)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK}'"><span class="archive-team-name"><strong>${esc(team.name)}</strong><small>${esc(record)} · ${esc(division.label)}</small></span><span class="archive-journey-label">View games →</span></a></li>`;};
+    const placedHtml=rows.length?`<section class="archive-subdivision"><h4>Verified placements</h4><ol class="archive-team-list">${rows.map(row=>linkRow(teams.get(row.participantId)||row,row.placeLabel||String(row.place||"—"))).join("")}</ol></section>`:"";
+    const recordHtml=unplaced.length?`<section class="archive-subdivision"><h4>Records only</h4><p class="archive-results-note">No official placement game was played for these teams.</p><ol class="archive-team-list">${unplaced.map(team=>linkRow(team,"—")).join("")}</ol></section>`:"";
+    mount.innerHTML=`<details class="archive-result-group" open><summary><strong>${esc(division.label)}</strong><span>${rows.length} verified placements · ${unplaced.length} records only</span></summary>${placedHtml}${recordHtml}</details>`;
   }
 
   async function init(){

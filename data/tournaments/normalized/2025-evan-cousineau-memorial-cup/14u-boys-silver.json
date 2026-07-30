@@ -1,0 +1,3596 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2025-evan-cousineau-memorial-cup",
+    "name": "2025 Evan Cousineau Memorial Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "14u-boys-silver",
+    "label": "14U Boys Silver",
+    "season": "2025",
+    "ageGroup": "14U",
+    "gender": "Boys",
+    "division": "Silver",
+    "divisionTier": "D3",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2025-ec-cup",
+    "gid": "14u-boys-silver",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2025-evan-cousineau-memorial-cup/14u-boys-silver.csv",
+    "fetchedAt": "2026-07-29T21:10:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "17bb97724463370fd27ceb31b47c755ad832578922e81631b7a49e6f67bd3fca",
+    "rowCount": 39
+  },
+  "counts": {
+    "games": 38,
+    "finalGames": 38,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 76,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 76,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 76
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag02",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag02",
+      "sourceGameNumber": "14BAG02",
+      "sourceRow": 2,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D1,D3",
+      "stageDisplay": "D bracket D1,D3",
+      "stageMeta": {
+        "raw": "D bracket D1,D3",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D1,D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D1,D3"
+      },
+      "venue": "WOOLLETT NEAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-LA CITY UNITED WATER POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "LA CITY UNITED WATER POLO",
+          "participantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D3-ROSE BOWL BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "ROSE BOWL BLACK",
+          "participantId": "tournament-team-2025-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 3,
+        "whiteRaw": "19",
+        "darkRaw": "3",
+        "whiteRegulation": 19,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+        "winnerTeamId": null,
+        "winnerName": "LA CITY UNITED WATER POLO",
+        "loserParticipantId": "tournament-team-2025-14u-boys-rose-bowl-black",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR RIGHT",
+          "raw": "WOOLLETT NEAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag01",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag01",
+      "sourceGameNumber": "14BAG01",
+      "sourceRow": 3,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-KERN PREMIER COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "KERN PREMIER COED",
+          "participantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+          "teamId": null,
+          "clubId": "club-kern-premier",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-TSUNAMI BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "TSUNAMI BLACK",
+          "participantId": "tournament-team-2025-14u-boys-tsunami-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+        "winnerTeamId": null,
+        "winnerName": "KERN PREMIER COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-tsunami-black",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag04",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag04",
+      "sourceGameNumber": "14BAG04",
+      "sourceRow": 4,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E1,E3",
+      "stageDisplay": "E bracket E1,E3",
+      "stageMeta": {
+        "raw": "E bracket E1,E3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E1,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E1,E3"
+      },
+      "venue": "WOOLLETT NEAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1-NSD STARS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "NSD STARS",
+          "participantId": "tournament-team-2025-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2025-14u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10",
+        "whiteRegulation": 8,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-north-irvine-red",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-nsd-stars",
+        "loserTeamId": null,
+        "loserName": "NSD STARS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR RIGHT",
+          "raw": "WOOLLETT NEAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag03",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag03",
+      "sourceGameNumber": "14BAG03",
+      "sourceRow": 5,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-SKIP COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "SKIP COED",
+          "participantId": "tournament-team-2025-14u-boys-skip-coed",
+          "teamId": null,
+          "clubId": "club-skip",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 3,
+        "whiteRaw": "17",
+        "darkRaw": "3",
+        "whiteRegulation": 17,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-skip-coed",
+        "winnerTeamId": null,
+        "winnerName": "SKIP COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag06",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag06",
+      "sourceGameNumber": "14BAG06",
+      "sourceRow": 6,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F1,F3",
+      "stageDisplay": "F bracket F1,F3",
+      "stageMeta": {
+        "raw": "F bracket F1,F3",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F1,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F1,F3"
+      },
+      "venue": "WOOLLETT NEAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1-BOA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1",
+          "displayName": "BOA",
+          "participantId": "tournament-team-2025-14u-boys-boa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F3-SOUTH COAST BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3",
+          "displayName": "SOUTH COAST BLUE",
+          "participantId": "tournament-team-2025-14u-boys-south-coast-blue",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 4,
+        "whiteRaw": "10",
+        "darkRaw": "4",
+        "whiteRegulation": 10,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-boa",
+        "winnerTeamId": null,
+        "winnerName": "BOA",
+        "loserParticipantId": "tournament-team-2025-14u-boys-south-coast-blue",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR RIGHT",
+          "raw": "WOOLLETT NEAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag05",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag05",
+      "sourceGameNumber": "14BAG05",
+      "sourceRow": 7,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C3",
+      "stageDisplay": "C bracket C1,C3",
+      "stageMeta": {
+        "raw": "C bracket C1,C3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C3"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-SUPREME",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SUPREME",
+          "participantId": "tournament-team-2025-14u-boys-supreme",
+          "teamId": null,
+          "clubId": "club-supreme",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C3-PALOS VERDES B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "PALOS VERDES B",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 11,
+        "whiteRaw": "5",
+        "darkRaw": "11",
+        "whiteRegulation": 5,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-palos-verdes-b",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-supreme",
+        "loserTeamId": null,
+        "loserName": "SUPREME"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag13",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag13",
+      "sourceGameNumber": "14BAG13",
+      "sourceRow": 8,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D2,D3",
+      "stageDisplay": "D bracket D2,D3",
+      "stageMeta": {
+        "raw": "D bracket D2,D3",
+        "detailRaw": "22",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D2,D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D2,D3"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2-CDM WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "CDM WHITE",
+          "participantId": "tournament-team-2025-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3-ROSE BOWL BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "ROSE BOWL BLACK",
+          "participantId": "tournament-team-2025-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 22,
+        "dark": 4,
+        "whiteRaw": "22",
+        "darkRaw": "4",
+        "whiteRegulation": 22,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-cdm-white",
+        "winnerTeamId": null,
+        "winnerName": "CDM WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-rose-bowl-black",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag15",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag15",
+      "sourceGameNumber": "14BAG15",
+      "sourceRow": 9,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E1,E2",
+      "stageDisplay": "E bracket E1,E2",
+      "stageMeta": {
+        "raw": "E bracket E1,E2",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E1,E2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E1,E2"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1-NSD STARS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "NSD STARS",
+          "participantId": "tournament-team-2025-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E2-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-14u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 14,
+        "whiteRaw": "5",
+        "darkRaw": "14",
+        "whiteRegulation": 5,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-nsd-stars",
+        "loserTeamId": null,
+        "loserName": "NSD STARS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag07",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag07",
+      "sourceGameNumber": "14BAG07",
+      "sourceRow": 10,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2025-14u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-TSUNAMI BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "TSUNAMI BLACK",
+          "participantId": "tournament-team-2025-14u-boys-tsunami-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 14,
+        "whiteRaw": "6",
+        "darkRaw": "14",
+        "whiteRegulation": 6,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-tsunami-black",
+        "winnerTeamId": null,
+        "winnerName": "TSUNAMI BLACK",
+        "loserParticipantId": "tournament-team-2025-14u-boys-la-jolla-united-white",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag09",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag09",
+      "sourceGameNumber": "14BAG09",
+      "sourceRow": 11,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-NBWP SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "NBWP SILVER",
+          "participantId": "tournament-team-2025-14u-boys-nbwp-silver",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6",
+        "whiteRegulation": 14,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-nbwp-silver",
+        "winnerTeamId": null,
+        "winnerName": "NBWP SILVER",
+        "loserParticipantId": "tournament-team-2025-14u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag17",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag17",
+      "sourceGameNumber": "14BAG17",
+      "sourceRow": 12,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F2,F3",
+      "stageDisplay": "F bracket F2,F3",
+      "stageMeta": {
+        "raw": "F bracket F2,F3",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F2,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F2,F3"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F2-NORCAL TEAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2",
+          "displayName": "NORCAL TEAL",
+          "participantId": "tournament-team-2025-14u-boys-norcal-teal",
+          "teamId": null,
+          "clubId": "club-norcal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "F3-SOUTH COAST BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3",
+          "displayName": "SOUTH COAST BLUE",
+          "participantId": "tournament-team-2025-14u-boys-south-coast-blue",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 2,
+        "whiteRaw": "13",
+        "darkRaw": "2",
+        "whiteRegulation": 13,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-norcal-teal",
+        "winnerTeamId": null,
+        "winnerName": "NORCAL TEAL",
+        "loserParticipantId": "tournament-team-2025-14u-boys-south-coast-blue",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag11",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag11",
+      "sourceGameNumber": "14BAG11",
+      "sourceRow": 13,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C2",
+      "stageDisplay": "C bracket C1,C2",
+      "stageMeta": {
+        "raw": "C bracket C1,C2",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C2"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-SUPREME",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SUPREME",
+          "participantId": "tournament-team-2025-14u-boys-supreme",
+          "teamId": null,
+          "clubId": "club-supreme",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C2-VANGUARD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "VANGUARD WHITE",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-white",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 8,
+        "whiteRaw": "2",
+        "darkRaw": "8",
+        "whiteRegulation": 2,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-vanguard-white",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-supreme",
+        "loserTeamId": null,
+        "loserName": "SUPREME"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag08",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag08",
+      "sourceGameNumber": "14BAG08",
+      "sourceRow": 14,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-KERN PREMIER COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "KERN PREMIER COED",
+          "participantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+          "teamId": null,
+          "clubId": "club-kern-premier",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A2-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2025-14u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 5,
+        "whiteRaw": "15",
+        "darkRaw": "5",
+        "whiteRegulation": 15,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+        "winnerTeamId": null,
+        "winnerName": "KERN PREMIER COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-la-jolla-united-white",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag14",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag14",
+      "sourceGameNumber": "14BAG14",
+      "sourceRow": 15,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D1,D2",
+      "stageDisplay": "D bracket D1,D2",
+      "stageMeta": {
+        "raw": "D bracket D1,D2",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D1,D2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D1,D2"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-LA CITY UNITED WATER POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "LA CITY UNITED WATER POLO",
+          "participantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D2-CDM WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "CDM WHITE",
+          "participantId": "tournament-team-2025-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 2,
+        "whiteRaw": "12",
+        "darkRaw": "2",
+        "whiteRegulation": 12,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+        "winnerTeamId": null,
+        "winnerName": "LA CITY UNITED WATER POLO",
+        "loserParticipantId": "tournament-team-2025-14u-boys-cdm-white",
+        "loserTeamId": null,
+        "loserName": "CDM WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR LEFT",
+          "raw": "WOOLLETT NEAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag10",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag10",
+      "sourceGameNumber": "14BAG10",
+      "sourceRow": 16,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-SKIP COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "SKIP COED",
+          "participantId": "tournament-team-2025-14u-boys-skip-coed",
+          "teamId": null,
+          "clubId": "club-skip",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B2-NBWP SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "NBWP SILVER",
+          "participantId": "tournament-team-2025-14u-boys-nbwp-silver",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 7,
+        "whiteRaw": "18",
+        "darkRaw": "7",
+        "whiteRegulation": 18,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-skip-coed",
+        "winnerTeamId": null,
+        "winnerName": "SKIP COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-nbwp-silver",
+        "loserTeamId": null,
+        "loserName": "NBWP SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag16",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag16",
+      "sourceGameNumber": "14BAG16",
+      "sourceRow": 17,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E2,E3",
+      "stageDisplay": "E bracket E2,E3",
+      "stageMeta": {
+        "raw": "E bracket E2,E3",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E2,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E2,E3"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E2-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-14u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E3-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2025-14u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 7,
+        "whiteRaw": "15",
+        "darkRaw": "7",
+        "whiteRegulation": 15,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-north-irvine-red",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR LEFT",
+          "raw": "WOOLLETT NEAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag12",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag12",
+      "sourceGameNumber": "14BAG12",
+      "sourceRow": 18,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C2,C3",
+      "stageDisplay": "C bracket C2,C3",
+      "stageMeta": {
+        "raw": "C bracket C2,C3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C2,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C2,C3"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-VANGUARD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "VANGUARD WHITE",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-white",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-PALOS VERDES B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "PALOS VERDES B",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 8,
+        "whiteRaw": "5",
+        "darkRaw": "8",
+        "whiteRegulation": 5,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-palos-verdes-b",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-vanguard-white",
+        "loserTeamId": null,
+        "loserName": "VANGUARD WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag18",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag18",
+      "sourceGameNumber": "14BAG18",
+      "sourceRow": 19,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F1,F2",
+      "stageDisplay": "F bracket F1,F2",
+      "stageMeta": {
+        "raw": "F bracket F1,F2",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F1,F2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F1,F2"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1-BOA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1",
+          "displayName": "BOA",
+          "participantId": "tournament-team-2025-14u-boys-boa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F2-NORCAL TEAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2",
+          "displayName": "NORCAL TEAL",
+          "participantId": "tournament-team-2025-14u-boys-norcal-teal",
+          "teamId": null,
+          "clubId": "club-norcal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 11,
+        "whiteRaw": "8",
+        "darkRaw": "11",
+        "whiteRegulation": 8,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-norcal-teal",
+        "winnerTeamId": null,
+        "winnerName": "NORCAL TEAL",
+        "loserParticipantId": "tournament-team-2025-14u-boys-boa",
+        "loserTeamId": null,
+        "loserName": "BOA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR LEFT",
+          "raw": "WOOLLETT NEAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag19",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag19",
+      "sourceGameNumber": "14BAG19",
+      "sourceRow": 20,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-6th",
+      "stageDisplay": "1st-6th",
+      "stageMeta": {
+        "raw": "1st-6th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-6th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-6th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-KERN PREMIER COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "KERN PREMIER COED",
+          "participantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+          "teamId": null,
+          "clubId": "club-kern-premier",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G2(1stB)-SKIP COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "SKIP COED",
+          "participantId": "tournament-team-2025-14u-boys-skip-coed",
+          "teamId": null,
+          "clubId": "club-skip",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 15,
+        "whiteRaw": "5",
+        "darkRaw": "15",
+        "whiteRegulation": 5,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-skip-coed",
+        "winnerTeamId": null,
+        "winnerName": "SKIP COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+        "loserTeamId": null,
+        "loserName": "KERN PREMIER COED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag22",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag22",
+      "sourceGameNumber": "14BAG22",
+      "sourceRow": 21,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th-18th",
+      "stageDisplay": "13th-18th",
+      "stageMeta": {
+        "raw": "13th-18th",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "13th-18th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "13th-18th"
+      },
+      "venue": "EL TORO HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M1(3rdA)-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M1(3rdA)",
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2025-14u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "M2(3rdB)-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M2(3rdB)",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 14,
+        "whiteRaw": "6",
+        "darkRaw": "14",
+        "whiteRegulation": 6,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE BLACK",
+        "loserParticipantId": "tournament-team-2025-14u-boys-la-jolla-united-white",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS",
+          "raw": "EL TORO HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag24",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag24",
+      "sourceGameNumber": "14BAG24",
+      "sourceRow": 22,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th-18th",
+      "stageDisplay": "13th-18th",
+      "stageMeta": {
+        "raw": "13th-18th",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "13th-18th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "13th-18th"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N1(3rdD)-ROSE BOWL BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N1(3rdD)",
+          "displayName": "ROSE BOWL BLACK",
+          "participantId": "tournament-team-2025-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "N2(3rdE)-NSD STARS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N2(3rdE)",
+          "displayName": "NSD STARS",
+          "participantId": "tournament-team-2025-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 16,
+        "whiteRaw": "2",
+        "darkRaw": "16",
+        "whiteRegulation": 2,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-nsd-stars",
+        "winnerTeamId": null,
+        "winnerName": "NSD STARS",
+        "loserParticipantId": "tournament-team-2025-14u-boys-rose-bowl-black",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag26",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag26",
+      "sourceGameNumber": "14BAG26",
+      "sourceRow": 23,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-12th",
+      "stageDisplay": "7th-12th",
+      "stageMeta": {
+        "raw": "7th-12th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-12th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-12th"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(2ndC)-VANGUARD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(2ndC)",
+          "displayName": "VANGUARD WHITE",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-white",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3(2ndA)-TSUNAMI BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(2ndA)",
+          "displayName": "TSUNAMI BLACK",
+          "participantId": "tournament-team-2025-14u-boys-tsunami-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-vanguard-white",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD WHITE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-tsunami-black",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag21",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag21",
+      "sourceGameNumber": "14BAG21",
+      "sourceRow": 24,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-6th",
+      "stageDisplay": "1st-6th",
+      "stageMeta": {
+        "raw": "1st-6th",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-6th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-6th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(1stD)-LA CITY UNITED WATER POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(1stD)",
+          "displayName": "LA CITY UNITED WATER POLO",
+          "participantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "H2(1stE)-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(1stE)",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-14u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 20,
+        "whiteRaw": "12",
+        "darkRaw": "20",
+        "whiteRegulation": 12,
+        "darkRegulation": 20,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+        "loserTeamId": null,
+        "loserName": "LA CITY UNITED WATER POLO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag23",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag23",
+      "sourceGameNumber": "14BAG23",
+      "sourceRow": 25,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-12th",
+      "stageDisplay": "7th-12th",
+      "stageMeta": {
+        "raw": "7th-12th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-12th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-12th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(2ndF)-BOA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(2ndF)",
+          "displayName": "BOA",
+          "participantId": "tournament-team-2025-14u-boys-boa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "J2(2ndE)-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(2ndE)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2025-14u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 19,
+        "whiteRaw": "5",
+        "darkRaw": "19",
+        "whiteRegulation": 5,
+        "darkRegulation": 19,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-north-irvine-red",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-boa",
+        "loserTeamId": null,
+        "loserName": "BOA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag25",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag25",
+      "sourceGameNumber": "14BAG25",
+      "sourceRow": 26,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-6th",
+      "stageDisplay": "1st-6th",
+      "stageMeta": {
+        "raw": "1st-6th",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-6th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-6th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-KERN PREMIER COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "KERN PREMIER COED",
+          "participantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+          "teamId": null,
+          "clubId": "club-kern-premier",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G3(1stC)-PALOS VERDES B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3(1stC)",
+          "displayName": "PALOS VERDES B",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+        "winnerTeamId": null,
+        "winnerName": "KERN PREMIER COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-palos-verdes-b",
+        "loserTeamId": null,
+        "loserName": "PALOS VERDES B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag27",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag27",
+      "sourceGameNumber": "14BAG27",
+      "sourceRow": 27,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-6th",
+      "stageDisplay": "1st-6th",
+      "stageMeta": {
+        "raw": "1st-6th",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-6th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-6th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(1stD)-LA CITY UNITED WATER POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(1stD)",
+          "displayName": "LA CITY UNITED WATER POLO",
+          "participantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "H3(1stF)-NORCAL TEAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(1stF)",
+          "displayName": "NORCAL TEAL",
+          "participantId": "tournament-team-2025-14u-boys-norcal-teal",
+          "teamId": null,
+          "clubId": "club-norcal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5",
+        "whiteRegulation": 9,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+        "winnerTeamId": null,
+        "winnerName": "LA CITY UNITED WATER POLO",
+        "loserParticipantId": "tournament-team-2025-14u-boys-norcal-teal",
+        "loserTeamId": null,
+        "loserName": "NORCAL TEAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag32",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag32",
+      "sourceGameNumber": "14BAG32",
+      "sourceRow": 28,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-12th",
+      "stageDisplay": "7th-12th",
+      "stageMeta": {
+        "raw": "7th-12th",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-12th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-12th"
+      },
+      "venue": "WOOLLETT NEAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K2(2ndB)-NBWP SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(2ndB)",
+          "displayName": "NBWP SILVER",
+          "participantId": "tournament-team-2025-14u-boys-nbwp-silver",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "K3(2ndA)-TSUNAMI BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(2ndA)",
+          "displayName": "TSUNAMI BLACK",
+          "participantId": "tournament-team-2025-14u-boys-tsunami-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-nbwp-silver",
+        "winnerTeamId": null,
+        "winnerName": "NBWP SILVER",
+        "loserParticipantId": "tournament-team-2025-14u-boys-tsunami-black",
+        "loserTeamId": null,
+        "loserName": "TSUNAMI BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR RIGHT",
+          "raw": "WOOLLETT NEAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag36",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag36",
+      "sourceGameNumber": "14BAG36",
+      "sourceRow": 29,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th-18th",
+      "stageDisplay": "13th-18th",
+      "stageMeta": {
+        "raw": "13th-18th",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "13th-18th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "13th-18th"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N2(3rdE)-NSD STARS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N2(3rdE)",
+          "displayName": "NSD STARS",
+          "participantId": "tournament-team-2025-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "N3(3rdF)-SOUTH COAST BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N3(3rdF)",
+          "displayName": "SOUTH COAST BLUE",
+          "participantId": "tournament-team-2025-14u-boys-south-coast-blue",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 2,
+        "whiteRaw": "15",
+        "darkRaw": "2",
+        "whiteRegulation": 15,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-nsd-stars",
+        "winnerTeamId": null,
+        "winnerName": "NSD STARS",
+        "loserParticipantId": "tournament-team-2025-14u-boys-south-coast-blue",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR LEFT",
+          "raw": "WOOLLETT NEAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag28",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag28",
+      "sourceGameNumber": "14BAG28",
+      "sourceRow": 30,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th-18th",
+      "stageDisplay": "13th-18th",
+      "stageMeta": {
+        "raw": "13th-18th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "13th-18th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "13th-18th"
+      },
+      "venue": "WOOLLETT NEAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M1(3rdA)-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M1(3rdA)",
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2025-14u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "M3(3rdC)-SUPREME",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M3(3rdC)",
+          "displayName": "SUPREME",
+          "participantId": "tournament-team-2025-14u-boys-supreme",
+          "teamId": null,
+          "clubId": "club-supreme",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 15,
+        "whiteRaw": "5",
+        "darkRaw": "15",
+        "whiteRegulation": 5,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-supreme",
+        "winnerTeamId": null,
+        "winnerName": "SUPREME",
+        "loserParticipantId": "tournament-team-2025-14u-boys-la-jolla-united-white",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR RIGHT",
+          "raw": "WOOLLETT NEAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag29",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag29",
+      "sourceGameNumber": "14BAG29",
+      "sourceRow": 31,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-12th",
+      "stageDisplay": "7th-12th",
+      "stageMeta": {
+        "raw": "7th-12th",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-12th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-12th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(2ndF)-BOA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(2ndF)",
+          "displayName": "BOA",
+          "participantId": "tournament-team-2025-14u-boys-boa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "J3(2ndD)-CDM WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(2ndD)",
+          "displayName": "CDM WHITE",
+          "participantId": "tournament-team-2025-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 10,
+        "whiteRaw": "17",
+        "darkRaw": "10",
+        "whiteRegulation": 17,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-boa",
+        "winnerTeamId": null,
+        "winnerName": "BOA",
+        "loserParticipantId": "tournament-team-2025-14u-boys-cdm-white",
+        "loserTeamId": null,
+        "loserName": "CDM WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag31",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag31",
+      "sourceGameNumber": "14BAG31",
+      "sourceRow": 32,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-6th",
+      "stageDisplay": "1st-6th",
+      "stageMeta": {
+        "raw": "1st-6th",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-6th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-6th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2(1stB)-SKIP COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "SKIP COED",
+          "participantId": "tournament-team-2025-14u-boys-skip-coed",
+          "teamId": null,
+          "clubId": "club-skip",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G3(1stC)-PALOS VERDES B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3(1stC)",
+          "displayName": "PALOS VERDES B",
+          "participantId": "tournament-team-2025-14u-boys-palos-verdes-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 8,
+        "whiteRaw": "15",
+        "darkRaw": "8",
+        "whiteRegulation": 15,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-skip-coed",
+        "winnerTeamId": null,
+        "winnerName": "SKIP COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-palos-verdes-b",
+        "loserTeamId": null,
+        "loserName": "PALOS VERDES B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag33",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag33",
+      "sourceGameNumber": "14BAG33",
+      "sourceRow": 33,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-6th",
+      "stageDisplay": "1st-6th",
+      "stageMeta": {
+        "raw": "1st-6th",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-6th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-6th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H2(1stE)-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(1stE)",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-14u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H3(1stF)-NORCAL TEAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(1stF)",
+          "displayName": "NORCAL TEAL",
+          "participantId": "tournament-team-2025-14u-boys-norcal-teal",
+          "teamId": null,
+          "clubId": "club-norcal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 6,
+        "whiteRaw": "15",
+        "darkRaw": "6",
+        "whiteRegulation": 15,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2025-14u-boys-norcal-teal",
+        "loserTeamId": null,
+        "loserName": "NORCAL TEAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag35",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag35",
+      "sourceGameNumber": "14BAG35",
+      "sourceRow": 34,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-12th",
+      "stageDisplay": "7th-12th",
+      "stageMeta": {
+        "raw": "7th-12th",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-12th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-12th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J2(2ndE)-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(2ndE)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2025-14u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J3(2ndD)-CDM WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(2ndD)",
+          "displayName": "CDM WHITE",
+          "participantId": "tournament-team-2025-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 5,
+        "whiteRaw": "17",
+        "darkRaw": "5",
+        "whiteRegulation": 17,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-north-irvine-red",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE RED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-cdm-white",
+        "loserTeamId": null,
+        "loserName": "CDM WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag20",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag20",
+      "sourceGameNumber": "14BAG20",
+      "sourceRow": 35,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-12th",
+      "stageDisplay": "7th-12th",
+      "stageMeta": {
+        "raw": "7th-12th",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-12th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-12th"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(2ndC)-VANGUARD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(2ndC)",
+          "displayName": "VANGUARD WHITE",
+          "participantId": "tournament-team-2025-14u-boys-vanguard-white",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K2(2ndB)-NBWP SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(2ndB)",
+          "displayName": "NBWP SILVER",
+          "participantId": "tournament-team-2025-14u-boys-nbwp-silver",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 13,
+        "whiteRaw": "4",
+        "darkRaw": "13",
+        "whiteRegulation": 4,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-nbwp-silver",
+        "winnerTeamId": null,
+        "winnerName": "NBWP SILVER",
+        "loserParticipantId": "tournament-team-2025-14u-boys-vanguard-white",
+        "loserTeamId": null,
+        "loserName": "VANGUARD WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR LEFT",
+          "raw": "WOOLLETT NEAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag30",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag30",
+      "sourceGameNumber": "14BAG30",
+      "sourceRow": 36,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th-18th",
+      "stageDisplay": "13th-18th",
+      "stageMeta": {
+        "raw": "13th-18th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "13th-18th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "13th-18th"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N1(3rdD)-ROSE BOWL BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N1(3rdD)",
+          "displayName": "ROSE BOWL BLACK",
+          "participantId": "tournament-team-2025-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "N3(3rdF)-SOUTH COAST BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N3(3rdF)",
+          "displayName": "SOUTH COAST BLUE",
+          "participantId": "tournament-team-2025-14u-boys-south-coast-blue",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 7,
+        "whiteRaw": "5",
+        "darkRaw": "7",
+        "whiteRegulation": 5,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-south-coast-blue",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST BLUE",
+        "loserParticipantId": "tournament-team-2025-14u-boys-rose-bowl-black",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag37",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag37",
+      "sourceGameNumber": "14BAG37",
+      "sourceRow": 37,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "overall 3rd",
+      "stageDisplay": "overall 3rd",
+      "stageMeta": {
+        "raw": "overall 3rd",
+        "detailRaw": "5.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "overall 3rd",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "overall 3rd"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndG-KERN PREMIER COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndG",
+          "displayName": "KERN PREMIER COED",
+          "participantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+          "teamId": null,
+          "clubId": "club-kern-premier",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "2ndH-LA CITY UNITED WATER POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndH",
+          "displayName": "LA CITY UNITED WATER POLO",
+          "participantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5.3,
+        "dark": 5.1,
+        "whiteRaw": "5.3",
+        "darkRaw": "5.1",
+        "whiteRegulation": 5,
+        "darkRegulation": 5,
+        "whiteShootout": 3,
+        "darkShootout": 1
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 5,
+        "darkRegulation": 5,
+        "whiteShootout": 3,
+        "darkShootout": 1
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-kern-premier-coed",
+        "winnerTeamId": null,
+        "winnerName": "KERN PREMIER COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-la-city-united-water-polo",
+        "loserTeamId": null,
+        "loserName": "LA CITY UNITED WATER POLO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag34",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag34",
+      "sourceGameNumber": "14BAG34",
+      "sourceRow": 38,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th-18th",
+      "stageDisplay": "13th-18th",
+      "stageMeta": {
+        "raw": "13th-18th",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "13th-18th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "13th-18th"
+      },
+      "venue": "WOOLLETT NEAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M2(3rdB)-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M2(3rdB)",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2025-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "M3(3rdC)-SUPREME",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M3(3rdC)",
+          "displayName": "SUPREME",
+          "participantId": "tournament-team-2025-14u-boys-supreme",
+          "teamId": null,
+          "clubId": "club-supreme",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8",
+        "whiteRegulation": 9,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE BLACK",
+        "loserParticipantId": "tournament-team-2025-14u-boys-supreme",
+        "loserTeamId": null,
+        "loserName": "SUPREME"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR RIGHT",
+          "raw": "WOOLLETT NEAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag38",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "14u-boys-silver",
+      "season": "2025",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "14Bag38",
+      "sourceGameNumber": "14BAG38",
+      "sourceRow": 39,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "overall 1st",
+      "stageDisplay": "overall 1st",
+      "stageMeta": {
+        "raw": "overall 1st",
+        "detailRaw": "10.4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "overall 1st",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "overall 1st"
+      },
+      "venue": "ALISO NIGUEL HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stG-SKIP COED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stG",
+          "displayName": "SKIP COED",
+          "participantId": "tournament-team-2025-14u-boys-skip-coed",
+          "teamId": null,
+          "clubId": "club-skip",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stH-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stH",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2025-14u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10.4,
+        "dark": 10.3,
+        "whiteRaw": "10.4",
+        "darkRaw": "10.3",
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 4,
+        "darkShootout": 3
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 4,
+        "darkShootout": 3
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2025-14u-boys-skip-coed",
+        "winnerTeamId": null,
+        "winnerName": "SKIP COED",
+        "loserParticipantId": "tournament-team-2025-14u-boys-lamorinda-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ALISO NIGUEL HS",
+          "raw": "ALISO NIGUEL HS"
+        }
+      }
+    }
+  ]
+}

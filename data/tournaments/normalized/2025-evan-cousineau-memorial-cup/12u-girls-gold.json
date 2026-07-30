@@ -1,0 +1,798 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2025-evan-cousineau-memorial-cup",
+    "name": "2025 Evan Cousineau Memorial Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "12u-girls-gold",
+    "label": "12U Girls Gold",
+    "season": "2025",
+    "ageGroup": "12U",
+    "gender": "Girls",
+    "division": "Gold",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2025-ec-cup",
+    "gid": "12u-girls-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2025-evan-cousineau-memorial-cup/12u-girls-gold.csv",
+    "fetchedAt": "2026-07-29T21:10:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "0bc1c47a4013438285daf3685a90dce0e4f7ad3c3afda08e0a7a35f7c7aff6b2",
+    "rowCount": 9
+  },
+  "counts": {
+    "games": 8,
+    "finalGames": 8,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 16,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 16,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 16
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-girls-gold-12gau01",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-girls-gold",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Gau01",
+      "sourceGameNumber": "12GAU01",
+      "sourceRow": 2,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2025-12u-girls-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2025-12u-girls-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 15,
+        "whiteRaw": "7",
+        "darkRaw": "15",
+        "whiteRegulation": 7,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-girls-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2025-12u-girls-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-girls-gold-12gau02",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-girls-gold",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Gau02",
+      "sourceGameNumber": "12GAU02",
+      "sourceRow": 3,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "10:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A4",
+      "stageDisplay": "A bracket A1,A4",
+      "stageMeta": {
+        "raw": "A bracket A1,A4",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A4"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-LADY TITANS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "LADY TITANS",
+          "participantId": "tournament-team-2025-12u-girls-lady-titans",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A4-ROSE BOWL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "ROSE BOWL RED",
+          "participantId": "tournament-team-2025-12u-girls-rose-bowl-red",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 13,
+        "whiteRaw": "4",
+        "darkRaw": "13",
+        "whiteRegulation": 4,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-girls-rose-bowl-red",
+        "winnerTeamId": null,
+        "winnerName": "ROSE BOWL RED",
+        "loserParticipantId": "tournament-team-2025-12u-girls-lady-titans",
+        "loserTeamId": null,
+        "loserName": "LADY TITANS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:50 AM",
+          "raw": "10:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-girls-gold-12gau03",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-girls-gold",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Gau03",
+      "sourceGameNumber": "12GAU03",
+      "sourceRow": 4,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "1:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-LADY TITANS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "LADY TITANS",
+          "participantId": "tournament-team-2025-12u-girls-lady-titans",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2025-12u-girls-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 14,
+        "whiteRaw": "5",
+        "darkRaw": "14",
+        "whiteRegulation": 5,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-girls-south-coast-red",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST RED",
+        "loserParticipantId": "tournament-team-2025-12u-girls-lady-titans",
+        "loserTeamId": null,
+        "loserName": "LADY TITANS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:20 PM",
+          "raw": "1:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-girls-gold-12gau04",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-girls-gold",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Gau04",
+      "sourceGameNumber": "12GAU04",
+      "sourceRow": 5,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "2:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A3,A4",
+      "stageDisplay": "A bracket A3,A4",
+      "stageMeta": {
+        "raw": "A bracket A3,A4",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A3,A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A3,A4"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A3-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2025-12u-girls-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A4-ROSE BOWL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "ROSE BOWL RED",
+          "participantId": "tournament-team-2025-12u-girls-rose-bowl-red",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 8,
+        "whiteRaw": "16",
+        "darkRaw": "8",
+        "whiteRegulation": 16,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-girls-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2025-12u-girls-rose-bowl-red",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:10 PM",
+          "raw": "2:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-girls-gold-12gau05",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-girls-gold",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Gau05",
+      "sourceGameNumber": "12GAU05",
+      "sourceRow": 6,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-LADY TITANS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "LADY TITANS",
+          "participantId": "tournament-team-2025-12u-girls-lady-titans",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2025-12u-girls-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 17,
+        "whiteRaw": "3",
+        "darkRaw": "17",
+        "whiteRegulation": 3,
+        "darkRegulation": 17,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-girls-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2025-12u-girls-lady-titans",
+        "loserTeamId": null,
+        "loserName": "LADY TITANS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-girls-gold-12gau06",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-girls-gold",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Gau06",
+      "sourceGameNumber": "12GAU06",
+      "sourceRow": 7,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A4",
+      "stageDisplay": "A bracket A2,A4",
+      "stageMeta": {
+        "raw": "A bracket A2,A4",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A4"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2025-12u-girls-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A4-ROSE BOWL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "ROSE BOWL RED",
+          "participantId": "tournament-team-2025-12u-girls-rose-bowl-red",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12",
+        "whiteRegulation": 10,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-girls-rose-bowl-red",
+        "winnerTeamId": null,
+        "winnerName": "ROSE BOWL RED",
+        "loserParticipantId": "tournament-team-2025-12u-girls-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-girls-gold-12gau07",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-girls-gold",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Gau07",
+      "sourceGameNumber": "12GAU07",
+      "sourceRow": 8,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2025-12u-girls-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "4thA-LADY TITANS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thA",
+          "displayName": "LADY TITANS",
+          "participantId": "tournament-team-2025-12u-girls-lady-titans",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 8,
+        "whiteRaw": "14",
+        "darkRaw": "8",
+        "whiteRegulation": 14,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-girls-south-coast-red",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST RED",
+        "loserParticipantId": "tournament-team-2025-12u-girls-lady-titans",
+        "loserTeamId": null,
+        "loserName": "LADY TITANS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-12u-girls-gold-12gau08",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "12u-girls-gold",
+      "season": "2025",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Gau08",
+      "sourceGameNumber": "12GAU08",
+      "sourceRow": 9,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2025-12u-girls-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "2ndA-ROSE BOWL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "ROSE BOWL RED",
+          "participantId": "tournament-team-2025-12u-girls-rose-bowl-red",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 11,
+        "whiteRaw": "15",
+        "darkRaw": "11",
+        "whiteRegulation": 15,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-12u-girls-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2025-12u-girls-rose-bowl-red",
+        "loserTeamId": null,
+        "loserName": "ROSE BOWL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    }
+  ]
+}

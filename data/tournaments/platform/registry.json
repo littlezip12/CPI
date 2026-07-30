@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.1",
-  "generatedAt": "2026-07-28T22:39:00-07:00",
-  "description": "Shared WPI tournament platform registry. Quiksilver Cup and Boys Futures Super Finals are migrated; other events remain on their proven viewers until deliberately migrated.",
+  "release": "7.54.7",
+  "generatedAt": "2026-07-29T21:10:00-07:00",
+  "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, and the 2025 Evan Cousineau Memorial Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
   "platformPath": "tournament.html",
   "schemaPaths": {
     "event": "tournaments/schema/tournament-event.schema.json",
@@ -25,6 +25,10 @@
     "repository_csv": {
       "mode": "repository",
       "purpose": "Static CSV import and historical fallback"
+    },
+    "uploaded_csv": {
+      "mode": "repository",
+      "purpose": "User-provided verified tournament results"
     }
   },
   "events": [
@@ -105,14 +109,14 @@
       ],
       "sourceAdapters": [
         {
-          "id": "quiksilver-normalized-bank",
+          "id": "2026-quiksilver-cup-normalized-bank",
           "type": "normalized_json",
           "role": "primary",
           "pathTemplate": "data/tournaments/normalized/2026-quiksilver-cup/{divisionId}.json",
           "readMode": "repository"
         },
         {
-          "id": "quiksilver-official-sheets",
+          "id": "2026-quiksilver-cup-source",
           "type": "google_sheets_csv",
           "role": "provenance",
           "readMode": "official_source",
@@ -146,14 +150,14 @@
       ],
       "sourceAdapters": [
         {
-          "id": "boys-futures-super-finals-normalized-bank",
+          "id": "2026-boys-futures-super-finals-normalized-bank",
           "type": "normalized_json",
           "role": "primary",
           "pathTemplate": "data/tournaments/normalized/2026-boys-futures-super-finals/{divisionId}.json",
           "readMode": "repository"
         },
         {
-          "id": "boys-futures-super-finals-official-sheets",
+          "id": "2026-boys-futures-super-finals-source",
           "type": "google_sheets_csv",
           "role": "provenance",
           "readMode": "official_source",
@@ -177,6 +181,47 @@
       "rankingEvidenceEnabled": false,
       "filterCapabilities": [],
       "sourceAdapters": []
+    },
+    {
+      "id": "2025-evan-cousineau-memorial-cup",
+      "name": "2025 Evan Cousineau Memorial Cup",
+      "shortName": "Evan Cousineau Memorial Cup",
+      "season": "2025",
+      "kind": "tournament_results",
+      "status": "complete",
+      "operationsMode": "historical_registered",
+      "divisionCount": 15,
+      "publicPath": "tournament.html?event=2025-evan-cousineau-memorial-cup",
+      "legacyPath": "tournament.html?event=2025-evan-cousineau-memorial-cup",
+      "migrationStatus": "platform_live",
+      "dataPath": "data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json",
+      "rankingEvidenceEnabled": false,
+      "filterCapabilities": [
+        "ageGroup",
+        "gender",
+        "division",
+        "team",
+        "date",
+        "venue",
+        "status",
+        "search"
+      ],
+      "sourceAdapters": [
+        {
+          "id": "2025-evan-cousineau-memorial-cup-normalized-bank",
+          "type": "normalized_json",
+          "role": "primary",
+          "pathTemplate": "data/tournaments/normalized/2025-evan-cousineau-memorial-cup/{divisionId}.json",
+          "readMode": "repository"
+        },
+        {
+          "id": "2025-evan-cousineau-memorial-cup-source",
+          "type": "uploaded_csv",
+          "role": "provenance",
+          "readMode": "repository",
+          "parser": "results_table_v1"
+        }
+      ]
     }
   ]
 }

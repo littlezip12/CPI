@@ -17,12 +17,12 @@ bridge=load('data/tournaments/jo-profile-bridge.json')
 rankings=load('rankings.json')
 clubs=load('data/identity/index.json').get('clubs',{})
 
-if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6'}: fail('site version must be 7.52.13')
+if site.get('version') not in {'7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7'}: fail('site version must be 7.52.13')
 if site.get('joProfileRelease')!='7.52.13': fail('joProfileRelease must be 7.52.13')
-if site.get('teamProfileRelease') not in {'7.52.13','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6'}: fail('teamProfileRelease must preserve the JO bridge')
-if site.get('clubProfileRelease') not in {'7.52.13','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6'}: fail('clubProfileRelease must preserve the JO profile bridge')
+if site.get('teamProfileRelease') not in {'7.52.13','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7'}: fail('teamProfileRelease must preserve the JO bridge')
+if site.get('clubProfileRelease') not in {'7.52.13','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7'}: fail('clubProfileRelease must preserve the JO profile bridge')
 if site.get('joResultsRelease')!='7.52.15': fail('joResultsRelease must be 7.52.15')
-if site.get('tournamentUIRelease') not in {'7.52.15','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6'}: fail('tournamentUIRelease must preserve JO profile routing while allowing the reusable tournament platform')
+if site.get('tournamentUIRelease') not in {'7.52.15','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7'}: fail('tournamentUIRelease must preserve JO profile routing while allowing the reusable tournament platform')
 if site.get('rankingDataRelease')!='7.52.13': fail('rankingDataRelease must be 7.52.13')
 if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')
 if bridge.get('release')!='7.52.13': fail('JO profile bridge release must be 7.52.13')
@@ -61,7 +61,7 @@ if len({kern_identity.get('id'),kearns.get('id'),skip_identity.get('id')})!=3: f
 html_requirements={
  'team.html':['css/jo-profile-bridge-v7-52-11.css?v=7.53.4','data/tournaments/jo-profile-runtime.js?v=7.53.4','js/team-profile-v7-42.js?v=7.53.4','js/team-tournament-history-v7-53-1.js?v=7.53.4'],
  'club.html':['css/jo-profile-bridge-v7-52-11.css?v=7.53.4','data/tournaments/jo-profile-runtime.js?v=7.53.4','js/club-intelligence-v7-26.js?v=7.53.4'],
- 'tournaments.html':['data/tournaments/jo-profile-runtime.js?v=7.53.4','js/tournament-hub-v7-54-4.js?v=7.54.6'],
+ 'tournaments.html':['data/tournaments/jo-profile-runtime.js?v=7.53.4','js/tournament-hub-v7-54-4.js?v=7.54.7'],
 }
 for rel,tokens in html_requirements.items():
     text=(ROOT/rel).read_text(encoding='utf-8')

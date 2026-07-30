@@ -1,0 +1,1722 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2025-evan-cousineau-memorial-cup",
+    "name": "2025 Evan Cousineau Memorial Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "10u-boys",
+    "label": "10U Boys",
+    "season": "2025",
+    "ageGroup": "10U",
+    "gender": "Boys",
+    "division": "Open",
+    "divisionTier": "Open",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2025-ec-cup",
+    "gid": "10u-boys",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2025-evan-cousineau-memorial-cup/10u-boys.csv",
+    "fetchedAt": "2026-07-29T21:10:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "88b5a9f6dfe10d9cbf59ab4b799ee6349edb471ed8f9bec2b93a54f0f1963598",
+    "rowCount": 19
+  },
+  "counts": {
+    "games": 18,
+    "finalGames": 18,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 36,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 36,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 36
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b01",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B01",
+      "sourceGameNumber": "10B01",
+      "sourceRow": 2,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "20",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-908 YELLOW",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "908 YELLOW",
+          "participantId": "tournament-team-2025-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-NBWP WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "NBWP WHITE",
+          "participantId": "tournament-team-2025-10u-boys-nbwp-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 20,
+        "dark": 4,
+        "whiteRaw": "20",
+        "darkRaw": "4",
+        "whiteRegulation": 20,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-908-yellow",
+        "winnerTeamId": null,
+        "winnerName": "908 YELLOW",
+        "loserParticipantId": "tournament-team-2025-10u-boys-nbwp-white",
+        "loserTeamId": null,
+        "loserName": "NBWP WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b02",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B02",
+      "sourceGameNumber": "10B02",
+      "sourceRow": 3,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-SOCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "SOCAL",
+          "participantId": "tournament-team-2025-10u-boys-socal",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 14,
+        "whiteRaw": "8",
+        "darkRaw": "14",
+        "whiteRegulation": 8,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2025-10u-boys-socal",
+        "loserTeamId": null,
+        "loserName": "SOCAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b03",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B03",
+      "sourceGameNumber": "10B03",
+      "sourceRow": 4,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "STANFORD RED",
+          "participantId": "tournament-team-2025-10u-boys-stanford-red",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-CDM",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "CDM",
+          "participantId": "tournament-team-2025-10u-boys-cdm",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 7,
+        "whiteRaw": "10",
+        "darkRaw": "7",
+        "whiteRegulation": 10,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-stanford-red",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD RED",
+        "loserParticipantId": "tournament-team-2025-10u-boys-cdm",
+        "loserTeamId": null,
+        "loserName": "CDM"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b04",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B04",
+      "sourceGameNumber": "10B04",
+      "sourceRow": 5,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-CCU BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "CCU BLACK",
+          "participantId": "tournament-team-2025-10u-boys-ccu-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-NBWP WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "NBWP WHITE",
+          "participantId": "tournament-team-2025-10u-boys-nbwp-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 6,
+        "whiteRaw": "15",
+        "darkRaw": "6",
+        "whiteRegulation": 15,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-ccu-black",
+        "winnerTeamId": null,
+        "winnerName": "CCU BLACK",
+        "loserParticipantId": "tournament-team-2025-10u-boys-nbwp-white",
+        "loserTeamId": null,
+        "loserName": "NBWP WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b05",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B05",
+      "sourceGameNumber": "10B05",
+      "sourceRow": 6,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-SOCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "SOCAL",
+          "participantId": "tournament-team-2025-10u-boys-socal",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2-ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2025-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 4,
+        "whiteRaw": "9",
+        "darkRaw": "4",
+        "whiteRegulation": 9,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-socal",
+        "winnerTeamId": null,
+        "winnerName": "SOCAL",
+        "loserParticipantId": "tournament-team-2025-10u-boys-orwp",
+        "loserTeamId": null,
+        "loserName": "ORWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b06",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B06",
+      "sourceGameNumber": "10B06",
+      "sourceRow": 7,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-DEL MAR BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "DEL MAR BLUE",
+          "participantId": "tournament-team-2025-10u-boys-del-mar-blue",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-CDM",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "CDM",
+          "participantId": "tournament-team-2025-10u-boys-cdm",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 10,
+        "whiteRaw": "16",
+        "darkRaw": "10",
+        "whiteRegulation": 16,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-del-mar-blue",
+        "winnerTeamId": null,
+        "winnerName": "DEL MAR BLUE",
+        "loserParticipantId": "tournament-team-2025-10u-boys-cdm",
+        "loserTeamId": null,
+        "loserName": "CDM"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b07",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B07",
+      "sourceGameNumber": "10B07",
+      "sourceRow": 8,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-CCU BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "CCU BLACK",
+          "participantId": "tournament-team-2025-10u-boys-ccu-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C2-908 YELLOW",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "908 YELLOW",
+          "participantId": "tournament-team-2025-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 17,
+        "whiteRaw": "7",
+        "darkRaw": "17",
+        "whiteRegulation": 7,
+        "darkRegulation": 17,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-908-yellow",
+        "winnerTeamId": null,
+        "winnerName": "908 YELLOW",
+        "loserParticipantId": "tournament-team-2025-10u-boys-ccu-black",
+        "loserTeamId": null,
+        "loserName": "CCU BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b08",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B08",
+      "sourceGameNumber": "10B08",
+      "sourceRow": 9,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2025-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11",
+        "whiteRegulation": 7,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2025-10u-boys-orwp",
+        "loserTeamId": null,
+        "loserName": "ORWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b09",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B09",
+      "sourceGameNumber": "10B09",
+      "sourceRow": 10,
+      "dateLabel": "4-Oct",
+      "dateIso": "2025-10-04",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-DEL MAR BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "DEL MAR BLUE",
+          "participantId": "tournament-team-2025-10u-boys-del-mar-blue",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A2-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "STANFORD RED",
+          "participantId": "tournament-team-2025-10u-boys-stanford-red",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 2,
+        "whiteRaw": "14",
+        "darkRaw": "2",
+        "whiteRegulation": 14,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-del-mar-blue",
+        "winnerTeamId": null,
+        "winnerName": "DEL MAR BLUE",
+        "loserParticipantId": "tournament-team-2025-10u-boys-stanford-red",
+        "loserTeamId": null,
+        "loserName": "STANFORD RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b10",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B10",
+      "sourceGameNumber": "10B10",
+      "sourceRow": 11,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket (7th-9th)",
+      "stageDisplay": "D bracket (7th-9th)",
+      "stageMeta": {
+        "raw": "D bracket (7th-9th)",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket (7th-9th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket (7th-9th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1(3rdA)-CDM",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1(3rdA)",
+          "displayName": "CDM",
+          "participantId": "tournament-team-2025-10u-boys-cdm",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3(3rdC)-NBWP WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3(3rdC)",
+          "displayName": "NBWP WHITE",
+          "participantId": "tournament-team-2025-10u-boys-nbwp-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 9,
+        "whiteRaw": "6",
+        "darkRaw": "9",
+        "whiteRegulation": 6,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-nbwp-white",
+        "winnerTeamId": null,
+        "winnerName": "NBWP WHITE",
+        "loserParticipantId": "tournament-team-2025-10u-boys-cdm",
+        "loserTeamId": null,
+        "loserName": "CDM"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b11",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B11",
+      "sourceGameNumber": "10B11",
+      "sourceRow": 12,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th)",
+      "stageDisplay": "E bracket (4th-6th)",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th)",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1(2ndA)-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1(2ndA)",
+          "displayName": "STANFORD RED",
+          "participantId": "tournament-team-2025-10u-boys-stanford-red",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E3(2ndC)-CCU BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3(2ndC)",
+          "displayName": "CCU BLACK",
+          "participantId": "tournament-team-2025-10u-boys-ccu-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 14,
+        "whiteRaw": "5",
+        "darkRaw": "14",
+        "whiteRegulation": 5,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-ccu-black",
+        "winnerTeamId": null,
+        "winnerName": "CCU BLACK",
+        "loserParticipantId": "tournament-team-2025-10u-boys-stanford-red",
+        "loserTeamId": null,
+        "loserName": "STANFORD RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b12",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B12",
+      "sourceGameNumber": "10B12",
+      "sourceRow": 13,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd)",
+      "stageDisplay": "F bracket (1st-3rd)",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd)",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1(1stA)-DEL MAR BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1(1stA)",
+          "displayName": "DEL MAR BLUE",
+          "participantId": "tournament-team-2025-10u-boys-del-mar-blue",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "F3(1stC)-908 YELLOW",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3(1stC)",
+          "displayName": "908 YELLOW",
+          "participantId": "tournament-team-2025-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 8,
+        "whiteRaw": "13",
+        "darkRaw": "8",
+        "whiteRegulation": 13,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-del-mar-blue",
+        "winnerTeamId": null,
+        "winnerName": "DEL MAR BLUE",
+        "loserParticipantId": "tournament-team-2025-10u-boys-908-yellow",
+        "loserTeamId": null,
+        "loserName": "908 YELLOW"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b13",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B13",
+      "sourceGameNumber": "10B13",
+      "sourceRow": 14,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th)",
+      "stageDisplay": "E bracket (4th-6th)",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th)",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E2(2ndB)-SOCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2(2ndB)",
+          "displayName": "SOCAL",
+          "participantId": "tournament-team-2025-10u-boys-socal",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3(2ndC)-CCU BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3(2ndC)",
+          "displayName": "CCU BLACK",
+          "participantId": "tournament-team-2025-10u-boys-ccu-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 15,
+        "whiteRaw": "8",
+        "darkRaw": "15",
+        "whiteRegulation": 8,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-ccu-black",
+        "winnerTeamId": null,
+        "winnerName": "CCU BLACK",
+        "loserParticipantId": "tournament-team-2025-10u-boys-socal",
+        "loserTeamId": null,
+        "loserName": "SOCAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b14",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B14",
+      "sourceGameNumber": "10B14",
+      "sourceRow": 15,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket (7th-9th)",
+      "stageDisplay": "D bracket (7th-9th)",
+      "stageMeta": {
+        "raw": "D bracket (7th-9th)",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket (7th-9th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket (7th-9th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2(3rdB)-ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2(3rdB)",
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2025-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3(3rdC)-NBWP WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3(3rdC)",
+          "displayName": "NBWP WHITE",
+          "participantId": "tournament-team-2025-10u-boys-nbwp-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5",
+        "whiteRegulation": 10,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-orwp",
+        "winnerTeamId": null,
+        "winnerName": "ORWP",
+        "loserParticipantId": "tournament-team-2025-10u-boys-nbwp-white",
+        "loserTeamId": null,
+        "loserName": "NBWP WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b15",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B15",
+      "sourceGameNumber": "10B15",
+      "sourceRow": 16,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd)",
+      "stageDisplay": "F bracket (1st-3rd)",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd)",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd)"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F2(1stB)-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2(1stB)",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "F3(1stC)-908 YELLOW",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3(1stC)",
+          "displayName": "908 YELLOW",
+          "participantId": "tournament-team-2025-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11",
+        "whiteRegulation": 7,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-908-yellow",
+        "winnerTeamId": null,
+        "winnerName": "908 YELLOW",
+        "loserParticipantId": "tournament-team-2025-10u-boys-san-clemente-red",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b16",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B16",
+      "sourceGameNumber": "10B16",
+      "sourceRow": 17,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket (7th-9th)",
+      "stageDisplay": "D bracket (7th-9th)",
+      "stageMeta": {
+        "raw": "D bracket (7th-9th)",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket (7th-9th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket (7th-9th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1(3rdA)-CDM",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1(3rdA)",
+          "displayName": "CDM",
+          "participantId": "tournament-team-2025-10u-boys-cdm",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D2(3rdB)-ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2(3rdB)",
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2025-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 18,
+        "whiteRaw": "5",
+        "darkRaw": "18",
+        "whiteRegulation": 5,
+        "darkRegulation": 18,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-orwp",
+        "winnerTeamId": null,
+        "winnerName": "ORWP",
+        "loserParticipantId": "tournament-team-2025-10u-boys-cdm",
+        "loserTeamId": null,
+        "loserName": "CDM"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b17",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B17",
+      "sourceGameNumber": "10B17",
+      "sourceRow": 18,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th)",
+      "stageDisplay": "E bracket (4th-6th)",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th)",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th)"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1(2ndA)-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1(2ndA)",
+          "displayName": "STANFORD RED",
+          "participantId": "tournament-team-2025-10u-boys-stanford-red",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E2(2ndB)-SOCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2(2ndB)",
+          "displayName": "SOCAL",
+          "participantId": "tournament-team-2025-10u-boys-socal",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-stanford-red",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD RED",
+        "loserParticipantId": "tournament-team-2025-10u-boys-socal",
+        "loserTeamId": null,
+        "loserName": "SOCAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2025-evan-cousineau-memorial-cup-10u-boys-10b18",
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "divisionId": "10u-boys",
+      "season": "2025",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "10B18",
+      "sourceGameNumber": "10B18",
+      "sourceRow": 19,
+      "dateLabel": "5-Oct",
+      "dateIso": "2025-10-05",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd)",
+      "stageDisplay": "F bracket (1st-3rd)",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd)",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd)",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd)"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1(1stA)-DEL MAR BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1(1stA)",
+          "displayName": "DEL MAR BLUE",
+          "participantId": "tournament-team-2025-10u-boys-del-mar-blue",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "F2(1stB)-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2(1stB)",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2025-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 7,
+        "whiteRaw": "15",
+        "darkRaw": "7",
+        "whiteRegulation": 15,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2025-10u-boys-del-mar-blue",
+        "winnerTeamId": null,
+        "winnerName": "DEL MAR BLUE",
+        "loserParticipantId": "tournament-team-2025-10u-boys-san-clemente-red",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    }
+  ]
+}
