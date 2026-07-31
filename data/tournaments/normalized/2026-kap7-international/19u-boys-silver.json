@@ -1,0 +1,1164 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "19u-boys-silver",
+    "label": "19U Boys Silver",
+    "season": "2026",
+    "ageGroup": "19U",
+    "gender": "Boys",
+    "division": "Silver",
+    "divisionTier": "D3",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "19u-boys-silver",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/19u-boys-silver.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "14cf922426c57aad69ca802b6643ff18ed1267692a29402fb7021402dbdffe60",
+    "rowCount": 13
+  },
+  "counts": {
+    "games": 12,
+    "finalGames": 12,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 24,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 24,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 24
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag01",
+      "sourceGameNumber": "19BAG01",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-19u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "SD ECA",
+          "participantId": "tournament-team-2026-19u-boys-sd-eca",
+          "teamId": null,
+          "clubId": "club-sd-eca",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11",
+        "whiteRegulation": 9,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-sd-eca",
+        "winnerTeamId": null,
+        "winnerName": "SD ECA",
+        "loserParticipantId": "tournament-team-2026-19u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:30 PM",
+          "raw": "12:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag02",
+      "sourceGameNumber": "19BAG02",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-CHARGERS WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "CHARGERS WHITE",
+          "participantId": "tournament-team-2026-19u-boys-chargers-white",
+          "teamId": null,
+          "clubId": "club-chargers",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-OHANA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "OHANA",
+          "participantId": "tournament-team-2026-19u-boys-ohana",
+          "teamId": null,
+          "clubId": "club-ohana",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 6,
+        "whiteRaw": "9",
+        "darkRaw": "6",
+        "whiteRegulation": 9,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-chargers-white",
+        "winnerTeamId": null,
+        "winnerName": "CHARGERS WHITE",
+        "loserParticipantId": "tournament-team-2026-19u-boys-ohana",
+        "loserTeamId": null,
+        "loserName": "OHANA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:30 PM",
+          "raw": "1:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag03",
+      "sourceGameNumber": "19BAG03",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-OPA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "OPA",
+          "participantId": "tournament-team-2026-19u-boys-opa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "SD ECA",
+          "participantId": "tournament-team-2026-19u-boys-sd-eca",
+          "teamId": null,
+          "clubId": "club-sd-eca",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 14,
+        "whiteRaw": "6",
+        "darkRaw": "14",
+        "whiteRegulation": 6,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-sd-eca",
+        "winnerTeamId": null,
+        "winnerName": "SD ECA",
+        "loserParticipantId": "tournament-team-2026-19u-boys-opa",
+        "loserTeamId": null,
+        "loserName": "OPA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag04",
+      "sourceGameNumber": "19BAG04",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-CHARGERS WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "CHARGERS WHITE",
+          "participantId": "tournament-team-2026-19u-boys-chargers-white",
+          "teamId": null,
+          "clubId": "club-chargers",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B2-SAN JOSE EXPRESS GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "SAN JOSE EXPRESS GOLD",
+          "participantId": "tournament-team-2026-19u-boys-san-jose-express-gold",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 8,
+        "whiteRaw": "10",
+        "darkRaw": "8",
+        "whiteRegulation": 10,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-chargers-white",
+        "winnerTeamId": null,
+        "winnerName": "CHARGERS WHITE",
+        "loserParticipantId": "tournament-team-2026-19u-boys-san-jose-express-gold",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag05",
+      "sourceGameNumber": "19BAG05",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-19u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A2-OPA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "OPA",
+          "participantId": "tournament-team-2026-19u-boys-opa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 8,
+        "whiteRaw": "10",
+        "darkRaw": "8",
+        "whiteRegulation": 10,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-19u-boys-opa",
+        "loserTeamId": null,
+        "loserName": "OPA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:30 PM",
+          "raw": "4:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag06",
+      "sourceGameNumber": "19BAG06",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-SAN JOSE EXPRESS GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "SAN JOSE EXPRESS GOLD",
+          "participantId": "tournament-team-2026-19u-boys-san-jose-express-gold",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-OHANA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "OHANA",
+          "participantId": "tournament-team-2026-19u-boys-ohana",
+          "teamId": null,
+          "clubId": "club-ohana",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 15,
+        "whiteRaw": "5",
+        "darkRaw": "15",
+        "whiteRegulation": 5,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-ohana",
+        "winnerTeamId": null,
+        "winnerName": "OHANA",
+        "loserParticipantId": "tournament-team-2026-19u-boys-san-jose-express-gold",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:30 PM",
+          "raw": "5:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag07",
+      "sourceGameNumber": "19BAG07",
+      "sourceRow": 8,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A1,B2",
+      "stageDisplay": "A1,B2",
+      "stageMeta": {
+        "raw": "A1,B2",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A1,B2"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-19u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2-SAN JOSE EXPRESS GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "SAN JOSE EXPRESS GOLD",
+          "participantId": "tournament-team-2026-19u-boys-san-jose-express-gold",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 8,
+        "whiteRaw": "7",
+        "darkRaw": "8",
+        "whiteRegulation": 7,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-san-jose-express-gold",
+        "winnerTeamId": null,
+        "winnerName": "SAN JOSE EXPRESS GOLD",
+        "loserParticipantId": "tournament-team-2026-19u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag08",
+      "sourceGameNumber": "19BAG08",
+      "sourceRow": 9,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A2,B3",
+      "stageDisplay": "A2,B3",
+      "stageMeta": {
+        "raw": "A2,B3",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A2,B3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-OPA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "OPA",
+          "participantId": "tournament-team-2026-19u-boys-opa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3-OHANA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "OHANA",
+          "participantId": "tournament-team-2026-19u-boys-ohana",
+          "teamId": null,
+          "clubId": "club-ohana",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10",
+        "whiteRegulation": 7,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-ohana",
+        "winnerTeamId": null,
+        "winnerName": "OHANA",
+        "loserParticipantId": "tournament-team-2026-19u-boys-opa",
+        "loserTeamId": null,
+        "loserName": "OPA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag09",
+      "sourceGameNumber": "19BAG09",
+      "sourceRow": 10,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A3,B2",
+      "stageDisplay": "A3,B2",
+      "stageMeta": {
+        "raw": "A3,B2",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A3,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A3,B2"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A3-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "SD ECA",
+          "participantId": "tournament-team-2026-19u-boys-sd-eca",
+          "teamId": null,
+          "clubId": "club-sd-eca",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2-SAN JOSE EXPRESS GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "SAN JOSE EXPRESS GOLD",
+          "participantId": "tournament-team-2026-19u-boys-san-jose-express-gold",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 5,
+        "whiteRaw": "15",
+        "darkRaw": "5",
+        "whiteRegulation": 15,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-sd-eca",
+        "winnerTeamId": null,
+        "winnerName": "SD ECA",
+        "loserParticipantId": "tournament-team-2026-19u-boys-san-jose-express-gold",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag10",
+      "sourceGameNumber": "19BAG10",
+      "sourceRow": 11,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A1,B1",
+      "stageDisplay": "A1,B1",
+      "stageMeta": {
+        "raw": "A1,B1",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A1,B1",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A1,B1"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-19u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B1-CHARGERS WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "CHARGERS WHITE",
+          "participantId": "tournament-team-2026-19u-boys-chargers-white",
+          "teamId": null,
+          "clubId": "club-chargers",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 9,
+        "whiteRaw": "5",
+        "darkRaw": "9",
+        "whiteRegulation": 5,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-chargers-white",
+        "winnerTeamId": null,
+        "winnerName": "CHARGERS WHITE",
+        "loserParticipantId": "tournament-team-2026-19u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag11",
+      "sourceGameNumber": "19BAG11",
+      "sourceRow": 12,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A2,B1",
+      "stageDisplay": "A2,B1",
+      "stageMeta": {
+        "raw": "A2,B1",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A2,B1",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A2,B1"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-OPA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "OPA",
+          "participantId": "tournament-team-2026-19u-boys-opa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B1-CHARGERS WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "CHARGERS WHITE",
+          "participantId": "tournament-team-2026-19u-boys-chargers-white",
+          "teamId": null,
+          "clubId": "club-chargers",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 16,
+        "whiteRaw": "5",
+        "darkRaw": "16",
+        "whiteRegulation": 5,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-chargers-white",
+        "winnerTeamId": null,
+        "winnerName": "CHARGERS WHITE",
+        "loserParticipantId": "tournament-team-2026-19u-boys-opa",
+        "loserTeamId": null,
+        "loserName": "OPA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-silver-19bag12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-silver",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "19Bag12",
+      "sourceGameNumber": "19BAG12",
+      "sourceRow": 13,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A3,B3",
+      "stageDisplay": "A3,B3",
+      "stageMeta": {
+        "raw": "A3,B3",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A3,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A3,B3"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A3-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "SD ECA",
+          "participantId": "tournament-team-2026-19u-boys-sd-eca",
+          "teamId": null,
+          "clubId": "club-sd-eca",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-OHANA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "OHANA",
+          "participantId": "tournament-team-2026-19u-boys-ohana",
+          "teamId": null,
+          "clubId": "club-ohana",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 12,
+        "whiteRaw": "17",
+        "darkRaw": "12",
+        "whiteRegulation": 17,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-sd-eca",
+        "winnerTeamId": null,
+        "winnerName": "SD ECA",
+        "loserParticipantId": "tournament-team-2026-19u-boys-ohana",
+        "loserTeamId": null,
+        "loserName": "OHANA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    }
+  ]
+}

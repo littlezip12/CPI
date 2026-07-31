@@ -1,9 +1,10 @@
-# WPI 7.54.8
+# WPI 7.54.9
 
-2026 San Diego County Cup archive launch.
+2026 KAP7 International archive launch.
 
-- Adds 10 supplied divisions and 710 games from May 1–3, 2026.
-- Publishes 174 exact placements supported by completed placement games or unambiguous bracket paths.
-- Preserves complete journeys and records for all 266 division-team entries without inferring unsupported lower placements.
-- Includes 10U Boys, 12U Boys and Girls, and 14U Boys and Girls; 10U Girls and 10U Coed are intentionally excluded.
-- Connects verified WPI club identities and logos wherever an approved match exists.
+- Adds all 18 supplied divisions and 579 games from January 31–February 1, 2026.
+- Publishes 136 verified exact or officially tied placements without inferring unsupported finishes.
+- Preserves complete journeys and records for all 280 division-team entries.
+- Includes 10U–19U Boys, Girls, and Coed divisions from the supplied master file.
+- Connects 254 team entries to verified WPI club artwork; unmatched clubs use the WPI fallback.
+- Preserves one partial 10U Coed score as score unavailable and does not infer a placement from it.

@@ -1,0 +1,4070 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "16u-boys-silver",
+    "label": "16U Boys Silver",
+    "season": "2026",
+    "ageGroup": "16U",
+    "gender": "Boys",
+    "division": "Silver",
+    "divisionTier": "D3",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "16u-boys-silver",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/16u-boys-silver.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "e10a49cd9fcaf220ae72b8400472a014f3a7891f64ad048b589ee5825692796c",
+    "rowCount": 44
+  },
+  "counts": {
+    "games": 43,
+    "finalGames": 43,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 86,
+    "resolvedTeamParticipants": 8,
+    "unresolvedTeamParticipants": 78,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 78
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag03",
+      "sourceGameNumber": "16BAG03",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "22",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-16u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A2-BOA WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "BOA WHITE",
+          "participantId": "tournament-team-2026-16u-boys-boa-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 22,
+        "dark": 7,
+        "whiteRaw": "22",
+        "darkRaw": "7",
+        "whiteRegulation": 22,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-mid-pen",
+        "winnerTeamId": null,
+        "winnerName": "MID PEN",
+        "loserParticipantId": "tournament-team-2026-16u-boys-boa-white",
+        "loserTeamId": null,
+        "loserName": "BOA WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag12",
+      "sourceGameNumber": "16BAG12",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "8.4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "YORBA LINDA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2-LOYOLA WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "LOYOLA WPC",
+          "participantId": "tournament-team-2026-16u-boys-loyola-wpc",
+          "teamId": null,
+          "clubId": "club-loyola-wpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8.4,
+        "dark": 8.5,
+        "whiteRaw": "8.4",
+        "darkRaw": "8.5",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 4,
+        "darkShootout": 5
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 4,
+        "darkShootout": 5
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cc-united-white",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-loyola-wpc",
+        "loserTeamId": null,
+        "loserName": "LOYOLA WPC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "YORBA LINDA HS",
+          "raw": "YORBA LINDA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag07",
+      "sourceGameNumber": "16BAG07",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L F",
+      "stageDisplay": "W/L F",
+      "stageMeta": {
+        "raw": "W/L F",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L F",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L F"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "6-HIELAND",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": null,
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-16u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "19-SAN JOSE EXPRESS GOLD",
+          "kind": "team",
+          "seed": 19,
+          "sourceReference": null,
+          "displayName": "SAN JOSE EXPRESS GOLD",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-gold",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8",
+        "whiteRegulation": 9,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-hieland",
+        "winnerTeamId": null,
+        "winnerName": "HIELAND",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-jose-express-gold",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag13",
+      "sourceGameNumber": "16BAG13",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "YORBA LINDA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-SANTA CRUZ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "SANTA CRUZ",
+          "participantId": "tournament-team-2026-16u-boys-santa-cruz",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-LA JOLLA UNITED SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "LA JOLLA UNITED SILVER",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-silver",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 1,
+        "whiteRaw": "7",
+        "darkRaw": "1",
+        "whiteRegulation": 7,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-santa-cruz",
+        "winnerTeamId": null,
+        "winnerName": "SANTA CRUZ",
+        "loserParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-silver",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "YORBA LINDA HS",
+          "raw": "YORBA LINDA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag08",
+      "sourceGameNumber": "16BAG08",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L F",
+      "stageDisplay": "W/L F",
+      "stageMeta": {
+        "raw": "W/L F",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L F",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L F"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "7-WCAC UNITED",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": null,
+          "displayName": "WCAC United",
+          "participantId": "team-2026-16u-boys-wcac-united-16u-boys",
+          "teamId": "team-2026-16u-boys-wcac-united-16u-boys",
+          "clubId": "club-wcac-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "18-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": null,
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-16u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 7,
+        "whiteRaw": "10",
+        "darkRaw": "7",
+        "whiteRegulation": 10,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-wcac-united-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-wcac-united-16u-boys",
+        "winnerName": "WCAC United",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag14",
+      "sourceGameNumber": "16BAG14",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "YORBA LINDA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-16u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C3-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2026-16u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 12,
+        "whiteRaw": "11",
+        "darkRaw": "12",
+        "whiteRegulation": 11,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "YORBA LINDA HS",
+          "raw": "YORBA LINDA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag01",
+      "sourceGameNumber": "16BAG01",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L E",
+      "stageDisplay": "W/L E",
+      "stageMeta": {
+        "raw": "W/L E",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L E",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L E"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3-SHORE AQUATICS",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": null,
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-16u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "20-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": 20,
+          "sourceReference": null,
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 22,
+        "whiteRaw": "3",
+        "darkRaw": "22",
+        "whiteRegulation": 3,
+        "darkRegulation": 22,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag06",
+      "sourceGameNumber": "16BAG06",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-16u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-TRITON GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "TRITON GOLD",
+          "participantId": "tournament-team-2026-16u-boys-triton-gold",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 3,
+        "whiteRaw": "12",
+        "darkRaw": "3",
+        "whiteRegulation": 12,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-mid-pen",
+        "winnerTeamId": null,
+        "winnerName": "MID PEN",
+        "loserParticipantId": "tournament-team-2026-16u-boys-triton-gold",
+        "loserTeamId": null,
+        "loserName": "TRITON GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag15",
+      "sourceGameNumber": "16BAG15",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "YORBA LINDA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-16u-boys-sd-eca-16u-boys",
+          "teamId": "team-2026-16u-boys-sd-eca-16u-boys",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "D3-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 9,
+        "whiteRaw": "8",
+        "darkRaw": "9",
+        "whiteRegulation": 8,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cc-united-white",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED WHITE",
+        "loserParticipantId": "team-2026-16u-boys-sd-eca-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-sd-eca-16u-boys",
+        "loserName": "SD ECA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "YORBA LINDA HS",
+          "raw": "YORBA LINDA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag02",
+      "sourceGameNumber": "16BAG02",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L E",
+      "stageDisplay": "W/L E",
+      "stageMeta": {
+        "raw": "W/L E",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L E",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L E"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "10-STANFORD WHITE",
+          "kind": "team",
+          "seed": 10,
+          "sourceReference": null,
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-16u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "15-LV LEGENDS",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": null,
+          "displayName": "LV LEGENDS",
+          "participantId": "tournament-team-2026-16u-boys-lv-legends",
+          "teamId": null,
+          "clubId": "club-lv-legends",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 4,
+        "whiteRaw": "13",
+        "darkRaw": "4",
+        "whiteRegulation": 13,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-stanford-white",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-lv-legends",
+        "loserTeamId": null,
+        "loserName": "LV LEGENDS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag16",
+      "sourceGameNumber": "16BAG16",
+      "sourceRow": 12,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "NORTH IRVINE",
+          "participantId": "tournament-team-2026-16u-boys-north-irvine",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-LA JOLLA UNITED SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "LA JOLLA UNITED SILVER",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-silver",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 10,
+        "whiteRaw": "3",
+        "darkRaw": "10",
+        "whiteRegulation": 3,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-silver",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED SILVER",
+        "loserParticipantId": "tournament-team-2026-16u-boys-north-irvine",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag09",
+      "sourceGameNumber": "16BAG09",
+      "sourceRow": 13,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-BOA WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "BOA WHITE",
+          "participantId": "tournament-team-2026-16u-boys-boa-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3-TRITON GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "TRITON GOLD",
+          "participantId": "tournament-team-2026-16u-boys-triton-gold",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 11,
+        "whiteRaw": "3",
+        "darkRaw": "11",
+        "whiteRegulation": 3,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-triton-gold",
+        "winnerTeamId": null,
+        "winnerName": "TRITON GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-boa-white",
+        "loserTeamId": null,
+        "loserName": "BOA WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag10",
+      "sourceGameNumber": "16BAG10",
+      "sourceRow": 14,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndF",
+      "stageDisplay": "1st/2ndF",
+      "stageMeta": {
+        "raw": "1st/2ndF",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndF",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndF"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#7-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#7",
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-16u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#8-WCAC UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#8",
+          "displayName": "WCAC United",
+          "participantId": "team-2026-16u-boys-wcac-united-16u-boys",
+          "teamId": "team-2026-16u-boys-wcac-united-16u-boys",
+          "clubId": "club-wcac-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 4,
+        "whiteRaw": "13",
+        "darkRaw": "4",
+        "whiteRegulation": 13,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-hieland",
+        "winnerTeamId": null,
+        "winnerName": "HIELAND",
+        "loserParticipantId": "team-2026-16u-boys-wcac-united-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-wcac-united-16u-boys",
+        "loserName": "WCAC United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag17",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag17",
+      "sourceGameNumber": "16BAG17",
+      "sourceRow": 15,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-DAVIS WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "DAVIS WHITE",
+          "participantId": "tournament-team-2026-16u-boys-davis-white",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2026-16u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11",
+        "whiteRegulation": 7,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-davis-white",
+        "loserTeamId": null,
+        "loserName": "DAVIS WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag11",
+      "sourceGameNumber": "16BAG11",
+      "sourceRow": 16,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thF",
+      "stageDisplay": "3rd/4thF",
+      "stageMeta": {
+        "raw": "3rd/4thF",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thF",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thF"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#7-SAN JOSE EXPRESS GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#7",
+          "displayName": "SAN JOSE EXPRESS GOLD",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-gold",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#8-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#8",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-16u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7",
+        "whiteRegulation": 12,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-jose-express-gold",
+        "winnerTeamId": null,
+        "winnerName": "SAN JOSE EXPRESS GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag18",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag18",
+      "sourceGameNumber": "16BAG18",
+      "sourceRow": 17,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-16u-boys-sd-eca-16u-boys",
+          "teamId": "team-2026-16u-boys-sd-eca-16u-boys",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "D2-LOYOLA WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "LOYOLA WPC",
+          "participantId": "tournament-team-2026-16u-boys-loyola-wpc",
+          "teamId": null,
+          "clubId": "club-loyola-wpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 6,
+        "whiteRaw": "10",
+        "darkRaw": "6",
+        "whiteRegulation": 10,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-sd-eca-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-sd-eca-16u-boys",
+        "winnerName": "SD ECA",
+        "loserParticipantId": "tournament-team-2026-16u-boys-loyola-wpc",
+        "loserTeamId": null,
+        "loserName": "LOYOLA WPC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag04",
+      "sourceGameNumber": "16BAG04",
+      "sourceRow": 18,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thE",
+      "stageDisplay": "3rd/4thE",
+      "stageMeta": {
+        "raw": "3rd/4thE",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thE",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thE"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#1-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#1",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-16u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#2-LV LEGENDS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#2",
+          "displayName": "LV LEGENDS",
+          "participantId": "tournament-team-2026-16u-boys-lv-legends",
+          "teamId": null,
+          "clubId": "club-lv-legends",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12",
+        "whiteRegulation": 10,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-lv-legends",
+        "winnerTeamId": null,
+        "winnerName": "LV LEGENDS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag19",
+      "sourceGameNumber": "16BAG19",
+      "sourceRow": 19,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-SANTA CRUZ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "SANTA CRUZ",
+          "participantId": "tournament-team-2026-16u-boys-santa-cruz",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "NORTH IRVINE",
+          "participantId": "tournament-team-2026-16u-boys-north-irvine",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 4,
+        "whiteRaw": "10",
+        "darkRaw": "4",
+        "whiteRegulation": 10,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-santa-cruz",
+        "winnerTeamId": null,
+        "winnerName": "SANTA CRUZ",
+        "loserParticipantId": "tournament-team-2026-16u-boys-north-irvine",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag05",
+      "sourceGameNumber": "16BAG05",
+      "sourceRow": 20,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndE",
+      "stageDisplay": "1st/2ndE",
+      "stageMeta": {
+        "raw": "1st/2ndE",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndE",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndE"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#1-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#1",
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#2-STANFORD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#2",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-16u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 11,
+        "whiteRaw": "12",
+        "darkRaw": "11",
+        "whiteRegulation": 12,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-stanford-white",
+        "loserTeamId": null,
+        "loserName": "STANFORD WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag20",
+      "sourceGameNumber": "16BAG20",
+      "sourceRow": 21,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-16u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C2-DAVIS WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "DAVIS WHITE",
+          "participantId": "tournament-team-2026-16u-boys-davis-white",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9",
+        "whiteRegulation": 7,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-white",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag21",
+      "sourceGameNumber": "16BAG21",
+      "sourceRow": 22,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(1stD)-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(1stD)",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J3(1stF)-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(1stF)",
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-16u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cc-united-white",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-hieland",
+        "loserTeamId": null,
+        "loserName": "HIELAND"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag23",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag23",
+      "sourceGameNumber": "16BAG23",
+      "sourceRow": 23,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(2ndD)-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(2ndD)",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-16u-boys-sd-eca-16u-boys",
+          "teamId": "team-2026-16u-boys-sd-eca-16u-boys",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "K3(2ndF)-WCAC UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(2ndF)",
+          "displayName": "WCAC United",
+          "participantId": "team-2026-16u-boys-wcac-united-16u-boys",
+          "teamId": "team-2026-16u-boys-wcac-united-16u-boys",
+          "clubId": "club-wcac-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 4,
+        "whiteRaw": "11",
+        "darkRaw": "4",
+        "whiteRegulation": 11,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-sd-eca-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-sd-eca-16u-boys",
+        "winnerName": "SD ECA",
+        "loserParticipantId": "team-2026-16u-boys-wcac-united-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-wcac-united-16u-boys",
+        "loserName": "WCAC United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag22",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag22",
+      "sourceGameNumber": "16BAG22",
+      "sourceRow": 24,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H2(2ndB)-LA JOLLA UNITED SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(2ndB)",
+          "displayName": "LA JOLLA UNITED SILVER",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-silver",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H3(2ndC)-DAVIS WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(2ndC)",
+          "displayName": "DAVIS WHITE",
+          "participantId": "tournament-team-2026-16u-boys-davis-white",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 9,
+        "whiteRaw": "5",
+        "darkRaw": "9",
+        "whiteRegulation": 5,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-white",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-silver",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "6:00 PM",
+          "raw": "6:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag34",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag34",
+      "sourceGameNumber": "16BAG34",
+      "sourceRow": 25,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2(1stB)-SANTA CRUZ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "SANTA CRUZ",
+          "participantId": "tournament-team-2026-16u-boys-santa-cruz",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "G3(1stC)-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3(1stC)",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2026-16u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 16,
+        "whiteRaw": "7",
+        "darkRaw": "16",
+        "whiteRegulation": 7,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-santa-cruz",
+        "loserTeamId": null,
+        "loserName": "SANTA CRUZ"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 PM",
+          "raw": "7:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag24",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag24",
+      "sourceGameNumber": "16BAG24",
+      "sourceRow": 26,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(2ndA)-TRITON GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(2ndA)",
+          "displayName": "TRITON GOLD",
+          "participantId": "tournament-team-2026-16u-boys-triton-gold",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "H3(2ndC)-DAVIS WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(2ndC)",
+          "displayName": "DAVIS WHITE",
+          "participantId": "tournament-team-2026-16u-boys-davis-white",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 15,
+        "whiteRaw": "10",
+        "darkRaw": "15",
+        "whiteRegulation": 10,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-white",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-triton-gold",
+        "loserTeamId": null,
+        "loserName": "TRITON GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag33",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag33",
+      "sourceGameNumber": "16BAG33",
+      "sourceRow": 27,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L L",
+      "stageDisplay": "W/L L",
+      "stageMeta": {
+        "raw": "W/L L",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L L",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L L"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1(3rdD)-LOYOLA WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1(3rdD)",
+          "displayName": "LOYOLA WPC",
+          "participantId": "tournament-team-2026-16u-boys-loyola-wpc",
+          "teamId": null,
+          "clubId": "club-loyola-wpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L4(4thF)-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L4(4thF)",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-16u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8",
+        "whiteRegulation": 11,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-loyola-wpc",
+        "winnerTeamId": null,
+        "winnerName": "LOYOLA WPC",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag36",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag36",
+      "sourceGameNumber": "16BAG36",
+      "sourceRow": 28,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L I",
+      "stageDisplay": "W/L I",
+      "stageMeta": {
+        "raw": "W/L I",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L I",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L I"
+      },
+      "venue": "YORBA LINDA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1(3rdA)-BOA WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1(3rdA)",
+          "displayName": "BOA WHITE",
+          "participantId": "tournament-team-2026-16u-boys-boa-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "I4(4thE)-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I4(4thE)",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-16u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 8,
+        "whiteRaw": "5",
+        "darkRaw": "8",
+        "whiteRegulation": 5,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-boa-white",
+        "loserTeamId": null,
+        "loserName": "BOA WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "YORBA LINDA HS",
+          "raw": "YORBA LINDA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag37",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag37",
+      "sourceGameNumber": "16BAG37",
+      "sourceRow": 29,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L I",
+      "stageDisplay": "W/L I",
+      "stageMeta": {
+        "raw": "W/L I",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L I",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L I"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I2(3rdB)-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2(3rdB)",
+          "displayName": "NORTH IRVINE",
+          "participantId": "tournament-team-2026-16u-boys-north-irvine",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "I3(3rdF)-SAN JOSE EXPRESS GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3(3rdF)",
+          "displayName": "SAN JOSE EXPRESS GOLD",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-gold",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 11,
+        "whiteRaw": "6",
+        "darkRaw": "11",
+        "whiteRegulation": 6,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-jose-express-gold",
+        "winnerTeamId": null,
+        "winnerName": "SAN JOSE EXPRESS GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-north-irvine",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag25",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag25",
+      "sourceGameNumber": "16BAG25",
+      "sourceRow": 30,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-16u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "G3(1stC)-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3(1stC)",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2026-16u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 13,
+        "whiteRaw": "8",
+        "darkRaw": "13",
+        "whiteRegulation": 8,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-lamorinda-b",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA B",
+        "loserParticipantId": "tournament-team-2026-16u-boys-mid-pen",
+        "loserTeamId": null,
+        "loserName": "MID PEN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag35",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag35",
+      "sourceGameNumber": "16BAG35",
+      "sourceRow": 31,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L L",
+      "stageDisplay": "W/L L",
+      "stageMeta": {
+        "raw": "W/L L",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L L",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L L"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L2(3rdE)-LV LEGENDS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2(3rdE)",
+          "displayName": "LV LEGENDS",
+          "participantId": "tournament-team-2026-16u-boys-lv-legends",
+          "teamId": null,
+          "clubId": "club-lv-legends",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L3(3rdC)-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3(3rdC)",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-16u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 11,
+        "whiteRaw": "5",
+        "darkRaw": "11",
+        "whiteRegulation": 5,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-set",
+        "winnerTeamId": null,
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2026-16u-boys-lv-legends",
+        "loserTeamId": null,
+        "loserName": "LV LEGENDS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag26",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag26",
+      "sourceGameNumber": "16BAG26",
+      "sourceRow": 32,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J2(1stE)-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(1stE)",
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J3(1stF)-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(1stF)",
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-16u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7",
+        "whiteRegulation": 12,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-hieland",
+        "loserTeamId": null,
+        "loserName": "HIELAND"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag27",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag27",
+      "sourceGameNumber": "16BAG27",
+      "sourceRow": 33,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K2(2ndE)-STANFORD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(2ndE)",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-16u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3(2ndF)-WCAC UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(2ndF)",
+          "displayName": "WCAC United",
+          "participantId": "team-2026-16u-boys-wcac-united-16u-boys",
+          "teamId": "team-2026-16u-boys-wcac-united-16u-boys",
+          "clubId": "club-wcac-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 4,
+        "whiteRaw": "16",
+        "darkRaw": "4",
+        "whiteRegulation": 16,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-stanford-white",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD WHITE",
+        "loserParticipantId": "team-2026-16u-boys-wcac-united-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-wcac-united-16u-boys",
+        "loserName": "WCAC United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag28",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag28",
+      "sourceGameNumber": "16BAG28",
+      "sourceRow": 34,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-16u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "G2(1stB)-SANTA CRUZ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "SANTA CRUZ",
+          "participantId": "tournament-team-2026-16u-boys-santa-cruz",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 11,
+        "whiteRaw": "6",
+        "darkRaw": "11",
+        "whiteRegulation": 6,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-santa-cruz",
+        "winnerTeamId": null,
+        "winnerName": "SANTA CRUZ",
+        "loserParticipantId": "tournament-team-2026-16u-boys-mid-pen",
+        "loserTeamId": null,
+        "loserName": "MID PEN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag38",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag38",
+      "sourceGameNumber": "16BAG38",
+      "sourceRow": 35,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndI",
+      "stageDisplay": "1st/2ndI",
+      "stageMeta": {
+        "raw": "1st/2ndI",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndI",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndI"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#36-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#36",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-16u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#37-SAN JOSE EXPRESS GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#37",
+          "displayName": "SAN JOSE EXPRESS GOLD",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-gold",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 11,
+        "whiteRaw": "8",
+        "darkRaw": "11",
+        "whiteRegulation": 8,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-jose-express-gold",
+        "winnerTeamId": null,
+        "winnerName": "SAN JOSE EXPRESS GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag41",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag41",
+      "sourceGameNumber": "16BAG41",
+      "sourceRow": 36,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndL",
+      "stageDisplay": "1st/2ndL",
+      "stageMeta": {
+        "raw": "1st/2ndL",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndL",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndL"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#33-LOYOLA WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#33",
+          "displayName": "LOYOLA WPC",
+          "participantId": "tournament-team-2026-16u-boys-loyola-wpc",
+          "teamId": null,
+          "clubId": "club-loyola-wpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#35-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#35",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-16u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-loyola-wpc",
+        "winnerTeamId": null,
+        "winnerName": "LOYOLA WPC",
+        "loserParticipantId": "tournament-team-2026-16u-boys-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag29",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag29",
+      "sourceGameNumber": "16BAG29",
+      "sourceRow": 37,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(1stD)-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(1stD)",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J2(1stE)-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(1stE)",
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 14,
+        "whiteRaw": "6",
+        "darkRaw": "14",
+        "whiteRegulation": 6,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cc-united-white",
+        "loserTeamId": null,
+        "loserName": "CC UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag39",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag39",
+      "sourceGameNumber": "16BAG39",
+      "sourceRow": 38,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thL",
+      "stageDisplay": "3rd/4thL",
+      "stageMeta": {
+        "raw": "3rd/4thL",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thL",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thL"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#33-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#33",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-16u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#35-LV LEGENDS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#35",
+          "displayName": "LV LEGENDS",
+          "participantId": "tournament-team-2026-16u-boys-lv-legends",
+          "teamId": null,
+          "clubId": "club-lv-legends",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 7,
+        "whiteRaw": "4",
+        "darkRaw": "7",
+        "whiteRegulation": 4,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-lv-legends",
+        "winnerTeamId": null,
+        "winnerName": "LV LEGENDS",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag42",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag42",
+      "sourceGameNumber": "16BAG42",
+      "sourceRow": 39,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thI",
+      "stageDisplay": "3rd/4thI",
+      "stageMeta": {
+        "raw": "3rd/4thI",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thI",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thI"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#36-BOA WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#36",
+          "displayName": "BOA WHITE",
+          "participantId": "tournament-team-2026-16u-boys-boa-white",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L#37-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#37",
+          "displayName": "NORTH IRVINE",
+          "participantId": "tournament-team-2026-16u-boys-north-irvine",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 21,
+        "whiteRaw": "3",
+        "darkRaw": "21",
+        "whiteRegulation": 3,
+        "darkRegulation": 21,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-north-irvine",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-boa-white",
+        "loserTeamId": null,
+        "loserName": "BOA WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag30",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag30",
+      "sourceGameNumber": "16BAG30",
+      "sourceRow": 40,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(2ndD)-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(2ndD)",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-16u-boys-sd-eca-16u-boys",
+          "teamId": "team-2026-16u-boys-sd-eca-16u-boys",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "K2(2ndE)-STANFORD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(2ndE)",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-16u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 15,
+        "whiteRaw": "3",
+        "darkRaw": "15",
+        "whiteRegulation": 3,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-stanford-white",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD WHITE",
+        "loserParticipantId": "team-2026-16u-boys-sd-eca-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-sd-eca-16u-boys",
+        "loserName": "SD ECA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag40",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag40",
+      "sourceGameNumber": "16BAG40",
+      "sourceRow": 41,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": "8.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(2ndA)-TRITON GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(2ndA)",
+          "displayName": "TRITON GOLD",
+          "participantId": "tournament-team-2026-16u-boys-triton-gold",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "H2(2ndB)-LA JOLLA UNITED SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(2ndB)",
+          "displayName": "LA JOLLA UNITED SILVER",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-silver",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8.3,
+        "dark": 8.4,
+        "whiteRaw": "8.3",
+        "darkRaw": "8.4",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-silver",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED SILVER",
+        "loserParticipantId": "tournament-team-2026-16u-boys-triton-gold",
+        "loserTeamId": null,
+        "loserName": "TRITON GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag43",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag43",
+      "sourceGameNumber": "16BAG43",
+      "sourceRow": 42,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdG-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdG",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-16u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "3rdJ-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdJ",
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-16u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 9,
+        "whiteRaw": "8",
+        "darkRaw": "9",
+        "whiteRegulation": 8,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-hieland",
+        "winnerTeamId": null,
+        "winnerName": "HIELAND",
+        "loserParticipantId": "tournament-team-2026-16u-boys-mid-pen",
+        "loserTeamId": null,
+        "loserName": "MID PEN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag31",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag31",
+      "sourceGameNumber": "16BAG31",
+      "sourceRow": 43,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndG-SANTA CRUZ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndG",
+          "displayName": "SANTA CRUZ",
+          "participantId": "tournament-team-2026-16u-boys-santa-cruz",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "2ndJ-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndJ",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 4,
+        "whiteRaw": "5",
+        "darkRaw": "4",
+        "whiteRegulation": 5,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-santa-cruz",
+        "winnerTeamId": null,
+        "winnerName": "SANTA CRUZ",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cc-united-white",
+        "loserTeamId": null,
+        "loserName": "CC UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-silver-16bag32",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-silver",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Silver",
+      "divisionTier": "D3",
+      "sourceGameId": "16Bag32",
+      "sourceGameNumber": "16BAG32",
+      "sourceRow": 44,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "SONORA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stG-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stG",
+          "displayName": "LAMORINDA B",
+          "participantId": "tournament-team-2026-16u-boys-lamorinda-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stJ-LA JOLLA UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stJ",
+          "displayName": "LA JOLLA UNITED WHITE",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 15,
+        "whiteRaw": "12",
+        "darkRaw": "15",
+        "whiteRegulation": 12,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-white",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED WHITE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-lamorinda-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SONORA HS",
+          "raw": "SONORA HS"
+        }
+      }
+    }
+  ]
+}

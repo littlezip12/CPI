@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RELEASE = "7.54.8";
+  const RELEASE = "7.54.9";
   const FALLBACK = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
   const state = { config:null, year:2026, event:null, bundleCache:new Map(), requestedGroup:"", requestedTeam:"" };
   const $ = id => document.getElementById(id);

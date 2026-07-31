@@ -1,0 +1,5111 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "14u-boys-gold",
+    "label": "14U Boys Gold",
+    "season": "2026",
+    "ageGroup": "14U",
+    "gender": "Boys",
+    "division": "Gold",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "14u-boys-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/14u-boys-gold.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "08cecf011ac4b1fdf276d6c815e8a2148dbe35f9d27ea8b741ffbc0517a4d669",
+    "rowCount": 55
+  },
+  "counts": {
+    "games": 54,
+    "finalGames": 54,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 108,
+    "resolvedTeamParticipants": 30,
+    "unresolvedTeamParticipants": 78,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 78
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau15",
+      "sourceGameNumber": "14BAU15",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L H1/H4",
+      "stageDisplay": "W/L H1/H4",
+      "stageMeta": {
+        "raw": "W/L H1/H4",
+        "detailRaw": "11.6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L H1/H4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L H1/H4"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "7-HIELAND",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": null,
+          "displayName": "Hieland",
+          "participantId": "team-2026-14u-boys-hieland-a",
+          "teamId": "team-2026-14u-boys-hieland-a",
+          "clubId": "club-hieland",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "26-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": 26,
+          "sourceReference": null,
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11.6,
+        "dark": 11.5,
+        "whiteRaw": "11.6",
+        "darkRaw": "11.5",
+        "whiteRegulation": 11,
+        "darkRegulation": 11,
+        "whiteShootout": 6,
+        "darkShootout": 5
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 11,
+        "darkRegulation": 11,
+        "whiteShootout": 6,
+        "darkShootout": 5
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "team-2026-14u-boys-hieland-a",
+        "winnerTeamId": "team-2026-14u-boys-hieland-a",
+        "winnerName": "Hieland",
+        "loserParticipantId": "tournament-team-2026-14u-boys-south-coast-white-b",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST WHITE (B)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau01",
+      "sourceGameNumber": "14BAU01",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-HONOLULU BLUE",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "HONOLULU BLUE",
+          "participantId": "tournament-team-2026-14u-boys-honolulu-blue",
+          "teamId": null,
+          "clubId": "club-honolulu-water-polo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A2(16)-SHORE AQUATICS",
+          "kind": "team",
+          "seed": 16,
+          "sourceReference": "A2(16)",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 14,
+        "whiteRaw": "2",
+        "darkRaw": "14",
+        "whiteRegulation": 2,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-honolulu-blue",
+        "loserTeamId": null,
+        "loserName": "HONOLULU BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau14",
+      "sourceGameNumber": "14BAU14",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G1,G3",
+      "stageDisplay": "G bracket G1,G3",
+      "stageMeta": {
+        "raw": "G bracket G1,G3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G1,G3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G1,G3"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(6)-SD ECA",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "G1(6)",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-14u-boys-sd-eca-a",
+          "teamId": "team-2026-14u-boys-sd-eca-a",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "G3(22)-VANGUARD SILVER",
+          "kind": "team",
+          "seed": 22,
+          "sourceReference": "G3(22)",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 13,
+        "whiteRaw": "8",
+        "darkRaw": "13",
+        "whiteRegulation": 8,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "team-2026-14u-boys-sd-eca-a",
+        "loserTeamId": "team-2026-14u-boys-sd-eca-a",
+        "loserName": "SD ECA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau16",
+      "sourceGameNumber": "14BAU16",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L H2/H3",
+      "stageDisplay": "W/L H2/H3",
+      "stageMeta": {
+        "raw": "W/L H2/H3",
+        "detailRaw": "8.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L H2/H3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L H2/H3"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "10-SHAQ WHITE",
+          "kind": "team",
+          "seed": 10,
+          "sourceReference": null,
+          "displayName": "SHAQ WHITE",
+          "participantId": "tournament-team-2026-14u-boys-shaq-white",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "23-PATRIOT RED",
+          "kind": "team",
+          "seed": 23,
+          "sourceReference": null,
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-14u-boys-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8.3,
+        "dark": 8.2,
+        "whiteRaw": "8.3",
+        "darkRaw": "8.2",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shaq-white",
+        "winnerTeamId": null,
+        "winnerName": "SHAQ WHITE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-patriot-red",
+        "loserTeamId": null,
+        "loserName": "PATRIOT RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau08",
+      "sourceGameNumber": "14BAU08",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1(4)-DAVIS",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "B1(4)",
+          "displayName": "Davis",
+          "participantId": "team-2026-14u-boys-davis-a",
+          "teamId": "team-2026-14u-boys-davis-a",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "B3(20)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": 20,
+          "sourceReference": "B3(20)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 7,
+        "whiteRaw": "18",
+        "darkRaw": "7",
+        "whiteRegulation": 18,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-davis-a",
+        "winnerTeamId": "team-2026-14u-boys-davis-a",
+        "winnerName": "Davis",
+        "loserParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau21",
+      "sourceGameNumber": "14BAU21",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E1,E3",
+      "stageDisplay": "E bracket E1,E3",
+      "stageMeta": {
+        "raw": "E bracket E1,E3",
+        "detailRaw": "10.6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E1,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E1,E3"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1(2)-FOOTHILL RED",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "E1(2)",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-14u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E3(18)-CC UNITED BLUE",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": "E3(18)",
+          "displayName": "CC UNITED BLUE",
+          "participantId": "tournament-team-2026-14u-boys-cc-united-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10.6,
+        "dark": 10.7,
+        "whiteRaw": "10.6",
+        "darkRaw": "10.7",
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 6,
+        "darkShootout": 7
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 6,
+        "darkShootout": 7
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cc-united-blue",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau09",
+      "sourceGameNumber": "14BAU09",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C3",
+      "stageDisplay": "C bracket C1,C3",
+      "stageMeta": {
+        "raw": "C bracket C1,C3",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1(5)-LAWPC",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "C1(5)",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2026-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C3(21)-STANFORD 13",
+          "kind": "team",
+          "seed": 21,
+          "sourceReference": "C3(21)",
+          "displayName": "STANFORD 13",
+          "participantId": "tournament-team-2026-14u-boys-stanford-13",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6",
+        "whiteRegulation": 14,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lawpc",
+        "winnerTeamId": null,
+        "winnerName": "LAWPC",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-13",
+        "loserTeamId": null,
+        "loserName": "STANFORD 13"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau22",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau22",
+      "sourceGameNumber": "14BAU22",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F2,F3",
+      "stageDisplay": "F bracket F2,F3",
+      "stageMeta": {
+        "raw": "F bracket F2,F3",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F2,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F2,F3"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F2(14)-BOA",
+          "kind": "team",
+          "seed": 14,
+          "sourceReference": "F2(14)",
+          "displayName": "BOA",
+          "participantId": "tournament-team-2026-14u-boys-boa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "F3(19)-680 BLUE",
+          "kind": "team",
+          "seed": 19,
+          "sourceReference": "F3(19)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2026-14u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 17,
+        "whiteRaw": "6",
+        "darkRaw": "17",
+        "whiteRegulation": 6,
+        "darkRegulation": 17,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-680-blue",
+        "winnerTeamId": null,
+        "winnerName": "680 BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-boa",
+        "loserTeamId": null,
+        "loserName": "BOA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau02",
+      "sourceGameNumber": "14BAU02",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L D1/D4",
+      "stageDisplay": "W/L D1/D4",
+      "stageMeta": {
+        "raw": "W/L D1/D4",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L D1/D4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L D1/D4"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "8-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": 8,
+          "sourceReference": null,
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "25-AMERICAN RIVER BLUE",
+          "kind": "team",
+          "seed": 25,
+          "sourceReference": null,
+          "displayName": "AMERICAN RIVER BLUE",
+          "participantId": "tournament-team-2026-14u-boys-american-river-blue",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 4,
+        "whiteRaw": "13",
+        "darkRaw": "4",
+        "whiteRegulation": 13,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-american-river-blue",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau18",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau18",
+      "sourceGameNumber": "14BAU18",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4th H",
+      "stageDisplay": "3rd/4th H",
+      "stageMeta": {
+        "raw": "3rd/4th H",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4th H",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4th H"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#15-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#15",
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#16-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#16",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-14u-boys-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 8,
+        "whiteRaw": "7",
+        "darkRaw": "8",
+        "whiteRegulation": 7,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-patriot-red",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-south-coast-white-b",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST WHITE (B)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau03",
+      "sourceGameNumber": "14BAU03",
+      "sourceRow": 12,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L D2/D3",
+      "stageDisplay": "W/L D2/D3",
+      "stageMeta": {
+        "raw": "W/L D2/D3",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L D2/D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L D2/D3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "9-STANFORD BLACK",
+          "kind": "team",
+          "seed": 9,
+          "sourceReference": null,
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2026-14u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "24-PRIDE RED",
+          "kind": "team",
+          "seed": 24,
+          "sourceReference": null,
+          "displayName": "PRIDE RED",
+          "participantId": "tournament-team-2026-14u-boys-pride-red",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 12,
+        "whiteRaw": "6",
+        "darkRaw": "12",
+        "whiteRegulation": 6,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-pride-red",
+        "winnerTeamId": null,
+        "winnerName": "PRIDE RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-black",
+        "loserTeamId": null,
+        "loserName": "STANFORD BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau19",
+      "sourceGameNumber": "14BAU19",
+      "sourceRow": 13,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2nd H",
+      "stageDisplay": "1st/2nd H",
+      "stageMeta": {
+        "raw": "1st/2nd H",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2nd H",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2nd H"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#15-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#15",
+          "displayName": "Hieland",
+          "participantId": "team-2026-14u-boys-hieland-a",
+          "teamId": "team-2026-14u-boys-hieland-a",
+          "clubId": "club-hieland",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W#16-SHAQ WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#16",
+          "displayName": "SHAQ WHITE",
+          "participantId": "tournament-team-2026-14u-boys-shaq-white",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 10,
+        "whiteRaw": "16",
+        "darkRaw": "10",
+        "whiteRegulation": 16,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-hieland-a",
+        "winnerTeamId": "team-2026-14u-boys-hieland-a",
+        "winnerName": "Hieland",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shaq-white",
+        "loserTeamId": null,
+        "loserName": "SHAQ WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau04",
+      "sourceGameNumber": "14BAU04",
+      "sourceRow": 14,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2(16)-SHORE AQUATICS",
+          "kind": "team",
+          "seed": 16,
+          "sourceReference": "A2(16)",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3(17)-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": 17,
+          "sourceReference": "A3(17)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 1,
+        "whiteRaw": "17",
+        "darkRaw": "1",
+        "whiteRegulation": 17,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-red",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau17",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau17",
+      "sourceGameNumber": "14BAU17",
+      "sourceRow": 15,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G1,G2",
+      "stageDisplay": "G bracket G1,G2",
+      "stageMeta": {
+        "raw": "G bracket G1,G2",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G1,G2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G1,G2"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(6)-SD ECA",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "G1(6)",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-14u-boys-sd-eca-a",
+          "teamId": "team-2026-14u-boys-sd-eca-a",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "G2(11)-LAMORINDA B",
+          "kind": "team",
+          "seed": 11,
+          "sourceReference": "G2(11)",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-14u-boys-lamorinda-b",
+          "teamId": "team-2026-14u-boys-lamorinda-b",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12",
+        "whiteRegulation": 10,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-lamorinda-b",
+        "winnerTeamId": "team-2026-14u-boys-lamorinda-b",
+        "winnerName": "Lamorinda B",
+        "loserParticipantId": "team-2026-14u-boys-sd-eca-a",
+        "loserTeamId": "team-2026-14u-boys-sd-eca-a",
+        "loserName": "SD ECA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau10",
+      "sourceGameNumber": "14BAU10",
+      "sourceRow": 16,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2(13)-BACK BAY",
+          "kind": "team",
+          "seed": 13,
+          "sourceReference": "B2(13)",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2026-14u-boys-back-bay",
+          "teamId": null,
+          "clubId": "club-back-bay",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3(20)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": 20,
+          "sourceReference": "B3(20)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 8,
+        "whiteRaw": "18",
+        "darkRaw": "8",
+        "whiteRegulation": 18,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-back-bay",
+        "winnerTeamId": null,
+        "winnerName": "BACK BAY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau23",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau23",
+      "sourceGameNumber": "14BAU23",
+      "sourceRow": 17,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E2,E3",
+      "stageDisplay": "E bracket E2,E3",
+      "stageMeta": {
+        "raw": "E bracket E2,E3",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E2,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E2,E3"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E2(15)-MISSION WPC B",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": "E2(15)",
+          "displayName": "Mission B",
+          "participantId": "team-2026-14u-boys-mission-b",
+          "teamId": "team-2026-14u-boys-mission-b",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "E3(18)-CC UNITED BLUE",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": "E3(18)",
+          "displayName": "CC UNITED BLUE",
+          "participantId": "tournament-team-2026-14u-boys-cc-united-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 6,
+        "whiteRaw": "12",
+        "darkRaw": "6",
+        "whiteRegulation": 12,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cc-united-blue",
+        "loserTeamId": null,
+        "loserName": "CC UNITED BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau11",
+      "sourceGameNumber": "14BAU11",
+      "sourceRow": 18,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C2",
+      "stageDisplay": "C bracket C1,C2",
+      "stageMeta": {
+        "raw": "C bracket C1,C2",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C2"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1(5)-LAWPC",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "C1(5)",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2026-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C2(12)-NORTHWEST",
+          "kind": "team",
+          "seed": 12,
+          "sourceReference": "C2(12)",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-boys-northwest-a",
+          "teamId": "team-2026-14u-boys-northwest-a",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 11,
+        "whiteRaw": "10",
+        "darkRaw": "11",
+        "whiteRegulation": 10,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-northwest-a",
+        "winnerTeamId": "team-2026-14u-boys-northwest-a",
+        "winnerName": "Northwest",
+        "loserParticipantId": "tournament-team-2026-14u-boys-lawpc",
+        "loserTeamId": null,
+        "loserName": "LAWPC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau24",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau24",
+      "sourceGameNumber": "14BAU24",
+      "sourceRow": 19,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F1,F2",
+      "stageDisplay": "F bracket F1,F2",
+      "stageMeta": {
+        "raw": "F bracket F1,F2",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F1,F2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F1,F2"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1(3)-CT PREMIER",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "F1(3)",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-14u-boys-ct-premier-a",
+          "teamId": "team-2026-14u-boys-ct-premier-a",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "F2(14)-BOA",
+          "kind": "team",
+          "seed": 14,
+          "sourceReference": "F2(14)",
+          "displayName": "BOA",
+          "participantId": "tournament-team-2026-14u-boys-boa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 8,
+        "whiteRaw": "19",
+        "darkRaw": "8",
+        "whiteRegulation": 19,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-ct-premier-a",
+        "winnerTeamId": "team-2026-14u-boys-ct-premier-a",
+        "winnerName": "CT Premier",
+        "loserParticipantId": "tournament-team-2026-14u-boys-boa",
+        "loserTeamId": null,
+        "loserName": "BOA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau05",
+      "sourceGameNumber": "14BAU05",
+      "sourceRow": 20,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4th D",
+      "stageDisplay": "3rd/4th D",
+      "stageMeta": {
+        "raw": "3rd/4th D",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4th D",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4th D"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#2-AMERICAN RIVER BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#2",
+          "displayName": "AMERICAN RIVER BLUE",
+          "participantId": "tournament-team-2026-14u-boys-american-river-blue",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#3-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#3",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2026-14u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 4,
+        "whiteRaw": "10",
+        "darkRaw": "4",
+        "whiteRegulation": 10,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-american-river-blue",
+        "winnerTeamId": null,
+        "winnerName": "AMERICAN RIVER BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-black",
+        "loserTeamId": null,
+        "loserName": "STANFORD BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau20",
+      "sourceGameNumber": "14BAU20",
+      "sourceRow": 21,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G2,G3",
+      "stageDisplay": "G bracket G2,G3",
+      "stageMeta": {
+        "raw": "G bracket G2,G3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G2,G3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G2,G3"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2(11)-LAMORINDA B",
+          "kind": "team",
+          "seed": 11,
+          "sourceReference": "G2(11)",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-14u-boys-lamorinda-b",
+          "teamId": "team-2026-14u-boys-lamorinda-b",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "G3(22)-VANGUARD SILVER",
+          "kind": "team",
+          "seed": 22,
+          "sourceReference": "G3(22)",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 10,
+        "whiteRaw": "9",
+        "darkRaw": "10",
+        "whiteRegulation": 9,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "team-2026-14u-boys-lamorinda-b",
+        "loserTeamId": "team-2026-14u-boys-lamorinda-b",
+        "loserName": "Lamorinda B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau06",
+      "sourceGameNumber": "14BAU06",
+      "sourceRow": 22,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2nd D",
+      "stageDisplay": "1st/2nd D",
+      "stageMeta": {
+        "raw": "1st/2nd D",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2nd D",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2nd D"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#2-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#2",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#3-PRIDE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#3",
+          "displayName": "PRIDE RED",
+          "participantId": "tournament-team-2026-14u-boys-pride-red",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 7,
+        "whiteRaw": "13",
+        "darkRaw": "7",
+        "whiteRegulation": 13,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-pride-red",
+        "loserTeamId": null,
+        "loserName": "PRIDE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau25",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau25",
+      "sourceGameNumber": "14BAU25",
+      "sourceRow": 23,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E1,E2",
+      "stageDisplay": "E bracket E1,E2",
+      "stageMeta": {
+        "raw": "E bracket E1,E2",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E1,E2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E1,E2"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1(2)-FOOTHILL RED",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "E1(2)",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-14u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E2(15)-MISSION WPC B",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": "E2(15)",
+          "displayName": "Mission B",
+          "participantId": "team-2026-14u-boys-mission-b",
+          "teamId": "team-2026-14u-boys-mission-b",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 16,
+        "whiteRaw": "9",
+        "darkRaw": "16",
+        "whiteRegulation": 9,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau07",
+      "sourceGameNumber": "14BAU07",
+      "sourceRow": 24,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "10.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-HONOLULU BLUE",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "HONOLULU BLUE",
+          "participantId": "tournament-team-2026-14u-boys-honolulu-blue",
+          "teamId": null,
+          "clubId": "club-honolulu-water-polo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3(17)-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": 17,
+          "sourceReference": "A3(17)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10.3,
+        "dark": 10.4,
+        "whiteRaw": "10.3",
+        "darkRaw": "10.4",
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-north-irvine-red",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-honolulu-blue",
+        "loserTeamId": null,
+        "loserName": "HONOLULU BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau26",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau26",
+      "sourceGameNumber": "14BAU26",
+      "sourceRow": 25,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F1,F3",
+      "stageDisplay": "F bracket F1,F3",
+      "stageMeta": {
+        "raw": "F bracket F1,F3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F1,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F1,F3"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1(3)-CT PREMIER",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "F1(3)",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-14u-boys-ct-premier-a",
+          "teamId": "team-2026-14u-boys-ct-premier-a",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "F3(19)-680 BLUE",
+          "kind": "team",
+          "seed": 19,
+          "sourceReference": "F3(19)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2026-14u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 11,
+        "whiteRaw": "9",
+        "darkRaw": "11",
+        "whiteRegulation": 9,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-680-blue",
+        "winnerTeamId": null,
+        "winnerName": "680 BLUE",
+        "loserParticipantId": "team-2026-14u-boys-ct-premier-a",
+        "loserTeamId": "team-2026-14u-boys-ct-premier-a",
+        "loserName": "CT Premier"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau12",
+      "sourceGameNumber": "14BAU12",
+      "sourceRow": 26,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1(4)-DAVIS",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "B1(4)",
+          "displayName": "Davis",
+          "participantId": "team-2026-14u-boys-davis-a",
+          "teamId": "team-2026-14u-boys-davis-a",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "B2(13)-BACK BAY",
+          "kind": "team",
+          "seed": 13,
+          "sourceReference": "B2(13)",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2026-14u-boys-back-bay",
+          "teamId": null,
+          "clubId": "club-back-bay",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 11,
+        "whiteRaw": "4",
+        "darkRaw": "11",
+        "whiteRegulation": 4,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-back-bay",
+        "winnerTeamId": null,
+        "winnerName": "BACK BAY",
+        "loserParticipantId": "team-2026-14u-boys-davis-a",
+        "loserTeamId": "team-2026-14u-boys-davis-a",
+        "loserName": "Davis"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau13",
+      "sourceGameNumber": "14BAU13",
+      "sourceRow": 27,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C2,C3",
+      "stageDisplay": "C bracket C2,C3",
+      "stageMeta": {
+        "raw": "C bracket C2,C3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C2,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C2,C3"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2(12)-NORTHWEST",
+          "kind": "team",
+          "seed": 12,
+          "sourceReference": "C2(12)",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-boys-northwest-a",
+          "teamId": "team-2026-14u-boys-northwest-a",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3(21)-STANFORD 13",
+          "kind": "team",
+          "seed": 21,
+          "sourceReference": "C3(21)",
+          "displayName": "STANFORD 13",
+          "participantId": "tournament-team-2026-14u-boys-stanford-13",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7",
+        "whiteRegulation": 9,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-northwest-a",
+        "winnerTeamId": "team-2026-14u-boys-northwest-a",
+        "winnerName": "Northwest",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-13",
+        "loserTeamId": null,
+        "loserName": "STANFORD 13"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:50 PM",
+          "raw": "5:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau27",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau27",
+      "sourceGameNumber": "14BAU27",
+      "sourceRow": 28,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-8th",
+      "stageDisplay": "1st-8th",
+      "stageMeta": {
+        "raw": "1st-8th",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-8th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-8th"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(1stA)-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(1stA)",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "J4(1stD)-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J4(1stD)",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9",
+        "whiteRegulation": 10,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-clemente-red",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau41",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau41",
+      "sourceGameNumber": "14BAU41",
+      "sourceRow": 29,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "N bracket",
+      "stageDisplay": "N bracket",
+      "stageMeta": {
+        "raw": "N bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "N bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "N bracket"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N1(3rdA)-HONOLULU BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N1(3rdA)",
+          "displayName": "HONOLULU BLUE",
+          "participantId": "tournament-team-2026-14u-boys-honolulu-blue",
+          "teamId": null,
+          "clubId": "club-honolulu-water-polo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "N3(3rdH)-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N3(3rdH)",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-14u-boys-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 14,
+        "whiteRaw": "7",
+        "darkRaw": "14",
+        "whiteRegulation": 7,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-patriot-red",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-honolulu-blue",
+        "loserTeamId": null,
+        "loserName": "HONOLULU BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau28",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau28",
+      "sourceGameNumber": "14BAU28",
+      "sourceRow": 30,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-8th",
+      "stageDisplay": "1st-8th",
+      "stageMeta": {
+        "raw": "1st-8th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-8th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-8th"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J2(1stB)-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(1stB)",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2026-14u-boys-back-bay",
+          "teamId": null,
+          "clubId": "club-back-bay",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "J3(1stC)-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(1stC)",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-boys-northwest-a",
+          "teamId": "team-2026-14u-boys-northwest-a",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10",
+        "whiteRegulation": 8,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-northwest-a",
+        "winnerTeamId": "team-2026-14u-boys-northwest-a",
+        "winnerName": "Northwest",
+        "loserParticipantId": "tournament-team-2026-14u-boys-back-bay",
+        "loserTeamId": null,
+        "loserName": "BACK BAY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau31",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau31",
+      "sourceGameNumber": "14BAU31",
+      "sourceRow": 31,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th16th",
+      "stageDisplay": "9th16th",
+      "stageMeta": {
+        "raw": "9th16th",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th16th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th16th"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1(2ndA)-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1(2ndA)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L4(2ndD)-PRIDE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L4(2ndD)",
+          "displayName": "PRIDE RED",
+          "participantId": "tournament-team-2026-14u-boys-pride-red",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 5,
+        "whiteRaw": "7",
+        "darkRaw": "5",
+        "whiteRegulation": 7,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-north-irvine-red",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-pride-red",
+        "loserTeamId": null,
+        "loserName": "PRIDE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau42",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau42",
+      "sourceGameNumber": "14BAU42",
+      "sourceRow": 32,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "O bracket",
+      "stageDisplay": "O bracket",
+      "stageMeta": {
+        "raw": "O bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "O bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "O bracket"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "O1(3rdE)-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O1(3rdE)",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-14u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "O3(3rdD)-AMERICAN RIVER BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O3(3rdD)",
+          "displayName": "AMERICAN RIVER BLUE",
+          "participantId": "tournament-team-2026-14u-boys-american-river-blue",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 4,
+        "whiteRaw": "8",
+        "darkRaw": "4",
+        "whiteRegulation": 8,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-foothill-red",
+        "winnerTeamId": null,
+        "winnerName": "FOOTHILL RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-american-river-blue",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau29",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau29",
+      "sourceGameNumber": "14BAU29",
+      "sourceRow": 33,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-8th",
+      "stageDisplay": "1st-8th",
+      "stageMeta": {
+        "raw": "1st-8th",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-8th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-8th"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(1stE)-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(1stE)",
+          "displayName": "Mission B",
+          "participantId": "team-2026-14u-boys-mission-b",
+          "teamId": "team-2026-14u-boys-mission-b",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "K4(1stH)-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K4(1stH)",
+          "displayName": "Hieland",
+          "participantId": "team-2026-14u-boys-hieland-a",
+          "teamId": "team-2026-14u-boys-hieland-a",
+          "clubId": "club-hieland",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 9,
+        "whiteRaw": "16",
+        "darkRaw": "9",
+        "whiteRegulation": 16,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "team-2026-14u-boys-hieland-a",
+        "loserTeamId": "team-2026-14u-boys-hieland-a",
+        "loserName": "Hieland"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau32",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau32",
+      "sourceGameNumber": "14BAU32",
+      "sourceRow": 34,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th16th",
+      "stageDisplay": "9th16th",
+      "stageMeta": {
+        "raw": "9th16th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th16th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th16th"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L2(2ndB)-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2(2ndB)",
+          "displayName": "Davis",
+          "participantId": "team-2026-14u-boys-davis-a",
+          "teamId": "team-2026-14u-boys-davis-a",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "L3(2ndC)-LAWPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3(2ndC)",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2026-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 7,
+        "whiteRaw": "5",
+        "darkRaw": "7",
+        "whiteRegulation": 5,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lawpc",
+        "winnerTeamId": null,
+        "winnerName": "LAWPC",
+        "loserParticipantId": "team-2026-14u-boys-davis-a",
+        "loserTeamId": "team-2026-14u-boys-davis-a",
+        "loserName": "Davis"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau30",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau30",
+      "sourceGameNumber": "14BAU30",
+      "sourceRow": 35,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st-8th",
+      "stageDisplay": "1st-8th",
+      "stageMeta": {
+        "raw": "1st-8th",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st-8th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st-8th"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K2(1stF)-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(1stF)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2026-14u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3(1stG)-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(1stG)",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 15,
+        "whiteRaw": "12",
+        "darkRaw": "15",
+        "whiteRegulation": 12,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "tournament-team-2026-14u-boys-680-blue",
+        "loserTeamId": null,
+        "loserName": "680 BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau33",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau33",
+      "sourceGameNumber": "14BAU33",
+      "sourceRow": 36,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th16th",
+      "stageDisplay": "9th16th",
+      "stageMeta": {
+        "raw": "9th16th",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th16th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th16th"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M1(2ndE)-CC UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M1(2ndE)",
+          "displayName": "CC UNITED BLUE",
+          "participantId": "tournament-team-2026-14u-boys-cc-united-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "M4(2ndH)-SHAQ WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M4(2ndH)",
+          "displayName": "SHAQ WHITE",
+          "participantId": "tournament-team-2026-14u-boys-shaq-white",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 4,
+        "whiteRaw": "9",
+        "darkRaw": "4",
+        "whiteRegulation": 9,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cc-united-blue",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shaq-white",
+        "loserTeamId": null,
+        "loserName": "SHAQ WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau43",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau43",
+      "sourceGameNumber": "14BAU43",
+      "sourceRow": 37,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L P",
+      "stageDisplay": "W/L P",
+      "stageMeta": {
+        "raw": "W/L P",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L P",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L P"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "P1(3rdF)-BOA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "P1(3rdF)",
+          "displayName": "BOA",
+          "participantId": "tournament-team-2026-14u-boys-boa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "P4(4thH)-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "P4(4thH)",
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 11,
+        "whiteRaw": "6",
+        "darkRaw": "11",
+        "whiteRegulation": 6,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-south-coast-white-b",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST WHITE (B)",
+        "loserParticipantId": "tournament-team-2026-14u-boys-boa",
+        "loserTeamId": null,
+        "loserName": "BOA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau34",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau34",
+      "sourceGameNumber": "14BAU34",
+      "sourceRow": 38,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th16th",
+      "stageDisplay": "9th16th",
+      "stageMeta": {
+        "raw": "9th16th",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th16th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th16th"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M2(2ndF)-CT PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M2(2ndF)",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-14u-boys-ct-premier-a",
+          "teamId": "team-2026-14u-boys-ct-premier-a",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "M3(2ndG)-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M3(2ndG)",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-14u-boys-lamorinda-b",
+          "teamId": "team-2026-14u-boys-lamorinda-b",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 14,
+        "whiteRaw": "12",
+        "darkRaw": "14",
+        "whiteRegulation": 12,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-lamorinda-b",
+        "winnerTeamId": "team-2026-14u-boys-lamorinda-b",
+        "winnerName": "Lamorinda B",
+        "loserParticipantId": "team-2026-14u-boys-ct-premier-a",
+        "loserTeamId": "team-2026-14u-boys-ct-premier-a",
+        "loserName": "CT Premier"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau37",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau37",
+      "sourceGameNumber": "14BAU37",
+      "sourceRow": 39,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndJ",
+      "stageDisplay": "1st/2ndJ",
+      "stageMeta": {
+        "raw": "1st/2ndJ",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndJ",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndJ"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#27-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#27",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#28-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#28",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-boys-northwest-a",
+          "teamId": "team-2026-14u-boys-northwest-a",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 3,
+        "whiteRaw": "14",
+        "darkRaw": "3",
+        "whiteRegulation": 14,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "SHORE AQUATICS",
+        "loserParticipantId": "team-2026-14u-boys-northwest-a",
+        "loserTeamId": "team-2026-14u-boys-northwest-a",
+        "loserName": "Northwest"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau44",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau44",
+      "sourceGameNumber": "14BAU44",
+      "sourceRow": 40,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L P",
+      "stageDisplay": "W/L P",
+      "stageMeta": {
+        "raw": "W/L P",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L P",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L P"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "P2(3rdB)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "P2(3rdB)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "P3(4thD)-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "P3(4thD)",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2026-14u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 3,
+        "whiteRaw": "14",
+        "darkRaw": "3",
+        "whiteRegulation": 14,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-black",
+        "loserTeamId": null,
+        "loserName": "STANFORD BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau38",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau38",
+      "sourceGameNumber": "14BAU38",
+      "sourceRow": 41,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndK",
+      "stageDisplay": "1st/2ndK",
+      "stageMeta": {
+        "raw": "1st/2ndK",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndK",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndK"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#29-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#29",
+          "displayName": "Mission B",
+          "participantId": "team-2026-14u-boys-mission-b",
+          "teamId": "team-2026-14u-boys-mission-b",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W#30-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#30",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3",
+        "whiteRegulation": 10,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-vanguard-silver",
+        "loserTeamId": null,
+        "loserName": "VANGUARD SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau49",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau49",
+      "sourceGameNumber": "14BAU49",
+      "sourceRow": 42,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "N bracket",
+      "stageDisplay": "N bracket",
+      "stageMeta": {
+        "raw": "N bracket",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "N bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "N bracket"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N1(3rdA)-HONOLULU BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N1(3rdA)",
+          "displayName": "HONOLULU BLUE",
+          "participantId": "tournament-team-2026-14u-boys-honolulu-blue",
+          "teamId": null,
+          "clubId": "club-honolulu-water-polo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "N2(3rdG)-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N2(3rdG)",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-14u-boys-sd-eca-a",
+          "teamId": "team-2026-14u-boys-sd-eca-a",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 9,
+        "whiteRaw": "6",
+        "darkRaw": "9",
+        "whiteRegulation": 6,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-sd-eca-a",
+        "winnerTeamId": "team-2026-14u-boys-sd-eca-a",
+        "winnerName": "SD ECA",
+        "loserParticipantId": "tournament-team-2026-14u-boys-honolulu-blue",
+        "loserTeamId": null,
+        "loserName": "HONOLULU BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau39",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau39",
+      "sourceGameNumber": "14BAU39",
+      "sourceRow": 43,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thJ",
+      "stageDisplay": "3rd/4thJ",
+      "stageMeta": {
+        "raw": "3rd/4thJ",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thJ",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thJ"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#27-SAN CLEMENTE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#27",
+          "displayName": "SAN CLEMENTE RED",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#28-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#28",
+          "displayName": "BACK BAY",
+          "participantId": "tournament-team-2026-14u-boys-back-bay",
+          "teamId": null,
+          "clubId": "club-back-bay",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 11,
+        "whiteRaw": "13",
+        "darkRaw": "11",
+        "whiteRegulation": 13,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-back-bay",
+        "loserTeamId": null,
+        "loserName": "BACK BAY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau46",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau46",
+      "sourceGameNumber": "14BAU46",
+      "sourceRow": 44,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "O bracket",
+      "stageDisplay": "O bracket",
+      "stageMeta": {
+        "raw": "O bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "O bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "O bracket"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "O1(3rdE)-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O1(3rdE)",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-14u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "O2(3rdC)-STANFORD 13",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O2(3rdC)",
+          "displayName": "STANFORD 13",
+          "participantId": "tournament-team-2026-14u-boys-stanford-13",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3",
+        "whiteRegulation": 10,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-foothill-red",
+        "winnerTeamId": null,
+        "winnerName": "FOOTHILL RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-13",
+        "loserTeamId": null,
+        "loserName": "STANFORD 13"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau40",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau40",
+      "sourceGameNumber": "14BAU40",
+      "sourceRow": 45,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thK",
+      "stageDisplay": "3rd/4thK",
+      "stageMeta": {
+        "raw": "3rd/4thK",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thK",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thK"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#29-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#29",
+          "displayName": "Hieland",
+          "participantId": "team-2026-14u-boys-hieland-a",
+          "teamId": "team-2026-14u-boys-hieland-a",
+          "clubId": "club-hieland",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "L#30-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#30",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2026-14u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 11,
+        "whiteRaw": "4",
+        "darkRaw": "11",
+        "whiteRegulation": 4,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-680-blue",
+        "winnerTeamId": null,
+        "winnerName": "680 BLUE",
+        "loserParticipantId": "team-2026-14u-boys-hieland-a",
+        "loserTeamId": "team-2026-14u-boys-hieland-a",
+        "loserName": "Hieland"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau47",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau47",
+      "sourceGameNumber": "14BAU47",
+      "sourceRow": 46,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndP",
+      "stageDisplay": "1st/2ndP",
+      "stageMeta": {
+        "raw": "1st/2ndP",
+        "detailRaw": "5.2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndP",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndP"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#43-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#43",
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#44-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#44",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5.2,
+        "dark": 5,
+        "whiteRaw": "5.2",
+        "darkRaw": "5",
+        "whiteRegulation": 5,
+        "darkRegulation": 5,
+        "whiteShootout": 2,
+        "darkShootout": null
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 5,
+        "darkRegulation": 5,
+        "whiteShootout": 2,
+        "darkShootout": null
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-south-coast-white-b",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST WHITE (B)",
+        "loserParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau51",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau51",
+      "sourceGameNumber": "14BAU51",
+      "sourceRow": 47,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndL",
+      "stageDisplay": "1st/2ndL",
+      "stageMeta": {
+        "raw": "1st/2ndL",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndL",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndL"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#31-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#31",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#32-LAWPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#32",
+          "displayName": "LAWPC",
+          "participantId": "tournament-team-2026-14u-boys-lawpc",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 11,
+        "whiteRaw": "5",
+        "darkRaw": "11",
+        "whiteRegulation": 5,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lawpc",
+        "winnerTeamId": null,
+        "winnerName": "LAWPC",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-red",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau35",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau35",
+      "sourceGameNumber": "14BAU35",
+      "sourceRow": 48,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "overall 3rd",
+      "stageDisplay": "overall 3rd",
+      "stageMeta": {
+        "raw": "overall 3rd",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "overall 3rd",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "overall 3rd"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Q1(2ndJ)-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "Q1(2ndJ)",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-boys-northwest-a",
+          "teamId": "team-2026-14u-boys-northwest-a",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "Q2(2ndK)-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "Q2(2ndK)",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 14,
+        "whiteRaw": "13",
+        "darkRaw": "14",
+        "whiteRegulation": 13,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "team-2026-14u-boys-northwest-a",
+        "loserTeamId": "team-2026-14u-boys-northwest-a",
+        "loserName": "Northwest"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau48",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau48",
+      "sourceGameNumber": "14BAU48",
+      "sourceRow": 49,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thP",
+      "stageDisplay": "3rd/4thP",
+      "stageMeta": {
+        "raw": "3rd/4thP",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thP",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thP"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#43-BOA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#43",
+          "displayName": "BOA",
+          "participantId": "tournament-team-2026-14u-boys-boa",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L#44-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#44",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2026-14u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 12,
+        "whiteRaw": "11",
+        "darkRaw": "12",
+        "whiteRegulation": 11,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-stanford-black",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD BLACK",
+        "loserParticipantId": "tournament-team-2026-14u-boys-boa",
+        "loserTeamId": null,
+        "loserName": "BOA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau52",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau52",
+      "sourceGameNumber": "14BAU52",
+      "sourceRow": 50,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thL",
+      "stageDisplay": "3rd/4thL",
+      "stageMeta": {
+        "raw": "3rd/4thL",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thL",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thL"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#31-PRIDE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#31",
+          "displayName": "PRIDE RED",
+          "participantId": "tournament-team-2026-14u-boys-pride-red",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#32-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#32",
+          "displayName": "Davis",
+          "participantId": "team-2026-14u-boys-davis-a",
+          "teamId": "team-2026-14u-boys-davis-a",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 13,
+        "whiteRaw": "8",
+        "darkRaw": "13",
+        "whiteRegulation": 8,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-davis-a",
+        "winnerTeamId": "team-2026-14u-boys-davis-a",
+        "winnerName": "Davis",
+        "loserParticipantId": "tournament-team-2026-14u-boys-pride-red",
+        "loserTeamId": null,
+        "loserName": "PRIDE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:50 PM",
+          "raw": "2:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau36",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau36",
+      "sourceGameNumber": "14BAU36",
+      "sourceRow": 51,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "overall 1st",
+      "stageDisplay": "overall 1st",
+      "stageMeta": {
+        "raw": "overall 1st",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "overall 1st",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "overall 1st"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "R1(1stJ)-SHORE AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "R1(1stJ)",
+          "displayName": "SHORE AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "R2(1stK)-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "R2(1stK)",
+          "displayName": "Mission B",
+          "participantId": "team-2026-14u-boys-mission-b",
+          "teamId": "team-2026-14u-boys-mission-b",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 7,
+        "whiteRaw": "6",
+        "darkRaw": "7",
+        "whiteRegulation": 6,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-b",
+        "winnerTeamId": "team-2026-14u-boys-mission-b",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "SHORE AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau45",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau45",
+      "sourceGameNumber": "14BAU45",
+      "sourceRow": 52,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "N bracket",
+      "stageDisplay": "N bracket",
+      "stageMeta": {
+        "raw": "N bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "N bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "N bracket"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N2(3rdG)-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N2(3rdG)",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-14u-boys-sd-eca-a",
+          "teamId": "team-2026-14u-boys-sd-eca-a",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "N3(3rdH)-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N3(3rdH)",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-14u-boys-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 9,
+        "whiteRaw": "8",
+        "darkRaw": "9",
+        "whiteRegulation": 8,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-patriot-red",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT RED",
+        "loserParticipantId": "team-2026-14u-boys-sd-eca-a",
+        "loserTeamId": "team-2026-14u-boys-sd-eca-a",
+        "loserName": "SD ECA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau53",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau53",
+      "sourceGameNumber": "14BAU53",
+      "sourceRow": 53,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndM",
+      "stageDisplay": "1st/2ndM",
+      "stageMeta": {
+        "raw": "1st/2ndM",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndM",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndM"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#33-CC UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#33",
+          "displayName": "CC UNITED BLUE",
+          "participantId": "tournament-team-2026-14u-boys-cc-united-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#34-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#34",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-14u-boys-lamorinda-b",
+          "teamId": "team-2026-14u-boys-lamorinda-b",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 14,
+        "whiteRaw": "13",
+        "darkRaw": "14",
+        "whiteRegulation": 13,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-lamorinda-b",
+        "winnerTeamId": "team-2026-14u-boys-lamorinda-b",
+        "winnerName": "Lamorinda B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cc-united-blue",
+        "loserTeamId": null,
+        "loserName": "CC UNITED BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:40 PM",
+          "raw": "3:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau50",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau50",
+      "sourceGameNumber": "14BAU50",
+      "sourceRow": 54,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "O bracket",
+      "stageDisplay": "O bracket",
+      "stageMeta": {
+        "raw": "O bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "O bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "O bracket"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "O2(3rdC)-STANFORD 13",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O2(3rdC)",
+          "displayName": "STANFORD 13",
+          "participantId": "tournament-team-2026-14u-boys-stanford-13",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "O3(3rdD)-AMERICAN RIVER BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O3(3rdD)",
+          "displayName": "AMERICAN RIVER BLUE",
+          "participantId": "tournament-team-2026-14u-boys-american-river-blue",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9",
+        "whiteRegulation": 7,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-american-river-blue",
+        "winnerTeamId": null,
+        "winnerName": "AMERICAN RIVER BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-13",
+        "loserTeamId": null,
+        "loserName": "STANFORD 13"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-gold-14bau54",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Bau54",
+      "sourceGameNumber": "14BAU54",
+      "sourceRow": 55,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thM",
+      "stageDisplay": "3rd/4thM",
+      "stageMeta": {
+        "raw": "3rd/4thM",
+        "detailRaw": "13.4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thM",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thM"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#33-SHAQ WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#33",
+          "displayName": "SHAQ WHITE",
+          "participantId": "tournament-team-2026-14u-boys-shaq-white",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#34-CT PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#34",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-14u-boys-ct-premier-a",
+          "teamId": "team-2026-14u-boys-ct-premier-a",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 13.4,
+        "dark": 13.2,
+        "whiteRaw": "13.4",
+        "darkRaw": "13.2",
+        "whiteRegulation": 13,
+        "darkRegulation": 13,
+        "whiteShootout": 4,
+        "darkShootout": 2
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 13,
+        "darkRegulation": 13,
+        "whiteShootout": 4,
+        "darkShootout": 2
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shaq-white",
+        "winnerTeamId": null,
+        "winnerName": "SHAQ WHITE",
+        "loserParticipantId": "team-2026-14u-boys-ct-premier-a",
+        "loserTeamId": "team-2026-14u-boys-ct-premier-a",
+        "loserName": "CT Premier"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:30 PM",
+          "raw": "4:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,4098 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "14u-boys-platinum",
+    "label": "14U Boys Platinum",
+    "season": "2026",
+    "ageGroup": "14U",
+    "gender": "Boys",
+    "division": "Platinum",
+    "divisionTier": "D1",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "14u-boys-platinum",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/14u-boys-platinum.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "c452e47365ab535f4e22a40c4b06f1bff3a79474f0f67392edafa5d2ccf3e690",
+    "rowCount": 44
+  },
+  "counts": {
+    "games": 43,
+    "finalGames": 43,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 86,
+    "resolvedTeamParticipants": 13,
+    "unresolvedTeamParticipants": 73,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 73
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt12",
+      "sourceGameNumber": "14BPT12",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "STANFORD RED",
+          "participantId": "tournament-team-2026-14u-boys-stanford-red",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 7,
+        "whiteRaw": "16",
+        "darkRaw": "7",
+        "whiteRegulation": 16,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED NAVY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-red",
+        "loserTeamId": null,
+        "loserName": "STANFORD RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt13",
+      "sourceGameNumber": "14BPT13",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-NORCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "NORCAL",
+          "participantId": "tournament-team-2026-14u-boys-norcal",
+          "teamId": null,
+          "clubId": "club-norcal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "NORTH IRVINE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-black",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 3,
+        "whiteRaw": "11",
+        "darkRaw": "3",
+        "whiteRegulation": 11,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal",
+        "winnerTeamId": null,
+        "winnerName": "NORCAL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-black",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt09",
+      "sourceGameNumber": "14BPT09",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "10.2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-14u-boys-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-TROJAN CARDINAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "TROJAN CARDINAL",
+          "participantId": "tournament-team-2026-14u-boys-trojan-cardinal",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10.2,
+        "dark": 10.3,
+        "whiteRaw": "10.2",
+        "darkRaw": "10.3",
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 2,
+        "darkShootout": 3
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 2,
+        "darkShootout": 3
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-trojan-cardinal",
+        "winnerTeamId": null,
+        "winnerName": "TROJAN CARDINAL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-680-red",
+        "loserTeamId": null,
+        "loserName": "680 RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt07",
+      "sourceGameNumber": "14BPT07",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L F",
+      "stageDisplay": "W/L F",
+      "stageMeta": {
+        "raw": "W/L F",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L F",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L F"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "6-PATRIOT NAVY",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": null,
+          "displayName": "PATRIOT NAVY",
+          "participantId": "tournament-team-2026-14u-boys-patriot-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "19-ROUTE 66 AQUATICS",
+          "kind": "team",
+          "seed": 19,
+          "sourceReference": null,
+          "displayName": "ROUTE 66 AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-route-66-aquatics",
+          "teamId": null,
+          "clubId": "club-route-66",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 8,
+        "whiteRaw": "17",
+        "darkRaw": "8",
+        "whiteRegulation": 17,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-patriot-navy",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT NAVY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-route-66-aquatics",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66 AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt08",
+      "sourceGameNumber": "14BPT08",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L F",
+      "stageDisplay": "W/L F",
+      "stageMeta": {
+        "raw": "W/L F",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L F",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L F"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "7-LA PREMIER",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": null,
+          "displayName": "LA Premier",
+          "participantId": "team-2026-14u-boys-la-premier-a",
+          "teamId": "team-2026-14u-boys-la-premier-a",
+          "clubId": "club-la-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "18-SHAQ BLUE",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": null,
+          "displayName": "SHAQ BLUE",
+          "participantId": "tournament-team-2026-14u-boys-shaq-blue",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 7,
+        "whiteRaw": "14",
+        "darkRaw": "7",
+        "whiteRegulation": 14,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-la-premier-a",
+        "winnerTeamId": "team-2026-14u-boys-la-premier-a",
+        "winnerName": "LA Premier",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shaq-blue",
+        "loserTeamId": null,
+        "loserName": "SHAQ BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt03",
+      "sourceGameNumber": "14BPT03",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "Mission A",
+          "participantId": "team-2026-14u-boys-mission-a",
+          "teamId": "team-2026-14u-boys-mission-a",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A2-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-14u-boys-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-a",
+        "winnerTeamId": "team-2026-14u-boys-mission-a",
+        "winnerName": "Mission A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-680-red",
+        "loserTeamId": null,
+        "loserName": "680 RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt14",
+      "sourceGameNumber": "14BPT14",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-VANGUARD BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "VANGUARD BLUE",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-blue",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-SOUTH COAST RED (A)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "SOUTH COAST RED (A)",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-red-a",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7",
+        "whiteRegulation": 9,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-vanguard-blue",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-south-coast-red-a",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED (A)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt01",
+      "sourceGameNumber": "14BPT01",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L E",
+      "stageDisplay": "W/L E",
+      "stageMeta": {
+        "raw": "W/L E",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L E",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L E"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": null,
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "20-DEVIL'S GATE",
+          "kind": "team",
+          "seed": 20,
+          "sourceReference": null,
+          "displayName": "DEVIL'S GATE",
+          "participantId": "tournament-team-2026-14u-boys-devil-s-gate",
+          "teamId": null,
+          "clubId": "club-devils-gate",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 7,
+        "whiteRaw": "16",
+        "darkRaw": "7",
+        "whiteRegulation": 16,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-14u-boys-devil-s-gate",
+        "loserTeamId": null,
+        "loserName": "DEVIL'S GATE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt15",
+      "sourceGameNumber": "14BPT15",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2-PRIDE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "PRIDE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-pride-black",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "STANFORD RED",
+          "participantId": "tournament-team-2026-14u-boys-stanford-red",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8",
+        "whiteRegulation": 9,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-pride-black",
+        "winnerTeamId": null,
+        "winnerName": "PRIDE BLACK",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-red",
+        "loserTeamId": null,
+        "loserName": "STANFORD RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt02",
+      "sourceGameNumber": "14BPT02",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L E",
+      "stageDisplay": "W/L E",
+      "stageMeta": {
+        "raw": "W/L E",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L E",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L E"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "10-CC UNITED BLACK",
+          "kind": "team",
+          "seed": 10,
+          "sourceReference": null,
+          "displayName": "CC UNITED BLACK",
+          "participantId": "tournament-team-2026-14u-boys-cc-united-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "15-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": null,
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-14u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9",
+        "whiteRegulation": 7,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cc-united-black",
+        "loserTeamId": null,
+        "loserName": "CC UNITED BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt16",
+      "sourceGameNumber": "14BPT16",
+      "sourceRow": 12,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-PALOS VERDES A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "PALOS VERDES A",
+          "participantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "NORTH IRVINE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-black",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 4,
+        "whiteRaw": "9",
+        "darkRaw": "4",
+        "whiteRegulation": 9,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-black",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt10",
+      "sourceGameNumber": "14BPT10",
+      "sourceRow": 13,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndF",
+      "stageDisplay": "1st/2ndF",
+      "stageMeta": {
+        "raw": "1st/2ndF",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndF",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndF"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#7-PATRIOT NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#7",
+          "displayName": "PATRIOT NAVY",
+          "participantId": "tournament-team-2026-14u-boys-patriot-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#8-LA PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#8",
+          "displayName": "LA Premier",
+          "participantId": "team-2026-14u-boys-la-premier-a",
+          "teamId": "team-2026-14u-boys-la-premier-a",
+          "clubId": "club-la-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-patriot-navy",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT NAVY",
+        "loserParticipantId": "team-2026-14u-boys-la-premier-a",
+        "loserTeamId": "team-2026-14u-boys-la-premier-a",
+        "loserName": "LA Premier"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt17",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt17",
+      "sourceGameNumber": "14BPT17",
+      "sourceRow": 14,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "8.2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-LAMORINDA A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-14u-boys-lamorinda-a",
+          "teamId": "team-2026-14u-boys-lamorinda-a",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3-SOUTH COAST RED (A)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "SOUTH COAST RED (A)",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-red-a",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8.2,
+        "dark": 8.4,
+        "whiteRaw": "8.2",
+        "darkRaw": "8.4",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 2,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 2,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-south-coast-red-a",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST RED (A)",
+        "loserParticipantId": "team-2026-14u-boys-lamorinda-a",
+        "loserTeamId": "team-2026-14u-boys-lamorinda-a",
+        "loserName": "Lamorinda A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt11",
+      "sourceGameNumber": "14BPT11",
+      "sourceRow": 15,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thF",
+      "stageDisplay": "3rd/4thF",
+      "stageMeta": {
+        "raw": "3rd/4thF",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thF",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thF"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#7-ROUTE 66 AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#7",
+          "displayName": "ROUTE 66 AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-route-66-aquatics",
+          "teamId": null,
+          "clubId": "club-route-66",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#8-SHAQ BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#8",
+          "displayName": "SHAQ BLUE",
+          "participantId": "tournament-team-2026-14u-boys-shaq-blue",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 11,
+        "whiteRaw": "8",
+        "darkRaw": "11",
+        "whiteRegulation": 8,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shaq-blue",
+        "winnerTeamId": null,
+        "winnerName": "SHAQ BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-route-66-aquatics",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66 AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt18",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt18",
+      "sourceGameNumber": "14BPT18",
+      "sourceRow": 16,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D2-PRIDE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "PRIDE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-pride-black",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3",
+        "whiteRegulation": 10,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED NAVY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-pride-black",
+        "loserTeamId": null,
+        "loserName": "PRIDE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt04",
+      "sourceGameNumber": "14BPT04",
+      "sourceRow": 17,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thE",
+      "stageDisplay": "3rd/4thE",
+      "stageMeta": {
+        "raw": "3rd/4thE",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thE",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thE"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#1-DEVIL'S GATE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#1",
+          "displayName": "DEVIL'S GATE",
+          "participantId": "tournament-team-2026-14u-boys-devil-s-gate",
+          "teamId": null,
+          "clubId": "club-devils-gate",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#2-CC UNITED BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#2",
+          "displayName": "CC UNITED BLACK",
+          "participantId": "tournament-team-2026-14u-boys-cc-united-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-devil-s-gate",
+        "winnerTeamId": null,
+        "winnerName": "DEVIL'S GATE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cc-united-black",
+        "loserTeamId": null,
+        "loserName": "CC UNITED BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt19",
+      "sourceGameNumber": "14BPT19",
+      "sourceRow": 18,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "8.1",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-NORCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "NORCAL",
+          "participantId": "tournament-team-2026-14u-boys-norcal",
+          "teamId": null,
+          "clubId": "club-norcal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2-PALOS VERDES A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "PALOS VERDES A",
+          "participantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8.1,
+        "dark": 8.4,
+        "whiteRaw": "8.1",
+        "darkRaw": "8.4",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 1,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 1,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-norcal",
+        "loserTeamId": null,
+        "loserName": "NORCAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt06",
+      "sourceGameNumber": "14BPT06",
+      "sourceRow": 19,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "Mission A",
+          "participantId": "team-2026-14u-boys-mission-a",
+          "teamId": "team-2026-14u-boys-mission-a",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A3-TROJAN CARDINAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "TROJAN CARDINAL",
+          "participantId": "tournament-team-2026-14u-boys-trojan-cardinal",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 2,
+        "whiteRaw": "19",
+        "darkRaw": "2",
+        "whiteRegulation": 19,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-a",
+        "winnerTeamId": "team-2026-14u-boys-mission-a",
+        "winnerName": "Mission A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trojan-cardinal",
+        "loserTeamId": null,
+        "loserName": "TROJAN CARDINAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt20",
+      "sourceGameNumber": "14BPT20",
+      "sourceRow": 20,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "11.4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-VANGUARD BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "VANGUARD BLUE",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-blue",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C2-LAMORINDA A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-14u-boys-lamorinda-a",
+          "teamId": "team-2026-14u-boys-lamorinda-a",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 11.4,
+        "dark": 11.3,
+        "whiteRaw": "11.4",
+        "darkRaw": "11.3",
+        "whiteRegulation": 11,
+        "darkRegulation": 11,
+        "whiteShootout": 4,
+        "darkShootout": 3
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 11,
+        "darkRegulation": 11,
+        "whiteShootout": 4,
+        "darkShootout": 3
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-vanguard-blue",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD BLUE",
+        "loserParticipantId": "team-2026-14u-boys-lamorinda-a",
+        "loserTeamId": "team-2026-14u-boys-lamorinda-a",
+        "loserName": "Lamorinda A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt05",
+      "sourceGameNumber": "14BPT05",
+      "sourceRow": 21,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndE",
+      "stageDisplay": "1st/2ndE",
+      "stageMeta": {
+        "raw": "1st/2ndE",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndE",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndE"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#1-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#1",
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#2-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#2",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-14u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6",
+        "whiteRegulation": 14,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-14u-boys-orange-county-wpc-blue",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt21",
+      "sourceGameNumber": "14BPT21",
+      "sourceRow": 22,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(1stD)-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(1stD)",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J3(1stF)-PATRIOT NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(1stF)",
+          "displayName": "PATRIOT NAVY",
+          "participantId": "tournament-team-2026-14u-boys-patriot-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 9,
+        "whiteRaw": "14",
+        "darkRaw": "9",
+        "whiteRegulation": 14,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED NAVY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-patriot-navy",
+        "loserTeamId": null,
+        "loserName": "PATRIOT NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt22",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt22",
+      "sourceGameNumber": "14BPT22",
+      "sourceRow": 23,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H2(2ndB)-NORCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(2ndB)",
+          "displayName": "NORCAL",
+          "participantId": "tournament-team-2026-14u-boys-norcal",
+          "teamId": null,
+          "clubId": "club-norcal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "H3(2ndC)-SOUTH COAST RED (A)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(2ndC)",
+          "displayName": "SOUTH COAST RED (A)",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-red-a",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 7,
+        "whiteRaw": "13",
+        "darkRaw": "7",
+        "whiteRegulation": 13,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal",
+        "winnerTeamId": null,
+        "winnerName": "NORCAL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-south-coast-red-a",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED (A)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:50 PM",
+          "raw": "5:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt23",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt23",
+      "sourceGameNumber": "14BPT23",
+      "sourceRow": 24,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(2ndD)-PRIDE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(2ndD)",
+          "displayName": "PRIDE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-pride-black",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3(2ndF)-LA PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(2ndF)",
+          "displayName": "LA Premier",
+          "participantId": "team-2026-14u-boys-la-premier-a",
+          "teamId": "team-2026-14u-boys-la-premier-a",
+          "clubId": "club-la-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9",
+        "whiteRegulation": 10,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-pride-black",
+        "winnerTeamId": null,
+        "winnerName": "PRIDE BLACK",
+        "loserParticipantId": "team-2026-14u-boys-la-premier-a",
+        "loserTeamId": "team-2026-14u-boys-la-premier-a",
+        "loserName": "LA Premier"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:50 PM",
+          "raw": "5:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt34",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt34",
+      "sourceGameNumber": "14BPT34",
+      "sourceRow": 25,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "6:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": "9.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2(1stB)-PALOS VERDES A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "PALOS VERDES A",
+          "participantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "G3(1stC)-VANGUARD BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3(1stC)",
+          "displayName": "VANGUARD BLUE",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-blue",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9.3,
+        "dark": 9.4,
+        "whiteRaw": "9.3",
+        "darkRaw": "9.4",
+        "whiteRegulation": 9,
+        "darkRegulation": 9,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 9,
+        "darkRegulation": 9,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-vanguard-blue",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+        "loserTeamId": null,
+        "loserName": "PALOS VERDES A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "6:40 PM",
+          "raw": "6:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt24",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt24",
+      "sourceGameNumber": "14BPT24",
+      "sourceRow": 26,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(2ndA)-TROJAN CARDINAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(2ndA)",
+          "displayName": "TROJAN CARDINAL",
+          "participantId": "tournament-team-2026-14u-boys-trojan-cardinal",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H3(2ndC)-SOUTH COAST RED (A)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(2ndC)",
+          "displayName": "SOUTH COAST RED (A)",
+          "participantId": "tournament-team-2026-14u-boys-south-coast-red-a",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 8,
+        "whiteRaw": "7",
+        "darkRaw": "8",
+        "whiteRegulation": 7,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-south-coast-red-a",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST RED (A)",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trojan-cardinal",
+        "loserTeamId": null,
+        "loserName": "TROJAN CARDINAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt33",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt33",
+      "sourceGameNumber": "14BPT33",
+      "sourceRow": 27,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L L",
+      "stageDisplay": "W/L L",
+      "stageMeta": {
+        "raw": "W/L L",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L L",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L L"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1(3rdD)-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1(3rdD)",
+          "displayName": "STANFORD RED",
+          "participantId": "tournament-team-2026-14u-boys-stanford-red",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L4(4thF)-ROUTE 66 AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L4(4thF)",
+          "displayName": "ROUTE 66 AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-route-66-aquatics",
+          "teamId": null,
+          "clubId": "club-route-66",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 6,
+        "whiteRaw": "10",
+        "darkRaw": "6",
+        "whiteRegulation": 10,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-stanford-red",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-route-66-aquatics",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66 AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt25",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt25",
+      "sourceGameNumber": "14BPT25",
+      "sourceRow": 28,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "Mission A",
+          "participantId": "team-2026-14u-boys-mission-a",
+          "teamId": "team-2026-14u-boys-mission-a",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "G3(1stC)-VANGUARD BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3(1stC)",
+          "displayName": "VANGUARD BLUE",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-blue",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 11,
+        "whiteRaw": "14",
+        "darkRaw": "11",
+        "whiteRegulation": 14,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-a",
+        "winnerTeamId": "team-2026-14u-boys-mission-a",
+        "winnerName": "Mission A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-vanguard-blue",
+        "loserTeamId": null,
+        "loserName": "VANGUARD BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt35",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt35",
+      "sourceGameNumber": "14BPT35",
+      "sourceRow": 29,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L L",
+      "stageDisplay": "W/L L",
+      "stageMeta": {
+        "raw": "W/L L",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L L",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L L"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L2(3rdE)-DEVIL'S GATE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2(3rdE)",
+          "displayName": "DEVIL'S GATE",
+          "participantId": "tournament-team-2026-14u-boys-devil-s-gate",
+          "teamId": null,
+          "clubId": "club-devils-gate",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L3(3rdC)-LAMORINDA A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3(3rdC)",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-14u-boys-lamorinda-a",
+          "teamId": "team-2026-14u-boys-lamorinda-a",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 8,
+        "whiteRaw": "13",
+        "darkRaw": "8",
+        "whiteRegulation": 13,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-devil-s-gate",
+        "winnerTeamId": null,
+        "winnerName": "DEVIL'S GATE",
+        "loserParticipantId": "team-2026-14u-boys-lamorinda-a",
+        "loserTeamId": "team-2026-14u-boys-lamorinda-a",
+        "loserName": "Lamorinda A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt26",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt26",
+      "sourceGameNumber": "14BPT26",
+      "sourceRow": 30,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": "10.2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J2(1stE)-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(1stE)",
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J3(1stF)-PATRIOT NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(1stF)",
+          "displayName": "PATRIOT NAVY",
+          "participantId": "tournament-team-2026-14u-boys-patriot-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10.2,
+        "dark": 10.4,
+        "whiteRaw": "10.2",
+        "darkRaw": "10.4",
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 2,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 2,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-patriot-navy",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT NAVY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+        "loserTeamId": null,
+        "loserName": "CHANNEL ISLANDS UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt36",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt36",
+      "sourceGameNumber": "14BPT36",
+      "sourceRow": 31,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L I",
+      "stageDisplay": "W/L I",
+      "stageMeta": {
+        "raw": "W/L I",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L I",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L I"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1(3rdA)-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1(3rdA)",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-14u-boys-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I4(4thE)-CC UNITED BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I4(4thE)",
+          "displayName": "CC UNITED BLACK",
+          "participantId": "tournament-team-2026-14u-boys-cc-united-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 7,
+        "whiteRaw": "10",
+        "darkRaw": "7",
+        "whiteRegulation": 10,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-680-red",
+        "winnerTeamId": null,
+        "winnerName": "680 RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cc-united-black",
+        "loserTeamId": null,
+        "loserName": "CC UNITED BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt27",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt27",
+      "sourceGameNumber": "14BPT27",
+      "sourceRow": 32,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K2(2ndE)-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(2ndE)",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-14u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3(2ndF)-LA PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(2ndF)",
+          "displayName": "LA Premier",
+          "participantId": "team-2026-14u-boys-la-premier-a",
+          "teamId": "team-2026-14u-boys-la-premier-a",
+          "clubId": "club-la-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12",
+        "whiteRegulation": 10,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-la-premier-a",
+        "winnerTeamId": "team-2026-14u-boys-la-premier-a",
+        "winnerName": "LA Premier",
+        "loserParticipantId": "tournament-team-2026-14u-boys-orange-county-wpc-blue",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt37",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt37",
+      "sourceGameNumber": "14BPT37",
+      "sourceRow": 33,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L I",
+      "stageDisplay": "W/L I",
+      "stageMeta": {
+        "raw": "W/L I",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L I",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L I"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I2(3rdB)-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2(3rdB)",
+          "displayName": "NORTH IRVINE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-black",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I3(3rdF)-SHAQ BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3(3rdF)",
+          "displayName": "SHAQ BLUE",
+          "participantId": "tournament-team-2026-14u-boys-shaq-blue",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 6,
+        "whiteRaw": "9",
+        "darkRaw": "6",
+        "whiteRegulation": 9,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-north-irvine-black",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE BLACK",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shaq-blue",
+        "loserTeamId": null,
+        "loserName": "SHAQ BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt28",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt28",
+      "sourceGameNumber": "14BPT28",
+      "sourceRow": 34,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "Mission A",
+          "participantId": "team-2026-14u-boys-mission-a",
+          "teamId": "team-2026-14u-boys-mission-a",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "G2(1stB)-PALOS VERDES A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "PALOS VERDES A",
+          "participantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-mission-a",
+        "winnerTeamId": "team-2026-14u-boys-mission-a",
+        "winnerName": "Mission A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+        "loserTeamId": null,
+        "loserName": "PALOS VERDES A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt40",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt40",
+      "sourceGameNumber": "14BPT40",
+      "sourceRow": 35,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(2ndA)-TROJAN CARDINAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(2ndA)",
+          "displayName": "TROJAN CARDINAL",
+          "participantId": "tournament-team-2026-14u-boys-trojan-cardinal",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H2(2ndB)-NORCAL",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(2ndB)",
+          "displayName": "NORCAL",
+          "participantId": "tournament-team-2026-14u-boys-norcal",
+          "teamId": null,
+          "clubId": "club-norcal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 12,
+        "whiteRaw": "7",
+        "darkRaw": "12",
+        "whiteRegulation": 7,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal",
+        "winnerTeamId": null,
+        "winnerName": "NORCAL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trojan-cardinal",
+        "loserTeamId": null,
+        "loserName": "TROJAN CARDINAL"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt30",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt30",
+      "sourceGameNumber": "14BPT30",
+      "sourceRow": 36,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(2ndD)-PRIDE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(2ndD)",
+          "displayName": "PRIDE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-pride-black",
+          "teamId": null,
+          "clubId": "club-pride",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K2(2ndE)-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(2ndE)",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-14u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 9,
+        "whiteRaw": "6",
+        "darkRaw": "9",
+        "whiteRegulation": 6,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-14u-boys-pride-black",
+        "loserTeamId": null,
+        "loserName": "PRIDE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt41",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt41",
+      "sourceGameNumber": "14BPT41",
+      "sourceRow": 37,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndL",
+      "stageDisplay": "1st/2ndL",
+      "stageMeta": {
+        "raw": "1st/2ndL",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndL",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndL"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#33-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#33",
+          "displayName": "STANFORD RED",
+          "participantId": "tournament-team-2026-14u-boys-stanford-red",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#35-DEVIL'S GATE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#35",
+          "displayName": "DEVIL'S GATE",
+          "participantId": "tournament-team-2026-14u-boys-devil-s-gate",
+          "teamId": null,
+          "clubId": "club-devils-gate",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7",
+        "whiteRegulation": 12,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-stanford-red",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD RED",
+        "loserParticipantId": "tournament-team-2026-14u-boys-devil-s-gate",
+        "loserTeamId": null,
+        "loserName": "DEVIL'S GATE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt29",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt29",
+      "sourceGameNumber": "14BPT29",
+      "sourceRow": 38,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(1stD)-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(1stD)",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J2(1stE)-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(1stE)",
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 6,
+        "whiteRaw": "9",
+        "darkRaw": "6",
+        "whiteRegulation": 9,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED NAVY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+        "loserTeamId": null,
+        "loserName": "CHANNEL ISLANDS UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt38",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt38",
+      "sourceGameNumber": "14BPT38",
+      "sourceRow": 39,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndI",
+      "stageDisplay": "1st/2ndI",
+      "stageMeta": {
+        "raw": "1st/2ndI",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndI",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndI"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#36-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#36",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-14u-boys-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#37-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#37",
+          "displayName": "NORTH IRVINE BLACK",
+          "participantId": "tournament-team-2026-14u-boys-north-irvine-black",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10",
+        "whiteRegulation": 7,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-north-irvine-black",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE BLACK",
+        "loserParticipantId": "tournament-team-2026-14u-boys-680-red",
+        "loserTeamId": null,
+        "loserName": "680 RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt39",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt39",
+      "sourceGameNumber": "14BPT39",
+      "sourceRow": 40,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thL",
+      "stageDisplay": "3rd/4thL",
+      "stageMeta": {
+        "raw": "3rd/4thL",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thL",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thL"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#33-ROUTE 66 AQUATICS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#33",
+          "displayName": "ROUTE 66 AQUATICS",
+          "participantId": "tournament-team-2026-14u-boys-route-66-aquatics",
+          "teamId": null,
+          "clubId": "club-route-66",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#35-LAMORINDA A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#35",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-14u-boys-lamorinda-a",
+          "teamId": "team-2026-14u-boys-lamorinda-a",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 14,
+        "whiteRaw": "10",
+        "darkRaw": "14",
+        "whiteRegulation": 10,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-lamorinda-a",
+        "winnerTeamId": "team-2026-14u-boys-lamorinda-a",
+        "winnerName": "Lamorinda A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-route-66-aquatics",
+        "loserTeamId": null,
+        "loserName": "ROUTE 66 AQUATICS"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt43",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt43",
+      "sourceGameNumber": "14BPT43",
+      "sourceRow": 41,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdG-PALOS VERDES A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdG",
+          "displayName": "PALOS VERDES A",
+          "participantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rdJ-CHANNEL ISLANDS UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdJ",
+          "displayName": "CHANNEL ISLANDS UNITED GOLD",
+          "participantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-palos-verdes-a",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-channel-islands-united-gold",
+        "loserTeamId": null,
+        "loserName": "CHANNEL ISLANDS UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt31",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt31",
+      "sourceGameNumber": "14BPT31",
+      "sourceRow": 42,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndG-VANGUARD BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndG",
+          "displayName": "VANGUARD BLUE",
+          "participantId": "tournament-team-2026-14u-boys-vanguard-blue",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "2ndJ-PATRIOT NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndJ",
+          "displayName": "PATRIOT NAVY",
+          "participantId": "tournament-team-2026-14u-boys-patriot-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 13,
+        "whiteRaw": "8",
+        "darkRaw": "13",
+        "whiteRegulation": 8,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-patriot-navy",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT NAVY",
+        "loserParticipantId": "tournament-team-2026-14u-boys-vanguard-blue",
+        "loserTeamId": null,
+        "loserName": "VANGUARD BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt42",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt42",
+      "sourceGameNumber": "14BPT42",
+      "sourceRow": 43,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thI",
+      "stageDisplay": "3rd/4thI",
+      "stageMeta": {
+        "raw": "3rd/4thI",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thI",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thI"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#36-CC UNITED BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#36",
+          "displayName": "CC UNITED BLACK",
+          "participantId": "tournament-team-2026-14u-boys-cc-united-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#37-SHAQ BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#37",
+          "displayName": "SHAQ BLUE",
+          "participantId": "tournament-team-2026-14u-boys-shaq-blue",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 9,
+        "whiteRaw": "14",
+        "darkRaw": "9",
+        "whiteRegulation": 14,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cc-united-black",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLACK",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shaq-blue",
+        "loserTeamId": null,
+        "loserName": "SHAQ BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-boys-platinum-14bpt32",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "14Bpt32",
+      "sourceGameNumber": "14BPT32",
+      "sourceRow": 44,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stG-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stG",
+          "displayName": "Mission A",
+          "participantId": "team-2026-14u-boys-mission-a",
+          "teamId": "team-2026-14u-boys-mission-a",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "1stJ-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stJ",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 12,
+        "whiteRaw": "8",
+        "darkRaw": "12",
+        "whiteRegulation": 8,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-la-jolla-united-navy",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED NAVY",
+        "loserParticipantId": "team-2026-14u-boys-mission-a",
+        "loserTeamId": "team-2026-14u-boys-mission-a",
+        "loserName": "Mission A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 1",
+          "raw": "EL TORO HS 1"
+        }
+      }
+    }
+  ]
+}

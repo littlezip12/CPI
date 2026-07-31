@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.8",
-  "generatedAt": "2026-07-30T20:30:00-07:00",
-  "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, the 2025 Evan Cousineau Memorial Cup, and the 2026 San Diego County Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
+  "release": "7.54.9",
+  "generatedAt": "2026-07-30T20:45:00-07:00",
+  "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, the 2025 Evan Cousineau Memorial Cup, 2026 KAP7 International, and the 2026 San Diego County Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
   "platformPath": "tournament.html",
   "schemaPaths": {
     "event": "tournaments/schema/tournament-event.schema.json",
@@ -216,6 +216,47 @@
         },
         {
           "id": "2025-evan-cousineau-memorial-cup-source",
+          "type": "uploaded_csv",
+          "role": "provenance",
+          "readMode": "repository",
+          "parser": "results_table_v1"
+        }
+      ]
+    },
+    {
+      "id": "2026-kap7-international",
+      "name": "2026 KAP7 International",
+      "shortName": "KAP7 International",
+      "season": "2026",
+      "kind": "tournament_results",
+      "status": "complete",
+      "operationsMode": "historical_registered",
+      "divisionCount": 18,
+      "publicPath": "tournament.html?event=2026-kap7-international",
+      "legacyPath": "tournament.html?event=2026-kap7-international",
+      "migrationStatus": "platform_live",
+      "dataPath": "data/tournaments/platform/events/2026-kap7-international.json",
+      "rankingEvidenceEnabled": false,
+      "filterCapabilities": [
+        "ageGroup",
+        "gender",
+        "division",
+        "team",
+        "date",
+        "venue",
+        "status",
+        "search"
+      ],
+      "sourceAdapters": [
+        {
+          "id": "2026-kap7-international-normalized-bank",
+          "type": "normalized_json",
+          "role": "primary",
+          "pathTemplate": "data/tournaments/normalized/2026-kap7-international/{divisionId}.json",
+          "readMode": "repository"
+        },
+        {
+          "id": "2026-kap7-international-source",
           "type": "uploaded_csv",
           "role": "provenance",
           "readMode": "repository",

@@ -13,12 +13,12 @@ def load(rel):
 registry=load('data/tournaments/registry.json'); archive=load('data/tournaments/archive/index.json'); site=load('config/site-release.json')
 archive_events=[e for e in registry.get('events',[]) if e.get('archiveSyncEnabled')]; archive_divisions=[d for e in archive_events for d in e.get('divisions',[])]
 if site.get('tournamentArchiveRelease')!=EXPECTED: fail('Site release must register tournament archive 7.49.1')
-if len(archive_events)!=5 or len(archive_divisions)!=50: fail(f'Expected 5 completed events and 50 archive divisions, found {len(archive_events)} and {len(archive_divisions)}')
+if len(archive_events)!=6 or len(archive_divisions)!=68: fail(f'Expected 6 completed events and 68 archive divisions, found {len(archive_events)} and {len(archive_divisions)}')
 if any(e.get('rankingEvidenceEnabled') is not False for e in archive_events): fail('Every historical archive event must remain quarantined from ranking evidence')
 if archive.get('release')!=EXPECTED or archive.get('schemaVersion')!=2: fail('Archive output must use schemaVersion 2 and release 7.49.1')
 counts=archive.get('counts',{})
-if counts.get('events')!=5 or counts.get('divisions')!=50: fail('Archive output must represent all five events and 50 divisions')
-if counts.get('bankedDivisions',0)+counts.get('pendingDivisions',0)!=50: fail('Banked and pending archive division counts must reconcile')
+if counts.get('events')!=6 or counts.get('divisions')!=68: fail('Archive output must represent all six events and 68 divisions')
+if counts.get('bankedDivisions',0)+counts.get('pendingDivisions',0)!=68: fail('Banked and pending archive division counts must reconcile')
 if counts.get('bankedDivisions',0)<18: fail('Historical archive lost previously banked divisions')
 if counts.get('games',0)<1329 or counts.get('finalGames',0)<1329: fail('Completed-event parser did not preserve the verified historical game bank')
 if counts.get('rankedTeamsRepresented',0)<100 or counts.get('clubsRepresented',0)<70: fail('Historical identity/profile link coverage unexpectedly low')
@@ -29,7 +29,7 @@ for game in archive.get('games',[]):
  if game.get('status')=='final' and not game.get('scoreDisplay'): fail(f"Final archive game missing score display: {game.get('id')}")
  if (game.get('whiteTeamId') and not game.get('whiteTeamPage')) or (game.get('darkTeamId') and not game.get('darkTeamPage')): fail(f"Canonical archive team missing profile link: {game.get('id')}")
  if game.get('rankingEvidenceEnabled') is not False: fail(f"Historical game incorrectly enables ranking evidence: {game.get('id')}")
-for rel in ['data/tournaments/quiksilver-cup-2026.json','data/tournaments/archive/2026-boys-futures-super-finals.json','data/tournaments/archive/2026-girls-us-club-championships.json','data/tournaments/archive/2025-evan-cousineau-memorial-cup.json','data/tournaments/archive/2026-san-diego-county-cup.json']:
+for rel in ['data/tournaments/quiksilver-cup-2026.json','data/tournaments/archive/2026-boys-futures-super-finals.json','data/tournaments/archive/2026-girls-us-club-championships.json','data/tournaments/archive/2025-evan-cousineau-memorial-cup.json','data/tournaments/archive/2026-san-diego-county-cup.json','data/tournaments/archive/2026-kap7-international.json']:
  if not (ROOT/rel).exists(): fail(f'Missing normalized result-page fallback: {rel}')
 for rel in ['tournament-archive.html','css/tournament-archive-v7-49.css','js/tournament-archive-v7-49.js','data/tournaments/archive/runtime.js','scripts/build-tournament-archive.py','.github/workflows/sync-tournament-archive.yml']:
  if not (ROOT/rel).exists(): fail(f'Missing archive asset: {rel}')
@@ -55,7 +55,7 @@ if errors:
  for item in errors: print(' - '+item)
  raise SystemExit(1)
 print('TOURNAMENT ARCHIVE VALIDATION PASSED')
-print(' - 5 completed tournaments and 50 divisions remain registered for controlled archival sync')
+print(' - 6 completed tournaments and 68 divisions remain registered for controlled archival sync')
 print(f" - {counts.get('bankedDivisions',0)} divisions are banked and {counts.get('pendingDivisions',0)} await source access")
 print(f" - {counts.get('finalGames',0)} verified finals link to {counts.get('rankedTeamsRepresented',0)} ranked teams and {counts.get('clubsRepresented',0)} clubs")
 print(' - Historical profile display remains quarantined from ranking evidence and publication')

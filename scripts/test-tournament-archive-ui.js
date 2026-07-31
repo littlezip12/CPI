@@ -15,6 +15,7 @@ vm.runInContext(read("js/tournament-archive-v7-49.js"),context,{filename:"archiv
 req(elements["#archiveEvents"].innerHTML.includes("Quiksilver Cup"),"Archive UI did not render Quiksilver Cup");
 req(elements["#archiveEvents"].innerHTML.includes("Boys Futures Super Finals"),"Archive UI did not render Boys Futures Super Finals");
 req(elements["#archiveEvents"].innerHTML.includes("Girls US Club Championships"),"Archive UI did not render Girls US Club Championships");
+req(elements["#archiveEvents"].innerHTML.includes("KAP7 International"),"Archive UI did not render KAP7 International");
 req(elements["#archiveStats"].innerHTML.includes("Verified finals"),"Archive final-score summary did not render");
 req(elements["#archiveStats"].innerHTML.includes("Ranked teams linked"),"Archive identity coverage did not render");
 req(elements["#archiveAge"].innerHTML.includes("14U"),"Age filter did not populate");
@@ -23,6 +24,6 @@ req((window.CPI_TOURNAMENT_ARCHIVE.games||[]).length>0,"Archive runtime should c
 req(elements["#archiveGames"].innerHTML.includes("Official source"),"Archive source links did not render");
 req(elements["#archiveGames"].innerHTML.includes("archive-team-link")||elements["#archiveGames"].innerHTML.includes("archive-team-side"),"Archive team/profile rendering did not initialize");
 console.log("TOURNAMENT ARCHIVE UI TESTS PASSED");
-console.log(" - All five completed tournaments render from the normalized archive runtime");
+console.log(" - All six completed tournaments render from the normalized archive runtime");
 console.log(" - Team, club, age, gender, division, and status filtering are wired");
 console.log(" - Profile links and official source traceability render without enabling ranking evidence");

@@ -1,0 +1,3782 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "16u-boys-gold",
+    "label": "16U Boys Gold",
+    "season": "2026",
+    "ageGroup": "16U",
+    "gender": "Boys",
+    "division": "Gold",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "16u-boys-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/16u-boys-gold.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "94f93e07191c787aca228ca5f0b16fda63e7a2f1e19a8ff9a127054025c1060b",
+    "rowCount": 41
+  },
+  "counts": {
+    "games": 40,
+    "finalGames": 40,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 80,
+    "resolvedTeamParticipants": 5,
+    "unresolvedTeamParticipants": 75,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 75
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau01",
+      "sourceGameNumber": "16BAU01",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-SAN JOSE EXPRESS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SAN JOSE EXPRESS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-AMERICAN RIVER GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "AMERICAN RIVER GOLD",
+          "participantId": "tournament-team-2026-16u-boys-american-river-gold",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7",
+        "whiteRegulation": 11,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+        "winnerTeamId": null,
+        "winnerName": "SAN JOSE EXPRESS BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-american-river-gold",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau10",
+      "sourceGameNumber": "16BAU10",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2-CC UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "CC UNITED BLUE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3-BOA BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "BOA BLUE",
+          "participantId": "tournament-team-2026-16u-boys-boa-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 2,
+        "whiteRaw": "15",
+        "darkRaw": "2",
+        "whiteRegulation": 15,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cc-united-blue",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-boa-blue",
+        "loserTeamId": null,
+        "loserName": "BOA BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau02",
+      "sourceGameNumber": "16BAU02",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-CMAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "CMAC",
+          "participantId": "tournament-team-2026-16u-boys-cmac",
+          "teamId": null,
+          "clubId": "club-cmac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 14,
+        "whiteRaw": "6",
+        "darkRaw": "14",
+        "whiteRegulation": 6,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST WHITE (B)",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cmac",
+        "loserTeamId": null,
+        "loserName": "CMAC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau11",
+      "sourceGameNumber": "16BAU11",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1-CT PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "teamId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "E3-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2026-16u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerName": "CT Premier",
+        "loserParticipantId": "tournament-team-2026-16u-boys-stanford-black",
+        "loserTeamId": null,
+        "loserName": "STANFORD BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau03",
+      "sourceGameNumber": "16BAU03",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-ST LOUIS AREA POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "ST LOUIS AREA POLO",
+          "participantId": "tournament-team-2026-16u-boys-st-louis-area-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C3-TROJAN GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "TROJAN GOLD",
+          "participantId": "tournament-team-2026-16u-boys-trojan-gold",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 6,
+        "whiteRaw": "5",
+        "darkRaw": "6",
+        "whiteRegulation": 5,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
+        "winnerTeamId": null,
+        "winnerName": "TROJAN GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-st-louis-area-polo",
+        "loserTeamId": null,
+        "loserName": "ST LOUIS AREA POLO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau12",
+      "sourceGameNumber": "16BAU12",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1-BIG VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1",
+          "displayName": "BIG VALLEY",
+          "participantId": "tournament-team-2026-16u-boys-big-valley",
+          "teamId": null,
+          "clubId": "club-big-valley",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "F4-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F4",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2026-16u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 14,
+        "whiteRaw": "4",
+        "darkRaw": "14",
+        "whiteRegulation": 4,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-680-blue",
+        "winnerTeamId": null,
+        "winnerName": "680 BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-big-valley",
+        "loserTeamId": null,
+        "loserName": "BIG VALLEY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau04",
+      "sourceGameNumber": "16BAU04",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "8.4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-CHANNEL ISLANDS UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "CHANNEL ISLANDS UNITED BLUE",
+          "participantId": "tournament-team-2026-16u-boys-channel-islands-united-blue",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-AMERICAN RIVER GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "AMERICAN RIVER GOLD",
+          "participantId": "tournament-team-2026-16u-boys-american-river-gold",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8.4,
+        "dark": 8.1,
+        "whiteRaw": "8.4",
+        "darkRaw": "8.1",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 4,
+        "darkShootout": 1
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 4,
+        "darkShootout": 1
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-channel-islands-united-blue",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-american-river-gold",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau13",
+      "sourceGameNumber": "16BAU13",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": "8.6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F2-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "F3-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-16u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8.6,
+        "dark": 8.5,
+        "whiteRaw": "8.6",
+        "darkRaw": "8.5",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 6,
+        "darkShootout": 5
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 6,
+        "darkShootout": 5
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-vanguard-silver",
+        "loserTeamId": null,
+        "loserName": "VANGUARD SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau05",
+      "sourceGameNumber": "16BAU05",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-DAVIS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "DAVIS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-davis-blue",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 18,
+        "whiteRaw": "12",
+        "darkRaw": "18",
+        "whiteRegulation": 12,
+        "darkRegulation": 18,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST WHITE (B)",
+        "loserParticipantId": "tournament-team-2026-16u-boys-davis-blue",
+        "loserTeamId": null,
+        "loserName": "DAVIS BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau14",
+      "sourceGameNumber": "16BAU14",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-POWAY VALLEY BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "POWAY VALLEY BLACK",
+          "participantId": "tournament-team-2026-16u-boys-poway-valley-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D3-BOA BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "BOA BLUE",
+          "participantId": "tournament-team-2026-16u-boys-boa-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-poway-valley-black",
+        "winnerTeamId": null,
+        "winnerName": "POWAY VALLEY BLACK",
+        "loserParticipantId": "tournament-team-2026-16u-boys-boa-blue",
+        "loserTeamId": null,
+        "loserName": "BOA BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau06",
+      "sourceGameNumber": "16BAU06",
+      "sourceRow": 12,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-CAL REPUBLIC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "CAL REPUBLIC",
+          "participantId": "tournament-team-2026-16u-boys-cal-republic",
+          "teamId": null,
+          "clubId": "club-cal-rep",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-TROJAN GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "TROJAN GOLD",
+          "participantId": "tournament-team-2026-16u-boys-trojan-gold",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 8,
+        "whiteRaw": "12",
+        "darkRaw": "8",
+        "whiteRegulation": 12,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cal-republic",
+        "winnerTeamId": null,
+        "winnerName": "CAL REPUBLIC",
+        "loserParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
+        "loserTeamId": null,
+        "loserName": "TROJAN GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau15",
+      "sourceGameNumber": "16BAU15",
+      "sourceRow": 13,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E2-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-16u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E3-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2026-16u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 14,
+        "whiteRaw": "2",
+        "darkRaw": "14",
+        "whiteRegulation": 2,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-stanford-black",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD BLACK",
+        "loserParticipantId": "tournament-team-2026-16u-boys-orange-county-wpc-blue",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau16",
+      "sourceGameNumber": "16BAU16",
+      "sourceRow": 14,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thF",
+      "stageDisplay": "3rd/4thF",
+      "stageMeta": {
+        "raw": "3rd/4thF",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thF",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thF"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#12-BIG VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#12",
+          "displayName": "BIG VALLEY",
+          "participantId": "tournament-team-2026-16u-boys-big-valley",
+          "teamId": null,
+          "clubId": "club-big-valley",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#13-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#13",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-16u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 23,
+        "whiteRaw": "5",
+        "darkRaw": "23",
+        "whiteRegulation": 5,
+        "darkRegulation": 23,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "tournament-team-2026-16u-boys-big-valley",
+        "loserTeamId": null,
+        "loserName": "BIG VALLEY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau17",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau17",
+      "sourceGameNumber": "16BAU17",
+      "sourceRow": 15,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndF",
+      "stageDisplay": "1st/2ndF",
+      "stageMeta": {
+        "raw": "1st/2ndF",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndF",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndF"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#12-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#12",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2026-16u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#13-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#13",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 11,
+        "whiteRaw": "10",
+        "darkRaw": "11",
+        "whiteRegulation": 10,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-680-blue",
+        "loserTeamId": null,
+        "loserName": "680 BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau07",
+      "sourceGameNumber": "16BAU07",
+      "sourceRow": 16,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": "20",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-SAN JOSE EXPRESS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SAN JOSE EXPRESS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A2-CHANNEL ISLANDS UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "CHANNEL ISLANDS UNITED BLUE",
+          "participantId": "tournament-team-2026-16u-boys-channel-islands-united-blue",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 20,
+        "dark": 3,
+        "whiteRaw": "20",
+        "darkRaw": "3",
+        "whiteRegulation": 20,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+        "winnerTeamId": null,
+        "winnerName": "SAN JOSE EXPRESS BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-channel-islands-united-blue",
+        "loserTeamId": null,
+        "loserName": "CHANNEL ISLANDS UNITED BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau18",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau18",
+      "sourceGameNumber": "16BAU18",
+      "sourceRow": 17,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-POWAY VALLEY BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "POWAY VALLEY BLACK",
+          "participantId": "tournament-team-2026-16u-boys-poway-valley-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D2-CC UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "CC UNITED BLUE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 15,
+        "whiteRaw": "8",
+        "darkRaw": "15",
+        "whiteRegulation": 8,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cc-united-blue",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-poway-valley-black",
+        "loserTeamId": null,
+        "loserName": "POWAY VALLEY BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau08",
+      "sourceGameNumber": "16BAU08",
+      "sourceRow": 18,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-CMAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "CMAC",
+          "participantId": "tournament-team-2026-16u-boys-cmac",
+          "teamId": null,
+          "clubId": "club-cmac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2-DAVIS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "DAVIS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-davis-blue",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 13,
+        "whiteRaw": "11",
+        "darkRaw": "13",
+        "whiteRegulation": 11,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-blue",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cmac",
+        "loserTeamId": null,
+        "loserName": "CMAC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau19",
+      "sourceGameNumber": "16BAU19",
+      "sourceRow": 19,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1-CT PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "teamId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "E2-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-16u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 3,
+        "whiteRaw": "16",
+        "darkRaw": "3",
+        "whiteRegulation": 16,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerName": "CT Premier",
+        "loserParticipantId": "tournament-team-2026-16u-boys-orange-county-wpc-blue",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau09",
+      "sourceGameNumber": "16BAU09",
+      "sourceRow": 20,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-ST LOUIS AREA POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "ST LOUIS AREA POLO",
+          "participantId": "tournament-team-2026-16u-boys-st-louis-area-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C2-CAL REPUBLIC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "CAL REPUBLIC",
+          "participantId": "tournament-team-2026-16u-boys-cal-republic",
+          "teamId": null,
+          "clubId": "club-cal-rep",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 11,
+        "whiteRaw": "10",
+        "darkRaw": "11",
+        "whiteRegulation": 10,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cal-republic",
+        "winnerTeamId": null,
+        "winnerName": "CAL REPUBLIC",
+        "loserParticipantId": "tournament-team-2026-16u-boys-st-louis-area-polo",
+        "loserTeamId": null,
+        "loserName": "ST LOUIS AREA POLO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau20",
+      "sourceGameNumber": "16BAU20",
+      "sourceRow": 21,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G1,G3",
+      "stageDisplay": "G bracket G1,G3",
+      "stageMeta": {
+        "raw": "G bracket G1,G3",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G1,G3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G1,G3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-SAN JOSE EXPRESS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "SAN JOSE EXPRESS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G3(1stC)-CAL REPUBLIC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3(1stC)",
+          "displayName": "CAL REPUBLIC",
+          "participantId": "tournament-team-2026-16u-boys-cal-republic",
+          "teamId": null,
+          "clubId": "club-cal-rep",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 4,
+        "whiteRaw": "10",
+        "darkRaw": "4",
+        "whiteRegulation": 10,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+        "winnerTeamId": null,
+        "winnerName": "SAN JOSE EXPRESS BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cal-republic",
+        "loserTeamId": null,
+        "loserName": "CAL REPUBLIC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau31",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau31",
+      "sourceGameNumber": "16BAU31",
+      "sourceRow": 22,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket J1,J3",
+      "stageDisplay": "J bracket J1,J3",
+      "stageMeta": {
+        "raw": "J bracket J1,J3",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket J1,J3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket J1,J3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(2ndD)-POWAY VALLEY BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(2ndD)",
+          "displayName": "POWAY VALLEY BLACK",
+          "participantId": "tournament-team-2026-16u-boys-poway-valley-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "J3(2ndF)-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(2ndF)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2026-16u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 12,
+        "whiteRaw": "6",
+        "darkRaw": "12",
+        "whiteRegulation": 6,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-680-blue",
+        "winnerTeamId": null,
+        "winnerName": "680 BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-poway-valley-black",
+        "loserTeamId": null,
+        "loserName": "POWAY VALLEY BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau21",
+      "sourceGameNumber": "16BAU21",
+      "sourceRow": 23,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket H1,H3",
+      "stageDisplay": "H bracket H1,H3",
+      "stageMeta": {
+        "raw": "H bracket H1,H3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket H1,H3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket H1,H3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(1stD)-CC UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(1stD)",
+          "displayName": "CC UNITED BLUE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H3(1stF)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(1stF)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-cc-united-blue",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau32",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau32",
+      "sourceGameNumber": "16BAU32",
+      "sourceRow": 24,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket K1,K3",
+      "stageDisplay": "K bracket K1,K3",
+      "stageMeta": {
+        "raw": "K bracket K1,K3",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket K1,K3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket K1,K3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(3rdA)-AMERICAN RIVER GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(3rdA)",
+          "displayName": "AMERICAN RIVER GOLD",
+          "participantId": "tournament-team-2026-16u-boys-american-river-gold",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3(3rdC)-ST LOUIS AREA POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(3rdC)",
+          "displayName": "ST LOUIS AREA POLO",
+          "participantId": "tournament-team-2026-16u-boys-st-louis-area-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 10,
+        "whiteRaw": "4",
+        "darkRaw": "10",
+        "whiteRegulation": 4,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-st-louis-area-polo",
+        "winnerTeamId": null,
+        "winnerName": "ST LOUIS AREA POLO",
+        "loserParticipantId": "tournament-team-2026-16u-boys-american-river-gold",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau22",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau22",
+      "sourceGameNumber": "16BAU22",
+      "sourceRow": 25,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket I1,I3",
+      "stageDisplay": "I bracket I1,I3",
+      "stageMeta": {
+        "raw": "I bracket I1,I3",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket I1,I3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket I1,I3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1(2ndA)-CHANNEL ISLANDS UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1(2ndA)",
+          "displayName": "CHANNEL ISLANDS UNITED BLUE",
+          "participantId": "tournament-team-2026-16u-boys-channel-islands-united-blue",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I3(2ndC)-TROJAN GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3(2ndC)",
+          "displayName": "TROJAN GOLD",
+          "participantId": "tournament-team-2026-16u-boys-trojan-gold",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 10,
+        "whiteRaw": "2",
+        "darkRaw": "10",
+        "whiteRegulation": 2,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
+        "winnerTeamId": null,
+        "winnerName": "TROJAN GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-channel-islands-united-blue",
+        "loserTeamId": null,
+        "loserName": "CHANNEL ISLANDS UNITED BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau33",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau33",
+      "sourceGameNumber": "16BAU33",
+      "sourceRow": 26,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L L1/L4",
+      "stageDisplay": "W/L L1/L4",
+      "stageMeta": {
+        "raw": "W/L L1/L4",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L L1/L4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L L1/L4"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1(3rdD)-BOA BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1(3rdD)",
+          "displayName": "BOA BLUE",
+          "participantId": "tournament-team-2026-16u-boys-boa-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L4(4thF)-BIG VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L4(4thF)",
+          "displayName": "BIG VALLEY",
+          "participantId": "tournament-team-2026-16u-boys-big-valley",
+          "teamId": null,
+          "clubId": "club-big-valley",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 18,
+        "whiteRaw": "11",
+        "darkRaw": "18",
+        "whiteRegulation": 11,
+        "darkRegulation": 18,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-big-valley",
+        "winnerTeamId": null,
+        "winnerName": "BIG VALLEY",
+        "loserParticipantId": "tournament-team-2026-16u-boys-boa-blue",
+        "loserTeamId": null,
+        "loserName": "BOA BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau23",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau23",
+      "sourceGameNumber": "16BAU23",
+      "sourceRow": 27,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G2,G3",
+      "stageDisplay": "G bracket G2,G3",
+      "stageMeta": {
+        "raw": "G bracket G2,G3",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G2,G3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G2,G3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2(1stB)-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G3(1stC)-CAL REPUBLIC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3(1stC)",
+          "displayName": "CAL REPUBLIC",
+          "participantId": "tournament-team-2026-16u-boys-cal-republic",
+          "teamId": null,
+          "clubId": "club-cal-rep",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 3,
+        "whiteRaw": "7",
+        "darkRaw": "3",
+        "whiteRegulation": 7,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST WHITE (B)",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cal-republic",
+        "loserTeamId": null,
+        "loserName": "CAL REPUBLIC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau34",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau34",
+      "sourceGameNumber": "16BAU34",
+      "sourceRow": 28,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L L2/L3",
+      "stageDisplay": "W/L L2/L3",
+      "stageMeta": {
+        "raw": "W/L L2/L3",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L L2/L3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L L2/L3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L2(3rdE)-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2(3rdE)",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-16u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L3(3rdF)-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3(3rdF)",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-16u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 18,
+        "whiteRaw": "3",
+        "darkRaw": "18",
+        "whiteRegulation": 3,
+        "darkRegulation": 18,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "tournament-team-2026-16u-boys-orange-county-wpc-blue",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau24",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau24",
+      "sourceGameNumber": "16BAU24",
+      "sourceRow": 29,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket H1,H2",
+      "stageDisplay": "H bracket H1,H2",
+      "stageMeta": {
+        "raw": "H bracket H1,H2",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket H1,H2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket H1,H2"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(1stD)-CC UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1(1stD)",
+          "displayName": "CC UNITED BLUE",
+          "participantId": "tournament-team-2026-16u-boys-cc-united-blue",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H2(1stE)-CT PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(1stE)",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "teamId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 13,
+        "whiteRaw": "11",
+        "darkRaw": "13",
+        "whiteRegulation": 11,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerName": "CT Premier",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cc-united-blue",
+        "loserTeamId": null,
+        "loserName": "CC UNITED BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau35",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau35",
+      "sourceGameNumber": "16BAU35",
+      "sourceRow": 30,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket J2,J3",
+      "stageDisplay": "J bracket J2,J3",
+      "stageMeta": {
+        "raw": "J bracket J2,J3",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket J2,J3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket J2,J3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J2(2ndE)-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(2ndE)",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2026-16u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J3(2ndF)-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3(2ndF)",
+          "displayName": "680 BLUE",
+          "participantId": "tournament-team-2026-16u-boys-680-blue",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3",
+        "whiteRegulation": 10,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-stanford-black",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD BLACK",
+        "loserParticipantId": "tournament-team-2026-16u-boys-680-blue",
+        "loserTeamId": null,
+        "loserName": "680 BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau25",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau25",
+      "sourceGameNumber": "16BAU25",
+      "sourceRow": 31,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket I2,I3",
+      "stageDisplay": "I bracket I2,I3",
+      "stageMeta": {
+        "raw": "I bracket I2,I3",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket I2,I3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket I2,I3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I2(2ndB)-DAVIS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2(2ndB)",
+          "displayName": "DAVIS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-davis-blue",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I3(2ndC)-TROJAN GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3(2ndC)",
+          "displayName": "TROJAN GOLD",
+          "participantId": "tournament-team-2026-16u-boys-trojan-gold",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 10,
+        "whiteRaw": "13",
+        "darkRaw": "10",
+        "whiteRegulation": 13,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-blue",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-trojan-gold",
+        "loserTeamId": null,
+        "loserName": "TROJAN GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau36",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau36",
+      "sourceGameNumber": "16BAU36",
+      "sourceRow": 32,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket K2,K3",
+      "stageDisplay": "K bracket K2,K3",
+      "stageMeta": {
+        "raw": "K bracket K2,K3",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket K2,K3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket K2,K3"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K2(3rdB)-CMAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(3rdB)",
+          "displayName": "CMAC",
+          "participantId": "tournament-team-2026-16u-boys-cmac",
+          "teamId": null,
+          "clubId": "club-cmac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "K3(3rdC)-ST LOUIS AREA POLO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3(3rdC)",
+          "displayName": "ST LOUIS AREA POLO",
+          "participantId": "tournament-team-2026-16u-boys-st-louis-area-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 9,
+        "whiteRaw": "6",
+        "darkRaw": "9",
+        "whiteRegulation": 6,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-st-louis-area-polo",
+        "winnerTeamId": null,
+        "winnerName": "ST LOUIS AREA POLO",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cmac",
+        "loserTeamId": null,
+        "loserName": "CMAC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau26",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau26",
+      "sourceGameNumber": "16BAU26",
+      "sourceRow": 33,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G1,G2",
+      "stageDisplay": "G bracket G1,G2",
+      "stageMeta": {
+        "raw": "G bracket G1,G2",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G1,G2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G1,G2"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(1stA)-SAN JOSE EXPRESS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1(1stA)",
+          "displayName": "SAN JOSE EXPRESS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G2(1stB)-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2(1stB)",
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 6,
+        "whiteRaw": "5",
+        "darkRaw": "6",
+        "whiteRegulation": 5,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH COAST WHITE (B)",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau37",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau37",
+      "sourceGameNumber": "16BAU37",
+      "sourceRow": 34,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thL",
+      "stageDisplay": "3rd/4thL",
+      "stageMeta": {
+        "raw": "3rd/4thL",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thL",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thL"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#33-BOA BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#33",
+          "displayName": "BOA BLUE",
+          "participantId": "tournament-team-2026-16u-boys-boa-blue",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L#34-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#34",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-16u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 5,
+        "whiteRaw": "7",
+        "darkRaw": "5",
+        "whiteRegulation": 7,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-boa-blue",
+        "winnerTeamId": null,
+        "winnerName": "BOA BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-orange-county-wpc-blue",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau27",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau27",
+      "sourceGameNumber": "16BAU27",
+      "sourceRow": 35,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket H2,H3",
+      "stageDisplay": "H bracket H2,H3",
+      "stageMeta": {
+        "raw": "H bracket H2,H3",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket H2,H3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket H2,H3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H2(1stE)-CT PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2(1stE)",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "teamId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "H3(1stF)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3(1stF)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 14,
+        "whiteRaw": "11",
+        "darkRaw": "14",
+        "whiteRegulation": 11,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "loserTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "loserName": "CT Premier"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau38",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau38",
+      "sourceGameNumber": "16BAU38",
+      "sourceRow": 36,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndL",
+      "stageDisplay": "1st/2ndL",
+      "stageMeta": {
+        "raw": "1st/2ndL",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndL",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndL"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#33-BIG VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#33",
+          "displayName": "BIG VALLEY",
+          "participantId": "tournament-team-2026-16u-boys-big-valley",
+          "teamId": null,
+          "clubId": "club-big-valley",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#34-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#34",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-16u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 14,
+        "whiteRaw": "6",
+        "darkRaw": "14",
+        "whiteRegulation": 6,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "tournament-team-2026-16u-boys-big-valley",
+        "loserTeamId": null,
+        "loserName": "BIG VALLEY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau28",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau28",
+      "sourceGameNumber": "16BAU28",
+      "sourceRow": 37,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket I1,I2",
+      "stageDisplay": "I bracket I1,I2",
+      "stageMeta": {
+        "raw": "I bracket I1,I2",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket I1,I2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket I1,I2"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1(2ndA)-CHANNEL ISLANDS UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1(2ndA)",
+          "displayName": "CHANNEL ISLANDS UNITED BLUE",
+          "participantId": "tournament-team-2026-16u-boys-channel-islands-united-blue",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I2(2ndB)-DAVIS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2(2ndB)",
+          "displayName": "DAVIS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-davis-blue",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 15,
+        "whiteRaw": "8",
+        "darkRaw": "15",
+        "whiteRegulation": 8,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-davis-blue",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS BLUE",
+        "loserParticipantId": "tournament-team-2026-16u-boys-channel-islands-united-blue",
+        "loserTeamId": null,
+        "loserName": "CHANNEL ISLANDS UNITED BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau39",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau39",
+      "sourceGameNumber": "16BAU39",
+      "sourceRow": 38,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket J1,J2",
+      "stageDisplay": "J bracket J1,J2",
+      "stageMeta": {
+        "raw": "J bracket J1,J2",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket J1,J2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket J1,J2"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1(2ndD)-POWAY VALLEY BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1(2ndD)",
+          "displayName": "POWAY VALLEY BLACK",
+          "participantId": "tournament-team-2026-16u-boys-poway-valley-black",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "J2(2ndE)-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2(2ndE)",
+          "displayName": "STANFORD BLACK",
+          "participantId": "tournament-team-2026-16u-boys-stanford-black",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 12,
+        "whiteRaw": "6",
+        "darkRaw": "12",
+        "whiteRegulation": 6,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-stanford-black",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD BLACK",
+        "loserParticipantId": "tournament-team-2026-16u-boys-poway-valley-black",
+        "loserTeamId": null,
+        "loserName": "POWAY VALLEY BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau29",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau29",
+      "sourceGameNumber": "16BAU29",
+      "sourceRow": 39,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd 2ndG/2ndH",
+      "stageDisplay": "3rd 2ndG/2ndH",
+      "stageMeta": {
+        "raw": "3rd 2ndG/2ndH",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd 2ndG/2ndH",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd 2ndG/2ndH"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N1(2ndG)-SAN JOSE EXPRESS BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N1(2ndG)",
+          "displayName": "SAN JOSE EXPRESS BLUE",
+          "participantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+          "teamId": null,
+          "clubId": "club-san-jose-express",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "N2(2ndH)-CT PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N2(2ndH)",
+          "displayName": "CT Premier",
+          "participantId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "teamId": "team-2026-16u-boys-ct-premier-16u-boys",
+          "clubId": "club-ct-premier",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10",
+        "whiteRegulation": 8,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerTeamId": "team-2026-16u-boys-ct-premier-16u-boys",
+        "winnerName": "CT Premier",
+        "loserParticipantId": "tournament-team-2026-16u-boys-san-jose-express-blue",
+        "loserTeamId": null,
+        "loserName": "SAN JOSE EXPRESS BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau40",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau40",
+      "sourceGameNumber": "16BAU40",
+      "sourceRow": 40,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket K1,K2",
+      "stageDisplay": "K bracket K1,K2",
+      "stageMeta": {
+        "raw": "K bracket K1,K2",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket K1,K2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket K1,K2"
+      },
+      "venue": "SADDLEBACK COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1(3rdA)-AMERICAN RIVER GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1(3rdA)",
+          "displayName": "AMERICAN RIVER GOLD",
+          "participantId": "tournament-team-2026-16u-boys-american-river-gold",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K2(3rdB)-CMAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2(3rdB)",
+          "displayName": "CMAC",
+          "participantId": "tournament-team-2026-16u-boys-cmac",
+          "teamId": null,
+          "clubId": "club-cmac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 8,
+        "whiteRaw": "10",
+        "darkRaw": "8",
+        "whiteRegulation": 10,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-american-river-gold",
+        "winnerTeamId": null,
+        "winnerName": "AMERICAN RIVER GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-cmac",
+        "loserTeamId": null,
+        "loserName": "CMAC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SADDLEBACK COLLEGE",
+          "raw": "SADDLEBACK COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-16u-boys-gold-16bau30",
+      "eventId": "2026-kap7-international",
+      "divisionId": "16u-boys-gold",
+      "season": "2026",
+      "ageGroup": "16U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "16Bau30",
+      "sourceGameNumber": "16BAU30",
+      "sourceRow": 41,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st 1stG/1stH",
+      "stageDisplay": "1st 1stG/1stH",
+      "stageMeta": {
+        "raw": "1st 1stG/1stH",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st 1stG/1stH",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st 1stG/1stH"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "O1(1stG)-SOUTH COAST WHITE (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O1(1stG)",
+          "displayName": "SOUTH COAST WHITE (B)",
+          "participantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "O2(1stH)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O2(1stH)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 10,
+        "whiteRaw": "4",
+        "darkRaw": "10",
+        "whiteRegulation": 4,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-16u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-16u-boys-south-coast-white-b",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST WHITE (B)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    }
+  ]
+}

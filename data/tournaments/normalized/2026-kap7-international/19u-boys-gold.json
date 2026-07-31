@@ -1,0 +1,3093 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "19u-boys-gold",
+    "label": "19U Boys Gold",
+    "season": "2026",
+    "ageGroup": "19U",
+    "gender": "Boys",
+    "division": "Gold",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "19u-boys-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/19u-boys-gold.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "0364aa07cc5a159289e8cc5231ec99bf36f166eb2295d86e655095533e7357f5",
+    "rowCount": 33
+  },
+  "counts": {
+    "games": 32,
+    "finalGames": 32,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 64,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 64,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 64
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau01",
+      "sourceGameNumber": "19BAU01",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L A2/A3",
+      "stageDisplay": "W/L A2/A3",
+      "stageMeta": {
+        "raw": "W/L A2/A3",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L A2/A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L A2/A3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-CLOVIS BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "CLOVIS BLACK",
+          "participantId": "tournament-team-2026-19u-boys-clovis-black",
+          "teamId": null,
+          "clubId": "club-clovis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-19u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 12,
+        "whiteRaw": "14",
+        "darkRaw": "12",
+        "whiteRegulation": 14,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-clovis-black",
+        "winnerTeamId": null,
+        "winnerName": "CLOVIS BLACK",
+        "loserParticipantId": "tournament-team-2026-19u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau02",
+      "sourceGameNumber": "19BAU02",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L A1/A4",
+      "stageDisplay": "W/L A1/A4",
+      "stageMeta": {
+        "raw": "W/L A1/A4",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L A1/A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L A1/A4"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-19u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A4-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-19u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6",
+        "whiteRegulation": 7,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-hieland",
+        "winnerTeamId": null,
+        "winnerName": "HIELAND",
+        "loserParticipantId": "tournament-team-2026-19u-boys-vanguard-silver",
+        "loserTeamId": null,
+        "loserName": "VANGUARD SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:00 AM",
+          "raw": "9:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau03",
+      "sourceGameNumber": "19BAU03",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L C2/C3",
+      "stageDisplay": "W/L C2/C3",
+      "stageMeta": {
+        "raw": "W/L C2/C3",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L C2/C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L C2/C3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-MISSION WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "MISSION WPC",
+          "participantId": "tournament-team-2026-19u-boys-mission-wpc",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C3-MARIN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "MARIN",
+          "participantId": "tournament-team-2026-19u-boys-marin",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 5,
+        "whiteRaw": "16",
+        "darkRaw": "5",
+        "whiteRegulation": 16,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-mission-wpc",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC",
+        "loserParticipantId": "tournament-team-2026-19u-boys-marin",
+        "loserTeamId": null,
+        "loserName": "MARIN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau04",
+      "sourceGameNumber": "19BAU04",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L C1/C4",
+      "stageDisplay": "W/L C1/C4",
+      "stageMeta": {
+        "raw": "W/L C1/C4",
+        "detailRaw": "6.2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L C1/C4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L C1/C4"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "NORTHWEST",
+          "participantId": "tournament-team-2026-19u-boys-northwest",
+          "teamId": null,
+          "clubId": "club-northwest",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C4-AMERICAN RIVER GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4",
+          "displayName": "AMERICAN RIVER GOLD",
+          "participantId": "tournament-team-2026-19u-boys-american-river-gold",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6.2,
+        "dark": 6.3,
+        "whiteRaw": "6.2",
+        "darkRaw": "6.3",
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 2,
+        "darkShootout": 3
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 2,
+        "darkShootout": 3
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-american-river-gold",
+        "winnerTeamId": null,
+        "winnerName": "AMERICAN RIVER GOLD",
+        "loserParticipantId": "tournament-team-2026-19u-boys-northwest",
+        "loserTeamId": null,
+        "loserName": "NORTHWEST"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau05",
+      "sourceGameNumber": "19BAU05",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thA",
+      "stageDisplay": "3rd/4thA",
+      "stageMeta": {
+        "raw": "3rd/4thA",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thA",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thA"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#1-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#1",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-19u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#2-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#2",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-19u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12",
+        "whiteRegulation": 10,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "tournament-team-2026-19u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau06",
+      "sourceGameNumber": "19BAU06",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndA",
+      "stageDisplay": "1st/2ndA",
+      "stageMeta": {
+        "raw": "1st/2ndA",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndA",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndA"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#1-CLOVIS BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#1",
+          "displayName": "CLOVIS BLACK",
+          "participantId": "tournament-team-2026-19u-boys-clovis-black",
+          "teamId": null,
+          "clubId": "club-clovis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#2-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#2",
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-19u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 13,
+        "whiteRaw": "9",
+        "darkRaw": "13",
+        "whiteRegulation": 9,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-hieland",
+        "winnerTeamId": null,
+        "winnerName": "HIELAND",
+        "loserParticipantId": "tournament-team-2026-19u-boys-clovis-black",
+        "loserTeamId": null,
+        "loserName": "CLOVIS BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau09",
+      "sourceGameNumber": "19BAU09",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L D1/D4",
+      "stageDisplay": "W/L D1/D4",
+      "stageMeta": {
+        "raw": "W/L D1/D4",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L D1/D4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L D1/D4"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-BIG VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "BIG VALLEY",
+          "participantId": "tournament-team-2026-19u-boys-big-valley",
+          "teamId": null,
+          "clubId": "club-big-valley",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D4-WCAC UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D4",
+          "displayName": "WCAC UNITED",
+          "participantId": "tournament-team-2026-19u-boys-wcac-united",
+          "teamId": null,
+          "clubId": "club-wcac-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 16,
+        "whiteRaw": "17",
+        "darkRaw": "16",
+        "whiteRegulation": 17,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-big-valley",
+        "winnerTeamId": null,
+        "winnerName": "BIG VALLEY",
+        "loserParticipantId": "tournament-team-2026-19u-boys-wcac-united",
+        "loserTeamId": null,
+        "loserName": "WCAC UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau10",
+      "sourceGameNumber": "19BAU10",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L D2/D3",
+      "stageDisplay": "W/L D2/D3",
+      "stageMeta": {
+        "raw": "W/L D2/D3",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L D2/D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L D2/D3"
+      },
+      "venue": "WESTMINSTER HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-19u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3-LONGHORN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "LONGHORN",
+          "participantId": "tournament-team-2026-19u-boys-longhorn",
+          "teamId": null,
+          "clubId": "club-longhorn",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 13,
+        "whiteRaw": "7",
+        "darkRaw": "13",
+        "whiteRegulation": 7,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-longhorn",
+        "winnerTeamId": null,
+        "winnerName": "LONGHORN",
+        "loserParticipantId": "tournament-team-2026-19u-boys-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WESTMINSTER HS",
+          "raw": "WESTMINSTER HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau11",
+      "sourceGameNumber": "19BAU11",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L B2/B3",
+      "stageDisplay": "W/L B2/B3",
+      "stageMeta": {
+        "raw": "W/L B2/B3",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L B2/B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L B2/B3"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-19u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-FARALLON",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "FARALLON",
+          "participantId": "tournament-team-2026-19u-boys-farallon",
+          "teamId": null,
+          "clubId": "club-farallon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 4,
+        "whiteRaw": "11",
+        "darkRaw": "4",
+        "whiteRegulation": 11,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-19u-boys-farallon",
+        "loserTeamId": null,
+        "loserName": "FARALLON"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau12",
+      "sourceGameNumber": "19BAU12",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L B1/B4",
+      "stageDisplay": "W/L B1/B4",
+      "stageMeta": {
+        "raw": "W/L B1/B4",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L B1/B4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L B1/B4"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-19u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B4-PASADENA AC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "PASADENA AC",
+          "participantId": "tournament-team-2026-19u-boys-pasadena-ac",
+          "teamId": null,
+          "clubId": "club-pasadena-ac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 5,
+        "whiteRaw": "12",
+        "darkRaw": "5",
+        "whiteRegulation": 12,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-mid-pen",
+        "winnerTeamId": null,
+        "winnerName": "MID PEN",
+        "loserParticipantId": "tournament-team-2026-19u-boys-pasadena-ac",
+        "loserTeamId": null,
+        "loserName": "PASADENA AC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau07",
+      "sourceGameNumber": "19BAU07",
+      "sourceRow": 12,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thC",
+      "stageDisplay": "3rd/4thC",
+      "stageMeta": {
+        "raw": "3rd/4thC",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thC",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thC"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#3-MARIN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#3",
+          "displayName": "MARIN",
+          "participantId": "tournament-team-2026-19u-boys-marin",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L#4-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#4",
+          "displayName": "NORTHWEST",
+          "participantId": "tournament-team-2026-19u-boys-northwest",
+          "teamId": null,
+          "clubId": "club-northwest",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 10,
+        "whiteRaw": "6",
+        "darkRaw": "10",
+        "whiteRegulation": 6,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-northwest",
+        "winnerTeamId": null,
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "tournament-team-2026-19u-boys-marin",
+        "loserTeamId": null,
+        "loserName": "MARIN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau08",
+      "sourceGameNumber": "19BAU08",
+      "sourceRow": 13,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndC",
+      "stageDisplay": "1st/2ndC",
+      "stageMeta": {
+        "raw": "1st/2ndC",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndC",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndC"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#3-MISSION WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#3",
+          "displayName": "MISSION WPC",
+          "participantId": "tournament-team-2026-19u-boys-mission-wpc",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#4-AMERICAN RIVER GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#4",
+          "displayName": "AMERICAN RIVER GOLD",
+          "participantId": "tournament-team-2026-19u-boys-american-river-gold",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-mission-wpc",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC",
+        "loserParticipantId": "tournament-team-2026-19u-boys-american-river-gold",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau13",
+      "sourceGameNumber": "19BAU13",
+      "sourceRow": 14,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thD",
+      "stageDisplay": "3rd/4thD",
+      "stageMeta": {
+        "raw": "3rd/4thD",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thD",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thD"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#9-WCAC UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#9",
+          "displayName": "WCAC UNITED",
+          "participantId": "tournament-team-2026-19u-boys-wcac-united",
+          "teamId": null,
+          "clubId": "club-wcac-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#10-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#10",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-19u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 16,
+        "whiteRaw": "8",
+        "darkRaw": "16",
+        "whiteRegulation": 8,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-set",
+        "winnerTeamId": null,
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2026-19u-boys-wcac-united",
+        "loserTeamId": null,
+        "loserName": "WCAC UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau14",
+      "sourceGameNumber": "19BAU14",
+      "sourceRow": 15,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndD",
+      "stageDisplay": "1st/2ndD",
+      "stageMeta": {
+        "raw": "1st/2ndD",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndD",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndD"
+      },
+      "venue": "EDISON HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#9-BIG VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#9",
+          "displayName": "BIG VALLEY",
+          "participantId": "tournament-team-2026-19u-boys-big-valley",
+          "teamId": null,
+          "clubId": "club-big-valley",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#10-LONGHORN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#10",
+          "displayName": "LONGHORN",
+          "participantId": "tournament-team-2026-19u-boys-longhorn",
+          "teamId": null,
+          "clubId": "club-longhorn",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 13,
+        "whiteRaw": "7",
+        "darkRaw": "13",
+        "whiteRegulation": 7,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-longhorn",
+        "winnerTeamId": null,
+        "winnerName": "LONGHORN",
+        "loserParticipantId": "tournament-team-2026-19u-boys-big-valley",
+        "loserTeamId": null,
+        "loserName": "BIG VALLEY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "6:00 PM",
+          "raw": "6:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EDISON HS",
+          "raw": "EDISON HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau15",
+      "sourceGameNumber": "19BAU15",
+      "sourceRow": 16,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thB",
+      "stageDisplay": "3rd/4thB",
+      "stageMeta": {
+        "raw": "3rd/4thB",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thB",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thB"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#11-FARALLON",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#11",
+          "displayName": "FARALLON",
+          "participantId": "tournament-team-2026-19u-boys-farallon",
+          "teamId": null,
+          "clubId": "club-farallon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#12-PASADENA AC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#12",
+          "displayName": "PASADENA AC",
+          "participantId": "tournament-team-2026-19u-boys-pasadena-ac",
+          "teamId": null,
+          "clubId": "club-pasadena-ac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7",
+        "whiteRegulation": 12,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-farallon",
+        "winnerTeamId": null,
+        "winnerName": "FARALLON",
+        "loserParticipantId": "tournament-team-2026-19u-boys-pasadena-ac",
+        "loserTeamId": null,
+        "loserName": "PASADENA AC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "6:00 PM",
+          "raw": "6:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau16",
+      "sourceGameNumber": "19BAU16",
+      "sourceRow": 17,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndB",
+      "stageDisplay": "1st/2ndB",
+      "stageMeta": {
+        "raw": "1st/2ndB",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndB",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndB"
+      },
+      "venue": "SAN JUAN HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#11-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#11",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-19u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#12-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#12",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-19u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 7,
+        "whiteRaw": "10",
+        "darkRaw": "7",
+        "whiteRegulation": 10,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-19u-boys-mid-pen",
+        "loserTeamId": null,
+        "loserName": "MID PEN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 PM",
+          "raw": "7:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN JUAN HILLS HS",
+          "raw": "SAN JUAN HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau29",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau29",
+      "sourceGameNumber": "19BAU29",
+      "sourceRow": 18,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13-16 semi",
+      "stageDisplay": "13-16 Semifinal",
+      "stageMeta": {
+        "raw": "13-16 semi",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "13-16 Semifinal",
+        "placementRange": {
+          "start": 13,
+          "end": 16
+        },
+        "placement": null,
+        "displayLabel": "13-16 Semifinal"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "4thD-WCAC UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thD",
+          "displayName": "WCAC UNITED",
+          "participantId": "tournament-team-2026-19u-boys-wcac-united",
+          "teamId": null,
+          "clubId": "club-wcac-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "4thA-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thA",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-19u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 10,
+        "whiteRaw": "13",
+        "darkRaw": "10",
+        "whiteRegulation": 13,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-wcac-united",
+        "winnerTeamId": null,
+        "winnerName": "WCAC UNITED",
+        "loserParticipantId": "tournament-team-2026-19u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:00 AM",
+          "raw": "10:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau30",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau30",
+      "sourceGameNumber": "19BAU30",
+      "sourceRow": 19,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13-16 semi",
+      "stageDisplay": "13-16 Semifinal",
+      "stageMeta": {
+        "raw": "13-16 semi",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "13-16 Semifinal",
+        "placementRange": {
+          "start": 13,
+          "end": 16
+        },
+        "placement": null,
+        "displayLabel": "13-16 Semifinal"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "4thC-MARIN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thC",
+          "displayName": "MARIN",
+          "participantId": "tournament-team-2026-19u-boys-marin",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "4thB-PASADENA AC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thB",
+          "displayName": "PASADENA AC",
+          "participantId": "tournament-team-2026-19u-boys-pasadena-ac",
+          "teamId": null,
+          "clubId": "club-pasadena-ac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 13,
+        "whiteRaw": "11",
+        "darkRaw": "13",
+        "whiteRegulation": 11,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-pasadena-ac",
+        "winnerTeamId": null,
+        "winnerName": "PASADENA AC",
+        "loserParticipantId": "tournament-team-2026-19u-boys-marin",
+        "loserTeamId": null,
+        "loserName": "MARIN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau27",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau27",
+      "sourceGameNumber": "19BAU27",
+      "sourceRow": 20,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi 3A/3D",
+      "stageDisplay": "9-12 Semifinal 3A/3D",
+      "stageMeta": {
+        "raw": "9-12 semi 3A/3D",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "9-12 Semifinal 3A/3D",
+        "placementRange": {
+          "start": 9,
+          "end": 12
+        },
+        "placement": null,
+        "displayLabel": "9-12 Semifinal 3A/3D"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-19u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdD-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdD",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-19u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 17,
+        "whiteRaw": "10",
+        "darkRaw": "17",
+        "whiteRegulation": 10,
+        "darkRegulation": 17,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-set",
+        "winnerTeamId": null,
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2026-19u-boys-vanguard-silver",
+        "loserTeamId": null,
+        "loserName": "VANGUARD SILVER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau28",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau28",
+      "sourceGameNumber": "19BAU28",
+      "sourceRow": 21,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-12 semi 3B/3C",
+      "stageDisplay": "9-12 Semifinal 3B/3C",
+      "stageMeta": {
+        "raw": "9-12 semi 3B/3C",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "9-12 Semifinal 3B/3C",
+        "placementRange": {
+          "start": 9,
+          "end": 12
+        },
+        "placement": null,
+        "displayLabel": "9-12 Semifinal 3B/3C"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdB-FARALLON",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "FARALLON",
+          "participantId": "tournament-team-2026-19u-boys-farallon",
+          "teamId": null,
+          "clubId": "club-farallon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "3rdC-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdC",
+          "displayName": "NORTHWEST",
+          "participantId": "tournament-team-2026-19u-boys-northwest",
+          "teamId": null,
+          "clubId": "club-northwest",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 10,
+        "whiteRaw": "9",
+        "darkRaw": "10",
+        "whiteRegulation": 9,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-northwest",
+        "winnerTeamId": null,
+        "winnerName": "NORTHWEST",
+        "loserParticipantId": "tournament-team-2026-19u-boys-farallon",
+        "loserTeamId": null,
+        "loserName": "FARALLON"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau21",
+      "sourceGameNumber": "19BAU21",
+      "sourceRow": 22,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 semi 2D/2A",
+      "stageDisplay": "5-8 Semifinal 2D/2A",
+      "stageMeta": {
+        "raw": "5-8 semi 2D/2A",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "5-8 Semifinal 2D/2A",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 Semifinal 2D/2A"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndD-BIG VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndD",
+          "displayName": "BIG VALLEY",
+          "participantId": "tournament-team-2026-19u-boys-big-valley",
+          "teamId": null,
+          "clubId": "club-big-valley",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "2ndA-CLOVIS BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "CLOVIS BLACK",
+          "participantId": "tournament-team-2026-19u-boys-clovis-black",
+          "teamId": null,
+          "clubId": "club-clovis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 6,
+        "whiteRaw": "12",
+        "darkRaw": "6",
+        "whiteRegulation": 12,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-big-valley",
+        "winnerTeamId": null,
+        "winnerName": "BIG VALLEY",
+        "loserParticipantId": "tournament-team-2026-19u-boys-clovis-black",
+        "loserTeamId": null,
+        "loserName": "CLOVIS BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau22",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau22",
+      "sourceGameNumber": "19BAU22",
+      "sourceRow": 23,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 semi 2C/2B",
+      "stageDisplay": "5-8 Semifinal 2C/2B",
+      "stageMeta": {
+        "raw": "5-8 semi 2C/2B",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "5-8 Semifinal 2C/2B",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 Semifinal 2C/2B"
+      },
+      "venue": "YORBA LINDA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndC-AMERICAN RIVER GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndC",
+          "displayName": "AMERICAN RIVER GOLD",
+          "participantId": "tournament-team-2026-19u-boys-american-river-gold",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "2ndB-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndB",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-19u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-american-river-gold",
+        "winnerTeamId": null,
+        "winnerName": "AMERICAN RIVER GOLD",
+        "loserParticipantId": "tournament-team-2026-19u-boys-mid-pen",
+        "loserTeamId": null,
+        "loserName": "MID PEN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:00 PM",
+          "raw": "1:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "YORBA LINDA HS",
+          "raw": "YORBA LINDA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau19",
+      "sourceGameNumber": "19BAU19",
+      "sourceRow": 24,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi 1A/1D",
+      "stageDisplay": "1-4 Semifinal 1A/1D",
+      "stageMeta": {
+        "raw": "1-4 semi 1A/1D",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal 1A/1D",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal 1A/1D"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-19u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "1stD-LONGHORN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stD",
+          "displayName": "LONGHORN",
+          "participantId": "tournament-team-2026-19u-boys-longhorn",
+          "teamId": null,
+          "clubId": "club-longhorn",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 14,
+        "whiteRaw": "2",
+        "darkRaw": "14",
+        "whiteRegulation": 2,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-longhorn",
+        "winnerTeamId": null,
+        "winnerName": "LONGHORN",
+        "loserParticipantId": "tournament-team-2026-19u-boys-hieland",
+        "loserTeamId": null,
+        "loserName": "HIELAND"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau34",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau34",
+      "sourceGameNumber": "19BAU34",
+      "sourceRow": 25,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th",
+      "stageDisplay": "13th place game",
+      "stageMeta": {
+        "raw": "13th",
+        "detailRaw": "20",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "13th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 13,
+          "loserPlace": 14
+        },
+        "displayLabel": "13th place game"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#29-WCAC UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#29",
+          "displayName": "WCAC UNITED",
+          "participantId": "tournament-team-2026-19u-boys-wcac-united",
+          "teamId": null,
+          "clubId": "club-wcac-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#30-PASADENA AC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#30",
+          "displayName": "PASADENA AC",
+          "participantId": "tournament-team-2026-19u-boys-pasadena-ac",
+          "teamId": null,
+          "clubId": "club-pasadena-ac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 20,
+        "dark": 9,
+        "whiteRaw": "20",
+        "darkRaw": "9",
+        "whiteRegulation": 20,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-wcac-united",
+        "winnerTeamId": null,
+        "winnerName": "WCAC UNITED",
+        "loserParticipantId": "tournament-team-2026-19u-boys-pasadena-ac",
+        "loserTeamId": null,
+        "loserName": "PASADENA AC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau20",
+      "sourceGameNumber": "19BAU20",
+      "sourceRow": 26,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi 1B/1C",
+      "stageDisplay": "1-4 Semifinal 1B/1C",
+      "stageMeta": {
+        "raw": "1-4 semi 1B/1C",
+        "detailRaw": "6.5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal 1B/1C",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal 1B/1C"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stB-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stB",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-19u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stC-MISSION WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stC",
+          "displayName": "MISSION WPC",
+          "participantId": "tournament-team-2026-19u-boys-mission-wpc",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 6.5,
+        "dark": 6.6,
+        "whiteRaw": "6.5",
+        "darkRaw": "6.6",
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 5,
+        "darkShootout": 6
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 5,
+        "darkShootout": 6
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-mission-wpc",
+        "winnerTeamId": null,
+        "winnerName": "MISSION WPC",
+        "loserParticipantId": "tournament-team-2026-19u-boys-orange-county-wpc-blue",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau33",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau33",
+      "sourceGameNumber": "19BAU33",
+      "sourceRow": 27,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "15th",
+      "stageDisplay": "15th place game",
+      "stageMeta": {
+        "raw": "15th",
+        "detailRaw": "25",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "15th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 15,
+          "loserPlace": 16
+        },
+        "displayLabel": "15th place game"
+      },
+      "venue": "ESTANCIA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#29-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#29",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-19u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#30-MARIN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#30",
+          "displayName": "MARIN",
+          "participantId": "tournament-team-2026-19u-boys-marin",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 25,
+        "dark": 11,
+        "whiteRaw": "25",
+        "darkRaw": "11",
+        "whiteRegulation": 25,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-19u-boys-marin",
+        "loserTeamId": null,
+        "loserName": "MARIN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:00 PM",
+          "raw": "3:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 1",
+          "raw": "ESTANCIA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau25",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau25",
+      "sourceGameNumber": "19BAU25",
+      "sourceRow": 28,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#21-BIG VALLEY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#21",
+          "displayName": "BIG VALLEY",
+          "participantId": "tournament-team-2026-19u-boys-big-valley",
+          "teamId": null,
+          "clubId": "club-big-valley",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#22-AMERICAN RIVER GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#22",
+          "displayName": "AMERICAN RIVER GOLD",
+          "participantId": "tournament-team-2026-19u-boys-american-river-gold",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 6,
+        "whiteRaw": "18",
+        "darkRaw": "6",
+        "whiteRegulation": 18,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-big-valley",
+        "winnerTeamId": null,
+        "winnerName": "BIG VALLEY",
+        "loserParticipantId": "tournament-team-2026-19u-boys-american-river-gold",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:00 PM",
+          "raw": "4:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau26",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau26",
+      "sourceGameNumber": "19BAU26",
+      "sourceRow": 29,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "stageDisplay": "7th place game",
+      "stageMeta": {
+        "raw": "7th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "7th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 7,
+          "loserPlace": 8
+        },
+        "displayLabel": "7th place game"
+      },
+      "venue": "FULLERTON COLLEGE",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#21-CLOVIS BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#21",
+          "displayName": "CLOVIS BLACK",
+          "participantId": "tournament-team-2026-19u-boys-clovis-black",
+          "teamId": null,
+          "clubId": "club-clovis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#22-MID PEN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#22",
+          "displayName": "MID PEN",
+          "participantId": "tournament-team-2026-19u-boys-mid-pen",
+          "teamId": null,
+          "clubId": "club-mid-pen",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-clovis-black",
+        "winnerTeamId": null,
+        "winnerName": "CLOVIS BLACK",
+        "loserParticipantId": "tournament-team-2026-19u-boys-mid-pen",
+        "loserTeamId": null,
+        "loserName": "MID PEN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "FULLERTON COLLEGE",
+          "raw": "FULLERTON COLLEGE"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau31",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau31",
+      "sourceGameNumber": "19BAU31",
+      "sourceRow": 30,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th",
+      "stageDisplay": "9th place game",
+      "stageMeta": {
+        "raw": "9th",
+        "detailRaw": "8.4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "9th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 9,
+          "loserPlace": 10
+        },
+        "displayLabel": "9th place game"
+      },
+      "venue": "COSTA MESA HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#27-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#27",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-19u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#28-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#28",
+          "displayName": "NORTHWEST",
+          "participantId": "tournament-team-2026-19u-boys-northwest",
+          "teamId": null,
+          "clubId": "club-northwest",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8.4,
+        "dark": 8.3,
+        "whiteRaw": "8.4",
+        "darkRaw": "8.3",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 4,
+        "darkShootout": 3
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 4,
+        "darkShootout": 3
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-set",
+        "winnerTeamId": null,
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2026-19u-boys-northwest",
+        "loserTeamId": null,
+        "loserName": "NORTHWEST"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 1",
+          "raw": "COSTA MESA HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau32",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau32",
+      "sourceGameNumber": "19BAU32",
+      "sourceRow": 31,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "11th",
+      "stageDisplay": "11th place game",
+      "stageMeta": {
+        "raw": "11th",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "11th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 11,
+          "loserPlace": 12
+        },
+        "displayLabel": "11th place game"
+      },
+      "venue": "TUSTIN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#27-VANGUARD SILVER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#27",
+          "displayName": "VANGUARD SILVER",
+          "participantId": "tournament-team-2026-19u-boys-vanguard-silver",
+          "teamId": null,
+          "clubId": "club-vanguard",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#28-FARALLON",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#28",
+          "displayName": "FARALLON",
+          "participantId": "tournament-team-2026-19u-boys-farallon",
+          "teamId": null,
+          "clubId": "club-farallon",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6",
+        "whiteRegulation": 7,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-vanguard-silver",
+        "winnerTeamId": null,
+        "winnerName": "VANGUARD SILVER",
+        "loserParticipantId": "tournament-team-2026-19u-boys-farallon",
+        "loserTeamId": null,
+        "loserName": "FARALLON"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 1",
+          "raw": "TUSTIN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau23",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau23",
+      "sourceGameNumber": "19BAU23",
+      "sourceRow": 32,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "WOOLLETT NEAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#19-HIELAND",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#19",
+          "displayName": "HIELAND",
+          "participantId": "tournament-team-2026-19u-boys-hieland",
+          "teamId": null,
+          "clubId": "club-hieland",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#20-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#20",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-19u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 10,
+        "whiteRaw": "9",
+        "darkRaw": "10",
+        "whiteRegulation": 9,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-19u-boys-hieland",
+        "loserTeamId": null,
+        "loserName": "HIELAND"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "6:00 PM",
+          "raw": "6:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR RIGHT",
+          "raw": "WOOLLETT NEAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-19u-boys-gold-19bau24",
+      "eventId": "2026-kap7-international",
+      "divisionId": "19u-boys-gold",
+      "season": "2026",
+      "ageGroup": "19U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "19Bau24",
+      "sourceGameNumber": "19BAU24",
+      "sourceRow": 33,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#19-LONGHORN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#19",
+          "displayName": "LONGHORN",
+          "participantId": "tournament-team-2026-19u-boys-longhorn",
+          "teamId": null,
+          "clubId": "club-longhorn",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#20-MISSION WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#20",
+          "displayName": "MISSION WPC",
+          "participantId": "tournament-team-2026-19u-boys-mission-wpc",
+          "teamId": null,
+          "clubId": "club-mission",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 9,
+        "whiteRaw": "12",
+        "darkRaw": "9",
+        "whiteRegulation": 12,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-19u-boys-longhorn",
+        "winnerTeamId": null,
+        "winnerName": "LONGHORN",
+        "loserParticipantId": "tournament-team-2026-19u-boys-mission-wpc",
+        "loserTeamId": null,
+        "loserName": "MISSION WPC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "6:00 PM",
+          "raw": "6:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT NEAR LEFT",
+          "raw": "WOOLLETT NEAR LEFT"
+        }
+      }
+    }
+  ]
+}

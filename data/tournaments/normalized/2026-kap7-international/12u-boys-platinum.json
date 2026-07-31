@@ -1,0 +1,2029 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "12u-boys-platinum",
+    "label": "12U Boys Platinum",
+    "season": "2026",
+    "ageGroup": "12U",
+    "gender": "Boys",
+    "division": "Platinum",
+    "divisionTier": "D1",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "12u-boys-platinum",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/12u-boys-platinum.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "5f7930a9ebfaff3aa8a7ebb55d44473739ae3af40ddf055fae4665bd2e4626de",
+    "rowCount": 22
+  },
+  "counts": {
+    "games": 21,
+    "finalGames": 21,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 42,
+    "resolvedTeamParticipants": 26,
+    "unresolvedTeamParticipants": 16,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 16
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt01",
+      "sourceGameNumber": "12BPT01",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "Mission A",
+          "participantId": "team-2026-12u-boys-mission-a-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-a-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A3-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-12u-boys-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 0,
+        "whiteRaw": "14",
+        "darkRaw": "0",
+        "whiteRegulation": 14,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerName": "Mission A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-680-red",
+        "loserTeamId": null,
+        "loserName": "680 RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt02",
+      "sourceGameNumber": "12BPT02",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-CC UNITED BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "CC UNITED BLACK",
+          "participantId": "tournament-team-2026-12u-boys-cc-united-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B2-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "North Irvine A",
+          "participantId": "team-2026-12u-boys-north-irvine-black",
+          "teamId": "team-2026-12u-boys-north-irvine-black",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6",
+        "whiteRegulation": 7,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-cc-united-black",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLACK",
+        "loserParticipantId": "team-2026-12u-boys-north-irvine-black",
+        "loserTeamId": "team-2026-12u-boys-north-irvine-black",
+        "loserName": "North Irvine A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt03",
+      "sourceGameNumber": "12BPT03",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C4",
+      "stageDisplay": "C bracket C1,C4",
+      "stageMeta": {
+        "raw": "C bracket C1,C4",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C4"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "Stanford A",
+          "participantId": "team-2026-12u-boys-stanford-red",
+          "teamId": "team-2026-12u-boys-stanford-red",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C4-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4",
+          "displayName": "Davis A",
+          "participantId": "team-2026-12u-boys-davis",
+          "teamId": "team-2026-12u-boys-davis",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 3,
+        "whiteRaw": "16",
+        "darkRaw": "3",
+        "whiteRegulation": 16,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-stanford-red",
+        "winnerTeamId": "team-2026-12u-boys-stanford-red",
+        "winnerName": "Stanford A",
+        "loserParticipantId": "team-2026-12u-boys-davis",
+        "loserTeamId": "team-2026-12u-boys-davis",
+        "loserName": "Davis A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt04",
+      "sourceGameNumber": "12BPT04",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C2,C3",
+      "stageDisplay": "C bracket C2,C3",
+      "stageMeta": {
+        "raw": "C bracket C2,C3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C2,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C2,C3"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-ORWP A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "ORWP A",
+          "participantId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "teamId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "clubId": "club-orwp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3-SHAQ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "SHAQ",
+          "participantId": "tournament-team-2026-12u-boys-shaq",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 4,
+        "whiteRaw": "8",
+        "darkRaw": "4",
+        "whiteRegulation": 8,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "winnerName": "ORWP A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-shaq",
+        "loserTeamId": null,
+        "loserName": "SHAQ"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt05",
+      "sourceGameNumber": "12BPT05",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": "7.2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-LAMORINDA A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A3-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-12u-boys-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7.2,
+        "dark": 7.4,
+        "whiteRaw": "7.2",
+        "darkRaw": "7.4",
+        "whiteRegulation": 7,
+        "darkRegulation": 7,
+        "whiteShootout": 2,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 7,
+        "darkRegulation": 7,
+        "whiteShootout": 2,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-680-red",
+        "winnerTeamId": null,
+        "winnerName": "680 RED",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserName": "Lamorinda A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt06",
+      "sourceGameNumber": "12BPT06",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "North Irvine A",
+          "participantId": "team-2026-12u-boys-north-irvine-black",
+          "teamId": "team-2026-12u-boys-north-irvine-black",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "B3-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-12u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 4,
+        "whiteRaw": "15",
+        "darkRaw": "4",
+        "whiteRegulation": 15,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-north-irvine-black",
+        "winnerTeamId": "team-2026-12u-boys-north-irvine-black",
+        "winnerName": "North Irvine A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-la-jolla-united-navy",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt07",
+      "sourceGameNumber": "12BPT07",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C2",
+      "stageDisplay": "C bracket C1,C2",
+      "stageMeta": {
+        "raw": "C bracket C1,C2",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C2"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "Stanford A",
+          "participantId": "team-2026-12u-boys-stanford-red",
+          "teamId": "team-2026-12u-boys-stanford-red",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C2-ORWP A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "ORWP A",
+          "participantId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "teamId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "clubId": "club-orwp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 8,
+        "whiteRaw": "10",
+        "darkRaw": "8",
+        "whiteRegulation": 10,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-stanford-red",
+        "winnerTeamId": "team-2026-12u-boys-stanford-red",
+        "winnerName": "Stanford A",
+        "loserParticipantId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "loserName": "ORWP A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt08",
+      "sourceGameNumber": "12BPT08",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C3,C4",
+      "stageDisplay": "C bracket C3,C4",
+      "stageMeta": {
+        "raw": "C bracket C3,C4",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C3,C4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C3,C4"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C3-SHAQ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "SHAQ",
+          "participantId": "tournament-team-2026-12u-boys-shaq",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C4-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4",
+          "displayName": "Davis A",
+          "participantId": "team-2026-12u-boys-davis",
+          "teamId": "team-2026-12u-boys-davis",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5",
+        "whiteRegulation": 9,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-shaq",
+        "winnerTeamId": null,
+        "winnerName": "SHAQ",
+        "loserParticipantId": "team-2026-12u-boys-davis",
+        "loserTeamId": "team-2026-12u-boys-davis",
+        "loserName": "Davis A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt09",
+      "sourceGameNumber": "12BPT09",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "Mission A",
+          "participantId": "team-2026-12u-boys-mission-a-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-a-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A2-LAMORINDA A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 6,
+        "whiteRaw": "18",
+        "darkRaw": "6",
+        "whiteRegulation": 18,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerName": "Mission A",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserName": "Lamorinda A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:50 PM",
+          "raw": "5:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt10",
+      "sourceGameNumber": "12BPT10",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "6:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-CC UNITED BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "CC UNITED BLACK",
+          "participantId": "tournament-team-2026-12u-boys-cc-united-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-12u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 7,
+        "whiteRaw": "14",
+        "darkRaw": "7",
+        "whiteRegulation": 14,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-cc-united-black",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLACK",
+        "loserParticipantId": "tournament-team-2026-12u-boys-la-jolla-united-navy",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "6:40 PM",
+          "raw": "6:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt11",
+      "sourceGameNumber": "12BPT11",
+      "sourceRow": 12,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C2,C4",
+      "stageDisplay": "C bracket C2,C4",
+      "stageMeta": {
+        "raw": "C bracket C2,C4",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C2,C4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C2,C4"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-ORWP A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "ORWP A",
+          "participantId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "teamId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "clubId": "club-orwp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C4-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4",
+          "displayName": "Davis A",
+          "participantId": "team-2026-12u-boys-davis",
+          "teamId": "team-2026-12u-boys-davis",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 5,
+        "whiteRaw": "6",
+        "darkRaw": "5",
+        "whiteRegulation": 6,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "winnerName": "ORWP A",
+        "loserParticipantId": "team-2026-12u-boys-davis",
+        "loserTeamId": "team-2026-12u-boys-davis",
+        "loserName": "Davis A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt12",
+      "sourceGameNumber": "12BPT12",
+      "sourceRow": 13,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C3",
+      "stageDisplay": "C bracket C1,C3",
+      "stageMeta": {
+        "raw": "C bracket C1,C3",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C3"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "Stanford A",
+          "participantId": "team-2026-12u-boys-stanford-red",
+          "teamId": "team-2026-12u-boys-stanford-red",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3-SHAQ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "SHAQ",
+          "participantId": "tournament-team-2026-12u-boys-shaq",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 8,
+        "whiteRaw": "12",
+        "darkRaw": "8",
+        "whiteRegulation": 12,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-stanford-red",
+        "winnerTeamId": "team-2026-12u-boys-stanford-red",
+        "winnerName": "Stanford A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-shaq",
+        "loserTeamId": null,
+        "loserName": "SHAQ"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt13",
+      "sourceGameNumber": "12BPT13",
+      "sourceRow": 14,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th-10th 2A/3B",
+      "stageDisplay": "5th-10th 2A/3B",
+      "stageMeta": {
+        "raw": "5th-10th 2A/3B",
+        "detailRaw": "6.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5th-10th 2A/3B",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "5th-10th 2A/3B"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndA-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-12u-boys-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdB-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-12u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6.3,
+        "dark": 6,
+        "whiteRaw": "6.3",
+        "darkRaw": "6",
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 3,
+        "darkShootout": null
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 3,
+        "darkShootout": null
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-680-red",
+        "winnerTeamId": null,
+        "winnerName": "680 RED",
+        "loserParticipantId": "tournament-team-2026-12u-boys-la-jolla-united-navy",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt14",
+      "sourceGameNumber": "12BPT14",
+      "sourceRow": 15,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th-10th 3A/2B",
+      "stageDisplay": "5th-10th 3A/2B",
+      "stageMeta": {
+        "raw": "5th-10th 3A/2B",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5th-10th 3A/2B",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "5th-10th 3A/2B"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-LAMORINDA A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "2ndB-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndB",
+          "displayName": "North Irvine A",
+          "participantId": "team-2026-12u-boys-north-irvine-black",
+          "teamId": "team-2026-12u-boys-north-irvine-black",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 20,
+        "whiteRaw": "5",
+        "darkRaw": "20",
+        "whiteRegulation": 5,
+        "darkRegulation": 20,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-north-irvine-black",
+        "winnerTeamId": "team-2026-12u-boys-north-irvine-black",
+        "winnerName": "North Irvine A",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "loserName": "Lamorinda A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt15",
+      "sourceGameNumber": "12BPT15",
+      "sourceRow": 16,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi 1A/2C",
+      "stageDisplay": "1-4 Semifinal 1A/2C",
+      "stageMeta": {
+        "raw": "1-4 semi 1A/2C",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal 1A/2C",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal 1A/2C"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "Mission A",
+          "participantId": "team-2026-12u-boys-mission-a-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-a-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "2ndC-ORWP A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndC",
+          "displayName": "ORWP A",
+          "participantId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "teamId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "clubId": "club-orwp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 3,
+        "whiteRaw": "12",
+        "darkRaw": "3",
+        "whiteRegulation": 12,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerName": "Mission A",
+        "loserParticipantId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "loserName": "ORWP A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt16",
+      "sourceGameNumber": "12BPT16",
+      "sourceRow": 17,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi 1B/1C",
+      "stageDisplay": "1-4 Semifinal 1B/1C",
+      "stageMeta": {
+        "raw": "1-4 semi 1B/1C",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal 1B/1C",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal 1B/1C"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stB-CC UNITED BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stB",
+          "displayName": "CC UNITED BLACK",
+          "participantId": "tournament-team-2026-12u-boys-cc-united-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stC-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stC",
+          "displayName": "Stanford A",
+          "participantId": "team-2026-12u-boys-stanford-red",
+          "teamId": "team-2026-12u-boys-stanford-red",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 12,
+        "whiteRaw": "9",
+        "darkRaw": "12",
+        "whiteRegulation": 9,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-stanford-red",
+        "winnerTeamId": "team-2026-12u-boys-stanford-red",
+        "winnerName": "Stanford A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-cc-united-black",
+        "loserTeamId": null,
+        "loserName": "CC UNITED BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt18",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt18",
+      "sourceGameNumber": "12BPT18",
+      "sourceRow": 18,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-10th",
+      "stageDisplay": "7th-10th",
+      "stageMeta": {
+        "raw": "7th-10th",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-10th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-10th"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#13-LA JOLLA UNITED NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#13",
+          "displayName": "LA JOLLA UNITED NAVY",
+          "participantId": "tournament-team-2026-12u-boys-la-jolla-united-navy",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdC-SHAQ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdC",
+          "displayName": "SHAQ",
+          "participantId": "tournament-team-2026-12u-boys-shaq",
+          "teamId": null,
+          "clubId": "club-shaq",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11",
+        "whiteRegulation": 7,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-shaq",
+        "winnerTeamId": null,
+        "winnerName": "SHAQ",
+        "loserParticipantId": "tournament-team-2026-12u-boys-la-jolla-united-navy",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt20",
+      "sourceGameNumber": "12BPT20",
+      "sourceRow": 19,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#15-ORWP A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#15",
+          "displayName": "ORWP A",
+          "participantId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "teamId": "team-2026-12u-boys-orwp-a-12u-boys",
+          "clubId": "club-orwp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "L#16-CC UNITED BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#16",
+          "displayName": "CC UNITED BLACK",
+          "participantId": "tournament-team-2026-12u-boys-cc-united-black",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 16,
+        "whiteRaw": "4",
+        "darkRaw": "16",
+        "whiteRegulation": 4,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-cc-united-black",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED BLACK",
+        "loserParticipantId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-orwp-a-12u-boys",
+        "loserName": "ORWP A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt21",
+      "sourceGameNumber": "12BPT21",
+      "sourceRow": 20,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#15-MISSION WPC A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#15",
+          "displayName": "Mission A",
+          "participantId": "team-2026-12u-boys-mission-a-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-a-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W#16-STANFORD RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#16",
+          "displayName": "Stanford A",
+          "participantId": "team-2026-12u-boys-stanford-red",
+          "teamId": "team-2026-12u-boys-stanford-red",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 4,
+        "whiteRaw": "18",
+        "darkRaw": "4",
+        "whiteRegulation": 18,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-a-12u-boys",
+        "winnerName": "Mission A",
+        "loserParticipantId": "team-2026-12u-boys-stanford-red",
+        "loserTeamId": "team-2026-12u-boys-stanford-red",
+        "loserName": "Stanford A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt17",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt17",
+      "sourceGameNumber": "12BPT17",
+      "sourceRow": 21,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#13-680 RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#13",
+          "displayName": "680 RED",
+          "participantId": "tournament-team-2026-12u-boys-680-red",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#14-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#14",
+          "displayName": "North Irvine A",
+          "participantId": "team-2026-12u-boys-north-irvine-black",
+          "teamId": "team-2026-12u-boys-north-irvine-black",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 6,
+        "whiteRaw": "5",
+        "darkRaw": "6",
+        "whiteRegulation": 5,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-north-irvine-black",
+        "winnerTeamId": "team-2026-12u-boys-north-irvine-black",
+        "winnerName": "North Irvine A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-680-red",
+        "loserTeamId": null,
+        "loserName": "680 RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-platinum-12bpt19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-platinum",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "12Bpt19",
+      "sourceGameNumber": "12BPT19",
+      "sourceRow": 22,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-10th",
+      "stageDisplay": "7th-10th",
+      "stageMeta": {
+        "raw": "7th-10th",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-10th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-10th"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#14-LAMORINDA A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#14",
+          "displayName": "Lamorinda A",
+          "participantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "4thC-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thC",
+          "displayName": "Davis A",
+          "participantId": "team-2026-12u-boys-davis",
+          "teamId": "team-2026-12u-boys-davis",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 7,
+        "whiteRaw": "17",
+        "darkRaw": "7",
+        "whiteRegulation": 17,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-lamorinda-a-12u-boys",
+        "winnerName": "Lamorinda A",
+        "loserParticipantId": "team-2026-12u-boys-davis",
+        "loserTeamId": "team-2026-12u-boys-davis",
+        "loserName": "Davis A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    }
+  ]
+}

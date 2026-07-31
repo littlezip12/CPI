@@ -1,0 +1,4767 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "12u-boys-gold",
+    "label": "12U Boys Gold",
+    "season": "2026",
+    "ageGroup": "12U",
+    "gender": "Boys",
+    "division": "Gold",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "12u-boys-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/12u-boys-gold.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "1c251b8fac05f288e2ca447c3eee72a569260e96a72c785bb31ba0e043c89c8b",
+    "rowCount": 51
+  },
+  "counts": {
+    "games": 50,
+    "finalGames": 50,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 100,
+    "resolvedTeamParticipants": 37,
+    "unresolvedTeamParticipants": 63,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 63
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau01",
+      "sourceGameNumber": "12BAU01",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A2(16)-STANFORD BLACK",
+          "kind": "team",
+          "seed": 16,
+          "sourceReference": "A2(16)",
+          "displayName": "Stanford B",
+          "participantId": "team-2026-12u-boys-stanford-black",
+          "teamId": "team-2026-12u-boys-stanford-black",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5",
+        "whiteRegulation": 11,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "team-2026-12u-boys-stanford-black",
+        "loserTeamId": "team-2026-12u-boys-stanford-black",
+        "loserName": "Stanford B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau04a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau04A",
+      "sourceGameNumber": "12BAU04A",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G1,G3",
+      "stageDisplay": "G bracket G1,G3",
+      "stageMeta": {
+        "raw": "G bracket G1,G3",
+        "detailRaw": "22",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G1,G3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G1,G3"
+      },
+      "venue": "WOOLLETT FAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(6)-SAN MATEO",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "G1(6)",
+          "displayName": "SAN MATEO",
+          "participantId": "tournament-team-2026-12u-boys-san-mateo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "G3(22)-NORTH IRVINE WHITE",
+          "kind": "team",
+          "seed": 22,
+          "sourceReference": "G3(22)",
+          "displayName": "NORTH IRVINE WHITE",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine-white",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 22,
+        "dark": 2,
+        "whiteRaw": "22",
+        "darkRaw": "2",
+        "whiteRegulation": 22,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-mateo",
+        "winnerTeamId": null,
+        "winnerName": "SAN MATEO",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-white",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR RIGHT",
+          "raw": "WOOLLETT FAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau02",
+      "sourceGameNumber": "12BAU02",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C3",
+      "stageDisplay": "C bracket C1,C3",
+      "stageMeta": {
+        "raw": "C bracket C1,C3",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C3"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1(5)-BACK BAY",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "C1(5)",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-12u-boys-back-bay",
+          "teamId": "team-2026-12u-boys-back-bay",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3(21)-MISSION WPC B",
+          "kind": "team",
+          "seed": 21,
+          "sourceReference": "C3(21)",
+          "displayName": "Mission B",
+          "participantId": "team-2026-12u-boys-mission-b-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-b-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 16,
+        "whiteRaw": "6",
+        "darkRaw": "16",
+        "whiteRegulation": 6,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-b-12u-boys",
+        "winnerName": "Mission B",
+        "loserParticipantId": "team-2026-12u-boys-back-bay",
+        "loserTeamId": "team-2026-12u-boys-back-bay",
+        "loserName": "Back Bay"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau01a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau01A",
+      "sourceGameNumber": "12BAU01A",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E1,E3",
+      "stageDisplay": "E bracket E1,E3",
+      "stageMeta": {
+        "raw": "E bracket E1,E3",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E1,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E1,E3"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1(2)-TROJAN",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "E1(2)",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-12u-boys-trojan",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3(18)-CC UNITED WHITE",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": "E3(18)",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-12u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 3,
+        "whiteRaw": "15",
+        "darkRaw": "3",
+        "whiteRegulation": 15,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-trojan",
+        "winnerTeamId": null,
+        "winnerName": "TROJAN",
+        "loserParticipantId": "tournament-team-2026-12u-boys-cc-united-white",
+        "loserTeamId": null,
+        "loserName": "CC UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau03",
+      "sourceGameNumber": "12BAU03",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D1,D3",
+      "stageDisplay": "D bracket D1,D3",
+      "stageMeta": {
+        "raw": "D bracket D1,D3",
+        "detailRaw": "12.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D1,D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D1,D3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1(8)-GOLD COAST",
+          "kind": "team",
+          "seed": 8,
+          "sourceReference": "D1(8)",
+          "displayName": "GOLD COAST",
+          "participantId": "tournament-team-2026-12u-boys-gold-coast",
+          "teamId": null,
+          "clubId": "club-gold-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3(24)-LAMORINDA B",
+          "kind": "team",
+          "seed": 24,
+          "sourceReference": "D3(24)",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12.3,
+        "dark": 12.4,
+        "whiteRaw": "12.3",
+        "darkRaw": "12.4",
+        "whiteRegulation": 12,
+        "darkRegulation": 12,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 12,
+        "darkRegulation": 12,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+        "winnerName": "Lamorinda B",
+        "loserParticipantId": "tournament-team-2026-12u-boys-gold-coast",
+        "loserTeamId": null,
+        "loserName": "GOLD COAST"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau08a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau08A",
+      "sourceGameNumber": "12BAU08A",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G1,G2",
+      "stageDisplay": "G bracket G1,G2",
+      "stageMeta": {
+        "raw": "G bracket G1,G2",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G1,G2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G1,G2"
+      },
+      "venue": "WOOLLETT FAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1(6)-SAN MATEO",
+          "kind": "team",
+          "seed": 6,
+          "sourceReference": "G1(6)",
+          "displayName": "SAN MATEO",
+          "participantId": "tournament-team-2026-12u-boys-san-mateo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "G2(11)-SOUTH COAST RED",
+          "kind": "team",
+          "seed": 11,
+          "sourceReference": "G2(11)",
+          "displayName": "South Coast",
+          "participantId": "team-2026-12u-boys-south-coast-red",
+          "teamId": "team-2026-12u-boys-south-coast-red",
+          "clubId": "club-south-coast",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-mateo",
+        "winnerTeamId": null,
+        "winnerName": "SAN MATEO",
+        "loserParticipantId": "team-2026-12u-boys-south-coast-red",
+        "loserTeamId": "team-2026-12u-boys-south-coast-red",
+        "loserName": "South Coast"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR RIGHT",
+          "raw": "WOOLLETT FAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau02a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau02A",
+      "sourceGameNumber": "12BAU02A",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket H1,H3",
+      "stageDisplay": "H bracket H1,H3",
+      "stageMeta": {
+        "raw": "H bracket H1,H3",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket H1,H3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket H1,H3"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(7)-FOOTHILL RED",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "H1(7)",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-12u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H3(23)-STANFORD WHITE",
+          "kind": "team",
+          "seed": 23,
+          "sourceReference": "H3(23)",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-12u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 2,
+        "whiteRaw": "12",
+        "darkRaw": "2",
+        "whiteRegulation": 12,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-foothill-red",
+        "winnerTeamId": null,
+        "winnerName": "FOOTHILL RED",
+        "loserParticipantId": "tournament-team-2026-12u-boys-stanford-white",
+        "loserTeamId": null,
+        "loserName": "STANFORD WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau04",
+      "sourceGameNumber": "12BAU04",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1(4)-MARIN",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "B1(4)",
+          "displayName": "MARIN",
+          "participantId": "tournament-team-2026-12u-boys-marin",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3(20)-LAMORINDA C",
+          "kind": "team",
+          "seed": 20,
+          "sourceReference": "B3(20)",
+          "displayName": "Lamorinda C",
+          "participantId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 0,
+        "whiteRaw": "12",
+        "darkRaw": "0",
+        "whiteRegulation": 12,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-marin",
+        "winnerTeamId": null,
+        "winnerName": "MARIN",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+        "loserName": "Lamorinda C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau03a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau03A",
+      "sourceGameNumber": "12BAU03A",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F1,F3",
+      "stageDisplay": "F bracket F1,F3",
+      "stageMeta": {
+        "raw": "F bracket F1,F3",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F1,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F1,F3"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1(3)-CMAC",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "F1(3)",
+          "displayName": "CMAC",
+          "participantId": "team-2026-12u-boys-cmac",
+          "teamId": "team-2026-12u-boys-cmac",
+          "clubId": "club-cmac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "F3(19)-PATRIOT 10 NAVY",
+          "kind": "team",
+          "seed": 19,
+          "sourceReference": "F3(19)",
+          "displayName": "PATRIOT 10 NAVY",
+          "participantId": "tournament-team-2026-12u-boys-patriot-10-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5",
+        "whiteRegulation": 10,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-cmac",
+        "winnerTeamId": "team-2026-12u-boys-cmac",
+        "winnerName": "CMAC",
+        "loserParticipantId": "tournament-team-2026-12u-boys-patriot-10-navy",
+        "loserTeamId": null,
+        "loserName": "PATRIOT 10 NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau05",
+      "sourceGameNumber": "12BAU05",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1(1)-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": 1,
+          "sourceReference": "A1(1)",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3(17)-680 WHITE",
+          "kind": "team",
+          "seed": 17,
+          "sourceReference": "A3(17)",
+          "displayName": "680 WHITE",
+          "participantId": "tournament-team-2026-12u-boys-680-white",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 1,
+        "whiteRaw": "18",
+        "darkRaw": "1",
+        "whiteRegulation": 18,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-12u-boys-680-white",
+        "loserTeamId": null,
+        "loserName": "680 WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau05a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau05A",
+      "sourceGameNumber": "12BAU05A",
+      "sourceRow": 12,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E2,E3",
+      "stageDisplay": "E bracket E2,E3",
+      "stageMeta": {
+        "raw": "E bracket E2,E3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E2,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E2,E3"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E2(15)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": "E2(15)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-12u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E3(18)-CC UNITED WHITE",
+          "kind": "team",
+          "seed": 18,
+          "sourceReference": "E3(18)",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-12u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 5,
+        "whiteRaw": "8",
+        "darkRaw": "5",
+        "whiteRegulation": 8,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-12u-boys-cc-united-white",
+        "loserTeamId": null,
+        "loserName": "CC UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau06",
+      "sourceGameNumber": "12BAU06",
+      "sourceRow": 13,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C2,C3",
+      "stageDisplay": "C bracket C2,C3",
+      "stageMeta": {
+        "raw": "C bracket C2,C3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C2,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C2,C3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2(12)-CC UNITED BLUE",
+          "kind": "team",
+          "seed": 12,
+          "sourceReference": "C2(12)",
+          "displayName": "CC United B",
+          "participantId": "team-2026-12u-boys-cc-united-blue",
+          "teamId": "team-2026-12u-boys-cc-united-blue",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3(21)-MISSION WPC B",
+          "kind": "team",
+          "seed": 21,
+          "sourceReference": "C3(21)",
+          "displayName": "Mission B",
+          "participantId": "team-2026-12u-boys-mission-b-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-b-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 8,
+        "whiteRaw": "5",
+        "darkRaw": "8",
+        "whiteRegulation": 5,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-b-12u-boys",
+        "winnerName": "Mission B",
+        "loserParticipantId": "team-2026-12u-boys-cc-united-blue",
+        "loserTeamId": "team-2026-12u-boys-cc-united-blue",
+        "loserName": "CC United B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau12a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau12A",
+      "sourceGameNumber": "12BAU12A",
+      "sourceRow": 14,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket G2,G3",
+      "stageDisplay": "G bracket G2,G3",
+      "stageMeta": {
+        "raw": "G bracket G2,G3",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket G2,G3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket G2,G3"
+      },
+      "venue": "WOOLLETT FAR RIGHT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2(11)-SOUTH COAST RED",
+          "kind": "team",
+          "seed": 11,
+          "sourceReference": "G2(11)",
+          "displayName": "South Coast",
+          "participantId": "team-2026-12u-boys-south-coast-red",
+          "teamId": "team-2026-12u-boys-south-coast-red",
+          "clubId": "club-south-coast",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "G3(22)-NORTH IRVINE WHITE",
+          "kind": "team",
+          "seed": 22,
+          "sourceReference": "G3(22)",
+          "displayName": "NORTH IRVINE WHITE",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine-white",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 0,
+        "whiteRaw": "15",
+        "darkRaw": "0",
+        "whiteRegulation": 15,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-south-coast-red",
+        "winnerTeamId": "team-2026-12u-boys-south-coast-red",
+        "winnerName": "South Coast",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-white",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR RIGHT",
+          "raw": "WOOLLETT FAR RIGHT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau06a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau06A",
+      "sourceGameNumber": "12BAU06A",
+      "sourceRow": 15,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket H2,H3",
+      "stageDisplay": "H bracket H2,H3",
+      "stageMeta": {
+        "raw": "H bracket H2,H3",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket H2,H3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket H2,H3"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H2(10)-AMERICAN RIVER BLUE",
+          "kind": "team",
+          "seed": 10,
+          "sourceReference": "H2(10)",
+          "displayName": "AMERICAN RIVER BLUE",
+          "participantId": "tournament-team-2026-12u-boys-american-river-blue",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H3(23)-STANFORD WHITE",
+          "kind": "team",
+          "seed": 23,
+          "sourceReference": "H3(23)",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-12u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 15,
+        "whiteRaw": "9",
+        "darkRaw": "15",
+        "whiteRegulation": 9,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-stanford-white",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD WHITE",
+        "loserParticipantId": "tournament-team-2026-12u-boys-american-river-blue",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau07",
+      "sourceGameNumber": "12BAU07",
+      "sourceRow": 16,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D2,D3",
+      "stageDisplay": "D bracket D2,D3",
+      "stageMeta": {
+        "raw": "D bracket D2,D3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D2,D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D2,D3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2(9)-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": 9,
+          "sourceReference": "D2(9)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3(24)-LAMORINDA B",
+          "kind": "team",
+          "seed": 24,
+          "sourceReference": "D3(24)",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 9,
+        "whiteRaw": "5",
+        "darkRaw": "9",
+        "whiteRegulation": 5,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+        "winnerName": "Lamorinda B",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-red",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau07a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau07A",
+      "sourceGameNumber": "12BAU07A",
+      "sourceRow": 17,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F2,F3",
+      "stageDisplay": "F bracket F2,F3",
+      "stageMeta": {
+        "raw": "F bracket F2,F3",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F2,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F2,F3"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F2(14)-680 BLUE",
+          "kind": "team",
+          "seed": 14,
+          "sourceReference": "F2(14)",
+          "displayName": "680 B",
+          "participantId": "team-2026-12u-boys-680-blue",
+          "teamId": "team-2026-12u-boys-680-blue",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "F3(19)-PATRIOT 10 NAVY",
+          "kind": "team",
+          "seed": 19,
+          "sourceReference": "F3(19)",
+          "displayName": "PATRIOT 10 NAVY",
+          "participantId": "tournament-team-2026-12u-boys-patriot-10-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 1,
+        "whiteRaw": "10",
+        "darkRaw": "1",
+        "whiteRegulation": 10,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-680-blue",
+        "winnerTeamId": "team-2026-12u-boys-680-blue",
+        "winnerName": "680 B",
+        "loserParticipantId": "tournament-team-2026-12u-boys-patriot-10-navy",
+        "loserTeamId": null,
+        "loserName": "PATRIOT 10 NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau08",
+      "sourceGameNumber": "12BAU08",
+      "sourceRow": 18,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2(13)-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": 13,
+          "sourceReference": "B2(13)",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3(20)-LAMORINDA C",
+          "kind": "team",
+          "seed": 20,
+          "sourceReference": "B3(20)",
+          "displayName": "Lamorinda C",
+          "participantId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 1,
+        "whiteRaw": "18",
+        "darkRaw": "1",
+        "whiteRegulation": 18,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE BLACK",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+        "loserName": "Lamorinda C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau09",
+      "sourceGameNumber": "12BAU09",
+      "sourceRow": 19,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2(16)-STANFORD BLACK",
+          "kind": "team",
+          "seed": 16,
+          "sourceReference": "A2(16)",
+          "displayName": "Stanford B",
+          "participantId": "team-2026-12u-boys-stanford-black",
+          "teamId": "team-2026-12u-boys-stanford-black",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A3(17)-680 WHITE",
+          "kind": "team",
+          "seed": 17,
+          "sourceReference": "A3(17)",
+          "displayName": "680 WHITE",
+          "participantId": "tournament-team-2026-12u-boys-680-white",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 2,
+        "whiteRaw": "16",
+        "darkRaw": "2",
+        "whiteRegulation": 16,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-stanford-black",
+        "winnerTeamId": "team-2026-12u-boys-stanford-black",
+        "winnerName": "Stanford B",
+        "loserParticipantId": "tournament-team-2026-12u-boys-680-white",
+        "loserTeamId": null,
+        "loserName": "680 WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau09a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau09A",
+      "sourceGameNumber": "12BAU09A",
+      "sourceRow": 20,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket E1,E2",
+      "stageDisplay": "E bracket E1,E2",
+      "stageMeta": {
+        "raw": "E bracket E1,E2",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket E1,E2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket E1,E2"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1(2)-TROJAN",
+          "kind": "team",
+          "seed": 2,
+          "sourceReference": "E1(2)",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-12u-boys-trojan",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E2(15)-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": 15,
+          "sourceReference": "E2(15)",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-12u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 1,
+        "whiteRaw": "12",
+        "darkRaw": "1",
+        "whiteRegulation": 12,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-trojan",
+        "winnerTeamId": null,
+        "winnerName": "TROJAN",
+        "loserParticipantId": "tournament-team-2026-12u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau10",
+      "sourceGameNumber": "12BAU10",
+      "sourceRow": 21,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C2",
+      "stageDisplay": "C bracket C1,C2",
+      "stageMeta": {
+        "raw": "C bracket C1,C2",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C2"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1(5)-BACK BAY",
+          "kind": "team",
+          "seed": 5,
+          "sourceReference": "C1(5)",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-12u-boys-back-bay",
+          "teamId": "team-2026-12u-boys-back-bay",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C2(12)-CC UNITED BLUE",
+          "kind": "team",
+          "seed": 12,
+          "sourceReference": "C2(12)",
+          "displayName": "CC United B",
+          "participantId": "team-2026-12u-boys-cc-united-blue",
+          "teamId": "team-2026-12u-boys-cc-united-blue",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-back-bay",
+        "winnerTeamId": "team-2026-12u-boys-back-bay",
+        "winnerName": "Back Bay",
+        "loserParticipantId": "team-2026-12u-boys-cc-united-blue",
+        "loserTeamId": "team-2026-12u-boys-cc-united-blue",
+        "loserName": "CC United B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau10a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau10A",
+      "sourceGameNumber": "12BAU10A",
+      "sourceRow": 22,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket H1,H2",
+      "stageDisplay": "H bracket H1,H2",
+      "stageMeta": {
+        "raw": "H bracket H1,H2",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket H1,H2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket H1,H2"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1(7)-FOOTHILL RED",
+          "kind": "team",
+          "seed": 7,
+          "sourceReference": "H1(7)",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-12u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H2(10)-AMERICAN RIVER BLUE",
+          "kind": "team",
+          "seed": 10,
+          "sourceReference": "H2(10)",
+          "displayName": "AMERICAN RIVER BLUE",
+          "participantId": "tournament-team-2026-12u-boys-american-river-blue",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-foothill-red",
+        "winnerTeamId": null,
+        "winnerName": "FOOTHILL RED",
+        "loserParticipantId": "tournament-team-2026-12u-boys-american-river-blue",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau11",
+      "sourceGameNumber": "12BAU11",
+      "sourceRow": 23,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D1,D2",
+      "stageDisplay": "D bracket D1,D2",
+      "stageMeta": {
+        "raw": "D bracket D1,D2",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D1,D2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D1,D2"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1(8)-GOLD COAST",
+          "kind": "team",
+          "seed": 8,
+          "sourceReference": "D1(8)",
+          "displayName": "GOLD COAST",
+          "participantId": "tournament-team-2026-12u-boys-gold-coast",
+          "teamId": null,
+          "clubId": "club-gold-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D2(9)-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": 9,
+          "sourceReference": "D2(9)",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-gold-coast",
+        "winnerTeamId": null,
+        "winnerName": "GOLD COAST",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-red",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:50 PM",
+          "raw": "5:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau11a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau11A",
+      "sourceGameNumber": "12BAU11A",
+      "sourceRow": 24,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "5:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket F1,F2",
+      "stageDisplay": "F bracket F1,F2",
+      "stageMeta": {
+        "raw": "F bracket F1,F2",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket F1,F2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket F1,F2"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1(3)-CMAC",
+          "kind": "team",
+          "seed": 3,
+          "sourceReference": "F1(3)",
+          "displayName": "CMAC",
+          "participantId": "team-2026-12u-boys-cmac",
+          "teamId": "team-2026-12u-boys-cmac",
+          "clubId": "club-cmac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "F2(14)-680 BLUE",
+          "kind": "team",
+          "seed": 14,
+          "sourceReference": "F2(14)",
+          "displayName": "680 B",
+          "participantId": "team-2026-12u-boys-680-blue",
+          "teamId": "team-2026-12u-boys-680-blue",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 7,
+        "whiteRaw": "5",
+        "darkRaw": "7",
+        "whiteRegulation": 5,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-680-blue",
+        "winnerTeamId": "team-2026-12u-boys-680-blue",
+        "winnerName": "680 B",
+        "loserParticipantId": "team-2026-12u-boys-cmac",
+        "loserTeamId": "team-2026-12u-boys-cmac",
+        "loserName": "CMAC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:50 PM",
+          "raw": "5:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau12",
+      "sourceGameNumber": "12BAU12",
+      "sourceRow": 25,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "6:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1(4)-MARIN",
+          "kind": "team",
+          "seed": 4,
+          "sourceReference": "B1(4)",
+          "displayName": "MARIN",
+          "participantId": "tournament-team-2026-12u-boys-marin",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B2(13)-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": 13,
+          "sourceReference": "B2(13)",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 15,
+        "whiteRaw": "2",
+        "darkRaw": "15",
+        "whiteRegulation": 2,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE BLACK",
+        "loserParticipantId": "tournament-team-2026-12u-boys-marin",
+        "loserTeamId": null,
+        "loserName": "MARIN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "6:40 PM",
+          "raw": "6:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau17",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau17",
+      "sourceGameNumber": "12BAU17",
+      "sourceRow": 26,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-8 cross 1A/1D",
+      "stageDisplay": "1-8 cross 1A/1D",
+      "stageMeta": {
+        "raw": "1-8 cross 1A/1D",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "1-8 cross 1A/1D",
+        "placementRange": {
+          "start": 1,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "1-8 cross 1A/1D"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stD-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stD",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 5,
+        "whiteRaw": "13",
+        "darkRaw": "5",
+        "whiteRegulation": 13,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+        "loserName": "Lamorinda B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau17a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau17A",
+      "sourceGameNumber": "12BAU17A",
+      "sourceRow": 27,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-8 cross 1E/1H",
+      "stageDisplay": "1-8 cross 1E/1H",
+      "stageMeta": {
+        "raw": "1-8 cross 1E/1H",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "1-8 cross 1E/1H",
+        "placementRange": {
+          "start": 1,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "1-8 cross 1E/1H"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stE-TROJAN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stE",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-12u-boys-trojan",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "1stH-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stH",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-12u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9",
+        "whiteRegulation": 7,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-foothill-red",
+        "winnerTeamId": null,
+        "winnerName": "FOOTHILL RED",
+        "loserParticipantId": "tournament-team-2026-12u-boys-trojan",
+        "loserTeamId": null,
+        "loserName": "TROJAN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau18",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau18",
+      "sourceGameNumber": "12BAU18",
+      "sourceRow": 28,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-8 cross 1B/1C",
+      "stageDisplay": "1-8 cross 1B/1C",
+      "stageMeta": {
+        "raw": "1-8 cross 1B/1C",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "1-8 cross 1B/1C",
+        "placementRange": {
+          "start": 1,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "1-8 cross 1B/1C"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stB-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stB",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stC-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stC",
+          "displayName": "Mission B",
+          "participantId": "team-2026-12u-boys-mission-b-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-b-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6",
+        "whiteRegulation": 7,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE BLACK",
+        "loserParticipantId": "team-2026-12u-boys-mission-b-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-mission-b-12u-boys",
+        "loserName": "Mission B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau13",
+      "sourceGameNumber": "12BAU13",
+      "sourceRow": 29,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "17-24 cross 3A/3D",
+      "stageDisplay": "17-24 cross 3A/3D",
+      "stageMeta": {
+        "raw": "17-24 cross 3A/3D",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "17-24 cross 3A/3D",
+        "placementRange": {
+          "start": 17,
+          "end": 24
+        },
+        "placement": null,
+        "displayLabel": "17-24 cross 3A/3D"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-680 WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "680 WHITE",
+          "participantId": "tournament-team-2026-12u-boys-680-white",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdD-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdD",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 8,
+        "whiteRaw": "2",
+        "darkRaw": "8",
+        "whiteRegulation": 2,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-north-irvine-red",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE RED",
+        "loserParticipantId": "tournament-team-2026-12u-boys-680-white",
+        "loserTeamId": null,
+        "loserName": "680 WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau18a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau18A",
+      "sourceGameNumber": "12BAU18A",
+      "sourceRow": 30,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-8 cross 1F/1G",
+      "stageDisplay": "1-8 cross 1F/1G",
+      "stageMeta": {
+        "raw": "1-8 cross 1F/1G",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "1-8 cross 1F/1G",
+        "placementRange": {
+          "start": 1,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "1-8 cross 1F/1G"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stF-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stF",
+          "displayName": "680 B",
+          "participantId": "team-2026-12u-boys-680-blue",
+          "teamId": "team-2026-12u-boys-680-blue",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "1stG-SAN MATEO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stG",
+          "displayName": "SAN MATEO",
+          "participantId": "tournament-team-2026-12u-boys-san-mateo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 5,
+        "whiteRaw": "6",
+        "darkRaw": "5",
+        "whiteRegulation": 6,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-680-blue",
+        "winnerTeamId": "team-2026-12u-boys-680-blue",
+        "winnerName": "680 B",
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-mateo",
+        "loserTeamId": null,
+        "loserName": "SAN MATEO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau13a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau13A",
+      "sourceGameNumber": "12BAU13A",
+      "sourceRow": 31,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "17-24 cross 3E/3H",
+      "stageDisplay": "17-24 cross 3E/3H",
+      "stageMeta": {
+        "raw": "17-24 cross 3E/3H",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "17-24 cross 3E/3H",
+        "placementRange": {
+          "start": 17,
+          "end": 24
+        },
+        "placement": null,
+        "displayLabel": "17-24 cross 3E/3H"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdE-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdE",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-12u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdH-AMERICAN RIVER BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdH",
+          "displayName": "AMERICAN RIVER BLUE",
+          "participantId": "tournament-team-2026-12u-boys-american-river-blue",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 5,
+        "whiteRaw": "3",
+        "darkRaw": "5",
+        "whiteRegulation": 3,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-american-river-blue",
+        "winnerTeamId": null,
+        "winnerName": "AMERICAN RIVER BLUE",
+        "loserParticipantId": "tournament-team-2026-12u-boys-cc-united-white",
+        "loserTeamId": null,
+        "loserName": "CC UNITED WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau14",
+      "sourceGameNumber": "12BAU14",
+      "sourceRow": 32,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "17-24 cross 3B/3C",
+      "stageDisplay": "17-24 cross 3B/3C",
+      "stageMeta": {
+        "raw": "17-24 cross 3B/3C",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "17-24 cross 3B/3C",
+        "placementRange": {
+          "start": 17,
+          "end": 24
+        },
+        "placement": null,
+        "displayLabel": "17-24 cross 3B/3C"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdB-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "Lamorinda C",
+          "participantId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "3rdC-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdC",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-12u-boys-back-bay",
+          "teamId": "team-2026-12u-boys-back-bay",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 20,
+        "whiteRaw": "5",
+        "darkRaw": "20",
+        "whiteRegulation": 5,
+        "darkRegulation": 20,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-back-bay",
+        "winnerTeamId": "team-2026-12u-boys-back-bay",
+        "winnerName": "Back Bay",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+        "loserName": "Lamorinda C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau14a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau14A",
+      "sourceGameNumber": "12BAU14A",
+      "sourceRow": 33,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "17-24 cross 3F/3G",
+      "stageDisplay": "17-24 cross 3F/3G",
+      "stageMeta": {
+        "raw": "17-24 cross 3F/3G",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "17-24 cross 3F/3G",
+        "placementRange": {
+          "start": 17,
+          "end": 24
+        },
+        "placement": null,
+        "displayLabel": "17-24 cross 3F/3G"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdF-PATRIOT 10 NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdF",
+          "displayName": "PATRIOT 10 NAVY",
+          "participantId": "tournament-team-2026-12u-boys-patriot-10-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdG-NORTH IRVINE WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdG",
+          "displayName": "NORTH IRVINE WHITE",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine-white",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 2,
+        "whiteRaw": "13",
+        "darkRaw": "2",
+        "whiteRegulation": 13,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-patriot-10-navy",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT 10 NAVY",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-white",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau24",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau24",
+      "sourceGameNumber": "12BAU24",
+      "sourceRow": 34,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "overall 1-4 semi",
+      "stageDisplay": "overall 1-4 Semifinal",
+      "stageMeta": {
+        "raw": "overall 1-4 semi",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "overall 1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "overall 1-4 Semifinal"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#17-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#17",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#18-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#18",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 2,
+        "whiteRaw": "12",
+        "darkRaw": "2",
+        "whiteRegulation": 12,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau24a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau24A",
+      "sourceGameNumber": "12BAU24A",
+      "sourceRow": 35,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "overall 1-4 semi",
+      "stageDisplay": "overall 1-4 Semifinal",
+      "stageMeta": {
+        "raw": "overall 1-4 semi",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "overall 1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "overall 1-4 Semifinal"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#17A-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#17A",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-12u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#18A-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#18A",
+          "displayName": "680 B",
+          "participantId": "team-2026-12u-boys-680-blue",
+          "teamId": "team-2026-12u-boys-680-blue",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 4,
+        "whiteRaw": "9",
+        "darkRaw": "4",
+        "whiteRegulation": 9,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-foothill-red",
+        "winnerTeamId": null,
+        "winnerName": "FOOTHILL RED",
+        "loserParticipantId": "team-2026-12u-boys-680-blue",
+        "loserTeamId": "team-2026-12u-boys-680-blue",
+        "loserName": "680 B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau15",
+      "sourceGameNumber": "12BAU15",
+      "sourceRow": 36,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-16 cross 2A/2D",
+      "stageDisplay": "9-16 cross 2A/2D",
+      "stageMeta": {
+        "raw": "9-16 cross 2A/2D",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9-16 cross 2A/2D",
+        "placementRange": {
+          "start": 9,
+          "end": 16
+        },
+        "placement": null,
+        "displayLabel": "9-16 cross 2A/2D"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndA-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "Stanford B",
+          "participantId": "team-2026-12u-boys-stanford-black",
+          "teamId": "team-2026-12u-boys-stanford-black",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "2ndD-GOLD COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndD",
+          "displayName": "GOLD COAST",
+          "participantId": "tournament-team-2026-12u-boys-gold-coast",
+          "teamId": null,
+          "clubId": "club-gold-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 4,
+        "whiteRaw": "9",
+        "darkRaw": "4",
+        "whiteRegulation": 9,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-stanford-black",
+        "winnerTeamId": "team-2026-12u-boys-stanford-black",
+        "winnerName": "Stanford B",
+        "loserParticipantId": "tournament-team-2026-12u-boys-gold-coast",
+        "loserTeamId": null,
+        "loserName": "GOLD COAST"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau15a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau15A",
+      "sourceGameNumber": "12BAU15A",
+      "sourceRow": 37,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-16 cross 2E/2H",
+      "stageDisplay": "9-16 cross 2E/2H",
+      "stageMeta": {
+        "raw": "9-16 cross 2E/2H",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9-16 cross 2E/2H",
+        "placementRange": {
+          "start": 9,
+          "end": 16
+        },
+        "placement": null,
+        "displayLabel": "9-16 cross 2E/2H"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndE-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndE",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-12u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "2ndH-STANFORD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndH",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-12u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 7,
+        "whiteRaw": "10",
+        "darkRaw": "7",
+        "whiteRegulation": 10,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-la-jolla-united-gold",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED GOLD",
+        "loserParticipantId": "tournament-team-2026-12u-boys-stanford-white",
+        "loserTeamId": null,
+        "loserName": "STANFORD WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau16",
+      "sourceGameNumber": "12BAU16",
+      "sourceRow": 38,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-16 cross 2B,2C",
+      "stageDisplay": "9-16 cross 2B,2C",
+      "stageMeta": {
+        "raw": "9-16 cross 2B,2C",
+        "detailRaw": "4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9-16 cross 2B,2C",
+        "placementRange": {
+          "start": 9,
+          "end": 16
+        },
+        "placement": null,
+        "displayLabel": "9-16 cross 2B,2C"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndB-MARIN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndB",
+          "displayName": "MARIN",
+          "participantId": "tournament-team-2026-12u-boys-marin",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "2ndC-CC UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndC",
+          "displayName": "CC United B",
+          "participantId": "team-2026-12u-boys-cc-united-blue",
+          "teamId": "team-2026-12u-boys-cc-united-blue",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 15,
+        "whiteRaw": "4",
+        "darkRaw": "15",
+        "whiteRegulation": 4,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-cc-united-blue",
+        "winnerTeamId": "team-2026-12u-boys-cc-united-blue",
+        "winnerName": "CC United B",
+        "loserParticipantId": "tournament-team-2026-12u-boys-marin",
+        "loserTeamId": null,
+        "loserName": "MARIN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau16a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau16A",
+      "sourceGameNumber": "12BAU16A",
+      "sourceRow": 39,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9-16 cross 2F/2G",
+      "stageDisplay": "9-16 cross 2F/2G",
+      "stageMeta": {
+        "raw": "9-16 cross 2F/2G",
+        "detailRaw": "10.4",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9-16 cross 2F/2G",
+        "placementRange": {
+          "start": 9,
+          "end": 16
+        },
+        "placement": null,
+        "displayLabel": "9-16 cross 2F/2G"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndF-CMAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndF",
+          "displayName": "CMAC",
+          "participantId": "team-2026-12u-boys-cmac",
+          "teamId": "team-2026-12u-boys-cmac",
+          "clubId": "club-cmac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "2ndG-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndG",
+          "displayName": "South Coast",
+          "participantId": "team-2026-12u-boys-south-coast-red",
+          "teamId": "team-2026-12u-boys-south-coast-red",
+          "clubId": "club-south-coast",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10.4,
+        "dark": 10.1,
+        "whiteRaw": "10.4",
+        "darkRaw": "10.1",
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 4,
+        "darkShootout": 1
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 4,
+        "darkShootout": 1
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "team-2026-12u-boys-cmac",
+        "winnerTeamId": "team-2026-12u-boys-cmac",
+        "winnerName": "CMAC",
+        "loserParticipantId": "team-2026-12u-boys-south-coast-red",
+        "loserTeamId": "team-2026-12u-boys-south-coast-red",
+        "loserName": "South Coast"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau20a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau20A",
+      "sourceGameNumber": "12BAU20A",
+      "sourceRow": 40,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 17th",
+      "stageDisplay": "tie 17th",
+      "stageMeta": {
+        "raw": "tie 17th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 17th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 17th"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#13A-AMERICAN RIVER BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#13A",
+          "displayName": "AMERICAN RIVER BLUE",
+          "participantId": "tournament-team-2026-12u-boys-american-river-blue",
+          "teamId": null,
+          "clubId": "club-american-river",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#14A-PATRIOT 10 NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#14A",
+          "displayName": "PATRIOT 10 NAVY",
+          "participantId": "tournament-team-2026-12u-boys-patriot-10-navy",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 13,
+        "whiteRaw": "5",
+        "darkRaw": "13",
+        "whiteRegulation": 5,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-patriot-10-navy",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT 10 NAVY",
+        "loserParticipantId": "tournament-team-2026-12u-boys-american-river-blue",
+        "loserTeamId": null,
+        "loserName": "AMERICAN RIVER BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau20",
+      "sourceGameNumber": "12BAU20",
+      "sourceRow": 41,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 17th",
+      "stageDisplay": "tie 17th",
+      "stageMeta": {
+        "raw": "tie 17th",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 17th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 17th"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#13-NORTH IRVINE RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#13",
+          "displayName": "NORTH IRVINE RED",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine-red",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#14-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#14",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-12u-boys-back-bay",
+          "teamId": "team-2026-12u-boys-back-bay",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10",
+        "whiteRegulation": 7,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-back-bay",
+        "winnerTeamId": "team-2026-12u-boys-back-bay",
+        "winnerName": "Back Bay",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-red",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau19a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau19A",
+      "sourceGameNumber": "12BAU19A",
+      "sourceRow": 42,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 21st",
+      "stageDisplay": "tie 21st",
+      "stageMeta": {
+        "raw": "tie 21st",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 21st",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 21st"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#13A-CC UNITED WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#13A",
+          "displayName": "CC UNITED WHITE",
+          "participantId": "tournament-team-2026-12u-boys-cc-united-white",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#14A-NORTH IRVINE WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#14A",
+          "displayName": "NORTH IRVINE WHITE",
+          "participantId": "tournament-team-2026-12u-boys-north-irvine-white",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 0,
+        "whiteRaw": "18",
+        "darkRaw": "0",
+        "whiteRegulation": 18,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-cc-united-white",
+        "winnerTeamId": null,
+        "winnerName": "CC UNITED WHITE",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-white",
+        "loserTeamId": null,
+        "loserName": "NORTH IRVINE WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau23",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau23",
+      "sourceGameNumber": "12BAU23",
+      "sourceRow": 43,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 5th",
+      "stageDisplay": "tie 5th",
+      "stageMeta": {
+        "raw": "tie 5th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 5th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 5th"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#17-LAMORINDA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#17",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "L#18-MISSION WPC B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#18",
+          "displayName": "Mission B",
+          "participantId": "team-2026-12u-boys-mission-b-12u-boys",
+          "teamId": "team-2026-12u-boys-mission-b-12u-boys",
+          "clubId": "club-mission",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 16,
+        "whiteRaw": "5",
+        "darkRaw": "16",
+        "whiteRegulation": 5,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-b-12u-boys",
+        "winnerTeamId": "team-2026-12u-boys-mission-b-12u-boys",
+        "winnerName": "Mission B",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-b-12u-boys",
+        "loserName": "Lamorinda B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau25",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau25",
+      "sourceGameNumber": "12BAU25",
+      "sourceRow": 44,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#24-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#24",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-12u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#24A-680 BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#24A",
+          "displayName": "680 B",
+          "participantId": "team-2026-12u-boys-680-blue",
+          "teamId": "team-2026-12u-boys-680-blue",
+          "clubId": "club-680",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE BLACK",
+        "loserParticipantId": "team-2026-12u-boys-680-blue",
+        "loserTeamId": "team-2026-12u-boys-680-blue",
+        "loserName": "680 B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau21",
+      "sourceGameNumber": "12BAU21",
+      "sourceRow": 45,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 13th",
+      "stageDisplay": "tie 13th",
+      "stageMeta": {
+        "raw": "tie 13th",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 13th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 13th"
+      },
+      "venue": "ESTANCIA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#15-GOLD COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#15",
+          "displayName": "GOLD COAST",
+          "participantId": "tournament-team-2026-12u-boys-gold-coast",
+          "teamId": null,
+          "clubId": "club-gold-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#16-MARIN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#16",
+          "displayName": "MARIN",
+          "participantId": "tournament-team-2026-12u-boys-marin",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 10,
+        "whiteRaw": "13",
+        "darkRaw": "10",
+        "whiteRegulation": 13,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-gold-coast",
+        "winnerTeamId": null,
+        "winnerName": "GOLD COAST",
+        "loserParticipantId": "tournament-team-2026-12u-boys-marin",
+        "loserTeamId": null,
+        "loserName": "MARIN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESTANCIA HS 2",
+          "raw": "ESTANCIA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau19",
+      "sourceGameNumber": "12BAU19",
+      "sourceRow": 46,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 21st",
+      "stageDisplay": "tie 21st",
+      "stageMeta": {
+        "raw": "tie 21st",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 21st",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 21st"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#13-680 WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#13",
+          "displayName": "680 WHITE",
+          "participantId": "tournament-team-2026-12u-boys-680-white",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#14-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#14",
+          "displayName": "Lamorinda C",
+          "participantId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+          "teamId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-680-white",
+        "winnerTeamId": null,
+        "winnerName": "680 WHITE",
+        "loserParticipantId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+        "loserTeamId": "team-2026-12u-boys-lamorinda-c-12u-boys",
+        "loserName": "Lamorinda C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:20 PM",
+          "raw": "4:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau22",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau22",
+      "sourceGameNumber": "12BAU22",
+      "sourceRow": 47,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 9th",
+      "stageDisplay": "tie 9th",
+      "stageMeta": {
+        "raw": "tie 9th",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 9th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 9th"
+      },
+      "venue": "COSTA MESA HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#15-STANFORD BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#15",
+          "displayName": "Stanford B",
+          "participantId": "team-2026-12u-boys-stanford-black",
+          "teamId": "team-2026-12u-boys-stanford-black",
+          "clubId": "club-stanford",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W#16-CC UNITED BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#16",
+          "displayName": "CC United B",
+          "participantId": "team-2026-12u-boys-cc-united-blue",
+          "teamId": "team-2026-12u-boys-cc-united-blue",
+          "clubId": "club-cc-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 9,
+        "whiteRaw": "6",
+        "darkRaw": "9",
+        "whiteRegulation": 6,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-cc-united-blue",
+        "winnerTeamId": "team-2026-12u-boys-cc-united-blue",
+        "winnerName": "CC United B",
+        "loserParticipantId": "team-2026-12u-boys-stanford-black",
+        "loserTeamId": "team-2026-12u-boys-stanford-black",
+        "loserName": "Stanford B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "COSTA MESA HS 2",
+          "raw": "COSTA MESA HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau23a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau23A",
+      "sourceGameNumber": "12BAU23A",
+      "sourceRow": 48,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 5th",
+      "stageDisplay": "tie 5th",
+      "stageMeta": {
+        "raw": "tie 5th",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 5th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 5th"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#17A-TROJAN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#17A",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-12u-boys-trojan",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#18A-SAN MATEO",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#18A",
+          "displayName": "SAN MATEO",
+          "participantId": "tournament-team-2026-12u-boys-san-mateo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 0,
+        "whiteRaw": "5",
+        "darkRaw": "0",
+        "whiteRegulation": 5,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-trojan",
+        "winnerTeamId": null,
+        "winnerName": "TROJAN",
+        "loserParticipantId": "tournament-team-2026-12u-boys-san-mateo",
+        "loserTeamId": null,
+        "loserName": "SAN MATEO"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau26",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau26",
+      "sourceGameNumber": "12BAU26",
+      "sourceRow": 49,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#24-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#24",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#24A-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#24A",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-12u-boys-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 5,
+        "whiteRaw": "19",
+        "darkRaw": "5",
+        "whiteRegulation": 19,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-12u-boys-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau21a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau21A",
+      "sourceGameNumber": "12BAU21A",
+      "sourceRow": 50,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 13th",
+      "stageDisplay": "tie 13th",
+      "stageMeta": {
+        "raw": "tie 13th",
+        "detailRaw": "6.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 13th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 13th"
+      },
+      "venue": "BECKMAN HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#15A-STANFORD WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#15A",
+          "displayName": "STANFORD WHITE",
+          "participantId": "tournament-team-2026-12u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#16A-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#16A",
+          "displayName": "South Coast",
+          "participantId": "team-2026-12u-boys-south-coast-red",
+          "teamId": "team-2026-12u-boys-south-coast-red",
+          "clubId": "club-south-coast",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6.3,
+        "dark": 6.2,
+        "whiteRaw": "6.3",
+        "darkRaw": "6.2",
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-stanford-white",
+        "winnerTeamId": null,
+        "winnerName": "STANFORD WHITE",
+        "loserParticipantId": "team-2026-12u-boys-south-coast-red",
+        "loserTeamId": "team-2026-12u-boys-south-coast-red",
+        "loserName": "South Coast"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:50 PM",
+          "raw": "5:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 1",
+          "raw": "BECKMAN HS 1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-12u-boys-gold-12bau22a",
+      "eventId": "2026-kap7-international",
+      "divisionId": "12u-boys-gold",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "12Bau22A",
+      "sourceGameNumber": "12BAU22A",
+      "sourceRow": 51,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "tie 9th",
+      "stageDisplay": "tie 9th",
+      "stageMeta": {
+        "raw": "tie 9th",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "tie 9th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "tie 9th"
+      },
+      "venue": "TUSTIN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#15A-LA JOLLA UNITED GOLD",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#15A",
+          "displayName": "LA JOLLA UNITED GOLD",
+          "participantId": "tournament-team-2026-12u-boys-la-jolla-united-gold",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "W#16A-CMAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#16A",
+          "displayName": "CMAC",
+          "participantId": "team-2026-12u-boys-cmac",
+          "teamId": "team-2026-12u-boys-cmac",
+          "clubId": "club-cmac",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 13,
+        "whiteRaw": "6",
+        "darkRaw": "13",
+        "whiteRegulation": 6,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-cmac",
+        "winnerTeamId": "team-2026-12u-boys-cmac",
+        "winnerName": "CMAC",
+        "loserParticipantId": "tournament-team-2026-12u-boys-la-jolla-united-gold",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED GOLD"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "5:00 PM",
+          "raw": "5:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "TUSTIN HS 2",
+          "raw": "TUSTIN HS 2"
+        }
+      }
+    }
+  ]
+}

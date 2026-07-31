@@ -1,0 +1,2683 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "14u-girls-gold",
+    "label": "14U Girls Gold",
+    "season": "2026",
+    "ageGroup": "14U",
+    "gender": "Girls",
+    "division": "Gold",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "14u-girls-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/14u-girls-gold.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "53a381ea5c9a00a24cd30997ddb0f4771f9abcf88c9e577b91d4baf3386cfc7a",
+    "rowCount": 29
+  },
+  "counts": {
+    "games": 28,
+    "finalGames": 28,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 56,
+    "resolvedTeamParticipants": 32,
+    "unresolvedTeamParticipants": 24,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 24
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau03",
+      "sourceGameNumber": "14GAU03",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L D1/D4",
+      "stageDisplay": "W/L D1/D4",
+      "stageMeta": {
+        "raw": "W/L D1/D4",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L D1/D4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L D1/D4"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-girls-northwest-14u-girls",
+          "teamId": "team-2026-14u-girls-northwest-14u-girls",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "D4-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D4",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-14u-girls-north-irvine-14u-girls",
+          "teamId": "team-2026-14u-girls-north-irvine-14u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 11,
+        "whiteRaw": "10",
+        "darkRaw": "11",
+        "whiteRegulation": 10,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-north-irvine-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-north-irvine-14u-girls",
+        "winnerName": "North Irvine",
+        "loserParticipantId": "team-2026-14u-girls-northwest-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-northwest-14u-girls",
+        "loserName": "Northwest"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau12",
+      "sourceGameNumber": "14GAU12",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "La Jolla United",
+          "participantId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+          "teamId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A2-SANTA CRUZ BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SANTA CRUZ BLUE",
+          "participantId": "tournament-team-2026-14u-girls-santa-cruz-blue",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 4,
+        "whiteRaw": "18",
+        "darkRaw": "4",
+        "whiteRegulation": 18,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+        "winnerName": "La Jolla United",
+        "loserParticipantId": "tournament-team-2026-14u-girls-santa-cruz-blue",
+        "loserTeamId": null,
+        "loserName": "SANTA CRUZ BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau04",
+      "sourceGameNumber": "14GAU04",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L D2/D3",
+      "stageDisplay": "W/L D2/D3",
+      "stageMeta": {
+        "raw": "W/L D2/D3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L D2/D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L D2/D3"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-14u-girls-eca-14u-girls",
+          "teamId": "team-2026-14u-girls-eca-14u-girls",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "D3-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "LAMORINDA C",
+          "participantId": "tournament-team-2026-14u-girls-lamorinda-c",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-eca-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-eca-14u-girls",
+        "winnerName": "SD ECA",
+        "loserParticipantId": "tournament-team-2026-14u-girls-lamorinda-c",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau09",
+      "sourceGameNumber": "14GAU09",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-ROGUE 619",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "Rogue 619",
+          "participantId": "team-2026-14u-girls-rogue-619-14u-girls",
+          "teamId": "team-2026-14u-girls-rogue-619-14u-girls",
+          "clubId": "club-rogue-619",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "B3-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-14u-girls-back-bay-14u-girls",
+          "teamId": "team-2026-14u-girls-back-bay-14u-girls",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 4,
+        "whiteRaw": "10",
+        "darkRaw": "4",
+        "whiteRegulation": 10,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "winnerName": "Rogue 619",
+        "loserParticipantId": "team-2026-14u-girls-back-bay-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-back-bay-14u-girls",
+        "loserName": "Back Bay"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau01",
+      "sourceGameNumber": "14GAU01",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L C2/C3",
+      "stageDisplay": "W/L C2/C3",
+      "stageMeta": {
+        "raw": "W/L C2/C3",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L C2/C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L C2/C3"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-GOLD COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "Gold Coast",
+          "participantId": "team-2026-14u-girls-gold-coast-14u-girls",
+          "teamId": "team-2026-14u-girls-gold-coast-14u-girls",
+          "clubId": "club-gold-coast",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3-PALOS VERDES",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "PALOS VERDES",
+          "participantId": "tournament-team-2026-14u-girls-palos-verdes",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 4,
+        "whiteRaw": "8",
+        "darkRaw": "4",
+        "whiteRegulation": 8,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-gold-coast-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-gold-coast-14u-girls",
+        "winnerName": "Gold Coast",
+        "loserParticipantId": "tournament-team-2026-14u-girls-palos-verdes",
+        "loserTeamId": null,
+        "loserName": "PALOS VERDES"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau02",
+      "sourceGameNumber": "14GAU02",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L C1/C4",
+      "stageDisplay": "W/L C1/C4",
+      "stageMeta": {
+        "raw": "W/L C1/C4",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L C1/C4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L C1/C4"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-SHAQ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SHAQ",
+          "participantId": "team-2026-14u-girls-shaq-14u-girls",
+          "teamId": "team-2026-14u-girls-shaq-14u-girls",
+          "clubId": "club-shaq",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C4-CDM NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4",
+          "displayName": "CDM NAVY",
+          "participantId": "tournament-team-2026-14u-girls-cdm-navy",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5",
+        "whiteRegulation": 9,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-shaq-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-shaq-14u-girls",
+        "winnerName": "SHAQ",
+        "loserParticipantId": "tournament-team-2026-14u-girls-cdm-navy",
+        "loserTeamId": null,
+        "loserName": "CDM NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau10",
+      "sourceGameNumber": "14GAU10",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-SANTA CRUZ BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "SANTA CRUZ BLUE",
+          "participantId": "tournament-team-2026-14u-girls-santa-cruz-blue",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-PASADENA AC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "PASADENA AC",
+          "participantId": "tournament-team-2026-14u-girls-pasadena-ac",
+          "teamId": null,
+          "clubId": "club-pasadena-ac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 16,
+        "whiteRaw": "2",
+        "darkRaw": "16",
+        "whiteRegulation": 2,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-pasadena-ac",
+        "winnerTeamId": null,
+        "winnerName": "PASADENA AC",
+        "loserParticipantId": "tournament-team-2026-14u-girls-santa-cruz-blue",
+        "loserTeamId": null,
+        "loserName": "SANTA CRUZ BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau11",
+      "sourceGameNumber": "14GAU11",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-HONOLULU",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "HONOLULU",
+          "participantId": "tournament-team-2026-14u-girls-honolulu",
+          "teamId": null,
+          "clubId": "club-honolulu-water-polo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B2-ROGUE 619",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "Rogue 619",
+          "participantId": "team-2026-14u-girls-rogue-619-14u-girls",
+          "teamId": "team-2026-14u-girls-rogue-619-14u-girls",
+          "clubId": "club-rogue-619",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 12,
+        "whiteRaw": "2",
+        "darkRaw": "12",
+        "whiteRegulation": 2,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "winnerName": "Rogue 619",
+        "loserParticipantId": "tournament-team-2026-14u-girls-honolulu",
+        "loserTeamId": null,
+        "loserName": "HONOLULU"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau08",
+      "sourceGameNumber": "14GAU08",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thD",
+      "stageDisplay": "3rd/4thD",
+      "stageMeta": {
+        "raw": "3rd/4thD",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thD",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thD"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#3-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#3",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-girls-northwest-14u-girls",
+          "teamId": "team-2026-14u-girls-northwest-14u-girls",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "L#4-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#4",
+          "displayName": "LAMORINDA C",
+          "participantId": "tournament-team-2026-14u-girls-lamorinda-c",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8",
+        "whiteRegulation": 9,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-northwest-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-northwest-14u-girls",
+        "winnerName": "Northwest",
+        "loserParticipantId": "tournament-team-2026-14u-girls-lamorinda-c",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau07",
+      "sourceGameNumber": "14GAU07",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndD",
+      "stageDisplay": "1st/2ndD",
+      "stageMeta": {
+        "raw": "1st/2ndD",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndD",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndD"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#3-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#3",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-14u-girls-north-irvine-14u-girls",
+          "teamId": "team-2026-14u-girls-north-irvine-14u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W#4-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#4",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-14u-girls-eca-14u-girls",
+          "teamId": "team-2026-14u-girls-eca-14u-girls",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 11,
+        "whiteRaw": "13",
+        "darkRaw": "11",
+        "whiteRegulation": 13,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-north-irvine-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-north-irvine-14u-girls",
+        "winnerName": "North Irvine",
+        "loserParticipantId": "team-2026-14u-girls-eca-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-eca-14u-girls",
+        "loserName": "SD ECA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau13",
+      "sourceGameNumber": "14GAU13",
+      "sourceRow": 12,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-HONOLULU",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "HONOLULU",
+          "participantId": "tournament-team-2026-14u-girls-honolulu",
+          "teamId": null,
+          "clubId": "club-honolulu-water-polo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-14u-girls-back-bay-14u-girls",
+          "teamId": "team-2026-14u-girls-back-bay-14u-girls",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 8,
+        "whiteRaw": "5",
+        "darkRaw": "8",
+        "whiteRegulation": 5,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-back-bay-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-back-bay-14u-girls",
+        "winnerName": "Back Bay",
+        "loserParticipantId": "tournament-team-2026-14u-girls-honolulu",
+        "loserTeamId": null,
+        "loserName": "HONOLULU"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau14",
+      "sourceGameNumber": "14GAU14",
+      "sourceRow": 13,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "La Jolla United",
+          "participantId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+          "teamId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A3-PASADENA AC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "PASADENA AC",
+          "participantId": "tournament-team-2026-14u-girls-pasadena-ac",
+          "teamId": null,
+          "clubId": "club-pasadena-ac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 14,
+        "whiteRaw": "11",
+        "darkRaw": "14",
+        "whiteRegulation": 11,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-pasadena-ac",
+        "winnerTeamId": null,
+        "winnerName": "PASADENA AC",
+        "loserParticipantId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+        "loserName": "La Jolla United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau05",
+      "sourceGameNumber": "14GAU05",
+      "sourceRow": 14,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndC",
+      "stageDisplay": "1st/2ndC",
+      "stageMeta": {
+        "raw": "1st/2ndC",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndC",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndC"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#1-GOLD COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#1",
+          "displayName": "Gold Coast",
+          "participantId": "team-2026-14u-girls-gold-coast-14u-girls",
+          "teamId": "team-2026-14u-girls-gold-coast-14u-girls",
+          "clubId": "club-gold-coast",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W#2-SHAQ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#2",
+          "displayName": "SHAQ",
+          "participantId": "team-2026-14u-girls-shaq-14u-girls",
+          "teamId": "team-2026-14u-girls-shaq-14u-girls",
+          "clubId": "club-shaq",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 4,
+        "whiteRaw": "8",
+        "darkRaw": "4",
+        "whiteRegulation": 8,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-gold-coast-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-gold-coast-14u-girls",
+        "winnerName": "Gold Coast",
+        "loserParticipantId": "team-2026-14u-girls-shaq-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-shaq-14u-girls",
+        "loserName": "SHAQ"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau06",
+      "sourceGameNumber": "14GAU06",
+      "sourceRow": 15,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thC",
+      "stageDisplay": "3rd/4thC",
+      "stageMeta": {
+        "raw": "3rd/4thC",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thC",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thC"
+      },
+      "venue": "LAGUNA HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#1-PALOS VERDES",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#1",
+          "displayName": "PALOS VERDES",
+          "participantId": "tournament-team-2026-14u-girls-palos-verdes",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L#2-CDM NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#2",
+          "displayName": "CDM NAVY",
+          "participantId": "tournament-team-2026-14u-girls-cdm-navy",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 2,
+        "whiteRaw": "12",
+        "darkRaw": "2",
+        "whiteRegulation": 12,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-palos-verdes",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES",
+        "loserParticipantId": "tournament-team-2026-14u-girls-cdm-navy",
+        "loserTeamId": null,
+        "loserName": "CDM NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "LAGUNA HILLS HS",
+          "raw": "LAGUNA HILLS HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau18",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau18",
+      "sourceGameNumber": "14GAU18",
+      "sourceRow": 16,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th-14th 3B,4D",
+      "stageDisplay": "9th-14th 3B,4D",
+      "stageMeta": {
+        "raw": "9th-14th 3B,4D",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th-14th 3B,4D",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th-14th 3B,4D"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdB-HONOLULU",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "HONOLULU",
+          "participantId": "tournament-team-2026-14u-girls-honolulu",
+          "teamId": null,
+          "clubId": "club-honolulu-water-polo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "4thD-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thD",
+          "displayName": "LAMORINDA C",
+          "participantId": "tournament-team-2026-14u-girls-lamorinda-c",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 5,
+        "whiteRaw": "8",
+        "darkRaw": "5",
+        "whiteRegulation": 8,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-honolulu",
+        "winnerTeamId": null,
+        "winnerName": "HONOLULU",
+        "loserParticipantId": "tournament-team-2026-14u-girls-lamorinda-c",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau24",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau24",
+      "sourceGameNumber": "14GAU24",
+      "sourceRow": 17,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 semi",
+      "stageDisplay": "5-8 Semifinal",
+      "stageMeta": {
+        "raw": "5-8 semi",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "5-8 Semifinal",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 Semifinal"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndB-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndB",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-14u-girls-back-bay-14u-girls",
+          "teamId": "team-2026-14u-girls-back-bay-14u-girls",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "2ndC-SHAQ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndC",
+          "displayName": "SHAQ",
+          "participantId": "team-2026-14u-girls-shaq-14u-girls",
+          "teamId": "team-2026-14u-girls-shaq-14u-girls",
+          "clubId": "club-shaq",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 11,
+        "whiteRaw": "3",
+        "darkRaw": "11",
+        "whiteRegulation": 3,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-shaq-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-shaq-14u-girls",
+        "winnerName": "SHAQ",
+        "loserParticipantId": "team-2026-14u-girls-back-bay-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-back-bay-14u-girls",
+        "loserName": "Back Bay"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:00 AM",
+          "raw": "7:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau16",
+      "sourceGameNumber": "14GAU16",
+      "sourceRow": 18,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th-14th 3A,3D",
+      "stageDisplay": "9th-14th 3A,3D",
+      "stageMeta": {
+        "raw": "9th-14th 3A,3D",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th-14th 3A,3D",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th-14th 3A,3D"
+      },
+      "venue": "ESPERANZA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-SANTA CRUZ BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "SANTA CRUZ BLUE",
+          "participantId": "tournament-team-2026-14u-girls-santa-cruz-blue",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdD-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdD",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-girls-northwest-14u-girls",
+          "teamId": "team-2026-14u-girls-northwest-14u-girls",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 14,
+        "whiteRaw": "7",
+        "darkRaw": "14",
+        "whiteRegulation": 7,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-northwest-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-northwest-14u-girls",
+        "winnerName": "Northwest",
+        "loserParticipantId": "tournament-team-2026-14u-girls-santa-cruz-blue",
+        "loserTeamId": null,
+        "loserName": "SANTA CRUZ BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "ESPERANZA HS",
+          "raw": "ESPERANZA HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau23",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau23",
+      "sourceGameNumber": "14GAU23",
+      "sourceRow": 19,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "7:50 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 semi",
+      "stageDisplay": "5-8 Semifinal",
+      "stageMeta": {
+        "raw": "5-8 semi",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "5-8 Semifinal",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 Semifinal"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndA-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "La Jolla United",
+          "participantId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+          "teamId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "2ndD-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndD",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-14u-girls-eca-14u-girls",
+          "teamId": "team-2026-14u-girls-eca-14u-girls",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 6,
+        "whiteRaw": "13",
+        "darkRaw": "6",
+        "whiteRegulation": 13,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+        "winnerName": "La Jolla United",
+        "loserParticipantId": "team-2026-14u-girls-eca-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-eca-14u-girls",
+        "loserName": "SD ECA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "7:50 AM",
+          "raw": "7:50 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau15",
+      "sourceGameNumber": "14GAU15",
+      "sourceRow": 20,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi",
+      "stageDisplay": "1-4 Semifinal",
+      "stageMeta": {
+        "raw": "1-4 semi",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-PASADENA AC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "PASADENA AC",
+          "participantId": "tournament-team-2026-14u-girls-pasadena-ac",
+          "teamId": null,
+          "clubId": "club-pasadena-ac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "1stD-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stD",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-14u-girls-north-irvine-14u-girls",
+          "teamId": "team-2026-14u-girls-north-irvine-14u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 6,
+        "whiteRaw": "12",
+        "darkRaw": "6",
+        "whiteRegulation": 12,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-pasadena-ac",
+        "winnerTeamId": null,
+        "winnerName": "PASADENA AC",
+        "loserParticipantId": "team-2026-14u-girls-north-irvine-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-north-irvine-14u-girls",
+        "loserName": "North Irvine"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:40 AM",
+          "raw": "8:40 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau17",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau17",
+      "sourceGameNumber": "14GAU17",
+      "sourceRow": 21,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 semi",
+      "stageDisplay": "1-4 Semifinal",
+      "stageMeta": {
+        "raw": "1-4 semi",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 Semifinal"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stB-ROGUE 619",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stB",
+          "displayName": "Rogue 619",
+          "participantId": "team-2026-14u-girls-rogue-619-14u-girls",
+          "teamId": "team-2026-14u-girls-rogue-619-14u-girls",
+          "clubId": "club-rogue-619",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "1stC-GOLD COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stC",
+          "displayName": "Gold Coast",
+          "participantId": "team-2026-14u-girls-gold-coast-14u-girls",
+          "teamId": "team-2026-14u-girls-gold-coast-14u-girls",
+          "clubId": "club-gold-coast",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 9,
+        "whiteRaw": "8",
+        "darkRaw": "9",
+        "whiteRegulation": 8,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-gold-coast-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-gold-coast-14u-girls",
+        "winnerName": "Gold Coast",
+        "loserParticipantId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "loserName": "Rogue 619"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau26",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau26",
+      "sourceGameNumber": "14GAU26",
+      "sourceRow": 22,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:20 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th-14th 4C,4D",
+      "stageDisplay": "9th-14th 4C,4D",
+      "stageMeta": {
+        "raw": "9th-14th 4C,4D",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th-14th 4C,4D",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th-14th 4C,4D"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "4thC-CDM NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thC",
+          "displayName": "CDM NAVY",
+          "participantId": "tournament-team-2026-14u-girls-cdm-navy",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "4thD-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thD",
+          "displayName": "LAMORINDA C",
+          "participantId": "tournament-team-2026-14u-girls-lamorinda-c",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8",
+        "whiteRegulation": 9,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-cdm-navy",
+        "winnerTeamId": null,
+        "winnerName": "CDM NAVY",
+        "loserParticipantId": "tournament-team-2026-14u-girls-lamorinda-c",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:20 AM",
+          "raw": "10:20 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau20",
+      "sourceGameNumber": "14GAU20",
+      "sourceRow": 23,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:10 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th-14th 3C,3D",
+      "stageDisplay": "9th-14th 3C,3D",
+      "stageMeta": {
+        "raw": "9th-14th 3C,3D",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th-14th 3C,3D",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th-14th 3C,3D"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdC-PALOS VERDES",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdC",
+          "displayName": "PALOS VERDES",
+          "participantId": "tournament-team-2026-14u-girls-palos-verdes",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "3rdD-NORTHWEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdD",
+          "displayName": "Northwest",
+          "participantId": "team-2026-14u-girls-northwest-14u-girls",
+          "teamId": "team-2026-14u-girls-northwest-14u-girls",
+          "clubId": "club-northwest",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3",
+        "whiteRegulation": 10,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-palos-verdes",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES",
+        "loserParticipantId": "team-2026-14u-girls-northwest-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-northwest-14u-girls",
+        "loserName": "Northwest"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:10 AM",
+          "raw": "11:10 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau19",
+      "sourceGameNumber": "14GAU19",
+      "sourceRow": 24,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th-14th 4C,3B",
+      "stageDisplay": "9th-14th 4C,3B",
+      "stageMeta": {
+        "raw": "9th-14th 4C,3B",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th-14th 4C,3B",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th-14th 4C,3B"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "4thC-CDM NAVY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thC",
+          "displayName": "CDM NAVY",
+          "participantId": "tournament-team-2026-14u-girls-cdm-navy",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdB-HONOLULU",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "HONOLULU",
+          "participantId": "tournament-team-2026-14u-girls-honolulu",
+          "teamId": null,
+          "clubId": "club-honolulu-water-polo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 13,
+        "whiteRaw": "6",
+        "darkRaw": "13",
+        "whiteRegulation": 6,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-honolulu",
+        "winnerTeamId": null,
+        "winnerName": "HONOLULU",
+        "loserParticipantId": "tournament-team-2026-14u-girls-cdm-navy",
+        "loserTeamId": null,
+        "loserName": "CDM NAVY"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:00 PM",
+          "raw": "12:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau27",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau27",
+      "sourceGameNumber": "14GAU27",
+      "sourceRow": 25,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:50 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "10.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#23-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#23",
+          "displayName": "La Jolla United",
+          "participantId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+          "teamId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "W#24-SHAQ",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#24",
+          "displayName": "SHAQ",
+          "participantId": "team-2026-14u-girls-shaq-14u-girls",
+          "teamId": "team-2026-14u-girls-shaq-14u-girls",
+          "clubId": "club-shaq",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10.3,
+        "dark": 10.2,
+        "whiteRaw": "10.3",
+        "darkRaw": "10.2",
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 10,
+        "darkRegulation": 10,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-la-jolla-united-14u-girls",
+        "winnerName": "La Jolla United",
+        "loserParticipantId": "team-2026-14u-girls-shaq-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-shaq-14u-girls",
+        "loserName": "SHAQ"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:50 PM",
+          "raw": "12:50 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau28",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau28",
+      "sourceGameNumber": "14GAU28",
+      "sourceRow": 26,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "stageDisplay": "7th place game",
+      "stageMeta": {
+        "raw": "7th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "7th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 7,
+          "loserPlace": 8
+        },
+        "displayLabel": "7th place game"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#23-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#23",
+          "displayName": "SD ECA",
+          "participantId": "team-2026-14u-girls-eca-14u-girls",
+          "teamId": "team-2026-14u-girls-eca-14u-girls",
+          "clubId": "club-sd-eca",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "L#24-BACK BAY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#24",
+          "displayName": "Back Bay",
+          "participantId": "team-2026-14u-girls-back-bay-14u-girls",
+          "teamId": "team-2026-14u-girls-back-bay-14u-girls",
+          "clubId": "club-back-bay",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10",
+        "whiteRegulation": 8,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-back-bay-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-back-bay-14u-girls",
+        "winnerName": "Back Bay",
+        "loserParticipantId": "team-2026-14u-girls-eca-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-eca-14u-girls",
+        "loserName": "SD ECA"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:40 PM",
+          "raw": "1:40 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau25",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau25",
+      "sourceGameNumber": "14GAU25",
+      "sourceRow": 27,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th-14th 3A,3C",
+      "stageDisplay": "9th-14th 3A,3C",
+      "stageMeta": {
+        "raw": "9th-14th 3A,3C",
+        "detailRaw": "3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "9th-14th 3A,3C",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "9th-14th 3A,3C"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-SANTA CRUZ BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "SANTA CRUZ BLUE",
+          "participantId": "tournament-team-2026-14u-girls-santa-cruz-blue",
+          "teamId": null,
+          "clubId": "club-santa-cruz",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdC-PALOS VERDES",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdC",
+          "displayName": "PALOS VERDES",
+          "participantId": "tournament-team-2026-14u-girls-palos-verdes",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 13,
+        "whiteRaw": "3",
+        "darkRaw": "13",
+        "whiteRegulation": 3,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-palos-verdes",
+        "winnerTeamId": null,
+        "winnerName": "PALOS VERDES",
+        "loserParticipantId": "tournament-team-2026-14u-girls-santa-cruz-blue",
+        "loserTeamId": null,
+        "loserName": "SANTA CRUZ BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:30 PM",
+          "raw": "2:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau21",
+      "sourceGameNumber": "14GAU21",
+      "sourceRow": 28,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#15-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#15",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-14u-girls-north-irvine-14u-girls",
+          "teamId": "team-2026-14u-girls-north-irvine-14u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "L#17-ROGUE 619",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#17",
+          "displayName": "Rogue 619",
+          "participantId": "team-2026-14u-girls-rogue-619-14u-girls",
+          "teamId": "team-2026-14u-girls-rogue-619-14u-girls",
+          "clubId": "club-rogue-619",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 18,
+        "whiteRaw": "9",
+        "darkRaw": "18",
+        "whiteRegulation": 9,
+        "darkRegulation": 18,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "winnerName": "Rogue 619",
+        "loserParticipantId": "team-2026-14u-girls-north-irvine-14u-girls",
+        "loserTeamId": "team-2026-14u-girls-north-irvine-14u-girls",
+        "loserName": "North Irvine"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:20 PM",
+          "raw": "3:20 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-14u-girls-gold-14gau22",
+      "eventId": "2026-kap7-international",
+      "divisionId": "14u-girls-gold",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "14Gau22",
+      "sourceGameNumber": "14GAU22",
+      "sourceRow": 29,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:10 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "SAN CLEMENTE HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#15-PASADENA AC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#15",
+          "displayName": "PASADENA AC",
+          "participantId": "tournament-team-2026-14u-girls-pasadena-ac",
+          "teamId": null,
+          "clubId": "club-pasadena-ac",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#17-GOLD COAST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#17",
+          "displayName": "Gold Coast",
+          "participantId": "team-2026-14u-girls-gold-coast-14u-girls",
+          "teamId": "team-2026-14u-girls-gold-coast-14u-girls",
+          "clubId": "club-gold-coast",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 16,
+        "whiteRaw": "9",
+        "darkRaw": "16",
+        "whiteRegulation": 9,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-gold-coast-14u-girls",
+        "winnerTeamId": "team-2026-14u-girls-gold-coast-14u-girls",
+        "winnerName": "Gold Coast",
+        "loserParticipantId": "tournament-team-2026-14u-girls-pasadena-ac",
+        "loserTeamId": null,
+        "loserName": "PASADENA AC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:10 PM",
+          "raw": "4:10 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "SAN CLEMENTE HS",
+          "raw": "SAN CLEMENTE HS"
+        }
+      }
+    }
+  ]
+}

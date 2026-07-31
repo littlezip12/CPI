@@ -1,0 +1,3058 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "10u-coed-gold",
+    "label": "10U Coed Gold",
+    "season": "2026",
+    "ageGroup": "10U",
+    "gender": "Coed",
+    "division": "Gold",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "10u-coed-gold",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/10u-coed-gold.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "68531dfe9466d314f58d7f8489dc7e42a20c4c98e9a2f7e09fca2cbdce052047",
+    "rowCount": 33
+  },
+  "counts": {
+    "games": 32,
+    "finalGames": 31,
+    "scheduledGames": 1,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 1,
+    "teamParticipants": 64,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 64,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 65
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau01",
+      "sourceGameNumber": "10CAU01",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D1,D3",
+      "stageDisplay": "D bracket D1,D3",
+      "stageMeta": {
+        "raw": "D bracket D1,D3",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D1,D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D1,D3"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-TROJAN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-10u-coed-trojan",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3-YOLO YELLOW",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "YOLO YELLOW",
+          "participantId": "tournament-team-2026-10u-coed-yolo-yellow",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 15,
+        "whiteRaw": "13",
+        "darkRaw": "15",
+        "whiteRegulation": 13,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-yolo-yellow",
+        "winnerTeamId": null,
+        "winnerName": "YOLO YELLOW",
+        "loserParticipantId": "tournament-team-2026-10u-coed-trojan",
+        "loserTeamId": null,
+        "loserName": "TROJAN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau02",
+      "sourceGameNumber": "10CAU02",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2026-10u-coed-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "LAMORINDA C",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-c",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 8,
+        "whiteRaw": "18",
+        "darkRaw": "8",
+        "whiteRegulation": 18,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-la-jolla-united",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-lamorinda-c",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:45 AM",
+          "raw": "8:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau03",
+      "sourceGameNumber": "10CAU03",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "DAVIS",
+          "participantId": "tournament-team-2026-10u-coed-davis",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-DEL MAR WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "DEL MAR WHITE",
+          "participantId": "tournament-team-2026-10u-coed-del-mar-white",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 5,
+        "whiteRaw": "16",
+        "darkRaw": "5",
+        "whiteRegulation": 16,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-davis",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS",
+        "loserParticipantId": "tournament-team-2026-10u-coed-del-mar-white",
+        "loserTeamId": null,
+        "loserName": "DEL MAR WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau04",
+      "sourceGameNumber": "10CAU04",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C3",
+      "stageDisplay": "C bracket C1,C3",
+      "stageMeta": {
+        "raw": "C bracket C1,C3",
+        "detailRaw": "6",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C3"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2026-10u-coed-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-10u-coed-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 18,
+        "whiteRaw": "6",
+        "darkRaw": "18",
+        "whiteRegulation": 6,
+        "darkRegulation": 18,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE BLACK",
+        "loserParticipantId": "tournament-team-2026-10u-coed-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:15 AM",
+          "raw": "10:15 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau05",
+      "sourceGameNumber": "10CAU05",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls 1st-4th",
+      "stageDisplay": "girls 1st-4th",
+      "stageMeta": {
+        "raw": "girls 1st-4th",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "girls 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls 1st-4th"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1-LAMORINDA BLUE (A) (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "LAMORINDA BLUE (A) (girls)",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-blue-a-girls",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G4-SAN CLEMENTE RED (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G4",
+          "displayName": "SAN CLEMENTE RED (girls)",
+          "participantId": "tournament-team-2026-10u-coed-san-clemente-red-girls",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 1,
+        "whiteRaw": "19",
+        "darkRaw": "1",
+        "whiteRegulation": 19,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-lamorinda-blue-a-girls",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA BLUE (A) (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-san-clemente-red-girls",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE RED (girls)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau07",
+      "sourceGameNumber": "10CAU07",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D2,D3",
+      "stageDisplay": "D bracket D2,D3",
+      "stageMeta": {
+        "raw": "D bracket D2,D3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D2,D3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D2,D3"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2-PATRIOT WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "PATRIOT WHITE",
+          "participantId": "tournament-team-2026-10u-coed-patriot-white",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3-YOLO YELLOW",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "YOLO YELLOW",
+          "participantId": "tournament-team-2026-10u-coed-yolo-yellow",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 16,
+        "whiteRaw": "5",
+        "darkRaw": "16",
+        "whiteRegulation": 5,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-yolo-yellow",
+        "winnerTeamId": null,
+        "winnerName": "YOLO YELLOW",
+        "loserParticipantId": "tournament-team-2026-10u-coed-patriot-white",
+        "loserTeamId": null,
+        "loserName": "PATRIOT WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau06",
+      "sourceGameNumber": "10CAU06",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls 1st-4th",
+      "stageDisplay": "girls 1st-4th",
+      "stageMeta": {
+        "raw": "girls 1st-4th",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "girls 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls 1st-4th"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2-DEL MAR BLUE (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "DEL MAR BLUE (girls)",
+          "participantId": "tournament-team-2026-10u-coed-del-mar-blue-girls",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G3-680 RED (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3",
+          "displayName": "680 RED (girls)",
+          "participantId": "tournament-team-2026-10u-coed-680-red-girls",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 5,
+        "whiteRaw": "12",
+        "darkRaw": "5",
+        "whiteRegulation": 12,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-del-mar-blue-girls",
+        "winnerTeamId": null,
+        "winnerName": "DEL MAR BLUE (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-680-red-girls",
+        "loserTeamId": null,
+        "loserName": "680 RED (girls)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:45 AM",
+          "raw": "11:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau08",
+      "sourceGameNumber": "10CAU08",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-LOYOLA WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "LOYOLA WPC",
+          "participantId": "tournament-team-2026-10u-coed-loyola-wpc",
+          "teamId": null,
+          "clubId": "club-loyola-wpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "LAMORINDA C",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-c",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 1,
+        "whiteRaw": "17",
+        "darkRaw": "1",
+        "whiteRegulation": 17,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-loyola-wpc",
+        "winnerTeamId": null,
+        "winnerName": "LOYOLA WPC",
+        "loserParticipantId": "tournament-team-2026-10u-coed-lamorinda-c",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:45 AM",
+          "raw": "11:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau09",
+      "sourceGameNumber": "10CAU09",
+      "sourceRow": 10,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-ORANGE COUNTY WPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "ORANGE COUNTY WPC RED",
+          "participantId": "tournament-team-2026-10u-coed-orange-county-wpc-red",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-DEL MAR WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "DEL MAR WHITE",
+          "participantId": "tournament-team-2026-10u-coed-del-mar-white",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 6,
+        "whiteRaw": "19",
+        "darkRaw": "6",
+        "whiteRegulation": 19,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-orange-county-wpc-red",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC RED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-del-mar-white",
+        "loserTeamId": null,
+        "loserName": "DEL MAR WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:30 PM",
+          "raw": "12:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau10",
+      "sourceGameNumber": "10CAU10",
+      "sourceRow": 11,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C2,C3",
+      "stageDisplay": "C bracket C2,C3",
+      "stageMeta": {
+        "raw": "C bracket C2,C3",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C2,C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C2,C3"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2-SOUTH BAY UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "SOUTH BAY UNITED",
+          "participantId": "tournament-team-2026-10u-coed-south-bay-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C3-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-10u-coed-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8",
+        "whiteRegulation": 11,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-south-bay-united",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH BAY UNITED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:15 PM",
+          "raw": "1:15 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau13",
+      "sourceGameNumber": "10CAU13",
+      "sourceRow": 12,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket D1,D2",
+      "stageDisplay": "D bracket D1,D2",
+      "stageMeta": {
+        "raw": "D bracket D1,D2",
+        "detailRaw": "1",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket D1,D2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket D1,D2"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1-TROJAN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-10u-coed-trojan",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D2-PATRIOT WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "PATRIOT WHITE",
+          "participantId": "tournament-team-2026-10u-coed-patriot-white",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 1,
+        "dark": 2,
+        "whiteRaw": "1",
+        "darkRaw": "2",
+        "whiteRegulation": 1,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-patriot-white",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT WHITE",
+        "loserParticipantId": "tournament-team-2026-10u-coed-trojan",
+        "loserTeamId": null,
+        "loserName": "TROJAN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau14",
+      "sourceGameNumber": "10CAU14",
+      "sourceRow": 13,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2026-10u-coed-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A2-LOYOLA WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "LOYOLA WPC",
+          "participantId": "tournament-team-2026-10u-coed-loyola-wpc",
+          "teamId": null,
+          "clubId": "club-loyola-wpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7",
+        "whiteRegulation": 9,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-la-jolla-united",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-loyola-wpc",
+        "loserTeamId": null,
+        "loserName": "LOYOLA WPC"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:45 PM",
+          "raw": "2:45 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau11",
+      "sourceGameNumber": "10CAU11",
+      "sourceRow": 14,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls 1st-4th",
+      "stageDisplay": "girls 1st-4th",
+      "stageMeta": {
+        "raw": "girls 1st-4th",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "girls 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls 1st-4th"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1-LAMORINDA BLUE (A) (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "LAMORINDA BLUE (A) (girls)",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-blue-a-girls",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G3-680 RED (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3",
+          "displayName": "680 RED (girls)",
+          "participantId": "tournament-team-2026-10u-coed-680-red-girls",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 3,
+        "whiteRaw": "17",
+        "darkRaw": "3",
+        "whiteRegulation": 17,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-lamorinda-blue-a-girls",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA BLUE (A) (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-680-red-girls",
+        "loserTeamId": null,
+        "loserName": "680 RED (girls)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau15",
+      "sourceGameNumber": "10CAU15",
+      "sourceRow": 15,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": "14",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "DAVIS",
+          "participantId": "tournament-team-2026-10u-coed-davis",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2-ORANGE COUNTY WPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "ORANGE COUNTY WPC RED",
+          "participantId": "tournament-team-2026-10u-coed-orange-county-wpc-red",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6",
+        "whiteRegulation": 14,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-davis",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS",
+        "loserParticipantId": "tournament-team-2026-10u-coed-orange-county-wpc-red",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau12",
+      "sourceGameNumber": "10CAU12",
+      "sourceRow": 16,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls 1st-4th",
+      "stageDisplay": "girls 1st-4th",
+      "stageMeta": {
+        "raw": "girls 1st-4th",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "girls 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls 1st-4th"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2-DEL MAR BLUE (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "DEL MAR BLUE (girls)",
+          "participantId": "tournament-team-2026-10u-coed-del-mar-blue-girls",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G4-SAN CLEMENTE RED (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G4",
+          "displayName": "SAN CLEMENTE RED (girls)",
+          "participantId": "tournament-team-2026-10u-coed-san-clemente-red-girls",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-del-mar-blue-girls",
+        "winnerTeamId": null,
+        "winnerName": "DEL MAR BLUE (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-san-clemente-red-girls",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE RED (girls)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:15 PM",
+          "raw": "4:15 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau16",
+      "sourceGameNumber": "10CAU16",
+      "sourceRow": 17,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket C1,C2",
+      "stageDisplay": "C bracket C1,C2",
+      "stageMeta": {
+        "raw": "C bracket C1,C2",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket C1,C2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket C1,C2"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2026-10u-coed-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C2-SOUTH BAY UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "SOUTH BAY UNITED",
+          "participantId": "tournament-team-2026-10u-coed-south-bay-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 14,
+        "whiteRaw": "10",
+        "darkRaw": "14",
+        "whiteRegulation": 10,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-south-bay-united",
+        "winnerTeamId": null,
+        "winnerName": "SOUTH BAY UNITED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:15 PM",
+          "raw": "4:15 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau17",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau17",
+      "sourceGameNumber": "10CAU17",
+      "sourceRow": 18,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls 1st-4th",
+      "stageDisplay": "girls 1st-4th",
+      "stageMeta": {
+        "raw": "girls 1st-4th",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "girls 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls 1st-4th"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1-LAMORINDA BLUE (A) (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "LAMORINDA BLUE (A) (girls)",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-blue-a-girls",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G2-DEL MAR BLUE (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "DEL MAR BLUE (girls)",
+          "participantId": "tournament-team-2026-10u-coed-del-mar-blue-girls",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 2,
+        "whiteRaw": "8",
+        "darkRaw": "2",
+        "whiteRegulation": 8,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-lamorinda-blue-a-girls",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA BLUE (A) (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-del-mar-blue-girls",
+        "loserTeamId": null,
+        "loserName": "DEL MAR BLUE (girls)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau19",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau19",
+      "sourceGameNumber": "10CAU19",
+      "sourceRow": 19,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 coed semi",
+      "stageDisplay": "5-8 coed Semifinal",
+      "stageMeta": {
+        "raw": "5-8 coed semi",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "5-8 coed Semifinal",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 coed Semifinal"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndA-LOYOLA WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "LOYOLA WPC",
+          "participantId": "tournament-team-2026-10u-coed-loyola-wpc",
+          "teamId": null,
+          "clubId": "club-loyola-wpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "2ndD-TROJAN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndD",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-10u-coed-trojan",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 7,
+        "whiteRaw": "18",
+        "darkRaw": "7",
+        "whiteRegulation": 18,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-loyola-wpc",
+        "winnerTeamId": null,
+        "winnerName": "LOYOLA WPC",
+        "loserParticipantId": "tournament-team-2026-10u-coed-trojan",
+        "loserTeamId": null,
+        "loserName": "TROJAN"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau18",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau18",
+      "sourceGameNumber": "10CAU18",
+      "sourceRow": 20,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls 1st-4th",
+      "stageDisplay": "girls 1st-4th",
+      "stageMeta": {
+        "raw": "girls 1st-4th",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "girls 1st-4th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls 1st-4th"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G3-680 RED (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3",
+          "displayName": "680 RED (girls)",
+          "participantId": "tournament-team-2026-10u-coed-680-red-girls",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G4-SAN CLEMENTE RED (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G4",
+          "displayName": "SAN CLEMENTE RED (girls)",
+          "participantId": "tournament-team-2026-10u-coed-san-clemente-red-girls",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8",
+        "whiteRegulation": 11,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-680-red-girls",
+        "winnerTeamId": null,
+        "winnerName": "680 RED (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-san-clemente-red-girls",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE RED (girls)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:45 AM",
+          "raw": "8:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau20",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau20",
+      "sourceGameNumber": "10CAU20",
+      "sourceRow": 21,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5-8 coed semi",
+      "stageDisplay": "5-8 coed Semifinal",
+      "stageMeta": {
+        "raw": "5-8 coed semi",
+        "detailRaw": "13",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "5-8 coed Semifinal",
+        "placementRange": {
+          "start": 5,
+          "end": 8
+        },
+        "placement": null,
+        "displayLabel": "5-8 coed Semifinal"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndB-ORANGE COUNTY WPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndB",
+          "displayName": "ORANGE COUNTY WPC RED",
+          "participantId": "tournament-team-2026-10u-coed-orange-county-wpc-red",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "2ndC-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndC",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-10u-coed-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 19,
+        "whiteRaw": "13",
+        "darkRaw": "19",
+        "whiteRegulation": 13,
+        "darkRegulation": 19,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE BLACK",
+        "loserParticipantId": "tournament-team-2026-10u-coed-orange-county-wpc-red",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:45 AM",
+          "raw": "8:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau21",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau21",
+      "sourceGameNumber": "10CAU21",
+      "sourceRow": 22,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 coed semi",
+      "stageDisplay": "1-4 coed Semifinal",
+      "stageMeta": {
+        "raw": "1-4 coed semi",
+        "detailRaw": "6.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 coed Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 coed Semifinal"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2026-10u-coed-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "1stD-YOLO YELLOW",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stD",
+          "displayName": "YOLO YELLOW",
+          "participantId": "tournament-team-2026-10u-coed-yolo-yellow",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6.3,
+        "dark": 6,
+        "whiteRaw": "6.3",
+        "darkRaw": "6",
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 3,
+        "darkShootout": null
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 6,
+        "darkRegulation": 6,
+        "whiteShootout": 3,
+        "darkShootout": null
+      },
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-la-jolla-united",
+        "winnerTeamId": null,
+        "winnerName": "LA JOLLA UNITED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-yolo-yellow",
+        "loserTeamId": null,
+        "loserName": "YOLO YELLOW"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau22",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau22",
+      "sourceGameNumber": "10CAU22",
+      "sourceRow": 23,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1-4 coed semi",
+      "stageDisplay": "1-4 coed Semifinal",
+      "stageMeta": {
+        "raw": "1-4 coed semi",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "1-4 coed Semifinal",
+        "placementRange": {
+          "start": 1,
+          "end": 4
+        },
+        "placement": null,
+        "displayLabel": "1-4 coed Semifinal"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stB-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stB",
+          "displayName": "DAVIS",
+          "participantId": "tournament-team-2026-10u-coed-davis",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "1stC-SOUTH BAY UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stC",
+          "displayName": "SOUTH BAY UNITED",
+          "participantId": "tournament-team-2026-10u-coed-south-bay-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-davis",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS",
+        "loserParticipantId": "tournament-team-2026-10u-coed-south-bay-united",
+        "loserTeamId": null,
+        "loserName": "SOUTH BAY UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:15 AM",
+          "raw": "10:15 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau23",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau23",
+      "sourceGameNumber": "10CAU23",
+      "sourceRow": 24,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls-coed interact",
+      "stageDisplay": "girls-coed interact",
+      "stageMeta": {
+        "raw": "girls-coed interact",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "girls-coed interact",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls-coed interact"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1-LAMORINDA BLUE (A) (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "LAMORINDA BLUE (A) (girls)",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-blue-a-girls",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdB-DEL MAR WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "DEL MAR WHITE",
+          "participantId": "tournament-team-2026-10u-coed-del-mar-white",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 0,
+        "whiteRaw": "19",
+        "darkRaw": "0",
+        "whiteRegulation": 19,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-lamorinda-blue-a-girls",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA BLUE (A) (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-del-mar-white",
+        "loserTeamId": null,
+        "loserName": "DEL MAR WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau25",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau25",
+      "sourceGameNumber": "10CAU25",
+      "sourceRow": 25,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls-coed interact",
+      "stageDisplay": "girls-coed interact",
+      "stageMeta": {
+        "raw": "girls-coed interact",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "girls-coed interact",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls-coed interact"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G3-680 RED (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3",
+          "displayName": "680 RED (girls)",
+          "participantId": "tournament-team-2026-10u-coed-680-red-girls",
+          "teamId": null,
+          "clubId": "club-680",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdC-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdC",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2026-10u-coed-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 16,
+        "whiteRaw": "17",
+        "darkRaw": "16",
+        "whiteRegulation": 17,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-680-red-girls",
+        "winnerTeamId": null,
+        "winnerName": "680 RED (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-south-coast-red",
+        "loserTeamId": null,
+        "loserName": "SOUTH COAST RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau24",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau24",
+      "sourceGameNumber": "10CAU24",
+      "sourceRow": 26,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls-coed interact",
+      "stageDisplay": "girls-coed interact",
+      "stageMeta": {
+        "raw": "girls-coed interact",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "girls-coed interact",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls-coed interact"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2-DEL MAR BLUE (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "DEL MAR BLUE (girls)",
+          "participantId": "tournament-team-2026-10u-coed-del-mar-blue-girls",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdD-PATRIOT WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdD",
+          "displayName": "PATRIOT WHITE",
+          "participantId": "tournament-team-2026-10u-coed-patriot-white",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 2,
+        "whiteRaw": "15",
+        "darkRaw": "2",
+        "whiteRegulation": 15,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-del-mar-blue-girls",
+        "winnerTeamId": null,
+        "winnerName": "DEL MAR BLUE (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-patriot-white",
+        "loserTeamId": null,
+        "loserName": "PATRIOT WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:45 AM",
+          "raw": "11:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau26",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau26",
+      "sourceGameNumber": "10CAU26",
+      "sourceRow": 27,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "girls-coed interact",
+      "stageDisplay": "girls-coed interact",
+      "stageMeta": {
+        "raw": "girls-coed interact",
+        "detailRaw": "12",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "girls-coed interact",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "girls-coed interact"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G4-SAN CLEMENTE RED (girls)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G4",
+          "displayName": "SAN CLEMENTE RED (girls)",
+          "participantId": "tournament-team-2026-10u-coed-san-clemente-red-girls",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdA-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "LAMORINDA C",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-c",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7",
+        "whiteRegulation": 12,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-san-clemente-red-girls",
+        "winnerTeamId": null,
+        "winnerName": "SAN CLEMENTE RED (girls)",
+        "loserParticipantId": "tournament-team-2026-10u-coed-lamorinda-c",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA C"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:45 AM",
+          "raw": "11:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau27",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau27",
+      "sourceGameNumber": "10CAU27",
+      "sourceRow": 28,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th Coed",
+      "stageDisplay": "7th Coed",
+      "stageMeta": {
+        "raw": "7th Coed",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th Coed",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th Coed"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#19-TROJAN",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#19",
+          "displayName": "TROJAN",
+          "participantId": "tournament-team-2026-10u-coed-trojan",
+          "teamId": null,
+          "clubId": "club-trojan",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L#20-ORANGE COUNTY WPC RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#20",
+          "displayName": "ORANGE COUNTY WPC RED",
+          "participantId": "tournament-team-2026-10u-coed-orange-county-wpc-red",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 12,
+        "whiteRaw": "18",
+        "darkRaw": "12",
+        "whiteRegulation": 18,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-trojan",
+        "winnerTeamId": null,
+        "winnerName": "TROJAN",
+        "loserParticipantId": "tournament-team-2026-10u-coed-orange-county-wpc-red",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:30 PM",
+          "raw": "12:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau29",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau29",
+      "sourceGameNumber": "10CAU29",
+      "sourceRow": 29,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd Coed",
+      "stageDisplay": "3rd Coed",
+      "stageMeta": {
+        "raw": "3rd Coed",
+        "detailRaw": "11.2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd Coed",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd Coed"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L#21-YOLO YELLOW",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#21",
+          "displayName": "YOLO YELLOW",
+          "participantId": "tournament-team-2026-10u-coed-yolo-yellow",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L#22-SOUTH BAY UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L#22",
+          "displayName": "SOUTH BAY UNITED",
+          "participantId": "tournament-team-2026-10u-coed-south-bay-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 11.2,
+        "dark": 11.1,
+        "whiteRaw": "11.2",
+        "darkRaw": "11.1",
+        "whiteRegulation": 11,
+        "darkRegulation": 11,
+        "whiteShootout": 2,
+        "darkShootout": 1
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 11,
+        "darkRegulation": 11,
+        "whiteShootout": 2,
+        "darkShootout": 1
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-yolo-yellow",
+        "winnerTeamId": null,
+        "winnerName": "YOLO YELLOW",
+        "loserParticipantId": "tournament-team-2026-10u-coed-south-bay-united",
+        "loserTeamId": null,
+        "loserName": "SOUTH BAY UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:30 PM",
+          "raw": "12:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau28",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau28",
+      "sourceGameNumber": "10CAU28",
+      "sourceRow": 30,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th Coed",
+      "stageDisplay": "5th Coed",
+      "stageMeta": {
+        "raw": "5th Coed",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "5th Coed",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "5th Coed"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#19-LOYOLA WPC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#19",
+          "displayName": "LOYOLA WPC",
+          "participantId": "tournament-team-2026-10u-coed-loyola-wpc",
+          "teamId": null,
+          "clubId": "club-loyola-wpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#20-SAN CLEMENTE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#20",
+          "displayName": "SAN CLEMENTE BLACK",
+          "participantId": "tournament-team-2026-10u-coed-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 6,
+        "whiteRaw": "10",
+        "darkRaw": "6",
+        "whiteRegulation": 10,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-loyola-wpc",
+        "winnerTeamId": null,
+        "winnerName": "LOYOLA WPC",
+        "loserParticipantId": "tournament-team-2026-10u-coed-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "SAN CLEMENTE BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:15 PM",
+          "raw": "1:15 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau30",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau30",
+      "sourceGameNumber": "10CAU30",
+      "sourceRow": 31,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st Coed",
+      "stageDisplay": "1st Coed",
+      "stageMeta": {
+        "raw": "1st Coed",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st Coed",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st Coed"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "W#21-LA JOLLA UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#21",
+          "displayName": "LA JOLLA UNITED",
+          "participantId": "tournament-team-2026-10u-coed-la-jolla-united",
+          "teamId": null,
+          "clubId": "club-la-jolla-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "W#22-DAVIS",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "W#22",
+          "displayName": "DAVIS",
+          "participantId": "tournament-team-2026-10u-coed-davis",
+          "teamId": null,
+          "clubId": "club-davis",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 13,
+        "whiteRaw": "7",
+        "darkRaw": "13",
+        "whiteRegulation": 7,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-davis",
+        "winnerTeamId": null,
+        "winnerName": "DAVIS",
+        "loserParticipantId": "tournament-team-2026-10u-coed-la-jolla-united",
+        "loserTeamId": null,
+        "loserName": "LA JOLLA UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:15 PM",
+          "raw": "1:15 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau31",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau31",
+      "sourceGameNumber": "10CAU31",
+      "sourceRow": 32,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "coed 9-12",
+      "stageDisplay": "coed 9-12",
+      "stageMeta": {
+        "raw": "coed 9-12",
+        "detailRaw": "12.3",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "coed 9-12",
+        "placementRange": {
+          "start": 9,
+          "end": 12
+        },
+        "placement": null,
+        "displayLabel": "coed 9-12"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-LAMORINDA C",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "LAMORINDA C",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-c",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdD-PATRIOT WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdD",
+          "displayName": "PATRIOT WHITE",
+          "participantId": "tournament-team-2026-10u-coed-patriot-white",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12.3,
+        "dark": 12.2,
+        "whiteRaw": "12.3",
+        "darkRaw": "12.2",
+        "whiteRegulation": 12,
+        "darkRegulation": 12,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 12,
+        "darkRegulation": 12,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
+      "outcome": {
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-lamorinda-c",
+        "winnerTeamId": null,
+        "winnerName": "LAMORINDA C",
+        "loserParticipantId": "tournament-team-2026-10u-coed-patriot-white",
+        "loserTeamId": null,
+        "loserName": "PATRIOT WHITE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-gold-10cau32",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-gold",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Gold",
+      "divisionTier": "D2",
+      "sourceGameId": "10Cau32",
+      "sourceGameNumber": "10CAU32",
+      "sourceRow": 33,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "coed 9-12",
+      "stageDisplay": "coed 9-12",
+      "stageMeta": {
+        "raw": "coed 9-12",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "coed 9-12",
+        "placementRange": {
+          "start": 9,
+          "end": 12
+        },
+        "placement": null,
+        "displayLabel": "coed 9-12"
+      },
+      "venue": "EL TORO HS 2",
+      "status": "scheduled",
+      "scoreState": "partial",
+      "participants": {
+        "white": {
+          "raw": "3rdB-DEL MAR WHITE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "DEL MAR WHITE",
+          "participantId": "tournament-team-2026-10u-coed-del-mar-white",
+          "teamId": null,
+          "clubId": "club-del-mar",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdC-SOUTH COAST RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdC",
+          "displayName": "SOUTH COAST RED",
+          "participantId": "tournament-team-2026-10u-coed-south-coast-red",
+          "teamId": null,
+          "clubId": "club-south-coast",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": 12,
+        "whiteRaw": null,
+        "darkRaw": "12",
+        "whiteRegulation": null,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:45 PM",
+          "raw": "2:45 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "EL TORO HS 2",
+          "raw": "EL TORO HS 2"
+        }
+      }
+    }
+  ]
+}

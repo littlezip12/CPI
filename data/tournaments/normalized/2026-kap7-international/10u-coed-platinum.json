@@ -1,0 +1,1548 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-kap7-international",
+    "name": "2026 KAP7 International",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "10u-coed-platinum",
+    "label": "10U Coed Platinum",
+    "season": "2026",
+    "ageGroup": "10U",
+    "gender": "Coed",
+    "division": "Platinum",
+    "divisionTier": "D1",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-kap7-international",
+    "gid": "10u-coed-platinum",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-kap7-international/10u-coed-platinum.csv",
+    "fetchedAt": "2026-07-30T20:45:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "0e659e9e2bf7791eb71d874b1b1977d13aff5ccb2b87a83c8bf4a25416346a45",
+    "rowCount": 17
+  },
+  "counts": {
+    "games": 16,
+    "finalGames": 16,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 32,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 32,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 32
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt01",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt01",
+      "sourceGameNumber": "10CPT01",
+      "sourceRow": 2,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B1/B3",
+      "stageDisplay": "bracket, B1/B3",
+      "stageMeta": {
+        "raw": "bracket, B1/B3",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, B1/B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B1/B3"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-10u-coed-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-10u-coed-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 3,
+        "whiteRaw": "15",
+        "darkRaw": "3",
+        "whiteRegulation": 15,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-10u-coed-patriot-red",
+        "loserTeamId": null,
+        "loserName": "PATRIOT RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:00 AM",
+          "raw": "8:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt02",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt02",
+      "sourceGameNumber": "10CPT02",
+      "sourceRow": 3,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B2/B4",
+      "stageDisplay": "bracket, B2/B4",
+      "stageMeta": {
+        "raw": "bracket, B2/B4",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, B2/B4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B2/B4"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-CHULA VISTA PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "CHULA VISTA PREMIER",
+          "participantId": "tournament-team-2026-10u-coed-chula-vista-premier",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B4-LAMORINDA GOLD (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "LAMORINDA GOLD (B)",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-gold-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 2,
+        "whiteRaw": "17",
+        "darkRaw": "2",
+        "whiteRegulation": 17,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-chula-vista-premier",
+        "winnerTeamId": null,
+        "winnerName": "CHULA VISTA PREMIER",
+        "loserParticipantId": "tournament-team-2026-10u-coed-lamorinda-gold-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA GOLD (B)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "8:45 AM",
+          "raw": "8:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt03",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt03",
+      "sourceGameNumber": "10CPT03",
+      "sourceRow": 4,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A1/A3",
+      "stageDisplay": "bracket, A1/A3",
+      "stageMeta": {
+        "raw": "bracket, A1/A3",
+        "detailRaw": "10",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, A1/A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A1/A3"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-CHANNEL ISLANDS UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "CHANNEL ISLANDS UNITED",
+          "participantId": "tournament-team-2026-10u-coed-channel-islands-united",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-YOLO BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "YOLO BLACK",
+          "participantId": "tournament-team-2026-10u-coed-yolo-black",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9",
+        "whiteRegulation": 10,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-channel-islands-united",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-yolo-black",
+        "loserTeamId": null,
+        "loserName": "YOLO BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt04",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt04",
+      "sourceGameNumber": "10CPT04",
+      "sourceRow": 5,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A2/A4",
+      "stageDisplay": "bracket, A2/A4",
+      "stageMeta": {
+        "raw": "bracket, A2/A4",
+        "detailRaw": "2",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, A2/A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A2/A4"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-10u-coed-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A4-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "NORTH IRVINE BLACK",
+          "participantId": "tournament-team-2026-10u-coed-north-irvine-black",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 15,
+        "whiteRaw": "2",
+        "darkRaw": "15",
+        "whiteRegulation": 2,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-north-irvine-black",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE BLACK",
+        "loserParticipantId": "tournament-team-2026-10u-coed-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:15 AM",
+          "raw": "10:15 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt05",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt05",
+      "sourceGameNumber": "10CPT05",
+      "sourceRow": 6,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B1/B4",
+      "stageDisplay": "bracket, B1/B4",
+      "stageMeta": {
+        "raw": "bracket, B1/B4",
+        "detailRaw": "16",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, B1/B4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B1/B4"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-10u-coed-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B4-LAMORINDA GOLD (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "LAMORINDA GOLD (B)",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-gold-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 3,
+        "whiteRaw": "16",
+        "darkRaw": "3",
+        "whiteRegulation": 16,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-10u-coed-lamorinda-gold-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA GOLD (B)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "12:30 PM",
+          "raw": "12:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt06",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt06",
+      "sourceGameNumber": "10CPT06",
+      "sourceRow": 7,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B2/B3",
+      "stageDisplay": "bracket, B2/B3",
+      "stageMeta": {
+        "raw": "bracket, B2/B3",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, B2/B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B2/B3"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2-CHULA VISTA PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "CHULA VISTA PREMIER",
+          "participantId": "tournament-team-2026-10u-coed-chula-vista-premier",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-10u-coed-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 8,
+        "whiteRaw": "18",
+        "darkRaw": "8",
+        "whiteRegulation": 18,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-chula-vista-premier",
+        "winnerTeamId": null,
+        "winnerName": "CHULA VISTA PREMIER",
+        "loserParticipantId": "tournament-team-2026-10u-coed-patriot-red",
+        "loserTeamId": null,
+        "loserName": "PATRIOT RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "1:15 PM",
+          "raw": "1:15 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt07",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt07",
+      "sourceGameNumber": "10CPT07",
+      "sourceRow": 8,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A1/A4",
+      "stageDisplay": "bracket, A1/A4",
+      "stageMeta": {
+        "raw": "bracket, A1/A4",
+        "detailRaw": "11",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, A1/A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A1/A4"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-CHANNEL ISLANDS UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "CHANNEL ISLANDS UNITED",
+          "participantId": "tournament-team-2026-10u-coed-channel-islands-united",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A4-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "NORTH IRVINE BLACK",
+          "participantId": "tournament-team-2026-10u-coed-north-irvine-black",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 12,
+        "whiteRaw": "11",
+        "darkRaw": "12",
+        "whiteRegulation": 11,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-north-irvine-black",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE BLACK",
+        "loserParticipantId": "tournament-team-2026-10u-coed-channel-islands-united",
+        "loserTeamId": null,
+        "loserName": "CHANNEL ISLANDS UNITED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt08",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt08",
+      "sourceGameNumber": "10CPT08",
+      "sourceRow": 9,
+      "dateLabel": "31-Jan",
+      "dateIso": "2026-01-31",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A2/A3",
+      "stageDisplay": "bracket, A2/A3",
+      "stageMeta": {
+        "raw": "bracket, A2/A3",
+        "detailRaw": "5",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, A2/A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A2/A3"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-10u-coed-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3-YOLO BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "YOLO BLACK",
+          "participantId": "tournament-team-2026-10u-coed-yolo-black",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 11,
+        "whiteRaw": "5",
+        "darkRaw": "11",
+        "whiteRegulation": 5,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-yolo-black",
+        "winnerTeamId": null,
+        "winnerName": "YOLO BLACK",
+        "loserParticipantId": "tournament-team-2026-10u-coed-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:45 PM",
+          "raw": "2:45 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt09",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt09",
+      "sourceGameNumber": "10CPT09",
+      "sourceRow": 10,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B3/B4",
+      "stageDisplay": "bracket, B3/B4",
+      "stageMeta": {
+        "raw": "bracket, B3/B4",
+        "detailRaw": "21",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, B3/B4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B3/B4"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B3-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-10u-coed-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B4-LAMORINDA GOLD (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "LAMORINDA GOLD (B)",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-gold-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 21,
+        "dark": 6,
+        "whiteRaw": "21",
+        "darkRaw": "6",
+        "whiteRegulation": 21,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-patriot-red",
+        "winnerTeamId": null,
+        "winnerName": "PATRIOT RED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-lamorinda-gold-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA GOLD (B)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "9:30 AM",
+          "raw": "9:30 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt10",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt10",
+      "sourceGameNumber": "10CPT10",
+      "sourceRow": 11,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A3/A4",
+      "stageDisplay": "bracket, A3/A4",
+      "stageMeta": {
+        "raw": "bracket, A3/A4",
+        "detailRaw": "7",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, A3/A4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A3/A4"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A3-YOLO BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "YOLO BLACK",
+          "participantId": "tournament-team-2026-10u-coed-yolo-black",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A4-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "NORTH IRVINE BLACK",
+          "participantId": "tournament-team-2026-10u-coed-north-irvine-black",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 12,
+        "whiteRaw": "7",
+        "darkRaw": "12",
+        "whiteRegulation": 7,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-north-irvine-black",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE BLACK",
+        "loserParticipantId": "tournament-team-2026-10u-coed-yolo-black",
+        "loserTeamId": null,
+        "loserName": "YOLO BLACK"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "10:15 AM",
+          "raw": "10:15 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt11",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt11",
+      "sourceGameNumber": "10CPT11",
+      "sourceRow": 12,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, B1/B2",
+      "stageDisplay": "bracket, B1/B2",
+      "stageMeta": {
+        "raw": "bracket, B1/B2",
+        "detailRaw": "18",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, B1/B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, B1/B2"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-10u-coed-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B2-CHULA VISTA PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "CHULA VISTA PREMIER",
+          "participantId": "tournament-team-2026-10u-coed-chula-vista-premier",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 10,
+        "whiteRaw": "18",
+        "darkRaw": "10",
+        "whiteRegulation": 18,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-orange-county-wpc-blue",
+        "winnerTeamId": null,
+        "winnerName": "ORANGE COUNTY WPC BLUE",
+        "loserParticipantId": "tournament-team-2026-10u-coed-chula-vista-premier",
+        "loserTeamId": null,
+        "loserName": "CHULA VISTA PREMIER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:00 AM",
+          "raw": "11:00 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt12",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt12",
+      "sourceGameNumber": "10CPT12",
+      "sourceRow": 13,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "bracket, A1/A2",
+      "stageDisplay": "bracket, A1/A2",
+      "stageMeta": {
+        "raw": "bracket, A1/A2",
+        "detailRaw": "19",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "bracket, A1/A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "bracket, A1/A2"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1-CHANNEL ISLANDS UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "CHANNEL ISLANDS UNITED",
+          "participantId": "tournament-team-2026-10u-coed-channel-islands-united",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A2-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-10u-coed-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 6,
+        "whiteRaw": "19",
+        "darkRaw": "6",
+        "whiteRegulation": 19,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-channel-islands-united",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-foothill-red",
+        "loserTeamId": null,
+        "loserName": "FOOTHILL RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "11:45 AM",
+          "raw": "11:45 AM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt13",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt13",
+      "sourceGameNumber": "10CPT13",
+      "sourceRow": 14,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "stageDisplay": "7th place game",
+      "stageMeta": {
+        "raw": "7th",
+        "detailRaw": "15",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "7th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 7,
+          "loserPlace": 8
+        },
+        "displayLabel": "7th place game"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "4thA-FOOTHILL RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thA",
+          "displayName": "FOOTHILL RED",
+          "participantId": "tournament-team-2026-10u-coed-foothill-red",
+          "teamId": null,
+          "clubId": "club-foothill",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "4thB-LAMORINDA GOLD (B)",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "4thB",
+          "displayName": "LAMORINDA GOLD (B)",
+          "participantId": "tournament-team-2026-10u-coed-lamorinda-gold-b",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 5,
+        "whiteRaw": "15",
+        "darkRaw": "5",
+        "whiteRegulation": 15,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-foothill-red",
+        "winnerTeamId": null,
+        "winnerName": "FOOTHILL RED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-lamorinda-gold-b",
+        "loserTeamId": null,
+        "loserName": "LAMORINDA GOLD (B)"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:00 PM",
+          "raw": "2:00 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt14",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt14",
+      "sourceGameNumber": "10CPT14",
+      "sourceRow": 15,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": "17",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "BECKMAN HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "3rdA-YOLO BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdA",
+          "displayName": "YOLO BLACK",
+          "participantId": "tournament-team-2026-10u-coed-yolo-black",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "3rdB-PATRIOT RED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "3rdB",
+          "displayName": "PATRIOT RED",
+          "participantId": "tournament-team-2026-10u-coed-patriot-red",
+          "teamId": null,
+          "clubId": "club-patriot",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-yolo-black",
+        "winnerTeamId": null,
+        "winnerName": "YOLO BLACK",
+        "loserParticipantId": "tournament-team-2026-10u-coed-patriot-red",
+        "loserTeamId": null,
+        "loserName": "PATRIOT RED"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "2:45 PM",
+          "raw": "2:45 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "BECKMAN HS 2",
+          "raw": "BECKMAN HS 2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt15",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt15",
+      "sourceGameNumber": "10CPT15",
+      "sourceRow": 16,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": "9",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "2ndA-CHANNEL ISLANDS UNITED",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndA",
+          "displayName": "CHANNEL ISLANDS UNITED",
+          "participantId": "tournament-team-2026-10u-coed-channel-islands-united",
+          "teamId": null,
+          "clubId": "club-ciu",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "2ndB-CHULA VISTA PREMIER",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "2ndB",
+          "displayName": "CHULA VISTA PREMIER",
+          "participantId": "tournament-team-2026-10u-coed-chula-vista-premier",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8",
+        "whiteRegulation": 9,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-channel-islands-united",
+        "winnerTeamId": null,
+        "winnerName": "CHANNEL ISLANDS UNITED",
+        "loserParticipantId": "tournament-team-2026-10u-coed-chula-vista-premier",
+        "loserTeamId": null,
+        "loserName": "CHULA VISTA PREMIER"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "3:30 PM",
+          "raw": "3:30 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    },
+    {
+      "id": "game-2026-kap7-international-10u-coed-platinum-10cpt16",
+      "eventId": "2026-kap7-international",
+      "divisionId": "10u-coed-platinum",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Coed",
+      "division": "Platinum",
+      "divisionTier": "D1",
+      "sourceGameId": "10Cpt16",
+      "sourceGameNumber": "10CPT16",
+      "sourceRow": 17,
+      "dateLabel": "1-Feb",
+      "dateIso": "2026-02-01",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": "8",
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "WOOLLETT FAR LEFT",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "1stA-NORTH IRVINE BLACK",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stA",
+          "displayName": "NORTH IRVINE BLACK",
+          "participantId": "tournament-team-2026-10u-coed-north-irvine-black",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "1stB-ORANGE COUNTY WPC BLUE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "1stB",
+          "displayName": "ORANGE COUNTY WPC BLUE",
+          "participantId": "tournament-team-2026-10u-coed-orange-county-wpc-blue",
+          "teamId": null,
+          "clubId": "club-ocwpc",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 4,
+        "whiteRaw": "8",
+        "darkRaw": "4",
+        "whiteRegulation": 8,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-coed-north-irvine-black",
+        "winnerTeamId": null,
+        "winnerName": "NORTH IRVINE BLACK",
+        "loserParticipantId": "tournament-team-2026-10u-coed-orange-county-wpc-blue",
+        "loserTeamId": null,
+        "loserName": "ORANGE COUNTY WPC BLUE"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "4:15 PM",
+          "raw": "4:15 PM"
+        },
+        "loserTo": {
+          "kind": "slot",
+          "slot": "WOOLLETT FAR LEFT",
+          "raw": "WOOLLETT FAR LEFT"
+        }
+      }
+    }
+  ]
+}

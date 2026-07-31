@@ -19,7 +19,7 @@ EXPECTED={
  '18u-girls-championship':('18U','Girls','18U_F_CHAMP-18 teams',75),
 }
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version') not in {'7.54.6','7.54.7','7.54.8'}: fail('site version must preserve Session 3')
+if site.get('version') not in {'7.54.6','7.54.7','7.54.8','7.54.9'}: fail('site version must preserve Session 3')
 if site.get('joSession3Release')!='7.54.6': fail('joSession3Release must be 7.54.6')
 if site.get('joSession3ApplicationRelease')!='7.54.6': fail('joSession3ApplicationRelease must be 7.54.6')
 
@@ -84,7 +84,7 @@ else:
 
 hub=json.loads((ROOT/'data/tournaments/public-hub.json').read_text())
 next_event=hub.get('nextTournament',{})
-if hub.get('release') not in {'7.54.5','7.54.6','7.54.7','7.54.8'}: fail('public tournament hub release must preserve Session 3')
+if hub.get('release') not in {'7.54.5','7.54.6','7.54.7','7.54.8','7.54.9'}: fail('public tournament hub release must preserve Session 3')
 if next_event.get('publicPath')!='tournaments/jo-texas/': fail('Next Tournament does not link to Session 3')
 if next_event.get('status')!='schedule_available': fail('Session 3 must be labeled schedule available')
 hub_js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text()
