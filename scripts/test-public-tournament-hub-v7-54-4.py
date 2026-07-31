@@ -9,7 +9,7 @@ hub=load('data/tournaments/public-hub.json')
 html=(ROOT/'tournaments.html').read_text(encoding='utf-8')
 js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 css=(ROOT/'css/tournament-hub-v7-54-4.css').read_text(encoding='utf-8')
-if site.get('version')!='7.54.9': errors.append('site version must be 7.54.9')
+if site.get('version')!='7.54.10': errors.append('site version must be 7.54.10')
 if site.get('tournamentPublicHubRelease')!='7.54.9': errors.append('tournamentPublicHubRelease must be 7.54.9')
 if site.get('tournamentArchiveExperienceRelease')!='7.54.4': errors.append('tournamentArchiveExperienceRelease must preserve 7.54.4')
 for token in ['Your team. Your tournament.','class="next-tournament-action" id="nextTournamentAction" href="tournaments/jo-texas/"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.9']:

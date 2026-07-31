@@ -1,10 +1,10 @@
-# WPI 7.54.9
+# WPI 7.54.10
 
-2026 KAP7 International archive launch.
+KAP7 International logo identity completion.
 
-- Adds all 18 supplied divisions and 579 games from January 31–February 1, 2026.
-- Publishes 136 verified exact or officially tied placements without inferring unsupported finishes.
-- Preserves complete journeys and records for all 280 division-team entries.
-- Includes 10U–19U Boys, Girls, and Coed divisions from the supplied master file.
-- Connects 254 team entries to verified WPI club artwork; unmatched clubs use the WPI fallback.
-- Preserves one partial 10U Coed score as score unavailable and does not infer a placement from it.
+- Replaces the remaining 26 KAP7 International fallback-logo entries with user-verified club artwork.
+- Adds Marin Water Polo Club, Shadow Water Polo Club, and Santa Barbara Premier logo assets.
+- Maps Chula Vista Premier to CV Premier artwork and St Louis Area Polo to SLAP artwork.
+- Maps OPA to Santa Barbara Premier artwork based on the club's current affiliation.
+- Applies the confirmed existing WPI artwork to the other 19 division-team entries.
+- Preserves all 579 games, 280 team journeys, 136 verified placements, 724 rankings, and 182 club profiles.

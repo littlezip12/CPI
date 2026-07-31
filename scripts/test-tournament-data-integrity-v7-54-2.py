@@ -4,7 +4,7 @@ import json,re,sys
 ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version') not in {'7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9'}: errors.append('site version must preserve 7.54.3 integrity controls')
+if site.get('version') not in {'7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10'}: errors.append('site version must preserve 7.54.3 integrity controls')
 if site.get('tournamentDataIntegrityRelease')!='7.54.3': errors.append('tournamentDataIntegrityRelease must be 7.54.3')
 page=(ROOT/'tournaments/girls-club-championships/index.html').read_text()
 for token in ['Data review in progress','Withheld for accuracy','0 verified placements','WIN #4 - MERIDIAN','official sheet']:

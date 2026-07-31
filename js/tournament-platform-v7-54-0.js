@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RELEASE = "7.54.9";
+  const RELEASE = "7.54.10";
   const FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg";
   const $ = id => document.getElementById(id);
   const state = { registry: null, bundle: null, view: "games", filters: { age: "", gender: "", division: "", team: "", date: "", venue: "", status: "", search: "" } };

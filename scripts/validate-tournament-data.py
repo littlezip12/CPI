@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
 EXPECTED_RELEASE = "7.45.1"
-ALLOWED_REGISTRY_RELEASES = {"7.45.1", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9"}
+ALLOWED_REGISTRY_RELEASES = {"7.45.1", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"}
 ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
 ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
 errors: list[str] = []
@@ -141,7 +141,7 @@ for rel in ["tournaments/jo-boys/app.js", "tournaments/jo-girls/app.js", "tourna
             if (sheet_id, gid) not in registry_pairs:
                 fail(f"Source registry is missing {rel} tab {sheet_id} / {gid}")
 
-if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9"}:
+if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"}:
     fail(f"Normalized manifest release must be {EXPECTED_RELEASE} or 7.54.5")
 datasets = manifest.get("datasets", [])
 if not datasets:

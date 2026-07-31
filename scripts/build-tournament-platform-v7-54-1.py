@@ -15,9 +15,34 @@ ARCHIVE_DIR = ROOT / "data/tournaments/archive"
 CLUBS_PATH = ROOT / "clubs.json"
 RANKINGS_PATH = ROOT / "rankings.json"
 ALIASES_PATH = ROOT / "data/identity/aliases.json"
-RELEASE = "7.54.9"
-BUILD_TIMESTAMP = "2026-07-30T20:45:00-07:00"
+RELEASE = "7.54.10"
+BUILD_TIMESTAMP = "2026-07-30T22:28:00-07:00"
 FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg"
+# User-verified tournament label to logo mappings. These supply artwork without
+# inventing a canonical club profile when the current rankings registry does not
+# contain that club. Team names and tournament journeys remain source-faithful.
+TOURNAMENT_LOGO_ALIASES = {
+    "south bay united": "assets/logos/canonical/south-bay-united.webp",
+    "chula vista premier": "assets/logos/canonical/cv-premier.webp",
+    "san mateo": "assets/logos/canonical/san-mateo.webp",
+    "marin": "assets/logos/canonical/marin.webp",
+    "la city united": "assets/logos/canonical/la-city-united.webp",
+    "palos verdes": "assets/logos/canonical/palos-verdes.webp",
+    "palos verdes a": "assets/logos/canonical/palos-verdes.webp",
+    "palos verdes b": "assets/logos/canonical/palos-verdes.webp",
+    "poway valley": "assets/logos/canonical/poway-valley.webp",
+    "poway valley black": "assets/logos/canonical/poway-valley-black.webp",
+    "boa": "assets/logos/canonical/boa.webp",
+    "boa blue": "assets/logos/canonical/boa.webp",
+    "boa white": "assets/logos/canonical/boa.webp",
+    "lawpc": "assets/logos/canonical/lawpc.webp",
+    "nado": "assets/logos/canonical/nado.webp",
+    "triton gold": "assets/logos/canonical/triton-gold.webp",
+    "st louis area polo": "assets/logos/canonical/slap.webp",
+    "riverside": "assets/logos/canonical/riverside.webp",
+    "shadow men": "assets/logos/canonical/shadow.webp",
+    "opa": "assets/logos/canonical/santa-barbara-premier.webp",
+}
 MIGRATED_EVENT_IDS = ["2026-quiksilver-cup", "2026-boys-futures-super-finals", "2025-evan-cousineau-memorial-cup", "2026-kap7-international", "2026-san-diego-county-cup"]
 PLACEMENT_PATHS = {
     "2026-quiksilver-cup": ROOT / "data/tournaments/quiksilver-cup-2026.json",
@@ -376,15 +401,17 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
         club = club_by_id.get(state.get("clubId")) or {}
         ranked = ranking_by_id.get(state.get("teamId")) or {}
         placement = placement_by_participant.get(pid) or {}
+        display_name = placement.get("name") or state.get("name")
+        logo_override = TOURNAMENT_LOGO_ALIASES.get(normalize(display_name))
         teams.append(
             {
                 **state,
-                "name": placement.get("name") or state.get("name"),
+                "name": display_name,
                 "clubName": club.get("displayName") or placement.get("clubName") or club.get("club"),
                 "clubSlug": club.get("slug"),
                 "teamPage": ranked.get("teamPage") or placement.get("teamPage"),
                 "clubPage": club.get("clubPage") or placement.get("clubPage"),
-                "logo": ranked.get("logo") or club.get("logo") or FALLBACK_LOGO,
+                "logo": ranked.get("logo") or club.get("logo") or logo_override or FALLBACK_LOGO,
                 "primaryColor": ranked.get("primaryColor") or club.get("primaryColor") or "#126dff",
                 "secondaryColor": ranked.get("secondaryColor") or club.get("secondaryColor") or "#f6b700",
                 "rank": ranked.get("postRank"),

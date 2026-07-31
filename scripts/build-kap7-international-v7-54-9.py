@@ -20,6 +20,7 @@ from tournament_pipeline import IdentityResolver, identity_normalize, normalize_
 ROOT = Path(__file__).resolve().parents[1]
 EVENT_ID = "2026-kap7-international"
 RELEASE = "7.54.9"
+PLATFORM_RELEASE = "7.54.10"
 GENERATED_AT = "2026-07-30T20:45:00-07:00"
 SOURCE_DIR = ROOT / "data/tournaments/source" / EVENT_ID
 MASTER = SOURCE_DIR / "master-by-division.csv"
@@ -285,7 +286,7 @@ def upsert_registry_event() -> None:
         "eventStatus": "complete",
         "archivePolicy": "bank_and_review",
         "platformEnabled": True,
-        "platformRelease": RELEASE,
+        "platformRelease": PLATFORM_RELEASE,
         "platformDataPath": f"data/tournaments/platform/events/{EVENT_ID}.json",
         "location": "Orange County, California",
         "sourcePolicy": "User-provided completed results; only verified exact or officially tied placements are published. All other teams retain records and complete journeys.",

@@ -10,7 +10,7 @@ registry=load('data/tournaments/platform/registry.json')
 bundle=load('data/tournaments/platform/events/2026-san-diego-county-cup.json')
 placements=load('data/tournaments/archive/2026-san-diego-county-cup.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.8','7.54.9'}: errors.append('site version must preserve the 7.54.8 San Diego release')
+if site.get('version') not in {'7.54.8','7.54.9','7.54.10'}: errors.append('site version must preserve the 7.54.8 San Diego release')
 if site.get('sanDiegoCountyCupPlatformRelease')!='7.54.8': errors.append('San Diego County Cup release metadata missing')
 expected={'divisionCount':10,'gameCount':710,'finalGameCount':708,'scheduledGameCount':2,'teamCount':266,'placementCount':174,'venueCount':29,'dateCount':3}
 for key,value in expected.items():
@@ -56,7 +56,7 @@ if not hub_event or hub_event.get('year')!=2026 or hub_event.get('seasonOrder')!
 ids_2026=[e.get('id') for e in hub.get('events',[]) if e.get('year')==2026]
 if not ids_2026 or ids_2026[:2]!=['2026-kap7-international','2026-san-diego-county-cup'] or ids_2026[-1]!='2026-junior-olympics': errors.append(f'2026 water polo season order is incorrect: {ids_2026}')
 js=(ROOT/'js/tournament-platform-v7-54-0.js').read_text(encoding='utf-8')
-for token in ['const RELEASE = "7.54.9"','Score unavailable','data-team']:
+for token in ['const RELEASE = "7.54.10"','Score unavailable','data-team']:
  if token not in js: errors.append(f'platform UI missing {token}')
 if len(load('rankings.json'))!=724: errors.append('rankings count changed')
 if len(load('clubs.json'))!=182: errors.append('club count changed')
