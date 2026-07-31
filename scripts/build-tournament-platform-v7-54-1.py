@@ -15,8 +15,8 @@ ARCHIVE_DIR = ROOT / "data/tournaments/archive"
 CLUBS_PATH = ROOT / "clubs.json"
 RANKINGS_PATH = ROOT / "rankings.json"
 ALIASES_PATH = ROOT / "data/identity/aliases.json"
-RELEASE = "7.54.10"
-BUILD_TIMESTAMP = "2026-07-30T22:28:00-07:00"
+RELEASE = "7.54.11"
+BUILD_TIMESTAMP = "2026-07-30T23:10:00-07:00"
 FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg"
 # User-verified tournament label to logo mappings. These supply artwork without
 # inventing a canonical club profile when the current rankings registry does not
@@ -43,9 +43,17 @@ TOURNAMENT_LOGO_ALIASES = {
     "shadow men": "assets/logos/canonical/shadow.webp",
     "opa": "assets/logos/canonical/santa-barbara-premier.webp",
 }
-MIGRATED_EVENT_IDS = ["2026-quiksilver-cup", "2026-boys-futures-super-finals", "2025-evan-cousineau-memorial-cup", "2026-kap7-international", "2026-san-diego-county-cup"]
+MIGRATED_EVENT_IDS = [
+    "2026-quiksilver-cup",
+    "2026-girls-futures-super-finals",
+    "2026-boys-futures-super-finals",
+    "2025-evan-cousineau-memorial-cup",
+    "2026-kap7-international",
+    "2026-san-diego-county-cup",
+]
 PLACEMENT_PATHS = {
     "2026-quiksilver-cup": ROOT / "data/tournaments/quiksilver-cup-2026.json",
+    "2026-girls-futures-super-finals": ARCHIVE_DIR / "2026-girls-futures-super-finals.json",
     "2026-boys-futures-super-finals": ARCHIVE_DIR / "2026-boys-futures-super-finals.json",
     "2025-evan-cousineau-memorial-cup": ARCHIVE_DIR / "2025-evan-cousineau-memorial-cup.json",
     "2026-kap7-international": ARCHIVE_DIR / "2026-kap7-international.json",
@@ -167,7 +175,7 @@ def choose_participant_record(
     )
     # A tournament may enter the same club/team label in multiple competitive divisions.
     # Keep each division entry as its own journey while retaining the shared WPI team/club identity.
-    if event.get("id") in {"2026-san-diego-county-cup", "2026-kap7-international"}:
+    if event.get("id") in {"2026-san-diego-county-cup", "2026-kap7-international", "2026-girls-futures-super-finals"}:
         participant_id = f"{participant_id}--{division['id']}"
     identity_status = "resolved_team" if team_id else "resolved_club_only" if club_id else "unresolved"
     match_type = "platform_placement" if placement else "platform_route_merge"
@@ -527,7 +535,7 @@ def build_registry(source: dict, bundles: dict[str, dict]) -> dict:
         "schemaVersion": 1,
         "release": RELEASE,
         "generatedAt": BUILD_TIMESTAMP,
-        "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, the 2025 Evan Cousineau Memorial Cup, 2026 KAP7 International, and the 2026 San Diego County Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
+        "description": "Shared WPI tournament platform registry. Quiksilver Cup, Girls and Boys Futures Super Finals, the 2025 Evan Cousineau Memorial Cup, 2026 KAP7 International, and the 2026 San Diego County Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
         "platformPath": "tournament.html",
         "schemaPaths": {
             "event": "tournaments/schema/tournament-event.schema.json",

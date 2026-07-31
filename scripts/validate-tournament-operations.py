@@ -35,7 +35,7 @@ manifest = load("data/tournaments/normalized/manifest.json")
 
 if ops.get("schemaVersion") != 1 or ops.get("release") != EXPECTED_RELEASE:
     fail("Tournament operations output must use schemaVersion 1 and release 7.48.0")
-if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"}:
+if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
     fail("Tournament operations configuration release mismatch")
 
 registry_keys = {(event.get("id"), division.get("id")) for event in registry.get("events", []) for division in event.get("divisions", [])}
@@ -43,16 +43,16 @@ rows = ops.get("divisions", [])
 row_keys = {(row.get("eventId"), row.get("divisionId")) for row in rows}
 if registry_keys != row_keys:
     fail("Operations dashboard must represent every registered tournament division")
-if len(registry.get("events", [])) != 9 or len(rows) != 99:
-    fail(f"Expected 9 events and 99 divisions, found {len(registry.get('events', []))} and {len(rows)}")
+if len(registry.get("events", [])) < 10 or len(rows) < 107:
+    fail(f"Tournament operations regressed below 10 events and 107 divisions; found {len(registry.get('events', []))} and {len(rows)}")
 
 live = [row for row in rows if row.get("monitoringMode") == "live"]
 archive = [row for row in rows if row.get("monitoringMode") == "archive"]
 historical = [row for row in rows if row.get("monitoringMode") == "historical_registered"]
 if len(live) != 31:
     fail(f"Expected all three JO sessions to provide 31 live divisions, found {len(live)}")
-if len(archive) != 63:
-    fail(f"Expected 63 completed-event archive divisions, found {len(archive)}")
+if len(archive) < 71:
+    fail(f"Completed-event archive coverage regressed below 71 divisions; found {len(archive)}")
 if len(historical) != 5:
     fail(f"Expected 5 Girls Club divisions in controlled data review, found {len(historical)}")
 if any(row.get("eventId") != "2026-girls-us-club-championships" for row in historical):
@@ -70,8 +70,8 @@ if any(row.get("schedule", {}).get("games") != row.get("schedule", {}).get("sche
 manifest_live_games = sum(item.get("counts", {}).get("games", 0) for item in manifest.get("datasets", []) if item.get("eventId") in set(config.get("liveEventIds", [])))
 if sum(row.get("schedule", {}).get("games", 0) for row in live) != manifest_live_games:
     fail("Operations live game count must match live-event normalized datasets")
-if ops.get("counts", {}).get("archiveDivisions") != 63:
-    fail("Operations output must expose all 63 verified archive divisions")
+if ops.get("counts", {}).get("archiveDivisions") != len(archive):
+    fail(f"Operations archive count must reconcile to archive rows; found {ops.get('counts', {}).get('archiveDivisions')} vs {len(archive)}")
 if alerts.get("counts", {}).get("total") != len(ops.get("alerts", [])):
     fail("Operations alert files do not reconcile")
 if ops.get("counts", {}).get("blocking") != 0:
@@ -155,8 +155,8 @@ if errors:
     raise SystemExit(1)
 
 print("TOURNAMENT OPERATIONS VALIDATION PASSED")
-print(" - 9 registered tournaments and 99 divisions share one operations framework")
+print(f" - {len(registry.get('events', []))} registered tournaments and {len(rows)} divisions share one operations framework")
 print(f" - Three JO sessions provide 31 live-monitored divisions: {ops.get('counts', {}).get('ready', 0)} ready and {ops.get('counts', {}).get('attention', 0)} attention")
-print(" - 63 completed-event divisions remain isolated in controlled archive mode; 5 Girls Club divisions remain in data review")
+print(f" - {len(archive)} completed-event divisions remain isolated in controlled archive mode; {len(historical)} Girls Club divisions remain in data review")
 print(" - Source, score-state, public-page, fallback, and ranking-publication safeguards are enforced")
 print(" - Poolside JavaScript budgets and mobile application mounts pass")

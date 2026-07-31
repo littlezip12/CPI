@@ -16,19 +16,19 @@ rankings = load("rankings.json")
 clubs = load("clubs.json")
 jo = load("data/tournaments/jo-results-2026.json")
 
-if site.get("tournamentPlatformRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"}:
+if site.get("tournamentPlatformRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
     errors.append("tournamentPlatformRelease must preserve 7.54.1")
-if site.get("tournamentRegistryRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"}:
+if site.get("tournamentRegistryRelease") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
     errors.append("tournamentRegistryRelease must preserve 7.54.1")
 if site.get("boysFuturesPlatformRelease") != "7.54.1":
     errors.append("boysFuturesPlatformRelease must remain 7.54.1")
-if site.get("version") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"}:
+if site.get("version") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
     errors.append("site version must preserve the Boys Futures migration")
-if registry.get("release") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"} or len(registry.get("events", [])) != 9:
-    errors.append("platform registry must contain nine registered events")
+if registry.get("release") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"} or len(registry.get("events", [])) != 10:
+    errors.append("platform registry must contain ten registered events")
 platform_live = [event for event in registry.get("events", []) if event.get("migrationStatus") == "platform_live"]
-if {event.get("id") for event in platform_live} != {"2026-quiksilver-cup", "2026-boys-futures-super-finals", "2025-evan-cousineau-memorial-cup", "2026-kap7-international", "2026-san-diego-county-cup"}:
-    errors.append("Quiksilver, Boys Futures, Evan Cousineau, KAP7 International, and San Diego County Cup must be the five platform-live events")
+if {event.get("id") for event in platform_live} != {"2026-quiksilver-cup", "2026-girls-futures-super-finals", "2026-boys-futures-super-finals", "2025-evan-cousineau-memorial-cup", "2026-kap7-international", "2026-san-diego-county-cup"}:
+    errors.append("Quiksilver, Girls and Boys Futures, Evan Cousineau, KAP7 International, and San Diego County Cup must be the six platform-live events")
 
 expected_futures = {
     "divisionCount": 13,
@@ -91,7 +91,7 @@ public_hub = load("data/tournaments/public-hub.json")
 if not any(e.get("id")=="2026-boys-futures-super-finals" and e.get("publicPath")=="tournament.html?event=2026-boys-futures-super-finals" for e in public_hub.get("events", [])):
     errors.append("public tournament archive does not register Boys Futures")
 page = (ROOT / "tournament.html").read_text(encoding="utf-8")
-for token in ["data/tournaments/platform/runtime.js?v=7.54.10", "js/tournament-platform-v7-54-0.js?v=7.54.10"]:
+for token in ["data/tournaments/platform/runtime.js?v=7.54.11", "js/tournament-platform-v7-54-0.js?v=7.54.11"]:
     if token not in page:
         errors.append(f"tournament.html missing {token}")
 
@@ -108,7 +108,7 @@ if errors:
         print(" -", error)
     sys.exit(1)
 print("WPI TOURNAMENT PLATFORM 7.54.1 TEST PASSED")
-print(" - Quiksilver and Boys Futures share one reusable event registry and viewer")
+print(" - Quiksilver and both Futures Super Finals events share one reusable event registry and viewer")
 print(" - Boys Futures includes 13 divisions, 709 finals, 276 clean team journeys, 238 placements, and 27 venues")
 print(" - Bracket-route labels are merged into underlying team records and journeys")
 print(" - Legacy URLs converge on the platform while rankings remain quarantined")

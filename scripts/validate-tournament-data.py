@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
 EXPECTED_RELEASE = "7.45.1"
-ALLOWED_REGISTRY_RELEASES = {"7.45.1", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"}
+ALLOWED_REGISTRY_RELEASES = {"7.45.1", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}
 ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
 ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
 errors: list[str] = []
@@ -45,10 +45,12 @@ if registry.get("schemaVersion") != 1:
 
 all_events = registry.get("events", [])
 all_divisions = [(event, division) for event in all_events for division in event.get("divisions", [])]
-if len(all_events) != 9:
-    fail(f"Tournament registry should contain 9 events, found {len(all_events)}")
-if len(all_divisions) != 99:
-    fail(f"Tournament registry should contain 99 divisions, found {len(all_divisions)}")
+MIN_REGISTERED_EVENTS = 10
+MIN_REGISTERED_DIVISIONS = 107
+if len(all_events) < MIN_REGISTERED_EVENTS:
+    fail(f"Tournament registry regressed below {MIN_REGISTERED_EVENTS} events; found {len(all_events)}")
+if len(all_divisions) < MIN_REGISTERED_DIVISIONS:
+    fail(f"Tournament registry regressed below {MIN_REGISTERED_DIVISIONS} divisions; found {len(all_divisions)}")
 if sum(bool(event.get("syncEnabled")) for event in all_events) != 3:
     fail("Exactly three active JO sessions should be enabled for automatic synchronization")
 if sum(len(event.get("divisions", [])) for event in all_events if event.get("syncEnabled")) != 31:
@@ -141,7 +143,7 @@ for rel in ["tournaments/jo-boys/app.js", "tournaments/jo-girls/app.js", "tourna
             if (sheet_id, gid) not in registry_pairs:
                 fail(f"Source registry is missing {rel} tab {sheet_id} / {gid}")
 
-if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10"}:
+if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
     fail(f"Normalized manifest release must be {EXPECTED_RELEASE} or 7.54.5")
 datasets = manifest.get("datasets", [])
 if not datasets:

@@ -1,0 +1,69 @@
+WPI 7.54.11 PATCH MANIFEST
+==========================
+
+Files: 58
+
+Scope:
+- Adds the 2026 Girls Futures Super Finals source, deterministic builder, platform registration, and regression test.
+- Covers 8 divisions, 374 scored games, 140 division-team journeys, and 128 verified placements.
+- Corrects one exported date formula and three conservative journey-splitting identity variants.
+- Keeps ambiguous or incomplete placement ranges record-only and leaves rankings unchanged.
+
+781247b09d929865e0b6e72660422d55682c91c192b73167640715331f42963e  INSTALL_7.54.11.md
+c38b2a3d905d57c0e81faf1c42baba83360bb74860e01bf8e0135f0898f79de5  SOURCE_REVIEW_2026_GIRLS_FUTURES.md
+a0b282824a4e0d4d8ca974f6b20211146b940694c2e65b1103b7290d0a512eb1  VERSION.md
+b52ac04849c2db992733b4f022d32006d5c412265be36073442e4f5f21e1b63e  assets/logos/canonical/marin.webp
+d5a332d7c712bf85f8f3e571b0ed582edc67408c9f78218c9fcf22bb9a7860dd  assets/logos/canonical/santa-barbara-premier.webp
+2fb07faaa291d6cf4d562ff0ed971e33fb61f89849e7cadb72dbd22c61303499  assets/logos/canonical/shadow.webp
+8b3dd1b66eb793ea7dbbc81d006409245a3fecbebadc1e2fc01056d01bbfac83  config/site-release.json
+5ba807a30162c68e255f5eefbdc8005482f6e5fcbca60273a6425b3f6172e719  data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json
+c3302bcd1b898bfc944c33d8069b742620b56f1c71292aa194f865edf956a810  data/tournaments/platform/events/2026-boys-futures-super-finals.json
+4292862883d23d52279212869ffd378e9a1062ad8160689becb07d8bc534ca7f  data/tournaments/platform/events/2026-kap7-international.json
+2abe97ae906e75a37d4c0905779057de4210ce12e87824e6cbe97e1efb4d8aaa  data/tournaments/platform/events/2026-quiksilver-cup.json
+b5afb31297d629be6c005020817efcadc484bf2340774fe9e756cc123118abe1  data/tournaments/platform/events/2026-san-diego-county-cup.json
+b93065a15a68e0cf8196d6dca3f1ed297544105340b36b38a3609dbb1452288d  data/tournaments/platform/registry.json
+1fac8840c26ac4a31e7561dbefaea03bbf8ece492464f1eaa8737127dae60dad  data/tournaments/platform/runtime.js
+05b89e6d90ba3a16c8cf7b859072df1fcee54cc10ab5ee442a22a7da42548765  data/tournaments/registry.json
+d2a25d75142d92fc03d4bd16ac5d909892a7c36ab4aa06f2b02cf06520c66e60  data/tournaments/source/2026-girls-futures-super-finals/master-by-division.csv
+6d1275ae273562637e80b4783feb20d6fa97f440d637b7f461dc40681a0dadd3  js/tournament-platform-v7-54-0.js
+ba4f27d5fd384d7a23c7169a64b749e9ecc70101417843529474e5a474931a9f  release-check
+b16e8eedccd46f2abf112d9e74390524fd2cece60aff30c99111b6fe63217bd5  scripts/build-girls-futures-super-finals-v7-54-11.py
+a59327a40d6e5985a274ab6ec06cbea72e4e777ba5df7ffc60447c89bd3313ae  scripts/build-kap7-international-v7-54-9.py
+4ec29c45cff6d55fc2e7d6cf06f84b13c3db772985656fefbd0190c4778adc3d  scripts/build-tournament-platform-v7-54-1.py
+63f494dcda32bae5c8afa63b5a48db42b75869099c852c7e947669efb5512322  scripts/test-boys-post-jo-rankings-v7-52-0.py
+0af89ea6ed05b13f62e82e89ad6f15b48537a5ec4dd3c2ca8aebe49e41f0cc7c  scripts/test-brand-teams-section-landing-v7-53-4.py
+61bbd6cd406da1814b964a028d30bc5265138d1031c4ffaf9a6d38abd3338043  scripts/test-club-family-cleanup-v7-52-12.py
+92e70f06737787832c1dfb6e17fbd4033eb7fe451c0d70e6d18bc0c9886dac90  scripts/test-club-locations-v7-52-5.py
+7b86347f754dd088d33572d6eb3ee044f6f978dd3ca8d7a47377f1ea59cf9737  scripts/test-club-logos-v7-52-6.py
+5a4211d0e835b9b4167ac04e0da2ba6e5b794f307162ec0c58e90ec190566ea3  scripts/test-club-profile-experience-v7-53-0.py
+6e1e2f2a79327f9ff1f876541e31924741839e48f0c365c4bea86c704ae7c9eb  scripts/test-club-websites-v7-52-14.py
+cc4df92ccbe664d7776df1f4c1b78e6821ce0eb1dd3c2c41d564f3e8b4ecfb46  scripts/test-club-websites-v7-52-16.py
+d16a7d2be91f36381dc6becfa992a883b9e557aad130a0659fd3c4902108334f  scripts/test-evan-cousineau-v7-54-7.py
+65bd979fe3640850cc627f6dac1885e71b8f2dbd579434563d12bd304130635e  scripts/test-girls-futures-super-finals-v7-54-11.py
+e2f759823ee1ed7784a81a576977e83864949aaade72b3e4ec7669fb4c7fb94a  scripts/test-girls-post-jo-rankings-v7-52-2.py
+b4816e5cbea9fd0bdb762b283d88e17c7fd77175e849a79ae644bcfbce1fec66  scripts/test-jo-boys-mobile-reliability-v7-51-6.js
+7192bc176d62d577ab56b61cfdb56dd21cb68bf14f82af351ee02d07d3619184  scripts/test-jo-logo-delivery-v7-52-9.py
+ce8f8349c0943d357a08ca85fe7f51ffbc2af538fb3c8aa0eaade39b7a503165  scripts/test-jo-profile-bridge-v7-52-11.py
+5918f664e2254919000218688ca7283793cd1f911dc3b433afa6178ff261546f  scripts/test-jo-results-browser-v7-52-1.py
+026b0f73f2020c443a91d2991c6fc850c49228ce01a0aadfa180e5dd30755d23  scripts/test-jo-results-links-v7-52-7.py
+4876c14d01c85fa842981405129c58fbec9edefd7b3df3aaf4c9db6bdf6756bf  scripts/test-jo-session-3-v7-54-5.py
+79fa181fd00fa05dd8804c6cb83b2c7f46bbc6f85d6621e5a4c57ebf81d15b85  scripts/test-kap7-international-v7-54-9.py
+a35ba614c2bb7d9c385f68d23b9a095bbe44d4ef40119177165816f8806a960f  scripts/test-kap7-logo-mapping-v7-54-10.py
+4791d18e5d0b530c660d5108513d89c1336e4250ad61289f529b438520dfa41d  scripts/test-kern-skip-separation-v7-52-13.py
+d4cf7847f08586f91c907536ab8935653a93d13705f87a31161430fc4c6c3ae1  scripts/test-navigation-homepage-v7-53-3.py
+29c8e4b3c478055f9262dca3a8c48f224b58d896b93198a420592715c0d450a2  scripts/test-public-tournament-hub-v7-54-4.py
+189df2a3298ac0e1d12b645bc5dfb56813a4816d66a899946e46365141d30f49  scripts/test-release-integrity-v7-52-15.py
+a275dfcbc82d7317f1ca6150b280fc80b25cbce74c4446f319b4ce64cf0b488e  scripts/test-san-diego-county-cup-v7-54-8.py
+b6aa3222b93f9448ca5ab569c191a6d5a5ffe622a1783247bd7ce0fa4b3515e7  scripts/test-team-directory-logos-v7-53-6.js
+510bb0fee3a8876b369f110e288968852f60f54335044947d44b3aa4b1e10560  scripts/test-team-profile-experience-v7-53-1.py
+e2fb4819823d9d660ba395fcf17a29329e73251169cad4ff579b8a22fca498c8  scripts/test-tournament-data-integrity-v7-54-2.py
+e94e111565946c3b15bc95476ff211c1f58bfde4a4df618372507af5b2dddb81  scripts/test-tournament-platform-v7-54-0.js
+ee9b4354fb4cc95fac5a8a99231b10aa6c56bf7ff0577b889798f4325ecf6d06  scripts/test-tournament-platform-v7-54-0.py
+df20b5133c7767c6306d5c34befb5855490e77f145fb6c38a90f0724d2fde5f7  scripts/test-tournament-platform-v7-54-1.js
+2dea2e415d12f61b82c7c4f21f0504253746a1243d0d6e64f65e7db2a2a186fc  scripts/test-tournament-platform-v7-54-1.py
+daf39cca2d9f09f3a7777c956d421fc1af2e6c3f91b37f992d36e1c16a6fc9d2  scripts/test-wpi-homepage-v7-52-4.py
+da3045c260833a8a6e5244ef33341a4123a05cf1b3898dc9daae2599e33cc2be  scripts/test-wpi-universal-shell-v7-52-3.py
+6b313fe39abc421cbc9746c9175caef3b9978d328a588075142e01b808549896  scripts/validate-tournament-data.py
+b343995567490cfc354a2a23be2bf5e2a01d0c72b6c813c53c80c8fb76f4e75e  scripts/validate-tournament-identity-cleanup.py
+70946e899eaf41a8af74c86dc023c294837dff83d129bbddb113565bf755170b  scripts/validate-tournament-operations.py
+6e92ecaac7de3be386065f78ae7a9e4e9009aadb462018887d22f3f2f88034ca  tournament.html

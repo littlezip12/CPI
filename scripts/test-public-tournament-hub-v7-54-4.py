@@ -9,8 +9,8 @@ hub=load('data/tournaments/public-hub.json')
 html=(ROOT/'tournaments.html').read_text(encoding='utf-8')
 js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 css=(ROOT/'css/tournament-hub-v7-54-4.css').read_text(encoding='utf-8')
-if site.get('version')!='7.54.10': errors.append('site version must be 7.54.10')
-if site.get('tournamentPublicHubRelease')!='7.54.9': errors.append('tournamentPublicHubRelease must be 7.54.9')
+if site.get('version')!='7.54.11': errors.append('site version must be 7.54.11')
+if site.get('tournamentPublicHubRelease')!='7.54.11': errors.append('tournamentPublicHubRelease must be 7.54.11')
 if site.get('tournamentArchiveExperienceRelease')!='7.54.4': errors.append('tournamentArchiveExperienceRelease must preserve 7.54.4')
 for token in ['Your team. Your tournament.','class="next-tournament-action" id="nextTournamentAction" href="tournaments/jo-texas/"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.9']:
     if token not in html: errors.append(f'tournaments.html missing {token}')
@@ -30,8 +30,11 @@ if 'next.publicPath' not in js: errors.append('hero button does not prioritize a
 if hub.get('years')!=[2026,2025,2024]: errors.append('archive years must be 2026, 2025, 2024')
 events=hub.get('events',[])
 ids=[e.get('id') for e in events]
-if ids!=['2026-kap7-international','2026-san-diego-county-cup','2026-boys-futures-super-finals','2026-quiksilver-cup','2026-junior-olympics','2025-evan-cousineau-memorial-cup']:
-    errors.append(f'public archive event order is incorrect: {ids}')
+expected_ids={'2026-kap7-international','2026-san-diego-county-cup','2026-girls-futures-super-finals','2026-boys-futures-super-finals','2026-quiksilver-cup','2026-junior-olympics','2025-evan-cousineau-memorial-cup'}
+if set(ids)!=expected_ids:
+    errors.append(f'public archive event coverage is incorrect: {ids}')
+if '2026-girls-futures-super-finals' in ids and '2026-boys-futures-super-finals' in ids and ids.index('2026-girls-futures-super-finals')>ids.index('2026-boys-futures-super-finals'):
+    errors.append(f'Girls Futures must precede Boys Futures: {ids}')
 events_2026=[e for e in events if e.get('year')==2026]; orders=[e.get('seasonOrder') for e in events_2026]
 if orders!=sorted(orders) or events_2026[-1].get('id')!='2026-junior-olympics': errors.append('Junior Olympics must be last in the 2026 water polo season order')
 if not any(e.get('id')=='2025-evan-cousineau-memorial-cup' and e.get('seasonOrder')==10 for e in events): errors.append('Evan Cousineau must be first in the 2025 archive')

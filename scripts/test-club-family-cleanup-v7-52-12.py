@@ -10,7 +10,7 @@ site=load('config/site-release.json')
 clubs=load('clubs.json'); rankings=load('rankings.json'); identity=load('data/identity/index.json')
 bridge=load('data/tournaments/jo-profile-bridge.json'); audit=load('data/identity/club-family-cleanup-7.52.12.json')
 by_slug={c.get('slug'):c for c in clubs}
-if site.get('version') not in {'7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10'}: fail('site version must preserve the 7.52.12 cleanup')
+if site.get('version') not in {'7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'}: fail('site version must preserve the 7.52.12 cleanup')
 if len(clubs)!=182: fail(f'expected 182 unique public clubs, found {len(clubs)}')
 for stale in ['clovis-red','vnited']:
     if stale in by_slug: fail(f'duplicate public club remains: {stale}')

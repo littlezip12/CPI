@@ -1,0 +1,12 @@
+WPI 7.54.11 — Girls Futures Archive Validator Stabilization
+
+Modified files:
+- scripts/validate-tournament-data.py
+- scripts/validate-tournament-operations.py
+- scripts/validate-tournament-archive.py
+- scripts/test-tournament-archive-ui.js
+
+Purpose:
+- Replace duplicated exact-count assertions with registry reconciliation and verified regression floors.
+- Register Girls Futures Super Finals in the archive UI regression test.
+- Preserve all tournament data, rankings, identities, logos, and public pages unchanged.
