@@ -1,0 +1,3792 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-san-diego-county-cup",
+    "name": "2026 San Diego County Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "14u-boys-division-3",
+    "label": "14U Boys Division 3",
+    "season": "2026",
+    "ageGroup": "14U",
+    "gender": "Boys",
+    "division": "Division 3",
+    "divisionTier": "D3",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-san-diego-county-cup",
+    "gid": "14u-boys-division-3",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-san-diego-county-cup/14u-boys-division-3.csv",
+    "fetchedAt": "2026-07-30T20:30:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "21e80c46184706623ce38c8ec19d15c7c8fa4a840b03549c5d9c1397a3bbea04",
+    "rowCount": 41
+  },
+  "counts": {
+    "games": 40,
+    "finalGames": 40,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 80,
+    "resolvedTeamParticipants": 15,
+    "unresolvedTeamParticipants": 65,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 65
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-1",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-1",
+      "sourceGameNumber": 1,
+      "sourceRow": 2,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "VALHALLA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2 - Crown City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "Crown City",
+          "participantId": "tournament-team-2026-14u-boys-crown-city",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "B3 - Stanford White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "Stanford White",
+          "participantId": "tournament-team-2026-14u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 22,
+        "whiteRaw": "4",
+        "darkRaw": "22",
+        "whiteRegulation": 4,
+        "darkRegulation": 22,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-stanford-white",
+        "winnerTeamId": null,
+        "winnerName": "Stanford White",
+        "loserParticipantId": "tournament-team-2026-14u-boys-crown-city",
+        "loserTeamId": null,
+        "loserName": "Crown City"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B3 - Stanford White",
+          "raw": "B3 - Stanford White"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 22,
+          "raw": "22"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-2",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-2",
+      "sourceGameNumber": 2,
+      "sourceRow": 3,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "5:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "VALHALLA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1 - NSD Stars",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "NSD Stars",
+          "participantId": "tournament-team-2026-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B4 - Rose Bowl Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "Rose Bowl Black",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-nsd-stars",
+        "winnerTeamId": null,
+        "winnerName": "NSD Stars",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+        "loserTeamId": null,
+        "loserName": "Rose Bowl Black"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B4 - Rose Bowl Black",
+          "raw": "B4 - Rose Bowl Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-3",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-3",
+      "sourceGameNumber": 3,
+      "sourceRow": 4,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "VALHALLA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2 - CDM White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "CDM White",
+          "participantId": "tournament-team-2026-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3 - ECA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "ECA B",
+          "participantId": "tournament-team-2026-14u-boys-eca-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3",
+        "whiteRegulation": 10,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cdm-white",
+        "winnerTeamId": null,
+        "winnerName": "CDM White",
+        "loserParticipantId": "tournament-team-2026-14u-boys-eca-b",
+        "loserTeamId": null,
+        "loserName": "ECA B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C3 - ECA B",
+          "raw": "C3 - ECA B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-4",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-4",
+      "sourceGameNumber": 4,
+      "sourceRow": 5,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "VALHALLA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2 - LACUWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "LACUWP",
+          "participantId": "tournament-team-2026-14u-boys-lacuwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D3 - Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "Santa Barbara",
+          "participantId": "team-2026-14u-boys-santa-barbara-a",
+          "teamId": "team-2026-14u-boys-santa-barbara-a",
+          "clubId": "club-santa-barbara",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lacuwp",
+        "winnerTeamId": null,
+        "winnerName": "LACUWP",
+        "loserParticipantId": "team-2026-14u-boys-santa-barbara-a",
+        "loserTeamId": "team-2026-14u-boys-santa-barbara-a",
+        "loserName": "Santa Barbara"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D3 - Santa Barbara",
+          "raw": "D3 - Santa Barbara"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-6",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-6",
+      "sourceGameNumber": 6,
+      "sourceRow": 6,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "7:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2 - NGen",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "NGen",
+          "participantId": "tournament-team-2026-14u-boys-ngen",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3 - San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 16,
+        "whiteRaw": "6",
+        "darkRaw": "16",
+        "whiteRegulation": 6,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Black",
+        "loserParticipantId": "tournament-team-2026-14u-boys-ngen",
+        "loserTeamId": null,
+        "loserName": "NGen"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A3 - San Clemente Black",
+          "raw": "A3 - San Clemente Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 16,
+          "raw": "16"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-8",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-8",
+      "sourceGameNumber": 8,
+      "sourceRow": 7,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "7:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1 - SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-14u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C4 - Sharks",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4",
+          "displayName": "Sharks",
+          "participantId": "team-2026-14u-boys-sharks-a",
+          "teamId": "team-2026-14u-boys-sharks-a",
+          "clubId": "club-sharks",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 12,
+        "whiteRaw": "3",
+        "darkRaw": "12",
+        "whiteRegulation": 3,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-sharks-a",
+        "winnerTeamId": "team-2026-14u-boys-sharks-a",
+        "winnerName": "Sharks",
+        "loserParticipantId": "tournament-team-2026-14u-boys-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C4 - Sharks",
+          "raw": "C4 - Sharks"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 12,
+          "raw": "12"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-5",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-5",
+      "sourceGameNumber": 5,
+      "sourceRow": 8,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "8:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "VALHALLA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1 - Norcal Aquatics B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "NorCal B",
+          "participantId": "team-2026-14u-boys-norcal-b",
+          "teamId": "team-2026-14u-boys-norcal-b",
+          "clubId": "club-norcal",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "D4 - Trilogy",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D4",
+          "displayName": "Trilogy",
+          "participantId": "tournament-team-2026-14u-boys-trilogy",
+          "teamId": null,
+          "clubId": "club-trilogy",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 3,
+        "whiteRaw": "16",
+        "darkRaw": "3",
+        "whiteRegulation": 16,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-norcal-b",
+        "winnerTeamId": "team-2026-14u-boys-norcal-b",
+        "winnerName": "NorCal B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trilogy",
+        "loserTeamId": null,
+        "loserName": "Trilogy"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D4 - Trilogy",
+          "raw": "D4 - Trilogy"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-7",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-7",
+      "sourceGameNumber": 7,
+      "sourceRow": 9,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "8:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1 - Loyola",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "Loyola",
+          "participantId": "tournament-team-2026-14u-boys-loyola",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A4 - Valley United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "Valley United",
+          "participantId": "tournament-team-2026-14u-boys-valley-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 5,
+        "whiteRaw": "16",
+        "darkRaw": "5",
+        "whiteRegulation": 16,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-loyola",
+        "winnerTeamId": null,
+        "winnerName": "Loyola",
+        "loserParticipantId": "tournament-team-2026-14u-boys-valley-united",
+        "loserTeamId": null,
+        "loserName": "Valley United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A4 - Valley United",
+          "raw": "A4 - Valley United"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-12",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-12",
+      "sourceGameNumber": 12,
+      "sourceRow": 10,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1 - Norcal Aquatics B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "NorCal B",
+          "participantId": "team-2026-14u-boys-norcal-b",
+          "teamId": "team-2026-14u-boys-norcal-b",
+          "clubId": "club-norcal",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "D2 - LACUWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "LACUWP",
+          "participantId": "tournament-team-2026-14u-boys-lacuwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 5,
+        "whiteRaw": "3",
+        "darkRaw": "5",
+        "whiteRegulation": 3,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lacuwp",
+        "winnerTeamId": null,
+        "winnerName": "LACUWP",
+        "loserParticipantId": "team-2026-14u-boys-norcal-b",
+        "loserTeamId": "team-2026-14u-boys-norcal-b",
+        "loserName": "NorCal B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D2 - LACUWP",
+          "raw": "D2 - LACUWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-13",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-13",
+      "sourceGameNumber": 13,
+      "sourceRow": 11,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A4 - Valley United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A4",
+          "displayName": "Valley United",
+          "participantId": "tournament-team-2026-14u-boys-valley-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A2 - NGen",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "NGen",
+          "participantId": "tournament-team-2026-14u-boys-ngen",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 8,
+        "whiteRaw": "18",
+        "darkRaw": "8",
+        "whiteRegulation": 18,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-valley-united",
+        "winnerTeamId": null,
+        "winnerName": "Valley United",
+        "loserParticipantId": "tournament-team-2026-14u-boys-ngen",
+        "loserTeamId": null,
+        "loserName": "NGen"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A2 - NGen",
+          "raw": "A2 - NGen"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 8,
+          "raw": "8"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-14",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-14",
+      "sourceGameNumber": 14,
+      "sourceRow": 12,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1 - SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-14u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C3 - ECA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "ECA B",
+          "participantId": "tournament-team-2026-14u-boys-eca-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 4,
+        "whiteRaw": "3",
+        "darkRaw": "4",
+        "whiteRegulation": 3,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-eca-b",
+        "winnerTeamId": null,
+        "winnerName": "ECA B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C3 - ECA B",
+          "raw": "C3 - ECA B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-15",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-15",
+      "sourceGameNumber": 15,
+      "sourceRow": 13,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B4 - Rose Bowl Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B4",
+          "displayName": "Rose Bowl Black",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B2 - Crown City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "Crown City",
+          "participantId": "tournament-team-2026-14u-boys-crown-city",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 6,
+        "whiteRaw": "13",
+        "darkRaw": "6",
+        "whiteRegulation": 13,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+        "winnerTeamId": null,
+        "winnerName": "Rose Bowl Black",
+        "loserParticipantId": "tournament-team-2026-14u-boys-crown-city",
+        "loserTeamId": null,
+        "loserName": "Crown City"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B2 - Crown City",
+          "raw": "B2 - Crown City"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-25",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-25",
+      "sourceGameNumber": 25,
+      "sourceRow": 14,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1 - San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E2 - Sharks",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "Sharks",
+          "participantId": "team-2026-14u-boys-sharks-a",
+          "teamId": "team-2026-14u-boys-sharks-a",
+          "clubId": "club-sharks",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 3,
+        "whiteRaw": "11",
+        "darkRaw": "3",
+        "whiteRegulation": 11,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Black",
+        "loserParticipantId": "team-2026-14u-boys-sharks-a",
+        "loserTeamId": "team-2026-14u-boys-sharks-a",
+        "loserName": "Sharks"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "E2 - Sharks",
+          "raw": "E2 - Sharks"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-16",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-16",
+      "sourceGameNumber": 16,
+      "sourceRow": 15,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D4 - Trilogy",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D4",
+          "displayName": "Trilogy",
+          "participantId": "tournament-team-2026-14u-boys-trilogy",
+          "teamId": null,
+          "clubId": "club-trilogy",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3 - Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "Santa Barbara",
+          "participantId": "team-2026-14u-boys-santa-barbara-a",
+          "teamId": "team-2026-14u-boys-santa-barbara-a",
+          "clubId": "club-santa-barbara",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 15,
+        "whiteRaw": "7",
+        "darkRaw": "15",
+        "whiteRegulation": 7,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-santa-barbara-a",
+        "winnerTeamId": "team-2026-14u-boys-santa-barbara-a",
+        "winnerName": "Santa Barbara",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trilogy",
+        "loserTeamId": null,
+        "loserName": "Trilogy"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D3 - Santa Barbara",
+          "raw": "D3 - Santa Barbara"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 15,
+          "raw": "15"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-26",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-26",
+      "sourceGameNumber": 26,
+      "sourceRow": 16,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1 - LACUWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1",
+          "displayName": "LACUWP",
+          "participantId": "tournament-team-2026-14u-boys-lacuwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "H2 - Stanford White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2",
+          "displayName": "Stanford White",
+          "participantId": "tournament-team-2026-14u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 2,
+        "whiteRaw": "10",
+        "darkRaw": "2",
+        "whiteRegulation": 10,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lacuwp",
+        "winnerTeamId": null,
+        "winnerName": "LACUWP",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-white",
+        "loserTeamId": null,
+        "loserName": "Stanford White"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "H2 - Stanford White",
+          "raw": "H2 - Stanford White"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-17",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-17",
+      "sourceGameNumber": 17,
+      "sourceRow": 17,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket",
+      "stageDisplay": "I bracket",
+      "stageMeta": {
+        "raw": "I bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1 - Valley United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1",
+          "displayName": "Valley United",
+          "participantId": "tournament-team-2026-14u-boys-valley-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "I2 - SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-14u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 7,
+        "whiteRaw": "14",
+        "darkRaw": "7",
+        "whiteRegulation": 14,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-valley-united",
+        "winnerTeamId": null,
+        "winnerName": "Valley United",
+        "loserParticipantId": "tournament-team-2026-14u-boys-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "I2 - SET",
+          "raw": "I2 - SET"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 7,
+          "raw": "7"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-27",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-27",
+      "sourceGameNumber": 27,
+      "sourceRow": 18,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1 - NSD Stars",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1",
+          "displayName": "NSD Stars",
+          "participantId": "tournament-team-2026-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "F2 - Norcal Aquatics B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2",
+          "displayName": "NorCal B",
+          "participantId": "team-2026-14u-boys-norcal-b",
+          "teamId": "team-2026-14u-boys-norcal-b",
+          "clubId": "club-norcal",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 3,
+        "whiteRaw": "10",
+        "darkRaw": "3",
+        "whiteRegulation": 10,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-nsd-stars",
+        "winnerTeamId": null,
+        "winnerName": "NSD Stars",
+        "loserParticipantId": "team-2026-14u-boys-norcal-b",
+        "loserTeamId": "team-2026-14u-boys-norcal-b",
+        "loserName": "NorCal B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "F2 - Norcal Aquatics B",
+          "raw": "F2 - Norcal Aquatics B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-18",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-18",
+      "sourceGameNumber": 18,
+      "sourceRow": 19,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1 - ECA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1",
+          "displayName": "ECA B",
+          "participantId": "tournament-team-2026-14u-boys-eca-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "K2 - NGen",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2",
+          "displayName": "NGen",
+          "participantId": "tournament-team-2026-14u-boys-ngen",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 9,
+        "whiteRaw": "5",
+        "darkRaw": "9",
+        "whiteRegulation": 5,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-ngen",
+        "winnerTeamId": null,
+        "winnerName": "NGen",
+        "loserParticipantId": "tournament-team-2026-14u-boys-eca-b",
+        "loserTeamId": null,
+        "loserName": "ECA B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "K2 - NGen",
+          "raw": "K2 - NGen"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 9,
+          "raw": "9"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-28",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-28",
+      "sourceGameNumber": 28,
+      "sourceRow": 20,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1 - CDM White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "CDM White",
+          "participantId": "tournament-team-2026-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G2 - Loyola",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "Loyola",
+          "participantId": "tournament-team-2026-14u-boys-loyola",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 2,
+        "whiteRaw": "11",
+        "darkRaw": "2",
+        "whiteRegulation": 11,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cdm-white",
+        "winnerTeamId": null,
+        "winnerName": "CDM White",
+        "loserParticipantId": "tournament-team-2026-14u-boys-loyola",
+        "loserTeamId": null,
+        "loserName": "Loyola"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "G2 - Loyola",
+          "raw": "G2 - Loyola"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-19",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-19",
+      "sourceGameNumber": 19,
+      "sourceRow": 21,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1 - Rose Bowl Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1",
+          "displayName": "Rose Bowl Black",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J2 - Trilogy",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2",
+          "displayName": "Trilogy",
+          "participantId": "tournament-team-2026-14u-boys-trilogy",
+          "teamId": null,
+          "clubId": "club-trilogy",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 6,
+        "whiteRaw": "4",
+        "darkRaw": "6",
+        "whiteRegulation": 4,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-trilogy",
+        "winnerTeamId": null,
+        "winnerName": "Trilogy",
+        "loserParticipantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+        "loserTeamId": null,
+        "loserName": "Rose Bowl Black"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "J2 - Trilogy",
+          "raw": "J2 - Trilogy"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-20",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-20",
+      "sourceGameNumber": 20,
+      "sourceRow": 22,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket",
+      "stageDisplay": "L bracket",
+      "stageMeta": {
+        "raw": "L bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1 - Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1",
+          "displayName": "Santa Barbara",
+          "participantId": "team-2026-14u-boys-santa-barbara-a",
+          "teamId": "team-2026-14u-boys-santa-barbara-a",
+          "clubId": "club-santa-barbara",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "L2 - Crown City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2",
+          "displayName": "Crown City",
+          "participantId": "tournament-team-2026-14u-boys-crown-city",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 2,
+        "whiteRaw": "16",
+        "darkRaw": "2",
+        "whiteRegulation": 16,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-santa-barbara-a",
+        "winnerTeamId": "team-2026-14u-boys-santa-barbara-a",
+        "winnerName": "Santa Barbara",
+        "loserParticipantId": "tournament-team-2026-14u-boys-crown-city",
+        "loserTeamId": null,
+        "loserName": "Crown City"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "L2 - Crown City",
+          "raw": "L2 - Crown City"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-29",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-29",
+      "sourceGameNumber": 29,
+      "sourceRow": 23,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Tournament game",
+      "stageDisplay": "Tournament game",
+      "stageMeta": {
+        "raw": "Tournament game",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Tournament game",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Tournament game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Sharks",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Sharks",
+          "participantId": "team-2026-14u-boys-sharks-a",
+          "teamId": "team-2026-14u-boys-sharks-a",
+          "clubId": "club-sharks",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "Stanford White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Stanford White",
+          "participantId": "tournament-team-2026-14u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-sharks-a",
+        "winnerTeamId": "team-2026-14u-boys-sharks-a",
+        "winnerName": "Sharks",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-white",
+        "loserTeamId": null,
+        "loserName": "Stanford White"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Stanford White",
+          "raw": "Stanford White"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 7,
+          "raw": "7"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-30",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-30",
+      "sourceGameNumber": 30,
+      "sourceRow": 24,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Tournament game",
+      "stageDisplay": "Tournament game",
+      "stageMeta": {
+        "raw": "Tournament game",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Tournament game",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Tournament game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Norcal Aquatics B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "NorCal B",
+          "participantId": "team-2026-14u-boys-norcal-b",
+          "teamId": "team-2026-14u-boys-norcal-b",
+          "clubId": "club-norcal",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "Loyola",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Loyola",
+          "participantId": "tournament-team-2026-14u-boys-loyola",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 2,
+        "whiteRaw": "11",
+        "darkRaw": "2",
+        "whiteRegulation": 11,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-norcal-b",
+        "winnerTeamId": "team-2026-14u-boys-norcal-b",
+        "winnerName": "NorCal B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-loyola",
+        "loserTeamId": null,
+        "loserName": "Loyola"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Loyola",
+          "raw": "Loyola"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-21",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-21",
+      "sourceGameNumber": 21,
+      "sourceRow": 25,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Tournament game",
+      "stageDisplay": "Tournament game",
+      "stageMeta": {
+        "raw": "Tournament game",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Tournament game",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Tournament game"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Rose Bowl Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Rose Bowl Black",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "ECA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ECA B",
+          "participantId": "tournament-team-2026-14u-boys-eca-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 3,
+        "whiteRaw": "12",
+        "darkRaw": "3",
+        "whiteRegulation": 12,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+        "winnerTeamId": null,
+        "winnerName": "Rose Bowl Black",
+        "loserParticipantId": "tournament-team-2026-14u-boys-eca-b",
+        "loserTeamId": null,
+        "loserName": "ECA B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ECA B",
+          "raw": "ECA B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-31",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-31",
+      "sourceGameNumber": 31,
+      "sourceRow": 26,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Semifinal",
+      "stageDisplay": "Semifinal",
+      "stageMeta": {
+        "raw": "Semifinal",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Semifinal"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "LACUWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "LACUWP",
+          "participantId": "tournament-team-2026-14u-boys-lacuwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 10,
+        "whiteRaw": "3",
+        "darkRaw": "10",
+        "whiteRegulation": 3,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lacuwp",
+        "winnerTeamId": null,
+        "winnerName": "LACUWP",
+        "loserParticipantId": "tournament-team-2026-14u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "San Clemente Black"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "LACUWP",
+          "raw": "LACUWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-22",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-22",
+      "sourceGameNumber": 22,
+      "sourceRow": 27,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "6:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Tournament game",
+      "stageDisplay": "Tournament game",
+      "stageMeta": {
+        "raw": "Tournament game",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Tournament game",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Tournament game"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Trilogy",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Trilogy",
+          "participantId": "tournament-team-2026-14u-boys-trilogy",
+          "teamId": null,
+          "clubId": "club-trilogy",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "NGen",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "NGen",
+          "participantId": "tournament-team-2026-14u-boys-ngen",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 11,
+        "whiteRaw": "8",
+        "darkRaw": "11",
+        "whiteRegulation": 8,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-ngen",
+        "winnerTeamId": null,
+        "winnerName": "NGen",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trilogy",
+        "loserTeamId": null,
+        "loserName": "Trilogy"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "NGen",
+          "raw": "NGen"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 11,
+          "raw": "11"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-32",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-32",
+      "sourceGameNumber": 32,
+      "sourceRow": 28,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "6:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Semifinal",
+      "stageDisplay": "Semifinal",
+      "stageMeta": {
+        "raw": "Semifinal",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Semifinal"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "NSD Stars",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "NSD Stars",
+          "participantId": "tournament-team-2026-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "CDM White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "CDM White",
+          "participantId": "tournament-team-2026-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 4,
+        "whiteRaw": "7",
+        "darkRaw": "4",
+        "whiteRegulation": 7,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-nsd-stars",
+        "winnerTeamId": null,
+        "winnerName": "NSD Stars",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cdm-white",
+        "loserTeamId": null,
+        "loserName": "CDM White"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "CDM White",
+          "raw": "CDM White"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-23",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-23",
+      "sourceGameNumber": 23,
+      "sourceRow": 29,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "7:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Tournament game",
+      "stageDisplay": "Tournament game",
+      "stageMeta": {
+        "raw": "Tournament game",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Tournament game",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Tournament game"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-14u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "Crown City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Crown City",
+          "participantId": "tournament-team-2026-14u-boys-crown-city",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5",
+        "whiteRegulation": 11,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-set",
+        "winnerTeamId": null,
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2026-14u-boys-crown-city",
+        "loserTeamId": null,
+        "loserName": "Crown City"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Crown City",
+          "raw": "Crown City"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-9",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-9",
+      "sourceGameNumber": 9,
+      "sourceRow": 30,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C4 - Sharks",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4",
+          "displayName": "Sharks",
+          "participantId": "team-2026-14u-boys-sharks-a",
+          "teamId": "team-2026-14u-boys-sharks-a",
+          "clubId": "club-sharks",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C2 - CDM White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "CDM White",
+          "participantId": "tournament-team-2026-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 8,
+        "whiteRaw": "4",
+        "darkRaw": "8",
+        "whiteRegulation": 4,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-cdm-white",
+        "winnerTeamId": null,
+        "winnerName": "CDM White",
+        "loserParticipantId": "team-2026-14u-boys-sharks-a",
+        "loserTeamId": "team-2026-14u-boys-sharks-a",
+        "loserName": "Sharks"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C2 - CDM White",
+          "raw": "C2 - CDM White"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 8,
+          "raw": "8"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-24",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-24",
+      "sourceGameNumber": 24,
+      "sourceRow": 31,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Tournament game",
+      "stageDisplay": "Tournament game",
+      "stageMeta": {
+        "raw": "Tournament game",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "Tournament game",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Tournament game"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Valley United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Valley United",
+          "participantId": "tournament-team-2026-14u-boys-valley-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Santa Barbara",
+          "participantId": "team-2026-14u-boys-santa-barbara-a",
+          "teamId": "team-2026-14u-boys-santa-barbara-a",
+          "clubId": "club-santa-barbara",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 13,
+        "whiteRaw": "9",
+        "darkRaw": "13",
+        "whiteRegulation": 9,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-santa-barbara-a",
+        "winnerTeamId": "team-2026-14u-boys-santa-barbara-a",
+        "winnerName": "Santa Barbara",
+        "loserParticipantId": "tournament-team-2026-14u-boys-valley-united",
+        "loserTeamId": null,
+        "loserName": "Valley United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Santa Barbara",
+          "raw": "Santa Barbara"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 13,
+          "raw": "13"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-10",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-10",
+      "sourceGameNumber": 10,
+      "sourceRow": 32,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1 - Loyola",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "Loyola",
+          "participantId": "tournament-team-2026-14u-boys-loyola",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "A3 - San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 9,
+        "whiteRaw": "5",
+        "darkRaw": "9",
+        "whiteRegulation": 5,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Black",
+        "loserParticipantId": "tournament-team-2026-14u-boys-loyola",
+        "loserTeamId": null,
+        "loserName": "Loyola"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A3 - San Clemente Black",
+          "raw": "A3 - San Clemente Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 9,
+          "raw": "9"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-11",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-11",
+      "sourceGameNumber": 11,
+      "sourceRow": 33,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "WEST HILLS HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1 - NSD Stars",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "NSD Stars",
+          "participantId": "tournament-team-2026-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3 - Stanford White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "Stanford White",
+          "participantId": "tournament-team-2026-14u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 6,
+        "whiteRaw": "9",
+        "darkRaw": "6",
+        "whiteRegulation": 9,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-nsd-stars",
+        "winnerTeamId": null,
+        "winnerName": "NSD Stars",
+        "loserParticipantId": "tournament-team-2026-14u-boys-stanford-white",
+        "loserTeamId": null,
+        "loserName": "Stanford White"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B3 - Stanford White",
+          "raw": "B3 - Stanford White"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-36",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-36",
+      "sourceGameNumber": 36,
+      "sourceRow": 34,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "LACUWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "LACUWP",
+          "participantId": "tournament-team-2026-14u-boys-lacuwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "NSD Stars",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "NSD Stars",
+          "participantId": "tournament-team-2026-14u-boys-nsd-stars",
+          "teamId": null,
+          "clubId": "club-nsd-stars",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10",
+        "whiteRegulation": 8,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-nsd-stars",
+        "winnerTeamId": null,
+        "winnerName": "NSD Stars",
+        "loserParticipantId": "tournament-team-2026-14u-boys-lacuwp",
+        "loserTeamId": null,
+        "loserName": "LACUWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "NSD Stars",
+          "raw": "NSD Stars"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-37",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-37",
+      "sourceGameNumber": 37,
+      "sourceRow": 35,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th",
+      "stageDisplay": "9th place game",
+      "stageMeta": {
+        "raw": "9th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "9th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 9,
+          "loserPlace": 10
+        },
+        "displayLabel": "9th place game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "NGen",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "NGen",
+          "participantId": "tournament-team-2026-14u-boys-ngen",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Santa Barbara",
+          "participantId": "team-2026-14u-boys-santa-barbara-a",
+          "teamId": "team-2026-14u-boys-santa-barbara-a",
+          "clubId": "club-santa-barbara",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 0,
+        "dark": 16,
+        "whiteRaw": "0",
+        "darkRaw": "16",
+        "whiteRegulation": 0,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-santa-barbara-a",
+        "winnerTeamId": "team-2026-14u-boys-santa-barbara-a",
+        "winnerName": "Santa Barbara",
+        "loserParticipantId": "tournament-team-2026-14u-boys-ngen",
+        "loserTeamId": null,
+        "loserName": "NGen"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Santa Barbara",
+          "raw": "Santa Barbara"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 16,
+          "raw": "16"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-38",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-38",
+      "sourceGameNumber": 38,
+      "sourceRow": 36,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "11th",
+      "stageDisplay": "11th place game",
+      "stageMeta": {
+        "raw": "11th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "11th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 11,
+          "loserPlace": 12
+        },
+        "displayLabel": "11th place game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Trilogy",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Trilogy",
+          "participantId": "tournament-team-2026-14u-boys-trilogy",
+          "teamId": null,
+          "clubId": "club-trilogy",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "Valley United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Valley United",
+          "participantId": "tournament-team-2026-14u-boys-valley-united",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 13,
+        "whiteRaw": "9",
+        "darkRaw": "13",
+        "whiteRegulation": 9,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-valley-united",
+        "winnerTeamId": null,
+        "winnerName": "Valley United",
+        "loserParticipantId": "tournament-team-2026-14u-boys-trilogy",
+        "loserTeamId": null,
+        "loserName": "Trilogy"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Valley United",
+          "raw": "Valley United"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 13,
+          "raw": "13"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-39",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-39",
+      "sourceGameNumber": 39,
+      "sourceRow": 37,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th",
+      "stageDisplay": "13th place game",
+      "stageMeta": {
+        "raw": "13th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "13th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 13,
+          "loserPlace": 14
+        },
+        "displayLabel": "13th place game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Rose Bowl Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Rose Bowl Black",
+          "participantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+          "teamId": null,
+          "clubId": "club-rose-bowl",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-14u-boys-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 5,
+        "whiteRaw": "8",
+        "darkRaw": "5",
+        "whiteRegulation": 8,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-rose-bowl-black",
+        "winnerTeamId": null,
+        "winnerName": "Rose Bowl Black",
+        "loserParticipantId": "tournament-team-2026-14u-boys-set",
+        "loserTeamId": null,
+        "loserName": "SET"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "SET",
+          "raw": "SET"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-40",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-40",
+      "sourceGameNumber": 40,
+      "sourceRow": 38,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "15th",
+      "stageDisplay": "15th place game",
+      "stageMeta": {
+        "raw": "15th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "15th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 15,
+          "loserPlace": 16
+        },
+        "displayLabel": "15th place game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "ECA B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ECA B",
+          "participantId": "tournament-team-2026-14u-boys-eca-b",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "Crown City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Crown City",
+          "participantId": "tournament-team-2026-14u-boys-crown-city",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 4,
+        "whiteRaw": "6",
+        "darkRaw": "4",
+        "whiteRegulation": 6,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-eca-b",
+        "winnerTeamId": null,
+        "winnerName": "ECA B",
+        "loserParticipantId": "tournament-team-2026-14u-boys-crown-city",
+        "loserTeamId": null,
+        "loserName": "Crown City"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Crown City",
+          "raw": "Crown City"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-33",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-33",
+      "sourceGameNumber": 33,
+      "sourceRow": 39,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "stageDisplay": "7th place game",
+      "stageMeta": {
+        "raw": "7th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "7th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 7,
+          "loserPlace": 8
+        },
+        "displayLabel": "7th place game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Stanford White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Stanford White",
+          "participantId": "tournament-team-2026-14u-boys-stanford-white",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "Loyola",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Loyola",
+          "participantId": "tournament-team-2026-14u-boys-loyola",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 4,
+        "whiteRaw": "9",
+        "darkRaw": "4",
+        "whiteRegulation": 9,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-stanford-white",
+        "winnerTeamId": null,
+        "winnerName": "Stanford White",
+        "loserParticipantId": "tournament-team-2026-14u-boys-loyola",
+        "loserTeamId": null,
+        "loserName": "Loyola"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Loyola",
+          "raw": "Loyola"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-34",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-34",
+      "sourceGameNumber": 34,
+      "sourceRow": 40,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Sharks",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Sharks",
+          "participantId": "team-2026-14u-boys-sharks-a",
+          "teamId": "team-2026-14u-boys-sharks-a",
+          "clubId": "club-sharks",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "Norcal Aquatics B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "NorCal B",
+          "participantId": "team-2026-14u-boys-norcal-b",
+          "teamId": "team-2026-14u-boys-norcal-b",
+          "clubId": "club-norcal",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 2,
+        "dark": 11,
+        "whiteRaw": "2",
+        "darkRaw": "11",
+        "whiteRegulation": 2,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-norcal-b",
+        "winnerTeamId": "team-2026-14u-boys-norcal-b",
+        "winnerName": "NorCal B",
+        "loserParticipantId": "team-2026-14u-boys-sharks-a",
+        "loserTeamId": "team-2026-14u-boys-sharks-a",
+        "loserName": "Sharks"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Norcal Aquatics B",
+          "raw": "Norcal Aquatics B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 11,
+          "raw": "11"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-35",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "14u-boys-division-3",
+      "season": "2026",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 3",
+      "divisionTier": "D3",
+      "sourceGameId": "SDC-14u-boys-division-3-35",
+      "sourceGameNumber": 35,
+      "sourceRow": 41,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "SANTANA HS",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-14u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "CDM White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "CDM White",
+          "participantId": "tournament-team-2026-14u-boys-cdm-white",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Black",
+        "loserParticipantId": "tournament-team-2026-14u-boys-cdm-white",
+        "loserTeamId": null,
+        "loserName": "CDM White"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "CDM White",
+          "raw": "CDM White"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 7,
+          "raw": "7"
+        }
+      }
+    }
+  ]
+}

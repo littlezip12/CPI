@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RELEASE = "7.54.7";
+  const RELEASE = "7.54.8";
   const FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg";
   const $ = id => document.getElementById(id);
   const state = { registry: null, bundle: null, view: "games", filters: { age: "", gender: "", division: "", team: "", date: "", venue: "", status: "", search: "" } };
@@ -47,7 +47,7 @@
     fillSelect("tpTeam", bundle.teams, "All teams", t=>({value:t.participantId,label:`${t.name} · ${t.divisionLabel}`}));
     fillSelect("tpDate", bundle.dates.map(d=>d.dateIso), "All dates", d=>({value:d,label:prettyDate(d)}));
     fillSelect("tpVenue", bundle.venues.map(v=>v.label), "All venues");
-    fillSelect("tpStatus", ["final","scheduled"], "All game states", s=>({value:s,label:s==="final"?"Final":"Scheduled"}));
+    fillSelect("tpStatus", ["final","scheduled"], "All game states", s=>({value:s,label:s==="final"?"Final":(state.bundle?.event?.status==="complete"?"Score unavailable":"Scheduled")}));
     const params=new URLSearchParams(location.search);
     const requestedTeam=params.get("team");
     if(requestedTeam && bundle.teams.some(t=>t.participantId===requestedTeam)) state.filters.team=requestedTeam;
@@ -98,14 +98,14 @@
   }
 
   function resultFor(game, participantId){
-    if(game.status!=="final")return "pending";
+    if(game.status!=="final")return state.bundle?.event?.status==="complete"?"unscored":"pending";
     if(game.outcome?.winnerParticipantId===participantId)return "win";
     if(game.outcome?.loserParticipantId===participantId)return "loss";
     return "tie";
   }
 
   function scoreLabel(game){
-    if(game.status!=="final")return "Scheduled";
+    if(game.status!=="final")return state.bundle?.event?.status==="complete"?"Score unavailable":"Scheduled";
     const w=game.scores?.white, d=game.scores?.dark;
     let score=`${w ?? "—"}–${d ?? "—"}`;
     if(game.shootout?.white!=null&&game.shootout?.dark!=null)score+=` (SO ${game.shootout.white}–${game.shootout.dark})`;

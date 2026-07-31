@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.7",
-  "generatedAt": "2026-07-29T21:10:00-07:00",
-  "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, and the 2025 Evan Cousineau Memorial Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
+  "release": "7.54.8",
+  "generatedAt": "2026-07-30T20:30:00-07:00",
+  "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, the 2025 Evan Cousineau Memorial Cup, and the 2026 San Diego County Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
   "platformPath": "tournament.html",
   "schemaPaths": {
     "event": "tournaments/schema/tournament-event.schema.json",
@@ -216,6 +216,47 @@
         },
         {
           "id": "2025-evan-cousineau-memorial-cup-source",
+          "type": "uploaded_csv",
+          "role": "provenance",
+          "readMode": "repository",
+          "parser": "results_table_v1"
+        }
+      ]
+    },
+    {
+      "id": "2026-san-diego-county-cup",
+      "name": "2026 San Diego County Cup",
+      "shortName": "San Diego County Cup",
+      "season": "2026",
+      "kind": "tournament_results",
+      "status": "complete",
+      "operationsMode": "historical_registered",
+      "divisionCount": 10,
+      "publicPath": "tournament.html?event=2026-san-diego-county-cup",
+      "legacyPath": "tournament.html?event=2026-san-diego-county-cup",
+      "migrationStatus": "platform_live",
+      "dataPath": "data/tournaments/platform/events/2026-san-diego-county-cup.json",
+      "rankingEvidenceEnabled": false,
+      "filterCapabilities": [
+        "ageGroup",
+        "gender",
+        "division",
+        "team",
+        "date",
+        "venue",
+        "status",
+        "search"
+      ],
+      "sourceAdapters": [
+        {
+          "id": "2026-san-diego-county-cup-normalized-bank",
+          "type": "normalized_json",
+          "role": "primary",
+          "pathTemplate": "data/tournaments/normalized/2026-san-diego-county-cup/{divisionId}.json",
+          "readMode": "repository"
+        },
+        {
+          "id": "2026-san-diego-county-cup-source",
           "type": "uploaded_csv",
           "role": "provenance",
           "readMode": "repository",

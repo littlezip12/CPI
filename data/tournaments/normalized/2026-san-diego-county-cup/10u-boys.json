@@ -1,0 +1,4438 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-san-diego-county-cup",
+    "name": "2026 San Diego County Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "10u-boys",
+    "label": "10U Boys",
+    "season": "2026",
+    "ageGroup": "10U",
+    "gender": "Boys",
+    "division": "Open",
+    "divisionTier": "Open",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-san-diego-county-cup",
+    "gid": "10u-boys",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-san-diego-county-cup/10u-boys.csv",
+    "fetchedAt": "2026-07-30T20:30:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "f4b3de7cb3ff473f1ea5da22b7d044f16b082889ea7484de9bca78af2ab9d301",
+    "rowCount": 48
+  },
+  "counts": {
+    "games": 47,
+    "finalGames": 46,
+    "scheduledGames": 1,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 94,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 94,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 94
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-1",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-1",
+      "sourceGameNumber": 1,
+      "sourceRow": 2,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1 - Stanford",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1",
+          "displayName": "Stanford",
+          "participantId": "tournament-team-2026-10u-boys-stanford",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "F2 - San Clemente Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2",
+          "displayName": "San Clemente Red",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 12,
+        "whiteRaw": "4",
+        "darkRaw": "12",
+        "whiteRegulation": 4,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Red",
+        "loserParticipantId": "tournament-team-2026-10u-boys-stanford",
+        "loserTeamId": null,
+        "loserName": "Stanford"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "F2 - San Clemente Red",
+          "raw": "F2 - San Clemente Red"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 12,
+          "raw": "12"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-7",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-7",
+      "sourceGameNumber": 7,
+      "sourceRow": 3,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2 - Greenwich",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "Greenwich",
+          "participantId": "tournament-team-2026-10u-boys-greenwich",
+          "teamId": null,
+          "clubId": "club-greenwich",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3 - CDM Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "CDM Boys",
+          "participantId": "tournament-team-2026-10u-boys-cdm-boys",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 7,
+        "whiteRaw": "5",
+        "darkRaw": "7",
+        "whiteRegulation": 5,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cdm-boys",
+        "winnerTeamId": null,
+        "winnerName": "CDM Boys",
+        "loserParticipantId": "tournament-team-2026-10u-boys-greenwich",
+        "loserTeamId": null,
+        "loserName": "Greenwich"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A3 - CDM Boys",
+          "raw": "A3 - CDM Boys"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 7,
+          "raw": "7"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-2",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-2",
+      "sourceGameNumber": 2,
+      "sourceRow": 4,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "3:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1 - 908 Yellow",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "908 Yellow",
+          "participantId": "tournament-team-2026-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3 - ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2026-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 3,
+        "whiteRaw": "18",
+        "darkRaw": "3",
+        "whiteRegulation": 18,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908-yellow",
+        "winnerTeamId": null,
+        "winnerName": "908 Yellow",
+        "loserParticipantId": "tournament-team-2026-10u-boys-orwp",
+        "loserTeamId": null,
+        "loserName": "ORWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C3 - ORWP",
+          "raw": "C3 - ORWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-8",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-8",
+      "sourceGameNumber": 8,
+      "sourceRow": 5,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "3:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "Temple City",
+          "participantId": "tournament-team-2026-10u-boys-temple-city",
+          "teamId": null,
+          "clubId": "club-temple-city",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3 - 908 Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "908 Blue",
+          "participantId": "tournament-team-2026-10u-boys-908-blue",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 2,
+        "whiteRaw": "11",
+        "darkRaw": "2",
+        "whiteRegulation": 11,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-temple-city",
+        "winnerTeamId": null,
+        "winnerName": "Temple City",
+        "loserParticipantId": "tournament-team-2026-10u-boys-908-blue",
+        "loserTeamId": null,
+        "loserName": "908 Blue"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D3 - 908 Blue",
+          "raw": "D3 - 908 Blue"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-3",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-3",
+      "sourceGameNumber": 3,
+      "sourceRow": 6,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1 - Newport",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "Newport",
+          "participantId": "tournament-team-2026-10u-boys-newport",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2 - SOCAL Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "SOCAL Black",
+          "participantId": "tournament-team-2026-10u-boys-socal-black",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 2,
+        "whiteRaw": "17",
+        "darkRaw": "2",
+        "whiteRegulation": 17,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport",
+        "winnerTeamId": null,
+        "winnerName": "Newport",
+        "loserParticipantId": "tournament-team-2026-10u-boys-socal-black",
+        "loserTeamId": null,
+        "loserName": "SOCAL Black"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B2 - SOCAL Black",
+          "raw": "B2 - SOCAL Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-9",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-9",
+      "sourceGameNumber": 9,
+      "sourceRow": 7,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1 - Commerce",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "Commerce",
+          "participantId": "tournament-team-2026-10u-boys-commerce",
+          "teamId": null,
+          "clubId": "club-commerce",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3 - San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3",
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 3,
+        "whiteRaw": "15",
+        "darkRaw": "3",
+        "whiteRegulation": 15,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-commerce",
+        "winnerTeamId": null,
+        "winnerName": "Commerce",
+        "loserParticipantId": "tournament-team-2026-10u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "San Clemente Black"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "E3 - San Clemente Black",
+          "raw": "E3 - San Clemente Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-4",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-4",
+      "sourceGameNumber": 4,
+      "sourceRow": 8,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "5:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1 - Stanford",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1",
+          "displayName": "Stanford",
+          "participantId": "tournament-team-2026-10u-boys-stanford",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "F3 - Lamorinda Gold",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3",
+          "displayName": "Lamorinda Gold",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 2,
+        "whiteRaw": "18",
+        "darkRaw": "2",
+        "whiteRegulation": 18,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-stanford",
+        "winnerTeamId": null,
+        "winnerName": "Stanford",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Gold"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "F3 - Lamorinda Gold",
+          "raw": "F3 - Lamorinda Gold"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-10",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-10",
+      "sourceGameNumber": 10,
+      "sourceRow": 9,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "5:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1 - SD Dons Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SD Dons Red",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-red",
+          "teamId": null,
+          "clubId": "club-sd-dons",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3 - CDM Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "CDM Boys",
+          "participantId": "tournament-team-2026-10u-boys-cdm-boys",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 5,
+        "whiteRaw": "13",
+        "darkRaw": "5",
+        "whiteRegulation": 13,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-red",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Red",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cdm-boys",
+        "loserTeamId": null,
+        "loserName": "CDM Boys"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A3 - CDM Boys",
+          "raw": "A3 - CDM Boys"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-5",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-5",
+      "sourceGameNumber": 5,
+      "sourceRow": 10,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2 - YOLO Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "YOLO Boys",
+          "participantId": "tournament-team-2026-10u-boys-yolo-boys",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C3 - ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2026-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 16,
+        "whiteRaw": "5",
+        "darkRaw": "16",
+        "whiteRegulation": 5,
+        "darkRegulation": 16,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-orwp",
+        "winnerTeamId": null,
+        "winnerName": "ORWP",
+        "loserParticipantId": "tournament-team-2026-10u-boys-yolo-boys",
+        "loserTeamId": null,
+        "loserName": "YOLO Boys"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C3 - ORWP",
+          "raw": "C3 - ORWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 16,
+          "raw": "16"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-11",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-11",
+      "sourceGameNumber": 11,
+      "sourceRow": 11,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1 - CC United A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "CC United A",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-a",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D3 - 908 Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "908 Blue",
+          "participantId": "tournament-team-2026-10u-boys-908-blue",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 1,
+        "whiteRaw": "14",
+        "darkRaw": "1",
+        "whiteRegulation": 14,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cc-united-a",
+        "winnerTeamId": null,
+        "winnerName": "CC United A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-908-blue",
+        "loserTeamId": null,
+        "loserName": "908 Blue"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D3 - 908 Blue",
+          "raw": "D3 - 908 Blue"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 1,
+          "raw": "1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-6",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-6",
+      "sourceGameNumber": 6,
+      "sourceRow": 12,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2 - SOCAL Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "SOCAL Black",
+          "participantId": "tournament-team-2026-10u-boys-socal-black",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "B3 - CC United B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "CC United B",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-b",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 4,
+        "whiteRaw": "13",
+        "darkRaw": "4",
+        "whiteRegulation": 13,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-socal-black",
+        "winnerTeamId": null,
+        "winnerName": "SOCAL Black",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cc-united-b",
+        "loserTeamId": null,
+        "loserName": "CC United B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B3 - CC United B",
+          "raw": "B3 - CC United B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-12",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-12",
+      "sourceGameNumber": 12,
+      "sourceRow": 13,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1 - Commerce",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "Commerce",
+          "participantId": "tournament-team-2026-10u-boys-commerce",
+          "teamId": null,
+          "clubId": "club-commerce",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E2 - Lamorinda Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "Lamorinda Blue",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 5,
+        "whiteRaw": "15",
+        "darkRaw": "5",
+        "whiteRegulation": 15,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-commerce",
+        "winnerTeamId": null,
+        "winnerName": "Commerce",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Blue"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "E2 - Lamorinda Blue",
+          "raw": "E2 - Lamorinda Blue"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-16",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-16",
+      "sourceGameNumber": 16,
+      "sourceRow": 14,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket",
+      "stageDisplay": "L bracket",
+      "stageMeta": {
+        "raw": "L bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1 - CC United B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1",
+          "displayName": "CC United B",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-b",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L2 - YOLO Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2",
+          "displayName": "YOLO Boys",
+          "participantId": "tournament-team-2026-10u-boys-yolo-boys",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 11,
+        "whiteRaw": "15",
+        "darkRaw": "11",
+        "whiteRegulation": 15,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cc-united-b",
+        "winnerTeamId": null,
+        "winnerName": "CC United B",
+        "loserParticipantId": "tournament-team-2026-10u-boys-yolo-boys",
+        "loserTeamId": null,
+        "loserName": "YOLO Boys"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "L2 - YOLO Boys",
+          "raw": "L2 - YOLO Boys"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 11,
+          "raw": "11"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-28",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-28",
+      "sourceGameNumber": 28,
+      "sourceRow": 15,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K2 - 908 Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2",
+          "displayName": "908 Blue",
+          "participantId": "tournament-team-2026-10u-boys-908-blue",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "K3 - San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3",
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 11,
+        "whiteRaw": "6",
+        "darkRaw": "11",
+        "whiteRegulation": 6,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-san-clemente-black",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Black",
+        "loserParticipantId": "tournament-team-2026-10u-boys-908-blue",
+        "loserTeamId": null,
+        "loserName": "908 Blue"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "K3 - San Clemente Black",
+          "raw": "K3 - San Clemente Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 11,
+          "raw": "11"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-17",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-17",
+      "sourceGameNumber": 17,
+      "sourceRow": 16,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1 - SOCAL Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1",
+          "displayName": "SOCAL Black",
+          "participantId": "tournament-team-2026-10u-boys-socal-black",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J2 - ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2",
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2026-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 5,
+        "whiteRaw": "7",
+        "darkRaw": "5",
+        "whiteRegulation": 7,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-socal-black",
+        "winnerTeamId": null,
+        "winnerName": "SOCAL Black",
+        "loserParticipantId": "tournament-team-2026-10u-boys-orwp",
+        "loserTeamId": null,
+        "loserName": "ORWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "J2 - ORWP",
+          "raw": "J2 - ORWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-29",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-29",
+      "sourceGameNumber": 29,
+      "sourceRow": 17,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket",
+      "stageDisplay": "I bracket",
+      "stageMeta": {
+        "raw": "I bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I2 - CC United A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2",
+          "displayName": "CC United A",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-a",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I3 - Lamorinda Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3",
+          "displayName": "Lamorinda Blue",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 6,
+        "whiteRaw": "15",
+        "darkRaw": "6",
+        "whiteRegulation": 15,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cc-united-a",
+        "winnerTeamId": null,
+        "winnerName": "CC United A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Blue"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "I3 - Lamorinda Blue",
+          "raw": "I3 - Lamorinda Blue"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-18",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-18",
+      "sourceGameNumber": 18,
+      "sourceRow": 18,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1 - Newport",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1",
+          "displayName": "Newport",
+          "participantId": "tournament-team-2026-10u-boys-newport",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "H2 - 908 Yellow",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2",
+          "displayName": "908 Yellow",
+          "participantId": "tournament-team-2026-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 8,
+        "whiteRaw": "12",
+        "darkRaw": "8",
+        "whiteRegulation": 12,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport",
+        "winnerTeamId": null,
+        "winnerName": "Newport",
+        "loserParticipantId": "tournament-team-2026-10u-boys-908-yellow",
+        "loserTeamId": null,
+        "loserName": "908 Yellow"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "H2 - 908 Yellow",
+          "raw": "H2 - 908 Yellow"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 8,
+          "raw": "8"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-30",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-30",
+      "sourceGameNumber": 30,
+      "sourceRow": 19,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "Temple City",
+          "participantId": "tournament-team-2026-10u-boys-temple-city",
+          "teamId": null,
+          "clubId": "club-temple-city",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "G3 - Commerce",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3",
+          "displayName": "Commerce",
+          "participantId": "tournament-team-2026-10u-boys-commerce",
+          "teamId": null,
+          "clubId": "club-commerce",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 13,
+        "whiteRaw": "6",
+        "darkRaw": "13",
+        "whiteRegulation": 6,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-commerce",
+        "winnerTeamId": null,
+        "winnerName": "Commerce",
+        "loserParticipantId": "tournament-team-2026-10u-boys-temple-city",
+        "loserTeamId": null,
+        "loserName": "Temple City"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "G3 - Commerce",
+          "raw": "G3 - Commerce"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 13,
+          "raw": "13"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-19",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-19",
+      "sourceGameNumber": 19,
+      "sourceRow": 20,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket",
+      "stageDisplay": "L bracket",
+      "stageMeta": {
+        "raw": "L bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1 - CC United B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1",
+          "displayName": "CC United B",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-b",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L3 - Lamorinda Gold",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3",
+          "displayName": "Lamorinda Gold",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 7,
+        "whiteRaw": "15",
+        "darkRaw": "7",
+        "whiteRegulation": 15,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cc-united-b",
+        "winnerTeamId": null,
+        "winnerName": "CC United B",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Gold"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "L3 - Lamorinda Gold",
+          "raw": "L3 - Lamorinda Gold"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 7,
+          "raw": "7"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-31",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-31",
+      "sourceGameNumber": 31,
+      "sourceRow": 21,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1 - Greenwich",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1",
+          "displayName": "Greenwich",
+          "participantId": "tournament-team-2026-10u-boys-greenwich",
+          "teamId": null,
+          "clubId": "club-greenwich",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "K3 - San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3",
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 20,
+        "dark": 6,
+        "whiteRaw": "20",
+        "darkRaw": "6",
+        "whiteRegulation": 20,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-greenwich",
+        "winnerTeamId": null,
+        "winnerName": "Greenwich",
+        "loserParticipantId": "tournament-team-2026-10u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "San Clemente Black"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "K3 - San Clemente Black",
+          "raw": "K3 - San Clemente Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-20",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-20",
+      "sourceGameNumber": 20,
+      "sourceRow": 22,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1 - SOCAL Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1",
+          "displayName": "SOCAL Black",
+          "participantId": "tournament-team-2026-10u-boys-socal-black",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "J3 - Stanford",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3",
+          "displayName": "Stanford",
+          "participantId": "tournament-team-2026-10u-boys-stanford",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 6,
+        "whiteRaw": "7",
+        "darkRaw": "6",
+        "whiteRegulation": 7,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-socal-black",
+        "winnerTeamId": null,
+        "winnerName": "SOCAL Black",
+        "loserParticipantId": "tournament-team-2026-10u-boys-stanford",
+        "loserTeamId": null,
+        "loserName": "Stanford"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "J3 - Stanford",
+          "raw": "J3 - Stanford"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-32",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-32",
+      "sourceGameNumber": 32,
+      "sourceRow": 23,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket",
+      "stageDisplay": "I bracket",
+      "stageMeta": {
+        "raw": "I bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1 - CDM Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1",
+          "displayName": "CDM Boys",
+          "participantId": "tournament-team-2026-10u-boys-cdm-boys",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I3 - Lamorinda Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3",
+          "displayName": "Lamorinda Blue",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cdm-boys",
+        "winnerTeamId": null,
+        "winnerName": "CDM Boys",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Blue"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "I3 - Lamorinda Blue",
+          "raw": "I3 - Lamorinda Blue"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-21",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-21",
+      "sourceGameNumber": 21,
+      "sourceRow": 24,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1 - Newport",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1",
+          "displayName": "Newport",
+          "participantId": "tournament-team-2026-10u-boys-newport",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "H3 - San Clemente Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3",
+          "displayName": "San Clemente Red",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 5,
+        "whiteRaw": "15",
+        "darkRaw": "5",
+        "whiteRegulation": 15,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport",
+        "winnerTeamId": null,
+        "winnerName": "Newport",
+        "loserParticipantId": "tournament-team-2026-10u-boys-san-clemente-red",
+        "loserTeamId": null,
+        "loserName": "San Clemente Red"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "H3 - San Clemente Red",
+          "raw": "H3 - San Clemente Red"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-33",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-33",
+      "sourceGameNumber": 33,
+      "sourceRow": 25,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1 - SD Dons Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "SD Dons Red",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-red",
+          "teamId": null,
+          "clubId": "club-sd-dons",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G3 - Commerce",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3",
+          "displayName": "Commerce",
+          "participantId": "tournament-team-2026-10u-boys-commerce",
+          "teamId": null,
+          "clubId": "club-commerce",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 5,
+        "whiteRaw": "12",
+        "darkRaw": "5",
+        "whiteRegulation": 12,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-red",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Red",
+        "loserParticipantId": "tournament-team-2026-10u-boys-commerce",
+        "loserTeamId": null,
+        "loserName": "Commerce"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "G3 - Commerce",
+          "raw": "G3 - Commerce"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-22",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-22",
+      "sourceGameNumber": 22,
+      "sourceRow": 26,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket",
+      "stageDisplay": "L bracket",
+      "stageMeta": {
+        "raw": "L bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L2 - YOLO Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2",
+          "displayName": "YOLO Boys",
+          "participantId": "tournament-team-2026-10u-boys-yolo-boys",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "L3 - Lamorinda Gold",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3",
+          "displayName": "Lamorinda Gold",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 4,
+        "whiteRaw": "16",
+        "darkRaw": "4",
+        "whiteRegulation": 16,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-yolo-boys",
+        "winnerTeamId": null,
+        "winnerName": "YOLO Boys",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Gold"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "L3 - Lamorinda Gold",
+          "raw": "L3 - Lamorinda Gold"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-34",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-34",
+      "sourceGameNumber": 34,
+      "sourceRow": 27,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1 - Greenwich",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1",
+          "displayName": "Greenwich",
+          "participantId": "tournament-team-2026-10u-boys-greenwich",
+          "teamId": null,
+          "clubId": "club-greenwich",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "K2 - 908 Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2",
+          "displayName": "908 Blue",
+          "participantId": "tournament-team-2026-10u-boys-908-blue",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 1,
+        "whiteRaw": "19",
+        "darkRaw": "1",
+        "whiteRegulation": 19,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-greenwich",
+        "winnerTeamId": null,
+        "winnerName": "Greenwich",
+        "loserParticipantId": "tournament-team-2026-10u-boys-908-blue",
+        "loserTeamId": null,
+        "loserName": "908 Blue"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "K2 - 908 Blue",
+          "raw": "K2 - 908 Blue"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 1,
+          "raw": "1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-23",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-23",
+      "sourceGameNumber": 23,
+      "sourceRow": 28,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J2 - ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2",
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2026-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "J3 - Stanford",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3",
+          "displayName": "Stanford",
+          "participantId": "tournament-team-2026-10u-boys-stanford",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 1,
+        "dark": 8,
+        "whiteRaw": "1",
+        "darkRaw": "8",
+        "whiteRegulation": 1,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-stanford",
+        "winnerTeamId": null,
+        "winnerName": "Stanford",
+        "loserParticipantId": "tournament-team-2026-10u-boys-orwp",
+        "loserTeamId": null,
+        "loserName": "ORWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "J3 - Stanford",
+          "raw": "J3 - Stanford"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 8,
+          "raw": "8"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-35",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-35",
+      "sourceGameNumber": 35,
+      "sourceRow": 29,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket",
+      "stageDisplay": "I bracket",
+      "stageMeta": {
+        "raw": "I bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1 - CDM Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1",
+          "displayName": "CDM Boys",
+          "participantId": "tournament-team-2026-10u-boys-cdm-boys",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I2 - CC United A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2",
+          "displayName": "CC United A",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-a",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 10,
+        "whiteRaw": "4",
+        "darkRaw": "10",
+        "whiteRegulation": 4,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cc-united-a",
+        "winnerTeamId": null,
+        "winnerName": "CC United A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cdm-boys",
+        "loserTeamId": null,
+        "loserName": "CDM Boys"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "I2 - CC United A",
+          "raw": "I2 - CC United A"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-24",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-24",
+      "sourceGameNumber": 24,
+      "sourceRow": 30,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H2 - 908 Yellow",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2",
+          "displayName": "908 Yellow",
+          "participantId": "tournament-team-2026-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "H3 - San Clemente Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3",
+          "displayName": "San Clemente Red",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 5,
+        "whiteRaw": "15",
+        "darkRaw": "5",
+        "whiteRegulation": 15,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908-yellow",
+        "winnerTeamId": null,
+        "winnerName": "908 Yellow",
+        "loserParticipantId": "tournament-team-2026-10u-boys-san-clemente-red",
+        "loserTeamId": null,
+        "loserName": "San Clemente Red"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "H3 - San Clemente Red",
+          "raw": "H3 - San Clemente Red"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-36",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-36",
+      "sourceGameNumber": 36,
+      "sourceRow": 31,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1 - SD Dons Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "SD Dons Red",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-red",
+          "teamId": null,
+          "clubId": "club-sd-dons",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "G2 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "Temple City",
+          "participantId": "tournament-team-2026-10u-boys-temple-city",
+          "teamId": null,
+          "clubId": "club-temple-city",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 2,
+        "whiteRaw": "12",
+        "darkRaw": "2",
+        "whiteRegulation": 12,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-red",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Red",
+        "loserParticipantId": "tournament-team-2026-10u-boys-temple-city",
+        "loserTeamId": null,
+        "loserName": "Temple City"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "G2 - Temple City",
+          "raw": "G2 - Temple City"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-13",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-13",
+      "sourceGameNumber": 13,
+      "sourceRow": 32,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1 - 908 Yellow",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "908 Yellow",
+          "participantId": "tournament-team-2026-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "C2 - YOLO Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "YOLO Boys",
+          "participantId": "tournament-team-2026-10u-boys-yolo-boys",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 21,
+        "dark": 0,
+        "whiteRaw": "21",
+        "darkRaw": "0",
+        "whiteRegulation": 21,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908-yellow",
+        "winnerTeamId": null,
+        "winnerName": "908 Yellow",
+        "loserParticipantId": "tournament-team-2026-10u-boys-yolo-boys",
+        "loserTeamId": null,
+        "loserName": "YOLO Boys"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C2 - YOLO Boys",
+          "raw": "C2 - YOLO Boys"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 0,
+          "raw": "0"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-25",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-25",
+      "sourceGameNumber": 25,
+      "sourceRow": 33,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1 - CC United A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "CC United A",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-a",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "D2 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "Temple City",
+          "participantId": "tournament-team-2026-10u-boys-temple-city",
+          "teamId": null,
+          "clubId": "club-temple-city",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10",
+        "whiteRegulation": 7,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-temple-city",
+        "winnerTeamId": null,
+        "winnerName": "Temple City",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cc-united-a",
+        "loserTeamId": null,
+        "loserName": "CC United A"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D2 - Temple City",
+          "raw": "D2 - Temple City"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-14",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-14",
+      "sourceGameNumber": 14,
+      "sourceRow": 34,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1 - Newport",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "Newport",
+          "participantId": "tournament-team-2026-10u-boys-newport",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3 - CC United B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "CC United B",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-b",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 19,
+        "dark": 0,
+        "whiteRaw": "19",
+        "darkRaw": "0",
+        "whiteRegulation": 19,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport",
+        "winnerTeamId": null,
+        "winnerName": "Newport",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cc-united-b",
+        "loserTeamId": null,
+        "loserName": "CC United B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B3 - CC United B",
+          "raw": "B3 - CC United B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 0,
+          "raw": "0"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-26",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-26",
+      "sourceGameNumber": 26,
+      "sourceRow": 35,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E2 - Lamorinda Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "Lamorinda Blue",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "E3 - San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3",
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 2,
+        "whiteRaw": "13",
+        "darkRaw": "2",
+        "whiteRegulation": 13,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+        "winnerTeamId": null,
+        "winnerName": "Lamorinda Blue",
+        "loserParticipantId": "tournament-team-2026-10u-boys-san-clemente-black",
+        "loserTeamId": null,
+        "loserName": "San Clemente Black"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "E3 - San Clemente Black",
+          "raw": "E3 - San Clemente Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-15",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-15",
+      "sourceGameNumber": 15,
+      "sourceRow": 36,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F2 - San Clemente Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2",
+          "displayName": "San Clemente Red",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "F3 - Lamorinda Gold",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3",
+          "displayName": "Lamorinda Gold",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 23,
+        "dark": 0,
+        "whiteRaw": "23",
+        "darkRaw": "0",
+        "whiteRegulation": 23,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-san-clemente-red",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Red",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Gold"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "F3 - Lamorinda Gold",
+          "raw": "F3 - Lamorinda Gold"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 0,
+          "raw": "0"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-27",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-27",
+      "sourceGameNumber": 27,
+      "sourceRow": 37,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "THE BISHOP'S SCHOOL 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1 - SD Dons Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "SD Dons Red",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-red",
+          "teamId": null,
+          "clubId": "club-sd-dons",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A2 - Greenwich",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "Greenwich",
+          "participantId": "tournament-team-2026-10u-boys-greenwich",
+          "teamId": null,
+          "clubId": "club-greenwich",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 13,
+        "dark": 2,
+        "whiteRaw": "13",
+        "darkRaw": "2",
+        "whiteRegulation": 13,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-red",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Red",
+        "loserParticipantId": "tournament-team-2026-10u-boys-greenwich",
+        "loserTeamId": null,
+        "loserName": "Greenwich"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A2 - Greenwich",
+          "raw": "A2 - Greenwich"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-40",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-40",
+      "sourceGameNumber": 40,
+      "sourceRow": 38,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "stageDisplay": "7th place game",
+      "stageMeta": {
+        "raw": "7th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "7th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 7,
+          "loserPlace": 8
+        },
+        "displayLabel": "7th place game"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "CC United A",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "CC United A",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-a",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "SOCAL Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "SOCAL Black",
+          "participantId": "tournament-team-2026-10u-boys-socal-black",
+          "teamId": null,
+          "clubId": "club-socal",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 1,
+        "whiteRaw": "14",
+        "darkRaw": "1",
+        "whiteRegulation": 14,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cc-united-a",
+        "winnerTeamId": null,
+        "winnerName": "CC United A",
+        "loserParticipantId": "tournament-team-2026-10u-boys-socal-black",
+        "loserTeamId": null,
+        "loserName": "SOCAL Black"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "SOCAL Black",
+          "raw": "SOCAL Black"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 1,
+          "raw": "1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-41",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-41",
+      "sourceGameNumber": 41,
+      "sourceRow": 39,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th",
+      "stageDisplay": "9th place game",
+      "stageMeta": {
+        "raw": "9th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "9th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 9,
+          "loserPlace": 10
+        },
+        "displayLabel": "9th place game"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "CDM Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "CDM Boys",
+          "participantId": "tournament-team-2026-10u-boys-cdm-boys",
+          "teamId": null,
+          "clubId": "club-cdm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "Stanford",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Stanford",
+          "participantId": "tournament-team-2026-10u-boys-stanford",
+          "teamId": null,
+          "clubId": "club-stanford",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 2,
+        "whiteRaw": "3",
+        "darkRaw": "2",
+        "whiteRegulation": 3,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-cdm-boys",
+        "winnerTeamId": null,
+        "winnerName": "CDM Boys",
+        "loserParticipantId": "tournament-team-2026-10u-boys-stanford",
+        "loserTeamId": null,
+        "loserName": "Stanford"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Stanford",
+          "raw": "Stanford"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-45",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-45",
+      "sourceGameNumber": 45,
+      "sourceRow": 40,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th",
+      "stageDisplay": "13th place game",
+      "stageMeta": {
+        "raw": "13th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "13th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 13,
+          "loserPlace": 14
+        },
+        "displayLabel": "13th place game"
+      },
+      "venue": "GROSSMONT HS 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Greenwich",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Greenwich",
+          "participantId": "tournament-team-2026-10u-boys-greenwich",
+          "teamId": null,
+          "clubId": "club-greenwich",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "CC United B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "CC United B",
+          "participantId": "tournament-team-2026-10u-boys-cc-united-b",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 23,
+        "dark": 2,
+        "whiteRaw": "23",
+        "darkRaw": "2",
+        "whiteRegulation": 23,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-greenwich",
+        "winnerTeamId": null,
+        "winnerName": "Greenwich",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cc-united-b",
+        "loserTeamId": null,
+        "loserName": "CC United B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "CC United B",
+          "raw": "CC United B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-47",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-47",
+      "sourceGameNumber": 47,
+      "sourceRow": 41,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "17th",
+      "stageDisplay": "17th place game",
+      "stageMeta": {
+        "raw": "17th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "17th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 17,
+          "loserPlace": 18
+        },
+        "displayLabel": "17th place game"
+      },
+      "venue": "GROSSMONT HS 2",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "908 Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "908 Blue",
+          "participantId": "tournament-team-2026-10u-boys-908-blue",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "Lamorinda Gold",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Lamorinda Gold",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908-blue",
+        "winnerTeamId": null,
+        "winnerName": "908 Blue",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-gold",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Gold"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Lamorinda Gold",
+          "raw": "Lamorinda Gold"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-42",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-42",
+      "sourceGameNumber": 42,
+      "sourceRow": 42,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "11th",
+      "stageDisplay": "11th place game",
+      "stageMeta": {
+        "raw": "11th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "11th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 11,
+          "loserPlace": 12
+        },
+        "displayLabel": "11th place game"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Lamorinda Blue",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Lamorinda Blue",
+          "participantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+          "teamId": null,
+          "clubId": "club-lamorinda",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "ORWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "ORWP",
+          "participantId": "tournament-team-2026-10u-boys-orwp",
+          "teamId": null,
+          "clubId": "club-orwp",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 6,
+        "whiteRaw": "5",
+        "darkRaw": "6",
+        "whiteRegulation": 5,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-orwp",
+        "winnerTeamId": null,
+        "winnerName": "ORWP",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-blue",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Blue"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "ORWP",
+          "raw": "ORWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-46",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-46",
+      "sourceGameNumber": 46,
+      "sourceRow": 43,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "15th",
+      "stageDisplay": "15th place game",
+      "stageMeta": {
+        "raw": "15th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "15th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 15,
+          "loserPlace": 16
+        },
+        "displayLabel": "15th place game"
+      },
+      "venue": "GROSSMONT HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "San Clemente Black",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "San Clemente Black",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-black",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "YOLO Boys",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "YOLO Boys",
+          "participantId": "tournament-team-2026-10u-boys-yolo-boys",
+          "teamId": null,
+          "clubId": "club-yolo",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "YOLO Boys",
+          "raw": "YOLO Boys"
+        },
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-43",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-43",
+      "sourceGameNumber": 43,
+      "sourceRow": 44,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "SD Dons Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "SD Dons Red",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-red",
+          "teamId": null,
+          "clubId": "club-sd-dons",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "Newport",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Newport",
+          "participantId": "tournament-team-2026-10u-boys-newport",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 6,
+        "whiteRaw": "9",
+        "darkRaw": "6",
+        "whiteRegulation": 9,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-red",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Red",
+        "loserParticipantId": "tournament-team-2026-10u-boys-newport",
+        "loserTeamId": null,
+        "loserName": "Newport"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Newport",
+          "raw": "Newport"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-44",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-44",
+      "sourceGameNumber": 44,
+      "sourceRow": 45,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "908 Yellow",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "908 Yellow",
+          "participantId": "tournament-team-2026-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "Commerce",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Commerce",
+          "participantId": "tournament-team-2026-10u-boys-commerce",
+          "teamId": null,
+          "clubId": "club-commerce",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 10,
+        "whiteRaw": "11",
+        "darkRaw": "10",
+        "whiteRegulation": 11,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-908-yellow",
+        "winnerTeamId": null,
+        "winnerName": "908 Yellow",
+        "loserParticipantId": "tournament-team-2026-10u-boys-commerce",
+        "loserTeamId": null,
+        "loserName": "Commerce"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Commerce",
+          "raw": "Commerce"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-37",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-37",
+      "sourceGameNumber": 37,
+      "sourceRow": 46,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Semifinal",
+      "stageDisplay": "Semifinal",
+      "stageMeta": {
+        "raw": "Semifinal",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Semifinal"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "SD Dons Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "SD Dons Red",
+          "participantId": "tournament-team-2026-10u-boys-sd-dons-red",
+          "teamId": null,
+          "clubId": "club-sd-dons",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "908 Yellow",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "908 Yellow",
+          "participantId": "tournament-team-2026-10u-boys-908-yellow",
+          "teamId": null,
+          "clubId": "club-908",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 8,
+        "whiteRaw": "11",
+        "darkRaw": "8",
+        "whiteRegulation": 11,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-sd-dons-red",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Red",
+        "loserParticipantId": "tournament-team-2026-10u-boys-908-yellow",
+        "loserTeamId": null,
+        "loserName": "908 Yellow"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "908 Yellow",
+          "raw": "908 Yellow"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 8,
+          "raw": "8"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-38",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-38",
+      "sourceGameNumber": 38,
+      "sourceRow": 47,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Semifinal",
+      "stageDisplay": "Semifinal",
+      "stageMeta": {
+        "raw": "Semifinal",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Semifinal"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Newport",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Newport",
+          "participantId": "tournament-team-2026-10u-boys-newport",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "Commerce",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Commerce",
+          "participantId": "tournament-team-2026-10u-boys-commerce",
+          "teamId": null,
+          "clubId": "club-commerce",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 3,
+        "whiteRaw": "7",
+        "darkRaw": "3",
+        "whiteRegulation": 7,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-newport",
+        "winnerTeamId": null,
+        "winnerName": "Newport",
+        "loserParticipantId": "tournament-team-2026-10u-boys-commerce",
+        "loserTeamId": null,
+        "loserName": "Commerce"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Commerce",
+          "raw": "Commerce"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-39",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "10u-boys",
+      "season": "2026",
+      "ageGroup": "10U",
+      "gender": "Boys",
+      "division": "Open",
+      "divisionTier": "Open",
+      "sourceGameId": "SDC-10u-boys-39",
+      "sourceGameNumber": 39,
+      "sourceRow": 48,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "THE BISHOP'S SCHOOL 1",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Temple City",
+          "participantId": "tournament-team-2026-10u-boys-temple-city",
+          "teamId": null,
+          "clubId": "club-temple-city",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "San Clemente Red",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "San Clemente Red",
+          "participantId": "tournament-team-2026-10u-boys-san-clemente-red",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 4,
+        "whiteRaw": "7",
+        "darkRaw": "4",
+        "whiteRegulation": 7,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-temple-city",
+        "winnerTeamId": null,
+        "winnerName": "Temple City",
+        "loserParticipantId": "tournament-team-2026-10u-boys-san-clemente-red",
+        "loserTeamId": null,
+        "loserName": "San Clemente Red"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "San Clemente Red",
+          "raw": "San Clemente Red"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    }
+  ]
+}

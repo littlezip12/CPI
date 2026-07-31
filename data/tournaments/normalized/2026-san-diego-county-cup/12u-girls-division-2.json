@@ -1,0 +1,4446 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-san-diego-county-cup",
+    "name": "2026 San Diego County Cup",
+    "kind": "tournament_results"
+  },
+  "division": {
+    "id": "12u-girls-division-2",
+    "label": "12U Girls Division 2",
+    "season": "2026",
+    "ageGroup": "12U",
+    "gender": "Girls",
+    "division": "Division 2",
+    "divisionTier": "D2",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "user-upload-2026-san-diego-county-cup",
+    "gid": "12u-girls-division-2",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-san-diego-county-cup/12u-girls-division-2.csv",
+    "fetchedAt": "2026-07-30T20:30:00-07:00",
+    "mode": "user_uploaded_verified",
+    "contentSha256": "8f0e77437f1a610c29c48d1c252a595129dc32ae42c31b36568b6d2fedf15d7f",
+    "rowCount": 48
+  },
+  "counts": {
+    "games": 47,
+    "finalGames": 47,
+    "scheduledGames": 0,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 94,
+    "resolvedTeamParticipants": 48,
+    "unresolvedTeamParticipants": 46,
+    "bracketReferences": 0,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 46
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-5",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-5",
+      "sourceGameNumber": 5,
+      "sourceRow": 2,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1 - Shore Aquatics",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "Shore Aquatics",
+          "participantId": "tournament-team-2026-12u-girls-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D3 - CCWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "CCWP",
+          "participantId": "tournament-team-2026-12u-girls-ccwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 22,
+        "dark": 3,
+        "whiteRaw": "22",
+        "darkRaw": "3",
+        "whiteRegulation": 22,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "Shore Aquatics",
+        "loserParticipantId": "tournament-team-2026-12u-girls-ccwp",
+        "loserTeamId": null,
+        "loserName": "CCWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D3 - CCWP",
+          "raw": "D3 - CCWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-1",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-1",
+      "sourceGameNumber": 1,
+      "sourceRow": 3,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "3:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1 - 908",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "908",
+          "participantId": "team-2026-12u-girls-908-12u-girls",
+          "teamId": "team-2026-12u-girls-908-12u-girls",
+          "clubId": "club-908",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "B2 - Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "Santa Barbara",
+          "participantId": "tournament-team-2026-12u-girls-santa-barbara",
+          "teamId": null,
+          "clubId": "club-santa-barbara",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 3,
+        "whiteRaw": "18",
+        "darkRaw": "3",
+        "whiteRegulation": 18,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-908-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-908-12u-girls",
+        "winnerName": "908",
+        "loserParticipantId": "tournament-team-2026-12u-girls-santa-barbara",
+        "loserTeamId": null,
+        "loserName": "Santa Barbara"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B2 - Santa Barbara",
+          "raw": "B2 - Santa Barbara"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-6",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-6",
+      "sourceGameNumber": 6,
+      "sourceRow": 4,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "3:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E2 - San Clemente",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "San Clemente",
+          "participantId": "tournament-team-2026-12u-girls-san-clemente",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "E3 - Tsunami",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3",
+          "displayName": "Tsunami",
+          "participantId": "tournament-team-2026-12u-girls-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12",
+        "whiteRegulation": 10,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-tsunami",
+        "winnerTeamId": null,
+        "winnerName": "Tsunami",
+        "loserParticipantId": "tournament-team-2026-12u-girls-san-clemente",
+        "loserTeamId": null,
+        "loserName": "San Clemente"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "E3 - Tsunami",
+          "raw": "E3 - Tsunami"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 12,
+          "raw": "12"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-2",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-2",
+      "sourceGameNumber": 2,
+      "sourceRow": 5,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "Temple City",
+          "participantId": "team-2026-12u-girls-temple-city-12u-girls",
+          "teamId": "team-2026-12u-girls-temple-city-12u-girls",
+          "clubId": "club-temple-city",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C2 - CHAWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "CHAWP",
+          "participantId": "team-2026-12u-girls-chawp-12u-girls",
+          "teamId": "team-2026-12u-girls-chawp-12u-girls",
+          "clubId": "club-chawp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9",
+        "whiteRegulation": 7,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-chawp-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-chawp-12u-girls",
+        "winnerName": "CHAWP",
+        "loserParticipantId": "team-2026-12u-girls-temple-city-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-temple-city-12u-girls",
+        "loserName": "Temple City"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C2 - CHAWP",
+          "raw": "C2 - CHAWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 9,
+          "raw": "9"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-7",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-7",
+      "sourceGameNumber": 7,
+      "sourceRow": 6,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1 - Newport White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "Newport White",
+          "participantId": "tournament-team-2026-12u-girls-newport-white",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A2 - Rose Bowl",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "teamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 4,
+        "dark": 10,
+        "whiteRaw": "4",
+        "darkRaw": "10",
+        "whiteRegulation": 4,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "tournament-team-2026-12u-girls-newport-white",
+        "loserTeamId": null,
+        "loserName": "Newport White"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A2 - Rose Bowl",
+          "raw": "A2 - Rose Bowl"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-8",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-8",
+      "sourceGameNumber": 8,
+      "sourceRow": 7,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "5:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1 - North Irvine",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "teamId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "F2 - Laguna Beach",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2",
+          "displayName": "Laguna Beach",
+          "participantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "teamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "clubId": "club-laguna-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 5,
+        "whiteRaw": "14",
+        "darkRaw": "5",
+        "whiteRegulation": 14,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "winnerName": "North Irvine",
+        "loserParticipantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "loserName": "Laguna Beach"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "F2 - Laguna Beach",
+          "raw": "F2 - Laguna Beach"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 5,
+          "raw": "5"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-3",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-3",
+      "sourceGameNumber": 3,
+      "sourceRow": 8,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B2 - Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "Santa Barbara",
+          "participantId": "tournament-team-2026-12u-girls-santa-barbara",
+          "teamId": null,
+          "clubId": "club-santa-barbara",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3 - Seaside",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "Seaside",
+          "participantId": "team-2026-12u-girls-seaside-12u-girls",
+          "teamId": "team-2026-12u-girls-seaside-12u-girls",
+          "clubId": "club-seaside",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 9,
+        "whiteRaw": "3",
+        "darkRaw": "9",
+        "whiteRegulation": 3,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-seaside-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-seaside-12u-girls",
+        "winnerName": "Seaside",
+        "loserParticipantId": "tournament-team-2026-12u-girls-santa-barbara",
+        "loserTeamId": null,
+        "loserName": "Santa Barbara"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B3 - Seaside",
+          "raw": "B3 - Seaside"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 9,
+          "raw": "9"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-9",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-9",
+      "sourceGameNumber": 9,
+      "sourceRow": 9,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D2 - Patriots",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "Patriots",
+          "participantId": "tournament-team-2026-12u-girls-patriots",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "D3 - CCWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D3",
+          "displayName": "CCWP",
+          "participantId": "tournament-team-2026-12u-girls-ccwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-patriots",
+        "winnerTeamId": null,
+        "winnerName": "Patriots",
+        "loserParticipantId": "tournament-team-2026-12u-girls-ccwp",
+        "loserTeamId": null,
+        "loserName": "CCWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D3 - CCWP",
+          "raw": "D3 - CCWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-4",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-4",
+      "sourceGameNumber": 4,
+      "sourceRow": 10,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C2 - CHAWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "CHAWP",
+          "participantId": "team-2026-12u-girls-chawp-12u-girls",
+          "teamId": "team-2026-12u-girls-chawp-12u-girls",
+          "clubId": "club-chawp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3 - AG Polo",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "AG Polo",
+          "participantId": "tournament-team-2026-12u-girls-ag-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 16,
+        "dark": 11,
+        "whiteRaw": "16",
+        "darkRaw": "11",
+        "whiteRegulation": 16,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-chawp-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-chawp-12u-girls",
+        "winnerName": "CHAWP",
+        "loserParticipantId": "tournament-team-2026-12u-girls-ag-polo",
+        "loserTeamId": null,
+        "loserName": "AG Polo"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C3 - AG Polo",
+          "raw": "C3 - AG Polo"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 11,
+          "raw": "11"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-10",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-10",
+      "sourceGameNumber": 10,
+      "sourceRow": 11,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "6:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1 - Lamorinda B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "teamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "E3 - Tsunami",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E3",
+          "displayName": "Tsunami",
+          "participantId": "tournament-team-2026-12u-girls-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 13,
+        "whiteRaw": "5",
+        "darkRaw": "13",
+        "whiteRegulation": 5,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-tsunami",
+        "winnerTeamId": null,
+        "winnerName": "Tsunami",
+        "loserParticipantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "loserName": "Lamorinda B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "E3 - Tsunami",
+          "raw": "E3 - Tsunami"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 13,
+          "raw": "13"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-11",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-11",
+      "sourceGameNumber": 11,
+      "sourceRow": 12,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "7:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A2 - Rose Bowl",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "teamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "A3 - CC United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "CC United",
+          "participantId": "tournament-team-2026-12u-girls-cc-united",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 4,
+        "whiteRaw": "14",
+        "darkRaw": "4",
+        "whiteRegulation": 14,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "tournament-team-2026-12u-girls-cc-united",
+        "loserTeamId": null,
+        "loserName": "CC United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A3 - CC United",
+          "raw": "A3 - CC United"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 4,
+          "raw": "4"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-12",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-12",
+      "sourceGameNumber": 12,
+      "sourceRow": 13,
+      "dateLabel": "01-May-2026",
+      "dateIso": "2026-05-01",
+      "timeLabel": "8:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F2 - Laguna Beach",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F2",
+          "displayName": "Laguna Beach",
+          "participantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "teamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "clubId": "club-laguna-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "F3 - Davis",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3",
+          "displayName": "Davis",
+          "participantId": "team-2026-12u-girls-davis-12u-girls",
+          "teamId": "team-2026-12u-girls-davis-12u-girls",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 10,
+        "whiteRaw": "6",
+        "darkRaw": "10",
+        "whiteRegulation": 6,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-davis-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-davis-12u-girls",
+        "winnerName": "Davis",
+        "loserParticipantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "loserName": "Laguna Beach"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "F3 - Davis",
+          "raw": "F3 - Davis"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-16",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-16",
+      "sourceGameNumber": 16,
+      "sourceRow": 14,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket",
+      "stageDisplay": "L bracket",
+      "stageMeta": {
+        "raw": "L bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1 - Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1",
+          "displayName": "Santa Barbara",
+          "participantId": "tournament-team-2026-12u-girls-santa-barbara",
+          "teamId": null,
+          "clubId": "club-santa-barbara",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L2 - AG Polo",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2",
+          "displayName": "AG Polo",
+          "participantId": "tournament-team-2026-12u-girls-ag-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 15,
+        "whiteRaw": "9",
+        "darkRaw": "15",
+        "whiteRegulation": 9,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-ag-polo",
+        "winnerTeamId": null,
+        "winnerName": "AG Polo",
+        "loserParticipantId": "tournament-team-2026-12u-girls-santa-barbara",
+        "loserTeamId": null,
+        "loserName": "Santa Barbara"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "L2 - AG Polo",
+          "raw": "L2 - AG Polo"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 15,
+          "raw": "15"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-28",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-28",
+      "sourceGameNumber": 28,
+      "sourceRow": 15,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K2 - CCWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2",
+          "displayName": "CCWP",
+          "participantId": "tournament-team-2026-12u-girls-ccwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "K3 - San Clemente",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3",
+          "displayName": "San Clemente",
+          "participantId": "tournament-team-2026-12u-girls-san-clemente",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 13,
+        "whiteRaw": "12",
+        "darkRaw": "13",
+        "whiteRegulation": 12,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-san-clemente",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente",
+        "loserParticipantId": "tournament-team-2026-12u-girls-ccwp",
+        "loserTeamId": null,
+        "loserName": "CCWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "K3 - San Clemente",
+          "raw": "K3 - San Clemente"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 13,
+          "raw": "13"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-17",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-17",
+      "sourceGameNumber": 17,
+      "sourceRow": 16,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1 - Seaside",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1",
+          "displayName": "Seaside",
+          "participantId": "team-2026-12u-girls-seaside-12u-girls",
+          "teamId": "team-2026-12u-girls-seaside-12u-girls",
+          "clubId": "club-seaside",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "J2 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2",
+          "displayName": "Temple City",
+          "participantId": "team-2026-12u-girls-temple-city-12u-girls",
+          "teamId": "team-2026-12u-girls-temple-city-12u-girls",
+          "clubId": "club-temple-city",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 14,
+        "whiteRaw": "3",
+        "darkRaw": "14",
+        "whiteRegulation": 3,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-temple-city-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-temple-city-12u-girls",
+        "winnerName": "Temple City",
+        "loserParticipantId": "team-2026-12u-girls-seaside-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-seaside-12u-girls",
+        "loserName": "Seaside"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "J2 - Temple City",
+          "raw": "J2 - Temple City"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 14,
+          "raw": "14"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-29",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-29",
+      "sourceGameNumber": 29,
+      "sourceRow": 17,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket",
+      "stageDisplay": "I bracket",
+      "stageMeta": {
+        "raw": "I bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I2 - Patriots",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2",
+          "displayName": "Patriots",
+          "participantId": "tournament-team-2026-12u-girls-patriots",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "I3 - Lamorinda B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "teamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11",
+        "whiteRegulation": 7,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "winnerName": "Lamorinda B",
+        "loserParticipantId": "tournament-team-2026-12u-girls-patriots",
+        "loserTeamId": null,
+        "loserName": "Patriots"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "I3 - Lamorinda B",
+          "raw": "I3 - Lamorinda B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 11,
+          "raw": "11"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-18",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-18",
+      "sourceGameNumber": 18,
+      "sourceRow": 18,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1 - 908",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1",
+          "displayName": "908",
+          "participantId": "team-2026-12u-girls-908-12u-girls",
+          "teamId": "team-2026-12u-girls-908-12u-girls",
+          "clubId": "club-908",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "H2 - CHAWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2",
+          "displayName": "CHAWP",
+          "participantId": "team-2026-12u-girls-chawp-12u-girls",
+          "teamId": "team-2026-12u-girls-chawp-12u-girls",
+          "clubId": "club-chawp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 10,
+        "whiteRaw": "12",
+        "darkRaw": "10",
+        "whiteRegulation": 12,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-908-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-908-12u-girls",
+        "winnerName": "908",
+        "loserParticipantId": "team-2026-12u-girls-chawp-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-chawp-12u-girls",
+        "loserName": "CHAWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "H2 - CHAWP",
+          "raw": "H2 - CHAWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-30",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-30",
+      "sourceGameNumber": 30,
+      "sourceRow": 19,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "1:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G2 - Shore Aquatics",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "Shore Aquatics",
+          "participantId": "tournament-team-2026-12u-girls-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "G3 - Tsunami",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3",
+          "displayName": "Tsunami",
+          "participantId": "tournament-team-2026-12u-girls-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 1,
+        "whiteRaw": "11",
+        "darkRaw": "1",
+        "whiteRegulation": 11,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "Shore Aquatics",
+        "loserParticipantId": "tournament-team-2026-12u-girls-tsunami",
+        "loserTeamId": null,
+        "loserName": "Tsunami"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "G3 - Tsunami",
+          "raw": "G3 - Tsunami"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 1,
+          "raw": "1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-19",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-19",
+      "sourceGameNumber": 19,
+      "sourceRow": 20,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket",
+      "stageDisplay": "L bracket",
+      "stageMeta": {
+        "raw": "L bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L1 - Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L1",
+          "displayName": "Santa Barbara",
+          "participantId": "tournament-team-2026-12u-girls-santa-barbara",
+          "teamId": null,
+          "clubId": "club-santa-barbara",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "L3 - Laguna Beach",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3",
+          "displayName": "Laguna Beach",
+          "participantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "teamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "clubId": "club-laguna-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 10,
+        "whiteRaw": "7",
+        "darkRaw": "10",
+        "whiteRegulation": 7,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "winnerName": "Laguna Beach",
+        "loserParticipantId": "tournament-team-2026-12u-girls-santa-barbara",
+        "loserTeamId": null,
+        "loserName": "Santa Barbara"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "L3 - Laguna Beach",
+          "raw": "L3 - Laguna Beach"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-31",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-31",
+      "sourceGameNumber": 31,
+      "sourceRow": 21,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1 - CC United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1",
+          "displayName": "CC United",
+          "participantId": "tournament-team-2026-12u-girls-cc-united",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "K3 - San Clemente",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K3",
+          "displayName": "San Clemente",
+          "participantId": "tournament-team-2026-12u-girls-san-clemente",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 12,
+        "whiteRaw": "6",
+        "darkRaw": "12",
+        "whiteRegulation": 6,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-san-clemente",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente",
+        "loserParticipantId": "tournament-team-2026-12u-girls-cc-united",
+        "loserTeamId": null,
+        "loserName": "CC United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "K3 - San Clemente",
+          "raw": "K3 - San Clemente"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 12,
+          "raw": "12"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-20",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-20",
+      "sourceGameNumber": 20,
+      "sourceRow": 22,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J1 - Seaside",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J1",
+          "displayName": "Seaside",
+          "participantId": "team-2026-12u-girls-seaside-12u-girls",
+          "teamId": "team-2026-12u-girls-seaside-12u-girls",
+          "clubId": "club-seaside",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "J3 - Davis",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3",
+          "displayName": "Davis",
+          "participantId": "team-2026-12u-girls-davis-12u-girls",
+          "teamId": "team-2026-12u-girls-davis-12u-girls",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 6,
+        "dark": 13,
+        "whiteRaw": "6",
+        "darkRaw": "13",
+        "whiteRegulation": 6,
+        "darkRegulation": 13,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-davis-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-davis-12u-girls",
+        "winnerName": "Davis",
+        "loserParticipantId": "team-2026-12u-girls-seaside-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-seaside-12u-girls",
+        "loserName": "Seaside"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "J3 - Davis",
+          "raw": "J3 - Davis"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 13,
+          "raw": "13"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-32",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-32",
+      "sourceGameNumber": 32,
+      "sourceRow": 23,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "2:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket",
+      "stageDisplay": "I bracket",
+      "stageMeta": {
+        "raw": "I bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1 - Newport White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1",
+          "displayName": "Newport White",
+          "participantId": "tournament-team-2026-12u-girls-newport-white",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I3 - Lamorinda B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I3",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "teamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 3,
+        "whiteRaw": "7",
+        "darkRaw": "3",
+        "whiteRegulation": 7,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-newport-white",
+        "winnerTeamId": null,
+        "winnerName": "Newport White",
+        "loserParticipantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "loserName": "Lamorinda B"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "I3 - Lamorinda B",
+          "raw": "I3 - Lamorinda B"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-21",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-21",
+      "sourceGameNumber": 21,
+      "sourceRow": 24,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H1 - 908",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H1",
+          "displayName": "908",
+          "participantId": "team-2026-12u-girls-908-12u-girls",
+          "teamId": "team-2026-12u-girls-908-12u-girls",
+          "clubId": "club-908",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "H3 - North Irvine",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "teamId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 18,
+        "dark": 7,
+        "whiteRaw": "18",
+        "darkRaw": "7",
+        "whiteRegulation": 18,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-908-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-908-12u-girls",
+        "winnerName": "908",
+        "loserParticipantId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "loserName": "North Irvine"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "H3 - North Irvine",
+          "raw": "H3 - North Irvine"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 7,
+          "raw": "7"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-33",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-33",
+      "sourceGameNumber": 33,
+      "sourceRow": 25,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "3:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1 - Rose Bowl",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "teamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "G3 - Tsunami",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G3",
+          "displayName": "Tsunami",
+          "participantId": "tournament-team-2026-12u-girls-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "tournament-team-2026-12u-girls-tsunami",
+        "loserTeamId": null,
+        "loserName": "Tsunami"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "G3 - Tsunami",
+          "raw": "G3 - Tsunami"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-22",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-22",
+      "sourceGameNumber": 22,
+      "sourceRow": 26,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "L bracket",
+      "stageDisplay": "L bracket",
+      "stageMeta": {
+        "raw": "L bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "L bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "L bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "L2 - AG Polo",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L2",
+          "displayName": "AG Polo",
+          "participantId": "tournament-team-2026-12u-girls-ag-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "L3 - Laguna Beach",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "L3",
+          "displayName": "Laguna Beach",
+          "participantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "teamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "clubId": "club-laguna-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 8,
+        "whiteRaw": "15",
+        "darkRaw": "8",
+        "whiteRegulation": 15,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-ag-polo",
+        "winnerTeamId": null,
+        "winnerName": "AG Polo",
+        "loserParticipantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "loserName": "Laguna Beach"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "L3 - Laguna Beach",
+          "raw": "L3 - Laguna Beach"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 8,
+          "raw": "8"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-34",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-34",
+      "sourceGameNumber": 34,
+      "sourceRow": 27,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "4:15 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "K bracket",
+      "stageDisplay": "K bracket",
+      "stageMeta": {
+        "raw": "K bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "K bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "K bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "K1 - CC United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K1",
+          "displayName": "CC United",
+          "participantId": "tournament-team-2026-12u-girls-cc-united",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "K2 - CCWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "K2",
+          "displayName": "CCWP",
+          "participantId": "tournament-team-2026-12u-girls-ccwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 14,
+        "whiteRaw": "8",
+        "darkRaw": "14",
+        "whiteRegulation": 8,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-ccwp",
+        "winnerTeamId": null,
+        "winnerName": "CCWP",
+        "loserParticipantId": "tournament-team-2026-12u-girls-cc-united",
+        "loserTeamId": null,
+        "loserName": "CC United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "K2 - CCWP",
+          "raw": "K2 - CCWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 14,
+          "raw": "14"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-23",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-23",
+      "sourceGameNumber": 23,
+      "sourceRow": 28,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "J bracket",
+      "stageDisplay": "J bracket",
+      "stageMeta": {
+        "raw": "J bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "J bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "J bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "J2 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J2",
+          "displayName": "Temple City",
+          "participantId": "team-2026-12u-girls-temple-city-12u-girls",
+          "teamId": "team-2026-12u-girls-temple-city-12u-girls",
+          "clubId": "club-temple-city",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "J3 - Davis",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "J3",
+          "displayName": "Davis",
+          "participantId": "team-2026-12u-girls-davis-12u-girls",
+          "teamId": "team-2026-12u-girls-davis-12u-girls",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 8,
+        "dark": 0,
+        "whiteRaw": "8",
+        "darkRaw": "0",
+        "whiteRegulation": 8,
+        "darkRegulation": 0,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-temple-city-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-temple-city-12u-girls",
+        "winnerName": "Temple City",
+        "loserParticipantId": "team-2026-12u-girls-davis-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-davis-12u-girls",
+        "loserName": "Davis"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "J3 - Davis",
+          "raw": "J3 - Davis"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 0,
+          "raw": "0"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-35",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-35",
+      "sourceGameNumber": 35,
+      "sourceRow": 29,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "I bracket",
+      "stageDisplay": "I bracket",
+      "stageMeta": {
+        "raw": "I bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "I bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "I bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "I1 - Newport White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I1",
+          "displayName": "Newport White",
+          "participantId": "tournament-team-2026-12u-girls-newport-white",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "I2 - Patriots",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "I2",
+          "displayName": "Patriots",
+          "participantId": "tournament-team-2026-12u-girls-patriots",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 6,
+        "whiteRaw": "9",
+        "darkRaw": "6",
+        "whiteRegulation": 9,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-newport-white",
+        "winnerTeamId": null,
+        "winnerName": "Newport White",
+        "loserParticipantId": "tournament-team-2026-12u-girls-patriots",
+        "loserTeamId": null,
+        "loserName": "Patriots"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "I2 - Patriots",
+          "raw": "I2 - Patriots"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-24",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-24",
+      "sourceGameNumber": 24,
+      "sourceRow": 30,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "H bracket",
+      "stageDisplay": "H bracket",
+      "stageMeta": {
+        "raw": "H bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "H bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "H bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "H2 - CHAWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H2",
+          "displayName": "CHAWP",
+          "participantId": "team-2026-12u-girls-chawp-12u-girls",
+          "teamId": "team-2026-12u-girls-chawp-12u-girls",
+          "clubId": "club-chawp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "H3 - North Irvine",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "H3",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "teamId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 9,
+        "whiteRaw": "12",
+        "darkRaw": "9",
+        "whiteRegulation": 12,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-chawp-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-chawp-12u-girls",
+        "winnerName": "CHAWP",
+        "loserParticipantId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "loserName": "North Irvine"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "H3 - North Irvine",
+          "raw": "H3 - North Irvine"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 9,
+          "raw": "9"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-36",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-36",
+      "sourceGameNumber": 36,
+      "sourceRow": 31,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "5:45 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "G bracket",
+      "stageDisplay": "G bracket",
+      "stageMeta": {
+        "raw": "G bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "G bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "G bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "G1 - Rose Bowl",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G1",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "teamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "G2 - Shore Aquatics",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "G2",
+          "displayName": "Shore Aquatics",
+          "participantId": "tournament-team-2026-12u-girls-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 15,
+        "whiteRaw": "10",
+        "darkRaw": "15",
+        "whiteRegulation": 10,
+        "darkRegulation": 15,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "Shore Aquatics",
+        "loserParticipantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "loserName": "Rose Bowl"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "G2 - Shore Aquatics",
+          "raw": "G2 - Shore Aquatics"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 15,
+          "raw": "15"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-13",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-13",
+      "sourceGameNumber": 13,
+      "sourceRow": 32,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "C bracket",
+      "stageDisplay": "C bracket",
+      "stageMeta": {
+        "raw": "C bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "C bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "C bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "C1 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "Temple City",
+          "participantId": "team-2026-12u-girls-temple-city-12u-girls",
+          "teamId": "team-2026-12u-girls-temple-city-12u-girls",
+          "clubId": "club-temple-city",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "C3 - AG Polo",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "AG Polo",
+          "participantId": "tournament-team-2026-12u-girls-ag-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 7,
+        "whiteRaw": "14",
+        "darkRaw": "7",
+        "whiteRegulation": 14,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-temple-city-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-temple-city-12u-girls",
+        "winnerName": "Temple City",
+        "loserParticipantId": "tournament-team-2026-12u-girls-ag-polo",
+        "loserTeamId": null,
+        "loserName": "AG Polo"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "C3 - AG Polo",
+          "raw": "C3 - AG Polo"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 7,
+          "raw": "7"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-25",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-25",
+      "sourceGameNumber": 25,
+      "sourceRow": 33,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "D bracket",
+      "stageDisplay": "D bracket",
+      "stageMeta": {
+        "raw": "D bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "D bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "D bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "D1 - Shore Aquatics",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D1",
+          "displayName": "Shore Aquatics",
+          "participantId": "tournament-team-2026-12u-girls-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "D2 - Patriots",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "D2",
+          "displayName": "Patriots",
+          "participantId": "tournament-team-2026-12u-girls-patriots",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 6,
+        "whiteRaw": "12",
+        "darkRaw": "6",
+        "whiteRegulation": 12,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "Shore Aquatics",
+        "loserParticipantId": "tournament-team-2026-12u-girls-patriots",
+        "loserTeamId": null,
+        "loserName": "Patriots"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "D2 - Patriots",
+          "raw": "D2 - Patriots"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-14",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-14",
+      "sourceGameNumber": 14,
+      "sourceRow": 34,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket",
+      "stageDisplay": "B bracket",
+      "stageMeta": {
+        "raw": "B bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "B1 - 908",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "908",
+          "participantId": "team-2026-12u-girls-908-12u-girls",
+          "teamId": "team-2026-12u-girls-908-12u-girls",
+          "clubId": "club-908",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "B3 - Seaside",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "Seaside",
+          "participantId": "team-2026-12u-girls-seaside-12u-girls",
+          "teamId": "team-2026-12u-girls-seaside-12u-girls",
+          "clubId": "club-seaside",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 17,
+        "dark": 1,
+        "whiteRaw": "17",
+        "darkRaw": "1",
+        "whiteRegulation": 17,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-908-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-908-12u-girls",
+        "winnerName": "908",
+        "loserParticipantId": "team-2026-12u-girls-seaside-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-seaside-12u-girls",
+        "loserName": "Seaside"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "B3 - Seaside",
+          "raw": "B3 - Seaside"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 1,
+          "raw": "1"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-26",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-26",
+      "sourceGameNumber": 26,
+      "sourceRow": 35,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket",
+      "stageDisplay": "E bracket",
+      "stageMeta": {
+        "raw": "E bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "E1 - Lamorinda B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E1",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "teamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "E2 - San Clemente",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "E2",
+          "displayName": "San Clemente",
+          "participantId": "tournament-team-2026-12u-girls-san-clemente",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7",
+        "whiteRegulation": 11,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "winnerName": "Lamorinda B",
+        "loserParticipantId": "tournament-team-2026-12u-girls-san-clemente",
+        "loserTeamId": null,
+        "loserName": "San Clemente"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "E2 - San Clemente",
+          "raw": "E2 - San Clemente"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 7,
+          "raw": "7"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-15",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-15",
+      "sourceGameNumber": 15,
+      "sourceRow": 36,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket",
+      "stageDisplay": "F bracket",
+      "stageMeta": {
+        "raw": "F bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "F bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "F1 - North Irvine",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F1",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "teamId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "F3 - Davis",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "F3",
+          "displayName": "Davis",
+          "participantId": "team-2026-12u-girls-davis-12u-girls",
+          "teamId": "team-2026-12u-girls-davis-12u-girls",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 2,
+        "whiteRaw": "14",
+        "darkRaw": "2",
+        "whiteRegulation": 14,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "winnerName": "North Irvine",
+        "loserParticipantId": "team-2026-12u-girls-davis-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-davis-12u-girls",
+        "loserName": "Davis"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "F3 - Davis",
+          "raw": "F3 - Davis"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-27",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-27",
+      "sourceGameNumber": 27,
+      "sourceRow": 37,
+      "dateLabel": "02-May-2026",
+      "dateIso": "2026-05-02",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket",
+      "stageDisplay": "A bracket",
+      "stageMeta": {
+        "raw": "A bracket",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "A1 - Newport White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "Newport White",
+          "participantId": "tournament-team-2026-12u-girls-newport-white",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "A3 - CC United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "CC United",
+          "participantId": "tournament-team-2026-12u-girls-cc-united",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 14,
+        "dark": 3,
+        "whiteRaw": "14",
+        "darkRaw": "3",
+        "whiteRegulation": 14,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-newport-white",
+        "winnerTeamId": null,
+        "winnerName": "Newport White",
+        "loserParticipantId": "tournament-team-2026-12u-girls-cc-united",
+        "loserTeamId": null,
+        "loserName": "CC United"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "A3 - CC United",
+          "raw": "A3 - CC United"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-40",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-40",
+      "sourceGameNumber": 40,
+      "sourceRow": 38,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "11th",
+      "stageDisplay": "11th place game",
+      "stageMeta": {
+        "raw": "11th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "11th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 11,
+          "loserPlace": 12
+        },
+        "displayLabel": "11th place game"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "R1 - Patriots",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "R1",
+          "displayName": "Patriots",
+          "participantId": "tournament-team-2026-12u-girls-patriots",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "R2 - Seaside",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "R2",
+          "displayName": "Seaside",
+          "participantId": "team-2026-12u-girls-seaside-12u-girls",
+          "teamId": "team-2026-12u-girls-seaside-12u-girls",
+          "clubId": "club-seaside",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 2,
+        "whiteRaw": "15",
+        "darkRaw": "2",
+        "whiteRegulation": 15,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-patriots",
+        "winnerTeamId": null,
+        "winnerName": "Patriots",
+        "loserParticipantId": "team-2026-12u-girls-seaside-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-seaside-12u-girls",
+        "loserName": "Seaside"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "R2 - Seaside",
+          "raw": "R2 - Seaside"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 2,
+          "raw": "2"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-47",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-47",
+      "sourceGameNumber": 47,
+      "sourceRow": 39,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "17th",
+      "stageDisplay": "17th place game",
+      "stageMeta": {
+        "raw": "17th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "17th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 17,
+          "loserPlace": 18
+        },
+        "displayLabel": "17th place game"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "U1 - CC United",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "U1",
+          "displayName": "CC United",
+          "participantId": "tournament-team-2026-12u-girls-cc-united",
+          "teamId": null,
+          "clubId": "club-cc-united",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "U2 - Santa Barbara",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "U2",
+          "displayName": "Santa Barbara",
+          "participantId": "tournament-team-2026-12u-girls-santa-barbara",
+          "teamId": null,
+          "clubId": "club-santa-barbara",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9",
+        "whiteRegulation": 10,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-cc-united",
+        "winnerTeamId": null,
+        "winnerName": "CC United",
+        "loserParticipantId": "tournament-team-2026-12u-girls-santa-barbara",
+        "loserTeamId": null,
+        "loserName": "Santa Barbara"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "U2 - Santa Barbara",
+          "raw": "U2 - Santa Barbara"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 9,
+          "raw": "9"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-41",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-41",
+      "sourceGameNumber": 41,
+      "sourceRow": 40,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "15th",
+      "stageDisplay": "15th place game",
+      "stageMeta": {
+        "raw": "15th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "15th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 15,
+          "loserPlace": 16
+        },
+        "displayLabel": "15th place game"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "T1 - CCWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "T1",
+          "displayName": "CCWP",
+          "participantId": "tournament-team-2026-12u-girls-ccwp",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "T2 - Laguna Beach",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "T2",
+          "displayName": "Laguna Beach",
+          "participantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "teamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+          "clubId": "club-laguna-beach",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 3,
+        "dark": 10,
+        "whiteRaw": "3",
+        "darkRaw": "10",
+        "whiteRegulation": 3,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-laguna-beach-12u-girls",
+        "winnerName": "Laguna Beach",
+        "loserParticipantId": "tournament-team-2026-12u-girls-ccwp",
+        "loserTeamId": null,
+        "loserName": "CCWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "T2 - Laguna Beach",
+          "raw": "T2 - Laguna Beach"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-42",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-42",
+      "sourceGameNumber": 42,
+      "sourceRow": 41,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "11:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd",
+      "stageDisplay": "3rd place game",
+      "stageMeta": {
+        "raw": "3rd",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "3rd place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 3,
+          "loserPlace": 4
+        },
+        "displayLabel": "3rd place game"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "CHAWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "CHAWP",
+          "participantId": "team-2026-12u-girls-chawp-12u-girls",
+          "teamId": "team-2026-12u-girls-chawp-12u-girls",
+          "clubId": "club-chawp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "Rose Bowl",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "teamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 10,
+        "whiteRaw": "9",
+        "darkRaw": "10",
+        "whiteRegulation": 9,
+        "darkRegulation": 10,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "winnerName": "Rose Bowl",
+        "loserParticipantId": "team-2026-12u-girls-chawp-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-chawp-12u-girls",
+        "loserName": "CHAWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Rose Bowl",
+          "raw": "Rose Bowl"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 10,
+          "raw": "10"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-43",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-43",
+      "sourceGameNumber": 43,
+      "sourceRow": 42,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "12:30 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st",
+      "stageDisplay": "1st place game",
+      "stageMeta": {
+        "raw": "1st",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "1st place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 1,
+          "loserPlace": 2
+        },
+        "displayLabel": "1st place game"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Shore Aquatics",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "Shore Aquatics",
+          "participantId": "tournament-team-2026-12u-girls-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "908",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": null,
+          "displayName": "908",
+          "participantId": "team-2026-12u-girls-908-12u-girls",
+          "teamId": "team-2026-12u-girls-908-12u-girls",
+          "clubId": "club-908",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 11,
+        "whiteRaw": "10",
+        "darkRaw": "11",
+        "whiteRegulation": 10,
+        "darkRegulation": 11,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-908-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-908-12u-girls",
+        "winnerName": "908",
+        "loserParticipantId": "tournament-team-2026-12u-girls-shore-aquatics",
+        "loserTeamId": null,
+        "loserName": "Shore Aquatics"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "game",
+          "gameNumber": 908,
+          "raw": "908"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 11,
+          "raw": "11"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-37",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-37",
+      "sourceGameNumber": 37,
+      "sourceRow": 43,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Semifinal",
+      "stageDisplay": "Semifinal",
+      "stageMeta": {
+        "raw": "Semifinal",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Semifinal"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "M1 - Shore Aquatics",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M1",
+          "displayName": "Shore Aquatics",
+          "participantId": "tournament-team-2026-12u-girls-shore-aquatics",
+          "teamId": null,
+          "clubId": "club-long-beach-shore",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "M2 - CHAWP",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "M2",
+          "displayName": "CHAWP",
+          "participantId": "team-2026-12u-girls-chawp-12u-girls",
+          "teamId": "team-2026-12u-girls-chawp-12u-girls",
+          "clubId": "club-chawp",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 12,
+        "dark": 6,
+        "whiteRaw": "12",
+        "darkRaw": "6",
+        "whiteRegulation": 12,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-shore-aquatics",
+        "winnerTeamId": null,
+        "winnerName": "Shore Aquatics",
+        "loserParticipantId": "team-2026-12u-girls-chawp-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-chawp-12u-girls",
+        "loserName": "CHAWP"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "M2 - CHAWP",
+          "raw": "M2 - CHAWP"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-44",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-44",
+      "sourceGameNumber": 44,
+      "sourceRow": 44,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "5th",
+      "stageDisplay": "5th place game",
+      "stageMeta": {
+        "raw": "5th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "5th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 5,
+          "loserPlace": 6
+        },
+        "displayLabel": "5th place game"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "O1 - Tsunami",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O1",
+          "displayName": "Tsunami",
+          "participantId": "tournament-team-2026-12u-girls-tsunami",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "O2 - North Irvine",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "O2",
+          "displayName": "North Irvine",
+          "participantId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "teamId": "team-2026-12u-girls-north-irvine-12u-girls",
+          "clubId": "club-north-irvine",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9",
+        "whiteRegulation": 10,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-tsunami",
+        "winnerTeamId": null,
+        "winnerName": "Tsunami",
+        "loserParticipantId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-north-irvine-12u-girls",
+        "loserName": "North Irvine"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "O2 - North Irvine",
+          "raw": "O2 - North Irvine"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 9,
+          "raw": "9"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-38",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-38",
+      "sourceGameNumber": 38,
+      "sourceRow": 45,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "Semifinal",
+      "stageDisplay": "Semifinal",
+      "stageMeta": {
+        "raw": "Semifinal",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "semifinal",
+        "roundLabel": "Semifinal",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "Semifinal"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "N1 - 908",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N1",
+          "displayName": "908",
+          "participantId": "team-2026-12u-girls-908-12u-girls",
+          "teamId": "team-2026-12u-girls-908-12u-girls",
+          "clubId": "club-908",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "N2 - Rose Bowl",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "N2",
+          "displayName": "Rose Bowl",
+          "participantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "teamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+          "clubId": "club-rose-bowl",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 15,
+        "dark": 6,
+        "whiteRaw": "15",
+        "darkRaw": "6",
+        "whiteRegulation": 15,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-908-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-908-12u-girls",
+        "winnerName": "908",
+        "loserParticipantId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-rose-bowl-red-12u-girls",
+        "loserName": "Rose Bowl"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "N2 - Rose Bowl",
+          "raw": "N2 - Rose Bowl"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 6,
+          "raw": "6"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-45",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-45",
+      "sourceGameNumber": 45,
+      "sourceRow": 46,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "8:45 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th",
+      "stageDisplay": "7th place game",
+      "stageMeta": {
+        "raw": "7th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "7th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 7,
+          "loserPlace": 8
+        },
+        "displayLabel": "7th place game"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "P1 - Newport White",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "P1",
+          "displayName": "Newport White",
+          "participantId": "tournament-team-2026-12u-girls-newport-white",
+          "teamId": null,
+          "clubId": "club-newport-beach",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "historical_club_alias"
+        },
+        "dark": {
+          "raw": "P2 - Temple City",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "P2",
+          "displayName": "Temple City",
+          "participantId": "team-2026-12u-girls-temple-city-12u-girls",
+          "teamId": "team-2026-12u-girls-temple-city-12u-girls",
+          "clubId": "club-temple-city",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 7,
+        "dark": 8,
+        "whiteRaw": "7",
+        "darkRaw": "8",
+        "whiteRegulation": 7,
+        "darkRegulation": 8,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-temple-city-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-temple-city-12u-girls",
+        "winnerName": "Temple City",
+        "loserParticipantId": "tournament-team-2026-12u-girls-newport-white",
+        "loserTeamId": null,
+        "loserName": "Newport White"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "P2 - Temple City",
+          "raw": "P2 - Temple City"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 8,
+          "raw": "8"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-39",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-39",
+      "sourceGameNumber": 39,
+      "sourceRow": 47,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "9th",
+      "stageDisplay": "9th place game",
+      "stageMeta": {
+        "raw": "9th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "9th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 9,
+          "loserPlace": 10
+        },
+        "displayLabel": "9th place game"
+      },
+      "venue": "MEMORIAL POOL",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "Q1 - Lamorinda B",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "Q1",
+          "displayName": "Lamorinda B",
+          "participantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "teamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+          "clubId": "club-lamorinda",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        },
+        "dark": {
+          "raw": "Q2 - Davis",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "Q2",
+          "displayName": "Davis",
+          "participantId": "team-2026-12u-girls-davis-12u-girls",
+          "teamId": "team-2026-12u-girls-davis-12u-girls",
+          "clubId": "club-davis",
+          "rankingEligible": true,
+          "identityStatus": "resolved_team",
+          "identityMatchType": "scoped_alias"
+        }
+      },
+      "scores": {
+        "white": 5,
+        "dark": 3,
+        "whiteRaw": "5",
+        "darkRaw": "3",
+        "whiteRegulation": 5,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "winnerTeamId": "team-2026-12u-girls-lamorinda-b-12u-girls",
+        "winnerName": "Lamorinda B",
+        "loserParticipantId": "team-2026-12u-girls-davis-12u-girls",
+        "loserTeamId": "team-2026-12u-girls-davis-12u-girls",
+        "loserName": "Davis"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "Q2 - Davis",
+          "raw": "Q2 - Davis"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 3,
+          "raw": "3"
+        }
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-46",
+      "eventId": "2026-san-diego-county-cup",
+      "divisionId": "12u-girls-division-2",
+      "season": "2026",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "sourceGameId": "SDC-12u-girls-division-2-46",
+      "sourceGameNumber": 46,
+      "sourceRow": 48,
+      "dateLabel": "03-May-2026",
+      "dateIso": "2026-05-03",
+      "timeLabel": "9:30 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "13th",
+      "stageDisplay": "13th place game",
+      "stageMeta": {
+        "raw": "13th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "placement",
+        "roundLabel": "13th place game",
+        "placementRange": null,
+        "placement": {
+          "winnerPlace": 13,
+          "loserPlace": 14
+        },
+        "displayLabel": "13th place game"
+      },
+      "venue": "PARKWAY AQUATIC CENTER",
+      "status": "final",
+      "scoreState": "complete",
+      "participants": {
+        "white": {
+          "raw": "S1 - San Clemente",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "S1",
+          "displayName": "San Clemente",
+          "participantId": "tournament-team-2026-12u-girls-san-clemente",
+          "teamId": null,
+          "clubId": "club-san-clemente",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "S2 - AG Polo",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "S2",
+          "displayName": "AG Polo",
+          "participantId": "tournament-team-2026-12u-girls-ag-polo",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": 9,
+        "dark": 14,
+        "whiteRaw": "9",
+        "darkRaw": "14",
+        "whiteRegulation": 9,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-ag-polo",
+        "winnerTeamId": null,
+        "winnerName": "AG Polo",
+        "loserParticipantId": "tournament-team-2026-12u-girls-san-clemente",
+        "loserTeamId": null,
+        "loserName": "San Clemente"
+      },
+      "advancement": {
+        "winnerTo": {
+          "kind": "slot",
+          "slot": "S2 - AG Polo",
+          "raw": "S2 - AG Polo"
+        },
+        "loserTo": {
+          "kind": "game",
+          "gameNumber": 14,
+          "raw": "14"
+        }
+      }
+    }
+  ]
+}

@@ -23,6 +23,6 @@ req((window.CPI_TOURNAMENT_ARCHIVE.games||[]).length>0,"Archive runtime should c
 req(elements["#archiveGames"].innerHTML.includes("Official source"),"Archive source links did not render");
 req(elements["#archiveGames"].innerHTML.includes("archive-team-link")||elements["#archiveGames"].innerHTML.includes("archive-team-side"),"Archive team/profile rendering did not initialize");
 console.log("TOURNAMENT ARCHIVE UI TESTS PASSED");
-console.log(" - All three completed tournaments render from the normalized archive runtime");
+console.log(" - All five completed tournaments render from the normalized archive runtime");
 console.log(" - Team, club, age, gender, division, and status filtering are wired");
 console.log(" - Profile links and official source traceability render without enabling ranking evidence");

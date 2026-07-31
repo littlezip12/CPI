@@ -15,14 +15,15 @@ ARCHIVE_DIR = ROOT / "data/tournaments/archive"
 CLUBS_PATH = ROOT / "clubs.json"
 RANKINGS_PATH = ROOT / "rankings.json"
 ALIASES_PATH = ROOT / "data/identity/aliases.json"
-RELEASE = "7.54.7"
-BUILD_TIMESTAMP = "2026-07-29T21:10:00-07:00"
+RELEASE = "7.54.8"
+BUILD_TIMESTAMP = "2026-07-30T20:30:00-07:00"
 FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg"
-MIGRATED_EVENT_IDS = ["2026-quiksilver-cup", "2026-boys-futures-super-finals", "2025-evan-cousineau-memorial-cup"]
+MIGRATED_EVENT_IDS = ["2026-quiksilver-cup", "2026-boys-futures-super-finals", "2025-evan-cousineau-memorial-cup", "2026-san-diego-county-cup"]
 PLACEMENT_PATHS = {
     "2026-quiksilver-cup": ROOT / "data/tournaments/quiksilver-cup-2026.json",
     "2026-boys-futures-super-finals": ARCHIVE_DIR / "2026-boys-futures-super-finals.json",
     "2025-evan-cousineau-memorial-cup": ARCHIVE_DIR / "2025-evan-cousineau-memorial-cup.json",
+    "2026-san-diego-county-cup": ARCHIVE_DIR / "2026-san-diego-county-cup.json",
 }
 
 
@@ -138,6 +139,10 @@ def choose_participant_record(
         or (ranked_member or clean_member or preferred).get("participantId")
         or f"tournament-team-{event['season']}-{slug(division.get('ageGroup'))}-{slug(division.get('gender'))}-{slug(name)}"
     )
+    # A tournament may enter the same club/team label in multiple competitive divisions.
+    # Keep each division entry as its own journey while retaining the shared WPI team/club identity.
+    if event.get("id") == "2026-san-diego-county-cup":
+        participant_id = f"{participant_id}--{division['id']}"
     identity_status = "resolved_team" if team_id else "resolved_club_only" if club_id else "unresolved"
     match_type = "platform_placement" if placement else "platform_route_merge"
     if team_id:
@@ -494,7 +499,7 @@ def build_registry(source: dict, bundles: dict[str, dict]) -> dict:
         "schemaVersion": 1,
         "release": RELEASE,
         "generatedAt": BUILD_TIMESTAMP,
-        "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, and the 2025 Evan Cousineau Memorial Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
+        "description": "Shared WPI tournament platform registry. Quiksilver Cup, Boys Futures Super Finals, the 2025 Evan Cousineau Memorial Cup, and the 2026 San Diego County Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
         "platformPath": "tournament.html",
         "schemaPaths": {
             "event": "tournaments/schema/tournament-event.schema.json",
