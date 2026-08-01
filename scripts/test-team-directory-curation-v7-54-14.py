@@ -8,12 +8,17 @@ ROOT = Path(__file__).resolve().parents[1]
 errors = []
 read = lambda rel: (ROOT / rel).read_text(encoding="utf-8")
 site = json.loads(read("config/site-release.json"))
-for key in ("version","publicExperienceRelease","teamDirectoryRelease","sectionLandingRelease"):
-    if site.get(key) != "7.54.14": errors.append(f"{key} must be 7.54.14")
+for key, expected in {
+    "version": "7.54.15",
+    "publicExperienceRelease": "7.54.15",
+    "teamDirectoryRelease": "7.54.14",
+    "sectionLandingRelease": "7.54.15",
+}.items():
+    if site.get(key) != expected: errors.append(f"{key} must be {expected}")
 
 teams = read("teams.html")
 for token in (
-    'css/section-landing-v7-53-4.css?v=7.54.14',
+    'css/section-landing-v7-53-4.css?v=7.54.15',
     'css/teams-directory-v7-53-4.css?v=7.54.14',
     'js/teams-directory-v7-53-4.js?v=7.54.14',
     'id="teamDirectoryEyebrow"',
@@ -25,9 +30,10 @@ if 'wpi-section-hero-facts' in teams: errors.append("Teams hero still contains t
 css = read("css/section-landing-v7-53-4.css")
 for token in (
     '.teams-page .wpi-section-hero--teams',
-    'min-height: 244px',
-    'object-position: center 56%',
-    'min-height: 165px',
+    'height: 276px',
+    'max-height: 276px',
+    'object-position: center 52%',
+    'height: 136px',
 ):
     if token not in css: errors.append(f"compact Teams hero CSS missing {token}")
 

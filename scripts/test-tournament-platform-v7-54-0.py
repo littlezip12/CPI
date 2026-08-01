@@ -18,7 +18,7 @@ if site.get('tournamentSchemaRelease')!='7.54.0': errors.append('tournamentSchem
 if site.get('quiksilverPlatformRelease') not in {'7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'}: errors.append('quiksilverPlatformRelease must preserve the Quiksilver migration')
 if site.get('tournamentPlatformRelease') not in {'7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'}: errors.append('tournamentPlatformRelease must preserve the shared platform')
 if site.get('tournamentRegistryRelease') not in {'7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'}: errors.append('tournamentRegistryRelease must preserve the shared registry')
-if site.get('version') not in {'7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14'}: errors.append('site version must preserve the platform foundation')
+if site.get('version') not in {'7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15'}: errors.append('site version must preserve the platform foundation')
 if registry.get('release') not in {'7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'} or len(registry.get('events',[]))!=10: errors.append('platform registry must contain ten registered events')
 event=next((e for e in registry.get('events',[]) if e.get('id')=='2026-quiksilver-cup'),None)
 if not event or event.get('migrationStatus')!='platform_live': errors.append('Quiksilver Cup must be the first platform-live event')

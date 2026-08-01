@@ -1,12 +1,7 @@
-# WPI 7.54.14
+# WPI 7.54.15 — Compact Team Hero
 
-Team directory curation and compact Teams hero.
-
-- Reduces the Teams hero without replacing the approved underwater team photograph.
-- Keeps the athletes centered in the shorter photo crop on desktop, tablet, and mobile.
-- Replaces the repetitive default all-team list with 25 weekly rotating featured teams.
-- Limits featured eligibility to current top-50 ranked teams.
-- Allows only one featured team per canonical club.
-- Balances selection across available age/gender groups before filling remaining slots.
-- Keeps the complete ranked and tournament-connected directory available through search and filters.
-- Preserves 724 rankings, 182 clubs, 976 JO placements, and all tournament data.
+- Further reduces the Teams landing hero to a fixed 276px desktop height.
+- Narrows the athlete photo panel and keeps the people centered in the crop.
+- Reduces the Teams title, supporting copy, and action footprint.
+- Preserves the 25-team weekly rotating discovery set with one canonical club per card.
+- Leaves rankings, tournament data, identities, logos, and profiles unchanged.

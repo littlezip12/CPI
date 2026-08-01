@@ -184,29 +184,48 @@
 .wpi-section-hero--methodology .wpi-section-kicker { color: #b8c7ff; }
 .wpi-section-hero--teams .wpi-section-kicker { color: #87e4ff; }
 
-/* WPI 7.54.14 — Teams uses the most compact landing treatment. */
+/* WPI 7.54.15 — Teams uses a fixed, substantially smaller landing treatment. */
 .teams-page .wpi-section-hero--teams {
-  min-height: 244px;
-  grid-template-columns: minmax(0, 1.36fr) minmax(300px, .64fr);
+  width: min(1500px, calc(100% - 48px));
+  height: 276px;
+  min-height: 0;
+  max-height: 276px;
+  grid-template-columns: minmax(0, 1.56fr) minmax(280px, .44fr);
 }
 .teams-page .wpi-section-hero--teams .wpi-section-hero-copy {
-  padding: 25px clamp(28px, 3vw, 42px);
+  padding: 20px clamp(26px, 2.7vw, 38px);
+}
+.teams-page .wpi-section-hero--teams .wpi-section-kicker {
+  margin-bottom: 7px;
+  font-size: 12px;
 }
 .teams-page .wpi-section-hero--teams h1 {
-  font-size: clamp(36px, 3.75vw, 52px);
+  max-width: 760px;
+  font-size: clamp(32px, 3vw, 44px);
+  line-height: .98;
 }
 .teams-page .wpi-section-hero--teams .wpi-section-hero-copy > p:not(.wpi-section-kicker) {
-  max-width: 720px;
-  margin-top: 12px;
-  font-size: clamp(15px, 1.1vw, 17px);
+  max-width: 700px;
+  margin-top: 9px;
+  font-size: clamp(14px, 1vw, 16px);
+  line-height: 1.45;
 }
-.teams-page .wpi-section-hero--teams .wpi-section-hero-actions { margin-top: 16px; }
-.teams-page .wpi-section-hero--teams .wpi-section-hero-media,
-.teams-page .wpi-section-hero--teams .wpi-section-hero-media img {
-  min-height: 244px;
+.teams-page .wpi-section-hero--teams .wpi-section-hero-actions {
+  margin-top: 13px;
+  gap: 10px;
+}
+.teams-page .wpi-section-hero--teams .wpi-section-action {
+  min-height: 40px;
+  padding-inline: 16px;
+}
+.teams-page .wpi-section-hero--teams .wpi-section-hero-media {
+  height: 276px;
+  min-height: 0;
 }
 .teams-page .wpi-section-hero--teams .wpi-section-hero-media img {
-  object-position: center 56%;
+  height: 276px;
+  min-height: 0;
+  object-position: center 52%;
 }
 
 /* Remove the oversized legacy landing treatments when the shared hero is present. */
@@ -227,10 +246,19 @@
   .wpi-section-hero-media { min-height: 220px; }
   .wpi-section-hero-media img { min-height: 220px; }
   .wpi-section-hero-media::after { background: linear-gradient(0deg, rgba(7,20,38,.72), transparent 65%); }
-  .teams-page .wpi-section-hero--teams { grid-template-columns: 1fr; }
+  .teams-page .wpi-section-hero--teams {
+    width: min(100% - 32px, 900px);
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    grid-template-columns: 1fr;
+  }
   .teams-page .wpi-section-hero--teams .wpi-section-hero-media,
-  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img { min-height: 180px; }
-  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img { object-position: center 54%; }
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img {
+    height: 150px;
+    min-height: 150px;
+  }
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img { object-position: center 49%; }
 }
 
 @media (max-width: 720px) {
@@ -246,8 +274,14 @@
   .wpi-section-hero-media,
   .wpi-section-hero-media img { min-height: 190px; }
   .wpi-section-hero-media figcaption { display: none; }
-  .teams-page .wpi-section-hero--teams .wpi-section-hero-copy { padding: 24px 21px 22px; }
-  .teams-page .wpi-section-hero--teams h1 { font-size: clamp(34px, 10vw, 44px); }
+  .teams-page .wpi-section-hero--teams {
+    width: min(100% - 22px, 720px);
+  }
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-copy { padding: 20px 18px 18px; }
+  .teams-page .wpi-section-hero--teams h1 { font-size: clamp(30px, 9vw, 40px); }
   .teams-page .wpi-section-hero--teams .wpi-section-hero-media,
-  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img { min-height: 165px; }
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img {
+    height: 136px;
+    min-height: 136px;
+  }
 }

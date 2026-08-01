@@ -19,7 +19,7 @@ EXPECTED={
  '18u-girls-championship':('18U','Girls','18U_F_CHAMP-18 teams',75),
 }
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version') not in {'7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14'}: fail('site version must preserve Session 3')
+if site.get('version') not in {'7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15'}: fail('site version must preserve Session 3')
 if site.get('joSession3Release')!='7.54.6': fail('joSession3Release must be 7.54.6')
 if site.get('joSession3ApplicationRelease')!='7.54.6': fail('joSession3ApplicationRelease must be 7.54.6')
 
