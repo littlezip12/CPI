@@ -10,20 +10,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/site-shell.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.12">
   <link rel="stylesheet" href="css/homepage-wpi-v7-52-4.css?v=7.53.4">
+  <link rel="stylesheet" href="css/homepage-wpi-v7-54-12.css?v=7.54.12">
 </head>
 <body class="wpi-home">
   <main class="wpi-home-main">
     <section class="wpi-hero" aria-labelledby="wpiHeroTitle">
       <div class="wpi-hero-copy">
-        <p class="wpi-kicker">Water Polo Index</p>
-        <h1 id="wpiHeroTitle">One place to find the <span>teams</span>, results, and <em>clubs shaping youth water polo.</em></h1>
-        <p class="wpi-hero-summary">Search post-Junior Olympics rankings for boys and girls, open connected team and club profiles, and trace completed tournament results back to the programs that earned them.</p>
+        <p class="wpi-kicker">Youth water polo, connected</p>
+        <h1 id="wpiHeroTitle">Rankings, results, teams, and clubs—<em>all in one place.</em></h1>
+        <p class="wpi-hero-summary">Search post-Junior Olympics rankings, follow tournament journeys, and open the team and club profiles behind every finish.</p>
         <nav class="wpi-hero-actions" aria-label="Start exploring Water Polo Index">
-          <a class="wpi-button primary" href="rankings.html"><strong>Rankings</strong><span>Eight age and gender groups</span></a>
+          <a class="wpi-button primary" href="rankings.html"><strong>Rankings</strong><span>Current boys and girls order</span></a>
           <a class="wpi-button secondary" href="#find-a-team" data-home-action="team-search"><strong>Find a team</strong><span>Search connected profiles</span></a>
-          <a class="wpi-button secondary" href="clubs.html"><strong>Clubs</strong><span>Programs, teams, and websites</span></a>
+          <a class="wpi-button secondary" href="clubs.html"><strong>Clubs</strong><span>Programs across the country</span></a>
           <a class="wpi-button secondary" href="tournaments.html"><strong>Tournaments</strong><span>Results, schedules, and journeys</span></a>
         </nav>
       </div>
@@ -88,49 +89,40 @@
       </div>
       <div class="wpi-club-layout">
         <div class="wpi-featured-clubs" id="wpiFeaturedClubs" aria-live="polite"></div>
-        <article class="wpi-region-map" aria-labelledby="regionMapTitle">
-          <div class="wpi-region-map-heading"><div><p class="wpi-kicker">Regional directory</p><h3 id="regionMapTitle">Find clubs by region</h3></div><a href="clubs.html">All regions</a></div>
-          <div class="wpi-california-map" role="img" aria-label="Stylized California club region map with clickable region links">
-            <svg viewBox="0 0 430 570" aria-hidden="true">
-              <path class="wpi-state-shape" d="M115 30 L264 42 L286 102 L322 154 L306 226 L344 282 L329 350 L363 420 L314 516 L251 548 L218 493 L190 452 L176 386 L139 335 L135 265 L104 206 L92 137 Z"></path>
-              <path class="wpi-state-line" d="M109 160 L300 164 M126 245 L320 248 M150 334 L336 338 M179 428 L340 430"></path>
+        <article class="wpi-region-map wpi-national-directory" aria-labelledby="regionMapTitle">
+          <div class="wpi-region-map-heading"><div><p class="wpi-kicker">National directory</p><h3 id="regionMapTitle">Explore clubs across the U.S.</h3></div><a href="clubs.html">All clubs</a></div>
+          <div class="wpi-us-directory" role="img" aria-label="Stylized United States map showing Water Polo Index coverage in California and other states">
+            <svg viewBox="0 0 640 330" aria-hidden="true">
+              <path class="wpi-us-shape" d="M54 73 126 51 194 59 250 48 314 65 375 56 437 70 492 65 557 89 589 122 571 151 536 158 523 192 480 202 446 229 397 224 361 252 316 241 272 260 226 244 189 220 142 217 111 192 76 183 58 145Z"></path>
+              <path class="wpi-us-california" d="M54 73 74 91 71 127 84 154 76 183 58 145Z"></path>
+              <path class="wpi-us-island" d="M102 274 132 264 151 279 126 292Z"></path>
+              <path class="wpi-us-island" d="M184 287 194 282 204 287 194 292Z M213 291 221 288 228 293 219 297Z"></path>
+              <circle cx="459" cy="119" r="5"></circle><circle cx="393" cy="107" r="5"></circle><circle cx="334" cy="105" r="5"></circle><circle cx="277" cy="113" r="5"></circle><circle cx="515" cy="150" r="5"></circle><circle cx="433" cy="181" r="5"></circle><circle cx="365" cy="180" r="5"></circle><circle cx="168" cy="109" r="5"></circle>
             </svg>
-            <a class="region-point sacramento" href="clubs.html?region=Sacramento#club-directory"><span>Sacramento</span></a>
-            <a class="region-point east-bay" href="clubs.html?region=East%20Bay#club-directory"><span>East Bay</span></a>
-            <a class="region-point peninsula" href="clubs.html?region=Peninsula%20%2F%20San%20Francisco#club-directory"><span>Peninsula / SF</span></a>
-            <a class="region-point central-valley" href="clubs.html?region=Central%20Valley#club-directory"><span>Central Valley</span></a>
-            <a class="region-point central-coast" href="clubs.html?region=Central%20Coast#club-directory"><span>Central Coast</span></a>
-            <a class="region-point los-angeles" href="clubs.html?region=Los%20Angeles#club-directory"><span>Los Angeles</span></a>
-            <a class="region-point orange-county" href="clubs.html?region=Orange%20County#club-directory"><span>Orange County</span></a>
-            <a class="region-point inland-empire" href="clubs.html?region=Inland%20Empire#club-directory"><span>Inland Empire</span></a>
-            <a class="region-point san-diego" href="clubs.html?region=San%20Diego#club-directory"><span>San Diego</span></a>
+            <a class="wpi-map-stat wpi-map-stat--california" href="clubs.html#club-directory"><strong id="wpiCaliforniaClubCount">—</strong><span>California clubs</span></a>
+            <a class="wpi-map-stat wpi-map-stat--national" href="clubs.html?region=Out%20of%20State#club-directory"><strong id="wpiNationalClubCount">—</strong><span>Outside California</span></a>
           </div>
-          <a class="wpi-out-of-state" href="clubs.html?region=Out%20of%20State#club-directory">Explore out-of-state clubs →</a>
+          <div class="wpi-california-region-grid" aria-label="Filter California clubs by region">
+            <a href="clubs.html?region=Sacramento#club-directory">Sacramento</a>
+            <a href="clubs.html?region=East%20Bay#club-directory">East Bay</a>
+            <a href="clubs.html?region=Peninsula%20%2F%20San%20Francisco#club-directory">Peninsula / SF</a>
+            <a href="clubs.html?region=Central%20Valley#club-directory">Central Valley</a>
+            <a href="clubs.html?region=Central%20Coast#club-directory">Central Coast</a>
+            <a href="clubs.html?region=Los%20Angeles#club-directory">Los Angeles</a>
+            <a href="clubs.html?region=Orange%20County#club-directory">Orange County</a>
+            <a href="clubs.html?region=Inland%20Empire#club-directory">Inland Empire</a>
+            <a href="clubs.html?region=San%20Diego#club-directory">San Diego</a>
+          </div>
         </article>
       </div>
-    </section>
-
-    <section class="wpi-section wpi-bottom-grid">
-      <article class="wpi-method-card">
-        <div class="wpi-section-heading compact-heading"><div><p class="wpi-kicker">Transparent methodology</p><h2>How rankings work</h2></div><a class="wpi-text-link" href="methodology.html">Full methodology →</a></div>
-        <div class="wpi-method-grid">
-          <a href="tournaments.html"><span>01</span><strong>Tournament results</strong><p>Division, subdivision, placement, and verified head-to-head evidence establish the competitive bands.</p></a>
-          <a href="rankings.html"><span>02</span><strong>Full-season context</strong><p>Strength of schedule, common opponents, and prior events resolve the closest teams.</p></a>
-          <a href="methodology.html"><span>03</span><strong>Manual identity review</strong><p>Club aliases and A/B/C/D team depth are reviewed before changes are published.</p></a>
-        </div>
-      </article>
-      <article class="wpi-updates-card" id="explore-wpi">
-        <div class="wpi-section-heading compact-heading"><div><p class="wpi-kicker">Connected platform</p><h2>Choose where to start</h2></div></div>
-        <div class="wpi-update-list" id="wpiExploreList"></div>
-      </article>
     </section>
   </main>
 
   <script src="data.js?v=7.53.4"></script>
   <script src="data/identity/runtime.js?v=7.53.4"></script>
   <script src="js/cpi-identity.js?v=7.53.4"></script>
-  <script src="js/homepage-wpi-v7-52-4.js?v=7.53.4"></script>
+  <script src="js/homepage-wpi-v7-52-4.js?v=7.54.12"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
-  <script defer src="js/site-shell.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.12"></script>
 </body>
 </html>

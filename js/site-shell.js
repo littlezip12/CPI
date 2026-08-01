@@ -1,4 +1,4 @@
-/* WPI universal site shell — release 7.53.4 */
+/* WPI universal site shell — release 7.54.12 */
 (function () {
   const navItems = [
     { label: "Home", href: "index.html", matches: path => !path || path === "index.html" },
@@ -9,18 +9,6 @@
     { label: "Methodology", href: "methodology.html", matches: path => path === "methodology.html" }
   ];
 
-  const quickLinks = [
-    { label: "12U Boys", href: "rankings.html?group=12u-boys" },
-    { label: "12U Girls", href: "rankings.html?group=12u-girls" },
-    { label: "14U Boys", href: "rankings.html?group=14u-boys" },
-    { label: "14U Girls", href: "rankings.html?group=14u-girls" },
-    { label: "16U Boys", href: "rankings.html?group=16u-boys" },
-    { label: "16U Girls", href: "rankings.html?group=16u-girls" },
-    { label: "18U Boys", href: "rankings.html?group=18u-boys" },
-    { label: "18U Girls", href: "rankings.html?group=18u-girls" },
-    { label: "JO Results", href: "tournaments.html#jo-results" },
-    { label: "Find a Team", href: "teams.html#team-directory" }
-  ];
 
   function shellScriptUrl() {
     const scripts = Array.from(document.scripts);
@@ -50,8 +38,6 @@
     const nav = navItems.map(item =>
       `<a class="cpi-shell-nav-link ${item.matches(path) ? "is-active" : ""}" href="${makeHref(item.href)}">${item.label}</a>`
     ).join("");
-    const quick = quickLinks.map(item => `<a href="${makeHref(item.href)}">${item.label}</a>`).join("");
-
     return `<header class="cpi-shell-header" data-cpi-shell="header">
       <div class="cpi-shell-nav">
         <a class="cpi-shell-brand" href="${makeHref("index.html")}" aria-label="Water Polo Index Home">
@@ -64,7 +50,6 @@
         <nav class="cpi-shell-links" aria-label="Primary navigation">${nav}</nav>
         <a class="cpi-shell-search" href="${makeHref("teams.html#team-directory")}" data-shell-search><span>Find a team</span></a>
       </div>
-      <div class="cpi-shell-quick" aria-label="Quick ranking links">${quick}</div>
     </header>`;
   }
 

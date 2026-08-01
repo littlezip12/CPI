@@ -12,7 +12,7 @@ rankings=load('rankings.json')
 identity=load('data/identity/clubs.json')
 release=load('data/club-location-release-7.52.5.json')
 required=['city','country','locationLabel','region','metroRegion','macroRegion','locationConfidence','locationSource']
-if site.get('version') not in {'7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'}: fail('site release must preserve the 7.52.5 location release or a later 7.52.x presentation release')
+if site.get('version') not in {'7.52.5','7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12'}: fail('site release must preserve the 7.52.5 location release or a later 7.52.x presentation release')
 if site.get('clubLocationRelease')!='7.52.5': fail('clubLocationRelease must be 7.52.5')
 if len(clubs)!=182: fail(f'expected 182 clubs, found {len(clubs)}')
 if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')

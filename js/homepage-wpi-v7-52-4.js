@@ -216,27 +216,31 @@
     if (!target) return;
     const candidates = clubs.map((club) => ({ club, metric: clubMetric(club) }))
       .filter(({ club, metric }) => metric.teams > 0 && club.region && !/review|tbd/i.test(club.region) && !String(logo(club)).includes("fallback"))
-      .sort((a, b) => b.metric.teams - a.metric.teams || a.metric.best - b.metric.best);
+      .sort((a, b) => b.metric.teams - a.metric.teams || a.metric.best - b.metric.best || String(a.club.displayName || a.club.club).localeCompare(String(b.club.displayName || b.club.club)));
     const chosen = [];
+    const chosenSlugs = new Set();
     const regions = new Set();
     for (const item of candidates) {
-      if (regions.has(item.club.region) && chosen.length < 2) continue;
-      chosen.push(item); regions.add(item.club.region);
-      if (chosen.length === 3) break;
+      if (regions.has(item.club.region)) continue;
+      chosen.push(item);
+      chosenSlugs.add(item.club.slug);
+      regions.add(item.club.region);
+      if (chosen.length === 6) break;
     }
-    target.innerHTML = chosen.map(({ club, metric }) => `<a class="wpi-club-card" href="${escapeHtml(clubLink(club))}"><img src="${escapeHtml(logo(club))}" alt="${escapeHtml(club.displayName || club.club)} logo" onerror="this.onerror=null;this.src='${fallbackLogo}'"><strong>${escapeHtml(club.displayName || club.club)}</strong><span>${escapeHtml(club.region)} · ${metric.teams} ranked team${metric.teams === 1 ? "" : "s"}</span><em>View club profile →</em></a>`).join("");
-  }
+    for (const item of candidates) {
+      if (chosen.length === 6) break;
+      if (chosenSlugs.has(item.club.slug)) continue;
+      chosen.push(item);
+      chosenSlugs.add(item.club.slug);
+    }
+    target.innerHTML = chosen.map(({ club, metric }) => `<a class="wpi-club-card" href="${escapeHtml(clubLink(club))}"><img src="${escapeHtml(logo(club))}" alt="${escapeHtml(club.displayName || club.club)} logo" onerror="this.onerror=null;this.src='${fallbackLogo}'"><strong>${escapeHtml(club.displayName || club.club)}</strong><span>${escapeHtml(club.region)} · ${metric.teams} ranked team${metric.teams === 1 ? "" : "s"}</span><em>View profile →</em></a>`).join("");
 
-  function renderExploreGuide() {
-    const target = $("#wpiExploreList");
-    if (!target) return;
-    const items = [
-      { title: "Find a team profile", summary: "Search ranked teams and open their connected club and tournament history.", url: "#find-a-team", action: "team-search" },
-      { title: "Browse club intelligence", summary: "Review teams, rankings, tournament finishes, locations, and club websites.", url: "clubs.html" },
-      { title: "Search tournament results", summary: "Open completed events, placements, schedules, and team journeys.", url: "tournaments.html" },
-      { title: "Understand the rankings", summary: "Review the evidence model, identity rules, and ranking methodology.", url: "methodology.html" }
-    ];
-    target.innerHTML = items.map((item) => `<a class="wpi-update-item" href="${escapeHtml(item.url)}"${item.action ? ` data-home-action="${item.action}"` : ""}><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.summary)}</span><em>→</em></a>`).join("");
+    const outsideCalifornia = clubs.filter((club) => club.region === "Out of State").length;
+    const california = clubs.length - outsideCalifornia;
+    const californiaCount = $("#wpiCaliforniaClubCount");
+    const nationalCount = $("#wpiNationalClubCount");
+    if (californiaCount) californiaCount.textContent = california.toLocaleString();
+    if (nationalCount) nationalCount.textContent = outsideCalifornia.toLocaleString();
   }
 
   function focusTeamSearch(event) {
@@ -263,7 +267,6 @@
   renderRankings("Boys");
   bindRankingToggle();
   renderFeaturedClubs();
-  renderExploreGuide();
   bindHomepagePathways();
   bindResultsControls();
 

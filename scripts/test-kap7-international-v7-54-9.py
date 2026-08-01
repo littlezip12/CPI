@@ -10,7 +10,7 @@ registry=load('data/tournaments/platform/registry.json')
 bundle=load('data/tournaments/platform/events/2026-kap7-international.json')
 placements=load('data/tournaments/archive/2026-kap7-international.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version')!='7.54.11': errors.append('site version must be 7.54.11')
+if site.get('version') not in {'7.54.11','7.54.12'}: errors.append('site version must be 7.54.11')
 if site.get('kap7InternationalPlatformRelease')!='7.54.10': errors.append('KAP7 release metadata missing')
 expected={'divisionCount':18,'gameCount':579,'finalGameCount':578,'scheduledGameCount':1,'teamCount':280,'placementCount':136,'venueCount':25,'dateCount':2}
 for key,value in expected.items():

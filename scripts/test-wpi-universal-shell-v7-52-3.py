@@ -13,8 +13,8 @@ for path in html_files:
     text = path.read_text(encoding='utf-8', errors='ignore')
     depth = len(rel.parent.parts)
     prefix = '../' * depth
-    css = f'{prefix}css/site-shell.css?v=7.53.4'
-    js = f'{prefix}js/site-shell.js?v=7.53.4'
+    css = f'{prefix}css/site-shell.css?v=7.54.12'
+    js = f'{prefix}js/site-shell.js?v=7.54.12'
     if text.count('site-shell.css') != 1:
         errors.append(f'{rel}: expected exactly one site-shell.css reference')
     if text.count('site-shell.js') != 1:
@@ -54,6 +54,9 @@ for token in [
 ]:
     if token not in shell:
         errors.append(f'js/site-shell.js missing required token: {token}')
+for forbidden in ['const quickLinks', 'cpi-shell-quick', 'Quick ranking links']:
+    if forbidden in shell:
+        errors.append(f'js/site-shell.js retains removed quick-link rail: {forbidden}')
 
 
 palette = (ROOT / 'js/command-palette.js').read_text(encoding='utf-8')
@@ -64,12 +67,12 @@ if 'depth +' in palette:
     errors.append('js/command-palette.js retains legacy depth-prefix URL construction')
 
 builder = (ROOT / 'scripts/build-club-pages.py').read_text(encoding='utf-8')
-for token in ['Water Polo Index', '../css/site-shell.css?v=7.53.4', '../js/site-shell.js?v=7.53.4', '../css/command-palette.css?v=7.53.4', '../js/command-palette.js?v=7.53.4']:
+for token in ['Water Polo Index', '../css/site-shell.css?v=7.54.12', '../js/site-shell.js?v=7.54.12', '../css/command-palette.css?v=7.53.4', '../js/command-palette.js?v=7.53.4']:
     if token not in builder:
         errors.append(f'scripts/build-club-pages.py missing required shell token: {token}')
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
-if site.get('version') not in {'7.52.3', '7.52.4', '7.52.5', '7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'}:
+if site.get('version') not in {'7.52.3', '7.52.4', '7.52.5', '7.52.6','7.52.7','7.52.8','7.52.9','7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12'}:
     errors.append('config/site-release.json version must preserve the 7.52.3 WPI shell or a later 7.52.x presentation release')
 if site.get('brandRelease') != '7.53.4':
     errors.append('config/site-release.json brandRelease must be 7.53.4')

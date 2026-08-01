@@ -8,7 +8,7 @@ site=load('config/site-release.json')
 bundle=load('data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json')
 placements=load('data/tournaments/archive/2025-evan-cousineau-memorial-cup.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'}: errors.append('site version must preserve the 7.54.7 Evan Cousineau release')
+if site.get('version') not in {'7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12'}: errors.append('site version must preserve the 7.54.7 Evan Cousineau release')
 if site.get('evanCousineauPlatformRelease')!='7.54.7': errors.append('Evan Cousineau release metadata missing')
 expected={'divisionCount':15,'gameCount':348,'finalGameCount':348,'scheduledGameCount':0,'teamCount':169,'placementCount':105,'venueCount':15,'dateCount':2}
 for k,v in expected.items():

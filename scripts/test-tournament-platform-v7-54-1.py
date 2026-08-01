@@ -22,7 +22,7 @@ if site.get("tournamentRegistryRelease") not in {"7.54.1", "7.54.2", "7.54.3", "
     errors.append("tournamentRegistryRelease must preserve 7.54.1")
 if site.get("boysFuturesPlatformRelease") != "7.54.1":
     errors.append("boysFuturesPlatformRelease must remain 7.54.1")
-if site.get("version") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
+if site.get("version") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11","7.54.12"}:
     errors.append("site version must preserve the Boys Futures migration")
 if registry.get("release") not in {"7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"} or len(registry.get("events", [])) != 10:
     errors.append("platform registry must contain ten registered events")
