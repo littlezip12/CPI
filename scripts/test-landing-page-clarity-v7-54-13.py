@@ -11,9 +11,16 @@ def read(rel):
     return (ROOT / rel).read_text(encoding='utf-8')
 
 site = json.loads(read('config/site-release.json'))
-for key in ('version','homepageRelease','navigationRelease','publicExperienceRelease','sectionLandingRelease'):
-    if site.get(key) != '7.54.13':
-        errors.append(f'{key} must be 7.54.13')
+expected_release_values = {
+    'version': {'7.54.13','7.54.14'},
+    'homepageRelease': {'7.54.13'},
+    'navigationRelease': {'7.54.13'},
+    'publicExperienceRelease': {'7.54.13','7.54.14'},
+    'sectionLandingRelease': {'7.54.13','7.54.14'},
+}
+for key, allowed in expected_release_values.items():
+    if site.get(key) not in allowed:
+        errors.append(f'{key} must preserve the 7.54.13 landing release')
 
 home = read('index.html')
 shell = read('js/site-shell.js')

@@ -9,12 +9,12 @@ errors = []
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
 for key, expected in {
-    'version': '7.54.13',
+    'version': '7.54.14',
     'brandRelease': '7.53.4',
     'navigationRelease': '7.54.13',
-    'publicExperienceRelease': '7.54.13',
-    'teamDirectoryRelease': '7.53.6',
-    'sectionLandingRelease': '7.54.13',
+    'publicExperienceRelease': '7.54.14',
+    'teamDirectoryRelease': '7.54.14',
+    'sectionLandingRelease': '7.54.14',
 }.items():
     if site.get(key) != expected:
         errors.append(f'config/site-release.json {key} must be {expected}')
@@ -59,8 +59,8 @@ for token in [
     'id="teamGroupFilter"',
     'id="teamTypeFilter"',
     'id="teamDirectoryGrid"',
-    'js/teams-directory-v7-53-4.js?v=7.53.6',
-    'css/teams-directory-v7-53-4.css?v=7.53.4',
+    'js/teams-directory-v7-53-4.js?v=7.54.14',
+    'css/teams-directory-v7-53-4.css?v=7.54.14',
     'wpi-section-hero--teams',
 ]:
     if token not in teams:
@@ -80,7 +80,7 @@ section_pages = {
 }
 for rel, modifier in section_pages.items():
     text = (ROOT / rel).read_text(encoding='utf-8')
-    if ('css/section-landing-v7-53-4.css?v=7.53.4' not in text and 'css/section-landing-v7-53-4.css?v=7.53.5' not in text and 'css/section-landing-v7-53-4.css?v=7.54.13' not in text):
+    if ('css/section-landing-v7-53-4.css?v=7.53.4' not in text and 'css/section-landing-v7-53-4.css?v=7.53.5' not in text and 'css/section-landing-v7-53-4.css?v=7.54.13' not in text and 'css/section-landing-v7-53-4.css?v=7.54.14' not in text):
         errors.append(f'{rel} does not load the shared section landing stylesheet')
     if modifier not in text:
         errors.append(f'{rel} missing shared hero modifier {modifier}')
@@ -103,7 +103,7 @@ stale_cache = []
 for path in ROOT.rglob('*.html'):
     text = path.read_text(encoding='utf-8', errors='ignore')
     for match in re.finditer(r'\?v=(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9.-]+)?)', text):
-        if match.group(1) not in {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13'}:
+        if match.group(1) not in {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14'}:
             stale_cache.append(f'{path.relative_to(ROOT)}:{match.group(1)}')
             break
 if stale_cache:

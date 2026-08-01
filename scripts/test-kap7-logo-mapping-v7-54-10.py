@@ -9,7 +9,7 @@ site = load('config/site-release.json')
 bundle = load('data/tournaments/platform/events/2026-kap7-international.json')
 source_registry = load('data/tournaments/registry.json')
 
-if site.get('version') not in {'7.54.11','7.54.12','7.54.13'}:
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14'}:
     errors.append('site version must be 7.54.11')
 if site.get('kap7LogoMappingRelease') != '7.54.10':
     errors.append('kap7LogoMappingRelease must be 7.54.10')

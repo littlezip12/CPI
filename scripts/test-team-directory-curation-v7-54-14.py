@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import json
+import re
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+errors = []
+read = lambda rel: (ROOT / rel).read_text(encoding="utf-8")
+site = json.loads(read("config/site-release.json"))
+for key in ("version","publicExperienceRelease","teamDirectoryRelease","sectionLandingRelease"):
+    if site.get(key) != "7.54.14": errors.append(f"{key} must be 7.54.14")
+
+teams = read("teams.html")
+for token in (
+    'css/section-landing-v7-53-4.css?v=7.54.14',
+    'css/teams-directory-v7-53-4.css?v=7.54.14',
+    'js/teams-directory-v7-53-4.js?v=7.54.14',
+    'id="teamDirectoryEyebrow"',
+    '25 teams to explore',
+):
+    if token not in teams: errors.append(f"teams.html missing {token}")
+if 'wpi-section-hero-facts' in teams: errors.append("Teams hero still contains the oversized fact grid")
+
+css = read("css/section-landing-v7-53-4.css")
+for token in (
+    '.teams-page .wpi-section-hero--teams',
+    'min-height: 244px',
+    'object-position: center 56%',
+    'min-height: 165px',
+):
+    if token not in css: errors.append(f"compact Teams hero CSS missing {token}")
+
+runtime = read("js/teams-directory-v7-53-4.js")
+for token in (
+    'const FEATURED_LIMIT = 25',
+    'const FEATURED_MAX_RANK = 50',
+    'function buildFeaturedRecords',
+    'usedClubs.has(team.clubKey)',
+    'rotates weekly',
+    'function isFeaturedView',
+):
+    if token not in runtime: errors.append(f"directory runtime missing {token}")
+
+rankings = json.loads(read("rankings.json"))
+clubs = json.loads(read("clubs.json"))
+jo = json.loads(read("data/tournaments/jo-results-2026.json"))
+eligible = [team for team in rankings if int(team.get("postRank") or 999) <= 50]
+unique_clubs = {team.get("canonicalClubId") or team.get("clubSlug") or team.get("club") for team in eligible}
+groups = {team.get("group") for team in eligible}
+if len(eligible) != 400: errors.append(f"expected 400 current top-50 candidates, found {len(eligible)}")
+if len(unique_clubs) < 25: errors.append(f"only {len(unique_clubs)} unique clubs are eligible")
+if len(groups) != 8: errors.append(f"expected 8 ranked age/gender groups, found {len(groups)}")
+if len(rankings) != 724: errors.append(f"expected 724 rankings, found {len(rankings)}")
+if len(clubs) != 182: errors.append(f"expected 182 clubs, found {len(clubs)}")
+if jo.get("summary",{}).get("teamPlacements") != 976: errors.append("expected 976 JO placements")
+
+if errors:
+    print("WPI TEAM DIRECTORY CURATION 7.54.14 TEST FAILED")
+    for error in errors: print(f" - {error}")
+    sys.exit(1)
+print("WPI TEAM DIRECTORY CURATION 7.54.14 TEST PASSED")
+print(" - Teams uses a shorter athlete-centered hero")
+print(" - Default discovery shows 25 weekly rotating current top-50 teams with one team per club")
+print(" - Search and filters retain access to the complete team directory")
+print(" - 724 rankings, 182 clubs, and 976 JO placements remain unchanged")

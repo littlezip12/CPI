@@ -184,6 +184,31 @@
 .wpi-section-hero--methodology .wpi-section-kicker { color: #b8c7ff; }
 .wpi-section-hero--teams .wpi-section-kicker { color: #87e4ff; }
 
+/* WPI 7.54.14 — Teams uses the most compact landing treatment. */
+.teams-page .wpi-section-hero--teams {
+  min-height: 244px;
+  grid-template-columns: minmax(0, 1.36fr) minmax(300px, .64fr);
+}
+.teams-page .wpi-section-hero--teams .wpi-section-hero-copy {
+  padding: 25px clamp(28px, 3vw, 42px);
+}
+.teams-page .wpi-section-hero--teams h1 {
+  font-size: clamp(36px, 3.75vw, 52px);
+}
+.teams-page .wpi-section-hero--teams .wpi-section-hero-copy > p:not(.wpi-section-kicker) {
+  max-width: 720px;
+  margin-top: 12px;
+  font-size: clamp(15px, 1.1vw, 17px);
+}
+.teams-page .wpi-section-hero--teams .wpi-section-hero-actions { margin-top: 16px; }
+.teams-page .wpi-section-hero--teams .wpi-section-hero-media,
+.teams-page .wpi-section-hero--teams .wpi-section-hero-media img {
+  min-height: 244px;
+}
+.teams-page .wpi-section-hero--teams .wpi-section-hero-media img {
+  object-position: center 56%;
+}
+
 /* Remove the oversized legacy landing treatments when the shared hero is present. */
 .rankings-page .wpi-section-hero,
 .club-intelligence-page .wpi-section-hero,
@@ -202,6 +227,10 @@
   .wpi-section-hero-media { min-height: 220px; }
   .wpi-section-hero-media img { min-height: 220px; }
   .wpi-section-hero-media::after { background: linear-gradient(0deg, rgba(7,20,38,.72), transparent 65%); }
+  .teams-page .wpi-section-hero--teams { grid-template-columns: 1fr; }
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-media,
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img { min-height: 180px; }
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img { object-position: center 54%; }
 }
 
 @media (max-width: 720px) {
@@ -217,4 +246,8 @@
   .wpi-section-hero-media,
   .wpi-section-hero-media img { min-height: 190px; }
   .wpi-section-hero-media figcaption { display: none; }
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-copy { padding: 24px 21px 22px; }
+  .teams-page .wpi-section-hero--teams h1 { font-size: clamp(34px, 10vw, 44px); }
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-media,
+  .teams-page .wpi-section-hero--teams .wpi-section-hero-media img { min-height: 165px; }
 }

@@ -7,8 +7,8 @@ const read = rel => fs.readFileSync(path.join(ROOT, rel), 'utf8');
 const fail = message => { console.error(`TEAM DIRECTORY LOGO 7.53.6 TEST FAILED\n - ${message}`); process.exit(1); };
 
 const site = JSON.parse(read('config/site-release.json'));
-if (!['7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13'].includes(site.version)) fail('site version must preserve the 7.53.6 logo release');
-if (site.teamDirectoryRelease !== '7.53.6') fail('teamDirectoryRelease must be 7.53.6');
+if (!['7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14'].includes(site.version)) fail('site version must preserve the 7.53.6 logo release');
+if (!['7.53.6','7.54.14'].includes(site.teamDirectoryRelease)) fail('teamDirectoryRelease must preserve the 7.53.6 logo-enabled directory');
 if (site.teamDirectoryLogoRelease !== '7.53.6') fail('teamDirectoryLogoRelease must be 7.53.6');
 
 const html = read('teams.html');
@@ -16,7 +16,7 @@ const required = [
   'data/identity/runtime.js?v=7.53.6',
   'js/cpi-identity.js?v=7.53.6',
   'data/tournaments/jo-profile-runtime.js?v=7.53.4',
-  'js/teams-directory-v7-53-4.js?v=7.53.6'
+  'js/teams-directory-v7-53-4.js?v=7.54.14'
 ];
 for (const token of required) if (!html.includes(token)) fail(`teams.html missing ${token}`);
 const positions = required.map(token => html.indexOf(token));

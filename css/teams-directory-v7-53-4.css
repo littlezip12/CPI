@@ -36,7 +36,7 @@
   justify-content: space-between;
   gap: 18px;
   align-items: end;
-  padding: 34px 4px 20px;
+  padding: 28px 4px 18px;
 }
 .teams-directory-summary p { margin: 0 0 7px; color: #126dff; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; font-size: 12px; }
 .teams-directory-summary h2 { margin: 0; color: #071426; font-size: clamp(31px, 4vw, 52px); letter-spacing: -.045em; }
@@ -99,3 +99,8 @@
   .teams-grid { grid-template-columns: 1fr; }
   .teams-directory-summary { align-items: flex-start; flex-direction: column; }
 }
+
+/* WPI 7.54.14 — featured-team default state */
+.teams-directory-summary p { transition: color .16s ease; }
+.teams-directory-count { max-width: 420px; text-align: right; line-height: 1.45; }
+@media (max-width: 600px) { .teams-directory-count { max-width: none; text-align: left; } }
