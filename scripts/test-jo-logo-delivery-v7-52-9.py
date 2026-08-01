@@ -23,7 +23,7 @@ def ordered(text: str, tokens: list[str], label: str) -> None:
 
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
-if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12'}:
+if site.get('version') not in {'7.52.10','7.52.11','7.52.12','7.52.13','7.52.14','7.52.15','7.52.16','7.53.0','7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13'}:
     fail('site release must preserve JO logo delivery 7.52.10 or later')
 if site.get('identityRelease') != '7.52.13':
     fail('identityRelease must remain 7.52.13')
@@ -50,7 +50,7 @@ ordered(index, [
     'data.js?v=7.53.4',
     'data/identity/runtime.js?v=7.53.4',
     'js/cpi-identity.js?v=7.53.4',
-    'js/homepage-wpi-v7-52-4.js?v=7.54.12',
+    'js/homepage-wpi-v7-52-4.js?v=7.54.13',
 ], 'index.html')
 ordered(tournaments, [
     'data.js?v=7.53.4',

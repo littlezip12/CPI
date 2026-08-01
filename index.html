@@ -10,20 +10,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/site-shell.css?v=7.54.12">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/homepage-wpi-v7-52-4.css?v=7.53.4">
-  <link rel="stylesheet" href="css/homepage-wpi-v7-54-12.css?v=7.54.12">
+  <link rel="stylesheet" href="css/homepage-wpi-v7-54-12.css?v=7.54.13">
 </head>
 <body class="wpi-home">
   <main class="wpi-home-main">
     <section class="wpi-hero" aria-labelledby="wpiHeroTitle">
       <div class="wpi-hero-copy">
-        <p class="wpi-kicker">Youth water polo, connected</p>
-        <h1 id="wpiHeroTitle">Rankings, results, teams, and clubs—<em>all in one place.</em></h1>
-        <p class="wpi-hero-summary">Search post-Junior Olympics rankings, follow tournament journeys, and open the team and club profiles behind every finish.</p>
+        <p class="wpi-kicker">Water Polo Index</p>
+        <h1 id="wpiHeroTitle">Know the teams. <em>Follow the season.</em></h1>
+        <p class="wpi-hero-summary">Independent youth water polo rankings, tournament results, and connected team and club profiles—all in one place.</p>
         <nav class="wpi-hero-actions" aria-label="Start exploring Water Polo Index">
           <a class="wpi-button primary" href="rankings.html"><strong>Rankings</strong><span>Current boys and girls order</span></a>
-          <a class="wpi-button secondary" href="#find-a-team" data-home-action="team-search"><strong>Find a team</strong><span>Search connected profiles</span></a>
+          <a class="wpi-button secondary" href="teams.html#team-directory"><strong>Find a team</strong><span>Open the team directory</span></a>
           <a class="wpi-button secondary" href="clubs.html"><strong>Clubs</strong><span>Programs across the country</span></a>
           <a class="wpi-button secondary" href="tournaments.html"><strong>Tournaments</strong><span>Results, schedules, and journeys</span></a>
         </nav>
@@ -57,7 +57,7 @@
 
     <section class="wpi-section" aria-labelledby="rankingsTitle">
       <div class="wpi-section-heading">
-        <div><p class="wpi-kicker">Current order</p><h2 id="rankingsTitle">Explore rankings</h2></div>
+        <div><p class="wpi-kicker">Post-Junior Olympics rankings</p><h2 id="rankingsTitle">Explore rankings</h2></div>
         <div class="wpi-toggle" id="wpiGenderToggle" aria-label="Select rankings gender">
           <button class="is-active" type="button" data-gender="Boys">Boys</button>
           <button type="button" data-gender="Girls">Girls</button>
@@ -91,16 +91,10 @@
         <div class="wpi-featured-clubs" id="wpiFeaturedClubs" aria-live="polite"></div>
         <article class="wpi-region-map wpi-national-directory" aria-labelledby="regionMapTitle">
           <div class="wpi-region-map-heading"><div><p class="wpi-kicker">National directory</p><h3 id="regionMapTitle">Explore clubs across the U.S.</h3></div><a href="clubs.html">All clubs</a></div>
-          <div class="wpi-us-directory" role="img" aria-label="Stylized United States map showing Water Polo Index coverage in California and other states">
-            <svg viewBox="0 0 640 330" aria-hidden="true">
-              <path class="wpi-us-shape" d="M54 73 126 51 194 59 250 48 314 65 375 56 437 70 492 65 557 89 589 122 571 151 536 158 523 192 480 202 446 229 397 224 361 252 316 241 272 260 226 244 189 220 142 217 111 192 76 183 58 145Z"></path>
-              <path class="wpi-us-california" d="M54 73 74 91 71 127 84 154 76 183 58 145Z"></path>
-              <path class="wpi-us-island" d="M102 274 132 264 151 279 126 292Z"></path>
-              <path class="wpi-us-island" d="M184 287 194 282 204 287 194 292Z M213 291 221 288 228 293 219 297Z"></path>
-              <circle cx="459" cy="119" r="5"></circle><circle cx="393" cy="107" r="5"></circle><circle cx="334" cy="105" r="5"></circle><circle cx="277" cy="113" r="5"></circle><circle cx="515" cy="150" r="5"></circle><circle cx="433" cy="181" r="5"></circle><circle cx="365" cy="180" r="5"></circle><circle cx="168" cy="109" r="5"></circle>
-            </svg>
-            <a class="wpi-map-stat wpi-map-stat--california" href="clubs.html#club-directory"><strong id="wpiCaliforniaClubCount">—</strong><span>California clubs</span></a>
-            <a class="wpi-map-stat wpi-map-stat--national" href="clubs.html?region=Out%20of%20State#club-directory"><strong id="wpiNationalClubCount">—</strong><span>Outside California</span></a>
+          <p class="wpi-directory-intro">Start with a California region or open the complete national club directory.</p>
+          <div class="wpi-directory-summary" aria-label="Water Polo Index club directory coverage">
+            <a href="clubs.html#club-directory"><span>California directory</span><strong id="wpiCaliforniaClubCount">—</strong><em>clubs across nine regions</em></a>
+            <a href="clubs.html?region=Out%20of%20State#club-directory"><span>Outside California</span><strong id="wpiNationalClubCount">—</strong><em>clubs in the national directory</em></a>
           </div>
           <div class="wpi-california-region-grid" aria-label="Filter California clubs by region">
             <a href="clubs.html?region=Sacramento#club-directory">Sacramento</a>
@@ -121,8 +115,8 @@
   <script src="data.js?v=7.53.4"></script>
   <script src="data/identity/runtime.js?v=7.53.4"></script>
   <script src="js/cpi-identity.js?v=7.53.4"></script>
-  <script src="js/homepage-wpi-v7-52-4.js?v=7.54.12"></script>
+  <script src="js/homepage-wpi-v7-52-4.js?v=7.54.13"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
-  <script defer src="js/site-shell.js?v=7.54.12"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
 </html>

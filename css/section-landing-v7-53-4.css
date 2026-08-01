@@ -1,4 +1,4 @@
-/* WPI 7.53.5 — shared section landing experience */
+/* WPI 7.54.13 — compact shared section landing experience */
 :root {
   --wpi-section-navy: #071426;
   --wpi-section-blue: #126dff;
@@ -12,12 +12,12 @@
 .wpi-section-hero {
   position: relative;
   width: min(1640px, calc(100% - 40px));
-  min-height: 380px;
-  margin: 34px auto 38px;
+  min-height: 300px;
+  margin: 24px auto 30px;
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(360px, .82fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr);
   overflow: hidden;
-  border-radius: 32px;
+  border-radius: 24px;
   color: var(--wpi-section-white);
   background:
     radial-gradient(circle at 12% 8%, rgba(18,109,255,.34), transparent 34%),
@@ -41,7 +41,7 @@
 }
 
 .wpi-section-hero-copy {
-  padding: clamp(38px, 5vw, 76px);
+  padding: clamp(30px, 4vw, 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,7 +49,7 @@
 }
 
 .wpi-section-kicker {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -73,7 +73,7 @@
   margin: 0;
   max-width: 900px;
   color: #fff;
-  font-size: clamp(44px, 5.4vw, 82px);
+  font-size: clamp(38px, 4.3vw, 60px);
   line-height: .96;
   letter-spacing: -.055em;
   text-wrap: balance;
@@ -81,9 +81,9 @@
 
 .wpi-section-hero-copy > p:not(.wpi-section-kicker) {
   max-width: 790px;
-  margin: 24px 0 0;
+  margin: 15px 0 0;
   color: var(--wpi-section-muted);
-  font-size: clamp(17px, 1.5vw, 22px);
+  font-size: clamp(15px, 1.2vw, 18px);
   line-height: 1.55;
 }
 
@@ -91,15 +91,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .wpi-section-action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
-  padding: 0 22px;
+  min-height: 46px;
+  padding: 0 19px;
   border-radius: 999px;
   color: var(--wpi-section-navy);
   background: #fff;
@@ -124,15 +124,15 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
-  margin-top: 34px;
+  margin-top: 22px;
 }
 
 .wpi-section-hero-facts > span,
 .wpi-section-hero-facts > div {
   min-width: 0;
-  padding: 14px 15px;
+  padding: 11px 12px;
   border: 1px solid var(--wpi-section-border);
-  border-radius: 17px;
+  border-radius: 13px;
   background: rgba(255,255,255,.075);
   backdrop-filter: blur(10px);
   color: #dbe5f2;
@@ -146,7 +146,7 @@
   display: block;
   margin-bottom: 3px;
   color: #fff;
-  font-size: clamp(18px, 2vw, 29px);
+  font-size: clamp(17px, 1.7vw, 24px);
   line-height: 1;
 }
 
@@ -169,7 +169,7 @@
 .wpi-section-hero-media img {
   width: 100%;
   height: 100%;
-  min-height: 380px;
+  min-height: 300px;
   display: block;
   object-fit: cover;
 }
@@ -199,8 +199,8 @@
 
 @media (max-width: 1050px) {
   .wpi-section-hero { grid-template-columns: 1fr; }
-  .wpi-section-hero-media { min-height: 300px; }
-  .wpi-section-hero-media img { min-height: 300px; }
+  .wpi-section-hero-media { min-height: 220px; }
+  .wpi-section-hero-media img { min-height: 220px; }
   .wpi-section-hero-media::after { background: linear-gradient(0deg, rgba(7,20,38,.72), transparent 65%); }
 }
 
@@ -210,11 +210,11 @@
     margin: 18px auto 26px;
     border-radius: 24px;
   }
-  .wpi-section-hero-copy { padding: 32px 24px 28px; }
-  .wpi-section-hero h1 { font-size: clamp(39px, 13vw, 58px); }
+  .wpi-section-hero-copy { padding: 27px 21px 24px; }
+  .wpi-section-hero h1 { font-size: clamp(36px, 11vw, 48px); }
   .wpi-section-hero-copy > p:not(.wpi-section-kicker) { font-size: 16px; }
   .wpi-section-hero-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .wpi-section-hero-media,
-  .wpi-section-hero-media img { min-height: 245px; }
+  .wpi-section-hero-media img { min-height: 190px; }
   .wpi-section-hero-media figcaption { display: none; }
 }

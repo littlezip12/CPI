@@ -10,7 +10,7 @@ registry=load('data/tournaments/platform/registry.json')
 bundle=load('data/tournaments/platform/events/2026-san-diego-county-cup.json')
 placements=load('data/tournaments/archive/2026-san-diego-county-cup.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.8','7.54.9','7.54.10','7.54.11','7.54.12'}: errors.append('site version must preserve the 7.54.8 San Diego release')
+if site.get('version') not in {'7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13'}: errors.append('site version must preserve the 7.54.8 San Diego release')
 if site.get('sanDiegoCountyCupPlatformRelease')!='7.54.8': errors.append('San Diego County Cup release metadata missing')
 expected={'divisionCount':10,'gameCount':710,'finalGameCount':708,'scheduledGameCount':2,'teamCount':266,'placementCount':174,'venueCount':29,'dateCount':3}
 for key,value in expected.items():

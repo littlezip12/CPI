@@ -17,7 +17,7 @@ for(const side of ['jo-boys','jo-girls']){
 const css=read('tournaments/jo-unified-v7-50.css');
 for(const token of ['--jo50-bg','.jo50-event-card','.jo50-metrics','@media(max-width:720px)'])if(!css.includes(token))errors.push(`Unified JO stylesheet missing ${token}`);
 const hub=read('tournaments.html');
-for(const token of ['tournament-hub-v7-54-4.css','Your team. Your tournament.','Next tournament','Tournament archive','archiveGroupSelect'])if(!hub.includes(token))errors.push(`Tournament hub missing ${token}`);
+for(const token of ['tournament-hub-v7-54-4.css','Follow every game. See every path.','Next tournament','Tournament archive','archiveGroupSelect'])if(!hub.includes(token))errors.push(`Tournament hub missing ${token}`);
 for(const forbidden of ['Tournament intelligence','Open control room','Source health','Post-JO review'])if(hub.includes(forbidden))errors.push(`Tournament hub still exposes internal tool: ${forbidden}`);
 if(errors.length){console.error('TOURNAMENT UI 7.50 TESTS FAILED');errors.forEach(e=>console.error(` - ${e}`));process.exit(1)}
 console.log('TOURNAMENT UI 7.50 TESTS PASSED');

@@ -16,17 +16,18 @@ js = read('js/homepage-wpi-v7-52-4.js')
 shell = read('js/site-shell.js')
 
 for key in ('version','homepageRelease','navigationRelease','publicExperienceRelease'):
-    if site.get(key) != '7.54.12':
-        errors.append(f'{key} must be 7.54.12')
+    if site.get(key) not in {'7.54.12','7.54.13'}:
+        errors.append(f'{key} must preserve the 7.54.12 homepage release')
 
 required_home = [
-    'Youth water polo, connected',
-    'Rankings, results, teams, and clubs—<em>all in one place.</em>',
-    'css/homepage-wpi-v7-54-12.css?v=7.54.12',
-    'js/homepage-wpi-v7-52-4.js?v=7.54.12',
+    'Know the teams. <em>Follow the season.</em>',
+    'teams.html#team-directory',
+    'css/homepage-wpi-v7-54-12.css?v=7.54.13',
+    'js/homepage-wpi-v7-52-4.js?v=7.54.13',
     'id="wpiFeaturedClubs"',
     'id="wpiCaliforniaClubCount"',
     'id="wpiNationalClubCount"',
+    'class="wpi-directory-summary"',
     'class="wpi-california-region-grid"',
     'clubs.html?region=Out%20of%20State#club-directory',
 ]
@@ -38,7 +39,7 @@ for forbidden in ('wpi-bottom-grid', 'How rankings work', 'Choose where to start
     if forbidden in home:
         errors.append(f'homepage retains removed section token: {forbidden}')
 
-for token in ('.wpi-us-directory', '.wpi-california-region-grid', 'min-height: 455px', 'grid-template-columns: repeat(3,minmax(0,1fr))'):
+for token in ('.wpi-directory-summary', '.wpi-california-region-grid', 'min-height: 390px', 'grid-template-columns: repeat(3,minmax(0,1fr))'):
     if token not in css:
         errors.append(f'homepage release CSS missing {token}')
 
@@ -51,9 +52,11 @@ if 'renderExploreGuide' in js:
 for forbidden in ('const quickLinks', 'cpi-shell-quick', 'Quick ranking links'):
     if forbidden in shell:
         errors.append(f'universal header retains age quick-link rail: {forbidden}')
-for label in ('Home','Rankings','Teams','Clubs','Tournaments','Methodology'):
+for label in ('Home','Rankings','Teams','Clubs','Tournaments'):
     if f'label: "{label}"' not in shell:
         errors.append(f'universal header lost primary destination {label}')
+if 'label: "Methodology"' in shell:
+    errors.append('Methodology remains in the primary header')
 
 rankings = json.loads(read('rankings.json'))
 clubs = json.loads(read('clubs.json'))

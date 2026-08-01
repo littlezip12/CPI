@@ -1,12 +1,11 @@
-/* WPI universal site shell — release 7.54.12 */
+/* WPI universal site shell — release 7.54.13 */
 (function () {
   const navItems = [
     { label: "Home", href: "index.html", matches: path => !path || path === "index.html" },
     { label: "Rankings", href: "rankings.html", matches: path => path === "rankings.html" || /^(12|14|16|18)u-(boys|girls)\.html$/.test(path) },
     { label: "Teams", href: "teams.html", matches: path => path === "teams.html" || path === "team.html" || path === "team-profile.html" },
     { label: "Clubs", href: "clubs.html", matches: path => path === "clubs.html" || path === "club.html" || path.startsWith("club/") },
-    { label: "Tournaments", href: "tournaments.html", matches: path => path === "tournaments.html" || path.startsWith("tournaments/") || ["jo-boys.html", "jo-girls.html", "quicksilver-cup-2026.html", "tournament-archive.html"].includes(path) },
-    { label: "Methodology", href: "methodology.html", matches: path => path === "methodology.html" }
+    { label: "Tournaments", href: "tournaments.html", matches: path => path === "tournaments.html" || path.startsWith("tournaments/") || ["jo-boys.html", "jo-girls.html", "quicksilver-cup-2026.html", "tournament-archive.html"].includes(path) }
   ];
 
 

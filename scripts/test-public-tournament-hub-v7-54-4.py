@@ -9,10 +9,10 @@ hub=load('data/tournaments/public-hub.json')
 html=(ROOT/'tournaments.html').read_text(encoding='utf-8')
 js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 css=(ROOT/'css/tournament-hub-v7-54-4.css').read_text(encoding='utf-8')
-if site.get('version') not in {'7.54.11','7.54.12'}: errors.append('site version must be 7.54.11')
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13'}: errors.append('site version must be 7.54.11')
 if site.get('tournamentPublicHubRelease')!='7.54.11': errors.append('tournamentPublicHubRelease must be 7.54.11')
 if site.get('tournamentArchiveExperienceRelease')!='7.54.4': errors.append('tournamentArchiveExperienceRelease must preserve 7.54.4')
-for token in ['Your team. Your tournament.','class="next-tournament-action" id="nextTournamentAction" href="tournaments/jo-texas/"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.9']:
+for token in ['Follow every game. See every path.','class="next-tournament-action" id="nextTournamentAction" href="tournaments/jo-texas/"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.9']:
     if token not in html: errors.append(f'tournaments.html missing {token}')
 if 'id="nextTournamentHeading"' in html: errors.append('redundant Next Tournament heading remains above the card')
 for forbidden in ['Tournament control room','Tournament intelligence','Open control room','Open source health','Open performance','Open review','Data review','Accuracy hold']:
