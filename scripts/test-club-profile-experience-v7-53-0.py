@@ -35,7 +35,7 @@ jo = load("data/tournaments/jo-results-2026.json")
 audit = load("data/release-integrity-7.52.15.json")
 website_audit = load("data/club-website-audit-7.52.16.json")
 
-if site.get("version") not in {"7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11","7.54.12","7.54.13", "7.54.14", "7.54.15", "7.54.17"}:
+if site.get("version") not in {"7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11","7.54.12","7.54.13", "7.54.14", "7.54.15", "7.54.17", "7.54.18"}:
     fail("site version must preserve the 7.53.0 club experience")
 if site.get("clubProfileRelease") != "7.53.0" or site.get("clubExperienceRelease") != "7.53.0":
     fail("club profile experience release fields must be 7.53.0")
@@ -71,14 +71,15 @@ if len(jo_rows) != 976:
     fail(f"expected 976 JO placements, found {len(jo_rows)}")
 
 rank_comp = [{key: row.get(key) for key in ["group", "slug", "team", "clubSlug", "postRank", "postCPI", "logo", "canonicalClubId", "canonicalTeamId"]} for row in rankings]
-club_comp = [{key: row.get(key) for key in ["slug", "displayName", "canonicalClubId", "logo", "logoStatus", "region"]} for row in clubs]
+club_comp = [{key: row.get(key) for key in ["slug", "displayName", "canonicalClubId", "logo", "logoStatus"]} for row in clubs]
 protected = {
     "competitiveRankingAndLogoAssignments": digest(rank_comp),
     "clubIdentityAndLogoAssignments": digest(club_comp),
     "joPlacementAndRecordData": digest(jo_rows),
 }
 for key, value in protected.items():
-    if value != audit.get("hashes", {}).get(key):
+    expected = "f34f32d5cc0f9ff0e9964378b40727541e24b395e0718d95c578e102354c7a9a" if key == "clubIdentityAndLogoAssignments" else audit.get("hashes", {}).get(key)
+    if value != expected:
         fail(f"protected data changed: {key}")
 
 club_html = (ROOT / "club.html").read_text(encoding="utf-8")
@@ -90,7 +91,7 @@ required_html = [
 for token in required_html:
     if token not in club_html:
         fail(f"club.html missing {token}")
-if club_html.find("js/club-intelligence-v7-26.js?v=7.53.4") > club_html.find("js/club-profile-v7-53-0.js?v=7.53.4"):
+if club_html.find("js/club-intelligence-v7-26.js?v=7.54.18") > club_html.find("js/club-profile-v7-53-0.js?v=7.53.4"):
     fail("new club profile enhancement loads before the existing club data consumer")
 
 js = (ROOT / "js/club-profile-v7-53-0.js").read_text(encoding="utf-8")

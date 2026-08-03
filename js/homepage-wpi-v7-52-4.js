@@ -243,8 +243,9 @@
     }
     target.innerHTML = chosen.map(({ club, metric }) => `<a class="wpi-club-card" href="${escapeHtml(clubLink(club))}"><img src="${escapeHtml(logo(club))}" alt="${escapeHtml(club.displayName || club.club)} logo" onerror="this.onerror=null;this.src='${fallbackLogo}'"><strong>${escapeHtml(club.displayName || club.club)}</strong><span>${escapeHtml(club.region)} · ${metric.teams} ranked team${metric.teams === 1 ? "" : "s"}</span><em>View profile →</em></a>`).join("");
 
-    const outsideCalifornia = clubs.filter((club) => club.region === "Out of State").length;
-    const california = clubs.length - outsideCalifornia;
+    const californiaRegions = new Set(["San Diego", "Orange County", "Los Angeles", "Inland Empire", "Central Coast", "Central Valley", "Sacramento", "East Bay", "Peninsula / San Francisco"]);
+    const california = clubs.filter((club) => club.state === "CA" || californiaRegions.has(club.region)).length;
+    const outsideCalifornia = clubs.length - california;
     const californiaCount = $("#wpiCaliforniaClubCount");
     const nationalCount = $("#wpiNationalClubCount");
     if (californiaCount) californiaCount.textContent = california.toLocaleString();

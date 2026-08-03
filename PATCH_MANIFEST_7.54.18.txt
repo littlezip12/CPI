@@ -1,0 +1,43 @@
+WPI 7.54.18 — Club Location and National Region Foundation
+
+Primary additions:
+- data/club-location-audit-7.54.18.json
+- assets/maps/wpi-us-club-regions.svg
+- css/club-location-map-v7-54-18.css
+- js/club-location-map-v7-54-18.js
+- scripts/apply-club-location-audit-v7-54-18.py
+- scripts/test-club-location-map-v7-54-18.py
+- SOURCE_REVIEW_2026_CLUB_LOCATIONS.md
+- INSTALL_7.54.18.md
+
+Synchronized data:
+- clubs.json
+- club-registry.json / club-registry.csv
+- rankings.json
+- data.js
+- data/identity/*
+- data/team_registry.json
+- data/team_alias_lookup*.json
+- data/club-intelligence.json
+- data/tournaments/identity/participants.json
+- config/identity-manual-overrides.json
+- generated club routes
+
+Public experience:
+- clubs.html
+- index.html
+- js/club-intelligence-v7-26.js
+- js/homepage-wpi-v7-52-4.js
+- css/homepage-wpi-v7-52-4.css
+- data.js cache keys on data-consuming pages
+
+Validation:
+- release-check
+- scripts/test-club-locations-v7-52-5.py
+- scripts/test-club-websites-v7-52-16.py
+- scripts/test-club-profile-experience-v7-53-0.py
+- scripts/test-release-integrity-v7-52-15.py
+
+Final location correction:
+- Back Bay is synchronized as Irvine, California in the Orange County region across club, ranking, identity, tournament, profile, and search data.
+- All 182 clubs now have city-level locations.

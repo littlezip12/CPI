@@ -9,10 +9,10 @@ errors = []
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
 for key, expected in {
-    'version': '7.54.17',
+    'version': '7.54.18',
     'brandRelease': '7.53.4',
     'navigationRelease': '7.54.13',
-    'publicExperienceRelease': '7.54.17',
+    'publicExperienceRelease': '7.54.18',
     'teamDirectoryRelease': '7.54.14',
     'sectionLandingRelease': '7.54.15',
 }.items():
@@ -103,7 +103,7 @@ stale_cache = []
 for path in ROOT.rglob('*.html'):
     text = path.read_text(encoding='utf-8', errors='ignore')
     for match in re.finditer(r'\?v=(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9.-]+)?)', text):
-        if match.group(1) not in {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17'}:
+        if match.group(1) not in {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18'}:
             stale_cache.append(f'{path.relative_to(ROOT)}:{match.group(1)}')
             break
 if stale_cache:

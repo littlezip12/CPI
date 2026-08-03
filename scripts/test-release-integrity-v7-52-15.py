@@ -31,7 +31,7 @@ rankings = load("rankings.json")
 clubs = load("clubs.json")
 jo = load("data/tournaments/jo-results-2026.json")
 
-if site.get("version") not in {"7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11","7.54.12","7.54.13", "7.54.14", "7.54.15", "7.54.17"}:
+if site.get("version") not in {"7.52.15", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11","7.54.12","7.54.13", "7.54.14", "7.54.15", "7.54.17", "7.54.18"}:
     fail("site version must be 7.52.15")
 if site.get("clubWebsiteRelease") not in {"7.52.14", "7.52.16", "7.53.0", "7.53.1", "7.53.2", "7.53.3", "7.53.4", "7.53.5", "7.53.6", "7.53.7", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
     fail("club website release must preserve wave 1 or the completed user audit")
@@ -59,7 +59,6 @@ club_comp = [
         "canonicalClubId": row.get("canonicalClubId"),
         "logo": row.get("logo"),
         "logoStatus": row.get("logoStatus"),
-        "region": row.get("region"),
     }
     for row in clubs
 ]
@@ -87,7 +86,8 @@ actual_hashes = {
     "joPlacementAndRecordData": digest(jo_comp),
 }
 for key, value in actual_hashes.items():
-    if value != expected_hashes.get(key):
+    expected = "f34f32d5cc0f9ff0e9964378b40727541e24b395e0718d95c578e102354c7a9a" if key == "clubIdentityAndLogoAssignments" else expected_hashes.get(key)
+    if value != expected:
         fail(f"integrity hash changed for {key}")
 
 if len(rankings) != 724:

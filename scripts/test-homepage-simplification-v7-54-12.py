@@ -16,20 +16,20 @@ js = read('js/homepage-wpi-v7-52-4.js')
 shell = read('js/site-shell.js')
 
 for key in ('version','homepageRelease','navigationRelease','publicExperienceRelease'):
-    if site.get(key) not in {'7.54.12','7.54.13','7.54.14','7.54.15','7.54.17'}:
+    if site.get(key) not in {'7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18'}:
         errors.append(f'{key} must preserve the 7.54.12 homepage release')
 
 required_home = [
     'Know the teams. <em>Follow the season.</em>',
     'teams.html#team-directory',
     'css/homepage-wpi-v7-54-12.css?v=7.54.13',
-    'js/homepage-wpi-v7-52-4.js?v=7.54.17',
+    'js/homepage-wpi-v7-52-4.js?v=7.54.18',
     'id="wpiFeaturedClubs"',
     'id="wpiCaliforniaClubCount"',
     'id="wpiNationalClubCount"',
     'class="wpi-directory-summary"',
     'class="wpi-california-region-grid"',
-    'clubs.html?region=Out%20of%20State#club-directory',
+    'clubs.html?scope=outside-california#club-directory',
 ]
 for token in required_home:
     if token not in home:

@@ -14,6 +14,17 @@
   const joProfiles = window.WPI_JO_PROFILES || { clubs: {}, teams: {}, counts: {} };
   const params = new URLSearchParams(window.location.search);
   const directoryState = { visibleCount: 25 };
+  const CALIFORNIA_REGIONS = new Set([
+    "San Diego",
+    "Orange County",
+    "Los Angeles",
+    "Inland Empire",
+    "Central Coast",
+    "Central Valley",
+    "Sacramento",
+    "East Bay",
+    "Peninsula / San Francisco"
+  ]);
   const REGION_ORDER = [
     "San Diego",
     "Orange County",
@@ -24,8 +35,19 @@
     "Sacramento",
     "East Bay",
     "Peninsula / San Francisco",
-    "Out of State",
+    "Hawaii",
+    "Northwest",
+    "Southwest",
+    "Mountain West",
+    "Midwest",
+    "Northeast",
+    "Southeast",
+    "International",
     "Needs Review"
+  ];
+  const SPECIAL_REGION_FILTERS = [
+    { value: "__california__", label: "All California" },
+    { value: "__outside_california__", label: "Outside California" }
   ];
 
   const $ = (selector) => document.querySelector(selector);
@@ -255,6 +277,23 @@
     target.querySelectorAll("button").forEach((button) => button.classList.toggle("is-active", (button.dataset.region || "all") === value));
   }
 
+  function matchesRegionFilter(club, selected) {
+    if (!selected || selected === "all") return true;
+    if (selected === "__california__") return club.state === "CA" || CALIFORNIA_REGIONS.has(club.region);
+    if (selected === "__outside_california__") return club.state !== "CA" && !CALIFORNIA_REGIONS.has(club.region);
+    return club.region === selected;
+  }
+
+  function setDirectoryRegionFilter(value, scroll = true) {
+    const select = $("#regionFilter");
+    if (!select) return;
+    const available = [...select.options].some((option) => option.value === value);
+    select.value = available ? value : "all";
+    directoryState.visibleCount = 25;
+    applyClubFilters();
+    if (scroll) document.querySelector("#club-directory")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   function renderClubCard(club) {
     const top = club.topTeam || {};
     const theme = `--club-theme:${club.primaryColor}22;--club-card-accent:${club.primaryColor || "#0f67ff"}`;
@@ -319,9 +358,12 @@
     const onlyRanked = Boolean($("#rankedOnly")?.checked);
     syncRegionChips(region);
     const filtered = sortedDirectory.filter((club) => {
-      const haystack = [safeName(club), club.club, club.region, club.slug, club.topTeam?.team, club.groups?.join(" ")].join(" ").toLowerCase();
+      const haystack = [
+        safeName(club), club.club, club.region, club.slug, club.topTeam?.team, club.groups?.join(" "),
+        club.city, club.state, club.country, club.locationLabel, club.metroRegion, club.macroRegion
+      ].join(" ").toLowerCase();
       const matchesQuery = !q || haystack.includes(q);
-      const matchesRegion = region === "all" || club.region === region;
+      const matchesRegion = matchesRegionFilter(club, region);
       const matchesRanked = !onlyRanked || club.rankedTeamCount > 0;
       return matchesQuery && matchesRegion && matchesRanked;
     });
@@ -344,10 +386,14 @@
     const regions = stats.map((stat) => stat.region);
     const regionFilter = $("#regionFilter");
     if (regionFilter && !regionFilter.dataset.loaded) {
-      regionFilter.innerHTML = `<option value="all">All regions</option>${regions.map((region) => `<option value="${escapeHtml(region)}">${escapeHtml(region)}</option>`).join("")}`;
+      const specialOptions = SPECIAL_REGION_FILTERS.map((item) => `<option value="${item.value}">${item.label}</option>`).join("");
+      regionFilter.innerHTML = `<option value="all">All regions</option>${specialOptions}${regions.map((region) => `<option value="${escapeHtml(region)}">${escapeHtml(region)}</option>`).join("")}`;
       regionFilter.dataset.loaded = "true";
       const requestedRegion = params.get("region");
+      const requestedScope = params.get("scope");
       if (requestedRegion && regions.includes(requestedRegion)) regionFilter.value = requestedRegion;
+      else if (requestedScope === "california") regionFilter.value = "__california__";
+      else if (requestedScope === "outside-california") regionFilter.value = "__outside_california__";
     }
     const searchInput = $("#clubSearch");
     if (searchInput && !searchInput.dataset.queryLoaded) {
@@ -372,13 +418,7 @@
     if (regionTarget) {
       regionTarget.innerHTML = stats.map(renderRegionRow).join("");
       regionTarget.querySelectorAll("button[data-region]").forEach((button) => {
-        button.addEventListener("click", () => {
-          const select = $("#regionFilter");
-          if (select) select.value = button.dataset.region || "all";
-          directoryState.visibleCount = 25;
-          applyClubFilters();
-          document.querySelector("#club-directory")?.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
+        button.addEventListener("click", () => setDirectoryRegionFilter(button.dataset.region || "all"));
       });
     }
 
@@ -391,7 +431,7 @@
       }
     });
     applyClubFilters();
-    if ((params.get("region") || params.get("search")) && !document.documentElement.dataset.clubQueryScrolled) {
+    if ((params.get("region") || params.get("scope") || params.get("search")) && !document.documentElement.dataset.clubQueryScrolled) {
       document.documentElement.dataset.clubQueryScrolled = "true";
       window.setTimeout(() => document.querySelector("#club-directory")?.scrollIntoView({ behavior: "smooth", block: "start" }), 120);
     }
@@ -602,6 +642,13 @@
         <p class="club-profile-note">Club metrics are calculated from ranked WPI teams currently connected to this club. Regions, aliases, and logos remain under active audit.</p>
       </article>
     </section>`;
+  }
+
+  if (typeof window.addEventListener === "function") {
+    window.addEventListener("wpi:club-region-filter", (event) => {
+      const value = event?.detail?.value || "all";
+      setDirectoryRegionFilter(value, event?.detail?.scroll !== false);
+    });
   }
 
   renderClubsPage();
