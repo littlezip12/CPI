@@ -1,30 +1,31 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.16",
+  "release": "7.54.17",
   "eventId": "2026-jo-session-3",
   "eventName": "2026 Junior Olympics Weekend 3",
   "policy": {
     "publishOnlyVerifiedPlacements": true,
     "unplacedTeamsShowScheduleOnly": true,
     "rankingEvidenceEnabled": false,
-    "note": "Session 3 results are archived for public review and remain quarantined from WPI rankings. No result is inferred from an unscored source row."
+    "note": "Weekend 3 results are archived for public review and remain quarantined from WPI rankings. User-confirmed final rankings may publish even when underlying game scores are unavailable, but records and outcomes are never inferred."
   },
   "sourceReviewNotes": {
     "reviewedAt": "2026-08-02",
-    "completeDivisions": 7,
-    "incompleteDivisions": [
+    "placementCompleteDivisions": 8,
+    "scoreCompleteDivisions": 7,
+    "scoreGapDivisions": [
       "12u-coed-championship"
     ],
     "finalGames": 464,
     "scheduledWithoutScores": 81,
-    "verifiedPlacements": 117,
+    "verifiedPlacements": 138,
     "identityNormalizations": [
       "ORLANO THUNDER -> ORLANDO THUNDER (obvious source typo)",
       "CHICACO PARKS DISTRICT -> CHICAGO PARKS DISTRICT (obvious source typo)"
     ],
     "sourceDiscrepancies": [
-      "The 14U Boys lower-flight placement footer lists PEAK POLO / SLAP for local 7th/8th, but scored placement game 14B-120 is PEGASUS RED 14, SIERRA NEVADA 13. WPI uses the scored final game.",
-      "12U Coed includes all 81 scheduled games and bracket routing, but every score cell remains blank in the official source snapshot."
+      "The scored 14U Boys game 14B-120 lists Pegasus Red and Sierra Nevada, while the user-confirmed final Gold ranking places Peak Polo 7th and SLAP 8th. WPI preserves the scored game row but uses the confirmed final ranking for placement display.",
+      "12U Coed includes all 81 scheduled games and bracket routing, but every score cell remains blank in the official source snapshot. Final Platinum and Gold rankings were supplied after the event; records remain unavailable."
     ],
     "unresolvedIdentityPolicy": "National and tournament-only team labels remain source-faithful. THUNDER is not guessed as a specific club."
   },
@@ -41,6 +42,7 @@
         {
           "place": 1,
           "placeLabel": "1st",
+          "subdivision": null,
           "name": "ALAMO",
           "participantId": null,
           "teamId": null,
@@ -50,11 +52,13 @@
           "divisionId": "10u-coed-championship",
           "divisionLabel": "10U Coed Championship",
           "ageGroup": "10U",
-          "gender": "Coed"
+          "gender": "Coed",
+          "suppressParticipantLink": false
         },
         {
           "place": 2,
           "placeLabel": "2nd",
+          "subdivision": null,
           "name": "PEGASUS",
           "participantId": null,
           "teamId": null,
@@ -64,11 +68,13 @@
           "divisionId": "10u-coed-championship",
           "divisionLabel": "10U Coed Championship",
           "ageGroup": "10U",
-          "gender": "Coed"
+          "gender": "Coed",
+          "suppressParticipantLink": false
         },
         {
           "place": 3,
           "placeLabel": "3rd",
+          "subdivision": null,
           "name": "PAC",
           "participantId": null,
           "teamId": null,
@@ -78,11 +84,13 @@
           "divisionId": "10u-coed-championship",
           "divisionLabel": "10U Coed Championship",
           "ageGroup": "10U",
-          "gender": "Coed"
+          "gender": "Coed",
+          "suppressParticipantLink": false
         },
         {
           "place": 4,
           "placeLabel": "4th",
+          "subdivision": null,
           "name": "MAVERICKS",
           "participantId": null,
           "teamId": null,
@@ -92,11 +100,13 @@
           "divisionId": "10u-coed-championship",
           "divisionLabel": "10U Coed Championship",
           "ageGroup": "10U",
-          "gender": "Coed"
+          "gender": "Coed",
+          "suppressParticipantLink": false
         },
         {
           "place": 5,
           "placeLabel": "5th",
+          "subdivision": null,
           "name": "ZILLA",
           "participantId": null,
           "teamId": null,
@@ -106,11 +116,13 @@
           "divisionId": "10u-coed-championship",
           "divisionLabel": "10U Coed Championship",
           "ageGroup": "10U",
-          "gender": "Coed"
+          "gender": "Coed",
+          "suppressParticipantLink": false
         },
         {
           "place": 6,
           "placeLabel": "6th",
+          "subdivision": null,
           "name": "PEGASUS RED",
           "participantId": null,
           "teamId": null,
@@ -120,7 +132,8 @@
           "divisionId": "10u-coed-championship",
           "divisionLabel": "10U Coed Championship",
           "ageGroup": "10U",
-          "gender": "Coed"
+          "gender": "Coed",
+          "suppressParticipantLink": false
         }
       ]
     },
@@ -129,11 +142,369 @@
       "label": "12U Coed Championship",
       "ageGroup": "12U",
       "gender": "Coed",
-      "status": "source_incomplete",
+      "status": "placement_complete_score_gap",
       "gameCount": 81,
       "finalGameCount": 0,
-      "placements": [],
-      "sourceNote": "The official source contains the full 81-game bracket but no scores. WPI does not infer results or placements."
+      "placements": [
+        {
+          "place": 1,
+          "placeLabel": "1st in Platinum",
+          "subdivision": "Platinum",
+          "name": "HOUSTON HYDRA",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 2,
+          "placeLabel": "2nd in Platinum",
+          "subdivision": "Platinum",
+          "name": "VIPER PIGEON BLUE",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 3,
+          "placeLabel": "3rd in Platinum",
+          "subdivision": "Platinum",
+          "name": "PEAK POLO",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 4,
+          "placeLabel": "4th in Platinum",
+          "subdivision": "Platinum",
+          "name": "TEAM ORLANDO",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 5,
+          "placeLabel": "5th in Platinum",
+          "subdivision": "Platinum",
+          "name": "KRAKEN SATX POSEIDON",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 6,
+          "placeLabel": "6th in Platinum",
+          "subdivision": "Platinum",
+          "name": "GLADIATORS",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 7,
+          "placeLabel": "7th in Platinum",
+          "subdivision": "Platinum",
+          "name": "SOUTHLAKE",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 8,
+          "placeLabel": "8th in Platinum",
+          "subdivision": "Platinum",
+          "name": "ALAMO",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 9,
+          "placeLabel": "9th in Platinum",
+          "subdivision": "Platinum",
+          "name": "SWIM RVA",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 10,
+          "placeLabel": "10th in Platinum",
+          "subdivision": "Platinum",
+          "name": "PEGASUS RED",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 11,
+          "placeLabel": "11th in Platinum",
+          "subdivision": "Platinum",
+          "name": "SLAP",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 12,
+          "placeLabel": "12th in Platinum",
+          "subdivision": "Platinum",
+          "name": "KRAKEN SATX NEPTUNE",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 1,
+          "placeLabel": "1st in Gold",
+          "subdivision": "Gold",
+          "name": "PAC",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 2,
+          "placeLabel": "2nd in Gold",
+          "subdivision": "Gold",
+          "name": "RISE",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 3,
+          "placeLabel": "3rd in Gold",
+          "subdivision": "Gold",
+          "name": "STORM TYPHOONS",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 4,
+          "placeLabel": "4th in Gold",
+          "subdivision": "Gold",
+          "name": "FLEET",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 5,
+          "placeLabel": "5th in Gold",
+          "subdivision": "Gold",
+          "name": "ZILLA",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 6,
+          "placeLabel": "6th in Gold",
+          "subdivision": "Gold",
+          "name": "HOUSTON HYDRA WHITE",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 7,
+          "placeLabel": "7th in Gold",
+          "subdivision": "Gold",
+          "name": "THUNDER",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 8,
+          "placeLabel": "8th in Gold",
+          "subdivision": "Gold",
+          "name": "808",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 9,
+          "placeLabel": "9th in Gold",
+          "subdivision": "Gold",
+          "name": "VIPER PIGEON RED",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "12u-coed-championship",
+          "divisionLabel": "12U Coed Championship",
+          "ageGroup": "12U",
+          "gender": "Coed",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        }
+      ],
+      "sourceNote": "Final Platinum and Gold rankings are published from the site owner's post-event confirmation. The official source still contains no game scores, so records and game outcomes remain unavailable."
     },
     {
       "id": "14u-boys-championship",
@@ -146,373 +517,448 @@
       "placements": [
         {
           "place": 1,
-          "placeLabel": "1st",
+          "placeLabel": "1st in Platinum",
+          "subdivision": "Platinum",
           "name": "TEAM ORLANDO",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-127",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 2,
-          "placeLabel": "2nd",
+          "placeLabel": "2nd in Platinum",
+          "subdivision": "Platinum",
           "name": "WEST SUBURBAN",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-127",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 3,
-          "placeLabel": "3rd",
+          "placeLabel": "3rd in Platinum",
+          "subdivision": "Platinum",
           "name": "HOUSTON HYDRA",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-129",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 4,
-          "placeLabel": "4th",
+          "placeLabel": "4th in Platinum",
+          "subdivision": "Platinum",
           "name": "ROCKY MOUNTAIN WARRIORS",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-129",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 5,
-          "placeLabel": "5th",
+          "placeLabel": "5th in Platinum",
+          "subdivision": "Platinum",
           "name": "NORCO",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-118",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 6,
-          "placeLabel": "6th",
+          "placeLabel": "6th in Platinum",
+          "subdivision": "Platinum",
           "name": "ORLANDO THUNDER",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-118",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 7,
-          "placeLabel": "7th",
+          "placeLabel": "7th in Platinum",
+          "subdivision": "Platinum",
           "name": "MIAMI WOLVERINES",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-119",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 8,
-          "placeLabel": "8th",
+          "placeLabel": "8th in Platinum",
+          "subdivision": "Platinum",
           "name": "GLADIATORS",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-119",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 9,
-          "placeLabel": "9th",
+          "placeLabel": "9th in Platinum",
+          "subdivision": "Platinum",
           "name": "PEAK POLO",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-124",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 10,
-          "placeLabel": "10th",
+          "placeLabel": "10th in Platinum",
+          "subdivision": "Platinum",
           "name": "SLAP",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-124",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 11,
-          "placeLabel": "11th",
+          "placeLabel": "11th in Platinum",
+          "subdivision": "Platinum",
           "name": "VP HILL COUNTRY",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-125",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 12,
-          "placeLabel": "12th",
+          "placeLabel": "12th in Platinum",
+          "subdivision": "Platinum",
           "name": "VP HTOWN",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "placement_game",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-125",
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
           "place": 13,
-          "placeLabel": "13th",
-          "name": "NORTHEAST ELITE",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-130",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 14,
-          "placeLabel": "14th",
-          "name": "STORM MONSOONS",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-130",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 15,
-          "placeLabel": "15th",
-          "name": "BCWP",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-128",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 16,
-          "placeLabel": "16th",
-          "name": "LONGHORN WHITE",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-128",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 17,
-          "placeLabel": "17th",
-          "name": "KRAKEN SATX",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-123",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 18,
-          "placeLabel": "18th",
-          "name": "Z TOWN",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-123",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 19,
-          "placeLabel": "19th",
-          "name": "PEGASUS RED",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-120",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 20,
-          "placeLabel": "20th",
-          "name": "SIERRA NEVADA",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-120",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 21,
-          "placeLabel": "21st",
-          "name": "DISTRICT BLOSSOMS",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-117",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 22,
-          "placeLabel": "22nd",
-          "name": "DAISY",
-          "participantId": null,
-          "teamId": null,
-          "clubId": null,
-          "source": "placement_game_lower_flight",
-          "gameId": "game-2026-jo-session-3-14u-boys-championship-14b-117",
-          "divisionId": "14u-boys-championship",
-          "divisionLabel": "14U Boys Championship",
-          "ageGroup": "14U",
-          "gender": "Boys"
-        },
-        {
-          "place": 23,
-          "placeLabel": "23rd",
+          "placeLabel": "13th in Platinum",
+          "subdivision": "Platinum",
           "name": "CHICAGO PARKS DISTRICT",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "complete_round_robin",
+          "source": "user_confirmed_final_ranking",
           "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
           "gender": "Boys",
-          "note": "3-0 in verified placement round robin"
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
-          "place": 24,
-          "placeLabel": "24th",
+          "place": 14,
+          "placeLabel": "14th in Platinum",
+          "subdivision": "Platinum",
           "name": "ALAMO",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "complete_round_robin",
+          "source": "user_confirmed_final_ranking",
           "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
           "gender": "Boys",
-          "note": "2-1 in verified placement round robin"
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
-          "place": 25,
-          "placeLabel": "25th",
+          "place": 15,
+          "placeLabel": "15th in Platinum",
+          "subdivision": "Platinum",
           "name": "FLEET",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "complete_round_robin",
+          "source": "user_confirmed_final_ranking",
           "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
           "gender": "Boys",
-          "note": "1-2 in verified placement round robin"
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         },
         {
-          "place": 26,
-          "placeLabel": "26th",
+          "place": 16,
+          "placeLabel": "16th in Platinum",
+          "subdivision": "Platinum",
           "name": "RISE",
           "participantId": null,
           "teamId": null,
           "clubId": null,
-          "source": "complete_round_robin",
+          "source": "user_confirmed_final_ranking",
           "gameId": null,
           "divisionId": "14u-boys-championship",
           "divisionLabel": "14U Boys Championship",
           "ageGroup": "14U",
           "gender": "Boys",
-          "note": "0-3 in verified placement round robin"
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 1,
+          "placeLabel": "1st in Gold",
+          "subdivision": "Gold",
+          "name": "NORTHEAST ELITE",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 2,
+          "placeLabel": "2nd in Gold",
+          "subdivision": "Gold",
+          "name": "STORM MONSOONS",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 3,
+          "placeLabel": "3rd in Gold",
+          "subdivision": "Gold",
+          "name": "BCWP",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 4,
+          "placeLabel": "4th in Gold",
+          "subdivision": "Gold",
+          "name": "LONGHORN WHITE",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 5,
+          "placeLabel": "5th in Gold",
+          "subdivision": "Gold",
+          "name": "KRAKEN SATX",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 6,
+          "placeLabel": "6th in Gold",
+          "subdivision": "Gold",
+          "name": "Z TOWN",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 7,
+          "placeLabel": "7th in Gold",
+          "subdivision": "Gold",
+          "name": "PEAK POLO",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": true,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 8,
+          "placeLabel": "8th in Gold",
+          "subdivision": "Gold",
+          "name": "SLAP",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": true,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 9,
+          "placeLabel": "9th in Gold",
+          "subdivision": "Gold",
+          "name": "DISTRICT BLOSSOMS",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
+        },
+        {
+          "place": 10,
+          "placeLabel": "10th in Gold",
+          "subdivision": "Gold",
+          "name": "DAISY",
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "source": "user_confirmed_final_ranking",
+          "gameId": null,
+          "divisionId": "14u-boys-championship",
+          "divisionLabel": "14U Boys Championship",
+          "ageGroup": "14U",
+          "gender": "Boys",
+          "suppressParticipantLink": false,
+          "note": "Final flight ranking supplied by the site owner after tournament completion."
         }
-      ]
+      ],
+      "sourceNote": "Final Platinum and Gold flight rankings are published from the site owner's post-event confirmation."
     },
     {
       "id": "14u-girls-championship",
@@ -526,6 +972,7 @@
         {
           "place": 1,
           "placeLabel": "1st",
+          "subdivision": null,
           "name": "HOUSTON HYDRA",
           "participantId": null,
           "teamId": null,
@@ -535,11 +982,13 @@
           "divisionId": "14u-girls-championship",
           "divisionLabel": "14U Girls Championship",
           "ageGroup": "14U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 2,
           "placeLabel": "2nd",
+          "subdivision": null,
           "name": "PEGASUS",
           "participantId": null,
           "teamId": null,
@@ -549,11 +998,13 @@
           "divisionId": "14u-girls-championship",
           "divisionLabel": "14U Girls Championship",
           "ageGroup": "14U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 3,
           "placeLabel": "3rd",
+          "subdivision": null,
           "name": "ORLANDO THUNDER",
           "participantId": null,
           "teamId": null,
@@ -563,11 +1014,13 @@
           "divisionId": "14u-girls-championship",
           "divisionLabel": "14U Girls Championship",
           "ageGroup": "14U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 4,
           "placeLabel": "4th",
+          "subdivision": null,
           "name": "ST LOUIS LIONS",
           "participantId": null,
           "teamId": null,
@@ -577,11 +1030,13 @@
           "divisionId": "14u-girls-championship",
           "divisionLabel": "14U Girls Championship",
           "ageGroup": "14U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 5,
           "placeLabel": "5th",
+          "subdivision": null,
           "name": "KRAKEN SATX",
           "participantId": null,
           "teamId": null,
@@ -591,11 +1046,13 @@
           "divisionId": "14u-girls-championship",
           "divisionLabel": "14U Girls Championship",
           "ageGroup": "14U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 6,
           "placeLabel": "6th",
+          "subdivision": null,
           "name": "RISE",
           "participantId": null,
           "teamId": null,
@@ -605,11 +1062,13 @@
           "divisionId": "14u-girls-championship",
           "divisionLabel": "14U Girls Championship",
           "ageGroup": "14U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 7,
           "placeLabel": "7th",
+          "subdivision": null,
           "name": "VIPER PIGEON",
           "participantId": null,
           "teamId": null,
@@ -619,7 +1078,8 @@
           "divisionId": "14u-girls-championship",
           "divisionLabel": "14U Girls Championship",
           "ageGroup": "14U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         }
       ]
     },
@@ -635,6 +1095,7 @@
         {
           "place": 1,
           "placeLabel": "1st",
+          "subdivision": null,
           "name": "GLADIATORS GOLD",
           "participantId": null,
           "teamId": null,
@@ -644,11 +1105,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 2,
           "placeLabel": "2nd",
+          "subdivision": null,
           "name": "NEW HAVEN HYDRAS",
           "participantId": null,
           "teamId": null,
@@ -658,11 +1121,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 3,
           "placeLabel": "3rd",
+          "subdivision": null,
           "name": "HOUSTON HYDRA",
           "participantId": null,
           "teamId": null,
@@ -672,11 +1137,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 4,
           "placeLabel": "4th",
+          "subdivision": null,
           "name": "SOUTHSIDE",
           "participantId": null,
           "teamId": null,
@@ -686,11 +1153,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 5,
           "placeLabel": "5th",
+          "subdivision": null,
           "name": "WEST SUBURBAN",
           "participantId": null,
           "teamId": null,
@@ -700,11 +1169,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 6,
           "placeLabel": "6th",
+          "subdivision": null,
           "name": "ROCKY MOUNTAIN WARRIORS",
           "participantId": null,
           "teamId": null,
@@ -714,11 +1185,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 7,
           "placeLabel": "7th",
+          "subdivision": null,
           "name": "ALAMO BLACK",
           "participantId": null,
           "teamId": null,
@@ -728,11 +1201,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 8,
           "placeLabel": "8th",
+          "subdivision": null,
           "name": "JUNGLE CAT",
           "participantId": null,
           "teamId": null,
@@ -742,11 +1217,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 9,
           "placeLabel": "9th",
+          "subdivision": null,
           "name": "STORM TORNADOES",
           "participantId": null,
           "teamId": null,
@@ -756,11 +1233,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 10,
           "placeLabel": "10th",
+          "subdivision": null,
           "name": "VIPER PIGEON BLUE",
           "participantId": null,
           "teamId": null,
@@ -770,11 +1249,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 11,
           "placeLabel": "11th",
+          "subdivision": null,
           "name": "CHICAGO PARKS DISTRICT",
           "participantId": null,
           "teamId": null,
@@ -785,11 +1266,13 @@
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
           "gender": "Boys",
+          "suppressParticipantLink": false,
           "note": "2-0 in verified placement round robin"
         },
         {
           "place": 12,
           "placeLabel": "12th",
+          "subdivision": null,
           "name": "DYNAMO",
           "participantId": null,
           "teamId": null,
@@ -800,11 +1283,13 @@
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
           "gender": "Boys",
+          "suppressParticipantLink": false,
           "note": "1-1 in verified placement round robin"
         },
         {
           "place": 13,
           "placeLabel": "13th",
+          "subdivision": null,
           "name": "BCWP",
           "participantId": null,
           "teamId": null,
@@ -815,11 +1300,13 @@
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
           "gender": "Boys",
+          "suppressParticipantLink": false,
           "note": "0-2 in verified placement round robin"
         },
         {
           "place": 14,
           "placeLabel": "14th",
+          "subdivision": null,
           "name": "LOWPO",
           "participantId": null,
           "teamId": null,
@@ -829,11 +1316,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 15,
           "placeLabel": "15th",
+          "subdivision": null,
           "name": "SLAP GOLD",
           "participantId": null,
           "teamId": null,
@@ -843,11 +1332,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 16,
           "placeLabel": "16th",
+          "subdivision": null,
           "name": "GLADIATORS BLACK",
           "participantId": null,
           "teamId": null,
@@ -857,11 +1348,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 17,
           "placeLabel": "17th",
+          "subdivision": null,
           "name": "VIPER PIGEON BLACK",
           "participantId": null,
           "teamId": null,
@@ -871,11 +1364,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 18,
           "placeLabel": "18th",
+          "subdivision": null,
           "name": "LOWPO RED",
           "participantId": null,
           "teamId": null,
@@ -885,11 +1380,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 19,
           "placeLabel": "19th",
+          "subdivision": null,
           "name": "ZENITH ALL STARS",
           "participantId": null,
           "teamId": null,
@@ -899,11 +1396,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 20,
           "placeLabel": "20th",
+          "subdivision": null,
           "name": "PAC",
           "participantId": null,
           "teamId": null,
@@ -913,11 +1412,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 21,
           "placeLabel": "21st",
+          "subdivision": null,
           "name": "Longhorn",
           "participantId": null,
           "teamId": null,
@@ -927,11 +1428,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 22,
           "placeLabel": "22nd",
+          "subdivision": null,
           "name": "ALAMO YELLOW",
           "participantId": null,
           "teamId": null,
@@ -941,11 +1444,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 23,
           "placeLabel": "23rd",
+          "subdivision": null,
           "name": "DAISY",
           "participantId": null,
           "teamId": null,
@@ -955,11 +1460,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 24,
           "placeLabel": "24th",
+          "subdivision": null,
           "name": "Narrows",
           "participantId": null,
           "teamId": null,
@@ -969,11 +1476,13 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 25,
           "placeLabel": "25th",
+          "subdivision": null,
           "name": "KRAKEN SATX",
           "participantId": null,
           "teamId": null,
@@ -983,7 +1492,8 @@
           "divisionId": "16u-boys-championship",
           "divisionLabel": "16U Boys Championship",
           "ageGroup": "16U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         }
       ]
     },
@@ -999,6 +1509,7 @@
         {
           "place": 1,
           "placeLabel": "1st",
+          "subdivision": null,
           "name": "TEAM ORLANDO",
           "participantId": null,
           "teamId": null,
@@ -1008,11 +1519,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 2,
           "placeLabel": "2nd",
+          "subdivision": null,
           "name": "VIPER PIGEON PINK",
           "participantId": null,
           "teamId": null,
@@ -1022,11 +1535,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 3,
           "placeLabel": "3rd",
+          "subdivision": null,
           "name": "ALAMO",
           "participantId": null,
           "teamId": null,
@@ -1036,11 +1551,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 4,
           "placeLabel": "4th",
+          "subdivision": null,
           "name": "HOUSTON HYDRA",
           "participantId": null,
           "teamId": null,
@@ -1050,11 +1567,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 5,
           "placeLabel": "5th",
+          "subdivision": null,
           "name": "WEST SUBURBAN",
           "participantId": null,
           "teamId": null,
@@ -1064,11 +1583,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 6,
           "placeLabel": "6th",
+          "subdivision": null,
           "name": "SLAP",
           "participantId": null,
           "teamId": null,
@@ -1078,11 +1599,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 7,
           "placeLabel": "7th",
+          "subdivision": null,
           "name": "NEW HAVEN HYDRAS",
           "participantId": null,
           "teamId": null,
@@ -1092,11 +1615,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 8,
           "placeLabel": "8th",
+          "subdivision": null,
           "name": "DISTRICT BLOSSOMS",
           "participantId": null,
           "teamId": null,
@@ -1106,11 +1631,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 9,
           "placeLabel": "9th",
+          "subdivision": null,
           "name": "PAC",
           "participantId": null,
           "teamId": null,
@@ -1120,11 +1647,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 10,
           "placeLabel": "10th",
+          "subdivision": null,
           "name": "KRAKEN SATX",
           "participantId": null,
           "teamId": null,
@@ -1134,11 +1663,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 11,
           "placeLabel": "11th",
+          "subdivision": null,
           "name": "SEA MONSTERS PREMIER",
           "participantId": null,
           "teamId": null,
@@ -1148,11 +1679,13 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 12,
           "placeLabel": "12th",
+          "subdivision": null,
           "name": "VIPER PIGEON RED",
           "participantId": null,
           "teamId": null,
@@ -1162,7 +1695,8 @@
           "divisionId": "16u-girls-championship",
           "divisionLabel": "16U Girls Championship",
           "ageGroup": "16U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         }
       ]
     },
@@ -1178,6 +1712,7 @@
         {
           "place": 1,
           "placeLabel": "1st",
+          "subdivision": null,
           "name": "GLADIATORS",
           "participantId": null,
           "teamId": null,
@@ -1187,11 +1722,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 2,
           "placeLabel": "2nd",
+          "subdivision": null,
           "name": "TEAM ORLANDO",
           "participantId": null,
           "teamId": null,
@@ -1201,11 +1738,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 3,
           "placeLabel": "3rd",
+          "subdivision": null,
           "name": "ORLANDO THUNDER",
           "participantId": null,
           "teamId": null,
@@ -1215,11 +1754,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 4,
           "placeLabel": "4th",
+          "subdivision": null,
           "name": "VIPER PIGEON BLUE",
           "participantId": null,
           "teamId": null,
@@ -1229,11 +1770,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 5,
           "placeLabel": "5th",
+          "subdivision": null,
           "name": "NEW HAVEN HYDRAS",
           "participantId": null,
           "teamId": null,
@@ -1243,11 +1786,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 6,
           "placeLabel": "6th",
+          "subdivision": null,
           "name": "KRAKEN SATX",
           "participantId": null,
           "teamId": null,
@@ -1257,11 +1802,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 7,
           "placeLabel": "7th",
+          "subdivision": null,
           "name": "BCWP",
           "participantId": null,
           "teamId": null,
@@ -1271,11 +1818,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 8,
           "placeLabel": "8th",
+          "subdivision": null,
           "name": "STORM HURRICANES",
           "participantId": null,
           "teamId": null,
@@ -1285,11 +1834,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 9,
           "placeLabel": "9th",
+          "subdivision": null,
           "name": "HOUSTON HYDRA",
           "participantId": null,
           "teamId": null,
@@ -1299,11 +1850,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 10,
           "placeLabel": "10th",
+          "subdivision": null,
           "name": "DAISY",
           "participantId": null,
           "teamId": null,
@@ -1313,11 +1866,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 11,
           "placeLabel": "11th",
+          "subdivision": null,
           "name": "KRAKEN CVU",
           "participantId": null,
           "teamId": null,
@@ -1327,11 +1882,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 12,
           "placeLabel": "12th",
+          "subdivision": null,
           "name": "KRAKEN",
           "participantId": null,
           "teamId": null,
@@ -1341,11 +1898,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 13,
           "placeLabel": "13th",
+          "subdivision": null,
           "name": "GATEWAY",
           "participantId": null,
           "teamId": null,
@@ -1355,11 +1914,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 14,
           "placeLabel": "14th",
+          "subdivision": null,
           "name": "VIPER PIGEON BLACK",
           "participantId": null,
           "teamId": null,
@@ -1369,11 +1930,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 15,
           "placeLabel": "15th",
+          "subdivision": null,
           "name": "CWPC",
           "participantId": null,
           "teamId": null,
@@ -1383,11 +1946,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 16,
           "placeLabel": "16th",
+          "subdivision": null,
           "name": "SOUTHSIDE",
           "participantId": null,
           "teamId": null,
@@ -1397,11 +1962,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 17,
           "placeLabel": "17th",
+          "subdivision": null,
           "name": "ALAMO",
           "participantId": null,
           "teamId": null,
@@ -1411,11 +1978,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 18,
           "placeLabel": "18th",
+          "subdivision": null,
           "name": "ZENITH ALL STARS",
           "participantId": null,
           "teamId": null,
@@ -1425,11 +1994,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 19,
           "placeLabel": "19th",
+          "subdivision": null,
           "name": "THUNDER",
           "participantId": null,
           "teamId": null,
@@ -1439,11 +2010,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 20,
           "placeLabel": "20th",
+          "subdivision": null,
           "name": "SEA MONSTERS PREMIER",
           "participantId": null,
           "teamId": null,
@@ -1453,11 +2026,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 21,
           "placeLabel": "21st",
+          "subdivision": null,
           "name": "ZOO",
           "participantId": null,
           "teamId": null,
@@ -1467,11 +2042,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 22,
           "placeLabel": "22nd",
+          "subdivision": null,
           "name": "BCWP BLUE",
           "participantId": null,
           "teamId": null,
@@ -1481,11 +2058,13 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         },
         {
           "place": 23,
           "placeLabel": "23rd",
+          "subdivision": null,
           "name": "LONGHORN WHITE",
           "participantId": null,
           "teamId": null,
@@ -1495,7 +2074,8 @@
           "divisionId": "18u-boys-championship",
           "divisionLabel": "18U Boys Championship",
           "ageGroup": "18U",
-          "gender": "Boys"
+          "gender": "Boys",
+          "suppressParticipantLink": false
         }
       ]
     },
@@ -1511,6 +2091,7 @@
         {
           "place": 1,
           "placeLabel": "1st",
+          "subdivision": null,
           "name": "HOUSTON HYDRA",
           "participantId": null,
           "teamId": null,
@@ -1520,11 +2101,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 2,
           "placeLabel": "2nd",
+          "subdivision": null,
           "name": "PEGASUS",
           "participantId": null,
           "teamId": null,
@@ -1534,11 +2117,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 3,
           "placeLabel": "3rd",
+          "subdivision": null,
           "name": "SEA MONSTERS PREMIER",
           "participantId": null,
           "teamId": null,
@@ -1548,11 +2133,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 4,
           "placeLabel": "4th",
+          "subdivision": null,
           "name": "SLAP",
           "participantId": null,
           "teamId": null,
@@ -1562,11 +2149,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 5,
           "placeLabel": "5th",
+          "subdivision": null,
           "name": "VIPER PIGEONS",
           "participantId": null,
           "teamId": null,
@@ -1576,11 +2165,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 6,
           "placeLabel": "6th",
+          "subdivision": null,
           "name": "NEW HAVEN HYDRAS",
           "participantId": null,
           "teamId": null,
@@ -1590,11 +2181,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 7,
           "placeLabel": "7th",
+          "subdivision": null,
           "name": "FLEET",
           "participantId": null,
           "teamId": null,
@@ -1604,11 +2197,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 8,
           "placeLabel": "8th",
+          "subdivision": null,
           "name": "STORM TSUNAMIS",
           "participantId": null,
           "teamId": null,
@@ -1618,11 +2213,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 9,
           "placeLabel": "9th",
+          "subdivision": null,
           "name": "SOUTHLAKE",
           "participantId": null,
           "teamId": null,
@@ -1632,11 +2229,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 10,
           "placeLabel": "10th",
+          "subdivision": null,
           "name": "KRAKEN SATX",
           "participantId": null,
           "teamId": null,
@@ -1646,11 +2245,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 11,
           "placeLabel": "11th",
+          "subdivision": null,
           "name": "KRAKEN",
           "participantId": null,
           "teamId": null,
@@ -1660,11 +2261,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 12,
           "placeLabel": "12th",
+          "subdivision": null,
           "name": "ALAMO",
           "participantId": null,
           "teamId": null,
@@ -1674,11 +2277,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 13,
           "placeLabel": "13th",
+          "subdivision": null,
           "name": "BCWP",
           "participantId": null,
           "teamId": null,
@@ -1688,11 +2293,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 14,
           "placeLabel": "14th",
+          "subdivision": null,
           "name": "ZENITH ALL STARS",
           "participantId": null,
           "teamId": null,
@@ -1702,11 +2309,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 15,
           "placeLabel": "15th",
+          "subdivision": null,
           "name": "ST LOUIS LIONS",
           "participantId": null,
           "teamId": null,
@@ -1716,11 +2325,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 16,
           "placeLabel": "16th",
+          "subdivision": null,
           "name": "STORM CYCLONES",
           "participantId": null,
           "teamId": null,
@@ -1730,11 +2341,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 17,
           "placeLabel": "17th",
+          "subdivision": null,
           "name": "LONGHORN WHITE",
           "participantId": null,
           "teamId": null,
@@ -1744,11 +2357,13 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         },
         {
           "place": 18,
           "placeLabel": "18th",
+          "subdivision": null,
           "name": "ZOO",
           "participantId": null,
           "teamId": null,
@@ -1758,7 +2373,8 @@
           "divisionId": "18u-girls-championship",
           "divisionLabel": "18U Girls Championship",
           "ageGroup": "18U",
-          "gender": "Girls"
+          "gender": "Girls",
+          "suppressParticipantLink": false
         }
       ]
     }

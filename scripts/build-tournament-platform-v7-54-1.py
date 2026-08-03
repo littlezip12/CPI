@@ -15,7 +15,7 @@ ARCHIVE_DIR = ROOT / "data/tournaments/archive"
 CLUBS_PATH = ROOT / "clubs.json"
 RANKINGS_PATH = ROOT / "rankings.json"
 ALIASES_PATH = ROOT / "data/identity/aliases.json"
-RELEASE = "7.54.16"
+RELEASE = "7.54.17"
 BUILD_TIMESTAMP = "2026-08-02T22:28:00-07:00"
 FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg"
 # User-verified tournament label to logo mappings. These supply artwork without
@@ -142,10 +142,12 @@ def placement_rows(event_id: str) -> tuple[dict[tuple[str, str], dict], dict[str
                 "ageGroup": placement.get("ageGroup"),
                 "gender": placement.get("gender"),
                 "source": placement.get("source"),
+                "suppressParticipantLink": bool(placement.get("suppressParticipantLink")),
             }
             if not row["divisionId"] or not name:
                 continue
-            by_name[(row["divisionId"], normalize(name))] = row
+            if not row.get("suppressParticipantLink"):
+                by_name[(row["divisionId"], normalize(name))] = row
             by_division[row["divisionId"]].append(row)
     return by_name, by_division
 
@@ -370,7 +372,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
                 "gender": division.get("gender"),
                 "division": division.get("division"),
                 "divisionTier": division.get("divisionTier"),
-                "status": "complete" if final_games == len(games) else "in_progress",
+                "status": ("complete" if final_games == len(games) else ("complete_with_score_gap" if final_games == 0 and raw_placements_by_division.get(division["id"]) else "in_progress")),
                 "gameCount": len(games),
                 "finalGameCount": final_games,
                 "scheduledGameCount": len(games) - final_games,
@@ -393,7 +395,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
     for division_id, rows in raw_placements_by_division.items():
         for row in rows:
             canonical = canonical_by_group.get((division_id, normalize(row.get("name"))))
-            if canonical:
+            if canonical and not row.get("suppressParticipantLink"):
                 row = {
                     **row,
                     "name": canonical.get("name") or row.get("name"),
@@ -436,7 +438,11 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
                     "wins": state["wins"],
                     "losses": state["losses"],
                     "ties": state["ties"],
-                    "display": f"{state['wins']}-{state['losses']}" + (f"-{state['ties']}" if state["ties"] else ""),
+                    "display": (
+                        "Scores unavailable"
+                        if not any(game.get("status") == "final" and (game.get("white", {}).get("participantId") == pid or game.get("dark", {}).get("participantId") == pid) for game in all_games)
+                        else f"{state['wins']}-{state['losses']}" + (f"-{state['ties']}" if state["ties"] else "")
+                    ),
                 },
             }
         )
@@ -458,9 +464,9 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
             "shortName": event.get("shortName"),
             "season": (event.get("divisions") or [{}])[0].get("season"),
             "kind": event.get("kind"),
-            "status": "complete_with_source_gap" if event_id == "2026-jo-session-3" else "complete",
+            "status": "complete_with_score_gap" if event_id == "2026-jo-session-3" else "complete",
             "operationsMode": "archive",
-            "sourceGap": {"divisionId": "12u-coed-championship", "scheduledWithoutScores": 81} if event_id == "2026-jo-session-3" else None,
+            "sourceGap": {"divisionId": "12u-coed-championship", "scheduledWithoutScores": 81, "placementsPublished": 21, "recordsAvailable": False} if event_id == "2026-jo-session-3" else None,
             "clubLogosEnabled": event_id != "2026-jo-session-3",
             "startDate": start_date,
             "endDate": end_date,

@@ -10,7 +10,7 @@ registry=load('data/tournaments/platform/registry.json')
 bundle=load('data/tournaments/platform/events/2026-kap7-international.json')
 placements=load('data/tournaments/archive/2026-kap7-international.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.16'}: errors.append('site version must be 7.54.11')
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17'}: errors.append('site version must be 7.54.11')
 if site.get('kap7InternationalPlatformRelease')!='7.54.10': errors.append('KAP7 release metadata missing')
 expected={'divisionCount':18,'gameCount':579,'finalGameCount':578,'scheduledGameCount':1,'teamCount':280,'placementCount':136,'venueCount':25,'dateCount':2}
 for key,value in expected.items():
@@ -53,7 +53,7 @@ if not hub_event or hub_event.get('year')!=2026 or hub_event.get('seasonOrder')!
 ids_2026=[e.get('id') for e in hub.get('events',[]) if e.get('year')==2026]
 if not ids_2026 or ids_2026[0]!='2026-kap7-international' or ids_2026[-1]!='2026-junior-olympics': errors.append(f'2026 water polo season order is incorrect: {ids_2026}')
 js=(ROOT/'js/tournament-platform-v7-54-0.js').read_text(encoding='utf-8')
-for token in ['const RELEASE = "7.54.16"','Score unavailable','data-team']:
+for token in ['const RELEASE = "7.54.17"','Score unavailable','data-team']:
  if token not in js: errors.append(f'platform UI missing {token}')
 if len(load('rankings.json'))!=724: errors.append('rankings count changed')
 if len(load('clubs.json'))!=182: errors.append('club count changed')

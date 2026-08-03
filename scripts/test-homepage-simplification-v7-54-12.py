@@ -16,14 +16,14 @@ js = read('js/homepage-wpi-v7-52-4.js')
 shell = read('js/site-shell.js')
 
 for key in ('version','homepageRelease','navigationRelease','publicExperienceRelease'):
-    if site.get(key) not in {'7.54.12','7.54.13','7.54.14','7.54.15','7.54.16'}:
+    if site.get(key) not in {'7.54.12','7.54.13','7.54.14','7.54.15','7.54.17'}:
         errors.append(f'{key} must preserve the 7.54.12 homepage release')
 
 required_home = [
     'Know the teams. <em>Follow the season.</em>',
     'teams.html#team-directory',
     'css/homepage-wpi-v7-54-12.css?v=7.54.13',
-    'js/homepage-wpi-v7-52-4.js?v=7.54.16',
+    'js/homepage-wpi-v7-52-4.js?v=7.54.17',
     'id="wpiFeaturedClubs"',
     'id="wpiCaliforniaClubCount"',
     'id="wpiNationalClubCount"',

@@ -278,21 +278,21 @@
   bindHomepagePathways();
   bindResultsControls();
 
-  fetch("data/tournaments/jo-results-2026.json?v=7.54.16", { cache: "no-store" })
+  fetch("data/tournaments/jo-results-2026.json?v=7.54.17", { cache: "no-store" })
     .then((response) => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
     .then((data) => {
       joPayload = data;
       $("#wpiJoFinishCount").textContent = Number(data.summary?.teamPlacements || data.summary?.teams || 0).toLocaleString();
       renderResultAgeButtons();
       renderResults();
-      fetch("data/tournaments/jo-recap-2026.json?v=7.54.16", { cache: "no-store" })
+      fetch("data/tournaments/jo-recap-2026.json?v=7.54.17", { cache: "no-store" })
         .then(response => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
-        .then(recap => { $("#wpiJoFinishCount").textContent = Number(recap.summary?.verifiedPlacements || 1093).toLocaleString(); })
+        .then(recap => { $("#wpiJoFinishCount").textContent = Number(recap.summary?.verifiedPlacements || 1114).toLocaleString(); })
         .catch(error => console.warn("Unable to load JO recap count", error));
     })
     .catch((error) => {
       console.error("Unable to load JO results on homepage", error);
-      $("#wpiJoFinishCount").textContent = "1,093";
+      $("#wpiJoFinishCount").textContent = "1,114";
       $("#wpiResultsGrid").innerHTML = `<div class="wpi-loading">Results are temporarily unavailable. <a href="tournaments.html#jo-results">Open the full results browser.</a></div>`;
     });
 })();

@@ -1,0 +1,81 @@
+WPI 7.54.17 — JO Weekend 3 Placement Completion
+==================================================
+
+Purpose:
+- Publish user-confirmed 12U Coed Platinum and Gold final rankings.
+- Correct 14U Boys into separate Platinum and Gold placement flights.
+- Preserve the 12U score gap and the 14U game/placement discrepancy transparently.
+- Update the three-weekend JO recap to 1,114 placements.
+- Leave all WPI rankings unchanged.
+
+Files:
+- INSTALL_7.54.17.md
+- SOURCE_REVIEW_2026_JO_WEEKEND_3.md
+- VERSION.md
+- config/site-release.json
+- config/tournament-operations.json
+- data/tournaments/archive/2026-jo-session-3.json
+- data/tournaments/jo-recap-2026.json
+- data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json
+- data/tournaments/platform/events/2026-boys-futures-super-finals.json
+- data/tournaments/platform/events/2026-girls-futures-super-finals.json
+- data/tournaments/platform/events/2026-jo-session-3.json
+- data/tournaments/platform/events/2026-kap7-international.json
+- data/tournaments/platform/events/2026-quiksilver-cup.json
+- data/tournaments/platform/events/2026-san-diego-county-cup.json
+- data/tournaments/platform/registry.json
+- data/tournaments/platform/runtime.js
+- data/tournaments/public-hub.json
+- index.html
+- jo-recap.html
+- js/homepage-wpi-v7-52-4.js
+- js/jo-recap-v7-54-16.js
+- js/tournament-hub-v7-54-4.js
+- js/tournament-platform-v7-54-0.js
+- scripts/build-jo-recap-v7-54-16.py
+- scripts/build-jo-session-3-archive-v7-54-16.py
+- scripts/build-tournament-platform-v7-54-1.py
+- scripts/test-boys-post-jo-rankings-v7-52-0.py
+- scripts/test-brand-teams-section-landing-v7-53-4.py
+- scripts/test-club-family-cleanup-v7-52-12.py
+- scripts/test-club-locations-v7-52-5.py
+- scripts/test-club-logos-v7-52-6.py
+- scripts/test-club-profile-experience-v7-53-0.py
+- scripts/test-club-websites-v7-52-14.py
+- scripts/test-club-websites-v7-52-16.py
+- scripts/test-evan-cousineau-v7-54-7.py
+- scripts/test-girls-futures-super-finals-v7-54-11.py
+- scripts/test-girls-post-jo-rankings-v7-52-2.py
+- scripts/test-homepage-simplification-v7-54-12.py
+- scripts/test-jo-logo-delivery-v7-52-9.py
+- scripts/test-jo-profile-bridge-v7-52-11.py
+- scripts/test-jo-recap-v7-54-16.py
+- scripts/test-jo-results-browser-v7-52-1.py
+- scripts/test-jo-results-links-v7-52-7.py
+- scripts/test-jo-results-logo-regression-v7-52-15.js
+- scripts/test-jo-session-3-v7-54-5.py
+- scripts/test-kap7-international-v7-54-9.py
+- scripts/test-kap7-logo-mapping-v7-54-10.py
+- scripts/test-kern-skip-separation-v7-52-13.py
+- scripts/test-landing-page-clarity-v7-54-13.py
+- scripts/test-navigation-homepage-v7-53-3.py
+- scripts/test-public-tournament-hub-v7-54-4.py
+- scripts/test-release-integrity-v7-52-15.py
+- scripts/test-san-diego-county-cup-v7-54-8.py
+- scripts/test-team-directory-curation-v7-54-14.py
+- scripts/test-team-directory-logos-v7-53-6.js
+- scripts/test-team-hero-compact-v7-54-15.py
+- scripts/test-team-profile-experience-v7-53-1.py
+- scripts/test-tournament-platform-v7-54-0.js
+- scripts/test-tournament-platform-v7-54-0.py
+- scripts/test-tournament-platform-v7-54-1.js
+- scripts/test-tournament-platform-v7-54-1.py
+- scripts/test-wpi-homepage-v7-52-4.py
+- scripts/test-wpi-universal-shell-v7-52-3.py
+- scripts/validate-tournament-operations.py
+- tournament.html
+- tournaments.html
+
+Validation:
+- All release-check commands passed in segmented execution against the uploaded 7.54.16 baseline.
+- 724 rankings, 182 clubs, and 976 legacy JO placements remain unchanged.

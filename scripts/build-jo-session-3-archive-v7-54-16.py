@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build the verified WPI archive placement file for 2026 JO Session 3.
+"""Build the verified WPI archive placement file for 2026 JO Weekend 3.
 
-Seven divisions have complete scored results. The official 12U Coed source still
-contains the full 81-game bracket but no scores, so that division remains
-schedule-only and no placements are inferred.
+Seven divisions retain complete scored results. The 12U Coed source still has
+81 unscored games, but user-supplied final Platinum and Gold rankings now allow
+WPI to publish verified finishes without inventing game scores or records.
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 NORMALIZED = ROOT / "data/tournaments/normalized/2026-jo-session-3"
 OUTPUT = ROOT / "data/tournaments/archive/2026-jo-session-3.json"
-RELEASE = "7.54.16"
+RELEASE = "7.54.17"
 
 DIVISIONS = {
     "10u-coed-championship": ("10U Coed Championship", "10U", "Coed"),
@@ -31,6 +31,68 @@ DIVISIONS = {
 NAME_FIXES = {
     "ORLANO THUNDER": "ORLANDO THUNDER",
     "CHICACO PARKS DISTRICT": "CHICAGO PARKS DISTRICT",
+}
+
+USER_CONFIRMED_FLIGHTS = {
+    "12u-coed-championship": {
+        "Platinum": [
+            "HOUSTON HYDRA",
+            "VIPER PIGEON BLUE",
+            "PEAK POLO",
+            "TEAM ORLANDO",
+            "KRAKEN SATX POSEIDON",
+            "GLADIATORS",
+            "SOUTHLAKE",
+            "ALAMO",
+            "SWIM RVA",
+            "PEGASUS RED",
+            "SLAP",
+            "KRAKEN SATX NEPTUNE",
+        ],
+        "Gold": [
+            "PAC",
+            "RISE",
+            "STORM TYPHOONS",
+            "FLEET",
+            "ZILLA",
+            "HOUSTON HYDRA WHITE",
+            "THUNDER",
+            "808",
+            "VIPER PIGEON RED",
+        ],
+    },
+    "14u-boys-championship": {
+        "Platinum": [
+            "TEAM ORLANDO",
+            "WEST SUBURBAN",
+            "HOUSTON HYDRA",
+            "ROCKY MOUNTAIN WARRIORS",
+            "NORCO",
+            "ORLANDO THUNDER",
+            "MIAMI WOLVERINES",
+            "GLADIATORS",
+            "PEAK POLO",
+            "SLAP",
+            "VP HILL COUNTRY",
+            "VP HTOWN",
+            "CHICAGO PARKS DISTRICT",
+            "ALAMO",
+            "FLEET",
+            "RISE",
+        ],
+        "Gold": [
+            "NORTHEAST ELITE",
+            "STORM MONSOONS",
+            "BCWP",
+            "LONGHORN WHITE",
+            "KRAKEN SATX",
+            "Z TOWN",
+            "PEAK POLO",
+            "SLAP",
+            "DISTRICT BLOSSOMS",
+            "DAISY",
+        ],
+    },
 }
 
 
@@ -64,11 +126,21 @@ def game_map(dataset: dict) -> dict[str, dict]:
     return {game["sourceGameId"]: game for game in dataset.get("games", [])}
 
 
-def placement_row(division_id: str, place: int, name: str, source: str, game_id: str | None = None, note: str | None = None) -> dict:
+def placement_row(
+    division_id: str,
+    place: int,
+    name: str,
+    source: str,
+    game_id: str | None = None,
+    note: str | None = None,
+    subdivision: str | None = None,
+    suppress_participant_link: bool = False,
+) -> dict:
     label, age_group, gender = DIVISIONS[division_id]
     row = {
         "place": place,
-        "placeLabel": ordinal(place),
+        "placeLabel": f"{ordinal(place)} in {subdivision}" if subdivision else ordinal(place),
+        "subdivision": subdivision,
         "name": clean_name(name),
         "participantId": None,
         "teamId": None,
@@ -79,13 +151,22 @@ def placement_row(division_id: str, place: int, name: str, source: str, game_id:
         "divisionLabel": label,
         "ageGroup": age_group,
         "gender": gender,
+        "suppressParticipantLink": suppress_participant_link,
     }
     if note:
         row["note"] = note
     return row
 
 
-def add_game_pair(rows: list[dict], division_id: str, games: dict[str, dict], source_game_id: str, winner_place: int, loser_place: int, source: str = "placement_game") -> None:
+def add_game_pair(
+    rows: list[dict],
+    division_id: str,
+    games: dict[str, dict],
+    source_game_id: str,
+    winner_place: int,
+    loser_place: int,
+    source: str = "placement_game",
+) -> None:
     game = games[source_game_id]
     if game.get("status") != "final":
         raise ValueError(f"{division_id} {source_game_id} is not final")
@@ -121,8 +202,6 @@ def round_robin_rows(division_id: str, games: dict[str, dict], game_ids: list[st
             records[dark]["wins"] += 1
             records[white]["losses"] += 1
     ordered = sorted(records, key=lambda name: (-records[name]["wins"], -records[name]["diff"], -records[name]["scored"], name))
-    # Every Session 3 round robin used here has unique records; fail if the primary
-    # ordering cannot distinguish adjacent teams.
     for left, right in zip(ordered, ordered[1:]):
         if records[left]["wins"] == records[right]["wins"] and records[left]["diff"] == records[right]["diff"] and records[left]["scored"] == records[right]["scored"]:
             raise ValueError(f"{division_id} round robin remains tied: {left} / {right}")
@@ -139,23 +218,63 @@ def round_robin_rows(division_id: str, games: dict[str, dict], game_ids: list[st
     ]
 
 
+def user_confirmed_rows(division_id: str) -> list[dict]:
+    rows: list[dict] = []
+    for subdivision, names in USER_CONFIRMED_FLIGHTS[division_id].items():
+        for place, name in enumerate(names, start=1):
+            rows.append(
+                placement_row(
+                    division_id,
+                    place,
+                    name,
+                    "user_confirmed_final_ranking",
+                    subdivision=subdivision,
+                    note="Final flight ranking supplied by the site owner after tournament completion.",
+                    suppress_participant_link=(
+                        division_id == "14u-boys-championship"
+                        and subdivision == "Gold"
+                        and name in {"PEAK POLO", "SLAP"}
+                    ),
+                )
+            )
+    return rows
+
+
+def validate_flights(division_id: str, rows: list[dict]) -> None:
+    expected = USER_CONFIRMED_FLIGHTS[division_id]
+    for subdivision, names in expected.items():
+        actual = [row for row in rows if row.get("subdivision") == subdivision]
+        actual.sort(key=lambda row: row["place"])
+        if [row["place"] for row in actual] != list(range(1, len(names) + 1)):
+            raise ValueError(f"{division_id} {subdivision} placement range is incomplete")
+        if [row["name"] for row in actual] != [clean_name(name) for name in names]:
+            raise ValueError(f"{division_id} {subdivision} placement order changed")
+
+
 def build_group(division_id: str) -> dict:
     label, age_group, gender = DIVISIONS[division_id]
     dataset = load(division_id)
     games = game_map(dataset)
     rows: list[dict] = []
 
-    if division_id == "12u-coed-championship":
+    if division_id in USER_CONFIRMED_FLIGHTS:
+        rows = user_confirmed_rows(division_id)
+        validate_flights(division_id, rows)
         return {
             "id": division_id,
             "label": label,
             "ageGroup": age_group,
             "gender": gender,
-            "status": "source_incomplete",
+            "status": "placement_complete_score_gap" if division_id == "12u-coed-championship" else "complete",
             "gameCount": len(dataset.get("games", [])),
             "finalGameCount": dataset.get("counts", {}).get("finalGames", 0),
-            "placements": [],
-            "sourceNote": "The official source contains the full 81-game bracket but no scores. WPI does not infer results or placements.",
+            "placements": rows,
+            "sourceNote": (
+                "Final Platinum and Gold rankings are published from the site owner's post-event confirmation. "
+                "The official source still contains no game scores, so records and game outcomes remain unavailable."
+                if division_id == "12u-coed-championship"
+                else "Final Platinum and Gold flight rankings are published from the site owner's post-event confirmation."
+            ),
         }
 
     if division_id == "10u-coed-championship":
@@ -165,52 +284,35 @@ def build_group(division_id: str) -> dict:
     elif division_id == "14u-girls-championship":
         for args in [("14G-027", 1, 2), ("14G-026", 3, 4), ("14G-025", 5, 6)]:
             add_game_pair(rows, division_id, games, *args)
-        # Game 22 was explicitly a 7th-place elimination into the 5th-place game.
         rows.append(placement_row(division_id, 7, games["14G-022"]["outcome"]["loserName"], "placement_path", games["14G-022"]["id"]))
 
     elif division_id == "16u-girls-championship":
         for args in [("16G-048", 1, 2), ("16G-047", 3, 4), ("16G-046", 5, 6), ("16G-045", 7, 8), ("16G-044", 9, 10), ("16G-043", 11, 12)]:
             add_game_pair(rows, division_id, games, *args)
 
-    elif division_id == "14u-boys-championship":
-        # Championship/top flight: 12 teams.
-        for args in [("14B-127", 1, 2), ("14B-129", 3, 4), ("14B-118", 5, 6), ("14B-119", 7, 8), ("14B-124", 9, 10), ("14B-125", 11, 12)]:
-            add_game_pair(rows, division_id, games, *args)
-        # Lower flight: local 1-14 becomes overall 13-26.
-        for source_game_id, local_winner, local_loser in [("14B-130", 1, 2), ("14B-128", 3, 4), ("14B-123", 5, 6), ("14B-120", 7, 8), ("14B-117", 9, 10)]:
-            add_game_pair(rows, division_id, games, source_game_id, local_winner + 12, local_loser + 12, "placement_game_lower_flight")
-        rows.extend(round_robin_rows(division_id, games, ["14B-093", "14B-105", "14B-104", "14B-092", "14B-121", "14B-122"], 23))
-
     elif division_id == "16u-boys-championship":
-        # Championship/top flight: 13 teams.
         for args in [("16B-090", 1, 2), ("16B-089", 3, 4), ("16B-087", 5, 6), ("16B-088", 7, 8), ("16B-083", 9, 10)]:
             add_game_pair(rows, division_id, games, *args)
         rows.extend(round_robin_rows(division_id, games, ["16B-76A", "16B-80A", "16B-084"], 11))
-        # Lower flight: local 1-12 becomes overall 14-25.
         for source_game_id, local_winner, local_loser in [("16B-092", 1, 2), ("16B-091", 3, 4), ("16B-086", 5, 6), ("16B-085", 7, 8), ("16B-082", 9, 10), ("16B-081", 11, 12)]:
             add_game_pair(rows, division_id, games, source_game_id, local_winner + 13, local_loser + 13, "placement_game_lower_flight")
 
     elif division_id == "18u-boys-championship":
-        # Championship/top flight: 12 teams.
         for args in [("18B-092", 1, 2), ("18B-091", 3, 4), ("18B-086", 5, 6), ("18B-085", 7, 8), ("18B-082", 9, 10), ("18B-081", 11, 12)]:
             add_game_pair(rows, division_id, games, *args)
-        # Lower flight: local 1-11 becomes overall 13-23.
         for source_game_id, local_winner, local_loser in [("18B-090", 1, 2), ("18B-089", 3, 4), ("18B-083", 5, 6), ("18B-088", 7, 8)]:
             add_game_pair(rows, division_id, games, source_game_id, local_winner + 12, local_loser + 12, "placement_game_lower_flight")
         for local_place, name in enumerate(["ZOO", "BCWP BLUE", "LONGHORN WHITE"], start=9):
             rows.append(placement_row(division_id, local_place + 12, name, "official_placement_footer", None))
 
     elif division_id == "18u-girls-championship":
-        # Championship/top flight: 12 teams.
         for args in [("18G-186", 1, 2), ("18G-185", 3, 4), ("18G-193", 5, 6), ("18G-178", 7, 8), ("18G-177", 9, 10), ("18G-181", 11, 12)]:
             add_game_pair(rows, division_id, games, *args)
-        # Lower flight: local 1-6 becomes overall 13-18.
         for source_game_id, local_winner, local_loser in [("18G-182", 1, 2), ("18G-191", 3, 4), ("18G-192", 5, 6)]:
             add_game_pair(rows, division_id, games, source_game_id, local_winner + 12, local_loser + 12, "placement_game_lower_flight")
 
     expected = {
         "10u-coed-championship": 6,
-        "14u-boys-championship": 26,
         "14u-girls-championship": 7,
         "16u-boys-championship": 25,
         "16u-girls-championship": 12,
@@ -249,22 +351,23 @@ def main() -> int:
             "publishOnlyVerifiedPlacements": True,
             "unplacedTeamsShowScheduleOnly": True,
             "rankingEvidenceEnabled": False,
-            "note": "Session 3 results are archived for public review and remain quarantined from WPI rankings. No result is inferred from an unscored source row.",
+            "note": "Weekend 3 results are archived for public review and remain quarantined from WPI rankings. User-confirmed final rankings may publish even when underlying game scores are unavailable, but records and outcomes are never inferred.",
         },
         "sourceReviewNotes": {
             "reviewedAt": "2026-08-02",
-            "completeDivisions": 7,
-            "incompleteDivisions": ["12u-coed-championship"],
+            "placementCompleteDivisions": 8,
+            "scoreCompleteDivisions": 7,
+            "scoreGapDivisions": ["12u-coed-championship"],
             "finalGames": 464,
             "scheduledWithoutScores": 81,
-            "verifiedPlacements": 117,
+            "verifiedPlacements": 138,
             "identityNormalizations": [
                 "ORLANO THUNDER -> ORLANDO THUNDER (obvious source typo)",
                 "CHICACO PARKS DISTRICT -> CHICAGO PARKS DISTRICT (obvious source typo)",
             ],
             "sourceDiscrepancies": [
-                "The 14U Boys lower-flight placement footer lists PEAK POLO / SLAP for local 7th/8th, but scored placement game 14B-120 is PEGASUS RED 14, SIERRA NEVADA 13. WPI uses the scored final game.",
-                "12U Coed includes all 81 scheduled games and bracket routing, but every score cell remains blank in the official source snapshot.",
+                "The scored 14U Boys game 14B-120 lists Pegasus Red and Sierra Nevada, while the user-confirmed final Gold ranking places Peak Polo 7th and SLAP 8th. WPI preserves the scored game row but uses the confirmed final ranking for placement display.",
+                "12U Coed includes all 81 scheduled games and bracket routing, but every score cell remains blank in the official source snapshot. Final Platinum and Gold rankings were supplied after the event; records remain unavailable.",
             ],
             "unresolvedIdentityPolicy": "National and tournament-only team labels remain source-faithful. THUNDER is not guessed as a specific club.",
         },
@@ -273,8 +376,9 @@ def main() -> int:
     dump(value)
     print("JO SESSION 3 ARCHIVE BUILD COMPLETE")
     print(" - 8 divisions, 545 scheduled games")
-    print(" - 7 complete divisions, 464 verified finals, 117 verified placements")
-    print(" - 12U Coed remains schedule-only: 81 games with no official scores")
+    print(" - 138 verified placements across all eight divisions")
+    print(" - 7 divisions have 464 verified finals; 12U Coed retains 81 unscored games")
+    print(" - 12U and 14U final rankings are separated into Platinum and Gold flights")
     print(" - Rankings remain manual and unchanged")
     return 0
 

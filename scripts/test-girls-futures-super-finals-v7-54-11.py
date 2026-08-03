@@ -10,7 +10,7 @@ registry=load('data/tournaments/platform/registry.json')
 bundle=load('data/tournaments/platform/events/2026-girls-futures-super-finals.json')
 placements=load('data/tournaments/archive/2026-girls-futures-super-finals.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.16'}: errors.append('site version must be 7.54.11')
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17'}: errors.append('site version must be 7.54.11')
 if site.get('girlsFuturesPlatformRelease')!='7.54.11': errors.append('Girls Futures release metadata missing')
 expected={'divisionCount':8,'gameCount':374,'finalGameCount':374,'scheduledGameCount':0,'teamCount':139,'placementCount':132,'venueCount':16,'dateCount':3}
 for key,value in expected.items():
@@ -60,7 +60,7 @@ if '2026-girls-futures-super-finals' in ids_2026 and '2026-boys-futures-super-fi
  if ids_2026.index('2026-girls-futures-super-finals')>ids_2026.index('2026-boys-futures-super-finals'): errors.append(f'Girls Futures must precede Boys Futures in season order: {ids_2026}')
 if ids_2026 and ids_2026[-1]!='2026-junior-olympics': errors.append(f'Junior Olympics must remain last in the 2026 water polo archive: {ids_2026}')
 js=(ROOT/'js/tournament-platform-v7-54-0.js').read_text(encoding='utf-8')
-for token in ['const RELEASE = "7.54.16"','Score unavailable','data-team']:
+for token in ['const RELEASE = "7.54.17"','Score unavailable','data-team']:
  if token not in js: errors.append(f'platform UI missing {token}')
 if len(load('rankings.json'))!=724: errors.append('rankings count changed')
 if len(load('clubs.json'))!=182: errors.append('club count changed')

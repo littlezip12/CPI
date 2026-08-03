@@ -1,59 +1,47 @@
 # 2026 Junior Olympics Weekend 3 — Source Review
 
-## Publication decision
+Reviewed August 2, 2026 against the banked tournament source and the post-event final rankings supplied by the site owner.
 
-Weekend 3 is archived as **Junior Olympics Weekend 3 — North Texas** and is included in the complete 2026 Junior Olympics recap.
+## Publication status
 
-- 8 Championship divisions
+- 8 divisions
 - 545 scheduled games
 - 464 verified final games
-- 117 verified placements
-- 138 clean division-team journeys
-- 7 divisions with complete scored results
-- 1 division published as schedule-only because the official result source is incomplete
+- 81 games with scores unavailable, all in 12U Coed
+- 138 verified final placements
+- All 8 divisions now have published final placements
+- 7 divisions have complete game scores and records
+- Rankings remain manual and unchanged
 
-All tournament evidence remains quarantined from automatic WPI ranking publication.
+## 12U Coed
 
-## Missing data requiring follow-up
+The official banked bracket contains all 81 scheduled games, but every score cell remains blank. The site owner supplied the completed final rankings after the tournament.
 
-### 12U Coed Championship
+WPI now publishes the two final flights:
 
-The official source contains all **81 scheduled games**, but every score cell is blank. WPI therefore publishes the schedule and team journeys only.
+- Platinum: 12 placements
+- Gold: 9 placements
 
-WPI does **not** infer:
+The tournament viewer does **not** invent game scores, wins, losses, or team records. Those fields display as unavailable while the confirmed final placements remain visible.
 
-- game winners or losers;
-- team records;
-- final placements; or
-- a division champion.
+## 14U Boys
 
-A scored official source is required before this division can be completed.
+The final rankings confirm two independent flights rather than one continuous 1–26 order:
 
-## Source discrepancy preserved for review
+- Platinum: 16 placements
+- Gold: 10 placements
 
-### 14U Boys Championship lower flight
+The Gold ranking places Peak Polo 7th and SLAP 8th. This conflicts with scored game 14B-120, whose participant row lists Pegasus Red and Sierra Nevada. WPI preserves that scored game exactly as banked but uses the supplied final ranking for placement display. The discrepancy remains documented rather than silently rewriting game participants. Those two Gold placement rows are intentionally not linked to the Platinum team journeys.
 
-The placement footer identifies **Peak Polo / SLAP** for a local seventh/eighth-place slot, while the scored placement game recorded as **14B-120** is **Pegasus Red 14, Sierra Nevada 13**.
+## Identity handling
 
-WPI uses the scored placement game as the result evidence and records the footer inconsistency rather than silently substituting teams.
+The following obvious source typos remain normalized:
 
-## Source-name corrections
+- ORLANO THUNDER → ORLANDO THUNDER
+- CHICACO PARKS DISTRICT → CHICAGO PARKS DISTRICT
 
-The following obvious source typographical errors were normalized for clean journeys:
+The standalone label `THUNDER` remains a tournament-only identity because there is not enough evidence to connect it safely to a specific club.
 
-- `ORLANO THUNDER` → `ORLANDO THUNDER`
-- `CHICACO PARKS DISTRICT` → `CHICAGO PARKS DISTRICT`
+## Ranking policy
 
-The standalone label `THUNDER` remains unresolved because the source does not provide enough information to map it confidently to a canonical club.
-
-## Logo policy
-
-Weekend 3 continues to use generic tournament artwork. Club logos are intentionally disabled because many participating national clubs do not yet have verified WPI identities or approved artwork.
-
-## Live-to-archive transition
-
-- Weekend 3 is no longer presented as the upcoming or active tournament.
-- The public tournament hub links to the archived reusable viewer and the three-weekend JO recap.
-- Scheduled five-minute relay polling has been retired.
-- The legacy Texas viewer and isolated relay bank remain available as on-demand source fallbacks.
-- WPI rankings remain unchanged.
+Weekend 3 results remain isolated from published WPI rankings. Final placements and game history are available for public review, but no automatic ranking changes are permitted.

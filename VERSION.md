@@ -1,10 +1,9 @@
-# WPI 7.54.16 — Junior Olympics Three-Weekend Archive
+# WPI 7.54.17 — JO Weekend 3 Placement Completion
 
-- Archives Junior Olympics Weekend 3 in the reusable tournament viewer.
-- Adds a dedicated recap for all three 2026 Junior Olympics weekends.
-- Publishes 117 verified Weekend 3 placements and 464 verified finals.
-- Clearly withholds Weekend 3 12U Coed results because the official 81-game source has no scores.
-- Updates homepage JO navigation to Weekend 1, Weekend 2, Weekend 3, and the complete recap.
-- Announces the Evan Cousineau Memorial Cup on October 3–4, 2026 as the next major tournament.
-- Keeps Session 3 club logos intentionally disabled and leaves all WPI rankings unchanged.
-- Retires five-minute Session 3 relay polling while preserving the legacy viewer and on-demand source fallback.
+- Publishes 138 verified Weekend 3 placements across all eight divisions.
+- Adds the confirmed 12U Coed Platinum and Gold final rankings while preserving all 81 games as score unavailable.
+- Corrects 14U Boys into separate Platinum and Gold placement flights.
+- Uses the confirmed 14U Gold ranking for placement display while preserving the contradictory scored game row for source transparency.
+- Updates the full 2026 JO recap to 1,114 verified placements and 31 division champions.
+- Keeps tournament results quarantined from automatic WPI ranking changes.
+- Leaves Evan Cousineau Memorial Cup configured as the next announced tournament.

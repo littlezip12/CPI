@@ -1,20 +1,21 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.16",
+  "release": "7.54.17",
   "season": 2026,
   "event": "USA Water Polo National Junior Olympics",
-  "status": "complete_with_source_gap",
-  "generatedAt": "2026-08-02T22:28:00-07:00",
+  "status": "complete_with_score_gap",
+  "generatedAt": "2026-08-02T23:17:00-07:00",
   "summary": {
     "weekends": 3,
     "divisions": 31,
-    "verifiedPlacements": 1093,
-    "completeDivisions": 30,
+    "verifiedPlacements": 1114,
+    "completeDivisions": 31,
+    "scoreCompleteDivisions": 30,
     "sourceIncompleteDivisions": 1,
     "weekend3FinalGames": 464,
     "weekend3ScheduledWithoutScores": 81
   },
-  "sourceNotice": "Weekend 3 12U Coed is the only incomplete division: the official bracket lists all 81 games, but every score cell is blank. WPI does not infer results or placements.",
+  "sourceNotice": "Weekend 3 12U Coed final Platinum and Gold placements are now published from the post-event ranking confirmation. The official bracket still has no game scores, so WPI does not show records or infer game outcomes for that division.",
   "weekends": [
     {
       "id": "weekend-1",
@@ -187,8 +188,8 @@
       "dates": "July 30–August 2, 2026",
       "location": "North Texas",
       "divisionCount": 8,
-      "verifiedPlacements": 117,
-      "status": "complete_with_source_gap",
+      "verifiedPlacements": 138,
+      "status": "complete_with_score_gap",
       "publicPath": "tournament.html?event=2026-jo-session-3",
       "champions": [
         {
@@ -198,9 +199,15 @@
           "team": "ALAMO"
         },
         {
+          "ageGroup": "12U",
+          "category": "Coed",
+          "division": "Platinum",
+          "team": "HOUSTON HYDRA"
+        },
+        {
           "ageGroup": "14U",
           "category": "Boys",
-          "division": "Championship",
+          "division": "Platinum",
           "team": "TEAM ORLANDO"
         },
         {
@@ -234,7 +241,7 @@
           "team": "HOUSTON HYDRA"
         }
       ],
-      "sourceGap": "12U Coed: 81 scheduled games, 0 published scores"
+      "sourceGap": "12U Coed: final placements published; 81 game scores remain unavailable"
     }
   ]
 }
