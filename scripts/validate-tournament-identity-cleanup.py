@@ -76,8 +76,18 @@ manifest_games = sum(int(item.get("counts", {}).get("games") or 0) for item in j
 manifest_finals = sum(int(item.get("counts", {}).get("finalGames") or 0) for item in jo_datasets)
 if manifest_games != 4469:
     fail(f"Cleaned JO bank should contain 4,469 actual schedule records, found {manifest_games}")
-if manifest_finals != 0:
-    fail("Pre-tournament JO cleanup must retain zero completed games")
+by_event = {}
+for item in jo_datasets:
+    event_id = item.get("eventId")
+    bucket = by_event.setdefault(event_id, {"games": 0, "finals": 0})
+    bucket["games"] += int(item.get("counts", {}).get("games") or 0)
+    bucket["finals"] += int(item.get("counts", {}).get("finalGames") or 0)
+if by_event.get("2026-jo-weekend-1", {}).get("finals") != 0 or by_event.get("2026-jo-weekend-2", {}).get("finals") != 0:
+    fail("The two preserved Southern California JO schedule banks must remain pre-tournament snapshots")
+if by_event.get("2026-jo-session-3") != {"games": 545, "finals": 464}:
+    fail(f"Session 3 archive should contain 545 games and 464 verified finals, found {by_event.get('2026-jo-session-3')}")
+if manifest_finals != 464:
+    fail(f"Three-weekend JO bank should contain 464 verified finals, found {manifest_finals}")
 
 # Inspect every normalized participant rather than trusting only the generated registry.
 resolved_prefix_count = 0
@@ -155,6 +165,7 @@ print(f" - {counts.get('canonicalTeams')} participants resolve to canonical WPI 
 print(f" - {counts.get('tournamentOnlyTeams')} verified tournament-only teams remain outside rankings")
 print(f" - {bracket_reference_count} bracket/pool slots remain structured references rather than teams")
 print(f" - {resolved_prefix_count} pool/seed-prefixed labels resolve through clean team names")
+print(" - Southern California pre-tournament snapshots remain intact while Session 3 retains 464 verified finals")
 print(" - Girls JO positional headers and lettered games normalize correctly")
 print(" - Successful unchanged live checks refresh source verification timestamps")
 print(" - Tracked Mac artifacts are absent")

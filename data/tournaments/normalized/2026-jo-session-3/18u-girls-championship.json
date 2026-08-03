@@ -23,24 +23,24 @@
     "gid": "",
     "sheetName": "18U_F_CHAMP-18 teams",
     "url": "https://docs.google.com/spreadsheets/d/1kIm-60Tzm6flJwXQxT0YXcxIsqSYmUw3JzrU-rInRUg/edit?usp=sharing",
-    "fetchedAt": "2026-07-30T02:12:57Z",
-    "mode": "cached_raw",
-    "contentSha256": "f0cfc7d060c90b2435f1dcd18d3c22d3c5e8dcb67bcb65b1138459cd0b5ab7f3",
-    "rowCount": 152
+    "fetchedAt": "2026-08-03T05:31:43Z",
+    "mode": "local_source_file",
+    "contentSha256": "934ebec3fa7ad8cb445fe03bee5599c2ccde5e19a016cf5559072c24ba0bbc5b",
+    "rowCount": 123
   },
   "counts": {
     "games": 75,
-    "finalGames": 0,
-    "scheduledGames": 75,
+    "finalGames": 75,
+    "scheduledGames": 0,
     "zeroZeroPlaceholders": 0,
     "partialScores": 0,
-    "teamParticipants": 36,
+    "teamParticipants": 150,
     "resolvedTeamParticipants": 0,
-    "unresolvedTeamParticipants": 36,
-    "bracketReferences": 114,
+    "unresolvedTeamParticipants": 150,
+    "bracketReferences": 0,
     "placeholders": 0,
     "blockers": 0,
-    "reviewItems": 36
+    "reviewItems": 150
   },
   "placements": [],
   "games": [
@@ -55,7 +55,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-001",
       "sourceGameNumber": 1,
-      "sourceRow": 12,
+      "sourceRow": 11,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "8:00 AM",
@@ -74,8 +74,8 @@
         "displayLabel": "A bracket A1,A3"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1(1)-SEA MONSTERS PREMIER",
@@ -105,20 +105,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 19,
+        "dark": 1,
+        "whiteRaw": "19",
+        "darkRaw": "1",
+        "whiteRegulation": 19,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SEA MONSTERS PREMIER",
+        "loserParticipantId": "tournament-team-2026-18u-girls-kraken-satx",
+        "loserTeamId": null,
+        "loserName": "KRAKEN SATX"
       },
       "advancement": {
         "winnerTo": {
@@ -144,7 +148,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-002",
       "sourceGameNumber": 2,
-      "sourceRow": 13,
+      "sourceRow": 12,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "8:50 AM",
@@ -163,8 +167,8 @@
         "displayLabel": "F bracket F1,F3"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1(6)-KRAKEN",
@@ -194,20 +198,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 7,
+        "dark": 5,
+        "whiteRaw": "7",
+        "darkRaw": "5",
+        "whiteRegulation": 7,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-kraken",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "KRAKEN",
+        "loserParticipantId": "tournament-team-2026-18u-girls-zenith-all-stars",
+        "loserTeamId": null,
+        "loserName": "ZENITH ALL STARS"
       },
       "advancement": {
         "winnerTo": {
@@ -233,7 +241,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-005",
       "sourceGameNumber": 5,
-      "sourceRow": 14,
+      "sourceRow": 13,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "9:40 AM",
@@ -252,8 +260,8 @@
         "displayLabel": "C bracket C1,C3"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1(3)-NEW HAVEN HYDRAS",
@@ -283,20 +291,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 9,
+        "dark": 5,
+        "whiteRaw": "9",
+        "darkRaw": "5",
+        "whiteRegulation": 9,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-new-haven-hydras",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEW HAVEN HYDRAS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-fleet",
+        "loserTeamId": null,
+        "loserName": "FLEET"
       },
       "advancement": {
         "winnerTo": {
@@ -322,7 +334,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-007",
       "sourceGameNumber": 7,
-      "sourceRow": 15,
+      "sourceRow": 14,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "10:30 AM",
@@ -341,8 +353,8 @@
         "displayLabel": "A bracket A2,A3"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A2(12)-ALAMO",
@@ -372,20 +384,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 8,
+        "dark": 7,
+        "whiteRaw": "8",
+        "darkRaw": "7",
+        "whiteRegulation": 8,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-alamo",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "ALAMO",
+        "loserParticipantId": "tournament-team-2026-18u-girls-kraken-satx",
+        "loserTeamId": null,
+        "loserName": "KRAKEN SATX"
       },
       "advancement": {
         "winnerTo": {
@@ -411,7 +427,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-008",
       "sourceGameNumber": 8,
-      "sourceRow": 16,
+      "sourceRow": 15,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "11:20 AM",
@@ -430,8 +446,8 @@
         "displayLabel": "F bracket F2,F3"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F2(7)-PEGASUS",
@@ -461,20 +477,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 13,
+        "dark": 1,
+        "whiteRaw": "13",
+        "darkRaw": "1",
+        "whiteRegulation": 13,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pegasus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PEGASUS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-zenith-all-stars",
+        "loserTeamId": null,
+        "loserName": "ZENITH ALL STARS"
       },
       "advancement": {
         "winnerTo": {
@@ -500,7 +520,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-011",
       "sourceGameNumber": 11,
-      "sourceRow": 17,
+      "sourceRow": 16,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "12:10 PM",
@@ -519,8 +539,8 @@
         "displayLabel": "C bracket C2,C3"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C2(10)-SOUTHLAKE",
@@ -550,20 +570,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 14,
+        "dark": 10,
+        "whiteRaw": "14",
+        "darkRaw": "10",
+        "whiteRegulation": 14,
+        "darkRegulation": 10,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-southlake",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SOUTHLAKE",
+        "loserParticipantId": "tournament-team-2026-18u-girls-fleet",
+        "loserTeamId": null,
+        "loserName": "FLEET"
       },
       "advancement": {
         "winnerTo": {
@@ -589,7 +613,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-013",
       "sourceGameNumber": 13,
-      "sourceRow": 18,
+      "sourceRow": 17,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "1:00 PM",
@@ -608,8 +632,8 @@
         "displayLabel": "A bracket A1,A2"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "A1(1)-SEA MONSTERS PREMIER",
@@ -639,20 +663,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 19,
+        "dark": 2,
+        "whiteRaw": "19",
+        "darkRaw": "2",
+        "whiteRegulation": 19,
+        "darkRegulation": 2,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SEA MONSTERS PREMIER",
+        "loserParticipantId": "tournament-team-2026-18u-girls-alamo",
+        "loserTeamId": null,
+        "loserName": "ALAMO"
       },
       "advancement": {
         "winnerTo": {
@@ -678,7 +706,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-014",
       "sourceGameNumber": 14,
-      "sourceRow": 19,
+      "sourceRow": 18,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "1:50 PM",
@@ -697,8 +725,8 @@
         "displayLabel": "F bracket F1,F2"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "F1(6)-KRAKEN",
@@ -728,20 +756,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 5,
+        "dark": 18,
+        "whiteRaw": "5",
+        "darkRaw": "18",
+        "whiteRegulation": 5,
+        "darkRegulation": 18,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pegasus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PEGASUS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-kraken",
+        "loserTeamId": null,
+        "loserName": "KRAKEN"
       },
       "advancement": {
         "winnerTo": {
@@ -767,7 +799,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-017",
       "sourceGameNumber": 17,
-      "sourceRow": 20,
+      "sourceRow": 19,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "2:40 PM",
@@ -786,8 +818,8 @@
         "displayLabel": "C bracket C1,C2"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "C1(3)-NEW HAVEN HYDRAS",
@@ -817,20 +849,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 12,
+        "dark": 1,
+        "whiteRaw": "12",
+        "darkRaw": "1",
+        "whiteRegulation": 12,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-new-haven-hydras",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEW HAVEN HYDRAS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-southlake",
+        "loserTeamId": null,
+        "loserName": "SOUTHLAKE"
       },
       "advancement": {
         "winnerTo": {
@@ -856,7 +892,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-019",
       "sourceGameNumber": 19,
-      "sourceRow": 21,
+      "sourceRow": 20,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "3:30 PM",
@@ -875,51 +911,55 @@
         "displayLabel": "Cross 2A/3B"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd_A",
-          "kind": "bracket_reference",
+          "raw": "2nd_A-ALAMO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2nd_A",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "2nd_A-ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-2nd-a-alamo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "3rd_B",
-          "kind": "bracket_reference",
+          "raw": "3rd_B-ZOO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rd_B",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "3rd_B-ZOO",
+          "participantId": "tournament-team-2026-18u-girls-3rd-b-zoo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 21,
+        "dark": 1,
+        "whiteRaw": "21",
+        "darkRaw": "1",
+        "whiteRegulation": 21,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-2nd-a-alamo",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "2nd_A-ALAMO",
+        "loserParticipantId": "tournament-team-2026-18u-girls-3rd-b-zoo",
+        "loserTeamId": null,
+        "loserName": "3rd_B-ZOO"
       },
       "advancement": {
         "winnerTo": {
@@ -945,7 +985,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-020",
       "sourceGameNumber": 20,
-      "sourceRow": 22,
+      "sourceRow": 21,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "4:20 PM",
@@ -964,51 +1004,55 @@
         "displayLabel": "Cross 2F/3E"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd_F",
-          "kind": "bracket_reference",
+          "raw": "2nd_F-KRAKEN",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2nd_F",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "2nd_F-KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-2nd-f-kraken",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "3rd_E",
-          "kind": "bracket_reference",
+          "raw": "3rd_E-LONGHORN WHITE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rd_E",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "3rd_E-LONGHORN WHITE",
+          "participantId": "tournament-team-2026-18u-girls-3rd-e-longhorn-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 9,
+        "dark": 1,
+        "whiteRaw": "9",
+        "darkRaw": "1",
+        "whiteRegulation": 9,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-2nd-f-kraken",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "2nd_F-KRAKEN",
+        "loserParticipantId": "tournament-team-2026-18u-girls-3rd-e-longhorn-white",
+        "loserTeamId": null,
+        "loserName": "3rd_E-LONGHORN WHITE"
       },
       "advancement": {
         "winnerTo": {
@@ -1034,7 +1078,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-023",
       "sourceGameNumber": 23,
-      "sourceRow": 23,
+      "sourceRow": 22,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "5:10 PM",
@@ -1053,51 +1097,55 @@
         "displayLabel": "Cross 2C/3D"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd_C",
-          "kind": "bracket_reference",
+          "raw": "2nd_C-SOUTHLAKE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2nd_C",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "2nd_C-SOUTHLAKE",
+          "participantId": "tournament-team-2026-18u-girls-2nd-c-southlake",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "3rd_D",
-          "kind": "bracket_reference",
+          "raw": "3rd_D-STORM CYCLONES",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rd_D",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "3rd_D-STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-3rd-d-storm-cyclones",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 11,
+        "dark": 7,
+        "whiteRaw": "11",
+        "darkRaw": "7",
+        "whiteRegulation": 11,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-2nd-c-southlake",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "2nd_C-SOUTHLAKE",
+        "loserParticipantId": "tournament-team-2026-18u-girls-3rd-d-storm-cyclones",
+        "loserTeamId": null,
+        "loserName": "3rd_D-STORM CYCLONES"
       },
       "advancement": {
         "winnerTo": {
@@ -1123,7 +1171,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-003",
       "sourceGameNumber": 3,
-      "sourceRow": 27,
+      "sourceRow": 25,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "8:00 AM",
@@ -1142,8 +1190,8 @@
         "displayLabel": "B bracket B1,B3"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1(2)-HOUSTON HYDRA",
@@ -1173,20 +1221,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 15,
+        "dark": 1,
+        "whiteRaw": "15",
+        "darkRaw": "1",
+        "whiteRegulation": 15,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-houston-hydra",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "HOUSTON HYDRA",
+        "loserParticipantId": "tournament-team-2026-18u-girls-bcwp",
+        "loserTeamId": null,
+        "loserName": "BCWP"
       },
       "advancement": {
         "winnerTo": {
@@ -1212,7 +1264,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-004",
       "sourceGameNumber": 4,
-      "sourceRow": 28,
+      "sourceRow": 26,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "8:50 AM",
@@ -1231,8 +1283,8 @@
         "displayLabel": "E bracket E1,E3"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1(5)-SLAP",
@@ -1262,20 +1314,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 20,
+        "dark": 0,
+        "whiteRaw": "20",
+        "darkRaw": "0",
+        "whiteRegulation": 20,
+        "darkRegulation": 0,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-slap",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SLAP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-longhorn-white",
+        "loserTeamId": null,
+        "loserName": "LONGHORN WHITE"
       },
       "advancement": {
         "winnerTo": {
@@ -1301,7 +1357,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-006",
       "sourceGameNumber": 6,
-      "sourceRow": 29,
+      "sourceRow": 27,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "9:40 AM",
@@ -1320,8 +1376,8 @@
         "displayLabel": "D bracket D2,D3"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1(4)-VIPER PIGEONS",
@@ -1351,20 +1407,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 16,
+        "dark": 0,
+        "whiteRaw": "16",
+        "darkRaw": "0",
+        "whiteRegulation": 16,
+        "darkRegulation": 0,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-viper-pigeons",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-storm-cyclones",
+        "loserTeamId": null,
+        "loserName": "STORM CYCLONES"
       },
       "advancement": {
         "winnerTo": {
@@ -1390,7 +1450,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-009",
       "sourceGameNumber": 9,
-      "sourceRow": 30,
+      "sourceRow": 28,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "10:30 AM",
@@ -1409,8 +1469,8 @@
         "displayLabel": "B bracket B2,B3"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B2(11)-ZOO",
@@ -1440,20 +1500,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 3,
+        "dark": 18,
+        "whiteRaw": "3",
+        "darkRaw": "18",
+        "whiteRegulation": 3,
+        "darkRegulation": 18,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-bcwp",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "BCWP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-zoo",
+        "loserTeamId": null,
+        "loserName": "ZOO"
       },
       "advancement": {
         "winnerTo": {
@@ -1479,7 +1543,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-010",
       "sourceGameNumber": 10,
-      "sourceRow": 31,
+      "sourceRow": 29,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "11:20 AM",
@@ -1498,8 +1562,8 @@
         "displayLabel": "E bracket E2,E3"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E2(8)-STORM TSUNAMIS",
@@ -1529,20 +1593,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 15,
+        "dark": 1,
+        "whiteRaw": "15",
+        "darkRaw": "1",
+        "whiteRegulation": 15,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-storm-tsunamis",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "STORM TSUNAMIS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-longhorn-white",
+        "loserTeamId": null,
+        "loserName": "LONGHORN WHITE"
       },
       "advancement": {
         "winnerTo": {
@@ -1568,7 +1636,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-012",
       "sourceGameNumber": 12,
-      "sourceRow": 32,
+      "sourceRow": 30,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "12:10 PM",
@@ -1587,8 +1655,8 @@
         "displayLabel": "D bracket D1,D2"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D2(9)-ST LOUIS LIONS",
@@ -1618,20 +1686,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 14,
+        "dark": 1,
+        "whiteRaw": "14",
+        "darkRaw": "1",
+        "whiteRegulation": 14,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-st-louis-lions",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "ST LOUIS LIONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-storm-cyclones",
+        "loserTeamId": null,
+        "loserName": "STORM CYCLONES"
       },
       "advancement": {
         "winnerTo": {
@@ -1657,7 +1729,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-015",
       "sourceGameNumber": 15,
-      "sourceRow": 33,
+      "sourceRow": 31,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "1:00 PM",
@@ -1676,8 +1748,8 @@
         "displayLabel": "B bracket B1,B2"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "B1(2)-HOUSTON HYDRA",
@@ -1707,20 +1779,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 17,
+        "dark": 0,
+        "whiteRaw": "17",
+        "darkRaw": "0",
+        "whiteRegulation": 17,
+        "darkRegulation": 0,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-houston-hydra",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "HOUSTON HYDRA",
+        "loserParticipantId": "tournament-team-2026-18u-girls-zoo",
+        "loserTeamId": null,
+        "loserName": "ZOO"
       },
       "advancement": {
         "winnerTo": {
@@ -1746,7 +1822,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-016",
       "sourceGameNumber": 16,
-      "sourceRow": 34,
+      "sourceRow": 32,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "1:50 PM",
@@ -1765,8 +1841,8 @@
         "displayLabel": "E bracket E1,E2"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "E1(5)-SLAP",
@@ -1796,20 +1872,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 11,
+        "dark": 9,
+        "whiteRaw": "11",
+        "darkRaw": "9",
+        "whiteRegulation": 11,
+        "darkRegulation": 9,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-slap",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SLAP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-storm-tsunamis",
+        "loserTeamId": null,
+        "loserName": "STORM TSUNAMIS"
       },
       "advancement": {
         "winnerTo": {
@@ -1835,7 +1915,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-018",
       "sourceGameNumber": 18,
-      "sourceRow": 35,
+      "sourceRow": 33,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "2:40 PM",
@@ -1854,8 +1934,8 @@
         "displayLabel": "D bracket D1,D2"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
           "raw": "D1(4)-VIPER PIGEONS",
@@ -1885,20 +1965,24 @@
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 14,
+        "dark": 4,
+        "whiteRaw": "14",
+        "darkRaw": "4",
+        "whiteRegulation": 14,
+        "darkRegulation": 4,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-viper-pigeons",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-st-louis-lions",
+        "loserTeamId": null,
+        "loserName": "ST LOUIS LIONS"
       },
       "advancement": {
         "winnerTo": {
@@ -1924,7 +2008,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-021",
       "sourceGameNumber": 21,
-      "sourceRow": 36,
+      "sourceRow": 34,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "3:30 PM",
@@ -1943,51 +2027,55 @@
         "displayLabel": "Cross 2B/3A"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd_B",
-          "kind": "bracket_reference",
+          "raw": "2nd_B-BCWP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2nd_B",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "2nd_B-BCWP",
+          "participantId": "tournament-team-2026-18u-girls-2nd-b-bcwp",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "3rd_A",
-          "kind": "bracket_reference",
+          "raw": "3rd_A-KRAKEN SATX",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rd_A",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "3rd_A-KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-3rd-a-kraken-satx",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 8,
+        "dark": 6,
+        "whiteRaw": "8",
+        "darkRaw": "6",
+        "whiteRegulation": 8,
+        "darkRegulation": 6,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-2nd-b-bcwp",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "2nd_B-BCWP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-3rd-a-kraken-satx",
+        "loserTeamId": null,
+        "loserName": "3rd_A-KRAKEN SATX"
       },
       "advancement": {
         "winnerTo": {
@@ -2013,7 +2101,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-022",
       "sourceGameNumber": 22,
-      "sourceRow": 37,
+      "sourceRow": 35,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "4:20 PM",
@@ -2032,51 +2120,55 @@
         "displayLabel": "Cross 2E/3F"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd_E",
-          "kind": "bracket_reference",
+          "raw": "2nd_E-STORM TSUNAMIS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2nd_E",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "2nd_E-STORM TSUNAMIS",
+          "participantId": "tournament-team-2026-18u-girls-2nd-e-storm-tsunamis",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "3rd_F",
-          "kind": "bracket_reference",
+          "raw": "3rd_F-ZENITH ALL STARS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rd_F",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "3rd_F-ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-3rd-f-zenith-all-stars",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-2nd-e-storm-tsunamis",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "2nd_E-STORM TSUNAMIS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-3rd-f-zenith-all-stars",
+        "loserTeamId": null,
+        "loserName": "3rd_F-ZENITH ALL STARS"
       },
       "advancement": {
         "winnerTo": {
@@ -2102,7 +2194,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-024",
       "sourceGameNumber": 24,
-      "sourceRow": 38,
+      "sourceRow": 36,
       "dateLabel": "30-Jul",
       "dateIso": "2026-07-30",
       "timeLabel": "5:10 PM",
@@ -2121,51 +2213,55 @@
         "displayLabel": "Cross 2D/3C"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd_D",
-          "kind": "bracket_reference",
+          "raw": "2nd_D-ST LOUIS LIONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2nd_D",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "2nd_D-ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-2nd-d-st-louis-lions",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "3rd_C",
-          "kind": "bracket_reference",
+          "raw": "3rd_C-FLEET",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rd_C",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "3rd_C-FLEET",
+          "participantId": "tournament-team-2026-18u-girls-3rd-c-fleet",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 8,
+        "dark": 9,
+        "whiteRaw": "8",
+        "darkRaw": "9",
+        "whiteRegulation": 8,
+        "darkRegulation": 9,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-3rd-c-fleet",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "3rd_C-FLEET",
+        "loserParticipantId": "tournament-team-2026-18u-girls-2nd-d-st-louis-lions",
+        "loserTeamId": null,
+        "loserName": "2nd_D-ST LOUIS LIONS"
       },
       "advancement": {
         "winnerTo": {
@@ -2191,7 +2287,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-065",
       "sourceGameNumber": 65,
-      "sourceRow": 54,
+      "sourceRow": 48,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "8:00 AM",
@@ -2210,51 +2306,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_R1(L19)",
-          "kind": "bracket_reference",
+          "raw": "pt_R1(L19)-ZOO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_R1(L19)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_R1(L19)-ZOO",
+          "participantId": "tournament-team-2026-18u-girls-pt-r1-l19-zoo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_R2(L24)",
-          "kind": "bracket_reference",
+          "raw": "pt_R2(L24)-ST LOUIS LIONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_R2(L24)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_R2(L24)-ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-pt-r2-l24-st-louis-lions",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 3,
+        "dark": 20,
+        "whiteRaw": "3",
+        "darkRaw": "20",
+        "whiteRegulation": 3,
+        "darkRegulation": 20,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-r2-l24-st-louis-lions",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_R2(L24)-ST LOUIS LIONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-r1-l19-zoo",
+        "loserTeamId": null,
+        "loserName": "pt_R1(L19)-ZOO"
       },
       "advancement": {
         "winnerTo": null,
@@ -2272,7 +2372,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-069",
       "sourceGameNumber": 69,
-      "sourceRow": 55,
+      "sourceRow": 49,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "8:50 AM",
@@ -2291,51 +2391,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_M1(1st_A)",
-          "kind": "bracket_reference",
+          "raw": "pt_M1(1st_A)-SEA MONSTERS PREMIER",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_M1(1st_A)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_M1(1st_A)-SEA MONSTERS PREMIER",
+          "participantId": "tournament-team-2026-18u-girls-pt-m1-1st-a-sea-monsters-premier",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_M3(W24)",
-          "kind": "bracket_reference",
+          "raw": "pt_M3(W24)-FLEET",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_M3(W24)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_M3(W24)-FLEET",
+          "participantId": "tournament-team-2026-18u-girls-pt-m3-w24-fleet",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 9,
+        "dark": 3,
+        "whiteRaw": "9",
+        "darkRaw": "3",
+        "whiteRegulation": 9,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-m1-1st-a-sea-monsters-premier",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_M1(1st_A)-SEA MONSTERS PREMIER",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-m3-w24-fleet",
+        "loserTeamId": null,
+        "loserName": "pt_M3(W24)-FLEET"
       },
       "advancement": {
         "winnerTo": null,
@@ -2353,7 +2457,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-073",
       "sourceGameNumber": 73,
-      "sourceRow": 56,
+      "sourceRow": 50,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "9:40 AM",
@@ -2372,51 +2476,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_N1(1st_B)",
-          "kind": "bracket_reference",
+          "raw": "pt_N1(1st_B)-HOUSTON HYDRA",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_N1(1st_B)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_N1(1st_B)-HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-18u-girls-pt-n1-1st-b-houston-hydra",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_N3(W23)",
-          "kind": "bracket_reference",
+          "raw": "pt_N3(W23)-SOUTHLAKE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_N3(W23)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_N3(W23)-SOUTHLAKE",
+          "participantId": "tournament-team-2026-18u-girls-pt-n3-w23-southlake",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 16,
+        "dark": 5,
+        "whiteRaw": "16",
+        "darkRaw": "5",
+        "whiteRegulation": 16,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-n1-1st-b-houston-hydra",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_N1(1st_B)-HOUSTON HYDRA",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-n3-w23-southlake",
+        "loserTeamId": null,
+        "loserName": "pt_N3(W23)-SOUTHLAKE"
       },
       "advancement": {
         "winnerTo": null,
@@ -2434,7 +2542,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-077",
       "sourceGameNumber": 77,
-      "sourceRow": 57,
+      "sourceRow": 51,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "10:30 AM",
@@ -2453,51 +2561,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_R1(L19)",
-          "kind": "bracket_reference",
+          "raw": "pt_R1(L19)-ZOO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_R1(L19)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_R1(L19)-ZOO",
+          "participantId": "tournament-team-2026-18u-girls-pt-r1-l19-zoo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_R3(L22)",
-          "kind": "bracket_reference",
+          "raw": "pt_R3(L22)-ZENITH ALL STARS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_R3(L22)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_R3(L22)-ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-pt-r3-l22-zenith-all-stars",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 6,
+        "dark": 22,
+        "whiteRaw": "6",
+        "darkRaw": "22",
+        "whiteRegulation": 6,
+        "darkRegulation": 22,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-r3-l22-zenith-all-stars",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_R3(L22)-ZENITH ALL STARS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-r1-l19-zoo",
+        "loserTeamId": null,
+        "loserName": "pt_R1(L19)-ZOO"
       },
       "advancement": {
         "winnerTo": null,
@@ -2515,7 +2627,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-079",
       "sourceGameNumber": 79,
-      "sourceRow": 58,
+      "sourceRow": 52,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "11:20 AM",
@@ -2534,51 +2646,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_M2(W22)",
-          "kind": "bracket_reference",
+          "raw": "pt_M2(W22)-STORM TSUNAMIS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_M2(W22)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_M2(W22)-STORM TSUNAMIS",
+          "participantId": "tournament-team-2026-18u-girls-pt-m2-w22-storm-tsunamis",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_M3(W24)",
-          "kind": "bracket_reference",
+          "raw": "pt_M3(W24)-FLEET",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_M3(W24)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_M3(W24)-FLEET",
+          "participantId": "tournament-team-2026-18u-girls-pt-m3-w24-fleet",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 12,
+        "dark": 5,
+        "whiteRaw": "12",
+        "darkRaw": "5",
+        "whiteRegulation": 12,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-m2-w22-storm-tsunamis",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_M2(W22)-STORM TSUNAMIS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-m3-w24-fleet",
+        "loserTeamId": null,
+        "loserName": "pt_M3(W24)-FLEET"
       },
       "advancement": {
         "winnerTo": null,
@@ -2596,7 +2712,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-081",
       "sourceGameNumber": 81,
-      "sourceRow": 59,
+      "sourceRow": 53,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "12:10 PM",
@@ -2615,51 +2731,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_N2(W20)",
-          "kind": "bracket_reference",
+          "raw": "pt_N2(W20)-KRAKEN",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_N2(W20)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_N2(W20)-KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-pt-n2-w20-kraken",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_N3(W23)",
-          "kind": "bracket_reference",
+          "raw": "pt_N3(W23)-SOUTHLAKE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_N3(W23)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_N3(W23)-SOUTHLAKE",
+          "participantId": "tournament-team-2026-18u-girls-pt-n3-w23-southlake",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12",
+        "whiteRegulation": 10,
+        "darkRegulation": 12,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-n3-w23-southlake",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_N3(W23)-SOUTHLAKE",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-n2-w20-kraken",
+        "loserTeamId": null,
+        "loserName": "pt_N2(W20)-KRAKEN"
       },
       "advancement": {
         "winnerTo": null,
@@ -2677,7 +2797,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-083",
       "sourceGameNumber": 83,
-      "sourceRow": 60,
+      "sourceRow": 54,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "1:00 PM",
@@ -2696,51 +2816,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_R2(L24)",
-          "kind": "bracket_reference",
+          "raw": "pt_R2(L24)-ST LOUIS LIONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_R2(L24)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_R2(L24)-ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-pt-r2-l24-st-louis-lions",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_R3(L22)",
-          "kind": "bracket_reference",
+          "raw": "pt_R3(L22)-ZENITH ALL STARS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_R3(L22)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_R3(L22)-ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-pt-r3-l22-zenith-all-stars",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 7,
+        "dark": 8,
+        "whiteRaw": "7",
+        "darkRaw": "8",
+        "whiteRegulation": 7,
+        "darkRegulation": 8,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-r3-l22-zenith-all-stars",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_R3(L22)-ZENITH ALL STARS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-r2-l24-st-louis-lions",
+        "loserTeamId": null,
+        "loserName": "pt_R2(L24)-ST LOUIS LIONS"
       },
       "advancement": {
         "winnerTo": null,
@@ -2758,7 +2882,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-085",
       "sourceGameNumber": 85,
-      "sourceRow": 61,
+      "sourceRow": 55,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "1:50 PM",
@@ -2777,51 +2901,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_M1(1st_A)",
-          "kind": "bracket_reference",
+          "raw": "pt_M1(1st_A)-SEA MONSTERS PREMIER",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_M1(1st_A)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_M1(1st_A)-SEA MONSTERS PREMIER",
+          "participantId": "tournament-team-2026-18u-girls-pt-m1-1st-a-sea-monsters-premier",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_M2(W22)",
-          "kind": "bracket_reference",
+          "raw": "pt_M2(W22)-STORM TSUNAMIS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_M2(W22)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_M2(W22)-STORM TSUNAMIS",
+          "participantId": "tournament-team-2026-18u-girls-pt-m2-w22-storm-tsunamis",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 11,
+        "dark": 6,
+        "whiteRaw": "11",
+        "darkRaw": "6",
+        "whiteRegulation": 11,
+        "darkRegulation": 6,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-m1-1st-a-sea-monsters-premier",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_M1(1st_A)-SEA MONSTERS PREMIER",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-m2-w22-storm-tsunamis",
+        "loserTeamId": null,
+        "loserName": "pt_M2(W22)-STORM TSUNAMIS"
       },
       "advancement": {
         "winnerTo": null,
@@ -2839,7 +2967,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-089",
       "sourceGameNumber": 89,
-      "sourceRow": 62,
+      "sourceRow": 56,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "2:40 PM",
@@ -2858,51 +2986,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_N1(1st_B)",
-          "kind": "bracket_reference",
+          "raw": "pt_N1(1st_B)-HOUSTON HYDRA",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_N1(1st_B)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_N1(1st_B)-HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-18u-girls-pt-n1-1st-b-houston-hydra",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_N3(W23)",
-          "kind": "bracket_reference",
+          "raw": "pt_N2(W20)-KRAKEN",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_N3(W23)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_N2(W20)-KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-pt-n2-w20-kraken",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 14,
+        "dark": 3,
+        "whiteRaw": "14",
+        "darkRaw": "3",
+        "whiteRegulation": 14,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-n1-1st-b-houston-hydra",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_N1(1st_B)-HOUSTON HYDRA",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-n2-w20-kraken",
+        "loserTeamId": null,
+        "loserName": "pt_N2(W20)-KRAKEN"
       },
       "advancement": {
         "winnerTo": null,
@@ -2920,7 +3052,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-109",
       "sourceGameNumber": 109,
-      "sourceRow": 64,
+      "sourceRow": 57,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "4:20 PM",
@@ -2939,51 +3071,55 @@
         "displayLabel": "Play-in"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "3rd pt_M",
-          "kind": "bracket_reference",
+          "raw": "3rd pt_M-FLEET",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rdpt_M",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "3rd pt_M",
+          "displayName": "FLEET",
+          "participantId": "tournament-team-2026-18u-girls-fleet",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "2nd pt_R",
-          "kind": "bracket_reference",
+          "raw": "2nd pt_R-ST LOUIS LIONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2ndpt_R",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "2nd pt_R",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-st-louis-lions",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6",
+        "whiteRegulation": 14,
+        "darkRegulation": 6,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-fleet",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "FLEET",
+        "loserParticipantId": "tournament-team-2026-18u-girls-st-louis-lions",
+        "loserTeamId": null,
+        "loserName": "ST LOUIS LIONS"
       },
       "advancement": {
         "winnerTo": {
@@ -3009,7 +3145,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-113",
       "sourceGameNumber": 113,
-      "sourceRow": 65,
+      "sourceRow": 58,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "5:10 PM",
@@ -3028,51 +3164,62 @@
         "displayLabel": "Play-in"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "3rd pt_N",
-          "kind": "bracket_reference",
+          "raw": "3rd pt_N-KRAKEN",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rdpt_N",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "3rd pt_N",
+          "displayName": "KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-kraken",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "1st pt_R",
-          "kind": "bracket_reference",
+          "raw": "1st pt_R-ZENITH ALL STARS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "1stpt_R",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "1st pt_R",
+          "displayName": "ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-zenith-all-stars",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
-        "whiteShootout": null,
-        "darkShootout": null
+        "white": 9.3,
+        "dark": 9.2,
+        "whiteRaw": "9.3",
+        "darkRaw": "9.2",
+        "whiteRegulation": 9,
+        "darkRegulation": 9,
+        "whiteShootout": 3,
+        "darkShootout": 2
       },
-      "shootout": null,
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 9,
+        "darkRegulation": 9,
+        "whiteShootout": 3,
+        "darkShootout": 2
+      },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-kraken",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "KRAKEN",
+        "loserParticipantId": "tournament-team-2026-18u-girls-zenith-all-stars",
+        "loserTeamId": null,
+        "loserName": "ZENITH ALL STARS"
       },
       "advancement": {
         "winnerTo": {
@@ -3098,7 +3245,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-066",
       "sourceGameNumber": 66,
-      "sourceRow": 69,
+      "sourceRow": 61,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "8:00 AM",
@@ -3117,51 +3264,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_S1(L21)",
-          "kind": "bracket_reference",
+          "raw": "pt_S1(L21)-KRAKEN SATX",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_S1(L21)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_S1(L21)-KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-pt-s1-l21-kraken-satx",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_S2(L23)",
-          "kind": "bracket_reference",
+          "raw": "pt_S2(L23)-STORM CYCLONES",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_S2(L23)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_S2(L23)-STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-pt-s2-l23-storm-cyclones",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 14,
+        "dark": 2,
+        "whiteRaw": "14",
+        "darkRaw": "2",
+        "whiteRegulation": 14,
+        "darkRegulation": 2,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-s1-l21-kraken-satx",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_S1(L21)-KRAKEN SATX",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-s2-l23-storm-cyclones",
+        "loserTeamId": null,
+        "loserName": "pt_S2(L23)-STORM CYCLONES"
       },
       "advancement": {
         "winnerTo": null,
@@ -3179,7 +3330,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-070",
       "sourceGameNumber": 70,
-      "sourceRow": 70,
+      "sourceRow": 62,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "8:50 AM",
@@ -3198,51 +3349,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_O1(1st_C)",
-          "kind": "bracket_reference",
+          "raw": "pt_O1(1st_C)-NEW HAVEN HYDRAS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_O1(1st_C)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_O1(1st_C)-NEW HAVEN HYDRAS",
+          "participantId": "tournament-team-2026-18u-girls-pt-o1-1st-c-new-haven-hydras",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_O3(W21)",
-          "kind": "bracket_reference",
+          "raw": "pt_O3(W21)-BCWP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_O3(W21)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_O3(W21)-BCWP",
+          "participantId": "tournament-team-2026-18u-girls-pt-o3-w21-bcwp",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 11,
+        "dark": 3,
+        "whiteRaw": "11",
+        "darkRaw": "3",
+        "whiteRegulation": 11,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-o1-1st-c-new-haven-hydras",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_O1(1st_C)-NEW HAVEN HYDRAS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-o3-w21-bcwp",
+        "loserTeamId": null,
+        "loserName": "pt_O3(W21)-BCWP"
       },
       "advancement": {
         "winnerTo": null,
@@ -3260,7 +3415,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-074",
       "sourceGameNumber": 74,
-      "sourceRow": 71,
+      "sourceRow": 63,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "9:40 AM",
@@ -3279,51 +3434,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_P1(1st_D)",
-          "kind": "bracket_reference",
+          "raw": "pt_P1(1st_D)-VIPER PIGEONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_P1(1st_D)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_P1(1st_D)-VIPER PIGEONS",
+          "participantId": "tournament-team-2026-18u-girls-pt-p1-1st-d-viper-pigeons",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_P3(W19)",
-          "kind": "bracket_reference",
+          "raw": "pt_P3(W19)-ALAMO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_P3(W19)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_P3(W19)-ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-pt-p3-w19-alamo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 14,
+        "dark": 6,
+        "whiteRaw": "14",
+        "darkRaw": "6",
+        "whiteRegulation": 14,
+        "darkRegulation": 6,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-p1-1st-d-viper-pigeons",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_P1(1st_D)-VIPER PIGEONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-p3-w19-alamo",
+        "loserTeamId": null,
+        "loserName": "pt_P3(W19)-ALAMO"
       },
       "advancement": {
         "winnerTo": null,
@@ -3341,7 +3500,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-078",
       "sourceGameNumber": 78,
-      "sourceRow": 72,
+      "sourceRow": 64,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "10:30 AM",
@@ -3360,51 +3519,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_S1(L21)",
-          "kind": "bracket_reference",
+          "raw": "pt_S1(L21)-KRAKEN SATX",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_S1(L21)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_S1(L21)-KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-pt-s1-l21-kraken-satx",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_S3(L20)",
-          "kind": "bracket_reference",
+          "raw": "pt_S3(L20)-LONGHORN WHITE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_S3(L20)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_S3(L20)-LONGHORN WHITE",
+          "participantId": "tournament-team-2026-18u-girls-pt-s3-l20-longhorn-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7",
+        "whiteRegulation": 9,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-s1-l21-kraken-satx",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_S1(L21)-KRAKEN SATX",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-s3-l20-longhorn-white",
+        "loserTeamId": null,
+        "loserName": "pt_S3(L20)-LONGHORN WHITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -3422,7 +3585,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-080",
       "sourceGameNumber": 80,
-      "sourceRow": 73,
+      "sourceRow": 65,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "11:20 AM",
@@ -3441,51 +3604,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_O2(1st_F)",
-          "kind": "bracket_reference",
+          "raw": "pt_O2(1st_F)-PEGASUS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_O2(1st_F)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_O2(1st_F)-PEGASUS",
+          "participantId": "tournament-team-2026-18u-girls-pt-o2-1st-f-pegasus",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_O3(W21)",
-          "kind": "bracket_reference",
+          "raw": "pt_O3(W21)-BCWP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_O3(W21)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_O3(W21)-BCWP",
+          "participantId": "tournament-team-2026-18u-girls-pt-o3-w21-bcwp",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5",
+        "whiteRegulation": 10,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-o2-1st-f-pegasus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_O2(1st_F)-PEGASUS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-o3-w21-bcwp",
+        "loserTeamId": null,
+        "loserName": "pt_O3(W21)-BCWP"
       },
       "advancement": {
         "winnerTo": null,
@@ -3503,7 +3670,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-082",
       "sourceGameNumber": 82,
-      "sourceRow": 74,
+      "sourceRow": 66,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "12:10 PM",
@@ -3522,51 +3689,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_P2(1st_E)",
-          "kind": "bracket_reference",
+          "raw": "pt_P2(1st_E)-SLAP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_P2(1st_E)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_P2(1st_E)-SLAP",
+          "participantId": "tournament-team-2026-18u-girls-pt-p2-1st-e-slap",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_P3(W19)",
-          "kind": "bracket_reference",
+          "raw": "pt_P3(W19)-ALAMO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_P3(W19)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_P3(W19)-ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-pt-p3-w19-alamo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 18,
+        "dark": 6,
+        "whiteRaw": "18",
+        "darkRaw": "6",
+        "whiteRegulation": 18,
+        "darkRegulation": 6,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-p2-1st-e-slap",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_P2(1st_E)-SLAP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-p3-w19-alamo",
+        "loserTeamId": null,
+        "loserName": "pt_P3(W19)-ALAMO"
       },
       "advancement": {
         "winnerTo": null,
@@ -3584,7 +3755,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-084",
       "sourceGameNumber": 84,
-      "sourceRow": 75,
+      "sourceRow": 67,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "1:00 PM",
@@ -3603,51 +3774,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_S2(L23)",
-          "kind": "bracket_reference",
+          "raw": "pt_S2(L23)-STORM CYCLONES",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_S2(L23)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_S2(L23)-STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-pt-s2-l23-storm-cyclones",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_S3(L20)",
-          "kind": "bracket_reference",
+          "raw": "pt_S3(L20)-LONGHORN WHITE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_S3(L20)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_S3(L20)-LONGHORN WHITE",
+          "participantId": "tournament-team-2026-18u-girls-pt-s3-l20-longhorn-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 7,
+        "dark": 5,
+        "whiteRaw": "7",
+        "darkRaw": "5",
+        "whiteRegulation": 7,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-s2-l23-storm-cyclones",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_S2(L23)-STORM CYCLONES",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-s3-l20-longhorn-white",
+        "loserTeamId": null,
+        "loserName": "pt_S3(L20)-LONGHORN WHITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -3665,7 +3840,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-086",
       "sourceGameNumber": 86,
-      "sourceRow": 76,
+      "sourceRow": 68,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "1:50 PM",
@@ -3684,51 +3859,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_O1(1st_C)",
-          "kind": "bracket_reference",
+          "raw": "pt_O1(1st_C)-NEW HAVEN HYDRAS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_O1(1st_C)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_O1(1st_C)-NEW HAVEN HYDRAS",
+          "participantId": "tournament-team-2026-18u-girls-pt-o1-1st-c-new-haven-hydras",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_O2(1st_F)",
-          "kind": "bracket_reference",
+          "raw": "pt_O2(1st_F)-PEGASUS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_O2(1st_F)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_O2(1st_F)-PEGASUS",
+          "participantId": "tournament-team-2026-18u-girls-pt-o2-1st-f-pegasus",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 8,
+        "dark": 10,
+        "whiteRaw": "8",
+        "darkRaw": "10",
+        "whiteRegulation": 8,
+        "darkRegulation": 10,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-o2-1st-f-pegasus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_O2(1st_F)-PEGASUS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-o1-1st-c-new-haven-hydras",
+        "loserTeamId": null,
+        "loserName": "pt_O1(1st_C)-NEW HAVEN HYDRAS"
       },
       "advancement": {
         "winnerTo": null,
@@ -3746,7 +3925,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-090",
       "sourceGameNumber": 90,
-      "sourceRow": 77,
+      "sourceRow": 69,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "2:40 PM",
@@ -3765,51 +3944,62 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "pt_P1(1st_D)",
-          "kind": "bracket_reference",
+          "raw": "pt_P1(1st_D)-VIPER PIGEONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_P1(1st_D)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_P1(1st_D)-VIPER PIGEONS",
+          "participantId": "tournament-team-2026-18u-girls-pt-p1-1st-d-viper-pigeons",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "pt_P2(1st_E)",
-          "kind": "bracket_reference",
+          "raw": "pt_P2(1st_E)-SLAP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "pt_P2(1st_E)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "pt_P2(1st_E)-SLAP",
+          "participantId": "tournament-team-2026-18u-girls-pt-p2-1st-e-slap",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
-        "whiteShootout": null,
-        "darkShootout": null
+        "white": 8.2,
+        "dark": 8.4,
+        "whiteRaw": "8.2",
+        "darkRaw": "8.4",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 2,
+        "darkShootout": 4
       },
-      "shootout": null,
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 2,
+        "darkShootout": 4
+      },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pt-p2-1st-e-slap",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "pt_P2(1st_E)-SLAP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pt-p1-1st-d-viper-pigeons",
+        "loserTeamId": null,
+        "loserName": "pt_P1(1st_D)-VIPER PIGEONS"
       },
       "advancement": {
         "winnerTo": null,
@@ -3827,7 +4017,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-110",
       "sourceGameNumber": 110,
-      "sourceRow": 79,
+      "sourceRow": 70,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "4:20 PM",
@@ -3846,51 +4036,55 @@
         "displayLabel": "Play-in"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "3rd pt_O",
-          "kind": "bracket_reference",
+          "raw": "3rd pt_O-BCWP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rdpt_O",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "3rd pt_O",
+          "displayName": "BCWP",
+          "participantId": "tournament-team-2026-18u-girls-bcwp",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "1st pt_S",
-          "kind": "bracket_reference",
+          "raw": "1st pt_S-KRAKEN SATX",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "1stpt_S",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "1st pt_S",
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-kraken-satx",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 7,
+        "dark": 8,
+        "whiteRaw": "7",
+        "darkRaw": "8",
+        "whiteRegulation": 7,
+        "darkRegulation": 8,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-kraken-satx",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "KRAKEN SATX",
+        "loserParticipantId": "tournament-team-2026-18u-girls-bcwp",
+        "loserTeamId": null,
+        "loserName": "BCWP"
       },
       "advancement": {
         "winnerTo": {
@@ -3916,7 +4110,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-114",
       "sourceGameNumber": 114,
-      "sourceRow": 80,
+      "sourceRow": 71,
       "dateLabel": "31-Jul",
       "dateIso": "2026-07-31",
       "timeLabel": "5:10 PM",
@@ -3935,51 +4129,55 @@
         "displayLabel": "Play-in"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "3rd pt_P",
-          "kind": "bracket_reference",
+          "raw": "3rd pt_P-ALAMO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rdpt_P",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "3rd pt_P",
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-alamo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "2nd pt_S",
-          "kind": "bracket_reference",
+          "raw": "2nd pt_S-STORM CYCLONES",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2ndpt_S",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "2nd pt_S",
+          "displayName": "STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-storm-cyclones",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 11,
+        "dark": 3,
+        "whiteRaw": "11",
+        "darkRaw": "3",
+        "whiteRegulation": 11,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-alamo",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "ALAMO",
+        "loserParticipantId": "tournament-team-2026-18u-girls-storm-cyclones",
+        "loserTeamId": null,
+        "loserName": "STORM CYCLONES"
       },
       "advancement": {
         "winnerTo": {
@@ -4005,7 +4203,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-121",
       "sourceGameNumber": 121,
-      "sourceRow": 92,
+      "sourceRow": 79,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "8:00 AM",
@@ -4027,51 +4225,55 @@
         "displayLabel": "5-8 v 9-12"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd pt_P",
-          "kind": "bracket_reference",
+          "raw": "2nd pt_P-VIPER PIGEONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2ndpt_P",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "2nd pt_P",
+          "displayName": "VIPER PIGEONS",
+          "participantId": "tournament-team-2026-18u-girls-viper-pigeons",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W110",
-          "kind": "bracket_reference",
+          "raw": "W110-KRAKEN SATX",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W110",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-kraken-satx",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 14,
+        "dark": 7,
+        "whiteRaw": "14",
+        "darkRaw": "7",
+        "whiteRegulation": 14,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-viper-pigeons",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-kraken-satx",
+        "loserTeamId": null,
+        "loserName": "KRAKEN SATX"
       },
       "advancement": {
         "winnerTo": {
@@ -4097,7 +4299,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-125",
       "sourceGameNumber": 125,
-      "sourceRow": 93,
+      "sourceRow": 80,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "9:00 AM",
@@ -4119,51 +4321,55 @@
         "displayLabel": "5-8 v 9-12"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd pt_M",
-          "kind": "bracket_reference",
+          "raw": "2nd pt_M-STORM TSUNAMIS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2ndpt_M",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "2nd pt_M",
+          "displayName": "STORM TSUNAMIS",
+          "participantId": "tournament-team-2026-18u-girls-storm-tsunamis",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W113",
-          "kind": "bracket_reference",
+          "raw": "W113-KRAKEN",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W113",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-kraken",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 18,
+        "dark": 5,
+        "whiteRaw": "18",
+        "darkRaw": "5",
+        "whiteRegulation": 18,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-storm-tsunamis",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "STORM TSUNAMIS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-kraken",
+        "loserTeamId": null,
+        "loserName": "KRAKEN"
       },
       "advancement": {
         "winnerTo": {
@@ -4189,7 +4395,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-129",
       "sourceGameNumber": 129,
-      "sourceRow": 94,
+      "sourceRow": 81,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "10:00 AM",
@@ -4211,51 +4417,55 @@
         "displayLabel": "5-8 v 9-12"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd pt_O",
-          "kind": "bracket_reference",
+          "raw": "2nd pt_O-NEW HAVEN HYDRAS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2ndpt_O",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "2nd pt_O",
+          "displayName": "NEW HAVEN HYDRAS",
+          "participantId": "tournament-team-2026-18u-girls-new-haven-hydras",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W114",
-          "kind": "bracket_reference",
+          "raw": "W114-ALAMO",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W114",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-alamo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 16,
+        "dark": 5,
+        "whiteRaw": "16",
+        "darkRaw": "5",
+        "whiteRegulation": 16,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-new-haven-hydras",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEW HAVEN HYDRAS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-alamo",
+        "loserTeamId": null,
+        "loserName": "ALAMO"
       },
       "advancement": {
         "winnerTo": {
@@ -4281,7 +4491,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-137",
       "sourceGameNumber": 137,
-      "sourceRow": 95,
+      "sourceRow": 82,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "11:00 AM",
@@ -4303,51 +4513,55 @@
         "displayLabel": "1-2 v 3-4"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "1st pt_N",
-          "kind": "bracket_reference",
+          "raw": "1st pt_N-HOUSTON HYDRA",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "1stpt_N",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "1st pt_N",
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-18u-girls-houston-hydra",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "1st pt_O",
-          "kind": "bracket_reference",
+          "raw": "1st pt_O-PEGASUS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "1stpt_O",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "1st pt_O",
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-18u-girls-pegasus",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-pegasus",
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 8,
+        "dark": 11,
+        "whiteRaw": "8",
+        "darkRaw": "11",
+        "whiteRegulation": 8,
+        "darkRegulation": 11,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pegasus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PEGASUS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-houston-hydra",
+        "loserTeamId": null,
+        "loserName": "HOUSTON HYDRA"
       },
       "advancement": {
         "winnerTo": {
@@ -4373,7 +4587,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-141",
       "sourceGameNumber": 141,
-      "sourceRow": 96,
+      "sourceRow": 83,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "12:00 PM",
@@ -4395,51 +4609,55 @@
         "displayLabel": "1-2 v 3-4"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "1st pt_M",
-          "kind": "bracket_reference",
+          "raw": "1st pt_M-SEA MONSTERS PREMIER",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "1stpt_M",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "1st pt_M",
+          "displayName": "SEA MONSTERS PREMIER",
+          "participantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "1st pt_P",
-          "kind": "bracket_reference",
+          "raw": "1st pt_P-SLAP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "1stpt_P",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "1st pt_P",
+          "displayName": "SLAP",
+          "participantId": "tournament-team-2026-18u-girls-slap",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-slap",
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 6,
+        "dark": 7,
+        "whiteRaw": "6",
+        "darkRaw": "7",
+        "whiteRegulation": 6,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-slap",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SLAP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
+        "loserTeamId": null,
+        "loserName": "SEA MONSTERS PREMIER"
       },
       "advancement": {
         "winnerTo": {
@@ -4465,7 +4683,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-145",
       "sourceGameNumber": 145,
-      "sourceRow": 97,
+      "sourceRow": 84,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "1:00 PM",
@@ -4487,51 +4705,55 @@
         "displayLabel": "5-6 v 7-8"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "W121",
-          "kind": "bracket_reference",
+          "raw": "W121-VIPER PIGEONS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W121",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "VIPER PIGEONS",
+          "participantId": "tournament-team-2026-18u-girls-viper-pigeons",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W125",
-          "kind": "bracket_reference",
+          "raw": "W125-STORM TSUNAMIS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W125",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "STORM TSUNAMIS",
+          "participantId": "tournament-team-2026-18u-girls-storm-tsunamis",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9",
+        "whiteRegulation": 10,
+        "darkRegulation": 9,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-viper-pigeons",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-storm-tsunamis",
+        "loserTeamId": null,
+        "loserName": "STORM TSUNAMIS"
       },
       "advancement": {
         "winnerTo": {
@@ -4557,7 +4779,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-153",
       "sourceGameNumber": 153,
-      "sourceRow": 98,
+      "sourceRow": 85,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "2:00 PM",
@@ -4579,51 +4801,55 @@
         "displayLabel": "9-12 Semifinal"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "L125",
-          "kind": "bracket_reference",
+          "raw": "L125-KRAKEN",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L125",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-kraken",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "L121",
-          "kind": "bracket_reference",
+          "raw": "L121-KRAKEN SATX",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L121",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-kraken-satx",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 5,
+        "dark": 11,
+        "whiteRaw": "5",
+        "darkRaw": "11",
+        "whiteRegulation": 5,
+        "darkRegulation": 11,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-kraken-satx",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "KRAKEN SATX",
+        "loserParticipantId": "tournament-team-2026-18u-girls-kraken",
+        "loserTeamId": null,
+        "loserName": "KRAKEN"
       },
       "advancement": {
         "winnerTo": {
@@ -4649,7 +4875,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-157",
       "sourceGameNumber": 157,
-      "sourceRow": 99,
+      "sourceRow": 86,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "3:00 PM",
@@ -4671,51 +4897,55 @@
         "displayLabel": "9-12 Semifinal"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "L133",
-          "kind": "bracket_reference",
+          "raw": "L133-SOUTHLAKE",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L133",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "SOUTHLAKE",
+          "participantId": "tournament-team-2026-18u-girls-southlake",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "L129",
-          "kind": "bracket_reference",
+          "raw": "L129-ALAMO",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L129",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-alamo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 10,
+        "dark": 9,
+        "whiteRaw": "10",
+        "darkRaw": "9",
+        "whiteRegulation": 10,
+        "darkRegulation": 9,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-southlake",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SOUTHLAKE",
+        "loserParticipantId": "tournament-team-2026-18u-girls-alamo",
+        "loserTeamId": null,
+        "loserName": "ALAMO"
       },
       "advancement": {
         "winnerTo": {
@@ -4741,7 +4971,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-161",
       "sourceGameNumber": 161,
-      "sourceRow": 100,
+      "sourceRow": 87,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "4:00 PM",
@@ -4760,51 +4990,55 @@
         "displayLabel": "play to Semifinal"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "L137",
-          "kind": "bracket_reference",
+          "raw": "L137-HOUSTON HYDRA",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L137",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-18u-girls-houston-hydra",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W145",
-          "kind": "bracket_reference",
+          "raw": "W145-VIPER PIGEONS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W145",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "VIPER PIGEONS",
+          "participantId": "tournament-team-2026-18u-girls-viper-pigeons",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7",
+        "whiteRegulation": 9,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-houston-hydra",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "HOUSTON HYDRA",
+        "loserParticipantId": "tournament-team-2026-18u-girls-viper-pigeons",
+        "loserTeamId": null,
+        "loserName": "VIPER PIGEONS"
       },
       "advancement": {
         "winnerTo": {
@@ -4830,7 +5064,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-122",
       "sourceGameNumber": 122,
-      "sourceRow": 104,
+      "sourceRow": 90,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "8:00 AM",
@@ -4849,51 +5083,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "au_V1(3rd pt_R)-",
-          "kind": "bracket_reference",
+          "raw": "au_V1(3rd pt_R)-ZOO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_V1(3rdpt_R)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_V1(3rd pt_R)-ZOO",
+          "participantId": "tournament-team-2026-18u-girls-au-v1-3rd-pt-r-zoo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "au_V3(L113)",
-          "kind": "bracket_reference",
+          "raw": "au_V3(L113)-ZENITH ALL STARS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_V3(L113)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_V3(L113)-ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-au-v3-l113-zenith-all-stars",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 3,
+        "dark": 21,
+        "whiteRaw": "3",
+        "darkRaw": "21",
+        "whiteRegulation": 3,
+        "darkRegulation": 21,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-au-v3-l113-zenith-all-stars",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "au_V3(L113)-ZENITH ALL STARS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-au-v1-3rd-pt-r-zoo",
+        "loserTeamId": null,
+        "loserName": "au_V1(3rd pt_R)-ZOO"
       },
       "advancement": {
         "winnerTo": null,
@@ -4911,7 +5149,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-126",
       "sourceGameNumber": 126,
-      "sourceRow": 105,
+      "sourceRow": 91,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "9:00 AM",
@@ -4930,51 +5168,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "au_W1(3rd pt_S)-",
-          "kind": "bracket_reference",
+          "raw": "au_W1(3rd pt_S)-LONGHORN WHITE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_W1(3rdpt_S)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_W1(3rd pt_S)-LONGHORN WHITE",
+          "participantId": "tournament-team-2026-18u-girls-au-w1-3rd-pt-s-longhorn-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "au_W3(L110)",
-          "kind": "bracket_reference",
+          "raw": "au_W3(L110)-BCWP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_W3(L110)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_W3(L110)-BCWP",
+          "participantId": "tournament-team-2026-18u-girls-au-w3-l110-bcwp",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 4,
+        "dark": 10,
+        "whiteRaw": "4",
+        "darkRaw": "10",
+        "whiteRegulation": 4,
+        "darkRegulation": 10,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-au-w3-l110-bcwp",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "au_W3(L110)-BCWP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-au-w1-3rd-pt-s-longhorn-white",
+        "loserTeamId": null,
+        "loserName": "au_W1(3rd pt_S)-LONGHORN WHITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -4992,7 +5234,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-133",
       "sourceGameNumber": 133,
-      "sourceRow": 106,
+      "sourceRow": 92,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "10:00 AM",
@@ -5014,51 +5256,55 @@
         "displayLabel": "5-8 v 9-12"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd pt_N",
-          "kind": "bracket_reference",
+          "raw": "2nd pt_N-SOUTHLAKE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2ndpt_N",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "2nd pt_N",
+          "displayName": "SOUTHLAKE",
+          "participantId": "tournament-team-2026-18u-girls-southlake",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W109",
-          "kind": "bracket_reference",
+          "raw": "W109-FLEET",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W109",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "FLEET",
+          "participantId": "tournament-team-2026-18u-girls-fleet",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 12,
+        "dark": 13,
+        "whiteRaw": "12",
+        "darkRaw": "13",
+        "whiteRegulation": 12,
+        "darkRegulation": 13,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-fleet",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "FLEET",
+        "loserParticipantId": "tournament-team-2026-18u-girls-southlake",
+        "loserTeamId": null,
+        "loserName": "SOUTHLAKE"
       },
       "advancement": {
         "winnerTo": {
@@ -5084,7 +5330,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-130",
       "sourceGameNumber": 130,
-      "sourceRow": 107,
+      "sourceRow": 93,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "11:00 AM",
@@ -5103,51 +5349,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "au_V2(L114)",
-          "kind": "bracket_reference",
+          "raw": "au_V2(L114)-STORM CYCLONES",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_V2(L114)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_V2(L114)-STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-au-v2-l114-storm-cyclones",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "au_V3(L113)",
-          "kind": "bracket_reference",
+          "raw": "au_V3(L113)-ZENITH ALL STARS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_V3(L113)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_V3(L113)-ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-au-v3-l113-zenith-all-stars",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 5,
+        "dark": 14,
+        "whiteRaw": "5",
+        "darkRaw": "14",
+        "whiteRegulation": 5,
+        "darkRegulation": 14,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-au-v3-l113-zenith-all-stars",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "au_V3(L113)-ZENITH ALL STARS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-au-v2-l114-storm-cyclones",
+        "loserTeamId": null,
+        "loserName": "au_V2(L114)-STORM CYCLONES"
       },
       "advancement": {
         "winnerTo": null,
@@ -5165,7 +5415,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-134",
       "sourceGameNumber": 134,
-      "sourceRow": 108,
+      "sourceRow": 94,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "12:00 PM",
@@ -5184,51 +5434,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "au_W2(L109)",
-          "kind": "bracket_reference",
+          "raw": "au_W2(L109)-ST LOUIS LIONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_W2(L109)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_W2(L109)-ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-au-w2-l109-st-louis-lions",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "au_W3(L110)",
-          "kind": "bracket_reference",
+          "raw": "au_W3(L110)-BCWP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_W3(L110)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_W3(L110)-BCWP",
+          "participantId": "tournament-team-2026-18u-girls-au-w3-l110-bcwp",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9",
+        "whiteRegulation": 7,
+        "darkRegulation": 9,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-au-w3-l110-bcwp",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "au_W3(L110)-BCWP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-au-w2-l109-st-louis-lions",
+        "loserTeamId": null,
+        "loserName": "au_W2(L109)-ST LOUIS LIONS"
       },
       "advancement": {
         "winnerTo": null,
@@ -5246,7 +5500,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-149",
       "sourceGameNumber": 149,
-      "sourceRow": 109,
+      "sourceRow": 95,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "1:00 PM",
@@ -5268,51 +5522,55 @@
         "displayLabel": "5-6 v 7-8"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "W129",
-          "kind": "bracket_reference",
+          "raw": "W129-NEW HAVEN HYDRAS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W129",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "NEW HAVEN HYDRAS",
+          "participantId": "tournament-team-2026-18u-girls-new-haven-hydras",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W133",
-          "kind": "bracket_reference",
+          "raw": "W133-FLEET",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W133",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "FLEET",
+          "participantId": "tournament-team-2026-18u-girls-fleet",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 8,
+        "dark": 3,
+        "whiteRaw": "8",
+        "darkRaw": "3",
+        "whiteRegulation": 8,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-new-haven-hydras",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "NEW HAVEN HYDRAS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-fleet",
+        "loserTeamId": null,
+        "loserName": "FLEET"
       },
       "advancement": {
         "winnerTo": {
@@ -5338,7 +5596,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-138",
       "sourceGameNumber": 138,
-      "sourceRow": 110,
+      "sourceRow": 96,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "2:00 PM",
@@ -5357,51 +5615,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "au_V1(3rd pt_R)-",
-          "kind": "bracket_reference",
+          "raw": "au_V1(3rd pt_R)-ZOO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_V1(3rdpt_R)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_V1(3rd pt_R)-ZOO",
+          "participantId": "tournament-team-2026-18u-girls-au-v1-3rd-pt-r-zoo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "au_V2(L114)",
-          "kind": "bracket_reference",
+          "raw": "au_V2(L114)-STORM CYCLONES",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_V2(L114)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_V2(L114)-STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-au-v2-l114-storm-cyclones",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 3,
+        "dark": 21,
+        "whiteRaw": "3",
+        "darkRaw": "21",
+        "whiteRegulation": 3,
+        "darkRegulation": 21,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-au-v2-l114-storm-cyclones",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "au_V2(L114)-STORM CYCLONES",
+        "loserParticipantId": "tournament-team-2026-18u-girls-au-v1-3rd-pt-r-zoo",
+        "loserTeamId": null,
+        "loserName": "au_V1(3rd pt_R)-ZOO"
       },
       "advancement": {
         "winnerTo": null,
@@ -5419,7 +5681,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-142",
       "sourceGameNumber": 142,
-      "sourceRow": 111,
+      "sourceRow": 97,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "3:00 PM",
@@ -5438,51 +5700,55 @@
         "displayLabel": "Group play"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "au_W1(3rd pt_S)-",
-          "kind": "bracket_reference",
+          "raw": "au_W1(3rd pt_S)-LONGHORN WHITE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_W1(3rdpt_S)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_W1(3rd pt_S)-LONGHORN WHITE",
+          "participantId": "tournament-team-2026-18u-girls-au-w1-3rd-pt-s-longhorn-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "au_W2(L109)",
-          "kind": "bracket_reference",
+          "raw": "au_W2(L109)-ST LOUIS LIONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "au_W2(L109)",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": null,
+          "displayName": "au_W2(L109)-ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-au-w2-l109-st-louis-lions",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 7,
+        "dark": 9,
+        "whiteRaw": "7",
+        "darkRaw": "9",
+        "whiteRegulation": 7,
+        "darkRegulation": 9,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-au-w2-l109-st-louis-lions",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "au_W2(L109)-ST LOUIS LIONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-au-w1-3rd-pt-s-longhorn-white",
+        "loserTeamId": null,
+        "loserName": "au_W1(3rd pt_S)-LONGHORN WHITE"
       },
       "advancement": {
         "winnerTo": null,
@@ -5500,7 +5766,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-165",
       "sourceGameNumber": 165,
-      "sourceRow": 112,
+      "sourceRow": 98,
       "dateLabel": "1-Aug",
       "dateIso": "2026-08-01",
       "timeLabel": "4:00 PM",
@@ -5519,51 +5785,55 @@
         "displayLabel": "play to Semifinal"
       },
       "venue": "CARROL ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "L141",
-          "kind": "bracket_reference",
+          "raw": "L141-SEA MONSTERS PREMIER",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L141",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "SEA MONSTERS PREMIER",
+          "participantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W149",
-          "kind": "bracket_reference",
+          "raw": "W149-NEW HAVEN HYDRAS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W149",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "NEW HAVEN HYDRAS",
+          "participantId": "tournament-team-2026-18u-girls-new-haven-hydras",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 11,
+        "dark": 4,
+        "whiteRaw": "11",
+        "darkRaw": "4",
+        "whiteRegulation": 11,
+        "darkRegulation": 4,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SEA MONSTERS PREMIER",
+        "loserParticipantId": "tournament-team-2026-18u-girls-new-haven-hydras",
+        "loserTeamId": null,
+        "loserName": "NEW HAVEN HYDRAS"
       },
       "advancement": {
         "winnerTo": {
@@ -5589,7 +5859,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-193",
       "sourceGameNumber": 193,
-      "sourceRow": 118,
+      "sourceRow": 102,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "8:00 AM",
@@ -5611,51 +5881,55 @@
         "displayLabel": "5th place game"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "L161",
-          "kind": "bracket_reference",
+          "raw": "L161-VIPER PIGEONS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L161",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "VIPER PIGEONS",
+          "participantId": "tournament-team-2026-18u-girls-viper-pigeons",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "L165",
-          "kind": "bracket_reference",
+          "raw": "L165-NEW HAVEN HYDRAS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L165",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "NEW HAVEN HYDRAS",
+          "participantId": "tournament-team-2026-18u-girls-new-haven-hydras",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 12,
+        "dark": 7,
+        "whiteRaw": "12",
+        "darkRaw": "7",
+        "whiteRegulation": 12,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-viper-pigeons",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "VIPER PIGEONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-new-haven-hydras",
+        "loserTeamId": null,
+        "loserName": "NEW HAVEN HYDRAS"
       },
       "advancement": {
         "winnerTo": {
@@ -5681,7 +5955,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-178",
       "sourceGameNumber": 178,
-      "sourceRow": 119,
+      "sourceRow": 103,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "9:00 AM",
@@ -5703,51 +5977,62 @@
         "displayLabel": "7th place game"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "L145",
-          "kind": "bracket_reference",
+          "raw": "L145-STORM TSUNAMIS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L145",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "STORM TSUNAMIS",
+          "participantId": "tournament-team-2026-18u-girls-storm-tsunamis",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "L149",
-          "kind": "bracket_reference",
+          "raw": "L149-FLEET",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L149",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "FLEET",
+          "participantId": "tournament-team-2026-18u-girls-fleet",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
-        "whiteShootout": null,
-        "darkShootout": null
+        "white": 8.3,
+        "dark": 8.4,
+        "whiteRaw": "8.3",
+        "darkRaw": "8.4",
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 3,
+        "darkShootout": 4
       },
-      "shootout": null,
+      "shootout": {
+        "occurred": true,
+        "whiteRegulation": 8,
+        "darkRegulation": 8,
+        "whiteShootout": 3,
+        "darkShootout": 4
+      },
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "decidedBy": "shootout",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-fleet",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "FLEET",
+        "loserParticipantId": "tournament-team-2026-18u-girls-storm-tsunamis",
+        "loserTeamId": null,
+        "loserName": "STORM TSUNAMIS"
       },
       "advancement": {
         "winnerTo": {
@@ -5773,7 +6058,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-191",
       "sourceGameNumber": 191,
-      "sourceRow": 120,
+      "sourceRow": 104,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "10:00 AM",
@@ -5795,51 +6080,55 @@
         "displayLabel": "3rd place game"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "2nd au_V",
-          "kind": "bracket_reference",
+          "raw": "2nd au_V-STORM CYCLONES",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2ndau_V",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "2nd au_V",
+          "displayName": "STORM CYCLONES",
+          "participantId": "tournament-team-2026-18u-girls-storm-cyclones",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "2nd au_W",
-          "kind": "bracket_reference",
+          "raw": "2nd au_W-ST LOUIS LIONS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "2ndau_W",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "2nd au_W",
+          "displayName": "ST LOUIS LIONS",
+          "participantId": "tournament-team-2026-18u-girls-st-louis-lions",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 6,
+        "dark": 14,
+        "whiteRaw": "6",
+        "darkRaw": "14",
+        "whiteRegulation": 6,
+        "darkRegulation": 14,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-st-louis-lions",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "ST LOUIS LIONS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-storm-cyclones",
+        "loserTeamId": null,
+        "loserName": "STORM CYCLONES"
       },
       "advancement": {
         "winnerTo": {
@@ -5865,7 +6154,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-182",
       "sourceGameNumber": 182,
-      "sourceRow": 121,
+      "sourceRow": 105,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "11:00 AM",
@@ -5887,51 +6176,55 @@
         "displayLabel": "1st place game"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "1st au_V",
-          "kind": "bracket_reference",
+          "raw": "1st au_V-ZENITH ALL STARS",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "1stau_V",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "1st au_V",
+          "displayName": "ZENITH ALL STARS",
+          "participantId": "tournament-team-2026-18u-girls-zenith-all-stars",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "1st au_W",
-          "kind": "bracket_reference",
+          "raw": "1st au_W-BCWP",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "1stau_W",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "1st au_W",
+          "displayName": "BCWP",
+          "participantId": "tournament-team-2026-18u-girls-bcwp",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 5,
+        "dark": 6,
+        "whiteRaw": "5",
+        "darkRaw": "6",
+        "whiteRegulation": 5,
+        "darkRegulation": 6,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-bcwp",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "BCWP",
+        "loserParticipantId": "tournament-team-2026-18u-girls-zenith-all-stars",
+        "loserTeamId": null,
+        "loserName": "ZENITH ALL STARS"
       },
       "advancement": {
         "winnerTo": {
@@ -5957,7 +6250,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-177",
       "sourceGameNumber": 177,
-      "sourceRow": 122,
+      "sourceRow": 106,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "12:00 PM",
@@ -5979,51 +6272,55 @@
         "displayLabel": "9th place game"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "W153",
-          "kind": "bracket_reference",
+          "raw": "W153-KRAKEN SATX",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W153",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "KRAKEN SATX",
+          "participantId": "tournament-team-2026-18u-girls-kraken-satx",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W157",
-          "kind": "bracket_reference",
+          "raw": "W157-SOUTHLAKE",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W157",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "SOUTHLAKE",
+          "participantId": "tournament-team-2026-18u-girls-southlake",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 10,
+        "dark": 11,
+        "whiteRaw": "10",
+        "darkRaw": "11",
+        "whiteRegulation": 10,
+        "darkRegulation": 11,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-southlake",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SOUTHLAKE",
+        "loserParticipantId": "tournament-team-2026-18u-girls-kraken-satx",
+        "loserTeamId": null,
+        "loserName": "KRAKEN SATX"
       },
       "advancement": {
         "winnerTo": {
@@ -6049,7 +6346,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-192",
       "sourceGameNumber": 192,
-      "sourceRow": 123,
+      "sourceRow": 107,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "1:00 PM",
@@ -6071,51 +6368,55 @@
         "displayLabel": "5th place game"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "3rd au_V",
-          "kind": "bracket_reference",
+          "raw": "3rd au_V-ZOO",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rdau_V",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "3rd au_V",
+          "displayName": "ZOO",
+          "participantId": "tournament-team-2026-18u-girls-zoo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "3rd au_W",
-          "kind": "bracket_reference",
+          "raw": "3rd au_W-LONGHORN WHITE",
+          "kind": "team",
           "seed": null,
-          "sourceReference": "3rdau_W",
-          "displayName": null,
-          "participantId": null,
+          "sourceReference": "3rd au_W",
+          "displayName": "LONGHORN WHITE",
+          "participantId": "tournament-team-2026-18u-girls-longhorn-white",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 2,
+        "dark": 12,
+        "whiteRaw": "2",
+        "darkRaw": "12",
+        "whiteRegulation": 2,
+        "darkRegulation": 12,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-longhorn-white",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "LONGHORN WHITE",
+        "loserParticipantId": "tournament-team-2026-18u-girls-zoo",
+        "loserTeamId": null,
+        "loserName": "ZOO"
       },
       "advancement": {
         "winnerTo": {
@@ -6141,7 +6442,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-181",
       "sourceGameNumber": 181,
-      "sourceRow": 124,
+      "sourceRow": 108,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "2:00 PM",
@@ -6163,51 +6464,55 @@
         "displayLabel": "11th place game"
       },
       "venue": "CARROL ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "L153",
-          "kind": "bracket_reference",
+          "raw": "L153-KRAKEN",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L153",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "KRAKEN",
+          "participantId": "tournament-team-2026-18u-girls-kraken",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "L157",
-          "kind": "bracket_reference",
+          "raw": "L157-ALAMO",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L157",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "ALAMO",
+          "participantId": "tournament-team-2026-18u-girls-alamo",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 9,
+        "dark": 7,
+        "whiteRaw": "9",
+        "darkRaw": "7",
+        "whiteRegulation": 9,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-kraken",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "KRAKEN",
+        "loserParticipantId": "tournament-team-2026-18u-girls-alamo",
+        "loserTeamId": null,
+        "loserName": "ALAMO"
       },
       "advancement": {
         "winnerTo": {
@@ -6233,7 +6538,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-174",
       "sourceGameNumber": 174,
-      "sourceRow": 129,
+      "sourceRow": 111,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "8:30 AM",
@@ -6251,52 +6556,56 @@
         "placement": null,
         "displayLabel": "Semifinal"
       },
-      "venue": "GARLAND ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "venue": "GARLAND ISD 2",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "W137",
-          "kind": "bracket_reference",
+          "raw": "W137-PEGASUS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W137",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-18u-girls-pegasus",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-pegasus",
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
-          "raw": "W165",
-          "kind": "bracket_reference",
+          "raw": "W165-SEA MONSTERS PREMIER",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W165",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "SEA MONSTERS PREMIER",
+          "participantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 9,
+        "dark": 8,
+        "whiteRaw": "9",
+        "darkRaw": "8",
+        "whiteRegulation": 9,
+        "darkRegulation": 8,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-pegasus",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "PEGASUS",
+        "loserParticipantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
+        "loserTeamId": null,
+        "loserName": "SEA MONSTERS PREMIER"
       },
       "advancement": {
         "winnerTo": {
@@ -6322,7 +6631,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-185",
       "sourceGameNumber": 185,
-      "sourceRow": 131,
+      "sourceRow": 112,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "2:30 PM",
@@ -6344,51 +6653,55 @@
         "displayLabel": "3rd place game"
       },
       "venue": "GARLAND ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "L173",
-          "kind": "bracket_reference",
+          "raw": "L173-SLAP",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L173",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "SLAP",
+          "participantId": "tournament-team-2026-18u-girls-slap",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-slap",
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
-          "raw": "L174",
-          "kind": "bracket_reference",
+          "raw": "L174-SEA MONSTERS PREMIER",
+          "kind": "team",
           "seed": null,
           "sourceReference": "L174",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "SEA MONSTERS PREMIER",
+          "participantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 7,
+        "dark": 11,
+        "whiteRaw": "7",
+        "darkRaw": "11",
+        "whiteRegulation": 7,
+        "darkRegulation": 11,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-sea-monsters-premier",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "SEA MONSTERS PREMIER",
+        "loserParticipantId": "tournament-team-2026-18u-girls-slap",
+        "loserTeamId": null,
+        "loserName": "SLAP"
       },
       "advancement": {
         "winnerTo": {
@@ -6414,7 +6727,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-173",
       "sourceGameNumber": 173,
-      "sourceRow": 135,
+      "sourceRow": 115,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "8:30 AM",
@@ -6432,52 +6745,56 @@
         "placement": null,
         "displayLabel": "Semifinal"
       },
-      "venue": "GARLAND ISD 2",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "venue": "GARLAND ISD 1",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "W141",
-          "kind": "bracket_reference",
+          "raw": "W141-SLAP",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W141",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "SLAP",
+          "participantId": "tournament-team-2026-18u-girls-slap",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-slap",
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         },
         "dark": {
-          "raw": "W161",
-          "kind": "bracket_reference",
+          "raw": "W161-HOUSTON HYDRA",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W161",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-18u-girls-houston-hydra",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 5,
+        "dark": 14,
+        "whiteRaw": "5",
+        "darkRaw": "14",
+        "whiteRegulation": 5,
+        "darkRegulation": 14,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-houston-hydra",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "HOUSTON HYDRA",
+        "loserParticipantId": "tournament-team-2026-18u-girls-slap",
+        "loserTeamId": null,
+        "loserName": "SLAP"
       },
       "advancement": {
         "winnerTo": {
@@ -6503,7 +6820,7 @@
       "divisionTier": "D1",
       "sourceGameId": "18G-186",
       "sourceGameNumber": 186,
-      "sourceRow": 137,
+      "sourceRow": 116,
       "dateLabel": "2-Aug",
       "dateIso": "2026-08-02",
       "timeLabel": "2:30 PM",
@@ -6525,51 +6842,55 @@
         "displayLabel": "1st place game"
       },
       "venue": "GARLAND ISD 1",
-      "status": "scheduled",
-      "scoreState": "empty",
+      "status": "final",
+      "scoreState": "complete",
       "participants": {
         "white": {
-          "raw": "W173",
-          "kind": "bracket_reference",
+          "raw": "W173-HOUSTON HYDRA",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W173",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "HOUSTON HYDRA",
+          "participantId": "tournament-team-2026-18u-girls-houston-hydra",
           "teamId": null,
           "clubId": null,
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
         },
         "dark": {
-          "raw": "W174",
-          "kind": "bracket_reference",
+          "raw": "W174-PEGASUS",
+          "kind": "team",
           "seed": null,
           "sourceReference": "W174",
-          "displayName": null,
-          "participantId": null,
+          "displayName": "PEGASUS",
+          "participantId": "tournament-team-2026-18u-girls-pegasus",
           "teamId": null,
-          "clubId": null,
+          "clubId": "club-pegasus",
           "rankingEligible": false,
-          "identityStatus": "not_applicable",
-          "identityMatchType": null
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
         }
       },
       "scores": {
-        "white": null,
-        "dark": null,
-        "whiteRaw": null,
-        "darkRaw": null,
-        "whiteRegulation": null,
-        "darkRegulation": null,
+        "white": 12,
+        "dark": 11,
+        "whiteRaw": "12",
+        "darkRaw": "11",
+        "whiteRegulation": 12,
+        "darkRegulation": 11,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
-        "kind": "pending",
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-18u-girls-houston-hydra",
         "winnerTeamId": null,
-        "loserTeamId": null
+        "winnerName": "HOUSTON HYDRA",
+        "loserParticipantId": "tournament-team-2026-18u-girls-pegasus",
+        "loserTeamId": null,
+        "loserName": "PEGASUS"
       },
       "advancement": {
         "winnerTo": {

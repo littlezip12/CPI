@@ -54,18 +54,19 @@ requireCondition(context.api({state:'live',checkedAt:new Date(now-25*60*1000).to
 
 const workflow=fs.readFileSync(path.join(ROOT,'.github','workflows','sync-jo-live-relay.yml'),'utf8');
 for(const token of [
-  'cron: "*/5 * * * *"',
   'workflow_dispatch:',
   'cpi-jo-live-relay',
   'scripts/sync-jo-live-relay.py',
   'git fetch origin cpi-live-relay',
   'git switch --orphan cpi-live-relay-publish',
   'git push --force origin HEAD:cpi-live-relay',
+  'Refresh archived JO Session 3 relay bank on demand',
   '--event 2026-jo-session-3',
   '--workers 3',
   '--timeout 8',
   '--max-candidates 2'
 ])requireCondition(workflow.includes(token),`Relay workflow is missing: ${token}`);
+requireCondition(!workflow.includes('cron:'),'Completed JO events must not retain a scheduled five-minute relay');
 
 const relayScript=fs.readFileSync(path.join(ROOT,'scripts','sync-jo-live-relay.py'),'utf8');
 for(const token of [
@@ -79,7 +80,7 @@ for(const token of [
 ])requireCondition(relayScript.includes(token),`Relay builder is missing: ${token}`);
 
 console.log('JO LIVE RELAY 7.51.0 TESTS PASSED');
-console.log(' - All three JO sessions remain configured for the isolated WPI relay branch; scheduled refreshes prioritize Session 3');
+console.log(' - All three JO viewers retain the isolated relay fallback; Session 3 refresh is now manual-only after completion');
 console.log(' - Browsers apply the relay before direct Google and preserve a fresh relay if Google fails');
 console.log(' - Relay checks are bounded, freshness is explicit, and stale banks remain available');
-console.log(' - GitHub Actions refreshes the relay every five minutes without committing generated relay data to main');
+console.log(' - GitHub Actions preserves an on-demand isolated relay without scheduled post-event polling');

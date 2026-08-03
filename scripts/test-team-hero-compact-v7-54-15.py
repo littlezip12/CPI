@@ -6,8 +6,8 @@ errors=[]
 read=lambda rel:(ROOT/rel).read_text(encoding="utf-8")
 site=json.loads(read("config/site-release.json"))
 for key, expected in {
-    "version":"7.54.15",
-    "publicExperienceRelease":"7.54.15",
+    "version":"7.54.16",
+    "publicExperienceRelease":"7.54.16",
     "sectionLandingRelease":"7.54.15",
     "teamDirectoryRelease":"7.54.14",
 }.items():

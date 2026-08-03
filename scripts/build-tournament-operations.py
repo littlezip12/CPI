@@ -105,13 +105,13 @@ def main() -> int:
 
     for event in registry.get("events", []):
         event_id = event.get("id")
-        explicit_mode = event.get("operationsMode")
+        explicit_mode = event.get("operationsMode") or event.get("operationalMode")
         if explicit_mode == "historical_review":
             mode = "historical_registered"
-        elif event_id in live_ids or event.get("syncEnabled"):
-            mode = "live"
-        elif event_id in archive_ids or event.get("archiveSyncEnabled"):
+        elif explicit_mode == "archive" or event_id in archive_ids or event.get("archiveSyncEnabled"):
             mode = "archive"
+        elif explicit_mode == "live" or event_id in live_ids or event.get("syncEnabled"):
+            mode = "live"
         else:
             mode = "historical_registered"
         event_divisions: list[dict[str, Any]] = []

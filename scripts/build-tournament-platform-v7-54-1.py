@@ -15,8 +15,8 @@ ARCHIVE_DIR = ROOT / "data/tournaments/archive"
 CLUBS_PATH = ROOT / "clubs.json"
 RANKINGS_PATH = ROOT / "rankings.json"
 ALIASES_PATH = ROOT / "data/identity/aliases.json"
-RELEASE = "7.54.11"
-BUILD_TIMESTAMP = "2026-07-30T23:10:00-07:00"
+RELEASE = "7.54.16"
+BUILD_TIMESTAMP = "2026-08-02T22:28:00-07:00"
 FALLBACK_LOGO = "assets/logos/cpi-logo-fallback.svg"
 # User-verified tournament label to logo mappings. These supply artwork without
 # inventing a canonical club profile when the current rankings registry does not
@@ -50,6 +50,7 @@ MIGRATED_EVENT_IDS = [
     "2025-evan-cousineau-memorial-cup",
     "2026-kap7-international",
     "2026-san-diego-county-cup",
+    "2026-jo-session-3",
 ]
 PLACEMENT_PATHS = {
     "2026-quiksilver-cup": ROOT / "data/tournaments/quiksilver-cup-2026.json",
@@ -58,6 +59,7 @@ PLACEMENT_PATHS = {
     "2025-evan-cousineau-memorial-cup": ARCHIVE_DIR / "2025-evan-cousineau-memorial-cup.json",
     "2026-kap7-international": ARCHIVE_DIR / "2026-kap7-international.json",
     "2026-san-diego-county-cup": ARCHIVE_DIR / "2026-san-diego-county-cup.json",
+    "2026-jo-session-3": ARCHIVE_DIR / "2026-jo-session-3.json",
 }
 
 
@@ -84,9 +86,13 @@ def clean_route_name(value: str) -> str:
     text = re.sub(r"\s+", " ", str(value or "").strip())
     if "-" in text:
         prefix, suffix = text.rsplit("-", 1)
-        if re.search(r"#|\(|\)|\]|\b(?:1st|2nd|3rd|4th)\b|^[A-Z]\d", prefix, re.I):
+        if re.search(r"#|\(|\)|\]|(?:^|[_\s])(?:1st|2nd|3rd|4th|5th|6th|7th|8th|9th|10th|11th|12th)(?:$|[_\s])|^[A-Z]\d", prefix, re.I):
             text = suffix.strip()
-    return text
+    fixes = {
+        "ORLANO THUNDER": "ORLANDO THUNDER",
+        "CHICACO PARKS DISTRICT": "CHICAGO PARKS DISTRICT",
+    }
+    return fixes.get(text.upper(), text)
 
 
 def iso_range(games: list[dict]) -> tuple[str | None, str | None]:
@@ -175,7 +181,7 @@ def choose_participant_record(
     )
     # A tournament may enter the same club/team label in multiple competitive divisions.
     # Keep each division entry as its own journey while retaining the shared WPI team/club identity.
-    if event.get("id") in {"2026-san-diego-county-cup", "2026-kap7-international", "2026-girls-futures-super-finals"}:
+    if event.get("id") in {"2026-san-diego-county-cup", "2026-kap7-international", "2026-girls-futures-super-finals", "2026-jo-session-3"}:
         participant_id = f"{participant_id}--{division['id']}"
     identity_status = "resolved_team" if team_id else "resolved_club_only" if club_id else "unresolved"
     match_type = "platform_placement" if placement else "platform_route_merge"
@@ -419,7 +425,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
                 "clubSlug": club.get("slug"),
                 "teamPage": ranked.get("teamPage") or placement.get("teamPage"),
                 "clubPage": club.get("clubPage") or placement.get("clubPage"),
-                "logo": ranked.get("logo") or club.get("logo") or logo_override or FALLBACK_LOGO,
+                "logo": FALLBACK_LOGO if event_id == "2026-jo-session-3" else (ranked.get("logo") or club.get("logo") or logo_override or FALLBACK_LOGO),
                 "primaryColor": ranked.get("primaryColor") or club.get("primaryColor") or "#126dff",
                 "secondaryColor": ranked.get("secondaryColor") or club.get("secondaryColor") or "#f6b700",
                 "rank": ranked.get("postRank"),
@@ -437,7 +443,7 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
     teams.sort(key=lambda item: (item.get("ageGroup") or "", item.get("division") or "", item.get("finish") or 999, item.get("name") or ""))
 
     start_date, end_date = iso_range(all_games)
-    all_games.sort(key=lambda game: (game.get("dateIso") or "", game.get("timeLabel") or "", game.get("divisionLabel") or "", game.get("gameNumber") or ""))
+    all_games.sort(key=lambda game: (game.get("dateIso") or "", game.get("timeLabel") or "", game.get("divisionLabel") or "", str(game.get("gameNumber") or "")))
     official_source = event.get("officialSourceUrl") or event.get("divisions", [{}])[0].get("sourceUrl")
     if official_source and not str(official_source).startswith("http"):
         official_source = None
@@ -452,8 +458,10 @@ def build_event_bundle(event: dict, clubs: list[dict], rankings: list[dict], ali
             "shortName": event.get("shortName"),
             "season": (event.get("divisions") or [{}])[0].get("season"),
             "kind": event.get("kind"),
-            "status": "complete",
+            "status": "complete_with_source_gap" if event_id == "2026-jo-session-3" else "complete",
             "operationsMode": "archive",
+            "sourceGap": {"divisionId": "12u-coed-championship", "scheduledWithoutScores": 81} if event_id == "2026-jo-session-3" else None,
+            "clubLogosEnabled": event_id != "2026-jo-session-3",
             "startDate": start_date,
             "endDate": end_date,
             "timezone": "America/Los_Angeles",
@@ -535,7 +543,7 @@ def build_registry(source: dict, bundles: dict[str, dict]) -> dict:
         "schemaVersion": 1,
         "release": RELEASE,
         "generatedAt": BUILD_TIMESTAMP,
-        "description": "Shared WPI tournament platform registry. Quiksilver Cup, Girls and Boys Futures Super Finals, the 2025 Evan Cousineau Memorial Cup, 2026 KAP7 International, and the 2026 San Diego County Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
+        "description": "Shared WPI tournament platform registry. Seven completed-event experiences, including Junior Olympics Weekend 3, use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
         "platformPath": "tournament.html",
         "schemaPaths": {
             "event": "tournaments/schema/tournament-event.schema.json",

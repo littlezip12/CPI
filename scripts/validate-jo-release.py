@@ -157,8 +157,8 @@ for rel in ('tournaments/jo-boys/app.js','tournaments/jo-girls/app.js'):
 
 hub = (ROOT/'tournaments.html').read_text(encoding='utf-8')
 home = (ROOT/'index.html').read_text(encoding='utf-8')
-if 'tournaments/jo-texas/' not in hub:
-    fail('tournaments.html: missing current Session 3 JO link')
+if 'jo-recap.html' not in hub:
+    fail('tournaments.html: missing archived three-weekend JO recap link')
 if 'tournaments/jo-boys/' not in home:
     fail('index.html: missing completed Boys JO link')
 
@@ -177,4 +177,4 @@ print(' - Both apps read WPI’s server-side relay first, retain direct Google f
 print(' - Boys sources use stable sheet names first, legacy GIDs second, and verified repository snapshots last')
 print(' - Local JO page assets resolve')
 print(' - JavaScript syntax checks passed')
-print(' - Homepage retains completed JO access and the tournament hub links to active Session 3')
+print(' - Homepage retains all three JO weekend links and the tournament hub opens the completed JO recap')

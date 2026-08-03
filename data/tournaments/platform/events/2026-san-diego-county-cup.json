@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.11",
-  "generatedAt": "2026-07-30T23:10:00-07:00",
+  "release": "7.54.16",
+  "generatedAt": "2026-08-02T22:28:00-07:00",
   "event": {
     "id": "2026-san-diego-county-cup",
     "name": "2026 San Diego County Cup",
@@ -10,6 +10,8 @@
     "kind": "tournament_results",
     "status": "complete",
     "operationsMode": "archive",
+    "sourceGap": null,
+    "clubLogosEnabled": true,
     "startDate": "2026-05-01",
     "endDate": "2026-05-03",
     "timezone": "America/Los_Angeles",
@@ -14719,60 +14721,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-9",
-      "divisionId": "12u-boys-division-1",
-      "divisionLabel": "12U Boys Division 1",
-      "ageGroup": "12U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "3:00 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "LOMA VERDE AQUATIC CENTER 2",
-      "gameNumber": 9,
-      "stage": "E bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-12u-boys-stanford--12u-boys-division-1",
-        "name": "Stanford",
-        "teamId": null,
-        "clubId": "club-stanford",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "team-2026-12u-boys-temple-city--12u-boys-division-1",
-        "name": "Temple City",
-        "teamId": "team-2026-12u-boys-temple-city",
-        "clubId": "club-temple-city",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "scores": {
-        "white": 17,
-        "dark": 3,
-        "whiteRaw": "17",
-        "darkRaw": "3",
-        "whiteRegulation": 17,
-        "darkRegulation": 3,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-stanford--12u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "Stanford",
-        "loserParticipantId": "team-2026-12u-boys-temple-city--12u-boys-division-1",
-        "loserTeamId": "team-2026-12u-boys-temple-city",
-        "loserName": "Temple City"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-17",
       "divisionId": "12u-boys-division-1",
       "divisionLabel": "12U Boys Division 1",
@@ -14824,6 +14772,60 @@
         "winnerName": null,
         "loserParticipantId": null,
         "loserName": null
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-9",
+      "divisionId": "12u-boys-division-1",
+      "divisionLabel": "12U Boys Division 1",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "LOMA VERDE AQUATIC CENTER 2",
+      "gameNumber": 9,
+      "stage": "E bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-12u-boys-stanford--12u-boys-division-1",
+        "name": "Stanford",
+        "teamId": null,
+        "clubId": "club-stanford",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "dark": {
+        "participantId": "team-2026-12u-boys-temple-city--12u-boys-division-1",
+        "name": "Temple City",
+        "teamId": "team-2026-12u-boys-temple-city",
+        "clubId": "club-temple-city",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 17,
+        "dark": 3,
+        "whiteRaw": "17",
+        "darkRaw": "3",
+        "whiteRegulation": 17,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-stanford--12u-boys-division-1",
+        "winnerTeamId": null,
+        "winnerName": "Stanford",
+        "loserParticipantId": "team-2026-12u-boys-temple-city--12u-boys-division-1",
+        "loserTeamId": "team-2026-12u-boys-temple-city",
+        "loserName": "Temple City"
       }
     },
     {
@@ -14881,60 +14883,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-9",
-      "divisionId": "12u-boys-division-2",
-      "divisionLabel": "12U Boys Division 2",
-      "ageGroup": "12U",
-      "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "3:00 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "NED BAUMER 2",
-      "gameNumber": 9,
-      "stage": "D bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "team-2026-12u-boys-mission-b-12u-boys--12u-boys-division-2",
-        "name": "Mission B",
-        "teamId": "team-2026-12u-boys-mission-b-12u-boys",
-        "clubId": "club-mission",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-12u-boys-north-irvine-red--12u-boys-division-2",
-        "name": "North Irvine Red",
-        "teamId": null,
-        "clubId": "club-north-irvine",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "scores": {
-        "white": 12,
-        "dark": 4,
-        "whiteRaw": "12",
-        "darkRaw": "4",
-        "whiteRegulation": 12,
-        "darkRegulation": 4,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-mission-b-12u-boys--12u-boys-division-2",
-        "winnerTeamId": "team-2026-12u-boys-mission-b-12u-boys",
-        "winnerName": "Mission B",
-        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-red--12u-boys-division-2",
-        "loserTeamId": null,
-        "loserName": "North Irvine Red"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-17",
       "divisionId": "12u-boys-division-2",
       "divisionLabel": "12U Boys Division 2",
@@ -14986,6 +14934,60 @@
         "loserParticipantId": "tournament-team-2026-12u-boys-san-clemente-white--12u-boys-division-2",
         "loserTeamId": null,
         "loserName": "San Clemente White"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-9",
+      "divisionId": "12u-boys-division-2",
+      "divisionLabel": "12U Boys Division 2",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "NED BAUMER 2",
+      "gameNumber": 9,
+      "stage": "D bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "team-2026-12u-boys-mission-b-12u-boys--12u-boys-division-2",
+        "name": "Mission B",
+        "teamId": "team-2026-12u-boys-mission-b-12u-boys",
+        "clubId": "club-mission",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-12u-boys-north-irvine-red--12u-boys-division-2",
+        "name": "North Irvine Red",
+        "teamId": null,
+        "clubId": "club-north-irvine",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "scores": {
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-mission-b-12u-boys--12u-boys-division-2",
+        "winnerTeamId": "team-2026-12u-boys-mission-b-12u-boys",
+        "winnerName": "Mission B",
+        "loserParticipantId": "tournament-team-2026-12u-boys-north-irvine-red--12u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "North Irvine Red"
       }
     },
     {
@@ -15151,60 +15153,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-9",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "3:00 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 2",
-      "gameNumber": 9,
-      "stage": "C bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-1",
-        "name": "Shore Aquatics",
-        "teamId": null,
-        "clubId": "club-long-beach-shore",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "team-2026-14u-boys-titans-a--14u-boys-division-1",
-        "name": "Titans",
-        "teamId": "team-2026-14u-boys-titans-a",
-        "clubId": "club-titans",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "scores": {
-        "white": 12,
-        "dark": 2,
-        "whiteRaw": "12",
-        "darkRaw": "2",
-        "whiteRegulation": 12,
-        "darkRegulation": 2,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "Shore Aquatics",
-        "loserParticipantId": "team-2026-14u-boys-titans-a--14u-boys-division-1",
-        "loserTeamId": "team-2026-14u-boys-titans-a",
-        "loserName": "Titans"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-17",
       "divisionId": "14u-boys-division-1",
       "divisionLabel": "14U Boys Division 1",
@@ -15256,6 +15204,60 @@
         "loserParticipantId": "team-2026-14u-boys-cdm-a--14u-boys-division-1",
         "loserTeamId": "team-2026-14u-boys-cdm-a",
         "loserName": "CDM"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-9",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "SOUTHWESTERN COLLEGE 2",
+      "gameNumber": 9,
+      "stage": "C bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-1",
+        "name": "Shore Aquatics",
+        "teamId": null,
+        "clubId": "club-long-beach-shore",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "dark": {
+        "participantId": "team-2026-14u-boys-titans-a--14u-boys-division-1",
+        "name": "Titans",
+        "teamId": "team-2026-14u-boys-titans-a",
+        "clubId": "club-titans",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 12,
+        "dark": 2,
+        "whiteRaw": "12",
+        "darkRaw": "2",
+        "whiteRegulation": 12,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-1",
+        "winnerTeamId": null,
+        "winnerName": "Shore Aquatics",
+        "loserParticipantId": "team-2026-14u-boys-titans-a--14u-boys-division-1",
+        "loserTeamId": "team-2026-14u-boys-titans-a",
+        "loserName": "Titans"
       }
     },
     {
@@ -15637,60 +15639,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-2",
-      "divisionId": "12u-boys-division-1",
-      "divisionLabel": "12U Boys Division 1",
-      "ageGroup": "12U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "3:45 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "LOMA VERDE AQUATIC CENTER 1",
-      "gameNumber": 2,
-      "stage": "B bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "team-2026-12u-boys-greenwich--12u-boys-division-1",
-        "name": "Greenwich A",
-        "teamId": "team-2026-12u-boys-greenwich",
-        "clubId": "club-greenwich",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-12u-boys-los-al-opal--12u-boys-division-1",
-        "name": "Los Al Opal",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_route_merge"
-      },
-      "scores": {
-        "white": 21,
-        "dark": 4,
-        "whiteRaw": "21",
-        "darkRaw": "4",
-        "whiteRegulation": 21,
-        "darkRegulation": 4,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-greenwich--12u-boys-division-1",
-        "winnerTeamId": "team-2026-12u-boys-greenwich",
-        "winnerName": "Greenwich A",
-        "loserParticipantId": "tournament-team-2026-12u-boys-los-al-opal--12u-boys-division-1",
-        "loserTeamId": null,
-        "loserName": "Los Al Opal"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-10",
       "divisionId": "12u-boys-division-1",
       "divisionLabel": "12U Boys Division 1",
@@ -15799,57 +15747,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-2",
-      "divisionId": "12u-boys-division-2",
-      "divisionLabel": "12U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-2",
+      "divisionId": "12u-boys-division-1",
+      "divisionLabel": "12U Boys Division 1",
       "ageGroup": "12U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "3:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "NED BAUMER 1",
+      "venue": "LOMA VERDE AQUATIC CENTER 1",
       "gameNumber": 2,
       "stage": "B bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "team-2026-12u-boys-eca--12u-boys-division-2",
-        "name": "SD ECA",
-        "teamId": "team-2026-12u-boys-eca",
-        "clubId": "club-sd-eca",
+        "participantId": "team-2026-12u-boys-greenwich--12u-boys-division-1",
+        "name": "Greenwich A",
+        "teamId": "team-2026-12u-boys-greenwich",
+        "clubId": "club-greenwich",
         "identityStatus": "resolved_team",
         "identityMatchType": "scoped_alias"
       },
       "dark": {
-        "participantId": "team-2026-12u-boys-laguna-beach--12u-boys-division-2",
-        "name": "Laguna Beach",
-        "teamId": "team-2026-12u-boys-laguna-beach",
-        "clubId": "club-laguna-beach",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "participantId": "tournament-team-2026-12u-boys-los-al-opal--12u-boys-division-1",
+        "name": "Los Al Opal",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_route_merge"
       },
       "scores": {
-        "white": 16,
-        "dark": 9,
-        "whiteRaw": "16",
-        "darkRaw": "9",
-        "whiteRegulation": 16,
-        "darkRegulation": 9,
+        "white": 21,
+        "dark": 4,
+        "whiteRaw": "21",
+        "darkRaw": "4",
+        "whiteRegulation": 21,
+        "darkRegulation": 4,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-eca--12u-boys-division-2",
-        "winnerTeamId": "team-2026-12u-boys-eca",
-        "winnerName": "SD ECA",
-        "loserParticipantId": "team-2026-12u-boys-laguna-beach--12u-boys-division-2",
-        "loserTeamId": "team-2026-12u-boys-laguna-beach",
-        "loserName": "Laguna Beach"
+        "winnerParticipantId": "team-2026-12u-boys-greenwich--12u-boys-division-1",
+        "winnerTeamId": "team-2026-12u-boys-greenwich",
+        "winnerName": "Greenwich A",
+        "loserParticipantId": "tournament-team-2026-12u-boys-los-al-opal--12u-boys-division-1",
+        "loserTeamId": null,
+        "loserName": "Los Al Opal"
       }
     },
     {
@@ -15958,6 +15906,60 @@
         "loserParticipantId": "team-2026-12u-boys-back-bay--12u-boys-division-2",
         "loserTeamId": "team-2026-12u-boys-back-bay",
         "loserName": "Back Bay"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-2",
+      "divisionId": "12u-boys-division-2",
+      "divisionLabel": "12U Boys Division 2",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "3:45 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "NED BAUMER 1",
+      "gameNumber": 2,
+      "stage": "B bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "team-2026-12u-boys-eca--12u-boys-division-2",
+        "name": "SD ECA",
+        "teamId": "team-2026-12u-boys-eca",
+        "clubId": "club-sd-eca",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "dark": {
+        "participantId": "team-2026-12u-boys-laguna-beach--12u-boys-division-2",
+        "name": "Laguna Beach",
+        "teamId": "team-2026-12u-boys-laguna-beach",
+        "clubId": "club-laguna-beach",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 16,
+        "dark": 9,
+        "whiteRaw": "16",
+        "darkRaw": "9",
+        "whiteRegulation": 16,
+        "darkRegulation": 9,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-eca--12u-boys-division-2",
+        "winnerTeamId": "team-2026-12u-boys-eca",
+        "winnerName": "SD ECA",
+        "loserParticipantId": "team-2026-12u-boys-laguna-beach--12u-boys-division-2",
+        "loserTeamId": "team-2026-12u-boys-laguna-beach",
+        "loserName": "Laguna Beach"
       }
     },
     {
@@ -16123,60 +16125,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-2",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "3:45 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 1",
-      "gameNumber": 2,
-      "stage": "K bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "team-2026-14u-boys-north-irvine-a--14u-boys-division-1",
-        "name": "North Irvine",
-        "teamId": "team-2026-14u-boys-north-irvine-a",
-        "clubId": "club-north-irvine",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-boys-sd-dons-red--14u-boys-division-1",
-        "name": "SD Dons Red",
-        "teamId": null,
-        "clubId": "club-sd-dons",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "scores": {
-        "white": 4,
-        "dark": 2,
-        "whiteRaw": "4",
-        "darkRaw": "2",
-        "whiteRegulation": 4,
-        "darkRegulation": 2,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-boys-north-irvine-a--14u-boys-division-1",
-        "winnerTeamId": "team-2026-14u-boys-north-irvine-a",
-        "winnerName": "North Irvine",
-        "loserParticipantId": "tournament-team-2026-14u-boys-sd-dons-red--14u-boys-division-1",
-        "loserTeamId": null,
-        "loserName": "SD Dons Red"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-10",
       "divisionId": "14u-boys-division-1",
       "divisionLabel": "14U Boys Division 1",
@@ -16285,57 +16233,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-2",
-      "divisionId": "14u-boys-division-2",
-      "divisionLabel": "14U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-2",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
       "ageGroup": "14U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "3:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "MESA COLLEGE",
+      "venue": "SOUTHWESTERN COLLEGE 1",
       "gameNumber": 2,
-      "stage": "B bracket",
+      "stage": "K bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-14u-boys-eca-a--14u-boys-division-2",
-        "name": "ECA A",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_placement"
+        "participantId": "team-2026-14u-boys-north-irvine-a--14u-boys-division-1",
+        "name": "North Irvine",
+        "teamId": "team-2026-14u-boys-north-irvine-a",
+        "clubId": "club-north-irvine",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-2",
-        "name": "Shore Aquatics",
+        "participantId": "tournament-team-2026-14u-boys-sd-dons-red--14u-boys-division-1",
+        "name": "SD Dons Red",
         "teamId": null,
-        "clubId": "club-long-beach-shore",
+        "clubId": "club-sd-dons",
         "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
+        "identityMatchType": "historical_club_alias"
       },
       "scores": {
-        "white": 13,
-        "dark": 3,
-        "whiteRaw": "13",
-        "darkRaw": "3",
-        "whiteRegulation": 13,
-        "darkRegulation": 3,
+        "white": 4,
+        "dark": 2,
+        "whiteRaw": "4",
+        "darkRaw": "2",
+        "whiteRegulation": 4,
+        "darkRegulation": 2,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-eca-a--14u-boys-division-2",
-        "winnerTeamId": null,
-        "winnerName": "ECA A",
-        "loserParticipantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-2",
+        "winnerParticipantId": "team-2026-14u-boys-north-irvine-a--14u-boys-division-1",
+        "winnerTeamId": "team-2026-14u-boys-north-irvine-a",
+        "winnerName": "North Irvine",
+        "loserParticipantId": "tournament-team-2026-14u-boys-sd-dons-red--14u-boys-division-1",
         "loserTeamId": null,
-        "loserName": "Shore Aquatics"
+        "loserName": "SD Dons Red"
       }
     },
     {
@@ -16393,57 +16341,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-2",
-      "divisionId": "14u-girls-division-1",
-      "divisionLabel": "14U Girls Division 1",
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-2",
+      "divisionId": "14u-boys-division-2",
+      "divisionLabel": "14U Boys Division 2",
       "ageGroup": "14U",
-      "gender": "Girls",
-      "division": "Division 1",
-      "divisionTier": "D1",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "3:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "STANDLEY AQUATIC CENTER",
+      "venue": "MESA COLLEGE",
       "gameNumber": 2,
-      "stage": "C bracket",
+      "stage": "B bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-14u-girls-908-yellow--14u-girls-division-1",
-        "name": "908 Yellow",
+        "participantId": "tournament-team-2026-14u-boys-eca-a--14u-boys-division-2",
+        "name": "ECA A",
         "teamId": null,
-        "clubId": "club-908",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_placement"
       },
       "dark": {
-        "participantId": "tournament-team-2026-14u-girls-socal-black--14u-girls-division-1",
-        "name": "Socal Black",
+        "participantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-2",
+        "name": "Shore Aquatics",
         "teamId": null,
-        "clubId": "club-socal",
+        "clubId": "club-long-beach-shore",
         "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "identityMatchType": "club_alias"
       },
       "scores": {
-        "white": 17,
-        "dark": 2,
-        "whiteRaw": "17",
-        "darkRaw": "2",
-        "whiteRegulation": 17,
-        "darkRegulation": 2,
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-908-yellow--14u-girls-division-1",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-eca-a--14u-boys-division-2",
         "winnerTeamId": null,
-        "winnerName": "908 Yellow",
-        "loserParticipantId": "tournament-team-2026-14u-girls-socal-black--14u-girls-division-1",
+        "winnerName": "ECA A",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-2",
         "loserTeamId": null,
-        "loserName": "Socal Black"
+        "loserName": "Shore Aquatics"
       }
     },
     {
@@ -16498,6 +16446,60 @@
         "loserParticipantId": "team-2026-14u-girls-pac-premier-14u-girls--14u-girls-division-1",
         "loserTeamId": "team-2026-14u-girls-pac-premier-14u-girls",
         "loserName": "PAC Premier"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-2",
+      "divisionId": "14u-girls-division-1",
+      "divisionLabel": "14U Girls Division 1",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "3:45 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "STANDLEY AQUATIC CENTER",
+      "gameNumber": 2,
+      "stage": "C bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-girls-908-yellow--14u-girls-division-1",
+        "name": "908 Yellow",
+        "teamId": null,
+        "clubId": "club-908",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-girls-socal-black--14u-girls-division-1",
+        "name": "Socal Black",
+        "teamId": null,
+        "clubId": "club-socal",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "scores": {
+        "white": 17,
+        "dark": 2,
+        "whiteRaw": "17",
+        "darkRaw": "2",
+        "whiteRegulation": 17,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-908-yellow--14u-girls-division-1",
+        "winnerTeamId": null,
+        "winnerName": "908 Yellow",
+        "loserParticipantId": "tournament-team-2026-14u-girls-socal-black--14u-girls-division-1",
+        "loserTeamId": null,
+        "loserName": "Socal Black"
       }
     },
     {
@@ -16609,60 +16611,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-3",
-      "divisionId": "12u-boys-division-1",
-      "divisionLabel": "12U Boys Division 1",
-      "ageGroup": "12U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "4:30 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "LOMA VERDE AQUATIC CENTER 1",
-      "gameNumber": 3,
-      "stage": "C bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-12u-boys-sd-dons-black--12u-boys-division-1",
-        "name": "SD Dons Black",
-        "teamId": null,
-        "clubId": "club-sd-dons",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "dark": {
-        "participantId": "team-2026-12u-boys-santa-barbara--12u-boys-division-1",
-        "name": "Santa Barbara A",
-        "teamId": "team-2026-12u-boys-santa-barbara",
-        "clubId": "club-santa-barbara",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "scores": {
-        "white": 7,
-        "dark": 1,
-        "whiteRaw": "7",
-        "darkRaw": "1",
-        "whiteRegulation": 7,
-        "darkRegulation": 1,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-sd-dons-black--12u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "SD Dons Black",
-        "loserParticipantId": "team-2026-12u-boys-santa-barbara--12u-boys-division-1",
-        "loserTeamId": "team-2026-12u-boys-santa-barbara",
-        "loserName": "Santa Barbara A"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-11",
       "divisionId": "12u-boys-division-1",
       "divisionLabel": "12U Boys Division 1",
@@ -16771,57 +16719,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-3",
-      "divisionId": "12u-boys-division-2",
-      "divisionLabel": "12U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-3",
+      "divisionId": "12u-boys-division-1",
+      "divisionLabel": "12U Boys Division 1",
       "ageGroup": "12U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "4:30 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "NED BAUMER 1",
+      "venue": "LOMA VERDE AQUATIC CENTER 1",
       "gameNumber": 3,
-      "stage": "A bracket",
+      "stage": "C bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-12u-boys-sd-dons-gold--12u-boys-division-2",
-        "name": "SD Dons Gold",
+        "participantId": "tournament-team-2026-12u-boys-sd-dons-black--12u-boys-division-1",
+        "name": "SD Dons Black",
         "teamId": null,
         "clubId": "club-sd-dons",
         "identityStatus": "resolved_club_only",
         "identityMatchType": "historical_club_alias"
       },
       "dark": {
-        "participantId": "team-2026-12u-boys-shore-aquatics--12u-boys-division-2",
-        "name": "Long Beach Shore",
-        "teamId": "team-2026-12u-boys-shore-aquatics",
-        "clubId": "club-long-beach-shore",
+        "participantId": "team-2026-12u-boys-santa-barbara--12u-boys-division-1",
+        "name": "Santa Barbara A",
+        "teamId": "team-2026-12u-boys-santa-barbara",
+        "clubId": "club-santa-barbara",
         "identityStatus": "resolved_team",
         "identityMatchType": "scoped_alias"
       },
       "scores": {
-        "white": 5,
-        "dark": 12,
-        "whiteRaw": "5",
-        "darkRaw": "12",
-        "whiteRegulation": 5,
-        "darkRegulation": 12,
+        "white": 7,
+        "dark": 1,
+        "whiteRaw": "7",
+        "darkRaw": "1",
+        "whiteRegulation": 7,
+        "darkRegulation": 1,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-shore-aquatics--12u-boys-division-2",
-        "winnerTeamId": "team-2026-12u-boys-shore-aquatics",
-        "winnerName": "Long Beach Shore",
-        "loserParticipantId": "tournament-team-2026-12u-boys-sd-dons-gold--12u-boys-division-2",
-        "loserTeamId": null,
-        "loserName": "SD Dons Gold"
+        "winnerParticipantId": "tournament-team-2026-12u-boys-sd-dons-black--12u-boys-division-1",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Black",
+        "loserParticipantId": "team-2026-12u-boys-santa-barbara--12u-boys-division-1",
+        "loserTeamId": "team-2026-12u-boys-santa-barbara",
+        "loserName": "Santa Barbara A"
       }
     },
     {
@@ -16930,6 +16878,60 @@
         "loserParticipantId": "tournament-team-2026-12u-boys-elite--12u-boys-division-2",
         "loserTeamId": null,
         "loserName": "Elite"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-3",
+      "divisionId": "12u-boys-division-2",
+      "divisionLabel": "12U Boys Division 2",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "NED BAUMER 1",
+      "gameNumber": 3,
+      "stage": "A bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-12u-boys-sd-dons-gold--12u-boys-division-2",
+        "name": "SD Dons Gold",
+        "teamId": null,
+        "clubId": "club-sd-dons",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "team-2026-12u-boys-shore-aquatics--12u-boys-division-2",
+        "name": "Long Beach Shore",
+        "teamId": "team-2026-12u-boys-shore-aquatics",
+        "clubId": "club-long-beach-shore",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 5,
+        "dark": 12,
+        "whiteRaw": "5",
+        "darkRaw": "12",
+        "whiteRegulation": 5,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-12u-boys-shore-aquatics--12u-boys-division-2",
+        "winnerTeamId": "team-2026-12u-boys-shore-aquatics",
+        "winnerName": "Long Beach Shore",
+        "loserParticipantId": "tournament-team-2026-12u-boys-sd-dons-gold--12u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "SD Dons Gold"
       }
     },
     {
@@ -17095,60 +17097,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-3",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "4:30 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 1",
-      "gameNumber": 3,
-      "stage": "G bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-boys-socal--14u-boys-division-1",
-        "name": "SOCAL",
-        "teamId": null,
-        "clubId": "club-socal",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-boys-los-al-opal--14u-boys-division-1",
-        "name": "Los Al Opal",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_route_merge"
-      },
-      "scores": {
-        "white": 6,
-        "dark": 5,
-        "whiteRaw": "6",
-        "darkRaw": "5",
-        "whiteRegulation": 6,
-        "darkRegulation": 5,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-socal--14u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "SOCAL",
-        "loserParticipantId": "tournament-team-2026-14u-boys-los-al-opal--14u-boys-division-1",
-        "loserTeamId": null,
-        "loserName": "Los Al Opal"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-11",
       "divisionId": "14u-boys-division-1",
       "divisionLabel": "14U Boys Division 1",
@@ -17254,6 +17202,114 @@
         "loserParticipantId": "tournament-team-2026-14u-boys-stanford--14u-boys-division-1",
         "loserTeamId": null,
         "loserName": "Stanford"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-3",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "SOUTHWESTERN COLLEGE 1",
+      "gameNumber": 3,
+      "stage": "G bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-boys-socal--14u-boys-division-1",
+        "name": "SOCAL",
+        "teamId": null,
+        "clubId": "club-socal",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-boys-los-al-opal--14u-boys-division-1",
+        "name": "Los Al Opal",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_route_merge"
+      },
+      "scores": {
+        "white": 6,
+        "dark": 5,
+        "whiteRaw": "6",
+        "darkRaw": "5",
+        "whiteRegulation": 6,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-socal--14u-boys-division-1",
+        "winnerTeamId": null,
+        "winnerName": "SOCAL",
+        "loserParticipantId": "tournament-team-2026-14u-boys-los-al-opal--14u-boys-division-1",
+        "loserTeamId": null,
+        "loserName": "Los Al Opal"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-17",
+      "divisionId": "14u-boys-division-2",
+      "divisionLabel": "14U Boys Division 2",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "TIERRASANTA COMMUNITY POOL",
+      "gameNumber": 17,
+      "stage": "H bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-2",
+        "name": "Greenwich",
+        "teamId": null,
+        "clubId": "club-greenwich",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-boys-north-irvine-b--14u-boys-division-2",
+        "name": "North Irvine B",
+        "teamId": null,
+        "clubId": "club-north-irvine",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "scores": {
+        "white": 6,
+        "dark": 5,
+        "whiteRaw": "6",
+        "darkRaw": "5",
+        "whiteRegulation": 6,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "Greenwich",
+        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-b--14u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "North Irvine B"
       }
     },
     {
@@ -17365,60 +17421,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-17",
-      "divisionId": "14u-boys-division-2",
-      "divisionLabel": "14U Boys Division 2",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "4:30 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "TIERRASANTA COMMUNITY POOL",
-      "gameNumber": 17,
-      "stage": "H bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-2",
-        "name": "Greenwich",
-        "teamId": null,
-        "clubId": "club-greenwich",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-boys-north-irvine-b--14u-boys-division-2",
-        "name": "North Irvine B",
-        "teamId": null,
-        "clubId": "club-north-irvine",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "scores": {
-        "white": 6,
-        "dark": 5,
-        "whiteRaw": "6",
-        "darkRaw": "5",
-        "whiteRegulation": 6,
-        "darkRegulation": 5,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-2",
-        "winnerTeamId": null,
-        "winnerName": "Greenwich",
-        "loserParticipantId": "tournament-team-2026-14u-boys-north-irvine-b--14u-boys-division-2",
-        "loserTeamId": null,
-        "loserName": "North Irvine B"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-1",
       "divisionId": "14u-boys-division-3",
       "divisionLabel": "14U Boys Division 3",
@@ -17473,60 +17475,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-3",
-      "divisionId": "14u-girls-division-1",
-      "divisionLabel": "14U Girls Division 1",
-      "ageGroup": "14U",
-      "gender": "Girls",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "4:30 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "STANDLEY AQUATIC CENTER",
-      "gameNumber": 3,
-      "stage": "D bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-girls-south-coast-red--14u-girls-division-1",
-        "name": "South Coast Red",
-        "teamId": null,
-        "clubId": "club-south-coast",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-girls-shore-aquatics--14u-girls-division-1",
-        "name": "Shore Aquatics",
-        "teamId": null,
-        "clubId": "club-long-beach-shore",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "scores": {
-        "white": 4,
-        "dark": 7,
-        "whiteRaw": "4",
-        "darkRaw": "7",
-        "whiteRegulation": 4,
-        "darkRegulation": 7,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-shore-aquatics--14u-girls-division-1",
-        "winnerTeamId": null,
-        "winnerName": "Shore Aquatics",
-        "loserParticipantId": "tournament-team-2026-14u-girls-south-coast-red--14u-girls-division-1",
-        "loserTeamId": null,
-        "loserName": "South Coast Red"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-12",
       "divisionId": "14u-girls-division-1",
       "divisionLabel": "14U Girls Division 1",
@@ -17578,6 +17526,60 @@
         "loserParticipantId": "tournament-team-2026-14u-girls-shores-gold--14u-girls-division-1",
         "loserTeamId": null,
         "loserName": "Shores Gold"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-3",
+      "divisionId": "14u-girls-division-1",
+      "divisionLabel": "14U Girls Division 1",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "4:30 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "STANDLEY AQUATIC CENTER",
+      "gameNumber": 3,
+      "stage": "D bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-girls-south-coast-red--14u-girls-division-1",
+        "name": "South Coast Red",
+        "teamId": null,
+        "clubId": "club-south-coast",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-girls-shore-aquatics--14u-girls-division-1",
+        "name": "Shore Aquatics",
+        "teamId": null,
+        "clubId": "club-long-beach-shore",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "scores": {
+        "white": 4,
+        "dark": 7,
+        "whiteRaw": "4",
+        "darkRaw": "7",
+        "whiteRegulation": 4,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-shore-aquatics--14u-girls-division-1",
+        "winnerTeamId": null,
+        "winnerName": "Shore Aquatics",
+        "loserParticipantId": "tournament-team-2026-14u-girls-south-coast-red--14u-girls-division-1",
+        "loserTeamId": null,
+        "loserName": "South Coast Red"
       }
     },
     {
@@ -17689,60 +17691,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-4",
-      "divisionId": "10u-boys",
-      "divisionLabel": "10U Boys",
-      "ageGroup": "10U",
-      "gender": "Boys",
-      "division": "Open",
-      "divisionTier": "Open",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "5:15 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "THE BISHOP'S SCHOOL 1",
-      "gameNumber": 4,
-      "stage": "F bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-10u-boys-stanford--10u-boys",
-        "name": "Stanford",
-        "teamId": null,
-        "clubId": "club-stanford",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-10u-boys-lamorinda-gold--10u-boys",
-        "name": "Lamorinda Gold",
-        "teamId": null,
-        "clubId": "club-lamorinda",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "scores": {
-        "white": 18,
-        "dark": 2,
-        "whiteRaw": "18",
-        "darkRaw": "2",
-        "whiteRegulation": 18,
-        "darkRegulation": 2,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-10u-boys-stanford--10u-boys",
-        "winnerTeamId": null,
-        "winnerName": "Stanford",
-        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-gold--10u-boys",
-        "loserTeamId": null,
-        "loserName": "Lamorinda Gold"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-10",
       "divisionId": "10u-boys",
       "divisionLabel": "10U Boys",
@@ -17797,57 +17745,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-4",
-      "divisionId": "12u-boys-division-1",
-      "divisionLabel": "12U Boys Division 1",
-      "ageGroup": "12U",
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-4",
+      "divisionId": "10u-boys",
+      "divisionLabel": "10U Boys",
+      "ageGroup": "10U",
       "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
+      "division": "Open",
+      "divisionTier": "Open",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "5:15 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "LOMA VERDE AQUATIC CENTER 1",
+      "venue": "THE BISHOP'S SCHOOL 1",
       "gameNumber": 4,
-      "stage": "D bracket",
+      "stage": "F bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "team-2026-12u-boys-socal-12u-boys--12u-boys-division-1",
-        "name": "SOCAL",
-        "teamId": "team-2026-12u-boys-socal-12u-boys",
-        "clubId": "club-socal",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "participantId": "tournament-team-2026-10u-boys-stanford--10u-boys",
+        "name": "Stanford",
+        "teamId": null,
+        "clubId": "club-stanford",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
       },
       "dark": {
-        "participantId": "team-2026-12u-boys-la-jolla-united--12u-boys-division-1",
-        "name": "La Jolla United A",
-        "teamId": "team-2026-12u-boys-la-jolla-united",
-        "clubId": "club-la-jolla-united",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "participantId": "tournament-team-2026-10u-boys-lamorinda-gold--10u-boys",
+        "name": "Lamorinda Gold",
+        "teamId": null,
+        "clubId": "club-lamorinda",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
       },
       "scores": {
-        "white": 10,
-        "dark": 3,
-        "whiteRaw": "10",
-        "darkRaw": "3",
-        "whiteRegulation": 10,
-        "darkRegulation": 3,
+        "white": 18,
+        "dark": 2,
+        "whiteRaw": "18",
+        "darkRaw": "2",
+        "whiteRegulation": 18,
+        "darkRegulation": 2,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-socal-12u-boys--12u-boys-division-1",
-        "winnerTeamId": "team-2026-12u-boys-socal-12u-boys",
-        "winnerName": "SOCAL",
-        "loserParticipantId": "team-2026-12u-boys-la-jolla-united--12u-boys-division-1",
-        "loserTeamId": "team-2026-12u-boys-la-jolla-united",
-        "loserName": "La Jolla United A"
+        "winnerParticipantId": "tournament-team-2026-10u-boys-stanford--10u-boys",
+        "winnerTeamId": null,
+        "winnerName": "Stanford",
+        "loserParticipantId": "tournament-team-2026-10u-boys-lamorinda-gold--10u-boys",
+        "loserTeamId": null,
+        "loserName": "Lamorinda Gold"
       }
     },
     {
@@ -17959,57 +17907,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-4",
-      "divisionId": "12u-boys-division-2",
-      "divisionLabel": "12U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-4",
+      "divisionId": "12u-boys-division-1",
+      "divisionLabel": "12U Boys Division 1",
       "ageGroup": "12U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "5:15 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "NED BAUMER 1",
+      "venue": "LOMA VERDE AQUATIC CENTER 1",
       "gameNumber": 4,
-      "stage": "E bracket",
+      "stage": "D bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-12u-boys-foothill--12u-boys-division-2",
-        "name": "Foothill",
-        "teamId": null,
-        "clubId": "club-foothill",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
+        "participantId": "team-2026-12u-boys-socal-12u-boys--12u-boys-division-1",
+        "name": "SOCAL",
+        "teamId": "team-2026-12u-boys-socal-12u-boys",
+        "clubId": "club-socal",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-12u-boys-ngen--12u-boys-division-2",
-        "name": "NGen",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_route_merge"
+        "participantId": "team-2026-12u-boys-la-jolla-united--12u-boys-division-1",
+        "name": "La Jolla United A",
+        "teamId": "team-2026-12u-boys-la-jolla-united",
+        "clubId": "club-la-jolla-united",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "scores": {
         "white": 10,
-        "dark": 12,
+        "dark": 3,
         "whiteRaw": "10",
-        "darkRaw": "12",
+        "darkRaw": "3",
         "whiteRegulation": 10,
-        "darkRegulation": 12,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-ngen--12u-boys-division-2",
-        "winnerTeamId": null,
-        "winnerName": "NGen",
-        "loserParticipantId": "tournament-team-2026-12u-boys-foothill--12u-boys-division-2",
-        "loserTeamId": null,
-        "loserName": "Foothill"
+        "winnerParticipantId": "team-2026-12u-boys-socal-12u-boys--12u-boys-division-1",
+        "winnerTeamId": "team-2026-12u-boys-socal-12u-boys",
+        "winnerName": "SOCAL",
+        "loserParticipantId": "team-2026-12u-boys-la-jolla-united--12u-boys-division-1",
+        "loserTeamId": "team-2026-12u-boys-la-jolla-united",
+        "loserName": "La Jolla United A"
       }
     },
     {
@@ -18121,6 +18069,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-4",
+      "divisionId": "12u-boys-division-2",
+      "divisionLabel": "12U Boys Division 2",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "5:15 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "NED BAUMER 1",
+      "gameNumber": 4,
+      "stage": "E bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-12u-boys-foothill--12u-boys-division-2",
+        "name": "Foothill",
+        "teamId": null,
+        "clubId": "club-foothill",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-12u-boys-ngen--12u-boys-division-2",
+        "name": "NGen",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_route_merge"
+      },
+      "scores": {
+        "white": 10,
+        "dark": 12,
+        "whiteRaw": "10",
+        "darkRaw": "12",
+        "whiteRegulation": 10,
+        "darkRegulation": 12,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-ngen--12u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "NGen",
+        "loserParticipantId": "tournament-team-2026-12u-boys-foothill--12u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "Foothill"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-12u-girls-division-1-sdc-12u-girls-division-1-4",
       "divisionId": "12u-girls-division-1",
       "divisionLabel": "12U Girls Division 1",
@@ -18226,60 +18228,6 @@
         "loserParticipantId": "team-2026-12u-girls-laguna-beach-12u-girls--12u-girls-division-2",
         "loserTeamId": "team-2026-12u-girls-laguna-beach-12u-girls",
         "loserName": "Laguna Beach"
-      }
-    },
-    {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-4",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "5:15 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 1",
-      "gameNumber": 4,
-      "stage": "E bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-1",
-        "name": "Greenwich",
-        "teamId": null,
-        "clubId": "club-greenwich",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-boys-orwp--14u-boys-division-1",
-        "name": "ORWP",
-        "teamId": null,
-        "clubId": "club-orwp",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "scores": {
-        "white": 12,
-        "dark": 9,
-        "whiteRaw": "12",
-        "darkRaw": "9",
-        "whiteRegulation": 12,
-        "darkRegulation": 9,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "Greenwich",
-        "loserParticipantId": "tournament-team-2026-14u-boys-orwp--14u-boys-division-1",
-        "loserTeamId": null,
-        "loserName": "ORWP"
       }
     },
     {
@@ -18391,57 +18339,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-4",
-      "divisionId": "14u-boys-division-2",
-      "divisionLabel": "14U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-4",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
       "ageGroup": "14U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "5:15 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "MESA COLLEGE",
+      "venue": "SOUTHWESTERN COLLEGE 1",
       "gameNumber": 4,
-      "stage": "D bracket",
+      "stage": "E bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-14u-boys-newport-white--14u-boys-division-2",
-        "name": "Newport White",
+        "participantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-1",
+        "name": "Greenwich",
         "teamId": null,
-        "clubId": "club-newport-beach",
+        "clubId": "club-greenwich",
         "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "identityMatchType": "club_alias"
       },
       "dark": {
-        "participantId": "team-2026-14u-boys-titans-a--14u-boys-division-2",
-        "name": "Titans",
-        "teamId": "team-2026-14u-boys-titans-a",
-        "clubId": "club-titans",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "participantId": "tournament-team-2026-14u-boys-orwp--14u-boys-division-1",
+        "name": "ORWP",
+        "teamId": null,
+        "clubId": "club-orwp",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
       },
       "scores": {
-        "white": 21,
-        "dark": 1,
-        "whiteRaw": "21",
-        "darkRaw": "1",
-        "whiteRegulation": 21,
-        "darkRegulation": 1,
+        "white": 12,
+        "dark": 9,
+        "whiteRaw": "12",
+        "darkRaw": "9",
+        "whiteRegulation": 12,
+        "darkRegulation": 9,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-newport-white--14u-boys-division-2",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-1",
         "winnerTeamId": null,
-        "winnerName": "Newport White",
-        "loserParticipantId": "team-2026-14u-boys-titans-a--14u-boys-division-2",
-        "loserTeamId": "team-2026-14u-boys-titans-a",
-        "loserName": "Titans"
+        "winnerName": "Greenwich",
+        "loserParticipantId": "tournament-team-2026-14u-boys-orwp--14u-boys-division-1",
+        "loserTeamId": null,
+        "loserName": "ORWP"
       }
     },
     {
@@ -18607,6 +18555,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-4",
+      "divisionId": "14u-boys-division-2",
+      "divisionLabel": "14U Boys Division 2",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "5:15 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "MESA COLLEGE",
+      "gameNumber": 4,
+      "stage": "D bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-boys-newport-white--14u-boys-division-2",
+        "name": "Newport White",
+        "teamId": null,
+        "clubId": "club-newport-beach",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "team-2026-14u-boys-titans-a--14u-boys-division-2",
+        "name": "Titans",
+        "teamId": "team-2026-14u-boys-titans-a",
+        "clubId": "club-titans",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 21,
+        "dark": 1,
+        "whiteRaw": "21",
+        "darkRaw": "1",
+        "whiteRegulation": 21,
+        "darkRegulation": 1,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-newport-white--14u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "Newport White",
+        "loserParticipantId": "team-2026-14u-boys-titans-a--14u-boys-division-2",
+        "loserTeamId": "team-2026-14u-boys-titans-a",
+        "loserName": "Titans"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-2",
       "divisionId": "14u-boys-division-3",
       "divisionLabel": "14U Boys Division 3",
@@ -18661,60 +18663,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-4",
-      "divisionId": "14u-girls-division-1",
-      "divisionLabel": "14U Girls Division 1",
-      "ageGroup": "14U",
-      "gender": "Girls",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "5:15 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "STANDLEY AQUATIC CENTER",
-      "gameNumber": 4,
-      "stage": "E bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "team-2026-14u-girls-santa-cruz-14u-girls--14u-girls-division-1",
-        "name": "Santa Cruz",
-        "teamId": "team-2026-14u-girls-santa-cruz-14u-girls",
-        "clubId": "club-santa-cruz",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-girls-los-al-garnet--14u-girls-division-1",
-        "name": "Los Al Garnet",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_route_merge"
-      },
-      "scores": {
-        "white": 13,
-        "dark": 3,
-        "whiteRaw": "13",
-        "darkRaw": "3",
-        "whiteRegulation": 13,
-        "darkRegulation": 3,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-girls-santa-cruz-14u-girls--14u-girls-division-1",
-        "winnerTeamId": "team-2026-14u-girls-santa-cruz-14u-girls",
-        "winnerName": "Santa Cruz",
-        "loserParticipantId": "tournament-team-2026-14u-girls-los-al-garnet--14u-girls-division-1",
-        "loserTeamId": null,
-        "loserName": "Los Al Garnet"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-13",
       "divisionId": "14u-girls-division-1",
       "divisionLabel": "14U Girls Division 1",
@@ -18766,6 +18714,60 @@
         "loserParticipantId": "team-2026-14u-girls-davis-14u-girls--14u-girls-division-1",
         "loserTeamId": "team-2026-14u-girls-davis-14u-girls",
         "loserName": "Davis"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-4",
+      "divisionId": "14u-girls-division-1",
+      "divisionLabel": "14U Girls Division 1",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "5:15 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "STANDLEY AQUATIC CENTER",
+      "gameNumber": 4,
+      "stage": "E bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "team-2026-14u-girls-santa-cruz-14u-girls--14u-girls-division-1",
+        "name": "Santa Cruz",
+        "teamId": "team-2026-14u-girls-santa-cruz-14u-girls",
+        "clubId": "club-santa-cruz",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-girls-los-al-garnet--14u-girls-division-1",
+        "name": "Los Al Garnet",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_route_merge"
+      },
+      "scores": {
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-santa-cruz-14u-girls--14u-girls-division-1",
+        "winnerTeamId": "team-2026-14u-girls-santa-cruz-14u-girls",
+        "winnerName": "Santa Cruz",
+        "loserParticipantId": "tournament-team-2026-14u-girls-los-al-garnet--14u-girls-division-1",
+        "loserTeamId": null,
+        "loserName": "Los Al Garnet"
       }
     },
     {
@@ -18877,60 +18879,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-5",
-      "divisionId": "10u-boys",
-      "divisionLabel": "10U Boys",
-      "ageGroup": "10U",
-      "gender": "Boys",
-      "division": "Open",
-      "divisionTier": "Open",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "6:00 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "THE BISHOP'S SCHOOL 1",
-      "gameNumber": 5,
-      "stage": "C bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-10u-boys-yolo-boys--10u-boys",
-        "name": "YOLO Boys",
-        "teamId": null,
-        "clubId": "club-yolo",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-10u-boys-orwp--10u-boys",
-        "name": "ORWP",
-        "teamId": null,
-        "clubId": "club-orwp",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "scores": {
-        "white": 5,
-        "dark": 16,
-        "whiteRaw": "5",
-        "darkRaw": "16",
-        "whiteRegulation": 5,
-        "darkRegulation": 16,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-10u-boys-orwp--10u-boys",
-        "winnerTeamId": null,
-        "winnerName": "ORWP",
-        "loserParticipantId": "tournament-team-2026-10u-boys-yolo-boys--10u-boys",
-        "loserTeamId": null,
-        "loserName": "YOLO Boys"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-11",
       "divisionId": "10u-boys",
       "divisionLabel": "10U Boys",
@@ -18985,57 +18933,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-5",
-      "divisionId": "12u-boys-division-1",
-      "divisionLabel": "12U Boys Division 1",
-      "ageGroup": "12U",
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-5",
+      "divisionId": "10u-boys",
+      "divisionLabel": "10U Boys",
+      "ageGroup": "10U",
       "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
+      "division": "Open",
+      "divisionTier": "Open",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:00 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "LOMA VERDE AQUATIC CENTER 1",
+      "venue": "THE BISHOP'S SCHOOL 1",
       "gameNumber": 5,
-      "stage": "A bracket",
+      "stage": "C bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-12u-boys-mission--12u-boys-division-1",
-        "name": "Mission",
+        "participantId": "tournament-team-2026-10u-boys-yolo-boys--10u-boys",
+        "name": "YOLO Boys",
         "teamId": null,
-        "clubId": "club-mission",
+        "clubId": "club-yolo",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-10u-boys-orwp--10u-boys",
+        "name": "ORWP",
+        "teamId": null,
+        "clubId": "club-orwp",
         "identityStatus": "resolved_club_only",
         "identityMatchType": "club_alias"
       },
-      "dark": {
-        "participantId": "team-2026-12u-boys-yolo-black--12u-boys-division-1",
-        "name": "Yolo",
-        "teamId": "team-2026-12u-boys-yolo-black",
-        "clubId": "club-yolo",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
       "scores": {
-        "white": 12,
-        "dark": 5,
-        "whiteRaw": "12",
-        "darkRaw": "5",
-        "whiteRegulation": 12,
-        "darkRegulation": 5,
+        "white": 5,
+        "dark": 16,
+        "whiteRaw": "5",
+        "darkRaw": "16",
+        "whiteRegulation": 5,
+        "darkRegulation": 16,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-mission--12u-boys-division-1",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-orwp--10u-boys",
         "winnerTeamId": null,
-        "winnerName": "Mission",
-        "loserParticipantId": "team-2026-12u-boys-yolo-black--12u-boys-division-1",
-        "loserTeamId": "team-2026-12u-boys-yolo-black",
-        "loserName": "Yolo"
+        "winnerName": "ORWP",
+        "loserParticipantId": "tournament-team-2026-10u-boys-yolo-boys--10u-boys",
+        "loserTeamId": null,
+        "loserName": "YOLO Boys"
       }
     },
     {
@@ -19147,57 +19095,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-5",
-      "divisionId": "12u-boys-division-2",
-      "divisionLabel": "12U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-5",
+      "divisionId": "12u-boys-division-1",
+      "divisionLabel": "12U Boys Division 1",
       "ageGroup": "12U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:00 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "NED BAUMER 1",
+      "venue": "LOMA VERDE AQUATIC CENTER 1",
       "gameNumber": 5,
-      "stage": "C bracket",
+      "stage": "A bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-12u-boys-san-clemente-black--12u-boys-division-2",
-        "name": "San Clemente Black",
+        "participantId": "tournament-team-2026-12u-boys-mission--12u-boys-division-1",
+        "name": "Mission",
         "teamId": null,
-        "clubId": "club-san-clemente",
+        "clubId": "club-mission",
         "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "identityMatchType": "club_alias"
       },
       "dark": {
-        "participantId": "team-2026-12u-boys-la-jolla-united-b-12u-boys--12u-boys-division-2",
-        "name": "La Jolla United B",
-        "teamId": "team-2026-12u-boys-la-jolla-united-b-12u-boys",
-        "clubId": "club-la-jolla-united",
+        "participantId": "team-2026-12u-boys-yolo-black--12u-boys-division-1",
+        "name": "Yolo",
+        "teamId": "team-2026-12u-boys-yolo-black",
+        "clubId": "club-yolo",
         "identityStatus": "resolved_team",
         "identityMatchType": "scoped_alias"
       },
       "scores": {
-        "white": 14,
-        "dark": 2,
-        "whiteRaw": "14",
-        "darkRaw": "2",
-        "whiteRegulation": 14,
-        "darkRegulation": 2,
+        "white": 12,
+        "dark": 5,
+        "whiteRaw": "12",
+        "darkRaw": "5",
+        "whiteRegulation": 12,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-black--12u-boys-division-2",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-mission--12u-boys-division-1",
         "winnerTeamId": null,
-        "winnerName": "San Clemente Black",
-        "loserParticipantId": "team-2026-12u-boys-la-jolla-united-b-12u-boys--12u-boys-division-2",
-        "loserTeamId": "team-2026-12u-boys-la-jolla-united-b-12u-boys",
-        "loserName": "La Jolla United B"
+        "winnerName": "Mission",
+        "loserParticipantId": "team-2026-12u-boys-yolo-black--12u-boys-division-1",
+        "loserTeamId": "team-2026-12u-boys-yolo-black",
+        "loserName": "Yolo"
       }
     },
     {
@@ -19306,6 +19254,60 @@
         "loserParticipantId": "tournament-team-2026-12u-boys-san-clemente-white--12u-boys-division-2",
         "loserTeamId": null,
         "loserName": "San Clemente White"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-5",
+      "divisionId": "12u-boys-division-2",
+      "divisionLabel": "12U Boys Division 2",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "NED BAUMER 1",
+      "gameNumber": 5,
+      "stage": "C bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-12u-boys-san-clemente-black--12u-boys-division-2",
+        "name": "San Clemente Black",
+        "teamId": null,
+        "clubId": "club-san-clemente",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "team-2026-12u-boys-la-jolla-united-b-12u-boys--12u-boys-division-2",
+        "name": "La Jolla United B",
+        "teamId": "team-2026-12u-boys-la-jolla-united-b-12u-boys",
+        "clubId": "club-la-jolla-united",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 14,
+        "dark": 2,
+        "whiteRaw": "14",
+        "darkRaw": "2",
+        "whiteRegulation": 14,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-clemente-black--12u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Black",
+        "loserParticipantId": "team-2026-12u-boys-la-jolla-united-b-12u-boys--12u-boys-division-2",
+        "loserTeamId": "team-2026-12u-boys-la-jolla-united-b-12u-boys",
+        "loserName": "La Jolla United B"
       }
     },
     {
@@ -19471,60 +19473,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-5",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "6:00 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 1",
-      "gameNumber": 5,
-      "stage": "B bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-boys-newport--14u-boys-division-1",
-        "name": "Newport",
-        "teamId": null,
-        "clubId": "club-newport-beach",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "team-2026-14u-boys-northwest-a--14u-boys-division-1",
-        "name": "Northwest",
-        "teamId": "team-2026-14u-boys-northwest-a",
-        "clubId": "club-northwest",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "scores": {
-        "white": 14,
-        "dark": 2,
-        "whiteRaw": "14",
-        "darkRaw": "2",
-        "whiteRegulation": 14,
-        "darkRegulation": 2,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-newport--14u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "Newport",
-        "loserParticipantId": "team-2026-14u-boys-northwest-a--14u-boys-division-1",
-        "loserTeamId": "team-2026-14u-boys-northwest-a",
-        "loserName": "Northwest"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-13",
       "divisionId": "14u-boys-division-1",
       "divisionLabel": "14U Boys Division 1",
@@ -19633,57 +19581,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-5",
-      "divisionId": "14u-boys-division-2",
-      "divisionLabel": "14U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-5",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
       "ageGroup": "14U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:00 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "MESA COLLEGE",
+      "venue": "SOUTHWESTERN COLLEGE 1",
       "gameNumber": 5,
-      "stage": "A bracket",
+      "stage": "B bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-14u-boys-san-clemente-red--14u-boys-division-2",
-        "name": "San Clemente Red",
+        "participantId": "tournament-team-2026-14u-boys-newport--14u-boys-division-1",
+        "name": "Newport",
         "teamId": null,
-        "clubId": "club-san-clemente",
+        "clubId": "club-newport-beach",
         "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "identityMatchType": "club_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-14u-boys-908-green--14u-boys-division-2",
-        "name": "908 Green",
-        "teamId": null,
-        "clubId": "club-908",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "participantId": "team-2026-14u-boys-northwest-a--14u-boys-division-1",
+        "name": "Northwest",
+        "teamId": "team-2026-14u-boys-northwest-a",
+        "clubId": "club-northwest",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "scores": {
-        "white": 17,
-        "dark": 4,
-        "whiteRaw": "17",
-        "darkRaw": "4",
-        "whiteRegulation": 17,
-        "darkRegulation": 4,
+        "white": 14,
+        "dark": 2,
+        "whiteRaw": "14",
+        "darkRaw": "2",
+        "whiteRegulation": 14,
+        "darkRegulation": 2,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-red--14u-boys-division-2",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-newport--14u-boys-division-1",
         "winnerTeamId": null,
-        "winnerName": "San Clemente Red",
-        "loserParticipantId": "tournament-team-2026-14u-boys-908-green--14u-boys-division-2",
-        "loserTeamId": null,
-        "loserName": "908 Green"
+        "winnerName": "Newport",
+        "loserParticipantId": "team-2026-14u-boys-northwest-a--14u-boys-division-1",
+        "loserTeamId": "team-2026-14u-boys-northwest-a",
+        "loserName": "Northwest"
       }
     },
     {
@@ -19795,6 +19743,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-5",
+      "divisionId": "14u-boys-division-2",
+      "divisionLabel": "14U Boys Division 2",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "MESA COLLEGE",
+      "gameNumber": 5,
+      "stage": "A bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-boys-san-clemente-red--14u-boys-division-2",
+        "name": "San Clemente Red",
+        "teamId": null,
+        "clubId": "club-san-clemente",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-boys-908-green--14u-boys-division-2",
+        "name": "908 Green",
+        "teamId": null,
+        "clubId": "club-908",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "scores": {
+        "white": 17,
+        "dark": 4,
+        "whiteRaw": "17",
+        "darkRaw": "4",
+        "whiteRegulation": 17,
+        "darkRegulation": 4,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-san-clemente-red--14u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Red",
+        "loserParticipantId": "tournament-team-2026-14u-boys-908-green--14u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "908 Green"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-3",
       "divisionId": "14u-boys-division-3",
       "divisionLabel": "14U Boys Division 3",
@@ -19846,6 +19848,60 @@
         "loserParticipantId": "tournament-team-2026-14u-boys-eca-b--14u-boys-division-3",
         "loserTeamId": null,
         "loserName": "ECA B"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-14",
+      "divisionId": "14u-girls-division-1",
+      "divisionLabel": "14U Girls Division 1",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "6:00 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "COGGAN FAMILY AQUATIC COMPLEX 1",
+      "gameNumber": 14,
+      "stage": "G bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "team-2026-14u-girls-lamorinda-a-14u-girls--14u-girls-division-1",
+        "name": "Lamorinda A",
+        "teamId": "team-2026-14u-girls-lamorinda-a-14u-girls",
+        "clubId": "club-lamorinda",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-girls-del-mar--14u-girls-division-1",
+        "name": "Del Mar",
+        "teamId": null,
+        "clubId": "club-del-mar",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "scores": {
+        "white": 14,
+        "dark": 5,
+        "whiteRaw": "14",
+        "darkRaw": "5",
+        "whiteRegulation": 14,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-girls-lamorinda-a-14u-girls--14u-girls-division-1",
+        "winnerTeamId": "team-2026-14u-girls-lamorinda-a-14u-girls",
+        "winnerName": "Lamorinda A",
+        "loserParticipantId": "tournament-team-2026-14u-girls-del-mar--14u-girls-division-1",
+        "loserTeamId": null,
+        "loserName": "Del Mar"
       }
     },
     {
@@ -19903,57 +19959,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-14",
-      "divisionId": "14u-girls-division-1",
-      "divisionLabel": "14U Girls Division 1",
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-14",
+      "divisionId": "14u-girls-division-2",
+      "divisionLabel": "14U Girls Division 2",
       "ageGroup": "14U",
       "gender": "Girls",
-      "division": "Division 1",
-      "divisionTier": "D1",
+      "division": "Division 2",
+      "divisionTier": "D2",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:00 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "COGGAN FAMILY AQUATIC COMPLEX 1",
+      "venue": "SANTANA HS",
       "gameNumber": 14,
-      "stage": "G bracket",
+      "stage": "E bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "team-2026-14u-girls-lamorinda-a-14u-girls--14u-girls-division-1",
-        "name": "Lamorinda A",
-        "teamId": "team-2026-14u-girls-lamorinda-a-14u-girls",
-        "clubId": "club-lamorinda",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-girls-del-mar--14u-girls-division-1",
-        "name": "Del Mar",
+        "participantId": "tournament-team-2026-14u-girls-clovis--14u-girls-division-2",
+        "name": "Clovis",
         "teamId": null,
-        "clubId": "club-del-mar",
+        "clubId": "club-clovis",
         "identityStatus": "resolved_club_only",
         "identityMatchType": "club_alias"
       },
+      "dark": {
+        "participantId": "team-2026-14u-girls-set-14u-girls--14u-girls-division-2",
+        "name": "SET",
+        "teamId": "team-2026-14u-girls-set-14u-girls",
+        "clubId": "club-set",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
       "scores": {
-        "white": 14,
-        "dark": 5,
-        "whiteRaw": "14",
-        "darkRaw": "5",
-        "whiteRegulation": 14,
-        "darkRegulation": 5,
+        "white": 6,
+        "dark": 10,
+        "whiteRaw": "6",
+        "darkRaw": "10",
+        "whiteRegulation": 6,
+        "darkRegulation": 10,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-girls-lamorinda-a-14u-girls--14u-girls-division-1",
-        "winnerTeamId": "team-2026-14u-girls-lamorinda-a-14u-girls",
-        "winnerName": "Lamorinda A",
-        "loserParticipantId": "tournament-team-2026-14u-girls-del-mar--14u-girls-division-1",
+        "winnerParticipantId": "team-2026-14u-girls-set-14u-girls--14u-girls-division-2",
+        "winnerTeamId": "team-2026-14u-girls-set-14u-girls",
+        "winnerName": "SET",
+        "loserParticipantId": "tournament-team-2026-14u-girls-clovis--14u-girls-division-2",
         "loserTeamId": null,
-        "loserName": "Del Mar"
+        "loserName": "Clovis"
       }
     },
     {
@@ -20065,114 +20121,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-14",
-      "divisionId": "14u-girls-division-2",
-      "divisionLabel": "14U Girls Division 2",
-      "ageGroup": "14U",
-      "gender": "Girls",
-      "division": "Division 2",
-      "divisionTier": "D2",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "6:00 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SANTANA HS",
-      "gameNumber": 14,
-      "stage": "E bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-girls-clovis--14u-girls-division-2",
-        "name": "Clovis",
-        "teamId": null,
-        "clubId": "club-clovis",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "team-2026-14u-girls-set-14u-girls--14u-girls-division-2",
-        "name": "SET",
-        "teamId": "team-2026-14u-girls-set-14u-girls",
-        "clubId": "club-set",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "scores": {
-        "white": 6,
-        "dark": 10,
-        "whiteRaw": "6",
-        "darkRaw": "10",
-        "whiteRegulation": 6,
-        "darkRegulation": 10,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-girls-set-14u-girls--14u-girls-division-2",
-        "winnerTeamId": "team-2026-14u-girls-set-14u-girls",
-        "winnerName": "SET",
-        "loserParticipantId": "tournament-team-2026-14u-girls-clovis--14u-girls-division-2",
-        "loserTeamId": null,
-        "loserName": "Clovis"
-      }
-    },
-    {
-      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-6",
-      "divisionId": "10u-boys",
-      "divisionLabel": "10U Boys",
-      "ageGroup": "10U",
-      "gender": "Boys",
-      "division": "Open",
-      "divisionTier": "Open",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "6:45 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "THE BISHOP'S SCHOOL 1",
-      "gameNumber": 6,
-      "stage": "B bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-10u-boys-socal-black--10u-boys",
-        "name": "SOCAL Black",
-        "teamId": null,
-        "clubId": "club-socal",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-10u-boys-cc-united-b--10u-boys",
-        "name": "CC United B",
-        "teamId": null,
-        "clubId": "club-cc-united",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "scores": {
-        "white": 13,
-        "dark": 4,
-        "whiteRaw": "13",
-        "darkRaw": "4",
-        "whiteRegulation": 13,
-        "darkRegulation": 4,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-10u-boys-socal-black--10u-boys",
-        "winnerTeamId": null,
-        "winnerName": "SOCAL Black",
-        "loserParticipantId": "tournament-team-2026-10u-boys-cc-united-b--10u-boys",
-        "loserTeamId": null,
-        "loserName": "CC United B"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-12",
       "divisionId": "10u-boys",
       "divisionLabel": "10U Boys",
@@ -20227,57 +20175,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-6",
-      "divisionId": "12u-boys-division-1",
-      "divisionLabel": "12U Boys Division 1",
-      "ageGroup": "12U",
+      "id": "game-2026-san-diego-county-cup-10u-boys-sdc-10u-boys-6",
+      "divisionId": "10u-boys",
+      "divisionLabel": "10U Boys",
+      "ageGroup": "10U",
       "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
+      "division": "Open",
+      "divisionTier": "Open",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "LOMA VERDE AQUATIC CENTER 1",
+      "venue": "THE BISHOP'S SCHOOL 1",
       "gameNumber": 6,
       "stage": "B bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "team-2026-12u-boys-nsd-stars--12u-boys-division-1",
-        "name": "Nsd Stars",
-        "teamId": "team-2026-12u-boys-nsd-stars",
-        "clubId": "club-nsd-stars",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "participantId": "tournament-team-2026-10u-boys-socal-black--10u-boys",
+        "name": "SOCAL Black",
+        "teamId": null,
+        "clubId": "club-socal",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-12u-boys-los-al-opal--12u-boys-division-1",
-        "name": "Los Al Opal",
+        "participantId": "tournament-team-2026-10u-boys-cc-united-b--10u-boys",
+        "name": "CC United B",
         "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_route_merge"
+        "clubId": "club-cc-united",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
       },
       "scores": {
-        "white": 6,
-        "dark": 7,
-        "whiteRaw": "6",
-        "darkRaw": "7",
-        "whiteRegulation": 6,
-        "darkRegulation": 7,
+        "white": 13,
+        "dark": 4,
+        "whiteRaw": "13",
+        "darkRaw": "4",
+        "whiteRegulation": 13,
+        "darkRegulation": 4,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-los-al-opal--12u-boys-division-1",
+        "winnerParticipantId": "tournament-team-2026-10u-boys-socal-black--10u-boys",
         "winnerTeamId": null,
-        "winnerName": "Los Al Opal",
-        "loserParticipantId": "team-2026-12u-boys-nsd-stars--12u-boys-division-1",
-        "loserTeamId": "team-2026-12u-boys-nsd-stars",
-        "loserName": "Nsd Stars"
+        "winnerName": "SOCAL Black",
+        "loserParticipantId": "tournament-team-2026-10u-boys-cc-united-b--10u-boys",
+        "loserTeamId": null,
+        "loserName": "CC United B"
       }
     },
     {
@@ -20389,57 +20337,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-6",
-      "divisionId": "12u-boys-division-2",
-      "divisionLabel": "12U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-6",
+      "divisionId": "12u-boys-division-1",
+      "divisionLabel": "12U Boys Division 1",
       "ageGroup": "12U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "NED BAUMER 1",
+      "venue": "LOMA VERDE AQUATIC CENTER 1",
       "gameNumber": 6,
       "stage": "B bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-12u-boys-san-mateo--12u-boys-division-2",
-        "name": "San Mateo",
+        "participantId": "team-2026-12u-boys-nsd-stars--12u-boys-division-1",
+        "name": "Nsd Stars",
+        "teamId": "team-2026-12u-boys-nsd-stars",
+        "clubId": "club-nsd-stars",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-12u-boys-los-al-opal--12u-boys-division-1",
+        "name": "Los Al Opal",
         "teamId": null,
         "clubId": null,
         "identityStatus": "unresolved",
         "identityMatchType": "platform_route_merge"
       },
-      "dark": {
-        "participantId": "team-2026-12u-boys-laguna-beach--12u-boys-division-2",
-        "name": "Laguna Beach",
-        "teamId": "team-2026-12u-boys-laguna-beach",
-        "clubId": "club-laguna-beach",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
       "scores": {
-        "white": 12,
-        "dark": 3,
-        "whiteRaw": "12",
-        "darkRaw": "3",
-        "whiteRegulation": 12,
-        "darkRegulation": 3,
+        "white": 6,
+        "dark": 7,
+        "whiteRaw": "6",
+        "darkRaw": "7",
+        "whiteRegulation": 6,
+        "darkRegulation": 7,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-san-mateo--12u-boys-division-2",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-los-al-opal--12u-boys-division-1",
         "winnerTeamId": null,
-        "winnerName": "San Mateo",
-        "loserParticipantId": "team-2026-12u-boys-laguna-beach--12u-boys-division-2",
-        "loserTeamId": "team-2026-12u-boys-laguna-beach",
-        "loserName": "Laguna Beach"
+        "winnerName": "Los Al Opal",
+        "loserParticipantId": "team-2026-12u-boys-nsd-stars--12u-boys-division-1",
+        "loserTeamId": "team-2026-12u-boys-nsd-stars",
+        "loserName": "Nsd Stars"
       }
     },
     {
@@ -20551,6 +20499,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-6",
+      "divisionId": "12u-boys-division-2",
+      "divisionLabel": "12U Boys Division 2",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "6:45 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "NED BAUMER 1",
+      "gameNumber": 6,
+      "stage": "B bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-12u-boys-san-mateo--12u-boys-division-2",
+        "name": "San Mateo",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_route_merge"
+      },
+      "dark": {
+        "participantId": "team-2026-12u-boys-laguna-beach--12u-boys-division-2",
+        "name": "Laguna Beach",
+        "teamId": "team-2026-12u-boys-laguna-beach",
+        "clubId": "club-laguna-beach",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 12,
+        "dark": 3,
+        "whiteRaw": "12",
+        "darkRaw": "3",
+        "whiteRegulation": 12,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-san-mateo--12u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "San Mateo",
+        "loserParticipantId": "team-2026-12u-boys-laguna-beach--12u-boys-division-2",
+        "loserTeamId": "team-2026-12u-boys-laguna-beach",
+        "loserName": "Laguna Beach"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-12u-girls-division-1-sdc-12u-girls-division-1-6",
       "divisionId": "12u-girls-division-1",
       "divisionLabel": "12U Girls Division 1",
@@ -20602,60 +20604,6 @@
         "loserParticipantId": "tournament-team-2026-12u-girls-lamorinda-blue--12u-girls-division-1",
         "loserTeamId": null,
         "loserName": "Lamorinda Blue"
-      }
-    },
-    {
-      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-4",
-      "divisionId": "12u-girls-division-2",
-      "divisionLabel": "12U Girls Division 2",
-      "ageGroup": "12U",
-      "gender": "Girls",
-      "division": "Division 2",
-      "divisionTier": "D2",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "6:45 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "MEMORIAL POOL",
-      "gameNumber": 4,
-      "stage": "C bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "team-2026-12u-girls-chawp-12u-girls--12u-girls-division-2",
-        "name": "CHAWP",
-        "teamId": "team-2026-12u-girls-chawp-12u-girls",
-        "clubId": "club-chawp",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-12u-girls-ag-polo--12u-girls-division-2",
-        "name": "AG Polo",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_placement"
-      },
-      "scores": {
-        "white": 16,
-        "dark": 11,
-        "whiteRaw": "16",
-        "darkRaw": "11",
-        "whiteRegulation": 16,
-        "darkRegulation": 11,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-girls-chawp-12u-girls--12u-girls-division-2",
-        "winnerTeamId": "team-2026-12u-girls-chawp-12u-girls",
-        "winnerName": "CHAWP",
-        "loserParticipantId": "tournament-team-2026-12u-girls-ag-polo--12u-girls-division-2",
-        "loserTeamId": null,
-        "loserName": "AG Polo"
       }
     },
     {
@@ -20713,57 +20661,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-6",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-2-sdc-12u-girls-division-2-4",
+      "divisionId": "12u-girls-division-2",
+      "divisionLabel": "12U Girls Division 2",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 1",
-      "gameNumber": 6,
-      "stage": "K bracket",
+      "venue": "MEMORIAL POOL",
+      "gameNumber": 4,
+      "stage": "C bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-14u-boys-lamorinda--14u-boys-division-1",
-        "name": "Lamorinda",
-        "teamId": null,
-        "clubId": "club-lamorinda",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
+        "participantId": "team-2026-12u-girls-chawp-12u-girls--12u-girls-division-2",
+        "name": "CHAWP",
+        "teamId": "team-2026-12u-girls-chawp-12u-girls",
+        "clubId": "club-chawp",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-14u-boys-sd-dons-red--14u-boys-division-1",
-        "name": "SD Dons Red",
+        "participantId": "tournament-team-2026-12u-girls-ag-polo--12u-girls-division-2",
+        "name": "AG Polo",
         "teamId": null,
-        "clubId": "club-sd-dons",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_placement"
       },
       "scores": {
-        "white": 7,
-        "dark": 3,
-        "whiteRaw": "7",
-        "darkRaw": "3",
-        "whiteRegulation": 7,
-        "darkRegulation": 3,
+        "white": 16,
+        "dark": 11,
+        "whiteRaw": "16",
+        "darkRaw": "11",
+        "whiteRegulation": 16,
+        "darkRegulation": 11,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-lamorinda--14u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "Lamorinda",
-        "loserParticipantId": "tournament-team-2026-14u-boys-sd-dons-red--14u-boys-division-1",
+        "winnerParticipantId": "team-2026-12u-girls-chawp-12u-girls--12u-girls-division-2",
+        "winnerTeamId": "team-2026-12u-girls-chawp-12u-girls",
+        "winnerName": "CHAWP",
+        "loserParticipantId": "tournament-team-2026-12u-girls-ag-polo--12u-girls-division-2",
         "loserTeamId": null,
-        "loserName": "SD Dons Red"
+        "loserName": "AG Polo"
       }
     },
     {
@@ -20875,57 +20823,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-6",
-      "divisionId": "14u-boys-division-2",
-      "divisionLabel": "14U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-6",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
       "ageGroup": "14U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "MESA COLLEGE",
+      "venue": "SOUTHWESTERN COLLEGE 1",
       "gameNumber": 6,
-      "stage": "B bracket",
+      "stage": "K bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-14u-boys-santa-cruz--14u-boys-division-2",
-        "name": "Santa Cruz",
+        "participantId": "tournament-team-2026-14u-boys-lamorinda--14u-boys-division-1",
+        "name": "Lamorinda",
         "teamId": null,
-        "clubId": "club-santa-cruz",
+        "clubId": "club-lamorinda",
         "identityStatus": "resolved_club_only",
         "identityMatchType": "club_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-2",
-        "name": "Shore Aquatics",
+        "participantId": "tournament-team-2026-14u-boys-sd-dons-red--14u-boys-division-1",
+        "name": "SD Dons Red",
         "teamId": null,
-        "clubId": "club-long-beach-shore",
+        "clubId": "club-sd-dons",
         "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
+        "identityMatchType": "historical_club_alias"
       },
       "scores": {
-        "white": 11,
-        "dark": 5,
-        "whiteRaw": "11",
-        "darkRaw": "5",
-        "whiteRegulation": 11,
-        "darkRegulation": 5,
+        "white": 7,
+        "dark": 3,
+        "whiteRaw": "7",
+        "darkRaw": "3",
+        "whiteRegulation": 7,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-santa-cruz--14u-boys-division-2",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-lamorinda--14u-boys-division-1",
         "winnerTeamId": null,
-        "winnerName": "Santa Cruz",
-        "loserParticipantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-2",
+        "winnerName": "Lamorinda",
+        "loserParticipantId": "tournament-team-2026-14u-boys-sd-dons-red--14u-boys-division-1",
         "loserTeamId": null,
-        "loserName": "Shore Aquatics"
+        "loserName": "SD Dons Red"
       }
     },
     {
@@ -21037,6 +20985,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-6",
+      "divisionId": "14u-boys-division-2",
+      "divisionLabel": "14U Boys Division 2",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "6:45 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "MESA COLLEGE",
+      "gameNumber": 6,
+      "stage": "B bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-boys-santa-cruz--14u-boys-division-2",
+        "name": "Santa Cruz",
+        "teamId": null,
+        "clubId": "club-santa-cruz",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-2",
+        "name": "Shore Aquatics",
+        "teamId": null,
+        "clubId": "club-long-beach-shore",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "scores": {
+        "white": 11,
+        "dark": 5,
+        "whiteRaw": "11",
+        "darkRaw": "5",
+        "whiteRegulation": 11,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-santa-cruz--14u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "Santa Cruz",
+        "loserParticipantId": "tournament-team-2026-14u-boys-shore-aquatics--14u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "Shore Aquatics"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-4",
       "divisionId": "14u-boys-division-3",
       "divisionLabel": "14U Boys Division 3",
@@ -21088,60 +21090,6 @@
         "loserParticipantId": "team-2026-14u-boys-santa-barbara-a--14u-boys-division-3",
         "loserTeamId": "team-2026-14u-boys-santa-barbara-a",
         "loserName": "Santa Barbara"
-      }
-    },
-    {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-6",
-      "divisionId": "14u-girls-division-1",
-      "divisionLabel": "14U Girls Division 1",
-      "ageGroup": "14U",
-      "gender": "Girls",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "6:45 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "STANDLEY AQUATIC CENTER",
-      "gameNumber": 6,
-      "stage": "C bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "team-2026-14u-girls-cdm-14u-girls--14u-girls-division-1",
-        "name": "CDM",
-        "teamId": "team-2026-14u-girls-cdm-14u-girls",
-        "clubId": "club-cdm",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-girls-socal-black--14u-girls-division-1",
-        "name": "Socal Black",
-        "teamId": null,
-        "clubId": "club-socal",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "scores": {
-        "white": 7,
-        "dark": 2,
-        "whiteRaw": "7",
-        "darkRaw": "2",
-        "whiteRegulation": 7,
-        "darkRegulation": 2,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-girls-cdm-14u-girls--14u-girls-division-1",
-        "winnerTeamId": "team-2026-14u-girls-cdm-14u-girls",
-        "winnerName": "CDM",
-        "loserParticipantId": "tournament-team-2026-14u-girls-socal-black--14u-girls-division-1",
-        "loserTeamId": null,
-        "loserName": "Socal Black"
       }
     },
     {
@@ -21199,57 +21147,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-4",
-      "divisionId": "14u-girls-division-2",
-      "divisionLabel": "14U Girls Division 2",
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-6",
+      "divisionId": "14u-girls-division-1",
+      "divisionLabel": "14U Girls Division 1",
       "ageGroup": "14U",
       "gender": "Girls",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "6:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "STEELE CANYON HS",
-      "gameNumber": 4,
-      "stage": "A bracket",
+      "venue": "STANDLEY AQUATIC CENTER",
+      "gameNumber": 6,
+      "stage": "C bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-14u-girls-santa-barbara--14u-girls-division-2",
-        "name": "Santa Barbara",
-        "teamId": null,
-        "clubId": "club-santa-barbara",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "team-2026-14u-girls-big-valley-14u-girls--14u-girls-division-2",
-        "name": "Big Valley",
-        "teamId": "team-2026-14u-girls-big-valley-14u-girls",
-        "clubId": "club-big-valley",
+        "participantId": "team-2026-14u-girls-cdm-14u-girls--14u-girls-division-1",
+        "name": "CDM",
+        "teamId": "team-2026-14u-girls-cdm-14u-girls",
+        "clubId": "club-cdm",
         "identityStatus": "resolved_team",
         "identityMatchType": "scoped_alias"
       },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-girls-socal-black--14u-girls-division-1",
+        "name": "Socal Black",
+        "teamId": null,
+        "clubId": "club-socal",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
       "scores": {
-        "white": 14,
-        "dark": 3,
-        "whiteRaw": "14",
-        "darkRaw": "3",
-        "whiteRegulation": 14,
-        "darkRegulation": 3,
+        "white": 7,
+        "dark": 2,
+        "whiteRaw": "7",
+        "darkRaw": "2",
+        "whiteRegulation": 7,
+        "darkRegulation": 2,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-santa-barbara--14u-girls-division-2",
-        "winnerTeamId": null,
-        "winnerName": "Santa Barbara",
-        "loserParticipantId": "team-2026-14u-girls-big-valley-14u-girls--14u-girls-division-2",
-        "loserTeamId": "team-2026-14u-girls-big-valley-14u-girls",
-        "loserName": "Big Valley"
+        "winnerParticipantId": "team-2026-14u-girls-cdm-14u-girls--14u-girls-division-1",
+        "winnerTeamId": "team-2026-14u-girls-cdm-14u-girls",
+        "winnerName": "CDM",
+        "loserParticipantId": "tournament-team-2026-14u-girls-socal-black--14u-girls-division-1",
+        "loserTeamId": null,
+        "loserName": "Socal Black"
       }
     },
     {
@@ -21361,57 +21309,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-7",
-      "divisionId": "12u-boys-division-1",
-      "divisionLabel": "12U Boys Division 1",
-      "ageGroup": "12U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-4",
+      "divisionId": "14u-girls-division-2",
+      "divisionLabel": "14U Girls Division 2",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
-      "timeLabel": "7:30 PM",
+      "timeLabel": "6:45 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "LOMA VERDE AQUATIC CENTER 1",
-      "gameNumber": 7,
-      "stage": "C bracket",
+      "venue": "STEELE CANYON HS",
+      "gameNumber": 4,
+      "stage": "A bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "team-2026-12u-boys-santa-barbara--12u-boys-division-1",
-        "name": "Santa Barbara A",
-        "teamId": "team-2026-12u-boys-santa-barbara",
+        "participantId": "tournament-team-2026-14u-girls-santa-barbara--14u-girls-division-2",
+        "name": "Santa Barbara",
+        "teamId": null,
         "clubId": "club-santa-barbara",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
       },
       "dark": {
-        "participantId": "team-2026-12u-boys-la-premier--12u-boys-division-1",
-        "name": "LA Premier",
-        "teamId": "team-2026-12u-boys-la-premier",
-        "clubId": "club-la-premier",
+        "participantId": "team-2026-14u-girls-big-valley-14u-girls--14u-girls-division-2",
+        "name": "Big Valley",
+        "teamId": "team-2026-14u-girls-big-valley-14u-girls",
+        "clubId": "club-big-valley",
         "identityStatus": "resolved_team",
         "identityMatchType": "scoped_alias"
       },
       "scores": {
-        "white": 10,
-        "dark": 6,
-        "whiteRaw": "10",
-        "darkRaw": "6",
-        "whiteRegulation": 10,
-        "darkRegulation": 6,
+        "white": 14,
+        "dark": 3,
+        "whiteRaw": "14",
+        "darkRaw": "3",
+        "whiteRegulation": 14,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-santa-barbara--12u-boys-division-1",
-        "winnerTeamId": "team-2026-12u-boys-santa-barbara",
-        "winnerName": "Santa Barbara A",
-        "loserParticipantId": "team-2026-12u-boys-la-premier--12u-boys-division-1",
-        "loserTeamId": "team-2026-12u-boys-la-premier",
-        "loserName": "LA Premier"
+        "winnerParticipantId": "tournament-team-2026-14u-girls-santa-barbara--14u-girls-division-2",
+        "winnerTeamId": null,
+        "winnerName": "Santa Barbara",
+        "loserParticipantId": "team-2026-14u-girls-big-valley-14u-girls--14u-girls-division-2",
+        "loserTeamId": "team-2026-14u-girls-big-valley-14u-girls",
+        "loserName": "Big Valley"
       }
     },
     {
@@ -21523,57 +21471,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-7",
-      "divisionId": "12u-boys-division-2",
-      "divisionLabel": "12U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-7",
+      "divisionId": "12u-boys-division-1",
+      "divisionLabel": "12U Boys Division 1",
       "ageGroup": "12U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "7:30 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "NED BAUMER 1",
+      "venue": "LOMA VERDE AQUATIC CENTER 1",
       "gameNumber": 7,
-      "stage": "A bracket",
+      "stage": "C bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-12u-boys-sd-dons-gold--12u-boys-division-2",
-        "name": "SD Dons Gold",
-        "teamId": null,
-        "clubId": "club-sd-dons",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "participantId": "team-2026-12u-boys-santa-barbara--12u-boys-division-1",
+        "name": "Santa Barbara A",
+        "teamId": "team-2026-12u-boys-santa-barbara",
+        "clubId": "club-santa-barbara",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-12u-boys-yolo-yellow--12u-boys-division-2",
-        "name": "YOLO Yellow",
-        "teamId": null,
-        "clubId": "club-yolo",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "participantId": "team-2026-12u-boys-la-premier--12u-boys-division-1",
+        "name": "LA Premier",
+        "teamId": "team-2026-12u-boys-la-premier",
+        "clubId": "club-la-premier",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "scores": {
-        "white": 7,
-        "dark": 5,
-        "whiteRaw": "7",
-        "darkRaw": "5",
-        "whiteRegulation": 7,
-        "darkRegulation": 5,
+        "white": 10,
+        "dark": 6,
+        "whiteRaw": "10",
+        "darkRaw": "6",
+        "whiteRegulation": 10,
+        "darkRegulation": 6,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-sd-dons-gold--12u-boys-division-2",
-        "winnerTeamId": null,
-        "winnerName": "SD Dons Gold",
-        "loserParticipantId": "tournament-team-2026-12u-boys-yolo-yellow--12u-boys-division-2",
-        "loserTeamId": null,
-        "loserName": "YOLO Yellow"
+        "winnerParticipantId": "team-2026-12u-boys-santa-barbara--12u-boys-division-1",
+        "winnerTeamId": "team-2026-12u-boys-santa-barbara",
+        "winnerName": "Santa Barbara A",
+        "loserParticipantId": "team-2026-12u-boys-la-premier--12u-boys-division-1",
+        "loserTeamId": "team-2026-12u-boys-la-premier",
+        "loserName": "LA Premier"
       }
     },
     {
@@ -21685,6 +21633,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-7",
+      "divisionId": "12u-boys-division-2",
+      "divisionLabel": "12U Boys Division 2",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "7:30 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "NED BAUMER 1",
+      "gameNumber": 7,
+      "stage": "A bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-12u-boys-sd-dons-gold--12u-boys-division-2",
+        "name": "SD Dons Gold",
+        "teamId": null,
+        "clubId": "club-sd-dons",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-12u-boys-yolo-yellow--12u-boys-division-2",
+        "name": "YOLO Yellow",
+        "teamId": null,
+        "clubId": "club-yolo",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "scores": {
+        "white": 7,
+        "dark": 5,
+        "whiteRaw": "7",
+        "darkRaw": "5",
+        "whiteRegulation": 7,
+        "darkRegulation": 5,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-sd-dons-gold--12u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Gold",
+        "loserParticipantId": "tournament-team-2026-12u-boys-yolo-yellow--12u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "YOLO Yellow"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-12u-girls-division-1-sdc-12u-girls-division-1-7",
       "divisionId": "12u-girls-division-1",
       "divisionLabel": "12U Girls Division 1",
@@ -21790,60 +21792,6 @@
         "loserParticipantId": "tournament-team-2026-12u-girls-cc-united--12u-girls-division-2",
         "loserTeamId": null,
         "loserName": "CC United"
-      }
-    },
-    {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-7",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "7:30 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 1",
-      "gameNumber": 7,
-      "stage": "G bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-boys-norcal--14u-boys-division-1",
-        "name": "Norcal",
-        "teamId": null,
-        "clubId": "club-norcal",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-boys-los-al-opal--14u-boys-division-1",
-        "name": "Los Al Opal",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_route_merge"
-      },
-      "scores": {
-        "white": 12,
-        "dark": 2,
-        "whiteRaw": "12",
-        "darkRaw": "2",
-        "whiteRegulation": 12,
-        "darkRegulation": 2,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal--14u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "Norcal",
-        "loserParticipantId": "tournament-team-2026-14u-boys-los-al-opal--14u-boys-division-1",
-        "loserTeamId": null,
-        "loserName": "Los Al Opal"
       }
     },
     {
@@ -21955,57 +21903,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-7",
-      "divisionId": "14u-boys-division-2",
-      "divisionLabel": "14U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-7",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
       "ageGroup": "14U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "7:30 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "MESA COLLEGE",
+      "venue": "SOUTHWESTERN COLLEGE 1",
       "gameNumber": 7,
-      "stage": "C bracket",
+      "stage": "G bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-14u-boys-south-coast-white--14u-boys-division-2",
-        "name": "South Coast White",
+        "participantId": "tournament-team-2026-14u-boys-norcal--14u-boys-division-1",
+        "name": "Norcal",
         "teamId": null,
-        "clubId": "club-south-coast",
+        "clubId": "club-norcal",
         "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "identityMatchType": "club_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-14u-boys-sd-dons-gold--14u-boys-division-2",
-        "name": "SD Dons Gold",
+        "participantId": "tournament-team-2026-14u-boys-los-al-opal--14u-boys-division-1",
+        "name": "Los Al Opal",
         "teamId": null,
-        "clubId": "club-sd-dons",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_route_merge"
       },
       "scores": {
-        "white": 5,
-        "dark": 14,
-        "whiteRaw": "5",
-        "darkRaw": "14",
-        "whiteRegulation": 5,
-        "darkRegulation": 14,
+        "white": 12,
+        "dark": 2,
+        "whiteRaw": "12",
+        "darkRaw": "2",
+        "whiteRegulation": 12,
+        "darkRegulation": 2,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-sd-dons-gold--14u-boys-division-2",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-norcal--14u-boys-division-1",
         "winnerTeamId": null,
-        "winnerName": "SD Dons Gold",
-        "loserParticipantId": "tournament-team-2026-14u-boys-south-coast-white--14u-boys-division-2",
+        "winnerName": "Norcal",
+        "loserParticipantId": "tournament-team-2026-14u-boys-los-al-opal--14u-boys-division-1",
         "loserTeamId": null,
-        "loserName": "South Coast White"
+        "loserName": "Los Al Opal"
       }
     },
     {
@@ -22117,6 +22065,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-7",
+      "divisionId": "14u-boys-division-2",
+      "divisionLabel": "14U Boys Division 2",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "7:30 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "MESA COLLEGE",
+      "gameNumber": 7,
+      "stage": "C bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-boys-south-coast-white--14u-boys-division-2",
+        "name": "South Coast White",
+        "teamId": null,
+        "clubId": "club-south-coast",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-boys-sd-dons-gold--14u-boys-division-2",
+        "name": "SD Dons Gold",
+        "teamId": null,
+        "clubId": "club-sd-dons",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "scores": {
+        "white": 5,
+        "dark": 14,
+        "whiteRaw": "5",
+        "darkRaw": "14",
+        "whiteRegulation": 5,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-boys-sd-dons-gold--14u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "SD Dons Gold",
+        "loserParticipantId": "tournament-team-2026-14u-boys-south-coast-white--14u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "South Coast White"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-3-sdc-14u-boys-division-3-6",
       "divisionId": "14u-boys-division-3",
       "divisionLabel": "14U Boys Division 3",
@@ -22225,60 +22227,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-7",
-      "divisionId": "14u-girls-division-1",
-      "divisionLabel": "14U Girls Division 1",
-      "ageGroup": "14U",
-      "gender": "Girls",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "7:30 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "STANDLEY AQUATIC CENTER",
-      "gameNumber": 7,
-      "stage": "D bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-girls-san-clemente-red--14u-girls-division-1",
-        "name": "San Clemente Red",
-        "teamId": null,
-        "clubId": "club-san-clemente",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-girls-shore-aquatics--14u-girls-division-1",
-        "name": "Shore Aquatics",
-        "teamId": null,
-        "clubId": "club-long-beach-shore",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "scores": {
-        "white": 8,
-        "dark": 4,
-        "whiteRaw": "8",
-        "darkRaw": "4",
-        "whiteRegulation": 8,
-        "darkRegulation": 4,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-san-clemente-red--14u-girls-division-1",
-        "winnerTeamId": null,
-        "winnerName": "San Clemente Red",
-        "loserParticipantId": "tournament-team-2026-14u-girls-shore-aquatics--14u-girls-division-1",
-        "loserTeamId": null,
-        "loserName": "Shore Aquatics"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-16",
       "divisionId": "14u-girls-division-1",
       "divisionLabel": "14U Girls Division 1",
@@ -22333,57 +22281,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-5",
-      "divisionId": "14u-girls-division-2",
-      "divisionLabel": "14U Girls Division 2",
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-1-sdc-14u-girls-division-1-7",
+      "divisionId": "14u-girls-division-1",
+      "divisionLabel": "14U Girls Division 1",
       "ageGroup": "14U",
       "gender": "Girls",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "7:30 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "STEELE CANYON HS",
-      "gameNumber": 5,
-      "stage": "B bracket",
+      "venue": "STANDLEY AQUATIC CENTER",
+      "gameNumber": 7,
+      "stage": "D bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "team-2026-14u-girls-rogue-619-14u-girls--14u-girls-division-2",
-        "name": "Rogue 619",
-        "teamId": "team-2026-14u-girls-rogue-619-14u-girls",
-        "clubId": "club-rogue-619",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "participantId": "tournament-team-2026-14u-girls-san-clemente-red--14u-girls-division-1",
+        "name": "San Clemente Red",
+        "teamId": null,
+        "clubId": "club-san-clemente",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-14u-girls-ccwp--14u-girls-division-2",
-        "name": "CCWP",
+        "participantId": "tournament-team-2026-14u-girls-shore-aquatics--14u-girls-division-1",
+        "name": "Shore Aquatics",
         "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_placement"
+        "clubId": "club-long-beach-shore",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
       },
       "scores": {
-        "white": 13,
-        "dark": 3,
-        "whiteRaw": "13",
-        "darkRaw": "3",
-        "whiteRegulation": 13,
-        "darkRegulation": 3,
+        "white": 8,
+        "dark": 4,
+        "whiteRaw": "8",
+        "darkRaw": "4",
+        "whiteRegulation": 8,
+        "darkRegulation": 4,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-girls-rogue-619-14u-girls--14u-girls-division-2",
-        "winnerTeamId": "team-2026-14u-girls-rogue-619-14u-girls",
-        "winnerName": "Rogue 619",
-        "loserParticipantId": "tournament-team-2026-14u-girls-ccwp--14u-girls-division-2",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-san-clemente-red--14u-girls-division-1",
+        "winnerTeamId": null,
+        "winnerName": "San Clemente Red",
+        "loserParticipantId": "tournament-team-2026-14u-girls-shore-aquatics--14u-girls-division-1",
         "loserTeamId": null,
-        "loserName": "CCWP"
+        "loserName": "Shore Aquatics"
       }
     },
     {
@@ -22495,57 +22443,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-8",
-      "divisionId": "12u-boys-division-1",
-      "divisionLabel": "12U Boys Division 1",
-      "ageGroup": "12U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-5",
+      "divisionId": "14u-girls-division-2",
+      "divisionLabel": "14U Girls Division 2",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
-      "timeLabel": "8:15 PM",
+      "timeLabel": "7:30 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "LOMA VERDE AQUATIC CENTER 1",
-      "gameNumber": 8,
-      "stage": "D bracket",
+      "venue": "STEELE CANYON HS",
+      "gameNumber": 5,
+      "stage": "B bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "team-2026-12u-boys-la-jolla-united--12u-boys-division-1",
-        "name": "La Jolla United A",
-        "teamId": "team-2026-12u-boys-la-jolla-united",
-        "clubId": "club-la-jolla-united",
+        "participantId": "team-2026-14u-girls-rogue-619-14u-girls--14u-girls-division-2",
+        "name": "Rogue 619",
+        "teamId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "clubId": "club-rogue-619",
         "identityStatus": "resolved_team",
         "identityMatchType": "scoped_alias"
       },
       "dark": {
-        "participantId": "team-2026-12u-boys-cc-united-blue--12u-boys-division-1",
-        "name": "CC United B",
-        "teamId": "team-2026-12u-boys-cc-united-blue",
-        "clubId": "club-cc-united",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "participantId": "tournament-team-2026-14u-girls-ccwp--14u-girls-division-2",
+        "name": "CCWP",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_placement"
       },
       "scores": {
-        "white": 12,
-        "dark": 4,
-        "whiteRaw": "12",
-        "darkRaw": "4",
-        "whiteRegulation": 12,
-        "darkRegulation": 4,
+        "white": 13,
+        "dark": 3,
+        "whiteRaw": "13",
+        "darkRaw": "3",
+        "whiteRegulation": 13,
+        "darkRegulation": 3,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-12u-boys-la-jolla-united--12u-boys-division-1",
-        "winnerTeamId": "team-2026-12u-boys-la-jolla-united",
-        "winnerName": "La Jolla United A",
-        "loserParticipantId": "team-2026-12u-boys-cc-united-blue--12u-boys-division-1",
-        "loserTeamId": "team-2026-12u-boys-cc-united-blue",
-        "loserName": "CC United B"
+        "winnerParticipantId": "team-2026-14u-girls-rogue-619-14u-girls--14u-girls-division-2",
+        "winnerTeamId": "team-2026-14u-girls-rogue-619-14u-girls",
+        "winnerName": "Rogue 619",
+        "loserParticipantId": "tournament-team-2026-14u-girls-ccwp--14u-girls-division-2",
+        "loserTeamId": null,
+        "loserName": "CCWP"
       }
     },
     {
@@ -22657,57 +22605,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-8",
-      "divisionId": "12u-boys-division-2",
-      "divisionLabel": "12U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-1-sdc-12u-boys-division-1-8",
+      "divisionId": "12u-boys-division-1",
+      "divisionLabel": "12U Boys Division 1",
       "ageGroup": "12U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "8:15 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "NED BAUMER 1",
+      "venue": "LOMA VERDE AQUATIC CENTER 1",
       "gameNumber": 8,
-      "stage": "E bracket",
+      "stage": "D bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "tournament-team-2026-12u-boys-sharks--12u-boys-division-2",
-        "name": "Sharks",
-        "teamId": null,
-        "clubId": "club-sharks",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
+        "participantId": "team-2026-12u-boys-la-jolla-united--12u-boys-division-1",
+        "name": "La Jolla United A",
+        "teamId": "team-2026-12u-boys-la-jolla-united",
+        "clubId": "club-la-jolla-united",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "dark": {
-        "participantId": "tournament-team-2026-12u-boys-ngen--12u-boys-division-2",
-        "name": "NGen",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_route_merge"
+        "participantId": "team-2026-12u-boys-cc-united-blue--12u-boys-division-1",
+        "name": "CC United B",
+        "teamId": "team-2026-12u-boys-cc-united-blue",
+        "clubId": "club-cc-united",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
       },
       "scores": {
-        "white": 15,
-        "dark": 7,
-        "whiteRaw": "15",
-        "darkRaw": "7",
-        "whiteRegulation": 15,
-        "darkRegulation": 7,
+        "white": 12,
+        "dark": 4,
+        "whiteRaw": "12",
+        "darkRaw": "4",
+        "whiteRegulation": 12,
+        "darkRegulation": 4,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-boys-sharks--12u-boys-division-2",
-        "winnerTeamId": null,
-        "winnerName": "Sharks",
-        "loserParticipantId": "tournament-team-2026-12u-boys-ngen--12u-boys-division-2",
-        "loserTeamId": null,
-        "loserName": "NGen"
+        "winnerParticipantId": "team-2026-12u-boys-la-jolla-united--12u-boys-division-1",
+        "winnerTeamId": "team-2026-12u-boys-la-jolla-united",
+        "winnerName": "La Jolla United A",
+        "loserParticipantId": "team-2026-12u-boys-cc-united-blue--12u-boys-division-1",
+        "loserTeamId": "team-2026-12u-boys-cc-united-blue",
+        "loserName": "CC United B"
       }
     },
     {
@@ -22819,6 +22767,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-12u-boys-division-2-sdc-12u-boys-division-2-8",
+      "divisionId": "12u-boys-division-2",
+      "divisionLabel": "12U Boys Division 2",
+      "ageGroup": "12U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "8:15 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "NED BAUMER 1",
+      "gameNumber": 8,
+      "stage": "E bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-12u-boys-sharks--12u-boys-division-2",
+        "name": "Sharks",
+        "teamId": null,
+        "clubId": "club-sharks",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-12u-boys-ngen--12u-boys-division-2",
+        "name": "NGen",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_route_merge"
+      },
+      "scores": {
+        "white": 15,
+        "dark": 7,
+        "whiteRaw": "15",
+        "darkRaw": "7",
+        "whiteRegulation": 15,
+        "darkRegulation": 7,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-boys-sharks--12u-boys-division-2",
+        "winnerTeamId": null,
+        "winnerName": "Sharks",
+        "loserParticipantId": "tournament-team-2026-12u-boys-ngen--12u-boys-division-2",
+        "loserTeamId": null,
+        "loserName": "NGen"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-12u-girls-division-1-sdc-12u-girls-division-1-8",
       "divisionId": "12u-girls-division-1",
       "divisionLabel": "12U Girls Division 1",
@@ -22924,60 +22926,6 @@
         "loserParticipantId": "team-2026-12u-girls-laguna-beach-12u-girls--12u-girls-division-2",
         "loserTeamId": "team-2026-12u-girls-laguna-beach-12u-girls",
         "loserName": "Laguna Beach"
-      }
-    },
-    {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-8",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "8:15 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 1",
-      "gameNumber": 8,
-      "stage": "E bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-1",
-        "name": "Greenwich",
-        "teamId": null,
-        "clubId": "club-greenwich",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "team-2026-14u-boys-sharks-a--14u-boys-division-1",
-        "name": "Sharks",
-        "teamId": "team-2026-14u-boys-sharks-a",
-        "clubId": "club-sharks",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "scores": {
-        "white": 10,
-        "dark": 5,
-        "whiteRaw": "10",
-        "darkRaw": "5",
-        "whiteRegulation": 10,
-        "darkRegulation": 5,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-1",
-        "winnerTeamId": null,
-        "winnerName": "Greenwich",
-        "loserParticipantId": "team-2026-14u-boys-sharks-a--14u-boys-division-1",
-        "loserTeamId": "team-2026-14u-boys-sharks-a",
-        "loserName": "Sharks"
       }
     },
     {
@@ -23089,57 +23037,57 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-8",
-      "divisionId": "14u-boys-division-2",
-      "divisionLabel": "14U Boys Division 2",
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-8",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
       "ageGroup": "14U",
       "gender": "Boys",
-      "division": "Division 2",
-      "divisionTier": "D2",
+      "division": "Division 1",
+      "divisionTier": "D1",
       "dateIso": "2026-05-01",
       "dateLabel": "01-May-2026",
       "timeLabel": "8:15 PM",
       "timezone": "America/Los_Angeles",
-      "venue": "MESA COLLEGE",
+      "venue": "SOUTHWESTERN COLLEGE 1",
       "gameNumber": 8,
-      "stage": "D bracket",
+      "stage": "E bracket",
       "status": "final",
       "scoreState": "complete",
       "white": {
-        "participantId": "team-2026-14u-boys-puget-sound-14u-boys--14u-boys-division-2",
-        "name": "Puget Sound",
-        "teamId": "team-2026-14u-boys-puget-sound-14u-boys",
-        "clubId": "club-puget-sound",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
+        "participantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-1",
+        "name": "Greenwich",
+        "teamId": null,
+        "clubId": "club-greenwich",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
       },
       "dark": {
-        "participantId": "team-2026-14u-boys-titans-a--14u-boys-division-2",
-        "name": "Titans",
-        "teamId": "team-2026-14u-boys-titans-a",
-        "clubId": "club-titans",
+        "participantId": "team-2026-14u-boys-sharks-a--14u-boys-division-1",
+        "name": "Sharks",
+        "teamId": "team-2026-14u-boys-sharks-a",
+        "clubId": "club-sharks",
         "identityStatus": "resolved_team",
         "identityMatchType": "scoped_alias"
       },
       "scores": {
-        "white": 19,
-        "dark": 3,
-        "whiteRaw": "19",
-        "darkRaw": "3",
-        "whiteRegulation": 19,
-        "darkRegulation": 3,
+        "white": 10,
+        "dark": 5,
+        "whiteRaw": "10",
+        "darkRaw": "5",
+        "whiteRegulation": 10,
+        "darkRegulation": 5,
         "whiteShootout": null,
         "darkShootout": null
       },
       "shootout": null,
       "outcome": {
         "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-boys-puget-sound-14u-boys--14u-boys-division-2",
-        "winnerTeamId": "team-2026-14u-boys-puget-sound-14u-boys",
-        "winnerName": "Puget Sound",
-        "loserParticipantId": "team-2026-14u-boys-titans-a--14u-boys-division-2",
-        "loserTeamId": "team-2026-14u-boys-titans-a",
-        "loserName": "Titans"
+        "winnerParticipantId": "tournament-team-2026-14u-boys-greenwich--14u-boys-division-1",
+        "winnerTeamId": null,
+        "winnerName": "Greenwich",
+        "loserParticipantId": "team-2026-14u-boys-sharks-a--14u-boys-division-1",
+        "loserTeamId": "team-2026-14u-boys-sharks-a",
+        "loserName": "Sharks"
       }
     },
     {
@@ -23248,6 +23196,60 @@
         "loserParticipantId": "tournament-team-2026-14u-boys-sd-dons-d--14u-boys-division-2",
         "loserTeamId": null,
         "loserName": "SD Dons D"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-2-sdc-14u-boys-division-2-8",
+      "divisionId": "14u-boys-division-2",
+      "divisionLabel": "14U Boys Division 2",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "8:15 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "MESA COLLEGE",
+      "gameNumber": 8,
+      "stage": "D bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "team-2026-14u-boys-puget-sound-14u-boys--14u-boys-division-2",
+        "name": "Puget Sound",
+        "teamId": "team-2026-14u-boys-puget-sound-14u-boys",
+        "clubId": "club-puget-sound",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "dark": {
+        "participantId": "team-2026-14u-boys-titans-a--14u-boys-division-2",
+        "name": "Titans",
+        "teamId": "team-2026-14u-boys-titans-a",
+        "clubId": "club-titans",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 19,
+        "dark": 3,
+        "whiteRaw": "19",
+        "darkRaw": "3",
+        "whiteRegulation": 19,
+        "darkRegulation": 3,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-puget-sound-14u-boys--14u-boys-division-2",
+        "winnerTeamId": "team-2026-14u-boys-puget-sound-14u-boys",
+        "winnerName": "Puget Sound",
+        "loserParticipantId": "team-2026-14u-boys-titans-a--14u-boys-division-2",
+        "loserTeamId": "team-2026-14u-boys-titans-a",
+        "loserName": "Titans"
       }
     },
     {
@@ -23467,60 +23469,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-6",
-      "divisionId": "14u-girls-division-2",
-      "divisionLabel": "14U Girls Division 2",
-      "ageGroup": "14U",
-      "gender": "Girls",
-      "division": "Division 2",
-      "divisionTier": "D2",
-      "dateIso": "2026-05-01",
-      "dateLabel": "01-May-2026",
-      "timeLabel": "8:15 PM",
-      "timezone": "America/Los_Angeles",
-      "venue": "STEELE CANYON HS",
-      "gameNumber": 6,
-      "stage": "C bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-girls-patriots-red--14u-girls-division-2",
-        "name": "Patriots Red",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_placement"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-14u-girls-trilogy--14u-girls-division-2",
-        "name": "Trilogy",
-        "teamId": null,
-        "clubId": "club-trilogy",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "scores": {
-        "white": 16,
-        "dark": 2,
-        "whiteRaw": "16",
-        "darkRaw": "2",
-        "whiteRegulation": 16,
-        "darkRegulation": 2,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-14u-girls-patriots-red--14u-girls-division-2",
-        "winnerTeamId": null,
-        "winnerName": "Patriots Red",
-        "loserParticipantId": "tournament-team-2026-14u-girls-trilogy--14u-girls-division-2",
-        "loserTeamId": null,
-        "loserName": "Trilogy"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-12",
       "divisionId": "14u-girls-division-2",
       "divisionLabel": "14U Girls Division 2",
@@ -23626,6 +23574,60 @@
         "winnerName": null,
         "loserParticipantId": null,
         "loserName": null
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-14u-girls-division-2-sdc-14u-girls-division-2-6",
+      "divisionId": "14u-girls-division-2",
+      "divisionLabel": "14U Girls Division 2",
+      "ageGroup": "14U",
+      "gender": "Girls",
+      "division": "Division 2",
+      "divisionTier": "D2",
+      "dateIso": "2026-05-01",
+      "dateLabel": "01-May-2026",
+      "timeLabel": "8:15 PM",
+      "timezone": "America/Los_Angeles",
+      "venue": "STEELE CANYON HS",
+      "gameNumber": 6,
+      "stage": "C bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-girls-patriots-red--14u-girls-division-2",
+        "name": "Patriots Red",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_placement"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-14u-girls-trilogy--14u-girls-division-2",
+        "name": "Trilogy",
+        "teamId": null,
+        "clubId": "club-trilogy",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "scores": {
+        "white": 16,
+        "dark": 2,
+        "whiteRaw": "16",
+        "darkRaw": "2",
+        "whiteRegulation": 16,
+        "darkRegulation": 2,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-14u-girls-patriots-red--14u-girls-division-2",
+        "winnerTeamId": null,
+        "winnerName": "Patriots Red",
+        "loserParticipantId": "tournament-team-2026-14u-girls-trilogy--14u-girls-division-2",
+        "loserTeamId": null,
+        "loserName": "Trilogy"
       }
     },
     {
@@ -39073,60 +39075,6 @@
       }
     },
     {
-      "id": "game-2026-san-diego-county-cup-12u-girls-division-1-sdc-12u-girls-division-1-9",
-      "divisionId": "12u-girls-division-1",
-      "divisionLabel": "12U Girls Division 1",
-      "ageGroup": "12U",
-      "gender": "Girls",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-02",
-      "dateLabel": "02-May-2026",
-      "timeLabel": "8:00 AM",
-      "timezone": "America/Los_Angeles",
-      "venue": "KROC CENTER",
-      "gameNumber": 9,
-      "stage": "C bracket",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-12u-girls-los-al-opal--12u-girls-division-1",
-        "name": "Los Al Opal",
-        "teamId": null,
-        "clubId": null,
-        "identityStatus": "unresolved",
-        "identityMatchType": "platform_route_merge"
-      },
-      "dark": {
-        "participantId": "tournament-team-2026-12u-girls-680-wpc--12u-girls-division-1",
-        "name": "680 WPC",
-        "teamId": null,
-        "clubId": "club-680",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "historical_club_alias"
-      },
-      "scores": {
-        "white": 4,
-        "dark": 14,
-        "whiteRaw": "4",
-        "darkRaw": "14",
-        "whiteRegulation": 4,
-        "darkRegulation": 14,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "tournament-team-2026-12u-girls-680-wpc--12u-girls-division-1",
-        "winnerTeamId": null,
-        "winnerName": "680 WPC",
-        "loserParticipantId": "tournament-team-2026-12u-girls-los-al-opal--12u-girls-division-1",
-        "loserTeamId": null,
-        "loserName": "Los Al Opal"
-      }
-    },
-    {
       "id": "game-2026-san-diego-county-cup-12u-girls-division-1-sdc-12u-girls-division-1-24",
       "divisionId": "12u-girls-division-1",
       "divisionLabel": "12U Girls Division 1",
@@ -39178,6 +39126,60 @@
         "loserParticipantId": "tournament-team-2026-12u-girls-lamorinda-blue--12u-girls-division-1",
         "loserTeamId": null,
         "loserName": "Lamorinda Blue"
+      }
+    },
+    {
+      "id": "game-2026-san-diego-county-cup-12u-girls-division-1-sdc-12u-girls-division-1-9",
+      "divisionId": "12u-girls-division-1",
+      "divisionLabel": "12U Girls Division 1",
+      "ageGroup": "12U",
+      "gender": "Girls",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-02",
+      "dateLabel": "02-May-2026",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "venue": "KROC CENTER",
+      "gameNumber": 9,
+      "stage": "C bracket",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-12u-girls-los-al-opal--12u-girls-division-1",
+        "name": "Los Al Opal",
+        "teamId": null,
+        "clubId": null,
+        "identityStatus": "unresolved",
+        "identityMatchType": "platform_route_merge"
+      },
+      "dark": {
+        "participantId": "tournament-team-2026-12u-girls-680-wpc--12u-girls-division-1",
+        "name": "680 WPC",
+        "teamId": null,
+        "clubId": "club-680",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "historical_club_alias"
+      },
+      "scores": {
+        "white": 4,
+        "dark": 14,
+        "whiteRaw": "4",
+        "darkRaw": "14",
+        "whiteRegulation": 4,
+        "darkRegulation": 14,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "tournament-team-2026-12u-girls-680-wpc--12u-girls-division-1",
+        "winnerTeamId": null,
+        "winnerName": "680 WPC",
+        "loserParticipantId": "tournament-team-2026-12u-girls-los-al-opal--12u-girls-division-1",
+        "loserTeamId": null,
+        "loserName": "Los Al Opal"
       }
     },
     {
@@ -43231,6 +43233,60 @@
       }
     },
     {
+      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-100",
+      "divisionId": "14u-boys-division-1",
+      "divisionLabel": "14U Boys Division 1",
+      "ageGroup": "14U",
+      "gender": "Boys",
+      "division": "Division 1",
+      "divisionTier": "D1",
+      "dateIso": "2026-05-03",
+      "dateLabel": "03-May-2026",
+      "timeLabel": "10:15 AM",
+      "timezone": "America/Los_Angeles",
+      "venue": "SOUTHWESTERN COLLEGE 2",
+      "gameNumber": 100,
+      "stage": "Semifinal",
+      "status": "final",
+      "scoreState": "complete",
+      "white": {
+        "participantId": "tournament-team-2026-14u-boys-norcal--14u-boys-division-1",
+        "name": "Norcal",
+        "teamId": null,
+        "clubId": "club-norcal",
+        "identityStatus": "resolved_club_only",
+        "identityMatchType": "club_alias"
+      },
+      "dark": {
+        "participantId": "team-2026-14u-boys-la-premier-a--14u-boys-division-1",
+        "name": "LA Premier",
+        "teamId": "team-2026-14u-boys-la-premier-a",
+        "clubId": "club-la-premier",
+        "identityStatus": "resolved_team",
+        "identityMatchType": "scoped_alias"
+      },
+      "scores": {
+        "white": 5,
+        "dark": 6,
+        "whiteRaw": "5",
+        "darkRaw": "6",
+        "whiteRegulation": 5,
+        "darkRegulation": 6,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "decided",
+        "winnerParticipantId": "team-2026-14u-boys-la-premier-a--14u-boys-division-1",
+        "winnerTeamId": "team-2026-14u-boys-la-premier-a",
+        "winnerName": "LA Premier",
+        "loserParticipantId": "tournament-team-2026-14u-boys-norcal--14u-boys-division-1",
+        "loserTeamId": null,
+        "loserName": "Norcal"
+      }
+    },
+    {
       "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-84",
       "divisionId": "14u-boys-division-1",
       "divisionLabel": "14U Boys Division 1",
@@ -43390,60 +43446,6 @@
         "loserParticipantId": "tournament-team-2026-14u-boys-mission--14u-boys-division-1",
         "loserTeamId": null,
         "loserName": "Mission"
-      }
-    },
-    {
-      "id": "game-2026-san-diego-county-cup-14u-boys-division-1-sdc-14u-boys-division-1-100",
-      "divisionId": "14u-boys-division-1",
-      "divisionLabel": "14U Boys Division 1",
-      "ageGroup": "14U",
-      "gender": "Boys",
-      "division": "Division 1",
-      "divisionTier": "D1",
-      "dateIso": "2026-05-03",
-      "dateLabel": "03-May-2026",
-      "timeLabel": "10:15 AM",
-      "timezone": "America/Los_Angeles",
-      "venue": "SOUTHWESTERN COLLEGE 2",
-      "gameNumber": 100,
-      "stage": "Semifinal",
-      "status": "final",
-      "scoreState": "complete",
-      "white": {
-        "participantId": "tournament-team-2026-14u-boys-norcal--14u-boys-division-1",
-        "name": "Norcal",
-        "teamId": null,
-        "clubId": "club-norcal",
-        "identityStatus": "resolved_club_only",
-        "identityMatchType": "club_alias"
-      },
-      "dark": {
-        "participantId": "team-2026-14u-boys-la-premier-a--14u-boys-division-1",
-        "name": "LA Premier",
-        "teamId": "team-2026-14u-boys-la-premier-a",
-        "clubId": "club-la-premier",
-        "identityStatus": "resolved_team",
-        "identityMatchType": "scoped_alias"
-      },
-      "scores": {
-        "white": 5,
-        "dark": 6,
-        "whiteRaw": "5",
-        "darkRaw": "6",
-        "whiteRegulation": 5,
-        "darkRegulation": 6,
-        "whiteShootout": null,
-        "darkShootout": null
-      },
-      "shootout": null,
-      "outcome": {
-        "kind": "decided",
-        "winnerParticipantId": "team-2026-14u-boys-la-premier-a--14u-boys-division-1",
-        "winnerTeamId": "team-2026-14u-boys-la-premier-a",
-        "winnerName": "LA Premier",
-        "loserParticipantId": "tournament-team-2026-14u-boys-norcal--14u-boys-division-1",
-        "loserTeamId": null,
-        "loserName": "Norcal"
       }
     },
     {

@@ -563,7 +563,7 @@
       "shortName": "JO Session 3",
       "kind": "junior_olympics",
       "syncEnabled": true,
-      "publicPath": "tournaments/jo-texas/index.html",
+      "publicPath": "tournament.html?event=2026-jo-session-3",
       "dates": {
         "start": "2026-07-30",
         "end": "2026-08-02"
@@ -590,7 +590,7 @@
           "gidAliases": [],
           "sourceStrategy": "sheet_name_primary",
           "snapshotPath": "data/tournaments/raw/2026-jo-session-3/10u-coed-championship.csv",
-          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "verifiedSnapshotAt": "2026-08-02T22:28:00-07:00",
           "expectedScheduleGames": 22
         },
         {
@@ -614,7 +614,7 @@
           "gidAliases": [],
           "sourceStrategy": "sheet_name_primary",
           "snapshotPath": "data/tournaments/raw/2026-jo-session-3/12u-coed-championship.csv",
-          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "verifiedSnapshotAt": "2026-08-02T22:28:00-07:00",
           "expectedScheduleGames": 81
         },
         {
@@ -637,7 +637,7 @@
           "gidAliases": [],
           "sourceStrategy": "sheet_name_primary",
           "snapshotPath": "data/tournaments/raw/2026-jo-session-3/14u-boys-championship.csv",
-          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "verifiedSnapshotAt": "2026-08-02T22:28:00-07:00",
           "expectedScheduleGames": 101
         },
         {
@@ -660,7 +660,7 @@
           "gidAliases": [],
           "sourceStrategy": "sheet_name_primary",
           "snapshotPath": "data/tournaments/raw/2026-jo-session-3/14u-girls-championship.csv",
-          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "verifiedSnapshotAt": "2026-08-02T22:28:00-07:00",
           "expectedScheduleGames": 27
         },
         {
@@ -683,7 +683,7 @@
           "gidAliases": [],
           "sourceStrategy": "sheet_name_primary",
           "snapshotPath": "data/tournaments/raw/2026-jo-session-3/16u-boys-championship.csv",
-          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "verifiedSnapshotAt": "2026-08-02T22:28:00-07:00",
           "expectedScheduleGames": 97
         },
         {
@@ -706,7 +706,7 @@
           "gidAliases": [],
           "sourceStrategy": "sheet_name_primary",
           "snapshotPath": "data/tournaments/raw/2026-jo-session-3/16u-girls-championship.csv",
-          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "verifiedSnapshotAt": "2026-08-02T22:28:00-07:00",
           "expectedScheduleGames": 48
         },
         {
@@ -729,7 +729,7 @@
           "gidAliases": [],
           "sourceStrategy": "sheet_name_primary",
           "snapshotPath": "data/tournaments/raw/2026-jo-session-3/18u-boys-championship.csv",
-          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "verifiedSnapshotAt": "2026-08-02T22:28:00-07:00",
           "expectedScheduleGames": 94
         },
         {
@@ -752,14 +752,22 @@
           "gidAliases": [],
           "sourceStrategy": "sheet_name_primary",
           "snapshotPath": "data/tournaments/raw/2026-jo-session-3/18u-girls-championship.csv",
-          "verifiedSnapshotAt": "2026-07-30T01:52:19Z",
+          "verifiedSnapshotAt": "2026-08-02T22:28:00-07:00",
           "expectedScheduleGames": 75
         }
       ],
       "archiveSyncEnabled": false,
       "rankingEvidenceEnabled": false,
-      "dataStatus": "schedule_available",
-      "operationalMode": "live"
+      "dataStatus": "complete_with_source_gap",
+      "operationalMode": "archive",
+      "legacyPublicPath": "tournaments/jo-texas/index.html",
+      "sourceReview": {
+        "completeDivisions": 7,
+        "sourceIncompleteDivision": "12u-coed-championship",
+        "verifiedFinalGames": 464,
+        "scheduledWithoutScores": 81,
+        "verifiedPlacements": 117
+      }
     },
     {
       "id": "2026-quiksilver-cup",

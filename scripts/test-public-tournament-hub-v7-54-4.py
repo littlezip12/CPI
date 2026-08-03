@@ -9,10 +9,10 @@ hub=load('data/tournaments/public-hub.json')
 html=(ROOT/'tournaments.html').read_text(encoding='utf-8')
 js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 css=(ROOT/'css/tournament-hub-v7-54-4.css').read_text(encoding='utf-8')
-if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15'}: errors.append('site version must be 7.54.11')
-if site.get('tournamentPublicHubRelease')!='7.54.11': errors.append('tournamentPublicHubRelease must be 7.54.11')
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.16'}: errors.append('site version must be 7.54.11')
+if site.get('tournamentPublicHubRelease')!='7.54.16': errors.append('tournamentPublicHubRelease must be 7.54.16')
 if site.get('tournamentArchiveExperienceRelease')!='7.54.4': errors.append('tournamentArchiveExperienceRelease must preserve 7.54.4')
-for token in ['Follow every game. See every path.','class="next-tournament-action" id="nextTournamentAction" href="tournaments/jo-texas/"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.9']:
+for token in ['Follow every game. See every path.','class="next-tournament-action" id="nextTournamentAction" aria-disabled="true"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.54.16']:
     if token not in html: errors.append(f'tournaments.html missing {token}')
 if 'id="nextTournamentHeading"' in html: errors.append('redundant Next Tournament heading remains above the card')
 for forbidden in ['Tournament control room','Tournament intelligence','Open control room','Open source health','Open performance','Open review','Data review','Accuracy hold']:
@@ -23,14 +23,15 @@ for token in ['.tournament-hub-hero','.next-tournament-card','.tournament-year-t
     if token not in css: errors.append(f'public hub stylesheet missing {token}')
 
 next_event=hub.get('nextTournament',{})
-if next_event.get('name')!='Junior Olympics Session 3': errors.append('next tournament must be Junior Olympics Session 3')
-if next_event.get('publicPath')!='tournaments/jo-texas/': errors.append('next tournament must link to the Session 3 viewer')
-if next_event.get('status')!='schedule_available': errors.append('Session 3 schedule must be marked available')
+if next_event.get('name')!='Evan Cousineau Memorial Cup': errors.append('next tournament must be Evan Cousineau Memorial Cup')
+if next_event.get('dateLabel')!='October 3–4, 2026': errors.append('Evan Cousineau date is incorrect')
+if next_event.get('publicPath') is not None: errors.append('Evan Cousineau must not link until an official schedule is published')
+if next_event.get('status')!='announced': errors.append('Evan Cousineau must be marked announced')
 if 'next.publicPath' not in js: errors.append('hero button does not prioritize an active next tournament')
 if hub.get('years')!=[2026,2025,2024]: errors.append('archive years must be 2026, 2025, 2024')
 events=hub.get('events',[])
 ids=[e.get('id') for e in events]
-expected_ids={'2026-kap7-international','2026-san-diego-county-cup','2026-girls-futures-super-finals','2026-boys-futures-super-finals','2026-quiksilver-cup','2026-junior-olympics','2025-evan-cousineau-memorial-cup'}
+expected_ids={'2026-kap7-international','2026-san-diego-county-cup','2026-girls-futures-super-finals','2026-boys-futures-super-finals','2026-quiksilver-cup','2026-jo-session-3','2026-junior-olympics','2025-evan-cousineau-memorial-cup'}
 if set(ids)!=expected_ids:
     errors.append(f'public archive event coverage is incorrect: {ids}')
 if '2026-girls-futures-super-finals' in ids and '2026-boys-futures-super-finals' in ids and ids.index('2026-girls-futures-super-finals')>ids.index('2026-boys-futures-super-finals'):
@@ -54,7 +55,7 @@ if errors:
     for e in errors: print(' -',e)
     sys.exit(1)
 print('PUBLIC TOURNAMENT HUB 7.54.4 TEST PASSED')
-print(' - Compact hero, next-event module, and year-based archive are wired')
+print(' - Evan Cousineau is announced next and all three JO weekends are archived')
 print(' - Results stay collapsed until a tournament and age/gender are selected')
 print(' - Team rows link to complete tournament journeys')
 print(' - Internal tournament operations and ranking-review surfaces are removed from public discovery')

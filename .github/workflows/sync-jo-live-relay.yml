@@ -1,20 +1,7 @@
 name: Sync JO live relay
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/sync-jo-live-relay.yml"
-      - "scripts/sync-jo-live-relay.py"
-      - "scripts/tournament_pipeline.py"
-      - "data/tournaments/registry.json"
-      - "tournaments/jo-girls/app.js"
-      - "tournaments/jo-boys/app.js"
-      - "tournaments/jo-texas/app.js"
 
 permissions:
   contents: write
@@ -49,7 +36,7 @@ jobs:
             echo "No prior relay branch exists; verified repository snapshots will seed it."
           fi
 
-      - name: Refresh active JO Session 3 divisions
+      - name: Refresh archived JO Session 3 relay bank on demand
         run: python3 scripts/sync-jo-live-relay.py --event 2026-jo-session-3 --workers 3 --timeout 8 --max-candidates 2
 
       - name: Publish isolated relay branch

@@ -35,7 +35,7 @@ manifest = load("data/tournaments/normalized/manifest.json")
 
 if ops.get("schemaVersion") != 1 or ops.get("release") != EXPECTED_RELEASE:
     fail("Tournament operations output must use schemaVersion 1 and release 7.48.0")
-if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
+if config.get("release") not in {EXPECTED_RELEASE, "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11","7.54.16"}:
     fail("Tournament operations configuration release mismatch")
 
 registry_keys = {(event.get("id"), division.get("id")) for event in registry.get("events", []) for division in event.get("divisions", [])}
@@ -49,10 +49,10 @@ if len(registry.get("events", [])) < 10 or len(rows) < 107:
 live = [row for row in rows if row.get("monitoringMode") == "live"]
 archive = [row for row in rows if row.get("monitoringMode") == "archive"]
 historical = [row for row in rows if row.get("monitoringMode") == "historical_registered"]
-if len(live) != 31:
-    fail(f"Expected all three JO sessions to provide 31 live divisions, found {len(live)}")
-if len(archive) < 71:
-    fail(f"Completed-event archive coverage regressed below 71 divisions; found {len(archive)}")
+if len(live) != 23:
+    fail(f"Expected the two preserved Southern California JO viewers to provide 23 live-source divisions, found {len(live)}")
+if len(archive) < 79:
+    fail(f"Completed-event archive coverage regressed below 79 divisions after Session 3 archival; found {len(archive)}")
 if len(historical) != 5:
     fail(f"Expected 5 Girls Club divisions in controlled data review, found {len(historical)}")
 if any(row.get("eventId") != "2026-girls-us-club-championships" for row in historical):
@@ -156,7 +156,7 @@ if errors:
 
 print("TOURNAMENT OPERATIONS VALIDATION PASSED")
 print(f" - {len(registry.get('events', []))} registered tournaments and {len(rows)} divisions share one operations framework")
-print(f" - Three JO sessions provide 31 live-monitored divisions: {ops.get('counts', {}).get('ready', 0)} ready and {ops.get('counts', {}).get('attention', 0)} attention")
+print(f" - Two Southern California JO source viewers provide 23 monitored divisions; Session 3 is classified as archive")
 print(f" - {len(archive)} completed-event divisions remain isolated in controlled archive mode; {len(historical)} Girls Club divisions remain in data review")
 print(" - Source, score-state, public-page, fallback, and ranking-publication safeguards are enforced")
 print(" - Poolside JavaScript budgets and mobile application mounts pass")

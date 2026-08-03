@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.11",
-  "generatedAt": "2026-07-30T23:10:00-07:00",
-  "description": "Shared WPI tournament platform registry. Quiksilver Cup, Girls and Boys Futures Super Finals, the 2025 Evan Cousineau Memorial Cup, 2026 KAP7 International, and the 2026 San Diego County Cup use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
+  "release": "7.54.16",
+  "generatedAt": "2026-08-02T22:28:00-07:00",
+  "description": "Shared WPI tournament platform registry. Seven completed-event experiences, including Junior Olympics Weekend 3, use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
   "platformPath": "tournament.html",
   "schemaPaths": {
     "event": "tournaments/schema/tournament-event.schema.json",
@@ -75,13 +75,37 @@
       "status": null,
       "operationsMode": null,
       "divisionCount": 8,
-      "publicPath": "tournaments/jo-texas/index.html",
-      "legacyPath": null,
-      "migrationStatus": "registered_legacy_view",
-      "dataPath": null,
+      "publicPath": "tournament.html?event=2026-jo-session-3",
+      "legacyPath": "tournaments/jo-texas/index.html",
+      "migrationStatus": "platform_live",
+      "dataPath": "data/tournaments/platform/events/2026-jo-session-3.json",
       "rankingEvidenceEnabled": false,
-      "filterCapabilities": [],
-      "sourceAdapters": []
+      "filterCapabilities": [
+        "ageGroup",
+        "gender",
+        "division",
+        "team",
+        "date",
+        "venue",
+        "status",
+        "search"
+      ],
+      "sourceAdapters": [
+        {
+          "id": "2026-jo-session-3-normalized-bank",
+          "type": "normalized_json",
+          "role": "primary",
+          "pathTemplate": "data/tournaments/normalized/2026-jo-session-3/{divisionId}.json",
+          "readMode": "repository"
+        },
+        {
+          "id": "2026-jo-session-3-source",
+          "type": "google_sheets_csv",
+          "role": "provenance",
+          "readMode": "official_source",
+          "parser": "results_table_v1"
+        }
+      ]
     },
     {
       "id": "2026-quiksilver-cup",

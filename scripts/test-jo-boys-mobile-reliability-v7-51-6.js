@@ -35,13 +35,13 @@ requireCondition(context.progress(twoFinal).finalGames===2,'Completed-game progr
 
 const workflow=fs.readFileSync(path.join(ROOT,'.github','workflows','sync-jo-live-relay.yml'),'utf8');
 for(const token of [
-  'Refresh active JO Session 3 divisions',
+  'Refresh archived JO Session 3 relay bank on demand',
   '--event 2026-jo-session-3',
   '--workers 3',
   '--timeout 8',
   '--max-candidates 2'
 ])requireCondition(workflow.includes(token),`Relay workflow is missing active-Boys safeguard: ${token}`);
-requireCondition(!workflow.includes('Refresh all Girls, Coed, and Boys JO divisions'),'Scheduled relay should no longer poll completed Girls divisions');
+requireCondition(!workflow.includes('cron:'),'Completed JO events must not retain a scheduled relay poll');
 
 const sync=fs.readFileSync(path.join(ROOT,'scripts','sync-jo-live-relay.py'),'utf8');
 requireCondition(sync.includes('for candidate_index, url in enumerate(urls):'),'Relay retries are not indexed');
@@ -64,7 +64,7 @@ for(const side of ['jo-boys','jo-girls']){
 const texasHtml=fs.readFileSync(path.join(ROOT,'tournaments','jo-texas','index.html'),'utf8');
 requireCondition(texasHtml.includes(`src="app.js?v=${site.joSession3ApplicationRelease}"`),'jo-texas does not load the current cache-busted JO app');
 console.log('JO BOYS MOBILE RELIABILITY 7.51.6 TESTS PASSED');
-console.log(' - Scheduled relay traffic is limited to the active eight Session 3 divisions with lower concurrency');
+console.log(' - The completed Session 3 relay is manual-only; no scheduled GitHub polling remains');
 console.log(' - Older relay or Google datasets cannot replace a browser copy with more completed results');
 console.log(' - Mobile back-forward-cache restoration triggers a fresh data check');
 console.log(' - Boys relay freshness is explicit at seven minutes while last-known-good data remains available');

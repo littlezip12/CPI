@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RELEASE = "7.54.9";
+  const RELEASE = "7.54.16";
   const FALLBACK = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
   const state = { config:null, year:2026, event:null, bundleCache:new Map(), requestedGroup:"", requestedTeam:"" };
   const $ = id => document.getElementById(id);
@@ -28,11 +28,9 @@
     const featured = state.config.events.find(event => event.id === state.config.featuredEventId);
     if(!featured) return;
     link.textContent = featured.featuredLabel || `View ${featured.name} results`;
+    if(featured.publicPath && !featured.publicPath.startsWith("#")){ link.href=featured.publicPath; return; }
     link.href = "#tournament-archive";
-    link.addEventListener("click", event => {
-      event.preventDefault();
-      selectEvent(featured.id, true);
-    });
+    link.addEventListener("click", event => { event.preventDefault(); selectEvent(featured.id, true); });
   }
 
   function renderNext(){
@@ -94,6 +92,7 @@
     $("archiveEventMeta").textContent = `${event.dateLabel} · ${event.audience}`;
     const full = $("archiveFullLink");
     if(event.mode === "platform") { full.href = event.publicPath; full.hidden = false; full.textContent = "Open full tournament →"; }
+    else if(event.publicPath && !event.publicPath.startsWith("#")){ full.href=event.publicPath; full.hidden=false; full.textContent="Open JO recap →"; }
     else { full.href = "#"; full.hidden = true; }
     $("archiveGroupSelect").innerHTML = `<option value="">Loading age groups…</option>`;
     $("archiveResults").innerHTML = `<div class="archive-results-prompt">Loading tournament results…</div>`;
@@ -149,7 +148,7 @@
   }
 
   function joDivisionId(id){ if(id==="10u-boys-championship")return "10u-championship"; if(id==="10u-coed-classic")return "10u-girls-classic"; return id; }
-  function joJourney(group,division,team){ const app=group.category==="Boys"?"jo-boys":"jo-girls"; const params=new URLSearchParams({division:joDivisionId(division.id),team,focus:"journey"}); return `tournaments/${app}/?${params.toString()}#team-explorer`; }
+  function joJourney(group,division,team){ if(group.weekend==="Weekend 3"){ const params=new URLSearchParams({event:"2026-jo-session-3",team:team.participantId||""}); return `tournament.html?${params.toString()}#tpJourney`; } const app=group.category==="Boys"?"jo-boys":"jo-girls"; const params=new URLSearchParams({division:joDivisionId(division.id),team:team.team,focus:"journey"}); return `tournaments/${app}/?${params.toString()}#team-explorer`; }
 
   function renderSelectedResults(event,data,value){
     const mount=$("archiveResults");
@@ -162,12 +161,13 @@
     const group=data.groups.find(item=>item.id===groupId); if(!group)return;
     mount.innerHTML=group.divisions.map((division,index)=>`<details class="archive-result-group" ${index===0?"open":""}>
       <summary><strong>${esc(division.label)}</strong><span>${division.teamCount} teams</span></summary>
-      ${division.subdivisions.map(subdivision=>`<section class="archive-subdivision"><h4>${esc(subdivision.label)}</h4><ol class="archive-team-list">${subdivision.teams.map(team=>{
-        const asset=joAsset(team.team,group); const href=joJourney(group,division,team.team); const placement=team.overallPlaceLabel||team.placeLabel||"—";
+      ${division.subdivisions.length?division.subdivisions.map(subdivision=>`<section class="archive-subdivision"><h4>${esc(subdivision.label)}</h4><ol class="archive-team-list">${subdivision.teams.map(team=>{
+        const asset=joAsset(team.team,group); const href=joJourney(group,division,team); const placement=team.overallPlaceLabel||team.placeLabel||"—";
         const detail=[team.record?`Record ${team.record}`:"",`${subdivision.label} ${team.placeLabel||""}`.trim()].filter(Boolean).join(" · ");
         const highlight = state.requestedTeam && normalize(team.team) === normalize(state.requestedTeam) ? " archive-team-highlight" : "";
-        return `<li><a class="archive-team-link${highlight}" href="${esc(href)}"><span class="archive-place">${esc(placement)}</span><img class="archive-team-logo" src="${esc(asset.logo)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK}'"><span class="archive-team-name"><strong>${esc(team.team)}</strong><small>${esc(detail)}</small></span><span class="archive-journey-label">View games →</span></a></li>`;
-      }).join("")}</ol></section>`).join("")}
+        const logo=group.weekend==="Weekend 3"?"":`<img class="archive-team-logo" src="${esc(asset.logo)}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK}'">`;
+        return `<li><a class="archive-team-link${highlight}" href="${esc(href)}"><span class="archive-place">${esc(placement)}</span>${logo}<span class="archive-team-name"><strong>${esc(team.team)}</strong><small>${esc(detail)}</small></span><span class="archive-journey-label">View games →</span></a></li>`;
+      }).join("")}</ol></section>`).join(""):`<p class="archive-results-note">${esc(division.source||group.sourceNote||"Results are not available from the official source.")}</p>`}
     </details>`).join("");
   }
 

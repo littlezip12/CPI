@@ -19,9 +19,9 @@ EXPECTED={
  '18u-girls-championship':('18U','Girls','18U_F_CHAMP-18 teams',75),
 }
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version') not in {'7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15'}: fail('site version must preserve Session 3')
-if site.get('joSession3Release')!='7.54.6': fail('joSession3Release must be 7.54.6')
-if site.get('joSession3ApplicationRelease')!='7.54.6': fail('joSession3ApplicationRelease must be 7.54.6')
+if site.get('version') not in {'7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.16'}: fail('site version must preserve Session 3')
+if site.get('joSession3Release')!='7.54.16': fail('joSession3Release must be 7.54.16')
+if site.get('joSession3ApplicationRelease')!='7.54.6': fail('joSession3ApplicationRelease must remain 7.54.6 because the legacy viewer code is unchanged')
 
 registry=json.loads((ROOT/'data/tournaments/registry.json').read_text())
 events={e['id']:e for e in registry.get('events',[])}
@@ -30,7 +30,7 @@ if not event: fail('central tournament registry is missing Session 3')
 else:
     if event.get('syncEnabled') is not True: fail('Session 3 must be live-sync enabled')
     if event.get('rankingEvidenceEnabled') is not False: fail('Session 3 must remain quarantined from published rankings')
-    if event.get('publicPath')!='tournaments/jo-texas/index.html': fail('Session 3 public path is incorrect')
+    if event.get('publicPath')!='tournament.html?event=2026-jo-session-3': fail('Session 3 archive path is incorrect')
     if event.get('location')!='North Texas': fail('Session 3 location is incorrect')
     divisions={d['id']:d for d in event.get('divisions',[])}
     if set(divisions)!=set(EXPECTED): fail(f'expected eight Session 3 divisions, found {len(divisions)}')
@@ -48,7 +48,9 @@ else:
             data=json.loads(normalized.read_text())
             counts=data.get('counts',{})
             if counts.get('games')!=games: fail(f'{division_id}: normalized game count is {counts.get("games")}, expected {games}')
-            if counts.get('finalGames')!=0 or counts.get('scheduledGames')!=games: fail(f'{division_id}: launch snapshot must contain {games} scheduled games and no fabricated finals')
+            expected_finals = 0 if division_id == '12u-coed-championship' else games
+            expected_scheduled = games if division_id == '12u-coed-championship' else 0
+            if counts.get('finalGames')!=expected_finals or counts.get('scheduledGames')!=expected_scheduled: fail(f'{division_id}: archived score-state totals are incorrect')
             if counts.get('blockers')!=0: fail(f'{division_id}: normalized schedule contains blockers')
 
 source=json.loads((ROOT/'tournaments/jo-texas/source-registry.json').read_text())
@@ -84,15 +86,16 @@ else:
 
 hub=json.loads((ROOT/'data/tournaments/public-hub.json').read_text())
 next_event=hub.get('nextTournament',{})
-if hub.get('release') not in {'7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11'}: fail('public tournament hub release must preserve Session 3')
-if next_event.get('publicPath')!='tournaments/jo-texas/': fail('Next Tournament does not link to Session 3')
-if next_event.get('status')!='schedule_available': fail('Session 3 must be labeled schedule available')
+if hub.get('release')!='7.54.16': fail('public tournament hub release must be 7.54.16')
+if next_event.get('name')!='Evan Cousineau Memorial Cup': fail('completed Session 3 must no longer be the next tournament')
+if not any(e.get('id')=='2026-jo-session-3' and e.get('mode')=='platform' for e in hub.get('events',[])): fail('Session 3 is not registered in the public archive')
 hub_js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text()
 if 'Open ${next.name}' not in hub_js or 'next.publicPath' not in hub_js: fail('hero button does not follow the current tournament')
 
 workflow=(ROOT/'.github/workflows/sync-jo-live-relay.yml').read_text()
-for token in ['tournaments/jo-texas/app.js','Refresh active JO Session 3 divisions','--event 2026-jo-session-3','--workers 3','--timeout 8','--max-candidates 2']:
-    if token not in workflow: fail(f'live relay workflow is missing: {token}')
+for token in ['Refresh archived JO Session 3 relay bank on demand','--event 2026-jo-session-3','--workers 3','--timeout 8','--max-candidates 2']:
+    if token not in workflow: fail(f'archived relay workflow is missing: {token}')
+if 'cron:' in workflow: fail('completed Session 3 must not retain scheduled relay polling')
 relay=(ROOT/'scripts/sync-jo-live-relay.py').read_text()
 if '"2026-jo-session-3"' not in relay or 'RELEASE = "7.54.5"' not in relay: fail('relay builder is not Session 3 ready')
 
@@ -102,7 +105,7 @@ if errors:
     for error in errors: print(' -',error)
     sys.exit(1)
 print('JO SESSION 3 7.54.6 TEST PASSED')
-print(' - Eight Championship divisions load 545 verified scheduled games with no fabricated finals')
+print(' - Eight Championship divisions retain 545 games: 464 finals and 81 unscored 12U Coed games')
 print(' - Team journeys preserve next-game and win/loss pathway logic')
 print(' - Club logos are intentionally disabled only in the Session 3 viewer')
-print(' - Verified snapshots, the five-minute WPI relay, and direct official Google fallback are wired')
+print(' - The reusable archive and legacy live-capable viewer remain source-traceable')

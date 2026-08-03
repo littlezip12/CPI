@@ -44,7 +44,11 @@
     return divisionId;
   }
 
-  function resultJourneyLink(group, division, teamName) {
+  function resultJourneyLink(group, division, teamName, participantId = "") {
+    if (group.weekend === "Weekend 3") {
+      const params = new URLSearchParams({ event: "2026-jo-session-3", team: participantId });
+      return `tournament.html?${params.toString()}#tpJourney`;
+    }
     const app = group.category === "Boys" ? "jo-boys" : "jo-girls";
     const params = new URLSearchParams({ division: resultDivisionId(division.id), team: teamName, focus: "journey" });
     return `tournaments/${app}/?${params.toString()}#team-explorer`;
@@ -159,7 +163,11 @@
     if (!target) return;
     const groups = availableResultGroups(resultCategory);
     if (!groups.some((group) => group.id === resultGroupId)) resultGroupId = groups.find((group) => group.ageGroup === "14U")?.id || groups[0]?.id || "";
-    target.innerHTML = groups.map((group) => `<button type="button" class="${group.id === resultGroupId ? "is-active" : ""}" data-group="${escapeHtml(group.id)}">${escapeHtml(group.ageGroup)}</button>`).join("");
+    const ageCounts = groups.reduce((map, group) => map.set(group.ageGroup, (map.get(group.ageGroup) || 0) + 1), new Map());
+    target.innerHTML = groups.map((group) => {
+      const label = ageCounts.get(group.ageGroup) > 1 ? `${group.ageGroup} · ${group.weekend.replace("Weekend ", "W")}` : group.ageGroup;
+      return `<button type="button" class="${group.id === resultGroupId ? "is-active" : ""}" data-group="${escapeHtml(group.id)}">${escapeHtml(label)}</button>`;
+    }).join("");
   }
 
   function renderResults() {
@@ -175,8 +183,8 @@
         <div class="wpi-result-card-head"><h3>${escapeHtml(division.label)}</h3><span>${escapeHtml(division.tier)}</span></div>
         <div class="wpi-result-subdivision">${escapeHtml(subdivision?.label || "Final results")} · top finishers</div>
         <div class="wpi-result-list">${leaders.map((team) => {
-          const url = resultJourneyLink(group, division, team.team);
-          const teamLogo = resultAsset(team.team, group);
+          const url = resultJourneyLink(group, division, team.team, team.participantId);
+          const teamLogo = group.weekend === "Weekend 3" ? fallbackLogo : resultAsset(team.team, group);
           return `<a class="wpi-result-team" href="${escapeHtml(url)}" aria-label="View ${escapeHtml(team.team)} Junior Olympics games"><b>${escapeHtml(team.place)}</b><img src="${escapeHtml(teamLogo)}" alt="" aria-hidden="true" loading="lazy" onerror="this.onerror=null;this.src='${fallbackLogo}'"><strong>${escapeHtml(team.team)}</strong><em>${escapeHtml(team.record || team.overallPlaceLabel || "")}</em></a>`;
         }).join("")}</div>
         <a href="${escapeHtml(resultsLink(group.id))}">Browse ${escapeHtml(division.label)} results →</a>
@@ -270,17 +278,21 @@
   bindHomepagePathways();
   bindResultsControls();
 
-  fetch("data/tournaments/jo-results-2026.json?v=7.53.4", { cache: "no-store" })
+  fetch("data/tournaments/jo-results-2026.json?v=7.54.16", { cache: "no-store" })
     .then((response) => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
     .then((data) => {
       joPayload = data;
       $("#wpiJoFinishCount").textContent = Number(data.summary?.teamPlacements || data.summary?.teams || 0).toLocaleString();
       renderResultAgeButtons();
       renderResults();
+      fetch("data/tournaments/jo-recap-2026.json?v=7.54.16", { cache: "no-store" })
+        .then(response => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
+        .then(recap => { $("#wpiJoFinishCount").textContent = Number(recap.summary?.verifiedPlacements || 1093).toLocaleString(); })
+        .catch(error => console.warn("Unable to load JO recap count", error));
     })
     .catch((error) => {
       console.error("Unable to load JO results on homepage", error);
-      $("#wpiJoFinishCount").textContent = "976";
+      $("#wpiJoFinishCount").textContent = "1,093";
       $("#wpiResultsGrid").innerHTML = `<div class="wpi-loading">Results are temporarily unavailable. <a href="tournaments.html#jo-results">Open the full results browser.</a></div>`;
     });
 })();

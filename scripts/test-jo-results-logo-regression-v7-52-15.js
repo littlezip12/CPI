@@ -37,7 +37,7 @@ for (const token of [
 if (browserSource.includes('if (joProfile) return { logo: joProfile.logo || fallbackLogo')) {
   fail('JO profile routing is still allowed to short-circuit club logo resolution.');
 }
-if (!tournamentsHtml.includes('js/tournament-hub-v7-54-4.js?v=7.54.9')) {
+if (!tournamentsHtml.includes('js/tournament-hub-v7-54-4.js?v=7.54.16')) {
   fail('tournaments.html does not load the canonical-logo public archive.');
 }
 const hubSource = fs.readFileSync(path.join(root, 'js/tournament-hub-v7-54-4.js'), 'utf8');

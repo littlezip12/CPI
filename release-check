@@ -11,7 +11,9 @@ python3 scripts/build-evan-cousineau-v7-54-7.py
 python3 scripts/build-san-diego-county-cup-v7-54-8.py
 python3 scripts/build-kap7-international-v7-54-9.py
 python3 scripts/build-girls-futures-super-finals-v7-54-11.py
+python3 scripts/build-jo-session-3-archive-v7-54-16.py
 python3 scripts/build-tournament-platform-v7-54-1.py
+python3 scripts/build-jo-recap-v7-54-16.py
 python3 scripts/release-audit.py --write-report qa/release-audit-latest.json
 python3 scripts/test-wpi-universal-shell-v7-52-3.py
 python3 scripts/test-wpi-homepage-v7-52-4.py
@@ -59,6 +61,7 @@ python3 scripts/test-tournament-sync-guard.py
 python3 scripts/validate-tournament-data.py
 python3 scripts/validate-tournament-identity-cleanup.py
 python3 scripts/validate-tournament-evidence.py
+python3 scripts/build-tournament-health.py
 python3 scripts/validate-tournament-health.py
 python3 scripts/test-historical-tournament-parser.py
 node scripts/test-historical-results-ui-parser.js
@@ -113,5 +116,6 @@ python3 scripts/test-san-diego-county-cup-v7-54-8.py
 python3 scripts/test-kap7-international-v7-54-9.py
 python3 scripts/test-kap7-logo-mapping-v7-54-10.py
 python3 scripts/test-girls-futures-super-finals-v7-54-11.py
+python3 scripts/test-jo-recap-v7-54-16.py
 echo
 echo "CPI release check passed."
