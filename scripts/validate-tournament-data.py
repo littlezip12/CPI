@@ -14,8 +14,9 @@ from tournament_pipeline import bracket_slot_token
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY_PATH = ROOT / "data" / "tournaments" / "registry.json"
 MANIFEST_PATH = ROOT / "data" / "tournaments" / "normalized" / "manifest.json"
+SITE_RELEASE_PATH = ROOT / "config" / "site-release.json"
 EXPECTED_RELEASE = "7.45.1"
-ALLOWED_REGISTRY_RELEASES = {"7.45.1", "7.54.0", "7.54.1", "7.54.2", "7.54.3", "7.54.4", "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}
+MIN_REGISTRY_RELEASE = (7, 45, 1)
 ALLOWED_PARSERS = {"jo_bracket_v1", "results_table_v1"}
 ALLOWED_PARTICIPANT_KINDS = {"empty", "team", "bracket_reference", "placeholder"}
 errors: list[str] = []
@@ -38,8 +39,21 @@ def load(path: Path):
 
 registry = load(REGISTRY_PATH) or {}
 manifest = load(MANIFEST_PATH) or {}
-if registry.get("release") not in ALLOWED_REGISTRY_RELEASES:
-    fail(f"Tournament registry release must be one of {sorted(ALLOWED_REGISTRY_RELEASES)}")
+site_release = load(SITE_RELEASE_PATH) or {}
+registry_release = str(registry.get("release") or "")
+expected_registry_release = str(site_release.get("tournamentRegistryRelease") or "")
+release_match = re.fullmatch(r"(\d+)\.(\d+)\.(\d+)", registry_release)
+if not release_match:
+    fail(f"Tournament registry release must be semantic x.y.z; found {registry_release!r}")
+elif tuple(int(part) for part in release_match.groups()) < MIN_REGISTRY_RELEASE:
+    fail(f"Tournament registry release must be {'.'.join(map(str, MIN_REGISTRY_RELEASE))} or newer")
+if not expected_registry_release:
+    fail("config/site-release.json must declare tournamentRegistryRelease")
+elif registry_release != expected_registry_release:
+    fail(
+        "Tournament registry release must match config/site-release.json "
+        f"tournamentRegistryRelease ({expected_registry_release}); found {registry_release}"
+    )
 if registry.get("schemaVersion") != 1:
     fail("Tournament registry schemaVersion must be 1")
 
@@ -143,7 +157,7 @@ for rel in ["tournaments/jo-boys/app.js", "tournaments/jo-girls/app.js", "tourna
             if (sheet_id, gid) not in registry_pairs:
                 fail(f"Source registry is missing {rel} tab {sheet_id} / {gid}")
 
-if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
+if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10", "7.54.11", "7.55.0"}:
     fail(f"Normalized manifest release must be {EXPECTED_RELEASE} or 7.54.5")
 datasets = manifest.get("datasets", [])
 if not datasets:

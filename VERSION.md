@@ -1,10 +1,9 @@
-# WPI 7.54.18 — Club Location and National Region Foundation
+# WPI 7.55.0 — Competitive Season Tournament History
 
-- Applies the user-reviewed city, state, and California-region corrections across all 182 clubs.
-- Replaces the generic Out of State bucket with Hawaii, Northwest, Southwest, Mountain West, Midwest, Northeast, and Southeast.
-- Classifies Barcelona Lions as Barcelona, Spain in the International region.
-- Resolves Back Bay to Irvine, California while retaining its Orange County regional assignment.
-- Synchronizes location data across club registries, rankings, identities, profiles, tournament participants, search, and browser exports.
-- Adds a real U.S. state-boundary map connected to the club-directory filters.
-- Keeps California selectable through its nine established WPI regions.
-- Preserves all 724 rankings, 182 club identities, logos, websites, and tournament results.
+- Replaces calendar-year tournament archive tabs with competitive seasons using the permanent `startYear-endYear` convention.
+- Publishes **2025–2026** as the completed season, beginning with the October 2025 Evan Cousineau Memorial Cup and ending with the 2026 Junior Olympics recap.
+- Opens **2026–2027** as the active season, with the October 2026 Evan Cousineau Memorial Cup identified as the first upcoming event.
+- Removes the empty 2024 archive tab while preserving the ability to add older seasons later.
+- Retains each event's actual calendar year and dates separately from its competitive-season assignment.
+- Adds competitive-season metadata to the public hub, central tournament registry, reusable platform registry, platform event bundles, and archived event records.
+- Preserves all 724 rankings, 182 clubs, 976 established JO placements, scores, identities, logos, and tournament journeys.

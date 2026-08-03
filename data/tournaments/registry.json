@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "7.54.11",
+  "release": "7.55.0",
   "season": "2026",
   "generatedDate": "2026-07-30",
   "description": "Universal tournament source registry with live JO operations, controlled archives, and six events on the reusable WPI tournament platform, including both 2026 Futures Super Finals weekends.",
@@ -238,7 +238,9 @@
       "archiveSyncEnabled": false,
       "eventStatus": "upcoming",
       "platformEnabled": false,
-      "platformRelease": null
+      "platformRelease": null,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-jo-weekend-2",
@@ -555,7 +557,9 @@
       "archiveSyncEnabled": false,
       "eventStatus": "upcoming",
       "platformEnabled": false,
-      "platformRelease": null
+      "platformRelease": null,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-jo-session-3",
@@ -767,7 +771,9 @@
         "verifiedFinalGames": 464,
         "scheduledWithoutScores": 81,
         "verifiedPlacements": 117
-      }
+      },
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-quiksilver-cup",
@@ -884,7 +890,9 @@
       "legacyPublicPath": "tournaments/quicksilver-cup/index.html",
       "platformEnabled": true,
       "platformDataPath": "data/tournaments/platform/events/2026-quiksilver-cup.json",
-      "platformRelease": "7.54.1"
+      "platformRelease": "7.54.1",
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-girls-futures-super-finals",
@@ -1024,7 +1032,9 @@
           "sourceUrl": "data/tournaments/raw/2026-girls-futures-super-finals/18u-girls-d2.csv",
           "sourceFile": "data/tournaments/source/2026-girls-futures-super-finals/master-by-division.csv"
         }
-      ]
+      ],
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-boys-futures-super-finals",
@@ -1225,7 +1235,9 @@
       "platformEnabled": true,
       "platformRelease": "7.54.1",
       "legacyPublicPath": "tournaments/boys-superfinals/index.html",
-      "platformDataPath": "data/tournaments/platform/events/2026-boys-futures-super-finals.json"
+      "platformDataPath": "data/tournaments/platform/events/2026-boys-futures-super-finals.json",
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-girls-us-club-championships",
@@ -1314,7 +1326,9 @@
       "platformEnabled": false,
       "platformRelease": null,
       "publicDataStatus": "partial_unverified_placements",
-      "publicViewerEnabled": false
+      "publicViewerEnabled": false,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2025-evan-cousineau-memorial-cup",
@@ -1558,7 +1572,9 @@
           "sourceUrl": "data/tournaments/raw/2025-evan-cousineau-memorial-cup/hs-girls-a-b.csv",
           "sourceFile": "data/tournaments/source/2025-evan-cousineau-memorial-cup/master-by-division.csv"
         }
-      ]
+      ],
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-kap7-international",
@@ -1848,7 +1864,9 @@
           "sourceUrl": "data/tournaments/raw/2026-kap7-international/19u-boys-platinum.csv",
           "sourceFile": "data/tournaments/source/2026-kap7-international/master-by-division.csv"
         }
-      ]
+      ],
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-san-diego-county-cup",
@@ -2019,7 +2037,9 @@
           "sourceUrl": "data/tournaments/raw/2026-san-diego-county-cup/14u-boys-division-1.csv",
           "sourceFile": "data/tournaments/source/2026-san-diego-county-cup/14u-boys-source.csv"
         }
-      ]
+      ],
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     }
   ],
   "counts": {
@@ -2036,5 +2056,8 @@
     "invalidCandidateBehavior": "preserve_last_known_good",
     "staleAfterHours": 6,
     "historicalArchive": "Completed-event sources sync separately from live operations and do not feed ranking evidence until approved."
-  }
+  },
+  "competitiveSeasonModel": "startYear-endYear",
+  "activeCompetitiveSeason": "2026-2027",
+  "finalCompetitiveSeason": "2025-2026"
 }

@@ -10,7 +10,7 @@ registry=load('data/tournaments/platform/registry.json')
 bundle=load('data/tournaments/platform/events/2026-girls-futures-super-finals.json')
 placements=load('data/tournaments/archive/2026-girls-futures-super-finals.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18'}: errors.append('site version must be 7.54.11')
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0'}: errors.append('site version must be 7.54.11')
 if site.get('girlsFuturesPlatformRelease')!='7.54.11': errors.append('Girls Futures release metadata missing')
 expected={'divisionCount':8,'gameCount':374,'finalGameCount':374,'scheduledGameCount':0,'teamCount':139,'placementCount':132,'venueCount':16,'dateCount':3}
 for key,value in expected.items():
@@ -54,11 +54,11 @@ if not source_event or source_event.get('platformEnabled') is not True or len(so
 platform_event=next((e for e in registry.get('events',[]) if e.get('id')=='2026-girls-futures-super-finals'),None)
 if not platform_event or platform_event.get('migrationStatus')!='platform_live': errors.append('platform registry does not expose Girls Futures Super Finals')
 hub_event=next((e for e in hub.get('events',[]) if e.get('id')=='2026-girls-futures-super-finals'),None)
-if not hub_event or hub_event.get('year')!=2026 or hub_event.get('mode')!='platform': errors.append('public archive registration is incorrect')
-ids_2026=[e.get('id') for e in hub.get('events',[]) if e.get('year')==2026]
-if '2026-girls-futures-super-finals' in ids_2026 and '2026-boys-futures-super-finals' in ids_2026:
- if ids_2026.index('2026-girls-futures-super-finals')>ids_2026.index('2026-boys-futures-super-finals'): errors.append(f'Girls Futures must precede Boys Futures in season order: {ids_2026}')
-if ids_2026 and ids_2026[-1]!='2026-junior-olympics': errors.append(f'Junior Olympics must remain last in the 2026 water polo archive: {ids_2026}')
+if not hub_event or hub_event.get('eventYear')!=2026 or hub_event.get('competitiveSeason')!='2025-2026' or hub_event.get('mode')!='platform': errors.append('public archive registration is incorrect')
+ids_season=[e.get('id') for e in hub.get('events',[]) if e.get('competitiveSeason')=='2025-2026']
+if '2026-girls-futures-super-finals' in ids_season and '2026-boys-futures-super-finals' in ids_season:
+ if ids_season.index('2026-girls-futures-super-finals')>ids_season.index('2026-boys-futures-super-finals'): errors.append(f'Girls Futures must precede Boys Futures in season order: {ids_season}')
+if ids_season and ids_season[-1]!='2026-junior-olympics': errors.append(f'Junior Olympics must remain last in the 2025–2026 water polo archive: {ids_season}')
 js=(ROOT/'js/tournament-platform-v7-54-0.js').read_text(encoding='utf-8')
 for token in ['const RELEASE = "7.54.17"','Score unavailable','data-team']:
  if token not in js: errors.append(f'platform UI missing {token}')

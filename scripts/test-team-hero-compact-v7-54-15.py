@@ -6,12 +6,12 @@ errors=[]
 read=lambda rel:(ROOT/rel).read_text(encoding="utf-8")
 site=json.loads(read("config/site-release.json"))
 for key, expected in {
-    "version":"7.54.18",
-    "publicExperienceRelease":"7.54.18",
     "sectionLandingRelease":"7.54.15",
     "teamDirectoryRelease":"7.54.14",
 }.items():
     if site.get(key)!=expected: errors.append(f"{key} must be {expected}")
+if site.get("version") not in {"7.54.18", "7.55.0"}: errors.append("version must preserve 7.54.18 or later")
+if site.get("publicExperienceRelease") not in {"7.54.18", "7.55.0"}: errors.append("publicExperienceRelease must preserve 7.54.18 or later")
 teams=read("teams.html")
 if 'css/section-landing-v7-53-4.css?v=7.54.15' not in teams: errors.append("Teams page does not load compact hero CSS")
 css=read("css/section-landing-v7-53-4.css")

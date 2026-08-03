@@ -42,7 +42,7 @@ body.tournaments-page{background:linear-gradient(180deg,#eef5fb 0,#f7f9fc 430px,
 
 /* Archive */
 .tournament-year-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
-.tournament-year-tab{min-width:88px;padding:11px 18px;border:1px solid #cfdbe8;border-radius:999px;background:#fff;color:#476079;font-weight:900;cursor:pointer}
+.tournament-year-tab{display:grid;gap:2px;min-width:142px;padding:10px 17px;border:1px solid #cfdbe8;border-radius:16px;background:#fff;color:#476079;text-align:left;font-weight:900;cursor:pointer}.tournament-year-tab strong{font-size:14px}.tournament-year-tab span{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;opacity:.72}
 .tournament-year-tab.active{border-color:var(--th-navy);background:var(--th-navy);color:#fff}
 .tournament-event-list{display:grid;gap:10px}
 .tournament-event-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;width:100%;padding:19px 21px;border:1px solid var(--th-line);border-radius:17px;background:#fff;text-align:left;cursor:pointer;transition:.16s ease}

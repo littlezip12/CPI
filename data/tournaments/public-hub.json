@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "release": "7.54.17",
+  "schemaVersion": 2,
+  "release": "7.55.0",
   "featuredEventId": "2026-junior-olympics",
   "nextTournament": {
     "status": "announced",
@@ -8,20 +8,31 @@
     "name": "Evan Cousineau Memorial Cup",
     "dateLabel": "October 3–4, 2026",
     "locationLabel": "Southern California",
-    "description": "The next major WPI archive event is expected to open the 2026–27 club season. Divisions and schedules will be added when an official source is published.",
+    "description": "The Evan Cousineau Memorial Cup opens the 2026–2027 club season. Divisions and schedules will be added when an official source is published.",
     "publicPath": null,
-    "ctaLabel": "Schedule coming soon"
+    "ctaLabel": "Schedule coming soon",
+    "competitiveSeason": "2026-2027",
+    "seasonLabel": "2026–2027"
   },
-  "years": [
-    2026,
-    2025,
-    2024
-  ],
   "events": [
     {
+      "id": "2025-evan-cousineau-memorial-cup",
+      "seasonOrder": 10,
+      "name": "Evan Cousineau Memorial Cup",
+      "dateLabel": "October 4–5, 2025",
+      "audience": "10U–14U, HS Girls, Boys, Girls & Coed",
+      "status": "complete",
+      "mode": "platform",
+      "dataPath": "data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json",
+      "publicPath": "tournament.html?event=2025-evan-cousineau-memorial-cup",
+      "resultLabel": "105 verified placements · 348 final games",
+      "eventYear": 2025,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
+    },
+    {
       "id": "2026-kap7-international",
-      "year": 2026,
-      "seasonOrder": 5,
+      "seasonOrder": 20,
       "name": "KAP7 International",
       "dateLabel": "January 31–February 1, 2026",
       "audience": "10U–19U Boys, Girls & Coed",
@@ -29,12 +40,14 @@
       "mode": "platform",
       "dataPath": "data/tournaments/platform/events/2026-kap7-international.json",
       "publicPath": "tournament.html?event=2026-kap7-international",
-      "resultLabel": "136 verified placements · 578 final games"
+      "resultLabel": "136 verified placements · 578 final games",
+      "eventYear": 2026,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-san-diego-county-cup",
-      "year": 2026,
-      "seasonOrder": 10,
+      "seasonOrder": 30,
       "name": "San Diego County Cup",
       "dateLabel": "May 1–3, 2026",
       "audience": "10U–14U Boys & Girls",
@@ -42,12 +55,14 @@
       "mode": "platform",
       "dataPath": "data/tournaments/platform/events/2026-san-diego-county-cup.json",
       "publicPath": "tournament.html?event=2026-san-diego-county-cup",
-      "resultLabel": "174 verified placements · 708 final games"
+      "resultLabel": "174 verified placements · 708 final games",
+      "eventYear": 2026,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-girls-futures-super-finals",
-      "year": 2026,
-      "seasonOrder": 15,
+      "seasonOrder": 40,
       "name": "Girls Futures Super Finals",
       "dateLabel": "June 19–21, 2026",
       "audience": "12U–18U Girls",
@@ -55,12 +70,14 @@
       "mode": "platform",
       "dataPath": "data/tournaments/platform/events/2026-girls-futures-super-finals.json",
       "publicPath": "tournament.html?event=2026-girls-futures-super-finals",
-      "resultLabel": "132 verified placements · 374 final games"
+      "resultLabel": "132 verified placements · 374 final games",
+      "eventYear": 2026,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-boys-futures-super-finals",
-      "year": 2026,
-      "seasonOrder": 20,
+      "seasonOrder": 50,
       "name": "Boys Futures Super Finals",
       "dateLabel": "June 26–28, 2026",
       "audience": "10U–18U Boys",
@@ -68,12 +85,14 @@
       "mode": "platform",
       "dataPath": "data/tournaments/platform/events/2026-boys-futures-super-finals.json",
       "publicPath": "tournament.html?event=2026-boys-futures-super-finals",
-      "resultLabel": "Verified results"
+      "resultLabel": "Verified results",
+      "eventYear": 2026,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-quiksilver-cup",
-      "year": 2026,
-      "seasonOrder": 30,
+      "seasonOrder": 60,
       "name": "Quiksilver Cup",
       "dateLabel": "July 9–12, 2026",
       "audience": "12U–14U Boys & Girls",
@@ -81,12 +100,14 @@
       "mode": "platform",
       "dataPath": "data/tournaments/platform/events/2026-quiksilver-cup.json",
       "publicPath": "tournament.html?event=2026-quiksilver-cup",
-      "resultLabel": "Verified results"
+      "resultLabel": "Verified results",
+      "eventYear": 2026,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-jo-session-3",
-      "year": 2026,
-      "seasonOrder": 99,
+      "seasonOrder": 90,
       "name": "Junior Olympics Weekend 3 — North Texas",
       "dateLabel": "July 30–August 2, 2026",
       "audience": "10U–18U Boys, Girls & Coed",
@@ -94,11 +115,13 @@
       "mode": "platform",
       "dataPath": "data/tournaments/platform/events/2026-jo-session-3.json",
       "publicPath": "tournament.html?event=2026-jo-session-3",
-      "resultLabel": "138 verified placements · 464 final games · 12U Coed scores unavailable"
+      "resultLabel": "138 verified placements · 464 final games · 12U Coed scores unavailable",
+      "eventYear": 2026,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
     },
     {
       "id": "2026-junior-olympics",
-      "year": 2026,
       "seasonOrder": 100,
       "name": "2026 Junior Olympics Recap",
       "dateLabel": "July 18–August 2, 2026",
@@ -108,20 +131,34 @@
       "dataPath": "data/tournaments/jo-results-2026.json",
       "publicPath": "jo-recap.html",
       "resultLabel": "1,114 verified placements · 31 divisions · 3 weekends",
-      "featuredLabel": "View the 2026 Junior Olympics recap"
+      "featuredLabel": "View the 2026 Junior Olympics recap",
+      "eventYear": 2026,
+      "competitiveSeason": "2025-2026",
+      "seasonLabel": "2025–2026"
+    }
+  ],
+  "seasonModel": {
+    "type": "competitive_year_range",
+    "labelFormat": "startYear–endYear",
+    "openingWindow": "fall",
+    "closingWindow": "summer",
+    "currentSeason": "2026-2027",
+    "finalSeason": "2025-2026"
+  },
+  "seasons": [
+    {
+      "id": "2026-2027",
+      "label": "2026–2027",
+      "status": "active",
+      "summary": "New season · results gathering begins with Evan Cousineau",
+      "emptyTitle": "2026–2027 results will begin with Evan Cousineau.",
+      "emptyDescription": "The tournament is announced for October 3–4, 2026. Results will appear here after verified schedules and scores are available."
     },
     {
-      "id": "2025-evan-cousineau-memorial-cup",
-      "year": 2025,
-      "seasonOrder": 10,
-      "name": "Evan Cousineau Memorial Cup",
-      "dateLabel": "October 4–5, 2025",
-      "audience": "10U–14U, HS Girls, Boys, Girls & Coed",
-      "status": "complete",
-      "mode": "platform",
-      "dataPath": "data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json",
-      "publicPath": "tournament.html?event=2025-evan-cousineau-memorial-cup",
-      "resultLabel": "105 verified placements · 348 final games"
+      "id": "2025-2026",
+      "label": "2025–2026",
+      "status": "final",
+      "summary": "Completed season · Evan Cousineau through Junior Olympics"
     }
   ]
 }

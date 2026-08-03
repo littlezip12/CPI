@@ -1,8 +1,8 @@
 (() => {
   "use strict";
-  const RELEASE = "7.54.17";
+  const RELEASE = "7.55.0";
   const FALLBACK = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
-  const state = { config:null, year:2026, event:null, bundleCache:new Map(), requestedGroup:"", requestedTeam:"" };
+  const state = { config:null, season:"2026-2027", event:null, bundleCache:new Map(), requestedGroup:"", requestedTeam:"" };
   const $ = id => document.getElementById(id);
   const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const normalize = value => String(value ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/&/g," and ").replace(/[^a-z0-9]+/g," ").trim();
@@ -51,11 +51,13 @@
     }
   }
 
+  function currentSeasonConfig(){ return state.config.seasons.find(season => season.id === state.season) || state.config.seasons[0]; }
+
   function renderYears(){
     const mount = $("tournamentYearTabs");
-    mount.innerHTML = state.config.years.map(year => `<button class="tournament-year-tab${year===state.year?" active":""}" type="button" data-year="${year}">${year}</button>`).join("");
-    mount.querySelectorAll("[data-year]").forEach(button => button.addEventListener("click", () => {
-      state.year = Number(button.dataset.year);
+    mount.innerHTML = state.config.seasons.map(season => `<button class="tournament-year-tab${season.id===state.season?" active":""}" type="button" data-season="${esc(season.id)}"><strong>${esc(season.label)}</strong><span>${esc(season.status === "final" ? "Final season" : "Current season")}</span></button>`).join("");
+    mount.querySelectorAll("[data-season]").forEach(button => button.addEventListener("click", () => {
+      state.season = button.dataset.season;
       state.event = null;
       renderYears();
       renderEvents();
@@ -63,13 +65,16 @@
     }));
   }
 
-  function eventsForYear(){ return state.config.events.filter(event => event.year === state.year).sort((a,b)=>a.seasonOrder-b.seasonOrder); }
+  function eventsForYear(){ return state.config.events.filter(event => event.competitiveSeason === state.season).sort((a,b)=>a.seasonOrder-b.seasonOrder); }
 
   function renderEvents(){
     const mount = $("tournamentEventList");
     const events = eventsForYear();
+    const season = currentSeasonConfig();
     if(!events.length){
-      mount.innerHTML = `<div class="archive-empty"><strong>${state.year} results are ready to be added.</strong><br>WPI will place each tournament in water polo season order, with Junior Olympics last.</div>`;
+      const title = season?.emptyTitle || `${season?.label || state.season} results are ready to be added.`;
+      const description = season?.emptyDescription || "WPI will place each tournament in water polo season order, with Junior Olympics last.";
+      mount.innerHTML = `<div class="archive-empty"><strong>${esc(title)}</strong><br>${esc(description)}</div>`;
       return;
     }
     mount.innerHTML = events.map(event => `<button class="tournament-event-row${state.event?.id===event.id?" active":""}" type="button" data-event="${esc(event.id)}">
@@ -82,7 +87,7 @@
   async function selectEvent(eventId, scroll){
     const event = state.config.events.find(item => item.id === eventId);
     if(!event) return;
-    state.year = event.year;
+    state.season = event.competitiveSeason;
     state.event = event;
     renderYears();
     renderEvents();
@@ -185,9 +190,11 @@
   async function init(){
     try{
       state.config=await loadJson("data/tournaments/public-hub.json");
-      state.year=state.config.years[0];
+      state.season=state.config.seasonModel?.finalSeason || state.config.seasons[0].id;
       const params = new URLSearchParams(location.search);
       state.requestedGroup = params.get("results") || "";
+      const requestedSeason = params.get("season");
+      if(requestedSeason && state.config.seasons.some(season => season.id === requestedSeason)) state.season = requestedSeason;
       state.requestedTeam = params.get("team") || "";
       renderHero(); renderNext(); renderYears(); renderEvents();
       if(state.requestedGroup) await selectEvent("2026-junior-olympics", false);
