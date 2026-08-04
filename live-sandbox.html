@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-55-9.css?v=7.55.9">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-0.css?v=7.56.0">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -129,10 +129,36 @@
           <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
         </form>
 
+        <section id="shootoutPanel" class="live-shootout-panel" hidden aria-labelledby="shootoutHeading">
+          <div class="live-panel-heading live-compact-heading">
+            <div><p class="live-section-kicker">Alternating attempts</p><h2 id="shootoutHeading">Shootout</h2></div>
+            <span id="shootoutRoundBadge" class="live-lineup-status">Round 1</span>
+          </div>
+          <div class="live-shootout-next">
+            <span>Next shooter</span>
+            <strong id="shootoutTeamLabel">Lamorinda A 14U Boys</strong>
+          </div>
+          <label id="shootoutOurPlayerLabel">Shooter
+            <select id="shootoutOurPlayer"><option value="">Choose player</option></select>
+          </label>
+          <label id="shootoutOpponentPlayerLabel" hidden>Opponent shooter / cap number
+            <input id="shootoutOpponentPlayer" type="text" maxlength="80" placeholder="#8 or player name">
+          </label>
+          <div class="live-shootout-actions">
+            <button id="shootoutGoalButton" type="button">Goal</button>
+            <button id="shootoutMissButton" class="live-shootout-miss" type="button">Miss</button>
+          </div>
+          <div class="live-shootout-footer">
+            <button id="undoShootoutButton" type="button">Undo last shot</button>
+            <button id="endShootoutGameButton" class="live-end-game-primary" type="button">End game</button>
+          </div>
+          <p id="shootoutValidationMessage" class="live-validation-message" role="status"></p>
+        </section>
+
         <details class="live-game-controls" id="gameControlsDetails">
           <summary>Manual controls</summary>
           <div class="live-game-controls-grid">
-            <label>Current quarter<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT</option></select></label>
+            <label>Current period<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT1</option><option value="6">OT2</option><option value="7">OT3</option><option value="8">OT4</option></select></label>
             <button id="editCurrentLineupButton" type="button">Edit starters</button>
             <button id="showSetupButton" type="button">Edit roster or setup</button>
             <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
@@ -179,18 +205,51 @@
       </form>
     </dialog>
 
+    <dialog id="postPeriodDialog" class="live-dialog live-post-period-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Period complete</p><h2 id="postPeriodTitle">Q4 complete</h2></div></div>
+        <p id="postPeriodScore" class="live-post-period-score">Lamorinda A 0–0 Opponent</p>
+        <p class="live-panel-help">Choose how this game continues. Overtime can use 1–3 minute periods, including multiple periods or halves. Tournament rules can preload the correct format later.</p>
+        <button id="postPeriodEndGameButton" class="live-post-period-end" type="button">End game</button>
+        <div class="live-post-period-option" id="overtimeOption">
+          <label>Overtime period length
+            <select id="overtimeLength"><option value="1">1 minute</option><option value="2" selected>2 minutes</option><option value="3">3 minutes</option></select>
+          </label>
+          <label>Overtime format
+            <select id="overtimeFormat"><option value="single">Single overtime period</option><option value="multiple" selected>Multiple overtime periods / halves</option></select>
+          </label>
+          <button id="startOvertimeButton" type="button">Start overtime</button>
+        </div>
+        <button id="openShootoutSetupButton" class="live-post-period-shootout" type="button">Start shootout</button>
+      </form>
+    </dialog>
+
+    <dialog id="shootoutSetupDialog" class="live-dialog live-shootout-setup-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Shootout setup</p><h2>Who shoots first?</h2></div><button value="cancel" aria-label="Close shootout setup">Close</button></div>
+        <label>First shooter
+          <select id="shootoutFirstTeam">
+            <option value="team">Lamorinda A 14U Boys</option>
+            <option value="opponent">Opponent</option>
+          </select>
+        </label>
+        <p class="live-panel-help">After setup, select a shooter and tap Goal or Miss. Each result records immediately and the next team is selected automatically.</p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="startShootoutButton" type="button">Begin shootout</button></div>
+      </form>
+    </dialog>
+
     <dialog id="scoreDialog" class="live-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Correction</p><h2>Set the current score</h2></div><button value="cancel" aria-label="Close score dialog">Close</button></div>
-        <div class="live-form-grid"><label>Team score<input id="correctTeamScore" type="number" min="0" max="99"></label><label>Opponent score<input id="correctOpponentScore" type="number" min="0" max="99"></label></div>
+        <div class="live-form-grid"><label>Team score<input id="correctTeamScore" type="number" min="0" max="99" step="0.1"></label><label>Opponent score<input id="correctOpponentScore" type="number" min="0" max="99" step="0.1"></label></div>
         <label>Reason<input id="scoreCorrectionReason" type="text" maxlength="140" placeholder="Required correction note"></label>
         <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveScoreCorrectionButton" type="button">Save correction</button></div>
       </form>
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.55.9"></script>
-  <script src="js/live-sandbox-v7-55-9.js?v=7.55.9"></script>
+  <script src="config/live-sandbox.js?v=7.56.0"></script>
+  <script src="js/live-sandbox-v7-56-0.js?v=7.56.0"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

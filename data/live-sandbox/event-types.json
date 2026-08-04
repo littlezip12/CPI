@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 7,
-  "release": "7.55.9",
+  "schemaVersion": 9,
+  "release": "7.56.0",
   "environment": "sandbox",
   "entryModel": "guided_dropdown",
   "eventTypes": [
@@ -13,7 +13,8 @@
       "assistDefault": "unassisted",
       "teamScoreDelta": 1,
       "groupMePriority": "major",
-      "dropdownLabel": "Goal \u2014 our team"
+      "dropdownLabel": "Goal \u2014 our team",
+      "teamShotDelta": 1
     },
     {
       "id": "opponent_goal",
@@ -23,16 +24,52 @@
       "allowsAssist": false,
       "opponentScoreDelta": 1,
       "groupMePriority": "major",
-      "dropdownLabel": "Goal \u2014 opponent"
+      "dropdownLabel": "Goal \u2014 opponent",
+      "opponentShotDelta": 1
     },
     {
-      "id": "save",
-      "label": "Save",
-      "category": "defense",
+      "id": "shot_missed",
+      "label": "Shot missed",
+      "category": "shots",
       "requiresPlayer": true,
       "allowsAssist": false,
+      "teamShotDelta": 1,
       "groupMePriority": "all",
-      "dropdownLabel": "Save"
+      "dropdownLabel": "Shot missed the goal \u2014 our team"
+    },
+    {
+      "id": "shot_post",
+      "label": "Shot off post",
+      "category": "shots",
+      "requiresPlayer": true,
+      "allowsAssist": false,
+      "teamShotDelta": 1,
+      "groupMePriority": "all",
+      "dropdownLabel": "Shot off the post \u2014 our team"
+    },
+    {
+      "id": "shot_blocked",
+      "label": "Shot blocked in play",
+      "category": "shots",
+      "requiresPlayer": true,
+      "allowsAssist": false,
+      "teamShotDelta": 1,
+      "opponentFieldBlockDelta": 1,
+      "groupMePriority": "all",
+      "dropdownLabel": "Shot blocked in play \u2014 our team",
+      "playerLabel": "Shooter"
+    },
+    {
+      "id": "shot_saved",
+      "label": "Shot saved by opponent goalie",
+      "category": "shots",
+      "requiresPlayer": true,
+      "allowsAssist": false,
+      "teamShotDelta": 1,
+      "opponentSaveDelta": 1,
+      "groupMePriority": "all",
+      "dropdownLabel": "Shot saved by opponent goalie \u2014 our team",
+      "playerLabel": "Shooter"
     },
     {
       "id": "field_block",
@@ -41,7 +78,22 @@
       "requiresPlayer": true,
       "allowsAssist": false,
       "groupMePriority": "all",
-      "dropdownLabel": "Field block"
+      "dropdownLabel": "Field block \u2014 our defense",
+      "opponentShotDelta": 1,
+      "fieldBlockDelta": 1,
+      "playerLabel": "Player making block"
+    },
+    {
+      "id": "save",
+      "label": "Goalie save",
+      "category": "defense",
+      "requiresPlayer": true,
+      "allowsAssist": false,
+      "groupMePriority": "all",
+      "dropdownLabel": "Goalie save \u2014 our defense",
+      "opponentShotDelta": 1,
+      "saveDelta": 1,
+      "playerLabel": "Goalie making save"
     },
     {
       "id": "steal",
@@ -123,6 +175,46 @@
       "allowsAssist": false,
       "groupMePriority": "major",
       "dropdownLabel": "Score correction"
+    },
+    {
+      "id": "overtime_start",
+      "label": "Overtime start",
+      "category": "game",
+      "requiresPlayer": false,
+      "allowsAssist": false,
+      "groupMePriority": "major",
+      "dropdownLabel": "Overtime start"
+    },
+    {
+      "id": "shootout_start",
+      "label": "Shootout start",
+      "category": "game",
+      "requiresPlayer": false,
+      "allowsAssist": false,
+      "groupMePriority": "major",
+      "dropdownLabel": "Shootout start"
+    },
+    {
+      "id": "shootout_goal",
+      "label": "Shootout goal",
+      "category": "shootout",
+      "requiresPlayer": "team-dependent",
+      "allowsAssist": false,
+      "teamScoreDelta": 0.1,
+      "opponentScoreDelta": 0.1,
+      "groupMePriority": "major",
+      "autoSubmit": true
+    },
+    {
+      "id": "shootout_miss",
+      "label": "Shootout miss",
+      "category": "shootout",
+      "requiresPlayer": "team-dependent",
+      "allowsAssist": false,
+      "teamScoreDelta": 0,
+      "opponentScoreDelta": 0,
+      "groupMePriority": "major",
+      "autoSubmit": true
     }
   ],
   "mobileWorkflow": {
@@ -190,7 +282,60 @@
     ],
     "manualControlsLabel": "Manual controls",
     "manualControlsCollapsedByDefault": true,
-    "endGamePlacement": "manual_controls_before_activity_logs"
+    "endGamePlacement": "manual_controls_before_activity_logs",
+    "postQ4Flow": [
+      "end_game",
+      "start_overtime",
+      "start_shootout"
+    ],
+    "overtimeLengthsMinutes": [
+      1,
+      2,
+      3
+    ],
+    "overtimeAllowsAdditionalPeriods": true,
+    "shootout": {
+      "selectFirstTeam": true,
+      "alternatingAttempts": true,
+      "ourShooterSource": "team_roster",
+      "opponentShooterSource": "manual_player_or_cap",
+      "outcomes": [
+        "goal",
+        "miss"
+      ],
+      "autoSubmitOutcome": true,
+      "undoLastShot": true,
+      "endGameAnyTime": true,
+      "scoreIncrementPerGoal": 0.1,
+      "scoreExample": "10-10 becomes 10.1-10 after the first successful attempt"
+    },
+    "overtimeFormats": [
+      "single_period",
+      "multiple_periods_or_halves"
+    ],
+    "shotTracking": {
+      "nonGoalOutcomes": [
+        "missed_goal",
+        "off_post",
+        "blocked_in_play",
+        "saved_by_goalie"
+      ],
+      "allOutcomesTrackOurShooter": true,
+      "offensiveEventIds": [
+        "shot_missed",
+        "shot_post",
+        "shot_blocked",
+        "shot_saved"
+      ],
+      "opponentDefensiveCredits": {
+        "blocked_in_play": "records one opponent field block at team level while crediting our shooter with the attempt",
+        "saved_by_goalie": "records one opposing-goalie save at team level while crediting our shooter with the attempt"
+      },
+      "separateOurDefenseEvents": [
+        "field_block",
+        "save"
+      ]
+    }
   },
   "lineupRules": {
     "10U": {
