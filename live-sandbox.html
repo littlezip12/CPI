@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-55-7.css?v=7.55.7">
+  <link rel="stylesheet" href="css/live-sandbox-v7-55-8.css?v=7.55.8">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -27,7 +27,7 @@
 
     <section class="live-status-strip" aria-label="Sandbox connection status">
       <div><strong id="connectionLabel">Checking access…</strong><span id="connectionDetail">Opening the private scoring console.</span></div>
-      <button id="signOutButton" type="button">Sign out</button>
+      <div class="live-status-actions"><button id="resetSandboxTopButton" class="live-reset-button" type="button">Reset test game</button><button id="signOutButton" type="button">Sign out</button></div>
     </section>
 
     <section class="live-setup-grid" id="setupPanel" aria-labelledby="setupHeading">
@@ -138,7 +138,7 @@
             <button id="showSetupButton" type="button">Edit setup or roster</button>
             <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
             <button id="scoreCorrectionButton" type="button">Correct score</button>
-            <button id="endGameButton" type="button">End game and build recap</button>
+            <button id="endGameButton" type="button">End game and build recap</button><button id="resetSandboxGameButton" class="live-reset-button" type="button">Reset test game</button>
           </div>
         </details>
       </section>
@@ -162,7 +162,7 @@
         <div><h3>Player totals</h3><div id="playerSummary"></div></div>
         <div><h3>Editable parent recap</h3><textarea id="recapText" rows="10"></textarea></div>
       </div>
-      <div class="live-summary-actions"><button id="downloadLogButton" type="button">Download game log</button><button id="resetSandboxButton" type="button">Reset sandbox</button></div>
+      <div class="live-summary-actions"><button id="downloadLogButton" type="button">Download game log</button><button id="resetSandboxButton" class="live-reset-button" type="button">Reset test game</button></div>
     </section>
 
     <dialog id="lineupDialog" class="live-dialog">
@@ -189,8 +189,8 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.55.7"></script>
-  <script src="js/live-sandbox-v7-55-7.js?v=7.55.7"></script>
+  <script src="config/live-sandbox.js?v=7.55.8"></script>
+  <script src="js/live-sandbox-v7-55-8.js?v=7.55.8"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

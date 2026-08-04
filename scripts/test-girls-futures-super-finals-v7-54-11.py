@@ -10,7 +10,7 @@ registry=load('data/tournaments/platform/registry.json')
 bundle=load('data/tournaments/platform/events/2026-girls-futures-super-finals.json')
 placements=load('data/tournaments/archive/2026-girls-futures-super-finals.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7'}: errors.append('site version must be 7.54.11')
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8'}: errors.append('site version must be 7.54.11')
 if site.get('girlsFuturesPlatformRelease')!='7.54.11': errors.append('Girls Futures release metadata missing')
 expected={'divisionCount':8,'gameCount':374,'finalGameCount':374,'scheduledGameCount':0,'teamCount':139,'placementCount':132,'venueCount':16,'dateCount':3}
 for key,value in expected.items():

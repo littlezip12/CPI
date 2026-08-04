@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 5,
-  "release": "7.55.7",
+  "schemaVersion": 6,
+  "release": "7.55.8",
   "environment": "sandbox",
   "entryModel": "guided_dropdown",
   "eventTypes": [
@@ -156,7 +156,30 @@
     "endQuarterClock": "0:00",
     "quarterStartRequiresLineupFirst": true,
     "teamSpecificRoster": true,
-    "addPlayerEnabled": true
+    "addPlayerEnabled": true,
+    "resetTestGame": {
+      "availableStates": [
+        "setup",
+        "live",
+        "between_quarters",
+        "ended"
+      ],
+      "clears": [
+        "score",
+        "quarter",
+        "time_remaining",
+        "events",
+        "timeline",
+        "recap",
+        "mock_groupme_log"
+      ],
+      "preserves": [
+        "team_setup",
+        "roster",
+        "default_starting_lineup"
+      ],
+      "returnsTo": "pregame_setup"
+    }
   },
   "lineupRules": {
     "10U": {
