@@ -13,8 +13,8 @@ registry = load('data/tournaments/registry.json')
 html = (ROOT / 'tournaments.html').read_text(encoding='utf-8')
 js = (ROOT / 'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 
-if site.get('version') != '7.55.1':
-    errors.append('site version must be 7.55.1')
+if site.get('version') not in {'7.55.1','7.55.2'}:
+    errors.append('site version must preserve 7.55.1 or later')
 if site.get('tournamentSeasonRelease') != '7.55.0':
     errors.append('tournamentSeasonRelease must be 7.55.0')
 if hub.get('release') != '7.55.1' or registry.get('release') != '7.55.1':

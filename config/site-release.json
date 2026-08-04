@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.55.1",
-  "name": "Final Rankings Snapshot and Multi-Season Foundation",
+  "version": "7.55.2",
+  "name": "Live Scoring Sandbox Foundation",
   "date": "2026-08-03",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "migration",
-  "notes": "Freezes 2025–2026 final rankings and profile data as immutable season snapshots, opens 2026–2027 with results gathering in progress, and adds season-aware navigation across rankings, teams, clubs, profiles, and tournament history without changing competitive results.",
+  "notes": "Adds an isolated, noindex live-scoring sandbox with a mobile-first scrimmage console, roster and lineup setup, structured event logging, score corrections, mock GroupMe message previews, end-of-game analytics, and a Supabase/GroupMe backend blueprint. Sandbox data cannot affect rankings or official tournament results.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -43,7 +43,7 @@
   "sponsorFrameworkRelease": "7.53.2",
   "commercialFoundationRelease": "7.53.2",
   "navigationRelease": "7.54.13",
-  "publicExperienceRelease": "7.55.1",
+  "publicExperienceRelease": "7.55.2",
   "storiesStatus": "retired-preserved",
   "teamDirectoryRelease": "7.54.14",
   "sectionLandingRelease": "7.54.15",
@@ -73,5 +73,7 @@
   "rankingSeasonRelease": "7.55.1",
   "seasonArchitectureRelease": "7.55.1",
   "finalRankingSnapshotRelease": "7.55.1",
-  "seasonNavigationRelease": "7.55.1"
+  "seasonNavigationRelease": "7.55.1",
+  "liveScoringSandboxRelease": "7.55.2",
+  "liveScoringBackendBlueprintRelease": "7.55.2"
 }

@@ -1,9 +1,10 @@
-# WPI 7.55.1 — Final Rankings Snapshot and Multi-Season Foundation
+# WPI 7.55.2 — Live Scoring Sandbox Foundation
 
-- Freezes all **724 published rankings** as the immutable **2025–2026 Final Rankings** snapshot across eight age/gender groups.
-- Preserves season-specific club, ranked-team profile, and public-tournament records with SHA-256 integrity hashes.
-- Establishes **2026–2027** as the active competitive season with **results gathering in progress** and zero fabricated preseason rankings.
-- Adds season-aware navigation and stable `?season=startYear-endYear` routes across Rankings, Teams, Clubs, team profiles, club profiles, and Tournament history.
-- Keeps Rankings, Teams, Clubs, and profiles on the completed 2025–2026 season by default until reviewed 2026–2027 rankings are published.
-- Retains actual event years and the legacy 2026 identity season separately from competitive-season grouping.
-- Preserves all ranking positions, WPI values, 182 club identities, scores, placements, logos, websites, and tournament journeys.
+- Adds a hidden, `noindex` **Live Scoring Sandbox** for dry runs and scrimmage testing without touching rankings, tournament archives, official results, or public team profiles.
+- Provides a mobile-first console for goals and optional assists, saves, field blocks, steals, turnovers, exclusions drawn/committed, five-meter penalties drawn/committed, opponent goals, quarter starts, starting lineups, score corrections, undo, and manual quarter/time remaining.
+- Stores demo-mode test data only in the scorer's browser and clearly labels all output as unofficial sandbox data.
+- Generates exact GroupMe message previews with configurable message frequency, pause/resume controls, and a reusable team/tournament destination label.
+- Produces end-of-game team/player analytics, an editable parent recap, and a downloadable JSON game log.
+- Adds a Supabase schema with email/password-ready team roles, row-level security, sandbox/production separation, rosters, games, lineups, events, and delivery audit records.
+- Adds a server-side GroupMe Edge Function blueprint that keeps the bot ID out of GitHub and the public browser client.
+- Keeps all 724 final rankings, 182 clubs, multi-season snapshots, tournament scores, placements, identities, logos, websites, and journeys unchanged.

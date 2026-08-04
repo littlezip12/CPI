@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Live Scoring Sandbox | Water Polo Index</title>
+  <meta name="description" content="Private WPI sandbox for testing structured live water polo scoring, parent update messages, and game recaps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/live-sandbox-v7-55-2.css?v=7.55.2">
+</head>
+<body class="wpi-live-sandbox-page">
+  <main class="live-sandbox-shell" id="liveSandboxApp">
+    <section class="live-sandbox-banner" aria-labelledby="sandboxTitle">
+      <div>
+        <p class="live-sandbox-kicker">WPI live scoring pilot</p>
+        <h1 id="sandboxTitle">Live Scoring Sandbox</h1>
+        <p>Test the game-day workflow during a dry run or scrimmage. Sandbox events never affect rankings, official tournament results, or public team profiles.</p>
+      </div>
+      <span class="live-sandbox-badge">Sandbox · test data only</span>
+    </section>
+
+    <section class="live-status-strip" aria-label="Sandbox connection status">
+      <div><strong id="connectionLabel">Local demo mode</strong><span id="connectionDetail">Events remain on this browser. GroupMe messages are previewed but not sent.</span></div>
+      <button id="signOutButton" type="button" hidden>Sign out</button>
+    </section>
+
+    <section class="live-auth-panel" id="authPanel" hidden aria-labelledby="authHeading">
+      <div>
+        <p class="live-section-kicker">Secure access</p>
+        <h2 id="authHeading">Sign in to the team sandbox</h2>
+        <p>Email/password authentication becomes active after the team-owned Supabase project is connected.</p>
+      </div>
+      <form id="authForm">
+        <label>Email<input id="authEmail" type="email" autocomplete="username" required></label>
+        <label>Password<input id="authPassword" type="password" autocomplete="current-password" required></label>
+        <button type="submit">Sign in</button>
+        <p id="authMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section class="live-setup-grid" id="setupPanel" aria-labelledby="setupHeading">
+      <div class="live-panel live-panel--setup">
+        <div class="live-panel-heading">
+          <div><p class="live-section-kicker">Scrimmage setup</p><h2 id="setupHeading">Create a sandbox game</h2></div>
+          <span id="setupSourceBadge">Manual sandbox entry</span>
+        </div>
+        <div class="live-form-grid">
+          <label>Team<input id="teamName" type="text" value="Pilot Team" maxlength="80"></label>
+          <label>Opponent<input id="opponentName" type="text" value="Scrimmage Opponent" maxlength="80"></label>
+          <label>Game date and time<span class="live-datetime-wrap"><input id="gameDateTime" type="datetime-local"></span></label>
+          <label>Venue<input id="gameVenue" type="text" placeholder="Pool or facility" maxlength="120"></label>
+          <label>Quarter length<select id="quarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
+          <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
+          <label>Message frequency<select id="messageFrequency"><option value="all">Every recorded action</option><option value="major" selected>Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
+          <label>Visibility<select id="visibility"><option value="team_private" selected>Team Private</option><option value="private_only">Private Only</option><option value="public_team">Public team-level updates</option></select></label>
+        </div>
+      </div>
+
+      <div class="live-panel live-panel--roster">
+        <div class="live-panel-heading">
+          <div><p class="live-section-kicker">Team roster</p><h2>Names and cap numbers</h2></div>
+          <button id="addPlayerButton" type="button">Add player</button>
+        </div>
+        <p class="live-panel-help">Enter the roster once. The connected version will reuse it across tournament games.</p>
+        <div class="live-roster-list" id="rosterList"></div>
+      </div>
+    </section>
+
+    <section class="live-launch-row" id="launchRow">
+      <div><strong>Ready to test?</strong><span>Start with a dry run, then use the same page during a scrimmage.</span></div>
+      <button id="startGameButton" type="button">Select starters and start game</button>
+    </section>
+
+    <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
+      <div class="live-scoreboard" aria-live="polite">
+        <div class="live-score-team"><span id="scoreTeamName">Pilot Team</span><strong id="teamScore">0</strong></div>
+        <div class="live-score-center"><span id="gameStatus">Live sandbox</span><strong id="scoreDivider">–</strong><em id="quarterClockLabel">Q1 · 7:00</em></div>
+        <div class="live-score-team live-score-team--opponent"><span id="scoreOpponentName">Opponent</span><strong id="opponentScore">0</strong></div>
+      </div>
+
+      <div class="live-console-grid">
+        <section class="live-panel live-action-panel" aria-labelledby="consoleHeading">
+          <div class="live-panel-heading">
+            <div><p class="live-section-kicker">Record an action</p><h2 id="consoleHeading">Fast game entry</h2></div>
+            <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
+          </div>
+
+          <div class="live-clock-controls">
+            <label>Quarter<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT</option></select></label>
+            <label>Minutes remaining<input id="clockMinutes" type="number" min="0" max="15" inputmode="numeric" value="7"></label>
+            <label>Seconds remaining<input id="clockSeconds" type="number" min="0" max="59" inputmode="numeric" value="0"></label>
+            <button id="startQuarterButton" type="button">Start selected quarter</button>
+          </div>
+
+          <div class="live-action-tabs" id="actionTabs" role="group" aria-label="Game actions"></div>
+
+          <div class="live-action-entry">
+            <div class="live-selected-action"><span>Selected action</span><strong id="selectedActionLabel">Goal</strong></div>
+            <label id="primaryPlayerLabel">Player<select id="primaryPlayer"></select></label>
+            <label id="secondaryPlayerLabel" hidden>Assist<select id="secondaryPlayer"><option value="">No assist recorded</option></select></label>
+            <label>Optional note<input id="eventNote" type="text" maxlength="140" placeholder="Short context for parents"></label>
+            <button id="recordEventButton" type="button">Record and preview update</button>
+            <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
+          </div>
+
+          <div class="live-utility-actions">
+            <button id="undoButton" type="button">Undo last event</button>
+            <button id="scoreCorrectionButton" type="button">Correct score</button>
+            <button id="endGameButton" type="button">End game and build recap</button>
+          </div>
+        </section>
+
+        <aside class="live-panel live-message-panel" aria-labelledby="messagePreviewHeading">
+          <div class="live-panel-heading"><div><p class="live-section-kicker">Parent delivery preview</p><h2 id="messagePreviewHeading">GroupMe messages</h2></div><span id="messageModeBadge">Mock delivery</span></div>
+          <p class="live-panel-help" id="messageHelp">This release previews the exact messages. The bot connection is activated after Supabase and GroupMe setup.</p>
+          <div class="live-message-list" id="messageList"><p class="live-empty-state">No messages generated yet.</p></div>
+        </aside>
+      </div>
+
+      <section class="live-panel live-timeline-panel" aria-labelledby="timelineHeading">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Structured game log</p><h2 id="timelineHeading">Live timeline</h2></div><span id="eventCount">0 events</span></div>
+        <div class="live-timeline" id="timelineList"><p class="live-empty-state">Start the game to create the first timeline event.</p></div>
+      </section>
+    </section>
+
+    <section class="live-panel live-summary-panel" id="summaryPanel" hidden aria-labelledby="summaryHeading">
+      <div class="live-panel-heading"><div><p class="live-section-kicker">End-of-game output</p><h2 id="summaryHeading">Sandbox analytics and recap</h2></div><span>Unofficial · based on recorded events</span></div>
+      <div class="live-summary-metrics" id="summaryMetrics"></div>
+      <div class="live-summary-grid">
+        <div><h3>Player totals</h3><div id="playerSummary"></div></div>
+        <div><h3>Editable parent recap</h3><textarea id="recapText" rows="10"></textarea></div>
+      </div>
+      <div class="live-summary-actions"><button id="downloadLogButton" type="button">Download game log</button><button id="resetSandboxButton" type="button">Reset sandbox</button></div>
+    </section>
+
+    <dialog id="lineupDialog" class="live-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Starting lineup</p><h2 id="lineupDialogTitle">Select Q1 starters</h2></div><button value="cancel" aria-label="Close lineup dialog">Close</button></div>
+        <p>Select up to seven players. The prior quarter remains selected by default.</p>
+        <div id="lineupChoices" class="live-lineup-choices"></div>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveLineupButton" type="button">Save lineup and start quarter</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="scoreDialog" class="live-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Correction</p><h2>Set the current score</h2></div><button value="cancel" aria-label="Close score dialog">Close</button></div>
+        <div class="live-form-grid"><label>Team score<input id="correctTeamScore" type="number" min="0" max="99"></label><label>Opponent score<input id="correctOpponentScore" type="number" min="0" max="99"></label></div>
+        <label>Reason<input id="scoreCorrectionReason" type="text" maxlength="140" placeholder="Required correction note"></label>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveScoreCorrectionButton" type="button">Save correction</button></div>
+      </form>
+    </dialog>
+  </main>
+
+  <script src="config/live-sandbox.js?v=7.55.2"></script>
+  <script src="js/live-sandbox-v7-55-2.js?v=7.55.2"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+</body>
+</html>

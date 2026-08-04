@@ -12,11 +12,11 @@ def read(rel):
 
 site = json.loads(read('config/site-release.json'))
 expected_release_values = {
-    'version': {'7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1'},
-    'homepageRelease': {'7.54.13','7.54.18','7.55.0','7.55.1'},
+    'version': {'7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2'},
+    'homepageRelease': {'7.54.13','7.54.18','7.55.0','7.55.1','7.55.2'},
     'navigationRelease': {'7.54.13'},
-    'publicExperienceRelease': {'7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1'},
-    'sectionLandingRelease': {'7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1'},
+    'publicExperienceRelease': {'7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2'},
+    'sectionLandingRelease': {'7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2'},
 }
 for key, allowed in expected_release_values.items():
     if site.get(key) not in allowed:
