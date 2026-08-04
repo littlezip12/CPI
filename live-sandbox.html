@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-55-8.css?v=7.55.8">
+  <link rel="stylesheet" href="css/live-sandbox-v7-55-9.css?v=7.55.9">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -80,7 +80,7 @@
 
       <section class="live-panel live-action-panel" aria-labelledby="consoleHeading">
         <div class="live-panel-heading live-compact-heading">
-          <div><p class="live-section-kicker">One-hand scorer</p><h2 id="consoleHeading">Record a play</h2></div>
+          <div><p class="live-section-kicker">One-hand scorer</p><h2 id="consoleHeading">Time of play</h2></div>
           <span id="currentLineupStatus" class="live-lineup-status">Q1 starters saved</span>
         </div>
 
@@ -90,11 +90,10 @@
         </div>
 
         <div class="live-time-row">
-          <label class="live-time-field">Time remaining
+          <label class="live-time-field">Time remaining in quarter
             <input id="clockTime" type="text" inputmode="numeric" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp">
             <small id="clockHelp">Enter 6:45 or type 645.</small>
           </label>
-          <button id="endQuarterButton" type="button">End quarter</button>
         </div>
 
         <form id="eventForm" class="live-event-form">
@@ -116,40 +115,41 @@
             </select>
           </label>
 
-          <button id="addNoteButton" class="live-secondary-toggle" type="button" hidden>Add optional note</button>
-          <label id="eventNoteLabel" class="live-field-full" hidden>Optional note
+          <label id="eventNoteLabel" class="live-field-full">Additional notes <span class="live-optional-label">Optional</span>
             <input id="eventNote" type="text" maxlength="140" placeholder="Short context for parents">
           </label>
 
-          <details id="messagePreviewDetails" class="live-preview-details" hidden>
+          <details id="messagePreviewDetails" class="live-preview-details" hidden open>
             <summary>Preview GroupMe message</summary>
             <pre id="messagePreview">Choose a play to preview the parent message.</pre>
           </details>
 
           <button id="recordEventButton" type="submit" disabled>Submit play</button>
+          <button id="endQuarterButton" class="live-end-quarter-secondary" type="button">End quarter</button>
           <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
         </form>
 
         <details class="live-game-controls" id="gameControlsDetails">
-          <summary>Game controls</summary>
+          <summary>Manual controls</summary>
           <div class="live-game-controls-grid">
             <label>Current quarter<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT</option></select></label>
-            <button id="editCurrentLineupButton" type="button">Edit current starters</button>
-            <button id="showSetupButton" type="button">Edit setup or roster</button>
+            <button id="editCurrentLineupButton" type="button">Edit starters</button>
+            <button id="showSetupButton" type="button">Edit roster or setup</button>
             <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
             <button id="scoreCorrectionButton" type="button">Correct score</button>
-            <button id="endGameButton" type="button">End game and build recap</button><button id="resetSandboxGameButton" class="live-reset-button" type="button">Reset test game</button>
+            <button id="resetSandboxGameButton" class="live-reset-button" type="button">Reset test game</button>
+            <button id="endGameButton" class="live-end-game-primary" type="button">End game and build recap</button>
           </div>
         </details>
       </section>
 
-      <details class="live-panel live-message-panel">
+      <details class="live-panel live-message-panel" id="messageDetails" open>
         <summary><span><strong>GroupMe play log</strong><small id="messageModeBadge">Mock delivery</small></span><span id="messageCount">0 messages</span></summary>
         <p class="live-panel-help" id="messageHelp">Messages are previewed locally until the secure GroupMe connection is activated.</p>
         <div class="live-message-list" id="messageList"><p class="live-empty-state">No messages generated yet.</p></div>
       </details>
 
-      <details class="live-panel live-timeline-panel" id="timelineDetails">
+      <details class="live-panel live-timeline-panel" id="timelineDetails" open>
         <summary><span><strong>Game timeline</strong><small>Open during or after the game</small></span><span id="eventCount">0 events</span></summary>
         <div class="live-timeline" id="timelineList"><p class="live-empty-state">Start the game to create the first timeline event.</p></div>
       </details>
@@ -189,8 +189,8 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.55.8"></script>
-  <script src="js/live-sandbox-v7-55-8.js?v=7.55.8"></script>
+  <script src="config/live-sandbox.js?v=7.55.9"></script>
+  <script src="js/live-sandbox-v7-55-9.js?v=7.55.9"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

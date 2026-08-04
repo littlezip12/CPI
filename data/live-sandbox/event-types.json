@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 6,
-  "release": "7.55.8",
+  "schemaVersion": 7,
+  "release": "7.55.9",
   "environment": "sandbox",
   "entryModel": "guided_dropdown",
   "eventTypes": [
@@ -179,7 +179,18 @@
         "default_starting_lineup"
       ],
       "returnsTo": "pregame_setup"
-    }
+    },
+    "sectionHeading": "Time of play",
+    "notesExpandedByDefault": true,
+    "endQuarterPlacement": "below_submit",
+    "endQuarterPresentation": "compact_secondary",
+    "activityPanelsAutoOpen": [
+      "groupme_play_log",
+      "game_timeline"
+    ],
+    "manualControlsLabel": "Manual controls",
+    "manualControlsCollapsedByDefault": true,
+    "endGamePlacement": "manual_controls_before_activity_logs"
   },
   "lineupRules": {
     "10U": {

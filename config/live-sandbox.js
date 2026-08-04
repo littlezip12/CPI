@@ -1,9 +1,9 @@
-/* WPI 7.55.8 live-scoring sandbox configuration.
+/* WPI 7.55.9 live-scoring sandbox configuration.
  * Public Supabase URL/publishable keys may be added here later.
  * Never place a GroupMe bot ID, service-role key, password, or other secret in this file.
  */
 window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({
-  release: "7.55.8",
+  release: "7.55.9",
   environment: "sandbox",
   mode: "demo",
   supabaseUrl: "",
