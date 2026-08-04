@@ -1,0 +1,128 @@
+/* WPI 7.55.1 — competitive-season navigation */
+.wpi-season-context {
+  max-width: 1180px;
+  margin: 20px auto 0;
+  padding: 0 24px;
+}
+.wpi-season-context-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 280px);
+  gap: 18px;
+  align-items: center;
+  padding: 16px 18px;
+  border: 1px solid rgba(12, 42, 82, .14);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(16, 74, 135, .07), rgba(255,255,255,.96));
+}
+.wpi-season-context-copy { min-width: 0; }
+.wpi-season-context-copy span {
+  display: inline-flex;
+  margin-bottom: 5px;
+  color: #a64f00;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.wpi-season-context-copy strong {
+  display: block;
+  color: #092e61;
+  font-size: 1rem;
+}
+.wpi-season-context-copy p {
+  margin: 4px 0 0;
+  color: #4b5e75;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+.wpi-season-control label {
+  display: block;
+  margin-bottom: 5px;
+  color: #50647a;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.wpi-season-control select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 38px 0 12px;
+  border: 1px solid rgba(9, 46, 97, .24);
+  border-radius: 10px;
+  background: #fff;
+  color: #092e61;
+  font: inherit;
+  font-weight: 700;
+}
+.wpi-season-empty {
+  padding: 42px 28px !important;
+  text-align: center;
+}
+.wpi-season-empty span,
+.wpi-active-season-profile .season-kicker {
+  color: #a64f00;
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.wpi-season-empty h3 { margin: 8px 0; color: #092e61; font-size: 1.4rem; }
+.wpi-season-empty p { max-width: 650px; margin: 0 auto 18px; color: #50647a; line-height: 1.6; }
+.wpi-season-empty a { color: #0b5fb3; font-weight: 800; }
+.wpi-active-season-profile {
+  max-width: 920px;
+  margin: 28px auto 70px;
+  padding: 42px;
+  border: 1px solid rgba(12, 42, 82, .14);
+  border-radius: 22px;
+  background: #fff;
+}
+.wpi-active-season-profile-head {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+}
+.wpi-active-season-profile-logo {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #f4f7fb;
+  padding: 9px;
+}
+.wpi-active-season-profile h1 { margin: 5px 0 4px; color: #092e61; font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.wpi-active-season-profile .season-subtitle { margin: 0; color: #50647a; }
+.wpi-active-season-profile-status {
+  margin: 28px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background: #f4f7fb;
+}
+.wpi-active-season-profile-status strong { display: block; margin-bottom: 6px; color: #092e61; }
+.wpi-active-season-profile-status p { margin: 0; color: #4b5e75; line-height: 1.6; }
+.wpi-active-season-profile-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.wpi-active-season-profile-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  background: #092e61;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+.wpi-active-season-profile-actions a.secondary { background: #edf3f9; color: #092e61; }
+body.wpi-active-ranking-season .club-directory-subtitle-v726::after,
+body.wpi-active-ranking-season .teams-directory-summary::after {
+  content: " Rankings shown on directory cards are retained as 2025–2026 final-season reference context.";
+}
+@media (max-width: 700px) {
+  .wpi-season-context { padding: 0 14px; margin-top: 14px; }
+  .wpi-season-context-inner { grid-template-columns: 1fr; gap: 12px; padding: 14px; }
+  .wpi-active-season-profile { margin: 18px 14px 50px; padding: 24px 18px; }
+  .wpi-active-season-profile-head { grid-template-columns: 58px minmax(0, 1fr); }
+  .wpi-active-season-profile-logo { width: 58px; height: 58px; }
+}

@@ -13,8 +13,8 @@ for key, expected in {
     "sectionLandingRelease": "7.54.15",
 }.items():
     if site.get(key) != expected: errors.append(f"{key} must be {expected}")
-if site.get("version") not in {"7.54.18", "7.55.0"}: errors.append("version must preserve 7.54.18 or later")
-if site.get("publicExperienceRelease") not in {"7.54.18", "7.55.0"}: errors.append("publicExperienceRelease must preserve 7.54.18 or later")
+if site.get("version") not in {"7.54.18", "7.55.0", "7.55.1"}: errors.append("version must preserve 7.54.18 or later")
+if site.get("publicExperienceRelease") not in {"7.54.18", "7.55.0", "7.55.1"}: errors.append("publicExperienceRelease must preserve 7.54.18 or later")
 
 teams = read("teams.html")
 for token in (

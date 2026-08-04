@@ -13,12 +13,12 @@ registry = load('data/tournaments/registry.json')
 html = (ROOT / 'tournaments.html').read_text(encoding='utf-8')
 js = (ROOT / 'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 
-if site.get('version') != '7.55.0':
-    errors.append('site version must be 7.55.0')
+if site.get('version') != '7.55.1':
+    errors.append('site version must be 7.55.1')
 if site.get('tournamentSeasonRelease') != '7.55.0':
     errors.append('tournamentSeasonRelease must be 7.55.0')
-if hub.get('release') != '7.55.0' or registry.get('release') != '7.55.0':
-    errors.append('tournament hub and registry releases must be 7.55.0')
+if hub.get('release') != '7.55.1' or registry.get('release') != '7.55.1':
+    errors.append('tournament hub and registry releases must be 7.55.1')
 
 season_rows = seasons.get('seasons', [])
 season_ids = [row.get('id') for row in season_rows]
@@ -69,7 +69,7 @@ if registry.get('activeCompetitiveSeason') != '2026-2027' or registry.get('final
 if any(event.get('competitiveSeason') != '2025-2026' for event in registry.get('events', [])):
     errors.append('existing registry events must remain in the completed 2025–2026 season')
 
-for token in ['Season history', 'competitive season', 'Tournament archive competitive seasons', 'js/tournament-hub-v7-54-4.js?v=7.55.0']:
+for token in ['Season history', 'competitive season', 'Tournament archive competitive seasons', 'js/tournament-hub-v7-54-4.js?v=7.55.1']:
     if token not in html:
         errors.append(f'tournaments page missing {token}')
 for token in ['state.config.seasons', 'event.competitiveSeason', 'data-season', 'finalSeason']:

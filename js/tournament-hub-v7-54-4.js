@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const RELEASE = "7.55.0";
+  const RELEASE = "7.55.1";
   const FALLBACK = "assets/logos/cpi-logo-fallback.svg?v=7.53.4";
   const state = { config:null, season:"2026-2027", event:null, bundleCache:new Map(), requestedGroup:"", requestedTeam:"" };
   const $ = id => document.getElementById(id);
@@ -53,12 +53,20 @@
 
   function currentSeasonConfig(){ return state.config.seasons.find(season => season.id === state.season) || state.config.seasons[0]; }
 
+  function updateSeasonUrl(){
+    if(!window.history?.replaceState || !state.season) return;
+    const url = new URL(window.location.href);
+    url.searchParams.set("season", state.season);
+    window.history.replaceState({}, "", url);
+  }
+
   function renderYears(){
     const mount = $("tournamentYearTabs");
     mount.innerHTML = state.config.seasons.map(season => `<button class="tournament-year-tab${season.id===state.season?" active":""}" type="button" data-season="${esc(season.id)}"><strong>${esc(season.label)}</strong><span>${esc(season.status === "final" ? "Final season" : "Current season")}</span></button>`).join("");
     mount.querySelectorAll("[data-season]").forEach(button => button.addEventListener("click", () => {
       state.season = button.dataset.season;
       state.event = null;
+      updateSeasonUrl();
       renderYears();
       renderEvents();
       $("archiveBrowser").hidden = true;
@@ -89,6 +97,7 @@
     if(!event) return;
     state.season = event.competitiveSeason;
     state.event = event;
+    updateSeasonUrl();
     renderYears();
     renderEvents();
     const browser = $("archiveBrowser");

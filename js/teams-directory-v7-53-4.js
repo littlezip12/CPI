@@ -1,7 +1,10 @@
-/* WPI 7.54.14 — curated connected team directory with canonical club logo resolution */
+/* WPI 7.55.1 — season-aware connected team directory */
 (() => {
   "use strict";
   const rankings = Array.isArray(window.CPI_RANKINGS) ? window.CPI_RANKINGS : [];
+  const season = window.WPISeason?.resolve("teams") || { id:"2025-2026", label:"2025–2026", rankingStatus:"final" };
+  const finalSeason = window.WPISeason?.get(window.WPI_SEASON_INDEX?.finalRankingSeasonId || "2025-2026") || { id:"2025-2026", label:"2025–2026" };
+  const seasonHref = href => window.WPISeason?.withSeason(href, season.id) || href;
   const clubs = Array.isArray(window.CPI_CLUBS) ? window.CPI_CLUBS : [];
   const joProfiles = window.WPI_JO_PROFILES?.teams || {};
   const fallbackLogo = "assets/logos/cpi-logo-fallback.svg?v=7.53.6";
@@ -41,7 +44,7 @@
     rating: Number(team.postCPI) || null,
     record: team.latestTournamentRecord || "",
     placement: team.joDivisionFinish ? `${team.joDivision || "JO"} · ${team.joDivisionFinish}${ordinalSuffix(team.joDivisionFinish)}` : "",
-    page: team.teamPage || `team.html?team=${encodeURIComponent(team.slug)}`,
+    page: seasonHref(team.teamPage || `team.html?team=${encodeURIComponent(team.slug)}`),
     primaryColor: team.primaryColor || clubBySlug.get(team.clubSlug)?.primaryColor || "#126dff",
     secondaryColor: team.secondaryColor || clubBySlug.get(team.clubSlug)?.secondaryColor || "#2bd7f3",
     source: "ranked"
@@ -65,7 +68,7 @@
       rating: null,
       record: formatRecord(team.recordSummary) || team.record || "",
       placement: [team.division, team.divisionPlaceLabel].filter(Boolean).join(" · "),
-      page: team.teamPage || `team.html?team=${encodeURIComponent(team.profileSlug)}`,
+      page: seasonHref(team.teamPage || `team.html?team=${encodeURIComponent(team.profileSlug)}`),
       primaryColor: team.primaryColor || club?.primaryColor || "#126dff",
       secondaryColor: team.secondaryColor || club?.secondaryColor || "#2bd7f3",
       source: "tournament"
@@ -181,8 +184,12 @@
   }
 
   function card(team) {
-    const ranking = team.rank ? `#${team.rank}` : "JO profile";
-    const rating = team.rating ? `WPI ${team.rating.toFixed(1)}` : "Tournament connected";
+    const ranking = team.rank
+      ? (season.rankingStatus === "final" ? `Final #${team.rank}` : `${finalSeason.label} final #${team.rank}`)
+      : "Tournament profile";
+    const rating = team.rating
+      ? (season.rankingStatus === "final" ? `Final WPI ${team.rating.toFixed(1)}` : `${finalSeason.label} WPI ${team.rating.toFixed(1)}`)
+      : "Tournament connected";
     return `<a class="team-directory-card" href="${escapeHtml(team.page)}" style="--team-primary:${escapeHtml(team.primaryColor)};--team-secondary:${escapeHtml(team.secondaryColor)}">
       <div class="team-directory-card-head">
         <img class="team-directory-logo" src="${escapeHtml(team.logo)}" alt="${escapeHtml(team.club)} logo" loading="lazy">
@@ -203,8 +210,8 @@
     if (reset) visible = 48;
     if (isFeaturedView()) {
       eyebrow.textContent = "Featured teams";
-      title.textContent = "25 teams to explore";
-      count.textContent = `${featuredRecords.length} current top-50 teams · ${new Set(featuredRecords.map(team => team.clubKey)).size} clubs · rotates weekly`;
+      title.textContent = season.rankingStatus === "final" ? "25 final-season teams to explore" : "Team identities with prior-season context";
+      count.textContent = `${featuredRecords.length} ${finalSeason.label} final top-50 teams · ${new Set(featuredRecords.map(team => team.clubKey)).size} clubs · rotates weekly`;
       grid.innerHTML = featuredRecords.map(card).join("");
       loadMore.hidden = true;
       return;

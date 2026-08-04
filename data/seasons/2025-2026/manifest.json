@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "release": "7.55.1",
+  "season": {
+    "id": "2025-2026",
+    "label": "2025–2026",
+    "status": "final",
+    "rankingStatus": "final",
+    "publicLabel": "2025–2026 Final Rankings",
+    "finalizedAt": "2026-08-03",
+    "openingEventId": "2025-evan-cousineau-memorial-cup",
+    "closingEventId": "2026-junior-olympics"
+  },
+  "counts": {
+    "rankings": 724,
+    "rankingGroups": 8,
+    "clubs": 182,
+    "rankedTeams": 724,
+    "publicTournaments": 8
+  },
+  "integrity": {
+    "rankingsSha256": "91432cb1e0b5db48851ca6e9340c6bcc62fc3f325c41054c4c406c3791b554fc",
+    "clubsSha256": "472b59855763a91d86eb7ad970eb9b301669856395c60b3d5df973968351ddef",
+    "teamsSha256": "e0425ad0814076a4629bad0902e7f1cc04608b72f3af2080bad9751651b23538",
+    "tournamentsSha256": "3a83e3a6eb38b84970dc113e62ce9b7cf10d49c1d2236b7c47177a047fd5422e"
+  },
+  "data": {
+    "rankings": "rankings.json",
+    "clubs": "clubs.json",
+    "teams": "teams.json",
+    "tournaments": "tournaments.json"
+  },
+  "policy": [
+    "This snapshot is immutable after publication.",
+    "Future tournament imports and ranking releases must not rewrite these files.",
+    "The legacy identity year remains 2026 while competitive-season grouping uses 2025-2026."
+  ]
+}

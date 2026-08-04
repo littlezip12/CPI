@@ -28,7 +28,7 @@ def write(rel: str, data) -> None:
 # Public tournament hub and season tabs.
 hub = load("data/tournaments/public-hub.json")
 hub["schemaVersion"] = 2
-hub["release"] = "7.55.0"
+hub["release"] = "7.55.1"
 hub["seasonModel"] = {
     "type": "competitive_year_range",
     "labelFormat": "startYear–endYear",
@@ -89,7 +89,7 @@ write(
     "data/tournaments/seasons.json",
     {
         "schemaVersion": 1,
-        "release": "7.55.0",
+        "release": "7.55.1",
         "model": "competitive_year_range",
         "displayConvention": "startYear–endYear",
         "description": "WPI seasons begin with fall club tournaments and close after the following summer championship cycle. Calendar event dates remain unchanged.",
@@ -122,7 +122,7 @@ write(
 # Central source registry. Existing per-division `season` values remain legacy
 # identity years and are intentionally not rewritten.
 registry = load("data/tournaments/registry.json")
-registry["release"] = "7.55.0"
+registry["release"] = "7.55.1"
 registry["competitiveSeasonModel"] = "startYear-endYear"
 registry["activeCompetitiveSeason"] = ACTIVE_SEASON
 registry["finalCompetitiveSeason"] = FINAL_SEASON
@@ -134,7 +134,7 @@ write("data/tournaments/registry.json", registry)
 
 # Reusable platform registry.
 platform_registry = load("data/tournaments/platform/registry.json")
-platform_registry["release"] = "7.55.0"
+platform_registry["release"] = "7.55.1"
 platform_registry["competitiveSeasonModel"] = "startYear-endYear"
 platform_registry["activeCompetitiveSeason"] = ACTIVE_SEASON
 platform_registry["finalCompetitiveSeason"] = FINAL_SEASON

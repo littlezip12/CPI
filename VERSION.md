@@ -1,9 +1,9 @@
-# WPI 7.55.0 — Competitive Season Tournament History
+# WPI 7.55.1 — Final Rankings Snapshot and Multi-Season Foundation
 
-- Replaces calendar-year tournament archive tabs with competitive seasons using the permanent `startYear-endYear` convention.
-- Publishes **2025–2026** as the completed season, beginning with the October 2025 Evan Cousineau Memorial Cup and ending with the 2026 Junior Olympics recap.
-- Opens **2026–2027** as the active season, with the October 2026 Evan Cousineau Memorial Cup identified as the first upcoming event.
-- Removes the empty 2024 archive tab while preserving the ability to add older seasons later.
-- Retains each event's actual calendar year and dates separately from its competitive-season assignment.
-- Adds competitive-season metadata to the public hub, central tournament registry, reusable platform registry, platform event bundles, and archived event records.
-- Preserves all 724 rankings, 182 clubs, 976 established JO placements, scores, identities, logos, and tournament journeys.
+- Freezes all **724 published rankings** as the immutable **2025–2026 Final Rankings** snapshot across eight age/gender groups.
+- Preserves season-specific club, ranked-team profile, and public-tournament records with SHA-256 integrity hashes.
+- Establishes **2026–2027** as the active competitive season with **results gathering in progress** and zero fabricated preseason rankings.
+- Adds season-aware navigation and stable `?season=startYear-endYear` routes across Rankings, Teams, Clubs, team profiles, club profiles, and Tournament history.
+- Keeps Rankings, Teams, Clubs, and profiles on the completed 2025–2026 season by default until reviewed 2026–2027 rankings are published.
+- Retains actual event years and the legacy 2026 identity season separately from competitive-season grouping.
+- Preserves all ranking positions, WPI values, 182 club identities, scores, placements, logos, websites, and tournament journeys.
