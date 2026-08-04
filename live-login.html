@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Live Scoring Sign In | Water Polo Index</title>
+  <meta name="description" content="Secure entry point for the private WPI live-scoring pilot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/live-sandbox-v7-55-4.css?v=7.55.4">
+</head>
+<body class="wpi-live-login-page">
+  <main class="live-login-shell" id="liveLoginApp">
+    <section class="live-login-brand">
+      <p class="live-sandbox-kicker">WPI live scoring pilot</p>
+      <h1>Sign in to live scoring</h1>
+      <p>Team scorers and administrators use this private entry point to open scheduled tournament games or create a manual scrimmage.</p>
+      <span class="live-sandbox-badge">Sandbox · test data only</span>
+    </section>
+
+    <section class="live-login-card" aria-labelledby="loginHeading">
+      <div class="live-auth-tabs" role="tablist" aria-label="Account access">
+        <button id="signInTab" type="button" role="tab" aria-selected="true">Sign in</button>
+        <button id="signUpTab" type="button" role="tab" aria-selected="false">Create account</button>
+      </div>
+
+      <div>
+        <p class="live-section-kicker">Secure team access</p>
+        <h2 id="loginHeading">Open the scoring console</h2>
+        <p id="loginExplanation" class="live-panel-help">Use the team account assigned to you.</p>
+      </div>
+
+      <form id="loginForm" class="live-login-form">
+        <label>Email
+          <input id="loginEmail" type="email" autocomplete="username" required>
+        </label>
+        <label>Password
+          <input id="loginPassword" type="password" autocomplete="current-password" minlength="8" required>
+        </label>
+        <label id="confirmPasswordLabel" hidden>Confirm password
+          <input id="confirmPassword" type="password" autocomplete="new-password" minlength="8">
+        </label>
+        <button id="loginSubmit" type="submit">Sign in</button>
+        <p id="loginMessage" class="live-validation-message" role="status"></p>
+      </form>
+
+      <div id="demoAccess" class="live-demo-access" hidden>
+        <p><strong>Local sandbox mode</strong><br>This test release stores data only in this browser and previews GroupMe messages without sending them.</p>
+        <button id="continueDemoButton" type="button">Continue to local sandbox</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="config/live-sandbox.js?v=7.55.4"></script>
+  <script src="js/live-login-v7-55-4.js?v=7.55.4"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+</body>
+</html>

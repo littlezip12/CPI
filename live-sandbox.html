@@ -12,44 +12,31 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-55-2.css?v=7.55.2">
+  <link rel="stylesheet" href="css/live-sandbox-v7-55-4.css?v=7.55.4">
 </head>
 <body class="wpi-live-sandbox-page">
-  <main class="live-sandbox-shell" id="liveSandboxApp">
+  <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
     <section class="live-sandbox-banner" aria-labelledby="sandboxTitle">
       <div>
         <p class="live-sandbox-kicker">WPI live scoring pilot</p>
         <h1 id="sandboxTitle">Live Scoring Sandbox</h1>
-        <p>Test the game-day workflow during a dry run or scrimmage. Sandbox events never affect rankings, official tournament results, or public team profiles.</p>
+        <p>Test the scorer workflow during a dry run or scrimmage. Sandbox events never affect rankings, official results, or public team profiles.</p>
       </div>
       <span class="live-sandbox-badge">Sandbox · test data only</span>
     </section>
 
     <section class="live-status-strip" aria-label="Sandbox connection status">
-      <div><strong id="connectionLabel">Local demo mode</strong><span id="connectionDetail">Events remain on this browser. GroupMe messages are previewed but not sent.</span></div>
-      <button id="signOutButton" type="button" hidden>Sign out</button>
-    </section>
-
-    <section class="live-auth-panel" id="authPanel" hidden aria-labelledby="authHeading">
-      <div>
-        <p class="live-section-kicker">Secure access</p>
-        <h2 id="authHeading">Sign in to the team sandbox</h2>
-        <p>Email/password authentication becomes active after the team-owned Supabase project is connected.</p>
-      </div>
-      <form id="authForm">
-        <label>Email<input id="authEmail" type="email" autocomplete="username" required></label>
-        <label>Password<input id="authPassword" type="password" autocomplete="current-password" required></label>
-        <button type="submit">Sign in</button>
-        <p id="authMessage" role="status"></p>
-      </form>
+      <div><strong id="connectionLabel">Checking access…</strong><span id="connectionDetail">Opening the private scoring console.</span></div>
+      <button id="signOutButton" type="button">Sign out</button>
     </section>
 
     <section class="live-setup-grid" id="setupPanel" aria-labelledby="setupHeading">
       <div class="live-panel live-panel--setup">
         <div class="live-panel-heading">
-          <div><p class="live-section-kicker">Scrimmage setup</p><h2 id="setupHeading">Create a sandbox game</h2></div>
-          <span id="setupSourceBadge">Manual sandbox entry</span>
+          <div><p class="live-section-kicker">Manual scrimmage</p><h2 id="setupHeading">Game setup</h2></div>
+          <div class="live-heading-actions"><span id="setupSourceBadge">Manual entry</span><button id="hideSetupButton" type="button" hidden>Return to game</button></div>
         </div>
+        <p class="live-panel-help">Tournament games will preload these fields from the event schedule. Scrimmages remain editable here.</p>
         <div class="live-form-grid">
           <label>Team<input id="teamName" type="text" value="Pilot Team" maxlength="80"></label>
           <label>Opponent<input id="opponentName" type="text" value="Scrimmage Opponent" maxlength="80"></label>
@@ -64,64 +51,86 @@
 
       <div class="live-panel live-panel--roster">
         <div class="live-panel-heading">
-          <div><p class="live-section-kicker">Team roster</p><h2>Names and cap numbers</h2></div>
+          <div><p class="live-section-kicker">Reusable team roster</p><h2>Names and cap numbers</h2></div>
           <button id="addPlayerButton" type="button">Add player</button>
         </div>
-        <p class="live-panel-help">Enter the roster once. The connected version will reuse it across tournament games.</p>
+        <p class="live-panel-help">This roster is preloaded for the sandbox. Adjust names, caps, additions, or removals before starting.</p>
         <div class="live-roster-list" id="rosterList"></div>
       </div>
     </section>
 
     <section class="live-launch-row" id="launchRow">
-      <div><strong>Ready to test?</strong><span>Start with a dry run, then use the same page during a scrimmage.</span></div>
+      <div><strong>Ready to test?</strong><span>Select up to seven starters, then open the compact scoring console.</span></div>
       <button id="startGameButton" type="button">Select starters and start game</button>
     </section>
 
     <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
       <div class="live-scoreboard" aria-live="polite">
         <div class="live-score-team"><span id="scoreTeamName">Pilot Team</span><strong id="teamScore">0</strong></div>
-        <div class="live-score-center"><span id="gameStatus">Live sandbox</span><strong id="scoreDivider">–</strong><em id="quarterClockLabel">Q1 · 7:00</em></div>
+        <div class="live-score-center"><span id="gameStatus">Live sandbox</span><strong>–</strong><em id="quarterClockLabel">Q1 · 7:00</em></div>
         <div class="live-score-team live-score-team--opponent"><span id="scoreOpponentName">Opponent</span><strong id="opponentScore">0</strong></div>
       </div>
 
-      <div class="live-console-grid">
-        <section class="live-panel live-action-panel" aria-labelledby="consoleHeading">
-          <div class="live-panel-heading">
-            <div><p class="live-section-kicker">Record an action</p><h2 id="consoleHeading">Fast game entry</h2></div>
-            <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
+      <section class="live-panel live-action-panel" aria-labelledby="consoleHeading">
+        <div class="live-panel-heading">
+          <div><p class="live-section-kicker">Fast game entry</p><h2 id="consoleHeading">Record an update</h2></div>
+          <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
+        </div>
+
+        <div class="live-quarter-row">
+          <label>Quarter<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT</option></select></label>
+          <label>Time remaining
+            <input id="clockTime" type="text" inputmode="decimal" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp">
+            <small id="clockHelp">Enter 6:45 or type 645.</small>
+          </label>
+          <button id="startQuarterButton" type="button">Set Q1 starters</button>
+        </div>
+
+        <form id="eventForm" class="live-event-form">
+          <label>Event
+            <select id="eventType" required>
+              <option value="">Select event</option>
+            </select>
+          </label>
+
+          <label id="primaryPlayerLabel">Player
+            <select id="primaryPlayer" required>
+              <option value="">Select player</option>
+            </select>
+          </label>
+
+          <label id="assistPlayerLabel" hidden>Assist
+            <select id="assistPlayer">
+              <option value="">Unassisted</option>
+            </select>
+          </label>
+
+          <label>Optional note
+            <input id="eventNote" type="text" maxlength="140" placeholder="Short context for parents">
+          </label>
+
+          <div class="live-preview-card" aria-live="polite">
+            <span>GroupMe preview</span>
+            <pre id="messagePreview">Select an event to preview the parent update.</pre>
           </div>
 
-          <div class="live-clock-controls">
-            <label>Quarter<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT</option></select></label>
-            <label>Minutes remaining<input id="clockMinutes" type="number" min="0" max="15" inputmode="numeric" value="7"></label>
-            <label>Seconds remaining<input id="clockSeconds" type="number" min="0" max="59" inputmode="numeric" value="0"></label>
-            <button id="startQuarterButton" type="button">Start selected quarter</button>
-          </div>
+          <button id="recordEventButton" type="submit">Submit update</button>
+          <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
+        </form>
 
-          <div class="live-action-tabs" id="actionTabs" role="group" aria-label="Game actions"></div>
+        <div class="live-utility-actions">
+          <button id="showSetupButton" type="button">Edit setup or roster</button>
+          <button id="undoButton" type="button">Undo last event</button>
+          <button id="scoreCorrectionButton" type="button">Correct score</button>
+          <button id="endGameButton" type="button">End game and build recap</button>
+        </div>
+      </section>
 
-          <div class="live-action-entry">
-            <div class="live-selected-action"><span>Selected action</span><strong id="selectedActionLabel">Goal</strong></div>
-            <label id="primaryPlayerLabel">Player<select id="primaryPlayer"></select></label>
-            <label id="secondaryPlayerLabel" hidden>Assist<select id="secondaryPlayer"><option value="">No assist recorded</option></select></label>
-            <label>Optional note<input id="eventNote" type="text" maxlength="140" placeholder="Short context for parents"></label>
-            <button id="recordEventButton" type="button">Record and preview update</button>
-            <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
-          </div>
-
-          <div class="live-utility-actions">
-            <button id="undoButton" type="button">Undo last event</button>
-            <button id="scoreCorrectionButton" type="button">Correct score</button>
-            <button id="endGameButton" type="button">End game and build recap</button>
-          </div>
-        </section>
-
-        <aside class="live-panel live-message-panel" aria-labelledby="messagePreviewHeading">
-          <div class="live-panel-heading"><div><p class="live-section-kicker">Parent delivery preview</p><h2 id="messagePreviewHeading">GroupMe messages</h2></div><span id="messageModeBadge">Mock delivery</span></div>
-          <p class="live-panel-help" id="messageHelp">This release previews the exact messages. The bot connection is activated after Supabase and GroupMe setup.</p>
-          <div class="live-message-list" id="messageList"><p class="live-empty-state">No messages generated yet.</p></div>
-        </aside>
-      </div>
+      <details class="live-panel live-message-panel">
+        <summary><span><strong>GroupMe message log</strong><small id="messageModeBadge">Mock delivery</small></span><span id="messageCount">0 messages</span></summary>
+        <p class="live-panel-help" id="messageHelp">Messages are previewed locally until the secure GroupMe connection is activated.</p>
+        <div class="live-message-list" id="messageList"><p class="live-empty-state">No messages generated yet.</p></div>
+      </details>
 
       <section class="live-panel live-timeline-panel" aria-labelledby="timelineHeading">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Structured game log</p><h2 id="timelineHeading">Live timeline</h2></div><span id="eventCount">0 events</span></div>
@@ -141,8 +150,8 @@
 
     <dialog id="lineupDialog" class="live-dialog">
       <form method="dialog">
-        <div class="live-panel-heading"><div><p class="live-section-kicker">Starting lineup</p><h2 id="lineupDialogTitle">Select Q1 starters</h2></div><button value="cancel" aria-label="Close lineup dialog">Close</button></div>
-        <p>Select up to seven players. The prior quarter remains selected by default.</p>
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Quarter lineup</p><h2 id="lineupDialogTitle">Select Q1 starters</h2></div><button value="cancel" aria-label="Close lineup dialog">Close</button></div>
+        <p>Select up to seven players. The previous quarter remains selected by default.</p>
         <div id="lineupChoices" class="live-lineup-choices"></div>
         <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveLineupButton" type="button">Save lineup and start quarter</button></div>
       </form>
@@ -158,8 +167,8 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.55.2"></script>
-  <script src="js/live-sandbox-v7-55-2.js?v=7.55.2"></script>
+  <script src="config/live-sandbox.js?v=7.55.4"></script>
+  <script src="js/live-sandbox-v7-55-4.js?v=7.55.4"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

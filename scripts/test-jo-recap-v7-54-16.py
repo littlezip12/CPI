@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 load=lambda rel: json.loads((ROOT/rel).read_text(encoding='utf-8'))
 site=load('config/site-release.json'); recap=load('data/tournaments/jo-recap-2026.json'); s3=load('data/tournaments/platform/events/2026-jo-session-3.json'); archive=load('data/tournaments/archive/2026-jo-session-3.json'); hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.17','7.54.18','7.55.0','7.55.1','7.55.2'}: errors.append('site version must preserve 7.54.17 or later')
+if site.get('version') not in {'7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4'}: errors.append('site version must preserve 7.54.17 or later')
 if site.get('joRecapRelease')!='7.54.17': errors.append('joRecapRelease must be 7.54.17')
 expected={'weekends':3,'divisions':31,'verifiedPlacements':1114,'completeDivisions':31,'scoreCompleteDivisions':30,'sourceIncompleteDivisions':1,'weekend3FinalGames':464,'weekend3ScheduledWithoutScores':81}
 for k,v in expected.items():

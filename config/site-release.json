@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.55.2",
-  "name": "Live Scoring Sandbox Foundation",
+  "version": "7.55.4",
+  "name": "Compact Live Scoring Workflow",
   "date": "2026-08-03",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "migration",
-  "notes": "Adds an isolated, noindex live-scoring sandbox with a mobile-first scrimmage console, roster and lineup setup, structured event logging, score corrections, mock GroupMe message previews, end-of-game analytics, and a Supabase/GroupMe backend blueprint. Sandbox data cannot affect rankings or official tournament results.",
+  "notes": "Adds a dedicated live-scoring sign-in/create-account gateway and replaces the button-heavy sandbox scorer with a compact mobile workflow: one MM:SS clock field, event and player dropdowns, goal-only assist selection with an Unassisted option, exact GroupMe preview, one submit button, reusable roster, quarter-by-quarter starter selection, and setup/roster hidden after game start. GroupMe delivery remains mock until the connected backend is activated.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -43,7 +43,7 @@
   "sponsorFrameworkRelease": "7.53.2",
   "commercialFoundationRelease": "7.53.2",
   "navigationRelease": "7.54.13",
-  "publicExperienceRelease": "7.55.2",
+  "publicExperienceRelease": "7.55.4",
   "storiesStatus": "retired-preserved",
   "teamDirectoryRelease": "7.54.14",
   "sectionLandingRelease": "7.54.15",
@@ -74,6 +74,8 @@
   "seasonArchitectureRelease": "7.55.1",
   "finalRankingSnapshotRelease": "7.55.1",
   "seasonNavigationRelease": "7.55.1",
-  "liveScoringSandboxRelease": "7.55.2",
-  "liveScoringBackendBlueprintRelease": "7.55.2"
+  "liveScoringSandboxRelease": "7.55.4",
+  "liveScoringBackendBlueprintRelease": "7.55.2",
+  "liveScoringAuthGatewayRelease": "7.55.4",
+  "liveScoringMobileWorkflowRelease": "7.55.4"
 }

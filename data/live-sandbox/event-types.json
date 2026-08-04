@@ -1,20 +1,21 @@
 {
-  "schemaVersion": 1,
-  "release": "7.55.2",
+  "schemaVersion": 2,
+  "release": "7.55.4",
   "environment": "sandbox",
+  "entryModel": "dropdown",
   "eventTypes": [
-    {"id":"goal","label":"Goal","category":"scoring","requiresPlayer":true,"allowsSecondaryPlayer":true,"secondaryPlayerLabel":"Assist","teamScoreDelta":1,"groupMePriority":"major"},
-    {"id":"opponent_goal","label":"Opponent goal","category":"scoring","requiresPlayer":false,"allowsSecondaryPlayer":false,"opponentScoreDelta":1,"groupMePriority":"major"},
-    {"id":"save","label":"Save","category":"defense","requiresPlayer":true,"allowsSecondaryPlayer":false,"groupMePriority":"all"},
-    {"id":"field_block","label":"Field block","category":"defense","requiresPlayer":true,"allowsSecondaryPlayer":false,"groupMePriority":"all"},
-    {"id":"steal","label":"Steal","category":"possession","requiresPlayer":true,"allowsSecondaryPlayer":false,"groupMePriority":"all"},
-    {"id":"turnover","label":"Turnover","category":"possession","requiresPlayer":true,"allowsSecondaryPlayer":false,"groupMePriority":"all"},
-    {"id":"exclusion_drawn","label":"Exclusion drawn","category":"exclusions","requiresPlayer":true,"allowsSecondaryPlayer":false,"groupMePriority":"major"},
-    {"id":"exclusion_committed","label":"Exclusion called on","category":"exclusions","requiresPlayer":true,"allowsSecondaryPlayer":false,"groupMePriority":"major"},
-    {"id":"five_meter_drawn","label":"5m drawn","category":"penalties","requiresPlayer":true,"allowsSecondaryPlayer":false,"groupMePriority":"major"},
-    {"id":"five_meter_committed","label":"5m called on","category":"penalties","requiresPlayer":true,"allowsSecondaryPlayer":false,"groupMePriority":"major"},
-    {"id":"quarter_start","label":"Quarter start","category":"game","requiresPlayer":false,"allowsSecondaryPlayer":false,"groupMePriority":"major"},
-    {"id":"quarter_end","label":"Quarter end","category":"game","requiresPlayer":false,"allowsSecondaryPlayer":false,"groupMePriority":"major"},
-    {"id":"score_correction","label":"Score correction","category":"game","requiresPlayer":false,"allowsSecondaryPlayer":false,"groupMePriority":"major"}
+    {"id":"goal","label":"Goal","category":"scoring","requiresPlayer":true,"allowsAssist":true,"assistDefault":"unassisted","teamScoreDelta":1,"groupMePriority":"major"},
+    {"id":"opponent_goal","label":"Opponent goal","category":"scoring","requiresPlayer":false,"allowsAssist":false,"opponentScoreDelta":1,"groupMePriority":"major"},
+    {"id":"save","label":"Save","category":"defense","requiresPlayer":true,"allowsAssist":false,"groupMePriority":"all"},
+    {"id":"field_block","label":"Field block","category":"defense","requiresPlayer":true,"allowsAssist":false,"groupMePriority":"all"},
+    {"id":"steal","label":"Steal","category":"possession","requiresPlayer":true,"allowsAssist":false,"groupMePriority":"all"},
+    {"id":"turnover","label":"Turnover","category":"possession","requiresPlayer":true,"allowsAssist":false,"groupMePriority":"all"},
+    {"id":"exclusion_drawn","label":"Exclusion drawn","category":"exclusions","requiresPlayer":true,"allowsAssist":false,"groupMePriority":"major"},
+    {"id":"exclusion_committed","label":"Exclusion called on","category":"exclusions","requiresPlayer":true,"allowsAssist":false,"groupMePriority":"major"},
+    {"id":"five_meter_drawn","label":"5m drawn","category":"penalties","requiresPlayer":true,"allowsAssist":false,"groupMePriority":"major"},
+    {"id":"five_meter_committed","label":"5m called on","category":"penalties","requiresPlayer":true,"allowsAssist":false,"groupMePriority":"major"},
+    {"id":"quarter_start","label":"Quarter start","category":"game","requiresPlayer":false,"allowsAssist":false,"groupMePriority":"major"},
+    {"id":"quarter_end","label":"Quarter end","category":"game","requiresPlayer":false,"allowsAssist":false,"groupMePriority":"major"},
+    {"id":"score_correction","label":"Score correction","category":"game","requiresPlayer":false,"allowsAssist":false,"groupMePriority":"major"}
   ]
 }
