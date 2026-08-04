@@ -35,7 +35,7 @@ final_tournaments = load("data/seasons/2025-2026/tournaments.json")
 rankings = load("rankings.json")
 clubs = load("clubs.json")
 
-if site.get("version") not in {"7.55.1", "7.55.2", "7.55.4", "7.55.5", "7.55.6"}:
+if site.get("version") not in {"7.55.1", "7.55.2", "7.55.4", "7.55.5", "7.55.6", "7.55.7"}:
     fail("site version must preserve 7.55.1 or later")
 for key in ("rankingSeasonRelease", "seasonArchitectureRelease", "finalRankingSnapshotRelease", "seasonNavigationRelease"):
     if site.get(key) != "7.55.1":

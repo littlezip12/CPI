@@ -1,11 +1,11 @@
-# WPI 7.55.6 — Age-Aware Lineups and Quarter Flow
+# WPI 7.55.7 — Team Roster and Submit-Play Flow
 
-- Enforces the exact starting lineup for each age group: **10U/12U = one goalie plus five field players (six total)**; **14U/16U/18U = one goalie plus six field players (seven total)**.
-- Adds an age-group selector for manual scrimmages; scheduled tournament games can supply the same value when connected.
-- Separates the starting goalie from field-player selection and disables lineup submission until the exact valid lineup is selected.
-- Saves the Q1 starting lineup as the team default and preselects it for the next sandbox game; each new quarter still begins with the previous quarter's lineup.
-- Replaces the start-next-quarter control with **End quarter**. Ending a quarter records the quarter-end event, moves the game into a between-quarters state, resets the next-quarter clock after lineup selection, and opens the next starter selection.
-- Keeps the active scorer in a direct-submit workflow: pressing Submit records the event immediately, updates the score/timeline/message preview, and returns focus to the clock. No second confirmation is used.
-- Mistakes remain reversible through the immediate Undo control and score correction tools.
-- Leaves GroupMe delivery in mock mode until Supabase authentication, shared storage, and the server-side bot secret are connected.
-- Keeps all 724 final rankings, 182 clubs, multi-season snapshots, tournament scores, placements, identities, logos, websites, and journeys unchanged.
+- Fixes **Add player** so a new editable roster row is inserted, scrolled into view, and focused immediately.
+- Reframes the roster as the active team’s information. The pilot defaults to **Lamorinda A 14U Boys**, while the heading follows whichever team is selected.
+- Uses one **Submit play** button. A submitted play records immediately with no second confirmation.
+- Resets play, player, assist, and optional note after submission while preserving quarter and time remaining.
+- Keeps Goal as the only play with an optional assist; Unassisted remains the default.
+- Keeps one **End quarter** button. It records the current score at 0:00, advances the quarter state, and immediately requires the next-quarter starting lineup before scoring resumes.
+- Preserves exact age-aware lineup rules and the reusable previous-game Q1 lineup.
+- Leaves GroupMe delivery in mock mode until the secure Supabase backend and bot connection are activated.
+- Keeps all 724 final rankings, 182 clubs, season snapshots, tournament scores, placements, identities, logos, websites, and journeys unchanged.

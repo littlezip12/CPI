@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>Live Scoring Sandbox | Water Polo Index</title>
-  <meta name="description" content="Private WPI sandbox for testing structured live water polo scoring, parent update messages, and game recaps.">
+  <meta name="description" content="Private WPI sandbox for testing structured live water polo plays, parent messages, and game recaps.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-55-6.css?v=7.55.6">
+  <link rel="stylesheet" href="css/live-sandbox-v7-55-7.css?v=7.55.7">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -38,7 +38,7 @@
         </div>
         <p class="live-panel-help">Tournament games will preload these fields from the event schedule. Scrimmages remain editable here.</p>
         <div class="live-form-grid">
-          <label>Team<input id="teamName" type="text" value="Pilot Team" maxlength="80"></label>
+          <label>Team<input id="teamName" type="text" value="Lamorinda A 14U Boys" maxlength="80"></label>
           <label>Opponent<input id="opponentName" type="text" value="Scrimmage Opponent" maxlength="80"></label>
           <label>Game date and time<span class="live-datetime-wrap"><input id="gameDateTime" type="datetime-local"></span></label>
           <label>Venue<input id="gameVenue" type="text" placeholder="Pool or facility" maxlength="120"></label>
@@ -46,16 +46,17 @@
           <label>Quarter length<select id="quarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
           <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
           <label>Message frequency<select id="messageFrequency"><option value="all">Every recorded action</option><option value="major" selected>Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
-          <label>Visibility<select id="visibility"><option value="team_private" selected>Team Private</option><option value="private_only">Private Only</option><option value="public_team">Public team-level updates</option></select></label>
+          <label>Visibility<select id="visibility"><option value="team_private" selected>Team Private</option><option value="private_only">Private Only</option><option value="public_team">Public team-level scoring</option></select></label>
         </div>
       </div>
 
       <div class="live-panel live-panel--roster">
         <div class="live-panel-heading">
-          <div><p class="live-section-kicker">Reusable team roster</p><h2>Names and cap numbers</h2></div>
+          <div><p class="live-section-kicker">Team roster</p><h2 id="rosterHeading">Lamorinda A 14U Boys roster</h2></div>
           <button id="addPlayerButton" type="button">Add player</button>
         </div>
-        <p class="live-panel-help">Set this once, then adjust a name, cap number, addition, or removal as needed.</p>
+        <p class="live-panel-help" id="rosterHelp">This is the active roster for Lamorinda A 14U Boys. Add, remove, rename, or change cap numbers as needed.</p>
+        <p id="rosterStatus" class="live-roster-status" role="status"></p>
         <div class="live-roster-list" id="rosterList"></div>
       </div>
     </section>
@@ -79,12 +80,12 @@
 
       <section class="live-panel live-action-panel" aria-labelledby="consoleHeading">
         <div class="live-panel-heading live-compact-heading">
-          <div><p class="live-section-kicker">One-hand scorer</p><h2 id="consoleHeading">Record an update</h2></div>
+          <div><p class="live-section-kicker">One-hand scorer</p><h2 id="consoleHeading">Record a play</h2></div>
           <span id="currentLineupStatus" class="live-lineup-status">Q1 starters saved</span>
         </div>
 
         <div id="lastUpdateCard" class="live-last-update" hidden aria-live="polite">
-          <div><span>Recorded</span><strong id="lastUpdateText"></strong></div>
+          <div><span>Last play</span><strong id="lastUpdateText"></strong></div>
           <button id="undoLastInlineButton" type="button">Undo</button>
         </div>
 
@@ -97,7 +98,7 @@
         </div>
 
         <form id="eventForm" class="live-event-form">
-          <label class="live-field-full">Event
+          <label class="live-field-full">Play
             <select id="eventType" required>
               <option value="">Choose an event</option>
             </select>
@@ -122,10 +123,10 @@
 
           <details id="messagePreviewDetails" class="live-preview-details" hidden>
             <summary>Preview GroupMe message</summary>
-            <pre id="messagePreview">Choose an event to preview the parent update.</pre>
+            <pre id="messagePreview">Choose a play to preview the parent message.</pre>
           </details>
 
-          <button id="recordEventButton" type="submit" disabled>Choose an event</button>
+          <button id="recordEventButton" type="submit" disabled>Submit play</button>
           <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
         </form>
 
@@ -143,7 +144,7 @@
       </section>
 
       <details class="live-panel live-message-panel">
-        <summary><span><strong>GroupMe message log</strong><small id="messageModeBadge">Mock delivery</small></span><span id="messageCount">0 messages</span></summary>
+        <summary><span><strong>GroupMe play log</strong><small id="messageModeBadge">Mock delivery</small></span><span id="messageCount">0 messages</span></summary>
         <p class="live-panel-help" id="messageHelp">Messages are previewed locally until the secure GroupMe connection is activated.</p>
         <div class="live-message-list" id="messageList"><p class="live-empty-state">No messages generated yet.</p></div>
       </details>
@@ -166,7 +167,7 @@
 
     <dialog id="lineupDialog" class="live-dialog">
       <form method="dialog">
-        <div class="live-panel-heading"><div><p class="live-section-kicker">Quarter lineup</p><h2 id="lineupDialogTitle">Select Q1 starters</h2></div><button value="cancel" aria-label="Close lineup dialog">Close</button></div>
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Quarter lineup</p><h2 id="lineupDialogTitle">Who is starting the game?</h2></div><button id="lineupCloseButton" value="cancel" aria-label="Close lineup dialog">Close</button></div>
         <p id="lineupRuleText">Select one goalie and the required number of field players. Your previous starting lineup is preselected.</p>
         <label class="live-lineup-goalie">Starting goalie
           <select id="lineupGoalie"><option value="">Select goalie</option></select>
@@ -174,7 +175,7 @@
         <div class="live-lineup-selection-heading"><strong>Field starters</strong><span id="lineupCount">0 selected</span></div>
         <div id="lineupChoices" class="live-lineup-choices"></div>
         <p id="lineupValidationMessage" class="live-validation-message" role="status"></p>
-        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveLineupButton" type="button" disabled>Save lineup and start quarter</button></div>
+        <div class="live-dialog-actions"><button id="lineupCancelButton" value="cancel">Cancel</button><button id="saveLineupButton" type="button" disabled>Save starters and start game</button></div>
       </form>
     </dialog>
 
@@ -188,8 +189,8 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.55.6"></script>
-  <script src="js/live-sandbox-v7-55-6.js?v=7.55.6"></script>
+  <script src="config/live-sandbox.js?v=7.55.7"></script>
+  <script src="js/live-sandbox-v7-55-7.js?v=7.55.7"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

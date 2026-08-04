@@ -7,7 +7,7 @@ const read = rel => fs.readFileSync(path.join(ROOT, rel), 'utf8');
 const fail = message => { console.error(`TEAM DIRECTORY LOGO 7.53.6 TEST FAILED\n - ${message}`); process.exit(1); };
 
 const site = JSON.parse(read('config/site-release.json'));
-if (!['7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6'].includes(site.version)) fail('site version must preserve the 7.53.6 logo release');
+if (!['7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7'].includes(site.version)) fail('site version must preserve the 7.53.6 logo release');
 if (!['7.53.6','7.54.14','7.54.15','7.54.17','7.54.18'].includes(site.teamDirectoryRelease)) fail('teamDirectoryRelease must preserve the 7.53.6 logo-enabled directory');
 if (site.teamDirectoryLogoRelease !== '7.53.6') fail('teamDirectoryLogoRelease must be 7.53.6');
 
