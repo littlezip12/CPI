@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-55-4.css?v=7.55.4">
+  <link rel="stylesheet" href="css/live-sandbox-v7-55-6.css?v=7.55.6">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -20,7 +20,7 @@
       <div>
         <p class="live-sandbox-kicker">WPI live scoring pilot</p>
         <h1 id="sandboxTitle">Live Scoring Sandbox</h1>
-        <p>Test the scorer workflow during a dry run or scrimmage. Sandbox events never affect rankings, official results, or public team profiles.</p>
+        <p>Set up a dry run or scrimmage, select the starting lineup, and test the same one-hand workflow intended for tournament use.</p>
       </div>
       <span class="live-sandbox-badge">Sandbox · test data only</span>
     </section>
@@ -42,6 +42,7 @@
           <label>Opponent<input id="opponentName" type="text" value="Scrimmage Opponent" maxlength="80"></label>
           <label>Game date and time<span class="live-datetime-wrap"><input id="gameDateTime" type="datetime-local"></span></label>
           <label>Venue<input id="gameVenue" type="text" placeholder="Pool or facility" maxlength="120"></label>
+          <label>Age group<select id="ageGroup"><option value="10U">10U</option><option value="12U">12U</option><option value="14U" selected>14U</option><option value="16U">16U</option><option value="18U">18U</option></select></label>
           <label>Quarter length<select id="quarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
           <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
           <label>Message frequency<select id="messageFrequency"><option value="all">Every recorded action</option><option value="major" selected>Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
@@ -54,17 +55,22 @@
           <div><p class="live-section-kicker">Reusable team roster</p><h2>Names and cap numbers</h2></div>
           <button id="addPlayerButton" type="button">Add player</button>
         </div>
-        <p class="live-panel-help">This roster is preloaded for the sandbox. Adjust names, caps, additions, or removals before starting.</p>
+        <p class="live-panel-help">Set this once, then adjust a name, cap number, addition, or removal as needed.</p>
         <div class="live-roster-list" id="rosterList"></div>
       </div>
     </section>
 
     <section class="live-launch-row" id="launchRow">
-      <div><strong>Ready to test?</strong><span>Select up to seven starters, then open the compact scoring console.</span></div>
+      <div><strong>Ready to test?</strong><span id="launchRuleText">Select one goalie and six field players for 14U.</span></div>
       <button id="startGameButton" type="button">Select starters and start game</button>
     </section>
 
     <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
+      <div class="live-game-toolbar">
+        <div><strong>WPI Live</strong><span id="compactModeLabel">Sandbox · GroupMe preview</span></div>
+        <button id="gameSignOutButton" type="button">Sign out</button>
+      </div>
+
       <div class="live-scoreboard" aria-live="polite">
         <div class="live-score-team"><span id="scoreTeamName">Pilot Team</span><strong id="teamScore">0</strong></div>
         <div class="live-score-center"><span id="gameStatus">Live sandbox</span><strong>–</strong><em id="quarterClockLabel">Q1 · 7:00</em></div>
@@ -72,58 +78,68 @@
       </div>
 
       <section class="live-panel live-action-panel" aria-labelledby="consoleHeading">
-        <div class="live-panel-heading">
-          <div><p class="live-section-kicker">Fast game entry</p><h2 id="consoleHeading">Record an update</h2></div>
-          <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
+        <div class="live-panel-heading live-compact-heading">
+          <div><p class="live-section-kicker">One-hand scorer</p><h2 id="consoleHeading">Record an update</h2></div>
+          <span id="currentLineupStatus" class="live-lineup-status">Q1 starters saved</span>
         </div>
 
-        <div class="live-quarter-row">
-          <label>Quarter<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT</option></select></label>
-          <label>Time remaining
-            <input id="clockTime" type="text" inputmode="decimal" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp">
+        <div id="lastUpdateCard" class="live-last-update" hidden aria-live="polite">
+          <div><span>Recorded</span><strong id="lastUpdateText"></strong></div>
+          <button id="undoLastInlineButton" type="button">Undo</button>
+        </div>
+
+        <div class="live-time-row">
+          <label class="live-time-field">Time remaining
+            <input id="clockTime" type="text" inputmode="numeric" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp">
             <small id="clockHelp">Enter 6:45 or type 645.</small>
           </label>
-          <button id="startQuarterButton" type="button">Set Q1 starters</button>
+          <button id="endQuarterButton" type="button">End quarter</button>
         </div>
 
         <form id="eventForm" class="live-event-form">
-          <label>Event
+          <label class="live-field-full">Event
             <select id="eventType" required>
-              <option value="">Select event</option>
+              <option value="">Choose an event</option>
             </select>
           </label>
 
-          <label id="primaryPlayerLabel">Player
-            <select id="primaryPlayer" required>
-              <option value="">Select player</option>
+          <label id="primaryPlayerLabel" class="live-field-full" hidden>Player
+            <select id="primaryPlayer">
+              <option value="">Choose player</option>
             </select>
           </label>
 
-          <label id="assistPlayerLabel" hidden>Assist
+          <label id="assistPlayerLabel" class="live-field-full" hidden>Assist
             <select id="assistPlayer">
               <option value="">Unassisted</option>
             </select>
           </label>
 
-          <label>Optional note
+          <button id="addNoteButton" class="live-secondary-toggle" type="button" hidden>Add optional note</button>
+          <label id="eventNoteLabel" class="live-field-full" hidden>Optional note
             <input id="eventNote" type="text" maxlength="140" placeholder="Short context for parents">
           </label>
 
-          <div class="live-preview-card" aria-live="polite">
-            <span>GroupMe preview</span>
-            <pre id="messagePreview">Select an event to preview the parent update.</pre>
-          </div>
+          <details id="messagePreviewDetails" class="live-preview-details" hidden>
+            <summary>Preview GroupMe message</summary>
+            <pre id="messagePreview">Choose an event to preview the parent update.</pre>
+          </details>
 
-          <button id="recordEventButton" type="submit">Submit update</button>
+          <button id="recordEventButton" type="submit" disabled>Choose an event</button>
           <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
         </form>
 
-        <div class="live-utility-actions">
-          <button id="showSetupButton" type="button">Edit setup or roster</button>
-          <button id="undoButton" type="button">Undo last event</button>
-          <button id="scoreCorrectionButton" type="button">Correct score</button>
-          <button id="endGameButton" type="button">End game and build recap</button>
-        </div>
+        <details class="live-game-controls" id="gameControlsDetails">
+          <summary>Game controls</summary>
+          <div class="live-game-controls-grid">
+            <label>Current quarter<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT</option></select></label>
+            <button id="editCurrentLineupButton" type="button">Edit current starters</button>
+            <button id="showSetupButton" type="button">Edit setup or roster</button>
+            <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
+            <button id="scoreCorrectionButton" type="button">Correct score</button>
+            <button id="endGameButton" type="button">End game and build recap</button>
+          </div>
+        </details>
       </section>
 
       <details class="live-panel live-message-panel">
@@ -132,10 +148,10 @@
         <div class="live-message-list" id="messageList"><p class="live-empty-state">No messages generated yet.</p></div>
       </details>
 
-      <section class="live-panel live-timeline-panel" aria-labelledby="timelineHeading">
-        <div class="live-panel-heading"><div><p class="live-section-kicker">Structured game log</p><h2 id="timelineHeading">Live timeline</h2></div><span id="eventCount">0 events</span></div>
+      <details class="live-panel live-timeline-panel" id="timelineDetails">
+        <summary><span><strong>Game timeline</strong><small>Open during or after the game</small></span><span id="eventCount">0 events</span></summary>
         <div class="live-timeline" id="timelineList"><p class="live-empty-state">Start the game to create the first timeline event.</p></div>
-      </section>
+      </details>
     </section>
 
     <section class="live-panel live-summary-panel" id="summaryPanel" hidden aria-labelledby="summaryHeading">
@@ -151,9 +167,14 @@
     <dialog id="lineupDialog" class="live-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Quarter lineup</p><h2 id="lineupDialogTitle">Select Q1 starters</h2></div><button value="cancel" aria-label="Close lineup dialog">Close</button></div>
-        <p>Select up to seven players. The previous quarter remains selected by default.</p>
+        <p id="lineupRuleText">Select one goalie and the required number of field players. Your previous starting lineup is preselected.</p>
+        <label class="live-lineup-goalie">Starting goalie
+          <select id="lineupGoalie"><option value="">Select goalie</option></select>
+        </label>
+        <div class="live-lineup-selection-heading"><strong>Field starters</strong><span id="lineupCount">0 selected</span></div>
         <div id="lineupChoices" class="live-lineup-choices"></div>
-        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveLineupButton" type="button">Save lineup and start quarter</button></div>
+        <p id="lineupValidationMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveLineupButton" type="button" disabled>Save lineup and start quarter</button></div>
       </form>
     </dialog>
 
@@ -167,8 +188,8 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.55.4"></script>
-  <script src="js/live-sandbox-v7-55-4.js?v=7.55.4"></script>
+  <script src="config/live-sandbox.js?v=7.55.6"></script>
+  <script src="js/live-sandbox-v7-55-6.js?v=7.55.6"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

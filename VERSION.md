@@ -1,12 +1,11 @@
-# WPI 7.55.4 — Compact Live Scoring Workflow
+# WPI 7.55.6 — Age-Aware Lineups and Quarter Flow
 
-- Adds a dedicated, hidden **Sign In / Create Account** gateway at `live-login.html`; the scoring page is no longer the authentication surface.
-- Keeps local demo access available until the team-owned Supabase project is connected, while preserving the same future email/password entry point.
-- Replaces the button-heavy scorer with a compact mobile sequence: quarter and one `MM:SS` time field, event dropdown, player dropdown, goal-only assist dropdown, optional note, exact GroupMe preview, and one submit button.
-- Accepts time as `6:45` or fast numeric entry such as `645`, then normalizes it to `6:45`.
-- Uses an explicit **Unassisted** option for goals and removes every generic second-player field from non-goal events.
-- Preserves the reusable editable roster and the seven-player lineup selector for game start and every quarter start, with the previous quarter preselected.
-- Hides game setup and roster automatically once play begins; a compact edit control can reopen them only when needed.
-- Keeps the structured timeline, score corrections, undo, mock GroupMe delivery log, end-of-game analytics, editable recap, and downloadable game log.
+- Enforces the exact starting lineup for each age group: **10U/12U = one goalie plus five field players (six total)**; **14U/16U/18U = one goalie plus six field players (seven total)**.
+- Adds an age-group selector for manual scrimmages; scheduled tournament games can supply the same value when connected.
+- Separates the starting goalie from field-player selection and disables lineup submission until the exact valid lineup is selected.
+- Saves the Q1 starting lineup as the team default and preselects it for the next sandbox game; each new quarter still begins with the previous quarter's lineup.
+- Replaces the start-next-quarter control with **End quarter**. Ending a quarter records the quarter-end event, moves the game into a between-quarters state, resets the next-quarter clock after lineup selection, and opens the next starter selection.
+- Keeps the active scorer in a direct-submit workflow: pressing Submit records the event immediately, updates the score/timeline/message preview, and returns focus to the clock. No second confirmation is used.
+- Mistakes remain reversible through the immediate Undo control and score correction tools.
 - Leaves GroupMe delivery in mock mode until Supabase authentication, shared storage, and the server-side bot secret are connected.
 - Keeps all 724 final rankings, 182 clubs, multi-season snapshots, tournament scores, placements, identities, logos, websites, and journeys unchanged.
