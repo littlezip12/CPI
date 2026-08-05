@@ -1,11 +1,12 @@
-# WPI 7.56.1 — Connected Live Backend Foundation
+# WPI 7.56.2 — GroupMe Delivery and Audit Foundation
 
-- Adds a private WPI Live dashboard between account access and the scorer.
-- Activates browser-ready Supabase email/password signup, sign-in, email confirmation, password reset, and persistent sessions once the team-owned project is configured.
-- Establishes Team Owner, Admin, Scorer, and Viewer roles protected by Postgres Row Level Security.
-- Bootstraps the first connected workspace as Lamorinda A 14U Boys and supports secure ownership transfer and invitation links.
-- Persists teams, rosters, players, games, lineups, event history, corrections, recap drafts, analytics snapshots, and future GroupMe delivery audit rows.
-- Stores an exact private game snapshot for resilient resume while retaining normalized events as the analytics source of truth.
-- Adds authorized realtime game subscriptions and browser-local fallback if a connected sync is temporarily unavailable.
-- Keeps GroupMe in mock/preview mode until connected authentication and storage complete multi-device testing.
-- Preserves all 724 immutable 2025–2026 rankings, 182 clubs, tournament results, identities, and existing 7.56.0 overtime/shootout/shot-tracking behavior.
+- Connects WPI Live to GroupMe through an authenticated Supabase Edge Function.
+- Stores every scored play in WPI before attempting parent-message delivery.
+- Atomically claims each event so simultaneous scorer devices cannot ordinarily send the same play twice.
+- Adds Owner/Admin setup for a team GroupMe destination and a safe test-message workflow.
+- Keeps each GroupMe bot ID in a named Supabase Edge Function secret; no bot credential is stored in GitHub, Postgres, or browser JavaScript.
+- Adds persistent sent, queued, failed, suppressed, and retry status for each outbound play.
+- Adds an immutable per-attempt audit trail with response code, error, actor, trigger source, and timestamp.
+- Adds scorer-visible delivery status and manual retry controls; failed rows remain queued across refreshes and devices.
+- Retries while an authorized WPI Live client is open using 1-, 5-, 15-, and 60-minute backoff windows.
+- Preserves connected authentication, permanent game storage, roles, realtime resume, overtime, shootout, offensive shot tracking, and all immutable WPI ranking/tournament data.

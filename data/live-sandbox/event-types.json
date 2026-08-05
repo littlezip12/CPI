@@ -1,6 +1,6 @@
 {
   "schemaVersion": 10,
-  "release": "7.56.1",
+  "release": "7.56.2",
   "environment": "sandbox",
   "entryModel": "guided_dropdown",
   "eventTypes": [
@@ -396,5 +396,20 @@
     ],
     "localFallback": true,
     "groupMeDelivery": "mock_until_7.56.2"
+  },
+  "groupMeDelivery": {
+    "mode": "authenticated_edge_function",
+    "provider": "groupme",
+    "storeBeforeSend": true,
+    "testMessage": true,
+    "retryScheduleSeconds": [
+      60,
+      300,
+      900,
+      3600
+    ],
+    "manualRetry": true,
+    "attemptAudit": true,
+    "secretStorage": "supabase_edge_function_environment"
   }
 }

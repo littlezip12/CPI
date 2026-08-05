@@ -1,0 +1,25 @@
+WPI 7.56.2 — GroupMe Delivery and Audit Foundation
+Baseline: pushed WPI 7.56.1 repository ZIP dated 2026-08-04 19:30 PDT
+
+Primary capabilities
+- Authenticated Supabase Edge Function posts WPI play messages to GroupMe
+- Owner/Admin destination configuration and test-message flow
+- Dynamic server-side secret name per team destination; bot IDs never enter GitHub, Postgres, or browser code
+- Store-before-send delivery order
+- Atomic per-event delivery claims across scorer devices, plus persistent sent, pending, failed, suppressed and retry state
+- Per-attempt audit history with actor, response, error and timestamp
+- 1-, 5-, 15- and 60-minute retry backoff while an authorized client is open
+- Manual Retry action in the scorer
+- Dashboard sent/failed/queued totals and destination test status
+- Connected games automatically attach the enabled team destination
+
+Not activated by the code patch alone
+- User must create/configure the team-owned Supabase project if 7.56.1 was not activated
+- User must create a GroupMe test group and bot
+- User must set the bot ID in Supabase Edge Function secrets and deploy the function
+- AI recap calls and Evan Cousineau schedule preloading remain future work
+
+Protected data
+- 724 immutable 2025–2026 rankings
+- 182 clubs
+- Existing tournament results, JO placements, identities, logos, websites, profiles and season snapshots

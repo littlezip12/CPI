@@ -1,0 +1,4 @@
+# WPI Live Edge Function configuration.
+# The GroupMe function is callable only with a valid signed-in Supabase user JWT.
+[functions.groupme-post]
+verify_jwt = true

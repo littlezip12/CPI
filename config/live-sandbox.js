@@ -1,4 +1,4 @@
-/* WPI 7.56.1 connected-live configuration.
+/* WPI 7.56.2 connected-live and GroupMe delivery configuration.
  * The Supabase project URL and publishable key are browser-safe only when Row Level Security is enabled.
  * Never place a secret key, service-role key, GroupMe bot ID, password, or other secret in this file.
  *
@@ -8,7 +8,7 @@
  *   supabasePublishableKey: "sb_publishable_..."
  */
 window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({
-  release: "7.56.1",
+  release: "7.56.2",
   environment: "sandbox",
   mode: "demo",
   supabaseUrl: "",
@@ -19,6 +19,6 @@ window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({
   defaultTeamSlug: "lamorinda-a-14u-boys",
   defaultAgeGroup: "14U",
   competitiveSeason: "2026-2027",
-  groupMeDelivery: "mock",
+  groupMeDelivery: "connected",
   defaultVisibility: "team_private"
 });

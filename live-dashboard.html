@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-1.css?v=7.56.1">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-2.css?v=7.56.2">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -45,7 +45,7 @@
         <article><span>Your role</span><strong id="dashboardRoleMetric">—</strong></article>
         <article><span>Stored games</span><strong id="dashboardGameCount">0</strong></article>
         <article><span>Active season</span><strong>2026–2027</strong></article>
-        <article><span>Delivery</span><strong>GroupMe test pending</strong></article>
+        <article><span>Delivery</span><strong id="dashboardDeliveryMetric">Not connected</strong></article>
       </div>
 
       <section class="live-dashboard-grid">
@@ -56,6 +56,30 @@
           <div class="live-dashboard-actions">
             <a id="createScrimmageLink" class="live-primary-link" href="live-sandbox.html?new=1">Create manual scrimmage</a>
             <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
+          </div>
+        </article>
+
+        <article class="live-panel live-groupme-setup-panel">
+          <p class="live-section-kicker">Parent delivery</p>
+          <h2>GroupMe connection</h2>
+          <p class="live-panel-help">WPI stores each play first, then posts the approved message through a server-side GroupMe bot. The bot ID remains in Supabase secrets and never appears in GitHub or the browser.</p>
+          <div id="groupMeAdminPanel" hidden>
+            <div class="live-form-grid live-groupme-form">
+              <label>GroupMe name<input id="groupMeDisplayName" type="text" maxlength="100" value="WPI Live Scoring Test"></label>
+              <label>Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="GROUPME_BOT_ID_LAMORINDA_A_14U_BOYS" autocapitalize="characters"></label>
+            </div>
+            <label class="live-groupme-enabled"><input id="groupMeEnabled" type="checkbox"> Enable real GroupMe delivery for new games</label>
+            <div class="live-dashboard-actions">
+              <button id="saveGroupMeButton" type="button">Save connection</button>
+              <button id="testGroupMeButton" type="button" disabled>Send test message</button>
+            </div>
+            <p id="groupMeSetupMessage" class="live-validation-message" role="status"></p>
+          </div>
+          <p id="groupMeReadOnly" class="live-panel-help" hidden></p>
+          <div id="groupMeAudit" class="live-delivery-audit" hidden>
+            <span><strong id="deliverySentCount">0</strong> sent</span>
+            <span><strong id="deliveryFailedCount">0</strong> failed</span>
+            <span><strong id="deliveryPendingCount">0</strong> queued</span>
           </div>
         </article>
 
@@ -84,9 +108,9 @@
     </section>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.1"></script>
-  <script src="js/live-backend-v7-56-1.js?v=7.56.1"></script>
-  <script src="js/live-dashboard-v7-56-1.js?v=7.56.1"></script>
+  <script src="config/live-sandbox.js?v=7.56.2"></script>
+  <script src="js/live-backend-v7-56-2.js?v=7.56.2"></script>
+  <script src="js/live-dashboard-v7-56-2.js?v=7.56.2"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
