@@ -1,0 +1,28 @@
+WPI 7.56.3 — Live Event Delivery Dispatch Reliability
+Baseline: pushed WPI 7.56.2 repository ZIP dated 2026-08-05 09:56 PDT
+
+Observed pilot defect
+- Connected live events persisted successfully in public.live_events
+- Corresponding public.live_deliveries rows were absent
+- The scorer UI remained Queued because unresolved remote event IDs were silently skipped
+
+Release corrections
+- Build the local-to-remote event map directly from the event upsert response
+- Query only unresolved event IDs as a fallback
+- Resolve individual event IDs before dispatch when the sync map is unavailable
+- Mark unresolved dispatches Failed with retry detail rather than leaving them silently Queued
+- Reprocess due queued/failed deliveries when an authorized scorer opens a game
+- Refresh delivery audit state after each sync/dispatch cycle
+- Cache-bust WPI Live browser assets to 7.56.3
+
+Deployment
+- Browser/GitHub Pages release only
+- No Supabase SQL migration
+- No GroupMe secret reset
+- No Edge Function redeployment
+
+Protected data
+- 724 immutable 2025–2026 rankings
+- 182 clubs
+- 2026–2027 active season
+- Existing tournament results, JO placements, roles, authentication, overtime, shootout and scoring data

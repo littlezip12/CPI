@@ -1,12 +1,11 @@
-# WPI 7.56.2 — GroupMe Delivery and Audit Foundation
+# WPI 7.56.3 — Live Event Delivery Dispatch Reliability
 
-- Connects WPI Live to GroupMe through an authenticated Supabase Edge Function.
-- Stores every scored play in WPI before attempting parent-message delivery.
-- Atomically claims each event so simultaneous scorer devices cannot ordinarily send the same play twice.
-- Adds Owner/Admin setup for a team GroupMe destination and a safe test-message workflow.
-- Keeps each GroupMe bot ID in a named Supabase Edge Function secret; no bot credential is stored in GitHub, Postgres, or browser JavaScript.
-- Adds persistent sent, queued, failed, suppressed, and retry status for each outbound play.
-- Adds an immutable per-attempt audit trail with response code, error, actor, trigger source, and timestamp.
-- Adds scorer-visible delivery status and manual retry controls; failed rows remain queued across refreshes and devices.
-- Retries while an authorized WPI Live client is open using 1-, 5-, 15-, and 60-minute backoff windows.
-- Preserves connected authentication, permanent game storage, roles, realtime resume, overtime, shootout, offensive shot tracking, and all immutable WPI ranking/tournament data.
+- Fixes connected scored-game messages that could remain locally Queued even though the play itself was saved to Supabase.
+- Uses event IDs returned by the live-event upsert as the primary GroupMe dispatch mapping.
+- Falls back to a direct server-event lookup when an upsert mapping is unavailable.
+- Replaces silent dispatch skips with a visible Failed state and retry detail.
+- Automatically reprocesses due queued or failed messages when an authorized scorer reopens a game.
+- Refreshes delivery audit state immediately after dispatch.
+- Cache-busts all WPI Live browser assets to 7.56.3.
+- Requires no database migration, GroupMe bot change, Supabase secret change, or Edge Function redeployment.
+- Preserves the 724 frozen rankings, 182 clubs, seasons, tournaments, roles, and existing scoring behavior.
