@@ -10,9 +10,9 @@
 window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({
   release: "7.56.2",
   environment: "sandbox",
-  mode: "demo",
-  supabaseUrl: "",
-  supabasePublishableKey: "",
+  mode: "connected",
+  supabaseUrl: "https://jmdamtxspyshjxgmunda.supabase.co",
+  supabasePublishableKey: "sb_publishable__SdpFHi_99ojq7n5drt-_Q_ShdVGF6R",
   allowLocalDemo: true,
   autoBootstrapTeam: true,
   defaultTeamName: "Lamorinda A 14U Boys",

@@ -17,8 +17,8 @@ if site.get("version")!="7.56.2": fail("site version must be 7.56.2")
 for key in ("liveScoringGroupMeRelease","liveScoringDeliveryRetryRelease","liveScoringDeliveryAuditRelease"):
     if site.get(key)!="7.56.2": fail(f"{key} must be 7.56.2")
 
-config=read("config/live-sandbox.js")
-for token in ('release: "7.56.2"','groupMeDelivery: "connected"','mode: "demo"','supabasePublishableKey'):
+config=read("config/live-sandbox.js").split("window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({",1)[-1]
+for token in ('release: "7.56.2"','groupMeDelivery: "connected"','mode: "connected"','supabasePublishableKey'):
     if token not in config: fail(f"live config missing {token}")
 for forbidden in ('GROUPME_BOT_ID:', 'bot_id:', 'service_role', 'SUPABASE_SECRET_KEY'):
     if forbidden.lower() in config.lower(): fail(f"public config contains secret token {forbidden}")

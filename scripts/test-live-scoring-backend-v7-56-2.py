@@ -63,8 +63,8 @@ for rel in ("index.html","rankings.html","teams.html","clubs.html","tournaments.
     text=read(rel)
     if "live-sandbox.html" in text or "live-login.html" in text: fail(f"{rel} publicly links private pilot")
 
-config=read("config/live-sandbox.js")
-for token in ('release: "7.56.2"','mode: "demo"','environment: "sandbox"','groupMeDelivery: "connected"','supabasePublishableKey','allowLocalDemo: true'):
+config=read("config/live-sandbox.js").split("window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({",1)[-1]
+for token in ('release: "7.56.2"','mode: "connected"','environment: "sandbox"','groupMeDelivery: "connected"','supabasePublishableKey','allowLocalDemo: true'):
     if token not in config: fail(f"sandbox config missing {token}")
 for forbidden in ("service_role","GROUPME_BOT_ID:","bot_id:","password:"):
     if forbidden.lower() in config.lower(): fail(f"public config contains secret-like token: {forbidden}")

@@ -10,8 +10,14 @@ CONFIG = ROOT / "config" / "live-sandbox.js"
 
 
 def replace_value(text: str, key: str, value: str) -> str:
-    pattern = rf'({re.escape(key)}:\s*)"[^"]*"'
-    updated, count = re.subn(pattern, lambda m: f'{m.group(1)}"{value}"', text, count=1)
+    pattern = rf'(^\s*{re.escape(key)}:\s*)"[^"]*"'
+    updated, count = re.subn(
+        pattern,
+        lambda m: f'{m.group(1)}"{value}"',
+        text,
+        count=1,
+        flags=re.MULTILINE,
+    )
     if count != 1:
         raise SystemExit(f"Could not update {key} in {CONFIG}")
     return updated
