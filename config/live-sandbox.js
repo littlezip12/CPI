@@ -4,8 +4,8 @@
  *
  * Activation:
  *   mode: "connected"
- *   supabaseUrl: "https://YOUR_PROJECT.supabase.co"
- *   supabasePublishableKey: "sb_publishable_..."
+ *   supabaseUrl: "https://jmdamtxspyshjxgmunda.supabase.co"
+ *   supabasePublishableKey: "sb_publishable__SdpFHi_99ojq7n5drt-_Q_ShdVGF6R"
  */
 window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({
   release: "7.56.2",

@@ -242,12 +242,18 @@ declare
 begin
   if caller is null then raise exception 'Authentication required'; end if;
 
-  select t.*,m.role into selected_team,selected_role
+  select t.* into selected_team
   from public.live_team_members m
   join public.live_teams t on t.id=m.team_id
   where m.user_id=caller
   order by case m.role when 'owner' then 1 when 'admin' then 2 when 'scorer' then 3 else 4 end,t.created_at
   limit 1;
+
+  if selected_team.id is not null then
+    select m.role into selected_role
+    from public.live_team_members m
+    where m.team_id=selected_team.id and m.user_id=caller;
+  end if;
 
   if selected_team.id is null then
     if exists(select 1 from public.live_teams) then
