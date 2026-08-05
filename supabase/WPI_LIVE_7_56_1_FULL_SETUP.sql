@@ -92,8 +92,7 @@ create table public.live_games (
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   started_at timestamptz,
-  ended_at timestamptz,
-  unique nulls not distinct (environment,tournament_event_id,source_game_id,team_id)
+  ended_at timestamptz
 );
 
 create table public.live_lineups (
@@ -320,6 +319,7 @@ alter table public.live_games add column if not exists sync_version bigint not n
 -- The legacy NULLS NOT DISTINCT key permitted only one manual game per team.
 -- Official source uniqueness remains protected only when both source IDs exist;
 -- manual games use the stable team/client-game key instead.
+alter table public.live_games drop constraint if exists live_games_environment_tournament_event_id_source_game_id_t_key;
 alter table public.live_games drop constraint if exists live_games_environment_tournament_event_id_source_game_id_team_id_key;
 create unique index if not exists live_games_official_source_idx
   on public.live_games(environment,tournament_event_id,source_game_id,team_id)

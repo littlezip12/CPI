@@ -1,0 +1,24 @@
+WPI 7.56.4 — Manual Game Schema Integrity
+
+Baseline
+- Pushed WPI 7.56.3 repository ZIP: CPI-main - 2026-08-05T123652.111.zip
+
+Primary correction
+- Remove the legacy live_games UNIQUE NULLS NOT DISTINCT definition that caused 409 Conflict after a team's first manual game.
+- Handle PostgreSQL's actual truncated constraint name and the originally expected long name.
+- Add an idempotent structural cleanup migration for future projects and rebuilds.
+
+Preserved behavior
+- Official imported-game uniqueness remains protected by live_games_official_source_idx.
+- Manual-game identity remains protected by live_games_team_client_id_idx.
+- WPI 7.56.3 browser, GroupMe, authentication, roles, scoring, retry, and audit behavior is unchanged.
+- Rankings, clubs, seasons, tournaments, and public navigation are unchanged.
+
+Hosted project
+- The hosted WPI Live project was already corrected manually and validated with multiple manual games and successful GroupMe play messages.
+- Do not rerun the full setup SQL.
+- No Bot ID, secret, Edge Function, or browser deployment change is required.
+
+Validation
+- Four focused 7.56.4 tests.
+- Full ./release-check.

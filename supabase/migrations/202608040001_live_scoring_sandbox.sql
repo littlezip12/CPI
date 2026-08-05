@@ -87,8 +87,7 @@ create table public.live_games (
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   started_at timestamptz,
-  ended_at timestamptz,
-  unique nulls not distinct (environment,tournament_event_id,source_game_id,team_id)
+  ended_at timestamptz
 );
 
 create table public.live_lineups (
