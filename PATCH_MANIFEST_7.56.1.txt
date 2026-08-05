@@ -1,0 +1,24 @@
+WPI 7.56.1 — Connected Live Backend Foundation
+Baseline: pushed WPI 7.56.0 repository ZIP dated 2026-08-04 15:16 PDT
+
+Primary capabilities
+- Supabase email/password signup, sign-in, verification-ready redirect, password reset, and persistent sessions
+- Private WPI Live dashboard between authentication and scoring
+- Team Owner, Admin, Scorer, and Viewer roles protected by Row Level Security
+- One-time first-owner bootstrap followed by invite-only team registration
+- Permanent teams, rosters, players, games, lineups, normalized events, recap drafts, and analytics snapshots
+- Exact game-state snapshot for resilient resume and authorized realtime subscriptions
+- Stable browser-local fallback if a connected write fails
+- Audit-safe creator preservation during idempotent synchronization
+- Multiple manual games per team and correction-safe event sequence storage
+- Existing 7.56.0 overtime, shootout, offensive shot tracking, and private live-scoring UX preserved
+
+Not activated in this release
+- GroupMe remains mock/preview-only
+- AI recap calls remain inactive
+- Evan Cousineau schedule preloading remains future work
+
+Protected data
+- 724 immutable 2025–2026 rankings
+- 182 clubs
+- Existing tournament results, JO placements, identities, logos, websites, profiles, and season snapshots

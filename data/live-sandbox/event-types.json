@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 9,
-  "release": "7.56.0",
+  "schemaVersion": 10,
+  "release": "7.56.1",
   "environment": "sandbox",
   "entryModel": "guided_dropdown",
   "eventTypes": [
@@ -364,5 +364,37 @@
       "totalStarters": 7
     }
   },
-  "pilotTeam": "Lamorinda A 14U Boys"
+  "pilotTeam": "Lamorinda A 14U Boys",
+  "connectedBackend": {
+    "status": "foundation_ready",
+    "auth": [
+      "email_password",
+      "email_confirmation",
+      "password_reset"
+    ],
+    "roles": [
+      "owner",
+      "admin",
+      "scorer",
+      "viewer"
+    ],
+    "storage": [
+      "teams",
+      "members",
+      "rosters",
+      "players",
+      "games",
+      "lineups",
+      "events",
+      "deliveries",
+      "recaps"
+    ],
+    "realtimeTables": [
+      "live_games",
+      "live_events",
+      "live_lineups"
+    ],
+    "localFallback": true,
+    "groupMeDelivery": "mock_until_7.56.2"
+  }
 }

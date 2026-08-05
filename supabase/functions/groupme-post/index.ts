@@ -1,4 +1,4 @@
-// WPI live-scoring pilot: authenticated GroupMe delivery.
+// WPI 7.56.1 live-scoring pilot: authenticated GroupMe delivery foundation.
 // Deploy only after setting GROUPME_BOT_ID as a Supabase Edge Function secret.
 import { createClient } from "npm:@supabase/supabase-js@2.110.8";
 
@@ -16,8 +16,10 @@ Deno.serve(async (req) => {
     if (!authorization) return Response.json({ error: "Authentication required" }, { status: 401, headers: corsHeaders });
 
     const supabaseUrl = Deno.env.get("SUPABASE_URL");
-    const publishableKey = Deno.env.get("SUPABASE_ANON_KEY");
-    const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+    const publishableKeys = JSON.parse(Deno.env.get("SUPABASE_PUBLISHABLE_KEYS") || "{}");
+    const secretKeys = JSON.parse(Deno.env.get("SUPABASE_SECRET_KEYS") || "{}");
+    const publishableKey = publishableKeys.default || Deno.env.get("SUPABASE_PUBLISHABLE_KEY") || Deno.env.get("SUPABASE_ANON_KEY");
+    const serviceRoleKey = secretKeys.default || Deno.env.get("SUPABASE_SECRET_KEY") || Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
     const groupMeBotId = Deno.env.get("GROUPME_BOT_ID");
     if (!supabaseUrl || !publishableKey || !serviceRoleKey) throw new Error("Supabase function environment is incomplete");
     if (!groupMeBotId) throw new Error("GROUPME_BOT_ID secret is not configured");

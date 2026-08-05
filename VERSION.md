@@ -1,13 +1,11 @@
-# WPI 7.56.0 — Overtime, Shootout, and Shot Tracking Live Scoring
+# WPI 7.56.1 — Connected Live Backend Foundation
 
-- Replaces the end-of-Q4 dead end with a choice to **End game**, **Start overtime**, or **Start shootout**.
-- Supports one-, two-, or three-minute overtime periods.
-- Supports either a single overtime period or multiple overtime periods / halves.
-- Reuses the previous lineup before each overtime period and permits additional OT periods when configured.
-- Adds four Lamorinda offensive non-goal shot outcomes: missed goal, off the post, blocked in play, and saved by the opponent goalie.
-- All four offensive shot outcomes track the WPI-team shooter.
-- Every offensive shot outcome records the Lamorinda shooter; opponent blocks and goalie saves are tracked at team level. Lamorinda field blocks and goalie saves remain separate defensive events.
-- Adds a shootout setup step that selects which team shoots first and alternates attempts automatically.
-- Records shootout Goal or Miss immediately with undo and End game available at any time.
-- Represents each successful shootout attempt as 0.1 in the displayed score, for example 10–10 → 10.1–10.
-- Preserves the existing roster, age-aware lineups, quarter workflow, reset, analytics, mock GroupMe delivery, rankings, tournament data, and immutable season snapshots.
+- Adds a private WPI Live dashboard between account access and the scorer.
+- Activates browser-ready Supabase email/password signup, sign-in, email confirmation, password reset, and persistent sessions once the team-owned project is configured.
+- Establishes Team Owner, Admin, Scorer, and Viewer roles protected by Postgres Row Level Security.
+- Bootstraps the first connected workspace as Lamorinda A 14U Boys and supports secure ownership transfer and invitation links.
+- Persists teams, rosters, players, games, lineups, event history, corrections, recap drafts, analytics snapshots, and future GroupMe delivery audit rows.
+- Stores an exact private game snapshot for resilient resume while retaining normalized events as the analytics source of truth.
+- Adds authorized realtime game subscriptions and browser-local fallback if a connected sync is temporarily unavailable.
+- Keeps GroupMe in mock/preview mode until connected authentication and storage complete multi-device testing.
+- Preserves all 724 immutable 2025–2026 rankings, 182 clubs, tournament results, identities, and existing 7.56.0 overtime/shootout/shot-tracking behavior.

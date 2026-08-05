@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-0.css?v=7.56.0">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-1.css?v=7.56.1">
 </head>
 <body class="wpi-live-login-page">
   <main class="live-login-shell" id="liveLoginApp">
@@ -42,10 +42,14 @@
         <label>Password
           <input id="loginPassword" type="password" autocomplete="current-password" minlength="8" required>
         </label>
+        <label id="displayNameLabel" hidden>Display name
+          <input id="displayName" type="text" autocomplete="name" maxlength="80">
+        </label>
         <label id="confirmPasswordLabel" hidden>Confirm password
           <input id="confirmPassword" type="password" autocomplete="new-password" minlength="8">
         </label>
         <button id="loginSubmit" type="submit">Sign in</button>
+        <button id="forgotPasswordButton" class="live-text-button" type="button">Forgot password?</button>
         <p id="loginMessage" class="live-validation-message" role="status"></p>
       </form>
 
@@ -56,8 +60,9 @@
     </section>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.0"></script>
-  <script src="js/live-login-v7-56-0.js?v=7.56.0"></script>
+  <script src="config/live-sandbox.js?v=7.56.1"></script>
+  <script src="js/live-backend-v7-56-1.js?v=7.56.1"></script>
+  <script src="js/live-login-v7-56-1.js?v=7.56.1"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

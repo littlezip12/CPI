@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>WPI Live Dashboard | Water Polo Index</title>
+  <meta name="description" content="Private WPI Live team dashboard for games, roster access, roles and analytics history.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-1.css?v=7.56.1">
+</head>
+<body class="wpi-live-dashboard-page">
+  <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
+    <header class="live-dashboard-header">
+      <div>
+        <p class="live-sandbox-kicker">WPI Live</p>
+        <h1 id="dashboardTeamName">Lamorinda A 14U Boys</h1>
+        <p id="dashboardSubtitle">Private scoring, game history and team analytics.</p>
+      </div>
+      <div class="live-dashboard-account">
+        <span id="dashboardRoleBadge">Connecting…</span>
+        <button id="dashboardSignOutButton" type="button">Sign out</button>
+      </div>
+    </header>
+
+    <section class="live-status-strip">
+      <div><strong id="dashboardConnectionLabel">Checking backend</strong><span id="dashboardConnectionDetail">Loading your private workspace…</span></div>
+      <a href="live-login.html">Account access</a>
+    </section>
+
+    <section id="dashboardDemoPanel" class="live-panel" hidden>
+      <p class="live-section-kicker">Local demo</p>
+      <h2>Continue testing on this browser</h2>
+      <p class="live-panel-help">The connected backend becomes active after a Supabase project URL and publishable key are added to the private-live configuration.</p>
+      <div class="live-dashboard-actions"><a class="live-primary-link" href="live-sandbox.html">Open local scoring sandbox</a></div>
+    </section>
+
+    <section id="dashboardConnectedContent" hidden>
+      <div class="live-dashboard-metrics">
+        <article><span>Your role</span><strong id="dashboardRoleMetric">—</strong></article>
+        <article><span>Stored games</span><strong id="dashboardGameCount">0</strong></article>
+        <article><span>Active season</span><strong>2026–2027</strong></article>
+        <article><span>Delivery</span><strong>GroupMe test pending</strong></article>
+      </div>
+
+      <section class="live-dashboard-grid">
+        <article class="live-panel">
+          <p class="live-section-kicker">Game day</p>
+          <h2>Score a game</h2>
+          <p class="live-panel-help">Tournament games will appear here when their schedules are connected. Scrimmages remain manual.</p>
+          <div class="live-dashboard-actions">
+            <a id="createScrimmageLink" class="live-primary-link" href="live-sandbox.html?new=1">Create manual scrimmage</a>
+            <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
+          </div>
+        </article>
+
+        <article class="live-panel">
+          <p class="live-section-kicker">Team workspace</p>
+          <h2>Roster and access</h2>
+          <p class="live-panel-help">The scorer can update the roster from game setup. Owners and Admins can invite additional users here.</p>
+          <div id="invitePanel" hidden>
+            <div class="live-form-grid live-invite-form">
+              <label>Email<input id="inviteEmail" type="email" autocomplete="email" placeholder="scorer@example.com"></label>
+              <label>Role<select id="inviteRole"><option value="scorer">Scorer</option><option value="viewer">Viewer</option><option value="admin">Admin</option></select></label>
+            </div>
+            <button id="createInviteButton" type="button">Create invite</button>
+            <p id="inviteMessage" class="live-validation-message" role="status"></p>
+            <div id="inviteResult" class="live-invite-result" hidden></div>
+          </div>
+          <p id="inviteUnavailable" class="live-panel-help" hidden>Only a Team Owner or Admin can invite users.</p>
+        </article>
+      </section>
+
+      <section class="live-panel live-history-panel">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Permanent records</p><h2>Game history</h2></div><button id="refreshGamesButton" type="button">Refresh</button></div>
+        <p class="live-panel-help">Every connected game is retained privately for future team and coaching analytics.</p>
+        <div id="gameHistoryList" class="live-game-history-list"><p class="live-empty-state">No connected games yet.</p></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="config/live-sandbox.js?v=7.56.1"></script>
+  <script src="js/live-backend-v7-56-1.js?v=7.56.1"></script>
+  <script src="js/live-dashboard-v7-56-1.js?v=7.56.1"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+</body>
+</html>
