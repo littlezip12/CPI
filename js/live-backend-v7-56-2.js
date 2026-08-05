@@ -183,7 +183,16 @@
       const { data, error } = await this.client.functions.invoke("groupme-post", {
         body: { action: "test", destination_id: destinationId, text }
       });
-      if (error) throw error;
+      if (error) {
+        const context = error.context;
+        let message = error.message || "GroupMe test failed";
+        try {
+          const body = await context?.json?.();
+          if (body?.error) message = body.error;
+          else if (body?.message) message = body.message;
+        } catch (_) { /* retain the function error */ }
+        throw new Error(message);
+      }
       if (data?.error) throw new Error(data.error);
       return data;
     }

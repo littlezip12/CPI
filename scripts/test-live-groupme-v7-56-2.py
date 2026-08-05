@@ -32,7 +32,7 @@ for token in ('id="groupMeAdminPanel"','id="groupMeDisplayName"','id="groupMeSec
     if token not in dashboard: fail(f"dashboard missing {token}")
 
 backend=read("js/live-backend-v7-56-2.js")
-for token in ('loadGroupMeDestination','saveGroupMeDestination','testGroupMeDestination','groupMeDeliverySummary','loadDeliveryStatuses','invokeGroupMeDelivery','subscribeToDeliveries','destination_id: destination?.enabled','remoteEventMap'):
+for token in ('loadGroupMeDestination','saveGroupMeDestination','testGroupMeDestination','groupMeDeliverySummary','loadDeliveryStatuses','invokeGroupMeDelivery','subscribeToDeliveries','destination_id: destination?.enabled','remoteEventMap','const context = error.context'):
     if token not in backend: fail(f"backend adapter missing {token}")
 for forbidden in ('api.groupme.com','GROUPME_BOT_ID','SUPABASE_SECRET_KEY','SUPABASE_SERVICE_ROLE_KEY'):
     if forbidden in backend: fail(f"browser backend contains server/secret token {forbidden}")
@@ -43,11 +43,11 @@ for token in ('deliverPendingMessages','retryMessage','data-retry-event','applyD
 if 'api.groupme.com' in sandbox or 'GROUPME_BOT_ID' in sandbox: fail("scorer contains GroupMe server credential logic")
 
 dash_js=read("js/live-dashboard-v7-56-2.js")
-for token in ('saveGroupMeDestination','testGroupMeDestination','groupMeDeliverySummary','Send a test message','GroupMe connected'):
+for token in ('saveGroupMeDestination','testGroupMeDestination','groupMeDeliverySummary','Send a test message','GroupMe connected','Configured — test required','GroupMe needs attention','Test failed:'):
     if token not in dash_js: fail(f"dashboard GroupMe workflow missing {token}")
 
 edge=read("supabase/functions/groupme-post/index.ts")
-for token in ('https://api.groupme.com/v3/bots/post','action === "test"','Deno.env.get(secretName)','live_delivery_attempts','next_retry_at','retryDelaySeconds','live_claim_groupme_delivery','AbortSignal.timeout(15000)','already_sent','Scorer access required','Owner or Admin role required'):
+for token in ('https://api.groupme.com/v3/bots/post','action === "test"','Deno.env.get(secretName)','live_delivery_attempts','next_retry_at','retryDelaySeconds','live_claim_groupme_delivery','AbortSignal.timeout(15000)','already_sent','Scorer access required','Owner or Admin role required','auth.getUser(userJwt)','authorization.replace(/^Bearer\\s+/i','groupme-post failed','npm:@supabase/supabase-js@2.110.8/cors','x-wpi-live-release'):
     if token not in edge: fail(f"GroupMe Edge Function missing {token}")
 if 'const groupMeBotId = Deno.env.get("GROUPME_BOT_ID")' in edge: fail("Edge Function must use destination-specific dynamic secret names")
 

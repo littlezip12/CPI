@@ -54,7 +54,13 @@
       $("groupMeSecretName").value = destination.secret_name || "GROUPME_BOT_ID";
       $("groupMeEnabled").checked = Boolean(destination.enabled);
       $("testGroupMeButton").disabled = !canManage;
-      $("dashboardDeliveryMetric").textContent = destination.enabled ? "GroupMe connected" : "Connection paused";
+      $("dashboardDeliveryMetric").textContent = !destination.enabled
+        ? "Connection paused"
+        : destination.last_test_status === "sent"
+          ? "GroupMe connected"
+          : destination.last_test_status === "failed"
+            ? "GroupMe needs attention"
+            : "Configured — test required";
       const tested = destination.last_tested_at ? new Date(destination.last_tested_at).toLocaleString([], {month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}) : "Not tested yet";
       $("groupMeSetupMessage").textContent = destination.last_test_status === "sent"
         ? `Test message sent · ${tested}`
@@ -109,9 +115,10 @@
       $("groupMeSetupMessage").textContent = "Test message sent successfully.";
       renderGroupMe();
     } catch (error) {
-      $("groupMeSetupMessage").textContent = error.message;
+      const message = error.message || "GroupMe test failed";
       destination = await backend.loadGroupMeDestination(workspace.teamId).catch(() => destination);
       renderGroupMe();
+      $("groupMeSetupMessage").textContent = `Test failed: ${message}`;
     } finally {
       $("testGroupMeButton").disabled = false;
     }

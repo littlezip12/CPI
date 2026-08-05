@@ -1,10 +1,11 @@
 // WPI 7.56.2 — authenticated WPI → GroupMe delivery with persisted retry/audit state.
 // Deploy only after setting the destination's bot ID as a Supabase Edge Function secret.
 import { createClient } from "npm:@supabase/supabase-js@2.110.8";
+import { corsHeaders as supabaseCorsHeaders } from "npm:@supabase/supabase-js@2.110.8/cors";
 
 const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+  ...supabaseCorsHeaders,
+  "Access-Control-Allow-Headers": `${supabaseCorsHeaders["Access-Control-Allow-Headers"]}, x-wpi-live-release`,
 };
 
 const json = (body: unknown, status = 200) => Response.json(body, { status, headers: corsHeaders });
@@ -57,7 +58,11 @@ Deno.serve(async (req) => {
 
     const userClient = createClient(supabaseUrl, publishableKey, { global: { headers: { Authorization: authorization } } });
     const adminClient = createClient(supabaseUrl, serviceRoleKey);
-    const { data: { user }, error: userError } = await userClient.auth.getUser();
+    const userJwt = authorization.replace(/^Bearer\s+/i, "").trim();
+    if (!userJwt || userJwt === authorization) {
+      return json({ error: "A valid signed-in user token is required" }, 401);
+    }
+    const { data: { user }, error: userError } = await userClient.auth.getUser(userJwt);
     if (userError || !user) return json({ error: "Invalid user session" }, 401);
 
     const payload = await req.json();
@@ -215,6 +220,8 @@ Deno.serve(async (req) => {
     if (!result.ok) return json({ error: result.error || "GroupMe delivery failed", delivery: saved }, 502);
     return json({ status: "sent", delivery: saved });
   } catch (error) {
-    return json({ error: error instanceof Error ? error.message : "Unexpected error" }, 500);
+    const message = error instanceof Error ? error.message : "Unexpected error";
+    console.error("groupme-post failed", { message });
+    return json({ error: message }, 500);
   }
 });
