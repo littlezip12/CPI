@@ -1,10 +1,10 @@
-# WPI 7.56.5 — Scorer Multi-Device Delivery Reliability
+# WPI 7.56.6 — Guest Scorer Handoff & Scoped Admin Control
 
-- Fixes invited Scorers continuing games originally created by the Owner.
-- Replaces cross-account game upserts with explicit existing-game updates and new-game inserts.
-- Splits event persistence into creator-preserving updates and authenticated new-event inserts.
-- Prevents PostgreSQL RLS insert checks from stopping scorer synchronization before GroupMe dispatch.
-- Preserves original game and event creator audit fields while recording the current updater.
-- Keeps Owner/Admin GroupMe administration restrictions and Scorer play-delivery permission intact.
-- Cache-busts the private WPI Live browser assets to 7.56.5.
-- Requires no database migration, GroupMe secret change, or Edge Function deployment.
+- Enforces exactly one active scoring controller per game.
+- Allows the active Scorer or an Owner/Admin to generate a five-minute, single-use QR handoff pass with a six-digit fallback code.
+- Lets a replacement scorer scan, enter a display name, and continue the same game without creating or signing into a permanent WPI account.
+- Makes the prior scoring device read-only immediately after the replacement accepts.
+- Gives Team Admins emergency takeover, permanent roster/game operations, GroupMe naming/testing, and delivery retry authority without exposing code, database access, credentials, or secret mappings.
+- Stores only hashes of handoff tokens/codes and maintains a permanent assignment, transfer, takeover, and game-end audit trail.
+- Preserves WPI 7.56.4 manual-game schema integrity and WPI 7.56.5 cross-account scorer persistence.
+- Requires the new 7.56.6 Supabase migration, Anonymous Sign-Ins enabled in Supabase Authentication, and redeployment of `groupme-post`.

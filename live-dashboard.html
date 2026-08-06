@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-2.css?v=7.56.2">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-6.css?v=7.56.6">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -66,7 +66,7 @@
           <div id="groupMeAdminPanel" hidden>
             <div class="live-form-grid live-groupme-form">
               <label>GroupMe name<input id="groupMeDisplayName" type="text" maxlength="100" value="WPI Live Scoring Test"></label>
-              <label>Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="GROUPME_BOT_ID_LAMORINDA_A_14U_BOYS" autocapitalize="characters"></label>
+              <label id="groupMeSecretField">Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="" placeholder="GROUPME_BOT_ID_TEAM" autocapitalize="characters"></label>
             </div>
             <label class="live-groupme-enabled"><input id="groupMeEnabled" type="checkbox"> Enable real GroupMe delivery for new games</label>
             <div class="live-dashboard-actions">
@@ -86,7 +86,7 @@
         <article class="live-panel">
           <p class="live-section-kicker">Team workspace</p>
           <h2>Roster and access</h2>
-          <p class="live-panel-help">The scorer can update the roster from game setup. Owners and Admins can invite additional users here.</p>
+          <p class="live-panel-help">Owners and Admins manage the permanent roster and invite users. Scorers receive game-specific control and can hand it off without granting team administration.</p>
           <div id="invitePanel" hidden>
             <div class="live-form-grid live-invite-form">
               <label>Email<input id="inviteEmail" type="email" autocomplete="email" placeholder="scorer@example.com"></label>
@@ -108,9 +108,9 @@
     </section>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.5"></script>
-  <script src="js/live-backend-v7-56-5.js?v=7.56.5"></script>
-  <script src="js/live-dashboard-v7-56-5.js?v=7.56.5"></script>
+  <script src="config/live-sandbox.js?v=7.56.6"></script>
+  <script src="js/live-backend-v7-56-6.js?v=7.56.6"></script>
+  <script src="js/live-dashboard-v7-56-6.js?v=7.56.6"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

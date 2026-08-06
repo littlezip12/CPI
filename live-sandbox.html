@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-2.css?v=7.56.2">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-6.css?v=7.56.6">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -27,7 +27,7 @@
 
     <section class="live-status-strip" aria-label="Sandbox connection status">
       <div><strong id="connectionLabel">Checking access…</strong><span id="connectionDetail">Opening the private scoring console.</span></div>
-      <div class="live-status-actions"><button id="resetSandboxTopButton" class="live-reset-button" type="button">Reset test game</button><button id="signOutButton" type="button">Sign out</button></div>
+      <div class="live-status-actions"><span id="backendSyncStatus" class="live-backend-sync-status" data-state="local">Checking…</span><button id="resetSandboxTopButton" class="live-reset-button" type="button">Reset test game</button><button id="signOutButton" type="button">Sign out</button></div>
     </section>
 
     <section class="live-setup-grid" id="setupPanel" aria-labelledby="setupHeading">
@@ -71,6 +71,15 @@
         <div><strong>WPI Live</strong><span id="compactModeLabel">Sandbox · GroupMe preview</span></div>
         <button id="gameSignOutButton" type="button">Sign out</button>
       </div>
+
+      <section id="scorerControlStrip" class="live-scorer-control-strip" hidden aria-live="polite">
+        <div><span>Active scorer</span><strong id="activeScorerName">Assigning scorer…</strong></div>
+        <div class="live-scorer-control-actions">
+          <button id="takeOverScoringButton" type="button" hidden>Take over scoring</button>
+          <button id="transferScoringButton" class="live-scorer-transfer-primary" type="button" hidden>Transfer scoring</button>
+        </div>
+      </section>
+      <p id="scorerReadOnlyNotice" class="live-scorer-read-only-notice" hidden></p>
 
       <div class="live-scoreboard" aria-live="polite">
         <div class="live-score-team"><span id="scoreTeamName">Pilot Team</span><strong id="teamScore">0</strong></div>
@@ -160,6 +169,7 @@
           <div class="live-game-controls-grid">
             <label>Current period<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT1</option><option value="6">OT2</option><option value="7">OT3</option><option value="8">OT4</option></select></label>
             <button id="editCurrentLineupButton" type="button">Edit starters</button>
+            <button id="transferScoringInlineButton" type="button">Transfer scoring</button>
             <button id="showSetupButton" type="button">Edit roster or setup</button>
             <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
             <button id="scoreCorrectionButton" type="button">Correct score</button>
@@ -238,6 +248,27 @@
       </form>
     </dialog>
 
+    <dialog id="scorerHandoffDialog" class="live-dialog live-handoff-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Guest Scorer Pass</p><h2>Transfer scoring</h2></div><button value="cancel" aria-label="Close scorer handoff">Close</button></div>
+        <p class="live-panel-help">The current scorer stays active until the replacement accepts. The pass is single-use, game-specific, and expires after five minutes.</p>
+        <div class="live-handoff-dialog-grid">
+          <div id="scorerHandoffQr" class="live-handoff-qr" aria-label="Scorer handoff QR code"></div>
+          <div class="live-handoff-details">
+            <div class="live-handoff-code"><span>Fallback code</span><strong id="scorerHandoffCode">—</strong></div>
+            <div><strong>Fallback link</strong><code id="scorerHandoffLink" class="live-handoff-link"></code></div>
+            <p id="scorerHandoffExpiry" class="live-handoff-expiry"></p>
+            <p id="scorerHandoffMessage" class="live-validation-message" role="status"></p>
+          </div>
+        </div>
+        <div class="live-handoff-dialog-actions">
+          <button id="copyScorerHandoffLinkButton" type="button">Copy link</button>
+          <button id="newScorerHandoffPassButton" type="button">Create new pass</button>
+          <button id="revokeScorerHandoffPassButton" type="button">Revoke pass</button>
+        </div>
+      </form>
+    </dialog>
+
     <dialog id="scoreDialog" class="live-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Correction</p><h2>Set the current score</h2></div><button value="cancel" aria-label="Close score dialog">Close</button></div>
@@ -248,9 +279,10 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.5"></script>
-  <script src="js/live-backend-v7-56-5.js?v=7.56.5"></script>
-  <script src="js/live-sandbox-v7-56-5.js?v=7.56.5"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="config/live-sandbox.js?v=7.56.6"></script>
+  <script src="js/live-backend-v7-56-6.js?v=7.56.6"></script>
+  <script src="js/live-sandbox-v7-56-6.js?v=7.56.6"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

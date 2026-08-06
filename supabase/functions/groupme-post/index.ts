@@ -1,4 +1,4 @@
-// WPI 7.56.2 — authenticated WPI → GroupMe delivery with persisted retry/audit state.
+// WPI 7.56.6 — authenticated member/guest scorer → GroupMe delivery with persisted retry/audit state.
 // Deploy only after setting the destination's bot ID as a Supabase Edge Function secret.
 import { createClient } from "npm:@supabase/supabase-js@2.110.8";
 import { corsHeaders as supabaseCorsHeaders } from "npm:@supabase/supabase-js@2.110.8/cors";
@@ -73,7 +73,7 @@ Deno.serve(async (req) => {
       if (!destinationId) return json({ error: "destination_id is required" }, 400);
       const { data: destination, error: destinationError } = await userClient
         .from("live_destinations")
-        .select("id,team_id,display_name,secret_name,enabled")
+        .select("id,team_id,display_name,enabled")
         .eq("id", destinationId)
         .single();
       if (destinationError || !destination) return json({ error: "Destination not found or access denied" }, 404);
@@ -86,7 +86,12 @@ Deno.serve(async (req) => {
         .maybeSingle();
       if (!membership || !["owner", "admin"].includes(membership.role)) return json({ error: "Owner or Admin role required" }, 403);
 
-      const secretName = environmentKey(destination.secret_name);
+      const { data: privateDestination } = await adminClient
+        .from("live_destinations")
+        .select("secret_name")
+        .eq("id", destination.id)
+        .single();
+      const secretName = environmentKey(privateDestination?.secret_name);
       const botId = secretName ? Deno.env.get(secretName) : null;
       if (!secretName || !botId) {
         await adminClient.from("live_destinations").update({
@@ -95,7 +100,7 @@ Deno.serve(async (req) => {
           last_test_error: "Configured Edge Function secret was not found",
           updated_at: new Date().toISOString(),
         }).eq("id", destination.id);
-        return json({ error: `Supabase secret ${destination.secret_name} is not configured` }, 409);
+        return json({ error: "The server-side GroupMe connection is not configured" }, 409);
       }
 
       const text = String(payload.text || "WPI Live test: GroupMe delivery is connected and ready for game updates.").slice(0, 1200);
@@ -119,20 +124,23 @@ Deno.serve(async (req) => {
 
     const { data: event, error: eventError } = await userClient
       .from("live_events")
-      .select("id,message_text,status,game_id,game:live_games!inner(id,team_id,environment,status,messages_paused,message_frequency,destination_id,destination:live_destinations(id,display_name,secret_name,enabled))")
+      .select("id,message_text,status,game_id,game:live_games!inner(id,team_id,environment,status,messages_paused,message_frequency,destination_id,destination:live_destinations(id,display_name,enabled))")
       .eq("id", eventId)
       .single();
     if (eventError || !event) return json({ error: "Event not found or access denied" }, 404);
 
     const game = Array.isArray(event.game) ? event.game[0] : event.game;
     const destination = Array.isArray(game.destination) ? game.destination[0] : game.destination;
-    const { data: membership } = await userClient
-      .from("live_team_members")
-      .select("role")
-      .eq("team_id", game.team_id)
-      .eq("user_id", user.id)
-      .maybeSingle();
-    if (!membership || !["owner", "admin", "scorer"].includes(membership.role)) return json({ error: "Scorer access required" }, 403);
+    const { data: scorerControl, error: scorerControlError } = await userClient.rpc("live_scorer_control_status", {
+      target_game_id: game.id,
+    });
+    if (scorerControlError || !scorerControl?.canScore) {
+      return json({
+        error: scorerControl?.activeDisplayName
+          ? `Scoring control is assigned to ${scorerControl.activeDisplayName}`
+          : "Active scorer access required",
+      }, 403);
+    }
 
     if (event.status !== "active") return json({ error: "Voided events cannot be delivered" }, 409);
     if (game.messages_paused || game.message_frequency === "none") {
@@ -161,9 +169,14 @@ Deno.serve(async (req) => {
     if (!event.message_text) return json({ error: "Event has no GroupMe message text" }, 422);
     if (!destination || !destination.enabled) return json({ error: "No enabled GroupMe destination is connected to this game" }, 409);
 
-    const secretName = environmentKey(destination.secret_name);
+    const { data: privateDestination } = await adminClient
+      .from("live_destinations")
+      .select("secret_name")
+      .eq("id", destination.id)
+      .single();
+    const secretName = environmentKey(privateDestination?.secret_name);
     const botId = secretName ? Deno.env.get(secretName) : null;
-    if (!secretName || !botId) return json({ error: `Supabase secret ${destination.secret_name} is not configured` }, 409);
+    if (!secretName || !botId) return json({ error: "The server-side GroupMe connection is not configured" }, 409);
 
     const requestId = crypto.randomUUID();
     const { data: claim, error: claimError } = await adminClient.rpc("live_claim_groupme_delivery", {

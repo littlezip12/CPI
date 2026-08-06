@@ -1,6 +1,6 @@
 {
   "schemaVersion": 10,
-  "release": "7.56.5",
+  "release": "7.56.6",
   "environment": "sandbox",
   "entryModel": "guided_dropdown",
   "eventTypes": [
@@ -411,5 +411,17 @@
     "manualRetry": true,
     "attemptAudit": true,
     "secretStorage": "supabase_edge_function_environment"
+  },
+  "scorerControl": {
+    "mode": "one_active_scorer_per_game",
+    "guestHandoff": true,
+    "qrGeneratedLocally": true,
+    "fallbackCodeDigits": 6,
+    "passLifetimeSeconds": 300,
+    "singleUse": true,
+    "noPermanentAccountRequired": true,
+    "previousScorerReadOnlyAfterAcceptance": true,
+    "adminTakeover": true,
+    "auditHistory": true
   }
 }

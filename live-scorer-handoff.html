@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <title>Take Over WPI Scoring | Water Polo Index</title>
+  <meta name="description" content="Private, short-lived WPI scorer handoff for one live game.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-6.css?v=7.56.6">
+</head>
+<body class="wpi-live-handoff-page">
+  <main class="live-handoff-shell" id="handoffApp">
+    <section class="live-handoff-card">
+      <p class="live-sandbox-kicker">WPI Guest Scorer Pass</p>
+      <h1>Take over scoring</h1>
+      <p id="handoffIntro" class="live-panel-help">Checking this private handoff…</p>
+
+      <section id="handoffCodePanel" class="live-handoff-code-panel" hidden>
+        <label>Six-digit handoff code
+          <input id="handoffCode" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="000000">
+        </label>
+        <button id="previewCodeButton" type="button">Continue</button>
+      </section>
+
+      <section id="handoffPreview" class="live-handoff-preview" hidden>
+        <span id="handoffStatusBadge">Private game</span>
+        <h2><span id="handoffTeamName">Team</span> vs <span id="handoffOpponentName">Opponent</span></h2>
+        <div class="live-handoff-score"><strong id="handoffScore">0–0</strong><span id="handoffQuarter">Q1</span></div>
+        <p id="handoffMeta"></p>
+        <p id="handoffCurrentScorer"></p>
+        <label>Your name
+          <input id="handoffDisplayName" type="text" maxlength="80" autocomplete="name" placeholder="Name shown in the scoring audit">
+        </label>
+        <button id="acceptHandoffButton" type="button">Take over scoring</button>
+        <p class="live-handoff-security">This pass grants temporary scoring control for this game only. It does not provide team, roster, invitation, or GroupMe administration access.</p>
+      </section>
+
+      <p id="handoffMessage" class="live-validation-message" role="status"></p>
+      <a class="live-handoff-cancel" href="live-login.html">Use a regular WPI account instead</a>
+    </section>
+  </main>
+
+  <script src="config/live-sandbox.js?v=7.56.6"></script>
+  <script src="js/live-backend-v7-56-6.js?v=7.56.6"></script>
+  <script src="js/live-scorer-handoff-v7-56-6.js?v=7.56.6"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+</body>
+</html>
