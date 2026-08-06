@@ -1,10 +1,10 @@
-# WPI 7.56.4 — Manual Game Schema Integrity
+# WPI 7.56.5 — Scorer Multi-Device Delivery Reliability
 
-- Makes the successful hosted Supabase manual-game correction permanent in source control.
-- Removes the legacy `UNIQUE NULLS NOT DISTINCT` definition that limited a team to one manual game.
-- Handles both PostgreSQL's truncated constraint name and the originally expected long name.
-- Adds an idempotent migration that removes any matching legacy constraint by structure, not only by name.
-- Preserves official-source uniqueness through `live_games_official_source_idx`.
-- Preserves manual-game identity through `live_games_team_client_id_idx`.
-- Adds regression coverage proving the fresh-install SQL cannot recreate the 409 conflict.
-- Requires no GroupMe bot, Supabase secret, Edge Function, browser-asset, ranking, club, season, or tournament change.
+- Fixes invited Scorers continuing games originally created by the Owner.
+- Replaces cross-account game upserts with explicit existing-game updates and new-game inserts.
+- Splits event persistence into creator-preserving updates and authenticated new-event inserts.
+- Prevents PostgreSQL RLS insert checks from stopping scorer synchronization before GroupMe dispatch.
+- Preserves original game and event creator audit fields while recording the current updater.
+- Keeps Owner/Admin GroupMe administration restrictions and Scorer play-delivery permission intact.
+- Cache-busts the private WPI Live browser assets to 7.56.5.
+- Requires no database migration, GroupMe secret change, or Edge Function deployment.

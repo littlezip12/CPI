@@ -1,0 +1,26 @@
+WPI 7.56.5 — Scorer Multi-Device Delivery Reliability
+
+Baseline
+- Pushed WPI 7.56.4 repository ZIP: CPI-main - 2026-08-05T160011.222.zip
+
+Primary correction
+- Allow an invited Scorer to continue an Owner-created connected game without replaying creator-bound INSERT policies.
+- Replace game INSERT ... ON CONFLICT behavior with an existing-game UPDATE or new-game INSERT.
+- Split event synchronization into creator-preserving UPDATEs and authenticated INSERTs for genuinely new events.
+- Continue GroupMe dispatch after the Scorer's event is persisted.
+
+Preserved behavior
+- Original game and event creator audit fields remain unchanged.
+- Owner/Admin GroupMe destination administration restrictions remain intact.
+- Scorers remain authorized to deliver play messages for games they can score.
+- WPI authentication, database schema, GroupMe secret, Edge Function, rankings, clubs, seasons, tournaments, and public navigation are unchanged.
+
+Hosted services
+- No SQL migration is required.
+- Do not rerun the full setup SQL.
+- No Bot ID or GroupMe secret change is required.
+- No Edge Function deployment is required.
+
+Validation
+- Five focused WPI Live 7.56.5 tests.
+- Full ./release-check passed.
