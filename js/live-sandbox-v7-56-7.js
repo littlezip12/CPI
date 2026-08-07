@@ -298,7 +298,7 @@
     $("inGameScorerPreview").hidden = true;
     $("inGameScorerPreview").innerHTML = "";
     $("inGameScorerCodeMessage").textContent = "Enter the code supplied by the current scorer.";
-    $("acceptInGameScorerCodeButton").disabled = true;
+    $("acceptInGameScorerCodeButton").disabled = false;
     $("scorerCodeDialog").showModal();
     setTimeout(() => $("inGameScorerCode").focus(), 0);
   }
@@ -320,7 +320,7 @@
       $("acceptInGameScorerCodeButton").disabled = false;
     } catch (error) {
       $("inGameScorerPreview").hidden = true;
-      $("acceptInGameScorerCodeButton").disabled = true;
+      $("acceptInGameScorerCodeButton").disabled = false;
       $("inGameScorerCodeMessage").textContent = error.message || "The scorer code is unavailable.";
     } finally {
       $("previewInGameScorerCodeButton").disabled = false;
@@ -328,12 +328,17 @@
   }
 
   async function acceptInGameScorerCode() {
+    const code = $("inGameScorerCode").value.replace(/\D/g, "").slice(0,6);
     const displayName = $("inGameScorerDisplayName").value.trim();
+    $("inGameScorerCode").value = code;
+    if (code.length !== 6) { $("inGameScorerCodeMessage").textContent = "Enter the six-digit code."; return; }
     if (!displayName) { $("inGameScorerCodeMessage").textContent = "Enter the scorer name."; return; }
+    if (!state.game.remoteId) { $("inGameScorerCodeMessage").textContent = "This game is not connected yet."; return; }
     $("acceptInGameScorerCodeButton").disabled = true;
-    $("inGameScorerCodeMessage").textContent = "Transferring scoring control…";
+    $("inGameScorerCodeMessage").textContent = "Checking code and transferring scoring control…";
     try {
-      await backend.acceptScorerHandoff({code:$("inGameScorerCode").value, gameId:state.game.remoteId, displayName});
+      await backend.previewScorerHandoff({code, gameId:state.game.remoteId});
+      await backend.acceptScorerHandoff({code, gameId:state.game.remoteId, displayName});
       window.location.replace(`live-sandbox.html?game=${encodeURIComponent(state.game.remoteId)}`);
     } catch (error) {
       $("inGameScorerCodeMessage").textContent = error.message || "Scoring control could not be transferred.";

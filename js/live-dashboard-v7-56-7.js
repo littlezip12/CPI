@@ -61,7 +61,7 @@
     $("dashboardScorerPreview").hidden = true;
     $("dashboardScorerPreview").innerHTML = "";
     $("dashboardScorerCodeMessage").textContent = "Enter the code supplied by the current scorer.";
-    $("dashboardAcceptScorerCodeButton").disabled = true;
+    $("dashboardAcceptScorerCodeButton").disabled = false;
     $("dashboardScorerCodeDialog").showModal();
     setTimeout(() => $("dashboardScorerCode").focus(), 0);
   }
@@ -84,7 +84,7 @@
     } catch (error) {
       scorerCodePreview = null;
       $("dashboardScorerPreview").hidden = true;
-      $("dashboardAcceptScorerCodeButton").disabled = true;
+      $("dashboardAcceptScorerCodeButton").disabled = false;
       $("dashboardScorerCodeMessage").textContent = error.message || "The scorer code is unavailable.";
     } finally {
       $("dashboardPreviewScorerCodeButton").disabled = false;
@@ -92,15 +92,22 @@
   }
 
   async function acceptScorerCode() {
+    const code = $("dashboardScorerCode").value.replace(/\D/g, "").slice(0,6);
     const displayName = $("dashboardScorerDisplayName").value.trim();
-    if (!scorerCodePreview || !displayName) {
-      $("dashboardScorerCodeMessage").textContent = "Check the code and enter the scorer name.";
+    $("dashboardScorerCode").value = code;
+    if (code.length !== 6 || !scorerCodeGameId) {
+      $("dashboardScorerCodeMessage").textContent = "Enter the six-digit code.";
+      return;
+    }
+    if (!displayName) {
+      $("dashboardScorerCodeMessage").textContent = "Enter the scorer name.";
       return;
     }
     $("dashboardAcceptScorerCodeButton").disabled = true;
-    $("dashboardScorerCodeMessage").textContent = "Transferring scoring control…";
+    $("dashboardScorerCodeMessage").textContent = "Checking code and transferring scoring control…";
     try {
-      const result = await backend.acceptScorerHandoff({code:$("dashboardScorerCode").value, gameId:scorerCodeGameId, displayName});
+      scorerCodePreview = await backend.previewScorerHandoff({code, gameId:scorerCodeGameId});
+      const result = await backend.acceptScorerHandoff({code, gameId:scorerCodeGameId, displayName});
       window.location.assign(`live-sandbox.html?game=${encodeURIComponent(result.gameId)}`);
     } catch (error) {
       $("dashboardScorerCodeMessage").textContent = error.message || "Scoring control could not be transferred.";
