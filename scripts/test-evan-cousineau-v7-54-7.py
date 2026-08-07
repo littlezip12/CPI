@@ -8,7 +8,7 @@ site=load('config/site-release.json')
 bundle=load('data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json')
 placements=load('data/tournaments/archive/2025-evan-cousineau-memorial-cup.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8'}: errors.append('site version must preserve the 7.54.7 Evan Cousineau release')
+if site.get('version') not in {'7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9'}: errors.append('site version must preserve the 7.54.7 Evan Cousineau release')
 if site.get('evanCousineauPlatformRelease')!='7.54.7': errors.append('Evan Cousineau release metadata missing')
 expected={'divisionCount':15,'gameCount':348,'finalGameCount':348,'scheduledGameCount':0,'teamCount':169,'placementCount':105,'venueCount':15,'dateCount':2}
 for k,v in expected.items():

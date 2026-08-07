@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-8.css?v=7.56.8">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-9.css?v=7.56.9">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -89,7 +89,7 @@
 
       <section class="live-panel live-action-panel" aria-labelledby="consoleHeading">
         <div class="live-panel-heading live-compact-heading">
-          <div><p class="live-section-kicker">One-hand scorer</p><h2 id="consoleHeading">Time of play</h2></div>
+          <div><p class="live-section-kicker">Mobile-first scorer</p><h2 id="consoleHeading">Record play</h2></div>
           <span id="currentLineupStatus" class="live-lineup-status">Q1 starters saved</span>
         </div>
 
@@ -98,15 +98,13 @@
           <button id="undoLastInlineButton" type="button">Undo</button>
         </div>
 
-        <div class="live-time-row">
-          <label class="live-time-field">Time remaining in quarter
-            <input id="clockTime" type="text" inputmode="numeric" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp">
-            <small id="clockHelp">Enter 6:45 or type 645.</small>
-          </label>
-        </div>
-
         <form id="eventForm" class="live-event-form">
-          <label class="live-field-full">Play
+          <div class="live-field-full live-event-chooser">
+            <div class="live-field-label">Event</div>
+            <div id="eventQuickActions" class="live-event-quick-actions" role="group" aria-label="Choose event"></div>
+          </div>
+
+          <label class="live-field-full live-event-select-field">More event options
             <select id="eventType" required>
               <option value="">Choose an event</option>
             </select>
@@ -122,6 +120,11 @@
             <select id="assistPlayer">
               <option value="">Unassisted</option>
             </select>
+          </label>
+
+          <label class="live-field-full live-time-field">Time of play
+            <input id="clockTime" type="text" inputmode="numeric" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp">
+            <small id="clockHelp">Enter 6:45 or type 645.</small>
           </label>
 
           <label id="eventNoteLabel" class="live-field-full">Additional notes <span class="live-optional-label">Optional</span>
@@ -165,7 +168,7 @@
         </section>
 
         <details class="live-game-controls" id="gameControlsDetails">
-          <summary>Manual controls</summary>
+          <summary>More controls</summary>
           <div class="live-game-controls-grid">
             <label>Current period<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT1</option><option value="6">OT2</option><option value="7">OT3</option><option value="8">OT4</option></select></label>
             <button id="editCurrentLineupButton" type="button">Edit starters</button>
@@ -250,13 +253,13 @@
 
     <dialog id="scorerHandoffDialog" class="live-dialog live-handoff-dialog">
       <form method="dialog">
-        <div class="live-panel-heading"><div><p class="live-section-kicker">Guest Scorer Pass</p><h2>Transfer scoring</h2></div><button value="cancel" aria-label="Close scorer handoff">Close</button></div>
-        <p class="live-panel-help">The current scorer stays active until the replacement accepts. The pass is single-use, game-specific, and expires after five minutes.</p>
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Simple handoff</p><h2>Transfer scoring</h2></div><button value="cancel" aria-label="Close scorer handoff">Close</button></div>
+        <p class="live-panel-help">Share the QR code. The current scorer stays active until the new scorer accepts. Use the backup code only if the QR flow is unavailable.</p>
         <div class="live-handoff-dialog-grid">
           <div id="scorerHandoffQr" class="live-handoff-qr" aria-label="Scorer handoff QR code"></div>
           <div class="live-handoff-details">
-            <div class="live-handoff-code"><span>Fallback code</span><strong id="scorerHandoffCode">—</strong></div>
-            <div><strong>Fallback link</strong><code id="scorerHandoffLink" class="live-handoff-link"></code></div>
+            <div class="live-handoff-code"><span>Backup code</span><strong id="scorerHandoffCode">—</strong></div>
+            <details class="live-handoff-fallback"><summary>Use backup link instead</summary><code id="scorerHandoffLink" class="live-handoff-link"></code></details>
             <p id="scorerHandoffExpiry" class="live-handoff-expiry"></p>
             <p id="scorerHandoffMessage" class="live-validation-message" role="status"></p>
           </div>
@@ -296,9 +299,9 @@
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="config/live-sandbox.js?v=7.56.8"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.56.8"></script>
-  <script src="js/live-sandbox-v7-56-8.js?v=7.56.8"></script>
+  <script src="config/live-sandbox.js?v=7.56.9"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.56.9"></script>
+  <script src="js/live-sandbox-v7-56-9.js?v=7.56.9"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

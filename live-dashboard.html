@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-8.css?v=7.56.8">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-9.css?v=7.56.9">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -61,46 +61,70 @@
         </article>
 
         <article class="live-panel live-groupme-setup-panel">
-          <p class="live-section-kicker">Parent delivery</p>
-          <h2>GroupMe connection</h2>
-          <p class="live-panel-help">WPI stores each play first, then delivers the approved message server-side. Use Topic delivery for a dedicated score-updates topic, or keep Bot delivery as the supported main-chat fallback. GroupMe credentials remain in Supabase secrets and never appear in GitHub or browser storage.</p>
+          <div class="live-panel-heading live-groupme-setup-heading"><div><p class="live-section-kicker">Tournament score updates</p><h2>GroupMe setup</h2></div><div class="live-groupme-status-pill" id="groupMeSetupStatusPill">Ready when tested</div></div>
+          <p class="live-panel-help">Keep setup simple: Tournament GroupMe → Score Updates Topic → Test Connection → Save. Technical details stay behind Advanced. WPI still stores each play first and delivers server-side, with Bot fallback preserved.</p>
           <div id="groupMeAdminPanel" hidden>
-            <div class="live-form-grid live-groupme-form">
-              <label>Connection name<input id="groupMeDisplayName" type="text" maxlength="100" value="WPI Live Scoring Test"></label>
-              <label>Delivery method
-                <select id="groupMeDeliveryMode">
-                  <option value="topic">Topic</option>
-                  <option value="bot">Bot · main chat</option>
-                </select>
-              </label>
-              <label id="groupMeSecretField">Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="" placeholder="GROUPME_ACCESS_TOKEN_WPI_LIVE" autocapitalize="characters"></label>
+            <div class="live-groupme-step-list">
+              <section class="live-groupme-step-card">
+                <span class="live-step-number">1</span>
+                <div class="live-step-body">
+                  <h3>Tournament GroupMe</h3>
+                  <p>Select the GroupMe for this tournament.</p>
+                  <div class="live-form-grid live-groupme-form live-groupme-step-form">
+                    <label>Connection name<input id="groupMeDisplayName" type="text" maxlength="100" value="WPI Live Scoring Test"></label>
+                    <label>Delivery method
+                      <select id="groupMeDeliveryMode">
+                        <option value="topic">Topic</option>
+                        <option value="bot">Bot · main chat</option>
+                      </select>
+                    </label>
+                    <label>GroupMe
+                      <select id="groupMeGroupSelect" disabled>
+                        <option value="">Load groups first</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeGroupsButton" type="button">Load GroupMe groups</button></div>
+                </div>
+              </section>
+
+              <section id="groupMeTopicPanel" class="live-groupme-step-card live-groupme-topic-panel">
+                <span class="live-step-number">2</span>
+                <div class="live-step-body">
+                  <h3>Score Updates Topic</h3>
+                  <p>Choose the topic where WPI Live will post updates.</p>
+                  <div class="live-form-grid live-groupme-form live-groupme-step-form">
+                    <label>Topic
+                      <select id="groupMeTopicSelect" disabled>
+                        <option value="">Choose a group first</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeTopicsButton" type="button" disabled>Refresh topics</button></div>
+                  <p id="groupMeDiscoveryMessage" class="live-validation-message" role="status"></p>
+                </div>
+              </section>
+
+              <section class="live-groupme-step-card">
+                <span class="live-step-number">3</span>
+                <div class="live-step-body">
+                  <h3>Test connection</h3>
+                  <p>Send a test message to make sure everything is working.</p>
+                  <div class="live-dashboard-actions live-step-actions"><button id="testGroupMeButton" type="button" disabled>Send test message</button></div>
+                </div>
+              </section>
             </div>
 
-            <div id="groupMeTopicPanel" class="live-groupme-topic-panel">
-              <p class="live-panel-help">The access token stays server-side. WPI only returns non-secret GroupMe names and IDs needed to choose a destination.</p>
-              <div class="live-dashboard-actions">
-                <button id="loadGroupMeGroupsButton" type="button">Load GroupMe groups</button>
-                <button id="loadGroupMeTopicsButton" type="button" disabled>Refresh topics</button>
-              </div>
+            <details class="live-groupme-advanced">
+              <summary>Advanced</summary>
               <div class="live-form-grid live-groupme-form">
-                <label>Group
-                  <select id="groupMeGroupSelect" disabled>
-                    <option value="">Load groups first</option>
-                  </select>
-                </label>
-                <label>Topic
-                  <select id="groupMeTopicSelect" disabled>
-                    <option value="">Choose a group first</option>
-                  </select>
-                </label>
+                <label id="groupMeSecretField">Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="" placeholder="GROUPME_ACCESS_TOKEN_WPI_LIVE" autocapitalize="characters"></label>
+                <label class="live-groupme-enabled"><input id="groupMeEnabled" type="checkbox"> Enable real GroupMe delivery for new games</label>
               </div>
-              <p id="groupMeDiscoveryMessage" class="live-validation-message" role="status"></p>
-            </div>
+            </details>
 
-            <label class="live-groupme-enabled"><input id="groupMeEnabled" type="checkbox"> Enable real GroupMe delivery for new games</label>
-            <div class="live-dashboard-actions">
-              <button id="saveGroupMeButton" type="button">Save connection</button>
-              <button id="testGroupMeButton" type="button" disabled>Send test message</button>
+            <div class="live-dashboard-actions live-groupme-save-row">
+              <button id="saveGroupMeButton" type="button">Save &amp; use for new games</button>
             </div>
             <p id="groupMeSetupMessage" class="live-validation-message" role="status"></p>
           </div>
@@ -152,9 +176,9 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.8"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.56.8"></script>
-  <script src="js/live-dashboard-v7-56-8.js?v=7.56.8"></script>
+  <script src="config/live-sandbox.js?v=7.56.9"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.56.9"></script>
+  <script src="js/live-dashboard-v7-56-9.js?v=7.56.9"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
