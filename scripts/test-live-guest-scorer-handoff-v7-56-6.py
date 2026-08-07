@@ -51,6 +51,40 @@ require(migration, "case when caller_role='owner'", "owner-only secret mapping")
 require(migration, "revoke select on public.live_destinations from authenticated", "destination secret column protection")
 require(migration, "live_groupme_destination_config", "role-aware destination configuration RPC")
 require(migration, "case when caller_role='owner' then destination.secret_name else null end", "Admin secret-name redaction")
+require(migration, "public.live_is_team_member(live_games.team_id)", "insert-returning direct team-member read path")
+require(migration, "or public.live_can_read_game(live_games.id)", "existing game participant read path")
+
+insert_returning_hotfix = read("supabase/migrations/202608060001_live_game_insert_returning_rls.sql")
+require(insert_returning_hotfix, "public.live_is_team_member(live_games.team_id)", "hosted insert-returning RLS hotfix")
+require(insert_returning_hotfix, "public.live_can_read_game(live_games.id)", "hosted participant read preservation")
+reject(insert_returning_hotfix, "using (public.live_can_read_game(live_games.id));", "snapshot-only game read policy")
+
+# Policy expressions must qualify the target table's columns whenever a nested
+# query contains other `id`, `game_id`, or `team_id` columns. PostgreSQL rejects
+# the unqualified form with ERROR 42702 before the migration can complete.
+for token, label in (
+    ("public.live_is_team_member(live_teams.id)", "qualified team policy"),
+    ("where g.team_id=live_teams.id", "qualified guest team join"),
+    ("where g.roster_id=live_rosters.id", "qualified guest roster join"),
+    ("where r.id=live_players.roster_id", "qualified player roster join"),
+    ("where g.destination_id=live_destinations.id", "qualified destination join"),
+    ("public.live_can_read_game(live_games.id)", "qualified game read policy"),
+    ("public.live_can_score_game(live_games.id)", "qualified game score policy"),
+    ("where e.id=live_deliveries.event_id", "qualified delivery event join"),
+    ("where d.id=live_delivery_attempts.delivery_id", "qualified delivery-attempt join"),
+):
+    require(migration, token, label)
+
+for token, label in (
+    ("where g.team_id=id", "ambiguous team id"),
+    ("where g.roster_id=id", "ambiguous roster id"),
+    ("where g.destination_id=id", "ambiguous destination id"),
+    ("public.live_can_read_game(id)", "ambiguous game id"),
+    ("public.live_can_score_game(id)", "ambiguous score-game id"),
+    ("where e.id=event_id", "ambiguous delivery event id"),
+    ("where d.id=delivery_id", "ambiguous delivery attempt id"),
+):
+    reject(migration, token, label)
 
 require(backend, "signInAnonymously", "anonymous guest session")
 require(backend, "previewScorerHandoff", "handoff preview client")
@@ -87,3 +121,22 @@ print(" - One active scorer is enforced per game with atomic, audited handoff an
 print(" - QR and six-digit passes are five-minute, single-use, hashed, game-scoped, and no-login")
 print(" - Previous scorer devices become read-only while the accepted guest continues the same game")
 print(" - Admins operate games and GroupMe without receiving secret, database, or platform access")
+
+
+# Regression: Supabase installs pgcrypto functions in the extensions schema.
+# SECURITY DEFINER functions pinned to public must not call them unqualified.
+_pgcrypto_sql_files = [
+    ROOT / "supabase/WPI_LIVE_7_56_1_FULL_SETUP.sql",
+    ROOT / "supabase/WPI_LIVE_7_56_2_FULL_SETUP.sql",
+    ROOT / "supabase/migrations/202608050002_guest_scorer_handoff.sql",
+]
+for _path in _pgcrypto_sql_files:
+    _text = _path.read_text(encoding="utf-8")
+    assert "extensions.gen_random_bytes(" in _text, f"Qualified pgcrypto random bytes missing: {_path}"
+    assert "extensions.digest(" in _text, f"Qualified pgcrypto digest missing: {_path}"
+    assert "encode(gen_random_bytes(" not in _text, f"Unqualified gen_random_bytes remains: {_path}"
+
+_pgcrypto_hotfix = (ROOT / "supabase/migrations/202608060002_guest_scorer_pgcrypto_schema.sql").read_text(encoding="utf-8")
+assert "set search_path = public, extensions" in _pgcrypto_hotfix
+assert "live_create_scorer_handoff_pass" in _pgcrypto_hotfix
+assert "live_resolve_scorer_pass" in _pgcrypto_hotfix

@@ -423,7 +423,7 @@ create table if not exists public.live_team_invites (
   team_id uuid not null references public.live_teams(id) on delete cascade,
   email text not null,
   role public.live_team_role not null default 'scorer',
-  token text not null unique default encode(gen_random_bytes(24),'hex'),
+  token text not null unique default encode(extensions.gen_random_bytes(24),'hex'),
   status text not null default 'pending' check (status in ('pending','accepted','revoked','expired')),
   created_by uuid not null references auth.users(id),
   created_at timestamptz not null default now(),
@@ -1081,12 +1081,12 @@ begin
   set status='revoked',revoked_at=now()
   where game_id=target_game_id and status='pending';
 
-  raw_token := encode(gen_random_bytes(32),'hex');
+  raw_token := encode(extensions.gen_random_bytes(32),'hex');
   for i in 1..20 loop
     raw_code := lpad((floor(random()*1000000))::integer::text,6,'0');
     if not exists (
       select 1 from public.live_game_scorer_passes
-      where status='pending' and code_hash=encode(digest(raw_code,'sha256'),'hex')
+      where status='pending' and code_hash=encode(extensions.digest(raw_code,'sha256'),'hex')
     ) then
       code_available := true;
       exit;
@@ -1106,8 +1106,8 @@ begin
     game_id,token_hash,code_hash,status,expires_at,created_by,created_by_session_id
   ) values (
     target_game_id,
-    encode(digest(raw_token,'sha256'),'hex'),
-    encode(digest(raw_code,'sha256'),'hex'),
+    encode(extensions.digest(raw_token,'sha256'),'hex'),
+    encode(extensions.digest(raw_code,'sha256'),'hex'),
     'pending',now()+interval '5 minutes',caller,active_row.id
   ) returning * into pass_row;
 
@@ -1150,10 +1150,10 @@ begin
   if token_value is not null then
     if lock_row then
       select * into pass_row from public.live_game_scorer_passes
-      where token_hash=encode(digest(token_value,'sha256'),'hex') for update;
+      where token_hash=encode(extensions.digest(token_value,'sha256'),'hex') for update;
     else
       select * into pass_row from public.live_game_scorer_passes
-      where token_hash=encode(digest(token_value,'sha256'),'hex');
+      where token_hash=encode(extensions.digest(token_value,'sha256'),'hex');
     end if;
   elsif target_game_id is not null and char_length(code_value)=6 then
     if lock_row then
@@ -1163,7 +1163,7 @@ begin
       select * into pass_row from public.live_game_scorer_passes
       where game_id=target_game_id and status='pending';
     end if;
-    if pass_row.id is not null and pass_row.code_hash<>encode(digest(code_value,'sha256'),'hex') then
+    if pass_row.id is not null and pass_row.code_hash<>encode(extensions.digest(code_value,'sha256'),'hex') then
       update public.live_game_scorer_passes
       set attempt_count=least(attempt_count+1,20),
           status=case when attempt_count+1>=8 then 'revoked' else status end,
@@ -1559,11 +1559,13 @@ drop policy if exists "members read teams" on public.live_teams;
 drop policy if exists "members and guest scorers read teams" on public.live_teams;
 create policy "members and guest scorers read teams" on public.live_teams
 for select to authenticated using (
-  public.live_is_team_member(id)
+  public.live_is_team_member(live_teams.id)
   or exists (
     select 1 from public.live_games g
     join public.live_game_scorer_sessions s on s.game_id=g.id
-    where g.team_id=id and s.user_id=auth.uid() and s.status in ('active','read_only')
+    where g.team_id=live_teams.id
+      and s.user_id=auth.uid()
+      and s.status in ('active','read_only')
   )
 );
 
@@ -1571,19 +1573,21 @@ drop policy if exists "members read rosters" on public.live_rosters;
 drop policy if exists "members and guest scorers read rosters" on public.live_rosters;
 create policy "members and guest scorers read rosters" on public.live_rosters
 for select to authenticated using (
-  public.live_is_team_member(team_id)
+  public.live_is_team_member(live_rosters.team_id)
   or exists (
     select 1 from public.live_games g
     join public.live_game_scorer_sessions s on s.game_id=g.id
-    where g.roster_id=id and s.user_id=auth.uid() and s.status in ('active','read_only')
+    where g.roster_id=live_rosters.id
+      and s.user_id=auth.uid()
+      and s.status in ('active','read_only')
   )
 );
 drop policy if exists "scorers manage rosters" on public.live_rosters;
 drop policy if exists "team managers manage rosters" on public.live_rosters;
 create policy "team managers manage rosters" on public.live_rosters
 for all to authenticated
-using (public.live_has_team_role(team_id,array['owner','admin']::public.live_team_role[]))
-with check (public.live_has_team_role(team_id,array['owner','admin']::public.live_team_role[]));
+using (public.live_has_team_role(live_rosters.team_id,array['owner','admin']::public.live_team_role[]))
+with check (public.live_has_team_role(live_rosters.team_id,array['owner','admin']::public.live_team_role[]));
 
 drop policy if exists "members read players" on public.live_players;
 drop policy if exists "members and guest scorers read players" on public.live_players;
@@ -1591,12 +1595,14 @@ create policy "members and guest scorers read players" on public.live_players
 for select to authenticated using (
   exists (
     select 1 from public.live_rosters r
-    where r.id=roster_id and (
+    where r.id=live_players.roster_id and (
       public.live_is_team_member(r.team_id)
       or exists (
         select 1 from public.live_games g
         join public.live_game_scorer_sessions s on s.game_id=g.id
-        where g.roster_id=r.id and s.user_id=auth.uid() and s.status in ('active','read_only')
+        where g.roster_id=r.id
+          and s.user_id=auth.uid()
+          and s.status in ('active','read_only')
       )
     )
   )
@@ -1607,79 +1613,93 @@ create policy "team managers manage players" on public.live_players
 for all to authenticated
 using (exists (
   select 1 from public.live_rosters r
-  where r.id=roster_id and public.live_has_team_role(r.team_id,array['owner','admin']::public.live_team_role[])
+  where r.id=live_players.roster_id
+    and public.live_has_team_role(r.team_id,array['owner','admin']::public.live_team_role[])
 ))
 with check (exists (
   select 1 from public.live_rosters r
-  where r.id=roster_id and public.live_has_team_role(r.team_id,array['owner','admin']::public.live_team_role[])
+  where r.id=live_players.roster_id
+    and public.live_has_team_role(r.team_id,array['owner','admin']::public.live_team_role[])
 ));
 
 drop policy if exists "members read destinations" on public.live_destinations;
 drop policy if exists "members and game scorers read destinations" on public.live_destinations;
 create policy "members and game scorers read destinations" on public.live_destinations
 for select to authenticated using (
-  public.live_is_team_member(team_id)
+  public.live_is_team_member(live_destinations.team_id)
   or exists (
     select 1 from public.live_games g
     join public.live_game_scorer_sessions s on s.game_id=g.id
-    where g.destination_id=id and s.user_id=auth.uid() and s.status in ('active','read_only')
+    where g.destination_id=live_destinations.id
+      and s.user_id=auth.uid()
+      and s.status in ('active','read_only')
   )
 );
 
 drop policy if exists "members read games" on public.live_games;
 drop policy if exists "game participants read games" on public.live_games;
 create policy "game participants read games" on public.live_games
-for select to authenticated using (public.live_can_read_game(id));
+for select to authenticated using (
+  -- Direct team membership is intentionally evaluated from the candidate row.
+  -- An INSERT ... RETURNING statement cannot rely only on a STABLE helper that
+  -- re-queries live_games because that helper uses the statement-start snapshot
+  -- and cannot see the row being inserted yet.
+  public.live_is_team_member(live_games.team_id)
+  or public.live_can_read_game(live_games.id)
+);
 drop policy if exists "scorers create games" on public.live_games;
 drop policy if exists "team managers create games" on public.live_games;
 create policy "team managers create games" on public.live_games
 for insert to authenticated with check (
-  public.live_has_team_role(team_id,array['owner','admin']::public.live_team_role[])
-  and created_by=auth.uid()
+  public.live_has_team_role(live_games.team_id,array['owner','admin']::public.live_team_role[])
+  and live_games.created_by=auth.uid()
 );
 drop policy if exists "scorers update games" on public.live_games;
 drop policy if exists "active scorer updates games" on public.live_games;
 create policy "active scorer updates games" on public.live_games
 for update to authenticated
-using (public.live_can_score_game(id))
-with check (public.live_can_score_game(id));
+using (public.live_can_score_game(live_games.id))
+with check (public.live_can_score_game(live_games.id));
 
 drop policy if exists "members read lineups" on public.live_lineups;
 drop policy if exists "game participants read lineups" on public.live_lineups;
 create policy "game participants read lineups" on public.live_lineups
-for select to authenticated using (public.live_can_read_game(game_id));
+for select to authenticated using (public.live_can_read_game(live_lineups.game_id));
 drop policy if exists "scorers manage lineups" on public.live_lineups;
 drop policy if exists "active scorer manages lineups" on public.live_lineups;
 create policy "active scorer manages lineups" on public.live_lineups
 for all to authenticated
-using (public.live_can_score_game(game_id))
-with check (public.live_can_score_game(game_id));
+using (public.live_can_score_game(live_lineups.game_id))
+with check (public.live_can_score_game(live_lineups.game_id));
 
 drop policy if exists "members read events" on public.live_events;
 drop policy if exists "game participants read events" on public.live_events;
 create policy "game participants read events" on public.live_events
-for select to authenticated using (public.live_can_read_game(game_id));
+for select to authenticated using (public.live_can_read_game(live_events.game_id));
 drop policy if exists "scorers create events" on public.live_events;
 drop policy if exists "active scorer creates events" on public.live_events;
 create policy "active scorer creates events" on public.live_events
-for insert to authenticated with check (public.live_can_score_game(game_id) and created_by=auth.uid());
+for insert to authenticated with check (
+  public.live_can_score_game(live_events.game_id)
+  and live_events.created_by=auth.uid()
+);
 drop policy if exists "scorers update events" on public.live_events;
 drop policy if exists "active scorer updates events" on public.live_events;
 create policy "active scorer updates events" on public.live_events
 for update to authenticated
-using (public.live_can_score_game(game_id))
-with check (public.live_can_score_game(game_id));
+using (public.live_can_score_game(live_events.game_id))
+with check (public.live_can_score_game(live_events.game_id));
 
 drop policy if exists "members read recaps" on public.live_game_recaps;
 drop policy if exists "game participants read recaps" on public.live_game_recaps;
 create policy "game participants read recaps" on public.live_game_recaps
-for select to authenticated using (public.live_can_read_game(game_id));
+for select to authenticated using (public.live_can_read_game(live_game_recaps.game_id));
 drop policy if exists "scorers manage recaps" on public.live_game_recaps;
 drop policy if exists "active scorer manages recaps" on public.live_game_recaps;
 create policy "active scorer manages recaps" on public.live_game_recaps
 for all to authenticated
-using (public.live_can_score_game(game_id))
-with check (public.live_can_score_game(game_id));
+using (public.live_can_score_game(live_game_recaps.game_id))
+with check (public.live_can_score_game(live_game_recaps.game_id));
 
 drop policy if exists "members read deliveries" on public.live_deliveries;
 drop policy if exists "game participants read deliveries" on public.live_deliveries;
@@ -1687,7 +1707,8 @@ create policy "game participants read deliveries" on public.live_deliveries
 for select to authenticated using (
   exists (
     select 1 from public.live_events e
-    where e.id=event_id and public.live_can_read_game(e.game_id)
+    where e.id=live_deliveries.event_id
+      and public.live_can_read_game(e.game_id)
   )
 );
 
@@ -1698,7 +1719,8 @@ for select to authenticated using (
   exists (
     select 1 from public.live_deliveries d
     join public.live_events e on e.id=d.event_id
-    where d.id=delivery_id and public.live_can_read_game(e.game_id)
+    where d.id=live_delivery_attempts.delivery_id
+      and public.live_can_read_game(e.game_id)
   )
 );
 
