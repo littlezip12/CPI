@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-6.css?v=7.56.6">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-7.css?v=7.56.7">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -79,7 +79,7 @@
           <button id="transferScoringButton" class="live-scorer-transfer-primary" type="button" hidden>Transfer scoring</button>
         </div>
       </section>
-      <p id="scorerReadOnlyNotice" class="live-scorer-read-only-notice" hidden></p>
+      <div id="scorerReadOnlyNotice" class="live-scorer-read-only-notice" hidden><span id="scorerReadOnlyMessage"></span><button id="enterScorerCodeInlineButton" type="button">Enter scorer code</button></div>
 
       <div class="live-scoreboard" aria-live="polite">
         <div class="live-score-team"><span id="scoreTeamName">Pilot Team</span><strong id="teamScore">0</strong></div>
@@ -263,12 +263,28 @@
         </div>
         <div class="live-handoff-dialog-actions">
           <button id="copyScorerHandoffLinkButton" type="button">Copy link</button>
+          <button id="shareScorerHandoffLinkButton" type="button">Share link</button>
           <button id="newScorerHandoffPassButton" type="button">Create new pass</button>
           <button id="revokeScorerHandoffPassButton" type="button">Revoke pass</button>
         </div>
       </form>
     </dialog>
 
+
+
+    <dialog id="scorerCodeDialog" class="live-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Game-scoped access</p><h2>Take over scoring</h2></div><button value="cancel" aria-label="Close scorer code dialog">Close</button></div>
+        <p class="live-panel-help">Enter the six-digit code shown by the current scorer. Your permanent account role will not change.</p>
+        <div class="live-form-grid">
+          <label>Scorer code<input id="inGameScorerCode" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="one-time-code" placeholder="000000"></label>
+          <label>Display name<input id="inGameScorerDisplayName" type="text" maxlength="80" autocomplete="name" placeholder="Name shown in scoring audit"></label>
+        </div>
+        <div id="inGameScorerPreview" class="live-invite-result" hidden></div>
+        <p id="inGameScorerCodeMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="previewInGameScorerCodeButton" type="button">Check code</button><button id="acceptInGameScorerCodeButton" type="button" disabled>Accept scoring control</button></div>
+      </form>
+    </dialog>
     <dialog id="scoreDialog" class="live-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Correction</p><h2>Set the current score</h2></div><button value="cancel" aria-label="Close score dialog">Close</button></div>
@@ -280,9 +296,9 @@
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="config/live-sandbox.js?v=7.56.6"></script>
-  <script src="js/live-backend-v7-56-6.js?v=7.56.6"></script>
-  <script src="js/live-sandbox-v7-56-6.js?v=7.56.6"></script>
+  <script src="config/live-sandbox.js?v=7.56.7"></script>
+  <script src="js/live-backend-v7-56-7.js?v=7.56.7"></script>
+  <script src="js/live-sandbox-v7-56-7.js?v=7.56.7"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

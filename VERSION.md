@@ -1,10 +1,9 @@
-# WPI 7.56.6 — Guest Scorer Handoff & Scoped Admin Control
+# WPI 7.56.7 — In-Game Scorer Code Claim
 
-- Enforces exactly one active scoring controller per game.
-- Allows the active Scorer or an Owner/Admin to generate a five-minute, single-use QR handoff pass with a six-digit fallback code.
-- Lets a replacement scorer scan, enter a display name, and continue the same game without creating or signing into a permanent WPI account.
-- Makes the prior scoring device read-only immediately after the replacement accepts.
-- Gives Team Admins emergency takeover, permanent roster/game operations, GroupMe naming/testing, and delivery retry authority without exposing code, database access, credentials, or secret mappings.
-- Stores only hashes of handoff tokens/codes and maintains a permanent assignment, transfer, takeover, and game-end audit trail.
-- Preserves WPI 7.56.4 manual-game schema integrity and WPI 7.56.5 cross-account scorer persistence.
-- Requires the new 7.56.6 Supabase migration, Anonymous Sign-Ins enabled in Supabase Authentication, and redeployment of `groupme-post`.
+- Adds **Enter scorer code** directly to the WPI Live dashboard, active-game history rows, and read-only live game view.
+- Allows an already signed-in Viewer, parent, or Scorer to claim temporary game-scoped scoring control without leaving the page or changing their permanent team role.
+- Keeps the standalone QR/no-account Guest Scorer flow for people who are not already viewing WPI.
+- Promotes the accepted session to effective game scoring authority in the browser while preserving Owner/Admin-only roster, invitation, and GroupMe configuration controls.
+- Adds a mobile Share link action to the current scorer’s transfer dialog.
+- Preserves exactly one active scorer, previous-device read-only enforcement, audited handoff, and exactly-once GroupMe delivery.
+- Requires no new database migration, Supabase setting change, secret reset, or Edge Function deployment.

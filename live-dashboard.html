@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-6.css?v=7.56.6">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-7.css?v=7.56.7">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -56,6 +56,7 @@
           <div class="live-dashboard-actions">
             <a id="createScrimmageLink" class="live-primary-link" href="live-sandbox.html?new=1">Create manual scrimmage</a>
             <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
+            <button id="enterScorerCodeButton" type="button" hidden>Enter scorer code</button>
           </div>
         </article>
 
@@ -106,11 +107,26 @@
         <div id="gameHistoryList" class="live-game-history-list"><p class="live-empty-state">No connected games yet.</p></div>
       </section>
     </section>
+
+
+    <dialog id="dashboardScorerCodeDialog" class="live-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Game-scoped access</p><h2>Take over scoring</h2></div><button value="cancel" aria-label="Close scorer code dialog">Close</button></div>
+        <p class="live-panel-help">Enter the six-digit code shown by the current scorer. Your permanent team role will not change.</p>
+        <div class="live-form-grid">
+          <label>Scorer code<input id="dashboardScorerCode" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="one-time-code" placeholder="000000"></label>
+          <label>Display name<input id="dashboardScorerDisplayName" type="text" maxlength="80" autocomplete="name" placeholder="Name shown in scoring audit"></label>
+        </div>
+        <div id="dashboardScorerPreview" class="live-invite-result" hidden></div>
+        <p id="dashboardScorerCodeMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="dashboardPreviewScorerCodeButton" type="button">Check code</button><button id="dashboardAcceptScorerCodeButton" type="button" disabled>Accept scoring control</button></div>
+      </form>
+    </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.6"></script>
-  <script src="js/live-backend-v7-56-6.js?v=7.56.6"></script>
-  <script src="js/live-dashboard-v7-56-6.js?v=7.56.6"></script>
+  <script src="config/live-sandbox.js?v=7.56.7"></script>
+  <script src="js/live-backend-v7-56-7.js?v=7.56.7"></script>
+  <script src="js/live-dashboard-v7-56-7.js?v=7.56.7"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
