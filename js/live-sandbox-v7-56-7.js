@@ -391,6 +391,11 @@
     return new Date(message.nextRetryAt).getTime() <= Date.now();
   }
 
+  function canDeliverAfterGameEnd() {
+    if (state.game.status !== "ended" || !backend?.user?.id) return false;
+    return ["owner", "admin"].includes(workspace?.role) || state.game.endedByUserId === backend.user.id;
+  }
+
   async function deliverMessage(message, remoteEventId, options = {}) {
     if (!backend || !remoteEventId || !message) return;
     message.status = "sending";
@@ -412,7 +417,8 @@
   }
 
   async function deliverPendingMessages(result, forceEventIds = new Set()) {
-    if (!backend || readOnlyScorer || scorerControl?.canScore === false || !groupMeDestination?.enabled || state.game.messagesPaused) return;
+    const finalDeliveryAllowed = canDeliverAfterGameEnd();
+    if (!backend || (!finalDeliveryAllowed && (readOnlyScorer || scorerControl?.canScore === false)) || !groupMeDestination?.enabled || state.game.messagesPaused) return;
     const eventMap = result?.remoteEventMap || {};
     let dispatchStateChanged = false;
     for (const message of [...(state.game.messages || [])].reverse()) {
@@ -457,7 +463,8 @@
   }
 
   async function retryMessage(eventId) {
-    if (!backend || readOnlyScorer || scorerControl?.canScore === false || !state.game.remoteId) return;
+    const finalDeliveryAllowed = canDeliverAfterGameEnd();
+    if (!backend || (!finalDeliveryAllowed && (readOnlyScorer || scorerControl?.canScore === false)) || !state.game.remoteId) return;
     const message = (state.game.messages || []).find(item => item.eventId === eventId);
     if (!message) return;
     try {
@@ -1431,7 +1438,7 @@
         : message.status === "suppressed" ? "Suppressed"
         : message.status === "failed" ? "Failed"
         : "Queued";
-      const retry = message.status === "failed" && (!backend || scorerControl?.canScore)
+      const retry = message.status === "failed" && (!backend || scorerControl?.canScore || canDeliverAfterGameEnd())
         ? `<button class="live-message-retry" type="button" data-retry-event="${escapeHtml(message.eventId)}">Retry</button>`
         : "";
       const detail = message.lastError ? `<small>${escapeHtml(message.lastError)}</small>`
@@ -1585,6 +1592,7 @@
     }
     state.game.status = "ended";
     state.game.endedAt = new Date().toISOString();
+    state.game.endedByUserId = backend?.user?.id || state.game.endedByUserId || null;
     for (const dialog of document.querySelectorAll("dialog[open]")) dialog.close();
     saveState();
     renderAll();

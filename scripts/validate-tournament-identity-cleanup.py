@@ -38,8 +38,8 @@ participants = load("data/tournaments/identity/participants.json")
 evidence = load("data/tournaments/evidence/index.json")
 review = load("data/tournaments/evidence/ranking-review.json")
 
-if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11"}:
-    fail(f"Normalized manifest release must be {EXPECTED_RELEASE} or 7.54.5")
+if manifest.get("release") not in {EXPECTED_RELEASE, "7.54.5", "7.54.6", "7.54.7", "7.54.8", "7.54.9", "7.54.10","7.54.11", "7.55.0", "7.55.1"}:
+    fail(f"Normalized manifest release must be {EXPECTED_RELEASE} or a supported 7.54.x/7.55.x tournament-platform release")
 if participants.get("release") != EXPECTED_RELEASE:
     fail(f"Participant registry release must be {EXPECTED_RELEASE}")
 if evidence.get("release") != EXPECTED_RELEASE:

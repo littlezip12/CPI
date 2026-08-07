@@ -116,6 +116,16 @@ require(dashboard, 'workspace.role === "owner" ? $("groupMeSecretName")', "admin
 require(dashboard, "canCreateGames", "Owner/Admin game creation")
 require(login, "backend.isAnonymousUser(session.user)", "anonymous/member login separation")
 
+
+# Final-whistle delivery must remain authorized after the final-status trigger
+# closes the active scorer session. The browser preserves the finalizer identity,
+# and the Edge Function authorizes the last ended scorer or a Team Owner/Admin.
+require(sandbox, "canDeliverAfterGameEnd", "final-game delivery browser guard")
+require(sandbox, "endedByUserId", "finalizer identity persistence")
+require(function, "live_game_scorer_sessions", "last ended scorer final delivery authorization")
+require(function, "Final-game delivery requires the last scorer or a Team Owner/Admin", "final delivery authorization error")
+require(function, '["final", "cancelled"].includes(game.status)', "final game authorization branch")
+
 print("WPI GUEST SCORER HANDOFF 7.56.7 TEST PASSED")
 print(" - One active scorer is enforced per game with atomic, audited handoff and Admin takeover")
 print(" - QR and six-digit passes are five-minute, single-use, hashed, game-scoped, and no-login")

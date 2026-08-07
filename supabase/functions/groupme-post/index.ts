@@ -122,7 +122,7 @@ Deno.serve(async (req) => {
       ? String(payload.trigger_source)
       : (force ? "manual_retry" : "scorer");
 
-    const { data: event, error: eventError } = await userClient
+    const { data: event, error: eventError } = await adminClient
       .from("live_events")
       .select("id,message_text,status,game_id,game:live_games!inner(id,team_id,environment,status,messages_paused,message_frequency,destination_id,destination:live_destinations(id,display_name,enabled))")
       .eq("id", eventId)
@@ -131,14 +131,43 @@ Deno.serve(async (req) => {
 
     const game = Array.isArray(event.game) ? event.game[0] : event.game;
     const destination = Array.isArray(game.destination) ? game.destination[0] : game.destination;
-    const { data: scorerControl, error: scorerControlError } = await userClient.rpc("live_scorer_control_status", {
-      target_game_id: game.id,
-    });
-    if (scorerControlError || !scorerControl?.canScore) {
+    let scorerControl = null;
+    let deliveryAuthorized = false;
+
+    if (["final", "cancelled"].includes(game.status)) {
+      const [{ data: membership }, { data: endedSession }] = await Promise.all([
+        adminClient
+          .from("live_team_members")
+          .select("role")
+          .eq("team_id", game.team_id)
+          .eq("user_id", user.id)
+          .maybeSingle(),
+        adminClient
+          .from("live_game_scorer_sessions")
+          .select("id")
+          .eq("game_id", game.id)
+          .eq("user_id", user.id)
+          .eq("status", "ended")
+          .order("ended_at", { ascending: false })
+          .limit(1)
+          .maybeSingle(),
+      ]);
+      deliveryAuthorized = ["owner", "admin"].includes(membership?.role) || Boolean(endedSession?.id);
+    } else {
+      const { data, error } = await userClient.rpc("live_scorer_control_status", {
+        target_game_id: game.id,
+      });
+      scorerControl = data;
+      deliveryAuthorized = !error && Boolean(scorerControl?.canScore);
+    }
+
+    if (!deliveryAuthorized) {
       return json({
-        error: scorerControl?.activeDisplayName
-          ? `Scoring control is assigned to ${scorerControl.activeDisplayName}`
-          : "Active scorer access required",
+        error: ["final", "cancelled"].includes(game.status)
+          ? "Final-game delivery requires the last scorer or a Team Owner/Admin"
+          : scorerControl?.activeDisplayName
+            ? `Scoring control is assigned to ${scorerControl.activeDisplayName}`
+            : "Active scorer access required",
       }, 403);
     }
 

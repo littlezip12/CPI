@@ -24,7 +24,7 @@ for forbidden in ('GROUPME_BOT_ID:', 'bot_id:', 'service_role', 'SUPABASE_SECRET
     if forbidden.lower() in config.lower(): fail(f"public config contains secret token {forbidden}")
 
 html=read("live-sandbox.html")
-for token in ('js/live-backend-v7-56-7.js?v=7.56.7','js/live-sandbox-v7-56-7.js?v=7.56.7','css/live-sandbox-v7-56-7.css?v=7.56.7','id="messageList"','id="pauseMessagesButton"'):
+for token in ('js/live-backend-v7-56-7.js?v=7.56.7','js/live-sandbox-v7-56-7.js?v=7.56.7-final-whistle-1','css/live-sandbox-v7-56-7.css?v=7.56.7','id="messageList"','id="pauseMessagesButton"'):
     if token not in html: fail(f"live sandbox missing {token}")
 
 dashboard=read("live-dashboard.html")
@@ -38,7 +38,7 @@ for forbidden in ('api.groupme.com','GROUPME_BOT_ID','SUPABASE_SECRET_KEY','SUPA
     if forbidden in backend: fail(f"browser backend contains server/secret token {forbidden}")
 
 sandbox=read("js/live-sandbox-v7-56-7.js")
-for token in ('deliverPendingMessages','retryMessage','data-retry-event','applyDeliveryStatuses','nextRetryAt','GroupMe setup needed','Connected delivery','status = "sending"','backend.resolveRemoteEventId','hasRecoverableDelivery'):
+for token in ('deliverPendingMessages','retryMessage','data-retry-event','applyDeliveryStatuses','nextRetryAt','GroupMe setup needed','Connected delivery','status = "sending"','backend.resolveRemoteEventId','hasRecoverableDelivery','canDeliverAfterGameEnd','endedByUserId'):
     if token not in sandbox: fail(f"scorer delivery workflow missing {token}")
 if 'api.groupme.com' in sandbox or 'GROUPME_BOT_ID' in sandbox: fail("scorer contains GroupMe server credential logic")
 
@@ -47,7 +47,7 @@ for token in ('saveGroupMeDestination','testGroupMeDestination','groupMeDelivery
     if token not in dash_js: fail(f"dashboard GroupMe workflow missing {token}")
 
 edge=read("supabase/functions/groupme-post/index.ts")
-for token in ('https://api.groupme.com/v3/bots/post','action === "test"','Deno.env.get(secretName)','live_delivery_attempts','next_retry_at','retryDelaySeconds','live_claim_groupme_delivery','AbortSignal.timeout(15000)','already_sent','live_scorer_control_status','canScore','Owner or Admin role required','auth.getUser(userJwt)','authorization.replace(/^Bearer\\s+/i','groupme-post failed','npm:@supabase/supabase-js@2.110.8/cors','x-wpi-live-release'):
+for token in ('https://api.groupme.com/v3/bots/post','action === "test"','Deno.env.get(secretName)','live_delivery_attempts','next_retry_at','retryDelaySeconds','live_claim_groupme_delivery','AbortSignal.timeout(15000)','already_sent','live_scorer_control_status','canScore','Owner or Admin role required','auth.getUser(userJwt)','authorization.replace(/^Bearer\\s+/i','groupme-post failed','npm:@supabase/supabase-js@2.110.8/cors','x-wpi-live-release','live_game_scorer_sessions','Final-game delivery requires the last scorer or a Team Owner/Admin','["final", "cancelled"].includes(game.status)'):
     if token not in edge: fail(f"GroupMe Edge Function missing {token}")
 if 'const groupMeBotId = Deno.env.get("GROUPME_BOT_ID")' in edge: fail("Edge Function must use destination-specific dynamic secret names")
 
