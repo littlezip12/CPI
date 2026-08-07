@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-7.css?v=7.56.7">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-8.css?v=7.56.8">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -63,12 +63,40 @@
         <article class="live-panel live-groupme-setup-panel">
           <p class="live-section-kicker">Parent delivery</p>
           <h2>GroupMe connection</h2>
-          <p class="live-panel-help">WPI stores each play first, then posts the approved message through a server-side GroupMe bot. The bot ID remains in Supabase secrets and never appears in GitHub or the browser.</p>
+          <p class="live-panel-help">WPI stores each play first, then delivers the approved message server-side. Use Topic delivery for a dedicated score-updates topic, or keep Bot delivery as the supported main-chat fallback. GroupMe credentials remain in Supabase secrets and never appear in GitHub or browser storage.</p>
           <div id="groupMeAdminPanel" hidden>
             <div class="live-form-grid live-groupme-form">
-              <label>GroupMe name<input id="groupMeDisplayName" type="text" maxlength="100" value="WPI Live Scoring Test"></label>
-              <label id="groupMeSecretField">Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="" placeholder="GROUPME_BOT_ID_TEAM" autocapitalize="characters"></label>
+              <label>Connection name<input id="groupMeDisplayName" type="text" maxlength="100" value="WPI Live Scoring Test"></label>
+              <label>Delivery method
+                <select id="groupMeDeliveryMode">
+                  <option value="topic">Topic</option>
+                  <option value="bot">Bot · main chat</option>
+                </select>
+              </label>
+              <label id="groupMeSecretField">Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="" placeholder="GROUPME_ACCESS_TOKEN_WPI_LIVE" autocapitalize="characters"></label>
             </div>
+
+            <div id="groupMeTopicPanel" class="live-groupme-topic-panel">
+              <p class="live-panel-help">The access token stays server-side. WPI only returns non-secret GroupMe names and IDs needed to choose a destination.</p>
+              <div class="live-dashboard-actions">
+                <button id="loadGroupMeGroupsButton" type="button">Load GroupMe groups</button>
+                <button id="loadGroupMeTopicsButton" type="button" disabled>Refresh topics</button>
+              </div>
+              <div class="live-form-grid live-groupme-form">
+                <label>Group
+                  <select id="groupMeGroupSelect" disabled>
+                    <option value="">Load groups first</option>
+                  </select>
+                </label>
+                <label>Topic
+                  <select id="groupMeTopicSelect" disabled>
+                    <option value="">Choose a group first</option>
+                  </select>
+                </label>
+              </div>
+              <p id="groupMeDiscoveryMessage" class="live-validation-message" role="status"></p>
+            </div>
+
             <label class="live-groupme-enabled"><input id="groupMeEnabled" type="checkbox"> Enable real GroupMe delivery for new games</label>
             <div class="live-dashboard-actions">
               <button id="saveGroupMeButton" type="button">Save connection</button>
@@ -124,9 +152,9 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.7"></script>
-  <script src="js/live-backend-v7-56-7.js?v=7.56.7"></script>
-  <script src="js/live-dashboard-v7-56-7.js?v=7.56.7"></script>
+  <script src="config/live-sandbox.js?v=7.56.8"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.56.8"></script>
+  <script src="js/live-dashboard-v7-56-8.js?v=7.56.8"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

@@ -1,9 +1,10 @@
-# WPI 7.56.7 — In-Game Scorer Code Claim
+# WPI 7.56.8 — GroupMe Topic Delivery Foundation
 
-- Adds **Enter scorer code** directly to the WPI Live dashboard, active-game history rows, and read-only live game view.
-- Allows an already signed-in Viewer, parent, or Scorer to claim temporary game-scoped scoring control without leaving the page or changing their permanent team role.
-- Keeps the standalone QR/no-account Guest Scorer flow for people who are not already viewing WPI.
-- Promotes the accepted session to effective game scoring authority in the browser while preserving Owner/Admin-only roster, invitation, and GroupMe configuration controls.
-- Adds a mobile Share link action to the current scorer’s transfer dialog.
-- Preserves exactly one active scorer, previous-device read-only enforcement, audited handoff, and exactly-once GroupMe delivery.
-- Requires no new database migration, Supabase setting change, secret reset, or Edge Function deployment.
+- Adds a **Topic** delivery mode alongside the existing GroupMe Bot API fallback.
+- Keeps GroupMe access tokens server-side in Supabase Edge Function secrets; no GroupMe token is stored in GitHub, browser JavaScript, localStorage, or database rows.
+- Lets a Team Owner/Admin discover GroupMe groups and topics from the private WPI Live dashboard after a server-side credential has been configured.
+- Stores only the selected GroupMe group/topic IDs, labels, delivery mode, and server-side secret-name reference in `live_destinations`.
+- Routes tests and live scoring events through the selected topic when Topic mode is enabled.
+- Preserves exactly-once delivery claims, retries, audit history, scorer transfer/Admin takeover rules, and the 7.56.7 Final Whistle persistence-order correction.
+- Preserves the existing Bot mode for supported main-chat delivery and fallback.
+- Requires one additive Supabase migration, one server-side GroupMe access-token secret for Topic mode, and redeployment of `groupme-post`.
