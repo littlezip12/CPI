@@ -53,10 +53,11 @@ for page,script in (
     ("live-dashboard.html","live-dashboard-v7-56-7.js?v=7.56.7"),
     ("live-login.html","live-login-v7-56-7.js?v=7.56.7"),
     ("live-password-reset.html","live-password-reset-v7-56-7.js?v=7.56.7"),
-    ("live-sandbox.html","live-sandbox-v7-56-7.js?v=7.56.7")
+    ("live-sandbox.html","live-sandbox-v7-56-7.js?v=7.56.7-final-sync-1")
 ):
     text=read(page)
-    if 'live-backend-v7-56-7.js?v=7.56.7' not in text: errors.append(f"{page} missing 7.56.7 backend")
+    expected_backend = 'live-backend-v7-56-7.js?v=7.56.7-final-sync-1' if page == 'live-sandbox.html' else 'live-backend-v7-56-7.js?v=7.56.7'
+    if expected_backend not in text: errors.append(f"{page} missing 7.56.7 backend")
     if script not in text: errors.append(f"{page} missing {script}")
     if 'config/live-sandbox.js?v=7.56.7' not in text: errors.append(f"{page} missing 7.56.7 config cache bust")
 

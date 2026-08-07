@@ -103,8 +103,12 @@ stale_cache = []
 for path in ROOT.rglob('*.html'):
     text = path.read_text(encoding='utf-8', errors='ignore')
     for match in re.finditer(r'\?v=(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9.-]+)?)', text):
-        if match.group(1) not in {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7'}:
-            stale_cache.append(f'{path.relative_to(ROOT)}:{match.group(1)}')
+        cache_key = match.group(1)
+        accepted_cache_keys = {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7'}
+        current_release = str(site.get('version') or '')
+        current_hotfix_key = bool(current_release) and cache_key.startswith(current_release + '-')
+        if cache_key not in accepted_cache_keys and not current_hotfix_key:
+            stale_cache.append(f'{path.relative_to(ROOT)}:{cache_key}')
             break
 if stale_cache:
     errors.append(f'HTML pages retain stale local cache keys: {stale_cache[:15]}')

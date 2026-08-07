@@ -425,11 +425,11 @@
       const force = forceEventIds.has(message.eventId);
       if (!force && !deliveryIsDue(message)) continue;
 
-      let remoteEventId = eventMap[message.eventId] || null;
+      let remoteEventId = eventMap[message.eventId] || message.remoteEventId || null;
       if (!remoteEventId && result?.remoteGameId) {
         try {
           remoteEventId = await backend.resolveRemoteEventId(result.remoteGameId, message.eventId);
-          if (remoteEventId) eventMap[message.eventId] = remoteEventId;
+          if (remoteEventId) { eventMap[message.eventId] = remoteEventId; message.remoteEventId = remoteEventId; }
         } catch (error) {
           message.status = "failed";
           message.lastError = `Delivery dispatch lookup failed: ${error.message}`;
@@ -438,6 +438,8 @@
           continue;
         }
       }
+
+      if (remoteEventId) message.remoteEventId = remoteEventId;
 
       if (!remoteEventId) {
         message.status = "failed";
@@ -468,6 +470,17 @@
     const message = (state.game.messages || []).find(item => item.eventId === eventId);
     if (!message) return;
     try {
+      if (finalDeliveryAllowed && state.game.status === "ended") {
+        let remoteEventId = message.remoteEventId || null;
+        if (!remoteEventId) {
+          remoteEventId = await backend.resolveRemoteEventId(state.game.remoteId, message.eventId);
+          if (remoteEventId) message.remoteEventId = remoteEventId;
+        }
+        if (!remoteEventId) throw new Error("The final event has not been stored on the server yet.");
+        await deliverMessage(message, remoteEventId, { force:true, triggerSource:"manual_retry" });
+        await refreshDeliveryStatuses(state.game.remoteId);
+        return;
+      }
       const result = await backend.syncState(state);
       await deliverPendingMessages(result, new Set([eventId]));
       await refreshDeliveryStatuses(result.remoteGameId);

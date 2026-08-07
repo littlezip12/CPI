@@ -518,7 +518,7 @@
 
       const { data: existingGame, error: existingGameError } = await this.client
         .from("live_games")
-        .select("id")
+        .select("id,status")
         .eq("team_id", workspace.teamId)
         .eq("client_game_id", state.game.id)
         .maybeSingle();
@@ -526,9 +526,11 @@
 
       let game;
       let scorerControl;
+      let deferredFinalGameUpdate = null;
+      const endingGame = state.game.status === "ended";
       if (existingGame?.id) {
         scorerControl = await this.scorerControlStatus(existingGame.id);
-        if (!scorerControl.activeSessionId && ["owner", "admin", "scorer"].includes(workspace.role)) {
+        if (!scorerControl.activeSessionId && !endingGame && ["owner", "admin", "scorer"].includes(workspace.role)) {
           scorerControl = await this.claimGameScoring(existingGame.id, workspace.scorerDisplayName || null);
         }
         if (!scorerControl.canScore) {
@@ -542,14 +544,22 @@
         delete gameUpdatePayload.team_id;
         delete gameUpdatePayload.client_game_id;
         delete gameUpdatePayload.created_by;
-        const { data, error } = await this.client
-          .from("live_games")
-          .update(gameUpdatePayload)
-          .eq("id", existingGame.id)
-          .select("id")
-          .single();
-        if (error) throw error;
-        game = data;
+        if (endingGame) {
+          // Finalization must be the last database write. Changing live_games
+          // to final closes the active scorer session via trigger, so persist
+          // the Final Whistle event, lineups, and recap first.
+          deferredFinalGameUpdate = { id: existingGame.id, payload: gameUpdatePayload };
+          game = { id: existingGame.id };
+        } else {
+          const { data, error } = await this.client
+            .from("live_games")
+            .update(gameUpdatePayload)
+            .eq("id", existingGame.id)
+            .select("id")
+            .single();
+          if (error) throw error;
+          game = data;
+        }
       } else {
         if (!["owner", "admin"].includes(workspace.role)) {
           throw new Error("A Team Owner or Admin must create the game before assigning a Scorer.");
@@ -721,6 +731,28 @@
           ...Object.fromEntries((remoteEvents || []).map(event => [event.client_event_id,event.id]))
         };
       }
+      if (deferredFinalGameUpdate) {
+        const { data: finalizedGame, error: finalGameError } = await this.client
+          .from("live_games")
+          .update(deferredFinalGameUpdate.payload)
+          .eq("id", deferredFinalGameUpdate.id)
+          .select("id")
+          .single();
+        if (finalGameError) throw finalGameError;
+        game = finalizedGame;
+        scorerControl = {
+          ...(scorerControl || {}),
+          activeUserId: null,
+          activeDisplayName: null,
+          activeKind: null,
+          activeSessionId: null,
+          canScore: false,
+          canTransfer: false,
+          callerSessionStatus: "ended"
+        };
+        this.scorerControl = scorerControl;
+      }
+
       const deliveryStatuses = await this.loadDeliveryStatuses(game.id);
       return {
         remoteGameId: game.id,

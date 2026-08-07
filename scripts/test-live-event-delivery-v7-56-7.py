@@ -24,6 +24,8 @@ for token in (
     '.select("id,client_event_id")',
     'unresolvedClientIds',
     'resolveRemoteEventId(gameId, clientEventId)',
+    'deferredFinalGameUpdate',
+    'Finalization must be the last database write',
     'config.release || "7.56.7"'
 ):
     if token not in backend: errors.append(f"backend missing {token}")
@@ -33,6 +35,8 @@ for token in (
     'backend.resolveRemoteEventId(result.remoteGameId, message.eventId)',
     'Play saved, but its server event ID could not be resolved for GroupMe delivery.',
     'await refreshDeliveryStatuses(result.remoteGameId)',
+    'message.remoteEventId',
+    'The final event has not been stored on the server yet.',
     'hasRecoverableDelivery'
 ):
     if token not in sandbox: errors.append(f"sandbox missing {token}")
@@ -41,11 +45,16 @@ for page,script in (
     ("live-dashboard.html","live-dashboard-v7-56-7.js?v=7.56.7"),
     ("live-login.html","live-login-v7-56-7.js?v=7.56.7"),
     ("live-password-reset.html","live-password-reset-v7-56-7.js?v=7.56.7"),
-    ("live-sandbox.html","live-sandbox-v7-56-7.js?v=7.56.7")
+    ("live-sandbox.html","live-sandbox-v7-56-7.js?v=7.56.7-final-sync-1")
 ):
     text=read(page)
-    if 'live-backend-v7-56-7.js?v=7.56.7' not in text: errors.append(f"{page} missing backend cache bust")
+    expected_backend = 'live-backend-v7-56-7.js?v=7.56.7-final-sync-1' if page == 'live-sandbox.html' else 'live-backend-v7-56-7.js?v=7.56.7'
+    if expected_backend not in text: errors.append(f"{page} missing backend cache bust")
     if script not in text: errors.append(f"{page} missing {script}")
+
+
+if backend.find('.insert(newEventRows)') > backend.find('if (deferredFinalGameUpdate)'):
+    errors.append("final game status is written before the Final Whistle event is persisted")
 
 if 'release: "7.56.7"' not in config: errors.append('active live config missing release 7.56.7')
 if release.get('version') != '7.56.7': errors.append('site-release version is not 7.56.7')

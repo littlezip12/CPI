@@ -24,7 +24,7 @@ for forbidden in ('GROUPME_BOT_ID:', 'bot_id:', 'service_role', 'SUPABASE_SECRET
     if forbidden.lower() in config.lower(): fail(f"public config contains secret token {forbidden}")
 
 html=read("live-sandbox.html")
-for token in ('js/live-backend-v7-56-7.js?v=7.56.7','js/live-sandbox-v7-56-7.js?v=7.56.7-final-whistle-1','css/live-sandbox-v7-56-7.css?v=7.56.7','id="messageList"','id="pauseMessagesButton"'):
+for token in ('js/live-backend-v7-56-7.js?v=7.56.7-final-sync-1','js/live-sandbox-v7-56-7.js?v=7.56.7-final-sync-1','css/live-sandbox-v7-56-7.css?v=7.56.7','id="messageList"','id="pauseMessagesButton"'):
     if token not in html: fail(f"live sandbox missing {token}")
 
 dashboard=read("live-dashboard.html")
@@ -32,13 +32,13 @@ for token in ('id="groupMeAdminPanel"','id="groupMeDisplayName"','id="groupMeSec
     if token not in dashboard: fail(f"dashboard missing {token}")
 
 backend=read("js/live-backend-v7-56-7.js")
-for token in ('loadGroupMeDestination','saveGroupMeDestination','testGroupMeDestination','groupMeDeliverySummary','loadDeliveryStatuses','invokeGroupMeDelivery','subscribeToDeliveries','destination_id: destination?.enabled','remoteEventMap','resolveRemoteEventId','unresolvedClientIds','const context = error.context'):
+for token in ('loadGroupMeDestination','saveGroupMeDestination','testGroupMeDestination','groupMeDeliverySummary','loadDeliveryStatuses','invokeGroupMeDelivery','subscribeToDeliveries','destination_id: destination?.enabled','remoteEventMap','resolveRemoteEventId','unresolvedClientIds','deferredFinalGameUpdate','Finalization must be the last database write','const context = error.context'):
     if token not in backend: fail(f"backend adapter missing {token}")
 for forbidden in ('api.groupme.com','GROUPME_BOT_ID','SUPABASE_SECRET_KEY','SUPABASE_SERVICE_ROLE_KEY'):
     if forbidden in backend: fail(f"browser backend contains server/secret token {forbidden}")
 
 sandbox=read("js/live-sandbox-v7-56-7.js")
-for token in ('deliverPendingMessages','retryMessage','data-retry-event','applyDeliveryStatuses','nextRetryAt','GroupMe setup needed','Connected delivery','status = "sending"','backend.resolveRemoteEventId','hasRecoverableDelivery','canDeliverAfterGameEnd','endedByUserId'):
+for token in ('deliverPendingMessages','retryMessage','data-retry-event','applyDeliveryStatuses','nextRetryAt','GroupMe setup needed','Connected delivery','status = "sending"','backend.resolveRemoteEventId','hasRecoverableDelivery','canDeliverAfterGameEnd','endedByUserId','message.remoteEventId','The final event has not been stored on the server yet.'):
     if token not in sandbox: fail(f"scorer delivery workflow missing {token}")
 if 'api.groupme.com' in sandbox or 'GROUPME_BOT_ID' in sandbox: fail("scorer contains GroupMe server credential logic")
 
