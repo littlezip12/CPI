@@ -1,21 +1,17 @@
-# WPI 7.56.13 — Game Actions & Automatic GroupMe Summary
+# WPI 7.56.14 — Action Flow Cleanup & Team Labels
 
-WPI 7.56.13 is a focused game-day scoring release built directly on the validated **7.56.12 Live Game Setup & Scoring Finish** baseline.
+WPI 7.56.14 is a focused poolside UX cleanup built directly on the validated **7.56.13 Game Actions & Automatic GroupMe Summary** baseline.
 
 ## Release focus
 
-- Removes the **More actions** drawer from the primary scorer.
-- Replaces it with seven direct poolside actions: **Goals, Shots, Saves, Steals, Exclusions, Turnover, 5M**.
-- Goals expose **Us / Them** variants.
-- Shots expose **Missed / Post / Blocked / Saved** outcomes.
-- Saves expose **Goalie save / Field block** so Field Block remains directly accessible with no hidden event menu.
-- Exclusions and 5M preserve **Drawn by us / Committed by us** variants.
-- All existing structured event types remain available for analytics.
-- Ending a game now creates one auditable **Game summary** system event and queues its GroupMe message after Final Whistle.
-- Summary delivery uses the existing persisted-event, exactly-once delivery, retry and audit pipeline; no new secret or delivery transport is introduced.
-- The GroupMe summary includes final score, team shots, goals, assists, saves, field blocks, steals, turnovers, exclusions drawn, 5M drawn and up to three recorded contributors.
-- Existing 7.56.12 setup, scorer handoff, quarter transitions, connected backend, Topic delivery, Bot fallback and final-save reliability remain protected.
+- Removes the redundant event-type dropdown below the action/variant buttons.
+- Uses a hidden internal event-state value instead, so the seven direct action buttons are the only visible event-selection control.
+- Goal variants now use the actual game team names (for example, `Lamorinda A` and `Stanford`) instead of `Us` and `Them`.
+- Variant prompts are contextual: Which team scored?, Shot result, Save type, Exclusion, and 5M call.
+- Team-name buttons wrap safely on mobile for longer club/team names.
+- Preserves all 7.56.13 structured analytics events and the automatic post-Final-Whistle GroupMe Game Summary.
+- No Supabase migration, GroupMe secret change, or Edge Function redeploy is required.
 
-## Deployment
+## Protected foundation
 
-This release requires the small forward migration `supabase/migrations/202608080001_game_summary_event.sql` so `live_events` can persist the new `game_summary` audit event. It requires **no secret change and no Edge Function redeploy**.
+7.56.14 does not change scorer authority, guest handoff, retries/audit, Topic delivery, Bot fallback, database persistence, automatic summary ordering, or Final Whistle sequencing.

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-13.css?v=7.56.13">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-14.css?v=7.56.14">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -110,10 +110,7 @@
             <div id="eventQuickActions" class="live-event-quick-actions" role="group" aria-label="Choose event"></div>
             <div id="eventVariantChooser" class="live-event-variant-chooser" hidden aria-live="polite"></div>
           </div>
-
-          <select id="eventType" class="live-event-state-select" tabindex="-1" aria-hidden="true">
-            <option value="">Choose an event</option>
-          </select>
+          <input id="eventType" type="hidden" value="">
 
           <label id="primaryPlayerLabel" class="live-field-full" hidden>Player
             <select id="primaryPlayer">
@@ -318,9 +315,9 @@
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="config/live-sandbox.js?v=7.56.13"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.56.13"></script>
-  <script src="js/live-sandbox-v7-56-13.js?v=7.56.13"></script>
+  <script src="config/live-sandbox.js?v=7.56.14"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.56.14"></script>
+  <script src="js/live-sandbox-v7-56-14.js?v=7.56.14"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
