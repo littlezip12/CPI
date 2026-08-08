@@ -1,4 +1,4 @@
-# WPI 7.56.9 — Live UX Refresh
+# WPI 7.56.10 — Post-Handoff Delivery Reliability
 
 WPI 7.56.9 is a frontend UX release built on the authoritative 7.56.8 GroupMe Topic Delivery Foundation.
 
