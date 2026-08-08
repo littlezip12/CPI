@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-11.css?v=7.56.11">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-12.css?v=7.56.12">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -61,12 +61,12 @@
       </div>
 
       <section class="live-dashboard-grid">
-        <article class="live-panel" id="dashboardGameDay">
+        <article class="live-panel live-game-day-card" id="dashboardGameDay">
           <p class="live-section-kicker">Game day</p>
-          <h2>Score a game</h2>
-          <p class="live-panel-help">Tournament games will appear here when their schedules are connected. Scrimmages remain manual.</p>
+          <h2>Ready to score?</h2>
+          <p class="live-panel-help">Start a scrimmage now or continue the active game. Tournament schedules will drop into this same card when connected.</p>
           <div class="live-dashboard-actions">
-            <a id="createScrimmageLink" class="live-primary-link" href="live-sandbox.html?new=1">Create manual scrimmage</a>
+            <a id="createScrimmageLink" class="live-primary-link" href="live-sandbox.html?new=1">Start a new game</a>
             <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
             <button id="enterScorerCodeButton" type="button" hidden>Enter scorer code</button>
           </div>
@@ -149,9 +149,9 @@
         </article>
 
         <article class="live-panel" id="dashboardTeamAccess">
-          <p class="live-section-kicker">Team workspace</p>
-          <h2>Roster and access</h2>
-          <p class="live-panel-help">Owners and Admins manage the permanent roster and invite users. Scorers receive game-specific control and can hand it off without granting team administration.</p>
+          <p class="live-section-kicker">Team</p>
+          <h2>Roster &amp; access</h2>
+          <p class="live-panel-help">Keep the roster current and invite the people who need access. Scoring control stays game-specific.</p>
           <div id="invitePanel" hidden>
             <div class="live-form-grid live-invite-form">
               <label>Email<input id="inviteEmail" type="email" autocomplete="email" placeholder="scorer@example.com"></label>
@@ -190,9 +190,9 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.11"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.56.11"></script>
-  <script src="js/live-dashboard-v7-56-9.js?v=7.56.11"></script>
+  <script src="config/live-sandbox.js?v=7.56.12"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.56.12"></script>
+  <script src="js/live-dashboard-v7-56-9.js?v=7.56.12"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

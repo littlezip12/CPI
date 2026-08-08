@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 errors=[]
 def fail(msg): errors.append(msg)
 site=json.loads((ROOT/'config/site-release.json').read_text())
-if site.get('version') not in {'7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11'}: fail('site version must preserve the 7.53.1 team experience')
+if site.get('version') not in {'7.53.1','7.53.2','7.53.3','7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12'}: fail('site version must preserve the 7.53.1 team experience')
 if site.get('teamProfileRelease')!='7.53.1' or site.get('teamExperienceRelease')!='7.53.1': fail('team release fields must be 7.53.1')
 if site.get('rankingDataRelease')!='7.52.13': fail('ranking data release changed')
 if site.get('clubProfileRelease')!='7.53.0': fail('club profile release changed')

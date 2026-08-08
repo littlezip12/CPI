@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-11.css?v=7.56.11">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-12.css?v=7.56.12">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -36,23 +36,29 @@
           <div><p class="live-section-kicker">Manual scrimmage</p><h2 id="setupHeading">Game setup</h2></div>
           <div class="live-heading-actions"><span id="setupSourceBadge">Manual entry</span><button id="hideSetupButton" type="button" hidden>Return to game</button></div>
         </div>
-        <p class="live-panel-help">Tournament games will preload these fields from the event schedule. Scrimmages remain editable here.</p>
-        <div class="live-form-grid">
+        <div class="live-setup-step-head"><span>1</span><div><strong>Match details</strong><small>Who, when and where.</small></div></div>
+        <p class="live-panel-help">Tournament games will preload these details later. For a scrimmage, confirm the matchup and game format here.</p>
+        <div class="live-form-grid live-setup-core-grid">
           <label>Team<input id="teamName" type="text" value="Lamorinda A 14U Boys" maxlength="80"></label>
           <label>Opponent<input id="opponentName" type="text" value="Scrimmage Opponent" maxlength="80"></label>
           <label>Game date and time<span class="live-datetime-wrap"><input id="gameDateTime" type="datetime-local"></span></label>
           <label>Venue<input id="gameVenue" type="text" placeholder="Pool or facility" maxlength="120"></label>
           <label>Age group<select id="ageGroup"><option value="10U">10U</option><option value="12U">12U</option><option value="14U" selected>14U</option><option value="16U">16U</option><option value="18U">18U</option></select></label>
           <label>Quarter length<select id="quarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
-          <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
-          <label>Message frequency<select id="messageFrequency"><option value="all" selected>Every recorded action</option><option value="major">Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
-          <label>Visibility<select id="visibility"><option value="team_private" selected>Team Private</option><option value="private_only">Private Only</option><option value="public_team">Public team-level scoring</option></select></label>
         </div>
+        <details class="live-setup-advanced">
+          <summary>Scoring &amp; delivery preferences</summary>
+          <div class="live-form-grid">
+            <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
+            <label>Message frequency<select id="messageFrequency"><option value="all" selected>Every recorded action</option><option value="major">Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
+            <label>Visibility<select id="visibility"><option value="team_private" selected>Team Private</option><option value="private_only">Private Only</option><option value="public_team">Public team-level scoring</option></select></label>
+          </div>
+        </details>
       </div>
 
       <div class="live-panel live-panel--roster">
         <div class="live-panel-heading">
-          <div><p class="live-section-kicker">Team roster</p><h2 id="rosterHeading">Lamorinda A 14U Boys roster</h2></div>
+          <div><div class="live-setup-step-head"><span>2</span><div><strong>Roster</strong><small>Confirm who is available today.</small></div></div><h2 id="rosterHeading">Lamorinda A 14U Boys roster</h2></div>
           <button id="addPlayerButton" type="button">Add player</button>
         </div>
         <p class="live-panel-help" id="rosterHelp">This is the active roster for Lamorinda A 14U Boys. Add, remove, rename, or change cap numbers as needed.</p>
@@ -62,8 +68,8 @@
     </section>
 
     <section class="live-launch-row" id="launchRow">
-      <div><strong>Ready to test?</strong><span id="launchRuleText">Select one goalie and six field players for 14U.</span></div>
-      <button id="startGameButton" type="button">Select starters and start game</button>
+      <div class="live-launch-copy"><span class="live-launch-step">3</span><div><strong>Starting lineup</strong><span id="launchRuleText">Select one goalie and six field players for 14U.</span></div></div>
+      <button id="startGameButton" type="button">Choose starters &amp; start game</button>
     </section>
 
     <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
@@ -223,6 +229,7 @@
     <dialog id="lineupDialog" class="live-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Quarter lineup</p><h2 id="lineupDialogTitle">Who is starting the game?</h2></div><button id="lineupCloseButton" value="cancel" aria-label="Close lineup dialog">Close</button></div>
+        <div id="lineupTransitionSummary" class="live-lineup-transition-summary" hidden></div>
         <p id="lineupRuleText">Select one goalie and the required number of field players. Your previous starting lineup is preselected.</p>
         <label class="live-lineup-goalie">Starting goalie
           <select id="lineupGoalie"><option value="">Select goalie</option></select>
@@ -270,7 +277,8 @@
     <dialog id="scorerHandoffDialog" class="live-dialog live-handoff-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Simple handoff</p><h2>Transfer scoring</h2></div><button value="cancel" aria-label="Close scorer handoff">Close</button></div>
-        <p class="live-panel-help">Share the QR code. The current scorer stays active until the new scorer accepts. Use the backup code only if the QR flow is unavailable.</p>
+        <p class="live-panel-help">Have the next scorer scan the QR code. You keep control until they accept.</p>
+        <div id="scorerHandoffState" class="live-handoff-state" data-state="waiting"><span class="live-handoff-state-dot"></span><strong>Waiting for new scorer…</strong></div>
         <div class="live-handoff-dialog-grid">
           <div id="scorerHandoffQr" class="live-handoff-qr" aria-label="Scorer handoff QR code"></div>
           <div class="live-handoff-details">
@@ -315,9 +323,9 @@
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="config/live-sandbox.js?v=7.56.11"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.56.11"></script>
-  <script src="js/live-sandbox-v7-56-11.js?v=7.56.11"></script>
+  <script src="config/live-sandbox.js?v=7.56.12"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.56.12"></script>
+  <script src="js/live-sandbox-v7-56-12.js?v=7.56.12"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
