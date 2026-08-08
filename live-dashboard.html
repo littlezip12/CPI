@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-0.css?v=7.57.0">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-1.css?v=7.57.1">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -98,7 +98,7 @@
                 <div><p class="live-section-kicker">Roster</p><h2>Build your roster in seconds</h2></div>
                 <span class="live-roster-count" id="dashboardRosterCount">0 players</span>
               </div>
-              <p class="live-panel-help">Take a photo of a roster sheet, upload an image, or enter players manually. WPI always gives you a review step before anything is saved.</p>
+              <p class="live-panel-help">Take a photo of a roster sheet, upload an image, or enter players manually. High-accuracy image reading creates a draft first, and WPI never saves it until you confirm.</p>
 
               <div id="rosterManagerPanel" hidden>
                 <div class="live-roster-import-actions">
@@ -108,7 +108,7 @@
                 </div>
                 <input id="rosterCameraInput" type="file" accept="image/*" capture="environment" hidden>
                 <input id="rosterUploadInput" type="file" accept="image/*" hidden>
-                <p class="live-roster-privacy"><span aria-hidden="true">✓</span> Photo processing happens in your browser. Only the roster you confirm is saved to WPI.</p>
+                <p class="live-roster-privacy"><span aria-hidden="true">✓</span> <strong>Private review first.</strong> <small>For photo import, WPI sends a normalized copy through a secure server-side roster reader powered by OpenAI. WPI does not store the image in the team record; only the roster you confirm is saved.</small></p>
                 <div class="live-current-roster" id="currentRosterPanel">
                   <div class="live-panel-heading"><div><strong>Current roster</strong><small id="currentRosterHelp">No players saved yet.</small></div><button id="editCurrentRosterButton" type="button">Edit roster</button></div>
                   <div id="currentRosterList" class="live-current-roster-list"></div>
@@ -170,7 +170,7 @@
         </div>
         <div class="live-roster-draft-heading"><div><strong id="rosterDraftCount">0 players detected</strong><small>Correct anything WPI misread, remove extra rows, or add a missing player.</small></div><button id="addRosterDraftRowButton" type="button">+ Add player</button></div>
         <div class="live-roster-draft-table" id="rosterDraftRows"></div>
-        <details class="live-roster-raw-details" id="rosterRawDetails" hidden><summary>View detected text</summary><textarea id="rosterRawText" rows="6" readonly></textarea></details>
+        <details class="live-roster-raw-details" id="rosterRawDetails" hidden><summary>View import notes</summary><textarea id="rosterRawText" rows="6" readonly></textarea></details>
         <p id="rosterDraftMessage" class="live-validation-message" role="status"></p>
         <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveRosterDraftButton" type="button">Save roster</button></div>
       </form>
@@ -188,9 +188,9 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.0"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.0"></script>
-  <script src="js/live-dashboard-v7-57-0.js?v=7.57.0"></script>
+  <script src="config/live-sandbox.js?v=7.57.1"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.1"></script>
+  <script src="js/live-dashboard-v7-57-1.js?v=7.57.1"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
