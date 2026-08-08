@@ -1,22 +1,50 @@
-# WPI 7.56.15 — Tournament-Scale GroupMe Summary Reliability
+# WPI 7.57.0 — Team Administration & Roster Onboarding Foundation
 
-WPI 7.56.15 is built directly on the validated **7.56.14 Action Flow Cleanup & Team Labels** baseline.
+WPI 7.57.0 is built directly on the validated **7.56.15 Tournament-Scale GroupMe Summary Reliability** baseline.
 
 ## Release focus
 
-- Keeps every recorded play as an independent GroupMe delivery; there is no WPI character pool shared across a game, tournament, topic, or team.
-- Builds the end-of-game recap from the complete structured game record and splits it into as many ordered GroupMe messages as required.
-- Caps each outbound GroupMe summary message at a conservative 900 characters, below GroupMe's documented 1,000-character per-message maximum.
-- Summary parts are explicitly chained: Final Whistle -> Summary 1/N -> Summary 2/N -> ... -> Summary N/N. A failed prerequisite prevents later parts from jumping ahead.
-- Uses compact <=280-character audit notes for each `game_summary` database event, eliminating the 7.56.14 `live_events_note_check` final-sync failure.
-- Includes all player stat lines and scorer-entered notes in the derived recap; the aggregate recap has no fixed WPI product cap because it is persisted as structured events plus independent summary chunks.
-- Repairs an unsent legacy 7.56.14 oversized Game Summary when the ended game is reopened.
-- Preserves the seven direct action buttons, team-name Goal labels, scorer handoff, Topic delivery, Bot fallback, delivery retries/audit, and final-save sequencing.
+- Starts the scalable WPI Live Team Administration phase without rebuilding the proven scoring backend.
+- Adds a Team Readiness overview for Team Profile, Roster, Score Updates and Team Access.
+- Adds a permanent Team Profile editor for Team Owner/Admin users.
+- Makes the roster a first-class team asset instead of something users have to rebuild game-by-game.
+- Adds **Take photo**, **Upload image**, and **Enter manually** roster paths.
+- Photo/image import performs OCR in the browser, creates a draft roster, and requires explicit human review before saving.
+- The camera input is mobile-friendly (`capture="environment"`) so a roster sheet can be photographed directly from a phone.
+- Imported rows remain fully editable; users can add/remove players and correct names or cap numbers before saving.
+- Manual roster entry remains a first-class path and can also edit an existing roster at any time.
+- Confirmed roster data is stored in the existing `live_players` / active roster model and is automatically reusable by new games.
+- Team profile and roster edits remain Owner/Admin-only; Scorer/Viewer access remains read-only for durable team configuration.
+- No OCR result is auto-saved. The roster photo itself is not persisted by WPI; only confirmed structured roster rows are saved.
 
-## Tournament capacity model
+## OCR implementation
 
-A tournament can use one GroupMe main chat with one Scores topic for all games. Each play and each summary chunk is a separate message/event. Eight games do not consume a shared 10K/100K allowance. GroupMe's external rate limiting is handled by WPI's existing queued retry/backoff path; no undocumented unlimited provider throughput is assumed.
+Roster reading is loaded only when the user chooses a photo/image import. WPI uses browser-side Tesseract.js OCR through its documented CDN build. If OCR cannot load or a roster cannot be parsed reliably, the same review screen falls back to manual entry rather than blocking onboarding.
+
+## Protected foundation
+
+The following 7.56.15 behaviors remain authoritative and must not regress:
+
+- exactly one active scorer per game
+- signed-in scorer transfer and QR/no-account Guest Scorer handoff
+- previous scorer read-only after transfer
+- Admin emergency takeover
+- mobile-first scoring with direct action families and team-name Goal variants
+- End Quarter lineup flow without opening the normal Player selector
+- GroupMe Topic delivery plus Bot/main-chat fallback
+- retries, audit and exactly-once delivery behavior
+- Final Whistle -> ordered multipart Game Summary sequencing
+- tournament-scale Scores topic usage across multiple games
+- compact <=280-character summary audit notes and <=900-character GroupMe summary chunks
 
 ## Infrastructure
 
-No new Supabase migration, GroupMe secret, database password, or Edge Function redeploy is required. The 7.56.13 `game_summary` event-type migration remains the only schema prerequisite for automatic summaries.
+No new Supabase migration, GroupMe secret, database password, or Edge Function redeploy is required for 7.57.0. The release uses existing Owner/Admin RLS policies for `live_teams`, `live_rosters`, and `live_players`.
+
+## Next 7.57.x steps
+
+- multiple team/club administration and team switching
+- improved invitation/access-management views
+- scoped `Can manage tournament GroupMe` permission
+- self-service team activation/onboarding beyond the first pilot team
+- scalable multi-team / multi-club setup while preserving the 7.56.15 scoring reliability boundary

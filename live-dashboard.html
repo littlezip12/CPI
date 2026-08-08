@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <title>WPI Live Dashboard | Water Polo Index</title>
-  <meta name="description" content="Private WPI Live team dashboard for games, roster access, roles and analytics history.">
+  <title>WPI Live Team Admin | Water Polo Index</title>
+  <meta name="description" content="Private WPI Live team administration for roster onboarding, access, GroupMe setup and game-day scoring.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-15.css?v=7.56.15">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-0.css?v=7.57.0">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -20,7 +20,7 @@
       <div>
         <p class="live-sandbox-kicker">WPI Live</p>
         <h1 id="dashboardTeamName">Lamorinda A 14U Boys</h1>
-        <p id="dashboardSubtitle">Game-day scoring, score updates and team access.</p>
+        <p id="dashboardSubtitle">Team setup, game-day scoring and score updates.</p>
       </div>
       <div class="live-dashboard-account">
         <span id="dashboardRoleBadge">Connecting…</span>
@@ -42,147 +42,145 @@
 
     <section id="dashboardConnectedContent" hidden>
       <div class="live-dashboard-layout">
-        <aside class="live-dashboard-sidebar" aria-label="Team settings">
-          <span class="live-dashboard-sidebar-title">Team settings</span>
+        <aside class="live-dashboard-sidebar" aria-label="Team administration">
+          <span class="live-dashboard-sidebar-title">Team administration</span>
           <nav>
-            <a href="#dashboardGameDay"><span aria-hidden="true">◫</span>Game day</a>
-            <a class="is-active" href="#dashboardGroupMe"><span aria-hidden="true">◉</span>GroupMe setup</a>
+            <a class="is-active" href="#dashboardOverview"><span aria-hidden="true">◫</span>Overview</a>
+            <a href="#dashboardTeamProfile"><span aria-hidden="true">◇</span>Team profile</a>
+            <a href="#dashboardRoster"><span aria-hidden="true">≡</span>Roster</a>
             <a href="#dashboardTeamAccess"><span aria-hidden="true">◎</span>Team access</a>
-            <a href="#dashboardGameHistory"><span aria-hidden="true">▤</span>Game history</a>
+            <a href="#dashboardGroupMe"><span aria-hidden="true">◉</span>GroupMe</a>
+            <a href="#dashboardGameHistory"><span aria-hidden="true">▤</span>History</a>
           </nav>
-          <div class="live-dashboard-sidebar-help"><strong>WPI Live</strong><span>Built for poolside scoring.</span></div>
+          <div class="live-dashboard-sidebar-help"><strong>WPI Live</strong><span>Ready for game day.</span></div>
         </aside>
+
         <div class="live-dashboard-main">
-      <div class="live-dashboard-metrics">
-        <article><span>Your role</span><strong id="dashboardRoleMetric">—</strong></article>
-        <article><span>Stored games</span><strong id="dashboardGameCount">0</strong></article>
-        <article><span>Active season</span><strong>2026–2027</strong></article>
-        <article><span>Delivery</span><strong id="dashboardDeliveryMetric">Not connected</strong></article>
-      </div>
-
-      <section class="live-dashboard-grid">
-        <article class="live-panel live-game-day-card" id="dashboardGameDay">
-          <p class="live-section-kicker">Game day</p>
-          <h2>Ready to score?</h2>
-          <p class="live-panel-help">Start a scrimmage now or continue the active game. Tournament schedules will drop into this same card when connected.</p>
-          <div class="live-dashboard-actions">
-            <a id="createScrimmageLink" class="live-primary-link" href="live-sandbox.html?new=1">Start a new game</a>
-            <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
-            <button id="enterScorerCodeButton" type="button" hidden>Enter scorer code</button>
-          </div>
-        </article>
-
-        <article class="live-panel live-groupme-setup-panel" id="dashboardGroupMe">
-          <div class="live-panel-heading live-groupme-setup-heading"><div><p class="live-section-kicker">Tournament score updates</p><h2>GroupMe setup</h2></div><div class="live-groupme-status-pill" id="groupMeSetupStatusPill">Ready when tested</div></div>
-          <p class="live-panel-help">Choose where tournament score updates should go, test it once, then use the same destination for new games.</p>
-          <div id="groupMeAdminPanel" hidden>
-            <div class="live-groupme-step-list">
-              <section class="live-groupme-step-card">
-                <span class="live-step-number">1</span>
-                <div class="live-step-body">
-                  <h3>Tournament GroupMe</h3>
-                  <p>Select the GroupMe for this tournament.</p>
-                  <div class="live-form-grid live-groupme-form live-groupme-step-form">
-                    <label>GroupMe
-                      <select id="groupMeGroupSelect" disabled>
-                        <option value="">Load groups first</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeGroupsButton" type="button">Load GroupMe groups</button></div>
-                </div>
-              </section>
-
-              <section id="groupMeTopicPanel" class="live-groupme-step-card live-groupme-topic-panel">
-                <span class="live-step-number">2</span>
-                <div class="live-step-body">
-                  <h3>Score Updates Topic</h3>
-                  <p>Choose the topic where WPI Live will post updates.</p>
-                  <div class="live-form-grid live-groupme-form live-groupme-step-form">
-                    <label>Topic
-                      <select id="groupMeTopicSelect" disabled>
-                        <option value="">Choose a group first</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeTopicsButton" type="button" disabled>Refresh topics</button></div>
-                  <p id="groupMeDiscoveryMessage" class="live-validation-message" role="status"></p>
-                </div>
-              </section>
-
-              <section class="live-groupme-step-card">
-                <span class="live-step-number">3</span>
-                <div class="live-step-body">
-                  <h3>Test connection</h3>
-                  <p>Send a test message to make sure everything is working.</p>
-                  <div class="live-dashboard-actions live-step-actions"><button id="testGroupMeButton" type="button" disabled>Send test message</button></div>
-                </div>
-              </section>
+          <div hidden aria-hidden="true"><span id="dashboardRoleMetric">—</span><span id="dashboardGameCount">0</span><span id="dashboardDeliveryMetric">Not connected</span></div>
+          <section class="live-panel live-team-readiness-card" id="dashboardOverview">
+            <div class="live-panel-heading">
+              <div><p class="live-section-kicker">Team readiness</p><h2>Ready for your next tournament?</h2></div>
+              <div class="live-readiness-score" id="teamReadinessScore">Checking…</div>
             </div>
+            <p class="live-panel-help">Set up the team once, then reuse the roster, access and score-updates destination across games.</p>
+            <div class="live-readiness-grid">
+              <a class="live-readiness-item" id="readinessProfile" href="#dashboardTeamProfile"><span>1</span><div><strong>Team profile</strong><small>Team identity and age group</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessRoster" href="#dashboardRoster"><span>2</span><div><strong>Roster</strong><small>Names and cap numbers</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span>3</span><div><strong>Score updates</strong><small>Tournament GroupMe + topic</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessAccess" href="#dashboardTeamAccess"><span>4</span><div><strong>Team access</strong><small>Admins, scorers and viewers</small></div><em>Ready</em></a>
+            </div>
+            <div class="live-dashboard-actions live-overview-actions">
+              <a id="createScrimmageLink" class="live-primary-link" href="live-sandbox.html?new=1">Start a new game</a>
+              <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
+              <button id="enterScorerCodeButton" type="button" hidden>Enter scorer code</button>
+            </div>
+          </section>
 
-            <details class="live-groupme-advanced">
-              <summary>Advanced</summary>
-              <div class="live-form-grid live-groupme-form">
-                <label>Internal connection name<input id="groupMeDisplayName" type="text" maxlength="100" value="WPI Live Scoring Test"></label>
-                <label>Delivery method
-                  <select id="groupMeDeliveryMode">
-                    <option value="topic">Topic</option>
-                    <option value="bot">Bot · main chat</option>
+          <section class="live-dashboard-grid live-team-admin-grid">
+            <article class="live-panel live-team-profile-card" id="dashboardTeamProfile">
+              <div class="live-panel-heading"><div><p class="live-section-kicker">Team</p><h2>Team profile</h2></div><span class="live-admin-status" id="teamProfileStatus">Connected</span></div>
+              <p class="live-panel-help">This identity carries into new games and the scoring experience.</p>
+              <div class="live-form-grid live-team-profile-form">
+                <label>Team name<input id="teamProfileName" type="text" maxlength="100" autocomplete="organization"></label>
+                <label>Age group
+                  <select id="teamProfileAgeGroup">
+                    <option value="10U">10U</option><option value="12U">12U</option><option value="14U">14U</option><option value="16U">16U</option><option value="18U">18U</option>
                   </select>
                 </label>
-                <label id="groupMeSecretField">Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="" placeholder="GROUPME_ACCESS_TOKEN_WPI_LIVE" autocapitalize="characters"></label>
-                <label class="live-groupme-enabled"><input id="groupMeEnabled" type="checkbox"> Enable real GroupMe delivery for new games</label>
+                <label>Season<input id="teamProfileSeason" type="text" maxlength="20" readonly></label>
               </div>
-            </details>
+              <div class="live-dashboard-actions"><button id="saveTeamProfileButton" type="button">Save team profile</button></div>
+              <p id="teamProfileMessage" class="live-validation-message" role="status"></p>
+            </article>
 
-            <div class="live-dashboard-actions live-groupme-save-row">
-              <button id="saveGroupMeButton" type="button">Save &amp; use for new games</button>
-            </div>
-            <p id="groupMeSetupMessage" class="live-validation-message" role="status"></p>
-          </div>
-          <p id="groupMeReadOnly" class="live-panel-help" hidden></p>
-          <div id="groupMeAudit" class="live-delivery-audit" hidden>
-            <span><strong id="deliverySentCount">0</strong> sent</span>
-            <span><strong id="deliveryFailedCount">0</strong> failed</span>
-            <span><strong id="deliveryPendingCount">0</strong> queued</span>
-          </div>
-        </article>
+            <article class="live-panel live-roster-admin-card" id="dashboardRoster">
+              <div class="live-panel-heading">
+                <div><p class="live-section-kicker">Roster</p><h2>Build your roster in seconds</h2></div>
+                <span class="live-roster-count" id="dashboardRosterCount">0 players</span>
+              </div>
+              <p class="live-panel-help">Take a photo of a roster sheet, upload an image, or enter players manually. WPI always gives you a review step before anything is saved.</p>
 
-        <article class="live-panel" id="dashboardTeamAccess">
-          <p class="live-section-kicker">Team</p>
-          <h2>Roster &amp; access</h2>
-          <p class="live-panel-help">Keep the roster current and invite the people who need access. Scoring control stays game-specific.</p>
-          <div id="invitePanel" hidden>
-            <div class="live-form-grid live-invite-form">
-              <label>Email<input id="inviteEmail" type="email" autocomplete="email" placeholder="scorer@example.com"></label>
-              <label>Role<select id="inviteRole"><option value="scorer">Scorer</option><option value="viewer">Viewer</option><option value="admin">Admin</option></select></label>
-            </div>
-            <button id="createInviteButton" type="button">Create invite</button>
-            <p id="inviteMessage" class="live-validation-message" role="status"></p>
-            <div id="inviteResult" class="live-invite-result" hidden></div>
-          </div>
-          <p id="inviteUnavailable" class="live-panel-help" hidden>Only a Team Owner or Admin can invite users.</p>
-        </article>
-      </section>
+              <div id="rosterManagerPanel" hidden>
+                <div class="live-roster-import-actions">
+                  <button class="live-roster-import-primary" id="takeRosterPhotoButton" type="button"><span aria-hidden="true">▣</span><strong>Take photo</strong><small>Use your phone camera</small></button>
+                  <button id="uploadRosterImageButton" type="button"><span aria-hidden="true">↑</span><strong>Upload image</strong><small>Photo or screenshot</small></button>
+                  <button id="manualRosterButton" type="button"><span aria-hidden="true">＋</span><strong>Enter manually</strong><small>Cap # + player name</small></button>
+                </div>
+                <input id="rosterCameraInput" type="file" accept="image/*" capture="environment" hidden>
+                <input id="rosterUploadInput" type="file" accept="image/*" hidden>
+                <p class="live-roster-privacy"><span aria-hidden="true">✓</span> Photo processing happens in your browser. Only the roster you confirm is saved to WPI.</p>
+                <div class="live-current-roster" id="currentRosterPanel">
+                  <div class="live-panel-heading"><div><strong>Current roster</strong><small id="currentRosterHelp">No players saved yet.</small></div><button id="editCurrentRosterButton" type="button">Edit roster</button></div>
+                  <div id="currentRosterList" class="live-current-roster-list"></div>
+                </div>
+              </div>
+              <p id="rosterReadOnlyMessage" class="live-panel-help" hidden>Only a Team Owner or Admin can change the permanent roster.</p>
+            </article>
 
-      <section class="live-panel live-history-panel" id="dashboardGameHistory">
-        <div class="live-panel-heading"><div><p class="live-section-kicker">Permanent records</p><h2>Game history</h2></div><button id="refreshGamesButton" type="button">Refresh</button></div>
-        <p class="live-panel-help">Every connected game is retained privately for future team and coaching analytics.</p>
-        <div id="gameHistoryList" class="live-game-history-list"><p class="live-empty-state">No connected games yet.</p></div>
-      </section>
+            <article class="live-panel" id="dashboardTeamAccess">
+              <p class="live-section-kicker">Access</p>
+              <h2>Team access</h2>
+              <p class="live-panel-help">Invite the people who need permanent team access. Scoring control remains game-specific and exactly one scorer controls a game at a time.</p>
+              <div id="invitePanel" hidden>
+                <div class="live-form-grid live-invite-form">
+                  <label>Email<input id="inviteEmail" type="email" autocomplete="email" placeholder="scorer@example.com"></label>
+                  <label>Role<select id="inviteRole"><option value="scorer">Scorer</option><option value="viewer">Viewer</option><option value="admin">Admin</option></select></label>
+                </div>
+                <button id="createInviteButton" type="button">Create invite</button>
+                <p id="inviteMessage" class="live-validation-message" role="status"></p>
+                <div id="inviteResult" class="live-invite-result" hidden></div>
+              </div>
+              <p id="inviteUnavailable" class="live-panel-help" hidden>Only a Team Owner or Admin can invite users.</p>
+            </article>
+
+            <article class="live-panel live-groupme-setup-panel" id="dashboardGroupMe">
+              <div class="live-panel-heading live-groupme-setup-heading"><div><p class="live-section-kicker">Tournament score updates</p><h2>GroupMe setup</h2></div><div class="live-groupme-status-pill" id="groupMeSetupStatusPill">Ready when tested</div></div>
+              <p class="live-panel-help">Choose where tournament score updates should go, test it once, then use the same destination for new games.</p>
+              <div id="groupMeAdminPanel" hidden>
+                <div class="live-groupme-step-list">
+                  <section class="live-groupme-step-card"><span class="live-step-number">1</span><div class="live-step-body"><h3>Tournament GroupMe</h3><p>Select the GroupMe for this tournament.</p><div class="live-form-grid live-groupme-form live-groupme-step-form"><label>GroupMe<select id="groupMeGroupSelect" disabled><option value="">Load groups first</option></select></label></div><div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeGroupsButton" type="button">Load GroupMe groups</button></div></div></section>
+                  <section id="groupMeTopicPanel" class="live-groupme-step-card live-groupme-topic-panel"><span class="live-step-number">2</span><div class="live-step-body"><h3>Score Updates Topic</h3><p>Choose the topic where WPI Live will post updates.</p><div class="live-form-grid live-groupme-form live-groupme-step-form"><label>Topic<select id="groupMeTopicSelect" disabled><option value="">Choose a group first</option></select></label></div><div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeTopicsButton" type="button" disabled>Refresh topics</button></div><p id="groupMeDiscoveryMessage" class="live-validation-message" role="status"></p></div></section>
+                  <section class="live-groupme-step-card"><span class="live-step-number">3</span><div class="live-step-body"><h3>Test connection</h3><p>Send a test message to make sure everything is working.</p><div class="live-dashboard-actions live-step-actions"><button id="testGroupMeButton" type="button" disabled>Send test message</button></div></div></section>
+                </div>
+                <details class="live-groupme-advanced"><summary>Advanced</summary><div class="live-form-grid live-groupme-form"><label>Internal connection name<input id="groupMeDisplayName" type="text" maxlength="100" value="WPI Live Scoring Test"></label><label>Delivery method<select id="groupMeDeliveryMode"><option value="topic">Topic</option><option value="bot">Bot · main chat</option></select></label><label id="groupMeSecretField">Supabase secret name<input id="groupMeSecretName" type="text" maxlength="128" value="" placeholder="GROUPME_ACCESS_TOKEN_WPI_LIVE" autocapitalize="characters"></label><label class="live-groupme-enabled"><input id="groupMeEnabled" type="checkbox"> Enable real GroupMe delivery for new games</label></div></details>
+                <div class="live-dashboard-actions live-groupme-save-row"><button id="saveGroupMeButton" type="button">Save &amp; use for new games</button></div>
+                <p id="groupMeSetupMessage" class="live-validation-message" role="status"></p>
+              </div>
+              <p id="groupMeReadOnly" class="live-panel-help" hidden></p>
+              <div id="groupMeAudit" class="live-delivery-audit" hidden><span><strong id="deliverySentCount">0</strong> sent</span><span><strong id="deliveryFailedCount">0</strong> failed</span><span><strong id="deliveryPendingCount">0</strong> queued</span></div>
+            </article>
+          </section>
+
+          <section class="live-panel live-history-panel" id="dashboardGameHistory">
+            <div class="live-panel-heading"><div><p class="live-section-kicker">Permanent records</p><h2>Game history</h2></div><button id="refreshGamesButton" type="button">Refresh</button></div>
+            <p class="live-panel-help">Every connected game is retained privately for future team and coaching analytics.</p>
+            <div id="gameHistoryList" class="live-game-history-list"><p class="live-empty-state">No connected games yet.</p></div>
+          </section>
         </div>
       </div>
     </section>
 
+    <dialog id="rosterImportDialog" class="live-dialog live-roster-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker" id="rosterDialogKicker">Roster import</p><h2 id="rosterDialogTitle">Review roster</h2></div><button value="cancel" aria-label="Close roster editor">Close</button></div>
+        <p class="live-panel-help" id="rosterDialogHelp">WPI creates a draft first. Review names and cap numbers before saving.</p>
+        <div id="rosterOcrWorkspace" class="live-roster-ocr-workspace" hidden>
+          <div class="live-roster-image-preview"><img id="rosterImagePreview" alt="Roster image preview"></div>
+          <div class="live-roster-ocr-status"><strong id="rosterOcrStatus">Preparing image…</strong><progress id="rosterOcrProgress" max="100" value="0"></progress><small id="rosterOcrDetail">Nothing is saved until you confirm the roster.</small></div>
+        </div>
+        <div class="live-roster-draft-heading"><div><strong id="rosterDraftCount">0 players detected</strong><small>Correct anything WPI misread, remove extra rows, or add a missing player.</small></div><button id="addRosterDraftRowButton" type="button">+ Add player</button></div>
+        <div class="live-roster-draft-table" id="rosterDraftRows"></div>
+        <details class="live-roster-raw-details" id="rosterRawDetails" hidden><summary>View detected text</summary><textarea id="rosterRawText" rows="6" readonly></textarea></details>
+        <p id="rosterDraftMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveRosterDraftButton" type="button">Save roster</button></div>
+      </form>
+    </dialog>
 
     <dialog id="dashboardScorerCodeDialog" class="live-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Game-scoped access</p><h2>Take over scoring</h2></div><button value="cancel" aria-label="Close scorer code dialog">Close</button></div>
         <p class="live-panel-help">Enter the six-digit code shown by the current scorer. Your permanent team role will not change.</p>
-        <div class="live-form-grid">
-          <label>Scorer code<input id="dashboardScorerCode" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="one-time-code" placeholder="000000"></label>
-          <label>Display name<input id="dashboardScorerDisplayName" type="text" maxlength="80" autocomplete="name" placeholder="Name shown in scoring audit"></label>
-        </div>
+        <div class="live-form-grid"><label>Scorer code<input id="dashboardScorerCode" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="one-time-code" placeholder="000000"></label><label>Display name<input id="dashboardScorerDisplayName" type="text" maxlength="80" autocomplete="name" placeholder="Name shown in scoring audit"></label></div>
         <div id="dashboardScorerPreview" class="live-invite-result" hidden></div>
         <p id="dashboardScorerCodeMessage" class="live-validation-message" role="status"></p>
         <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="dashboardPreviewScorerCodeButton" type="button">Check code</button><button id="dashboardAcceptScorerCodeButton" type="button">Accept scoring control</button></div>
@@ -190,9 +188,9 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.56.15"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.56.15"></script>
-  <script src="js/live-dashboard-v7-56-9.js?v=7.56.15"></script>
+  <script src="config/live-sandbox.js?v=7.57.0"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.0"></script>
+  <script src="js/live-dashboard-v7-57-0.js?v=7.57.0"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
