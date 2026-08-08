@@ -4,25 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <title>Live Scoring Sandbox | Water Polo Index</title>
-  <meta name="description" content="Private WPI sandbox for testing structured live water polo plays, parent messages, and game recaps.">
+  <title>WPI Live Scoring | Water Polo Index</title>
+  <meta name="description" content="Private WPI Live scoring console for structured water polo plays, GroupMe score updates, and game recaps.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-56-10.css?v=7.56.10">
+  <link rel="stylesheet" href="css/live-sandbox-v7-56-11.css?v=7.56.11">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
     <section class="live-sandbox-banner" aria-labelledby="sandboxTitle">
       <div>
-        <p class="live-sandbox-kicker">WPI live scoring pilot</p>
-        <h1 id="sandboxTitle">Live Scoring Sandbox</h1>
-        <p>Set up a dry run or scrimmage, select the starting lineup, and test the same one-hand workflow intended for tournament use.</p>
+        <p class="live-sandbox-kicker">WPI Live</p>
+        <h1 id="sandboxTitle">Live Scoring</h1>
+        <p>Set up the game, choose starters, and score from the same mobile-first console used on deck.</p>
       </div>
-      <span class="live-sandbox-badge">Sandbox · test data only</span>
+      <span class="live-sandbox-badge">Lamorinda pilot</span>
     </section>
 
     <section class="live-status-strip" aria-label="Sandbox connection status">
@@ -45,7 +45,7 @@
           <label>Age group<select id="ageGroup"><option value="10U">10U</option><option value="12U">12U</option><option value="14U" selected>14U</option><option value="16U">16U</option><option value="18U">18U</option></select></label>
           <label>Quarter length<select id="quarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
           <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
-          <label>Message frequency<select id="messageFrequency"><option value="all">Every recorded action</option><option value="major" selected>Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
+          <label>Message frequency<select id="messageFrequency"><option value="all" selected>Every recorded action</option><option value="major">Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
           <label>Visibility<select id="visibility"><option value="team_private" selected>Team Private</option><option value="private_only">Private Only</option><option value="public_team">Public team-level scoring</option></select></label>
         </div>
       </div>
@@ -68,8 +68,8 @@
 
     <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
       <div class="live-game-toolbar">
-        <div><strong>WPI Live</strong><span id="compactModeLabel">Sandbox · GroupMe preview</span></div>
-        <button id="gameSignOutButton" type="button">Sign out</button>
+        <div class="live-game-brand"><strong><span>WPI</span> LIVE</strong><small id="compactModeLabel">Sandbox preview</small></div>
+        <div class="live-game-toolbar-actions"><span id="gameGroupMeBadge" class="live-game-groupme-badge" data-state="idle">Preview</span><button id="gameSignOutButton" type="button">Sign out</button></div>
       </div>
 
       <section id="scorerControlStrip" class="live-scorer-control-strip" hidden aria-live="polite">
@@ -83,18 +83,18 @@
 
       <div class="live-scoreboard" aria-live="polite">
         <div class="live-score-team"><span id="scoreTeamName">Pilot Team</span><strong id="teamScore">0</strong></div>
-        <div class="live-score-center"><span id="gameStatus">Live sandbox</span><strong>–</strong><em id="quarterClockLabel">Q1 · 7:00</em></div>
+        <div class="live-score-center"><strong id="scorePeriodLabel">Q1</strong><em id="scoreClockLabel">7:00</em><span id="gameStatus">Live sandbox</span><span id="quarterClockLabel" class="live-visually-hidden">Q1 · 7:00</span></div>
         <div class="live-score-team live-score-team--opponent"><span id="scoreOpponentName">Opponent</span><strong id="opponentScore">0</strong></div>
       </div>
 
-      <section class="live-panel live-action-panel" aria-labelledby="consoleHeading">
+      <section class="live-panel live-action-panel" id="liveActionPanel" aria-labelledby="consoleHeading">
         <div class="live-panel-heading live-compact-heading">
-          <div><p class="live-section-kicker">Mobile-first scorer</p><h2 id="consoleHeading">Record play</h2></div>
+          <div><p class="live-section-kicker">Game</p><h2 id="consoleHeading">Record play</h2></div>
           <span id="currentLineupStatus" class="live-lineup-status">Q1 starters saved</span>
         </div>
 
         <div id="lastUpdateCard" class="live-last-update" hidden aria-live="polite">
-          <div><span>Last play</span><strong id="lastUpdateText"></strong></div>
+          <div><span>Play recorded</span><strong id="lastUpdateText"></strong><small id="lastUpdateDelivery" data-state="recorded">Recorded</small></div>
           <button id="undoLastInlineButton" type="button">Undo</button>
         </div>
 
@@ -102,13 +102,17 @@
           <div class="live-field-full live-event-chooser">
             <div class="live-field-label">Event</div>
             <div id="eventQuickActions" class="live-event-quick-actions" role="group" aria-label="Choose event"></div>
+            <div id="eventVariantChooser" class="live-event-variant-chooser" hidden aria-live="polite"></div>
           </div>
 
-          <label class="live-field-full live-event-select-field">More event options
-            <select id="eventType" required>
-              <option value="">Choose an event</option>
-            </select>
-          </label>
+          <details id="eventMoreActions" class="live-field-full live-more-actions">
+            <summary>More actions</summary>
+            <label class="live-event-select-field">All event types
+              <select id="eventType" required>
+                <option value="">Choose an event</option>
+              </select>
+            </label>
+          </details>
 
           <label id="primaryPlayerLabel" class="live-field-full" hidden>Player
             <select id="primaryPlayer">
@@ -127,19 +131,26 @@
             <small id="clockHelp">Enter 6:45 or type 645.</small>
           </label>
 
-          <label id="eventNoteLabel" class="live-field-full">Additional notes <span class="live-optional-label">Optional</span>
-            <input id="eventNote" type="text" maxlength="140" placeholder="Short context for parents">
-          </label>
+          <details id="eventNoteDetails" class="live-field-full live-event-note-details">
+            <summary>Add note <span>Optional</span></summary>
+            <label id="eventNoteLabel" class="live-note-field">Additional notes
+              <input id="eventNote" type="text" maxlength="140" placeholder="Short context for parents">
+            </label>
+          </details>
 
-          <details id="messagePreviewDetails" class="live-preview-details" hidden open>
+          <details id="messagePreviewDetails" class="live-preview-details" hidden>
             <summary>Preview GroupMe message</summary>
             <pre id="messagePreview">Choose a play to preview the parent message.</pre>
           </details>
 
           <button id="recordEventButton" type="submit" disabled>Submit play</button>
-          <button id="endQuarterButton" class="live-end-quarter-secondary" type="button">End quarter</button>
           <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
         </form>
+
+        <div class="live-game-action-row">
+          <button id="transferScoringInlineButton" class="live-transfer-inline" type="button">Transfer scoring</button>
+          <button id="endQuarterButton" class="live-end-quarter-secondary" type="button">End quarter</button>
+        </div>
 
         <section id="shootoutPanel" class="live-shootout-panel" hidden aria-labelledby="shootoutHeading">
           <div class="live-panel-heading live-compact-heading">
@@ -172,7 +183,6 @@
           <div class="live-game-controls-grid">
             <label>Current period<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT1</option><option value="6">OT2</option><option value="7">OT3</option><option value="8">OT4</option></select></label>
             <button id="editCurrentLineupButton" type="button">Edit starters</button>
-            <button id="transferScoringInlineButton" type="button">Transfer scoring</button>
             <button id="showSetupButton" type="button">Edit roster or setup</button>
             <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
             <button id="scoreCorrectionButton" type="button">Correct score</button>
@@ -182,16 +192,22 @@
         </details>
       </section>
 
-      <details class="live-panel live-message-panel" id="messageDetails" open>
+      <details class="live-panel live-message-panel" id="messageDetails">
         <summary><span><strong>GroupMe play log</strong><small id="messageModeBadge">Mock delivery</small></span><span id="messageCount">0 messages</span></summary>
         <p class="live-panel-help" id="messageHelp">Messages are previewed locally until the secure GroupMe connection is activated.</p>
         <div class="live-message-list" id="messageList"><p class="live-empty-state">No messages generated yet.</p></div>
       </details>
 
-      <details class="live-panel live-timeline-panel" id="timelineDetails" open>
+      <details class="live-panel live-timeline-panel" id="timelineDetails">
         <summary><span><strong>Game timeline</strong><small>Open during or after the game</small></span><span id="eventCount">0 events</span></summary>
         <div class="live-timeline" id="timelineList"><p class="live-empty-state">Start the game to create the first timeline event.</p></div>
       </details>
+
+      <nav id="liveMobileNav" class="live-mobile-nav" aria-label="Live game navigation">
+        <button id="mobileNavGame" type="button" class="is-active"><span aria-hidden="true">▣</span><strong>Game</strong></button>
+        <button id="mobileNavUpdates" type="button"><span aria-hidden="true">▤</span><strong>Updates</strong></button>
+        <button id="mobileNavMore" type="button"><span aria-hidden="true">☰</span><strong>More</strong></button>
+      </nav>
     </section>
 
     <section class="live-panel live-summary-panel" id="summaryPanel" hidden aria-labelledby="summaryHeading">
@@ -299,9 +315,9 @@
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="config/live-sandbox.js?v=7.56.10"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.56.10"></script>
-  <script src="js/live-sandbox-v7-56-10.js?v=7.56.10"></script>
+  <script src="config/live-sandbox.js?v=7.56.11"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.56.11"></script>
+  <script src="js/live-sandbox-v7-56-11.js?v=7.56.11"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

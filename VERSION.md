@@ -1,33 +1,47 @@
-# WPI 7.56.10 — Post-Handoff Delivery Reliability
+# WPI 7.56.11 — Live UI Polish
 
-WPI 7.56.9 is a frontend UX release built on the authoritative 7.56.8 GroupMe Topic Delivery Foundation.
+WPI 7.56.11 is a frontend polish release built on the validated **7.56.10 Post-Handoff Delivery Reliability** baseline.
 
 ## Release focus
 
-- Mobile-first Lamorinda blue/gold live scoring experience.
-- Faster event entry with large quick-action controls while retaining every supported structured event.
-- Moves **Time of play** later in the scoring workflow, after event/player context.
-- Simplifies scorer handoff around QR-first transfer with a six-digit backup code/link.
-- Simplifies GroupMe setup into Tournament GroupMe → Score Updates Topic → Test Connection → Save & use for new games.
-- Moves technical GroupMe configuration behind **Advanced**.
+- Brings the active scorer substantially closer to the approved WPI Live mobile concept.
+- Uses Lamorinda blue and gold for the team scoring experience while keeping the WPI admin shell distinct.
+- Promotes six poolside actions: **Goal, Save, Steal, Exclusion, Turnover, 5M**.
+- Keeps Field Block, opponent goals, shot outcomes, and every other structured event accessible under **More actions**.
+- Adds compact Exclusion and 5M variant choices without forcing a large universal form.
+- Strengthens score → period/clock → event → player → time → submit hierarchy.
+- Adds mobile **Game / Updates / More** navigation.
+- Makes GroupMe delivery state easier to read without exposing technical delivery details during scoring.
+- Refines the dashboard into a lighter WPI admin shell with a team-settings rail and a more focused GroupMe setup flow.
+- Fixes quarter transition focus so **End Quarter never reopens the normal action Player selector**; the next-quarter lineup flow is the only player-selection UI opened by that action.
 
-## Protected 7.56.8 foundations
+## Reliability preserved from 7.56.10
 
-The release intentionally does **not** replace or migrate the existing connected backend. The 7.56.8 browser backend, GroupMe Edge Function, Topic migration, full Supabase setup SQL, and event registry are protected by byte-for-byte regression hashes in the 7.56.9 focused release check.
+- Fresh games default to every recorded action for GroupMe delivery.
+- Goal, Save, Field Block and all structured event data remain analytics-ready.
+- Final Whistle uses the awaited final persistence/delivery path.
+- GroupMe Topic delivery and Bot fallback remain unchanged.
+- Delivery persistence, retries, audit history and exactly-once protections remain unchanged.
+- One active scorer per game remains enforced.
+- Signed-in scorer code claim, Guest Scorer QR/code handoff, Admin takeover and previous-scorer read-only enforcement remain unchanged.
+- OT and shootout behavior remain unchanged.
 
-Protected behavior includes:
+## Backend / deployment
 
-- GroupMe Topic delivery and Bot fallback.
-- delivery persistence, retries, and audit trail.
-- one active scorer per game.
-- signed-in scorer code claim.
-- Guest Scorer QR/code handoff.
-- Admin takeover and previous-scorer read-only enforcement.
-- structured event storage for analytics.
-- OT, shootout, and Final Whistle sequencing.
+No Supabase migration is required for 7.56.11.
+No GroupMe secret changes are required.
+The `groupme-post` Edge Function does not need to be redeployed.
 
-## Supabase deployment
+The connected backend remains `js/live-backend-v7-56-8.js`; 7.56.11 changes the presentation layer and scorer interaction code only.
 
-No new Supabase migration, secret, or Edge Function deployment is required for 7.56.9.
+## Primary validation target
 
-Run `./release-check-live-7.56.9` before the full `./release-check`.
+Hosted phone smoke test:
+
+1. Start a new game.
+2. Record Goal, Save and Field Block/More action.
+3. End Q1 and verify only the Q2 starters dialog opens — never the normal action Player selector.
+4. Save Q2 starters and verify the scoring form returns neutral.
+5. Transfer scoring to another device.
+6. Record Goal, Save and Field Block on the receiving device.
+7. End the game and confirm `Final saved` plus Final Whistle in GroupMe.
