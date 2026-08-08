@@ -1,17 +1,22 @@
-# WPI 7.56.14 — Action Flow Cleanup & Team Labels
+# WPI 7.56.15 — Tournament-Scale GroupMe Summary Reliability
 
-WPI 7.56.14 is a focused poolside UX cleanup built directly on the validated **7.56.13 Game Actions & Automatic GroupMe Summary** baseline.
+WPI 7.56.15 is built directly on the validated **7.56.14 Action Flow Cleanup & Team Labels** baseline.
 
 ## Release focus
 
-- Removes the redundant event-type dropdown below the action/variant buttons.
-- Uses a hidden internal event-state value instead, so the seven direct action buttons are the only visible event-selection control.
-- Goal variants now use the actual game team names (for example, `Lamorinda A` and `Stanford`) instead of `Us` and `Them`.
-- Variant prompts are contextual: Which team scored?, Shot result, Save type, Exclusion, and 5M call.
-- Team-name buttons wrap safely on mobile for longer club/team names.
-- Preserves all 7.56.13 structured analytics events and the automatic post-Final-Whistle GroupMe Game Summary.
-- No Supabase migration, GroupMe secret change, or Edge Function redeploy is required.
+- Keeps every recorded play as an independent GroupMe delivery; there is no WPI character pool shared across a game, tournament, topic, or team.
+- Builds the end-of-game recap from the complete structured game record and splits it into as many ordered GroupMe messages as required.
+- Caps each outbound GroupMe summary message at a conservative 900 characters, below GroupMe's documented 1,000-character per-message maximum.
+- Summary parts are explicitly chained: Final Whistle -> Summary 1/N -> Summary 2/N -> ... -> Summary N/N. A failed prerequisite prevents later parts from jumping ahead.
+- Uses compact <=280-character audit notes for each `game_summary` database event, eliminating the 7.56.14 `live_events_note_check` final-sync failure.
+- Includes all player stat lines and scorer-entered notes in the derived recap; the aggregate recap has no fixed WPI product cap because it is persisted as structured events plus independent summary chunks.
+- Repairs an unsent legacy 7.56.14 oversized Game Summary when the ended game is reopened.
+- Preserves the seven direct action buttons, team-name Goal labels, scorer handoff, Topic delivery, Bot fallback, delivery retries/audit, and final-save sequencing.
 
-## Protected foundation
+## Tournament capacity model
 
-7.56.14 does not change scorer authority, guest handoff, retries/audit, Topic delivery, Bot fallback, database persistence, automatic summary ordering, or Final Whistle sequencing.
+A tournament can use one GroupMe main chat with one Scores topic for all games. Each play and each summary chunk is a separate message/event. Eight games do not consume a shared 10K/100K allowance. GroupMe's external rate limiting is handled by WPI's existing queued retry/backoff path; no undocumented unlimited provider throughput is assumed.
+
+## Infrastructure
+
+No new Supabase migration, GroupMe secret, database password, or Edge Function redeploy is required. The 7.56.13 `game_summary` event-type migration remains the only schema prerequisite for automatic summaries.
