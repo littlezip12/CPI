@@ -1,32 +1,21 @@
-# WPI 7.56.12 — Live Game Setup & Scoring Finish
+# WPI 7.56.13 — Game Actions & Automatic GroupMe Summary
 
-WPI 7.56.12 is a frontend workflow-finish release built directly on the validated **7.56.11 Live UI Polish** baseline.
+WPI 7.56.13 is a focused game-day scoring release built directly on the validated **7.56.12 Live Game Setup & Scoring Finish** baseline.
 
 ## Release focus
 
-- Turns manual pregame setup into a clear three-step flow: **Match details → Roster → Starting lineup**.
-- Moves delivery/visibility preferences behind a secondary setup control so normal game setup stays short.
-- Tightens the mobile scorer surface without removing any structured analytics event.
-- Keeps the six primary poolside actions: **Goal, Save, Steal, Exclusion, Turnover, 5M**.
-- Automatically preselects the current-quarter goalie for **Save** while keeping the player field editable.
-- Stops normal event selection from automatically opening the Player selector on phones.
-- Makes quarter transitions explicit: **Q1 complete + current score → confirm Q2 starters → Start Q2**.
-- Further simplifies scorer transfer with a clear **Waiting → Accepted** state and a shorter read-only message on the prior device.
-- Makes Game Day the clearest first action on the dashboard.
+- Removes the **More actions** drawer from the primary scorer.
+- Replaces it with seven direct poolside actions: **Goals, Shots, Saves, Steals, Exclusions, Turnover, 5M**.
+- Goals expose **Us / Them** variants.
+- Shots expose **Missed / Post / Blocked / Saved** outcomes.
+- Saves expose **Goalie save / Field block** so Field Block remains directly accessible with no hidden event menu.
+- Exclusions and 5M preserve **Drawn by us / Committed by us** variants.
+- All existing structured event types remain available for analytics.
+- Ending a game now creates one auditable **Game summary** system event and queues its GroupMe message after Final Whistle.
+- Summary delivery uses the existing persisted-event, exactly-once delivery, retry and audit pipeline; no new secret or delivery transport is introduced.
+- The GroupMe summary includes final score, team shots, goals, assists, saves, field blocks, steals, turnovers, exclusions drawn, 5M drawn and up to three recorded contributors.
+- Existing 7.56.12 setup, scorer handoff, quarter transitions, connected backend, Topic delivery, Bot fallback and final-save reliability remain protected.
 
-## Reliability preserved
+## Deployment
 
-- Every recorded action remains eligible for GroupMe delivery on fresh games.
-- Goal, Save, Field Block and all structured event data remain analytics-ready.
-- Final Whistle retains the awaited final persistence/delivery path.
-- GroupMe Topic delivery and Bot fallback are unchanged.
-- Delivery persistence, retry, audit and exactly-once protections are unchanged.
-- One active scorer per game remains enforced across signed-in and Guest Scorer handoff.
-- Admin takeover, previous-scorer read-only, OT and shootout behavior remain unchanged.
-
-## Backend / deployment
-
-- No Supabase migration.
-- No GroupMe secret change.
-- No Edge Function redeploy required.
-- `js/live-backend-v7-56-8.js`, the GroupMe Edge Function, Topic migration and full connected setup SQL remain protected.
+This release requires the small forward migration `supabase/migrations/202608080001_game_summary_event.sql` so `live_events` can persist the new `game_summary` audit event. It requires **no secret change and no Edge Function redeploy**.

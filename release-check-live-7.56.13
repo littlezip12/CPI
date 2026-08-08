@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT"
+
+echo "WPI Live 7.56.13 Focused Release Check"
+echo "========================================"
+python3 scripts/test-live-game-actions-summary-v7-56-13.py
+node --check js/live-sandbox-v7-56-13.js
+node --check js/live-dashboard-v7-56-9.js
+node --check js/live-scorer-handoff-v7-56-9.js
+
+echo
+echo "WPI Live 7.56.13 focused release check passed."
