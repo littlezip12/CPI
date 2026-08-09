@@ -1,4 +1,4 @@
-// WPI 7.57.2 — authenticated member/guest scorer → GroupMe delivery with scoped setup administration.
+// WPI 7.57.4 — authenticated member/guest scorer → GroupMe delivery with self-service setup administration.
 // Bot IDs and GroupMe access tokens remain in Supabase Edge Function secrets.
 import { createClient } from "npm:@supabase/supabase-js@2.110.8";
 import { corsHeaders as supabaseCorsHeaders } from "npm:@supabase/supabase-js@2.110.8/cors";
@@ -190,18 +190,15 @@ Deno.serve(async (req) => {
         return json({ error: "Only the Team Owner may browse the connected GroupMe account's groups" }, 403);
       }
 
-      const requestedSecretName = environmentKey(payload.secret_name);
-      if (requestedSecretName && membership.role !== "owner") {
-        return json({ error: "Only the Team Owner may choose a server-side credential secret" }, 403);
-      }
-
-      const secretName = requestedSecretName || environmentKey(existingDestination?.secret_name);
-      const accessToken = secretName ? Deno.env.get(secretName) : null;
-      if (!secretName || !accessToken) {
+      // WPI 7.57.4: credential selection is no longer browser-configurable.
+      // Existing teams retain their server-side environment-variable name; a
+      // newly created team uses the platform-managed default. The token value
+      // itself remains only in the Edge Function environment.
+      const secretName = environmentKey(existingDestination?.secret_name) || "GROUPME_ACCESS_TOKEN_WPI_LIVE";
+      const accessToken = Deno.env.get(secretName);
+      if (!accessToken) {
         return json({
-          error: membership.role === "owner"
-            ? "Set the GroupMe access token as a Supabase secret, enter that secret name, and try again"
-            : "The Team Owner has not configured the server-side GroupMe access token yet"
+          error: "WPI's protected GroupMe connection is not configured. Ask the Platform Owner to complete the one-time connection."
         }, 409);
       }
 

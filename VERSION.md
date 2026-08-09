@@ -1,1 +1,1 @@
-# WPI 7.57.3 — Multi-Team & Team Switching
+# WPI 7.57.4 — Self-Service Tournament GroupMe Setup
