@@ -1,4 +1,4 @@
-// WPI 7.56.8 — authenticated member/guest scorer → GroupMe bot/topic delivery.
+// WPI 7.57.2 — authenticated member/guest scorer → GroupMe delivery with scoped setup administration.
 // Bot IDs and GroupMe access tokens remain in Supabase Edge Function secrets.
 import { createClient } from "npm:@supabase/supabase-js@2.110.8";
 import { corsHeaders as supabaseCorsHeaders } from "npm:@supabase/supabase-js@2.110.8/cors";
@@ -164,13 +164,19 @@ Deno.serve(async (req) => {
 
       const { data: membership } = await adminClient
         .from("live_team_members")
-        .select("role")
+        .select("role,can_manage_groupme")
         .eq("team_id", teamId)
         .eq("user_id", user.id)
         .maybeSingle();
 
+      const canManageSetup = Boolean(
+        membership && (membership.role === "owner" || (membership.role === "admin" && membership.can_manage_groupme === true))
+      );
       if (!membership || !["owner", "admin"].includes(membership.role)) {
         return json({ error: "Owner or Admin role required" }, 403);
+      }
+      if (action === "discover_topics" && !canManageSetup) {
+        return json({ error: "Tournament GroupMe management permission required" }, 403);
       }
 
       const { data: existingDestination } = await adminClient
@@ -270,11 +276,14 @@ Deno.serve(async (req) => {
 
       const { data: membership } = await userClient
         .from("live_team_members")
-        .select("role")
+        .select("role,can_manage_groupme")
         .eq("team_id", destination.team_id)
         .eq("user_id", user.id)
         .maybeSingle();
       if (!membership || !["owner", "admin"].includes(membership.role)) return json({ error: "Owner or Admin role required" }, 403);
+      if (membership.role === "admin" && membership.can_manage_groupme !== true) {
+        return json({ error: "Tournament GroupMe management permission required" }, 403);
+      }
 
       const { data: privateDestination } = await adminClient
         .from("live_destinations")

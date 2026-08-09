@@ -1,4 +1,4 @@
-/* WPI 7.57.1 connected-live configuration.
+/* WPI 7.57.2 connected-live configuration.
  * The Supabase project URL and publishable key are browser-safe only when Row Level Security is enabled.
  * Never place a secret key, service-role key, GroupMe bot ID, GroupMe access token, password, or other secret in this file.
  *
@@ -8,7 +8,7 @@
  *   supabasePublishableKey: "sb_publishable_..."
  */
 window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({
-  release: "7.57.1",
+  release: "7.57.2",
   environment: "sandbox",
   mode: "demo",
   supabaseUrl: "",
