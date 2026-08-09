@@ -1,0 +1,44 @@
+WPI 7.57.6 — Game-Day Hub & Universal Game Model
+Built from pushed WPI 7.57.5 baseline: CPI-main - 2026-08-08T223957.462.zip
+
+PRIMARY ADDITIONS
+- live-dashboard.html — Game-Day Hub, Add Game dialog, temporary History separation
+- js/live-dashboard-v7-57-6.js — queue, manual tournament/scrimmage/friendly creation, logos, duplicate warning, launch/edit/cancel
+- css/live-sandbox-v7-57-6.css — cumulative Game-Day Hub/mobile styling
+- supabase/migrations/202608080005_game_day_hub_universal_game_model.sql — canonical game metadata + Game-Day RPCs + reconciliation foundation
+- scripts/test-live-game-day-hub-v7-57-6.py — new release contract/protected-hash test
+- release-check-live-7.57.6 — focused release gate
+- LIVE_GAME_DAY_HUB_SETUP_7.57.6.md — Supabase/acceptance instructions
+- WPI_7.57.6_GAME_DAY_HUB_HANDOFF.md — release architecture and next-step handoff
+
+RELEASE/CACHE UPDATES
+- VERSION.md
+- config/site-release.json
+- config/live-sandbox.js
+- config/live-sandbox.example.js
+- live-login.html
+- live-password-reset.html
+- live-sandbox.html
+- live-scorer-handoff.html
+- release-check
+- historical release allowlists in existing validation scripts extended for 7.57.6
+
+SUPABASE
+- One SQL migration required: 202608080005_game_day_hub_universal_game_model.sql
+- No Edge Function redeploy
+- No new secrets
+
+PROTECTED / UNCHANGED SERVICE & SCORING FOUNDATION
+- js/live-backend-v7-56-8.js
+- js/live-sandbox-v7-56-15.js
+- supabase/functions/groupme-post/index.ts
+- supabase/functions/roster-extract/index.ts
+- js/live-team-context-v7-57-3.js
+- js/live-groupme-setup-v7-57-4.js
+- prior 7.57.x migrations
+
+KEY CONTRACT
+Manual tournament games are provisional canonical records. Future official tournament reconciliation must attach to the same live_games record rather than create a second unstarted official record. Reconciliation must never silently overwrite completed scoring/event history.
+
+HISTORY
+Current History/test records intentionally remain during development. Permanent Games & Results + test-data cleanup is deferred to 7.57.9.

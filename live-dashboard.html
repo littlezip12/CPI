@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-5.css?v=7.57.5">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-6.css?v=7.57.6">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -55,6 +55,7 @@
             <a href="#dashboardRoster"><span aria-hidden="true">≡</span>Roster</a>
             <a href="#dashboardTeamAccess"><span aria-hidden="true">◎</span>Team access</a>
             <a href="#dashboardGroupMe"><span aria-hidden="true">◉</span>GroupMe</a>
+            <a href="#dashboardGameDay"><span aria-hidden="true">▶</span>Game day</a>
             <a href="#dashboardGameHistory"><span aria-hidden="true">▤</span>History</a>
           </nav>
           <div class="live-dashboard-sidebar-help"><strong>WPI Live</strong><span>Ready for game day.</span></div>
@@ -85,10 +86,27 @@
 
             <div class="live-readiness-launch-summary" id="readinessLaunchSummary"><strong>Setup in progress</strong><span>Complete the checklist above to reach the game-day ready state.</span></div>
             <div class="live-dashboard-actions live-overview-actions">
-              <a id="createScrimmageLink" class="live-primary-link" data-readiness="checking" href="live-sandbox.html?new=1">Start a new game</a>
+              <a id="createScrimmageLink" class="live-primary-link" data-readiness="checking" href="#dashboardGameDay">Add a game</a>
               <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
               <button id="enterScorerCodeButton" type="button" hidden>Enter scorer code</button>
             </div>
+          </section>
+
+          <section class="live-panel live-game-day-hub" id="dashboardGameDay">
+            <div class="live-panel-heading live-game-day-heading">
+              <div><p class="live-section-kicker">Games on deck</p><h2>Game-Day Hub</h2></div>
+              <button id="addGameDayButton" class="live-game-day-add" type="button">+ Add game</button>
+            </div>
+            <p class="live-panel-help">Tournament games can be added manually whenever a schedule is missing or delayed. WPI keeps that scored game as the canonical record and will reconcile it to the official tournament schedule later instead of creating a duplicate.</p>
+            <div class="live-game-day-paths" aria-label="Ways to add a game">
+              <div><span aria-hidden="true">◆</span><strong>Tournament game</strong><small>Manual fallback now · official schedule reconciliation next</small></div>
+              <div><span aria-hidden="true">○</span><strong>Scrimmage / friendly</strong><small>Simple manual game that does not need a tournament feed</small></div>
+            </div>
+            <div class="live-game-day-toolbar">
+              <div><strong id="gameDayQueueCount">0 games on deck</strong><small id="gameDayQueueSummary">Upcoming, ready and live games stay here.</small></div>
+              <button id="refreshGameDayButton" type="button">Refresh</button>
+            </div>
+            <div id="gameDayQueue" class="live-game-day-queue"><p class="live-empty-state">Loading the game-day queue…</p></div>
           </section>
 
           <section class="live-dashboard-grid live-team-admin-grid">
@@ -185,7 +203,7 @@
 
           <section class="live-panel live-history-panel" id="dashboardGameHistory">
             <div class="live-panel-heading"><div><p class="live-section-kicker">Permanent records</p><h2>Game history</h2></div><button id="refreshGamesButton" type="button">Refresh</button></div>
-            <p class="live-panel-help">Every connected game is retained privately for future team and coaching analytics.</p>
+            <p class="live-panel-help">Completed and cancelled games remain here during the build phase. Upcoming and live games now live in the Game-Day Hub; this History section will be replaced by the permanent Games &amp; Results experience before pilot completion.</p>
             <div id="gameHistoryList" class="live-game-history-list"><p class="live-empty-state">No connected games yet.</p></div>
           </section>
         </div>
@@ -210,6 +228,44 @@
         <details class="live-roster-raw-details" id="rosterRawDetails" hidden><summary>View import notes</summary><textarea id="rosterRawText" rows="6" readonly></textarea></details>
         <p id="rosterDraftMessage" class="live-validation-message" role="status"></p>
         <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveRosterDraftButton" type="button">Save roster</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="gameDayDialog" class="live-dialog live-game-day-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker" id="gameDayDialogKicker">Game-Day Hub</p><h2 id="gameDayDialogTitle">Add game</h2></div><button value="cancel" aria-label="Close game dialog">Close</button></div>
+        <p class="live-team-switch-summary" id="gameDayDialogHelp">Choose the kind of game. Tournament games remain eligible for official schedule reconciliation even when you have to add them manually.</p>
+
+        <fieldset class="live-game-kind-options" id="gameKindOptions">
+          <legend>Game type</legend>
+          <label><input type="radio" name="gameKind" value="tournament" checked><span><strong>Tournament game</strong><small>Use this even when WPI has not loaded the matchup yet.</small></span></label>
+          <label><input type="radio" name="gameKind" value="scrimmage"><span><strong>Scrimmage</strong><small>Practice or informal game.</small></span></label>
+          <label><input type="radio" name="gameKind" value="friendly"><span><strong>Friendly</strong><small>Non-tournament game you still want to score and retain.</small></span></label>
+        </fieldset>
+
+        <div id="gameTournamentFields" class="live-game-tournament-fields">
+          <label>Tournament
+            <select id="gameTournamentSelect"><option value="">Loading WPI tournaments…</option></select>
+          </label>
+          <label id="gameTournamentOtherLabel" hidden>Tournament name<input id="gameTournamentOther" type="text" maxlength="120" placeholder="Tournament or event name"></label>
+          <p class="live-game-reconcile-note"><span aria-hidden="true">↔</span><span><strong>Reconciliation-ready.</strong> If the official matchup appears later, WPI will link it to this game and preserve the score, stats and event log rather than create a second record.</span></p>
+        </div>
+
+        <div class="live-game-matchup-preview" id="gameMatchupPreview">
+          <div class="live-game-logo"><img id="gameTeamLogoPreview" src="assets/branding/wpi-logo-mark.png" alt="Team logo"><small id="gameTeamPreviewName">Your team</small></div>
+          <strong>vs</strong>
+          <div class="live-game-logo"><img id="gameOpponentLogoPreview" src="assets/branding/wpi-logo-mark.png" alt="Opponent logo"><small id="gameOpponentPreviewName">Opponent</small></div>
+        </div>
+
+        <div class="live-create-game-form">
+          <label>Opponent<input id="gameOpponentName" type="text" maxlength="100" list="gameOpponentSuggestions" autocomplete="off" placeholder="Start typing a WPI team or club"></label>
+          <datalist id="gameOpponentSuggestions"></datalist>
+          <label>Date &amp; time<input id="gameScheduledAt" type="datetime-local"></label>
+          <label>Venue<input id="gameVenue" type="text" maxlength="120" placeholder="Pool or facility"></label>
+          <label>Quarter length<select id="gameQuarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
+        </div>
+        <p id="gameDayDialogMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveGameDayButton" type="button">Save to Game Day</button><button id="saveStartGameDayButton" type="button">Save &amp; start</button></div>
       </form>
     </dialog>
 
@@ -239,11 +295,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.5"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.5"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.5"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.5"></script>
-  <script src="js/live-dashboard-v7-57-5.js?v=7.57.5"></script>
+  <script src="config/live-sandbox.js?v=7.57.6"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.6"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.6"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.6"></script>
+  <script src="js/live-dashboard-v7-57-6.js?v=7.57.6"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
