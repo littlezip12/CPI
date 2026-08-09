@@ -1,0 +1,30 @@
+/* WPI 7.57.12 — Supporter & Scorer Experience. */
+body[data-live-role="viewer"] .live-status-strip,
+body[data-live-role="scorer"] .live-status-strip{display:none!important}
+body[data-live-role="viewer"] .live-dashboard-header,
+body[data-live-role="scorer"] .live-dashboard-header{margin-bottom:18px}
+body[data-live-role="viewer"] .live-role-home,
+body[data-live-role="scorer"] .live-role-home{border:0;box-shadow:0 14px 42px rgba(15,23,42,.08);padding:24px}
+body[data-live-role="viewer"] .live-role-home .live-section-kicker{color:var(--lamo-blue);font-weight:900}
+body[data-live-role="viewer"] .live-role-game-card{transition:transform .15s ease,box-shadow .15s ease}
+body[data-live-role="viewer"] .live-role-game-card:has(.live-game-day-status[data-state="live"]){border-color:rgba(22,138,85,.3);box-shadow:0 10px 30px rgba(22,138,85,.1)}
+.live-role-game-top>div{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.live-role-game-vs{font-size:.8rem;font-weight:900;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em}
+.live-role-game-coverage{display:inline-flex;align-items:center;min-height:24px;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;background:#f1f5f9;color:#475569}
+.live-role-game-coverage[data-state="mine"]{background:#eaf8f0;color:#126f45}
+.live-role-game-coverage[data-state="open"]{background:#fff8e7;color:#7a5a0a}
+body[data-live-role="viewer"] #dashboardRoleBadge{background:#eef4fb;color:var(--lamo-blue-dark)}
+body[data-live-role="scorer"] #dashboardRoleBadge{background:#eaf8f0;color:#126f45}
+@media (max-width:720px){
+  body[data-live-role="viewer"] .live-dashboard-header,
+  body[data-live-role="scorer"] .live-dashboard-header{gap:12px}
+  body[data-live-role="viewer"] .live-role-home,
+  body[data-live-role="scorer"] .live-role-home{padding:16px 14px;border-radius:18px}
+  .live-role-game-matchup{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important;align-items:center}
+  .live-role-game-matchup>div,.live-role-game-matchup>div:last-child{justify-content:flex-start;text-align:left;flex-direction:column;gap:5px;align-items:center}
+  .live-role-game-matchup>div:last-child{justify-content:flex-start;text-align:center}
+  .live-role-game-matchup img{width:48px;height:48px}
+  .live-role-game-matchup span{text-align:center;font-size:.86rem}
+  .live-role-game-score,.live-role-game-vs{order:initial!important;align-self:center;text-align:center}
+  .live-role-game-action>*{width:100%;text-align:center}
+}
