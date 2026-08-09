@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "release": "7.57.7",
+  "notes": "Game-Day display aliases preserve source labels internally while resolving canonical WPI club identity, logo, and known squad mappings.",
+  "clubs": [
+    {
+      "canonicalClubSlug": "stanford",
+      "displayName": "Stanford",
+      "aliases": [
+        "Stanford",
+        "Stanford Water Polo",
+        "Stanford WPC"
+      ],
+      "squadAliases": {
+        "red": "A",
+        "black": "B",
+        "a": "A",
+        "b": "B",
+        "c": "C"
+      }
+    },
+    {
+      "canonicalClubSlug": "cc-united",
+      "displayName": "CCU",
+      "aliases": [
+        "CCU",
+        "CC United",
+        "CC United Water Polo"
+      ],
+      "squadAliases": {
+        "a": "A",
+        "black": "B",
+        "b": "B",
+        "c": "C"
+      }
+    }
+  ]
+}
