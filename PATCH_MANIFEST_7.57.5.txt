@@ -1,0 +1,59 @@
+WPI 7.57.5 — Guided Team Launch & Readiness
+Built from pushed / hosted-validated WPI 7.57.4 baseline: CPI-main - 2026-08-08T222227.968.zip
+
+PURPOSE
+- Turn Team Readiness into a guided, role-aware launch flow.
+- Show live 0–4 progress and exactly one recommended next setup step.
+- Advance automatically from Team profile → Roster → Scoring access → Score updates.
+- Give fully configured teams a clear Game-day ready state and one-click launch.
+- Hydrate Team Access during initial dashboard load so readiness/access data is immediately accurate.
+
+BACKEND / SUPABASE
+- No database migration.
+- No Edge Function deployment.
+- No new or changed secret.
+- Do not redeploy groupme-post.
+- Do not redeploy roster-extract.
+
+PROTECTED BYTE-FOR-BYTE
+- js/live-backend-v7-56-8.js
+- js/live-sandbox-v7-56-15.js
+- supabase/functions/groupme-post/index.ts
+- supabase/functions/roster-extract/index.ts
+- supabase/migrations/202608080004_self_service_groupme_setup.sql
+- js/live-team-context-v7-57-3.js
+- js/live-groupme-setup-v7-57-4.js
+
+PRIMARY NEW FILES
+- css/live-sandbox-v7-57-5.css
+- js/live-dashboard-v7-57-5.js
+- scripts/test-live-guided-team-launch-v7-57-5.py
+- release-check-live-7.57.5
+- LIVE_GUIDED_TEAM_LAUNCH_SETUP_7.57.5.md
+- WPI_7.57.5_GUIDED_TEAM_LAUNCH_HANDOFF.md
+
+UPDATED WIRING / RELEASE FILES
+- VERSION.md
+- config/live-sandbox.js
+- config/live-sandbox.example.js
+- config/site-release.json
+- live-dashboard.html
+- live-login.html
+- live-password-reset.html
+- live-sandbox.html
+- live-scorer-handoff.html
+- release-check
+
+REGRESSION ALLOWLIST UPDATES
+Legacy public/ranking/tournament validation scripts that explicitly enumerate accepted current site releases are extended to accept 7.57.5. Their substantive data expectations are unchanged.
+
+VALIDATION COMPLETED IN BUILD ENVIRONMENT
+- release-check-live-7.57.5: PASS
+- node --check js/live-dashboard-v7-57-5.js: PASS
+- node --check js/live-groupme-setup-v7-57-4.js: PASS
+- release integrity 7.52.15: PASS
+- team directory logos 7.53.6: PASS
+- tournament competitive seasons 7.55.0: PASS
+- multi-season foundation 7.55.1: PASS
+- public tournament hub 7.54.4: PASS
+- Full monolithic ./release-check exceeded the build execution window during tournament pipeline work; run the local full gate before push.

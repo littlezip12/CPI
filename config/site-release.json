@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.57.4",
-  "name": "Self-Service Tournament GroupMe Setup",
+  "version": "7.57.5",
+  "name": "Guided Team Launch & Readiness",
   "date": "2026-08-08",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Replaces technical GroupMe configuration with a guarded self-service tournament setup flow: Owner-approved GroupMe, topic selection, required test, explicit activation, pause control, and active-game route protection. GroupMe credentials remain server-side. Preserves 7.57.3 multi-team switching, 7.57.2 access controls, 7.57.1 roster vision, and 7.56.15 scoring/summary reliability.",
+  "notes": "Turns Team Readiness into a role-aware guided launch flow with live progress, a single recommended next step, reusable game-day readiness checks, and a clear ready-to-score state. Initial Team Access now loads with the rest of the workspace. Preserves 7.57.4 self-service GroupMe, 7.57.3 multi-team switching, 7.57.1 roster vision, and 7.56.15 scoring/summary reliability without database or Edge Function changes.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -86,7 +86,7 @@
   "liveScoringExtraTimeRelease": "7.56.8",
   "liveScoringShootoutRelease": "7.56.8",
   "liveScoringConnectedBackendRelease": "7.56.8",
-  "liveScoringDashboardRelease": "7.57.4",
+  "liveScoringDashboardRelease": "7.57.5",
   "liveScoringRoleSecurityRelease": "7.57.4",
   "liveScoringPersistenceRelease": "7.56.15",
   "liveScoringGroupMeRelease": "7.56.8",
@@ -105,9 +105,10 @@
   "liveScoringTeamBrandingUxRelease": "7.56.9",
   "liveScoringAutomaticSummaryRelease": "7.56.15",
   "liveScoringTournamentScaleSummaryRelease": "7.56.15",
-  "liveScoringTeamAdminRelease": "7.57.4",
+  "liveScoringTeamAdminRelease": "7.57.5",
   "liveScoringRosterImportRelease": "7.57.1",
-  "liveScoringOnboardingRelease": "7.57.4",
+  "liveScoringOnboardingRelease": "7.57.5",
   "liveScoringMultiTeamRelease": "7.57.3",
-  "liveScoringTeamSwitchingRelease": "7.57.3"
+  "liveScoringTeamSwitchingRelease": "7.57.3",
+  "liveScoringGuidedLaunchRelease": "7.57.5"
 }

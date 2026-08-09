@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-4.css?v=7.57.4">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-5.css?v=7.57.5">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -63,19 +63,29 @@
         <div class="live-dashboard-main">
           <div hidden aria-hidden="true"><span id="dashboardRoleMetric">—</span><span id="dashboardGameCount">0</span><span id="dashboardDeliveryMetric">Not connected</span></div>
           <section class="live-panel live-team-readiness-card" id="dashboardOverview">
-            <div class="live-panel-heading">
-              <div><p class="live-section-kicker">Team readiness</p><h2>Ready for your next tournament?</h2></div>
+            <div class="live-panel-heading live-readiness-heading">
+              <div><p class="live-section-kicker">Guided team launch</p><h2 id="readinessHeadline">Getting your team game-day ready</h2></div>
               <div class="live-readiness-score" id="teamReadinessScore">Checking…</div>
             </div>
-            <p class="live-panel-help">Set up the team once, then reuse the roster, access and score-updates destination across games.</p>
-            <div class="live-readiness-grid">
-              <a class="live-readiness-item" id="readinessProfile" href="#dashboardTeamProfile"><span>1</span><div><strong>Team profile</strong><small>Team identity and age group</small></div><em>Checking</em></a>
-              <a class="live-readiness-item" id="readinessRoster" href="#dashboardRoster"><span>2</span><div><strong>Roster</strong><small>Names and cap numbers</small></div><em>Checking</em></a>
-              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span>3</span><div><strong>Score updates</strong><small>Tournament GroupMe + topic</small></div><em>Checking</em></a>
-              <a class="live-readiness-item" id="readinessAccess" href="#dashboardTeamAccess"><span>4</span><div><strong>Team access</strong><small>Admins, scorers and viewers</small></div><em>Ready</em></a>
+            <p class="live-panel-help" id="readinessIntro">Finish the reusable setup once. WPI will carry the team identity, roster, scoring access and score-updates destination into every new game.</p>
+            <div class="live-readiness-progress" aria-label="Team setup progress"><div class="live-readiness-progress-track"><span id="readinessProgressBar"></span></div><small id="readinessProgressLabel">Checking team setup…</small></div>
+
+            <div class="live-readiness-next" id="readinessNextCard" data-state="loading">
+              <span class="live-readiness-next-icon" id="readinessNextIcon" aria-hidden="true">→</span>
+              <div class="live-readiness-next-copy"><small>Recommended next step</small><strong id="readinessNextTitle">Checking your team setup…</strong><p id="readinessNextCopy">WPI is loading the reusable pieces your team needs for game day.</p></div>
+              <button id="readinessNextButton" type="button" disabled>Continue setup</button>
             </div>
+
+            <div class="live-readiness-grid" aria-label="Team launch checklist">
+              <a class="live-readiness-item" id="readinessProfile" href="#dashboardTeamProfile"><span>1</span><div><strong>Team profile</strong><small>Identity + age group</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessRoster" href="#dashboardRoster"><span>2</span><div><strong>Roster</strong><small>Enough players to start</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessAccess" href="#dashboardTeamAccess"><span>3</span><div><strong>Scoring access</strong><small>Owner, Admin or Scorer coverage</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span>4</span><div><strong>Score updates</strong><small>Tested + active GroupMe topic</small></div><em>Checking</em></a>
+            </div>
+
+            <div class="live-readiness-launch-summary" id="readinessLaunchSummary"><strong>Setup in progress</strong><span>Complete the checklist above to reach the game-day ready state.</span></div>
             <div class="live-dashboard-actions live-overview-actions">
-              <a id="createScrimmageLink" class="live-primary-link" href="live-sandbox.html?new=1">Start a new game</a>
+              <a id="createScrimmageLink" class="live-primary-link" data-readiness="checking" href="live-sandbox.html?new=1">Start a new game</a>
               <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
               <button id="enterScorerCodeButton" type="button" hidden>Enter scorer code</button>
             </div>
@@ -229,11 +239,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.4"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.4"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.4"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.4"></script>
-  <script src="js/live-dashboard-v7-57-4.js?v=7.57.4"></script>
+  <script src="config/live-sandbox.js?v=7.57.5"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.5"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.5"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.5"></script>
+  <script src="js/live-dashboard-v7-57-5.js?v=7.57.5"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

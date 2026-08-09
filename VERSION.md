@@ -1,1 +1,1 @@
-# WPI 7.57.4 — Self-Service Tournament GroupMe Setup
+# WPI 7.57.5 — Guided Team Launch & Readiness
