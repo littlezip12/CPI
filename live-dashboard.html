@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-7.css?v=7.57.7">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-8.css?v=7.57.8">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -97,11 +97,20 @@
               <div><p class="live-section-kicker">Games on deck</p><h2>Game-Day Hub</h2></div>
               <button id="addGameDayButton" class="live-game-day-add" type="button">+ Add game</button>
             </div>
-            <p class="live-panel-help">Tournament games can be added manually whenever a schedule is missing or delayed. WPI keeps that scored game as the canonical record and will reconcile it to the official tournament schedule later instead of creating a duplicate.</p>
+            <p class="live-panel-help">Official tournament games flow from WPI's Tournament section into Game Day. If a schedule is missing or delayed, add the tournament game manually; when the official matchup appears, WPI reconciles it to that same scored record instead of creating a duplicate.</p>
             <div class="live-game-day-paths" aria-label="Ways to add a game">
-              <div><span aria-hidden="true">◆</span><strong>Tournament game</strong><small>Manual fallback now · official schedule reconciliation next</small></div>
+              <div><span aria-hidden="true">◆</span><strong>Tournament game</strong><small>Automatic from the WPI schedule · manual fallback always available</small></div>
               <div><span aria-hidden="true">○</span><strong>Friendly</strong><small>Scrimmage, practice, or any non-tournament game entered manually</small></div>
             </div>
+            <section class="live-wpi-schedule-card" aria-label="WPI tournament schedule connection">
+              <div class="live-wpi-schedule-copy">
+                <div class="live-wpi-schedule-title"><strong>WPI tournament schedule</strong><span id="wpiScheduleStatusPill" class="live-wpi-schedule-pill" data-state="loading">Checking</span></div>
+                <span id="wpiScheduleSummary">Checking the official WPI tournament schedule…</span>
+                <small id="wpiScheduleDetail">Official games can flow into Game Day automatically. Manual tournament entry remains available if a schedule is missing or delayed.</small>
+              </div>
+              <div class="live-wpi-schedule-actions"><button id="syncWpiScheduleButton" type="button">Check WPI schedule</button></div>
+              <p id="wpiScheduleSyncMessage" class="live-validation-message" role="status"></p>
+            </section>
             <div class="live-game-day-toolbar">
               <div><strong id="gameDayQueueCount">0 games on deck</strong><small id="gameDayQueueSummary">Upcoming, ready and live games stay here.</small></div>
               <button id="refreshGameDayButton" type="button">Refresh</button>
@@ -295,11 +304,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.7"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.7"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.7"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.7"></script>
-  <script src="js/live-dashboard-v7-57-7.js?v=7.57.7"></script>
+  <script src="config/live-sandbox.js?v=7.57.8"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.8"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.8"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.8"></script>
+  <script src="js/live-dashboard-v7-57-8.js?v=7.57.8"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

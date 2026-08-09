@@ -14,15 +14,15 @@ def sha256(path):
 
 site = json.loads((ROOT / "config/site-release.json").read_text())
 dashboard_html = (ROOT / "live-dashboard.html").read_text()
-dashboard_js = (ROOT / ("js/live-dashboard-v7-57-7.js" if (ROOT / "js/live-dashboard-v7-57-7.js").exists() else "js/live-dashboard-v7-57-6.js")).read_text()
-css = (ROOT / ("css/live-sandbox-v7-57-7.css" if (ROOT / "css/live-sandbox-v7-57-7.css").exists() else "css/live-sandbox-v7-57-6.css")).read_text()
+dashboard_js = (ROOT / ("js/live-dashboard-v7-57-8.js" if (ROOT / "js/live-dashboard-v7-57-8.js").exists() else ("js/live-dashboard-v7-57-7.js" if (ROOT / "js/live-dashboard-v7-57-7.js").exists() else "js/live-dashboard-v7-57-6.js"))).read_text()
+css = (ROOT / ("css/live-sandbox-v7-57-8.css" if (ROOT / "css/live-sandbox-v7-57-8.css").exists() else ("css/live-sandbox-v7-57-7.css" if (ROOT / "css/live-sandbox-v7-57-7.css").exists() else "css/live-sandbox-v7-57-6.css"))).read_text()
 migration = (ROOT / "supabase/migrations/202608080005_game_day_hub_universal_game_model.sql").read_text()
 sandbox_html = (ROOT / "live-sandbox.html").read_text()
 
-check("site version", site.get("version") in {"7.57.6","7.57.7"})
-check("release name", site.get("name") in {"Game-Day Hub & Universal Game Model","Game-Day Identity & Launch Reliability"})
+check("site version", site.get("version") in {"7.57.6","7.57.7","7.57.8"})
+check("release name", site.get("name") in {"Game-Day Hub & Universal Game Model","Game-Day Identity & Launch Reliability","Tournament Schedule Integration & Reconciliation"})
 for key in ["liveScoringDashboardRelease","liveScoringTeamAdminRelease","liveScoringGameDayHubRelease"]:
-    check(f"release marker {key}", site.get(key) in {"7.57.6","7.57.7"})
+    check(f"release marker {key}", site.get(key) in {"7.57.6","7.57.7","7.57.8"})
 for key in ["liveScoringUniversalGameModelRelease","liveScoringManualTournamentFallbackRelease","liveScoringReconciliationFoundationRelease"]:
     check(f"release marker {key}", site.get(key) == "7.57.6")
 check("guided readiness remains 7.57.5", site.get("liveScoringGuidedLaunchRelease") == "7.57.5")
@@ -33,20 +33,22 @@ check("roster import remains 7.57.1", site.get("liveScoringRosterImportRelease")
 for token in [
     'id="dashboardGameDay"', 'Game-Day Hub', 'id="addGameDayButton"', 'id="gameDayQueue"',
     'Tournament game', 'id="gameDayDialog"', 'Save to Game Day',
-    'Save &amp; start', 'Reconciliation-ready.', 'official tournament schedule later instead of creating a duplicate',
+    'Save &amp; start', 'Reconciliation-ready.',
     'id="gameTeamLogoPreview"', 'id="gameOpponentLogoPreview"'
 ]:
     check(f"dashboard UI {token}", token in dashboard_html)
-check("dashboard JS wired", ('js/live-dashboard-v7-57-6.js?v=7.57.6' in dashboard_html or 'js/live-dashboard-v7-57-7.js?v=7.57.7' in dashboard_html))
-check("7.57.6 CSS wired", ('css/live-sandbox-v7-57-6.css?v=7.57.6' in dashboard_html or 'css/live-sandbox-v7-57-7.css?v=7.57.7' in dashboard_html))
+check("dashboard JS wired", ('js/live-dashboard-v7-57-6.js?v=7.57.6' in dashboard_html or 'js/live-dashboard-v7-57-7.js?v=7.57.7' in dashboard_html or 'js/live-dashboard-v7-57-8.js?v=7.57.8' in dashboard_html))
+check("7.57.6 CSS wired", ('css/live-sandbox-v7-57-6.css?v=7.57.6' in dashboard_html or 'css/live-sandbox-v7-57-7.css?v=7.57.7' in dashboard_html or 'css/live-sandbox-v7-57-8.css?v=7.57.8' in dashboard_html))
 check("history retained for build phase", 'History section will be replaced by the permanent Games &amp; Results experience before pilot completion.' in dashboard_html)
+check("reconciliation copy preserved", ('official tournament schedule later instead of creating a duplicate' in dashboard_html or "reconciles it to that same scored record instead of creating a duplicate" in dashboard_html))
+check("official link source label preserved", ('Official tournament link verified' in dashboard_js or 'Manual tournament · matched to WPI schedule' in dashboard_js or 'WPI tournament schedule' in dashboard_js))
 
 for token in [
     'function loadGameCatalog()', 'fetch("clubs.json"', 'fetch("data/tournaments/public-hub.json"',
     'function openGameDayDialog(game = null)', 'function saveGameDay({startAfter=false} = {})',
-    ('live_create_manual_game_v3' if site.get('version') == '7.57.7' else 'live_create_manual_game_v2'), ('live_update_planned_game_v2' if site.get('version') == '7.57.7' else 'live_update_planned_game_v1'), 'live_cancel_planned_game_v1',
+    ('live_create_manual_game_v3' if site.get('version') in {'7.57.7','7.57.8'} else 'live_create_manual_game_v2'), ('live_update_planned_game_v2' if site.get('version') in {'7.57.7','7.57.8'} else 'live_update_planned_game_v1'), 'live_cancel_planned_game_v1',
     'function renderGameDayHub()', 'Manual tournament · official link pending',
-    'Official tournament link verified', 'Final games move to History',
+    'Final games move to History',
     'A similar ${payload.kind === "tournament" ? "tournament " : ""}game is already on Game Day',
     'No duplicate was added.', 'opponentWpiTeamId', 'teamLogoUrl', 'opponentLogoUrl'
 ]:
@@ -109,7 +111,7 @@ if errors:
     sys.exit(1)
 
 print("WPI LIVE GAME-DAY HUB 7.57.6 TEST PASSED")
-print(" - Game-Day Hub foundation supports manual game creation; 7.57.7 presents Tournament or Friendly only" if site.get("version") == "7.57.7" else " - Game-Day Hub supports manual Tournament Game, Scrimmage, and Friendly creation")
+print(" - Game-Day Hub foundation supports manual game creation; 7.57.7+ presents Tournament or Friendly only" if site.get("version") in {"7.57.7","7.57.8"} else " - Game-Day Hub supports manual Tournament Game, Scrimmage, and Friendly creation")
 print(" - Known WPI teams can carry existing logos into manual matchup cards")
 print(" - Manual tournament games are provisional canonical records built for later official-schedule reconciliation")
 print(" - Reconciliation attaches official identifiers to the same scored record and refuses an already-linked duplicate")
