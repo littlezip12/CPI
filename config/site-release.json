@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.57.2",
-  "name": "Team Access & Admin Invitations",
+  "version": "7.57.3",
+  "name": "Multi-Team & Team Switching",
   "date": "2026-08-08",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds complete team access management with member roles, pending invite reissue/revoke, removal, and a separately granted Team Admin permission for tournament GroupMe management. Owner-only GroupMe group browsing remains protected; designated Admins may manage topics only inside the Owner-approved GroupMe. Also fixes roster-import failure UX so failed extraction never masquerades an existing roster as a detected draft. Preserves validated 7.57.1 roster vision and 7.56.15 scoring/delivery reliability.",
+  "notes": "Adds secure multi-team membership discovery, persistent team switching, owner-only additional team creation, and team-context-safe dashboard/scoring navigation. Switching is membership-validated server-side and reloads the workspace to prevent cross-team state leakage. Preserves 7.57.2 Team Access, 7.57.1 roster vision, and 7.56.15 scoring/GroupMe delivery reliability.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -86,8 +86,8 @@
   "liveScoringExtraTimeRelease": "7.56.8",
   "liveScoringShootoutRelease": "7.56.8",
   "liveScoringConnectedBackendRelease": "7.56.8",
-  "liveScoringDashboardRelease": "7.57.2",
-  "liveScoringRoleSecurityRelease": "7.57.2",
+  "liveScoringDashboardRelease": "7.57.3",
+  "liveScoringRoleSecurityRelease": "7.57.3",
   "liveScoringPersistenceRelease": "7.56.15",
   "liveScoringGroupMeRelease": "7.56.8",
   "liveScoringDeliveryRetryRelease": "7.56.8",
@@ -105,7 +105,9 @@
   "liveScoringTeamBrandingUxRelease": "7.56.9",
   "liveScoringAutomaticSummaryRelease": "7.56.15",
   "liveScoringTournamentScaleSummaryRelease": "7.56.15",
-  "liveScoringTeamAdminRelease": "7.57.2",
+  "liveScoringTeamAdminRelease": "7.57.3",
   "liveScoringRosterImportRelease": "7.57.1",
-  "liveScoringOnboardingRelease": "7.57.2"
+  "liveScoringOnboardingRelease": "7.57.3",
+  "liveScoringMultiTeamRelease": "7.57.3",
+  "liveScoringTeamSwitchingRelease": "7.57.3"
 }

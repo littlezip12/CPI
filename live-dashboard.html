@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-2.css?v=7.57.2">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-3.css?v=7.57.3">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -23,6 +23,11 @@
         <p id="dashboardSubtitle">Team setup, game-day scoring and score updates.</p>
       </div>
       <div class="live-dashboard-account">
+        <div class="live-team-switcher" id="teamSwitcherWrap" hidden>
+          <small>Team workspace</small>
+          <select id="dashboardTeamSwitcher" aria-label="Switch team workspace"><option value="">Loading teams…</option></select>
+        </div>
+        <button id="createTeamButton" class="live-add-team-button" type="button" hidden>+ Team</button>
         <span id="dashboardRoleBadge">Connecting…</span>
         <button id="dashboardSignOutButton" type="button">Sign out</button>
       </div>
@@ -194,6 +199,20 @@
       </form>
     </dialog>
 
+    <dialog id="createTeamDialog" class="live-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Multi-team workspace</p><h2>Add another team</h2></div><button value="cancel" aria-label="Close add team dialog">Close</button></div>
+        <p class="live-team-switch-summary">Create a separate team workspace with its own roster, access, games and GroupMe destination. Only an existing Team Owner can create another team.</p>
+        <div class="live-create-team-form">
+          <label>Team name<input id="newTeamName" type="text" maxlength="100" autocomplete="organization" placeholder="e.g. Lamorinda B 14U Boys"></label>
+          <label>Age group<select id="newTeamAgeGroup"><option value="10U">10U</option><option value="12U">12U</option><option value="14U" selected>14U</option><option value="16U">16U</option><option value="18U">18U</option></select></label>
+          <label>Season<input id="newTeamSeason" type="text" maxlength="20" value="2026-2027" readonly></label>
+        </div>
+        <p id="createTeamMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="confirmCreateTeamButton" type="button">Create team</button></div>
+      </form>
+    </dialog>
+
     <dialog id="dashboardScorerCodeDialog" class="live-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Game-scoped access</p><h2>Take over scoring</h2></div><button value="cancel" aria-label="Close scorer code dialog">Close</button></div>
@@ -206,9 +225,10 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.2"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.2"></script>
-  <script src="js/live-dashboard-v7-57-2.js?v=7.57.2"></script>
+  <script src="config/live-sandbox.js?v=7.57.3"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.3"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.3"></script>
+  <script src="js/live-dashboard-v7-57-3.js?v=7.57.3"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
