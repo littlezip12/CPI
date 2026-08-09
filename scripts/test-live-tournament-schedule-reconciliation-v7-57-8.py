@@ -15,10 +15,10 @@ builder=(ROOT/'scripts/build-live-tournament-schedule-index.py').read_text()
 hub=json.loads((ROOT/'data/tournaments/public-hub.json').read_text())
 index=json.loads((ROOT/'data/live/tournament-schedule-index.json').read_text())
 
-check('version',site.get('version') in {'7.57.8','7.57.9','7.57.10'})
+check('version',site.get('version') in {'7.57.8','7.57.9','7.57.10','7.57.11'})
 check('name',site.get('name') in {'Tournament Schedule Integration & Reconciliation','Scorer Assignments & Game-Day Operations'})
 for key in ['liveScoringDashboardRelease','liveScoringTeamAdminRelease','liveScoringGameDayHubRelease']:
-    check(key,site.get(key) in {'7.57.8','7.57.9','7.57.10'})
+    check(key,site.get(key) in {'7.57.8','7.57.9','7.57.10','7.57.11'})
 for key in ['liveScoringTournamentScheduleIntegrationRelease','liveScoringTournamentReconciliationRelease']:
     check(key,site.get(key)=='7.57.8')
 check('dashboard js wired',('js/live-dashboard-v7-57-8.js?v=7.57.8' in html or 'js/live-dashboard-v7-57-9.js?v=7.57.9' in html))

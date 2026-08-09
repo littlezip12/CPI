@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.10">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.11">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -95,7 +95,6 @@
 
             <div class="live-readiness-launch-summary" id="readinessLaunchSummary"><strong>Setup in progress</strong><span>Complete the checklist above to reach the game-day ready state.</span></div>
             <div class="live-dashboard-actions live-overview-actions">
-              <a id="createScrimmageLink" class="live-primary-link" data-readiness="checking" href="#dashboardGameDay">Add a game</a>
               <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
               <button id="enterScorerCodeButton" type="button" hidden>Enter scorer code</button>
             </div>
@@ -284,7 +283,7 @@
           <label id="gameAssignedScorerRow">Scorer (optional)<select id="gameAssignedScorer"><option value="">Unassigned</option></select><small>Assign a permanent Owner, Admin, or Scorer now. Unassigned games remain available for a permanent scorer to claim.</small></label>
         </div>
         <p id="gameDayDialogMessage" class="live-validation-message" role="status"></p>
-        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveGameDayButton" type="button">Save to Game Day</button><button id="saveStartGameDayButton" type="button">Save &amp; start</button></div>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveGameDayButton" type="button">Save to Game Day</button><button id="saveStartGameDayButton" type="button">Start game</button></div>
       </form>
     </dialog>
 
@@ -314,11 +313,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.10"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.10"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.10"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.10"></script>
-  <script src="js/live-dashboard-v7-57-10.js?v=7.57.10"></script>
+  <script src="config/live-sandbox.js?v=7.57.11"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.11"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.11"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.11"></script>
+  <script src="js/live-dashboard-v7-57-11.js?v=7.57.11"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
