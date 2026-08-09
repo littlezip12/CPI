@@ -1,1 +1,1 @@
-# WPI 7.57.8 — Tournament Schedule Integration & Reconciliation
+# WPI 7.57.9 — Scorer Assignments & Game-Day Operations

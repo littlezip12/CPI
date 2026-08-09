@@ -8,20 +8,22 @@ def check(name,cond):
 def sha(path): return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
 site=json.loads((ROOT/'config/site-release.json').read_text())
 html=(ROOT/'live-dashboard.html').read_text()
-js=(ROOT/('js/live-dashboard-v7-57-8.js' if (ROOT/'js/live-dashboard-v7-57-8.js').exists() else 'js/live-dashboard-v7-57-7.js')).read_text()
-css=(ROOT/('css/live-sandbox-v7-57-8.css' if (ROOT/'css/live-sandbox-v7-57-8.css').exists() else 'css/live-sandbox-v7-57-7.css')).read_text()
+js=(ROOT/('js/live-dashboard-v7-57-9.js' if (ROOT/'js/live-dashboard-v7-57-9.js').exists() else ('js/live-dashboard-v7-57-8.js' if (ROOT/'js/live-dashboard-v7-57-8.js').exists() else 'js/live-dashboard-v7-57-7.js'))).read_text()
+css=(ROOT/('css/live-sandbox-v7-57-9.css' if (ROOT/'css/live-sandbox-v7-57-9.css').exists() else ('css/live-sandbox-v7-57-8.css' if (ROOT/'css/live-sandbox-v7-57-8.css').exists() else 'css/live-sandbox-v7-57-7.css'))).read_text()
 mig=(ROOT/'supabase/migrations/202608080006_game_day_identity_launch_reliability.sql').read_text()
 alias=json.loads((ROOT/'data/live/team-identity-aliases.json').read_text())
-check('version',site.get('version') in {'7.57.7','7.57.8'})
-check('name',site.get('name') in {'Game-Day Identity & Launch Reliability','Tournament Schedule Integration & Reconciliation'})
-for key in ['liveScoringDashboardRelease','liveScoringTeamAdminRelease','liveScoringGameDayHubRelease','liveScoringGameDayIdentityRelease','liveScoringGameDayLaunchReliabilityRelease']:
-    check(key,site.get(key) in {'7.57.7','7.57.8'})
+check('version',site.get('version') in {'7.57.7','7.57.8','7.57.9'})
+check('name',site.get('name') in {'Game-Day Identity & Launch Reliability','Tournament Schedule Integration & Reconciliation','Scorer Assignments & Game-Day Operations'})
+for key in ['liveScoringDashboardRelease','liveScoringTeamAdminRelease','liveScoringGameDayHubRelease']:
+    check(key,site.get(key) in {'7.57.7','7.57.8','7.57.9'})
+for key in ['liveScoringGameDayIdentityRelease','liveScoringGameDayLaunchReliabilityRelease']:
+    check(key,site.get(key)=='7.57.7')
 check('only two visible types',html.count('name="gameKind"')==2 and 'value="tournament"' in html and 'value="friendly"' in html and 'value="scrimmage"' not in html)
 check('friendly covers scrimmage', 'Scrimmage, practice, or any non-tournament game' in html)
 check('typing hint', 'id="gameOpponentMatchHint"' in html)
-check('new js wired',('js/live-dashboard-v7-57-7.js?v=7.57.7' in html or 'js/live-dashboard-v7-57-8.js?v=7.57.8' in html))
-check('new css wired',('css/live-sandbox-v7-57-7.css?v=7.57.7' in html or 'css/live-sandbox-v7-57-8.css?v=7.57.8' in html))
-for token in ['resolveGameDayTeamIdentity','GAME_DAY_SQUAD_TOKENS','data/live/team-identity-aliases.json','Matched WPI club: ${identity.displayName}','opponentSourceName','opponentWpiClubId','live_create_manual_game_v3','live_update_planned_game_v2',('live_game_day_queue_v3' if site.get('version')=='7.57.8' else 'live_game_day_queue_v2'),'live_prepare_game_start_v1','Preparing scorer control…','prepareGameDayStart(gameId)']:
+check('new js wired',('js/live-dashboard-v7-57-7.js?v=7.57.7' in html or 'js/live-dashboard-v7-57-8.js?v=7.57.8' in html or 'js/live-dashboard-v7-57-9.js?v=7.57.9' in html))
+check('new css wired',('css/live-sandbox-v7-57-7.css?v=7.57.7' in html or 'css/live-sandbox-v7-57-8.css?v=7.57.8' in html or 'css/live-sandbox-v7-57-9.css?v=7.57.9' in html))
+for token in ['resolveGameDayTeamIdentity','GAME_DAY_SQUAD_TOKENS','data/live/team-identity-aliases.json','Matched WPI club: ${identity.displayName}','opponentSourceName','opponentWpiClubId','live_create_manual_game_v3','live_update_planned_game_v2',('live_game_day_queue_v4' if site.get('version')=='7.57.9' else ('live_game_day_queue_v3' if site.get('version')=='7.57.8' else 'live_game_day_queue_v2')),('live_prepare_game_start_v2' if site.get('version')=='7.57.9' else 'live_prepare_game_start_v1'),'Preparing scorer control…','prepareGameDayStart(gameId)']:
     check('js '+token,token in js)
 clubs={row['canonicalClubSlug']:row for row in alias.get('clubs',[])}
 check('Stanford aliases','stanford' in clubs and clubs['stanford'].get('displayName')=='Stanford' and clubs['stanford'].get('squadAliases',{}).get('black')=='B')

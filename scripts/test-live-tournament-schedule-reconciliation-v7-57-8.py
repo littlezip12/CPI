@@ -8,19 +8,21 @@ def check(name,cond):
 def sha(path): return hashlib.sha256((ROOT/path).read_bytes()).hexdigest()
 site=json.loads((ROOT/'config/site-release.json').read_text())
 html=(ROOT/'live-dashboard.html').read_text()
-js=(ROOT/'js/live-dashboard-v7-57-8.js').read_text()
-css=(ROOT/'css/live-sandbox-v7-57-8.css').read_text()
+js=(ROOT/('js/live-dashboard-v7-57-9.js' if (ROOT/'js/live-dashboard-v7-57-9.js').exists() else 'js/live-dashboard-v7-57-8.js')).read_text()
+css=(ROOT/('css/live-sandbox-v7-57-9.css' if (ROOT/'css/live-sandbox-v7-57-9.css').exists() else 'css/live-sandbox-v7-57-8.css')).read_text()
 mig=(ROOT/'supabase/migrations/202608080007_tournament_schedule_integration_reconciliation.sql').read_text()
 builder=(ROOT/'scripts/build-live-tournament-schedule-index.py').read_text()
 hub=json.loads((ROOT/'data/tournaments/public-hub.json').read_text())
 index=json.loads((ROOT/'data/live/tournament-schedule-index.json').read_text())
 
-check('version',site.get('version')=='7.57.8')
-check('name',site.get('name')=='Tournament Schedule Integration & Reconciliation')
-for key in ['liveScoringDashboardRelease','liveScoringTeamAdminRelease','liveScoringGameDayHubRelease','liveScoringTournamentScheduleIntegrationRelease','liveScoringTournamentReconciliationRelease']:
+check('version',site.get('version') in {'7.57.8','7.57.9'})
+check('name',site.get('name') in {'Tournament Schedule Integration & Reconciliation','Scorer Assignments & Game-Day Operations'})
+for key in ['liveScoringDashboardRelease','liveScoringTeamAdminRelease','liveScoringGameDayHubRelease']:
+    check(key,site.get(key) in {'7.57.8','7.57.9'})
+for key in ['liveScoringTournamentScheduleIntegrationRelease','liveScoringTournamentReconciliationRelease']:
     check(key,site.get(key)=='7.57.8')
-check('dashboard js wired','js/live-dashboard-v7-57-8.js?v=7.57.8' in html)
-check('dashboard css wired','css/live-sandbox-v7-57-8.css?v=7.57.8' in html)
+check('dashboard js wired',('js/live-dashboard-v7-57-8.js?v=7.57.8' in html or 'js/live-dashboard-v7-57-9.js?v=7.57.9' in html))
+check('dashboard css wired',('css/live-sandbox-v7-57-8.css?v=7.57.8' in html or 'css/live-sandbox-v7-57-9.css?v=7.57.9' in html))
 check('schedule card markup',all(token in html for token in ['id="wpiScheduleStatusPill"','id="wpiScheduleSummary"','id="syncWpiScheduleButton"','id="wpiScheduleSyncMessage"']))
 check('two game types remain',html.count('name="gameKind"')==2 and 'value="tournament"' in html and 'value="friendly"' in html and 'value="scrimmage"' not in html)
 check('manual fallback copy','manual fallback always available' in html)
@@ -29,7 +31,7 @@ for token in [
     'data/live/tournament-schedule-index.json','officialGameForWorkspace','participantWorkspaceMatchScore',
     'manualOfficialMatchConfidence','syncTournamentSchedule','autoSyncTournamentSchedule',
     'live_sync_official_tournament_game_v1','live_confirm_tournament_reconciliation_v1',
-    'live_dismiss_tournament_reconciliation_v1','live_game_day_queue_v3',
+    'live_dismiss_tournament_reconciliation_v1',('live_game_day_queue_v4' if site.get('version')=='7.57.9' else 'live_game_day_queue_v3'),
     'Possible WPI schedule match · review required','Manual tournament · matched to WPI schedule',
     'score conflict needs review','candidate_manual_game_id'
 ]: check('js '+token,token in js)
