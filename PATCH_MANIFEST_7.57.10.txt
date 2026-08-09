@@ -1,0 +1,69 @@
+WPI 7.57.10 — Game Reliability & Role-Safe Access
+
+Built from pushed baseline: CPI-main - 2026-08-09T093501.969.zip
+
+Key scope:
+- atomic Game-Day save + optional scorer assignment
+- post-save persistence verification and scorer-state launch preflight
+- Viewer-first invitations enforced server-side
+- simplified Viewer and Scorer experiences; full Owner/Admin administration preserved
+- no Edge Function changes and no new secrets
+
+Changed files:
+- LIVE_GAME_RELIABILITY_ROLE_SAFE_ACCESS_SETUP_7.57.10.md
+- VERSION.md
+- WPI_7.57.10_GAME_RELIABILITY_ROLE_SAFE_ACCESS_HANDOFF.md
+- config/live-sandbox.example.js
+- config/live-sandbox.js
+- config/site-release.json
+- css/live-sandbox-v7-57-10.css
+- js/live-dashboard-v7-57-10.js
+- js/live-login-v7-57-10.js
+- live-dashboard.html
+- live-login.html
+- live-password-reset.html
+- live-sandbox.html
+- live-scorer-handoff.html
+- release-check
+- release-check-live-7.57.10
+- scripts/test-boys-post-jo-rankings-v7-52-0.py
+- scripts/test-brand-teams-section-landing-v7-53-4.py
+- scripts/test-club-family-cleanup-v7-52-12.py
+- scripts/test-club-locations-v7-52-5.py
+- scripts/test-club-logos-v7-52-6.py
+- scripts/test-club-profile-experience-v7-53-0.py
+- scripts/test-club-websites-v7-52-14.py
+- scripts/test-club-websites-v7-52-16.py
+- scripts/test-evan-cousineau-v7-54-7.py
+- scripts/test-girls-futures-super-finals-v7-54-11.py
+- scripts/test-girls-post-jo-rankings-v7-52-2.py
+- scripts/test-homepage-simplification-v7-54-12.py
+- scripts/test-jo-logo-delivery-v7-52-9.py
+- scripts/test-jo-profile-bridge-v7-52-11.py
+- scripts/test-jo-recap-v7-54-16.py
+- scripts/test-jo-results-browser-v7-52-1.py
+- scripts/test-jo-results-links-v7-52-7.py
+- scripts/test-jo-session-3-v7-54-5.py
+- scripts/test-kap7-international-v7-54-9.py
+- scripts/test-kap7-logo-mapping-v7-54-10.py
+- scripts/test-kern-skip-separation-v7-52-13.py
+- scripts/test-landing-page-clarity-v7-54-13.py
+- scripts/test-live-game-day-hub-v7-57-6.py
+- scripts/test-live-game-day-identity-launch-v7-57-7.py
+- scripts/test-live-game-reliability-role-safe-access-v7-57-10.py
+- scripts/test-live-tournament-schedule-reconciliation-v7-57-8.py
+- scripts/test-multi-season-foundation-v7-55-1.py
+- scripts/test-public-tournament-hub-v7-54-4.py
+- scripts/test-release-integrity-v7-52-15.py
+- scripts/test-san-diego-county-cup-v7-54-8.py
+- scripts/test-team-directory-curation-v7-54-14.py
+- scripts/test-team-directory-logos-v7-53-6.js
+- scripts/test-team-hero-compact-v7-54-15.py
+- scripts/test-team-profile-experience-v7-53-1.py
+- scripts/test-tournament-platform-v7-54-0.py
+- scripts/test-tournament-platform-v7-54-1.py
+- scripts/test-tournament-seasons-v7-55-0.py
+- scripts/test-wpi-homepage-v7-52-4.py
+- scripts/validate-tournament-data.py
+- scripts/validate-tournament-operations.py
+- supabase/migrations/202608090002_game_reliability_role_safe_access.sql

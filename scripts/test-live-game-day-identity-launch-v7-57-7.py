@@ -12,10 +12,10 @@ js=(ROOT/('js/live-dashboard-v7-57-9.js' if (ROOT/'js/live-dashboard-v7-57-9.js'
 css=(ROOT/('css/live-sandbox-v7-57-9.css' if (ROOT/'css/live-sandbox-v7-57-9.css').exists() else ('css/live-sandbox-v7-57-8.css' if (ROOT/'css/live-sandbox-v7-57-8.css').exists() else 'css/live-sandbox-v7-57-7.css'))).read_text()
 mig=(ROOT/'supabase/migrations/202608080006_game_day_identity_launch_reliability.sql').read_text()
 alias=json.loads((ROOT/'data/live/team-identity-aliases.json').read_text())
-check('version',site.get('version') in {'7.57.7','7.57.8','7.57.9'})
+check('version',site.get('version') in {'7.57.7','7.57.8','7.57.9','7.57.10'})
 check('name',site.get('name') in {'Game-Day Identity & Launch Reliability','Tournament Schedule Integration & Reconciliation','Scorer Assignments & Game-Day Operations'})
 for key in ['liveScoringDashboardRelease','liveScoringTeamAdminRelease','liveScoringGameDayHubRelease']:
-    check(key,site.get(key) in {'7.57.7','7.57.8','7.57.9'})
+    check(key,site.get(key) in {'7.57.7','7.57.8','7.57.9','7.57.10'})
 for key in ['liveScoringGameDayIdentityRelease','liveScoringGameDayLaunchReliabilityRelease']:
     check(key,site.get(key)=='7.57.7')
 check('only two visible types',html.count('name="gameKind"')==2 and 'value="tournament"' in html and 'value="friendly"' in html and 'value="scrimmage"' not in html)

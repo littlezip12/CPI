@@ -1,1 +1,1 @@
-# WPI 7.57.9 — Scorer Assignments & Game-Day Operations
+# WPI 7.57.10 — Game Reliability & Role-Safe Access

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-9.css?v=7.57.9">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.10">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -63,6 +63,15 @@
 
         <div class="live-dashboard-main">
           <div hidden aria-hidden="true"><span id="dashboardRoleMetric">—</span><span id="dashboardGameCount">0</span><span id="dashboardDeliveryMetric">Not connected</span></div>
+          <section class="live-panel live-role-home" id="dashboardRoleHome" hidden>
+            <div class="live-panel-heading">
+              <div><p class="live-section-kicker" id="roleHomeKicker">WPI Live</p><h2 id="roleHomeTitle">Your games</h2></div>
+              <button id="refreshRoleHomeButton" type="button">Refresh</button>
+            </div>
+            <p class="live-panel-help" id="roleHomeHelp">Choose a game to follow the score, game clock and play-by-play.</p>
+            <div id="roleHomeGames" class="live-role-game-list"><p class="live-empty-state">Loading games…</p></div>
+          </section>
+
           <section class="live-panel live-team-readiness-card" id="dashboardOverview">
             <div class="live-panel-heading live-readiness-heading">
               <div><p class="live-section-kicker">Guided team launch</p><h2 id="readinessHeadline">Getting your team game-day ready</h2></div>
@@ -166,18 +175,17 @@
               <p class="live-panel-help">Permanent team membership is managed here. Game-day handoff remains separate, temporary, and exactly one scorer controls a game at a time.</p>
               <div id="teamAccessManagerPanel" hidden>
                 <section class="live-access-section">
-                  <div class="live-access-section-heading"><div><strong>Team members</strong><small>Owner, Admin, Scorer and Viewer roles</small></div></div>
+                  <div class="live-access-section-heading"><div><strong>Team members</strong><small>Owner, Admin, Scorer and Viewer roles · new members always start as Viewer</small></div></div>
                   <div id="teamAccessMembers" class="live-access-list"><p class="live-empty-state">Loading team members…</p></div>
                 </section>
 
                 <section class="live-access-section live-access-invite-section">
-                  <div class="live-access-section-heading"><div><strong>Invite someone</strong><small>Invite links expire after 14 days</small></div></div>
-                  <div class="live-form-grid live-invite-form">
+                  <div class="live-access-section-heading"><div><strong>Invite someone</strong><small>Everyone joins as Viewer · invite links expire after 14 days</small></div></div>
+                  <div class="live-form-grid live-invite-form live-invite-form--viewer-first">
                     <label>Email<input id="inviteEmail" type="email" autocomplete="email" placeholder="person@example.com"></label>
-                    <label>Role<select id="inviteRole"><option value="scorer">Scorer</option><option value="viewer">Viewer</option><option value="admin">Admin</option></select></label>
+                    <div class="live-access-default-role"><strong>Viewer access first</strong><small>After they join, an Owner/Admin can promote them to Scorer. Only the Owner can promote an Admin.</small></div>
                   </div>
-                  <label class="live-access-permission" id="inviteGroupMePermissionRow"><input id="inviteCanManageGroupMe" type="checkbox"> <span><strong>Can manage tournament GroupMe</strong><small>May manage topics only inside the GroupMe already approved by the Team Owner. Never exposes the Owner credential or unrelated groups.</small></span></label>
-                  <div class="live-dashboard-actions"><button id="createInviteButton" type="button">Create invite</button></div>
+                  <div class="live-dashboard-actions"><button id="createInviteButton" type="button">Create viewer invite</button></div>
                   <p id="inviteMessage" class="live-validation-message" role="status"></p>
                   <div id="inviteResult" class="live-invite-result" hidden></div>
                 </section>
@@ -306,11 +314,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.9"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.9"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.9"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.9"></script>
-  <script src="js/live-dashboard-v7-57-9.js?v=7.57.9"></script>
+  <script src="config/live-sandbox.js?v=7.57.10"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.10"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.10"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.10"></script>
+  <script src="js/live-dashboard-v7-57-10.js?v=7.57.10"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

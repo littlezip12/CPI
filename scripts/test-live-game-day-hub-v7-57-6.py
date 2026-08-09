@@ -19,10 +19,10 @@ css = (ROOT / ("css/live-sandbox-v7-57-9.css" if (ROOT / "css/live-sandbox-v7-57
 migration = (ROOT / "supabase/migrations/202608080005_game_day_hub_universal_game_model.sql").read_text()
 sandbox_html = (ROOT / "live-sandbox.html").read_text()
 
-check("site version", site.get("version") in {"7.57.6","7.57.7","7.57.8","7.57.9"})
+check("site version", site.get("version") in {"7.57.6","7.57.7","7.57.8","7.57.9","7.57.10"})
 check("release name", site.get("name") in {"Game-Day Hub & Universal Game Model","Game-Day Identity & Launch Reliability","Tournament Schedule Integration & Reconciliation","Scorer Assignments & Game-Day Operations"})
 for key in ["liveScoringDashboardRelease","liveScoringTeamAdminRelease","liveScoringGameDayHubRelease"]:
-    check(f"release marker {key}", site.get(key) in {"7.57.6","7.57.7","7.57.8","7.57.9"})
+    check(f"release marker {key}", site.get(key) in {"7.57.6","7.57.7","7.57.8","7.57.9","7.57.10"})
 for key in ["liveScoringUniversalGameModelRelease","liveScoringManualTournamentFallbackRelease","liveScoringReconciliationFoundationRelease"]:
     check(f"release marker {key}", site.get(key) == "7.57.6")
 check("guided readiness remains 7.57.5", site.get("liveScoringGuidedLaunchRelease") == "7.57.5")
@@ -46,7 +46,7 @@ check("official link source label preserved", ('Official tournament link verifie
 for token in [
     'function loadGameCatalog()', 'fetch("clubs.json"', 'fetch("data/tournaments/public-hub.json"',
     'function openGameDayDialog(game = null)', 'function saveGameDay({startAfter=false} = {})',
-    ('live_create_manual_game_v3' if site.get('version') in {'7.57.7','7.57.8','7.57.9'} else 'live_create_manual_game_v2'), ('live_update_planned_game_v2' if site.get('version') in {'7.57.7','7.57.8','7.57.9'} else 'live_update_planned_game_v1'), 'live_cancel_planned_game_v1',
+    ('live_create_manual_game_v3' if site.get('version') in {'7.57.7','7.57.8','7.57.9','7.57.10'} else 'live_create_manual_game_v2'), ('live_update_planned_game_v2' if site.get('version') in {'7.57.7','7.57.8','7.57.9','7.57.10'} else 'live_update_planned_game_v1'), 'live_cancel_planned_game_v1',
     'function renderGameDayHub()', 'Manual tournament · official link pending',
     ('Final games move to History' if site.get('version')!='7.57.9' else 'live-game-day-assignment'),
     'A similar ${payload.kind === "tournament" ? "tournament " : ""}game is already on Game Day',
@@ -111,7 +111,7 @@ if errors:
     sys.exit(1)
 
 print("WPI LIVE GAME-DAY HUB 7.57.6 TEST PASSED")
-print(" - Game-Day Hub foundation supports manual game creation; 7.57.7+ presents Tournament or Friendly only" if site.get("version") in {"7.57.7","7.57.8","7.57.9"} else " - Game-Day Hub supports manual Tournament Game, Scrimmage, and Friendly creation")
+print(" - Game-Day Hub foundation supports manual game creation; 7.57.7+ presents Tournament or Friendly only" if site.get("version") in {"7.57.7","7.57.8","7.57.9","7.57.10"} else " - Game-Day Hub supports manual Tournament Game, Scrimmage, and Friendly creation")
 print(" - Known WPI teams can carry existing logos into manual matchup cards")
 print(" - Manual tournament games are provisional canonical records built for later official-schedule reconciliation")
 print(" - Reconciliation attaches official identifiers to the same scored record and refuses an already-linked duplicate")
