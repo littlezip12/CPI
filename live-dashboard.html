@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.14">
-  <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.14">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.15">
+  <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.15">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -51,7 +51,7 @@
             <a href="#dashboardTeamAccess"><span aria-hidden="true">◎</span>Team access</a>
             <a href="#dashboardGroupMe"><span aria-hidden="true">◉</span>GroupMe</a>
             <a href="#dashboardGameDay"><span aria-hidden="true">▶</span>Game day</a>
-            <a href="#dashboardGameHistory"><span aria-hidden="true">▤</span>History</a>
+            <a href="#dashboardGameArchive"><span aria-hidden="true">▤</span>Tournaments &amp; weekends</a>
           </nav>
           <div class="live-dashboard-sidebar-help"><strong>WPI Live</strong><span>Ready for game day.</span></div>
         </aside>
@@ -68,7 +68,7 @@
           </section>
 
           <div class="live-mobile-admin-jump" id="mobileAdminJump" hidden>
-            <label for="mobileAdminJumpSelect"><span>Team administration</span><select id="mobileAdminJumpSelect" aria-label="Jump to team administration section"><option value="">Jump to…</option><option value="dashboardGameDay">Game Day</option><option value="dashboardOverview">Team readiness</option><option value="dashboardTeamProfile">Team profile</option><option value="dashboardRoster">Roster</option><option value="dashboardTeamAccess">Team access</option><option value="dashboardGroupMe">GroupMe</option><option value="dashboardGameHistory">History</option></select></label>
+            <label for="mobileAdminJumpSelect"><span>Team administration</span><select id="mobileAdminJumpSelect" aria-label="Jump to team administration section"><option value="">Jump to…</option><option value="dashboardGameDay">Game Day</option><option value="dashboardOverview">Team readiness</option><option value="dashboardTeamProfile">Team profile</option><option value="dashboardRoster">Roster</option><option value="dashboardTeamAccess">Team access</option><option value="dashboardGroupMe">GroupMe</option><option value="dashboardGameArchive">Tournaments &amp; weekends</option></select></label>
           </div>
 
           <section class="live-panel live-team-readiness-card" id="dashboardOverview">
@@ -107,7 +107,7 @@
             <p class="live-panel-help">Official tournament games flow from WPI's Tournament section into Game Day. If a schedule is missing or delayed, add the tournament game manually; when the official matchup appears, WPI reconciles it to that same scored record instead of creating a duplicate.</p>
             <div class="live-game-day-paths" aria-label="Ways to add a game">
               <div><span aria-hidden="true">◆</span><strong>Tournament game</strong><small>Automatic from the WPI schedule · manual fallback always available</small></div>
-              <div><span aria-hidden="true">○</span><strong>Friendly</strong><small>Scrimmage, practice, or any non-tournament game entered manually</small></div>
+              <div><span aria-hidden="true">○</span><strong>Friendly</strong><small>Manual game stored under a named Scrimmage Weekend</small></div>
             </div>
             <section class="live-wpi-schedule-card" aria-label="WPI tournament schedule connection">
               <div class="live-wpi-schedule-copy">
@@ -218,10 +218,10 @@
             </article>
           </section>
 
-          <section class="live-panel live-history-panel" id="dashboardGameHistory">
-            <div class="live-panel-heading"><div><p class="live-section-kicker">Permanent records</p><h2>Game history</h2></div><button id="refreshGamesButton" type="button">Refresh</button></div>
-            <p class="live-panel-help">Completed and cancelled games remain here during the build phase. Upcoming and live games now live in the Game-Day Hub; this History section will be replaced by the permanent Games &amp; Results experience before pilot completion.</p>
-            <div id="gameHistoryList" class="live-game-history-list"><p class="live-empty-state">No connected games yet.</p></div>
+          <section class="live-panel live-history-panel" id="dashboardGameArchive">
+            <div class="live-panel-heading"><div><p class="live-section-kicker">Season archive</p><h2>Tournaments &amp; weekends</h2></div><button id="refreshGameArchiveButton" type="button">Refresh</button></div>
+            <p class="live-panel-help">Games are stored by tournament or named scrimmage weekend so the team can return to a complete weekend record instead of a flat game-history list.</p>
+            <div id="gameSeriesArchive" class="live-game-history-list"><p class="live-empty-state">No tournaments or scrimmage weekends yet.</p></div>
           </section>
         </div>
       </div>
@@ -256,7 +256,7 @@
         <fieldset class="live-game-kind-options" id="gameKindOptions">
           <legend>Game type</legend>
           <label><input type="radio" name="gameKind" value="tournament" checked><span><strong>Tournament game</strong><small>Use this even when WPI has not loaded the matchup yet.</small></span></label>
-          <label><input type="radio" name="gameKind" value="friendly"><span><strong>Friendly</strong><small>Scrimmage, practice, or any non-tournament game you still want to score and retain.</small></span></label>
+          <label><input type="radio" name="gameKind" value="friendly"><span><strong>Friendly</strong><small>Scrimmage, practice, or other non-tournament game stored under a Scrimmage Weekend.</small></span></label>
         </fieldset>
 
         <div id="gameTournamentFields" class="live-game-tournament-fields">
@@ -265,6 +265,12 @@
           </label>
           <label id="gameTournamentOtherLabel" hidden>Tournament name<input id="gameTournamentOther" type="text" maxlength="120" placeholder="Tournament or event name"></label>
           <p class="live-game-reconcile-note"><span aria-hidden="true">↔</span><span><strong>Reconciliation-ready.</strong> If the official matchup appears later, WPI will link it to this game and preserve the score, stats and event log rather than create a second record.</span></p>
+        </div>
+
+        <div id="gameFriendlyFields" class="live-game-tournament-fields" hidden>
+          <label>Scrimmage weekend<input id="gameScrimmageWeekendName" type="text" maxlength="120" list="gameScrimmageWeekendSuggestions" autocomplete="off" placeholder="e.g. August 15 Scrimmage Weekend"></label>
+          <datalist id="gameScrimmageWeekendSuggestions"></datalist>
+          <p class="live-game-reconcile-note"><span aria-hidden="true">▤</span><span><strong>Weekend record.</strong> Use the same weekend name for every friendly played that weekend. WPI will keep those games together for future lookback.</span></p>
         </div>
 
         <div class="live-game-matchup-preview" id="gameMatchupPreview">
@@ -312,11 +318,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.14"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.14"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.14"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.14"></script>
-  <script src="js/live-dashboard-v7-57-14.js?v=7.57.14"></script>
+  <script src="config/live-sandbox.js?v=7.57.15"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.15"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.15"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.15"></script>
+  <script src="js/live-dashboard-v7-57-15.js?v=7.57.15"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

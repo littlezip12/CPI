@@ -1,0 +1,25 @@
+WPI 7.57.15 — Clean Slate & Tournament Weekend Records
+
+Primary changes
+- VERSION.md
+- config/site-release.json
+- config/live-sandbox.js
+- config/live-sandbox.example.js
+- live-dashboard.html
+- live-game.html (cache bust only)
+- live-login.html (cache bust only)
+- live-password-reset.html (cache bust only)
+- live-scorer-handoff.html (cache bust only)
+- js/live-dashboard-v7-57-15.js
+- css/live-dashboard-v7-57-13.css
+- supabase/migrations/202608090004_clean_slate_tournament_weekend_records.sql
+- scripts/test-live-clean-slate-weekend-records-v7-57-15.py
+- release-check-live-7.57.15
+- release-check
+- release allowlist updates required by the repository's historical regression gates
+- LIVE_CLEAN_SLATE_WEEKEND_RECORDS_SETUP_7.57.15.md
+- WPI_7.57.15_CLEAN_SLATE_WEEKEND_RECORDS_HANDOFF.md
+
+Intentional destructive step
+- Supabase migration deletes all existing WPI Live games and their cascading game-scoped child records.
+- Team setup, roster, access, and GroupMe configuration are preserved.

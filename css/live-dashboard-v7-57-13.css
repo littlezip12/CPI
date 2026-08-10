@@ -96,3 +96,11 @@ body[data-live-role="scorer"] .live-role-game-section[data-role-group="live"] .l
   body[data-live-role="admin"] .live-mobile-admin-jump{position:sticky;top:6px;z-index:12;box-shadow:0 8px 22px rgba(15,23,42,.08)}
   .live-mobile-admin-jump label{grid-template-columns:1fr;gap:4px}
 }
+
+/* WPI 7.57.15 durable tournament/weekend records */
+.live-game-series-card{border:1px solid var(--live-border,#dbe3ec);border-radius:18px;padding:16px;margin-top:14px;background:#fff}
+.live-game-series-card .live-panel-heading{margin-bottom:10px}
+.live-game-series-record{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.live-game-series-record strong{font-size:1.2rem}
+.live-game-series-record span{font-size:.78rem;color:#667085}
+body[data-live-role="viewer"] #dashboardGameArchive,body[data-live-role="scorer"] #dashboardGameArchive{display:block!important}

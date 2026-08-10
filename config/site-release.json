@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.57.14",
-  "name": "WPI Live Pilot Graduation",
+  "version": "7.57.15",
+  "name": "Clean Slate & Tournament Weekend Records",
   "date": "2026-08-09",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Graduates WPI Live from the visible sandbox/demo surface to the real pilot product: live-game.html becomes the canonical scoring route, legacy live-sandbox.html redirects safely, local demo access and visible test/reset controls are removed from production UX, and Supporter/Scorer/Owner/Admin flows continue on the validated connected backend.",
+  "notes": "Resets pilot game records to a clean production slate and replaces generic Game History with durable Tournament / Scrimmage Weekend records. Every new game is grouped under a tournament or named scrimmage weekend for future lookback, while Game-Day Hub remains the single game-creation surface.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -86,7 +86,7 @@
   "liveScoringExtraTimeRelease": "7.56.8",
   "liveScoringShootoutRelease": "7.56.8",
   "liveScoringConnectedBackendRelease": "7.56.8",
-  "liveScoringDashboardRelease": "7.57.14",
+  "liveScoringDashboardRelease": "7.57.15",
   "liveScoringRoleSecurityRelease": "7.57.10",
   "liveScoringPersistenceRelease": "7.56.15",
   "liveScoringGroupMeRelease": "7.56.8",
@@ -111,7 +111,7 @@
   "liveScoringMultiTeamRelease": "7.57.3",
   "liveScoringTeamSwitchingRelease": "7.57.3",
   "liveScoringGuidedLaunchRelease": "7.57.5",
-  "liveScoringGameDayHubRelease": "7.57.11",
+  "liveScoringGameDayHubRelease": "7.57.15",
   "liveScoringUniversalGameModelRelease": "7.57.6",
   "liveScoringManualTournamentFallbackRelease": "7.57.6",
   "liveScoringReconciliationFoundationRelease": "7.57.6",
@@ -132,5 +132,8 @@
   "liveScoringPilotGraduationRelease": "7.57.14",
   "liveScoringCanonicalGameRouteRelease": "7.57.14",
   "liveScoringLocalDemoRetirementRelease": "7.57.14",
-  "liveScoringProductionSurfaceRelease": "7.57.14"
+  "liveScoringProductionSurfaceRelease": "7.57.14",
+  "liveScoringGameArchiveRelease": "7.57.15",
+  "liveScoringCleanSlateRelease": "7.57.15",
+  "liveScoringWeekendRecordsRelease": "7.57.15"
 }
