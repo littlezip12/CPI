@@ -1,0 +1,98 @@
+/* WPI 7.57.13 — Mobile Game-Day Polish & Pilot Hardening. */
+body[data-live-role="viewer"] .live-status-strip,
+body[data-live-role="scorer"] .live-status-strip{display:none!important}
+body[data-live-role="viewer"] .live-dashboard-header,
+body[data-live-role="scorer"] .live-dashboard-header{margin-bottom:18px}
+body[data-live-role="viewer"] .live-role-home,
+body[data-live-role="scorer"] .live-role-home{border:0;box-shadow:0 14px 42px rgba(15,23,42,.08);padding:24px}
+body[data-live-role="viewer"] .live-role-home .live-section-kicker{color:var(--lamo-blue);font-weight:900}
+body[data-live-role="viewer"] .live-role-game-card{transition:transform .15s ease,box-shadow .15s ease}
+body[data-live-role="viewer"] .live-role-game-card:has(.live-game-day-status[data-state="live"]){border-color:rgba(22,138,85,.3);box-shadow:0 10px 30px rgba(22,138,85,.1)}
+.live-role-game-top>div{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.live-role-game-vs{font-size:.8rem;font-weight:900;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em}
+.live-role-game-coverage{display:inline-flex;align-items:center;min-height:24px;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;background:#f1f5f9;color:#475569}
+.live-role-game-coverage[data-state="mine"]{background:#eaf8f0;color:#126f45}
+.live-role-game-coverage[data-state="open"]{background:#fff8e7;color:#7a5a0a}
+body[data-live-role="viewer"] #dashboardRoleBadge{background:#eef4fb;color:var(--lamo-blue-dark)}
+body[data-live-role="scorer"] #dashboardRoleBadge{background:#eaf8f0;color:#126f45}
+@media (max-width:720px){
+  body[data-live-role="viewer"] .live-dashboard-header,
+  body[data-live-role="scorer"] .live-dashboard-header{gap:12px}
+  body[data-live-role="viewer"] .live-role-home,
+  body[data-live-role="scorer"] .live-role-home{padding:16px 14px;border-radius:18px}
+  .live-role-game-matchup{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important;align-items:center}
+  .live-role-game-matchup>div,.live-role-game-matchup>div:last-child{justify-content:flex-start;text-align:left;flex-direction:column;gap:5px;align-items:center}
+  .live-role-game-matchup>div:last-child{justify-content:flex-start;text-align:center}
+  .live-role-game-matchup img{width:48px;height:48px}
+  .live-role-game-matchup span{text-align:center;font-size:.86rem}
+  .live-role-game-score,.live-role-game-vs{order:initial!important;align-self:center;text-align:center}
+  .live-role-game-action>*{width:100%;text-align:center}
+}
+
+
+/* 7.57.13 — make the role landing surfaces scan by next action instead of one long deck. */
+.live-role-game-section{display:grid;gap:9px}
+.live-role-game-section+.live-role-game-section{margin-top:18px;padding-top:16px;border-top:1px solid rgba(15,23,42,.08)}
+.live-role-game-section-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px}
+.live-role-game-section-heading strong{color:#1b2d43;font-size:13px;font-weight:900}
+.live-role-game-section-heading span{display:grid;min-width:25px;height:25px;place-items:center;border-radius:999px;background:#eef3f8;color:#52657a;font-size:11px;font-weight:900}
+.live-role-game-section-list{display:grid;gap:11px}
+body[data-live-role="viewer"] .live-role-game-section[data-role-group="live"] .live-role-game-section-heading strong,
+body[data-live-role="scorer"] .live-role-game-section[data-role-group="live"] .live-role-game-section-heading strong{color:#126f45}
+
+/* Once reusable setup is complete, stop making the Owner/Admin reread the whole onboarding checklist. */
+#dashboardOverview[data-readiness-state="ready"]{padding:17px 20px}
+#dashboardOverview[data-readiness-state="ready"] #readinessIntro,
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-progress,
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-grid,
+#dashboardOverview[data-readiness-state="ready"] #readinessLaunchSummary{display:none!important}
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-heading{margin-bottom:10px}
+#dashboardOverview[data-readiness-state="ready"] #readinessHeadline{font-size:21px}
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-next{margin:0;padding:12px 14px;min-height:0}
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-next-copy small{display:none}
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-next-copy p{margin-top:2px}
+
+/* Tournament/Friendly explanation is useful before the first game, but becomes repeated chrome once a queue exists. */
+#dashboardGameDay[data-has-games="true"] .live-game-day-paths{display:none}
+
+/* Owner/Admin mobile navigation: one compact jump control replaces the long horizontal admin strip. */
+.live-mobile-admin-jump{display:none}
+.live-mobile-admin-jump label{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:10px;width:100%}
+.live-mobile-admin-jump label>span{font-size:11px;font-weight:900;color:#52657a;white-space:nowrap}
+.live-mobile-admin-jump select{width:100%;min-height:44px;border:1px solid #dbe3eb;border-radius:11px;background:#fff;color:#1a2d44;padding:8px 34px 8px 11px;font-size:13px;font-weight:800}
+
+@media (max-width:900px){
+  body[data-live-role="owner"] .live-dashboard-sidebar,
+  body[data-live-role="admin"] .live-dashboard-sidebar{display:none!important}
+  body[data-live-role="owner"] .live-dashboard-layout,
+  body[data-live-role="admin"] .live-dashboard-layout{grid-template-columns:minmax(0,1fr)!important}
+  body[data-live-role="owner"] .live-mobile-admin-jump,
+  body[data-live-role="admin"] .live-mobile-admin-jump{display:flex;margin:0 10px 10px;padding:10px 12px;border:1px solid rgba(15,23,42,.09);border-radius:13px;background:#f8fafc}
+}
+
+@media (max-width:720px){
+  body[data-live-role="viewer"] .live-dashboard-shell,
+  body[data-live-role="scorer"] .live-dashboard-shell{padding-left:8px;padding-right:8px}
+  body[data-live-role="viewer"] .live-dashboard-header,
+  body[data-live-role="scorer"] .live-dashboard-header{padding:14px 12px}
+  body[data-live-role="viewer"] .live-dashboard-account,
+  body[data-live-role="scorer"] .live-dashboard-account{width:100%;justify-content:space-between}
+  body[data-live-role="viewer"] .live-team-switcher,
+  body[data-live-role="scorer"] .live-team-switcher{flex:1 1 170px;min-width:0}
+  body[data-live-role="viewer"] .live-team-switcher select,
+  body[data-live-role="scorer"] .live-team-switcher select{width:100%;max-width:none}
+  .live-role-game-section+.live-role-game-section{margin-top:14px;padding-top:13px}
+  .live-role-game-card{gap:10px}
+  .live-role-game-top{align-items:flex-start}
+  .live-role-game-meta{gap:5px}
+  .live-role-game-meta span{display:inline-flex;align-items:center;min-height:28px;padding:4px 7px;border-radius:7px;background:#f6f8fa}
+  .live-role-game-action a,.live-role-game-action button{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:11px;font-weight:900}
+  #dashboardOverview[data-readiness-state="ready"]{margin:0 10px 10px;padding:14px}
+  #dashboardOverview[data-readiness-state="ready"] .live-readiness-heading{align-items:flex-start;gap:8px}
+  #dashboardOverview[data-readiness-state="ready"] #readinessHeadline{font-size:19px}
+  #dashboardOverview[data-readiness-state="ready"] .live-readiness-next{grid-template-columns:34px minmax(0,1fr);gap:10px}
+  #dashboardOverview[data-readiness-state="ready"] .live-readiness-next button{grid-column:1/-1;width:100%;min-height:46px}
+  body[data-live-role="owner"] .live-mobile-admin-jump,
+  body[data-live-role="admin"] .live-mobile-admin-jump{position:sticky;top:6px;z-index:12;box-shadow:0 8px 22px rgba(15,23,42,.08)}
+  .live-mobile-admin-jump label{grid-template-columns:1fr;gap:4px}
+}

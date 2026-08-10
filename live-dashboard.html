@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.12">
-  <link rel="stylesheet" href="css/live-dashboard-v7-57-12.css?v=7.57.12">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.13">
+  <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.13">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -72,6 +72,10 @@
             <p class="live-panel-help" id="roleHomeHelp">Choose a game to follow the score, game clock and play-by-play.</p>
             <div id="roleHomeGames" class="live-role-game-list"><p class="live-empty-state">Loading games…</p></div>
           </section>
+
+          <div class="live-mobile-admin-jump" id="mobileAdminJump" hidden>
+            <label for="mobileAdminJumpSelect"><span>Team administration</span><select id="mobileAdminJumpSelect" aria-label="Jump to team administration section"><option value="">Jump to…</option><option value="dashboardGameDay">Game Day</option><option value="dashboardOverview">Team readiness</option><option value="dashboardTeamProfile">Team profile</option><option value="dashboardRoster">Roster</option><option value="dashboardTeamAccess">Team access</option><option value="dashboardGroupMe">GroupMe</option><option value="dashboardGameHistory">History</option></select></label>
+          </div>
 
           <section class="live-panel live-team-readiness-card" id="dashboardOverview">
             <div class="live-panel-heading live-readiness-heading">
@@ -314,11 +318,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.12"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.12"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.12"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.12"></script>
-  <script src="js/live-dashboard-v7-57-12.js?v=7.57.12"></script>
+  <script src="config/live-sandbox.js?v=7.57.13"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.13"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.13"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.13"></script>
+  <script src="js/live-dashboard-v7-57-13.js?v=7.57.13"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
