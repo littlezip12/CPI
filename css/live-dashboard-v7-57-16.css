@@ -1,0 +1,48 @@
+/* WPI 7.57.16 — Tournament & Weekend Record Experience */
+.live-archive-toolbar{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:14px 0 4px;padding:12px;border:1px solid #e2e8f0;border-radius:13px;background:#f8fafc}
+.live-archive-toolbar label{display:grid;gap:5px;color:#64748b;font-size:10px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+.live-archive-toolbar select{min-width:170px;min-height:38px;border:1px solid #d9e2ec;border-radius:9px;background:#fff;padding:7px 10px;color:#24364d;font-weight:800}
+.live-archive-toolbar>span{color:#64748b;font-size:11px;font-weight:800}
+.live-archive-season{display:grid;gap:10px;margin-top:18px}
+.live-archive-season-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px}
+.live-archive-season-heading h3{margin:0;color:#172b43;font-size:15px}
+.live-archive-season-heading span{color:#718096;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.04em}
+.live-archive-series-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.live-archive-series-heading h3{margin:2px 0 4px;color:#132941;font-size:18px}
+.live-archive-series-heading p{margin:0;color:#738094;font-size:11px;line-height:1.4}
+.live-archive-series-details{margin-top:13px;border-top:1px solid #e7edf3}
+.live-archive-series-details summary{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 2px 2px;cursor:pointer;list-style:none;color:#29425e;font-size:11px;font-weight:900}
+.live-archive-series-details summary::-webkit-details-marker{display:none}
+.live-archive-series-details summary:after{content:"＋";margin-left:auto;color:#6b7b8f}
+.live-archive-series-details[open] summary:after{content:"−"}
+.live-archive-series-details summary strong{margin-left:8px;color:#7a8797;font-size:10px;font-weight:800}
+.live-archive-series-games{display:grid;gap:9px;margin-top:10px}
+.live-archive-game-row{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px;border:1px solid #e2e8ef;border-radius:13px;background:#fbfcfe}
+.live-archive-result{display:grid;width:27px;height:27px;place-items:center;border-radius:9px;font-size:10px;font-weight:950}
+.live-archive-result[data-state="win"]{background:#e7f7ef;color:#0f7246}
+.live-archive-result[data-state="loss"]{background:#fff0ef;color:#a53a35}
+.live-archive-result[data-state="tie"]{background:#f1f4f7;color:#5d6977}
+.live-archive-matchup{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:9px;align-items:center;min-width:0}
+.live-archive-matchup>strong{color:#11283f;font-size:16px;white-space:nowrap}
+.live-archive-team{display:flex;align-items:center;gap:8px;min-width:0}
+.live-archive-team--opponent{justify-content:flex-end;text-align:right}
+.live-archive-team img{width:34px;height:34px;flex:0 0 auto;object-fit:contain;padding:2px;border:1px solid #e0e6ed;border-radius:9px;background:#fff}
+.live-archive-team span{overflow:hidden;color:#263b52;font-size:11px;font-weight:850;text-overflow:ellipsis;white-space:nowrap}
+.live-archive-game-meta{grid-column:2;display:flex;gap:7px;flex-wrap:wrap;color:#758296;font-size:9px}
+.live-archive-game-meta span+span{padding:2px 6px;border-radius:999px;background:#eef3f7;color:#53647a;font-weight:800}
+.live-archive-game-link{grid-column:3;grid-row:1 / span 2;align-self:center;padding:8px 10px;border-radius:9px;background:#0f4d92;color:#fff;font-size:10px;font-weight:900;text-decoration:none;white-space:nowrap}
+body[data-live-role="viewer"] #dashboardGameArchive{display:block!important}
+
+@media(max-width:720px){
+  .live-archive-toolbar{align-items:stretch;flex-direction:column}
+  .live-archive-toolbar select{width:100%;min-width:0}
+  .live-archive-series-heading{gap:8px}
+  .live-game-series-record{min-width:58px}
+  .live-archive-game-row{grid-template-columns:26px minmax(0,1fr)}
+  .live-archive-matchup{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:6px}
+  .live-archive-team{flex-direction:column;align-items:flex-start;gap:4px}
+  .live-archive-team--opponent{align-items:flex-end}
+  .live-archive-team span{white-space:normal;font-size:10px}
+  .live-archive-game-meta{grid-column:2}
+  .live-archive-game-link{grid-column:1 / -1;grid-row:auto;text-align:center;margin-top:2px}
+}

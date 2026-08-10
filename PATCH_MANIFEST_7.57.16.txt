@@ -1,0 +1,33 @@
+WPI 7.57.16 — Tournament & Weekend Record Experience
+Built from pushed baseline: CPI-main - 2026-08-09T211046.798.zip
+
+PRODUCT
+- Season-aware Tournaments & weekends archive grouped by competitive season.
+- Compact tournament / Scrimmage Weekend cards with date range, W-L-T record, venues and final count.
+- Expandable weekend game detail with team/opponent logos, final scores, time, venue, division/stage/game number and recap links.
+- Supporter-readable historical archive without Team Administration controls.
+
+ACCOUNT DATA
+- Formalizes operational signup records in public.live_account_registry.
+- Stores user ID, email, display name, signup source, initial team/invite attribution, registration date, email-confirmation timestamp, last-sign-in timestamp and updated timestamp.
+- Backfills existing WPI Live accounts using original Supabase Auth creation timestamps.
+- RLS enabled; no broad authenticated read policy.
+- Create Account UI discloses what account data WPI stores and clarifies that account creation is not marketing opt-in.
+
+DEPLOYMENT
+- Apply: supabase/migrations/202608090005_tournament_weekend_record_experience_signup_registry.sql
+- No Edge Function redeploy.
+- No new secret.
+- Do not redeploy groupme-post or roster-extract.
+
+PROTECTED
+- js/live-backend-v7-56-8.js unchanged.
+- js/live-sandbox-v7-56-15.js unchanged.
+- supabase/functions/groupme-post/index.ts unchanged.
+- supabase/functions/roster-extract/index.ts unchanged.
+- 7.57.15 clean-slate migration unchanged.
+
+VALIDATION
+- Focused 7.57.16 release gate passed.
+- Release-integrity, team-directory logo, tournament-season, multi-season, public-tournament-hub and tournament-data validations passed.
+- Full monolithic release-check was attempted for 180 seconds and progressed through Tournament Sync Safety with no observed failure before timing out. Local full gate remains required before push.

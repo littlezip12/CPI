@@ -12,8 +12,9 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.15">
-  <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.15">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.16">
+  <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.16">
+  <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.16">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -220,7 +221,11 @@
 
           <section class="live-panel live-history-panel" id="dashboardGameArchive">
             <div class="live-panel-heading"><div><p class="live-section-kicker">Season archive</p><h2>Tournaments &amp; weekends</h2></div><button id="refreshGameArchiveButton" type="button">Refresh</button></div>
-            <p class="live-panel-help">Games are stored by tournament or named scrimmage weekend so the team can return to a complete weekend record instead of a flat game-history list.</p>
+            <p class="live-panel-help">Every completed game stays with its tournament or named scrimmage weekend. Open an event to revisit the full weekend, scores, opponents and game recaps.</p>
+            <div class="live-archive-toolbar">
+              <label>Season<select id="gameArchiveSeasonFilter" aria-label="Filter tournament and weekend records by season"><option value="all">All seasons</option></select></label>
+              <span id="gameArchiveSummary">0 events · 0 finals</span>
+            </div>
             <div id="gameSeriesArchive" class="live-game-history-list"><p class="live-empty-state">No tournaments or scrimmage weekends yet.</p></div>
           </section>
         </div>
@@ -318,11 +323,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.15"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.15"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.15"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.15"></script>
-  <script src="js/live-dashboard-v7-57-15.js?v=7.57.15"></script>
+  <script src="config/live-sandbox.js?v=7.57.16"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.16"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.16"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.16"></script>
+  <script src="js/live-dashboard-v7-57-16.js?v=7.57.16"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

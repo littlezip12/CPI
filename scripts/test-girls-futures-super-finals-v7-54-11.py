@@ -10,7 +10,7 @@ registry=load('data/tournaments/platform/registry.json')
 bundle=load('data/tournaments/platform/events/2026-girls-futures-super-finals.json')
 placements=load('data/tournaments/archive/2026-girls-futures-super-finals.json')
 hub=load('data/tournaments/public-hub.json')
-if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15'}: errors.append('site version must be 7.54.11')
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16'}: errors.append('site version must be 7.54.11')
 if site.get('girlsFuturesPlatformRelease')!='7.54.11': errors.append('Girls Futures release metadata missing')
 expected={'divisionCount':8,'gameCount':374,'finalGameCount':374,'scheduledGameCount':0,'teamCount':139,'placementCount':132,'venueCount':16,'dateCount':3}
 for key,value in expected.items():
