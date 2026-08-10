@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>WPI Live Scoring | Water Polo Index</title>
+  <meta name="description" content="Private WPI Live scoring console for structured water polo plays, GroupMe score updates, and game recaps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-6.css?v=7.57.14">
+</head>
+<body class="wpi-live-sandbox-page">
+  <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
+    <section class="live-sandbox-banner" aria-labelledby="liveGameTitle">
+      <div>
+        <p class="live-sandbox-kicker">WPI Live</p>
+        <h1 id="liveGameTitle">Live Scoring</h1>
+        <p>Set up the game, choose starters, and score from the same mobile-first console used on deck.</p>
+      </div>
+      <span class="live-sandbox-badge">WPI Live</span>
+    </section>
+
+    <section class="live-status-strip" aria-label="WPI Live connection status">
+      <div><strong id="connectionLabel">Checking access…</strong><span id="connectionDetail">Opening the private scoring console.</span></div>
+      <div class="live-status-actions"><span id="backendSyncStatus" class="live-backend-sync-status" data-state="local">Checking…</span><button id="resetSandboxTopButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button><button id="signOutButton" type="button">Sign out</button></div>
+    </section>
+
+    <section class="live-setup-grid" id="setupPanel" aria-labelledby="setupHeading">
+      <div class="live-panel live-panel--setup">
+        <div class="live-panel-heading">
+          <div><p class="live-section-kicker">Game day</p><h2 id="setupHeading">Game setup</h2></div>
+          <div class="live-heading-actions"><span id="setupSourceBadge">WPI Live game</span><button id="hideSetupButton" type="button" hidden>Return to game</button></div>
+        </div>
+        <div class="live-setup-step-head"><span>1</span><div><strong>Match details</strong><small>Who, when and where.</small></div></div>
+        <p class="live-panel-help">Confirm the matchup and game format before starting. Tournament games may arrive from the WPI schedule or from the manual fallback in the Game-Day Hub.</p>
+        <div class="live-form-grid live-setup-core-grid">
+          <label>Team<input id="teamName" type="text" value="Lamorinda A 14U Boys" maxlength="80"></label>
+          <label>Opponent<input id="opponentName" type="text" value="Scrimmage Opponent" maxlength="80"></label>
+          <label>Game date and time<span class="live-datetime-wrap"><input id="gameDateTime" type="datetime-local"></span></label>
+          <label>Venue<input id="gameVenue" type="text" placeholder="Pool or facility" maxlength="120"></label>
+          <label>Age group<select id="ageGroup"><option value="10U">10U</option><option value="12U">12U</option><option value="14U" selected>14U</option><option value="16U">16U</option><option value="18U">18U</option></select></label>
+          <label>Quarter length<select id="quarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
+        </div>
+        <details class="live-setup-advanced">
+          <summary>Scoring &amp; delivery preferences</summary>
+          <div class="live-form-grid">
+            <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
+            <label>Message frequency<select id="messageFrequency"><option value="all" selected>Every recorded action</option><option value="major">Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
+            <label>Visibility<select id="visibility"><option value="team_private" selected>Team Private</option><option value="private_only">Private Only</option><option value="public_team">Public team-level scoring</option></select></label>
+          </div>
+        </details>
+      </div>
+
+      <div class="live-panel live-panel--roster">
+        <div class="live-panel-heading">
+          <div><div class="live-setup-step-head"><span>2</span><div><strong>Roster</strong><small>Confirm who is available today.</small></div></div><h2 id="rosterHeading">Lamorinda A 14U Boys roster</h2></div>
+          <button id="addPlayerButton" type="button">Add player</button>
+        </div>
+        <p class="live-panel-help" id="rosterHelp">This is the active roster for Lamorinda A 14U Boys. Add, remove, rename, or change cap numbers as needed.</p>
+        <p id="rosterStatus" class="live-roster-status" role="status"></p>
+        <div class="live-roster-list" id="rosterList"></div>
+      </div>
+    </section>
+
+    <section class="live-launch-row" id="launchRow">
+      <div class="live-launch-copy"><span class="live-launch-step">3</span><div><strong>Starting lineup</strong><span id="launchRuleText">Select one goalie and six field players for 14U.</span></div></div>
+      <button id="startGameButton" type="button">Choose starters &amp; start game</button>
+    </section>
+
+    <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
+      <div class="live-game-toolbar">
+        <div class="live-game-brand"><strong><span>WPI</span> LIVE</strong><small id="compactModeLabel">WPI Live game</small></div>
+        <div class="live-game-toolbar-actions"><span id="gameGroupMeBadge" class="live-game-groupme-badge" data-state="idle">Preview</span><button id="gameSignOutButton" type="button">Sign out</button></div>
+      </div>
+
+      <section id="scorerControlStrip" class="live-scorer-control-strip" hidden aria-live="polite">
+        <div><span>Active scorer</span><strong id="activeScorerName">Assigning scorer…</strong></div>
+        <div class="live-scorer-control-actions">
+          <button id="takeOverScoringButton" type="button" hidden>Take over scoring</button>
+          <button id="transferScoringButton" class="live-scorer-transfer-primary" type="button" hidden>Transfer scoring</button>
+        </div>
+      </section>
+      <div id="scorerReadOnlyNotice" class="live-scorer-read-only-notice" hidden><span id="scorerReadOnlyMessage"></span><button id="enterScorerCodeInlineButton" type="button">Enter scorer code</button></div>
+
+      <div class="live-scoreboard" aria-live="polite">
+        <div class="live-score-team"><span id="scoreTeamName">Team</span><strong id="teamScore">0</strong></div>
+        <div class="live-score-center"><strong id="scorePeriodLabel">Q1</strong><em id="scoreClockLabel">7:00</em><span id="gameStatus">Ready</span><span id="quarterClockLabel" class="live-visually-hidden">Q1 · 7:00</span></div>
+        <div class="live-score-team live-score-team--opponent"><span id="scoreOpponentName">Opponent</span><strong id="opponentScore">0</strong></div>
+      </div>
+
+      <section class="live-panel live-action-panel" id="liveActionPanel" aria-labelledby="consoleHeading">
+        <div class="live-panel-heading live-compact-heading">
+          <div><p class="live-section-kicker">Game</p><h2 id="consoleHeading">Record play</h2></div>
+          <span id="currentLineupStatus" class="live-lineup-status">Q1 starters saved</span>
+        </div>
+
+        <div id="lastUpdateCard" class="live-last-update" hidden aria-live="polite">
+          <div><span>Play recorded</span><strong id="lastUpdateText"></strong><small id="lastUpdateDelivery" data-state="recorded">Recorded</small></div>
+          <button id="undoLastInlineButton" type="button">Undo</button>
+        </div>
+
+        <form id="eventForm" class="live-event-form">
+          <div class="live-field-full live-event-chooser">
+            <div class="live-field-label">Event</div>
+            <div id="eventQuickActions" class="live-event-quick-actions" role="group" aria-label="Choose event"></div>
+            <div id="eventVariantChooser" class="live-event-variant-chooser" hidden aria-live="polite"></div>
+          </div>
+          <input id="eventType" type="hidden" value="">
+
+          <label id="primaryPlayerLabel" class="live-field-full" hidden>Player
+            <select id="primaryPlayer">
+              <option value="">Choose player</option>
+            </select>
+          </label>
+
+          <label id="assistPlayerLabel" class="live-field-full" hidden>Assist
+            <select id="assistPlayer">
+              <option value="">Unassisted</option>
+            </select>
+          </label>
+
+          <label class="live-field-full live-time-field">Time of play
+            <input id="clockTime" type="text" inputmode="numeric" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp">
+            <small id="clockHelp">Enter 6:45 or type 645.</small>
+          </label>
+
+          <details id="eventNoteDetails" class="live-field-full live-event-note-details">
+            <summary>Add note <span>Optional</span></summary>
+            <label id="eventNoteLabel" class="live-note-field">Additional notes
+              <input id="eventNote" type="text" maxlength="140" placeholder="Short context for supporters">
+            </label>
+          </details>
+
+          <details id="messagePreviewDetails" class="live-preview-details" hidden>
+            <summary>Preview GroupMe message</summary>
+            <pre id="messagePreview">Choose a play to preview the score update.</pre>
+          </details>
+
+          <button id="recordEventButton" type="submit" disabled>Submit play</button>
+          <p id="eventValidationMessage" class="live-validation-message" role="status"></p>
+        </form>
+
+        <div class="live-game-action-row">
+          <button id="transferScoringInlineButton" class="live-transfer-inline" type="button">Transfer scoring</button>
+          <button id="endQuarterButton" class="live-end-quarter-secondary" type="button">End quarter</button>
+        </div>
+
+        <section id="shootoutPanel" class="live-shootout-panel" hidden aria-labelledby="shootoutHeading">
+          <div class="live-panel-heading live-compact-heading">
+            <div><p class="live-section-kicker">Alternating attempts</p><h2 id="shootoutHeading">Shootout</h2></div>
+            <span id="shootoutRoundBadge" class="live-lineup-status">Round 1</span>
+          </div>
+          <div class="live-shootout-next">
+            <span>Next shooter</span>
+            <strong id="shootoutTeamLabel">Lamorinda A 14U Boys</strong>
+          </div>
+          <label id="shootoutOurPlayerLabel">Shooter
+            <select id="shootoutOurPlayer"><option value="">Choose player</option></select>
+          </label>
+          <label id="shootoutOpponentPlayerLabel" hidden>Opponent shooter / cap number
+            <input id="shootoutOpponentPlayer" type="text" maxlength="80" placeholder="#8 or player name">
+          </label>
+          <div class="live-shootout-actions">
+            <button id="shootoutGoalButton" type="button">Goal</button>
+            <button id="shootoutMissButton" class="live-shootout-miss" type="button">Miss</button>
+          </div>
+          <div class="live-shootout-footer">
+            <button id="undoShootoutButton" type="button">Undo last shot</button>
+            <button id="endShootoutGameButton" class="live-end-game-primary" type="button">End game</button>
+          </div>
+          <p id="shootoutValidationMessage" class="live-validation-message" role="status"></p>
+        </section>
+
+        <details class="live-game-controls" id="gameControlsDetails">
+          <summary>More controls</summary>
+          <div class="live-game-controls-grid">
+            <label>Current period<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT1</option><option value="6">OT2</option><option value="7">OT3</option><option value="8">OT4</option></select></label>
+            <button id="editCurrentLineupButton" type="button">Edit starters</button>
+            <button id="showSetupButton" type="button">Edit roster or setup</button>
+            <button id="pauseMessagesButton" type="button" aria-pressed="false">Pause messages</button>
+            <button id="scoreCorrectionButton" type="button">Correct score</button>
+            <button id="resetSandboxGameButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button>
+            <button id="endGameButton" class="live-end-game-primary" type="button">End game and build recap</button>
+          </div>
+        </details>
+      </section>
+
+      <details class="live-panel live-message-panel" id="messageDetails">
+        <summary><span><strong>GroupMe play log</strong><small id="messageModeBadge">Checking delivery</small></span><span id="messageCount">0 messages</span></summary>
+        <p class="live-panel-help" id="messageHelp">Delivery status for recorded updates appears here.</p>
+        <div class="live-message-list" id="messageList"><p class="live-empty-state">No messages generated yet.</p></div>
+      </details>
+
+      <details class="live-panel live-timeline-panel" id="timelineDetails">
+        <summary><span><strong>Game timeline</strong><small>Open during or after the game</small></span><span id="eventCount">0 events</span></summary>
+        <div class="live-timeline" id="timelineList"><p class="live-empty-state">Start the game to create the first timeline event.</p></div>
+      </details>
+
+      <nav id="liveMobileNav" class="live-mobile-nav" aria-label="Live game navigation">
+        <button id="mobileNavGame" type="button" class="is-active"><span aria-hidden="true">▣</span><strong>Game</strong></button>
+        <button id="mobileNavUpdates" type="button"><span aria-hidden="true">▤</span><strong>Updates</strong></button>
+        <button id="mobileNavMore" type="button"><span aria-hidden="true">☰</span><strong>More</strong></button>
+      </nav>
+    </section>
+
+    <section class="live-panel live-summary-panel" id="summaryPanel" hidden aria-labelledby="summaryHeading">
+      <div class="live-panel-heading"><div><p class="live-section-kicker">End-of-game output</p><h2 id="summaryHeading">Game recap and statistics</h2></div><span>Unofficial · based on recorded events</span></div>
+      <div class="live-summary-metrics" id="summaryMetrics"></div>
+      <div class="live-summary-grid">
+        <div><h3>Player totals</h3><div id="playerSummary"></div></div>
+        <div><h3>Editable game recap</h3><textarea id="recapText" rows="10"></textarea></div>
+      </div>
+      <div class="live-summary-actions"><button id="downloadLogButton" type="button">Download game log</button><button id="resetSandboxButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button></div>
+    </section>
+
+    <dialog id="lineupDialog" class="live-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Quarter lineup</p><h2 id="lineupDialogTitle">Who is starting the game?</h2></div><button id="lineupCloseButton" value="cancel" aria-label="Close lineup dialog">Close</button></div>
+        <div id="lineupTransitionSummary" class="live-lineup-transition-summary" hidden></div>
+        <p id="lineupRuleText">Select one goalie and the required number of field players. Your previous starting lineup is preselected.</p>
+        <label class="live-lineup-goalie">Starting goalie
+          <select id="lineupGoalie"><option value="">Select goalie</option></select>
+        </label>
+        <div class="live-lineup-selection-heading"><strong>Field starters</strong><span id="lineupCount">0 selected</span></div>
+        <div id="lineupChoices" class="live-lineup-choices"></div>
+        <p id="lineupValidationMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button id="lineupCancelButton" value="cancel">Cancel</button><button id="saveLineupButton" type="button" disabled>Save starters and start game</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="postPeriodDialog" class="live-dialog live-post-period-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Period complete</p><h2 id="postPeriodTitle">Q4 complete</h2></div></div>
+        <p id="postPeriodScore" class="live-post-period-score">Lamorinda A 0–0 Opponent</p>
+        <p class="live-panel-help">Choose how this game continues. Overtime can use 1–3 minute periods, including multiple periods or halves. Tournament rules can preload the correct format later.</p>
+        <button id="postPeriodEndGameButton" class="live-post-period-end" type="button">End game</button>
+        <div class="live-post-period-option" id="overtimeOption">
+          <label>Overtime period length
+            <select id="overtimeLength"><option value="1">1 minute</option><option value="2" selected>2 minutes</option><option value="3">3 minutes</option></select>
+          </label>
+          <label>Overtime format
+            <select id="overtimeFormat"><option value="single">Single overtime period</option><option value="multiple" selected>Multiple overtime periods / halves</option></select>
+          </label>
+          <button id="startOvertimeButton" type="button">Start overtime</button>
+        </div>
+        <button id="openShootoutSetupButton" class="live-post-period-shootout" type="button">Start shootout</button>
+      </form>
+    </dialog>
+
+    <dialog id="shootoutSetupDialog" class="live-dialog live-shootout-setup-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Shootout setup</p><h2>Who shoots first?</h2></div><button value="cancel" aria-label="Close shootout setup">Close</button></div>
+        <label>First shooter
+          <select id="shootoutFirstTeam">
+            <option value="team">Lamorinda A 14U Boys</option>
+            <option value="opponent">Opponent</option>
+          </select>
+        </label>
+        <p class="live-panel-help">After setup, select a shooter and tap Goal or Miss. Each result records immediately and the next team is selected automatically.</p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="startShootoutButton" type="button">Begin shootout</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="scorerHandoffDialog" class="live-dialog live-handoff-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Simple handoff</p><h2>Transfer scoring</h2></div><button value="cancel" aria-label="Close scorer handoff">Close</button></div>
+        <p class="live-panel-help">Have the next scorer scan the QR code. You keep control until they accept.</p>
+        <div id="scorerHandoffState" class="live-handoff-state" data-state="waiting"><span class="live-handoff-state-dot"></span><strong>Waiting for new scorer…</strong></div>
+        <div class="live-handoff-dialog-grid">
+          <div id="scorerHandoffQr" class="live-handoff-qr" aria-label="Scorer handoff QR code"></div>
+          <div class="live-handoff-details">
+            <div class="live-handoff-code"><span>Backup code</span><strong id="scorerHandoffCode">—</strong></div>
+            <details class="live-handoff-fallback"><summary>Use backup link instead</summary><code id="scorerHandoffLink" class="live-handoff-link"></code></details>
+            <p id="scorerHandoffExpiry" class="live-handoff-expiry"></p>
+            <p id="scorerHandoffMessage" class="live-validation-message" role="status"></p>
+          </div>
+        </div>
+        <div class="live-handoff-dialog-actions">
+          <button id="copyScorerHandoffLinkButton" type="button">Copy link</button>
+          <button id="shareScorerHandoffLinkButton" type="button">Share link</button>
+          <button id="newScorerHandoffPassButton" type="button">Create new pass</button>
+          <button id="revokeScorerHandoffPassButton" type="button">Revoke pass</button>
+        </div>
+      </form>
+    </dialog>
+
+
+
+    <dialog id="scorerCodeDialog" class="live-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Game-scoped access</p><h2>Take over scoring</h2></div><button value="cancel" aria-label="Close scorer code dialog">Close</button></div>
+        <p class="live-panel-help">Enter the six-digit code shown by the current scorer. Your permanent account role will not change.</p>
+        <div class="live-form-grid">
+          <label>Scorer code<input id="inGameScorerCode" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" autocomplete="one-time-code" placeholder="000000"></label>
+          <label>Display name<input id="inGameScorerDisplayName" type="text" maxlength="80" autocomplete="name" placeholder="Name shown in scoring audit"></label>
+        </div>
+        <div id="inGameScorerPreview" class="live-invite-result" hidden></div>
+        <p id="inGameScorerCodeMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="previewInGameScorerCodeButton" type="button">Check code</button><button id="acceptInGameScorerCodeButton" type="button">Accept scoring control</button></div>
+      </form>
+    </dialog>
+    <dialog id="scoreDialog" class="live-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Correction</p><h2>Set the current score</h2></div><button value="cancel" aria-label="Close score dialog">Close</button></div>
+        <div class="live-form-grid"><label>Team score<input id="correctTeamScore" type="number" min="0" max="99" step="0.1"></label><label>Opponent score<input id="correctOpponentScore" type="number" min="0" max="99" step="0.1"></label></div>
+        <label>Reason<input id="scoreCorrectionReason" type="text" maxlength="140" placeholder="Required correction note"></label>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveScoreCorrectionButton" type="button">Save correction</button></div>
+      </form>
+    </dialog>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="config/live-sandbox.js?v=7.57.14"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.14"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.14"></script>
+  <script src="js/live-game-v7-57-14.js?v=7.57.14"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+</body>
+</html>

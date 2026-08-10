@@ -15,7 +15,7 @@ required=['country','locationLabel','region','metroRegion','macroRegion','locati
 ca_regions={'San Diego','Orange County','Los Angeles','Inland Empire','Central Coast','Central Valley','Sacramento','East Bay','Peninsula / San Francisco'}
 national={'Hawaii','Northwest','Southwest','Mountain West','Midwest','Northeast','Southeast'}
 allowed=ca_regions|national|{'International'}
-if site.get('version') not in {'7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13'}: fail('site release must be 7.54.18')
+if site.get('version') not in {'7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14'}: fail('site release must be 7.54.18')
 if site.get('clubLocationRelease')!='7.54.18': fail('clubLocationRelease must be 7.54.18')
 if len(clubs)!=182: fail(f'expected 182 clubs, found {len(clubs)}')
 if len(rankings)!=724: fail(f'expected 724 rankings, found {len(rankings)}')
