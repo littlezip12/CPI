@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.16">
-  <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.16">
-  <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.16">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-10.css?v=7.57.17">
+  <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.17">
+  <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.17">
+  <link rel="stylesheet" href="css/live-dashboard-v7-57-17.css?v=7.57.17">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -170,7 +171,7 @@
             </article>
 
             <article class="live-panel live-team-access-card" id="dashboardTeamAccess">
-              <div class="live-panel-heading"><div><p class="live-section-kicker">Access</p><h2>Team access</h2></div><span class="live-access-count" id="teamAccessCount">—</span></div>
+              <div class="live-panel-heading"><div><p class="live-section-kicker">Access</p><h2>Team access</h2></div><div class="live-access-heading-actions"><span class="live-access-count" id="teamAccessCount">—</span><button id="openAccountRegistryButton" type="button" hidden>Account registry</button></div></div>
               <p class="live-panel-help">Permanent team membership is managed here. Game-day handoff remains separate, temporary, and exactly one scorer controls a game at a time.</p>
               <div id="teamAccessManagerPanel" hidden>
                 <section class="live-access-section">
@@ -231,6 +232,29 @@
         </div>
       </div>
     </section>
+
+
+    <dialog id="accountRegistryDialog" class="live-dialog live-account-registry-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Platform Owner · Pilot operations</p><h2>WPI Live account registry</h2></div><button value="cancel" aria-label="Close account registry">Close</button></div>
+        <p class="live-panel-help">Operational signup records for WPI Live. Names, emails and account lifecycle timestamps are available only to the Platform Owner through a protected server-side function.</p>
+        <div class="live-account-registry-note"><span aria-hidden="true">✓</span><div><strong>Account records, not marketing consent.</strong><br>WPI stores these records to operate secure access and the pilot. Passwords, auth tokens, GroupMe credentials and OpenAI keys are never included here.</div></div>
+        <div class="live-account-registry-metrics" aria-label="Account registry summary">
+          <div class="live-account-registry-metric"><strong id="accountRegistryTotal">—</strong><span>Total accounts</span></div>
+          <div class="live-account-registry-metric"><strong id="accountRegistryVerified">—</strong><span>Email verified</span></div>
+          <div class="live-account-registry-metric"><strong id="accountRegistryActive30">—</strong><span>Active 30 days</span></div>
+          <div class="live-account-registry-metric"><strong id="accountRegistryInvited">—</strong><span>Team invite signups</span></div>
+        </div>
+        <div class="live-account-registry-toolbar">
+          <label>Search accounts<input id="accountRegistrySearch" type="search" autocomplete="off" placeholder="Name, email, team, or role"></label>
+          <div class="live-account-registry-toolbar-actions"><button id="refreshAccountRegistryButton" type="button">Refresh</button><button id="exportAccountRegistryButton" type="button">Export CSV</button></div>
+        </div>
+        <p id="accountRegistrySummary" class="live-account-registry-summary">Loading account records…</p>
+        <div id="accountRegistryList" class="live-account-registry-list"><p class="live-empty-state">Loading account records…</p></div>
+        <p id="accountRegistryMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Close</button></div>
+      </form>
+    </dialog>
 
     <dialog id="rosterImportDialog" class="live-dialog live-roster-dialog">
       <form method="dialog">
@@ -323,11 +347,11 @@
     </dialog>
   </main>
 
-  <script src="config/live-sandbox.js?v=7.57.16"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.16"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.16"></script>
-  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.16"></script>
-  <script src="js/live-dashboard-v7-57-16.js?v=7.57.16"></script>
+  <script src="config/live-sandbox.js?v=7.57.17"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.17"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.17"></script>
+  <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.17"></script>
+  <script src="js/live-dashboard-v7-57-17.js?v=7.57.17"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

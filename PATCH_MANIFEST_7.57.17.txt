@@ -1,0 +1,39 @@
+WPI 7.57.17 — Pilot Account Directory & Access Operations
+Built from pushed baseline: CPI-main - 2026-08-09T213118.505.zip
+
+PRODUCT
+- Adds a Platform-Owner-only Account registry entry inside Team Access without adding another sidebar/admin section.
+- Registry shows operational WPI Live account name, email, signup source, registration date, verification state, last sign-in, initial team and current team memberships/roles.
+- Includes local search and CSV export for pilot operations.
+- Owner/Admin team controls remain unchanged; non-Platform Owners cannot use the registry RPC.
+- Supporter and Scorer experiences remain unchanged and uncluttered.
+
+DATA / SECURITY
+- Uses the existing public.live_account_registry created in 7.57.16.
+- Adds profile-to-registry synchronization so later WPI display-name/profile edits keep the registry current.
+- Adds public.live_is_platform_owner() and public.live_platform_account_registry_v1().
+- Platform Owner is the original earliest permanent Team Owner from bootstrap, not every later team Owner.
+- Registry remains protected by RLS with no broad authenticated table read policy.
+- RPC returns no passwords, tokens, GroupMe credentials, OpenAI keys or other secrets.
+- CSV export is created in the Platform Owner's browser from already-authorized registry results.
+- Account records remain operational records and do not imply marketing consent.
+
+DEPLOYMENT
+- Apply: supabase/migrations/202608090006_pilot_account_directory_access_operations.sql
+- No Edge Function redeploy.
+- No new secret.
+- Do not redeploy groupme-post or roster-extract.
+
+PROTECTED
+- js/live-backend-v7-56-8.js unchanged.
+- js/live-sandbox-v7-56-15.js unchanged.
+- js/live-game-v7-57-14.js unchanged.
+- supabase/functions/groupme-post/index.ts unchanged.
+- supabase/functions/roster-extract/index.ts unchanged.
+- 7.57.16 account-registry/archive migration unchanged.
+
+VALIDATION
+- Focused 7.57.17 release gate passed.
+- Node syntax checks passed.
+- Release-integrity, team-directory logo, tournament-season, multi-season, public-tournament-hub and tournament-data validations passed.
+- Full monolithic release-check was attempted after release allowlists were updated; no failure was observed through Tournament Sync Safety before the assistant execution window expired. User local full gate remains required before push.
