@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-17.css?v=7.57.20">
-  <link rel="stylesheet" href="css/live-dashboard-v7-58-1.css?v=7.58.1">
+  <link rel="stylesheet" href="css/live-dashboard-v7-58-2.css?v=7.58.2">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -99,14 +99,17 @@
           <article class="live-panel live-team-profile-card live-team-profile-prominent" id="dashboardTeamProfile">
               <div class="live-panel-heading"><div><p class="live-section-kicker">Current team</p><h2>Team profile</h2></div><span class="live-admin-status" id="teamProfileStatus">Connected</span></div>
               <p class="live-panel-help">Confirm the team identity you are managing. This profile stays attached to this team when you switch elsewhere in the club.</p>
-              <div class="live-form-grid live-team-profile-form">
-                <label>Team name<input id="teamProfileName" type="text" maxlength="100" autocomplete="organization"></label>
+              <div class="live-form-grid live-team-profile-form live-team-profile-form--expanded">
+                <label>Team name<input id="teamProfileName" type="text" maxlength="100" autocomplete="organization"><small>Full scoring identity, e.g. Lamorinda A 14U Boys.</small></label>
+                <label>Workspace label<input id="teamProfileDisplayLabel" type="text" maxlength="100" placeholder="14U Boys A"><small>Short label used inside the Lamorinda workspace.</small></label>
                 <label>Age group
                   <select id="teamProfileAgeGroup">
                     <option value="10U">10U</option><option value="12U">12U</option><option value="14U">14U</option><option value="16U">16U</option><option value="18U">18U</option>
                   </select>
                 </label>
-                <label>Season<input id="teamProfileSeason" type="text" maxlength="20" readonly></label>
+                <label>Gender<select id="teamProfileGender"><option value="">Not set</option><option value="Boys">Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option></select></label>
+                <label>Squad / division<input id="teamProfileSquad" type="text" maxlength="30" placeholder="A, B, Black, Gold…"></label>
+                <label>Season<input id="teamProfileSeason" type="text" maxlength="20" readonly><small>Roster versions and game history stay scoped to this season.</small></label>
               </div>
               <div class="live-dashboard-actions"><button id="saveTeamProfileButton" type="button">Save team profile</button></div>
               <p id="teamProfileMessage" class="live-validation-message" role="status"></p>
@@ -192,8 +195,16 @@
                 <input id="rosterUploadInput" type="file" accept="image/*" hidden>
                 <p class="live-roster-privacy"><span aria-hidden="true">✓</span> <strong>Private review first.</strong> <small>For photo import, WPI sends a normalized copy through a secure server-side roster reader powered by OpenAI. WPI does not store the image in the team record; only the roster you confirm is saved.</small></p>
                 <div class="live-current-roster" id="currentRosterPanel">
-                  <div class="live-panel-heading"><div><strong>Current roster</strong><small id="currentRosterHelp">No players saved yet.</small></div><button id="editCurrentRosterButton" type="button">Edit roster</button></div>
+                  <div class="live-panel-heading"><div><strong>Current roster</strong><small id="currentRosterHelp">No players saved yet.</small></div><div class="live-roster-heading-actions"><span id="rosterVersionBadge" class="live-roster-version-badge">Current season</span><button id="editCurrentRosterButton" type="button">Edit roster</button></div></div>
                   <div id="currentRosterList" class="live-current-roster-list"></div>
+                  <section class="live-default-lineup-card" id="defaultLineupCard">
+                    <div><small>Reusable game setup</small><strong>Default starters</strong><span id="defaultLineupSummary">No default lineup set.</span></div>
+                    <button id="editDefaultLineupButton" type="button">Set starters</button>
+                  </section>
+                  <details class="live-roster-history" id="rosterHistoryDetails">
+                    <summary><span>Roster versions</span><small id="rosterHistorySummary">Current season history</small></summary>
+                    <div id="rosterVersionList" class="live-roster-version-list"><p class="live-empty-state">Loading roster history…</p></div>
+                  </details>
                 </div>
               </div>
               <p id="rosterReadOnlyMessage" class="live-panel-help" hidden>Only a Team Owner or Admin can change the permanent roster.</p>
@@ -306,6 +317,18 @@
       </form>
     </dialog>
 
+    <dialog id="defaultLineupDialog" class="live-dialog live-default-lineup-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Team default</p><h2>Set default starters</h2></div><button value="cancel" aria-label="Close default starters">Close</button></div>
+        <p class="live-panel-help" id="defaultLineupHelp">Choose the starters WPI should preselect for the first period. You can always change the lineup at the pool.</p>
+        <label class="live-default-goalie-label">Default goalie<select id="defaultLineupGoalie"><option value="">Select goalie</option></select></label>
+        <div class="live-default-lineup-count" id="defaultLineupCount">Choose field players.</div>
+        <div id="defaultLineupPlayers" class="live-default-lineup-player-list"></div>
+        <p id="defaultLineupMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button id="clearDefaultLineupButton" type="button">Clear default</button><button value="cancel">Cancel</button><button id="saveDefaultLineupButton" type="button">Save default starters</button></div>
+      </form>
+    </dialog>
+
     <dialog id="gameDayDialog" class="live-dialog live-game-day-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker" id="gameDayDialogKicker">Game-Day Hub</p><h2 id="gameDayDialogTitle">Add game</h2></div><button value="cancel" aria-label="Close game dialog">Close</button></div>
@@ -381,8 +404,9 @@
   <script src="config/live-sandbox.js?v=7.57.20"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
   <script src="js/live-team-context-v7-58-0.js?v=7.58.0"></script>
+  <script src="js/live-team-profiles-rosters-v7-58-2.js?v=7.58.2"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
-  <script src="js/live-dashboard-v7-58-1.js?v=7.58.1"></script>
+  <script src="js/live-dashboard-v7-58-2.js?v=7.58.2"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

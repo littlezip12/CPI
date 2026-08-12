@@ -1,1 +1,1 @@
-# WPI 7.58.1 — Owner Dashboard Refactor
+# WPI 7.58.2 — Multi-Team Profiles & Rosters
