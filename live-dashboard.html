@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-17.css?v=7.57.20">
-  <link rel="stylesheet" href="css/live-dashboard-v7-58-0.css?v=7.58.0">
+  <link rel="stylesheet" href="css/live-dashboard-v7-58-1.css?v=7.58.1">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -25,7 +25,7 @@
         <p class="live-sandbox-kicker">WPI Live</p>
         <h1 id="dashboardClubName">Lamorinda Water Polo</h1>
         <p class="live-dashboard-team-context">Team: <strong id="dashboardTeamName">14U Boys A</strong></p>
-        <p id="dashboardSubtitle">Team setup, game-day scoring and score updates.</p>
+        <p id="dashboardSubtitle">Manage this team, prepare game day, and review results.</p>
       </div>
       <div class="live-dashboard-account">
         <div class="live-team-switcher" id="teamSwitcherWrap" hidden>
@@ -72,12 +72,10 @@
         <aside class="live-dashboard-sidebar" aria-label="Team administration">
           <span class="live-dashboard-sidebar-title">Team administration</span>
           <nav>
-            <a class="is-active" href="#dashboardOverview"><span aria-hidden="true">◫</span>Overview</a>
-            <a href="#dashboardTeamProfile"><span aria-hidden="true">◇</span>Team profile</a>
-            <a href="#dashboardRoster"><span aria-hidden="true">≡</span>Roster</a>
-            <a href="#dashboardTeamAccess"><span aria-hidden="true">◎</span>Team access</a>
-            <a href="#dashboardGroupMe"><span aria-hidden="true">◉</span>GroupMe</a>
-            <a href="#dashboardGameDay"><span aria-hidden="true">▶</span>Game day</a>
+            <a class="is-active" href="#dashboardTeamProfile"><span aria-hidden="true">◇</span>Team profile</a>
+            <a href="#dashboardOverview"><span aria-hidden="true">✓</span>Team readiness</a>
+            <a href="#dashboardGameDay"><span aria-hidden="true">▶</span>Game-Day Hub</a>
+            <a href="#dashboardGameDaySetup"><span aria-hidden="true">⚙</span>Game Day Setup</a>
             <a href="#dashboardGameArchive"><span aria-hidden="true">▤</span>Tournaments &amp; weekends</a>
           </nav>
           <div class="live-dashboard-sidebar-help"><strong>WPI Live</strong><span>Ready for game day.</span></div>
@@ -95,31 +93,47 @@
           </section>
 
           <div class="live-mobile-admin-jump" id="mobileAdminJump" hidden>
-            <label for="mobileAdminJumpSelect"><span>Team administration</span><select id="mobileAdminJumpSelect" aria-label="Jump to team administration section"><option value="">Jump to…</option><option value="dashboardGameDay">Game Day</option><option value="dashboardOverview">Team readiness</option><option value="dashboardTeamProfile">Team profile</option><option value="dashboardRoster">Roster</option><option value="dashboardTeamAccess">Team access</option><option value="dashboardGroupMe">GroupMe</option><option value="dashboardGameArchive">Tournaments &amp; weekends</option></select></label>
+            <label for="mobileAdminJumpSelect"><span>Team workspace</span><select id="mobileAdminJumpSelect" aria-label="Jump to team workspace section"><option value="">Jump to…</option><option value="dashboardTeamProfile">Team profile</option><option value="dashboardOverview">Team readiness</option><option value="dashboardGameDay">Game-Day Hub</option><option value="dashboardGameDaySetup">Game Day Setup</option><option value="dashboardGameArchive">Tournaments &amp; weekends</option></select></label>
           </div>
 
-          <section class="live-panel live-team-readiness-card" id="dashboardOverview">
+          <article class="live-panel live-team-profile-card live-team-profile-prominent" id="dashboardTeamProfile">
+              <div class="live-panel-heading"><div><p class="live-section-kicker">Current team</p><h2>Team profile</h2></div><span class="live-admin-status" id="teamProfileStatus">Connected</span></div>
+              <p class="live-panel-help">Confirm the team identity you are managing. This profile stays attached to this team when you switch elsewhere in the club.</p>
+              <div class="live-form-grid live-team-profile-form">
+                <label>Team name<input id="teamProfileName" type="text" maxlength="100" autocomplete="organization"></label>
+                <label>Age group
+                  <select id="teamProfileAgeGroup">
+                    <option value="10U">10U</option><option value="12U">12U</option><option value="14U">14U</option><option value="16U">16U</option><option value="18U">18U</option>
+                  </select>
+                </label>
+                <label>Season<input id="teamProfileSeason" type="text" maxlength="20" readonly></label>
+              </div>
+              <div class="live-dashboard-actions"><button id="saveTeamProfileButton" type="button">Save team profile</button></div>
+              <p id="teamProfileMessage" class="live-validation-message" role="status"></p>
+            </article>
+
+          <section class="live-panel live-team-readiness-card live-team-readiness-compact" id="dashboardOverview">
             <div class="live-panel-heading live-readiness-heading">
-              <div><p class="live-section-kicker">Guided team launch</p><h2 id="readinessHeadline">Getting your team game-day ready</h2></div>
+              <div><p class="live-section-kicker">Team readiness</p><h2 id="readinessHeadline">Checking game-day readiness…</h2></div>
               <div class="live-readiness-score" id="teamReadinessScore">Checking…</div>
             </div>
-            <p class="live-panel-help" id="readinessIntro">Finish the reusable setup once. WPI will carry the team identity, roster, scoring access and score-updates destination into every new game.</p>
+            <p class="live-panel-help" id="readinessIntro">A quiet status check for the reusable pieces this team needs. When everything is ready, this stays compact.</p>
             <div class="live-readiness-progress" aria-label="Team setup progress"><div class="live-readiness-progress-track"><span id="readinessProgressBar"></span></div><small id="readinessProgressLabel">Checking team setup…</small></div>
+
+            <div class="live-readiness-grid live-readiness-grid--compact" aria-label="Team readiness status">
+              <a class="live-readiness-item" id="readinessProfile" href="#dashboardTeamProfile"><span aria-hidden="true">◇</span><div><strong>Profile</strong><small>Team identity</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessRoster" href="#dashboardRoster"><span aria-hidden="true">≡</span><div><strong>Roster</strong><small>Players ready</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessAccess" href="#dashboardTeamAccess"><span aria-hidden="true">◎</span><div><strong>Scoring access</strong><small>Coverage ready</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span aria-hidden="true">◉</span><div><strong>Score updates</strong><small>GroupMe ready</small></div><em>Checking</em></a>
+            </div>
 
             <div class="live-readiness-next" id="readinessNextCard" data-state="loading">
               <span class="live-readiness-next-icon" id="readinessNextIcon" aria-hidden="true">→</span>
-              <div class="live-readiness-next-copy"><small>Recommended next step</small><strong id="readinessNextTitle">Checking your team setup…</strong><p id="readinessNextCopy">WPI is loading the reusable pieces your team needs for game day.</p></div>
-              <button id="readinessNextButton" type="button" disabled>Continue setup</button>
+              <div class="live-readiness-next-copy"><small>Needs attention</small><strong id="readinessNextTitle">Checking your team setup…</strong><p id="readinessNextCopy">WPI is checking the reusable pieces this team needs for game day.</p></div>
+              <button id="readinessNextButton" type="button" disabled>Review setup</button>
             </div>
 
-            <div class="live-readiness-grid" aria-label="Team launch checklist">
-              <a class="live-readiness-item" id="readinessProfile" href="#dashboardTeamProfile"><span>1</span><div><strong>Team profile</strong><small>Identity + age group</small></div><em>Checking</em></a>
-              <a class="live-readiness-item" id="readinessRoster" href="#dashboardRoster"><span>2</span><div><strong>Roster</strong><small>Enough players to start</small></div><em>Checking</em></a>
-              <a class="live-readiness-item" id="readinessAccess" href="#dashboardTeamAccess"><span>3</span><div><strong>Scoring access</strong><small>Owner, Admin or Scorer coverage</small></div><em>Checking</em></a>
-              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span>4</span><div><strong>Score updates</strong><small>Tested + active GroupMe topic</small></div><em>Checking</em></a>
-            </div>
-
-            <div class="live-readiness-launch-summary" id="readinessLaunchSummary"><strong>Setup in progress</strong><span>Complete the checklist above to reach the game-day ready state.</span></div>
+            <div class="live-readiness-launch-summary" id="readinessLaunchSummary"><strong>Checking readiness</strong><span>WPI is verifying the reusable team setup.</span></div>
             <div class="live-dashboard-actions live-overview-actions">
               <button id="continueLatestGameButton" type="button" hidden>Continue latest game</button>
               <button id="enterScorerCodeButton" type="button" hidden>Enter scorer code</button>
@@ -128,10 +142,10 @@
 
           <section class="live-panel live-game-day-hub" id="dashboardGameDay">
             <div class="live-panel-heading live-game-day-heading">
-              <div><p class="live-section-kicker">Games on deck</p><h2>Game-Day Hub</h2></div>
+              <div><p class="live-section-kicker">Game day</p><h2>Game-Day Hub</h2></div>
               <button id="addGameDayButton" class="live-game-day-add" type="button">+ Add game</button>
             </div>
-            <p class="live-panel-help">Official tournament games flow from WPI's Tournament section into Game Day. If a schedule is missing or delayed, add the tournament game manually; when the official matchup appears, WPI reconciles it to that same scored record instead of creating a duplicate.</p>
+            <p class="live-panel-help">Official tournament matchups appear here when available. If a schedule is missing or delayed, add the game manually; WPI can reconcile the official matchup later without duplicating the scored record.</p>
             <div class="live-game-day-paths" aria-label="Ways to add a game">
               <div><span aria-hidden="true">◆</span><strong>Tournament game</strong><small>Automatic from the WPI schedule · manual fallback always available</small></div>
               <div><span aria-hidden="true">○</span><strong>Friendly</strong><small>Manual game stored under a named Scrimmage Weekend</small></div>
@@ -146,7 +160,7 @@
               <p id="wpiScheduleSyncMessage" class="live-validation-message" role="status"></p>
             </section>
             <div class="live-game-day-toolbar">
-              <div><strong id="gameDayQueueCount">0 games on deck</strong><small id="gameDayQueueSummary">Upcoming, ready and live games stay here.</small></div>
+              <div><strong id="gameDayQueueCount">0 games</strong><small id="gameDayQueueSummary">Upcoming, ready and live games stay in one operational queue.</small></div>
               <button id="refreshGameDayButton" type="button">Refresh</button>
             </div>
             <div id="gameDayCoverage" class="live-game-day-coverage" aria-label="Scoring coverage"><span data-state="ready"><strong>0</strong> assigned</span><span data-state="ready"><strong>0</strong> need scorer</span></div>
@@ -154,24 +168,14 @@
             <div id="gameDayQueue" class="live-game-day-queue"><p class="live-empty-state">Loading the game-day queue…</p></div>
           </section>
 
-          <section class="live-dashboard-grid live-team-admin-grid">
-            <article class="live-panel live-team-profile-card" id="dashboardTeamProfile">
-              <div class="live-panel-heading"><div><p class="live-section-kicker">Team</p><h2>Team profile</h2></div><span class="live-admin-status" id="teamProfileStatus">Connected</span></div>
-              <p class="live-panel-help">This identity carries into new games and the scoring experience.</p>
-              <div class="live-form-grid live-team-profile-form">
-                <label>Team name<input id="teamProfileName" type="text" maxlength="100" autocomplete="organization"></label>
-                <label>Age group
-                  <select id="teamProfileAgeGroup">
-                    <option value="10U">10U</option><option value="12U">12U</option><option value="14U">14U</option><option value="16U">16U</option><option value="18U">18U</option>
-                  </select>
-                </label>
-                <label>Season<input id="teamProfileSeason" type="text" maxlength="20" readonly></label>
-              </div>
-              <div class="live-dashboard-actions"><button id="saveTeamProfileButton" type="button">Save team profile</button></div>
-              <p id="teamProfileMessage" class="live-validation-message" role="status"></p>
-            </article>
-
-            <article class="live-panel live-roster-admin-card" id="dashboardRoster">
+          <details class="live-game-day-setup-disclosure" id="dashboardGameDaySetup">
+            <summary>
+              <span class="live-game-day-setup-summary-copy"><small>Reusable setup</small><strong>Game Day Setup</strong><span>Roster, scoring access and GroupMe settings for this team.</span></span>
+              <span class="live-game-day-setup-status" id="gameDaySetupStatus">Checking…</span>
+            </summary>
+            <div class="live-game-day-setup-body">
+              <section class="live-dashboard-grid live-team-admin-grid live-game-day-setup-grid">
+                <article class="live-panel live-roster-admin-card" id="dashboardRoster">
               <div class="live-panel-heading">
                 <div><p class="live-section-kicker">Roster</p><h2>Build your roster in seconds</h2></div>
                 <span class="live-roster-count" id="dashboardRosterCount">0 players</span>
@@ -194,8 +198,7 @@
               </div>
               <p id="rosterReadOnlyMessage" class="live-panel-help" hidden>Only a Team Owner or Admin can change the permanent roster.</p>
             </article>
-
-            <article class="live-panel live-team-access-card" id="dashboardTeamAccess">
+                <article class="live-panel live-team-access-card" id="dashboardTeamAccess">
               <div class="live-panel-heading"><div><p class="live-section-kicker">Access</p><h2>Team access</h2></div><div class="live-access-heading-actions"><span class="live-access-count" id="teamAccessCount">—</span><button id="openAccountRegistryButton" type="button" hidden>Account registry</button></div></div>
               <p class="live-panel-help">Permanent team membership is managed here. Game-day handoff remains separate, temporary, and exactly one scorer controls a game at a time.</p>
               <div id="teamAccessManagerPanel" hidden>
@@ -222,8 +225,7 @@
               </div>
               <p id="teamAccessUnavailable" class="live-panel-help" hidden>Team access is managed by the Team Owner or an Admin.</p>
             </article>
-
-            <article class="live-panel live-groupme-setup-panel" id="dashboardGroupMe">
+                <article class="live-panel live-groupme-setup-panel" id="dashboardGroupMe">
               <div class="live-panel-heading live-groupme-setup-heading"><div><p class="live-section-kicker">Tournament score updates</p><h2>GroupMe setup</h2></div><div class="live-groupme-status-pill" id="groupMeSetupStatusPill">Not connected</div></div>
               <p class="live-panel-help">Pick the tournament GroupMe and Score Updates topic. WPI keeps the GroupMe credential protected on the server — there are no tokens or technical settings to manage here.</p>
               <div id="groupMeAdminPanel" hidden>
@@ -243,7 +245,9 @@
               <p id="groupMeReadOnly" class="live-panel-help" hidden></p>
               <div id="groupMeAudit" class="live-delivery-audit" hidden><span><strong id="deliverySentCount">0</strong> sent</span><span><strong id="deliveryFailedCount">0</strong> failed</span><span><strong id="deliveryPendingCount">0</strong> queued</span></div>
             </article>
-          </section>
+              </section>
+            </div>
+          </details>
 
           <section class="live-panel live-history-panel" id="dashboardGameArchive">
             <div class="live-panel-heading"><div><p class="live-section-kicker">Season archive</p><h2>Tournaments &amp; weekends</h2></div><button id="refreshGameArchiveButton" type="button">Refresh</button></div>
@@ -378,7 +382,7 @@
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
   <script src="js/live-team-context-v7-58-0.js?v=7.58.0"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
-  <script src="js/live-dashboard-v7-58-0.js?v=7.58.0"></script>
+  <script src="js/live-dashboard-v7-58-1.js?v=7.58.1"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

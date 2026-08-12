@@ -1,0 +1,160 @@
+/* WPI 7.58.1 — Owner Dashboard Refactor (includes 7.58.0 club workspace styles) */
+.live-club-header-copy{min-width:0}
+.live-dashboard-header .live-club-header-copy h1{margin:3px 0 2px;font-size:clamp(24px,3vw,32px);letter-spacing:-.035em;color:#132b45}
+.live-dashboard-team-context{display:flex;align-items:center;gap:5px;margin:0 0 5px!important;color:#617084!important;font-size:11px;font-weight:800}
+.live-dashboard-team-context strong{color:#0d4a84;font-size:12px;font-weight:900}
+.live-team-switcher{min-width:260px}
+.live-team-switcher select{max-width:360px}
+
+.live-club-overview{display:grid;gap:14px;margin-top:14px}
+.live-club-overview[hidden]{display:none!important}
+.live-club-overview-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:20px 22px;border:1px solid #d9e3ed;border-radius:18px;background:linear-gradient(135deg,#f8fbff,#f2f7fc)}
+.live-club-overview-hero h2{margin:3px 0 4px;color:#112c48;font-size:26px;letter-spacing:-.035em}
+.live-club-overview-hero p:last-child{margin:0;color:#64748b;font-size:11px;font-weight:750}
+.live-club-overview-hero>span{display:inline-flex;padding:6px 9px;border-radius:999px;background:#fff3c4;color:#6d5200;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+.live-club-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.live-club-metrics article{padding:15px 16px;border:1px solid #dde6ef;border-radius:14px;background:#fff}
+.live-club-metrics strong{display:block;color:#0d3d6f;font-size:26px;line-height:1}
+.live-club-metrics span{display:block;margin-top:5px;color:#6b7b8e;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.045em}
+.live-club-team-section{margin:0}
+.live-club-team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.live-club-team-card{display:grid;gap:10px;padding:14px;border:1px solid #dfe7ef;border-radius:14px;background:#fff;box-shadow:0 5px 18px rgba(17,44,72,.035)}
+.live-club-team-card[data-state="attention"]{border-color:#e9d39b;background:#fffdf7}
+.live-club-team-card-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.live-club-team-card-heading small{display:block;color:#7a8796;font-size:8px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+.live-club-team-card-heading h3{margin:2px 0;color:#17314c;font-size:16px;letter-spacing:-.02em}
+.live-club-team-card-heading span{display:block;color:#738094;font-size:9px;font-weight:800}
+.live-club-team-card-heading em{display:inline-flex;padding:5px 7px;border-radius:999px;background:#eaf7f0;color:#176341;font-size:8px;font-style:normal;font-weight:900;white-space:nowrap}
+.live-club-team-card[data-state="attention"] .live-club-team-card-heading em{background:#fff0cf;color:#7b5810}
+.live-club-team-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.live-club-team-stats span{display:grid;gap:2px;padding:7px;border-radius:9px;background:#f5f8fb;color:#708095;font-size:8px;font-weight:850;text-transform:uppercase}
+.live-club-team-stats strong{color:#223a53;font-size:13px}
+.live-club-team-card p{margin:0;color:#68788b;font-size:9px;line-height:1.45}
+.live-club-team-card button{justify-self:start;min-height:35px;padding:7px 10px;border:1px solid #ccd8e4;border-radius:9px;background:#fff;color:#173e66;font-size:9px;font-weight:900}
+.live-club-team-card button:not(:disabled):hover{border-color:#8fb2d5;background:#f7fbff}
+.live-club-team-card button:disabled{opacity:.55}
+.live-club-operations-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:12px}
+.live-club-operations-grid>.live-panel{margin:0}
+.live-club-game-list{display:grid;gap:7px}
+.live-club-game-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 11px;border:1px solid #e2e8ef;border-radius:11px;background:#fbfcfd}
+.live-club-game-row[data-state="live"]{border-color:#b8d7c6;background:#f6fbf8}
+.live-club-game-row>div:first-child{display:grid;gap:2px;min-width:0}
+.live-club-game-row small{color:#0d4a84;font-size:8px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+.live-club-game-row>div:first-child strong{overflow:hidden;color:#20384f;font-size:11px;text-overflow:ellipsis;white-space:nowrap}
+.live-club-game-row>div:first-child span{color:#768497;font-size:8px;font-weight:750}
+.live-club-game-row-meta{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap;text-align:right}
+.live-club-game-row-meta>strong{color:#172f48;font-size:14px}
+.live-club-game-row-meta>span{padding:4px 6px;border-radius:999px;background:#fff0cf;color:#7b5810;font-size:8px;font-weight:900}
+.live-club-game-row-meta a{color:#0d5fa8;font-size:8px;font-weight:900;text-decoration:none}
+.live-create-team-form{grid-template-columns:minmax(0,1.3fr) repeat(2,minmax(130px,.7fr))}
+.live-create-team-form label:first-child,.live-create-team-form label:last-child{grid-column:auto}
+.live-create-team-form label:first-child{grid-column:1/-1}
+
+@media(max-width:900px){
+  .live-club-team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .live-club-operations-grid{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .live-dashboard-header .live-club-header-copy h1{font-size:22px}
+  .live-dashboard-team-context{font-size:10px}
+  .live-team-switcher{min-width:0}
+  .live-club-overview-hero{padding:15px;flex-direction:column;gap:9px}
+  .live-club-overview-hero h2{font-size:22px}
+  .live-club-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .live-club-team-grid{grid-template-columns:1fr}
+  .live-club-game-row{align-items:flex-start;flex-direction:column}
+  .live-club-game-row-meta{justify-content:flex-start;text-align:left}
+  .live-create-team-form{grid-template-columns:1fr}
+  .live-create-team-form label{grid-column:1!important}
+}
+
+
+/* 7.58.1 — Owner/Admin information hierarchy. */
+.live-team-profile-prominent{margin-bottom:12px;padding:18px 20px;border-color:#d9e4ee;background:linear-gradient(145deg,#fff,#f8fbff);box-shadow:0 5px 18px rgba(17,44,72,.035);scroll-margin-top:14px}
+.live-team-profile-prominent .live-panel-heading{margin-bottom:8px}
+.live-team-profile-prominent .live-panel-heading h2{font-size:22px}
+.live-team-profile-prominent .live-panel-help{font-size:11px}
+.live-team-profile-prominent .live-team-profile-form{grid-template-columns:minmax(0,1.5fr) minmax(120px,.55fr) minmax(150px,.65fr);gap:10px;margin-top:12px}
+.live-team-profile-prominent .live-team-profile-form label:last-child{grid-column:auto;max-width:none}
+.live-team-profile-prominent .live-team-profile-form input,.live-team-profile-prominent .live-team-profile-form select{min-height:44px}
+.live-team-profile-prominent .live-dashboard-actions{margin-top:10px}
+
+.live-team-readiness-compact{padding:16px 18px;margin-bottom:12px;scroll-margin-top:14px}
+.live-team-readiness-compact .live-panel-heading{margin-bottom:7px}
+.live-team-readiness-compact h2{font-size:21px}
+.live-team-readiness-compact #readinessIntro{font-size:11px}
+.live-team-readiness-compact .live-readiness-progress{margin-top:10px;gap:5px}
+.live-team-readiness-compact .live-readiness-progress-track{height:6px}
+.live-readiness-grid--compact{gap:7px;margin-top:11px}
+.live-readiness-grid--compact .live-readiness-item{min-height:62px;padding:9px 10px;grid-template-columns:25px minmax(0,1fr);gap:1px 7px;border-radius:11px}
+.live-readiness-grid--compact .live-readiness-item>span{width:24px;height:24px;font-size:11px}
+.live-readiness-grid--compact .live-readiness-item strong{font-size:11px}
+.live-readiness-grid--compact .live-readiness-item small,.live-readiness-grid--compact .live-readiness-item em{font-size:8px}
+.live-team-readiness-compact .live-readiness-next{margin-top:10px;padding:10px 12px;grid-template-columns:32px minmax(0,1fr) auto;gap:10px;border-radius:11px}
+.live-team-readiness-compact .live-readiness-next-icon{width:30px;height:30px;font-size:12px}
+.live-team-readiness-compact .live-readiness-next-copy>strong{font-size:12px}
+.live-team-readiness-compact .live-readiness-next-copy>p{font-size:10px}
+.live-team-readiness-compact .live-readiness-next>button{min-height:36px;padding:7px 10px;font-size:10px}
+.live-team-readiness-compact .live-readiness-launch-summary{display:none!important}
+.live-team-readiness-compact .live-overview-actions{margin-top:9px}
+
+/* Ready teams stay quiet: four compact health indicators, no onboarding card. */
+#dashboardOverview[data-readiness-state="ready"]{padding:14px 18px}
+#dashboardOverview[data-readiness-state="ready"] #readinessIntro,
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-progress,
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-next,
+#dashboardOverview[data-readiness-state="ready"] #readinessLaunchSummary{display:none!important}
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-grid{display:grid!important;margin-top:7px}
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-heading{margin-bottom:4px}
+#dashboardOverview[data-readiness-state="ready"] #readinessHeadline{font-size:20px}
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-grid--compact .live-readiness-item{min-height:50px;grid-template-areas:"number copy" "number status"}
+#dashboardOverview[data-readiness-state="ready"] .live-readiness-grid--compact .live-readiness-item small{display:none}
+
+/* One operational queue. "Games on Deck" is retired as a separate concept. */
+#dashboardGameDay{scroll-margin-top:14px}
+#dashboardGameDay .live-game-day-toolbar{margin-top:12px}
+
+/* Reusable setup lives behind one disclosure instead of three permanently open cards. */
+.live-game-day-setup-disclosure{margin-top:14px;border:1px solid #dbe4ed;border-radius:17px;background:#fff;box-shadow:0 4px 16px rgba(17,44,72,.025);overflow:hidden;scroll-margin-top:14px}
+.live-game-day-setup-disclosure>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:78px;padding:15px 18px;cursor:pointer;list-style:none;background:linear-gradient(145deg,#fff,#f8fafc)}
+.live-game-day-setup-disclosure>summary::-webkit-details-marker{display:none}
+.live-game-day-setup-disclosure>summary::after{content:"⌄";display:grid;width:28px;height:28px;place-items:center;flex:0 0 28px;border-radius:50%;background:#eef3f7;color:#38516b;font-size:15px;font-weight:900;transition:transform .16s ease}
+.live-game-day-setup-disclosure[open]>summary::after{transform:rotate(180deg)}
+.live-game-day-setup-summary-copy{display:grid;gap:2px;min-width:0;flex:1}
+.live-game-day-setup-summary-copy>small{color:#0d5a9f;font-size:9px;font-weight:900;letter-spacing:.05em;text-transform:uppercase}
+.live-game-day-setup-summary-copy>strong{color:#17314c;font-size:18px;letter-spacing:-.02em}
+.live-game-day-setup-summary-copy>span{color:#718094;font-size:10px;line-height:1.35}
+.live-game-day-setup-status{display:inline-flex;align-items:center;min-height:28px;padding:5px 9px;border-radius:999px;background:#f1f4f7;color:#637184;font-size:9px;font-weight:900;white-space:nowrap}
+.live-game-day-setup-status[data-state="ready"]{background:#eaf7f0;color:#176341}
+.live-game-day-setup-status[data-state="attention"]{background:#fff0cf;color:#7b5810}
+.live-game-day-setup-body{padding:0 14px 14px;border-top:1px solid #e7edf3;background:#f8fafc}
+.live-game-day-setup-grid{gap:12px;padding-top:14px}
+.live-game-day-setup-grid>.live-panel{margin:0;background:#fff;scroll-margin-top:18px}
+
+/* Moving Team Profile and setup out of the old admin grid must not expose them to Supporters/Scorers. */
+body[data-live-role="viewer"] #dashboardTeamProfile,
+body[data-live-role="scorer"] #dashboardTeamProfile,
+body[data-live-role="viewer"] #dashboardGameDaySetup,
+body[data-live-role="scorer"] #dashboardGameDaySetup{display:none!important}
+
+@media(max-width:900px){
+  .live-team-profile-prominent .live-team-profile-form{grid-template-columns:minmax(0,1.4fr) minmax(120px,.6fr)}
+  .live-team-profile-prominent .live-team-profile-form label:last-child{grid-column:1/-1;max-width:220px}
+  .live-game-day-setup-disclosure{margin-left:10px;margin-right:10px}
+}
+@media(max-width:720px){
+  .live-team-profile-prominent{margin:0 10px 10px;padding:15px 14px;border-radius:15px}
+  .live-team-profile-prominent .live-team-profile-form{grid-template-columns:1fr}
+  .live-team-profile-prominent .live-team-profile-form label:last-child{grid-column:auto;max-width:none}
+  .live-team-readiness-compact{margin:0 10px 10px;padding:14px}
+  .live-readiness-grid--compact{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+  .live-team-readiness-compact .live-readiness-next{grid-template-columns:30px minmax(0,1fr)}
+  .live-team-readiness-compact .live-readiness-next>button{grid-column:1/-1;width:100%;min-height:44px}
+  #dashboardOverview[data-readiness-state="ready"]{margin:0 10px 10px;padding:13px 14px}
+  #dashboardOverview[data-readiness-state="ready"] .live-readiness-grid--compact{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .live-game-day-setup-disclosure{margin:10px;border-radius:15px}
+  .live-game-day-setup-disclosure>summary{min-height:72px;padding:13px;gap:9px}
+  .live-game-day-setup-summary-copy>strong{font-size:17px}
+  .live-game-day-setup-status{font-size:8px;padding:4px 7px}
+  .live-game-day-setup-body{padding:0 10px 10px}
+}
