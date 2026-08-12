@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/live-sandbox-v7-57-6.css?v=7.57.17">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-6.css?v=7.57.18">
+  <link rel="stylesheet" href="css/live-game-v7-57-18.css?v=7.57.18">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -129,12 +130,10 @@
             <small id="clockHelp">Enter 6:45 or type 645.</small>
           </label>
 
-          <details id="eventNoteDetails" class="live-field-full live-event-note-details">
-            <summary>Add note <span>Optional</span></summary>
-            <label id="eventNoteLabel" class="live-note-field">Additional notes
-              <input id="eventNote" type="text" maxlength="140" placeholder="Short context for supporters">
-            </label>
-          </details>
+          <label id="eventNoteLabel" class="live-field-full live-note-field live-note-field--open">
+            <span class="live-note-label">Notes <em>Optional</em></span>
+            <input id="eventNote" type="text" maxlength="140" placeholder="Short context for supporters">
+          </label>
 
           <details id="messagePreviewDetails" class="live-preview-details" hidden>
             <summary>Preview GroupMe message</summary>
@@ -177,7 +176,7 @@
         </section>
 
         <details class="live-game-controls" id="gameControlsDetails">
-          <summary>More controls</summary>
+          <summary>Game actions</summary>
           <div class="live-game-controls-grid">
             <label>Current period<select id="currentQuarter"><option value="1">Q1</option><option value="2">Q2</option><option value="3">Q3</option><option value="4">Q4</option><option value="5">OT1</option><option value="6">OT2</option><option value="7">OT3</option><option value="8">OT4</option></select></label>
             <button id="editCurrentLineupButton" type="button">Edit starters</button>
@@ -204,7 +203,7 @@
       <nav id="liveMobileNav" class="live-mobile-nav" aria-label="Live game navigation">
         <button id="mobileNavGame" type="button" class="is-active"><span aria-hidden="true">▣</span><strong>Game</strong></button>
         <button id="mobileNavUpdates" type="button"><span aria-hidden="true">▤</span><strong>Updates</strong></button>
-        <button id="mobileNavMore" type="button"><span aria-hidden="true">☰</span><strong>More</strong></button>
+        <button id="mobileNavMore" type="button"><span aria-hidden="true">☰</span><strong>Actions</strong></button>
       </nav>
     </section>
 
@@ -215,7 +214,8 @@
         <div><h3>Player totals</h3><div id="playerSummary"></div></div>
         <div><h3>Editable game recap</h3><textarea id="recapText" rows="10"></textarea></div>
       </div>
-      <div class="live-summary-actions"><button id="downloadLogButton" type="button">Download game log</button><button id="resetSandboxButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button></div>
+      <div class="live-summary-actions"><button id="reopenGameButton" type="button">Reopen game</button><button id="downloadLogButton" type="button">Download game log</button><button id="resetSandboxButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button></div>
+      <p id="reopenGameHelp" class="live-reopen-help">Ended by mistake? Reopen the game and continue scoring. If a final update already reached GroupMe, WPI records a correction when the game is reopened.</p>
     </section>
 
     <dialog id="lineupDialog" class="live-dialog">
@@ -315,10 +315,10 @@
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="config/live-sandbox.js?v=7.57.17"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.17"></script>
-  <script src="js/live-team-context-v7-57-3.js?v=7.57.17"></script>
-  <script src="js/live-game-v7-57-14.js?v=7.57.17"></script>
+  <script src="config/live-sandbox.js?v=7.57.18"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.18"></script>
+  <script src="js/live-team-context-v7-57-3.js?v=7.57.18"></script>
+  <script src="js/live-game-v7-57-18.js?v=7.57.18"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

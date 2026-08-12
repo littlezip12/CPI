@@ -1,0 +1,37 @@
+WPI 7.57.18 — Scorer Access & Game Recovery
+Built from pushed baseline: CPI-main - 2026-08-09T215146.834.zip
+
+PRODUCT
+- Adds explicit Make scorer action for accepted Supporters in Team Access.
+- Keeps Viewer-first/Supporter-first signup; promotion happens only after registration.
+- Makes Notes always visible and optional in the scoring form.
+- Renames More controls to Game actions and mobile More to Actions.
+- Adds Reopen game after an accidental Final Whistle/end-game action.
+
+GAME RECOVERY
+- Owner/Admin may reopen a final game.
+- The most recent scorer may reopen within 30 minutes; server-side authorization is authoritative.
+- Reopen creates a new scorer-control session and is written to scorer audit.
+- Auto-generated game-summary events and an accidental Final-whistle period-end event are voided before continued scoring.
+- Already-sent GroupMe deliveries are preserved in audit; WPI sends a reopen correction when message delivery is active.
+- Final score, normal scoring events, roster and lineups are preserved.
+
+DEPLOYMENT
+- Apply: supabase/migrations/202608110001_scorer_access_game_recovery.sql
+- No Edge Function redeploy.
+- No new secret.
+- Do not redeploy groupme-post or roster-extract.
+
+PROTECTED
+- js/live-backend-v7-56-8.js unchanged.
+- js/live-sandbox-v7-56-15.js unchanged.
+- js/live-game-v7-57-14.js unchanged and retained as the previous canonical scorer baseline.
+- supabase/functions/groupme-post/index.ts unchanged.
+- supabase/functions/roster-extract/index.ts unchanged.
+- 7.57.17 account-directory migration unchanged.
+
+VALIDATION
+- Focused 7.57.18 release gate passed.
+- Node/Python syntax checks passed.
+- Release-integrity, team-directory logo, tournament-season, multi-season, public-tournament-hub and tournament-data validations passed.
+- Full monolithic release-check was attempted for 210 seconds and showed no observed failure through the tournament/release-integrity pipeline before the assistant execution window expired. User local full gate remains required before push.

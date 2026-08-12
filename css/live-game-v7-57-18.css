@@ -1,0 +1,12 @@
+/* WPI 7.57.18 — scorer access and game recovery polish. */
+.live-note-field--open { display:grid !important; gap:6px; margin-top:0; }
+.live-note-label { display:flex; align-items:baseline; gap:7px; color:var(--live-ink); font-size:13px; font-weight:850; }
+.live-note-label em { color:#8a96a3; font-size:11px; font-style:normal; font-weight:700; }
+.live-note-field--open input { min-height:48px; }
+.live-summary-actions #reopenGameButton { border-color:#d6a62d; background:#fff8e6; color:#6b4b00; }
+.live-reopen-help { margin:9px 0 0; color:var(--live-muted); font-size:12px; line-height:1.5; }
+@media (max-width:720px) {
+  .live-note-field--open input { min-height:50px; }
+  .live-summary-actions #reopenGameButton { width:100%; min-height:50px; }
+  .live-reopen-help { font-size:11px; }
+}
