@@ -1,0 +1,26 @@
+WPI 7.57.19 — Scorer Handoff & Repeat Final Reliability
+Cumulative hotfix over pushed baseline: WPI 7.57.17 — Pilot Account Directory & Access Operations.
+Includes the 7.57.18 Scorer Access & Game Recovery changes plus the 7.57.19 fixes.
+
+PILOT FIXES
+- Supporter read-only view now keeps the game-scoped scorer-code handoff controls interactive.
+- Supporter-facing inline action is labeled Take over scoring; a valid six-digit scorer code is still required.
+- Taking over scoring never changes the Supporter's permanent team role.
+- Reopening a game now records the current score explicitly on the reopen score-correction audit event, preventing recalculateScore() from resetting the game to 0–0.
+- End-game controls are re-enabled after a successful reopen, so a game can be finalized again after one or multiple accidental finals.
+- Each reopen voids the currently active auto-generated Final Whistle summary events; each subsequent correct final generates a fresh full recap/summary from all active scoring data.
+- Previously sent GroupMe messages remain in delivery audit. A reopen correction is sent; a later final sends a new final/summary sequence.
+
+SECURITY / RELIABILITY
+- Supporters do NOT get one-click Admin emergency takeover. Their Take over scoring path requires the scorer handoff code.
+- Existing exactly-one-active-scorer, scorer-session, GroupMe delivery, Final Whistle, and multipart-summary architecture is preserved.
+- No Edge Function changes.
+- No new Supabase migration beyond the already-applied 7.57.18 recovery migration.
+- No new secrets.
+
+PROTECTED
+- js/live-backend-v7-56-8.js unchanged.
+- js/live-sandbox-v7-56-15.js unchanged.
+- js/live-game-v7-57-14.js unchanged.
+- groupme-post and roster-extract unchanged.
+- 7.57.18 scorer-access/game-recovery migration unchanged.

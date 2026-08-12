@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.57.18",
-  "name": "Scorer Access & Game Recovery",
+  "version": "7.57.19",
+  "name": "Scorer Handoff & Repeat Final Reliability",
   "date": "2026-08-11",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Fixes Supporter-to-Scorer promotion, makes Notes always visible, renames More controls to Game actions, and adds an audited Reopen game recovery path for accidental finals while preserving scoring, GroupMe delivery, and tournament/weekend records.",
+  "notes": "Fixes Supporter game-scoped scorer-code handoff, preserves the current score when reopening an accidental final, re-enables repeat finalization after reopen, and regenerates a fresh full recap/summary on every subsequent valid Final Whistle.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -97,7 +97,7 @@
   "liveScoringGuestScorerHandoffRelease": "7.56.8",
   "liveScoringScopedAdminRelease": "7.56.8",
   "liveScoringScorerControlRelease": "7.56.8",
-  "liveScoringInGameCodeClaimRelease": "7.56.8",
+  "liveScoringInGameCodeClaimRelease": "7.57.19",
   "liveScoringGroupMeTopicRelease": "7.56.8",
   "liveScoringLiveUxRefreshRelease": "7.56.9",
   "liveScoringGroupMeSetupUxRelease": "7.57.4",
@@ -141,7 +141,9 @@
   "liveScoringAccountOperationsRelease": "7.57.17",
   "liveScoringAccountExportRelease": "7.57.17",
   "liveScoringScorerPromotionRelease": "7.57.18",
-  "liveScoringGameRecoveryRelease": "7.57.18",
+  "liveScoringGameRecoveryRelease": "7.57.19",
   "liveScoringGameNotesRelease": "7.57.18",
-  "liveScoringGameActionsUxRelease": "7.57.18"
+  "liveScoringGameActionsUxRelease": "7.57.18",
+  "liveScoringSupporterHandoffRelease": "7.57.19",
+  "liveScoringRepeatFinalReliabilityRelease": "7.57.19"
 }
