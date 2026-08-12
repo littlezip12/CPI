@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.57.20",
-  "name": "Handoff Delivery & Reopen Control Reliability",
+  "version": "7.57.21",
+  "name": "Final Recovery Permission Hotfix",
   "date": "2026-08-11",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Fixes game-scoped Supporter scorer authority so post-handoff connected sync and GroupMe delivery continue normally, and fully restores poolside scoring controls immediately after reopening an accidental final without requiring a quarter change.",
+  "notes": "Restores Reopen game for the legitimate most-recent handoff scorer without exposing recovery controls to ordinary Supporters; server-side recovery eligibility remains authoritative.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -147,5 +147,6 @@
   "liveScoringSupporterHandoffRelease": "7.57.20",
   "liveScoringRepeatFinalReliabilityRelease": "7.57.20",
   "liveScoringHandoffDeliveryReliabilityRelease": "7.57.20",
-  "liveScoringReopenControlRecoveryRelease": "7.57.20"
+  "liveScoringReopenControlRecoveryRelease": "7.57.20",
+  "liveScoringFinalRecoveryPermissionRelease": "7.57.21"
 }

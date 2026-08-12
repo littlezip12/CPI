@@ -1,0 +1,18 @@
+WPI 7.57.21 — Final Recovery Permission Hotfix
+Cumulative hotfix over pushed WPI 7.57.20.
+
+PILOT FIX
+- Owner/Admin Reopen Game behavior remains unchanged.
+- A Supporter who legitimately accepted a scorer handoff and was the most-recent scorer may now see Reopen game after Final while the 30-minute recovery window is valid.
+- Ordinary Supporters who did not score the game do not see the Reopen action.
+- The final recap uses a server-side eligibility RPC to decide whether Reopen should be shown; the mutation RPC remains the final authority.
+- Repeated reopen/final cycles remain supported, including a Supporter whose next scorer session was created by game_reopen.
+
+RELIABILITY PRESERVED
+- 7.57.20 handoff delivery fix remains intact.
+- 7.57.19 score preservation, immediate control recovery, repeat Final Whistle, and fresh full recap behavior remain intact.
+- No Edge Function changes.
+- No secret changes.
+
+SUPABASE
+- New migration: supabase/migrations/202608110002_final_recovery_permission_hotfix.sql
