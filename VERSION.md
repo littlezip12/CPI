@@ -1,1 +1,1 @@
-# WPI 7.57.21 — Final Recovery Permission Hotfix
+# WPI 7.57.22 — Pilot Readiness & Operational Hardening

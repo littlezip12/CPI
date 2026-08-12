@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/live-sandbox-v7-57-6.css?v=7.57.18">
   <link rel="stylesheet" href="css/live-game-v7-57-18.css?v=7.57.20">
+  <link rel="stylesheet" href="css/live-game-v7-57-22.css?v=7.57.22">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -68,15 +69,26 @@
       </div>
     </section>
 
+    <section class="live-preflight-card" id="gamePreflight" aria-labelledby="gamePreflightHeading">
+      <div class="live-preflight-heading"><div><p class="live-section-kicker">Before you start</p><h2 id="gamePreflightHeading">Game ready check</h2></div><strong id="preflightSummary" data-state="block">Checking game readiness…</strong></div>
+      <div class="live-preflight-grid">
+        <div id="preflightMatchup" class="live-preflight-item" data-state="pending"><span aria-hidden="true"></span><div><strong>Matchup</strong><small>Checking…</small></div></div>
+        <div id="preflightRoster" class="live-preflight-item" data-state="pending"><span aria-hidden="true"></span><div><strong>Roster</strong><small>Checking…</small></div></div>
+        <div id="preflightScorer" class="live-preflight-item" data-state="pending"><span aria-hidden="true"></span><div><strong>Scorer</strong><small>Checking…</small></div></div>
+        <div id="preflightConnection" class="live-preflight-item" data-state="pending"><span aria-hidden="true"></span><div><strong>Connection</strong><small>Checking…</small></div></div>
+        <div id="preflightGroupMe" class="live-preflight-item" data-state="pending"><span aria-hidden="true"></span><div><strong>Score updates</strong><small>Checking…</small></div></div>
+      </div>
+    </section>
+
     <section class="live-launch-row" id="launchRow">
       <div class="live-launch-copy"><span class="live-launch-step">3</span><div><strong>Starting lineup</strong><span id="launchRuleText">Select one goalie and six field players for 14U.</span></div></div>
-      <button id="startGameButton" type="button">Choose starters &amp; start game</button>
+      <button id="startGameButton" type="button">Start game</button>
     </section>
 
     <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
       <div class="live-game-toolbar">
         <div class="live-game-brand"><strong><span>WPI</span> LIVE</strong><small id="compactModeLabel">WPI Live game</small></div>
-        <div class="live-game-toolbar-actions"><span id="gameGroupMeBadge" class="live-game-groupme-badge" data-state="idle">Preview</span><button id="gameSignOutButton" type="button">Sign out</button></div>
+        <div class="live-game-toolbar-actions"><span id="gameSyncBadge" class="live-game-sync-badge" data-state="local">Checking…</span><span id="gameGroupMeBadge" class="live-game-groupme-badge" data-state="idle">Preview</span><button id="gameSignOutButton" type="button">Sign out</button></div>
       </div>
 
       <section id="scorerControlStrip" class="live-scorer-control-strip" hidden aria-live="polite">
@@ -318,7 +330,7 @@
   <script src="config/live-sandbox.js?v=7.57.20"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
   <script src="js/live-team-context-v7-57-3.js?v=7.57.20"></script>
-  <script src="js/live-game-v7-57-21.js?v=7.57.21"></script>
+  <script src="js/live-game-v7-57-22.js?v=7.57.22"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

@@ -1,0 +1,39 @@
+/* WPI 7.57.22 — Pilot readiness & operational hardening. */
+.live-preflight-card { margin:14px 0 10px; padding:16px 18px; border:1px solid #dfe6ee; border-radius:18px; background:linear-gradient(145deg,#fff,#f8fbfe); }
+.live-preflight-heading { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; margin-bottom:12px; }
+.live-preflight-heading h2 { margin:2px 0 0; font-size:18px; }
+#preflightSummary { display:inline-flex; align-items:center; min-height:32px; padding:6px 10px; border-radius:999px; background:#fff3df; color:#7b5310; font-size:12px; font-weight:850; text-align:right; }
+#preflightSummary[data-state="ready"] { background:#e8f7ee; color:#176b3a; }
+.live-preflight-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; }
+.live-preflight-item { display:flex; gap:9px; align-items:flex-start; min-width:0; padding:10px; border:1px solid #e5eaf0; border-radius:13px; background:#fff; }
+.live-preflight-item > span { width:10px; height:10px; flex:0 0 10px; margin-top:4px; border-radius:50%; background:#a7b1bd; }
+.live-preflight-item > div { display:grid; gap:2px; min-width:0; }
+.live-preflight-item strong { font-size:12px; }
+.live-preflight-item small { color:#748191; font-size:10px; line-height:1.35; }
+.live-preflight-item[data-state="ready"] > span { background:#168a55; box-shadow:0 0 0 3px rgba(22,138,85,.12); }
+.live-preflight-item[data-state="warn"] > span { background:#d4a72c; box-shadow:0 0 0 3px rgba(212,167,44,.14); }
+.live-preflight-item[data-state="block"] > span { background:#c9453d; box-shadow:0 0 0 3px rgba(201,69,61,.12); }
+.live-game-sync-badge { display:inline-flex; align-items:center; min-height:32px; padding:6px 9px; border-radius:999px; background:#eef2f7; color:#536273; font-size:11px; font-weight:850; white-space:nowrap; }
+.live-game-sync-badge[data-state="saved"] { background:#e8f7ee; color:#176b3a; }
+.live-game-sync-badge[data-state="saving"] { background:#edf5ff; color:#245b96; }
+.live-game-sync-badge[data-state="offline"] { background:#fff3df; color:#7b5310; }
+.live-game-sync-badge[data-state="error"] { background:#fff0ef; color:#a32720; }
+.live-backend-sync-status[data-state="offline"] { background:#fff3df; color:#7b5310; }
+#startGameButton:disabled { opacity:.5; cursor:not-allowed; box-shadow:none; }
+body.wpi-live-sandbox-page.is-live-game .live-preflight-card { display:none !important; }
+@media (max-width:900px) {
+  .live-preflight-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .live-preflight-item:last-child { grid-column:1 / -1; }
+}
+@media (max-width:720px) {
+  .live-preflight-card { margin:10px 0 8px; padding:13px; border-radius:15px; }
+  .live-preflight-heading { gap:8px; margin-bottom:10px; }
+  .live-preflight-heading h2 { font-size:16px; }
+  #preflightSummary { max-width:48%; min-height:28px; padding:5px 8px; font-size:10px; }
+  .live-preflight-grid { grid-template-columns:1fr; gap:6px; }
+  .live-preflight-item:last-child { grid-column:auto; }
+  .live-preflight-item { padding:9px 10px; }
+  .live-preflight-item small { font-size:10px; }
+  .live-game-toolbar-actions { gap:5px; }
+  .live-game-sync-badge, .live-game-groupme-badge { min-height:28px; padding:5px 7px; font-size:10px; }
+}

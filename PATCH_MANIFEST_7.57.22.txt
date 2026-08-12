@@ -1,0 +1,32 @@
+WPI 7.57.22 — Pilot Readiness & Operational Hardening
+Built from: CPI-main - 2026-08-11T205554.368.zip (WPI 7.57.21)
+
+Primary product changes:
+- Game ready check before Start game
+- visible live sync/offline status
+- local-first offline scoring continuity
+- automatic reconnect/app-resume scorer and delivery recovery
+- focused regression coverage for validated handoff/reopen/re-final behavior
+
+No Supabase migration.
+No Edge Function redeploy.
+No new secrets.
+
+Primary new files:
+- css/live-game-v7-57-22.css
+- js/live-game-v7-57-22.js
+- scripts/test-live-pilot-readiness-v7-57-22.py
+- release-check-live-7.57.22
+- LIVE_PILOT_READINESS_SETUP_7.57.22.md
+- WPI_7.57.22_PILOT_READINESS_HANDOFF.md
+
+Existing files intentionally updated:
+- VERSION.md
+- config/site-release.json
+- config/live-sandbox.js
+- config/live-sandbox.example.js
+- live-game.html
+- release-check
+- historical release allowlists required by the monolithic release gate
+
+Protected scoring/backend/Edge Function assets remain unchanged.
