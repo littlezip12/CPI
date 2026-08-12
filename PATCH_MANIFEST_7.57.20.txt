@@ -1,0 +1,23 @@
+WPI 7.57.20 — Handoff Delivery & Reopen Control Reliability
+Cumulative hotfix over WPI 7.57.19.
+
+PILOT FIXES
+- A Supporter who accepts a valid scorer handoff now retains game-scoped backend scoring authority without changing the permanent Supporter team role.
+- Post-handoff play persistence and GroupMe delivery continue from the new scorer instead of remaining queued because the permanent Viewer/Supporter role blocked the connected backend.
+- Recoverable delivery scheduling also recognizes active game-scoped scorer authority after a handoff.
+- Supporter read-only mode now tracks which live controls it disabled and reverses only those changes when that account gains scoring control.
+- Reopen Game explicitly clears stale pending-period state, restores poolside controls, rebuilds the current period/clock UI, and resets play entry so scoring is immediately available without changing the quarter selector.
+- Repeat Final Whistle / fresh summary behavior from 7.57.19 is preserved.
+
+SECURITY / RELIABILITY
+- Permanent membership remains Supporter. The temporary backend authority exists only while live_scorer_control_status reports canScore=true for that game.
+- Database RLS and exactly-one-active-scorer session enforcement remain authoritative.
+- No Edge Function changes.
+- No Supabase migration.
+- No secret changes.
+
+PROTECTED
+- js/live-backend-v7-56-8.js unchanged.
+- js/live-sandbox-v7-56-15.js unchanged.
+- js/live-game-v7-57-14.js unchanged.
+- groupme-post and roster-extract unchanged.
