@@ -1,1 +1,1 @@
-# WPI 7.57.22 — Pilot Readiness & Operational Hardening
+# WPI 7.58.0 — Club Workspace Foundation
