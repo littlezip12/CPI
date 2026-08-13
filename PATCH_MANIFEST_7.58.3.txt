@@ -1,0 +1,29 @@
+WPI 7.58.3 — Multi-Team Access & Following
+===========================================
+
+Baseline: pushed + live-site-validated WPI 7.58.2
+
+Primary product changes
+- Separate `live_team_follows` relationship; no extra Supporter memberships.
+- Lamorinda-only Supporter/Scorer follow eligibility enforced in Supabase.
+- Read-only followed-team game visibility for live/upcoming/final experiences.
+- Supporter and Scorer role-home Following UX.
+- Owner/Admin follower visibility separate from Team Access membership.
+- Direct followed-game routes remain read-only and do not become management context.
+- GroupMe delivery/configuration and scorer controls stay private on followed teams.
+
+Infrastructure
+- Required migration: supabase/migrations/202608120001_multi_team_access_following.sql
+- No Edge Function redeploy.
+- No new secret.
+
+Protected foundations preserved
+- WPI 7.57.22 scoring/recovery/GroupMe reliability
+- WPI 7.58.0 Club → Teams stable identity/context
+- WPI 7.58.2 team profiles, roster versions, and default lineups
+
+Validation
+- release-check-live-7.58.3 passes
+- full release-check passed in contiguous segments through `CPI release check passed.`
+- generated data/tournaments and qa restored to pushed 7.58.2 baseline after gate
+- dashboard DOM audit: 234 IDs, 234 unique, controller references resolved

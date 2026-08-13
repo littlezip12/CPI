@@ -1,1 +1,1 @@
-# WPI 7.58.2 — Multi-Team Profiles & Rosters
+# WPI 7.58.3 — Multi-Team Access & Following
