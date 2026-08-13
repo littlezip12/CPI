@@ -17,7 +17,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 HUB_PATH = ROOT / "data/tournaments/public-hub.json"
 OUT_PATH = ROOT / "data/live/tournament-schedule-index.json"
-RELEASE = "7.57.8"
+RELEASE = "7.58.5"
 
 
 def parse_time(date_iso: str | None, time_label: str | None, tz_name: str | None) -> str | None:
@@ -138,7 +138,7 @@ def main():
     payload = {
         "schemaVersion": 1,
         "release": RELEASE,
-        "generatedAt": "2026-08-08T00:00:00Z",
+        "generatedAt": "2026-08-13T00:00:00Z",
         "source": "data/tournaments/public-hub.json + platform event dataPath files",
         "activeCompetitiveSeason": active_season,
         "nextTournament": {
@@ -153,6 +153,12 @@ def main():
         "events": events_out,
         "games": games_out,
         "counts": {"events": len(events_out), "games": len(games_out)},
+        "feedState": {
+            "currentSeasonSchedulePublished": bool(games_out),
+            "currentSeasonEventCount": len(events_out),
+            "currentSeasonGameCount": len(games_out),
+            "teamIdentityPolicy": "squad_safe_no_guessing",
+        },
         "skipped": skipped,
     }
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)

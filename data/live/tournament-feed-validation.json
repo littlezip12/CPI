@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "release": "7.58.5",
+  "purpose": "Source-backed QA only; never loaded by the production dashboard.",
+  "generatedAt": "2026-08-13T00:00:00Z",
+  "cases": [
+    {
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "eventName": "2025 Evan Cousineau Memorial Cup",
+      "gameId": "game-2025-evan-cousineau-memorial-cup-14u-boys-platinum-14bpt05",
+      "gameNumber": "14BPT05",
+      "divisionLabel": "14U Boys Platinum",
+      "dateIso": "2025-10-04",
+      "timeLabel": "12:50 PM",
+      "venue": "WOOLLETT NEAR RIGHT",
+      "sourceTeamName": "LAMORINDA A",
+      "opponentName": "ORANGE COUNTY WPC BLUE",
+      "sourceTeamClubId": "club-lamorinda",
+      "expected": "auto_match_a_only",
+      "sourcePath": "data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json"
+    },
+    {
+      "eventId": "2025-evan-cousineau-memorial-cup",
+      "eventName": "2025 Evan Cousineau Memorial Cup",
+      "gameId": "game-2025-evan-cousineau-memorial-cup-14u-boys-silver-14bag15",
+      "gameNumber": "14BAG15",
+      "divisionLabel": "14U Boys Silver",
+      "dateIso": "2025-10-04",
+      "timeLabel": "11:10 AM",
+      "venue": "ALISO NIGUEL HS",
+      "sourceTeamName": "LAMORINDA B",
+      "opponentName": "NSD STARS",
+      "sourceTeamClubId": "club-lamorinda",
+      "expected": "auto_match_b_only",
+      "sourcePath": "data/tournaments/platform/events/2025-evan-cousineau-memorial-cup.json"
+    },
+    {
+      "eventId": "2026-quiksilver-cup",
+      "eventName": "2026 Quiksilver Cup",
+      "gameId": "game-2026-quiksilver-cup-14u-boys-championship-14b09",
+      "gameNumber": "14B09",
+      "divisionLabel": "14U Boys",
+      "dateIso": "2026-07-10",
+      "timeLabel": "1:00 PM",
+      "venue": "FULLERTON HS",
+      "sourceTeamName": "LAMORINDA",
+      "opponentName": "LA JOLLA UNITED",
+      "sourceTeamClubId": "club-lamorinda",
+      "expected": "identity_review_when_multiple_live_squads",
+      "sourcePath": "data/tournaments/platform/events/2026-quiksilver-cup.json"
+    }
+  ]
+}

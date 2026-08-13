@@ -1,0 +1,23 @@
+WPI 7.58.5 — Tournament Feed → Game-Day Validation
+
+Base:
+  Pushed/validated WPI 7.58.4 — Event Archive & Game Recaps
+  User ZIP: CPI-main - 2026-08-13T152419.125.zip
+
+Primary product changes:
+  - squad-safe official tournament feed matching
+  - club-only official identities become review when multiple Live squads exist
+  - source-backed feed QA using real Evan Cousineau / Quiksilver WPI data
+  - current-season production feed remains source-truthful (0 games until official schedule publication)
+  - existing manual-game canonical reconciliation and duplicate protections preserved
+
+Infrastructure:
+  - no Supabase migration
+  - no Edge Function redeploy
+  - no new secret
+
+Validation:
+  - focused WPI Live 7.58.5 gate passed
+  - protected 7.57.22 / 7.58.0 / 7.58.2 / 7.58.3 / 7.58.4 regressions passed
+  - full repository release gate passed in contiguous segments through `CPI release check passed.`
+  - gate-generated data/tournaments and qa artifacts restored to 7.58.4 baseline

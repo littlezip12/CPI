@@ -1,1 +1,1 @@
-# WPI 7.58.4 — Event Archive & Game Recaps
+# WPI 7.58.5 — Tournament Feed → Game-Day Validation
