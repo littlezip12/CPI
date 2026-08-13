@@ -2513,22 +2513,45 @@
     window.location.assign(dashboardUrl());
   }
 
-  function maybeAutoLaunchFromDashboard() {
-    const url = new URL(window.location.href);
-    if (url.searchParams.get("launch") !== "1") return;
+  let dashboardLaunchAttempts = 0;
+  let dashboardLaunchOpening = false;
 
-    // Consume the one-time launch intent so a refresh does not repeatedly reopen
-    // the starters dialog. The game and team identifiers remain in the URL.
+  function consumeDashboardLaunchIntent(url = new URL(window.location.href)) {
     url.searchParams.delete("launch");
     window.history.replaceState(null, "", url.href);
+  }
 
-    if (state.game.status !== "setup" || !scorerControl?.canScore) return;
+  function maybeAutoLaunchFromDashboard() {
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("launch") !== "1" || dashboardLaunchOpening) return;
+
+    // A dashboard Start action should land directly in starter confirmation.
+    // Scorer authority can settle a fraction of a second after navigation, so
+    // keep the one-time launch intent until the game is genuinely start-ready.
+    if (state.game.status !== "setup") {
+      if (["live","ended"].includes(state.game.status)) consumeDashboardLaunchIntent(url);
+      return;
+    }
+
     const readiness = refreshPilotReadiness();
     if (!readiness.canStart) {
+      const scorerStillSettling = readiness.remoteReady && !readiness.scorerReady;
+      if (scorerStillSettling && dashboardLaunchAttempts < 20) {
+        dashboardLaunchAttempts += 1;
+        window.setTimeout(maybeAutoLaunchFromDashboard, 150);
+        return;
+      }
       if ($("connectionDetail")) $("connectionDetail").textContent = readiness.blocker || "Game setup needs attention before scoring can start.";
       return;
     }
-    window.requestAnimationFrame(() => openLineupDialog(1));
+
+    dashboardLaunchOpening = true;
+    dashboardLaunchAttempts = 0;
+    consumeDashboardLaunchIntent(url);
+    window.requestAnimationFrame(() => {
+      openLineupDialog(1);
+      dashboardLaunchOpening = false;
+    });
   }
 
   function signOut() {

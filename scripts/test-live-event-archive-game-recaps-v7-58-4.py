@@ -26,7 +26,7 @@ require(release.get('liveScoringMultiTeamAccessFollowingRelease')=='7.58.3','7.5
 require(release.get('liveScoringGameFlowUxRelease')=='7.58.4','game-flow UX marker missing')
 require(release.get('liveScoringGameNavigationRelease')=='7.58.4','game navigation marker missing')
 
-for token in ('css/live-dashboard-v7-58-4.css?v=7.58.4','js/live-dashboard-v7-58-4.js?v=7.58.4-flowfix1'):
+for token in ('css/live-dashboard-v7-58-4.css?v=7.58.4','js/live-dashboard-v7-58-4.js?v=7.58.4-flowfix2'):
     require(token in html,f'missing 7.58.4 dashboard asset: {token}')
 for token in ('css/live-game-recap-v7-58-4.css?v=7.58.4','js/live-game-recap-v7-58-4.js?v=7.58.4','js/live-backend-v7-56-8.js'):
     require(token in recap_html,f'missing recap asset: {token}')
@@ -48,9 +48,9 @@ require('live-game-recap.html' in js,'archive/final routes do not open permanent
 # Game launch is one dashboard action followed directly by starter confirmation.
 for token in ('function liveGameLaunchUrl(gameId)','launch:1','window.location.assign(liveGameLaunchUrl(gameId))'):
     require(token in js,f'missing single-action game launch behavior: {token}')
-for token in ('js/live-game-v7-58-4.js?v=7.58.4','css/live-game-v7-58-4.css?v=7.58.4','id="dashboardTopButton"','id="gameDashboardButton"','id="summaryDashboardButton"'):
+for token in ('js/live-game-v7-58-4.js?v=7.58.4-flowfix2','css/live-game-v7-58-4.css?v=7.58.4','id="dashboardTopButton"','id="gameDashboardButton"','id="summaryDashboardButton"'):
     require(token in game_html,f'missing game navigation asset/control: {token}')
-for token in ('function maybeAutoLaunchFromDashboard()','url.searchParams.get("launch") !== "1"','openLineupDialog(1)','Confirm starters & begin','function returnToDashboard()','live-dashboard.html'):
+for token in ('function maybeAutoLaunchFromDashboard()','url.searchParams.get("launch") !== "1"','consumeDashboardLaunchIntent','dashboardLaunchAttempts < 20','openLineupDialog(1)','Confirm starters & begin','function returnToDashboard()','live-dashboard.html'):
     require(token in game_js,f'missing game-flow navigation behavior: {token}')
 require('Score updates are off. The game will still be recorded in WPI.' in game_js,'GroupMe warning must remain non-blocking')
 require('.live-dashboard-return' in game_css,'dashboard return styling missing')
