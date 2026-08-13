@@ -13,6 +13,9 @@ css=read('css/live-dashboard-v7-58-4.css')
 recap_html=read('live-game-recap.html')
 recap_js=read('js/live-game-recap-v7-58-4.js')
 recap_css=read('css/live-game-recap-v7-58-4.css')
+game_html=read('live-game.html')
+game_js=read('js/live-game-v7-58-4.js')
+game_css=read('css/live-game-v7-58-4.css')
 sql=read('supabase/migrations/202608130001_event_archive_game_recaps.sql')
 
 require(read('VERSION.md').strip()=='# WPI 7.58.4 — Event Archive & Game Recaps','VERSION mismatch')
@@ -20,8 +23,10 @@ require(release.get('version')=='7.58.4' and release.get('name')=='Event Archive
 for key in ('liveScoringDashboardRelease','liveScoringGameArchiveRelease','liveScoringEventArchiveRelease','liveScoringGameRecapRelease','liveScoringEventGroupingRelease','liveScoringArchiveReconciliationRelease'):
     require(release.get(key)=='7.58.4',f'missing 7.58.4 marker: {key}')
 require(release.get('liveScoringMultiTeamAccessFollowingRelease')=='7.58.3','7.58.3 following foundation marker changed')
+require(release.get('liveScoringGameFlowUxRelease')=='7.58.4','game-flow UX marker missing')
+require(release.get('liveScoringGameNavigationRelease')=='7.58.4','game navigation marker missing')
 
-for token in ('css/live-dashboard-v7-58-4.css?v=7.58.4','js/live-dashboard-v7-58-4.js?v=7.58.4'):
+for token in ('css/live-dashboard-v7-58-4.css?v=7.58.4','js/live-dashboard-v7-58-4.js?v=7.58.4-flowfix1'):
     require(token in html,f'missing 7.58.4 dashboard asset: {token}')
 for token in ('css/live-game-recap-v7-58-4.css?v=7.58.4','js/live-game-recap-v7-58-4.js?v=7.58.4','js/live-backend-v7-56-8.js'):
     require(token in recap_html,f'missing recap asset: {token}')
@@ -39,6 +44,16 @@ for token in ('live_game_recap_detail_v1','data.events','data.lineups','data.pla
     require(token in recap_js,f'missing recap controller behavior: {token}')
 require('state_snapshot' not in recap_js,'recap page must not consume raw private scorer snapshot')
 require('live-game-recap.html' in js,'archive/final routes do not open permanent recap page')
+
+# Game launch is one dashboard action followed directly by starter confirmation.
+for token in ('function liveGameLaunchUrl(gameId)','launch:1','window.location.assign(liveGameLaunchUrl(gameId))'):
+    require(token in js,f'missing single-action game launch behavior: {token}')
+for token in ('js/live-game-v7-58-4.js?v=7.58.4','css/live-game-v7-58-4.css?v=7.58.4','id="dashboardTopButton"','id="gameDashboardButton"','id="summaryDashboardButton"'):
+    require(token in game_html,f'missing game navigation asset/control: {token}')
+for token in ('function maybeAutoLaunchFromDashboard()','url.searchParams.get("launch") !== "1"','openLineupDialog(1)','Confirm starters & begin','function returnToDashboard()','live-dashboard.html'):
+    require(token in game_js,f'missing game-flow navigation behavior: {token}')
+require('Score updates are off. The game will still be recorded in WPI.' in game_js,'GroupMe warning must remain non-blocking')
+require('.live-dashboard-return' in game_css,'dashboard return styling missing')
 
 # Server returns recap-safe structured data and keeps GroupMe audit manager-only.
 for token in ('create or replace function public.live_game_recap_detail_v1','public.live_can_view_game(game_row.id)','from public.live_events e','from public.live_lineups l','from public.live_game_recaps','if is_manager then','deliveryAudit'):

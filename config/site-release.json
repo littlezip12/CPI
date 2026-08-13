@@ -6,7 +6,7 @@
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Groups each Tournament or Scrimmage Weekend as one durable event record with multiple games, adds permanent recap-only game pages built from structured events/lineups/stats, and provides explicit Owner/Admin event merging so ambiguous historical weekend records are never silently combined. Preserves stable game IDs, scores, scorer history, roster associations, official reconciliation identity, and GroupMe delivery audit.",
+  "notes": "Groups each Tournament or Scrimmage Weekend as one durable event record with multiple games, adds permanent recap-only game pages built from structured events/lineups/stats, and provides explicit Owner/Admin event merging. Game launch now carries the scorer directly into starter confirmation after dashboard Start, and live/final scoring surfaces provide clear Dashboard return navigation. Preserves stable game IDs, scores, scorer history, roster associations, official reconciliation identity, and GroupMe delivery audit.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -170,5 +170,7 @@
   "liveScoringEventArchiveRelease": "7.58.4",
   "liveScoringGameRecapRelease": "7.58.4",
   "liveScoringEventGroupingRelease": "7.58.4",
-  "liveScoringArchiveReconciliationRelease": "7.58.4"
+  "liveScoringArchiveReconciliationRelease": "7.58.4",
+  "liveScoringGameFlowUxRelease": "7.58.4",
+  "liveScoringGameNavigationRelease": "7.58.4"
 }

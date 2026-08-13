@@ -1,0 +1,30 @@
+WPI 7.58.4 — Game Flow & Navigation Correction
+Baseline: pushed 7.58.4 candidate (not yet authoritative)
+Build date: 2026-08-13
+Supabase migration: NONE (existing 7.58.4 migration remains valid)
+Edge Function redeploy: NO
+New secrets: NO
+
+Correction patch file count: 15
+
+SHA-256:
+53c6113494124400592747f69525684cf69c68e5857f42d47d1c7823da879f0d  INSTALL_7.58.4.md
+d2dbab21e921594b025cf417bc3f32f71969f35fa2b0e44c7ffcbc78aea34ac2  INSTALL_7.58.4_GAME_FLOW_FIX.md
+cca8efc788f7c1bb57f0dea084a3e0d50b43608f2f15b6f05b6150ad5acd30ed  PATCH_FILES_7.58.4.txt
+6b1803f0d3216c8198de8d406c8f19921f854ea6489b4e843e25af738c2570f4  PATCH_MANIFEST_7.58.4.txt
+cfa6279c08725c9631993803ef67547bfd93f17291d3d2e294bb7c1d01b5265f  WPI_7.58.4_EVENT_ARCHIVE_GAME_RECAPS_HANDOFF.md
+ac0bf4e621770e85be7e0f5c316d3c857f37155f1c50fe12ec21683d225fd1ac  config/site-release.json
+59d8f062cd1362b2253e429674d0b97a55d0a66ecd72bf3798240ec2033c26fe  css/live-game-v7-58-4.css
+47452d9c6af61bde78136cb2b147eb191ffd27f8b5a5a55bcb4ec9f1343d4475  js/live-dashboard-v7-58-4.js
+07e3d40757693a3fd019f267969601ecf955ba701a82c6175cf354345d05625e  js/live-game-v7-58-4.js
+c201426aac498bd17b11500972b60bc46e87b7f2dfd6f905c8ca226527dd7655  live-dashboard.html
+a2f138c86be6fc1c57eabdc348018dd0c503ff1c4eab6ad2a20654fa972c0c34  live-game.html
+7524053e5f39ad7cefa0b9797eb5893d33d9c02147e6cdf91f27dcac25c5bf9f  release-check-live-7.58.4
+566576ca0d203cd9a936a94a836c063d8005484cd3f47de2e16e4db6138e767d  scripts/test-live-event-archive-game-recaps-v7-58-4.py
+b7c7915a8fd8370b2e5124ac323287347d5c105b43e495730f57e37b0bbf4900  scripts/test-live-pilot-regression-v7-58-4.py
+e380b71ace7f483e2a18f7f0717ea072946896cb6203e405ba6a62d7dc447d91  PATCH_FILES_7.58.4_GAME_FLOW_FIX.txt
+
+Validation:
+- focused 7.58.4 gate passed
+- full release gate passed in contiguous segments
+- no canonical game/scorer/GroupMe database contracts changed

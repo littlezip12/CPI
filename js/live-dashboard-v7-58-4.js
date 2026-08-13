@@ -62,6 +62,10 @@
     return url.href;
   }
 
+  function liveGameLaunchUrl(gameId) {
+    return teamScopedUrl("live-game.html", {game:gameId, launch:1});
+  }
+
   function formatScore(game) {
     const team = Number(game.team_score || 0).toFixed(Number(game.team_score || 0) % 1 ? 1 : 0);
     const opponent = Number(game.opponent_score || 0).toFixed(Number(game.opponent_score || 0) % 1 ? 1 : 0);
@@ -1087,7 +1091,7 @@
       if (startAfter) {
         message.textContent = "Checking the saved game and preparing scoring…";
         await prepareGameDayStart(gameId);
-        window.location.assign(teamScopedUrl("live-game.html", {game:gameId}));
+        window.location.assign(liveGameLaunchUrl(gameId));
         return;
       }
       $("gameDayDialog").close();
@@ -3040,7 +3044,7 @@
       const previousText = start.textContent;
       start.textContent = "Preparing…";
       prepareGameDayStart(gameId)
-        .then(() => window.location.assign(teamScopedUrl("live-game.html", {game:gameId})))
+        .then(() => window.location.assign(liveGameLaunchUrl(gameId)))
         .catch(error => {
           start.disabled = false;
           start.textContent = previousText;
@@ -3082,7 +3086,7 @@
     const prior = start.textContent;
     start.textContent = "Preparing…";
     prepareGameDayStart(gameId)
-      .then(() => window.location.assign(teamScopedUrl("live-game.html", {game:gameId})))
+      .then(() => window.location.assign(liveGameLaunchUrl(gameId)))
       .catch(error => { start.disabled=false; start.textContent=prior; $("dashboardConnectionDetail").textContent = error.message || "The game could not be started."; });
   });
 

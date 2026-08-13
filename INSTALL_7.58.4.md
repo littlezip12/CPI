@@ -11,10 +11,16 @@
 - Does **not** silently auto-merge historical tournaments/weekends.
 - Preserves game IDs, scores, events, lineups, roster associations, scorer history, official tournament identity, and GroupMe delivery audit.
 - Followers may view recap-safe game data where they already have read access. GroupMe delivery audit remains Owner/Admin-only.
+- Dashboard **Start game** now opens the scoring page directly into starter confirmation; the scorer no longer presses a second standalone Start button.
+- GroupMe/readiness checks still run before starter confirmation, but GroupMe remains a warning rather than a blocker.
+- The scoring page now has persistent **Dashboard** navigation plus a prominent **Back to dashboard** action after Final Whistle.
 
 ## Infrastructure
 
-**One Supabase migration is required:**
+**No additional database work is required for the game-flow/navigation correction.** If `202608130001_event_archive_game_recaps.sql` already returned `Success. No rows returned`, do not run another migration for this correction.
+
+The cumulative 7.58.4 release itself uses the previously supplied migration:
+
 
 `supabase/migrations/202608130001_event_archive_game_recaps.sql`
 

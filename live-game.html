@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/live-sandbox-v7-57-6.css?v=7.57.18">
   <link rel="stylesheet" href="css/live-game-v7-57-18.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-game-v7-57-22.css?v=7.57.22">
+  <link rel="stylesheet" href="css/live-game-v7-58-4.css?v=7.58.4">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -29,7 +30,7 @@
 
     <section class="live-status-strip" aria-label="WPI Live connection status">
       <div><strong id="connectionLabel">Checking access…</strong><span id="connectionDetail">Opening the private scoring console.</span></div>
-      <div class="live-status-actions"><span id="backendSyncStatus" class="live-backend-sync-status" data-state="local">Checking…</span><button id="resetSandboxTopButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button><button id="signOutButton" type="button">Sign out</button></div>
+      <div class="live-status-actions"><span id="backendSyncStatus" class="live-backend-sync-status" data-state="local">Checking…</span><button id="dashboardTopButton" class="live-dashboard-return" type="button">Dashboard</button><button id="resetSandboxTopButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button><button id="signOutButton" type="button">Sign out</button></div>
     </section>
 
     <section class="live-setup-grid" id="setupPanel" aria-labelledby="setupHeading">
@@ -88,7 +89,7 @@
     <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
       <div class="live-game-toolbar">
         <div class="live-game-brand"><strong><span>WPI</span> LIVE</strong><small id="compactModeLabel">WPI Live game</small></div>
-        <div class="live-game-toolbar-actions"><span id="gameSyncBadge" class="live-game-sync-badge" data-state="local">Checking…</span><span id="gameGroupMeBadge" class="live-game-groupme-badge" data-state="idle">Preview</span><button id="gameSignOutButton" type="button">Sign out</button></div>
+        <div class="live-game-toolbar-actions"><span id="gameSyncBadge" class="live-game-sync-badge" data-state="local">Checking…</span><span id="gameGroupMeBadge" class="live-game-groupme-badge" data-state="idle">Preview</span><button id="gameDashboardButton" class="live-dashboard-return" type="button">Dashboard</button><button id="gameSignOutButton" type="button">Sign out</button></div>
       </div>
 
       <section id="scorerControlStrip" class="live-scorer-control-strip" hidden aria-live="polite">
@@ -226,7 +227,7 @@
         <div><h3>Player totals</h3><div id="playerSummary"></div></div>
         <div><h3>Editable game recap</h3><textarea id="recapText" rows="10"></textarea></div>
       </div>
-      <div class="live-summary-actions"><button id="reopenGameButton" type="button">Reopen game</button><button id="downloadLogButton" type="button">Download game log</button><button id="resetSandboxButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button></div>
+      <div class="live-summary-actions"><button id="summaryDashboardButton" class="live-dashboard-return" type="button">Back to dashboard</button><button id="reopenGameButton" type="button">Reopen game</button><button id="downloadLogButton" type="button">Download game log</button><button id="resetSandboxButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button></div>
       <p id="reopenGameHelp" class="live-reopen-help">Ended by mistake? Reopen the game and continue scoring. If a final update already reached GroupMe, WPI records a correction when the game is reopened.</p>
     </section>
 
@@ -332,7 +333,7 @@
   <script src="js/live-team-context-v7-58-0.js?v=7.58.0"></script>
   <script src="js/live-team-profiles-rosters-v7-58-2.js?v=7.58.2"></script>
   <script src="js/live-team-following-v7-58-3.js?v=7.58.3"></script>
-  <script src="js/live-game-v7-57-22.js?v=7.57.22"></script>
+  <script src="js/live-game-v7-58-4.js?v=7.58.4"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

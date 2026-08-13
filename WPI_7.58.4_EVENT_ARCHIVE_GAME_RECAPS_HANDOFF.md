@@ -77,3 +77,11 @@ Primary scope:
 - prevent duplicate official/manual game records
 - preserve completed Live scoring, events, scorer history, GroupMe delivery and recap data
 - route ambiguous identity matches to Owner/Admin review rather than silent merge
+
+## Game-flow correction before authority
+
+Before 7.58.4 was declared authoritative, live testing found two UX issues and the same release candidate was corrected:
+- Dashboard Start game now carries a one-time `launch=1` intent to `live-game.html`, which automatically opens Q1 starter confirmation once the validated readiness/scorer checks pass.
+- The starter confirmation action reads **Confirm starters & begin** rather than presenting a second standalone Start game step.
+- Dashboard navigation is available from pregame/live scoring and a dedicated **Back to dashboard** action is shown in the final summary.
+- No Supabase/Edge Function change was required for this correction.

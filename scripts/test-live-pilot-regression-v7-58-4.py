@@ -7,13 +7,13 @@ def check(label,cond):
     if not cond: errors.append(label)
 site=json.loads((root/'config/site-release.json').read_text())
 html=(root/'live-game.html').read_text()
-js=(root/'js/live-game-v7-57-22.js').read_text()
+js=(root/'js/live-game-v7-58-4.js').read_text()
 css=(root/'css/live-game-v7-57-22.css').read_text()
 check('current version',site.get('version')=='7.58.4')
 check('current name',site.get('name')=='Event Archive & Game Recaps')
 check('readiness field',site.get('liveScoringPilotReadinessRelease')=='7.57.22')
 check('connectivity field',site.get('liveScoringConnectivityRecoveryRelease')=='7.57.22')
-check('game script route','js/live-game-v7-57-22.js?v=7.57.22' in html)
+check('game script route','js/live-game-v7-58-4.js?v=7.58.4' in html)
 check('readiness css route','css/live-game-v7-57-22.css?v=7.57.22' in html)
 check('preflight panel','id="gamePreflight"' in html and 'id="preflightMatchup"' in html and 'id="preflightScorer"' in html)
 check('simple start label','id="startGameButton" type="button">Start game</button>' in html)
@@ -33,6 +33,7 @@ expected={
  'js/live-backend-v7-56-8.js':'fdeb80c539a2b375861de55e2cbdb48154652517110fab1db7c88d7148a7e328',
  'js/live-sandbox-v7-56-15.js':'f32236d8e704c113ba9b868b18ae2b97e7bb366e9adbefd37000117aea0fc6da',
  'js/live-game-v7-57-14.js':'0b9266ccfbf3e1e9fc31b79e33343661a21f4f8885086246e41cbf7e8cfb1c02',
+ 'js/live-game-v7-57-22.js':'a03145737d61767d6fbca3676b585d8476c3724dd0e45f4f2fd83c2deb87fca4',
  'supabase/functions/groupme-post/index.ts':'1397eb595b21682cf00aa07dbe0870b9b29db58d134a5e8f06157906bd6dd6f6',
  'supabase/functions/roster-extract/index.ts':'26d8caf221d74eda5bb8670c1200e601ae76359ef4bc37037baf27bc7c8dbbbb',
  'supabase/migrations/202608110001_scorer_access_game_recovery.sql':'12b4c8798fa0839d1f5eb649bcd0343eef5be7d81e7c1d363bc012a926b380fb',

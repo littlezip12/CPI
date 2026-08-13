@@ -1,26 +1,28 @@
-WPI 7.58.4 — Event Archive & Game Recaps
+WPI 7.58.4 — Event Archive & Game Recaps (revised before authority)
 Baseline: WPI 7.58.3 — Multi-Team Access & Following
 Build date: 2026-08-13
-Supabase migration: supabase/migrations/202608130001_event_archive_game_recaps.sql
+Supabase migration: supabase/migrations/202608130001_event_archive_game_recaps.sql (no additional migration for game-flow correction)
 Edge Function redeploy: NO
 New secrets: NO
 
-Patch file count: 54
+Correction included before authority: single dashboard Start -> starter confirmation + dashboard return navigation.
+
+Patch file count: 57
 
 SHA-256 (all patch payload files except this manifest):
-487b9182de496c72856987fba6819c4cf5ef222d309f0354ffca54e87ccfa769  INSTALL_7.58.4.md
+53c6113494124400592747f69525684cf69c68e5857f42d47d1c7823da879f0d  INSTALL_7.58.4.md
 6e5b4d12137f96c15e64ec7c87134d094074cf72b10fdf173d1cd5a1b33ef98f  LIVE_EVENT_ARCHIVE_GAME_RECAPS_SETUP_7.58.4.md
 8ebebde1f70da4f7cfe3f94864694f2cf842aa2c68d3a6726f9c4d5cf3a8e6a4  VERSION.md
-c2c35574d6af1dc65a4fdd13ce6f0eff172fd22a525ba0fe938826a58a3ca242  WPI_7.58.4_EVENT_ARCHIVE_GAME_RECAPS_HANDOFF.md
-bcc30ac9efbb87ad66ac42a4171be391595c1e7c0acb167b3030760d4fe2f644  config/site-release.json
+cfa6279c08725c9631993803ef67547bfd93f17291d3d2e294bb7c1d01b5265f  WPI_7.58.4_EVENT_ARCHIVE_GAME_RECAPS_HANDOFF.md
+ac0bf4e621770e85be7e0f5c316d3c857f37155f1c50fe12ec21683d225fd1ac  config/site-release.json
 7e6f5a06810a15dbcfd9efba65fafcd4939408c967d77fa533bff2d7c5e928b8  css/live-dashboard-v7-58-4.css
 b55be996273c97a459821cd47752947b40fcad8188e9b845082a3952bb29a2c1  css/live-game-recap-v7-58-4.css
-44b432345f2d1c377db763bde14edd668336103676e0115b7ffd33b3231f7f53  js/live-dashboard-v7-58-4.js
+47452d9c6af61bde78136cb2b147eb191ffd27f8b5a5a55bcb4ec9f1343d4475  js/live-dashboard-v7-58-4.js
 8f18eb85dcc1f1b9b9776601261f0e1fc9377f8bf7f39985be6b423015a6d1c0  js/live-game-recap-v7-58-4.js
-92cbc22766c6bebdbc9e3153e68e47afa970334e91f61e546961eb1645df56bd  live-dashboard.html
+c201426aac498bd17b11500972b60bc46e87b7f2dfd6f905c8ca226527dd7655  live-dashboard.html
 1ec3c5a70ce65a28315fd6065f0cde0cea62abfad1615d4acb73dda2f43c1399  live-game-recap.html
 db514dbe70061953afb6794b000474c19a9b1c3560dec913bab9acb5a3d67a58  release-check
-937e88d8eaa4ba10c6c92575c0007064d019c92cd7c8f22042f42d7740969f5d  release-check-live-7.58.4
+7524053e5f39ad7cefa0b9797eb5893d33d9c02147e6cdf91f27dcac25c5bf9f  release-check-live-7.58.4
 54b713b296b69fa45ea93d844a0f5024c740543e9c082f9ad68f8d2ebca180e3  scripts/test-boys-post-jo-rankings-v7-52-0.py
 9ad8eea9282903334d8061c4db58446c9c4b226994860f038e0072c3ff0214a0  scripts/test-brand-teams-section-landing-v7-53-4.py
 002133712a7e7e0bdaa2a5225447a852fed75b478737786ca99e4b4ab206f042  scripts/test-club-family-cleanup-v7-52-12.py
@@ -43,9 +45,9 @@ dec9de85d8cb3c92967e8e01fe240f33a0bfb951372dac25f22d46b00bb31996  scripts/test-k
 626165efeedca84b10f0a6c33f44259550d8cc2381d202c5a3f637c18e36d5fd  scripts/test-kern-skip-separation-v7-52-13.py
 2aab1178f932f536fe0a4f9ec94a85576ed87f9c85117b49a044f4c8d2ff49a2  scripts/test-landing-page-clarity-v7-54-13.py
 93dcc9b05b32faf9835c426d8551a4b4a64c6a495e791d13214da937e434d5fe  scripts/test-live-club-workspace-regression-v7-58-4.py
-6acea8b0c33df3e429095d0f7b7ea29ae197bcf94628d757448107d13608e5fa  scripts/test-live-event-archive-game-recaps-v7-58-4.py
+566576ca0d203cd9a936a94a836c063d8005484cd3f47de2e16e4db6138e767d  scripts/test-live-event-archive-game-recaps-v7-58-4.py
 6919a2fccbecda0871a0fb1e15c3e826a261450fcb75a8980af7e260a03ca323  scripts/test-live-multi-team-profiles-rosters-regression-v7-58-4.py
-96ec67627569c737fe99320cd4f7f3ccbe976f5ada7ed634a4cf711a827ff74e  scripts/test-live-pilot-regression-v7-58-4.py
+b7c7915a8fd8370b2e5124ac323287347d5c105b43e495730f57e37b0bbf4900  scripts/test-live-pilot-regression-v7-58-4.py
 24958016ece141c83d9351c5645b9e9d6eb24b10bf78de9868f7227e4a870911  scripts/test-multi-season-foundation-v7-55-1.py
 6ae803f09ff0235b00a88b3cc295b107959466d7d87fb2e509c44a23e99727e5  scripts/test-public-tournament-hub-v7-54-4.py
 8d730c17ea7a1a891b5f74aca55365ac3a1b55660205803f2e88d518088c8e4a  scripts/test-release-integrity-v7-52-15.py
@@ -60,10 +62,14 @@ de1ef4f8cedf6f1b05b57563c20b02273da79cbdabaa88ee204e25422671724b  scripts/test-t
 61f5655fa2d134bb5af62279746f1062bcb4e1e3fa1dc736a67dc3c987c9de9b  scripts/test-wpi-homepage-v7-52-4.py
 c5df3449e58fd560521faa1a72b7dcc46ecbd37fb7f142f6e820db98be1b1d33  scripts/validate-tournament-data.py
 8fc0881a48b842cb15d5453c13d3283f2c9efee7e5e2f78f729300efbb4f2cfe  supabase/migrations/202608130001_event_archive_game_recaps.sql
-cc70577c3f0372dc3b1266846c53d36e4075ad9ce3974c0a656fd0a4a9ec4ec7  PATCH_FILES_7.58.4.txt
+d2dbab21e921594b025cf417bc3f32f71969f35fa2b0e44c7ffcbc78aea34ac2  INSTALL_7.58.4_GAME_FLOW_FIX.md
+59d8f062cd1362b2253e429674d0b97a55d0a66ecd72bf3798240ec2033c26fe  css/live-game-v7-58-4.css
+07e3d40757693a3fd019f267969601ecf955ba701a82c6175cf354345d05625e  js/live-game-v7-58-4.js
+a2f138c86be6fc1c57eabdc348018dd0c503ff1c4eab6ad2a20654fa972c0c34  live-game.html
+cca8efc788f7c1bb57f0dea084a3e0d50b43608f2f15b6f05b6150ad5acd30ed  PATCH_FILES_7.58.4.txt
 
 Validation:
-- ./release-check-live-7.58.4 passed
+- ./release-check-live-7.58.4 passed with corrected game-flow/navigation checks
 - full release-check completed in contiguous segments through CPI release check passed.
-- gate-generated tournament/QA artifacts restored to authoritative 7.58.3 baseline
-- clean-install simulation from authoritative pushed 7.58.3 ZIP passed
+- gate-generated tournament/QA artifacts restored to the pushed 7.58.4 candidate baseline
+- no additional Supabase migration / Edge Function / secret required for the correction
