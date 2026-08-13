@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>WPI Live Game Recap | Water Polo Index</title>
+  <meta name="description" content="Private permanent WPI Live game recap with final score, period scoring, starters, player stats and complete scoring timeline.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/live-game-recap-v7-58-4.css?v=7.58.4">
+</head>
+<body class="wpi-live-recap-page">
+  <main class="live-recap-shell">
+    <header class="live-recap-header">
+      <div><p class="live-recap-kicker">WPI Live · Permanent game record</p><h1>Game Recap</h1><p id="recapEventName">Loading game…</p></div>
+      <div class="live-recap-header-actions"><a id="backToDashboard" href="live-dashboard.html">Back to dashboard</a><button id="recapSignOutButton" type="button">Sign out</button></div>
+    </header>
+
+    <section id="recapLoading" class="live-recap-state"><strong>Loading recap…</strong><span>Checking your access and rebuilding the permanent record from structured WPI Live data.</span></section>
+    <section id="recapError" class="live-recap-state live-recap-state--error" hidden><strong>Recap unavailable</strong><span id="recapErrorText">This game could not be loaded.</span><a href="live-dashboard.html">Return to WPI Live</a></section>
+
+    <div id="recapContent" hidden>
+      <section class="live-recap-score-card">
+        <div class="live-recap-team"><img id="recapTeamLogo" src="assets/branding/wpi-logo-mark.png" alt=""><span id="recapTeamName">Team</span><strong id="recapTeamScore">0</strong></div>
+        <div class="live-recap-score-center"><span id="recapResultBadge">Final</span><strong>FINAL</strong><small id="recapGameMeta">—</small></div>
+        <div class="live-recap-team live-recap-team--opponent"><img id="recapOpponentLogo" src="assets/branding/wpi-logo-mark.png" alt=""><span id="recapOpponentName">Opponent</span><strong id="recapOpponentScore">0</strong></div>
+      </section>
+
+      <section class="live-recap-grid live-recap-grid--top">
+        <article class="live-recap-panel"><div class="live-recap-panel-heading"><div><p>Event</p><h2 id="recapSeriesName">Tournament / Weekend</h2></div><span id="recapSeason">Season</span></div><div id="recapEventDetails" class="live-recap-meta-list"></div></article>
+        <article class="live-recap-panel"><div class="live-recap-panel-heading"><div><p>Period scoring</p><h2>Score progression</h2></div></div><div id="recapPeriodScores" class="live-recap-period-grid"></div></article>
+      </section>
+
+      <article class="live-recap-panel" id="recapNarrativePanel">
+        <div class="live-recap-panel-heading"><div><p>Game recap</p><h2>Final Whistle recap</h2></div><span id="recapNarrativeStatus">Structured record</span></div>
+        <p id="recapNarrative" class="live-recap-narrative">No approved written recap was saved for this game. The permanent structured record is available below.</p>
+      </article>
+
+      <section class="live-recap-grid">
+        <article class="live-recap-panel"><div class="live-recap-panel-heading"><div><p>Lineups</p><h2>Starters by period</h2></div></div><div id="recapLineups" class="live-recap-lineup-list"></div></article>
+        <article class="live-recap-panel"><div class="live-recap-panel-heading"><div><p>Player stats</p><h2>Tracked production</h2></div></div><div id="recapPlayerStats" class="live-recap-stats-list"></div></article>
+      </section>
+
+      <article class="live-recap-panel">
+        <div class="live-recap-panel-heading"><div><p>Complete timeline</p><h2>Scoring &amp; game events</h2></div><span id="recapEventCount">0 events</span></div>
+        <div id="recapTimeline" class="live-recap-timeline"></div>
+      </article>
+
+      <article class="live-recap-panel" id="recapDeliveryPanel" hidden>
+        <div class="live-recap-panel-heading"><div><p>Owner/Admin</p><h2>GroupMe delivery audit</h2></div><span>Private</span></div>
+        <div id="recapDeliveryAudit" class="live-recap-audit-grid"></div>
+      </article>
+    </div>
+  </main>
+
+  <script src="config/live-sandbox.js?v=7.57.22"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-game-recap-v7-58-4.js?v=7.58.4"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-17.css?v=7.57.20">
-  <link rel="stylesheet" href="css/live-dashboard-v7-58-3.css?v=7.58.3">
+  <link rel="stylesheet" href="css/live-dashboard-v7-58-4.css?v=7.58.4">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -360,9 +360,9 @@
         </div>
 
         <div id="gameFriendlyFields" class="live-game-tournament-fields" hidden>
-          <label>Scrimmage weekend<input id="gameScrimmageWeekendName" type="text" maxlength="120" list="gameScrimmageWeekendSuggestions" autocomplete="off" placeholder="e.g. August 15 Scrimmage Weekend"></label>
-          <datalist id="gameScrimmageWeekendSuggestions"></datalist>
-          <p class="live-game-reconcile-note"><span aria-hidden="true">▤</span><span><strong>Weekend record.</strong> Use the same weekend name for every friendly played that weekend. WPI will keep those games together for future lookback.</span></p>
+          <label>Scrimmage weekend<select id="gameScrimmageWeekendSelect"><option value="__new__">Create new Scrimmage Weekend…</option></select></label>
+          <label id="gameScrimmageWeekendNewLabel">New weekend name<input id="gameScrimmageWeekendNew" type="text" maxlength="120" autocomplete="off" placeholder="e.g. August 15 Scrimmage Weekend"></label>
+          <p class="live-game-reconcile-note"><span aria-hidden="true">▤</span><span><strong>One weekend, multiple games.</strong> Choose an existing Scrimmage Weekend for additional games, or create the weekend once. WPI keeps every game under that permanent event record.</span></p>
         </div>
 
         <div class="live-game-matchup-preview" id="gameMatchupPreview">
@@ -381,6 +381,18 @@
         </div>
         <p id="gameDayDialogMessage" class="live-validation-message" role="status"></p>
         <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveGameDayButton" type="button">Save to Game Day</button><button id="saveStartGameDayButton" type="button">Start game</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="eventMergeDialog" class="live-dialog live-event-merge-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Archive cleanup</p><h2>Merge event records</h2></div><button value="cancel" aria-label="Close event merge">Close</button></div>
+        <p class="live-team-switch-summary">Use this only when two archive cards are actually the same Tournament or Scrimmage Weekend. WPI never merges event records automatically.</p>
+        <input id="eventMergeSourceId" type="hidden">
+        <div class="live-event-merge-source"><span>Move games from</span><strong id="eventMergeSourceName">Event</strong></div>
+        <label>Into event<select id="eventMergeTarget"><option value="">Choose event…</option></select></label>
+        <p id="eventMergeMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="confirmEventMergeButton" type="button">Merge event records</button></div>
       </form>
     </dialog>
 
@@ -418,7 +430,7 @@
   <script src="js/live-team-profiles-rosters-v7-58-2.js?v=7.58.2"></script>
   <script src="js/live-team-following-v7-58-3.js?v=7.58.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
-  <script src="js/live-dashboard-v7-58-3.js?v=7.58.3"></script>
+  <script src="js/live-dashboard-v7-58-4.js?v=7.58.4"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>
