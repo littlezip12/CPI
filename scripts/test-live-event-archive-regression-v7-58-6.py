@@ -24,5 +24,5 @@ html=read('live-dashboard.html')
 for token in ('id="gameScrimmageWeekendSelect"','id="eventMergeDialog"'):
     req(token in html,f'7.58.4 UX missing: {token}')
 recap=read('live-game-recap.html')
-req('js/live-game-recap-v7-58-4.js?v=7.58.4' in recap,'permanent recap route changed unexpectedly')
+req('js/live-game-recap-v7-58-4.js?v=7.58.6-recapfix1' in recap,'permanent recap route changed unexpectedly')
 print('WPI Live 7.58.4 Event Archive & Game Recaps regression passed.')

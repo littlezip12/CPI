@@ -16,7 +16,7 @@ mig=read('supabase/migrations/202608080007_tournament_schedule_integration_recon
 req(site.get('version')=='7.58.6','current release must be 7.58.6')
 for key in ('liveScoringTournamentFeedValidationRelease','liveScoringTournamentIdentitySafetyRelease','liveScoringTournamentReconciliationValidationRelease'):
     req(site.get(key)=='7.58.5',f'7.58.5 marker changed: {key}')
-for token in ('css/live-dashboard-v7-58-5.css?v=7.58.5','js/live-tournament-feed-v7-58-5.js?v=7.58.5','js/live-dashboard-v7-58-5.js?v=7.58.5'):
+for token in ('css/live-dashboard-v7-58-6.css?v=7.58.6-pilotux1','js/live-tournament-feed-v7-58-5.js?v=7.58.5','js/live-dashboard-v7-58-6.js?v=7.58.6-pilotux1'):
     req(token in html,f'7.58.5 dashboard/feed asset changed: {token}')
 for token in ('club_only_multiple_live_squads','club_plus_matching_squad','club_but_different_squad','peerCount > 1'):
     req(token in matcher,f'squad-safe matcher rule missing: {token}')
