@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-17.css?v=7.57.20">
-  <link rel="stylesheet" href="css/live-dashboard-v7-58-6.css?v=7.58.6-pilotux1">
+  <link rel="stylesheet" href="css/live-dashboard-v7-58-6.css?v=7.58.6-contextfix1">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -281,6 +281,7 @@
           <section class="live-panel live-history-panel" id="dashboardGameArchive">
             <div class="live-panel-heading"><div><p class="live-section-kicker">Season archive</p><h2>Tournaments &amp; weekends</h2></div><button id="refreshGameArchiveButton" type="button">Refresh</button></div>
             <p class="live-panel-help">Every completed game stays with its tournament or named scrimmage weekend. Open an event to revisit the full weekend, scores, opponents and game recaps.</p>
+            <div class="live-archive-view-context" id="gameArchiveViewingTeam">Viewing current team</div>
             <div class="live-archive-toolbar">
               <label>Season<select id="gameArchiveSeasonFilter" aria-label="Filter tournament and weekend records by season"><option value="all">All seasons</option></select></label>
               <span id="gameArchiveSummary">0 events · 0 finals</span>
@@ -379,7 +380,7 @@
         </div>
 
         <div class="live-create-game-form">
-          <label>Opponent<input id="gameOpponentName" type="text" maxlength="100" list="gameOpponentSuggestions" autocomplete="off" placeholder="Start typing a WPI team or club"><small id="gameOpponentMatchHint" class="live-game-match-hint" data-state="idle">Type a club or team name. WPI will load a known logo automatically when it recognizes the club.</small></label>
+          <label>Opponent · search or enter any team<input id="gameOpponentName" type="text" maxlength="100" list="gameOpponentSuggestions" autocomplete="off" placeholder="Search WPI or enter any team name"><small id="gameOpponentMatchHint" class="live-game-match-hint" data-state="idle">Choose a WPI suggestion or type an unlisted team name exactly as you want it saved.</small></label>
           <datalist id="gameOpponentSuggestions"></datalist>
           <label>Date &amp; time<input id="gameScheduledAt" type="datetime-local"></label>
           <label>Venue<input id="gameVenue" type="text" maxlength="120" placeholder="Pool or facility"></label>
@@ -438,7 +439,7 @@
   <script src="js/live-team-following-v7-58-3.js?v=7.58.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
-  <script src="js/live-dashboard-v7-58-6.js?v=7.58.6-pilotux1"></script>
+  <script src="js/live-dashboard-v7-58-6.js?v=7.58.6-contextfix1"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

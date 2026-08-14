@@ -244,3 +244,9 @@ body[data-live-role="scorer"] #dashboardGameDaySetup{display:none!important}
 .live-role-game-team-context{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:7px;padding-bottom:7px;border-bottom:1px solid rgba(15,23,42,.07)}.live-role-game-team-context strong{color:#0d4f87;font-size:.8rem;font-weight:900;letter-spacing:.01em}.live-role-game-team-context span{overflow:hidden;color:#697b8e;font-size:.72rem;font-weight:750;text-overflow:ellipsis;white-space:nowrap}
 .live-role-game-top>span:empty{display:none}
 @media(max-width:680px){.live-follow-team-filters{grid-template-columns:1fr 1fr}.live-follow-team-filters label:first-child{grid-column:1/-1}.live-role-game-team-context{align-items:flex-start;flex-direction:column;gap:2px}.live-role-game-team-context span{max-width:100%}}
+
+/* 7.58.6 pilot correction — unified Supporter viewing context + explicit manual opponent entry. */
+.live-archive-view-context{display:inline-flex;align-items:center;margin:2px 0 10px;padding:6px 9px;border-radius:999px;background:#edf5fc;color:#1d5b91;font-size:.72rem;font-weight:850}
+.live-archive-team-context{display:inline-flex;align-items:center;width:max-content;max-width:100%;margin:0 0 9px;padding:5px 8px;border-radius:999px;background:#eef2ff;color:#4338ca;font-size:.7rem;font-weight:900;letter-spacing:.015em}
+.live-game-match-hint[data-state="manual"]{color:#92400e;font-weight:700}
+@media(max-width:680px){.live-archive-view-context{font-size:.68rem}.live-archive-team-context{font-size:.66rem}}

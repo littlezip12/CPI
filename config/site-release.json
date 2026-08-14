@@ -6,7 +6,7 @@
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Hardens WPI Live for club-level pilot concurrency: every live game now keeps a game-scoped on-device/offline state copy so simultaneous team games cannot overwrite one another in browser storage; automated regression covers per-game scorer control/handoff, Following read-only isolation, reconnect recovery, GroupMe exactly-once claim/retry behavior, archive/recap preservation, and squad-safe tournament reconciliation. No production schedule is fabricated; first real 2026–2027 feed observation remains pending external validation.",
+  "notes": "Completes the 7.58.6 club-pilot correction: Supporter team filters now drive one viewing context across Live/Upcoming/Finals and Tournaments & Weekends; followed-team archives are read-only through a follower-safe archive RPC; All Teams keeps archive cards explicitly labeled by team. Manual game creation now makes free-text opponent entry explicit\u2014known WPI identities are matched when possible, while unlisted names remain raw/manual and never auto-create or silently merge canonical clubs/teams. Existing recap, concurrency, scoring, recovery and GroupMe protections remain intact.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -180,5 +180,8 @@
   "liveScoringConcurrentGameIsolationRelease": "7.58.6",
   "liveScoringOfflineGameIsolationRelease": "7.58.6",
   "liveScoringClubRegressionRelease": "7.58.6",
-  "liveScoringGameLocalStateRelease": "7.58.6"
+  "liveScoringGameLocalStateRelease": "7.58.6",
+  "liveScoringSupporterViewContextRelease": "7.58.6",
+  "liveScoringFollowerArchiveRelease": "7.58.6",
+  "liveScoringManualOpponentUxRelease": "7.58.6"
 }

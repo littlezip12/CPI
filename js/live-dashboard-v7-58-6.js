@@ -112,6 +112,40 @@
     return {label:"T",state:"tie"};
   }
 
+  function supporterRelationshipTeams() {
+    if (workspace?.role !== "viewer") return [];
+    const rows = Array.isArray(followingOverview?.teams) ? followingOverview.teams : [];
+    const visible = rows.filter(team => team.isMember || team.isFollowing).map(team => ({
+      id:String(team.teamId || ""),
+      label:team.teamDisplayLabel || team.teamName || "Team",
+      ageGroup:team.ageGroup || "",
+      gender:team.gender || "",
+      squadLabel:team.squadLabel || "",
+      relationship:team.isMember ? "member" : "following"
+    })).filter(team => team.id);
+    if (!visible.some(team => team.id === String(workspace?.teamId || "")) && workspace?.teamId) {
+      visible.unshift({id:String(workspace.teamId),label:workspace.teamDisplayLabel || workspace.teamName || "Team",ageGroup:workspace.ageGroup || "",gender:workspace.gender || "",squadLabel:workspace.squadLabel || "",relationship:"member"});
+    }
+    return [...new Map(visible.map(team => [team.id,team])).values()];
+  }
+
+  function archiveViewTargets() {
+    if (!workspace?.teamId) return [];
+    if (workspace.role !== "viewer") return [{id:String(workspace.teamId),label:workspace.teamDisplayLabel || workspace.teamName || "Team",ageGroup:workspace.ageGroup || "",gender:workspace.gender || "",relationship:"member"}];
+    const teams = supporterRelationshipTeams();
+    if (roleHomeTeamFilter === "all") return teams.length ? teams : [{id:String(workspace.teamId),label:workspace.teamDisplayLabel || workspace.teamName || "Team",ageGroup:workspace.ageGroup || "",gender:workspace.gender || "",relationship:"member"}];
+    const selected = teams.find(team => team.id === String(roleHomeTeamFilter));
+    return selected ? [selected] : [{id:String(workspace.teamId),label:workspace.teamDisplayLabel || workspace.teamName || "Team",ageGroup:workspace.ageGroup || "",gender:workspace.gender || "",relationship:"member"}];
+  }
+
+  function renderArchiveViewingContext(targets = archiveViewTargets()) {
+    const label = $("gameArchiveViewingTeam");
+    if (!label) return;
+    if (workspace?.role !== "viewer") { label.textContent = `Viewing ${workspace?.teamDisplayLabel || workspace?.teamName || "current team"}`; return; }
+    if (roleHomeTeamFilter === "all" && targets.length > 1) label.textContent = `Viewing all ${targets.length} teams · each event stays labeled by team`;
+    else label.textContent = `Viewing ${targets[0]?.label || workspace?.teamDisplayLabel || workspace?.teamName || "team"}`;
+  }
+
   function renderGameSeriesArchive() {
     const container = $("gameSeriesArchive");
     const summary = $("gameArchiveSummary");
@@ -141,7 +175,7 @@
         const record = finalCount ? `${Number(series.wins || 0)}-${Number(series.losses || 0)}${ties ? `-${ties}` : ""}` : "—";
         const gameRows = (series.games || []).map(game => {
           const result = archiveResult(game);
-          const ownName = game.teamName || workspace?.teamName || "Team";
+          const ownName = game.teamName || series.viewTeamLabel || workspace?.teamName || "Team";
           const opponentName = game.opponentName || "Opponent";
           const meta = [gameDayTimeLabel(game.scheduledAt),game.venue,game.officialDivisionLabel,game.officialStage].filter(Boolean).join(" · ");
           return `<article class="live-archive-game-row">
@@ -152,11 +186,13 @@
               <div class="live-archive-team live-archive-team--opponent"><img src="${escapeHtml(safeGameLogo(game.opponentLogoUrl))}" alt="${escapeHtml(opponentName)} logo"><span>${escapeHtml(opponentName)}</span></div>
             </div>
             <div class="live-archive-game-meta"><span>${escapeHtml(meta)}</span>${game.officialGameNumber ? `<span>Game ${escapeHtml(game.officialGameNumber)}</span>` : ""}</div>
-            <a class="live-archive-game-link" href="${escapeHtml(teamScopedUrl("live-game-recap.html", {game:game.id}))}">View recap</a>
+            <a class="live-archive-game-link" href="${escapeHtml(teamScopedUrl("live-game-recap.html", {game:game.id,team:game.teamId || series.viewTeamId}))}">View recap</a>
           </article>`;
         }).join("");
         const venueCopy = Array.isArray(series.venues) && series.venues.length ? series.venues.slice(0,2).join(" · ") : "";
-        return `<article class="live-game-series-card">
+        const viewTeamMeta = [series.viewTeamLabel,series.viewAgeGroup,normalizedGender(series.viewGender)==="boys" ? "Boys" : normalizedGender(series.viewGender)==="girls" ? "Girls" : normalizedGender(series.viewGender)==="coed" ? "Coed" : ""].filter(Boolean);
+        return `<article class="live-game-series-card" data-view-team="${escapeHtml(series.viewTeamId || "")}">
+          <div class="live-archive-team-context">${escapeHtml(viewTeamMeta.join(" · ") || workspace?.teamDisplayLabel || workspace?.teamName || "Team")}</div>
           <div class="live-archive-series-heading">
             <div><p class="live-section-kicker">${escapeHtml(label)}</p><h3>${escapeHtml(series.name)}</h3><p>${escapeHtml(archiveDateRange(series.firstGameAt,series.lastGameAt))}${venueCopy ? ` · ${escapeHtml(venueCopy)}` : ""}</p></div>
             <div class="live-game-series-record"><strong>${escapeHtml(record)}</strong><span>${finalCount} final${finalCount === 1 ? "" : "s"}</span>${series.canManage ? `<button type="button" class="live-archive-merge-button" data-merge-series="${escapeHtml(series.id)}">Merge event</button>` : ""}</div>
@@ -172,11 +208,26 @@
   }
 
   async function loadGameSeriesArchive() {
-    if (!backend || !workspace?.teamId) { gameSeriesArchive = []; gameArchiveSeasons = []; renderGameSeriesArchive(); return; }
-    const {data,error} = await backend.client.rpc("live_game_series_archive_v3", {target_team_id:workspace.teamId});
-    if (error) throw error;
-    gameSeriesArchive = Array.isArray(data?.series) ? data.series : [];
-    gameArchiveSeasons = Array.isArray(data?.seasons) ? data.seasons.filter(Boolean) : Array.from(new Set(gameSeriesArchive.map(row => row.competitiveSeason).filter(Boolean)));
+    if (!backend || !workspace?.teamId) { gameSeriesArchive = []; gameArchiveSeasons = []; renderArchiveViewingContext([]); renderGameSeriesArchive(); return; }
+    const targets = archiveViewTargets();
+    renderArchiveViewingContext(targets);
+    const responses = await Promise.all(targets.map(async target => {
+      const {data,error} = await backend.client.rpc("live_game_series_archive_v4", {target_team_id:target.id});
+      if (error) throw error;
+      return {target,data:data || {}};
+    }));
+    gameSeriesArchive = responses.flatMap(({target,data}) => {
+      const team = data?.team || {};
+      return (Array.isArray(data?.series) ? data.series : []).map(series => ({
+        ...series,
+        viewTeamId:String(team.teamId || target.id),
+        viewTeamLabel:team.teamDisplayLabel || team.teamName || target.label,
+        viewAgeGroup:team.ageGroup || target.ageGroup || "",
+        viewGender:team.gender || target.gender || "",
+        viewRelationship:data.relationship || target.relationship || "member"
+      }));
+    });
+    gameArchiveSeasons = Array.from(new Set(gameSeriesArchive.map(row => row.competitiveSeason).filter(Boolean))).sort().reverse();
     const filter = $("gameArchiveSeasonFilter");
     if (filter) {
       const selected = gameArchiveSeason;
@@ -210,7 +261,7 @@
   }
 
   function eventMergeTargets(source) {
-    return gameSeriesArchive.filter(row => row.id !== source?.id && row.seriesType === source?.seriesType && row.competitiveSeason === source?.competitiveSeason);
+    return gameSeriesArchive.filter(row => row.id !== source?.id && row.viewTeamId === source?.viewTeamId && row.seriesType === source?.seriesType && row.competitiveSeason === source?.competitiveSeason);
   }
 
   function openEventMergeDialog(seriesId) {
@@ -910,13 +961,13 @@
     if (hint) {
       if (identity?.club) {
         const squad = identity.squad ? ` · ${identity.squad} squad recognized for matching` : "";
-        hint.textContent = `Matched WPI club: ${identity.displayName}${squad}. The original name is preserved for tournament reconciliation.`;
+        hint.textContent = `Matched to WPI: ${identity.displayName}${squad}. The name you typed is still preserved for reconciliation.`;
         hint.dataset.state = "matched";
       } else if (opponentSourceName) {
-        hint.textContent = "No WPI club match yet. Keep typing or leave the manual name as entered.";
-        hint.dataset.state = "unmatched";
+        hint.textContent = `Unlisted team — WPI will use “${opponentSourceName}” exactly as entered for this game. No canonical club/team will be created automatically.`;
+        hint.dataset.state = "manual";
       } else {
-        hint.textContent = "Type a club or team name. WPI will load a known logo automatically when it recognizes the club.";
+        hint.textContent = "Search WPI suggestions or enter any team name. If it is not listed, just type the name and continue.";
         hint.dataset.state = "idle";
       }
     }
@@ -1248,6 +1299,7 @@
     followingOverview = await backend.followingOverview();
     renderFollowing();
     renderRoleHome();
+    if (workspace?.role === "viewer") await loadGameSeriesArchive();
     return followingOverview;
   }
 
@@ -1299,7 +1351,9 @@
     const followedGames = (Array.isArray(followingOverview?.games) ? followingOverview.games : []).filter(game => game.status !== "cancelled");
     const dedupe = rows => [...new Map(rows.map(game => [String(game.id),game])).values()];
     const allAvailable = supporter ? dedupe([...memberGames,...followedGames]) : memberGames;
-    const teamOptions = supporter ? [...new Map(allAvailable.map(game => [String(game.teamId || workspace.teamId || ""), {id:String(game.teamId || workspace.teamId || ""),label:game.teamDisplayLabel || game.teamName || workspace.teamDisplayLabel || workspace.teamName || "Team"}])).values()].filter(row => row.id) : [];
+    const relationshipTeamOptions = supporter ? supporterRelationshipTeams() : [];
+    const gameTeamOptions = supporter ? allAvailable.map(game => ({id:String(game.teamId || workspace.teamId || ""),label:game.teamDisplayLabel || game.teamName || workspace.teamDisplayLabel || workspace.teamName || "Team",ageGroup:game.ageGroup || "",gender:game.gender || ""})) : [];
+    const teamOptions = supporter ? [...new Map([...relationshipTeamOptions,...gameTeamOptions].map(team => [team.id,team])).values()].filter(row => row.id) : [];
     const filters = $("roleHomeTeamFilters");
     if (filters) {
       filters.hidden = !(supporter && teamOptions.length > 1);
@@ -3159,6 +3213,7 @@
     if (!button) return;
     roleHomeTeamFilter = button.dataset.roleTeamFilter || "all";
     renderRoleHome();
+    loadGameSeriesArchive().catch(error => { $("dashboardConnectionDetail").textContent = error.message || "The archive could not switch teams."; });
   });
 
   $("roleHomeGames").addEventListener("click", event => {
