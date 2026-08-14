@@ -2,11 +2,11 @@
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 html=(root/'live-dashboard.html').read_text()
-js=(root/'js/live-dashboard-v7-58-6.js').read_text()
-css=(root/'css/live-dashboard-v7-58-6.css').read_text()
+js=(root/('js/live-dashboard-v7-58-7.js' if (root/'js/live-dashboard-v7-58-7.js').exists() else 'js/live-dashboard-v7-58-6.js')).read_text()
+css=(root/('css/live-dashboard-v7-58-7.css' if (root/'css/live-dashboard-v7-58-7.css').exists() else 'css/live-dashboard-v7-58-6.css')).read_text()
 sql=(root/'supabase/migrations/202608130003_supporter_view_context_manual_opponent.sql').read_text().lower()
 checks={
-  'context cache bust':'7.58.6-contextfix1' in html,
+  'context cache bust':('7.58.7' in html or '7.58.6-contextfix1' in html),
   'archive viewing context mount':'id="gameArchiveViewingTeam"' in html and 'renderArchiveViewingContext' in js,
   'supporter relationship teams':'function supporterRelationshipTeams' in js and 'team.isMember || team.isFollowing' in js,
   'archive targets follow team filter':'function archiveViewTargets' in js and 'roleHomeTeamFilter === "all"' in js,

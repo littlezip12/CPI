@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-57-13.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-17.css?v=7.57.20">
-  <link rel="stylesheet" href="css/live-dashboard-v7-58-6.css?v=7.58.6-contextfix1">
+  <link rel="stylesheet" href="css/live-dashboard-v7-58-7.css?v=7.58.7">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -56,6 +56,25 @@
           <article><strong id="clubMetricScorer">0</strong><span>Need scorer</span></article>
           <article><strong id="clubMetricAttention">0</strong><span>Teams need setup</span></article>
         </div>
+        <section class="live-panel live-club-pilot-validation" id="clubPilotValidationPanel">
+          <div class="live-panel-heading">
+            <div><p class="live-section-kicker">Pilot validation</p><h2>Club Pilot proving run</h2></div>
+            <button id="refreshClubPilotValidationButton" type="button">Refresh</button>
+          </div>
+          <p class="live-panel-help">This is evidence, not a release checkbox. WPI reads canonical club/game records to show what has actually been observed before 7.59.0 Club Pilot Ready.</p>
+          <div class="live-pilot-validation-summary" aria-label="Club pilot validation summary">
+            <article><strong id="pilotMetricTeams">—</strong><span>Active teams</span></article>
+            <article><strong id="pilotMetricGroupMe">—</strong><span>GroupMe tested</span></article>
+            <article><strong id="pilotMetricConcurrent">—</strong><span>Concurrent pairs</span></article>
+            <article><strong id="pilotMetricWeekend">—</strong><span>Multi-game events</span></article>
+          </div>
+          <div id="clubPilotNextTest" class="live-pilot-next-test"><strong>Loading pilot evidence…</strong><span>WPI is checking the club record.</span></div>
+          <div id="clubPilotGateList" class="live-pilot-gate-list"><p class="live-empty-state">Loading validation evidence…</p></div>
+          <div class="live-pilot-detail-grid">
+            <section><div class="live-pilot-detail-heading"><strong>Team routes</strong><span>Roster + GroupMe</span></div><div id="clubPilotTeamRoutes" class="live-pilot-route-list"><p class="live-empty-state">Checking team routes…</p></div></section>
+            <section><div class="live-pilot-detail-heading"><strong>Unlisted opponents</strong><span>Identity review</span></div><div id="clubPilotManualOpponents" class="live-pilot-opponent-list"><p class="live-empty-state">Checking manual names…</p></div></section>
+          </div>
+        </section>
         <section class="live-panel live-club-team-section">
           <div class="live-panel-heading"><div><p class="live-section-kicker">Teams</p><h2>Club team status</h2></div></div>
           <p class="live-panel-help">Each card is a separate team workspace. Switching teams loads that team’s stable records; nothing is copied between teams.</p>
@@ -439,7 +458,7 @@
   <script src="js/live-team-following-v7-58-3.js?v=7.58.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
-  <script src="js/live-dashboard-v7-58-6.js?v=7.58.6-contextfix1"></script>
+  <script src="js/live-dashboard-v7-58-7.js?v=7.58.7"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

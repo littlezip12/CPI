@@ -1,1 +1,1 @@
-# WPI 7.58.6 — Club-Level Pilot Hardening
+# WPI 7.58.7 — Club Pilot Validation & Observability

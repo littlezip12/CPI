@@ -20,8 +20,8 @@ recovery=read('supabase/migrations/202608110002_final_recovery_permission_hotfix
 feed=read('js/live-tournament-feed-v7-58-5.js')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
 
-req(read('VERSION.md').strip()=='# WPI 7.58.6 — Club-Level Pilot Hardening','VERSION mismatch')
-req(site.get('version')=='7.58.6' and site.get('name')=='Club-Level Pilot Hardening','release metadata mismatch')
+req(read('VERSION.md').strip() in {'# WPI 7.58.6 — Club-Level Pilot Hardening','# WPI 7.58.7 — Club Pilot Validation & Observability'},'VERSION mismatch')
+req(site.get('version') in {'7.58.6','7.58.7'},'release metadata mismatch')
 for key in ('liveScoringClubPilotHardeningRelease','liveScoringConcurrentGameIsolationRelease','liveScoringOfflineGameIsolationRelease','liveScoringClubRegressionRelease','liveScoringGameLocalStateRelease'):
     req(site.get(key)=='7.58.6',f'missing 7.58.6 marker {key}')
 req(site.get('liveScoringTournamentFeedValidationRelease')=='7.58.5','7.58.5 tournament-feed marker changed')
@@ -72,13 +72,13 @@ req('delete from public.live_games' not in archive.lower(),'archive hardening mu
 # Tournament reconciliation remains squad-safe; current-season source is still external/pending.
 for token in ('club_only_multiple_live_squads','club_plus_matching_squad','peerCount > 1'):
     req(token in feed,f'squad-safe tournament matching missing: {token}')
-req(index.get('release')=='7.58.6','current tournament schedule index release mismatch')
+req(index.get('release') in {'7.58.6','7.58.7'},'current tournament schedule index release mismatch')
 req(index.get('activeCompetitiveSeason')=='2026-2027','active season changed')
 req(index.get('counts')=={'events':0,'games':0},'do not fabricate a current-season schedule during hardening')
 req((index.get('feedState') or {}).get('currentSeasonSchedulePublished') is False,'pending real schedule state must remain explicit')
 
 # No 7.58.6 database/function deployment: this is browser isolation + regression hardening.
-req(not list((ROOT/'supabase/migrations').glob('*club_level_pilot_hardening*')),'unexpected 7.58.6 database migration')
+req(not list((ROOT/'supabase/migrations').glob('*club_level_pilot_hardening*')),'unexpected 7.58.6 hardening migration')
 
 protected={
  'js/live-backend-v7-56-8.js':'fdeb80c539a2b375861de55e2cbdb48154652517110fab1db7c88d7148a7e328',

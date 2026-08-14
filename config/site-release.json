@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.58.6",
-  "name": "Club-Level Pilot Hardening",
+  "version": "7.58.7",
+  "name": "Club Pilot Validation & Observability",
   "date": "2026-08-13",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Completes the 7.58.6 club-pilot correction: Supporter team filters now drive one viewing context across Live/Upcoming/Finals and Tournaments & Weekends; followed-team archives are read-only through a follower-safe archive RPC; All Teams keeps archive cards explicitly labeled by team. Manual game creation now makes free-text opponent entry explicit\u2014known WPI identities are matched when possible, while unlisted names remain raw/manual and never auto-create or silently merge canonical clubs/teams. Existing recap, concurrency, scoring, recovery and GroupMe protections remain intact.",
+  "notes": "Adds an Owner/Admin Club Pilot Validation panel that derives real evidence from canonical WPI Live records: active teams, concurrent cross-team games, accepted scorer handoffs, per-team tested GroupMe routing with cross-team mismatch detection, Following/member overlap guards, multi-game event evidence, external official-schedule status, and unlisted manual-opponent review. Offline/reconnect remains explicitly a real-device manual proof; this release does not declare 7.59.0 ready automatically. Existing 7.58.6 scoring, recovery, Following, archive, manual-opponent and GroupMe protections remain intact.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -86,7 +86,7 @@
   "liveScoringExtraTimeRelease": "7.56.8",
   "liveScoringShootoutRelease": "7.56.8",
   "liveScoringConnectedBackendRelease": "7.56.8",
-  "liveScoringDashboardRelease": "7.58.5",
+  "liveScoringDashboardRelease": "7.58.7",
   "liveScoringRoleSecurityRelease": "7.57.10",
   "liveScoringPersistenceRelease": "7.56.15",
   "liveScoringGroupMeRelease": "7.56.8",
@@ -183,5 +183,8 @@
   "liveScoringGameLocalStateRelease": "7.58.6",
   "liveScoringSupporterViewContextRelease": "7.58.6",
   "liveScoringFollowerArchiveRelease": "7.58.6",
-  "liveScoringManualOpponentUxRelease": "7.58.6"
+  "liveScoringManualOpponentUxRelease": "7.58.6",
+  "liveScoringClubPilotValidationRelease": "7.58.7",
+  "liveScoringClubPilotObservabilityRelease": "7.58.7",
+  "liveScoringPilotEvidenceRelease": "7.58.7"
 }
