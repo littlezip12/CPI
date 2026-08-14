@@ -1,0 +1,18 @@
+WPI 7.58.8 — Club-Branded Game Experience
+
+Purpose: dynamic visual club theming for the active WPI Live game page, starting with Lamorinda, without changing scoring layout or protected scoring behavior.
+
+No Supabase migration. No Edge Function redeploy. No new secrets.
+
+Key additions:
+- standalone club-theme resolver (Lamorinda first)
+- Lamorinda navy/blue/gold visual shell
+- water/cream background and restrained blue/gold paint accents
+- subtle Lamorinda crest watermark on scoreboard
+- themed event buttons, toolbar, scoring CTA and mobile nav
+- unchanged scoring engine/layout and protected 7.58.6/7.58.7 behavior
+
+Validation:
+- focused WPI Live 7.58.8 gate passed
+- full repository release gate passed through CPI release check passed.
+- clean-install simulation required before delivery

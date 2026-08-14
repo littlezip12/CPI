@@ -1,1 +1,1 @@
-# WPI 7.58.7 — Club Pilot Validation & Observability
+# WPI 7.58.8 — Club-Branded Game Experience

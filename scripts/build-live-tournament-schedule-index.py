@@ -17,7 +17,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 HUB_PATH = ROOT / "data/tournaments/public-hub.json"
 OUT_PATH = ROOT / "data/live/tournament-schedule-index.json"
-RELEASE = "7.58.7"
+RELEASE = "7.58.8"
 
 
 def parse_time(date_iso: str | None, time_label: str | None, tz_name: str | None) -> str | None:
