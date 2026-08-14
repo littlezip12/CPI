@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.58.5",
-  "name": "Tournament Feed \u2192 Game-Day Validation",
+  "version": "7.58.6",
+  "name": "Club-Level Pilot Hardening",
   "date": "2026-08-13",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Validates the public WPI tournament feed into Game-Day Hub without guessing team identity: squad-qualified A/B/Black/Gold identities are isolated, club-only rows become review when multiple Live squads exist, manual tournament fallbacks remain canonical during later official reconciliation, and active-season schedules are never fabricated. Production 2026\u20132027 feed remains empty until an official source is published.",
+  "notes": "Hardens WPI Live for club-level pilot concurrency: every live game now keeps a game-scoped on-device/offline state copy so simultaneous team games cannot overwrite one another in browser storage; automated regression covers per-game scorer control/handoff, Following read-only isolation, reconnect recovery, GroupMe exactly-once claim/retry behavior, archive/recap preservation, and squad-safe tournament reconciliation. No production schedule is fabricated; first real 2026–2027 feed observation remains pending external validation.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -175,5 +175,10 @@
   "liveScoringGameNavigationRelease": "7.58.4",
   "liveScoringTournamentFeedValidationRelease": "7.58.5",
   "liveScoringTournamentIdentitySafetyRelease": "7.58.5",
-  "liveScoringTournamentReconciliationValidationRelease": "7.58.5"
+  "liveScoringTournamentReconciliationValidationRelease": "7.58.5",
+  "liveScoringClubPilotHardeningRelease": "7.58.6",
+  "liveScoringConcurrentGameIsolationRelease": "7.58.6",
+  "liveScoringOfflineGameIsolationRelease": "7.58.6",
+  "liveScoringClubRegressionRelease": "7.58.6",
+  "liveScoringGameLocalStateRelease": "7.58.6"
 }

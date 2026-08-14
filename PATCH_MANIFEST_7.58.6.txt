@@ -1,0 +1,30 @@
+WPI 7.58.6 — Club-Level Pilot Hardening
+
+Base:
+  Pushed/validated WPI 7.58.5 — Tournament Feed → Game-Day Validation
+  User ZIP: CPI-main - 2026-08-13T165818.694.zip
+
+Primary product changes:
+  - per-game browser/offline state isolation for simultaneous club games
+  - team-scoped new-game draft state
+  - explicit game route identity wins over remembered team context
+  - legacy local-state compatibility retained for one-time migration
+  - automated concurrent-game / scorer / Following / GroupMe / archive / recovery regression coverage
+  - current-season production tournament feed remains source-truthful and un-fabricated
+
+Infrastructure:
+  - no Supabase migration
+  - no Edge Function redeploy
+  - no new secret
+
+Validation:
+  - focused WPI Live 7.58.6 gate passed
+  - concurrent game storage isolation test passed
+  - protected 7.57.22 / 7.58.0 / 7.58.2 / 7.58.3 / 7.58.4 / 7.58.5 regressions passed
+  - full repository release gate passed in contiguous segments through `CPI release check passed.`
+  - gate-generated data/tournaments and qa artifacts restored to the pushed 7.58.5 baseline
+  - focused WPI Live 7.58.6 gate rerun after restoration and passed
+
+7.59.0 milestone note:
+  7.58.6 completes engineered hardening but does not fabricate remaining real-world acceptance evidence.
+  First real 2026–2027 official schedule ingestion remains pending external publication/observation.

@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+const assert = require('assert');
+global.window = {location:{search:''}};
+require('../js/live-game-storage-v7-58-6.js');
+const storage = global.window.WPILiveGameStorage7586;
+assert(storage, '7.58.6 game storage helper not exported');
+const gameA = storage.gameKey('game-a');
+const gameB = storage.gameKey('game-b');
+const teamA = storage.draftKey('team-a');
+const teamB = storage.draftKey('team-b');
+assert.notStrictEqual(gameA, gameB, 'simultaneous games must not share an offline storage key');
+assert.notStrictEqual(teamA, teamB, 'different team drafts must not share an offline storage key');
+assert.strictEqual(storage.routeScope('?game=game-a&team=team-b'), gameA, 'game route must take precedence over remembered/route team context');
+assert.strictEqual(storage.routeScope('?team=team-b&new=1'), teamB, 'new-game draft must be team scoped');
+assert(storage.isDraftKey(teamA), 'team draft must be recognized as a draft key');
+assert(!storage.isDraftKey(gameA), 'saved game key must not be recognized as a draft key');
+assert.strictEqual(storage.legacyKey, 'wpi-live-sandbox-v7-56-15', 'legacy state key must remain available for one-time migration');
+console.log('WPI LIVE 7.58.6 CONCURRENT GAME STORAGE TEST PASSED');
+console.log(' - separate games use separate on-device/offline state keys');
+console.log(' - separate team drafts use separate keys');
+console.log(' - explicit game identity wins over team context');

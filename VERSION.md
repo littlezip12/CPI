@@ -1,1 +1,1 @@
-# WPI 7.58.5 — Tournament Feed → Game-Day Validation
+# WPI 7.58.6 — Club-Level Pilot Hardening
