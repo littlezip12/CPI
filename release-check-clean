@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT"
+TMP="$(mktemp -d "${TMPDIR:-/tmp}/wpi-release-check.XXXXXX")"
+mkdir -p "$TMP/data"
+cp -a data/tournaments "$TMP/data/tournaments"
+cp -a qa "$TMP/qa"
+restore_gate_artifacts() {
+  rm -rf "$ROOT/data/tournaments" "$ROOT/qa"
+  cp -a "$TMP/data/tournaments" "$ROOT/data/tournaments"
+  cp -a "$TMP/qa" "$ROOT/qa"
+  rm -rf "$TMP"
+}
+trap restore_gate_artifacts EXIT INT TERM
+./release-check
+trap - EXIT INT TERM
+restore_gate_artifacts
+echo
+echo "Release gate-generated tournament/QA artifacts restored to their pre-check state."

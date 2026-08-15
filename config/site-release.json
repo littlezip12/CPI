@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.58.10",
-  "name": "Pilot Launch Prep & Admin Safety",
+  "version": "7.59.0",
+  "name": "Lamorinda Club Pilot Ready",
   "date": "2026-08-14",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Final pre-7.59 pilot preparation: adds a five-part team launch checklist including default starters, club-wide launch readiness, explicit manual-opponent identity mapping with preserved raw labels, stronger duplicate-game warnings, and visible team/season safety rails during game creation. Offline/reconnect remains deferred resilience work and the first real 2026\u20132027 official tournament schedule remains an external validation dependency. Protected scorer, GroupMe, Following, archive, reconciliation and Lamorinda-branded game behavior are preserved.",
+  "notes": "Stabilization milestone for the Lamorinda manual-game club pilot. Freezes the validated Club\u2192Teams operating model, multi-team isolation, access/following boundaries, scorer handoff/recovery, GroupMe routing, archives/recaps, club operations/admin safety, manual opponent reconciliation, and Lamorinda-branded scoring experience. Offline/reconnect remains deferred resilience work; the first real 2026\u20132027 official tournament schedule remains an external validation dependency and is not fabricated. No Supabase migration, Edge Function redeploy, or new secret.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -86,7 +86,7 @@
   "liveScoringExtraTimeRelease": "7.56.8",
   "liveScoringShootoutRelease": "7.56.8",
   "liveScoringConnectedBackendRelease": "7.56.8",
-  "liveScoringDashboardRelease": "7.58.10",
+  "liveScoringDashboardRelease": "7.59.0",
   "liveScoringRoleSecurityRelease": "7.57.10",
   "liveScoringPersistenceRelease": "7.56.15",
   "liveScoringGroupMeRelease": "7.56.8",
@@ -200,5 +200,9 @@
   "liveScoringClubLaunchReadinessRelease": "7.58.10",
   "liveScoringManualOpponentResolutionRelease": "7.58.10",
   "liveScoringDuplicateGameSafetyRelease": "7.58.10",
-  "liveScoringTeamSeasonSafetyRelease": "7.58.10"
+  "liveScoringTeamSeasonSafetyRelease": "7.58.10",
+  "liveScoringLamorindaPilotReadyRelease": "7.59.0",
+  "liveScoringManualGamePilotReadyRelease": "7.59.0",
+  "liveScoringPilotStabilizationRelease": "7.59.0",
+  "liveScoringProductionRunbookRelease": "7.59.0"
 }

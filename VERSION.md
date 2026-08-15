@@ -1,1 +1,1 @@
-# WPI 7.58.10 — Pilot Launch Prep & Admin Safety
+# WPI 7.59.0 — Lamorinda Club Pilot Ready

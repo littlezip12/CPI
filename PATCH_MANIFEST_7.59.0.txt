@@ -1,0 +1,84 @@
+WPI 7.59.0 — Lamorinda Club Pilot Ready
+Baseline: CPI-main - 2026-08-14T221302.124.zip (WPI 7.58.10)
+Patch files: 62
+
+Intentional scope:
+- Stabilization/milestone release; no new feature family
+- Marks the manual-game Lamorinda club pilot ready
+- Freezes validated Club → Teams, multi-team isolation, access/following, scorer/handoff, GroupMe, archive/recap, identity review, admin-safety and Lamorinda-theme behavior
+- Adds machine-readable pilot status plus Owner/Scorer/Supporter production runbook
+- Adds a 7.59.0 milestone banner to the existing Owner pilot evidence panel
+- Adds `release-check-clean`, which runs the complete repository gate and restores validation-generated tournament/QA artifacts to their exact pre-check state
+- Offline/reconnect remains deferred resilience work
+- Official 2026–2027 tournament-feed validation remains an external dependency until a real source is published
+- No Supabase migration, Edge Function redeploy, or new secret
+- Protected scoring/backend/Edge Function files are byte-stable against the pushed 7.58.10 baseline
+
+Validation:
+- WPI Live 7.59.0 focused release check passed
+- Complete repository release gate passed in contiguous segments through `CPI release check passed.`
+- Full-gate generated `data/tournaments` and `qa` artifacts restored to authoritative 7.58.10 baseline
+- Focused gate rerun after restoration and clean-gate wrapper addition: passed
+
+Payload SHA-256 (manifest excluded):
+a424b056d78c441a5abf4bf0227c93669f332dcaa20cb247566cab3ff9a793e7  INSTALL_7.59.0.md
+439cae2cda12c148fa9813fcc9b890db28cba356474c121a9a4f11d1c05d0cab  LIVE_LAMORINDA_CLUB_PILOT_RUNBOOK_7.59.0.md
+2257375872c5472684d97acda1a7e6b9fca5430af3eb8e5b23769dc654fe6e1b  LIVE_OWNER_SCORER_SUPPORTER_WORKFLOWS_7.59.0.md
+3231134290a49bda5c6cb8f5f4057052bfaffafbab63fa42baabfff4c92f1b72  PATCH_FILES_7.59.0.txt
+b22661bacfa26891ef7acc21f7f97989d83e2bd6768d3f8fd66f7efa500fd865  VERSION.md
+a15c66994e48f95d27665396cde76ba321652374d676e67330da51c87001f0e1  WPI_7.59.0_LAMORINDA_CLUB_PILOT_READY_HANDOFF.md
+770e90efdf2a5236d60efe067567307cdaad5f71bea92e864174342f7768b037  WPI_MASTER_HANDOFF_2026-08-14_7.59.0.md
+5bf27049d7831690c35459ae6bb7963b502bce45865c0aba595773c300bdd10e  config/site-release.json
+93c4949a194109c530d86ef1b22f58a7c1ef92051cbf8a636ae5b0dd2a19114a  css/live-dashboard-v7-59-0.css
+ee3e05544df3555355b301e51258b2c3247502b71c87db9e291c1718c16a9540  data/live/lamorinda-pilot-status.json
+56c96bede638625254958012073df4b230f65f7bff6f210bf72a4e23e9240440  data/live/tournament-schedule-index.json
+08002e336d665e1db03f070562d009b0ba027cec48445ac9d50f0b391ea2c30d  live-dashboard.html
+cabf0be228b85d273366ba5896832037ddc84f581551717706f637883c48e68c  release-check
+5b2e34fbd48214530ec41314cbfcf3c73a2bf1bd9a06f0ea2d90c24ce974518c  release-check-clean
+4d91af43d733e084d5515b3a2b2f744a13a3ec080167ee09ee6b30a46f82bf48  release-check-live-7.59.0
+679feeb8d98363eb6ca23b68a228e11d888d5f0bf212498d2dd042996ac96b86  scripts/build-live-tournament-schedule-index.py
+47c618e2e2f15b7baf59defc26b0fead250c697c2fc17ef246b0eba46e6875bd  scripts/test-boys-post-jo-rankings-v7-52-0.py
+97907eceb87bdae5da4e3ac98b9a96f8967d8cf903325712908b6d0fdf85acd9  scripts/test-brand-teams-section-landing-v7-53-4.py
+b2ce448a57e9a32cf9d56b57c46753291c8c64dec92cdea0f06bbfd52d1f9701  scripts/test-club-family-cleanup-v7-52-12.py
+7931823c862fb7588af0ce8478a948a9626195860edc9d2bd19f59aebb539865  scripts/test-club-locations-v7-52-5.py
+0e188da3b7c7a937e0331bd851db781d01d01816d399d8a49157be568e9928a2  scripts/test-club-logos-v7-52-6.py
+c4325fa1ac6289d7afde74ddff6125a515060af49c3e5044de26153f32d923bd  scripts/test-club-profile-experience-v7-53-0.py
+83ec1d7c0686da8d26e4780e309f4520328d53498ace2a751bcf2216feb47ee9  scripts/test-club-websites-v7-52-16.py
+276fb11301969f2f39ae2ad6f03b960899a1e646dc98a182b9fd6e1ee15b8485  scripts/test-evan-cousineau-v7-54-7.py
+927b7a471e6d63ffe67dca7079110f145df6569e95f80f0a0032c3d4a616f935  scripts/test-girls-futures-super-finals-v7-54-11.py
+f2e993e989708d782cc3360b3a6716d48b6a976ca56ca67cdfe091cb87fa7949  scripts/test-girls-post-jo-rankings-v7-52-2.py
+de2fe0134a52024bf321f5703a9d6fa7d8ac27ca5ec7eddac1195bb4a7819806  scripts/test-homepage-simplification-v7-54-12.py
+71671cdddadca36f1f71c7023775bf581f713f44e2db2c7dc04cf4fb1e8e65ae  scripts/test-jo-logo-delivery-v7-52-9.py
+a6320d9d00d44b688fd62b6a86b5ab8880a235f28d1a2b6bbb03534ce9424d0b  scripts/test-jo-profile-bridge-v7-52-11.py
+a5a82eb05d5c8481177e7b5a01ee318c6a52232187c09841f6041c606129a187  scripts/test-jo-recap-v7-54-16.py
+0286313fc5ea2b088a99703c37ad4e926b4665dbb25aebfc150187bd2f679d41  scripts/test-jo-results-browser-v7-52-1.py
+31520c6561dd3de32bb8704748425e65d2842d67b8c135e5407c4e2e585df411  scripts/test-jo-results-links-v7-52-7.py
+11e09dff2e41458714d2f702a53ef2d38773a45f6c18b0bb92acaf3a8a170ab7  scripts/test-jo-session-3-v7-54-5.py
+22d3a8e7768f6c47ef05580cf7cae8d2b5f8beac585cc7a26e9d651f818f2278  scripts/test-kap7-international-v7-54-9.py
+382ba7d98ec21e15eff4d64b6aa76d0da4c4bc6be61d647e0d18edcf957aefa8  scripts/test-kap7-logo-mapping-v7-54-10.py
+7fbdc37b0adca31d96466998d3e27142d08c7e6b4a7a63c2b86fa443c6e7927b  scripts/test-kern-skip-separation-v7-52-13.py
+88f05d0933984414636554df2cce0d281786d7e7c0828e215f90bbb810e9c17a  scripts/test-landing-page-clarity-v7-54-13.py
+52dcba0e3400c6f98b4c984ecf91652ecc4a4d0997aeafdacac1c50b7c933360  scripts/test-live-club-game-theme-regression-v7-58-9.py
+c22fa79a9208cb519b4cc8ababbc74dbaa04b17ea761bc1ffb15c8b577eece4b  scripts/test-live-club-operations-scale-v7-58-9.py
+669c753fbf07b46a0b08532e81499bb0a8b5cee500ddc2669ed30e11000ce68d  scripts/test-live-club-pilot-hardening-v7-58-6.py
+d7826d8f5f5d075b4bc52901d7c8c85431484e3bcbc432c42275377c1f4e87d6  scripts/test-live-club-pilot-validation-regression-v7-58-9.py
+d49dcc5e3bd5f827cc1d2008f2900e4c9eaf9647ecb048d4d4b0f64c9162e842  scripts/test-live-club-workspace-regression-v7-58-6.py
+6c902346affdebfa0fa648a78968565446217444f6ba3864da3259ec71d063ac  scripts/test-live-event-archive-regression-v7-58-6.py
+bd39659cd92e638557de0dde998bac33b1d02f41a9238cbcbb7777e52c21a030  scripts/test-live-lamorinda-club-pilot-ready-v7-59-0.py
+4a1ecf6fc47c13ca55c21ddc55f811b6ac898e72a083df196eaca95803f658f2  scripts/test-live-multi-team-profiles-rosters-regression-v7-58-6.py
+59956fb0862ddc66c2c53b548e86766c8f45d8e1312465268817520015ceb2f7  scripts/test-live-pilot-launch-admin-safety-v7-58-10.py
+20d13138b9976bf7305f6199e95c75ec7b6ca89ea26e318a8209ec374a8d4d96  scripts/test-live-pilot-regression-v7-58-6.py
+c7fdf6a8072884e2e93c438513fbc68663083e221420e71f53842040ed29af5f  scripts/test-live-tournament-feed-regression-v7-58-6.py
+d2c186f18f9781e1629a97f00095e1f4ba7f1a703b991aa34062892a37e424e5  scripts/test-multi-season-foundation-v7-55-1.py
+e043df3e071aac811776dd3ded534b64507b4e19e62ed9e144c2d54237f1cae6  scripts/test-public-tournament-hub-v7-54-4.py
+762800f37c8b74f16741c4feb24720e7e55538ddfeb2e0599f15cd91714b59be  scripts/test-release-integrity-v7-52-15.py
+840bff46d8ce5dfd0f9c7f0313f55a4d123e3651b07896be2a0d01953a060cce  scripts/test-san-diego-county-cup-v7-54-8.py
+5cf45291dcc57be4120ce49a43fadf8ab6dc3be16b1a99d88a545258755a032d  scripts/test-team-directory-curation-v7-54-14.py
+e281877f3b12e24ed0ca9b72b85dc9a1163853b7152d44c35d70822d63ab15d3  scripts/test-team-directory-logos-v7-53-6.js
+1a527fe1af82fc234505767d3b6922e52ad705a938e6f3f4b10e343c7a251060  scripts/test-team-hero-compact-v7-54-15.py
+a1e12891a3a3778d1b414e9d095fa4166098226ecb302d10c32536f3514761bb  scripts/test-team-profile-experience-v7-53-1.py
+85bc1194ca5192dc77ce1431dd0f00021b41f3422ba28290d75ff5fda302184a  scripts/test-tournament-platform-v7-54-0.py
+b0de4f44d31af78828ffe99cfc7c5e60270938bdea58147c9cf40e935fc1c29f  scripts/test-tournament-platform-v7-54-1.py
+8747d5d15d9d8b0fe9ed29832e74ee9be03937e5061888b305316c9958087c4e  scripts/test-tournament-seasons-v7-55-0.py
+71e9f846e96cfc8e3217988e20668289f4d895b8ca6c6dd385ef52f06e9ab723  scripts/test-wpi-homepage-v7-52-4.py
+1671bf9a086af8ae1ea73b2c938ff9ea31eedb22f44914a0bd2aed6f1887c01e  scripts/validate-tournament-data.py

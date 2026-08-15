@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-58-7.css?v=7.58.7">
   <link rel="stylesheet" href="css/live-dashboard-v7-58-9.css?v=7.58.9">
   <link rel="stylesheet" href="css/live-dashboard-v7-58-10.css?v=7.58.10">
+  <link rel="stylesheet" href="css/live-dashboard-v7-59-0.css?v=7.59.0">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -63,7 +64,11 @@
             <div><p class="live-section-kicker">Pilot validation</p><h2>Club Pilot proving run</h2></div>
             <button id="refreshClubPilotValidationButton" type="button">Refresh</button>
           </div>
-          <p class="live-panel-help">This is evidence, not a release checkbox. WPI reads canonical club/game records to show what has actually been observed before 7.59.0 Club Pilot Ready.</p>
+          <p class="live-panel-help">WPI reads canonical club/game records to keep the pilot evidence visible after the 7.59.0 milestone. External schedule validation remains separate from manual-game pilot readiness.</p>
+          <div class="live-pilot-ready-milestone" role="status" aria-label="Lamorinda club pilot status">
+            <div><span>WPI 7.59.0 milestone</span><strong>Lamorinda manual-game pilot ready</strong><p>The validated Club → Teams, scoring, access/following, GroupMe, recap/archive and club-operations foundation is ready for pilot use. Offline recovery remains deferred resilience work; official tournament-feed validation will run when a real 2026–2027 source is published.</p></div>
+            <em>Ready</em>
+          </div>
           <div class="live-pilot-validation-summary" aria-label="Club pilot validation summary">
             <article><strong id="pilotMetricTeams">—</strong><span>Active teams</span></article>
             <article><strong id="pilotMetricGroupMe">—</strong><span>GroupMe tested</span></article>

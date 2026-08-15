@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "release": "7.59.0",
+  "milestone": "Lamorinda Club Pilot Ready",
+  "scope": "manual_game_club_pilot",
+  "club": "Lamorinda Water Polo",
+  "status": "ready",
+  "validatedAt": "2026-08-14",
+  "validatedCapabilities": [
+    {
+      "key": "club_team_hierarchy",
+      "status": "validated",
+      "detail": "Club \u2192 Teams workspace is active with stable team IDs and isolated team data."
+    },
+    {
+      "key": "multi_team_operation",
+      "status": "validated",
+      "detail": "12U Boys and 14U Boys have coexisted in the same club workspace with cross-team isolation confirmed."
+    },
+    {
+      "key": "supporter_following",
+      "status": "validated",
+      "detail": "Following is read-only and remains separate from permanent membership/authority; followed-team results and archives use viewing-team context."
+    },
+    {
+      "key": "scoring_and_handoff",
+      "status": "observed",
+      "detail": "Concurrent games and multiple scorer handoffs were observed in pilot evidence while scorer authority remains game-scoped."
+    },
+    {
+      "key": "groupme_routing",
+      "status": "observed",
+      "detail": "Per-team GroupMe routes were tested for both active pilot teams with delivery isolation preserved."
+    },
+    {
+      "key": "archives_and_recaps",
+      "status": "validated",
+      "detail": "Final games load structured recaps/stats and Tournaments & Weekends remain team-aware."
+    },
+    {
+      "key": "multi_game_events",
+      "status": "observed",
+      "detail": "Multi-game event/weekend evidence has been observed in the club pilot validation record."
+    },
+    {
+      "key": "manual_opponent_identity",
+      "status": "validated",
+      "detail": "Unlisted opponent names are preserved raw and can be explicitly mapped by an Owner without automatic identity guessing."
+    },
+    {
+      "key": "launch_admin_safety",
+      "status": "validated",
+      "detail": "Launch readiness, team/season context, access shortcuts and duplicate-game preflight are in the production baseline."
+    },
+    {
+      "key": "club_branding",
+      "status": "validated",
+      "detail": "Lamorinda scoring uses the club-branded blue/gold game experience without changing scoring layout or protected scoring behavior."
+    }
+  ],
+  "deferred": [
+    {
+      "key": "offline_reconnect",
+      "status": "deferred_resilience",
+      "detail": "Underlying local recovery remains protected, but a real-device offline/reconnect proving run is intentionally deferred because target venues generally have adequate connectivity."
+    }
+  ],
+  "externalDependencies": [
+    {
+      "key": "official_2026_2027_tournament_feed",
+      "status": "external_dependency",
+      "detail": "Validate official schedule \u2192 Game-Day Hub \u2192 manual fallback reconciliation when a real current-season official schedule is published. Do not fabricate source data."
+    }
+  ],
+  "releaseRule": "7.59.0 marks the manual-game Lamorinda club pilot ready; official-feed validation is tracked separately when external source data exists."
+}

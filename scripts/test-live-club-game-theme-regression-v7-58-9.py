@@ -13,8 +13,8 @@ css=read('css/live-club-theme-v7-58-8.css')
 js=read('js/live-club-theme-v7-58-8.js')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
 
-req(read('VERSION.md').strip() in {'# WPI 7.58.9 — Club Operations & Scale Polish','# WPI 7.58.10 — Pilot Launch Prep & Admin Safety'},'VERSION mismatch')
-req((site.get('version'),site.get('name')) in {('7.58.9','Club Operations & Scale Polish'),('7.58.10','Pilot Launch Prep & Admin Safety')},'release metadata mismatch')
+req(read('VERSION.md').strip() in {'# WPI 7.58.9 — Club Operations & Scale Polish','# WPI 7.58.10 — Pilot Launch Prep & Admin Safety','# WPI 7.59.0 — Lamorinda Club Pilot Ready'},'VERSION mismatch')
+req((site.get('version'),site.get('name')) in {('7.58.9','Club Operations & Scale Polish'),('7.58.10','Pilot Launch Prep & Admin Safety'),('7.59.0','Lamorinda Club Pilot Ready')},'release metadata mismatch')
 for key in ('liveScoringClubGameThemeRelease','liveScoringLamorindaGameThemeRelease','liveScoringGameExperienceRelease'):
     req(site.get(key)=='7.58.8',f'missing 7.58.8 marker {key}')
 for key,expected in {
@@ -72,7 +72,7 @@ protected={
 for rel,digest in protected.items():
     req(hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()==digest,f'protected foundation changed: {rel}')
 
-req(index.get('release') in {'7.58.9','7.58.10'},'schedule index release mismatch')
+req(index.get('release') in {'7.58.9','7.58.10','7.59.0'},'schedule index release mismatch')
 req(index.get('counts')=={'events':0,'games':0},'theme release must not fabricate schedule data')
 
 print('WPI LIVE 7.58.8 CLUB-BRANDED GAME EXPERIENCE REGRESSION PASSED IN 7.58.9')
