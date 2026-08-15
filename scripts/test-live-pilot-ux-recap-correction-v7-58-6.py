@@ -1,12 +1,12 @@
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 html=(root/'live-dashboard.html').read_text()
-js=(root/('js/live-dashboard-v7-58-7.js' if (root/'js/live-dashboard-v7-58-7.js').exists() else 'js/live-dashboard-v7-58-6.js')).read_text()
+js=(root/('js/live-dashboard-v7-58-9.js' if (root/'js/live-dashboard-v7-58-9.js').exists() else ('js/live-dashboard-v7-58-7.js' if (root/'js/live-dashboard-v7-58-7.js').exists() else 'js/live-dashboard-v7-58-6.js'))).read_text()
 css=(root/('css/live-dashboard-v7-58-7.css' if (root/'css/live-dashboard-v7-58-7.css').exists() else 'css/live-dashboard-v7-58-6.css')).read_text()
 sql=(root/'supabase/migrations/202608130002_recap_following_pilot_ux_correction.sql').read_text()
 recap=(root/'live-game-recap.html').read_text()
 checks={
- 'dashboard loads correction JS':('js/live-dashboard-v7-58-7.js?v=7.58.7' in html or 'js/live-dashboard-v7-58-6.js?v=7.58.6-contextfix1' in html),
+ 'dashboard loads correction JS':('js/live-dashboard-v7-58-9.js?v=7.58.9' in html or 'js/live-dashboard-v7-58-7.js?v=7.58.7' in html or 'js/live-dashboard-v7-58-6.js?v=7.58.6-contextfix1' in html),
  'following search':'id="followingSearch"' in html and 'followingSearch' in js,
  'following age filter':'id="followingAgeFilter"' in html and 'followingAgeFilter' in js,
  'following gender filter':'id="followingGenderFilter"' in html and 'followingGenderFilter' in js,

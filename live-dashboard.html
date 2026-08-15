@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-57-16.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-57-17.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-58-7.css?v=7.58.7">
+  <link rel="stylesheet" href="css/live-dashboard-v7-58-9.css?v=7.58.9">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -76,9 +77,32 @@
           </div>
         </section>
         <section class="live-panel live-club-team-section">
-          <div class="live-panel-heading"><div><p class="live-section-kicker">Teams</p><h2>Club team status</h2></div></div>
-          <p class="live-panel-help">Each card is a separate team workspace. Switching teams loads that team’s stable records; nothing is copied between teams.</p>
+          <div class="live-panel-heading"><div><p class="live-section-kicker">Teams</p><h2>Club team status</h2></div><button id="clubAddTeamButton" type="button">+ Add team</button></div>
+          <p class="live-panel-help">Search and filter the club without changing any team’s stable records. Open a team for profile/game-day work or jump directly to that team’s Access panel.</p>
+          <div class="live-club-team-toolbar" aria-label="Club team filters">
+            <label><span>Search</span><input id="clubTeamSearch" type="search" autocomplete="off" placeholder="Team, age, squad…"></label>
+            <label><span>Age</span><select id="clubTeamAgeFilter"><option value="all">All ages</option></select></label>
+            <label><span>Group</span><select id="clubTeamGenderFilter"><option value="all">Boys + Girls + Coed</option><option value="Boys">Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option></select></label>
+            <label><span>Status</span><select id="clubTeamStatusFilter"><option value="all">All teams</option><option value="ready">Ready</option><option value="attention">Needs setup</option></select></label>
+          </div>
+          <div id="clubTeamFilterSummary" class="live-club-filter-summary">Loading team status…</div>
           <div id="clubTeamGrid" class="live-club-team-grid"><p class="live-empty-state">Loading teams…</p></div>
+        </section>
+        <section class="live-panel live-club-people-section" id="clubPeopleAccessPanel">
+          <div class="live-panel-heading"><div><p class="live-section-kicker">People &amp; access</p><h2>Across the club</h2></div><button id="refreshClubOperationsButton" type="button">Refresh</button></div>
+          <p class="live-panel-help">One view of permanent team memberships and read-only Following across this club. Roles are still changed inside the individual team so team-level authority stays explicit.</p>
+          <div class="live-club-people-metrics" aria-label="Club access metrics">
+            <article><strong id="clubPeopleMetricPeople">—</strong><span>People</span></article>
+            <article><strong id="clubPeopleMetricMemberships">—</strong><span>Memberships</span></article>
+            <article><strong id="clubPeopleMetricFollows">—</strong><span>Read-only follows</span></article>
+          </div>
+          <label class="live-club-people-search"><span>Find a person or team</span><input id="clubPeopleSearch" type="search" autocomplete="off" placeholder="Name, email, team…"></label>
+          <div id="clubPeopleAccessList" class="live-club-people-list"><p class="live-empty-state">Loading club access…</p></div>
+        </section>
+        <section class="live-panel live-club-identity-section" id="clubIdentityReviewPanel">
+          <div class="live-panel-heading"><div><p class="live-section-kicker">Identity review</p><h2>Unlisted opponents</h2></div><span id="clubIdentityReviewCount" class="live-access-count">—</span></div>
+          <p class="live-panel-help">Manual opponent names stay exactly as entered and never auto-merge into the WPI directory. This queue shows names that still need a deliberate identity decision later.</p>
+          <div id="clubIdentityReviewList" class="live-club-identity-list"><p class="live-empty-state">Checking manual opponents…</p></div>
         </section>
         <div class="live-club-operations-grid">
           <section class="live-panel"><div class="live-panel-heading"><div><p class="live-section-kicker">Live</p><h2>Live now</h2></div></div><div id="clubLiveGames" class="live-club-game-list"><p class="live-empty-state">Checking live games…</p></div></section>
@@ -427,8 +451,12 @@
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Multi-team workspace</p><h2>Add another team</h2></div><button value="cancel" aria-label="Close add team dialog">Close</button></div>
         <p class="live-team-switch-summary">Create a separate team under this club. It receives its own stable team ID, roster, access, games and GroupMe destination; existing team records are never copied into it.</p>
+        <div class="live-team-name-suggestion">
+          <div><span>Suggested WPI Live name</span><strong id="newTeamSuggestedName">Lamorinda A 14U Boys</strong><small id="newTeamSuggestedLabel">Workspace label: 14U Boys A</small></div>
+          <button id="useSuggestedTeamNameButton" type="button">Use suggested</button>
+        </div>
         <div class="live-create-team-form">
-          <label>Team name<input id="newTeamName" type="text" maxlength="100" autocomplete="organization" placeholder="e.g. Lamorinda A 12U Boys"></label>
+          <label>Team name<input id="newTeamName" type="text" maxlength="100" autocomplete="organization" placeholder="e.g. Lamorinda A 12U Boys"><small>Editable. Age, group and squad below generate a clean default for you.</small></label>
           <label>Age group<select id="newTeamAgeGroup"><option value="10U">10U</option><option value="12U">12U</option><option value="14U" selected>14U</option><option value="16U">16U</option><option value="18U">18U</option></select></label>
           <label>Gender<select id="newTeamGender"><option value="Boys" selected>Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option></select></label>
           <label>Squad / division<input id="newTeamSquad" type="text" maxlength="30" placeholder="A, B, Black, Gold…"></label>
@@ -458,7 +486,7 @@
   <script src="js/live-team-following-v7-58-3.js?v=7.58.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
-  <script src="js/live-dashboard-v7-58-7.js?v=7.58.7"></script>
+  <script src="js/live-dashboard-v7-58-9.js?v=7.58.9"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

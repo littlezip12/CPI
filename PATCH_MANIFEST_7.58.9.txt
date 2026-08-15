@@ -1,0 +1,30 @@
+WPI 7.58.9 — Club Operations & Scale Polish
+
+Built from pushed/validated WPI 7.58.8 baseline:
+CPI-main - 2026-08-13T210010.141.zip
+
+Scope
+- Scalable All Teams search/filter/readiness operations surface.
+- Club-wide People & Access read-only overview; team role changes stay team-scoped.
+- Dedicated unlisted/manual opponent identity-review queue with no automatic merge.
+- Faster Add Team naming/label suggestions that remain editable.
+- Offline/reconnect reclassified as deferred resilience rather than a pilot blocker.
+- Official 2026–2027 tournament feed remains an external dependency and is not fabricated.
+- WPI 7.58.8 Lamorinda branded game experience and protected scoring engine remain intact.
+
+Database
+- Adds migration supabase/migrations/202608140001_club_operations_scale_polish.sql.
+- Adds read-only live_club_operations_v1(uuid) for Club Owners/Admins.
+- Updates live_club_pilot_validation_v1(uuid) observability semantics.
+- No Edge Function redeploy.
+- No new secret.
+
+Validation
+- WPI Live 7.58.9 focused release check passed.
+- Complete repository release gate passed in contiguous execution through final `CPI release check passed.`
+- Gate-generated tournament/QA artifacts were restored to the pushed baseline.
+- Final focused gate rerun passed after restoration.
+- Clean-install simulation is required before artifact delivery.
+
+Patch files: 60 (including this manifest/list).
+See PATCH_FILES_7.58.9.txt.

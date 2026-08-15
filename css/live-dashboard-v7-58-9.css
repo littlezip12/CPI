@@ -1,0 +1,23 @@
+/* WPI 7.58.9 — Club Operations & Scale Polish. */
+.live-club-team-toolbar{display:grid;grid-template-columns:minmax(220px,1.5fr) repeat(3,minmax(130px,.7fr));gap:10px;margin:16px 0 8px;padding:12px;border:1px solid #dfe7f1;border-radius:16px;background:#f8fafc}
+.live-club-team-toolbar label,.live-club-people-search{display:grid;gap:6px;font-size:12px;font-weight:800;color:#5d6c82;text-transform:uppercase;letter-spacing:.04em}
+.live-club-team-toolbar input,.live-club-team-toolbar select,.live-club-people-search input{width:100%;min-height:44px;border:1px solid #d5deea;border-radius:12px;background:#fff;padding:0 12px;color:#12213a;font:inherit;text-transform:none;letter-spacing:0}
+.live-club-filter-summary{margin:8px 2px 14px;color:#68768b;font-size:13px;font-weight:700}
+.live-club-team-card .live-club-team-stats{grid-template-columns:repeat(4,minmax(0,1fr))}
+.live-club-team-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.live-club-team-actions button{min-height:38px;padding:0 14px}
+.live-club-people-section,.live-club-identity-section{margin-top:18px}
+.live-club-people-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.live-club-people-metrics article{padding:14px;border:1px solid #e0e7ef;border-radius:14px;background:#f8fafc}
+.live-club-people-metrics strong{display:block;font-size:24px;color:#0e2342}
+.live-club-people-metrics span{font-size:12px;font-weight:800;color:#6c7a8e;text-transform:uppercase;letter-spacing:.04em}
+.live-club-people-search{max-width:520px;margin:10px 0 14px}
+.live-club-people-list,.live-club-identity-list{display:grid;gap:10px}
+.live-club-person-row{display:grid;grid-template-columns:minmax(180px,.8fr) minmax(0,1.6fr);gap:14px;align-items:center;padding:13px 14px;border:1px solid #e0e7ef;border-radius:14px;background:#fff}
+.live-club-person-identity{display:grid;gap:3px}.live-club-person-identity strong{color:#10223f}.live-club-person-identity small{color:#738096}
+.live-club-person-teams{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.live-club-person-teams button,.live-club-person-teams span{border:1px solid #d8e1ec;border-radius:999px;padding:7px 10px;background:#f8fafc;color:#30435f;font-size:12px;font-weight:800}.live-club-person-teams button{cursor:pointer}.live-club-person-teams span[data-state="following"]{border-color:#ded7ff;background:#f5f2ff;color:#5141bf}
+.live-club-identity-row{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:14px;border:1px solid #e2e7ee;border-radius:14px;background:#fff}.live-club-identity-row>div{display:grid;gap:4px}.live-club-identity-row strong{color:#11233e}.live-club-identity-row span{color:#596a82;font-size:13px}.live-club-identity-row small{color:#7b8798}.live-club-identity-row a{white-space:nowrap;font-weight:800}
+.live-team-name-suggestion{display:flex;justify-content:space-between;gap:16px;align-items:center;margin:12px 0 16px;padding:13px 14px;border:1px solid #cfe0f4;border-radius:14px;background:#f3f8ff}.live-team-name-suggestion>div{display:grid;gap:3px}.live-team-name-suggestion span{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;color:#55708e}.live-team-name-suggestion strong{font-size:17px;color:#0d2a4e}.live-team-name-suggestion small{color:#6c7d91}.live-team-name-suggestion button{white-space:nowrap}
+.live-pilot-gate[data-state="deferred"]{background:#f8fafc;border-color:#dfe5ed}.live-pilot-gate[data-state="deferred"] .live-pilot-gate-mark{background:#e9eef5;color:#64748b}.live-pilot-gate[data-state="deferred"] em{background:#eef2f7;color:#64748b}.live-pilot-next-test[data-state="external"]{border-color:#d6def8;background:#f7f8ff}
+@media (max-width:900px){.live-club-team-toolbar{grid-template-columns:1fr 1fr}.live-club-team-card .live-club-team-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.live-club-person-row{grid-template-columns:1fr}.live-club-person-teams{justify-content:flex-start}}
+@media (max-width:620px){.live-club-team-toolbar{grid-template-columns:1fr}.live-club-people-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.live-club-people-metrics article{padding:10px}.live-club-people-metrics strong{font-size:20px}.live-club-identity-row{align-items:flex-start;flex-direction:column}.live-team-name-suggestion{align-items:flex-start;flex-direction:column}}
