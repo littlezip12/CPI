@@ -17,8 +17,8 @@ dashjs=read('js/live-dashboard-v7-60-2.js')
 sql=read('supabase/migrations/202608140004_team_directory_identity_management.sql')
 css=read('css/live-team-identity-v7-60-2.css')
 
-req(read('VERSION.md').strip()=='# WPI 7.60.2 — Team Directory & Identity Management','VERSION mismatch')
-req((site.get('version'),site.get('name'))==('7.60.2','Team Directory & Identity Management'),'release metadata mismatch')
+req(read('VERSION.md').strip() in {'# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'VERSION mismatch')
+req(site.get('version') in {'7.60.2','7.60.3'},'release metadata version mismatch')
 for key in ('liveScoringTeamDirectoryIdentityRelease','liveScoringTeamFamilyIdentityRelease','liveScoringIdentityAliasRelease','liveScoringIdentityReconciliationRelease','liveScoringPersistentOpponentAliasRelease'):
     req(site.get(key)=='7.60.2',f'missing 7.60.2 marker: {key}')
 for key in ('liveScoringSelfServiceClubOnboardingRelease','liveScoringClubClaimReviewRelease','liveScoringFirstTeamProvisioningRelease'):
@@ -37,7 +37,7 @@ for token in ('Directory &amp; identity management','Team-family links','Club id
     req(token in html,f'identity page contract missing: {token}')
 req('js/live-team-identity-v7-60-2.js?v=7.60.2' in html,'identity page script missing')
 req('live-team-identity.html' in dash,'dashboard must expose Team identity entry')
-req('js/live-dashboard-v7-60-2.js?v=7.60.2' in dash,'dashboard must use 7.60.2 identity-aware controller')
+req(('js/live-dashboard-v7-60-2.js?v=7.60.2' in dash) or ('js/live-dashboard-v7-60-3.js?v=7.60.3' in dash),'dashboard must preserve identity-aware controller')
 req('grid-template-columns' in css and '@media(max-width:560px)' in css,'identity page must remain responsive')
 
 for token in ('live_club_identity_context_v1','live_set_team_identity_family_v1','live_clear_team_identity_family_v1','live_upsert_identity_alias_v1','live_remove_identity_alias_v1','live_resolve_manual_opponent_v1','live_identity_aliases_for_club_v1'):
@@ -81,7 +81,7 @@ protected={
  'js/live-login-v7-60-1.js':'6cf7e8f746dbd6881d9939a787202024c62f3f03b716dd50481329bb648acb6c',
 }
 for path,digest in protected.items(): req(sha(path)==digest,f'protected foundation changed: {path}')
-req(index.get('release')=='7.60.2','schedule index release marker mismatch')
+req(index.get('release') in {'7.60.2','7.60.3'},'schedule index release marker mismatch')
 req(index.get('counts')=={'events':0,'games':0},'identity release must not fabricate current-season schedule data')
 print('WPI LIVE 7.60.2 TEAM DIRECTORY & IDENTITY MANAGEMENT PASSED')
 print(' - 182 clubs / 724 public team identities remain canonical')

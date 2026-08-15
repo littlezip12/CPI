@@ -6,7 +6,7 @@ css=(root/('css/live-dashboard-v7-58-7.css' if (root/'css/live-dashboard-v7-58-7
 sql=(root/'supabase/migrations/202608130002_recap_following_pilot_ux_correction.sql').read_text()
 recap=(root/'live-game-recap.html').read_text()
 checks={
- 'dashboard loads correction JS':('js/live-dashboard-v7-60-2.js?v=7.60.2' in html or 'js/live-dashboard-v7-58-10.js?v=7.58.10' in html or 'js/live-dashboard-v7-58-9.js?v=7.58.9' in html or 'js/live-dashboard-v7-58-7.js?v=7.58.7' in html or 'js/live-dashboard-v7-58-6.js?v=7.58.6-contextfix1' in html),
+ 'dashboard loads correction JS':(('js/live-dashboard-v7-60-3.js?v=7.60.3' in html or 'js/live-dashboard-v7-60-2.js?v=7.60.2' in html) or 'js/live-dashboard-v7-58-10.js?v=7.58.10' in html or 'js/live-dashboard-v7-58-9.js?v=7.58.9' in html or 'js/live-dashboard-v7-58-7.js?v=7.58.7' in html or 'js/live-dashboard-v7-58-6.js?v=7.58.6-contextfix1' in html),
  'following search':'id="followingSearch"' in html and 'followingSearch' in js,
  'following age filter':'id="followingAgeFilter"' in html and 'followingAgeFilter' in js,
  'following gender filter':'id="followingGenderFilter"' in html and 'followingGenderFilter' in js,
@@ -15,7 +15,7 @@ checks={
  'team context on cards':'live-role-game-team-context' in js and 'live-role-game-team-context' in css,
  'recap SQL text-safe coalesce':"coalesce(nullif(trim(p.cap_number),''),'999')" in sql,
  'bad recap coalesce removed':'coalesce(p.cap_number,999)' not in sql,
- 'recap cache bust':('7.58.7' in recap or '7.58.6-recapfix1' in recap),
+ 'recap cache bust':('7.60.3' in recap or '7.58.7' in recap or '7.58.6-recapfix1' in recap),
 }
 failed=[k for k,v in checks.items() if not v]
 if failed:

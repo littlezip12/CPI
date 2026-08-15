@@ -15,8 +15,8 @@ css=read('css/live-club-theme-v7-60-0.css')
 js=read('js/live-club-theme-v7-60-0.js')
 builder=read('scripts/build-live-club-theme-registry-v7-60-0.py')
 
-req(read('VERSION.md').strip() in {'# WPI 7.60.0 — Club Branding Platform','# WPI 7.60.1 — Self-Service Club Onboarding','# WPI 7.60.2 — Team Directory & Identity Management'},'VERSION mismatch')
-req(site.get('version') in {'7.60.0','7.60.1','7.60.2'},'release metadata mismatch')
+req(read('VERSION.md').strip() in {'# WPI 7.60.0 — Club Branding Platform','# WPI 7.60.1 — Self-Service Club Onboarding','# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'VERSION mismatch')
+req(site.get('version') in {'7.60.0','7.60.1','7.60.2','7.60.3'},'release metadata mismatch')
 for key in ('liveScoringClubBrandingPlatformRelease','liveScoringThemeRegistryRelease','liveScoringCanonicalClubBrandingRelease','liveScoringThemeActivationSafetyRelease'):
     req(site.get(key)=='7.60.0',f'missing 7.60.0 marker {key}')
 req(site.get('liveScoringLamorindaPilotReadyRelease')=='7.59.0','7.59.0 pilot-ready milestone must remain historical')
@@ -63,6 +63,7 @@ for line in (
     '  <link rel="stylesheet" href="css/live-club-theme-v7-60-0.css?v=7.60.0">\n',
     '  <script src="js/live-club-theme-registry-v7-60-0.js?v=7.60.0"></script>\n',
     '  <script src="js/live-club-theme-v7-60-0.js?v=7.60.0"></script>\n',
+    '  <script src="js/live-game-supporter-return-v7-60-3.js?v=7.60.3"></script>\n',
 ): stripped=stripped.replace(line,'')
 req(hashlib.sha256(stripped.encode()).hexdigest()=='0f069e63a7cbfe39c15f0130d288d8c3bed2989753de03531b8eff68ec8dfb94','live-game layout changed beyond theme asset swap')
 
@@ -80,7 +81,7 @@ for path,digest in protected.items(): req(sha(path)==digest,f'protected foundati
 migrations=[p.name for p in (ROOT/'supabase/migrations').glob('*') if '7_60_0' in p.name.lower() or '7600' in p.name.lower()]
 req(not migrations,'7.60.0 must not add a Supabase migration')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
-req(index.get('release') in {'7.60.0','7.60.1','7.60.2'},'schedule index release marker mismatch')
+req(index.get('release') in {'7.60.0','7.60.1','7.60.2','7.60.3'},'schedule index release marker mismatch')
 req(index.get('counts')=={'events':0,'games':0},'branding release must not fabricate current-season schedule data')
 print('WPI LIVE 7.60.0 CLUB BRANDING PLATFORM PASSED')
 print(' - all canonical WPI clubs are available as branding candidates')

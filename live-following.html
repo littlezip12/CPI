@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>My Teams | WPI Live</title>
+  <meta name="description" content="Follow WPI water polo teams and see one read-only game feed.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/live-following-v7-60-3.css?v=7.60.3">
+</head>
+<body class="wpi-following-page">
+  <main class="follow-shell" id="supporterHubApp">
+    <header class="follow-hero">
+      <div><p>WPI Live · Supporter Hub</p><h1>My Teams</h1><span>Follow teams across WPI and get one clean, read-only game feed.</span></div>
+      <nav><a href="live-dashboard.html">Team dashboard</a><button id="followSignOut" type="button">Sign out</button></nav>
+    </header>
+
+    <section id="followSignedOut" class="follow-card follow-empty" hidden>
+      <h2>Sign in to follow teams</h2><p>Your follows sync to your WPI account and never grant team membership or scoring access.</p>
+      <a class="follow-primary-link" href="live-login.html?follow=1">Sign in or create supporter account</a>
+    </section>
+
+    <section id="followConnected" hidden>
+      <section class="follow-card">
+        <div class="follow-heading"><div><p>Read only</p><h2>Teams you follow</h2></div><span id="myTeamsCount">0 teams</span></div>
+        <p class="follow-help">Membership and Following stay separate. A followed team can never give you roster, scoring, GroupMe or admin authority.</p>
+        <div id="myTeams" class="my-team-grid"><p class="follow-empty">Loading My Teams…</p></div>
+      </section>
+
+      <section class="follow-card">
+        <div class="follow-heading"><div><p>Discover</p><h2>Find a WPI team</h2></div><span id="directoryCount">724 teams</span></div>
+        <div class="follow-filters">
+          <label><span>Search</span><input id="teamSearch" type="search" placeholder="Club or team…" autocomplete="off"></label>
+          <label><span>Club</span><select id="clubFilter"><option value="all">All clubs</option></select></label>
+          <label><span>Age</span><select id="ageFilter"><option value="all">All ages</option></select></label>
+          <label><span>Group</span><select id="genderFilter"><option value="all">Boys & girls</option><option value="Boys">Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option></select></label>
+        </div>
+        <div id="directoryResults" class="directory-grid"><p class="follow-empty">Loading WPI team directory…</p></div>
+        <p id="followingMessage" class="follow-message" role="status"></p>
+      </section>
+
+      <section class="follow-card">
+        <div class="follow-heading"><div><p>Personalized</p><h2>Game feed</h2></div><button id="refreshFollowing" type="button">Refresh</button></div>
+        <div id="feedTeamFilters" class="follow-team-chips" hidden></div>
+        <div id="gameFeed" class="feed-groups"><p class="follow-empty">Loading games…</p></div>
+      </section>
+
+      <section class="follow-card">
+        <div class="follow-heading"><div><p>Events</p><h2>Tournaments &amp; weekends</h2></div><span>Across My Teams</span></div>
+        <div id="eventSummary" class="event-grid"><p class="follow-empty">Event history will appear when followed Live teams play.</p></div>
+      </section>
+    </section>
+  </main>
+  <script src="config/live-sandbox.js?v=7.57.20"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
+  <script src="js/live-following-v7-60-3.js?v=7.60.3"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+</body>
+</html>

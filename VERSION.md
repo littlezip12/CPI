@@ -1,1 +1,1 @@
-# WPI 7.60.2 — Team Directory & Identity Management
+# WPI 7.60.3 — Public / Supporter Experience at Scale

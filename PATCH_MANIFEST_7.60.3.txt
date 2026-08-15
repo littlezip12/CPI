@@ -1,0 +1,37 @@
+WPI 7.60.3 — Public / Supporter Experience at Scale
+Baseline: authoritative pushed WPI 7.60.2 ZIP CPI-main - 2026-08-14T234402.250.zip
+Release date: 2026-08-14
+
+Purpose
+- Scale Following beyond one club with a read-only authenticated Supporter Hub.
+- Let supporters discover and follow stable WPI team families across the canonical directory.
+- Provide My Teams plus one chronological Live / Upcoming / Recent Finals feed and tournament/weekend summaries.
+- Preserve follows before a club/team joins WPI Live without fabricating Live games or operational access.
+
+Canonical discovery
+- 182 canonical WPI clubs
+- 724 public team identities / stable family entries in the current canonical directory
+- Search and filter by club, age, Boys/Girls/Coed, and team identity.
+- Stable family follows survive season-specific public team IDs.
+
+Database
+- Apply supabase/migrations/202608140005_public_supporter_experience_scale.sql
+- Adds live_public_team_follows and read-only following RPCs.
+- No Edge Function redeploy.
+- No new secret.
+- No roster/game/member/GroupMe data migration.
+
+Safety
+- Following never creates or updates live_team_members.
+- Following grants no scoring, roster, access-management, GroupMe, merge, or admin authority.
+- Existing membership supersedes Following for a linked Live team.
+- Directory-only follows remain saved but show no fabricated Live feed until an explicitly linked Live workspace exists.
+- Existing Lamorinda direct follows remain compatible.
+- Protected scoring, GroupMe, recovery, branding, onboarding, and identity foundations remain unchanged.
+
+Validation
+- WPI Live 7.60.3 focused gate passed.
+- Complete repository gate passed through CPI release check passed. in contiguous sections.
+- Generated data/tournaments and qa artifacts restored to the authoritative pushed 7.60.2 baseline after gate execution.
+- Clean-install simulation required against the authoritative pushed 7.60.2 ZIP before release delivery.
+- Current 2026–2027 official tournament index remains intentionally 0 events / 0 games pending a real external source.
