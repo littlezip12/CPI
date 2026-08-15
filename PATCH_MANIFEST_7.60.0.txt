@@ -1,0 +1,25 @@
+WPI 7.60.0 — Club Branding Platform
+Baseline: pushed/validated WPI 7.59.0 — Lamorinda Club Pilot Ready
+Release date: 2026-08-14
+
+Scope
+- Data-driven WPI Live club-branding platform sourced from canonical WPI club identity.
+- 182 canonical club branding candidates generated from data/identity/clubs.json.
+- Explicit reviewed activation config; Lamorinda is the only Live-enabled theme in 7.60.0.
+- Generic CSS-variable scoring theme renderer; no scoring layout/engine changes.
+- Canonical-ID + longest-alias matching prevents identity collisions such as Lamorinda vs Lamorinda Brentwood.
+- Neutral WPI fallback for known-but-not-enabled and unknown clubs.
+- Historical release-test allowlists extended to recognize 7.60.0; no competitive/public data behavior changed.
+
+Operational changes
+- No Supabase migration.
+- No Edge Function redeploy.
+- No new secret.
+- No roster/game/member/follow/archive data migration.
+
+Validation
+- WPI Live 7.60.0 focused gate: PASS.
+- Full repository gate executed in contiguous segments: all commands PASS through the final JO recap checks.
+- Gate-generated data/tournaments and qa artifacts restored to the pushed 7.59.0 baseline.
+- Focused 7.60.0 gate rerun after restoration: PASS.
+- Clean-install simulation over exact pushed 7.59.0 ZIP: PASS.

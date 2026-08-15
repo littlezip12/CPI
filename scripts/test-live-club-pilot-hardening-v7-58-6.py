@@ -20,8 +20,8 @@ recovery=read('supabase/migrations/202608110002_final_recovery_permission_hotfix
 feed=read('js/live-tournament-feed-v7-58-5.js')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
 
-req(read('VERSION.md').strip() in {'# WPI 7.58.6 — Club-Level Pilot Hardening','# WPI 7.58.7 — Club Pilot Validation & Observability','# WPI 7.58.8 — Club-Branded Game Experience','# WPI 7.58.9 — Club Operations & Scale Polish','# WPI 7.58.10 — Pilot Launch Prep & Admin Safety','# WPI 7.59.0 — Lamorinda Club Pilot Ready'},'VERSION mismatch')
-req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0'},'release metadata mismatch')
+req(read('VERSION.md').strip() in {'# WPI 7.58.6 — Club-Level Pilot Hardening','# WPI 7.58.7 — Club Pilot Validation & Observability','# WPI 7.58.8 — Club-Branded Game Experience','# WPI 7.58.9 — Club Operations & Scale Polish','# WPI 7.58.10 — Pilot Launch Prep & Admin Safety','# WPI 7.59.0 — Lamorinda Club Pilot Ready','# WPI 7.60.0 — Club Branding Platform'},'VERSION mismatch')
+req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0'},'release metadata mismatch')
 for key in ('liveScoringClubPilotHardeningRelease','liveScoringConcurrentGameIsolationRelease','liveScoringOfflineGameIsolationRelease','liveScoringClubRegressionRelease','liveScoringGameLocalStateRelease'):
     req(site.get(key)=='7.58.6',f'missing 7.58.6 marker {key}')
 req(site.get('liveScoringTournamentFeedValidationRelease')=='7.58.5','7.58.5 tournament-feed marker changed')
@@ -72,7 +72,7 @@ req('delete from public.live_games' not in archive.lower(),'archive hardening mu
 # Tournament reconciliation remains squad-safe; current-season source is still external/pending.
 for token in ('club_only_multiple_live_squads','club_plus_matching_squad','peerCount > 1'):
     req(token in feed,f'squad-safe tournament matching missing: {token}')
-req(index.get('release') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0'},'current tournament schedule index release mismatch')
+req(index.get('release') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0'},'current tournament schedule index release mismatch')
 req(index.get('activeCompetitiveSeason')=='2026-2027','active season changed')
 req(index.get('counts')=={'events':0,'games':0},'do not fabricate a current-season schedule during hardening')
 req((index.get('feedState') or {}).get('currentSeasonSchedulePublished') is False,'pending real schedule state must remain explicit')

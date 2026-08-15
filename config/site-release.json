@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.59.0",
-  "name": "Lamorinda Club Pilot Ready",
+  "version": "7.60.0",
+  "name": "Club Branding Platform",
   "date": "2026-08-14",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Stabilization milestone for the Lamorinda manual-game club pilot. Freezes the validated Club\u2192Teams operating model, multi-team isolation, access/following boundaries, scorer handoff/recovery, GroupMe routing, archives/recaps, club operations/admin safety, manual opponent reconciliation, and Lamorinda-branded scoring experience. Offline/reconnect remains deferred resilience work; the first real 2026\u20132027 official tournament schedule remains an external validation dependency and is not fabricated. No Supabase migration, Edge Function redeploy, or new secret.",
+  "notes": "Data-driven WPI Live club-branding foundation. Canonical WPI club identity/colors/logos now build a synchronous scoring-page theme registry, while Live activation remains explicit and reviewed. Lamorinda is the only production-enabled theme in 7.60.0; all other canonical clubs remain known candidates on the neutral WPI scoring experience until deliberately enabled. Preserves the validated scoring layout/engine, Club\u2192Teams architecture, GroupMe, scorer authority, recaps, archives, admin safety, and the 7.59.0 Lamorinda pilot-ready milestone. No Supabase migration, Edge Function redeploy, or new secret.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -204,5 +204,9 @@
   "liveScoringLamorindaPilotReadyRelease": "7.59.0",
   "liveScoringManualGamePilotReadyRelease": "7.59.0",
   "liveScoringPilotStabilizationRelease": "7.59.0",
-  "liveScoringProductionRunbookRelease": "7.59.0"
+  "liveScoringProductionRunbookRelease": "7.59.0",
+  "liveScoringClubBrandingPlatformRelease": "7.60.0",
+  "liveScoringThemeRegistryRelease": "7.60.0",
+  "liveScoringCanonicalClubBrandingRelease": "7.60.0",
+  "liveScoringThemeActivationSafetyRelease": "7.60.0"
 }

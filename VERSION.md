@@ -1,1 +1,1 @@
-# WPI 7.59.0 — Lamorinda Club Pilot Ready
+# WPI 7.60.0 — Club Branding Platform
