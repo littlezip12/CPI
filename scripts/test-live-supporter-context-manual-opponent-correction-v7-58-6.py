@@ -2,7 +2,7 @@
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 html=(root/'live-dashboard.html').read_text()
-js=(root/('js/live-dashboard-v7-58-9.js' if (root/'js/live-dashboard-v7-58-9.js').exists() else ('js/live-dashboard-v7-58-7.js' if (root/'js/live-dashboard-v7-58-7.js').exists() else 'js/live-dashboard-v7-58-6.js'))).read_text()
+js=(root/('js/live-dashboard-v7-58-10.js' if (root/'js/live-dashboard-v7-58-10.js').exists() else ('js/live-dashboard-v7-58-9.js' if (root/'js/live-dashboard-v7-58-9.js').exists() else ('js/live-dashboard-v7-58-7.js' if (root/'js/live-dashboard-v7-58-7.js').exists() else 'js/live-dashboard-v7-58-6.js')))).read_text()
 css=(root/('css/live-dashboard-v7-58-7.css' if (root/'css/live-dashboard-v7-58-7.css').exists() else 'css/live-dashboard-v7-58-6.css')).read_text()
 sql=(root/'supabase/migrations/202608130003_supporter_view_context_manual_opponent.sql').read_text().lower()
 checks={

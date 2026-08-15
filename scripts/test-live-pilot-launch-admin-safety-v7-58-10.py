@@ -1,0 +1,28 @@
+from pathlib import Path
+import json,re
+ROOT=Path(__file__).resolve().parents[1]
+def read(path): return (ROOT/path).read_text()
+def req(cond,msg):
+    if not cond: raise SystemExit(f'FAIL: {msg}')
+site=json.loads(read('config/site-release.json'))
+req(site.get('version')=='7.58.10','site version must be 7.58.10')
+req(site.get('liveScoringPilotLaunchPrepRelease')=='7.58.10','pilot launch marker missing')
+req(site.get('liveScoringManualOpponentResolutionRelease')=='7.58.10','identity resolution marker missing')
+html=read('live-dashboard.html')
+js=read('js/live-dashboard-v7-58-10.js')
+css=read('css/live-dashboard-v7-58-10.css')
+sql=read('supabase/migrations/202608140002_pilot_launch_admin_safety.sql')
+req('readinessLineup' in html and 'Default starters' in html,'five-part launch checklist UI missing')
+req('gameTeamLockContext' in html and 'gameDuplicateWarning' in html,'game safety rails missing')
+req('identityResolutionDialog' in html and 'Confirm WPI match' in html,'identity resolution dialog missing')
+req('live_club_launch_readiness_v1' in sql,'club launch readiness RPC missing')
+req('live_resolve_manual_opponent_v1' in sql,'manual opponent resolution RPC missing')
+req("'method','owner_explicit'" in sql and 'opponent_name' in sql,'identity mapping must be explicit and preserve raw name')
+req("requested_wpi_team_id" in sql and "requested_wpi_club_id" in sql,'canonical identity arguments missing')
+req('findDuplicateGameDayCandidate' in js and 'Possible duplicate already on Game Day' in js,'duplicate-game preflight missing')
+req('currentSeasonYears' in js and 'outside ${workspace?.competitiveSeason' in js,'season safety guard missing')
+req('loadClubLaunchReadiness' in js and 'defaultLineupReady' in js,'launch readiness wiring missing')
+req('openIdentityResolution' in js and 'confirmIdentityResolution' in js,'identity review action wiring missing')
+req('live-game-v7-58-6.js' in read('live-game.html'),'protected scoring engine reference changed unexpectedly')
+req('live-club-theme-v7-58-8.js' in read('live-game.html'),'Lamorinda club theme must remain active')
+print('WPI LIVE 7.58.10 PILOT LAUNCH PREP & ADMIN SAFETY PASSED')

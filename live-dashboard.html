@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-57-17.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-dashboard-v7-58-7.css?v=7.58.7">
   <link rel="stylesheet" href="css/live-dashboard-v7-58-9.css?v=7.58.9">
+  <link rel="stylesheet" href="css/live-dashboard-v7-58-10.css?v=7.58.10">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -101,7 +102,7 @@
         </section>
         <section class="live-panel live-club-identity-section" id="clubIdentityReviewPanel">
           <div class="live-panel-heading"><div><p class="live-section-kicker">Identity review</p><h2>Unlisted opponents</h2></div><span id="clubIdentityReviewCount" class="live-access-count">—</span></div>
-          <p class="live-panel-help">Manual opponent names stay exactly as entered and never auto-merge into the WPI directory. This queue shows names that still need a deliberate identity decision later.</p>
+          <p class="live-panel-help">Manual opponent names stay exactly as entered and never auto-merge into the WPI directory. When you know the correct identity, explicitly map the raw name to an existing WPI club/team; WPI preserves the original game label and records only the canonical link.</p>
           <div id="clubIdentityReviewList" class="live-club-identity-list"><p class="live-empty-state">Checking manual opponents…</p></div>
         </section>
         <div class="live-club-operations-grid">
@@ -184,6 +185,7 @@
               <a class="live-readiness-item" id="readinessRoster" href="#dashboardRoster"><span aria-hidden="true">≡</span><div><strong>Roster</strong><small>Players ready</small></div><em>Checking</em></a>
               <a class="live-readiness-item" id="readinessAccess" href="#dashboardTeamAccess"><span aria-hidden="true">◎</span><div><strong>Scoring access</strong><small>Coverage ready</small></div><em>Checking</em></a>
               <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span aria-hidden="true">◉</span><div><strong>Score updates</strong><small>GroupMe ready</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessLineup" href="#dashboardRoster"><span aria-hidden="true">☆</span><div><strong>Default starters</strong><small>Launch lineup</small></div><em>Checking</em></a>
             </div>
 
             <div class="live-readiness-next" id="readinessNextCard" data-state="loading">
@@ -336,6 +338,19 @@
     </section>
 
 
+    <dialog id="identityResolutionDialog" class="live-dialog live-identity-resolution-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Identity review</p><h2>Map unlisted opponent</h2></div><button value="cancel" aria-label="Close identity review">Close</button></div>
+        <p class="live-panel-help">This is an explicit Owner/Admin decision. WPI will never infer or auto-create a canonical identity from the raw opponent name.</p>
+        <div class="live-identity-raw"><small>Raw opponent name</small><strong id="identityResolutionRawName">Unlisted opponent</strong><span id="identityResolutionImpact">Matching unresolved games will be linked without changing the raw label.</span></div>
+        <label class="live-identity-search"><span>Find the existing WPI club or team</span><input id="identityResolutionSearch" type="search" autocomplete="off" placeholder="Club, team, age, boys/girls…"></label>
+        <div id="identityResolutionResults" class="live-identity-results"><p class="live-empty-state">Search the WPI directory…</p></div>
+        <div id="identityResolutionSelected" class="live-identity-selected"><strong>No WPI identity selected</strong><span>Nothing will change until you explicitly confirm a match.</span></div>
+        <p id="identityResolutionMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Keep unlisted</button><button id="confirmIdentityResolutionButton" type="button" disabled>Confirm WPI match</button></div>
+      </form>
+    </dialog>
+
     <dialog id="accountRegistryDialog" class="live-dialog live-account-registry-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Platform Owner · Pilot operations</p><h2>WPI Live account registry</h2></div><button value="cancel" aria-label="Close account registry">Close</button></div>
@@ -395,6 +410,8 @@
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker" id="gameDayDialogKicker">Game-Day Hub</p><h2 id="gameDayDialogTitle">Add game</h2></div><button value="cancel" aria-label="Close game dialog">Close</button></div>
         <p class="live-team-switch-summary" id="gameDayDialogHelp">Choose the kind of game. Tournament games remain eligible for official schedule reconciliation even when you have to add them manually.</p>
+        <div id="gameTeamLockContext" class="live-game-team-lock"><strong>Current team</strong><span>Current season</span></div>
+        <div id="gameDuplicateWarning" class="live-game-duplicate-warning" hidden></div>
 
         <fieldset class="live-game-kind-options" id="gameKindOptions">
           <legend>Game type</legend>
@@ -486,7 +503,7 @@
   <script src="js/live-team-following-v7-58-3.js?v=7.58.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
-  <script src="js/live-dashboard-v7-58-9.js?v=7.58.9"></script>
+  <script src="js/live-dashboard-v7-58-10.js?v=7.58.10"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

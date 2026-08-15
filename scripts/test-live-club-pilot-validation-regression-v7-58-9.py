@@ -8,20 +8,21 @@ def req(ok,msg):
     if not ok: raise AssertionError(msg)
 site=json.loads(read('config/site-release.json'))
 html=read('live-dashboard.html')
-js=read('js/live-dashboard-v7-58-9.js')
+js=read('js/live-dashboard-v7-58-10.js' if (ROOT/'js/live-dashboard-v7-58-10.js').exists() else 'js/live-dashboard-v7-58-9.js')
 css7=read('css/live-dashboard-v7-58-7.css')
 css9=read('css/live-dashboard-v7-58-9.css')
 sql=read('supabase/migrations/202608140001_club_operations_scale_polish.sql')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
-req(read('VERSION.md').strip()=='# WPI 7.58.9 — Club Operations & Scale Polish','current VERSION mismatch')
-req(site.get('version')=='7.58.9','current release must be 7.58.9')
-for key in ('liveScoringClubPilotValidationRelease','liveScoringClubPilotObservabilityRelease','liveScoringPilotEvidenceRelease','liveScoringDashboardRelease'):
-    req(site.get(key)=='7.58.9',f'missing updated pilot marker {key}')
+req(read('VERSION.md').strip() in {'# WPI 7.58.9 — Club Operations & Scale Polish','# WPI 7.58.10 — Pilot Launch Prep & Admin Safety'},'current VERSION mismatch')
+req(site.get('version') in {'7.58.9','7.58.10'},'current release must preserve 7.58.9 observability')
+for key in ('liveScoringClubPilotValidationRelease','liveScoringClubPilotObservabilityRelease','liveScoringPilotEvidenceRelease'):
+    req(site.get(key)=='7.58.9',f'missing preserved pilot marker {key}')
+req(site.get('liveScoringDashboardRelease') in {'7.58.9','7.58.10'},'dashboard release must preserve pilot observability')
 for key,expected in {'liveScoringClubPilotHardeningRelease':'7.58.6','liveScoringTournamentFeedValidationRelease':'7.58.5','liveScoringEventArchiveRelease':'7.58.4','liveScoringMultiTeamAccessFollowingRelease':'7.58.3','liveScoringRosterVersioningRelease':'7.58.2'}.items():
     req(site.get(key)==expected,f'protected release marker changed: {key}')
 req('css/live-dashboard-v7-58-7.css?v=7.58.7' in html,'base pilot dashboard CSS not loaded')
 req('css/live-dashboard-v7-58-9.css?v=7.58.9' in html,'7.58.9 dashboard delta CSS not loaded')
-req('js/live-dashboard-v7-58-9.js?v=7.58.9' in html,'7.58.9 dashboard JS not loaded')
+req(('js/live-dashboard-v7-58-10.js?v=7.58.10' in html) or ('js/live-dashboard-v7-58-9.js?v=7.58.9' in html),'current dashboard JS not loaded')
 for token in ('id="clubPilotValidationPanel"','id="clubPilotGateList"','id="clubPilotTeamRoutes"','id="clubPilotManualOpponents"','id="refreshClubPilotValidationButton"'):
     req(token in html,f'pilot validation UI mount missing: {token}')
 for token in ('function renderClubPilotValidation','function loadClubPilotValidation','live_club_pilot_validation_v1','Engineering gates clear · external feed pending','Deferred / resilience','Preserved raw · review later, never auto-merged'):
@@ -48,9 +49,9 @@ for forbidden in ('insert into public.live_team_members','update public.live_tea
     req(forbidden not in lower,f'observability migration must be read-only: {forbidden}')
 req("'state','ready'" not in lower,'diagnostic function must not manufacture a ready state')
 req('does not itself declare 7.59.0 ready' in lower,'milestone guardrail comment missing')
-req(index.get('release')=='7.58.9','schedule index release mismatch')
+req(index.get('release') in {'7.58.9','7.58.10'},'schedule index release mismatch')
 req(index.get('activeCompetitiveSeason')=='2026-2027','active competitive season changed')
-req(index.get('counts')=={'events':0,'games':0},'7.58.9 must not fabricate an official current-season schedule')
+req(index.get('counts')=={'events':0,'games':0},'current release must not fabricate an official current-season schedule')
 req((index.get('feedState') or {}).get('currentSeasonSchedulePublished') is False,'external tournament schedule gate must remain explicit')
 protected={
  'js/live-backend-v7-56-8.js':'fdeb80c539a2b375861de55e2cbdb48154652517110fab1db7c88d7148a7e328',
