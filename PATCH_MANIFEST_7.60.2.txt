@@ -1,0 +1,36 @@
+WPI 7.60.2 — Team Directory & Identity Management
+Baseline: authoritative pushed WPI 7.60.1 ZIP CPI-main - 2026-08-14T231959.284.zip
+Release date: 2026-08-14
+
+Purpose
+- Connect private WPI Live teams to stable canonical WPI team-family identities.
+- Preserve season-specific public team IDs instead of guessing a current-season exact identity.
+- Add explicit, club-scoped aliases and audited identity reconciliation.
+- Reuse reviewed aliases during future manual Add Game opponent matching.
+
+Canonical identity directory
+- 182 canonical WPI clubs
+- 724 public season-specific team identities
+- 724 stable team families in the currently banked public season
+- Stable family key format: <canonical club>|<age>|<gender/group>|<squad/level>
+
+Database
+- Apply supabase/migrations/202608140004_team_directory_identity_management.sql
+- No Edge Function redeploy
+- No new secret
+- No roster/game/member/follow/GroupMe data migration
+
+Safety
+- Team-family links are explicit Owner/Admin actions.
+- Club, age, gender/group, and squad are validated before linking.
+- Exact canonical_wpi_team_id is not invented by the family-link RPC.
+- Manual opponent raw labels remain preserved.
+- Explicit opponent resolution now saves an audited reusable alias.
+- Following remains read-only and separate from operational authority.
+- Protected scoring, GroupMe, recovery, onboarding, and branding foundations remain unchanged.
+
+Validation
+- WPI Live 7.60.2 focused gate passed.
+- Complete repository gate passed through CPI release check passed. in contiguous sections.
+- Generated data/tournaments and qa artifacts restored to the pushed 7.60.1 baseline after gate execution.
+- Current 2026–2027 official tournament index remains intentionally 0 events / 0 games pending a real external source.

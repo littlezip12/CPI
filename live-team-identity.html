@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Team Identity | WPI Live</title>
+  <meta name="description" content="Manage WPI Live team-family links, aliases, and unresolved opponent identities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-6.css?v=7.57.20">
+  <link rel="stylesheet" href="css/live-team-identity-v7-60-2.css?v=7.60.2">
+</head>
+<body class="wpi-live-identity-page">
+  <main class="identity-shell" id="teamIdentityApp">
+    <section class="identity-hero">
+      <div>
+        <p class="live-sandbox-kicker">WPI Live · Team identity</p>
+        <h1>Directory &amp; identity management</h1>
+        <p>Link Live teams to stable WPI team families, preserve explicit aliases, and reconcile unlisted opponents without silently changing raw game labels.</p>
+      </div>
+      <div class="identity-hero-actions"><a href="live-dashboard.html">WPI Live dashboard</a><a href="teams.html">Public team directory</a><button id="identitySignOutButton" type="button">Sign out</button></div>
+    </section>
+
+    <section id="identitySignedOut" class="identity-card" hidden>
+      <h2>Sign in first</h2><p>Team identity management requires a WPI Live Owner/Admin account.</p><a class="identity-primary-link" href="live-login.html">Sign in</a>
+    </section>
+
+    <section id="identityConnected" hidden>
+      <section class="identity-toolbar identity-card">
+        <div><p class="live-section-kicker">Club workspace</p><h2 id="identityClubTitle">Choose a club</h2><p id="identityClubDetail">Only clubs where you have Owner/Admin access are shown.</p></div>
+        <label>Club<select id="identityClubSelect"><option value="">Choose club…</option></select></label>
+      </section>
+
+      <section id="identityWorkspace" hidden>
+        <div class="identity-policy-banner"><strong>Identity rule:</strong> public WPI team IDs are season-specific. WPI Live links first to a stable <em>team family</em> (club + age + group + squad), and only uses an exact public team ID when that exact season is explicitly verified.</div>
+
+        <section class="identity-card">
+          <div class="identity-section-heading"><div><p class="live-section-kicker">1 · Live teams</p><h2>Team-family links</h2><p>Link each Live workspace to the matching WPI team family. Nothing moves between teams and no roster/game data is copied.</p></div><span id="identityLinkSummary" class="identity-count-pill">0 linked</span></div>
+          <div id="liveTeamIdentityList" class="identity-team-list"><p class="identity-empty">Choose a club to load its teams.</p></div>
+        </section>
+
+        <div class="identity-two-column">
+          <section class="identity-card">
+            <div class="identity-section-heading"><div><p class="live-section-kicker">2 · Saved aliases</p><h2>Club identity aliases</h2><p>Aliases are explicit shortcuts used during future game setup. Removing an alias does not rewrite past games.</p></div><button id="addIdentityAliasButton" type="button">Add alias</button></div>
+            <div id="identityAliasList" class="identity-alias-list"><p class="identity-empty">No aliases yet.</p></div>
+          </section>
+
+          <section class="identity-card">
+            <div class="identity-section-heading"><div><p class="live-section-kicker">3 · Review queue</p><h2>Unresolved opponents</h2><p>Raw names from manual games stay preserved until an Owner/Admin explicitly maps them.</p></div><span id="unresolvedIdentityCount" class="identity-count-pill">0 unresolved</span></div>
+            <div id="unresolvedIdentityList" class="identity-unresolved-list"><p class="identity-empty">No unresolved opponents.</p></div>
+          </section>
+        </div>
+
+        <section class="identity-card">
+          <div class="identity-section-heading"><div><p class="live-section-kicker">Canonical WPI directory</p><h2>Search 724 public team identities</h2><p>Use the directory for reference. Team-family links are stable; exact public team IDs remain season-specific.</p></div><span id="identityDirectoryCount" class="identity-count-pill">724 teams</span></div>
+          <div class="identity-directory-toolbar">
+            <label>Search<input id="identityDirectorySearch" type="search" placeholder="Club or team…" autocomplete="off"></label>
+            <label>Age<select id="identityAgeFilter"><option value="all">All ages</option><option>10U</option><option>12U</option><option>14U</option><option>16U</option><option>18U</option></select></label>
+            <label>Group<select id="identityGenderFilter"><option value="all">Boys + Girls + Coed</option><option>Boys</option><option>Girls</option><option>Coed</option></select></label>
+          </div>
+          <div id="identityDirectoryResults" class="identity-directory-results"></div>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <dialog id="teamFamilyDialog" class="identity-dialog">
+    <form method="dialog">
+      <div class="identity-dialog-heading"><div><p class="live-section-kicker">Explicit team link</p><h2 id="teamFamilyDialogTitle">Link team family</h2></div><button value="cancel">Close</button></div>
+      <p id="teamFamilyDialogContext" class="identity-dialog-copy"></p>
+      <div id="teamFamilyCandidates" class="identity-candidate-list"></div>
+      <p id="teamFamilyMessage" class="live-validation-message"></p>
+    </form>
+  </dialog>
+
+  <dialog id="identityAliasDialog" class="identity-dialog">
+    <form method="dialog" id="identityAliasForm">
+      <div class="identity-dialog-heading"><div><p class="live-section-kicker">Explicit alias</p><h2 id="identityAliasDialogTitle">Add identity alias</h2></div><button value="cancel">Close</button></div>
+      <label>Raw alias<input id="identityAliasRaw" type="text" maxlength="120" placeholder="e.g. Lamo 14 A"></label>
+      <label>Find WPI identity<input id="identityAliasSearch" type="search" placeholder="Search club or team…"></label>
+      <div id="identityAliasCandidates" class="identity-candidate-list"></div>
+      <div id="identityAliasSelected" class="identity-selected-target"><strong>No WPI identity selected</strong><span>Nothing changes until you confirm.</span></div>
+      <p class="identity-dialog-copy">Choose a <strong>Club</strong> when the exact current-season team is uncertain. Choose a <strong>Team</strong> only when the public team identity is the intended match.</p>
+      <p id="identityAliasMessage" class="live-validation-message"></p>
+      <div class="identity-dialog-actions"><button value="cancel">Cancel</button><button id="saveIdentityAliasButton" type="submit" disabled>Save alias</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="resolveOpponentDialog" class="identity-dialog">
+    <form method="dialog">
+      <div class="identity-dialog-heading"><div><p class="live-section-kicker">Identity review</p><h2>Resolve unlisted opponent</h2></div><button value="cancel">Close</button></div>
+      <div class="identity-selected-target"><strong id="resolveOpponentRaw">Opponent</strong><span id="resolveOpponentImpact">Raw game labels will remain unchanged.</span></div>
+      <label>Find WPI identity<input id="resolveOpponentSearch" type="search" placeholder="Search club or team…"></label>
+      <div id="resolveOpponentCandidates" class="identity-candidate-list"></div>
+      <div id="resolveOpponentSelected" class="identity-selected-target"><strong>No WPI identity selected</strong><span>Nothing changes until you confirm.</span></div>
+      <p id="resolveOpponentMessage" class="live-validation-message"></p>
+      <div class="identity-dialog-actions"><button value="cancel">Cancel</button><button id="confirmResolveOpponentButton" type="button" disabled>Confirm mapping</button></div>
+    </form>
+  </dialog>
+
+  <script src="config/live-sandbox.js?v=7.57.20"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-team-identity-v7-60-2.js?v=7.60.2"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.60.2 Focused Release Check"
+echo "====================================="
+python3 scripts/build-live-club-theme-registry-v7-60-0.py
+python3 scripts/build-live-team-identity-directory-v7-60-2.py
+python3 scripts/build-live-tournament-schedule-index.py
+python3 scripts/build-live-tournament-feed-validation-v7-58-5.py
+python3 scripts/test-live-pilot-regression-v7-58-6.py
+python3 scripts/test-live-club-workspace-regression-v7-58-6.py
+python3 scripts/test-live-multi-team-profiles-rosters-regression-v7-58-6.py
+python3 scripts/test-live-event-archive-regression-v7-58-6.py
+python3 scripts/test-live-tournament-feed-regression-v7-58-6.py
+python3 scripts/test-live-club-pilot-hardening-v7-58-6.py
+python3 scripts/test-live-pilot-ux-recap-correction-v7-58-6.py
+python3 scripts/test-live-supporter-context-manual-opponent-correction-v7-58-6.py
+python3 scripts/test-live-club-pilot-validation-regression-v7-58-9.py
+python3 scripts/test-live-club-operations-scale-v7-58-9.py
+python3 scripts/test-live-pilot-launch-admin-safety-v7-58-10.py
+python3 scripts/test-live-club-branding-platform-v7-60-0.py
+python3 scripts/test-live-self-service-club-onboarding-v7-60-1.py
+python3 scripts/test-live-team-directory-identity-v7-60-2.py
+node scripts/test-live-team-context-v7-57-3.js
+node scripts/test-live-club-context-v7-58-0.js
+node scripts/test-live-team-profiles-rosters-v7-58-2.js
+node scripts/test-live-team-following-v7-58-3.js
+node scripts/test-live-tournament-feed-v7-58-5.js
+node scripts/test-live-concurrent-game-storage-v7-58-6.js
+node scripts/test-live-club-theme-v7-60-0.js
+node --check js/live-game-storage-v7-58-6.js
+node --check js/live-club-theme-registry-v7-60-0.js
+node --check js/live-club-theme-v7-60-0.js
+node --check js/live-club-onboarding-v7-60-1.js
+node --check js/live-login-v7-60-1.js
+node --check js/live-team-identity-v7-60-2.js
+node --check js/live-game-v7-58-6.js
+node --check js/live-tournament-feed-v7-58-5.js
+node --check js/live-dashboard-v7-58-10.js
+node --check js/live-dashboard-v7-60-2.js
+node --check js/live-game-recap-v7-58-4.js
+node --check js/live-team-following-v7-58-3.js
+node --check js/live-team-profiles-rosters-v7-58-2.js
+node --check js/live-game-v7-57-22.js
+node --check js/live-scorer-handoff-v7-57-14.js
+node --check js/live-groupme-setup-v7-57-4.js
+node --check js/live-team-context-v7-58-0.js
+bash -n release-check-clean
+echo
+echo "WPI Live 7.60.2 focused release check passed."

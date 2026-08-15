@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.60.1",
-  "name": "Self-Service Club Onboarding",
+  "version": "7.60.2",
+  "name": "Team Directory & Identity Management",
   "date": "2026-08-14",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Reviewed self-service WPI Live club onboarding. Authenticated organizers can search the 182-club canonical WPI registry or request a new/unlisted club, preview logo/colors, define the first team, and submit a claim. No request creates authority until the existing Platform Owner explicitly approves it; approval provisions the Club workspace, first Team, empty active roster, and requester Owner memberships. Team registration remains invite-only outside the dedicated onboarding entry. Club branding activation remains separately reviewed; 7.60.1 does not silently enable new scoring themes. Preserves 7.60.0 branding platform and protected scoring/GroupMe/recovery foundations.",
+  "notes": "Connects WPI Live teams to stable canonical WPI team-family identities while preserving season-specific public team IDs. Adds a private Owner/Admin Team Identity workspace with explicit team-family links, club-scoped aliases, unresolved manual-opponent review, and an audit trail. Manual opponent resolutions now save reusable aliases for future game setup, and the Live dashboard consults those explicit aliases before broader static heuristics. No roster/game data is moved; no identity is guessed; exact public team IDs are not inferred from prior-season data. Preserves 7.60.1 onboarding, 7.60.0 branding platform, and protected scoring/GroupMe/recovery foundations.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -212,5 +212,10 @@
   "liveScoringSelfServiceClubOnboardingRelease": "7.60.1",
   "liveScoringClubClaimReviewRelease": "7.60.1",
   "liveScoringClubOnboardingAuthRelease": "7.60.1",
-  "liveScoringFirstTeamProvisioningRelease": "7.60.1"
+  "liveScoringFirstTeamProvisioningRelease": "7.60.1",
+  "liveScoringTeamDirectoryIdentityRelease": "7.60.2",
+  "liveScoringTeamFamilyIdentityRelease": "7.60.2",
+  "liveScoringIdentityAliasRelease": "7.60.2",
+  "liveScoringIdentityReconciliationRelease": "7.60.2",
+  "liveScoringPersistentOpponentAliasRelease": "7.60.2"
 }

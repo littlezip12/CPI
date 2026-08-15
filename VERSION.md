@@ -1,1 +1,1 @@
-# WPI 7.60.1 — Self-Service Club Onboarding
+# WPI 7.60.2 — Team Directory & Identity Management
