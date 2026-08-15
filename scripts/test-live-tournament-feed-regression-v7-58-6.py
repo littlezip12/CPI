@@ -13,7 +13,7 @@ matcher=read('js/live-tournament-feed-v7-58-5.js')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
 evidence=json.loads(read('data/live/tournament-feed-validation.json'))
 mig=read('supabase/migrations/202608080007_tournament_schedule_integration_reconciliation.sql')
-req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0'},'current release must preserve 7.58.6 hardening or later')
+req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1'},'current release must preserve 7.58.6 hardening or later')
 for key in ('liveScoringTournamentFeedValidationRelease','liveScoringTournamentIdentitySafetyRelease','liveScoringTournamentReconciliationValidationRelease'):
     req(site.get(key)=='7.58.5',f'7.58.5 marker changed: {key}')
 for token in ('js/live-tournament-feed-v7-58-5.js?v=7.58.5',):
@@ -22,7 +22,7 @@ for token in ('club_only_multiple_live_squads','club_plus_matching_squad','club_
     req(token in matcher,f'squad-safe matcher rule missing: {token}')
 for token in ('tournamentScheduleIdentityReviews','officialGameAssessmentForWorkspace','identity review','will not auto-import or guess'):
     req(token in js,f'identity review behavior missing: {token}')
-req(index.get('release') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0'},'schedule index should preserve the current live release')
+req(index.get('release') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1'},'schedule index should preserve the current live release')
 req(index.get('counts')=={'events':0,'games':0},'current-season schedule must remain empty until published')
 req((index.get('feedState') or {}).get('teamIdentityPolicy')=='squad_safe_no_guessing','squad-safe feed policy marker changed')
 req(evidence.get('release')=='7.58.5' and len(evidence.get('cases') or [])==3,'7.58.5 source-backed evidence changed')

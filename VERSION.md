@@ -1,1 +1,1 @@
-# WPI 7.60.0 — Club Branding Platform
+# WPI 7.60.1 — Self-Service Club Onboarding

@@ -6,15 +6,22 @@ TMP="$(mktemp -d "${TMPDIR:-/tmp}/wpi-release-check.XXXXXX")"
 mkdir -p "$TMP/data"
 cp -a data/tournaments "$TMP/data/tournaments"
 cp -a qa "$TMP/qa"
+RESTORED=0
 restore_gate_artifacts() {
-  rm -rf "$ROOT/data/tournaments" "$ROOT/qa"
-  cp -a "$TMP/data/tournaments" "$ROOT/data/tournaments"
-  cp -a "$TMP/qa" "$ROOT/qa"
+  if [[ "$RESTORED" -eq 1 ]]; then
+    return 0
+  fi
+  RESTORED=1
+  trap - EXIT INT TERM
+  if [[ -d "$TMP/data/tournaments" && -d "$TMP/qa" ]]; then
+    rm -rf "$ROOT/data/tournaments" "$ROOT/qa"
+    cp -a "$TMP/data/tournaments" "$ROOT/data/tournaments"
+    cp -a "$TMP/qa" "$ROOT/qa"
+  fi
   rm -rf "$TMP"
 }
 trap restore_gate_artifacts EXIT INT TERM
 ./release-check
-trap - EXIT INT TERM
 restore_gate_artifacts
 echo
 echo "Release gate-generated tournament/QA artifacts restored to their pre-check state."

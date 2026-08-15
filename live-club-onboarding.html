@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Club Onboarding | WPI Live</title>
+  <meta name="description" content="Request and review a new WPI Live club workspace.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/live-sandbox-v7-57-6.css?v=7.57.20">
+  <link rel="stylesheet" href="css/live-club-onboarding-v7-60-1.css?v=7.60.1">
+</head>
+<body class="wpi-live-onboarding-page">
+  <main class="live-onboarding-shell" id="clubOnboardingApp">
+    <section class="live-onboarding-hero">
+      <div>
+        <p class="live-sandbox-kicker">WPI Live · Club onboarding</p>
+        <h1>Bring your club to WPI Live</h1>
+        <p>Connect an existing WPI club identity—or request an unlisted club—then define the first team. A WPI Platform Owner reviews the identity before any club or team authority is created.</p>
+      </div>
+      <div class="live-onboarding-hero-actions">
+        <a href="live-dashboard.html">WPI Live dashboard</a>
+        <button id="onboardingSignOutButton" type="button">Sign out</button>
+      </div>
+    </section>
+
+    <section id="onboardingSignedOut" class="live-onboarding-card" hidden>
+      <h2>Sign in first</h2>
+      <p class="live-panel-help">Club onboarding uses a verified WPI Live account. Creating an onboarding account does not grant access to any existing club or team.</p>
+      <div class="live-onboarding-actions"><a class="primary" href="live-login.html?onboard=1">Sign in or create account</a></div>
+    </section>
+
+    <section id="onboardingConnected" hidden>
+      <div class="live-onboarding-grid">
+        <section class="live-onboarding-card">
+          <div class="live-onboarding-steps" aria-label="Club onboarding steps">
+            <span><strong>1 · Club</strong>Find the WPI identity</span>
+            <span><strong>2 · Preview</strong>Confirm logo + colors</span>
+            <span><strong>3 · Team</strong>Define the first team</span>
+            <span><strong>4 · Review</strong>WPI approves the claim</span>
+          </div>
+          <div><p class="live-section-kicker">Step 1</p><h2>Choose your club</h2><p class="live-panel-help">Search the canonical WPI directory. Matching an existing club keeps rankings, logos and public identity connected without creating duplicates.</p></div>
+          <div class="live-club-candidate-toolbar">
+            <label>Search WPI clubs<input id="clubCandidateSearch" type="search" autocomplete="off" placeholder="Club name…"></label>
+            <button id="clearClubCandidateButton" type="button">Clear</button>
+          </div>
+          <div id="clubCandidateList" class="live-club-candidate-list"><p class="live-onboarding-empty">Loading WPI club directory…</p></div>
+          <div class="live-unlisted-club"><button id="useUnlistedClubButton" type="button">Club not listed? Request a new/unlisted club</button></div>
+
+          <section id="selectedClubPreview" class="live-selected-club" hidden>
+            <div class="live-selected-club-main">
+              <img id="selectedClubLogo" src="assets/branding/wpi-logo-mark.png" alt="Selected club logo">
+              <div><p class="live-section-kicker" id="selectedClubState">Canonical WPI club</p><h3 id="selectedClubName">Club</h3><p id="selectedClubIdentity">Identity preview</p><div id="selectedClubSwatches" class="live-brand-swatches"></div></div>
+            </div>
+          </section>
+
+          <form id="clubOnboardingForm">
+            <div class="live-onboarding-form">
+              <label id="customClubNameLabel" class="is-wide" hidden>New / unlisted club name<input id="customClubName" type="text" maxlength="120" autocomplete="organization" placeholder="Full club name"></label>
+              <label>Location / region<input id="onboardingRegion" type="text" maxlength="100" placeholder="e.g. East Bay, CA"></label>
+              <label>Competitive season<input id="onboardingSeason" type="text" maxlength="20" value="2026-2027" pattern="[0-9]{4}-[0-9]{4}"></label>
+              <label>Age group<select id="onboardingAgeGroup"><option>10U</option><option>12U</option><option selected>14U</option><option>16U</option><option>18U</option></select></label>
+              <label>Group<select id="onboardingGender"><option value="Boys" selected>Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option></select></label>
+              <label>Squad / division<input id="onboardingSquad" type="text" maxlength="30" placeholder="A, B, Black, Gold…"></label>
+              <label class="is-wide">First team name<input id="onboardingTeamName" type="text" maxlength="100" placeholder="e.g. 680 A 14U Boys"><small>Editable. WPI will create only this first team after the club claim is approved.</small></label>
+            </div>
+            <div class="live-onboarding-policy"><span aria-hidden="true">✓</span><div><strong>Identity safety</strong><br>A submitted request creates no club, roster, game, GroupMe route, membership or branding authority. The Platform Owner must approve the claim first.</div></div>
+            <p id="clubOnboardingMessage" class="live-validation-message" role="status"></p>
+            <div class="live-onboarding-actions"><button id="resetOnboardingButton" class="secondary" type="button">Reset</button><button id="submitOnboardingButton" class="primary" type="submit">Submit for review</button></div>
+          </form>
+        </section>
+
+        <aside class="live-onboarding-card">
+          <div><p class="live-section-kicker">Your requests</p><h2>Onboarding status</h2><p class="live-panel-help">Approval creates the club workspace, first team, empty roster and your Owner access. Branding remains separately reviewed.</p></div>
+          <div id="myOnboardingRequests" class="live-request-list"><p class="live-onboarding-empty">Loading your requests…</p></div>
+        </aside>
+      </div>
+
+      <section id="platformReviewShell" class="live-onboarding-card live-review-shell" hidden>
+        <div class="live-admin-banner"><strong>Platform Owner review</strong>Approve only when the club identity and requester are legitimate. Approval is the moment authority is created.</div>
+        <div><p class="live-section-kicker">Platform operations</p><h2>Club onboarding review queue</h2><p class="live-panel-help">Canonical club identity, applicant, first team and requested colors are shown together. Reject unclear claims instead of guessing.</p></div>
+        <div id="platformReviewQueue" class="live-review-queue"><p class="live-onboarding-empty">Loading review queue…</p></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="config/live-sandbox.js?v=7.57.20"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-club-theme-registry-v7-60-0.js?v=7.60.0"></script>
+  <script src="js/live-club-onboarding-v7-60-1.js?v=7.60.1"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+</body>
+</html>

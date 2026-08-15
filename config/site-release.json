@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.60.0",
-  "name": "Club Branding Platform",
+  "version": "7.60.1",
+  "name": "Self-Service Club Onboarding",
   "date": "2026-08-14",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Data-driven WPI Live club-branding foundation. Canonical WPI club identity/colors/logos now build a synchronous scoring-page theme registry, while Live activation remains explicit and reviewed. Lamorinda is the only production-enabled theme in 7.60.0; all other canonical clubs remain known candidates on the neutral WPI scoring experience until deliberately enabled. Preserves the validated scoring layout/engine, Club\u2192Teams architecture, GroupMe, scorer authority, recaps, archives, admin safety, and the 7.59.0 Lamorinda pilot-ready milestone. No Supabase migration, Edge Function redeploy, or new secret.",
+  "notes": "Reviewed self-service WPI Live club onboarding. Authenticated organizers can search the 182-club canonical WPI registry or request a new/unlisted club, preview logo/colors, define the first team, and submit a claim. No request creates authority until the existing Platform Owner explicitly approves it; approval provisions the Club workspace, first Team, empty active roster, and requester Owner memberships. Team registration remains invite-only outside the dedicated onboarding entry. Club branding activation remains separately reviewed; 7.60.1 does not silently enable new scoring themes. Preserves 7.60.0 branding platform and protected scoring/GroupMe/recovery foundations.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -208,5 +208,9 @@
   "liveScoringClubBrandingPlatformRelease": "7.60.0",
   "liveScoringThemeRegistryRelease": "7.60.0",
   "liveScoringCanonicalClubBrandingRelease": "7.60.0",
-  "liveScoringThemeActivationSafetyRelease": "7.60.0"
+  "liveScoringThemeActivationSafetyRelease": "7.60.0",
+  "liveScoringSelfServiceClubOnboardingRelease": "7.60.1",
+  "liveScoringClubClaimReviewRelease": "7.60.1",
+  "liveScoringClubOnboardingAuthRelease": "7.60.1",
+  "liveScoringFirstTeamProvisioningRelease": "7.60.1"
 }

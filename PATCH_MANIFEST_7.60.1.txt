@@ -1,0 +1,23 @@
+WPI 7.60.1 — Self-Service Club Onboarding
+Baseline: authoritative pushed WPI 7.60.0 ZIP CPI-main - 2026-08-14T224722.713.zip
+Release type: cumulative patch + full repository
+
+Primary scope:
+- dedicated no-authority onboarding auth entry
+- canonical 182-club search/identity preview
+- new/unlisted club request path
+- first-team definition
+- Platform Owner review queue
+- transactional Club + Team + roster + Owner provisioning on approval
+- duplicate club-claim/name guards
+- separate reviewed club-theme activation (Lamorinda remains the only enabled theme)
+- idempotent release-check-clean timeout/signal restoration
+
+Database:
+- apply supabase/migrations/202608140003_self_service_club_onboarding.sql
+
+Edge Functions: none
+New secrets: none
+Current 2026–2027 official schedule: not fabricated; index remains 0 events / 0 games
+
+Protected scoring/GroupMe/recovery/theme foundation is regression-checked and remains byte-stable.
