@@ -1,0 +1,12 @@
+/* WPI 7.61.1 — High School Schedule → Game-Day Integration & Optional Delivery */
+.live-high-school-schedule-card{border-color:#c9d9ee;background:linear-gradient(180deg,#f9fbff 0%,#f3f7fc 100%)}
+.live-hs-schedule-list{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:14px}
+.live-hs-schedule-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid #dbe4ef;border-radius:14px;background:#fff}
+.live-hs-schedule-row>div{display:grid;gap:3px}.live-hs-schedule-row strong{font-size:.92rem;color:#14243c}.live-hs-schedule-row span,.live-hs-schedule-row small{color:#64748b;font-size:.78rem}.live-hs-schedule-row em{font-style:normal;font-size:.72rem;font-weight:800;white-space:nowrap;padding:5px 8px;border-radius:999px;background:#eef2f7;color:#52627a}
+.live-hs-schedule-row[data-state="synced"] em{background:#e8f7ef;color:#18714a}.live-hs-schedule-row[data-state="ready"] em{background:#eef5ff;color:#245c9c}.live-hs-schedule-row[data-state="tba"] em{background:#fff6df;color:#8a6415}
+.live-score-delivery-options{border:0;padding:0;margin:16px 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.live-score-delivery-options legend{font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#6b7890;margin-bottom:8px}
+.live-score-delivery-options label{display:flex;gap:10px;align-items:flex-start;padding:14px;border:1px solid #d8e1ec;border-radius:14px;background:#fff;cursor:pointer}
+.live-score-delivery-options label:has(input:checked){border-color:#6c8ebf;box-shadow:0 0 0 2px rgba(62,103,159,.10);background:#f7faff}
+.live-score-delivery-options input{margin-top:3px}.live-score-delivery-options span{display:grid;gap:4px}.live-score-delivery-options strong{color:#16263d}.live-score-delivery-options small{color:#68758a;line-height:1.35}
+@media(max-width:720px){.live-score-delivery-options{grid-template-columns:1fr}.live-hs-schedule-list{grid-template-columns:1fr}}

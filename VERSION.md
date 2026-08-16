@@ -1,1 +1,1 @@
-# WPI 7.61.0 — High School Water Polo Foundation
+# WPI 7.61.1 — High School Schedule → Game-Day Integration & Optional Delivery

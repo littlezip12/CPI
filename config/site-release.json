@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.61.0",
-  "name": "High School Water Polo Foundation",
+  "version": "7.61.1",
+  "name": "High School Schedule \u2192 Game-Day Integration & Optional Delivery",
   "date": "2026-08-16",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds first-class high-school organizations beside youth clubs, seeded Acalanes/Campolindo/Miramonte workspaces with Men/Women Varsity/JV teams, school-branded scoring themes, a source-backed 2026-27 high-school schedule viewer, and organization-type search architecture. Only the four supplied varsity schedules are published; Miramonte and all JV schedules remain explicitly unpublished rather than fabricated.",
+  "notes": "Promotes the four user-supplied Acalanes/Campolindo varsity schedules into source-backed High School Game-Day records without fabricating Miramonte/JV schedules or TBA times, adds first-class regular-season grouping, and makes external score delivery optional: teams can be Ready with WPI Live only or WPI Live + a tested GroupMe route.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -228,5 +228,10 @@
   "liveScoringHighSchoolThemeRelease": "7.61.0",
   "liveScoringHighSchoolScheduleRelease": "7.61.0",
   "liveScoringUnifiedOrganizationDiscoveryRelease": "7.61.0",
-  "liveScoringPlatformOwnerWorkspaceSelectorCorrectionRelease": "7.61.0"
+  "liveScoringPlatformOwnerWorkspaceSelectorCorrectionRelease": "7.61.0",
+  "liveScoringHighSchoolGameDayIntegrationRelease": "7.61.1",
+  "liveScoringHighSchoolRegularSeasonRelease": "7.61.1",
+  "liveScoringOptionalDeliveryRelease": "7.61.1",
+  "liveScoringWpiLiveOnlyDeliveryRelease": "7.61.1",
+  "liveScoringHighSchoolScheduleSyncRelease": "7.61.1"
 }

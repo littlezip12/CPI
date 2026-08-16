@@ -3,7 +3,7 @@ import json, hashlib
 R=Path(__file__).resolve().parents[1]
 def need(cond,msg):
     if not cond: raise AssertionError(msg)
-ver=(R/'VERSION.md').read_text(); need('7.61.0' in ver,'VERSION is not 7.61.0')
+ver=(R/'VERSION.md').read_text(); need(('7.61.0' in ver) or ('7.61.1' in ver),'VERSION must preserve 7.61.0 high-school foundation')
 d=json.loads((R/'data/live/high-school-directory-v7-61-0.json').read_text())
 s=json.loads((R/'data/live/high-school-schedule-2026-27.json').read_text())
 need(d['counts']=={'organizations':3,'teams':12,'varsitySchedulesPublished':4},'high-school directory counts changed')

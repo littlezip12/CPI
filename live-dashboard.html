@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-58-9.css?v=7.58.9">
   <link rel="stylesheet" href="css/live-dashboard-v7-58-10.css?v=7.58.10">
   <link rel="stylesheet" href="css/live-dashboard-v7-59-0.css?v=7.59.0">
-  <link rel="stylesheet" href="css/live-dashboard-v7-61-0.css?v=7.61.0-workspace-selector-fix">
+  <link rel="stylesheet" href="css/live-dashboard-v7-61-0.css?v=7.61.1">
+  <link rel="stylesheet" href="css/live-dashboard-v7-61-1.css?v=7.61.1">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -192,7 +193,7 @@
               <a class="live-readiness-item" id="readinessProfile" href="#dashboardTeamProfile"><span aria-hidden="true">◇</span><div><strong>Profile</strong><small>Team identity</small></div><em>Checking</em></a>
               <a class="live-readiness-item" id="readinessRoster" href="#dashboardRoster"><span aria-hidden="true">≡</span><div><strong>Roster</strong><small>Players ready</small></div><em>Checking</em></a>
               <a class="live-readiness-item" id="readinessAccess" href="#dashboardTeamAccess"><span aria-hidden="true">◎</span><div><strong>Scoring access</strong><small>Coverage ready</small></div><em>Checking</em></a>
-              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span aria-hidden="true">◉</span><div><strong>Score updates</strong><small>GroupMe ready</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span aria-hidden="true">◉</span><div><strong>Score delivery</strong><small>WPI Live or GroupMe</small></div><em>Checking</em></a>
               <a class="live-readiness-item" id="readinessLineup" href="#dashboardRoster"><span aria-hidden="true">☆</span><div><strong>Default starters</strong><small>Launch lineup</small></div><em>Checking</em></a>
             </div>
 
@@ -214,8 +215,9 @@
               <div><p class="live-section-kicker">Game day</p><h2>Game-Day Hub</h2></div>
               <button id="addGameDayButton" class="live-game-day-add" type="button">+ Add game</button>
             </div>
-            <p class="live-panel-help">Official tournament matchups appear here when available. If a schedule is missing or delayed, add the game manually; WPI can reconcile the official matchup later without duplicating the scored record.</p>
+            <p class="live-panel-help">Published school schedules and official tournament matchups can flow into Game Day without retyping them. Manual entry remains available, and WPI never fabricates missing schedule data.</p>
             <div class="live-game-day-paths" aria-label="Ways to add a game">
+              <div id="highSchoolGamePath" hidden><span aria-hidden="true">▣</span><strong>Regular season</strong><small>Source-backed school schedule · manual fallback when needed</small></div>
               <div><span aria-hidden="true">◆</span><strong>Tournament game</strong><small>Automatic from the WPI schedule · manual fallback always available</small></div>
               <div><span aria-hidden="true">○</span><strong>Friendly</strong><small>Manual game stored under a named Scrimmage Weekend</small></div>
             </div>
@@ -227,6 +229,16 @@
               </div>
               <div class="live-wpi-schedule-actions"><button id="syncWpiScheduleButton" type="button">Check WPI schedule</button></div>
               <p id="wpiScheduleSyncMessage" class="live-validation-message" role="status"></p>
+            </section>
+            <section class="live-wpi-schedule-card live-high-school-schedule-card" id="highSchoolScheduleCard" aria-label="High school schedule connection" hidden>
+              <div class="live-wpi-schedule-copy">
+                <div class="live-wpi-schedule-title"><strong>School schedule</strong><span id="highSchoolScheduleStatusPill" class="live-wpi-schedule-pill" data-state="loading">Checking</span></div>
+                <span id="highSchoolScheduleSummary">Checking the source-backed school schedule…</span>
+                <small id="highSchoolScheduleDetail">Only games from a real supplied schedule are shown. TBA times stay source-only until a real start time is available.</small>
+              </div>
+              <div class="live-wpi-schedule-actions"><button id="syncHighSchoolScheduleButton" type="button">Sync school schedule</button></div>
+              <div id="highSchoolScheduleList" class="live-hs-schedule-list"></div>
+              <p id="highSchoolScheduleSyncMessage" class="live-validation-message" role="status"></p>
             </section>
             <div class="live-game-day-toolbar">
               <div><strong id="gameDayQueueCount">0 games</strong><small id="gameDayQueueSummary">Upcoming, ready and live games stay in one operational queue.</small></div>
@@ -308,12 +320,18 @@
               <p id="teamAccessUnavailable" class="live-panel-help" hidden>Team access is managed by the Team Owner or an Admin.</p>
             </article>
                 <article class="live-panel live-groupme-setup-panel" id="dashboardGroupMe">
-              <div class="live-panel-heading live-groupme-setup-heading"><div><p class="live-section-kicker">Tournament score updates</p><h2>GroupMe setup</h2></div><div class="live-groupme-status-pill" id="groupMeSetupStatusPill">Not connected</div></div>
-              <p class="live-panel-help">Pick the tournament GroupMe and Score Updates topic. WPI keeps the GroupMe credential protected on the server — there are no tokens or technical settings to manage here.</p>
+              <div class="live-panel-heading live-groupme-setup-heading"><div><p class="live-section-kicker">Score delivery</p><h2>WPI Live only</h2></div><div class="live-groupme-status-pill" id="groupMeSetupStatusPill">Checking</div></div>
+              <p class="live-panel-help">WPI Live is always the canonical score surface. GroupMe is an optional external delivery channel for teams that use it.</p>
+              <fieldset class="live-score-delivery-options" id="scoreDeliveryModeOptions">
+                <legend>Supporter score delivery</legend>
+                <label><input id="scoreDeliveryWpiOnly" type="radio" name="scoreDeliveryMode" value="wpi_live_only"><span><strong>WPI Live only</strong><small>Scores, finals and recaps stay available to WPI supporters. No GroupMe required.</small></span></label>
+                <label><input id="scoreDeliveryGroupMe" type="radio" name="scoreDeliveryMode" value="wpi_live_groupme"><span><strong>WPI Live + GroupMe</strong><small>Keep WPI Live canonical and also post updates to a tested GroupMe topic.</small></span></label>
+              </fieldset>
+              <p id="scoreDeliveryModeMessage" class="live-validation-message" role="status"></p>
               <div id="groupMeAdminPanel" hidden>
                 <div class="live-groupme-self-service-note"><strong>Self-service setup</strong><span id="groupMeManagerScope">Choose a destination, test it, then activate it for new games.</span></div>
                 <div class="live-groupme-step-list">
-                  <section class="live-groupme-step-card" id="groupMeGroupStep"><span class="live-step-number">1</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Tournament GroupMe</h3><span class="live-groupme-step-state" id="groupMeGroupState">Choose</span></div><p id="groupMeGroupHelp">Select the GroupMe being used for this tournament.</p><div class="live-form-grid live-groupme-form live-groupme-step-form"><label>GroupMe<select id="groupMeGroupSelect" disabled><option value="">Choose GroupMe</option></select></label></div><div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeGroupsButton" type="button">Choose tournament GroupMe</button></div></div></section>
+                  <section class="live-groupme-step-card" id="groupMeGroupStep"><span class="live-step-number">1</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Team GroupMe</h3><span class="live-groupme-step-state" id="groupMeGroupState">Choose</span></div><p id="groupMeGroupHelp">Select the GroupMe being used for this tournament.</p><div class="live-form-grid live-groupme-form live-groupme-step-form"><label>GroupMe<select id="groupMeGroupSelect" disabled><option value="">Choose GroupMe</option></select></label></div><div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeGroupsButton" type="button">Choose team GroupMe</button></div></div></section>
                   <section id="groupMeTopicPanel" class="live-groupme-step-card live-groupme-topic-panel"><span class="live-step-number">2</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Score Updates Topic</h3><span class="live-groupme-step-state" id="groupMeTopicState">Choose</span></div><p>Choose the topic where WPI Live should post every game update.</p><div class="live-form-grid live-groupme-form live-groupme-step-form"><label>Topic<select id="groupMeTopicSelect" disabled><option value="">Choose a GroupMe first</option></select></label></div><div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeTopicsButton" type="button" disabled>Refresh topics</button></div><p id="groupMeDiscoveryMessage" class="live-validation-message" role="status"></p></div></section>
                   <section class="live-groupme-step-card" id="groupMeTestStep"><span class="live-step-number">3</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Test connection</h3><span class="live-groupme-step-state" id="groupMeTestState">Not tested</span></div><p>WPI will send one test message to the selected topic. A successful test is required before activation.</p><div class="live-dashboard-actions live-step-actions"><button id="testGroupMeButton" type="button" disabled>Send test message</button></div></div></section>
                   <section class="live-groupme-step-card" id="groupMeActivateStep"><span class="live-step-number">4</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Use for new games</h3><span class="live-groupme-step-state" id="groupMeActivateState">Waiting</span></div><p>Activate the tested destination. New games will automatically inherit it.</p><div class="live-dashboard-actions live-step-actions"><button id="saveGroupMeButton" type="button" disabled>Use for new games</button><button id="pauseGroupMeButton" class="live-secondary-button" type="button" hidden>Pause score updates</button></div></div></section>
@@ -332,8 +350,8 @@
           </details>
 
           <section class="live-panel live-history-panel" id="dashboardGameArchive">
-            <div class="live-panel-heading"><div><p class="live-section-kicker">Season archive</p><h2>Tournaments &amp; weekends</h2></div><button id="refreshGameArchiveButton" type="button">Refresh</button></div>
-            <p class="live-panel-help">Every completed game stays with its tournament or named scrimmage weekend. Open an event to revisit the full weekend, scores, opponents and game recaps.</p>
+            <div class="live-panel-heading"><div><p class="live-section-kicker">Season archive</p><h2 id="gameArchiveTitle">Tournaments &amp; weekends</h2></div><button id="refreshGameArchiveButton" type="button">Refresh</button></div>
+            <p class="live-panel-help" id="gameArchiveHelp">Every completed game stays with its tournament or named scrimmage weekend. Open an event to revisit the full weekend, scores, opponents and game recaps.</p>
             <div class="live-archive-view-context" id="gameArchiveViewingTeam">Viewing current team</div>
             <div class="live-archive-toolbar">
               <label>Season<select id="gameArchiveSeasonFilter" aria-label="Filter tournament and weekend records by season"><option value="all">All seasons</option></select></label>
@@ -423,6 +441,7 @@
 
         <fieldset class="live-game-kind-options" id="gameKindOptions">
           <legend>Game type</legend>
+          <label id="gameRegularSeasonOption" hidden><input type="radio" name="gameKind" value="regular_season"><span><strong>Regular season</strong><small>High-school league or non-tournament schedule game.</small></span></label>
           <label><input type="radio" name="gameKind" value="tournament" checked><span><strong>Tournament game</strong><small>Use this even when WPI has not loaded the matchup yet.</small></span></label>
           <label><input type="radio" name="gameKind" value="friendly"><span><strong>Friendly</strong><small>Scrimmage, practice, or other non-tournament game stored under a Scrimmage Weekend.</small></span></label>
         </fieldset>
@@ -512,7 +531,7 @@
   <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
-  <script src="js/live-dashboard-v7-61-0.js?v=7.61.0-workspace-selector-fix"></script>
+  <script src="js/live-dashboard-v7-61-1.js?v=7.61.1"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

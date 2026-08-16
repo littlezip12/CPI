@@ -1,0 +1,30 @@
+WPI 7.61.1 — High School Schedule → Game-Day Integration & Optional Delivery
+Baseline: pushed WPI 7.61.0 (`CPI-main - 2026-08-16T132211.051.zip`)
+Date: 2026-08-16
+
+Primary product scope
+- Source-backed Acalanes/Campolindo varsity schedules → Game-Day integration.
+- 42 supplied schedule rows preserved; 37 known-time rows syncable, 5 TBA rows source-only.
+- Miramonte and all JV schedules remain unpublished/no-fabrication.
+- First-class regular-season games grouped under a permanent Regular Season series.
+- Per-team score delivery: WPI Live only OR WPI Live + GroupMe.
+- WPI Live-only is launch-ready; GroupMe is optional external delivery.
+- Existing enabled/tested GroupMe teams preserve GroupMe delivery mode.
+- Club-level readiness uses the same optional-delivery contract.
+
+Database
+- New migration: 202608160003_high_school_schedule_optional_delivery.sql
+- No Edge Function redeploy.
+- No new secret.
+
+Safety
+- Protected scorer/recovery/GroupMe Edge Function/roster-extraction files are byte-stable.
+- Source sync is team-family scoped and idempotent.
+- TBA times are never fabricated.
+- Exactly one strong manual-game candidate may be linked; score/event history is not replaced.
+- Existing tournament and Friendly/Scrimmage Weekend semantics remain preserved.
+
+Validation
+- WPI Live 7.61.1 focused gate passed after final changes.
+- Full legacy release gate passed in contiguous sections through `CPI release check passed.`
+- Gate-generated tournament/QA artifacts restored to the pushed baseline before packaging.
