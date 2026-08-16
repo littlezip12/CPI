@@ -72,6 +72,7 @@
   let clubLaunchReadiness = {summary:{},teams:[]};
   let identityReviewRawName = "";
   let identityReviewSelection = null;
+  let teamWorkspaceSearch = "";
 
   function escapeHtml(value) {
     return String(value ?? "").replace(/[&<>'"]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[char]));
@@ -2042,16 +2043,42 @@
     return ({owner:"Owner",admin:"Admin",scorer:"Scorer",viewer:"Supporter"})[role] || "Member";
   }
 
-  function teamOptionLabel(team) {
-    const label = team.teamDisplayLabel || team.teamName || "Team";
-    const otherClub = workspace?.clubId && team.clubId && String(team.clubId) !== String(workspace.clubId);
-    const club = otherClub ? ` · ${team.clubName || team.clubDisplayName || "Club"}` : "";
-    return `${label}${club} · ${roleLabel(team.role)}`;
+  function organizationName(row) {
+    return row?.clubDisplayName || row?.clubName || "Organization";
   }
 
-  function allTeamsOptionLabel() {
-    const clubName = clubWorkspace?.clubName || workspace?.clubName || "Club";
-    return `All ${clubName} Teams`;
+  function multiOrganizationAccount() {
+    return new Set(teamMemberships.map(team => String(team.clubId || "")).filter(Boolean)).size > 1;
+  }
+
+  function teamOptionLabel(team) {
+    const label = team.teamDisplayLabel || team.teamName || "Team";
+    const organization = organizationName(team);
+    return multiOrganizationAccount()
+      ? `${organization} · ${label} · ${roleLabel(team.role)}`
+      : `${label} · ${roleLabel(team.role)}`;
+  }
+
+  function clubOverviewOptionLabel(club) {
+    return `${organizationName(club)} · All Teams`;
+  }
+
+  function normalizedWorkspaceSearch(value) {
+    return String(value || "").trim().toLowerCase().replace(/\s+/g," ");
+  }
+
+  function workspaceMatchesSearch(search, values) {
+    if (!search) return true;
+    const haystack = normalizedWorkspaceSearch(values.filter(Boolean).join(" "));
+    return search.split(" ").every(token => haystack.includes(token));
+  }
+
+  function clubWorkspaceById(clubId) {
+    return clubWorkspaces.find(club => String(club.clubId || "") === String(clubId || "")) || null;
+  }
+
+  function canOpenClubOverviewFor(club) {
+    return Boolean(club && ["owner","admin"].includes(club.role));
   }
 
   function renderWorkspaceHeader() {
@@ -2068,15 +2095,51 @@
   function renderTeamSwitcher() {
     const wrap = $("teamSwitcherWrap");
     const select = $("dashboardTeamSwitcher");
+    const searchInput = $("dashboardTeamSearch");
+    const count = $("dashboardTeamSearchCount");
     if (!wrap || !select) return;
     wrap.hidden = !teamMemberships.length;
-    const options = [];
-    if (canOpenClubOverview()) {
-      options.push(`<option value="__club__"${clubView ? " selected" : ""}>${escapeHtml(allTeamsOptionLabel())}</option>`);
+    const search = normalizedWorkspaceSearch(teamWorkspaceSearch);
+    const organizationIds = [...new Set(teamMemberships.map(team => String(team.clubId || "")).filter(Boolean))];
+    const organizationRows = organizationIds.map(clubId => ({
+      clubId,
+      club:clubWorkspaceById(clubId) || {clubId,clubName:teamMemberships.find(team => String(team.clubId || "") === clubId)?.clubName,clubDisplayName:teamMemberships.find(team => String(team.clubId || "") === clubId)?.clubDisplayName,role:teamMemberships.find(team => String(team.clubId || "") === clubId)?.clubRole},
+      teams:teamMemberships.filter(team => String(team.clubId || "") === clubId)
+    })).sort((a,b) => organizationName(a.club).localeCompare(organizationName(b.club)));
+
+    const groups = [];
+    let visibleChoices = 0;
+    organizationRows.forEach(({clubId,club,teams}) => {
+      const orgName = organizationName(club);
+      const matchingTeams = teams.filter(team => workspaceMatchesSearch(search,[orgName,team.teamName,team.teamDisplayLabel,team.ageGroup,team.gender,team.squadLabel,roleLabel(team.role)]));
+      const overviewMatches = canOpenClubOverviewFor(club) && workspaceMatchesSearch(search,[orgName,"all teams",roleLabel(club.role)]);
+      if (!matchingTeams.length && !overviewMatches) return;
+      const options = [];
+      if (overviewMatches) {
+        const selected = clubView && String(clubWorkspace?.clubId || "") === clubId;
+        options.push(`<option value="__club__:${escapeHtml(clubId)}"${selected ? " selected" : ""}>${escapeHtml(clubOverviewOptionLabel(club))}</option>`);
+        visibleChoices += 1;
+      }
+      matchingTeams.forEach(team => {
+        const selected = !clubView && String(team.teamId) === String(workspace?.teamId);
+        options.push(`<option value="${escapeHtml(team.teamId)}"${selected ? " selected" : ""}>${escapeHtml(teamOptionLabel(team))}</option>`);
+        visibleChoices += 1;
+      });
+      groups.push(`<optgroup label="${escapeHtml(orgName)}">${options.join("")}</optgroup>`);
+    });
+
+    if (!groups.length) {
+      select.innerHTML = '<option value="" selected disabled>No matching workspaces</option>';
+      select.disabled = true;
+    } else {
+      select.innerHTML = groups.join("");
+      select.disabled = visibleChoices < 2;
     }
-    options.push(...teamMemberships.map(team => `<option value="${escapeHtml(team.teamId)}"${!clubView && String(team.teamId) === String(workspace?.teamId) ? " selected" : ""}>${escapeHtml(teamOptionLabel(team))}</option>`));
-    select.innerHTML = options.join("");
-    select.disabled = options.length < 2;
+    if (searchInput) {
+      searchInput.hidden = teamMemberships.length < 6 && organizationRows.length < 2;
+      if (searchInput.value !== teamWorkspaceSearch) searchInput.value = teamWorkspaceSearch;
+    }
+    if (count) count.textContent = search ? `${visibleChoices} workspace${visibleChoices === 1 ? "" : "s"} match` : `${visibleChoices} workspace${visibleChoices === 1 ? "" : "s"}`;
     $("createTeamButton").hidden = clubWorkspace?.role !== "owner";
   }
 
@@ -2094,13 +2157,18 @@
 
   function switchTeam(teamId, targetHash = "") {
     if (!teamId) return;
-    if (teamId === "__club__") {
-      if (!canOpenClubOverview()) return;
+    if (teamId === "__club__" || String(teamId).startsWith("__club__:")) {
+      const requestedClubId = String(teamId).startsWith("__club__:") ? String(teamId).slice("__club__:".length) : clubWorkspace?.clubId;
+      const targetClub = clubWorkspaceById(requestedClubId) || (String(clubWorkspace?.clubId || "") === String(requestedClubId || "") ? clubWorkspace : null);
+      if (!canOpenClubOverviewFor(targetClub)) return;
+      const preferredTeam = (workspace?.teamId && String(workspace?.clubId || "") === String(requestedClubId || ""))
+        ? workspace.teamId
+        : teamMemberships.find(team => String(team.clubId || "") === String(requestedClubId || ""))?.teamId;
       const url = new URL(window.location.href);
       url.searchParams.delete("invite");
       url.searchParams.set("view", "club");
-      url.searchParams.set("club", clubWorkspace.clubId);
-      if (workspace?.teamId) url.searchParams.set("team", workspace.teamId);
+      url.searchParams.set("club", requestedClubId);
+      if (preferredTeam) url.searchParams.set("team", preferredTeam);
       url.hash = targetHash || "";
       window.location.assign(url.href);
       return;
@@ -3700,6 +3768,8 @@
     window.location.assign("live-login.html");
   });
   $("dashboardTeamSwitcher").addEventListener("change", event => switchTeam(event.target.value));
+  $("dashboardTeamSearch")?.addEventListener("input", event => { teamWorkspaceSearch = event.target.value || ""; renderTeamSwitcher(); });
+  $("dashboardTeamSearch")?.addEventListener("keydown", event => { if (event.key === "Escape") { teamWorkspaceSearch = ""; event.target.value = ""; renderTeamSwitcher(); } });
   $("clubOverviewPanel")?.addEventListener("click", event => {
     const resolve = event.target.closest("[data-resolve-opponent]");
     if (resolve) { openIdentityResolution(resolve.dataset.resolveOpponent).catch(error => { $("dashboardConnectionDetail").textContent = error.message || "Identity review could not open."; }); return; }

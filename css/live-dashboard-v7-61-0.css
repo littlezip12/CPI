@@ -1,0 +1,11 @@
+/* WPI 7.61.0 — Platform Owner Workspace Selector Correction */
+.live-team-switcher{min-width:min(420px,42vw)}
+.live-team-switcher-search{width:100%;min-height:38px;padding:8px 11px;border:1px solid #dbe2e9;border-radius:10px;background:#fff;color:#14263d;font:inherit;font-size:12px;font-weight:700}
+.live-team-switcher-search::placeholder{color:#8491a3;font-weight:600}
+.live-team-switcher-search:focus{outline:2px solid rgba(18,109,255,.18);outline-offset:1px;border-color:#9dbde0}
+.live-team-switcher select{width:100%;max-width:none}
+.live-team-switcher-count{min-height:14px;color:#718096;font-size:10px;font-weight:700}
+@media (max-width:760px){
+  .live-team-switcher{min-width:0;width:100%}
+  .live-dashboard-account{width:100%}
+}

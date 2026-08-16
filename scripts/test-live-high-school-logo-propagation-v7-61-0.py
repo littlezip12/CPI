@@ -5,7 +5,7 @@ js=(ROOT/'js/live-dashboard-v7-61-0.js').read_text()
 html=(ROOT/'live-dashboard.html').read_text()
 sql=(ROOT/'supabase/migrations/202608160002_high_school_logo_propagation.sql').read_text()
 checks={
- 'dashboard loads corrected asset':'js/live-dashboard-v7-61-0.js?v=7.61.0-logo-fix' in html,
+ 'dashboard loads corrected asset':('js/live-dashboard-v7-61-0.js?v=7.61.0-logo-fix' in html or 'js/live-dashboard-v7-61-0.js?v=7.61.0-workspace-selector-fix' in html),
  'workspace logo fallback':'workspace?.clubLogoUrl || null' in js,
  'high school directory loaded':'high-school-directory-v7-61-0.json?v=7.61.0-logo-fix' in js,
  'high school resolver':'function resolveHighSchoolIdentity' in js and 'high_school_organization' in js,

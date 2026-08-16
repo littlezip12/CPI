@@ -5,6 +5,7 @@ echo "WPI Live 7.61.0 Focused Release Check"
 echo "====================================="
 python3 scripts/test-live-high-school-foundation-v7-61-0.py
 python3 scripts/test-live-high-school-logo-propagation-v7-61-0.py
+python3 scripts/test-live-platform-owner-workspace-selector-v7-61-0.py
 node --check js/live-dashboard-v7-61-0.js
 node --check js/live-high-schools-v7-61-0.js
 node --check js/live-high-school-theme-v7-61-0.js
