@@ -20,11 +20,11 @@
       <div class="wpi-hero-copy">
         <p class="wpi-kicker">Water Polo Index</p>
         <h1 id="wpiHeroTitle">Know the teams. <em>Follow the season.</em></h1>
-        <p class="wpi-hero-summary">Independent youth water polo rankings, tournament results, and connected team and club profiles—all in one place.</p>
+        <p class="wpi-hero-summary">Independent youth water polo rankings, tournament results, and connected team and club profiles—all in one place. High-school organizations now join that same WPI discovery experience.</p>
         <nav class="wpi-hero-actions" aria-label="Start exploring Water Polo Index">
           <a class="wpi-button primary" href="rankings.html"><strong>Rankings</strong><span>Current boys and girls order</span></a>
           <a class="wpi-button secondary" href="teams.html#team-directory"><strong>Find a team</strong><span>Open the team directory</span></a>
-          <a class="wpi-button secondary" href="clubs.html"><strong>Clubs</strong><span>Programs across the country</span></a>
+          <a class="wpi-button secondary" href="organizations.html"><strong>Organizations</strong><span>Clubs + high schools</span></a>
           <a class="wpi-button secondary" href="tournaments.html"><strong>Tournaments</strong><span>Results, schedules, and journeys</span></a>
         </nav>
       </div>
@@ -34,14 +34,16 @@
       </figure>
       <span class="wpi-search-anchor" id="find-a-team" aria-hidden="true"></span>
       <form class="wpi-search" id="wpiHomeSearch" data-search-form="wpi" role="search" autocomplete="off">
-        <label class="sr-only" for="wpiSearchInput">Search Water Polo Index teams or clubs</label>
+        <label class="sr-only" for="wpiSearchInput">Search Water Polo Index teams, clubs or high schools</label>
         <span class="wpi-search-icon" aria-hidden="true">⌕</span>
-        <input id="wpiSearchInput" type="search" placeholder="Search for a team or club…" spellcheck="false">
+        <input id="wpiSearchInput" type="search" placeholder="Search for a team, club or school…" spellcheck="false">
         <label class="sr-only" for="wpiSearchType">Search type</label>
         <select id="wpiSearchType">
-          <option value="all">Teams &amp; clubs</option>
+          <option value="all">Teams &amp; organizations</option>
           <option value="teams">Teams</option>
+          <option value="organizations">Organizations</option>
           <option value="clubs">Clubs</option>
+          <option value="high_schools">High schools</option>
         </select>
         <button type="submit">Search</button>
         <div class="wpi-search-results" id="wpiSearchResults" hidden></div>
@@ -50,7 +52,7 @@
 
     <section class="wpi-stats" aria-label="Water Polo Index platform summary">
       <a href="rankings.html"><span>Ranked teams</span><strong id="wpiRankedTeams">—</strong><em>Explore all eight groups</em></a>
-      <a href="clubs.html"><span>Clubs</span><strong id="wpiClubCount">—</strong><em>Browse club profiles</em></a>
+      <a href="organizations.html"><span>Organizations</span><strong id="wpiClubCount">185</strong><em>Clubs + high schools</em></a>
       <a href="rankings.html"><span>Ranking groups</span><strong id="wpiGroupCount">—</strong><em>12U through 18U</em></a>
       <a href="tournaments.html#jo-results"><span>JO finishes</span><strong id="wpiJoFinishCount">—</strong><em>Search final placements</em></a>
     </section>
@@ -129,6 +131,7 @@
   <script src="data/identity/runtime.js?v=7.53.4"></script>
   <script src="js/cpi-identity.js?v=7.53.4"></script>
   <script src="js/homepage-wpi-v7-52-4.js?v=7.54.18"></script>
+  <script src="js/homepage-organization-search-v7-62-0.js?v=7.62.0"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

@@ -3,7 +3,7 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
 html = (root / 'live-dashboard.html').read_text()
-js_path = root / ('js/live-dashboard-v7-61-1.js' if (root / 'js/live-dashboard-v7-61-1.js').exists() else 'js/live-dashboard-v7-61-0.js')
+js_path = root / ('js/live-dashboard-v7-62-0.js' if (root / 'js/live-dashboard-v7-62-0.js').exists() else ('js/live-dashboard-v7-61-1.js' if (root / 'js/live-dashboard-v7-61-1.js').exists() else 'js/live-dashboard-v7-61-0.js'))
 js = js_path.read_text()
 css = (root / 'css/live-dashboard-v7-61-0.css').read_text() + '\n' + ((root / 'css/live-dashboard-v7-61-1.css').read_text() if (root / 'css/live-dashboard-v7-61-1.css').exists() else '')
 
@@ -12,7 +12,7 @@ checks = {
     'workspace selector is labeled as workspace': '<small>Workspace</small>' in html,
     'search placeholder is organization aware': 'Search school, club or team' in html,
     'selector correction css is loaded': ('css/live-dashboard-v7-61-1.css?v=7.61.1' in html and ('css/live-dashboard-v7-61-0.css?v=7.61.1' in html or 'css/live-dashboard-v7-61-0.css?v=7.61.0-workspace-selector-fix' in html)),
-    'selector correction js cache key is loaded': 'js/live-dashboard-v7-61-1.js?v=7.61.1' in html or 'js/live-dashboard-v7-61-0.js?v=7.61.0-workspace-selector-fix' in html,
+    'selector correction js cache key is loaded': 'js/live-dashboard-v7-62-0.js?v=7.62.0' in html or 'js/live-dashboard-v7-61-1.js?v=7.61.1' in html or 'js/live-dashboard-v7-61-0.js?v=7.61.0-workspace-selector-fix' in html,
     'team labels preserve organization for multi-org accounts': '`${organization} · ${label} · ${roleLabel(team.role)}`' in js,
     'organization all-teams rows are explicit scoped choices': '`${organizationName(club)} · All Teams`' in js,
     'organization overview values are club scoped': '__club__:' in js,

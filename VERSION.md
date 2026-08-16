@@ -1,1 +1,1 @@
-# WPI 7.61.1 — High School Schedule → Game-Day Integration & Optional Delivery
+# WPI 7.62.0 — Unified Organization Discovery & Scale

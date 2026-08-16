@@ -10,11 +10,11 @@ version=(ROOT/'VERSION.md').read_text()
 site=json.loads((ROOT/'config/site-release.json').read_text())
 schedule=json.loads((ROOT/'data/live/high-school-schedule-2026-27.json').read_text())
 html=(ROOT/'live-dashboard.html').read_text()
-js=(ROOT/'js/live-dashboard-v7-61-1.js').read_text()
+js=(ROOT/('js/live-dashboard-v7-62-0.js' if (ROOT/'js/live-dashboard-v7-62-0.js').exists() else 'js/live-dashboard-v7-61-1.js')).read_text()
 sql=(ROOT/'supabase/migrations/202608160003_high_school_schedule_optional_delivery.sql').read_text()
 
-req('7.61.1' in version,'VERSION is not 7.61.1')
-req(site.get('version')=='7.61.1','site release is not 7.61.1')
+req(any(v in version for v in ('7.61.1','7.62.0')),'VERSION no longer preserves 7.61.1 behavior')
+req(site.get('version') in {'7.61.1','7.62.0'},'site release no longer preserves 7.61.1 behavior')
 for marker in [
   'liveScoringHighSchoolGameDayIntegrationRelease','liveScoringHighSchoolRegularSeasonRelease',
   'liveScoringOptionalDeliveryRelease','liveScoringWpiLiveOnlyDeliveryRelease','liveScoringHighSchoolScheduleSyncRelease']:
@@ -31,7 +31,7 @@ req(not any(r.get('organizationId')=='school-miramonte' for r in rows),'Miramont
 req(not any('|jv' in str(r.get('teamFamilyKey','')).lower() for r in rows),'JV schedules must remain unpublished')
 req(schedule.get('counts',{}).get('unpublishedTeamSchedules')==8,'eight team schedules must remain unpublished')
 
-for token in ['id="highSchoolScheduleCard"','id="scoreDeliveryWpiOnly"','id="scoreDeliveryGroupMe"','id="gameRegularSeasonOption"','js/live-dashboard-v7-61-1.js?v=7.61.1']:
+for token in ['id="highSchoolScheduleCard"','id="scoreDeliveryWpiOnly"','id="scoreDeliveryGroupMe"','id="gameRegularSeasonOption"','js/live-dashboard-v7-62-0.js?v=7.62.0']:
     req(token in html,f'dashboard missing {token}')
 for token in ['live_sync_high_school_schedule_game_v1','live_game_day_queue_v5','live_save_game_day_v3','live_team_score_delivery_v1','live_set_team_score_delivery_mode_v1','autoSyncHighSchoolSchedule']:
     req(token in js,f'dashboard JS missing {token}')

@@ -14,7 +14,7 @@ css9=read('css/live-dashboard-v7-58-9.css')
 sql=read('supabase/migrations/202608140001_club_operations_scale_polish.sql')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
 req(read('VERSION.md').strip() in {'# WPI 7.58.9 — Club Operations & Scale Polish','# WPI 7.58.10 — Pilot Launch Prep & Admin Safety','# WPI 7.59.0 — Lamorinda Club Pilot Ready','# WPI 7.60.0 — Club Branding Platform','# WPI 7.60.1 — Self-Service Club Onboarding','# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'current VERSION mismatch')
-req(site.get('version') in {'7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1'},'current release must preserve 7.58.9 observability')
+req(site.get('version') in {'7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0'},'current release must preserve 7.58.9 observability')
 for key in ('liveScoringClubPilotValidationRelease','liveScoringClubPilotObservabilityRelease','liveScoringPilotEvidenceRelease'):
     req(site.get(key)=='7.58.9',f'missing preserved pilot marker {key}')
 req(site.get('liveScoringDashboardRelease') in {'7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0'},'dashboard release must preserve pilot observability')

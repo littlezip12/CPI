@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-59-0.css?v=7.59.0">
   <link rel="stylesheet" href="css/live-dashboard-v7-61-0.css?v=7.61.1">
   <link rel="stylesheet" href="css/live-dashboard-v7-61-1.css?v=7.61.1">
+  <link rel="stylesheet" href="css/live-dashboard-v7-62-0.css?v=7.62.0">
 </head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -36,6 +37,7 @@
         <div class="live-team-switcher" id="teamSwitcherWrap" hidden>
           <small>Workspace</small>
           <input id="dashboardTeamSearch" class="live-team-switcher-search" type="search" autocomplete="off" placeholder="Search school, club or team…" aria-label="Search team workspaces">
+          <select id="dashboardWorkspaceType" class="live-team-switcher-type" aria-label="Filter workspaces by organization type" hidden><option value="all">Clubs & high schools</option><option value="club">Clubs</option><option value="high_school">High schools</option></select>
           <select id="dashboardTeamSwitcher" aria-label="Switch team workspace"><option value="">Loading teams…</option></select>
           <span id="dashboardTeamSearchCount" class="live-team-switcher-count" aria-live="polite"></span>
         </div>
@@ -54,7 +56,7 @@
     <section id="dashboardConnectedContent" hidden>
       <section class="live-club-overview" id="clubOverviewPanel" hidden>
         <div class="live-club-overview-hero">
-          <div><p class="live-section-kicker">Club operations</p><h2 id="clubOverviewTitle">All Lamorinda Teams</h2><p id="clubOverviewSubtitle">Loading club workspace…</p></div>
+          <div><p class="live-section-kicker">Organization operations</p><h2 id="clubOverviewTitle">All Teams</h2><p id="clubOverviewSubtitle">Loading organization workspace…</p></div>
           <span>Owner view</span>
         </div>
         <div class="live-club-metrics" aria-label="Club game-day overview">
@@ -531,7 +533,7 @@
   <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
-  <script src="js/live-dashboard-v7-61-1.js?v=7.61.1"></script>
+  <script src="js/live-dashboard-v7-62-0.js?v=7.62.0"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
 </body>

@@ -13,12 +13,12 @@ index=json.loads(read('data/live/tournament-schedule-index.json'))
 html=read('live-team-identity.html')
 js=read('js/live-team-identity-v7-60-2.js')
 dash=read('live-dashboard.html')
-dashjs=read('js/live-dashboard-v7-61-1.js' if (ROOT/'js/live-dashboard-v7-61-1.js').exists() else 'js/live-dashboard-v7-60-2.js')
+dashjs=read('js/live-dashboard-v7-62-0.js' if (ROOT/'js/live-dashboard-v7-62-0.js').exists() else ('js/live-dashboard-v7-61-1.js' if (ROOT/'js/live-dashboard-v7-61-1.js').exists() else 'js/live-dashboard-v7-60-2.js'))
 sql=read('supabase/migrations/202608140004_team_directory_identity_management.sql')
 css=read('css/live-team-identity-v7-60-2.css')
 
-req(any(v in read('VERSION.md') for v in ('7.60.2','7.60.3','7.61.0','7.61.1')),'VERSION mismatch')
-req(site.get('version') in {'7.60.2','7.60.3','7.61.0','7.61.1'},'release metadata version mismatch')
+req(any(v in read('VERSION.md') for v in ('7.60.2','7.60.3','7.61.0','7.61.1','7.62.0')),'VERSION mismatch')
+req(site.get('version') in {'7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.0'},'release metadata version mismatch')
 for key in ('liveScoringTeamDirectoryIdentityRelease','liveScoringTeamFamilyIdentityRelease','liveScoringIdentityAliasRelease','liveScoringIdentityReconciliationRelease','liveScoringPersistentOpponentAliasRelease'):
     req(site.get(key)=='7.60.2',f'missing 7.60.2 marker: {key}')
 for key in ('liveScoringSelfServiceClubOnboardingRelease','liveScoringClubClaimReviewRelease','liveScoringFirstTeamProvisioningRelease'):
@@ -37,7 +37,7 @@ for token in ('Directory &amp; identity management','Team-family links','Club id
     req(token in html,f'identity page contract missing: {token}')
 req('js/live-team-identity-v7-60-2.js?v=7.60.2' in html,'identity page script missing')
 req('live-team-identity.html' in dash,'dashboard must expose Team identity entry')
-req(any(x in dash for x in ('js/live-dashboard-v7-60-2.js?v=7.60.2','js/live-dashboard-v7-60-3.js?v=7.60.3','js/live-dashboard-v7-61-0.js','js/live-dashboard-v7-61-1.js?v=7.61.1')),'dashboard must preserve identity-aware controller')
+req(any(x in dash for x in ('js/live-dashboard-v7-60-2.js?v=7.60.2','js/live-dashboard-v7-60-3.js?v=7.60.3','js/live-dashboard-v7-61-0.js','js/live-dashboard-v7-61-1.js?v=7.61.1','js/live-dashboard-v7-62-0.js?v=7.62.0')),'dashboard must preserve identity-aware controller')
 req('grid-template-columns' in css and '@media(max-width:560px)' in css,'identity page must remain responsive')
 
 for token in ('live_club_identity_context_v1','live_set_team_identity_family_v1','live_clear_team_identity_family_v1','live_upsert_identity_alias_v1','live_remove_identity_alias_v1','live_resolve_manual_opponent_v1','live_identity_aliases_for_club_v1'):
