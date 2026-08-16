@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.60.3",
-  "name": "Public / Supporter Experience at Scale",
-  "date": "2026-08-14",
+  "version": "7.61.0",
+  "name": "High School Water Polo Foundation",
+  "date": "2026-08-16",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds a scalable authenticated Supporter Hub with My Teams, cross-club discovery across the canonical WPI team-family directory, stable family-level follows, a consolidated read-only Live/Upcoming/Recent Finals feed, and tournament/weekend summaries. Following can span clubs but never grants membership, scoring, roster, GroupMe, scorer-control, merge, or admin authority. Existing Lamorinda direct follows remain compatible; family follows begin showing Live games automatically when an explicitly linked WPI Live team exists.",
+  "notes": "Adds first-class high-school organizations beside youth clubs, seeded Acalanes/Campolindo/Miramonte workspaces with Men/Women Varsity/JV teams, school-branded scoring themes, a source-backed 2026-27 high-school schedule viewer, and organization-type search architecture. Only the four supplied varsity schedules are published; Miramonte and all JV schedules remain explicitly unpublished rather than fabricated.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -222,5 +222,10 @@
   "liveScoringCrossClubFollowingRelease": "7.60.3",
   "liveScoringTeamFamilyFollowingRelease": "7.60.3",
   "liveScoringSupporterHubRelease": "7.60.3",
-  "liveScoringPersonalizedGameFeedRelease": "7.60.3"
+  "liveScoringPersonalizedGameFeedRelease": "7.60.3",
+  "liveScoringHighSchoolFoundationRelease": "7.61.0",
+  "liveScoringOrganizationTypeRelease": "7.61.0",
+  "liveScoringHighSchoolThemeRelease": "7.61.0",
+  "liveScoringHighSchoolScheduleRelease": "7.61.0",
+  "liveScoringUnifiedOrganizationDiscoveryRelease": "7.61.0"
 }

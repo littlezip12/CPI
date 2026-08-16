@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-following-v7-60-3.css?v=7.60.3">
+  <link rel="stylesheet" href="css/live-following-v7-60-3.css?v=7.61.0">
 </head>
 <body class="wpi-following-page">
   <main class="follow-shell" id="supporterHubApp">
     <header class="follow-hero">
       <div><p>WPI Live · Supporter Hub</p><h1>My Teams</h1><span>Follow teams across WPI and get one clean, read-only game feed.</span></div>
-      <nav><a href="live-dashboard.html">Team dashboard</a><button id="followSignOut" type="button">Sign out</button></nav>
+      <nav><a href="live-high-schools.html">High Schools</a><a href="live-dashboard.html">Team dashboard</a><button id="followSignOut" type="button">Sign out</button></nav>
     </header>
 
     <section id="followSignedOut" class="follow-card follow-empty" hidden>
@@ -34,12 +34,12 @@
       </section>
 
       <section class="follow-card">
-        <div class="follow-heading"><div><p>Discover</p><h2>Find a WPI team</h2></div><span id="directoryCount">724 teams</span></div>
+        <div class="follow-heading"><div><p>Discover</p><h2>Find a WPI team</h2></div><span id="directoryCount">736 teams</span></div>
         <div class="follow-filters">
-          <label><span>Search</span><input id="teamSearch" type="search" placeholder="Club or team…" autocomplete="off"></label>
-          <label><span>Club</span><select id="clubFilter"><option value="all">All clubs</option></select></label>
+          <label><span>Search</span><input id="teamSearch" type="search" placeholder="Club, school or team…" autocomplete="off"></label>
+          <label><span>Type</span><select id="organizationTypeFilter"><option value="all">Clubs & high schools</option><option value="club">Clubs</option><option value="high_school">High schools</option></select></label><label><span>Organization</span><select id="clubFilter"><option value="all">All organizations</option></select></label>
           <label><span>Age</span><select id="ageFilter"><option value="all">All ages</option></select></label>
-          <label><span>Group</span><select id="genderFilter"><option value="all">Boys & girls</option><option value="Boys">Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option></select></label>
+          <label><span>Group</span><select id="genderFilter"><option value="all">Boys & girls</option><option value="Boys">Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option><option value="Men">Men</option><option value="Women">Women</option></select></label>
         </div>
         <div id="directoryResults" class="directory-grid"><p class="follow-empty">Loading WPI team directory…</p></div>
         <p id="followingMessage" class="follow-message" role="status"></p>
@@ -60,7 +60,7 @@
   <script src="config/live-sandbox.js?v=7.57.20"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
   <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
-  <script src="js/live-following-v7-60-3.js?v=7.60.3"></script>
+  <script src="js/live-following-v7-61-0.js?v=7.61.0"></script>
   <script defer src="js/site-shell.js?v=7.54.13"></script>
   <script defer src="js/command-palette.js?v=7.53.4"></script>
 </body>

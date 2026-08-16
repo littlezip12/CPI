@@ -19,7 +19,7 @@ sql=read('supabase/migrations/202608140003_self_service_club_onboarding.sql')
 css=read('css/live-club-onboarding-v7-60-1.css')
 
 req(read('VERSION.md').strip() in {'# WPI 7.60.1 — Self-Service Club Onboarding','# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'VERSION mismatch')
-req(site.get('version') in {'7.60.1','7.60.2','7.60.3'},'release metadata must preserve 7.60.1 or later')
+req(site.get('version') in {'7.60.1','7.60.2','7.60.3','7.61.0'},'release metadata must preserve 7.60.1 or later')
 for key in ('liveScoringSelfServiceClubOnboardingRelease','liveScoringClubClaimReviewRelease','liveScoringClubOnboardingAuthRelease','liveScoringFirstTeamProvisioningRelease'):
     req(site.get(key)=='7.60.1',f'missing 7.60.1 marker {key}')
 for key in ('liveScoringClubBrandingPlatformRelease','liveScoringThemeRegistryRelease','liveScoringCanonicalClubBrandingRelease','liveScoringThemeActivationSafetyRelease'):
@@ -76,7 +76,7 @@ protected={
 for path,digest in protected.items(): req(sha(path)==digest,f'protected foundation changed: {path}')
 
 index=json.loads(read('data/live/tournament-schedule-index.json'))
-req(index.get('release') in {'7.60.1','7.60.2','7.60.3'},'schedule index release marker mismatch')
+req(index.get('release') in {'7.60.1','7.60.2','7.60.3','7.61.0'},'schedule index release marker mismatch')
 req(index.get('counts')=={'events':0,'games':0},'onboarding release must not fabricate current-season schedule data')
 print('WPI LIVE 7.60.1 SELF-SERVICE CLUB ONBOARDING PASSED')
 print(' - canonical club search + unlisted request path are available')

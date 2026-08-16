@@ -18,7 +18,7 @@ sql=read('supabase/migrations/202608140004_team_directory_identity_management.sq
 css=read('css/live-team-identity-v7-60-2.css')
 
 req(read('VERSION.md').strip() in {'# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'VERSION mismatch')
-req(site.get('version') in {'7.60.2','7.60.3'},'release metadata version mismatch')
+req(site.get('version') in {'7.60.2','7.60.3','7.61.0'},'release metadata version mismatch')
 for key in ('liveScoringTeamDirectoryIdentityRelease','liveScoringTeamFamilyIdentityRelease','liveScoringIdentityAliasRelease','liveScoringIdentityReconciliationRelease','liveScoringPersistentOpponentAliasRelease'):
     req(site.get(key)=='7.60.2',f'missing 7.60.2 marker: {key}')
 for key in ('liveScoringSelfServiceClubOnboardingRelease','liveScoringClubClaimReviewRelease','liveScoringFirstTeamProvisioningRelease'):
@@ -81,7 +81,7 @@ protected={
  'js/live-login-v7-60-1.js':'6cf7e8f746dbd6881d9939a787202024c62f3f03b716dd50481329bb648acb6c',
 }
 for path,digest in protected.items(): req(sha(path)==digest,f'protected foundation changed: {path}')
-req(index.get('release') in {'7.60.2','7.60.3'},'schedule index release marker mismatch')
+req(index.get('release') in {'7.60.2','7.60.3','7.61.0'},'schedule index release marker mismatch')
 req(index.get('counts')=={'events':0,'games':0},'identity release must not fabricate current-season schedule data')
 print('WPI LIVE 7.60.2 TEAM DIRECTORY & IDENTITY MANAGEMENT PASSED')
 print(' - 182 clubs / 724 public team identities remain canonical')
