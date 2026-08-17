@@ -1,3 +1,3 @@
-# WPI 7.62.5 — Public Matchup Identity & Score Polish
+# WPI 7.62.6 — Homepage Live Pulse & Public Score Discovery
 
-Public WPI Live games now present both sides of the matchup with team/opponent logos, clearer score hierarchy, final-winner treatment, and resilient logo fallbacks while preserving the score-only privacy boundary and all protected scoring behavior.
+The WPI homepage now surfaces a privacy-safe public WPI Live pulse so visitors can immediately discover live games, upcoming public games, and recent public finals without entering the Live Center first. The feature reuses the existing public score-only RPC and preserves all roster/player/scorer/GroupMe privacy boundaries.

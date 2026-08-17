@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/homepage-wpi-v7-52-4.css?v=7.53.4">
   <link rel="stylesheet" href="css/homepage-wpi-v7-54-12.css?v=7.54.13">
+  <link rel="stylesheet" href="css/homepage-live-v7-62-6.css?v=7.62.6">
 </head>
 <body class="wpi-home">
   <main class="wpi-home-main">
@@ -56,6 +57,21 @@
       <a href="organizations.html"><span>Organizations</span><strong id="wpiClubCount">185</strong><em>Clubs + high schools</em></a>
       <a href="rankings.html"><span>Ranking groups</span><strong id="wpiGroupCount">—</strong><em>12U through 18U</em></a>
       <a href="tournaments.html#jo-results"><span>JO finishes</span><strong id="wpiJoFinishCount">—</strong><em>Search final placements</em></a>
+    </section>
+
+    <section class="wpi-section wpi-home-live" id="wpiHomeLivePulse" aria-labelledby="wpiHomeLiveTitle">
+      <div class="wpi-section-heading wpi-home-live-heading">
+        <div><p class="wpi-kicker">WPI Live</p><h2 id="wpiHomeLiveTitle">Live scores &amp; what's next</h2><p>Public score-only updates from teams using WPI Live. Private team data stays private.</p></div>
+        <div class="wpi-home-live-actions"><span id="wpiHomeLiveUpdated" aria-live="polite">Loading…</span><a class="wpi-text-link" href="live.html">View all WPI Live →</a></div>
+      </div>
+      <div class="wpi-home-live-summary" aria-label="Public WPI Live summary">
+        <span><strong id="wpiHomeLiveNowCount">—</strong> live now</span>
+        <span><strong id="wpiHomeUpcomingCount">—</strong> upcoming</span>
+        <span><strong id="wpiHomeFinalCount">—</strong> recent finals</span>
+      </div>
+      <div id="wpiHomeLiveCards" class="wpi-home-live-grid" aria-live="polite">
+        <div class="wpi-home-live-empty">Loading public scores…</div>
+      </div>
     </section>
 
     <section class="wpi-section" aria-labelledby="rankingsTitle">
@@ -133,6 +149,9 @@
   <script src="js/cpi-identity.js?v=7.53.4"></script>
   <script src="js/homepage-wpi-v7-52-4.js?v=7.54.18"></script>
   <script src="js/homepage-organization-search-v7-62-1.js?v=7.62.1"></script>
+  <script src="config/live-sandbox.js?v=7.57.20"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/homepage-live-v7-62-6.js?v=7.62.6"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
 </body>

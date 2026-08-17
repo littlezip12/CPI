@@ -13,7 +13,7 @@ matcher=read('js/live-tournament-feed-v7-58-5.js')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
 evidence=json.loads(read('data/live/tournament-feed-validation.json'))
 mig=read('supabase/migrations/202608080007_tournament_schedule_integration_reconciliation.sql')
-req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5'},'current release must preserve 7.58.6 hardening or later')
+req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6'},'current release must preserve 7.58.6 hardening or later')
 for key in ('liveScoringTournamentFeedValidationRelease','liveScoringTournamentIdentitySafetyRelease','liveScoringTournamentReconciliationValidationRelease'):
     req(site.get(key)=='7.58.5',f'7.58.5 marker changed: {key}')
 for token in ('js/live-tournament-feed-v7-58-5.js?v=7.58.5',):

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.62.5",
-  "name": "Public Matchup Identity & Score Polish",
+  "version": "7.62.6",
+  "name": "Homepage Live Pulse & Public Score Discovery",
   "date": "2026-08-16",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Polishes the public WPI Live scoreboard and score-only game viewer with both matchup logos, clearer side-by-side team identity, final-winner emphasis, resilient logo fallback behavior, and explicit score freshness while preserving the public_team privacy boundary and protected scoring authority.",
+  "notes": "Adds a compact public WPI Live pulse to the homepage, prioritizing live games, then upcoming games and recent finals, with direct links into the score-only public viewer. Reuses the existing public_team summary RPC and exposes no roster, player, scorer, membership, GroupMe, delivery, or team-private data.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -248,5 +248,7 @@
   "liveScoringPublicGameSharingRelease": "7.62.4",
   "liveScoringAudienceClarityRelease": "7.62.4",
   "liveScoringPublicMatchupIdentityRelease": "7.62.5",
-  "liveScoringPublicScorePresentationRelease": "7.62.5"
+  "liveScoringPublicScorePresentationRelease": "7.62.5",
+  "liveScoringHomepageLivePulseRelease": "7.62.6",
+  "liveScoringHomepagePublicScoreDiscoveryRelease": "7.62.6"
 }
