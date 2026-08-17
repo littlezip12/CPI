@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit('FAIL: '+msg)
 release=(ROOT/'VERSION.md').read_text()
-req('7.62.0' in release,'VERSION must be 7.62.0')
+req(any(v in release for v in ('7.62.0','7.62.1')),'VERSION must preserve 7.62.0 or later')
 data=json.loads((ROOT/'data/live/organization-directory-v7-62-0.json').read_text())
 req(data['counts']['organizations']==185,'expected 185 organizations')
 req(data['counts']['clubs']==182,'expected 182 clubs')
@@ -14,7 +14,7 @@ req(data['counts']['teams']==736,'expected 736 teams')
 ids={o['organizationId'] for o in data['organizations']}
 for x in ['school-acalanes','school-campolindo','school-miramonte','club-lamorinda']:
     req(x in ids,f'missing organization {x}')
-html=(ROOT/'organizations.html').read_text(); profile=(ROOT/'organization.html').read_text(); js=(ROOT/'js/organization-directory-v7-62-0.js').read_text(); pjs=(ROOT/'js/organization-profile-v7-62-0.js').read_text()
+html=(ROOT/'organizations.html').read_text(); profile=(ROOT/'organization.html').read_text(); js=(ROOT/('js/organization-directory-v7-62-1.js' if (ROOT/'js/organization-directory-v7-62-1.js').exists() else 'js/organization-directory-v7-62-0.js')).read_text(); pjs=(ROOT/('js/organization-profile-v7-62-1.js' if (ROOT/'js/organization-profile-v7-62-1.js').exists() else 'js/organization-profile-v7-62-0.js')).read_text()
 for marker in ['orgSearch','orgType','orgLocation','orgTeamGroup']:
     req(marker in html,f'organizations page missing {marker}')
 req('live_public_organization_overview_v1' in pjs,'profile must use safe organization overview RPC')
@@ -23,7 +23,7 @@ req('familyFollows' in pjs,'profile must reflect directory-only follows before a
 req('Following is read-only' in profile,'profile must explain Following is read-only')
 index=(ROOT/'index.html').read_text()
 req('Search for a team, club or school' in index,'homepage search must include schools')
-req('homepage-organization-search-v7-62-0.js' in index,'homepage must load unified search overlay')
+req(any(x in index for x in ('homepage-organization-search-v7-62-0.js','homepage-organization-search-v7-62-1.js')),'homepage must load unified search overlay')
 # Platform Owner scale filters
 board=(ROOT/'live-dashboard.html').read_text(); boardjs=(ROOT/'js/live-dashboard-v7-62-0.js').read_text()
 req('dashboardWorkspaceType' in board and 'high_school' in board,'workspace type filter missing')

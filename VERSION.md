@@ -1,1 +1,1 @@
-# WPI 7.62.0 — Unified Organization Discovery & Scale
+# WPI 7.62.1 — Stable Team Hubs & Live Bridge

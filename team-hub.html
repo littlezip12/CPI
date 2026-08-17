@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Team | Water Polo Index</title>
+  <meta name="description" content="Stable Water Polo Index team profile with organization identity, Following and WPI Live activity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.62.1">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/team-hub-v7-62-1.css?v=7.62.1">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+</head>
+<body class="wpi-team-hub-page">
+  <main class="team-hub-shell">
+    <a id="teamHubBack" class="team-hub-back" href="organizations.html">← Organizations</a>
+
+    <section id="teamHubHero" class="team-hub-hero">
+      <img id="teamHubLogo" class="team-hub-logo" src="assets/logos/cpi-logo-fallback.svg" alt="">
+      <div class="team-hub-identity">
+        <p id="teamHubType" class="team-hub-kicker">WPI Team</p>
+        <h1 id="teamHubName">Loading…</h1>
+        <p id="teamHubOrganization" class="team-hub-organization"></p>
+        <div id="teamHubMeta" class="team-hub-meta"></div>
+      </div>
+      <div class="team-hub-actions">
+        <a id="teamHubOrganizationLink" class="team-hub-link" href="organizations.html">Organization</a>
+        <a id="teamHubLegacyLink" class="team-hub-link" href="#" hidden>Rankings &amp; history</a>
+        <button id="teamHubFollow" class="team-hub-primary" type="button" hidden>Follow</button>
+        <a id="teamHubSignIn" class="team-hub-primary" href="live-login.html?follow=1" hidden>Sign in to follow</a>
+      </div>
+    </section>
+
+    <section class="team-hub-grid">
+      <article class="team-hub-panel">
+        <div class="team-hub-panel-heading">
+          <div><p class="team-hub-kicker">Identity</p><h2>Team profile</h2></div>
+          <span id="teamHubConnection">Directory</span>
+        </div>
+        <dl class="team-hub-details">
+          <div><dt>Organization</dt><dd id="teamHubDetailOrganization">—</dd></div>
+          <div><dt>Team</dt><dd id="teamHubDetailTeam">—</dd></div>
+          <div><dt>Season</dt><dd id="teamHubSeason">—</dd></div>
+          <div><dt>Following</dt><dd id="teamHubRelationship">Not following</dd></div>
+        </dl>
+        <p id="teamHubFollowMessage" class="team-hub-note" role="status">Following is read-only. It never grants roster, scoring, GroupMe or admin access.</p>
+      </article>
+
+      <article class="team-hub-panel">
+        <div class="team-hub-panel-heading">
+          <div><p class="team-hub-kicker">WPI Live</p><h2>Game status</h2></div>
+          <span id="teamHubLiveState">Checking…</span>
+        </div>
+        <div id="teamHubGames" class="team-hub-games"><div class="team-hub-empty">Checking WPI Live activity…</div></div>
+        <p class="team-hub-note">Public games can appear without sign-in. Team-private games appear only when your account is entitled to view that team.</p>
+      </article>
+    </section>
+  </main>
+  <script src="config/live-sandbox.js?v=7.61.1"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
+  <script src="js/team-hub-v7-62-1.js?v=7.62.1"></script>
+  <script defer src="js/site-shell.js?v=7.54.13"></script>
+  <script defer src="js/command-palette.js?v=7.53.4"></script>
+</body>
+</html>

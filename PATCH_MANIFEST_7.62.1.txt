@@ -1,0 +1,89 @@
+WPI 7.62.1 — Stable Team Hubs & Live Bridge
+
+Base: pushed WPI 7.62.0
+Intentional changed/new files before manifests: 71
+
+Key scope:
+- Stable public team-family hub for all 736 team identities
+- Organization branding + exact team identity on one canonical team surface
+- Safe WPI Live activity filtered through the existing organization overview RPC
+- Stable read-only Following directly from team hubs
+- Homepage, Organization profiles and My Teams route into the stable team hub
+- Existing club rankings/history pages are preserved as secondary links
+- High-school teams do not fabricate ranking history
+- No Supabase migration; no Edge Function redeploy; no new secret
+
+Files:
+- INSTALL_7.62.1.md
+- VERSION.md
+- WPI_7.62.1_STABLE_TEAM_HUBS_LIVE_BRIDGE_HANDOFF.md
+- config/site-release.json
+- css/live-following-v7-60-3.css
+- css/team-hub-v7-62-1.css
+- data/live/organization-directory-v7-62-1.json
+- data/live/protected-foundation-hashes-v7-62-1.json
+- index.html
+- js/homepage-organization-search-v7-62-1.js
+- js/live-following-v7-62-1.js
+- js/organization-directory-v7-62-1.js
+- js/organization-profile-v7-62-1.js
+- js/team-hub-v7-62-1.js
+- live-following.html
+- organization.html
+- organizations.html
+- release-check
+- release-check-live-7.62.1
+- scripts/build-organization-directory-v7-62-1.py
+- scripts/test-boys-post-jo-rankings-v7-52-0.py
+- scripts/test-brand-teams-section-landing-v7-53-4.py
+- scripts/test-club-family-cleanup-v7-52-12.py
+- scripts/test-club-locations-v7-52-5.py
+- scripts/test-club-logos-v7-52-6.py
+- scripts/test-club-profile-experience-v7-53-0.py
+- scripts/test-club-websites-v7-52-16.py
+- scripts/test-evan-cousineau-v7-54-7.py
+- scripts/test-girls-futures-super-finals-v7-54-11.py
+- scripts/test-girls-post-jo-rankings-v7-52-2.py
+- scripts/test-homepage-simplification-v7-54-12.py
+- scripts/test-jo-logo-delivery-v7-52-9.py
+- scripts/test-jo-profile-bridge-v7-52-11.py
+- scripts/test-jo-recap-v7-54-16.py
+- scripts/test-jo-results-browser-v7-52-1.py
+- scripts/test-jo-results-links-v7-52-7.py
+- scripts/test-jo-session-3-v7-54-5.py
+- scripts/test-kap7-international-v7-54-9.py
+- scripts/test-kap7-logo-mapping-v7-54-10.py
+- scripts/test-kern-skip-separation-v7-52-13.py
+- scripts/test-landing-page-clarity-v7-54-13.py
+- scripts/test-live-club-branding-platform-v7-60-0.py
+- scripts/test-live-club-operations-scale-v7-58-9.py
+- scripts/test-live-club-pilot-hardening-v7-58-6.py
+- scripts/test-live-club-pilot-validation-regression-v7-58-9.py
+- scripts/test-live-club-workspace-regression-v7-58-6.py
+- scripts/test-live-event-archive-regression-v7-58-6.py
+- scripts/test-live-high-school-schedule-delivery-v7-61-1.py
+- scripts/test-live-multi-team-profiles-rosters-regression-v7-58-6.py
+- scripts/test-live-pilot-launch-admin-safety-v7-58-10.py
+- scripts/test-live-pilot-regression-v7-58-6.py
+- scripts/test-live-public-supporter-scale-v7-60-3.py
+- scripts/test-live-self-service-club-onboarding-v7-60-1.py
+- scripts/test-live-stable-team-hubs-v7-62-1.py
+- scripts/test-live-team-directory-identity-v7-60-2.py
+- scripts/test-live-tournament-feed-regression-v7-58-6.py
+- scripts/test-live-unified-organization-discovery-v7-62-0.py
+- scripts/test-multi-season-foundation-v7-55-1.py
+- scripts/test-public-tournament-hub-v7-54-4.py
+- scripts/test-release-integrity-v7-52-15.py
+- scripts/test-san-diego-county-cup-v7-54-8.py
+- scripts/test-team-directory-curation-v7-54-14.py
+- scripts/test-team-directory-logos-v7-53-6.js
+- scripts/test-team-hero-compact-v7-54-15.py
+- scripts/test-team-profile-experience-v7-53-1.py
+- scripts/test-tournament-platform-v7-54-0.py
+- scripts/test-tournament-platform-v7-54-1.py
+- scripts/test-tournament-seasons-v7-55-0.py
+- scripts/test-wpi-homepage-v7-52-4.py
+- scripts/validate-tournament-data.py
+- team-hub.html
+- PATCH_FILES_7.62.1.txt
+- PATCH_MANIFEST_7.62.1.txt
