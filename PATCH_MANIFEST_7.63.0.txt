@@ -1,0 +1,75 @@
+WPI 7.63.0 Patch Manifest
+=========================
+
+Baseline: WPI 7.62.6 — Homepage Live Pulse & Public Score Discovery
+Release: WPI 7.63.0 — Analytics, Entitlements & Monetization Foundation
+
+Changed paths: 67
+
+ADDED	INSTALL_7.63.0.md	3036 bytes	sha256=a9b145255bd278a767f815dbcfa0d6e8530116f4de3aee710e2b245ba9acf6c8
+ADDED	PATCH_FILES_7.63.0.txt	3634 bytes	sha256=e68a78f7098809b9c187874cf168af8f4601d6cd36c073231502027911515624
+ADDED	PATCH_MANIFEST_7.63.0.txt	(self)
+MODIFIED	VERSION.md	891 bytes	sha256=89462e548db04f196301cf51393a094be3b19f3971c820d802d4fed443e692bc
+MODIFIED	config/site-release.json	12524 bytes	sha256=7d23db5843386fac475f6abaedf0859ad326a663f264138043397f9bcb65a90b
+ADDED	docs/WPI_SCALE_MONETIZATION_SECURITY_PLAN_2026-08-16.md	21251 bytes	sha256=5b0782c53327f0faeff87083d61c9eb82465e61276f84026d93ae9116940b944
+ADDED	js/live-game-recap-v7-63-0.js	10301 bytes	sha256=1d52a085ccbea9abe851d6e31bb9225b873a36c333765a9836380ad2f89fdb03
+MODIFIED	live-game-recap.html	5321 bytes	sha256=daaf6c40d0e3273727370806f97695cdb0874b4db11ba3712b309787b4a53343
+MODIFIED	release-check	6249 bytes	sha256=67f3900468f171b92c24fd079275a30a317fd16b4a3ced35742ddea8248e4eb3
+ADDED	release-check-live-7.63.0	351 bytes	sha256=911b01c2f151759bfe93e8bc397f09f94f98e8f0e9654f4996ef0b5f865a9b72
+MODIFIED	scripts/test-boys-post-jo-rankings-v7-52-0.py	5738 bytes	sha256=f8d3e0486b74d3c74c9f98503741f611e1182a61bfb304f8281866ab4150a6af
+MODIFIED	scripts/test-brand-teams-section-landing-v7-53-4.py	9093 bytes	sha256=364321e42b117cc6d1bf00a3b60a6c7e42e001d9649a542c06e430c07fad0114
+MODIFIED	scripts/test-club-family-cleanup-v7-52-12.py	5652 bytes	sha256=05e4f2cce7d44207f8001df6d67b5fae9430ddf26bfaf37c313eb3c5cff7d330
+MODIFIED	scripts/test-club-locations-v7-52-5.py	4598 bytes	sha256=25960be9356f59be9c82ffa589b0671063ec529e5519fa43dcb1150ca76518ff
+MODIFIED	scripts/test-club-logos-v7-52-6.py	6615 bytes	sha256=930335ca76e33cf137a65ca862104d693d16199d3591918e6298acdb8d965cd7
+MODIFIED	scripts/test-club-profile-experience-v7-53-0.py	7732 bytes	sha256=213895e32d7a5321cf230b648f6f917bffb8e0c6402fa5c51aca1a2725684159
+MODIFIED	scripts/test-club-websites-v7-52-16.py	6595 bytes	sha256=c7da3f6991b95bea390fae07c7f15ed214d43ac7e3d1d5dd3f4d293acc242c4d
+MODIFIED	scripts/test-evan-cousineau-v7-54-7.py	4985 bytes	sha256=05b438487aa20c00a0914ac64c40b7bcda444e168d82cc964dabb04a6976d199
+MODIFIED	scripts/test-girls-futures-super-finals-v7-54-11.py	7951 bytes	sha256=067d57ba21d0a49d3245fc114471fb10d1398fdb2cf0b3eeaee1a8b3bffa4cc2
+MODIFIED	scripts/test-girls-post-jo-rankings-v7-52-2.py	6163 bytes	sha256=9216edcd9400066823252d885c9b6a02a65b6616e7f3d03c830226a72b0a272b
+MODIFIED	scripts/test-homepage-live-pulse-v7-62-6.py	2687 bytes	sha256=cd86275140a2139828d850f752bea2271f12078495b312093b247be84d82f40f
+MODIFIED	scripts/test-homepage-simplification-v7-54-12.py	4002 bytes	sha256=bc7de7ad99b63b914130389421660271b11d635c9bd034f90c666a0eecbdb1eb
+MODIFIED	scripts/test-jo-logo-delivery-v7-52-9.py	5348 bytes	sha256=9a52618af97ce7c7acf1c543c7d5df59731483851cffe1d077ebce225e4dae84
+MODIFIED	scripts/test-jo-profile-bridge-v7-52-11.py	8138 bytes	sha256=931e2e41d5474a05d37c85a9f8412ecfafa21b34a6fdd89bcb65175ed1ca3180
+MODIFIED	scripts/test-jo-recap-v7-54-16.py	5811 bytes	sha256=0a5b46dcaefecb3342b135921ff1b73f6212f41b47bcff5822307471a4019f3a
+MODIFIED	scripts/test-jo-results-browser-v7-52-1.py	11609 bytes	sha256=eafc74e2b6fdd31e7140ce063fba669aa656992bf5012db48b3fd42e2ba3da15
+MODIFIED	scripts/test-jo-results-links-v7-52-7.py	7037 bytes	sha256=e5d6b2b6f4e7876cd9adb0e8c5b868cdc53d23e25da301f29b4e53a09811a0f3
+MODIFIED	scripts/test-jo-session-3-v7-54-5.py	9247 bytes	sha256=72d48fe730d28abacd047e7c9a5b758261a161c8000eb3c3103c78f3506561cf
+MODIFIED	scripts/test-kap7-international-v7-54-9.py	7476 bytes	sha256=be359ea4630874c447e68481d99f6936badad70256d17f9f4bc2c680e3169600
+MODIFIED	scripts/test-kap7-logo-mapping-v7-54-10.py	5336 bytes	sha256=13daf6fb6109f8474d7cc967fcdca34c140c051e01a3e0b38c9bc6e76ae8516b
+MODIFIED	scripts/test-kern-skip-separation-v7-52-13.py	8519 bytes	sha256=34733149109a69a6ec64d2aad953e5e4f27545c60346418b66200ae08f38a217
+MODIFIED	scripts/test-landing-page-clarity-v7-54-13.py	7317 bytes	sha256=1bea98be68705a1dd8ba4f59d2f033b2620512f709e5f2940cf24bd5d2496254
+ADDED	scripts/test-live-analytics-entitlements-monetization-v7-63-0.py	5846 bytes	sha256=d38ca6a0d23439d304f754e8fea0d4612dcbb290eb6692a361b72b7fe42a285d
+MODIFIED	scripts/test-live-club-branding-platform-v7-60-0.py	7454 bytes	sha256=cbed1e3432776a452aa36449c5f2097ae838be59872d0e4cf4c413ae7836f64d
+MODIFIED	scripts/test-live-club-operations-scale-v7-58-9.py	5838 bytes	sha256=6c06ab0cff0deb0117bbceae327e8cc9213a6100314539533c87f52a88d21c59
+MODIFIED	scripts/test-live-club-pilot-hardening-v7-58-6.py	8066 bytes	sha256=8dfbfc7dfd1691796060407d436ae84e401530e2edef61dab64d20906c8d36ed
+MODIFIED	scripts/test-live-club-pilot-validation-regression-v7-58-9.py	6269 bytes	sha256=dd2d082882b10b232a5cadc2cbfc1f0bb44ef6725ccbe354b0de110936294836
+MODIFIED	scripts/test-live-club-workspace-regression-v7-58-6.py	2436 bytes	sha256=0558049f0887a3d3102a8b2217defc47f332230562d2a884524bd3d4a2a363d8
+MODIFIED	scripts/test-live-event-archive-regression-v7-58-6.py	2203 bytes	sha256=f908ee7968ff2e1d825cf9d5b7186e7d0602b5adf74649ba416b18f84bb84c4d
+MODIFIED	scripts/test-live-high-school-schedule-delivery-v7-61-1.py	5035 bytes	sha256=3085e5dba3ed11ce516013ac8762110b31a24c3a9115d6d77b7292e91ac5d2fc
+MODIFIED	scripts/test-live-multi-team-profiles-rosters-regression-v7-58-6.py	1874 bytes	sha256=428f731b0023c9c3024fd657deb338315669a7b4cb428f554488437150453c87
+MODIFIED	scripts/test-live-pilot-launch-admin-safety-v7-58-10.py	2377 bytes	sha256=9ce5d48117721e4fa64523bbdd9a4653714463c26d086b8be84cccd2dc0cf01c
+MODIFIED	scripts/test-live-pilot-regression-v7-58-6.py	4100 bytes	sha256=fbec201aa4321922fc294c0e8cbd2608f986a4ec6fa767b57f17eb53b212aaa4
+MODIFIED	scripts/test-live-public-center-v7-62-3.py	4016 bytes	sha256=ab4360e161ca924fa8a62d650ac6dde50be61c9bb7abafc1f68bcd9d2a3e585c
+MODIFIED	scripts/test-live-public-game-publishing-v7-62-4.py	2965 bytes	sha256=6bfe0aefbc97abddb6594685dbc77d9be4698ecda1267e8629437ec8064721ec
+MODIFIED	scripts/test-live-public-matchup-identity-v7-62-5.py	2854 bytes	sha256=58d0b46c9de2d015be1f7cf26c39b0dc53d2d32e1fb6f02661e52a85c60feddd
+MODIFIED	scripts/test-live-public-supporter-scale-v7-60-3.py	6539 bytes	sha256=f31779802ef7c20b4b26a8e8088c949eee047fc42e0a34b2979570de182418a1
+MODIFIED	scripts/test-live-self-service-club-onboarding-v7-60-1.py	7784 bytes	sha256=5084091a1c45f2adff94f9a620b5ef5cc742b749028033a3fad9d5d63eb591b8
+MODIFIED	scripts/test-live-stable-team-hubs-v7-62-1.py	3844 bytes	sha256=d111c259368ce33f30be13146186041cb1a47b6e8e2710f507b152e22d3e7abc
+MODIFIED	scripts/test-live-team-directory-identity-v7-60-2.py	8476 bytes	sha256=4eb47a23e3929550d30da0a6d402134ced27b43b69c1019ff341d3276d2514d2
+MODIFIED	scripts/test-live-tournament-feed-regression-v7-58-6.py	2853 bytes	sha256=4758379cd2ca3aa533b0090c374d8f310265be8b34fd8a0dc3b18ccabe980fb0
+MODIFIED	scripts/test-live-unified-organization-discovery-v7-62-0.py	3709 bytes	sha256=8563dfa0b7e9e8a9d6a3c55af53ecf7e91ad1ca63597b701ffc192f0923ed340
+MODIFIED	scripts/test-multi-season-foundation-v7-55-1.py	8215 bytes	sha256=1a93e1b2674939a197656b495a72b109fc4811c732d4776b7cd2fe630d8ddcc7
+MODIFIED	scripts/test-navigation-homepage-v7-53-3.py	3080 bytes	sha256=3334cb1f62e525f88da6761fe4582f6130a44500382402c34801dc8bc68b7b83
+MODIFIED	scripts/test-public-tournament-hub-v7-54-4.py	6934 bytes	sha256=720c6d8a4bd0f618655f0769ad5639a8a0211a9a8e5caa6b38200063d21615ce
+MODIFIED	scripts/test-release-integrity-v7-52-15.py	5866 bytes	sha256=ca27fa15df52c7c9809c96ad8ba02db7895ca587d1803e72b2defd31f26a9243
+MODIFIED	scripts/test-san-diego-county-cup-v7-54-8.py	7840 bytes	sha256=18aaa9ecadd44c8932e4e2bf6b4605de3eeb25e2a2d7c0f641549aa022e1626b
+MODIFIED	scripts/test-team-directory-curation-v7-54-14.py	4522 bytes	sha256=9d6df2ceae41ebf3058d13b4bb10e54087b55c51b5f19b7587e38e7f6cad4959
+MODIFIED	scripts/test-team-directory-logos-v7-53-6.js	4302 bytes	sha256=e0c9c0b210f83fbf537fb8dee2cbc66a04e935044700bc8e14108a2cee005ee9
+MODIFIED	scripts/test-team-hero-compact-v7-54-15.py	2967 bytes	sha256=8f7008a6086f4d389f4d7a6145ac0328940583188b76cf0138c75002ad10cc92
+MODIFIED	scripts/test-team-profile-experience-v7-53-1.py	3729 bytes	sha256=0afaca8e77b822f6e45688e53f5e1817791a8fce2e46bba3ab9488875b151ced
+MODIFIED	scripts/test-tournament-platform-v7-54-0.py	9916 bytes	sha256=cbb5d73378156c33409e652693377ceec4a3504224c5ae856dd21db0d41004b3
+MODIFIED	scripts/test-tournament-platform-v7-54-1.py	10601 bytes	sha256=d0c81b889ceef08553dba092ed2c89c5b47b9706636756de4473723c771c715b
+MODIFIED	scripts/test-tournament-seasons-v7-55-0.py	5790 bytes	sha256=2185bf42913efb2df635c96c300d8f76f0abc2c06d15902c829c57bed1d10e26
+MODIFIED	scripts/test-universal-search-navigation-v7-62-2.py	3816 bytes	sha256=4161d44edde4528cb5cecd5cb6009dec7d3eddaefe95f0d5f23c041330c69812
+MODIFIED	scripts/test-wpi-homepage-v7-52-4.py	4927 bytes	sha256=b526fd3d5ccbe5f5038b7fc4cbb6893a231effc50fc8363cf9bb8671501f51b4
+ADDED	supabase/migrations/202608170001_analytics_entitlements_monetization_foundation.sql	47235 bytes	sha256=833ee12dc07fb10c4437c2f1cb5b2fa190da8e288d42564ac6cfae85f3928a27

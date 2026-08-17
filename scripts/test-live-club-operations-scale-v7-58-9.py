@@ -15,7 +15,7 @@ index=json.loads(read('data/live/tournament-schedule-index.json'))
 req(read('VERSION.md').strip() in {'# WPI 7.58.9 — Club Operations & Scale Polish','# WPI 7.58.10 — Pilot Launch Prep & Admin Safety','# WPI 7.59.0 — Lamorinda Club Pilot Ready','# WPI 7.60.0 — Club Branding Platform','# WPI 7.60.1 — Self-Service Club Onboarding','# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'VERSION mismatch')
 req((site.get('version'),site.get('name')) in {('7.58.9','Club Operations & Scale Polish'),('7.58.10','Pilot Launch Prep & Admin Safety'),('7.59.0','Lamorinda Club Pilot Ready'),('7.60.0','Club Branding Platform'),('7.60.1','Self-Service Club Onboarding'),('7.60.2','Team Directory & Identity Management'),('7.60.3','Public / Supporter Experience at Scale')},'release metadata mismatch')
 for key in ('liveScoringDashboardRelease','liveScoringClubOperationsRelease','liveScoringClubOperationsScaleRelease'):
-    req(site.get(key) in {'7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6'},f'club operations marker not preserved: {key}')
+    req(site.get(key) in {'7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0'},f'club operations marker not preserved: {key}')
 for key in ('liveScoringClubPeopleAccessRelease','liveScoringClubTeamManagementRelease','liveScoringManualOpponentReviewRelease','liveScoringPilotResilienceDeferralRelease'):
     req(site.get(key)=='7.58.9',f'missing preserved 7.58.9 marker {key}')
 for key,expected in {'liveScoringClubGameThemeRelease':'7.58.8','liveScoringClubPilotHardeningRelease':'7.58.6','liveScoringTournamentFeedValidationRelease':'7.58.5','liveScoringEventArchiveRelease':'7.58.4'}.items():
@@ -31,7 +31,7 @@ for token in ('create or replace function public.live_club_operations_v1','Club 
 ops_fn=sql.split('create or replace function public.live_club_pilot_validation_v1',1)[0]
 for forbidden in ('insert into public.live_team_members','update public.live_team_members','delete from public.live_team_members','insert into public.live_team_follows','delete from public.live_team_follows','update public.live_games','insert into public.live_games'):
     req(forbidden not in ops_fn.lower(),f'club operations overview may not mutate protected data: {forbidden}')
-req(index.get('release') in {'7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6'},'schedule index release mismatch')
+req(index.get('release') in {'7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0'},'schedule index release mismatch')
 req(index.get('counts')=={'events':0,'games':0},'club operations release must not fabricate schedule data')
 protected={
  'js/live-game-v7-58-6.js':'5cb97ca79e8794e9d34cb5f958462d3e86121ec152afed6f64516a2941368b76',

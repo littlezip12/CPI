@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.63.0 Focused Release Check"
+echo "====================================="
+python3 scripts/test-live-analytics-entitlements-monetization-v7-63-0.py
+node --check js/live-game-recap-v7-63-0.js
+./release-check-live-7.62.6
+echo
+echo "WPI Live 7.63.0 focused release check passed."

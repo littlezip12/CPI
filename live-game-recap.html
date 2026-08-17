@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>WPI Live Game Recap | Water Polo Index</title>
-  <meta name="description" content="Private permanent WPI Live game recap with final score, period scoring, starters, player stats and complete scoring timeline.">
+  <meta name="description" content="WPI Live game recap with a free team-result view and entitlement-protected detailed player analytics.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -36,6 +36,11 @@
         <article class="live-recap-panel"><div class="live-recap-panel-heading"><div><p>Period scoring</p><h2>Score progression</h2></div></div><div id="recapPeriodScores" class="live-recap-period-grid"></div></article>
       </section>
 
+      <article class="live-recap-panel" id="recapAnalyticsAccessNotice" hidden>
+        <div class="live-recap-panel-heading"><div><p>Analytics access</p><h2>Detailed stats are private</h2></div><span>Team Insights</span></div>
+        <p class="live-recap-narrative">Free Supporters keep the final score and period progression. Player stats, lineups and the complete event timeline require detailed analytics access.</p>
+      </article>
+
       <article class="live-recap-panel" id="recapNarrativePanel">
         <div class="live-recap-panel-heading"><div><p>Game recap</p><h2>Final Whistle recap</h2></div><span id="recapNarrativeStatus">Structured record</span></div>
         <p id="recapNarrative" class="live-recap-narrative">No approved written recap was saved for this game. The permanent structured record is available below.</p>
@@ -60,7 +65,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.22"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-game-recap-v7-60-3.js?v=7.60.3"></script>
+  <script src="js/live-game-recap-v7-63-0.js?v=7.63.0"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
 </body>
