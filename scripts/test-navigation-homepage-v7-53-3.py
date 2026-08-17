@@ -10,18 +10,18 @@ def read(path):
 cfg = json.loads(read('config/site-release.json'))
 assert re.fullmatch(r'\d+\.\d+\.\d+', cfg['version']), 'site version must use semantic x.y.z format'
 assert cfg['homepageRelease'] == '7.54.18'
-assert cfg['navigationRelease'] == '7.54.13'
+assert cfg['navigationRelease'] in ('7.54.13','7.62.2')
 assert cfg['storiesStatus'] == 'retired-preserved'
 
 shell = read('js/site-shell.js')
 assert 'label: "Stories"' not in shell
 assert 'makeHref("stories.html")' not in shell
-for label in ('Home', 'Rankings', 'Teams', 'Clubs', 'Tournaments'):
+for label in ('Home', 'Rankings', 'Organizations', 'Tournaments', 'WPI Live'):
     assert f'label: "{label}"' in shell
 assert 'label: "Methodology"' not in shell
 assert 'makeHref("methodology.html")' in shell
-assert 'href: "teams.html"' in shell
-assert 'teams.html#team-directory' in shell
+assert 'href: "organizations.html"' in shell
+assert 'Search WPI' in shell
 assert 'data-shell-search' in shell
 
 home = read('index.html')
@@ -35,7 +35,7 @@ assert 'id="wpiHomeSearch"' in home
 assert 'id="explore-wpi"' not in home
 assert 'href="stories.html"' not in home
 assert 'Latest updates' not in home
-assert 'site-shell.js?v=7.54.13' in home
+assert 'site-shell.js?v=7.62.2' in home
 assert 'homepage-wpi-v7-52-4.js?v=7.54.18' in home
 
 homepage_js = read('js/homepage-wpi-v7-52-4.js')
@@ -58,7 +58,7 @@ for path in html_files:
     text = path.read_text(encoding='utf-8', errors='ignore')
     if 'js/site-shell.js' not in text:
         missing.append(str(path.relative_to(ROOT)))
-    if 'site-shell.js?v=7.54.13' not in text or 'site-shell.css?v=7.54.13' not in text:
+    if 'site-shell.js?v=7.62.2' not in text or 'site-shell.css?v=7.54.13' not in text:
         stale.append(str(path.relative_to(ROOT)))
 assert not missing, f'HTML pages missing universal shell: {missing[:10]}'
 assert not stale, f'HTML pages using stale shell cache key: {stale[:10]}'

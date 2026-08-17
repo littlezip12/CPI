@@ -1,13 +1,12 @@
-/* WPI universal site shell — release 7.54.13 */
+/* WPI universal site shell — release 7.62.2 */
 (function () {
   const navItems = [
     { label: "Home", href: "index.html", matches: path => !path || path === "index.html" },
     { label: "Rankings", href: "rankings.html", matches: path => path === "rankings.html" || /^(12|14|16|18)u-(boys|girls)\.html$/.test(path) },
-    { label: "Teams", href: "teams.html", matches: path => path === "teams.html" || path === "team.html" || path === "team-profile.html" },
-    { label: "Clubs", href: "clubs.html", matches: path => path === "clubs.html" || path === "club.html" || path.startsWith("club/") },
-    { label: "Tournaments", href: "tournaments.html", matches: path => path === "tournaments.html" || path.startsWith("tournaments/") || ["jo-boys.html", "jo-girls.html", "quicksilver-cup-2026.html", "tournament-archive.html"].includes(path) }
+    { label: "Organizations", href: "organizations.html", matches: path => ["organizations.html", "organization.html", "team-hub.html", "teams.html", "team.html", "team-profile.html", "clubs.html", "club.html"].includes(path) || path.startsWith("club/") },
+    { label: "Tournaments", href: "tournaments.html", matches: path => path === "tournaments.html" || path.startsWith("tournaments/") || ["jo-boys.html", "jo-girls.html", "quicksilver-cup-2026.html", "tournament-archive.html"].includes(path) },
+    { label: "WPI Live", href: "live-following.html", matches: path => path.startsWith("live-") }
   ];
-
 
   function shellScriptUrl() {
     const scripts = Array.from(document.scripts);
@@ -43,11 +42,11 @@
           <span class="cpi-shell-logo-frame"><img class="cpi-shell-logo cpi-shell-logo--mark" src="${makeHref("assets/branding/wpi-logo-mark.png")}" alt="Water Polo Index"></span>
           <span class="cpi-shell-brand-text">
             <strong>Water Polo Index</strong>
-            <em>Rankings. Results. Club intelligence.</em>
+            <em>Rankings. Results. Live water polo.</em>
           </span>
         </a>
         <nav class="cpi-shell-links" aria-label="Primary navigation">${nav}</nav>
-        <a class="cpi-shell-search" href="${makeHref("teams.html#team-directory")}" data-shell-search><span>Find a team</span></a>
+        <a class="cpi-shell-search" href="${makeHref("organizations.html")}" data-shell-search aria-label="Search WPI"><span>Search WPI</span></a>
       </div>
     </header>`;
   }
@@ -60,11 +59,11 @@
           <a href="${makeHref("index.html")}" aria-label="Water Polo Index Home">
             <span class="cpi-shell-logo-frame cpi-shell-logo-frame--footer"><img class="cpi-shell-logo cpi-shell-logo--full" src="${makeHref("assets/branding/wpi-logo-full.png")}" alt="Water Polo Index"></span>
           </a>
-          <p>Independent and unofficial rankings, results, and club intelligence for youth water polo.</p>
+          <p>Independent and unofficial rankings, results, organization discovery, and live game coverage for youth and high school water polo.</p>
         </div>
-        <nav><strong>Explore</strong><a href="${makeHref("rankings.html")}">Rankings</a><a href="${makeHref("teams.html")}">Teams</a><a href="${makeHref("clubs.html")}">Clubs</a><a href="${makeHref("tournaments.html")}">Tournaments</a><a href="${makeHref("methodology.html")}">Methodology</a></nav>
+        <nav><strong>Explore</strong><a href="${makeHref("rankings.html")}">Rankings</a><a href="${makeHref("organizations.html")}">Organizations</a><a href="${makeHref("live-following.html")}">My Teams</a><a href="${makeHref("tournaments.html")}">Tournaments</a><a href="${makeHref("methodology.html")}">Methodology</a></nav>
         <nav><strong>Age Groups</strong><a href="${makeHref("rankings.html?group=12u-boys")}">12U Boys</a><a href="${makeHref("rankings.html?group=12u-girls")}">12U Girls</a><a href="${makeHref("rankings.html?group=14u-boys")}">14U Boys</a><a href="${makeHref("rankings.html?group=14u-girls")}">14U Girls</a><a href="${makeHref("rankings.html?group=16u-boys")}">16U Boys</a><a href="${makeHref("rankings.html?group=16u-girls")}">16U Girls</a><a href="${makeHref("rankings.html?group=18u-boys")}">18U Boys</a><a href="${makeHref("rankings.html?group=18u-girls")}">18U Girls</a></nav>
-        <div class="cpi-shell-footer-about"><strong>About WPI</strong><p>Water Polo Index connects rankings, tournament results, team profiles, and club information in one youth water polo platform.</p><a href="${makeHref("methodology.html")}">Learn more →</a></div>
+        <div class="cpi-shell-footer-about"><strong>About WPI</strong><p>Water Polo Index connects rankings, tournament results, stable team identities, organizations, and WPI Live in one water polo platform.</p><a href="${makeHref("methodology.html")}">Learn more →</a></div>
       </div>
       <div class="cpi-shell-footer-bottom">© ${year} Water Polo Index. All rights reserved.</div>
     </footer>`;
@@ -77,15 +76,6 @@
         element.setAttribute("aria-hidden", "true");
       }
     });
-  }
-
-  function focusTeamsSearch() {
-    const input = document.getElementById("teamSearch");
-    const directory = document.getElementById("team-directory");
-    if (!input || !directory) return false;
-    directory.scrollIntoView({ behavior: "smooth", block: "start" });
-    window.setTimeout(() => input.focus(), 320);
-    return true;
   }
 
   function installShell() {
@@ -101,11 +91,6 @@
       update();
       window.addEventListener("scroll", update, { passive: true });
     }
-
-    document.querySelector("[data-shell-search]")?.addEventListener("click", event => {
-      if (currentPath() === "teams.html" && focusTeamsSearch()) event.preventDefault();
-    });
-    if (currentPath() === "teams.html" && window.location.hash === "#team-directory") focusTeamsSearch();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", installShell, { once: true });

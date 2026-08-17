@@ -9,14 +9,14 @@ errors = []
 
 site = json.loads((ROOT / 'config/site-release.json').read_text(encoding='utf-8'))
 for key, expected in {
-    'brandRelease': '7.53.4',
-    'navigationRelease': '7.54.13',
-    'teamDirectoryRelease': '7.54.14',
-    'sectionLandingRelease': '7.54.15',
+    'brandRelease': {'7.53.4'},
+    'navigationRelease': {'7.54.13','7.62.2'},
+    'teamDirectoryRelease': {'7.54.14'},
+    'sectionLandingRelease': {'7.54.15'},
 }.items():
-    if site.get(key) != expected:
-        errors.append(f'config/site-release.json {key} must be {expected}')
-if site.get('version') not in {'7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1'}: errors.append('config/site-release.json version must preserve 7.54.18 or later')
+    if site.get(key) not in expected:
+        errors.append(f'config/site-release.json {key} must preserve an approved release marker: {sorted(expected)}')
+if site.get('version') not in {'7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2'}: errors.append('config/site-release.json version must preserve 7.54.18 or later')
 if site.get('publicExperienceRelease') not in {'7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0'}: errors.append('config/site-release.json publicExperienceRelease must preserve 7.54.18 or later')
 
 # Public-facing naming audit. Preserve the GitHub repository URL /CPI/ and internal identifiers such as window.CPI_RANKINGS.
@@ -40,16 +40,26 @@ if legacy:
     errors.append(f'public files retain legacy CPI branding: {legacy[:15]}')
 
 shell = (ROOT / 'js/site-shell.js').read_text(encoding='utf-8')
-for token in [
-    '{ label: "Teams", href: "teams.html"',
-    'teams.html#team-directory',
-    'makeHref("teams.html")',
-    'currentPath() === "teams.html"',
-]:
-    if token not in shell:
-        errors.append(f'js/site-shell.js missing Teams hub token: {token}')
+if site.get('version') == '7.62.2':
+    for token in [
+        '{ label: "Organizations", href: "organizations.html"',
+        '{ label: "WPI Live", href: "live-following.html"',
+        'makeHref("organizations.html")',
+        'Search WPI',
+    ]:
+        if token not in shell:
+            errors.append(f'js/site-shell.js missing unified navigation token: {token}')
+else:
+    for token in [
+        '{ label: "Teams", href: "teams.html"',
+        'teams.html#team-directory',
+        'makeHref("teams.html")',
+        'currentPath() === "teams.html"',
+    ]:
+        if token not in shell:
+            errors.append(f'js/site-shell.js missing Teams hub token: {token}')
 if 'href: "index.html#find-a-team"' in shell:
-    errors.append('Teams primary navigation still routes to the homepage search')
+    errors.append('Primary navigation still routes to the homepage-only team search')
 
 teams = (ROOT / 'teams.html').read_text(encoding='utf-8') if (ROOT / 'teams.html').exists() else ''
 for token in [
@@ -104,7 +114,7 @@ for path in ROOT.rglob('*.html'):
     text = path.read_text(encoding='utf-8', errors='ignore')
     for match in re.finditer(r'\?v=(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9.-]+)?)', text):
         cache_key = match.group(1)
-        accepted_cache_keys = {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1'}
+        accepted_cache_keys = {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2'}
         current_release = str(site.get('version') or '')
         current_hotfix_key = bool(current_release) and cache_key.startswith(current_release + '-')
         if cache_key not in accepted_cache_keys and not current_hotfix_key:
@@ -131,6 +141,6 @@ if errors:
 
 print('WPI 7.54.10 BRAND / TEAMS / SECTION LANDING TEST PASSED')
 print(' - Public-facing CPI naming is fully migrated to WPI while repository URLs and internal data identifiers remain stable')
-print(' - Teams has a dedicated searchable section home')
-print(' - Rankings, Teams, Clubs, Tournaments, and Methodology share one responsive landing-page system')
+print(' - The legacy Teams directory remains available while global discovery routes through Organizations')
+print(' - Rankings, legacy Teams/Clubs pages, Tournaments, and Methodology retain the responsive landing-page system')
 print(' - 724 rankings, 182 clubs, and 976 JO placements are unchanged')

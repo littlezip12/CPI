@@ -14,7 +14,7 @@ for path in html_files:
     depth = len(rel.parent.parts)
     prefix = '../' * depth
     css = f'{prefix}css/site-shell.css?v=7.54.13'
-    js = f'{prefix}js/site-shell.js?v=7.54.13'
+    js = f'{prefix}js/site-shell.js?v=7.62.2'
     if text.count('site-shell.css') != 1:
         errors.append(f'{rel}: expected exactly one site-shell.css reference')
     if text.count('site-shell.js') != 1:
@@ -24,7 +24,7 @@ for path in html_files:
     if js not in text:
         errors.append(f'{rel}: missing correct relative shell JS path {js}')
     palette_css = f'{prefix}css/command-palette.css?v=7.53.4'
-    palette_js = f'{prefix}js/command-palette.js?v=7.53.4'
+    palette_js = f'{prefix}js/command-palette.js?v=7.62.2'
     if text.count('command-palette.css') != 1 or palette_css not in text:
         errors.append(f'{rel}: missing one correct command-palette CSS reference')
     if text.count('command-palette.js') != 1 or palette_js not in text:
@@ -67,7 +67,7 @@ if 'depth +' in palette:
     errors.append('js/command-palette.js retains legacy depth-prefix URL construction')
 
 builder = (ROOT / 'scripts/build-club-pages.py').read_text(encoding='utf-8')
-for token in ['Water Polo Index', '../css/site-shell.css?v=7.54.13', '../js/site-shell.js?v=7.54.13', '../css/command-palette.css?v=7.53.4', '../js/command-palette.js?v=7.53.4']:
+for token in ['Water Polo Index', '../css/site-shell.css?v=7.54.13', '../js/site-shell.js?v=7.62.2', '../css/command-palette.css?v=7.53.4', '../js/command-palette.js?v=7.62.2']:
     if token not in builder:
         errors.append(f'scripts/build-club-pages.py missing required shell token: {token}')
 
