@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.62.5 Focused Release Check"
+echo "====================================="
+python3 scripts/test-live-public-matchup-identity-v7-62-5.py
+python3 scripts/test-live-public-game-publishing-v7-62-4.py
+python3 scripts/test-live-public-center-v7-62-3.py
+python3 scripts/test-universal-search-navigation-v7-62-2.py
+python3 scripts/test-live-stable-team-hubs-v7-62-1.py
+python3 scripts/test-live-unified-organization-discovery-v7-62-0.py
+python3 scripts/test-live-high-school-schedule-delivery-v7-61-1.py
+python3 scripts/test-live-public-supporter-scale-v7-60-3.py
+python3 scripts/test-live-team-directory-identity-v7-60-2.py
+node scripts/test-team-directory-logos-v7-53-6.js
+node --check js/live-public-center-v7-62-5.js
+node --check js/live-public-score-v7-62-5.js
+node --check js/live-public-publishing-v7-62-4.js
+node --check js/site-shell.js
+node --check js/command-palette.js
+bash -n release-check-clean
+echo
+echo "WPI Live 7.62.5 focused release check passed."

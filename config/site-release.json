@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.62.4",
-  "name": "Public Live Center & Scoreboard",
+  "version": "7.62.5",
+  "name": "Public Matchup Identity & Score Polish",
   "date": "2026-08-16",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds a public WPI Live center and public score-only game viewer for games explicitly marked public_team, keeps team-private games protected, routes anonymous public-game links away from scorer/member surfaces, and makes WPI Live a true public product surface without changing scoring authority or exposing roster/player/scorer data.",
+  "notes": "Polishes the public WPI Live scoreboard and score-only game viewer with both matchup logos, clearer side-by-side team identity, final-winner emphasis, resilient logo fallback behavior, and explicit score freshness while preserving the public_team privacy boundary and protected scoring authority.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -246,5 +246,7 @@
   "liveScoringPublicScoreOnlyViewRelease": "7.62.3",
   "liveScoringPublicGamePublishingRelease": "7.62.4",
   "liveScoringPublicGameSharingRelease": "7.62.4",
-  "liveScoringAudienceClarityRelease": "7.62.4"
+  "liveScoringAudienceClarityRelease": "7.62.4",
+  "liveScoringPublicMatchupIdentityRelease": "7.62.5",
+  "liveScoringPublicScorePresentationRelease": "7.62.5"
 }

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-public-v7-62-3.css?v=7.62.3">
+  <link rel="stylesheet" href="css/live-public-v7-62-5.css?v=7.62.5">
   <link rel="stylesheet" href="css/live-public-publishing-v7-62-4.css?v=7.62.4">
 </head>
 <body class="wpi-public-score-page">
@@ -22,7 +22,11 @@
     </section>
     <section class="public-score-card" id="publicScoreCard">
       <div class="public-score-status"><span id="publicScoreStatus">Loading</span><small id="publicScoreUpdated"></small></div>
-      <div class="public-score-matchup"><div><strong id="publicScoreHome">—</strong><span id="publicScoreHomeValue">0</span></div><b>–</b><div><strong id="publicScoreOpponent">—</strong><span id="publicScoreOpponentValue">0</span></div></div>
+      <div class="public-score-matchup">
+        <div id="publicScoreHomeSide" class="public-score-side"><img id="publicScoreHomeLogo" src="assets/logos/cpi-logo-fallback.svg" alt=""><strong id="publicScoreHome">—</strong><span id="publicScoreHomeValue">0</span><small id="publicScoreHomeResult" class="public-score-result"></small></div>
+        <b>–</b>
+        <div id="publicScoreOpponentSide" class="public-score-side public-score-side--opponent"><img id="publicScoreOpponentLogo" src="assets/branding/wpi-logo-mark.png" alt=""><strong id="publicScoreOpponent">—</strong><span id="publicScoreOpponentValue">0</span><small id="publicScoreOpponentResult" class="public-score-result"></small></div>
+      </div>
       <div class="public-score-clock"><strong id="publicScorePeriod">—</strong><span id="publicScoreClock">—</span></div>
       <p id="publicScoreDetails" class="public-score-details"></p>
     </section>
@@ -30,7 +34,7 @@
   </main>
   <script src="config/live-sandbox.js?v=7.57.20"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-public-score-v7-62-3.js?v=7.62.3"></script>
+  <script src="js/live-public-score-v7-62-5.js?v=7.62.5"></script>
   <script src="js/live-public-publishing-v7-62-4.js?v=7.62.4"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
