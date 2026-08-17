@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/live-game-v7-57-18.css?v=7.57.20">
   <link rel="stylesheet" href="css/live-game-v7-57-22.css?v=7.57.22">
   <link rel="stylesheet" href="css/live-game-v7-58-4.css?v=7.58.4">
+  <link rel="stylesheet" href="css/live-public-publishing-v7-62-4.css?v=7.62.4">
   <link rel="stylesheet" href="css/live-club-theme-v7-60-0.css?v=7.60.0">
 </head>
 <body class="wpi-live-sandbox-page">
@@ -55,9 +56,28 @@
           <div class="live-form-grid">
             <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
             <label>Message frequency<select id="messageFrequency"><option value="all" selected>Every recorded action</option><option value="major">Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
-            <label>Visibility<select id="visibility"><option value="team_private" selected>Team Private</option><option value="private_only">Private Only</option><option value="public_team">Public team-level scoring</option></select></label>
+            <label>Who can watch this game?
+              <select id="visibility">
+                <option value="team_private" selected>Team + followers</option>
+                <option value="private_only">Team members only</option>
+                <option value="public_team">Public on WPI Live</option>
+              </select>
+              <small id="visibilityHelp" class="live-visibility-help">Team + followers can watch through their signed-in WPI experience.</small>
+            </label>
           </div>
         </details>
+        <aside id="publicGameSharePanel" class="live-public-share-panel" hidden aria-live="polite">
+          <div>
+            <span>Public on WPI Live</span>
+            <strong>Share the score-only game page</strong>
+            <p id="publicGameShareHelp">WPI will publish only the score and game state. Rosters, player events, scorer identity and delivery data stay private.</p>
+          </div>
+          <div class="live-public-share-actions">
+            <a id="publicGameShareOpen" href="live.html" target="_blank" rel="noopener">Open public score</a>
+            <button id="publicGameShareCopy" type="button">Copy game link</button>
+          </div>
+          <small id="publicGameShareStatus"></small>
+        </aside>
       </div>
 
       <div class="live-panel live-panel--roster">
@@ -341,6 +361,7 @@
   <script src="js/live-club-theme-v7-60-0.js?v=7.60.0"></script>
   <script src="js/live-high-school-theme-registry-v7-61-0.js?v=7.61.0"></script>
   <script src="js/live-high-school-theme-v7-61-0.js?v=7.61.0"></script>
+  <script src="js/live-public-publishing-v7-62-4.js?v=7.62.4"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
 </body>

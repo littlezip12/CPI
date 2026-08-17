@@ -1,0 +1,73 @@
+
+/* WPI 7.62.4 — Public Game Publishing & Sharing */
+.live-visibility-help {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--live-muted, #64748b);
+}
+.live-public-share-panel {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid rgba(15, 118, 110, .24);
+  border-radius: 14px;
+  background: rgba(240, 253, 250, .8);
+}
+.live-public-share-panel[hidden] { display: none !important; }
+.live-public-share-panel > div:first-child {
+  display: grid;
+  gap: 3px;
+}
+.live-public-share-panel span {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.live-public-share-panel strong { font-size: 15px; }
+.live-public-share-panel p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.live-public-share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.live-public-share-actions a,
+.live-public-share-actions button,
+#publicScoreShareButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+}
+.live-public-share-actions a[aria-disabled="true"] {
+  pointer-events: none;
+  opacity: .55;
+}
+.live-public-share-panel > small,
+.public-score-share-status {
+  display: block;
+  min-height: 18px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+.public-score-note .public-live-actions button {
+  font: inherit;
+}
+@media (max-width: 640px) {
+  .live-public-share-actions > * { flex: 1 1 100%; }
+}
