@@ -1,0 +1,14 @@
+WPI 7.63.1 — Supporter Analytics Privacy Correction
+
+Primary correction:
+- supabase/migrations/202608170002_supporter_analytics_privacy_correction.sql
+- scripts/test-live-supporter-analytics-privacy-v7-63-1.py
+- release-check-live-7.63.1
+- VERSION.md
+- config/site-release.json
+- release-check
+
+Compatibility validation:
+- 7.63.0 regression and legacy release-version allowlists advance to recognize 7.63.1.
+
+Protected scoring / GroupMe / roster extraction files remain byte-stable.

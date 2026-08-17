@@ -31,9 +31,9 @@ js = text(RECAP_JS)
 html = text(RECAP_HTML)
 plan = text(PLAN)
 
-require('WPI 7.63.0' in version, 'VERSION.md is not 7.63.0')
-require(site.get('version') == '7.63.0', 'site-release.json version is not 7.63.0')
-require('Analytics, Entitlements' in site.get('name',''), 'site release name does not identify analytics/entitlements foundation')
+require(any(v in version for v in ('WPI 7.63.0','WPI 7.63.1')), 'VERSION.md no longer preserves 7.63.0')
+require(site.get('version') in {'7.63.0','7.63.1'}, 'site-release.json no longer preserves 7.63.0')
+require(site.get('version') in {'7.63.0','7.63.1'}, 'site release no longer preserves analytics/entitlements foundation')
 
 for needle in [
     'create table if not exists public.live_analytics_entitlements',

@@ -1,5 +1,5 @@
-# WPI 7.63.0 — Analytics, Entitlements & Monetization Foundation
+# WPI 7.63.1 — Supporter Analytics Privacy Correction
 
-WPI now has the first durable post-game analytics and commercial-access layer above the protected scoring foundation. Finalized canonical games generate server-derived analytics from `live_events`; reopening invalidates those analytics and refinalizing regenerates them. Detailed player/event recap data is no longer available merely because an authenticated user follows a team: ordinary Supporters retain team/result context while team members and future Team/Organization Insights entitlements receive detailed analytics.
+WPI 7.63.1 corrects the Supporter analytics boundary introduced in 7.63.0 while preserving the analytics and monetization foundation. Finalized canonical games generate server-derived analytics from `live_events`; reopening invalidates those analytics and refinalizing regenerates them. The `viewer`/Supporter role no longer counts as operational detailed-analytics access. Owner/Admin/Scorer retain detailed operational access; free Supporters receive result/period context only unless separately granted Team Insights or Organization Insights.
 
 The release also adds a Platform-Owner-controlled youth-safe advertiser, creative, campaign and private reporting schema with explicit approval, scope, exclusivity/share-of-voice, event tier, contract value and payment-status fields. No ads are rendered and no billing integration is enabled yet.
