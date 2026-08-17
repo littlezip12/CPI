@@ -1,0 +1,29 @@
+WPI 7.63.2 — Team Insights Experience
+
+Primary scope:
+- Team Insights pricing preview: $5/month / $50/year.
+- Free Supporter upgrade CTA from finalized game recap.
+- Canonical detailed game totals for authorized users.
+- Tournament / Scrimmage Weekend aggregate analytics.
+- Season team + player aggregate analytics.
+- Remaining direct live_game_analytics viewer RLS gap closed.
+- Recap hidden Loading/Error state CSS correction.
+- Billing remains disabled/preview-only.
+
+Primary files:
+- live-game-recap.html
+- css/live-game-recap-v7-63-2.css
+- js/live-game-recap-v7-63-2.js
+- live-team-insights.html
+- css/live-team-insights-v7-63-2.css
+- js/live-team-insights-v7-63-2.js
+- supabase/migrations/202608170003_team_insights_experience.sql
+- scripts/test-live-team-insights-experience-v7-63-2.py
+- release-check-live-7.63.2
+- VERSION.md
+- config/site-release.json
+- release-check
+- Historical release-test allowlists advanced to recognize 7.63.2 without changing protected product behavior.
+- PATCH_FILES_7.63.2.txt
+
+No protected scoring, GroupMe, roster extraction, Edge Function, secret, ad rendering, or billing-provider files are modified.

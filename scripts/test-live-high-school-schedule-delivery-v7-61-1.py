@@ -13,8 +13,8 @@ html=(ROOT/'live-dashboard.html').read_text()
 js=(ROOT/('js/live-dashboard-v7-62-0.js' if (ROOT/'js/live-dashboard-v7-62-0.js').exists() else 'js/live-dashboard-v7-61-1.js')).read_text()
 sql=(ROOT/'supabase/migrations/202608160003_high_school_schedule_optional_delivery.sql').read_text()
 
-req(any(v in version for v in ('7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1')),'VERSION no longer preserves 7.61.1 behavior')
-req(site.get('version') in {'7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1'},'site release no longer preserves 7.61.1 behavior')
+req(any(v in version for v in ('7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2')),'VERSION no longer preserves 7.61.1 behavior')
+req(site.get('version') in {'7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2'},'site release no longer preserves 7.61.1 behavior')
 for marker in [
   'liveScoringHighSchoolGameDayIntegrationRelease','liveScoringHighSchoolRegularSeasonRelease',
   'liveScoringOptionalDeliveryRelease','liveScoringWpiLiveOnlyDeliveryRelease','liveScoringHighSchoolScheduleSyncRelease']:

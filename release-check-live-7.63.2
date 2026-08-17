@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.63.2 Focused Release Check"
+echo "====================================="
+python3 scripts/test-live-team-insights-experience-v7-63-2.py
+# Preserve the 7.63.1 privacy correction and full 7.63.0 foundation.
+python3 scripts/test-live-supporter-analytics-privacy-v7-63-1.py
+python3 scripts/test-live-analytics-entitlements-monetization-v7-63-0.py
+./release-check-live-7.62.6
+echo
+echo "WPI Live 7.63.2 focused release check passed."

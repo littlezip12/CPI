@@ -1,5 +1,7 @@
-# WPI 7.63.1 — Supporter Analytics Privacy Correction
+# WPI 7.63.2 — Team Insights Experience
 
-WPI 7.63.1 corrects the Supporter analytics boundary introduced in 7.63.0 while preserving the analytics and monetization foundation. Finalized canonical games generate server-derived analytics from `live_events`; reopening invalidates those analytics and refinalizing regenerates them. The `viewer`/Supporter role no longer counts as operational detailed-analytics access. Owner/Admin/Scorer retain detailed operational access; free Supporters receive result/period context only unless separately granted Team Insights or Organization Insights.
+WPI 7.63.2 turns the 7.63.0/7.63.1 analytics and privacy foundation into the first real Team Insights product experience. Free Supporters keep the final score, period progression and a clear upgrade path. Team Insights is introduced at launch pricing of **$5/month or $50/year** (checkout remains disabled until the billing release). Owner/Admin/Scorer and explicitly entitled users can now move from canonical game analytics to tournament/weekend aggregates and full-season team/player totals.
 
-The release also adds a Platform-Owner-controlled youth-safe advertiser, creative, campaign and private reporting schema with explicit approval, scope, exclusivity/share-of-voice, event tier, contract value and payment-status fields. No ads are rendered and no billing integration is enabled yet.
+This release also closes the remaining direct `live_game_analytics` RLS gap so the `viewer`/Supporter role cannot read detailed analytics rows merely through team membership. The recap UI now correctly hides its loading/error states, shows a single prominent Team Insights upgrade CTA for free Supporters, and surfaces trusted server-derived game totals for detailed users.
+
+No Stripe checkout, payment collection, advertisements, Edge Function redeploys, new secrets, scoring-engine changes, or scale-tier purchases are enabled in 7.63.2.

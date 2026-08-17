@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.63.1",
-  "name": "Supporter Analytics Privacy Correction",
+  "version": "7.63.2",
+  "name": "Team Insights Experience",
   "date": "2026-08-17",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Corrects 7.63.0 so viewer/Supporter does not receive direct event/lineup/recap table access or detailed analytics merely through team membership. Owner/Admin/Scorer and explicit Team/Organization Insights entitlements retain detail access. No scoring, GroupMe, Edge Function, ad rendering, billing, or scale infrastructure changes.",
+  "notes": "Adds Team Insights launch pricing ($5/month or $50/year, preview only), a Supporter upgrade path, canonical game totals, tournament/weekend and season analytics, and closes the remaining direct live_game_analytics viewer RLS gap. No Stripe checkout, ad rendering, Edge Function redeploy, new secrets, scoring changes, or scale-tier purchase.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -253,7 +253,9 @@
   "liveScoringHomepagePublicScoreDiscoveryRelease": "7.62.6",
   "liveAnalyticsFoundationRelease": "7.63.0",
   "liveAnalyticsEntitlementRelease": "7.63.0",
-  "liveAnalyticsPrivacyBoundaryRelease": "7.63.0",
+  "liveAnalyticsPrivacyBoundaryRelease": "7.63.2",
   "liveCommercialSafetyRelease": "7.63.0",
-  "liveAdAccountingFoundationRelease": "7.63.0"
+  "liveAdAccountingFoundationRelease": "7.63.0",
+  "liveTeamInsightsExperienceRelease": "7.63.2",
+  "liveSubscriptionPricingRelease": "7.63.2"
 }

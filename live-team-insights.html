@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Team Insights | WPI Live</title>
+  <meta name="description" content="WPI Team Insights game, weekend, tournament and season analytics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/live-team-insights-v7-63-2.css?v=7.63.2">
+</head>
+<body class="wpi-team-insights-page">
+  <main class="insights-shell">
+    <header class="insights-hero">
+      <div class="insights-hero-copy">
+        <p>WPI Live · Team Insights</p>
+        <h1 id="insightsTeamName">Team Insights</h1>
+        <span id="insightsTeamContext">Game, weekend and season analytics in one place.</span>
+      </div>
+      <nav>
+        <a id="insightsBackLink" href="live-following.html">Back</a>
+        <a href="live-following.html">My Teams</a>
+        <a href="live.html">Live Scores</a>
+        <button id="insightsSignOut" type="button">Sign out</button>
+      </nav>
+    </header>
+
+    <section id="insightsLoading" class="insights-state">
+      <strong>Loading Team Insights…</strong>
+      <span>Checking access and loading trusted WPI game analytics.</span>
+    </section>
+
+    <section id="insightsError" class="insights-state insights-state--error" hidden>
+      <strong id="insightsErrorTitle">Team Insights unavailable</strong>
+      <span id="insightsErrorText">This team could not be loaded.</span>
+      <a href="live-following.html">Return to My Teams</a>
+    </section>
+
+    <section id="insightsLocked" hidden>
+      <article class="insights-upgrade-card">
+        <div>
+          <p>Supporter upgrade</p>
+          <h2>Unlock Team Insights</h2>
+          <span>Full game stats, player production, tournament/weekend totals and season analytics for this team.</span>
+        </div>
+        <div class="insights-pricing">
+          <div><strong id="monthlyPrice">$5</strong><span>/ month</span></div>
+          <div class="insights-pricing-featured"><strong id="annualPrice">$50</strong><span>/ year · save $10</span></div>
+        </div>
+        <button id="upgradePreviewButton" type="button">Upgrade to Team Insights</button>
+        <small id="upgradeStatus">Subscriptions are coming soon. No payment will be collected yet.</small>
+      </article>
+
+      <section class="insights-feature-grid">
+        <article><strong>Every finalized game</strong><span>Player stats, team totals, lineups and the complete event timeline.</span></article>
+        <article><strong>Weekend &amp; tournament totals</strong><span>Combined record, goals for/against and player production across an event.</span></article>
+        <article><strong>Season analytics</strong><span>Season record, team trends and cumulative player totals for the team.</span></article>
+        <article><strong>Ad-free analytics</strong><span>Paid analytics removes rotating and recap-interstitial advertising when monetization launches.</span></article>
+      </section>
+    </section>
+
+    <section id="insightsContent" hidden>
+      <section class="insights-toolbar">
+        <div><p>Analytics scope</p><h2>Season overview</h2></div>
+        <label><span>Season</span><select id="seasonSelect"></select></label>
+      </section>
+
+      <section id="seasonRecord" class="insights-kpis"></section>
+
+      <section class="insights-grid insights-grid--two">
+        <article class="insights-panel">
+          <div class="insights-heading"><div><p>Team totals</p><h2>Season production</h2></div><span id="seasonShootingPct">—</span></div>
+          <div id="seasonTeamTotals" class="insights-stat-grid"></div>
+        </article>
+        <article class="insights-panel">
+          <div class="insights-heading"><div><p>Players</p><h2>Season leaders</h2></div><span id="seasonPlayerCount">0 players</span></div>
+          <div id="seasonPlayerTotals" class="insights-player-list"></div>
+        </article>
+      </section>
+
+      <article class="insights-panel">
+        <div class="insights-heading"><div><p>Weekend / Tournament</p><h2>Event performance</h2></div><span id="seriesCount">0 events</span></div>
+        <div id="seriesCards" class="insights-series-grid"></div>
+      </article>
+
+      <article id="selectedSeriesPanel" class="insights-panel" hidden>
+        <div class="insights-heading"><div><p id="selectedSeriesType">Event analytics</p><h2 id="selectedSeriesName">Selected event</h2></div><button id="clearSeries" type="button">Back to season</button></div>
+        <div id="selectedSeriesRecord" class="insights-kpis insights-kpis--compact"></div>
+        <div id="selectedSeriesTotals" class="insights-stat-grid"></div>
+        <h3>Player totals</h3>
+        <div id="selectedSeriesPlayers" class="insights-player-list"></div>
+      </article>
+
+      <article class="insights-panel">
+        <div class="insights-heading"><div><p>Games</p><h2 id="gamesHeading">Season games</h2></div><span id="gameCount">0 games</span></div>
+        <div id="gameList" class="insights-game-list"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="config/live-sandbox.js?v=7.57.22"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-team-insights-v7-63-2.js?v=7.63.2"></script>
+  <script defer src="js/site-shell.js?v=7.62.3"></script>
+  <script defer src="js/command-palette.js?v=7.62.2"></script>
+</body>
+</html>
