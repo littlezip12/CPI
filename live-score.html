@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>Live Score | Water Polo Index</title>
+  <meta name="description" content="Public WPI Live score view.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/live-public-v7-62-3.css?v=7.62.3">
+</head>
+<body class="wpi-public-score-page">
+  <main class="public-score-shell">
+    <a class="public-score-back" href="live.html">← WPI Live</a>
+    <section id="publicScoreHero" class="public-score-hero">
+      <div class="public-score-org"><img id="publicScoreLogo" src="assets/logos/cpi-logo-fallback.svg" alt=""><div><p id="publicScoreOrganization" class="public-live-kicker">WPI Live</p><h1 id="publicScoreTeam">Loading game…</h1><p id="publicScoreMeta">Public score view</p></div></div>
+      <a id="publicScoreTeamHub" href="organizations.html">Team hub</a>
+    </section>
+    <section class="public-score-card" id="publicScoreCard">
+      <div class="public-score-status"><span id="publicScoreStatus">Loading</span><small id="publicScoreUpdated"></small></div>
+      <div class="public-score-matchup"><div><strong id="publicScoreHome">—</strong><span id="publicScoreHomeValue">0</span></div><b>–</b><div><strong id="publicScoreOpponent">—</strong><span id="publicScoreOpponentValue">0</span></div></div>
+      <div class="public-score-clock"><strong id="publicScorePeriod">—</strong><span id="publicScoreClock">—</span></div>
+      <p id="publicScoreDetails" class="public-score-details"></p>
+    </section>
+    <section class="public-live-panel public-score-note"><h2>Public score only</h2><p>This page intentionally shows the game score and state without exposing rosters, player events, scorer identity, GroupMe delivery data or team-private information.</p><div class="public-live-actions"><a href="live-following.html">Open My Teams</a><a href="live.html">All public scores</a></div></section>
+  </main>
+  <script src="config/live-sandbox.js?v=7.57.20"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-public-score-v7-62-3.js?v=7.62.3"></script>
+  <script defer src="js/site-shell.js?v=7.62.3"></script>
+  <script defer src="js/command-palette.js?v=7.62.2"></script>
+</body>
+</html>

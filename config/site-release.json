@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.62.2",
-  "name": "Universal Search & Navigation Cohesion",
+  "version": "7.62.3",
+  "name": "Public Live Center & Scoreboard",
   "date": "2026-08-16",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Unifies the global WPI shell and Cmd+K search around Organizations and stable Team Hubs, indexes all 185 organizations and 736 team identities including high schools, adds WPI Live to primary navigation, and preserves legacy ranking/history pages without changing scoring or permissions.",
+  "notes": "Adds a public WPI Live center and public score-only game viewer for games explicitly marked public_team, keeps team-private games protected, routes anonymous public-game links away from scorer/member surfaces, and makes WPI Live a true public product surface without changing scoring authority or exposing roster/player/scorer data.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -42,7 +42,7 @@
   "teamExperienceRelease": "7.53.1",
   "sponsorFrameworkRelease": "7.53.2",
   "commercialFoundationRelease": "7.53.2",
-  "navigationRelease": "7.62.2",
+  "navigationRelease": "7.62.3",
   "publicExperienceRelease": "7.56.2",
   "storiesStatus": "retired-preserved",
   "teamDirectoryRelease": "7.54.14",
@@ -240,5 +240,8 @@
   "liveScoringPublicOrganizationLiveFeedRelease": "7.62.0",
   "liveScoringStableTeamHubRelease": "7.62.1",
   "liveScoringTeamHubFollowingBridgeRelease": "7.62.1",
-  "liveScoringUniversalSearchNavigationRelease": "7.62.2"
+  "liveScoringUniversalSearchNavigationRelease": "7.62.2",
+  "liveScoringPublicLiveCenterRelease": "7.62.3",
+  "liveScoringPublicScoreboardRelease": "7.62.3",
+  "liveScoringPublicScoreOnlyViewRelease": "7.62.3"
 }

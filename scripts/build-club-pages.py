@@ -200,7 +200,7 @@ def render_page(club):
   </main>
   <script>window.location.replace({json.dumps(target)});</script>
   <script defer src="../js/command-palette.js?v=7.62.2"></script>
-  <script defer src="../js/site-shell.js?v=7.62.2"></script>
+  <script defer src="../js/site-shell.js?v=7.62.3"></script>
 </body>
 </html>"""
 

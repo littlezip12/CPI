@@ -1,11 +1,11 @@
-/* WPI universal site shell — release 7.62.2 */
+/* WPI universal site shell — release 7.62.3 */
 (function () {
   const navItems = [
     { label: "Home", href: "index.html", matches: path => !path || path === "index.html" },
     { label: "Rankings", href: "rankings.html", matches: path => path === "rankings.html" || /^(12|14|16|18)u-(boys|girls)\.html$/.test(path) },
     { label: "Organizations", href: "organizations.html", matches: path => ["organizations.html", "organization.html", "team-hub.html", "teams.html", "team.html", "team-profile.html", "clubs.html", "club.html"].includes(path) || path.startsWith("club/") },
     { label: "Tournaments", href: "tournaments.html", matches: path => path === "tournaments.html" || path.startsWith("tournaments/") || ["jo-boys.html", "jo-girls.html", "quicksilver-cup-2026.html", "tournament-archive.html"].includes(path) },
-    { label: "WPI Live", href: "live-following.html", matches: path => path.startsWith("live-") }
+    { label: "WPI Live", href: "live.html", matches: path => path === "live.html" || path === "live-score.html" || path.startsWith("live-") }
   ];
 
   function shellScriptUrl() {
@@ -61,7 +61,7 @@
           </a>
           <p>Independent and unofficial rankings, results, organization discovery, and live game coverage for youth and high school water polo.</p>
         </div>
-        <nav><strong>Explore</strong><a href="${makeHref("rankings.html")}">Rankings</a><a href="${makeHref("organizations.html")}">Organizations</a><a href="${makeHref("live-following.html")}">My Teams</a><a href="${makeHref("tournaments.html")}">Tournaments</a><a href="${makeHref("methodology.html")}">Methodology</a></nav>
+        <nav><strong>Explore</strong><a href="${makeHref("rankings.html")}">Rankings</a><a href="${makeHref("organizations.html")}">Organizations</a><a href="${makeHref("live.html")}">Live Scores</a><a href="${makeHref("live-following.html")}">My Teams</a><a href="${makeHref("tournaments.html")}">Tournaments</a><a href="${makeHref("methodology.html")}">Methodology</a></nav>
         <nav><strong>Age Groups</strong><a href="${makeHref("rankings.html?group=12u-boys")}">12U Boys</a><a href="${makeHref("rankings.html?group=12u-girls")}">12U Girls</a><a href="${makeHref("rankings.html?group=14u-boys")}">14U Boys</a><a href="${makeHref("rankings.html?group=14u-girls")}">14U Girls</a><a href="${makeHref("rankings.html?group=16u-boys")}">16U Boys</a><a href="${makeHref("rankings.html?group=16u-girls")}">16U Girls</a><a href="${makeHref("rankings.html?group=18u-boys")}">18U Boys</a><a href="${makeHref("rankings.html?group=18u-girls")}">18U Girls</a></nav>
         <div class="cpi-shell-footer-about"><strong>About WPI</strong><p>Water Polo Index connects rankings, tournament results, stable team identities, organizations, and WPI Live in one water polo platform.</p><a href="${makeHref("methodology.html")}">Learn more →</a></div>
       </div>
