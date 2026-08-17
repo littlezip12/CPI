@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-team-insights-v7-63-2.css?v=7.63.2">
+  <link rel="stylesheet" href="css/live-team-insights-v7-63-3.css?v=7.63.3">
 </head>
 <body class="wpi-team-insights-page">
   <main class="insights-shell">
@@ -83,6 +83,23 @@
         </article>
       </section>
 
+      <article class="insights-panel" id="playerAnalyticsPanel">
+        <div class="insights-heading">
+          <div><p>Player analytics</p><h2>Compare player performance</h2></div>
+          <span>Team Insights</span>
+        </div>
+        <p class="insights-player-intro">Choose a season, tournament/weekend or individual game, then compare up to four players side by side. Shooting percentage uses field goals divided by tracked field shots; shootout attempts are shown separately.</p>
+        <div class="insights-player-controls">
+          <label><span>Stats scope</span><select id="playerScopeSelect"></select></label>
+          <label><span>Player</span><select id="primaryPlayerSelect"></select></label>
+          <label><span>Add comparison</span><select id="comparisonPlayerSelect"></select></label>
+          <button id="addComparisonPlayer" type="button">Add player</button>
+        </div>
+        <div id="comparisonPlayerChips" class="insights-comparison-chips"></div>
+        <div id="playerAnalyticsLoading" class="insights-inline-state" hidden>Loading player analytics…</div>
+        <div id="playerComparison" class="insights-comparison-wrap"></div>
+      </article>
+
       <article class="insights-panel">
         <div class="insights-heading"><div><p>Weekend / Tournament</p><h2>Event performance</h2></div><span id="seriesCount">0 events</span></div>
         <div id="seriesCards" class="insights-series-grid"></div>
@@ -105,7 +122,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.22"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-team-insights-v7-63-2.js?v=7.63.2"></script>
+  <script src="js/live-team-insights-v7-63-3.js?v=7.63.3"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
 </body>

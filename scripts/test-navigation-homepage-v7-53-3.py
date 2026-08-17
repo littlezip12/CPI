@@ -10,7 +10,7 @@ def read(path):
 cfg = json.loads(read('config/site-release.json'))
 assert re.fullmatch(r'\d+\.\d+\.\d+', cfg['version']), 'site version must use semantic x.y.z format'
 assert cfg['homepageRelease'] == '7.54.18'
-assert cfg['navigationRelease'] in ('7.54.13','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2')
+assert cfg['navigationRelease'] in ('7.54.13','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3')
 assert cfg['storiesStatus'] == 'retired-preserved'
 
 shell = read('js/site-shell.js')

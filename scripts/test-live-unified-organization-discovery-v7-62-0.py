@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit('FAIL: '+msg)
 release=(ROOT/'VERSION.md').read_text()
-req(any(v in release for v in ('7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2')),'VERSION must preserve 7.62.0 or later')
+req(any(v in release for v in ('7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3')),'VERSION must preserve 7.62.0 or later')
 data=json.loads((ROOT/'data/live/organization-directory-v7-62-0.json').read_text())
 req(data['counts']['organizations']==185,'expected 185 organizations')
 req(data['counts']['clubs']==182,'expected 182 clubs')

@@ -19,7 +19,7 @@ sql=read('supabase/migrations/202608140003_self_service_club_onboarding.sql')
 css=read('css/live-club-onboarding-v7-60-1.css')
 
 req(read('VERSION.md').strip() in {'# WPI 7.60.1 — Self-Service Club Onboarding','# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'VERSION mismatch')
-req(site.get('version') in {'7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2'},'release metadata must preserve 7.60.1 or later')
+req(site.get('version') in {'7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3'},'release metadata must preserve 7.60.1 or later')
 for key in ('liveScoringSelfServiceClubOnboardingRelease','liveScoringClubClaimReviewRelease','liveScoringClubOnboardingAuthRelease','liveScoringFirstTeamProvisioningRelease'):
     req(site.get(key)=='7.60.1',f'missing 7.60.1 marker {key}')
 for key in ('liveScoringClubBrandingPlatformRelease','liveScoringThemeRegistryRelease','liveScoringCanonicalClubBrandingRelease','liveScoringThemeActivationSafetyRelease'):

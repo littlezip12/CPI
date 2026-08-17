@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/live-game-recap-v7-58-4.css?v=7.58.7">
-  <link rel="stylesheet" href="css/live-game-recap-v7-63-2.css?v=7.63.2">
+  <link rel="stylesheet" href="css/live-game-recap-v7-63-3.css?v=7.63.3">
 </head>
 <body class="wpi-live-recap-page">
   <main class="live-recap-shell">
@@ -54,11 +54,11 @@
       </article>
 
       <section class="live-recap-grid">
-        <article class="live-recap-panel"><div class="live-recap-panel-heading"><div><p>Lineups</p><h2>Starters by period</h2></div></div><div id="recapLineups" class="live-recap-lineup-list"></div></article>
-        <article class="live-recap-panel"><div class="live-recap-panel-heading"><div><p>Player stats</p><h2>Tracked production</h2></div></div><div id="recapPlayerStats" class="live-recap-stats-list"></div></article>
+        <article class="live-recap-panel" id="recapPrivateLineupsPanel"><div class="live-recap-panel-heading"><div><p>Lineups</p><h2>Starters by period</h2></div></div><div id="recapLineups" class="live-recap-lineup-list"></div></article>
+        <article class="live-recap-panel" id="recapPrivatePlayerStatsPanel"><div class="live-recap-panel-heading"><div><p>Player stats</p><h2>Tracked production</h2></div></div><div id="recapPlayerStats" class="live-recap-stats-list"></div></article>
       </section>
 
-      <article class="live-recap-panel">
+      <article class="live-recap-panel" id="recapPrivateTimelinePanel">
         <div class="live-recap-panel-heading"><div><p>Complete timeline</p><h2>Scoring &amp; game events</h2></div><span id="recapEventCount">0 events</span></div>
         <div id="recapTimeline" class="live-recap-timeline"></div>
       </article>
@@ -72,7 +72,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.22"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-game-recap-v7-63-2.js?v=7.63.2"></script>
+  <script src="js/live-game-recap-v7-63-3.js?v=7.63.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
 </body>

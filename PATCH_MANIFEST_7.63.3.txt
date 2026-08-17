@@ -1,0 +1,18 @@
+WPI 7.63.3 — Player Analytics & Supporter Recap Simplification
+
+Product changes
+- Hide private Lineups / Player Stats / Complete Timeline panels from free Supporters.
+- Preserve one clear Team Insights upgrade CTA on the Supporter recap.
+- Add Player Analytics scope selector: Season / Tournament or Weekend / Game.
+- Add one primary player plus up to three comparison players.
+- Compare field shooting efficiency and deeper recorded production.
+- Keep shootout attempts/results separate from field shooting percentage.
+
+Data/security
+- New authenticated RPC: live_team_player_insights_v1.
+- Detailed access remains Owner/Admin/Scorer or Team Insights/Organization Insights only.
+- Player scope data is server-enforced and derived from current finalized game analytics plus canonical active events.
+
+Commercial/operations
+- $5/month / $50/year remains preview-only.
+- No Stripe, advertisements, new secrets, Edge Function redeploy, hosting migration, or scale-tier purchase.
