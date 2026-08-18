@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Weekend Results | WPI Live</title>
+  <meta name="description" content="WPI Live tournament and weekend results for a followed team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/live-ad-delivery-v7-63-6.css?v=7.63.6">
+  <link rel="stylesheet" href="css/live-event-recap-v7-63-6.css?v=7.63.6">
+  <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6">
+</head>
+<body class="wpi-event-recap-page">
+  <main class="event-recap-shell">
+    <header class="event-recap-hero">
+      <div class="event-recap-identity"><img id="eventTeamLogo" src="assets/branding/wpi-logo-mark.png" alt=""><div><p>WPI Live · Tournament / Weekend</p><h1 id="eventName">Loading event…</h1><span id="eventContext">Permanent team results</span></div></div>
+      <nav><a id="eventTeamInsights" href="live-team-insights.html">Team Insights</a><a href="live-following.html">My Teams</a><button id="eventSignOut" type="button">Sign out</button></nav>
+    </header>
+
+    <section id="eventLoading" class="event-recap-state"><strong>Loading event results…</strong><span>Building the permanent team record from finalized WPI Live games.</span></section>
+    <section id="eventError" class="event-recap-state event-recap-state--error" hidden><strong>Event unavailable</strong><span id="eventErrorText">This tournament or weekend could not be loaded.</span><a href="live-following.html">Return to My Teams</a></section>
+
+    <section id="eventContent" hidden>
+      <div id="eventSponsorBanner" class="wpi-live-ad-slot" hidden></div>
+      <section class="event-recap-record-card">
+        <div><small>Record</small><strong id="eventRecord">0-0</strong></div>
+        <div><small>Games</small><strong id="eventGames">0</strong></div>
+        <div><small>Goals for</small><strong id="eventGoalsFor">0</strong></div>
+        <div><small>Goals against</small><strong id="eventGoalsAgainst">0</strong></div>
+        <div><small>Differential</small><strong id="eventDifferential">0</strong></div>
+      </section>
+
+      <section class="event-recap-panel">
+        <div class="event-recap-heading"><div><p>Results</p><h2 id="eventResultsTitle">Game-by-game</h2></div><span id="eventSeason">Season</span></div>
+        <div id="eventGameList" class="event-recap-games"></div>
+      </section>
+
+      <section class="event-recap-upgrade">
+        <div><p>Team Insights</p><h2>Go deeper than the record</h2><span>Compare player production, shooting efficiency and full game/weekend/season analytics.</span></div>
+        <div><strong>$5/month</strong><span>or $50/year</span></div>
+        <a id="eventUpgradeLink" href="live-team-insights.html">Open Team Insights</a>
+      </section>
+    </section>
+  </main>
+  <script src="config/live-sandbox.js?v=7.57.22"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-ad-delivery-v7-63-6.js?v=7.63.6"></script>
+  <script src="js/live-event-recap-v7-63-6.js?v=7.63.6"></script>
+  <script defer src="js/site-shell.js?v=7.62.3"></script>
+  <script defer src="js/command-palette.js?v=7.62.2"></script>
+</body>
+</html>

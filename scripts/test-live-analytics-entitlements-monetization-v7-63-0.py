@@ -31,9 +31,9 @@ js = text(RECAP_JS)
 html = text(RECAP_HTML)
 plan = text(PLAN)
 
-require(any(v in version for v in ('WPI 7.63.0','WPI 7.63.1','WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5')), 'VERSION.md no longer preserves 7.63.0')
-require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5'}, 'site-release.json no longer preserves 7.63.0')
-require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5'}, 'site release no longer preserves analytics/entitlements foundation')
+require(any(v in version for v in ('WPI 7.63.0','WPI 7.63.1','WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6')), 'VERSION.md no longer preserves 7.63.0')
+require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6'}, 'site-release.json no longer preserves 7.63.0')
+require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6'}, 'site release no longer preserves analytics/entitlements foundation')
 
 for needle in [
     'create table if not exists public.live_analytics_entitlements',

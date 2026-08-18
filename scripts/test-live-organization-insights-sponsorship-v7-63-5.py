@@ -16,8 +16,8 @@ team_html=read('live-team-insights.html'); team_js=read('js/live-team-insights-v
 premium_cta_css=read('css/live-team-insights-cta-v7-63-5.css')
 action_button_css=read('css/live-action-buttons-v7-63-5.css')
 dashboard_html=read('live-dashboard.html'); following_html=read('live-following.html')
-req('WPI 7.63.5' in version,'VERSION missing 7.63.5')
-req(site.get('version')=='7.63.5','site release mismatch')
+req(any(v in version for v in ('WPI 7.63.5','WPI 7.63.6')),'VERSION missing 7.63.5+')
+req(site.get('version') in {'7.63.5','7.63.6'},'site release mismatch')
 for k in ('liveOrganizationInsightsRelease','liveSponsorshipOperationsRelease','liveDirectAdDeliveryRelease','liveAdAccountingScaleRelease'): req(site.get(k)=='7.63.5',f'missing marker {k}')
 # Organization Insights access must be entitlement/server enforced.
 for token in ('live_has_organization_insights_access_v1','live_organization_insights_directory_v1','live_organization_insights_overview_v1'):
@@ -54,9 +54,9 @@ req('!hasDetailedAnalytics' in recap_js and 'sessionStorage.getItem(recapAdKey)'
 req('live.recap.interstitial' in ad_js,'recap ad placement missing')
 # Team Insights must read as a distinct premium destination in authenticated navigation.
 for page_name,page in (('dashboard',dashboard_html),('supporter hub',following_html),('recap',recap_html),('team insights',team_html),('organization insights',org_html),('commercial',commercial_html)):
-    req('live-action-buttons-v7-63-5.css?v=7.63.5-ui3' in page,f'{page_name} missing cache-busted canonical action-button stylesheet')
+    req(any(x in page for x in ('live-action-buttons-v7-63-5.css?v=7.63.5-ui3','live-action-buttons-v7-63-5.css?v=7.63.6')),f'{page_name} missing cache-busted canonical action-button stylesheet')
     stylesheet_hrefs=re.findall(r'<link[^>]+rel=[\"\']stylesheet[\"\'][^>]+href=[\"\']([^\"\']+)',page,re.I)
-    req(stylesheet_hrefs and stylesheet_hrefs[-1]=='css/live-action-buttons-v7-63-5.css?v=7.63.5-ui3',f'{page_name} canonical action-button stylesheet must load last')
+    req(stylesheet_hrefs and stylesheet_hrefs[-1] in ('css/live-action-buttons-v7-63-5.css?v=7.63.5-ui3','css/live-action-buttons-v7-63-5.css?v=7.63.6'),f'{page_name} canonical action-button stylesheet must load last')
 req('#f5dc72' in action_button_css and '#d6a62d' in action_button_css and 'font-weight:900!important' in action_button_css,'Unified premium/bold action-button treatment missing')
 req('live-recap-header-actions' in action_button_css and 'org-insights-hero' in action_button_css and 'commercial-hero' in action_button_css,'Unified action-button coverage missing')
 # Team/Organization Insights are ad-free; organization navigation is available only with the higher entitlement.

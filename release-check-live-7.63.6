@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.63.6 Focused Release Check"
+echo "====================================="
+python3 scripts/test-live-sponsorship-validation-event-inventory-v7-63-6.py
+python3 scripts/test-live-organization-insights-sponsorship-v7-63-5.py
+python3 scripts/test-live-promotional-access-billing-readiness-v7-63-4.py
+python3 scripts/test-live-player-analytics-comparison-v7-63-3.py
+python3 scripts/test-live-team-insights-experience-v7-63-2.py
+python3 scripts/test-live-supporter-analytics-privacy-v7-63-1.py
+python3 scripts/test-live-analytics-entitlements-monetization-v7-63-0.py
+./release-check-live-7.62.6
+echo
+echo "WPI Live 7.63.6 focused release check passed."
