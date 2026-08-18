@@ -1,0 +1,25 @@
+/* WPI 7.63.5 visual polish — make Team Insights read as the premium analytics destination. */
+body header a[href^="live-team-insights.html"],
+body .live-dashboard-account a[href^="live-team-insights.html"],
+body .live-recap-header-actions a[href^="live-team-insights.html"]{
+  background:linear-gradient(135deg,#f5dc72 0%,#d6a62d 100%)!important;
+  border-color:#c49319!important;
+  color:#0b2948!important;
+  box-shadow:0 7px 18px rgba(111,78,6,.18);
+  font-weight:900!important;
+  text-decoration:none!important;
+  transition:transform .16s ease,box-shadow .16s ease,filter .16s ease;
+}
+body header a[href^="live-team-insights.html"]:hover,
+body .live-dashboard-account a[href^="live-team-insights.html"]:hover,
+body .live-recap-header-actions a[href^="live-team-insights.html"]:hover{
+  filter:brightness(1.035);
+  transform:translateY(-1px);
+  box-shadow:0 10px 22px rgba(111,78,6,.23);
+}
+body header a[href^="live-team-insights.html"]:focus-visible,
+body .live-dashboard-account a[href^="live-team-insights.html"]:focus-visible,
+body .live-recap-header-actions a[href^="live-team-insights.html"]:focus-visible{
+  outline:3px solid rgba(20,90,150,.28);
+  outline-offset:2px;
+}
