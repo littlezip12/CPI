@@ -15,6 +15,7 @@ following_html=read('live-following.html'); following_js=read('js/live-following
 commercial_html=read('live-commercial.html'); commercial_js=read('js/live-commercial-v7-63-6.js')
 ad_js=read('js/live-ad-delivery-v7-63-6.js')
 score_html=read('live-score.html'); recap_html=read('live-game-recap.html')
+game_html=read('live-game.html'); supporter_game_ads=read('js/live-game-supporter-ads-v7-63-6.js')
 req('WPI 7.63.6' in version,'VERSION missing 7.63.6')
 req(site.get('version')=='7.63.6','site release mismatch')
 for k in ('liveSponsorshipValidationRelease','liveEventInventoryRelease','liveWeekendBannerRelease','liveAdPlacementReportingRelease','liveHouseCampaignValidationRelease'):
@@ -52,6 +53,10 @@ for network in ('googletag','adsbygoogle','doubleclick','adservice.google','preb
 # Existing game/recap surfaces use the new ad runtime and paid suppression remains intact.
 req('live-ad-delivery-v7-63-6.js?v=7.63.6' in score_html,'public score missing 7.63.6 ad runtime')
 req('live-ad-delivery-v7-63-6.js?v=7.63.6' in recap_html,'recap missing 7.63.6 ad runtime')
+req('supporterGameSponsorBanner' in game_html and 'live-game-supporter-ads-v7-63-6.js?v=7.63.6' in game_html,'authenticated Supporter game banner surface missing')
+req('is-live-viewer' in supporter_game_ads and 'live_analytics_access_level_v1' in supporter_game_ads,'Supporter game ad must require read-only viewer state and suppress paid analytics')
+req('team_insights' in supporter_game_ads and 'organization_insights' in supporter_game_ads,'paid Team/Organization Insights suppression missing on Supporter game ad')
+req('scorePeriodLabel' in supporter_game_ads and 'gameStatus' in supporter_game_ads,'Supporter game ad rotation must follow natural game-state changes')
 # PII/card data must not enter telemetry or event summaries.
 for forbidden in ('viewer_email','user_agent','ip_address','card_number','cvv','billing_address','home_address'):
     req(forbidden not in sql.lower(),f'forbidden sensitive field introduced: {forbidden}')
