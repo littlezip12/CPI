@@ -9,6 +9,7 @@ def read(rel):
 version=read('VERSION.md'); site=json.loads(read('config/site-release.json'))
 sql=read('supabase/migrations/202608170007_sponsorship_validation_event_inventory.sql')
 repair_sql=read('supabase/migrations/202608170008_house_validation_activation_order_correction.sql')
+ambiguity_fix_sql=read('supabase/migrations/202608170009_house_validation_campaign_id_ambiguity_correction.sql')
 event_html=read('live-event-recap.html'); event_js=read('js/live-event-recap-v7-63-6.js'); event_css=read('css/live-event-recap-v7-63-6.css')
 following_html=read('live-following.html'); following_js=read('js/live-following-v7-63-6.js')
 commercial_html=read('live-commercial.html'); commercial_js=read('js/live-commercial-v7-63-6.js')
@@ -41,6 +42,8 @@ req('Nothing activates automatically with the migration.' in commercial_html,'mi
 req("'WPI House Validation','draft'" in sql,'house validation must stage new campaign before creative attachment')
 req("set status='active'" in sql and sql.index("set status='active'") > sql.index('insert into public.live_ad_campaign_creatives'), 'house validation must activate only after approved creatives are attached')
 req('live_ad_admin_provision_house_validation_v1' in repair_sql and "'WPI House Validation','draft'" in repair_sql,'installed-database house validation repair migration missing')
+req('v_house_campaign_id uuid;' in ambiguity_fix_sql and '\n  campaign_id uuid;' not in ambiguity_fix_sql,'house validation ambiguity correction must avoid campaign_id PL/pgSQL variable collision')
+req('values(v_house_campaign_id,v_banner_id,1)' in ambiguity_fix_sql and 'where c.id=v_house_campaign_id' in ambiguity_fix_sql,'house validation ambiguity correction not wired through campaign writes')
 req('live_ad_admin_set_campaign_status_v1' in sql and 'campaign-toggle' in commercial_js,'campaign pause/reactivation control missing')
 # House creative is youth-safe and no external programmatic network is enabled.
 req("'wpi-house'" in sql and "'approved',true" in sql,'WPI house advertiser must be explicitly approved/youth-safe')
