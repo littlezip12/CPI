@@ -1,4 +1,10 @@
 # WPI Live Edge Function configuration.
-# The GroupMe function is callable only with a valid signed-in Supabase user JWT.
+# External Stripe webhooks verify Stripe signatures internally and therefore do not use Supabase JWT verification.
 [functions.groupme-post]
 verify_jwt = true
+
+[functions.team-insights-billing]
+verify_jwt = true
+
+[functions.stripe-subscription-webhook]
+verify_jwt = false

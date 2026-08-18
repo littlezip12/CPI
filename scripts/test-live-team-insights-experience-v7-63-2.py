@@ -32,10 +32,10 @@ insights_html = read('live-team-insights.html')
 insights_js = read('js/live-team-insights-v7-63-2.js')
 insights_css = read('css/live-team-insights-v7-63-2.css')
 
-req(any(v in version for v in ('WPI 7.63.2','WPI 7.63.3')), 'VERSION must preserve 7.63.2')
-req(site.get('version') in {'7.63.2','7.63.3'}, 'site release must preserve 7.63.2')
-req(site.get('liveTeamInsightsExperienceRelease') in {'7.63.2','7.63.3'}, 'Team Insights release marker missing')
-req(site.get('liveSubscriptionPricingRelease') == '7.63.2', 'pricing release marker missing')
+req(any(v in version for v in ('WPI 7.63.2','WPI 7.63.3','WPI 7.63.4')), 'VERSION must preserve 7.63.2')
+req(site.get('version') in {'7.63.2','7.63.3','7.63.4'}, 'site release must preserve 7.63.2')
+req(site.get('liveTeamInsightsExperienceRelease') in {'7.63.2','7.63.3','7.63.4'}, 'Team Insights release marker missing')
+req(site.get('liveSubscriptionPricingRelease') in {'7.63.2','7.63.4'}, 'pricing release marker missing')
 req(site.get('liveAnalyticsPrivacyBoundaryRelease') == '7.63.2', 'privacy boundary marker must advance to 7.63.2')
 
 for needle in [

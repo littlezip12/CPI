@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.63.3",
-  "name": "Player Analytics & Supporter Recap Simplification",
+  "version": "7.63.4",
+  "name": "Promotional Access & Billing Readiness",
   "date": "2026-08-17",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds entitlement-protected player analytics with game, tournament/weekend, and season scope plus up to four-player side-by-side comparison. Free Supporter recaps now hide private lineups/player/timeline panels and retain one upgrade CTA. Pricing remains preview-only; no Stripe, ads, Edge Function redeploy, new secrets, scoring changes, hosting migration, or scale-tier purchase.",
+  "notes": "Adds no-card promotional Team Insights windows plus Stripe-ready customer/subscription/event ledger and disabled checkout/webhook Edge Functions. Team Insights remains $5/month or $50/year. Checkout stays preview-only until business, banking, legal, production host, Stripe prices, webhook and secrets are configured; no card data is stored in WPI.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -256,7 +256,9 @@
   "liveAnalyticsPrivacyBoundaryRelease": "7.63.2",
   "liveCommercialSafetyRelease": "7.63.0",
   "liveAdAccountingFoundationRelease": "7.63.0",
-  "liveTeamInsightsExperienceRelease": "7.63.3",
-  "liveSubscriptionPricingRelease": "7.63.2",
-  "livePlayerAnalyticsComparisonRelease": "7.63.3"
+  "liveTeamInsightsExperienceRelease": "7.63.4",
+  "liveSubscriptionPricingRelease": "7.63.4",
+  "livePlayerAnalyticsComparisonRelease": "7.63.3",
+  "livePromotionalAccessRelease": "7.63.4",
+  "liveBillingReadinessRelease": "7.63.4"
 }

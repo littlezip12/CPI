@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-team-insights-v7-63-3.css?v=7.63.3">
+  <link rel="stylesheet" href="css/live-team-insights-v7-63-4.css?v=7.63.4">
 </head>
 <body class="wpi-team-insights-page">
   <main class="insights-shell">
@@ -41,6 +41,17 @@
       <a href="live-following.html">Return to My Teams</a>
     </section>
 
+
+    <section id="insightsPromotionBanner" class="insights-promotion-banner" hidden>
+      <div><p>Free Team Insights preview</p><h2 id="promotionLabel">Premium analytics are unlocked</h2><span id="promotionMessage">No card required. Your account returns to free Supporter access when the preview ends unless you choose to subscribe.</span></div>
+      <strong id="promotionEnds">Preview access</strong>
+    </section>
+
+    <section id="insightsSubscriptionBar" class="insights-subscription-bar" hidden>
+      <div><strong id="subscriptionStatusTitle">Team Insights subscription</strong><span id="subscriptionStatusText">Your subscription is active.</span></div>
+      <button id="manageSubscriptionButton" type="button">Manage subscription</button>
+    </section>
+
     <section id="insightsLocked" hidden>
       <article class="insights-upgrade-card">
         <div>
@@ -52,6 +63,14 @@
           <div><strong id="monthlyPrice">$5</strong><span>/ month</span></div>
           <div class="insights-pricing-featured"><strong id="annualPrice">$50</strong><span>/ year · save $10</span></div>
         </div>
+        <div class="insights-plan-choice" role="group" aria-label="Choose Team Insights billing interval">
+          <button id="monthlyPlanButton" type="button" data-plan="monthly">Monthly · $5</button>
+          <button id="annualPlanButton" class="is-selected" type="button" data-plan="annual">Annual · $50</button>
+        </div>
+        <label id="adultPurchaserConfirmWrap" class="insights-adult-confirm" hidden>
+          <input id="adultPurchaserConfirm" type="checkbox" />
+          <span>I confirm I am 18 or older and authorized to purchase Team Insights.</span>
+        </label>
         <button id="upgradePreviewButton" type="button">Upgrade to Team Insights</button>
         <small id="upgradeStatus">Subscriptions are coming soon. No payment will be collected yet.</small>
       </article>
@@ -122,7 +141,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.22"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-team-insights-v7-63-3.js?v=7.63.3"></script>
+  <script src="js/live-team-insights-v7-63-4.js?v=7.63.4"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
 </body>

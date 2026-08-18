@@ -1,0 +1,21 @@
+WPI 7.63.4 — Promotional Access & Billing Readiness
+
+Product / adoption
+- Add no-card Team Insights promotional access windows with automatic expiration.
+- Support platform, organization and team promotional scopes, with optional tournament/weekend reference.
+- Free preview users automatically return to Supporter access unless they explicitly subscribe.
+- Preserve Team Insights launch pricing at $5/month or $50/year.
+
+Billing readiness
+- Add Stripe-ready product/price/customer/subscription/event ledgers while keeping checkout disabled by default.
+- Add secure Checkout and Customer Portal Edge Function source plus signed Stripe subscription webhook source.
+- Require explicit 18+ / authorized-purchaser confirmation before checkout can open once activated.
+- Store Stripe customer/subscription identifiers and status only; do not store card number, CVV, payment-method secrets or home address.
+- Add server-side entitlement activation/revocation from verified subscription state.
+
+Security / operations
+- Webhook signature verification and idempotent event ledger are required.
+- Billing secrets remain server-side; no new secrets are installed by this patch.
+- Included Edge Functions are NOT to be deployed yet. Checkout remains preview-only.
+- Add a monetization go-live checklist covering business, banking, legal/privacy, hosting, Stripe test mode and controlled activation.
+- No infrastructure scale-tier purchase is required.
