@@ -30,9 +30,9 @@ insights_html = read('live-team-insights.html')
 insights_js = read('js/live-team-insights-v7-63-3.js')
 insights_css = read('css/live-team-insights-v7-63-3.css')
 
-req(any(v in version for v in ('WPI 7.63.3','WPI 7.63.4')), 'VERSION must preserve 7.63.3')
-req(site.get('version') in {'7.63.3','7.63.4'}, 'site release must preserve 7.63.3')
-req(site.get('liveTeamInsightsExperienceRelease') in {'7.63.3','7.63.4'}, 'Team Insights release marker must preserve 7.63.3')
+req(any(v in version for v in ('WPI 7.63.3','WPI 7.63.4','WPI 7.63.5')), 'VERSION must preserve 7.63.3')
+req(site.get('version') in {'7.63.3','7.63.4','7.63.5'}, 'site release must preserve 7.63.3')
+req(site.get('liveTeamInsightsExperienceRelease') in {'7.63.3','7.63.4','7.63.5'}, 'Team Insights release marker must preserve 7.63.3')
 req(site.get('livePlayerAnalyticsComparisonRelease') == '7.63.3', 'player analytics comparison marker missing')
 
 # Supporters should see one upgrade surface, not repeated locked private panels.

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Organization Insights | WPI Live</title>
+  <meta name="description" content="WPI Organization Insights cross-team analytics for clubs and high schools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/live-organization-insights-v7-63-5.css?v=7.63.5">
+</head>
+<body class="wpi-organization-insights-page">
+  <main class="org-insights-shell">
+    <header class="org-insights-hero">
+      <div class="org-insights-identity">
+        <img id="orgInsightsLogo" src="assets/logos/cpi-logo-fallback.svg" alt="">
+        <div><p>WPI Live · Organization Insights</p><h1 id="orgInsightsName">Organization Insights</h1><span id="orgInsightsContext">Cross-team performance in one view.</span></div>
+      </div>
+      <nav><a href="live-dashboard.html">Dashboard</a><a href="live-team-insights.html">Team Insights</a><a id="commercialOpsLink" href="live-commercial.html" hidden>Commercial</a><button id="orgInsightsSignOut" type="button">Sign out</button></nav>
+    </header>
+
+    <section id="orgInsightsLoading" class="org-insights-state"><strong>Loading Organization Insights…</strong><span>Checking access and aggregating finalized WPI analytics.</span></section>
+    <section id="orgInsightsError" class="org-insights-state org-insights-state--error" hidden><strong id="orgInsightsErrorTitle">Organization Insights unavailable</strong><span id="orgInsightsErrorText">This organization could not be loaded.</span><a href="live-dashboard.html">Return to dashboard</a></section>
+
+    <section id="orgInsightsContent" hidden>
+      <section class="org-insights-toolbar">
+        <label><span>Organization</span><select id="organizationSelect"></select></label>
+        <label><span>Season</span><select id="organizationSeasonSelect"></select></label>
+      </section>
+
+      <section id="organizationRecord" class="org-insights-kpis"></section>
+
+      <section class="org-insights-grid org-insights-grid--two">
+        <article class="org-insights-panel"><div class="org-insights-heading"><div><p>Organization totals</p><h2>Season production</h2></div><span id="organizationShootingPct">—</span></div><div id="organizationTeamTotals" class="org-insights-stat-grid"></div></article>
+        <article class="org-insights-panel"><div class="org-insights-heading"><div><p>Coverage</p><h2>Teams with finalized games</h2></div><span id="organizationCoverage">—</span></div><p class="org-insights-note">Only canonical finalized WPI Live games are included. Opponent player statistics are never manufactured from incomplete data.</p></article>
+      </section>
+
+      <article class="org-insights-panel"><div class="org-insights-heading"><div><p>Teams</p><h2>Team-by-team performance</h2></div><span id="organizationTeamCount">0 teams</span></div><div id="organizationTeams" class="org-insights-team-grid"></div></article>
+
+      <article class="org-insights-panel"><div class="org-insights-heading"><div><p>Tournaments &amp; Weekends</p><h2>Organization event results</h2></div><span id="organizationEventCount">0 events</span></div><div id="organizationEvents" class="org-insights-event-grid"></div></article>
+
+      <article class="org-insights-panel"><div class="org-insights-heading"><div><p>Players</p><h2>Cross-team production</h2></div><span>Organization Insights</span></div><p class="org-insights-note">Player analytics remain private to entitled Organization Insights users. Use Team Insights for deeper per-player game/weekend/season comparisons.</p><div id="organizationPlayers" class="org-insights-player-table"></div></article>
+
+      <article class="org-insights-panel"><div class="org-insights-heading"><div><p>Recent finals</p><h2>Latest organization results</h2></div><span id="organizationGameCount">0 games</span></div><div id="organizationGames" class="org-insights-game-list"></div></article>
+    </section>
+  </main>
+  <script src="config/live-sandbox.js?v=7.57.22"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-organization-insights-v7-63-5.js?v=7.63.5"></script>
+  <script defer src="js/site-shell.js?v=7.62.3"></script>
+  <script defer src="js/command-palette.js?v=7.62.2"></script>
+</body>
+</html>

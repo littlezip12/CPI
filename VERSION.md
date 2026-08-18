@@ -1,3 +1,3 @@
-# WPI 7.63.4 — Promotional Access & Billing Readiness
+# WPI 7.63.5 — Organization Insights & Sponsorship Operations
 
-WPI 7.63.4 adds no-card Team Insights preview windows for launch tournaments/weekends and builds the Stripe-ready subscription ledger/Edge Function foundation for the $5/month or $50/year Team Insights product. Checkout remains disabled until business, banking, legal, production-hosting, Stripe product/price, webhook, and secret setup are complete. WPI stores subscription identifiers/status only; card numbers and CVV never enter WPI.
+WPI 7.63.5 adds entitlement-protected Organization Insights across every team in one club/high-school organization and turns the youth-safe advertising foundation into an owner-operated direct sponsorship system. Approved direct campaigns can target platform, region, organization, team, tournament, weekend, or game inventory; exclusive takeovers override normal rotation; live-game banners rotate only at natural period changes; free recap interstitials use a short dismiss gate; paid/authorized analytics viewers remain ad-free. Stripe remains disabled and no third-party programmatic ad network is enabled.

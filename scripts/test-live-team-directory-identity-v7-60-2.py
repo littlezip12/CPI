@@ -17,8 +17,8 @@ dashjs=read('js/live-dashboard-v7-62-0.js' if (ROOT/'js/live-dashboard-v7-62-0.j
 sql=read('supabase/migrations/202608140004_team_directory_identity_management.sql')
 css=read('css/live-team-identity-v7-60-2.css')
 
-req(any(v in read('VERSION.md') for v in ('7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4')),'VERSION mismatch')
-req(site.get('version') in {'7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4'},'release metadata version mismatch')
+req(any(v in read('VERSION.md') for v in ('7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5')),'VERSION mismatch')
+req(site.get('version') in {'7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5'},'release metadata version mismatch')
 for key in ('liveScoringTeamDirectoryIdentityRelease','liveScoringTeamFamilyIdentityRelease','liveScoringIdentityAliasRelease','liveScoringIdentityReconciliationRelease','liveScoringPersistentOpponentAliasRelease'):
     req(site.get(key)=='7.60.2',f'missing 7.60.2 marker: {key}')
 for key in ('liveScoringSelfServiceClubOnboardingRelease','liveScoringClubClaimReviewRelease','liveScoringFirstTeamProvisioningRelease'):

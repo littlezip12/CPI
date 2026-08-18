@@ -9,8 +9,8 @@ def req(c,m):
 site=json.loads(read("config/site-release.json")); directory=json.loads(read("data/live/team-identity-directory-v7-60-2.json")); index=json.loads(read("data/live/tournament-schedule-index.json"))
 sql=read("supabase/migrations/202608140005_public_supporter_experience_scale.sql")
 html=read("live-following.html"); js=read("js/live-following-v7-60-3.js"); backend=read("js/live-team-following-v7-60-3.js"); login=read("js/live-login-v7-60-3.js"); dash=read("live-dashboard.html"); dashjs=read("js/live-dashboard-v7-61-1.js" if (ROOT/"js/live-dashboard-v7-61-1.js").exists() else "js/live-dashboard-v7-60-3.js"); recap=read("js/live-game-recap-v7-60-3.js"); gamehtml=read("live-game.html")
-req(any(v in read("VERSION.md") for v in ("7.60.3","7.61.0","7.61.1","7.62.0","7.62.1","7.62.2","7.62.3","7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4')),"VERSION mismatch")
-req(site.get("version") in {"7.60.3","7.61.0","7.61.1","7.62.0","7.62.1","7.62.2","7.62.3","7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4'},"release metadata mismatch")
+req(any(v in read("VERSION.md") for v in ("7.60.3","7.61.0","7.61.1","7.62.0","7.62.1","7.62.2","7.62.3","7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5')),"VERSION mismatch")
+req(site.get("version") in {"7.60.3","7.61.0","7.61.1","7.62.0","7.62.1","7.62.2","7.62.3","7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5'},"release metadata mismatch")
 for k in ("liveScoringPublicSupporterScaleRelease","liveScoringCrossClubFollowingRelease","liveScoringTeamFamilyFollowingRelease","liveScoringSupporterHubRelease","liveScoringPersonalizedGameFeedRelease"): req(site.get(k)=="7.60.3",f"missing marker {k}")
 req(directory.get("counts")=={"clubs":182,"teams":724,"families":724},"canonical WPI directory counts changed")
 req(directory.get("release")=="7.60.2","7.60.3 must consume, not rewrite, canonical identity directory")
@@ -49,7 +49,7 @@ protected={
   "data/live/team-identity-directory-v7-60-2.json": "a3b54c9ec76918ff1555bdcd76f4c188f3b0475260239c01602dd47e7dcfa0e6"
 }
 for path,digest in protected.items(): req(sha(path)==digest,f"protected foundation changed: {path}")
-req(index.get("release") in {"7.60.3","7.61.0","7.61.1","7.62.0","7.62.1","7.62.2","7.62.3","7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4'},"schedule index release marker mismatch")
+req(index.get("release") in {"7.60.3","7.61.0","7.61.1","7.62.0","7.62.1","7.62.2","7.62.3","7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5'},"schedule index release marker mismatch")
 req(index.get("counts")=={"events":0,"games":0},"supporter release must not fabricate tournament schedule data")
 print("WPI LIVE 7.60.3 PUBLIC / SUPPORTER EXPERIENCE AT SCALE PASSED")
 print(" - stable team-family follows span clubs without membership or scorer authority")
