@@ -442,13 +442,16 @@ begin
       advertiser_id,name,status,start_at,end_at,priority,exclusive,share_of_voice,placements,scope_type,
       event_tier,commercial_model,contract_value_cents,currency,payment_status,impression_cap,notes,created_by
     ) values(
-      house_advertiser_id,'WPI House Validation','active',now(),now()+interval '24 hours',5,false,100,
+      house_advertiser_id,'WPI House Validation','draft',now(),now()+interval '24 hours',5,false,100,
       array['live.game.banner','live.recap.interstitial','live.weekend.banner']::text[],'platform',
       'standard','house',0,'USD','not_applicable',500,
       'Owner-activated validation campaign. Safe to pause at any time; never created automatically by migration.',caller
     ) returning id into campaign_id;
   else
-    update public.live_ad_campaigns set status='active',start_at=now(),end_at=now()+interval '24 hours',priority=5,exclusive=false,share_of_voice=100,
+    -- Stage the campaign in a non-serving state before attaching creatives.
+    -- The activation guard correctly rejects active/scheduled campaigns that do not
+    -- yet have an approved youth-safe creative attached.
+    update public.live_ad_campaigns set status='paused',start_at=now(),end_at=now()+interval '24 hours',priority=5,exclusive=false,share_of_voice=100,
       placements=array['live.game.banner','live.recap.interstitial','live.weekend.banner']::text[],scope_type='platform',scope_region=null,
       organization_id=null,team_id=null,series_id=null,game_id=null,tournament_public_id=null,event_tier='standard',commercial_model='house',
       contract_value_cents=0,payment_status='not_applicable',impression_cap=500,updated_at=now()
@@ -459,6 +462,12 @@ begin
   on conflict(campaign_id,creative_id) do update set weight=excluded.weight;
   insert into public.live_ad_campaign_creatives(campaign_id,creative_id,weight) values(campaign_id,interstitial_id,1)
   on conflict(campaign_id,creative_id) do update set weight=excluded.weight;
+
+  -- Activate only after the approved creatives are attached so the youth-safety
+  -- activation guard validates the finished campaign rather than the staging row.
+  update public.live_ad_campaigns
+  set status='active',updated_at=now()
+  where id=campaign_id;
 
   return jsonb_build_object('campaignId',campaign_id,'advertiserId',house_advertiser_id,'bannerCreativeId',banner_id,
     'interstitialCreativeId',interstitial_id,'status','active','endsAt',now()+interval '24 hours');
