@@ -97,7 +97,10 @@ for forbidden in ['cvv', 'card_number', 'full_card', 'service_role_key']:
 
 require('hasDetailedAnalytics' in js, 'Recap UI is not entitlement aware')
 require('Detailed player analytics are private' in js, 'Free Supporter privacy message missing')
-require('recapAnalyticsAccessNotice' in html, 'Recap access notice missing')
+if site.get('version') == '7.63.8':
+    require('recapAnalyticsAccessNotice' not in html, '7.63.8 free-launch recap must remove the paywall notice')
+else:
+    require('recapAnalyticsAccessNotice' in html, 'Recap access notice missing')
 require(any(v in html for v in ('js/live-game-recap-v7-63-0.js?v=7.63.0','js/live-game-recap-v7-63-2.js?v=7.63.2','js/live-game-recap-v7-63-3.js?v=7.63.3','js/live-game-recap-v7-63-5.js?v=7.63.5','js/live-game-recap-v7-63-8.js?v=7.63.8')), 'Recap page is not loading the 7.63.x client')
 
 for needle in ['6,000 games', '150,000', '$2K–$5K', '$25K', 'GitHub Pages', 'Supabase', 'Mega-Event Readiness Gate', 'youth-safe']:

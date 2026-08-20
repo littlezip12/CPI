@@ -59,12 +59,18 @@ policy = re.search(r'create policy live_game_analytics_authorized_read.*?\);', s
 req(policy is not None, 'analytics read policy missing')
 req('live_is_team_member' not in policy.group(0), 'viewer membership still unlocks direct analytics rows')
 
-# Upgrade UX and the hidden-state correction must be real, not just copy.
-for needle in ['Upgrade to Team Insights','$5/month','$50/year','live-team-insights.html','recapGameAnalyticsPanel']:
-    req(needle in recap_html, f'Recap Team Insights UX missing: {needle}')
+# Upgrade UX is preserved for paywalled releases; 7.63.8 intentionally removes it during free launch.
+if site.get('version') == '7.63.8':
+    req('Upgrade to Team Insights' not in recap_html and '$5/month' not in recap_html and '$50/year' not in recap_html, 'free-launch recap must not show paid upgrade UX')
+    for needle in ['live-team-insights.html','recapGameAnalyticsPanel']:
+        req(needle in recap_html, f'Recap Team Insights navigation/analytics missing: {needle}')
+else:
+    for needle in ['Upgrade to Team Insights','$5/month','$50/year','live-team-insights.html','recapGameAnalyticsPanel']:
+        req(needle in recap_html, f'Recap Team Insights UX missing: {needle}')
 req('.live-recap-shell [hidden]{display:none!important}' in recap_css, 'recap hidden-state CSS correction missing')
 req('live_game_analytics_detail_v1' in recap_js, 'recap must show trusted canonical game totals for detailed users')
-req('weekend, tournament and season analytics' in recap_js, 'locked recap copy must explain expanded Team Insights value')
+if site.get('version') != '7.63.8':
+    req('weekend, tournament and season analytics' in recap_js, 'locked recap copy must explain expanded Team Insights value')
 
 for needle in ['Team Insights','monthlyPrice','annualPrice','seasonRecord','seriesCards','seasonPlayerTotals','gameList']:
     req(needle in insights_html, f'Team Insights page missing: {needle}')

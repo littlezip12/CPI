@@ -8,6 +8,7 @@ def read(rel):
     p=ROOT/rel; req(p.exists(),f'Missing file: {rel}'); return p.read_text(encoding='utf-8')
 version=read('VERSION.md'); site=json.loads(read('config/site-release.json'))
 sql=read('supabase/migrations/202608190001_free_team_insights_launch_mode.sql')
+correction=read('supabase/migrations/202608190002_free_team_insights_launch_recap_correction.sql')
 recap_html=read('live-game-recap.html'); recap_js=read('js/live-game-recap-v7-63-8.js')
 event_html=read('live-event-recap.html')
 req('WPI 7.63.8' in version,'VERSION missing 7.63.8')
@@ -37,6 +38,15 @@ req('!hasDetailedAnalytics && window.WPILiveAds' not in recap_js,'detailed launc
 # Visible launch UX should not advertise a price on event results.
 req('$5/month' not in event_html and '$50/year' not in event_html,'event-results surface still advertises paid pricing during free launch')
 req('Full analytics included during launch' in event_html and 'Open Team Insights' in event_html,'event-results launch CTA missing')
+
+# Correction makes free launch truly global for authenticated WPI accounts and removes recap paywall UI.
+req("where t.id=target_team_id and t.active=true" in correction,'free-launch correction must allow authenticated accounts on active teams')
+req("live_is_team_follower(target_team_id)" not in correction.split('create or replace function public.live_team_insights_launch_free_access_v1',1)[1].split('$$;',1)[0],'free launch must not remain follower-only')
+req('recapAnalyticsAccessNotice' not in recap_html,'recap paywall panel must be absent during free launch')
+req('Upgrade to Team Insights' not in recap_html and '$5/month' not in recap_html and '$50/year' not in recap_html,'recap must not advertise paid pricing during free launch')
+req('Explore Team Insights' in correction and 'included during the WPI launch' in correction,'house creative must be truthful during free launch')
+req("advertiser_type='house'" in correction and 'advertiser_kind' not in correction,'house creative update must use live_advertisers.advertiser_type')
+
 # Billing stays dormant and no payment/security behavior changes.
 req(site.get('liveBillingReadinessRelease')=='7.63.4','billing readiness marker should not advance')
 for forbidden in ('card_number','cvv','billing_address','home_address','viewer_email','ip_address'):

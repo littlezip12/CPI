@@ -40,7 +40,10 @@ for panel_id in ['recapPrivateLineupsPanel','recapPrivatePlayerStatsPanel','reca
     req(panel_id in recap_html, f'Private recap panel ID missing: {panel_id}')
     req(f'"{panel_id}"' in recap_js, f'Private recap panel not controlled by entitlement: {panel_id}')
 req('panel.hidden = !hasDetailedAnalytics' in recap_js, 'Private recap panels must be hidden for free Supporters')
-req('Upgrade to Team Insights' in recap_html and '$5/month' in recap_html and '$50/year' in recap_html, 'single Supporter upgrade offer missing')
+if site.get('version') == '7.63.8':
+    req('Upgrade to Team Insights' not in recap_html and '$5/month' not in recap_html and '$50/year' not in recap_html, '7.63.8 free-launch recap must not show paid upgrade copy')
+else:
+    req('Upgrade to Team Insights' in recap_html and '$5/month' in recap_html and '$50/year' in recap_html, 'single Supporter upgrade offer missing')
 req('Detailed player analytics are private. Upgrade to unlock' not in recap_js, 'locked placeholder private-panel copy should be removed')
 
 # Player scope + comparison UX.

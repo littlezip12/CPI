@@ -97,8 +97,8 @@
 
     const narrative = recap.approvedText || recap.straightText || "";
     if (!hasDetailedAnalytics) {
-      $("recapNarrative").textContent = "The final score and period progression are available to Supporters. Team Insights unlocks detailed player recap content plus weekend, tournament and season analytics.";
-      $("recapNarrativeStatus").textContent = "Supporter · Free";
+      $("recapNarrative").textContent = "Detailed analytics are temporarily unavailable for this game. The final score and period progression remain available.";
+      $("recapNarrativeStatus").textContent = "Supporter";
     } else if (narrative) {
       $("recapNarrative").textContent = narrative;
       $("recapNarrativeStatus").textContent = recap.approvedText ? "Approved recap" : "Saved recap";
