@@ -30,9 +30,9 @@ insights_html = read('live-team-insights.html')
 insights_js = read('js/live-team-insights-v7-63-3.js')
 insights_css = read('css/live-team-insights-v7-63-3.css')
 
-req(any(v in version for v in ('WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8')), 'VERSION must preserve 7.63.3')
-req(site.get('version') in {'7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8'}, 'site release must preserve 7.63.3')
-req(site.get('liveTeamInsightsExperienceRelease') in {'7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8'}, 'Team Insights release marker must preserve 7.63.3')
+req(any(v in version for v in ('WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9')), 'VERSION must preserve 7.63.3')
+req(site.get('version') in {'7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'}, 'site release must preserve 7.63.3')
+req(site.get('liveTeamInsightsExperienceRelease') in {'7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'}, 'Team Insights release marker must preserve 7.63.3')
 req(site.get('livePlayerAnalyticsComparisonRelease') == '7.63.3', 'player analytics comparison marker missing')
 
 # Supporters should see one upgrade surface, not repeated locked private panels.
@@ -40,7 +40,7 @@ for panel_id in ['recapPrivateLineupsPanel','recapPrivatePlayerStatsPanel','reca
     req(panel_id in recap_html, f'Private recap panel ID missing: {panel_id}')
     req(f'"{panel_id}"' in recap_js, f'Private recap panel not controlled by entitlement: {panel_id}')
 req('panel.hidden = !hasDetailedAnalytics' in recap_js, 'Private recap panels must be hidden for free Supporters')
-if site.get('version') == '7.63.8':
+if site.get('version') in {'7.63.8','7.63.9'}:
     req('Upgrade to Team Insights' not in recap_html and '$5/month' not in recap_html and '$50/year' not in recap_html, '7.63.8 free-launch recap must not show paid upgrade copy')
 else:
     req('Upgrade to Team Insights' in recap_html and '$5/month' in recap_html and '$50/year' in recap_html, 'single Supporter upgrade offer missing')

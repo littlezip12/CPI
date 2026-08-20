@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Team | Water Polo Index</title>
-  <meta name="description" content="Stable Water Polo Index team profile with organization identity, Following and WPI Live activity.">
+  <meta name="description" content="WPI team home with identity, live status, upcoming games, recent results, events and Team Insights.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.62.1">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
-  <link rel="stylesheet" href="css/team-hub-v7-62-1.css?v=7.62.1">
+  <link rel="stylesheet" href="css/team-hub-v7-63-9.css?v=7.63.9">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
 </head>
 <body class="wpi-team-hub-page">
@@ -26,42 +26,66 @@
         <div id="teamHubMeta" class="team-hub-meta"></div>
       </div>
       <div class="team-hub-actions">
+        <a id="teamHubInsightsLink" class="team-hub-link team-hub-primary" href="#" hidden>Team Insights</a>
         <a id="teamHubOrganizationLink" class="team-hub-link" href="organizations.html">Organization</a>
         <a id="teamHubLegacyLink" class="team-hub-link" href="#" hidden>Rankings &amp; history</a>
-        <button id="teamHubFollow" class="team-hub-primary" type="button" hidden>Follow</button>
+        <button id="teamHubFollow" class="team-hub-link" type="button" hidden>Follow</button>
         <a id="teamHubSignIn" class="team-hub-primary" href="live-login.html?follow=1" hidden>Sign in to follow</a>
       </div>
     </section>
 
-    <section class="team-hub-grid">
-      <article class="team-hub-panel">
-        <div class="team-hub-panel-heading">
-          <div><p class="team-hub-kicker">Identity</p><h2>Team profile</h2></div>
-          <span id="teamHubConnection">Directory</span>
-        </div>
-        <dl class="team-hub-details">
-          <div><dt>Organization</dt><dd id="teamHubDetailOrganization">—</dd></div>
-          <div><dt>Team</dt><dd id="teamHubDetailTeam">—</dd></div>
-          <div><dt>Season</dt><dd id="teamHubSeason">—</dd></div>
-          <div><dt>Following</dt><dd id="teamHubRelationship">Not following</dd></div>
-        </dl>
-        <p id="teamHubFollowMessage" class="team-hub-note" role="status">Following is read-only. It never grants roster, scoring, GroupMe or admin access.</p>
-      </article>
+    <section class="team-hub-panel team-hub-overview-panel">
+      <div class="team-hub-panel-heading">
+        <div><p class="team-hub-kicker">At a glance</p><h2>Team dashboard</h2></div>
+        <span id="teamHubLiveState">Checking WPI Live…</span>
+      </div>
+      <div class="team-hub-metrics">
+        <div><small id="teamHubRecordLabel">Recent record</small><strong id="teamHubRecord">—</strong></div>
+        <div><small>Finals</small><strong id="teamHubFinalCount">0</strong></div>
+        <div><small>Goals for</small><strong id="teamHubGoalsFor">—</strong></div>
+        <div><small>Goals against</small><strong id="teamHubGoalsAgainst">—</strong></div>
+      </div>
+      <div id="teamHubPriority" class="team-hub-priority"><div class="team-hub-empty">Loading team activity…</div></div>
+    </section>
 
-      <article class="team-hub-panel">
+    <section class="team-hub-grid team-hub-grid--experience">
+      <article class="team-hub-panel team-hub-games-panel">
         <div class="team-hub-panel-heading">
-          <div><p class="team-hub-kicker">WPI Live</p><h2>Game status</h2></div>
-          <span id="teamHubLiveState">Checking…</span>
+          <div><p class="team-hub-kicker">Schedule &amp; results</p><h2>Games</h2></div>
+          <span id="teamHubGameCount">0 games</span>
         </div>
         <div id="teamHubGames" class="team-hub-games"><div class="team-hub-empty">Checking WPI Live activity…</div></div>
-        <p class="team-hub-note">Public games can appear without sign-in. Team-private games appear only when your account is entitled to view that team.</p>
       </article>
+
+      <div class="team-hub-side-stack">
+        <article class="team-hub-panel">
+          <div class="team-hub-panel-heading">
+            <div><p class="team-hub-kicker">Tournaments &amp; weekends</p><h2>Events</h2></div>
+            <span id="teamHubEventCount">—</span>
+          </div>
+          <div id="teamHubEvents" class="team-hub-events"><div class="team-hub-empty">Sign in to see team event summaries.</div></div>
+        </article>
+
+        <article class="team-hub-panel">
+          <div class="team-hub-panel-heading">
+            <div><p class="team-hub-kicker">Identity</p><h2>Team profile</h2></div>
+            <span id="teamHubConnection">Directory</span>
+          </div>
+          <dl class="team-hub-details">
+            <div><dt>Organization</dt><dd id="teamHubDetailOrganization">—</dd></div>
+            <div><dt>Team</dt><dd id="teamHubDetailTeam">—</dd></div>
+            <div><dt>Season</dt><dd id="teamHubSeason">—</dd></div>
+            <div><dt>Relationship</dt><dd id="teamHubRelationship">Not following</dd></div>
+          </dl>
+          <p id="teamHubFollowMessage" class="team-hub-note" role="status">Following is read-only. It never grants roster, scoring, GroupMe or admin access.</p>
+        </article>
+      </div>
     </section>
   </main>
   <script src="config/live-sandbox.js?v=7.61.1"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
   <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
-  <script src="js/team-hub-v7-62-1.js?v=7.62.1"></script>
+  <script src="js/team-hub-v7-63-9.js?v=7.63.9"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
 </body>

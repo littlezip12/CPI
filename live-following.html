@@ -5,62 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>My Teams | WPI Live</title>
-  <meta name="description" content="Follow WPI water polo teams and see one read-only game feed.">
+  <meta name="description" content="Your WPI teams, live games, upcoming schedule, recent results and Team Insights in one place.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-following-v7-63-6.css?v=7.63.6">
-<link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
+  <link rel="stylesheet" href="css/live-following-v7-63-9.css?v=7.63.9">
+  <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6">
+</head>
 <body class="wpi-following-page">
   <main class="follow-shell" id="supporterHubApp">
     <header class="follow-hero">
-      <div><p>WPI Live · Supporter Hub</p><h1>My Teams</h1><span>Follow teams across WPI and get one clean, read-only game feed.</span></div>
-      <nav><a href="live.html">Live Scores</a><a href="organizations.html">Organizations</a><a href="live-high-schools.html">High Schools</a><a href="live-dashboard.html">Team dashboard</a><button id="followSignOut" type="button">Sign out</button></nav>
+      <div><p>WPI Live · Supporter Home</p><h1>My Teams</h1><span>See who is live, what is next, what just happened and open Team Insights from one place.</span></div>
+      <nav><a href="live.html">Live Scores</a><a href="organizations.html">Find Teams</a><a href="live-high-schools.html">High Schools</a><a href="live-dashboard.html">Team Dashboard</a><button id="followSignOut" type="button">Sign out</button></nav>
     </header>
 
     <section id="followSignedOut" class="follow-card follow-empty" hidden>
-      <h2>Sign in to follow teams</h2><p>Your follows sync to your WPI account and never grant team membership or scoring access.</p>
+      <h2>Sign in to build My Teams</h2><p>Your follows sync to your WPI account and never grant team membership or scoring access.</p>
       <a class="follow-primary-link" href="live-login.html?follow=1">Sign in or create supporter account</a>
     </section>
 
     <section id="followConnected" hidden>
-      <section class="follow-card">
-        <div class="follow-heading"><div><p>Read only</p><h2>Teams you follow</h2></div><span id="myTeamsCount">0 teams</span></div>
-        <p class="follow-help">Membership and Following stay separate. A followed team can never give you roster, scoring, GroupMe or admin authority.</p>
-        <div id="myTeams" class="my-team-grid"><p class="follow-empty">Loading My Teams…</p></div>
+      <section class="supporter-glance" aria-label="My Teams overview">
+        <article><small>My Teams</small><strong id="supporterTeamStat">0</strong><span>followed or member teams</span></article>
+        <article id="supporterLiveStatCard"><small>Live now</small><strong id="supporterLiveStat">0</strong><span>games in progress</span></article>
+        <article><small>Next 7 days</small><strong id="supporterUpcomingStat">0</strong><span>upcoming games</span></article>
+        <article><small>Recent finals</small><strong id="supporterFinalStat">0</strong><span>visible results</span></article>
+      </section>
+
+      <section class="follow-card follow-card--primary">
+        <div class="follow-heading"><div><p>Your WPI home</p><h2>Teams you follow</h2></div><span id="myTeamsCount">0 teams</span></div>
+        <p class="follow-help">Each team card puts the next action first: live game, upcoming game, latest result, team page and Team Insights.</p>
+        <div id="myTeams" class="my-team-grid my-team-grid--dashboard"><p class="follow-empty">Loading My Teams…</p></div>
       </section>
 
       <section class="follow-card">
-        <div class="follow-heading"><div><p>Discover</p><h2>Find a WPI team</h2></div><span id="directoryCount">736 teams</span></div>
-        <div class="follow-filters">
-          <label><span>Search</span><input id="teamSearch" type="search" placeholder="Club, school or team…" autocomplete="off"></label>
-          <label><span>Type</span><select id="organizationTypeFilter"><option value="all">Clubs & high schools</option><option value="club">Clubs</option><option value="high_school">High schools</option></select></label><label><span>Organization</span><select id="clubFilter"><option value="all">All organizations</option></select></label>
-          <label><span>Age</span><select id="ageFilter"><option value="all">All ages</option></select></label>
-          <label><span>Group</span><select id="genderFilter"><option value="all">Boys & girls</option><option value="Boys">Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option><option value="Men">Men</option><option value="Women">Women</option></select></label>
-        </div>
-        <div id="directoryResults" class="directory-grid"><p class="follow-empty">Loading WPI team directory…</p></div>
-        <p id="followingMessage" class="follow-message" role="status"></p>
-      </section>
-
-      <section class="follow-card">
-        <div class="follow-heading"><div><p>Personalized</p><h2>Game feed</h2></div><button id="refreshFollowing" type="button">Refresh</button></div>
+        <div class="follow-heading"><div><p>Live, upcoming &amp; recent</p><h2>Game feed</h2></div><button id="refreshFollowing" type="button">Refresh</button></div>
         <div id="feedTeamFilters" class="follow-team-chips" hidden></div>
         <div id="gameFeed" class="feed-groups"><p class="follow-empty">Loading games…</p></div>
       </section>
 
       <section class="follow-card">
-        <div class="follow-heading"><div><p>Events</p><h2>Tournaments &amp; weekends</h2></div><span>Across My Teams</span></div>
+        <div class="follow-heading"><div><p>Tournaments &amp; weekends</p><h2>Event results</h2></div><span>Across My Teams</span></div>
         <div id="eventSummary" class="event-grid"><p class="follow-empty">Event history will appear when followed Live teams play.</p></div>
+      </section>
+
+      <section id="findWpiTeam" class="follow-card">
+        <div class="follow-heading"><div><p>Discover</p><h2>Find a WPI team</h2></div><div class="follow-heading-actions"><span id="directoryCount">0 teams</span><button id="resetTeamFilters" type="button">Reset</button></div></div>
+        <p class="follow-help">Search the unified WPI directory, narrow by organization, age and group, then follow the exact team you want.</p>
+        <div class="follow-filters">
+          <label><span>Search</span><input id="teamSearch" type="search" placeholder="Club, school or team…" autocomplete="off"></label>
+          <label><span>Type</span><select id="organizationTypeFilter"><option value="all">Clubs &amp; high schools</option><option value="club">Clubs</option><option value="high_school">High schools</option></select></label>
+          <label><span>Organization</span><select id="clubFilter"><option value="all">All organizations</option></select></label>
+          <label><span>Age</span><select id="ageFilter"><option value="all">All ages</option></select></label>
+          <label><span>Group</span><select id="genderFilter"><option value="all">Boys &amp; girls</option><option value="Boys">Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option><option value="Men">Men</option><option value="Women">Women</option></select></label>
+        </div>
+        <div class="directory-result-meta"><span id="directoryResultNote">Loading directory…</span></div>
+        <div id="directoryResults" class="directory-grid"><p class="follow-empty">Loading WPI team directory…</p></div>
+        <p id="followingMessage" class="follow-message" role="status"></p>
       </section>
     </section>
   </main>
   <script src="config/live-sandbox.js?v=7.57.20"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
   <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
-  <script src="js/live-following-v7-63-6.js?v=7.63.6"></script>
+  <script src="js/live-following-v7-63-9.js?v=7.63.9"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
 </body>

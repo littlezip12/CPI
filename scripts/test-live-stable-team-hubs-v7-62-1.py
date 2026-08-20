@@ -5,8 +5,8 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit('FAIL: '+msg)
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version') in ('7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8'),'site version must preserve 7.62.1 team hubs or later')
-req(any(v in (ROOT/'VERSION.md').read_text() for v in ('7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8')),'VERSION must preserve 7.62.1 team hubs or later')
+req(site.get('version') in ('7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'),'site version must preserve 7.62.1 team hubs or later')
+req(any(v in (ROOT/'VERSION.md').read_text() for v in ('7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9')),'VERSION must preserve 7.62.1 team hubs or later')
 data=json.loads((ROOT/'data/live/organization-directory-v7-62-1.json').read_text())
 req(data.get('schemaVersion')==2,'team-hub directory schema must be v2')
 req(data['counts']['organizations']==185,'expected 185 organizations')
@@ -34,7 +34,7 @@ for rel in ['js/homepage-organization-search-v7-62-1.js','js/organization-profil
     text=(ROOT/rel).read_text(); req('organization-directory-v7-62-1.json' in text,f'{rel} must use unified 7.62.1 directory')
 req('homepage-organization-search-v7-62-1.js?v=7.62.1' in (ROOT/'index.html').read_text(),'homepage must load 7.62.1 team-hub search')
 req('organization-profile-v7-62-1.js?v=7.62.1' in (ROOT/'organization.html').read_text(),'organization profile must load 7.62.1 bridge')
-req(any(x in (ROOT/'live-following.html').read_text() for x in ('live-following-v7-62-1.js?v=7.62.1','live-following-v7-63-6.js?v=7.63.6')),'My Teams must load stable team-hub bridge')
+req(any(x in (ROOT/'live-following.html').read_text() for x in ('live-following-v7-62-1.js?v=7.62.1','live-following-v7-63-6.js?v=7.63.6','live-following-v7-63-9.js?v=7.63.9')),'My Teams must load stable team-hub bridge')
 # No DB migration or scoring foundation change required for this read-only routing release.
 req(not list((ROOT/'supabase/migrations').glob('*7_62_1*')),'7.62.1 must not add a database migration')
 hashes=json.loads((ROOT/'data/live/protected-foundation-hashes-v7-62-1.json').read_text())['files']
