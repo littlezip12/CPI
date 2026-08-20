@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.63.6",
-  "name": "Sponsorship Validation & Event Inventory",
+  "version": "7.63.7",
+  "name": "Promotional Access & Adoption Operations",
   "date": "2026-08-17",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds owner-controlled WPI house sponsorship validation, event/weekend Supporter results, series-aware weekend banner delivery, placement-level O(1) ad reporting, and campaign pause/reactivation. No outside ads or payment collection are activated.",
+  "notes": "Adds Platform Owner scheduling/edit/pause controls for no-card Team Insights preview windows across team, organization, or platform scopes. Eligible Supporters automatically unlock only during configured dates and revert to Free Supporter after expiration. Stripe/payment collection remains disabled.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -269,5 +269,7 @@
   "liveEventInventoryRelease": "7.63.6",
   "liveWeekendBannerRelease": "7.63.6",
   "liveAdPlacementReportingRelease": "7.63.6",
-  "liveHouseCampaignValidationRelease": "7.63.6"
+  "liveHouseCampaignValidationRelease": "7.63.6",
+  "livePromotionalAccessOperationsRelease": "7.63.7",
+  "liveAdoptionOperationsRelease": "7.63.7"
 }
