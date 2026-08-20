@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.63.7",
-  "name": "Promotional Access & Adoption Operations",
-  "date": "2026-08-17",
+  "version": "7.63.8",
+  "name": "Free Team Insights Launch Mode",
+  "date": "2026-08-19",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds Platform Owner scheduling/edit/pause controls for no-card Team Insights preview windows across team, organization, or platform scopes. Eligible Supporters automatically unlock only during configured dates and revert to Free Supporter after expiration. Stripe/payment collection remains disabled.",
+  "notes": "Temporarily unlocks full Team Insights for authenticated team Supporters/followers during launch while preserving ads for free users and keeping the future paywall/Stripe plumbing dormant. Upgrade pricing remains stored but is not presented to eligible launch Supporters.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -256,7 +256,7 @@
   "liveAnalyticsPrivacyBoundaryRelease": "7.63.2",
   "liveCommercialSafetyRelease": "7.63.0",
   "liveAdAccountingFoundationRelease": "7.63.0",
-  "liveTeamInsightsExperienceRelease": "7.63.4",
+  "liveTeamInsightsExperienceRelease": "7.63.8",
   "liveSubscriptionPricingRelease": "7.63.4",
   "livePlayerAnalyticsComparisonRelease": "7.63.3",
   "livePromotionalAccessRelease": "7.63.4",
@@ -271,5 +271,6 @@
   "liveAdPlacementReportingRelease": "7.63.6",
   "liveHouseCampaignValidationRelease": "7.63.6",
   "livePromotionalAccessOperationsRelease": "7.63.7",
-  "liveAdoptionOperationsRelease": "7.63.7"
+  "liveAdoptionOperationsRelease": "7.63.7",
+  "liveTeamInsightsFreeLaunchRelease": "7.63.8"
 }

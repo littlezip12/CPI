@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.63.8 Focused Release Check"
+echo "====================================="
+python3 scripts/test-live-free-team-insights-launch-v7-63-8.py
+./release-check-live-7.63.7
+echo
+echo "WPI Live 7.63.8 focused release check passed."

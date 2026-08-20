@@ -31,9 +31,9 @@ js = text(RECAP_JS)
 html = text(RECAP_HTML)
 plan = text(PLAN)
 
-require(any(v in version for v in ('WPI 7.63.0','WPI 7.63.1','WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7')), 'VERSION.md no longer preserves 7.63.0')
-require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7'}, 'site-release.json no longer preserves 7.63.0')
-require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7'}, 'site release no longer preserves analytics/entitlements foundation')
+require(any(v in version for v in ('WPI 7.63.0','WPI 7.63.1','WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8')), 'VERSION.md no longer preserves 7.63.0')
+require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8'}, 'site-release.json no longer preserves 7.63.0')
+require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8'}, 'site release no longer preserves analytics/entitlements foundation')
 
 for needle in [
     'create table if not exists public.live_analytics_entitlements',
@@ -98,7 +98,7 @@ for forbidden in ['cvv', 'card_number', 'full_card', 'service_role_key']:
 require('hasDetailedAnalytics' in js, 'Recap UI is not entitlement aware')
 require('Detailed player analytics are private' in js, 'Free Supporter privacy message missing')
 require('recapAnalyticsAccessNotice' in html, 'Recap access notice missing')
-require(any(v in html for v in ('js/live-game-recap-v7-63-0.js?v=7.63.0','js/live-game-recap-v7-63-2.js?v=7.63.2','js/live-game-recap-v7-63-3.js?v=7.63.3','js/live-game-recap-v7-63-5.js?v=7.63.5')), 'Recap page is not loading the 7.63.x client')
+require(any(v in html for v in ('js/live-game-recap-v7-63-0.js?v=7.63.0','js/live-game-recap-v7-63-2.js?v=7.63.2','js/live-game-recap-v7-63-3.js?v=7.63.3','js/live-game-recap-v7-63-5.js?v=7.63.5','js/live-game-recap-v7-63-8.js?v=7.63.8')), 'Recap page is not loading the 7.63.x client')
 
 for needle in ['6,000 games', '150,000', '$2K–$5K', '$25K', 'GitHub Pages', 'Supabase', 'Mega-Event Readiness Gate', 'youth-safe']:
     require(needle in plan, f'Scale/security plan missing: {needle}')

@@ -1,0 +1,10 @@
+WPI 7.63.8 — Free Team Insights Launch Mode
+
+- Turns Team Insights into free launch access for authenticated team followers/members.
+- Removes visible paid pricing from the tournament/weekend results surface during launch.
+- Existing recap/Team Insights upgrade UI remains dormant and does not render for eligible launch Supporters.
+- Preserves $5/month / $50/year pricing metadata and Stripe-ready billing plumbing for a future paywall activation.
+- Free-launch access is NOT recorded as a paid analytics entitlement, so free Supporters remain eligible for WPI advertising.
+- Owner/Admin/Scorer and explicit paid Team/Organization Insights entitlements remain ad-free.
+- No Stripe activation, Edge Function deployment, new secrets, or infrastructure tier purchase.
+- Supabase migration: supabase/migrations/202608190001_free_team_insights_launch_mode.sql
