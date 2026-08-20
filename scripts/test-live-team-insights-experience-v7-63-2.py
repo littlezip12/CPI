@@ -32,10 +32,10 @@ insights_html = read('live-team-insights.html')
 insights_js = read('js/live-team-insights-v7-63-2.js')
 insights_css = read('css/live-team-insights-v7-63-2.css')
 
-req(any(v in version for v in ('WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9')), 'VERSION must preserve 7.63.2')
-req(site.get('version') in {'7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'}, 'site release must preserve 7.63.2')
-req(site.get('liveTeamInsightsExperienceRelease') in {'7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'}, 'Team Insights release marker missing')
-req(site.get('liveSubscriptionPricingRelease') in {'7.63.2','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'}, 'pricing release marker missing')
+req(any(v in version for v in ('WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9','WPI 7.64.0')), 'VERSION must preserve 7.63.2')
+req(site.get('version') in {'7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0'}, 'site release must preserve 7.63.2')
+req(site.get('liveTeamInsightsExperienceRelease') in {'7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0'}, 'Team Insights release marker missing')
+req(site.get('liveSubscriptionPricingRelease') in {'7.63.2','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0'}, 'pricing release marker missing')
 req(site.get('liveAnalyticsPrivacyBoundaryRelease') == '7.63.2', 'privacy boundary marker must advance to 7.63.2')
 
 for needle in [
@@ -60,7 +60,7 @@ req(policy is not None, 'analytics read policy missing')
 req('live_is_team_member' not in policy.group(0), 'viewer membership still unlocks direct analytics rows')
 
 # Upgrade UX is preserved for paywalled releases; 7.63.8 intentionally removes it during free launch.
-if site.get('version') in {'7.63.8','7.63.9'}:
+if site.get('version') in {'7.63.8','7.63.9','7.64.0'}:
     req('Upgrade to Team Insights' not in recap_html and '$5/month' not in recap_html and '$50/year' not in recap_html, 'free-launch recap must not show paid upgrade UX')
     for needle in ['live-team-insights.html','recapGameAnalyticsPanel']:
         req(needle in recap_html, f'Recap Team Insights navigation/analytics missing: {needle}')
@@ -69,7 +69,7 @@ else:
         req(needle in recap_html, f'Recap Team Insights UX missing: {needle}')
 req('.live-recap-shell [hidden]{display:none!important}' in recap_css, 'recap hidden-state CSS correction missing')
 req('live_game_analytics_detail_v1' in recap_js, 'recap must show trusted canonical game totals for detailed users')
-if site.get('version') not in {'7.63.8','7.63.9'}:
+if site.get('version') not in {'7.63.8','7.63.9','7.64.0'}:
     req('weekend, tournament and season analytics' in recap_js, 'locked recap copy must explain expanded Team Insights value')
 
 for needle in ['Team Insights','monthlyPrice','annualPrice','seasonRecord','seriesCards','seasonPlayerTotals','gameList']:

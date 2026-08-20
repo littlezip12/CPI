@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/live-public-publishing-v7-62-4.css?v=7.62.4">
   <link rel="stylesheet" href="css/live-ad-delivery-v7-63-6.css?v=7.63.6">
   <link rel="stylesheet" href="css/live-club-theme-v7-60-0.css?v=7.60.0">
+  <link rel="stylesheet" href="css/live-fan-experience-v7-64-0.css?v=7.64.0">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -124,6 +125,49 @@
       <div id="scorerReadOnlyNotice" class="live-scorer-read-only-notice" hidden><span id="scorerReadOnlyMessage"></span><button id="enterScorerCodeInlineButton" type="button">Take over scoring</button></div>
 
       <aside id="supporterGameSponsorBanner" class="wpi-live-ad-slot" aria-label="Sponsored" hidden></aside>
+
+      <section id="liveFanExperience" class="wpi-fan-game" aria-label="WPI Live fan game center" hidden>
+        <header class="wpi-fan-header">
+          <div class="wpi-fan-status"><span id="fanLivePill" class="wpi-fan-live-pill" data-state="between">GAME</span><div><strong>Game Center</strong><small id="fanDataStatus">Connecting fan view…</small></div></div>
+          <div class="wpi-fan-header-actions"><a id="fanShareLink" href="#">Share</a><a href="live-following.html">My Teams</a></div>
+        </header>
+
+        <section class="wpi-fan-scoreboard" aria-live="polite">
+          <div class="wpi-fan-side"><span id="fanTeamName">Team</span><strong id="fanTeamScore">0</strong></div>
+          <div class="wpi-fan-center"><strong id="fanPeriod">Q1</strong><em id="fanClock">7:00</em><span id="fanGameState">Live</span></div>
+          <div class="wpi-fan-side wpi-fan-side--away"><span id="fanOpponentName">Opponent</span><strong id="fanOpponentScore">0</strong></div>
+        </section>
+
+        <nav class="wpi-fan-tabs" aria-label="Fan game views">
+          <a href="#fan-game" data-fan-tab="game" class="is-active">Game</a>
+          <a href="#fan-plays" data-fan-tab="plays">Plays</a>
+          <a href="#fan-stats" data-fan-tab="stats">Stats</a>
+          <a href="#fan-info" data-fan-tab="info">Info</a>
+        </nav>
+
+        <section id="fanPanelGame" class="wpi-fan-panel" data-fan-panel="game">
+          <div class="wpi-fan-grid">
+            <article class="wpi-fan-card"><div class="wpi-fan-card-header"><div><span>Game flow</span><strong>Latest play</strong></div><small>Updates with the scorer</small></div><div id="fanLastPlay"></div></article>
+            <article class="wpi-fan-card"><div class="wpi-fan-card-header"><div><span>Period scoring</span><strong>Score progression</strong></div></div><div id="fanPeriods" class="wpi-fan-periods"><p class="wpi-fan-empty">Loading period scoring…</p></div></article>
+          </div>
+          <div class="wpi-fan-quick-actions"><a id="fanPrimaryAction" class="wpi-fan-primary" href="live-following.html">Team Insights</a><a href="live-following.html">Back to My Teams</a></div>
+        </section>
+
+        <section id="fanPanelPlays" class="wpi-fan-panel" data-fan-panel="plays" hidden>
+          <article class="wpi-fan-card"><div class="wpi-fan-card-header"><div><span>Play-by-play</span><strong>Recorded game timeline</strong></div><small>Newest first</small></div><div class="wpi-fan-filter-row"><a href="#" data-fan-filter="all" class="is-active">All</a><a href="#" data-fan-filter="scoring">Scoring</a><a href="#" data-fan-filter="defense">Defense</a></div><div id="fanPlayList" class="wpi-fan-play-list"><p class="wpi-fan-empty">Open this view to load the recorded timeline.</p></div></article>
+        </section>
+
+        <section id="fanPanelStats" class="wpi-fan-panel" data-fan-panel="stats" hidden>
+          <div class="wpi-fan-grid">
+            <article class="wpi-fan-card"><div class="wpi-fan-card-header"><div><span>Live stats</span><strong>Team comparison</strong></div><small>Scorer-entered actions</small></div><div id="fanTeamStats" class="wpi-fan-stat-compare"><p class="wpi-fan-empty">Open this view to load recorded game statistics.</p></div><p class="wpi-fan-note">Statistics are unofficial and reflect only actions entered by the scorer. Opponent detail is limited to tracked outcomes.</p></article>
+            <article class="wpi-fan-card"><div class="wpi-fan-card-header"><div><span>Team leaders</span><strong>Recorded production</strong></div></div><div id="fanPlayerLeaders" class="wpi-fan-leaders"><p class="wpi-fan-empty">Player leaders will appear from the recorded game log.</p></div></article>
+          </div>
+        </section>
+
+        <section id="fanPanelInfo" class="wpi-fan-panel" data-fan-panel="info" hidden>
+          <article class="wpi-fan-card"><div class="wpi-fan-card-header"><div><span>Game info</span><strong>Match context</strong></div><small>Read-only Supporter view</small></div><div id="fanGameInfo" class="wpi-fan-info-list"><p class="wpi-fan-empty">Open this view to load game information.</p></div></article>
+        </section>
+      </section>
 
       <div class="live-scoreboard" aria-live="polite">
         <div class="live-score-team"><span id="scoreTeamName">Team</span><strong id="teamScore">0</strong></div>
@@ -362,6 +406,7 @@
   <script src="js/live-ad-delivery-v7-63-6.js?v=7.63.6"></script>
   <script src="js/live-game-supporter-ads-v7-63-6.js?v=7.63.6"></script>
   <script src="js/live-game-supporter-return-v7-60-3.js?v=7.60.3"></script>
+  <script src="js/live-fan-experience-v7-64-0.js?v=7.64.0"></script>
   <script src="js/live-club-theme-registry-v7-60-0.js?v=7.60.0"></script>
   <script src="js/live-club-theme-v7-60-0.js?v=7.60.0"></script>
   <script src="js/live-high-school-theme-registry-v7-61-0.js?v=7.61.0"></script>

@@ -16,8 +16,8 @@ team_html=read('live-team-insights.html'); team_js=read('js/live-team-insights-v
 premium_cta_css=read('css/live-team-insights-cta-v7-63-5.css')
 action_button_css=read('css/live-action-buttons-v7-63-5.css')
 dashboard_html=read('live-dashboard.html'); following_html=read('live-following.html')
-req(any(v in version for v in ('WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9')),'VERSION missing 7.63.5+')
-req(site.get('version') in {'7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'},'site release mismatch')
+req(any(v in version for v in ('WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9','WPI 7.64.0')),'VERSION missing 7.63.5+')
+req(site.get('version') in {'7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0'},'site release mismatch')
 for k in ('liveOrganizationInsightsRelease','liveSponsorshipOperationsRelease','liveDirectAdDeliveryRelease','liveAdAccountingScaleRelease'): req(site.get(k)=='7.63.5',f'missing marker {k}')
 # Organization Insights access must be entitlement/server enforced.
 for token in ('live_has_organization_insights_access_v1','live_organization_insights_directory_v1','live_organization_insights_overview_v1'):

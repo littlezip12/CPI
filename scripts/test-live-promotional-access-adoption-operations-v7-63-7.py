@@ -11,8 +11,8 @@ sql=read('supabase/migrations/202608170010_team_insights_preview_operations.sql'
 foundation=read('supabase/migrations/202608170005_promotional_access_billing_readiness.sql')
 html=read('live-commercial.html'); js=read('js/live-commercial-v7-63-7.js'); css=read('css/live-commercial-v7-63-7.css')
 insights_html=read('live-team-insights.html'); insights_js=read('js/live-team-insights-v7-63-5.js')
-req(('WPI 7.63.7' in version) or ('WPI 7.63.8' in version) or ('WPI 7.63.9' in version),'VERSION missing supported 7.63.7/7.63.8')
-req(site.get('version') in ('7.63.7','7.63.8','7.63.9'),'site release mismatch')
+req(('WPI 7.63.7' in version) or ('WPI 7.63.8' in version) or ('WPI 7.63.9' in version) or ('WPI 7.64.0' in version),'VERSION missing supported 7.63.7/7.63.8/7.63.9/7.64.0')
+req(site.get('version') in ('7.63.7','7.63.8','7.63.9','7.64.0'),'site release mismatch')
 req(site.get('livePromotionalAccessOperationsRelease')=='7.63.7','preview operations marker missing')
 req(site.get('liveAdoptionOperationsRelease')=='7.63.7','adoption operations marker missing')
 for token in ('live_team_insights_preview_admin_snapshot_v1','live_team_insights_preview_series_v1','live_team_insights_preview_admin_save_v1','live_team_insights_preview_admin_set_status_v1'):

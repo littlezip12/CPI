@@ -1,7 +1,7 @@
-# WPI 7.63.9 — Supporter Home & Unified Team Experience
+# WPI 7.64.0 — Live Game UX & Fan Experience
 
-WPI 7.63.9 turns My Teams into the primary signed-in supporter home: followed/member teams surface live status, the next game, latest result, recent record and direct Team Insights access before the broader game feed. Team discovery remains unified across clubs and high schools with organization, age and group filters, but moves below the personalized experience so existing follows are useful immediately.
+WPI 7.64.0 turns the authenticated read-only Supporter game view into a dedicated mobile-first fan Game Center while leaving the mature scoring console and scorer authority unchanged. Supporters now receive an always-clear score/period/clock surface plus Game, Plays, Stats and Info views, a latest-play snapshot, period score progression, recorded team comparison metrics, player leaders, share controls and a direct Final-to-Recap transition.
 
-The stable Team Hub is expanded into one team destination with exact organization/age/gender identity, live/upcoming/recent game groups, an at-a-glance record, tournament/weekend summaries and a direct Team Insights bridge for authenticated users. During the current free-launch period Team Insights stays unlocked for authenticated WPI accounts and free users remain ad-supported. Anonymous/public views remain team-level and do not expose individual-player analytics.
+The fan layer activates only when the validated scoring controller places the page in `is-live-viewer` mode. Owner/Admin/Scorer workflows continue using the existing scoring console; accepting a scorer handoff removes fan mode immediately and restores scorer UI. Existing supporter sponsorship remains above the fan surface, and free-launch Team Insights remains available and ad-supported.
 
-No Supabase migration, Edge Function redeploy, Stripe activation, new secret or infrastructure upgrade is required. Mature scoring, scorer handoff, roster, GroupMe delivery and protected backend files remain unchanged.
+No Supabase migration, Edge Function redeploy, push-notification permission, Stripe activation, new secret or infrastructure upgrade is required. Protected scoring, game storage, backend, GroupMe delivery and roster-extraction files remain byte-stable.

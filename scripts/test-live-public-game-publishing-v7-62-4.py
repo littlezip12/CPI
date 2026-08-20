@@ -9,10 +9,10 @@ def req(cond, msg):
         raise SystemExit("PUBLIC GAME PUBLISHING 7.62.4 TEST FAILED\n - " + msg)
 
 site = json.loads((ROOT / "config/site-release.json").read_text())
-req(site.get("version") in {"7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'}, "site version must be 7.62.4")
+req(site.get("version") in {"7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0'}, "site version must be 7.62.4")
 req(site.get("liveScoringPublicGamePublishingRelease") == "7.62.4", "publishing release metadata missing")
 req(site.get("liveScoringPublicGameSharingRelease") == "7.62.4", "sharing release metadata missing")
-req(any(v in (ROOT / "VERSION.md").read_text() for v in ("7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9')), "VERSION must identify 7.62.4")
+req(any(v in (ROOT / "VERSION.md").read_text() for v in ("7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0')), "VERSION must identify 7.62.4")
 
 for rel in [
     "js/live-public-publishing-v7-62-4.js",

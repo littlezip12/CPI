@@ -5,10 +5,10 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit("PUBLIC MATCHUP IDENTITY 7.62.5 TEST FAILED\n - "+msg)
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version') in {'7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9'},'site version must preserve 7.62.5 or later')
+req(site.get('version') in {'7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0'},'site version must preserve 7.62.5 or later')
 req(site.get('liveScoringPublicMatchupIdentityRelease')=='7.62.5','matchup identity release metadata missing')
 req(site.get('liveScoringPublicScorePresentationRelease')=='7.62.5','score presentation release metadata missing')
-req(any(v in (ROOT/'VERSION.md').read_text() for v in ('7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9')),'VERSION must preserve 7.62.5 or later')
+req(any(v in (ROOT/'VERSION.md').read_text() for v in ('7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0')),'VERSION must preserve 7.62.5 or later')
 for rel in ['live.html','live-score.html','js/live-public-center-v7-62-5.js','js/live-public-score-v7-62-5.js','css/live-public-v7-62-5.css']:
     req((ROOT/rel).exists(),f'missing {rel}')
 center=(ROOT/'js/live-public-center-v7-62-5.js').read_text()
