@@ -1,9 +1,9 @@
-# WPI 7.64.1 — Tournament Experience
+# WPI 7.64.2 — Scale & Mega-Event Readiness
 
-WPI 7.64.1 turns WPI Live tournament game records into a connected public tournament destination. A tournament center now combines public Live games, upcoming public WPI Live games, recent finals, exact division/stage/game-number context when present, team and division filtering, WPI-team event records, event dates/venues, sharing, youth-safe sponsor inventory, and direct game/team navigation.
+WPI 7.64.2 hardens the public WPI Live read path for larger events without buying a higher infrastructure tier. Public Live Center and Tournament Center game retrieval now use server-side filtering plus bounded pages of at most 100 games, eliminating the prior single-browser 250/2,000-row caps as the scaling model.
 
-Tournament records are deliberately conservative: WPI derives team records only from finalized public WPI Live games and labels them as informational rather than official tournament standings. The tournament schedule likewise contains only games published through WPI Live and does not fabricate missing official schedules, standings, or brackets. Anonymous tournament views remain team-level and never expose rosters, player events, scorer identity, membership, GroupMe delivery data, or private games.
+Public score delivery now uses sanitized Supabase Realtime Broadcast as the primary update path. The database trigger sends only public score/state fields to a per-game public topic; the browser keeps a safety RPC fallback and immediately falls back if Realtime is unavailable. Anonymous privacy remains score/team-level only.
 
-The public WPI Live Center now surfaces recent/active tournament centers and links tournament game cards into the event destination. Public score pages and the authenticated Supporter Game Info view also link back to the tournament center. The 7.64.0 scorer-launch stability boundary remains intact: `launch=1` bypasses the fan layer, and protected scoring/backend/storage/GroupMe/roster-extraction files remain byte-stable.
+A Platform Owner Scale Readiness page reports the current observed WPI footprint, verifies the pagination/index/Broadcast foundation, and can run lightweight endpoint-latency probes. It explicitly does not certify the 6,000-game / 10,000-viewer target: a controlled mega-event load test is still required before JO-scale traffic.
 
-Supabase migration required: `202608220001_public_tournament_experience.sql`. No Edge Function redeploy, new secret, Stripe activation, notification permission, or infrastructure upgrade is required.
+Supabase migration required: `202608220002_scale_mega_event_readiness.sql`. No Edge Function redeploy, new secret, Stripe activation, hosting migration, or infrastructure upgrade is required.

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.1",
-  "name": "Tournament Experience",
+  "version": "7.64.2",
+  "name": "Scale & Mega-Event Readiness",
   "date": "2026-08-22",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds public WPI Live tournament centers with live/upcoming/final game views, division/team/status filtering, WPI-team tournament records, tournament discovery and connected navigation from public scores and the authenticated Supporter fan experience. Records are explicitly not official standings unless supported by source data.",
+  "notes": "Adds bounded server-side public scoreboard/tournament filtering and pagination, sanitized Supabase Broadcast score delivery with RPC fallback, public read indexes, and a Platform Owner scale-readiness snapshot/probe. No infrastructure tier purchase or mega-event load-test certification.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -283,5 +283,10 @@
   "liveTournamentCenterRelease": "7.64.1",
   "liveTournamentDiscoveryRelease": "7.64.1",
   "liveTournamentTeamRecordsRelease": "7.64.1",
-  "liveTournamentNavigationRelease": "7.64.1"
+  "liveTournamentNavigationRelease": "7.64.1",
+  "liveScaleReadinessRelease": "7.64.2",
+  "liveMegaEventReadinessRelease": "7.64.2",
+  "livePublicPaginationRelease": "7.64.2",
+  "livePublicScoreBroadcastRelease": "7.64.2",
+  "liveScaleObservabilityRelease": "7.64.2"
 }

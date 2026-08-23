@@ -6,9 +6,9 @@ def req(c,m):
     if not c: raise AssertionError(m)
 def read(rel):
     p=ROOT/rel;req(p.exists(),f"Missing file: {rel}");return p.read_text(encoding="utf-8")
-site=json.loads(read("config/site-release.json"));version=read("VERSION.md");html=read("live-game.html");active_js="js/live-fan-experience-v7-64-1.js" if site.get("version")=="7.64.1" else "js/live-fan-experience-v7-64-0.js";js=read(active_js);active_css="css/live-fan-experience-v7-64-1.css" if site.get("version")=="7.64.1" else "css/live-fan-experience-v7-64-0.css";css=read(active_css)
-req(any(v in version for v in ("WPI 7.64.0","WPI 7.64.1")),"VERSION missing 7.64.0+ fan baseline")
-req(site.get("version") in {"7.64.0","7.64.1"},"site release mismatch")
+site=json.loads(read("config/site-release.json"));version=read("VERSION.md");html=read("live-game.html");active_js="js/live-fan-experience-v7-64-1.js" if site.get("version") in {"7.64.1","7.64.2"} else "js/live-fan-experience-v7-64-0.js";js=read(active_js);active_css="css/live-fan-experience-v7-64-1.css" if site.get("version") in {"7.64.1","7.64.2"} else "css/live-fan-experience-v7-64-0.css";css=read(active_css)
+req(any(v in version for v in ("WPI 7.64.0","WPI 7.64.1","WPI 7.64.2")),"VERSION missing 7.64.0+ fan baseline")
+req(site.get("version") in {"7.64.0","7.64.1","7.64.2"},"site release mismatch")
 for key in ("liveScoringFanExperienceRelease","liveScoringFanGameCenterRelease","liveScoringFanPlayByPlayRelease","liveScoringFanStatsRelease"):req(site.get(key)=="7.64.0",f"missing marker {key}")
 for token in ("liveFanExperience","fanTeamScore","fanOpponentScore","fanPeriod","fanClock","fanLastPlay","fanPeriods","fanPlayList","fanTeamStats","fanPlayerLeaders","fanGameInfo","fanPrimaryAction"):
     req(token in html,f"fan surface missing {token}")
