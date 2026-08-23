@@ -7,12 +7,12 @@ def req(c,m):
 def read(rel):
     p=ROOT/rel; req(p.exists(),f"Missing file: {rel}"); return p.read_text(encoding="utf-8")
 site=json.loads(read("config/site-release.json")); version=read("VERSION.md")
-req(any(v in version for v in ("WPI 7.64.1","WPI 7.64.2")),"VERSION missing 7.64.1+")
-req(site.get("version") in {"7.64.1","7.64.2"},"site release mismatch")
+req(any(v in version for v in ("WPI 7.64.1","WPI 7.64.2","WPI 7.64.3")),"VERSION missing 7.64.1+")
+req(site.get("version") in {"7.64.1","7.64.2","7.64.3"},"site release mismatch")
 for key in ("liveTournamentExperienceRelease","liveTournamentCenterRelease","liveTournamentDiscoveryRelease","liveTournamentTeamRecordsRelease","liveTournamentNavigationRelease"):
     req(site.get(key)=="7.64.1",f"missing marker {key}")
 
-page=read("live-tournament.html"); css=read("css/live-tournament-v7-64-1.css"); js=read("js/live-tournament-v7-64-2.js" if site.get("version")=="7.64.2" else "js/live-tournament-v7-64-1.js")
+page=read("live-tournament.html"); css=read("css/live-tournament-v7-64-1.css"); js=read("js/live-tournament-v7-64-2.js" if site.get("version") in {"7.64.2","7.64.3"} else "js/live-tournament-v7-64-1.js")
 for token in ("ltTitle","ltLiveCount","ltUpcomingCount","ltFinalCount","ltTeamCount","ltSearch","ltDivision","ltTeam","ltStatus","ltGameSections","ltTeamRecords","ltRecordPolicy","ltSchedulePolicy"):
     req(token in page,f"tournament page missing {token}")
 req(("live-tournament-v7-64-1.css?v=7.64.1" in page and "live-tournament-v7-64-1.js?v=7.64.1" in page) or ("live-tournament-v7-64-2.css?v=7.64.2" in page and "live-tournament-v7-64-2.js?v=7.64.2" in page),"tournament assets not cache-busted")
@@ -36,14 +36,14 @@ for dangerous in ("insert into public.live_","update public.live_","delete from 
 req("grant execute on function public.live_public_tournament_catalog_v1() to anon,authenticated" in low,"catalog must be public-callable")
 req("grant execute on function public.live_public_tournament_v1(text,text,text) to anon,authenticated" in low,"tournament center must be public-callable")
 
-live=read("live.html"); discovery=read("js/live-tournament-discovery-v7-64-1.js"); center=read("js/live-public-center-v7-64-2.js" if site.get("version")=="7.64.2" else "js/live-public-center-v7-64-1.js")
+live=read("live.html"); discovery=read("js/live-tournament-discovery-v7-64-1.js"); center=read("js/live-public-center-v7-64-2.js" if site.get("version") in {"7.64.2","7.64.3"} else "js/live-public-center-v7-64-1.js")
 req('id="tournamentCenters"' in live and 'id="publicTournamentCenters"' in live,"public Live tournament discovery section missing")
 req("live-tournament-discovery-v7-64-1.js?v=7.64.1" in live,"tournament discovery script not loaded")
 req(("live-public-center-v7-64-1.js?v=7.64.1" in live) or ("live-public-center-v7-64-2.js?v=7.64.2" in live),"public center not loaded")
 req("live_public_tournament_catalog_v1" in discovery,"discovery must use catalog RPC")
 req(("live_public_scoreboard_v2" in center or "live_public_scoreboard_v3" in center) and "Tournament center" in center,"public game cards must link to tournament center")
 
-score_page=read("live-score.html"); score_js=read("js/live-public-score-v7-64-2.js" if site.get("version")=="7.64.2" else "js/live-public-score-v7-64-1.js")
+score_page=read("live-score.html"); score_js=read("js/live-public-score-v7-64-2.js" if site.get("version") in {"7.64.2","7.64.3"} else "js/live-public-score-v7-64-1.js")
 req('id="publicScoreTournament"' in score_page,"public score tournament action missing")
 req(("live-public-score-v7-64-1.js?v=7.64.1" in score_page) or ("live-public-score-v7-64-2.js?v=7.64.2" in score_page),"public score script not loaded")
 req("live_public_game_score_v2" in score_js and "Tournament center" in score_js,"public score tournament navigation missing")

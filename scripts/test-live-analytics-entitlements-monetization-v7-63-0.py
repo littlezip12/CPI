@@ -31,9 +31,9 @@ js = text(RECAP_JS)
 html = text(RECAP_HTML)
 plan = text(PLAN)
 
-require(any(v in version for v in ('WPI 7.63.0','WPI 7.63.1','WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9','WPI 7.64.0','WPI 7.64.1','WPI 7.64.2')), 'VERSION.md no longer preserves 7.63.0')
-require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2'}, 'site-release.json no longer preserves 7.63.0')
-require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2'}, 'site release no longer preserves analytics/entitlements foundation')
+require(any(v in version for v in ('WPI 7.63.0','WPI 7.63.1','WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9','WPI 7.64.0','WPI 7.64.1','WPI 7.64.2','WPI 7.64.3')), 'VERSION.md no longer preserves 7.63.0')
+require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3'}, 'site-release.json no longer preserves 7.63.0')
+require(site.get('version') in {'7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3'}, 'site release no longer preserves analytics/entitlements foundation')
 
 for needle in [
     'create table if not exists public.live_analytics_entitlements',
@@ -97,7 +97,7 @@ for forbidden in ['cvv', 'card_number', 'full_card', 'service_role_key']:
 
 require('hasDetailedAnalytics' in js, 'Recap UI is not entitlement aware')
 require('Detailed player analytics are private' in js, 'Free Supporter privacy message missing')
-if site.get('version') in {'7.63.8','7.63.9','7.64.0','7.64.1','7.64.2'}:
+if site.get('version') in {'7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3'}:
     require('recapAnalyticsAccessNotice' not in html, '7.63.8 free-launch recap must remove the paywall notice')
 else:
     require('recapAnalyticsAccessNotice' in html, 'Recap access notice missing')

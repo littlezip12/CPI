@@ -1,9 +1,7 @@
-# WPI 7.64.2 — Scale & Mega-Event Readiness
+# WPI 7.64.3 — Mega-Event Load Test & Capacity Gate
 
-WPI 7.64.2 hardens the public WPI Live read path for larger events without buying a higher infrastructure tier. Public Live Center and Tournament Center game retrieval now use server-side filtering plus bounded pages of at most 100 games, eliminating the prior single-browser 250/2,000-row caps as the scaling model.
+WPI 7.64.3 turns the 7.64.2 scale architecture into a measurable release gate. It adds a production-safe capacity evidence ledger, explicit WPI PASS/WATCH/FAIL thresholds, a Platform Owner capacity-gate view, a read-only production smoke harness, and an isolated/staging load-test harness that exercises bounded public RPCs plus public Realtime Broadcast subscriptions.
 
-Public score delivery now uses sanitized Supabase Realtime Broadcast as the primary update path. The database trigger sends only public score/state fields to a per-game public topic; the browser keeps a safety RPC fallback and immediately falls back if Realtime is unavailable. Anonymous privacy remains score/team-level only.
+Full mega-event mode is hard-blocked against the current WPI production Supabase host and requires an explicit staging confirmation. A staging-only 6,000-game fixture and cleanup script are included but are not migrations and must never be run against production. The capacity gate cannot PASS from a smoke probe or incomplete evidence: it requires the 6,000-game / 100+ active-game / 10,000-viewer envelope plus public-read, Realtime, score-integrity, finalization, ad-impact and database-resource measurements.
 
-A Platform Owner Scale Readiness page reports the current observed WPI footprint, verifies the pagination/index/Broadcast foundation, and can run lightweight endpoint-latency probes. It explicitly does not certify the 6,000-game / 10,000-viewer target: a controlled mega-event load test is still required before JO-scale traffic.
-
-Supabase migration required: `202608220002_scale_mega_event_readiness.sql`. No Edge Function redeploy, new secret, Stripe activation, hosting migration, or infrastructure upgrade is required.
+Supabase migration required: `202608220003_mega_event_capacity_gate.sql`. No Edge Function redeploy, secret, Stripe activation, hosting migration, or infrastructure-tier purchase is required.

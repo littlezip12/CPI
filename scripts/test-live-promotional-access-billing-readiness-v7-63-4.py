@@ -11,7 +11,7 @@ version=read('VERSION.md'); site=json.loads(read('config/site-release.json'))
 sql=read('supabase/migrations/202608170005_promotional_access_billing_readiness.sql')
 html=read('live-team-insights.html'); js=read('js/live-team-insights-v7-63-4.js'); css=read('css/live-team-insights-v7-63-4.css')
 billing=read('supabase/functions/team-insights-billing/index.ts'); webhook=read('supabase/functions/stripe-subscription-webhook/index.ts'); config=read('supabase/config.toml')
-req(any(v in version for v in ('WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9','WPI 7.64.0','WPI 7.64.1','WPI 7.64.2')),'VERSION missing 7.63.4+'); req(site.get('version') in {'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2'},'site release mismatch')
+req(any(v in version for v in ('WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9','WPI 7.64.0','WPI 7.64.1','WPI 7.64.2','WPI 7.64.3')),'VERSION missing 7.63.4+'); req(site.get('version') in {'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3'},'site release mismatch')
 req(site.get('livePromotionalAccessRelease')=='7.63.4','promo release marker missing'); req(site.get('liveBillingReadinessRelease')=='7.63.4','billing marker missing')
 for n in ['live_team_insights_promotions','live_active_team_insights_promotion_v1','live_subscription_prices','live_billing_customers','live_billing_subscriptions','live_billing_events','live_apply_team_insights_subscription_v1','live_team_insights_commerce_status_v1']:
     req(n in sql,f'Missing SQL foundation: {n}')

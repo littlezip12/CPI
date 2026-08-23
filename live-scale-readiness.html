@@ -1,1 +1,88 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>Scale Readiness | WPI Live</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css?v=7.53.4"><link rel="stylesheet" href="css/site-shell.css?v=7.54.13"><link rel="stylesheet" href="css/command-palette.css?v=7.53.4"><link rel="stylesheet" href="css/live-scale-readiness-v7-64-2.css?v=7.64.2"></head><body class="scale-page"><main class="scale-shell"><nav><a href="live-dashboard.html">← Dashboard</a><a href="live-commercial.html">Commercial Operations</a></nav><header class="scale-hero"><p>WPI · Platform Owner</p><h1>Mega-Event Readiness</h1><span>Observed footprint, delivery foundation and lightweight endpoint probes. This page does not claim a load test has passed.</span></header><section id="scaleLoading" class="scale-state">Loading scale snapshot…</section><section id="scaleError" class="scale-state scale-error" hidden></section><section id="scaleContent" hidden><div class="scale-targets"><article><b>150K</b><span>games / year design</span></article><article><b>6,000</b><span>games / mega-event</span></article><article><b>10,000</b><span>simultaneous viewers target</span></article><article><b>250</b><span>events / game ceiling</span></article></div><section class="scale-panel"><div class="scale-heading"><div><p>Observed now</p><h2>Current database footprint</h2></div><button id="scaleRefresh">Refresh snapshot</button></div><div id="scaleObserved" class="scale-grid"></div></section><section class="scale-panel"><div class="scale-heading"><div><p>Foundation</p><h2>Scale controls installed</h2></div></div><div id="scaleFoundation" class="scale-checks"></div></section><section class="scale-panel"><div class="scale-heading"><div><p>Probe</p><h2>Current endpoint latency</h2></div><button id="scaleProbe">Run 5-call probe</button></div><p class="scale-note">Measures this browser’s round-trip latency to bounded public RPCs. It is useful operational telemetry, not concurrency certification.</p><div id="scaleProbeResults" class="scale-grid"><div class="scale-empty">Probe not run yet.</div></div></section><section class="scale-warning"><strong>Mega-event gate is still required.</strong><span>Before a JO-scale launch, run a controlled load test with thousands of viewers, 100+ simultaneous games, finalize bursts, ads, recaps and analytics while measuring p50/p95/p99 latency, database CPU/I/O/connections, Realtime health and score persistence.</span></section></section></main><script src="config/live-sandbox.js?v=7.57.22"></script><script src="js/live-backend-v7-56-8.js?v=7.57.20"></script><script src="js/live-scale-readiness-v7-64-2.js?v=7.64.2"></script><script defer src="js/site-shell.js?v=7.62.3"></script><script defer src="js/command-palette.js?v=7.62.2"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Mega-Event Capacity | WPI Live</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/live-scale-readiness-v7-64-3.css?v=7.64.3">
+</head>
+<body class="scale-page">
+<main class="scale-shell">
+  <nav><a href="live-dashboard.html">← Dashboard</a><a href="live-commercial.html">Commercial Operations</a></nav>
+  <header class="scale-hero">
+    <p>WPI · Platform Owner</p>
+    <h1>Mega-Event Capacity Gate</h1>
+    <span>Observed footprint, bounded public-read probes and recorded isolated load-test evidence. Production smoke tests can never certify the mega-event gate.</span>
+  </header>
+
+  <section id="scaleLoading" class="scale-state">Loading scale and capacity status…</section>
+  <section id="scaleError" class="scale-state scale-error" hidden></section>
+
+  <section id="scaleContent" hidden>
+    <div class="scale-targets">
+      <article><b>150K</b><span>games / year design</span></article>
+      <article><b>6,000</b><span>games / mega-event gate</span></article>
+      <article><b>10,000</b><span>simultaneous viewer gate</span></article>
+      <article><b>100+</b><span>simultaneous active games</span></article>
+    </div>
+
+    <section class="scale-panel">
+      <div class="scale-heading"><div><p>Capacity gate</p><h2>Certification status</h2></div><button id="gateRefresh">Refresh gate</button></div>
+      <div id="capacityGateHero" class="capacity-gate-hero"></div>
+      <div id="capacityLatest" class="scale-grid"></div>
+      <p id="capacityGateNote" class="scale-note"></p>
+    </section>
+
+    <section class="scale-panel">
+      <div class="scale-heading"><div><p>Observed now</p><h2>Current database footprint</h2></div><button id="scaleRefresh">Refresh snapshot</button></div>
+      <div id="scaleObserved" class="scale-grid"></div>
+    </section>
+
+    <section class="scale-panel">
+      <div class="scale-heading"><div><p>Foundation</p><h2>Scale controls installed</h2></div></div>
+      <div id="scaleFoundation" class="scale-checks"></div>
+    </section>
+
+    <section class="scale-panel">
+      <div class="scale-heading"><div><p>Safe production smoke</p><h2>Current endpoint latency</h2></div><button id="scaleProbe">Run 5-call probe</button></div>
+      <p class="scale-note">Measures this browser’s round-trip latency to bounded public RPCs. It is operational telemetry only and cannot produce a mega-event PASS.</p>
+      <div id="scaleProbeResults" class="scale-grid"><div class="scale-empty">Probe not run yet.</div></div>
+    </section>
+
+    <section class="scale-panel">
+      <div class="scale-heading"><div><p>Release gate</p><h2>WPI 7.64.3 thresholds</h2></div></div>
+      <p class="scale-note">These are WPI operational release thresholds, not Supabase vendor guarantees. Missing required evidence results in <strong>Not certified</strong>; confirmed score-integrity loss is an automatic FAIL.</p>
+      <div id="capacityThresholds" class="capacity-thresholds"></div>
+    </section>
+
+    <section class="scale-panel">
+      <div class="scale-heading"><div><p>Record evidence</p><h2>Import capacity-gate report</h2></div><a class="scale-link" href="WPI_7.64.3_MEGA_EVENT_LOAD_TEST_RUNBOOK.md">Load-test runbook</a></div>
+      <p class="scale-note">Aggregate isolated test shards with <code>scripts/wpi-capacity-gate-v7-64-3.py</code>, then import the generated JSON here. The server recalculates PASS / WATCH / FAIL and rejects reports containing credentials.</p>
+      <div class="capacity-import">
+        <label class="capacity-file"><span>Capacity report JSON</span><input id="capacityReportFile" type="file" accept="application/json,.json"></label>
+        <button id="capacityRecord" disabled>Record report</button>
+        <a href="scripts/WPI_7.64.3_CAPACITY_EVIDENCE_TEMPLATE.json" class="scale-link">Evidence template</a>
+      </div>
+      <div id="capacityReportPreview" class="capacity-preview">No report selected.</div>
+      <div id="capacityRecordStatus" class="scale-note"></div>
+    </section>
+
+    <section class="scale-warning">
+      <strong>Full load testing must be isolated.</strong>
+      <span>The 7.64.3 harness hard-blocks mega-event mode against the current WPI production Supabase host. Use staging/isolated data for the 6,000-game fixture, 100+ active games and high-concurrency Realtime/read testing. Only measurements justify a future Supabase or hosting upgrade.</span>
+    </section>
+  </section>
+</main>
+<script src="config/live-sandbox.js?v=7.57.22"></script>
+<script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+<script src="js/live-scale-readiness-v7-64-3.js?v=7.64.3"></script>
+<script defer src="js/site-shell.js?v=7.62.3"></script>
+<script defer src="js/command-palette.js?v=7.62.2"></script>
+</body></html>

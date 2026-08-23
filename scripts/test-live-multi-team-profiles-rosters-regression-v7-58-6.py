@@ -7,7 +7,7 @@ def read(rel): return (ROOT/rel).read_text(encoding='utf-8')
 def req(ok,msg):
     if not ok: raise AssertionError(msg)
 release=json.loads(read('config/site-release.json'))
-req(release.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2'},'current release must preserve 7.58.6 or later')
+req(release.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3'},'current release must preserve 7.58.6 or later')
 for key in ('liveScoringTeamProfileRelease','liveScoringRosterVersioningRelease','liveScoringSeasonAwareRosterRelease','liveScoringDefaultLineupRelease','liveScoringMultiTeamProfilesRostersRelease'):
     req(release.get(key)=='7.58.2',f'7.58.2 marker changed: {key}')
 expected={

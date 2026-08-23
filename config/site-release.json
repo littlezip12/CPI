@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.2",
-  "name": "Scale & Mega-Event Readiness",
+  "version": "7.64.3",
+  "name": "Mega-Event Load Test & Capacity Gate",
   "date": "2026-08-22",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds bounded server-side public scoreboard/tournament filtering and pagination, sanitized Supabase Broadcast score delivery with RPC fallback, public read indexes, and a Platform Owner scale-readiness snapshot/probe. No infrastructure tier purchase or mega-event load-test certification.",
+  "notes": "Adds a production-safe load-test evidence ledger, explicit WPI capacity thresholds, isolated/staging load-test harness and fixture tooling, shard aggregation/reporting, and a Platform Owner mega-event capacity gate. Full load mode is hard-blocked against the current WPI production Supabase host; no infrastructure tier is purchased or auto-certified.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -288,5 +288,9 @@
   "liveMegaEventReadinessRelease": "7.64.2",
   "livePublicPaginationRelease": "7.64.2",
   "livePublicScoreBroadcastRelease": "7.64.2",
-  "liveScaleObservabilityRelease": "7.64.2"
+  "liveScaleObservabilityRelease": "7.64.2",
+  "liveCapacityGateRelease": "7.64.3",
+  "liveLoadTestHarnessRelease": "7.64.3",
+  "liveCapacityReportRelease": "7.64.3",
+  "liveScaleThresholdRelease": "7.64.3"
 }
