@@ -6,15 +6,15 @@ def req(c,m):
     if not c: raise AssertionError(m)
 def read(rel):
     p=ROOT/rel;req(p.exists(),f"Missing file: {rel}");return p.read_text(encoding="utf-8")
-site=json.loads(read("config/site-release.json"));version=read("VERSION.md");html=read("live-game.html");js=read("js/live-fan-experience-v7-64-0.js");css=read("css/live-fan-experience-v7-64-0.css")
-req("WPI 7.64.0" in version,"VERSION missing 7.64.0")
-req(site.get("version")=="7.64.0","site release mismatch")
+site=json.loads(read("config/site-release.json"));version=read("VERSION.md");html=read("live-game.html");active_js="js/live-fan-experience-v7-64-1.js" if site.get("version")=="7.64.1" else "js/live-fan-experience-v7-64-0.js";js=read(active_js);active_css="css/live-fan-experience-v7-64-1.css" if site.get("version")=="7.64.1" else "css/live-fan-experience-v7-64-0.css";css=read(active_css)
+req(any(v in version for v in ("WPI 7.64.0","WPI 7.64.1")),"VERSION missing 7.64.0+ fan baseline")
+req(site.get("version") in {"7.64.0","7.64.1"},"site release mismatch")
 for key in ("liveScoringFanExperienceRelease","liveScoringFanGameCenterRelease","liveScoringFanPlayByPlayRelease","liveScoringFanStatsRelease"):req(site.get(key)=="7.64.0",f"missing marker {key}")
 for token in ("liveFanExperience","fanTeamScore","fanOpponentScore","fanPeriod","fanClock","fanLastPlay","fanPeriods","fanPlayList","fanTeamStats","fanPlayerLeaders","fanGameInfo","fanPrimaryAction"):
     req(token in html,f"fan surface missing {token}")
-req("live-fan-experience-v7-64-0.css?v=7.64.0" in html,"fan CSS not loaded")
-req("live-fan-experience-v7-64-0.js?v=7.64.0-launch-stability-1" in html,"fan JS launch-stability cache bust not loaded")
-req(html.index("js/live-fan-experience-v7-64-0.js?v=7.64.0-launch-stability-1")>html.index("js/live-game-v7-58-6.js?v=7.58.6"),"fan layer must load after protected scorer engine")
+req(("live-fan-experience-v7-64-0.css?v=7.64.0" in html) or ("live-fan-experience-v7-64-1.css?v=7.64.1" in html),"fan CSS not loaded")
+req(("live-fan-experience-v7-64-0.js?v=7.64.0-launch-stability-1" in html) or ("live-fan-experience-v7-64-1.js?v=7.64.1" in html),"fan JS launch-stability layer not loaded")
+fan_src="js/live-fan-experience-v7-64-1.js?v=7.64.1" if "js/live-fan-experience-v7-64-1.js?v=7.64.1" in html else "js/live-fan-experience-v7-64-0.js?v=7.64.0-launch-stability-1";req(html.index(fan_src)>html.index("js/live-game-v7-58-6.js?v=7.58.6"),"fan layer must load after protected scorer engine")
 for token in ('is-live-viewer','is-live-fan-ready','live_game_recap_detail_v1','data-fan-tab','data-fan-filter','navigator.share','navigator.clipboard','View final recap','live-game-recap.html?game=','live-team-insights.html?team='):
     req(token in js,f"fan behavior missing {token}")
 # Launch stability: the additive fan layer must stay completely dormant during scorer/new-game launch.

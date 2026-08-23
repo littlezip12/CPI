@@ -16,7 +16,7 @@ js=read('js/live-club-theme-v7-60-0.js')
 builder=read('scripts/build-live-club-theme-registry-v7-60-0.py')
 
 req(read('VERSION.md').strip() in {'# WPI 7.60.0 — Club Branding Platform','# WPI 7.60.1 — Self-Service Club Onboarding','# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'VERSION mismatch')
-req(site.get('version') in {'7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0'},'release metadata mismatch')
+req(site.get('version') in {'7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1'},'release metadata mismatch')
 for key in ('liveScoringClubBrandingPlatformRelease','liveScoringThemeRegistryRelease','liveScoringCanonicalClubBrandingRelease','liveScoringThemeActivationSafetyRelease'):
     req(site.get(key)=='7.60.0',f'missing 7.60.0 marker {key}')
 req(site.get('liveScoringLamorindaPilotReadyRelease')=='7.59.0','7.59.0 pilot-ready milestone must remain historical')

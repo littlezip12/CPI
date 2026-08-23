@@ -21,7 +21,7 @@ feed=read('js/live-tournament-feed-v7-58-5.js')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
 
 req(read('VERSION.md').strip() in {'# WPI 7.58.6 — Club-Level Pilot Hardening','# WPI 7.58.7 — Club Pilot Validation & Observability','# WPI 7.58.8 — Club-Branded Game Experience','# WPI 7.58.9 — Club Operations & Scale Polish','# WPI 7.58.10 — Pilot Launch Prep & Admin Safety','# WPI 7.59.0 — Lamorinda Club Pilot Ready','# WPI 7.60.0 — Club Branding Platform','# WPI 7.60.1 — Self-Service Club Onboarding','# WPI 7.60.2 — Team Directory & Identity Management','# WPI 7.60.3 — Public / Supporter Experience at Scale'},'VERSION mismatch')
-req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0'},'release metadata mismatch')
+req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1'},'release metadata mismatch')
 for key in ('liveScoringClubPilotHardeningRelease','liveScoringConcurrentGameIsolationRelease','liveScoringOfflineGameIsolationRelease','liveScoringClubRegressionRelease','liveScoringGameLocalStateRelease'):
     req(site.get(key)=='7.58.6',f'missing 7.58.6 marker {key}')
 req(site.get('liveScoringTournamentFeedValidationRelease')=='7.58.5','7.58.5 tournament-feed marker changed')

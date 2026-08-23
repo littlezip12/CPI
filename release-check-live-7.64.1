@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.64.1 Focused Release Check"
+echo "====================================="
+node --check js/live-tournament-v7-64-1.js
+node --check js/live-tournament-discovery-v7-64-1.js
+node --check js/live-public-center-v7-64-1.js
+node --check js/live-public-score-v7-64-1.js
+node --check js/live-fan-experience-v7-64-1.js
+python3 scripts/test-live-tournament-experience-v7-64-1.py
+python3 scripts/test-live-game-fan-experience-v7-64-0.py
+python3 scripts/test-live-supporter-home-team-experience-v7-63-9.py
+python3 scripts/test-live-public-center-v7-62-3.py
+python3 scripts/test-live-public-game-publishing-v7-62-4.py
+python3 scripts/test-live-public-matchup-identity-v7-62-5.py
+python3 scripts/test-live-organization-insights-sponsorship-v7-63-5.py
+python3 scripts/test-public-tournament-hub-v7-54-4.py
+echo
+echo "WPI Live 7.64.1 focused release check passed."

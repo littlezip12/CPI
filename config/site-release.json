@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.0",
-  "name": "Live Game UX & Fan Experience",
-  "date": "2026-08-19",
+  "version": "7.64.1",
+  "name": "Tournament Experience",
+  "date": "2026-08-22",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds a Supporter-only mobile-first Game Center with live score context, play-by-play, recorded stats, game info, sharing and Final-to-Recap navigation without modifying scorer workflows or the protected game engine.",
+  "notes": "Adds public WPI Live tournament centers with live/upcoming/final game views, division/team/status filtering, WPI-team tournament records, tournament discovery and connected navigation from public scores and the authenticated Supporter fan experience. Records are explicitly not official standings unless supported by source data.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -278,5 +278,10 @@
   "liveScoringFanExperienceRelease": "7.64.0",
   "liveScoringFanGameCenterRelease": "7.64.0",
   "liveScoringFanPlayByPlayRelease": "7.64.0",
-  "liveScoringFanStatsRelease": "7.64.0"
+  "liveScoringFanStatsRelease": "7.64.0",
+  "liveTournamentExperienceRelease": "7.64.1",
+  "liveTournamentCenterRelease": "7.64.1",
+  "liveTournamentDiscoveryRelease": "7.64.1",
+  "liveTournamentTeamRecordsRelease": "7.64.1",
+  "liveTournamentNavigationRelease": "7.64.1"
 }

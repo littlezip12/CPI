@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/live-public-v7-62-5.css?v=7.62.5">
+  <link rel="stylesheet" href="css/live-tournament-discovery-v7-64-1.css?v=7.64.1">
 </head>
 <body class="wpi-public-live-page">
   <main class="public-live-shell">
@@ -23,6 +24,12 @@
       <article><strong id="publicUpcomingCount">—</strong><span>Upcoming</span></article>
       <article><strong id="publicFinalCount">—</strong><span>Recent finals</span></article>
       <article><strong id="publicLastUpdated">—</strong><span>Last refreshed</span></article>
+    </section>
+
+    <section class="public-live-panel" id="tournamentCenters">
+      <div class="public-live-heading"><div><p class="public-live-kicker">Tournament centers</p><h2>Follow an event</h2></div><a class="public-live-tournament-archive" href="tournaments.html">Tournament archive →</a></div>
+      <p class="public-live-policy">Tournament centers combine only games published through WPI Live. They do not invent missing schedules, standings or brackets.</p>
+      <div id="publicTournamentCenters" class="public-tournament-centers"><div class="public-live-empty">Loading tournament centers…</div></div>
     </section>
 
     <section class="public-live-panel">
@@ -42,7 +49,8 @@
   </main>
   <script src="config/live-sandbox.js?v=7.57.20"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-public-center-v7-62-5.js?v=7.62.5"></script>
+  <script src="js/live-public-center-v7-64-1.js?v=7.64.1"></script>
+  <script src="js/live-tournament-discovery-v7-64-1.js?v=7.64.1"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
 </body>

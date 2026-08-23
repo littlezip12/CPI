@@ -1,0 +1,11 @@
+/* WPI 7.64.1 — public Live tournament discovery. */
+(async()=>{
+  "use strict";
+  const target=document.getElementById("publicTournamentCenters");if(!target)return;
+  const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
+  const date=value=>{if(!value)return"Dates TBD";const d=new Date(value);return Number.isNaN(d.getTime())?"Dates TBD":d.toLocaleDateString([],{month:"short",day:"numeric",year:"numeric"});};
+  function href(t){const u=new URL("live-tournament.html",location.href);u.search="";u.hash="";if(t.tournamentPublicId)u.searchParams.set("id",t.tournamentPublicId);else{u.searchParams.set("name",t.name||"");if(t.competitiveSeason)u.searchParams.set("season",t.competitiveSeason);}return u.pathname.split('/').pop()+u.search;}
+  function card(t){const live=Number(t.liveGames||0),status=live?`${live} LIVE`:Number(t.upcomingGames||0)>0?"UPCOMING":"RECENT";return `<article class="public-tournament-card"><a href="${esc(href(t))}"><div class="public-tournament-card-head"><strong>${esc(t.name||"WPI Tournament")}</strong><span class="${live?"is-live":""}">${esc(status)}</span></div><p>${esc([t.competitiveSeason,date(t.firstGameAt)].filter(Boolean).join(" · "))}</p><div class="public-tournament-card-stats"><div><b>${esc(t.liveGames||0)}</b><small>Live</small></div><div><b>${esc(t.finalGames||0)}</b><small>Finals</small></div><div><b>${esc(t.wpiTeams||0)}</b><small>WPI teams</small></div></div></a></article>`;}
+  try{const Backend=window.WPILiveBackend,config=window.WPI_LIVE_SANDBOX_CONFIG||{},backend=Backend?.connect?await Backend.connect(config):null;if(!backend)throw new Error("WPI Live is not configured");const {data,error}=await backend.client.rpc("live_public_tournament_catalog_v1");if(error)throw error;const rows=Array.isArray(data?.tournaments)?data.tournaments:[];target.innerHTML=rows.length?rows.slice(0,6).map(card).join(""):'<div class="public-live-empty">No public WPI Live tournaments are active or recent yet.</div>';}
+  catch(error){console.warn("WPI tournament discovery",error);target.innerHTML='<div class="public-live-empty">Tournament centers are unavailable right now. The public scoreboard below is still available.</div>';}
+})();

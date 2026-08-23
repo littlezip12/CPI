@@ -1,7 +1,9 @@
-# WPI 7.64.0 — Live Game UX & Fan Experience
+# WPI 7.64.1 — Tournament Experience
 
-WPI 7.64.0 turns the authenticated read-only Supporter game view into a dedicated mobile-first fan Game Center while leaving the mature scoring console and scorer authority unchanged. Supporters now receive an always-clear score/period/clock surface plus Game, Plays, Stats and Info views, a latest-play snapshot, period score progression, recorded team comparison metrics, player leaders, share controls and a direct Final-to-Recap transition.
+WPI 7.64.1 turns WPI Live tournament game records into a connected public tournament destination. A tournament center now combines public Live games, upcoming public WPI Live games, recent finals, exact division/stage/game-number context when present, team and division filtering, WPI-team event records, event dates/venues, sharing, youth-safe sponsor inventory, and direct game/team navigation.
 
-The fan layer activates only when the validated scoring controller places the page in `is-live-viewer` mode. Owner/Admin/Scorer workflows continue using the existing scoring console; accepting a scorer handoff removes fan mode immediately and restores scorer UI. Existing supporter sponsorship remains above the fan surface, and free-launch Team Insights remains available and ad-supported.
+Tournament records are deliberately conservative: WPI derives team records only from finalized public WPI Live games and labels them as informational rather than official tournament standings. The tournament schedule likewise contains only games published through WPI Live and does not fabricate missing official schedules, standings, or brackets. Anonymous tournament views remain team-level and never expose rosters, player events, scorer identity, membership, GroupMe delivery data, or private games.
 
-No Supabase migration, Edge Function redeploy, push-notification permission, Stripe activation, new secret or infrastructure upgrade is required. Protected scoring, game storage, backend, GroupMe delivery and roster-extraction files remain byte-stable.
+The public WPI Live Center now surfaces recent/active tournament centers and links tournament game cards into the event destination. Public score pages and the authenticated Supporter Game Info view also link back to the tournament center. The 7.64.0 scorer-launch stability boundary remains intact: `launch=1` bypasses the fan layer, and protected scoring/backend/storage/GroupMe/roster-extraction files remain byte-stable.
+
+Supabase migration required: `202608220001_public_tournament_experience.sql`. No Edge Function redeploy, new secret, Stripe activation, notification permission, or infrastructure upgrade is required.

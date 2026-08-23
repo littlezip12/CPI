@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tournament Center | Water Polo Index</title>
+  <meta name="description" content="WPI Live tournament center with public live scores, upcoming games, recent finals and team records.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=7.53.4">
+  <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
+  <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
+  <link rel="stylesheet" href="css/live-ad-delivery-v7-63-6.css?v=7.63.6">
+  <link rel="stylesheet" href="css/live-tournament-v7-64-1.css?v=7.64.1">
+</head>
+<body class="wpi-live-tournament-page">
+  <main class="lt-shell">
+    <nav class="lt-topnav" aria-label="Tournament navigation"><a href="live.html">← WPI Live</a><div><a href="tournaments.html">Tournament archive</a><a href="live-following.html">My Teams</a></div></nav>
+
+    <section id="ltHero" class="lt-hero">
+      <div class="lt-hero-copy"><p class="lt-kicker">WPI Live · Tournament Center</p><h1 id="ltTitle">Loading tournament…</h1><p id="ltSubtitle">Public WPI Live scores, schedule and results.</p><div id="ltHeroMeta" class="lt-hero-meta"></div></div>
+      <div class="lt-hero-actions"><button id="ltShare" type="button">Share tournament</button><a href="#ltGames">View games</a></div>
+    </section>
+
+    <section id="ltLoading" class="lt-state"><strong>Loading tournament center…</strong><span>Building the event view from public WPI Live games.</span></section>
+    <section id="ltError" class="lt-state lt-state--error" hidden><strong>Tournament unavailable</strong><span id="ltErrorText">This tournament could not be loaded.</span><a href="live.html">Return to WPI Live</a></section>
+
+    <section id="ltContent" hidden>
+      <div id="ltSponsor" class="wpi-live-ad-slot" hidden></div>
+
+      <section class="lt-summary" aria-label="Tournament summary">
+        <article><strong id="ltLiveCount">0</strong><span>Live now</span></article>
+        <article><strong id="ltUpcomingCount">0</strong><span>Upcoming</span></article>
+        <article><strong id="ltFinalCount">0</strong><span>Finals</span></article>
+        <article><strong id="ltTeamCount">0</strong><span>WPI teams</span></article>
+      </section>
+
+      <section class="lt-panel lt-disclaimer">
+        <div><p class="lt-kicker">Data boundary</p><h2>Live tournament coverage, without guessing.</h2></div>
+        <p id="ltSchedulePolicy">The schedule contains only games published through WPI Live and may not represent the complete official tournament schedule.</p>
+      </section>
+
+      <section class="lt-panel" id="ltGames">
+        <div class="lt-heading"><div><p class="lt-kicker">Games</p><h2>Live, upcoming &amp; finals</h2></div><span id="ltVisibleCount">0 games</span></div>
+        <div class="lt-filters">
+          <label>Search<input id="ltSearch" type="search" placeholder="Team or opponent…" autocomplete="off"></label>
+          <label>Division<select id="ltDivision"><option value="all">All divisions</option></select></label>
+          <label>Team<select id="ltTeam"><option value="all">All WPI teams</option></select></label>
+          <label>Status<select id="ltStatus"><option value="all">Live + upcoming + finals</option><option value="live">Live now</option><option value="upcoming">Upcoming</option><option value="final">Finals</option></select></label>
+        </div>
+        <div id="ltGameSections" class="lt-game-sections"><div class="lt-empty">Loading games…</div></div>
+      </section>
+
+      <section class="lt-panel">
+        <div class="lt-heading"><div><p class="lt-kicker">WPI teams</p><h2>Tournament records</h2></div><span id="ltRecordCount">0 teams</span></div>
+        <p id="ltRecordPolicy" class="lt-policy">WPI team records are derived only from finalized public WPI Live games and are not official tournament standings.</p>
+        <div id="ltTeamRecords" class="lt-record-grid"></div>
+      </section>
+
+      <section class="lt-panel lt-details">
+        <div><p class="lt-kicker">Event context</p><h2>What WPI has for this tournament</h2></div>
+        <dl id="ltDetails"></dl>
+      </section>
+    </section>
+  </main>
+  <script src="config/live-sandbox.js?v=7.57.20"></script>
+  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-ad-delivery-v7-63-6.js?v=7.63.6"></script>
+  <script src="js/live-tournament-v7-64-1.js?v=7.64.1"></script>
+  <script defer src="js/site-shell.js?v=7.62.3"></script>
+  <script defer src="js/command-palette.js?v=7.62.2"></script>
+</body>
+</html>
