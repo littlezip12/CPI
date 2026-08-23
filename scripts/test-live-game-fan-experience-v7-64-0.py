@@ -13,10 +13,18 @@ for key in ("liveScoringFanExperienceRelease","liveScoringFanGameCenterRelease",
 for token in ("liveFanExperience","fanTeamScore","fanOpponentScore","fanPeriod","fanClock","fanLastPlay","fanPeriods","fanPlayList","fanTeamStats","fanPlayerLeaders","fanGameInfo","fanPrimaryAction"):
     req(token in html,f"fan surface missing {token}")
 req("live-fan-experience-v7-64-0.css?v=7.64.0" in html,"fan CSS not loaded")
-req("live-fan-experience-v7-64-0.js?v=7.64.0" in html,"fan JS not loaded")
-req(html.index("js/live-fan-experience-v7-64-0.js?v=7.64.0")>html.index("js/live-game-v7-58-6.js?v=7.58.6"),"fan layer must load after protected scorer engine")
+req("live-fan-experience-v7-64-0.js?v=7.64.0-launch-stability-1" in html,"fan JS launch-stability cache bust not loaded")
+req(html.index("js/live-fan-experience-v7-64-0.js?v=7.64.0-launch-stability-1")>html.index("js/live-game-v7-58-6.js?v=7.58.6"),"fan layer must load after protected scorer engine")
 for token in ('is-live-viewer','is-live-fan-ready','live_game_recap_detail_v1','data-fan-tab','data-fan-filter','navigator.share','navigator.clipboard','View final recap','live-game-recap.html?game=','live-team-insights.html?team='):
     req(token in js,f"fan behavior missing {token}")
+# Launch stability: the additive fan layer must stay completely dormant during scorer/new-game launch.
+req('const isLaunchFlow=params.get("launch")==="1"' in js,'launch flow bypass missing')
+req('if(isLaunchFlow)return;' in js,'fan layer must not initialize during launch=1 scorer flow')
+# Observer safety: never watch the entire page subtree while also mutating fan/body UI.
+req('sourceObserver.observe(document.body' not in js,'fan source observer must not watch the entire body subtree')
+req('observer.observe(document.body,{attributes:true,attributeFilter:["class"],childList:true,subtree:true,characterData:true})' not in js,'legacy whole-body observer loop risk returned')
+req('if(nextViewer===lastViewer)return;' in js,'viewer class observer must ignore self-generated body-class mutations')
+req('if(!body.classList.contains("is-live-fan-ready"))body.classList.add("is-live-fan-ready")' in js,'fan-ready class mutation must be state guarded')
 # No write calls or commercial activation in fan controller.
 for bad in ('.from("live_games").update','.from("live_events").insert','.from("live_events").update','recordEvent','saveScoreCorrection','stripe','Notification.requestPermission','PushManager','serviceWorker.register'):
     req(bad not in js,f"fan controller must remain read-only / no new permissions: {bad}")

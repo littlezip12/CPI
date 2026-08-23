@@ -3,9 +3,11 @@
 (()=>{
   "use strict";
   const $=id=>document.getElementById(id);
-  const gameId=new URLSearchParams(location.search).get("game")||"";
+  const params=new URLSearchParams(location.search);
+  const gameId=params.get("game")||"";
+  const isLaunchFlow=params.get("launch")==="1";
   const config=window.WPI_LIVE_SANDBOX_CONFIG||{};
-  let backend=null,detail=null,activeTab="game",playFilter="all",detailLoading=null,observer=null,refreshTimer=null;
+  let backend=null,detail=null,activeTab="game",playFilter="all",detailLoading=null,viewerObserver=null,sourceObserver=null,refreshTimer=null;
   const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
   const text=id=>$(id)?.textContent?.trim()||"";
   const isViewer=()=>document.body.classList.contains("is-live-viewer");
@@ -15,9 +17,15 @@
   const playerLabel=e=>[e?.playerCap?`#${e.playerCap}`:"",e?.playerName||e?.shooterLabel||""].filter(Boolean).join(" ")||"Team event";
   const eventWhen=e=>e?.phase==="shootout"||String(e?.eventType||"").startsWith("shootout_")?`SO · R${e?.metrics?.shootoutRound||e?.shootoutRound||1}`:`${e?.periodLabel||(`Q${e?.quarter||1}`)} · ${Math.floor(Number(e?.timeRemainingSeconds||0)/60)}:${String(Number(e?.timeRemainingSeconds||0)%60).padStart(2,"0")}`;
   function activate(){
-    const fan=$("liveFanExperience");
-    if(!fan||!isViewer()){document.body.classList.remove("is-live-fan-ready");if(fan)fan.hidden=true;return;}
-    fan.hidden=false;document.body.classList.add("is-live-fan-ready");syncScore();syncLastPlay();void ensureDetail("initial");
+    const fan=$("liveFanExperience"),viewer=isViewer(),body=document.body;
+    if(!fan||!viewer){
+      if(body.classList.contains("is-live-fan-ready"))body.classList.remove("is-live-fan-ready");
+      if(fan&&!fan.hidden)fan.hidden=true;
+      return;
+    }
+    if(fan.hidden)fan.hidden=false;
+    if(!body.classList.contains("is-live-fan-ready"))body.classList.add("is-live-fan-ready");
+    syncScore();syncLastPlay();void ensureDetail("initial");
   }
   function syncScore(){
     if(!$("liveFanExperience"))return;
@@ -53,7 +61,32 @@
   function setTab(name){activeTab=name;document.querySelectorAll("[data-fan-tab]").forEach(a=>a.classList.toggle("is-active",a.dataset.fanTab===name));document.querySelectorAll("[data-fan-panel]").forEach(p=>p.hidden=p.dataset.fanPanel!==name);if(name!=="game")void ensureDetail(`tab:${name}`);}
   async function shareGame(event){event?.preventDefault();const url=location.href,title=`${text("scoreTeamName")||"WPI Live"} vs ${text("scoreOpponentName")||"Opponent"}`,share={title,text:`${title} · ${text("teamScore")||0}–${text("opponentScore")||0} · ${text("scorePeriodLabel")} ${text("scoreClockLabel")}`,url};try{if(navigator.share){await navigator.share(share);return;}await navigator.clipboard.writeText(url);$("fanShareLink").textContent="Link copied";setTimeout(()=>{$("fanShareLink").textContent="Share";},1500);}catch(_){}}
   function bind(){document.querySelectorAll("[data-fan-tab]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();setTab(a.dataset.fanTab);}));document.querySelectorAll("[data-fan-filter]").forEach(a=>a.addEventListener("click",e=>{e.preventDefault();playFilter=a.dataset.fanFilter;document.querySelectorAll("[data-fan-filter]").forEach(x=>x.classList.toggle("is-active",x===a));renderPlays();}));$("fanShareLink")?.addEventListener("click",shareGame);}
-  function observe(){if(observer)return;const scoreIds=new Set(["scoreTeamName","scoreOpponentName","teamScore","opponentScore","scorePeriodLabel","scoreClockLabel","gameStatus"]);observer=new MutationObserver(mutations=>{if(mutations.some(m=>m.type==="attributes"&&m.target===document.body)){activate();return;}if(!isViewer())return;const scoreChanged=mutations.some(m=>scoreIds.has(m.target?.id)||scoreIds.has(m.target?.parentElement?.id));const eventChanged=mutations.some(m=>m.target?.id==="timelineList"||m.target?.closest?.("#timelineList"));if(scoreChanged)syncScore();if(eventChanged){syncLastPlay();if(activeTab!=="game"){clearTimeout(refreshTimer);refreshTimer=setTimeout(()=>void ensureDetail("timeline-change"),900);}}});observer.observe(document.body,{attributes:true,attributeFilter:["class"],childList:true,subtree:true,characterData:true});}
-  function init(){bind();observe();activate();document.addEventListener("visibilitychange",()=>{if(!document.hidden&&isViewer()){syncScore();syncLastPlay();if(activeTab!=="game")void ensureDetail("visible");}});}
+  function observe(){
+    if(viewerObserver||sourceObserver)return;
+    let lastViewer=isViewer();
+    viewerObserver=new MutationObserver(()=>{
+      const nextViewer=isViewer();
+      if(nextViewer===lastViewer)return;
+      lastViewer=nextViewer;
+      activate();
+    });
+    viewerObserver.observe(document.body,{attributes:true,attributeFilter:["class"]});
+
+    const scoreIds=new Set(["scoreTeamName","scoreOpponentName","teamScore","opponentScore","scorePeriodLabel","scoreClockLabel","gameStatus"]);
+    sourceObserver=new MutationObserver(mutations=>{
+      if(!isViewer())return;
+      const scoreChanged=mutations.some(m=>scoreIds.has(m.target?.id)||scoreIds.has(m.target?.parentElement?.id));
+      const eventChanged=mutations.some(m=>m.target?.id==="timelineList"||m.target?.closest?.("#timelineList"));
+      if(scoreChanged)syncScore();
+      if(eventChanged){syncLastPlay();if(activeTab!=="game"){clearTimeout(refreshTimer);refreshTimer=setTimeout(()=>void ensureDetail("timeline-change"),900);}}
+    });
+    scoreIds.forEach(id=>{const node=$(id);if(node)sourceObserver.observe(node,{childList:true,subtree:true,characterData:true});});
+    const timeline=$("timelineList");if(timeline)sourceObserver.observe(timeline,{childList:true,subtree:true,characterData:true});
+  }
+  function init(){
+    if(isLaunchFlow)return;
+    bind();observe();activate();
+    document.addEventListener("visibilitychange",()=>{if(!document.hidden&&isViewer()){syncScore();syncLastPlay();if(activeTab!=="game")void ensureDetail("visible");}});
+  }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
 })();
