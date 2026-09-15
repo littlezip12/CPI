@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.64.5 Focused Release Check"
+echo "====================================="
+node --check js/live-opponent-autocomplete-v7-64-5.js
+python3 -m py_compile scripts/test-live-mobile-recap-opponent-search-v7-64-5.py
+python3 scripts/test-live-mobile-recap-opponent-search-v7-64-5.py
+./release-check-live-7.64.4
+printf '\nWPI Live 7.64.5 focused release check passed.\n'

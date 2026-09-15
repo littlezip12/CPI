@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.4",
-  "name": "Mobile Game Setup & Scoring Polish",
+  "version": "7.64.5",
+  "name": "Mobile Recap & Opponent Search Polish",
   "date": "2026-09-14",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Simplifies Owner/Admin mobile game creation into a guided four-step flow, adds explicit clock confirmation with mobile Done-key support, and hardens dashboard/scoring layouts to fit narrow mobile screens without horizontal overflow. No scoring-engine, backend, Supabase schema, Edge Function, secret, billing, or infrastructure changes.",
+  "notes": "Polishes the mobile final-game action layout and replaces unreliable native datalist opponent entry with visible, tap-friendly WPI team autocomplete. Preserves manual opponent entry and explicit identity selection. No scoring-engine, backend, Supabase schema, Edge Function, secret, billing, or infrastructure changes.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -295,5 +295,7 @@
   "liveScaleThresholdRelease": "7.64.3",
   "liveScoringMobileGameSetupRelease": "7.64.4",
   "liveScoringClockEntryUxRelease": "7.64.4",
-  "liveScoringMobileViewportFitRelease": "7.64.4"
+  "liveScoringMobileViewportFitRelease": "7.64.4",
+  "liveScoringMobileRecapActionsRelease": "7.64.5",
+  "liveScoringOpponentAutocompleteRelease": "7.64.5"
 }

@@ -1,0 +1,34 @@
+/* WPI 7.64.5 — Mobile Recap & Opponent Search Polish */
+.live-opponent-search-label{position:relative}
+.live-opponent-autocomplete{display:grid;max-height:260px;overflow-y:auto;margin-top:6px;border:1px solid #cbd7e3;border-radius:12px;background:#fff;box-shadow:0 14px 34px rgba(15,23,42,.12);overscroll-behavior:contain;z-index:30}
+.live-opponent-autocomplete[hidden]{display:none}
+.live-opponent-option{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 10px;align-items:center;width:100%;min-height:54px;padding:9px 11px;border:0;border-bottom:1px solid #edf1f5;border-radius:0;background:#fff;color:#14283d;text-align:left;cursor:pointer}
+.live-opponent-option:last-child{border-bottom:0}
+.live-opponent-option strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:14px;font-weight:900}
+.live-opponent-option small{grid-column:1;color:#64748b;font-size:10px;font-weight:700;line-height:1.25}
+.live-opponent-option em{grid-column:2;grid-row:1/3;align-self:center;padding:4px 7px;border-radius:999px;background:#f1f5f9;color:#526174;font-size:9px;font-style:normal;font-weight:900;white-space:nowrap}
+.live-opponent-option[data-active="true"],.live-opponent-option:focus-visible{outline:none;background:#eef6ff;box-shadow:inset 3px 0 #0f4d92}
+.live-opponent-empty{padding:12px;color:#64748b;font-size:12px;line-height:1.4}
+
+@media(max-width:720px){
+  /* Final-game actions should read as controls, not oversized three-column tiles. */
+  body.wpi-live-sandbox-page .live-summary-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:14px}
+  body.wpi-live-sandbox-page .live-summary-actions button{width:100%;min-height:48px;margin:0;padding:10px 12px;border-radius:12px;font-size:14px;font-weight:900;line-height:1.15;white-space:nowrap}
+  body.wpi-live-sandbox-page .live-summary-actions #summaryDashboardButton{grid-column:1/-1;border-color:var(--live-navy,#071426);background:var(--live-navy,#071426);color:#fff}
+  body.wpi-live-sandbox-page .live-summary-actions #reopenGameButton{grid-column:auto;border-color:#d6a62d;background:#fff8e6;color:#6b4b00}
+  body.wpi-live-sandbox-page .live-summary-actions #downloadLogButton{grid-column:auto;background:#fff;color:#173e66}
+  body.wpi-live-sandbox-page .live-summary-actions #resetSandboxButton[hidden]{display:none!important}
+
+  /* Visible, tap-friendly team matches work consistently on iOS instead of relying on datalist UI. */
+  #gameDayDialog .live-opponent-autocomplete{max-height:230px;margin-top:5px;border-radius:11px;box-shadow:none}
+  #gameDayDialog .live-opponent-option{min-height:58px;padding:10px 11px}
+  #gameDayDialog .live-opponent-option strong{font-size:15px}
+  #gameDayDialog .live-opponent-option small{font-size:11px}
+  #gameDayDialog .live-opponent-option em{font-size:10px}
+}
+@media(max-width:340px){
+  body.wpi-live-sandbox-page .live-summary-actions{grid-template-columns:1fr}
+  body.wpi-live-sandbox-page .live-summary-actions #summaryDashboardButton,
+  body.wpi-live-sandbox-page .live-summary-actions #reopenGameButton,
+  body.wpi-live-sandbox-page .live-summary-actions #downloadLogButton{grid-column:1}
+}

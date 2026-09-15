@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-61-1.css?v=7.61.1">
   <link rel="stylesheet" href="css/live-dashboard-v7-62-0.css?v=7.62.0">
   <link rel="stylesheet" href="css/live-mobile-game-ux-v7-64-4.css?v=7.64.4">
+  <link rel="stylesheet" href="css/live-mobile-polish-v7-64-5.css?v=7.64.5">
 <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -471,7 +472,7 @@
             <p class="live-game-reconcile-note"><span aria-hidden="true">▤</span><span><strong>One weekend, multiple games.</strong> Choose an existing Scrimmage Weekend for additional games, or create the weekend once. WPI keeps every game under that permanent event record.</span></p>
           </div>
           <div class="live-create-game-form live-create-game-form--single">
-            <label>Opponent · search or enter any team<input id="gameOpponentName" type="text" maxlength="100" list="gameOpponentSuggestions" autocomplete="off" placeholder="Search WPI or enter any team name"><small id="gameOpponentMatchHint" class="live-game-match-hint" data-state="idle">Choose a WPI suggestion or type an unlisted team name exactly as you want it saved.</small></label>
+            <label class="live-opponent-search-label">Opponent · search or enter any team<input id="gameOpponentName" type="text" maxlength="100" autocomplete="off" placeholder="Start typing a team, e.g. Stanford" aria-autocomplete="list" aria-controls="gameOpponentAutocomplete" aria-expanded="false"><div id="gameOpponentAutocomplete" class="live-opponent-autocomplete" role="listbox" aria-label="Matching WPI teams" hidden></div><small id="gameOpponentMatchHint" class="live-game-match-hint" data-state="idle">Start typing to find a WPI team, or enter an unlisted team name exactly as you want it saved.</small></label>
             <datalist id="gameOpponentSuggestions"></datalist>
           </div>
         </section>
@@ -561,6 +562,7 @@
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
   <script src="js/live-dashboard-v7-62-0.js?v=7.62.0"></script>
+  <script src="js/live-opponent-autocomplete-v7-64-5.js?v=7.64.5"></script>
   <script src="js/live-mobile-game-setup-v7-64-4.js?v=7.64.4"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
