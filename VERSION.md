@@ -1,9 +1,13 @@
-# WPI 7.64.5 — Mobile Recap & Opponent Search Polish
+# WPI 7.64.6 — Opponent Search Context Polish
 
-WPI 7.64.5 is a focused pre-ECC usability correction built on the pushed 7.64.4 mobile setup release. It cleans up the end-of-game mobile action area and replaces the browser-native opponent datalist with a visible WPI-controlled autocomplete.
+WPI 7.64.6 is a focused pre-ECC opponent-search refinement built on the pushed WPI 7.64.5 baseline.
 
-On mobile, the final recap actions now use a clear hierarchy: **Back to dashboard** spans the full row, with **Reopen game** and **Download log** beneath it. Narrow phones stack the actions.
+Opponent suggestions now show the team context directly in the primary label. Club teams render as **age + team name**, for example **14U Stanford A**, **14U 680 A**, or **14U Davis B**. The club and gender remain visible as secondary context.
 
-Opponent search now begins after two characters, prioritizes the current age/gender context, ranks starts-with matches before contains matches, supports keyboard navigation, and provides large tap targets on phones. Selecting a suggestion fills the existing opponent field so the established WPI identity-resolution path remains authoritative. Manual opponent entry is still supported; WPI does not silently fuzzy-correct misspellings.
+Search results are ranked by the team creating the game before text-match strength. A 14U Boys workspace therefore sees 14U Boys matches first; a 12U workspace sees 12U matches first. The same ranking framework recognizes JV and Varsity context so, when high-school workspaces are reactivated, a JV workspace prioritizes JV opponents and a Varsity workspace prioritizes Varsity opponents.
 
-No Supabase migration is required. Protected scoring/backend files are unchanged. No Edge Function redeploy, secret, Stripe activation, hosting migration, or infrastructure change is required.
+High-school teams remain excluded from normal club opponent search while WPI is in the current club-only operating mode. The archived high-school directory is consulted only when the active workspace itself is a high-school/JV/Varsity workspace.
+
+Selecting a club suggestion still writes the established canonical team name into the opponent field so the existing identity-resolution and reconciliation path remains unchanged. WPI also shows a confirmation using the full contextual label after selection. Manual opponent entry remains available.
+
+No Supabase migration is required. No protected scoring/backend files are changed. No Edge Function, secret, Stripe, hosting, or infrastructure change is required.

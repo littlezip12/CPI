@@ -5,16 +5,16 @@ def read(p): return (R/p).read_text()
 def req(ok,msg):
     if not ok:
         print('WPI MOBILE RECAP / OPPONENT SEARCH 7.64.5 TEST FAILED\n - '+msg);sys.exit(1)
-site=json.loads(read('config/site-release.json'));version=read('VERSION.md');dash=read('live-dashboard.html');game=read('live-game.html');css=read('css/live-mobile-polish-v7-64-5.css');js=read('js/live-opponent-autocomplete-v7-64-5.js')
-req(site.get('version')=='7.64.5','site release must be 7.64.5')
-req('WPI 7.64.5' in version,'VERSION missing 7.64.5')
+site=json.loads(read('config/site-release.json'));version=read('VERSION.md');dash=read('live-dashboard.html');game=read('live-game.html');css=read('css/live-mobile-polish-v7-64-5.css');js=read('js/live-opponent-autocomplete-v7-64-6.js')
+req(site.get('version') in {'7.64.5','7.64.6'},'site release must preserve 7.64.5 or later')
+req(any(v in version for v in ('WPI 7.64.5','WPI 7.64.6')),'VERSION must preserve 7.64.5 or later')
 req(site.get('liveScoringMobileRecapActionsRelease')=='7.64.5','mobile recap marker missing')
-req(site.get('liveScoringOpponentAutocompleteRelease')=='7.64.5','opponent autocomplete marker missing')
-for needle in ('gameOpponentAutocomplete','aria-autocomplete="list"','Start typing a team, e.g. Stanford','live-opponent-autocomplete-v7-64-5.js','live-mobile-polish-v7-64-5.css'):
+req(site.get('liveScoringOpponentAutocompleteRelease') in {'7.64.5','7.64.6'},'opponent autocomplete marker missing')
+for needle in ('gameOpponentAutocomplete','aria-autocomplete="list"','Start typing a team, e.g. Stanford','live-opponent-autocomplete-v7-64-6.js','live-mobile-polish-v7-64-5.css'):
     req(needle in dash,f'dashboard missing {needle}')
 for needle in ('summaryDashboardButton','reopenGameButton','downloadLogButton','>Download log</button>','live-mobile-polish-v7-64-5.css'):
     req(needle in game,f'game page missing {needle}')
-for needle in ('query.length < 2','team.startsWith(query)','club.startsWith(query)','team.includes(query)','club.includes(query)','slice(0,8)','dispatchEvent(new Event("input"','dispatchEvent(new Event("change"'):
+for needle in ('query.length < 2','matchScore(row,query)','contextRank(row,hints)','slice(0,8)','dispatchEvent(new Event("input"','dispatchEvent(new Event("change"'):
     req(needle in js,f'autocomplete logic missing {needle}')
 req('fuzzy' not in js.lower(),'autocomplete must not implement silent fuzzy correction')
 req('grid-column:1/-1' in css,'dashboard primary recap action must span mobile row')
