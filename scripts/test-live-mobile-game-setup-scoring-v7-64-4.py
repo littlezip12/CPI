@@ -6,8 +6,8 @@ def req(ok,msg):
     if not ok:
         print('WPI MOBILE GAME SETUP 7.64.4 TEST FAILED\n - '+msg);sys.exit(1)
 site=json.loads(read('config/site-release.json'));version=read('VERSION.md');dash=read('live-dashboard.html');game=read('live-game.html');css=read('css/live-mobile-game-ux-v7-64-4.css');wizard=read('js/live-mobile-game-setup-v7-64-4.js');clock=read('js/live-mobile-clock-v7-64-4.js')
-req(site.get('version') in {'7.64.4','7.64.5','7.64.6'},'site release must preserve 7.64.4 or later')
-req(any(v in version for v in ('WPI 7.64.4','WPI 7.64.5','WPI 7.64.6')),'VERSION missing 7.64.4+')
+req(site.get('version') in {'7.64.4','7.64.5','7.64.6','7.64.7'},'site release must preserve 7.64.4 or later')
+req(any(v in version for v in ('WPI 7.64.4','WPI 7.64.5','WPI 7.64.6','WPI 7.64.7')),'VERSION missing 7.64.4+')
 for needle in ('data-game-step="1"','data-game-step="2"','data-game-step="3"','data-game-step="4"','gameWizardBack','gameWizardNext','gameMobileReview','live-mobile-game-setup-v7-64-4.js','live-mobile-game-ux-v7-64-4.css'):
     req(needle in dash,f'dashboard missing {needle}')
 for needle in ('clockConfirmButton','Set time ✓','enterkeyhint="done"','live-mobile-clock-v7-64-4.js','live-mobile-game-ux-v7-64-4.css'):

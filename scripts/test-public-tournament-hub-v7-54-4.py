@@ -9,7 +9,7 @@ hub=load('data/tournaments/public-hub.json')
 html=(ROOT/'tournaments.html').read_text(encoding='utf-8')
 js=(ROOT/'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 css=(ROOT/'css/tournament-hub-v7-54-4.css').read_text(encoding='utf-8')
-if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6'}: errors.append('site version must preserve the tournament hub release')
+if site.get('version') not in {'7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7'}: errors.append('site version must preserve the tournament hub release')
 if site.get('tournamentPublicHubRelease')!='7.55.1': errors.append('tournamentPublicHubRelease must be 7.55.1')
 if site.get('tournamentArchiveExperienceRelease')!='7.54.4': errors.append('tournamentArchiveExperienceRelease must preserve 7.54.4')
 for token in ['Follow every game. See every path.','class="next-tournament-action" id="nextTournamentAction" aria-disabled="true"','id="tournament-archive"','id="tournamentYearTabs"','id="archiveGroupSelect"','id="archiveResults"','polo-medal-team.jpg','js/tournament-hub-v7-54-4.js?v=7.55.1']:
@@ -23,10 +23,16 @@ for token in ['.tournament-hub-hero','.next-tournament-card','.tournament-year-t
     if token not in css: errors.append(f'public hub stylesheet missing {token}')
 
 next_event=hub.get('nextTournament',{})
-if next_event.get('name')!='Evan Cousineau Memorial Cup': errors.append('next tournament must be Evan Cousineau Memorial Cup')
-if next_event.get('dateLabel')!='October 3–4, 2026': errors.append('Evan Cousineau date is incorrect')
-if next_event.get('publicPath') is not None: errors.append('Evan Cousineau must not link until an official schedule is published')
-if next_event.get('status')!='announced': errors.append('Evan Cousineau must be marked announced')
+if site.get('version')=='7.64.7':
+    if next_event.get('name')!='2026 Champions Cup Pacific Zone Qualifier': errors.append('next verified event must be the Pacific Champions Cup qualifier')
+    if next_event.get('dateLabel')!='September 27, 2026': errors.append('Pacific Champions Cup qualifier date is incorrect')
+    if next_event.get('publicPath')!='champions-cup-qualifiers.html#pacific': errors.append('Pacific qualifier must link to the qualifier tracker')
+    if next_event.get('status')!='qualifier_date_confirmed': errors.append('Pacific qualifier must be marked date-confirmed')
+else:
+    if next_event.get('name')!='Evan Cousineau Memorial Cup': errors.append('next tournament must be Evan Cousineau Memorial Cup')
+    if next_event.get('dateLabel')!='October 3–4, 2026': errors.append('Evan Cousineau date is incorrect')
+    if next_event.get('publicPath') is not None: errors.append('Evan Cousineau must not link until an official schedule is published')
+    if next_event.get('status')!='announced': errors.append('Evan Cousineau must be marked announced')
 if 'next.publicPath' not in js: errors.append('hero button does not prioritize an active next tournament')
 season_ids=[row.get('id') for row in hub.get('seasons',[])]
 if season_ids!=['2026-2027','2025-2026']: errors.append(f'archive seasons are incorrect: {season_ids}')
@@ -43,7 +49,7 @@ season_events=[e for e in events if e.get('competitiveSeason')=='2025-2026']; or
 if orders!=sorted(orders) or season_events[-1].get('id')!='2026-junior-olympics': errors.append('Junior Olympics must be last in the 2025–2026 competitive season order')
 if not season_events or season_events[0].get('id')!='2025-evan-cousineau-memorial-cup': errors.append('Evan Cousineau must open the 2025–2026 archive')
 if any(e.get('competitiveSeason')!='2025-2026' for e in events): errors.append('completed public events must be assigned to 2025–2026')
-if next_event.get('competitiveSeason')!='2026-2027': errors.append('upcoming Evan Cousineau must open the 2026–2027 season')
+if next_event.get('competitiveSeason')!='2026-2027': errors.append('upcoming verified event must belong to 2026–2027')
 if hub.get('featuredEventId')!='2026-junior-olympics': errors.append('latest results button must feature the most recent completed tournament')
 if any(e.get('id')=='2026-girls-us-club-championships' for e in events): errors.append('accuracy-hold event must not appear in public archive')
 for rel in ['tournament-operations.html','tournament-source-health.html','jo-performance.html','ranking-review.html','post-jo-review.html','tournament-evidence.html']:

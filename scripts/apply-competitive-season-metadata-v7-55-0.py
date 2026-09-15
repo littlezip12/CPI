@@ -41,7 +41,7 @@ hub["nextTournament"].update(
     {
         "competitiveSeason": ACTIVE_SEASON,
         "seasonLabel": ACTIVE_LABEL,
-        "description": "The Evan Cousineau Memorial Cup opens the 2026–2027 club season. Divisions and schedules will be added when an official source is published.",
+        "description": "The Pacific Zone calendar confirms 14U Champions Cup qualifying on September 27. Lamorinda A 14U Boys is tracked in WPI; opponents, times, venue, bracket and results will be added only when officially published.",
     }
 )
 hub.pop("years", None)
@@ -50,9 +50,9 @@ hub["seasons"] = [
         "id": ACTIVE_SEASON,
         "label": ACTIVE_LABEL,
         "status": "active",
-        "summary": "New season · results gathering begins with Evan Cousineau",
-        "emptyTitle": "2026–2027 results will begin with Evan Cousineau.",
-        "emptyDescription": "The tournament is announced for October 3–4, 2026. Results will appear here after verified schedules and scores are available.",
+        "summary": "New season · qualifier tracking begins with Champions Cup Pacific Zone",
+        "emptyTitle": "2026–2027 verified results begin with Champions Cup qualifying.",
+        "emptyDescription": "The Pacific Zone qualifier date is confirmed for September 27, 2026. WPI will add games and results after the official schedule is published; Evan Cousineau follows October 3–4.",
     },
     {
         "id": FINAL_SEASON,
@@ -98,9 +98,9 @@ write(
                 "id": ACTIVE_SEASON,
                 "label": ACTIVE_LABEL,
                 "status": "active",
-                "startDate": "2026-10-03",
+                "startDate": "2026-09-27",
                 "endDate": None,
-                "openingEventId": "2026-evan-cousineau-memorial-cup",
+                "openingEventId": "2026-champions-cup-pacific-zone-qualifier",
                 "rankingStatus": "results_gathering",
                 "publicRankingLabel": "Results gathering in progress",
             },
@@ -202,5 +202,5 @@ if archive_index_path.exists():
 
 print("WPI COMPETITIVE SEASON METADATA APPLIED")
 print(" - 2025–2026: Evan Cousineau through Junior Olympics")
-print(" - 2026–2027: active, opening with upcoming Evan Cousineau")
+print(" - 2026–2027: active, opening with verified Pacific Champions Cup qualifier")
 print(" - calendar event years and legacy identity seasons remain intact")

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
+echo "WPI Live 7.64.7 Focused Release Check"
+echo "====================================="
+node --check js/champions-cup-qualifiers-v7-64-7.js
+python3 -m py_compile scripts/test-champions-cup-qualifier-registry-v7-64-7.py
+python3 scripts/test-champions-cup-qualifier-registry-v7-64-7.py
+bash ./release-check-live-7.64.6
+printf '\nWPI Live 7.64.7 focused release check passed.\n'

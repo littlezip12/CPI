@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.6",
-  "name": "Mobile Recap & Opponent Search Polish",
+  "version": "7.64.7",
+  "name": "Champions Cup Qualifier Registry",
   "date": "2026-09-14",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Polishes the mobile final-game action layout and replaces unreliable native datalist opponent entry with visible, tap-friendly WPI team autocomplete. Preserves manual opponent entry and explicit identity selection. No scoring-engine, backend, Supabase schema, Edge Function, secret, billing, or infrastructure changes.",
+  "notes": "Adds a verified 2026 USA Water Polo Champions Cup qualifier registry for all 12 zones, confirms the Pacific Zone September 27 qualifier, connects Lamorinda A 14U Boys to its existing WPI Live series, and prepares W-L-T/GF/GA tracking without fabricating unpublished schedules, brackets, venues, opponents, or results.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -298,5 +298,6 @@
   "liveScoringMobileViewportFitRelease": "7.64.4",
   "liveScoringMobileRecapActionsRelease": "7.64.5",
   "liveScoringOpponentAutocompleteRelease": "7.64.6",
-  "liveScoringOpponentSearchContextRelease": "7.64.6"
+  "liveScoringOpponentSearchContextRelease": "7.64.6",
+  "championsCupQualifierRegistryRelease": "7.64.7"
 }
