@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/live-ad-delivery-v7-63-6.css?v=7.63.6">
   <link rel="stylesheet" href="css/live-club-theme-v7-60-0.css?v=7.60.0">
   <link rel="stylesheet" href="css/live-fan-experience-v7-64-1.css?v=7.64.1">
+  <link rel="stylesheet" href="css/live-mobile-game-ux-v7-64-4.css?v=7.64.4">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -207,8 +208,12 @@
           </label>
 
           <label class="live-field-full live-time-field">Time of play
-            <input id="clockTime" type="text" inputmode="numeric" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp">
-            <small id="clockHelp">Enter 6:45 or type 645.</small>
+            <span class="live-clock-entry">
+              <input id="clockTime" type="text" inputmode="numeric" enterkeyhint="done" value="7:00" placeholder="MM:SS" autocomplete="off" aria-describedby="clockHelp clockConfirmStatus">
+              <button id="clockConfirmButton" type="button" aria-label="Set time">Set time ✓</button>
+            </span>
+            <small id="clockHelp">Type 6:45 or 645, then tap Set time.</small>
+            <small id="clockConfirmStatus" class="live-clock-confirm-status" aria-live="polite"></small>
           </label>
 
           <label id="eventNoteLabel" class="live-field-full live-note-field live-note-field--open">
@@ -403,6 +408,7 @@
   <script src="js/live-team-following-v7-58-3.js?v=7.58.3"></script>
   <script src="js/live-game-storage-v7-58-6.js?v=7.58.6"></script>
   <script src="js/live-game-v7-58-6.js?v=7.58.6"></script>
+  <script src="js/live-mobile-clock-v7-64-4.js?v=7.64.4"></script>
   <script src="js/live-ad-delivery-v7-63-6.js?v=7.63.6"></script>
   <script src="js/live-game-supporter-ads-v7-63-6.js?v=7.63.6"></script>
   <script src="js/live-game-supporter-return-v7-60-3.js?v=7.60.3"></script>

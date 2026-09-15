@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/live-dashboard-v7-61-0.css?v=7.61.1">
   <link rel="stylesheet" href="css/live-dashboard-v7-61-1.css?v=7.61.1">
   <link rel="stylesheet" href="css/live-dashboard-v7-62-0.css?v=7.62.0">
+  <link rel="stylesheet" href="css/live-mobile-game-ux-v7-64-4.css?v=7.64.4">
 <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -438,46 +439,72 @@
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker" id="gameDayDialogKicker">Game-Day Hub</p><h2 id="gameDayDialogTitle">Add game</h2></div><button value="cancel" aria-label="Close game dialog">Close</button></div>
         <p class="live-team-switch-summary" id="gameDayDialogHelp">Choose the kind of game. Tournament games remain eligible for official schedule reconciliation even when you have to add them manually.</p>
-        <div id="gameTeamLockContext" class="live-game-team-lock"><strong>Current team</strong><span>Current season</span></div>
-        <div id="gameDuplicateWarning" class="live-game-duplicate-warning" hidden></div>
-
-        <fieldset class="live-game-kind-options" id="gameKindOptions">
-          <legend>Game type</legend>
-          <label id="gameRegularSeasonOption" hidden><input type="radio" name="gameKind" value="regular_season"><span><strong>Regular season</strong><small>High-school league or non-tournament schedule game.</small></span></label>
-          <label><input type="radio" name="gameKind" value="tournament" checked><span><strong>Tournament game</strong><small>Use this even when WPI has not loaded the matchup yet.</small></span></label>
-          <label><input type="radio" name="gameKind" value="friendly"><span><strong>Friendly</strong><small>Scrimmage, practice, or other non-tournament game stored under a Scrimmage Weekend.</small></span></label>
-        </fieldset>
-
-        <div id="gameTournamentFields" class="live-game-tournament-fields">
-          <label>Tournament
-            <select id="gameTournamentSelect"><option value="">Loading WPI tournaments…</option></select>
-          </label>
-          <label id="gameTournamentOtherLabel" hidden>Tournament name<input id="gameTournamentOther" type="text" maxlength="120" placeholder="Tournament or event name"></label>
-          <p class="live-game-reconcile-note"><span aria-hidden="true">↔</span><span><strong>Reconciliation-ready.</strong> If the official matchup appears later, WPI will link it to this game and preserve the score, stats and event log rather than create a second record.</span></p>
+        <div class="live-mobile-game-progress" aria-label="Game setup progress">
+          <span data-game-progress-step="1"><b>1</b><em>Type</em></span>
+          <span data-game-progress-step="2"><b>2</b><em>Opponent</em></span>
+          <span data-game-progress-step="3"><b>3</b><em>Details</em></span>
+          <span data-game-progress-step="4"><b>4</b><em>Review</em></span>
         </div>
 
-        <div id="gameFriendlyFields" class="live-game-tournament-fields" hidden>
-          <label>Scrimmage weekend<select id="gameScrimmageWeekendSelect"><option value="__new__">Create new Scrimmage Weekend…</option></select></label>
-          <label id="gameScrimmageWeekendNewLabel">New weekend name<input id="gameScrimmageWeekendNew" type="text" maxlength="120" autocomplete="off" placeholder="e.g. August 15 Scrimmage Weekend"></label>
-          <p class="live-game-reconcile-note"><span aria-hidden="true">▤</span><span><strong>One weekend, multiple games.</strong> Choose an existing Scrimmage Weekend for additional games, or create the weekend once. WPI keeps every game under that permanent event record.</span></p>
-        </div>
+        <section class="live-mobile-game-step" data-game-step="1">
+          <div class="live-mobile-step-heading"><span>Step 1 of 4</span><strong>What kind of game is this?</strong></div>
+          <fieldset class="live-game-kind-options" id="gameKindOptions">
+            <legend>Game type</legend>
+            <label id="gameRegularSeasonOption" hidden><input type="radio" name="gameKind" value="regular_season"><span><strong>Regular season</strong><small>High-school league or non-tournament schedule game.</small></span></label>
+            <label><input type="radio" name="gameKind" value="tournament" checked><span><strong>Tournament game</strong><small>Use this even when WPI has not loaded the matchup yet.</small></span></label>
+            <label><input type="radio" name="gameKind" value="friendly"><span><strong>Friendly</strong><small>Scrimmage, practice, or other non-tournament game stored under a Scrimmage Weekend.</small></span></label>
+          </fieldset>
+        </section>
 
-        <div class="live-game-matchup-preview" id="gameMatchupPreview">
-          <div class="live-game-logo"><img id="gameTeamLogoPreview" src="assets/branding/wpi-logo-mark.png" alt="Team logo"><small id="gameTeamPreviewName">Your team</small></div>
-          <strong>vs</strong>
-          <div class="live-game-logo"><img id="gameOpponentLogoPreview" src="assets/branding/wpi-logo-mark.png" alt="Opponent logo"><small id="gameOpponentPreviewName">Opponent</small></div>
-        </div>
+        <section class="live-mobile-game-step" data-game-step="2">
+          <div class="live-mobile-step-heading"><span>Step 2 of 4</span><strong>Who are you playing?</strong></div>
+          <div id="gameTournamentFields" class="live-game-tournament-fields">
+            <label>Tournament
+              <select id="gameTournamentSelect"><option value="">Loading WPI tournaments…</option></select>
+            </label>
+            <label id="gameTournamentOtherLabel" hidden>Tournament name<input id="gameTournamentOther" type="text" maxlength="120" placeholder="Tournament or event name"></label>
+            <p class="live-game-reconcile-note"><span aria-hidden="true">↔</span><span><strong>Reconciliation-ready.</strong> If the official matchup appears later, WPI will link it to this game and preserve the score, stats and event log rather than create a second record.</span></p>
+          </div>
+          <div id="gameFriendlyFields" class="live-game-tournament-fields" hidden>
+            <label>Scrimmage weekend<select id="gameScrimmageWeekendSelect"><option value="__new__">Create new Scrimmage Weekend…</option></select></label>
+            <label id="gameScrimmageWeekendNewLabel">New weekend name<input id="gameScrimmageWeekendNew" type="text" maxlength="120" autocomplete="off" placeholder="e.g. August 15 Scrimmage Weekend"></label>
+            <p class="live-game-reconcile-note"><span aria-hidden="true">▤</span><span><strong>One weekend, multiple games.</strong> Choose an existing Scrimmage Weekend for additional games, or create the weekend once. WPI keeps every game under that permanent event record.</span></p>
+          </div>
+          <div class="live-create-game-form live-create-game-form--single">
+            <label>Opponent · search or enter any team<input id="gameOpponentName" type="text" maxlength="100" list="gameOpponentSuggestions" autocomplete="off" placeholder="Search WPI or enter any team name"><small id="gameOpponentMatchHint" class="live-game-match-hint" data-state="idle">Choose a WPI suggestion or type an unlisted team name exactly as you want it saved.</small></label>
+            <datalist id="gameOpponentSuggestions"></datalist>
+          </div>
+        </section>
 
-        <div class="live-create-game-form">
-          <label>Opponent · search or enter any team<input id="gameOpponentName" type="text" maxlength="100" list="gameOpponentSuggestions" autocomplete="off" placeholder="Search WPI or enter any team name"><small id="gameOpponentMatchHint" class="live-game-match-hint" data-state="idle">Choose a WPI suggestion or type an unlisted team name exactly as you want it saved.</small></label>
-          <datalist id="gameOpponentSuggestions"></datalist>
-          <label>Date &amp; time<input id="gameScheduledAt" type="datetime-local"></label>
-          <label>Venue<input id="gameVenue" type="text" maxlength="120" placeholder="Pool or facility"></label>
-          <label>Quarter length<select id="gameQuarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
-          <label id="gameAssignedScorerRow">Scorer (optional)<select id="gameAssignedScorer"><option value="">Unassigned</option></select><small>Assign a permanent Owner, Admin, or Scorer now. Unassigned games remain available for a permanent scorer to claim.</small></label>
-        </div>
+        <section class="live-mobile-game-step" data-game-step="3">
+          <div class="live-mobile-step-heading"><span>Step 3 of 4</span><strong>When and where?</strong></div>
+          <div class="live-create-game-form">
+            <label>Date &amp; time<input id="gameScheduledAt" type="datetime-local"></label>
+            <label>Venue<input id="gameVenue" type="text" maxlength="120" placeholder="Pool or facility"></label>
+            <label>Quarter length<select id="gameQuarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
+            <label id="gameAssignedScorerRow">Scorer (optional)<select id="gameAssignedScorer"><option value="">Unassigned</option></select><small>Assign a permanent Owner, Admin, or Scorer now. Unassigned games remain available for a permanent scorer to claim.</small></label>
+          </div>
+        </section>
+
+        <section class="live-mobile-game-step" data-game-step="4">
+          <div class="live-mobile-step-heading"><span>Step 4 of 4</span><strong>Review and start</strong></div>
+          <div class="live-game-matchup-preview" id="gameMatchupPreview">
+            <div class="live-game-logo"><img id="gameTeamLogoPreview" src="assets/branding/wpi-logo-mark.png" alt="Team logo"><small id="gameTeamPreviewName">Your team</small></div>
+            <strong>vs</strong>
+            <div class="live-game-logo"><img id="gameOpponentLogoPreview" src="assets/branding/wpi-logo-mark.png" alt="Opponent logo"><small id="gameOpponentPreviewName">Opponent</small></div>
+          </div>
+          <div id="gameTeamLockContext" class="live-game-team-lock"><strong>Current team</strong><span>Current season</span></div>
+          <div id="gameMobileReview" class="live-mobile-game-review" aria-live="polite"></div>
+          <div id="gameDuplicateWarning" class="live-game-duplicate-warning" hidden></div>
+        </section>
+
         <p id="gameDayDialogMessage" class="live-validation-message" role="status"></p>
-        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="saveGameDayButton" type="button">Save to Game Day</button><button id="saveStartGameDayButton" type="button">Start game</button></div>
+        <div class="live-mobile-wizard-actions">
+          <button id="gameWizardBack" type="button">Back</button>
+          <span id="gameWizardStepLabel">Step 1 of 4</span>
+          <button id="gameWizardNext" type="button">Continue</button>
+        </div>
+        <div class="live-dialog-actions live-game-final-actions"><button value="cancel">Cancel</button><button id="saveGameDayButton" type="button">Save to Game Day</button><button id="saveStartGameDayButton" type="button">Start game</button></div>
       </form>
     </dialog>
 
@@ -534,6 +561,7 @@
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
   <script src="js/live-dashboard-v7-62-0.js?v=7.62.0"></script>
+  <script src="js/live-mobile-game-setup-v7-64-4.js?v=7.64.4"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
 </body>

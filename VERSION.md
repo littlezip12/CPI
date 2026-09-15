@@ -1,7 +1,7 @@
-# WPI 7.64.3 — Mega-Event Load Test & Capacity Gate
+# WPI 7.64.4 — Mobile Game Setup & Scoring Polish
 
-WPI 7.64.3 turns the 7.64.2 scale architecture into a measurable release gate. It adds a production-safe capacity evidence ledger, explicit WPI PASS/WATCH/FAIL thresholds, a Platform Owner capacity-gate view, a read-only production smoke harness, and an isolated/staging load-test harness that exercises bounded public RPCs plus public Realtime Broadcast subscriptions.
+WPI 7.64.4 tightens the poolside Owner/Admin experience before ECC. On phones, Add game is now a guided four-step flow: game type, opponent/event, game details, and review/start. Desktop keeps the existing all-at-once workflow.
 
-Full mega-event mode is hard-blocked against the current WPI production Supabase host and requires an explicit staging confirmation. A staging-only 6,000-game fixture and cleanup script are included but are not migrations and must never be run against production. The capacity gate cannot PASS from a smoke probe or incomplete evidence: it requires the 6,000-game / 100+ active-game / 10,000-viewer envelope plus public-read, Realtime, score-integrity, finalization, ad-impact and database-resource measurements.
+The live scoring clock now includes an explicit **Set time ✓** control and `enterkeyhint="done"`, so a scorer can type `645` or `6:45`, confirm it intentionally, and dismiss the mobile keypad before recording the play. The release also adds narrow-screen containment rules for dialogs, inputs, scoreboard rows, action areas, and the active scoring shell to prevent horizontal overflow.
 
-Supabase migration required: `202608220003_mega_event_capacity_gate.sql`. No Edge Function redeploy, secret, Stripe activation, hosting migration, or infrastructure-tier purchase is required.
+No Supabase migration is required. Protected scoring/backend files are unchanged. No Edge Function redeploy, secret, Stripe activation, hosting migration, or infrastructure change is required.
