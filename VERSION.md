@@ -1,3 +1,11 @@
+# WPI 7.64.10 — BAWPL Event & TBD Game Readiness
+
+WPI 7.64.10 adds a real league/event model for recurring competition such as BAWPL and a private planned-game-slot workflow for schedules that are not published yet. Owners/Admins can save an event name, game date, and known game count without creating fake opponents or start times. Planned slots remain operational/private and are not scored or published.
+
+When schedule details arrive, a planned slot opens the normal game form. Adding the real opponent (and time when known) converts that slot into the canonical WPI Live game, preserves the original planned date, and keeps all future BAWPL weekends under one durable event record. Tournament, regular-season, Scrimmage Weekend, scorer, GroupMe, Quick Time, and recap behavior remain intact.
+
+Supabase migration: `202609160002_bawpl_event_tbd_game_readiness.sql`. The migration is required before deploying this release.
+
 # WPI 7.64.9 — Mobile Scoring Simplification & GroupMe Game Story
 
 WPI 7.64.9 turns the 7.64.8 Quick Time Pad into the single normal scoring workflow. The legacy Time of play, Set time, main-form assist/note preview and Submit play controls remain in the DOM only as engine fallback hooks, but are removed from the normal scorer surface when Quick Time is active. Scoring is now Event → Player → Quick Time, with assist and an optional note handled inside the Quick Time sheet.

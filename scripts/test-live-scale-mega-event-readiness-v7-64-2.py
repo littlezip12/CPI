@@ -7,7 +7,7 @@ def req(c,m):
 def read(rel):
     p=ROOT/rel; req(p.exists(),f"Missing file: {rel}"); return p.read_text(encoding='utf-8')
 site=json.loads(read('config/site-release.json')); version=read('VERSION.md')
-req(site.get('version') in {'7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9'},'site release mismatch'); req(any(v in version for v in ('WPI 7.64.2','WPI 7.64.3','WPI 7.64.4','WPI 7.64.5','WPI 7.64.6','WPI 7.64.7')),'VERSION missing 7.64.2+')
+req(site.get('version') in {'7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10'},'site release mismatch'); req(any(v in version for v in ('WPI 7.64.2','WPI 7.64.3','WPI 7.64.4','WPI 7.64.5','WPI 7.64.6','WPI 7.64.7')),'VERSION missing 7.64.2+')
 for k in ('liveScaleReadinessRelease','liveMegaEventReadinessRelease','livePublicPaginationRelease','livePublicScoreBroadcastRelease','liveScaleObservabilityRelease'): req(site.get(k)=='7.64.2',f'missing {k}')
 
 mig=read('supabase/migrations/202608220002_scale_mega_event_readiness.sql'); low=mig.lower()

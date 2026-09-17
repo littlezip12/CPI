@@ -4,9 +4,9 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit(f'FAIL: {msg}')
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version') in {'7.64.8','7.64.9'},'site version must preserve 7.64.8+')
+req(site.get('version') in {'7.64.8','7.64.9','7.64.10'},'site version must preserve 7.64.8+')
 for key in ('liveScoringGameDayCapAssignmentRelease','liveScoringQuickTimePadRelease','liveScoringGameStoryRelease'):
-    req(site.get(key) in {'7.64.8','7.64.9'},f'{key} missing')
+    req(site.get(key) in {'7.64.8','7.64.9','7.64.10'},f'{key} missing')
 html=(ROOT/'live-game.html').read_text()
 req(('live-quick-time-pad-v7-64-8.js?v=7.64.8' in html) or ('live-quick-time-pad-v7-64-9.js?v=7.64.9' in html),'Quick Time Pad must load')
 req(('live-game-day-speed-v7-64-8.css?v=7.64.8' in html) or ('live-game-day-speed-v7-64-9.css?v=7.64.9' in html),'game-day speed CSS must load')

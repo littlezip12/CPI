@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="css/live-mobile-game-ux-v7-64-4.css?v=7.64.4">
   <link rel="stylesheet" href="css/live-mobile-polish-v7-64-5.css?v=7.64.5">
   <link rel="stylesheet" href="css/live-game-day-speed-v7-64-9.css?v=7.64.9">
+  <link rel="stylesheet" href="css/live-dashboard-v7-64-10.css?v=7.64.10">
 <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -218,12 +219,13 @@
           <section class="live-panel live-game-day-hub" id="dashboardGameDay">
             <div class="live-panel-heading live-game-day-heading">
               <div><p class="live-section-kicker">Game day</p><h2>Game-Day Hub</h2></div>
-              <button id="addGameDayButton" class="live-game-day-add" type="button">+ Add game</button>
+              <div class="live-game-day-heading-actions"><button id="planGameSlotsButton" class="live-secondary-button" type="button">+ Plan games</button><button id="addGameDayButton" class="live-game-day-add" type="button">+ Add game</button></div>
             </div>
             <p class="live-panel-help">Published school schedules and official tournament matchups can flow into Game Day without retyping them. Manual entry remains available, and WPI never fabricates missing schedule data.</p>
             <div class="live-game-day-paths" aria-label="Ways to add a game">
               <div id="highSchoolGamePath" hidden><span aria-hidden="true">▣</span><strong>Regular season</strong><small>Source-backed school schedule · manual fallback when needed</small></div>
               <div><span aria-hidden="true">◆</span><strong>Tournament game</strong><small>Automatic from the WPI schedule · manual fallback always available</small></div>
+              <div><span aria-hidden="true">▤</span><strong>League / event</strong><small>BAWPL and other recurring events · plan dates before schedules are published</small></div>
               <div><span aria-hidden="true">○</span><strong>Friendly</strong><small>Manual game stored under a named Scrimmage Weekend</small></div>
             </div>
             <section class="live-wpi-schedule-card" aria-label="WPI tournament schedule connection">
@@ -454,6 +456,7 @@
             <legend>Game type</legend>
             <label id="gameRegularSeasonOption" hidden><input type="radio" name="gameKind" value="regular_season"><span><strong>Regular season</strong><small>High-school league or non-tournament schedule game.</small></span></label>
             <label><input type="radio" name="gameKind" value="tournament" checked><span><strong>Tournament game</strong><small>Use this even when WPI has not loaded the matchup yet.</small></span></label>
+            <label><input type="radio" name="gameKind" value="league"><span><strong>League / event</strong><small>BAWPL or another recurring event that can span multiple weekends.</small></span></label>
             <label><input type="radio" name="gameKind" value="friendly"><span><strong>Friendly</strong><small>Scrimmage, practice, or other non-tournament game stored under a Scrimmage Weekend.</small></span></label>
           </fieldset>
         </section>
@@ -472,6 +475,11 @@
             <label id="gameScrimmageWeekendNewLabel">New weekend name<input id="gameScrimmageWeekendNew" type="text" maxlength="120" autocomplete="off" placeholder="e.g. August 15 Scrimmage Weekend"></label>
             <p class="live-game-reconcile-note"><span aria-hidden="true">▤</span><span><strong>One weekend, multiple games.</strong> Choose an existing Scrimmage Weekend for additional games, or create the weekend once. WPI keeps every game under that permanent event record.</span></p>
           </div>
+          <div id="gameLeagueFields" class="live-game-tournament-fields" hidden>
+            <label>League / event<select id="gameLeagueEventSelect"><option value="__new__">Create new league / event…</option></select></label>
+            <label id="gameLeagueEventNewLabel">New league / event name<input id="gameLeagueEventNew" type="text" maxlength="120" autocomplete="off" placeholder="e.g. BAWPL"></label>
+            <p class="live-game-reconcile-note"><span aria-hidden="true">▤</span><span><strong>One event, many weekends.</strong> BAWPL can stay one permanent event record while each real game keeps its own opponent, date, time and stats.</span></p>
+          </div>
           <div class="live-create-game-form live-create-game-form--single">
             <label class="live-opponent-search-label">Opponent · search or enter any team<input id="gameOpponentName" type="text" maxlength="100" autocomplete="off" placeholder="Start typing a team, e.g. Stanford" aria-autocomplete="list" aria-controls="gameOpponentAutocomplete" aria-expanded="false"><div id="gameOpponentAutocomplete" class="live-opponent-autocomplete" role="listbox" aria-label="Matching WPI teams" hidden></div><small id="gameOpponentMatchHint" class="live-game-match-hint" data-state="idle">Start typing to find a WPI team, or enter an unlisted team name exactly as you want it saved.</small></label>
             <datalist id="gameOpponentSuggestions"></datalist>
@@ -481,7 +489,7 @@
         <section class="live-mobile-game-step" data-game-step="3">
           <div class="live-mobile-step-heading"><span>Step 3 of 4</span><strong>When and where?</strong></div>
           <div class="live-create-game-form">
-            <label>Date &amp; time<input id="gameScheduledAt" type="datetime-local"></label>
+            <label>Date &amp; time<input id="gameScheduledAt" type="datetime-local"><small id="gamePlannedDateHint" hidden></small></label>
             <label>Venue<input id="gameVenue" type="text" maxlength="120" placeholder="Pool or facility"></label>
             <label>Quarter length<select id="gameQuarterLength"><option value="5">5 minutes</option><option value="6">6 minutes</option><option value="7" selected>7 minutes</option><option value="8">8 minutes</option></select></label>
             <label id="gameAssignedScorerRow">Scorer (optional)<select id="gameAssignedScorer"><option value="">Unassigned</option></select><small>Assign a permanent Owner, Admin, or Scorer now. Unassigned games remain available for a permanent scorer to claim.</small></label>
@@ -507,6 +515,22 @@
           <button id="gameWizardNext" type="button">Continue</button>
         </div>
         <div class="live-dialog-actions live-game-final-actions"><button value="cancel">Cancel</button><button id="saveGameDayButton" type="button">Save to Game Day</button><button id="saveStartGameDayButton" type="button">Start game</button></div>
+      </form>
+    </dialog>
+
+    <dialog id="planGameSlotsDialog" class="live-dialog live-plan-game-slots-dialog">
+      <form method="dialog">
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Schedule not published yet</p><h2>Plan games without guessing</h2></div><button value="cancel" aria-label="Close planned games dialog">Close</button></div>
+        <p class="live-team-switch-summary">Save only what you actually know: the event, date and number of games. These are planning slots—not public/scored games—and WPI will never invent opponents or start times.</p>
+        <div class="live-create-game-form">
+          <label>League / event<select id="planGameEventSelect"><option value="__new__">Create new league / event…</option></select></label>
+          <label id="planGameEventNameLabel">New event name<input id="planGameEventName" type="text" maxlength="120" autocomplete="off" placeholder="e.g. BAWPL"></label>
+          <label>Game date<input id="planGameDate" type="date"></label>
+          <label>Number of games<select id="planGameCount"><option value="1">1 game</option><option value="2" selected>2 games</option><option value="3">3 games</option><option value="4">4 games</option><option value="5">5 games</option><option value="6">6 games</option></select></label>
+        </div>
+        <p class="live-game-reconcile-note"><span aria-hidden="true">✓</span><span><strong>No fake schedule data.</strong> When the real schedule appears, open each planned slot and add the opponent/time. That real game then becomes the canonical WPI Live record.</span></p>
+        <p id="planGameSlotsMessage" class="live-validation-message" role="status"></p>
+        <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="confirmPlanGameSlotsButton" type="button">Plan games</button></div>
       </form>
     </dialog>
 
@@ -562,7 +586,7 @@
   <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
-  <script src="js/live-dashboard-v7-64-8.js?v=7.64.8"></script>
+  <script src="js/live-dashboard-v7-64-10.js?v=7.64.10"></script>
   <script src="js/live-opponent-autocomplete-v7-64-6.js?v=7.64.6"></script>
   <script src="js/live-mobile-game-setup-v7-64-4.js?v=7.64.4"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>

@@ -9,7 +9,7 @@ def req(cond,msg):
 load=lambda rel: json.loads((ROOT/rel).read_text(encoding='utf-8'))
 site=load('config/site-release.json'); data=load('data/tournaments/2026-champions-cup-qualifiers.json'); hub=load('data/tournaments/public-hub.json'); seasons=load('data/tournaments/seasons.json')
 html=(ROOT/'champions-cup-qualifiers.html').read_text(encoding='utf-8'); js=(ROOT/'js/champions-cup-qualifiers-v7-64-7.js').read_text(encoding='utf-8'); css=(ROOT/'css/champions-cup-qualifiers-v7-64-7.css').read_text(encoding='utf-8'); version=(ROOT/'VERSION.md').read_text(encoding='utf-8')
-req(site.get('version') in {'7.64.7','7.64.8','7.64.9'},'site release must preserve 7.64.7 or later')
+req(site.get('version') in {'7.64.7','7.64.8','7.64.9','7.64.10'},'site release must preserve 7.64.7 or later')
 req(site.get('championsCupQualifierRegistryRelease')=='7.64.7','qualifier registry release marker missing')
 req('WPI 7.64.7' in version,'VERSION missing 7.64.7')
 req(data.get('release')=='7.64.7','qualifier data release mismatch')

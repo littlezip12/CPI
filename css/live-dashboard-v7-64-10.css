@@ -1,0 +1,13 @@
+/* WPI 7.64.10 — BAWPL event + TBD game planning */
+.live-game-day-heading-actions{display:flex;gap:.65rem;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.live-game-day-slot{border-style:dashed}
+.live-game-day-slot .live-game-day-status[data-state="upcoming"]{white-space:nowrap}
+.live-plan-game-slots-dialog{max-width:720px}
+#gamePlannedDateHint{display:block;margin-top:.35rem;color:var(--live-muted,#64748b);font-size:.78rem;line-height:1.35}
+#gamePlannedDateHint[hidden]{display:none}
+@media (max-width:720px){
+  .live-game-day-heading-actions{width:100%;display:grid;grid-template-columns:1fr 1fr}
+  .live-game-day-heading-actions button{width:100%;min-height:44px}
+  .live-game-day-slot .live-game-day-actions{display:grid;grid-template-columns:1fr;gap:.55rem}
+  .live-game-day-slot .live-game-day-actions button{width:100%}
+}
