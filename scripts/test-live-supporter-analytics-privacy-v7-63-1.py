@@ -26,7 +26,7 @@ site = json.loads(read(ROOT/'config/site-release.json'))
 sql = read(MIG)
 
 req(any(v in version for v in ('WPI 7.63.1','WPI 7.63.2','WPI 7.63.3','WPI 7.63.4','WPI 7.63.5','WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9','WPI 7.64.0','WPI 7.64.1','WPI 7.64.2','WPI 7.64.3','WPI 7.64.4','WPI 7.64.5','WPI 7.64.6','WPI 7.64.7')), 'VERSION must preserve 7.63.1')
-req(site.get('version') in {'7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8'}, 'site release must preserve 7.63.1')
+req(site.get('version') in {'7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9'}, 'site release must preserve 7.63.1')
 
 for needle in [
     "live_has_team_role(game_team_id,array['owner','admin','scorer']::public.live_team_role[])",

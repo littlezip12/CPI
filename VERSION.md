@@ -1,3 +1,13 @@
+# WPI 7.64.9 — Mobile Scoring Simplification & GroupMe Game Story
+
+WPI 7.64.9 turns the 7.64.8 Quick Time Pad into the single normal scoring workflow. The legacy Time of play, Set time, main-form assist/note preview and Submit play controls remain in the DOM only as engine fallback hooks, but are removed from the normal scorer surface when Quick Time is active. Scoring is now Event → Player → Quick Time, with assist and an optional note handled inside the Quick Time sheet.
+
+The mobile connection strip is reorganized so connection/sync state gets its own row and Dashboard / Sign out receive separate full-width action space instead of being crushed together on narrow phones.
+
+Final Whistle GroupMe delivery now includes the same generated Game Story used by the recap, followed by structured game stats, period scores, player stats and scorer notes. The story continues to praise individual players for positive highlights while negative commentary remains at the team/game level.
+
+No Supabase migration, Edge Function deployment, secret, billing, or protected foundation change is required.
+
 # WPI 7.64.8 — Game-Day Speed & Storytelling
 
 WPI 7.64.8 makes live scoring faster and the final game record more useful. Permanent roster identity can now use a player name, cap number, or both. Game-day cap assignments are stored with the game instead of rewriting the permanent roster, while Team Owners/Admins can save a cap set to the event for tournaments such as ECC and let later games inherit it.

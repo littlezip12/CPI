@@ -4,17 +4,17 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit(f'FAIL: {msg}')
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version')=='7.64.8','site version must be 7.64.8')
+req(site.get('version') in {'7.64.8','7.64.9'},'site version must preserve 7.64.8+')
 for key in ('liveScoringGameDayCapAssignmentRelease','liveScoringQuickTimePadRelease','liveScoringGameStoryRelease'):
-    req(site.get(key)=='7.64.8',f'{key} missing')
+    req(site.get(key) in {'7.64.8','7.64.9'},f'{key} missing')
 html=(ROOT/'live-game.html').read_text()
-req('live-quick-time-pad-v7-64-8.js?v=7.64.8' in html,'Quick Time Pad must load')
-req('live-game-day-speed-v7-64-8.css?v=7.64.8' in html,'game-day speed CSS must load')
+req(('live-quick-time-pad-v7-64-8.js?v=7.64.8' in html) or ('live-quick-time-pad-v7-64-9.js?v=7.64.9' in html),'Quick Time Pad must load')
+req(('live-game-day-speed-v7-64-8.css?v=7.64.8' in html) or ('live-game-day-speed-v7-64-9.css?v=7.64.9' in html),'game-day speed CSS must load')
 req('saveCapsForEventButton' in html,'event cap control missing')
-qtp=(ROOT/'js/live-quick-time-pad-v7-64-8.js').read_text()
+qtp=(ROOT/('js/live-quick-time-pad-v7-64-9.js' if site.get('version')=='7.64.9' else 'js/live-quick-time-pad-v7-64-8.js')).read_text()
 for token in ('Same time','data-qtp-adjust','form.requestSubmit','live_game_player_cap_context_v1','live_save_series_cap_assignments_v1'):
     req(token in qtp,f'Quick Time/cap token missing: {token}')
-engine=(ROOT/'js/live-game-v7-64-8.js').read_text()
+engine=(ROOT/('js/live-game-v7-64-9.js' if site.get('version')=='7.64.9' else 'js/live-game-v7-64-8.js')).read_text()
 for token in ('gameCap','effectivePlayerCap','The defense was tighter than Fort Knox','stood tall with','game that got away from them'):
     req(token in engine,f'engine/story token missing: {token}')
 backend=(ROOT/'js/live-backend-v7-64-8.js').read_text()
