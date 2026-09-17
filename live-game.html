@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/live-fan-experience-v7-64-1.css?v=7.64.1">
   <link rel="stylesheet" href="css/live-mobile-game-ux-v7-64-4.css?v=7.64.4">
   <link rel="stylesheet" href="css/live-mobile-polish-v7-64-5.css?v=7.64.5">
+  <link rel="stylesheet" href="css/live-game-day-speed-v7-64-8.css?v=7.64.8">
 </head>
 <body class="wpi-live-sandbox-page">
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
@@ -89,7 +90,12 @@
           <div><div class="live-setup-step-head"><span>2</span><div><strong>Roster</strong><small>Confirm who is available today.</small></div></div><h2 id="rosterHeading">Lamorinda A 14U Boys roster</h2></div>
           <button id="addPlayerButton" type="button">Add player</button>
         </div>
-        <p class="live-panel-help" id="rosterHelp">This is the active roster for Lamorinda A 14U Boys. Add, remove, rename, or change cap numbers as needed.</p>
+        <p class="live-panel-help" id="rosterHelp">Confirm who is available today. Game caps can change without changing the permanent roster; use a name, cap, or both.</p>
+        <div id="gameCapScopePanel" class="wpi-cap-scope-panel" hidden>
+          <div><strong>Cap assignments</strong><small id="gameCapScopeHelp">Game caps are saved with this game.</small></div>
+          <button id="saveCapsForEventButton" type="button">Use these caps for this event</button>
+          <span id="gameCapScopeStatus" role="status"></span>
+        </div>
         <p id="rosterStatus" class="live-roster-status" role="status"></p>
         <div class="live-roster-list" id="rosterList"></div>
       </div>
@@ -403,13 +409,13 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="config/live-sandbox.js?v=7.57.20"></script>
-  <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
+  <script src="js/live-backend-v7-64-8.js?v=7.64.8"></script>
   <script src="js/live-team-context-v7-58-0.js?v=7.58.0"></script>
   <script src="js/live-team-profiles-rosters-v7-58-2.js?v=7.58.2"></script>
   <script src="js/live-team-following-v7-58-3.js?v=7.58.3"></script>
   <script src="js/live-game-storage-v7-58-6.js?v=7.58.6"></script>
-  <script src="js/live-game-v7-58-6.js?v=7.58.6"></script>
-  <script src="js/live-mobile-clock-v7-64-4.js?v=7.64.4"></script>
+  <script src="js/live-game-v7-64-8.js?v=7.64.8"></script>
+  <script src="js/live-quick-time-pad-v7-64-8.js?v=7.64.8"></script>
   <script src="js/live-ad-delivery-v7-63-6.js?v=7.63.6"></script>
   <script src="js/live-game-supporter-ads-v7-63-6.js?v=7.63.6"></script>
   <script src="js/live-game-supporter-return-v7-60-3.js?v=7.60.3"></script>

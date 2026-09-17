@@ -17,7 +17,7 @@ ad_js=read('js/live-ad-delivery-v7-63-6.js')
 score_html=read('live-score.html'); recap_html=read('live-game-recap.html')
 game_html=read('live-game.html'); supporter_game_ads=read('js/live-game-supporter-ads-v7-63-6.js')
 req(any(v in version for v in ('WPI 7.63.6','WPI 7.63.7','WPI 7.63.8','WPI 7.63.9','WPI 7.64.0','WPI 7.64.1','WPI 7.64.2','WPI 7.64.3','WPI 7.64.4','WPI 7.64.5','WPI 7.64.6','WPI 7.64.7')),'VERSION missing 7.63.6+')
-req(site.get('version') in {'7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7'},'site release mismatch')
+req(site.get('version') in {'7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8'},'site release mismatch')
 for k in ('liveSponsorshipValidationRelease','liveEventInventoryRelease','liveWeekendBannerRelease','liveAdPlacementReportingRelease','liveHouseCampaignValidationRelease'):
     req(site.get(k)=='7.63.6',f'missing release marker {k}')
 # Supporter event surface is team-result only.

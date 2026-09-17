@@ -1,4 +1,12 @@
-# WPI 7.64.7 — Champions Cup Qualifier Registry
+# WPI 7.64.8 — Game-Day Speed & Storytelling
+
+WPI 7.64.8 makes live scoring faster and the final game record more useful. Permanent roster identity can now use a player name, cap number, or both. Game-day cap assignments are stored with the game instead of rewriting the permanent roster, while Team Owners/Admins can save a cap set to the event for tournaments such as ECC and let later games inherit it.
+
+The scorer workflow is now event-first: choose the play, choose the player when needed, then use a large Quick Time Pad. Compact entries such as `632`, `105`, and `48` resolve to `6:32`, `1:05`, and `0:48`; Same time and ±1 second shortcuts reduce repeat entry. The optional running-clock concept is intentionally not included.
+
+The end-of-game narrative is now a Game Story rather than a stat dump. It describes the result and game shape, can call out defensive/offensive themes and scoring runs, and highlights positive player contributions such as goals, assists, saves, steals, and blocks. Negative observations remain at the team/game level rather than criticizing individual youth players. Game Stats remain a separate structured section.
+
+Supabase migration: `202609160001_game_day_speed_storytelling.sql`. The migration is required before deploying this release.
 
 WPI 7.64.7 builds the 2026 USA Water Polo Champions Cup qualification layer on the pushed WPI 7.64.6 baseline.
 
