@@ -5,7 +5,7 @@ version = (root / 'VERSION.md').read_text()
 html = (root / 'live.html').read_text()
 js = (root / 'js/live-home-team-stats-v7-64-12.js').read_text()
 
-assert version.startswith('# WPI 7.64.12 — Team Stats Home Entry')
+assert version.startswith(('# WPI 7.64.12 — Team Stats Home Entry','# WPI 7.64.13 — Team Follow & QR Onboarding'))
 assert 'id="publicTeamStatsButton"' in html
 assert '>Team Stats</a>' in html
 assert 'live-home-team-stats-v7-64-12.js?v=7.64.12' in html

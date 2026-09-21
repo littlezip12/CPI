@@ -1,3 +1,11 @@
+# WPI 7.64.13 — Team Follow & QR Onboarding
+
+WPI 7.64.13 makes team discovery and supporter onboarding direct instead of directory-first. Every WPI Live team can be shared with a stable team-specific follow link and QR code. Scanning the QR opens the exact team; signed-out users are routed through supporter sign-in/create-account while preserving the requested team, and signed-in users add that team to My Teams with read-only follow access.
+
+My Teams now exposes **+ Add another team**, uses **Team Stats** as the public-facing analytics label, and no longer opens with a wall of directory cards. The Find your team section starts with search/filter controls and only renders matching teams once the user searches or narrows a filter. Team cards include **Share Team** for easy link/QR distribution. Team Owners/Admins also receive **Share team** beside the follower count in Team Access.
+
+The QR/share flow includes Copy link, Download QR, and Print actions. It reuses the existing read-only `live_set_team_follow_v2` path; it does not create team membership, scoring authority, or admin access. No Supabase migration, Edge Function, GroupMe, billing, roster, scoring, or tournament changes are required.
+
 # WPI 7.64.12 — Team Stats Home Entry
 
 WPI 7.64.12 makes team and player analytics easier to reach from the first WPI Live screen. The public WPI Live hero now includes a prominent **Team Stats** action alongside My Teams, Find a team, and Team dashboard.

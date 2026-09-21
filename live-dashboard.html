@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="css/live-mobile-polish-v7-64-5.css?v=7.64.5">
   <link rel="stylesheet" href="css/live-game-day-speed-v7-64-9.css?v=7.64.9">
   <link rel="stylesheet" href="css/live-dashboard-v7-64-10.css?v=7.64.10">
+  <link rel="stylesheet" href="css/live-following-v7-64-13.css?v=7.64.13">
 <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
 <body class="wpi-live-dashboard-page">
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
@@ -304,7 +305,7 @@
                 </section>
 
                 <section class="live-access-section live-access-followers-section">
-                  <div class="live-access-section-heading"><div><strong>Following this team</strong><small>Read-only followers are separate from permanent team members</small></div><span id="teamFollowerCount" class="live-access-mini-count">0 followers</span></div>
+                  <div class="live-access-section-heading"><div><strong>Following this team</strong><small>Read-only followers are separate from permanent team members</small></div><div class="live-access-heading-actions"><span id="teamFollowerCount" class="live-access-mini-count">0 followers</span><button id="openTeamShareButton" type="button" hidden>Share team</button></div></div>
                   <div id="teamFollowers" class="live-access-list"><p class="live-empty-state">Loading followers…</p></div>
                 </section>
 
@@ -589,6 +590,8 @@
   <script src="js/live-dashboard-v7-64-10.js?v=7.64.10"></script>
   <script src="js/live-opponent-autocomplete-v7-64-6.js?v=7.64.6"></script>
   <script src="js/live-mobile-game-setup-v7-64-4.js?v=7.64.4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/live-team-share-v7-64-13.js?v=7.64.13"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
 </body>
