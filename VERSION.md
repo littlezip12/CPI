@@ -1,3 +1,11 @@
+# WPI 7.64.12 — Team Stats Home Entry
+
+WPI 7.64.12 makes team and player analytics easier to reach from the first WPI Live screen. The public WPI Live hero now includes a prominent **Team Stats** action alongside My Teams, Find a team, and Team dashboard.
+
+The Team Stats action is account-aware without exposing private data. A signed-in user with exactly one accessible WPI team is routed directly to that team’s existing Team Insights analytics page. Users with multiple teams are routed to My Teams to choose the correct team. Signed-out users are routed through the normal supporter sign-in flow instead of landing on an analytics page with no team context.
+
+This is a navigation/discoverability release only. The underlying Team Insights analytics engine, entitlements, player/team statistics, scoring, GroupMe, Supabase schema, and protected backend files are unchanged. No migration or Edge Function deployment is required.
+
 # WPI 7.64.11 — Game-Day Accuracy & Final Whistle
 
 WPI 7.64.11 turns the first real BAWPL weekend feedback into a lower-friction, correction-safe scoring workflow. Games Played is now based on explicit per-game participation rather than inferred stat activity: starters and players with recorded events are automatically marked Played, players removed from the day roster are DNP, and Final Whistle asks only about unresolved zero-stat players. This preserves the difference between “played with zero recorded stats” and “did not play.”
