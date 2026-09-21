@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWPI Live 7.64.14 Focused Release Check\n'
+node --check js/live-team-insights-v7-64-14.js
+python3 -m py_compile scripts/test-live-player-stats-experience-v7-64-14.py
+python3 scripts/test-live-player-stats-experience-v7-64-14.py
+bash ./release-check-live-7.64.13
+printf '\nWPI Live 7.64.14 focused release check passed.\n'

@@ -6,10 +6,10 @@ def req(ok,msg):
     if not ok:
         print('WPI MOBILE RECAP / OPPONENT SEARCH 7.64.5 TEST FAILED\n - '+msg);sys.exit(1)
 site=json.loads(read('config/site-release.json'));version=read('VERSION.md');dash=read('live-dashboard.html');game=read('live-game.html');css=read('css/live-mobile-polish-v7-64-5.css');js=read('js/live-opponent-autocomplete-v7-64-6.js')
-req(site.get('version') in {'7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13'},'site release must preserve 7.64.5 or later')
+req(site.get('version') in {'7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14'},'site release must preserve 7.64.5 or later')
 req(any(v in version for v in ('WPI 7.64.5','WPI 7.64.6','WPI 7.64.7')),'VERSION must preserve 7.64.5 or later')
 req(site.get('liveScoringMobileRecapActionsRelease')=='7.64.5','mobile recap marker missing')
-req(site.get('liveScoringOpponentAutocompleteRelease') in {'7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13'},'opponent autocomplete marker missing')
+req(site.get('liveScoringOpponentAutocompleteRelease') in {'7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14'},'opponent autocomplete marker missing')
 for needle in ('gameOpponentAutocomplete','aria-autocomplete="list"','Start typing a team, e.g. Stanford','live-opponent-autocomplete-v7-64-6.js','live-mobile-polish-v7-64-5.css'):
     req(needle in dash,f'dashboard missing {needle}')
 for needle in ('summaryDashboardButton','reopenGameButton','downloadLogButton','>Download log</button>','live-mobile-polish-v7-64-5.css'):

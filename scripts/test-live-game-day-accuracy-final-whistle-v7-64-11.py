@@ -5,7 +5,7 @@ def req(cond,msg):
     if not cond: raise AssertionError(msg)
 def read(name): return (ROOT/name).read_text()
 site=json.loads(read('config/site-release.json'))
-req(site.get('version') in {'7.64.11','7.64.12','7.64.13'},'site version must preserve the 7.64.11 Game-Day Accuracy foundation')
+req(site.get('version') in {'7.64.11','7.64.12','7.64.13','7.64.14'},'site version must preserve the 7.64.11 Game-Day Accuracy foundation')
 for key in ('liveGameParticipationRelease','liveFastScorekeepingRelease','liveCorrectionRecoveryRelease','liveFinalWhistleRelease'):
     req(site.get(key)=='7.64.11',f'{key} missing')
 html=read('live-game.html'); scorer=read('js/live-game-v7-64-11.js'); quick=read('js/live-quick-time-pad-v7-64-11.js'); backend=read('js/live-backend-v7-64-11.js'); edge=read('supabase/functions/groupme-post-v7-64-11/index.ts'); sql=read('supabase/migrations/202609210001_game_day_accuracy_final_whistle.sql')

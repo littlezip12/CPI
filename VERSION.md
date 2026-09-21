@@ -1,3 +1,9 @@
+# WPI 7.64.14 — Player Stats Experience
+
+WPI 7.64.14 redesigns Player Stats around a responsive comparison workflow that works on phones and desktops. The interface uses cap-and-name player tiles with no player photos, Season / Event / Game tabs, searchable selection for up to four players, grouped stat sections, and mobile player cards instead of a forced horizontal desktop table. Selected players persist while changing scopes and across page reloads for the same team/season. A selected player who did not participate in an individual game remains visible as DNP; a player who participated without tracked production remains distinguishable as Played with 0 recorded stats.
+
+No Supabase migration or Edge Function deployment is required. The analytics RPC and access controls are unchanged.
+
 # WPI 7.64.13 — Team Follow & QR Onboarding
 
 WPI 7.64.13 makes team discovery and supporter onboarding direct instead of directory-first. Every WPI Live team can be shared with a stable team-specific follow link and QR code. Scanning the QR opens the exact team; signed-out users are routed through supporter sign-in/create-account while preserving the requested team, and signed-in users add that team to My Teams with read-only follow access.

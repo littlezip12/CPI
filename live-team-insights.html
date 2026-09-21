@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-team-insights-v7-63-4.css?v=7.63.4">
+  <link rel="stylesheet" href="css/live-team-insights-v7-64-14.css?v=7.64.14">
 <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
 <body class="wpi-team-insights-page">
   <main class="insights-shell">
@@ -104,20 +104,39 @@
         </article>
       </section>
 
-      <article class="insights-panel" id="playerAnalyticsPanel">
-        <div class="insights-heading">
-          <div><p>Player analytics</p><h2>Compare player performance</h2></div>
-          <span>Team Insights</span>
+      <article class="insights-panel insights-player-analytics-v2" id="playerAnalyticsPanel">
+        <div class="insights-heading insights-player-heading">
+          <div><p>Player stats</p><h2>Compare Players</h2></div>
+          <span>Up to 4</span>
         </div>
-        <p class="insights-player-intro">Choose a season, tournament/weekend or individual game, then compare up to four players side by side. Shooting percentage uses field goals divided by tracked field shots; shootout attempts are shown separately.</p>
-        <div class="insights-player-controls">
-          <label><span>Stats scope</span><select id="playerScopeSelect"></select></label>
-          <label><span>Player</span><select id="primaryPlayerSelect"></select></label>
-          <label><span>Add comparison</span><select id="comparisonPlayerSelect"></select></label>
-          <button id="addComparisonPlayer" type="button">Add player</button>
+        <p class="insights-player-intro">Compare performance across the season, an event, or one game. Your selected players stay selected as you move between scopes.</p>
+
+        <div class="insights-player-scope-tabs" id="playerScopeTabs" role="group" aria-label="Player stats scope">
+          <button type="button" class="is-active" data-player-scope-mode="season">Season</button>
+          <button type="button" data-player-scope-mode="series">Event</button>
+          <button type="button" data-player-scope-mode="game">Game</button>
         </div>
-        <div id="comparisonPlayerChips" class="insights-comparison-chips"></div>
-        <div id="playerAnalyticsLoading" class="insights-inline-state" hidden>Loading player analytics…</div>
+        <div class="insights-player-scope-detail" id="playerScopeDetail">
+          <label id="playerSeriesWrap" hidden><span>Event</span><select id="playerSeriesSelect"></select></label>
+          <label id="playerGameWrap" hidden><span>Game</span><select id="playerGameSelect"></select></label>
+        </div>
+
+        <div class="insights-player-picker-heading">
+          <div><strong>Select players</strong><span>Choose up to four</span></div>
+          <div><strong id="playerSelectionCount">0 selected</strong><button id="clearPlayerSelection" type="button">Clear all</button></div>
+        </div>
+        <label class="insights-player-search"><span class="sr-only">Search players</span><input id="playerSearchInput" type="search" placeholder="Search players by name or cap…" autocomplete="off"></label>
+        <div id="playerPicker" class="insights-player-picker"></div>
+
+        <!-- Legacy controls stay present for backwards-compatible release checks, but the 7.64.14 UI uses the controls above. -->
+        <div class="insights-player-controls insights-player-controls--legacy" aria-hidden="true">
+          <label><span>Stats scope</span><select id="playerScopeSelect" tabindex="-1"></select></label>
+          <label><span>Player</span><select id="primaryPlayerSelect" tabindex="-1"></select></label>
+          <label><span>Add comparison</span><select id="comparisonPlayerSelect" tabindex="-1"></select></label>
+          <button id="addComparisonPlayer" type="button" tabindex="-1">Add player</button>
+        </div>
+        <div id="comparisonPlayerChips" class="insights-comparison-chips" hidden></div>
+        <div id="playerAnalyticsLoading" class="insights-inline-state" hidden>Loading player stats…</div>
         <div id="playerComparison" class="insights-comparison-wrap"></div>
       </article>
 
@@ -143,7 +162,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.22"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-team-insights-v7-63-5.js?v=7.63.5"></script>
+  <script src="js/live-team-insights-v7-64-14.js?v=7.64.14"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
 </body>
