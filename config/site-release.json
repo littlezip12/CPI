@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.10",
-  "name": "BAWPL Event & TBD Game Readiness",
-  "date": "2026-09-16",
+  "version": "7.64.11",
+  "name": "Game-Day Accuracy & Final Whistle",
+  "date": "2026-09-21",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds reusable league/event series and private planned game slots so known dates/game counts can be staged before opponents or times are published, then converted into canonical WPI Live games when schedule details arrive.",
+  "notes": "Adds explicit per-game participation so Games Played distinguishes Played with zero stats from DNP, Fast Scorekeeping with inherited time for routine stats, edit/quarter recovery for human error, correction-triggered canonical analytics refresh, and reliable Final Whistle GroupMe delivery with Game Story plus a team-stats image card.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -308,5 +308,9 @@
   "liveGroupMeGameStoryRelease": "7.64.9",
   "liveLeagueEventRelease": "7.64.10",
   "livePlannedGameSlotsRelease": "7.64.10",
-  "liveTbdGameReadinessRelease": "7.64.10"
+  "liveTbdGameReadinessRelease": "7.64.10",
+  "liveGameParticipationRelease": "7.64.11",
+  "liveFastScorekeepingRelease": "7.64.11",
+  "liveCorrectionRecoveryRelease": "7.64.11",
+  "liveFinalWhistleRelease": "7.64.11"
 }

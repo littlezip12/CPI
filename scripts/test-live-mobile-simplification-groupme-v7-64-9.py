@@ -4,13 +4,13 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit(f'FAIL: {msg}')
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version') in {'7.64.9','7.64.10'},'site version must preserve 7.64.9 or later')
+req(site.get('version') in {'7.64.9','7.64.10','7.64.11'},'site version must preserve 7.64.9 or later')
 for key in ('liveScoringMobileWorkspaceActionsRelease','liveScoringSimplifiedEventEntryRelease','liveGroupMeGameStoryRelease'):
     req(site.get(key)=='7.64.9',f'{key} missing')
 html=(ROOT/'live-game.html').read_text()
-req('live-game-v7-64-9.js?v=7.64.9' in html,'7.64.9 scorer must load')
-req('live-quick-time-pad-v7-64-9.js?v=7.64.9' in html,'7.64.9 Quick Time must load')
-req('live-game-day-speed-v7-64-9.css?v=7.64.9' in html,'7.64.9 scorer CSS must load')
+req(('live-game-v7-64-9.js?v=7.64.9' in html) or ('live-game-v7-64-11.js?v=7.64.11' in html),'7.64.9 scorer behavior must remain loaded through the current successor')
+req(('live-quick-time-pad-v7-64-9.js?v=7.64.9' in html) or ('live-quick-time-pad-v7-64-11.js?v=7.64.11' in html),'7.64.9 Quick Time behavior must remain loaded through the current successor')
+req(('live-game-day-speed-v7-64-9.css?v=7.64.9' in html) or ('live-game-day-accuracy-v7-64-11.css?v=7.64.11' in html),'7.64.9 scorer CSS behavior must remain loaded through the current successor')
 css=(ROOT/'css/live-game-day-speed-v7-64-9.css').read_text()
 for token in ('#eventForm .live-time-field','#eventForm #recordEventButton','.live-status-actions','grid-template-columns:minmax(0,1fr) minmax(0,1fr)'):
     req(token in css,f'mobile/simplified UI token missing: {token}')

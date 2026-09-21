@@ -10,7 +10,7 @@ site=json.loads(read('config/site-release.json')); version=read('VERSION.md')
 following_html=read('live-following.html'); following_js=read('js/live-following-v7-63-9.js'); following_css=read('css/live-following-v7-63-9.css')
 hub_html=read('team-hub.html'); hub_js=read('js/team-hub-v7-63-9.js'); hub_css=read('css/team-hub-v7-63-9.css')
 req(any(v in version for v in ('WPI 7.63.9','WPI 7.64.0','WPI 7.64.1','WPI 7.64.2','WPI 7.64.3','WPI 7.64.4','WPI 7.64.5','WPI 7.64.6','WPI 7.64.7')),'VERSION missing 7.63.9+ supporter-home baseline')
-req(site.get('version') in {'7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10'},'site release mismatch')
+req(site.get('version') in {'7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11'},'site release mismatch')
 req(site.get('liveScoringSupporterHomeRelease')=='7.63.9','supporter-home release marker missing')
 req(site.get('liveScoringUnifiedTeamExperienceRelease')=='7.63.9','unified-team release marker missing')
 # Personalized supporter home comes before broad discovery.

@@ -5,7 +5,7 @@ def req(cond,msg):
     if not cond: raise AssertionError(msg)
 def read(name): return (ROOT/name).read_text()
 site=json.loads(read('config/site-release.json'))
-req(site.get('version')=='7.64.10','site version must be 7.64.10')
+req(site.get('version') in {'7.64.10','7.64.11'},'site version must preserve the 7.64.10 BAWPL/TBD game foundation')
 for key in ('liveLeagueEventRelease','livePlannedGameSlotsRelease','liveTbdGameReadinessRelease'):
     req(site.get(key)=='7.64.10',f'{key} missing')
 html=read('live-dashboard.html')

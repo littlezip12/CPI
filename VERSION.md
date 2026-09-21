@@ -1,3 +1,13 @@
+# WPI 7.64.11 — Game-Day Accuracy & Final Whistle
+
+WPI 7.64.11 turns the first real BAWPL weekend feedback into a lower-friction, correction-safe scoring workflow. Games Played is now based on explicit per-game participation rather than inferred stat activity: starters and players with recorded events are automatically marked Played, players removed from the day roster are DNP, and Final Whistle asks only about unresolved zero-stat players. This preserves the difference between “played with zero recorded stats” and “did not play.”
+
+Fast Scorekeeping no longer asks for exact time on routine shots, saves, steals, turnovers, and field blocks. Those actions inherit the current/last clock and record immediately after player selection. Goals, opponent goals, exclusions, and 5M events retain the Quick Time Pad. The scorer also gains Edit Last Play plus immediate quarter-end recovery; post-final event/participation corrections now refresh canonical analytics instead of leaving stale downstream totals.
+
+Final Whistle delivery is made explicit and retry-safe. GroupMe receives the generated Game Story and team-level stats only, plus a WPI-rendered team-stats image card when GroupMe image upload succeeds. Player-stat dumps stay inside WPI. The scorer explicitly dispatches final summary events after finalization so they cannot be stranded by the scorer-control transition to read-only.
+
+Supabase migration: `202609210001_game_day_accuracy_final_whistle.sql`. The `groupme-post-v7-64-11` Edge Function must also be deployed for the stats-image attachment path. No GroupMe secret rotation is required.
+
 # WPI 7.64.10 — BAWPL Event & TBD Game Readiness
 
 WPI 7.64.10 adds a real league/event model for recurring competition such as BAWPL and a private planned-game-slot workflow for schedules that are not published yet. Owners/Admins can save an event name, game date, and known game count without creating fake opponents or start times. Planned slots remain operational/private and are not scored or published.

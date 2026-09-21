@@ -1,0 +1,40 @@
+/* WPI 7.64.9 — game-day speed + cap assignment polish */
+.wpi-quick-time-dialog{border:0;border-radius:22px;padding:0;width:min(94vw,420px);box-shadow:0 22px 70px rgba(15,23,42,.28)}
+.wpi-quick-time-dialog::backdrop{background:rgba(15,23,42,.58);backdrop-filter:blur(2px)}
+.wpi-quick-time-shell{padding:18px;display:grid;gap:14px;background:#fff;color:#0f172a}
+.wpi-quick-time-shell header{display:flex;justify-content:space-between;gap:12px;align-items:center}.wpi-quick-time-shell header div{display:grid}.wpi-quick-time-shell header span{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#64748b}.wpi-quick-time-shell header strong{font-size:1.25rem}.wpi-quick-time-shell header button{border:0;background:transparent;font-weight:700;color:#475569}
+.wpi-quick-time-display{display:grid;text-align:center;padding:14px;border-radius:16px;background:#f8fafc;border:1px solid #e2e8f0}.wpi-quick-time-display small,.wpi-quick-time-display span{color:#64748b}.wpi-quick-time-display strong{font-size:2.8rem;line-height:1.05;font-variant-numeric:tabular-nums}
+.wpi-quick-assist{display:grid;gap:6px;font-weight:700}.wpi-quick-assist select{min-height:46px;border:1px solid #cbd5e1;border-radius:12px;padding:0 12px;background:#fff}
+.wpi-quick-time-shortcuts{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:8px}.wpi-quick-time-shortcuts button,.wpi-quick-time-grid button{min-height:48px;border:1px solid #dbe3ec;border-radius:12px;background:#f8fafc;font-weight:800;font-size:1rem}
+.wpi-quick-time-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.wpi-quick-time-grid button[data-qtp-digit]{font-size:1.35rem;background:#fff}
+.wpi-quick-time-record{min-height:54px;border:0;border-radius:14px;background:#0f172a;color:#fff;font-weight:900;font-size:1.05rem}.wpi-quick-time-error{min-height:1.25em;margin:0;color:#b91c1c;font-weight:700;text-align:center}
+.wpi-cap-scope-panel{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:center;margin:12px 0;padding:12px 14px;border:1px solid #dbe3ec;border-radius:14px;background:#f8fafc}.wpi-cap-scope-panel div{display:grid}.wpi-cap-scope-panel small{color:#64748b}.wpi-cap-scope-panel button{min-height:40px;border-radius:10px}.wpi-cap-scope-panel>span{grid-column:1/-1;color:#475569;font-size:.85rem}
+@media(max-width:720px){.wpi-cap-scope-panel{grid-template-columns:1fr}.wpi-cap-scope-panel>span{grid-column:auto}.wpi-cap-scope-panel button{width:100%}.live-roster-row{grid-template-columns:minmax(92px,.7fr) minmax(0,1.4fr) auto}}
+
+
+/* 7.64.9 — one scorer workflow, not the legacy clock form plus Quick Time layered together. */
+body.wpi-live-sandbox-page.wpi-quick-time-active #eventForm .live-time-field,
+body.wpi-live-sandbox-page.wpi-quick-time-active #eventForm #assistPlayerLabel,
+body.wpi-live-sandbox-page.wpi-quick-time-active #eventForm #eventNoteLabel,
+body.wpi-live-sandbox-page.wpi-quick-time-active #eventForm #messagePreviewDetails,
+body.wpi-live-sandbox-page.wpi-quick-time-active #eventForm #recordEventButton{display:none !important}
+body.wpi-live-sandbox-page.wpi-quick-time-active #eventForm{grid-template-columns:1fr}
+.wpi-quick-note{border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc}
+.wpi-quick-note summary{cursor:pointer;list-style:none;padding:11px 12px;font-weight:800;color:#334155;display:flex;justify-content:space-between;gap:8px}.wpi-quick-note summary::-webkit-details-marker{display:none}.wpi-quick-note summary span{font-size:.75rem;color:#64748b;font-weight:700}.wpi-quick-note input{width:calc(100% - 20px);margin:0 10px 10px;min-height:42px;border:1px solid #cbd5e1;border-radius:10px;padding:8px 10px;font:inherit}
+
+/* Mobile connection strip: connection state gets its own row; actions no longer crush together. */
+@media(max-width:720px){
+  body.wpi-live-sandbox-page > main > .live-status-strip{display:grid;grid-template-columns:1fr;gap:10px;padding:12px}
+  body.wpi-live-sandbox-page > main > .live-status-strip > div:first-child{min-width:0}
+  body.wpi-live-sandbox-page > main > .live-status-strip .live-status-actions{display:grid !important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;width:100%;align-items:stretch}
+  body.wpi-live-sandbox-page > main > .live-status-strip .live-backend-sync-status{grid-column:1/-1;width:100%;box-sizing:border-box;text-align:center;justify-content:center;min-height:34px;display:flex;align-items:center}
+  body.wpi-live-sandbox-page > main > .live-status-strip .live-status-actions button{width:100%;min-width:0;min-height:42px;margin:0}
+}
+
+/* WPI 7.64.11 — game-day accuracy, participation and correction controls. */
+.live-last-update-actions{display:flex;gap:8px;align-items:center}.live-last-update-actions button{min-width:74px}
+.wpi-game-roster-toggle{display:flex!important;align-items:center;gap:8px;font-weight:800;color:#334155}.wpi-game-roster-toggle input{width:20px;height:20px;accent-color:#0f4c81}.wpi-game-roster-toggle span{font-size:.86rem}
+.wpi-participation-list{display:grid;gap:9px;max-height:min(54vh,520px);overflow:auto;padding:2px}.wpi-participation-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 14px;border:1px solid #dbe3ec;border-radius:14px;background:#f8fafc}.wpi-participation-row>div:first-child{display:grid;gap:2px}.wpi-participation-row strong{color:#0f172a}.wpi-participation-row small{color:#64748b}.wpi-participation-actions{display:flex;gap:6px}.wpi-participation-actions button{min-height:38px;padding:8px 12px;border-radius:10px;border:1px solid #cbd5e1;background:#fff;font-weight:800}.wpi-participation-actions button.is-active{background:#0f172a;color:#fff;border-color:#0f172a}
+.wpi-edit-play-dialog select,.wpi-edit-play-dialog input{width:100%}.live-post-period-undo{width:100%;margin-bottom:10px;background:#fff;border:1px solid #cbd5e1!important;color:#334155!important}.wpi-time-inherited-note{font-size:.76rem;color:#64748b;font-weight:700}
+.wpi-final-delivery-note{margin:8px 0 0;color:#475569;font-size:.82rem}
+@media(max-width:720px){.wpi-participation-row{grid-template-columns:1fr}.wpi-participation-actions{display:grid;grid-template-columns:1fr 1fr}.wpi-participation-actions button{width:100%}.live-last-update-actions{width:100%;display:grid;grid-template-columns:1fr 1fr}.live-last-update-actions button{width:100%}.live-roster-row{grid-template-columns:minmax(72px,.6fr) minmax(0,1.4fr)!important}.wpi-game-roster-toggle{grid-column:1/-1}.live-roster-row>button{grid-column:1/-1}}

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWPI Live 7.64.11 Focused Release Check\n'
+node --check js/live-game-v7-64-11.js
+node --check js/live-backend-v7-64-11.js
+node --check js/live-quick-time-pad-v7-64-11.js
+python3 -m py_compile scripts/test-live-game-day-accuracy-final-whistle-v7-64-11.py
+python3 scripts/test-live-game-day-accuracy-final-whistle-v7-64-11.py
+bash ./release-check-live-7.64.10
+printf '\nWPI Live 7.64.11 focused release check passed.\n'

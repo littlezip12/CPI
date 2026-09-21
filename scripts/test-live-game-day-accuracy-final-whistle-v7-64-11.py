@@ -1,0 +1,35 @@
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parents[1]
+def req(cond,msg):
+    if not cond: raise AssertionError(msg)
+def read(name): return (ROOT/name).read_text()
+site=json.loads(read('config/site-release.json'))
+req(site.get('version')=='7.64.11','site version must be 7.64.11')
+for key in ('liveGameParticipationRelease','liveFastScorekeepingRelease','liveCorrectionRecoveryRelease','liveFinalWhistleRelease'):
+    req(site.get(key)=='7.64.11',f'{key} missing')
+html=read('live-game.html'); scorer=read('js/live-game-v7-64-11.js'); quick=read('js/live-quick-time-pad-v7-64-11.js'); backend=read('js/live-backend-v7-64-11.js'); edge=read('supabase/functions/groupme-post-v7-64-11/index.ts'); sql=read('supabase/migrations/202609210001_game_day_accuracy_final_whistle.sql')
+req('live-game-v7-64-11.js?v=7.64.11' in html,'7.64.11 scorer must load')
+req('live-backend-v7-64-11.js?v=7.64.11' in html,'7.64.11 backend must load')
+req('live-quick-time-pad-v7-64-11.js?v=7.64.11' in html,'7.64.11 Quick Time must load')
+req('participationReviewDialog' in html and 'Confirm who played' in html,'participation final review missing')
+req('editLastInlineButton' in html and 'editLastPlayDialog' in html,'Edit Last Play missing')
+req('undoQuarterEndButton' in html and 'undoPostPeriodEndButton' in html,'quarter-end recovery controls missing')
+req('EXACT_TIME_EVENTS' in quick and 'form.dataset.wpiTimePrecision="inherited"' in quick,'Fast Scorekeeping inherited-time path missing')
+for event in ('"goal"','"opponent_goal"','"exclusion_drawn"','"exclusion_committed"','"five_meter_drawn"','"five_meter_committed"'): req(event in quick,f'exact-time event missing: {event}')
+req('live_game_participation' in backend and 'participationRows' in backend,'backend participation persistence missing')
+req('uploadGroupMeStatsCard' in backend,'stats card upload client missing')
+req('prepareFinalWhistleStatsImage' in scorer and 'buildTeamStatsCardDataUrl' in scorer,'Final Whistle stats card builder missing')
+req('await deliverPendingMessages(result, summaryIds)' in scorer,'explicit Final Whistle delivery missing')
+summary=scorer[scorer.index('function buildGroupMeSummary(stats)'):scorer.index('function splitSummaryPayload')]
+req('PLAYER STATS' not in summary,'GroupMe final summary must not dump player stats')
+req('Full player stats are available in WPI.' in summary,'GroupMe player-stats CTA missing')
+req('upload_stats_card' in edge and 'https://image.groupme.com/pictures' in edge,'GroupMe image upload path missing')
+req('attachments:[{ type:"image", url:imageUrl }]' in edge,'GroupMe image attachment missing')
+req('groupmeImageUrl' in edge and 'groupmeImageUrl' in backend,'summary image URL must persist on event metrics')
+req('create table if not exists public.live_game_participation' in sql,'participation table migration missing')
+req("status in ('played','dnp')" in sql,'Played/DNP distinction missing')
+req('select gp.player_id from public.live_game_participation gp' in sql,'analytics must include explicit played participation')
+req('live_events_refresh_final_analytics' in sql and 'live_game_participation_refresh_final_analytics' in sql,'correction analytics refresh triggers missing')
+req("target_id := case when tg_op='DELETE'" in sql,'delete-safe analytics trigger missing')
+print('WPI Live 7.64.11 Game-Day Accuracy & Final Whistle check passed.')
