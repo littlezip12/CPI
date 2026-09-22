@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.18",
-  "name": "Water Polo HQ Brand Foundation",
+  "version": "7.64.19",
+  "name": "Water Polo HQ Brand System & Release Gate Hardening",
   "date": "2026-09-21",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Begins the consumer-facing rebrand from WPI / Water Polo Index to Water Polo HQ (WPHQ): new light visual system, global shell identity, homepage treatment, PWA/app identity, and key supporter/public entry surfaces. Water Polo Index remains the ranking methodology name. Backend, scoring, Supabase schema, GroupMe delivery, rankings data and historical internal identifiers are unchanged.",
+  "notes": "Corrects the WPHQ water-polo ball artwork using the approved production mark, refreshes PWA/app identity assets, continues the Water Polo HQ consumer rebrand, and hardens recurring historical release gates so future releases validate preserved behavior semantically instead of requiring manual version allowlist edits. Backend, scoring, Supabase schema, GroupMe delivery, rankings data and internal WPI identifiers remain unchanged.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -317,11 +317,13 @@
   "livePlayerRosterAccuracyRelease": "7.64.15",
   "liveParentPrivacyRelease": "7.64.15",
   "livePlayerStatsVisualPolishRelease": "7.64.16",
-  "livePwaRelease": "7.64.18",
-  "liveInstallableAppRelease": "7.64.18",
-  "liveOfflineShellRelease": "7.64.18",
+  "livePwaRelease": "7.64.19",
+  "liveInstallableAppRelease": "7.64.19",
+  "liveOfflineShellRelease": "7.64.19",
   "wphqBrandFoundationRelease": "7.64.18",
   "consumerBrand": "Water Polo HQ",
   "consumerShortName": "WPHQ",
-  "rankingMethodologyBrand": "Water Polo Index"
+  "rankingMethodologyBrand": "Water Polo Index",
+  "wphqBrandSystemRelease": "7.64.19",
+  "releaseGateHardeningRelease": "7.64.19"
 }

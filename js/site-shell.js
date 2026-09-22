@@ -49,7 +49,7 @@
     return `<header class="cpi-shell-header" data-cpi-shell="header">
       <div class="cpi-shell-nav">
         <a class="cpi-shell-brand" href="${makeHref("index.html")}" aria-label="Water Polo HQ Home">
-          <span class="cpi-shell-logo-frame"><img class="cpi-shell-logo cpi-shell-logo--mark" src="${makeHref("assets/branding/wphq-logo-full.svg")}" alt="Water Polo HQ"></span>
+          <span class="cpi-shell-logo-frame"><img class="cpi-shell-logo cpi-shell-logo--mark" src="${makeHref("assets/branding/wphq-logo-full.png?v=7.64.19")}" alt="Water Polo HQ"></span>
           <span class="cpi-shell-brand-text"><strong>Water Polo HQ</strong></span>
         </a>
         <nav class="cpi-shell-links" aria-label="Primary navigation">${nav}</nav>
@@ -64,7 +64,7 @@
       <div class="cpi-shell-footer-grid">
         <div class="cpi-shell-footer-brand">
           <a href="${makeHref("index.html")}" aria-label="Water Polo HQ Home">
-            <span class="cpi-shell-logo-frame cpi-shell-logo-frame--footer"><img class="cpi-shell-logo cpi-shell-logo--full" src="${makeHref("assets/branding/wphq-logo-full.svg")}" alt="Water Polo HQ"></span>
+            <span class="cpi-shell-logo-frame cpi-shell-logo-frame--footer"><img class="cpi-shell-logo cpi-shell-logo--full" src="${makeHref("assets/branding/wphq-logo-full.png?v=7.64.19")}" alt="Water Polo HQ"></span>
           </a>
           <p>Scores, rankings, stats, tournament results, team discovery and live game coverage in one connected water polo platform.</p>
         </div>

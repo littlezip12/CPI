@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit("HOMEPAGE LIVE PULSE 7.62.6 TEST FAILED\n - "+msg)
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version') in {'7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16','7.64.17','7.64.18'},'site version must preserve 7.62.6 or later')
+req(site.get('version') in {'7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16','7.64.17','7.64.18','7.64.19'},'site version must preserve 7.62.6 or later')
 req(site.get('liveScoringHomepageLivePulseRelease')=='7.62.6','homepage Live pulse release metadata missing')
 req(site.get('liveScoringHomepagePublicScoreDiscoveryRelease')=='7.62.6','homepage public score discovery metadata missing')
 req(any(v in (ROOT/'VERSION.md').read_text() for v in ('7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11')),'VERSION must preserve 7.62.6 or later')

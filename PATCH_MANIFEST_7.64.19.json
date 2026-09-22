@@ -1,0 +1,542 @@
+{
+  "release": "7.64.19",
+  "name": "Water Polo HQ Brand System & Release Gate Hardening",
+  "source_zip": "CPI-main - 2026-09-21T214554.670.zip",
+  "source_sha256": "e2c725a5038b92e7436e011ea2bd1ae5ccf0239d5e15c8ba884234f75ae80476",
+  "supabase_migration_required": false,
+  "edge_function_deploy_required": false,
+  "groupme_change_required": false,
+  "notes": "Approved water-polo-ball WPHQ artwork, refreshed PWA identity, provisional tagline removed, and recurring historical release-gate hardening.",
+  "files": [
+    {
+      "path": "INSTALL_7.64.19.md",
+      "sha256": "e53edc000719c42ca5d657f0baa0447ccb29e63bbf9d47f6d37be2956e167afe",
+      "bytes": 766
+    },
+    {
+      "path": "PATCH_FILES_7.64.19.txt",
+      "sha256": "f0be55895a1bf596a7fac5fa2a7416d9b5ff1baf77cca96a77a0ca78e6701dcc",
+      "bytes": 4624
+    },
+    {
+      "path": "VERSION.md",
+      "sha256": "7df332e6cdeda813340d299a97079b09dfaaff1e35b003ff2daeba14a032ba02",
+      "bytes": 14329
+    },
+    {
+      "path": "WPI_7.64.19_WATER_POLO_HQ_BRAND_SYSTEM_GATE_HARDENING_HANDOFF.md",
+      "sha256": "68c865322f8100a537dca2b49fec7faf0f03a4ff6b97b09f5bc27e254184bdf7",
+      "bytes": 1119
+    },
+    {
+      "path": "assets/app-icons/wphq-app-192.png",
+      "sha256": "67c97e6ef7f795ee61733be59788571c014dd17db290d97699a36bfd1ee1b019",
+      "bytes": 23046
+    },
+    {
+      "path": "assets/app-icons/wphq-app-512.png",
+      "sha256": "5e647cc5ca482ef88225e102b41d3212111ff99f5e501b75dd6c5ad3dd23c92c",
+      "bytes": 114768
+    },
+    {
+      "path": "assets/app-icons/wphq-app-maskable-512.png",
+      "sha256": "796e1f6fa7372fe903f0dcec2e8403273bb11a43e13936e177bce07f833722ed",
+      "bytes": 101482
+    },
+    {
+      "path": "assets/app-icons/wphq-apple-touch-180.png",
+      "sha256": "beb93990eb0994e717e8d3dba90e4d32ff6195cc914ec216fe4ae434cb87edb5",
+      "bytes": 20889
+    },
+    {
+      "path": "assets/branding/wphq-logo-full.png",
+      "sha256": "cc70512fb7b33ffd6eed8a924cc40859f20a6e19b87a32013b5051297d10a7e6",
+      "bytes": 356752
+    },
+    {
+      "path": "assets/branding/wphq-logo-full.svg",
+      "sha256": "66689897c5987cff1bf2a144d99121fc9141c071e52d57c431e1c1e61f0b0f32",
+      "bytes": 475871
+    },
+    {
+      "path": "assets/branding/wphq-logo-mark.png",
+      "sha256": "38d2255982006a6d30566a95c31a6d0efed88a84caadcd3bd123f960c35cc6c1",
+      "bytes": 182155
+    },
+    {
+      "path": "assets/branding/wphq-logo-mark.svg",
+      "sha256": "c3ceb36614c117e681c21d2af11fd2f227f64631c8128c7818128566fe705a68",
+      "bytes": 243065
+    },
+    {
+      "path": "config/site-release.json",
+      "sha256": "2c8dd4c29fa5fea51831300153f72687d19982ff103260da7774389ef39fc6b8",
+      "bytes": 15780
+    },
+    {
+      "path": "index.html",
+      "sha256": "e04fd772912d8c1d9fd555d2fa20c85671209ce807bfd75baa1145ed88b294fd",
+      "bytes": 11752
+    },
+    {
+      "path": "js/live-pwa-v7-64-19.js",
+      "sha256": "2ff879c09cef65c2b2d08d5cabee0bbd4b6a3a85c22d9bf285280130ed7ad5c9",
+      "bytes": 1936
+    },
+    {
+      "path": "js/site-shell.js",
+      "sha256": "ad245b580cfb61f97c78470c9645d05ccfcb25d951a87fbb3feed4291fcd3c1c",
+      "bytes": 6812
+    },
+    {
+      "path": "live-following.html",
+      "sha256": "4df2c9565cf91712653360eadbabfde1ae45787bdb64fb77d6817218f1d7e819",
+      "bytes": 6999
+    },
+    {
+      "path": "live-game-recap.html",
+      "sha256": "cf6b4b102867c6d9560b3706b34eef15506fc0746b7e80437aed56793e7cef42",
+      "bytes": 6227
+    },
+    {
+      "path": "live-game.html",
+      "sha256": "03089554eeffe7e73e010753aba4bb83823bf9894174deb6f8a15e4715d865f7",
+      "bytes": 36206
+    },
+    {
+      "path": "live-login.html",
+      "sha256": "27abe5d7804695088f3a962de91d647a872b2c35617c4f22bbbd12eb2146b4f9",
+      "bytes": 4918
+    },
+    {
+      "path": "live-score.html",
+      "sha256": "745d27f1db791d967c0099857e1f1ec9654c8aebcd12cd8392f2a24c787bee57",
+      "bytes": 4348
+    },
+    {
+      "path": "live-team-insights.html",
+      "sha256": "a2f69488cd402b4a93e0fba1d3874ee9615c5655056c3416b35bf6b4f0eb393e",
+      "bytes": 10689
+    },
+    {
+      "path": "live-tournament.html",
+      "sha256": "bab3b80c76da7ddd3783040adc65614c20ab372bea6c00c1c479aff53138588c",
+      "bytes": 5584
+    },
+    {
+      "path": "live.html",
+      "sha256": "5806c760e724742f9fb99cac8fc891c31dca708d09e74a96c10c440f88998e51",
+      "bytes": 5550
+    },
+    {
+      "path": "manifest.webmanifest",
+      "sha256": "903e3cd958599b4aa1602047706a36f6c471fe9750f3baaeba71786be7424537",
+      "bytes": 1412
+    },
+    {
+      "path": "platform.json",
+      "sha256": "236e5c3234d754cd348b23321072dd2ff1d9807ef79d8acf03c29de0ff262bf1",
+      "bytes": 3258
+    },
+    {
+      "path": "release-check",
+      "sha256": "f0dcf871ae2d5cfc6e21e4ede5781459220c84046a46dcaa6fb858adfc401caf",
+      "bytes": 6250
+    },
+    {
+      "path": "release-check-live-7.64.19",
+      "sha256": "0bc1f89f2b796ee465f68761dc0c6abaaec84672ea2a255afd1c567bdf78eef0",
+      "bytes": 605
+    },
+    {
+      "path": "scripts/test-boys-post-jo-rankings-v7-52-0.py",
+      "sha256": "092d25ceacb5438448c491687a3b52720d07476415ab459789f3c118b0b61f95",
+      "bytes": 6009
+    },
+    {
+      "path": "scripts/test-brand-teams-section-landing-v7-53-4.py",
+      "sha256": "0e4fceaf594fe46211e127f41db262a915025aa0b7a2d825c47cd90f0df27716",
+      "bytes": 8193
+    },
+    {
+      "path": "scripts/test-champions-cup-qualifier-registry-v7-64-7.py",
+      "sha256": "bc9d8f04127ba8f6c113831dee5df9123c8d9f8db1e9bf5733af025bbcadb391",
+      "bytes": 4858
+    },
+    {
+      "path": "scripts/test-club-family-cleanup-v7-52-12.py",
+      "sha256": "2456d59f5f841712747a7b57c99a7b237d784e6d679415749ca25ff11c6d3456",
+      "bytes": 5923
+    },
+    {
+      "path": "scripts/test-club-locations-v7-52-5.py",
+      "sha256": "ea4f619e0fbd06f64d8d1f735ce39ba8e9d6718b4bf188aa7b6cebc65c4b15da",
+      "bytes": 4869
+    },
+    {
+      "path": "scripts/test-club-logos-v7-52-6.py",
+      "sha256": "1b549ef2c0c0a25ae4ae10068fb7e588d5de554a4a6f7e01606781e2743cd9f5",
+      "bytes": 6886
+    },
+    {
+      "path": "scripts/test-club-profile-experience-v7-53-0.py",
+      "sha256": "2321538d7dba380da920cb2094a23ca147882ba91d11c450d028e3c54cac8493",
+      "bytes": 8274
+    },
+    {
+      "path": "scripts/test-club-websites-v7-52-16.py",
+      "sha256": "fe56d6eda408465f12a172c4952b6a4daf9fcda8ea9759941af3563c2a1c7c07",
+      "bytes": 6866
+    },
+    {
+      "path": "scripts/test-evan-cousineau-v7-54-7.py",
+      "sha256": "5284def0e9d72e4612500ef1b49e3a80e15991910cb6998f24fd5c7c0c925b02",
+      "bytes": 5256
+    },
+    {
+      "path": "scripts/test-girls-futures-super-finals-v7-54-11.py",
+      "sha256": "53c16803fc1d7f2251b61762fd3f9ab9e9e7327145cf915681248d111d3dd58f",
+      "bytes": 8222
+    },
+    {
+      "path": "scripts/test-girls-post-jo-rankings-v7-52-2.py",
+      "sha256": "d3490e7e1416dfa5aaa3c6a20685f23da3ef7f4e7729c1a7d2dbc2d7fb70867d",
+      "bytes": 6434
+    },
+    {
+      "path": "scripts/test-homepage-live-pulse-v7-62-6.py",
+      "sha256": "e6e62aba7aae3d60678d49b00a365222ba9cb3900b1d5a87fafa252615324a85",
+      "bytes": 3149
+    },
+    {
+      "path": "scripts/test-homepage-simplification-v7-54-12.py",
+      "sha256": "918a4bb6081190ae7dfdd24558ca1bd2ff09e02ec23a7022dcc6b430c46379cb",
+      "bytes": 4273
+    },
+    {
+      "path": "scripts/test-jo-logo-delivery-v7-52-9.py",
+      "sha256": "aa20a1ca1c75fcf2c681b3936adcd84af3290f646a2518c96f9e086af7acee03",
+      "bytes": 5619
+    },
+    {
+      "path": "scripts/test-jo-profile-bridge-v7-52-11.py",
+      "sha256": "5a19c47e130306520b7581d89f107224bc72d6cb862232c41286240178cfb6a3",
+      "bytes": 8409
+    },
+    {
+      "path": "scripts/test-jo-recap-v7-54-16.py",
+      "sha256": "6ae31e199b94be54dc474b131cd0b6a0ca0dbed5464cfc2808bb8ab5bbd918c7",
+      "bytes": 6942
+    },
+    {
+      "path": "scripts/test-jo-results-browser-v7-52-1.py",
+      "sha256": "9db21c02520ffc9693dfb831342210a1f4ccc6f09dbb70c214222f09572082e5",
+      "bytes": 11880
+    },
+    {
+      "path": "scripts/test-jo-results-links-v7-52-7.py",
+      "sha256": "909a584a01751d1adbb4c3e34dea141e3c4b4c415e198a6948d5d3fd473b2a72",
+      "bytes": 7308
+    },
+    {
+      "path": "scripts/test-jo-session-3-v7-54-5.py",
+      "sha256": "aab17d91682f00873d742d6e54333c758a00df85476c36bc17abc6d381b86ba6",
+      "bytes": 9570
+    },
+    {
+      "path": "scripts/test-kap7-international-v7-54-9.py",
+      "sha256": "c5126d8bbcbf35a135c0f8154d07e3cfae76a453c9d34142794bcfe09fe5aa2d",
+      "bytes": 7747
+    },
+    {
+      "path": "scripts/test-kap7-logo-mapping-v7-54-10.py",
+      "sha256": "4a7ec5d2b0775ca9a2c3cd58915aa67b1011fe5fabf5ae1084beafeef5b8fdd4",
+      "bytes": 5607
+    },
+    {
+      "path": "scripts/test-kern-skip-separation-v7-52-13.py",
+      "sha256": "3d8877604ea081365a99b26379e6c02b9063528bbc2327969c805a651d97ec63",
+      "bytes": 8790
+    },
+    {
+      "path": "scripts/test-landing-page-clarity-v7-54-13.py",
+      "sha256": "82dbb634e700788fea132c04d4997f57ce621f9a6a7d08f5a3e9e824c9da1685",
+      "bytes": 7633
+    },
+    {
+      "path": "scripts/test-live-analytics-entitlements-monetization-v7-63-0.py",
+      "sha256": "046fc2eec3a188f9484880b3f73f69c989105c06d79e0f2a9afa43dc1e1950aa",
+      "bytes": 7171
+    },
+    {
+      "path": "scripts/test-live-bawpl-tbd-game-readiness-v7-64-10.py",
+      "sha256": "70cc916f447de926030044009383c197472dbf0ec94ab5cd33222b0a6aebbc8b",
+      "bytes": 2129
+    },
+    {
+      "path": "scripts/test-live-club-branding-platform-v7-60-0.py",
+      "sha256": "b5f8be60adbe292e6467e536cc9c2069f643c54e063e033c85d66828c535d35d",
+      "bytes": 7725
+    },
+    {
+      "path": "scripts/test-live-club-operations-scale-v7-58-9.py",
+      "sha256": "660b4b686ac8ab54a30f67a79633c28602336a7098ac7ffbc9e28242b874d9b5",
+      "bytes": 6154
+    },
+    {
+      "path": "scripts/test-live-club-pilot-hardening-v7-58-6.py",
+      "sha256": "846f4144fe627fb2d48eeb36075e46a70f19f0dd964a2b038234133c6b503ff6",
+      "bytes": 8337
+    },
+    {
+      "path": "scripts/test-live-club-pilot-validation-regression-v7-58-9.py",
+      "sha256": "1b6ad63bfbd8bb773c81d77b669f4e270371ed86345a3d8f73f30d82d41755bb",
+      "bytes": 6540
+    },
+    {
+      "path": "scripts/test-live-club-workspace-regression-v7-58-6.py",
+      "sha256": "2f35e59cfd2efc2540b2d30b03458145f0a346e156503e78225168c1b18812bf",
+      "bytes": 2707
+    },
+    {
+      "path": "scripts/test-live-event-archive-regression-v7-58-6.py",
+      "sha256": "daa5f8b8d8cc2e2417c29bfc2567736b163a3be8c1e1f670507c7363e501675b",
+      "bytes": 2474
+    },
+    {
+      "path": "scripts/test-live-free-team-insights-launch-v7-63-8.py",
+      "sha256": "a7d028cc3a4f51cc4247ef2fe87f21daa53b4648de6fce23ce05335adc871d54",
+      "bytes": 6115
+    },
+    {
+      "path": "scripts/test-live-game-day-accuracy-final-whistle-v7-64-11.py",
+      "sha256": "cf38be48cbe4b0fada45c715287775bbc09e4155d6d931d14d71a96a17e31097",
+      "bytes": 3504
+    },
+    {
+      "path": "scripts/test-live-game-day-speed-story-v7-64-8.py",
+      "sha256": "20b425035de3042c9516bc93019f783b15bee86198572525005b3ca7f8df7563",
+      "bytes": 3195
+    },
+    {
+      "path": "scripts/test-live-game-fan-experience-v7-64-0.py",
+      "sha256": "3f0ed36af22492f177d209ad887ee28e4ccc2f91cd165359dd36ab2c676412a2",
+      "bytes": 5927
+    },
+    {
+      "path": "scripts/test-live-high-school-schedule-delivery-v7-61-1.py",
+      "sha256": "f909e93d55e1ff7fdc3035038997bb9279999790fe58186641ade56a654c3671",
+      "bytes": 5497
+    },
+    {
+      "path": "scripts/test-live-installable-app-v7-64-17.py",
+      "sha256": "128d1f619b4b6267fb1f13a8b485ac570cfb72159065b377c2f376d8bbaabff6",
+      "bytes": 4620
+    },
+    {
+      "path": "scripts/test-live-mega-event-capacity-gate-v7-64-3.py",
+      "sha256": "caa48476dba4e2cd269d69743683abba39ca72f3e2f7116ccc573cb8f2ecfe75",
+      "bytes": 5989
+    },
+    {
+      "path": "scripts/test-live-mobile-game-setup-scoring-v7-64-4.py",
+      "sha256": "f1f5aef3778aa84615824b4e7426b256f73189c9aaec6c6c359343afb194d8b5",
+      "bytes": 2369
+    },
+    {
+      "path": "scripts/test-live-mobile-recap-opponent-search-v7-64-5.py",
+      "sha256": "8d13c99adf3a6d242b94c0a649893b663c99b76303bc1064814713c398165bc7",
+      "bytes": 2367
+    },
+    {
+      "path": "scripts/test-live-mobile-simplification-groupme-v7-64-9.py",
+      "sha256": "ba19c01534db45cf107f4bba6134519923350d932c7d0326f96455e104f9a3ec",
+      "bytes": 2256
+    },
+    {
+      "path": "scripts/test-live-multi-team-profiles-rosters-regression-v7-58-6.py",
+      "sha256": "ad9e9ac1f1e0021cfdabaad5561258f42e589571b1b8a5f93cd77c02c31b0778",
+      "bytes": 2145
+    },
+    {
+      "path": "scripts/test-live-opponent-search-context-v7-64-6.py",
+      "sha256": "cf20470e57e71035182f709f8dc20b26bd5cdd8df3c45accbfa3c94caee23920",
+      "bytes": 1782
+    },
+    {
+      "path": "scripts/test-live-organization-insights-sponsorship-v7-63-5.py",
+      "sha256": "92aa6b5746efc1a077e13c48c11a1ad1a6e091a9731595b89ac4d3ca37fd97ae",
+      "bytes": 8119
+    },
+    {
+      "path": "scripts/test-live-pilot-launch-admin-safety-v7-58-10.py",
+      "sha256": "b930748835da10b317106f6f3bf52e52fe59ce98a2f85eb28577fc00356d9148",
+      "bytes": 2648
+    },
+    {
+      "path": "scripts/test-live-pilot-regression-v7-58-6.py",
+      "sha256": "bf7cca92b55287860e892a692dc213f9daec244157f30c9b87eeacd973938fd9",
+      "bytes": 4371
+    },
+    {
+      "path": "scripts/test-live-player-analytics-comparison-v7-63-3.py",
+      "sha256": "e8116c4ba1343947cf596981711a6ae6794a72de025d39dee702c80e778ca5ed",
+      "bytes": 5960
+    },
+    {
+      "path": "scripts/test-live-player-stats-experience-v7-64-14.py",
+      "sha256": "77076359e8527dc80b15acd20a280bf7808683402ee0e7fe3d9953e0e4e606c3",
+      "bytes": 2241
+    },
+    {
+      "path": "scripts/test-live-player-stats-visual-polish-v7-64-16.py",
+      "sha256": "5affe8753dfdf6e918a4586c0bd01bc2c3a28d2d1976c0ba5f5094c03f943364",
+      "bytes": 1908
+    },
+    {
+      "path": "scripts/test-live-promotional-access-billing-readiness-v7-63-4.py",
+      "sha256": "9a1a65b504bded95ce1a980fa499f54d1697f737c83d1449fe556fbfb6f74439",
+      "bytes": 4297
+    },
+    {
+      "path": "scripts/test-live-public-center-v7-62-3.py",
+      "sha256": "3d5018f5c20518dee07df5162fa44ec48abef38e1f1b728ca09849e739ef39d6",
+      "bytes": 4478
+    },
+    {
+      "path": "scripts/test-live-public-game-publishing-v7-62-4.py",
+      "sha256": "f3d37ba306d1271e4d1171b5bd28751934d8423661831bf497a38216a1ccf5f5",
+      "bytes": 3169
+    },
+    {
+      "path": "scripts/test-live-public-matchup-identity-v7-62-5.py",
+      "sha256": "2938a34d811fb7a907929a675f3e024c07e0f4fcf9457ba87403bf19ca2718a1",
+      "bytes": 3316
+    },
+    {
+      "path": "scripts/test-live-public-supporter-scale-v7-60-3.py",
+      "sha256": "ef9aab06bff92a49d26a511e1c4ae28201d496627349ef9df3f8926b60e9379d",
+      "bytes": 7272
+    },
+    {
+      "path": "scripts/test-live-scale-mega-event-readiness-v7-64-2.py",
+      "sha256": "a0ebe60eea9f0d693af822abe18bec0941f2c0b021b3b8f995030b0bb6bac1e2",
+      "bytes": 5451
+    },
+    {
+      "path": "scripts/test-live-self-service-club-onboarding-v7-60-1.py",
+      "sha256": "7327db56e50cb67e04e181465e94969ceac3f17dbdf91b7061d7b796081a7bbc",
+      "bytes": 8055
+    },
+    {
+      "path": "scripts/test-live-sponsorship-validation-event-inventory-v7-63-6.py",
+      "sha256": "0bf6dd53d52a24ef12208ec3fb4dbe686e6aa71a61c95158ff538c4051abc38d",
+      "bytes": 7311
+    },
+    {
+      "path": "scripts/test-live-supporter-analytics-privacy-v7-63-1.py",
+      "sha256": "f2d679524b7d284016170a74733fda0985f7312d6d1d55ddceb09c892d1a74b9",
+      "bytes": 3282
+    },
+    {
+      "path": "scripts/test-live-supporter-home-team-experience-v7-63-9.py",
+      "sha256": "53e80c3bc969d48916dd5346008958f55c58b873834c3ae7e727b65583874ff3",
+      "bytes": 5549
+    },
+    {
+      "path": "scripts/test-live-team-directory-identity-v7-60-2.py",
+      "sha256": "e272cd16b2658fce2ff6503aa2b9dc61dd4f3713ad34f2a04ab6914c4d6d19e6",
+      "bytes": 8938
+    },
+    {
+      "path": "scripts/test-live-team-insights-experience-v7-63-2.py",
+      "sha256": "2238e483eff09742f144bff5f4c937bde3a942e184419e462f4c7a32d42d3b2e",
+      "bytes": 6551
+    },
+    {
+      "path": "scripts/test-live-tournament-experience-v7-64-1.py",
+      "sha256": "f85068430158736994344096058724a8146d1ebf111903ad0b96342487e89734",
+      "bytes": 7071
+    },
+    {
+      "path": "scripts/test-live-tournament-feed-regression-v7-58-6.py",
+      "sha256": "57786d01236a26063052a7e0b71613e516abb87e8ec6a48f785464eac2af8917",
+      "bytes": 3124
+    },
+    {
+      "path": "scripts/test-multi-season-foundation-v7-55-1.py",
+      "sha256": "9c6a50fa0873bdf6a736c206e77f6102b1fef934fb1f74e0f4aa931aa4f1f658",
+      "bytes": 8486
+    },
+    {
+      "path": "scripts/test-public-tournament-hub-v7-54-4.py",
+      "sha256": "a7b4fd345c514d55c055f50f17e92a317907a7ba4f3a90edbfa801882e0db2d2",
+      "bytes": 7933
+    },
+    {
+      "path": "scripts/test-release-integrity-v7-52-15.py",
+      "sha256": "ad773ab2163919c24dc33b40696d0c6f81d2ad1288f86e6b79961f82d219b912",
+      "bytes": 6137
+    },
+    {
+      "path": "scripts/test-san-diego-county-cup-v7-54-8.py",
+      "sha256": "63849d2b2d9c8cb71dbc0caac2ca1ac9bbcba1d79e97fa3e269033d1e6efc08c",
+      "bytes": 8111
+    },
+    {
+      "path": "scripts/test-team-directory-curation-v7-54-14.py",
+      "sha256": "87af2501c61cc2615c6e64ba73b43e273cfdcc67cad03b6854ae76fb8db8b562",
+      "bytes": 4793
+    },
+    {
+      "path": "scripts/test-team-directory-logos-v7-53-6.js",
+      "sha256": "726188606402942f107c85e3c76dd777fdab3d1aa9ea7e4279e7ec0e35f6af8e",
+      "bytes": 3721
+    },
+    {
+      "path": "scripts/test-team-hero-compact-v7-54-15.py",
+      "sha256": "0c41d4afcd7368f1abeb57b0899380502741bf11ce4b5d53cbdbf5c60a07f9a2",
+      "bytes": 3238
+    },
+    {
+      "path": "scripts/test-team-profile-experience-v7-53-1.py",
+      "sha256": "dd538b8c994235a8c9c27b6b20f2437d55b7d47f42fcb21b3e370f73b36affa2",
+      "bytes": 4000
+    },
+    {
+      "path": "scripts/test-tournament-platform-v7-54-0.py",
+      "sha256": "04e046e8238b5aa03001552a07126d0b8b5b7667b764344e3ca1ee0e1479bd23",
+      "bytes": 10187
+    },
+    {
+      "path": "scripts/test-tournament-platform-v7-54-1.py",
+      "sha256": "664f85871e4fe06238a32a2f5c3f73690ce90abf624c803f0d668614545f7b9d",
+      "bytes": 10872
+    },
+    {
+      "path": "scripts/test-tournament-seasons-v7-55-0.py",
+      "sha256": "afc0728ae930d31587a13caa9e69958060d182d5530c5bcb5323b6cd61ce9d6f",
+      "bytes": 6544
+    },
+    {
+      "path": "scripts/test-wphq-brand-foundation-v7-64-18.py",
+      "sha256": "01050654ee5177c5ac424da96f8ba05cf6c4cec30fb645bca846771d1c902771",
+      "bytes": 3922
+    },
+    {
+      "path": "scripts/test-wphq-brand-system-gate-hardening-v7-64-19.py",
+      "sha256": "0e1abf8d66cab9b39aa6a01938f08cc75eca9e50719c2248421b2770d869826f",
+      "bytes": 3070
+    },
+    {
+      "path": "scripts/test-wpi-homepage-v7-52-4.py",
+      "sha256": "2c82d40b1fc0befb20b69d90465b9cd86560e774d0208383e0519d820a97f4d8",
+      "bytes": 5198
+    },
+    {
+      "path": "sw-v7-64-19.js",
+      "sha256": "7cb7d077eb180a63b268d1a62b3facf70d3e4499c4586da7179e62a43dc5bacc",
+      "bytes": 2356
+    }
+  ]
+}

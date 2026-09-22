@@ -1,3 +1,9 @@
+# WPI 7.64.19 — Water Polo HQ Brand System & Release Gate Hardening
+
+WPI 7.64.19 corrects the Water Polo HQ production logo so the Q contains a recognizable water-polo ball rather than the earlier net-like seam treatment. The approved WPHQ artwork is now the canonical header/logo source and is carried through the installable app icons. The release also hardens recurring historical release checks that had been failing only because newer versions were not manually added to old allowlists. Those gates now validate preserved release markers, semantic behavior and current consumer-brand labels instead of requiring a new exception every release.
+
+Water Polo HQ remains the consumer-facing brand; Water Polo Index remains the rankings methodology. Existing internal WPI identifiers, database tables, scorer contracts, analytics RPCs, GroupMe delivery, and verified tournament/ranking data remain unchanged. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.18 — Water Polo HQ Brand Foundation
 
 WPI 7.64.18 begins the controlled consumer-facing transition to **Water Polo HQ (WPHQ)** without renaming mature backend contracts or rebuilding the product. The release adds a clean WPHQ logo system, a light navy/blue/cyan visual language, a white/light universal navigation shell, a refreshed homepage, and Water Polo HQ identity across the installable PWA and key supporter/public entry surfaces.
