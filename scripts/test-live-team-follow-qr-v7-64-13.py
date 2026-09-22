@@ -10,7 +10,7 @@ dashboard=(root/'live-dashboard.html').read_text()
 share_js=(root/'js/live-team-share-v7-64-13.js').read_text()
 css=(root/'css/live-following-v7-64-13.css').read_text()
 
-assert ('# WPI 7.64.13 — Team Follow & QR Onboarding' in version) or ('# WPI 7.64.15 — Player Roster Accuracy & Parent Privacy' in version)
+assert ('# WPI 7.64.13 — Team Follow & QR Onboarding' in version) or ('# WPI 7.64.15 — Player Roster Accuracy & Parent Privacy' in version) or ('# WPI 7.64.16 — Player Stats Visual Polish' in version)
 assert 'live-following-v7-64-13.js?v=7.64.13' in following
 assert 'live-team-share-v7-64-13.js?v=7.64.13' in following
 assert '+ Add another team' in following

@@ -6,7 +6,7 @@ def req(ok,msg):
     if not ok:
         print('WPI OPPONENT SEARCH CONTEXT 7.64.6 TEST FAILED\n - '+msg);sys.exit(1)
 site=json.loads(read('config/site-release.json')); version=read('VERSION.md'); dash=read('live-dashboard.html'); js=read('js/live-opponent-autocomplete-v7-64-6.js')
-req(site.get('version') in {'7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15'},'site release must preserve 7.64.6 or later')
+req(site.get('version') in {'7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16'},'site release must preserve 7.64.6 or later')
 req(any(v in version for v in ('WPI 7.64.6','WPI 7.64.7')),'VERSION missing 7.64.6+')
 req(site.get('liveScoringOpponentAutocompleteRelease')=='7.64.6','opponent autocomplete marker missing')
 req(site.get('liveScoringOpponentSearchContextRelease')=='7.64.6','opponent context marker missing')

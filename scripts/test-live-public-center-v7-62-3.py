@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def req(cond,msg):
     if not cond: raise SystemExit('PUBLIC LIVE CENTER 7.62.3 TEST FAILED\n - '+msg)
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version') in {'7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15'},'site version must preserve 7.62.3 or later')
+req(site.get('version') in {'7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16'},'site version must preserve 7.62.3 or later')
 req(site.get('liveScoringPublicLiveCenterRelease')=='7.62.3','public Live Center release metadata missing')
 req(any(v in (ROOT/'VERSION.md').read_text() for v in ('7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11')),'VERSION must preserve 7.62.3 or later')
 for rel in ['live.html','live-score.html','js/live-public-center-v7-62-3.js','js/live-public-score-v7-62-3.js','css/live-public-v7-62-3.css','supabase/migrations/202608160005_public_live_center.sql']:

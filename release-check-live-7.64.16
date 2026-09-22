@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWPI Live 7.64.16 Focused Release Check\n'
+python3 -m py_compile scripts/test-live-player-stats-visual-polish-v7-64-16.py
+python3 scripts/test-live-player-stats-visual-polish-v7-64-16.py
+bash ./release-check-live-7.64.15
+printf '\nWPI Live 7.64.16 focused release check passed.\n'

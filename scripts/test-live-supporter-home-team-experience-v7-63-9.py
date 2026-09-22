@@ -7,17 +7,17 @@ def req(c,m):
 def read(rel):
     p=ROOT/rel; req(p.exists(),f'Missing file: {rel}'); return p.read_text(encoding='utf-8')
 site=json.loads(read('config/site-release.json')); version=read('VERSION.md')
-following_html=read('live-following.html'); following_js=read('js/live-following-v7-64-13.js' if site.get('version') in {'7.64.13','7.64.14','7.64.15'} else 'js/live-following-v7-63-9.js'); following_css=read('css/live-following-v7-63-9.css')
+following_html=read('live-following.html'); following_js=read('js/live-following-v7-64-13.js' if site.get('version') in {'7.64.13','7.64.14','7.64.15','7.64.16'} else 'js/live-following-v7-63-9.js'); following_css=read('css/live-following-v7-63-9.css')
 hub_html=read('team-hub.html'); hub_js=read('js/team-hub-v7-63-9.js'); hub_css=read('css/team-hub-v7-63-9.css')
 req(any(v in version for v in ('WPI 7.63.9','WPI 7.64.0','WPI 7.64.1','WPI 7.64.2','WPI 7.64.3','WPI 7.64.4','WPI 7.64.5','WPI 7.64.6','WPI 7.64.7')),'VERSION missing 7.63.9+ supporter-home baseline')
-req(site.get('version') in {'7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15'},'site release mismatch')
+req(site.get('version') in {'7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16'},'site release mismatch')
 req(site.get('liveScoringSupporterHomeRelease')=='7.63.9','supporter-home release marker missing')
 req(site.get('liveScoringUnifiedTeamExperienceRelease')=='7.63.9','unified-team release marker missing')
 # Personalized supporter home comes before broad discovery.
 for token in ('supporter-glance','supporterTeamStat','supporterLiveStat','supporterUpcomingStat','supporterFinalStat','myTeams','gameFeed','eventSummary','findWpiTeam'):
     req(token in following_html,f'My Teams page missing {token}')
 req(following_html.index('id="myTeams"') < following_html.index('id="gameFeed"') < following_html.index('id="eventSummary"') < following_html.index('id="findWpiTeam"'),'supporter-home hierarchy must prioritize followed teams and activity before discovery')
-req((('live-following-v7-64-13.js?v=7.64.13' in following_html) if site.get('version') in {'7.64.13','7.64.14','7.64.15'} else ('live-following-v7-63-9.js?v=7.63.9' in following_html)) and 'live-following-v7-63-9.css?v=7.63.9' in following_html,'My Teams must load the current supporter-home runtime and preserved base CSS')
+req((('live-following-v7-64-13.js?v=7.64.13' in following_html) if site.get('version') in {'7.64.13','7.64.14','7.64.15','7.64.16'} else ('live-following-v7-63-9.js?v=7.63.9' in following_html)) and 'live-following-v7-63-9.css?v=7.63.9' in following_html,'My Teams must load the current supporter-home runtime and preserved base CSS')
 for token in ('myTeamRows','teamSnapshot','Recent record','Live now','Next game','Latest result','teamHubHref','resetFilters'):
     req(token in following_js,f'supporter-home behavior missing {token}')
 req(('Team Insights' in following_js) or ('Team Stats' in following_js),'supporter-home stats link missing')

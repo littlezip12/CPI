@@ -1,3 +1,9 @@
+# WPI 7.64.16 — Player Stats Visual Polish
+
+WPI 7.64.16 makes desktop Player Stats substantially lighter and easier to scan. Player comparison tables now use explicit white and soft blue-gray surfaces, dark readable values, lighter stat-label cells, subtle alternating rows, clearer section bands, and slightly larger table text. The release also prevents WPI's legacy global dark table styling from bleeding into the Player Stats comparison surface.
+
+Mobile Player Stats, roster scoping, player identity, analytics calculations, Supabase security, scoring, GroupMe, and tournament data are unchanged. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.15 — Player Roster Accuracy & Parent Privacy
 
 WPI 7.64.15 removes cap numbers from Player Stats identity, limits Game/Event comparisons to players actually rostered for that scope, preserves stable player identity across roster versions, adds passwordless one-time email sign-in for Supporters, optional Turnstile support, Account Security with TOTP MFA enrollment and supporter self-deletion, a privacy page, permanent-account RLS guards, sensitive RPC permission hardening, and a fix for the remaining mutable function search_path warning.
