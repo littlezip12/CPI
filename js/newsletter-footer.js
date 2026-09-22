@@ -98,7 +98,7 @@
               <span>WPI</span>
               <div>
                 <strong>${safe(footer.brand, "Water Polo Index")}</strong>
-                <em>${safe(footer.tagline, "Ranked. Respected. Earned.")}</em>
+                <em>${safe(footer.tagline, "Scores. Rankings. Stats. Live.")}</em>
               </div>
             </a>
             <p>${safe(footer.summary, "Independent and unofficial rankings, stories, and club intelligence for California youth water polo.")}</p>

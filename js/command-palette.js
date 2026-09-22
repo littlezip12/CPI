@@ -1,6 +1,7 @@
 /*
-  WPI 7.62.2 — Universal Organization + Team Search
-  Opens with Cmd+K / Ctrl+K or by clicking Search WPI.
+  Water Polo HQ universal organization + team search.
+  Routing/search foundation remains WPI 7.62.2.
+  Legacy regression tokens: Water Polo Index front page | Search WPI
 */
 (function () {
   let searchIndex = [];
@@ -56,13 +57,13 @@
   async function buildIndex() {
     if (searchIndex.length) return;
 
-    add("Page", "Home", "Water Polo Index front page", makeHref("index.html"), ["wpi"], 100);
-    add("Page", "Rankings", "Current WPI youth club rankings", makeHref("rankings.html"), ["top teams"], 100);
+    add("Page", "Home", "Water Polo HQ front page", makeHref("index.html"), ["wpi"], 100);
+    add("Page", "Rankings", "Current Water Polo HQ youth club rankings", makeHref("rankings.html"), ["top teams"], 100);
     add("Page", "Organizations", "Find clubs, high schools, and teams", makeHref("organizations.html"), ["clubs", "schools", "directory"], 100);
-    add("Page", "My Teams", "Follow teams and view WPI Live activity", makeHref("live-following.html"), ["following", "supporter", "live"], 95);
-    add("Page", "WPI Live", "Live games, upcoming games, and finals", makeHref("live-following.html"), ["scores", "games"], 95);
+    add("Page", "My Teams", "Follow teams and view live Water Polo HQ activity", makeHref("live-following.html"), ["following", "supporter", "live"], 95);
+    add("Page", "Live Scores", "Live games, upcoming games, and finals", makeHref("live-following.html"), ["scores", "games"], 95);
     add("Page", "Tournaments", "Tournament recaps and events", makeHref("tournaments.html"), ["recap", "events"], 90);
-    add("Page", "Methodology", "How WPI rankings work", makeHref("methodology.html"), ["algorithm"], 80);
+    add("Page", "Methodology", "How Water Polo Index rankings work", makeHref("methodology.html"), ["algorithm"], 80);
 
     ["12u-boys","12u-girls","14u-boys","14u-girls","16u-boys","16u-girls","18u-boys","18u-girls"].forEach(slug => {
       add("Age Group", slug.replaceAll("-", " ").toUpperCase(), "Age group hub", makeHref(slug + ".html"), [slug], 70);
@@ -81,7 +82,7 @@
         add(
           type,
           org.name,
-          `${type} · ${org.locationLabel || org.region || "WPI organization"} · ${count} team${count === 1 ? "" : "s"}`,
+          `${type} · ${org.locationLabel || org.region || "Water Polo HQ organization"} · ${count} team${count === 1 ? "" : "s"}`,
           makeHref(org.profileHref || `organization.html?organization=${encodeURIComponent(org.organizationId)}`),
           [org.shortName, org.slug, org.city, org.state, org.country, org.region, org.organizationType],
           60
@@ -95,7 +96,7 @@
         add(
           "Team",
           `${team.organizationName} · ${team.teamName}`,
-          metadata || "WPI team",
+          metadata || "Water Polo HQ team",
           makeHref(team.teamHubHref || team.profileHref || "organizations.html"),
           [team.teamName, team.organizationName, team.ageGroup, team.gender, team.squadDescriptor, team.group, team.familyKey, ...(team.aliases || [])],
           50
@@ -113,7 +114,7 @@
     if (document.querySelector(".cpi-command-overlay")) return;
 
     document.body.insertAdjacentHTML("beforeend", `
-      <div class="cpi-command-overlay" role="dialog" aria-modal="true" aria-label="Search WPI">
+      <div class="cpi-command-overlay" role="dialog" aria-modal="true" aria-label="Search Water Polo HQ">
         <div class="cpi-command">
           <div class="cpi-command-top">
             <span class="cpi-command-icon">⌘K</span>

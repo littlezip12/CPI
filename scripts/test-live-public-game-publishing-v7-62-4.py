@@ -9,7 +9,7 @@ def req(cond, msg):
         raise SystemExit("PUBLIC GAME PUBLISHING 7.62.4 TEST FAILED\n - " + msg)
 
 site = json.loads((ROOT / "config/site-release.json").read_text())
-req(site.get("version") in {"7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16','7.64.17'}, "site version must be 7.62.4")
+req(site.get("version") in {"7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16','7.64.17','7.64.18'}, "site version must be 7.62.4")
 req(site.get("liveScoringPublicGamePublishingRelease") == "7.62.4", "publishing release metadata missing")
 req(site.get("liveScoringPublicGameSharingRelease") == "7.62.4", "sharing release metadata missing")
 req(any(v in (ROOT / "VERSION.md").read_text() for v in ("7.62.4", "7.62.5", "7.62.6","7.63.0","7.63.1","7.63.2","7.63.3",'7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11')), "VERSION must identify 7.62.4")
@@ -30,13 +30,13 @@ helper = (ROOT / "js/live-public-publishing-v7-62-4.js").read_text()
 
 req('value="team_private" selected>Team + followers<' in game, "team_private audience label must be clear")
 req('value="private_only">Team members only<' in game, "private_only audience label must be clear")
-req('value="public_team">Public on WPI Live<' in game, "public_team audience label must be clear")
+req('value="public_team">Public on Water Polo HQ<' in game, "public_team audience label must be clear")
 req('id="visibilityHelp"' in game, "visibility explanation is missing")
 req('id="publicGameSharePanel"' in game and 'id="publicGameShareCopy"' in game, "public sharing panel is missing")
 req('live-score.html' in helper and 'searchParams.set("game", gameId)' in helper, "share helper must create stable public score link")
 req('navigator.clipboard' in helper, "share helper must support copy-to-clipboard")
 req('id="publicScoreShareButton"' in score, "public score page must expose copy-link action")
-req('Public on WPI Live' in center, "Live Center policy wording must match publishing control")
+req('Public on Water Polo HQ' in center, "Live Center policy wording must match publishing control")
 req("public_team" in helper and "team_private" in helper and "private_only" in helper, "all audience modes must be explained")
 
 # This release is presentation/share-only; protected scorer/backend files must stay byte-stable.
@@ -46,7 +46,7 @@ for rel, expected in hashes.items():
     req(got == expected, f"protected file changed: {rel}")
 
 print("PUBLIC GAME PUBLISHING 7.62.4 TEST PASSED")
-print(" - game audience choices use plain-language Team + followers / Team members only / Public on WPI Live")
+print(" - game audience choices use plain-language Team + followers / Team members only / Public on Water Polo HQ")
 print(" - public games expose a shareable score-only link without changing scoring authority")
 print(" - the public score viewer can copy its own stable game link")
 print(" - protected scoring, GroupMe and scorer-authority files remain byte-stable")

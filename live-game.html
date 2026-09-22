@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <meta name="theme-color" content="#071426">
+  <meta name="theme-color" content="#ffffff">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="WPI Live">
-  <link rel="manifest" href="manifest.webmanifest?v=7.64.17">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/app-icons/wpi-apple-touch-180.png?v=7.64.17">
-  <title>WPI Live Scoring | Water Polo Index</title>
-  <meta name="description" content="Private WPI Live scoring console for structured water polo plays, GroupMe score updates, and game recaps.">
+  <meta name="apple-mobile-web-app-title" content="Water Polo HQ">
+  <link rel="manifest" href="manifest.webmanifest?v=7.64.18">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/app-icons/wphq-apple-touch-180.png?v=7.64.18">
+  <title>Scoring | Water Polo HQ</title>
+  <meta name="description" content="Private Water Polo HQ scoring console for structured water polo plays, GroupMe score updates, and game recaps.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,14 +34,14 @@
   <main class="live-sandbox-shell" id="liveSandboxApp" hidden>
     <section class="live-sandbox-banner" aria-labelledby="liveGameTitle">
       <div>
-        <p class="live-sandbox-kicker">WPI Live</p>
+        <p class="live-sandbox-kicker">Water Polo HQ</p>
         <h1 id="liveGameTitle">Live Scoring</h1>
         <p>Set up the game, choose starters, and score from the same mobile-first console used on deck.</p>
       </div>
-      <span class="live-sandbox-badge">WPI Live</span>
+      <span class="live-sandbox-badge">Water Polo HQ</span>
     </section>
 
-    <section class="live-status-strip" aria-label="WPI Live connection status">
+    <section class="live-status-strip" aria-label="Water Polo HQ connection status">
       <div><strong id="connectionLabel">Checking access…</strong><span id="connectionDetail">Opening the private scoring console.</span></div>
       <div class="live-status-actions"><span id="backendSyncStatus" class="live-backend-sync-status" data-state="local">Checking…</span><button id="dashboardTopButton" class="live-dashboard-return" type="button">Dashboard</button><button id="resetSandboxTopButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button><button id="signOutButton" type="button">Sign out</button></div>
     </section>
@@ -50,10 +50,10 @@
       <div class="live-panel live-panel--setup">
         <div class="live-panel-heading">
           <div><p class="live-section-kicker">Game day</p><h2 id="setupHeading">Game setup</h2></div>
-          <div class="live-heading-actions"><span id="setupSourceBadge">WPI Live game</span><button id="hideSetupButton" type="button" hidden>Return to game</button></div>
+          <div class="live-heading-actions"><span id="setupSourceBadge">Water Polo HQ game</span><button id="hideSetupButton" type="button" hidden>Return to game</button></div>
         </div>
         <div class="live-setup-step-head"><span>1</span><div><strong>Match details</strong><small>Who, when and where.</small></div></div>
-        <p class="live-panel-help">Confirm the matchup and game format before starting. Tournament games may arrive from the WPI schedule or from the manual fallback in the Game-Day Hub.</p>
+        <p class="live-panel-help">Confirm the matchup and game format before starting. Tournament games may arrive from the Water Polo HQ schedule or from the manual fallback in the Game-Day Hub.</p>
         <div class="live-form-grid live-setup-core-grid">
           <label>Team<input id="teamName" type="text" value="Lamorinda A 14U Boys" maxlength="80"></label>
           <label>Opponent<input id="opponentName" type="text" value="Scrimmage Opponent" maxlength="80"></label>
@@ -65,23 +65,23 @@
         <details class="live-setup-advanced">
           <summary>Scoring &amp; delivery preferences</summary>
           <div class="live-form-grid">
-            <label>GroupMe destination<input id="groupMeName" type="text" value="WPI Live Scoring Test" maxlength="100"></label>
+            <label>GroupMe destination<input id="groupMeName" type="text" value="Water Polo HQ Scoring Test" maxlength="100"></label>
             <label>Message frequency<select id="messageFrequency"><option value="all" selected>Every recorded action</option><option value="major">Goals, quarters and major events</option><option value="none">Record only — do not post</option></select></label>
             <label>Who can watch this game?
               <select id="visibility">
                 <option value="team_private" selected>Team + followers</option>
                 <option value="private_only">Team members only</option>
-                <option value="public_team">Public on WPI Live</option>
+                <option value="public_team">Public on Water Polo HQ</option>
               </select>
-              <small id="visibilityHelp" class="live-visibility-help">Team + followers can watch through their signed-in WPI experience.</small>
+              <small id="visibilityHelp" class="live-visibility-help">Team + followers can watch through their signed-in Water Polo HQ experience.</small>
             </label>
           </div>
         </details>
         <aside id="publicGameSharePanel" class="live-public-share-panel" hidden aria-live="polite">
           <div>
-            <span>Public on WPI Live</span>
+            <span>Public on Water Polo HQ</span>
             <strong>Share the score-only game page</strong>
-            <p id="publicGameShareHelp">WPI will publish only the score and game state. Rosters, player events, scorer identity and delivery data stay private.</p>
+            <p id="publicGameShareHelp">Water Polo HQ will publish only the score and game state. Rosters, player events, scorer identity and delivery data stay private.</p>
           </div>
           <div class="live-public-share-actions">
             <a id="publicGameShareOpen" href="live.html" target="_blank" rel="noopener">Open public score</a>
@@ -125,7 +125,7 @@
 
     <section class="live-console" id="liveConsole" hidden aria-labelledby="consoleHeading">
       <div class="live-game-toolbar">
-        <div class="live-game-brand"><strong><span>WPI</span> LIVE</strong><small id="compactModeLabel">WPI Live game</small></div>
+        <div class="live-game-brand"><strong><span>WPHQ</span> LIVE</strong><small id="compactModeLabel">Water Polo HQ game</small></div>
         <div class="live-game-toolbar-actions"><span id="gameSyncBadge" class="live-game-sync-badge" data-state="local">Checking…</span><span id="gameGroupMeBadge" class="live-game-groupme-badge" data-state="idle">Preview</span><button id="gameDashboardButton" class="live-dashboard-return" type="button">Dashboard</button><button id="gameSignOutButton" type="button">Sign out</button></div>
       </div>
 
@@ -140,7 +140,7 @@
 
       <aside id="supporterGameSponsorBanner" class="wpi-live-ad-slot" aria-label="Sponsored" hidden></aside>
 
-      <section id="liveFanExperience" class="wpi-fan-game" aria-label="WPI Live fan game center" hidden>
+      <section id="liveFanExperience" class="wpi-fan-game" aria-label="Water Polo HQ fan game center" hidden>
         <header class="wpi-fan-header">
           <div class="wpi-fan-status"><span id="fanLivePill" class="wpi-fan-live-pill" data-state="between">GAME</span><div><strong>Game Center</strong><small id="fanDataStatus">Connecting fan view…</small></div></div>
           <div class="wpi-fan-header-actions"><a id="fanShareLink" href="#">Share</a><a href="live-following.html">My Teams</a></div>
@@ -314,7 +314,7 @@
         <div><h3>Editable game recap</h3><textarea id="recapText" rows="10"></textarea></div>
       </div>
       <div class="live-summary-actions"><button id="summaryDashboardButton" class="live-dashboard-return" type="button">Back to dashboard</button><button id="reopenGameButton" type="button">Reopen game</button><button id="downloadLogButton" type="button">Download log</button><button id="resetSandboxButton" class="live-reset-button" type="button" hidden aria-hidden="true" tabindex="-1">Internal reset</button></div>
-      <p id="reopenGameHelp" class="live-reopen-help">Ended by mistake? Reopen the game and continue scoring. If a final update already reached GroupMe, WPI records a correction when the game is reopened.</p>
+      <p id="reopenGameHelp" class="live-reopen-help">Ended by mistake? Reopen the game and continue scoring. If a final update already reached GroupMe, Water Polo HQ records a correction when the game is reopened.</p>
     </section>
 
     <dialog id="lineupDialog" class="live-dialog">
@@ -369,7 +369,7 @@
     <dialog id="participationReviewDialog" class="live-dialog wpi-participation-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Game roster</p><h2>Confirm who played</h2></div><button value="cancel" aria-label="Close participation review">Close</button></div>
-        <p class="live-panel-help">WPI already marked starters and anyone with a recorded play as Played. For players with no recorded stats, confirm Played or DNP so Games Played stays accurate.</p>
+        <p class="live-panel-help">Water Polo HQ already marked starters and anyone with a recorded play as Played. For players with no recorded stats, confirm Played or DNP so Games Played stays accurate.</p>
         <div id="participationReviewList" class="wpi-participation-list"></div>
         <p id="participationReviewMessage" class="live-validation-message" role="status"></p>
         <div class="live-dialog-actions"><button id="markAllParticipationPlayedButton" type="button">Mark all played</button><button value="cancel">Keep scoring</button><button id="confirmParticipationAndEndButton" type="button">Confirm &amp; end game</button></div>
@@ -379,7 +379,7 @@
     <dialog id="editLastPlayDialog" class="live-dialog wpi-edit-play-dialog">
       <form method="dialog">
         <div class="live-panel-heading"><div><p class="live-section-kicker">Correction</p><h2>Edit last play</h2></div><button value="cancel" aria-label="Close edit play dialog">Close</button></div>
-        <p class="live-panel-help">Change the play instead of undoing and re-entering it. If the original already reached GroupMe, WPI will send a short correction.</p>
+        <p class="live-panel-help">Change the play instead of undoing and re-entering it. If the original already reached GroupMe, Water Polo HQ will send a short correction.</p>
         <div class="live-form-grid">
           <label>Event<select id="editPlayType"></select></label>
           <label id="editPlayPlayerLabel">Player<select id="editPlayPlayer"></select></label>
@@ -460,6 +460,6 @@
   <script src="js/live-public-publishing-v7-62-4.js?v=7.62.4"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
-  <script defer src="js/live-pwa-v7-64-17.js?v=7.64.17"></script>
+  <script defer src="js/live-pwa-v7-64-18.js?v=7.64.18"></script>
 </body>
 </html>

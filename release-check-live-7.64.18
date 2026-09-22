@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.18 Focused Release Check\n'
+node --check js/site-shell.js
+node --check js/command-palette.js
+node --check js/live-pwa-v7-64-18.js
+node --check sw-v7-64-18.js
+python3 -m py_compile scripts/test-wphq-brand-foundation-v7-64-18.py
+python3 scripts/test-wphq-brand-foundation-v7-64-18.py
+bash ./release-check-live-7.64.17
+printf '\nWater Polo HQ 7.64.18 focused release check passed.\n'

@@ -3,30 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#071426">
+  <meta name="theme-color" content="#ffffff">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="WPI Live">
-  <link rel="manifest" href="manifest.webmanifest?v=7.64.17">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/app-icons/wpi-apple-touch-180.png?v=7.64.17">
-  <title>WPI Live | Water Polo Index</title>
-  <meta name="description" content="Public live water polo scores, upcoming games and recent finals from WPI Live.">
+  <meta name="apple-mobile-web-app-title" content="Water Polo HQ">
+  <link rel="manifest" href="manifest.webmanifest?v=7.64.18">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/app-icons/wphq-apple-touch-180.png?v=7.64.18">
+  <title>Live Scores | Water Polo HQ</title>
+  <meta name="description" content="Public live water polo scores, upcoming games and recent finals from Water Polo HQ.">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
   <link rel="stylesheet" href="css/live-public-v7-64-2.css?v=7.64.2">
   <link rel="stylesheet" href="css/live-tournament-discovery-v7-64-1.css?v=7.64.1">
-  <link rel="stylesheet" href="css/live-pwa-v7-64-17.css?v=7.64.17">
+  <link rel="stylesheet" href="css/live-pwa-v7-64-18.css?v=7.64.18">
 </head>
 <body class="wpi-public-live-page">
   <main class="public-live-shell">
     <section class="public-live-hero">
-      <div><p class="public-live-kicker">WPI Live</p><h1>Scores happening now.</h1><p>Public team-level scores from clubs and high schools using WPI Live. No account is required to watch a game that a team has made public.</p></div>
-      <div class="public-live-actions"><a class="public-live-primary" href="live-following.html">My Teams</a><a id="publicTeamStatsButton" class="public-live-primary" href="live-following.html?stats=1">Team Stats</a><a href="organizations.html">Find a team</a><a href="live-dashboard.html">Team dashboard</a><button type="button" data-wpi-install-app hidden>Install WPI</button></div>
+      <div><p class="public-live-kicker">Water Polo HQ Live</p><h1>Scores happening now.</h1><p>Public team-level scores from clubs and high schools using Water Polo HQ. No account is required to watch a game that a team has made public.</p></div>
+      <div class="public-live-actions"><a class="public-live-primary" href="live-following.html">My Teams</a><a id="publicTeamStatsButton" class="public-live-primary" href="live-following.html?stats=1">Team Stats</a><a href="organizations.html">Find a team</a><a href="live-dashboard.html">Team dashboard</a><button type="button" data-wpi-install-app hidden>Install Water Polo HQ</button></div>
     </section>
 
-    <section class="public-live-stats" aria-label="WPI Live summary">
+    <section class="public-live-stats" aria-label="Water Polo HQ summary">
       <article><strong id="publicLiveCount">—</strong><span>Live now</span></article>
       <article><strong id="publicUpcomingCount">—</strong><span>Upcoming</span></article>
       <article><strong id="publicFinalCount">—</strong><span>Recent finals</span></article>
@@ -35,7 +35,7 @@
 
     <section class="public-live-panel" id="tournamentCenters">
       <div class="public-live-heading"><div><p class="public-live-kicker">Tournament centers</p><h2>Follow an event</h2></div><a class="public-live-tournament-archive" href="tournaments.html">Tournament archive →</a></div>
-      <p class="public-live-policy">Tournament centers combine only games published through WPI Live. They do not invent missing schedules, standings or brackets.</p>
+      <p class="public-live-policy">Tournament centers combine only games published through Water Polo HQ. They do not invent missing schedules, standings or brackets.</p>
       <div id="publicTournamentCenters" class="public-tournament-centers"><div class="public-live-empty">Loading tournament centers…</div></div>
     </section>
 
@@ -47,11 +47,11 @@
         <label>Group<select id="publicLiveGroup"><option value="all">All groups</option><option value="Boys">Boys</option><option value="Girls">Girls</option><option value="Coed">Coed</option><option value="Men">Men</option><option value="Women">Women</option></select></label>
         <label>Status<select id="publicLiveStatus"><option value="all">Live + upcoming + finals</option><option value="live">Live now</option><option value="upcoming">Upcoming</option><option value="final">Recent finals</option></select></label>
       </div>
-      <p class="public-live-policy">Only games a team explicitly sets to <strong>Public on WPI Live</strong> appear here. Team + followers and team-members-only games stay outside the public scoreboard.</p>
+      <p class="public-live-policy">Only games a team explicitly sets to <strong>Public on Water Polo HQ</strong> appear here. Team + followers and team-members-only games stay outside the public scoreboard.</p>
     </section>
 
     <section class="public-live-panel public-live-board">
-      <div id="publicLiveBoard"><div id="publicLiveResults"><div class="public-live-empty">Loading WPI Live scores…</div></div><div id="publicLivePagination" class="public-live-pagination" hidden><small id="publicPageStatus"></small><button id="publicLoadMore" type="button">Load more games</button></div></div>
+      <div id="publicLiveBoard"><div id="publicLiveResults"><div class="public-live-empty">Loading Water Polo HQ scores…</div></div><div id="publicLivePagination" class="public-live-pagination" hidden><small id="publicPageStatus"></small><button id="publicLoadMore" type="button">Load more games</button></div></div>
     </section>
   </main>
   <script src="config/live-sandbox.js?v=7.57.20"></script>
@@ -61,6 +61,6 @@
   <script src="js/live-tournament-discovery-v7-64-1.js?v=7.64.1"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
-  <script defer src="js/live-pwa-v7-64-17.js?v=7.64.17"></script>
+  <script defer src="js/live-pwa-v7-64-18.js?v=7.64.18"></script>
 </body>
 </html>

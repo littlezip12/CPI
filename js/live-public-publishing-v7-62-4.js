@@ -55,9 +55,9 @@
     if (!visibility || !help || !panel || !open || !copy) return;
 
     const descriptions = {
-      team_private: "Team + followers can watch through their signed-in WPI experience. The game does not appear on the public WPI Live scoreboard.",
-      private_only: "Only team members can watch this game in WPI. It does not appear to followers or on the public scoreboard.",
-      public_team: "Anyone with WPI can see the score and game state on WPI Live. Rosters, player events, scorer identity and delivery data remain private."
+      team_private: "Team + followers can watch through their signed-in Water Polo HQ experience. The game does not appear on the public Water Polo HQ scoreboard.",
+      private_only: "Only team members can watch this game in Water Polo HQ. It does not appear to followers or on the public scoreboard.",
+      public_team: "Anyone can see the score and game state on Water Polo HQ when this game is public. Rosters, player events, scorer identity and delivery data remain private."
     };
 
     function render() {
@@ -73,13 +73,13 @@
         open.href = href;
         open.removeAttribute("aria-disabled");
         copy.disabled = false;
-        qs("publicGameShareHelp").textContent = "This game has a public score-only link. WPI keeps roster, player-event, scorer and delivery detail private.";
+        qs("publicGameShareHelp").textContent = "This game has a public score-only link. Water Polo HQ keeps roster, player-event, scorer and delivery detail private.";
         status.textContent = "";
       } else {
         open.href = "live.html";
         open.setAttribute("aria-disabled", "true");
         copy.disabled = true;
-        qs("publicGameShareHelp").textContent = "Save this game first. WPI will then create a public score-only link for sharing.";
+        qs("publicGameShareHelp").textContent = "Save this game first. Water Polo HQ will then create a public score-only link for sharing.";
         status.textContent = "Public link available after the game is saved.";
       }
     }

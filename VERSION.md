@@ -1,3 +1,11 @@
+# WPI 7.64.18 — Water Polo HQ Brand Foundation
+
+WPI 7.64.18 begins the controlled consumer-facing transition to **Water Polo HQ (WPHQ)** without renaming mature backend contracts or rebuilding the product. The release adds a clean WPHQ logo system, a light navy/blue/cyan visual language, a white/light universal navigation shell, a refreshed homepage, and Water Polo HQ identity across the installable PWA and key supporter/public entry surfaces.
+
+**Water Polo Index remains the name of the ranking methodology.** Existing internal WPI identifiers, database tables, scoring contracts, analytics RPCs, GroupMe delivery, protected foundation files, and verified tournament/ranking data remain unchanged. Deeper operational copy still using “WPI Live” is intentionally deferred to the next controlled rebrand sweep rather than changed in one risky search-and-replace.
+
+No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.17 — Installable App Experience
 
 WPI 7.64.17 makes the existing supporter experience installable on phones and desktops without splitting the product into native iOS/Android codebases. The PWA launches into My Teams, carries WPI Home Screen icons and standalone display metadata, keeps normal QR/GroupMe deep links intact, and uses a network-first service worker so live data and current code remain authoritative whenever a connection is available.
