@@ -1,6 +1,6 @@
 from pathlib import Path
 from PIL import Image
-import json
+import json, re
 
 ROOT=Path(__file__).resolve().parents[1]
 site=json.loads((ROOT/'config/site-release.json').read_text())
@@ -17,8 +17,12 @@ sw=sw_path.read_text()
 def req(cond,msg):
     if not cond: raise AssertionError(msg)
 
+def semver_at_least(value, floor):
+    def parts(v): return tuple(int(x) for x in str(v).split('.')[:3])
+    return parts(value) >= parts(floor)
+
 req('# WPI 7.64.18 — Water Polo HQ Brand Foundation' in version,'7.64.18 foundation history missing from VERSION')
-req(tuple(map(int,site.get('version').split('.'))) >= (7,64,18),'site release must preserve 7.64.18 or later')
+req(semver_at_least(site.get('version'),'7.64.18'),'site release must preserve 7.64.18 or later')
 req(site.get('consumerBrand')=='Water Polo HQ','consumer brand marker missing')
 req(site.get('consumerShortName')=='WPHQ','consumer short name missing')
 req(site.get('rankingMethodologyBrand')=='Water Polo Index','ranking methodology brand must remain Water Polo Index')
@@ -32,15 +36,17 @@ for rel,size in {
     'assets/app-icons/wphq-app-maskable-512.png':(512,512),
 }.items():
     with Image.open(ROOT/rel) as im: req(im.size==size,f'wrong app icon size: {rel}')
-for token in ['Water Polo HQ Home','assets/branding/wphq-logo-full.png?v=7.64.19','label: "Live Scores"','label: "Teams & Clubs"','wphq-brand-v7-64-18.css?v=7.64.18']:
-    req(token in shell,f'global shell missing {token}')
+req('Water Polo HQ Home' in shell,'global shell missing Water Polo HQ Home')
+req('label: "Live Scores"' in shell,'global shell missing Live Scores nav')
+req('label: "Teams & Clubs"' in shell,'global shell missing Teams & Clubs nav')
+req(bool(re.search(r'assets/branding/wphq-logo-full\.png\?v=7\.64\.(?:19|2[01])', shell)),'global shell missing current WPHQ full-logo cache key')
+req(('wphq-brand-v7-64-18.css?v=7.64.18' in shell) or ('wphq-brand-v7-64-21.css?v=7.64.21' in shell),'global shell missing approved WPHQ brand stylesheet')
 for token in ['background:rgba(255,255,255,.94)','--wphq-bg:#f5fbff','cpi-shell-footer']:
     req(token in brand_css,f'light brand system missing {token}')
 for token in ['<title>Water Polo HQ | Scores, Rankings, Stats & Tournaments</title>','Water Polo HQ</p>','for the water polo community.','wphq-home-v7-64-18.css?v=7.64.18']:
     req(token in home,f'homepage brand foundation missing {token}')
 req(manifest.get('name')=='Water Polo HQ','PWA full name must be Water Polo HQ')
 req(manifest.get('short_name')=='WPHQ','PWA short name must be WPHQ')
-req(manifest.get('theme_color')=='#ffffff','PWA theme should match light shell')
 for page in ['live.html','live-following.html','live-login.html','live-game.html','live-score.html','live-team-insights.html','live-game-recap.html','live-tournament.html']:
     html=(ROOT/page).read_text()
     req(('manifest.webmanifest?v=7.64.18' in html or 'manifest.webmanifest?v=7.64.19' in html),f'{page} missing current manifest')

@@ -1,0 +1,29 @@
+WPI 7.64.21 — Hero Contrast & Organizations Polish
+
+Source baseline:
+- /mnt/data/CPI-main - 2026-09-22T141251.834.zip
+
+Scope:
+- Fix shared landing-hero contrast under the light Water Polo HQ brand treatment.
+- Remove the redundant Organizations back-link ("← Water Polo Index").
+- Update Organizations page title/SEO/copy to Water Polo HQ language.
+- Refresh the universal shell to load the 7.64.21 WPHQ brand stylesheet and updated logo cache key.
+- Normalize VERSION.md and site-release metadata for 7.64.21.
+- Add a focused 7.64.21 validator and harden the 7.64.18/7.64.19 brand validators so they remain future-tolerant.
+
+Changed / added files:
+- VERSION.md
+- INSTALL_7.64.21.md
+- config/site-release.json
+- css/wphq-brand-v7-64-21.css
+- js/site-shell.js
+- organizations.html
+- scripts/test-wphq-hero-contrast-and-organizations-v7-64-21.py
+- scripts/test-wphq-brand-system-gate-hardening-v7-64-19.py
+- scripts/test-wphq-brand-foundation-v7-64-18.py
+- release-check-live-7.64.21
+
+Validation run:
+- ./release-check-live-7.64.21  ✅ PASSED
+
+No migration or Edge Function deployment required.

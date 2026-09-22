@@ -1,3 +1,9 @@
+# WPI 7.64.21 — Hero Contrast & Organizations Polish
+
+WPI 7.64.21 is a small follow-up polish release after the Water Polo HQ cleanup/rebrand push. It fixes the shared section-landing hero contrast issue introduced by the light WPHQ brand treatment so Rankings, Teams, Clubs, Tournaments, and Methodology remain clearly readable. The release also removes the redundant standalone Organizations back-link, updates the Organizations page to Water Polo HQ copy, and refreshes the universal shell cache key for the approved WPHQ logo and brand stylesheet.
+
+Water Polo HQ remains the consumer-facing brand; Water Polo Index remains the rankings methodology. Existing internal WPI identifiers, database tables, scorer contracts, analytics RPCs, GroupMe delivery, and verified tournament/ranking data remain unchanged. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.19 — Water Polo HQ Brand System & Release Gate Hardening
 
 WPI 7.64.19 corrects the Water Polo HQ production logo so the Q contains a recognizable water-polo ball rather than the earlier net-like seam treatment. The approved WPHQ artwork is now the canonical header/logo source and is carried through the installable app icons. The release also hardens recurring historical release checks that had been failing only because newer versions were not manually added to old allowlists. Those gates now validate preserved release markers, semantic behavior and current consumer-brand labels instead of requiring a new exception every release.

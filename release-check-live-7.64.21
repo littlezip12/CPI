@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.21 Focused Release Check\n'
+node --check js/site-shell.js
+python3 -m py_compile scripts/test-wphq-hero-contrast-and-organizations-v7-64-21.py
+python3 scripts/test-wphq-hero-contrast-and-organizations-v7-64-21.py
+python3 scripts/test-brand-teams-section-landing-v7-53-4.py
+python3 scripts/test-wphq-brand-foundation-v7-64-18.py
+python3 scripts/test-wphq-brand-system-gate-hardening-v7-64-19.py
+python3 scripts/test-live-public-game-publishing-v7-62-4.py
+node scripts/test-team-directory-logos-v7-53-6.js
+printf '\nWater Polo HQ 7.64.21 focused release check passed.\n'

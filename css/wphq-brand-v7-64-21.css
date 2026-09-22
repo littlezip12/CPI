@@ -1,0 +1,119 @@
+/* Water Polo HQ 7.64.21 — Hero Contrast & Organizations Polish */
+:root{
+  --wphq-navy:#082b4f;
+  --wphq-navy-2:#123f67;
+  --wphq-blue:#0b83c9;
+  --wphq-cyan:#37bce8;
+  --wphq-sky:#dff5ff;
+  --wphq-bg:#f5fbff;
+  --wphq-card:#ffffff;
+  --wphq-soft:#eef8fd;
+  --wphq-line:#d8e9f3;
+  --wphq-ink:#0b2744;
+  --wphq-muted:#60758a;
+  --wphq-shadow:0 14px 38px rgba(28,91,128,.09);
+  --cpi-shell-navy:var(--wphq-navy);
+  --cpi-shell-blue:var(--wphq-blue);
+  --cpi-shell-aqua:var(--wphq-cyan);
+  --cpi-shell-bg:var(--wphq-bg);
+  --cpi-shell-ink:var(--wphq-ink);
+  --cpi-shell-muted:var(--wphq-muted);
+  --cpi-shell-border:rgba(8,43,79,.12);
+}
+body.wphq-brand{
+  color:var(--wphq-ink);
+  background:
+    radial-gradient(circle at 82% -10%,rgba(55,188,232,.14),transparent 28rem),
+    linear-gradient(180deg,#fbfeff 0,#f4fbff 38rem,#f8fbfd 100%);
+}
+body.wphq-brand a{transition:color .16s ease,background .16s ease,border-color .16s ease,box-shadow .16s ease,transform .16s ease}
+
+/* Global Water Polo HQ shell */
+.wphq-brand .cpi-shell-header{
+  background:rgba(255,255,255,.94);
+  color:var(--wphq-navy);
+  border-bottom:1px solid var(--wphq-line);
+  box-shadow:0 8px 28px rgba(22,78,113,.07);
+  backdrop-filter:blur(18px);
+}
+.wphq-brand .cpi-shell-header.is-scrolled{box-shadow:0 12px 32px rgba(22,78,113,.11)}
+.wphq-brand .cpi-shell-nav{min-height:76px;gap:18px}
+.wphq-brand .cpi-shell-brand{color:var(--wphq-navy);min-width:220px}
+.wphq-brand .cpi-shell-logo-frame{
+  background:transparent;border:0;box-shadow:none;border-radius:0;overflow:visible;
+}
+.wphq-brand .cpi-shell-logo--mark{width:205px;max-height:62px}
+.wphq-brand .cpi-shell-logo--full{width:min(260px,100%)}
+.wphq-brand .cpi-shell-brand-text{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wphq-brand .cpi-shell-nav-link{color:#294d6d;font-size:13px;padding:10px 12px}
+.wphq-brand .cpi-shell-nav-link:hover{color:var(--wphq-navy);background:#edf8fd;transform:translateY(-1px)}
+.wphq-brand .cpi-shell-nav-link.is-active{color:#067ebf;background:#e3f6ff;box-shadow:inset 0 0 0 1px rgba(11,131,201,.13)}
+.wphq-brand .cpi-shell-search{border:1px solid #cce3ef;background:#f7fcff;color:#164365;min-width:168px}
+.wphq-brand .cpi-shell-search:hover{background:#eaf8ff;border-color:#9dd8ef}
+.wphq-brand .cpi-shell-footer{background:linear-gradient(180deg,#edf8fd,#f8fcfe);color:#547087;border-top:1px solid var(--wphq-line)}
+.wphq-brand .cpi-shell-footer strong{color:var(--wphq-navy)}
+.wphq-brand .cpi-shell-footer a{color:#47667e}.wphq-brand .cpi-shell-footer a:hover{color:#087dbd}
+.wphq-brand .cpi-shell-footer-about a{color:#087dbd}
+.wphq-brand .cpi-shell-footer-bottom{color:#71869a;border-color:#d6e8f2}
+
+/* Shared light surfaces across the public product */
+.wphq-brand :is(.panel,.team-card,.age-card,.club-card,.story-card){
+  color:var(--wphq-ink);background:linear-gradient(180deg,#fff,#fafdff);border-color:var(--wphq-line);box-shadow:var(--wphq-shadow)
+}
+.wphq-brand :is(.subtle,.meta,.small){color:var(--wphq-muted)}
+.wphq-brand .btn{background:linear-gradient(100deg,#0a86ca,#26b6e2);color:#fff;box-shadow:0 8px 20px rgba(10,134,202,.18)}
+.wphq-brand .btn:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(10,134,202,.23)}
+
+/* Existing landing surfaces: retain layout, move to the new light visual language. */
+.wphq-brand.cpi-v8-home,
+.wphq-brand .cpi-v8-home{--panel:#fff;--panel2:#f7fcff;--ink:var(--wphq-ink);--muted:var(--wphq-muted);--line:var(--wphq-line);--gold:#f6b71e;--shadow:var(--wphq-shadow)}
+.wphq-brand :is(.wpi-section-hero,.section-hero,.hero){color:var(--wphq-ink)}
+.wphq-brand :is(.wpi-section-hero,.section-hero){background:linear-gradient(135deg,#f8fdff,#e7f7ff);border-color:#d6edf7;box-shadow:var(--wphq-shadow)}
+
+/* Live/supporter surfaces were already light; bring them onto the shared palette. */
+.wphq-brand :is(.wpi-public-live-page,.wpi-public-score-page,.wpi-following-page,.wpi-team-insights-page,.wpi-live-dashboard-page){--live-blue:#087fbe;--live-cyan:#38bce7}
+.wphq-brand .public-live-hero,.wphq-brand .public-score-hero{background:linear-gradient(135deg,#0b628e,#20a9d5);box-shadow:0 18px 42px rgba(16,111,157,.15)}
+
+@media(max-width:1120px){.wphq-brand .cpi-shell-brand{min-width:0}.wphq-brand .cpi-shell-logo--mark{width:180px}}
+@media(max-width:720px){
+  .wphq-brand .cpi-shell-nav{min-height:66px}.wphq-brand .cpi-shell-logo--mark{width:148px;max-height:52px}
+  .wphq-brand .cpi-shell-search{min-width:auto}.wphq-brand .cpi-shell-footer{margin-top:40px}
+}
+
+
+/* Water Polo HQ 7.64.21 — ensure shared landing heroes remain readable on the light brand treatment. */
+.wphq-brand .wpi-section-hero{
+  border:1px solid #d6edf7;
+}
+.wphq-brand .wpi-section-hero .wpi-section-kicker{color:#0a8dc9}
+.wphq-brand .wpi-section-hero .wpi-section-kicker::before{box-shadow:0 0 0 6px rgba(246,183,0,.14)}
+.wphq-brand .wpi-section-hero h1{color:var(--wphq-navy)}
+.wphq-brand .wpi-section-hero .wpi-section-hero-copy > p:not(.wpi-section-kicker){color:#5f768c}
+.wphq-brand .wpi-section-hero .wpi-section-action{
+  background:linear-gradient(100deg,#0a86ca,#26b6e2);
+  color:#fff;
+  border-color:transparent;
+  box-shadow:0 10px 24px rgba(10,134,202,.18)
+}
+.wphq-brand .wpi-section-hero .wpi-section-action.secondary{
+  background:#fff;
+  color:var(--wphq-navy);
+  border-color:#cfe5f0;
+  box-shadow:none
+}
+.wphq-brand .wpi-section-hero .wpi-section-action.secondary:hover{background:#f3fbff}
+.wphq-brand .wpi-section-hero .wpi-section-hero-facts > span,
+.wphq-brand .wpi-section-hero .wpi-section-hero-facts > div{
+  background:rgba(255,255,255,.86);
+  border-color:#d8eaf3;
+  color:#60758a;
+  backdrop-filter:none
+}
+.wphq-brand .wpi-section-hero .wpi-section-hero-facts strong,
+.wphq-brand .wpi-section-hero .wpi-section-hero-facts b{color:var(--wphq-navy)}
+.wphq-brand .wpi-section-hero .wpi-section-hero-media{background:#dbeef8}
+.wphq-brand .wpi-section-hero .wpi-section-hero-media::after{background:linear-gradient(90deg, rgba(231,247,255,.78) 0%, rgba(231,247,255,.18) 26%, transparent 70%), linear-gradient(0deg, rgba(7,20,38,.08), transparent 64%)}
+.wphq-brand .wpi-section-hero--clubs .wpi-section-kicker{color:#0b8f73}
+.wphq-brand .wpi-section-hero--tournaments .wpi-section-kicker{color:#aa7a00}
+.wphq-brand .wpi-section-hero--methodology .wpi-section-kicker{color:#466ce0}
+.wphq-brand .wpi-section-hero--teams .wpi-section-kicker{color:#0b8dc9}
