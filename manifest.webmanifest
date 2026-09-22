@@ -1,0 +1,56 @@
+{
+  "name": "WPI Live \u2014 Water Polo Index",
+  "short_name": "WPI Live",
+  "description": "Follow your water polo teams, live games, results and team stats in WPI Live.",
+  "id": "./live-following.html",
+  "start_url": "./live-following.html?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#071426",
+  "theme_color": "#071426",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "assets/app-icons/wpi-app-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app-icons/wpi-app-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app-icons/wpi-app-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "My Teams",
+      "short_name": "My Teams",
+      "url": "./live-following.html?source=pwa-shortcut",
+      "icons": [
+        {
+          "src": "assets/app-icons/wpi-app-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Live Scores",
+      "short_name": "Scores",
+      "url": "./live.html?source=pwa-shortcut",
+      "icons": [
+        {
+          "src": "assets/app-icons/wpi-app-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

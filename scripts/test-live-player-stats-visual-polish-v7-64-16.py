@@ -12,8 +12,8 @@ def req(cond,msg):
     if not cond:
         raise AssertionError(msg)
 
-req(version.startswith('# WPI 7.64.16 — Player Stats Visual Polish'),'version mismatch')
-req(site.get('version')=='7.64.16','site release mismatch')
+req(version.startswith('# WPI 7.64.16 — Player Stats Visual Polish') or version.startswith('# WPI 7.64.17 — Installable App Experience'),'version mismatch')
+req(site.get('version') in {'7.64.16','7.64.17'},'site release mismatch')
 req(site.get('livePlayerStatsVisualPolishRelease')=='7.64.16','visual polish release marker missing')
 req('live-team-insights-v7-64-16.css?v=7.64.16' in html,'7.64.16 Player Stats CSS not linked')
 req('live-team-insights-v7-64-15.js?v=7.64.15' in html,'Player Stats behavior runtime should remain 7.64.15')

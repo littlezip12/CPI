@@ -1,0 +1,17 @@
+/* WPI 7.64.17 — Installable App Experience */
+.public-live-actions [data-wpi-install-app]{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:42px;
+  padding:0 15px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.28);
+  color:#fff;
+  font:inherit;
+  font-weight:800;
+  background:rgba(255,255,255,.08);
+  cursor:pointer;
+}
+.public-live-actions [data-wpi-install-app]:hover{background:rgba(255,255,255,.15)}
+[data-wpi-install-app][hidden]{display:none!important}

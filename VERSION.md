@@ -1,3 +1,9 @@
+# WPI 7.64.17 — Installable App Experience
+
+WPI 7.64.17 makes the existing supporter experience installable on phones and desktops without splitting the product into native iOS/Android codebases. The PWA launches into My Teams, carries WPI Home Screen icons and standalone display metadata, keeps normal QR/GroupMe deep links intact, and uses a network-first service worker so live data and current code remain authoritative whenever a connection is available.
+
+The service worker never proxies or caches Supabase/Auth traffic because those requests are cross-origin; same-origin navigation/static files use network-first delivery with a small offline shell as fallback. Scoring, GroupMe, analytics, roster rules, parent privacy, and backend behavior are unchanged. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.16 — Player Stats Visual Polish
 
 WPI 7.64.16 makes desktop Player Stats substantially lighter and easier to scan. Player comparison tables now use explicit white and soft blue-gray surfaces, dark readable values, lighter stat-label cells, subtle alternating rows, clearer section bands, and slightly larger table text. The release also prevents WPI's legacy global dark table styling from bleeding into the Player Stats comparison surface.
