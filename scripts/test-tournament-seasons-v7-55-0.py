@@ -13,7 +13,7 @@ registry = load('data/tournaments/registry.json')
 html = (ROOT / 'tournaments.html').read_text(encoding='utf-8')
 js = (ROOT / 'js/tournament-hub-v7-54-4.js').read_text(encoding='utf-8')
 
-if site.get('version') not in {'7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14'}:
+if site.get('version') not in {'7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15'}:
     errors.append('site version must preserve 7.55.1 or later')
 if site.get('tournamentSeasonRelease') != '7.55.0':
     errors.append('tournamentSeasonRelease must be 7.55.0')
@@ -31,7 +31,7 @@ if any('2024' in json.dumps(row) for row in season_rows):
 
 active = next((row for row in season_rows if row.get('id') == '2026-2027'), None)
 final = next((row for row in season_rows if row.get('id') == '2025-2026'), None)
-expected_opening = '2026-champions-cup-pacific-zone-qualifier' if site.get('version') in {'7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14'} else '2026-evan-cousineau-memorial-cup'
+expected_opening = '2026-champions-cup-pacific-zone-qualifier' if site.get('version') in {'7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15'} else '2026-evan-cousineau-memorial-cup'
 if not active or active.get('openingEventId') != expected_opening or active.get('status') != 'active':
     errors.append(f'2026–2027 opening event is incorrect: expected {expected_opening}')
 if not final or final.get('openingEventId') != '2025-evan-cousineau-memorial-cup' or final.get('closingEventId') != '2026-junior-olympics' or final.get('status') != 'final':
@@ -54,7 +54,7 @@ if any(event.get('eventYear') not in {2025, 2026} for event in completed):
     errors.append('calendar event years were not retained')
 
 next_event = hub.get('nextTournament', {})
-expected_next = '2026 Champions Cup Pacific Zone Qualifier' if site.get('version') in {'7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14'} else 'Evan Cousineau Memorial Cup'
+expected_next = '2026 Champions Cup Pacific Zone Qualifier' if site.get('version') in {'7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15'} else 'Evan Cousineau Memorial Cup'
 if next_event.get('name') != expected_next or next_event.get('competitiveSeason') != '2026-2027':
     errors.append('next verified event is not assigned to 2026–2027')
 

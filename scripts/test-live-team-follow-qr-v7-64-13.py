@@ -10,7 +10,7 @@ dashboard=(root/'live-dashboard.html').read_text()
 share_js=(root/'js/live-team-share-v7-64-13.js').read_text()
 css=(root/'css/live-following-v7-64-13.css').read_text()
 
-assert '# WPI 7.64.13 — Team Follow & QR Onboarding' in version
+assert ('# WPI 7.64.13 — Team Follow & QR Onboarding' in version) or ('# WPI 7.64.15 — Player Roster Accuracy & Parent Privacy' in version)
 assert 'live-following-v7-64-13.js?v=7.64.13' in following
 assert 'live-team-share-v7-64-13.js?v=7.64.13' in following
 assert '+ Add another team' in following
@@ -20,7 +20,7 @@ assert 'Team Stats' in following_js
 assert 'hasFilter?filtered.slice(0,60):[]' in following_js
 assert 'followTeam' in following_js
 assert 'backend.setTeamFollow(teamId,true)' in following_js
-assert 'live-login-v7-64-13.js?v=7.64.13' in login
+assert ('live-login-v7-64-13.js?v=7.64.13' in login) or ('live-login-v7-64-15.js?v=7.64.15' in login)
 assert 'followTeam' in login_js
 assert 'followingTarget()' in login_js
 assert 'id="openTeamShareButton"' in dashboard

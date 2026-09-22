@@ -13,7 +13,7 @@ matcher=read('js/live-tournament-feed-v7-58-5.js')
 index=json.loads(read('data/live/tournament-schedule-index.json'))
 evidence=json.loads(read('data/live/tournament-feed-validation.json'))
 mig=read('supabase/migrations/202608080007_tournament_schedule_integration_reconciliation.sql')
-req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14'},'current release must preserve 7.58.6 hardening or later')
+req(site.get('version') in {'7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15'},'current release must preserve 7.58.6 hardening or later')
 for key in ('liveScoringTournamentFeedValidationRelease','liveScoringTournamentIdentitySafetyRelease','liveScoringTournamentReconciliationValidationRelease'):
     req(site.get(key)=='7.58.5',f'7.58.5 marker changed: {key}')
 for token in ('js/live-tournament-feed-v7-58-5.js?v=7.58.5',):

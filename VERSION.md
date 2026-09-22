@@ -1,3 +1,9 @@
+# WPI 7.64.15 — Player Roster Accuracy & Parent Privacy
+
+WPI 7.64.15 removes cap numbers from Player Stats identity, limits Game/Event comparisons to players actually rostered for that scope, preserves stable player identity across roster versions, adds passwordless one-time email sign-in for Supporters, optional Turnstile support, Account Security with TOTP MFA enrollment and supporter self-deletion, a privacy page, permanent-account RLS guards, sensitive RPC permission hardening, and a fix for the remaining mutable function search_path warning.
+
+Supabase migration: `202609210002_player_roster_privacy_hardening.sql`. Deploy the `account-delete-v7-64-15` Edge Function with JWT verification enabled. Supabase Auth dashboard controls for email confirmation, leaked-password protection, password minimum, CAPTCHA, SSL and network restrictions are documented in `WPI_7.64.15_SUPABASE_PRIVACY_CONTROLS.md`.
+
 # WPI 7.64.14 — Player Stats Experience
 
 WPI 7.64.14 redesigns Player Stats around a responsive comparison workflow that works on phones and desktops. The interface uses cap-and-name player tiles with no player photos, Season / Event / Game tabs, searchable selection for up to four players, grouped stat sections, and mobile player cards instead of a forced horizontal desktop table. Selected players persist while changing scopes and across page reloads for the same team/season. A selected player who did not participate in an individual game remains visible as DNP; a player who participated without tracked production remains distinguishable as Played with 0 recorded stats.

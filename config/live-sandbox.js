@@ -13,6 +13,8 @@ window.WPI_LIVE_SANDBOX_CONFIG = Object.freeze({
   mode: "connected",
   supabaseUrl: "https://jmdamtxspyshjxgmunda.supabase.co",
   supabasePublishableKey: "sb_publishable__SdpFHi_99ojq7n5drt-_Q_ShdVGF6R",
+  // Optional public Cloudflare Turnstile site key. Leave blank until configured in Supabase Auth.
+  turnstileSiteKey: "",
   allowLocalDemo: false,
   autoBootstrapTeam: true,
   defaultTeamName: "Lamorinda A 14U Boys",

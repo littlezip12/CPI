@@ -14,7 +14,7 @@ js=(ROOT/('js/live-dashboard-v7-62-0.js' if (ROOT/'js/live-dashboard-v7-62-0.js'
 sql=(ROOT/'supabase/migrations/202608160003_high_school_schedule_optional_delivery.sql').read_text()
 
 req(any(v in version for v in ('7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11')),'VERSION no longer preserves 7.61.1 behavior')
-req(site.get('version') in {'7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14'},'site release no longer preserves 7.61.1 behavior')
+req(site.get('version') in {'7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15'},'site release no longer preserves 7.61.1 behavior')
 for marker in [
   'liveScoringHighSchoolGameDayIntegrationRelease','liveScoringHighSchoolRegularSeasonRelease',
   'liveScoringOptionalDeliveryRelease','liveScoringWpiLiveOnlyDeliveryRelease','liveScoringHighSchoolScheduleSyncRelease']:

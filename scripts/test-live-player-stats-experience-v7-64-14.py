@@ -8,11 +8,11 @@ css=(root/'css/live-team-insights-v7-64-14.css').read_text()
 version=(root/'VERSION.md').read_text()
 def req(c,m):
     if not c: raise AssertionError(m)
-req(version.startswith('# WPI 7.64.14 — Player Stats Experience'),'version mismatch')
-req(site.get('version')=='7.64.14','site release mismatch')
-req(site.get('livePlayerStatsExperienceRelease')=='7.64.14','player stats experience marker missing')
+req(version.startswith('# WPI 7.64.14 — Player Stats Experience') or version.startswith('# WPI 7.64.15 — Player Roster Accuracy & Parent Privacy'),'version mismatch')
+req(site.get('version') in ('7.64.14','7.64.15'),'site release mismatch')
+req(site.get('livePlayerStatsExperienceRelease') in ('7.64.14','7.64.15'),'player stats experience marker missing')
 req('live-team-insights-v7-64-14.css?v=7.64.14' in html,'new responsive insights CSS missing')
-req('live-team-insights-v7-64-14.js?v=7.64.14' in html,'new player stats runtime missing')
+req(('live-team-insights-v7-64-14.js?v=7.64.14' in html) or ('live-team-insights-v7-64-15.js?v=7.64.15' in html),'new player stats runtime missing')
 for token in ['Compare Players','playerScopeTabs','data-player-scope-mode="season"','data-player-scope-mode="series"','data-player-scope-mode="game"','playerSearchInput','playerPicker','playerSelectionCount']:
     req(token in html,f'UI missing {token}')
 for token in ['selectedPlayerIds','playerDirectory','wpi-player-compare:','localStorage.setItem','DNP','Played · 0 recorded stats','setPlayerScopeMode','scopeMissing','selectedPlayerIds.length<4']:
