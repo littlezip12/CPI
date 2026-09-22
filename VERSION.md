@@ -1,3 +1,11 @@
+# WPI 7.64.22 — WPHQ Mobile App Foundation
+
+WPI 7.64.22 establishes the native mobile foundation for Water Polo HQ without forking or rewriting the mature web product. The release adds a Capacitor 8 project contract, Node/package metadata, a generated native web-bundle pipeline, a native toolchain doctor, a My Teams cold-start contract, and native-safe handling for the existing PWA install/service-worker runtime. The universal WPHQ shell also preserves a normal Home route inside the native app.
+
+The provisional native bundle identifier is `com.waterpolohq.app`. Native iOS and Android projects are intentionally not generated in this release; first confirm the local toolchain and final app identity, then create the platform projects in the next controlled release. Universal/App Links and the native Supabase magic-link callback are also intentionally deferred until the production WPHQ domain is final and can be validated end to end.
+
+Water Polo HQ remains the consumer-facing brand; Water Polo Index remains the rankings methodology. Existing internal WPI identifiers, database tables, scorer contracts, analytics RPCs, GroupMe delivery, verified tournament/ranking data, and web authentication behavior remain unchanged. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.21 — Hero Contrast & Organizations Polish
 
 WPI 7.64.21 is a small follow-up polish release after the Water Polo HQ cleanup/rebrand push. It fixes the shared section-landing hero contrast issue introduced by the light WPHQ brand treatment so Rankings, Teams, Clubs, Tournaments, and Methodology remain clearly readable. The release also removes the redundant standalone Organizations back-link, updates the Organizations page to Water Polo HQ copy, and refreshes the universal shell cache key for the approved WPHQ logo and brand stylesheet.

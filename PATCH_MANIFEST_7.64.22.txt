@@ -1,0 +1,23 @@
+WPI 7.64.22 — WPHQ Mobile App Foundation
+
+Authoritative source baseline:
+- CPI-main - 2026-09-22T143455.382.zip
+
+Scope:
+- Adds Capacitor 8 project metadata for Water Polo HQ native iOS/Android shells.
+- Requires Node 22+ and provides a local mobile toolchain doctor.
+- Adds a deterministic generated mobile bundle pipeline (`mobile/www`, Git-ignored).
+- Native cold start is My Teams (`live-following.html`).
+- Native Home remains available at `index.html?home=1`.
+- Browser PWA install prompts/service-worker registration are suppressed inside the native shell.
+- Universal/App Links are intentionally deferred until the production WPHQ domain is final.
+- Native Supabase magic-link callback remains explicitly gated for real-device beta validation.
+- Native iOS/Android projects are intentionally not generated in this foundation release.
+- No Supabase migration, Edge Function deployment, GroupMe, scoring, analytics, roster or tournament-data changes.
+
+Validation:
+- ./release-check-live-7.64.22 — PASSED
+- 7.64.21 regression chain — PASSED
+
+Note:
+- The historical full `release-check-clean` already fails on the 7.64.21 baseline because an older 7.54.12 validator hard-codes later-version allowlists. That pre-existing validator debt is not caused by this mobile foundation release and is not widened here.

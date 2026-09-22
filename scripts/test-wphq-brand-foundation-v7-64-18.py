@@ -50,7 +50,7 @@ req(manifest.get('short_name')=='WPHQ','PWA short name must be WPHQ')
 for page in ['live.html','live-following.html','live-login.html','live-game.html','live-score.html','live-team-insights.html','live-game-recap.html','live-tournament.html']:
     html=(ROOT/page).read_text()
     req(('manifest.webmanifest?v=7.64.18' in html or 'manifest.webmanifest?v=7.64.19' in html),f'{page} missing current manifest')
-    req(('live-pwa-v7-64-18.js?v=7.64.18' in html or 'live-pwa-v7-64-19.js?v=7.64.19' in html),f'{page} missing current PWA runtime')
+    req(any(v in html for v in ('live-pwa-v7-64-18.js?v=7.64.18','live-pwa-v7-64-19.js?v=7.64.19','live-pwa-v7-64-22.js?v=7.64.22')),f'{page} missing current PWA runtime')
     req(('wphq-apple-touch-180.png?v=7.64.18' in html or 'wphq-apple-touch-180.png?v=7.64.19' in html),f'{page} missing WPHQ Apple icon')
 req('Water Polo HQ on iPhone or iPad' in pwa,'PWA runtime missing Water Polo HQ iOS instructions')
 req(('sw-v7-64-18.js' in pwa or (ROOT/'js/live-pwa-v7-64-19.js').exists()),'PWA runtime successor missing')

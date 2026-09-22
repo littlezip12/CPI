@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "release": "7.64.22",
+  "appName": "Water Polo HQ",
+  "appId": "com.waterpolohq.app",
+  "appIdStatus": "provisional-until-first-native-platform-generation",
+  "runtime": "Capacitor 8",
+  "webDir": "mobile/www",
+  "coldStartRoute": "live-following.html",
+  "webHomeRoute": "index.html?home=1",
+  "consumerBrand": "Water Polo HQ",
+  "rankingMethodologyBrand": "Water Polo Index",
+  "deepLinks": {
+    "strategy": "universal-links-and-android-app-links",
+    "status": "deferred-until-production-domain-is-final",
+    "runtimePlugin": "@capacitor/app"
+  },
+  "authentication": {
+    "existingWebAuthPreserved": true,
+    "nativeMagicLinkCallbackStatus": "must-be-validated-before-beta"
+  },
+  "nativeProjects": {
+    "ios": "not-generated-in-foundation-release",
+    "android": "not-generated-in-foundation-release"
+  }
+}

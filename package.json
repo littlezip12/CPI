@@ -1,0 +1,27 @@
+{
+  "name": "water-polo-hq",
+  "version": "7.64.22",
+  "private": true,
+  "description": "Water Polo HQ web product and Capacitor mobile app shell.",
+  "scripts": {
+    "mobile:prepare": "python3 scripts/build-mobile-web-v7-64-22.py",
+    "mobile:doctor": "python3 scripts/check-mobile-toolchain-v7-64-22.py",
+    "mobile:sync": "npm run mobile:prepare && npx cap sync",
+    "mobile:add:ios": "npm run mobile:prepare && npx cap add ios",
+    "mobile:add:android": "npm run mobile:prepare && npx cap add android",
+    "mobile:open:ios": "npx cap open ios",
+    "mobile:open:android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/core": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/ios": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

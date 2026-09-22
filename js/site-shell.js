@@ -41,14 +41,23 @@
     document.head.appendChild(link);
   }
 
+  function isNativeShell() {
+    try { return window.Capacitor?.isNativePlatform?.() === true; } catch (_) { return false; }
+  }
+
+  function nativeAwareHref(item) {
+    if (item.href === "index.html" && isNativeShell()) return makeHref("index.html?home=1");
+    return makeHref(item.href);
+  }
+
   function headerHtml() {
     const path = currentPath();
     const nav = navItems.map(item =>
-      `<a class="cpi-shell-nav-link ${item.matches(path) ? "is-active" : ""}" href="${makeHref(item.href)}">${item.label}</a>`
+      `<a class="cpi-shell-nav-link ${item.matches(path) ? "is-active" : ""}" href="${nativeAwareHref(item)}">${item.label}</a>`
     ).join("");
     return `<header class="cpi-shell-header" data-cpi-shell="header">
       <div class="cpi-shell-nav">
-        <a class="cpi-shell-brand" href="${makeHref("index.html")}" aria-label="Water Polo HQ Home">
+        <a class="cpi-shell-brand" href="${isNativeShell() ? makeHref("index.html?home=1") : makeHref("index.html")}" aria-label="Water Polo HQ Home">
           <span class="cpi-shell-logo-frame"><img class="cpi-shell-logo cpi-shell-logo--mark" src="${makeHref("assets/branding/wphq-logo-full.png?v=7.64.21")}" alt="Water Polo HQ"></span>
           <span class="cpi-shell-brand-text"><strong>Water Polo HQ</strong></span>
         </a>
@@ -63,7 +72,7 @@
     return `<footer class="cpi-shell-footer" data-cpi-shell="footer">
       <div class="cpi-shell-footer-grid">
         <div class="cpi-shell-footer-brand">
-          <a href="${makeHref("index.html")}" aria-label="Water Polo HQ Home">
+          <a href="${isNativeShell() ? makeHref("index.html?home=1") : makeHref("index.html")}" aria-label="Water Polo HQ Home">
             <span class="cpi-shell-logo-frame cpi-shell-logo-frame--footer"><img class="cpi-shell-logo cpi-shell-logo--full" src="${makeHref("assets/branding/wphq-logo-full.png?v=7.64.21")}" alt="Water Polo HQ"></span>
           </a>
           <p>Scores, rankings, stats, tournament results, team discovery and live game coverage in one connected water polo platform.</p>

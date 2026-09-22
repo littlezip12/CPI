@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.22 Mobile App Foundation Check\n'
+node --check js/site-shell.js
+node --check js/live-pwa-v7-64-22.js
+python3 -m py_compile scripts/build-mobile-web-v7-64-22.py scripts/check-mobile-toolchain-v7-64-22.py scripts/test-wphq-mobile-app-foundation-v7-64-22.py
+python3 scripts/test-wphq-mobile-app-foundation-v7-64-22.py
+bash ./release-check-live-7.64.21
+printf '\nWater Polo HQ 7.64.22 mobile app foundation check passed.\n'

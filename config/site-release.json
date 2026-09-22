@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.21",
-  "name": "Hero Contrast & Organizations Polish",
+  "version": "7.64.22",
+  "name": "WPHQ Mobile App Foundation",
   "date": "2026-09-22",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Small Water Polo HQ follow-up polish release fixing low-contrast shared landing heroes under the light WPHQ brand treatment, cleaning the Organizations page copy/navigation, and refreshing the universal shell brand stylesheet cache key. Backend, scoring, Supabase schema, GroupMe delivery, rankings data and internal WPI identifiers remain unchanged.",
+  "notes": "Establishes the Capacitor 8 native mobile foundation for Water Polo HQ while preserving the existing web/PWA product as the single source of truth. Adds a generated native web bundle, native-safe PWA behavior, My Teams cold-start contract, toolchain checks and iOS/Android project workflow. No native platform projects, Supabase migrations, Edge Function deployments or scoring/backend changes are included.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -327,5 +327,9 @@
   "wphqBrandSystemRelease": "7.64.19",
   "releaseGateHardeningRelease": "7.64.19",
   "wphqHeroContrastRelease": "7.64.21",
-  "organizationsPolishRelease": "7.64.21"
+  "organizationsPolishRelease": "7.64.21",
+  "nativeMobileFoundationRelease": "7.64.22",
+  "nativeMobileRuntime": "Capacitor 8",
+  "nativeMobileAppId": "com.waterpolohq.app",
+  "nativeMobileStartRoute": "live-following.html"
 }
