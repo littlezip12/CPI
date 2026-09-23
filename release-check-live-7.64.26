@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.26 Native Authentication Bridge Check\n'
+node --check js/wphq-native-auth-v7-64-26.js
+node --check js/live-login-v7-64-26.js
+python3 -m py_compile scripts/build-mobile-web-v7-64-23.py scripts/test-wphq-native-auth-bridge-v7-64-26.py
+python3 scripts/test-wphq-native-auth-bridge-v7-64-26.py
+./release-check-live-7.64.25
+printf '\nWater Polo HQ 7.64.26 native authentication bridge check passed.\n'

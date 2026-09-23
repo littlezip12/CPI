@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.25",
-  "name": "My Teams Seasonal Entry Cleanup",
+  "version": "7.64.26",
+  "name": "Native Authentication Bridge",
   "date": "2026-09-22",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Removes the deferred High Schools action from the current My Teams supporter/native entry experience and replaces it with a public Find a Team route to Teams & Clubs. High-school code and data remain preserved for future-season use. No backend, Supabase, GroupMe, rankings, or scoring changes.",
+  "notes": "Adds the Water Polo HQ iOS custom-scheme authentication return bridge for Supabase supporter magic links, preserves My Teams follow targets through authentication, and normalizes native package metadata. Existing web auth remains unchanged.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -335,5 +335,7 @@
   "nativeIosFirstRunPolishRelease": "7.64.23",
   "nativeIosSimulatorLaunchRelease": "7.64.23",
   "liveFollowingSignedOutVisibilityRelease": "7.64.24",
-  "liveFollowingSeasonalEntryCleanupRelease": "7.64.25"
+  "liveFollowingSeasonalEntryCleanupRelease": "7.64.25",
+  "nativeMobileAuthBridgeRelease": "7.64.26",
+  "nativeMobileAuthCallback": "waterpolohq://auth/callback"
 }

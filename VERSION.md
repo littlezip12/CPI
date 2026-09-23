@@ -1,3 +1,9 @@
+# WPI 7.64.26 — Native Authentication Bridge
+
+WPI 7.64.26 adds the first native authentication return path for Water Polo HQ. The iOS app now registers the custom URL callback `waterpolohq://auth/callback`, the generated Capacitor bundle listens for cold-start and foreground URL-open events, and the supporter passwordless login flow uses that callback only when running inside the native shell. The bridge can complete Supabase implicit-token, PKCE code, or token-hash returns and then restore the intended My Teams destination.
+
+The existing browser/PWA authentication path is preserved unchanged. Supabase session persistence remains handled by the existing JavaScript client with `persistSession: true`. Universal Links remain deferred until the production Water Polo HQ domain is final. Before beta distribution, the native redirect must be added to Supabase Auth URL Configuration and validated end-to-end on a real iPhone. No database migration or Edge Function deployment is required.
+
 # WPI 7.64.25 — My Teams Seasonal Entry Cleanup
 
 WPI 7.64.25 removes the High Schools action from the current My Teams supporter/native entry experience because high-school workflows are deferred for this season. The signed-out entry now presents **Live Scores** and **Find a Team**, with Find a Team routing to the public Teams & Clubs directory.

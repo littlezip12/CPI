@@ -1,0 +1,24 @@
+WPI 7.64.26 — Native Authentication Bridge
+
+Authoritative source baseline:
+- CPI-main - 2026-09-22T181309.715.zip
+- Verified baseline release: 7.64.25 — My Teams Seasonal Entry Cleanup
+
+Scope:
+- Register iOS custom auth callback scheme: waterpolohq://auth/callback.
+- Capture Capacitor appUrlOpen and cold-start URLs via @capacitor/app.
+- Complete Supabase implicit-token, PKCE-code, or token-hash auth returns.
+- Preserve My Teams/follow destination through passwordless authentication.
+- Use native redirect only inside the native shell; preserve browser/PWA auth.
+- Normalize package.json/package-lock.json release metadata to 7.64.26.
+- Keep production Universal Links deferred until the WPHQ production domain is final.
+- Harden 7.64.25 and 7.64.22 validators for future releases.
+
+Manual Supabase setting required before end-to-end magic-link testing:
+- Authentication -> URL Configuration -> Additional Redirect URLs
+- Add exactly: waterpolohq://auth/callback
+
+No database migration or Edge Function deployment required.
+
+Validation:
+- ./release-check-live-7.64.26 — PASSED

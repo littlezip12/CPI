@@ -9,7 +9,7 @@ OUT = ROOT / "mobile" / "www"
 RUNTIME_DIRS = ["assets", "club", "config", "css", "data", "js", "stories", "tournaments"]
 ROOT_SUFFIXES = {".html", ".js", ".css", ".json", ".csv", ".webmanifest"}
 ROOT_EXCLUDES = {"package.json"}
-NATIVE_HEAD = '''<script src="js/wphq-native-shell-v7-64-23.js?v=7.64.23"></script>\n  <link rel="stylesheet" href="css/wphq-native-shell-v7-64-23.css?v=7.64.23">'''
+NATIVE_HEAD = '''<script src="js/wphq-native-shell-v7-64-23.js?v=7.64.23"></script>\n  <script src="js/wphq-native-auth-v7-64-26.js?v=7.64.26"></script>\n  <link rel="stylesheet" href="css/wphq-native-shell-v7-64-23.css?v=7.64.23">'''
 
 if OUT.exists():
     shutil.rmtree(OUT)
@@ -36,7 +36,7 @@ for page in OUT.rglob("*.html"):
         count=1,
         flags=re.I,
     )
-    if 'wphq-native-shell-v7-64-23.js' not in html:
+    if 'wphq-native-auth-v7-64-26.js' not in html:
         html = re.sub(r"(<head[^>]*>)", r"\1\n  " + NATIVE_HEAD, html, count=1, flags=re.I)
     page.write_text(html, encoding="utf-8")
 
@@ -64,6 +64,8 @@ required = [
     "assets/branding/wphq-logo-full.png",
     "js/live-pwa-v7-64-23.js",
     "js/wphq-native-shell-v7-64-23.js",
+    "js/wphq-native-auth-v7-64-26.js",
+    "js/live-login-v7-64-26.js",
     "css/wphq-native-shell-v7-64-23.css",
 ]
 missing = [rel for rel in required if not (OUT / rel).exists()]

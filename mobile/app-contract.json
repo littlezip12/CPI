@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "release": "7.64.23",
+  "release": "7.64.26",
   "appName": "Water Polo HQ",
   "appId": "com.waterpolohq.app",
-  "appIdStatus": "provisional-until-first-native-platform-generation",
+  "appIdStatus": "provisional-until-app-store-identity-lock",
   "runtime": "Capacitor 8",
   "webDir": "mobile/www",
   "coldStartRoute": "live-following.html",
@@ -11,16 +11,19 @@
   "consumerBrand": "Water Polo HQ",
   "rankingMethodologyBrand": "Water Polo Index",
   "deepLinks": {
-    "strategy": "universal-links-and-android-app-links",
-    "status": "deferred-until-production-domain-is-final",
+    "authCustomScheme": "waterpolohq://auth/callback",
+    "authCustomSchemeStatus": "implemented-awaiting-end-to-end-device-validation",
+    "productionUniversalLinks": "deferred-until-production-domain-is-final",
     "runtimePlugin": "@capacitor/app"
   },
   "authentication": {
     "existingWebAuthPreserved": true,
-    "nativeMagicLinkCallbackStatus": "must-be-validated-before-beta"
+    "nativeMagicLinkCallback": "waterpolohq://auth/callback",
+    "nativeSessionPersistence": "Supabase JS persistSession in Capacitor WKWebView storage",
+    "validationStatus": "awaiting-end-to-end-email-link-and-relaunch-test"
   },
   "nativeProjects": {
-    "ios": "generated-locally-awaiting-source-control-after-first-run-polish",
+    "ios": "generated-and-source-controlled",
     "android": "not-generated-in-foundation-release"
   },
   "nativeShellDetection": "generated-bundle-marker-plus-capacitor-runtime",
