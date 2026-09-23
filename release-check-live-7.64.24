@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.24 Signed-Out Visibility Check\n'
+python3 -m py_compile scripts/test-live-following-signed-out-visibility-v7-64-24.py
+python3 scripts/test-live-following-signed-out-visibility-v7-64-24.py
+./release-check-live-7.64.23
+printf '\nWater Polo HQ 7.64.24 signed-out visibility check passed.\n'

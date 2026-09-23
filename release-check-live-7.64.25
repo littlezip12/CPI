@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.25 My Teams Seasonal Entry Check\n'
+python3 -m py_compile scripts/test-my-teams-seasonal-entry-v7-64-25.py
+python3 scripts/test-my-teams-seasonal-entry-v7-64-25.py
+python3 scripts/test-live-following-signed-out-visibility-v7-64-24.py
+./release-check-live-7.64.23
+printf '\nWater Polo HQ 7.64.25 seasonal entry check passed.\n'

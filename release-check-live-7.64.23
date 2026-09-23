@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.23 iOS First-Run Native Polish Check\n'
+node --check js/site-shell.js
+node --check js/live-pwa-v7-64-23.js
+node --check js/wphq-native-shell-v7-64-23.js
+node --check js/live-following-v7-64-23.js
+python3 -m py_compile scripts/build-mobile-web-v7-64-23.py scripts/test-wphq-ios-first-run-polish-v7-64-23.py scripts/test-wphq-mobile-app-foundation-v7-64-22.py
+python3 scripts/test-wphq-ios-first-run-polish-v7-64-23.py
+python3 scripts/test-wphq-mobile-app-foundation-v7-64-22.py
+bash ./release-check-live-7.64.21
+printf '\nWater Polo HQ 7.64.23 iOS first-run native polish check passed.\n'

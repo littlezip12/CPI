@@ -1,0 +1,16 @@
+WPI 7.64.24 — My Teams Signed-Out Visibility Fix
+
+Source baseline:
+- WPI 7.64.23 — iOS First-Run Native Polish
+
+Scope:
+- Enforce hidden state for My Teams authentication-only controls.
+- Prevent Add another team, Team Dashboard, Account Security and Sign out from rendering while signed out.
+- Preserve public Live Scores / High Schools links and supporter sign-in entry.
+- Preserve all 7.64.23 safe-area, compact native nav and native install-control suppression behavior.
+- Harden 7.64.23/legacy cache-key validation for successor releases.
+
+Validation:
+- ./release-check-live-7.64.24 ✅ PASSED
+
+No Supabase migration or Edge Function deployment required.

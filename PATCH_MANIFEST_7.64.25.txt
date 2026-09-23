@@ -1,0 +1,13 @@
+WPI 7.64.25 — My Teams Seasonal Entry Cleanup
+
+Scope:
+- Remove the deferred High Schools action from the current My Teams supporter/native entry surface.
+- Replace it with Find a Team, routing to the public Teams & Clubs directory.
+- Preserve high-school routes/code/data for future-season use.
+- Keep signed-out auth-only controls hidden.
+- Harden historical brand validation to ignore generated mobile/www output and preserve the 7.64.24 cache key.
+
+Validation:
+- ./release-check-live-7.64.25  PASSED
+
+No Supabase migration or Edge Function deployment required.

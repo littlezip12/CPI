@@ -1,0 +1,25 @@
+WPI 7.64.23 — iOS First-Run Native Polish
+
+Authoritative source baseline:
+- CPI-main - 2026-09-22T150004.005.zip
+- WPI 7.64.22 — WPHQ Mobile App Foundation
+
+Observed first native launch:
+- iPhone 17 Simulator
+- iOS 27.0
+- Water Polo HQ successfully launched to My Teams
+
+Scope:
+- Inject deterministic native-shell identity into every generated mobile HTML page.
+- Add iPhone safe-area support with viewport-fit=cover and native-only safe-area CSS.
+- Hide browser/PWA Install Water Polo HQ controls inside the native shell.
+- Use compact native top navigation labels so all primary destinations fit phone width.
+- Hide signed-in-only My Teams actions while signed out; restore them after permanent authentication.
+- Add TypeScript as an explicit dev dependency for capacitor.config.ts.
+- Advance mobile builder/PWA/My Teams native runtime to 7.64.23.
+- Harden historical mobile/brand validators for successor releases.
+
+No Supabase migration or Edge Function deployment required.
+
+Validation:
+- ./release-check-live-7.64.23 — PASSED

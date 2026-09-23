@@ -1,0 +1,4 @@
+/* WPI 7.64.24 — My Teams signed-out visibility hardening. */
+/* Older follow-hero link/button rules can override the browser's default [hidden] rendering. */
+[data-follow-auth-only][hidden]{display:none!important}
+#followConnected[hidden],#followSignedOut[hidden]{display:none!important}

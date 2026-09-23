@@ -2,11 +2,11 @@
 /* Legacy regression tokens preserved for historical gates only: Water Polo Index | { label: "Organizations", href: "organizations.html" | { label: "WPI Live", href: "live.html" | label: "Organizations" | label: "WPI Live" | Search WPI | wpi-logo-mark.png | wpi-logo-full.png */
 (function () {
   const navItems = [
-    { label: "Home", href: "index.html", matches: path => !path || path === "index.html" },
-    { label: "Rankings", href: "rankings.html", matches: path => path === "rankings.html" || /^(12|14|16|18)u-(boys|girls)\.html$/.test(path) },
-    { label: "Teams & Clubs", href: "organizations.html", matches: path => ["organizations.html", "organization.html", "team-hub.html", "teams.html", "team.html", "team-profile.html", "clubs.html", "club.html"].includes(path) || path.startsWith("club/") },
-    { label: "Tournaments", href: "tournaments.html", matches: path => path === "tournaments.html" || path.startsWith("tournaments/") || ["jo-boys.html", "jo-girls.html", "quicksilver-cup-2026.html", "tournament-archive.html"].includes(path) },
-    { label: "Live Scores", href: "live.html", matches: path => path === "live.html" || path === "live-score.html" || path.startsWith("live-") }
+    { label: "Home", nativeLabel: "Home", href: "index.html", matches: path => !path || path === "index.html" },
+    { label: "Rankings", nativeLabel: "Rankings", href: "rankings.html", matches: path => path === "rankings.html" || /^(12|14|16|18)u-(boys|girls)\.html$/.test(path) },
+    { label: "Teams & Clubs", nativeLabel: "Teams", href: "organizations.html", matches: path => ["organizations.html", "organization.html", "team-hub.html", "teams.html", "team.html", "team-profile.html", "clubs.html", "club.html"].includes(path) || path.startsWith("club/") },
+    { label: "Tournaments", nativeLabel: "Events", href: "tournaments.html", matches: path => path === "tournaments.html" || path.startsWith("tournaments/") || ["jo-boys.html", "jo-girls.html", "quicksilver-cup-2026.html", "tournament-archive.html"].includes(path) },
+    { label: "Live Scores", nativeLabel: "Live", href: "live.html", matches: path => path === "live.html" || path === "live-score.html" || path.startsWith("live-") }
   ];
 
   function shellScriptUrl() {
@@ -42,7 +42,7 @@
   }
 
   function isNativeShell() {
-    try { return window.Capacitor?.isNativePlatform?.() === true; } catch (_) { return false; }
+    try { return window.__WPHQ_NATIVE__ === true || document.documentElement?.dataset?.wphqNativeShell === "true" || window.Capacitor?.isNativePlatform?.() === true; } catch (_) { return false; }
   }
 
   function nativeAwareHref(item) {
@@ -53,7 +53,7 @@
   function headerHtml() {
     const path = currentPath();
     const nav = navItems.map(item =>
-      `<a class="cpi-shell-nav-link ${item.matches(path) ? "is-active" : ""}" href="${nativeAwareHref(item)}">${item.label}</a>`
+      `<a class="cpi-shell-nav-link ${item.matches(path) ? "is-active" : ""}" href="${nativeAwareHref(item)}">${isNativeShell() && item.nativeLabel ? item.nativeLabel : item.label}</a>`
     ).join("");
     return `<header class="cpi-shell-header" data-cpi-shell="header">
       <div class="cpi-shell-nav">

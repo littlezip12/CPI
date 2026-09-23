@@ -1,0 +1,30 @@
+/* Water Polo HQ 7.64.23 — native iOS/Android shell-only polish. This stylesheet is injected only into mobile/www. */
+html[data-wphq-native-shell="true"] body{
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html[data-wphq-native-shell="true"] .cpi-shell-header{
+  top:0;
+  padding-top:env(safe-area-inset-top,0px);
+}
+html[data-wphq-native-shell="true"] [data-wpi-install-app]{display:none!important}
+html[data-wphq-native-shell="true"] .cpi-shell-footer{
+  padding-bottom:calc(18px + env(safe-area-inset-bottom,0px));
+}
+@media(max-width:720px){
+  html[data-wphq-native-shell="true"] .cpi-shell-nav{padding-left:10px;padding-right:10px}
+  html[data-wphq-native-shell="true"] .cpi-shell-links{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:3px;
+    overflow:visible;
+    padding-bottom:9px;
+  }
+  html[data-wphq-native-shell="true"] .cpi-shell-nav-link{
+    min-width:0;
+    padding:9px 3px;
+    font-size:11.5px;
+    text-align:center;
+    white-space:nowrap;
+  }
+}

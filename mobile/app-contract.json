@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "7.64.22",
+  "release": "7.64.23",
   "appName": "Water Polo HQ",
   "appId": "com.waterpolohq.app",
   "appIdStatus": "provisional-until-first-native-platform-generation",
@@ -20,7 +20,14 @@
     "nativeMagicLinkCallbackStatus": "must-be-validated-before-beta"
   },
   "nativeProjects": {
-    "ios": "not-generated-in-foundation-release",
+    "ios": "generated-locally-awaiting-source-control-after-first-run-polish",
     "android": "not-generated-in-foundation-release"
+  },
+  "nativeShellDetection": "generated-bundle-marker-plus-capacitor-runtime",
+  "firstIosSimulatorLaunch": {
+    "status": "passed",
+    "device": "iPhone 17 simulator",
+    "os": "iOS 27.0",
+    "followUpPolishRelease": "7.64.23"
   }
 }

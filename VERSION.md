@@ -1,3 +1,21 @@
+# WPI 7.64.25 — My Teams Seasonal Entry Cleanup
+
+WPI 7.64.25 removes the High Schools action from the current My Teams supporter/native entry experience because high-school workflows are deferred for this season. The signed-out entry now presents **Live Scores** and **Find a Team**, with Find a Team routing to the public Teams & Clubs directory.
+
+High-school code, data, routes, and prior foundation work remain preserved for a future season; this release only removes the feature from the current primary entry surface. No Supabase migration or Edge Function deployment is required.
+
+# WPI 7.64.24 — My Teams Signed-Out Visibility Fix
+
+WPI 7.64.24 fixes the final issue found during the first iPhone Simulator QA pass. Authentication-only controls on My Teams were correctly marked `hidden` in HTML but older page-level button/link CSS could override the browser's default hidden rendering. A focused successor stylesheet now enforces hidden state for those controls and for the signed-in/signed-out content regions.
+
+Signed-out users keep public navigation such as Live Scores and High Schools plus the supporter sign-in/create-account card. Add another team, Team Dashboard, Account Security, Sign out, and signed-in My Teams content remain unavailable until a permanent authenticated session is confirmed. No Supabase migration or Edge Function deployment is required.
+
+# WPI 7.64.23 — iOS First-Run Native Polish
+
+WPI 7.64.23 turns the first successful Water Polo HQ iPhone Simulator launch into a native-safe baseline. The generated mobile bundle now marks every page as running inside the native shell before application scripts execute, applies iPhone safe-area spacing, removes browser/PWA install controls from the native app, uses compact native navigation labels, and keeps signed-in-only My Teams actions hidden until a permanent supporter/member session is confirmed. TypeScript is now an explicit development dependency so a clean Capacitor setup can read `capacitor.config.ts` without manual repair.
+
+The first iOS simulator launch was successfully validated on an iPhone 17 simulator running iOS 27.0. Existing web/PWA behavior, scoring, Supabase schema, GroupMe delivery, rankings, tournament data, and internal WPI contracts remain unchanged. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.22 — WPHQ Mobile App Foundation
 
 WPI 7.64.22 establishes the native mobile foundation for Water Polo HQ without forking or rewriting the mature web product. The release adds a Capacitor 8 project contract, Node/package metadata, a generated native web-bundle pipeline, a native toolchain doctor, a My Teams cold-start contract, and native-safe handling for the existing PWA install/service-worker runtime. The universal WPHQ shell also preserves a normal Home route inside the native app.

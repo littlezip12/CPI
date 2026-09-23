@@ -11,9 +11,15 @@ errors=[]
 def req(cond,msg):
     if not cond: errors.append(msg)
 
+def semver_at_least(value, floor):
+    try:
+        a=tuple(int(x) for x in str(value).split(".")[:3]); b=tuple(int(x) for x in str(floor).split(".")[:3]); return a>=b
+    except Exception:
+        return False
+
 package=json.loads((ROOT/'package.json').read_text())
 req(package.get('name')=='water-polo-hq','package name mismatch')
-req(package.get('version')=='7.64.22','package version mismatch')
+req(semver_at_least(package.get('version'),'7.64.22'),'package version must preserve 7.64.22 or later')
 req(package.get('engines',{}).get('node')=='>=22','Node 22+ engine requirement missing')
 for dep in ['@capacitor/core','@capacitor/app']:
     req(str(package.get('dependencies',{}).get(dep,'')).startswith('^8.'),f'{dep} must use Capacitor 8')
@@ -33,14 +39,15 @@ req(contract.get('rankingMethodologyBrand')=='Water Polo Index','ranking methodo
 req(contract.get('deepLinks',{}).get('status')=='deferred-until-production-domain-is-final','deep-link domain should not be fabricated')
 req(contract.get('authentication',{}).get('nativeMagicLinkCallbackStatus')=='must-be-validated-before-beta','native auth callback validation marker missing')
 
-pwa=(ROOT/'js/live-pwa-v7-64-22.js').read_text()
+pwa_path=ROOT/('js/live-pwa-v7-64-23.js' if (ROOT/'js/live-pwa-v7-64-23.js').exists() else 'js/live-pwa-v7-64-22.js')
+pwa=pwa_path.read_text()
 for token in ['isNativeShell','window.Capacitor?.isNativePlatform?.()','!isNativeShell() && "serviceWorker" in navigator','setInstallVisibility(false)']:
     req(token in pwa,f'native-safe PWA runtime missing {token}')
 
 pages=['live.html','live-following.html','live-login.html','live-game.html','live-score.html','live-team-insights.html','live-game-recap.html','live-tournament.html']
 for page in pages:
     html=(ROOT/page).read_text()
-    req('js/live-pwa-v7-64-22.js?v=7.64.22' in html,f'{page} missing 7.64.22 PWA runtime')
+    req(('js/live-pwa-v7-64-22.js?v=7.64.22' in html or 'js/live-pwa-v7-64-23.js?v=7.64.23' in html),f'{page} missing current native-safe PWA runtime')
 
 shell=(ROOT/'js/site-shell.js').read_text()
 for token in ['function isNativeShell()', 'function nativeAwareHref(item)', 'index.html?home=1']:
@@ -51,17 +58,18 @@ req('node_modules/' in ignore,'node_modules ignore missing')
 req('mobile/www/' in ignore,'generated mobile webDir ignore missing')
 
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version')=='7.64.22','site release mismatch')
+req(semver_at_least(site.get('version'),'7.64.22'),'site release must preserve 7.64.22 or later')
 req(site.get('nativeMobileFoundationRelease')=='7.64.22','mobile foundation release marker missing')
 req(site.get('nativeMobileRuntime')=='Capacitor 8','mobile runtime marker missing')
 
-build=subprocess.run([sys.executable,str(ROOT/'scripts/build-mobile-web-v7-64-22.py')],cwd=ROOT,text=True,capture_output=True)
+build_script=ROOT/('scripts/build-mobile-web-v7-64-23.py' if (ROOT/'scripts/build-mobile-web-v7-64-23.py').exists() else 'scripts/build-mobile-web-v7-64-22.py')
+build=subprocess.run([sys.executable,str(build_script)],cwd=ROOT,text=True,capture_output=True)
 if build.returncode != 0:
     errors.append('mobile web build failed: '+(build.stdout+build.stderr).strip())
 else:
     www=ROOT/'mobile/www'
     index=(www/'index.html').read_text()
-    req('data-wphq-native-entry="7.64.22"' in index,'native cold-start injection missing from generated index')
+    req(('data-wphq-native-entry="7.64.22"' in index or 'data-wphq-native-entry="7.64.23"' in index),'native cold-start injection missing from generated index')
     req("live-following.html?native=1" in index,'generated index does not route native cold start to My Teams')
     for rel in ['live-following.html','live-login.html','live-game.html','live-score.html','organizations.html','assets/branding/wphq-logo-full.png']:
         req((www/rel).exists(),f'generated mobile bundle missing {rel}')
