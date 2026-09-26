@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.28",
-  "name": "Native Team Link & QR Onboarding",
+  "version": "7.64.29",
+  "name": "Cross-Device Team QR Fix",
   "date": "2026-09-25",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds native Water Polo HQ team deep-link routing and app-aware QR onboarding while preserving browser follow links and existing server-backed read-only follow behavior. No schema or Edge Function changes.",
+  "notes": "Fixes Share Team QR payloads so they always use a public HTTPS team-follow URL that any phone camera can open. Native waterpolohq://team deep-link routing remains available for installed-app/development routing, while Universal Links stay deferred until the production Water Polo HQ domain is final. No schema or Edge Function changes.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -342,6 +342,8 @@
   "nativeMobileFollowPersistenceRelease": "7.64.27",
   "nativeMobileTeamLinkRelease": "7.64.28",
   "nativeMobileTeamLinkScheme": "waterpolohq://team/<team UUID>",
-  "nativeMobileQrOnboardingRelease": "7.64.28",
-  "teamHubFollowTargetPreservationRelease": "7.64.28"
+  "nativeMobileQrOnboardingRelease": "7.64.29",
+  "teamHubFollowTargetPreservationRelease": "7.64.28",
+  "teamShareQrWebFallbackRelease": "7.64.29",
+  "teamSharePublicWebBase": "https://littlezip12.github.io/CPI/"
 }

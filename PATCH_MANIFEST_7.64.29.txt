@@ -1,0 +1,19 @@
+WPI 7.64.29 — Cross-Device Team QR Fix
+
+Source baseline:
+- CPI-main - 2026-09-25T211006.468.zip
+- Verified pushed release: 7.64.28 — Native Team Link & QR Onboarding
+
+Scope:
+- Correct the Share Team QR so it always encodes a public HTTPS team-follow URL rather than the `waterpolohq://` custom scheme.
+- Make the copied Team Link use the same cross-device HTTPS contract.
+- Fall back to the current GitHub Pages deployment when running in Capacitor, localhost, or another non-public origin.
+- Preserve the native `waterpolohq://team/<team UUID>` router for installed-app/development deep-link testing.
+- Preserve the existing `followTeam` sign-in handoff and server-backed read-only follow behavior.
+- Harden the 7.64.28 validator to accept the 7.64.29 successor share runtime.
+
+Validation:
+- ./release-check-live-7.64.29 ✅ PASSED
+
+No Supabase migration or Edge Function deployment required.
+Universal Links/App Links remain deferred until the production Water Polo HQ domain is final.

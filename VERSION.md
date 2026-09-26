@@ -1,3 +1,7 @@
+# WPI 7.64.29 — Cross-Device Team QR Fix
+
+WPI 7.64.29 corrects the Share Team QR behavior discovered during real-device QA. Team QR codes and copied team-follow links now resolve to the current public HTTPS Water Polo HQ web surface (`https://littlezip12.github.io/CPI/live-following.html?followTeam=<team UUID>`), so a normal iPhone or Android camera can scan and open them even when the native WPHQ app is not installed. The native custom-scheme route `waterpolohq://team/<team UUID>` remains preserved for installed-app/development deep-link testing and future handoff logic, but it is no longer used as the QR payload. When WPHQ moves to its final production domain, this HTTPS share contract can become the Universal Link/App Link surface without changing the QR model again. No database migration or Edge Function deployment is required.
+
 # WPI 7.64.28 — Native Team Link & QR Onboarding
 
 WPI 7.64.28 connects Water Polo HQ team sharing to the native mobile shell without changing the existing browser fallback. The iOS app now recognizes custom-scheme team links in the form `waterpolohq://team/<team UUID>` (plus a compatibility `waterpolohq://follow?team=<team UUID>` form) and routes them into the existing `live-following.html?followTeam=<team UUID>` onboarding flow. Signed-out users keep the requested team through supporter magic-link sign-in, and signed-in users continue to auto-follow the exact Live team with read-only supporter access.

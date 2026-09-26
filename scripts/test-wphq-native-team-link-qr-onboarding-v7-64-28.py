@@ -14,7 +14,7 @@ site=json.loads((ROOT/'config/site-release.json').read_text())
 req(semver_at_least(site.get('version'),'7.64.28'),'site release must preserve 7.64.28 or later')
 req(site.get('nativeMobileTeamLinkRelease')=='7.64.28','native team-link marker missing')
 req(site.get('nativeMobileTeamLinkScheme')=='waterpolohq://team/<team UUID>','native team-link scheme marker missing')
-req(site.get('nativeMobileQrOnboardingRelease')=='7.64.28','native QR onboarding marker missing')
+req(semver_at_least(site.get('nativeMobileQrOnboardingRelease'),'7.64.28'),'native QR onboarding marker missing')
 req(site.get('teamHubFollowTargetPreservationRelease')=='7.64.28','team-hub follow target marker missing')
 version=(ROOT/'VERSION.md').read_text()
 req('# WPI 7.64.28 — Native Team Link & QR Onboarding' in version,'VERSION.md missing 7.64.28 release')
@@ -52,7 +52,8 @@ req('a.download=`water-polo-hq-' in share,'QR download filename must use Water P
 
 for page_name in ['live-following.html','live-dashboard.html']:
     page=(ROOT/page_name).read_text()
-    req('js/live-team-share-v7-64-28.js?v=7.64.28' in page,f'{page_name} does not load 7.64.28 share runtime')
+    match=re.search(r'js/live-team-share-v7-64-(\d+)\.js\?v=7\.64\.(\d+)',page)
+    req(bool(match) and int(match.group(1))>=28 and match.group(1)==match.group(2),f'{page_name} does not load 7.64.28-or-later share runtime')
 
 hub=(ROOT/'js/team-hub-v7-64-28.js').read_text(); hub_page=(ROOT/'team-hub.html').read_text()
 for token in ['followTeam=${encodeURIComponent(lt.teamId)}','Sign in for Team Stats','Water Polo HQ Live']:
@@ -72,7 +73,9 @@ else:
     for rel in ['index.html','live-following.html','live-login.html','team-hub.html']:
         html=(www/rel).read_text()
         req('wphq-native-team-links-v7-64-28.js?v=7.64.28' in html,f'{rel} missing generated native team-link bridge')
-    req('js/live-team-share-v7-64-28.js?v=7.64.28' in (www/'live-following.html').read_text(),'generated My Teams page missing 7.64.28 share runtime')
+    generated_following=(www/'live-following.html').read_text()
+    match=re.search(r'js/live-team-share-v7-64-(\d+)\.js\?v=7\.64\.(\d+)',generated_following)
+    req(bool(match) and int(match.group(1))>=28 and match.group(1)==match.group(2),'generated My Teams page missing 7.64.28-or-later share runtime')
     req('js/team-hub-v7-64-28.js?v=7.64.28' in (www/'team-hub.html').read_text(),'generated Team Hub missing 7.64.28 runtime')
 
 if errors:
@@ -82,6 +85,6 @@ if errors:
 print('WPI 7.64.28 NATIVE TEAM LINK / QR ONBOARDING TEST PASSED')
 print(' - waterpolohq://team/<UUID> routes into the existing My Teams follow flow')
 print(' - signed-out supporter auth preserves the exact requested team')
-print(' - native QR opens the app while the copied browser link remains the fallback')
+print(' - native team deep-link routing remains available; successor releases may use HTTPS for public QR payloads')
 print(' - Team Hub sign-in preserves the active Live team target')
 print(' - no database or operational authority changes are introduced')
