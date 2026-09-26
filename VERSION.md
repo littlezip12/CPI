@@ -1,3 +1,9 @@
+# WPI 7.64.27 — Native Auth Polish & Team Follow Persistence
+
+WPI 7.64.27 polishes the now-validated Water Polo HQ native supporter authentication flow and locks in My Teams persistence behavior. User-facing supporter/login copy now uses Water Polo HQ rather than legacy WPI/WPI Live language, raw Supabase authentication errors are translated into clear user messages, and successful team-follow messaging explicitly confirms that follows are saved to the user account.
+
+My Teams persistence remains server-backed through the existing Supabase `live_team_follows` / `live_public_team_follows` tables and read-only follow RPCs. The release adds regression coverage that confirms the active app restores the authenticated session, reloads follow state from Supabase on launch, and does not rely on localStorage/sessionStorage for follow ownership. The iOS magic-link bridge validated in 7.64.26 is preserved unchanged. No database migration or Edge Function deployment is required.
+
 # WPI 7.64.26 — Native Authentication Bridge
 
 WPI 7.64.26 adds the first native authentication return path for Water Polo HQ. The iOS app now registers the custom URL callback `waterpolohq://auth/callback`, the generated Capacitor bundle listens for cold-start and foreground URL-open events, and the supporter passwordless login flow uses that callback only when running inside the native shell. The bridge can complete Supabase implicit-token, PKCE code, or token-hash returns and then restore the intended My Teams destination.

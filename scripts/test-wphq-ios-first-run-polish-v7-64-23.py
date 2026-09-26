@@ -35,9 +35,11 @@ for token in ['nativeLabel: "Teams"','nativeLabel: "Events"','nativeLabel: "Live
     req(token in shell,f'native navigation missing {token}')
 
 following=(ROOT/'live-following.html').read_text()
-for token in ['data-follow-auth-only hidden','id="followSignOut" type="button" data-follow-auth-only hidden','js/live-following-v7-64-23.js?v=7.64.23','js/live-pwa-v7-64-23.js?v=7.64.23']:
+for token in ['data-follow-auth-only hidden','id="followSignOut" type="button" data-follow-auth-only hidden','js/live-pwa-v7-64-23.js?v=7.64.23']:
     req(token in following,f'My Teams native/signed-out polish missing {token}')
-following_js=(ROOT/'js/live-following-v7-64-23.js').read_text()
+req(('js/live-following-v7-64-23.js?v=7.64.23' in following) or ('js/live-following-v7-64-27.js?v=7.64.27' in following),'My Teams page missing native-safe following runtime')
+following_path=ROOT/('js/live-following-v7-64-27.js' if (ROOT/'js/live-following-v7-64-27.js').exists() and 'js/live-following-v7-64-27.js?v=7.64.27' in following else 'js/live-following-v7-64-23.js')
+following_js=following_path.read_text()
 req('document.querySelectorAll("[data-follow-auth-only]").forEach(el=>{el.hidden=false;});' in following_js,'auth-only My Teams actions are not restored after permanent sign-in')
 
 pages=['live.html','live-following.html','live-login.html','live-game.html','live-score.html','live-team-insights.html','live-game-recap.html','live-tournament.html']

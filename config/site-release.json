@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.26",
-  "name": "Native Authentication Bridge",
+  "version": "7.64.27",
+  "name": "Native Auth Polish & Team Follow Persistence",
   "date": "2026-09-22",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds the Water Polo HQ iOS custom-scheme authentication return bridge for Supabase supporter magic links, preserves My Teams follow targets through authentication, and normalizes native package metadata. Existing web auth remains unchanged.",
+  "notes": "Polishes Water Polo HQ native/supporter authentication messaging, converts raw auth failures into user-friendly guidance, and adds regression protection for server-backed My Teams follow persistence across app relaunches. No schema or Edge Function changes.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -337,5 +337,7 @@
   "liveFollowingSignedOutVisibilityRelease": "7.64.24",
   "liveFollowingSeasonalEntryCleanupRelease": "7.64.25",
   "nativeMobileAuthBridgeRelease": "7.64.26",
-  "nativeMobileAuthCallback": "waterpolohq://auth/callback"
+  "nativeMobileAuthCallback": "waterpolohq://auth/callback",
+  "nativeMobileAuthPolishRelease": "7.64.27",
+  "nativeMobileFollowPersistenceRelease": "7.64.27"
 }

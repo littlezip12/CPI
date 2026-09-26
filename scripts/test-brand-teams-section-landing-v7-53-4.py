@@ -109,6 +109,9 @@ if '>WPI<' not in fallback or 'aria-label="WPI logo fallback"' not in fallback:
 # Deliberate release-wide cache reset ensures all updated text and artwork bypass old browser caches.
 stale_cache = []
 for path in ROOT.rglob('*.html'):
+    rel = path.relative_to(ROOT)
+    if rel.parts and rel.parts[0] == 'mobile':
+        continue
     text = path.read_text(encoding='utf-8', errors='ignore')
     for match in re.finditer(r'\?v=(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9.-]+)?)', text):
         cache_key = match.group(1)

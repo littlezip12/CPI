@@ -1,0 +1,25 @@
+WPI 7.64.27 — Native Auth Polish & Team Follow Persistence
+
+Source baseline:
+- CPI-main - 2026-09-22T230818.640.zip (pushed 7.64.26)
+
+Scope:
+- Water Polo HQ consumer copy across the active supporter sign-in flow.
+- User-friendly Supabase auth error messages for rate-limit, expired-link, CAPTCHA, network, and generic failures.
+- Water Polo HQ consumer copy in active My Teams follow/discovery messaging.
+- Explicit successful-follow message that confirms server/account persistence across app relaunch.
+- Regression gate proving follows are server-backed via Supabase RPCs/tables and do not rely on localStorage/sessionStorage.
+- Future-tolerant 7.64.23/7.64.26 validators and exclusion of generated mobile/www from historical public cache-key scanning.
+- Package/site release normalization to 7.64.27.
+
+Production Supabase verification performed during build:
+- live_team_follows table present
+- live_public_team_follows table present
+- live_set_team_follow_v2 present
+- live_set_public_team_follow_v1 present
+- live_following_overview_v2 present
+
+Validation:
+- ./release-check-live-7.64.27 ✅ PASSED
+
+No Supabase migration or Edge Function deployment required.

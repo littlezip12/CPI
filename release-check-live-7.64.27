@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.27 Native Auth Polish & Follow Persistence Check\n'
+node --check js/live-login-v7-64-27.js
+node --check js/live-following-v7-64-27.js
+python3 -m py_compile scripts/test-wphq-native-auth-follow-persistence-v7-64-27.py
+python3 scripts/test-wphq-native-auth-follow-persistence-v7-64-27.py
+./release-check-live-7.64.26
+printf '\nWater Polo HQ 7.64.27 native auth polish & follow persistence check passed.\n'

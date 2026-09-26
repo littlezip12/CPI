@@ -18,8 +18,8 @@ req('# WPI 7.64.26 — Native Authentication Bridge' in version,'VERSION.md miss
 
 package=json.loads((ROOT/'package.json').read_text())
 lock=json.loads((ROOT/'package-lock.json').read_text())
-req(package.get('version')=='7.64.26','package.json version not normalized to 7.64.26')
-req(lock.get('version')=='7.64.26' and lock.get('packages',{}).get('',{}).get('version')=='7.64.26','package-lock.json version not normalized to 7.64.26')
+req(semver_at_least(package.get('version'),'7.64.26'),'package.json must preserve 7.64.26 or later')
+req(semver_at_least(lock.get('version'),'7.64.26') and semver_at_least(lock.get('packages',{}).get('',{}).get('version'),'7.64.26'),'package-lock.json must preserve 7.64.26 or later')
 req('@capacitor/app' in package.get('dependencies',{}),'Capacitor App plugin missing')
 
 contract=json.loads((ROOT/'mobile/app-contract.json').read_text())
@@ -40,11 +40,12 @@ login=(ROOT/'js/live-login-v7-64-26.js').read_text()
 for token in ['nativeAuth().prepareRedirect(followingTarget())','completeNativeAuthIfPresent()','emailRedirectTo:nativeRedirect || redirect.href','wphq:native-auth-url']:
     req(token in login,f'native login runtime missing {token}')
 page=(ROOT/'live-login.html').read_text()
-req('js/live-login-v7-64-26.js?v=7.64.26' in page,'live-login.html does not load native auth-aware login runtime')
+req(('js/live-login-v7-64-26.js?v=7.64.26' in page) or ('js/live-login-v7-64-27.js?v=7.64.27' in page),'live-login.html does not load native auth-aware login runtime')
 
 builder=(ROOT/'scripts/build-mobile-web-v7-64-23.py').read_text()
-for token in ['wphq-native-auth-v7-64-26.js?v=7.64.26','"js/wphq-native-auth-v7-64-26.js"','"js/live-login-v7-64-26.js"']:
+for token in ['wphq-native-auth-v7-64-26.js?v=7.64.26','"js/wphq-native-auth-v7-64-26.js"']:
     req(token in builder,f'mobile builder missing {token}')
+req(('\"js/live-login-v7-64-26.js\"' in builder) or ('\"js/live-login-v7-64-27.js\"' in builder),'mobile builder missing native auth-aware login successor')
 
 build=subprocess.run([sys.executable,str(ROOT/'scripts/build-mobile-web-v7-64-23.py')],cwd=ROOT,text=True,capture_output=True)
 if build.returncode:
@@ -54,7 +55,7 @@ else:
     for rel in ['index.html','live-following.html','live-login.html']:
         html=(www/rel).read_text()
         req('wphq-native-auth-v7-64-26.js?v=7.64.26' in html,f'{rel} missing generated native auth bridge')
-    req('js/live-login-v7-64-26.js?v=7.64.26' in (www/'live-login.html').read_text(),'generated native login page missing 7.64.26 login runtime')
+    req(('js/live-login-v7-64-26.js?v=7.64.26' in (www/'live-login.html').read_text()) or ('js/live-login-v7-64-27.js?v=7.64.27' in (www/'live-login.html').read_text()),'generated native login page missing native auth-aware login runtime')
 
 if errors:
     print('WPI 7.64.26 NATIVE AUTH BRIDGE TEST FAILED')
