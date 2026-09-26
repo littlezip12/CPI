@@ -17,8 +17,8 @@ version=(ROOT/'VERSION.md').read_text()
 req('# WPI 7.64.27 — Native Auth Polish & Team Follow Persistence' in version,'VERSION.md missing 7.64.27 release')
 
 package=json.loads((ROOT/'package.json').read_text()); lock=json.loads((ROOT/'package-lock.json').read_text())
-req(package.get('version')=='7.64.27','package.json not 7.64.27')
-req(lock.get('version')=='7.64.27' and lock.get('packages',{}).get('',{}).get('version')=='7.64.27','package-lock not 7.64.27')
+req(semver_at_least(package.get('version'),'7.64.27'),'package.json must preserve 7.64.27 or later')
+req(semver_at_least(lock.get('version'),'7.64.27') and semver_at_least(lock.get('packages',{}).get('',{}).get('version'),'7.64.27'),'package-lock must preserve 7.64.27 or later')
 
 login=(ROOT/'js/live-login-v7-64-27.js').read_text()
 for token in ['friendlyAuthError','Too many sign-in emails were requested','This secure sign-in link is invalid or has expired','Water Polo HQ will send a one-time secure sign-in link','Water Polo HQ could not complete sign-in']:
@@ -50,10 +50,11 @@ for token in ['create table if not exists public.live_public_team_follows','crea
 privacy=(ROOT/'supabase/migrations/202609210002_player_roster_privacy_hardening.sql').read_text()
 req('create or replace function public.live_set_team_follow_v2' in privacy,'permanent-account direct follow RPC missing')
 
-builder=(ROOT/'scripts/build-mobile-web-v7-64-23.py').read_text()
+builder_path=ROOT/('scripts/build-mobile-web-v7-64-28.py' if (ROOT/'scripts/build-mobile-web-v7-64-28.py').exists() else 'scripts/build-mobile-web-v7-64-23.py')
+builder=builder_path.read_text()
 for token in ['"js/live-login-v7-64-27.js"','"js/live-following-v7-64-27.js"']:
     req(token in builder,f'mobile builder missing {token}')
-build=subprocess.run([sys.executable,str(ROOT/'scripts/build-mobile-web-v7-64-23.py')],cwd=ROOT,text=True,capture_output=True)
+build=subprocess.run([sys.executable,str(builder_path)],cwd=ROOT,text=True,capture_output=True)
 if build.returncode:
     errors.append('mobile bundle build failed: '+(build.stdout+build.stderr).strip())
 else:

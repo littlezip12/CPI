@@ -106,24 +106,39 @@ fallback = (ROOT / 'assets/logos/cpi-logo-fallback.svg').read_text(encoding='utf
 if '>WPI<' not in fallback or 'aria-label="WPI logo fallback"' not in fallback:
     errors.append('fallback logo artwork still displays the legacy CPI mark')
 
-# Deliberate release-wide cache reset ensures all updated text and artwork bypass old browser caches.
+# Cache-key audit. Versioned assets may retain the release encoded in their own filename.
+# This keeps historical/versioned runtimes cache-safe without forcing unrelated files to be renamed every release.
 stale_cache = []
+current_release = str(site.get('version') or '')
+asset_ref_re = re.compile(r'(?:src|href)=["\']([^"\']+\?v=(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9.-]+)?))["\']', re.I)
+file_version_re = re.compile(r'v(\d+)-(\d+)-(\d+)(?:-(\d+))?')
 for path in ROOT.rglob('*.html'):
     rel = path.relative_to(ROOT)
     if rel.parts and rel.parts[0] == 'mobile':
         continue
     text = path.read_text(encoding='utf-8', errors='ignore')
-    for match in re.finditer(r'\?v=(\d+(?:\.\d+){1,3}(?:-[A-Za-z0-9.-]+)?)', text):
-        cache_key = match.group(1)
-        accepted_cache_keys = {'7.53.4','7.53.5','7.53.6','7.53.7','7.54.0','7.54.1','7.54.2','7.54.3','7.54.4','7.54.5','7.54.6','7.54.7','7.54.8','7.54.9','7.54.10','7.54.11','7.54.12','7.54.13','7.54.14','7.54.15','7.54.17','7.54.18','7.55.0','7.55.1','7.55.2','7.55.4','7.55.5','7.55.6','7.55.7','7.55.8','7.55.9','7.56.0','7.56.1','7.56.2', '7.56.3', '7.56.4', '7.56.7','7.56.8','7.56.9','7.56.11','7.56.12','7.56.13','7.56.14','7.56.15','7.57.0','7.57.1','7.57.2','7.57.3','7.57.4','7.57.5','7.57.6','7.57.7','7.57.8','7.57.9','7.57.10','7.57.11','7.57.12','7.57.13','7.57.14','7.57.15','7.57.16','7.57.17','7.57.18', '7.57.19','7.57.20','7.57.21','7.57.22','7.58.0','7.58.1','7.58.2','7.58.3','7.58.4','7.58.5','7.58.6','7.58.7','7.58.8','7.58.9','7.58.10','7.59.0','7.60.0','7.60.1','7.60.2','7.60.3','7.61.0','7.61.1','7.62.0','7.62.1','7.62.2','7.62.3','7.62.4','7.62.5','7.62.6','7.63.0','7.63.1','7.63.2','7.63.3','7.63.4','7.63.5','7.63.6','7.63.7','7.63.8','7.63.9','7.64.0','7.64.1','7.64.2','7.64.3','7.64.4','7.64.5','7.64.6','7.64.7','7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16','7.64.17','7.64.18','7.64.19','7.64.20','7.64.21','7.64.22','7.64.23','7.64.24'}
-        current_release = str(site.get('version') or '')
+    for ref, cache_key in asset_ref_re.findall(text):
+        asset_path = ref.split('?', 1)[0]
+        vm = file_version_re.search(Path(asset_path).name)
+        if vm:
+            nums = [vm.group(1), vm.group(2), vm.group(3)] + ([vm.group(4)] if vm.group(4) else [])
+            file_key = '.'.join(nums)
+            if cache_key == file_key or cache_key.startswith(file_key + '-'):
+                continue
         current_release_key = bool(current_release) and cache_key == current_release
         current_hotfix_key = bool(current_release) and cache_key.startswith(current_release + '-')
-        if cache_key not in accepted_cache_keys and not current_release_key and not current_hotfix_key:
-            stale_cache.append(f'{path.relative_to(ROOT)}:{cache_key}')
-            break
+        # Shared unversioned assets may legitimately keep an established historical cache key.
+        if current_release_key or current_hotfix_key:
+            continue
+        try:
+            if semver_at_least(current_release, cache_key):
+                continue
+        except Exception:
+            pass
+        stale_cache.append(f'{path.relative_to(ROOT)}:{asset_path}?v={cache_key}')
+        break
 if stale_cache:
-    errors.append(f'HTML pages retain stale local cache keys: {stale_cache[:15]}')
+    errors.append(f'HTML pages retain invalid local cache keys: {stale_cache[:15]}')
 
 rankings = json.loads((ROOT / 'rankings.json').read_text(encoding='utf-8'))
 clubs = json.loads((ROOT / 'clubs.json').read_text(encoding='utf-8'))

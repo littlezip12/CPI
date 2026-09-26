@@ -12,7 +12,8 @@ def req(c,m):
 package=json.loads((ROOT/'package.json').read_text())
 req(tuple(map(int,package.get('version','0.0.0').split('.')[:3])) >= (7,64,23),'package version must preserve 7.64.23 or later')
 req('typescript' in package.get('devDependencies',{}),'TypeScript must be an explicit dev dependency')
-req(package.get('scripts',{}).get('mobile:prepare')=='python3 scripts/build-mobile-web-v7-64-23.py','mobile:prepare must use 7.64.23 builder')
+mobile_prepare=package.get('scripts',{}).get('mobile:prepare','')
+req(mobile_prepare.startswith('python3 scripts/build-mobile-web-v7-64-') and mobile_prepare.endswith('.py'),'mobile:prepare must use a versioned WPHQ mobile builder')
 
 site=json.loads((ROOT/'config/site-release.json').read_text())
 req(tuple(map(int,site.get('version','0.0.0').split('.')[:3])) >= (7,64,23),'site release must preserve 7.64.23 or later')
@@ -47,7 +48,10 @@ for page in pages:
     html=(ROOT/page).read_text()
     req('js/live-pwa-v7-64-23.js?v=7.64.23' in html,f'{page} missing 7.64.23 PWA runtime')
 
-build=subprocess.run([sys.executable,str(ROOT/'scripts/build-mobile-web-v7-64-23.py')],cwd=ROOT,text=True,capture_output=True)
+builder_rel=mobile_prepare.replace('python3 ','',1).strip()
+builder_path=ROOT/builder_rel
+req(builder_path.exists(),'configured mobile builder is missing')
+build=subprocess.run([sys.executable,str(builder_path)],cwd=ROOT,text=True,capture_output=True) if builder_path.exists() else subprocess.CompletedProcess([],1,'','configured builder missing')
 if build.returncode:
     errors.append('mobile bundle build failed: '+(build.stdout+build.stderr).strip())
 else:

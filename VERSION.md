@@ -1,3 +1,9 @@
+# WPI 7.64.28 — Native Team Link & QR Onboarding
+
+WPI 7.64.28 connects Water Polo HQ team sharing to the native mobile shell without changing the existing browser fallback. The iOS app now recognizes custom-scheme team links in the form `waterpolohq://team/<team UUID>` (plus a compatibility `waterpolohq://follow?team=<team UUID>` form) and routes them into the existing `live-following.html?followTeam=<team UUID>` onboarding flow. Signed-out users keep the requested team through supporter magic-link sign-in, and signed-in users continue to auto-follow the exact Live team with read-only supporter access.
+
+The existing Share Team dialog now uses Water Polo HQ language and, when running inside the native app, generates an app-opening QR while keeping the copied browser link as the cross-platform fallback. Team Hub sign-in now preserves the exact Live team when available. Universal Links/App Links remain deferred until the production Water Polo HQ domain is final. No database migration or Edge Function deployment is required.
+
 # WPI 7.64.27 — Native Auth Polish & Team Follow Persistence
 
 WPI 7.64.27 polishes the now-validated Water Polo HQ native supporter authentication flow and locks in My Teams persistence behavior. User-facing supporter/login copy now uses Water Polo HQ rather than legacy WPI/WPI Live language, raw Supabase authentication errors are translated into clear user messages, and successful team-follow messaging explicitly confirms that follows are saved to the user account.

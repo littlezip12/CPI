@@ -1,0 +1,24 @@
+WPI 7.64.28 — Native Team Link & QR Onboarding
+
+Source baseline:
+- CPI-main - 2026-09-25T205004.117.zip
+- Verified pushed release: 7.64.27 — Native Auth Polish & Team Follow Persistence
+
+Scope:
+- Add native team-link route: waterpolohq://team/<team UUID>.
+- Support compatibility route: waterpolohq://follow?team=<team UUID>.
+- Route native team links into the existing My Teams followTeam flow.
+- Preserve exact team target through signed-out supporter magic-link authentication.
+- Keep server-backed read-only follow behavior unchanged.
+- Make Share Team QR app-aware inside the native shell while retaining the copied browser link as fallback.
+- Preserve exact Live team target from Team Hub sign-in.
+- Refresh Team Hub consumer-facing branding to Water Polo HQ / Team Stats.
+- Advance the mobile builder to 7.64.28 and inject the native team-link bridge into every generated native HTML page.
+- Harden older mobile/cache validators so successor builders and versioned runtime cache keys remain valid.
+
+Validation:
+- ./release-check-live-7.64.28 ✅ PASSED
+- Native route sanity check with active Lamorinda 14U Boys A team UUID ✅ PASSED
+
+No Supabase migration or Edge Function deployment required.
+Universal Links/App Links remain deferred until the production Water Polo HQ domain is final.

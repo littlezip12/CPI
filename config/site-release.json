@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.27",
-  "name": "Native Auth Polish & Team Follow Persistence",
-  "date": "2026-09-22",
+  "version": "7.64.28",
+  "name": "Native Team Link & QR Onboarding",
+  "date": "2026-09-25",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Polishes Water Polo HQ native/supporter authentication messaging, converts raw auth failures into user-friendly guidance, and adds regression protection for server-backed My Teams follow persistence across app relaunches. No schema or Edge Function changes.",
+  "notes": "Adds native Water Polo HQ team deep-link routing and app-aware QR onboarding while preserving browser follow links and existing server-backed read-only follow behavior. No schema or Edge Function changes.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -339,5 +339,9 @@
   "nativeMobileAuthBridgeRelease": "7.64.26",
   "nativeMobileAuthCallback": "waterpolohq://auth/callback",
   "nativeMobileAuthPolishRelease": "7.64.27",
-  "nativeMobileFollowPersistenceRelease": "7.64.27"
+  "nativeMobileFollowPersistenceRelease": "7.64.27",
+  "nativeMobileTeamLinkRelease": "7.64.28",
+  "nativeMobileTeamLinkScheme": "waterpolohq://team/<team UUID>",
+  "nativeMobileQrOnboardingRelease": "7.64.28",
+  "teamHubFollowTargetPreservationRelease": "7.64.28"
 }
