@@ -1,3 +1,9 @@
+# WPI 7.64.30 — iOS Physical Device Readiness & Game-Day Freeze Guard
+
+WPI 7.64.30 continues native-app readiness without changing the production scoring path immediately before the September 26 game day. It adds an iOS physical-device/TestFlight readiness diagnostic, explicit signing/bundle-ID decision gates, and a game-day freeze regression that fingerprints the validated scorer, backend, Quick Time, connected configuration, and Final Whistle GroupMe function.
+
+The historical 7.64.8, 7.64.9, and 7.64.11 game-day validators are hardened to recognize current successor releases instead of failing on stale version allowlists. The actual 7.64.11 scorer/backend/Quick Time runtime remains byte-for-byte unchanged. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.29 — Cross-Device Team QR Fix
 
 WPI 7.64.29 corrects the Share Team QR behavior discovered during real-device QA. Team QR codes and copied team-follow links now resolve to the current public HTTPS Water Polo HQ web surface (`https://littlezip12.github.io/CPI/live-following.html?followTeam=<team UUID>`), so a normal iPhone or Android camera can scan and open them even when the native WPHQ app is not installed. The native custom-scheme route `waterpolohq://team/<team UUID>` remains preserved for installed-app/development deep-link testing and future handoff logic, but it is no longer used as the QR payload. When WPHQ moves to its final production domain, this HTTPS share contract can become the Universal Link/App Link surface without changing the QR model again. No database migration or Edge Function deployment is required.

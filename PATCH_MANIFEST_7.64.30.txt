@@ -1,0 +1,26 @@
+WPI 7.64.30 — iOS Physical Device Readiness & Game-Day Freeze Guard
+
+Source baseline:
+- CPI-main - 2026-09-25T212138.883.zip
+- Verified pushed release: 7.64.29 — Cross-Device Team QR Fix
+
+Scope:
+- Continue native iOS/TestFlight readiness without changing the production game-day scorer.
+- Add iOS project diagnostics for app identity, signing mode, version/build, custom URL scheme, and App Store icon.
+- Add a game-day freeze hash guard around the validated scorer, backend, Quick Time, connected configuration, and Final Whistle GroupMe function.
+- Harden the historical 7.64.8, 7.64.9, and 7.64.11 game-day validators so current successor releases can run them directly.
+- Preserve 7.64.29 HTTPS team QR behavior and the existing native auth/team deep-link contracts.
+
+Validation:
+- ./release-check-live-7.64.30 ✅ PASSED
+- npm run mobile:preflight:ios ✅ PASSED in source/container environment; macOS Xcode signing selection remains a manual gate.
+
+Game-day protected runtime:
+- live-game.html unchanged
+- js/live-backend-v7-64-11.js unchanged
+- js/live-game-v7-64-11.js unchanged
+- js/live-quick-time-pad-v7-64-11.js unchanged
+- config/live-sandbox.js unchanged
+- supabase/functions/groupme-post-v7-64-11/index.ts unchanged
+
+No Supabase migration or Edge Function deployment required.

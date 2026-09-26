@@ -1,11 +1,14 @@
 from pathlib import Path
 import json
 ROOT=Path(__file__).resolve().parents[1]
+def version_tuple(value):
+    try: return tuple(int(part) for part in str(value).split("."))
+    except Exception: return (0,0,0)
 def req(cond,msg):
     if not cond: raise AssertionError(msg)
 def read(name): return (ROOT/name).read_text()
 site=json.loads(read('config/site-release.json'))
-req(site.get('version') in {'7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16','7.64.17','7.64.18','7.64.19'},'site version must preserve the 7.64.11 Game-Day Accuracy foundation')
+req(version_tuple(site.get('version')) >= (7,64,11),'site version must preserve the 7.64.11 Game-Day Accuracy foundation')
 for key in ('liveGameParticipationRelease','liveFastScorekeepingRelease','liveCorrectionRecoveryRelease','liveFinalWhistleRelease'):
     req(site.get(key)=='7.64.11',f'{key} missing')
 html=read('live-game.html'); scorer=read('js/live-game-v7-64-11.js'); quick=read('js/live-quick-time-pad-v7-64-11.js'); backend=read('js/live-backend-v7-64-11.js'); edge=read('supabase/functions/groupme-post-v7-64-11/index.ts'); sql=read('supabase/migrations/202609210001_game_day_accuracy_final_whistle.sql')

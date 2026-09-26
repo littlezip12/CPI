@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.30 iOS Physical Device Readiness & Game-Day Freeze Check\n'
+python3 -m py_compile \
+  scripts/test-live-game-day-freeze-v7-64-30.py \
+  scripts/check-mobile-ios-device-readiness-v7-64-30.py \
+  scripts/test-live-game-day-speed-story-v7-64-8.py \
+  scripts/test-live-mobile-simplification-groupme-v7-64-9.py \
+  scripts/test-live-game-day-accuracy-final-whistle-v7-64-11.py
+python3 scripts/test-live-game-day-freeze-v7-64-30.py
+python3 scripts/test-live-game-day-speed-story-v7-64-8.py
+python3 scripts/test-live-mobile-simplification-groupme-v7-64-9.py
+python3 scripts/test-live-game-day-accuracy-final-whistle-v7-64-11.py
+python3 scripts/check-mobile-ios-device-readiness-v7-64-30.py
+./release-check-live-7.64.29
+printf '\nWater Polo HQ 7.64.30 readiness/freeze check passed.\n'

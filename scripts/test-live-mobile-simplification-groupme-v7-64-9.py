@@ -1,10 +1,13 @@
 from pathlib import Path
 import json
 ROOT=Path(__file__).resolve().parents[1]
+def version_tuple(value):
+    try: return tuple(int(part) for part in str(value).split("."))
+    except Exception: return (0,0,0)
 def req(cond,msg):
     if not cond: raise SystemExit(f'FAIL: {msg}')
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version') in {'7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16','7.64.17','7.64.18','7.64.19'},'site version must preserve 7.64.9 or later')
+req(version_tuple(site.get('version')) >= (7,64,9),'site version must preserve 7.64.9 or later')
 for key in ('liveScoringMobileWorkspaceActionsRelease','liveScoringSimplifiedEventEntryRelease','liveGroupMeGameStoryRelease'):
     req(site.get(key)=='7.64.9',f'{key} missing')
 html=(ROOT/'live-game.html').read_text()
