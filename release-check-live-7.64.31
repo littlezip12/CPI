@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.31 Live Delivery & Finalization Reliability Check\n'
+python3 -m py_compile scripts/test-live-delivery-finalization-reliability-v7-64-31.py
+node --check js/live-backend-v7-64-31.js
+node --check js/live-game-v7-64-31.js
+python3 scripts/test-live-delivery-finalization-reliability-v7-64-31.py
+./release-check-live-7.64.30
+printf '\nWater Polo HQ 7.64.31 reliability check passed.\n'

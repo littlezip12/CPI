@@ -1,3 +1,9 @@
+# WPI 7.64.31 — Live Delivery & Finalization Reliability
+
+WPHQ 7.64.31 addresses the production failures observed during the September 26 Champions Cup qualifier games without changing Quick Time or event-entry semantics. A valid guest scorer session now regains raw event visibility needed by Supabase `INSERT ... RETURNING`, so plays persist immediately through scorer handoffs instead of remaining only in browser state. The same game-scoped access continues for the most recent scorer during the existing 30-minute final-recovery window.
+
+Final Whistle now drains any in-flight autosave before writing the authoritative final state. A successor GroupMe Edge Function can scan persisted message-bearing events and idempotently fill missing deliveries, including final quarter/summary messages, so delivery no longer depends solely on one browser's pending-message list. The validated 7.64.11 Quick Time runtime and rollback scorer/backend/function files remain preserved byte-for-byte. Poolside rapid-entry, Back/Cancel, and mobile zoom work are intentionally deferred to 7.64.32.
+
 # WPI 7.64.30 — iOS Physical Device Readiness & Game-Day Freeze Guard
 
 WPI 7.64.30 continues native-app readiness without changing the production scoring path immediately before the September 26 game day. It adds an iOS physical-device/TestFlight readiness diagnostic, explicit signing/bundle-ID decision gates, and a game-day freeze regression that fingerprints the validated scorer, backend, Quick Time, connected configuration, and Final Whistle GroupMe function.

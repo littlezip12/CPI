@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.30",
-  "name": "iOS Physical Device Readiness & Game-Day Freeze Guard",
-  "date": "2026-09-25",
+  "version": "7.64.31",
+  "name": "Live Delivery & Finalization Reliability",
+  "date": "2026-09-26",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Adds iOS physical-device/TestFlight readiness diagnostics and a game-day freeze guard while preserving the validated 7.64.11 scoring runtime, Supabase contracts, GroupMe delivery, and 7.64.29 cross-device team QR behavior. No live scoring, database, or Edge Function behavior changes.",
+  "notes": "Fixes production scorer-handoff reliability: guest scorer event persistence, deterministic Final Whistle completion, and server-backed GroupMe catch-up for missing persisted event deliveries. Poolside rapid-entry/zoom behavior is intentionally deferred to 7.64.32.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -345,5 +345,6 @@
   "nativeMobileQrOnboardingRelease": "7.64.29",
   "teamHubFollowTargetPreservationRelease": "7.64.28",
   "teamShareQrWebFallbackRelease": "7.64.29",
-  "teamSharePublicWebBase": "https://littlezip12.github.io/CPI/"
+  "teamSharePublicWebBase": "https://littlezip12.github.io/CPI/",
+  "liveDeliveryFinalizationReliabilityRelease": "7.64.31"
 }

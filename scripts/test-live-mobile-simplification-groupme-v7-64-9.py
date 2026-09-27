@@ -11,7 +11,7 @@ req(version_tuple(site.get('version')) >= (7,64,9),'site version must preserve 7
 for key in ('liveScoringMobileWorkspaceActionsRelease','liveScoringSimplifiedEventEntryRelease','liveGroupMeGameStoryRelease'):
     req(site.get(key)=='7.64.9',f'{key} missing')
 html=(ROOT/'live-game.html').read_text()
-req(('live-game-v7-64-9.js?v=7.64.9' in html) or ('live-game-v7-64-11.js?v=7.64.11' in html),'7.64.9 scorer behavior must remain loaded through the current successor')
+req(('live-game-v7-64-9.js?v=7.64.9' in html) or ('live-game-v7-64-11.js?v=7.64.11' in html) or ('live-game-v7-64-31.js?v=7.64.31' in html),'7.64.9 scorer behavior must remain loaded through the current successor')
 req(('live-quick-time-pad-v7-64-9.js?v=7.64.9' in html) or ('live-quick-time-pad-v7-64-11.js?v=7.64.11' in html),'7.64.9 Quick Time behavior must remain loaded through the current successor')
 req(('live-game-day-speed-v7-64-9.css?v=7.64.9' in html) or ('live-game-day-accuracy-v7-64-11.css?v=7.64.11' in html),'7.64.9 scorer CSS behavior must remain loaded through the current successor')
 css=(ROOT/'css/live-game-day-speed-v7-64-9.css').read_text()
