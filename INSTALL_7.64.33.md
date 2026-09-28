@@ -34,3 +34,10 @@ After the gate passes, validate on a real browser/iPhone before push:
 
 ## Cache-bust correction
 The public login page now loads `js/live-login-v7-64-33-1.js?v=7.64.33.1` so browsers/CDN caches cannot reuse the earlier 7.64.33 runtime that hid **Create account** after page load. The underlying auth behavior is unchanged; this is an asset-identity correction.
+
+## Live Scores signed-out login CTA correction
+- The public **Live Scores** hero now exposes an explicit **Log in** button for signed-out visitors.
+- The button enters the existing supporter/My Teams authentication flow (`live-login.html?follow=1`).
+- Permanent signed-in sessions hide the redundant Log in button after session resolution.
+- Public score viewing remains account-optional; no team/admin/scorer authority changes.
+- No Supabase migration or Edge Function deployment is required.

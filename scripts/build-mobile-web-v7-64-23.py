@@ -67,6 +67,7 @@ required = [
     "js/wphq-native-auth-v7-64-26.js",
     "js/live-login-v7-64-27.js",
     "js/live-login-v7-64-33-1.js",
+    "js/live-public-auth-cta-v7-64-33.js",
     "js/live-following-v7-64-27.js",
     "css/wphq-native-shell-v7-64-23.css",
 ]

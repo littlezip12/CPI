@@ -2,7 +2,9 @@
 set -euo pipefail
 printf '\nWater Polo HQ 7.64.33 Account Sign-Up & Login UX Check\n'
 node --check js/live-login-v7-64-33-1.js
-python3 -m py_compile scripts/test-wphq-account-auth-ux-v7-64-33.py scripts/test-wphq-native-auth-bridge-v7-64-26.py scripts/test-wphq-native-auth-follow-persistence-v7-64-27.py
+node --check js/live-public-auth-cta-v7-64-33.js
+python3 -m py_compile scripts/test-wphq-account-auth-ux-v7-64-33.py scripts/test-wphq-live-scores-login-cta-v7-64-33.py scripts/test-wphq-native-auth-bridge-v7-64-26.py scripts/test-wphq-native-auth-follow-persistence-v7-64-27.py
 python3 scripts/test-wphq-account-auth-ux-v7-64-33.py
+python3 scripts/test-wphq-live-scores-login-cta-v7-64-33.py
 ./release-check-live-7.64.32
 printf '\nWater Polo HQ 7.64.33 account sign-up & login UX check passed.\n'

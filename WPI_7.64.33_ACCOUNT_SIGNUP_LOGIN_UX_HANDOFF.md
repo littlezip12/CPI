@@ -40,3 +40,10 @@ No database migration or Edge Function deployment is part of 7.64.33. Production
 
 ## Auth cache-bust correction
 The validated public page must load `js/live-login-v7-64-33-1.js?v=7.64.33.1`. This prevents a stale pre-toggle 7.64.33 runtime from hiding Create account after the new HTML paints.
+
+## Live Scores signed-out login CTA correction
+- The public **Live Scores** hero now exposes an explicit **Log in** button for signed-out visitors.
+- The button enters the existing supporter/My Teams authentication flow (`live-login.html?follow=1`).
+- Permanent signed-in sessions hide the redundant Log in button after session resolution.
+- Public score viewing remains account-optional; no team/admin/scorer authority changes.
+- No Supabase migration or Edge Function deployment is required.
