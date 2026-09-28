@@ -9,7 +9,8 @@ def read(rel): return (ROOT/rel).read_text()
 def sha(rel): return hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()
 
 site=json.loads(read('config/site-release.json'))
-req(site.get('version')=='7.64.31','site release must be 7.64.31')
+def ver(value): return tuple(int(x) for x in str(value).split('.'))
+req(ver(site.get('version','0.0.0'))>=ver('7.64.31'),'site release must be 7.64.31 or a validated successor')
 req(site.get('liveDeliveryFinalizationReliabilityRelease')=='7.64.31','reliability release metadata missing')
 html=read('live-game.html')
 backend=read('js/live-backend-v7-64-31.js')
@@ -18,8 +19,8 @@ edge=read('supabase/functions/groupme-post-v7-64-31/index.ts')
 sql=read('supabase/migrations/202609260001_live_delivery_finalization_reliability.sql')
 
 req('js/live-backend-v7-64-31.js?v=7.64.31' in html,'7.64.31 backend must be active')
-req('js/live-game-v7-64-31.js?v=7.64.31' in html,'7.64.31 scorer must be active')
-req('js/live-quick-time-pad-v7-64-11.js?v=7.64.11' in html,'Quick Time must remain on validated 7.64.11 runtime')
+req(('js/live-game-v7-64-31.js?v=7.64.31' in html) or ('js/live-game-v7-64-32.js?v=7.64.32' in html),'7.64.31 scorer or validated 7.64.32 successor must be active')
+req(('js/live-quick-time-pad-v7-64-11.js?v=7.64.11' in html) or ('js/live-quick-time-pad-v7-64-32.js?v=7.64.32' in html),'Quick Time must remain on validated 7.64.11 runtime or approved 7.64.32 throughput successor')
 
 # The validated scorer foundation remains available for rollback/audit.
 for rel,expected in {

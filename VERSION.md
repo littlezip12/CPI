@@ -1,3 +1,9 @@
+# WPI 7.64.32 — Poolside Scoring Throughput & Recovery
+
+WPHQ 7.64.32 addresses the poolside speed/race behavior observed during real game scoring. Once a scorer starts composing a play, incoming realtime state echoes are held instead of replacing the local event-entry UI. Exact-time plays now use an explicit Quick Time input/Record step: typing `632` resolves to `6:32`, but the play is not committed until the scorer taps Record (or presses Enter). “Use current time” fills the value but does not auto-submit.
+
+The scorer can Back out one step or Cancel before commit, routine-stat speed remains event → player → immediate record, and a short duplicate-submit guard prevents rapid double taps from recording the same play twice. Mobile scorer controls enforce iOS-safe input sizing and `touch-action: manipulation` to reduce focus/double-tap zoom while preserving pinch zoom/accessibility. 7.64.31 GroupMe delivery, handoff finalization, backend, migration, and Edge Function behavior remain unchanged. No Supabase deployment is required.
+
 # WPI 7.64.31 — Live Delivery & Finalization Reliability
 
 WPHQ 7.64.31 addresses the production failures observed during the September 26 Champions Cup qualifier games without changing Quick Time or event-entry semantics. A valid guest scorer session now regains raw event visibility needed by Supabase `INSERT ... RETURNING`, so plays persist immediately through scorer handoffs instead of remaining only in browser state. The same game-scoped access continues for the most recent scorer during the existing 30-minute final-recovery window.

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.32 Poolside Scoring Throughput & Recovery Check\n'
+python3 -m py_compile \
+  scripts/test-live-poolside-throughput-v7-64-32.py \
+  scripts/test-live-delivery-finalization-reliability-v7-64-31.py \
+  scripts/test-live-game-day-freeze-v7-64-30.py \
+  scripts/test-live-game-day-speed-story-v7-64-8.py \
+  scripts/test-live-mobile-simplification-groupme-v7-64-9.py \
+  scripts/test-live-game-day-accuracy-final-whistle-v7-64-11.py
+node --check js/live-game-v7-64-32.js
+node --check js/live-quick-time-pad-v7-64-32.js
+python3 scripts/test-live-poolside-throughput-v7-64-32.py
+python3 scripts/test-live-delivery-finalization-reliability-v7-64-31.py
+python3 scripts/test-live-game-day-freeze-v7-64-30.py
+python3 scripts/test-live-game-day-speed-story-v7-64-8.py
+python3 scripts/test-live-mobile-simplification-groupme-v7-64-9.py
+python3 scripts/test-live-game-day-accuracy-final-whistle-v7-64-11.py
+printf '\nWater Polo HQ 7.64.32 throughput & recovery check passed.\n'

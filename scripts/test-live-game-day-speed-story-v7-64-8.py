@@ -11,7 +11,7 @@ req(version_tuple(site.get('version')) >= (7,64,8),'site version must preserve 7
 for key in ('liveScoringGameDayCapAssignmentRelease','liveScoringQuickTimePadRelease','liveScoringGameStoryRelease'):
     req(site.get(key) in {'7.64.8','7.64.9','7.64.10','7.64.11','7.64.12','7.64.13','7.64.14','7.64.15','7.64.16','7.64.17','7.64.18','7.64.19'},f'{key} missing')
 html=(ROOT/'live-game.html').read_text()
-req(('live-quick-time-pad-v7-64-8.js?v=7.64.8' in html) or ('live-quick-time-pad-v7-64-9.js?v=7.64.9' in html) or ('live-quick-time-pad-v7-64-11.js?v=7.64.11' in html),'Quick Time Pad must load')
+req(('live-quick-time-pad-v7-64-8.js?v=7.64.8' in html) or ('live-quick-time-pad-v7-64-9.js?v=7.64.9' in html) or ('live-quick-time-pad-v7-64-11.js?v=7.64.11' in html) or ('live-quick-time-pad-v7-64-32.js?v=7.64.32' in html),'Quick Time Pad must load through a validated successor')
 req(('live-game-day-speed-v7-64-8.css?v=7.64.8' in html) or ('live-game-day-speed-v7-64-9.css?v=7.64.9' in html) or ('live-game-day-accuracy-v7-64-11.css?v=7.64.11' in html),'game-day speed CSS must load')
 req('saveCapsForEventButton' in html,'event cap control missing')
 qtp=(ROOT/('js/live-quick-time-pad-v7-64-11.js' if version_tuple(site.get('version')) >= (7,64,11) else ('js/live-quick-time-pad-v7-64-9.js' if version_tuple(site.get('version')) >= (7,64,9) else 'js/live-quick-time-pad-v7-64-8.js'))).read_text()

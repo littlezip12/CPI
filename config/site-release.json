@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.31",
-  "name": "Live Delivery & Finalization Reliability",
-  "date": "2026-09-26",
+  "version": "7.64.32",
+  "name": "Poolside Scoring Throughput & Recovery",
+  "date": "2026-09-27",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Fixes production scorer-handoff reliability: guest scorer event persistence, deterministic Final Whistle completion, and server-backed GroupMe catch-up for missing persisted event deliveries. Poolside rapid-entry/zoom behavior is intentionally deferred to 7.64.32.",
+  "notes": "Hardens poolside scoring speed after production game-day feedback: event-entry drafts are insulated from realtime echo renders, exact-time plays require explicit confirmation, Back/Cancel recovery is available before commit, duplicate submits are blocked, and mobile focus/double-tap zoom behavior is reduced without disabling pinch zoom. 7.64.31 GroupMe/finalization reliability remains unchanged.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -346,5 +346,10 @@
   "teamHubFollowTargetPreservationRelease": "7.64.28",
   "teamShareQrWebFallbackRelease": "7.64.29",
   "teamSharePublicWebBase": "https://littlezip12.github.io/CPI/",
-  "liveDeliveryFinalizationReliabilityRelease": "7.64.31"
+  "liveDeliveryFinalizationReliabilityRelease": "7.64.31",
+  "livePoolsideScoringThroughputRelease": "7.64.32",
+  "liveScoringDraftIsolationRelease": "7.64.32",
+  "liveScoringEntryRecoveryRelease": "7.64.32",
+  "liveScoringDuplicateProtectionRelease": "7.64.32",
+  "liveScoringMobileZoomPolishRelease": "7.64.32"
 }

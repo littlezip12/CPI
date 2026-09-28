@@ -12,9 +12,9 @@ req(version_tuple(site.get('version')) >= (7,64,11),'site version must preserve 
 for key in ('liveGameParticipationRelease','liveFastScorekeepingRelease','liveCorrectionRecoveryRelease','liveFinalWhistleRelease'):
     req(site.get(key)=='7.64.11',f'{key} missing')
 html=read('live-game.html'); scorer=read('js/live-game-v7-64-11.js'); quick=read('js/live-quick-time-pad-v7-64-11.js'); backend=read('js/live-backend-v7-64-11.js'); edge=read('supabase/functions/groupme-post-v7-64-11/index.ts'); sql=read('supabase/migrations/202609210001_game_day_accuracy_final_whistle.sql')
-req('live-game-v7-64-11.js?v=7.64.11' in html or 'live-game-v7-64-31.js?v=7.64.31' in html,'7.64.11 scorer foundation or approved reliability successor must load')
+req('live-game-v7-64-11.js?v=7.64.11' in html or 'live-game-v7-64-31.js?v=7.64.31' in html or 'live-game-v7-64-32.js?v=7.64.32' in html,'7.64.11 scorer foundation or approved successor must load')
 req('live-backend-v7-64-11.js?v=7.64.11' in html or 'live-backend-v7-64-31.js?v=7.64.31' in html,'7.64.11 backend foundation or approved reliability successor must load')
-req('live-quick-time-pad-v7-64-11.js?v=7.64.11' in html,'7.64.11 Quick Time must load')
+req('live-quick-time-pad-v7-64-11.js?v=7.64.11' in html or 'live-quick-time-pad-v7-64-32.js?v=7.64.32' in html,'7.64.11 Quick Time foundation or approved 7.64.32 successor must load')
 req('participationReviewDialog' in html and 'Confirm who played' in html,'participation final review missing')
 req('editLastInlineButton' in html and 'editLastPlayDialog' in html,'Edit Last Play missing')
 req('undoQuarterEndButton' in html and 'undoPostPeriodEndButton' in html,'quarter-end recovery controls missing')

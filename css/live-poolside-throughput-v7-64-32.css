@@ -1,0 +1,30 @@
+/* WPHQ 7.64.32 — Poolside Scoring Throughput & Recovery */
+.wphq-event-draft-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;grid-column:1/-1}
+.wphq-event-draft-actions[hidden]{display:none!important}
+.wphq-event-draft-actions button{min-height:44px;border:1px solid #cbd5e1;border-radius:12px;background:#fff;color:#334155;font-weight:850}
+.wphq-event-draft-actions #eventCancelButton{color:#64748b}
+
+.wpi-quick-time-display input{width:100%;box-sizing:border-box;border:0;background:transparent;text-align:center;color:#0f172a;font:900 2.8rem/1.05 Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums;outline:none;padding:4px 8px}
+.wpi-quick-time-display input::placeholder{color:#94a3b8;opacity:.72}
+.wpi-quick-time-actions{display:grid;grid-template-columns:minmax(96px,.7fr) minmax(0,1.7fr);gap:9px}
+.wpi-quick-time-actions>button{min-height:54px;border-radius:14px;font-weight:900;font-size:1rem}
+.wpi-quick-time-actions>[data-qtp-back-step]{border:1px solid #cbd5e1;background:#fff;color:#334155}
+.wpi-quick-time-record:disabled{opacity:.48;box-shadow:none;cursor:not-allowed}
+
+/* Prevent rapid scorer taps from being interpreted as browser double-tap zoom.
+   `manipulation` preserves pan + pinch zoom, but removes the double-tap gesture.
+   Apply it at the page root so rapid taps that cross adjacent scorer controls are
+   still treated as one non-zooming interaction sequence on iOS Safari/WebView. */
+html,body{touch-action:manipulation}
+#eventForm,.wpi-quick-time-dialog{touch-action:manipulation}
+#eventForm button,#eventForm select,#eventForm input,.wpi-quick-time-dialog button,.wpi-quick-time-dialog select,.wpi-quick-time-dialog input{touch-action:manipulation}
+
+@media(max-width:720px){
+  #eventForm input,#eventForm select,.wpi-quick-time-dialog input,.wpi-quick-time-dialog select{font-size:16px!important}
+  .wpi-quick-time-display input{font-size:44px!important;min-height:58px}
+  .wpi-quick-time-dialog{width:min(96vw,430px);max-height:94dvh}
+  .wpi-quick-time-shell{padding:14px;gap:11px;max-height:94dvh;overflow:auto;overscroll-behavior:contain}
+  .wpi-quick-time-grid{gap:7px}
+  .wpi-quick-time-grid button,.wpi-quick-time-shortcuts button{min-height:46px}
+  .wphq-event-draft-actions{position:sticky;bottom:72px;z-index:14;background:rgba(255,255,255,.96);padding:4px 0}
+}

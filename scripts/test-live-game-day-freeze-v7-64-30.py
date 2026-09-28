@@ -23,10 +23,14 @@ if not (
 if not (
     'js/live-game-v7-64-11.js?v=7.64.11' in html
     or 'js/live-game-v7-64-31.js?v=7.64.31' in html
+    or 'js/live-game-v7-64-32.js?v=7.64.32' in html
 ):
     raise SystemExit('FAIL: live-game.html no longer loads the validated 7.64.11 scorer or an approved reliability successor')
-if 'js/live-quick-time-pad-v7-64-11.js?v=7.64.11' not in html:
-    raise SystemExit('FAIL: Quick Time runtime changed during reliability work')
+if not (
+    'js/live-quick-time-pad-v7-64-11.js?v=7.64.11' in html
+    or 'js/live-quick-time-pad-v7-64-32.js?v=7.64.32' in html
+):
+    raise SystemExit('FAIL: Quick Time runtime is neither the protected 7.64.11 foundation nor the approved 7.64.32 throughput successor')
 site=json.loads((ROOT/'config/site-release.json').read_text())
 for key, expected in {
     'liveFastScorekeepingRelease':'7.64.11',
