@@ -67,6 +67,7 @@ required = [
     "js/wphq-native-auth-v7-64-26.js",
     "js/wphq-native-team-links-v7-64-28.js",
     "js/live-login-v7-64-27.js",
+    "js/live-login-v7-64-33-1.js",
     "js/live-following-v7-64-27.js",
     "js/live-team-share-v7-64-28.js",
     "js/team-hub-v7-64-28.js",

@@ -1,3 +1,9 @@
+# WPI 7.64.33 — Account Sign-Up & Login UX
+
+WPHQ 7.64.33 makes email/password the normal permanent-account flow for supporters and returning members. Team-follow onboarding now offers **Sign up** and **Already a member? Log in** instead of forcing a Magic Link every time. New accounts use email + password and preserve the existing email-verification round trip; returning members use password login and the existing persistent Supabase session.
+
+Magic Link remains available as a secondary existing-account sign-in option with `shouldCreateUser: false`, so it cannot silently create a new supporter account. QR/follow targets survive password signup/login and the native verification callback. Forgot Password remains intact. No database migration or Edge Function is introduced. The 7.64.31 delivery/finalization layer and 7.64.32 poolside scorer runtime remain unchanged.
+
 # WPI 7.64.32 — Poolside Scoring Throughput & Recovery
 
 WPHQ 7.64.32 addresses the poolside speed/race behavior observed during real game scoring. Once a scorer starts composing a play, incoming realtime state echoes are held instead of replacing the local event-entry UI. Exact-time plays now use an explicit Quick Time input/Record step: typing `632` resolves to `6:32`, but the play is not committed until the scorer taps Record (or presses Enter). “Use current time” fills the value but does not auto-submit.

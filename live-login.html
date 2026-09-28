@@ -24,21 +24,21 @@
   <main class="live-login-shell" id="liveLoginApp">
     <section class="live-login-brand">
       <p class="live-sandbox-kicker">Water Polo HQ</p>
-      <h1>Sign in to Water Polo HQ</h1>
+      <h1>Water Polo HQ account</h1>
       <p>Team members use this private entry point to follow games. Scoring and administration access is granted by a Team Owner or Admin after registration.</p>
       <span class="live-sandbox-badge">Private team access</span>
     </section>
 
     <section class="live-login-card" aria-labelledby="loginHeading">
       <div class="live-auth-tabs" role="tablist" aria-label="Account access">
-        <button id="signInTab" type="button" role="tab" aria-selected="true">Sign in</button>
+        <button id="signInTab" type="button" role="tab" aria-selected="true">Log in</button>
         <button id="signUpTab" type="button" role="tab" aria-selected="false">Create account</button>
       </div>
 
       <div>
         <p class="live-section-kicker">Secure team access</p>
-        <h2 id="loginHeading">Open the scoring console</h2>
-        <p id="loginExplanation" class="live-panel-help">Use the team account assigned to you.</p>
+        <h2 id="loginHeading">Log in to Water Polo HQ</h2>
+        <p id="loginExplanation" class="live-panel-help">Log in with your email and password, or sign up for a new account.</p>
       </div>
 
       <form id="loginForm" class="live-login-form">
@@ -54,8 +54,9 @@
         <label id="confirmPasswordLabel" hidden>Confirm password
           <input id="confirmPassword" type="password" autocomplete="new-password" minlength="12">
         </label>
-        <button id="loginSubmit" type="submit">Sign in</button>
+        <button id="loginSubmit" type="submit">Log in</button>
         <button id="forgotPasswordButton" class="live-text-button" type="button">Forgot password?</button>
+        <button id="magicLinkButton" class="live-text-button" type="button">Email me a sign-in link instead</button>
         <div id="turnstileContainer" hidden></div>
         <p id="signupDataNotice" class="live-panel-help" hidden>Water Polo HQ stores only the account information needed to operate access: your email, optional display name, registration date, email-verification status and last sign-in timestamp. It is not public and creating an account does not subscribe you to marketing. <a href="live-privacy.html">Privacy details</a>.</p>
         <p id="loginMessage" class="live-validation-message" role="status"></p>
@@ -76,7 +77,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.20"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-login-v7-64-27.js?v=7.64.27"></script>
+  <script src="js/live-login-v7-64-33-1.js?v=7.64.33.1"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/live-pwa-v7-64-23.js?v=7.64.23"></script>

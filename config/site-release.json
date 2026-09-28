@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.32",
-  "name": "Poolside Scoring Throughput & Recovery",
+  "version": "7.64.33",
+  "name": "Account Sign-Up & Login UX",
   "date": "2026-09-27",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Hardens poolside scoring speed after production game-day feedback: event-entry drafts are insulated from realtime echo renders, exact-time plays require explicit confirmation, Back/Cancel recovery is available before commit, duplicate submits are blocked, and mobile focus/double-tap zoom behavior is reduced without disabling pinch zoom. 7.64.31 GroupMe/finalization reliability remains unchanged.",
+  "notes": "Makes email/password the default Water Polo HQ supporter account flow, keeps initial email verification and persistent sessions, preserves follow targets across browser/native auth, and retains Magic Link only as a secondary existing-account sign-in path with account creation disabled. No Supabase migration or Edge Function is required.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -351,5 +351,8 @@
   "liveScoringDraftIsolationRelease": "7.64.32",
   "liveScoringEntryRecoveryRelease": "7.64.32",
   "liveScoringDuplicateProtectionRelease": "7.64.32",
-  "liveScoringMobileZoomPolishRelease": "7.64.32"
+  "liveScoringMobileZoomPolishRelease": "7.64.32",
+  "liveAccountAuthUxRelease": "7.64.33",
+  "livePasswordFirstAuthRelease": "7.64.33",
+  "liveSecondaryMagicLinkRelease": "7.64.33"
 }

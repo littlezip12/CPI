@@ -13,7 +13,8 @@ def function_block(text, start_marker, end_marker):
     return text[start:end]
 
 site=json.loads(read('config/site-release.json'))
-req(site.get('version')=='7.64.32','site release must be 7.64.32')
+def ver(value): return tuple(int(x) for x in str(value).split('.'))
+req(ver(site.get('version','0.0.0'))>=ver('7.64.32'),'site release must be 7.64.32 or a validated successor')
 for key in ('livePoolsideScoringThroughputRelease','liveScoringDraftIsolationRelease','liveScoringEntryRecoveryRelease','liveScoringDuplicateProtectionRelease','liveScoringMobileZoomPolishRelease'):
     req(site.get(key)=='7.64.32',f'{key} metadata missing')
 

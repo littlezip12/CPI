@@ -26,7 +26,7 @@ for token in ['friendlyAuthError','Too many sign-in emails were requested','This
 for stale in ['Enter your email. WPI will send','Create your WPI Live account','Open WPI Live','read-only WPI game feed']:
     req(stale not in login,f'active login runtime still exposes stale copy: {stale}')
 page=(ROOT/'live-login.html').read_text()
-req('js/live-login-v7-64-27.js?v=7.64.27' in page,'login page does not load 7.64.27 runtime')
+req(any(token in page for token in ['js/live-login-v7-64-27.js?v=7.64.27','js/live-login-v7-64-33.js?v=7.64.33','js/live-login-v7-64-33-1.js?v=7.64.33.1']),'login page does not load approved 7.64.27+ auth runtime')
 req('Water Polo HQ stores only the account information' in page,'supporter data notice is not WPHQ branded')
 req('Water Polo HQ directory' in page,'supporter directory copy is not WPHQ branded')
 
@@ -52,14 +52,14 @@ req('create or replace function public.live_set_team_follow_v2' in privacy,'perm
 
 builder_path=ROOT/('scripts/build-mobile-web-v7-64-28.py' if (ROOT/'scripts/build-mobile-web-v7-64-28.py').exists() else 'scripts/build-mobile-web-v7-64-23.py')
 builder=builder_path.read_text()
-for token in ['"js/live-login-v7-64-27.js"','"js/live-following-v7-64-27.js"']:
-    req(token in builder,f'mobile builder missing {token}')
+req(any(token in builder for token in ['"js/live-login-v7-64-27.js"','"js/live-login-v7-64-33.js"','"js/live-login-v7-64-33-1.js"']),'mobile builder missing approved login successor')
+req('"js/live-following-v7-64-27.js"' in builder,'mobile builder missing live-following-v7-64-27.js')
 build=subprocess.run([sys.executable,str(builder_path)],cwd=ROOT,text=True,capture_output=True)
 if build.returncode:
     errors.append('mobile bundle build failed: '+(build.stdout+build.stderr).strip())
 else:
     www=ROOT/'mobile/www'
-    req('js/live-login-v7-64-27.js?v=7.64.27' in (www/'live-login.html').read_text(),'generated native login page missing 7.64.27 runtime')
+    req(any(token in (www/'live-login.html').read_text() for token in ['js/live-login-v7-64-27.js?v=7.64.27','js/live-login-v7-64-33.js?v=7.64.33','js/live-login-v7-64-33-1.js?v=7.64.33.1']),'generated native login page missing approved login runtime')
     req('js/live-following-v7-64-27.js?v=7.64.27' in (www/'live-following.html').read_text(),'generated native My Teams page missing 7.64.27 runtime')
 
 if errors:
