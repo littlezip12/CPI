@@ -1,3 +1,9 @@
+# WPI 7.64.34 — Organization Insights Identity & Team-Scoped Season Stats
+
+WPHQ 7.64.34 fixes Organization Insights player duplication caused by season roster versioning. Historical game analytics store the concrete `live_players.id` used by each game roster; the new Organization Insights RPC resolves those roster-version UUIDs back to the stable `client_player_id` before aggregation. Player totals are grouped by **team + stable player identity + selected season**, so all finalized tournaments/weekends and roster versions for the same team roll into one row while the same child on A/B/C teams remains separate.
+
+The Organization Insights UI now presents **Season player totals by team**, groups players beneath each team, and no longer uses cap numbers as analytics identity/display. Existing event cards remain event-specific context; team/player totals are season-running totals. This release introduces `live_organization_insights_overview_v2` via one Supabase migration. No Edge Function is added, and 7.64.31 delivery/finalization, 7.64.32 scorer behavior, and 7.64.33 auth behavior are unchanged.
+
 # WPI 7.64.33 — Account Sign-Up & Login UX
 
 WPHQ 7.64.33 makes email/password the normal permanent-account flow for supporters and returning members. Team-follow onboarding now offers **Sign up** and **Already a member? Log in** instead of forcing a Magic Link every time. New accounts use email + password and preserve the existing email-verification round trip; returning members use password login and the existing persistent Supabase session.

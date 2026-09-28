@@ -11,7 +11,7 @@ def semver_at_least(v,f):
     except:return False
 
 site=json.loads((ROOT/'config/site-release.json').read_text())
-req(site.get('version')=='7.64.33','site release must be 7.64.33')
+req(semver_at_least(site.get('version'),'7.64.33'),'site release must be 7.64.33 or a successor')
 for key in ['liveAccountAuthUxRelease','livePasswordFirstAuthRelease','liveSecondaryMagicLinkRelease']:
     req(site.get(key)=='7.64.33',f'{key} marker missing')
 version=(ROOT/'VERSION.md').read_text()
@@ -19,8 +19,8 @@ req('# WPI 7.64.33 — Account Sign-Up & Login UX' in version,'VERSION.md missin
 
 package=json.loads((ROOT/'package.json').read_text())
 lock=json.loads((ROOT/'package-lock.json').read_text())
-req(package.get('version')=='7.64.33','package.json version must be 7.64.33')
-req(lock.get('version')=='7.64.33' and lock.get('packages',{}).get('',{}).get('version')=='7.64.33','package-lock version must be 7.64.33')
+req(semver_at_least(package.get('version'),'7.64.33'),'package.json version must be 7.64.33 or a successor')
+req(semver_at_least(lock.get('version'),'7.64.33') and semver_at_least(lock.get('packages',{}).get('',{}).get('version'),'7.64.33'),'package-lock version must be 7.64.33 or a successor')
 
 page=(ROOT/'live-login.html').read_text()
 for token in ['>Log in<','>Create account<','Email me a sign-in link instead','minlength="12"','js/live-login-v7-64-33-1.js?v=7.64.33.1']:

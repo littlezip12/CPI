@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.33",
-  "name": "Account Sign-Up & Login UX",
+  "version": "7.64.34",
+  "name": "Organization Insights Identity & Team-Scoped Season Stats",
   "date": "2026-09-27",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Makes email/password the default Water Polo HQ supporter account flow, keeps initial email verification and persistent sessions, preserves follow targets across browser/native auth, and retains Magic Link only as a secondary existing-account sign-in path with account creation disabled. No Supabase migration or Edge Function is required.",
+  "notes": "Organization Insights now resolves historical roster-version player UUIDs to stable player identity, aggregates season totals once per player per team across tournaments/weekends, keeps A/B/C team assignments separate, and removes cap numbers from analytics identity/display. Adds versioned live_organization_insights_overview_v2; requires one Supabase migration and no Edge Function.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.54.17",
   "tournamentEvidenceRelease": "7.45.1",
@@ -354,5 +354,8 @@
   "liveScoringMobileZoomPolishRelease": "7.64.32",
   "liveAccountAuthUxRelease": "7.64.33",
   "livePasswordFirstAuthRelease": "7.64.33",
-  "liveSecondaryMagicLinkRelease": "7.64.33"
+  "liveSecondaryMagicLinkRelease": "7.64.33",
+  "liveOrganizationInsightsStableIdentityRelease": "7.64.34",
+  "liveOrganizationInsightsTeamSeasonRelease": "7.64.34",
+  "liveOrganizationInsightsRosterVersionMergeRelease": "7.64.34"
 }

@@ -69,6 +69,8 @@ required = [
     "js/live-login-v7-64-27.js",
     "js/live-login-v7-64-33-1.js",
     "js/live-public-auth-cta-v7-64-33.js",
+    "js/live-organization-insights-v7-64-34.js",
+    "css/live-organization-insights-v7-64-34.css",
     "js/live-following-v7-64-27.js",
     "js/live-team-share-v7-64-28.js",
     "js/team-hub-v7-64-28.js",
