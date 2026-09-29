@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.35",
-  "name": "Organization Insights Identity & Team-Scoped Season Stats",
-  "date": "2026-09-27",
+  "version": "7.64.36",
+  "name": "Evan Cousineau Schedule + JO-Style Journey Routing",
+  "date": "2026-09-28",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Organization Insights now resolves historical roster-version player UUIDs to stable player identity, aggregates season totals once per player per team across tournaments/weekends, keeps A/B/C team assignments separate, and removes cap numbers from analytics identity/display. Adds versioned live_organization_insights_overview_v2; requires one Supabase migration and no Edge Function.",
+  "notes": "Publishes all 13 supplied 2026 Evan Cousineau Memorial Cup divisions (335 scheduled games, 162 team entries, 18 venues) from the official OneDrive workbook exports. Reuses the proven JO journey model: 376 bracket-dependent sides retain internal source references but public UI displays actual source-backed candidate teams, possible paths, and automatically resolves winner/loser and group-placement routes once official results exist. OneDrive is schedule authority; the official score/result feed remains a separate replaceable overlay pending identification of the best live source. No Supabase migration or Edge Function.",
   "identityRelease": "7.52.13",
-  "tournamentDataRelease": "7.54.17",
+  "tournamentDataRelease": "7.64.36",
   "tournamentEvidenceRelease": "7.45.1",
   "tournamentHealthRelease": "7.45.1",
   "rankingReviewRelease": "7.52.2",
@@ -17,7 +17,7 @@
   "tournamentOperationsRelease": "7.48.0",
   "tournamentArchiveRelease": "7.49.1",
   "historicalProfilesRelease": "7.49.1",
-  "tournamentUIRelease": "7.54.17",
+  "tournamentUIRelease": "7.64.36",
   "logoLibraryRelease": "7.52.10",
   "logoDeliveryRelease": "7.52.15",
   "joJourneyRelease": "7.52.9",
@@ -359,5 +359,7 @@
   "liveOrganizationInsightsTeamSeasonRelease": "7.64.34",
   "liveOrganizationInsightsRosterVersionMergeRelease": "7.64.34",
   "liveTeamStatsStableSeasonLeaderIdentityRelease": "7.64.35",
-  "liveTeamStatsRosterVersionMergeRelease": "7.64.35"
+  "liveTeamStatsRosterVersionMergeRelease": "7.64.35",
+  "evanCousineau2026ScheduleRelease": "7.64.36",
+  "tournamentLiveRefreshRelease": "7.64.36"
 }

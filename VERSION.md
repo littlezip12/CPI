@@ -1,3 +1,13 @@
+# WPI 7.64.36 — Evan Cousineau Schedule + JO-Style Journey Routing
+
+WPHQ 7.64.36 publishes the current source-backed **2026 Evan Cousineau Memorial Cup** schedule for October 3–4, 2026 from the 13 official workbook tabs supplied on September 28. The release contains **335 scheduled games, 162 tournament team entries, and 18 venues/pools** across 10U, 12U, 14U and HS Girls divisions. No scores or results are inferred: all 335 games remain scheduled with empty scores at this source snapshot.
+
+This release deliberately reuses the proven Junior Olympics journey model rather than exposing raw bracket codes. Internally, references such as `W#19`, `L#20`, `1stA`, `W#B1/B4`, and `G1(1stA)` remain intact for routing; publicly, Water Polo HQ translates them into **actual source-backed candidate team names**. All **376 bracket-dependent participant sides** currently resolve to non-empty candidate sets. When official results become available, winner/loser references and completed round-robin group placements resolve to the actual team automatically without changing game IDs or the public ECC URL.
+
+The OneDrive workbook is the current **schedule authority**. The viewer checks the repository event bundle every 60 seconds with `cache: no-store`, while the official score/result source is intentionally a separate, replaceable overlay that remains pending until the tournament's best live-results source is known. This avoids binding ECC to the wrong live feed while keeping the schedule, route graph, and stable game identity ready for results ingestion.
+
+Lamorinda 14U Boys A has two confirmed Saturday Group A games (Game 1 vs SoCal Patriots Gold and Game 7 vs San Diego Dons Red). The viewer also exposes its source-backed possible Sunday paths for **1stA / 2ndA / 3rdA** and downstream placement games using team names rather than bracket shorthand. A runtime regression simulates posted results to verify that a `W#` reference resolves to the actual game winner and that a completed Group A standings table resolves `2ndA` into Lamorinda A. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.35 — Team Stats Stable Season Leaders
 
 WPHQ 7.64.35 fixes the remaining duplicate player rows on **Team Stats → Season Leaders**. The older Team Insights overview RPC still exposes historical `live_players.id` values from immutable roster versions, so the same player could appear once for BAWPL and again for Champions Cup even though both records belong to the same 14U Boys A team.

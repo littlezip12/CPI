@@ -1,0 +1,87 @@
+WPHQ 7.64.36 — Evan Cousineau Schedule + JO-Style Journey Routing
+Baseline: CPI-main - 2026-09-28T222710.224.zip (WPHQ 7.64.35)
+
+Scope:
+- Publish 13 supplied 2026 ECC divisions / 335 scheduled games / 18 venues.
+- Reuse the proven JO journey model for all ECC bracket routing.
+- Keep raw W#/L#/group references internal while public UI shows source-backed candidate team names.
+- Verify all 376 bracket-dependent participant sides have candidate teams.
+- Resolve winner/loser and ordinal group placements to actual teams when official results are present.
+- Treat OneDrive as schedule authority; keep official score/result ingestion as a replaceable pending overlay.
+- Explicitly prevent the abandoned parser defect that mapped TIME/LOCATION into W/L advancement.
+- No Supabase migration or Edge Function.
+
+Files:
+9a7d4d489ecad4396f506c928cfbf0bd007419ec87682e1067fb85a8ccf409c9  INSTALL_7.64.36.md
+55fb2e46f6292b2d3147fe8350de40e6e7daaad1c3fcbebfc4f513fab6b89930  VERSION.md
+a0a8c656d70c6ddad98154a5a18ada17435dd0fea1c0235a1584d5ad174e0a44  WPI_7.64.36_ECC_SCHEDULE_PUBLICATION_HANDOFF.md
+084383c6cf85e435114530644215ad89a78317a93e9d9ad33fc68a621cec260e  config/site-release.json
+3ec2bf3fa4eb0335f35238dcf3d2e535573625ebed7e7e50091283f1102a3b05  css/tournament-platform-v7-54-0.css
+20f54bb474ee65ec0a7fed2ade4605c35285cdbf6ba73f18488e02545ed73c8f  data/live/tournament-schedule-index.json
+2acab147487084f1529e33a9da8c387abb0f69864dd4763dba8d8b087debdcaa  data/tournaments/archive/2026-evan-cousineau-memorial-cup.json
+674114d7851bba643f8e5a4cfce6b29b63a5d1bc9c4df545c8dc9e03eb24a038  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/10u-boys.json
+5eb472ad60ea8b96f0fa212b5b16861f9e014ddb25439948de2340665490bc54  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/10u-coed-platinum.json
+8662d42c9d349a1ba5645134e4b16a4b9d9f2cd9409c87398b0cb619946f00cc  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/10u-girls-coed-gold.json
+f6fd1ea5e2c7a6102ca34d859d4f18a1aed8c33e54c95432b0688402ed936e4a  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/12u-boys-gold.json
+b7d586ce2c767c7249a8f341b6d4f7c0f2b9672cbfcd56d06d2bd06497d769a8  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/12u-boys-platinum.json
+752a918b996c5c0b5784b077799e3837a9ffc7cbe38ffdba57571d9f288cc9d5  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/12u-coed-boys-silver.json
+5dc7585c00abab3d06bd454e73a4a56484425353e1bbdb7bd2543538e4d0e4db  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/12u-girls.json
+908c4c1f6f4c27fd20b3a2a588ae0a71bcdc9350fb29297b5d0db67637a1f26c  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/14u-boys-gold.json
+e4d7c42193eef5cac71876c32a3647c6d9e947258a8fee6cfb584235b2f9fe56  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/14u-boys-platinum.json
+fe99047f554d8ff1f68edd5b51d39a97df4de8f12645e231d5be9aff2bd59e40  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/14u-coed-boys-silver.json
+75869885318cbba91b7406f24f8c5237dfaac3c997de6ef6b78770dfa4f10277  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/14u-girls-gold.json
+13d1a1bad23f546250eaeefee19918f29fbf829b8ee0b4ad6cf0f03fb0f4e9fe  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/14u-girls-platinum.json
+f4d5d54b2da30a7e9586801106942096cd9a79232b21964a78dc88dd3801a713  data/tournaments/normalized/2026-evan-cousineau-memorial-cup/hs-girls.json
+57ff3aac5c47ddb02702f7be133f7c993a05254beb24611ec4a2027b0d236bbd  data/tournaments/normalized/manifest.json
+5b144c648f07028548b5d597f0e15b0aff3b0d49d405ce81c96f1c1864098c12  data/tournaments/platform/events/2026-evan-cousineau-memorial-cup.json
+5e2dd3e3c3f3a104b8937e706354c20fdfdfa3a891e49a20cf3f10eaa525ca92  data/tournaments/platform/registry.json
+6e9c2d188a9de4dbb0d6fec04ffd50e36e56af3a7926497bb7b53e8ee2a7313a  data/tournaments/platform/runtime.js
+e6fbd7c235c96dccef09d238c6ae7d9e4cc0a08c0a413fb29cc06870fbab158b  data/tournaments/public-hub.json
+1b6ec07aa408c33f126b44e8690d89d530ecd8ccf8e3360489b71fa21485735b  data/tournaments/qa/2026-evan-cousineau-memorial-cup/10u-boys.json
+d7f83eb9135b35a569b5ec5a9de7f50b3281aabf298cb56ce09f2990ea27ce5e  data/tournaments/qa/2026-evan-cousineau-memorial-cup/10u-coed-platinum.json
+c7e8a84dc2ae6e470bd36b21f298ac9db865cfd25ab4f8593eb3639a7066d2f2  data/tournaments/qa/2026-evan-cousineau-memorial-cup/10u-girls-coed-gold.json
+34e07badd5536da26c9b45c9085e55a9cd30f247a9b1b7a243d5e7299d91ffdd  data/tournaments/qa/2026-evan-cousineau-memorial-cup/12u-boys-gold.json
+143fac4720b404adb220a7f2b81487b35726cf805263addc791bee9fe6c8c0fe  data/tournaments/qa/2026-evan-cousineau-memorial-cup/12u-boys-platinum.json
+8b419b4d52dd62dd9421642e0988573f61be459a261c6103482d872848e8a82e  data/tournaments/qa/2026-evan-cousineau-memorial-cup/12u-coed-boys-silver.json
+32932b659cad34b0df2f71ba5cf90a07adf9585474e9b05a32b02f0660886285  data/tournaments/qa/2026-evan-cousineau-memorial-cup/12u-girls.json
+ba1c4863e9615345441e6d141443b8020934d93635a720da9c6521b07bebae60  data/tournaments/qa/2026-evan-cousineau-memorial-cup/14u-boys-gold.json
+c6e142849221f93ef984af0009228b1cce25baa8d129629eb11170b371bf4086  data/tournaments/qa/2026-evan-cousineau-memorial-cup/14u-boys-platinum.json
+9d31909380c2d8211f595df23711e714d46cbdfe1f0bd7ff01c2e856418ec8ab  data/tournaments/qa/2026-evan-cousineau-memorial-cup/14u-coed-boys-silver.json
+ea6a0f565a0fb93f6eca09ad7512568f861974f83f8d8ff9e1a970c1cdaf4278  data/tournaments/qa/2026-evan-cousineau-memorial-cup/14u-girls-gold.json
+33b77eb60c3eadc34512e94add7fba8a31784406532dec253dc630ad065b7768  data/tournaments/qa/2026-evan-cousineau-memorial-cup/14u-girls-platinum.json
+af3b467b22f6b93683dcb31b9413ea172f5a9d890899cdfcc51907f29359a7d8  data/tournaments/qa/2026-evan-cousineau-memorial-cup/hs-girls.json
+4df74c90e4517b8a405a52d96264226ffb1ea6b73512c03bce7afb09a6c3740b  data/tournaments/raw/2026-evan-cousineau-memorial-cup/10u-boys.csv
+e8fb66e838a41ba456d0f39435867c0e1301c63aad1def2c125d88c92267f907  data/tournaments/raw/2026-evan-cousineau-memorial-cup/10u-coed-platinum.csv
+d092fb24794baa74f8a7bbb306639b0a8a1be06969610e7d6075e00923e6a183  data/tournaments/raw/2026-evan-cousineau-memorial-cup/10u-girls-coed-gold.csv
+4e02c01e13f63966bb5d7f2f5713f11668e56a677204aae048b48878af20f2de  data/tournaments/raw/2026-evan-cousineau-memorial-cup/12u-boys-gold.csv
+87259b5f7fe2c0b45f1b2b32cb85d52594bcb7e30039683a2a67c568ba392eec  data/tournaments/raw/2026-evan-cousineau-memorial-cup/12u-boys-platinum.csv
+0da20d9e2e52f3ceebcd5b43dbe5e8076e256e65aa99e34ce04a80393c027b89  data/tournaments/raw/2026-evan-cousineau-memorial-cup/12u-coed-boys-silver.csv
+a1c3d5a1d981d296c8f1981f281483acbfc42e54a4c226875b4bea67381e3a33  data/tournaments/raw/2026-evan-cousineau-memorial-cup/12u-girls.csv
+54c2edf00bb0ad7bf2150ea8d510a42bc711a025c515098d23cd3cbddf97d25e  data/tournaments/raw/2026-evan-cousineau-memorial-cup/14u-boys-gold.csv
+a9982ef0bb8a190003b5fac20151aa05fd84907ea1fbb4480e4bd0f8f5dddaea  data/tournaments/raw/2026-evan-cousineau-memorial-cup/14u-boys-platinum.csv
+2e6f4ddd198b6a146f2cbd7d84b2a82f4d83145937619bb00cc469554cbb5ed9  data/tournaments/raw/2026-evan-cousineau-memorial-cup/14u-coed-boys-silver.csv
+ad79279d6d54678dc35c0cd18d48415f3a428b9bb903c962b09b5d0380b5326e  data/tournaments/raw/2026-evan-cousineau-memorial-cup/14u-girls-gold.csv
+b734424de7ef74554cb99351e15f7e4b9f222f1643113258733a07ccb61b2edb  data/tournaments/raw/2026-evan-cousineau-memorial-cup/14u-girls-platinum.csv
+ae69c517aaf5619bc5ef324a99794225df3b1cbf07c47723110f13604d566dbb  data/tournaments/raw/2026-evan-cousineau-memorial-cup/hs-girls.csv
+fcf643f767e2e7963f07b81c75134132059af1c07c335a46b2f5990ac7c2157b  data/tournaments/source/2026-evan-cousineau-memorial-cup/10u-boys.csv
+a4b83e4dd0c819d2d63ae9a0319f29888e718bacacbf4f58313227039b4bfb0f  data/tournaments/source/2026-evan-cousineau-memorial-cup/10u-coed-platinum.csv
+a2de0e7fcb4f09bc1a397659c06763dd3cad935542cce338b2e70650fe3dca86  data/tournaments/source/2026-evan-cousineau-memorial-cup/10u-girls-coed-gold.csv
+0f76b81878cc1dbe5067377578bb9c6d14051e8e225a1b1c6124eac7e49038db  data/tournaments/source/2026-evan-cousineau-memorial-cup/12u-boys-gold.csv
+78594595f76787d5415c0af099da5e2d6a8fd69dda70e77d57789e5594e2658d  data/tournaments/source/2026-evan-cousineau-memorial-cup/12u-boys-platinum.csv
+8036030ddde2d2852c1eb69809d00041d3b220cac2d5b31e6b5abc1ea9beb6e8  data/tournaments/source/2026-evan-cousineau-memorial-cup/12u-coed-boys-silver.csv
+b316eedce70644add1ed4d899a373f03726ce1ae3c3beaf95cbf9f8c7523f6e0  data/tournaments/source/2026-evan-cousineau-memorial-cup/12u-girls.csv
+5389d027716c1825aef92aa05e08dd759513b8066d939295b1f802f54fcd21fb  data/tournaments/source/2026-evan-cousineau-memorial-cup/14u-boys-gold.csv
+753e6e9bafedd8953adb54f1ed034631bcbe214b86a688aca6106fc4be895eb5  data/tournaments/source/2026-evan-cousineau-memorial-cup/14u-boys-platinum.csv
+1fdba3b598f595f64e689026bc1d2716b4d5664dc950316ec3c45541dacebcb6  data/tournaments/source/2026-evan-cousineau-memorial-cup/14u-coed-boys-silver.csv
+f1e37edd18ed9cadfa702f00db7742a8b6db6aae316671eb9d30abd754d08d02  data/tournaments/source/2026-evan-cousineau-memorial-cup/14u-girls-gold.csv
+65cf9e18c6ea7a111aa29a23171dd21bf98f1bd8f571f92894f8ab063ccf9e06  data/tournaments/source/2026-evan-cousineau-memorial-cup/14u-girls-platinum.csv
+7ff44afbc76eb387ca0f4d431005a46638bcfb098241b7b5126dc8cf7d1472bd  data/tournaments/source/2026-evan-cousineau-memorial-cup/hs-girls.csv
+fb15118b6ec8d7f32f4115e8be7463a40ce183dd2da00dd083d42d4fc63ee754  js/tournament-platform-v7-64-36.js
+a5fe90ffa89c4808c7f5952a0358bb90a37b369c6f2e2d2ff1a31880a697ccec  package-lock.json
+cf230b0fbef7d7f3a6f9da467696201c1f1ecf7ded024e26d2068d30358c54dc  package.json
+edd6edbb2c08a04bbce4b7378a0bdf3606b2fb7c364aa1043087ada3933c60fc  release-check-live-7.64.36
+41aa6d49c9e6077ea5b61d8469c7a0d33d9bf41583a7156d57ef89d09f5992b9  scripts/build-evan-cousineau-2026-v7-64-36.py
+96df61ad3f646b0395b4f05d3b161d341d02813664131ac3fd6f141d212ef216  scripts/test-wphq-ecc-route-runtime-v7-64-36.js
+9a07057484d3767eb5d5700496b30b2dbb2424b215ad203a0d7e3bd4ea0a484e  scripts/test-wphq-evan-cousineau-2026-v7-64-36.py
+d57c0b8b0375fd84f7e0b29ada78118863e228a69e56c005134eba6301aa5ca6  scripts/test-wphq-organization-insights-team-season-v7-64-34.py
+e54a8e653a1a90a11a30b525d06d55c124608e6d41e87e51b4a88a1d595afdd0  tournament.html

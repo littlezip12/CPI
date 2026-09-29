@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "release": "7.55.1",
-  "generatedAt": "2026-08-02T22:28:00-07:00",
+  "release": "7.64.36",
+  "generatedAt": "2026-09-29T00:11:45-07:00",
   "description": "Shared WPI tournament platform registry. Seven completed-event experiences, including Junior Olympics Weekend 3, use one reusable viewer; other events remain on their proven viewers until deliberately migrated.",
   "platformPath": "tournament.html",
   "schemaPaths": {
@@ -32,6 +32,58 @@
     }
   },
   "events": [
+    {
+      "id": "2026-evan-cousineau-memorial-cup",
+      "name": "2026 Evan Cousineau Memorial Cup",
+      "shortName": "Evan Cousineau Memorial Cup",
+      "season": "2026",
+      "kind": "tournament_schedule",
+      "status": "schedule_published",
+      "operationsMode": "live_schedule",
+      "divisionCount": 13,
+      "publicPath": "tournament.html?event=2026-evan-cousineau-memorial-cup",
+      "legacyPath": null,
+      "migrationStatus": "platform_live",
+      "dataPath": "data/tournaments/platform/events/2026-evan-cousineau-memorial-cup.json",
+      "rankingEvidenceEnabled": false,
+      "filterCapabilities": [
+        "ageGroup",
+        "gender",
+        "division",
+        "team",
+        "date",
+        "venue",
+        "status",
+        "search"
+      ],
+      "sourceAdapters": [
+        {
+          "id": "2026-ecc-normalized-bank",
+          "type": "normalized_json",
+          "role": "application_schedule_bank",
+          "pathTemplate": "data/tournaments/normalized/2026-evan-cousineau-memorial-cup/{divisionId}.json",
+          "readMode": "repository"
+        },
+        {
+          "id": "2026-ecc-onedrive-workbook",
+          "type": "onedrive_workbook",
+          "role": "official_schedule_source",
+          "readMode": "linked_source",
+          "officialSourceUrl": "https://onedrive.live.com/:x:/g/personal/6f253ef3afcfe1c8/IQAeP081w5icT5v2gE07WQKbAbleQbur9GlpZuXPbLHVMGY?rtime=qdrLY-sd30g&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy82ZjI1M2VmM2FmY2ZlMWM4L0lRQWVQMDgxdzVpY1Q1djJnRTA3V1FLYkFibGVRYnVyOUdscFp1WFBiTEhWTUdZP2U9SGhGeHI2",
+          "status": "schedule_authority"
+        },
+        {
+          "id": "2026-ecc-result-overlay",
+          "type": "replaceable_result_adapter",
+          "role": "official_scores_and_results",
+          "readMode": "pending",
+          "status": "awaiting_best_live_result_source"
+        }
+      ],
+      "eventYear": 2026,
+      "competitiveSeason": "2026-2027",
+      "seasonLabel": "2026–2027"
+    },
     {
       "id": "2026-jo-weekend-1",
       "name": "2026 Junior Olympics Weekend 1",

@@ -1,0 +1,1668 @@
+{
+  "schemaVersion": 1,
+  "release": "7.45.1",
+  "identityRelease": "7.40.0",
+  "event": {
+    "id": "2026-evan-cousineau-memorial-cup",
+    "name": "2026 Evan Cousineau Memorial Cup",
+    "kind": "tournament_schedule"
+  },
+  "division": {
+    "id": "hs-girls",
+    "label": "HS Girls",
+    "season": "2026",
+    "ageGroup": "HS",
+    "gender": "Girls",
+    "division": "Open",
+    "divisionTier": "HS",
+    "parser": "results_table_v1"
+  },
+  "source": {
+    "type": "uploaded_csv",
+    "spreadsheetId": "official-onedrive-2026-ec-cup",
+    "gid": "hs-girls",
+    "sheetName": null,
+    "url": "data/tournaments/raw/2026-evan-cousineau-memorial-cup/hs-girls.csv",
+    "fetchedAt": "2026-09-29T00:11:45-07:00",
+    "mode": "official_workbook_export",
+    "contentSha256": "ae69c517aaf5619bc5ef324a99794225df3b1cbf07c47723110f13604d566dbb",
+    "rowCount": 21
+  },
+  "counts": {
+    "games": 20,
+    "finalGames": 0,
+    "scheduledGames": 20,
+    "zeroZeroPlaceholders": 0,
+    "partialScores": 0,
+    "teamParticipants": 16,
+    "resolvedTeamParticipants": 0,
+    "unresolvedTeamParticipants": 16,
+    "bracketReferences": 24,
+    "placeholders": 0,
+    "blockers": 0,
+    "reviewItems": 16
+  },
+  "placements": [],
+  "games": [
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg02",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG02",
+      "sourceGameNumber": "HSG02",
+      "sourceRow": 2,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B2",
+      "stageDisplay": "B bracket B1,B2",
+      "stageMeta": {
+        "raw": "B bracket B1,B2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B2"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B1-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-hs-girls-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B2-TSM",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "TSM",
+          "participantId": "tournament-team-2026-hs-girls-tsm",
+          "teamId": null,
+          "clubId": "club-tsm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg03",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG03",
+      "sourceGameNumber": "HSG03",
+      "sourceRow": 3,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "7:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L C1/C4",
+      "stageDisplay": "W/L C1/C4",
+      "stageMeta": {
+        "raw": "W/L C1/C4",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L C1/C4",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L C1/C4"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C1-HONOLULU",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C1",
+          "displayName": "HONOLULU",
+          "participantId": "tournament-team-2026-hs-girls-honolulu",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        },
+        "dark": {
+          "raw": "C4-SD ECA",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C4",
+          "displayName": "SD ECA",
+          "participantId": "tournament-team-2026-hs-girls-sd-eca",
+          "teamId": null,
+          "clubId": "club-sd-eca",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg04",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG04",
+      "sourceGameNumber": "HSG04",
+      "sourceRow": 4,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "W/L C2/C3",
+      "stageDisplay": "W/L C2/C3",
+      "stageMeta": {
+        "raw": "W/L C2/C3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "W/L C2/C3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "W/L C2/C3"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "C2-NORTH IRVINE",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C2",
+          "displayName": "NORTH IRVINE",
+          "participantId": "tournament-team-2026-hs-girls-north-irvine",
+          "teamId": null,
+          "clubId": "club-north-irvine",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "C3-PV OVAC",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "C3",
+          "displayName": "PV OVAC",
+          "participantId": "tournament-team-2026-hs-girls-pv-ovac",
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "unresolved",
+          "identityMatchType": "tournament_only"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg01",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG01",
+      "sourceGameNumber": "HSG01",
+      "sourceRow": 5,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A3",
+      "stageDisplay": "A bracket A1,A3",
+      "stageMeta": {
+        "raw": "A bracket A1,A3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A3"
+      },
+      "venue": "LOS ALAMITOS HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1-VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "VIKING",
+          "participantId": "tournament-team-2026-hs-girls-viking",
+          "teamId": null,
+          "clubId": "club-viking",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-A TEAM CALLED QUEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "A TEAM CALLED QUEST",
+          "participantId": "tournament-team-2026-hs-girls-a-team-called-quest",
+          "teamId": null,
+          "clubId": "club-a-team-called-quest",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg06",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG06",
+      "sourceGameNumber": "HSG06",
+      "sourceRow": 6,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B1,B3",
+      "stageDisplay": "B bracket B1,B3",
+      "stageMeta": {
+        "raw": "B bracket B1,B3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B1,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B1,B3"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B1-SET",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B1",
+          "displayName": "SET",
+          "participantId": "tournament-team-2026-hs-girls-set",
+          "teamId": null,
+          "clubId": "club-set",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-ROGUE 619",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "ROGUE 619",
+          "participantId": "tournament-team-2026-hs-girls-rogue-619",
+          "teamId": null,
+          "clubId": "club-rogue-619",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg05",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG05",
+      "sourceGameNumber": "HSG05",
+      "sourceRow": 7,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "10:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A2,A3",
+      "stageDisplay": "A bracket A2,A3",
+      "stageMeta": {
+        "raw": "A bracket A2,A3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A2,A3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A2,A3"
+      },
+      "venue": "LOS ALAMITOS HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A2-TRILOGY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "TRILOGY",
+          "participantId": "tournament-team-2026-hs-girls-trilogy",
+          "teamId": null,
+          "clubId": "club-trilogy",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A3-A TEAM CALLED QUEST",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A3",
+          "displayName": "A TEAM CALLED QUEST",
+          "participantId": "tournament-team-2026-hs-girls-a-team-called-quest",
+          "teamId": null,
+          "clubId": "club-a-team-called-quest",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg07",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG07",
+      "sourceGameNumber": "HSG07",
+      "sourceRow": 8,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "10:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "3rd/4thC",
+      "stageDisplay": "3rd/4thC",
+      "stageMeta": {
+        "raw": "3rd/4thC",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "3rd/4thC",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "3rd/4thC"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "L#C1/C4",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L#C1/C4",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "L#C2/C3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "L#C2/C3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg08",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG08",
+      "sourceGameNumber": "HSG08",
+      "sourceRow": 9,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "11:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "1st/2ndC",
+      "stageDisplay": "1st/2ndC",
+      "stageMeta": {
+        "raw": "1st/2ndC",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "1st/2ndC",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "1st/2ndC"
+      },
+      "venue": "WOOLLETT NEAR LEFT",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "W#C1/C4",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W#C1/C4",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "W#C2/C3",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "W#C2/C3",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg10",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG10",
+      "sourceGameNumber": "HSG10",
+      "sourceRow": 10,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "12:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "B bracket B2,B3",
+      "stageDisplay": "B bracket B2,B3",
+      "stageMeta": {
+        "raw": "B bracket B2,B3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "B bracket B2,B3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "B bracket B2,B3"
+      },
+      "venue": "EL TORO HS 1",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "B2-TSM",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B2",
+          "displayName": "TSM",
+          "participantId": "tournament-team-2026-hs-girls-tsm",
+          "teamId": null,
+          "clubId": "club-tsm",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "B3-ROGUE 619",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "B3",
+          "displayName": "ROGUE 619",
+          "participantId": "tournament-team-2026-hs-girls-rogue-619",
+          "teamId": null,
+          "clubId": "club-rogue-619",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg09",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG09",
+      "sourceGameNumber": "HSG09",
+      "sourceRow": 11,
+      "dateLabel": "3-Oct",
+      "dateIso": "2026-10-03",
+      "timeLabel": "1:20 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "A bracket A1,A2",
+      "stageDisplay": "A bracket A1,A2",
+      "stageMeta": {
+        "raw": "A bracket A1,A2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "A bracket A1,A2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "A bracket A1,A2"
+      },
+      "venue": "LOS ALAMITOS HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "A1-VIKING",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A1",
+          "displayName": "VIKING",
+          "participantId": "tournament-team-2026-hs-girls-viking",
+          "teamId": null,
+          "clubId": "club-viking",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        },
+        "dark": {
+          "raw": "A2-TRILOGY",
+          "kind": "team",
+          "seed": null,
+          "sourceReference": "A2",
+          "displayName": "TRILOGY",
+          "participantId": "tournament-team-2026-hs-girls-trilogy",
+          "teamId": null,
+          "clubId": "club-trilogy",
+          "rankingEligible": false,
+          "identityStatus": "resolved_club_only",
+          "identityMatchType": "club_alias"
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg11",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG11",
+      "sourceGameNumber": "HSG11",
+      "sourceRow": 12,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "8:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th) E1,E3",
+      "stageDisplay": "E bracket (4th-6th) E1,E3",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th) E1,E3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th) E1,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th) E1,E3"
+      },
+      "venue": "SERVITE HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E1(2ndA)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "E1(2ndA)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "E3(2ndC)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "E3(2ndC)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg12",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG12",
+      "sourceGameNumber": "HSG12",
+      "sourceRow": 13,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "9:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd) F1,F3",
+      "stageDisplay": "F bracket (1st-3rd) F1,F3",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd) F1,F3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd) F1,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd) F1,F3"
+      },
+      "venue": "SERVITE HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F1(1stA)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "F1(1stA)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "F3(1stC)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "F3(1stC)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg14",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG14",
+      "sourceGameNumber": "HSG14",
+      "sourceRow": 14,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "9:40 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-10th",
+      "stageDisplay": "7th-10th",
+      "stageMeta": {
+        "raw": "7th-10th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-10th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-10th"
+      },
+      "venue": "LOS ALAMITOS HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D2(3rdB)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "D2(3rdB)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "D3(3rdC)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "D3(3rdC)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg13",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG13",
+      "sourceGameNumber": "HSG13",
+      "sourceRow": 15,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "10:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-10th",
+      "stageDisplay": "7th-10th",
+      "stageMeta": {
+        "raw": "7th-10th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-10th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-10th"
+      },
+      "venue": "SERVITE HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D1(3rdA)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "D1(3rdA)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "D4(4thC)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "D4(4thC)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg15",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG15",
+      "sourceGameNumber": "HSG15",
+      "sourceRow": 16,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "11:00 AM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th) E2,E3",
+      "stageDisplay": "E bracket (4th-6th) E2,E3",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th) E2,E3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th) E2,E3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th) E2,E3"
+      },
+      "venue": "SERVITE HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E2(2ndB)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "E2(2ndB)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "E3(2ndC)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "E3(2ndC)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg16",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG16",
+      "sourceGameNumber": "HSG16",
+      "sourceRow": 17,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "12:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd) F2,F3",
+      "stageDisplay": "F bracket (1st-3rd) F2,F3",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd) F2,F3",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd) F2,F3",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd) F2,F3"
+      },
+      "venue": "SERVITE HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F2(1stB)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "F2(1stB)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "F3(1stC)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "F3(1stC)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg17",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG17",
+      "sourceGameNumber": "HSG17",
+      "sourceRow": 18,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "1:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-10th",
+      "stageDisplay": "7th-10th",
+      "stageMeta": {
+        "raw": "7th-10th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-10th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-10th"
+      },
+      "venue": "SERVITE HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D1(3rdA)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "D1(3rdA)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "D3(3rdC)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "D3(3rdC)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg18",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG18",
+      "sourceGameNumber": "HSG18",
+      "sourceRow": 19,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "2:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "7th-10th",
+      "stageDisplay": "7th-10th",
+      "stageMeta": {
+        "raw": "7th-10th",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "7th-10th",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "7th-10th"
+      },
+      "venue": "SERVITE HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "D2(3rdB)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "D2(3rdB)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "D4(4thC)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "D4(4thC)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg20",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG20",
+      "sourceGameNumber": "HSG20",
+      "sourceRow": 20,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "3:00 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "F bracket (1st-3rd) F1,F2",
+      "stageDisplay": "F bracket (1st-3rd) F1,F2",
+      "stageMeta": {
+        "raw": "F bracket (1st-3rd) F1,F2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "final",
+        "roundLabel": "F bracket (1st-3rd) F1,F2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "F bracket (1st-3rd) F1,F2"
+      },
+      "venue": "SERVITE HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "F1(1stA)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "F1(1stA)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "F2(1stB)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "F2(1stB)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    },
+    {
+      "id": "game-2026-evan-cousineau-memorial-cup-hs-girls-hsg19",
+      "eventId": "2026-evan-cousineau-memorial-cup",
+      "divisionId": "hs-girls",
+      "season": "2026",
+      "ageGroup": "HS",
+      "gender": "Girls",
+      "division": "Open",
+      "divisionTier": "HS",
+      "sourceGameId": "HSG19",
+      "sourceGameNumber": "HSG19",
+      "sourceRow": 21,
+      "dateLabel": "4-Oct",
+      "dateIso": "2026-10-04",
+      "timeLabel": "3:40 PM",
+      "timezone": "America/Los_Angeles",
+      "stage": "E bracket (4th-6th) E1,E2",
+      "stageDisplay": "E bracket (4th-6th) E1,E2",
+      "stageMeta": {
+        "raw": "E bracket (4th-6th) E1,E2",
+        "detailRaw": null,
+        "bracketCode": null,
+        "bracketLabel": null,
+        "roundType": "other",
+        "roundLabel": "E bracket (4th-6th) E1,E2",
+        "placementRange": null,
+        "placement": null,
+        "displayLabel": "E bracket (4th-6th) E1,E2"
+      },
+      "venue": "LOS ALAMITOS HS",
+      "status": "scheduled",
+      "scoreState": "empty",
+      "participants": {
+        "white": {
+          "raw": "E1(2ndA)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "E1(2ndA)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        },
+        "dark": {
+          "raw": "E2(2ndB)-",
+          "kind": "bracket_reference",
+          "seed": null,
+          "sourceReference": "E2(2ndB)",
+          "displayName": null,
+          "participantId": null,
+          "teamId": null,
+          "clubId": null,
+          "rankingEligible": false,
+          "identityStatus": "not_applicable",
+          "identityMatchType": null
+        }
+      },
+      "scores": {
+        "white": null,
+        "dark": null,
+        "whiteRaw": null,
+        "darkRaw": null,
+        "whiteRegulation": null,
+        "darkRegulation": null,
+        "whiteShootout": null,
+        "darkShootout": null
+      },
+      "shootout": null,
+      "outcome": {
+        "kind": "pending",
+        "winnerTeamId": null,
+        "loserTeamId": null
+      },
+      "advancement": {
+        "winnerTo": null,
+        "loserTo": null
+      }
+    }
+  ]
+}

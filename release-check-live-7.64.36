@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.36 Evan Cousineau Schedule + JO-Style Journey Routing Check\n'
+python3 -m py_compile scripts/build-evan-cousineau-2026-v7-64-36.py scripts/test-wphq-evan-cousineau-2026-v7-64-36.py
+node --check js/tournament-platform-v7-64-36.js
+node --check scripts/test-wphq-ecc-route-runtime-v7-64-36.js
+python3 scripts/test-wphq-evan-cousineau-2026-v7-64-36.py
+node scripts/test-wphq-ecc-route-runtime-v7-64-36.js
+bash ./release-check-live-7.64.35
+printf '\nWater Polo HQ 7.64.36 ECC schedule publication check passed.\n'
