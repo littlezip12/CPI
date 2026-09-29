@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.35 Team Stats Stable Season Leaders Check\n'
+node --check js/live-team-insights-v7-64-35.js
+python3 -m py_compile scripts/test-wphq-team-stats-stable-season-leaders-v7-64-35.py
+python3 scripts/test-wphq-team-stats-stable-season-leaders-v7-64-35.py
+bash ./release-check-live-7.64.34
+printf '\nWater Polo HQ 7.64.35 Team Stats stable season leaders check passed.\n'

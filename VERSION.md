@@ -1,3 +1,9 @@
+# WPI 7.64.35 — Team Stats Stable Season Leaders
+
+WPHQ 7.64.35 fixes the remaining duplicate player rows on **Team Stats → Season Leaders**. The older Team Insights overview RPC still exposes historical `live_players.id` values from immutable roster versions, so the same player could appear once for BAWPL and again for Champions Cup even though both records belong to the same 14U Boys A team.
+
+The Team Stats page now replaces that legacy season-leader list with the already-hardened `live_team_player_insights_v2` season result, which resolves player identity through stable `client_player_id` across roster versions. Season Leaders and the player count therefore show one row per player for the selected team/season while preserving event/game scope behavior in Player Stats. No Supabase migration or Edge Function is required.
+
 # WPI 7.64.34 — Organization Insights Identity & Team-Scoped Season Stats
 
 WPHQ 7.64.34 fixes Organization Insights player duplication caused by season roster versioning. Historical game analytics store the concrete `live_players.id` used by each game roster; the new Organization Insights RPC resolves those roster-version UUIDs back to the stable `client_player_id` before aggregation. Player totals are grouped by **team + stable player identity + selected season**, so all finalized tournaments/weekends and roster versions for the same team roll into one row while the same child on A/B/C teams remains separate.
