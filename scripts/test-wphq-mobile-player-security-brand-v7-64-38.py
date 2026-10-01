@@ -14,9 +14,9 @@ def semver(v):
 site=json.loads(read('config/site-release.json'))
 pkg=json.loads(read('package.json'))
 lock=json.loads(read('package-lock.json'))
-req(site.get('version')=='7.64.38','site release must be 7.64.38')
-req(pkg.get('version')=='7.64.38','package version must be 7.64.38')
-req(lock.get('version')=='7.64.38' and lock.get('packages',{}).get('',{}).get('version')=='7.64.38','package-lock version must be 7.64.38')
+req(semver(site.get('version'))>=semver('7.64.38'),'site release must preserve 7.64.38 or later')
+req(semver(pkg.get('version'))>=semver('7.64.38'),'package version must preserve 7.64.38 or later')
+req(semver(lock.get('version'))>=semver('7.64.38') and semver(lock.get('packages',{}).get('',{}).get('version'))>=semver('7.64.38'),'package-lock version must preserve 7.64.38 or later')
 for key in ['liveTeamInsightsMobileUxRelease','liveConsumerBrandCleanupRelease','liveAccountSecurityPolishRelease','livePasswordResetHardeningRelease']:
     req(site.get(key)=='7.64.38',f'{key} marker missing')
 req(site.get('evanCousineau2026ScheduleRelease')=='7.64.36','ECC safe schedule baseline marker changed')
@@ -63,7 +63,8 @@ for token in ['Confirm Email','Minimum password length','Leaked Password Protect
 req('No SQL needs to be copied into Supabase for 7.64.38.' in security,'security doc must clearly state no migration')
 
 # Native bundle must inherit the same responsive/account surfaces.
-build=subprocess.run([sys.executable,str(ROOT/'scripts/build-mobile-web-v7-64-28.py')],cwd=ROOT,text=True,capture_output=True)
+builder=ROOT/('scripts/build-mobile-web-v7-64-39.py' if (ROOT/'scripts/build-mobile-web-v7-64-39.py').exists() else 'scripts/build-mobile-web-v7-64-28.py')
+build=subprocess.run([sys.executable,str(builder)],cwd=ROOT,text=True,capture_output=True)
 if build.returncode:
     errors.append('mobile bundle build failed: '+(build.stdout+build.stderr).strip())
 else:

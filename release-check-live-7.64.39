@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.39 Unified Web + Native Release Pipeline Check\n'
+python3 -m py_compile scripts/build-mobile-web-v7-64-39.py scripts/test-wphq-unified-mobile-release-v7-64-39.py scripts/test-wphq-mobile-player-security-brand-v7-64-38.py
+bash ./release-check-live-7.64.38
+python3 scripts/test-wphq-unified-mobile-release-v7-64-39.py
+printf '\nWater Polo HQ 7.64.39 unified web/native release pipeline check passed.\n'

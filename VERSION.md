@@ -1,3 +1,11 @@
+# WPI 7.64.39 — Unified Web + Native Release Pipeline
+
+WPHQ 7.64.39 makes the repository-root Water Polo HQ product the explicit single source for both browser and Capacitor delivery. The mobile builder now reads the current site release dynamically, generates `mobile/www` from that exact runtime, stamps every native HTML page with the source release, and writes a deterministic native release manifest for traceability.
+
+The release adds a parity gate proving current web runtime assets are carried into the native bundle, plus `npm run mobile:update:ios` to run native preflight, prepare the current bundle, sync it into iOS, verify parity, and open Xcode. This eliminates a separate mobile feature branch: future product releases update one source and regenerate the native shell from it. Installed iPhone/TestFlight/App Store binaries still require a native build/install step to receive a new embedded bundle.
+
+No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.38 — Mobile Player Stats, Consumer Shell & Security Polish
 
 WPHQ 7.64.38 returns focus to the core supporter/parent experience while leaving the safe 7.64.36 ECC schedule/routing baseline untouched. Team Insights keeps its full desktop comparison workflow, but phones now use one expandable **Choose players** control for up to four players, a vertical multi-select roster, and a compact Done flow. The redundant selected-player stat cards are hidden on phones; Overview stays open while Shooting, Defense, Possession, Draws & Fouls, and Shootout become expandable sections. Season / Event / Game scope behavior, saved selections, stable player identity, DNP semantics, and the existing analytics RPC remain unchanged.

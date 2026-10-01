@@ -1,0 +1,26 @@
+Water Polo HQ 7.64.39 — Unified Web + Native Release Pipeline
+Built from authoritative pushed 7.64.38 GitHub ZIP: CPI-main - 2026-09-30T222541.780.zip
+
+Changed / added files:
+INSTALL_7.64.39.md
+PATCH_MANIFEST_7.64.39.txt
+VERSION.md
+WPHQ_7.64.39_UNIFIED_WEB_NATIVE_RELEASE_HANDOFF.md
+config/site-release.json
+mobile/README.md
+mobile/app-contract.json
+package.json
+package-lock.json
+release-check-live-7.64.39
+scripts/build-mobile-web-v7-64-39.py
+scripts/test-wphq-mobile-player-security-brand-v7-64-38.py
+scripts/test-wphq-organization-insights-team-season-v7-64-34.py
+scripts/test-wphq-unified-mobile-release-v7-64-39.py
+
+Generated directories intentionally excluded from patch/source control:
+mobile/www/
+ios/App/App/public/
+
+No Supabase migration.
+No Edge Function deployment.
+No scorer, GroupMe, analytics RPC, RLS, ECC schedule/routing, or tournament-data change.

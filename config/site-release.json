@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.38",
-  "name": "Mobile Player Stats, Consumer Shell & Security Polish",
+  "version": "7.64.39",
+  "name": "Unified Web + Native Release Pipeline",
   "date": "2026-09-30",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Simplifies Team Insights on phones with one expandable up-to-four-player picker, compact mobile navigation, and collapsible detailed stat groups while preserving the desktop comparison workflow and existing access controls. Continues Water Polo HQ consumer-brand cleanup across Team Insights, Event Results, Privacy, Account Security, and Password Reset. Hardens password reset to the same 12-character client minimum used by signup and keeps authenticator-app MFA available for privileged accounts. No Supabase migration or Edge Function.",
+  "notes": "Makes the repository-root web product the explicit single source for both browser and Capacitor delivery. The mobile builder now stamps the current web release into every generated native page, writes a native release manifest, verifies byte-parity for current runtime assets, and adds a one-command iOS update flow (preflight \u2192 prepare \u2192 Capacitor sync \u2192 parity verify \u2192 Xcode). TestFlight/App Store distribution remains a separate binary delivery step. No Supabase migration or Edge Function.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.64.36",
   "tournamentEvidenceRelease": "7.45.1",
@@ -365,5 +365,9 @@
   "liveTeamInsightsMobileUxRelease": "7.64.38",
   "liveConsumerBrandCleanupRelease": "7.64.38",
   "liveAccountSecurityPolishRelease": "7.64.38",
-  "livePasswordResetHardeningRelease": "7.64.38"
+  "livePasswordResetHardeningRelease": "7.64.38",
+  "nativeMobileUnifiedRelease": "7.64.39",
+  "nativeMobileBundlePolicy": "same-source-generated-bundle",
+  "nativeMobileBuilderRelease": "7.64.39",
+  "nativeMobileUpdateCommand": "npm run mobile:update:ios"
 }
