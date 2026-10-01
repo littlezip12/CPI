@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.36",
-  "name": "Evan Cousineau Schedule + JO-Style Journey Routing",
-  "date": "2026-09-28",
+  "version": "7.64.38",
+  "name": "Mobile Player Stats, Consumer Shell & Security Polish",
+  "date": "2026-09-30",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Publishes all 13 supplied 2026 Evan Cousineau Memorial Cup divisions (335 scheduled games, 162 team entries, 18 venues) from the official OneDrive workbook exports. Reuses the proven JO journey model: 376 bracket-dependent sides retain internal source references but public UI displays actual source-backed candidate teams, possible paths, and automatically resolves winner/loser and group-placement routes once official results exist. OneDrive is schedule authority; the official score/result feed remains a separate replaceable overlay pending identification of the best live source. No Supabase migration or Edge Function.",
+  "notes": "Simplifies Team Insights on phones with one expandable up-to-four-player picker, compact mobile navigation, and collapsible detailed stat groups while preserving the desktop comparison workflow and existing access controls. Continues Water Polo HQ consumer-brand cleanup across Team Insights, Event Results, Privacy, Account Security, and Password Reset. Hardens password reset to the same 12-character client minimum used by signup and keeps authenticator-app MFA available for privileged accounts. No Supabase migration or Edge Function.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.64.36",
   "tournamentEvidenceRelease": "7.45.1",
@@ -313,7 +313,7 @@
   "liveFastScorekeepingRelease": "7.64.11",
   "liveCorrectionRecoveryRelease": "7.64.11",
   "liveFinalWhistleRelease": "7.64.11",
-  "livePlayerStatsExperienceRelease": "7.64.15",
+  "livePlayerStatsExperienceRelease": "7.64.38",
   "livePlayerRosterAccuracyRelease": "7.64.15",
   "liveParentPrivacyRelease": "7.64.15",
   "livePlayerStatsVisualPolishRelease": "7.64.16",
@@ -361,5 +361,9 @@
   "liveTeamStatsStableSeasonLeaderIdentityRelease": "7.64.35",
   "liveTeamStatsRosterVersionMergeRelease": "7.64.35",
   "evanCousineau2026ScheduleRelease": "7.64.36",
-  "tournamentLiveRefreshRelease": "7.64.36"
+  "tournamentLiveRefreshRelease": "7.64.36",
+  "liveTeamInsightsMobileUxRelease": "7.64.38",
+  "liveConsumerBrandCleanupRelease": "7.64.38",
+  "liveAccountSecurityPolishRelease": "7.64.38",
+  "livePasswordResetHardeningRelease": "7.64.38"
 }

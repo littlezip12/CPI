@@ -11,14 +11,14 @@
   <link rel="manifest" href="manifest.webmanifest?v=7.64.19">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/app-icons/wphq-apple-touch-180.png?v=7.64.19">
   <title>Team Insights | Water Polo HQ</title>
-  <meta name="description" content="WPI Team Insights game, weekend, tournament and season analytics.">
+  <meta name="description" content="Water Polo HQ Team Insights game, weekend, tournament and season analytics.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-team-insights-v7-64-16.css?v=7.64.16">
+  <link rel="stylesheet" href="css/live-team-insights-v7-64-38.css?v=7.64.38">
 <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
 <body class="wpi-team-insights-page">
   <main class="insights-shell">
@@ -28,19 +28,24 @@
         <h1 id="insightsTeamName">Team Insights</h1>
         <span id="insightsTeamContext">Game, weekend and season analytics in one place.</span>
       </div>
-      <nav>
-        <a id="insightsBackLink" href="live-following.html">Back</a>
-        <a href="live-following.html">My Teams</a>
-        <a id="organizationInsightsLink" href="live-organization-insights.html" hidden>Organization Insights</a>
-        <a id="teamInsightsCommercialLink" href="live-commercial.html" hidden>Commercial</a>
-        <a href="live.html">Live Scores</a>
-        <button id="insightsSignOut" type="button">Sign out</button>
+      <nav class="insights-hero-nav" aria-label="Team Insights navigation">
+        <div class="insights-hero-primary-actions">
+          <a id="insightsBackLink" href="live-following.html">Back</a>
+          <a href="live-following.html">My Teams</a>
+        </div>
+        <button id="insightsMobileMore" class="insights-mobile-more-toggle" type="button" aria-expanded="false" aria-controls="insightsSecondaryActions">More</button>
+        <div id="insightsSecondaryActions" class="insights-hero-secondary-actions">
+          <a id="organizationInsightsLink" href="live-organization-insights.html" hidden>Organization Insights</a>
+          <a id="teamInsightsCommercialLink" href="live-commercial.html" hidden>Commercial</a>
+          <a href="live.html">Live Scores</a>
+          <button id="insightsSignOut" type="button">Sign out</button>
+        </div>
       </nav>
     </header>
 
     <section id="insightsLoading" class="insights-state">
       <strong>Loading Team Insights…</strong>
-      <span>Checking access and loading trusted WPI game analytics.</span>
+      <span>Checking access and loading trusted Water Polo HQ game analytics.</span>
     </section>
 
     <section id="insightsError" class="insights-state insights-state--error" hidden>
@@ -127,12 +132,18 @@
           <label id="playerGameWrap" hidden><span>Game</span><select id="playerGameSelect"></select></label>
         </div>
 
-        <div class="insights-player-picker-heading">
-          <div><strong>Select players</strong><span>Choose up to four</span></div>
-          <div><strong id="playerSelectionCount">0 selected</strong><button id="clearPlayerSelection" type="button">Clear all</button></div>
+        <button id="playerPickerToggle" class="insights-player-picker-toggle" type="button" aria-expanded="false" aria-controls="playerPickerPanel">
+          <span><strong id="playerPickerToggleLabel">Choose players</strong><small id="playerPickerToggleMeta">0 of 4 selected</small></span><span class="insights-player-picker-chevron" aria-hidden="true">⌄</span>
+        </button>
+        <div id="playerPickerPanel" class="insights-player-picker-panel">
+          <div class="insights-player-picker-heading">
+            <div><strong>Select players</strong><span>Choose up to four</span></div>
+            <div><strong id="playerSelectionCount">0 selected</strong><button id="clearPlayerSelection" type="button">Clear all</button></div>
+          </div>
+          <label class="insights-player-search"><span class="sr-only">Search players</span><input id="playerSearchInput" type="search" placeholder="Search players by name…" autocomplete="off"></label>
+          <div id="playerPicker" class="insights-player-picker"></div>
+          <div class="insights-player-picker-mobile-actions"><button id="playerPickerDone" type="button">Done</button></div>
         </div>
-        <label class="insights-player-search"><span class="sr-only">Search players</span><input id="playerSearchInput" type="search" placeholder="Search players by name…" autocomplete="off"></label>
-        <div id="playerPicker" class="insights-player-picker"></div>
 
         <!-- Legacy controls stay present for backwards-compatible release checks, but the 7.64.14 UI uses the controls above. -->
         <div class="insights-player-controls insights-player-controls--legacy" aria-hidden="true">
@@ -168,7 +179,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.22"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-team-insights-v7-64-35.js?v=7.64.35"></script>
+  <script src="js/live-team-insights-v7-64-38.js?v=7.64.38"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/live-pwa-v7-64-23.js?v=7.64.23"></script>

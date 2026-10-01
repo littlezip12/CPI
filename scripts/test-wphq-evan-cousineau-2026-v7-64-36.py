@@ -8,7 +8,8 @@ def check(cond,msg):
     if not cond: errors.append(msg)
 
 site=load('config/site-release.json')
-check(site.get('version')=='7.64.36','site release must be 7.64.36')
+def ver(value): return tuple(int(x) for x in str(value).split('.'))
+check(ver(site.get('version','0.0.0'))>=ver('7.64.36'),'site release must be 7.64.36 or a validated successor')
 check(site.get('evanCousineau2026ScheduleRelease')=='7.64.36','ECC release marker missing')
 bundle=load('data/tournaments/platform/events/2026-evan-cousineau-memorial-cup.json')
 s=bundle.get('summary',{})

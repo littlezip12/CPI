@@ -1,3 +1,11 @@
+# WPI 7.64.38 — Mobile Player Stats, Consumer Shell & Security Polish
+
+WPHQ 7.64.38 returns focus to the core supporter/parent experience while leaving the safe 7.64.36 ECC schedule/routing baseline untouched. Team Insights keeps its full desktop comparison workflow, but phones now use one expandable **Choose players** control for up to four players, a vertical multi-select roster, and a compact Done flow. The redundant selected-player stat cards are hidden on phones; Overview stays open while Shooting, Defense, Possession, Draws & Fouls, and Shootout become expandable sections. Season / Event / Game scope behavior, saved selections, stable player identity, DNP semantics, and the existing analytics RPC remain unchanged.
+
+The Team Insights header also becomes app-like on narrow screens: Back and My Teams remain primary while Live Scores, Sign out, and any authorized Owner/platform-only actions move behind a compact **More** control. Organization Insights and Commercial retain their existing entitlement/platform-owner visibility rules; the release adds regression coverage rather than broadening access.
+
+Consumer-facing account and results surfaces continue the Water Polo HQ rebrand: Team Insights, Event Results, Privacy, Account Security, and Password Reset no longer present WPI Live as the consumer product name. Password reset now matches signup with a 12-character client minimum, and authenticator-app MFA uses the Water Polo HQ label. Existing Supabase RLS, anonymous guest-scoring support, auth callbacks, scorer permissions, GroupMe delivery, and protected backend contracts are unchanged. No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.36 — Evan Cousineau Schedule + JO-Style Journey Routing
 
 WPHQ 7.64.36 publishes the current source-backed **2026 Evan Cousineau Memorial Cup** schedule for October 3–4, 2026 from the 13 official workbook tabs supplied on September 28. The release contains **335 scheduled games, 162 tournament team entries, and 18 venues/pools** across 10U, 12U, 14U and HS Girls divisions. No scores or results are inferred: all 335 games remain scheduled with empty scores at this source snapshot.

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.38 Mobile Player Stats, Consumer Shell & Security Polish Check\n'
+python3 -m py_compile scripts/test-wphq-mobile-player-security-brand-v7-64-38.py
+node --check js/live-team-insights-v7-64-38.js
+node --check js/live-account-security-v7-64-38.js
+node --check js/live-password-reset-v7-64-38.js
+python3 scripts/test-wphq-mobile-player-security-brand-v7-64-38.py
+bash ./release-check-live-7.64.36
+printf '\nWater Polo HQ 7.64.38 mobile player/security/brand check passed.\n'
