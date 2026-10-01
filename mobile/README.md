@@ -66,3 +66,9 @@ npm run mobile:update:ios
 ```
 
 Once TestFlight is in use, archive/upload the iOS binary from the same committed WPHQ release after its native smoke test. Build numbers must increment for each TestFlight upload even when the marketing version remains unchanged.
+
+## 7.64.40 release-gate sequencing
+
+The ordinary release gate validates repository-root source and the generated `mobile/www` bundle. It does not fail solely because a previously synced `ios/App/App/public` payload is stale.
+
+Use `npm run mobile:update:ios` for a device/Xcode refresh. That command performs the iOS sync and then runs strict parity verification (`--require-ios`) before opening Xcode. This avoids the pre-sync chicken-and-egg failure while still preventing a stale bundle from being installed or archived.

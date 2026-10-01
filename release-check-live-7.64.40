@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.40 Public Beta Readiness, Brand Consistency & Native Guardrail Check\n'
+python3 -m py_compile \
+  scripts/build-mobile-web-v7-64-39.py \
+  scripts/test-wphq-unified-mobile-release-v7-64-40.py \
+  scripts/test-wphq-public-beta-readiness-v7-64-40.py \
+  scripts/test-wphq-mobile-player-security-brand-v7-64-38.py
+bash ./release-check-live-7.64.38
+python3 scripts/test-wphq-public-beta-readiness-v7-64-40.py
+python3 scripts/test-wphq-unified-mobile-release-v7-64-40.py
+printf '\nWater Polo HQ 7.64.40 public beta readiness check passed.\n'

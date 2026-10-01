@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.39",
-  "name": "Unified Web + Native Release Pipeline",
+  "version": "7.64.40",
+  "name": "Public Beta Readiness, Brand Consistency & Native Release Guardrails",
   "date": "2026-09-30",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Makes the repository-root web product the explicit single source for both browser and Capacitor delivery. The mobile builder now stamps the current web release into every generated native page, writes a native release manifest, verifies byte-parity for current runtime assets, and adds a one-command iOS update flow (preflight \u2192 prepare \u2192 Capacitor sync \u2192 parity verify \u2192 Xcode). TestFlight/App Store distribution remains a separate binary delivery step. No Supabase migration or Edge Function.",
+  "notes": "Public-beta readiness pass: completes Water Polo HQ consumer naming on active live/admin surfaces, adds visible release/runtime information to Account Security, and corrects native release verification so a stale local Xcode bundle does not block the pre-sync release gate while post-sync verification remains strict. Includes a live Supabase security-advisor audit snapshot and launch checklist; intentionally makes no database grants, RLS, Auth, Edge Function, scorer, GroupMe, analytics, or tournament data changes.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.64.36",
   "tournamentEvidenceRelease": "7.45.1",
@@ -369,5 +369,10 @@
   "nativeMobileUnifiedRelease": "7.64.39",
   "nativeMobileBundlePolicy": "same-source-generated-bundle",
   "nativeMobileBuilderRelease": "7.64.39",
-  "nativeMobileUpdateCommand": "npm run mobile:update:ios"
+  "nativeMobileUpdateCommand": "npm run mobile:update:ios",
+  "nativeMobileReleaseGuardrailRelease": "7.64.40",
+  "publicBetaReadinessRelease": "7.64.40",
+  "securityAuditRelease": "7.64.40",
+  "liveConsumerBrandConsistencyRelease": "7.64.40",
+  "liveAccountSecurityReleaseVisibilityRelease": "7.64.40"
 }

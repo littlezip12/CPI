@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <title>WPI Live | Water Polo Index</title>
-  <meta name="description" content="Private WPI Live workspace for team administration, scoring and following games.">
+  <title>Water Polo HQ | Water Polo Index</title>
+  <meta name="description" content="Private Water Polo HQ workspace for team administration, scoring and following games.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
   <main class="live-dashboard-shell" id="liveDashboardApp" hidden>
     <header class="live-dashboard-header">
       <div class="live-club-header-copy">
-        <p class="live-sandbox-kicker">WPI Live</p>
+        <p class="live-sandbox-kicker">Water Polo HQ</p>
         <h1 id="dashboardClubName">Lamorinda Water Polo</h1>
         <p class="live-dashboard-team-context">Team: <strong id="dashboardTeamName">14U Boys A</strong></p>
         <p id="dashboardSubtitle">Manage this team, prepare game day, and review results.</p>
@@ -138,19 +138,19 @@
             <a href="#dashboardGameDaySetup"><span aria-hidden="true">⚙</span>Game Day Setup</a>
             <a href="#dashboardGameArchive"><span aria-hidden="true">▤</span>Tournaments &amp; weekends</a>
           </nav>
-          <div class="live-dashboard-sidebar-help"><strong>WPI Live</strong><span>Ready for game day.</span></div>
+          <div class="live-dashboard-sidebar-help"><strong>Water Polo HQ</strong><span>Ready for game day.</span></div>
         </aside>
 
         <div class="live-dashboard-main">
           <div hidden aria-hidden="true"><span id="dashboardRoleMetric">—</span><span id="dashboardGameCount">0</span><span id="dashboardDeliveryMetric">Not connected</span></div>
           <section class="live-panel live-role-home" id="dashboardRoleHome" hidden>
             <div class="live-panel-heading">
-              <div><p class="live-section-kicker" id="roleHomeKicker">WPI Live</p><h2 id="roleHomeTitle">Your games</h2></div>
+              <div><p class="live-section-kicker" id="roleHomeKicker">Water Polo HQ</p><h2 id="roleHomeTitle">Your games</h2></div>
               <button id="refreshRoleHomeButton" type="button">Refresh</button>
             </div>
             <p class="live-panel-help" id="roleHomeHelp">Choose a game to follow the score, game clock and play-by-play.</p>
             <section class="live-following-panel" id="roleHomeFollowingPanel" hidden>
-              <div class="live-following-heading"><div><strong>Following WPI teams</strong><small id="followingSummary">Find a WPI Live team to follow</small></div><span>Read only</span></div>
+              <div class="live-following-heading"><div><strong>Following WPI teams</strong><small id="followingSummary">Find a Water Polo HQ team to follow</small></div><span>Read only</span></div>
               <p class="live-following-explainer">Following is separate from team membership. Search onboarded Live teams here, or use My Teams to discover the full WPI directory. Following never grants scoring or admin access. <a href="live-following.html">Open My Teams →</a></p>
               <div class="live-follow-team-filters" aria-label="Find teams to follow">
                 <label><span>Search</span><input id="followingSearch" type="search" placeholder="Search team…" autocomplete="off"></label>
@@ -158,7 +158,7 @@
                 <label><span>Group</span><select id="followingGenderFilter"><option value="all">Boys & girls</option><option value="boys">Boys</option><option value="girls">Girls</option><option value="coed">Coed</option></select></label>
               </div>
               <div id="followingCurrent" class="live-follow-current"></div>
-              <div id="followingTeamList" class="live-follow-team-list"><p class="live-empty-state">Loading WPI Live teams…</p></div>
+              <div id="followingTeamList" class="live-follow-team-list"><p class="live-empty-state">Loading Water Polo HQ teams…</p></div>
               <p id="followingMessage" class="live-validation-message" role="status"></p>
             </section>
             <div id="roleHomeTeamFilters" class="live-role-team-filters" hidden aria-label="Filter games by team"></div>
@@ -200,7 +200,7 @@
               <a class="live-readiness-item" id="readinessProfile" href="#dashboardTeamProfile"><span aria-hidden="true">◇</span><div><strong>Profile</strong><small>Team identity</small></div><em>Checking</em></a>
               <a class="live-readiness-item" id="readinessRoster" href="#dashboardRoster"><span aria-hidden="true">≡</span><div><strong>Roster</strong><small>Players ready</small></div><em>Checking</em></a>
               <a class="live-readiness-item" id="readinessAccess" href="#dashboardTeamAccess"><span aria-hidden="true">◎</span><div><strong>Scoring access</strong><small>Coverage ready</small></div><em>Checking</em></a>
-              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span aria-hidden="true">◉</span><div><strong>Score delivery</strong><small>WPI Live or GroupMe</small></div><em>Checking</em></a>
+              <a class="live-readiness-item" id="readinessGroupMe" href="#dashboardGroupMe"><span aria-hidden="true">◉</span><div><strong>Score delivery</strong><small>Water Polo HQ or GroupMe</small></div><em>Checking</em></a>
               <a class="live-readiness-item" id="readinessLineup" href="#dashboardRoster"><span aria-hidden="true">☆</span><div><strong>Default starters</strong><small>Launch lineup</small></div><em>Checking</em></a>
             </div>
 
@@ -328,19 +328,19 @@
               <p id="teamAccessUnavailable" class="live-panel-help" hidden>Team access is managed by the Team Owner or an Admin.</p>
             </article>
                 <article class="live-panel live-groupme-setup-panel" id="dashboardGroupMe">
-              <div class="live-panel-heading live-groupme-setup-heading"><div><p class="live-section-kicker">Score delivery</p><h2>WPI Live only</h2></div><div class="live-groupme-status-pill" id="groupMeSetupStatusPill">Checking</div></div>
-              <p class="live-panel-help">WPI Live is always the canonical score surface. GroupMe is an optional external delivery channel for teams that use it.</p>
+              <div class="live-panel-heading live-groupme-setup-heading"><div><p class="live-section-kicker">Score delivery</p><h2>Water Polo HQ only</h2></div><div class="live-groupme-status-pill" id="groupMeSetupStatusPill">Checking</div></div>
+              <p class="live-panel-help">Water Polo HQ is always the canonical score surface. GroupMe is an optional external delivery channel for teams that use it.</p>
               <fieldset class="live-score-delivery-options" id="scoreDeliveryModeOptions">
                 <legend>Supporter score delivery</legend>
-                <label><input id="scoreDeliveryWpiOnly" type="radio" name="scoreDeliveryMode" value="wpi_live_only"><span><strong>WPI Live only</strong><small>Scores, finals and recaps stay available to WPI supporters. No GroupMe required.</small></span></label>
-                <label><input id="scoreDeliveryGroupMe" type="radio" name="scoreDeliveryMode" value="wpi_live_groupme"><span><strong>WPI Live + GroupMe</strong><small>Keep WPI Live canonical and also post updates to a tested GroupMe topic.</small></span></label>
+                <label><input id="scoreDeliveryWpiOnly" type="radio" name="scoreDeliveryMode" value="wpi_live_only"><span><strong>Water Polo HQ only</strong><small>Scores, finals and recaps stay available to WPI supporters. No GroupMe required.</small></span></label>
+                <label><input id="scoreDeliveryGroupMe" type="radio" name="scoreDeliveryMode" value="wpi_live_groupme"><span><strong>Water Polo HQ + GroupMe</strong><small>Keep Water Polo HQ canonical and also post updates to a tested GroupMe topic.</small></span></label>
               </fieldset>
               <p id="scoreDeliveryModeMessage" class="live-validation-message" role="status"></p>
               <div id="groupMeAdminPanel" hidden>
                 <div class="live-groupme-self-service-note"><strong>Self-service setup</strong><span id="groupMeManagerScope">Choose a destination, test it, then activate it for new games.</span></div>
                 <div class="live-groupme-step-list">
                   <section class="live-groupme-step-card" id="groupMeGroupStep"><span class="live-step-number">1</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Team GroupMe</h3><span class="live-groupme-step-state" id="groupMeGroupState">Choose</span></div><p id="groupMeGroupHelp">Select the GroupMe being used for this tournament.</p><div class="live-form-grid live-groupme-form live-groupme-step-form"><label>GroupMe<select id="groupMeGroupSelect" disabled><option value="">Choose GroupMe</option></select></label></div><div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeGroupsButton" type="button">Choose team GroupMe</button></div></div></section>
-                  <section id="groupMeTopicPanel" class="live-groupme-step-card live-groupme-topic-panel"><span class="live-step-number">2</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Score Updates Topic</h3><span class="live-groupme-step-state" id="groupMeTopicState">Choose</span></div><p>Choose the topic where WPI Live should post every game update.</p><div class="live-form-grid live-groupme-form live-groupme-step-form"><label>Topic<select id="groupMeTopicSelect" disabled><option value="">Choose a GroupMe first</option></select></label></div><div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeTopicsButton" type="button" disabled>Refresh topics</button></div><p id="groupMeDiscoveryMessage" class="live-validation-message" role="status"></p></div></section>
+                  <section id="groupMeTopicPanel" class="live-groupme-step-card live-groupme-topic-panel"><span class="live-step-number">2</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Score Updates Topic</h3><span class="live-groupme-step-state" id="groupMeTopicState">Choose</span></div><p>Choose the topic where Water Polo HQ should post every game update.</p><div class="live-form-grid live-groupme-form live-groupme-step-form"><label>Topic<select id="groupMeTopicSelect" disabled><option value="">Choose a GroupMe first</option></select></label></div><div class="live-dashboard-actions live-step-actions"><button id="loadGroupMeTopicsButton" type="button" disabled>Refresh topics</button></div><p id="groupMeDiscoveryMessage" class="live-validation-message" role="status"></p></div></section>
                   <section class="live-groupme-step-card" id="groupMeTestStep"><span class="live-step-number">3</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Test connection</h3><span class="live-groupme-step-state" id="groupMeTestState">Not tested</span></div><p>WPI will send one test message to the selected topic. A successful test is required before activation.</p><div class="live-dashboard-actions live-step-actions"><button id="testGroupMeButton" type="button" disabled>Send test message</button></div></div></section>
                   <section class="live-groupme-step-card" id="groupMeActivateStep"><span class="live-step-number">4</span><div class="live-step-body"><div class="live-groupme-step-title"><h3>Use for new games</h3><span class="live-groupme-step-state" id="groupMeActivateState">Waiting</span></div><p>Activate the tested destination. New games will automatically inherit it.</p><div class="live-dashboard-actions live-step-actions"><button id="saveGroupMeButton" type="button" disabled>Use for new games</button><button id="pauseGroupMeButton" class="live-secondary-button" type="button" hidden>Pause score updates</button></div></div></section>
                 </div>
@@ -387,8 +387,8 @@
 
     <dialog id="accountRegistryDialog" class="live-dialog live-account-registry-dialog">
       <form method="dialog">
-        <div class="live-panel-heading"><div><p class="live-section-kicker">Platform Owner · Pilot operations</p><h2>WPI Live account registry</h2></div><button value="cancel" aria-label="Close account registry">Close</button></div>
-        <p class="live-panel-help">Operational signup records for WPI Live. Names, emails and account lifecycle timestamps are available only to the Platform Owner through a protected server-side function.</p>
+        <div class="live-panel-heading"><div><p class="live-section-kicker">Platform Owner · Pilot operations</p><h2>Water Polo HQ account registry</h2></div><button value="cancel" aria-label="Close account registry">Close</button></div>
+        <p class="live-panel-help">Operational signup records for Water Polo HQ. Names, emails and account lifecycle timestamps are available only to the Platform Owner through a protected server-side function.</p>
         <div class="live-account-registry-note"><span aria-hidden="true">✓</span><div><strong>Account records, not marketing consent.</strong><br>WPI stores these records to operate secure access and the pilot. Passwords, auth tokens, GroupMe credentials and OpenAI keys are never included here.</div></div>
         <div class="live-account-registry-metrics" aria-label="Account registry summary">
           <div class="live-account-registry-metric"><strong id="accountRegistryTotal">—</strong><span>Total accounts</span></div>
@@ -529,7 +529,7 @@
           <label>Game date<input id="planGameDate" type="date"></label>
           <label>Number of games<select id="planGameCount"><option value="1">1 game</option><option value="2" selected>2 games</option><option value="3">3 games</option><option value="4">4 games</option><option value="5">5 games</option><option value="6">6 games</option></select></label>
         </div>
-        <p class="live-game-reconcile-note"><span aria-hidden="true">✓</span><span><strong>No fake schedule data.</strong> When the real schedule appears, open each planned slot and add the opponent/time. That real game then becomes the canonical WPI Live record.</span></p>
+        <p class="live-game-reconcile-note"><span aria-hidden="true">✓</span><span><strong>No fake schedule data.</strong> When the real schedule appears, open each planned slot and add the opponent/time. That real game then becomes the canonical Water Polo HQ record.</span></p>
         <p id="planGameSlotsMessage" class="live-validation-message" role="status"></p>
         <div class="live-dialog-actions"><button value="cancel">Cancel</button><button id="confirmPlanGameSlotsButton" type="button">Plan games</button></div>
       </form>
@@ -552,7 +552,7 @@
         <div class="live-panel-heading"><div><p class="live-section-kicker">Multi-team workspace</p><h2>Add another team</h2></div><button value="cancel" aria-label="Close add team dialog">Close</button></div>
         <p class="live-team-switch-summary">Create a separate team under this club. It receives its own stable team ID, roster, access, games and GroupMe destination; existing team records are never copied into it.</p>
         <div class="live-team-name-suggestion">
-          <div><span>Suggested WPI Live name</span><strong id="newTeamSuggestedName">Lamorinda A 14U Boys</strong><small id="newTeamSuggestedLabel">Workspace label: 14U Boys A</small></div>
+          <div><span>Suggested Water Polo HQ name</span><strong id="newTeamSuggestedName">Lamorinda A 14U Boys</strong><small id="newTeamSuggestedLabel">Workspace label: 14U Boys A</small></div>
           <button id="useSuggestedTeamNameButton" type="button">Use suggested</button>
         </div>
         <div class="live-create-team-form">
@@ -587,7 +587,7 @@
   <script src="js/live-team-following-v7-60-3.js?v=7.60.3"></script>
   <script src="js/live-groupme-setup-v7-57-4.js?v=7.57.20"></script>
   <script src="js/live-tournament-feed-v7-58-5.js?v=7.58.5"></script>
-  <script src="js/live-dashboard-v7-64-10.js?v=7.64.10"></script>
+  <script src="js/live-dashboard-v7-64-40.js?v=7.64.40"></script>
   <script src="js/live-opponent-autocomplete-v7-64-6.js?v=7.64.6"></script>
   <script src="js/live-mobile-game-setup-v7-64-4.js?v=7.64.4"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

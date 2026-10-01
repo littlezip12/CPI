@@ -13,13 +13,13 @@ def req(cond,msg):
 pkg=json.loads(read('package.json'))
 site=json.loads(read('config/site-release.json'))
 html=read('live-organization-insights.html')
-js=read('js/live-organization-insights-v7-64-34.js')
+js=read('js/live-organization-insights-v7-64-40.js' if (ROOT/'js/live-organization-insights-v7-64-40.js').exists() else 'js/live-organization-insights-v7-64-34.js')
 css=read('css/live-organization-insights-v7-64-34.css')
 sql=read('supabase/migrations/202609270001_organization_insights_stable_identity_team_season.sql')
 version=read('VERSION.md')
 
-req(pkg.get('version') in {'7.64.34','7.64.35','7.64.36','7.64.38','7.64.39'},'package version must be 7.64.34 or a compatible successor through 7.64.39')
-req(site.get('version') in {'7.64.34','7.64.35','7.64.36','7.64.38','7.64.39'},'site release version must be 7.64.34 or a compatible successor through 7.64.39')
+req(pkg.get('version') in {'7.64.34','7.64.35','7.64.36','7.64.38','7.64.39','7.64.40'},'package version must be 7.64.34 or a compatible successor through 7.64.40')
+req(site.get('version') in {'7.64.34','7.64.35','7.64.36','7.64.38','7.64.39','7.64.40'},'site release version must be 7.64.34 or a compatible successor through 7.64.40')
 req(site.get('liveOrganizationInsightsStableIdentityRelease')=='7.64.34','stable identity release marker missing')
 req(site.get('liveOrganizationInsightsTeamSeasonRelease')=='7.64.34','team-season release marker missing')
 req('Organization Insights Identity & Team-Scoped Season Stats' in version,'VERSION release heading missing')
@@ -40,7 +40,7 @@ req("group by a.team_id,coalesce(nullif(trim(lp.client_player_id),''),p->>'playe
 player_section=sql[sql.index('with latest_player_names'):sql.index('select coalesce(jsonb_agg(jsonb_build_object(\n    \'gameId\'', sql.index('with latest_player_names'))]
 req("p->>'cap'" not in player_section,'cap must not participate in organization player aggregation')
 
-req('js/live-organization-insights-v7-64-34.js?v=7.64.34' in html,'page must load 7.64.34 organization runtime')
+req(('js/live-organization-insights-v7-64-34.js?v=7.64.34' in html) or ('js/live-organization-insights-v7-64-40.js?v=7.64.40' in html),'page must load 7.64.34 organization runtime or approved 7.64.40 brand successor')
 req('css/live-organization-insights-v7-64-34.css?v=7.64.34' in html,'page must load 7.64.34 organization stylesheet')
 req('Season player totals by team' in html,'team-season player heading missing')
 req('Cap numbers are game-day context' in html,'cap identity explanation missing')

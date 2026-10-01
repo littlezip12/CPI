@@ -1,3 +1,13 @@
+# WPI 7.64.40 — Public Beta Readiness, Brand Consistency & Native Release Guardrails
+
+WPHQ 7.64.40 prepares the product for broader family testing without changing scoring or tournament behavior. Active consumer and operational surfaces now use **Water Polo HQ** consistently as the product name while **Water Polo Index / WPI** remains available for ranking methodology, canonical directory identity, and ranking-data references.
+
+Account Security now exposes the exact WPHQ release and whether the user is running the installed iOS bundle or a browser session. The native release workflow is also corrected for first-run and upgrade sequencing: the normal release gate validates the generated Capacitor bundle without failing merely because a previously synced local Xcode payload is stale, while `npm run mobile:update:ios` performs the sync and then requires strict iOS parity before opening Xcode.
+
+A live Supabase security-advisor review is captured for public-beta planning. The current production project reports leaked-password protection disabled and a broad `SECURITY DEFINER` RPC surface callable by the unauthenticated `anon` database role. Because WPHQ also intentionally uses Supabase anonymous Auth for guest scorers and exposes some public score/tournament RPCs, this release does **not** apply a blanket permission migration. The audit is documented for a separate least-privilege hardening release after function-by-function classification.
+
+No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.39 — Unified Web + Native Release Pipeline
 
 WPHQ 7.64.39 makes the repository-root Water Polo HQ product the explicit single source for both browser and Capacitor delivery. The mobile builder now reads the current site release dynamically, generates `mobile/www` from that exact runtime, stamps every native HTML page with the source release, and writes a deterministic native release manifest for traceability.
