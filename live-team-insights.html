@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-team-insights-v7-64-38.css?v=7.64.38">
+  <link rel="stylesheet" href="css/live-team-insights-v7-64-43.css?v=7.64.43">
 <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
 <body class="wpi-team-insights-page">
   <main class="insights-shell">
@@ -118,9 +118,9 @@
       <article class="insights-panel insights-player-analytics-v2" id="playerAnalyticsPanel">
         <div class="insights-heading insights-player-heading">
           <div><p>Player stats</p><h2>Compare Players</h2></div>
-          <span>Up to 4</span>
+          <span>Compare up to 4</span>
         </div>
-        <p class="insights-player-intro">Compare performance across the season, an event, or one game. Only players rostered for the selected scope appear; your selections return when you move back to a broader scope.</p>
+        <p class="insights-player-intro">Compare up to four players side by side, or use Coach Report for the full roster. Choose Season, Event, or Game; only players rostered for that scope appear.</p>
 
         <div class="insights-player-scope-tabs" id="playerScopeTabs" role="group" aria-label="Player stats scope">
           <button type="button" class="is-active" data-player-scope-mode="season">Season</button>
@@ -131,6 +131,22 @@
           <label id="playerSeriesWrap" hidden><span>Event</span><select id="playerSeriesSelect"></select></label>
           <label id="playerGameWrap" hidden><span>Game</span><select id="playerGameSelect"></select></label>
         </div>
+
+        <section class="insights-coach-report-card" aria-labelledby="coachReportTitle">
+          <div class="insights-coach-report-head">
+            <div><p>Coach report</p><h3 id="coachReportTitle">Full roster player stats</h3><span>Uses the selected Season / Event / Game scope and includes every rostered player — not just the four-player comparison.</span></div>
+            <div class="insights-coach-report-actions">
+              <button id="coachReportToggle" type="button" aria-expanded="false" aria-controls="coachReportPanel">View full roster</button>
+              <button id="coachReportCopy" type="button">Copy report</button>
+              <button id="coachReportCsv" type="button">Download CSV</button>
+            </div>
+          </div>
+          <div id="coachReportStatus" class="insights-coach-report-status" aria-live="polite"></div>
+          <div id="coachReportPanel" class="insights-coach-report-panel" hidden>
+            <div class="insights-coach-report-meta"><strong id="coachReportPlayerCount">0 players</strong><span>Unofficial stats reflect scorer-entered actions.</span></div>
+            <div id="coachReportBody"></div>
+          </div>
+        </section>
 
         <button id="playerPickerToggle" class="insights-player-picker-toggle" type="button" aria-expanded="false" aria-controls="playerPickerPanel">
           <span><strong id="playerPickerToggleLabel">Choose players</strong><small id="playerPickerToggleMeta">0 of 4 selected</small></span><span class="insights-player-picker-chevron" aria-hidden="true">⌄</span>
@@ -179,7 +195,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.22"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-team-insights-v7-64-38.js?v=7.64.38"></script>
+  <script src="js/live-team-insights-v7-64-43.js?v=7.64.43"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/live-pwa-v7-64-23.js?v=7.64.23"></script>

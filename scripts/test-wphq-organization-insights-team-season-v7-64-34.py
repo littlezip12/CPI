@@ -18,8 +18,12 @@ css=read('css/live-organization-insights-v7-64-34.css')
 sql=read('supabase/migrations/202609270001_organization_insights_stable_identity_team_season.sql')
 version=read('VERSION.md')
 
-req(pkg.get('version') in {'7.64.34','7.64.35','7.64.36','7.64.38','7.64.39','7.64.40','7.64.41'},'package version must be 7.64.34 or a compatible successor through 7.64.41')
-req(site.get('version') in {'7.64.34','7.64.35','7.64.36','7.64.38','7.64.39','7.64.40','7.64.41'},'site release version must be 7.64.34 or a compatible successor through 7.64.41')
+def semver_at_least(value,floor):
+    try: return tuple(int(x) for x in str(value).split('.')[:3]) >= tuple(int(x) for x in floor.split('.')[:3])
+    except Exception: return False
+
+req(semver_at_least(pkg.get('version'),'7.64.34'),'package version must preserve 7.64.34 or later')
+req(semver_at_least(site.get('version'),'7.64.34'),'site release version must preserve 7.64.34 or later')
 req(site.get('liveOrganizationInsightsStableIdentityRelease')=='7.64.34','stable identity release marker missing')
 req(site.get('liveOrganizationInsightsTeamSeasonRelease')=='7.64.34','team-season release marker missing')
 req('Organization Insights Identity & Team-Scoped Season Stats' in version,'VERSION release heading missing')

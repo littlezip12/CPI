@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.43 Coach Full-Roster Stats + ECC/Security Merge Check\n'
+python3 -m py_compile \
+  scripts/build-mobile-web-v7-64-39.py \
+  scripts/test-wphq-coach-full-roster-stats-v7-64-43.py \
+  scripts/test-wphq-ecc-security-merge-v7-64-43.py \
+  scripts/test-wphq-unified-mobile-release-v7-64-43.py \
+  scripts/check-wphq-ecc-google-source-v7-64-42.py
+node --check js/live-team-insights-v7-64-43.js
+node --check js/ecc-google-live-v7-64-42.js
+node --check js/tournament-platform-v7-64-42.js
+node scripts/test-wphq-ecc-google-live-v7-64-42.js
+node scripts/test-wphq-ecc-google-route-runtime-v7-64-42.js
+python3 scripts/test-live-delivery-finalization-reliability-v7-64-31.py
+python3 scripts/test-live-poolside-throughput-v7-64-32.py
+python3 scripts/test-wphq-account-auth-ux-v7-64-33.py
+python3 scripts/test-wphq-organization-insights-team-season-v7-64-34.py
+python3 scripts/test-wphq-coach-full-roster-stats-v7-64-43.py
+python3 scripts/test-wphq-ecc-security-merge-v7-64-43.py
+python3 scripts/test-wphq-unified-mobile-release-v7-64-43.py
+python3 scripts/check-wphq-ecc-google-source-v7-64-42.py
+printf '\nWater Polo HQ 7.64.43 coach/ECC/security merged release check passed.\n'

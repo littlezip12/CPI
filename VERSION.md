@@ -1,3 +1,11 @@
+# WPI 7.64.43 — Coach Full-Roster Player Stats + ECC/Security Merge
+
+WPHQ 7.64.43 converges the two parallel October release streams without dropping either one. It preserves the actually pushed 7.64.41 Supabase SECURITY DEFINER least-privilege hardening, restores the completed 7.64.42 ECC Google `MASTER BY DIVISION` live-results and Team Journey history behavior, and adds a coach-facing full-roster player-stat report to Team Insights.
+
+The existing Player Stats comparison remains intentionally capped at four players for side-by-side readability. A separate **Coach Report** now exposes every rostered player returned by `live_team_player_insights_v2` for the selected Season / Event / Game scope, with the complete scorer-entered stat vocabulary. The report can be viewed on screen, copied as tab-separated text, or downloaded as CSV. This directly supports weekend/tournament requests from coaches without changing the analytics backend.
+
+ECC continues to use the verified 7.64.36 schedule as the structural baseline while the 7.64.42 Google adapter overlays current teams/results every 60 seconds using stable WPHQ game IDs and existing JO-style routing. No new Supabase migration or Edge Function is required by 7.64.43; production retains the already-applied 7.64.41 security migration.
+
 # WPI 7.64.41 — Supabase SECURITY DEFINER Least-Privilege Hardening
 
 WPHQ 7.64.41 hardens the production Supabase RPC boundary identified in the 7.64.40 public-beta audit without changing scoring logic, RLS policies, public-score behavior, or native/web UX. The 77 `public` `SECURITY DEFINER` functions that were executable through the signed-out `anon` database role are now explicitly classified: **13 intentional public RPCs**, **54 authenticated application RPCs**, and **10 internal trigger functions**.
