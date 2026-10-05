@@ -1,3 +1,11 @@
+# WPI 7.64.42 — ECC Google Live Results + Team Journey History
+
+WPHQ 7.64.42 promotes the 2026 Evan Cousineau Memorial Cup from the verified 7.64.36 schedule baseline to a read-only live-results experience backed by the organizer's public Google Sheet `MASTER BY DIVISION` tab. The live adapter reconciles all 335 ECC games by stable game ID, normalizes the 10U Coed Platinum/Silver source IDs, overlays current team assignments and decisive posted scores, preserves the verified bracket/group routing baseline, refreshes every 60 seconds, and falls back to the repository schedule if Google is unavailable.
+
+The selected-team journey now includes completed games with result, opponent, team-perspective final score, date/time, venue, and map links while preserving the existing Tournament Record, next scheduled game, pinning, and JO-style route resolution. WPHQ never writes to the organizer's Google Sheet.
+
+No Supabase migration or Edge Function deployment is required.
+
 # WPI 7.64.40 — Public Beta Readiness, Brand Consistency & Native Release Guardrails
 
 WPHQ 7.64.40 prepares the product for broader family testing without changing scoring or tournament behavior. Active consumer and operational surfaces now use **Water Polo HQ** consistently as the product name while **Water Polo Index / WPI** remains available for ranking methodology, canonical directory identity, and ranking-data references.

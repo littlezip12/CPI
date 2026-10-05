@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.42 ECC Google Live Results + Team Journey History Check\n'
+python3 -m py_compile \
+  scripts/check-wphq-ecc-google-source-v7-64-42.py \
+  scripts/test-wphq-public-beta-readiness-v7-64-40.py \
+  scripts/test-wphq-unified-mobile-release-v7-64-40.py \
+  scripts/test-wphq-ecc-google-release-v7-64-42.py
+node --check js/ecc-google-live-v7-64-42.js
+node --check js/tournament-platform-v7-64-42.js
+node scripts/test-wphq-ecc-google-live-v7-64-42.js
+node scripts/test-wphq-ecc-google-route-runtime-v7-64-42.js
+python3 scripts/test-wphq-mobile-player-security-brand-v7-64-38.py
+python3 scripts/test-wphq-public-beta-readiness-v7-64-40.py
+python3 scripts/test-wphq-unified-mobile-release-v7-64-40.py
+python3 scripts/test-wphq-ecc-google-release-v7-64-42.py
+python3 scripts/check-wphq-ecc-google-source-v7-64-42.py
+printf '\nWater Polo HQ 7.64.42 ECC Google live release check passed.\n'

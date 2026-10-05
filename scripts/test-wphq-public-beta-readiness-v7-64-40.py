@@ -13,8 +13,11 @@ def req(cond, msg):
 
 site = json.loads((ROOT/"config/site-release.json").read_text())
 pkg = json.loads((ROOT/"package.json").read_text())
-req(site.get("version") == "7.64.40", "site release must be 7.64.40")
-req(pkg.get("version") == "7.64.40", "package release must be 7.64.40")
+def semver(value):
+    try: return tuple(int(x) for x in str(value).split('.')[:3])
+    except Exception: return (0,0,0)
+req(semver(site.get("version")) >= semver("7.64.40"), "site release must preserve 7.64.40 or later")
+req(pkg.get("version") == site.get("version"), "package release must exactly match site release")
 req(site.get("publicBetaReadinessRelease") == "7.64.40", "public beta readiness marker missing")
 req(site.get("securityAuditRelease") == "7.64.40", "security audit marker missing")
 req(site.get("nativeMobileReleaseGuardrailRelease") == "7.64.40", "native guardrail marker missing")
