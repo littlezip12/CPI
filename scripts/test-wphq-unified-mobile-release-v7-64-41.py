@@ -29,7 +29,7 @@ lock = json.loads((ROOT/'package-lock.json').read_text())
 contract = json.loads((ROOT/'mobile/app-contract.json').read_text())
 release = site.get('version')
 
-req(semver_at_least(release, '7.64.40'), 'site release must preserve 7.64.40 or later')
+req(semver_at_least(release, '7.64.41'), 'site release must preserve 7.64.41 or later')
 req(package.get('version') == release, 'package.json version must exactly match site release')
 req(lock.get('version') == release, 'package-lock top-level version must exactly match site release')
 req(lock.get('packages',{}).get('',{}).get('version') == release, 'package-lock root package version must exactly match site release')
@@ -39,7 +39,7 @@ req(site.get('nativeMobileBundlePolicy') == 'same-source-generated-bundle', 'sam
 
 scripts = package.get('scripts',{})
 req(scripts.get('mobile:prepare') == 'python3 scripts/build-mobile-web-v7-64-39.py', 'mobile:prepare must use release-aware 7.64.39 builder')
-req(scripts.get('mobile:verify') in {'python3 scripts/test-wphq-unified-mobile-release-v7-64-40.py','python3 scripts/test-wphq-unified-mobile-release-v7-64-41.py'}, 'mobile:verify must use 7.64.40 verifier or compatible 7.64.41 successor')
+req(scripts.get('mobile:verify') == 'python3 scripts/test-wphq-unified-mobile-release-v7-64-41.py', 'mobile:verify must use 7.64.41 parity verifier')
 req('npx cap sync ios' in scripts.get('mobile:sync:ios',''), 'mobile:sync:ios must sync the generated bundle into iOS')
 for token in ['mobile:preflight:ios','mobile:prepare','npx cap sync ios','mobile:verify -- --require-ios','npx cap open ios']:
     req(token in scripts.get('mobile:update:ios',''), f'mobile:update:ios missing {token}')
@@ -119,12 +119,12 @@ for token in ['same repository-root source', 'npm run mobile:update:ios', 'TestF
     req(token in readme, f'mobile README missing unified-release guidance: {token}')
 
 if errors:
-    print('WPHQ 7.64.40 UNIFIED WEB / NATIVE RELEASE TEST FAILED')
+    print('WPHQ 7.64.41 UNIFIED WEB / NATIVE RELEASE TEST FAILED')
     for e in errors:
         print(' -', e)
     sys.exit(1)
 
-print('WPHQ 7.64.40 UNIFIED WEB / NATIVE RELEASE TEST PASSED')
+print('WPHQ 7.64.41 UNIFIED WEB / NATIVE RELEASE TEST PASSED')
 print(f' - web release {release} is the single source for the generated Capacitor bundle')
 print(' - current Team Insights/auth/organization/native assets are copied byte-for-byte into mobile/www')
 print(' - every native HTML page carries the exact source-release marker')

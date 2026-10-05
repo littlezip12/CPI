@@ -1,10 +1,12 @@
-# WPI 7.64.42 — ECC Google Live Results + Team Journey History
+# WPI 7.64.41 — Supabase SECURITY DEFINER Least-Privilege Hardening
 
-WPHQ 7.64.42 promotes the 2026 Evan Cousineau Memorial Cup from the verified 7.64.36 schedule baseline to a read-only live-results experience backed by the organizer's public Google Sheet `MASTER BY DIVISION` tab. The live adapter reconciles all 335 ECC games by stable game ID, normalizes the 10U Coed Platinum/Silver source IDs, overlays current team assignments and decisive posted scores, preserves the verified bracket/group routing baseline, refreshes every 60 seconds, and falls back to the repository schedule if Google is unavailable.
+WPHQ 7.64.41 hardens the production Supabase RPC boundary identified in the 7.64.40 public-beta audit without changing scoring logic, RLS policies, public-score behavior, or native/web UX. The 77 `public` `SECURITY DEFINER` functions that were executable through the signed-out `anon` database role are now explicitly classified: **13 intentional public RPCs**, **54 authenticated application RPCs**, and **10 internal trigger functions**.
 
-The selected-team journey now includes completed games with result, opponent, team-perspective final score, date/time, venue, and map links while preserving the existing Tournament Record, next scheduled game, pinning, and JO-style route resolution. WPHQ never writes to the organizer's Google Sheet.
+The migration revokes inherited `PUBLIC` execution from all 77 functions, limits signed-out `anon` execution to the 13 public allowlisted functions, keeps authenticated permanent accounts and Supabase anonymous-Auth guest scorers on the 54 application RPCs, and removes direct client execution from trigger helpers. Supabase anonymous Auth continues to work because anonymous Auth users carry the `authenticated` Postgres role, not the signed-out `anon` role. The two `auth.users` trigger helpers also retain explicit `supabase_auth_admin` execution as a compatibility guard.
 
-No Supabase migration or Edge Function deployment is required.
+Future functions created by `postgres` in `public` default to no `EXECUTE` for `PUBLIC`, `anon`, or `authenticated`, forcing future client RPC exposure to be explicit. `service_role` defaults are left unchanged. The four RLS-enabled/no-policy server tables remain deny-all to direct client access and are not modified. Leaked-password protection and Turnstile remain Auth/dashboard configuration follow-ups rather than SQL changes in this release.
+
+Supabase migration: `202610010001_security_definer_least_privilege.sql`. No Edge Function deployment is required.
 
 # WPI 7.64.40 — Public Beta Readiness, Brand Consistency & Native Release Guardrails
 

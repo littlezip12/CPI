@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "release": "7.64.41",
+  "productionProjectRef": "jmdamtxspyshjxgmunda",
+  "policy": "explicit-execute-grants-by-runtime-category",
+  "anonymousAuthDatabaseRole": "authenticated",
+  "categories": {
+    "publicUnauthenticated": {
+      "count": 13,
+      "databaseRoles": [
+        "anon",
+        "authenticated",
+        "service_role"
+      ],
+      "functions": [
+        "live_ad_select_v1",
+        "live_ad_select_v2",
+        "live_public_game_score_v1",
+        "live_public_game_score_v2",
+        "live_public_organization_overview_v1",
+        "live_public_scoreboard_v1",
+        "live_public_scoreboard_v2",
+        "live_public_scoreboard_v3",
+        "live_public_tournament_catalog_v1",
+        "live_public_tournament_v1",
+        "live_public_tournament_v2",
+        "live_record_ad_delivery_v1",
+        "live_registration_status"
+      ]
+    },
+    "authenticatedApplication": {
+      "count": 54,
+      "databaseRoles": [
+        "authenticated",
+        "service_role"
+      ],
+      "functions": [
+        "live_accept_team_invite",
+        "live_can_manage_groupme",
+        "live_can_view_game",
+        "live_cancel_planned_game_v1",
+        "live_club_pilot_validation_v1",
+        "live_club_workspace_v1",
+        "live_confirm_tournament_reconciliation_v1",
+        "live_dismiss_tournament_reconciliation_v1",
+        "live_game_day_queue",
+        "live_game_day_queue_v2",
+        "live_game_day_queue_v3",
+        "live_game_day_queue_v4",
+        "live_game_day_record_v1",
+        "live_game_series_archive_v1",
+        "live_game_series_archive_v2",
+        "live_game_series_archive_v3",
+        "live_game_series_archive_v4",
+        "live_groupme_delivery_summary",
+        "live_has_club_role",
+        "live_has_team_role",
+        "live_is_club_member",
+        "live_is_team_member",
+        "live_link_manual_tournament_game_v1",
+        "live_list_team_access",
+        "live_list_team_followers_v1",
+        "live_list_team_roster_versions_v1",
+        "live_list_user_clubs_v1",
+        "live_list_user_teams",
+        "live_list_user_teams_v2",
+        "live_merge_game_series_v1",
+        "live_prepare_game_start_v1",
+        "live_prepare_game_start_v2",
+        "live_prepare_game_start_v3",
+        "live_promote_supporter_to_scorer_v1",
+        "live_reissue_team_invite",
+        "live_remove_team_member",
+        "live_reopen_game_eligibility_v1",
+        "live_reopen_game_v1",
+        "live_revoke_team_invite",
+        "live_save_game_day_v1",
+        "live_save_game_day_v2",
+        "live_save_roster_version_v1",
+        "live_set_default_lineup_v1",
+        "live_set_team_follow_v1",
+        "live_sync_official_tournament_game_v1",
+        "live_team_workspace",
+        "live_team_workspace_v2",
+        "live_team_workspace_v3",
+        "live_team_workspace_v4",
+        "live_transfer_team_ownership",
+        "live_update_planned_game_v1",
+        "live_update_planned_game_v2",
+        "live_update_team_member_access",
+        "live_update_team_profile_v1"
+      ]
+    },
+    "internalTrigger": {
+      "count": 10,
+      "databaseRoles": [
+        "service_role"
+      ],
+      "functions": [
+        "live_add_owner_membership",
+        "live_capture_account_registry",
+        "live_clear_invalid_game_assignments",
+        "live_end_scorer_session_with_game",
+        "live_guard_game_configuration",
+        "live_guard_scorer_control_columns",
+        "live_guard_team_owner_change",
+        "live_handle_new_user",
+        "live_preserve_created_by",
+        "live_sync_account_registry_from_profile"
+      ]
+    }
+  },
+  "authTriggerCompatibility": {
+    "additionalRole": "supabase_auth_admin",
+    "functions": [
+      "live_capture_account_registry",
+      "live_handle_new_user"
+    ]
+  },
+  "futureDefaultPrivileges": {
+    "role": "postgres",
+    "schema": "public",
+    "revokedExecuteFrom": [
+      "PUBLIC",
+      "anon",
+      "authenticated"
+    ],
+    "serviceRoleDefaultUnchanged": true
+  },
+  "notes": [
+    "Supabase anonymous Auth users carry the authenticated Postgres role; guest scorer flows therefore remain in the authenticated category.",
+    "The anon role is reserved for signed-out public Data API access and is limited to the explicit public RPC allowlist.",
+    "Trigger functions are not exposed as client RPCs after this release; auth.users trigger helpers retain supabase_auth_admin EXECUTE as a compatibility guard."
+  ],
+  "rollback": {
+    "file": "supabase/rollback/202610010001_security_definer_least_privilege_rollback.sql",
+    "preReleasePublicDirectCount": 65,
+    "preReleaseNoPublicDirectCount": 12,
+    "all77DirectRoles": [
+      "anon",
+      "authenticated",
+      "service_role"
+    ],
+    "supabaseAuthAdminDirectCount": 0
+  }
+}

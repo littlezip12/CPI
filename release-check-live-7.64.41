@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.41 Supabase SECURITY DEFINER Least-Privilege Check\n'
+python3 -m py_compile \
+  scripts/build-mobile-web-v7-64-39.py \
+  scripts/test-wphq-security-definer-least-privilege-v7-64-41.py \
+  scripts/test-wphq-unified-mobile-release-v7-64-41.py
+bash ./release-check-live-7.64.40
+python3 scripts/test-wphq-security-definer-least-privilege-v7-64-41.py
+python3 scripts/test-wphq-unified-mobile-release-v7-64-41.py
+printf '\nWater Polo HQ 7.64.41 Supabase least-privilege security check passed.\n'

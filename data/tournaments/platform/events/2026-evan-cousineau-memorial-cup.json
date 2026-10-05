@@ -8,7 +8,7 @@
     "shortName": "Evan Cousineau Memorial Cup",
     "season": "2026",
     "kind": "tournament_schedule",
-    "status": "in_progress",
+    "status": "schedule_published",
     "operationsMode": "live_schedule",
     "sourceGap": null,
     "clubLogosEnabled": true,
@@ -18,12 +18,12 @@
     "publicPath": "tournament.html?event=2026-evan-cousineau-memorial-cup",
     "legacyPath": null,
     "logo": "assets/logos/usa-water-polo.webp",
-    "officialSourceUrl": "https://docs.google.com/spreadsheets/d/1MnXWw7DZ6SCosPD4wy1SY5g4gNMT8h1fa7zYTuO-BoU/edit",
+    "officialSourceUrl": "https://onedrive.live.com/:x:/g/personal/6f253ef3afcfe1c8/IQAeP081w5icT5v2gE07WQKbAbleQbur9GlpZuXPbLHVMGY?rtime=qdrLY-sd30g&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy82ZjI1M2VmM2FmY2ZlMWM4L0lRQWVQMDgxdzVpY1Q1djJnRTA3V1FLYkFibGVRYnVyOUdscFp1WFBiTEhWTUdZP2U9SGhGeHI2",
     "rankingEvidenceEnabled": false,
-    "sourcePolicy": "Official 2026 EC Cup Google Sheet \u00b7 MASTER BY DIVISION is the live result source. Water Polo HQ reconciles the sheet to the verified 335-game schedule by stable game ID; official posted scores and resolved team assignments overlay the verified bracket-routing baseline. No results are inferred.",
+    "sourcePolicy": "Official OneDrive workbook schedule exports supplied September 28, 2026 seed the schedule. Water Polo HQ preserves stable game IDs and JO-style bracket routing; official scores/results will overlay the same games when the best live result source is identified. No results are inferred.",
     "eventYear": 2026,
     "competitiveSeason": "2026-2027",
-    "seasonLabel": "2026\u20132027"
+    "seasonLabel": "2026–2027"
   },
   "summary": {
     "divisionCount": 13,
@@ -57,12 +57,9 @@
     "officialSourceLinks": true,
     "liveRefresh": true,
     "refreshSeconds": 60,
-    "refreshMode": "google_gviz_direct",
-    "scoreSourceStatus": "official_google_live_results",
-    "joStyleJourneyRouting": true,
-    "liveSourceProvider": "google_sheets",
-    "liveSourceSheetName": "MASTER BY DIVISION",
-    "liveSourceSpreadsheetId": "1MnXWw7DZ6SCosPD4wy1SY5g4gNMT8h1fa7zYTuO-BoU"
+    "refreshMode": "repository_poll",
+    "scoreSourceStatus": "pending_official_result_source",
+    "joStyleJourneyRouting": true
   },
   "sourceAdapters": [
     {

@@ -1,0 +1,35 @@
+WPHQ 7.64.41 — Supabase SECURITY DEFINER Least-Privilege Hardening
+Built from authoritative pushed ZIP: CPI-main - 2026-09-30T230529.507.zip
+Baseline SHA-256: 351700ac1bea4dc7ce684e80891ba206737c46d2ed4651fb333ab1f16e7fbeff
+
+Changed files:
+A  INSTALL_7.64.41.md
+M  VERSION.md
+A  WPHQ_7.64.41_SECURITY_DEFINER_LEAST_PRIVILEGE_HANDOFF.md
+A  config/security-definer-access-v7-64-41.json
+M  config/site-release.json
+M  mobile/app-contract.json
+M  package-lock.json
+M  package.json
+A  release-check-live-7.64.41
+M  scripts/test-wphq-organization-insights-team-season-v7-64-34.py
+M  scripts/test-wphq-public-beta-readiness-v7-64-40.py
+A  scripts/test-wphq-security-definer-least-privilege-v7-64-41.py
+M  scripts/test-wphq-unified-mobile-release-v7-64-40.py
+A  scripts/test-wphq-unified-mobile-release-v7-64-41.py
+A  supabase/migrations/202610010001_security_definer_least_privilege.sql
+A  supabase/rollback/202610010001_security_definer_least_privilege_rollback.sql
+A  supabase/validation/202610010001_security_definer_least_privilege_check.sql
+
+Production migration:
+supabase/migrations/202610010001_security_definer_least_privilege.sql
+
+Post-migration validation:
+supabase/validation/202610010001_security_definer_least_privilege_check.sql
+
+Emergency rollback:
+supabase/rollback/202610010001_security_definer_least_privilege_rollback.sql
+
+Classification: 13 public anon / 54 authenticated application / 10 internal trigger = 77 total.
+Build validation: full 7.64.41 gate passed; production migration dry-run and migration→rollback dry-run both passed inside transactions.
+Production was confirmed unchanged after dry-runs: 77 anon-executable SECURITY DEFINER functions / 65 with direct PUBLIC EXECUTE.
