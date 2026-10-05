@@ -1,6 +1,6 @@
 {
   "name": "water-polo-hq",
-  "version": "7.64.43",
+  "version": "7.64.45",
   "private": true,
   "description": "Water Polo HQ web product and Capacitor mobile app shell.",
   "scripts": {
@@ -13,7 +13,7 @@
     "mobile:open:android": "npx cap open android",
     "mobile:doctor:ios": "python3 scripts/check-mobile-ios-device-readiness-v7-64-30.py",
     "mobile:preflight:ios": "npm run mobile:doctor && npm run mobile:doctor:ios",
-    "mobile:verify": "python3 scripts/test-wphq-unified-mobile-release-v7-64-43.py",
+    "mobile:verify": "python3 scripts/test-wphq-unified-mobile-release-v7-64-45.py",
     "mobile:sync:ios": "npm run mobile:prepare && npx cap sync ios",
     "mobile:update:ios": "npm run mobile:preflight:ios && npm run mobile:prepare && npx cap sync ios && npm run mobile:verify -- --require-ios && npx cap open ios"
   },

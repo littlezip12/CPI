@@ -1,3 +1,9 @@
+# WPHQ 7.64.45 — Coach Report Contrast Cache-Bust Hotfix
+
+WPHQ 7.64.45 fixes the visual delivery issue discovered after 7.64.44. The Coach Report styling itself was corrected, but `live-team-insights.html` continued requesting the existing `css/live-team-insights-v7-64-43.css?v=7.64.43` URL. Browsers and the iOS WebView could therefore keep serving the cached 7.64.43 stylesheet, leaving the stat cells on the legacy dark global table background.
+
+This release moves the Team Insights stylesheet to a new physical asset URL, `css/live-team-insights-v7-64-45.css?v=7.64.45`, and carries the explicit light Coach Report table rules forward. No player-stat calculations, Coach Report exports, ECC behavior, Supabase privileges, scoring flow, or RPC contracts change.
+
 # WPI 7.64.43 — Coach Full-Roster Player Stats + ECC/Security Merge
 
 WPHQ 7.64.43 converges the two parallel October release streams without dropping either one. It preserves the actually pushed 7.64.41 Supabase SECURITY DEFINER least-privilege hardening, restores the completed 7.64.42 ECC Google `MASTER BY DIVISION` live-results and Team Journey history behavior, and adds a coach-facing full-roster player-stat report to Team Insights.

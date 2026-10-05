@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.45 Coach Report Contrast Cache-Bust Check\n'
+python3 -m py_compile \
+  scripts/build-mobile-web-v7-64-39.py \
+  scripts/test-wphq-coach-report-contrast-v7-64-45.py \
+  scripts/test-wphq-ecc-security-merge-v7-64-45.py \
+  scripts/test-wphq-unified-mobile-release-v7-64-45.py \
+  scripts/check-wphq-ecc-google-source-v7-64-42.py
+node --check js/live-team-insights-v7-64-43.js
+node --check js/ecc-google-live-v7-64-42.js
+node --check js/tournament-platform-v7-64-42.js
+node scripts/test-wphq-ecc-google-live-v7-64-42.js
+node scripts/test-wphq-ecc-google-route-runtime-v7-64-42.js
+python3 scripts/test-live-delivery-finalization-reliability-v7-64-31.py
+python3 scripts/test-live-poolside-throughput-v7-64-32.py
+python3 scripts/test-wphq-account-auth-ux-v7-64-33.py
+python3 scripts/test-wphq-organization-insights-team-season-v7-64-34.py
+python3 scripts/test-wphq-coach-report-contrast-v7-64-45.py
+python3 scripts/test-wphq-ecc-security-merge-v7-64-45.py
+python3 scripts/test-wphq-unified-mobile-release-v7-64-45.py
+set +e
+ECC_LIVE_OUTPUT="$(python3 scripts/check-wphq-ecc-google-source-v7-64-42.py 2>&1)"
+ECC_LIVE_CODE=$?
+set -e
+printf '%s\n' "$ECC_LIVE_OUTPUT"
+if [ "$ECC_LIVE_CODE" -ne 0 ]; then
+  if printf '%s' "$ECC_LIVE_OUTPUT" | grep -Eq 'curl: \([0-9]+\)|Could not resolve host|Failed to connect|Connection timed out'; then
+    printf '\nNOTE: live Google source probe could not reach the network; offline ECC fixture/routing tests already passed.\n'
+  else
+    exit "$ECC_LIVE_CODE"
+  fi
+fi
+printf '\nWater Polo HQ 7.64.45 coach report contrast/cache-bust release check passed.\n'

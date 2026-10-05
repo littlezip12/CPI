@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.43",
-  "name": "Coach Full-Roster Player Stats + ECC/Security Merge",
+  "version": "7.64.45",
+  "name": "Coach Report Contrast Cache-Bust Hotfix",
   "date": "2026-10-04",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Merged successor release preserving the production 7.64.41 Supabase least-privilege hardening and the parallel-chat 7.64.42 ECC Google live-results/Team Journey behavior. Team Insights adds a Coach Report for every rostered player in the selected Season/Event/Game scope, with a full on-screen table plus copyable TSV summary and downloadable CSV. The existing up-to-four-player comparison remains unchanged. No new Supabase migration or Edge Function is required.",
+  "notes": "Visual/cache delivery hotfix for the 7.64.43 Coach Report. The full-roster table now loads from a new 7.64.45 stylesheet URL with explicit light cell backgrounds, readable text, zebra striping, and hover states so legacy global table styling and stale browser/WebView caches cannot leave the report dark. No analytics, scoring, ECC, Supabase, or RPC behavior changes.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.64.42",
   "tournamentEvidenceRelease": "7.45.1",
@@ -385,5 +385,6 @@
   "evanCousineau2026GoogleLiveSourceRelease": "7.64.42",
   "evanCousineau2026TeamJourneyHistoryRelease": "7.64.42",
   "liveCoachFullRosterStatsRelease": "7.64.43",
-  "liveCoachStatsExportRelease": "7.64.43"
+  "liveCoachStatsExportRelease": "7.64.43",
+  "liveCoachReportContrastRelease": "7.64.45"
 }
