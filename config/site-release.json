@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.45",
-  "name": "Coach Report Contrast Cache-Bust Hotfix",
+  "version": "7.64.46",
+  "name": "Team Stat Report + Stats Freshness",
   "date": "2026-10-04",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Visual/cache delivery hotfix for the 7.64.43 Coach Report. The full-roster table now loads from a new 7.64.45 stylesheet URL with explicit light cell backgrounds, readable text, zebra striping, and hover states so legacy global table styling and stale browser/WebView caches cannot leave the report dark. No analytics, scoring, ECC, Supabase, or RPC behavior changes.",
+  "notes": "Renames the full-roster Coach Report to Team Stat Report and adds explicit stats freshness controls. Team Insights now exposes Refresh stats and automatically reloads current Season/Event/Game analytics when the page regains focus or returns from the background, preventing an already-open report from remaining stale after another game is finalized. The four-player comparison remains unchanged. Existing ECC Google live-results, 7.64.41 Supabase least-privilege hardening, scoring, and analytics RPC contracts are preserved; no Supabase migration is required.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.64.42",
   "tournamentEvidenceRelease": "7.45.1",
@@ -313,7 +313,7 @@
   "liveFastScorekeepingRelease": "7.64.11",
   "liveCorrectionRecoveryRelease": "7.64.11",
   "liveFinalWhistleRelease": "7.64.11",
-  "livePlayerStatsExperienceRelease": "7.64.43",
+  "livePlayerStatsExperienceRelease": "7.64.46",
   "livePlayerRosterAccuracyRelease": "7.64.15",
   "liveParentPrivacyRelease": "7.64.15",
   "livePlayerStatsVisualPolishRelease": "7.64.16",
@@ -386,5 +386,7 @@
   "evanCousineau2026TeamJourneyHistoryRelease": "7.64.42",
   "liveCoachFullRosterStatsRelease": "7.64.43",
   "liveCoachStatsExportRelease": "7.64.43",
-  "liveCoachReportContrastRelease": "7.64.45"
+  "liveCoachReportContrastRelease": "7.64.45",
+  "liveTeamStatReportRelease": "7.64.46",
+  "liveTeamStatsFreshnessRelease": "7.64.46"
 }

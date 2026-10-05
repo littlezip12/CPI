@@ -1,3 +1,9 @@
+# WPHQ 7.64.46 — Team Stat Report + Stats Freshness
+
+WPHQ 7.64.46 renames the coach-facing full-roster export to **Team Stat Report**, which better describes the feature for owners, parents, scorers, and coaches. The report still uses the selected Season / Event / Game scope, includes the full roster, and supports copy + CSV export. The four-player side-by-side comparison remains unchanged.
+
+This release also hardens **stats freshness**. An already-open Team Insights page can otherwise remain visually stale after another game is finalized elsewhere. Team Stat Report now includes a **Refresh stats** action and automatically reloads current analytics when the page regains focus, becomes visible again, or is restored from the browser/app back-forward cache. The existing `live_team_player_insights_v2` RPC remains the source of truth and is re-queried; no new analytics calculation or Supabase migration is introduced.
+
 # WPHQ 7.64.45 — Coach Report Contrast Cache-Bust Hotfix
 
 WPHQ 7.64.45 fixes the visual delivery issue discovered after 7.64.44. The Coach Report styling itself was corrected, but `live-team-insights.html` continued requesting the existing `css/live-team-insights-v7-64-43.css?v=7.64.43` URL. Browsers and the iOS WebView could therefore keep serving the cached 7.64.43 stylesheet, leaving the stat cells on the legacy dark global table background.

@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/styles.css?v=7.53.4">
   <link rel="stylesheet" href="css/site-shell.css?v=7.54.13">
   <link rel="stylesheet" href="css/command-palette.css?v=7.53.4">
-  <link rel="stylesheet" href="css/live-team-insights-v7-64-45.css?v=7.64.45">
+  <link rel="stylesheet" href="css/live-team-insights-v7-64-46.css?v=7.64.46">
 <link rel="stylesheet" href="css/live-action-buttons-v7-63-5.css?v=7.63.6"></head>
 <body class="wpi-team-insights-page">
   <main class="insights-shell">
@@ -120,7 +120,7 @@
           <div><p>Player stats</p><h2>Compare Players</h2></div>
           <span>Compare up to 4</span>
         </div>
-        <p class="insights-player-intro">Compare up to four players side by side, or use Coach Report for the full roster. Choose Season, Event, or Game; only players rostered for that scope appear.</p>
+        <p class="insights-player-intro">Compare up to four players side by side, or use Team Stat Report for the full team. Choose Season, Event, or Game; only players rostered for that scope appear.</p>
 
         <div class="insights-player-scope-tabs" id="playerScopeTabs" role="group" aria-label="Player stats scope">
           <button type="button" class="is-active" data-player-scope-mode="season">Season</button>
@@ -134,9 +134,10 @@
 
         <section class="insights-coach-report-card" aria-labelledby="coachReportTitle">
           <div class="insights-coach-report-head">
-            <div><p>Coach report</p><h3 id="coachReportTitle">Full roster player stats</h3><span>Uses the selected Season / Event / Game scope and includes every rostered player — not just the four-player comparison.</span></div>
+            <div><p>Team stat report</p><h3 id="coachReportTitle">Full-team player stats</h3><span>Uses the selected Season / Event / Game scope and includes every rostered player — not just the four-player comparison. Stats refresh when you return to this page, and you can refresh manually anytime.</span></div>
             <div class="insights-coach-report-actions">
-              <button id="coachReportToggle" type="button" aria-expanded="false" aria-controls="coachReportPanel">View full roster</button>
+              <button id="coachReportToggle" type="button" aria-expanded="false" aria-controls="coachReportPanel">View full team</button>
+              <button id="teamStatRefresh" type="button">Refresh stats</button>
               <button id="coachReportCopy" type="button">Copy report</button>
               <button id="coachReportCsv" type="button">Download CSV</button>
             </div>
@@ -195,7 +196,7 @@
 
   <script src="config/live-sandbox.js?v=7.57.22"></script>
   <script src="js/live-backend-v7-56-8.js?v=7.57.20"></script>
-  <script src="js/live-team-insights-v7-64-43.js?v=7.64.43"></script>
+  <script src="js/live-team-insights-v7-64-46.js?v=7.64.46"></script>
   <script defer src="js/site-shell.js?v=7.62.3"></script>
   <script defer src="js/command-palette.js?v=7.62.2"></script>
   <script defer src="js/live-pwa-v7-64-23.js?v=7.64.23"></script>
