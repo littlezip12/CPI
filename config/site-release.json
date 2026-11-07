@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "7.64.46",
-  "name": "Team Stat Report + Stats Freshness",
-  "date": "2026-10-04",
+  "version": "7.64.48",
+  "name": "Read-only Game Experience Foundation",
+  "date": "2026-11-07",
   "rankingDataRelease": "7.52.13",
   "joApplicationRelease": "7.53.4",
   "deploymentMode": "static",
-  "notes": "Renames the full-roster Coach Report to Team Stat Report and adds explicit stats freshness controls. Team Insights now exposes Refresh stats and automatically reloads current Season/Event/Game analytics when the page regains focus or returns from the background, preventing an already-open report from remaining stale after another game is finalized. The four-player comparison remains unchanged. Existing ECC Google live-results, 7.64.41 Supabase least-privilege hardening, scoring, and analytics RPC contracts are preserved; no Supabase migration is required.",
+  "notes": "Adds a parallel read-only, authenticated Game Experience page linked from the existing permanent Game Recap. Uses existing access-controlled game recap and game-cap RPCs. No scorer, event-write, Final Whistle, guest-handoff, auth settings, or SQL changes. Box Score is initial recorded-player view; opponent roster mapping and goal-type enrichment are deferred.",
   "identityRelease": "7.52.13",
   "tournamentDataRelease": "7.64.42",
   "tournamentEvidenceRelease": "7.45.1",
@@ -388,5 +388,9 @@
   "liveCoachStatsExportRelease": "7.64.43",
   "liveCoachReportContrastRelease": "7.64.45",
   "liveTeamStatReportRelease": "7.64.46",
-  "liveTeamStatsFreshnessRelease": "7.64.46"
+  "liveTeamStatsFreshnessRelease": "7.64.46",
+  "authAbuseProtectionReadinessRelease": "7.64.47",
+  "authTurnstileFrontendReadinessRelease": "7.64.47",
+  "authTurnstileActivationStatus": "frontend_ready_not_activated",
+  "authAnonymousGuestCaptchaReadinessRelease": "7.64.47"
 }

@@ -1,0 +1,1 @@
+(() => {"use strict";const id=new URLSearchParams(location.search).get("game");const link=document.getElementById("gxPreviewLink");if(link){if(id && /^[\da-f-]{36}$/i.test(id)){link.href=`live-game-experience.html?game=${encodeURIComponent(id)}${new URLSearchParams(location.search).get("follow")==="1"?"&follow=1":""}`;}else{link.hidden=true;}}})();

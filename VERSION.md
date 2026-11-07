@@ -1,3 +1,13 @@
+# WPHQ 7.64.48 — Read-only Game Experience Foundation
+
+A separate, access-controlled Game Experience preview lets users inspect score, gamecast, recorded-player box score, quarter-filtered play-by-play and lineups without changing the scorer or permanent recap. Team Stats comparisons, opponent roster capture and precise goal types are reserved for later read-only cycles. No Supabase migration or auth changes.
+
+# WPHQ 7.64.47 — Auth Abuse-Protection Readiness
+
+WPHQ 7.64.47 prepares the existing permanent-account and Guest Scorer authentication flows for Cloudflare Turnstile without turning CAPTCHA on prematurely. When a public Turnstile site key is configured, signup, one-time sign-in links, password-reset requests, and anonymous Guest Scorer session creation all collect and pass a CAPTCHA token to Supabase Auth. While the site key remains blank, current 7.64.46 behavior is unchanged.
+
+This is deliberately a **readiness release**, not the server-side activation step. The Turnstile secret key must stay out of the repository and be configured only in Supabase Auth. CAPTCHA should not be enabled in Supabase until the public site key is committed and both web and physical-iPhone Guest Scorer flows have been validated. Anonymous Auth remains required for Guest Scorer Passes. No SQL migration or Edge Function is introduced.
+
 # WPHQ 7.64.46 — Team Stat Report + Stats Freshness
 
 WPHQ 7.64.46 renames the coach-facing full-roster export to **Team Stat Report**, which better describes the feature for owners, parents, scorers, and coaches. The report still uses the selected Season / Event / Game scope, includes the full roster, and supports copy + CSV export. The four-player side-by-side comparison remains unchanged.

@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+set -euo pipefail
+printf '\nWater Polo HQ 7.64.48 Game Experience Foundation Check\n'
+python3 scripts/test-wphq-game-experience-foundation-v7-64-48.py
+node --check js/wphq-game-experience-v7-64-48.js
+node --check js/wphq-game-experience-link-v7-64-48.js
+node scripts/test-wphq-ecc-google-live-v7-64-42.js
+node scripts/test-wphq-ecc-google-route-runtime-v7-64-42.js
+python3 scripts/test-live-delivery-finalization-reliability-v7-64-31.py
+python3 scripts/test-live-poolside-throughput-v7-64-32.py
+python3 scripts/test-wphq-organization-insights-team-season-v7-64-34.py
+python3 scripts/test-wphq-team-stat-report-freshness-v7-64-48.py
+python3 scripts/test-wphq-auth-abuse-protection-readiness-v7-64-48.py
+python3 scripts/test-wphq-ecc-security-merge-v7-64-48.py
+python3 scripts/test-wphq-unified-mobile-release-v7-64-48.py
+python3 scripts/build-mobile-web-v7-64-39.py
+python3 - <<'PYVERIFY'
+from pathlib import Path
+r=Path('mobile/www')
+for rel in ('live-game-experience.html','css/wphq-game-experience-v7-64-48.css','js/wphq-game-experience-v7-64-48.js','js/wphq-game-experience-link-v7-64-48.js'):
+ assert (r/rel).is_file(),rel
+assert '7.64.48' in (r/'wphq-native-release.json').read_text()
+print('WPHQ 7.64.48 NATIVE WEB BUNDLE CHECK PASSED')
+PYVERIFY
+set +e
+ECC_LIVE_OUTPUT="$(python3 scripts/check-wphq-ecc-google-source-v7-64-42.py 2>&1)"
+ECC_LIVE_CODE=$?
+set -e
+printf '%s\n' "$ECC_LIVE_OUTPUT"
+if [ "$ECC_LIVE_CODE" -ne 0 ]; then
+  if printf '%s' "$ECC_LIVE_OUTPUT" | grep -Eq 'curl: \([0-9]+\)|Could not resolve host|Failed to connect|Connection timed out'; then
+    printf '\nNOTE: live Google source probe unavailable due to network; offline ECC checks passed.\n'
+  else
+    exit "$ECC_LIVE_CODE"
+  fi
+fi
+printf '\nWPHQ 7.64.48 release gate PASSED\n'

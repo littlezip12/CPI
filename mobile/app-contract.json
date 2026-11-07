@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "7.64.46",
+  "release": "7.64.48",
   "appName": "Water Polo HQ",
   "appId": "com.waterpolohq.app",
   "appIdStatus": "provisional-until-app-store-identity-lock",
@@ -20,7 +20,9 @@
     "existingWebAuthPreserved": true,
     "nativeMagicLinkCallback": "waterpolohq://auth/callback",
     "nativeSessionPersistence": "Supabase JS persistSession in Capacitor WKWebView storage",
-    "validationStatus": "awaiting-end-to-end-email-link-and-relaunch-test"
+    "validationStatus": "awaiting-end-to-end-email-link-and-relaunch-test",
+    "abuseProtectionReadiness": "Cloudflare Turnstile frontend-ready for signup, magic-link, password-reset, and anonymous Guest Scorer session creation; server-side CAPTCHA activation intentionally pending dashboard configuration.",
+    "turnstileActivationStatus": "frontend_ready_not_activated"
   },
   "nativeProjects": {
     "ios": "generated-and-source-controlled",
@@ -39,5 +41,13 @@
     "generatedBundle": "mobile/www",
     "iosUpdateCommand": "npm run mobile:update:ios",
     "distributionBoundary": "Xcode device install and TestFlight/App Store binaries are separate delivery steps from source synchronization"
+  },
+  "gameExperience": {
+    "status": "read_only_parallel_preview",
+    "route": "live-game-experience.html",
+    "writesGameData": false,
+    "scoringWorkflowChanged": false,
+    "opponentIdentity": "game-specific cap fallback only; no cross-game automatic name association",
+    "future": "verified opponent roster mapping and goal-context classification"
   }
 }

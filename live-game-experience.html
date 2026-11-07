@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#0d2e4d"><title>Game Experience | Water Polo HQ</title><link rel="stylesheet" href="css/wphq-game-experience-v7-64-48.css?v=7.64.48"></head>
+<body class="wphq-game-view"><main class="gx-shell">
+  <nav class="gx-top"><a id="gxBack" href="live-following.html">← Back to games</a><span>Water Polo HQ · Game Experience</span><span class="gx-preview">New read-only view</span></nav>
+  <div id="gxLoading" class="gx-state" role="status">Loading the game record…</div><div id="gxError" class="gx-state gx-error" hidden role="alert"></div>
+  <div id="gxApp" hidden>
+    <header class="gx-hero"><div class="gx-state-pill" id="gxStatus">Game</div><div class="gx-matchup"><div class="gx-team"><img id="gxHomeLogo" alt="" src="assets/branding/wpi-logo-mark.png"><strong id="gxHomeName">Team</strong></div><div class="gx-score"><div id="gxScore">0 : 0</div><small id="gxDetail">—</small></div><div class="gx-team"><img id="gxAwayLogo" alt="" src="assets/branding/wpi-logo-mark.png"><strong id="gxAwayName">Opponent</strong></div></div><div id="gxEventName" class="gx-event-name"></div></header>
+    <nav class="gx-tabs" aria-label="Game views" role="tablist">
+      <button role="tab" aria-selected="true" aria-controls="gxGamecast" id="gxTabGamecast" data-tab="Gamecast">Gamecast</button>
+      <button role="tab" aria-selected="false" aria-controls="gxBox" id="gxTabBox" data-tab="Box">Box Score</button>
+      <button role="tab" aria-selected="false" aria-controls="gxPbp" id="gxTabPbp" data-tab="Pbp">Play-by-Play</button>
+      <button role="tab" aria-selected="false" aria-controls="gxTeams" id="gxTabTeams" data-tab="Teams">Team Stats</button>
+      <button role="tab" aria-selected="false" aria-controls="gxLineups" id="gxTabLineups" data-tab="Lineups">Lineups</button>
+    </nav>
+    <section role="tabpanel" aria-labelledby="gxTabGamecast" id="gxGamecast" class="gx-panel"><h1>Gamecast</h1><p class="gx-muted">Read-only game summary from the existing WPHQ record.</p><div id="gxPeriods" class="gx-period-grid"></div><h2>Recent scoring plays</h2><div id="gxHighlights" class="gx-feed"></div></section>
+    <section role="tabpanel" aria-labelledby="gxTabBox" id="gxBox" class="gx-panel" hidden><h1>Box Score</h1><p class="gx-muted">Player stats recorded for the selected game. Opponent player detail is not inferred.</p><div id="gxBoxContent"></div></section>
+    <section role="tabpanel" aria-labelledby="gxTabPbp" id="gxPbp" class="gx-panel" hidden><h1>Play-by-Play</h1><p class="gx-muted">Scorer-entered events; any opponent cap shown is from the event record.</p><div id="gxQuarterFilters" class="gx-quarter-filters"></div><div id="gxFeed" class="gx-feed"></div></section>
+    <section role="tabpanel" aria-labelledby="gxTabTeams" id="gxTeams" class="gx-panel" hidden><h1>Team Stats</h1><p class="gx-muted">Verified tracked totals only. No opponent stats are estimated.</p><div id="gxTeamContent"></div></section>
+    <section role="tabpanel" aria-labelledby="gxTabLineups" id="gxLineups" class="gx-panel" hidden><h1>Lineups</h1><p class="gx-muted">Recorded home-team lineup history. Opponent roster import comes in a later cycle.</p><div id="gxLineupContent"></div></section>
+  </div>
+</main><script src="config/live-sandbox.js?v=7.57.22"></script><script src="js/live-backend-v7-64-8.js?v=7.64.8"></script><script src="js/wphq-game-experience-v7-64-48.js?v=7.64.48"></script></body></html>
